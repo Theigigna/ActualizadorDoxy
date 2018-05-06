@@ -1,0 +1,124 @@
+\hypertarget{classorg_1_1newdawn_1_1slick_1_1imageout_1_1_t_g_a_writer}{}\section{org.\+newdawn.\+slick.\+imageout.\+T\+G\+A\+Writer Class Reference}
+\label{classorg_1_1newdawn_1_1slick_1_1imageout_1_1_t_g_a_writer}\index{org.\+newdawn.\+slick.\+imageout.\+T\+G\+A\+Writer@{org.\+newdawn.\+slick.\+imageout.\+T\+G\+A\+Writer}}
+Inheritance diagram for org.\+newdawn.\+slick.\+imageout.\+T\+G\+A\+Writer\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classorg_1_1newdawn_1_1slick_1_1imageout_1_1_t_g_a_writer}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1imageout_1_1_t_g_a_writer_afd93706487ac566196147f002ba249b5}{save\+Image}} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_image}{Image}} image, String format, Output\+Stream output, boolean write\+Alpha)  throws I\+O\+Exception 
+\end{DoxyCompactItemize}
+\subsection*{Static Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static short \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1imageout_1_1_t_g_a_writer_a4e948a3f07436f54031b6f230a634a28}{flip\+Endian}} (short signed\+Short)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A utility to save T\+GA\textquotesingle{}s given a Slick image.
+
+\begin{DoxyAuthor}{Author}
+Jon 
+\end{DoxyAuthor}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1imageout_1_1_t_g_a_writer_a4e948a3f07436f54031b6f230a634a28}\label{classorg_1_1newdawn_1_1slick_1_1imageout_1_1_t_g_a_writer_a4e948a3f07436f54031b6f230a634a28}} 
+\index{org\+::newdawn\+::slick\+::imageout\+::\+T\+G\+A\+Writer@{org\+::newdawn\+::slick\+::imageout\+::\+T\+G\+A\+Writer}!flip\+Endian@{flip\+Endian}}
+\index{flip\+Endian@{flip\+Endian}!org\+::newdawn\+::slick\+::imageout\+::\+T\+G\+A\+Writer@{org\+::newdawn\+::slick\+::imageout\+::\+T\+G\+A\+Writer}}
+\subsubsection{\texorpdfstring{flip\+Endian()}{flipEndian()}}
+{\footnotesize\ttfamily static short org.\+newdawn.\+slick.\+imageout.\+T\+G\+A\+Writer.\+flip\+Endian (\begin{DoxyParamCaption}\item[{short}]{signed\+Short }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}, {\ttfamily [private]}}
+
+Flip the endian-\/ness of the short
+
+
+\begin{DoxyParams}{Parameters}
+{\em signed\+Short} & The short to flip \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The flipped short 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+23                                                        \{
+24         \textcolor{keywordtype}{int} input = signedShort & 0xFFFF;
+25         \textcolor{keywordflow}{return} (\textcolor{keywordtype}{short}) (input << 8 | (input & 0xFF00) >>> 8);
+26     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1imageout_1_1_t_g_a_writer_afd93706487ac566196147f002ba249b5}\label{classorg_1_1newdawn_1_1slick_1_1imageout_1_1_t_g_a_writer_afd93706487ac566196147f002ba249b5}} 
+\index{org\+::newdawn\+::slick\+::imageout\+::\+T\+G\+A\+Writer@{org\+::newdawn\+::slick\+::imageout\+::\+T\+G\+A\+Writer}!save\+Image@{save\+Image}}
+\index{save\+Image@{save\+Image}!org\+::newdawn\+::slick\+::imageout\+::\+T\+G\+A\+Writer@{org\+::newdawn\+::slick\+::imageout\+::\+T\+G\+A\+Writer}}
+\subsubsection{\texorpdfstring{save\+Image()}{saveImage()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+imageout.\+T\+G\+A\+Writer.\+save\+Image (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_image}{Image}}}]{image,  }\item[{String}]{format,  }\item[{Output\+Stream}]{output,  }\item[{boolean}]{write\+Alpha }\end{DoxyParamCaption}) throws I\+O\+Exception\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1imageout_1_1_image_writer_ad911f19d2f2c9e9925c73510018423b9}{org.\+newdawn.\+slick.\+imageout.\+Image\+Writer\+::save\+Image}}(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_image}{org.\+newdawn.\+slick.\+Image}}, java.\+lang.\+String, java.\+io.\+Output\+Stream, boolean) 
+\end{DoxySeeAlso}
+
+
+Implements \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1imageout_1_1_image_writer_ad911f19d2f2c9e9925c73510018423b9}{org.\+newdawn.\+slick.\+imageout.\+Image\+Writer}}.
+
+
+\begin{DoxyCode}
+31                                                                                                            
+             \{
+32         DataOutputStream out = \textcolor{keyword}{new} DataOutputStream(\textcolor{keyword}{new} BufferedOutputStream(output));
+33 
+34         \textcolor{comment}{// ID Length}
+35         out.writeByte((byte) 0);
+36 
+37         \textcolor{comment}{// Color Map}
+38         out.writeByte((byte) 0);
+39 
+40         \textcolor{comment}{// Image Type}
+41         out.writeByte((byte) 2);
+42 
+43         \textcolor{comment}{// Color Map - Ignored}
+44         out.writeShort(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1imageout_1_1_t_g_a_writer_a4e948a3f07436f54031b6f230a634a28}{flipEndian}}((\textcolor{keywordtype}{short}) 0));
+45         out.writeShort(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1imageout_1_1_t_g_a_writer_a4e948a3f07436f54031b6f230a634a28}{flipEndian}}((\textcolor{keywordtype}{short}) 0));
+46         out.writeByte((byte) 0);
+47 
+48         \textcolor{comment}{// X, Y Offset}
+49         out.writeShort(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1imageout_1_1_t_g_a_writer_a4e948a3f07436f54031b6f230a634a28}{flipEndian}}((\textcolor{keywordtype}{short}) 0));
+50         out.writeShort(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1imageout_1_1_t_g_a_writer_a4e948a3f07436f54031b6f230a634a28}{flipEndian}}((\textcolor{keywordtype}{short}) 0));
+51 
+52         \textcolor{comment}{// Width, Height, Depth}
+53         out.writeShort(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1imageout_1_1_t_g_a_writer_a4e948a3f07436f54031b6f230a634a28}{flipEndian}}((\textcolor{keywordtype}{short}) image.getWidth()));
+54         out.writeShort(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1imageout_1_1_t_g_a_writer_a4e948a3f07436f54031b6f230a634a28}{flipEndian}}((\textcolor{keywordtype}{short}) image.getHeight()));
+55         \textcolor{keywordflow}{if} (writeAlpha) \{
+56             out.writeByte((byte) 32);
+57             \textcolor{comment}{// Image Descriptor (can't be 0 since we're using 32-bit TGAs)}
+58             \textcolor{comment}{// needs to not have 0x20 set to indicate it's not a flipped image}
+59             out.writeByte((byte) 1);
+60         \} \textcolor{keywordflow}{else} \{
+61             out.writeByte((byte) 24);
+62             \textcolor{comment}{// Image Descriptor (must be 0 since we're using 24-bit TGAs)}
+63             \textcolor{comment}{// needs to not have 0x20 set to indicate it's not a flipped image}
+64             out.writeByte((byte) 0);
+65         \}
+66         
+67 
+68         \textcolor{comment}{// Write out the image data}
+69         Color c;
+70 
+71         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} y = image.getHeight()-1; y <= 0; y--) \{
+72             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} x = 0; x < image.getWidth(); x++) \{
+73                 c = image.getColor(x, y);
+74 
+75                 out.writeByte((byte) (c.b * 255.0f));
+76                 out.writeByte((byte) (c.g * 255.0f));
+77                 out.writeByte((byte) (c.r * 255.0f));
+78                 \textcolor{keywordflow}{if} (writeAlpha) \{
+79                     out.writeByte((byte) (c.a * 255.0f));
+80                 \}
+81             \}
+82         \}
+83 
+84         out.close();
+85     \}
+\end{DoxyCode}

@@ -1,0 +1,399 @@
+\hypertarget{classentities_1_1_mobile_entity}{}\section{entities.\+Mobile\+Entity Class Reference}
+\label{classentities_1_1_mobile_entity}\index{entities.\+Mobile\+Entity@{entities.\+Mobile\+Entity}}
+Inheritance diagram for entities.\+Mobile\+Entity\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=7.671233cm]{classentities_1_1_mobile_entity}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classentities_1_1_mobile_entity_a41aad516f10a2ca7b8ac68dabed30312}{Mobile\+Entity}} (float \mbox{\hyperlink{classentities_1_1_mobile_entity_a815a9d2b23a0bb7e3ee7739d4c10d7c3}{speed}}, \mbox{\hyperlink{classentities_1_1_collision_handler}{Collision\+Handler}} \mbox{\hyperlink{classentities_1_1_mobile_entity_a29fbe797671b1fc81eafe1e48fdc46f9}{collision\+Handler}}, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_image}{Image}} \mbox{\hyperlink{classentities_1_1_physical_entity_aeb439b2308ab19fb6d3ff6be6f7cdbd8}{sprite}}, float \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_shape_a3e985bfff386c15a4efaad03d8ad60d3}{x}}, float \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_shape_a9f934baded6a1b65ebb69e7e5f80ea00}{y}}, float \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_rectangle_a967e1823f62daf45abb142779d1be62d}{width}}, float \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_rectangle_a3bd010fdce636fc11ed0e0ad4d4b4a0a}{height}})
+\item 
+boolean \mbox{\hyperlink{classentities_1_1_mobile_entity_afa8c8461f80d4c39aef4a66d483a8b8a}{move\+Up}} (long delta)
+\item 
+boolean \mbox{\hyperlink{classentities_1_1_mobile_entity_a0017810fbe9ef38039f90044cdecb2e6}{move\+Down}} (long delta)
+\item 
+boolean \mbox{\hyperlink{classentities_1_1_mobile_entity_a5b26e1dec0828ec7079ec5d29ecf4f30}{move\+Right}} (long delta)
+\item 
+boolean \mbox{\hyperlink{classentities_1_1_mobile_entity_aee779d276685e05da66f3d1203535838}{move\+Left}} (long delta)
+\item 
+float \mbox{\hyperlink{classentities_1_1_mobile_entity_a21020e5f09194aae693dbce8d7d59ffa}{get\+Speed}} ()
+\item 
+void \mbox{\hyperlink{classentities_1_1_mobile_entity_a8b9394d985435fba88149c9dded2e69d}{set\+Speed}} (float \mbox{\hyperlink{classentities_1_1_mobile_entity_a815a9d2b23a0bb7e3ee7739d4c10d7c3}{speed}})
+\item 
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_shape}{Shape}} \mbox{\hyperlink{classentities_1_1_mobile_entity_a7192f025dc20283c5eee9efb9d5b4b6f}{get\+Hit\+Box}} ()
+\item 
+void \mbox{\hyperlink{classentities_1_1_mobile_entity_ae57193cf5e05bde18c9b1e2bf22a8eb8}{init\+Hit\+Box}} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_rectangle}{Rectangle}} \mbox{\hyperlink{classentities_1_1_mobile_entity_a996d583dcbf4fd5609e14ec87dbfa7a6}{hit\+Box}})
+\item 
+void \mbox{\hyperlink{classentities_1_1_mobile_entity_af199b48458492a960d53a5a7c7685552}{do\+Collision}} (\mbox{\hyperlink{interfaceentities_1_1_collisionable}{Collisionable}} receptor)
+\item 
+void \mbox{\hyperlink{classentities_1_1_mobile_entity_a84c8b17b0285f2ed67edadb70e1db80b}{receive\+Collision}} (\mbox{\hyperlink{interfaceentities_1_1_collisionable}{Collisionable}} author)
+\item 
+void \mbox{\hyperlink{classentities_1_1_mobile_entity_a99e4a1603aabaaf21c91ffad2e0d86cf}{set\+EntityX}} (float \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_shape_a3e985bfff386c15a4efaad03d8ad60d3}{x}})
+\item 
+void \mbox{\hyperlink{classentities_1_1_mobile_entity_a08206aa00cd7b2e7d5cfeb2b1b2338cb}{set\+EntityY}} (float \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_shape_a9f934baded6a1b65ebb69e7e5f80ea00}{y}})
+\item 
+float \mbox{\hyperlink{classentities_1_1_mobile_entity_a49dea6e4e953167028704395a99138fb}{get\+EntityX}} ()
+\item 
+float \mbox{\hyperlink{classentities_1_1_mobile_entity_a8e231bee5ceaa0c240e9a8519e051d6b}{get\+EntityY}} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{classentities_1_1_mobile_entity_a3284200b03980579fdae3aafd10c062b}{lock\+Movements}} ()
+\item 
+static void \mbox{\hyperlink{classentities_1_1_mobile_entity_afde0f7cfc65d03220cd208c6ae572e78}{unlock\+Movements}} ()
+\item 
+static boolean \mbox{\hyperlink{classentities_1_1_mobile_entity_a3f9a4fa9cdc8d46f112acdad90888bcd}{is\+Movements\+Locked}} ()
+\end{DoxyCompactItemize}
+\subsection*{Package Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classentities_1_1_collision_handler}{Collision\+Handler}} \mbox{\hyperlink{classentities_1_1_mobile_entity_a29fbe797671b1fc81eafe1e48fdc46f9}{collision\+Handler}}
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+float \mbox{\hyperlink{classentities_1_1_mobile_entity_a815a9d2b23a0bb7e3ee7739d4c10d7c3}{speed}}
+\item 
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_shape}{Shape}} \mbox{\hyperlink{classentities_1_1_mobile_entity_a996d583dcbf4fd5609e14ec87dbfa7a6}{hit\+Box}}
+\end{DoxyCompactItemize}
+\subsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static boolean \mbox{\hyperlink{classentities_1_1_mobile_entity_a11e74ffe949d0d32ab26bcf36fa2bb1d}{movement\+Lock}} = false
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+\begin{DoxyAuthor}{Author}
+Ignacio Enrique 
+\end{DoxyAuthor}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classentities_1_1_mobile_entity_a41aad516f10a2ca7b8ac68dabed30312}\label{classentities_1_1_mobile_entity_a41aad516f10a2ca7b8ac68dabed30312}} 
+\index{entities\+::\+Mobile\+Entity@{entities\+::\+Mobile\+Entity}!Mobile\+Entity@{Mobile\+Entity}}
+\index{Mobile\+Entity@{Mobile\+Entity}!entities\+::\+Mobile\+Entity@{entities\+::\+Mobile\+Entity}}
+\subsubsection{\texorpdfstring{Mobile\+Entity()}{MobileEntity()}}
+{\footnotesize\ttfamily entities.\+Mobile\+Entity.\+Mobile\+Entity (\begin{DoxyParamCaption}\item[{float}]{speed,  }\item[{\mbox{\hyperlink{classentities_1_1_collision_handler}{Collision\+Handler}}}]{collision\+Handler,  }\item[{\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_image}{Image}}}]{sprite,  }\item[{float}]{x,  }\item[{float}]{y,  }\item[{float}]{width,  }\item[{float}]{height }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+24                                                                                                            
+                              \{
+25         super(\mbox{\hyperlink{classentities_1_1_physical_entity_aeb439b2308ab19fb6d3ff6be6f7cdbd8}{sprite}}, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_shape_a3e985bfff386c15a4efaad03d8ad60d3}{x}}, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_shape_a9f934baded6a1b65ebb69e7e5f80ea00}{y}}, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_rectangle_a967e1823f62daf45abb142779d1be62d}{width}}, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_rectangle_a3bd010fdce636fc11ed0e0ad4d4b4a0a}{height}});
+26         this.\mbox{\hyperlink{classentities_1_1_mobile_entity_a29fbe797671b1fc81eafe1e48fdc46f9}{collisionHandler}} = \mbox{\hyperlink{classentities_1_1_mobile_entity_a29fbe797671b1fc81eafe1e48fdc46f9}{collisionHandler}};
+27         this.\mbox{\hyperlink{classentities_1_1_mobile_entity_a815a9d2b23a0bb7e3ee7739d4c10d7c3}{speed}} = \mbox{\hyperlink{classentities_1_1_mobile_entity_a815a9d2b23a0bb7e3ee7739d4c10d7c3}{speed}};
+28         this.\mbox{\hyperlink{classentities_1_1_mobile_entity_a996d583dcbf4fd5609e14ec87dbfa7a6}{hitBox}} = \textcolor{keyword}{this};
+29     \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classentities_1_1_mobile_entity_af199b48458492a960d53a5a7c7685552}\label{classentities_1_1_mobile_entity_af199b48458492a960d53a5a7c7685552}} 
+\index{entities\+::\+Mobile\+Entity@{entities\+::\+Mobile\+Entity}!do\+Collision@{do\+Collision}}
+\index{do\+Collision@{do\+Collision}!entities\+::\+Mobile\+Entity@{entities\+::\+Mobile\+Entity}}
+\subsubsection{\texorpdfstring{do\+Collision()}{doCollision()}}
+{\footnotesize\ttfamily void entities.\+Mobile\+Entity.\+do\+Collision (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfaceentities_1_1_collisionable}{Collisionable}}}]{receptor }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Implements \mbox{\hyperlink{interfaceentities_1_1_collisionable_aaebba0fda34be003cfe326471e1418c8}{entities.\+Collisionable}}.
+
+
+\begin{DoxyCode}
+95                                                     \{
+96         \textcolor{comment}{//throw new UnsupportedOperationException("Not supported yet."); //To change body of generated
+       methods, choose Tools | Templates.}
+97         \textcolor{keywordflow}{if}(receptor!=null)\{
+98             System.out.println(\textcolor{stringliteral}{"Collision: "} + this.getClass().getName() + \textcolor{stringliteral}{" hits "} + receptor.getClass().
+      getName());
+99         \}
+100     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classentities_1_1_mobile_entity_a49dea6e4e953167028704395a99138fb}\label{classentities_1_1_mobile_entity_a49dea6e4e953167028704395a99138fb}} 
+\index{entities\+::\+Mobile\+Entity@{entities\+::\+Mobile\+Entity}!get\+EntityX@{get\+EntityX}}
+\index{get\+EntityX@{get\+EntityX}!entities\+::\+Mobile\+Entity@{entities\+::\+Mobile\+Entity}}
+\subsubsection{\texorpdfstring{get\+Entity\+X()}{getEntityX()}}
+{\footnotesize\ttfamily float entities.\+Mobile\+Entity.\+get\+EntityX (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+141                              \{
+142         \textcolor{keywordflow}{return} this.\mbox{\hyperlink{classentities_1_1_mobile_entity_a7192f025dc20283c5eee9efb9d5b4b6f}{getHitBox}}().\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_shape_aa8f8cb519727d4ef8737819b4f1dd7b6}{getCenterX}}();
+143     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classentities_1_1_mobile_entity_a8e231bee5ceaa0c240e9a8519e051d6b}\label{classentities_1_1_mobile_entity_a8e231bee5ceaa0c240e9a8519e051d6b}} 
+\index{entities\+::\+Mobile\+Entity@{entities\+::\+Mobile\+Entity}!get\+EntityY@{get\+EntityY}}
+\index{get\+EntityY@{get\+EntityY}!entities\+::\+Mobile\+Entity@{entities\+::\+Mobile\+Entity}}
+\subsubsection{\texorpdfstring{get\+Entity\+Y()}{getEntityY()}}
+{\footnotesize\ttfamily float entities.\+Mobile\+Entity.\+get\+EntityY (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+144                              \{
+145         \textcolor{keywordflow}{return} this.\mbox{\hyperlink{classentities_1_1_mobile_entity_a7192f025dc20283c5eee9efb9d5b4b6f}{getHitBox}}().\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_shape_a9937c71e414375a9974c7a5d8fcc06e5}{getCenterY}}();
+146     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classentities_1_1_mobile_entity_a7192f025dc20283c5eee9efb9d5b4b6f}\label{classentities_1_1_mobile_entity_a7192f025dc20283c5eee9efb9d5b4b6f}} 
+\index{entities\+::\+Mobile\+Entity@{entities\+::\+Mobile\+Entity}!get\+Hit\+Box@{get\+Hit\+Box}}
+\index{get\+Hit\+Box@{get\+Hit\+Box}!entities\+::\+Mobile\+Entity@{entities\+::\+Mobile\+Entity}}
+\subsubsection{\texorpdfstring{get\+Hit\+Box()}{getHitBox()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_shape}{Shape}} entities.\+Mobile\+Entity.\+get\+Hit\+Box (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Implements \mbox{\hyperlink{interfaceentities_1_1_collisionable_a850ae5aa594d7b0d29ccef98436b8e77}{entities.\+Collisionable}}.
+
+
+\begin{DoxyCode}
+86                              \{
+87         \textcolor{keywordflow}{return} \mbox{\hyperlink{classentities_1_1_mobile_entity_a996d583dcbf4fd5609e14ec87dbfa7a6}{hitBox}};
+88     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classentities_1_1_mobile_entity_a21020e5f09194aae693dbce8d7d59ffa}\label{classentities_1_1_mobile_entity_a21020e5f09194aae693dbce8d7d59ffa}} 
+\index{entities\+::\+Mobile\+Entity@{entities\+::\+Mobile\+Entity}!get\+Speed@{get\+Speed}}
+\index{get\+Speed@{get\+Speed}!entities\+::\+Mobile\+Entity@{entities\+::\+Mobile\+Entity}}
+\subsubsection{\texorpdfstring{get\+Speed()}{getSpeed()}}
+{\footnotesize\ttfamily float entities.\+Mobile\+Entity.\+get\+Speed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+77                             \{
+78         \textcolor{keywordflow}{return} \mbox{\hyperlink{classentities_1_1_mobile_entity_a815a9d2b23a0bb7e3ee7739d4c10d7c3}{speed}};
+79     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classentities_1_1_mobile_entity_ae57193cf5e05bde18c9b1e2bf22a8eb8}\label{classentities_1_1_mobile_entity_ae57193cf5e05bde18c9b1e2bf22a8eb8}} 
+\index{entities\+::\+Mobile\+Entity@{entities\+::\+Mobile\+Entity}!init\+Hit\+Box@{init\+Hit\+Box}}
+\index{init\+Hit\+Box@{init\+Hit\+Box}!entities\+::\+Mobile\+Entity@{entities\+::\+Mobile\+Entity}}
+\subsubsection{\texorpdfstring{init\+Hit\+Box()}{initHitBox()}}
+{\footnotesize\ttfamily void entities.\+Mobile\+Entity.\+init\+Hit\+Box (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_rectangle}{Rectangle}}}]{hit\+Box }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+90                                              \{
+91         this.\mbox{\hyperlink{classentities_1_1_mobile_entity_a996d583dcbf4fd5609e14ec87dbfa7a6}{hitBox}} = \mbox{\hyperlink{classentities_1_1_mobile_entity_a996d583dcbf4fd5609e14ec87dbfa7a6}{hitBox}};
+92     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classentities_1_1_mobile_entity_a3f9a4fa9cdc8d46f112acdad90888bcd}\label{classentities_1_1_mobile_entity_a3f9a4fa9cdc8d46f112acdad90888bcd}} 
+\index{entities\+::\+Mobile\+Entity@{entities\+::\+Mobile\+Entity}!is\+Movements\+Locked@{is\+Movements\+Locked}}
+\index{is\+Movements\+Locked@{is\+Movements\+Locked}!entities\+::\+Mobile\+Entity@{entities\+::\+Mobile\+Entity}}
+\subsubsection{\texorpdfstring{is\+Movements\+Locked()}{isMovementsLocked()}}
+{\footnotesize\ttfamily static boolean entities.\+Mobile\+Entity.\+is\+Movements\+Locked (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+\begin{DoxyCode}
+119                                               \{
+120         \textcolor{keywordflow}{return} \mbox{\hyperlink{classentities_1_1_mobile_entity_a11e74ffe949d0d32ab26bcf36fa2bb1d}{movementLock}};
+121     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classentities_1_1_mobile_entity_a3284200b03980579fdae3aafd10c062b}\label{classentities_1_1_mobile_entity_a3284200b03980579fdae3aafd10c062b}} 
+\index{entities\+::\+Mobile\+Entity@{entities\+::\+Mobile\+Entity}!lock\+Movements@{lock\+Movements}}
+\index{lock\+Movements@{lock\+Movements}!entities\+::\+Mobile\+Entity@{entities\+::\+Mobile\+Entity}}
+\subsubsection{\texorpdfstring{lock\+Movements()}{lockMovements()}}
+{\footnotesize\ttfamily static void entities.\+Mobile\+Entity.\+lock\+Movements (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+\begin{DoxyCode}
+111                                        \{
+112         \mbox{\hyperlink{classentities_1_1_mobile_entity_a11e74ffe949d0d32ab26bcf36fa2bb1d}{movementLock}} = \textcolor{keyword}{true};
+113     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classentities_1_1_mobile_entity_a0017810fbe9ef38039f90044cdecb2e6}\label{classentities_1_1_mobile_entity_a0017810fbe9ef38039f90044cdecb2e6}} 
+\index{entities\+::\+Mobile\+Entity@{entities\+::\+Mobile\+Entity}!move\+Down@{move\+Down}}
+\index{move\+Down@{move\+Down}!entities\+::\+Mobile\+Entity@{entities\+::\+Mobile\+Entity}}
+\subsubsection{\texorpdfstring{move\+Down()}{moveDown()}}
+{\footnotesize\ttfamily boolean entities.\+Mobile\+Entity.\+move\+Down (\begin{DoxyParamCaption}\item[{long}]{delta }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+42                                         \{
+43         \textcolor{keywordflow}{if} (\mbox{\hyperlink{classentities_1_1_mobile_entity_a29fbe797671b1fc81eafe1e48fdc46f9}{collisionHandler}}.\mbox{\hyperlink{classentities_1_1_collision_handler_a8aedd2c44d177b1af64be0d7442ec3bb}{tryMovingThrough}}(\textcolor{keyword}{new} 
+      \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_rectangle_a27f83e29df8fa2df8988cd649ef87d47}{Rectangle}}(\mbox{\hyperlink{classentities_1_1_mobile_entity_a996d583dcbf4fd5609e14ec87dbfa7a6}{hitBox}}.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_shape_a736a47bfdd6f164558b43fd497a3a3f3}{getX}}(), \mbox{\hyperlink{classentities_1_1_mobile_entity_a996d583dcbf4fd5609e14ec87dbfa7a6}{hitBox}}.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_shape_a5f334f962d8fc525d522fe0f8ac20b35}{getY}}() + delta * 0.1f, 
+      \mbox{\hyperlink{classentities_1_1_mobile_entity_a996d583dcbf4fd5609e14ec87dbfa7a6}{hitBox}}.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_shape_aa5a7939b4bbd8e225820b5d5f1efe9e1}{getWidth}}(), \mbox{\hyperlink{classentities_1_1_mobile_entity_a996d583dcbf4fd5609e14ec87dbfa7a6}{hitBox}}.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_shape_a13854472f74dc780d8f45411efbb10bf}{getHeight}}()), \textcolor{keyword}{this}) && !
+      \mbox{\hyperlink{classentities_1_1_mobile_entity_a3f9a4fa9cdc8d46f112acdad90888bcd}{isMovementsLocked}}()) \{
+44             this.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_shape_a7a127d0dea9bd7f0e3ce3fd0a61268fc}{setY}}(this.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_shape_a5f334f962d8fc525d522fe0f8ac20b35}{getY}}() + \mbox{\hyperlink{classentities_1_1_mobile_entity_a815a9d2b23a0bb7e3ee7739d4c10d7c3}{speed}} * delta * 0.1f);
+45             \textcolor{keywordflow}{if} (\mbox{\hyperlink{classentities_1_1_mobile_entity_a996d583dcbf4fd5609e14ec87dbfa7a6}{hitBox}} != \textcolor{keyword}{this}) \{
+46                 \mbox{\hyperlink{classentities_1_1_mobile_entity_a996d583dcbf4fd5609e14ec87dbfa7a6}{hitBox}}.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_shape_a7a127d0dea9bd7f0e3ce3fd0a61268fc}{setY}}(\mbox{\hyperlink{classentities_1_1_mobile_entity_a996d583dcbf4fd5609e14ec87dbfa7a6}{hitBox}}.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_shape_a5f334f962d8fc525d522fe0f8ac20b35}{getY}}() + \mbox{\hyperlink{classentities_1_1_mobile_entity_a815a9d2b23a0bb7e3ee7739d4c10d7c3}{speed}} * delta * 0.1f);
+47             \}
+48             \textcolor{keywordflow}{return} \textcolor{keyword}{true};
+49         \}
+50         \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+51     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classentities_1_1_mobile_entity_aee779d276685e05da66f3d1203535838}\label{classentities_1_1_mobile_entity_aee779d276685e05da66f3d1203535838}} 
+\index{entities\+::\+Mobile\+Entity@{entities\+::\+Mobile\+Entity}!move\+Left@{move\+Left}}
+\index{move\+Left@{move\+Left}!entities\+::\+Mobile\+Entity@{entities\+::\+Mobile\+Entity}}
+\subsubsection{\texorpdfstring{move\+Left()}{moveLeft()}}
+{\footnotesize\ttfamily boolean entities.\+Mobile\+Entity.\+move\+Left (\begin{DoxyParamCaption}\item[{long}]{delta }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+66                                         \{
+67         \textcolor{keywordflow}{if} (\mbox{\hyperlink{classentities_1_1_mobile_entity_a29fbe797671b1fc81eafe1e48fdc46f9}{collisionHandler}}.\mbox{\hyperlink{classentities_1_1_collision_handler_a8aedd2c44d177b1af64be0d7442ec3bb}{tryMovingThrough}}(\textcolor{keyword}{new} 
+      \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_rectangle_a27f83e29df8fa2df8988cd649ef87d47}{Rectangle}}(\mbox{\hyperlink{classentities_1_1_mobile_entity_a996d583dcbf4fd5609e14ec87dbfa7a6}{hitBox}}.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_shape_a736a47bfdd6f164558b43fd497a3a3f3}{getX}}() - delta * 0.1f, \mbox{\hyperlink{classentities_1_1_mobile_entity_a996d583dcbf4fd5609e14ec87dbfa7a6}{hitBox}}.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_shape_a5f334f962d8fc525d522fe0f8ac20b35}{getY}}(), 
+      \mbox{\hyperlink{classentities_1_1_mobile_entity_a996d583dcbf4fd5609e14ec87dbfa7a6}{hitBox}}.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_shape_aa5a7939b4bbd8e225820b5d5f1efe9e1}{getWidth}}(), \mbox{\hyperlink{classentities_1_1_mobile_entity_a996d583dcbf4fd5609e14ec87dbfa7a6}{hitBox}}.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_shape_a13854472f74dc780d8f45411efbb10bf}{getHeight}}()), \textcolor{keyword}{this}) && !
+      \mbox{\hyperlink{classentities_1_1_mobile_entity_a3f9a4fa9cdc8d46f112acdad90888bcd}{isMovementsLocked}}()) \{
+68             this.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_shape_a1469b8ef682642c4257869640c27bf16}{setX}}(this.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_shape_a736a47bfdd6f164558b43fd497a3a3f3}{getX}}() - \mbox{\hyperlink{classentities_1_1_mobile_entity_a815a9d2b23a0bb7e3ee7739d4c10d7c3}{speed}} * delta * 0.1f);
+69             \textcolor{keywordflow}{if} (\mbox{\hyperlink{classentities_1_1_mobile_entity_a996d583dcbf4fd5609e14ec87dbfa7a6}{hitBox}} != \textcolor{keyword}{this}) \{
+70                 \mbox{\hyperlink{classentities_1_1_mobile_entity_a996d583dcbf4fd5609e14ec87dbfa7a6}{hitBox}}.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_shape_a1469b8ef682642c4257869640c27bf16}{setX}}(\mbox{\hyperlink{classentities_1_1_mobile_entity_a996d583dcbf4fd5609e14ec87dbfa7a6}{hitBox}}.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_shape_a736a47bfdd6f164558b43fd497a3a3f3}{getX}}() - \mbox{\hyperlink{classentities_1_1_mobile_entity_a815a9d2b23a0bb7e3ee7739d4c10d7c3}{speed}} * delta * 0.1f);
+71             \}
+72             \textcolor{keywordflow}{return} \textcolor{keyword}{true};
+73         \}
+74         \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+75     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classentities_1_1_mobile_entity_a5b26e1dec0828ec7079ec5d29ecf4f30}\label{classentities_1_1_mobile_entity_a5b26e1dec0828ec7079ec5d29ecf4f30}} 
+\index{entities\+::\+Mobile\+Entity@{entities\+::\+Mobile\+Entity}!move\+Right@{move\+Right}}
+\index{move\+Right@{move\+Right}!entities\+::\+Mobile\+Entity@{entities\+::\+Mobile\+Entity}}
+\subsubsection{\texorpdfstring{move\+Right()}{moveRight()}}
+{\footnotesize\ttfamily boolean entities.\+Mobile\+Entity.\+move\+Right (\begin{DoxyParamCaption}\item[{long}]{delta }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+53                                          \{
+54 
+55         \textcolor{keywordflow}{if} (\mbox{\hyperlink{classentities_1_1_mobile_entity_a29fbe797671b1fc81eafe1e48fdc46f9}{collisionHandler}}.\mbox{\hyperlink{classentities_1_1_collision_handler_a8aedd2c44d177b1af64be0d7442ec3bb}{tryMovingThrough}}(\textcolor{keyword}{new} 
+      \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_rectangle_a27f83e29df8fa2df8988cd649ef87d47}{Rectangle}}(\mbox{\hyperlink{classentities_1_1_mobile_entity_a996d583dcbf4fd5609e14ec87dbfa7a6}{hitBox}}.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_shape_a736a47bfdd6f164558b43fd497a3a3f3}{getX}}() + delta * 0.1f, \mbox{\hyperlink{classentities_1_1_mobile_entity_a996d583dcbf4fd5609e14ec87dbfa7a6}{hitBox}}.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_shape_a5f334f962d8fc525d522fe0f8ac20b35}{getY}}(), 
+      \mbox{\hyperlink{classentities_1_1_mobile_entity_a996d583dcbf4fd5609e14ec87dbfa7a6}{hitBox}}.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_shape_aa5a7939b4bbd8e225820b5d5f1efe9e1}{getWidth}}(), \mbox{\hyperlink{classentities_1_1_mobile_entity_a996d583dcbf4fd5609e14ec87dbfa7a6}{hitBox}}.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_shape_a13854472f74dc780d8f45411efbb10bf}{getHeight}}()), \textcolor{keyword}{this}) && !
+      \mbox{\hyperlink{classentities_1_1_mobile_entity_a3f9a4fa9cdc8d46f112acdad90888bcd}{isMovementsLocked}}()) \{
+56             this.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_shape_a1469b8ef682642c4257869640c27bf16}{setX}}(this.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_shape_a736a47bfdd6f164558b43fd497a3a3f3}{getX}}() + \mbox{\hyperlink{classentities_1_1_mobile_entity_a815a9d2b23a0bb7e3ee7739d4c10d7c3}{speed}} * delta * 0.1f);
+57             \textcolor{keywordflow}{if} (\mbox{\hyperlink{classentities_1_1_mobile_entity_a996d583dcbf4fd5609e14ec87dbfa7a6}{hitBox}} != \textcolor{keyword}{this}) \{
+58                 \mbox{\hyperlink{classentities_1_1_mobile_entity_a996d583dcbf4fd5609e14ec87dbfa7a6}{hitBox}}.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_shape_a1469b8ef682642c4257869640c27bf16}{setX}}(\mbox{\hyperlink{classentities_1_1_mobile_entity_a996d583dcbf4fd5609e14ec87dbfa7a6}{hitBox}}.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_shape_a736a47bfdd6f164558b43fd497a3a3f3}{getX}}() + \mbox{\hyperlink{classentities_1_1_mobile_entity_a815a9d2b23a0bb7e3ee7739d4c10d7c3}{speed}} * delta * 0.1f);
+59             \}
+60             \textcolor{keywordflow}{return} \textcolor{keyword}{true};
+61         \}
+62         \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+63 
+64     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classentities_1_1_mobile_entity_afa8c8461f80d4c39aef4a66d483a8b8a}\label{classentities_1_1_mobile_entity_afa8c8461f80d4c39aef4a66d483a8b8a}} 
+\index{entities\+::\+Mobile\+Entity@{entities\+::\+Mobile\+Entity}!move\+Up@{move\+Up}}
+\index{move\+Up@{move\+Up}!entities\+::\+Mobile\+Entity@{entities\+::\+Mobile\+Entity}}
+\subsubsection{\texorpdfstring{move\+Up()}{moveUp()}}
+{\footnotesize\ttfamily boolean entities.\+Mobile\+Entity.\+move\+Up (\begin{DoxyParamCaption}\item[{long}]{delta }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+31                                       \{
+32         \textcolor{keywordflow}{if} (\mbox{\hyperlink{classentities_1_1_mobile_entity_a29fbe797671b1fc81eafe1e48fdc46f9}{collisionHandler}}.\mbox{\hyperlink{classentities_1_1_collision_handler_a8aedd2c44d177b1af64be0d7442ec3bb}{tryMovingThrough}}(\textcolor{keyword}{new} 
+      \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_rectangle_a27f83e29df8fa2df8988cd649ef87d47}{Rectangle}}(\mbox{\hyperlink{classentities_1_1_mobile_entity_a996d583dcbf4fd5609e14ec87dbfa7a6}{hitBox}}.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_shape_a736a47bfdd6f164558b43fd497a3a3f3}{getX}}(), \mbox{\hyperlink{classentities_1_1_mobile_entity_a996d583dcbf4fd5609e14ec87dbfa7a6}{hitBox}}.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_shape_a5f334f962d8fc525d522fe0f8ac20b35}{getY}}() - delta * 0.1f, 
+      \mbox{\hyperlink{classentities_1_1_mobile_entity_a996d583dcbf4fd5609e14ec87dbfa7a6}{hitBox}}.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_shape_aa5a7939b4bbd8e225820b5d5f1efe9e1}{getWidth}}(), \mbox{\hyperlink{classentities_1_1_mobile_entity_a996d583dcbf4fd5609e14ec87dbfa7a6}{hitBox}}.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_shape_a13854472f74dc780d8f45411efbb10bf}{getHeight}}()), \textcolor{keyword}{this}) && !
+      \mbox{\hyperlink{classentities_1_1_mobile_entity_a3f9a4fa9cdc8d46f112acdad90888bcd}{isMovementsLocked}}()) \{
+33             this.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_shape_a7a127d0dea9bd7f0e3ce3fd0a61268fc}{setY}}(this.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_shape_a5f334f962d8fc525d522fe0f8ac20b35}{getY}}() - \mbox{\hyperlink{classentities_1_1_mobile_entity_a815a9d2b23a0bb7e3ee7739d4c10d7c3}{speed}} * delta * 0.1f);
+34             \textcolor{keywordflow}{if} (\mbox{\hyperlink{classentities_1_1_mobile_entity_a996d583dcbf4fd5609e14ec87dbfa7a6}{hitBox}} != \textcolor{keyword}{this}) \{
+35                 \mbox{\hyperlink{classentities_1_1_mobile_entity_a996d583dcbf4fd5609e14ec87dbfa7a6}{hitBox}}.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_shape_a7a127d0dea9bd7f0e3ce3fd0a61268fc}{setY}}(\mbox{\hyperlink{classentities_1_1_mobile_entity_a996d583dcbf4fd5609e14ec87dbfa7a6}{hitBox}}.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_shape_a5f334f962d8fc525d522fe0f8ac20b35}{getY}}() - \mbox{\hyperlink{classentities_1_1_mobile_entity_a815a9d2b23a0bb7e3ee7739d4c10d7c3}{speed}} * delta * 0.1f);
+36             \}
+37             \textcolor{keywordflow}{return} \textcolor{keyword}{true};
+38         \}
+39         \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+40     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classentities_1_1_mobile_entity_a84c8b17b0285f2ed67edadb70e1db80b}\label{classentities_1_1_mobile_entity_a84c8b17b0285f2ed67edadb70e1db80b}} 
+\index{entities\+::\+Mobile\+Entity@{entities\+::\+Mobile\+Entity}!receive\+Collision@{receive\+Collision}}
+\index{receive\+Collision@{receive\+Collision}!entities\+::\+Mobile\+Entity@{entities\+::\+Mobile\+Entity}}
+\subsubsection{\texorpdfstring{receive\+Collision()}{receiveCollision()}}
+{\footnotesize\ttfamily void entities.\+Mobile\+Entity.\+receive\+Collision (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfaceentities_1_1_collisionable}{Collisionable}}}]{author }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Implements \mbox{\hyperlink{interfaceentities_1_1_collisionable_a956a85182fef376af333622e844342e3}{entities.\+Collisionable}}.
+
+
+\begin{DoxyCode}
+103                                                        \{
+104         \textcolor{comment}{//throw new UnsupportedOperationException("Not supported yet."); //To change body of generated
+       methods, choose Tools | Templates.s}
+105         \textcolor{keywordflow}{if}(author!=null)\{
+106             System.out.println(\textcolor{stringliteral}{"Collision: "} + this.getClass().getName() + \textcolor{stringliteral}{" gets hitted by "} + author.
+      getClass().getName());
+107         \}
+108     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classentities_1_1_mobile_entity_a99e4a1603aabaaf21c91ffad2e0d86cf}\label{classentities_1_1_mobile_entity_a99e4a1603aabaaf21c91ffad2e0d86cf}} 
+\index{entities\+::\+Mobile\+Entity@{entities\+::\+Mobile\+Entity}!set\+EntityX@{set\+EntityX}}
+\index{set\+EntityX@{set\+EntityX}!entities\+::\+Mobile\+Entity@{entities\+::\+Mobile\+Entity}}
+\subsubsection{\texorpdfstring{set\+Entity\+X()}{setEntityX()}}
+{\footnotesize\ttfamily void entities.\+Mobile\+Entity.\+set\+EntityX (\begin{DoxyParamCaption}\item[{float}]{x }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+125                                     \{
+126         \textcolor{keywordtype}{float} offsetX = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_shape_a3e985bfff386c15a4efaad03d8ad60d3}{x}} - this.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_shape_a736a47bfdd6f164558b43fd497a3a3f3}{getX}}();
+127         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_shape_a1469b8ef682642c4257869640c27bf16}{setX}}(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_shape_a736a47bfdd6f164558b43fd497a3a3f3}{getX}}() + offsetX);
+128         \textcolor{keywordflow}{if} (\mbox{\hyperlink{classentities_1_1_mobile_entity_a996d583dcbf4fd5609e14ec87dbfa7a6}{hitBox}} != null) \{
+129             \mbox{\hyperlink{classentities_1_1_mobile_entity_a996d583dcbf4fd5609e14ec87dbfa7a6}{hitBox}}.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_shape_a1469b8ef682642c4257869640c27bf16}{setX}}(\mbox{\hyperlink{classentities_1_1_mobile_entity_a996d583dcbf4fd5609e14ec87dbfa7a6}{hitBox}}.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_shape_a736a47bfdd6f164558b43fd497a3a3f3}{getX}}() + offsetX);
+130         \}
+131     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classentities_1_1_mobile_entity_a08206aa00cd7b2e7d5cfeb2b1b2338cb}\label{classentities_1_1_mobile_entity_a08206aa00cd7b2e7d5cfeb2b1b2338cb}} 
+\index{entities\+::\+Mobile\+Entity@{entities\+::\+Mobile\+Entity}!set\+EntityY@{set\+EntityY}}
+\index{set\+EntityY@{set\+EntityY}!entities\+::\+Mobile\+Entity@{entities\+::\+Mobile\+Entity}}
+\subsubsection{\texorpdfstring{set\+Entity\+Y()}{setEntityY()}}
+{\footnotesize\ttfamily void entities.\+Mobile\+Entity.\+set\+EntityY (\begin{DoxyParamCaption}\item[{float}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+133                                     \{
+134         \textcolor{keywordtype}{float} offsetY = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_shape_a9f934baded6a1b65ebb69e7e5f80ea00}{y}} - this.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_shape_a5f334f962d8fc525d522fe0f8ac20b35}{getY}}();
+135         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_shape_a7a127d0dea9bd7f0e3ce3fd0a61268fc}{setY}}(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_shape_a5f334f962d8fc525d522fe0f8ac20b35}{getY}}() + offsetY);
+136         \textcolor{keywordflow}{if} (\mbox{\hyperlink{classentities_1_1_mobile_entity_a996d583dcbf4fd5609e14ec87dbfa7a6}{hitBox}} != null) \{
+137             \mbox{\hyperlink{classentities_1_1_mobile_entity_a996d583dcbf4fd5609e14ec87dbfa7a6}{hitBox}}.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_shape_a7a127d0dea9bd7f0e3ce3fd0a61268fc}{setY}}(\mbox{\hyperlink{classentities_1_1_mobile_entity_a996d583dcbf4fd5609e14ec87dbfa7a6}{hitBox}}.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_shape_a5f334f962d8fc525d522fe0f8ac20b35}{getY}}() + offsetY);
+138         \}
+139     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classentities_1_1_mobile_entity_a8b9394d985435fba88149c9dded2e69d}\label{classentities_1_1_mobile_entity_a8b9394d985435fba88149c9dded2e69d}} 
+\index{entities\+::\+Mobile\+Entity@{entities\+::\+Mobile\+Entity}!set\+Speed@{set\+Speed}}
+\index{set\+Speed@{set\+Speed}!entities\+::\+Mobile\+Entity@{entities\+::\+Mobile\+Entity}}
+\subsubsection{\texorpdfstring{set\+Speed()}{setSpeed()}}
+{\footnotesize\ttfamily void entities.\+Mobile\+Entity.\+set\+Speed (\begin{DoxyParamCaption}\item[{float}]{speed }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+81                                       \{
+82         this.\mbox{\hyperlink{classentities_1_1_mobile_entity_a815a9d2b23a0bb7e3ee7739d4c10d7c3}{speed}} = \mbox{\hyperlink{classentities_1_1_mobile_entity_a815a9d2b23a0bb7e3ee7739d4c10d7c3}{speed}};
+83     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classentities_1_1_mobile_entity_afde0f7cfc65d03220cd208c6ae572e78}\label{classentities_1_1_mobile_entity_afde0f7cfc65d03220cd208c6ae572e78}} 
+\index{entities\+::\+Mobile\+Entity@{entities\+::\+Mobile\+Entity}!unlock\+Movements@{unlock\+Movements}}
+\index{unlock\+Movements@{unlock\+Movements}!entities\+::\+Mobile\+Entity@{entities\+::\+Mobile\+Entity}}
+\subsubsection{\texorpdfstring{unlock\+Movements()}{unlockMovements()}}
+{\footnotesize\ttfamily static void entities.\+Mobile\+Entity.\+unlock\+Movements (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+\begin{DoxyCode}
+115                                          \{
+116         \mbox{\hyperlink{classentities_1_1_mobile_entity_a11e74ffe949d0d32ab26bcf36fa2bb1d}{movementLock}} = \textcolor{keyword}{false};
+117     \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classentities_1_1_mobile_entity_a29fbe797671b1fc81eafe1e48fdc46f9}\label{classentities_1_1_mobile_entity_a29fbe797671b1fc81eafe1e48fdc46f9}} 
+\index{entities\+::\+Mobile\+Entity@{entities\+::\+Mobile\+Entity}!collision\+Handler@{collision\+Handler}}
+\index{collision\+Handler@{collision\+Handler}!entities\+::\+Mobile\+Entity@{entities\+::\+Mobile\+Entity}}
+\subsubsection{\texorpdfstring{collision\+Handler}{collisionHandler}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classentities_1_1_collision_handler}{Collision\+Handler}} entities.\+Mobile\+Entity.\+collision\+Handler\hspace{0.3cm}{\ttfamily [package]}}
+
+\mbox{\Hypertarget{classentities_1_1_mobile_entity_a996d583dcbf4fd5609e14ec87dbfa7a6}\label{classentities_1_1_mobile_entity_a996d583dcbf4fd5609e14ec87dbfa7a6}} 
+\index{entities\+::\+Mobile\+Entity@{entities\+::\+Mobile\+Entity}!hit\+Box@{hit\+Box}}
+\index{hit\+Box@{hit\+Box}!entities\+::\+Mobile\+Entity@{entities\+::\+Mobile\+Entity}}
+\subsubsection{\texorpdfstring{hit\+Box}{hitBox}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_shape}{Shape}} entities.\+Mobile\+Entity.\+hit\+Box\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classentities_1_1_mobile_entity_a11e74ffe949d0d32ab26bcf36fa2bb1d}\label{classentities_1_1_mobile_entity_a11e74ffe949d0d32ab26bcf36fa2bb1d}} 
+\index{entities\+::\+Mobile\+Entity@{entities\+::\+Mobile\+Entity}!movement\+Lock@{movement\+Lock}}
+\index{movement\+Lock@{movement\+Lock}!entities\+::\+Mobile\+Entity@{entities\+::\+Mobile\+Entity}}
+\subsubsection{\texorpdfstring{movement\+Lock}{movementLock}}
+{\footnotesize\ttfamily boolean entities.\+Mobile\+Entity.\+movement\+Lock = false\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{classentities_1_1_mobile_entity_a815a9d2b23a0bb7e3ee7739d4c10d7c3}\label{classentities_1_1_mobile_entity_a815a9d2b23a0bb7e3ee7739d4c10d7c3}} 
+\index{entities\+::\+Mobile\+Entity@{entities\+::\+Mobile\+Entity}!speed@{speed}}
+\index{speed@{speed}!entities\+::\+Mobile\+Entity@{entities\+::\+Mobile\+Entity}}
+\subsubsection{\texorpdfstring{speed}{speed}}
+{\footnotesize\ttfamily float entities.\+Mobile\+Entity.\+speed\hspace{0.3cm}{\ttfamily [private]}}
+

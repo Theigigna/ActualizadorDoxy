@@ -1,0 +1,46 @@
+\hypertarget{classorg_1_1newdawn_1_1slick_1_1tools_1_1packulike_1_1_packer_1_1_file_list_renderer}{}\section{org.\+newdawn.\+slick.\+tools.\+packulike.\+Packer.\+File\+List\+Renderer Class Reference}
+\label{classorg_1_1newdawn_1_1slick_1_1tools_1_1packulike_1_1_packer_1_1_file_list_renderer}\index{org.\+newdawn.\+slick.\+tools.\+packulike.\+Packer.\+File\+List\+Renderer@{org.\+newdawn.\+slick.\+tools.\+packulike.\+Packer.\+File\+List\+Renderer}}
+Inheritance diagram for org.\+newdawn.\+slick.\+tools.\+packulike.\+Packer.\+File\+List\+Renderer\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classorg_1_1newdawn_1_1slick_1_1tools_1_1packulike_1_1_packer_1_1_file_list_renderer}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+Component \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1packulike_1_1_packer_1_1_file_list_renderer_aa76e4932237103da9a918ad018944795}{get\+List\+Cell\+Renderer\+Component}} (J\+List \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1packulike_1_1_packer_a45e8438e951eb84f2efaf06e5ae481bd}{list}}, Object value, int index, boolean is\+Selected, boolean cell\+Has\+Focus)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A list cell renderer to show just the plain names
+
+\begin{DoxyAuthor}{Author}
+kevin 
+\end{DoxyAuthor}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tools_1_1packulike_1_1_packer_1_1_file_list_renderer_aa76e4932237103da9a918ad018944795}\label{classorg_1_1newdawn_1_1slick_1_1tools_1_1packulike_1_1_packer_1_1_file_list_renderer_aa76e4932237103da9a918ad018944795}} 
+\index{org\+::newdawn\+::slick\+::tools\+::packulike\+::\+Packer\+::\+File\+List\+Renderer@{org\+::newdawn\+::slick\+::tools\+::packulike\+::\+Packer\+::\+File\+List\+Renderer}!get\+List\+Cell\+Renderer\+Component@{get\+List\+Cell\+Renderer\+Component}}
+\index{get\+List\+Cell\+Renderer\+Component@{get\+List\+Cell\+Renderer\+Component}!org\+::newdawn\+::slick\+::tools\+::packulike\+::\+Packer\+::\+File\+List\+Renderer@{org\+::newdawn\+::slick\+::tools\+::packulike\+::\+Packer\+::\+File\+List\+Renderer}}
+\subsubsection{\texorpdfstring{get\+List\+Cell\+Renderer\+Component()}{getListCellRendererComponent()}}
+{\footnotesize\ttfamily Component org.\+newdawn.\+slick.\+tools.\+packulike.\+Packer.\+File\+List\+Renderer.\+get\+List\+Cell\+Renderer\+Component (\begin{DoxyParamCaption}\item[{J\+List}]{list,  }\item[{Object}]{value,  }\item[{int}]{index,  }\item[{boolean}]{is\+Selected,  }\item[{boolean}]{cell\+Has\+Focus }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxySeeAlso}{See also}
+javax.\+swing.\+Default\+List\+Cell\+Renderer\+::get\+List\+Cell\+Renderer\+Component(javax.\+swing.\+J\+List, java.\+lang.\+Object, int, boolean, boolean) 
+\end{DoxySeeAlso}
+
+\begin{DoxyCode}
+345                                                                                                            
+                                \{
+346             JLabel label = (JLabel) super.getListCellRendererComponent(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1packulike_1_1_packer_a45e8438e951eb84f2efaf06e5ae481bd}{list}}, value, index, isSelected,
+347                     cellHasFocus);
+348             
+349             \mbox{\hyperlink{class_sprite}{Sprite}} sprite = (\mbox{\hyperlink{class_sprite}{Sprite}}) value;
+350             label.setText(sprite.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_image_a3d7329c13259ffebd9efc30deb5655fc}{getName}}());
+351             
+352             \textcolor{keywordflow}{return} label;
+353         \}
+\end{DoxyCode}

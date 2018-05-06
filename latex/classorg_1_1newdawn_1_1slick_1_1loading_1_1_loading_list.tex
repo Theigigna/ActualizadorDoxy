@@ -1,0 +1,240 @@
+\hypertarget{classorg_1_1newdawn_1_1slick_1_1loading_1_1_loading_list}{}\section{org.\+newdawn.\+slick.\+loading.\+Loading\+List Class Reference}
+\label{classorg_1_1newdawn_1_1slick_1_1loading_1_1_loading_list}\index{org.\+newdawn.\+slick.\+loading.\+Loading\+List@{org.\+newdawn.\+slick.\+loading.\+Loading\+List}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1loading_1_1_loading_list_af03554660af12999832ad6c0cb3fdc46}{add}} (\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1loading_1_1_deferred_resource}{Deferred\+Resource}} resource)
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1loading_1_1_loading_list_a92d80f591b97a13c9e9b9a6c0c1b359b}{remove}} (\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1loading_1_1_deferred_resource}{Deferred\+Resource}} resource)
+\item 
+int \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1loading_1_1_loading_list_ae3458b4d334c4e5e8066bee1412e5991}{get\+Total\+Resources}} ()
+\item 
+int \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1loading_1_1_loading_list_a15644b340a431d1a2b6cdd52bd1ecf6d}{get\+Remaining\+Resources}} ()
+\item 
+\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1loading_1_1_deferred_resource}{Deferred\+Resource}} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1loading_1_1_loading_list_a2bb33107be5c921db8e65ef94a6d51e0}{get\+Next}} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1loading_1_1_loading_list}{Loading\+List}} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1loading_1_1_loading_list_a5c39c46ae4f8c0888997e91d46243484}{get}} ()
+\item 
+static void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1loading_1_1_loading_list_a9a281f8df719d3727533fb55ae9b4234}{set\+Deferred\+Loading}} (boolean loading)
+\item 
+static boolean \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1loading_1_1_loading_list_afad049e7891ae5e6d7fc194664ca58b4}{is\+Deferred\+Loading}} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1loading_1_1_loading_list_ae5e62f48158e42b7488b25eb2f8de27a}{Loading\+List}} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Array\+List \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1loading_1_1_loading_list_a5ec264187931448fbcf900ccf59bab72}{deferred}} = new Array\+List()
+\item 
+int \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1loading_1_1_loading_list_a26a2808de2c1171ed883cc89831b0332}{total}}
+\end{DoxyCompactItemize}
+\subsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1loading_1_1_loading_list}{Loading\+List}} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1loading_1_1_loading_list_ae4a959a966e43388d21307e80e2ae329}{single}} = new \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1loading_1_1_loading_list}{Loading\+List}}()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A central list where all deferred loading resoures end up when deferred loading is in use. Each texture and sound loaded will be put in this list and can be loaded in one by one
+
+\begin{DoxyAuthor}{Author}
+kevin 
+\end{DoxyAuthor}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1loading_1_1_loading_list_ae5e62f48158e42b7488b25eb2f8de27a}\label{classorg_1_1newdawn_1_1slick_1_1loading_1_1_loading_list_ae5e62f48158e42b7488b25eb2f8de27a}} 
+\index{org\+::newdawn\+::slick\+::loading\+::\+Loading\+List@{org\+::newdawn\+::slick\+::loading\+::\+Loading\+List}!Loading\+List@{Loading\+List}}
+\index{Loading\+List@{Loading\+List}!org\+::newdawn\+::slick\+::loading\+::\+Loading\+List@{org\+::newdawn\+::slick\+::loading\+::\+Loading\+List}}
+\subsubsection{\texorpdfstring{Loading\+List()}{LoadingList()}}
+{\footnotesize\ttfamily org.\+newdawn.\+slick.\+loading.\+Loading\+List.\+Loading\+List (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+Create a new list 
+\begin{DoxyCode}
+57                           \{
+58     \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1loading_1_1_loading_list_af03554660af12999832ad6c0cb3fdc46}\label{classorg_1_1newdawn_1_1slick_1_1loading_1_1_loading_list_af03554660af12999832ad6c0cb3fdc46}} 
+\index{org\+::newdawn\+::slick\+::loading\+::\+Loading\+List@{org\+::newdawn\+::slick\+::loading\+::\+Loading\+List}!add@{add}}
+\index{add@{add}!org\+::newdawn\+::slick\+::loading\+::\+Loading\+List@{org\+::newdawn\+::slick\+::loading\+::\+Loading\+List}}
+\subsubsection{\texorpdfstring{add()}{add()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+loading.\+Loading\+List.\+add (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1loading_1_1_deferred_resource}{Deferred\+Resource}}}]{resource }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Add a resource to be loaded at some later date
+
+
+\begin{DoxyParams}{Parameters}
+{\em resource} & The resource to be added \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+65                                                \{
+66         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1loading_1_1_loading_list_a26a2808de2c1171ed883cc89831b0332}{total}}++;
+67         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1loading_1_1_loading_list_a5ec264187931448fbcf900ccf59bab72}{deferred}}.add(resource);
+68     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1loading_1_1_loading_list_a5c39c46ae4f8c0888997e91d46243484}\label{classorg_1_1newdawn_1_1slick_1_1loading_1_1_loading_list_a5c39c46ae4f8c0888997e91d46243484}} 
+\index{org\+::newdawn\+::slick\+::loading\+::\+Loading\+List@{org\+::newdawn\+::slick\+::loading\+::\+Loading\+List}!get@{get}}
+\index{get@{get}!org\+::newdawn\+::slick\+::loading\+::\+Loading\+List@{org\+::newdawn\+::slick\+::loading\+::\+Loading\+List}}
+\subsubsection{\texorpdfstring{get()}{get()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1loading_1_1_loading_list}{Loading\+List}} org.\+newdawn.\+slick.\+loading.\+Loading\+List.\+get (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Get the single global loading list
+
+\begin{DoxyReturn}{Returns}
+The single global loading list 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+24                                     \{
+25         \textcolor{keywordflow}{return} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1loading_1_1_loading_list_ae4a959a966e43388d21307e80e2ae329}{single}};
+26     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1loading_1_1_loading_list_a2bb33107be5c921db8e65ef94a6d51e0}\label{classorg_1_1newdawn_1_1slick_1_1loading_1_1_loading_list_a2bb33107be5c921db8e65ef94a6d51e0}} 
+\index{org\+::newdawn\+::slick\+::loading\+::\+Loading\+List@{org\+::newdawn\+::slick\+::loading\+::\+Loading\+List}!get\+Next@{get\+Next}}
+\index{get\+Next@{get\+Next}!org\+::newdawn\+::slick\+::loading\+::\+Loading\+List@{org\+::newdawn\+::slick\+::loading\+::\+Loading\+List}}
+\subsubsection{\texorpdfstring{get\+Next()}{getNext()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1loading_1_1_deferred_resource}{Deferred\+Resource}} org.\+newdawn.\+slick.\+loading.\+Loading\+List.\+get\+Next (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get the next resource that requries loading
+
+\begin{DoxyReturn}{Returns}
+The next resource to load or null if there are no more remaining 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+105                                       \{
+106         \textcolor{keywordflow}{if} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1loading_1_1_loading_list_a5ec264187931448fbcf900ccf59bab72}{deferred}}.size() == 0) \{
+107             \textcolor{keywordflow}{return} null;
+108         \}
+109         
+110         \textcolor{keywordflow}{return} (DeferredResource) \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1loading_1_1_loading_list_a5ec264187931448fbcf900ccf59bab72}{deferred}}.remove(0);
+111     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1loading_1_1_loading_list_a15644b340a431d1a2b6cdd52bd1ecf6d}\label{classorg_1_1newdawn_1_1slick_1_1loading_1_1_loading_list_a15644b340a431d1a2b6cdd52bd1ecf6d}} 
+\index{org\+::newdawn\+::slick\+::loading\+::\+Loading\+List@{org\+::newdawn\+::slick\+::loading\+::\+Loading\+List}!get\+Remaining\+Resources@{get\+Remaining\+Resources}}
+\index{get\+Remaining\+Resources@{get\+Remaining\+Resources}!org\+::newdawn\+::slick\+::loading\+::\+Loading\+List@{org\+::newdawn\+::slick\+::loading\+::\+Loading\+List}}
+\subsubsection{\texorpdfstring{get\+Remaining\+Resources()}{getRemainingResources()}}
+{\footnotesize\ttfamily int org.\+newdawn.\+slick.\+loading.\+Loading\+List.\+get\+Remaining\+Resources (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get the number of remaining resources
+
+\begin{DoxyReturn}{Returns}
+The number of resources that still need to be loaded 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+96                                        \{
+97         \textcolor{keywordflow}{return} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1loading_1_1_loading_list_a5ec264187931448fbcf900ccf59bab72}{deferred}}.size();
+98     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1loading_1_1_loading_list_ae3458b4d334c4e5e8066bee1412e5991}\label{classorg_1_1newdawn_1_1slick_1_1loading_1_1_loading_list_ae3458b4d334c4e5e8066bee1412e5991}} 
+\index{org\+::newdawn\+::slick\+::loading\+::\+Loading\+List@{org\+::newdawn\+::slick\+::loading\+::\+Loading\+List}!get\+Total\+Resources@{get\+Total\+Resources}}
+\index{get\+Total\+Resources@{get\+Total\+Resources}!org\+::newdawn\+::slick\+::loading\+::\+Loading\+List@{org\+::newdawn\+::slick\+::loading\+::\+Loading\+List}}
+\subsubsection{\texorpdfstring{get\+Total\+Resources()}{getTotalResources()}}
+{\footnotesize\ttfamily int org.\+newdawn.\+slick.\+loading.\+Loading\+List.\+get\+Total\+Resources (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get the total number of resources that were in the list originally
+
+\begin{DoxyReturn}{Returns}
+The total number of resources that were in the list originally 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+87                                    \{
+88         \textcolor{keywordflow}{return} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1loading_1_1_loading_list_a26a2808de2c1171ed883cc89831b0332}{total}};
+89     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1loading_1_1_loading_list_afad049e7891ae5e6d7fc194664ca58b4}\label{classorg_1_1newdawn_1_1slick_1_1loading_1_1_loading_list_afad049e7891ae5e6d7fc194664ca58b4}} 
+\index{org\+::newdawn\+::slick\+::loading\+::\+Loading\+List@{org\+::newdawn\+::slick\+::loading\+::\+Loading\+List}!is\+Deferred\+Loading@{is\+Deferred\+Loading}}
+\index{is\+Deferred\+Loading@{is\+Deferred\+Loading}!org\+::newdawn\+::slick\+::loading\+::\+Loading\+List@{org\+::newdawn\+::slick\+::loading\+::\+Loading\+List}}
+\subsubsection{\texorpdfstring{is\+Deferred\+Loading()}{isDeferredLoading()}}
+{\footnotesize\ttfamily static boolean org.\+newdawn.\+slick.\+loading.\+Loading\+List.\+is\+Deferred\+Loading (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Check if we\textquotesingle{}re using deferred loading
+
+\begin{DoxyReturn}{Returns}
+True if we\textquotesingle{}re using deferred loading 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+45                                               \{
+46         \textcolor{keywordflow}{return} InternalTextureLoader.get().isDeferredLoading();
+47     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1loading_1_1_loading_list_a92d80f591b97a13c9e9b9a6c0c1b359b}\label{classorg_1_1newdawn_1_1slick_1_1loading_1_1_loading_list_a92d80f591b97a13c9e9b9a6c0c1b359b}} 
+\index{org\+::newdawn\+::slick\+::loading\+::\+Loading\+List@{org\+::newdawn\+::slick\+::loading\+::\+Loading\+List}!remove@{remove}}
+\index{remove@{remove}!org\+::newdawn\+::slick\+::loading\+::\+Loading\+List@{org\+::newdawn\+::slick\+::loading\+::\+Loading\+List}}
+\subsubsection{\texorpdfstring{remove()}{remove()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+loading.\+Loading\+List.\+remove (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1loading_1_1_deferred_resource}{Deferred\+Resource}}}]{resource }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Remove a resource from the list that has been loaded for other reasons.
+
+
+\begin{DoxyParams}{Parameters}
+{\em resource} & The resource to remove \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+76                                                   \{
+77         Log.info(\textcolor{stringliteral}{"Early loading of deferred resource due to req: "}+resource.getDescription());
+78         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1loading_1_1_loading_list_a26a2808de2c1171ed883cc89831b0332}{total}}--;
+79         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1loading_1_1_loading_list_a5ec264187931448fbcf900ccf59bab72}{deferred}}.remove(resource);
+80     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1loading_1_1_loading_list_a9a281f8df719d3727533fb55ae9b4234}\label{classorg_1_1newdawn_1_1slick_1_1loading_1_1_loading_list_a9a281f8df719d3727533fb55ae9b4234}} 
+\index{org\+::newdawn\+::slick\+::loading\+::\+Loading\+List@{org\+::newdawn\+::slick\+::loading\+::\+Loading\+List}!set\+Deferred\+Loading@{set\+Deferred\+Loading}}
+\index{set\+Deferred\+Loading@{set\+Deferred\+Loading}!org\+::newdawn\+::slick\+::loading\+::\+Loading\+List@{org\+::newdawn\+::slick\+::loading\+::\+Loading\+List}}
+\subsubsection{\texorpdfstring{set\+Deferred\+Loading()}{setDeferredLoading()}}
+{\footnotesize\ttfamily static void org.\+newdawn.\+slick.\+loading.\+Loading\+List.\+set\+Deferred\+Loading (\begin{DoxyParamCaption}\item[{boolean}]{loading }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Indicate if we\textquotesingle{}re going to use deferred loading. (Also clears the current list)
+
+
+\begin{DoxyParams}{Parameters}
+{\em loading} & True if we should use deferred loading \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+33                                                            \{
+34         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1loading_1_1_loading_list_ae4a959a966e43388d21307e80e2ae329}{single}} = \textcolor{keyword}{new} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1loading_1_1_loading_list_ae5e62f48158e42b7488b25eb2f8de27a}{LoadingList}}();
+35         
+36         InternalTextureLoader.get().setDeferredLoading(loading);
+37         SoundStore.get().setDeferredLoading(loading);
+38     \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1loading_1_1_loading_list_a5ec264187931448fbcf900ccf59bab72}\label{classorg_1_1newdawn_1_1slick_1_1loading_1_1_loading_list_a5ec264187931448fbcf900ccf59bab72}} 
+\index{org\+::newdawn\+::slick\+::loading\+::\+Loading\+List@{org\+::newdawn\+::slick\+::loading\+::\+Loading\+List}!deferred@{deferred}}
+\index{deferred@{deferred}!org\+::newdawn\+::slick\+::loading\+::\+Loading\+List@{org\+::newdawn\+::slick\+::loading\+::\+Loading\+List}}
+\subsubsection{\texorpdfstring{deferred}{deferred}}
+{\footnotesize\ttfamily Array\+List org.\+newdawn.\+slick.\+loading.\+Loading\+List.\+deferred = new Array\+List()\hspace{0.3cm}{\ttfamily [private]}}
+
+The list of deferred resources to load \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1loading_1_1_loading_list_ae4a959a966e43388d21307e80e2ae329}\label{classorg_1_1newdawn_1_1slick_1_1loading_1_1_loading_list_ae4a959a966e43388d21307e80e2ae329}} 
+\index{org\+::newdawn\+::slick\+::loading\+::\+Loading\+List@{org\+::newdawn\+::slick\+::loading\+::\+Loading\+List}!single@{single}}
+\index{single@{single}!org\+::newdawn\+::slick\+::loading\+::\+Loading\+List@{org\+::newdawn\+::slick\+::loading\+::\+Loading\+List}}
+\subsubsection{\texorpdfstring{single}{single}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1loading_1_1_loading_list}{Loading\+List}} org.\+newdawn.\+slick.\+loading.\+Loading\+List.\+single = new \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1loading_1_1_loading_list}{Loading\+List}}()\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+The single instance of this list \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1loading_1_1_loading_list_a26a2808de2c1171ed883cc89831b0332}\label{classorg_1_1newdawn_1_1slick_1_1loading_1_1_loading_list_a26a2808de2c1171ed883cc89831b0332}} 
+\index{org\+::newdawn\+::slick\+::loading\+::\+Loading\+List@{org\+::newdawn\+::slick\+::loading\+::\+Loading\+List}!total@{total}}
+\index{total@{total}!org\+::newdawn\+::slick\+::loading\+::\+Loading\+List@{org\+::newdawn\+::slick\+::loading\+::\+Loading\+List}}
+\subsubsection{\texorpdfstring{total}{total}}
+{\footnotesize\ttfamily int org.\+newdawn.\+slick.\+loading.\+Loading\+List.\+total\hspace{0.3cm}{\ttfamily [private]}}
+
+The total number of elements that have been added -\/ does not go down as elements are removed 

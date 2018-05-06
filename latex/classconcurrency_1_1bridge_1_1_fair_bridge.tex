@@ -1,0 +1,128 @@
+\hypertarget{classconcurrency_1_1bridge_1_1_fair_bridge}{}\section{concurrency.\+bridge.\+Fair\+Bridge Class Reference}
+\label{classconcurrency_1_1bridge_1_1_fair_bridge}\index{concurrency.\+bridge.\+Fair\+Bridge@{concurrency.\+bridge.\+Fair\+Bridge}}
+Inheritance diagram for concurrency.\+bridge.\+Fair\+Bridge\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classconcurrency_1_1bridge_1_1_fair_bridge}
+\end{center}
+\end{figure}
+\subsection*{Package Functions}
+\begin{DoxyCompactItemize}
+\item 
+synchronized void \mbox{\hyperlink{classconcurrency_1_1bridge_1_1_fair_bridge_a0bc08559b555b45c637225bbee618acb}{red\+Enter}} ()  throws Interrupted\+Exception 
+\item 
+synchronized void \mbox{\hyperlink{classconcurrency_1_1bridge_1_1_fair_bridge_a8d49faeac4442f9a94aa7ee02131674e}{red\+Exit}} ()
+\item 
+synchronized void \mbox{\hyperlink{classconcurrency_1_1bridge_1_1_fair_bridge_a22e1d98bdcc46acd8750191b04e78a0a}{blue\+Enter}} ()  throws Interrupted\+Exception 
+\item 
+synchronized void \mbox{\hyperlink{classconcurrency_1_1bridge_1_1_fair_bridge_a1414fdd64a79f47dbb4aa384b3d3041f}{blue\+Exit}} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classconcurrency_1_1bridge_1_1_fair_bridge_a858202569a7a17b2a613da82f56ce92a}{nred}} = 0
+\item 
+int \mbox{\hyperlink{classconcurrency_1_1bridge_1_1_fair_bridge_a5af7f149ac3d495f24119357e9b52263}{nblue}} = 0
+\item 
+int \mbox{\hyperlink{classconcurrency_1_1bridge_1_1_fair_bridge_a22597d8af11fb8d6799568ab8529b7db}{waitblue}} = 0
+\item 
+int \mbox{\hyperlink{classconcurrency_1_1bridge_1_1_fair_bridge_a8bb19943210b667898db6e363072741a}{waitred}} = 0
+\item 
+boolean \mbox{\hyperlink{classconcurrency_1_1bridge_1_1_fair_bridge_ab83efd0c4e3b7e9b16f57361e6f4826b}{blueturn}} = true
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classconcurrency_1_1bridge_1_1_fair_bridge_a22e1d98bdcc46acd8750191b04e78a0a}\label{classconcurrency_1_1bridge_1_1_fair_bridge_a22e1d98bdcc46acd8750191b04e78a0a}} 
+\index{concurrency\+::bridge\+::\+Fair\+Bridge@{concurrency\+::bridge\+::\+Fair\+Bridge}!blue\+Enter@{blue\+Enter}}
+\index{blue\+Enter@{blue\+Enter}!concurrency\+::bridge\+::\+Fair\+Bridge@{concurrency\+::bridge\+::\+Fair\+Bridge}}
+\subsubsection{\texorpdfstring{blue\+Enter()}{blueEnter()}}
+{\footnotesize\ttfamily synchronized void concurrency.\+bridge.\+Fair\+Bridge.\+blue\+Enter (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws Interrupted\+Exception\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [package]}}
+
+
+\begin{DoxyCode}
+27                                                                \{
+28         ++\mbox{\hyperlink{classconcurrency_1_1bridge_1_1_fair_bridge_a22597d8af11fb8d6799568ab8529b7db}{waitblue}};
+29         \textcolor{keywordflow}{while} (\mbox{\hyperlink{classconcurrency_1_1bridge_1_1_fair_bridge_a858202569a7a17b2a613da82f56ce92a}{nred}}>0 || (\mbox{\hyperlink{classconcurrency_1_1bridge_1_1_fair_bridge_a8bb19943210b667898db6e363072741a}{waitred}}>0 && !\mbox{\hyperlink{classconcurrency_1_1bridge_1_1_fair_bridge_ab83efd0c4e3b7e9b16f57361e6f4826b}{blueturn}})) wait();
+30         --\mbox{\hyperlink{classconcurrency_1_1bridge_1_1_fair_bridge_a22597d8af11fb8d6799568ab8529b7db}{waitblue}};
+31         ++\mbox{\hyperlink{classconcurrency_1_1bridge_1_1_fair_bridge_a5af7f149ac3d495f24119357e9b52263}{nblue}};
+32     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classconcurrency_1_1bridge_1_1_fair_bridge_a1414fdd64a79f47dbb4aa384b3d3041f}\label{classconcurrency_1_1bridge_1_1_fair_bridge_a1414fdd64a79f47dbb4aa384b3d3041f}} 
+\index{concurrency\+::bridge\+::\+Fair\+Bridge@{concurrency\+::bridge\+::\+Fair\+Bridge}!blue\+Exit@{blue\+Exit}}
+\index{blue\+Exit@{blue\+Exit}!concurrency\+::bridge\+::\+Fair\+Bridge@{concurrency\+::bridge\+::\+Fair\+Bridge}}
+\subsubsection{\texorpdfstring{blue\+Exit()}{blueExit()}}
+{\footnotesize\ttfamily synchronized void concurrency.\+bridge.\+Fair\+Bridge.\+blue\+Exit (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [package]}}
+
+
+\begin{DoxyCode}
+34                                 \{
+35         --\mbox{\hyperlink{classconcurrency_1_1bridge_1_1_fair_bridge_a5af7f149ac3d495f24119357e9b52263}{nblue}};
+36         \mbox{\hyperlink{classconcurrency_1_1bridge_1_1_fair_bridge_ab83efd0c4e3b7e9b16f57361e6f4826b}{blueturn}} = \textcolor{keyword}{false};
+37         \textcolor{keywordflow}{if} (\mbox{\hyperlink{classconcurrency_1_1bridge_1_1_fair_bridge_a5af7f149ac3d495f24119357e9b52263}{nblue}}==0)
+38             notifyAll();
+39     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classconcurrency_1_1bridge_1_1_fair_bridge_a0bc08559b555b45c637225bbee618acb}\label{classconcurrency_1_1bridge_1_1_fair_bridge_a0bc08559b555b45c637225bbee618acb}} 
+\index{concurrency\+::bridge\+::\+Fair\+Bridge@{concurrency\+::bridge\+::\+Fair\+Bridge}!red\+Enter@{red\+Enter}}
+\index{red\+Enter@{red\+Enter}!concurrency\+::bridge\+::\+Fair\+Bridge@{concurrency\+::bridge\+::\+Fair\+Bridge}}
+\subsubsection{\texorpdfstring{red\+Enter()}{redEnter()}}
+{\footnotesize\ttfamily synchronized void concurrency.\+bridge.\+Fair\+Bridge.\+red\+Enter (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws Interrupted\+Exception\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [package]}}
+
+
+\begin{DoxyCode}
+13                                                              \{
+14         ++\mbox{\hyperlink{classconcurrency_1_1bridge_1_1_fair_bridge_a8bb19943210b667898db6e363072741a}{waitred}};
+15         \textcolor{keywordflow}{while} (\mbox{\hyperlink{classconcurrency_1_1bridge_1_1_fair_bridge_a5af7f149ac3d495f24119357e9b52263}{nblue}}>0 || (\mbox{\hyperlink{classconcurrency_1_1bridge_1_1_fair_bridge_a22597d8af11fb8d6799568ab8529b7db}{waitblue}}>0 && \mbox{\hyperlink{classconcurrency_1_1bridge_1_1_fair_bridge_ab83efd0c4e3b7e9b16f57361e6f4826b}{blueturn}})) wait();
+16         --\mbox{\hyperlink{classconcurrency_1_1bridge_1_1_fair_bridge_a8bb19943210b667898db6e363072741a}{waitred}};
+17         ++\mbox{\hyperlink{classconcurrency_1_1bridge_1_1_fair_bridge_a858202569a7a17b2a613da82f56ce92a}{nred}};
+18     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classconcurrency_1_1bridge_1_1_fair_bridge_a8d49faeac4442f9a94aa7ee02131674e}\label{classconcurrency_1_1bridge_1_1_fair_bridge_a8d49faeac4442f9a94aa7ee02131674e}} 
+\index{concurrency\+::bridge\+::\+Fair\+Bridge@{concurrency\+::bridge\+::\+Fair\+Bridge}!red\+Exit@{red\+Exit}}
+\index{red\+Exit@{red\+Exit}!concurrency\+::bridge\+::\+Fair\+Bridge@{concurrency\+::bridge\+::\+Fair\+Bridge}}
+\subsubsection{\texorpdfstring{red\+Exit()}{redExit()}}
+{\footnotesize\ttfamily synchronized void concurrency.\+bridge.\+Fair\+Bridge.\+red\+Exit (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [package]}}
+
+
+\begin{DoxyCode}
+20                                \{
+21         --\mbox{\hyperlink{classconcurrency_1_1bridge_1_1_fair_bridge_a858202569a7a17b2a613da82f56ce92a}{nred}};
+22         \mbox{\hyperlink{classconcurrency_1_1bridge_1_1_fair_bridge_ab83efd0c4e3b7e9b16f57361e6f4826b}{blueturn}} = \textcolor{keyword}{true};
+23         \textcolor{keywordflow}{if} (\mbox{\hyperlink{classconcurrency_1_1bridge_1_1_fair_bridge_a858202569a7a17b2a613da82f56ce92a}{nred}}==0)
+24             notifyAll();
+25     \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classconcurrency_1_1bridge_1_1_fair_bridge_ab83efd0c4e3b7e9b16f57361e6f4826b}\label{classconcurrency_1_1bridge_1_1_fair_bridge_ab83efd0c4e3b7e9b16f57361e6f4826b}} 
+\index{concurrency\+::bridge\+::\+Fair\+Bridge@{concurrency\+::bridge\+::\+Fair\+Bridge}!blueturn@{blueturn}}
+\index{blueturn@{blueturn}!concurrency\+::bridge\+::\+Fair\+Bridge@{concurrency\+::bridge\+::\+Fair\+Bridge}}
+\subsubsection{\texorpdfstring{blueturn}{blueturn}}
+{\footnotesize\ttfamily boolean concurrency.\+bridge.\+Fair\+Bridge.\+blueturn = true\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classconcurrency_1_1bridge_1_1_fair_bridge_a5af7f149ac3d495f24119357e9b52263}\label{classconcurrency_1_1bridge_1_1_fair_bridge_a5af7f149ac3d495f24119357e9b52263}} 
+\index{concurrency\+::bridge\+::\+Fair\+Bridge@{concurrency\+::bridge\+::\+Fair\+Bridge}!nblue@{nblue}}
+\index{nblue@{nblue}!concurrency\+::bridge\+::\+Fair\+Bridge@{concurrency\+::bridge\+::\+Fair\+Bridge}}
+\subsubsection{\texorpdfstring{nblue}{nblue}}
+{\footnotesize\ttfamily int concurrency.\+bridge.\+Fair\+Bridge.\+nblue = 0\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classconcurrency_1_1bridge_1_1_fair_bridge_a858202569a7a17b2a613da82f56ce92a}\label{classconcurrency_1_1bridge_1_1_fair_bridge_a858202569a7a17b2a613da82f56ce92a}} 
+\index{concurrency\+::bridge\+::\+Fair\+Bridge@{concurrency\+::bridge\+::\+Fair\+Bridge}!nred@{nred}}
+\index{nred@{nred}!concurrency\+::bridge\+::\+Fair\+Bridge@{concurrency\+::bridge\+::\+Fair\+Bridge}}
+\subsubsection{\texorpdfstring{nred}{nred}}
+{\footnotesize\ttfamily int concurrency.\+bridge.\+Fair\+Bridge.\+nred = 0\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classconcurrency_1_1bridge_1_1_fair_bridge_a22597d8af11fb8d6799568ab8529b7db}\label{classconcurrency_1_1bridge_1_1_fair_bridge_a22597d8af11fb8d6799568ab8529b7db}} 
+\index{concurrency\+::bridge\+::\+Fair\+Bridge@{concurrency\+::bridge\+::\+Fair\+Bridge}!waitblue@{waitblue}}
+\index{waitblue@{waitblue}!concurrency\+::bridge\+::\+Fair\+Bridge@{concurrency\+::bridge\+::\+Fair\+Bridge}}
+\subsubsection{\texorpdfstring{waitblue}{waitblue}}
+{\footnotesize\ttfamily int concurrency.\+bridge.\+Fair\+Bridge.\+waitblue = 0\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classconcurrency_1_1bridge_1_1_fair_bridge_a8bb19943210b667898db6e363072741a}\label{classconcurrency_1_1bridge_1_1_fair_bridge_a8bb19943210b667898db6e363072741a}} 
+\index{concurrency\+::bridge\+::\+Fair\+Bridge@{concurrency\+::bridge\+::\+Fair\+Bridge}!waitred@{waitred}}
+\index{waitred@{waitred}!concurrency\+::bridge\+::\+Fair\+Bridge@{concurrency\+::bridge\+::\+Fair\+Bridge}}
+\subsubsection{\texorpdfstring{waitred}{waitred}}
+{\footnotesize\ttfamily int concurrency.\+bridge.\+Fair\+Bridge.\+waitred = 0\hspace{0.3cm}{\ttfamily [private]}}
+

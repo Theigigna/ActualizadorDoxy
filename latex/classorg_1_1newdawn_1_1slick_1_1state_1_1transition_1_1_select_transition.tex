@@ -1,0 +1,349 @@
+\hypertarget{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_select_transition}{}\section{org.\+newdawn.\+slick.\+state.\+transition.\+Select\+Transition Class Reference}
+\label{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_select_transition}\index{org.\+newdawn.\+slick.\+state.\+transition.\+Select\+Transition@{org.\+newdawn.\+slick.\+state.\+transition.\+Select\+Transition}}
+Inheritance diagram for org.\+newdawn.\+slick.\+state.\+transition.\+Select\+Transition\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_select_transition}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_select_transition_ab79fd508a0e53fb5a143163ee86c8aef}{Select\+Transition}} ()
+\item 
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_select_transition_afaaf374966651127f29606e08d97fb68}{Select\+Transition}} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_color}{Color}} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_select_transition_ada67cc158242a846499be282dfa2c53b}{background}})
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_select_transition_aead0953842e8e95346fb683d5825887d}{init}} (\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1state_1_1_game_state}{Game\+State}} first\+State, \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1state_1_1_game_state}{Game\+State}} second\+State)
+\item 
+boolean \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_select_transition_a796e76c619629c113f7e1ccd312f3806}{is\+Complete}} ()
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_select_transition_ab8383cc1738214b1408eef07cab39df1}{post\+Render}} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1_state_based_game}{State\+Based\+Game}} game, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_game_container}{Game\+Container}} container, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_graphics}{Graphics}} g)  throws Slick\+Exception 
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_select_transition_a3d694958bbeb595e3a962f9c1bd4da08}{pre\+Render}} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1_state_based_game}{State\+Based\+Game}} game, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_game_container}{Game\+Container}} container, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_graphics}{Graphics}} g)  throws Slick\+Exception 
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_select_transition_a17304499adede77a5323e747aee6bcdd}{update}} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1_state_based_game}{State\+Based\+Game}} game, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_game_container}{Game\+Container}} container, int delta)  throws Slick\+Exception 
+\end{DoxyCompactItemize}
+\subsection*{Static Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1opengl_1_1renderer_1_1_s_g_l}{S\+GL}} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_select_transition_a6ae81bee49fb099f9e465690cc50ac9c}{GL}} = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1renderer_1_1_renderer_abe742c3a7dfca67c6c01821d27087308}{Renderer.\+get}}()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1state_1_1_game_state}{Game\+State}} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_select_transition_a32a2ffe715329d58b89b2f48a6c6ddda}{prev}}
+\item 
+boolean \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_select_transition_a449baeee9125b0fe5c20c8097b1aab8a}{finish}}
+\item 
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_color}{Color}} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_select_transition_ada67cc158242a846499be282dfa2c53b}{background}}
+\item 
+float \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_select_transition_a48e0f10ef6e2b93c4e3618bce98f94f6}{scale1}} = 1
+\item 
+float \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_select_transition_a55bededb3b3265136c20de99fdcf4a1d}{xp1}} = 0
+\item 
+float \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_select_transition_a490d66197f9232eea042fde2143331a4}{yp1}} = 0
+\item 
+float \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_select_transition_a4b0f9fe1fdb5ece6bb1abe0bbdc28055}{scale2}} = 0.\+4f
+\item 
+float \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_select_transition_aec09869c0cac01d6ca1d52f4edcf4e16}{xp2}} = 0
+\item 
+float \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_select_transition_a1f18334f729b964bf7b88cd3529ba8a1}{yp2}} = 0
+\item 
+boolean \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_select_transition_a1329f975fdc02a4ab1bf71647d67ed11}{init}} = false
+\item 
+boolean \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_select_transition_aa47ebdd7b453eeed5895939e6e29ce99}{move\+Back\+Done}} = false
+\item 
+int \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_select_transition_a851a9145c8ede083a4d54a6f2551f584}{pause}} = 300
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A transition that moves to the next as though it was selected by some background menu. Note this transition is provided as an example more than intended for use. The values contained are designed for 800x600 resolution.
+
+This is an enter transition
+
+\begin{DoxyAuthor}{Author}
+kevin 
+\end{DoxyAuthor}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_select_transition_ab79fd508a0e53fb5a143163ee86c8aef}\label{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_select_transition_ab79fd508a0e53fb5a143163ee86c8aef}} 
+\index{org\+::newdawn\+::slick\+::state\+::transition\+::\+Select\+Transition@{org\+::newdawn\+::slick\+::state\+::transition\+::\+Select\+Transition}!Select\+Transition@{Select\+Transition}}
+\index{Select\+Transition@{Select\+Transition}!org\+::newdawn\+::slick\+::state\+::transition\+::\+Select\+Transition@{org\+::newdawn\+::slick\+::state\+::transition\+::\+Select\+Transition}}
+\subsubsection{\texorpdfstring{Select\+Transition()}{SelectTransition()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily org.\+newdawn.\+slick.\+state.\+transition.\+Select\+Transition.\+Select\+Transition (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Create a new transition 
+\begin{DoxyCode}
+55                               \{
+56         
+57     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_select_transition_afaaf374966651127f29606e08d97fb68}\label{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_select_transition_afaaf374966651127f29606e08d97fb68}} 
+\index{org\+::newdawn\+::slick\+::state\+::transition\+::\+Select\+Transition@{org\+::newdawn\+::slick\+::state\+::transition\+::\+Select\+Transition}!Select\+Transition@{Select\+Transition}}
+\index{Select\+Transition@{Select\+Transition}!org\+::newdawn\+::slick\+::state\+::transition\+::\+Select\+Transition@{org\+::newdawn\+::slick\+::state\+::transition\+::\+Select\+Transition}}
+\subsubsection{\texorpdfstring{Select\+Transition()}{SelectTransition()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily org.\+newdawn.\+slick.\+state.\+transition.\+Select\+Transition.\+Select\+Transition (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_color}{Color}}}]{background }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Create a new transition
+
+
+\begin{DoxyParams}{Parameters}
+{\em background} & The background colour to draw under the previous state \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+64                                               \{
+65         this.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_select_transition_ada67cc158242a846499be282dfa2c53b}{background}} = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_select_transition_ada67cc158242a846499be282dfa2c53b}{background}};
+66     \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_select_transition_aead0953842e8e95346fb683d5825887d}\label{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_select_transition_aead0953842e8e95346fb683d5825887d}} 
+\index{org\+::newdawn\+::slick\+::state\+::transition\+::\+Select\+Transition@{org\+::newdawn\+::slick\+::state\+::transition\+::\+Select\+Transition}!init@{init}}
+\index{init@{init}!org\+::newdawn\+::slick\+::state\+::transition\+::\+Select\+Transition@{org\+::newdawn\+::slick\+::state\+::transition\+::\+Select\+Transition}}
+\subsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+state.\+transition.\+Select\+Transition.\+init (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1state_1_1_game_state}{Game\+State}}}]{first\+State,  }\item[{\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1state_1_1_game_state}{Game\+State}}}]{second\+State }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_transition_a7b59f0c9205f1f0417ee18bc526e5b01}{org.\+newdawn.\+slick.\+state.\+transition.\+Transition\+::init}}(\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1state_1_1_game_state}{org.\+newdawn.\+slick.\+state.\+Game\+State}}, \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1state_1_1_game_state}{org.\+newdawn.\+slick.\+state.\+Game\+State}}) 
+\end{DoxySeeAlso}
+
+
+Implements \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_transition_a7b59f0c9205f1f0417ee18bc526e5b01}{org.\+newdawn.\+slick.\+state.\+transition.\+Transition}}.
+
+
+\begin{DoxyCode}
+71                                                                   \{
+72         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_select_transition_a32a2ffe715329d58b89b2f48a6c6ddda}{prev}} = secondState;
+73     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_select_transition_a796e76c619629c113f7e1ccd312f3806}\label{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_select_transition_a796e76c619629c113f7e1ccd312f3806}} 
+\index{org\+::newdawn\+::slick\+::state\+::transition\+::\+Select\+Transition@{org\+::newdawn\+::slick\+::state\+::transition\+::\+Select\+Transition}!is\+Complete@{is\+Complete}}
+\index{is\+Complete@{is\+Complete}!org\+::newdawn\+::slick\+::state\+::transition\+::\+Select\+Transition@{org\+::newdawn\+::slick\+::state\+::transition\+::\+Select\+Transition}}
+\subsubsection{\texorpdfstring{is\+Complete()}{isComplete()}}
+{\footnotesize\ttfamily boolean org.\+newdawn.\+slick.\+state.\+transition.\+Select\+Transition.\+is\+Complete (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_transition_af397d5185cf09c30c3f51d5021d63815}{org.\+newdawn.\+slick.\+state.\+transition.\+Transition\+::is\+Complete()}} 
+\end{DoxySeeAlso}
+
+
+Implements \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_transition_af397d5185cf09c30c3f51d5021d63815}{org.\+newdawn.\+slick.\+state.\+transition.\+Transition}}.
+
+
+\begin{DoxyCode}
+78                                 \{
+79         \textcolor{keywordflow}{return} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_select_transition_a449baeee9125b0fe5c20c8097b1aab8a}{finish}};
+80     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_select_transition_ab8383cc1738214b1408eef07cab39df1}\label{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_select_transition_ab8383cc1738214b1408eef07cab39df1}} 
+\index{org\+::newdawn\+::slick\+::state\+::transition\+::\+Select\+Transition@{org\+::newdawn\+::slick\+::state\+::transition\+::\+Select\+Transition}!post\+Render@{post\+Render}}
+\index{post\+Render@{post\+Render}!org\+::newdawn\+::slick\+::state\+::transition\+::\+Select\+Transition@{org\+::newdawn\+::slick\+::state\+::transition\+::\+Select\+Transition}}
+\subsubsection{\texorpdfstring{post\+Render()}{postRender()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+state.\+transition.\+Select\+Transition.\+post\+Render (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1_state_based_game}{State\+Based\+Game}}}]{game,  }\item[{\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_game_container}{Game\+Container}}}]{container,  }\item[{\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_graphics}{Graphics}}}]{g }\end{DoxyParamCaption}) throws \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_slick_exception}{Slick\+Exception}}\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_transition_ac113f4d5a19962a62a8adec7f9ab5d47}{org.\+newdawn.\+slick.\+state.\+transition.\+Transition\+::post\+Render}}(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1_state_based_game}{org.\+newdawn.\+slick.\+state.\+State\+Based\+Game}}, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_game_container}{org.\+newdawn.\+slick.\+Game\+Container}}, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_graphics}{org.\+newdawn.\+slick.\+Graphics}}) 
+\end{DoxySeeAlso}
+
+
+Implements \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_transition_ac113f4d5a19962a62a8adec7f9ab5d47}{org.\+newdawn.\+slick.\+state.\+transition.\+Transition}}.
+
+
+\begin{DoxyCode}
+85                                                                                                            
+      \{
+86         g.resetTransform();
+87         
+88         \textcolor{keywordflow}{if} (!\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_select_transition_aa47ebdd7b453eeed5895939e6e29ce99}{moveBackDone}}) \{
+89             g.translate(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_select_transition_a55bededb3b3265136c20de99fdcf4a1d}{xp1}},\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_select_transition_a490d66197f9232eea042fde2143331a4}{yp1}});
+90             g.scale(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_select_transition_a48e0f10ef6e2b93c4e3618bce98f94f6}{scale1}}, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_select_transition_a48e0f10ef6e2b93c4e3618bce98f94f6}{scale1}});
+91             g.setClip((\textcolor{keywordtype}{int}) \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_select_transition_a55bededb3b3265136c20de99fdcf4a1d}{xp1}},(\textcolor{keywordtype}{int}) \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_select_transition_a490d66197f9232eea042fde2143331a4}{yp1}},(\textcolor{keywordtype}{int}) (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_select_transition_a48e0f10ef6e2b93c4e3618bce98f94f6}{scale1}}*container.getWidth()),(\textcolor{keywordtype}{int}) (
+      \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_select_transition_a48e0f10ef6e2b93c4e3618bce98f94f6}{scale1}}*container.getHeight()));
+92             \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_select_transition_a32a2ffe715329d58b89b2f48a6c6ddda}{prev}}.\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1state_1_1_game_state_a065352d2725274c5244cd022f226eb17}{render}}(container, game, g);
+93             g.resetTransform();
+94             g.clearClip();
+95         \}
+96     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_select_transition_a3d694958bbeb595e3a962f9c1bd4da08}\label{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_select_transition_a3d694958bbeb595e3a962f9c1bd4da08}} 
+\index{org\+::newdawn\+::slick\+::state\+::transition\+::\+Select\+Transition@{org\+::newdawn\+::slick\+::state\+::transition\+::\+Select\+Transition}!pre\+Render@{pre\+Render}}
+\index{pre\+Render@{pre\+Render}!org\+::newdawn\+::slick\+::state\+::transition\+::\+Select\+Transition@{org\+::newdawn\+::slick\+::state\+::transition\+::\+Select\+Transition}}
+\subsubsection{\texorpdfstring{pre\+Render()}{preRender()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+state.\+transition.\+Select\+Transition.\+pre\+Render (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1_state_based_game}{State\+Based\+Game}}}]{game,  }\item[{\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_game_container}{Game\+Container}}}]{container,  }\item[{\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_graphics}{Graphics}}}]{g }\end{DoxyParamCaption}) throws \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_slick_exception}{Slick\+Exception}}\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_transition_ab8b0668c059830d938575d1a0b08bd93}{org.\+newdawn.\+slick.\+state.\+transition.\+Transition\+::pre\+Render}}(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1_state_based_game}{org.\+newdawn.\+slick.\+state.\+State\+Based\+Game}}, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_game_container}{org.\+newdawn.\+slick.\+Game\+Container}}, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_graphics}{org.\+newdawn.\+slick.\+Graphics}}) 
+\end{DoxySeeAlso}
+
+
+Implements \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_transition_ab8b0668c059830d938575d1a0b08bd93}{org.\+newdawn.\+slick.\+state.\+transition.\+Transition}}.
+
+
+\begin{DoxyCode}
+102                                               \{
+103         \textcolor{keywordflow}{if} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_select_transition_aa47ebdd7b453eeed5895939e6e29ce99}{moveBackDone}}) \{
+104             g.translate(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_select_transition_a55bededb3b3265136c20de99fdcf4a1d}{xp1}},\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_select_transition_a490d66197f9232eea042fde2143331a4}{yp1}});
+105             g.scale(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_select_transition_a48e0f10ef6e2b93c4e3618bce98f94f6}{scale1}}, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_select_transition_a48e0f10ef6e2b93c4e3618bce98f94f6}{scale1}});
+106             g.setClip((\textcolor{keywordtype}{int}) \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_select_transition_a55bededb3b3265136c20de99fdcf4a1d}{xp1}},(\textcolor{keywordtype}{int}) \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_select_transition_a490d66197f9232eea042fde2143331a4}{yp1}},(\textcolor{keywordtype}{int}) (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_select_transition_a48e0f10ef6e2b93c4e3618bce98f94f6}{scale1}}*container.getWidth()),(\textcolor{keywordtype}{int}) (
+      \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_select_transition_a48e0f10ef6e2b93c4e3618bce98f94f6}{scale1}}*container.getHeight()));
+107             \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_select_transition_a32a2ffe715329d58b89b2f48a6c6ddda}{prev}}.\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1state_1_1_game_state_a065352d2725274c5244cd022f226eb17}{render}}(container, game, g);
+108             g.resetTransform();
+109             g.clearClip();
+110         \}
+111         
+112         g.translate(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_select_transition_aec09869c0cac01d6ca1d52f4edcf4e16}{xp2}},\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_select_transition_a1f18334f729b964bf7b88cd3529ba8a1}{yp2}});
+113         g.scale(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_select_transition_a4b0f9fe1fdb5ece6bb1abe0bbdc28055}{scale2}}, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_select_transition_a4b0f9fe1fdb5ece6bb1abe0bbdc28055}{scale2}});
+114         g.setClip((\textcolor{keywordtype}{int}) \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_select_transition_aec09869c0cac01d6ca1d52f4edcf4e16}{xp2}},(\textcolor{keywordtype}{int}) \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_select_transition_a1f18334f729b964bf7b88cd3529ba8a1}{yp2}},(\textcolor{keywordtype}{int}) (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_select_transition_a4b0f9fe1fdb5ece6bb1abe0bbdc28055}{scale2}}*container.getWidth()),(\textcolor{keywordtype}{int}) (
+      \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_select_transition_a4b0f9fe1fdb5ece6bb1abe0bbdc28055}{scale2}}*container.getHeight()));
+115     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_select_transition_a17304499adede77a5323e747aee6bcdd}\label{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_select_transition_a17304499adede77a5323e747aee6bcdd}} 
+\index{org\+::newdawn\+::slick\+::state\+::transition\+::\+Select\+Transition@{org\+::newdawn\+::slick\+::state\+::transition\+::\+Select\+Transition}!update@{update}}
+\index{update@{update}!org\+::newdawn\+::slick\+::state\+::transition\+::\+Select\+Transition@{org\+::newdawn\+::slick\+::state\+::transition\+::\+Select\+Transition}}
+\subsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+state.\+transition.\+Select\+Transition.\+update (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1_state_based_game}{State\+Based\+Game}}}]{game,  }\item[{\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_game_container}{Game\+Container}}}]{container,  }\item[{int}]{delta }\end{DoxyParamCaption}) throws \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_slick_exception}{Slick\+Exception}}\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_transition_a9be3072f6e2423e3d0a451a419d1d518}{org.\+newdawn.\+slick.\+state.\+transition.\+Transition\+::update}}(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1_state_based_game}{org.\+newdawn.\+slick.\+state.\+State\+Based\+Game}}, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_game_container}{org.\+newdawn.\+slick.\+Game\+Container}}, int) 
+\end{DoxySeeAlso}
+
+
+Implements \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_transition_a9be3072f6e2423e3d0a451a419d1d518}{org.\+newdawn.\+slick.\+state.\+transition.\+Transition}}.
+
+
+\begin{DoxyCode}
+121                                   \{
+122         \textcolor{keywordflow}{if} (!\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_select_transition_a1329f975fdc02a4ab1bf71647d67ed11}{init}}) \{
+123             \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_select_transition_a1329f975fdc02a4ab1bf71647d67ed11}{init}} = \textcolor{keyword}{true};
+124             \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_select_transition_aec09869c0cac01d6ca1d52f4edcf4e16}{xp2}} = (container.getWidth()/2)+50;
+125             \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_select_transition_a1f18334f729b964bf7b88cd3529ba8a1}{yp2}} = (container.getHeight()/4);
+126         \}
+127         
+128         \textcolor{keywordflow}{if} (!\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_select_transition_aa47ebdd7b453eeed5895939e6e29ce99}{moveBackDone}}) \{
+129             \textcolor{keywordflow}{if} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_select_transition_a48e0f10ef6e2b93c4e3618bce98f94f6}{scale1}} > 0.4f) \{
+130                 \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_select_transition_a48e0f10ef6e2b93c4e3618bce98f94f6}{scale1}} -= delta * 0.002f;
+131                 \textcolor{keywordflow}{if} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_select_transition_a48e0f10ef6e2b93c4e3618bce98f94f6}{scale1}} <= 0.4f) \{
+132                     \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_select_transition_a48e0f10ef6e2b93c4e3618bce98f94f6}{scale1}} = 0.4f;
+133                 \}
+134                 \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_select_transition_a55bededb3b3265136c20de99fdcf4a1d}{xp1}} += delta * 0.3f;
+135                 \textcolor{keywordflow}{if} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_select_transition_a55bededb3b3265136c20de99fdcf4a1d}{xp1}} > 50) \{
+136                     \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_select_transition_a55bededb3b3265136c20de99fdcf4a1d}{xp1}} = 50;
+137                 \}
+138                 \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_select_transition_a490d66197f9232eea042fde2143331a4}{yp1}} += delta * 0.5f;
+139                 \textcolor{keywordflow}{if} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_select_transition_a490d66197f9232eea042fde2143331a4}{yp1}} > (container.getHeight()/4)) \{
+140                     \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_select_transition_a490d66197f9232eea042fde2143331a4}{yp1}} = (container.getHeight()/4);
+141                 \}
+142             \} \textcolor{keywordflow}{else} \{
+143                 \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_select_transition_aa47ebdd7b453eeed5895939e6e29ce99}{moveBackDone}} = \textcolor{keyword}{true};
+144             \}
+145         \} \textcolor{keywordflow}{else} \{
+146             \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_select_transition_a851a9145c8ede083a4d54a6f2551f584}{pause}} -= delta;
+147             \textcolor{keywordflow}{if} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_select_transition_a851a9145c8ede083a4d54a6f2551f584}{pause}} > 0) \{
+148                 \textcolor{keywordflow}{return};
+149             \}
+150             \textcolor{keywordflow}{if} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_select_transition_a4b0f9fe1fdb5ece6bb1abe0bbdc28055}{scale2}} < 1) \{
+151                 \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_select_transition_a4b0f9fe1fdb5ece6bb1abe0bbdc28055}{scale2}} += delta * 0.002f;
+152                 \textcolor{keywordflow}{if} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_select_transition_a4b0f9fe1fdb5ece6bb1abe0bbdc28055}{scale2}} >= 1) \{
+153                     \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_select_transition_a4b0f9fe1fdb5ece6bb1abe0bbdc28055}{scale2}} = 1f;
+154                 \}
+155                 \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_select_transition_aec09869c0cac01d6ca1d52f4edcf4e16}{xp2}} -= delta * 1.5f;
+156                 \textcolor{keywordflow}{if} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_select_transition_aec09869c0cac01d6ca1d52f4edcf4e16}{xp2}} < 0) \{
+157                     \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_select_transition_aec09869c0cac01d6ca1d52f4edcf4e16}{xp2}} = 0;
+158                 \}
+159                 \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_select_transition_a1f18334f729b964bf7b88cd3529ba8a1}{yp2}} -= delta * 0.5f;
+160                 \textcolor{keywordflow}{if} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_select_transition_a1f18334f729b964bf7b88cd3529ba8a1}{yp2}} < 0) \{
+161                     \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_select_transition_a1f18334f729b964bf7b88cd3529ba8a1}{yp2}} = 0;
+162                 \}
+163             \} \textcolor{keywordflow}{else} \{
+164                 \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_select_transition_a449baeee9125b0fe5c20c8097b1aab8a}{finish}} = \textcolor{keyword}{true};
+165             \}
+166         \}
+167     \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_select_transition_ada67cc158242a846499be282dfa2c53b}\label{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_select_transition_ada67cc158242a846499be282dfa2c53b}} 
+\index{org\+::newdawn\+::slick\+::state\+::transition\+::\+Select\+Transition@{org\+::newdawn\+::slick\+::state\+::transition\+::\+Select\+Transition}!background@{background}}
+\index{background@{background}!org\+::newdawn\+::slick\+::state\+::transition\+::\+Select\+Transition@{org\+::newdawn\+::slick\+::state\+::transition\+::\+Select\+Transition}}
+\subsubsection{\texorpdfstring{background}{background}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_color}{Color}} org.\+newdawn.\+slick.\+state.\+transition.\+Select\+Transition.\+background\hspace{0.3cm}{\ttfamily [private]}}
+
+The background applied under the previous state if any \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_select_transition_a449baeee9125b0fe5c20c8097b1aab8a}\label{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_select_transition_a449baeee9125b0fe5c20c8097b1aab8a}} 
+\index{org\+::newdawn\+::slick\+::state\+::transition\+::\+Select\+Transition@{org\+::newdawn\+::slick\+::state\+::transition\+::\+Select\+Transition}!finish@{finish}}
+\index{finish@{finish}!org\+::newdawn\+::slick\+::state\+::transition\+::\+Select\+Transition@{org\+::newdawn\+::slick\+::state\+::transition\+::\+Select\+Transition}}
+\subsubsection{\texorpdfstring{finish}{finish}}
+{\footnotesize\ttfamily boolean org.\+newdawn.\+slick.\+state.\+transition.\+Select\+Transition.\+finish\hspace{0.3cm}{\ttfamily [private]}}
+
+True if the state has finished \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_select_transition_a6ae81bee49fb099f9e465690cc50ac9c}\label{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_select_transition_a6ae81bee49fb099f9e465690cc50ac9c}} 
+\index{org\+::newdawn\+::slick\+::state\+::transition\+::\+Select\+Transition@{org\+::newdawn\+::slick\+::state\+::transition\+::\+Select\+Transition}!GL@{GL}}
+\index{GL@{GL}!org\+::newdawn\+::slick\+::state\+::transition\+::\+Select\+Transition@{org\+::newdawn\+::slick\+::state\+::transition\+::\+Select\+Transition}}
+\subsubsection{\texorpdfstring{GL}{GL}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1opengl_1_1renderer_1_1_s_g_l}{S\+GL}} org.\+newdawn.\+slick.\+state.\+transition.\+Select\+Transition.\+GL = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1renderer_1_1_renderer_abe742c3a7dfca67c6c01821d27087308}{Renderer.\+get}}()\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+The renderer to use for all GL operations \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_select_transition_a1329f975fdc02a4ab1bf71647d67ed11}\label{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_select_transition_a1329f975fdc02a4ab1bf71647d67ed11}} 
+\index{org\+::newdawn\+::slick\+::state\+::transition\+::\+Select\+Transition@{org\+::newdawn\+::slick\+::state\+::transition\+::\+Select\+Transition}!init@{init}}
+\index{init@{init}!org\+::newdawn\+::slick\+::state\+::transition\+::\+Select\+Transition@{org\+::newdawn\+::slick\+::state\+::transition\+::\+Select\+Transition}}
+\subsubsection{\texorpdfstring{init}{init}}
+{\footnotesize\ttfamily boolean org.\+newdawn.\+slick.\+state.\+transition.\+Select\+Transition.\+init = false\hspace{0.3cm}{\ttfamily [private]}}
+
+True if this transition has been initialised \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_select_transition_aa47ebdd7b453eeed5895939e6e29ce99}\label{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_select_transition_aa47ebdd7b453eeed5895939e6e29ce99}} 
+\index{org\+::newdawn\+::slick\+::state\+::transition\+::\+Select\+Transition@{org\+::newdawn\+::slick\+::state\+::transition\+::\+Select\+Transition}!move\+Back\+Done@{move\+Back\+Done}}
+\index{move\+Back\+Done@{move\+Back\+Done}!org\+::newdawn\+::slick\+::state\+::transition\+::\+Select\+Transition@{org\+::newdawn\+::slick\+::state\+::transition\+::\+Select\+Transition}}
+\subsubsection{\texorpdfstring{move\+Back\+Done}{moveBackDone}}
+{\footnotesize\ttfamily boolean org.\+newdawn.\+slick.\+state.\+transition.\+Select\+Transition.\+move\+Back\+Done = false\hspace{0.3cm}{\ttfamily [private]}}
+
+True if the move back of the first state is complete \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_select_transition_a851a9145c8ede083a4d54a6f2551f584}\label{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_select_transition_a851a9145c8ede083a4d54a6f2551f584}} 
+\index{org\+::newdawn\+::slick\+::state\+::transition\+::\+Select\+Transition@{org\+::newdawn\+::slick\+::state\+::transition\+::\+Select\+Transition}!pause@{pause}}
+\index{pause@{pause}!org\+::newdawn\+::slick\+::state\+::transition\+::\+Select\+Transition@{org\+::newdawn\+::slick\+::state\+::transition\+::\+Select\+Transition}}
+\subsubsection{\texorpdfstring{pause}{pause}}
+{\footnotesize\ttfamily int org.\+newdawn.\+slick.\+state.\+transition.\+Select\+Transition.\+pause = 300\hspace{0.3cm}{\ttfamily [private]}}
+
+The length of the pause between selection \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_select_transition_a32a2ffe715329d58b89b2f48a6c6ddda}\label{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_select_transition_a32a2ffe715329d58b89b2f48a6c6ddda}} 
+\index{org\+::newdawn\+::slick\+::state\+::transition\+::\+Select\+Transition@{org\+::newdawn\+::slick\+::state\+::transition\+::\+Select\+Transition}!prev@{prev}}
+\index{prev@{prev}!org\+::newdawn\+::slick\+::state\+::transition\+::\+Select\+Transition@{org\+::newdawn\+::slick\+::state\+::transition\+::\+Select\+Transition}}
+\subsubsection{\texorpdfstring{prev}{prev}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1state_1_1_game_state}{Game\+State}} org.\+newdawn.\+slick.\+state.\+transition.\+Select\+Transition.\+prev\hspace{0.3cm}{\ttfamily [private]}}
+
+The previous state \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_select_transition_a48e0f10ef6e2b93c4e3618bce98f94f6}\label{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_select_transition_a48e0f10ef6e2b93c4e3618bce98f94f6}} 
+\index{org\+::newdawn\+::slick\+::state\+::transition\+::\+Select\+Transition@{org\+::newdawn\+::slick\+::state\+::transition\+::\+Select\+Transition}!scale1@{scale1}}
+\index{scale1@{scale1}!org\+::newdawn\+::slick\+::state\+::transition\+::\+Select\+Transition@{org\+::newdawn\+::slick\+::state\+::transition\+::\+Select\+Transition}}
+\subsubsection{\texorpdfstring{scale1}{scale1}}
+{\footnotesize\ttfamily float org.\+newdawn.\+slick.\+state.\+transition.\+Select\+Transition.\+scale1 = 1\hspace{0.3cm}{\ttfamily [private]}}
+
+The scale of the first state \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_select_transition_a4b0f9fe1fdb5ece6bb1abe0bbdc28055}\label{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_select_transition_a4b0f9fe1fdb5ece6bb1abe0bbdc28055}} 
+\index{org\+::newdawn\+::slick\+::state\+::transition\+::\+Select\+Transition@{org\+::newdawn\+::slick\+::state\+::transition\+::\+Select\+Transition}!scale2@{scale2}}
+\index{scale2@{scale2}!org\+::newdawn\+::slick\+::state\+::transition\+::\+Select\+Transition@{org\+::newdawn\+::slick\+::state\+::transition\+::\+Select\+Transition}}
+\subsubsection{\texorpdfstring{scale2}{scale2}}
+{\footnotesize\ttfamily float org.\+newdawn.\+slick.\+state.\+transition.\+Select\+Transition.\+scale2 = 0.\+4f\hspace{0.3cm}{\ttfamily [private]}}
+
+The scale of the second state \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_select_transition_a55bededb3b3265136c20de99fdcf4a1d}\label{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_select_transition_a55bededb3b3265136c20de99fdcf4a1d}} 
+\index{org\+::newdawn\+::slick\+::state\+::transition\+::\+Select\+Transition@{org\+::newdawn\+::slick\+::state\+::transition\+::\+Select\+Transition}!xp1@{xp1}}
+\index{xp1@{xp1}!org\+::newdawn\+::slick\+::state\+::transition\+::\+Select\+Transition@{org\+::newdawn\+::slick\+::state\+::transition\+::\+Select\+Transition}}
+\subsubsection{\texorpdfstring{xp1}{xp1}}
+{\footnotesize\ttfamily float org.\+newdawn.\+slick.\+state.\+transition.\+Select\+Transition.\+xp1 = 0\hspace{0.3cm}{\ttfamily [private]}}
+
+The x coordinate to render the first state \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_select_transition_aec09869c0cac01d6ca1d52f4edcf4e16}\label{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_select_transition_aec09869c0cac01d6ca1d52f4edcf4e16}} 
+\index{org\+::newdawn\+::slick\+::state\+::transition\+::\+Select\+Transition@{org\+::newdawn\+::slick\+::state\+::transition\+::\+Select\+Transition}!xp2@{xp2}}
+\index{xp2@{xp2}!org\+::newdawn\+::slick\+::state\+::transition\+::\+Select\+Transition@{org\+::newdawn\+::slick\+::state\+::transition\+::\+Select\+Transition}}
+\subsubsection{\texorpdfstring{xp2}{xp2}}
+{\footnotesize\ttfamily float org.\+newdawn.\+slick.\+state.\+transition.\+Select\+Transition.\+xp2 = 0\hspace{0.3cm}{\ttfamily [private]}}
+
+The x coordinate to render the second state \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_select_transition_a490d66197f9232eea042fde2143331a4}\label{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_select_transition_a490d66197f9232eea042fde2143331a4}} 
+\index{org\+::newdawn\+::slick\+::state\+::transition\+::\+Select\+Transition@{org\+::newdawn\+::slick\+::state\+::transition\+::\+Select\+Transition}!yp1@{yp1}}
+\index{yp1@{yp1}!org\+::newdawn\+::slick\+::state\+::transition\+::\+Select\+Transition@{org\+::newdawn\+::slick\+::state\+::transition\+::\+Select\+Transition}}
+\subsubsection{\texorpdfstring{yp1}{yp1}}
+{\footnotesize\ttfamily float org.\+newdawn.\+slick.\+state.\+transition.\+Select\+Transition.\+yp1 = 0\hspace{0.3cm}{\ttfamily [private]}}
+
+The y coordinate to render the first state \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_select_transition_a1f18334f729b964bf7b88cd3529ba8a1}\label{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_select_transition_a1f18334f729b964bf7b88cd3529ba8a1}} 
+\index{org\+::newdawn\+::slick\+::state\+::transition\+::\+Select\+Transition@{org\+::newdawn\+::slick\+::state\+::transition\+::\+Select\+Transition}!yp2@{yp2}}
+\index{yp2@{yp2}!org\+::newdawn\+::slick\+::state\+::transition\+::\+Select\+Transition@{org\+::newdawn\+::slick\+::state\+::transition\+::\+Select\+Transition}}
+\subsubsection{\texorpdfstring{yp2}{yp2}}
+{\footnotesize\ttfamily float org.\+newdawn.\+slick.\+state.\+transition.\+Select\+Transition.\+yp2 = 0\hspace{0.3cm}{\ttfamily [private]}}
+
+The y coordinate to render the second state 

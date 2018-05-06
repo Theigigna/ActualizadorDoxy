@@ -1,0 +1,366 @@
+\hypertarget{classorg_1_1newdawn_1_1slick_1_1geom_1_1_morph_shape}{}\section{org.\+newdawn.\+slick.\+geom.\+Morph\+Shape Class Reference}
+\label{classorg_1_1newdawn_1_1slick_1_1geom_1_1_morph_shape}\index{org.\+newdawn.\+slick.\+geom.\+Morph\+Shape@{org.\+newdawn.\+slick.\+geom.\+Morph\+Shape}}
+Inheritance diagram for org.\+newdawn.\+slick.\+geom.\+Morph\+Shape\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classorg_1_1newdawn_1_1slick_1_1geom_1_1_morph_shape}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_morph_shape_a06a4bb0708992bfbcd849ce0a4437f32}{Morph\+Shape}} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_shape}{Shape}} base)
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_morph_shape_a3f052286d029f6277988a385cc633a68}{add\+Shape}} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_shape}{Shape}} shape)
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_morph_shape_add1fba81944fe0dfd474ae7f5f808f64}{set\+Morph\+Time}} (float time)
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_morph_shape_afc0521e77e821a34363c87725b5fd3e8}{update\+Morph\+Time}} (float delta)
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_morph_shape_ac053f4373e6ce3eaecee93d75c0a1260}{set\+External\+Frame}} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_shape}{Shape}} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_morph_shape_adc35bd32e88974946c096e273b648575}{current}})
+\item 
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_shape}{Shape}} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_morph_shape_a4b172f77f9d468bbcca6b36849a51ed3}{transform}} (Transform transform)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_morph_shape_a7c393dbb6244ecd3c7e6165ce135e1e8}{create\+Points}} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+boolean \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_morph_shape_a46b64dc33a72347eb5d6085bc48a3557}{equal\+Shapes}} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_shape}{Shape}} a, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_shape}{Shape}} b)
+\item 
+int \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_morph_shape_ad93f28ac5dd367627bfadbd8fec48213}{rational}} (int n)
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_morph_shape_acc6cd1ff5332979f86cc03d8bb520846}{set\+Frame}} (int a, int b, float \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_morph_shape_a006e01581d798601f1aaf5bea5dc1583}{offset}})
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Array\+List \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_morph_shape_a24eb760097e650b268700165c0cd66f2}{shapes}} = new Array\+List()
+\item 
+float \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_morph_shape_a006e01581d798601f1aaf5bea5dc1583}{offset}}
+\item 
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_shape}{Shape}} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_morph_shape_adc35bd32e88974946c096e273b648575}{current}}
+\item 
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_shape}{Shape}} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_morph_shape_a5ce48bb978769ccae833b7c9f2a7df27}{next}}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+A shape that morphs between a set of other shapes
+
+\begin{DoxyAuthor}{Author}
+kevin 
+\end{DoxyAuthor}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1geom_1_1_morph_shape_a06a4bb0708992bfbcd849ce0a4437f32}\label{classorg_1_1newdawn_1_1slick_1_1geom_1_1_morph_shape_a06a4bb0708992bfbcd849ce0a4437f32}} 
+\index{org\+::newdawn\+::slick\+::geom\+::\+Morph\+Shape@{org\+::newdawn\+::slick\+::geom\+::\+Morph\+Shape}!Morph\+Shape@{Morph\+Shape}}
+\index{Morph\+Shape@{Morph\+Shape}!org\+::newdawn\+::slick\+::geom\+::\+Morph\+Shape@{org\+::newdawn\+::slick\+::geom\+::\+Morph\+Shape}}
+\subsubsection{\texorpdfstring{Morph\+Shape()}{MorphShape()}}
+{\footnotesize\ttfamily org.\+newdawn.\+slick.\+geom.\+Morph\+Shape.\+Morph\+Shape (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_shape}{Shape}}}]{base }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Create a new mighty morphin shape
+
+
+\begin{DoxyParams}{Parameters}
+{\em base} & The base shape we\textquotesingle{}re starting the morph from \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+26                                   \{
+27         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_morph_shape_a24eb760097e650b268700165c0cd66f2}{shapes}}.add(base);
+28         \textcolor{keywordtype}{float}[] copy = base.points;
+29         this.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_shape_a8b4d4058734bbb3b96072e470b92aa37}{points}} = \textcolor{keyword}{new} \textcolor{keywordtype}{float}[copy.length];
+30         
+31         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_morph_shape_adc35bd32e88974946c096e273b648575}{current}} = base;
+32         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_morph_shape_a5ce48bb978769ccae833b7c9f2a7df27}{next}} = base;
+33     \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1geom_1_1_morph_shape_a3f052286d029f6277988a385cc633a68}\label{classorg_1_1newdawn_1_1slick_1_1geom_1_1_morph_shape_a3f052286d029f6277988a385cc633a68}} 
+\index{org\+::newdawn\+::slick\+::geom\+::\+Morph\+Shape@{org\+::newdawn\+::slick\+::geom\+::\+Morph\+Shape}!add\+Shape@{add\+Shape}}
+\index{add\+Shape@{add\+Shape}!org\+::newdawn\+::slick\+::geom\+::\+Morph\+Shape@{org\+::newdawn\+::slick\+::geom\+::\+Morph\+Shape}}
+\subsubsection{\texorpdfstring{add\+Shape()}{addShape()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+geom.\+Morph\+Shape.\+add\+Shape (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_shape}{Shape}}}]{shape }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Add a subsequent shape that we should morph too in order
+
+
+\begin{DoxyParams}{Parameters}
+{\em shape} & The new shape that forms part of the morphing shape \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+40                                       \{
+41         \textcolor{keywordflow}{if} (shape.points.length != \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_shape_a8b4d4058734bbb3b96072e470b92aa37}{points}}.length) \{
+42             \textcolor{keywordflow}{throw} \textcolor{keyword}{new} RuntimeException(\textcolor{stringliteral}{"Attempt to morph between two shapes with different vertex counts"});
+43         \}
+44         
+45         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_shape_ab4721f44d2bdecd9d65a56181589b4b1}{Shape}} prev = (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_shape_ab4721f44d2bdecd9d65a56181589b4b1}{Shape}}) \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_morph_shape_a24eb760097e650b268700165c0cd66f2}{shapes}}.get(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_morph_shape_a24eb760097e650b268700165c0cd66f2}{shapes}}.size()-1);
+46         \textcolor{keywordflow}{if} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_morph_shape_a46b64dc33a72347eb5d6085bc48a3557}{equalShapes}}(prev, shape)) \{
+47             \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_morph_shape_a24eb760097e650b268700165c0cd66f2}{shapes}}.add(prev);
+48         \} \textcolor{keywordflow}{else} \{
+49             \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_morph_shape_a24eb760097e650b268700165c0cd66f2}{shapes}}.add(shape);
+50         \}
+51         
+52         \textcolor{keywordflow}{if} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_morph_shape_a24eb760097e650b268700165c0cd66f2}{shapes}}.size() == 2) \{
+53             \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_morph_shape_a5ce48bb978769ccae833b7c9f2a7df27}{next}} = (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_shape_ab4721f44d2bdecd9d65a56181589b4b1}{Shape}}) \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_morph_shape_a24eb760097e650b268700165c0cd66f2}{shapes}}.get(1);
+54         \}
+55     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1geom_1_1_morph_shape_a7c393dbb6244ecd3c7e6165ce135e1e8}\label{classorg_1_1newdawn_1_1slick_1_1geom_1_1_morph_shape_a7c393dbb6244ecd3c7e6165ce135e1e8}} 
+\index{org\+::newdawn\+::slick\+::geom\+::\+Morph\+Shape@{org\+::newdawn\+::slick\+::geom\+::\+Morph\+Shape}!create\+Points@{create\+Points}}
+\index{create\+Points@{create\+Points}!org\+::newdawn\+::slick\+::geom\+::\+Morph\+Shape@{org\+::newdawn\+::slick\+::geom\+::\+Morph\+Shape}}
+\subsubsection{\texorpdfstring{create\+Points()}{createPoints()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+geom.\+Morph\+Shape.\+create\+Points (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_morph_shape_a7c393dbb6244ecd3c7e6165ce135e1e8}{Morph\+Shape\+::create\+Points()}} 
+\end{DoxySeeAlso}
+
+\begin{DoxyCode}
+169                                   \{
+170         \textcolor{keywordflow}{if} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_morph_shape_adc35bd32e88974946c096e273b648575}{current}} == \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_morph_shape_a5ce48bb978769ccae833b7c9f2a7df27}{next}}) \{
+171             System.arraycopy(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_morph_shape_adc35bd32e88974946c096e273b648575}{current}}.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_shape_a8b4d4058734bbb3b96072e470b92aa37}{points}},0,\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_shape_a8b4d4058734bbb3b96072e470b92aa37}{points}},0,\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_shape_a8b4d4058734bbb3b96072e470b92aa37}{points}}.length);
+172             \textcolor{keywordflow}{return};
+173         \}
+174         
+175         \textcolor{keywordtype}{float}[] apoints = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_morph_shape_adc35bd32e88974946c096e273b648575}{current}}.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_shape_a8b4d4058734bbb3b96072e470b92aa37}{points}};
+176         \textcolor{keywordtype}{float}[] bpoints = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_morph_shape_a5ce48bb978769ccae833b7c9f2a7df27}{next}}.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_shape_a8b4d4058734bbb3b96072e470b92aa37}{points}};
+177         
+178         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i=0;i<\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_shape_a8b4d4058734bbb3b96072e470b92aa37}{points}}.length;i++) \{
+179             \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_shape_a8b4d4058734bbb3b96072e470b92aa37}{points}}[i] = apoints[i] * (1 - \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_morph_shape_a006e01581d798601f1aaf5bea5dc1583}{offset}});
+180             \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_shape_a8b4d4058734bbb3b96072e470b92aa37}{points}}[i] += bpoints[i] * \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_morph_shape_a006e01581d798601f1aaf5bea5dc1583}{offset}};
+181         \}
+182     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1geom_1_1_morph_shape_a46b64dc33a72347eb5d6085bc48a3557}\label{classorg_1_1newdawn_1_1slick_1_1geom_1_1_morph_shape_a46b64dc33a72347eb5d6085bc48a3557}} 
+\index{org\+::newdawn\+::slick\+::geom\+::\+Morph\+Shape@{org\+::newdawn\+::slick\+::geom\+::\+Morph\+Shape}!equal\+Shapes@{equal\+Shapes}}
+\index{equal\+Shapes@{equal\+Shapes}!org\+::newdawn\+::slick\+::geom\+::\+Morph\+Shape@{org\+::newdawn\+::slick\+::geom\+::\+Morph\+Shape}}
+\subsubsection{\texorpdfstring{equal\+Shapes()}{equalShapes()}}
+{\footnotesize\ttfamily boolean org.\+newdawn.\+slick.\+geom.\+Morph\+Shape.\+equal\+Shapes (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_shape}{Shape}}}]{a,  }\item[{\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_shape}{Shape}}}]{b }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+Check if the shape\textquotesingle{}s points are all equal
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & The first shape to compare \\
+\hline
+{\em b} & The second shape to compare \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the shapes are equal 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+64                                                   \{
+65         a.checkPoints();
+66         b.checkPoints();
+67         
+68         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i=0;i<a.points.length;i++) \{
+69             \textcolor{keywordflow}{if} (a.points[i] != b.points[i]) \{
+70                 \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+71             \}
+72         \}
+73         
+74         \textcolor{keywordflow}{return} \textcolor{keyword}{true};
+75     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1geom_1_1_morph_shape_ad93f28ac5dd367627bfadbd8fec48213}\label{classorg_1_1newdawn_1_1slick_1_1geom_1_1_morph_shape_ad93f28ac5dd367627bfadbd8fec48213}} 
+\index{org\+::newdawn\+::slick\+::geom\+::\+Morph\+Shape@{org\+::newdawn\+::slick\+::geom\+::\+Morph\+Shape}!rational@{rational}}
+\index{rational@{rational}!org\+::newdawn\+::slick\+::geom\+::\+Morph\+Shape@{org\+::newdawn\+::slick\+::geom\+::\+Morph\+Shape}}
+\subsubsection{\texorpdfstring{rational()}{rational()}}
+{\footnotesize\ttfamily int org.\+newdawn.\+slick.\+geom.\+Morph\+Shape.\+rational (\begin{DoxyParamCaption}\item[{int}]{n }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+Get an index that is rational, i.\+e. fits inside this set of shapes
+
+
+\begin{DoxyParams}{Parameters}
+{\em n} & The index to rationalize \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The index rationalized 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+141                                 \{
+142         \textcolor{keywordflow}{while} (n >= \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_morph_shape_a24eb760097e650b268700165c0cd66f2}{shapes}}.size()) \{
+143             n -= \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_morph_shape_a24eb760097e650b268700165c0cd66f2}{shapes}}.size();
+144         \}
+145         \textcolor{keywordflow}{while} (n < 0) \{
+146             n += \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_morph_shape_a24eb760097e650b268700165c0cd66f2}{shapes}}.size();
+147         \}
+148         
+149         \textcolor{keywordflow}{return} n;
+150     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1geom_1_1_morph_shape_ac053f4373e6ce3eaecee93d75c0a1260}\label{classorg_1_1newdawn_1_1slick_1_1geom_1_1_morph_shape_ac053f4373e6ce3eaecee93d75c0a1260}} 
+\index{org\+::newdawn\+::slick\+::geom\+::\+Morph\+Shape@{org\+::newdawn\+::slick\+::geom\+::\+Morph\+Shape}!set\+External\+Frame@{set\+External\+Frame}}
+\index{set\+External\+Frame@{set\+External\+Frame}!org\+::newdawn\+::slick\+::geom\+::\+Morph\+Shape@{org\+::newdawn\+::slick\+::geom\+::\+Morph\+Shape}}
+\subsubsection{\texorpdfstring{set\+External\+Frame()}{setExternalFrame()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+geom.\+Morph\+Shape.\+set\+External\+Frame (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_shape}{Shape}}}]{current }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Set the current frame
+
+
+\begin{DoxyParams}{Parameters}
+{\em current} & The current frame \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+129                                                 \{
+130         this.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_morph_shape_adc35bd32e88974946c096e273b648575}{current}} = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_morph_shape_adc35bd32e88974946c096e273b648575}{current}};
+131         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_morph_shape_a5ce48bb978769ccae833b7c9f2a7df27}{next}} = (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_shape_ab4721f44d2bdecd9d65a56181589b4b1}{Shape}}) \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_morph_shape_a24eb760097e650b268700165c0cd66f2}{shapes}}.get(0);
+132         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_morph_shape_a006e01581d798601f1aaf5bea5dc1583}{offset}} = 0;
+133     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1geom_1_1_morph_shape_acc6cd1ff5332979f86cc03d8bb520846}\label{classorg_1_1newdawn_1_1slick_1_1geom_1_1_morph_shape_acc6cd1ff5332979f86cc03d8bb520846}} 
+\index{org\+::newdawn\+::slick\+::geom\+::\+Morph\+Shape@{org\+::newdawn\+::slick\+::geom\+::\+Morph\+Shape}!set\+Frame@{set\+Frame}}
+\index{set\+Frame@{set\+Frame}!org\+::newdawn\+::slick\+::geom\+::\+Morph\+Shape@{org\+::newdawn\+::slick\+::geom\+::\+Morph\+Shape}}
+\subsubsection{\texorpdfstring{set\+Frame()}{setFrame()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+geom.\+Morph\+Shape.\+set\+Frame (\begin{DoxyParamCaption}\item[{int}]{a,  }\item[{int}]{b,  }\item[{float}]{offset }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+Set the frame to be represented
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & The index of the first shape \\
+\hline
+{\em b} & The index of the second shape \\
+\hline
+{\em offset} & The offset between the two shapes to represent \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+159                                                       \{
+160         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_morph_shape_adc35bd32e88974946c096e273b648575}{current}} = (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_shape_ab4721f44d2bdecd9d65a56181589b4b1}{Shape}}) \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_morph_shape_a24eb760097e650b268700165c0cd66f2}{shapes}}.get(a);
+161         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_morph_shape_a5ce48bb978769ccae833b7c9f2a7df27}{next}} = (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_shape_ab4721f44d2bdecd9d65a56181589b4b1}{Shape}}) \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_morph_shape_a24eb760097e650b268700165c0cd66f2}{shapes}}.get(b);
+162         this.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_morph_shape_a006e01581d798601f1aaf5bea5dc1583}{offset}} = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_morph_shape_a006e01581d798601f1aaf5bea5dc1583}{offset}};
+163         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_shape_a61fe1954d2fdefc72c34b284f4fcfdb4}{pointsDirty}} = \textcolor{keyword}{true};
+164     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1geom_1_1_morph_shape_add1fba81944fe0dfd474ae7f5f808f64}\label{classorg_1_1newdawn_1_1slick_1_1geom_1_1_morph_shape_add1fba81944fe0dfd474ae7f5f808f64}} 
+\index{org\+::newdawn\+::slick\+::geom\+::\+Morph\+Shape@{org\+::newdawn\+::slick\+::geom\+::\+Morph\+Shape}!set\+Morph\+Time@{set\+Morph\+Time}}
+\index{set\+Morph\+Time@{set\+Morph\+Time}!org\+::newdawn\+::slick\+::geom\+::\+Morph\+Shape@{org\+::newdawn\+::slick\+::geom\+::\+Morph\+Shape}}
+\subsubsection{\texorpdfstring{set\+Morph\+Time()}{setMorphTime()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+geom.\+Morph\+Shape.\+set\+Morph\+Time (\begin{DoxyParamCaption}\item[{float}]{time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Set the \char`\"{}time\char`\"{} index for this morph. This is given in terms of shapes, so 0.\+5f would give you the position half way between the first and second shapes.
+
+
+\begin{DoxyParams}{Parameters}
+{\em time} & The time index to represent on this shape \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+83                                          \{
+84         \textcolor{keywordtype}{int} p = (int) time;
+85         \textcolor{keywordtype}{int} n = p + 1;
+86         \textcolor{keywordtype}{float} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_morph_shape_a006e01581d798601f1aaf5bea5dc1583}{offset}} = time - p;
+87         
+88         p = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_morph_shape_ad93f28ac5dd367627bfadbd8fec48213}{rational}}(p);
+89         n = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_morph_shape_ad93f28ac5dd367627bfadbd8fec48213}{rational}}(n);
+90         
+91         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_morph_shape_acc6cd1ff5332979f86cc03d8bb520846}{setFrame}}(p, n, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_morph_shape_a006e01581d798601f1aaf5bea5dc1583}{offset}});
+92     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1geom_1_1_morph_shape_a4b172f77f9d468bbcca6b36849a51ed3}\label{classorg_1_1newdawn_1_1slick_1_1geom_1_1_morph_shape_a4b172f77f9d468bbcca6b36849a51ed3}} 
+\index{org\+::newdawn\+::slick\+::geom\+::\+Morph\+Shape@{org\+::newdawn\+::slick\+::geom\+::\+Morph\+Shape}!transform@{transform}}
+\index{transform@{transform}!org\+::newdawn\+::slick\+::geom\+::\+Morph\+Shape@{org\+::newdawn\+::slick\+::geom\+::\+Morph\+Shape}}
+\subsubsection{\texorpdfstring{transform()}{transform()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_shape}{Shape}} org.\+newdawn.\+slick.\+geom.\+Morph\+Shape.\+transform (\begin{DoxyParamCaption}\item[{Transform}]{transform }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_morph_shape_a4b172f77f9d468bbcca6b36849a51ed3}{Morph\+Shape\+::transform(\+Transform)}} 
+\end{DoxySeeAlso}
+
+\begin{DoxyCode}
+187                                                 \{
+188         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_morph_shape_a7c393dbb6244ecd3c7e6165ce135e1e8}{createPoints}}();
+189         Polygon poly = \textcolor{keyword}{new} Polygon(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_shape_a8b4d4058734bbb3b96072e470b92aa37}{points}});
+190         
+191         \textcolor{keywordflow}{return} poly;
+192     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1geom_1_1_morph_shape_afc0521e77e821a34363c87725b5fd3e8}\label{classorg_1_1newdawn_1_1slick_1_1geom_1_1_morph_shape_afc0521e77e821a34363c87725b5fd3e8}} 
+\index{org\+::newdawn\+::slick\+::geom\+::\+Morph\+Shape@{org\+::newdawn\+::slick\+::geom\+::\+Morph\+Shape}!update\+Morph\+Time@{update\+Morph\+Time}}
+\index{update\+Morph\+Time@{update\+Morph\+Time}!org\+::newdawn\+::slick\+::geom\+::\+Morph\+Shape@{org\+::newdawn\+::slick\+::geom\+::\+Morph\+Shape}}
+\subsubsection{\texorpdfstring{update\+Morph\+Time()}{updateMorphTime()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+geom.\+Morph\+Shape.\+update\+Morph\+Time (\begin{DoxyParamCaption}\item[{float}]{delta }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Update the morph time and hence the curent frame
+
+
+\begin{DoxyParams}{Parameters}
+{\em delta} & The amount to change the morph time by \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+99                                              \{
+100         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_morph_shape_a006e01581d798601f1aaf5bea5dc1583}{offset}} += delta;
+101         \textcolor{keywordflow}{if} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_morph_shape_a006e01581d798601f1aaf5bea5dc1583}{offset}} < 0) \{
+102             \textcolor{keywordtype}{int} index = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_morph_shape_a24eb760097e650b268700165c0cd66f2}{shapes}}.indexOf(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_morph_shape_adc35bd32e88974946c096e273b648575}{current}});
+103             \textcolor{keywordflow}{if} (index < 0) \{
+104                 index = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_morph_shape_a24eb760097e650b268700165c0cd66f2}{shapes}}.size() - 1;
+105             \}
+106             
+107             \textcolor{keywordtype}{int} nframe = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_morph_shape_ad93f28ac5dd367627bfadbd8fec48213}{rational}}(index+1);
+108             \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_morph_shape_acc6cd1ff5332979f86cc03d8bb520846}{setFrame}}(index, nframe, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_morph_shape_a006e01581d798601f1aaf5bea5dc1583}{offset}});
+109             \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_morph_shape_a006e01581d798601f1aaf5bea5dc1583}{offset}} += 1;
+110         \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_morph_shape_a006e01581d798601f1aaf5bea5dc1583}{offset}} > 1) \{
+111             \textcolor{keywordtype}{int} index = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_morph_shape_a24eb760097e650b268700165c0cd66f2}{shapes}}.indexOf(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_morph_shape_a5ce48bb978769ccae833b7c9f2a7df27}{next}});
+112             \textcolor{keywordflow}{if} (index < 1) \{
+113                 index = 0;
+114             \}
+115             
+116             \textcolor{keywordtype}{int} nframe = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_morph_shape_ad93f28ac5dd367627bfadbd8fec48213}{rational}}(index+1);
+117             \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_morph_shape_acc6cd1ff5332979f86cc03d8bb520846}{setFrame}}(index, nframe, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_morph_shape_a006e01581d798601f1aaf5bea5dc1583}{offset}});
+118             \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_morph_shape_a006e01581d798601f1aaf5bea5dc1583}{offset}} -= 1;
+119         \} \textcolor{keywordflow}{else} \{
+120             \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_shape_a61fe1954d2fdefc72c34b284f4fcfdb4}{pointsDirty}} = \textcolor{keyword}{true};
+121         \}
+122     \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1geom_1_1_morph_shape_adc35bd32e88974946c096e273b648575}\label{classorg_1_1newdawn_1_1slick_1_1geom_1_1_morph_shape_adc35bd32e88974946c096e273b648575}} 
+\index{org\+::newdawn\+::slick\+::geom\+::\+Morph\+Shape@{org\+::newdawn\+::slick\+::geom\+::\+Morph\+Shape}!current@{current}}
+\index{current@{current}!org\+::newdawn\+::slick\+::geom\+::\+Morph\+Shape@{org\+::newdawn\+::slick\+::geom\+::\+Morph\+Shape}}
+\subsubsection{\texorpdfstring{current}{current}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_shape}{Shape}} org.\+newdawn.\+slick.\+geom.\+Morph\+Shape.\+current\hspace{0.3cm}{\ttfamily [private]}}
+
+The current shape \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1geom_1_1_morph_shape_a5ce48bb978769ccae833b7c9f2a7df27}\label{classorg_1_1newdawn_1_1slick_1_1geom_1_1_morph_shape_a5ce48bb978769ccae833b7c9f2a7df27}} 
+\index{org\+::newdawn\+::slick\+::geom\+::\+Morph\+Shape@{org\+::newdawn\+::slick\+::geom\+::\+Morph\+Shape}!next@{next}}
+\index{next@{next}!org\+::newdawn\+::slick\+::geom\+::\+Morph\+Shape@{org\+::newdawn\+::slick\+::geom\+::\+Morph\+Shape}}
+\subsubsection{\texorpdfstring{next}{next}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_shape}{Shape}} org.\+newdawn.\+slick.\+geom.\+Morph\+Shape.\+next\hspace{0.3cm}{\ttfamily [private]}}
+
+The next shape \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1geom_1_1_morph_shape_a006e01581d798601f1aaf5bea5dc1583}\label{classorg_1_1newdawn_1_1slick_1_1geom_1_1_morph_shape_a006e01581d798601f1aaf5bea5dc1583}} 
+\index{org\+::newdawn\+::slick\+::geom\+::\+Morph\+Shape@{org\+::newdawn\+::slick\+::geom\+::\+Morph\+Shape}!offset@{offset}}
+\index{offset@{offset}!org\+::newdawn\+::slick\+::geom\+::\+Morph\+Shape@{org\+::newdawn\+::slick\+::geom\+::\+Morph\+Shape}}
+\subsubsection{\texorpdfstring{offset}{offset}}
+{\footnotesize\ttfamily float org.\+newdawn.\+slick.\+geom.\+Morph\+Shape.\+offset\hspace{0.3cm}{\ttfamily [private]}}
+
+The offset between the shapes \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1geom_1_1_morph_shape_a24eb760097e650b268700165c0cd66f2}\label{classorg_1_1newdawn_1_1slick_1_1geom_1_1_morph_shape_a24eb760097e650b268700165c0cd66f2}} 
+\index{org\+::newdawn\+::slick\+::geom\+::\+Morph\+Shape@{org\+::newdawn\+::slick\+::geom\+::\+Morph\+Shape}!shapes@{shapes}}
+\index{shapes@{shapes}!org\+::newdawn\+::slick\+::geom\+::\+Morph\+Shape@{org\+::newdawn\+::slick\+::geom\+::\+Morph\+Shape}}
+\subsubsection{\texorpdfstring{shapes}{shapes}}
+{\footnotesize\ttfamily Array\+List org.\+newdawn.\+slick.\+geom.\+Morph\+Shape.\+shapes = new Array\+List()\hspace{0.3cm}{\ttfamily [private]}}
+
+The shapes to morph between 

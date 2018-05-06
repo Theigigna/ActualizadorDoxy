@@ -1,0 +1,156 @@
+\hypertarget{classlabprogavanzada_1_1_ventana}{}\section{labprogavanzada.\+Ventana Class Reference}
+\label{classlabprogavanzada_1_1_ventana}\index{labprogavanzada.\+Ventana@{labprogavanzada.\+Ventana}}
+Inheritance diagram for labprogavanzada.\+Ventana\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classlabprogavanzada_1_1_ventana}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classlabprogavanzada_1_1_ventana_a319001fd51267e1ec98672374cb2b2ca}{Ventana}} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{classlabprogavanzada_1_1_ventana_ac83004124b33aa67c70a33d1f7a274f4}{main}} (String args\mbox{[}$\,$\mbox{]})
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classlabprogavanzada_1_1_ventana_aa8e6a326cba22bfe2a249dc70d21848b}{init\+Components}} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+J\+Button \mbox{\hyperlink{classlabprogavanzada_1_1_ventana_aaefd42529d112e472936e52efb94ae50}{j\+Button1}}
+\item 
+J\+Button \mbox{\hyperlink{classlabprogavanzada_1_1_ventana_a33d2405f9bf4b2f5b095e92ad78de78d}{j\+Button2}}
+\item 
+J\+Button \mbox{\hyperlink{classlabprogavanzada_1_1_ventana_af4bec17d2ee089325b41954139e9979b}{j\+Button3}}
+\item 
+J\+Button \mbox{\hyperlink{classlabprogavanzada_1_1_ventana_a0eb30c9986200f02ee0e17f4c8bcecd1}{j\+Button4}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classlabprogavanzada_1_1_ventana_a319001fd51267e1ec98672374cb2b2ca}\label{classlabprogavanzada_1_1_ventana_a319001fd51267e1ec98672374cb2b2ca}} 
+\index{labprogavanzada\+::\+Ventana@{labprogavanzada\+::\+Ventana}!Ventana@{Ventana}}
+\index{Ventana@{Ventana}!labprogavanzada\+::\+Ventana@{labprogavanzada\+::\+Ventana}}
+\subsubsection{\texorpdfstring{Ventana()}{Ventana()}}
+{\footnotesize\ttfamily labprogavanzada.\+Ventana.\+Ventana (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+23                      \{
+24         \mbox{\hyperlink{classlabprogavanzada_1_1_ventana_aa8e6a326cba22bfe2a249dc70d21848b}{initComponents}}();
+25         setVisible(\textcolor{keyword}{true});
+26         \textcolor{keyword}{new} Pintor(\mbox{\hyperlink{classlabprogavanzada_1_1_ventana_aaefd42529d112e472936e52efb94ae50}{jButton1}});
+27         \textcolor{keyword}{new} Pintor(\mbox{\hyperlink{classlabprogavanzada_1_1_ventana_a33d2405f9bf4b2f5b095e92ad78de78d}{jButton2}});
+28         \textcolor{keyword}{new} Pintor(\mbox{\hyperlink{classlabprogavanzada_1_1_ventana_af4bec17d2ee089325b41954139e9979b}{jButton3}});
+29         \textcolor{keyword}{new} Pintor(\mbox{\hyperlink{classlabprogavanzada_1_1_ventana_a0eb30c9986200f02ee0e17f4c8bcecd1}{jButton4}});
+30     \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classlabprogavanzada_1_1_ventana_aa8e6a326cba22bfe2a249dc70d21848b}\label{classlabprogavanzada_1_1_ventana_aa8e6a326cba22bfe2a249dc70d21848b}} 
+\index{labprogavanzada\+::\+Ventana@{labprogavanzada\+::\+Ventana}!init\+Components@{init\+Components}}
+\index{init\+Components@{init\+Components}!labprogavanzada\+::\+Ventana@{labprogavanzada\+::\+Ventana}}
+\subsubsection{\texorpdfstring{init\+Components()}{initComponents()}}
+{\footnotesize\ttfamily void labprogavanzada.\+Ventana.\+init\+Components (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+\begin{DoxyCode}
+32                                   \{
+33         \mbox{\hyperlink{classlabprogavanzada_1_1_ventana_aaefd42529d112e472936e52efb94ae50}{jButton1}} = \textcolor{keyword}{new} JButton();
+34         \mbox{\hyperlink{classlabprogavanzada_1_1_ventana_a33d2405f9bf4b2f5b095e92ad78de78d}{jButton2}} = \textcolor{keyword}{new} JButton();
+35         \mbox{\hyperlink{classlabprogavanzada_1_1_ventana_af4bec17d2ee089325b41954139e9979b}{jButton3}} = \textcolor{keyword}{new} JButton();
+36         \mbox{\hyperlink{classlabprogavanzada_1_1_ventana_a0eb30c9986200f02ee0e17f4c8bcecd1}{jButton4}} = \textcolor{keyword}{new} JButton();
+37  
+38         setDefaultCloseOperation(WindowConstants.EXIT\_ON\_CLOSE);
+39         setTitle(\textcolor{stringliteral}{"Colores"});
+40         setBounds(\textcolor{keyword}{new} java.awt.Rectangle(0, 0, 0, 0));
+41  
+42         GroupLayout layout = \textcolor{keyword}{new} GroupLayout(getContentPane());
+43         getContentPane().setLayout(layout);
+44         layout.setHorizontalGroup(
+45             layout.createParallelGroup(GroupLayout.Alignment.LEADING)
+46             .addGroup(layout.createSequentialGroup()
+47                 .addGap(116, 116, 116)
+48                 .addComponent(\mbox{\hyperlink{classlabprogavanzada_1_1_ventana_aaefd42529d112e472936e52efb94ae50}{jButton1}}, GroupLayout.PREFERRED\_SIZE, 144, GroupLayout.PREFERRED\_SIZE
+      )
+49                 .addGap(43, 43, 43)
+50                 .addComponent(\mbox{\hyperlink{classlabprogavanzada_1_1_ventana_a33d2405f9bf4b2f5b095e92ad78de78d}{jButton2}}, GroupLayout.PREFERRED\_SIZE, 150, GroupLayout.PREFERRED\_SIZE
+      )
+51                 .addGap(42, 42, 42)
+52                 .addComponent(\mbox{\hyperlink{classlabprogavanzada_1_1_ventana_af4bec17d2ee089325b41954139e9979b}{jButton3}}, GroupLayout.PREFERRED\_SIZE, 151, GroupLayout.PREFERRED\_SIZE
+      )
+53                 .addGap(38, 38, 38)
+54                 .addComponent(\mbox{\hyperlink{classlabprogavanzada_1_1_ventana_a0eb30c9986200f02ee0e17f4c8bcecd1}{jButton4}}, GroupLayout.PREFERRED\_SIZE, 145, GroupLayout.PREFERRED\_SIZE
+      )
+55                 .addContainerGap(124, Short.MAX\_VALUE))
+56         );
+57         layout.setVerticalGroup(
+58             layout.createParallelGroup(GroupLayout.Alignment.LEADING)
+59             .addGroup(layout.createSequentialGroup()
+60                 .addGap(118, 118, 118)
+61                 .addGroup(layout.createParallelGroup(GroupLayout.Alignment.TRAILING, \textcolor{keyword}{false})
+62                    .addComponent(\mbox{\hyperlink{classlabprogavanzada_1_1_ventana_a0eb30c9986200f02ee0e17f4c8bcecd1}{jButton4}},GroupLayout.Alignment.LEADING,GroupLayout.DEFAULT\_SIZE, 
+      GroupLayout.DEFAULT\_SIZE, Short.MAX\_VALUE)
+63                    .addComponent(\mbox{\hyperlink{classlabprogavanzada_1_1_ventana_af4bec17d2ee089325b41954139e9979b}{jButton3}}, GroupLayout.Alignment.LEADING, GroupLayout.DEFAULT\_SIZE,
+       GroupLayout.DEFAULT\_SIZE, Short.MAX\_VALUE)
+64                    .addComponent(\mbox{\hyperlink{classlabprogavanzada_1_1_ventana_a33d2405f9bf4b2f5b095e92ad78de78d}{jButton2}}, GroupLayout.Alignment.LEADING, GroupLayout.DEFAULT\_SIZE,
+       GroupLayout.DEFAULT\_SIZE, Short.MAX\_VALUE)
+65                    .addComponent(\mbox{\hyperlink{classlabprogavanzada_1_1_ventana_aaefd42529d112e472936e52efb94ae50}{jButton1}}, GroupLayout.Alignment.LEADING, GroupLayout.DEFAULT\_SIZE,
+       147, Short.MAX\_VALUE))
+66                 .addContainerGap(130, Short.MAX\_VALUE))
+67         );
+68         java.awt.Dimension screenSize = java.awt.Toolkit.getDefaultToolkit().getScreenSize();
+69         setBounds((screenSize.width-961)/2, (screenSize.height-422)/2, 961, 422);
+70     \}\textcolor{comment}{// </editor-fold>}
+\end{DoxyCode}
+\mbox{\Hypertarget{classlabprogavanzada_1_1_ventana_ac83004124b33aa67c70a33d1f7a274f4}\label{classlabprogavanzada_1_1_ventana_ac83004124b33aa67c70a33d1f7a274f4}} 
+\index{labprogavanzada\+::\+Ventana@{labprogavanzada\+::\+Ventana}!main@{main}}
+\index{main@{main}!labprogavanzada\+::\+Ventana@{labprogavanzada\+::\+Ventana}}
+\subsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily static void labprogavanzada.\+Ventana.\+main (\begin{DoxyParamCaption}\item[{String}]{args\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+\begin{DoxyCode}
+72                                            \{
+73         java.awt.EventQueue.invokeLater(\textcolor{keyword}{new} Runnable() \{
+74             \textcolor{keyword}{public} \textcolor{keywordtype}{void} run() \{
+75                 \textcolor{keyword}{new} \mbox{\hyperlink{classlabprogavanzada_1_1_ventana_a319001fd51267e1ec98672374cb2b2ca}{Ventana}}();
+76             \}
+77         \});
+78     \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classlabprogavanzada_1_1_ventana_aaefd42529d112e472936e52efb94ae50}\label{classlabprogavanzada_1_1_ventana_aaefd42529d112e472936e52efb94ae50}} 
+\index{labprogavanzada\+::\+Ventana@{labprogavanzada\+::\+Ventana}!j\+Button1@{j\+Button1}}
+\index{j\+Button1@{j\+Button1}!labprogavanzada\+::\+Ventana@{labprogavanzada\+::\+Ventana}}
+\subsubsection{\texorpdfstring{j\+Button1}{jButton1}}
+{\footnotesize\ttfamily J\+Button labprogavanzada.\+Ventana.\+j\+Button1\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classlabprogavanzada_1_1_ventana_a33d2405f9bf4b2f5b095e92ad78de78d}\label{classlabprogavanzada_1_1_ventana_a33d2405f9bf4b2f5b095e92ad78de78d}} 
+\index{labprogavanzada\+::\+Ventana@{labprogavanzada\+::\+Ventana}!j\+Button2@{j\+Button2}}
+\index{j\+Button2@{j\+Button2}!labprogavanzada\+::\+Ventana@{labprogavanzada\+::\+Ventana}}
+\subsubsection{\texorpdfstring{j\+Button2}{jButton2}}
+{\footnotesize\ttfamily J\+Button labprogavanzada.\+Ventana.\+j\+Button2\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classlabprogavanzada_1_1_ventana_af4bec17d2ee089325b41954139e9979b}\label{classlabprogavanzada_1_1_ventana_af4bec17d2ee089325b41954139e9979b}} 
+\index{labprogavanzada\+::\+Ventana@{labprogavanzada\+::\+Ventana}!j\+Button3@{j\+Button3}}
+\index{j\+Button3@{j\+Button3}!labprogavanzada\+::\+Ventana@{labprogavanzada\+::\+Ventana}}
+\subsubsection{\texorpdfstring{j\+Button3}{jButton3}}
+{\footnotesize\ttfamily J\+Button labprogavanzada.\+Ventana.\+j\+Button3\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classlabprogavanzada_1_1_ventana_a0eb30c9986200f02ee0e17f4c8bcecd1}\label{classlabprogavanzada_1_1_ventana_a0eb30c9986200f02ee0e17f4c8bcecd1}} 
+\index{labprogavanzada\+::\+Ventana@{labprogavanzada\+::\+Ventana}!j\+Button4@{j\+Button4}}
+\index{j\+Button4@{j\+Button4}!labprogavanzada\+::\+Ventana@{labprogavanzada\+::\+Ventana}}
+\subsubsection{\texorpdfstring{j\+Button4}{jButton4}}
+{\footnotesize\ttfamily J\+Button labprogavanzada.\+Ventana.\+j\+Button4\hspace{0.3cm}{\ttfamily [private]}}
+

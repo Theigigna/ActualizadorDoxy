@@ -1,0 +1,211 @@
+\hypertarget{classtrabajoignacioriberagii_1_1_trabajo_ignacio_ribera_g_i_i}{}\section{trabajoignacioriberagii.\+Trabajo\+Ignacio\+Ribera\+G\+II Class Reference}
+\label{classtrabajoignacioriberagii_1_1_trabajo_ignacio_ribera_g_i_i}\index{trabajoignacioriberagii.\+Trabajo\+Ignacio\+Ribera\+G\+II@{trabajoignacioriberagii.\+Trabajo\+Ignacio\+Ribera\+G\+II}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classtrabajoignacioriberagii_1_1_trabajo_ignacio_ribera_g_i_i_a426bae568b1ab10ba20f9a2c0ed09a46}{nada}} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static int \mbox{\hyperlink{classtrabajoignacioriberagii_1_1_trabajo_ignacio_ribera_g_i_i_afd0cbbbade0a2b770ea10a9fc69c0608}{comparar\+Numeros}} (int \mbox{[}$\,$\mbox{]} numero1, int \mbox{[}$\,$\mbox{]} numero2)
+\item 
+static int \mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classtrabajoignacioriberagii_1_1_trabajo_ignacio_ribera_g_i_i_a3ebb16ff889f09eecc47a959b7f33a54}{generar\+Numeros}} ()
+\item 
+static void \mbox{\hyperlink{classtrabajoignacioriberagii_1_1_trabajo_ignacio_ribera_g_i_i_a19df64b4b484ec115a402f5b1c4430ef}{main}} (String\mbox{[}$\,$\mbox{]} args)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classtrabajoignacioriberagii_1_1_trabajo_ignacio_ribera_g_i_i_ae8c0f50fdeac8c88cfed579b6fa41fd6}{no\+Se\+Usa}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyAuthor}{Author}
+Ignacio 
+\end{DoxyAuthor}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classtrabajoignacioriberagii_1_1_trabajo_ignacio_ribera_g_i_i_afd0cbbbade0a2b770ea10a9fc69c0608}\label{classtrabajoignacioriberagii_1_1_trabajo_ignacio_ribera_g_i_i_afd0cbbbade0a2b770ea10a9fc69c0608}} 
+\index{trabajoignacioriberagii\+::\+Trabajo\+Ignacio\+Ribera\+G\+II@{trabajoignacioriberagii\+::\+Trabajo\+Ignacio\+Ribera\+G\+II}!comparar\+Numeros@{comparar\+Numeros}}
+\index{comparar\+Numeros@{comparar\+Numeros}!trabajoignacioriberagii\+::\+Trabajo\+Ignacio\+Ribera\+G\+II@{trabajoignacioriberagii\+::\+Trabajo\+Ignacio\+Ribera\+G\+II}}
+\subsubsection{\texorpdfstring{comparar\+Numeros()}{compararNumeros()}}
+{\footnotesize\ttfamily static int trabajoignacioriberagii.\+Trabajo\+Ignacio\+Ribera\+G\+I\+I.\+comparar\+Numeros (\begin{DoxyParamCaption}\item[{int \mbox{[}$\,$\mbox{]}}]{numero1,  }\item[{int \mbox{[}$\,$\mbox{]}}]{numero2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+\begin{DoxyCode}
+17     \{
+18         \textcolor{keywordtype}{int} coincidencias=0;
+19         
+20         \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i=0;i<6;i++)
+21             \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} j=0;j<6;j++)
+22             \textcolor{keywordflow}{if}(numero1[i]==numero2[j])
+23                 coincidencias++;
+24         
+25         \textcolor{keywordflow}{return} coincidencias;
+26     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classtrabajoignacioriberagii_1_1_trabajo_ignacio_ribera_g_i_i_a3ebb16ff889f09eecc47a959b7f33a54}\label{classtrabajoignacioriberagii_1_1_trabajo_ignacio_ribera_g_i_i_a3ebb16ff889f09eecc47a959b7f33a54}} 
+\index{trabajoignacioriberagii\+::\+Trabajo\+Ignacio\+Ribera\+G\+II@{trabajoignacioriberagii\+::\+Trabajo\+Ignacio\+Ribera\+G\+II}!generar\+Numeros@{generar\+Numeros}}
+\index{generar\+Numeros@{generar\+Numeros}!trabajoignacioriberagii\+::\+Trabajo\+Ignacio\+Ribera\+G\+II@{trabajoignacioriberagii\+::\+Trabajo\+Ignacio\+Ribera\+G\+II}}
+\subsubsection{\texorpdfstring{generar\+Numeros()}{generarNumeros()}}
+{\footnotesize\ttfamily static int \mbox{[}$\,$\mbox{]} trabajoignacioriberagii.\+Trabajo\+Ignacio\+Ribera\+G\+I\+I.\+generar\+Numeros (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+\begin{DoxyCode}
+29     \{
+30         \textcolor{keywordtype}{int} numero []= \textcolor{keyword}{new} \textcolor{keywordtype}{int} [6];
+31         Random rand = \textcolor{keyword}{new} Random();
+32         \textcolor{keywordtype}{boolean} noValido;
+33     
+34     \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i=0;i<6;i++)
+35     \{
+36         \textcolor{keywordflow}{do}\{
+37     
+38                     numero[i] = rand.nextInt(48)+1;
+39                     noValido = \textcolor{keyword}{false};
+40                     \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} j=0;j<i;j++)
+41                     \{
+42                         \textcolor{keywordflow}{if}(numero[i] == numero[j])
+43                             noValido = \textcolor{keyword}{true};
+44                             
+45                     \}
+46     
+47         \}\textcolor{keywordflow}{while}(numero[i] > 49 || numero[i] < 1 || noValido);
+48     \}
+49         
+50         \textcolor{keywordflow}{return} numero;\textcolor{comment}{//retorna el array con los 6 numeros}
+51     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classtrabajoignacioriberagii_1_1_trabajo_ignacio_ribera_g_i_i_a19df64b4b484ec115a402f5b1c4430ef}\label{classtrabajoignacioriberagii_1_1_trabajo_ignacio_ribera_g_i_i_a19df64b4b484ec115a402f5b1c4430ef}} 
+\index{trabajoignacioriberagii\+::\+Trabajo\+Ignacio\+Ribera\+G\+II@{trabajoignacioriberagii\+::\+Trabajo\+Ignacio\+Ribera\+G\+II}!main@{main}}
+\index{main@{main}!trabajoignacioriberagii\+::\+Trabajo\+Ignacio\+Ribera\+G\+II@{trabajoignacioriberagii\+::\+Trabajo\+Ignacio\+Ribera\+G\+II}}
+\subsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily static void trabajoignacioriberagii.\+Trabajo\+Ignacio\+Ribera\+G\+I\+I.\+main (\begin{DoxyParamCaption}\item[{String \mbox{[}$\,$\mbox{]}}]{args }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+\begin{DoxyCode}
+54                                            \{
+55         \textcolor{comment}{// TODO code application logic here}
+56         
+57         GregorianCalendar c = \textcolor{keyword}{new} GregorianCalendar();
+58         Scanner scanf = \textcolor{keyword}{new} Scanner (System.in);
+59         
+60         \textcolor{keywordtype}{boolean} noValido; \textcolor{comment}{//este boolean sirve como flag para asegurarse de qe no se repitan numeros}
+61         \textcolor{keywordtype}{int} numeroAciertos;
+62         
+63         \textcolor{keywordtype}{int} numeroJugador [] = \textcolor{keyword}{new} \textcolor{keywordtype}{int} [6];
+64         \textcolor{keywordtype}{long} telefonoJugador;
+65         String nombreJugador, nifJugador;  \textcolor{comment}{//variables con las que construiremos el objeto jugador}
+66         
+67         \textcolor{keywordtype}{int} numeroPrimitiva [] = \textcolor{keyword}{new} \textcolor{keywordtype}{int} [6];\textcolor{comment}{//variables para el obejto primitiva}
+68         \textcolor{keywordtype}{int} fechaActual [] = \textcolor{keyword}{new} \textcolor{keywordtype}{int} [3];
+69         
+70         fechaActual [0] = c.get(Calendar.DATE);\textcolor{comment}{//con gregorian calendar sacamos lafecha del sorteo}
+71         fechaActual [1] = c.get(Calendar.MONTH)+1;\textcolor{comment}{//asi es mas facil imprimirla si lo deseamos}
+72         fechaActual [2] = c.get(Calendar.YEAR);
+73         
+74         
+75         System.out.println(\textcolor{stringliteral}{"Bienvenid@ a la loteria primitiva, introduca su Nombre, nif y telefono para
+       continuar."});
+76         nombreJugador = scanf.nextLine();       \textcolor{comment}{//pide al usuario su nombre, nif y nº de telefono}
+77         nifJugador = scanf.nextLine(); 
+78         telefonoJugador = scanf.nextLong();
+79         
+80         System.out.println(\textcolor{stringliteral}{"Ahora introduzca el numero deseado para participar en la primitiva (6 numeros
+       entre 1 y 49):"});
+81         \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} k=0;k<6;k++)        \textcolor{comment}{//le pide al usuario que introduzca un numero para participar}
+82         \{                           \textcolor{comment}{//en el caso que introduzca un numero erroneo (mayo de 49 o menor que
+       1) le dara error y le pedira otro}
+83             
+84                     \textcolor{keywordflow}{do}
+85                     \{
+86                     numeroJugador[k] = scanf.nextInt();
+87                     noValido=\textcolor{keyword}{false};
+88                     \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} j=0;j<k;j++)
+89                     \{
+90                         \textcolor{keywordflow}{if}(numeroJugador[k] == numeroJugador[j])
+91                             noValido=\textcolor{keyword}{true};
+92                     \}
+93                     \textcolor{keywordflow}{if}(numeroJugador[k] > 49 || numeroJugador[k] < 1 || noValido)
+94                      System.out.println(\textcolor{stringliteral}{"Numero no valido, introduzca otro(1-49)."});
+95                     \}\textcolor{keywordflow}{while}(numeroJugador[k] > 49 || numeroJugador[k] < 1 || noValido);
+96         \}
+97                 
+98                 Jugador jugador1 = \textcolor{keyword}{new} Jugador (nifJugador, nombreJugador, telefonoJugador, numeroJugador);
+99                 \textcolor{comment}{//con los datos que tiene, construye el objeto jugador}
+100                 numeroPrimitiva = \mbox{\hyperlink{classtrabajoignacioriberagii_1_1_trabajo_ignacio_ribera_g_i_i_a3ebb16ff889f09eecc47a959b7f33a54}{generarNumeros}}();\textcolor{comment}{//genera el numero ganador de la primitiva
+       para poder generar el objeto primitiva}
+101                 
+102                 Primitiva primitiva1 = \textcolor{keyword}{new} Primitiva (fechaActual,numeroPrimitiva);
+103                 \textcolor{comment}{//crea el objeto primitiva}
+104                 
+105                 System.out.print(\textcolor{stringliteral}{"\(\backslash\)nFecha del sorteo (dd/mm/aa): "});\textcolor{comment}{//imprime la fecha del sorteo}
+106                 \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i=0;i<2;i++)
+107                     System.out.print(primitiva1.getFecha()[i]+\textcolor{stringliteral}{"/"});
+108                     System.out.println(primitiva1.getFecha()[2]);
+109                     
+110                 numeroAciertos = \mbox{\hyperlink{classtrabajoignacioriberagii_1_1_trabajo_ignacio_ribera_g_i_i_afd0cbbbade0a2b770ea10a9fc69c0608}{compararNumeros}}(primitiva1.getNumero(),jugador1.getNumero()
+      );    \textcolor{comment}{//saca en numero de aciertos}
+111                 
+112                 System.out.println(\textcolor{stringliteral}{"\(\backslash\)nDatos de jugador."});
+113                 
+114                 System.out.println(\textcolor{stringliteral}{"    Nombre: "}+jugador1.getNombre());\textcolor{comment}{//se imprimen los datos del jugador}
+115                 System.out.println(\textcolor{stringliteral}{"    Nif: "}+jugador1.getNif());
+116                 System.out.println(\textcolor{stringliteral}{"    Telefono: "}+jugador1.getTelefono());
+117                 
+118                 System.out.print(\textcolor{stringliteral}{"  Numero: "});
+119                 \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} j = 0;j<6;j++)
+120                 \{
+121                     System.out.print(jugador1.getNumero()[j]+\textcolor{stringliteral}{" "});\textcolor{comment}{//se imprime el numero del jugador}
+122                 \}
+123                 System.out.println();
+124                 
+125                 System.out.print(\textcolor{stringliteral}{"\(\backslash\)nCombinacion ganadora: "});
+126                 \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} j = 0;j<6;j++)
+127                 \{
+128                     System.out.print(primitiva1.getNumero()[j]+\textcolor{stringliteral}{"  "});\textcolor{comment}{//se imprime el numero ganador}
+129                     
+130                 \}
+131                     System.out.println();
+132                 
+133                 
+134                 System.out.println(\textcolor{stringliteral}{"\(\backslash\)nNumero de aciertos: "}+numeroAciertos);
+135         \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classtrabajoignacioriberagii_1_1_trabajo_ignacio_ribera_g_i_i_a426bae568b1ab10ba20f9a2c0ed09a46}\label{classtrabajoignacioriberagii_1_1_trabajo_ignacio_ribera_g_i_i_a426bae568b1ab10ba20f9a2c0ed09a46}} 
+\index{trabajoignacioriberagii\+::\+Trabajo\+Ignacio\+Ribera\+G\+II@{trabajoignacioriberagii\+::\+Trabajo\+Ignacio\+Ribera\+G\+II}!nada@{nada}}
+\index{nada@{nada}!trabajoignacioriberagii\+::\+Trabajo\+Ignacio\+Ribera\+G\+II@{trabajoignacioriberagii\+::\+Trabajo\+Ignacio\+Ribera\+G\+II}}
+\subsubsection{\texorpdfstring{nada()}{nada()}}
+{\footnotesize\ttfamily int trabajoignacioriberagii.\+Trabajo\+Ignacio\+Ribera\+G\+I\+I.\+nada (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+138     \{
+139                   \textcolor{comment}{//OMG, this is horrible, Bob is an idiot !!!}
+140                 \textcolor{keywordtype}{int} a = 0;
+141         \textcolor{keywordtype}{int} i;
+142         i = 2;
+143         i = 1;
+144         \textcolor{keywordflow}{if}(i == 1)
+145             \textcolor{keywordflow}{if}(a == 2)
+146                 i = 3;
+147         \textcolor{keywordflow}{if}(i == 1)
+148             a = 2;
+149         \textcolor{keywordflow}{while}(i>0)
+150         i--;
+151         i = 2;
+152         \textcolor{keywordflow}{return} i;
+153     \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classtrabajoignacioriberagii_1_1_trabajo_ignacio_ribera_g_i_i_ae8c0f50fdeac8c88cfed579b6fa41fd6}\label{classtrabajoignacioriberagii_1_1_trabajo_ignacio_ribera_g_i_i_ae8c0f50fdeac8c88cfed579b6fa41fd6}} 
+\index{trabajoignacioriberagii\+::\+Trabajo\+Ignacio\+Ribera\+G\+II@{trabajoignacioriberagii\+::\+Trabajo\+Ignacio\+Ribera\+G\+II}!no\+Se\+Usa@{no\+Se\+Usa}}
+\index{no\+Se\+Usa@{no\+Se\+Usa}!trabajoignacioriberagii\+::\+Trabajo\+Ignacio\+Ribera\+G\+II@{trabajoignacioriberagii\+::\+Trabajo\+Ignacio\+Ribera\+G\+II}}
+\subsubsection{\texorpdfstring{no\+Se\+Usa}{noSeUsa}}
+{\footnotesize\ttfamily int trabajoignacioriberagii.\+Trabajo\+Ignacio\+Ribera\+G\+I\+I.\+no\+Se\+Usa\hspace{0.3cm}{\ttfamily [private]}}
+

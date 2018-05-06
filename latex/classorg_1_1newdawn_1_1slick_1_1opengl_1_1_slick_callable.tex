@@ -1,0 +1,158 @@
+\hypertarget{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_slick_callable}{}\section{org.\+newdawn.\+slick.\+opengl.\+Slick\+Callable Class Reference}
+\label{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_slick_callable}\index{org.\+newdawn.\+slick.\+opengl.\+Slick\+Callable@{org.\+newdawn.\+slick.\+opengl.\+Slick\+Callable}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+final void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_slick_callable_abbd1e9cef2e0f82396c35e69a1887b48}{call}} ()  throws Slick\+Exception 
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_slick_callable_a7a7a650d0708c6360dfd3e2a59d99828}{enter\+Safe\+Block}} ()
+\item 
+static void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_slick_callable_acfce604d621582d39c7466096f46af47}{leave\+Safe\+Block}} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+abstract void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_slick_callable_aa7b2c33eb1b68c7203cc9abdf6b33fc6}{perform\+G\+L\+Operations}} ()  throws Slick\+Exception
+\end{DoxyCompactItemize}
+\subsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1opengl_1_1_texture}{Texture}} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_slick_callable_a1b9a4b045be62c494829982f9a8671f2}{last\+Used}}
+\item 
+static boolean \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_slick_callable_a6f60853b128453504f8184a3b6f4e34b}{in\+Safe}} = false
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A utility to allow performing GL operations without contaminating the Slick Open\+GL state. Note this will not protect you from Open\+GL programming errors like a gl\+Begin() without a gl\+End(), or gl\+Push() without gl\+Pop() etc.
+
+Expected usage\+:
+
+{\ttfamily  \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_slick_callable}{Slick\+Callable}} callable = new Slick\+Callable() \{ public \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_slick_callable_aa7b2c33eb1b68c7203cc9abdf6b33fc6}{perform\+G\+L\+Operations()}} throws \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_slick_exception}{Slick\+Exception}} \{ G\+L.\+gl\+Translate(0,0,1); gl\+Begin(G\+L.\+G\+L\+\_\+\+P\+O\+L\+Y\+G\+O\+NS); gl\+Vertex(..); ... gl\+End(); \} \} callable.\+call(); }
+
+Alternatively you can use the static methods directly
+
+{\ttfamily  \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_slick_callable_a7a7a650d0708c6360dfd3e2a59d99828}{Slick\+Callable.\+enter\+Safe\+Block()}};}
+
+{\ttfamily G\+L.\+gl\+Translate(0,0,1); gl\+Begin(G\+L.\+G\+L\+\_\+\+P\+O\+L\+Y\+G\+O\+NS); gl\+Vertex(..); ... gl\+End();}
+
+{\ttfamily \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_slick_callable_acfce604d621582d39c7466096f46af47}{Slick\+Callable.\+leave\+Safe\+Block()}}; }
+
+\begin{DoxyAuthor}{Author}
+kevin 
+\end{DoxyAuthor}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_slick_callable_abbd1e9cef2e0f82396c35e69a1887b48}\label{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_slick_callable_abbd1e9cef2e0f82396c35e69a1887b48}} 
+\index{org\+::newdawn\+::slick\+::opengl\+::\+Slick\+Callable@{org\+::newdawn\+::slick\+::opengl\+::\+Slick\+Callable}!call@{call}}
+\index{call@{call}!org\+::newdawn\+::slick\+::opengl\+::\+Slick\+Callable@{org\+::newdawn\+::slick\+::opengl\+::\+Slick\+Callable}}
+\subsubsection{\texorpdfstring{call()}{call()}}
+{\footnotesize\ttfamily final void org.\+newdawn.\+slick.\+opengl.\+Slick\+Callable.\+call (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_slick_exception}{Slick\+Exception}}\hspace{0.3cm}{\ttfamily [inline]}}
+
+Cause this callable to perform it\textquotesingle{}s GL operations (\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_slick_callable_aa7b2c33eb1b68c7203cc9abdf6b33fc6}{perform\+G\+L\+Operations()}}). This method will block until the GL operations have been performed.
+\end{DoxySeeAlso}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_slick_exception}{Slick\+Exception}}} & Indicates a failure while performing the GL operations or maintaing Slick\+State \\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyCode}
+107                                                    \{
+108         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_slick_callable_a7a7a650d0708c6360dfd3e2a59d99828}{enterSafeBlock}}();
+109         
+110         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_slick_callable_aa7b2c33eb1b68c7203cc9abdf6b33fc6}{performGLOperations}}();
+111         
+112         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_slick_callable_acfce604d621582d39c7466096f46af47}{leaveSafeBlock}}();
+113     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_slick_callable_a7a7a650d0708c6360dfd3e2a59d99828}\label{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_slick_callable_a7a7a650d0708c6360dfd3e2a59d99828}} 
+\index{org\+::newdawn\+::slick\+::opengl\+::\+Slick\+Callable@{org\+::newdawn\+::slick\+::opengl\+::\+Slick\+Callable}!enter\+Safe\+Block@{enter\+Safe\+Block}}
+\index{enter\+Safe\+Block@{enter\+Safe\+Block}!org\+::newdawn\+::slick\+::opengl\+::\+Slick\+Callable@{org\+::newdawn\+::slick\+::opengl\+::\+Slick\+Callable}}
+\subsubsection{\texorpdfstring{enter\+Safe\+Block()}{enterSafeBlock()}}
+{\footnotesize\ttfamily static void org.\+newdawn.\+slick.\+opengl.\+Slick\+Callable.\+enter\+Safe\+Block (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Enter a safe block ensuring that all the Open\+GL state that slick uses is safe before touching the GL state directly. 
+\begin{DoxyCode}
+55     \{
+56         \textcolor{keywordflow}{if} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_slick_callable_a6f60853b128453504f8184a3b6f4e34b}{inSafe}}) \{
+57             \textcolor{keywordflow}{return};
+58         \}
+59         
+60         Renderer.get().flush();
+61         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_slick_callable_a1b9a4b045be62c494829982f9a8671f2}{lastUsed}} = TextureImpl.getLastBind();
+62         TextureImpl.bindNone();
+63         GL11.glPushAttrib(GL11.GL\_ALL\_ATTRIB\_BITS);
+64         GL11.glPushClientAttrib(GL11.GL\_ALL\_CLIENT\_ATTRIB\_BITS);
+65         GL11.glMatrixMode(GL11.GL\_MODELVIEW);
+66         GL11.glPushMatrix();
+67         GL11.glMatrixMode(GL11.GL\_PROJECTION);
+68         GL11.glPushMatrix();
+69         GL11.glMatrixMode(GL11.GL\_MODELVIEW);
+70         
+71         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_slick_callable_a6f60853b128453504f8184a3b6f4e34b}{inSafe}} = \textcolor{keyword}{true};
+72     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_slick_callable_acfce604d621582d39c7466096f46af47}\label{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_slick_callable_acfce604d621582d39c7466096f46af47}} 
+\index{org\+::newdawn\+::slick\+::opengl\+::\+Slick\+Callable@{org\+::newdawn\+::slick\+::opengl\+::\+Slick\+Callable}!leave\+Safe\+Block@{leave\+Safe\+Block}}
+\index{leave\+Safe\+Block@{leave\+Safe\+Block}!org\+::newdawn\+::slick\+::opengl\+::\+Slick\+Callable@{org\+::newdawn\+::slick\+::opengl\+::\+Slick\+Callable}}
+\subsubsection{\texorpdfstring{leave\+Safe\+Block()}{leaveSafeBlock()}}
+{\footnotesize\ttfamily static void org.\+newdawn.\+slick.\+opengl.\+Slick\+Callable.\+leave\+Safe\+Block (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Leave a safe block ensuring that all of Slick\textquotesingle{}s Open\+GL state is restored since the last enter. 
+\begin{DoxyCode}
+79     \{
+80         \textcolor{keywordflow}{if} (!\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_slick_callable_a6f60853b128453504f8184a3b6f4e34b}{inSafe}}) \{
+81             \textcolor{keywordflow}{return};
+82         \}
+83 
+84         GL11.glMatrixMode(GL11.GL\_PROJECTION);
+85         GL11.glPopMatrix();
+86         GL11.glMatrixMode(GL11.GL\_MODELVIEW);
+87         GL11.glPopMatrix();
+88         GL11.glPopClientAttrib();
+89         GL11.glPopAttrib();
+90         
+91         \textcolor{keywordflow}{if} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_slick_callable_a1b9a4b045be62c494829982f9a8671f2}{lastUsed}} != null) \{
+92             \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_slick_callable_a1b9a4b045be62c494829982f9a8671f2}{lastUsed}}.\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1opengl_1_1_texture_a97c02b82a8170c4c0bccb570dc872873}{bind}}();
+93         \} \textcolor{keywordflow}{else} \{
+94             TextureImpl.bindNone();
+95         \}
+96         
+97         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_slick_callable_a6f60853b128453504f8184a3b6f4e34b}{inSafe}} = \textcolor{keyword}{false};
+98     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_slick_callable_aa7b2c33eb1b68c7203cc9abdf6b33fc6}\label{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_slick_callable_aa7b2c33eb1b68c7203cc9abdf6b33fc6}} 
+\index{org\+::newdawn\+::slick\+::opengl\+::\+Slick\+Callable@{org\+::newdawn\+::slick\+::opengl\+::\+Slick\+Callable}!perform\+G\+L\+Operations@{perform\+G\+L\+Operations}}
+\index{perform\+G\+L\+Operations@{perform\+G\+L\+Operations}!org\+::newdawn\+::slick\+::opengl\+::\+Slick\+Callable@{org\+::newdawn\+::slick\+::opengl\+::\+Slick\+Callable}}
+\subsubsection{\texorpdfstring{perform\+G\+L\+Operations()}{performGLOperations()}}
+{\footnotesize\ttfamily abstract void org.\+newdawn.\+slick.\+opengl.\+Slick\+Callable.\+perform\+G\+L\+Operations (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_slick_exception}{Slick\+Exception}}\hspace{0.3cm}{\ttfamily [abstract]}, {\ttfamily [protected]}}
+
+Perform the GL operations that this callable is intended to. This operations should not effect the slick Open\+GL state.
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_slick_exception}{Slick\+Exception}}} & Indicates a failure of some sort. This is user exception \\
+\hline
+\end{DoxyExceptions}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_slick_callable_a6f60853b128453504f8184a3b6f4e34b}\label{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_slick_callable_a6f60853b128453504f8184a3b6f4e34b}} 
+\index{org\+::newdawn\+::slick\+::opengl\+::\+Slick\+Callable@{org\+::newdawn\+::slick\+::opengl\+::\+Slick\+Callable}!in\+Safe@{in\+Safe}}
+\index{in\+Safe@{in\+Safe}!org\+::newdawn\+::slick\+::opengl\+::\+Slick\+Callable@{org\+::newdawn\+::slick\+::opengl\+::\+Slick\+Callable}}
+\subsubsection{\texorpdfstring{in\+Safe}{inSafe}}
+{\footnotesize\ttfamily boolean org.\+newdawn.\+slick.\+opengl.\+Slick\+Callable.\+in\+Safe = false\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+True if we\textquotesingle{}re in a safe block \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_slick_callable_a1b9a4b045be62c494829982f9a8671f2}\label{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_slick_callable_a1b9a4b045be62c494829982f9a8671f2}} 
+\index{org\+::newdawn\+::slick\+::opengl\+::\+Slick\+Callable@{org\+::newdawn\+::slick\+::opengl\+::\+Slick\+Callable}!last\+Used@{last\+Used}}
+\index{last\+Used@{last\+Used}!org\+::newdawn\+::slick\+::opengl\+::\+Slick\+Callable@{org\+::newdawn\+::slick\+::opengl\+::\+Slick\+Callable}}
+\subsubsection{\texorpdfstring{last\+Used}{lastUsed}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1opengl_1_1_texture}{Texture}} org.\+newdawn.\+slick.\+opengl.\+Slick\+Callable.\+last\+Used\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+The last texture used 

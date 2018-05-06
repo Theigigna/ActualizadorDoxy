@@ -1,0 +1,150 @@
+\hypertarget{classorg_1_1newdawn_1_1slick_1_1tools_1_1scalar_1_1_image_panel}{}\section{org.\+newdawn.\+slick.\+tools.\+scalar.\+Image\+Panel Class Reference}
+\label{classorg_1_1newdawn_1_1slick_1_1tools_1_1scalar_1_1_image_panel}\index{org.\+newdawn.\+slick.\+tools.\+scalar.\+Image\+Panel@{org.\+newdawn.\+slick.\+tools.\+scalar.\+Image\+Panel}}
+Inheritance diagram for org.\+newdawn.\+slick.\+tools.\+scalar.\+Image\+Panel\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classorg_1_1newdawn_1_1slick_1_1tools_1_1scalar_1_1_image_panel}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1scalar_1_1_image_panel_a16d430ed788aeb27eca48c0e1edd3461}{Image\+Panel}} ()
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1scalar_1_1_image_panel_a16339485944d8c28fc4c198f5fc21705}{set\+Image}} (Buffered\+Image \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1scalar_1_1_image_panel_aecb459cf2f3adb87a772fdd4db61c191}{image}})
+\item 
+Buffered\+Image \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1scalar_1_1_image_panel_af4f896a1413288f465a7651d4c562c3c}{get\+Image}} ()
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1scalar_1_1_image_panel_a31911cc2a658b2067bde89799352ec90}{paint}} (Graphics g1d)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Buffered\+Image \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1scalar_1_1_image_panel_aecb459cf2f3adb87a772fdd4db61c191}{image}}
+\item 
+Texture\+Paint \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1scalar_1_1_image_panel_a79f834ce107fe8e724112271649f0af8}{background}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A panel to display the current image
+
+\begin{DoxyAuthor}{Author}
+kevin 
+\end{DoxyAuthor}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tools_1_1scalar_1_1_image_panel_a16d430ed788aeb27eca48c0e1edd3461}\label{classorg_1_1newdawn_1_1slick_1_1tools_1_1scalar_1_1_image_panel_a16d430ed788aeb27eca48c0e1edd3461}} 
+\index{org\+::newdawn\+::slick\+::tools\+::scalar\+::\+Image\+Panel@{org\+::newdawn\+::slick\+::tools\+::scalar\+::\+Image\+Panel}!Image\+Panel@{Image\+Panel}}
+\index{Image\+Panel@{Image\+Panel}!org\+::newdawn\+::slick\+::tools\+::scalar\+::\+Image\+Panel@{org\+::newdawn\+::slick\+::tools\+::scalar\+::\+Image\+Panel}}
+\subsubsection{\texorpdfstring{Image\+Panel()}{ImagePanel()}}
+{\footnotesize\ttfamily org.\+newdawn.\+slick.\+tools.\+scalar.\+Image\+Panel.\+Image\+Panel (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Create a new empty image panel 
+\begin{DoxyCode}
+27                         \{
+28         super();
+29         
+30         Color base = Color.gray;
+31         BufferedImage \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1scalar_1_1_image_panel_aecb459cf2f3adb87a772fdd4db61c191}{image}} = \textcolor{keyword}{new} BufferedImage(50, 50,
+32                 BufferedImage.TYPE\_INT\_ARGB);
+33         Graphics2D g = (Graphics2D) \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1scalar_1_1_image_panel_aecb459cf2f3adb87a772fdd4db61c191}{image}}.getGraphics();
+34         g.setColor(base);
+35         g.fillRect(0, 0, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1scalar_1_1_image_panel_aecb459cf2f3adb87a772fdd4db61c191}{image}}.getWidth(), \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1scalar_1_1_image_panel_aecb459cf2f3adb87a772fdd4db61c191}{image}}.getHeight());
+36         g.setColor(base.darker());
+37         g.fillRect(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1scalar_1_1_image_panel_aecb459cf2f3adb87a772fdd4db61c191}{image}}.getWidth() / 2, 0, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1scalar_1_1_image_panel_aecb459cf2f3adb87a772fdd4db61c191}{image}}.getWidth() / 2, 
+      \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1scalar_1_1_image_panel_aecb459cf2f3adb87a772fdd4db61c191}{image}}
+38                 .getHeight() / 2);
+39         g.fillRect(0, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1scalar_1_1_image_panel_aecb459cf2f3adb87a772fdd4db61c191}{image}}.getHeight() / 2, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1scalar_1_1_image_panel_aecb459cf2f3adb87a772fdd4db61c191}{image}}.getWidth() / 2, 
+      \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1scalar_1_1_image_panel_aecb459cf2f3adb87a772fdd4db61c191}{image}}
+40                 .getHeight() / 2);
+41 
+42         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1scalar_1_1_image_panel_a79f834ce107fe8e724112271649f0af8}{background}} = \textcolor{keyword}{new} TexturePaint(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1scalar_1_1_image_panel_aecb459cf2f3adb87a772fdd4db61c191}{image}}, \textcolor{keyword}{new} Rectangle(0, 0, 
+      \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1scalar_1_1_image_panel_aecb459cf2f3adb87a772fdd4db61c191}{image}}
+43                 .getWidth(), \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1scalar_1_1_image_panel_aecb459cf2f3adb87a772fdd4db61c191}{image}}.getHeight()));
+44         
+45         setBackground(Color.black);
+46     \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tools_1_1scalar_1_1_image_panel_af4f896a1413288f465a7651d4c562c3c}\label{classorg_1_1newdawn_1_1slick_1_1tools_1_1scalar_1_1_image_panel_af4f896a1413288f465a7651d4c562c3c}} 
+\index{org\+::newdawn\+::slick\+::tools\+::scalar\+::\+Image\+Panel@{org\+::newdawn\+::slick\+::tools\+::scalar\+::\+Image\+Panel}!get\+Image@{get\+Image}}
+\index{get\+Image@{get\+Image}!org\+::newdawn\+::slick\+::tools\+::scalar\+::\+Image\+Panel@{org\+::newdawn\+::slick\+::tools\+::scalar\+::\+Image\+Panel}}
+\subsubsection{\texorpdfstring{get\+Image()}{getImage()}}
+{\footnotesize\ttfamily Buffered\+Image org.\+newdawn.\+slick.\+tools.\+scalar.\+Image\+Panel.\+get\+Image (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get the image currently being displayed
+
+\begin{DoxyReturn}{Returns}
+The image currently being displayed 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+65                                     \{
+66         \textcolor{keywordflow}{return} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1scalar_1_1_image_panel_aecb459cf2f3adb87a772fdd4db61c191}{image}};
+67     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tools_1_1scalar_1_1_image_panel_a31911cc2a658b2067bde89799352ec90}\label{classorg_1_1newdawn_1_1slick_1_1tools_1_1scalar_1_1_image_panel_a31911cc2a658b2067bde89799352ec90}} 
+\index{org\+::newdawn\+::slick\+::tools\+::scalar\+::\+Image\+Panel@{org\+::newdawn\+::slick\+::tools\+::scalar\+::\+Image\+Panel}!paint@{paint}}
+\index{paint@{paint}!org\+::newdawn\+::slick\+::tools\+::scalar\+::\+Image\+Panel@{org\+::newdawn\+::slick\+::tools\+::scalar\+::\+Image\+Panel}}
+\subsubsection{\texorpdfstring{paint()}{paint()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+tools.\+scalar.\+Image\+Panel.\+paint (\begin{DoxyParamCaption}\item[{Graphics}]{g1d }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxySeeAlso}{See also}
+javax.\+swing.\+J\+Component\+::paint(java.\+awt.\+Graphics) 
+\end{DoxySeeAlso}
+
+\begin{DoxyCode}
+72                                     \{
+73         Graphics2D g = (Graphics2D) g1d;
+74         super.paint(g);
+75         
+76         g.setPaint(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1scalar_1_1_image_panel_a79f834ce107fe8e724112271649f0af8}{background}});
+77         g.fillRect(0,0,getWidth(),getHeight());
+78         
+79         \textcolor{keywordflow}{if} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1scalar_1_1_image_panel_aecb459cf2f3adb87a772fdd4db61c191}{image}} != null) \{
+80             g.drawImage(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1scalar_1_1_image_panel_aecb459cf2f3adb87a772fdd4db61c191}{image}}, 0, 0, null);
+81         \}
+82     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tools_1_1scalar_1_1_image_panel_a16339485944d8c28fc4c198f5fc21705}\label{classorg_1_1newdawn_1_1slick_1_1tools_1_1scalar_1_1_image_panel_a16339485944d8c28fc4c198f5fc21705}} 
+\index{org\+::newdawn\+::slick\+::tools\+::scalar\+::\+Image\+Panel@{org\+::newdawn\+::slick\+::tools\+::scalar\+::\+Image\+Panel}!set\+Image@{set\+Image}}
+\index{set\+Image@{set\+Image}!org\+::newdawn\+::slick\+::tools\+::scalar\+::\+Image\+Panel@{org\+::newdawn\+::slick\+::tools\+::scalar\+::\+Image\+Panel}}
+\subsubsection{\texorpdfstring{set\+Image()}{setImage()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+tools.\+scalar.\+Image\+Panel.\+set\+Image (\begin{DoxyParamCaption}\item[{Buffered\+Image}]{image }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Set the image to be displayed
+
+
+\begin{DoxyParams}{Parameters}
+{\em image} & The image to be displayed \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+53                                               \{
+54         this.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1scalar_1_1_image_panel_aecb459cf2f3adb87a772fdd4db61c191}{image}} = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1scalar_1_1_image_panel_aecb459cf2f3adb87a772fdd4db61c191}{image}};
+55         setPreferredSize(\textcolor{keyword}{new} Dimension(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1scalar_1_1_image_panel_aecb459cf2f3adb87a772fdd4db61c191}{image}}.getWidth(), \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1scalar_1_1_image_panel_aecb459cf2f3adb87a772fdd4db61c191}{image}}.getHeight()));
+56         setSize(\textcolor{keyword}{new} Dimension(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1scalar_1_1_image_panel_aecb459cf2f3adb87a772fdd4db61c191}{image}}.getWidth(), \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1scalar_1_1_image_panel_aecb459cf2f3adb87a772fdd4db61c191}{image}}.getHeight()));
+57         getParent().repaint(0);
+58     \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tools_1_1scalar_1_1_image_panel_a79f834ce107fe8e724112271649f0af8}\label{classorg_1_1newdawn_1_1slick_1_1tools_1_1scalar_1_1_image_panel_a79f834ce107fe8e724112271649f0af8}} 
+\index{org\+::newdawn\+::slick\+::tools\+::scalar\+::\+Image\+Panel@{org\+::newdawn\+::slick\+::tools\+::scalar\+::\+Image\+Panel}!background@{background}}
+\index{background@{background}!org\+::newdawn\+::slick\+::tools\+::scalar\+::\+Image\+Panel@{org\+::newdawn\+::slick\+::tools\+::scalar\+::\+Image\+Panel}}
+\subsubsection{\texorpdfstring{background}{background}}
+{\footnotesize\ttfamily Texture\+Paint org.\+newdawn.\+slick.\+tools.\+scalar.\+Image\+Panel.\+background\hspace{0.3cm}{\ttfamily [private]}}
+
+The backgroud paint \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tools_1_1scalar_1_1_image_panel_aecb459cf2f3adb87a772fdd4db61c191}\label{classorg_1_1newdawn_1_1slick_1_1tools_1_1scalar_1_1_image_panel_aecb459cf2f3adb87a772fdd4db61c191}} 
+\index{org\+::newdawn\+::slick\+::tools\+::scalar\+::\+Image\+Panel@{org\+::newdawn\+::slick\+::tools\+::scalar\+::\+Image\+Panel}!image@{image}}
+\index{image@{image}!org\+::newdawn\+::slick\+::tools\+::scalar\+::\+Image\+Panel@{org\+::newdawn\+::slick\+::tools\+::scalar\+::\+Image\+Panel}}
+\subsubsection{\texorpdfstring{image}{image}}
+{\footnotesize\ttfamily Buffered\+Image org.\+newdawn.\+slick.\+tools.\+scalar.\+Image\+Panel.\+image\hspace{0.3cm}{\ttfamily [private]}}
+
+The image to be displayed 

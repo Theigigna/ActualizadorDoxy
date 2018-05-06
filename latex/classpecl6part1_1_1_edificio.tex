@@ -1,0 +1,65 @@
+\hypertarget{classpecl6part1_1_1_edificio}{}\section{pecl6part1.\+Edificio Class Reference}
+\label{classpecl6part1_1_1_edificio}\index{pecl6part1.\+Edificio@{pecl6part1.\+Edificio}}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{classpecl6part1_1_1_edificio_a3ab3237dc13e14c3abc45fcb507362da}{main}} (String\mbox{[}$\,$\mbox{]} args)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyAuthor}{Author}
+Ignacio 
+\end{DoxyAuthor}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classpecl6part1_1_1_edificio_a3ab3237dc13e14c3abc45fcb507362da}\label{classpecl6part1_1_1_edificio_a3ab3237dc13e14c3abc45fcb507362da}} 
+\index{pecl6part1\+::\+Edificio@{pecl6part1\+::\+Edificio}!main@{main}}
+\index{main@{main}!pecl6part1\+::\+Edificio@{pecl6part1\+::\+Edificio}}
+\subsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily static void pecl6part1.\+Edificio.\+main (\begin{DoxyParamCaption}\item[{String \mbox{[}$\,$\mbox{]}}]{args }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em args} & the command line arguments \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+24                                            \{
+25         \textcolor{comment}{// TODO code application logic here}
+26         \textcolor{keywordtype}{int} numeroPersonas = 60;
+27         \textcolor{keywordtype}{int} i;
+28         \mbox{\hyperlink{classpecl6part1_1_1_monitor}{Monitor}} paso = \textcolor{keyword}{new} \mbox{\hyperlink{classpecl6part1_1_1_monitor}{Monitor}}();
+29         ArrayList<Persona> personas = \textcolor{keyword}{new} ArrayList<Persona>();
+30         \textcolor{comment}{//creamos los ascensores}
+31         \mbox{\hyperlink{classpecl6part1_1_1_ascensor}{Ascensor}} ascensor[] = \textcolor{keyword}{new} \mbox{\hyperlink{classpecl6part1_1_1_ascensor}{Ascensor}}[2];
+32         \mbox{\hyperlink{classpecl6part1_1_1_planta}{Planta}} plantas[] = \textcolor{keyword}{new} \mbox{\hyperlink{classpecl6part1_1_1_planta}{Planta}}[21];
+33         ascensor[0] = \textcolor{keyword}{new} \mbox{\hyperlink{classpecl6part1_1_1_ascensor}{Ascensor}}((\textcolor{keywordtype}{int}) ((\textcolor{keywordtype}{int})20*Math.random()), \textcolor{stringliteral}{"P"}, paso);
+34         ascensor[1] = \textcolor{keyword}{new} \mbox{\hyperlink{classpecl6part1_1_1_ascensor}{Ascensor}}((\textcolor{keywordtype}{int}) ((\textcolor{keywordtype}{int})20*Math.random()), \textcolor{stringliteral}{"E"}, paso);
+35         \textcolor{keywordflow}{for}(i = 0; i<21; i++)
+36         \{
+37             plantas[i] = \textcolor{keyword}{new} \mbox{\hyperlink{classpecl6part1_1_1_planta}{Planta}}();
+38         \}
+39         
+40         
+41         \mbox{\hyperlink{classpecl6part1_1_1_controlador}{Controlador}} controlador = \textcolor{keyword}{new} \mbox{\hyperlink{classpecl6part1_1_1_controlador}{Controlador}}(ascensor[0], ascensor[1], plantas, 
+      personas, paso);
+42         controlador.start();
+43         
+44         \textcolor{comment}{//creamos las personas cada 0.5-2 segundos}
+45         \mbox{\hyperlink{classpecl6part1_1_1_persona}{Persona}} aux;
+46         \textcolor{keywordflow}{for}(i=0;i<numeroPersonas;i++)
+47         \{
+48             aux = \textcolor{keyword}{new} \mbox{\hyperlink{classpecl6part1_1_1_persona}{Persona}}(i,plantas, ascensor, paso);
+49             personas.add(aux);
+50             aux.start();
+51             \textcolor{keywordflow}{try} \{
+52                 sleep((\textcolor{keywordtype}{int})(1500*Math.random())+500);
+53             \} \textcolor{keywordflow}{catch} (InterruptedException ex) \{
+54                 Logger.getLogger(\mbox{\hyperlink{classpecl6part1_1_1_edificio}{Edificio}}.class.getName()).log(Level.SEVERE, null, ex);
+55             \}
+56         \}
+57     \}
+\end{DoxyCode}

@@ -1,0 +1,367 @@
+\hypertarget{classorg_1_1newdawn_1_1slick_1_1svg_1_1_inkscape_loader}{}\section{org.\+newdawn.\+slick.\+svg.\+Inkscape\+Loader Class Reference}
+\label{classorg_1_1newdawn_1_1slick_1_1svg_1_1_inkscape_loader}\index{org.\+newdawn.\+slick.\+svg.\+Inkscape\+Loader@{org.\+newdawn.\+slick.\+svg.\+Inkscape\+Loader}}
+Inheritance diagram for org.\+newdawn.\+slick.\+svg.\+Inkscape\+Loader\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classorg_1_1newdawn_1_1slick_1_1svg_1_1_inkscape_loader}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1_inkscape_loader_ac08d33005336e9ca1dedd9c092c35bcb}{load\+Children}} (Element element, Transform t)  throws Parsing\+Exception 
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1_inkscape_loader_aca7d0aa9cecceab140efa0fb21eea400}{add\+Element\+Processor}} (\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1svg_1_1inkscape_1_1_element_processor}{Element\+Processor}} proc)
+\item 
+static \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1_diagram}{Diagram}} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1_inkscape_loader_a740ecc54efa6c6f4794f966ee42585cf}{load}} (String ref, boolean offset)  throws Slick\+Exception 
+\item 
+static \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1_diagram}{Diagram}} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1_inkscape_loader_a6033a0097a34ad7c33fe245416606b81}{load}} (String ref)  throws Slick\+Exception 
+\item 
+static \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1_diagram}{Diagram}} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1_inkscape_loader_a315ddcd083502a6f86361ed87372673e}{load}} (Input\+Stream in, boolean offset)  throws Slick\+Exception 
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static int \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1_inkscape_loader_a5cc77f97fe0ecb80c32c1575c9e28ad6}{R\+A\+D\+I\+A\+L\+\_\+\+T\+R\+I\+A\+N\+G\+U\+L\+A\+T\+I\+O\+N\+\_\+\+L\+E\+V\+EL}} = 1
+\end{DoxyCompactItemize}
+\subsection*{Static Package Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1_inkscape_loader_a637c0d9aa9427845cf2892aab26350d9}{\mbox{[}static initializer\mbox{]}}}
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1_inkscape_loader_a02b783a62cfaf619034970a97679625a}{Inkscape\+Loader}} ()
+\item 
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1_diagram}{Diagram}} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1_inkscape_loader_ad879b916430c92222760073b23ff6a16}{load\+Diagram}} (Input\+Stream in)  throws Slick\+Exception 
+\item 
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1_diagram}{Diagram}} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1_inkscape_loader_a726fc91c4d5180c8e1005dd0e0c519e8}{load\+Diagram}} (Input\+Stream in, boolean offset)  throws Slick\+Exception 
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1_inkscape_loader_a003d181b8ad2fe05d1a9203ec11faea6}{load\+Element}} (Element element, Transform t)  throws Parsing\+Exception 
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1_diagram}{Diagram}} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1_inkscape_loader_a42085121425f35e4e3be17052cf39dbc}{diagram}}
+\end{DoxyCompactItemize}
+\subsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static Array\+List \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1_inkscape_loader_a7ea6c8ad87a772c53ee88c0e3a9e9146}{processors}} = new Array\+List()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A loader specifically for the S\+VG that is produced from Inkscape
+
+\begin{DoxyAuthor}{Author}
+kevin 
+\end{DoxyAuthor}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1svg_1_1_inkscape_loader_a02b783a62cfaf619034970a97679625a}\label{classorg_1_1newdawn_1_1slick_1_1svg_1_1_inkscape_loader_a02b783a62cfaf619034970a97679625a}} 
+\index{org\+::newdawn\+::slick\+::svg\+::\+Inkscape\+Loader@{org\+::newdawn\+::slick\+::svg\+::\+Inkscape\+Loader}!Inkscape\+Loader@{Inkscape\+Loader}}
+\index{Inkscape\+Loader@{Inkscape\+Loader}!org\+::newdawn\+::slick\+::svg\+::\+Inkscape\+Loader@{org\+::newdawn\+::slick\+::svg\+::\+Inkscape\+Loader}}
+\subsubsection{\texorpdfstring{Inkscape\+Loader()}{InkscapeLoader()}}
+{\footnotesize\ttfamily org.\+newdawn.\+slick.\+svg.\+Inkscape\+Loader.\+Inkscape\+Loader (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+Private, you should be using the static method 
+\begin{DoxyCode}
+117                              \{
+118     \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1svg_1_1_inkscape_loader_a637c0d9aa9427845cf2892aab26350d9}\label{classorg_1_1newdawn_1_1slick_1_1svg_1_1_inkscape_loader_a637c0d9aa9427845cf2892aab26350d9}} 
+\index{org\+::newdawn\+::slick\+::svg\+::\+Inkscape\+Loader@{org\+::newdawn\+::slick\+::svg\+::\+Inkscape\+Loader}!\mbox{[}static initializer\mbox{]}@{[static initializer]}}
+\index{\mbox{[}static initializer\mbox{]}@{[static initializer]}!org\+::newdawn\+::slick\+::svg\+::\+Inkscape\+Loader@{org\+::newdawn\+::slick\+::svg\+::\+Inkscape\+Loader}}
+\subsubsection{\texorpdfstring{[static initializer]()}{[static initializer]()}}
+{\footnotesize\ttfamily org.\+newdawn.\+slick.\+svg.\+Inkscape\+Loader.\mbox{[}static initializer\mbox{]} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}, {\ttfamily [package]}}
+
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1svg_1_1_inkscape_loader_aca7d0aa9cecceab140efa0fb21eea400}\label{classorg_1_1newdawn_1_1slick_1_1svg_1_1_inkscape_loader_aca7d0aa9cecceab140efa0fb21eea400}} 
+\index{org\+::newdawn\+::slick\+::svg\+::\+Inkscape\+Loader@{org\+::newdawn\+::slick\+::svg\+::\+Inkscape\+Loader}!add\+Element\+Processor@{add\+Element\+Processor}}
+\index{add\+Element\+Processor@{add\+Element\+Processor}!org\+::newdawn\+::slick\+::svg\+::\+Inkscape\+Loader@{org\+::newdawn\+::slick\+::svg\+::\+Inkscape\+Loader}}
+\subsubsection{\texorpdfstring{add\+Element\+Processor()}{addElementProcessor()}}
+{\footnotesize\ttfamily static void org.\+newdawn.\+slick.\+svg.\+Inkscape\+Loader.\+add\+Element\+Processor (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1svg_1_1inkscape_1_1_element_processor}{Element\+Processor}}}]{proc }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Add an {\ttfamily Element\+Processor} which will be passed each element read as the Inkscape S\+VG document is processed.
+
+
+\begin{DoxyParams}{Parameters}
+{\em proc} & The processor to be added \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+65                                                                   \{
+66         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1_inkscape_loader_a7ea6c8ad87a772c53ee88c0e3a9e9146}{processors}}.add(proc);
+67     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1svg_1_1_inkscape_loader_a740ecc54efa6c6f4794f966ee42585cf}\label{classorg_1_1newdawn_1_1slick_1_1svg_1_1_inkscape_loader_a740ecc54efa6c6f4794f966ee42585cf}} 
+\index{org\+::newdawn\+::slick\+::svg\+::\+Inkscape\+Loader@{org\+::newdawn\+::slick\+::svg\+::\+Inkscape\+Loader}!load@{load}}
+\index{load@{load}!org\+::newdawn\+::slick\+::svg\+::\+Inkscape\+Loader@{org\+::newdawn\+::slick\+::svg\+::\+Inkscape\+Loader}}
+\subsubsection{\texorpdfstring{load()}{load()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1_diagram}{Diagram}} org.\+newdawn.\+slick.\+svg.\+Inkscape\+Loader.\+load (\begin{DoxyParamCaption}\item[{String}]{ref,  }\item[{boolean}]{offset }\end{DoxyParamCaption}) throws \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_slick_exception}{Slick\+Exception}}\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Load a S\+VG document into a diagram
+
+
+\begin{DoxyParams}{Parameters}
+{\em ref} & The reference in the classpath to load the diagram from \\
+\hline
+{\em offset} & Offset the diagram for the height of the document \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The diagram loaded 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_slick_exception}{Slick\+Exception}}} & Indicates a failure to process the document \\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyCode}
+81                                   \{
+82         \textcolor{keywordflow}{return} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1_inkscape_loader_a740ecc54efa6c6f4794f966ee42585cf}{load}}(ResourceLoader.getResourceAsStream(ref), offset);
+83     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1svg_1_1_inkscape_loader_a6033a0097a34ad7c33fe245416606b81}\label{classorg_1_1newdawn_1_1slick_1_1svg_1_1_inkscape_loader_a6033a0097a34ad7c33fe245416606b81}} 
+\index{org\+::newdawn\+::slick\+::svg\+::\+Inkscape\+Loader@{org\+::newdawn\+::slick\+::svg\+::\+Inkscape\+Loader}!load@{load}}
+\index{load@{load}!org\+::newdawn\+::slick\+::svg\+::\+Inkscape\+Loader@{org\+::newdawn\+::slick\+::svg\+::\+Inkscape\+Loader}}
+\subsubsection{\texorpdfstring{load()}{load()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1_diagram}{Diagram}} org.\+newdawn.\+slick.\+svg.\+Inkscape\+Loader.\+load (\begin{DoxyParamCaption}\item[{String}]{ref }\end{DoxyParamCaption}) throws \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_slick_exception}{Slick\+Exception}}\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Load a S\+VG document into a diagram
+
+
+\begin{DoxyParams}{Parameters}
+{\em ref} & The reference in the classpath to load the diagram from \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The diagram loaded 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_slick_exception}{Slick\+Exception}}} & Indicates a failure to process the document \\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyCode}
+94                                                                  \{
+95         \textcolor{keywordflow}{return} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1_inkscape_loader_a740ecc54efa6c6f4794f966ee42585cf}{load}}(ResourceLoader.getResourceAsStream(ref), \textcolor{keyword}{false});
+96     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1svg_1_1_inkscape_loader_a315ddcd083502a6f86361ed87372673e}\label{classorg_1_1newdawn_1_1slick_1_1svg_1_1_inkscape_loader_a315ddcd083502a6f86361ed87372673e}} 
+\index{org\+::newdawn\+::slick\+::svg\+::\+Inkscape\+Loader@{org\+::newdawn\+::slick\+::svg\+::\+Inkscape\+Loader}!load@{load}}
+\index{load@{load}!org\+::newdawn\+::slick\+::svg\+::\+Inkscape\+Loader@{org\+::newdawn\+::slick\+::svg\+::\+Inkscape\+Loader}}
+\subsubsection{\texorpdfstring{load()}{load()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1_diagram}{Diagram}} org.\+newdawn.\+slick.\+svg.\+Inkscape\+Loader.\+load (\begin{DoxyParamCaption}\item[{Input\+Stream}]{in,  }\item[{boolean}]{offset }\end{DoxyParamCaption}) throws \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_slick_exception}{Slick\+Exception}}\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Load a S\+VG document into a diagram
+
+
+\begin{DoxyParams}{Parameters}
+{\em offset} & Offset the diagram for the height of the document \\
+\hline
+{\em in} & The input stream from which to read the S\+VG \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The diagram loaded 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_slick_exception}{Slick\+Exception}}} & Indicates a failure to process the document \\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyCode}
+110                                   \{
+111         \textcolor{keywordflow}{return} \textcolor{keyword}{new} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1_inkscape_loader_a02b783a62cfaf619034970a97679625a}{InkscapeLoader}}().loadDiagram(in, offset);
+112     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1svg_1_1_inkscape_loader_ac08d33005336e9ca1dedd9c092c35bcb}\label{classorg_1_1newdawn_1_1slick_1_1svg_1_1_inkscape_loader_ac08d33005336e9ca1dedd9c092c35bcb}} 
+\index{org\+::newdawn\+::slick\+::svg\+::\+Inkscape\+Loader@{org\+::newdawn\+::slick\+::svg\+::\+Inkscape\+Loader}!load\+Children@{load\+Children}}
+\index{load\+Children@{load\+Children}!org\+::newdawn\+::slick\+::svg\+::\+Inkscape\+Loader@{org\+::newdawn\+::slick\+::svg\+::\+Inkscape\+Loader}}
+\subsubsection{\texorpdfstring{load\+Children()}{loadChildren()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+svg.\+Inkscape\+Loader.\+load\+Children (\begin{DoxyParamCaption}\item[{Element}]{element,  }\item[{Transform}]{t }\end{DoxyParamCaption}) throws \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1_parsing_exception}{Parsing\+Exception}}\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1svg_1_1_loader_a8a49534ac01fc17297cc38db9c9d4cbb}{org.\+newdawn.\+slick.\+svg.\+Loader\+::load\+Children}}(org.\+w3c.\+dom.\+Element, org.\+newdawn.\+slick.\+geom.\+Transform) 
+\end{DoxySeeAlso}
+
+
+Implements \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1svg_1_1_loader_a8a49534ac01fc17297cc38db9c9d4cbb}{org.\+newdawn.\+slick.\+svg.\+Loader}}.
+
+
+\begin{DoxyCode}
+197                                     \{
+198         NodeList list = element.getChildNodes();
+199         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < list.getLength(); i++) \{
+200             \textcolor{keywordflow}{if} (list.item(i) instanceof Element) \{
+201                 \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1_inkscape_loader_a003d181b8ad2fe05d1a9203ec11faea6}{loadElement}}((Element) list.item(i), t);
+202             \}
+203         \}
+204     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1svg_1_1_inkscape_loader_ad879b916430c92222760073b23ff6a16}\label{classorg_1_1newdawn_1_1slick_1_1svg_1_1_inkscape_loader_ad879b916430c92222760073b23ff6a16}} 
+\index{org\+::newdawn\+::slick\+::svg\+::\+Inkscape\+Loader@{org\+::newdawn\+::slick\+::svg\+::\+Inkscape\+Loader}!load\+Diagram@{load\+Diagram}}
+\index{load\+Diagram@{load\+Diagram}!org\+::newdawn\+::slick\+::svg\+::\+Inkscape\+Loader@{org\+::newdawn\+::slick\+::svg\+::\+Inkscape\+Loader}}
+\subsubsection{\texorpdfstring{load\+Diagram()}{loadDiagram()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1_diagram}{Diagram}} org.\+newdawn.\+slick.\+svg.\+Inkscape\+Loader.\+load\+Diagram (\begin{DoxyParamCaption}\item[{Input\+Stream}]{in }\end{DoxyParamCaption}) throws \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_slick_exception}{Slick\+Exception}}\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+Load a S\+VG document into a diagram
+
+
+\begin{DoxyParams}{Parameters}
+{\em in} & The input stream from which to read the S\+VG \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The diagram loaded 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_slick_exception}{Slick\+Exception}}} & Indicates a failure to process the document \\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyCode}
+129                                                                       \{
+130         \textcolor{keywordflow}{return} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1_inkscape_loader_ad879b916430c92222760073b23ff6a16}{loadDiagram}}(in, \textcolor{keyword}{false});
+131     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1svg_1_1_inkscape_loader_a726fc91c4d5180c8e1005dd0e0c519e8}\label{classorg_1_1newdawn_1_1slick_1_1svg_1_1_inkscape_loader_a726fc91c4d5180c8e1005dd0e0c519e8}} 
+\index{org\+::newdawn\+::slick\+::svg\+::\+Inkscape\+Loader@{org\+::newdawn\+::slick\+::svg\+::\+Inkscape\+Loader}!load\+Diagram@{load\+Diagram}}
+\index{load\+Diagram@{load\+Diagram}!org\+::newdawn\+::slick\+::svg\+::\+Inkscape\+Loader@{org\+::newdawn\+::slick\+::svg\+::\+Inkscape\+Loader}}
+\subsubsection{\texorpdfstring{load\+Diagram()}{loadDiagram()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1_diagram}{Diagram}} org.\+newdawn.\+slick.\+svg.\+Inkscape\+Loader.\+load\+Diagram (\begin{DoxyParamCaption}\item[{Input\+Stream}]{in,  }\item[{boolean}]{offset }\end{DoxyParamCaption}) throws \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_slick_exception}{Slick\+Exception}}\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+Load a S\+VG document into a diagram
+
+
+\begin{DoxyParams}{Parameters}
+{\em in} & The input stream from which to read the S\+VG \\
+\hline
+{\em offset} & Offset the diagram for the height of the document \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The diagram loaded 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_slick_exception}{Slick\+Exception}}} & Indicates a failure to process the document \\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyCode}
+145                                   \{
+146         \textcolor{keywordflow}{try} \{
+147             DocumentBuilderFactory factory = DocumentBuilderFactory
+148                     .newInstance();
+149             factory.setValidating(\textcolor{keyword}{false});
+150             factory.setNamespaceAware(\textcolor{keyword}{true});
+151 
+152             DocumentBuilder builder = factory.newDocumentBuilder();
+153             builder.setEntityResolver(\textcolor{keyword}{new} EntityResolver() \{
+154                 \textcolor{keyword}{public} InputSource resolveEntity(String publicId,
+155                         String systemId) \textcolor{keywordflow}{throws} SAXException, IOException \{
+156                     \textcolor{keywordflow}{return} \textcolor{keyword}{new} InputSource(
+157                             \textcolor{keyword}{new} ByteArrayInputStream(\textcolor{keyword}{new} byte[0]));
+158                 \}
+159             \});
+160 
+161             Document doc = builder.parse(in);
+162             Element root = doc.getDocumentElement();
+163 
+164             String widthString = root.getAttribute(\textcolor{stringliteral}{"width"});
+165             \textcolor{keywordflow}{while} (Character.isLetter(widthString
+166                     .charAt(widthString.length() - 1))) \{
+167                 widthString = widthString.substring(0, widthString.length() - 1);
+168             \}
+169 
+170             String heightString = root.getAttribute(\textcolor{stringliteral}{"height"});
+171             \textcolor{keywordflow}{while} (Character.isLetter(heightString
+172                     .charAt(heightString.length() - 1))) \{
+173                 heightString = heightString.substring(0,heightString.length() - 1);
+174             \}
+175 
+176             \textcolor{keywordtype}{float} docWidth = Float.parseFloat(widthString);
+177             \textcolor{keywordtype}{float} docHeight = Float.parseFloat(heightString);
+178 
+179             \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1_inkscape_loader_a42085121425f35e4e3be17052cf39dbc}{diagram}} = \textcolor{keyword}{new} Diagram(docWidth, docHeight);
+180             \textcolor{keywordflow}{if} (!offset) \{
+181                 docHeight = 0;
+182             \}
+183             \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1_inkscape_loader_ac08d33005336e9ca1dedd9c092c35bcb}{loadChildren}}(root, Transform
+184                     .createTranslateTransform(0, -docHeight));
+185 
+186             \textcolor{keywordflow}{return} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1_inkscape_loader_a42085121425f35e4e3be17052cf39dbc}{diagram}};
+187         \} \textcolor{keywordflow}{catch} (Exception e) \{
+188             \textcolor{keywordflow}{throw} \textcolor{keyword}{new} SlickException(\textcolor{stringliteral}{"Failed to load inkscape document"}, e);
+189         \}
+190     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1svg_1_1_inkscape_loader_a003d181b8ad2fe05d1a9203ec11faea6}\label{classorg_1_1newdawn_1_1slick_1_1svg_1_1_inkscape_loader_a003d181b8ad2fe05d1a9203ec11faea6}} 
+\index{org\+::newdawn\+::slick\+::svg\+::\+Inkscape\+Loader@{org\+::newdawn\+::slick\+::svg\+::\+Inkscape\+Loader}!load\+Element@{load\+Element}}
+\index{load\+Element@{load\+Element}!org\+::newdawn\+::slick\+::svg\+::\+Inkscape\+Loader@{org\+::newdawn\+::slick\+::svg\+::\+Inkscape\+Loader}}
+\subsubsection{\texorpdfstring{load\+Element()}{loadElement()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+svg.\+Inkscape\+Loader.\+load\+Element (\begin{DoxyParamCaption}\item[{Element}]{element,  }\item[{Transform}]{t }\end{DoxyParamCaption}) throws \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1_parsing_exception}{Parsing\+Exception}}\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+Load a single element into the diagram
+
+
+\begin{DoxyParams}{Parameters}
+{\em element} & The element ot be loaded \\
+\hline
+{\em t} & The transform to apply to the loaded element from the parent \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1_parsing_exception}{Parsing\+Exception}}} & Indicates a failure to parse the element \\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyCode}
+217                                     \{
+218         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1_inkscape_loader_a7ea6c8ad87a772c53ee88c0e3a9e9146}{processors}}.size(); i++) \{
+219             ElementProcessor processor = (ElementProcessor) \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1_inkscape_loader_a7ea6c8ad87a772c53ee88c0e3a9e9146}{processors}}.get(i);
+220 
+221             \textcolor{keywordflow}{if} (processor.handles(element)) \{
+222                 processor.process(\textcolor{keyword}{this}, element, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1_inkscape_loader_a42085121425f35e4e3be17052cf39dbc}{diagram}}, t);
+223             \}
+224         \}
+225     \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1svg_1_1_inkscape_loader_a42085121425f35e4e3be17052cf39dbc}\label{classorg_1_1newdawn_1_1slick_1_1svg_1_1_inkscape_loader_a42085121425f35e4e3be17052cf39dbc}} 
+\index{org\+::newdawn\+::slick\+::svg\+::\+Inkscape\+Loader@{org\+::newdawn\+::slick\+::svg\+::\+Inkscape\+Loader}!diagram@{diagram}}
+\index{diagram@{diagram}!org\+::newdawn\+::slick\+::svg\+::\+Inkscape\+Loader@{org\+::newdawn\+::slick\+::svg\+::\+Inkscape\+Loader}}
+\subsubsection{\texorpdfstring{diagram}{diagram}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1_diagram}{Diagram}} org.\+newdawn.\+slick.\+svg.\+Inkscape\+Loader.\+diagram\hspace{0.3cm}{\ttfamily [private]}}
+
+The diagram loaded \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1svg_1_1_inkscape_loader_a7ea6c8ad87a772c53ee88c0e3a9e9146}\label{classorg_1_1newdawn_1_1slick_1_1svg_1_1_inkscape_loader_a7ea6c8ad87a772c53ee88c0e3a9e9146}} 
+\index{org\+::newdawn\+::slick\+::svg\+::\+Inkscape\+Loader@{org\+::newdawn\+::slick\+::svg\+::\+Inkscape\+Loader}!processors@{processors}}
+\index{processors@{processors}!org\+::newdawn\+::slick\+::svg\+::\+Inkscape\+Loader@{org\+::newdawn\+::slick\+::svg\+::\+Inkscape\+Loader}}
+\subsubsection{\texorpdfstring{processors}{processors}}
+{\footnotesize\ttfamily Array\+List org.\+newdawn.\+slick.\+svg.\+Inkscape\+Loader.\+processors = new Array\+List()\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+The list of X\+ML element processors \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1svg_1_1_inkscape_loader_a5cc77f97fe0ecb80c32c1575c9e28ad6}\label{classorg_1_1newdawn_1_1slick_1_1svg_1_1_inkscape_loader_a5cc77f97fe0ecb80c32c1575c9e28ad6}} 
+\index{org\+::newdawn\+::slick\+::svg\+::\+Inkscape\+Loader@{org\+::newdawn\+::slick\+::svg\+::\+Inkscape\+Loader}!R\+A\+D\+I\+A\+L\+\_\+\+T\+R\+I\+A\+N\+G\+U\+L\+A\+T\+I\+O\+N\+\_\+\+L\+E\+V\+EL@{R\+A\+D\+I\+A\+L\+\_\+\+T\+R\+I\+A\+N\+G\+U\+L\+A\+T\+I\+O\+N\+\_\+\+L\+E\+V\+EL}}
+\index{R\+A\+D\+I\+A\+L\+\_\+\+T\+R\+I\+A\+N\+G\+U\+L\+A\+T\+I\+O\+N\+\_\+\+L\+E\+V\+EL@{R\+A\+D\+I\+A\+L\+\_\+\+T\+R\+I\+A\+N\+G\+U\+L\+A\+T\+I\+O\+N\+\_\+\+L\+E\+V\+EL}!org\+::newdawn\+::slick\+::svg\+::\+Inkscape\+Loader@{org\+::newdawn\+::slick\+::svg\+::\+Inkscape\+Loader}}
+\subsubsection{\texorpdfstring{R\+A\+D\+I\+A\+L\+\_\+\+T\+R\+I\+A\+N\+G\+U\+L\+A\+T\+I\+O\+N\+\_\+\+L\+E\+V\+EL}{RADIAL\_TRIANGULATION\_LEVEL}}
+{\footnotesize\ttfamily int org.\+newdawn.\+slick.\+svg.\+Inkscape\+Loader.\+R\+A\+D\+I\+A\+L\+\_\+\+T\+R\+I\+A\+N\+G\+U\+L\+A\+T\+I\+O\+N\+\_\+\+L\+E\+V\+EL = 1\hspace{0.3cm}{\ttfamily [static]}}
+
+The number of times to over trigulate to get enough tesselation for smooth shading 

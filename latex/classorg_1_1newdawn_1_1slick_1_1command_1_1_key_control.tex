@@ -1,0 +1,99 @@
+\hypertarget{classorg_1_1newdawn_1_1slick_1_1command_1_1_key_control}{}\section{org.\+newdawn.\+slick.\+command.\+Key\+Control Class Reference}
+\label{classorg_1_1newdawn_1_1slick_1_1command_1_1_key_control}\index{org.\+newdawn.\+slick.\+command.\+Key\+Control@{org.\+newdawn.\+slick.\+command.\+Key\+Control}}
+Inheritance diagram for org.\+newdawn.\+slick.\+command.\+Key\+Control\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classorg_1_1newdawn_1_1slick_1_1command_1_1_key_control}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1command_1_1_key_control_ae585fe955bcc9da50286f092dd9ee7f4}{Key\+Control}} (int \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1command_1_1_key_control_ad8edd8c70be8e811bbc7049f9fea0746}{keycode}})
+\item 
+boolean \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1command_1_1_key_control_af2e1c999f4d9231969618018e8838b2f}{equals}} (Object o)
+\item 
+int \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1command_1_1_key_control_a380aee4004516247655bd52f27c692a0}{hash\+Code}} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1command_1_1_key_control_ad8edd8c70be8e811bbc7049f9fea0746}{keycode}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A control relating to a command indicate that it should be fired when a specific key is pressed or released.
+
+\begin{DoxyAuthor}{Author}
+joverton 
+\end{DoxyAuthor}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1command_1_1_key_control_ae585fe955bcc9da50286f092dd9ee7f4}\label{classorg_1_1newdawn_1_1slick_1_1command_1_1_key_control_ae585fe955bcc9da50286f092dd9ee7f4}} 
+\index{org\+::newdawn\+::slick\+::command\+::\+Key\+Control@{org\+::newdawn\+::slick\+::command\+::\+Key\+Control}!Key\+Control@{Key\+Control}}
+\index{Key\+Control@{Key\+Control}!org\+::newdawn\+::slick\+::command\+::\+Key\+Control@{org\+::newdawn\+::slick\+::command\+::\+Key\+Control}}
+\subsubsection{\texorpdfstring{Key\+Control()}{KeyControl()}}
+{\footnotesize\ttfamily org.\+newdawn.\+slick.\+command.\+Key\+Control.\+Key\+Control (\begin{DoxyParamCaption}\item[{int}]{keycode }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Create a new control that caused an command to be fired on a key pressed/released
+
+
+\begin{DoxyParams}{Parameters}
+{\em keycode} & The code of the key that causes the command \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+18                                    \{     
+19         this.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1command_1_1_key_control_ad8edd8c70be8e811bbc7049f9fea0746}{keycode}} = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1command_1_1_key_control_ad8edd8c70be8e811bbc7049f9fea0746}{keycode}};
+20     \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1command_1_1_key_control_af2e1c999f4d9231969618018e8838b2f}\label{classorg_1_1newdawn_1_1slick_1_1command_1_1_key_control_af2e1c999f4d9231969618018e8838b2f}} 
+\index{org\+::newdawn\+::slick\+::command\+::\+Key\+Control@{org\+::newdawn\+::slick\+::command\+::\+Key\+Control}!equals@{equals}}
+\index{equals@{equals}!org\+::newdawn\+::slick\+::command\+::\+Key\+Control@{org\+::newdawn\+::slick\+::command\+::\+Key\+Control}}
+\subsubsection{\texorpdfstring{equals()}{equals()}}
+{\footnotesize\ttfamily boolean org.\+newdawn.\+slick.\+command.\+Key\+Control.\+equals (\begin{DoxyParamCaption}\item[{Object}]{o }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxySeeAlso}{See also}
+java.\+lang.\+Object\+::equals(java.\+lang.\+Object) 
+\end{DoxySeeAlso}
+
+\begin{DoxyCode}
+25                                     \{
+26         \textcolor{keywordflow}{if} (o instanceof \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1command_1_1_key_control_ae585fe955bcc9da50286f092dd9ee7f4}{KeyControl}}) \{
+27             \textcolor{keywordflow}{return} ((\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1command_1_1_key_control_ae585fe955bcc9da50286f092dd9ee7f4}{KeyControl}})o).keycode == \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1command_1_1_key_control_ad8edd8c70be8e811bbc7049f9fea0746}{keycode}};
+28         \}
+29         
+30         \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+31     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1command_1_1_key_control_a380aee4004516247655bd52f27c692a0}\label{classorg_1_1newdawn_1_1slick_1_1command_1_1_key_control_a380aee4004516247655bd52f27c692a0}} 
+\index{org\+::newdawn\+::slick\+::command\+::\+Key\+Control@{org\+::newdawn\+::slick\+::command\+::\+Key\+Control}!hash\+Code@{hash\+Code}}
+\index{hash\+Code@{hash\+Code}!org\+::newdawn\+::slick\+::command\+::\+Key\+Control@{org\+::newdawn\+::slick\+::command\+::\+Key\+Control}}
+\subsubsection{\texorpdfstring{hash\+Code()}{hashCode()}}
+{\footnotesize\ttfamily int org.\+newdawn.\+slick.\+command.\+Key\+Control.\+hash\+Code (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxySeeAlso}{See also}
+java.\+lang.\+Object\+::hash\+Code() 
+\end{DoxySeeAlso}
+
+\begin{DoxyCode}
+36                           \{
+37         \textcolor{keywordflow}{return} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1command_1_1_key_control_ad8edd8c70be8e811bbc7049f9fea0746}{keycode}};
+38     \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1command_1_1_key_control_ad8edd8c70be8e811bbc7049f9fea0746}\label{classorg_1_1newdawn_1_1slick_1_1command_1_1_key_control_ad8edd8c70be8e811bbc7049f9fea0746}} 
+\index{org\+::newdawn\+::slick\+::command\+::\+Key\+Control@{org\+::newdawn\+::slick\+::command\+::\+Key\+Control}!keycode@{keycode}}
+\index{keycode@{keycode}!org\+::newdawn\+::slick\+::command\+::\+Key\+Control@{org\+::newdawn\+::slick\+::command\+::\+Key\+Control}}
+\subsubsection{\texorpdfstring{keycode}{keycode}}
+{\footnotesize\ttfamily int org.\+newdawn.\+slick.\+command.\+Key\+Control.\+keycode\hspace{0.3cm}{\ttfamily [private]}}
+
+The key code that needs to be pressed 

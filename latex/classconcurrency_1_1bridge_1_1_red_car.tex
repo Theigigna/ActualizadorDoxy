@@ -1,0 +1,87 @@
+\hypertarget{classconcurrency_1_1bridge_1_1_red_car}{}\section{concurrency.\+bridge.\+Red\+Car Class Reference}
+\label{classconcurrency_1_1bridge_1_1_red_car}\index{concurrency.\+bridge.\+Red\+Car@{concurrency.\+bridge.\+Red\+Car}}
+Inheritance diagram for concurrency.\+bridge.\+Red\+Car\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classconcurrency_1_1bridge_1_1_red_car}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classconcurrency_1_1bridge_1_1_red_car_a5666214e241536f7ef5f42e0f9ba17da}{run}} ()
+\end{DoxyCompactItemize}
+\subsection*{Package Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classconcurrency_1_1bridge_1_1_red_car_ac5923e9355634afa3d2ecb9ae6bb1a4e}{Red\+Car}} (\mbox{\hyperlink{classconcurrency_1_1bridge_1_1_bridge}{Bridge}} b, \mbox{\hyperlink{classconcurrency_1_1bridge_1_1_bridge_canvas}{Bridge\+Canvas}} d, int \mbox{\hyperlink{classconcurrency_1_1bridge_1_1_red_car_a58bd7fd277a22e90c81bb6d0caa7bed3}{id}})
+\end{DoxyCompactItemize}
+\subsection*{Package Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classconcurrency_1_1bridge_1_1_bridge_canvas}{Bridge\+Canvas}} \mbox{\hyperlink{classconcurrency_1_1bridge_1_1_red_car_a74921d6c4626acedf0c000703a4c138b}{display}}
+\item 
+\mbox{\hyperlink{classconcurrency_1_1bridge_1_1_bridge}{Bridge}} \mbox{\hyperlink{classconcurrency_1_1bridge_1_1_red_car_a8f1e50b1058d7f3a2215c064435655e5}{control}}
+\item 
+int \mbox{\hyperlink{classconcurrency_1_1bridge_1_1_red_car_a58bd7fd277a22e90c81bb6d0caa7bed3}{id}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classconcurrency_1_1bridge_1_1_red_car_ac5923e9355634afa3d2ecb9ae6bb1a4e}\label{classconcurrency_1_1bridge_1_1_red_car_ac5923e9355634afa3d2ecb9ae6bb1a4e}} 
+\index{concurrency\+::bridge\+::\+Red\+Car@{concurrency\+::bridge\+::\+Red\+Car}!Red\+Car@{Red\+Car}}
+\index{Red\+Car@{Red\+Car}!concurrency\+::bridge\+::\+Red\+Car@{concurrency\+::bridge\+::\+Red\+Car}}
+\subsubsection{\texorpdfstring{Red\+Car()}{RedCar()}}
+{\footnotesize\ttfamily concurrency.\+bridge.\+Red\+Car.\+Red\+Car (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classconcurrency_1_1bridge_1_1_bridge}{Bridge}}}]{b,  }\item[{\mbox{\hyperlink{classconcurrency_1_1bridge_1_1_bridge_canvas}{Bridge\+Canvas}}}]{d,  }\item[{int}]{id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [package]}}
+
+
+\begin{DoxyCode}
+11                                              \{
+12         \mbox{\hyperlink{classconcurrency_1_1bridge_1_1_red_car_a74921d6c4626acedf0c000703a4c138b}{display}} = d;
+13         this.\textcolor{keywordtype}{id} = \mbox{\hyperlink{classconcurrency_1_1bridge_1_1_red_car_a58bd7fd277a22e90c81bb6d0caa7bed3}{id}};
+14         \mbox{\hyperlink{classconcurrency_1_1bridge_1_1_red_car_a8f1e50b1058d7f3a2215c064435655e5}{control}} = b;
+15     \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classconcurrency_1_1bridge_1_1_red_car_a5666214e241536f7ef5f42e0f9ba17da}\label{classconcurrency_1_1bridge_1_1_red_car_a5666214e241536f7ef5f42e0f9ba17da}} 
+\index{concurrency\+::bridge\+::\+Red\+Car@{concurrency\+::bridge\+::\+Red\+Car}!run@{run}}
+\index{run@{run}!concurrency\+::bridge\+::\+Red\+Car@{concurrency\+::bridge\+::\+Red\+Car}}
+\subsubsection{\texorpdfstring{run()}{run()}}
+{\footnotesize\ttfamily void concurrency.\+bridge.\+Red\+Car.\+run (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+17                       \{
+18       \textcolor{keywordflow}{try} \{
+19         \textcolor{keywordflow}{while}(\textcolor{keyword}{true}) \{
+20             \textcolor{keywordflow}{while} (!\mbox{\hyperlink{classconcurrency_1_1bridge_1_1_red_car_a74921d6c4626acedf0c000703a4c138b}{display}}.\mbox{\hyperlink{classconcurrency_1_1bridge_1_1_bridge_canvas_a166d001c782d362f3a8aca27e493a074}{moveRed}}(\textcolor{keywordtype}{id}));  \textcolor{comment}{// not on bridge}
+21             \mbox{\hyperlink{classconcurrency_1_1bridge_1_1_red_car_a8f1e50b1058d7f3a2215c064435655e5}{control}}.\mbox{\hyperlink{classconcurrency_1_1bridge_1_1_bridge_a7982b9ef7be674502b81fa044e641fac}{redEnter}}();
+22             \textcolor{keywordflow}{while} (\mbox{\hyperlink{classconcurrency_1_1bridge_1_1_red_car_a74921d6c4626acedf0c000703a4c138b}{display}}.\mbox{\hyperlink{classconcurrency_1_1bridge_1_1_bridge_canvas_a166d001c782d362f3a8aca27e493a074}{moveRed}}(\textcolor{keywordtype}{id}));   \textcolor{comment}{// move over bridge}
+23             \mbox{\hyperlink{classconcurrency_1_1bridge_1_1_red_car_a8f1e50b1058d7f3a2215c064435655e5}{control}}.\mbox{\hyperlink{classconcurrency_1_1bridge_1_1_bridge_a0a06653bf84948f239379486b85e32f9}{redExit}}();
+24         \}
+25       \} \textcolor{keywordflow}{catch} (InterruptedException e)\{\}
+26     \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classconcurrency_1_1bridge_1_1_red_car_a8f1e50b1058d7f3a2215c064435655e5}\label{classconcurrency_1_1bridge_1_1_red_car_a8f1e50b1058d7f3a2215c064435655e5}} 
+\index{concurrency\+::bridge\+::\+Red\+Car@{concurrency\+::bridge\+::\+Red\+Car}!control@{control}}
+\index{control@{control}!concurrency\+::bridge\+::\+Red\+Car@{concurrency\+::bridge\+::\+Red\+Car}}
+\subsubsection{\texorpdfstring{control}{control}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classconcurrency_1_1bridge_1_1_bridge}{Bridge}} concurrency.\+bridge.\+Red\+Car.\+control\hspace{0.3cm}{\ttfamily [package]}}
+
+\mbox{\Hypertarget{classconcurrency_1_1bridge_1_1_red_car_a74921d6c4626acedf0c000703a4c138b}\label{classconcurrency_1_1bridge_1_1_red_car_a74921d6c4626acedf0c000703a4c138b}} 
+\index{concurrency\+::bridge\+::\+Red\+Car@{concurrency\+::bridge\+::\+Red\+Car}!display@{display}}
+\index{display@{display}!concurrency\+::bridge\+::\+Red\+Car@{concurrency\+::bridge\+::\+Red\+Car}}
+\subsubsection{\texorpdfstring{display}{display}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classconcurrency_1_1bridge_1_1_bridge_canvas}{Bridge\+Canvas}} concurrency.\+bridge.\+Red\+Car.\+display\hspace{0.3cm}{\ttfamily [package]}}
+
+\mbox{\Hypertarget{classconcurrency_1_1bridge_1_1_red_car_a58bd7fd277a22e90c81bb6d0caa7bed3}\label{classconcurrency_1_1bridge_1_1_red_car_a58bd7fd277a22e90c81bb6d0caa7bed3}} 
+\index{concurrency\+::bridge\+::\+Red\+Car@{concurrency\+::bridge\+::\+Red\+Car}!id@{id}}
+\index{id@{id}!concurrency\+::bridge\+::\+Red\+Car@{concurrency\+::bridge\+::\+Red\+Car}}
+\subsubsection{\texorpdfstring{id}{id}}
+{\footnotesize\ttfamily int concurrency.\+bridge.\+Red\+Car.\+id\hspace{0.3cm}{\ttfamily [package]}}
+

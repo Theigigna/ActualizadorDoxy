@@ -1,0 +1,129 @@
+\hypertarget{classejercicio2_1_1_automovil}{}\section{ejercicio2.\+Automovil Class Reference}
+\label{classejercicio2_1_1_automovil}\index{ejercicio2.\+Automovil@{ejercicio2.\+Automovil}}
+Inheritance diagram for ejercicio2.\+Automovil\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classejercicio2_1_1_automovil}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+double \mbox{\hyperlink{classejercicio2_1_1_automovil_a7b5c83321312bfd2e91c6acbbc2c6088}{calcular\+Importe}} (\mbox{\hyperlink{classejercicio2_1_1_automovil}{Automovil}} coche)
+\item 
+String \mbox{\hyperlink{classejercicio2_1_1_automovil_a42400460ead2eae794d19d6f280ddf94}{get\+Tipoautomovil}} ()
+\item 
+void \mbox{\hyperlink{classejercicio2_1_1_automovil_af3240a070718139a46e75c8878f49d17}{set\+Tipoautomovil}} (String nuevotipo)
+\item 
+\mbox{\hyperlink{classejercicio2_1_1_automovil_a1c64742023c8ee6815e94cc34dde45aa}{Automovil}} (boolean bonoautomovil, String matriculaautomovil, String tipovehiculo)
+\item 
+double \mbox{\hyperlink{classejercicio2_1_1_automovil_a41eb8a2004ff16ca01df4dab14dad9b0}{calcular\+Importe}} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+String \mbox{\hyperlink{classejercicio2_1_1_automovil_a64abc2717187d18de8f7ef8a86c4b025}{tipoautomovil}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyAuthor}{Author}
+Ignacio 
+\end{DoxyAuthor}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classejercicio2_1_1_automovil_a1c64742023c8ee6815e94cc34dde45aa}\label{classejercicio2_1_1_automovil_a1c64742023c8ee6815e94cc34dde45aa}} 
+\index{ejercicio2\+::\+Automovil@{ejercicio2\+::\+Automovil}!Automovil@{Automovil}}
+\index{Automovil@{Automovil}!ejercicio2\+::\+Automovil@{ejercicio2\+::\+Automovil}}
+\subsubsection{\texorpdfstring{Automovil()}{Automovil()}}
+{\footnotesize\ttfamily ejercicio2.\+Automovil.\+Automovil (\begin{DoxyParamCaption}\item[{boolean}]{bonoautomovil,  }\item[{String}]{matriculaautomovil,  }\item[{String}]{tipovehiculo }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+45                                                                                            \{
+46         \mbox{\hyperlink{classejercicio2_1_1_vehiculo_a10083fde68a5b3ef8698c76adba64ad7}{setBono}}(bonoautomovil);
+47         \mbox{\hyperlink{classejercicio2_1_1_vehiculo_a839f602fe4695d9cb8d085bab398acd5}{setMatricula}}(matriculaautomovil);
+48         \mbox{\hyperlink{classejercicio2_1_1_vehiculo_a021e05ca70b02df5ff40d48692beb6ba}{setTiempoentrada}}(System.currentTimeMillis());
+49         \mbox{\hyperlink{classejercicio2_1_1_vehiculo_af87ce3fcfad1f20eb2fdbb87caaf6576}{setFechaentrada}}(Calendar.getInstance());
+50         
+51         
+52         this.\mbox{\hyperlink{classejercicio2_1_1_automovil_a64abc2717187d18de8f7ef8a86c4b025}{tipoautomovil}} = tipovehiculo;
+53     \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classejercicio2_1_1_automovil_a7b5c83321312bfd2e91c6acbbc2c6088}\label{classejercicio2_1_1_automovil_a7b5c83321312bfd2e91c6acbbc2c6088}} 
+\index{ejercicio2\+::\+Automovil@{ejercicio2\+::\+Automovil}!calcular\+Importe@{calcular\+Importe}}
+\index{calcular\+Importe@{calcular\+Importe}!ejercicio2\+::\+Automovil@{ejercicio2\+::\+Automovil}}
+\subsubsection{\texorpdfstring{calcular\+Importe()}{calcularImporte()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily double ejercicio2.\+Automovil.\+calcular\+Importe (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classejercicio2_1_1_automovil}{Automovil}}}]{coche }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+18                                                   \{\textcolor{comment}{//definimos el metodo calcular importe de la clase
+       automovil}
+19         \textcolor{keywordtype}{double} importe =0;
+20         
+21         \textcolor{keywordflow}{if}((coche.getTipoautomovil()).equals(\textcolor{stringliteral}{"turismo"}))
+22         \{
+23             importe = (double)((System.currentTimeMillis()- coche.getTiempoentrada())/60000)*(1.5/60);
+24         \}
+25         \textcolor{keywordflow}{if}((coche.getTipoautomovil()).equals(\textcolor{stringliteral}{"todoterreno"}))
+26         \{
+27             importe = (double)((System.currentTimeMillis()- coche.getTiempoentrada())/60000)*(2.5/60);
+28         \}
+29         \textcolor{keywordflow}{if}((coche.getTipoautomovil()).equals(\textcolor{stringliteral}{"furgoneta"}))
+30         \{
+31             importe = (double)((System.currentTimeMillis()- coche.getTiempoentrada())/60000)*(3.5/60);
+32         \}
+33         \textcolor{keywordflow}{return} importe;
+34     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classejercicio2_1_1_automovil_a41eb8a2004ff16ca01df4dab14dad9b0}\label{classejercicio2_1_1_automovil_a41eb8a2004ff16ca01df4dab14dad9b0}} 
+\index{ejercicio2\+::\+Automovil@{ejercicio2\+::\+Automovil}!calcular\+Importe@{calcular\+Importe}}
+\index{calcular\+Importe@{calcular\+Importe}!ejercicio2\+::\+Automovil@{ejercicio2\+::\+Automovil}}
+\subsubsection{\texorpdfstring{calcular\+Importe()}{calcularImporte()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily double ejercicio2.\+Automovil.\+calcular\+Importe (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+56                                     \{
+57         \textcolor{keywordflow}{throw} \textcolor{keyword}{new} UnsupportedOperationException(\textcolor{stringliteral}{"Not supported yet."}); \textcolor{comment}{//To change body of generated
+       methods, choose Tools | Templates.}
+58     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classejercicio2_1_1_automovil_a42400460ead2eae794d19d6f280ddf94}\label{classejercicio2_1_1_automovil_a42400460ead2eae794d19d6f280ddf94}} 
+\index{ejercicio2\+::\+Automovil@{ejercicio2\+::\+Automovil}!get\+Tipoautomovil@{get\+Tipoautomovil}}
+\index{get\+Tipoautomovil@{get\+Tipoautomovil}!ejercicio2\+::\+Automovil@{ejercicio2\+::\+Automovil}}
+\subsubsection{\texorpdfstring{get\+Tipoautomovil()}{getTipoautomovil()}}
+{\footnotesize\ttfamily String ejercicio2.\+Automovil.\+get\+Tipoautomovil (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+37                                     \{
+38         \textcolor{keywordflow}{return} this.\mbox{\hyperlink{classejercicio2_1_1_automovil_a64abc2717187d18de8f7ef8a86c4b025}{tipoautomovil}};
+39     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classejercicio2_1_1_automovil_af3240a070718139a46e75c8878f49d17}\label{classejercicio2_1_1_automovil_af3240a070718139a46e75c8878f49d17}} 
+\index{ejercicio2\+::\+Automovil@{ejercicio2\+::\+Automovil}!set\+Tipoautomovil@{set\+Tipoautomovil}}
+\index{set\+Tipoautomovil@{set\+Tipoautomovil}!ejercicio2\+::\+Automovil@{ejercicio2\+::\+Automovil}}
+\subsubsection{\texorpdfstring{set\+Tipoautomovil()}{setTipoautomovil()}}
+{\footnotesize\ttfamily void ejercicio2.\+Automovil.\+set\+Tipoautomovil (\begin{DoxyParamCaption}\item[{String}]{nuevotipo }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+40                                                   \{
+41         this.\mbox{\hyperlink{classejercicio2_1_1_automovil_a64abc2717187d18de8f7ef8a86c4b025}{tipoautomovil}} = nuevotipo;
+42     \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classejercicio2_1_1_automovil_a64abc2717187d18de8f7ef8a86c4b025}\label{classejercicio2_1_1_automovil_a64abc2717187d18de8f7ef8a86c4b025}} 
+\index{ejercicio2\+::\+Automovil@{ejercicio2\+::\+Automovil}!tipoautomovil@{tipoautomovil}}
+\index{tipoautomovil@{tipoautomovil}!ejercicio2\+::\+Automovil@{ejercicio2\+::\+Automovil}}
+\subsubsection{\texorpdfstring{tipoautomovil}{tipoautomovil}}
+{\footnotesize\ttfamily String ejercicio2.\+Automovil.\+tipoautomovil\hspace{0.3cm}{\ttfamily [private]}}
+

@@ -1,0 +1,72 @@
+\hypertarget{classentities_1_1_n_p_c}{}\section{entities.\+N\+PC Class Reference}
+\label{classentities_1_1_n_p_c}\index{entities.\+N\+PC@{entities.\+N\+PC}}
+Inheritance diagram for entities.\+N\+PC\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=6.666667cm]{classentities_1_1_n_p_c}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classentities_1_1_n_p_c_ad392912a8fd646f1cdb22562344be5d0}{N\+PC}} (\mbox{\hyperlink{classstates_1_1_game_state}{Game\+State}} game\+State, int \mbox{\hyperlink{classentities_1_1_subject_a8285660fdae3f0b220bbc686cf5c012c}{health}}, int \mbox{\hyperlink{classentities_1_1_subject_a7bd41d6fe9656de66d4a08c4a9565ec4}{power}}, float \mbox{\hyperlink{classentities_1_1_mobile_entity_a815a9d2b23a0bb7e3ee7739d4c10d7c3}{speed}}, \mbox{\hyperlink{classentities_1_1_collision_handler}{Collision\+Handler}} \mbox{\hyperlink{classentities_1_1_mobile_entity_a29fbe797671b1fc81eafe1e48fdc46f9}{collision\+Handler}}, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_image}{Image}} \mbox{\hyperlink{classentities_1_1_physical_entity_aeb439b2308ab19fb6d3ff6be6f7cdbd8}{sprite}}, float \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_shape_a3e985bfff386c15a4efaad03d8ad60d3}{x}}, float \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_shape_a9f934baded6a1b65ebb69e7e5f80ea00}{y}}, float \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_rectangle_a967e1823f62daf45abb142779d1be62d}{width}}, float \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_rectangle_a3bd010fdce636fc11ed0e0ad4d4b4a0a}{height}})
+\item 
+abstract String \mbox{\hyperlink{classentities_1_1_n_p_c_a82d20902f2142d2621cf93335da23149}{get\+Name}} ()
+\item 
+abstract void \mbox{\hyperlink{classentities_1_1_n_p_c_aab66c1bf49e6eba132dcf1d21885ee48}{set\+Name}} (String name)
+\item 
+abstract \mbox{\hyperlink{classentities_1_1_a_i_handler_basic}{A\+I\+Handler\+Basic}} \mbox{\hyperlink{classentities_1_1_n_p_c_ab3791fbd872c3444c2da707a93e9897b}{get\+Ai\+Handler}} ()
+\item 
+abstract void \mbox{\hyperlink{classentities_1_1_n_p_c_a249e570db56402a0e7784f4419f85ca6}{set\+Ai\+Handler}} (\mbox{\hyperlink{classentities_1_1_a_i_handler_basic}{A\+I\+Handler\+Basic}} ai\+Handler)
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+\begin{DoxyAuthor}{Author}
+Ignacio y Raúl 
+\end{DoxyAuthor}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classentities_1_1_n_p_c_ad392912a8fd646f1cdb22562344be5d0}\label{classentities_1_1_n_p_c_ad392912a8fd646f1cdb22562344be5d0}} 
+\index{entities\+::\+N\+PC@{entities\+::\+N\+PC}!N\+PC@{N\+PC}}
+\index{N\+PC@{N\+PC}!entities\+::\+N\+PC@{entities\+::\+N\+PC}}
+\subsubsection{\texorpdfstring{N\+P\+C()}{NPC()}}
+{\footnotesize\ttfamily entities.\+N\+P\+C.\+N\+PC (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classstates_1_1_game_state}{Game\+State}}}]{game\+State,  }\item[{int}]{health,  }\item[{int}]{power,  }\item[{float}]{speed,  }\item[{\mbox{\hyperlink{classentities_1_1_collision_handler}{Collision\+Handler}}}]{collision\+Handler,  }\item[{\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_image}{Image}}}]{sprite,  }\item[{float}]{x,  }\item[{float}]{y,  }\item[{float}]{width,  }\item[{float}]{height }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+20                                                                                                            
+                                                                 \{
+21         super(\mbox{\hyperlink{classentities_1_1_subject_a8285660fdae3f0b220bbc686cf5c012c}{health}}, \mbox{\hyperlink{classentities_1_1_subject_a7bd41d6fe9656de66d4a08c4a9565ec4}{power}}, \mbox{\hyperlink{classentities_1_1_mobile_entity_a815a9d2b23a0bb7e3ee7739d4c10d7c3}{speed}}, \mbox{\hyperlink{classentities_1_1_mobile_entity_a29fbe797671b1fc81eafe1e48fdc46f9}{collisionHandler}}, 
+      \mbox{\hyperlink{classentities_1_1_physical_entity_aeb439b2308ab19fb6d3ff6be6f7cdbd8}{sprite}}, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_shape_a3e985bfff386c15a4efaad03d8ad60d3}{x}}, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_shape_a9f934baded6a1b65ebb69e7e5f80ea00}{y}}, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_rectangle_a967e1823f62daf45abb142779d1be62d}{width}}, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_rectangle_a3bd010fdce636fc11ed0e0ad4d4b4a0a}{height}});
+22     \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classentities_1_1_n_p_c_ab3791fbd872c3444c2da707a93e9897b}\label{classentities_1_1_n_p_c_ab3791fbd872c3444c2da707a93e9897b}} 
+\index{entities\+::\+N\+PC@{entities\+::\+N\+PC}!get\+Ai\+Handler@{get\+Ai\+Handler}}
+\index{get\+Ai\+Handler@{get\+Ai\+Handler}!entities\+::\+N\+PC@{entities\+::\+N\+PC}}
+\subsubsection{\texorpdfstring{get\+Ai\+Handler()}{getAiHandler()}}
+{\footnotesize\ttfamily abstract \mbox{\hyperlink{classentities_1_1_a_i_handler_basic}{A\+I\+Handler\+Basic}} entities.\+N\+P\+C.\+get\+Ai\+Handler (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}}
+
+\mbox{\Hypertarget{classentities_1_1_n_p_c_a82d20902f2142d2621cf93335da23149}\label{classentities_1_1_n_p_c_a82d20902f2142d2621cf93335da23149}} 
+\index{entities\+::\+N\+PC@{entities\+::\+N\+PC}!get\+Name@{get\+Name}}
+\index{get\+Name@{get\+Name}!entities\+::\+N\+PC@{entities\+::\+N\+PC}}
+\subsubsection{\texorpdfstring{get\+Name()}{getName()}}
+{\footnotesize\ttfamily abstract String entities.\+N\+P\+C.\+get\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}}
+
+\mbox{\Hypertarget{classentities_1_1_n_p_c_a249e570db56402a0e7784f4419f85ca6}\label{classentities_1_1_n_p_c_a249e570db56402a0e7784f4419f85ca6}} 
+\index{entities\+::\+N\+PC@{entities\+::\+N\+PC}!set\+Ai\+Handler@{set\+Ai\+Handler}}
+\index{set\+Ai\+Handler@{set\+Ai\+Handler}!entities\+::\+N\+PC@{entities\+::\+N\+PC}}
+\subsubsection{\texorpdfstring{set\+Ai\+Handler()}{setAiHandler()}}
+{\footnotesize\ttfamily abstract void entities.\+N\+P\+C.\+set\+Ai\+Handler (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classentities_1_1_a_i_handler_basic}{A\+I\+Handler\+Basic}}}]{ai\+Handler }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}}
+
+\mbox{\Hypertarget{classentities_1_1_n_p_c_aab66c1bf49e6eba132dcf1d21885ee48}\label{classentities_1_1_n_p_c_aab66c1bf49e6eba132dcf1d21885ee48}} 
+\index{entities\+::\+N\+PC@{entities\+::\+N\+PC}!set\+Name@{set\+Name}}
+\index{set\+Name@{set\+Name}!entities\+::\+N\+PC@{entities\+::\+N\+PC}}
+\subsubsection{\texorpdfstring{set\+Name()}{setName()}}
+{\footnotesize\ttfamily abstract void entities.\+N\+P\+C.\+set\+Name (\begin{DoxyParamCaption}\item[{String}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}}
+

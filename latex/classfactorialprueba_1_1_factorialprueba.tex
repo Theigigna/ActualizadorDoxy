@@ -1,0 +1,48 @@
+\hypertarget{classfactorialprueba_1_1_factorialprueba}{}\section{factorialprueba.\+Factorialprueba Class Reference}
+\label{classfactorialprueba_1_1_factorialprueba}\index{factorialprueba.\+Factorialprueba@{factorialprueba.\+Factorialprueba}}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{classfactorialprueba_1_1_factorialprueba_afbef60fa05454cbd3a06ee7dccee8d8e}{main}} (String\mbox{[}$\,$\mbox{]} args)
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classfactorialprueba_1_1_factorialprueba_afbef60fa05454cbd3a06ee7dccee8d8e}\label{classfactorialprueba_1_1_factorialprueba_afbef60fa05454cbd3a06ee7dccee8d8e}} 
+\index{factorialprueba\+::\+Factorialprueba@{factorialprueba\+::\+Factorialprueba}!main@{main}}
+\index{main@{main}!factorialprueba\+::\+Factorialprueba@{factorialprueba\+::\+Factorialprueba}}
+\subsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily static void factorialprueba.\+Factorialprueba.\+main (\begin{DoxyParamCaption}\item[{String \mbox{[}$\,$\mbox{]}}]{args }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em args} & the command line arguments \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+18                                            \{
+19         Scanner N = \textcolor{keyword}{new} Scanner(System.in);
+20         \textcolor{keywordtype}{int} numero;
+21         \textcolor{keywordtype}{int} total;
+22         total=1;
+23         System.out.println(\textcolor{stringliteral}{"Introduzca el número del cual desea calcular el factorial: "});
+24         numero = N.nextInt();
+25         \textcolor{keywordflow}{if} (numero==0)\{
+26             System.out.println(\textcolor{stringliteral}{"El factorial de 0 es 1"});
+27         \}
+28         \textcolor{keywordflow}{else}\{
+29             \textcolor{keywordflow}{if} (numero==1)\{
+30                 System.out.println(\textcolor{stringliteral}{"El factorial de 1 es 1"});
+31             \}
+32             \textcolor{keywordflow}{else}\{
+33                 \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i=numero;i>=1;i-- )\{
+34                     total *= i;
+35                 \}
+36         System.out.println(\textcolor{stringliteral}{"El factorial de "} + numero + \textcolor{stringliteral}{" es "} + total);
+37             \}
+38         \}
+39 
+40         \textcolor{comment}{// TODO code application logic here}
+41     \}
+\end{DoxyCode}

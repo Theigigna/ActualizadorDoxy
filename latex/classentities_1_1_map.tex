@@ -1,0 +1,874 @@
+\hypertarget{classentities_1_1_map}{}\section{entities.\+Map Class Reference}
+\label{classentities_1_1_map}\index{entities.\+Map@{entities.\+Map}}
+Inheritance diagram for entities.\+Map\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classentities_1_1_map}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classentities_1_1_map_af46803f47cfa8c8714c5a7970fb5c334}{Map}} (String \mbox{\hyperlink{classentities_1_1_map_a969750cbb3acef375d33040e29be91f0}{name}}, String \mbox{\hyperlink{classentities_1_1_map_a15025d8ae6bb3627fb145ce75013b011}{src}})
+\item 
+void \mbox{\hyperlink{classentities_1_1_map_a183d1b160c442fc50c37cf0cb956f5cd}{init}} (\mbox{\hyperlink{classentities_1_1_collision_handler}{Collision\+Handler}} collision, \mbox{\hyperlink{classstates_1_1_game_state}{Game\+State}} game\+State)  throws Slick\+Exception 
+\item 
+void \mbox{\hyperlink{classentities_1_1_map_aa6e658d7d233c2f7d52d10e65d8f3d8e}{change\+Map}} (String \mbox{\hyperlink{classentities_1_1_map_a15025d8ae6bb3627fb145ce75013b011}{src}}, String \mbox{\hyperlink{classentities_1_1_map_a969750cbb3acef375d33040e29be91f0}{name}})
+\item 
+void \mbox{\hyperlink{classentities_1_1_map_a2342f9740e05311c015fdcbd07c86f11}{render}} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_game_container}{Game\+Container}} gc, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_graphics}{Graphics}} g)  throws Slick\+Exception 
+\item 
+void \mbox{\hyperlink{classentities_1_1_map_a5089d63a94806cd3e9d2bdd0d31a799e}{render\+High}} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_game_container}{Game\+Container}} gc, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_graphics}{Graphics}} g)  throws Slick\+Exception 
+\item 
+void \mbox{\hyperlink{classentities_1_1_map_a870dbe1d4cad1c47b3a63a28267c32a9}{init\+Collision\+Layer}} ()  throws Slick\+Exception 
+\item 
+void \mbox{\hyperlink{classentities_1_1_map_a7ac25d4d491cdb9d26421146fc622978}{init\+Map\+Changers}} (\mbox{\hyperlink{classentities_1_1_collision_handler}{Collision\+Handler}} collision\+Handler, \mbox{\hyperlink{classstates_1_1_game_state}{Game\+State}} game\+State)
+\item 
+void \mbox{\hyperlink{classentities_1_1_map_ae795d01c06b1f04f16065702fa5e2801}{init\+Dialogue\+Locations}} (final \mbox{\hyperlink{classentities_1_1_collision_handler}{Collision\+Handler}} collision\+Handler, \mbox{\hyperlink{classstates_1_1_game_state}{Game\+State}} game\+State)
+\item 
+void \mbox{\hyperlink{classentities_1_1_map_a475dade0cc451ced58633690801baec5}{init\+Enemy\+Spawners}} (\mbox{\hyperlink{classentities_1_1_collision_handler}{Collision\+Handler}} collision\+Handler, \mbox{\hyperlink{classstates_1_1_game_state}{Game\+State}} game\+State)
+\item 
+void \mbox{\hyperlink{classentities_1_1_map_a8678aecbe6308ad69b2596d3452974cf}{init\+Mr\+Bug\+Location}} (\mbox{\hyperlink{classentities_1_1_collision_handler}{Collision\+Handler}} collision\+Handler, \mbox{\hyperlink{classstates_1_1_game_state}{Game\+State}} game\+State)
+\item 
+Array\+List$<$ \mbox{\hyperlink{interfaceentities_1_1_enabled}{Enabled}} $>$ \mbox{\hyperlink{classentities_1_1_map_afc132389c586910ffe04d24a96ae5d19}{get\+Enabled\+Entity\+By\+Id}} (\mbox{\hyperlink{classentities_1_1_collision_handler}{Collision\+Handler}} collision, int id)
+\item 
+void \mbox{\hyperlink{classentities_1_1_map_aab876045f8037049288a1683cb0c250b}{init\+Item\+Adders}} (\mbox{\hyperlink{classentities_1_1_collision_handler}{Collision\+Handler}} collision\+Handler, \mbox{\hyperlink{classstates_1_1_game_state}{Game\+State}} game\+State)
+\item 
+void \mbox{\hyperlink{classentities_1_1_map_a501c11a9a6f076a7a2e8c8880eeceae6}{init\+Detectors}} (\mbox{\hyperlink{classentities_1_1_collision_handler}{Collision\+Handler}} collision\+Handler, \mbox{\hyperlink{classstates_1_1_game_state}{Game\+State}} game\+State)
+\item 
+boolean \mbox{\hyperlink{classentities_1_1_map_ac0f565ccdac5df088ea9424a6c218b14}{is\+Out\+Of\+The\+Map}} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_shape}{Shape}} s)
+\item 
+boolean \mbox{\hyperlink{classentities_1_1_map_a0dadc6784b338c8aa26adb95568e75fb}{collides\+With\+Map}} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_rectangle}{Rectangle}} rec)  throws Slick\+Exception 
+\item 
+float \mbox{\hyperlink{classentities_1_1_map_a7c15a6b2fac91bdb2592e1db1bc78623}{get\+Width}} ()
+\item 
+float \mbox{\hyperlink{classentities_1_1_map_a9ed9d1f8683c86dfca33639e252aaded}{get\+Height}} ()
+\item 
+int \mbox{\hyperlink{classentities_1_1_map_a7caa160e4dd0164e861ad238cc58ac36}{get\+Width\+In\+Tiles}} ()
+\item 
+int \mbox{\hyperlink{classentities_1_1_map_ae174e8e21c6307ea9058905778480ec1}{get\+Height\+In\+Tiles}} ()
+\item 
+float \mbox{\hyperlink{classentities_1_1_map_a251d9d490fc34a64fa2b67798c9a44a7}{get\+Cost}} (\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_path_finding_context}{Path\+Finding\+Context}} context, int tx, int ty)
+\item 
+void \mbox{\hyperlink{classentities_1_1_map_a0ad9c4406c9c9de0cfd6dfbf4acdd924}{path\+Finder\+Visited}} (int x, int y)
+\item 
+boolean \mbox{\hyperlink{classentities_1_1_map_a656ea4cf7c3477ccbc785b36a2cda9fe}{blocked}} (\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_path_finding_context}{Path\+Finding\+Context}} context, int tx, int ty)
+\item 
+int \mbox{\hyperlink{classentities_1_1_map_ada3d3610a5bdc025e1509583e0e36746}{get\+Tile\+Width}} ()
+\item 
+int \mbox{\hyperlink{classentities_1_1_map_a43c2e5888d77a6b400cc6dd2c9aa1769}{get\+Tile\+Height}} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+boolean \mbox{\hyperlink{classentities_1_1_map_abcb73d4364f31f5dd9a251ab59942919}{tile\+Blocked}} (int x, int y)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map}{Tiled\+Map}} \mbox{\hyperlink{classentities_1_1_map_a94a743ccd80946422fcbdb5ba1cc966b}{tiled\+Map}}
+\item 
+String \mbox{\hyperlink{classentities_1_1_map_a969750cbb3acef375d33040e29be91f0}{name}}
+\item 
+String \mbox{\hyperlink{classentities_1_1_map_a15025d8ae6bb3627fb145ce75013b011}{src}}
+\item 
+boolean \mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classentities_1_1_map_af7f17d81b7e3bd4e1897f8fb7f89f855}{collision\+Layer}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Clase que representa a un mapa en el juego.
+
+\begin{DoxyAuthor}{Author}
+Enrique  10-\/mar-\/2016  \mbox{\hyperlink{classentities_1_1_map}{Map}} 
+\end{DoxyAuthor}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classentities_1_1_map_af46803f47cfa8c8714c5a7970fb5c334}\label{classentities_1_1_map_af46803f47cfa8c8714c5a7970fb5c334}} 
+\index{entities\+::\+Map@{entities\+::\+Map}!Map@{Map}}
+\index{Map@{Map}!entities\+::\+Map@{entities\+::\+Map}}
+\subsubsection{\texorpdfstring{Map()}{Map()}}
+{\footnotesize\ttfamily entities.\+Map.\+Map (\begin{DoxyParamCaption}\item[{String}]{name,  }\item[{String}]{src }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Instantiates a map. The map won\textquotesingle{}t be charge until \mbox{\hyperlink{classentities_1_1_map_a183d1b160c442fc50c37cf0cb956f5cd}{init()}} is called.
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & Name of the map. \\
+\hline
+{\em src} & Path of the .tmx map. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+39                                         \{
+40         this.\mbox{\hyperlink{classentities_1_1_map_a969750cbb3acef375d33040e29be91f0}{name}} = \mbox{\hyperlink{classentities_1_1_map_a969750cbb3acef375d33040e29be91f0}{name}};
+41         this.\mbox{\hyperlink{classentities_1_1_map_a15025d8ae6bb3627fb145ce75013b011}{src}} = \mbox{\hyperlink{classentities_1_1_map_a15025d8ae6bb3627fb145ce75013b011}{src}};
+42     \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classentities_1_1_map_a656ea4cf7c3477ccbc785b36a2cda9fe}\label{classentities_1_1_map_a656ea4cf7c3477ccbc785b36a2cda9fe}} 
+\index{entities\+::\+Map@{entities\+::\+Map}!blocked@{blocked}}
+\index{blocked@{blocked}!entities\+::\+Map@{entities\+::\+Map}}
+\subsubsection{\texorpdfstring{blocked()}{blocked()}}
+{\footnotesize\ttfamily boolean entities.\+Map.\+blocked (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_path_finding_context}{Path\+Finding\+Context}}}]{context,  }\item[{int}]{tx,  }\item[{int}]{ty }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Check if the given location is blocked, i.\+e. blocks movement of the supplied mover.
+
+
+\begin{DoxyParams}{Parameters}
+{\em context} & The context describing the pathfinding at the time of this request \\
+\hline
+{\em tx} & The x coordinate of the tile we\textquotesingle{}re moving to \\
+\hline
+{\em ty} & The y coordinate of the tile we\textquotesingle{}re moving to \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the location is blocked 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_tile_based_map_af01ba12d90f794cd16138e05dc328725}{org.\+newdawn.\+slick.\+util.\+pathfinding.\+Tile\+Based\+Map}}.
+
+
+\begin{DoxyCode}
+423                                                                        \{
+424         \textcolor{keywordflow}{return} \mbox{\hyperlink{classentities_1_1_map_abcb73d4364f31f5dd9a251ab59942919}{tileBlocked}}(tx, ty);
+425     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classentities_1_1_map_aa6e658d7d233c2f7d52d10e65d8f3d8e}\label{classentities_1_1_map_aa6e658d7d233c2f7d52d10e65d8f3d8e}} 
+\index{entities\+::\+Map@{entities\+::\+Map}!change\+Map@{change\+Map}}
+\index{change\+Map@{change\+Map}!entities\+::\+Map@{entities\+::\+Map}}
+\subsubsection{\texorpdfstring{change\+Map()}{changeMap()}}
+{\footnotesize\ttfamily void entities.\+Map.\+change\+Map (\begin{DoxyParamCaption}\item[{String}]{src,  }\item[{String}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Prepares this map to be changed. Until \mbox{\hyperlink{classentities_1_1_map_a183d1b160c442fc50c37cf0cb956f5cd}{init()}} isn\textquotesingle{}t called, the map won\textquotesingle{}t change at all.
+
+
+\begin{DoxyParams}{Parameters}
+{\em src} & Path of the .tmx map. \\
+\hline
+{\em name} & Name of the map. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+65                                                    \{
+66         this.\mbox{\hyperlink{classentities_1_1_map_a15025d8ae6bb3627fb145ce75013b011}{src}} = \mbox{\hyperlink{classentities_1_1_map_a15025d8ae6bb3627fb145ce75013b011}{src}};
+67         this.\mbox{\hyperlink{classentities_1_1_map_a969750cbb3acef375d33040e29be91f0}{name}} = \mbox{\hyperlink{classentities_1_1_map_a969750cbb3acef375d33040e29be91f0}{name}};
+68     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classentities_1_1_map_a0dadc6784b338c8aa26adb95568e75fb}\label{classentities_1_1_map_a0dadc6784b338c8aa26adb95568e75fb}} 
+\index{entities\+::\+Map@{entities\+::\+Map}!collides\+With\+Map@{collides\+With\+Map}}
+\index{collides\+With\+Map@{collides\+With\+Map}!entities\+::\+Map@{entities\+::\+Map}}
+\subsubsection{\texorpdfstring{collides\+With\+Map()}{collidesWithMap()}}
+{\footnotesize\ttfamily boolean entities.\+Map.\+collides\+With\+Map (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_rectangle}{Rectangle}}}]{rec }\end{DoxyParamCaption}) throws \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_slick_exception}{Slick\+Exception}}\hspace{0.3cm}{\ttfamily [inline]}}
+
+Check if a Shape object is inside or outside a forbiden zone of the map.
+
+
+\begin{DoxyParams}{Parameters}
+{\em rec} & Rectangle which will be compared. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the Rectangle collides with the map, false if not. 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+342                                                                         \{
+343         \textcolor{keywordflow}{if} (\mbox{\hyperlink{classentities_1_1_map_af7f17d81b7e3bd4e1897f8fb7f89f855}{collisionLayer}} == null) \{
+344             \textcolor{keywordflow}{throw} \textcolor{keyword}{new} SlickException(\textcolor{stringliteral}{"Collision layer not initialized. Map: "} + 
+      \mbox{\hyperlink{classentities_1_1_map_a969750cbb3acef375d33040e29be91f0}{name}});
+345         \}
+346 
+347         \textcolor{keywordflow}{if} (\mbox{\hyperlink{classentities_1_1_map_ac0f565ccdac5df088ea9424a6c218b14}{isOutOfTheMap}}(rec)) \{
+348             \textcolor{keywordflow}{return} \textcolor{keyword}{true};
+349         \}
+350 
+351         \textcolor{keywordtype}{int} tileHeight = \mbox{\hyperlink{classentities_1_1_map_a94a743ccd80946422fcbdb5ba1cc966b}{tiledMap}}.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_a03d0f5ea72a93c1939e97deea19a1d3a}{getTileHeight}}();
+352         \textcolor{keywordtype}{int} tileWidth = \mbox{\hyperlink{classentities_1_1_map_a94a743ccd80946422fcbdb5ba1cc966b}{tiledMap}}.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_a44dd7389139c646e87d056fdd1e44232}{getTileWidth}}();
+353 
+354         \textcolor{keywordtype}{int} widthInTiles = (int) (rec.getWidth() / tileWidth);   \textcolor{comment}{//Size in tiles in the x-axis}
+355         \textcolor{keywordtype}{int} heightInTiles = (int) (rec.getHeight() / tileHeight);   \textcolor{comment}{//Size in tiles in the y-axis}
+356         \textcolor{keywordtype}{int} tX = (int) (rec.getX() / tileWidth); \textcolor{comment}{//First tile in x}
+357         \textcolor{keywordtype}{int} tY = (int) (rec.getY() / tileHeight);    \textcolor{comment}{//First tile in y}
+358 
+359         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = tX; i <= (tX + widthInTiles); i++) \{
+360             \textcolor{comment}{//Check top edge}
+361             \textcolor{keywordflow}{if} (\mbox{\hyperlink{classentities_1_1_map_af7f17d81b7e3bd4e1897f8fb7f89f855}{collisionLayer}}[tY][i]) \{
+362                 \textcolor{keywordflow}{return} \textcolor{keyword}{true};
+363             \}
+364             \textcolor{comment}{//Check bottom edge}
+365             \textcolor{keywordflow}{if} (\mbox{\hyperlink{classentities_1_1_map_af7f17d81b7e3bd4e1897f8fb7f89f855}{collisionLayer}}[((\textcolor{keywordtype}{int}) (rec.getY() + rec.getHeight())) / tileHeight][i]) \{
+366                 \textcolor{keywordflow}{return} \textcolor{keyword}{true};
+367             \}
+368         \}
+369         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = tY; i <= (tY + heightInTiles); i++) \{
+370             \textcolor{comment}{//Left edge }
+371             \textcolor{keywordflow}{if} (\mbox{\hyperlink{classentities_1_1_map_af7f17d81b7e3bd4e1897f8fb7f89f855}{collisionLayer}}[i][tX]) \{
+372                 \textcolor{keywordflow}{return} \textcolor{keyword}{true};
+373             \}
+374             \textcolor{comment}{//RIght edge}
+375             \textcolor{keywordflow}{if} (\mbox{\hyperlink{classentities_1_1_map_af7f17d81b7e3bd4e1897f8fb7f89f855}{collisionLayer}}[i][((\textcolor{keywordtype}{int}) (rec.getX() + rec.getWidth())) / tileWidth]) \{
+376                 \textcolor{keywordflow}{return} \textcolor{keyword}{true};
+377             \}
+378         \}
+379 
+380         \textcolor{comment}{//Check bottom-right vertex }
+381         \textcolor{keywordflow}{return} \mbox{\hyperlink{classentities_1_1_map_af7f17d81b7e3bd4e1897f8fb7f89f855}{collisionLayer}}[((int) (rec.getY() + rec.getHeight())) / tileHeight][((int) (
+      rec.getX() + rec.getWidth())) / tileWidth];
+382     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classentities_1_1_map_a251d9d490fc34a64fa2b67798c9a44a7}\label{classentities_1_1_map_a251d9d490fc34a64fa2b67798c9a44a7}} 
+\index{entities\+::\+Map@{entities\+::\+Map}!get\+Cost@{get\+Cost}}
+\index{get\+Cost@{get\+Cost}!entities\+::\+Map@{entities\+::\+Map}}
+\subsubsection{\texorpdfstring{get\+Cost()}{getCost()}}
+{\footnotesize\ttfamily float entities.\+Map.\+get\+Cost (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_path_finding_context}{Path\+Finding\+Context}}}]{context,  }\item[{int}]{tx,  }\item[{int}]{ty }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get the cost of moving through the given tile. This can be used to make certain areas more desirable. A simple and valid implementation of this method would be to return 1 in all cases.
+
+
+\begin{DoxyParams}{Parameters}
+{\em context} & The context describing the pathfinding at the time of this request \\
+\hline
+{\em tx} & The x coordinate of the tile we\textquotesingle{}re moving to \\
+\hline
+{\em ty} & The y coordinate of the tile we\textquotesingle{}re moving to \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The relative cost of moving across the given tile 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_tile_based_map_ad2e68a8e3405c15b90b5247ffb70897f}{org.\+newdawn.\+slick.\+util.\+pathfinding.\+Tile\+Based\+Map}}.
+
+
+\begin{DoxyCode}
+413                                                                      \{
+414         \textcolor{keywordflow}{return} 1;   \textcolor{comment}{//The cost of a tile is always the same}
+415     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classentities_1_1_map_afc132389c586910ffe04d24a96ae5d19}\label{classentities_1_1_map_afc132389c586910ffe04d24a96ae5d19}} 
+\index{entities\+::\+Map@{entities\+::\+Map}!get\+Enabled\+Entity\+By\+Id@{get\+Enabled\+Entity\+By\+Id}}
+\index{get\+Enabled\+Entity\+By\+Id@{get\+Enabled\+Entity\+By\+Id}!entities\+::\+Map@{entities\+::\+Map}}
+\subsubsection{\texorpdfstring{get\+Enabled\+Entity\+By\+Id()}{getEnabledEntityById()}}
+{\footnotesize\ttfamily Array\+List$<$\mbox{\hyperlink{interfaceentities_1_1_enabled}{Enabled}}$>$ entities.\+Map.\+get\+Enabled\+Entity\+By\+Id (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classentities_1_1_collision_handler}{Collision\+Handler}}}]{collision,  }\item[{int}]{id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+251                                                                                        \{
+252         ArrayList<Detector> aux = collision.getPositionDetectors();
+253         ArrayList<Enabled> res = \textcolor{keyword}{new} ArrayList();
+254         \textcolor{keywordflow}{for} (Detector p : aux) \{
+255             \textcolor{keywordflow}{if} (p instanceof Enabled) \{
+256                 \textcolor{keywordflow}{if} (((Enabled) p).getIdentifier() == \textcolor{keywordtype}{id}) \{
+257                     res.add((Enabled) p);
+258                 \}
+259             \}
+260         \}
+261         \textcolor{keywordflow}{return} res;
+262     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classentities_1_1_map_a9ed9d1f8683c86dfca33639e252aaded}\label{classentities_1_1_map_a9ed9d1f8683c86dfca33639e252aaded}} 
+\index{entities\+::\+Map@{entities\+::\+Map}!get\+Height@{get\+Height}}
+\index{get\+Height@{get\+Height}!entities\+::\+Map@{entities\+::\+Map}}
+\subsubsection{\texorpdfstring{get\+Height()}{getHeight()}}
+{\footnotesize\ttfamily float entities.\+Map.\+get\+Height (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get the height in pixels of this map.
+
+\begin{DoxyReturn}{Returns}
+Height in pixels. 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+398                              \{
+399         \textcolor{keywordflow}{return} \mbox{\hyperlink{classentities_1_1_map_a94a743ccd80946422fcbdb5ba1cc966b}{tiledMap}}.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_a6370cae21692dded6097e8f877b62cac}{getHeight}}() * \mbox{\hyperlink{classentities_1_1_map_a94a743ccd80946422fcbdb5ba1cc966b}{tiledMap}}.
+      \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_a03d0f5ea72a93c1939e97deea19a1d3a}{getTileHeight}}();
+400     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classentities_1_1_map_ae174e8e21c6307ea9058905778480ec1}\label{classentities_1_1_map_ae174e8e21c6307ea9058905778480ec1}} 
+\index{entities\+::\+Map@{entities\+::\+Map}!get\+Height\+In\+Tiles@{get\+Height\+In\+Tiles}}
+\index{get\+Height\+In\+Tiles@{get\+Height\+In\+Tiles}!entities\+::\+Map@{entities\+::\+Map}}
+\subsubsection{\texorpdfstring{get\+Height\+In\+Tiles()}{getHeightInTiles()}}
+{\footnotesize\ttfamily int entities.\+Map.\+get\+Height\+In\+Tiles (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get the height of the tile map. The slightly odd name is used to distiguish this method from commonly used names in game maps.
+
+\begin{DoxyReturn}{Returns}
+The number of tiles down the map 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_tile_based_map_a9669f3dafa1ce48a20e3d7d8c1de239a}{org.\+newdawn.\+slick.\+util.\+pathfinding.\+Tile\+Based\+Map}}.
+
+
+\begin{DoxyCode}
+408                                   \{
+409         \textcolor{keywordflow}{return} \mbox{\hyperlink{classentities_1_1_map_a94a743ccd80946422fcbdb5ba1cc966b}{tiledMap}}.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_a6370cae21692dded6097e8f877b62cac}{getHeight}}();
+410     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classentities_1_1_map_a43c2e5888d77a6b400cc6dd2c9aa1769}\label{classentities_1_1_map_a43c2e5888d77a6b400cc6dd2c9aa1769}} 
+\index{entities\+::\+Map@{entities\+::\+Map}!get\+Tile\+Height@{get\+Tile\+Height}}
+\index{get\+Tile\+Height@{get\+Tile\+Height}!entities\+::\+Map@{entities\+::\+Map}}
+\subsubsection{\texorpdfstring{get\+Tile\+Height()}{getTileHeight()}}
+{\footnotesize\ttfamily int entities.\+Map.\+get\+Tile\+Height (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+429                               \{
+430         \textcolor{keywordflow}{return} \mbox{\hyperlink{classentities_1_1_map_a94a743ccd80946422fcbdb5ba1cc966b}{tiledMap}}.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_a03d0f5ea72a93c1939e97deea19a1d3a}{getTileHeight}}();
+431     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classentities_1_1_map_ada3d3610a5bdc025e1509583e0e36746}\label{classentities_1_1_map_ada3d3610a5bdc025e1509583e0e36746}} 
+\index{entities\+::\+Map@{entities\+::\+Map}!get\+Tile\+Width@{get\+Tile\+Width}}
+\index{get\+Tile\+Width@{get\+Tile\+Width}!entities\+::\+Map@{entities\+::\+Map}}
+\subsubsection{\texorpdfstring{get\+Tile\+Width()}{getTileWidth()}}
+{\footnotesize\ttfamily int entities.\+Map.\+get\+Tile\+Width (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+426                              \{
+427         \textcolor{keywordflow}{return} \mbox{\hyperlink{classentities_1_1_map_a94a743ccd80946422fcbdb5ba1cc966b}{tiledMap}}.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_a44dd7389139c646e87d056fdd1e44232}{getTileWidth}}();
+428     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classentities_1_1_map_a7c15a6b2fac91bdb2592e1db1bc78623}\label{classentities_1_1_map_a7c15a6b2fac91bdb2592e1db1bc78623}} 
+\index{entities\+::\+Map@{entities\+::\+Map}!get\+Width@{get\+Width}}
+\index{get\+Width@{get\+Width}!entities\+::\+Map@{entities\+::\+Map}}
+\subsubsection{\texorpdfstring{get\+Width()}{getWidth()}}
+{\footnotesize\ttfamily float entities.\+Map.\+get\+Width (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get the width in pixels of this map.
+
+\begin{DoxyReturn}{Returns}
+Width in pixels. 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+389                             \{
+390         \textcolor{keywordflow}{return} \mbox{\hyperlink{classentities_1_1_map_a94a743ccd80946422fcbdb5ba1cc966b}{tiledMap}}.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_a1a8a716864f741b9f788138407108eb3}{getWidth}}() * \mbox{\hyperlink{classentities_1_1_map_a94a743ccd80946422fcbdb5ba1cc966b}{tiledMap}}.
+      \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_a44dd7389139c646e87d056fdd1e44232}{getTileWidth}}();
+391     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classentities_1_1_map_a7caa160e4dd0164e861ad238cc58ac36}\label{classentities_1_1_map_a7caa160e4dd0164e861ad238cc58ac36}} 
+\index{entities\+::\+Map@{entities\+::\+Map}!get\+Width\+In\+Tiles@{get\+Width\+In\+Tiles}}
+\index{get\+Width\+In\+Tiles@{get\+Width\+In\+Tiles}!entities\+::\+Map@{entities\+::\+Map}}
+\subsubsection{\texorpdfstring{get\+Width\+In\+Tiles()}{getWidthInTiles()}}
+{\footnotesize\ttfamily int entities.\+Map.\+get\+Width\+In\+Tiles (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get the width of the tile map. The slightly odd name is used to distiguish this method from commonly used names in game maps.
+
+\begin{DoxyReturn}{Returns}
+The number of tiles across the map 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_tile_based_map_a5efac540b233405c4ae65b784a7c6d22}{org.\+newdawn.\+slick.\+util.\+pathfinding.\+Tile\+Based\+Map}}.
+
+
+\begin{DoxyCode}
+403                                  \{
+404         \textcolor{keywordflow}{return} \mbox{\hyperlink{classentities_1_1_map_a94a743ccd80946422fcbdb5ba1cc966b}{tiledMap}}.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_a1a8a716864f741b9f788138407108eb3}{getWidth}}();
+405     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classentities_1_1_map_a183d1b160c442fc50c37cf0cb956f5cd}\label{classentities_1_1_map_a183d1b160c442fc50c37cf0cb956f5cd}} 
+\index{entities\+::\+Map@{entities\+::\+Map}!init@{init}}
+\index{init@{init}!entities\+::\+Map@{entities\+::\+Map}}
+\subsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily void entities.\+Map.\+init (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classentities_1_1_collision_handler}{Collision\+Handler}}}]{collision,  }\item[{\mbox{\hyperlink{classstates_1_1_game_state}{Game\+State}}}]{game\+State }\end{DoxyParamCaption}) throws \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_slick_exception}{Slick\+Exception}}\hspace{0.3cm}{\ttfamily [inline]}}
+
+Inits the map. It configures the map correctly to be used by a game.
+
+
+\begin{DoxyParams}{Parameters}
+{\em collision} & \mbox{\hyperlink{classentities_1_1_collision_handler}{Collision\+Handler}} which would handle collisions with this map. \\
+\hline
+{\em game\+State} & Game that plays with this map. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Slick\+Exception} & if the map can\textquotesingle{}t initialize. \\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyCode}
+52                                                                                             \{
+53         \mbox{\hyperlink{classentities_1_1_map_a94a743ccd80946422fcbdb5ba1cc966b}{tiledMap}} = \textcolor{keyword}{new} TiledMap(\mbox{\hyperlink{classentities_1_1_map_a15025d8ae6bb3627fb145ce75013b011}{src}}, \textcolor{keyword}{true});
+54         \mbox{\hyperlink{classentities_1_1_map_a870dbe1d4cad1c47b3a63a28267c32a9}{initCollisionLayer}}();
+55         \mbox{\hyperlink{classentities_1_1_map_a501c11a9a6f076a7a2e8c8880eeceae6}{initDetectors}}(collision, gameState);
+56     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classentities_1_1_map_a870dbe1d4cad1c47b3a63a28267c32a9}\label{classentities_1_1_map_a870dbe1d4cad1c47b3a63a28267c32a9}} 
+\index{entities\+::\+Map@{entities\+::\+Map}!init\+Collision\+Layer@{init\+Collision\+Layer}}
+\index{init\+Collision\+Layer@{init\+Collision\+Layer}!entities\+::\+Map@{entities\+::\+Map}}
+\subsubsection{\texorpdfstring{init\+Collision\+Layer()}{initCollisionLayer()}}
+{\footnotesize\ttfamily void entities.\+Map.\+init\+Collision\+Layer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_slick_exception}{Slick\+Exception}}\hspace{0.3cm}{\ttfamily [inline]}}
+
+Initializes the collisions with the given map.
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Slick\+Exception} & If there is no \char`\"{}meta\char`\"{} layer \\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyCode}
+102                                                            \{
+103         \textcolor{keywordtype}{int} aux = \mbox{\hyperlink{classentities_1_1_map_a94a743ccd80946422fcbdb5ba1cc966b}{tiledMap}}.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_a70c72f5ad1f0fb784c6bfd0dc71d0608}{getLayerIndex}}(\textcolor{stringliteral}{"meta"});
+104         \textcolor{keywordflow}{if} (aux != -1) \{
+105             \mbox{\hyperlink{classentities_1_1_map_af7f17d81b7e3bd4e1897f8fb7f89f855}{collisionLayer}} = \textcolor{keyword}{new} \textcolor{keywordtype}{boolean}[\mbox{\hyperlink{classentities_1_1_map_a94a743ccd80946422fcbdb5ba1cc966b}{tiledMap}}.
+      \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_a6370cae21692dded6097e8f877b62cac}{getHeight}}()][\mbox{\hyperlink{classentities_1_1_map_a94a743ccd80946422fcbdb5ba1cc966b}{tiledMap}}.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_a1a8a716864f741b9f788138407108eb3}{getWidth}}()];
+106             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < \mbox{\hyperlink{classentities_1_1_map_a94a743ccd80946422fcbdb5ba1cc966b}{tiledMap}}.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_a1a8a716864f741b9f788138407108eb3}{getWidth}}(); i++) \{
+107                 \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} j = 0; j < \mbox{\hyperlink{classentities_1_1_map_a94a743ccd80946422fcbdb5ba1cc966b}{tiledMap}}.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_a6370cae21692dded6097e8f877b62cac}{getHeight}}(); j++) \{
+108                     \textcolor{keywordtype}{int} tileID = \mbox{\hyperlink{classentities_1_1_map_a94a743ccd80946422fcbdb5ba1cc966b}{tiledMap}}.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_a03f3fac591bac6a711f9b746a21da559}{getTileId}}(i, j, aux);
+109                     String value = \mbox{\hyperlink{classentities_1_1_map_a94a743ccd80946422fcbdb5ba1cc966b}{tiledMap}}.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_aea96107a7e2b3c843771ae8c0f691368}{getTileProperty}}(tileID, \textcolor{stringliteral}{"blocked"}, \textcolor{stringliteral}{"
+      false"});
+110                     \textcolor{keywordflow}{if} (\textcolor{stringliteral}{"true"}.equals(value)) \{
+111                         \mbox{\hyperlink{classentities_1_1_map_af7f17d81b7e3bd4e1897f8fb7f89f855}{collisionLayer}}[j][i] = \textcolor{keyword}{true};
+112                     \}
+113                 \}
+114             \}
+115         \} \textcolor{keywordflow}{else} \{
+116             \textcolor{keywordflow}{throw} \textcolor{keyword}{new} SlickException(\textcolor{stringliteral}{"Colisión con el mapa no cargada, no se encuentra la capa \(\backslash\)"meta\(\backslash\)""});
+117         \}
+118     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classentities_1_1_map_a501c11a9a6f076a7a2e8c8880eeceae6}\label{classentities_1_1_map_a501c11a9a6f076a7a2e8c8880eeceae6}} 
+\index{entities\+::\+Map@{entities\+::\+Map}!init\+Detectors@{init\+Detectors}}
+\index{init\+Detectors@{init\+Detectors}!entities\+::\+Map@{entities\+::\+Map}}
+\subsubsection{\texorpdfstring{init\+Detectors()}{initDetectors()}}
+{\footnotesize\ttfamily void entities.\+Map.\+init\+Detectors (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classentities_1_1_collision_handler}{Collision\+Handler}}}]{collision\+Handler,  }\item[{\mbox{\hyperlink{classstates_1_1_game_state}{Game\+State}}}]{game\+State }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+293                                                                                       \{
+294         collisionHandler.removeDetectors();
+295         \mbox{\hyperlink{classentities_1_1_map_a7ac25d4d491cdb9d26421146fc622978}{initMapChangers}}(collisionHandler, gameState);
+296         \mbox{\hyperlink{classentities_1_1_map_ae795d01c06b1f04f16065702fa5e2801}{initDialogueLocations}}(collisionHandler, gameState);
+297         \mbox{\hyperlink{classentities_1_1_map_aab876045f8037049288a1683cb0c250b}{initItemAdders}}(collisionHandler, gameState);
+298         \mbox{\hyperlink{classentities_1_1_map_a475dade0cc451ced58633690801baec5}{initEnemySpawners}}(collisionHandler, gameState);
+299         \mbox{\hyperlink{classentities_1_1_map_a8678aecbe6308ad69b2596d3452974cf}{initMrBugLocation}}(collisionHandler,gameState);
+300     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classentities_1_1_map_ae795d01c06b1f04f16065702fa5e2801}\label{classentities_1_1_map_ae795d01c06b1f04f16065702fa5e2801}} 
+\index{entities\+::\+Map@{entities\+::\+Map}!init\+Dialogue\+Locations@{init\+Dialogue\+Locations}}
+\index{init\+Dialogue\+Locations@{init\+Dialogue\+Locations}!entities\+::\+Map@{entities\+::\+Map}}
+\subsubsection{\texorpdfstring{init\+Dialogue\+Locations()}{initDialogueLocations()}}
+{\footnotesize\ttfamily void entities.\+Map.\+init\+Dialogue\+Locations (\begin{DoxyParamCaption}\item[{final \mbox{\hyperlink{classentities_1_1_collision_handler}{Collision\+Handler}}}]{collision\+Handler,  }\item[{\mbox{\hyperlink{classstates_1_1_game_state}{Game\+State}}}]{game\+State }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Initializes the dialogue locations using the map\textquotesingle{}s objects layer.
+
+
+\begin{DoxyParams}{Parameters}
+{\em collision\+Handler} & Colission\+Handler which willstore the diologue locations. \\
+\hline
+{\em game\+State} & The game where we want to add the dialogue locations. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+159                                                                                                     \{
+160 
+161         \textcolor{comment}{//Get the number of objects layers}
+162         \textcolor{keywordtype}{int} objGroupCount = \mbox{\hyperlink{classentities_1_1_map_a94a743ccd80946422fcbdb5ba1cc966b}{tiledMap}}.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_aa39650c84fe749bbe63ee1f65a80df20}{getObjectGroupCount}}();
+163 
+164         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < objGroupCount; i++) \{
+165             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} j = 0; j < \mbox{\hyperlink{classentities_1_1_map_a94a743ccd80946422fcbdb5ba1cc966b}{tiledMap}}.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_a445ccc51d54dfa01c589de1c957cce0c}{getObjectCount}}(i); j++) \{
+166                 String dialogue = \mbox{\hyperlink{classentities_1_1_map_a94a743ccd80946422fcbdb5ba1cc966b}{tiledMap}}.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_ac73d3772b22f8fc9e200b9f3db40116c}{getObjectProperty}}(i, j, \textcolor{stringliteral}{"dialogue"}, \textcolor{stringliteral}{""})
+      ;
+167                 \textcolor{keywordtype}{int} num = Integer.parseInt(\mbox{\hyperlink{classentities_1_1_map_a94a743ccd80946422fcbdb5ba1cc966b}{tiledMap}}.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_ac73d3772b22f8fc9e200b9f3db40116c}{getObjectProperty}}(i, j, \textcolor{stringliteral}{"num"},
+       \textcolor{stringliteral}{"-1"}));
+168                 \textcolor{keyword}{final} \textcolor{keywordtype}{int} enableId = Integer.parseInt(\mbox{\hyperlink{classentities_1_1_map_a94a743ccd80946422fcbdb5ba1cc966b}{tiledMap}}.
+      \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_ac73d3772b22f8fc9e200b9f3db40116c}{getObjectProperty}}(i, j, \textcolor{stringliteral}{"enableId"}, \textcolor{stringliteral}{"-1"}));
+169                 \textcolor{keyword}{final} \textcolor{keywordtype}{int} disableId = Integer.parseInt(\mbox{\hyperlink{classentities_1_1_map_a94a743ccd80946422fcbdb5ba1cc966b}{tiledMap}}.
+      \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_ac73d3772b22f8fc9e200b9f3db40116c}{getObjectProperty}}(i, j, \textcolor{stringliteral}{"disableId"}, \textcolor{stringliteral}{"-1"}));
+170 
+171                 \textcolor{keywordtype}{boolean} enabled = Boolean.valueOf(\mbox{\hyperlink{classentities_1_1_map_a94a743ccd80946422fcbdb5ba1cc966b}{tiledMap}}.
+      \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_ac73d3772b22f8fc9e200b9f3db40116c}{getObjectProperty}}(i, j, \textcolor{stringliteral}{"enabled"}, \textcolor{stringliteral}{"true"}));
+172                 \textcolor{keywordtype}{int} identifier = Integer.parseInt(\mbox{\hyperlink{classentities_1_1_map_a94a743ccd80946422fcbdb5ba1cc966b}{tiledMap}}.
+      \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_ac73d3772b22f8fc9e200b9f3db40116c}{getObjectProperty}}(i, j, \textcolor{stringliteral}{"identifier"}, \textcolor{stringliteral}{"-1"}));
+173                 \textcolor{keywordflow}{if} (!dialogue.equals(\textcolor{stringliteral}{""}) && num != -1) \{
+174                     DialogueLocation aux = \textcolor{keyword}{new} DialogueLocation(enabled, identifier, 
+      \mbox{\hyperlink{classentities_1_1_map_a94a743ccd80946422fcbdb5ba1cc966b}{tiledMap}}.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_a1f3254dc5845b361c2cbde74f587d4c1}{getObjectX}}(i, j),
+175                             \mbox{\hyperlink{classentities_1_1_map_a94a743ccd80946422fcbdb5ba1cc966b}{tiledMap}}.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_a690410873e8b1ddcf677545432fb44f7}{getObjectY}}(i, j), 
+      \mbox{\hyperlink{classentities_1_1_map_a94a743ccd80946422fcbdb5ba1cc966b}{tiledMap}}.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_afa4bb340b71651c7ac0b0a372f22ab60}{getObjectWidth}}(i, j),
+176                             \mbox{\hyperlink{classentities_1_1_map_a94a743ccd80946422fcbdb5ba1cc966b}{tiledMap}}.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_a2da39e5d72913b52ebb5a12397724f96}{getObjectHeight}}(i, j), dialogue, num, gameState
+      );
+177                     \textcolor{keywordflow}{if} (enableId != -1 || disableId != -1) \{
+178                         aux.registerEvent(\textcolor{keyword}{new} EventLauncher() \{
+179                             @Override
+180                             \textcolor{keyword}{public} \textcolor{keywordtype}{void} launchEvent() \{
+181                                 ArrayList<Enabled> aux = \mbox{\hyperlink{classentities_1_1_map_afc132389c586910ffe04d24a96ae5d19}{getEnabledEntityById}}(
+      collisionHandler, enableId);
+182 
+183                                 \textcolor{keywordflow}{for} (Enabled e : aux) \{
+184                                     e.enable();
+185                                 \}
+186                                 aux = \mbox{\hyperlink{classentities_1_1_map_afc132389c586910ffe04d24a96ae5d19}{getEnabledEntityById}}(collisionHandler, disableId)
+      ;
+187 
+188                                 \textcolor{keywordflow}{for} (Enabled e : aux) \{
+189                                     e.disable();
+190                                 \}
+191                             \}
+192                         \});
+193                     \}
+194                     collisionHandler.insertDetector(aux);
+195                 \}
+196             \}
+197 
+198         \}
+199     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classentities_1_1_map_a475dade0cc451ced58633690801baec5}\label{classentities_1_1_map_a475dade0cc451ced58633690801baec5}} 
+\index{entities\+::\+Map@{entities\+::\+Map}!init\+Enemy\+Spawners@{init\+Enemy\+Spawners}}
+\index{init\+Enemy\+Spawners@{init\+Enemy\+Spawners}!entities\+::\+Map@{entities\+::\+Map}}
+\subsubsection{\texorpdfstring{init\+Enemy\+Spawners()}{initEnemySpawners()}}
+{\footnotesize\ttfamily void entities.\+Map.\+init\+Enemy\+Spawners (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classentities_1_1_collision_handler}{Collision\+Handler}}}]{collision\+Handler,  }\item[{\mbox{\hyperlink{classstates_1_1_game_state}{Game\+State}}}]{game\+State }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+201                                                                                           \{
+202 
+203         \textcolor{comment}{//Get the number of objects layers}
+204         \textcolor{keywordtype}{int} objGroupCount = \mbox{\hyperlink{classentities_1_1_map_a94a743ccd80946422fcbdb5ba1cc966b}{tiledMap}}.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_aa39650c84fe749bbe63ee1f65a80df20}{getObjectGroupCount}}();
+205 
+206         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < objGroupCount; i++) \{
+207             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} j = 0; j < \mbox{\hyperlink{classentities_1_1_map_a94a743ccd80946422fcbdb5ba1cc966b}{tiledMap}}.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_a445ccc51d54dfa01c589de1c957cce0c}{getObjectCount}}(i); j++) \{
+208                 \textcolor{keywordtype}{boolean} boss = Boolean.parseBoolean(\mbox{\hyperlink{classentities_1_1_map_a94a743ccd80946422fcbdb5ba1cc966b}{tiledMap}}.
+      \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_ac73d3772b22f8fc9e200b9f3db40116c}{getObjectProperty}}(i, j, \textcolor{stringliteral}{"boss"}, \textcolor{stringliteral}{"false"}));
+209                 \textcolor{keywordtype}{int} level = Integer.parseInt(\mbox{\hyperlink{classentities_1_1_map_a94a743ccd80946422fcbdb5ba1cc966b}{tiledMap}}.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_ac73d3772b22f8fc9e200b9f3db40116c}{getObjectProperty}}(i, j, \textcolor{stringliteral}{"
+      enemyLevel"}, \textcolor{stringliteral}{"-1"}));
+210                 \textcolor{keywordtype}{int} numEnemies = Integer.parseInt(\mbox{\hyperlink{classentities_1_1_map_a94a743ccd80946422fcbdb5ba1cc966b}{tiledMap}}.
+      \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_ac73d3772b22f8fc9e200b9f3db40116c}{getObjectProperty}}(i, j, \textcolor{stringliteral}{"numEnemies"}, \textcolor{stringliteral}{"-1"}));
+211                 \textcolor{keywordtype}{int} x = Integer.parseInt(\mbox{\hyperlink{classentities_1_1_map_a94a743ccd80946422fcbdb5ba1cc966b}{tiledMap}}.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_ac73d3772b22f8fc9e200b9f3db40116c}{getObjectProperty}}(i, j, \textcolor{stringliteral}{"createX
+      "}, \textcolor{stringliteral}{"-1"}));
+212                 \textcolor{keywordtype}{int} y = Integer.parseInt(\mbox{\hyperlink{classentities_1_1_map_a94a743ccd80946422fcbdb5ba1cc966b}{tiledMap}}.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_ac73d3772b22f8fc9e200b9f3db40116c}{getObjectProperty}}(i, j, \textcolor{stringliteral}{"createY
+      "}, \textcolor{stringliteral}{"-1"}));
+213                 \textcolor{keywordflow}{if} (level != -1 && x != -1 && y != -1) \{
+214                     EnemySpawner aux;
+215                     \textcolor{keywordflow}{if} (boss) \{
+216                         aux = \textcolor{keyword}{new} EnemySpawner(gameState, x, y, level, \mbox{\hyperlink{classentities_1_1_map_a94a743ccd80946422fcbdb5ba1cc966b}{tiledMap}}.
+      \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_a1f3254dc5845b361c2cbde74f587d4c1}{getObjectX}}(i, j),
+217                                 \mbox{\hyperlink{classentities_1_1_map_a94a743ccd80946422fcbdb5ba1cc966b}{tiledMap}}.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_a690410873e8b1ddcf677545432fb44f7}{getObjectY}}(i, j), 
+      \mbox{\hyperlink{classentities_1_1_map_a94a743ccd80946422fcbdb5ba1cc966b}{tiledMap}}.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_afa4bb340b71651c7ac0b0a372f22ab60}{getObjectWidth}}(i, j), \mbox{\hyperlink{classentities_1_1_map_a94a743ccd80946422fcbdb5ba1cc966b}{tiledMap}}.
+      \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_a2da39e5d72913b52ebb5a12397724f96}{getObjectHeight}}(i, j));
+218                     \} \textcolor{keywordflow}{else} \{
+219                         aux = \textcolor{keyword}{new} EnemySpawner(gameState, x, y, numEnemies, level, 
+      \mbox{\hyperlink{classentities_1_1_map_a94a743ccd80946422fcbdb5ba1cc966b}{tiledMap}}.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_a1f3254dc5845b361c2cbde74f587d4c1}{getObjectX}}(i, j),
+220                                 \mbox{\hyperlink{classentities_1_1_map_a94a743ccd80946422fcbdb5ba1cc966b}{tiledMap}}.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_a690410873e8b1ddcf677545432fb44f7}{getObjectY}}(i, j), 
+      \mbox{\hyperlink{classentities_1_1_map_a94a743ccd80946422fcbdb5ba1cc966b}{tiledMap}}.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_afa4bb340b71651c7ac0b0a372f22ab60}{getObjectWidth}}(i, j), \mbox{\hyperlink{classentities_1_1_map_a94a743ccd80946422fcbdb5ba1cc966b}{tiledMap}}.
+      \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_a2da39e5d72913b52ebb5a12397724f96}{getObjectHeight}}(i, j));
+221                     \}
+222 
+223                     collisionHandler.insertDetector(aux);
+224                 \}
+225             \}
+226 
+227         \}
+228     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classentities_1_1_map_aab876045f8037049288a1683cb0c250b}\label{classentities_1_1_map_aab876045f8037049288a1683cb0c250b}} 
+\index{entities\+::\+Map@{entities\+::\+Map}!init\+Item\+Adders@{init\+Item\+Adders}}
+\index{init\+Item\+Adders@{init\+Item\+Adders}!entities\+::\+Map@{entities\+::\+Map}}
+\subsubsection{\texorpdfstring{init\+Item\+Adders()}{initItemAdders()}}
+{\footnotesize\ttfamily void entities.\+Map.\+init\+Item\+Adders (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classentities_1_1_collision_handler}{Collision\+Handler}}}]{collision\+Handler,  }\item[{\mbox{\hyperlink{classstates_1_1_game_state}{Game\+State}}}]{game\+State }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Initializes the dialogue locations using the map\textquotesingle{}s objects layer.
+
+
+\begin{DoxyParams}{Parameters}
+{\em collision\+Handler} & Colission\+Handler which willstore the diologue locations. \\
+\hline
+{\em game\+State} & The game where we want to add the dialogue locations. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+271                                                                                        \{
+272 
+273         \textcolor{comment}{//Get the number of objects layers}
+274         \textcolor{keywordtype}{int} objGroupCount = \mbox{\hyperlink{classentities_1_1_map_a94a743ccd80946422fcbdb5ba1cc966b}{tiledMap}}.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_aa39650c84fe749bbe63ee1f65a80df20}{getObjectGroupCount}}();
+275 
+276         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < objGroupCount; i++) \{
+277             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} j = 0; j < \mbox{\hyperlink{classentities_1_1_map_a94a743ccd80946422fcbdb5ba1cc966b}{tiledMap}}.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_a445ccc51d54dfa01c589de1c957cce0c}{getObjectCount}}(i); j++) \{
+278                 \textcolor{keywordtype}{int} hp = Integer.parseInt(\mbox{\hyperlink{classentities_1_1_map_a94a743ccd80946422fcbdb5ba1cc966b}{tiledMap}}.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_ac73d3772b22f8fc9e200b9f3db40116c}{getObjectProperty}}(i, j, \textcolor{stringliteral}{"hp"}, \textcolor{stringliteral}{"
+      -1"}));
+279                 \textcolor{keywordtype}{int} sp = Integer.parseInt(\mbox{\hyperlink{classentities_1_1_map_a94a743ccd80946422fcbdb5ba1cc966b}{tiledMap}}.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_ac73d3772b22f8fc9e200b9f3db40116c}{getObjectProperty}}(i, j, \textcolor{stringliteral}{"sp"}, \textcolor{stringliteral}{"
+      -1"}));
+280                 \textcolor{keywordtype}{int} dp = Integer.parseInt(\mbox{\hyperlink{classentities_1_1_map_a94a743ccd80946422fcbdb5ba1cc966b}{tiledMap}}.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_ac73d3772b22f8fc9e200b9f3db40116c}{getObjectProperty}}(i, j, \textcolor{stringliteral}{"dp"}, \textcolor{stringliteral}{"
+      -1"}));
+281                 \textcolor{keywordtype}{int} weaponLevel = Integer.parseInt(\mbox{\hyperlink{classentities_1_1_map_a94a743ccd80946422fcbdb5ba1cc966b}{tiledMap}}.
+      \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_ac73d3772b22f8fc9e200b9f3db40116c}{getObjectProperty}}(i, j, \textcolor{stringliteral}{"weaponlevel"}, \textcolor{stringliteral}{"-1"}));
+282                 \textcolor{keywordtype}{int} potionLevel = Integer.parseInt(\mbox{\hyperlink{classentities_1_1_map_a94a743ccd80946422fcbdb5ba1cc966b}{tiledMap}}.
+      \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_ac73d3772b22f8fc9e200b9f3db40116c}{getObjectProperty}}(i, j, \textcolor{stringliteral}{"potionlevel"}, \textcolor{stringliteral}{"-1"}));
+283                 \textcolor{keywordflow}{if} (hp != -1 || dp != -1 || sp != -1 || weaponLevel != -1) \{
+284                     collisionHandler.insertDetector(\textcolor{keyword}{new} ItemAdder(\mbox{\hyperlink{classentities_1_1_map_a94a743ccd80946422fcbdb5ba1cc966b}{tiledMap}}.
+      \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_a1f3254dc5845b361c2cbde74f587d4c1}{getObjectX}}(i, j),
+285                             \mbox{\hyperlink{classentities_1_1_map_a94a743ccd80946422fcbdb5ba1cc966b}{tiledMap}}.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_a690410873e8b1ddcf677545432fb44f7}{getObjectY}}(i, j), 
+      \mbox{\hyperlink{classentities_1_1_map_a94a743ccd80946422fcbdb5ba1cc966b}{tiledMap}}.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_afa4bb340b71651c7ac0b0a372f22ab60}{getObjectWidth}}(i, j),
+286                             \mbox{\hyperlink{classentities_1_1_map_a94a743ccd80946422fcbdb5ba1cc966b}{tiledMap}}.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_a2da39e5d72913b52ebb5a12397724f96}{getObjectHeight}}(i, j), hp, sp, dp, potionLevel,
+       weaponLevel, gameState.isSword()));
+287                 \}
+288             \}
+289 
+290         \}
+291     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classentities_1_1_map_a7ac25d4d491cdb9d26421146fc622978}\label{classentities_1_1_map_a7ac25d4d491cdb9d26421146fc622978}} 
+\index{entities\+::\+Map@{entities\+::\+Map}!init\+Map\+Changers@{init\+Map\+Changers}}
+\index{init\+Map\+Changers@{init\+Map\+Changers}!entities\+::\+Map@{entities\+::\+Map}}
+\subsubsection{\texorpdfstring{init\+Map\+Changers()}{initMapChangers()}}
+{\footnotesize\ttfamily void entities.\+Map.\+init\+Map\+Changers (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classentities_1_1_collision_handler}{Collision\+Handler}}}]{collision\+Handler,  }\item[{\mbox{\hyperlink{classstates_1_1_game_state}{Game\+State}}}]{game\+State }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Initializes the map changers, using the map\textquotesingle{}s objects layer.
+
+
+\begin{DoxyParams}{Parameters}
+{\em collision\+Handler} & Colission\+Handler which willstore the map changers. \\
+\hline
+{\em game\+State} & The game where we want to add the map changers. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+127                                                                                         \{
+128 
+129         \textcolor{comment}{//Get the number of objects layers}
+130         \textcolor{keywordtype}{int} objGroupCount = \mbox{\hyperlink{classentities_1_1_map_a94a743ccd80946422fcbdb5ba1cc966b}{tiledMap}}.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_aa39650c84fe749bbe63ee1f65a80df20}{getObjectGroupCount}}();
+131 
+132         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < objGroupCount; i++) \{
+133             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} j = 0; j < \mbox{\hyperlink{classentities_1_1_map_a94a743ccd80946422fcbdb5ba1cc966b}{tiledMap}}.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_a445ccc51d54dfa01c589de1c957cce0c}{getObjectCount}}(i); j++) \{
+134                 String map = \mbox{\hyperlink{classentities_1_1_map_a94a743ccd80946422fcbdb5ba1cc966b}{tiledMap}}.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_ac73d3772b22f8fc9e200b9f3db40116c}{getObjectProperty}}(i, j, \textcolor{stringliteral}{"map"}, \textcolor{stringliteral}{""});
+135                 \textcolor{keywordtype}{int} initX = Integer.parseInt(\mbox{\hyperlink{classentities_1_1_map_a94a743ccd80946422fcbdb5ba1cc966b}{tiledMap}}.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_ac73d3772b22f8fc9e200b9f3db40116c}{getObjectProperty}}(i, j, \textcolor{stringliteral}{"
+      initX"}, \textcolor{stringliteral}{"0"}));
+136                 \textcolor{keywordtype}{int} initY = Integer.parseInt(\mbox{\hyperlink{classentities_1_1_map_a94a743ccd80946422fcbdb5ba1cc966b}{tiledMap}}.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_ac73d3772b22f8fc9e200b9f3db40116c}{getObjectProperty}}(i, j, \textcolor{stringliteral}{"
+      initY"}, \textcolor{stringliteral}{"0"}));
+137                 \textcolor{keywordtype}{boolean} enabled = Boolean.valueOf(\mbox{\hyperlink{classentities_1_1_map_a94a743ccd80946422fcbdb5ba1cc966b}{tiledMap}}.
+      \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_ac73d3772b22f8fc9e200b9f3db40116c}{getObjectProperty}}(i, j, \textcolor{stringliteral}{"enabled"}, \textcolor{stringliteral}{"false"}));
+138                 \textcolor{keywordtype}{int} identifier = Integer.parseInt(\mbox{\hyperlink{classentities_1_1_map_a94a743ccd80946422fcbdb5ba1cc966b}{tiledMap}}.
+      \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_ac73d3772b22f8fc9e200b9f3db40116c}{getObjectProperty}}(i, j, \textcolor{stringliteral}{"identifier"}, \textcolor{stringliteral}{"-1"}));
+139                 \textcolor{keywordflow}{if} (!map.equals(\textcolor{stringliteral}{""}) && initX != -1 && initY != -1) \{
+140                     MapChanger aux;
+141 
+142                     aux = \textcolor{keyword}{new} MapChanger(initX, initY, map, gameState, \mbox{\hyperlink{classentities_1_1_map_a94a743ccd80946422fcbdb5ba1cc966b}{tiledMap}}.
+      \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_a1f3254dc5845b361c2cbde74f587d4c1}{getObjectX}}(i, j),
+143                             \mbox{\hyperlink{classentities_1_1_map_a94a743ccd80946422fcbdb5ba1cc966b}{tiledMap}}.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_a690410873e8b1ddcf677545432fb44f7}{getObjectY}}(i, j), 
+      \mbox{\hyperlink{classentities_1_1_map_a94a743ccd80946422fcbdb5ba1cc966b}{tiledMap}}.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_afa4bb340b71651c7ac0b0a372f22ab60}{getObjectWidth}}(i, j), \mbox{\hyperlink{classentities_1_1_map_a94a743ccd80946422fcbdb5ba1cc966b}{tiledMap}}.
+      \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_a2da39e5d72913b52ebb5a12397724f96}{getObjectHeight}}(i, j), identifier, enabled);
+144 
+145                     collisionHandler.insertDetector(aux);
+146                 \}
+147             \}
+148 
+149         \}
+150     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classentities_1_1_map_a8678aecbe6308ad69b2596d3452974cf}\label{classentities_1_1_map_a8678aecbe6308ad69b2596d3452974cf}} 
+\index{entities\+::\+Map@{entities\+::\+Map}!init\+Mr\+Bug\+Location@{init\+Mr\+Bug\+Location}}
+\index{init\+Mr\+Bug\+Location@{init\+Mr\+Bug\+Location}!entities\+::\+Map@{entities\+::\+Map}}
+\subsubsection{\texorpdfstring{init\+Mr\+Bug\+Location()}{initMrBugLocation()}}
+{\footnotesize\ttfamily void entities.\+Map.\+init\+Mr\+Bug\+Location (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classentities_1_1_collision_handler}{Collision\+Handler}}}]{collision\+Handler,  }\item[{\mbox{\hyperlink{classstates_1_1_game_state}{Game\+State}}}]{game\+State }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+230                                                                                           \{
+231         \textcolor{keywordflow}{if} (\mbox{\hyperlink{classentities_1_1_map_a969750cbb3acef375d33040e29be91f0}{name}}.equals(\textcolor{stringliteral}{"01\_Start\_V2"})) \{
+232             \textcolor{comment}{//Get the number of objects layers}
+233             \textcolor{keywordtype}{int} objGroupCount = \mbox{\hyperlink{classentities_1_1_map_a94a743ccd80946422fcbdb5ba1cc966b}{tiledMap}}.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_aa39650c84fe749bbe63ee1f65a80df20}{getObjectGroupCount}}();
+234 
+235             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < objGroupCount; i++) \{
+236                 \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} j = 0; j < \mbox{\hyperlink{classentities_1_1_map_a94a743ccd80946422fcbdb5ba1cc966b}{tiledMap}}.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_a445ccc51d54dfa01c589de1c957cce0c}{getObjectCount}}(i); j++) \{
+237                     \textcolor{keywordtype}{boolean} mrbug=Boolean.parseBoolean(\mbox{\hyperlink{classentities_1_1_map_a94a743ccd80946422fcbdb5ba1cc966b}{tiledMap}}.
+      \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_ac73d3772b22f8fc9e200b9f3db40116c}{getObjectProperty}}(i, j, \textcolor{stringliteral}{"mrbug"}, \textcolor{stringliteral}{"false"}));
+238                     \textcolor{keywordtype}{boolean} enabled=Boolean.parseBoolean(\mbox{\hyperlink{classentities_1_1_map_a94a743ccd80946422fcbdb5ba1cc966b}{tiledMap}}.
+      \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_ac73d3772b22f8fc9e200b9f3db40116c}{getObjectProperty}}(i, j, \textcolor{stringliteral}{"enabled"}, \textcolor{stringliteral}{"false"}));
+239                     \textcolor{keywordtype}{int} initY = Integer.parseInt(\mbox{\hyperlink{classentities_1_1_map_a94a743ccd80946422fcbdb5ba1cc966b}{tiledMap}}.
+      \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_ac73d3772b22f8fc9e200b9f3db40116c}{getObjectProperty}}(i, j, \textcolor{stringliteral}{"initY"}, \textcolor{stringliteral}{"-1"}));
+240                     \textcolor{keywordtype}{int} identifier = Integer.parseInt(\mbox{\hyperlink{classentities_1_1_map_a94a743ccd80946422fcbdb5ba1cc966b}{tiledMap}}.
+      \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_ac73d3772b22f8fc9e200b9f3db40116c}{getObjectProperty}}(i, j, \textcolor{stringliteral}{"identifier"}, \textcolor{stringliteral}{"-1"}));
+241                     \textcolor{keywordflow}{if} (mrbug) \{
+242                         MrBugLauncher aux=\textcolor{keyword}{new} MrBugLauncher(identifier,enabled,gameState,
+      \mbox{\hyperlink{classentities_1_1_map_a7c15a6b2fac91bdb2592e1db1bc78623}{getWidth}}(),initY, \mbox{\hyperlink{classentities_1_1_map_a94a743ccd80946422fcbdb5ba1cc966b}{tiledMap}}.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_a1f3254dc5845b361c2cbde74f587d4c1}{getObjectX}}(i, j),
+243                                     \mbox{\hyperlink{classentities_1_1_map_a94a743ccd80946422fcbdb5ba1cc966b}{tiledMap}}.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_a690410873e8b1ddcf677545432fb44f7}{getObjectY}}(i, j), 
+      \mbox{\hyperlink{classentities_1_1_map_a94a743ccd80946422fcbdb5ba1cc966b}{tiledMap}}.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_afa4bb340b71651c7ac0b0a372f22ab60}{getObjectWidth}}(i, j), \mbox{\hyperlink{classentities_1_1_map_a94a743ccd80946422fcbdb5ba1cc966b}{tiledMap}}.
+      \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_a2da39e5d72913b52ebb5a12397724f96}{getObjectHeight}}(i, j));
+244                         collisionHandler.insertDetector(aux);
+245                     \}
+246                 \}
+247             \}
+248         \}
+249     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classentities_1_1_map_ac0f565ccdac5df088ea9424a6c218b14}\label{classentities_1_1_map_ac0f565ccdac5df088ea9424a6c218b14}} 
+\index{entities\+::\+Map@{entities\+::\+Map}!is\+Out\+Of\+The\+Map@{is\+Out\+Of\+The\+Map}}
+\index{is\+Out\+Of\+The\+Map@{is\+Out\+Of\+The\+Map}!entities\+::\+Map@{entities\+::\+Map}}
+\subsubsection{\texorpdfstring{is\+Out\+Of\+The\+Map()}{isOutOfTheMap()}}
+{\footnotesize\ttfamily boolean entities.\+Map.\+is\+Out\+Of\+The\+Map (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_shape}{Shape}}}]{s }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Check if a Shape object is inside or outside the map.
+
+
+\begin{DoxyParams}{Parameters}
+{\em s} & Shape which will be compared. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the Shape is out of the map, false if not. 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+308                                           \{
+309         \textcolor{keywordflow}{if} (s.getX() < 0 || (s.getX() + s.getWidth()) >= \mbox{\hyperlink{classentities_1_1_map_a7c15a6b2fac91bdb2592e1db1bc78623}{getWidth}}()) \{
+310             \textcolor{keywordflow}{return} \textcolor{keyword}{true};
+311         \}
+312         \textcolor{keywordflow}{if} (s.getY() < 0 || (s.getY() + s.getHeight()) >= \mbox{\hyperlink{classentities_1_1_map_a9ed9d1f8683c86dfca33639e252aaded}{getHeight}}()) \{
+313             \textcolor{keywordflow}{return} \textcolor{keyword}{true};
+314         \}
+315 
+316         \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+317     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classentities_1_1_map_a0ad9c4406c9c9de0cfd6dfbf4acdd924}\label{classentities_1_1_map_a0ad9c4406c9c9de0cfd6dfbf4acdd924}} 
+\index{entities\+::\+Map@{entities\+::\+Map}!path\+Finder\+Visited@{path\+Finder\+Visited}}
+\index{path\+Finder\+Visited@{path\+Finder\+Visited}!entities\+::\+Map@{entities\+::\+Map}}
+\subsubsection{\texorpdfstring{path\+Finder\+Visited()}{pathFinderVisited()}}
+{\footnotesize\ttfamily void entities.\+Map.\+path\+Finder\+Visited (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Notification that the path finder visited a given tile. This is used for debugging new heuristics.
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & The x coordinate of the tile that was visited \\
+\hline
+{\em y} & The y coordinate of the tile that was visited \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_tile_based_map_aeb1c1b5cbb0aecc4e280dbe18d5af5ac}{org.\+newdawn.\+slick.\+util.\+pathfinding.\+Tile\+Based\+Map}}.
+
+
+\begin{DoxyCode}
+418                                                 \{
+419         \textcolor{comment}{//System.out.println("\(\backslash\)t("+x+","+y+")");}
+420     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classentities_1_1_map_a2342f9740e05311c015fdcbd07c86f11}\label{classentities_1_1_map_a2342f9740e05311c015fdcbd07c86f11}} 
+\index{entities\+::\+Map@{entities\+::\+Map}!render@{render}}
+\index{render@{render}!entities\+::\+Map@{entities\+::\+Map}}
+\subsubsection{\texorpdfstring{render()}{render()}}
+{\footnotesize\ttfamily void entities.\+Map.\+render (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_game_container}{Game\+Container}}}]{gc,  }\item[{\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_graphics}{Graphics}}}]{g }\end{DoxyParamCaption}) throws \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_slick_exception}{Slick\+Exception}}\hspace{0.3cm}{\ttfamily [inline]}}
+
+Draws the map at the position (0, 0).
+
+
+\begin{DoxyParams}{Parameters}
+{\em gc} & Game\+Container. \\
+\hline
+{\em g} & Game graphics to be render at. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Slick\+Exception} & if the map can\textquotesingle{}t be rendered. \\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyCode}
+77                                                                            \{
+78         \mbox{\hyperlink{classentities_1_1_map_a94a743ccd80946422fcbdb5ba1cc966b}{tiledMap}}.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_a313dd901616b31c772f213675d236389}{render}}(0, 0);
+79     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classentities_1_1_map_a5089d63a94806cd3e9d2bdd0d31a799e}\label{classentities_1_1_map_a5089d63a94806cd3e9d2bdd0d31a799e}} 
+\index{entities\+::\+Map@{entities\+::\+Map}!render\+High@{render\+High}}
+\index{render\+High@{render\+High}!entities\+::\+Map@{entities\+::\+Map}}
+\subsubsection{\texorpdfstring{render\+High()}{renderHigh()}}
+{\footnotesize\ttfamily void entities.\+Map.\+render\+High (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_game_container}{Game\+Container}}}]{gc,  }\item[{\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_graphics}{Graphics}}}]{g }\end{DoxyParamCaption}) throws \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_slick_exception}{Slick\+Exception}}\hspace{0.3cm}{\ttfamily [inline]}}
+
+Draws the \char`\"{}aire\char`\"{} layer of the map at the position (0, 0).
+
+
+\begin{DoxyParams}{Parameters}
+{\em gc} & Game\+Container. \\
+\hline
+{\em g} & Game graphics to be render at. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Slick\+Exception} & if the layer can\textquotesingle{}t be rendered. \\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyCode}
+88                                                                                \{
+89         \textcolor{keywordtype}{int} h = \mbox{\hyperlink{classentities_1_1_map_a94a743ccd80946422fcbdb5ba1cc966b}{tiledMap}}.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_a70c72f5ad1f0fb784c6bfd0dc71d0608}{getLayerIndex}}(\textcolor{stringliteral}{"aire"});
+90         \textcolor{keywordflow}{if} (h != -1) \{
+91             \mbox{\hyperlink{classentities_1_1_map_a94a743ccd80946422fcbdb5ba1cc966b}{tiledMap}}.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_a313dd901616b31c772f213675d236389}{render}}(0, 0, h);
+92         \} \textcolor{keywordflow}{else} \{
+93             \textcolor{keywordflow}{throw} \textcolor{keyword}{new} SlickException(\textcolor{stringliteral}{"There isn't an \(\backslash\)"aire\(\backslash\)" layer in the map."});
+94         \}
+95     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classentities_1_1_map_abcb73d4364f31f5dd9a251ab59942919}\label{classentities_1_1_map_abcb73d4364f31f5dd9a251ab59942919}} 
+\index{entities\+::\+Map@{entities\+::\+Map}!tile\+Blocked@{tile\+Blocked}}
+\index{tile\+Blocked@{tile\+Blocked}!entities\+::\+Map@{entities\+::\+Map}}
+\subsubsection{\texorpdfstring{tile\+Blocked()}{tileBlocked()}}
+{\footnotesize\ttfamily boolean entities.\+Map.\+tile\+Blocked (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+Check if a tile of the map is blocked.
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & Number of the tile in the x-\/axis. \\
+\hline
+{\em y} & Number of the tile in the y-\/axis. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+325                                               \{
+326         \textcolor{keywordflow}{if} (\mbox{\hyperlink{classentities_1_1_map_af7f17d81b7e3bd4e1897f8fb7f89f855}{collisionLayer}} != null) \{
+327             \textcolor{keywordflow}{if} (y < collisionLayer.length && y >= 0) \{
+328                 \textcolor{keywordflow}{if} (x < \mbox{\hyperlink{classentities_1_1_map_af7f17d81b7e3bd4e1897f8fb7f89f855}{collisionLayer}}[0].length && x >= 0) \{
+329                     \textcolor{keywordflow}{return} \mbox{\hyperlink{classentities_1_1_map_af7f17d81b7e3bd4e1897f8fb7f89f855}{collisionLayer}}[y][x];
+330                 \}
+331             \}
+332         \}
+333         \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+334     \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classentities_1_1_map_af7f17d81b7e3bd4e1897f8fb7f89f855}\label{classentities_1_1_map_af7f17d81b7e3bd4e1897f8fb7f89f855}} 
+\index{entities\+::\+Map@{entities\+::\+Map}!collision\+Layer@{collision\+Layer}}
+\index{collision\+Layer@{collision\+Layer}!entities\+::\+Map@{entities\+::\+Map}}
+\subsubsection{\texorpdfstring{collision\+Layer}{collisionLayer}}
+{\footnotesize\ttfamily boolean \mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} entities.\+Map.\+collision\+Layer\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classentities_1_1_map_a969750cbb3acef375d33040e29be91f0}\label{classentities_1_1_map_a969750cbb3acef375d33040e29be91f0}} 
+\index{entities\+::\+Map@{entities\+::\+Map}!name@{name}}
+\index{name@{name}!entities\+::\+Map@{entities\+::\+Map}}
+\subsubsection{\texorpdfstring{name}{name}}
+{\footnotesize\ttfamily String entities.\+Map.\+name\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classentities_1_1_map_a15025d8ae6bb3627fb145ce75013b011}\label{classentities_1_1_map_a15025d8ae6bb3627fb145ce75013b011}} 
+\index{entities\+::\+Map@{entities\+::\+Map}!src@{src}}
+\index{src@{src}!entities\+::\+Map@{entities\+::\+Map}}
+\subsubsection{\texorpdfstring{src}{src}}
+{\footnotesize\ttfamily String entities.\+Map.\+src\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classentities_1_1_map_a94a743ccd80946422fcbdb5ba1cc966b}\label{classentities_1_1_map_a94a743ccd80946422fcbdb5ba1cc966b}} 
+\index{entities\+::\+Map@{entities\+::\+Map}!tiled\+Map@{tiled\+Map}}
+\index{tiled\+Map@{tiled\+Map}!entities\+::\+Map@{entities\+::\+Map}}
+\subsubsection{\texorpdfstring{tiled\+Map}{tiledMap}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map}{Tiled\+Map}} entities.\+Map.\+tiled\+Map\hspace{0.3cm}{\ttfamily [private]}}
+

@@ -1,0 +1,135 @@
+\hypertarget{classorg_1_1newdawn_1_1slick_1_1command_1_1_basic_command}{}\section{org.\+newdawn.\+slick.\+command.\+Basic\+Command Class Reference}
+\label{classorg_1_1newdawn_1_1slick_1_1command_1_1_basic_command}\index{org.\+newdawn.\+slick.\+command.\+Basic\+Command@{org.\+newdawn.\+slick.\+command.\+Basic\+Command}}
+Inheritance diagram for org.\+newdawn.\+slick.\+command.\+Basic\+Command\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classorg_1_1newdawn_1_1slick_1_1command_1_1_basic_command}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1command_1_1_basic_command_acce30aa06b3b68b146e45f603a2053a8}{Basic\+Command}} (String \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1command_1_1_basic_command_a50a5c3e66d1f02b990807d882daddce2}{name}})
+\item 
+String \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1command_1_1_basic_command_a9e8b97567e43625664eadefb2789aca5}{get\+Name}} ()
+\item 
+int \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1command_1_1_basic_command_a92181ea905147c3e2b869347e40cad0c}{hash\+Code}} ()
+\item 
+boolean \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1command_1_1_basic_command_a67ef131d3d6489ef5fc1bd6f1a595caa}{equals}} (Object other)
+\item 
+String \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1command_1_1_basic_command_acbf44f5b863bf9e38387880905e64949}{to\+String}} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+String \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1command_1_1_basic_command_a50a5c3e66d1f02b990807d882daddce2}{name}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A simple named command
+
+\begin{DoxyAuthor}{Author}
+kevin 
+\end{DoxyAuthor}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1command_1_1_basic_command_acce30aa06b3b68b146e45f603a2053a8}\label{classorg_1_1newdawn_1_1slick_1_1command_1_1_basic_command_acce30aa06b3b68b146e45f603a2053a8}} 
+\index{org\+::newdawn\+::slick\+::command\+::\+Basic\+Command@{org\+::newdawn\+::slick\+::command\+::\+Basic\+Command}!Basic\+Command@{Basic\+Command}}
+\index{Basic\+Command@{Basic\+Command}!org\+::newdawn\+::slick\+::command\+::\+Basic\+Command@{org\+::newdawn\+::slick\+::command\+::\+Basic\+Command}}
+\subsubsection{\texorpdfstring{Basic\+Command()}{BasicCommand()}}
+{\footnotesize\ttfamily org.\+newdawn.\+slick.\+command.\+Basic\+Command.\+Basic\+Command (\begin{DoxyParamCaption}\item[{String}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Create a new basic command
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The name to give this command \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+17                                      \{
+18         this.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1command_1_1_basic_command_a50a5c3e66d1f02b990807d882daddce2}{name}} = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1command_1_1_basic_command_a50a5c3e66d1f02b990807d882daddce2}{name}};
+19     \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1command_1_1_basic_command_a67ef131d3d6489ef5fc1bd6f1a595caa}\label{classorg_1_1newdawn_1_1slick_1_1command_1_1_basic_command_a67ef131d3d6489ef5fc1bd6f1a595caa}} 
+\index{org\+::newdawn\+::slick\+::command\+::\+Basic\+Command@{org\+::newdawn\+::slick\+::command\+::\+Basic\+Command}!equals@{equals}}
+\index{equals@{equals}!org\+::newdawn\+::slick\+::command\+::\+Basic\+Command@{org\+::newdawn\+::slick\+::command\+::\+Basic\+Command}}
+\subsubsection{\texorpdfstring{equals()}{equals()}}
+{\footnotesize\ttfamily boolean org.\+newdawn.\+slick.\+command.\+Basic\+Command.\+equals (\begin{DoxyParamCaption}\item[{Object}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxySeeAlso}{See also}
+java.\+lang.\+Object\+::equals(java.\+lang.\+Object) 
+\end{DoxySeeAlso}
+
+\begin{DoxyCode}
+40                                         \{
+41         \textcolor{keywordflow}{if} (other instanceof \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1command_1_1_basic_command_acce30aa06b3b68b146e45f603a2053a8}{BasicCommand}}) \{
+42             \textcolor{keywordflow}{return} ((\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1command_1_1_basic_command_acce30aa06b3b68b146e45f603a2053a8}{BasicCommand}}) other).name.equals(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1command_1_1_basic_command_a50a5c3e66d1f02b990807d882daddce2}{name}});
+43         \}
+44         
+45         \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+46     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1command_1_1_basic_command_a9e8b97567e43625664eadefb2789aca5}\label{classorg_1_1newdawn_1_1slick_1_1command_1_1_basic_command_a9e8b97567e43625664eadefb2789aca5}} 
+\index{org\+::newdawn\+::slick\+::command\+::\+Basic\+Command@{org\+::newdawn\+::slick\+::command\+::\+Basic\+Command}!get\+Name@{get\+Name}}
+\index{get\+Name@{get\+Name}!org\+::newdawn\+::slick\+::command\+::\+Basic\+Command@{org\+::newdawn\+::slick\+::command\+::\+Basic\+Command}}
+\subsubsection{\texorpdfstring{get\+Name()}{getName()}}
+{\footnotesize\ttfamily String org.\+newdawn.\+slick.\+command.\+Basic\+Command.\+get\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get the name given for this basic command
+
+\begin{DoxyReturn}{Returns}
+The name given for this basic command 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+26                             \{
+27         \textcolor{keywordflow}{return} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1command_1_1_basic_command_a50a5c3e66d1f02b990807d882daddce2}{name}};
+28     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1command_1_1_basic_command_a92181ea905147c3e2b869347e40cad0c}\label{classorg_1_1newdawn_1_1slick_1_1command_1_1_basic_command_a92181ea905147c3e2b869347e40cad0c}} 
+\index{org\+::newdawn\+::slick\+::command\+::\+Basic\+Command@{org\+::newdawn\+::slick\+::command\+::\+Basic\+Command}!hash\+Code@{hash\+Code}}
+\index{hash\+Code@{hash\+Code}!org\+::newdawn\+::slick\+::command\+::\+Basic\+Command@{org\+::newdawn\+::slick\+::command\+::\+Basic\+Command}}
+\subsubsection{\texorpdfstring{hash\+Code()}{hashCode()}}
+{\footnotesize\ttfamily int org.\+newdawn.\+slick.\+command.\+Basic\+Command.\+hash\+Code (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxySeeAlso}{See also}
+java.\+lang.\+Object\+::hash\+Code() 
+\end{DoxySeeAlso}
+
+\begin{DoxyCode}
+33                           \{
+34         \textcolor{keywordflow}{return} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1command_1_1_basic_command_a50a5c3e66d1f02b990807d882daddce2}{name}}.hashCode();
+35     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1command_1_1_basic_command_acbf44f5b863bf9e38387880905e64949}\label{classorg_1_1newdawn_1_1slick_1_1command_1_1_basic_command_acbf44f5b863bf9e38387880905e64949}} 
+\index{org\+::newdawn\+::slick\+::command\+::\+Basic\+Command@{org\+::newdawn\+::slick\+::command\+::\+Basic\+Command}!to\+String@{to\+String}}
+\index{to\+String@{to\+String}!org\+::newdawn\+::slick\+::command\+::\+Basic\+Command@{org\+::newdawn\+::slick\+::command\+::\+Basic\+Command}}
+\subsubsection{\texorpdfstring{to\+String()}{toString()}}
+{\footnotesize\ttfamily String org.\+newdawn.\+slick.\+command.\+Basic\+Command.\+to\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxySeeAlso}{See also}
+java.\+lang.\+Object\+::to\+String() 
+\end{DoxySeeAlso}
+
+\begin{DoxyCode}
+51                              \{
+52         \textcolor{keywordflow}{return} \textcolor{stringliteral}{"[Command="}+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1command_1_1_basic_command_a50a5c3e66d1f02b990807d882daddce2}{name}}+\textcolor{stringliteral}{"]"};
+53     \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1command_1_1_basic_command_a50a5c3e66d1f02b990807d882daddce2}\label{classorg_1_1newdawn_1_1slick_1_1command_1_1_basic_command_a50a5c3e66d1f02b990807d882daddce2}} 
+\index{org\+::newdawn\+::slick\+::command\+::\+Basic\+Command@{org\+::newdawn\+::slick\+::command\+::\+Basic\+Command}!name@{name}}
+\index{name@{name}!org\+::newdawn\+::slick\+::command\+::\+Basic\+Command@{org\+::newdawn\+::slick\+::command\+::\+Basic\+Command}}
+\subsubsection{\texorpdfstring{name}{name}}
+{\footnotesize\ttfamily String org.\+newdawn.\+slick.\+command.\+Basic\+Command.\+name\hspace{0.3cm}{\ttfamily [private]}}
+
+The name of the command 

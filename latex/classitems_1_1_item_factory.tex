@@ -1,0 +1,91 @@
+\hypertarget{classitems_1_1_item_factory}{}\section{items.\+Item\+Factory Class Reference}
+\label{classitems_1_1_item_factory}\index{items.\+Item\+Factory@{items.\+Item\+Factory}}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classitems_1_1_weapon_item}{Weapon\+Item}} \mbox{\hyperlink{classitems_1_1_item_factory_abb755482bc46d97e59fa015d2a87a630}{new\+Sword\+Item}} (Class friendly, int weapon\+Level)  throws Number\+Format\+Exception, Slick\+Exception 
+\item 
+static \mbox{\hyperlink{classitems_1_1_weapon_item}{Weapon\+Item}} \mbox{\hyperlink{classitems_1_1_item_factory_a1cdf8d06be10362a07e285cdd0765a2d}{new\+Bow\+Item}} (Class friendly, int weapon\+Level)  throws Number\+Format\+Exception, Slick\+Exception 
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classitems_1_1_item_factory_a1cdf8d06be10362a07e285cdd0765a2d}\label{classitems_1_1_item_factory_a1cdf8d06be10362a07e285cdd0765a2d}} 
+\index{items\+::\+Item\+Factory@{items\+::\+Item\+Factory}!new\+Bow\+Item@{new\+Bow\+Item}}
+\index{new\+Bow\+Item@{new\+Bow\+Item}!items\+::\+Item\+Factory@{items\+::\+Item\+Factory}}
+\subsubsection{\texorpdfstring{new\+Bow\+Item()}{newBowItem()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classitems_1_1_weapon_item}{Weapon\+Item}} items.\+Item\+Factory.\+new\+Bow\+Item (\begin{DoxyParamCaption}\item[{Class}]{friendly,  }\item[{int}]{weapon\+Level }\end{DoxyParamCaption}) throws Number\+Format\+Exception, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_slick_exception}{Slick\+Exception}}\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+\begin{DoxyCode}
+44                                                                                                            
+                 \{
+45         WeaponItem aux = null;
+46         Weapon w;
+47         \textcolor{keywordflow}{switch} (weaponLevel) \{
+48             \textcolor{keywordflow}{case} 1:
+49                     w=\textcolor{keyword}{new} Bow(friendly, ArrowHandler.getArrowHandler(), 1, 5, 3000, 1, 1f, CollisionHandler
+      .getCollisionHandler());
+50                     ((Bow)w).setArrow(\textcolor{keyword}{new} Image(\textcolor{stringliteral}{"res/armas/flecha2.png"}));
+51                 aux = \textcolor{keyword}{new} WeaponItem(w, \textcolor{keyword}{new} Image(\textcolor{stringliteral}{"res\(\backslash\)\(\backslash\)armas\(\backslash\)\(\backslash\)bow1.png"}), \textcolor{stringliteral}{"Arco 1"});
+52                 \textcolor{keywordflow}{break};
+53             \textcolor{keywordflow}{case} 2:
+54                 aux = \textcolor{keyword}{new} WeaponItem(\textcolor{keyword}{new} Bow(friendly, ArrowHandler.getArrowHandler(), 2, 32, 2000, 2, 3f, 
+      CollisionHandler.getCollisionHandler()), \textcolor{keyword}{new} Image(\textcolor{stringliteral}{"res\(\backslash\)\(\backslash\)armas\(\backslash\)\(\backslash\)bow2.png"}), \textcolor{stringliteral}{"Arco 2"});
+55                 \textcolor{keywordflow}{break};
+56             \textcolor{keywordflow}{case} 3:
+57                 aux = \textcolor{keyword}{new} WeaponItem(\textcolor{keyword}{new} Bow(friendly, ArrowHandler.getArrowHandler(), 3, 32, 1500, 3, 3f, 
+      CollisionHandler.getCollisionHandler()), \textcolor{keyword}{new} Image(\textcolor{stringliteral}{"res\(\backslash\)\(\backslash\)armas\(\backslash\)\(\backslash\)bow3.png"}), \textcolor{stringliteral}{"Arco 3"});
+58                 \textcolor{keywordflow}{break};
+59             \textcolor{keywordflow}{case} 4:
+60                  w= \textcolor{keyword}{new} Bow(friendly, ArrowHandler.getArrowHandler(), 4, 32, 2000, 3, 1.5f, 
+      CollisionHandler.getCollisionHandler());
+61                 ((Bow)w).setArrow(\textcolor{keyword}{new} Image(\textcolor{stringliteral}{"res/armas/flechaBossArt.png"}));
+62                 aux = \textcolor{keyword}{new} WeaponItem(w, \textcolor{keyword}{new} Image(\textcolor{stringliteral}{"res\(\backslash\)\(\backslash\)armas\(\backslash\)\(\backslash\)bow3.png"}), \textcolor{stringliteral}{"Arco Boss Arte"});
+63 
+64                 \textcolor{keywordflow}{break};
+65             \textcolor{keywordflow}{case} 5:
+66                 w = \textcolor{keyword}{new} Bow(friendly, ArrowHandler.getArrowHandler(), 5, 32, 2000, 3, 2f, CollisionHandler.
+      getCollisionHandler());
+67                 ((Bow)w).setArrow(\textcolor{keyword}{new} Image(\textcolor{stringliteral}{"res/armas/flechaBossFinal.png"}));
+68                 aux = \textcolor{keyword}{new} WeaponItem(w, \textcolor{keyword}{new} Image(\textcolor{stringliteral}{"res\(\backslash\)\(\backslash\)armas\(\backslash\)\(\backslash\)bow3.png"}), \textcolor{stringliteral}{"Arco Boss Arte"});
+69 
+70                 \textcolor{keywordflow}{break};
+71             \textcolor{keywordflow}{default}:
+72                 \textcolor{keywordflow}{throw} \textcolor{keyword}{new} NumberFormatException(\textcolor{stringliteral}{"Nivel de arma debe ser entre 1 y 5"});
+73 
+74         \}
+75         \textcolor{keywordflow}{return} aux;
+76     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classitems_1_1_item_factory_abb755482bc46d97e59fa015d2a87a630}\label{classitems_1_1_item_factory_abb755482bc46d97e59fa015d2a87a630}} 
+\index{items\+::\+Item\+Factory@{items\+::\+Item\+Factory}!new\+Sword\+Item@{new\+Sword\+Item}}
+\index{new\+Sword\+Item@{new\+Sword\+Item}!items\+::\+Item\+Factory@{items\+::\+Item\+Factory}}
+\subsubsection{\texorpdfstring{new\+Sword\+Item()}{newSwordItem()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classitems_1_1_weapon_item}{Weapon\+Item}} items.\+Item\+Factory.\+new\+Sword\+Item (\begin{DoxyParamCaption}\item[{Class}]{friendly,  }\item[{int}]{weapon\+Level }\end{DoxyParamCaption}) throws Number\+Format\+Exception, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_slick_exception}{Slick\+Exception}}\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+\begin{DoxyCode}
+25                                                                                                            
+                   \{
+26         WeaponItem aux = null;
+27         \textcolor{keywordflow}{switch} (weaponLevel) \{
+28             \textcolor{keywordflow}{case} 1:
+29                 aux = \textcolor{keyword}{new} WeaponItem(\textcolor{keyword}{new} Sword(friendly, 1, 16, 1000, 1, 1), \textcolor{keyword}{new} Image(\textcolor{stringliteral}{"
+      res/armas/espada\_lvl1.png"}), \textcolor{stringliteral}{"Espadita"});
+30                 \textcolor{keywordflow}{break};
+31             \textcolor{keywordflow}{case} 2:
+32                 aux = \textcolor{keyword}{new} WeaponItem(\textcolor{keyword}{new} Sword(friendly, 2, 32, 750, 2, 1), \textcolor{keyword}{new} Image(\textcolor{stringliteral}{"
+      res/armas/espada\_lvl2.png"}), \textcolor{stringliteral}{"Espada Helada"});
+33                 \textcolor{keywordflow}{break};
+34             \textcolor{keywordflow}{case} 3:
+35                 aux = \textcolor{keyword}{new} WeaponItem(\textcolor{keyword}{new} Sword(friendly, 3, 32, 750, 3, 1), \textcolor{keyword}{new} Image(\textcolor{stringliteral}{"
+      res/armas/espada\_lvl3.png"}), \textcolor{stringliteral}{"Espada Infernal"});
+36                 \textcolor{keywordflow}{break};
+37             \textcolor{keywordflow}{default}:
+38                 \textcolor{keywordflow}{throw} \textcolor{keyword}{new} NumberFormatException(\textcolor{stringliteral}{"Nivel de arma debe ser entre 1 y 3"});
+39 
+40         \}
+41         \textcolor{keywordflow}{return} aux;
+42     \}
+\end{DoxyCode}

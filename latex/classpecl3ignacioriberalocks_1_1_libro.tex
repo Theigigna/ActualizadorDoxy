@@ -1,0 +1,371 @@
+\hypertarget{classpecl3ignacioriberalocks_1_1_libro}{}\section{pecl3ignacioriberalocks.\+Libro Class Reference}
+\label{classpecl3ignacioriberalocks_1_1_libro}\index{pecl3ignacioriberalocks.\+Libro@{pecl3ignacioriberalocks.\+Libro}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+synchronized void \mbox{\hyperlink{classpecl3ignacioriberalocks_1_1_libro_a470c195ce7e3ee30af5090ddd7e685db}{mensaje\+Final}} (int id)
+\item 
+synchronized void \mbox{\hyperlink{classpecl3ignacioriberalocks_1_1_libro_aeb849a3a556d56c0b9e2fe166e9ac1a0}{mostrar\+Contenido}} ()
+\item 
+boolean \mbox{\hyperlink{classpecl3ignacioriberalocks_1_1_libro_ad610273d7ceed921e576e0c92ab083c1}{is\+Parar\+Lectores}} ()
+\item 
+boolean \mbox{\hyperlink{classpecl3ignacioriberalocks_1_1_libro_a23d9892b469564646e4e9aa19a88022d}{is\+Parar\+Escritores}} ()
+\item 
+void \mbox{\hyperlink{classpecl3ignacioriberalocks_1_1_libro_a400ffab628cf38370362f1c7fec24c47}{parar\+Reanudar\+Lectores}} ()
+\item 
+void \mbox{\hyperlink{classpecl3ignacioriberalocks_1_1_libro_a8f8b0a5509bb76c609107a64826bfc1f}{parar\+Reanudar\+Escritores}} ()
+\item 
+boolean \mbox{\hyperlink{classpecl3ignacioriberalocks_1_1_libro_ad4034cbd0be40ee9ed94da0bc98c0c66}{leer}} (int identificador)
+\item 
+void \mbox{\hyperlink{classpecl3ignacioriberalocks_1_1_libro_ab122d519b84415808a92fd4582cc47d3}{escribir}} (int identificador)
+\item 
+void \mbox{\hyperlink{classpecl3ignacioriberalocks_1_1_libro_acc729cd669b5113fd1ec2a529fd24257}{sumar\+A\+Contador\+Escritura}} ()
+\item 
+boolean \mbox{\hyperlink{classpecl3ignacioriberalocks_1_1_libro_a17bd8e545ed8011dca2116ff116ff5b8}{hay\+Alguien\+Escribiendo}} ()
+\item 
+\mbox{\hyperlink{classpecl3ignacioriberalocks_1_1_libro_a7ce0e58867b29af5aaf169c04e86f0c4}{Libro}} (int \mbox{\hyperlink{classpecl3ignacioriberalocks_1_1_libro_a7c53211c6562aff8e31edf3e76882bc7}{numero\+Lectores}}, int \mbox{\hyperlink{classpecl3ignacioriberalocks_1_1_libro_a3ce4bcaf93bab9853ac3a450ed709626}{numero\+Escritores}}, javax.\+swing.\+J\+Label \mbox{\hyperlink{classpecl3ignacioriberalocks_1_1_libro_a36ec328acc3a2636adeb3d93b67c5184}{j\+Label\+Aux}}, javax.\+swing.\+J\+Text\+Field \mbox{\hyperlink{classpecl3ignacioriberalocks_1_1_libro_aa7207f75bf58afbf14b600038be4bc5f}{j\+Text\+Field\+Aux}}, javax.\+swing.\+J\+Text\+Area \mbox{\hyperlink{classpecl3ignacioriberalocks_1_1_libro_a16681c45336d0e06fcddcbff96b7bd5d}{j\+Text\+Area\+Aux}})
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpecl3ignacioriberalocks_1_1_monitor}{Monitor}} \mbox{\hyperlink{classpecl3ignacioriberalocks_1_1_libro_a24ec713d35d88ddc71ea9ca21d8b93ac}{escritores}}
+\item 
+\mbox{\hyperlink{classpecl3ignacioriberalocks_1_1_monitor}{Monitor}} \mbox{\hyperlink{classpecl3ignacioriberalocks_1_1_libro_a9a3f7e435b4f83a7479dc1cdd7c79027}{lectores}}
+\item 
+Reentrant\+Read\+Write\+Lock \mbox{\hyperlink{classpecl3ignacioriberalocks_1_1_libro_a38eb9f3cc802c4e55a0f835ced96cae5}{lock}}
+\item 
+Lock \mbox{\hyperlink{classpecl3ignacioriberalocks_1_1_libro_a15ec43cc6993408553bd7637e6640294}{writelock}}
+\item 
+Lock \mbox{\hyperlink{classpecl3ignacioriberalocks_1_1_libro_ad72fa37a55ba59d03115de560a626433}{readlock}}
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+javax.\+swing.\+J\+Text\+Field \mbox{\hyperlink{classpecl3ignacioriberalocks_1_1_libro_aa7207f75bf58afbf14b600038be4bc5f}{j\+Text\+Field\+Aux}}
+\item 
+javax.\+swing.\+J\+Text\+Area \mbox{\hyperlink{classpecl3ignacioriberalocks_1_1_libro_a16681c45336d0e06fcddcbff96b7bd5d}{j\+Text\+Area\+Aux}}
+\item 
+javax.\+swing.\+J\+Label \mbox{\hyperlink{classpecl3ignacioriberalocks_1_1_libro_a36ec328acc3a2636adeb3d93b67c5184}{j\+Label\+Aux}}
+\item 
+String \mbox{\hyperlink{classpecl3ignacioriberalocks_1_1_libro_a5da87c57f21f55953a8b839be533260e}{contenido}}
+\item 
+int \mbox{\hyperlink{classpecl3ignacioriberalocks_1_1_libro_a279dfb87514394851e8eefc5497f38ca}{contador}}
+\item 
+boolean \mbox{\hyperlink{classpecl3ignacioriberalocks_1_1_libro_a9f34d1b5656405e993083bd5f1bb1a27}{turno\+Escribir}}
+\item 
+boolean \mbox{\hyperlink{classpecl3ignacioriberalocks_1_1_libro_a07b101f066333c63dad3cd1ef98c1a5d}{leyendo}} \mbox{[}$\,$\mbox{]}
+\item 
+boolean \mbox{\hyperlink{classpecl3ignacioriberalocks_1_1_libro_a78afb2edbbd4a15475672b3a967c223a}{parar\+Lectores}}
+\item 
+boolean \mbox{\hyperlink{classpecl3ignacioriberalocks_1_1_libro_af0d9e9c98f0aa4cd5a5aa0c0be6a9fc3}{parar\+Escritores}}
+\item 
+int \mbox{\hyperlink{classpecl3ignacioriberalocks_1_1_libro_a5d06fe0f5003ffac5e6e1cc8713debe6}{contador\+Escrituras}}
+\item 
+int \mbox{\hyperlink{classpecl3ignacioriberalocks_1_1_libro_a7c53211c6562aff8e31edf3e76882bc7}{numero\+Lectores}}
+\item 
+int \mbox{\hyperlink{classpecl3ignacioriberalocks_1_1_libro_a3ce4bcaf93bab9853ac3a450ed709626}{numero\+Escritores}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyAuthor}{Author}
+Ignacio 
+\end{DoxyAuthor}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classpecl3ignacioriberalocks_1_1_libro_a7ce0e58867b29af5aaf169c04e86f0c4}\label{classpecl3ignacioriberalocks_1_1_libro_a7ce0e58867b29af5aaf169c04e86f0c4}} 
+\index{pecl3ignacioriberalocks\+::\+Libro@{pecl3ignacioriberalocks\+::\+Libro}!Libro@{Libro}}
+\index{Libro@{Libro}!pecl3ignacioriberalocks\+::\+Libro@{pecl3ignacioriberalocks\+::\+Libro}}
+\subsubsection{\texorpdfstring{Libro()}{Libro()}}
+{\footnotesize\ttfamily pecl3ignacioriberalocks.\+Libro.\+Libro (\begin{DoxyParamCaption}\item[{int}]{numero\+Lectores,  }\item[{int}]{numero\+Escritores,  }\item[{javax.\+swing.\+J\+Label}]{j\+Label\+Aux,  }\item[{javax.\+swing.\+J\+Text\+Field}]{j\+Text\+Field\+Aux,  }\item[{javax.\+swing.\+J\+Text\+Area}]{j\+Text\+Area\+Aux }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+124     \{
+125         \textcolor{keywordtype}{int} i;
+126         this.\mbox{\hyperlink{classpecl3ignacioriberalocks_1_1_libro_a279dfb87514394851e8eefc5497f38ca}{contador}} = 0;
+127         this.\mbox{\hyperlink{classpecl3ignacioriberalocks_1_1_libro_a38eb9f3cc802c4e55a0f835ced96cae5}{lock}} = \textcolor{keyword}{new} ReentrantReadWriteLock();
+128         this.\mbox{\hyperlink{classpecl3ignacioriberalocks_1_1_libro_ad72fa37a55ba59d03115de560a626433}{readlock}} = \mbox{\hyperlink{classpecl3ignacioriberalocks_1_1_libro_a38eb9f3cc802c4e55a0f835ced96cae5}{lock}}.readLock();
+129         this.\mbox{\hyperlink{classpecl3ignacioriberalocks_1_1_libro_a15ec43cc6993408553bd7637e6640294}{writelock}} = \mbox{\hyperlink{classpecl3ignacioriberalocks_1_1_libro_a38eb9f3cc802c4e55a0f835ced96cae5}{lock}}.writeLock();
+130         this.\mbox{\hyperlink{classpecl3ignacioriberalocks_1_1_libro_aa7207f75bf58afbf14b600038be4bc5f}{jTextFieldAux}} = \mbox{\hyperlink{classpecl3ignacioriberalocks_1_1_libro_aa7207f75bf58afbf14b600038be4bc5f}{jTextFieldAux}};
+131         this.\mbox{\hyperlink{classpecl3ignacioriberalocks_1_1_libro_a16681c45336d0e06fcddcbff96b7bd5d}{jTextAreaAux}} = \mbox{\hyperlink{classpecl3ignacioriberalocks_1_1_libro_a16681c45336d0e06fcddcbff96b7bd5d}{jTextAreaAux}};
+132         this.\mbox{\hyperlink{classpecl3ignacioriberalocks_1_1_libro_a36ec328acc3a2636adeb3d93b67c5184}{jLabelAux}} = \mbox{\hyperlink{classpecl3ignacioriberalocks_1_1_libro_a36ec328acc3a2636adeb3d93b67c5184}{jLabelAux}};
+133         this.\mbox{\hyperlink{classpecl3ignacioriberalocks_1_1_libro_a78afb2edbbd4a15475672b3a967c223a}{pararLectores}} = \textcolor{keyword}{false};
+134         this.\mbox{\hyperlink{classpecl3ignacioriberalocks_1_1_libro_af0d9e9c98f0aa4cd5a5aa0c0be6a9fc3}{pararEscritores}} = \textcolor{keyword}{false};
+135         this.\mbox{\hyperlink{classpecl3ignacioriberalocks_1_1_libro_a7c53211c6562aff8e31edf3e76882bc7}{numeroLectores}} = \mbox{\hyperlink{classpecl3ignacioriberalocks_1_1_libro_a7c53211c6562aff8e31edf3e76882bc7}{numeroLectores}};
+136         this.\mbox{\hyperlink{classpecl3ignacioriberalocks_1_1_libro_a3ce4bcaf93bab9853ac3a450ed709626}{numeroEscritores}} = \mbox{\hyperlink{classpecl3ignacioriberalocks_1_1_libro_a3ce4bcaf93bab9853ac3a450ed709626}{numeroEscritores}};
+137         this.\mbox{\hyperlink{classpecl3ignacioriberalocks_1_1_libro_a07b101f066333c63dad3cd1ef98c1a5d}{leyendo}} = \textcolor{keyword}{new} \textcolor{keywordtype}{boolean}[\mbox{\hyperlink{classpecl3ignacioriberalocks_1_1_libro_a7c53211c6562aff8e31edf3e76882bc7}{numeroLectores}}];
+138         this.\mbox{\hyperlink{classpecl3ignacioriberalocks_1_1_libro_a9f34d1b5656405e993083bd5f1bb1a27}{turnoEscribir}} = \textcolor{keyword}{false};
+139         this.\mbox{\hyperlink{classpecl3ignacioriberalocks_1_1_libro_a9a3f7e435b4f83a7479dc1cdd7c79027}{lectores}} = \textcolor{keyword}{new} Monitor();
+140         this.\mbox{\hyperlink{classpecl3ignacioriberalocks_1_1_libro_a24ec713d35d88ddc71ea9ca21d8b93ac}{escritores}} = \textcolor{keyword}{new} Monitor();
+141         \textcolor{keywordflow}{for}(i=0;i<\mbox{\hyperlink{classpecl3ignacioriberalocks_1_1_libro_a7c53211c6562aff8e31edf3e76882bc7}{numeroLectores}};i++)
+142         \{
+143             this.\mbox{\hyperlink{classpecl3ignacioriberalocks_1_1_libro_a07b101f066333c63dad3cd1ef98c1a5d}{leyendo}}[i]=\textcolor{keyword}{false};
+144         \}
+145         this.\mbox{\hyperlink{classpecl3ignacioriberalocks_1_1_libro_a5d06fe0f5003ffac5e6e1cc8713debe6}{contadorEscrituras}} = 0;
+146         this.\mbox{\hyperlink{classpecl3ignacioriberalocks_1_1_libro_a5da87c57f21f55953a8b839be533260e}{contenido}} = \textcolor{stringliteral}{""};
+147     \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classpecl3ignacioriberalocks_1_1_libro_ab122d519b84415808a92fd4582cc47d3}\label{classpecl3ignacioriberalocks_1_1_libro_ab122d519b84415808a92fd4582cc47d3}} 
+\index{pecl3ignacioriberalocks\+::\+Libro@{pecl3ignacioriberalocks\+::\+Libro}!escribir@{escribir}}
+\index{escribir@{escribir}!pecl3ignacioriberalocks\+::\+Libro@{pecl3ignacioriberalocks\+::\+Libro}}
+\subsubsection{\texorpdfstring{escribir()}{escribir()}}
+{\footnotesize\ttfamily void pecl3ignacioriberalocks.\+Libro.\+escribir (\begin{DoxyParamCaption}\item[{int}]{identificador }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+98     \{
+99         \textcolor{keywordflow}{try} \{
+100             \mbox{\hyperlink{classpecl3ignacioriberalocks_1_1_libro_a24ec713d35d88ddc71ea9ca21d8b93ac}{escritores}}.\mbox{\hyperlink{classpecl3ignacioriberalocks_1_1_monitor_a499e23011f3562a32a0587d74d6a0154}{comprobar}}();
+101             \mbox{\hyperlink{classpecl3ignacioriberalocks_1_1_libro_a15ec43cc6993408553bd7637e6640294}{writelock}}.lock();
+102             \mbox{\hyperlink{classpecl3ignacioriberalocks_1_1_libro_a5da87c57f21f55953a8b839be533260e}{contenido}} = \mbox{\hyperlink{classpecl3ignacioriberalocks_1_1_libro_a5da87c57f21f55953a8b839be533260e}{contenido}} + identificador;
+103             \mbox{\hyperlink{classpecl3ignacioriberalocks_1_1_libro_aeb849a3a556d56c0b9e2fe166e9ac1a0}{mostrarContenido}}();
+104             \mbox{\hyperlink{classpecl3ignacioriberalocks_1_1_libro_acc729cd669b5113fd1ec2a529fd24257}{sumarAContadorEscritura}}();
+105         \} \textcolor{keywordflow}{catch} (Exception e) \{\}
+106         \textcolor{keywordflow}{finally}\{
+107             \mbox{\hyperlink{classpecl3ignacioriberalocks_1_1_libro_a15ec43cc6993408553bd7637e6640294}{writelock}}.unlock();
+108         \}
+109     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classpecl3ignacioriberalocks_1_1_libro_a17bd8e545ed8011dca2116ff116ff5b8}\label{classpecl3ignacioriberalocks_1_1_libro_a17bd8e545ed8011dca2116ff116ff5b8}} 
+\index{pecl3ignacioriberalocks\+::\+Libro@{pecl3ignacioriberalocks\+::\+Libro}!hay\+Alguien\+Escribiendo@{hay\+Alguien\+Escribiendo}}
+\index{hay\+Alguien\+Escribiendo@{hay\+Alguien\+Escribiendo}!pecl3ignacioriberalocks\+::\+Libro@{pecl3ignacioriberalocks\+::\+Libro}}
+\subsubsection{\texorpdfstring{hay\+Alguien\+Escribiendo()}{hayAlguienEscribiendo()}}
+{\footnotesize\ttfamily boolean pecl3ignacioriberalocks.\+Libro.\+hay\+Alguien\+Escribiendo (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+117     \{
+118         \textcolor{keywordflow}{return} \mbox{\hyperlink{classpecl3ignacioriberalocks_1_1_libro_a9f34d1b5656405e993083bd5f1bb1a27}{turnoEscribir}};
+119     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classpecl3ignacioriberalocks_1_1_libro_a23d9892b469564646e4e9aa19a88022d}\label{classpecl3ignacioriberalocks_1_1_libro_a23d9892b469564646e4e9aa19a88022d}} 
+\index{pecl3ignacioriberalocks\+::\+Libro@{pecl3ignacioriberalocks\+::\+Libro}!is\+Parar\+Escritores@{is\+Parar\+Escritores}}
+\index{is\+Parar\+Escritores@{is\+Parar\+Escritores}!pecl3ignacioriberalocks\+::\+Libro@{pecl3ignacioriberalocks\+::\+Libro}}
+\subsubsection{\texorpdfstring{is\+Parar\+Escritores()}{isPararEscritores()}}
+{\footnotesize\ttfamily boolean pecl3ignacioriberalocks.\+Libro.\+is\+Parar\+Escritores (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+54                                        \{
+55         \textcolor{keywordflow}{return} \mbox{\hyperlink{classpecl3ignacioriberalocks_1_1_libro_af0d9e9c98f0aa4cd5a5aa0c0be6a9fc3}{pararEscritores}};
+56     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classpecl3ignacioriberalocks_1_1_libro_ad610273d7ceed921e576e0c92ab083c1}\label{classpecl3ignacioriberalocks_1_1_libro_ad610273d7ceed921e576e0c92ab083c1}} 
+\index{pecl3ignacioriberalocks\+::\+Libro@{pecl3ignacioriberalocks\+::\+Libro}!is\+Parar\+Lectores@{is\+Parar\+Lectores}}
+\index{is\+Parar\+Lectores@{is\+Parar\+Lectores}!pecl3ignacioriberalocks\+::\+Libro@{pecl3ignacioriberalocks\+::\+Libro}}
+\subsubsection{\texorpdfstring{is\+Parar\+Lectores()}{isPararLectores()}}
+{\footnotesize\ttfamily boolean pecl3ignacioriberalocks.\+Libro.\+is\+Parar\+Lectores (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+50                                      \{
+51         \textcolor{keywordflow}{return} \mbox{\hyperlink{classpecl3ignacioriberalocks_1_1_libro_a78afb2edbbd4a15475672b3a967c223a}{pararLectores}};
+52     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classpecl3ignacioriberalocks_1_1_libro_ad4034cbd0be40ee9ed94da0bc98c0c66}\label{classpecl3ignacioriberalocks_1_1_libro_ad4034cbd0be40ee9ed94da0bc98c0c66}} 
+\index{pecl3ignacioriberalocks\+::\+Libro@{pecl3ignacioriberalocks\+::\+Libro}!leer@{leer}}
+\index{leer@{leer}!pecl3ignacioriberalocks\+::\+Libro@{pecl3ignacioriberalocks\+::\+Libro}}
+\subsubsection{\texorpdfstring{leer()}{leer()}}
+{\footnotesize\ttfamily boolean pecl3ignacioriberalocks.\+Libro.\+leer (\begin{DoxyParamCaption}\item[{int}]{identificador }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+69      \{
+70         
+71         \textcolor{keywordflow}{try} \{
+72             \mbox{\hyperlink{classpecl3ignacioriberalocks_1_1_libro_a9a3f7e435b4f83a7479dc1cdd7c79027}{lectores}}.\mbox{\hyperlink{classpecl3ignacioriberalocks_1_1_monitor_a499e23011f3562a32a0587d74d6a0154}{comprobar}}();
+73             \mbox{\hyperlink{classpecl3ignacioriberalocks_1_1_libro_ad72fa37a55ba59d03115de560a626433}{readlock}}.lock();
+74             \mbox{\hyperlink{classpecl3ignacioriberalocks_1_1_libro_a279dfb87514394851e8eefc5497f38ca}{contador}}++;
+75             sleep((\textcolor{keywordtype}{int})(500+(1000*Math.random())));\textcolor{comment}{//leer}
+76         \} \textcolor{keywordflow}{catch} (InterruptedException ex) \{
+77             Logger.getLogger(\mbox{\hyperlink{classpecl3ignacioriberalocks_1_1_libro_a7ce0e58867b29af5aaf169c04e86f0c4}{Libro}}.class.getName()).log(Level.SEVERE, null, ex);
+78         \} \textcolor{keywordflow}{finally} \{
+79             \mbox{\hyperlink{classpecl3ignacioriberalocks_1_1_libro_ad72fa37a55ba59d03115de560a626433}{readlock}}.unlock();
+80             \mbox{\hyperlink{classpecl3ignacioriberalocks_1_1_libro_a279dfb87514394851e8eefc5497f38ca}{contador}}--;
+81             \textcolor{keywordflow}{if}(\mbox{\hyperlink{classpecl3ignacioriberalocks_1_1_libro_a279dfb87514394851e8eefc5497f38ca}{contador}}==0)
+82             \{
+83                 \mbox{\hyperlink{classpecl3ignacioriberalocks_1_1_libro_a36ec328acc3a2636adeb3d93b67c5184}{jLabelAux}}.setText(\textcolor{stringliteral}{"Leyendo: false"});
+84             \}\textcolor{keywordflow}{else}\{
+85                 \mbox{\hyperlink{classpecl3ignacioriberalocks_1_1_libro_a36ec328acc3a2636adeb3d93b67c5184}{jLabelAux}}.setText(\textcolor{stringliteral}{"Leyendo: true"});
+86             \}
+87             \textcolor{keywordflow}{if}(\mbox{\hyperlink{classpecl3ignacioriberalocks_1_1_libro_a5da87c57f21f55953a8b839be533260e}{contenido}}.length()==50)
+88             \{
+89                 \mbox{\hyperlink{classpecl3ignacioriberalocks_1_1_libro_a470c195ce7e3ee30af5090ddd7e685db}{mensajeFinal}}(identificador);
+90                 \textcolor{keywordflow}{return} \textcolor{keyword}{true};
+91             \}\textcolor{keywordflow}{else}\{
+92                 \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+93             \}
+94         \}
+95      \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classpecl3ignacioriberalocks_1_1_libro_a470c195ce7e3ee30af5090ddd7e685db}\label{classpecl3ignacioriberalocks_1_1_libro_a470c195ce7e3ee30af5090ddd7e685db}} 
+\index{pecl3ignacioriberalocks\+::\+Libro@{pecl3ignacioriberalocks\+::\+Libro}!mensaje\+Final@{mensaje\+Final}}
+\index{mensaje\+Final@{mensaje\+Final}!pecl3ignacioriberalocks\+::\+Libro@{pecl3ignacioriberalocks\+::\+Libro}}
+\subsubsection{\texorpdfstring{mensaje\+Final()}{mensajeFinal()}}
+{\footnotesize\ttfamily synchronized void pecl3ignacioriberalocks.\+Libro.\+mensaje\+Final (\begin{DoxyParamCaption}\item[{int}]{id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+40     \{
+41         \mbox{\hyperlink{classpecl3ignacioriberalocks_1_1_libro_a16681c45336d0e06fcddcbff96b7bd5d}{jTextAreaAux}}.setText(\mbox{\hyperlink{classpecl3ignacioriberalocks_1_1_libro_a16681c45336d0e06fcddcbff96b7bd5d}{jTextAreaAux}}.getText()+\textcolor{stringliteral}{"\(\backslash\)nLeído por "} + \textcolor{keywordtype}{id} +\textcolor{stringliteral}{": "} + 
+      \mbox{\hyperlink{classpecl3ignacioriberalocks_1_1_libro_a5da87c57f21f55953a8b839be533260e}{contenido}});
+42     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classpecl3ignacioriberalocks_1_1_libro_aeb849a3a556d56c0b9e2fe166e9ac1a0}\label{classpecl3ignacioriberalocks_1_1_libro_aeb849a3a556d56c0b9e2fe166e9ac1a0}} 
+\index{pecl3ignacioriberalocks\+::\+Libro@{pecl3ignacioriberalocks\+::\+Libro}!mostrar\+Contenido@{mostrar\+Contenido}}
+\index{mostrar\+Contenido@{mostrar\+Contenido}!pecl3ignacioriberalocks\+::\+Libro@{pecl3ignacioriberalocks\+::\+Libro}}
+\subsubsection{\texorpdfstring{mostrar\+Contenido()}{mostrarContenido()}}
+{\footnotesize\ttfamily synchronized void pecl3ignacioriberalocks.\+Libro.\+mostrar\+Contenido (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+45     \{
+46         \mbox{\hyperlink{classpecl3ignacioriberalocks_1_1_libro_aa7207f75bf58afbf14b600038be4bc5f}{jTextFieldAux}}.setText(\mbox{\hyperlink{classpecl3ignacioriberalocks_1_1_libro_a5da87c57f21f55953a8b839be533260e}{contenido}});
+47     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classpecl3ignacioriberalocks_1_1_libro_a8f8b0a5509bb76c609107a64826bfc1f}\label{classpecl3ignacioriberalocks_1_1_libro_a8f8b0a5509bb76c609107a64826bfc1f}} 
+\index{pecl3ignacioriberalocks\+::\+Libro@{pecl3ignacioriberalocks\+::\+Libro}!parar\+Reanudar\+Escritores@{parar\+Reanudar\+Escritores}}
+\index{parar\+Reanudar\+Escritores@{parar\+Reanudar\+Escritores}!pecl3ignacioriberalocks\+::\+Libro@{pecl3ignacioriberalocks\+::\+Libro}}
+\subsubsection{\texorpdfstring{parar\+Reanudar\+Escritores()}{pararReanudarEscritores()}}
+{\footnotesize\ttfamily void pecl3ignacioriberalocks.\+Libro.\+parar\+Reanudar\+Escritores (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+64     \{
+65         \mbox{\hyperlink{classpecl3ignacioriberalocks_1_1_libro_af0d9e9c98f0aa4cd5a5aa0c0be6a9fc3}{pararEscritores}} = !\mbox{\hyperlink{classpecl3ignacioriberalocks_1_1_libro_af0d9e9c98f0aa4cd5a5aa0c0be6a9fc3}{pararEscritores}};
+66     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classpecl3ignacioriberalocks_1_1_libro_a400ffab628cf38370362f1c7fec24c47}\label{classpecl3ignacioriberalocks_1_1_libro_a400ffab628cf38370362f1c7fec24c47}} 
+\index{pecl3ignacioriberalocks\+::\+Libro@{pecl3ignacioriberalocks\+::\+Libro}!parar\+Reanudar\+Lectores@{parar\+Reanudar\+Lectores}}
+\index{parar\+Reanudar\+Lectores@{parar\+Reanudar\+Lectores}!pecl3ignacioriberalocks\+::\+Libro@{pecl3ignacioriberalocks\+::\+Libro}}
+\subsubsection{\texorpdfstring{parar\+Reanudar\+Lectores()}{pararReanudarLectores()}}
+{\footnotesize\ttfamily void pecl3ignacioriberalocks.\+Libro.\+parar\+Reanudar\+Lectores (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+59     \{
+60         \mbox{\hyperlink{classpecl3ignacioriberalocks_1_1_libro_a78afb2edbbd4a15475672b3a967c223a}{pararLectores}} = !\mbox{\hyperlink{classpecl3ignacioriberalocks_1_1_libro_a78afb2edbbd4a15475672b3a967c223a}{pararLectores}};
+61     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classpecl3ignacioriberalocks_1_1_libro_acc729cd669b5113fd1ec2a529fd24257}\label{classpecl3ignacioriberalocks_1_1_libro_acc729cd669b5113fd1ec2a529fd24257}} 
+\index{pecl3ignacioriberalocks\+::\+Libro@{pecl3ignacioriberalocks\+::\+Libro}!sumar\+A\+Contador\+Escritura@{sumar\+A\+Contador\+Escritura}}
+\index{sumar\+A\+Contador\+Escritura@{sumar\+A\+Contador\+Escritura}!pecl3ignacioriberalocks\+::\+Libro@{pecl3ignacioriberalocks\+::\+Libro}}
+\subsubsection{\texorpdfstring{sumar\+A\+Contador\+Escritura()}{sumarAContadorEscritura()}}
+{\footnotesize\ttfamily void pecl3ignacioriberalocks.\+Libro.\+sumar\+A\+Contador\+Escritura (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+112     \{
+113         \mbox{\hyperlink{classpecl3ignacioriberalocks_1_1_libro_a5d06fe0f5003ffac5e6e1cc8713debe6}{contadorEscrituras}}++;
+114     \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classpecl3ignacioriberalocks_1_1_libro_a279dfb87514394851e8eefc5497f38ca}\label{classpecl3ignacioriberalocks_1_1_libro_a279dfb87514394851e8eefc5497f38ca}} 
+\index{pecl3ignacioriberalocks\+::\+Libro@{pecl3ignacioriberalocks\+::\+Libro}!contador@{contador}}
+\index{contador@{contador}!pecl3ignacioriberalocks\+::\+Libro@{pecl3ignacioriberalocks\+::\+Libro}}
+\subsubsection{\texorpdfstring{contador}{contador}}
+{\footnotesize\ttfamily int pecl3ignacioriberalocks.\+Libro.\+contador\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classpecl3ignacioriberalocks_1_1_libro_a5d06fe0f5003ffac5e6e1cc8713debe6}\label{classpecl3ignacioriberalocks_1_1_libro_a5d06fe0f5003ffac5e6e1cc8713debe6}} 
+\index{pecl3ignacioriberalocks\+::\+Libro@{pecl3ignacioriberalocks\+::\+Libro}!contador\+Escrituras@{contador\+Escrituras}}
+\index{contador\+Escrituras@{contador\+Escrituras}!pecl3ignacioriberalocks\+::\+Libro@{pecl3ignacioriberalocks\+::\+Libro}}
+\subsubsection{\texorpdfstring{contador\+Escrituras}{contadorEscrituras}}
+{\footnotesize\ttfamily int pecl3ignacioriberalocks.\+Libro.\+contador\+Escrituras\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classpecl3ignacioriberalocks_1_1_libro_a5da87c57f21f55953a8b839be533260e}\label{classpecl3ignacioriberalocks_1_1_libro_a5da87c57f21f55953a8b839be533260e}} 
+\index{pecl3ignacioriberalocks\+::\+Libro@{pecl3ignacioriberalocks\+::\+Libro}!contenido@{contenido}}
+\index{contenido@{contenido}!pecl3ignacioriberalocks\+::\+Libro@{pecl3ignacioriberalocks\+::\+Libro}}
+\subsubsection{\texorpdfstring{contenido}{contenido}}
+{\footnotesize\ttfamily String pecl3ignacioriberalocks.\+Libro.\+contenido\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classpecl3ignacioriberalocks_1_1_libro_a24ec713d35d88ddc71ea9ca21d8b93ac}\label{classpecl3ignacioriberalocks_1_1_libro_a24ec713d35d88ddc71ea9ca21d8b93ac}} 
+\index{pecl3ignacioriberalocks\+::\+Libro@{pecl3ignacioriberalocks\+::\+Libro}!escritores@{escritores}}
+\index{escritores@{escritores}!pecl3ignacioriberalocks\+::\+Libro@{pecl3ignacioriberalocks\+::\+Libro}}
+\subsubsection{\texorpdfstring{escritores}{escritores}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classpecl3ignacioriberalocks_1_1_monitor}{Monitor}} pecl3ignacioriberalocks.\+Libro.\+escritores}
+
+\mbox{\Hypertarget{classpecl3ignacioriberalocks_1_1_libro_a36ec328acc3a2636adeb3d93b67c5184}\label{classpecl3ignacioriberalocks_1_1_libro_a36ec328acc3a2636adeb3d93b67c5184}} 
+\index{pecl3ignacioriberalocks\+::\+Libro@{pecl3ignacioriberalocks\+::\+Libro}!j\+Label\+Aux@{j\+Label\+Aux}}
+\index{j\+Label\+Aux@{j\+Label\+Aux}!pecl3ignacioriberalocks\+::\+Libro@{pecl3ignacioriberalocks\+::\+Libro}}
+\subsubsection{\texorpdfstring{j\+Label\+Aux}{jLabelAux}}
+{\footnotesize\ttfamily javax.\+swing.\+J\+Label pecl3ignacioriberalocks.\+Libro.\+j\+Label\+Aux\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classpecl3ignacioriberalocks_1_1_libro_a16681c45336d0e06fcddcbff96b7bd5d}\label{classpecl3ignacioriberalocks_1_1_libro_a16681c45336d0e06fcddcbff96b7bd5d}} 
+\index{pecl3ignacioriberalocks\+::\+Libro@{pecl3ignacioriberalocks\+::\+Libro}!j\+Text\+Area\+Aux@{j\+Text\+Area\+Aux}}
+\index{j\+Text\+Area\+Aux@{j\+Text\+Area\+Aux}!pecl3ignacioriberalocks\+::\+Libro@{pecl3ignacioriberalocks\+::\+Libro}}
+\subsubsection{\texorpdfstring{j\+Text\+Area\+Aux}{jTextAreaAux}}
+{\footnotesize\ttfamily javax.\+swing.\+J\+Text\+Area pecl3ignacioriberalocks.\+Libro.\+j\+Text\+Area\+Aux\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classpecl3ignacioriberalocks_1_1_libro_aa7207f75bf58afbf14b600038be4bc5f}\label{classpecl3ignacioriberalocks_1_1_libro_aa7207f75bf58afbf14b600038be4bc5f}} 
+\index{pecl3ignacioriberalocks\+::\+Libro@{pecl3ignacioriberalocks\+::\+Libro}!j\+Text\+Field\+Aux@{j\+Text\+Field\+Aux}}
+\index{j\+Text\+Field\+Aux@{j\+Text\+Field\+Aux}!pecl3ignacioriberalocks\+::\+Libro@{pecl3ignacioriberalocks\+::\+Libro}}
+\subsubsection{\texorpdfstring{j\+Text\+Field\+Aux}{jTextFieldAux}}
+{\footnotesize\ttfamily javax.\+swing.\+J\+Text\+Field pecl3ignacioriberalocks.\+Libro.\+j\+Text\+Field\+Aux\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classpecl3ignacioriberalocks_1_1_libro_a9a3f7e435b4f83a7479dc1cdd7c79027}\label{classpecl3ignacioriberalocks_1_1_libro_a9a3f7e435b4f83a7479dc1cdd7c79027}} 
+\index{pecl3ignacioriberalocks\+::\+Libro@{pecl3ignacioriberalocks\+::\+Libro}!lectores@{lectores}}
+\index{lectores@{lectores}!pecl3ignacioriberalocks\+::\+Libro@{pecl3ignacioriberalocks\+::\+Libro}}
+\subsubsection{\texorpdfstring{lectores}{lectores}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classpecl3ignacioriberalocks_1_1_monitor}{Monitor}} pecl3ignacioriberalocks.\+Libro.\+lectores}
+
+\mbox{\Hypertarget{classpecl3ignacioriberalocks_1_1_libro_a07b101f066333c63dad3cd1ef98c1a5d}\label{classpecl3ignacioriberalocks_1_1_libro_a07b101f066333c63dad3cd1ef98c1a5d}} 
+\index{pecl3ignacioriberalocks\+::\+Libro@{pecl3ignacioriberalocks\+::\+Libro}!leyendo@{leyendo}}
+\index{leyendo@{leyendo}!pecl3ignacioriberalocks\+::\+Libro@{pecl3ignacioriberalocks\+::\+Libro}}
+\subsubsection{\texorpdfstring{leyendo}{leyendo}}
+{\footnotesize\ttfamily boolean pecl3ignacioriberalocks.\+Libro.\+leyendo\mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classpecl3ignacioriberalocks_1_1_libro_a38eb9f3cc802c4e55a0f835ced96cae5}\label{classpecl3ignacioriberalocks_1_1_libro_a38eb9f3cc802c4e55a0f835ced96cae5}} 
+\index{pecl3ignacioriberalocks\+::\+Libro@{pecl3ignacioriberalocks\+::\+Libro}!lock@{lock}}
+\index{lock@{lock}!pecl3ignacioriberalocks\+::\+Libro@{pecl3ignacioriberalocks\+::\+Libro}}
+\subsubsection{\texorpdfstring{lock}{lock}}
+{\footnotesize\ttfamily Reentrant\+Read\+Write\+Lock pecl3ignacioriberalocks.\+Libro.\+lock}
+
+\mbox{\Hypertarget{classpecl3ignacioriberalocks_1_1_libro_a3ce4bcaf93bab9853ac3a450ed709626}\label{classpecl3ignacioriberalocks_1_1_libro_a3ce4bcaf93bab9853ac3a450ed709626}} 
+\index{pecl3ignacioriberalocks\+::\+Libro@{pecl3ignacioriberalocks\+::\+Libro}!numero\+Escritores@{numero\+Escritores}}
+\index{numero\+Escritores@{numero\+Escritores}!pecl3ignacioriberalocks\+::\+Libro@{pecl3ignacioriberalocks\+::\+Libro}}
+\subsubsection{\texorpdfstring{numero\+Escritores}{numeroEscritores}}
+{\footnotesize\ttfamily int pecl3ignacioriberalocks.\+Libro.\+numero\+Escritores\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classpecl3ignacioriberalocks_1_1_libro_a7c53211c6562aff8e31edf3e76882bc7}\label{classpecl3ignacioriberalocks_1_1_libro_a7c53211c6562aff8e31edf3e76882bc7}} 
+\index{pecl3ignacioriberalocks\+::\+Libro@{pecl3ignacioriberalocks\+::\+Libro}!numero\+Lectores@{numero\+Lectores}}
+\index{numero\+Lectores@{numero\+Lectores}!pecl3ignacioriberalocks\+::\+Libro@{pecl3ignacioriberalocks\+::\+Libro}}
+\subsubsection{\texorpdfstring{numero\+Lectores}{numeroLectores}}
+{\footnotesize\ttfamily int pecl3ignacioriberalocks.\+Libro.\+numero\+Lectores\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classpecl3ignacioriberalocks_1_1_libro_af0d9e9c98f0aa4cd5a5aa0c0be6a9fc3}\label{classpecl3ignacioriberalocks_1_1_libro_af0d9e9c98f0aa4cd5a5aa0c0be6a9fc3}} 
+\index{pecl3ignacioriberalocks\+::\+Libro@{pecl3ignacioriberalocks\+::\+Libro}!parar\+Escritores@{parar\+Escritores}}
+\index{parar\+Escritores@{parar\+Escritores}!pecl3ignacioriberalocks\+::\+Libro@{pecl3ignacioriberalocks\+::\+Libro}}
+\subsubsection{\texorpdfstring{parar\+Escritores}{pararEscritores}}
+{\footnotesize\ttfamily boolean pecl3ignacioriberalocks.\+Libro.\+parar\+Escritores\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classpecl3ignacioriberalocks_1_1_libro_a78afb2edbbd4a15475672b3a967c223a}\label{classpecl3ignacioriberalocks_1_1_libro_a78afb2edbbd4a15475672b3a967c223a}} 
+\index{pecl3ignacioriberalocks\+::\+Libro@{pecl3ignacioriberalocks\+::\+Libro}!parar\+Lectores@{parar\+Lectores}}
+\index{parar\+Lectores@{parar\+Lectores}!pecl3ignacioriberalocks\+::\+Libro@{pecl3ignacioriberalocks\+::\+Libro}}
+\subsubsection{\texorpdfstring{parar\+Lectores}{pararLectores}}
+{\footnotesize\ttfamily boolean pecl3ignacioriberalocks.\+Libro.\+parar\+Lectores\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classpecl3ignacioriberalocks_1_1_libro_ad72fa37a55ba59d03115de560a626433}\label{classpecl3ignacioriberalocks_1_1_libro_ad72fa37a55ba59d03115de560a626433}} 
+\index{pecl3ignacioriberalocks\+::\+Libro@{pecl3ignacioriberalocks\+::\+Libro}!readlock@{readlock}}
+\index{readlock@{readlock}!pecl3ignacioriberalocks\+::\+Libro@{pecl3ignacioriberalocks\+::\+Libro}}
+\subsubsection{\texorpdfstring{readlock}{readlock}}
+{\footnotesize\ttfamily Lock pecl3ignacioriberalocks.\+Libro.\+readlock}
+
+\mbox{\Hypertarget{classpecl3ignacioriberalocks_1_1_libro_a9f34d1b5656405e993083bd5f1bb1a27}\label{classpecl3ignacioriberalocks_1_1_libro_a9f34d1b5656405e993083bd5f1bb1a27}} 
+\index{pecl3ignacioriberalocks\+::\+Libro@{pecl3ignacioriberalocks\+::\+Libro}!turno\+Escribir@{turno\+Escribir}}
+\index{turno\+Escribir@{turno\+Escribir}!pecl3ignacioriberalocks\+::\+Libro@{pecl3ignacioriberalocks\+::\+Libro}}
+\subsubsection{\texorpdfstring{turno\+Escribir}{turnoEscribir}}
+{\footnotesize\ttfamily boolean pecl3ignacioriberalocks.\+Libro.\+turno\+Escribir\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classpecl3ignacioriberalocks_1_1_libro_a15ec43cc6993408553bd7637e6640294}\label{classpecl3ignacioriberalocks_1_1_libro_a15ec43cc6993408553bd7637e6640294}} 
+\index{pecl3ignacioriberalocks\+::\+Libro@{pecl3ignacioriberalocks\+::\+Libro}!writelock@{writelock}}
+\index{writelock@{writelock}!pecl3ignacioriberalocks\+::\+Libro@{pecl3ignacioriberalocks\+::\+Libro}}
+\subsubsection{\texorpdfstring{writelock}{writelock}}
+{\footnotesize\ttfamily Lock pecl3ignacioriberalocks.\+Libro.\+writelock}
+

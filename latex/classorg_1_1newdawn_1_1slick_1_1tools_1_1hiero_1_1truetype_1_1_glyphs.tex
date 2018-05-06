@@ -1,0 +1,132 @@
+\hypertarget{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1truetype_1_1_glyphs}{}\section{org.\+newdawn.\+slick.\+tools.\+hiero.\+truetype.\+Glyphs Class Reference}
+\label{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1truetype_1_1_glyphs}\index{org.\+newdawn.\+slick.\+tools.\+hiero.\+truetype.\+Glyphs@{org.\+newdawn.\+slick.\+tools.\+hiero.\+truetype.\+Glyphs}}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static final String \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1truetype_1_1_glyphs_a717eae640170c2ff964fc1414970b51f}{char\+To\+Glyph\+Name}} (char ch)
+\item 
+static final String \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1truetype_1_1_glyphs_a7e4b4c2e0649fbf355ea6f7addf96dba}{glyph\+To\+String}} (String name)
+\item 
+static String \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1truetype_1_1_glyphs_a50508eacea49c4be9778f84d28b186d4}{string\+To\+Glyph}} (String name)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static final String \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1truetype_1_1_glyphs_a78f23e9ba748be08a452e8b3a996ceaf}{N\+O\+T\+D\+EF}} = \char`\"{}.notdef\char`\"{}
+\item 
+static final String \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1truetype_1_1_glyphs_a48591ce38f9221d8064b6bc7e68124d8}{M\+A\+C\+\_\+\+G\+L\+Y\+P\+H\+\_\+\+N\+A\+M\+ES}} \mbox{[}$\,$\mbox{]}
+\item 
+static final String \mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1truetype_1_1_glyphs_aea94fa3b44fa9c00c53ec9706033c063}{T\+E\+X8\+R\+\_\+\+G\+L\+Y\+P\+H\+\_\+\+N\+A\+M\+ES}}
+\item 
+static final char \mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1truetype_1_1_glyphs_a5d401716dd5de36cd43758e92c13f4b4}{W\+I\+N\+A\+N\+S\+I\+\_\+\+E\+N\+C\+O\+D\+I\+NG}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This class provides a number of constants for glyph management. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1truetype_1_1_glyphs_a717eae640170c2ff964fc1414970b51f}\label{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1truetype_1_1_glyphs_a717eae640170c2ff964fc1414970b51f}} 
+\index{org\+::newdawn\+::slick\+::tools\+::hiero\+::truetype\+::\+Glyphs@{org\+::newdawn\+::slick\+::tools\+::hiero\+::truetype\+::\+Glyphs}!char\+To\+Glyph\+Name@{char\+To\+Glyph\+Name}}
+\index{char\+To\+Glyph\+Name@{char\+To\+Glyph\+Name}!org\+::newdawn\+::slick\+::tools\+::hiero\+::truetype\+::\+Glyphs@{org\+::newdawn\+::slick\+::tools\+::hiero\+::truetype\+::\+Glyphs}}
+\subsubsection{\texorpdfstring{char\+To\+Glyph\+Name()}{charToGlyphName()}}
+{\footnotesize\ttfamily static final String org.\+newdawn.\+slick.\+tools.\+hiero.\+truetype.\+Glyphs.\+char\+To\+Glyph\+Name (\begin{DoxyParamCaption}\item[{char}]{ch }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Return the glyphname from a character, eg, char\+To\+Glyph\+Name(\textquotesingle{}\textbackslash{}\textquotesingle{}) returns \char`\"{}backslash\char`\"{}
+
+
+\begin{DoxyParams}{Parameters}
+{\em ch} & glyph to evaluate \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the name of the glyph 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+1275                                                         \{
+1276         \textcolor{keywordflow}{return} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1truetype_1_1_glyphs_a50508eacea49c4be9778f84d28b186d4}{stringToGlyph}}(\textcolor{keyword}{new} Character(ch).toString());
+1277     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1truetype_1_1_glyphs_a7e4b4c2e0649fbf355ea6f7addf96dba}\label{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1truetype_1_1_glyphs_a7e4b4c2e0649fbf355ea6f7addf96dba}} 
+\index{org\+::newdawn\+::slick\+::tools\+::hiero\+::truetype\+::\+Glyphs@{org\+::newdawn\+::slick\+::tools\+::hiero\+::truetype\+::\+Glyphs}!glyph\+To\+String@{glyph\+To\+String}}
+\index{glyph\+To\+String@{glyph\+To\+String}!org\+::newdawn\+::slick\+::tools\+::hiero\+::truetype\+::\+Glyphs@{org\+::newdawn\+::slick\+::tools\+::hiero\+::truetype\+::\+Glyphs}}
+\subsubsection{\texorpdfstring{glyph\+To\+String()}{glyphToString()}}
+{\footnotesize\ttfamily static final String org.\+newdawn.\+slick.\+tools.\+hiero.\+truetype.\+Glyphs.\+glyph\+To\+String (\begin{DoxyParamCaption}\item[{String}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Return the glyphname from a string, eg, glyph\+To\+String(\char`\"{}\textbackslash{}\textbackslash{}\char`\"{}) returns \char`\"{}backslash\char`\"{}
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & glyph to evaluate \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the name of the glyph T\+O\+DO\+: javadocs for glyph\+To\+String and string\+To\+Glyph are confused T\+O\+DO\+: Improve method names 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+1288                                                           \{
+1289         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < UNICODE\_GLYPHS.length; i += 2) \{
+1290             \textcolor{keywordflow}{if} (UNICODE\_GLYPHS[i + 1].equals(name)) \{
+1291                 \textcolor{keywordflow}{return} UNICODE\_GLYPHS[i];
+1292             \}
+1293         \}
+1294         \textcolor{keywordflow}{return} \textcolor{stringliteral}{""};
+1295     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1truetype_1_1_glyphs_a50508eacea49c4be9778f84d28b186d4}\label{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1truetype_1_1_glyphs_a50508eacea49c4be9778f84d28b186d4}} 
+\index{org\+::newdawn\+::slick\+::tools\+::hiero\+::truetype\+::\+Glyphs@{org\+::newdawn\+::slick\+::tools\+::hiero\+::truetype\+::\+Glyphs}!string\+To\+Glyph@{string\+To\+Glyph}}
+\index{string\+To\+Glyph@{string\+To\+Glyph}!org\+::newdawn\+::slick\+::tools\+::hiero\+::truetype\+::\+Glyphs@{org\+::newdawn\+::slick\+::tools\+::hiero\+::truetype\+::\+Glyphs}}
+\subsubsection{\texorpdfstring{string\+To\+Glyph()}{stringToGlyph()}}
+{\footnotesize\ttfamily static String org.\+newdawn.\+slick.\+tools.\+hiero.\+truetype.\+Glyphs.\+string\+To\+Glyph (\begin{DoxyParamCaption}\item[{String}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Return the string representation of a glyphname, eg string\+To\+Glyph(\char`\"{}backslash\char`\"{}) returns \char`\"{}\textbackslash{}\textbackslash{}\char`\"{}
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & name of the glyph \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the string representation 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+1304                                                     \{
+1305         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < UNICODE\_GLYPHS.length; i += 2) \{
+1306             \textcolor{keywordflow}{if} (UNICODE\_GLYPHS[i].equals(name)) \{
+1307                 \textcolor{keywordflow}{return} UNICODE\_GLYPHS[i + 1];
+1308             \}
+1309         \}
+1310         \textcolor{keywordflow}{return} \textcolor{stringliteral}{""};
+1311     \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1truetype_1_1_glyphs_a48591ce38f9221d8064b6bc7e68124d8}\label{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1truetype_1_1_glyphs_a48591ce38f9221d8064b6bc7e68124d8}} 
+\index{org\+::newdawn\+::slick\+::tools\+::hiero\+::truetype\+::\+Glyphs@{org\+::newdawn\+::slick\+::tools\+::hiero\+::truetype\+::\+Glyphs}!M\+A\+C\+\_\+\+G\+L\+Y\+P\+H\+\_\+\+N\+A\+M\+ES@{M\+A\+C\+\_\+\+G\+L\+Y\+P\+H\+\_\+\+N\+A\+M\+ES}}
+\index{M\+A\+C\+\_\+\+G\+L\+Y\+P\+H\+\_\+\+N\+A\+M\+ES@{M\+A\+C\+\_\+\+G\+L\+Y\+P\+H\+\_\+\+N\+A\+M\+ES}!org\+::newdawn\+::slick\+::tools\+::hiero\+::truetype\+::\+Glyphs@{org\+::newdawn\+::slick\+::tools\+::hiero\+::truetype\+::\+Glyphs}}
+\subsubsection{\texorpdfstring{M\+A\+C\+\_\+\+G\+L\+Y\+P\+H\+\_\+\+N\+A\+M\+ES}{MAC\_GLYPH\_NAMES}}
+{\footnotesize\ttfamily final String org.\+newdawn.\+slick.\+tools.\+hiero.\+truetype.\+Glyphs.\+M\+A\+C\+\_\+\+G\+L\+Y\+P\+H\+\_\+\+N\+A\+M\+ES\mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\ttfamily [static]}}
+
+Glyph names for Mac encoding \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1truetype_1_1_glyphs_a78f23e9ba748be08a452e8b3a996ceaf}\label{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1truetype_1_1_glyphs_a78f23e9ba748be08a452e8b3a996ceaf}} 
+\index{org\+::newdawn\+::slick\+::tools\+::hiero\+::truetype\+::\+Glyphs@{org\+::newdawn\+::slick\+::tools\+::hiero\+::truetype\+::\+Glyphs}!N\+O\+T\+D\+EF@{N\+O\+T\+D\+EF}}
+\index{N\+O\+T\+D\+EF@{N\+O\+T\+D\+EF}!org\+::newdawn\+::slick\+::tools\+::hiero\+::truetype\+::\+Glyphs@{org\+::newdawn\+::slick\+::tools\+::hiero\+::truetype\+::\+Glyphs}}
+\subsubsection{\texorpdfstring{N\+O\+T\+D\+EF}{NOTDEF}}
+{\footnotesize\ttfamily final String org.\+newdawn.\+slick.\+tools.\+hiero.\+truetype.\+Glyphs.\+N\+O\+T\+D\+EF = \char`\"{}.notdef\char`\"{}\hspace{0.3cm}{\ttfamily [static]}}
+
+Glyph name for the \char`\"{}notdef\char`\"{} glyph \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1truetype_1_1_glyphs_aea94fa3b44fa9c00c53ec9706033c063}\label{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1truetype_1_1_glyphs_aea94fa3b44fa9c00c53ec9706033c063}} 
+\index{org\+::newdawn\+::slick\+::tools\+::hiero\+::truetype\+::\+Glyphs@{org\+::newdawn\+::slick\+::tools\+::hiero\+::truetype\+::\+Glyphs}!T\+E\+X8\+R\+\_\+\+G\+L\+Y\+P\+H\+\_\+\+N\+A\+M\+ES@{T\+E\+X8\+R\+\_\+\+G\+L\+Y\+P\+H\+\_\+\+N\+A\+M\+ES}}
+\index{T\+E\+X8\+R\+\_\+\+G\+L\+Y\+P\+H\+\_\+\+N\+A\+M\+ES@{T\+E\+X8\+R\+\_\+\+G\+L\+Y\+P\+H\+\_\+\+N\+A\+M\+ES}!org\+::newdawn\+::slick\+::tools\+::hiero\+::truetype\+::\+Glyphs@{org\+::newdawn\+::slick\+::tools\+::hiero\+::truetype\+::\+Glyphs}}
+\subsubsection{\texorpdfstring{T\+E\+X8\+R\+\_\+\+G\+L\+Y\+P\+H\+\_\+\+N\+A\+M\+ES}{TEX8R\_GLYPH\_NAMES}}
+{\footnotesize\ttfamily final String \mbox{[}$\,$\mbox{]} org.\+newdawn.\+slick.\+tools.\+hiero.\+truetype.\+Glyphs.\+T\+E\+X8\+R\+\_\+\+G\+L\+Y\+P\+H\+\_\+\+N\+A\+M\+ES\hspace{0.3cm}{\ttfamily [static]}}
+
+Glyph names for tex8r encoding \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1truetype_1_1_glyphs_a5d401716dd5de36cd43758e92c13f4b4}\label{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1truetype_1_1_glyphs_a5d401716dd5de36cd43758e92c13f4b4}} 
+\index{org\+::newdawn\+::slick\+::tools\+::hiero\+::truetype\+::\+Glyphs@{org\+::newdawn\+::slick\+::tools\+::hiero\+::truetype\+::\+Glyphs}!W\+I\+N\+A\+N\+S\+I\+\_\+\+E\+N\+C\+O\+D\+I\+NG@{W\+I\+N\+A\+N\+S\+I\+\_\+\+E\+N\+C\+O\+D\+I\+NG}}
+\index{W\+I\+N\+A\+N\+S\+I\+\_\+\+E\+N\+C\+O\+D\+I\+NG@{W\+I\+N\+A\+N\+S\+I\+\_\+\+E\+N\+C\+O\+D\+I\+NG}!org\+::newdawn\+::slick\+::tools\+::hiero\+::truetype\+::\+Glyphs@{org\+::newdawn\+::slick\+::tools\+::hiero\+::truetype\+::\+Glyphs}}
+\subsubsection{\texorpdfstring{W\+I\+N\+A\+N\+S\+I\+\_\+\+E\+N\+C\+O\+D\+I\+NG}{WINANSI\_ENCODING}}
+{\footnotesize\ttfamily final char \mbox{[}$\,$\mbox{]} org.\+newdawn.\+slick.\+tools.\+hiero.\+truetype.\+Glyphs.\+W\+I\+N\+A\+N\+S\+I\+\_\+\+E\+N\+C\+O\+D\+I\+NG\hspace{0.3cm}{\ttfamily [static]}}
+
+The characters in Win\+Ansi\+Encoding 

@@ -1,0 +1,43 @@
+\hypertarget{classcosasparaprobar_1_1_datagram_client}{}\section{cosasparaprobar.\+Datagram\+Client Class Reference}
+\label{classcosasparaprobar_1_1_datagram_client}\index{cosasparaprobar.\+Datagram\+Client@{cosasparaprobar.\+Datagram\+Client}}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{classcosasparaprobar_1_1_datagram_client_a6d104162bf341f3c43be5b47401001cb}{main}} (String\mbox{[}$\,$\mbox{]} args)  throws I\+O\+Exception 
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyAuthor}{Author}
+Ignacio 
+\end{DoxyAuthor}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classcosasparaprobar_1_1_datagram_client_a6d104162bf341f3c43be5b47401001cb}\label{classcosasparaprobar_1_1_datagram_client_a6d104162bf341f3c43be5b47401001cb}} 
+\index{cosasparaprobar\+::\+Datagram\+Client@{cosasparaprobar\+::\+Datagram\+Client}!main@{main}}
+\index{main@{main}!cosasparaprobar\+::\+Datagram\+Client@{cosasparaprobar\+::\+Datagram\+Client}}
+\subsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily static void cosasparaprobar.\+Datagram\+Client.\+main (\begin{DoxyParamCaption}\item[{String}]{args\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption}) throws I\+O\+Exception\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+\begin{DoxyCode}
+20                                                                \{
+21         DatagramSocket socket = \textcolor{keyword}{new} DatagramSocket();
+22         InetAddress address = InetAddress.getByName( \textcolor{stringliteral}{"localhost"} );
+23         BufferedReader consola = \textcolor{keyword}{new} BufferedReader(\textcolor{keyword}{new} InputStreamReader( System.in ) );
+24         String inputConsola= null;
+25         \textcolor{keywordflow}{do} \{
+26             inputConsola = consola.readLine();
+27             byte[ ] buf = inputConsola.getBytes();
+28             DatagramPacket packet = \textcolor{keyword}{new} DatagramPacket(buf, buf.length, address, 4445);
+29             socket.send(packet);
+30             buf = \textcolor{keyword}{new} byte[128];
+31             packet = \textcolor{keyword}{new} DatagramPacket(buf, buf.length);
+32             socket.receive(packet);
+33             String received = \textcolor{keyword}{new} String(packet.getData( ) );
+34             System.out.println(received);
+35         \} \textcolor{keywordflow}{while} (!inputConsola.equals( \textcolor{stringliteral}{"chao"} ) );
+36         socket.close( );
+37      \} 
+\end{DoxyCode}

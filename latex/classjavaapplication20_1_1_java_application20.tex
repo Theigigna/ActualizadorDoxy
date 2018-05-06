@@ -1,0 +1,315 @@
+\hypertarget{classjavaapplication20_1_1_java_application20}{}\section{javaapplication20.\+Java\+Application20 Class Reference}
+\label{classjavaapplication20_1_1_java_application20}\index{javaapplication20.\+Java\+Application20@{javaapplication20.\+Java\+Application20}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classjavaapplication20_1_1_java_application20_af8de1708de71156b3c2bb28b2e3732eb}{procedimiento\+Itv}} ()
+\item 
+void \mbox{\hyperlink{classjavaapplication20_1_1_java_application20_a1dd2d7b69c9e7a7adaffce66b9653943}{procedimiento\+Propietarios}} ()
+\item 
+void \mbox{\hyperlink{classjavaapplication20_1_1_java_application20_af1bd8f612fa222da9ade17b155b54cc4}{procedimiento\+Vehiculos}} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{classjavaapplication20_1_1_java_application20_af6e62b4cd624245e4c44b01a59fee969}{main}} (String\mbox{[}$\,$\mbox{]} args)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyAuthor}{Author}
+Ignacio 
+\end{DoxyAuthor}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classjavaapplication20_1_1_java_application20_af6e62b4cd624245e4c44b01a59fee969}\label{classjavaapplication20_1_1_java_application20_af6e62b4cd624245e4c44b01a59fee969}} 
+\index{javaapplication20\+::\+Java\+Application20@{javaapplication20\+::\+Java\+Application20}!main@{main}}
+\index{main@{main}!javaapplication20\+::\+Java\+Application20@{javaapplication20\+::\+Java\+Application20}}
+\subsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily static void javaapplication20.\+Java\+Application20.\+main (\begin{DoxyParamCaption}\item[{String \mbox{[}$\,$\mbox{]}}]{args }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+\begin{DoxyCode}
+268                                            \{
+269         
+270         
+271         
+272         
+273     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classjavaapplication20_1_1_java_application20_af8de1708de71156b3c2bb28b2e3732eb}\label{classjavaapplication20_1_1_java_application20_af8de1708de71156b3c2bb28b2e3732eb}} 
+\index{javaapplication20\+::\+Java\+Application20@{javaapplication20\+::\+Java\+Application20}!procedimiento\+Itv@{procedimiento\+Itv}}
+\index{procedimiento\+Itv@{procedimiento\+Itv}!javaapplication20\+::\+Java\+Application20@{javaapplication20\+::\+Java\+Application20}}
+\subsubsection{\texorpdfstring{procedimiento\+Itv()}{procedimientoItv()}}
+{\footnotesize\ttfamily void javaapplication20.\+Java\+Application20.\+procedimiento\+Itv (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em args} & the command line arguments \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+21     \{
+22         
+23         \textcolor{keywordtype}{int} i;
+24         \textcolor{comment}{//variables ITV}
+25         \textcolor{keywordtype}{int} id\_estacion = 0;
+26         String nombre = \textcolor{stringliteral}{""};
+27         String direccion = \textcolor{stringliteral}{""};
+28         \textcolor{keywordtype}{int} codigo\_postal = 0;
+29         String provincia = \textcolor{stringliteral}{""};
+30         String horario = \textcolor{stringliteral}{""};
+31         String email = \textcolor{stringliteral}{""};
+32         
+33         String paratxt = \textcolor{stringliteral}{""};
+34         
+35         \textcolor{keywordflow}{for}(i = 1 ; i < 501 ; i++)
+36         \{
+37             id\_estacion = i;    \textcolor{comment}{//id}
+38             nombre = \textcolor{stringliteral}{"itv"} + Integer.toString(i);   \textcolor{comment}{//nombre}
+39             
+40             codigo\_postal =  (int) Math.floor(Math.random()*(19-1+1)+1);    
+41             
+42             \textcolor{keywordflow}{switch}(codigo\_postal)
+43             \{
+44                     \textcolor{keywordflow}{case} 1:
+45                     provincia = \textcolor{stringliteral}{"Galicia"};
+46                     horario = \textcolor{stringliteral}{"10 a 19"};
+47                     codigo\_postal = 15;
+48                     \textcolor{keywordflow}{break};
+49                     \textcolor{keywordflow}{case} 2:
+50                     provincia = \textcolor{stringliteral}{"Asturias"};
+51                     horario = \textcolor{stringliteral}{"9 a 18"};
+52                     codigo\_postal = 33;
+53                     \textcolor{keywordflow}{break};
+54                     \textcolor{keywordflow}{case} 3:
+55                     provincia = \textcolor{stringliteral}{"Cantabria"};
+56                     horario = \textcolor{stringliteral}{"10 a 20"};
+57                     codigo\_postal = 39;
+58                     \textcolor{keywordflow}{break};
+59                     \textcolor{keywordflow}{case} 4:
+60                     provincia = \textcolor{stringliteral}{"Pais vasco"};
+61                     horario = \textcolor{stringliteral}{"8 a 20"};
+62                     codigo\_postal = 1;
+63                     \textcolor{keywordflow}{break};
+64                     \textcolor{keywordflow}{case} 5:
+65                     provincia = \textcolor{stringliteral}{"Navarra"};
+66                     horario = \textcolor{stringliteral}{"10 a 19"};
+67                     codigo\_postal = 31;
+68                     \textcolor{keywordflow}{break};
+69                     \textcolor{keywordflow}{case} 6:
+70                     provincia = \textcolor{stringliteral}{"Aragon"};
+71                     horario = \textcolor{stringliteral}{"10 a 20"};
+72                     codigo\_postal = 50;
+73                     \textcolor{keywordflow}{break};
+74                     \textcolor{keywordflow}{case} 7:
+75                     provincia = \textcolor{stringliteral}{"Catalunya"};
+76                     horario = \textcolor{stringliteral}{"9 a 21"};
+77                     codigo\_postal = 8;
+78                     \textcolor{keywordflow}{break};
+79                     \textcolor{keywordflow}{case} 8:
+80                     provincia = \textcolor{stringliteral}{"Castilla y Leon"};
+81                     horario = \textcolor{stringliteral}{"10 a 19"};
+82                     codigo\_postal = 24;
+83                     \textcolor{keywordflow}{break};
+84                     \textcolor{keywordflow}{case} 9:
+85                     provincia = \textcolor{stringliteral}{"La Rioja"};
+86                     horario = \textcolor{stringliteral}{"10 a 20"};
+87                     codigo\_postal = 26;
+88                     \textcolor{keywordflow}{break};
+89                     \textcolor{keywordflow}{case} 10:
+90                     provincia = \textcolor{stringliteral}{"Madrid"};
+91                     horario = \textcolor{stringliteral}{"10 a 20"};
+92                     codigo\_postal = 28;
+93                     \textcolor{keywordflow}{break};
+94                     \textcolor{keywordflow}{case} 11:
+95                     provincia = \textcolor{stringliteral}{"Extremadura"};
+96                     horario = \textcolor{stringliteral}{"12 a 17"};
+97                     codigo\_postal = 6;
+98                     \textcolor{keywordflow}{break};
+99                     \textcolor{keywordflow}{case} 12:
+100                     provincia = \textcolor{stringliteral}{"Castilla-La mancha"};
+101                     horario = \textcolor{stringliteral}{"10 a 18"};
+102                     codigo\_postal = 45;
+103                     \textcolor{keywordflow}{break};
+104                     \textcolor{keywordflow}{case} 13:
+105                     provincia = \textcolor{stringliteral}{"Valencia"};
+106                     horario = \textcolor{stringliteral}{"9 a 17"};
+107                     codigo\_postal = 46;
+108                     \textcolor{keywordflow}{break};
+109                     \textcolor{keywordflow}{case} 14:
+110                     provincia = \textcolor{stringliteral}{"Islas Baleares"};
+111                     horario = \textcolor{stringliteral}{"8 a 16"};
+112                     codigo\_postal = 7;
+113                     \textcolor{keywordflow}{break};
+114                     \textcolor{keywordflow}{case} 15:
+115                     provincia = \textcolor{stringliteral}{"Andalucia"};
+116                     horario = \textcolor{stringliteral}{"12 a 14"};
+117                     codigo\_postal = 41;
+118                     \textcolor{keywordflow}{break};
+119                     \textcolor{keywordflow}{case} 16:
+120                     provincia = \textcolor{stringliteral}{"Murcia"};
+121                     horario = \textcolor{stringliteral}{"10 a 20"};
+122                     codigo\_postal = 30;
+123                     \textcolor{keywordflow}{break};
+124                     \textcolor{keywordflow}{case} 17:
+125                     provincia = \textcolor{stringliteral}{"Islas Canarias"};
+126                     horario = \textcolor{stringliteral}{"10 a 21"};
+127                     codigo\_postal = 38;
+128                     \textcolor{keywordflow}{break};
+129                     \textcolor{keywordflow}{case} 18:
+130                     provincia = \textcolor{stringliteral}{"Ceuta"};
+131                     horario = \textcolor{stringliteral}{"10 a 15"};
+132                     codigo\_postal = 51;
+133                     \textcolor{keywordflow}{break};
+134                     \textcolor{keywordflow}{case} 19:
+135                     provincia = \textcolor{stringliteral}{"Melilla"};
+136                     horario = \textcolor{stringliteral}{"10 a 15"};
+137                     codigo\_postal = 52;
+138                     \textcolor{keywordflow}{break};
+139             \}
+140             
+141             codigo\_postal *= 1000;
+142             codigo\_postal += (int) Math.floor(Math.random()*999);   
+143             email = nombre + \textcolor{stringliteral}{"@gmail.com"};
+144             
+145             paratxt += id\_estacion + \textcolor{stringliteral}{";"} + nombre + \textcolor{stringliteral}{";"} + direccion + \textcolor{stringliteral}{";"} + codigo\_postal + \textcolor{stringliteral}{";"} + provincia
+       + \textcolor{stringliteral}{";"} + horario + \textcolor{stringliteral}{";"} + email + \textcolor{stringliteral}{"\(\backslash\)r\(\backslash\)n"};
+146             \textcolor{comment}{//Introducir en el txt}
+147         \}
+148         
+149     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classjavaapplication20_1_1_java_application20_a1dd2d7b69c9e7a7adaffce66b9653943}\label{classjavaapplication20_1_1_java_application20_a1dd2d7b69c9e7a7adaffce66b9653943}} 
+\index{javaapplication20\+::\+Java\+Application20@{javaapplication20\+::\+Java\+Application20}!procedimiento\+Propietarios@{procedimiento\+Propietarios}}
+\index{procedimiento\+Propietarios@{procedimiento\+Propietarios}!javaapplication20\+::\+Java\+Application20@{javaapplication20\+::\+Java\+Application20}}
+\subsubsection{\texorpdfstring{procedimiento\+Propietarios()}{procedimientoPropietarios()}}
+{\footnotesize\ttfamily void javaapplication20.\+Java\+Application20.\+procedimiento\+Propietarios (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+152     \{
+153             \textcolor{keywordtype}{int} i;
+154             \textcolor{comment}{//variablesPropietarios}
+155             \textcolor{keywordtype}{int} id\_propietario;
+156             String dni;
+157             String nombre;
+158             String apellidos;
+159             String direccion;
+160             \textcolor{keywordtype}{int} codigo\_postal;
+161             String provincia;
+162             \textcolor{keywordtype}{int} tefelono;
+163             
+164             \textcolor{keywordflow}{for}(i=1 ; i<8000001 ; i++)
+165             \{
+166             
+167             codigo\_postal =  (int) Math.floor(Math.random()*(19-1+1)+1);    
+168             
+169             \textcolor{keywordflow}{switch}(codigo\_postal)
+170             \{
+171                     \textcolor{keywordflow}{case} 1:
+172                     provincia = \textcolor{stringliteral}{"Galicia"};
+173                     codigo\_postal = 15;
+174                     \textcolor{keywordflow}{break};
+175                     \textcolor{keywordflow}{case} 2:
+176                     provincia = \textcolor{stringliteral}{"Asturias"};
+177                     codigo\_postal = 33;
+178                     \textcolor{keywordflow}{break};
+179                     \textcolor{keywordflow}{case} 3:
+180                     provincia = \textcolor{stringliteral}{"Cantabria"};
+181                     codigo\_postal = 39;
+182                     \textcolor{keywordflow}{break};
+183                     \textcolor{keywordflow}{case} 4:
+184                     provincia = \textcolor{stringliteral}{"Pais vasco"};
+185                     codigo\_postal = 1;
+186                     \textcolor{keywordflow}{break};
+187                     \textcolor{keywordflow}{case} 5:
+188                     provincia = \textcolor{stringliteral}{"Navarra"};
+189                     codigo\_postal = 31;
+190                     \textcolor{keywordflow}{break};
+191                     \textcolor{keywordflow}{case} 6:
+192                     provincia = \textcolor{stringliteral}{"Aragon"};
+193                     codigo\_postal = 50;
+194                     \textcolor{keywordflow}{break};
+195                     \textcolor{keywordflow}{case} 7:
+196                     provincia = \textcolor{stringliteral}{"Catalunya"};
+197                     codigo\_postal = 8;
+198                     \textcolor{keywordflow}{break};
+199                     \textcolor{keywordflow}{case} 8:
+200                     provincia = \textcolor{stringliteral}{"Castilla y Leon"};
+201                     codigo\_postal = 24;
+202                     \textcolor{keywordflow}{break};
+203                     \textcolor{keywordflow}{case} 9:
+204                     provincia = \textcolor{stringliteral}{"La Rioja"};
+205                     codigo\_postal = 26;
+206                     \textcolor{keywordflow}{break};
+207                     \textcolor{keywordflow}{case} 10:
+208                     provincia = \textcolor{stringliteral}{"Madrid"};
+209                     codigo\_postal = 28;
+210                     \textcolor{keywordflow}{break};
+211                     \textcolor{keywordflow}{case} 11:
+212                     provincia = \textcolor{stringliteral}{"Extremadura"};
+213                     codigo\_postal = 6;
+214                     \textcolor{keywordflow}{break};
+215                     \textcolor{keywordflow}{case} 12:
+216                     provincia = \textcolor{stringliteral}{"Castilla-La mancha"};
+217                     codigo\_postal = 45;
+218                     \textcolor{keywordflow}{break};
+219                     \textcolor{keywordflow}{case} 13:
+220                     provincia = \textcolor{stringliteral}{"Valencia"};
+221                     codigo\_postal = 46;
+222                     \textcolor{keywordflow}{break};
+223                     \textcolor{keywordflow}{case} 14:
+224                     provincia = \textcolor{stringliteral}{"Islas Baleares"};
+225                     codigo\_postal = 7;
+226                     \textcolor{keywordflow}{break};
+227                     \textcolor{keywordflow}{case} 15:
+228                     provincia = \textcolor{stringliteral}{"Andalucia"};
+229                     codigo\_postal = 41;
+230                     \textcolor{keywordflow}{break};
+231                     \textcolor{keywordflow}{case} 16:
+232                     provincia = \textcolor{stringliteral}{"Murcia"};
+233                     codigo\_postal = 30;
+234                     \textcolor{keywordflow}{break};
+235                     \textcolor{keywordflow}{case} 17:
+236                     provincia = \textcolor{stringliteral}{"Islas Canarias"};
+237                     codigo\_postal = 38;
+238                     \textcolor{keywordflow}{break};
+239                     \textcolor{keywordflow}{case} 18:
+240                     provincia = \textcolor{stringliteral}{"Ceuta"};
+241                     codigo\_postal = 51;
+242                     \textcolor{keywordflow}{break};
+243                     \textcolor{keywordflow}{case} 19:
+244                     provincia = \textcolor{stringliteral}{"Melilla"};
+245                     codigo\_postal = 52;
+246                     \textcolor{keywordflow}{break};
+247             \}
+248             \}
+249     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classjavaapplication20_1_1_java_application20_af1bd8f612fa222da9ade17b155b54cc4}\label{classjavaapplication20_1_1_java_application20_af1bd8f612fa222da9ade17b155b54cc4}} 
+\index{javaapplication20\+::\+Java\+Application20@{javaapplication20\+::\+Java\+Application20}!procedimiento\+Vehiculos@{procedimiento\+Vehiculos}}
+\index{procedimiento\+Vehiculos@{procedimiento\+Vehiculos}!javaapplication20\+::\+Java\+Application20@{javaapplication20\+::\+Java\+Application20}}
+\subsubsection{\texorpdfstring{procedimiento\+Vehiculos()}{procedimientoVehiculos()}}
+{\footnotesize\ttfamily void javaapplication20.\+Java\+Application20.\+procedimiento\+Vehiculos (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+252     \{
+253         \textcolor{keywordtype}{int} i;
+254         \textcolor{comment}{//variablesVehiculos}
+255         String matricula;
+256         String bastidor;
+257         String marca;
+258         String modelo;
+259         \textcolor{keywordtype}{int} cilindrada;
+260         String combustible;
+261         \textcolor{keywordtype}{int} cv;
+262         \textcolor{keywordtype}{int} tara;
+263         \textcolor{keywordtype}{int} peso\_maximo;
+264         \textcolor{keywordtype}{int} id\_propietario;
+265         
+266     \}
+\end{DoxyCode}

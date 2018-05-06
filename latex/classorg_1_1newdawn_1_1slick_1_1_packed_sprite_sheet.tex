@@ -1,0 +1,314 @@
+\hypertarget{classorg_1_1newdawn_1_1slick_1_1_packed_sprite_sheet}{}\section{org.\+newdawn.\+slick.\+Packed\+Sprite\+Sheet Class Reference}
+\label{classorg_1_1newdawn_1_1slick_1_1_packed_sprite_sheet}\index{org.\+newdawn.\+slick.\+Packed\+Sprite\+Sheet@{org.\+newdawn.\+slick.\+Packed\+Sprite\+Sheet}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_packed_sprite_sheet_1_1_section}{Section}}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_packed_sprite_sheet_acf930c67e88ddf2cccb7d0da3f8a2801}{Packed\+Sprite\+Sheet}} (String def)  throws Slick\+Exception 
+\item 
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_packed_sprite_sheet_a23c64c2515b40bfee62d5b12b6dd36df}{Packed\+Sprite\+Sheet}} (String def, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_color}{Color}} trans)  throws Slick\+Exception 
+\item 
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_packed_sprite_sheet_ae6cbc529dc62ad4ed721ec2ee60e7290}{Packed\+Sprite\+Sheet}} (String def, int \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_packed_sprite_sheet_a03daeb71e62c853200c961868ce8468a}{filter}})  throws Slick\+Exception 
+\item 
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_packed_sprite_sheet_accda07b70179c28005ed54091408560e}{Packed\+Sprite\+Sheet}} (String def, int \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_packed_sprite_sheet_a03daeb71e62c853200c961868ce8468a}{filter}}, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_color}{Color}} trans)  throws Slick\+Exception 
+\item 
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_image}{Image}} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_packed_sprite_sheet_a1190137f4f8779a722d6a1a56e1c95f2}{get\+Full\+Image}} ()
+\item 
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_image}{Image}} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_packed_sprite_sheet_ac3ba876d0be75c93724ebe035787041e}{get\+Sprite}} (String name)
+\item 
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_sprite_sheet}{Sprite\+Sheet}} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_packed_sprite_sheet_ad7e059c2e511ac079d6823158e1c6833}{get\+Sprite\+Sheet}} (String name)
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_packed_sprite_sheet_a35e3dcf7f2143738d56291dca1ed620e}{load\+Definition}} (String def, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_color}{Color}} trans)  throws Slick\+Exception 
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_image}{Image}} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_packed_sprite_sheet_a3bfe1d01086f84a9f9bdacbfb2f5ceba}{image}}
+\item 
+String \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_packed_sprite_sheet_a5343b639d543ab4780adabb0f8ac15cd}{base\+Path}}
+\item 
+Hash\+Map \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_packed_sprite_sheet_a7585e251934ce67d5c2a69448e461f29}{sections}} = new Hash\+Map()
+\item 
+int \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_packed_sprite_sheet_a03daeb71e62c853200c961868ce8468a}{filter}} = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_image_ada43983f8d07a25e8f647ce2993dfff7}{Image.\+F\+I\+L\+T\+E\+R\+\_\+\+N\+E\+A\+R\+E\+ST}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A sprite sheet packed and defined by the Pacific Software \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_image}{Image}} Packer available from\+:
+
+\href{http://homepage.ntlworld.com/config/imagepacker/}{\tt http\+://homepage.\+ntlworld.\+com/config/imagepacker/}
+
+\begin{DoxyAuthor}{Author}
+kevin 
+\end{DoxyAuthor}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1_packed_sprite_sheet_acf930c67e88ddf2cccb7d0da3f8a2801}\label{classorg_1_1newdawn_1_1slick_1_1_packed_sprite_sheet_acf930c67e88ddf2cccb7d0da3f8a2801}} 
+\index{org\+::newdawn\+::slick\+::\+Packed\+Sprite\+Sheet@{org\+::newdawn\+::slick\+::\+Packed\+Sprite\+Sheet}!Packed\+Sprite\+Sheet@{Packed\+Sprite\+Sheet}}
+\index{Packed\+Sprite\+Sheet@{Packed\+Sprite\+Sheet}!org\+::newdawn\+::slick\+::\+Packed\+Sprite\+Sheet@{org\+::newdawn\+::slick\+::\+Packed\+Sprite\+Sheet}}
+\subsubsection{\texorpdfstring{Packed\+Sprite\+Sheet()}{PackedSpriteSheet()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily org.\+newdawn.\+slick.\+Packed\+Sprite\+Sheet.\+Packed\+Sprite\+Sheet (\begin{DoxyParamCaption}\item[{String}]{def }\end{DoxyParamCaption}) throws \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_slick_exception}{Slick\+Exception}}\hspace{0.3cm}{\ttfamily [inline]}}
+
+Create a new packed sprite sheet based on a Image\+Packer definition file
+
+
+\begin{DoxyParams}{Parameters}
+{\em def} & The location of the definition file to read \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_slick_exception}{Slick\+Exception}}} & Indicates a failure to read the definition file \\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyCode}
+35                                                                \{
+36         \textcolor{keyword}{this}(def, null);
+37     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1_packed_sprite_sheet_a23c64c2515b40bfee62d5b12b6dd36df}\label{classorg_1_1newdawn_1_1slick_1_1_packed_sprite_sheet_a23c64c2515b40bfee62d5b12b6dd36df}} 
+\index{org\+::newdawn\+::slick\+::\+Packed\+Sprite\+Sheet@{org\+::newdawn\+::slick\+::\+Packed\+Sprite\+Sheet}!Packed\+Sprite\+Sheet@{Packed\+Sprite\+Sheet}}
+\index{Packed\+Sprite\+Sheet@{Packed\+Sprite\+Sheet}!org\+::newdawn\+::slick\+::\+Packed\+Sprite\+Sheet@{org\+::newdawn\+::slick\+::\+Packed\+Sprite\+Sheet}}
+\subsubsection{\texorpdfstring{Packed\+Sprite\+Sheet()}{PackedSpriteSheet()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily org.\+newdawn.\+slick.\+Packed\+Sprite\+Sheet.\+Packed\+Sprite\+Sheet (\begin{DoxyParamCaption}\item[{String}]{def,  }\item[{\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_color}{Color}}}]{trans }\end{DoxyParamCaption}) throws \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_slick_exception}{Slick\+Exception}}\hspace{0.3cm}{\ttfamily [inline]}}
+
+Create a new packed sprite sheet based on a Image\+Packer definition file
+
+
+\begin{DoxyParams}{Parameters}
+{\em def} & The location of the definition file to read \\
+\hline
+{\em trans} & The color to be treated as transparent \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_slick_exception}{Slick\+Exception}}} & Indicates a failure to read the definition file \\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyCode}
+46                                                                             \{
+47         def = def.replace(\textcolor{charliteral}{'\(\backslash\)\(\backslash\)'}, \textcolor{charliteral}{'/'});
+48         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_packed_sprite_sheet_a5343b639d543ab4780adabb0f8ac15cd}{basePath}} = def.substring(0,def.lastIndexOf(\textcolor{stringliteral}{"/"})+1);
+49         
+50         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_packed_sprite_sheet_a35e3dcf7f2143738d56291dca1ed620e}{loadDefinition}}(def, trans);
+51     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1_packed_sprite_sheet_ae6cbc529dc62ad4ed721ec2ee60e7290}\label{classorg_1_1newdawn_1_1slick_1_1_packed_sprite_sheet_ae6cbc529dc62ad4ed721ec2ee60e7290}} 
+\index{org\+::newdawn\+::slick\+::\+Packed\+Sprite\+Sheet@{org\+::newdawn\+::slick\+::\+Packed\+Sprite\+Sheet}!Packed\+Sprite\+Sheet@{Packed\+Sprite\+Sheet}}
+\index{Packed\+Sprite\+Sheet@{Packed\+Sprite\+Sheet}!org\+::newdawn\+::slick\+::\+Packed\+Sprite\+Sheet@{org\+::newdawn\+::slick\+::\+Packed\+Sprite\+Sheet}}
+\subsubsection{\texorpdfstring{Packed\+Sprite\+Sheet()}{PackedSpriteSheet()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily org.\+newdawn.\+slick.\+Packed\+Sprite\+Sheet.\+Packed\+Sprite\+Sheet (\begin{DoxyParamCaption}\item[{String}]{def,  }\item[{int}]{filter }\end{DoxyParamCaption}) throws \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_slick_exception}{Slick\+Exception}}\hspace{0.3cm}{\ttfamily [inline]}}
+
+Create a new packed sprite sheet based on a Image\+Packer definition file
+
+
+\begin{DoxyParams}{Parameters}
+{\em def} & The location of the definition file to read \\
+\hline
+{\em filter} & The image filter to use when loading the packed sprite image \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_slick_exception}{Slick\+Exception}}} & Indicates a failure to read the definition file \\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyCode}
+60                                                                            \{
+61         \textcolor{keyword}{this}(def, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_packed_sprite_sheet_a03daeb71e62c853200c961868ce8468a}{filter}}, null);
+62     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1_packed_sprite_sheet_accda07b70179c28005ed54091408560e}\label{classorg_1_1newdawn_1_1slick_1_1_packed_sprite_sheet_accda07b70179c28005ed54091408560e}} 
+\index{org\+::newdawn\+::slick\+::\+Packed\+Sprite\+Sheet@{org\+::newdawn\+::slick\+::\+Packed\+Sprite\+Sheet}!Packed\+Sprite\+Sheet@{Packed\+Sprite\+Sheet}}
+\index{Packed\+Sprite\+Sheet@{Packed\+Sprite\+Sheet}!org\+::newdawn\+::slick\+::\+Packed\+Sprite\+Sheet@{org\+::newdawn\+::slick\+::\+Packed\+Sprite\+Sheet}}
+\subsubsection{\texorpdfstring{Packed\+Sprite\+Sheet()}{PackedSpriteSheet()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily org.\+newdawn.\+slick.\+Packed\+Sprite\+Sheet.\+Packed\+Sprite\+Sheet (\begin{DoxyParamCaption}\item[{String}]{def,  }\item[{int}]{filter,  }\item[{\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_color}{Color}}}]{trans }\end{DoxyParamCaption}) throws \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_slick_exception}{Slick\+Exception}}\hspace{0.3cm}{\ttfamily [inline]}}
+
+Create a new packed sprite sheet based on a Image\+Packer definition file
+
+
+\begin{DoxyParams}{Parameters}
+{\em def} & The location of the definition file to read \\
+\hline
+{\em filter} & The image filter to use when loading the packed sprite image \\
+\hline
+{\em trans} & The color to be treated as transparent \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_slick_exception}{Slick\+Exception}}} & Indicates a failure to read the definition file \\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyCode}
+72                                                                                         \{
+73         this.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_packed_sprite_sheet_a03daeb71e62c853200c961868ce8468a}{filter}} = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_packed_sprite_sheet_a03daeb71e62c853200c961868ce8468a}{filter}};
+74         
+75         def = def.replace(\textcolor{charliteral}{'\(\backslash\)\(\backslash\)'}, \textcolor{charliteral}{'/'});
+76         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_packed_sprite_sheet_a5343b639d543ab4780adabb0f8ac15cd}{basePath}} = def.substring(0,def.lastIndexOf(\textcolor{stringliteral}{"/"})+1);
+77         
+78         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_packed_sprite_sheet_a35e3dcf7f2143738d56291dca1ed620e}{loadDefinition}}(def, trans);
+79     \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1_packed_sprite_sheet_a1190137f4f8779a722d6a1a56e1c95f2}\label{classorg_1_1newdawn_1_1slick_1_1_packed_sprite_sheet_a1190137f4f8779a722d6a1a56e1c95f2}} 
+\index{org\+::newdawn\+::slick\+::\+Packed\+Sprite\+Sheet@{org\+::newdawn\+::slick\+::\+Packed\+Sprite\+Sheet}!get\+Full\+Image@{get\+Full\+Image}}
+\index{get\+Full\+Image@{get\+Full\+Image}!org\+::newdawn\+::slick\+::\+Packed\+Sprite\+Sheet@{org\+::newdawn\+::slick\+::\+Packed\+Sprite\+Sheet}}
+\subsubsection{\texorpdfstring{get\+Full\+Image()}{getFullImage()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_image}{Image}} org.\+newdawn.\+slick.\+Packed\+Sprite\+Sheet.\+get\+Full\+Image (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get the full image contaning all the sprites/sections
+
+\begin{DoxyReturn}{Returns}
+The full image containing all the sprites/sections 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+86                                 \{
+87         \textcolor{keywordflow}{return} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_packed_sprite_sheet_a3bfe1d01086f84a9f9bdacbfb2f5ceba}{image}};
+88     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1_packed_sprite_sheet_ac3ba876d0be75c93724ebe035787041e}\label{classorg_1_1newdawn_1_1slick_1_1_packed_sprite_sheet_ac3ba876d0be75c93724ebe035787041e}} 
+\index{org\+::newdawn\+::slick\+::\+Packed\+Sprite\+Sheet@{org\+::newdawn\+::slick\+::\+Packed\+Sprite\+Sheet}!get\+Sprite@{get\+Sprite}}
+\index{get\+Sprite@{get\+Sprite}!org\+::newdawn\+::slick\+::\+Packed\+Sprite\+Sheet@{org\+::newdawn\+::slick\+::\+Packed\+Sprite\+Sheet}}
+\subsubsection{\texorpdfstring{get\+Sprite()}{getSprite()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_image}{Image}} org.\+newdawn.\+slick.\+Packed\+Sprite\+Sheet.\+get\+Sprite (\begin{DoxyParamCaption}\item[{String}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get a single named sprite from the sheet
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The name of the sprite to retrieve \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The sprite requested (image of) 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+96                                         \{
+97         Section section = (Section) \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_packed_sprite_sheet_a7585e251934ce67d5c2a69448e461f29}{sections}}.get(name);
+98         
+99         \textcolor{keywordflow}{if} (section == null) \{
+100             \textcolor{keywordflow}{throw} \textcolor{keyword}{new} RuntimeException(\textcolor{stringliteral}{"Unknown sprite from packed sheet: "}+name);
+101         \}
+102         
+103         \textcolor{keywordflow}{return} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_packed_sprite_sheet_a3bfe1d01086f84a9f9bdacbfb2f5ceba}{image}}.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_image_a2ccb3bbdda674f9efdec614a54e31e32}{getSubImage}}(section.x, section.y, section.width, section.height);
+104     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1_packed_sprite_sheet_ad7e059c2e511ac079d6823158e1c6833}\label{classorg_1_1newdawn_1_1slick_1_1_packed_sprite_sheet_ad7e059c2e511ac079d6823158e1c6833}} 
+\index{org\+::newdawn\+::slick\+::\+Packed\+Sprite\+Sheet@{org\+::newdawn\+::slick\+::\+Packed\+Sprite\+Sheet}!get\+Sprite\+Sheet@{get\+Sprite\+Sheet}}
+\index{get\+Sprite\+Sheet@{get\+Sprite\+Sheet}!org\+::newdawn\+::slick\+::\+Packed\+Sprite\+Sheet@{org\+::newdawn\+::slick\+::\+Packed\+Sprite\+Sheet}}
+\subsubsection{\texorpdfstring{get\+Sprite\+Sheet()}{getSpriteSheet()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_sprite_sheet}{Sprite\+Sheet}} org.\+newdawn.\+slick.\+Packed\+Sprite\+Sheet.\+get\+Sprite\+Sheet (\begin{DoxyParamCaption}\item[{String}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get a sprite sheet that has been packed into the greater image
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The name of the sprite sheet to retrieve \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The sprite sheet from the packed sheet 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+112                                                    \{
+113         Image \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_packed_sprite_sheet_a3bfe1d01086f84a9f9bdacbfb2f5ceba}{image}} = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_packed_sprite_sheet_ac3ba876d0be75c93724ebe035787041e}{getSprite}}(name);
+114         Section section = (Section) \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_packed_sprite_sheet_a7585e251934ce67d5c2a69448e461f29}{sections}}.get(name);
+115         
+116         \textcolor{keywordflow}{return} \textcolor{keyword}{new} SpriteSheet(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_packed_sprite_sheet_a3bfe1d01086f84a9f9bdacbfb2f5ceba}{image}}, section.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_image_a7d02c85e21b388428cfe5cc5c82714a1}{width}} / section.tilesx, section.height / section.
+      tilesy);
+117     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1_packed_sprite_sheet_a35e3dcf7f2143738d56291dca1ed620e}\label{classorg_1_1newdawn_1_1slick_1_1_packed_sprite_sheet_a35e3dcf7f2143738d56291dca1ed620e}} 
+\index{org\+::newdawn\+::slick\+::\+Packed\+Sprite\+Sheet@{org\+::newdawn\+::slick\+::\+Packed\+Sprite\+Sheet}!load\+Definition@{load\+Definition}}
+\index{load\+Definition@{load\+Definition}!org\+::newdawn\+::slick\+::\+Packed\+Sprite\+Sheet@{org\+::newdawn\+::slick\+::\+Packed\+Sprite\+Sheet}}
+\subsubsection{\texorpdfstring{load\+Definition()}{loadDefinition()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+Packed\+Sprite\+Sheet.\+load\+Definition (\begin{DoxyParamCaption}\item[{String}]{def,  }\item[{\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_color}{Color}}}]{trans }\end{DoxyParamCaption}) throws \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_slick_exception}{Slick\+Exception}}\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+Load the definition file and parse each of the sections
+
+
+\begin{DoxyParams}{Parameters}
+{\em def} & The location of the definitions file \\
+\hline
+{\em trans} & The color to be treated as transparent \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_slick_exception}{Slick\+Exception}}} & Indicates a failure to read or parse the definitions file or referenced image. \\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyCode}
+127                                                                                \{
+128         BufferedReader reader = \textcolor{keyword}{new} BufferedReader(\textcolor{keyword}{new} InputStreamReader(ResourceLoader.getResourceAsStream
+      (def)));
+129     
+130         \textcolor{keywordflow}{try} \{
+131             \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_packed_sprite_sheet_a3bfe1d01086f84a9f9bdacbfb2f5ceba}{image}} = \textcolor{keyword}{new} Image(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_packed_sprite_sheet_a5343b639d543ab4780adabb0f8ac15cd}{basePath}}+reader.readLine(), \textcolor{keyword}{false}, 
+      \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_packed_sprite_sheet_a03daeb71e62c853200c961868ce8468a}{filter}}, trans);
+132             \textcolor{keywordflow}{while} (reader.ready()) \{
+133                 \textcolor{keywordflow}{if} (reader.readLine() == null) \{
+134                     \textcolor{keywordflow}{break};
+135                 \}
+136                 
+137                 Section sect = \textcolor{keyword}{new} Section(reader);
+138                 \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_packed_sprite_sheet_a7585e251934ce67d5c2a69448e461f29}{sections}}.put(sect.name, sect);
+139                 
+140                 \textcolor{keywordflow}{if} (reader.readLine() == null) \{
+141                     \textcolor{keywordflow}{break};
+142                 \}
+143             \}
+144         \} \textcolor{keywordflow}{catch} (Exception e) \{
+145             Log.error(e);
+146             \textcolor{keywordflow}{throw} \textcolor{keyword}{new} SlickException(\textcolor{stringliteral}{"Failed to process definitions file - invalid format?"}, e);
+147         \}
+148     \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1_packed_sprite_sheet_a5343b639d543ab4780adabb0f8ac15cd}\label{classorg_1_1newdawn_1_1slick_1_1_packed_sprite_sheet_a5343b639d543ab4780adabb0f8ac15cd}} 
+\index{org\+::newdawn\+::slick\+::\+Packed\+Sprite\+Sheet@{org\+::newdawn\+::slick\+::\+Packed\+Sprite\+Sheet}!base\+Path@{base\+Path}}
+\index{base\+Path@{base\+Path}!org\+::newdawn\+::slick\+::\+Packed\+Sprite\+Sheet@{org\+::newdawn\+::slick\+::\+Packed\+Sprite\+Sheet}}
+\subsubsection{\texorpdfstring{base\+Path}{basePath}}
+{\footnotesize\ttfamily String org.\+newdawn.\+slick.\+Packed\+Sprite\+Sheet.\+base\+Path\hspace{0.3cm}{\ttfamily [private]}}
+
+The base path where the image is expected to be found based on the original definition file \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1_packed_sprite_sheet_a03daeb71e62c853200c961868ce8468a}\label{classorg_1_1newdawn_1_1slick_1_1_packed_sprite_sheet_a03daeb71e62c853200c961868ce8468a}} 
+\index{org\+::newdawn\+::slick\+::\+Packed\+Sprite\+Sheet@{org\+::newdawn\+::slick\+::\+Packed\+Sprite\+Sheet}!filter@{filter}}
+\index{filter@{filter}!org\+::newdawn\+::slick\+::\+Packed\+Sprite\+Sheet@{org\+::newdawn\+::slick\+::\+Packed\+Sprite\+Sheet}}
+\subsubsection{\texorpdfstring{filter}{filter}}
+{\footnotesize\ttfamily int org.\+newdawn.\+slick.\+Packed\+Sprite\+Sheet.\+filter = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_image_ada43983f8d07a25e8f647ce2993dfff7}{Image.\+F\+I\+L\+T\+E\+R\+\_\+\+N\+E\+A\+R\+E\+ST}}\hspace{0.3cm}{\ttfamily [private]}}
+
+The filter used when loading the image \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1_packed_sprite_sheet_a3bfe1d01086f84a9f9bdacbfb2f5ceba}\label{classorg_1_1newdawn_1_1slick_1_1_packed_sprite_sheet_a3bfe1d01086f84a9f9bdacbfb2f5ceba}} 
+\index{org\+::newdawn\+::slick\+::\+Packed\+Sprite\+Sheet@{org\+::newdawn\+::slick\+::\+Packed\+Sprite\+Sheet}!image@{image}}
+\index{image@{image}!org\+::newdawn\+::slick\+::\+Packed\+Sprite\+Sheet@{org\+::newdawn\+::slick\+::\+Packed\+Sprite\+Sheet}}
+\subsubsection{\texorpdfstring{image}{image}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_image}{Image}} org.\+newdawn.\+slick.\+Packed\+Sprite\+Sheet.\+image\hspace{0.3cm}{\ttfamily [private]}}
+
+The image loaded for the sheet \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1_packed_sprite_sheet_a7585e251934ce67d5c2a69448e461f29}\label{classorg_1_1newdawn_1_1slick_1_1_packed_sprite_sheet_a7585e251934ce67d5c2a69448e461f29}} 
+\index{org\+::newdawn\+::slick\+::\+Packed\+Sprite\+Sheet@{org\+::newdawn\+::slick\+::\+Packed\+Sprite\+Sheet}!sections@{sections}}
+\index{sections@{sections}!org\+::newdawn\+::slick\+::\+Packed\+Sprite\+Sheet@{org\+::newdawn\+::slick\+::\+Packed\+Sprite\+Sheet}}
+\subsubsection{\texorpdfstring{sections}{sections}}
+{\footnotesize\ttfamily Hash\+Map org.\+newdawn.\+slick.\+Packed\+Sprite\+Sheet.\+sections = new Hash\+Map()\hspace{0.3cm}{\ttfamily [private]}}
+
+The section definitions 

@@ -1,0 +1,45 @@
+\hypertarget{classpkg5_1_1pkg6_1_1areatriangulo_1_1_area_triangulo}{}\section{pkg5.\+pkg6.\+areatriangulo.\+Area\+Triangulo Class Reference}
+\label{classpkg5_1_1pkg6_1_1areatriangulo_1_1_area_triangulo}\index{pkg5.\+pkg6.\+areatriangulo.\+Area\+Triangulo@{pkg5.\+pkg6.\+areatriangulo.\+Area\+Triangulo}}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{classpkg5_1_1pkg6_1_1areatriangulo_1_1_area_triangulo_a64aa5ea50023df802ff32966833fc5c3}{main}} (String\mbox{[}$\,$\mbox{]} args)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyAuthor}{Author}
+Jorgito 
+\end{DoxyAuthor}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classpkg5_1_1pkg6_1_1areatriangulo_1_1_area_triangulo_a64aa5ea50023df802ff32966833fc5c3}\label{classpkg5_1_1pkg6_1_1areatriangulo_1_1_area_triangulo_a64aa5ea50023df802ff32966833fc5c3}} 
+\index{pkg5\+::pkg6\+::areatriangulo\+::\+Area\+Triangulo@{pkg5\+::pkg6\+::areatriangulo\+::\+Area\+Triangulo}!main@{main}}
+\index{main@{main}!pkg5\+::pkg6\+::areatriangulo\+::\+Area\+Triangulo@{pkg5\+::pkg6\+::areatriangulo\+::\+Area\+Triangulo}}
+\subsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily static void pkg5.\+pkg6.\+areatriangulo.\+Area\+Triangulo.\+main (\begin{DoxyParamCaption}\item[{String \mbox{[}$\,$\mbox{]}}]{args }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em args} & the command line arguments \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+19                                            \{
+20     Scanner N = \textcolor{keyword}{new} Scanner (System.in);
+21     \textcolor{keywordtype}{int} lado,\mbox{\hyperlink{namespacesuma}{suma}},area;
+22     \mbox{\hyperlink{namespacesuma}{suma}}=0;
+23     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i=3;i<0;i--)\{
+24         System.out.println(\textcolor{stringliteral}{"Introduzca el tamaño del lado: "});
+25             lado=N.nextInt();
+26         \mbox{\hyperlink{namespacesuma}{suma}}*=lado;
+27     \}
+28     area = \mbox{\hyperlink{namespacesuma}{suma}}/2;
+29     System.out.println(\textcolor{stringliteral}{"El area del triángulo es: "} + area);
+30         
+31     
+32         
+33     \}
+\end{DoxyCode}

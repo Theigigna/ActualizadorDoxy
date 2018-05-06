@@ -1,0 +1,149 @@
+\hypertarget{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_texture_loader}{}\section{org.\+newdawn.\+slick.\+opengl.\+Texture\+Loader Class Reference}
+\label{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_texture_loader}\index{org.\+newdawn.\+slick.\+opengl.\+Texture\+Loader@{org.\+newdawn.\+slick.\+opengl.\+Texture\+Loader}}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1opengl_1_1_texture}{Texture}} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_texture_loader_a742a83fc3fa1b8c4183e9950c7576adb}{get\+Texture}} (String format, Input\+Stream in)  throws I\+O\+Exception 
+\item 
+static \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1opengl_1_1_texture}{Texture}} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_texture_loader_a97fc2430793c0c8f883e6b9f6ab88758}{get\+Texture}} (String format, Input\+Stream in, boolean flipped)  throws I\+O\+Exception 
+\item 
+static \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1opengl_1_1_texture}{Texture}} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_texture_loader_a9fb5ca2c112a95bff54fc895b3c648e9}{get\+Texture}} (String format, Input\+Stream in, int filter)  throws I\+O\+Exception 
+\item 
+static \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1opengl_1_1_texture}{Texture}} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_texture_loader_accafa2eb13a83a40e3af6f4b196cd2e4}{get\+Texture}} (String format, Input\+Stream in, boolean flipped, int filter)  throws I\+O\+Exception 
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A utility class to wrap the Slick internal texture loader and present a rational interface.
+
+\begin{DoxyAuthor}{Author}
+kevin 
+\end{DoxyAuthor}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_texture_loader_a742a83fc3fa1b8c4183e9950c7576adb}\label{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_texture_loader_a742a83fc3fa1b8c4183e9950c7576adb}} 
+\index{org\+::newdawn\+::slick\+::opengl\+::\+Texture\+Loader@{org\+::newdawn\+::slick\+::opengl\+::\+Texture\+Loader}!get\+Texture@{get\+Texture}}
+\index{get\+Texture@{get\+Texture}!org\+::newdawn\+::slick\+::opengl\+::\+Texture\+Loader@{org\+::newdawn\+::slick\+::opengl\+::\+Texture\+Loader}}
+\subsubsection{\texorpdfstring{get\+Texture()}{getTexture()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1opengl_1_1_texture}{Texture}} org.\+newdawn.\+slick.\+opengl.\+Texture\+Loader.\+get\+Texture (\begin{DoxyParamCaption}\item[{String}]{format,  }\item[{Input\+Stream}]{in }\end{DoxyParamCaption}) throws I\+O\+Exception\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Load a texture with a given format from the supplied input stream
+
+
+\begin{DoxyParams}{Parameters}
+{\em format} & The format of the texture to be loaded (something like \char`\"{}\+P\+N\+G\char`\"{} or \char`\"{}\+T\+G\+A\char`\"{}) \\
+\hline
+{\em in} & The input stream from which the image data will be read \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The newly created texture 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em I\+O\+Exception} & Indicates a failure to read the image data \\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyCode}
+23                                                                                        \{
+24         \textcolor{keywordflow}{return} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_texture_loader_a742a83fc3fa1b8c4183e9950c7576adb}{getTexture}}(format, in, \textcolor{keyword}{false}, GL11.GL\_LINEAR);
+25     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_texture_loader_a97fc2430793c0c8f883e6b9f6ab88758}\label{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_texture_loader_a97fc2430793c0c8f883e6b9f6ab88758}} 
+\index{org\+::newdawn\+::slick\+::opengl\+::\+Texture\+Loader@{org\+::newdawn\+::slick\+::opengl\+::\+Texture\+Loader}!get\+Texture@{get\+Texture}}
+\index{get\+Texture@{get\+Texture}!org\+::newdawn\+::slick\+::opengl\+::\+Texture\+Loader@{org\+::newdawn\+::slick\+::opengl\+::\+Texture\+Loader}}
+\subsubsection{\texorpdfstring{get\+Texture()}{getTexture()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1opengl_1_1_texture}{Texture}} org.\+newdawn.\+slick.\+opengl.\+Texture\+Loader.\+get\+Texture (\begin{DoxyParamCaption}\item[{String}]{format,  }\item[{Input\+Stream}]{in,  }\item[{boolean}]{flipped }\end{DoxyParamCaption}) throws I\+O\+Exception\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Load a texture with a given format from the supplied input stream
+
+
+\begin{DoxyParams}{Parameters}
+{\em format} & The format of the texture to be loaded (something like \char`\"{}\+P\+N\+G\char`\"{} or \char`\"{}\+T\+G\+A\char`\"{}) \\
+\hline
+{\em in} & The input stream from which the image data will be read \\
+\hline
+{\em flipped} & True if the image should be flipped vertically on loading \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The newly created texture 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em I\+O\+Exception} & Indicates a failure to read the image data \\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyCode}
+36                                                                                                          \{
+37         \textcolor{keywordflow}{return} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_texture_loader_a742a83fc3fa1b8c4183e9950c7576adb}{getTexture}}(format, in, flipped, GL11.GL\_LINEAR);
+38     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_texture_loader_a9fb5ca2c112a95bff54fc895b3c648e9}\label{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_texture_loader_a9fb5ca2c112a95bff54fc895b3c648e9}} 
+\index{org\+::newdawn\+::slick\+::opengl\+::\+Texture\+Loader@{org\+::newdawn\+::slick\+::opengl\+::\+Texture\+Loader}!get\+Texture@{get\+Texture}}
+\index{get\+Texture@{get\+Texture}!org\+::newdawn\+::slick\+::opengl\+::\+Texture\+Loader@{org\+::newdawn\+::slick\+::opengl\+::\+Texture\+Loader}}
+\subsubsection{\texorpdfstring{get\+Texture()}{getTexture()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1opengl_1_1_texture}{Texture}} org.\+newdawn.\+slick.\+opengl.\+Texture\+Loader.\+get\+Texture (\begin{DoxyParamCaption}\item[{String}]{format,  }\item[{Input\+Stream}]{in,  }\item[{int}]{filter }\end{DoxyParamCaption}) throws I\+O\+Exception\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Load a texture with a given format from the supplied input stream
+
+
+\begin{DoxyParams}{Parameters}
+{\em format} & The format of the texture to be loaded (something like \char`\"{}\+P\+N\+G\char`\"{} or \char`\"{}\+T\+G\+A\char`\"{}) \\
+\hline
+{\em in} & The input stream from which the image data will be read \\
+\hline
+{\em filter} & The GL texture filter to use for scaling up and down \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The newly created texture 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em I\+O\+Exception} & Indicates a failure to read the image data \\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyCode}
+49                                                                                                    \{
+50         \textcolor{keywordflow}{return} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_texture_loader_a742a83fc3fa1b8c4183e9950c7576adb}{getTexture}}(format, in, \textcolor{keyword}{false}, filter);
+51     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_texture_loader_accafa2eb13a83a40e3af6f4b196cd2e4}\label{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_texture_loader_accafa2eb13a83a40e3af6f4b196cd2e4}} 
+\index{org\+::newdawn\+::slick\+::opengl\+::\+Texture\+Loader@{org\+::newdawn\+::slick\+::opengl\+::\+Texture\+Loader}!get\+Texture@{get\+Texture}}
+\index{get\+Texture@{get\+Texture}!org\+::newdawn\+::slick\+::opengl\+::\+Texture\+Loader@{org\+::newdawn\+::slick\+::opengl\+::\+Texture\+Loader}}
+\subsubsection{\texorpdfstring{get\+Texture()}{getTexture()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1opengl_1_1_texture}{Texture}} org.\+newdawn.\+slick.\+opengl.\+Texture\+Loader.\+get\+Texture (\begin{DoxyParamCaption}\item[{String}]{format,  }\item[{Input\+Stream}]{in,  }\item[{boolean}]{flipped,  }\item[{int}]{filter }\end{DoxyParamCaption}) throws I\+O\+Exception\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Load a texture with a given format from the supplied input stream
+
+
+\begin{DoxyParams}{Parameters}
+{\em format} & The format of the texture to be loaded (something like \char`\"{}\+P\+N\+G\char`\"{} or \char`\"{}\+T\+G\+A\char`\"{}) \\
+\hline
+{\em in} & The input stream from which the image data will be read \\
+\hline
+{\em flipped} & True if the image should be flipped vertically on loading \\
+\hline
+{\em filter} & The GL texture filter to use for scaling up and down \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The newly created texture 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em I\+O\+Exception} & Indicates a failure to read the image data \\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyCode}
+63                                                                                                            
+               \{
+64         \textcolor{keywordflow}{return} InternalTextureLoader.get().getTexture(in, in.toString()+\textcolor{stringliteral}{"."}+format, flipped, filter);
+65     \}
+\end{DoxyCode}

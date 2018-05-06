@@ -1,0 +1,118 @@
+\hypertarget{classorg_1_1newdawn_1_1slick_1_1svg_1_1_parsing_exception}{}\section{org.\+newdawn.\+slick.\+svg.\+Parsing\+Exception Class Reference}
+\label{classorg_1_1newdawn_1_1slick_1_1svg_1_1_parsing_exception}\index{org.\+newdawn.\+slick.\+svg.\+Parsing\+Exception@{org.\+newdawn.\+slick.\+svg.\+Parsing\+Exception}}
+Inheritance diagram for org.\+newdawn.\+slick.\+svg.\+Parsing\+Exception\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classorg_1_1newdawn_1_1slick_1_1svg_1_1_parsing_exception}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1_parsing_exception_af9b0d519f8b6e99f865956016b8938f9}{Parsing\+Exception}} (String node\+ID, String message, Throwable cause)
+\item 
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1_parsing_exception_a73e8c0f414a6c327904d641ffbaa7741}{Parsing\+Exception}} (Element element, String message, Throwable cause)
+\item 
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1_parsing_exception_ae002947662790b8b48ca8b8f5116948e}{Parsing\+Exception}} (String node\+ID, String message)
+\item 
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1_parsing_exception_ad4eb7a21ccceb0510a682da92e717aa9}{Parsing\+Exception}} (Element element, String message)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Exception indicating a failure to parse X\+ML, giving element information
+
+\begin{DoxyAuthor}{Author}
+kevin 
+\end{DoxyAuthor}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1svg_1_1_parsing_exception_af9b0d519f8b6e99f865956016b8938f9}\label{classorg_1_1newdawn_1_1slick_1_1svg_1_1_parsing_exception_af9b0d519f8b6e99f865956016b8938f9}} 
+\index{org\+::newdawn\+::slick\+::svg\+::\+Parsing\+Exception@{org\+::newdawn\+::slick\+::svg\+::\+Parsing\+Exception}!Parsing\+Exception@{Parsing\+Exception}}
+\index{Parsing\+Exception@{Parsing\+Exception}!org\+::newdawn\+::slick\+::svg\+::\+Parsing\+Exception@{org\+::newdawn\+::slick\+::svg\+::\+Parsing\+Exception}}
+\subsubsection{\texorpdfstring{Parsing\+Exception()}{ParsingException()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily org.\+newdawn.\+slick.\+svg.\+Parsing\+Exception.\+Parsing\+Exception (\begin{DoxyParamCaption}\item[{String}]{node\+ID,  }\item[{String}]{message,  }\item[{Throwable}]{cause }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Create a new exception
+
+
+\begin{DoxyParams}{Parameters}
+{\em node\+ID} & The ID of the node that failed validation \\
+\hline
+{\em message} & The description of the failure \\
+\hline
+{\em cause} & The exception causing this one \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+20                                                                             \{
+21         super(\textcolor{stringliteral}{"("}+nodeID+\textcolor{stringliteral}{") "}+message, cause);
+22     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1svg_1_1_parsing_exception_a73e8c0f414a6c327904d641ffbaa7741}\label{classorg_1_1newdawn_1_1slick_1_1svg_1_1_parsing_exception_a73e8c0f414a6c327904d641ffbaa7741}} 
+\index{org\+::newdawn\+::slick\+::svg\+::\+Parsing\+Exception@{org\+::newdawn\+::slick\+::svg\+::\+Parsing\+Exception}!Parsing\+Exception@{Parsing\+Exception}}
+\index{Parsing\+Exception@{Parsing\+Exception}!org\+::newdawn\+::slick\+::svg\+::\+Parsing\+Exception@{org\+::newdawn\+::slick\+::svg\+::\+Parsing\+Exception}}
+\subsubsection{\texorpdfstring{Parsing\+Exception()}{ParsingException()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily org.\+newdawn.\+slick.\+svg.\+Parsing\+Exception.\+Parsing\+Exception (\begin{DoxyParamCaption}\item[{Element}]{element,  }\item[{String}]{message,  }\item[{Throwable}]{cause }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Create a new exception
+
+
+\begin{DoxyParams}{Parameters}
+{\em element} & The element that failed validation \\
+\hline
+{\em message} & The description of the failure \\
+\hline
+{\em cause} & The exception causing this one \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+31                                                                               \{
+32         super(\textcolor{stringliteral}{"("}+element.getAttribute(\textcolor{stringliteral}{"id"})+\textcolor{stringliteral}{") "}+message, cause);
+33     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1svg_1_1_parsing_exception_ae002947662790b8b48ca8b8f5116948e}\label{classorg_1_1newdawn_1_1slick_1_1svg_1_1_parsing_exception_ae002947662790b8b48ca8b8f5116948e}} 
+\index{org\+::newdawn\+::slick\+::svg\+::\+Parsing\+Exception@{org\+::newdawn\+::slick\+::svg\+::\+Parsing\+Exception}!Parsing\+Exception@{Parsing\+Exception}}
+\index{Parsing\+Exception@{Parsing\+Exception}!org\+::newdawn\+::slick\+::svg\+::\+Parsing\+Exception@{org\+::newdawn\+::slick\+::svg\+::\+Parsing\+Exception}}
+\subsubsection{\texorpdfstring{Parsing\+Exception()}{ParsingException()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily org.\+newdawn.\+slick.\+svg.\+Parsing\+Exception.\+Parsing\+Exception (\begin{DoxyParamCaption}\item[{String}]{node\+ID,  }\item[{String}]{message }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Create a new exception
+
+
+\begin{DoxyParams}{Parameters}
+{\em node\+ID} & The ID of the node that failed validation \\
+\hline
+{\em message} & The description of the failure \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+41                                                            \{
+42         super(\textcolor{stringliteral}{"("}+nodeID+\textcolor{stringliteral}{") "}+message);
+43     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1svg_1_1_parsing_exception_ad4eb7a21ccceb0510a682da92e717aa9}\label{classorg_1_1newdawn_1_1slick_1_1svg_1_1_parsing_exception_ad4eb7a21ccceb0510a682da92e717aa9}} 
+\index{org\+::newdawn\+::slick\+::svg\+::\+Parsing\+Exception@{org\+::newdawn\+::slick\+::svg\+::\+Parsing\+Exception}!Parsing\+Exception@{Parsing\+Exception}}
+\index{Parsing\+Exception@{Parsing\+Exception}!org\+::newdawn\+::slick\+::svg\+::\+Parsing\+Exception@{org\+::newdawn\+::slick\+::svg\+::\+Parsing\+Exception}}
+\subsubsection{\texorpdfstring{Parsing\+Exception()}{ParsingException()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily org.\+newdawn.\+slick.\+svg.\+Parsing\+Exception.\+Parsing\+Exception (\begin{DoxyParamCaption}\item[{Element}]{element,  }\item[{String}]{message }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Create a new exception
+
+
+\begin{DoxyParams}{Parameters}
+{\em element} & The element that failed validation \\
+\hline
+{\em message} & The description of the failure \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+51                                                              \{
+52         super(\textcolor{stringliteral}{"("}+element.getAttribute(\textcolor{stringliteral}{"id"})+\textcolor{stringliteral}{") "}+message);
+53     \}
+\end{DoxyCode}

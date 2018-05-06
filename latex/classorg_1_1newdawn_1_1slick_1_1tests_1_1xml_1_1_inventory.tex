@@ -1,0 +1,79 @@
+\hypertarget{classorg_1_1newdawn_1_1slick_1_1tests_1_1xml_1_1_inventory}{}\section{org.\+newdawn.\+slick.\+tests.\+xml.\+Inventory Class Reference}
+\label{classorg_1_1newdawn_1_1slick_1_1tests_1_1xml_1_1_inventory}\index{org.\+newdawn.\+slick.\+tests.\+xml.\+Inventory@{org.\+newdawn.\+slick.\+tests.\+xml.\+Inventory}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1xml_1_1_inventory_ae6476f32141f6791d3b69cc9687fae4a}{dump}} (String prefix)
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1xml_1_1_inventory_a900aaad5d0e18480d365397a8579e3a3}{add}} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1xml_1_1_item}{Item}} item)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Array\+List \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1xml_1_1_inventory_a2bfc94164f1557cee534126a6c27e690}{items}} = new Array\+List()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A test example of some object data that can be configured via X\+ML
+
+\begin{DoxyAuthor}{Author}
+kevin 
+\end{DoxyAuthor}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tests_1_1xml_1_1_inventory_a900aaad5d0e18480d365397a8579e3a3}\label{classorg_1_1newdawn_1_1slick_1_1tests_1_1xml_1_1_inventory_a900aaad5d0e18480d365397a8579e3a3}} 
+\index{org\+::newdawn\+::slick\+::tests\+::xml\+::\+Inventory@{org\+::newdawn\+::slick\+::tests\+::xml\+::\+Inventory}!add@{add}}
+\index{add@{add}!org\+::newdawn\+::slick\+::tests\+::xml\+::\+Inventory@{org\+::newdawn\+::slick\+::tests\+::xml\+::\+Inventory}}
+\subsubsection{\texorpdfstring{add()}{add()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+tests.\+xml.\+Inventory.\+add (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1xml_1_1_item}{Item}}}]{item }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+Called by X\+ML parser to add a configured item to the entity
+
+
+\begin{DoxyParams}{Parameters}
+{\em item} & The item to be added \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+19                                 \{
+20         \mbox{\hyperlink{namespaceitems}{items}}.add(item);
+21     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tests_1_1xml_1_1_inventory_ae6476f32141f6791d3b69cc9687fae4a}\label{classorg_1_1newdawn_1_1slick_1_1tests_1_1xml_1_1_inventory_ae6476f32141f6791d3b69cc9687fae4a}} 
+\index{org\+::newdawn\+::slick\+::tests\+::xml\+::\+Inventory@{org\+::newdawn\+::slick\+::tests\+::xml\+::\+Inventory}!dump@{dump}}
+\index{dump@{dump}!org\+::newdawn\+::slick\+::tests\+::xml\+::\+Inventory@{org\+::newdawn\+::slick\+::tests\+::xml\+::\+Inventory}}
+\subsubsection{\texorpdfstring{dump()}{dump()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+tests.\+xml.\+Inventory.\+dump (\begin{DoxyParamCaption}\item[{String}]{prefix }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Dump this object to sysout
+
+
+\begin{DoxyParams}{Parameters}
+{\em prefix} & The prefix to apply to all lines \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+28                                     \{
+29         System.out.println(prefix+\textcolor{stringliteral}{"Inventory"});
+30         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i=0;i<\mbox{\hyperlink{namespaceitems}{items}}.size();i++) \{
+31             ((Item) \mbox{\hyperlink{namespaceitems}{items}}.get(i)).\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1xml_1_1_inventory_ae6476f32141f6791d3b69cc9687fae4a}{dump}}(prefix+\textcolor{stringliteral}{"\(\backslash\)t"});
+32         \}
+33     \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tests_1_1xml_1_1_inventory_a2bfc94164f1557cee534126a6c27e690}\label{classorg_1_1newdawn_1_1slick_1_1tests_1_1xml_1_1_inventory_a2bfc94164f1557cee534126a6c27e690}} 
+\index{org\+::newdawn\+::slick\+::tests\+::xml\+::\+Inventory@{org\+::newdawn\+::slick\+::tests\+::xml\+::\+Inventory}!items@{items}}
+\index{items@{items}!org\+::newdawn\+::slick\+::tests\+::xml\+::\+Inventory@{org\+::newdawn\+::slick\+::tests\+::xml\+::\+Inventory}}
+\subsubsection{\texorpdfstring{items}{items}}
+{\footnotesize\ttfamily Array\+List org.\+newdawn.\+slick.\+tests.\+xml.\+Inventory.\+items = new Array\+List()\hspace{0.3cm}{\ttfamily [private]}}
+
+The items held in the inventory 

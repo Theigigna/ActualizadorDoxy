@@ -1,0 +1,132 @@
+\hypertarget{classorg_1_1newdawn_1_1slick_1_1svg_1_1_radial_gradient_fill}{}\section{org.\+newdawn.\+slick.\+svg.\+Radial\+Gradient\+Fill Class Reference}
+\label{classorg_1_1newdawn_1_1slick_1_1svg_1_1_radial_gradient_fill}\index{org.\+newdawn.\+slick.\+svg.\+Radial\+Gradient\+Fill@{org.\+newdawn.\+slick.\+svg.\+Radial\+Gradient\+Fill}}
+Inheritance diagram for org.\+newdawn.\+slick.\+svg.\+Radial\+Gradient\+Fill\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classorg_1_1newdawn_1_1slick_1_1svg_1_1_radial_gradient_fill}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1_radial_gradient_fill_a6868e613687dd66b50637f2f5a2bc8ee}{Radial\+Gradient\+Fill}} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_shape}{Shape}} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1_radial_gradient_fill_aad26e36b37c63657649bf34da1dcc075}{shape}}, Transform trans, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1_gradient}{Gradient}} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1_radial_gradient_fill_acabcc0fa37af23d8451201c035fc4cfd}{gradient}})
+\item 
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_vector2f}{Vector2f}} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1_radial_gradient_fill_a5709cfc21a18fd1489d0d0a5efdf46bf}{get\+Coord\+For}} (float x, float y)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_vector2f}{Vector2f}} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1_radial_gradient_fill_a1ce1146036d333abb455c94451b2649d}{centre}}
+\item 
+float \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1_radial_gradient_fill_ad4815b0655b2098a41b293439bc83bd6}{radius}}
+\item 
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1_gradient}{Gradient}} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1_radial_gradient_fill_acabcc0fa37af23d8451201c035fc4cfd}{gradient}}
+\item 
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_shape}{Shape}} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1_radial_gradient_fill_aad26e36b37c63657649bf34da1dcc075}{shape}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A filler to apply a S\+VG radial gradient across a shape
+
+\begin{DoxyAuthor}{Author}
+kevin 
+\end{DoxyAuthor}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1svg_1_1_radial_gradient_fill_a6868e613687dd66b50637f2f5a2bc8ee}\label{classorg_1_1newdawn_1_1slick_1_1svg_1_1_radial_gradient_fill_a6868e613687dd66b50637f2f5a2bc8ee}} 
+\index{org\+::newdawn\+::slick\+::svg\+::\+Radial\+Gradient\+Fill@{org\+::newdawn\+::slick\+::svg\+::\+Radial\+Gradient\+Fill}!Radial\+Gradient\+Fill@{Radial\+Gradient\+Fill}}
+\index{Radial\+Gradient\+Fill@{Radial\+Gradient\+Fill}!org\+::newdawn\+::slick\+::svg\+::\+Radial\+Gradient\+Fill@{org\+::newdawn\+::slick\+::svg\+::\+Radial\+Gradient\+Fill}}
+\subsubsection{\texorpdfstring{Radial\+Gradient\+Fill()}{RadialGradientFill()}}
+{\footnotesize\ttfamily org.\+newdawn.\+slick.\+svg.\+Radial\+Gradient\+Fill.\+Radial\+Gradient\+Fill (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_shape}{Shape}}}]{shape,  }\item[{Transform}]{trans,  }\item[{\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1_gradient}{Gradient}}}]{gradient }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Create a new fill for a radial gradient
+
+
+\begin{DoxyParams}{Parameters}
+{\em shape} & The shape being filled \\
+\hline
+{\em trans} & The transform given for the shape in the S\+VG \\
+\hline
+{\em gradient} & The gradient to apply across the shape \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+30                                                                                \{
+31         this.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1_radial_gradient_fill_acabcc0fa37af23d8451201c035fc4cfd}{gradient}} = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1_radial_gradient_fill_acabcc0fa37af23d8451201c035fc4cfd}{gradient}};
+32 
+33         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1_radial_gradient_fill_ad4815b0655b2098a41b293439bc83bd6}{radius}} = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1_radial_gradient_fill_acabcc0fa37af23d8451201c035fc4cfd}{gradient}}.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1_gradient_a148b2258e3cd0b6d7157a2abfd3be593}{getR}}();
+34         \textcolor{keywordtype}{float} x = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1_radial_gradient_fill_acabcc0fa37af23d8451201c035fc4cfd}{gradient}}.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1_gradient_ae69b3be30a37c7efd9a4b63bbf7aba20}{getX1}}();
+35         \textcolor{keywordtype}{float} y = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1_radial_gradient_fill_acabcc0fa37af23d8451201c035fc4cfd}{gradient}}.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1_gradient_afd11c4ec7edd35d8426f2190dedd2c5b}{getY1}}();
+36         
+37         \textcolor{keywordtype}{float}[] c = \textcolor{keyword}{new} \textcolor{keywordtype}{float}[] \{x,y\};
+38         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1_radial_gradient_fill_acabcc0fa37af23d8451201c035fc4cfd}{gradient}}.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1_gradient_a797b696ffa9ef0cfee7f1dd99a884f35}{getTransform}}().transform(c, 0, c, 0, 1);
+39         trans.transform(c, 0, c, 0, 1);
+40         \textcolor{keywordtype}{float}[] rt = \textcolor{keyword}{new} \textcolor{keywordtype}{float}[] \{x,y-\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1_radial_gradient_fill_ad4815b0655b2098a41b293439bc83bd6}{radius}}\};
+41         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1_radial_gradient_fill_acabcc0fa37af23d8451201c035fc4cfd}{gradient}}.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1_gradient_a797b696ffa9ef0cfee7f1dd99a884f35}{getTransform}}().transform(rt, 0, rt, 0, 1);
+42         trans.transform(rt, 0, rt, 0, 1);
+43         
+44         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1_radial_gradient_fill_a1ce1146036d333abb455c94451b2649d}{centre}} = \textcolor{keyword}{new} Vector2f(c[0],c[1]);
+45         Vector2f dis = \textcolor{keyword}{new} Vector2f(rt[0],rt[1]);
+46         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1_radial_gradient_fill_ad4815b0655b2098a41b293439bc83bd6}{radius}} = dis.distance(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1_radial_gradient_fill_a1ce1146036d333abb455c94451b2649d}{centre}});
+47     \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1svg_1_1_radial_gradient_fill_a5709cfc21a18fd1489d0d0a5efdf46bf}\label{classorg_1_1newdawn_1_1slick_1_1svg_1_1_radial_gradient_fill_a5709cfc21a18fd1489d0d0a5efdf46bf}} 
+\index{org\+::newdawn\+::slick\+::svg\+::\+Radial\+Gradient\+Fill@{org\+::newdawn\+::slick\+::svg\+::\+Radial\+Gradient\+Fill}!get\+Coord\+For@{get\+Coord\+For}}
+\index{get\+Coord\+For@{get\+Coord\+For}!org\+::newdawn\+::slick\+::svg\+::\+Radial\+Gradient\+Fill@{org\+::newdawn\+::slick\+::svg\+::\+Radial\+Gradient\+Fill}}
+\subsubsection{\texorpdfstring{get\+Coord\+For()}{getCoordFor()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_vector2f}{Vector2f}} org.\+newdawn.\+slick.\+svg.\+Radial\+Gradient\+Fill.\+get\+Coord\+For (\begin{DoxyParamCaption}\item[{float}]{x,  }\item[{float}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1geom_1_1_tex_coord_generator_a2a67773df4f90a0bcb3f65d5499919d7}{org.\+newdawn.\+slick.\+geom.\+Tex\+Coord\+Generator\+::get\+Coord\+For(float, float)}} 
+\end{DoxySeeAlso}
+
+
+Implements \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1geom_1_1_tex_coord_generator_a2a67773df4f90a0bcb3f65d5499919d7}{org.\+newdawn.\+slick.\+geom.\+Tex\+Coord\+Generator}}.
+
+
+\begin{DoxyCode}
+52                                                   \{
+53         \textcolor{keywordtype}{float} u = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1_radial_gradient_fill_a1ce1146036d333abb455c94451b2649d}{centre}}.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_vector2f_a0c78cd993e1ccefe024b695381fabb5c}{distance}}(\textcolor{keyword}{new} Vector2f(x,y));
+54         u /= \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1_radial_gradient_fill_ad4815b0655b2098a41b293439bc83bd6}{radius}};
+55         
+56         \textcolor{keywordflow}{if} (u > 0.99f) \{
+57             u = 0.99f;
+58         \}
+59         
+60         \textcolor{keywordflow}{return} \textcolor{keyword}{new} Vector2f(u,0);
+61     \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1svg_1_1_radial_gradient_fill_a1ce1146036d333abb455c94451b2649d}\label{classorg_1_1newdawn_1_1slick_1_1svg_1_1_radial_gradient_fill_a1ce1146036d333abb455c94451b2649d}} 
+\index{org\+::newdawn\+::slick\+::svg\+::\+Radial\+Gradient\+Fill@{org\+::newdawn\+::slick\+::svg\+::\+Radial\+Gradient\+Fill}!centre@{centre}}
+\index{centre@{centre}!org\+::newdawn\+::slick\+::svg\+::\+Radial\+Gradient\+Fill@{org\+::newdawn\+::slick\+::svg\+::\+Radial\+Gradient\+Fill}}
+\subsubsection{\texorpdfstring{centre}{centre}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_vector2f}{Vector2f}} org.\+newdawn.\+slick.\+svg.\+Radial\+Gradient\+Fill.\+centre\hspace{0.3cm}{\ttfamily [private]}}
+
+The centre of the gradient \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1svg_1_1_radial_gradient_fill_acabcc0fa37af23d8451201c035fc4cfd}\label{classorg_1_1newdawn_1_1slick_1_1svg_1_1_radial_gradient_fill_acabcc0fa37af23d8451201c035fc4cfd}} 
+\index{org\+::newdawn\+::slick\+::svg\+::\+Radial\+Gradient\+Fill@{org\+::newdawn\+::slick\+::svg\+::\+Radial\+Gradient\+Fill}!gradient@{gradient}}
+\index{gradient@{gradient}!org\+::newdawn\+::slick\+::svg\+::\+Radial\+Gradient\+Fill@{org\+::newdawn\+::slick\+::svg\+::\+Radial\+Gradient\+Fill}}
+\subsubsection{\texorpdfstring{gradient}{gradient}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1_gradient}{Gradient}} org.\+newdawn.\+slick.\+svg.\+Radial\+Gradient\+Fill.\+gradient\hspace{0.3cm}{\ttfamily [private]}}
+
+The gradient to apply \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1svg_1_1_radial_gradient_fill_ad4815b0655b2098a41b293439bc83bd6}\label{classorg_1_1newdawn_1_1slick_1_1svg_1_1_radial_gradient_fill_ad4815b0655b2098a41b293439bc83bd6}} 
+\index{org\+::newdawn\+::slick\+::svg\+::\+Radial\+Gradient\+Fill@{org\+::newdawn\+::slick\+::svg\+::\+Radial\+Gradient\+Fill}!radius@{radius}}
+\index{radius@{radius}!org\+::newdawn\+::slick\+::svg\+::\+Radial\+Gradient\+Fill@{org\+::newdawn\+::slick\+::svg\+::\+Radial\+Gradient\+Fill}}
+\subsubsection{\texorpdfstring{radius}{radius}}
+{\footnotesize\ttfamily float org.\+newdawn.\+slick.\+svg.\+Radial\+Gradient\+Fill.\+radius\hspace{0.3cm}{\ttfamily [private]}}
+
+The radius before the gradient is complete \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1svg_1_1_radial_gradient_fill_aad26e36b37c63657649bf34da1dcc075}\label{classorg_1_1newdawn_1_1slick_1_1svg_1_1_radial_gradient_fill_aad26e36b37c63657649bf34da1dcc075}} 
+\index{org\+::newdawn\+::slick\+::svg\+::\+Radial\+Gradient\+Fill@{org\+::newdawn\+::slick\+::svg\+::\+Radial\+Gradient\+Fill}!shape@{shape}}
+\index{shape@{shape}!org\+::newdawn\+::slick\+::svg\+::\+Radial\+Gradient\+Fill@{org\+::newdawn\+::slick\+::svg\+::\+Radial\+Gradient\+Fill}}
+\subsubsection{\texorpdfstring{shape}{shape}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_shape}{Shape}} org.\+newdawn.\+slick.\+svg.\+Radial\+Gradient\+Fill.\+shape\hspace{0.3cm}{\ttfamily [private]}}
+
+The shape being filled 

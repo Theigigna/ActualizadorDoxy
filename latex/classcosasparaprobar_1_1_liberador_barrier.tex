@@ -1,0 +1,95 @@
+\hypertarget{classcosasparaprobar_1_1_liberador_barrier}{}\section{cosasparaprobar.\+Liberador\+Barrier Class Reference}
+\label{classcosasparaprobar_1_1_liberador_barrier}\index{cosasparaprobar.\+Liberador\+Barrier@{cosasparaprobar.\+Liberador\+Barrier}}
+Inheritance diagram for cosasparaprobar.\+Liberador\+Barrier\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classcosasparaprobar_1_1_liberador_barrier}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classcosasparaprobar_1_1_liberador_barrier_a1dc02539d347dd8def3f305ce1740ec0}{Liberador\+Barrier}} (Cyclic\+Barrier \mbox{\hyperlink{classcosasparaprobar_1_1_liberador_barrier_aa6e62e53154e857e0aa8023d87cc42c4}{x}})
+\item 
+void \mbox{\hyperlink{classcosasparaprobar_1_1_liberador_barrier_a2942f49c87a66261795bfe3ca4bc48db}{run}} ()
+\end{DoxyCompactItemize}
+\subsection*{Package Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Cyclic\+Barrier \mbox{\hyperlink{classcosasparaprobar_1_1_liberador_barrier_aa6e62e53154e857e0aa8023d87cc42c4}{x}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyAuthor}{Author}
+Ignacio 
+\end{DoxyAuthor}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classcosasparaprobar_1_1_liberador_barrier_a1dc02539d347dd8def3f305ce1740ec0}\label{classcosasparaprobar_1_1_liberador_barrier_a1dc02539d347dd8def3f305ce1740ec0}} 
+\index{cosasparaprobar\+::\+Liberador\+Barrier@{cosasparaprobar\+::\+Liberador\+Barrier}!Liberador\+Barrier@{Liberador\+Barrier}}
+\index{Liberador\+Barrier@{Liberador\+Barrier}!cosasparaprobar\+::\+Liberador\+Barrier@{cosasparaprobar\+::\+Liberador\+Barrier}}
+\subsubsection{\texorpdfstring{Liberador\+Barrier()}{LiberadorBarrier()}}
+{\footnotesize\ttfamily cosasparaprobar.\+Liberador\+Barrier.\+Liberador\+Barrier (\begin{DoxyParamCaption}\item[{Cyclic\+Barrier}]{x }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+22     \{
+23         this.\mbox{\hyperlink{classcosasparaprobar_1_1_liberador_barrier_aa6e62e53154e857e0aa8023d87cc42c4}{x}} = \mbox{\hyperlink{classcosasparaprobar_1_1_liberador_barrier_aa6e62e53154e857e0aa8023d87cc42c4}{x}};
+24     \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classcosasparaprobar_1_1_liberador_barrier_a2942f49c87a66261795bfe3ca4bc48db}\label{classcosasparaprobar_1_1_liberador_barrier_a2942f49c87a66261795bfe3ca4bc48db}} 
+\index{cosasparaprobar\+::\+Liberador\+Barrier@{cosasparaprobar\+::\+Liberador\+Barrier}!run@{run}}
+\index{run@{run}!cosasparaprobar\+::\+Liberador\+Barrier@{cosasparaprobar\+::\+Liberador\+Barrier}}
+\subsubsection{\texorpdfstring{run()}{run()}}
+{\footnotesize\ttfamily void cosasparaprobar.\+Liberador\+Barrier.\+run (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+26                      \{
+27         
+28             System.out.println(\textcolor{stringliteral}{"El liberador se duerme."});
+29             
+30         \textcolor{keywordflow}{try} \{
+31             sleep(4000);
+32         \} \textcolor{keywordflow}{catch} (InterruptedException ex) \{
+33             Logger.getLogger(\mbox{\hyperlink{classcosasparaprobar_1_1_liberador_barrier_a1dc02539d347dd8def3f305ce1740ec0}{LiberadorBarrier}}.class.getName()).log(Level.SEVERE, null, ex);
+34         \}
+35         
+36             System.out.println(\textcolor{stringliteral}{"Hay "} + \mbox{\hyperlink{classcosasparaprobar_1_1_liberador_barrier_aa6e62e53154e857e0aa8023d87cc42c4}{x}}.getNumberWaiting() + \textcolor{stringliteral}{" esperando y necesitan "} + 
+      \mbox{\hyperlink{classcosasparaprobar_1_1_liberador_barrier_aa6e62e53154e857e0aa8023d87cc42c4}{x}}.getParties());
+37             
+38             \textcolor{keywordflow}{try} \{
+39                 sleep(3000);
+40             \} \textcolor{keywordflow}{catch} (InterruptedException ex) \{
+41                 Logger.getLogger(\mbox{\hyperlink{classcosasparaprobar_1_1_liberador_barrier_a1dc02539d347dd8def3f305ce1740ec0}{LiberadorBarrier}}.class.getName()).log(Level.SEVERE, null, 
+      ex);
+42             \}
+43             
+44             System.out.println(\textcolor{stringliteral}{"Me meto y rompo la barrera porque soy el liberador."});
+45             
+46         \textcolor{keywordflow}{try} \{
+47             \mbox{\hyperlink{classcosasparaprobar_1_1_liberador_barrier_aa6e62e53154e857e0aa8023d87cc42c4}{x}}.await();
+48         \} \textcolor{keywordflow}{catch} (InterruptedException ex) \{
+49             Logger.getLogger(\mbox{\hyperlink{classcosasparaprobar_1_1_liberador_barrier_a1dc02539d347dd8def3f305ce1740ec0}{LiberadorBarrier}}.class.getName()).log(Level.SEVERE, null, ex);
+50         \} \textcolor{keywordflow}{catch} (BrokenBarrierException ex) \{
+51             Logger.getLogger(\mbox{\hyperlink{classcosasparaprobar_1_1_liberador_barrier_a1dc02539d347dd8def3f305ce1740ec0}{LiberadorBarrier}}.class.getName()).log(Level.SEVERE, null, ex);
+52         \}
+53             
+54         System.out.println(\textcolor{stringliteral}{"Tuturuuuu."});
+55         
+56     \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classcosasparaprobar_1_1_liberador_barrier_aa6e62e53154e857e0aa8023d87cc42c4}\label{classcosasparaprobar_1_1_liberador_barrier_aa6e62e53154e857e0aa8023d87cc42c4}} 
+\index{cosasparaprobar\+::\+Liberador\+Barrier@{cosasparaprobar\+::\+Liberador\+Barrier}!x@{x}}
+\index{x@{x}!cosasparaprobar\+::\+Liberador\+Barrier@{cosasparaprobar\+::\+Liberador\+Barrier}}
+\subsubsection{\texorpdfstring{x}{x}}
+{\footnotesize\ttfamily Cyclic\+Barrier cosasparaprobar.\+Liberador\+Barrier.\+x\hspace{0.3cm}{\ttfamily [package]}}
+

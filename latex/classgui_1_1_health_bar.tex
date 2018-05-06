@@ -1,0 +1,180 @@
+\hypertarget{classgui_1_1_health_bar}{}\section{gui.\+Health\+Bar Class Reference}
+\label{classgui_1_1_health_bar}\index{gui.\+Health\+Bar@{gui.\+Health\+Bar}}
+Inheritance diagram for gui.\+Health\+Bar\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classgui_1_1_health_bar}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classgui_1_1_health_bar_a5f226ed0f456c4278c6c8eb0c927acc8}{Health\+Bar}} (int \mbox{\hyperlink{classgui_1_1_health_bar_a8895162adfc4ba2fc6d4b324b8460d20}{x}}, int \mbox{\hyperlink{classgui_1_1_health_bar_a330c927f65420a456814ef5bb30b5c9f}{y}}, int \mbox{\hyperlink{classgui_1_1_health_bar_aefb7e95b9777d9bd70b457a0355ddeb7}{width}}, int \mbox{\hyperlink{classgui_1_1_health_bar_a5afdc634dd91432fb9829d3441d1a4aa}{height}}, int \mbox{\hyperlink{classgui_1_1_health_bar_a140d4fec43b960a1ba75f3e767501e6f}{max\+Health}}, int actual\+Health)  throws Slick\+Exception
+\item 
+void \mbox{\hyperlink{classgui_1_1_health_bar_a4e51c8bf35eb0db3d98f2bad5d236890}{change\+Health}} (int num)
+\item 
+void \mbox{\hyperlink{classgui_1_1_health_bar_a9c40e5b00050d6264dae96d7054fab06}{render}} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_graphics}{Graphics}} g)
+\end{DoxyCompactItemize}
+\subsection*{Package Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classgui_1_1_health_bar_a330c927f65420a456814ef5bb30b5c9f}{y}}
+\item 
+int \mbox{\hyperlink{classgui_1_1_health_bar_aefb7e95b9777d9bd70b457a0355ddeb7}{width}}
+\item 
+int \mbox{\hyperlink{classgui_1_1_health_bar_a5afdc634dd91432fb9829d3441d1a4aa}{height}}
+\end{DoxyCompactItemize}
+\subsection*{Static Package Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static int \mbox{\hyperlink{classgui_1_1_health_bar_a2dca8e9cc5a4b5e8276a729e95fad3a8}{Y\+\_\+\+O\+F\+F\+S\+ET}} =8
+\item 
+static int \mbox{\hyperlink{classgui_1_1_health_bar_ac1a7ff0a3f9b52d9217d92cfd0900dba}{W\+\_\+\+O\+F\+F\+S\+ET}} =-\/10
+\item 
+static int \mbox{\hyperlink{classgui_1_1_health_bar_a8493ff991be356585d90e42ee6e343c6}{H\+\_\+\+O\+F\+F\+S\+ET}} =-\/40
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classgui_1_1_health_bar_a140d4fec43b960a1ba75f3e767501e6f}{max\+Health}}
+\item 
+int \mbox{\hyperlink{classgui_1_1_health_bar_a8895162adfc4ba2fc6d4b324b8460d20}{x}}
+\item 
+int \mbox{\hyperlink{classgui_1_1_health_bar_a598c9b29bf24fe830bff5d1ea2707b02}{current\+Health}}
+\end{DoxyCompactItemize}
+\subsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_color}{Color}} \mbox{\hyperlink{classgui_1_1_health_bar_a7e50fd09de837bf25afb6a238fd3e465}{color}} = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_color_a1cd4406bbd518aeb8baefcf19df24424}{Color.\+green}}
+\item 
+static int \mbox{\hyperlink{classgui_1_1_health_bar_a91e3f1b53b5b3016af07ae8e08c3f38a}{X\+\_\+\+O\+F\+F\+S\+ET}} =5
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classgui_1_1_health_bar_a5f226ed0f456c4278c6c8eb0c927acc8}\label{classgui_1_1_health_bar_a5f226ed0f456c4278c6c8eb0c927acc8}} 
+\index{gui\+::\+Health\+Bar@{gui\+::\+Health\+Bar}!Health\+Bar@{Health\+Bar}}
+\index{Health\+Bar@{Health\+Bar}!gui\+::\+Health\+Bar@{gui\+::\+Health\+Bar}}
+\subsubsection{\texorpdfstring{Health\+Bar()}{HealthBar()}}
+{\footnotesize\ttfamily gui.\+Health\+Bar.\+Health\+Bar (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y,  }\item[{int}]{width,  }\item[{int}]{height,  }\item[{int}]{max\+Health,  }\item[{int}]{actual\+Health }\end{DoxyParamCaption}) throws \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_slick_exception}{Slick\+Exception}}\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+20                                                                                                            
+           \{
+21         super(\textcolor{stringliteral}{"res/LifeBar/NoLife.png"});
+22         this.\mbox{\hyperlink{classgui_1_1_health_bar_a8895162adfc4ba2fc6d4b324b8460d20}{x}}=\mbox{\hyperlink{classgui_1_1_health_bar_a8895162adfc4ba2fc6d4b324b8460d20}{x}};
+23         this.\mbox{\hyperlink{classgui_1_1_health_bar_a330c927f65420a456814ef5bb30b5c9f}{y}}=\mbox{\hyperlink{classgui_1_1_health_bar_a330c927f65420a456814ef5bb30b5c9f}{y}};
+24         this.\mbox{\hyperlink{classgui_1_1_health_bar_aefb7e95b9777d9bd70b457a0355ddeb7}{width}}=\mbox{\hyperlink{classgui_1_1_health_bar_aefb7e95b9777d9bd70b457a0355ddeb7}{width}};
+25         this.\mbox{\hyperlink{classgui_1_1_health_bar_a5afdc634dd91432fb9829d3441d1a4aa}{height}}=\mbox{\hyperlink{classgui_1_1_health_bar_a5afdc634dd91432fb9829d3441d1a4aa}{height}};
+26         this.\mbox{\hyperlink{classgui_1_1_health_bar_a140d4fec43b960a1ba75f3e767501e6f}{maxHealth}}=\mbox{\hyperlink{classgui_1_1_health_bar_a140d4fec43b960a1ba75f3e767501e6f}{maxHealth}};
+27         this.\mbox{\hyperlink{classgui_1_1_health_bar_a598c9b29bf24fe830bff5d1ea2707b02}{currentHealth}}=actualHealth;
+28     \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classgui_1_1_health_bar_a4e51c8bf35eb0db3d98f2bad5d236890}\label{classgui_1_1_health_bar_a4e51c8bf35eb0db3d98f2bad5d236890}} 
+\index{gui\+::\+Health\+Bar@{gui\+::\+Health\+Bar}!change\+Health@{change\+Health}}
+\index{change\+Health@{change\+Health}!gui\+::\+Health\+Bar@{gui\+::\+Health\+Bar}}
+\subsubsection{\texorpdfstring{change\+Health()}{changeHealth()}}
+{\footnotesize\ttfamily void gui.\+Health\+Bar.\+change\+Health (\begin{DoxyParamCaption}\item[{int}]{num }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+29                                      \{
+30         \textcolor{keywordflow}{if}(num>\mbox{\hyperlink{classgui_1_1_health_bar_a140d4fec43b960a1ba75f3e767501e6f}{maxHealth}})\{
+31             \mbox{\hyperlink{classgui_1_1_health_bar_a598c9b29bf24fe830bff5d1ea2707b02}{currentHealth}}=\mbox{\hyperlink{classgui_1_1_health_bar_a140d4fec43b960a1ba75f3e767501e6f}{maxHealth}};
+32         \}\textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(num<0)\{
+33             \mbox{\hyperlink{classgui_1_1_health_bar_a598c9b29bf24fe830bff5d1ea2707b02}{currentHealth}}=0;
+34         \}\textcolor{keywordflow}{else}\{
+35             \mbox{\hyperlink{classgui_1_1_health_bar_a598c9b29bf24fe830bff5d1ea2707b02}{currentHealth}}=num;
+36         \}
+37     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classgui_1_1_health_bar_a9c40e5b00050d6264dae96d7054fab06}\label{classgui_1_1_health_bar_a9c40e5b00050d6264dae96d7054fab06}} 
+\index{gui\+::\+Health\+Bar@{gui\+::\+Health\+Bar}!render@{render}}
+\index{render@{render}!gui\+::\+Health\+Bar@{gui\+::\+Health\+Bar}}
+\subsubsection{\texorpdfstring{render()}{render()}}
+{\footnotesize\ttfamily void gui.\+Health\+Bar.\+render (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_graphics}{Graphics}}}]{g }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+38                                   \{
+39         this.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_image_a9bddcca05c7140ab45df8ac5b250b6cd}{draw}}(\mbox{\hyperlink{classgui_1_1_health_bar_a8895162adfc4ba2fc6d4b324b8460d20}{x}},\mbox{\hyperlink{classgui_1_1_health_bar_a330c927f65420a456814ef5bb30b5c9f}{y}},\mbox{\hyperlink{classgui_1_1_health_bar_aefb7e95b9777d9bd70b457a0355ddeb7}{width}},\mbox{\hyperlink{classgui_1_1_health_bar_a5afdc634dd91432fb9829d3441d1a4aa}{height}});
+40         g.setColor(\mbox{\hyperlink{classgui_1_1_health_bar_a7e50fd09de837bf25afb6a238fd3e465}{color}});
+41         g.fillRect(\mbox{\hyperlink{classgui_1_1_health_bar_a8895162adfc4ba2fc6d4b324b8460d20}{x}}+\mbox{\hyperlink{classgui_1_1_health_bar_a91e3f1b53b5b3016af07ae8e08c3f38a}{X\_OFFSET}},\mbox{\hyperlink{classgui_1_1_health_bar_a330c927f65420a456814ef5bb30b5c9f}{y}}+\mbox{\hyperlink{classgui_1_1_health_bar_a2dca8e9cc5a4b5e8276a729e95fad3a8}{Y\_OFFSET}}, (\textcolor{keywordtype}{float}) ((\mbox{\hyperlink{classgui_1_1_health_bar_aefb7e95b9777d9bd70b457a0355ddeb7}{width}}+
+      \mbox{\hyperlink{classgui_1_1_health_bar_ac1a7ff0a3f9b52d9217d92cfd0900dba}{W\_OFFSET}})*(((\textcolor{keywordtype}{float})\mbox{\hyperlink{classgui_1_1_health_bar_a598c9b29bf24fe830bff5d1ea2707b02}{currentHealth}})/\mbox{\hyperlink{classgui_1_1_health_bar_a140d4fec43b960a1ba75f3e767501e6f}{maxHealth}})), 
+      \mbox{\hyperlink{classgui_1_1_health_bar_a5afdc634dd91432fb9829d3441d1a4aa}{height}}+\mbox{\hyperlink{classgui_1_1_health_bar_a8493ff991be356585d90e42ee6e343c6}{H\_OFFSET}});
+42     \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classgui_1_1_health_bar_a7e50fd09de837bf25afb6a238fd3e465}\label{classgui_1_1_health_bar_a7e50fd09de837bf25afb6a238fd3e465}} 
+\index{gui\+::\+Health\+Bar@{gui\+::\+Health\+Bar}!color@{color}}
+\index{color@{color}!gui\+::\+Health\+Bar@{gui\+::\+Health\+Bar}}
+\subsubsection{\texorpdfstring{color}{color}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_color}{Color}} gui.\+Health\+Bar.\+color = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_color_a1cd4406bbd518aeb8baefcf19df24424}{Color.\+green}}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{classgui_1_1_health_bar_a598c9b29bf24fe830bff5d1ea2707b02}\label{classgui_1_1_health_bar_a598c9b29bf24fe830bff5d1ea2707b02}} 
+\index{gui\+::\+Health\+Bar@{gui\+::\+Health\+Bar}!current\+Health@{current\+Health}}
+\index{current\+Health@{current\+Health}!gui\+::\+Health\+Bar@{gui\+::\+Health\+Bar}}
+\subsubsection{\texorpdfstring{current\+Health}{currentHealth}}
+{\footnotesize\ttfamily int gui.\+Health\+Bar.\+current\+Health\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classgui_1_1_health_bar_a8493ff991be356585d90e42ee6e343c6}\label{classgui_1_1_health_bar_a8493ff991be356585d90e42ee6e343c6}} 
+\index{gui\+::\+Health\+Bar@{gui\+::\+Health\+Bar}!H\+\_\+\+O\+F\+F\+S\+ET@{H\+\_\+\+O\+F\+F\+S\+ET}}
+\index{H\+\_\+\+O\+F\+F\+S\+ET@{H\+\_\+\+O\+F\+F\+S\+ET}!gui\+::\+Health\+Bar@{gui\+::\+Health\+Bar}}
+\subsubsection{\texorpdfstring{H\+\_\+\+O\+F\+F\+S\+ET}{H\_OFFSET}}
+{\footnotesize\ttfamily int gui.\+Health\+Bar.\+H\+\_\+\+O\+F\+F\+S\+ET =-\/40\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [package]}}
+
+\mbox{\Hypertarget{classgui_1_1_health_bar_a5afdc634dd91432fb9829d3441d1a4aa}\label{classgui_1_1_health_bar_a5afdc634dd91432fb9829d3441d1a4aa}} 
+\index{gui\+::\+Health\+Bar@{gui\+::\+Health\+Bar}!height@{height}}
+\index{height@{height}!gui\+::\+Health\+Bar@{gui\+::\+Health\+Bar}}
+\subsubsection{\texorpdfstring{height}{height}}
+{\footnotesize\ttfamily int gui.\+Health\+Bar.\+height\hspace{0.3cm}{\ttfamily [package]}}
+
+\mbox{\Hypertarget{classgui_1_1_health_bar_a140d4fec43b960a1ba75f3e767501e6f}\label{classgui_1_1_health_bar_a140d4fec43b960a1ba75f3e767501e6f}} 
+\index{gui\+::\+Health\+Bar@{gui\+::\+Health\+Bar}!max\+Health@{max\+Health}}
+\index{max\+Health@{max\+Health}!gui\+::\+Health\+Bar@{gui\+::\+Health\+Bar}}
+\subsubsection{\texorpdfstring{max\+Health}{maxHealth}}
+{\footnotesize\ttfamily int gui.\+Health\+Bar.\+max\+Health\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classgui_1_1_health_bar_ac1a7ff0a3f9b52d9217d92cfd0900dba}\label{classgui_1_1_health_bar_ac1a7ff0a3f9b52d9217d92cfd0900dba}} 
+\index{gui\+::\+Health\+Bar@{gui\+::\+Health\+Bar}!W\+\_\+\+O\+F\+F\+S\+ET@{W\+\_\+\+O\+F\+F\+S\+ET}}
+\index{W\+\_\+\+O\+F\+F\+S\+ET@{W\+\_\+\+O\+F\+F\+S\+ET}!gui\+::\+Health\+Bar@{gui\+::\+Health\+Bar}}
+\subsubsection{\texorpdfstring{W\+\_\+\+O\+F\+F\+S\+ET}{W\_OFFSET}}
+{\footnotesize\ttfamily int gui.\+Health\+Bar.\+W\+\_\+\+O\+F\+F\+S\+ET =-\/10\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [package]}}
+
+\mbox{\Hypertarget{classgui_1_1_health_bar_aefb7e95b9777d9bd70b457a0355ddeb7}\label{classgui_1_1_health_bar_aefb7e95b9777d9bd70b457a0355ddeb7}} 
+\index{gui\+::\+Health\+Bar@{gui\+::\+Health\+Bar}!width@{width}}
+\index{width@{width}!gui\+::\+Health\+Bar@{gui\+::\+Health\+Bar}}
+\subsubsection{\texorpdfstring{width}{width}}
+{\footnotesize\ttfamily int gui.\+Health\+Bar.\+width\hspace{0.3cm}{\ttfamily [package]}}
+
+\mbox{\Hypertarget{classgui_1_1_health_bar_a8895162adfc4ba2fc6d4b324b8460d20}\label{classgui_1_1_health_bar_a8895162adfc4ba2fc6d4b324b8460d20}} 
+\index{gui\+::\+Health\+Bar@{gui\+::\+Health\+Bar}!x@{x}}
+\index{x@{x}!gui\+::\+Health\+Bar@{gui\+::\+Health\+Bar}}
+\subsubsection{\texorpdfstring{x}{x}}
+{\footnotesize\ttfamily int gui.\+Health\+Bar.\+x\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classgui_1_1_health_bar_a91e3f1b53b5b3016af07ae8e08c3f38a}\label{classgui_1_1_health_bar_a91e3f1b53b5b3016af07ae8e08c3f38a}} 
+\index{gui\+::\+Health\+Bar@{gui\+::\+Health\+Bar}!X\+\_\+\+O\+F\+F\+S\+ET@{X\+\_\+\+O\+F\+F\+S\+ET}}
+\index{X\+\_\+\+O\+F\+F\+S\+ET@{X\+\_\+\+O\+F\+F\+S\+ET}!gui\+::\+Health\+Bar@{gui\+::\+Health\+Bar}}
+\subsubsection{\texorpdfstring{X\+\_\+\+O\+F\+F\+S\+ET}{X\_OFFSET}}
+{\footnotesize\ttfamily int gui.\+Health\+Bar.\+X\+\_\+\+O\+F\+F\+S\+ET =5\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{classgui_1_1_health_bar_a330c927f65420a456814ef5bb30b5c9f}\label{classgui_1_1_health_bar_a330c927f65420a456814ef5bb30b5c9f}} 
+\index{gui\+::\+Health\+Bar@{gui\+::\+Health\+Bar}!y@{y}}
+\index{y@{y}!gui\+::\+Health\+Bar@{gui\+::\+Health\+Bar}}
+\subsubsection{\texorpdfstring{y}{y}}
+{\footnotesize\ttfamily int gui.\+Health\+Bar.\+y\hspace{0.3cm}{\ttfamily [package]}}
+
+\mbox{\Hypertarget{classgui_1_1_health_bar_a2dca8e9cc5a4b5e8276a729e95fad3a8}\label{classgui_1_1_health_bar_a2dca8e9cc5a4b5e8276a729e95fad3a8}} 
+\index{gui\+::\+Health\+Bar@{gui\+::\+Health\+Bar}!Y\+\_\+\+O\+F\+F\+S\+ET@{Y\+\_\+\+O\+F\+F\+S\+ET}}
+\index{Y\+\_\+\+O\+F\+F\+S\+ET@{Y\+\_\+\+O\+F\+F\+S\+ET}!gui\+::\+Health\+Bar@{gui\+::\+Health\+Bar}}
+\subsubsection{\texorpdfstring{Y\+\_\+\+O\+F\+F\+S\+ET}{Y\_OFFSET}}
+{\footnotesize\ttfamily int gui.\+Health\+Bar.\+Y\+\_\+\+O\+F\+F\+S\+ET =8\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [package]}}
+

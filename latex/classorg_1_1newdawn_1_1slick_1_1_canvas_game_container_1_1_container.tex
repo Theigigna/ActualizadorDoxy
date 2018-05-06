@@ -1,0 +1,161 @@
+\hypertarget{classorg_1_1newdawn_1_1slick_1_1_canvas_game_container_1_1_container}{}\section{org.\+newdawn.\+slick.\+Canvas\+Game\+Container.\+Container Class Reference}
+\label{classorg_1_1newdawn_1_1slick_1_1_canvas_game_container_1_1_container}\index{org.\+newdawn.\+slick.\+Canvas\+Game\+Container.\+Container@{org.\+newdawn.\+slick.\+Canvas\+Game\+Container.\+Container}}
+Inheritance diagram for org.\+newdawn.\+slick.\+Canvas\+Game\+Container.\+Container\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{classorg_1_1newdawn_1_1slick_1_1_canvas_game_container_1_1_container}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_canvas_game_container_1_1_container_a3d58909b4612f1251c85e01234d07ac0}{Container}} (\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1_game}{Game}} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_game_container_a6a38bb26e45e1c884940caf35c7cfcdc}{game}}, boolean shared)  throws Slick\+Exception 
+\item 
+int \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_canvas_game_container_1_1_container_a673c1f67eda4f34499c9c98ed68e6b01}{get\+Height}} ()
+\item 
+int \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_canvas_game_container_1_1_container_af5d516263e9340c38d73937f4842de33}{get\+Width}} ()
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_canvas_game_container_1_1_container_a23325dcc30cb88191ac8f0382a2fc611}{check\+Dimensions}} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_canvas_game_container_1_1_container_a2f517d5a251e77f9f6f8d3ee6a7c89c1}{update\+F\+PS}} ()
+\item 
+boolean \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_canvas_game_container_1_1_container_a121236f5afee614695471048aa439611}{running}} ()
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+A game container to provide the canvas context
+
+\begin{DoxyAuthor}{Author}
+kevin 
+\end{DoxyAuthor}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1_canvas_game_container_1_1_container_a3d58909b4612f1251c85e01234d07ac0}\label{classorg_1_1newdawn_1_1slick_1_1_canvas_game_container_1_1_container_a3d58909b4612f1251c85e01234d07ac0}} 
+\index{org\+::newdawn\+::slick\+::\+Canvas\+Game\+Container\+::\+Container@{org\+::newdawn\+::slick\+::\+Canvas\+Game\+Container\+::\+Container}!Container@{Container}}
+\index{Container@{Container}!org\+::newdawn\+::slick\+::\+Canvas\+Game\+Container\+::\+Container@{org\+::newdawn\+::slick\+::\+Canvas\+Game\+Container\+::\+Container}}
+\subsubsection{\texorpdfstring{Container()}{Container()}}
+{\footnotesize\ttfamily org.\+newdawn.\+slick.\+Canvas\+Game\+Container.\+Container.\+Container (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1_game}{Game}}}]{game,  }\item[{boolean}]{shared }\end{DoxyParamCaption}) throws \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_slick_exception}{Slick\+Exception}}\hspace{0.3cm}{\ttfamily [inline]}}
+
+Create a new container wrapped round the game
+
+
+\begin{DoxyParams}{Parameters}
+{\em game} & The game to be held in this container \\
+\hline
+{\em shared} & True if shared GL context should be enabled. This allows multiple panels to share textures and other GL resources. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_slick_exception}{Slick\+Exception}}} & Indicates a failure to initialise \\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyCode}
+129                                                                           \{
+130             super(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_game_container_a6a38bb26e45e1c884940caf35c7cfcdc}{game}}, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_canvas_game_container_a078feee2c69d77cabd1f09b87d055923}{CanvasGameContainer}}.this.getWidth(), 
+      \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_canvas_game_container_a078feee2c69d77cabd1f09b87d055923}{CanvasGameContainer}}.this.getHeight(), \textcolor{keyword}{false});
+131 
+132             \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_game_container_a8c65160202b9f5aafde3fcf03e6155c9}{width}} = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_canvas_game_container_a078feee2c69d77cabd1f09b87d055923}{CanvasGameContainer}}.this.getWidth();
+133             \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_game_container_aac7312a21bbcaabec14be965c683d970}{height}} = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_canvas_game_container_a078feee2c69d77cabd1f09b87d055923}{CanvasGameContainer}}.this.getHeight();
+134             
+135             \textcolor{keywordflow}{if} (shared) \{
+136                 \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_game_container_a5cc7494b95d6266057fc755a8a4f7e60}{enableSharedContext}}();
+137             \}
+138         \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1_canvas_game_container_1_1_container_a23325dcc30cb88191ac8f0382a2fc611}\label{classorg_1_1newdawn_1_1slick_1_1_canvas_game_container_1_1_container_a23325dcc30cb88191ac8f0382a2fc611}} 
+\index{org\+::newdawn\+::slick\+::\+Canvas\+Game\+Container\+::\+Container@{org\+::newdawn\+::slick\+::\+Canvas\+Game\+Container\+::\+Container}!check\+Dimensions@{check\+Dimensions}}
+\index{check\+Dimensions@{check\+Dimensions}!org\+::newdawn\+::slick\+::\+Canvas\+Game\+Container\+::\+Container@{org\+::newdawn\+::slick\+::\+Canvas\+Game\+Container\+::\+Container}}
+\subsubsection{\texorpdfstring{check\+Dimensions()}{checkDimensions()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+Canvas\+Game\+Container.\+Container.\+check\+Dimensions (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Check the dimensions of the canvas match the display 
+\begin{DoxyCode}
+171                                       \{
+172             \textcolor{keywordflow}{if} ((\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_game_container_a8c65160202b9f5aafde3fcf03e6155c9}{width}} != \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_canvas_game_container_a078feee2c69d77cabd1f09b87d055923}{CanvasGameContainer}}.this.getWidth()) ||
+173                 (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_game_container_aac7312a21bbcaabec14be965c683d970}{height}} != \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_canvas_game_container_a078feee2c69d77cabd1f09b87d055923}{CanvasGameContainer}}.this.getHeight())) \{
+174                 
+175                 \textcolor{keywordflow}{try} \{
+176                     \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_app_game_container_aa2de68db61ddd3917a8edc0177ebdfe3}{setDisplayMode}}(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_canvas_game_container_a078feee2c69d77cabd1f09b87d055923}{CanvasGameContainer}}.this.getWidth(), 
+177                                    \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_canvas_game_container_a078feee2c69d77cabd1f09b87d055923}{CanvasGameContainer}}.this.getHeight(), \textcolor{keyword}{false});
+178                 \} \textcolor{keywordflow}{catch} (SlickException e) \{
+179                     Log.error(e);
+180                 \}
+181             \}
+182         \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1_canvas_game_container_1_1_container_a673c1f67eda4f34499c9c98ed68e6b01}\label{classorg_1_1newdawn_1_1slick_1_1_canvas_game_container_1_1_container_a673c1f67eda4f34499c9c98ed68e6b01}} 
+\index{org\+::newdawn\+::slick\+::\+Canvas\+Game\+Container\+::\+Container@{org\+::newdawn\+::slick\+::\+Canvas\+Game\+Container\+::\+Container}!get\+Height@{get\+Height}}
+\index{get\+Height@{get\+Height}!org\+::newdawn\+::slick\+::\+Canvas\+Game\+Container\+::\+Container@{org\+::newdawn\+::slick\+::\+Canvas\+Game\+Container\+::\+Container}}
+\subsubsection{\texorpdfstring{get\+Height()}{getHeight()}}
+{\footnotesize\ttfamily int org.\+newdawn.\+slick.\+Canvas\+Game\+Container.\+Container.\+get\+Height (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_game_container_a7eff88473fe5715fdfc2f92e8cb48521}{org.\+newdawn.\+slick.\+Game\+Container\+::get\+Height()}} 
+\end{DoxySeeAlso}
+
+
+Implements \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1gui_1_1_g_u_i_context_a6370bee8e5833f95e27724b6a533c211}{org.\+newdawn.\+slick.\+gui.\+G\+U\+I\+Context}}.
+
+
+\begin{DoxyCode}
+157                                \{
+158             \textcolor{keywordflow}{return} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_canvas_game_container_a078feee2c69d77cabd1f09b87d055923}{CanvasGameContainer}}.this.getHeight();
+159         \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1_canvas_game_container_1_1_container_af5d516263e9340c38d73937f4842de33}\label{classorg_1_1newdawn_1_1slick_1_1_canvas_game_container_1_1_container_af5d516263e9340c38d73937f4842de33}} 
+\index{org\+::newdawn\+::slick\+::\+Canvas\+Game\+Container\+::\+Container@{org\+::newdawn\+::slick\+::\+Canvas\+Game\+Container\+::\+Container}!get\+Width@{get\+Width}}
+\index{get\+Width@{get\+Width}!org\+::newdawn\+::slick\+::\+Canvas\+Game\+Container\+::\+Container@{org\+::newdawn\+::slick\+::\+Canvas\+Game\+Container\+::\+Container}}
+\subsubsection{\texorpdfstring{get\+Width()}{getWidth()}}
+{\footnotesize\ttfamily int org.\+newdawn.\+slick.\+Canvas\+Game\+Container.\+Container.\+get\+Width (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_game_container_a938fe1a28567182445e60450915d5f69}{org.\+newdawn.\+slick.\+Game\+Container\+::get\+Width()}} 
+\end{DoxySeeAlso}
+
+
+Implements \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1gui_1_1_g_u_i_context_a013e06eaddd0d6872dc628ca171c6753}{org.\+newdawn.\+slick.\+gui.\+G\+U\+I\+Context}}.
+
+
+\begin{DoxyCode}
+164                               \{
+165             \textcolor{keywordflow}{return} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_canvas_game_container_a078feee2c69d77cabd1f09b87d055923}{CanvasGameContainer}}.this.getWidth();
+166         \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1_canvas_game_container_1_1_container_a121236f5afee614695471048aa439611}\label{classorg_1_1newdawn_1_1slick_1_1_canvas_game_container_1_1_container_a121236f5afee614695471048aa439611}} 
+\index{org\+::newdawn\+::slick\+::\+Canvas\+Game\+Container\+::\+Container@{org\+::newdawn\+::slick\+::\+Canvas\+Game\+Container\+::\+Container}!running@{running}}
+\index{running@{running}!org\+::newdawn\+::slick\+::\+Canvas\+Game\+Container\+::\+Container@{org\+::newdawn\+::slick\+::\+Canvas\+Game\+Container\+::\+Container}}
+\subsubsection{\texorpdfstring{running()}{running()}}
+{\footnotesize\ttfamily boolean org.\+newdawn.\+slick.\+Canvas\+Game\+Container.\+Container.\+running (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_game_container_a5cb10a093281abb5b6ee60f2b18c26c3}{org.\+newdawn.\+slick.\+Game\+Container\+::running()}} 
+\end{DoxySeeAlso}
+
+\begin{DoxyCode}
+150                                     \{
+151             \textcolor{keywordflow}{return} super.running() && \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_canvas_game_container_a078feee2c69d77cabd1f09b87d055923}{CanvasGameContainer}}.this.isDisplayable();
+152         \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1_canvas_game_container_1_1_container_a2f517d5a251e77f9f6f8d3ee6a7c89c1}\label{classorg_1_1newdawn_1_1slick_1_1_canvas_game_container_1_1_container_a2f517d5a251e77f9f6f8d3ee6a7c89c1}} 
+\index{org\+::newdawn\+::slick\+::\+Canvas\+Game\+Container\+::\+Container@{org\+::newdawn\+::slick\+::\+Canvas\+Game\+Container\+::\+Container}!update\+F\+PS@{update\+F\+PS}}
+\index{update\+F\+PS@{update\+F\+PS}!org\+::newdawn\+::slick\+::\+Canvas\+Game\+Container\+::\+Container@{org\+::newdawn\+::slick\+::\+Canvas\+Game\+Container\+::\+Container}}
+\subsubsection{\texorpdfstring{update\+F\+P\+S()}{updateFPS()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+Canvas\+Game\+Container.\+Container.\+update\+F\+PS (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+Updated the F\+PS counter 
+\begin{DoxyCode}
+143                                    \{
+144             super.updateFPS();
+145         \}
+\end{DoxyCode}

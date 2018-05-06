@@ -1,0 +1,113 @@
+\hypertarget{classconcurrency_1_1diners_1_1_philosopher}{}\section{concurrency.\+diners.\+Philosopher Class Reference}
+\label{classconcurrency_1_1diners_1_1_philosopher}\index{concurrency.\+diners.\+Philosopher@{concurrency.\+diners.\+Philosopher}}
+Inheritance diagram for concurrency.\+diners.\+Philosopher\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classconcurrency_1_1diners_1_1_philosopher}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classconcurrency_1_1diners_1_1_philosopher_a7c998b2c972341a5d6afd8f35e55a749}{run}} ()
+\end{DoxyCompactItemize}
+\subsection*{Package Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classconcurrency_1_1diners_1_1_philosopher_a79f885d27cffb8c3bf00ecd084fe5357}{Philosopher}} (\mbox{\hyperlink{classconcurrency_1_1diners_1_1_diners}{Diners}} ctr, int id, \mbox{\hyperlink{classconcurrency_1_1diners_1_1_fork}{Fork}} l, \mbox{\hyperlink{classconcurrency_1_1diners_1_1_fork}{Fork}} r)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classconcurrency_1_1diners_1_1_philosopher_a857d8882220e7e07a789a77cac3a6975}{identity}}
+\item 
+\mbox{\hyperlink{classconcurrency_1_1diners_1_1_phil_canvas}{Phil\+Canvas}} \mbox{\hyperlink{classconcurrency_1_1diners_1_1_philosopher_a2199286e6b640f1398de1b2eeeedf478}{view}}
+\item 
+\mbox{\hyperlink{classconcurrency_1_1diners_1_1_diners}{Diners}} \mbox{\hyperlink{classconcurrency_1_1diners_1_1_philosopher_a92157e1742f905b5fde4f58437d8c41f}{controller}}
+\item 
+\mbox{\hyperlink{classconcurrency_1_1diners_1_1_fork}{Fork}} \mbox{\hyperlink{classconcurrency_1_1diners_1_1_philosopher_ab7a3ed11b232741170a3e2b3cd2b76ce}{left}}
+\item 
+\mbox{\hyperlink{classconcurrency_1_1diners_1_1_fork}{Fork}} \mbox{\hyperlink{classconcurrency_1_1diners_1_1_philosopher_ac9c6e05b2b2b0d9d78c68cb2e51b96f7}{right}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classconcurrency_1_1diners_1_1_philosopher_a79f885d27cffb8c3bf00ecd084fe5357}\label{classconcurrency_1_1diners_1_1_philosopher_a79f885d27cffb8c3bf00ecd084fe5357}} 
+\index{concurrency\+::diners\+::\+Philosopher@{concurrency\+::diners\+::\+Philosopher}!Philosopher@{Philosopher}}
+\index{Philosopher@{Philosopher}!concurrency\+::diners\+::\+Philosopher@{concurrency\+::diners\+::\+Philosopher}}
+\subsubsection{\texorpdfstring{Philosopher()}{Philosopher()}}
+{\footnotesize\ttfamily concurrency.\+diners.\+Philosopher.\+Philosopher (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classconcurrency_1_1diners_1_1_diners}{Diners}}}]{ctr,  }\item[{int}]{id,  }\item[{\mbox{\hyperlink{classconcurrency_1_1diners_1_1_fork}{Fork}}}]{l,  }\item[{\mbox{\hyperlink{classconcurrency_1_1diners_1_1_fork}{Fork}}}]{r }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [package]}}
+
+
+\begin{DoxyCode}
+12                                                   \{
+13     \mbox{\hyperlink{classconcurrency_1_1diners_1_1_philosopher_a92157e1742f905b5fde4f58437d8c41f}{controller}} = ctr; \mbox{\hyperlink{classconcurrency_1_1diners_1_1_philosopher_a2199286e6b640f1398de1b2eeeedf478}{view}} = ctr.display;
+14     \mbox{\hyperlink{classconcurrency_1_1diners_1_1_philosopher_a857d8882220e7e07a789a77cac3a6975}{identity}} = id; \mbox{\hyperlink{classconcurrency_1_1diners_1_1_philosopher_ab7a3ed11b232741170a3e2b3cd2b76ce}{left}} = l; \mbox{\hyperlink{classconcurrency_1_1diners_1_1_philosopher_ac9c6e05b2b2b0d9d78c68cb2e51b96f7}{right}} = r;
+15   \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classconcurrency_1_1diners_1_1_philosopher_a7c998b2c972341a5d6afd8f35e55a749}\label{classconcurrency_1_1diners_1_1_philosopher_a7c998b2c972341a5d6afd8f35e55a749}} 
+\index{concurrency\+::diners\+::\+Philosopher@{concurrency\+::diners\+::\+Philosopher}!run@{run}}
+\index{run@{run}!concurrency\+::diners\+::\+Philosopher@{concurrency\+::diners\+::\+Philosopher}}
+\subsubsection{\texorpdfstring{run()}{run()}}
+{\footnotesize\ttfamily void concurrency.\+diners.\+Philosopher.\+run (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+17                     \{
+18     \textcolor{keywordflow}{try} \{
+19       \textcolor{keywordflow}{while} (\textcolor{keyword}{true}) \{
+20         \textcolor{comment}{//thinking}
+21         \mbox{\hyperlink{classconcurrency_1_1diners_1_1_philosopher_a2199286e6b640f1398de1b2eeeedf478}{view}}.\mbox{\hyperlink{classconcurrency_1_1diners_1_1_phil_canvas_ab80a0adca1d4df3de8bd715deb3af5fb}{setPhil}}(\mbox{\hyperlink{classconcurrency_1_1diners_1_1_philosopher_a857d8882220e7e07a789a77cac3a6975}{identity}},\mbox{\hyperlink{classconcurrency_1_1diners_1_1_philosopher_a2199286e6b640f1398de1b2eeeedf478}{view}}.\mbox{\hyperlink{classconcurrency_1_1diners_1_1_phil_canvas_a139d7ade3fe2a78e31efdf3bc5f7bf07}{THINKING}});
+22         sleep(\mbox{\hyperlink{classconcurrency_1_1diners_1_1_philosopher_a92157e1742f905b5fde4f58437d8c41f}{controller}}.\mbox{\hyperlink{classconcurrency_1_1diners_1_1_diners_afda5c09982e95dad9d35038d370f0526}{sleepTime}}());
+23         \textcolor{comment}{//hungry}
+24         \mbox{\hyperlink{classconcurrency_1_1diners_1_1_philosopher_a2199286e6b640f1398de1b2eeeedf478}{view}}.\mbox{\hyperlink{classconcurrency_1_1diners_1_1_phil_canvas_ab80a0adca1d4df3de8bd715deb3af5fb}{setPhil}}(\mbox{\hyperlink{classconcurrency_1_1diners_1_1_philosopher_a857d8882220e7e07a789a77cac3a6975}{identity}},\mbox{\hyperlink{classconcurrency_1_1diners_1_1_philosopher_a2199286e6b640f1398de1b2eeeedf478}{view}}.\mbox{\hyperlink{classconcurrency_1_1diners_1_1_phil_canvas_aebfcea027e984c520629c95bfda80774}{HUNGRY}});
+25         \mbox{\hyperlink{classconcurrency_1_1diners_1_1_philosopher_ac9c6e05b2b2b0d9d78c68cb2e51b96f7}{right}}.\mbox{\hyperlink{classconcurrency_1_1diners_1_1_fork_abf1b23ca61bdc54fce3810309e72b876}{get}}();
+26         \textcolor{comment}{//gotright chopstick}
+27         \mbox{\hyperlink{classconcurrency_1_1diners_1_1_philosopher_a2199286e6b640f1398de1b2eeeedf478}{view}}.\mbox{\hyperlink{classconcurrency_1_1diners_1_1_phil_canvas_ab80a0adca1d4df3de8bd715deb3af5fb}{setPhil}}(\mbox{\hyperlink{classconcurrency_1_1diners_1_1_philosopher_a857d8882220e7e07a789a77cac3a6975}{identity}},\mbox{\hyperlink{classconcurrency_1_1diners_1_1_philosopher_a2199286e6b640f1398de1b2eeeedf478}{view}}.\mbox{\hyperlink{classconcurrency_1_1diners_1_1_phil_canvas_a4912c2b6fc26e79bd9ef5fbd8ab22e60}{GOTRIGHT}});
+28         sleep(500);
+29         \mbox{\hyperlink{classconcurrency_1_1diners_1_1_philosopher_ab7a3ed11b232741170a3e2b3cd2b76ce}{left}}.\mbox{\hyperlink{classconcurrency_1_1diners_1_1_fork_abf1b23ca61bdc54fce3810309e72b876}{get}}();
+30         \textcolor{comment}{//eating}
+31         \mbox{\hyperlink{classconcurrency_1_1diners_1_1_philosopher_a2199286e6b640f1398de1b2eeeedf478}{view}}.\mbox{\hyperlink{classconcurrency_1_1diners_1_1_phil_canvas_ab80a0adca1d4df3de8bd715deb3af5fb}{setPhil}}(\mbox{\hyperlink{classconcurrency_1_1diners_1_1_philosopher_a857d8882220e7e07a789a77cac3a6975}{identity}},\mbox{\hyperlink{classconcurrency_1_1diners_1_1_philosopher_a2199286e6b640f1398de1b2eeeedf478}{view}}.\mbox{\hyperlink{classconcurrency_1_1diners_1_1_phil_canvas_a73f1ebd3d60faee43b73468877245058}{EATING}});
+32         sleep(\mbox{\hyperlink{classconcurrency_1_1diners_1_1_philosopher_a92157e1742f905b5fde4f58437d8c41f}{controller}}.\mbox{\hyperlink{classconcurrency_1_1diners_1_1_diners_aa9a143c6257dd6e5c179fc47d53753c6}{eatTime}}());
+33         \mbox{\hyperlink{classconcurrency_1_1diners_1_1_philosopher_ac9c6e05b2b2b0d9d78c68cb2e51b96f7}{right}}.\mbox{\hyperlink{classconcurrency_1_1diners_1_1_fork_acff549ca1ca1540fa092ac44692624b5}{put}}();
+34         \mbox{\hyperlink{classconcurrency_1_1diners_1_1_philosopher_ab7a3ed11b232741170a3e2b3cd2b76ce}{left}}.\mbox{\hyperlink{classconcurrency_1_1diners_1_1_fork_acff549ca1ca1540fa092ac44692624b5}{put}}();
+35       \}
+36     \} \textcolor{keywordflow}{catch} (java.lang.InterruptedException e) \{\}
+37   \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classconcurrency_1_1diners_1_1_philosopher_a92157e1742f905b5fde4f58437d8c41f}\label{classconcurrency_1_1diners_1_1_philosopher_a92157e1742f905b5fde4f58437d8c41f}} 
+\index{concurrency\+::diners\+::\+Philosopher@{concurrency\+::diners\+::\+Philosopher}!controller@{controller}}
+\index{controller@{controller}!concurrency\+::diners\+::\+Philosopher@{concurrency\+::diners\+::\+Philosopher}}
+\subsubsection{\texorpdfstring{controller}{controller}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classconcurrency_1_1diners_1_1_diners}{Diners}} concurrency.\+diners.\+Philosopher.\+controller\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classconcurrency_1_1diners_1_1_philosopher_a857d8882220e7e07a789a77cac3a6975}\label{classconcurrency_1_1diners_1_1_philosopher_a857d8882220e7e07a789a77cac3a6975}} 
+\index{concurrency\+::diners\+::\+Philosopher@{concurrency\+::diners\+::\+Philosopher}!identity@{identity}}
+\index{identity@{identity}!concurrency\+::diners\+::\+Philosopher@{concurrency\+::diners\+::\+Philosopher}}
+\subsubsection{\texorpdfstring{identity}{identity}}
+{\footnotesize\ttfamily int concurrency.\+diners.\+Philosopher.\+identity\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classconcurrency_1_1diners_1_1_philosopher_ab7a3ed11b232741170a3e2b3cd2b76ce}\label{classconcurrency_1_1diners_1_1_philosopher_ab7a3ed11b232741170a3e2b3cd2b76ce}} 
+\index{concurrency\+::diners\+::\+Philosopher@{concurrency\+::diners\+::\+Philosopher}!left@{left}}
+\index{left@{left}!concurrency\+::diners\+::\+Philosopher@{concurrency\+::diners\+::\+Philosopher}}
+\subsubsection{\texorpdfstring{left}{left}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classconcurrency_1_1diners_1_1_fork}{Fork}} concurrency.\+diners.\+Philosopher.\+left\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classconcurrency_1_1diners_1_1_philosopher_ac9c6e05b2b2b0d9d78c68cb2e51b96f7}\label{classconcurrency_1_1diners_1_1_philosopher_ac9c6e05b2b2b0d9d78c68cb2e51b96f7}} 
+\index{concurrency\+::diners\+::\+Philosopher@{concurrency\+::diners\+::\+Philosopher}!right@{right}}
+\index{right@{right}!concurrency\+::diners\+::\+Philosopher@{concurrency\+::diners\+::\+Philosopher}}
+\subsubsection{\texorpdfstring{right}{right}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classconcurrency_1_1diners_1_1_fork}{Fork}} concurrency.\+diners.\+Philosopher.\+right\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classconcurrency_1_1diners_1_1_philosopher_a2199286e6b640f1398de1b2eeeedf478}\label{classconcurrency_1_1diners_1_1_philosopher_a2199286e6b640f1398de1b2eeeedf478}} 
+\index{concurrency\+::diners\+::\+Philosopher@{concurrency\+::diners\+::\+Philosopher}!view@{view}}
+\index{view@{view}!concurrency\+::diners\+::\+Philosopher@{concurrency\+::diners\+::\+Philosopher}}
+\subsubsection{\texorpdfstring{view}{view}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classconcurrency_1_1diners_1_1_phil_canvas}{Phil\+Canvas}} concurrency.\+diners.\+Philosopher.\+view\hspace{0.3cm}{\ttfamily [private]}}
+

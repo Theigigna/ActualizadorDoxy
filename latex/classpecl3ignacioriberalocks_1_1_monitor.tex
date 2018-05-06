@@ -1,0 +1,82 @@
+\hypertarget{classpecl3ignacioriberalocks_1_1_monitor}{}\section{pecl3ignacioriberalocks.\+Monitor Class Reference}
+\label{classpecl3ignacioriberalocks_1_1_monitor}\index{pecl3ignacioriberalocks.\+Monitor@{pecl3ignacioriberalocks.\+Monitor}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+synchronized void \mbox{\hyperlink{classpecl3ignacioriberalocks_1_1_monitor_a545e3f6a3c058b60d7d41a21af3c8d5c}{abrir}} ()
+\item 
+void \mbox{\hyperlink{classpecl3ignacioriberalocks_1_1_monitor_aa780ba5836e28e77615854afb0ad251d}{cerrar}} ()
+\item 
+void \mbox{\hyperlink{classpecl3ignacioriberalocks_1_1_monitor_a499e23011f3562a32a0587d74d6a0154}{comprobar}} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Reentrant\+Lock \mbox{\hyperlink{classpecl3ignacioriberalocks_1_1_monitor_acde04bf90a7d9fc0ab9e3362f8c594bf}{lockaux}} = new Reentrant\+Lock()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyAuthor}{Author}
+Ignacio 
+\end{DoxyAuthor}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classpecl3ignacioriberalocks_1_1_monitor_a545e3f6a3c058b60d7d41a21af3c8d5c}\label{classpecl3ignacioriberalocks_1_1_monitor_a545e3f6a3c058b60d7d41a21af3c8d5c}} 
+\index{pecl3ignacioriberalocks\+::\+Monitor@{pecl3ignacioriberalocks\+::\+Monitor}!abrir@{abrir}}
+\index{abrir@{abrir}!pecl3ignacioriberalocks\+::\+Monitor@{pecl3ignacioriberalocks\+::\+Monitor}}
+\subsubsection{\texorpdfstring{abrir()}{abrir()}}
+{\footnotesize\ttfamily synchronized void pecl3ignacioriberalocks.\+Monitor.\+abrir (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+25     \{
+26         \mbox{\hyperlink{classpecl3ignacioriberalocks_1_1_monitor_acde04bf90a7d9fc0ab9e3362f8c594bf}{lockaux}}.unlock();
+27         \textcolor{comment}{/*abierto = true;}
+28 \textcolor{comment}{        notifyAll();*/}
+29     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classpecl3ignacioriberalocks_1_1_monitor_aa780ba5836e28e77615854afb0ad251d}\label{classpecl3ignacioriberalocks_1_1_monitor_aa780ba5836e28e77615854afb0ad251d}} 
+\index{pecl3ignacioriberalocks\+::\+Monitor@{pecl3ignacioriberalocks\+::\+Monitor}!cerrar@{cerrar}}
+\index{cerrar@{cerrar}!pecl3ignacioriberalocks\+::\+Monitor@{pecl3ignacioriberalocks\+::\+Monitor}}
+\subsubsection{\texorpdfstring{cerrar()}{cerrar()}}
+{\footnotesize\ttfamily void pecl3ignacioriberalocks.\+Monitor.\+cerrar (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+32     \{
+33         \textcolor{comment}{//abierto = false;}
+34         \mbox{\hyperlink{classpecl3ignacioriberalocks_1_1_monitor_acde04bf90a7d9fc0ab9e3362f8c594bf}{lockaux}}.lock();
+35     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classpecl3ignacioriberalocks_1_1_monitor_a499e23011f3562a32a0587d74d6a0154}\label{classpecl3ignacioriberalocks_1_1_monitor_a499e23011f3562a32a0587d74d6a0154}} 
+\index{pecl3ignacioriberalocks\+::\+Monitor@{pecl3ignacioriberalocks\+::\+Monitor}!comprobar@{comprobar}}
+\index{comprobar@{comprobar}!pecl3ignacioriberalocks\+::\+Monitor@{pecl3ignacioriberalocks\+::\+Monitor}}
+\subsubsection{\texorpdfstring{comprobar()}{comprobar()}}
+{\footnotesize\ttfamily void pecl3ignacioriberalocks.\+Monitor.\+comprobar (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+37                             \{
+38         
+39         \mbox{\hyperlink{classpecl3ignacioriberalocks_1_1_monitor_acde04bf90a7d9fc0ab9e3362f8c594bf}{lockaux}}.lock();
+40         \mbox{\hyperlink{classpecl3ignacioriberalocks_1_1_monitor_acde04bf90a7d9fc0ab9e3362f8c594bf}{lockaux}}.unlock();
+41         \textcolor{comment}{/*while (!abierto) \{}
+42 \textcolor{comment}{            try \{}
+43 \textcolor{comment}{                wait();}
+44 \textcolor{comment}{            \} catch (InterruptedException ex) \{}
+45 \textcolor{comment}{                Logger.getLogger(Monitor.class.getName()).log(Level.SEVERE, null, ex);}
+46 \textcolor{comment}{            \}}
+47 \textcolor{comment}{        \}*/}
+48     \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classpecl3ignacioriberalocks_1_1_monitor_acde04bf90a7d9fc0ab9e3362f8c594bf}\label{classpecl3ignacioriberalocks_1_1_monitor_acde04bf90a7d9fc0ab9e3362f8c594bf}} 
+\index{pecl3ignacioriberalocks\+::\+Monitor@{pecl3ignacioriberalocks\+::\+Monitor}!lockaux@{lockaux}}
+\index{lockaux@{lockaux}!pecl3ignacioriberalocks\+::\+Monitor@{pecl3ignacioriberalocks\+::\+Monitor}}
+\subsubsection{\texorpdfstring{lockaux}{lockaux}}
+{\footnotesize\ttfamily Reentrant\+Lock pecl3ignacioriberalocks.\+Monitor.\+lockaux = new Reentrant\+Lock()\hspace{0.3cm}{\ttfamily [private]}}
+

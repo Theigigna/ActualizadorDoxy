@@ -1,0 +1,144 @@
+\hypertarget{interfaceorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_transition}{}\section{org.\+newdawn.\+slick.\+state.\+transition.\+Transition Interface Reference}
+\label{interfaceorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_transition}\index{org.\+newdawn.\+slick.\+state.\+transition.\+Transition@{org.\+newdawn.\+slick.\+state.\+transition.\+Transition}}
+Inheritance diagram for org.\+newdawn.\+slick.\+state.\+transition.\+Transition\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=8.800000cm]{interfaceorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_transition}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_transition_a9be3072f6e2423e3d0a451a419d1d518}{update}} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1_state_based_game}{State\+Based\+Game}} game, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_game_container}{Game\+Container}} container, int delta)  throws Slick\+Exception
+\item 
+void \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_transition_ab8b0668c059830d938575d1a0b08bd93}{pre\+Render}} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1_state_based_game}{State\+Based\+Game}} game, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_game_container}{Game\+Container}} container, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_graphics}{Graphics}} g)  throws Slick\+Exception
+\item 
+void \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_transition_ac113f4d5a19962a62a8adec7f9ab5d47}{post\+Render}} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1_state_based_game}{State\+Based\+Game}} game, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_game_container}{Game\+Container}} container, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_graphics}{Graphics}} g)  throws Slick\+Exception
+\item 
+boolean \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_transition_af397d5185cf09c30c3f51d5021d63815}{is\+Complete}} ()
+\item 
+void \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_transition_a7b59f0c9205f1f0417ee18bc526e5b01}{init}} (\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1state_1_1_game_state}{Game\+State}} first\+State, \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1state_1_1_game_state}{Game\+State}} second\+State)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A transition between two game states
+
+\begin{DoxyAuthor}{Author}
+kevin 
+\end{DoxyAuthor}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{interfaceorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_transition_a7b59f0c9205f1f0417ee18bc526e5b01}\label{interfaceorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_transition_a7b59f0c9205f1f0417ee18bc526e5b01}} 
+\index{org\+::newdawn\+::slick\+::state\+::transition\+::\+Transition@{org\+::newdawn\+::slick\+::state\+::transition\+::\+Transition}!init@{init}}
+\index{init@{init}!org\+::newdawn\+::slick\+::state\+::transition\+::\+Transition@{org\+::newdawn\+::slick\+::state\+::transition\+::\+Transition}}
+\subsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+state.\+transition.\+Transition.\+init (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1state_1_1_game_state}{Game\+State}}}]{first\+State,  }\item[{\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1state_1_1_game_state}{Game\+State}}}]{second\+State }\end{DoxyParamCaption})}
+
+Initialise the transition
+
+
+\begin{DoxyParams}{Parameters}
+{\em first\+State} & The first state we\textquotesingle{}re rendering (this will be rendered by the framework) \\
+\hline
+{\em second\+State} & The second stat we\textquotesingle{}re transitioning to or from (this one won\textquotesingle{}t be rendered) \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_fade_in_transition_ab2f9be16d067c2b63f3093cd93fbe2aa}{org.\+newdawn.\+slick.\+state.\+transition.\+Fade\+In\+Transition}}, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_combined_transition_add47b8016bc87384ec197ba6923d1438}{org.\+newdawn.\+slick.\+state.\+transition.\+Combined\+Transition}}, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_fade_out_transition_aaf4f47fa4c7b06de675aa1c75f1c0f19}{org.\+newdawn.\+slick.\+state.\+transition.\+Fade\+Out\+Transition}}, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_select_transition_aead0953842e8e95346fb683d5825887d}{org.\+newdawn.\+slick.\+state.\+transition.\+Select\+Transition}}, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_blobby_transition_ac28ad95ee1406c3969f3962189e07e26}{org.\+newdawn.\+slick.\+state.\+transition.\+Blobby\+Transition}}, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_horizontal_split_transition_aafaf7629dd26bcc698861152d1552c83}{org.\+newdawn.\+slick.\+state.\+transition.\+Horizontal\+Split\+Transition}}, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_vertical_split_transition_a1722b29907ee226e0632b6694fe887a7}{org.\+newdawn.\+slick.\+state.\+transition.\+Vertical\+Split\+Transition}}, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_rotate_transition_a527c48345f18db529a56719c5647bd94}{org.\+newdawn.\+slick.\+state.\+transition.\+Rotate\+Transition}}, and \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_empty_transition_a3f0213c8f0057187a3438bcecb2d3eb8}{org.\+newdawn.\+slick.\+state.\+transition.\+Empty\+Transition}}.
+
+\mbox{\Hypertarget{interfaceorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_transition_af397d5185cf09c30c3f51d5021d63815}\label{interfaceorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_transition_af397d5185cf09c30c3f51d5021d63815}} 
+\index{org\+::newdawn\+::slick\+::state\+::transition\+::\+Transition@{org\+::newdawn\+::slick\+::state\+::transition\+::\+Transition}!is\+Complete@{is\+Complete}}
+\index{is\+Complete@{is\+Complete}!org\+::newdawn\+::slick\+::state\+::transition\+::\+Transition@{org\+::newdawn\+::slick\+::state\+::transition\+::\+Transition}}
+\subsubsection{\texorpdfstring{is\+Complete()}{isComplete()}}
+{\footnotesize\ttfamily boolean org.\+newdawn.\+slick.\+state.\+transition.\+Transition.\+is\+Complete (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Check if this transtion has been completed
+
+\begin{DoxyReturn}{Returns}
+True if the transition has been completed 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_select_transition_a796e76c619629c113f7e1ccd312f3806}{org.\+newdawn.\+slick.\+state.\+transition.\+Select\+Transition}}, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_blobby_transition_a432cd75d9e001f112dce00002228f587}{org.\+newdawn.\+slick.\+state.\+transition.\+Blobby\+Transition}}, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_horizontal_split_transition_a4c6260f80153048b389e151023b8efcc}{org.\+newdawn.\+slick.\+state.\+transition.\+Horizontal\+Split\+Transition}}, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_vertical_split_transition_ac2ff9b2c7c657194cfe9e77f2573ef82}{org.\+newdawn.\+slick.\+state.\+transition.\+Vertical\+Split\+Transition}}, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_rotate_transition_a08722d7a235f796e69e77c5e665ab3e5}{org.\+newdawn.\+slick.\+state.\+transition.\+Rotate\+Transition}}, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_fade_in_transition_a449fa6073e39419c2689267e3ca18ca4}{org.\+newdawn.\+slick.\+state.\+transition.\+Fade\+In\+Transition}}, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_fade_out_transition_a798425e8d39823af0dac48ab0831bad4}{org.\+newdawn.\+slick.\+state.\+transition.\+Fade\+Out\+Transition}}, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_cross_state_transition_a2a81c43dc051ee2290787a5a10ab2ac2}{org.\+newdawn.\+slick.\+state.\+transition.\+Cross\+State\+Transition}}, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_combined_transition_a8c5e343409337ff699285e29ca8ec457}{org.\+newdawn.\+slick.\+state.\+transition.\+Combined\+Transition}}, and \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_empty_transition_a1edda3494b76acdb7231ac8a039eddce}{org.\+newdawn.\+slick.\+state.\+transition.\+Empty\+Transition}}.
+
+\mbox{\Hypertarget{interfaceorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_transition_ac113f4d5a19962a62a8adec7f9ab5d47}\label{interfaceorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_transition_ac113f4d5a19962a62a8adec7f9ab5d47}} 
+\index{org\+::newdawn\+::slick\+::state\+::transition\+::\+Transition@{org\+::newdawn\+::slick\+::state\+::transition\+::\+Transition}!post\+Render@{post\+Render}}
+\index{post\+Render@{post\+Render}!org\+::newdawn\+::slick\+::state\+::transition\+::\+Transition@{org\+::newdawn\+::slick\+::state\+::transition\+::\+Transition}}
+\subsubsection{\texorpdfstring{post\+Render()}{postRender()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+state.\+transition.\+Transition.\+post\+Render (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1_state_based_game}{State\+Based\+Game}}}]{game,  }\item[{\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_game_container}{Game\+Container}}}]{container,  }\item[{\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_graphics}{Graphics}}}]{g }\end{DoxyParamCaption}) throws \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_slick_exception}{Slick\+Exception}}}
+
+Render the transition over the existing state rendering
+
+
+\begin{DoxyParams}{Parameters}
+{\em game} & The game this transition is being rendered as part of \\
+\hline
+{\em container} & The container holding the game \\
+\hline
+{\em g} & The graphics context to use when rendering the transiton \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_slick_exception}{Slick\+Exception}}} & Indicates a failure occured during the render \\
+\hline
+\end{DoxyExceptions}
+
+
+Implemented in \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_select_transition_ab8383cc1738214b1408eef07cab39df1}{org.\+newdawn.\+slick.\+state.\+transition.\+Select\+Transition}}, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_blobby_transition_a9aa4c5f2238ca92dabd30690db9ef544}{org.\+newdawn.\+slick.\+state.\+transition.\+Blobby\+Transition}}, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_horizontal_split_transition_a285316f58e6bc93c6476e4c35b60268b}{org.\+newdawn.\+slick.\+state.\+transition.\+Horizontal\+Split\+Transition}}, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_vertical_split_transition_a54a4f79a015e46a983ff7172be755eb9}{org.\+newdawn.\+slick.\+state.\+transition.\+Vertical\+Split\+Transition}}, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_rotate_transition_aff86fd0d40fff8a2c1c126dc9ddba04e}{org.\+newdawn.\+slick.\+state.\+transition.\+Rotate\+Transition}}, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_fade_in_transition_ae1edbafe81aaa69c2d570d78f3e33c76}{org.\+newdawn.\+slick.\+state.\+transition.\+Fade\+In\+Transition}}, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_fade_out_transition_a7e5dacd1888317dd8ccaee8d216890dc}{org.\+newdawn.\+slick.\+state.\+transition.\+Fade\+Out\+Transition}}, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_combined_transition_a31b265b22a85d140c70135142e499a81}{org.\+newdawn.\+slick.\+state.\+transition.\+Combined\+Transition}}, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_cross_state_transition_ad932e1984f648e582290937e9f1c880f}{org.\+newdawn.\+slick.\+state.\+transition.\+Cross\+State\+Transition}}, and \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_empty_transition_afa7596430720cec5a4899e1018dcef1f}{org.\+newdawn.\+slick.\+state.\+transition.\+Empty\+Transition}}.
+
+\mbox{\Hypertarget{interfaceorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_transition_ab8b0668c059830d938575d1a0b08bd93}\label{interfaceorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_transition_ab8b0668c059830d938575d1a0b08bd93}} 
+\index{org\+::newdawn\+::slick\+::state\+::transition\+::\+Transition@{org\+::newdawn\+::slick\+::state\+::transition\+::\+Transition}!pre\+Render@{pre\+Render}}
+\index{pre\+Render@{pre\+Render}!org\+::newdawn\+::slick\+::state\+::transition\+::\+Transition@{org\+::newdawn\+::slick\+::state\+::transition\+::\+Transition}}
+\subsubsection{\texorpdfstring{pre\+Render()}{preRender()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+state.\+transition.\+Transition.\+pre\+Render (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1_state_based_game}{State\+Based\+Game}}}]{game,  }\item[{\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_game_container}{Game\+Container}}}]{container,  }\item[{\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_graphics}{Graphics}}}]{g }\end{DoxyParamCaption}) throws \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_slick_exception}{Slick\+Exception}}}
+
+Render the transition before the existing state rendering
+
+
+\begin{DoxyParams}{Parameters}
+{\em game} & The game this transition is being rendered as part of \\
+\hline
+{\em container} & The container holding the game \\
+\hline
+{\em g} & The graphics context to use when rendering the transiton \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_slick_exception}{Slick\+Exception}}} & Indicates a failure occured during the render \\
+\hline
+\end{DoxyExceptions}
+
+
+Implemented in \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_select_transition_a3d694958bbeb595e3a962f9c1bd4da08}{org.\+newdawn.\+slick.\+state.\+transition.\+Select\+Transition}}, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_vertical_split_transition_a2e9f0f1a8f9037f9215919433936e2a6}{org.\+newdawn.\+slick.\+state.\+transition.\+Vertical\+Split\+Transition}}, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_horizontal_split_transition_af1ca23f69b349c5be7c0ea2dccb9545b}{org.\+newdawn.\+slick.\+state.\+transition.\+Horizontal\+Split\+Transition}}, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_rotate_transition_aac26c3811fc2aab9c291e5323bd4adab}{org.\+newdawn.\+slick.\+state.\+transition.\+Rotate\+Transition}}, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_blobby_transition_a0846a3ff8130ea47883069f622f644ec}{org.\+newdawn.\+slick.\+state.\+transition.\+Blobby\+Transition}}, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_fade_in_transition_a393e56290e2fe2bb5d8c6fde7d11b3a2}{org.\+newdawn.\+slick.\+state.\+transition.\+Fade\+In\+Transition}}, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_fade_out_transition_af23dc84a0a07121f8f4ec307fdb578b2}{org.\+newdawn.\+slick.\+state.\+transition.\+Fade\+Out\+Transition}}, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_combined_transition_ae98ecdbd92ff9280e4d1c7a9cb2c52a4}{org.\+newdawn.\+slick.\+state.\+transition.\+Combined\+Transition}}, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_cross_state_transition_abcc8e000421b21be33f4165808023f54}{org.\+newdawn.\+slick.\+state.\+transition.\+Cross\+State\+Transition}}, and \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_empty_transition_a67332f753655254f66e9beced05f59c6}{org.\+newdawn.\+slick.\+state.\+transition.\+Empty\+Transition}}.
+
+\mbox{\Hypertarget{interfaceorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_transition_a9be3072f6e2423e3d0a451a419d1d518}\label{interfaceorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_transition_a9be3072f6e2423e3d0a451a419d1d518}} 
+\index{org\+::newdawn\+::slick\+::state\+::transition\+::\+Transition@{org\+::newdawn\+::slick\+::state\+::transition\+::\+Transition}!update@{update}}
+\index{update@{update}!org\+::newdawn\+::slick\+::state\+::transition\+::\+Transition@{org\+::newdawn\+::slick\+::state\+::transition\+::\+Transition}}
+\subsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+state.\+transition.\+Transition.\+update (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1_state_based_game}{State\+Based\+Game}}}]{game,  }\item[{\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_game_container}{Game\+Container}}}]{container,  }\item[{int}]{delta }\end{DoxyParamCaption}) throws \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_slick_exception}{Slick\+Exception}}}
+
+Update the transition. Cause what ever happens in the transition to happen
+
+
+\begin{DoxyParams}{Parameters}
+{\em game} & The game this transition is being rendered as part of \\
+\hline
+{\em container} & The container holding the game \\
+\hline
+{\em delta} & The amount of time passed since last update \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_slick_exception}{Slick\+Exception}}} & Indicates a failure occured during the update \\
+\hline
+\end{DoxyExceptions}
+
+
+Implemented in \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_select_transition_a17304499adede77a5323e747aee6bcdd}{org.\+newdawn.\+slick.\+state.\+transition.\+Select\+Transition}}, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_vertical_split_transition_a72184556b43e32b01f0436d2ea8b0723}{org.\+newdawn.\+slick.\+state.\+transition.\+Vertical\+Split\+Transition}}, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_horizontal_split_transition_acfce01e5c44c98055d96d16c7608e313}{org.\+newdawn.\+slick.\+state.\+transition.\+Horizontal\+Split\+Transition}}, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_blobby_transition_aaa0d8b8dcc426ac891d25778066c4fcd}{org.\+newdawn.\+slick.\+state.\+transition.\+Blobby\+Transition}}, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_rotate_transition_a9e3f2c191f7f04925f8319b1e85a29f8}{org.\+newdawn.\+slick.\+state.\+transition.\+Rotate\+Transition}}, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_combined_transition_a2cabd31a15e0fcddff1bcea6690fab6e}{org.\+newdawn.\+slick.\+state.\+transition.\+Combined\+Transition}}, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_fade_in_transition_ac5e00c42c8595a375d284e1d8b0c2b93}{org.\+newdawn.\+slick.\+state.\+transition.\+Fade\+In\+Transition}}, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_fade_out_transition_a0005911f18fd8a8442cda0fdd92f1e1b}{org.\+newdawn.\+slick.\+state.\+transition.\+Fade\+Out\+Transition}}, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_cross_state_transition_ab619f7506eb8e6c1ff13c86e79a99777}{org.\+newdawn.\+slick.\+state.\+transition.\+Cross\+State\+Transition}}, and \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_empty_transition_a354222c590151b34c62fbc02d56f30e8}{org.\+newdawn.\+slick.\+state.\+transition.\+Empty\+Transition}}.
+

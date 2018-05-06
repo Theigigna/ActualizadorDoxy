@@ -1,0 +1,830 @@
+\hypertarget{classorg_1_1newdawn_1_1slick_1_1_angel_code_font}{}\section{org.\+newdawn.\+slick.\+Angel\+Code\+Font Class Reference}
+\label{classorg_1_1newdawn_1_1slick_1_1_angel_code_font}\index{org.\+newdawn.\+slick.\+Angel\+Code\+Font@{org.\+newdawn.\+slick.\+Angel\+Code\+Font}}
+Inheritance diagram for org.\+newdawn.\+slick.\+Angel\+Code\+Font\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classorg_1_1newdawn_1_1slick_1_1_angel_code_font}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_angel_code_font_1_1_char_def}{Char\+Def}}
+\item 
+class \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_angel_code_font_1_1_display_list}{Display\+List}}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_angel_code_font_ace951b7ad8fa5c241e0abc04b753a19d}{Angel\+Code\+Font}} (String fnt\+File, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_image}{Image}} image)  throws Slick\+Exception 
+\item 
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_angel_code_font_a297faf1a0114300995431cb785de84a7}{Angel\+Code\+Font}} (String fnt\+File, String img\+File)  throws Slick\+Exception 
+\item 
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_angel_code_font_a99a224bebb26190c9a63dc137e244c2d}{Angel\+Code\+Font}} (String fnt\+File, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_image}{Image}} image, boolean caching)  throws Slick\+Exception 
+\item 
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_angel_code_font_a2411ec47cc2aae89de84eb458965f23a}{Angel\+Code\+Font}} (String fnt\+File, String img\+File, boolean caching)  throws Slick\+Exception 
+\item 
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_angel_code_font_a42a4781ac6490b35dfd4aa2ab198bf63}{Angel\+Code\+Font}} (String name, Input\+Stream fnt\+File, Input\+Stream img\+File)  throws Slick\+Exception 
+\item 
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_angel_code_font_a6c9903125d8255e1039635a9b13a7786}{Angel\+Code\+Font}} (String name, Input\+Stream fnt\+File, Input\+Stream img\+File, boolean caching)  throws Slick\+Exception 
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_angel_code_font_a8cc06c81dd2f11c47844d863a03e3433}{draw\+String}} (float x, float y, String text)
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_angel_code_font_a8067ec0d8027311bbcc16aaec1421b2d}{draw\+String}} (float x, float y, String text, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_color}{Color}} col)
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_angel_code_font_abed0e6374eb587d6a49f3f33e69f34c0}{draw\+String}} (float x, float y, String text, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_color}{Color}} col, int start\+Index, int end\+Index)
+\item 
+int \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_angel_code_font_af88eab0e69e2ff42c027bbcbeb6ccd1f}{get\+Y\+Offset}} (String text)
+\item 
+int \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_angel_code_font_ad962179705beb6355e270ebc65b04b2a}{get\+Height}} (String text)
+\item 
+int \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_angel_code_font_a0202edaba33e21e6bfb3c7dbaebbbb92}{get\+Width}} (String text)
+\item 
+int \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_angel_code_font_aa462c138af142eb6086c66205b0456af}{get\+Line\+Height}} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_angel_code_font_a8950d304cfa460c9d2755900abda6c02}{parse\+Fnt}} (Input\+Stream fnt\+File)  throws Slick\+Exception 
+\item 
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_angel_code_font_1_1_char_def}{Char\+Def}} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_angel_code_font_a8e57dd6e277285b9fdce64880a05a474}{parse\+Char}} (String line)  throws Slick\+Exception 
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_angel_code_font_a9e742aa7b9ef84525a6e33bedcefd421}{render}} (String text, int start, int end)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+boolean \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_angel_code_font_a1b429bd8175e017d9df97818af84cb06}{display\+List\+Caching}} = true
+\item 
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_image}{Image}} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_angel_code_font_a891bf3b2a299313dc4f37c3808982aba}{font\+Image}}
+\item 
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_angel_code_font_1_1_char_def}{Char\+Def}} \mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_angel_code_font_acdb3d26438f0f30d33db0a543715a3b1}{chars}}
+\item 
+int \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_angel_code_font_a79b1b71568fb19eaed6dea5babc6e752}{line\+Height}}
+\item 
+int \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_angel_code_font_af768584a5e95470e18937a431dd4bcb1}{base\+Display\+List\+ID}} = -\/1
+\item 
+int \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_angel_code_font_ac8dc56c5ce3f951729b7239efd3811df}{eldest\+Display\+List\+ID}}
+\item 
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_angel_code_font_1_1_display_list}{Display\+List}} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_angel_code_font_a82733df33c4098515ea0a832ca7218da}{eldest\+Display\+List}}
+\item 
+final Linked\+Hash\+Map \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_angel_code_font_ad2583887204ad560daf5546b8eb6ee7d}{display\+Lists}}
+\end{DoxyCompactItemize}
+\subsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1opengl_1_1renderer_1_1_s_g_l}{S\+GL}} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_angel_code_font_a22c7ebf9e7aad9665c6866438b675da2}{GL}} = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1renderer_1_1_renderer_abe742c3a7dfca67c6c01821d27087308}{Renderer.\+get}}()
+\item 
+static final int \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_angel_code_font_a493a4a9c0c402ad916d51ef38b66e036}{D\+I\+S\+P\+L\+A\+Y\+\_\+\+L\+I\+S\+T\+\_\+\+C\+A\+C\+H\+E\+\_\+\+S\+I\+ZE}} = 200
+\item 
+static final int \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_angel_code_font_ab0bebe07d0e5a16dbccf3e99c2229f1a}{M\+A\+X\+\_\+\+C\+H\+AR}} = 255
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A font implementation that will parse B\+M\+Font format font files. The font files can be output by Hiero, which is included with Slick, and also the Angel\+Code font tool available at\+:
+
+\href{http://www.angelcode.com/products/bmfont/}{\tt http\+://www.\+angelcode.\+com/products/bmfont/}
+
+This implementation copes with both the font display and kerning information allowing nicer looking paragraphs of text. Note that this utility only supports the text B\+M\+Font format definition file.
+
+\begin{DoxyAuthor}{Author}
+kevin 
+
+Nathan Sweet \href{mailto:misc@n4te.com}{\tt misc@n4te.\+com} 
+\end{DoxyAuthor}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1_angel_code_font_ace951b7ad8fa5c241e0abc04b753a19d}\label{classorg_1_1newdawn_1_1slick_1_1_angel_code_font_ace951b7ad8fa5c241e0abc04b753a19d}} 
+\index{org\+::newdawn\+::slick\+::\+Angel\+Code\+Font@{org\+::newdawn\+::slick\+::\+Angel\+Code\+Font}!Angel\+Code\+Font@{Angel\+Code\+Font}}
+\index{Angel\+Code\+Font@{Angel\+Code\+Font}!org\+::newdawn\+::slick\+::\+Angel\+Code\+Font@{org\+::newdawn\+::slick\+::\+Angel\+Code\+Font}}
+\subsubsection{\texorpdfstring{Angel\+Code\+Font()}{AngelCodeFont()}\hspace{0.1cm}{\footnotesize\ttfamily [1/6]}}
+{\footnotesize\ttfamily org.\+newdawn.\+slick.\+Angel\+Code\+Font.\+Angel\+Code\+Font (\begin{DoxyParamCaption}\item[{String}]{fnt\+File,  }\item[{\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_image}{Image}}}]{image }\end{DoxyParamCaption}) throws \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_slick_exception}{Slick\+Exception}}\hspace{0.3cm}{\ttfamily [inline]}}
+
+Create a new font based on a font definition from Angel\+Code\textquotesingle{}s tool and the font image generated from the tool.
+
+
+\begin{DoxyParams}{Parameters}
+{\em fnt\+File} & The location of the font defnition file \\
+\hline
+{\em image} & The image to use for the font \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_slick_exception}{Slick\+Exception}}} & Indicates a failure to load either file \\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyCode}
+86                                                                             \{
+87         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_angel_code_font_a891bf3b2a299313dc4f37c3808982aba}{fontImage}} = image;
+88 
+89         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_angel_code_font_a8950d304cfa460c9d2755900abda6c02}{parseFnt}}(ResourceLoader.getResourceAsStream(fntFile));
+90     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1_angel_code_font_a297faf1a0114300995431cb785de84a7}\label{classorg_1_1newdawn_1_1slick_1_1_angel_code_font_a297faf1a0114300995431cb785de84a7}} 
+\index{org\+::newdawn\+::slick\+::\+Angel\+Code\+Font@{org\+::newdawn\+::slick\+::\+Angel\+Code\+Font}!Angel\+Code\+Font@{Angel\+Code\+Font}}
+\index{Angel\+Code\+Font@{Angel\+Code\+Font}!org\+::newdawn\+::slick\+::\+Angel\+Code\+Font@{org\+::newdawn\+::slick\+::\+Angel\+Code\+Font}}
+\subsubsection{\texorpdfstring{Angel\+Code\+Font()}{AngelCodeFont()}\hspace{0.1cm}{\footnotesize\ttfamily [2/6]}}
+{\footnotesize\ttfamily org.\+newdawn.\+slick.\+Angel\+Code\+Font.\+Angel\+Code\+Font (\begin{DoxyParamCaption}\item[{String}]{fnt\+File,  }\item[{String}]{img\+File }\end{DoxyParamCaption}) throws \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_slick_exception}{Slick\+Exception}}\hspace{0.3cm}{\ttfamily [inline]}}
+
+Create a new font based on a font definition from Angel\+Code\textquotesingle{}s tool and the font image generated from the tool.
+
+
+\begin{DoxyParams}{Parameters}
+{\em fnt\+File} & The location of the font defnition file \\
+\hline
+{\em img\+File} & The location of the font image \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_slick_exception}{Slick\+Exception}}} & Indicates a failure to load either file \\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyCode}
+103                                                                                \{
+104         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_angel_code_font_a891bf3b2a299313dc4f37c3808982aba}{fontImage}} = \textcolor{keyword}{new} Image(imgFile);
+105 
+106         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_angel_code_font_a8950d304cfa460c9d2755900abda6c02}{parseFnt}}(ResourceLoader.getResourceAsStream(fntFile));
+107     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1_angel_code_font_a99a224bebb26190c9a63dc137e244c2d}\label{classorg_1_1newdawn_1_1slick_1_1_angel_code_font_a99a224bebb26190c9a63dc137e244c2d}} 
+\index{org\+::newdawn\+::slick\+::\+Angel\+Code\+Font@{org\+::newdawn\+::slick\+::\+Angel\+Code\+Font}!Angel\+Code\+Font@{Angel\+Code\+Font}}
+\index{Angel\+Code\+Font@{Angel\+Code\+Font}!org\+::newdawn\+::slick\+::\+Angel\+Code\+Font@{org\+::newdawn\+::slick\+::\+Angel\+Code\+Font}}
+\subsubsection{\texorpdfstring{Angel\+Code\+Font()}{AngelCodeFont()}\hspace{0.1cm}{\footnotesize\ttfamily [3/6]}}
+{\footnotesize\ttfamily org.\+newdawn.\+slick.\+Angel\+Code\+Font.\+Angel\+Code\+Font (\begin{DoxyParamCaption}\item[{String}]{fnt\+File,  }\item[{\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_image}{Image}}}]{image,  }\item[{boolean}]{caching }\end{DoxyParamCaption}) throws \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_slick_exception}{Slick\+Exception}}\hspace{0.3cm}{\ttfamily [inline]}}
+
+Create a new font based on a font definition from Angel\+Code\textquotesingle{}s tool and the font image generated from the tool.
+
+
+\begin{DoxyParams}{Parameters}
+{\em fnt\+File} & The location of the font defnition file \\
+\hline
+{\em image} & The image to use for the font \\
+\hline
+{\em caching} & True if this font should use display list caching \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_slick_exception}{Slick\+Exception}}} & Indicates a failure to load either file \\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyCode}
+123                                   \{
+124         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_angel_code_font_a891bf3b2a299313dc4f37c3808982aba}{fontImage}} = image;
+125         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_angel_code_font_a1b429bd8175e017d9df97818af84cb06}{displayListCaching}} = caching;
+126         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_angel_code_font_a8950d304cfa460c9d2755900abda6c02}{parseFnt}}(ResourceLoader.getResourceAsStream(fntFile));
+127     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1_angel_code_font_a2411ec47cc2aae89de84eb458965f23a}\label{classorg_1_1newdawn_1_1slick_1_1_angel_code_font_a2411ec47cc2aae89de84eb458965f23a}} 
+\index{org\+::newdawn\+::slick\+::\+Angel\+Code\+Font@{org\+::newdawn\+::slick\+::\+Angel\+Code\+Font}!Angel\+Code\+Font@{Angel\+Code\+Font}}
+\index{Angel\+Code\+Font@{Angel\+Code\+Font}!org\+::newdawn\+::slick\+::\+Angel\+Code\+Font@{org\+::newdawn\+::slick\+::\+Angel\+Code\+Font}}
+\subsubsection{\texorpdfstring{Angel\+Code\+Font()}{AngelCodeFont()}\hspace{0.1cm}{\footnotesize\ttfamily [4/6]}}
+{\footnotesize\ttfamily org.\+newdawn.\+slick.\+Angel\+Code\+Font.\+Angel\+Code\+Font (\begin{DoxyParamCaption}\item[{String}]{fnt\+File,  }\item[{String}]{img\+File,  }\item[{boolean}]{caching }\end{DoxyParamCaption}) throws \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_slick_exception}{Slick\+Exception}}\hspace{0.3cm}{\ttfamily [inline]}}
+
+Create a new font based on a font definition from Angel\+Code\textquotesingle{}s tool and the font image generated from the tool.
+
+
+\begin{DoxyParams}{Parameters}
+{\em fnt\+File} & The location of the font defnition file \\
+\hline
+{\em img\+File} & The location of the font image \\
+\hline
+{\em caching} & True if this font should use display list caching \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_slick_exception}{Slick\+Exception}}} & Indicates a failure to load either file \\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyCode}
+143                                   \{
+144         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_angel_code_font_a891bf3b2a299313dc4f37c3808982aba}{fontImage}} = \textcolor{keyword}{new} Image(imgFile);
+145         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_angel_code_font_a1b429bd8175e017d9df97818af84cb06}{displayListCaching}} = caching;
+146         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_angel_code_font_a8950d304cfa460c9d2755900abda6c02}{parseFnt}}(ResourceLoader.getResourceAsStream(fntFile));
+147     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1_angel_code_font_a42a4781ac6490b35dfd4aa2ab198bf63}\label{classorg_1_1newdawn_1_1slick_1_1_angel_code_font_a42a4781ac6490b35dfd4aa2ab198bf63}} 
+\index{org\+::newdawn\+::slick\+::\+Angel\+Code\+Font@{org\+::newdawn\+::slick\+::\+Angel\+Code\+Font}!Angel\+Code\+Font@{Angel\+Code\+Font}}
+\index{Angel\+Code\+Font@{Angel\+Code\+Font}!org\+::newdawn\+::slick\+::\+Angel\+Code\+Font@{org\+::newdawn\+::slick\+::\+Angel\+Code\+Font}}
+\subsubsection{\texorpdfstring{Angel\+Code\+Font()}{AngelCodeFont()}\hspace{0.1cm}{\footnotesize\ttfamily [5/6]}}
+{\footnotesize\ttfamily org.\+newdawn.\+slick.\+Angel\+Code\+Font.\+Angel\+Code\+Font (\begin{DoxyParamCaption}\item[{String}]{name,  }\item[{Input\+Stream}]{fnt\+File,  }\item[{Input\+Stream}]{img\+File }\end{DoxyParamCaption}) throws \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_slick_exception}{Slick\+Exception}}\hspace{0.3cm}{\ttfamily [inline]}}
+
+Create a new font based on a font definition from Angel\+Code\textquotesingle{}s tool and the font image generated from the tool.
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The name to assign to the font image in the image store \\
+\hline
+{\em fnt\+File} & The stream of the font defnition file \\
+\hline
+{\em img\+File} & The stream of the font image \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_slick_exception}{Slick\+Exception}}} & Indicates a failure to load either file \\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyCode}
+163                                   \{
+164         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_angel_code_font_a891bf3b2a299313dc4f37c3808982aba}{fontImage}} = \textcolor{keyword}{new} Image(imgFile, name, \textcolor{keyword}{false});
+165 
+166         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_angel_code_font_a8950d304cfa460c9d2755900abda6c02}{parseFnt}}(fntFile);
+167     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1_angel_code_font_a6c9903125d8255e1039635a9b13a7786}\label{classorg_1_1newdawn_1_1slick_1_1_angel_code_font_a6c9903125d8255e1039635a9b13a7786}} 
+\index{org\+::newdawn\+::slick\+::\+Angel\+Code\+Font@{org\+::newdawn\+::slick\+::\+Angel\+Code\+Font}!Angel\+Code\+Font@{Angel\+Code\+Font}}
+\index{Angel\+Code\+Font@{Angel\+Code\+Font}!org\+::newdawn\+::slick\+::\+Angel\+Code\+Font@{org\+::newdawn\+::slick\+::\+Angel\+Code\+Font}}
+\subsubsection{\texorpdfstring{Angel\+Code\+Font()}{AngelCodeFont()}\hspace{0.1cm}{\footnotesize\ttfamily [6/6]}}
+{\footnotesize\ttfamily org.\+newdawn.\+slick.\+Angel\+Code\+Font.\+Angel\+Code\+Font (\begin{DoxyParamCaption}\item[{String}]{name,  }\item[{Input\+Stream}]{fnt\+File,  }\item[{Input\+Stream}]{img\+File,  }\item[{boolean}]{caching }\end{DoxyParamCaption}) throws \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_slick_exception}{Slick\+Exception}}\hspace{0.3cm}{\ttfamily [inline]}}
+
+Create a new font based on a font definition from Angel\+Code\textquotesingle{}s tool and the font image generated from the tool.
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The name to assign to the font image in the image store \\
+\hline
+{\em fnt\+File} & The stream of the font defnition file \\
+\hline
+{\em img\+File} & The stream of the font image \\
+\hline
+{\em caching} & True if this font should use display list caching \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_slick_exception}{Slick\+Exception}}} & Indicates a failure to load either file \\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyCode}
+185                                                    \{
+186         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_angel_code_font_a891bf3b2a299313dc4f37c3808982aba}{fontImage}} = \textcolor{keyword}{new} Image(imgFile, name, \textcolor{keyword}{false});
+187 
+188         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_angel_code_font_a1b429bd8175e017d9df97818af84cb06}{displayListCaching}} = caching;
+189         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_angel_code_font_a8950d304cfa460c9d2755900abda6c02}{parseFnt}}(fntFile);
+190     \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1_angel_code_font_a8cc06c81dd2f11c47844d863a03e3433}\label{classorg_1_1newdawn_1_1slick_1_1_angel_code_font_a8cc06c81dd2f11c47844d863a03e3433}} 
+\index{org\+::newdawn\+::slick\+::\+Angel\+Code\+Font@{org\+::newdawn\+::slick\+::\+Angel\+Code\+Font}!draw\+String@{draw\+String}}
+\index{draw\+String@{draw\+String}!org\+::newdawn\+::slick\+::\+Angel\+Code\+Font@{org\+::newdawn\+::slick\+::\+Angel\+Code\+Font}}
+\subsubsection{\texorpdfstring{draw\+String()}{drawString()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+Angel\+Code\+Font.\+draw\+String (\begin{DoxyParamCaption}\item[{float}]{x,  }\item[{float}]{y,  }\item[{String}]{text }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1_font_a40b19381efcb64ce1ce4d446eff1e350}{org.\+newdawn.\+slick.\+Font\+::draw\+String}}(float, float, java.\+lang.\+String) 
+\end{DoxySeeAlso}
+
+
+Implements \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1_font_a40b19381efcb64ce1ce4d446eff1e350}{org.\+newdawn.\+slick.\+Font}}.
+
+
+\begin{DoxyCode}
+326                                                           \{
+327         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_angel_code_font_a8cc06c81dd2f11c47844d863a03e3433}{drawString}}(x, y, text, Color.white);
+328     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1_angel_code_font_a8067ec0d8027311bbcc16aaec1421b2d}\label{classorg_1_1newdawn_1_1slick_1_1_angel_code_font_a8067ec0d8027311bbcc16aaec1421b2d}} 
+\index{org\+::newdawn\+::slick\+::\+Angel\+Code\+Font@{org\+::newdawn\+::slick\+::\+Angel\+Code\+Font}!draw\+String@{draw\+String}}
+\index{draw\+String@{draw\+String}!org\+::newdawn\+::slick\+::\+Angel\+Code\+Font@{org\+::newdawn\+::slick\+::\+Angel\+Code\+Font}}
+\subsubsection{\texorpdfstring{draw\+String()}{drawString()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+Angel\+Code\+Font.\+draw\+String (\begin{DoxyParamCaption}\item[{float}]{x,  }\item[{float}]{y,  }\item[{String}]{text,  }\item[{\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_color}{Color}}}]{col }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1_font_a40b19381efcb64ce1ce4d446eff1e350}{org.\+newdawn.\+slick.\+Font\+::draw\+String}}(float, float, java.\+lang.\+String, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_color}{org.\+newdawn.\+slick.\+Color}}) 
+\end{DoxySeeAlso}
+
+
+Implements \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1_font_afa84859277995b6537d940e466d9f011}{org.\+newdawn.\+slick.\+Font}}.
+
+
+\begin{DoxyCode}
+334                                                                      \{
+335         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_angel_code_font_a8cc06c81dd2f11c47844d863a03e3433}{drawString}}(x, y, text, col, 0, text.length() - 1);
+336     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1_angel_code_font_abed0e6374eb587d6a49f3f33e69f34c0}\label{classorg_1_1newdawn_1_1slick_1_1_angel_code_font_abed0e6374eb587d6a49f3f33e69f34c0}} 
+\index{org\+::newdawn\+::slick\+::\+Angel\+Code\+Font@{org\+::newdawn\+::slick\+::\+Angel\+Code\+Font}!draw\+String@{draw\+String}}
+\index{draw\+String@{draw\+String}!org\+::newdawn\+::slick\+::\+Angel\+Code\+Font@{org\+::newdawn\+::slick\+::\+Angel\+Code\+Font}}
+\subsubsection{\texorpdfstring{draw\+String()}{drawString()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+Angel\+Code\+Font.\+draw\+String (\begin{DoxyParamCaption}\item[{float}]{x,  }\item[{float}]{y,  }\item[{String}]{text,  }\item[{\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_color}{Color}}}]{col,  }\item[{int}]{start\+Index,  }\item[{int}]{end\+Index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1_font_a81ec0a184b55c2f7860d2644bc0731cf}{Font\+::draw\+String(float, float, String, Color, int, int)}} 
+\end{DoxySeeAlso}
+
+
+Implements \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1_font_a81ec0a184b55c2f7860d2644bc0731cf}{org.\+newdawn.\+slick.\+Font}}.
+
+
+\begin{DoxyCode}
+342                                           \{
+343         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_angel_code_font_a891bf3b2a299313dc4f37c3808982aba}{fontImage}}.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_image_ad5e41640d7b1b235926f3d248935e694}{bind}}();
+344         col.bind();
+345 
+346         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_angel_code_font_a22c7ebf9e7aad9665c6866438b675da2}{GL}}.\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1opengl_1_1renderer_1_1_s_g_l_a647aff6cabd0c83869166144e9aee833}{glTranslatef}}(x, y, 0);
+347         \textcolor{keywordflow}{if} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_angel_code_font_a1b429bd8175e017d9df97818af84cb06}{displayListCaching}} && startIndex == 0 && endIndex == text.length() - 1) \{
+348             DisplayList displayList = (DisplayList)\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_angel_code_font_ad2583887204ad560daf5546b8eb6ee7d}{displayLists}}.get(text);
+349             \textcolor{keywordflow}{if} (displayList != null) \{
+350                 \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_angel_code_font_a22c7ebf9e7aad9665c6866438b675da2}{GL}}.\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1opengl_1_1renderer_1_1_s_g_l_a8482d9603203e93027e90042db3f561a}{glCallList}}(displayList.id);
+351             \} \textcolor{keywordflow}{else} \{
+352                 \textcolor{comment}{// Compile a new display list.}
+353                 displayList = \textcolor{keyword}{new} DisplayList();
+354                 displayList.text = text;
+355                 \textcolor{keywordtype}{int} displayListCount = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_angel_code_font_ad2583887204ad560daf5546b8eb6ee7d}{displayLists}}.size();
+356                 \textcolor{keywordflow}{if} (displayListCount < \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_angel_code_font_a493a4a9c0c402ad916d51ef38b66e036}{DISPLAY\_LIST\_CACHE\_SIZE}}) \{
+357                     displayList.id = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_angel_code_font_af768584a5e95470e18937a431dd4bcb1}{baseDisplayListID}} + displayListCount;
+358                 \} \textcolor{keywordflow}{else} \{
+359                     displayList.id = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_angel_code_font_ac8dc56c5ce3f951729b7239efd3811df}{eldestDisplayListID}};
+360                     \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_angel_code_font_ad2583887204ad560daf5546b8eb6ee7d}{displayLists}}.remove(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_angel_code_font_a82733df33c4098515ea0a832ca7218da}{eldestDisplayList}}.
+      \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_angel_code_font_1_1_display_list_a046ed65c52185321ea0de11ed51154d8}{text}});
+361                 \}
+362                 
+363                 \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_angel_code_font_ad2583887204ad560daf5546b8eb6ee7d}{displayLists}}.put(text, displayList);
+364 
+365                 \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_angel_code_font_a22c7ebf9e7aad9665c6866438b675da2}{GL}}.\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1opengl_1_1renderer_1_1_s_g_l_a85746cd7e0de9297a821619097a5f7cc}{glNewList}}(displayList.id, SGL.GL\_COMPILE\_AND\_EXECUTE);
+366                 \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_angel_code_font_a9e742aa7b9ef84525a6e33bedcefd421}{render}}(text, startIndex, endIndex);
+367                 \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_angel_code_font_a22c7ebf9e7aad9665c6866438b675da2}{GL}}.\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1opengl_1_1renderer_1_1_s_g_l_a300a1d9b3c984ccc0a59eb951821bf37}{glEndList}}();
+368             \}
+369         \} \textcolor{keywordflow}{else} \{
+370             \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_angel_code_font_a9e742aa7b9ef84525a6e33bedcefd421}{render}}(text, startIndex, endIndex);
+371         \}
+372         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_angel_code_font_a22c7ebf9e7aad9665c6866438b675da2}{GL}}.\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1opengl_1_1renderer_1_1_s_g_l_a647aff6cabd0c83869166144e9aee833}{glTranslatef}}(-x, -y, 0);
+373     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1_angel_code_font_ad962179705beb6355e270ebc65b04b2a}\label{classorg_1_1newdawn_1_1slick_1_1_angel_code_font_ad962179705beb6355e270ebc65b04b2a}} 
+\index{org\+::newdawn\+::slick\+::\+Angel\+Code\+Font@{org\+::newdawn\+::slick\+::\+Angel\+Code\+Font}!get\+Height@{get\+Height}}
+\index{get\+Height@{get\+Height}!org\+::newdawn\+::slick\+::\+Angel\+Code\+Font@{org\+::newdawn\+::slick\+::\+Angel\+Code\+Font}}
+\subsubsection{\texorpdfstring{get\+Height()}{getHeight()}}
+{\footnotesize\ttfamily int org.\+newdawn.\+slick.\+Angel\+Code\+Font.\+get\+Height (\begin{DoxyParamCaption}\item[{String}]{text }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1_font_ac6a8b604bee484ad3ac2dd57a3eb65c9}{org.\+newdawn.\+slick.\+Font\+::get\+Height}}(java.\+lang.\+String) 
+\end{DoxySeeAlso}
+
+
+Implements \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1_font_ac6a8b604bee484ad3ac2dd57a3eb65c9}{org.\+newdawn.\+slick.\+Font}}.
+
+
+\begin{DoxyCode}
+450                                       \{
+451         DisplayList displayList = null;
+452         \textcolor{keywordflow}{if} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_angel_code_font_a1b429bd8175e017d9df97818af84cb06}{displayListCaching}}) \{
+453             displayList = (DisplayList)\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_angel_code_font_ad2583887204ad560daf5546b8eb6ee7d}{displayLists}}.get(text);
+454             \textcolor{keywordflow}{if} (displayList != null && displayList.height != null) \textcolor{keywordflow}{return} displayList.height.intValue();
+455         \}
+456 
+457         \textcolor{keywordtype}{int} lines = 0;
+458         \textcolor{keywordtype}{int} maxHeight = 0;
+459         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < text.length(); i++) \{
+460             \textcolor{keywordtype}{int} \textcolor{keywordtype}{id} = text.charAt(i);
+461             \textcolor{keywordflow}{if} (\textcolor{keywordtype}{id} == \textcolor{charliteral}{'\(\backslash\)n'}) \{
+462                 lines++;
+463                 maxHeight = 0;
+464                 \textcolor{keywordflow}{continue};
+465             \}
+466             \textcolor{comment}{// ignore space, it doesn't contribute to height}
+467             \textcolor{keywordflow}{if} (\textcolor{keywordtype}{id} == \textcolor{charliteral}{' '}) \{
+468                 \textcolor{keywordflow}{continue};
+469             \}
+470             CharDef charDef = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_angel_code_font_acdb3d26438f0f30d33db0a543715a3b1}{chars}}[id];
+471             \textcolor{keywordflow}{if} (charDef == null) \{
+472                 \textcolor{keywordflow}{continue};
+473             \}
+474 
+475             maxHeight = Math.max(charDef.height + charDef.yoffset,
+476                     maxHeight);
+477         \}
+478 
+479         maxHeight += lines * \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_angel_code_font_aa462c138af142eb6086c66205b0456af}{getLineHeight}}();
+480         
+481         \textcolor{keywordflow}{if} (displayList != null) displayList.height = \textcolor{keyword}{new} Short((\textcolor{keywordtype}{short})maxHeight);
+482         
+483         \textcolor{keywordflow}{return} maxHeight;
+484     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1_angel_code_font_aa462c138af142eb6086c66205b0456af}\label{classorg_1_1newdawn_1_1slick_1_1_angel_code_font_aa462c138af142eb6086c66205b0456af}} 
+\index{org\+::newdawn\+::slick\+::\+Angel\+Code\+Font@{org\+::newdawn\+::slick\+::\+Angel\+Code\+Font}!get\+Line\+Height@{get\+Line\+Height}}
+\index{get\+Line\+Height@{get\+Line\+Height}!org\+::newdawn\+::slick\+::\+Angel\+Code\+Font@{org\+::newdawn\+::slick\+::\+Angel\+Code\+Font}}
+\subsubsection{\texorpdfstring{get\+Line\+Height()}{getLineHeight()}}
+{\footnotesize\ttfamily int org.\+newdawn.\+slick.\+Angel\+Code\+Font.\+get\+Line\+Height (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1_font_aeb4b7770f47c5e2631d84b35924376d7}{org.\+newdawn.\+slick.\+Font\+::get\+Line\+Height()}} 
+\end{DoxySeeAlso}
+
+
+Implements \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1_font_aeb4b7770f47c5e2631d84b35924376d7}{org.\+newdawn.\+slick.\+Font}}.
+
+
+\begin{DoxyCode}
+614                                \{
+615         \textcolor{keywordflow}{return} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_angel_code_font_a79b1b71568fb19eaed6dea5babc6e752}{lineHeight}};
+616     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1_angel_code_font_a0202edaba33e21e6bfb3c7dbaebbbb92}\label{classorg_1_1newdawn_1_1slick_1_1_angel_code_font_a0202edaba33e21e6bfb3c7dbaebbbb92}} 
+\index{org\+::newdawn\+::slick\+::\+Angel\+Code\+Font@{org\+::newdawn\+::slick\+::\+Angel\+Code\+Font}!get\+Width@{get\+Width}}
+\index{get\+Width@{get\+Width}!org\+::newdawn\+::slick\+::\+Angel\+Code\+Font@{org\+::newdawn\+::slick\+::\+Angel\+Code\+Font}}
+\subsubsection{\texorpdfstring{get\+Width()}{getWidth()}}
+{\footnotesize\ttfamily int org.\+newdawn.\+slick.\+Angel\+Code\+Font.\+get\+Width (\begin{DoxyParamCaption}\item[{String}]{text }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1_font_a6dbdd5828730e18fcf0612307d0394b1}{org.\+newdawn.\+slick.\+Font\+::get\+Width}}(java.\+lang.\+String) 
+\end{DoxySeeAlso}
+
+
+Implements \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1_font_a6dbdd5828730e18fcf0612307d0394b1}{org.\+newdawn.\+slick.\+Font}}.
+
+
+\begin{DoxyCode}
+489                                      \{
+490         DisplayList displayList = null;
+491         \textcolor{keywordflow}{if} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_angel_code_font_a1b429bd8175e017d9df97818af84cb06}{displayListCaching}}) \{
+492             displayList = (DisplayList)\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_angel_code_font_ad2583887204ad560daf5546b8eb6ee7d}{displayLists}}.get(text);
+493             \textcolor{keywordflow}{if} (displayList != null && displayList.width != null) \textcolor{keywordflow}{return} displayList.width.intValue();
+494         \}
+495         
+496         \textcolor{keywordtype}{int} maxWidth = 0;
+497         \textcolor{keywordtype}{int} width = 0;
+498         CharDef lastCharDef = null;
+499         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0, n = text.length(); i < n; i++) \{
+500             \textcolor{keywordtype}{int} \textcolor{keywordtype}{id} = text.charAt(i);
+501             \textcolor{keywordflow}{if} (\textcolor{keywordtype}{id} == \textcolor{charliteral}{'\(\backslash\)n'}) \{
+502                 width = 0;
+503                 \textcolor{keywordflow}{continue};
+504             \}
+505             \textcolor{keywordflow}{if} (\textcolor{keywordtype}{id} >= \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_angel_code_font_acdb3d26438f0f30d33db0a543715a3b1}{chars}}.length) \{
+506                 \textcolor{keywordflow}{continue};
+507             \}
+508             CharDef charDef = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_angel_code_font_acdb3d26438f0f30d33db0a543715a3b1}{chars}}[id];
+509             \textcolor{keywordflow}{if} (charDef == null) \{
+510                 \textcolor{keywordflow}{continue};
+511             \}
+512 
+513             \textcolor{keywordflow}{if} (lastCharDef != null) width += lastCharDef.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_angel_code_font_1_1_char_def_a3b153d43da2f6f3b07e49804b762470d}{getKerning}}(\textcolor{keywordtype}{id});
+514             lastCharDef = charDef;
+515 
+516             \textcolor{keywordflow}{if} (i < n - 1) \{
+517                 width += charDef.xadvance;
+518             \} \textcolor{keywordflow}{else} \{
+519                 width += charDef.width;
+520             \}
+521             maxWidth = Math.max(maxWidth, width);
+522         \}
+523         
+524         \textcolor{keywordflow}{if} (displayList != null) displayList.width = \textcolor{keyword}{new} Short((\textcolor{keywordtype}{short})maxWidth);
+525         
+526         \textcolor{keywordflow}{return} maxWidth;
+527     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1_angel_code_font_af88eab0e69e2ff42c027bbcbeb6ccd1f}\label{classorg_1_1newdawn_1_1slick_1_1_angel_code_font_af88eab0e69e2ff42c027bbcbeb6ccd1f}} 
+\index{org\+::newdawn\+::slick\+::\+Angel\+Code\+Font@{org\+::newdawn\+::slick\+::\+Angel\+Code\+Font}!get\+Y\+Offset@{get\+Y\+Offset}}
+\index{get\+Y\+Offset@{get\+Y\+Offset}!org\+::newdawn\+::slick\+::\+Angel\+Code\+Font@{org\+::newdawn\+::slick\+::\+Angel\+Code\+Font}}
+\subsubsection{\texorpdfstring{get\+Y\+Offset()}{getYOffset()}}
+{\footnotesize\ttfamily int org.\+newdawn.\+slick.\+Angel\+Code\+Font.\+get\+Y\+Offset (\begin{DoxyParamCaption}\item[{String}]{text }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns the distance from the y drawing location to the top most pixel of the specified text.
+
+
+\begin{DoxyParams}{Parameters}
+{\em text} & The text that is to be tested \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The yoffset from the y draw location at which text will start 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+422                                        \{
+423         DisplayList displayList = null;
+424         \textcolor{keywordflow}{if} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_angel_code_font_a1b429bd8175e017d9df97818af84cb06}{displayListCaching}}) \{
+425             displayList = (DisplayList)\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_angel_code_font_ad2583887204ad560daf5546b8eb6ee7d}{displayLists}}.get(text);
+426             \textcolor{keywordflow}{if} (displayList != null && displayList.yOffset != null) \textcolor{keywordflow}{return} displayList.yOffset.intValue();
+427         \}
+428 
+429         \textcolor{keywordtype}{int} stopIndex = text.indexOf(\textcolor{charliteral}{'\(\backslash\)n'});
+430         \textcolor{keywordflow}{if} (stopIndex == -1) stopIndex = text.length();
+431 
+432         \textcolor{keywordtype}{int} minYOffset = 10000;
+433         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < stopIndex; i++) \{
+434             \textcolor{keywordtype}{int} \textcolor{keywordtype}{id} = text.charAt(i);
+435             CharDef charDef = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_angel_code_font_acdb3d26438f0f30d33db0a543715a3b1}{chars}}[id];
+436             \textcolor{keywordflow}{if} (charDef == null) \{
+437                 \textcolor{keywordflow}{continue};
+438             \}
+439             minYOffset = Math.min(charDef.yoffset, minYOffset);
+440         \}
+441 
+442         \textcolor{keywordflow}{if} (displayList != null) displayList.yOffset = \textcolor{keyword}{new} Short((\textcolor{keywordtype}{short})minYOffset);
+443         
+444         \textcolor{keywordflow}{return} minYOffset;
+445     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1_angel_code_font_a8e57dd6e277285b9fdce64880a05a474}\label{classorg_1_1newdawn_1_1slick_1_1_angel_code_font_a8e57dd6e277285b9fdce64880a05a474}} 
+\index{org\+::newdawn\+::slick\+::\+Angel\+Code\+Font@{org\+::newdawn\+::slick\+::\+Angel\+Code\+Font}!parse\+Char@{parse\+Char}}
+\index{parse\+Char@{parse\+Char}!org\+::newdawn\+::slick\+::\+Angel\+Code\+Font@{org\+::newdawn\+::slick\+::\+Angel\+Code\+Font}}
+\subsubsection{\texorpdfstring{parse\+Char()}{parseChar()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_angel_code_font_1_1_char_def}{Char\+Def}} org.\+newdawn.\+slick.\+Angel\+Code\+Font.\+parse\+Char (\begin{DoxyParamCaption}\item[{String}]{line }\end{DoxyParamCaption}) throws \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_slick_exception}{Slick\+Exception}}\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+Parse a single character line from the definition
+
+
+\begin{DoxyParams}{Parameters}
+{\em line} & The line to be parsed \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The character definition from the line 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_slick_exception}{Slick\+Exception}}} & Indicates a given character is not valid in an angel code font \\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyCode}
+284                                                                  \{
+285         CharDef def = \textcolor{keyword}{new} CharDef();
+286         StringTokenizer tokens = \textcolor{keyword}{new} StringTokenizer(line, \textcolor{stringliteral}{" ="});
+287 
+288         tokens.nextToken(); \textcolor{comment}{// char}
+289         tokens.nextToken(); \textcolor{comment}{// id}
+290         def.id = Short.parseShort(tokens.nextToken()); \textcolor{comment}{// id value}
+291         \textcolor{keywordflow}{if} (def.id < 0) \{
+292             \textcolor{keywordflow}{return} null;
+293         \}
+294         \textcolor{keywordflow}{if} (def.id > \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_angel_code_font_ab0bebe07d0e5a16dbccf3e99c2229f1a}{MAX\_CHAR}}) \{
+295             \textcolor{keywordflow}{throw} \textcolor{keyword}{new} SlickException(\textcolor{stringliteral}{"Invalid character '"} + def.id
+296                 + \textcolor{stringliteral}{"': AngelCodeFont does not support characters above "} + 
+      \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_angel_code_font_ab0bebe07d0e5a16dbccf3e99c2229f1a}{MAX\_CHAR}});
+297         \}
+298 
+299         tokens.nextToken(); \textcolor{comment}{// x}
+300         def.x = Short.parseShort(tokens.nextToken()); \textcolor{comment}{// x value}
+301         tokens.nextToken(); \textcolor{comment}{// y}
+302         def.y = Short.parseShort(tokens.nextToken()); \textcolor{comment}{// y value}
+303         tokens.nextToken(); \textcolor{comment}{// width}
+304         def.width = Short.parseShort(tokens.nextToken()); \textcolor{comment}{// width value}
+305         tokens.nextToken(); \textcolor{comment}{// height}
+306         def.height = Short.parseShort(tokens.nextToken()); \textcolor{comment}{// height value}
+307         tokens.nextToken(); \textcolor{comment}{// x offset}
+308         def.xoffset = Short.parseShort(tokens.nextToken()); \textcolor{comment}{// xoffset value}
+309         tokens.nextToken(); \textcolor{comment}{// y offset}
+310         def.yoffset = Short.parseShort(tokens.nextToken()); \textcolor{comment}{// yoffset value}
+311         tokens.nextToken(); \textcolor{comment}{// xadvance}
+312         def.xadvance = Short.parseShort(tokens.nextToken()); \textcolor{comment}{// xadvance}
+313 
+314         def.init();
+315 
+316         \textcolor{keywordflow}{if} (def.id != \textcolor{charliteral}{' '}) \{
+317             \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_angel_code_font_a79b1b71568fb19eaed6dea5babc6e752}{lineHeight}} = Math.max(def.height + def.yoffset, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_angel_code_font_a79b1b71568fb19eaed6dea5babc6e752}{lineHeight}});
+318         \}
+319 
+320         \textcolor{keywordflow}{return} def;
+321     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1_angel_code_font_a8950d304cfa460c9d2755900abda6c02}\label{classorg_1_1newdawn_1_1slick_1_1_angel_code_font_a8950d304cfa460c9d2755900abda6c02}} 
+\index{org\+::newdawn\+::slick\+::\+Angel\+Code\+Font@{org\+::newdawn\+::slick\+::\+Angel\+Code\+Font}!parse\+Fnt@{parse\+Fnt}}
+\index{parse\+Fnt@{parse\+Fnt}!org\+::newdawn\+::slick\+::\+Angel\+Code\+Font@{org\+::newdawn\+::slick\+::\+Angel\+Code\+Font}}
+\subsubsection{\texorpdfstring{parse\+Fnt()}{parseFnt()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+Angel\+Code\+Font.\+parse\+Fnt (\begin{DoxyParamCaption}\item[{Input\+Stream}]{fnt\+File }\end{DoxyParamCaption}) throws \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_slick_exception}{Slick\+Exception}}\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+Parse the font definition file
+
+
+\begin{DoxyParams}{Parameters}
+{\em fnt\+File} & The stream from which the font file can be read \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_slick_exception}{Slick\+Exception}}} & \\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyCode}
+199                                                                      \{
+200         \textcolor{keywordflow}{if} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_angel_code_font_a1b429bd8175e017d9df97818af84cb06}{displayListCaching}}) \{
+201             \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_angel_code_font_af768584a5e95470e18937a431dd4bcb1}{baseDisplayListID}} = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_angel_code_font_a22c7ebf9e7aad9665c6866438b675da2}{GL}}.\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1opengl_1_1renderer_1_1_s_g_l_a2c623d00bb2450569a6c86a71024b83d}{glGenLists}}(
+      \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_angel_code_font_a493a4a9c0c402ad916d51ef38b66e036}{DISPLAY\_LIST\_CACHE\_SIZE}});
+202             \textcolor{keywordflow}{if} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_angel_code_font_af768584a5e95470e18937a431dd4bcb1}{baseDisplayListID}} == 0) \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_angel_code_font_a1b429bd8175e017d9df97818af84cb06}{displayListCaching}} = \textcolor{keyword}{false};
+203         \}
+204 
+205         \textcolor{keywordflow}{try} \{
+206             \textcolor{comment}{// now parse the font file}
+207             BufferedReader in = \textcolor{keyword}{new} BufferedReader(\textcolor{keyword}{new} InputStreamReader(
+208                     fntFile));
+209             String info = in.readLine();
+210             String common = in.readLine();
+211             String page = in.readLine();
+212 
+213             Map kerning = \textcolor{keyword}{new} HashMap(64);
+214             List charDefs = \textcolor{keyword}{new} ArrayList(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_angel_code_font_ab0bebe07d0e5a16dbccf3e99c2229f1a}{MAX\_CHAR}});
+215             \textcolor{keywordtype}{int} maxChar = 0;
+216             \textcolor{keywordtype}{boolean} done = \textcolor{keyword}{false};
+217             \textcolor{keywordflow}{while} (!done) \{
+218                 String line = in.readLine();
+219                 \textcolor{keywordflow}{if} (line == null) \{
+220                     done = \textcolor{keyword}{true};
+221                 \} \textcolor{keywordflow}{else} \{
+222                     \textcolor{keywordflow}{if} (line.startsWith(\textcolor{stringliteral}{"chars c"})) \{
+223                         \textcolor{comment}{// ignore}
+224                     \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (line.startsWith(\textcolor{stringliteral}{"char"})) \{
+225                         CharDef def = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_angel_code_font_a8e57dd6e277285b9fdce64880a05a474}{parseChar}}(line);
+226                         \textcolor{keywordflow}{if} (def != null) \{
+227                             maxChar = Math.max(maxChar, def.id);
+228                             charDefs.add(def);
+229                         \}
+230                     \}
+231                     \textcolor{keywordflow}{if} (line.startsWith(\textcolor{stringliteral}{"kernings c"})) \{
+232                         \textcolor{comment}{// ignore}
+233                     \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (line.startsWith(\textcolor{stringliteral}{"kerning"})) \{
+234                         StringTokenizer tokens = \textcolor{keyword}{new} StringTokenizer(line, \textcolor{stringliteral}{" ="});
+235                         tokens.nextToken(); \textcolor{comment}{// kerning}
+236                         tokens.nextToken(); \textcolor{comment}{// first}
+237                         \textcolor{keywordtype}{short} first = Short.parseShort(tokens.nextToken()); \textcolor{comment}{// first value}
+238                         tokens.nextToken(); \textcolor{comment}{// second}
+239                         \textcolor{keywordtype}{int} second = Integer.parseInt(tokens.nextToken()); \textcolor{comment}{// second value}
+240                         tokens.nextToken(); \textcolor{comment}{// offset}
+241                         \textcolor{keywordtype}{int} offset = Integer.parseInt(tokens.nextToken()); \textcolor{comment}{// offset value}
+242                         List values = (List)kerning.get(\textcolor{keyword}{new} Short(first));
+243                         \textcolor{keywordflow}{if} (values == null) \{
+244                             values = \textcolor{keyword}{new} ArrayList();
+245                             kerning.put(\textcolor{keyword}{new} Short(first), values);
+246                         \}
+247                         \textcolor{comment}{// Pack the character and kerning offset into a short.}
+248                         values.add(\textcolor{keyword}{new} Short((\textcolor{keywordtype}{short})((offset << 8) | second)));
+249                     \}
+250                 \}
+251             \}
+252 
+253             \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_angel_code_font_acdb3d26438f0f30d33db0a543715a3b1}{chars}} = \textcolor{keyword}{new} CharDef[maxChar + 1];
+254             \textcolor{keywordflow}{for} (Iterator iter = charDefs.iterator(); iter.hasNext();) \{
+255                 CharDef def = (CharDef)iter.next();
+256                 \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_angel_code_font_acdb3d26438f0f30d33db0a543715a3b1}{chars}}[def.id] = def;
+257             \}
+258 
+259             \textcolor{comment}{// Turn each list of kerning values into a short[] and set on the chardef. }
+260             \textcolor{keywordflow}{for} (Iterator iter = kerning.entrySet().iterator(); iter.hasNext(); ) \{
+261                 Entry entry = (Entry)iter.next();
+262                 \textcolor{keywordtype}{short} first = ((Short)entry.getKey()).shortValue();
+263                 List valueList = (List)entry.getValue();
+264                 \textcolor{keywordtype}{short}[] valueArray = \textcolor{keyword}{new} \textcolor{keywordtype}{short}[valueList.size()];
+265                 \textcolor{keywordtype}{int} i = 0;
+266                 \textcolor{keywordflow}{for} (Iterator valueIter = valueList.iterator(); valueIter.hasNext(); i++)
+267                     valueArray[i] = ((Short)valueIter.next()).shortValue();
+268                 \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_angel_code_font_acdb3d26438f0f30d33db0a543715a3b1}{chars}}[first].\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_angel_code_font_1_1_char_def_a8eea71c0865ccf322a262f877cf4245b}{kerning}} = valueArray;
+269             \}
+270         \} \textcolor{keywordflow}{catch} (IOException e) \{
+271             Log.error(e);
+272             \textcolor{keywordflow}{throw} \textcolor{keyword}{new} SlickException(\textcolor{stringliteral}{"Failed to parse font file: "} + fntFile);
+273         \}
+274     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1_angel_code_font_a9e742aa7b9ef84525a6e33bedcefd421}\label{classorg_1_1newdawn_1_1slick_1_1_angel_code_font_a9e742aa7b9ef84525a6e33bedcefd421}} 
+\index{org\+::newdawn\+::slick\+::\+Angel\+Code\+Font@{org\+::newdawn\+::slick\+::\+Angel\+Code\+Font}!render@{render}}
+\index{render@{render}!org\+::newdawn\+::slick\+::\+Angel\+Code\+Font@{org\+::newdawn\+::slick\+::\+Angel\+Code\+Font}}
+\subsubsection{\texorpdfstring{render()}{render()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+Angel\+Code\+Font.\+render (\begin{DoxyParamCaption}\item[{String}]{text,  }\item[{int}]{start,  }\item[{int}]{end }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+Render based on immediate rendering
+
+
+\begin{DoxyParams}{Parameters}
+{\em text} & The text to be rendered \\
+\hline
+{\em start} & The index of the first character in the string to render \\
+\hline
+{\em end} & The index of the last character in the string to render \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+382                                                          \{
+383         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_angel_code_font_a22c7ebf9e7aad9665c6866438b675da2}{GL}}.\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1opengl_1_1renderer_1_1_s_g_l_a34ef78aa5f8f5774c06117a01932fb02}{glBegin}}(SGL.GL\_QUADS);
+384 
+385         \textcolor{keywordtype}{int} x = 0, y = 0;
+386         CharDef lastCharDef = null;
+387         \textcolor{keywordtype}{char}[] data = text.toCharArray();
+388         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < data.length; i++) \{
+389             \textcolor{keywordtype}{int} \textcolor{keywordtype}{id} = data[i];
+390             \textcolor{keywordflow}{if} (\textcolor{keywordtype}{id} == \textcolor{charliteral}{'\(\backslash\)n'}) \{
+391                 x = 0;
+392                 y += \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_angel_code_font_aa462c138af142eb6086c66205b0456af}{getLineHeight}}();
+393                 \textcolor{keywordflow}{continue};
+394             \}
+395             \textcolor{keywordflow}{if} (\textcolor{keywordtype}{id} >= \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_angel_code_font_acdb3d26438f0f30d33db0a543715a3b1}{chars}}.length) \{
+396                 \textcolor{keywordflow}{continue};
+397             \}
+398             CharDef charDef = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_angel_code_font_acdb3d26438f0f30d33db0a543715a3b1}{chars}}[id];
+399             \textcolor{keywordflow}{if} (charDef == null) \{
+400                 \textcolor{keywordflow}{continue};
+401             \}
+402 
+403             \textcolor{keywordflow}{if} (lastCharDef != null) x += lastCharDef.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_angel_code_font_1_1_char_def_a3b153d43da2f6f3b07e49804b762470d}{getKerning}}(\textcolor{keywordtype}{id});
+404             lastCharDef = charDef;
+405             
+406             \textcolor{keywordflow}{if} ((i >= start) && (i <= end)) \{
+407                 charDef.draw(x, y);
+408             \}
+409 
+410             x += charDef.xadvance;
+411         \}
+412         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_angel_code_font_a22c7ebf9e7aad9665c6866438b675da2}{GL}}.\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1opengl_1_1renderer_1_1_s_g_l_a7f5666aaa59b12617ab81e1263140f72}{glEnd}}();
+413     \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1_angel_code_font_af768584a5e95470e18937a431dd4bcb1}\label{classorg_1_1newdawn_1_1slick_1_1_angel_code_font_af768584a5e95470e18937a431dd4bcb1}} 
+\index{org\+::newdawn\+::slick\+::\+Angel\+Code\+Font@{org\+::newdawn\+::slick\+::\+Angel\+Code\+Font}!base\+Display\+List\+ID@{base\+Display\+List\+ID}}
+\index{base\+Display\+List\+ID@{base\+Display\+List\+ID}!org\+::newdawn\+::slick\+::\+Angel\+Code\+Font@{org\+::newdawn\+::slick\+::\+Angel\+Code\+Font}}
+\subsubsection{\texorpdfstring{base\+Display\+List\+ID}{baseDisplayListID}}
+{\footnotesize\ttfamily int org.\+newdawn.\+slick.\+Angel\+Code\+Font.\+base\+Display\+List\+ID = -\/1\hspace{0.3cm}{\ttfamily [private]}}
+
+The first display list ID \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1_angel_code_font_acdb3d26438f0f30d33db0a543715a3b1}\label{classorg_1_1newdawn_1_1slick_1_1_angel_code_font_acdb3d26438f0f30d33db0a543715a3b1}} 
+\index{org\+::newdawn\+::slick\+::\+Angel\+Code\+Font@{org\+::newdawn\+::slick\+::\+Angel\+Code\+Font}!chars@{chars}}
+\index{chars@{chars}!org\+::newdawn\+::slick\+::\+Angel\+Code\+Font@{org\+::newdawn\+::slick\+::\+Angel\+Code\+Font}}
+\subsubsection{\texorpdfstring{chars}{chars}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_angel_code_font_1_1_char_def}{Char\+Def}} \mbox{[}$\,$\mbox{]} org.\+newdawn.\+slick.\+Angel\+Code\+Font.\+chars\hspace{0.3cm}{\ttfamily [private]}}
+
+The characters building up the font \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1_angel_code_font_a493a4a9c0c402ad916d51ef38b66e036}\label{classorg_1_1newdawn_1_1slick_1_1_angel_code_font_a493a4a9c0c402ad916d51ef38b66e036}} 
+\index{org\+::newdawn\+::slick\+::\+Angel\+Code\+Font@{org\+::newdawn\+::slick\+::\+Angel\+Code\+Font}!D\+I\+S\+P\+L\+A\+Y\+\_\+\+L\+I\+S\+T\+\_\+\+C\+A\+C\+H\+E\+\_\+\+S\+I\+ZE@{D\+I\+S\+P\+L\+A\+Y\+\_\+\+L\+I\+S\+T\+\_\+\+C\+A\+C\+H\+E\+\_\+\+S\+I\+ZE}}
+\index{D\+I\+S\+P\+L\+A\+Y\+\_\+\+L\+I\+S\+T\+\_\+\+C\+A\+C\+H\+E\+\_\+\+S\+I\+ZE@{D\+I\+S\+P\+L\+A\+Y\+\_\+\+L\+I\+S\+T\+\_\+\+C\+A\+C\+H\+E\+\_\+\+S\+I\+ZE}!org\+::newdawn\+::slick\+::\+Angel\+Code\+Font@{org\+::newdawn\+::slick\+::\+Angel\+Code\+Font}}
+\subsubsection{\texorpdfstring{D\+I\+S\+P\+L\+A\+Y\+\_\+\+L\+I\+S\+T\+\_\+\+C\+A\+C\+H\+E\+\_\+\+S\+I\+ZE}{DISPLAY\_LIST\_CACHE\_SIZE}}
+{\footnotesize\ttfamily final int org.\+newdawn.\+slick.\+Angel\+Code\+Font.\+D\+I\+S\+P\+L\+A\+Y\+\_\+\+L\+I\+S\+T\+\_\+\+C\+A\+C\+H\+E\+\_\+\+S\+I\+ZE = 200\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+The line cache size, this is how many lines we can render before starting to regenerate lists \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1_angel_code_font_a1b429bd8175e017d9df97818af84cb06}\label{classorg_1_1newdawn_1_1slick_1_1_angel_code_font_a1b429bd8175e017d9df97818af84cb06}} 
+\index{org\+::newdawn\+::slick\+::\+Angel\+Code\+Font@{org\+::newdawn\+::slick\+::\+Angel\+Code\+Font}!display\+List\+Caching@{display\+List\+Caching}}
+\index{display\+List\+Caching@{display\+List\+Caching}!org\+::newdawn\+::slick\+::\+Angel\+Code\+Font@{org\+::newdawn\+::slick\+::\+Angel\+Code\+Font}}
+\subsubsection{\texorpdfstring{display\+List\+Caching}{displayListCaching}}
+{\footnotesize\ttfamily boolean org.\+newdawn.\+slick.\+Angel\+Code\+Font.\+display\+List\+Caching = true\hspace{0.3cm}{\ttfamily [private]}}
+
+True if this font should use display list caching \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1_angel_code_font_ad2583887204ad560daf5546b8eb6ee7d}\label{classorg_1_1newdawn_1_1slick_1_1_angel_code_font_ad2583887204ad560daf5546b8eb6ee7d}} 
+\index{org\+::newdawn\+::slick\+::\+Angel\+Code\+Font@{org\+::newdawn\+::slick\+::\+Angel\+Code\+Font}!display\+Lists@{display\+Lists}}
+\index{display\+Lists@{display\+Lists}!org\+::newdawn\+::slick\+::\+Angel\+Code\+Font@{org\+::newdawn\+::slick\+::\+Angel\+Code\+Font}}
+\subsubsection{\texorpdfstring{display\+Lists}{displayLists}}
+{\footnotesize\ttfamily final Linked\+Hash\+Map org.\+newdawn.\+slick.\+Angel\+Code\+Font.\+display\+Lists\hspace{0.3cm}{\ttfamily [private]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+= \textcolor{keyword}{new} LinkedHashMap(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_angel_code_font_a493a4a9c0c402ad916d51ef38b66e036}{DISPLAY\_LIST\_CACHE\_SIZE}}, 1, \textcolor{keyword}{true}) \{
+        \textcolor{keyword}{protected} \textcolor{keywordtype}{boolean} removeEldestEntry(Entry eldest) \{
+            \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_angel_code_font_a82733df33c4098515ea0a832ca7218da}{eldestDisplayList}} = (DisplayList)eldest.getValue();
+            \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_angel_code_font_ac8dc56c5ce3f951729b7239efd3811df}{eldestDisplayListID}} = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_angel_code_font_a82733df33c4098515ea0a832ca7218da}{eldestDisplayList}}.
+      \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_angel_code_font_1_1_display_list_a2a19c792a8181979c428fe07f780b137}{id}};
+
+            \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+        \}
+    \}
+\end{DoxyCode}
+The display list cache for rendered lines \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1_angel_code_font_a82733df33c4098515ea0a832ca7218da}\label{classorg_1_1newdawn_1_1slick_1_1_angel_code_font_a82733df33c4098515ea0a832ca7218da}} 
+\index{org\+::newdawn\+::slick\+::\+Angel\+Code\+Font@{org\+::newdawn\+::slick\+::\+Angel\+Code\+Font}!eldest\+Display\+List@{eldest\+Display\+List}}
+\index{eldest\+Display\+List@{eldest\+Display\+List}!org\+::newdawn\+::slick\+::\+Angel\+Code\+Font@{org\+::newdawn\+::slick\+::\+Angel\+Code\+Font}}
+\subsubsection{\texorpdfstring{eldest\+Display\+List}{eldestDisplayList}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_angel_code_font_1_1_display_list}{Display\+List}} org.\+newdawn.\+slick.\+Angel\+Code\+Font.\+eldest\+Display\+List\hspace{0.3cm}{\ttfamily [private]}}
+
+The eldest display list \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1_angel_code_font_ac8dc56c5ce3f951729b7239efd3811df}\label{classorg_1_1newdawn_1_1slick_1_1_angel_code_font_ac8dc56c5ce3f951729b7239efd3811df}} 
+\index{org\+::newdawn\+::slick\+::\+Angel\+Code\+Font@{org\+::newdawn\+::slick\+::\+Angel\+Code\+Font}!eldest\+Display\+List\+ID@{eldest\+Display\+List\+ID}}
+\index{eldest\+Display\+List\+ID@{eldest\+Display\+List\+ID}!org\+::newdawn\+::slick\+::\+Angel\+Code\+Font@{org\+::newdawn\+::slick\+::\+Angel\+Code\+Font}}
+\subsubsection{\texorpdfstring{eldest\+Display\+List\+ID}{eldestDisplayListID}}
+{\footnotesize\ttfamily int org.\+newdawn.\+slick.\+Angel\+Code\+Font.\+eldest\+Display\+List\+ID\hspace{0.3cm}{\ttfamily [private]}}
+
+The eldest display list ID \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1_angel_code_font_a891bf3b2a299313dc4f37c3808982aba}\label{classorg_1_1newdawn_1_1slick_1_1_angel_code_font_a891bf3b2a299313dc4f37c3808982aba}} 
+\index{org\+::newdawn\+::slick\+::\+Angel\+Code\+Font@{org\+::newdawn\+::slick\+::\+Angel\+Code\+Font}!font\+Image@{font\+Image}}
+\index{font\+Image@{font\+Image}!org\+::newdawn\+::slick\+::\+Angel\+Code\+Font@{org\+::newdawn\+::slick\+::\+Angel\+Code\+Font}}
+\subsubsection{\texorpdfstring{font\+Image}{fontImage}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_image}{Image}} org.\+newdawn.\+slick.\+Angel\+Code\+Font.\+font\+Image\hspace{0.3cm}{\ttfamily [private]}}
+
+The image containing the bitmap font \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1_angel_code_font_a22c7ebf9e7aad9665c6866438b675da2}\label{classorg_1_1newdawn_1_1slick_1_1_angel_code_font_a22c7ebf9e7aad9665c6866438b675da2}} 
+\index{org\+::newdawn\+::slick\+::\+Angel\+Code\+Font@{org\+::newdawn\+::slick\+::\+Angel\+Code\+Font}!GL@{GL}}
+\index{GL@{GL}!org\+::newdawn\+::slick\+::\+Angel\+Code\+Font@{org\+::newdawn\+::slick\+::\+Angel\+Code\+Font}}
+\subsubsection{\texorpdfstring{GL}{GL}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1opengl_1_1renderer_1_1_s_g_l}{S\+GL}} org.\+newdawn.\+slick.\+Angel\+Code\+Font.\+GL = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1renderer_1_1_renderer_abe742c3a7dfca67c6c01821d27087308}{Renderer.\+get}}()\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+The renderer to use for all GL operations \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1_angel_code_font_a79b1b71568fb19eaed6dea5babc6e752}\label{classorg_1_1newdawn_1_1slick_1_1_angel_code_font_a79b1b71568fb19eaed6dea5babc6e752}} 
+\index{org\+::newdawn\+::slick\+::\+Angel\+Code\+Font@{org\+::newdawn\+::slick\+::\+Angel\+Code\+Font}!line\+Height@{line\+Height}}
+\index{line\+Height@{line\+Height}!org\+::newdawn\+::slick\+::\+Angel\+Code\+Font@{org\+::newdawn\+::slick\+::\+Angel\+Code\+Font}}
+\subsubsection{\texorpdfstring{line\+Height}{lineHeight}}
+{\footnotesize\ttfamily int org.\+newdawn.\+slick.\+Angel\+Code\+Font.\+line\+Height\hspace{0.3cm}{\ttfamily [private]}}
+
+The height of a line \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1_angel_code_font_ab0bebe07d0e5a16dbccf3e99c2229f1a}\label{classorg_1_1newdawn_1_1slick_1_1_angel_code_font_ab0bebe07d0e5a16dbccf3e99c2229f1a}} 
+\index{org\+::newdawn\+::slick\+::\+Angel\+Code\+Font@{org\+::newdawn\+::slick\+::\+Angel\+Code\+Font}!M\+A\+X\+\_\+\+C\+H\+AR@{M\+A\+X\+\_\+\+C\+H\+AR}}
+\index{M\+A\+X\+\_\+\+C\+H\+AR@{M\+A\+X\+\_\+\+C\+H\+AR}!org\+::newdawn\+::slick\+::\+Angel\+Code\+Font@{org\+::newdawn\+::slick\+::\+Angel\+Code\+Font}}
+\subsubsection{\texorpdfstring{M\+A\+X\+\_\+\+C\+H\+AR}{MAX\_CHAR}}
+{\footnotesize\ttfamily final int org.\+newdawn.\+slick.\+Angel\+Code\+Font.\+M\+A\+X\+\_\+\+C\+H\+AR = 255\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+The highest character that \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_angel_code_font}{Angel\+Code\+Font}} will support. 

@@ -1,0 +1,217 @@
+\hypertarget{classorg_1_1newdawn_1_1slick_1_1_canvas_game_container}{}\section{org.\+newdawn.\+slick.\+Canvas\+Game\+Container Class Reference}
+\label{classorg_1_1newdawn_1_1slick_1_1_canvas_game_container}\index{org.\+newdawn.\+slick.\+Canvas\+Game\+Container@{org.\+newdawn.\+slick.\+Canvas\+Game\+Container}}
+Inheritance diagram for org.\+newdawn.\+slick.\+Canvas\+Game\+Container\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classorg_1_1newdawn_1_1slick_1_1_canvas_game_container}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_canvas_game_container_1_1_container}{Container}}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_canvas_game_container_a078feee2c69d77cabd1f09b87d055923}{Canvas\+Game\+Container}} (\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1_game}{Game}} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_canvas_game_container_aea0c3147fede8b9e57819fbee5c50612}{game}})  throws Slick\+Exception 
+\item 
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_canvas_game_container_a130d50eaef52d7e4cbab1ff365606498}{Canvas\+Game\+Container}} (\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1_game}{Game}} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_canvas_game_container_aea0c3147fede8b9e57819fbee5c50612}{game}}, boolean shared)  throws Slick\+Exception 
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_canvas_game_container_a4649e692eacd83dfb7fe5cf2c383dd39}{start}} ()  throws Slick\+Exception 
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_canvas_game_container_ab8975a7599bcd4e1080ac578c4ddaa82}{dispose}} ()
+\item 
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_game_container}{Game\+Container}} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_canvas_game_container_a844f6aaba517d2948de205d2f45cd7bc}{get\+Container}} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_canvas_game_container_1_1_container}{Container}} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_canvas_game_container_af13c765d7302dc5948d0261e2526ef8b}{container}}
+\item 
+\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1_game}{Game}} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_canvas_game_container_aea0c3147fede8b9e57819fbee5c50612}{game}}
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_canvas_game_container_a38f91f490299ca036d075779ff15ff15}{schedule\+Update}} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A game container that displays the game on an A\+WT Canvas.
+
+\begin{DoxyAuthor}{Author}
+kevin 
+\end{DoxyAuthor}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1_canvas_game_container_a078feee2c69d77cabd1f09b87d055923}\label{classorg_1_1newdawn_1_1slick_1_1_canvas_game_container_a078feee2c69d77cabd1f09b87d055923}} 
+\index{org\+::newdawn\+::slick\+::\+Canvas\+Game\+Container@{org\+::newdawn\+::slick\+::\+Canvas\+Game\+Container}!Canvas\+Game\+Container@{Canvas\+Game\+Container}}
+\index{Canvas\+Game\+Container@{Canvas\+Game\+Container}!org\+::newdawn\+::slick\+::\+Canvas\+Game\+Container@{org\+::newdawn\+::slick\+::\+Canvas\+Game\+Container}}
+\subsubsection{\texorpdfstring{Canvas\+Game\+Container()}{CanvasGameContainer()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily org.\+newdawn.\+slick.\+Canvas\+Game\+Container.\+Canvas\+Game\+Container (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1_game}{Game}}}]{game }\end{DoxyParamCaption}) throws \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_slick_exception}{Slick\+Exception}}\hspace{0.3cm}{\ttfamily [inline]}}
+
+Create a new panel
+
+
+\begin{DoxyParams}{Parameters}
+{\em game} & The game being held \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_slick_exception}{Slick\+Exception}}} & Indicates a failure during creation of the container \\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyCode}
+28                                                                 \{
+29         \textcolor{keyword}{this}(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_canvas_game_container_aea0c3147fede8b9e57819fbee5c50612}{game}}, \textcolor{keyword}{false});
+30     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1_canvas_game_container_a130d50eaef52d7e4cbab1ff365606498}\label{classorg_1_1newdawn_1_1slick_1_1_canvas_game_container_a130d50eaef52d7e4cbab1ff365606498}} 
+\index{org\+::newdawn\+::slick\+::\+Canvas\+Game\+Container@{org\+::newdawn\+::slick\+::\+Canvas\+Game\+Container}!Canvas\+Game\+Container@{Canvas\+Game\+Container}}
+\index{Canvas\+Game\+Container@{Canvas\+Game\+Container}!org\+::newdawn\+::slick\+::\+Canvas\+Game\+Container@{org\+::newdawn\+::slick\+::\+Canvas\+Game\+Container}}
+\subsubsection{\texorpdfstring{Canvas\+Game\+Container()}{CanvasGameContainer()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily org.\+newdawn.\+slick.\+Canvas\+Game\+Container.\+Canvas\+Game\+Container (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1_game}{Game}}}]{game,  }\item[{boolean}]{shared }\end{DoxyParamCaption}) throws \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_slick_exception}{Slick\+Exception}}\hspace{0.3cm}{\ttfamily [inline]}}
+
+Create a new panel
+
+
+\begin{DoxyParams}{Parameters}
+{\em game} & The game being held \\
+\hline
+{\em shared} & True if shared GL context should be enabled. This allows multiple panels to share textures and other GL resources. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_slick_exception}{Slick\+Exception}}} & Indicates a failure during creation of the container \\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyCode}
+40                                                                                 \{
+41         super();
+42 
+43         this.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_canvas_game_container_aea0c3147fede8b9e57819fbee5c50612}{game}} = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_canvas_game_container_aea0c3147fede8b9e57819fbee5c50612}{game}};
+44         setIgnoreRepaint(\textcolor{keyword}{true});
+45         requestFocus();
+46         setSize(500,500);
+47         
+48         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_canvas_game_container_af13c765d7302dc5948d0261e2526ef8b}{container}} = \textcolor{keyword}{new} Container(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_canvas_game_container_aea0c3147fede8b9e57819fbee5c50612}{game}}, shared);
+49         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_canvas_game_container_af13c765d7302dc5948d0261e2526ef8b}{container}}.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_game_container_af7539008df0bf3bb0e11a16173abe524}{setForceExit}}(\textcolor{keyword}{false});
+50     \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1_canvas_game_container_ab8975a7599bcd4e1080ac578c4ddaa82}\label{classorg_1_1newdawn_1_1slick_1_1_canvas_game_container_ab8975a7599bcd4e1080ac578c4ddaa82}} 
+\index{org\+::newdawn\+::slick\+::\+Canvas\+Game\+Container@{org\+::newdawn\+::slick\+::\+Canvas\+Game\+Container}!dispose@{dispose}}
+\index{dispose@{dispose}!org\+::newdawn\+::slick\+::\+Canvas\+Game\+Container@{org\+::newdawn\+::slick\+::\+Canvas\+Game\+Container}}
+\subsubsection{\texorpdfstring{dispose()}{dispose()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+Canvas\+Game\+Container.\+dispose (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Dispose the container and any resources it holds 
+\begin{DoxyCode}
+102                           \{
+103     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1_canvas_game_container_a844f6aaba517d2948de205d2f45cd7bc}\label{classorg_1_1newdawn_1_1slick_1_1_canvas_game_container_a844f6aaba517d2948de205d2f45cd7bc}} 
+\index{org\+::newdawn\+::slick\+::\+Canvas\+Game\+Container@{org\+::newdawn\+::slick\+::\+Canvas\+Game\+Container}!get\+Container@{get\+Container}}
+\index{get\+Container@{get\+Container}!org\+::newdawn\+::slick\+::\+Canvas\+Game\+Container@{org\+::newdawn\+::slick\+::\+Canvas\+Game\+Container}}
+\subsubsection{\texorpdfstring{get\+Container()}{getContainer()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_game_container}{Game\+Container}} org.\+newdawn.\+slick.\+Canvas\+Game\+Container.\+get\+Container (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get the \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_game_container}{Game\+Container}} providing this canvas
+
+\begin{DoxyReturn}{Returns}
+The game container providing this canvas 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+110                                         \{
+111         \textcolor{keywordflow}{return} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_canvas_game_container_af13c765d7302dc5948d0261e2526ef8b}{container}};
+112     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1_canvas_game_container_a38f91f490299ca036d075779ff15ff15}\label{classorg_1_1newdawn_1_1slick_1_1_canvas_game_container_a38f91f490299ca036d075779ff15ff15}} 
+\index{org\+::newdawn\+::slick\+::\+Canvas\+Game\+Container@{org\+::newdawn\+::slick\+::\+Canvas\+Game\+Container}!schedule\+Update@{schedule\+Update}}
+\index{schedule\+Update@{schedule\+Update}!org\+::newdawn\+::slick\+::\+Canvas\+Game\+Container@{org\+::newdawn\+::slick\+::\+Canvas\+Game\+Container}}
+\subsubsection{\texorpdfstring{schedule\+Update()}{scheduleUpdate()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+Canvas\+Game\+Container.\+schedule\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+Schedule an update on the E\+DT 
+\begin{DoxyCode}
+82                                   \{
+83         \textcolor{keywordflow}{if} (!isVisible()) \{
+84             \textcolor{keywordflow}{return};
+85         \}
+86         
+87         SwingUtilities.invokeLater(\textcolor{keyword}{new} Runnable() \{
+88             \textcolor{keyword}{public} \textcolor{keywordtype}{void} run() \{
+89                 \textcolor{keywordflow}{try} \{
+90                     \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_canvas_game_container_af13c765d7302dc5948d0261e2526ef8b}{container}}.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_app_game_container_a57672732cfac93096300c549103619dd}{gameLoop}}();
+91                 \} \textcolor{keywordflow}{catch} (SlickException e) \{
+92                     e.printStackTrace();
+93                 \}
+94                 \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_canvas_game_container_af13c765d7302dc5948d0261e2526ef8b}{container}}.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_canvas_game_container_1_1_container_a23325dcc30cb88191ac8f0382a2fc611}{checkDimensions}}();
+95                 \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_canvas_game_container_a38f91f490299ca036d075779ff15ff15}{scheduleUpdate}}();
+96             \}
+97         \});
+98     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1_canvas_game_container_a4649e692eacd83dfb7fe5cf2c383dd39}\label{classorg_1_1newdawn_1_1slick_1_1_canvas_game_container_a4649e692eacd83dfb7fe5cf2c383dd39}} 
+\index{org\+::newdawn\+::slick\+::\+Canvas\+Game\+Container@{org\+::newdawn\+::slick\+::\+Canvas\+Game\+Container}!start@{start}}
+\index{start@{start}!org\+::newdawn\+::slick\+::\+Canvas\+Game\+Container@{org\+::newdawn\+::slick\+::\+Canvas\+Game\+Container}}
+\subsubsection{\texorpdfstring{start()}{start()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+Canvas\+Game\+Container.\+start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_slick_exception}{Slick\+Exception}}\hspace{0.3cm}{\ttfamily [inline]}}
+
+Start the game container rendering
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_slick_exception}{Slick\+Exception}}} & Indicates a failure during game execution \\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyCode}
+57                                               \{
+58         SwingUtilities.invokeLater(\textcolor{keyword}{new} Runnable() \{
+59             \textcolor{keyword}{public} \textcolor{keywordtype}{void} run() \{
+60                 \textcolor{keywordflow}{try} \{
+61                     Input.disableControllers();
+62                     
+63                     \textcolor{keywordflow}{try} \{
+64                         Display.setParent(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_canvas_game_container_a078feee2c69d77cabd1f09b87d055923}{CanvasGameContainer}}.this);
+65                     \} \textcolor{keywordflow}{catch} (LWJGLException e) \{
+66                         \textcolor{keywordflow}{throw} \textcolor{keyword}{new} SlickException(\textcolor{stringliteral}{"Failed to setParent of canvas"}, e);
+67                     \}
+68                     
+69                     \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_canvas_game_container_af13c765d7302dc5948d0261e2526ef8b}{container}}.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_app_game_container_ac2c97110363892113b435cc8aa5b0d4a}{setup}}();
+70                     \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_canvas_game_container_a38f91f490299ca036d075779ff15ff15}{scheduleUpdate}}();
+71                 \} \textcolor{keywordflow}{catch} (SlickException e) \{
+72                     e.printStackTrace();
+73                     System.exit(0);
+74                 \}
+75             \}
+76         \});
+77     \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1_canvas_game_container_af13c765d7302dc5948d0261e2526ef8b}\label{classorg_1_1newdawn_1_1slick_1_1_canvas_game_container_af13c765d7302dc5948d0261e2526ef8b}} 
+\index{org\+::newdawn\+::slick\+::\+Canvas\+Game\+Container@{org\+::newdawn\+::slick\+::\+Canvas\+Game\+Container}!container@{container}}
+\index{container@{container}!org\+::newdawn\+::slick\+::\+Canvas\+Game\+Container@{org\+::newdawn\+::slick\+::\+Canvas\+Game\+Container}}
+\subsubsection{\texorpdfstring{container}{container}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_canvas_game_container_1_1_container}{Container}} org.\+newdawn.\+slick.\+Canvas\+Game\+Container.\+container\hspace{0.3cm}{\ttfamily [protected]}}
+
+The actual container implementation \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1_canvas_game_container_aea0c3147fede8b9e57819fbee5c50612}\label{classorg_1_1newdawn_1_1slick_1_1_canvas_game_container_aea0c3147fede8b9e57819fbee5c50612}} 
+\index{org\+::newdawn\+::slick\+::\+Canvas\+Game\+Container@{org\+::newdawn\+::slick\+::\+Canvas\+Game\+Container}!game@{game}}
+\index{game@{game}!org\+::newdawn\+::slick\+::\+Canvas\+Game\+Container@{org\+::newdawn\+::slick\+::\+Canvas\+Game\+Container}}
+\subsubsection{\texorpdfstring{game}{game}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1_game}{Game}} org.\+newdawn.\+slick.\+Canvas\+Game\+Container.\+game\hspace{0.3cm}{\ttfamily [protected]}}
+
+The game being held in this container 

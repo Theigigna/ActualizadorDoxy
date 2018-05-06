@@ -1,0 +1,56 @@
+\hypertarget{classpkg4_1_1media_1_1_media}{}\section{pkg4.\+media.\+Media Class Reference}
+\label{classpkg4_1_1media_1_1_media}\index{pkg4.\+media.\+Media@{pkg4.\+media.\+Media}}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{classpkg4_1_1media_1_1_media_a216f28133ebec0e75994083238eb4a8d}{main}} (String\mbox{[}$\,$\mbox{]} args)
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classpkg4_1_1media_1_1_media_a216f28133ebec0e75994083238eb4a8d}\label{classpkg4_1_1media_1_1_media_a216f28133ebec0e75994083238eb4a8d}} 
+\index{pkg4\+::media\+::\+Media@{pkg4\+::media\+::\+Media}!main@{main}}
+\index{main@{main}!pkg4\+::media\+::\+Media@{pkg4\+::media\+::\+Media}}
+\subsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily static void pkg4.\+media.\+Media.\+main (\begin{DoxyParamCaption}\item[{String \mbox{[}$\,$\mbox{]}}]{args }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em args} & the command line arguments \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+18                                            \{
+19         \textcolor{keywordtype}{int} contador, total, media;
+20       String nota;
+21        \textcolor{comment}{//Objeto para leer una cadena del teclado}
+22       Scanner entrada = \textcolor{keyword}{new} Scanner(System.in);
+23  
+24       \textcolor{comment}{// inicialización de variables}
+25       total = 0;
+26       contador = 1;
+27   
+28        \textcolor{keywordflow}{while} ( contador <= 5 ) \{
+29          System.out.println( \textcolor{stringliteral}{"\(\backslash\)nTeclee calificación (A,B,C,D,E): "} );
+30          nota = entrada.nextLine();
+31          \textcolor{keywordflow}{if} (nota.equals(\textcolor{stringliteral}{"A"})) \{
+32                 total = total + 4;
+33          \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (nota.equals(\textcolor{stringliteral}{"B"})) \{
+34                 total = total + 3;
+35          \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (nota.equals(\textcolor{stringliteral}{"C"})) \{
+36                 total = total + 2;
+37          \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (nota.equals(\textcolor{stringliteral}{"D"})) \{
+38                 total = total + 1;
+39          \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (nota.equals(\textcolor{stringliteral}{"E"})) \{
+40                 total = total + 0;
+41          \}
+42  
+43          contador = contador + 1;
+44       \}
+45   
+46       media = total / 5;
+47       System.out.println(\textcolor{stringliteral}{"\(\backslash\)n\(\backslash\)nEl promedio del grupo es: "} + media);
+48         \textcolor{comment}{// TODO code application logic here}
+49     \}
+\end{DoxyCode}

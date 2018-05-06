@@ -1,0 +1,605 @@
+\hypertarget{classpecl6part2_1_1_controlador}{}\section{pecl6part2.\+Controlador Class Reference}
+\label{classpecl6part2_1_1_controlador}\index{pecl6part2.\+Controlador@{pecl6part2.\+Controlador}}
+Inheritance diagram for pecl6part2.\+Controlador\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classpecl6part2_1_1_controlador}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpecl6part2_1_1_controlador_a99e61c93190cd720977fe02b686bd34f}{Controlador}} (\mbox{\hyperlink{classpecl6part2_1_1_ascensor}{Ascensor}} ascensor1, \mbox{\hyperlink{classpecl6part2_1_1_ascensor}{Ascensor}} ascensor2, \mbox{\hyperlink{classpecl6part2_1_1_planta}{Planta}} \mbox{\hyperlink{classpecl6part2_1_1_controlador_a7706d274fde82fed01a03a619fbcd77c}{plantas}}\mbox{[}$\,$\mbox{]}, \mbox{\hyperlink{classpecl6part2_1_1_monitor}{Monitor}} \mbox{\hyperlink{classpecl6part2_1_1_controlador_a7fc29467f824a892431dc36c908857c7}{monitor}}, \mbox{\hyperlink{classpecl6part2_1_1_paso}{Paso}} \mbox{\hyperlink{classpecl6part2_1_1_controlador_ae07ed4d274035a923387361c19e5ce79}{paso}}, Array\+List$<$ \mbox{\hyperlink{classpecl6part2_1_1_persona}{Persona}} $>$ \mbox{\hyperlink{classpecl6part2_1_1_controlador_a570bc37c2db22f144af250ceccbbab6d}{personas}})
+\item 
+synchronized void \mbox{\hyperlink{classpecl6part2_1_1_controlador_a2e087cef6532a04ea337269e613393c1}{notificar\+All}} ()
+\item 
+boolean \mbox{\hyperlink{classpecl6part2_1_1_controlador_a759775f24cc82dc8b5ef275e42a12e3a}{quedan\+Peticiones\+Subiendo}} (\mbox{\hyperlink{classpecl6part2_1_1_ascensor}{Ascensor}} \mbox{\hyperlink{classpecl6part2_1_1_controlador_ac2f7c4abd5447ea5daeeb7d62bf3f591}{ascensor}})
+\item 
+boolean \mbox{\hyperlink{classpecl6part2_1_1_controlador_a18f3f9c74dda296867c72588a840880c}{quedan\+Peticiones\+Bajando}} (\mbox{\hyperlink{classpecl6part2_1_1_ascensor}{Ascensor}} \mbox{\hyperlink{classpecl6part2_1_1_controlador_ac2f7c4abd5447ea5daeeb7d62bf3f591}{ascensor}})
+\item 
+String \mbox{\hyperlink{classpecl6part2_1_1_controlador_a31e86324ff7658f72c803a7ac0c5af5b}{subir\+Obajar}} (\mbox{\hyperlink{classpecl6part2_1_1_ascensor}{Ascensor}} \mbox{\hyperlink{classpecl6part2_1_1_controlador_ac2f7c4abd5447ea5daeeb7d62bf3f591}{ascensor}})
+\item 
+void \mbox{\hyperlink{classpecl6part2_1_1_controlador_a82ec0f1c651211c44a58dc437827b703}{run}} ()
+\item 
+String \mbox{\hyperlink{classpecl6part2_1_1_controlador_a0a6c024e0bdec3f6d8092e0b716db729}{imprimir\+Situacion}} ()
+\item 
+int \mbox{\hyperlink{classpecl6part2_1_1_controlador_a92fef133fc0a5fcfa1b483b83a4d3f7d}{numero\+Personas}} (int i)
+\end{DoxyCompactItemize}
+\subsection*{Package Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpecl6part2_1_1_monitor}{Monitor}} \mbox{\hyperlink{classpecl6part2_1_1_controlador_a7fc29467f824a892431dc36c908857c7}{monitor}}
+\item 
+\mbox{\hyperlink{classpecl6part2_1_1_paso}{Paso}} \mbox{\hyperlink{classpecl6part2_1_1_controlador_ae07ed4d274035a923387361c19e5ce79}{paso}}
+\item 
+\mbox{\hyperlink{classpecl6part2_1_1_ascensor}{Ascensor}} \mbox{\hyperlink{classpecl6part2_1_1_controlador_ac2f7c4abd5447ea5daeeb7d62bf3f591}{ascensor}} \mbox{[}$\,$\mbox{]}
+\item 
+long \mbox{\hyperlink{classpecl6part2_1_1_controlador_af7664f9bfe62befb34d430f513b96c98}{tiempo}}
+\item 
+boolean \mbox{\hyperlink{classpecl6part2_1_1_controlador_a1423d58d5aa77dac81785587fadcd3eb}{botones}} \mbox{[}$\,$\mbox{]}
+\item 
+\mbox{\hyperlink{classpecl6part2_1_1_planta}{Planta}} \mbox{\hyperlink{classpecl6part2_1_1_controlador_a7706d274fde82fed01a03a619fbcd77c}{plantas}} \mbox{[}$\,$\mbox{]}
+\item 
+String \mbox{\hyperlink{classpecl6part2_1_1_controlador_a239e662ed9f4ba0e12f81e47f3f2773f}{para\+El\+Server}}
+\item 
+Array\+List$<$ \mbox{\hyperlink{classpecl6part2_1_1_persona}{Persona}} $>$ \mbox{\hyperlink{classpecl6part2_1_1_controlador_a570bc37c2db22f144af250ceccbbab6d}{personas}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyAuthor}{Author}
+Ignacio 
+\end{DoxyAuthor}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classpecl6part2_1_1_controlador_a99e61c93190cd720977fe02b686bd34f}\label{classpecl6part2_1_1_controlador_a99e61c93190cd720977fe02b686bd34f}} 
+\index{pecl6part2\+::\+Controlador@{pecl6part2\+::\+Controlador}!Controlador@{Controlador}}
+\index{Controlador@{Controlador}!pecl6part2\+::\+Controlador@{pecl6part2\+::\+Controlador}}
+\subsubsection{\texorpdfstring{Controlador()}{Controlador()}}
+{\footnotesize\ttfamily pecl6part2.\+Controlador.\+Controlador (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classpecl6part2_1_1_ascensor}{Ascensor}}}]{ascensor1,  }\item[{\mbox{\hyperlink{classpecl6part2_1_1_ascensor}{Ascensor}}}]{ascensor2,  }\item[{\mbox{\hyperlink{classpecl6part2_1_1_planta}{Planta}}}]{plantas\mbox{[}$\,$\mbox{]},  }\item[{\mbox{\hyperlink{classpecl6part2_1_1_monitor}{Monitor}}}]{monitor,  }\item[{\mbox{\hyperlink{classpecl6part2_1_1_paso}{Paso}}}]{paso,  }\item[{Array\+List$<$ \mbox{\hyperlink{classpecl6part2_1_1_persona}{Persona}} $>$}]{personas }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+34     \{
+35         this.\mbox{\hyperlink{classpecl6part2_1_1_controlador_a570bc37c2db22f144af250ceccbbab6d}{personas}} = \mbox{\hyperlink{classpecl6part2_1_1_controlador_a570bc37c2db22f144af250ceccbbab6d}{personas}};
+36         this.\mbox{\hyperlink{classpecl6part2_1_1_controlador_a239e662ed9f4ba0e12f81e47f3f2773f}{paraElServer}} = \textcolor{stringliteral}{""};
+37         this.paso = \mbox{\hyperlink{classpecl6part2_1_1_controlador_ae07ed4d274035a923387361c19e5ce79}{paso}};
+38         this.monitor = \mbox{\hyperlink{classpecl6part2_1_1_controlador_a7fc29467f824a892431dc36c908857c7}{monitor}};
+39         this.\mbox{\hyperlink{classpecl6part2_1_1_controlador_af7664f9bfe62befb34d430f513b96c98}{tiempo}} = System.currentTimeMillis();
+40         \textcolor{comment}{//this.personasAux = personasAux;}
+41         this.\mbox{\hyperlink{classpecl6part2_1_1_controlador_ac2f7c4abd5447ea5daeeb7d62bf3f591}{ascensor}} = \textcolor{keyword}{new} \mbox{\hyperlink{classpecl6part1_1_1_ascensor}{Ascensor}}[2];
+42         this.\mbox{\hyperlink{classpecl6part2_1_1_controlador_ac2f7c4abd5447ea5daeeb7d62bf3f591}{ascensor}}[0] = ascensor1;
+43         this.\mbox{\hyperlink{classpecl6part2_1_1_controlador_ac2f7c4abd5447ea5daeeb7d62bf3f591}{ascensor}}[1] = ascensor2;
+44         this.plantas = \mbox{\hyperlink{classpecl6part2_1_1_controlador_a7706d274fde82fed01a03a619fbcd77c}{plantas}};
+45     \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classpecl6part2_1_1_controlador_a0a6c024e0bdec3f6d8092e0b716db729}\label{classpecl6part2_1_1_controlador_a0a6c024e0bdec3f6d8092e0b716db729}} 
+\index{pecl6part2\+::\+Controlador@{pecl6part2\+::\+Controlador}!imprimir\+Situacion@{imprimir\+Situacion}}
+\index{imprimir\+Situacion@{imprimir\+Situacion}!pecl6part2\+::\+Controlador@{pecl6part2\+::\+Controlador}}
+\subsubsection{\texorpdfstring{imprimir\+Situacion()}{imprimirSituacion()}}
+{\footnotesize\ttfamily String pecl6part2.\+Controlador.\+imprimir\+Situacion (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+341     \{
+342         String piso, asc1, asc2, boton, destino;
+343         destino = \textcolor{stringliteral}{""};
+344         \textcolor{keywordtype}{int} aux;
+345         String texto;
+346         texto = \textcolor{stringliteral}{"\(\backslash\)r\(\backslash\)nPiso:      "}+\textcolor{stringliteral}{"Asc. 1.      "}+\textcolor{stringliteral}{"Asc. 2.      "}+\textcolor{stringliteral}{"Botón pulsado:      "}+\textcolor{stringliteral}{"Destinos del
+       interior:      "}+\textcolor{stringliteral}{"Cont: "}+\mbox{\hyperlink{classpecl6part2_1_1_controlador_a7fc29467f824a892431dc36c908857c7}{monitor}}.\mbox{\hyperlink{classpecl6part2_1_1_monitor_a0d9c747a36ef376665ed43b257c623ad}{contador}}+\textcolor{stringliteral}{"\(\backslash\)r\(\backslash\)n"};
+347         \textcolor{comment}{//System.out.println(texto);}
+348         
+349         \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i = 20; i>=0;i--)
+350         \{
+351             \textcolor{keywordflow}{if} (i > 9)
+352             \{
+353                 piso = i+\textcolor{stringliteral}{"         "};
+354             \}\textcolor{keywordflow}{else}
+355             \{
+356                 piso = i+\textcolor{stringliteral}{"          "};
+357             \}
+358             
+359             \textcolor{comment}{//ascensor1}
+360             \textcolor{keywordflow}{if}(\mbox{\hyperlink{classpecl6part2_1_1_controlador_ac2f7c4abd5447ea5daeeb7d62bf3f591}{ascensor}}[0].planta == i)
+361             \{
+362                 \textcolor{keywordflow}{if}(\mbox{\hyperlink{classpecl6part2_1_1_controlador_ac2f7c4abd5447ea5daeeb7d62bf3f591}{ascensor}}[0].estado == \textcolor{stringliteral}{"E"} || \mbox{\hyperlink{classpecl6part2_1_1_controlador_ac2f7c4abd5447ea5daeeb7d62bf3f591}{ascensor}}[0].estado == \textcolor{stringliteral}{"P"})
+363                 \{
+364                     \textcolor{keywordflow}{if}(\mbox{\hyperlink{classpecl6part2_1_1_controlador_ac2f7c4abd5447ea5daeeb7d62bf3f591}{ascensor}}[0].estado == \textcolor{stringliteral}{"E"})
+365                     \{
+366                         asc1 = \textcolor{stringliteral}{"E            "};
+367                     \}\textcolor{keywordflow}{else}
+368                     \{
+369                         asc1 = \textcolor{stringliteral}{"P            "};
+370                     \}
+371                 \}
+372                 \textcolor{keywordflow}{else}
+373                 \{
+374                     asc1 = \mbox{\hyperlink{classpecl6part2_1_1_controlador_ac2f7c4abd5447ea5daeeb7d62bf3f591}{ascensor}}[0].\mbox{\hyperlink{classpecl6part2_1_1_ascensor_a6a578a2c1bc59586257fe412a44354ac}{estado}}+\textcolor{stringliteral}{"#"}+\mbox{\hyperlink{classpecl6part2_1_1_controlador_ac2f7c4abd5447ea5daeeb7d62bf3f591}{ascensor}}[0].
+      \mbox{\hyperlink{classpecl6part2_1_1_ascensor_af45fe15f097cdb4d74fb0bce843ccac6}{numeroOcupantes}}()+\textcolor{stringliteral}{"          "};
+375                 \}
+376             \}\textcolor{keywordflow}{else}
+377             \{
+378                 asc1 = \textcolor{stringliteral}{"|            "};
+379             \}
+380             \textcolor{comment}{//ascensor 2}
+381             \textcolor{keywordflow}{if}(\mbox{\hyperlink{classpecl6part2_1_1_controlador_ac2f7c4abd5447ea5daeeb7d62bf3f591}{ascensor}}[1].planta == i)
+382             \{
+383                 \textcolor{keywordflow}{if}(\mbox{\hyperlink{classpecl6part2_1_1_controlador_ac2f7c4abd5447ea5daeeb7d62bf3f591}{ascensor}}[1].estado == \textcolor{stringliteral}{"E"} || \mbox{\hyperlink{classpecl6part2_1_1_controlador_ac2f7c4abd5447ea5daeeb7d62bf3f591}{ascensor}}[1].estado == \textcolor{stringliteral}{"P"})
+384                 \{
+385                     \textcolor{keywordflow}{if}(\mbox{\hyperlink{classpecl6part2_1_1_controlador_ac2f7c4abd5447ea5daeeb7d62bf3f591}{ascensor}}[1].estado == \textcolor{stringliteral}{"E"})
+386                     \{
+387                         asc2 = \textcolor{stringliteral}{"E            "};
+388                     \}\textcolor{keywordflow}{else}
+389                     \{
+390                         asc2 = \textcolor{stringliteral}{"P            "};
+391                     \}
+392                 \}
+393                 \textcolor{keywordflow}{else}
+394                 \{
+395                     asc2 = \mbox{\hyperlink{classpecl6part2_1_1_controlador_ac2f7c4abd5447ea5daeeb7d62bf3f591}{ascensor}}[1].\mbox{\hyperlink{classpecl6part2_1_1_ascensor_a6a578a2c1bc59586257fe412a44354ac}{estado}}+\textcolor{stringliteral}{"#"}+\mbox{\hyperlink{classpecl6part2_1_1_controlador_ac2f7c4abd5447ea5daeeb7d62bf3f591}{ascensor}}[1].
+      \mbox{\hyperlink{classpecl6part2_1_1_ascensor_af45fe15f097cdb4d74fb0bce843ccac6}{numeroOcupantes}}()+\textcolor{stringliteral}{"          "};
+396                 \}
+397             \}\textcolor{keywordflow}{else}
+398             \{
+399                 asc2 = \textcolor{stringliteral}{"|            "};
+400             \}
+401             
+402             \textcolor{comment}{//boton pulsado}
+403             \textcolor{keywordflow}{if}(\mbox{\hyperlink{classpecl6part2_1_1_controlador_a7706d274fde82fed01a03a619fbcd77c}{plantas}}[i].botonPulsado)
+404             \{
+405                 
+406                 \textcolor{keywordflow}{if}(this.\mbox{\hyperlink{classpecl6part2_1_1_controlador_a92fef133fc0a5fcfa1b483b83a4d3f7d}{numeroPersonas}}(i) < 9)
+407                 \{
+408                     boton = \textcolor{stringliteral}{"--Si      ("} + this.\mbox{\hyperlink{classpecl6part2_1_1_controlador_a92fef133fc0a5fcfa1b483b83a4d3f7d}{numeroPersonas}}(i) + \textcolor{stringliteral}{")      "};
+409                 \}
+410                 \textcolor{keywordflow}{else}
+411                 \{
+412                     boton = \textcolor{stringliteral}{"--Si      ("} + this.\mbox{\hyperlink{classpecl6part2_1_1_controlador_a92fef133fc0a5fcfa1b483b83a4d3f7d}{numeroPersonas}}(i) + \textcolor{stringliteral}{")     "};
+413                 \}
+414             \}
+415             \textcolor{keywordflow}{else}
+416             \{
+417                 boton = \textcolor{stringliteral}{"No                 "};
+418             \}
+419             
+420             \textcolor{comment}{//destino}
+421             destino = \textcolor{stringliteral}{""};
+422             \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} j = 0; j<\mbox{\hyperlink{classpecl6part2_1_1_controlador_ac2f7c4abd5447ea5daeeb7d62bf3f591}{ascensor}}[0].\mbox{\hyperlink{classpecl6part2_1_1_ascensor_af4dd01a24c9588e94061d4e61045563a}{ocupantes}}.size(); j++)
+423             \{
+424                 \textcolor{keywordflow}{if}(\mbox{\hyperlink{classpecl6part2_1_1_controlador_ac2f7c4abd5447ea5daeeb7d62bf3f591}{ascensor}}[0].ocupantes.get(j).getPiso\_destino() == i)
+425                     destino = destino + \textcolor{stringliteral}{"P"} + \mbox{\hyperlink{classpecl6part2_1_1_controlador_ac2f7c4abd5447ea5daeeb7d62bf3f591}{ascensor}}[0].ocupantes.get(j).getIdentificador() + \textcolor{stringliteral}{", 
+      "};
+426             \}
+427             \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} j = 0; j<\mbox{\hyperlink{classpecl6part2_1_1_controlador_ac2f7c4abd5447ea5daeeb7d62bf3f591}{ascensor}}[1].\mbox{\hyperlink{classpecl6part2_1_1_ascensor_af4dd01a24c9588e94061d4e61045563a}{ocupantes}}.size(); j++)
+428             \{
+429                 \textcolor{keywordflow}{if}(\mbox{\hyperlink{classpecl6part2_1_1_controlador_ac2f7c4abd5447ea5daeeb7d62bf3f591}{ascensor}}[1].ocupantes.get(j).getPiso\_destino() == i)
+430                     destino = destino + \textcolor{stringliteral}{"P"} + \mbox{\hyperlink{classpecl6part2_1_1_controlador_ac2f7c4abd5447ea5daeeb7d62bf3f591}{ascensor}}[1].ocupantes.get(j).getIdentificador() + \textcolor{stringliteral}{", 
+      "};
+431             \}
+432             texto += piso + asc1 + asc2 + boton + destino+\textcolor{stringliteral}{"\(\backslash\)r\(\backslash\)n"};
+433         \}
+434         System.out.println(texto);
+435         
+436         
+437         
+438         \textcolor{keywordflow}{return} texto;
+439     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classpecl6part2_1_1_controlador_a2e087cef6532a04ea337269e613393c1}\label{classpecl6part2_1_1_controlador_a2e087cef6532a04ea337269e613393c1}} 
+\index{pecl6part2\+::\+Controlador@{pecl6part2\+::\+Controlador}!notificar\+All@{notificar\+All}}
+\index{notificar\+All@{notificar\+All}!pecl6part2\+::\+Controlador@{pecl6part2\+::\+Controlador}}
+\subsubsection{\texorpdfstring{notificar\+All()}{notificarAll()}}
+{\footnotesize\ttfamily synchronized void pecl6part2.\+Controlador.\+notificar\+All (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+48     \{
+49         \mbox{\hyperlink{classpecl6part2_1_1_controlador_a7fc29467f824a892431dc36c908857c7}{monitor}}.\mbox{\hyperlink{classpecl6part2_1_1_monitor_a77ff6dc9ee3ab70a9f20daea657d856b}{notificar}}();
+50     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classpecl6part2_1_1_controlador_a92fef133fc0a5fcfa1b483b83a4d3f7d}\label{classpecl6part2_1_1_controlador_a92fef133fc0a5fcfa1b483b83a4d3f7d}} 
+\index{pecl6part2\+::\+Controlador@{pecl6part2\+::\+Controlador}!numero\+Personas@{numero\+Personas}}
+\index{numero\+Personas@{numero\+Personas}!pecl6part2\+::\+Controlador@{pecl6part2\+::\+Controlador}}
+\subsubsection{\texorpdfstring{numero\+Personas()}{numeroPersonas()}}
+{\footnotesize\ttfamily int pecl6part2.\+Controlador.\+numero\+Personas (\begin{DoxyParamCaption}\item[{int}]{i }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+442     \{
+443         \textcolor{keywordtype}{int} j = 0, aux = 0;
+444         \textcolor{keywordflow}{for} (j = 0; j < \mbox{\hyperlink{classpecl6part2_1_1_controlador_a570bc37c2db22f144af250ceccbbab6d}{personas}}.size(); j++) \{
+445             \textcolor{comment}{//mirara el numero de personas en un piso mirando si el piso de origen coincide con el pasado
+       por parametro y si no esta en ningun ascensor}
+446             \textcolor{keywordflow}{if}(\mbox{\hyperlink{classpecl6part2_1_1_controlador_a570bc37c2db22f144af250ceccbbab6d}{personas}}.get(j).getPiso\_origen() == i && !\mbox{\hyperlink{classpecl6part2_1_1_controlador_a570bc37c2db22f144af250ceccbbab6d}{personas}}.get(j).ascensores[0].
+      estoyEnElAscensor(\mbox{\hyperlink{classpecl6part2_1_1_controlador_a570bc37c2db22f144af250ceccbbab6d}{personas}}.get(j)) && !\mbox{\hyperlink{classpecl6part2_1_1_controlador_a570bc37c2db22f144af250ceccbbab6d}{personas}}.get(j).ascensores[1].estoyEnElAscensor(
+      \mbox{\hyperlink{classpecl6part2_1_1_controlador_a570bc37c2db22f144af250ceccbbab6d}{personas}}.get(j)))
+447                 aux++;
+448         \}
+449         \textcolor{keywordflow}{return} aux;
+450     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classpecl6part2_1_1_controlador_a18f3f9c74dda296867c72588a840880c}\label{classpecl6part2_1_1_controlador_a18f3f9c74dda296867c72588a840880c}} 
+\index{pecl6part2\+::\+Controlador@{pecl6part2\+::\+Controlador}!quedan\+Peticiones\+Bajando@{quedan\+Peticiones\+Bajando}}
+\index{quedan\+Peticiones\+Bajando@{quedan\+Peticiones\+Bajando}!pecl6part2\+::\+Controlador@{pecl6part2\+::\+Controlador}}
+\subsubsection{\texorpdfstring{quedan\+Peticiones\+Bajando()}{quedanPeticionesBajando()}}
+{\footnotesize\ttfamily boolean pecl6part2.\+Controlador.\+quedan\+Peticiones\+Bajando (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classpecl6part2_1_1_ascensor}{Ascensor}}}]{ascensor }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+87     \{
+88         \textcolor{keywordtype}{boolean} aux = \textcolor{keyword}{false};
+89         \textcolor{keywordtype}{int} auxint;
+90         \textcolor{keywordtype}{int} plantaAscensor = \mbox{\hyperlink{classpecl6part2_1_1_controlador_ac2f7c4abd5447ea5daeeb7d62bf3f591}{ascensor}}.\mbox{\hyperlink{classpecl6part2_1_1_ascensor_a66017643cc6554b17d447867a0c0d619}{planta}};
+91         
+92         \textcolor{keywordflow}{if}(\mbox{\hyperlink{classpecl6part2_1_1_controlador_ac2f7c4abd5447ea5daeeb7d62bf3f591}{ascensor}}.\mbox{\hyperlink{classpecl6part2_1_1_ascensor_a66017643cc6554b17d447867a0c0d619}{planta}} == 0)
+93         \{
+94             aux = \textcolor{keyword}{false};
+95         \}
+96         \textcolor{keywordflow}{else}
+97         \{
+98             auxint = plantaAscensor;
+99             \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i = auxint-1; i>=0; i--)
+100             \{
+101                 \textcolor{comment}{//fallo, solucionar}
+102                 \textcolor{keywordflow}{if}(\mbox{\hyperlink{classpecl6part2_1_1_controlador_a7706d274fde82fed01a03a619fbcd77c}{plantas}}[i].botonPulsado && i != \mbox{\hyperlink{classpecl6part2_1_1_controlador_ac2f7c4abd5447ea5daeeb7d62bf3f591}{ascensor}}.
+      \mbox{\hyperlink{classpecl6part2_1_1_ascensor_a66017643cc6554b17d447867a0c0d619}{planta}})
+103                 \{
+104                     aux = \textcolor{keyword}{true};
+105                 \}
+106                 
+107             \}
+108             \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i = 0; i < \mbox{\hyperlink{classpecl6part2_1_1_controlador_ac2f7c4abd5447ea5daeeb7d62bf3f591}{ascensor}}.\mbox{\hyperlink{classpecl6part2_1_1_ascensor_a92a9c3265671bd3d2654626f62094cf9}{orden}}.size() ; i++ )
+109             \{
+110                 
+111                     \textcolor{keywordflow}{if} ((\mbox{\hyperlink{classpecl6part2_1_1_controlador_ac2f7c4abd5447ea5daeeb7d62bf3f591}{ascensor}}.\mbox{\hyperlink{classpecl6part2_1_1_ascensor_a92a9c3265671bd3d2654626f62094cf9}{orden}}.get(i) < \mbox{\hyperlink{classpecl6part2_1_1_controlador_ac2f7c4abd5447ea5daeeb7d62bf3f591}{ascensor}}.
+      \mbox{\hyperlink{classpecl6part2_1_1_ascensor_a66017643cc6554b17d447867a0c0d619}{planta}}) \textcolor{comment}{/*&& (ascensor.ocupantes.get(i).getPiso\_destino() > -1)*/})
+112                     \{
+113                         aux = \textcolor{keyword}{true};
+114                     \}
+115                 
+116             \}
+117         \}
+118         
+119         \textcolor{keywordflow}{return} aux;
+120     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classpecl6part2_1_1_controlador_a759775f24cc82dc8b5ef275e42a12e3a}\label{classpecl6part2_1_1_controlador_a759775f24cc82dc8b5ef275e42a12e3a}} 
+\index{pecl6part2\+::\+Controlador@{pecl6part2\+::\+Controlador}!quedan\+Peticiones\+Subiendo@{quedan\+Peticiones\+Subiendo}}
+\index{quedan\+Peticiones\+Subiendo@{quedan\+Peticiones\+Subiendo}!pecl6part2\+::\+Controlador@{pecl6part2\+::\+Controlador}}
+\subsubsection{\texorpdfstring{quedan\+Peticiones\+Subiendo()}{quedanPeticionesSubiendo()}}
+{\footnotesize\ttfamily boolean pecl6part2.\+Controlador.\+quedan\+Peticiones\+Subiendo (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classpecl6part2_1_1_ascensor}{Ascensor}}}]{ascensor }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+53     \{
+54         \textcolor{keywordtype}{boolean} aux = \textcolor{keyword}{false};
+55         \textcolor{keywordtype}{int} plantaAscensor = \mbox{\hyperlink{classpecl6part2_1_1_controlador_ac2f7c4abd5447ea5daeeb7d62bf3f591}{ascensor}}.\mbox{\hyperlink{classpecl6part2_1_1_ascensor_a66017643cc6554b17d447867a0c0d619}{planta}};
+56         
+57         
+58         \textcolor{keywordflow}{if}(\mbox{\hyperlink{classpecl6part2_1_1_controlador_ac2f7c4abd5447ea5daeeb7d62bf3f591}{ascensor}}.\mbox{\hyperlink{classpecl6part2_1_1_ascensor_a66017643cc6554b17d447867a0c0d619}{planta}} == 20)
+59         \{
+60             aux = \textcolor{keyword}{false};
+61         \}
+62         \textcolor{keywordflow}{else}
+63         \{
+64             \textcolor{keywordflow}{while}(plantaAscensor < 20)
+65             \{
+66                 \textcolor{keywordflow}{if}(\mbox{\hyperlink{classpecl6part2_1_1_controlador_a7706d274fde82fed01a03a619fbcd77c}{plantas}}[(plantaAscensor + 1)].botonPulsado)
+67                 \{
+68                     aux = \textcolor{keyword}{true};
+69                 \}
+70                 plantaAscensor++;
+71             \}
+72             \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i = 0; i<\mbox{\hyperlink{classpecl6part2_1_1_controlador_ac2f7c4abd5447ea5daeeb7d62bf3f591}{ascensor}}.\mbox{\hyperlink{classpecl6part2_1_1_ascensor_af4dd01a24c9588e94061d4e61045563a}{ocupantes}}.size() ; i++ )
+73             \{
+74                 
+75                     \textcolor{keywordflow}{if} (\mbox{\hyperlink{classpecl6part2_1_1_controlador_ac2f7c4abd5447ea5daeeb7d62bf3f591}{ascensor}}.\mbox{\hyperlink{classpecl6part2_1_1_ascensor_af4dd01a24c9588e94061d4e61045563a}{ocupantes}}.get(i).getPiso\_destino() > 
+      \mbox{\hyperlink{classpecl6part2_1_1_controlador_ac2f7c4abd5447ea5daeeb7d62bf3f591}{ascensor}}.\mbox{\hyperlink{classpecl6part2_1_1_ascensor_a66017643cc6554b17d447867a0c0d619}{planta}})
+76                     \{
+77                         aux = \textcolor{keyword}{true};
+78                     \}
+79                 
+80             \}
+81         \}
+82         
+83         \textcolor{keywordflow}{return} aux;
+84     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classpecl6part2_1_1_controlador_a82ec0f1c651211c44a58dc437827b703}\label{classpecl6part2_1_1_controlador_a82ec0f1c651211c44a58dc437827b703}} 
+\index{pecl6part2\+::\+Controlador@{pecl6part2\+::\+Controlador}!run@{run}}
+\index{run@{run}!pecl6part2\+::\+Controlador@{pecl6part2\+::\+Controlador}}
+\subsubsection{\texorpdfstring{run()}{run()}}
+{\footnotesize\ttfamily void pecl6part2.\+Controlador.\+run (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+289     \{
+290          String aux = \textcolor{stringliteral}{"Comienza el texto de ejecución del programa. \(\backslash\)r\(\backslash\)n\(\backslash\)r\(\backslash\)n"};
+291          \mbox{\hyperlink{classpecl6part2_1_1_controlador_ac2f7c4abd5447ea5daeeb7d62bf3f591}{ascensor}}[0].\mbox{\hyperlink{classpecl6part2_1_1_ascensor_a6a578a2c1bc59586257fe412a44354ac}{estado}} = \textcolor{stringliteral}{"P"}; \textcolor{comment}{//irrelevante}
+292          \mbox{\hyperlink{classpecl6part2_1_1_controlador_ac2f7c4abd5447ea5daeeb7d62bf3f591}{ascensor}}[0].\mbox{\hyperlink{classpecl6part2_1_1_ascensor_a6a578a2c1bc59586257fe412a44354ac}{estado}} = \mbox{\hyperlink{classpecl6part2_1_1_controlador_a31e86324ff7658f72c803a7ac0c5af5b}{subirObajar}}(\mbox{\hyperlink{classpecl6part2_1_1_controlador_ac2f7c4abd5447ea5daeeb7d62bf3f591}{ascensor}}[0]);
+293          \mbox{\hyperlink{classpecl6part2_1_1_controlador_a239e662ed9f4ba0e12f81e47f3f2773f}{paraElServer}} = \mbox{\hyperlink{classpecl6part2_1_1_controlador_a0a6c024e0bdec3f6d8092e0b716db729}{imprimirSituacion}}();
+294          \textcolor{keywordflow}{try} \{
+295             \mbox{\hyperlink{classpecl6part2_1_1_servidor_vigilante}{ServidorVigilante}} server1 = \textcolor{keyword}{new} \mbox{\hyperlink{classpecl6part2_1_1_servidor_vigilante}{ServidorVigilante}}(5000,\textcolor{keyword}{this});
+296             server1.start();
+297             \mbox{\hyperlink{classpecl6part2_1_1_servidor_controlador}{ServidorControlador}} server2 = \textcolor{keyword}{new} 
+      \mbox{\hyperlink{classpecl6part2_1_1_servidor_controlador}{ServidorControlador}}(5031,\mbox{\hyperlink{classpecl6part2_1_1_controlador_ae07ed4d274035a923387361c19e5ce79}{paso}});
+298             server2.start();
+299         \} \textcolor{keywordflow}{catch} (IOException ex) \{
+300             Logger.getLogger(\mbox{\hyperlink{classpecl6part1_1_1_edificio}{Edificio}}.class.getName()).log(Level.SEVERE, null, ex);
+301         \}
+302          
+303             \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i = 0;i<100;i++)\textcolor{comment}{//los ascensores harán 100 movimientos en total}
+304             \{
+305                 \mbox{\hyperlink{classpecl6part2_1_1_controlador_ae07ed4d274035a923387361c19e5ce79}{paso}}.\mbox{\hyperlink{classpecl6part2_1_1_paso_a374d70af70d81631660741eb340af6ce}{mirar}}();
+306                 \mbox{\hyperlink{classpecl6part2_1_1_controlador_af7664f9bfe62befb34d430f513b96c98}{tiempo}} = \mbox{\hyperlink{classpecl6part2_1_1_controlador_ac2f7c4abd5447ea5daeeb7d62bf3f591}{ascensor}}[\mbox{\hyperlink{classpecl6part2_1_1_controlador_a7fc29467f824a892431dc36c908857c7}{monitor}}.\mbox{\hyperlink{classpecl6part2_1_1_monitor_abfc1bfd2de962ac64f1c505d9dbe136a}{ascensor}}].
+      \mbox{\hyperlink{classpecl6part2_1_1_ascensor_ab558a9179249070810128b1355edb385}{estropear}}(\mbox{\hyperlink{classpecl6part2_1_1_controlador_af7664f9bfe62befb34d430f513b96c98}{tiempo}});
+307             
+308             \textcolor{comment}{//hace lo que tiene que hacer}
+309                 \mbox{\hyperlink{classpecl6part2_1_1_controlador_a7fc29467f824a892431dc36c908857c7}{monitor}}.\mbox{\hyperlink{classpecl6part2_1_1_monitor_a77ff6dc9ee3ab70a9f20daea657d856b}{notificar}}();
+310             \textcolor{keywordflow}{try} \{
+311                 \textcolor{comment}{//duerme medio segundo}
+312                 sleep(500);
+313             \} \textcolor{keywordflow}{catch} (InterruptedException ex) \{
+314                 Logger.getLogger(\mbox{\hyperlink{classpecl6part1_1_1_controlador}{Controlador}}.class.getName()).log(Level.SEVERE, null, ex);
+315             \}
+316             \mbox{\hyperlink{classpecl6part2_1_1_controlador_ac2f7c4abd5447ea5daeeb7d62bf3f591}{ascensor}}[\mbox{\hyperlink{classpecl6part2_1_1_controlador_a7fc29467f824a892431dc36c908857c7}{monitor}}.\mbox{\hyperlink{classpecl6part2_1_1_monitor_abfc1bfd2de962ac64f1c505d9dbe136a}{ascensor}}].\mbox{\hyperlink{classpecl6part2_1_1_ascensor_a6a578a2c1bc59586257fe412a44354ac}{estado}} = 
+      \mbox{\hyperlink{classpecl6part2_1_1_controlador_a31e86324ff7658f72c803a7ac0c5af5b}{subirObajar}}(\mbox{\hyperlink{classpecl6part2_1_1_controlador_ac2f7c4abd5447ea5daeeb7d62bf3f591}{ascensor}}[\mbox{\hyperlink{classpecl6part2_1_1_controlador_a7fc29467f824a892431dc36c908857c7}{monitor}}.\mbox{\hyperlink{classpecl6part2_1_1_monitor_abfc1bfd2de962ac64f1c505d9dbe136a}{ascensor}}]);
+317             
+318             \textcolor{keywordflow}{if}(\mbox{\hyperlink{classpecl6part2_1_1_controlador_ac2f7c4abd5447ea5daeeb7d62bf3f591}{ascensor}}[\mbox{\hyperlink{classpecl6part2_1_1_controlador_a7fc29467f824a892431dc36c908857c7}{monitor}}.\mbox{\hyperlink{classpecl6part2_1_1_monitor_abfc1bfd2de962ac64f1c505d9dbe136a}{ascensor}}].\mbox{\hyperlink{classpecl6part2_1_1_ascensor_a6a578a2c1bc59586257fe412a44354ac}{estado}} == \textcolor{stringliteral}{"S"})
+319             \{
+320                 \mbox{\hyperlink{classpecl6part2_1_1_controlador_ac2f7c4abd5447ea5daeeb7d62bf3f591}{ascensor}}[\mbox{\hyperlink{classpecl6part2_1_1_controlador_a7fc29467f824a892431dc36c908857c7}{monitor}}.\mbox{\hyperlink{classpecl6part2_1_1_monitor_abfc1bfd2de962ac64f1c505d9dbe136a}{ascensor}}].\mbox{\hyperlink{classpecl6part2_1_1_ascensor_a66017643cc6554b17d447867a0c0d619}{planta}}++;
+321             \}
+322             \textcolor{keywordflow}{else}
+323             \{
+324                 \textcolor{keywordflow}{if}(\mbox{\hyperlink{classpecl6part2_1_1_controlador_ac2f7c4abd5447ea5daeeb7d62bf3f591}{ascensor}}[\mbox{\hyperlink{classpecl6part2_1_1_controlador_a7fc29467f824a892431dc36c908857c7}{monitor}}.\mbox{\hyperlink{classpecl6part2_1_1_monitor_abfc1bfd2de962ac64f1c505d9dbe136a}{ascensor}}].\mbox{\hyperlink{classpecl6part2_1_1_ascensor_a6a578a2c1bc59586257fe412a44354ac}{estado}} == \textcolor{stringliteral}{"B"})
+325                 \{
+326                     \mbox{\hyperlink{classpecl6part2_1_1_controlador_ac2f7c4abd5447ea5daeeb7d62bf3f591}{ascensor}}[\mbox{\hyperlink{classpecl6part2_1_1_controlador_a7fc29467f824a892431dc36c908857c7}{monitor}}.\mbox{\hyperlink{classpecl6part2_1_1_monitor_abfc1bfd2de962ac64f1c505d9dbe136a}{ascensor}}].\mbox{\hyperlink{classpecl6part2_1_1_ascensor_a66017643cc6554b17d447867a0c0d619}{planta}}--;
+327                 \}
+328             \}
+329             
+330             \textcolor{comment}{//imprime la situación}
+331             
+332                 aux = aux + \mbox{\hyperlink{classpecl6part2_1_1_controlador_a0a6c024e0bdec3f6d8092e0b716db729}{imprimirSituacion}}();
+333                 \mbox{\hyperlink{classpecl6part2_1_1_controlador_a239e662ed9f4ba0e12f81e47f3f2773f}{paraElServer}} = \mbox{\hyperlink{classpecl6part2_1_1_controlador_a0a6c024e0bdec3f6d8092e0b716db729}{imprimirSituacion}}();
+334             \}
+335             \textcolor{comment}{//imprime situación final}
+336         \textcolor{comment}{//imprimirSituacion();}
+337             aux = aux + \textcolor{stringliteral}{"\(\backslash\)r\(\backslash\)n Final del documento txt. \(\backslash\)n Numero de personas que han llegado a su destino: 
+      "}+\mbox{\hyperlink{classpecl6part2_1_1_controlador_a7fc29467f824a892431dc36c908857c7}{monitor}}.\mbox{\hyperlink{classpecl6part2_1_1_monitor_a0d9c747a36ef376665ed43b257c623ad}{contador}};
+338     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classpecl6part2_1_1_controlador_a31e86324ff7658f72c803a7ac0c5af5b}\label{classpecl6part2_1_1_controlador_a31e86324ff7658f72c803a7ac0c5af5b}} 
+\index{pecl6part2\+::\+Controlador@{pecl6part2\+::\+Controlador}!subir\+Obajar@{subir\+Obajar}}
+\index{subir\+Obajar@{subir\+Obajar}!pecl6part2\+::\+Controlador@{pecl6part2\+::\+Controlador}}
+\subsubsection{\texorpdfstring{subir\+Obajar()}{subirObajar()}}
+{\footnotesize\ttfamily String pecl6part2.\+Controlador.\+subir\+Obajar (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classpecl6part2_1_1_ascensor}{Ascensor}}}]{ascensor }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+123     \{
+124         String aux = \textcolor{stringliteral}{"S"};
+125         \textcolor{keywordtype}{int} top, bottom, actual;
+126         
+127         \textcolor{keywordflow}{if}(\mbox{\hyperlink{classpecl6part2_1_1_controlador_ac2f7c4abd5447ea5daeeb7d62bf3f591}{ascensor}}.\mbox{\hyperlink{classpecl6part2_1_1_ascensor_a6a578a2c1bc59586257fe412a44354ac}{estado}} == \textcolor{stringliteral}{"S"})      \textcolor{comment}{//si esta subiendo, mirara si tiene que seguir
+       subiendo, si no tiene que seguir subiendo, mirara si tiene que bajar, y sino se para}
+128         \{
+129             \textcolor{keywordflow}{if}(\mbox{\hyperlink{classpecl6part2_1_1_controlador_a759775f24cc82dc8b5ef275e42a12e3a}{quedanPeticionesSubiendo}}(\mbox{\hyperlink{classpecl6part2_1_1_controlador_ac2f7c4abd5447ea5daeeb7d62bf3f591}{ascensor}}))
+130             \{
+131                 aux = \textcolor{stringliteral}{"S"};
+132             \}\textcolor{keywordflow}{else}
+133             \{
+134                 \textcolor{keywordflow}{if}(\mbox{\hyperlink{classpecl6part2_1_1_controlador_a18f3f9c74dda296867c72588a840880c}{quedanPeticionesBajando}}(\mbox{\hyperlink{classpecl6part2_1_1_controlador_ac2f7c4abd5447ea5daeeb7d62bf3f591}{ascensor}}))
+135                 \{
+136                     aux = \textcolor{stringliteral}{"B"};
+137                 \}
+138                 \textcolor{keywordflow}{else}
+139                 \{
+140                     aux = \textcolor{stringliteral}{"P"};
+141                 \}
+142             \}
+143         \}\textcolor{keywordflow}{else}
+144         \{
+145             \textcolor{keywordflow}{if}(\mbox{\hyperlink{classpecl6part2_1_1_controlador_ac2f7c4abd5447ea5daeeb7d62bf3f591}{ascensor}}.\mbox{\hyperlink{classpecl6part2_1_1_ascensor_a6a578a2c1bc59586257fe412a44354ac}{estado}} == \textcolor{stringliteral}{"B"})\textcolor{comment}{//mismo que subiendo pero bajando}
+146             \{
+147                 \textcolor{keywordflow}{if}(\mbox{\hyperlink{classpecl6part2_1_1_controlador_a18f3f9c74dda296867c72588a840880c}{quedanPeticionesBajando}}(\mbox{\hyperlink{classpecl6part2_1_1_controlador_ac2f7c4abd5447ea5daeeb7d62bf3f591}{ascensor}}))
+148                 \{
+149                     aux = \textcolor{stringliteral}{"B"};
+150                 \}
+151                 \textcolor{keywordflow}{else}
+152                 \{
+153                     \textcolor{keywordflow}{if}(\mbox{\hyperlink{classpecl6part2_1_1_controlador_a759775f24cc82dc8b5ef275e42a12e3a}{quedanPeticionesSubiendo}}(\mbox{\hyperlink{classpecl6part2_1_1_controlador_ac2f7c4abd5447ea5daeeb7d62bf3f591}{ascensor}}))
+154                     \{
+155                         aux = \textcolor{stringliteral}{"S"};
+156                     \}
+157                     \textcolor{keywordflow}{else}
+158                     \{
+159                         aux = \textcolor{stringliteral}{"P"};
+160                     \}
+161                 \}
+162                 
+163                 
+164             \}\textcolor{keywordflow}{else}
+165             \{
+166                 
+167                 
+168                 \textcolor{keywordflow}{if}(\mbox{\hyperlink{classpecl6part2_1_1_controlador_ac2f7c4abd5447ea5daeeb7d62bf3f591}{ascensor}}.\mbox{\hyperlink{classpecl6part2_1_1_ascensor_a6a578a2c1bc59586257fe412a44354ac}{estado}} == \textcolor{stringliteral}{"P"})\textcolor{comment}{//si estamos parados, miramos si estamos en el 20 y
+       si tenemos que bajr, luego si estamos en el 0 y tenemos que subir, y sino calculamos el piso mas cercano al
+       que ir}
+169                 \{
+170                     top = \mbox{\hyperlink{classpecl6part2_1_1_controlador_ac2f7c4abd5447ea5daeeb7d62bf3f591}{ascensor}}.\mbox{\hyperlink{classpecl6part2_1_1_ascensor_a66017643cc6554b17d447867a0c0d619}{planta}};\textcolor{comment}{//siguiente planta con boton pulsado por arriba}
+171                     bottom = \mbox{\hyperlink{classpecl6part2_1_1_controlador_ac2f7c4abd5447ea5daeeb7d62bf3f591}{ascensor}}.\mbox{\hyperlink{classpecl6part2_1_1_ascensor_a66017643cc6554b17d447867a0c0d619}{planta}}; \textcolor{comment}{//siguiente planta con boton pulsado por debajo}
+172                     actual = \mbox{\hyperlink{classpecl6part2_1_1_controlador_ac2f7c4abd5447ea5daeeb7d62bf3f591}{ascensor}}.\mbox{\hyperlink{classpecl6part2_1_1_ascensor_a66017643cc6554b17d447867a0c0d619}{planta}};
+173                     
+174                     \textcolor{keywordflow}{if}(actual == 20)
+175                     \{
+176                         \textcolor{keywordflow}{if}(\mbox{\hyperlink{classpecl6part2_1_1_controlador_a18f3f9c74dda296867c72588a840880c}{quedanPeticionesBajando}}(
+      \mbox{\hyperlink{classpecl6part2_1_1_controlador_ac2f7c4abd5447ea5daeeb7d62bf3f591}{ascensor}}))
+177                         \{
+178                             aux = \textcolor{stringliteral}{"B"};
+179                         \}
+180                         \textcolor{keywordflow}{else}
+181                         \{
+182                             aux = \textcolor{stringliteral}{"P"};
+183                         \}
+184                     \}
+185                     \textcolor{keywordflow}{else}
+186                     \{
+187                         \textcolor{keywordflow}{if}(actual == 0)
+188                         \{
+189                             \textcolor{keywordflow}{if}(\mbox{\hyperlink{classpecl6part2_1_1_controlador_a759775f24cc82dc8b5ef275e42a12e3a}{quedanPeticionesSubiendo}}(
+      \mbox{\hyperlink{classpecl6part2_1_1_controlador_ac2f7c4abd5447ea5daeeb7d62bf3f591}{ascensor}}))
+190                             \{
+191                                 aux = \textcolor{stringliteral}{"S"};
+192                             \}
+193                             \textcolor{keywordflow}{else}
+194                             \{
+195                                 aux = \textcolor{stringliteral}{"P"};
+196                             \}
+197                         \}
+198                         \textcolor{keywordflow}{else}
+199                         \{
+200                   \textcolor{comment}{//---------------------------------------------------}
+201                    \textcolor{keywordflow}{while}(actual <= 20)
+202                     \{
+203                         \textcolor{keywordflow}{if}(\mbox{\hyperlink{classpecl6part2_1_1_controlador_a7706d274fde82fed01a03a619fbcd77c}{plantas}}[actual].botonPulsado)
+204                         \{
+205                             
+206                             \textcolor{keywordflow}{if}(actual != \mbox{\hyperlink{classpecl6part2_1_1_controlador_ac2f7c4abd5447ea5daeeb7d62bf3f591}{ascensor}}.\mbox{\hyperlink{classpecl6part2_1_1_ascensor_a66017643cc6554b17d447867a0c0d619}{planta}})
+207                             \{
+208                                 \textcolor{keywordflow}{if}(top == \mbox{\hyperlink{classpecl6part2_1_1_controlador_ac2f7c4abd5447ea5daeeb7d62bf3f591}{ascensor}}.\mbox{\hyperlink{classpecl6part2_1_1_ascensor_a66017643cc6554b17d447867a0c0d619}{planta}})
+209                                 \{
+210                                     top = actual;
+211                                 \}
+212                             \}
+213                         \}
+214                         actual++;
+215                     \}
+216                     
+217                     actual = \mbox{\hyperlink{classpecl6part2_1_1_controlador_ac2f7c4abd5447ea5daeeb7d62bf3f591}{ascensor}}.\mbox{\hyperlink{classpecl6part2_1_1_ascensor_a66017643cc6554b17d447867a0c0d619}{planta}};
+218                     \textcolor{keywordflow}{while}(actual >= 0)
+219                     \{
+220                         \textcolor{keywordflow}{if}(\mbox{\hyperlink{classpecl6part2_1_1_controlador_a7706d274fde82fed01a03a619fbcd77c}{plantas}}[actual].botonPulsado)
+221                         \{
+222                             
+223                             \textcolor{keywordflow}{if}(actual != \mbox{\hyperlink{classpecl6part2_1_1_controlador_ac2f7c4abd5447ea5daeeb7d62bf3f591}{ascensor}}.\mbox{\hyperlink{classpecl6part2_1_1_ascensor_a66017643cc6554b17d447867a0c0d619}{planta}})
+224                             \{
+225                                 \textcolor{keywordflow}{if}(bottom == \mbox{\hyperlink{classpecl6part2_1_1_controlador_ac2f7c4abd5447ea5daeeb7d62bf3f591}{ascensor}}.\mbox{\hyperlink{classpecl6part2_1_1_ascensor_a66017643cc6554b17d447867a0c0d619}{planta}})
+226                                 \{
+227                                     bottom = actual;
+228                                 \}
+229                             \}
+230                         \}
+231                         actual--;
+232                         
+233                     \}
+234                             
+235                     \textcolor{comment}{//una vez tenemos el piso mas cercano por encima y por debajo, vemos cual esta mas
+       cerca}
+236                     
+237                     \textcolor{keywordflow}{if}(bottom == \mbox{\hyperlink{classpecl6part2_1_1_controlador_ac2f7c4abd5447ea5daeeb7d62bf3f591}{ascensor}}.\mbox{\hyperlink{classpecl6part2_1_1_ascensor_a66017643cc6554b17d447867a0c0d619}{planta}})
+238                     \{
+239                         \textcolor{keywordflow}{if}(top == \mbox{\hyperlink{classpecl6part2_1_1_controlador_ac2f7c4abd5447ea5daeeb7d62bf3f591}{ascensor}}.\mbox{\hyperlink{classpecl6part2_1_1_ascensor_a66017643cc6554b17d447867a0c0d619}{planta}})
+240                         \{
+241                             aux = \textcolor{stringliteral}{"P"};
+242                         \}
+243                         \textcolor{keywordflow}{else}
+244                         \{
+245                             aux = \textcolor{stringliteral}{"S"};
+246                         \}
+247                     \}
+248                     \textcolor{keywordflow}{else}
+249                     \{
+250                         \textcolor{keywordflow}{if}(top == \mbox{\hyperlink{classpecl6part2_1_1_controlador_ac2f7c4abd5447ea5daeeb7d62bf3f591}{ascensor}}.\mbox{\hyperlink{classpecl6part2_1_1_ascensor_a66017643cc6554b17d447867a0c0d619}{planta}})
+251                         \{
+252                             aux = \textcolor{stringliteral}{"B"};
+253                         \}
+254                         \textcolor{keywordflow}{else}
+255                         \{
+256                             top = top - \mbox{\hyperlink{classpecl6part2_1_1_controlador_ac2f7c4abd5447ea5daeeb7d62bf3f591}{ascensor}}.\mbox{\hyperlink{classpecl6part2_1_1_ascensor_a66017643cc6554b17d447867a0c0d619}{planta}};
+257                             bottom = \mbox{\hyperlink{classpecl6part2_1_1_controlador_ac2f7c4abd5447ea5daeeb7d62bf3f591}{ascensor}}.\mbox{\hyperlink{classpecl6part2_1_1_ascensor_a66017643cc6554b17d447867a0c0d619}{planta}} - bottom;
+258                             \textcolor{keywordflow}{if}(top > bottom) \textcolor{comment}{//si esta mas cerca el piso bajando que el piso subiendo, baja}
+259                             \{
+260                                 aux = \textcolor{stringliteral}{"B"};
+261                             \}
+262                             \textcolor{keywordflow}{else} \textcolor{comment}{//si estan al mismo o subiendo esta mas cerca, subira}
+263                             \{
+264                                 aux = \textcolor{stringliteral}{"S"};
+265                             \}
+266                         \}
+267                     \}
+268                     
+269                     
+270                   \textcolor{comment}{//--------------------------------------------------------------}
+271                         \}
+272                     \}
+273                     
+274                     
+275                     
+276                 \}\textcolor{keywordflow}{else}
+277                 \{
+278                     aux = \textcolor{stringliteral}{"P"};
+279                 \}
+280             \}
+281         \}
+282         
+283         
+284         
+285         \textcolor{keywordflow}{return} aux;
+286     \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classpecl6part2_1_1_controlador_ac2f7c4abd5447ea5daeeb7d62bf3f591}\label{classpecl6part2_1_1_controlador_ac2f7c4abd5447ea5daeeb7d62bf3f591}} 
+\index{pecl6part2\+::\+Controlador@{pecl6part2\+::\+Controlador}!ascensor@{ascensor}}
+\index{ascensor@{ascensor}!pecl6part2\+::\+Controlador@{pecl6part2\+::\+Controlador}}
+\subsubsection{\texorpdfstring{ascensor}{ascensor}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classpecl6part2_1_1_ascensor}{Ascensor}} pecl6part2.\+Controlador.\+ascensor\mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\ttfamily [package]}}
+
+\mbox{\Hypertarget{classpecl6part2_1_1_controlador_a1423d58d5aa77dac81785587fadcd3eb}\label{classpecl6part2_1_1_controlador_a1423d58d5aa77dac81785587fadcd3eb}} 
+\index{pecl6part2\+::\+Controlador@{pecl6part2\+::\+Controlador}!botones@{botones}}
+\index{botones@{botones}!pecl6part2\+::\+Controlador@{pecl6part2\+::\+Controlador}}
+\subsubsection{\texorpdfstring{botones}{botones}}
+{\footnotesize\ttfamily boolean pecl6part2.\+Controlador.\+botones\mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\ttfamily [package]}}
+
+\mbox{\Hypertarget{classpecl6part2_1_1_controlador_a7fc29467f824a892431dc36c908857c7}\label{classpecl6part2_1_1_controlador_a7fc29467f824a892431dc36c908857c7}} 
+\index{pecl6part2\+::\+Controlador@{pecl6part2\+::\+Controlador}!monitor@{monitor}}
+\index{monitor@{monitor}!pecl6part2\+::\+Controlador@{pecl6part2\+::\+Controlador}}
+\subsubsection{\texorpdfstring{monitor}{monitor}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classpecl6part2_1_1_monitor}{Monitor}} pecl6part2.\+Controlador.\+monitor\hspace{0.3cm}{\ttfamily [package]}}
+
+\mbox{\Hypertarget{classpecl6part2_1_1_controlador_a239e662ed9f4ba0e12f81e47f3f2773f}\label{classpecl6part2_1_1_controlador_a239e662ed9f4ba0e12f81e47f3f2773f}} 
+\index{pecl6part2\+::\+Controlador@{pecl6part2\+::\+Controlador}!para\+El\+Server@{para\+El\+Server}}
+\index{para\+El\+Server@{para\+El\+Server}!pecl6part2\+::\+Controlador@{pecl6part2\+::\+Controlador}}
+\subsubsection{\texorpdfstring{para\+El\+Server}{paraElServer}}
+{\footnotesize\ttfamily String pecl6part2.\+Controlador.\+para\+El\+Server\hspace{0.3cm}{\ttfamily [package]}}
+
+\mbox{\Hypertarget{classpecl6part2_1_1_controlador_ae07ed4d274035a923387361c19e5ce79}\label{classpecl6part2_1_1_controlador_ae07ed4d274035a923387361c19e5ce79}} 
+\index{pecl6part2\+::\+Controlador@{pecl6part2\+::\+Controlador}!paso@{paso}}
+\index{paso@{paso}!pecl6part2\+::\+Controlador@{pecl6part2\+::\+Controlador}}
+\subsubsection{\texorpdfstring{paso}{paso}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classpecl6part2_1_1_paso}{Paso}} pecl6part2.\+Controlador.\+paso\hspace{0.3cm}{\ttfamily [package]}}
+
+\mbox{\Hypertarget{classpecl6part2_1_1_controlador_a570bc37c2db22f144af250ceccbbab6d}\label{classpecl6part2_1_1_controlador_a570bc37c2db22f144af250ceccbbab6d}} 
+\index{pecl6part2\+::\+Controlador@{pecl6part2\+::\+Controlador}!personas@{personas}}
+\index{personas@{personas}!pecl6part2\+::\+Controlador@{pecl6part2\+::\+Controlador}}
+\subsubsection{\texorpdfstring{personas}{personas}}
+{\footnotesize\ttfamily Array\+List$<$\mbox{\hyperlink{classpecl6part2_1_1_persona}{Persona}}$>$ pecl6part2.\+Controlador.\+personas\hspace{0.3cm}{\ttfamily [package]}}
+
+\mbox{\Hypertarget{classpecl6part2_1_1_controlador_a7706d274fde82fed01a03a619fbcd77c}\label{classpecl6part2_1_1_controlador_a7706d274fde82fed01a03a619fbcd77c}} 
+\index{pecl6part2\+::\+Controlador@{pecl6part2\+::\+Controlador}!plantas@{plantas}}
+\index{plantas@{plantas}!pecl6part2\+::\+Controlador@{pecl6part2\+::\+Controlador}}
+\subsubsection{\texorpdfstring{plantas}{plantas}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classpecl6part2_1_1_planta}{Planta}} pecl6part2.\+Controlador.\+plantas\mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\ttfamily [package]}}
+
+\mbox{\Hypertarget{classpecl6part2_1_1_controlador_af7664f9bfe62befb34d430f513b96c98}\label{classpecl6part2_1_1_controlador_af7664f9bfe62befb34d430f513b96c98}} 
+\index{pecl6part2\+::\+Controlador@{pecl6part2\+::\+Controlador}!tiempo@{tiempo}}
+\index{tiempo@{tiempo}!pecl6part2\+::\+Controlador@{pecl6part2\+::\+Controlador}}
+\subsubsection{\texorpdfstring{tiempo}{tiempo}}
+{\footnotesize\ttfamily long pecl6part2.\+Controlador.\+tiempo\hspace{0.3cm}{\ttfamily [package]}}
+

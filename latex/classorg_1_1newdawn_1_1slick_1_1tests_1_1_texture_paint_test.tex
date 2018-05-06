@@ -1,0 +1,191 @@
+\hypertarget{classorg_1_1newdawn_1_1slick_1_1tests_1_1_texture_paint_test}{}\section{org.\+newdawn.\+slick.\+tests.\+Texture\+Paint\+Test Class Reference}
+\label{classorg_1_1newdawn_1_1slick_1_1tests_1_1_texture_paint_test}\index{org.\+newdawn.\+slick.\+tests.\+Texture\+Paint\+Test@{org.\+newdawn.\+slick.\+tests.\+Texture\+Paint\+Test}}
+Inheritance diagram for org.\+newdawn.\+slick.\+tests.\+Texture\+Paint\+Test\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.522012cm]{classorg_1_1newdawn_1_1slick_1_1tests_1_1_texture_paint_test}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_texture_paint_test_a2f80b6372e63d8906b0bb064b97847ea}{Texture\+Paint\+Test}} ()
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_texture_paint_test_a9d66cb695e1e0d4380b0869164e69a7d}{init}} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_game_container}{Game\+Container}} container)  throws Slick\+Exception 
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_texture_paint_test_a18372b798863b28f1f6918adeaa2133c}{update}} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_game_container}{Game\+Container}} container, int delta)  throws Slick\+Exception 
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_texture_paint_test_a51c7f49d67b05aabc0de200bf664f854}{render}} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_game_container}{Game\+Container}} container, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_graphics}{Graphics}} g)  throws Slick\+Exception 
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_texture_paint_test_ac0a3ed027d60359b21b4b1a73f14ffc4}{main}} (String\mbox{[}$\,$\mbox{]} argv)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_polygon}{Polygon}} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_texture_paint_test_aeb688ec54d31a4ae76c2d8c9ffa2d57c}{poly}} = new \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_polygon}{Polygon}}()
+\item 
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_image}{Image}} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_texture_paint_test_a305aa97ece19d7dd158aea1e8fe963c4}{image}}
+\item 
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_rectangle}{Rectangle}} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_texture_paint_test_aad56335d65c2c5a35f0b2475c7187886}{tex\+Rect}} = new \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_rectangle}{Rectangle}}(50,50,100,100)
+\item 
+\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1geom_1_1_tex_coord_generator}{Tex\+Coord\+Generator}} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_texture_paint_test_abe40a374badc7dd300ac476ba5021f5d}{tex\+Paint}}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Test to emulate texture paint
+
+\begin{DoxyAuthor}{Author}
+kevin 
+\end{DoxyAuthor}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tests_1_1_texture_paint_test_a2f80b6372e63d8906b0bb064b97847ea}\label{classorg_1_1newdawn_1_1slick_1_1tests_1_1_texture_paint_test_a2f80b6372e63d8906b0bb064b97847ea}} 
+\index{org\+::newdawn\+::slick\+::tests\+::\+Texture\+Paint\+Test@{org\+::newdawn\+::slick\+::tests\+::\+Texture\+Paint\+Test}!Texture\+Paint\+Test@{Texture\+Paint\+Test}}
+\index{Texture\+Paint\+Test@{Texture\+Paint\+Test}!org\+::newdawn\+::slick\+::tests\+::\+Texture\+Paint\+Test@{org\+::newdawn\+::slick\+::tests\+::\+Texture\+Paint\+Test}}
+\subsubsection{\texorpdfstring{Texture\+Paint\+Test()}{TexturePaintTest()}}
+{\footnotesize\ttfamily org.\+newdawn.\+slick.\+tests.\+Texture\+Paint\+Test.\+Texture\+Paint\+Test (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Create the test 
+\begin{DoxyCode}
+35                               \{
+36         super(\textcolor{stringliteral}{"Texture Paint Test"});
+37     \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tests_1_1_texture_paint_test_a9d66cb695e1e0d4380b0869164e69a7d}\label{classorg_1_1newdawn_1_1slick_1_1tests_1_1_texture_paint_test_a9d66cb695e1e0d4380b0869164e69a7d}} 
+\index{org\+::newdawn\+::slick\+::tests\+::\+Texture\+Paint\+Test@{org\+::newdawn\+::slick\+::tests\+::\+Texture\+Paint\+Test}!init@{init}}
+\index{init@{init}!org\+::newdawn\+::slick\+::tests\+::\+Texture\+Paint\+Test@{org\+::newdawn\+::slick\+::tests\+::\+Texture\+Paint\+Test}}
+\subsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+tests.\+Texture\+Paint\+Test.\+init (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_game_container}{Game\+Container}}}]{container }\end{DoxyParamCaption}) throws \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_slick_exception}{Slick\+Exception}}\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_basic_game_a8af0900217e4d389249f71367b22d114}{org.\+newdawn.\+slick.\+Basic\+Game\+::init}}(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_game_container}{org.\+newdawn.\+slick.\+Game\+Container}}) 
+\end{DoxySeeAlso}
+
+
+Implements \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1_game_ad2dd6affab08bb8fdb5fab0815957b7a}{org.\+newdawn.\+slick.\+Game}}.
+
+
+\begin{DoxyCode}
+42                                                                     \{
+43         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_texture_paint_test_aeb688ec54d31a4ae76c2d8c9ffa2d57c}{poly}}.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_polygon_a62d22ea48361fe38f8868f1f126a7b7a}{addPoint}}(120, 120);
+44         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_texture_paint_test_aeb688ec54d31a4ae76c2d8c9ffa2d57c}{poly}}.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_polygon_a62d22ea48361fe38f8868f1f126a7b7a}{addPoint}}(420, 100);
+45         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_texture_paint_test_aeb688ec54d31a4ae76c2d8c9ffa2d57c}{poly}}.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_polygon_a62d22ea48361fe38f8868f1f126a7b7a}{addPoint}}(620, 420);
+46         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_texture_paint_test_aeb688ec54d31a4ae76c2d8c9ffa2d57c}{poly}}.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_polygon_a62d22ea48361fe38f8868f1f126a7b7a}{addPoint}}(300, 320);
+47     
+48         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_texture_paint_test_a305aa97ece19d7dd158aea1e8fe963c4}{image}} = \textcolor{keyword}{new} Image(\textcolor{stringliteral}{"testdata/rocks.png"});
+49         
+50         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_texture_paint_test_abe40a374badc7dd300ac476ba5021f5d}{texPaint}} = \textcolor{keyword}{new} TexCoordGenerator() \{
+51             \textcolor{keyword}{public} Vector2f getCoordFor(\textcolor{keywordtype}{float} x, \textcolor{keywordtype}{float} y) \{
+52                 \textcolor{keywordtype}{float} tx = (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_texture_paint_test_aad56335d65c2c5a35f0b2475c7187886}{texRect}}.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_shape_a736a47bfdd6f164558b43fd497a3a3f3}{getX}}() - x) / \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_texture_paint_test_aad56335d65c2c5a35f0b2475c7187886}{texRect}}.
+      \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_rectangle_ae2fddc33461303a9ccf8854c1e93c9c1}{getWidth}}();
+53                 \textcolor{keywordtype}{float} ty = (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_texture_paint_test_aad56335d65c2c5a35f0b2475c7187886}{texRect}}.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_shape_a5f334f962d8fc525d522fe0f8ac20b35}{getY}}() - y) / \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_texture_paint_test_aad56335d65c2c5a35f0b2475c7187886}{texRect}}.
+      \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_rectangle_a6c8878e73b4ca0d7a3c2d4e6bcd421ee}{getHeight}}();
+54                 
+55                 \textcolor{keywordflow}{return} \textcolor{keyword}{new} Vector2f(tx,ty);
+56             \}
+57         \};
+58     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tests_1_1_texture_paint_test_ac0a3ed027d60359b21b4b1a73f14ffc4}\label{classorg_1_1newdawn_1_1slick_1_1tests_1_1_texture_paint_test_ac0a3ed027d60359b21b4b1a73f14ffc4}} 
+\index{org\+::newdawn\+::slick\+::tests\+::\+Texture\+Paint\+Test@{org\+::newdawn\+::slick\+::tests\+::\+Texture\+Paint\+Test}!main@{main}}
+\index{main@{main}!org\+::newdawn\+::slick\+::tests\+::\+Texture\+Paint\+Test@{org\+::newdawn\+::slick\+::tests\+::\+Texture\+Paint\+Test}}
+\subsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily static void org.\+newdawn.\+slick.\+tests.\+Texture\+Paint\+Test.\+main (\begin{DoxyParamCaption}\item[{String \mbox{[}$\,$\mbox{]}}]{argv }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Entry point to our test
+
+
+\begin{DoxyParams}{Parameters}
+{\em argv} & The arguments to pass into the test \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+81                                            \{
+82         \textcolor{keywordflow}{try} \{
+83             AppGameContainer container = \textcolor{keyword}{new} AppGameContainer(\textcolor{keyword}{new} 
+      \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_texture_paint_test_a2f80b6372e63d8906b0bb064b97847ea}{TexturePaintTest}}());
+84             container.setDisplayMode(800,600,\textcolor{keyword}{false});
+85             container.start();
+86         \} \textcolor{keywordflow}{catch} (SlickException e) \{
+87             e.printStackTrace();
+88         \}
+89     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tests_1_1_texture_paint_test_a51c7f49d67b05aabc0de200bf664f854}\label{classorg_1_1newdawn_1_1slick_1_1tests_1_1_texture_paint_test_a51c7f49d67b05aabc0de200bf664f854}} 
+\index{org\+::newdawn\+::slick\+::tests\+::\+Texture\+Paint\+Test@{org\+::newdawn\+::slick\+::tests\+::\+Texture\+Paint\+Test}!render@{render}}
+\index{render@{render}!org\+::newdawn\+::slick\+::tests\+::\+Texture\+Paint\+Test@{org\+::newdawn\+::slick\+::tests\+::\+Texture\+Paint\+Test}}
+\subsubsection{\texorpdfstring{render()}{render()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+tests.\+Texture\+Paint\+Test.\+render (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_game_container}{Game\+Container}}}]{container,  }\item[{\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_graphics}{Graphics}}}]{g }\end{DoxyParamCaption}) throws \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_slick_exception}{Slick\+Exception}}\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1_game_af1a4670d43eb3ba04dfcf55ab1975b64}{org.\+newdawn.\+slick.\+Game\+::render}}(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_game_container}{org.\+newdawn.\+slick.\+Game\+Container}}, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_graphics}{org.\+newdawn.\+slick.\+Graphics}}) 
+\end{DoxySeeAlso}
+
+
+Implements \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1_game_af1a4670d43eb3ba04dfcf55ab1975b64}{org.\+newdawn.\+slick.\+Game}}.
+
+
+\begin{DoxyCode}
+69                                                                                   \{
+70         g.setColor(Color.white);
+71         g.texture(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_texture_paint_test_aeb688ec54d31a4ae76c2d8c9ffa2d57c}{poly}}, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_texture_paint_test_a305aa97ece19d7dd158aea1e8fe963c4}{image}});
+72         
+73         ShapeRenderer.texture(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_texture_paint_test_aeb688ec54d31a4ae76c2d8c9ffa2d57c}{poly}}, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_texture_paint_test_a305aa97ece19d7dd158aea1e8fe963c4}{image}}, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_texture_paint_test_abe40a374badc7dd300ac476ba5021f5d}{texPaint}});
+74     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tests_1_1_texture_paint_test_a18372b798863b28f1f6918adeaa2133c}\label{classorg_1_1newdawn_1_1slick_1_1tests_1_1_texture_paint_test_a18372b798863b28f1f6918adeaa2133c}} 
+\index{org\+::newdawn\+::slick\+::tests\+::\+Texture\+Paint\+Test@{org\+::newdawn\+::slick\+::tests\+::\+Texture\+Paint\+Test}!update@{update}}
+\index{update@{update}!org\+::newdawn\+::slick\+::tests\+::\+Texture\+Paint\+Test@{org\+::newdawn\+::slick\+::tests\+::\+Texture\+Paint\+Test}}
+\subsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+tests.\+Texture\+Paint\+Test.\+update (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_game_container}{Game\+Container}}}]{container,  }\item[{int}]{delta }\end{DoxyParamCaption}) throws \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_slick_exception}{Slick\+Exception}}\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_basic_game_acfe6fa05aef83bff1631af91a3e4bd20}{org.\+newdawn.\+slick.\+Basic\+Game\+::update}}(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_game_container}{org.\+newdawn.\+slick.\+Game\+Container}}, int) 
+\end{DoxySeeAlso}
+
+
+Implements \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1_game_ab07b2e9463ee4631620dde0de25bdee8}{org.\+newdawn.\+slick.\+Game}}.
+
+
+\begin{DoxyCode}
+63                                                                                  \{
+64     \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tests_1_1_texture_paint_test_a305aa97ece19d7dd158aea1e8fe963c4}\label{classorg_1_1newdawn_1_1slick_1_1tests_1_1_texture_paint_test_a305aa97ece19d7dd158aea1e8fe963c4}} 
+\index{org\+::newdawn\+::slick\+::tests\+::\+Texture\+Paint\+Test@{org\+::newdawn\+::slick\+::tests\+::\+Texture\+Paint\+Test}!image@{image}}
+\index{image@{image}!org\+::newdawn\+::slick\+::tests\+::\+Texture\+Paint\+Test@{org\+::newdawn\+::slick\+::tests\+::\+Texture\+Paint\+Test}}
+\subsubsection{\texorpdfstring{image}{image}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_image}{Image}} org.\+newdawn.\+slick.\+tests.\+Texture\+Paint\+Test.\+image\hspace{0.3cm}{\ttfamily [private]}}
+
+The image being textured \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tests_1_1_texture_paint_test_aeb688ec54d31a4ae76c2d8c9ffa2d57c}\label{classorg_1_1newdawn_1_1slick_1_1tests_1_1_texture_paint_test_aeb688ec54d31a4ae76c2d8c9ffa2d57c}} 
+\index{org\+::newdawn\+::slick\+::tests\+::\+Texture\+Paint\+Test@{org\+::newdawn\+::slick\+::tests\+::\+Texture\+Paint\+Test}!poly@{poly}}
+\index{poly@{poly}!org\+::newdawn\+::slick\+::tests\+::\+Texture\+Paint\+Test@{org\+::newdawn\+::slick\+::tests\+::\+Texture\+Paint\+Test}}
+\subsubsection{\texorpdfstring{poly}{poly}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_polygon}{Polygon}} org.\+newdawn.\+slick.\+tests.\+Texture\+Paint\+Test.\+poly = new \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_polygon}{Polygon}}()\hspace{0.3cm}{\ttfamily [private]}}
+
+The poly being drawn \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tests_1_1_texture_paint_test_abe40a374badc7dd300ac476ba5021f5d}\label{classorg_1_1newdawn_1_1slick_1_1tests_1_1_texture_paint_test_abe40a374badc7dd300ac476ba5021f5d}} 
+\index{org\+::newdawn\+::slick\+::tests\+::\+Texture\+Paint\+Test@{org\+::newdawn\+::slick\+::tests\+::\+Texture\+Paint\+Test}!tex\+Paint@{tex\+Paint}}
+\index{tex\+Paint@{tex\+Paint}!org\+::newdawn\+::slick\+::tests\+::\+Texture\+Paint\+Test@{org\+::newdawn\+::slick\+::tests\+::\+Texture\+Paint\+Test}}
+\subsubsection{\texorpdfstring{tex\+Paint}{texPaint}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1geom_1_1_tex_coord_generator}{Tex\+Coord\+Generator}} org.\+newdawn.\+slick.\+tests.\+Texture\+Paint\+Test.\+tex\+Paint\hspace{0.3cm}{\ttfamily [private]}}
+
+The texture paint \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tests_1_1_texture_paint_test_aad56335d65c2c5a35f0b2475c7187886}\label{classorg_1_1newdawn_1_1slick_1_1tests_1_1_texture_paint_test_aad56335d65c2c5a35f0b2475c7187886}} 
+\index{org\+::newdawn\+::slick\+::tests\+::\+Texture\+Paint\+Test@{org\+::newdawn\+::slick\+::tests\+::\+Texture\+Paint\+Test}!tex\+Rect@{tex\+Rect}}
+\index{tex\+Rect@{tex\+Rect}!org\+::newdawn\+::slick\+::tests\+::\+Texture\+Paint\+Test@{org\+::newdawn\+::slick\+::tests\+::\+Texture\+Paint\+Test}}
+\subsubsection{\texorpdfstring{tex\+Rect}{texRect}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_rectangle}{Rectangle}} org.\+newdawn.\+slick.\+tests.\+Texture\+Paint\+Test.\+tex\+Rect = new \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_rectangle}{Rectangle}}(50,50,100,100)\hspace{0.3cm}{\ttfamily [private]}}
+
+The texture paint rectangle 

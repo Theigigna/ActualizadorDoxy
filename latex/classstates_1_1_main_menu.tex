@@ -1,0 +1,274 @@
+\hypertarget{classstates_1_1_main_menu}{}\section{states.\+Main\+Menu Class Reference}
+\label{classstates_1_1_main_menu}\index{states.\+Main\+Menu@{states.\+Main\+Menu}}
+Inheritance diagram for states.\+Main\+Menu\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.226415cm]{classstates_1_1_main_menu}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classstates_1_1_main_menu_adc73381b13644459bfc6502313f80241}{Main\+Menu}} (int \mbox{\hyperlink{classstates_1_1_main_menu_acdd02005ac38a76e9d4e5bca1e33fb4c}{id}})
+\item 
+int \mbox{\hyperlink{classstates_1_1_main_menu_adbf17a27cb74ddf0365ca09fd0758b3f}{get\+ID}} ()
+\item 
+void \mbox{\hyperlink{classstates_1_1_main_menu_adbc27fa7433e43c8cbb8bb86db82daa1}{init}} (final \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_game_container}{Game\+Container}} container, final \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1_state_based_game}{State\+Based\+Game}} game)  throws Slick\+Exception 
+\item 
+void \mbox{\hyperlink{classstates_1_1_main_menu_ad36f80560779b3cf28f76f2a44d640de}{render}} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_game_container}{Game\+Container}} container, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1_state_based_game}{State\+Based\+Game}} game, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_graphics}{Graphics}} g)  throws Slick\+Exception 
+\item 
+void \mbox{\hyperlink{classstates_1_1_main_menu_a83292d85c5e93f8209e65afdfed4d5da}{update}} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_game_container}{Game\+Container}} container, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1_state_based_game}{State\+Based\+Game}} game, int delta)  throws Slick\+Exception 
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classstates_1_1_main_menu_acdd02005ac38a76e9d4e5bca1e33fb4c}{id}}
+\item 
+\mbox{\hyperlink{classgui_1_1_button}{Button}} \mbox{\hyperlink{classstates_1_1_main_menu_a0b5fdbfec57ada5a6161f4b2dbc1bfe8}{start\+Button}}
+\item 
+\mbox{\hyperlink{classgui_1_1_button}{Button}} \mbox{\hyperlink{classstates_1_1_main_menu_ab0fc474be86201071427780c6c500dbb}{quit\+Button}}
+\item 
+\mbox{\hyperlink{classgui_1_1_button}{Button}} \mbox{\hyperlink{classstates_1_1_main_menu_a7e45c28d037c0d5daeb94b99ff83e81e}{options\+Button}}
+\item 
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_image}{Image}} \mbox{\hyperlink{classstates_1_1_main_menu_a185de536bd7c3e47f5c7ade14b27dc84}{titulo}}
+\item 
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_image}{Image}} \mbox{\hyperlink{classstates_1_1_main_menu_a0203042667da8aea22930eb0810d5d9d}{backwall}}
+\item 
+\mbox{\hyperlink{classgui_1_1_g_u_i_font}{G\+U\+I\+Font}} \mbox{\hyperlink{classstates_1_1_main_menu_a045edf02b97294df356a8101adaa11c3}{font}}
+\item 
+\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_transition}{Transition}} \mbox{\hyperlink{classstates_1_1_main_menu_a7443336a416646891958e073289b2a50}{to}}
+\item 
+\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_transition}{Transition}} \mbox{\hyperlink{classstates_1_1_main_menu_ab7c88b387c4beb4042ffd45d6b513c23}{ti}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classstates_1_1_main_menu_adc73381b13644459bfc6502313f80241}\label{classstates_1_1_main_menu_adc73381b13644459bfc6502313f80241}} 
+\index{states\+::\+Main\+Menu@{states\+::\+Main\+Menu}!Main\+Menu@{Main\+Menu}}
+\index{Main\+Menu@{Main\+Menu}!states\+::\+Main\+Menu@{states\+::\+Main\+Menu}}
+\subsubsection{\texorpdfstring{Main\+Menu()}{MainMenu()}}
+{\footnotesize\ttfamily states.\+Main\+Menu.\+Main\+Menu (\begin{DoxyParamCaption}\item[{int}]{id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+37                            \{
+38         this.\textcolor{keywordtype}{id}=\mbox{\hyperlink{classstates_1_1_main_menu_acdd02005ac38a76e9d4e5bca1e33fb4c}{id}};
+39         \mbox{\hyperlink{classstates_1_1_main_menu_a7443336a416646891958e073289b2a50}{to}}=\textcolor{keyword}{new} FadeOutTransition();
+40         \mbox{\hyperlink{classstates_1_1_main_menu_ab7c88b387c4beb4042ffd45d6b513c23}{ti}}=\textcolor{keyword}{new} FadeInTransition();
+41 
+42         \textcolor{keywordflow}{try} \{
+43             \mbox{\hyperlink{classstates_1_1_main_menu_a045edf02b97294df356a8101adaa11c3}{font}}=\textcolor{keyword}{new} GUIFont(25);
+44             \mbox{\hyperlink{classstates_1_1_main_menu_a185de536bd7c3e47f5c7ade14b27dc84}{titulo}} = \textcolor{keyword}{new} Image(\textcolor{stringliteral}{"res/GUI/titulo.png"}, Color.black);
+45             \mbox{\hyperlink{classstates_1_1_main_menu_a0203042667da8aea22930eb0810d5d9d}{backwall}} = \textcolor{keyword}{new} Image(\textcolor{stringliteral}{"res/GUI/casa2Splash.jpg"});
+46         \} \textcolor{keywordflow}{catch} (SlickException ex) \{
+47             Logger.getLogger(\mbox{\hyperlink{classstates_1_1_main_menu_adc73381b13644459bfc6502313f80241}{MainMenu}}.class.getName()).log(Level.SEVERE, null, ex);
+48         \}
+49     \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classstates_1_1_main_menu_adbf17a27cb74ddf0365ca09fd0758b3f}\label{classstates_1_1_main_menu_adbf17a27cb74ddf0365ca09fd0758b3f}} 
+\index{states\+::\+Main\+Menu@{states\+::\+Main\+Menu}!get\+ID@{get\+ID}}
+\index{get\+ID@{get\+ID}!states\+::\+Main\+Menu@{states\+::\+Main\+Menu}}
+\subsubsection{\texorpdfstring{get\+I\+D()}{getID()}}
+{\footnotesize\ttfamily int states.\+Main\+Menu.\+get\+ID (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get the ID of this state
+
+\begin{DoxyReturn}{Returns}
+The game unique ID of this state 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1state_1_1_game_state_a54f2bc6a91feaf0614a5ef19f1d03313}{org.\+newdawn.\+slick.\+state.\+Game\+State}}.
+
+
+\begin{DoxyCode}
+52                        \{
+53         \textcolor{keywordflow}{return} \mbox{\hyperlink{classstates_1_1_main_menu_acdd02005ac38a76e9d4e5bca1e33fb4c}{id}};
+54     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classstates_1_1_main_menu_adbc27fa7433e43c8cbb8bb86db82daa1}\label{classstates_1_1_main_menu_adbc27fa7433e43c8cbb8bb86db82daa1}} 
+\index{states\+::\+Main\+Menu@{states\+::\+Main\+Menu}!init@{init}}
+\index{init@{init}!states\+::\+Main\+Menu@{states\+::\+Main\+Menu}}
+\subsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily void states.\+Main\+Menu.\+init (\begin{DoxyParamCaption}\item[{final \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_game_container}{Game\+Container}}}]{container,  }\item[{final \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1_state_based_game}{State\+Based\+Game}}}]{game }\end{DoxyParamCaption}) throws \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_slick_exception}{Slick\+Exception}}\hspace{0.3cm}{\ttfamily [inline]}}
+
+Initialise the state. It should load any resources it needs at this stage
+
+
+\begin{DoxyParams}{Parameters}
+{\em container} & The container holding the game \\
+\hline
+{\em game} & The game holding this state \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Slick\+Exception} & Indicates a failure to initialise a resource for this state \\
+\hline
+\end{DoxyExceptions}
+
+
+Implements \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1state_1_1_game_state_aa799a369e0fcfe6822d2d586fa6f5bbc}{org.\+newdawn.\+slick.\+state.\+Game\+State}}.
+
+
+\begin{DoxyCode}
+57                                                                                                      \{
+58         
+59         \mbox{\hyperlink{classstates_1_1_main_menu_a045edf02b97294df356a8101adaa11c3}{font}}.\mbox{\hyperlink{classgui_1_1_g_u_i_font_ae1fccb6783e7c0f11fdcedd36362585d}{initFont}}();
+60         \textcolor{keywordtype}{int} h=container.getHeight()/10;
+61         \textcolor{keywordtype}{int} w=container.getWidth()/3;
+62         \mbox{\hyperlink{classstates_1_1_main_menu_a0b5fdbfec57ada5a6161f4b2dbc1bfe8}{startButton}}=\textcolor{keyword}{new} Button(container,(container.getWidth()-w)/2,container.getHeight()/3,w,h,
+      \mbox{\hyperlink{classstates_1_1_main_menu_a045edf02b97294df356a8101adaa11c3}{font}}, \textcolor{keyword}{new} ComponentListener()\{
+63             @Override
+64             \textcolor{keyword}{public} \textcolor{keywordtype}{void} componentActivated(AbstractComponent source) \{
+65                 game.enterState(NotEvenAnEarlyAccess.SELECT\_CHARACTER,\mbox{\hyperlink{classstates_1_1_main_menu_a7443336a416646891958e073289b2a50}{to}},\mbox{\hyperlink{classstates_1_1_main_menu_ab7c88b387c4beb4042ffd45d6b513c23}{ti}});
+66             \}
+67         \});
+68         
+69         \mbox{\hyperlink{classstates_1_1_main_menu_a7e45c28d037c0d5daeb94b99ff83e81e}{optionsButton}}=\textcolor{keyword}{new} Button(container,(container.getWidth()-w)/2,3*container.getHeight()/
+      6,w,h,\mbox{\hyperlink{classstates_1_1_main_menu_a045edf02b97294df356a8101adaa11c3}{font}}, \textcolor{keyword}{new} ComponentListener()\{
+70             @Override
+71             \textcolor{keyword}{public} \textcolor{keywordtype}{void} componentActivated(AbstractComponent source) \{
+72                 game.enterState(NotEvenAnEarlyAccess.OPTIONS,\mbox{\hyperlink{classstates_1_1_main_menu_a7443336a416646891958e073289b2a50}{to}},\mbox{\hyperlink{classstates_1_1_main_menu_ab7c88b387c4beb4042ffd45d6b513c23}{ti}});
+73             \}
+74         \});
+75         \mbox{\hyperlink{classstates_1_1_main_menu_ab0fc474be86201071427780c6c500dbb}{quitButton}}=\textcolor{keyword}{new} Button(container,(container.getWidth()-w)/2,2*container.getHeight()/3,w,h,
+      \mbox{\hyperlink{classstates_1_1_main_menu_a045edf02b97294df356a8101adaa11c3}{font}}, \textcolor{keyword}{new} ComponentListener()\{
+76             @Override
+77             \textcolor{keyword}{public} \textcolor{keywordtype}{void} componentActivated(AbstractComponent source) \{
+78                 container.exit();
+79             \}
+80         \});
+81     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classstates_1_1_main_menu_ad36f80560779b3cf28f76f2a44d640de}\label{classstates_1_1_main_menu_ad36f80560779b3cf28f76f2a44d640de}} 
+\index{states\+::\+Main\+Menu@{states\+::\+Main\+Menu}!render@{render}}
+\index{render@{render}!states\+::\+Main\+Menu@{states\+::\+Main\+Menu}}
+\subsubsection{\texorpdfstring{render()}{render()}}
+{\footnotesize\ttfamily void states.\+Main\+Menu.\+render (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_game_container}{Game\+Container}}}]{container,  }\item[{\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1_state_based_game}{State\+Based\+Game}}}]{game,  }\item[{\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_graphics}{Graphics}}}]{g }\end{DoxyParamCaption}) throws \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_slick_exception}{Slick\+Exception}}\hspace{0.3cm}{\ttfamily [inline]}}
+
+Render this state to the game\textquotesingle{}s graphics context
+
+
+\begin{DoxyParams}{Parameters}
+{\em container} & The container holding the game \\
+\hline
+{\em game} & The game holding this state \\
+\hline
+{\em g} & The graphics context to render to \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Slick\+Exception} & Indicates a failure to render an artifact \\
+\hline
+\end{DoxyExceptions}
+
+
+Implements \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1state_1_1_game_state_a065352d2725274c5244cd022f226eb17}{org.\+newdawn.\+slick.\+state.\+Game\+State}}.
+
+
+\begin{DoxyCode}
+84                                                                                                        \{
+85         \textcolor{comment}{//throw new UnsupportedOperationException("Not supported yet."); //To change body of generated
+       methods, choose Tools | Templates.}
+86          \mbox{\hyperlink{classstates_1_1_main_menu_a0203042667da8aea22930eb0810d5d9d}{backwall}}.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_image_a9bddcca05c7140ab45df8ac5b250b6cd}{draw}}(0, 0, container.getWidth(), container.getHeight());
+87         \mbox{\hyperlink{classstates_1_1_main_menu_a185de536bd7c3e47f5c7ade14b27dc84}{titulo}}.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_image_a9bddcca05c7140ab45df8ac5b250b6cd}{draw}}(container.getWidth()/2-205, 0, 0.5f);
+88         \mbox{\hyperlink{classstates_1_1_main_menu_a0b5fdbfec57ada5a6161f4b2dbc1bfe8}{startButton}}.\mbox{\hyperlink{classgui_1_1_button_a0963af10c0ebfda675428cf6692e3df5}{drawButton}}(\textcolor{stringliteral}{"Empezar"}, g);
+89         \mbox{\hyperlink{classstates_1_1_main_menu_ab0fc474be86201071427780c6c500dbb}{quitButton}}.\mbox{\hyperlink{classgui_1_1_button_a0963af10c0ebfda675428cf6692e3df5}{drawButton}}(\textcolor{stringliteral}{"Salir"}, g);
+90         \mbox{\hyperlink{classstates_1_1_main_menu_a7e45c28d037c0d5daeb94b99ff83e81e}{optionsButton}}.\mbox{\hyperlink{classgui_1_1_button_a0963af10c0ebfda675428cf6692e3df5}{drawButton}}(\textcolor{stringliteral}{"Opciones"}, g);
+91     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classstates_1_1_main_menu_a83292d85c5e93f8209e65afdfed4d5da}\label{classstates_1_1_main_menu_a83292d85c5e93f8209e65afdfed4d5da}} 
+\index{states\+::\+Main\+Menu@{states\+::\+Main\+Menu}!update@{update}}
+\index{update@{update}!states\+::\+Main\+Menu@{states\+::\+Main\+Menu}}
+\subsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void states.\+Main\+Menu.\+update (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_game_container}{Game\+Container}}}]{container,  }\item[{\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1_state_based_game}{State\+Based\+Game}}}]{game,  }\item[{int}]{delta }\end{DoxyParamCaption}) throws \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_slick_exception}{Slick\+Exception}}\hspace{0.3cm}{\ttfamily [inline]}}
+
+Update the state\textquotesingle{}s logic based on the amount of time thats passed
+
+
+\begin{DoxyParams}{Parameters}
+{\em container} & The container holding the game \\
+\hline
+{\em game} & The game holding this state \\
+\hline
+{\em delta} & The amount of time thats passed in millisecond since last update \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Slick\+Exception} & Indicates an internal error that will be reported through the standard framework mechanism \\
+\hline
+\end{DoxyExceptions}
+
+
+Implements \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1state_1_1_game_state_ab5ec3bc37a9bd1eb5679577408c562c1}{org.\+newdawn.\+slick.\+state.\+Game\+State}}.
+
+
+\begin{DoxyCode}
+94                                                                                                       \{
+95         \textcolor{comment}{//throw new UnsupportedOperationException("Not supported yet."); //To change body of generated
+       methods, choose Tools | Templates.}
+96     \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classstates_1_1_main_menu_a0203042667da8aea22930eb0810d5d9d}\label{classstates_1_1_main_menu_a0203042667da8aea22930eb0810d5d9d}} 
+\index{states\+::\+Main\+Menu@{states\+::\+Main\+Menu}!backwall@{backwall}}
+\index{backwall@{backwall}!states\+::\+Main\+Menu@{states\+::\+Main\+Menu}}
+\subsubsection{\texorpdfstring{backwall}{backwall}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_image}{Image}} states.\+Main\+Menu.\+backwall\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classstates_1_1_main_menu_a045edf02b97294df356a8101adaa11c3}\label{classstates_1_1_main_menu_a045edf02b97294df356a8101adaa11c3}} 
+\index{states\+::\+Main\+Menu@{states\+::\+Main\+Menu}!font@{font}}
+\index{font@{font}!states\+::\+Main\+Menu@{states\+::\+Main\+Menu}}
+\subsubsection{\texorpdfstring{font}{font}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classgui_1_1_g_u_i_font}{G\+U\+I\+Font}} states.\+Main\+Menu.\+font\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classstates_1_1_main_menu_acdd02005ac38a76e9d4e5bca1e33fb4c}\label{classstates_1_1_main_menu_acdd02005ac38a76e9d4e5bca1e33fb4c}} 
+\index{states\+::\+Main\+Menu@{states\+::\+Main\+Menu}!id@{id}}
+\index{id@{id}!states\+::\+Main\+Menu@{states\+::\+Main\+Menu}}
+\subsubsection{\texorpdfstring{id}{id}}
+{\footnotesize\ttfamily int states.\+Main\+Menu.\+id\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classstates_1_1_main_menu_a7e45c28d037c0d5daeb94b99ff83e81e}\label{classstates_1_1_main_menu_a7e45c28d037c0d5daeb94b99ff83e81e}} 
+\index{states\+::\+Main\+Menu@{states\+::\+Main\+Menu}!options\+Button@{options\+Button}}
+\index{options\+Button@{options\+Button}!states\+::\+Main\+Menu@{states\+::\+Main\+Menu}}
+\subsubsection{\texorpdfstring{options\+Button}{optionsButton}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classgui_1_1_button}{Button}} states.\+Main\+Menu.\+options\+Button\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classstates_1_1_main_menu_ab0fc474be86201071427780c6c500dbb}\label{classstates_1_1_main_menu_ab0fc474be86201071427780c6c500dbb}} 
+\index{states\+::\+Main\+Menu@{states\+::\+Main\+Menu}!quit\+Button@{quit\+Button}}
+\index{quit\+Button@{quit\+Button}!states\+::\+Main\+Menu@{states\+::\+Main\+Menu}}
+\subsubsection{\texorpdfstring{quit\+Button}{quitButton}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classgui_1_1_button}{Button}} states.\+Main\+Menu.\+quit\+Button\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classstates_1_1_main_menu_a0b5fdbfec57ada5a6161f4b2dbc1bfe8}\label{classstates_1_1_main_menu_a0b5fdbfec57ada5a6161f4b2dbc1bfe8}} 
+\index{states\+::\+Main\+Menu@{states\+::\+Main\+Menu}!start\+Button@{start\+Button}}
+\index{start\+Button@{start\+Button}!states\+::\+Main\+Menu@{states\+::\+Main\+Menu}}
+\subsubsection{\texorpdfstring{start\+Button}{startButton}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classgui_1_1_button}{Button}} states.\+Main\+Menu.\+start\+Button\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classstates_1_1_main_menu_ab7c88b387c4beb4042ffd45d6b513c23}\label{classstates_1_1_main_menu_ab7c88b387c4beb4042ffd45d6b513c23}} 
+\index{states\+::\+Main\+Menu@{states\+::\+Main\+Menu}!ti@{ti}}
+\index{ti@{ti}!states\+::\+Main\+Menu@{states\+::\+Main\+Menu}}
+\subsubsection{\texorpdfstring{ti}{ti}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_transition}{Transition}} states.\+Main\+Menu.\+ti\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classstates_1_1_main_menu_a185de536bd7c3e47f5c7ade14b27dc84}\label{classstates_1_1_main_menu_a185de536bd7c3e47f5c7ade14b27dc84}} 
+\index{states\+::\+Main\+Menu@{states\+::\+Main\+Menu}!titulo@{titulo}}
+\index{titulo@{titulo}!states\+::\+Main\+Menu@{states\+::\+Main\+Menu}}
+\subsubsection{\texorpdfstring{titulo}{titulo}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_image}{Image}} states.\+Main\+Menu.\+titulo\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classstates_1_1_main_menu_a7443336a416646891958e073289b2a50}\label{classstates_1_1_main_menu_a7443336a416646891958e073289b2a50}} 
+\index{states\+::\+Main\+Menu@{states\+::\+Main\+Menu}!to@{to}}
+\index{to@{to}!states\+::\+Main\+Menu@{states\+::\+Main\+Menu}}
+\subsubsection{\texorpdfstring{to}{to}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_transition}{Transition}} states.\+Main\+Menu.\+to\hspace{0.3cm}{\ttfamily [private]}}
+

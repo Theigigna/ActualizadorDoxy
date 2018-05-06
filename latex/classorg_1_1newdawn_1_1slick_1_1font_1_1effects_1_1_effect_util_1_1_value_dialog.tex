@@ -1,0 +1,119 @@
+\hypertarget{classorg_1_1newdawn_1_1slick_1_1font_1_1effects_1_1_effect_util_1_1_value_dialog}{}\section{org.\+newdawn.\+slick.\+font.\+effects.\+Effect\+Util.\+Value\+Dialog Class Reference}
+\label{classorg_1_1newdawn_1_1slick_1_1font_1_1effects_1_1_effect_util_1_1_value_dialog}\index{org.\+newdawn.\+slick.\+font.\+effects.\+Effect\+Util.\+Value\+Dialog@{org.\+newdawn.\+slick.\+font.\+effects.\+Effect\+Util.\+Value\+Dialog}}
+Inheritance diagram for org.\+newdawn.\+slick.\+font.\+effects.\+Effect\+Util.\+Value\+Dialog\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classorg_1_1newdawn_1_1slick_1_1font_1_1effects_1_1_effect_util_1_1_value_dialog}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1font_1_1effects_1_1_effect_util_1_1_value_dialog_aa84e1b302b409d56d3d46e4e14acc58f}{Value\+Dialog}} (J\+Component component, String name, String description)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+boolean \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1font_1_1effects_1_1_effect_util_1_1_value_dialog_ad9cf435423031592402344dec1314245}{ok\+Pressed}} = false
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Provides generic functionality for a dialog to configure a value. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1font_1_1effects_1_1_effect_util_1_1_value_dialog_aa84e1b302b409d56d3d46e4e14acc58f}\label{classorg_1_1newdawn_1_1slick_1_1font_1_1effects_1_1_effect_util_1_1_value_dialog_aa84e1b302b409d56d3d46e4e14acc58f}} 
+\index{org\+::newdawn\+::slick\+::font\+::effects\+::\+Effect\+Util\+::\+Value\+Dialog@{org\+::newdawn\+::slick\+::font\+::effects\+::\+Effect\+Util\+::\+Value\+Dialog}!Value\+Dialog@{Value\+Dialog}}
+\index{Value\+Dialog@{Value\+Dialog}!org\+::newdawn\+::slick\+::font\+::effects\+::\+Effect\+Util\+::\+Value\+Dialog@{org\+::newdawn\+::slick\+::font\+::effects\+::\+Effect\+Util\+::\+Value\+Dialog}}
+\subsubsection{\texorpdfstring{Value\+Dialog()}{ValueDialog()}}
+{\footnotesize\ttfamily org.\+newdawn.\+slick.\+font.\+effects.\+Effect\+Util.\+Value\+Dialog.\+Value\+Dialog (\begin{DoxyParamCaption}\item[{J\+Component}]{component,  }\item[{String}]{name,  }\item[{String}]{description }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Create a new dialog to configure a specific value
+
+
+\begin{DoxyParams}{Parameters}
+{\em component} & The component to use as the parent of the dialog prompting the user \\
+\hline
+{\em name} & The name of the value being configured \\
+\hline
+{\em description} & The description of the value being configured \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+306                                                                                   \{
+307             setDefaultCloseOperation(JDialog.DISPOSE\_ON\_CLOSE);
+308             setLayout(\textcolor{keyword}{new} GridBagLayout());
+309             setModal(\textcolor{keyword}{true});
+310 
+311             \textcolor{keywordflow}{if} (component instanceof JSpinner)
+312                 ((JSpinner.DefaultEditor)((JSpinner)component).getEditor()).getTextField().setColumns(4);
+313 
+314             JPanel descriptionPanel = \textcolor{keyword}{new} JPanel();
+315             descriptionPanel.setLayout(\textcolor{keyword}{new} GridBagLayout());
+316             getContentPane().add(
+317                 descriptionPanel,
+318                 \textcolor{keyword}{new} GridBagConstraints(0, 0, 2, 1, 1.0, 0.0, GridBagConstraints.CENTER, GridBagConstraints.
+      BOTH, \textcolor{keyword}{new} Insets(0, 0, 0,
+319                     0), 0, 0));
+320             descriptionPanel.setBackground(Color.white);
+321             descriptionPanel.setBorder(BorderFactory.createMatteBorder(0, 0, 1, 0, Color.black));
+322             \{
+323                 JTextArea descriptionText = \textcolor{keyword}{new} JTextArea(description);
+324                 descriptionPanel.add(descriptionText, \textcolor{keyword}{new} GridBagConstraints(0, 0, 1, 1, 1.0, 0.0, 
+      GridBagConstraints.CENTER,
+325                     GridBagConstraints.BOTH, \textcolor{keyword}{new} Insets(5, 5, 5, 5), 0, 0));
+326                 descriptionText.setWrapStyleWord(\textcolor{keyword}{true});
+327                 descriptionText.setLineWrap(\textcolor{keyword}{true});
+328                 descriptionText.setBorder(BorderFactory.createEmptyBorder(0, 0, 0, 0));
+329                 descriptionText.setEditable(\textcolor{keyword}{false});
+330             \}
+331 
+332             JPanel panel = \textcolor{keyword}{new} JPanel();
+333             getContentPane().add(
+334                 panel,
+335                 \textcolor{keyword}{new} GridBagConstraints(0, 1, 1, 1, 1.0, 1.0, GridBagConstraints.CENTER, GridBagConstraints.
+      NONE, \textcolor{keyword}{new} Insets(5, 5, 0,
+336                     5), 0, 0));
+337             panel.add(\textcolor{keyword}{new} JLabel(name + \textcolor{stringliteral}{":"}));
+338             panel.add(component);
+339 
+340             JPanel buttonPanel = \textcolor{keyword}{new} JPanel();
+341             getContentPane().add(
+342                 buttonPanel,
+343                 \textcolor{keyword}{new} GridBagConstraints(0, 2, 2, 1, 0.0, 0.0, GridBagConstraints.EAST, GridBagConstraints.
+      NONE,
+344                     \textcolor{keyword}{new} Insets(0, 0, 0, 0), 0, 0));
+345             \{
+346                 JButton okButton = \textcolor{keyword}{new} JButton(\textcolor{stringliteral}{"OK"});
+347                 buttonPanel.add(okButton);
+348                 okButton.addActionListener(\textcolor{keyword}{new} ActionListener() \{
+349                     \textcolor{keyword}{public} \textcolor{keywordtype}{void} actionPerformed (ActionEvent evt) \{
+350                         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1font_1_1effects_1_1_effect_util_1_1_value_dialog_ad9cf435423031592402344dec1314245}{okPressed}} = \textcolor{keyword}{true};
+351                         setVisible(\textcolor{keyword}{false});
+352                     \}
+353                 \});
+354             \}
+355             \{
+356                 JButton cancelButton = \textcolor{keyword}{new} JButton(\textcolor{stringliteral}{"Cancel"});
+357                 buttonPanel.add(cancelButton);
+358                 cancelButton.addActionListener(\textcolor{keyword}{new} ActionListener() \{
+359                     \textcolor{keyword}{public} \textcolor{keywordtype}{void} actionPerformed (ActionEvent evt) \{
+360                         setVisible(\textcolor{keyword}{false});
+361                     \}
+362                 \});
+363             \}
+364 
+365             setSize(\textcolor{keyword}{new} Dimension(320, 175));
+366         \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1font_1_1effects_1_1_effect_util_1_1_value_dialog_ad9cf435423031592402344dec1314245}\label{classorg_1_1newdawn_1_1slick_1_1font_1_1effects_1_1_effect_util_1_1_value_dialog_ad9cf435423031592402344dec1314245}} 
+\index{org\+::newdawn\+::slick\+::font\+::effects\+::\+Effect\+Util\+::\+Value\+Dialog@{org\+::newdawn\+::slick\+::font\+::effects\+::\+Effect\+Util\+::\+Value\+Dialog}!ok\+Pressed@{ok\+Pressed}}
+\index{ok\+Pressed@{ok\+Pressed}!org\+::newdawn\+::slick\+::font\+::effects\+::\+Effect\+Util\+::\+Value\+Dialog@{org\+::newdawn\+::slick\+::font\+::effects\+::\+Effect\+Util\+::\+Value\+Dialog}}
+\subsubsection{\texorpdfstring{ok\+Pressed}{okPressed}}
+{\footnotesize\ttfamily boolean org.\+newdawn.\+slick.\+font.\+effects.\+Effect\+Util.\+Value\+Dialog.\+ok\+Pressed = false}
+
+True if OK was pressed 

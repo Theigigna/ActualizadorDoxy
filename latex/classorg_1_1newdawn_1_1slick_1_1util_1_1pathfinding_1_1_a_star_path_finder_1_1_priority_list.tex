@@ -1,0 +1,179 @@
+\hypertarget{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_path_finder_1_1_priority_list}{}\section{org.\+newdawn.\+slick.\+util.\+pathfinding.\+A\+Star\+Path\+Finder.\+Priority\+List Class Reference}
+\label{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_path_finder_1_1_priority_list}\index{org.\+newdawn.\+slick.\+util.\+pathfinding.\+A\+Star\+Path\+Finder.\+Priority\+List@{org.\+newdawn.\+slick.\+util.\+pathfinding.\+A\+Star\+Path\+Finder.\+Priority\+List}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+Object \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_path_finder_1_1_priority_list_ad2e6435ff1feb6f838527d5e901d0d6c}{first}} ()
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_path_finder_1_1_priority_list_aa9213d180d3cc63ae9762fac18d5ab0d}{clear}} ()
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_path_finder_1_1_priority_list_a0515cf76de099aa00ffb61ef30fb6cb8}{add}} (Object o)
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_path_finder_1_1_priority_list_a2876a214b6768f3aecdabdeed67a1986}{remove}} (Object o)
+\item 
+int \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_path_finder_1_1_priority_list_ad086ea92d9ebfe4ecf9fea3d45cdb1e0}{size}} ()
+\item 
+boolean \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_path_finder_1_1_priority_list_a4857c39dd90d962497b273845fe589c8}{contains}} (Object o)
+\item 
+String \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_path_finder_1_1_priority_list_a68c13520047bd9e8315eff1b3685ba5b}{to\+String}} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+List \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_path_finder_1_1_priority_list_a652f43252d1044a5a57102a8f30d2d47}{list}} = new Linked\+List()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A list that sorts any element provided into the list
+
+\begin{DoxyAuthor}{Author}
+kevin 
+\end{DoxyAuthor}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_path_finder_1_1_priority_list_a0515cf76de099aa00ffb61ef30fb6cb8}\label{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_path_finder_1_1_priority_list_a0515cf76de099aa00ffb61ef30fb6cb8}} 
+\index{org\+::newdawn\+::slick\+::util\+::pathfinding\+::\+A\+Star\+Path\+Finder\+::\+Priority\+List@{org\+::newdawn\+::slick\+::util\+::pathfinding\+::\+A\+Star\+Path\+Finder\+::\+Priority\+List}!add@{add}}
+\index{add@{add}!org\+::newdawn\+::slick\+::util\+::pathfinding\+::\+A\+Star\+Path\+Finder\+::\+Priority\+List@{org\+::newdawn\+::slick\+::util\+::pathfinding\+::\+A\+Star\+Path\+Finder\+::\+Priority\+List}}
+\subsubsection{\texorpdfstring{add()}{add()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+util.\+pathfinding.\+A\+Star\+Path\+Finder.\+Priority\+List.\+add (\begin{DoxyParamCaption}\item[{Object}]{o }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Add an element to the list -\/ causes sorting
+
+
+\begin{DoxyParams}{Parameters}
+{\em o} & The element to add \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+393                                   \{
+394             \textcolor{comment}{// float the new entry }
+395             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i=0;i<\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_path_finder_1_1_priority_list_a652f43252d1044a5a57102a8f30d2d47}{list}}.size();i++) \{
+396                 \textcolor{keywordflow}{if} (((Comparable) \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_path_finder_1_1_priority_list_a652f43252d1044a5a57102a8f30d2d47}{list}}.get(i)).compareTo(o) > 0) \{
+397                     \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_path_finder_1_1_priority_list_a652f43252d1044a5a57102a8f30d2d47}{list}}.add(i, o);
+398                     \textcolor{keywordflow}{break};
+399                 \}
+400             \}
+401             \textcolor{keywordflow}{if} (!\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_path_finder_1_1_priority_list_a652f43252d1044a5a57102a8f30d2d47}{list}}.contains(o)) \{
+402                 \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_path_finder_1_1_priority_list_a652f43252d1044a5a57102a8f30d2d47}{list}}.add(o);
+403             \}
+404             \textcolor{comment}{//Collections.sort(list);}
+405         \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_path_finder_1_1_priority_list_aa9213d180d3cc63ae9762fac18d5ab0d}\label{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_path_finder_1_1_priority_list_aa9213d180d3cc63ae9762fac18d5ab0d}} 
+\index{org\+::newdawn\+::slick\+::util\+::pathfinding\+::\+A\+Star\+Path\+Finder\+::\+Priority\+List@{org\+::newdawn\+::slick\+::util\+::pathfinding\+::\+A\+Star\+Path\+Finder\+::\+Priority\+List}!clear@{clear}}
+\index{clear@{clear}!org\+::newdawn\+::slick\+::util\+::pathfinding\+::\+A\+Star\+Path\+Finder\+::\+Priority\+List@{org\+::newdawn\+::slick\+::util\+::pathfinding\+::\+A\+Star\+Path\+Finder\+::\+Priority\+List}}
+\subsubsection{\texorpdfstring{clear()}{clear()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+util.\+pathfinding.\+A\+Star\+Path\+Finder.\+Priority\+List.\+clear (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Empty the list 
+\begin{DoxyCode}
+384                             \{
+385             \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_path_finder_1_1_priority_list_a652f43252d1044a5a57102a8f30d2d47}{list}}.clear();
+386         \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_path_finder_1_1_priority_list_a4857c39dd90d962497b273845fe589c8}\label{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_path_finder_1_1_priority_list_a4857c39dd90d962497b273845fe589c8}} 
+\index{org\+::newdawn\+::slick\+::util\+::pathfinding\+::\+A\+Star\+Path\+Finder\+::\+Priority\+List@{org\+::newdawn\+::slick\+::util\+::pathfinding\+::\+A\+Star\+Path\+Finder\+::\+Priority\+List}!contains@{contains}}
+\index{contains@{contains}!org\+::newdawn\+::slick\+::util\+::pathfinding\+::\+A\+Star\+Path\+Finder\+::\+Priority\+List@{org\+::newdawn\+::slick\+::util\+::pathfinding\+::\+A\+Star\+Path\+Finder\+::\+Priority\+List}}
+\subsubsection{\texorpdfstring{contains()}{contains()}}
+{\footnotesize\ttfamily boolean org.\+newdawn.\+slick.\+util.\+pathfinding.\+A\+Star\+Path\+Finder.\+Priority\+List.\+contains (\begin{DoxyParamCaption}\item[{Object}]{o }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Check if an element is in the list
+
+
+\begin{DoxyParams}{Parameters}
+{\em o} & The element to search for \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the element is in the list 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+431                                           \{
+432             \textcolor{keywordflow}{return} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_path_finder_1_1_priority_list_a652f43252d1044a5a57102a8f30d2d47}{list}}.contains(o);
+433         \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_path_finder_1_1_priority_list_ad2e6435ff1feb6f838527d5e901d0d6c}\label{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_path_finder_1_1_priority_list_ad2e6435ff1feb6f838527d5e901d0d6c}} 
+\index{org\+::newdawn\+::slick\+::util\+::pathfinding\+::\+A\+Star\+Path\+Finder\+::\+Priority\+List@{org\+::newdawn\+::slick\+::util\+::pathfinding\+::\+A\+Star\+Path\+Finder\+::\+Priority\+List}!first@{first}}
+\index{first@{first}!org\+::newdawn\+::slick\+::util\+::pathfinding\+::\+A\+Star\+Path\+Finder\+::\+Priority\+List@{org\+::newdawn\+::slick\+::util\+::pathfinding\+::\+A\+Star\+Path\+Finder\+::\+Priority\+List}}
+\subsubsection{\texorpdfstring{first()}{first()}}
+{\footnotesize\ttfamily Object org.\+newdawn.\+slick.\+util.\+pathfinding.\+A\+Star\+Path\+Finder.\+Priority\+List.\+first (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Retrieve the first element from the list
+
+\begin{DoxyReturn}{Returns}
+The first element from the list 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+377                               \{
+378             \textcolor{keywordflow}{return} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_path_finder_1_1_priority_list_a652f43252d1044a5a57102a8f30d2d47}{list}}.get(0);
+379         \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_path_finder_1_1_priority_list_a2876a214b6768f3aecdabdeed67a1986}\label{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_path_finder_1_1_priority_list_a2876a214b6768f3aecdabdeed67a1986}} 
+\index{org\+::newdawn\+::slick\+::util\+::pathfinding\+::\+A\+Star\+Path\+Finder\+::\+Priority\+List@{org\+::newdawn\+::slick\+::util\+::pathfinding\+::\+A\+Star\+Path\+Finder\+::\+Priority\+List}!remove@{remove}}
+\index{remove@{remove}!org\+::newdawn\+::slick\+::util\+::pathfinding\+::\+A\+Star\+Path\+Finder\+::\+Priority\+List@{org\+::newdawn\+::slick\+::util\+::pathfinding\+::\+A\+Star\+Path\+Finder\+::\+Priority\+List}}
+\subsubsection{\texorpdfstring{remove()}{remove()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+util.\+pathfinding.\+A\+Star\+Path\+Finder.\+Priority\+List.\+remove (\begin{DoxyParamCaption}\item[{Object}]{o }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Remove an element from the list
+
+
+\begin{DoxyParams}{Parameters}
+{\em o} & The element to remove \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+412                                      \{
+413             \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_path_finder_1_1_priority_list_a652f43252d1044a5a57102a8f30d2d47}{list}}.remove(o);
+414         \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_path_finder_1_1_priority_list_ad086ea92d9ebfe4ecf9fea3d45cdb1e0}\label{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_path_finder_1_1_priority_list_ad086ea92d9ebfe4ecf9fea3d45cdb1e0}} 
+\index{org\+::newdawn\+::slick\+::util\+::pathfinding\+::\+A\+Star\+Path\+Finder\+::\+Priority\+List@{org\+::newdawn\+::slick\+::util\+::pathfinding\+::\+A\+Star\+Path\+Finder\+::\+Priority\+List}!size@{size}}
+\index{size@{size}!org\+::newdawn\+::slick\+::util\+::pathfinding\+::\+A\+Star\+Path\+Finder\+::\+Priority\+List@{org\+::newdawn\+::slick\+::util\+::pathfinding\+::\+A\+Star\+Path\+Finder\+::\+Priority\+List}}
+\subsubsection{\texorpdfstring{size()}{size()}}
+{\footnotesize\ttfamily int org.\+newdawn.\+slick.\+util.\+pathfinding.\+A\+Star\+Path\+Finder.\+Priority\+List.\+size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get the number of elements in the list
+
+\begin{DoxyReturn}{Returns}
+The number of element in the list 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+421                           \{
+422             \textcolor{keywordflow}{return} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_path_finder_1_1_priority_list_a652f43252d1044a5a57102a8f30d2d47}{list}}.size();
+423         \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_path_finder_1_1_priority_list_a68c13520047bd9e8315eff1b3685ba5b}\label{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_path_finder_1_1_priority_list_a68c13520047bd9e8315eff1b3685ba5b}} 
+\index{org\+::newdawn\+::slick\+::util\+::pathfinding\+::\+A\+Star\+Path\+Finder\+::\+Priority\+List@{org\+::newdawn\+::slick\+::util\+::pathfinding\+::\+A\+Star\+Path\+Finder\+::\+Priority\+List}!to\+String@{to\+String}}
+\index{to\+String@{to\+String}!org\+::newdawn\+::slick\+::util\+::pathfinding\+::\+A\+Star\+Path\+Finder\+::\+Priority\+List@{org\+::newdawn\+::slick\+::util\+::pathfinding\+::\+A\+Star\+Path\+Finder\+::\+Priority\+List}}
+\subsubsection{\texorpdfstring{to\+String()}{toString()}}
+{\footnotesize\ttfamily String org.\+newdawn.\+slick.\+util.\+pathfinding.\+A\+Star\+Path\+Finder.\+Priority\+List.\+to\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+435                                  \{
+436             String temp = \textcolor{stringliteral}{"\{"};
+437             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i=0;i<\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_path_finder_1_1_priority_list_ad086ea92d9ebfe4ecf9fea3d45cdb1e0}{size}}();i++) \{
+438                 temp += \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_path_finder_1_1_priority_list_a652f43252d1044a5a57102a8f30d2d47}{list}}.get(i).toString()+\textcolor{stringliteral}{","};
+439             \}
+440             temp += \textcolor{stringliteral}{"\}"};
+441             
+442             \textcolor{keywordflow}{return} temp;
+443         \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_path_finder_1_1_priority_list_a652f43252d1044a5a57102a8f30d2d47}\label{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_path_finder_1_1_priority_list_a652f43252d1044a5a57102a8f30d2d47}} 
+\index{org\+::newdawn\+::slick\+::util\+::pathfinding\+::\+A\+Star\+Path\+Finder\+::\+Priority\+List@{org\+::newdawn\+::slick\+::util\+::pathfinding\+::\+A\+Star\+Path\+Finder\+::\+Priority\+List}!list@{list}}
+\index{list@{list}!org\+::newdawn\+::slick\+::util\+::pathfinding\+::\+A\+Star\+Path\+Finder\+::\+Priority\+List@{org\+::newdawn\+::slick\+::util\+::pathfinding\+::\+A\+Star\+Path\+Finder\+::\+Priority\+List}}
+\subsubsection{\texorpdfstring{list}{list}}
+{\footnotesize\ttfamily List org.\+newdawn.\+slick.\+util.\+pathfinding.\+A\+Star\+Path\+Finder.\+Priority\+List.\+list = new Linked\+List()\hspace{0.3cm}{\ttfamily [private]}}
+
+The list of elements 

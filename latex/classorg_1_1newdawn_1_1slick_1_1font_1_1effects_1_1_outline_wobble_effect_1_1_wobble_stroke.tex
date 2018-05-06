@@ -1,0 +1,132 @@
+\hypertarget{classorg_1_1newdawn_1_1slick_1_1font_1_1effects_1_1_outline_wobble_effect_1_1_wobble_stroke}{}\section{org.\+newdawn.\+slick.\+font.\+effects.\+Outline\+Wobble\+Effect.\+Wobble\+Stroke Class Reference}
+\label{classorg_1_1newdawn_1_1slick_1_1font_1_1effects_1_1_outline_wobble_effect_1_1_wobble_stroke}\index{org.\+newdawn.\+slick.\+font.\+effects.\+Outline\+Wobble\+Effect.\+Wobble\+Stroke@{org.\+newdawn.\+slick.\+font.\+effects.\+Outline\+Wobble\+Effect.\+Wobble\+Stroke}}
+Inheritance diagram for org.\+newdawn.\+slick.\+font.\+effects.\+Outline\+Wobble\+Effect.\+Wobble\+Stroke\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classorg_1_1newdawn_1_1slick_1_1font_1_1effects_1_1_outline_wobble_effect_1_1_wobble_stroke}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+Shape \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1font_1_1effects_1_1_outline_wobble_effect_1_1_wobble_stroke_a1f409e24e06e974e42cf454f3763814a}{create\+Stroked\+Shape}} (Shape shape)
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+float \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1font_1_1effects_1_1_outline_wobble_effect_1_1_wobble_stroke_a6aa4ed3188495bd4abcf9b2862615330}{randomize}} (float x)
+\end{DoxyCompactItemize}
+\subsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static final float \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1font_1_1effects_1_1_outline_wobble_effect_1_1_wobble_stroke_abb70d0bc0ea08d8be8f328ce24eaf8e5}{F\+L\+A\+T\+N\+E\+SS}} = 1
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A stroke that generate a wobbly line
+
+\begin{DoxyAuthor}{Author}
+Jerry Huxtable 
+
+Nathan Sweet \href{mailto:misc@n4te.com}{\tt misc@n4te.\+com} 
+\end{DoxyAuthor}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1font_1_1effects_1_1_outline_wobble_effect_1_1_wobble_stroke_a1f409e24e06e974e42cf454f3763814a}\label{classorg_1_1newdawn_1_1slick_1_1font_1_1effects_1_1_outline_wobble_effect_1_1_wobble_stroke_a1f409e24e06e974e42cf454f3763814a}} 
+\index{org\+::newdawn\+::slick\+::font\+::effects\+::\+Outline\+Wobble\+Effect\+::\+Wobble\+Stroke@{org\+::newdawn\+::slick\+::font\+::effects\+::\+Outline\+Wobble\+Effect\+::\+Wobble\+Stroke}!create\+Stroked\+Shape@{create\+Stroked\+Shape}}
+\index{create\+Stroked\+Shape@{create\+Stroked\+Shape}!org\+::newdawn\+::slick\+::font\+::effects\+::\+Outline\+Wobble\+Effect\+::\+Wobble\+Stroke@{org\+::newdawn\+::slick\+::font\+::effects\+::\+Outline\+Wobble\+Effect\+::\+Wobble\+Stroke}}
+\subsubsection{\texorpdfstring{create\+Stroked\+Shape()}{createStrokedShape()}}
+{\footnotesize\ttfamily Shape org.\+newdawn.\+slick.\+font.\+effects.\+Outline\+Wobble\+Effect.\+Wobble\+Stroke.\+create\+Stroked\+Shape (\begin{DoxyParamCaption}\item[{Shape}]{shape }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxySeeAlso}{See also}
+java.\+awt.\+Stroke\+::create\+Stroked\+Shape(java.\+awt.\+Shape) 
+\end{DoxySeeAlso}
+
+\begin{DoxyCode}
+139                                                       \{
+140             GeneralPath result = \textcolor{keyword}{new} GeneralPath();
+141             shape = \textcolor{keyword}{new} BasicStroke(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1font_1_1effects_1_1_outline_effect_a4e38d6349e329f70056eaed9dece69a3}{getWidth}}(), BasicStroke.CAP\_SQUARE, 
+      \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1font_1_1effects_1_1_outline_effect_a495949cd03000b18b0d3907596afeb53}{getJoin}}()).createStrokedShape(shape);
+142             PathIterator it = \textcolor{keyword}{new} FlatteningPathIterator(shape.getPathIterator(null), 
+      \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1font_1_1effects_1_1_outline_wobble_effect_1_1_wobble_stroke_abb70d0bc0ea08d8be8f328ce24eaf8e5}{FLATNESS}});
+143             \textcolor{keywordtype}{float} points[] = \textcolor{keyword}{new} \textcolor{keywordtype}{float}[6];
+144             \textcolor{keywordtype}{float} moveX = 0, moveY = 0;
+145             \textcolor{keywordtype}{float} lastX = 0, lastY = 0;
+146             \textcolor{keywordtype}{float} thisX = 0, thisY = 0;
+147             \textcolor{keywordtype}{int} type = 0;
+148             \textcolor{keywordtype}{float} next = 0;
+149             \textcolor{keywordflow}{while} (!it.isDone()) \{
+150                 type = it.currentSegment(points);
+151                 \textcolor{keywordflow}{switch} (type) \{
+152                 \textcolor{keywordflow}{case} PathIterator.SEG\_MOVETO:
+153                     moveX = lastX = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1font_1_1effects_1_1_outline_wobble_effect_1_1_wobble_stroke_a6aa4ed3188495bd4abcf9b2862615330}{randomize}}(points[0]);
+154                     moveY = lastY = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1font_1_1effects_1_1_outline_wobble_effect_1_1_wobble_stroke_a6aa4ed3188495bd4abcf9b2862615330}{randomize}}(points[1]);
+155                     result.moveTo(moveX, moveY);
+156                     next = 0;
+157                     \textcolor{keywordflow}{break};
+158 
+159                 \textcolor{keywordflow}{case} PathIterator.SEG\_CLOSE:
+160                     points[0] = moveX;
+161                     points[1] = moveY;
+162                     \textcolor{comment}{// Fall into....}
+163 
+164                 \textcolor{keywordflow}{case} PathIterator.SEG\_LINETO:
+165                     thisX = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1font_1_1effects_1_1_outline_wobble_effect_1_1_wobble_stroke_a6aa4ed3188495bd4abcf9b2862615330}{randomize}}(points[0]);
+166                     thisY = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1font_1_1effects_1_1_outline_wobble_effect_1_1_wobble_stroke_a6aa4ed3188495bd4abcf9b2862615330}{randomize}}(points[1]);
+167                     \textcolor{keywordtype}{float} dx = thisX - lastX;
+168                     \textcolor{keywordtype}{float} dy = thisY - lastY;
+169                     \textcolor{keywordtype}{float} distance = (float)Math.sqrt(dx * dx + dy * dy);
+170                     \textcolor{keywordflow}{if} (distance >= next) \{
+171                         \textcolor{keywordtype}{float} r = 1.0f / distance;
+172                         \textcolor{keywordflow}{while} (distance >= next) \{
+173                             \textcolor{keywordtype}{float} x = lastX + next * dx * r;
+174                             \textcolor{keywordtype}{float} y = lastY + next * dy * r;
+175                             result.lineTo(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1font_1_1effects_1_1_outline_wobble_effect_1_1_wobble_stroke_a6aa4ed3188495bd4abcf9b2862615330}{randomize}}(x), \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1font_1_1effects_1_1_outline_wobble_effect_1_1_wobble_stroke_a6aa4ed3188495bd4abcf9b2862615330}{randomize}}(y));
+176                             next += \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1font_1_1effects_1_1_outline_wobble_effect_ac43d2a2c878ac5034bf82a0837cfa86f}{detail}};
+177                         \}
+178                     \}
+179                     next -= distance;
+180                     lastX = thisX;
+181                     lastY = thisY;
+182                     \textcolor{keywordflow}{break};
+183                 \}
+184                 it.next();
+185             \}
+186 
+187             \textcolor{keywordflow}{return} result;
+188         \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1font_1_1effects_1_1_outline_wobble_effect_1_1_wobble_stroke_a6aa4ed3188495bd4abcf9b2862615330}\label{classorg_1_1newdawn_1_1slick_1_1font_1_1effects_1_1_outline_wobble_effect_1_1_wobble_stroke_a6aa4ed3188495bd4abcf9b2862615330}} 
+\index{org\+::newdawn\+::slick\+::font\+::effects\+::\+Outline\+Wobble\+Effect\+::\+Wobble\+Stroke@{org\+::newdawn\+::slick\+::font\+::effects\+::\+Outline\+Wobble\+Effect\+::\+Wobble\+Stroke}!randomize@{randomize}}
+\index{randomize@{randomize}!org\+::newdawn\+::slick\+::font\+::effects\+::\+Outline\+Wobble\+Effect\+::\+Wobble\+Stroke@{org\+::newdawn\+::slick\+::font\+::effects\+::\+Outline\+Wobble\+Effect\+::\+Wobble\+Stroke}}
+\subsubsection{\texorpdfstring{randomize()}{randomize()}}
+{\footnotesize\ttfamily float org.\+newdawn.\+slick.\+font.\+effects.\+Outline\+Wobble\+Effect.\+Wobble\+Stroke.\+randomize (\begin{DoxyParamCaption}\item[{float}]{x }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+Get a random wobble factor
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & The position on the line \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The wobble factor 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+196                                          \{
+197             \textcolor{keywordflow}{return} x + (float)Math.random() * \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1font_1_1effects_1_1_outline_wobble_effect_a6797d66a3cfb14ca9b2e04bad9f2979e}{amplitude}} * 2 - 1;
+198         \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1font_1_1effects_1_1_outline_wobble_effect_1_1_wobble_stroke_abb70d0bc0ea08d8be8f328ce24eaf8e5}\label{classorg_1_1newdawn_1_1slick_1_1font_1_1effects_1_1_outline_wobble_effect_1_1_wobble_stroke_abb70d0bc0ea08d8be8f328ce24eaf8e5}} 
+\index{org\+::newdawn\+::slick\+::font\+::effects\+::\+Outline\+Wobble\+Effect\+::\+Wobble\+Stroke@{org\+::newdawn\+::slick\+::font\+::effects\+::\+Outline\+Wobble\+Effect\+::\+Wobble\+Stroke}!F\+L\+A\+T\+N\+E\+SS@{F\+L\+A\+T\+N\+E\+SS}}
+\index{F\+L\+A\+T\+N\+E\+SS@{F\+L\+A\+T\+N\+E\+SS}!org\+::newdawn\+::slick\+::font\+::effects\+::\+Outline\+Wobble\+Effect\+::\+Wobble\+Stroke@{org\+::newdawn\+::slick\+::font\+::effects\+::\+Outline\+Wobble\+Effect\+::\+Wobble\+Stroke}}
+\subsubsection{\texorpdfstring{F\+L\+A\+T\+N\+E\+SS}{FLATNESS}}
+{\footnotesize\ttfamily final float org.\+newdawn.\+slick.\+font.\+effects.\+Outline\+Wobble\+Effect.\+Wobble\+Stroke.\+F\+L\+A\+T\+N\+E\+SS = 1\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+The flattening factor of the stroke 

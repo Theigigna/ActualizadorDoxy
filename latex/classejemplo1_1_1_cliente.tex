@@ -1,0 +1,40 @@
+\hypertarget{classejemplo1_1_1_cliente}{}\section{ejemplo1.\+Cliente Class Reference}
+\label{classejemplo1_1_1_cliente}\index{ejemplo1.\+Cliente@{ejemplo1.\+Cliente}}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{classejemplo1_1_1_cliente_afc5408e295f1d2f02b6b7f6f8cf7d66b}{main}} (String args\mbox{[}$\,$\mbox{]})
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classejemplo1_1_1_cliente_afc5408e295f1d2f02b6b7f6f8cf7d66b}\label{classejemplo1_1_1_cliente_afc5408e295f1d2f02b6b7f6f8cf7d66b}} 
+\index{ejemplo1\+::\+Cliente@{ejemplo1\+::\+Cliente}!main@{main}}
+\index{main@{main}!ejemplo1\+::\+Cliente@{ejemplo1\+::\+Cliente}}
+\subsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily static void ejemplo1.\+Cliente.\+main (\begin{DoxyParamCaption}\item[{String}]{args\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+\begin{DoxyCode}
+9     \{
+10         String respuesta = \textcolor{stringliteral}{""};
+11         \textcolor{keywordflow}{try}
+12         \{
+13             BufferedReader entrada = \textcolor{keyword}{new} BufferedReader(\textcolor{keyword}{new} InputStreamReader(System.in));
+14             System.out.println(\textcolor{stringliteral}{"Introduce tu nombre:"});
+15             String nombre = entrada.readLine();
+16             
+17             InterfaceSaluda obj = (InterfaceSaluda) Naming.lookup(\textcolor{stringliteral}{"//127.0.0.1/ObjetoSaluda"}); \textcolor{comment}{//Localiza
+       el objeto distribuido}
+18             respuesta = obj.saludar(nombre);                                                   \textcolor{comment}{//Llama al
+       método saludar}
+19             System.out.println(respuesta);
+20             sleep(1000); \textcolor{comment}{//Para que dé tiempo a leer la respuesta antes de que se cierre la ventana}
+21         \}
+22         \textcolor{keywordflow}{catch} (Exception e)
+23         \{
+24             System.out.println(\textcolor{stringliteral}{"Excepción : "} + e.getMessage());
+25             e.printStackTrace();
+26         \}
+27     \}
+\end{DoxyCode}

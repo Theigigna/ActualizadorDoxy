@@ -1,0 +1,48 @@
+\hypertarget{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1heuristics_1_1_closest_heuristic}{}\section{org.\+newdawn.\+slick.\+util.\+pathfinding.\+heuristics.\+Closest\+Heuristic Class Reference}
+\label{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1heuristics_1_1_closest_heuristic}\index{org.\+newdawn.\+slick.\+util.\+pathfinding.\+heuristics.\+Closest\+Heuristic@{org.\+newdawn.\+slick.\+util.\+pathfinding.\+heuristics.\+Closest\+Heuristic}}
+Inheritance diagram for org.\+newdawn.\+slick.\+util.\+pathfinding.\+heuristics.\+Closest\+Heuristic\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1heuristics_1_1_closest_heuristic}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+float \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1heuristics_1_1_closest_heuristic_a2f983a6c190b2a3c76a873b2b4e4d40b}{get\+Cost}} (\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_tile_based_map}{Tile\+Based\+Map}} map, \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_mover}{Mover}} mover, int x, int y, int tx, int ty)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A heuristic that uses the tile that is closest to the target as the next best tile.
+
+\begin{DoxyAuthor}{Author}
+Kevin Glass 
+\end{DoxyAuthor}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1heuristics_1_1_closest_heuristic_a2f983a6c190b2a3c76a873b2b4e4d40b}\label{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1heuristics_1_1_closest_heuristic_a2f983a6c190b2a3c76a873b2b4e4d40b}} 
+\index{org\+::newdawn\+::slick\+::util\+::pathfinding\+::heuristics\+::\+Closest\+Heuristic@{org\+::newdawn\+::slick\+::util\+::pathfinding\+::heuristics\+::\+Closest\+Heuristic}!get\+Cost@{get\+Cost}}
+\index{get\+Cost@{get\+Cost}!org\+::newdawn\+::slick\+::util\+::pathfinding\+::heuristics\+::\+Closest\+Heuristic@{org\+::newdawn\+::slick\+::util\+::pathfinding\+::heuristics\+::\+Closest\+Heuristic}}
+\subsubsection{\texorpdfstring{get\+Cost()}{getCost()}}
+{\footnotesize\ttfamily float org.\+newdawn.\+slick.\+util.\+pathfinding.\+heuristics.\+Closest\+Heuristic.\+get\+Cost (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_tile_based_map}{Tile\+Based\+Map}}}]{map,  }\item[{\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_mover}{Mover}}}]{mover,  }\item[{int}]{x,  }\item[{int}]{y,  }\item[{int}]{tx,  }\item[{int}]{ty }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_heuristic_a6655bf4053ece54e62beec26876ad285}{A\+Star\+Heuristic\+::get\+Cost(\+Tile\+Based\+Map, Mover, int, int, int, int)}} 
+\end{DoxySeeAlso}
+
+
+Implements \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_heuristic_a6655bf4053ece54e62beec26876ad285}{org.\+newdawn.\+slick.\+util.\+pathfinding.\+A\+Star\+Heuristic}}.
+
+
+\begin{DoxyCode}
+17                                                                                       \{     
+18         \textcolor{keywordtype}{float} dx = tx - x;
+19         \textcolor{keywordtype}{float} dy = ty - y;
+20         
+21         \textcolor{keywordtype}{float} result = (float) (Math.sqrt((dx*dx)+(dy*dy)));
+22         
+23         \textcolor{keywordflow}{return} result;
+24     \}
+\end{DoxyCode}

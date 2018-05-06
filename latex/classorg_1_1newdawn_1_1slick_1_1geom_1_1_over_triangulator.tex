@@ -1,0 +1,222 @@
+\hypertarget{classorg_1_1newdawn_1_1slick_1_1geom_1_1_over_triangulator}{}\section{org.\+newdawn.\+slick.\+geom.\+Over\+Triangulator Class Reference}
+\label{classorg_1_1newdawn_1_1slick_1_1geom_1_1_over_triangulator}\index{org.\+newdawn.\+slick.\+geom.\+Over\+Triangulator@{org.\+newdawn.\+slick.\+geom.\+Over\+Triangulator}}
+Inheritance diagram for org.\+newdawn.\+slick.\+geom.\+Over\+Triangulator\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classorg_1_1newdawn_1_1slick_1_1geom_1_1_over_triangulator}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_over_triangulator_a0ad4c088ff134dbc7ac735949509e18a}{Over\+Triangulator}} (\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1geom_1_1_triangulator}{Triangulator}} tris)
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_over_triangulator_a6a17184e4004dd942f52d5b150369e86}{add\+Poly\+Point}} (float x, float y)
+\item 
+int \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_over_triangulator_a465acf51a252501448c8f29fa05c07ce}{get\+Triangle\+Count}} ()
+\item 
+float \mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_over_triangulator_ab101143b175d129d50115b7135e2cdf4}{get\+Triangle\+Point}} (int tri, int i)
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_over_triangulator_afc94b0bfad20289f2d9988621b602aca}{start\+Hole}} ()
+\item 
+boolean \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_over_triangulator_aabce5b7a47ea28da8332d0d3c546269b}{triangulate}} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+float \mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_over_triangulator_a81f4d764fe0327ce4cd6692e777cc5f6}{triangles}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A triangulator implementation that splits the triangules of another, subdividing to give a higher tesselation -\/ and hence smoother transitions.
+
+\begin{DoxyAuthor}{Author}
+kevin 
+\end{DoxyAuthor}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1geom_1_1_over_triangulator_a0ad4c088ff134dbc7ac735949509e18a}\label{classorg_1_1newdawn_1_1slick_1_1geom_1_1_over_triangulator_a0ad4c088ff134dbc7ac735949509e18a}} 
+\index{org\+::newdawn\+::slick\+::geom\+::\+Over\+Triangulator@{org\+::newdawn\+::slick\+::geom\+::\+Over\+Triangulator}!Over\+Triangulator@{Over\+Triangulator}}
+\index{Over\+Triangulator@{Over\+Triangulator}!org\+::newdawn\+::slick\+::geom\+::\+Over\+Triangulator@{org\+::newdawn\+::slick\+::geom\+::\+Over\+Triangulator}}
+\subsubsection{\texorpdfstring{Over\+Triangulator()}{OverTriangulator()}}
+{\footnotesize\ttfamily org.\+newdawn.\+slick.\+geom.\+Over\+Triangulator.\+Over\+Triangulator (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1geom_1_1_triangulator}{Triangulator}}}]{tris }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Create a new triangulator
+
+
+\begin{DoxyParams}{Parameters}
+{\em tris} & The original set of triangles to be sub-\/dividied \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+18                                                \{
+19         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_over_triangulator_a81f4d764fe0327ce4cd6692e777cc5f6}{triangles}} = \textcolor{keyword}{new} \textcolor{keywordtype}{float}[tris.getTriangleCount()*6*3][2];
+20         
+21         \textcolor{keywordtype}{int} tcount = 0;
+22         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i=0;i<tris.getTriangleCount();i++) \{
+23             \textcolor{keywordtype}{float} cx = 0;
+24             \textcolor{keywordtype}{float} cy = 0;
+25             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} p = 0;p < 3;p++) \{
+26                 \textcolor{keywordtype}{float}[] pt = tris.getTrianglePoint(i, p);
+27                 cx += pt[0];
+28                 cy += pt[1];
+29             \}
+30             
+31             cx /= 3;
+32             cy /= 3;
+33             
+34             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} p = 0;p < 3;p++) \{
+35                 \textcolor{keywordtype}{int} n = p +1;
+36                 \textcolor{keywordflow}{if} (n > 2) \{
+37                     n = 0;
+38                 \}
+39                 
+40                 \textcolor{keywordtype}{float}[] pt1 = tris.getTrianglePoint(i, p);
+41                 \textcolor{keywordtype}{float}[] pt2 = tris.getTrianglePoint(i, n);
+42 
+43                 pt1[0] = (pt1[0] + pt2[0]) / 2;
+44                 pt1[1] = (pt1[1] + pt2[1]) / 2;
+45                 
+46                 \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_over_triangulator_a81f4d764fe0327ce4cd6692e777cc5f6}{triangles}}[(tcount *3) + 0][0] = cx;
+47                 \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_over_triangulator_a81f4d764fe0327ce4cd6692e777cc5f6}{triangles}}[(tcount *3) + 0][1] = cy;
+48                 \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_over_triangulator_a81f4d764fe0327ce4cd6692e777cc5f6}{triangles}}[(tcount *3) + 1][0] = pt1[0];
+49                 \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_over_triangulator_a81f4d764fe0327ce4cd6692e777cc5f6}{triangles}}[(tcount *3) + 1][1] = pt1[1];
+50                 \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_over_triangulator_a81f4d764fe0327ce4cd6692e777cc5f6}{triangles}}[(tcount *3) + 2][0] = pt2[0];
+51                 \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_over_triangulator_a81f4d764fe0327ce4cd6692e777cc5f6}{triangles}}[(tcount *3) + 2][1] = pt2[1];
+52                 tcount++;
+53             \}
+54             
+55             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} p = 0;p < 3;p++) \{
+56                 \textcolor{keywordtype}{int} n = p +1;
+57                 \textcolor{keywordflow}{if} (n > 2) \{
+58                     n = 0;
+59                 \}
+60                 
+61                 \textcolor{keywordtype}{float}[] pt1 = tris.getTrianglePoint(i, p);
+62                 \textcolor{keywordtype}{float}[] pt2 = tris.getTrianglePoint(i, n);
+63                 
+64                 pt2[0] = (pt1[0] + pt2[0]) / 2;
+65                 pt2[1] = (pt1[1] + pt2[1]) / 2;
+66                 
+67                 \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_over_triangulator_a81f4d764fe0327ce4cd6692e777cc5f6}{triangles}}[(tcount *3) + 0][0] = cx;
+68                 \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_over_triangulator_a81f4d764fe0327ce4cd6692e777cc5f6}{triangles}}[(tcount *3) + 0][1] = cy;
+69                 \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_over_triangulator_a81f4d764fe0327ce4cd6692e777cc5f6}{triangles}}[(tcount *3) + 1][0] = pt1[0];
+70                 \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_over_triangulator_a81f4d764fe0327ce4cd6692e777cc5f6}{triangles}}[(tcount *3) + 1][1] = pt1[1];
+71                 \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_over_triangulator_a81f4d764fe0327ce4cd6692e777cc5f6}{triangles}}[(tcount *3) + 2][0] = pt2[0];
+72                 \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_over_triangulator_a81f4d764fe0327ce4cd6692e777cc5f6}{triangles}}[(tcount *3) + 2][1] = pt2[1];
+73                 tcount++;
+74             \}
+75         \}
+76     \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1geom_1_1_over_triangulator_a6a17184e4004dd942f52d5b150369e86}\label{classorg_1_1newdawn_1_1slick_1_1geom_1_1_over_triangulator_a6a17184e4004dd942f52d5b150369e86}} 
+\index{org\+::newdawn\+::slick\+::geom\+::\+Over\+Triangulator@{org\+::newdawn\+::slick\+::geom\+::\+Over\+Triangulator}!add\+Poly\+Point@{add\+Poly\+Point}}
+\index{add\+Poly\+Point@{add\+Poly\+Point}!org\+::newdawn\+::slick\+::geom\+::\+Over\+Triangulator@{org\+::newdawn\+::slick\+::geom\+::\+Over\+Triangulator}}
+\subsubsection{\texorpdfstring{add\+Poly\+Point()}{addPolyPoint()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+geom.\+Over\+Triangulator.\+add\+Poly\+Point (\begin{DoxyParamCaption}\item[{float}]{x,  }\item[{float}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1geom_1_1_triangulator_a32b11eccb582c7f4993a944df0b1db65}{org.\+newdawn.\+slick.\+geom.\+Triangulator\+::add\+Poly\+Point(float, float)}} 
+\end{DoxySeeAlso}
+
+
+Implements \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1geom_1_1_triangulator_a32b11eccb582c7f4993a944df0b1db65}{org.\+newdawn.\+slick.\+geom.\+Triangulator}}.
+
+
+\begin{DoxyCode}
+81                                                \{
+82     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1geom_1_1_over_triangulator_a465acf51a252501448c8f29fa05c07ce}\label{classorg_1_1newdawn_1_1slick_1_1geom_1_1_over_triangulator_a465acf51a252501448c8f29fa05c07ce}} 
+\index{org\+::newdawn\+::slick\+::geom\+::\+Over\+Triangulator@{org\+::newdawn\+::slick\+::geom\+::\+Over\+Triangulator}!get\+Triangle\+Count@{get\+Triangle\+Count}}
+\index{get\+Triangle\+Count@{get\+Triangle\+Count}!org\+::newdawn\+::slick\+::geom\+::\+Over\+Triangulator@{org\+::newdawn\+::slick\+::geom\+::\+Over\+Triangulator}}
+\subsubsection{\texorpdfstring{get\+Triangle\+Count()}{getTriangleCount()}}
+{\footnotesize\ttfamily int org.\+newdawn.\+slick.\+geom.\+Over\+Triangulator.\+get\+Triangle\+Count (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1geom_1_1_triangulator_a7a5d68a694f2b80878c48563b5ea6f1f}{org.\+newdawn.\+slick.\+geom.\+Triangulator\+::get\+Triangle\+Count()}} 
+\end{DoxySeeAlso}
+
+
+Implements \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1geom_1_1_triangulator_a7a5d68a694f2b80878c48563b5ea6f1f}{org.\+newdawn.\+slick.\+geom.\+Triangulator}}.
+
+
+\begin{DoxyCode}
+87                                   \{
+88         \textcolor{keywordflow}{return} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_over_triangulator_a81f4d764fe0327ce4cd6692e777cc5f6}{triangles}}.length / 3;
+89     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1geom_1_1_over_triangulator_ab101143b175d129d50115b7135e2cdf4}\label{classorg_1_1newdawn_1_1slick_1_1geom_1_1_over_triangulator_ab101143b175d129d50115b7135e2cdf4}} 
+\index{org\+::newdawn\+::slick\+::geom\+::\+Over\+Triangulator@{org\+::newdawn\+::slick\+::geom\+::\+Over\+Triangulator}!get\+Triangle\+Point@{get\+Triangle\+Point}}
+\index{get\+Triangle\+Point@{get\+Triangle\+Point}!org\+::newdawn\+::slick\+::geom\+::\+Over\+Triangulator@{org\+::newdawn\+::slick\+::geom\+::\+Over\+Triangulator}}
+\subsubsection{\texorpdfstring{get\+Triangle\+Point()}{getTrianglePoint()}}
+{\footnotesize\ttfamily float \mbox{[}$\,$\mbox{]} org.\+newdawn.\+slick.\+geom.\+Over\+Triangulator.\+get\+Triangle\+Point (\begin{DoxyParamCaption}\item[{int}]{tri,  }\item[{int}]{i }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1geom_1_1_triangulator_a0142ec1a5f11292813f0f4e9a1407efb}{org.\+newdawn.\+slick.\+geom.\+Triangulator\+::get\+Triangle\+Point(int, int)}} 
+\end{DoxySeeAlso}
+
+
+Implements \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1geom_1_1_triangulator_a0142ec1a5f11292813f0f4e9a1407efb}{org.\+newdawn.\+slick.\+geom.\+Triangulator}}.
+
+
+\begin{DoxyCode}
+94                                                     \{
+95         \textcolor{keywordtype}{float}[] pt = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_over_triangulator_a81f4d764fe0327ce4cd6692e777cc5f6}{triangles}}[(tri * 3)+i];
+96     
+97         \textcolor{keywordflow}{return} \textcolor{keyword}{new} \textcolor{keywordtype}{float}[] \{pt[0],pt[1]\};
+98     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1geom_1_1_over_triangulator_afc94b0bfad20289f2d9988621b602aca}\label{classorg_1_1newdawn_1_1slick_1_1geom_1_1_over_triangulator_afc94b0bfad20289f2d9988621b602aca}} 
+\index{org\+::newdawn\+::slick\+::geom\+::\+Over\+Triangulator@{org\+::newdawn\+::slick\+::geom\+::\+Over\+Triangulator}!start\+Hole@{start\+Hole}}
+\index{start\+Hole@{start\+Hole}!org\+::newdawn\+::slick\+::geom\+::\+Over\+Triangulator@{org\+::newdawn\+::slick\+::geom\+::\+Over\+Triangulator}}
+\subsubsection{\texorpdfstring{start\+Hole()}{startHole()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+geom.\+Over\+Triangulator.\+start\+Hole (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1geom_1_1_triangulator_a0636d620daef98eab2ceb5bcf9dfaa9d}{org.\+newdawn.\+slick.\+geom.\+Triangulator\+::start\+Hole()}} 
+\end{DoxySeeAlso}
+
+
+Implements \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1geom_1_1_triangulator_a0636d620daef98eab2ceb5bcf9dfaa9d}{org.\+newdawn.\+slick.\+geom.\+Triangulator}}.
+
+
+\begin{DoxyCode}
+103                             \{
+104     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1geom_1_1_over_triangulator_aabce5b7a47ea28da8332d0d3c546269b}\label{classorg_1_1newdawn_1_1slick_1_1geom_1_1_over_triangulator_aabce5b7a47ea28da8332d0d3c546269b}} 
+\index{org\+::newdawn\+::slick\+::geom\+::\+Over\+Triangulator@{org\+::newdawn\+::slick\+::geom\+::\+Over\+Triangulator}!triangulate@{triangulate}}
+\index{triangulate@{triangulate}!org\+::newdawn\+::slick\+::geom\+::\+Over\+Triangulator@{org\+::newdawn\+::slick\+::geom\+::\+Over\+Triangulator}}
+\subsubsection{\texorpdfstring{triangulate()}{triangulate()}}
+{\footnotesize\ttfamily boolean org.\+newdawn.\+slick.\+geom.\+Over\+Triangulator.\+triangulate (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1geom_1_1_triangulator_a7c7ce8f59679b6c759a1e3d15ec4ee92}{org.\+newdawn.\+slick.\+geom.\+Triangulator\+::triangulate()}} 
+\end{DoxySeeAlso}
+
+
+Implements \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1geom_1_1_triangulator_a7c7ce8f59679b6c759a1e3d15ec4ee92}{org.\+newdawn.\+slick.\+geom.\+Triangulator}}.
+
+
+\begin{DoxyCode}
+109                                  \{
+110         \textcolor{keywordflow}{return} \textcolor{keyword}{true};
+111     \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1geom_1_1_over_triangulator_a81f4d764fe0327ce4cd6692e777cc5f6}\label{classorg_1_1newdawn_1_1slick_1_1geom_1_1_over_triangulator_a81f4d764fe0327ce4cd6692e777cc5f6}} 
+\index{org\+::newdawn\+::slick\+::geom\+::\+Over\+Triangulator@{org\+::newdawn\+::slick\+::geom\+::\+Over\+Triangulator}!triangles@{triangles}}
+\index{triangles@{triangles}!org\+::newdawn\+::slick\+::geom\+::\+Over\+Triangulator@{org\+::newdawn\+::slick\+::geom\+::\+Over\+Triangulator}}
+\subsubsection{\texorpdfstring{triangles}{triangles}}
+{\footnotesize\ttfamily float \mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} org.\+newdawn.\+slick.\+geom.\+Over\+Triangulator.\+triangles\hspace{0.3cm}{\ttfamily [private]}}
+
+The triangles data 

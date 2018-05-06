@@ -1,0 +1,128 @@
+\hypertarget{classorg_1_1newdawn_1_1slick_1_1imageout_1_1_image_writer_factory}{}\section{org.\+newdawn.\+slick.\+imageout.\+Image\+Writer\+Factory Class Reference}
+\label{classorg_1_1newdawn_1_1slick_1_1imageout_1_1_image_writer_factory}\index{org.\+newdawn.\+slick.\+imageout.\+Image\+Writer\+Factory@{org.\+newdawn.\+slick.\+imageout.\+Image\+Writer\+Factory}}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1imageout_1_1_image_writer_factory_aae1627abc6baf783f35228fe52ba1fd7}{register\+Writer}} (String format, \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1imageout_1_1_image_writer}{Image\+Writer}} writer)
+\item 
+static String \mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1imageout_1_1_image_writer_factory_a582dd022e333ee816d486158729f226a}{get\+Supported\+Formats}} ()
+\item 
+static \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1imageout_1_1_image_writer}{Image\+Writer}} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1imageout_1_1_image_writer_factory_aaf5d5c5091ad1514a9610313253757cb}{get\+Writer\+For\+Format}} (String format)  throws Slick\+Exception 	
+\end{DoxyCompactItemize}
+\subsection*{Static Package Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1imageout_1_1_image_writer_factory_acdaa3d6484a55dea0b637cd6a805941a}{\mbox{[}static initializer\mbox{]}}}
+\end{DoxyCompactItemize}
+\subsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static Hash\+Map \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1imageout_1_1_image_writer_factory_a93deff6a9953d95273a8a2a50520318d}{writers}} = new Hash\+Map()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A factory to produce image writers based on format names
+
+\begin{DoxyAuthor}{Author}
+kevin 
+\end{DoxyAuthor}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1imageout_1_1_image_writer_factory_acdaa3d6484a55dea0b637cd6a805941a}\label{classorg_1_1newdawn_1_1slick_1_1imageout_1_1_image_writer_factory_acdaa3d6484a55dea0b637cd6a805941a}} 
+\index{org\+::newdawn\+::slick\+::imageout\+::\+Image\+Writer\+Factory@{org\+::newdawn\+::slick\+::imageout\+::\+Image\+Writer\+Factory}!\mbox{[}static initializer\mbox{]}@{[static initializer]}}
+\index{\mbox{[}static initializer\mbox{]}@{[static initializer]}!org\+::newdawn\+::slick\+::imageout\+::\+Image\+Writer\+Factory@{org\+::newdawn\+::slick\+::imageout\+::\+Image\+Writer\+Factory}}
+\subsubsection{\texorpdfstring{[static initializer]()}{[static initializer]()}}
+{\footnotesize\ttfamily org.\+newdawn.\+slick.\+imageout.\+Image\+Writer\+Factory.\mbox{[}static initializer\mbox{]} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}, {\ttfamily [package]}}
+
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1imageout_1_1_image_writer_factory_a582dd022e333ee816d486158729f226a}\label{classorg_1_1newdawn_1_1slick_1_1imageout_1_1_image_writer_factory_a582dd022e333ee816d486158729f226a}} 
+\index{org\+::newdawn\+::slick\+::imageout\+::\+Image\+Writer\+Factory@{org\+::newdawn\+::slick\+::imageout\+::\+Image\+Writer\+Factory}!get\+Supported\+Formats@{get\+Supported\+Formats}}
+\index{get\+Supported\+Formats@{get\+Supported\+Formats}!org\+::newdawn\+::slick\+::imageout\+::\+Image\+Writer\+Factory@{org\+::newdawn\+::slick\+::imageout\+::\+Image\+Writer\+Factory}}
+\subsubsection{\texorpdfstring{get\+Supported\+Formats()}{getSupportedFormats()}}
+{\footnotesize\ttfamily static String \mbox{[}$\,$\mbox{]} org.\+newdawn.\+slick.\+imageout.\+Image\+Writer\+Factory.\+get\+Supported\+Formats (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Get the list of support format strings for this factory
+
+\begin{DoxyReturn}{Returns}
+The list of support format strings for this factory 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+46                                                  \{
+47         \textcolor{keywordflow}{return} (String[]) \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1imageout_1_1_image_writer_factory_a93deff6a9953d95273a8a2a50520318d}{writers}}.keySet().toArray(\textcolor{keyword}{new} String[0]);
+48     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1imageout_1_1_image_writer_factory_aaf5d5c5091ad1514a9610313253757cb}\label{classorg_1_1newdawn_1_1slick_1_1imageout_1_1_image_writer_factory_aaf5d5c5091ad1514a9610313253757cb}} 
+\index{org\+::newdawn\+::slick\+::imageout\+::\+Image\+Writer\+Factory@{org\+::newdawn\+::slick\+::imageout\+::\+Image\+Writer\+Factory}!get\+Writer\+For\+Format@{get\+Writer\+For\+Format}}
+\index{get\+Writer\+For\+Format@{get\+Writer\+For\+Format}!org\+::newdawn\+::slick\+::imageout\+::\+Image\+Writer\+Factory@{org\+::newdawn\+::slick\+::imageout\+::\+Image\+Writer\+Factory}}
+\subsubsection{\texorpdfstring{get\+Writer\+For\+Format()}{getWriterForFormat()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1imageout_1_1_image_writer}{Image\+Writer}} org.\+newdawn.\+slick.\+imageout.\+Image\+Writer\+Factory.\+get\+Writer\+For\+Format (\begin{DoxyParamCaption}\item[{String}]{format }\end{DoxyParamCaption}) throws \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_slick_exception}{Slick\+Exception}}\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Get a Slick image writer for the given format
+
+
+\begin{DoxyParams}{Parameters}
+{\em format} & The format of the image to write \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The image write to use to produce these images 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_slick_exception}{Slick\+Exception}}} & \\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyCode}
+58     \{
+59         ImageWriter writer = (ImageWriter) \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1imageout_1_1_image_writer_factory_a93deff6a9953d95273a8a2a50520318d}{writers}}.get(format);
+60         \textcolor{keywordflow}{if} (writer != null) \{
+61             \textcolor{keywordflow}{return} writer;
+62         \}
+63         
+64         writer = (ImageWriter) \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1imageout_1_1_image_writer_factory_a93deff6a9953d95273a8a2a50520318d}{writers}}.get(format.toLowerCase());
+65         \textcolor{keywordflow}{if} (writer != null) \{
+66             \textcolor{keywordflow}{return} writer;
+67         \}
+68         
+69         writer = (ImageWriter) \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1imageout_1_1_image_writer_factory_a93deff6a9953d95273a8a2a50520318d}{writers}}.get(format.toUpperCase());
+70         \textcolor{keywordflow}{if} (writer != null) \{
+71             \textcolor{keywordflow}{return} writer;
+72         \}
+73         
+74         \textcolor{keywordflow}{throw} \textcolor{keyword}{new} SlickException(\textcolor{stringliteral}{"No image writer available for: "}+format);
+75     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1imageout_1_1_image_writer_factory_aae1627abc6baf783f35228fe52ba1fd7}\label{classorg_1_1newdawn_1_1slick_1_1imageout_1_1_image_writer_factory_aae1627abc6baf783f35228fe52ba1fd7}} 
+\index{org\+::newdawn\+::slick\+::imageout\+::\+Image\+Writer\+Factory@{org\+::newdawn\+::slick\+::imageout\+::\+Image\+Writer\+Factory}!register\+Writer@{register\+Writer}}
+\index{register\+Writer@{register\+Writer}!org\+::newdawn\+::slick\+::imageout\+::\+Image\+Writer\+Factory@{org\+::newdawn\+::slick\+::imageout\+::\+Image\+Writer\+Factory}}
+\subsubsection{\texorpdfstring{register\+Writer()}{registerWriter()}}
+{\footnotesize\ttfamily static void org.\+newdawn.\+slick.\+imageout.\+Image\+Writer\+Factory.\+register\+Writer (\begin{DoxyParamCaption}\item[{String}]{format,  }\item[{\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1imageout_1_1_image_writer}{Image\+Writer}}}]{writer }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Register an image writer with the factory. This will allow users to use it to write out the explicit format
+
+
+\begin{DoxyParams}{Parameters}
+{\em format} & The format (usually extension) of the files that will be written out \\
+\hline
+{\em writer} & The writer to use for the given format \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+37                                                                          \{
+38         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1imageout_1_1_image_writer_factory_a93deff6a9953d95273a8a2a50520318d}{writers}}.put(format, writer);
+39     \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1imageout_1_1_image_writer_factory_a93deff6a9953d95273a8a2a50520318d}\label{classorg_1_1newdawn_1_1slick_1_1imageout_1_1_image_writer_factory_a93deff6a9953d95273a8a2a50520318d}} 
+\index{org\+::newdawn\+::slick\+::imageout\+::\+Image\+Writer\+Factory@{org\+::newdawn\+::slick\+::imageout\+::\+Image\+Writer\+Factory}!writers@{writers}}
+\index{writers@{writers}!org\+::newdawn\+::slick\+::imageout\+::\+Image\+Writer\+Factory@{org\+::newdawn\+::slick\+::imageout\+::\+Image\+Writer\+Factory}}
+\subsubsection{\texorpdfstring{writers}{writers}}
+{\footnotesize\ttfamily Hash\+Map org.\+newdawn.\+slick.\+imageout.\+Image\+Writer\+Factory.\+writers = new Hash\+Map()\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+The map from format names to image writer instances 

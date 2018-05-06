@@ -1,0 +1,328 @@
+\hypertarget{classorg_1_1newdawn_1_1slick_1_1util_1_1_font_utils}{}\section{org.\+newdawn.\+slick.\+util.\+Font\+Utils Class Reference}
+\label{classorg_1_1newdawn_1_1slick_1_1util_1_1_font_utils}\index{org.\+newdawn.\+slick.\+util.\+Font\+Utils@{org.\+newdawn.\+slick.\+util.\+Font\+Utils}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1_font_utils_1_1_alignment}{Alignment}}
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1_font_utils_a3d08db123e5255022cc604309e93cb52}{draw\+Left}} (\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1_font}{Font}} font, String s, int x, int y)
+\item 
+static void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1_font_utils_aa150b527895846f84f99c01abcac007d}{draw\+Center}} (\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1_font}{Font}} font, String s, int x, int y, int width)
+\item 
+static void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1_font_utils_af6cd816a074ebf194f0a50de137d895a}{draw\+Center}} (\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1_font}{Font}} font, String s, int x, int y, int width, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_color}{Color}} color)
+\item 
+static void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1_font_utils_a4d6971df637befd431907958aeb8d113}{draw\+Right}} (\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1_font}{Font}} font, String s, int x, int y, int width)
+\item 
+static void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1_font_utils_ab6e4d8b69eb2529e2b1894713505b290}{draw\+Right}} (\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1_font}{Font}} font, String s, int x, int y, int width, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_color}{Color}} color)
+\item 
+static final int \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1_font_utils_a6c4d8812a09f7beb161c9e62ddfbd736}{draw\+String}} (\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1_font}{Font}} font, final String s, final int alignment, final int x, final int y, final int width, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_color}{Color}} color)
+\end{DoxyCompactItemize}
+\subsection*{Static Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static int \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1_font_utils_a943341fc5527d304e4d6a14256637ad4}{calculate\+Width\+Of\+Justified\+Space\+In\+Pixels}} (final \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1_font}{Font}} font, final String s, final int left\+Width)
+\item 
+static int \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1_font_utils_a78f38939342f9f8bbc6a8bd3cf1c856d}{draw\+Justified\+Space\+Separated\+Substrings}} (\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1_font}{Font}} font, final String s, final int x, final int y, final int justified\+Space\+Width)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Simple utility class to support justified text
+
+\href{http://slick.javaunlimited.net/viewtopic.php?t=2640}{\tt http\+://slick.\+javaunlimited.\+net/viewtopic.\+php?t=2640}
+
+\begin{DoxyAuthor}{Author}
+zenzei 
+\end{DoxyAuthor}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1util_1_1_font_utils_a943341fc5527d304e4d6a14256637ad4}\label{classorg_1_1newdawn_1_1slick_1_1util_1_1_font_utils_a943341fc5527d304e4d6a14256637ad4}} 
+\index{org\+::newdawn\+::slick\+::util\+::\+Font\+Utils@{org\+::newdawn\+::slick\+::util\+::\+Font\+Utils}!calculate\+Width\+Of\+Justified\+Space\+In\+Pixels@{calculate\+Width\+Of\+Justified\+Space\+In\+Pixels}}
+\index{calculate\+Width\+Of\+Justified\+Space\+In\+Pixels@{calculate\+Width\+Of\+Justified\+Space\+In\+Pixels}!org\+::newdawn\+::slick\+::util\+::\+Font\+Utils@{org\+::newdawn\+::slick\+::util\+::\+Font\+Utils}}
+\subsubsection{\texorpdfstring{calculate\+Width\+Of\+Justified\+Space\+In\+Pixels()}{calculateWidthOfJustifiedSpaceInPixels()}}
+{\footnotesize\ttfamily static int org.\+newdawn.\+slick.\+util.\+Font\+Utils.\+calculate\+Width\+Of\+Justified\+Space\+In\+Pixels (\begin{DoxyParamCaption}\item[{final \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1_font}{Font}}}]{font,  }\item[{final String}]{s,  }\item[{final int}]{left\+Width }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}, {\ttfamily [private]}}
+
+Calculates and returns the width of a single justified space for the given \mbox{\hyperlink{}{String}}, in pixels.
+
+
+\begin{DoxyParams}{Parameters}
+{\em font} & The font to draw with \\
+\hline
+{\em s} & The given non-\/null \mbox{\hyperlink{}{String}} to use to calculate the width of a space for. \\
+\hline
+{\em left\+Width} & The integer specifying the left width buffer to use to calculate how much space a space should take up in justification. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The width of a single justified space for the given \mbox{\hyperlink{}{String}}, in pixels. 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+153                                                  \{
+154         \textcolor{keywordtype}{int} space = 0; \textcolor{comment}{// hold total space; hold space width in pixel}
+155         \textcolor{keywordtype}{int} curpos = 0; \textcolor{comment}{// current string position}
+156 
+157         \textcolor{comment}{// count total space}
+158         \textcolor{keywordflow}{while} (curpos < s.length()) \{
+159             \textcolor{keywordflow}{if} (s.charAt(curpos++) == \textcolor{charliteral}{' '}) \{
+160                 space++;
+161             \}
+162         \}
+163 
+164         \textcolor{keywordflow}{if} (space > 0) \{
+165             \textcolor{comment}{// width left plus with total space}
+166             \textcolor{comment}{// space width (in pixel) = width left / total space}
+167             space = (leftWidth + (font.getWidth(\textcolor{stringliteral}{" "}) * space)) / space;
+168         \}
+169         \textcolor{keywordflow}{return} space;
+170     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1util_1_1_font_utils_aa150b527895846f84f99c01abcac007d}\label{classorg_1_1newdawn_1_1slick_1_1util_1_1_font_utils_aa150b527895846f84f99c01abcac007d}} 
+\index{org\+::newdawn\+::slick\+::util\+::\+Font\+Utils@{org\+::newdawn\+::slick\+::util\+::\+Font\+Utils}!draw\+Center@{draw\+Center}}
+\index{draw\+Center@{draw\+Center}!org\+::newdawn\+::slick\+::util\+::\+Font\+Utils@{org\+::newdawn\+::slick\+::util\+::\+Font\+Utils}}
+\subsubsection{\texorpdfstring{draw\+Center()}{drawCenter()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily static void org.\+newdawn.\+slick.\+util.\+Font\+Utils.\+draw\+Center (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1_font}{Font}}}]{font,  }\item[{String}]{s,  }\item[{int}]{x,  }\item[{int}]{y,  }\item[{int}]{width }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Draw text center justified
+
+
+\begin{DoxyParams}{Parameters}
+{\em font} & The font to draw with \\
+\hline
+{\em s} & The string to draw \\
+\hline
+{\em x} & The x location to draw at \\
+\hline
+{\em y} & The y location to draw at \\
+\hline
+{\em width} & The width to fill with the text \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+51                                                                                 \{
+52         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1_font_utils_a6c4d8812a09f7beb161c9e62ddfbd736}{drawString}}(font, s, Alignment.CENTER, x, y, width, Color.white);
+53     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1util_1_1_font_utils_af6cd816a074ebf194f0a50de137d895a}\label{classorg_1_1newdawn_1_1slick_1_1util_1_1_font_utils_af6cd816a074ebf194f0a50de137d895a}} 
+\index{org\+::newdawn\+::slick\+::util\+::\+Font\+Utils@{org\+::newdawn\+::slick\+::util\+::\+Font\+Utils}!draw\+Center@{draw\+Center}}
+\index{draw\+Center@{draw\+Center}!org\+::newdawn\+::slick\+::util\+::\+Font\+Utils@{org\+::newdawn\+::slick\+::util\+::\+Font\+Utils}}
+\subsubsection{\texorpdfstring{draw\+Center()}{drawCenter()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily static void org.\+newdawn.\+slick.\+util.\+Font\+Utils.\+draw\+Center (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1_font}{Font}}}]{font,  }\item[{String}]{s,  }\item[{int}]{x,  }\item[{int}]{y,  }\item[{int}]{width,  }\item[{\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_color}{Color}}}]{color }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Draw text center justified
+
+
+\begin{DoxyParams}{Parameters}
+{\em font} & The font to draw with \\
+\hline
+{\em s} & The string to draw \\
+\hline
+{\em x} & The x location to draw at \\
+\hline
+{\em y} & The y location to draw at \\
+\hline
+{\em width} & The width to fill with the text \\
+\hline
+{\em color} & The color to draw in \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+66                          \{
+67         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1_font_utils_a6c4d8812a09f7beb161c9e62ddfbd736}{drawString}}(font, s, Alignment.CENTER, x, y, width, color);
+68     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1util_1_1_font_utils_a78f38939342f9f8bbc6a8bd3cf1c856d}\label{classorg_1_1newdawn_1_1slick_1_1util_1_1_font_utils_a78f38939342f9f8bbc6a8bd3cf1c856d}} 
+\index{org\+::newdawn\+::slick\+::util\+::\+Font\+Utils@{org\+::newdawn\+::slick\+::util\+::\+Font\+Utils}!draw\+Justified\+Space\+Separated\+Substrings@{draw\+Justified\+Space\+Separated\+Substrings}}
+\index{draw\+Justified\+Space\+Separated\+Substrings@{draw\+Justified\+Space\+Separated\+Substrings}!org\+::newdawn\+::slick\+::util\+::\+Font\+Utils@{org\+::newdawn\+::slick\+::util\+::\+Font\+Utils}}
+\subsubsection{\texorpdfstring{draw\+Justified\+Space\+Separated\+Substrings()}{drawJustifiedSpaceSeparatedSubstrings()}}
+{\footnotesize\ttfamily static int org.\+newdawn.\+slick.\+util.\+Font\+Utils.\+draw\+Justified\+Space\+Separated\+Substrings (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1_font}{Font}}}]{font,  }\item[{final String}]{s,  }\item[{final int}]{x,  }\item[{final int}]{y,  }\item[{final int}]{justified\+Space\+Width }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}, {\ttfamily [private]}}
+
+Draws justified-\/space separated substrings based on the given \mbox{\hyperlink{}{String}} and the given starting x and y coordinates to the given \mbox{\hyperlink{}{Graphics2D}} instance.
+
+
+\begin{DoxyParams}{Parameters}
+{\em font} & The font to draw with \\
+\hline
+{\em s} & The non-\/null \mbox{\hyperlink{}{String}} to draw as space-\/separated substrings. \\
+\hline
+{\em x} & The given starting x-\/coordinate position to use to draw the \mbox{\hyperlink{}{String}}. \\
+\hline
+{\em y} & The given starting y-\/coordinate position to use to draw the \mbox{\hyperlink{}{String}}. \\
+\hline
+{\em justified\+Space\+Width} & The integer specifying the width of a justified space \mbox{\hyperlink{}{String}}, in pixels. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The resulting x-\/coordinate of the current cursor after the drawing operation completes. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Null\+Pointer\+Exception} & Throws a \mbox{\hyperlink{}{Null\+Pointer\+Exception}} if any of the given arguments are null. \\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyCode}
+199                                            \{
+200         \textcolor{keywordtype}{int} curpos = 0;
+201         \textcolor{keywordtype}{int} endpos = 0;
+202         \textcolor{keywordtype}{int} resultingXCoordinate = x;
+203         \textcolor{keywordflow}{while} (curpos < s.length()) \{
+204             endpos = s.indexOf(\textcolor{charliteral}{' '}, curpos); \textcolor{comment}{// find space}
+205             \textcolor{keywordflow}{if} (endpos == -1) \{
+206                 endpos = s.length(); \textcolor{comment}{// no space, draw all string directly}
+207             \}
+208             String substring = s.substring(curpos, endpos);
+209 
+210             font.drawString(resultingXCoordinate, y, substring);
+211 
+212             resultingXCoordinate += font.getWidth(substring)
+213                     + justifiedSpaceWidth; \textcolor{comment}{// increase}
+214             \textcolor{comment}{// x-coordinate}
+215             curpos = endpos + 1;
+216         \}
+217 
+218         \textcolor{keywordflow}{return} resultingXCoordinate;
+219     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1util_1_1_font_utils_a3d08db123e5255022cc604309e93cb52}\label{classorg_1_1newdawn_1_1slick_1_1util_1_1_font_utils_a3d08db123e5255022cc604309e93cb52}} 
+\index{org\+::newdawn\+::slick\+::util\+::\+Font\+Utils@{org\+::newdawn\+::slick\+::util\+::\+Font\+Utils}!draw\+Left@{draw\+Left}}
+\index{draw\+Left@{draw\+Left}!org\+::newdawn\+::slick\+::util\+::\+Font\+Utils@{org\+::newdawn\+::slick\+::util\+::\+Font\+Utils}}
+\subsubsection{\texorpdfstring{draw\+Left()}{drawLeft()}}
+{\footnotesize\ttfamily static void org.\+newdawn.\+slick.\+util.\+Font\+Utils.\+draw\+Left (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1_font}{Font}}}]{font,  }\item[{String}]{s,  }\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Draw text left justified
+
+
+\begin{DoxyParams}{Parameters}
+{\em font} & The font to draw with \\
+\hline
+{\em s} & The string to draw \\
+\hline
+{\em x} & The x location to draw at \\
+\hline
+{\em y} & The y location to draw at \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+38                                                                    \{
+39         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1_font_utils_a6c4d8812a09f7beb161c9e62ddfbd736}{drawString}}(font, s, Alignment.LEFT, x, y, 0, Color.white);
+40     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1util_1_1_font_utils_a4d6971df637befd431907958aeb8d113}\label{classorg_1_1newdawn_1_1slick_1_1util_1_1_font_utils_a4d6971df637befd431907958aeb8d113}} 
+\index{org\+::newdawn\+::slick\+::util\+::\+Font\+Utils@{org\+::newdawn\+::slick\+::util\+::\+Font\+Utils}!draw\+Right@{draw\+Right}}
+\index{draw\+Right@{draw\+Right}!org\+::newdawn\+::slick\+::util\+::\+Font\+Utils@{org\+::newdawn\+::slick\+::util\+::\+Font\+Utils}}
+\subsubsection{\texorpdfstring{draw\+Right()}{drawRight()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily static void org.\+newdawn.\+slick.\+util.\+Font\+Utils.\+draw\+Right (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1_font}{Font}}}]{font,  }\item[{String}]{s,  }\item[{int}]{x,  }\item[{int}]{y,  }\item[{int}]{width }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Draw text right justified
+
+
+\begin{DoxyParams}{Parameters}
+{\em font} & The font to draw with \\
+\hline
+{\em s} & The string to draw \\
+\hline
+{\em x} & The x location to draw at \\
+\hline
+{\em y} & The y location to draw at \\
+\hline
+{\em width} & The width to fill with the text \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+79                                                                                \{
+80         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1_font_utils_a6c4d8812a09f7beb161c9e62ddfbd736}{drawString}}(font, s, Alignment.RIGHT, x, y, width, Color.white);
+81     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1util_1_1_font_utils_ab6e4d8b69eb2529e2b1894713505b290}\label{classorg_1_1newdawn_1_1slick_1_1util_1_1_font_utils_ab6e4d8b69eb2529e2b1894713505b290}} 
+\index{org\+::newdawn\+::slick\+::util\+::\+Font\+Utils@{org\+::newdawn\+::slick\+::util\+::\+Font\+Utils}!draw\+Right@{draw\+Right}}
+\index{draw\+Right@{draw\+Right}!org\+::newdawn\+::slick\+::util\+::\+Font\+Utils@{org\+::newdawn\+::slick\+::util\+::\+Font\+Utils}}
+\subsubsection{\texorpdfstring{draw\+Right()}{drawRight()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily static void org.\+newdawn.\+slick.\+util.\+Font\+Utils.\+draw\+Right (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1_font}{Font}}}]{font,  }\item[{String}]{s,  }\item[{int}]{x,  }\item[{int}]{y,  }\item[{int}]{width,  }\item[{\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_color}{Color}}}]{color }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Draw text right justified
+
+
+\begin{DoxyParams}{Parameters}
+{\em font} & The font to draw with \\
+\hline
+{\em s} & The string to draw \\
+\hline
+{\em x} & The x location to draw at \\
+\hline
+{\em y} & The y location to draw at \\
+\hline
+{\em width} & The width to fill with the text \\
+\hline
+{\em color} & The color to draw in \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+94                          \{
+95         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1_font_utils_a6c4d8812a09f7beb161c9e62ddfbd736}{drawString}}(font, s, Alignment.RIGHT, x, y, width, color);
+96     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1util_1_1_font_utils_a6c4d8812a09f7beb161c9e62ddfbd736}\label{classorg_1_1newdawn_1_1slick_1_1util_1_1_font_utils_a6c4d8812a09f7beb161c9e62ddfbd736}} 
+\index{org\+::newdawn\+::slick\+::util\+::\+Font\+Utils@{org\+::newdawn\+::slick\+::util\+::\+Font\+Utils}!draw\+String@{draw\+String}}
+\index{draw\+String@{draw\+String}!org\+::newdawn\+::slick\+::util\+::\+Font\+Utils@{org\+::newdawn\+::slick\+::util\+::\+Font\+Utils}}
+\subsubsection{\texorpdfstring{draw\+String()}{drawString()}}
+{\footnotesize\ttfamily static final int org.\+newdawn.\+slick.\+util.\+Font\+Utils.\+draw\+String (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1_font}{Font}}}]{font,  }\item[{final String}]{s,  }\item[{final int}]{alignment,  }\item[{final int}]{x,  }\item[{final int}]{y,  }\item[{final int}]{width,  }\item[{\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_color}{Color}}}]{color }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Draw a string
+
+
+\begin{DoxyParams}{Parameters}
+{\em font} & The font to draw with \\
+\hline
+{\em s} & The text to draw \\
+\hline
+{\em alignment} & The alignment to apply \\
+\hline
+{\em x} & The x location to draw at \\
+\hline
+{\em y} & The y location to draw at \\
+\hline
+{\em width} & The width to fill with the string \\
+\hline
+{\em color} & The color to draw in \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The final x coordinate of the text 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+112                          \{
+113         \textcolor{keywordtype}{int} resultingXCoordinate = 0;
+114         \textcolor{keywordflow}{if} (alignment == Alignment.LEFT) \{
+115             font.drawString(x, y, s, color);
+116         \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (alignment == Alignment.CENTER) \{
+117             font.drawString(x + (width / 2) - (font.getWidth(s) / 2), y, s,
+118                     color);
+119         \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (alignment == Alignment.RIGHT) \{
+120             font.drawString(x + width - font.getWidth(s), y, s, color);
+121         \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (alignment == Alignment.JUSTIFY) \{
+122             \textcolor{comment}{// calculate left width}
+123             \textcolor{keywordtype}{int} leftWidth = width - font.getWidth(s);
+124             \textcolor{keywordflow}{if} (leftWidth <= 0) \{
+125                 \textcolor{comment}{// no width left, use standard draw string}
+126                 font.drawString(x, y, s, color);
+127             \}
+128 
+129             \textcolor{keywordflow}{return} FontUtils.drawJustifiedSpaceSeparatedSubstrings(font, s, x,
+130                     y, FontUtils.calculateWidthOfJustifiedSpaceInPixels(font,
+131                             s, leftWidth));
+132         \}
+133 
+134         \textcolor{keywordflow}{return} resultingXCoordinate;
+135     \}
+\end{DoxyCode}

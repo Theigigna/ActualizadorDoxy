@@ -1,0 +1,79 @@
+\hypertarget{classcosasparaprobar_1_1_semaforo_acaparador}{}\section{cosasparaprobar.\+Semaforo\+Acaparador Class Reference}
+\label{classcosasparaprobar_1_1_semaforo_acaparador}\index{cosasparaprobar.\+Semaforo\+Acaparador@{cosasparaprobar.\+Semaforo\+Acaparador}}
+Inheritance diagram for cosasparaprobar.\+Semaforo\+Acaparador\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classcosasparaprobar_1_1_semaforo_acaparador}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classcosasparaprobar_1_1_semaforo_acaparador_a8ce5bf41c9493ee9cef15fe9111322ad}{Semaforo\+Acaparador}} (Semaphore \mbox{\hyperlink{classcosasparaprobar_1_1_semaforo_acaparador_a20c0bcd988d575bb629fe6aa1c2a1a72}{x}})
+\item 
+void \mbox{\hyperlink{classcosasparaprobar_1_1_semaforo_acaparador_aa13f77e80627c950231494ec075ac2fc}{run}} ()
+\end{DoxyCompactItemize}
+\subsection*{Package Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Semaphore \mbox{\hyperlink{classcosasparaprobar_1_1_semaforo_acaparador_a20c0bcd988d575bb629fe6aa1c2a1a72}{x}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyAuthor}{Author}
+Ignacio 
+\end{DoxyAuthor}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classcosasparaprobar_1_1_semaforo_acaparador_a8ce5bf41c9493ee9cef15fe9111322ad}\label{classcosasparaprobar_1_1_semaforo_acaparador_a8ce5bf41c9493ee9cef15fe9111322ad}} 
+\index{cosasparaprobar\+::\+Semaforo\+Acaparador@{cosasparaprobar\+::\+Semaforo\+Acaparador}!Semaforo\+Acaparador@{Semaforo\+Acaparador}}
+\index{Semaforo\+Acaparador@{Semaforo\+Acaparador}!cosasparaprobar\+::\+Semaforo\+Acaparador@{cosasparaprobar\+::\+Semaforo\+Acaparador}}
+\subsubsection{\texorpdfstring{Semaforo\+Acaparador()}{SemaforoAcaparador()}}
+{\footnotesize\ttfamily cosasparaprobar.\+Semaforo\+Acaparador.\+Semaforo\+Acaparador (\begin{DoxyParamCaption}\item[{Semaphore}]{x }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+21     \{
+22         this.\mbox{\hyperlink{classcosasparaprobar_1_1_semaforo_acaparador_a20c0bcd988d575bb629fe6aa1c2a1a72}{x}} = \mbox{\hyperlink{classcosasparaprobar_1_1_semaforo_acaparador_a20c0bcd988d575bb629fe6aa1c2a1a72}{x}};
+23     \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classcosasparaprobar_1_1_semaforo_acaparador_aa13f77e80627c950231494ec075ac2fc}\label{classcosasparaprobar_1_1_semaforo_acaparador_aa13f77e80627c950231494ec075ac2fc}} 
+\index{cosasparaprobar\+::\+Semaforo\+Acaparador@{cosasparaprobar\+::\+Semaforo\+Acaparador}!run@{run}}
+\index{run@{run}!cosasparaprobar\+::\+Semaforo\+Acaparador@{cosasparaprobar\+::\+Semaforo\+Acaparador}}
+\subsubsection{\texorpdfstring{run()}{run()}}
+{\footnotesize\ttfamily void cosasparaprobar.\+Semaforo\+Acaparador.\+run (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+25                       \{
+26         System.out.println(\textcolor{stringliteral}{"Hilo acaparador: Quiero pasar"});
+27         \textcolor{keywordflow}{try} \{
+28             \mbox{\hyperlink{classcosasparaprobar_1_1_semaforo_acaparador_a20c0bcd988d575bb629fe6aa1c2a1a72}{x}}.acquire();
+29         \} \textcolor{keywordflow}{catch} (InterruptedException ex) \{
+30             Logger.getLogger(\mbox{\hyperlink{classcosasparaprobar_1_1_semaforo_acaparador_a8ce5bf41c9493ee9cef15fe9111322ad}{SemaforoAcaparador}}.class.getName()).log(Level.SEVERE, null, 
+      ex);
+31         \}
+32         System.out.println(\textcolor{stringliteral}{"Hilo acaparador: He pasado."});
+33         \textcolor{keywordflow}{try} \{
+34             sleep(3000);
+35         \} \textcolor{keywordflow}{catch} (InterruptedException ex) \{
+36             
+37         \}
+38         System.out.println(\textcolor{stringliteral}{"Hilo acaparador: Me he despertado."});
+39         \mbox{\hyperlink{classcosasparaprobar_1_1_semaforo_acaparador_a20c0bcd988d575bb629fe6aa1c2a1a72}{x}}.release();
+40     \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classcosasparaprobar_1_1_semaforo_acaparador_a20c0bcd988d575bb629fe6aa1c2a1a72}\label{classcosasparaprobar_1_1_semaforo_acaparador_a20c0bcd988d575bb629fe6aa1c2a1a72}} 
+\index{cosasparaprobar\+::\+Semaforo\+Acaparador@{cosasparaprobar\+::\+Semaforo\+Acaparador}!x@{x}}
+\index{x@{x}!cosasparaprobar\+::\+Semaforo\+Acaparador@{cosasparaprobar\+::\+Semaforo\+Acaparador}}
+\subsubsection{\texorpdfstring{x}{x}}
+{\footnotesize\ttfamily Semaphore cosasparaprobar.\+Semaforo\+Acaparador.\+x\hspace{0.3cm}{\ttfamily [package]}}
+

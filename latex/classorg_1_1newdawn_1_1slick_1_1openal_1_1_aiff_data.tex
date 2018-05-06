@@ -1,0 +1,388 @@
+\hypertarget{classorg_1_1newdawn_1_1slick_1_1openal_1_1_aiff_data}{}\section{org.\+newdawn.\+slick.\+openal.\+Aiff\+Data Class Reference}
+\label{classorg_1_1newdawn_1_1slick_1_1openal_1_1_aiff_data}\index{org.\+newdawn.\+slick.\+openal.\+Aiff\+Data@{org.\+newdawn.\+slick.\+openal.\+Aiff\+Data}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_aiff_data_af575f6fa8e4c93a2a3c2820974e48371}{dispose}} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_aiff_data}{Aiff\+Data}} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_aiff_data_a0ebd8831d179c446e18751819f9045c5}{create}} (U\+RL path)
+\item 
+static \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_aiff_data}{Aiff\+Data}} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_aiff_data_a236d4055671a1426b2bdf9908f83f209}{create}} (String path)
+\item 
+static \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_aiff_data}{Aiff\+Data}} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_aiff_data_aae3dd3637672c9960ead394cc45d074c}{create}} (Input\+Stream is)
+\item 
+static \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_aiff_data}{Aiff\+Data}} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_aiff_data_a930e114892ff2c908c7e98fa549dfe76}{create}} (byte\mbox{[}$\,$\mbox{]} buffer)
+\item 
+static \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_aiff_data}{Aiff\+Data}} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_aiff_data_aad2615c92a623df3628a34ff787a659c}{create}} (Byte\+Buffer buffer)
+\item 
+static \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_aiff_data}{Aiff\+Data}} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_aiff_data_a84f2be2ea444abb6758bc7833b1a5c02}{create}} (\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1openal_1_1_audio_input_stream}{Audio\+Input\+Stream}} ais)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+final Byte\+Buffer \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_aiff_data_a02d81a81b398f83b4aed171704a37e36}{data}}
+\item 
+final int \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_aiff_data_a54e467ab61d7d0e34cb273fd0b4b0779}{format}}
+\item 
+final int \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_aiff_data_adef9190479e5b91bca445853c8d3de77}{samplerate}}
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_aiff_data_a55631a1053adb8e9a8a8ce4751b30685}{Aiff\+Data}} (Byte\+Buffer \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_aiff_data_a02d81a81b398f83b4aed171704a37e36}{data}}, int \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_aiff_data_a54e467ab61d7d0e34cb273fd0b4b0779}{format}}, int \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_aiff_data_adef9190479e5b91bca445853c8d3de77}{samplerate}})
+\end{DoxyCompactItemize}
+\subsection*{Static Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static Byte\+Buffer \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_aiff_data_a00be2b6b6b5817dfe4fb37eab2aac619}{convert\+Audio\+Bytes}} (Audio\+Format \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_aiff_data_a54e467ab61d7d0e34cb273fd0b4b0779}{format}}, byte\mbox{[}$\,$\mbox{]} audio\+\_\+bytes, boolean two\+\_\+bytes\+\_\+data)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Utitlity class for loading wavefiles.
+
+\begin{DoxyAuthor}{Author}
+Brian Matzon \href{mailto:brian@matzon.dk}{\tt brian@matzon.\+dk} 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+
+\end{DoxyVersion}
+\begin{DoxyParagraph}{Revision}
+2286 
+\end{DoxyParagraph}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1openal_1_1_aiff_data_a55631a1053adb8e9a8a8ce4751b30685}\label{classorg_1_1newdawn_1_1slick_1_1openal_1_1_aiff_data_a55631a1053adb8e9a8a8ce4751b30685}} 
+\index{org\+::newdawn\+::slick\+::openal\+::\+Aiff\+Data@{org\+::newdawn\+::slick\+::openal\+::\+Aiff\+Data}!Aiff\+Data@{Aiff\+Data}}
+\index{Aiff\+Data@{Aiff\+Data}!org\+::newdawn\+::slick\+::openal\+::\+Aiff\+Data@{org\+::newdawn\+::slick\+::openal\+::\+Aiff\+Data}}
+\subsubsection{\texorpdfstring{Aiff\+Data()}{AiffData()}}
+{\footnotesize\ttfamily org.\+newdawn.\+slick.\+openal.\+Aiff\+Data.\+Aiff\+Data (\begin{DoxyParamCaption}\item[{Byte\+Buffer}]{data,  }\item[{int}]{format,  }\item[{int}]{samplerate }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+Creates a new \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_aiff_data}{Aiff\+Data}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em data} & actual Aiffdata \\
+\hline
+{\em format} & format of Aiff data \\
+\hline
+{\em samplerate} & sample rate of data \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+74                                                                   \{
+75         this.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_aiff_data_a02d81a81b398f83b4aed171704a37e36}{data}} = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_aiff_data_a02d81a81b398f83b4aed171704a37e36}{data}};
+76         this.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_aiff_data_a54e467ab61d7d0e34cb273fd0b4b0779}{format}} = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_aiff_data_a54e467ab61d7d0e34cb273fd0b4b0779}{format}};
+77         this.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_aiff_data_adef9190479e5b91bca445853c8d3de77}{samplerate}} = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_aiff_data_adef9190479e5b91bca445853c8d3de77}{samplerate}};
+78     \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1openal_1_1_aiff_data_a00be2b6b6b5817dfe4fb37eab2aac619}\label{classorg_1_1newdawn_1_1slick_1_1openal_1_1_aiff_data_a00be2b6b6b5817dfe4fb37eab2aac619}} 
+\index{org\+::newdawn\+::slick\+::openal\+::\+Aiff\+Data@{org\+::newdawn\+::slick\+::openal\+::\+Aiff\+Data}!convert\+Audio\+Bytes@{convert\+Audio\+Bytes}}
+\index{convert\+Audio\+Bytes@{convert\+Audio\+Bytes}!org\+::newdawn\+::slick\+::openal\+::\+Aiff\+Data@{org\+::newdawn\+::slick\+::openal\+::\+Aiff\+Data}}
+\subsubsection{\texorpdfstring{convert\+Audio\+Bytes()}{convertAudioBytes()}}
+{\footnotesize\ttfamily static Byte\+Buffer org.\+newdawn.\+slick.\+openal.\+Aiff\+Data.\+convert\+Audio\+Bytes (\begin{DoxyParamCaption}\item[{Audio\+Format}]{format,  }\item[{byte \mbox{[}$\,$\mbox{]}}]{audio\+\_\+bytes,  }\item[{boolean}]{two\+\_\+bytes\+\_\+data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}, {\ttfamily [private]}}
+
+Convert the audio bytes into the stream
+
+
+\begin{DoxyParams}{Parameters}
+{\em format} & The audio format being decoded \\
+\hline
+{\em audio\+\_\+bytes} & The audio byts \\
+\hline
+{\em two\+\_\+bytes\+\_\+data} & True if we using double byte data \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The byte bufer of data 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+246                                                                                                            
+           \{
+247         ByteBuffer dest = ByteBuffer.allocateDirect(audio\_bytes.length);
+248         dest.order(ByteOrder.nativeOrder());
+249         ByteBuffer src = ByteBuffer.wrap(audio\_bytes);
+250         src.order(ByteOrder.BIG\_ENDIAN);
+251         \textcolor{keywordflow}{if} (two\_bytes\_data) \{
+252             ShortBuffer dest\_short = dest.asShortBuffer();
+253             ShortBuffer src\_short = src.asShortBuffer();
+254             \textcolor{keywordflow}{while} (src\_short.hasRemaining())
+255                 dest\_short.put(src\_short.get());
+256         \} \textcolor{keywordflow}{else} \{
+257             \textcolor{keywordflow}{while} (src.hasRemaining()) \{
+258                 byte b = src.get();
+259                 \textcolor{keywordflow}{if} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_aiff_data_a54e467ab61d7d0e34cb273fd0b4b0779}{format}}.getEncoding() == Encoding.PCM\_SIGNED) \{
+260                     b = (byte) (b + 127);
+261                 \}
+262                 dest.put(b);
+263             \}
+264         \}
+265         dest.rewind();
+266         \textcolor{keywordflow}{return} dest;
+267     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1openal_1_1_aiff_data_a0ebd8831d179c446e18751819f9045c5}\label{classorg_1_1newdawn_1_1slick_1_1openal_1_1_aiff_data_a0ebd8831d179c446e18751819f9045c5}} 
+\index{org\+::newdawn\+::slick\+::openal\+::\+Aiff\+Data@{org\+::newdawn\+::slick\+::openal\+::\+Aiff\+Data}!create@{create}}
+\index{create@{create}!org\+::newdawn\+::slick\+::openal\+::\+Aiff\+Data@{org\+::newdawn\+::slick\+::openal\+::\+Aiff\+Data}}
+\subsubsection{\texorpdfstring{create()}{create()}\hspace{0.1cm}{\footnotesize\ttfamily [1/6]}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_aiff_data}{Aiff\+Data}} org.\+newdawn.\+slick.\+openal.\+Aiff\+Data.\+create (\begin{DoxyParamCaption}\item[{U\+RL}]{path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Creates a \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_aiff_data}{Aiff\+Data}} container from the specified url
+
+
+\begin{DoxyParams}{Parameters}
+{\em path} & U\+RL to file \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_aiff_data}{Aiff\+Data}} containing data, or null if a failure occured 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+93                                             \{
+94         \textcolor{keywordflow}{try} \{
+95             \textcolor{keywordflow}{return} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_aiff_data_a0ebd8831d179c446e18751819f9045c5}{create}}(
+96                 AudioSystem.getAudioInputStream(
+97                     \textcolor{keyword}{new} BufferedInputStream(path.openStream())));
+98         \} \textcolor{keywordflow}{catch} (Exception e) \{
+99             \mbox{\hyperlink{namespaceorg}{org}}.lwjgl.LWJGLUtil.log(\textcolor{stringliteral}{"Unable to create from: "} + path);
+100             e.printStackTrace();
+101             \textcolor{keywordflow}{return} null;
+102         \}       
+103     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1openal_1_1_aiff_data_a236d4055671a1426b2bdf9908f83f209}\label{classorg_1_1newdawn_1_1slick_1_1openal_1_1_aiff_data_a236d4055671a1426b2bdf9908f83f209}} 
+\index{org\+::newdawn\+::slick\+::openal\+::\+Aiff\+Data@{org\+::newdawn\+::slick\+::openal\+::\+Aiff\+Data}!create@{create}}
+\index{create@{create}!org\+::newdawn\+::slick\+::openal\+::\+Aiff\+Data@{org\+::newdawn\+::slick\+::openal\+::\+Aiff\+Data}}
+\subsubsection{\texorpdfstring{create()}{create()}\hspace{0.1cm}{\footnotesize\ttfamily [2/6]}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_aiff_data}{Aiff\+Data}} org.\+newdawn.\+slick.\+openal.\+Aiff\+Data.\+create (\begin{DoxyParamCaption}\item[{String}]{path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Creates a \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_aiff_data}{Aiff\+Data}} container from the specified in the classpath
+
+
+\begin{DoxyParams}{Parameters}
+{\em path} & path to file (relative, and in classpath) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_aiff_data}{Aiff\+Data}} containing data, or null if a failure occured 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+111                                                \{
+112         \textcolor{keywordflow}{return} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_aiff_data_a0ebd8831d179c446e18751819f9045c5}{create}}(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_aiff_data_a55631a1053adb8e9a8a8ce4751b30685}{AiffData}}.class.getClassLoader().getResource(path));
+113     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1openal_1_1_aiff_data_aae3dd3637672c9960ead394cc45d074c}\label{classorg_1_1newdawn_1_1slick_1_1openal_1_1_aiff_data_aae3dd3637672c9960ead394cc45d074c}} 
+\index{org\+::newdawn\+::slick\+::openal\+::\+Aiff\+Data@{org\+::newdawn\+::slick\+::openal\+::\+Aiff\+Data}!create@{create}}
+\index{create@{create}!org\+::newdawn\+::slick\+::openal\+::\+Aiff\+Data@{org\+::newdawn\+::slick\+::openal\+::\+Aiff\+Data}}
+\subsubsection{\texorpdfstring{create()}{create()}\hspace{0.1cm}{\footnotesize\ttfamily [3/6]}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_aiff_data}{Aiff\+Data}} org.\+newdawn.\+slick.\+openal.\+Aiff\+Data.\+create (\begin{DoxyParamCaption}\item[{Input\+Stream}]{is }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Creates a \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_aiff_data}{Aiff\+Data}} container from the specified inputstream
+
+
+\begin{DoxyParams}{Parameters}
+{\em is} & Input\+Stream to read from \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_aiff_data}{Aiff\+Data}} containing data, or null if a failure occured 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+121                                                   \{
+122         \textcolor{keywordflow}{try} \{
+123             \textcolor{keywordflow}{return} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_aiff_data_a0ebd8831d179c446e18751819f9045c5}{create}}(
+124                 AudioSystem.getAudioInputStream(is));
+125         \} \textcolor{keywordflow}{catch} (Exception e) \{
+126             \mbox{\hyperlink{namespaceorg}{org}}.lwjgl.LWJGLUtil.log(\textcolor{stringliteral}{"Unable to create from inputstream"});
+127             e.printStackTrace();
+128             \textcolor{keywordflow}{return} null;
+129         \}       
+130     \}   
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1openal_1_1_aiff_data_a930e114892ff2c908c7e98fa549dfe76}\label{classorg_1_1newdawn_1_1slick_1_1openal_1_1_aiff_data_a930e114892ff2c908c7e98fa549dfe76}} 
+\index{org\+::newdawn\+::slick\+::openal\+::\+Aiff\+Data@{org\+::newdawn\+::slick\+::openal\+::\+Aiff\+Data}!create@{create}}
+\index{create@{create}!org\+::newdawn\+::slick\+::openal\+::\+Aiff\+Data@{org\+::newdawn\+::slick\+::openal\+::\+Aiff\+Data}}
+\subsubsection{\texorpdfstring{create()}{create()}\hspace{0.1cm}{\footnotesize\ttfamily [4/6]}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_aiff_data}{Aiff\+Data}} org.\+newdawn.\+slick.\+openal.\+Aiff\+Data.\+create (\begin{DoxyParamCaption}\item[{byte \mbox{[}$\,$\mbox{]}}]{buffer }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Creates a \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_aiff_data}{Aiff\+Data}} container from the specified bytes
+
+
+\begin{DoxyParams}{Parameters}
+{\em buffer} & array of bytes containing the complete Aiff file \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_aiff_data}{Aiff\+Data}} containing data, or null if a failure occured 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+138                                                  \{
+139         \textcolor{keywordflow}{try} \{
+140             \textcolor{keywordflow}{return} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_aiff_data_a0ebd8831d179c446e18751819f9045c5}{create}}(
+141                 AudioSystem.getAudioInputStream(
+142                     \textcolor{keyword}{new} BufferedInputStream(\textcolor{keyword}{new} ByteArrayInputStream(buffer))));
+143         \} \textcolor{keywordflow}{catch} (Exception e) \{
+144             e.printStackTrace();
+145             \textcolor{keywordflow}{return} null;
+146         \}
+147     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1openal_1_1_aiff_data_aad2615c92a623df3628a34ff787a659c}\label{classorg_1_1newdawn_1_1slick_1_1openal_1_1_aiff_data_aad2615c92a623df3628a34ff787a659c}} 
+\index{org\+::newdawn\+::slick\+::openal\+::\+Aiff\+Data@{org\+::newdawn\+::slick\+::openal\+::\+Aiff\+Data}!create@{create}}
+\index{create@{create}!org\+::newdawn\+::slick\+::openal\+::\+Aiff\+Data@{org\+::newdawn\+::slick\+::openal\+::\+Aiff\+Data}}
+\subsubsection{\texorpdfstring{create()}{create()}\hspace{0.1cm}{\footnotesize\ttfamily [5/6]}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_aiff_data}{Aiff\+Data}} org.\+newdawn.\+slick.\+openal.\+Aiff\+Data.\+create (\begin{DoxyParamCaption}\item[{Byte\+Buffer}]{buffer }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Creates a \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_aiff_data}{Aiff\+Data}} container from the specified Byet\+Buffer. If the buffer is backed by an array, it will be used directly, else the contents of the buffer will be copied using get(byte\mbox{[}$\,$\mbox{]}).
+
+
+\begin{DoxyParams}{Parameters}
+{\em buffer} & Byte\+Buffer containing sound file \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_aiff_data}{Aiff\+Data}} containing data, or null if a failure occured 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+157                                                      \{
+158         \textcolor{keywordflow}{try} \{
+159             byte[] bytes = null;
+160             
+161             \textcolor{keywordflow}{if}(buffer.hasArray()) \{
+162                 bytes = buffer.array();
+163             \} \textcolor{keywordflow}{else} \{
+164                 bytes = \textcolor{keyword}{new} byte[buffer.capacity()];
+165                 buffer.get(bytes);
+166             \}
+167             \textcolor{keywordflow}{return} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_aiff_data_a0ebd8831d179c446e18751819f9045c5}{create}}(bytes);
+168         \} \textcolor{keywordflow}{catch} (Exception e) \{
+169             e.printStackTrace();
+170             \textcolor{keywordflow}{return} null;
+171         \}
+172     \}   
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1openal_1_1_aiff_data_a84f2be2ea444abb6758bc7833b1a5c02}\label{classorg_1_1newdawn_1_1slick_1_1openal_1_1_aiff_data_a84f2be2ea444abb6758bc7833b1a5c02}} 
+\index{org\+::newdawn\+::slick\+::openal\+::\+Aiff\+Data@{org\+::newdawn\+::slick\+::openal\+::\+Aiff\+Data}!create@{create}}
+\index{create@{create}!org\+::newdawn\+::slick\+::openal\+::\+Aiff\+Data@{org\+::newdawn\+::slick\+::openal\+::\+Aiff\+Data}}
+\subsubsection{\texorpdfstring{create()}{create()}\hspace{0.1cm}{\footnotesize\ttfamily [6/6]}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_aiff_data}{Aiff\+Data}} org.\+newdawn.\+slick.\+openal.\+Aiff\+Data.\+create (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1openal_1_1_audio_input_stream}{Audio\+Input\+Stream}}}]{ais }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Creates a \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_aiff_data}{Aiff\+Data}} container from the specified stream
+
+
+\begin{DoxyParams}{Parameters}
+{\em ais} & \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1openal_1_1_audio_input_stream}{Audio\+Input\+Stream}} to read from \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_aiff_data}{Aiff\+Data}} containing data, or null if a failure occured 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+180                                                         \{
+181         \textcolor{comment}{//get format of data}
+182         AudioFormat audioformat = ais.getFormat();
+183         
+184         \textcolor{comment}{// get channels}
+185         \textcolor{keywordtype}{int} channels = 0;
+186         \textcolor{keywordflow}{if} (audioformat.getChannels() == 1) \{
+187             \textcolor{keywordflow}{if} (audioformat.getSampleSizeInBits() == 8) \{
+188                 channels = AL10.AL\_FORMAT\_MONO8;
+189             \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (audioformat.getSampleSizeInBits() == 16) \{
+190                 channels = AL10.AL\_FORMAT\_MONO16;
+191             \} \textcolor{keywordflow}{else} \{
+192                 \textcolor{keywordflow}{throw} \textcolor{keyword}{new} RuntimeException(\textcolor{stringliteral}{"Illegal sample size"});
+193             \}
+194         \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (audioformat.getChannels() == 2) \{
+195             \textcolor{keywordflow}{if} (audioformat.getSampleSizeInBits() == 8) \{
+196                 channels = AL10.AL\_FORMAT\_STEREO8;
+197             \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (audioformat.getSampleSizeInBits() == 16) \{
+198                 channels = AL10.AL\_FORMAT\_STEREO16;
+199             \} \textcolor{keywordflow}{else} \{
+200                 \textcolor{keywordflow}{throw} \textcolor{keyword}{new} RuntimeException(\textcolor{stringliteral}{"Illegal sample size"});
+201             \}
+202         \} \textcolor{keywordflow}{else} \{
+203             \textcolor{keywordflow}{throw} \textcolor{keyword}{new} RuntimeException(\textcolor{stringliteral}{"Only mono or stereo is supported"});
+204         \}
+205 
+206         \textcolor{comment}{//read data into buffer}
+207         byte[] buf =
+208             \textcolor{keyword}{new} byte[audioformat.getChannels()
+209                 * (int) ais.getFrameLength()
+210                 * audioformat.getSampleSizeInBits()
+211                 / 8];
+212         \textcolor{keywordtype}{int} read = 0, total = 0;
+213         \textcolor{keywordflow}{try} \{
+214             \textcolor{keywordflow}{while} ((read = ais.read(buf, total, buf.length - total)) != -1
+215                 && total < buf.length) \{
+216                 total += read;
+217             \}
+218         \} \textcolor{keywordflow}{catch} (IOException ioe) \{
+219             \textcolor{keywordflow}{return} null;
+220         \}
+221 
+222         \textcolor{comment}{//insert data into bytebuffer}
+223         ByteBuffer buffer = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_aiff_data_a00be2b6b6b5817dfe4fb37eab2aac619}{convertAudioBytes}}(audioformat, buf, audioformat.
+      getSampleSizeInBits() == 16);
+224 
+225         \textcolor{comment}{//create our result}
+226         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_aiff_data_a55631a1053adb8e9a8a8ce4751b30685}{AiffData}} Aiffdata =
+227             \textcolor{keyword}{new} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_aiff_data_a55631a1053adb8e9a8a8ce4751b30685}{AiffData}}(buffer, channels, (\textcolor{keywordtype}{int}) audioformat.getSampleRate());
+228 
+229         \textcolor{comment}{//close stream}
+230         \textcolor{keywordflow}{try} \{
+231             ais.close();
+232         \} \textcolor{keywordflow}{catch} (IOException ioe) \{
+233         \}
+234 
+235         \textcolor{keywordflow}{return} Aiffdata;
+236     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1openal_1_1_aiff_data_af575f6fa8e4c93a2a3c2820974e48371}\label{classorg_1_1newdawn_1_1slick_1_1openal_1_1_aiff_data_af575f6fa8e4c93a2a3c2820974e48371}} 
+\index{org\+::newdawn\+::slick\+::openal\+::\+Aiff\+Data@{org\+::newdawn\+::slick\+::openal\+::\+Aiff\+Data}!dispose@{dispose}}
+\index{dispose@{dispose}!org\+::newdawn\+::slick\+::openal\+::\+Aiff\+Data@{org\+::newdawn\+::slick\+::openal\+::\+Aiff\+Data}}
+\subsubsection{\texorpdfstring{dispose()}{dispose()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+openal.\+Aiff\+Data.\+dispose (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Disposes the Aiffdata 
+\begin{DoxyCode}
+83                           \{
+84         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_aiff_data_a02d81a81b398f83b4aed171704a37e36}{data}}.clear();
+85     \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1openal_1_1_aiff_data_a02d81a81b398f83b4aed171704a37e36}\label{classorg_1_1newdawn_1_1slick_1_1openal_1_1_aiff_data_a02d81a81b398f83b4aed171704a37e36}} 
+\index{org\+::newdawn\+::slick\+::openal\+::\+Aiff\+Data@{org\+::newdawn\+::slick\+::openal\+::\+Aiff\+Data}!data@{data}}
+\index{data@{data}!org\+::newdawn\+::slick\+::openal\+::\+Aiff\+Data@{org\+::newdawn\+::slick\+::openal\+::\+Aiff\+Data}}
+\subsubsection{\texorpdfstring{data}{data}}
+{\footnotesize\ttfamily final Byte\+Buffer org.\+newdawn.\+slick.\+openal.\+Aiff\+Data.\+data}
+
+actual A\+I\+FF data \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1openal_1_1_aiff_data_a54e467ab61d7d0e34cb273fd0b4b0779}\label{classorg_1_1newdawn_1_1slick_1_1openal_1_1_aiff_data_a54e467ab61d7d0e34cb273fd0b4b0779}} 
+\index{org\+::newdawn\+::slick\+::openal\+::\+Aiff\+Data@{org\+::newdawn\+::slick\+::openal\+::\+Aiff\+Data}!format@{format}}
+\index{format@{format}!org\+::newdawn\+::slick\+::openal\+::\+Aiff\+Data@{org\+::newdawn\+::slick\+::openal\+::\+Aiff\+Data}}
+\subsubsection{\texorpdfstring{format}{format}}
+{\footnotesize\ttfamily final int org.\+newdawn.\+slick.\+openal.\+Aiff\+Data.\+format}
+
+format type of data \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1openal_1_1_aiff_data_adef9190479e5b91bca445853c8d3de77}\label{classorg_1_1newdawn_1_1slick_1_1openal_1_1_aiff_data_adef9190479e5b91bca445853c8d3de77}} 
+\index{org\+::newdawn\+::slick\+::openal\+::\+Aiff\+Data@{org\+::newdawn\+::slick\+::openal\+::\+Aiff\+Data}!samplerate@{samplerate}}
+\index{samplerate@{samplerate}!org\+::newdawn\+::slick\+::openal\+::\+Aiff\+Data@{org\+::newdawn\+::slick\+::openal\+::\+Aiff\+Data}}
+\subsubsection{\texorpdfstring{samplerate}{samplerate}}
+{\footnotesize\ttfamily final int org.\+newdawn.\+slick.\+openal.\+Aiff\+Data.\+samplerate}
+
+sample rate of data 

@@ -1,0 +1,163 @@
+\hypertarget{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1navmesh_1_1_link}{}\section{org.\+newdawn.\+slick.\+util.\+pathfinding.\+navmesh.\+Link Class Reference}
+\label{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1navmesh_1_1_link}\index{org.\+newdawn.\+slick.\+util.\+pathfinding.\+navmesh.\+Link@{org.\+newdawn.\+slick.\+util.\+pathfinding.\+navmesh.\+Link}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1navmesh_1_1_link_a227fb2c96e55e5637e38d354044b149d}{Link}} (float \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1navmesh_1_1_link_a83c2e5065b4ed17f607670d6d295bdb0}{px}}, float \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1navmesh_1_1_link_afeb36f879009f5cda66275dd065dfdf2}{py}}, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1navmesh_1_1_space}{Space}} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1navmesh_1_1_link_a8820429c2405bded1a2414a245745adf}{target}})
+\item 
+float \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1navmesh_1_1_link_abae9f3276743edc641346bfa17deb542}{distance2}} (float tx, float ty)
+\item 
+float \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1navmesh_1_1_link_acb0934e4dbdde87a43885d3d09cd483f}{getX}} ()
+\item 
+float \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1navmesh_1_1_link_a6e107389c6c50466b18c78f0e7e0ae5c}{getY}} ()
+\item 
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1navmesh_1_1_space}{Space}} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1navmesh_1_1_link_aeb76f2571abc64ff370e14ea6c16dd62}{get\+Target}} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+float \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1navmesh_1_1_link_a83c2e5065b4ed17f607670d6d295bdb0}{px}}
+\item 
+float \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1navmesh_1_1_link_afeb36f879009f5cda66275dd065dfdf2}{py}}
+\item 
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1navmesh_1_1_space}{Space}} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1navmesh_1_1_link_a8820429c2405bded1a2414a245745adf}{target}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A link between this space and another
+
+\begin{DoxyAuthor}{Author}
+kevin 
+\end{DoxyAuthor}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1navmesh_1_1_link_a227fb2c96e55e5637e38d354044b149d}\label{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1navmesh_1_1_link_a227fb2c96e55e5637e38d354044b149d}} 
+\index{org\+::newdawn\+::slick\+::util\+::pathfinding\+::navmesh\+::\+Link@{org\+::newdawn\+::slick\+::util\+::pathfinding\+::navmesh\+::\+Link}!Link@{Link}}
+\index{Link@{Link}!org\+::newdawn\+::slick\+::util\+::pathfinding\+::navmesh\+::\+Link@{org\+::newdawn\+::slick\+::util\+::pathfinding\+::navmesh\+::\+Link}}
+\subsubsection{\texorpdfstring{Link()}{Link()}}
+{\footnotesize\ttfamily org.\+newdawn.\+slick.\+util.\+pathfinding.\+navmesh.\+Link.\+Link (\begin{DoxyParamCaption}\item[{float}]{px,  }\item[{float}]{py,  }\item[{\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1navmesh_1_1_space}{Space}}}]{target }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Create a new link
+
+
+\begin{DoxyParams}{Parameters}
+{\em px} & The x coordinate of the linking point \\
+\hline
+{\em py} & The y coordinate of the linking point \\
+\hline
+{\em target} & The target space we\textquotesingle{}re linking to \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+23                                                   \{
+24         this.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1navmesh_1_1_link_a83c2e5065b4ed17f607670d6d295bdb0}{px}} = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1navmesh_1_1_link_a83c2e5065b4ed17f607670d6d295bdb0}{px}};
+25         this.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1navmesh_1_1_link_afeb36f879009f5cda66275dd065dfdf2}{py}} = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1navmesh_1_1_link_afeb36f879009f5cda66275dd065dfdf2}{py}};
+26         this.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1navmesh_1_1_link_a8820429c2405bded1a2414a245745adf}{target}} = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1navmesh_1_1_link_a8820429c2405bded1a2414a245745adf}{target}};
+27     \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1navmesh_1_1_link_abae9f3276743edc641346bfa17deb542}\label{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1navmesh_1_1_link_abae9f3276743edc641346bfa17deb542}} 
+\index{org\+::newdawn\+::slick\+::util\+::pathfinding\+::navmesh\+::\+Link@{org\+::newdawn\+::slick\+::util\+::pathfinding\+::navmesh\+::\+Link}!distance2@{distance2}}
+\index{distance2@{distance2}!org\+::newdawn\+::slick\+::util\+::pathfinding\+::navmesh\+::\+Link@{org\+::newdawn\+::slick\+::util\+::pathfinding\+::navmesh\+::\+Link}}
+\subsubsection{\texorpdfstring{distance2()}{distance2()}}
+{\footnotesize\ttfamily float org.\+newdawn.\+slick.\+util.\+pathfinding.\+navmesh.\+Link.\+distance2 (\begin{DoxyParamCaption}\item[{float}]{tx,  }\item[{float}]{ty }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get the distance squared from this link to the given position
+
+
+\begin{DoxyParams}{Parameters}
+{\em tx} & The x coordinate of the target location \\
+\hline
+{\em ty} & The y coordinate of the target location \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The distance squared from this link to the target 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+36                                                \{
+37         \textcolor{keywordtype}{float} dx = tx - \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1navmesh_1_1_link_a83c2e5065b4ed17f607670d6d295bdb0}{px}};
+38         \textcolor{keywordtype}{float} dy = ty - \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1navmesh_1_1_link_afeb36f879009f5cda66275dd065dfdf2}{py}};
+39         
+40         \textcolor{keywordflow}{return} ((dx*dx) + (dy*dy));
+41     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1navmesh_1_1_link_aeb76f2571abc64ff370e14ea6c16dd62}\label{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1navmesh_1_1_link_aeb76f2571abc64ff370e14ea6c16dd62}} 
+\index{org\+::newdawn\+::slick\+::util\+::pathfinding\+::navmesh\+::\+Link@{org\+::newdawn\+::slick\+::util\+::pathfinding\+::navmesh\+::\+Link}!get\+Target@{get\+Target}}
+\index{get\+Target@{get\+Target}!org\+::newdawn\+::slick\+::util\+::pathfinding\+::navmesh\+::\+Link@{org\+::newdawn\+::slick\+::util\+::pathfinding\+::navmesh\+::\+Link}}
+\subsubsection{\texorpdfstring{get\+Target()}{getTarget()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1navmesh_1_1_space}{Space}} org.\+newdawn.\+slick.\+util.\+pathfinding.\+navmesh.\+Link.\+get\+Target (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get the space this object links to
+
+\begin{DoxyReturn}{Returns}
+The space this object links to 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+66                              \{
+67         \textcolor{keywordflow}{return} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1navmesh_1_1_link_a8820429c2405bded1a2414a245745adf}{target}};
+68     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1navmesh_1_1_link_acb0934e4dbdde87a43885d3d09cd483f}\label{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1navmesh_1_1_link_acb0934e4dbdde87a43885d3d09cd483f}} 
+\index{org\+::newdawn\+::slick\+::util\+::pathfinding\+::navmesh\+::\+Link@{org\+::newdawn\+::slick\+::util\+::pathfinding\+::navmesh\+::\+Link}!getX@{getX}}
+\index{getX@{getX}!org\+::newdawn\+::slick\+::util\+::pathfinding\+::navmesh\+::\+Link@{org\+::newdawn\+::slick\+::util\+::pathfinding\+::navmesh\+::\+Link}}
+\subsubsection{\texorpdfstring{get\+X()}{getX()}}
+{\footnotesize\ttfamily float org.\+newdawn.\+slick.\+util.\+pathfinding.\+navmesh.\+Link.\+getX (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get the x coordinate of the link
+
+\begin{DoxyReturn}{Returns}
+The x coordinate of the link 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+48                         \{
+49         \textcolor{keywordflow}{return} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1navmesh_1_1_link_a83c2e5065b4ed17f607670d6d295bdb0}{px}};
+50     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1navmesh_1_1_link_a6e107389c6c50466b18c78f0e7e0ae5c}\label{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1navmesh_1_1_link_a6e107389c6c50466b18c78f0e7e0ae5c}} 
+\index{org\+::newdawn\+::slick\+::util\+::pathfinding\+::navmesh\+::\+Link@{org\+::newdawn\+::slick\+::util\+::pathfinding\+::navmesh\+::\+Link}!getY@{getY}}
+\index{getY@{getY}!org\+::newdawn\+::slick\+::util\+::pathfinding\+::navmesh\+::\+Link@{org\+::newdawn\+::slick\+::util\+::pathfinding\+::navmesh\+::\+Link}}
+\subsubsection{\texorpdfstring{get\+Y()}{getY()}}
+{\footnotesize\ttfamily float org.\+newdawn.\+slick.\+util.\+pathfinding.\+navmesh.\+Link.\+getY (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get the y coordinate of the link
+
+\begin{DoxyReturn}{Returns}
+The y coordinate of the link 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+57                         \{
+58         \textcolor{keywordflow}{return} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1navmesh_1_1_link_afeb36f879009f5cda66275dd065dfdf2}{py}};
+59     \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1navmesh_1_1_link_a83c2e5065b4ed17f607670d6d295bdb0}\label{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1navmesh_1_1_link_a83c2e5065b4ed17f607670d6d295bdb0}} 
+\index{org\+::newdawn\+::slick\+::util\+::pathfinding\+::navmesh\+::\+Link@{org\+::newdawn\+::slick\+::util\+::pathfinding\+::navmesh\+::\+Link}!px@{px}}
+\index{px@{px}!org\+::newdawn\+::slick\+::util\+::pathfinding\+::navmesh\+::\+Link@{org\+::newdawn\+::slick\+::util\+::pathfinding\+::navmesh\+::\+Link}}
+\subsubsection{\texorpdfstring{px}{px}}
+{\footnotesize\ttfamily float org.\+newdawn.\+slick.\+util.\+pathfinding.\+navmesh.\+Link.\+px\hspace{0.3cm}{\ttfamily [private]}}
+
+The x coordinate of the joining point \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1navmesh_1_1_link_afeb36f879009f5cda66275dd065dfdf2}\label{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1navmesh_1_1_link_afeb36f879009f5cda66275dd065dfdf2}} 
+\index{org\+::newdawn\+::slick\+::util\+::pathfinding\+::navmesh\+::\+Link@{org\+::newdawn\+::slick\+::util\+::pathfinding\+::navmesh\+::\+Link}!py@{py}}
+\index{py@{py}!org\+::newdawn\+::slick\+::util\+::pathfinding\+::navmesh\+::\+Link@{org\+::newdawn\+::slick\+::util\+::pathfinding\+::navmesh\+::\+Link}}
+\subsubsection{\texorpdfstring{py}{py}}
+{\footnotesize\ttfamily float org.\+newdawn.\+slick.\+util.\+pathfinding.\+navmesh.\+Link.\+py\hspace{0.3cm}{\ttfamily [private]}}
+
+The y coordinate of the joining point \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1navmesh_1_1_link_a8820429c2405bded1a2414a245745adf}\label{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1navmesh_1_1_link_a8820429c2405bded1a2414a245745adf}} 
+\index{org\+::newdawn\+::slick\+::util\+::pathfinding\+::navmesh\+::\+Link@{org\+::newdawn\+::slick\+::util\+::pathfinding\+::navmesh\+::\+Link}!target@{target}}
+\index{target@{target}!org\+::newdawn\+::slick\+::util\+::pathfinding\+::navmesh\+::\+Link@{org\+::newdawn\+::slick\+::util\+::pathfinding\+::navmesh\+::\+Link}}
+\subsubsection{\texorpdfstring{target}{target}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1navmesh_1_1_space}{Space}} org.\+newdawn.\+slick.\+util.\+pathfinding.\+navmesh.\+Link.\+target\hspace{0.3cm}{\ttfamily [private]}}
+
+The target space we\textquotesingle{}d be linking to 

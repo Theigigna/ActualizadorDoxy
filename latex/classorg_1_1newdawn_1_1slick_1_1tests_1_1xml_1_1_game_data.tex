@@ -1,0 +1,79 @@
+\hypertarget{classorg_1_1newdawn_1_1slick_1_1tests_1_1xml_1_1_game_data}{}\section{org.\+newdawn.\+slick.\+tests.\+xml.\+Game\+Data Class Reference}
+\label{classorg_1_1newdawn_1_1slick_1_1tests_1_1xml_1_1_game_data}\index{org.\+newdawn.\+slick.\+tests.\+xml.\+Game\+Data@{org.\+newdawn.\+slick.\+tests.\+xml.\+Game\+Data}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1xml_1_1_game_data_aa29ab866fa466f3558b2130fa4f11c3b}{dump}} (String prefix)
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1xml_1_1_game_data_a1e590ea2060ee02da4ad3795252c9fdb}{add}} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1xml_1_1_entity}{Entity}} entity)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Array\+List \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1xml_1_1_game_data_a4dd5056d57a4ebbc53014d0650d1247f}{entities}} = new Array\+List()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The top level node of our test structure for X\+ML -\/$>$ object parsing
+
+\begin{DoxyAuthor}{Author}
+kevin 
+\end{DoxyAuthor}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tests_1_1xml_1_1_game_data_a1e590ea2060ee02da4ad3795252c9fdb}\label{classorg_1_1newdawn_1_1slick_1_1tests_1_1xml_1_1_game_data_a1e590ea2060ee02da4ad3795252c9fdb}} 
+\index{org\+::newdawn\+::slick\+::tests\+::xml\+::\+Game\+Data@{org\+::newdawn\+::slick\+::tests\+::xml\+::\+Game\+Data}!add@{add}}
+\index{add@{add}!org\+::newdawn\+::slick\+::tests\+::xml\+::\+Game\+Data@{org\+::newdawn\+::slick\+::tests\+::xml\+::\+Game\+Data}}
+\subsubsection{\texorpdfstring{add()}{add()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+tests.\+xml.\+Game\+Data.\+add (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1xml_1_1_entity}{Entity}}}]{entity }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+Called by X\+ML parser to add a configured entity to the \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1xml_1_1_game_data}{Game\+Data}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em entity} & The entity to be added \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+19                                     \{
+20         \mbox{\hyperlink{namespaceentities}{entities}}.add(entity);
+21     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tests_1_1xml_1_1_game_data_aa29ab866fa466f3558b2130fa4f11c3b}\label{classorg_1_1newdawn_1_1slick_1_1tests_1_1xml_1_1_game_data_aa29ab866fa466f3558b2130fa4f11c3b}} 
+\index{org\+::newdawn\+::slick\+::tests\+::xml\+::\+Game\+Data@{org\+::newdawn\+::slick\+::tests\+::xml\+::\+Game\+Data}!dump@{dump}}
+\index{dump@{dump}!org\+::newdawn\+::slick\+::tests\+::xml\+::\+Game\+Data@{org\+::newdawn\+::slick\+::tests\+::xml\+::\+Game\+Data}}
+\subsubsection{\texorpdfstring{dump()}{dump()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+tests.\+xml.\+Game\+Data.\+dump (\begin{DoxyParamCaption}\item[{String}]{prefix }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Dump this object to sysout
+
+
+\begin{DoxyParams}{Parameters}
+{\em prefix} & The prefix to apply to all lines \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+28                                     \{
+29         System.out.println(prefix+\textcolor{stringliteral}{"GameData"});
+30         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i=0;i<\mbox{\hyperlink{namespaceentities}{entities}}.size();i++) \{
+31             ((Entity) \mbox{\hyperlink{namespaceentities}{entities}}.get(i)).\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1xml_1_1_game_data_aa29ab866fa466f3558b2130fa4f11c3b}{dump}}(prefix+\textcolor{stringliteral}{"\(\backslash\)t"});
+32         \}
+33     \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tests_1_1xml_1_1_game_data_a4dd5056d57a4ebbc53014d0650d1247f}\label{classorg_1_1newdawn_1_1slick_1_1tests_1_1xml_1_1_game_data_a4dd5056d57a4ebbc53014d0650d1247f}} 
+\index{org\+::newdawn\+::slick\+::tests\+::xml\+::\+Game\+Data@{org\+::newdawn\+::slick\+::tests\+::xml\+::\+Game\+Data}!entities@{entities}}
+\index{entities@{entities}!org\+::newdawn\+::slick\+::tests\+::xml\+::\+Game\+Data@{org\+::newdawn\+::slick\+::tests\+::xml\+::\+Game\+Data}}
+\subsubsection{\texorpdfstring{entities}{entities}}
+{\footnotesize\ttfamily Array\+List org.\+newdawn.\+slick.\+tests.\+xml.\+Game\+Data.\+entities = new Array\+List()\hspace{0.3cm}{\ttfamily [private]}}
+
+The list of entities added 

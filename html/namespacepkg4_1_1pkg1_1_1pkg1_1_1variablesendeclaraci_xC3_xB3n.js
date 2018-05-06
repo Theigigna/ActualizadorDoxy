@@ -1,0 +1,4 @@
+var namespacepkg4_1_1pkg1_1_1pkg1_1_1variablesendeclaraci_xC3_xB3n =
+[
+    [ "VariablesEnDeclaración", "classpkg4_1_1pkg1_1_1pkg1_1_1variablesendeclaraci_xC3_xB3n_1_1_variables_en_declaraci_xC3_xB3n.html", "classpkg4_1_1pkg1_1_1pkg1_1_1variablesendeclaraci_xC3_xB3n_1_1_variables_en_declaraci_xC3_xB3n" ]
+];

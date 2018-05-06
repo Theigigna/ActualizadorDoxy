@@ -1,0 +1,221 @@
+\hypertarget{class_sockets_1_1_cliente}{}\section{Sockets.\+Cliente Class Reference}
+\label{class_sockets_1_1_cliente}\index{Sockets.\+Cliente@{Sockets.\+Cliente}}
+Inheritance diagram for Sockets.\+Cliente\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_sockets_1_1_cliente}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_sockets_1_1_cliente_ab3aed9d5de2bafbb190c27a9c5e7cfd1}{Cliente}} ()
+\item 
+void \mbox{\hyperlink{class_sockets_1_1_cliente_aef765880b11e7868501bfff2fa4000f6}{parar}} ()
+\item 
+void \mbox{\hyperlink{class_sockets_1_1_cliente_ae2687fb804fba298cfa152bf078f6795}{reanudar}} ()
+\item 
+void \mbox{\hyperlink{class_sockets_1_1_cliente_a97cefc10f0737a0e35a923d895b24b30}{cerrar}} ()
+\item 
+synchronized void \mbox{\hyperlink{class_sockets_1_1_cliente_ad771c3e62e58392ade4f7cddb361bf05}{esperar}} ()
+\item 
+synchronized void \mbox{\hyperlink{class_sockets_1_1_cliente_a8c72e0702477bfa5ab697ed20fb0a490}{notificar}} ()
+\item 
+void \mbox{\hyperlink{class_sockets_1_1_cliente_afcd5b6491c7ac4855464028c93d9b0de}{run}} ()
+\end{DoxyCompactItemize}
+\subsection*{Package Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Data\+Output\+Stream \mbox{\hyperlink{class_sockets_1_1_cliente_a0e85d127bffa834dc946bb2c39a8a7a2}{salida}}
+\item 
+Socket \mbox{\hyperlink{class_sockets_1_1_cliente_afe26e0d4cbe42f094ce76f958e15fb58}{cliente}}
+\item 
+boolean \mbox{\hyperlink{class_sockets_1_1_cliente_ab72910fbf98a6c65607aeb382526389a}{salir}}
+\item 
+Inet\+Address \mbox{\hyperlink{class_sockets_1_1_cliente_a4a8b83baab9f078a2972e51e3f671bf0}{equipo}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyAuthor}{Author}
+Ignacio 
+\end{DoxyAuthor}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_sockets_1_1_cliente_ab3aed9d5de2bafbb190c27a9c5e7cfd1}\label{class_sockets_1_1_cliente_ab3aed9d5de2bafbb190c27a9c5e7cfd1}} 
+\index{Sockets\+::\+Cliente@{Sockets\+::\+Cliente}!Cliente@{Cliente}}
+\index{Cliente@{Cliente}!Sockets\+::\+Cliente@{Sockets\+::\+Cliente}}
+\subsubsection{\texorpdfstring{Cliente()}{Cliente()}}
+{\footnotesize\ttfamily Sockets.\+Cliente.\+Cliente (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+28     \{
+29         this.\mbox{\hyperlink{class_sockets_1_1_cliente_a4a8b83baab9f078a2972e51e3f671bf0}{equipo}} = null;
+30         byte[] dir = \{127,0,0,1\};
+31         \textcolor{keywordflow}{try} \{
+32             \mbox{\hyperlink{class_sockets_1_1_cliente_a4a8b83baab9f078a2972e51e3f671bf0}{equipo}} = InetAddress.getByAddress(dir);
+33         \} \textcolor{keywordflow}{catch} (UnknownHostException ex) \{
+34             Logger.getLogger(\mbox{\hyperlink{class_sockets_1_1_cliente_ab3aed9d5de2bafbb190c27a9c5e7cfd1}{Cliente}}.class.getName()).log(Level.SEVERE, null, ex);
+35         \}
+36         \textcolor{keywordflow}{try} \{
+37             this.\mbox{\hyperlink{class_sockets_1_1_cliente_afe26e0d4cbe42f094ce76f958e15fb58}{cliente}} = \textcolor{keyword}{new} Socket(\mbox{\hyperlink{class_sockets_1_1_cliente_a4a8b83baab9f078a2972e51e3f671bf0}{equipo}}.getHostAddress(),5000);\textcolor{comment}{//inicializa el socket}
+38         \} \textcolor{keywordflow}{catch} (IOException ex) \{
+39             Logger.getLogger(\mbox{\hyperlink{class_sockets_1_1_cliente_ab3aed9d5de2bafbb190c27a9c5e7cfd1}{Cliente}}.class.getName()).log(Level.SEVERE, null, ex);
+40         \}
+41         
+42         this.\mbox{\hyperlink{class_sockets_1_1_cliente_ab72910fbf98a6c65607aeb382526389a}{salir}} = \textcolor{keyword}{false};
+43     \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_sockets_1_1_cliente_a97cefc10f0737a0e35a923d895b24b30}\label{class_sockets_1_1_cliente_a97cefc10f0737a0e35a923d895b24b30}} 
+\index{Sockets\+::\+Cliente@{Sockets\+::\+Cliente}!cerrar@{cerrar}}
+\index{cerrar@{cerrar}!Sockets\+::\+Cliente@{Sockets\+::\+Cliente}}
+\subsubsection{\texorpdfstring{cerrar()}{cerrar()}}
+{\footnotesize\ttfamily void Sockets.\+Cliente.\+cerrar (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+76     \{
+77         \mbox{\hyperlink{class_sockets_1_1_cliente_ab72910fbf98a6c65607aeb382526389a}{salir}} = \textcolor{keyword}{true};\textcolor{comment}{//pone el salir en true}
+78         \textcolor{keywordflow}{try} \{
+79             \mbox{\hyperlink{class_sockets_1_1_cliente_a0e85d127bffa834dc946bb2c39a8a7a2}{salida}}.close();\textcolor{comment}{//cierra la output stream}
+80         \} \textcolor{keywordflow}{catch} (IOException ex) \{
+81             Logger.getLogger(\mbox{\hyperlink{class_sockets_1_1_cliente_ab3aed9d5de2bafbb190c27a9c5e7cfd1}{Cliente}}.class.getName()).log(Level.SEVERE, null, ex);
+82         \}
+83         \textcolor{keywordflow}{try} \{
+84             \mbox{\hyperlink{class_sockets_1_1_cliente_afe26e0d4cbe42f094ce76f958e15fb58}{cliente}}.close();\textcolor{comment}{//cierra el socket}
+85         \} \textcolor{keywordflow}{catch} (IOException ex) \{
+86             Logger.getLogger(\mbox{\hyperlink{class_sockets_1_1_cliente_ab3aed9d5de2bafbb190c27a9c5e7cfd1}{Cliente}}.class.getName()).log(Level.SEVERE, null, ex);
+87         \}
+88         
+89         \mbox{\hyperlink{class_sockets_1_1_cliente_a8c72e0702477bfa5ab697ed20fb0a490}{notificar}}();
+90         \textcolor{comment}{//notify();//despierta al hilo para que termine su ejecución}
+91     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_sockets_1_1_cliente_ad771c3e62e58392ade4f7cddb361bf05}\label{class_sockets_1_1_cliente_ad771c3e62e58392ade4f7cddb361bf05}} 
+\index{Sockets\+::\+Cliente@{Sockets\+::\+Cliente}!esperar@{esperar}}
+\index{esperar@{esperar}!Sockets\+::\+Cliente@{Sockets\+::\+Cliente}}
+\subsubsection{\texorpdfstring{esperar()}{esperar()}}
+{\footnotesize\ttfamily synchronized void Sockets.\+Cliente.\+esperar (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+94     \{
+95         \textcolor{keywordflow}{try} \{
+96             wait();
+97         \} \textcolor{keywordflow}{catch} (InterruptedException ex) \{
+98             Logger.getLogger(\mbox{\hyperlink{class_sockets_1_1_cliente_ab3aed9d5de2bafbb190c27a9c5e7cfd1}{Cliente}}.class.getName()).log(Level.SEVERE, null, ex);
+99         \}
+100     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_sockets_1_1_cliente_a8c72e0702477bfa5ab697ed20fb0a490}\label{class_sockets_1_1_cliente_a8c72e0702477bfa5ab697ed20fb0a490}} 
+\index{Sockets\+::\+Cliente@{Sockets\+::\+Cliente}!notificar@{notificar}}
+\index{notificar@{notificar}!Sockets\+::\+Cliente@{Sockets\+::\+Cliente}}
+\subsubsection{\texorpdfstring{notificar()}{notificar()}}
+{\footnotesize\ttfamily synchronized void Sockets.\+Cliente.\+notificar (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+103     \{
+104         notify();
+105     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_sockets_1_1_cliente_aef765880b11e7868501bfff2fa4000f6}\label{class_sockets_1_1_cliente_aef765880b11e7868501bfff2fa4000f6}} 
+\index{Sockets\+::\+Cliente@{Sockets\+::\+Cliente}!parar@{parar}}
+\index{parar@{parar}!Sockets\+::\+Cliente@{Sockets\+::\+Cliente}}
+\subsubsection{\texorpdfstring{parar()}{parar()}}
+{\footnotesize\ttfamily void Sockets.\+Cliente.\+parar (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+46     \{
+47         \textcolor{keywordflow}{try} \{
+48             \textcolor{comment}{//System.out.println("Crea el salida para parar");}
+49             \mbox{\hyperlink{class_sockets_1_1_cliente_a0e85d127bffa834dc946bb2c39a8a7a2}{salida}} = \textcolor{keyword}{new} DataOutputStream(\mbox{\hyperlink{class_sockets_1_1_cliente_afe26e0d4cbe42f094ce76f958e15fb58}{cliente}}.getOutputStream());
+50         \} \textcolor{keywordflow}{catch} (IOException ex) \{
+51             Logger.getLogger(\mbox{\hyperlink{class_sockets_1_1_cliente_ab3aed9d5de2bafbb190c27a9c5e7cfd1}{Cliente}}.class.getName()).log(Level.SEVERE, null, ex);
+52         \}
+53         \textcolor{keywordflow}{try} \{
+54             \textcolor{comment}{//System.out.println("Intenta writear el parar");}
+55             \mbox{\hyperlink{class_sockets_1_1_cliente_a0e85d127bffa834dc946bb2c39a8a7a2}{salida}}.writeUTF(\textcolor{stringliteral}{"parar"});
+56         \} \textcolor{keywordflow}{catch} (IOException ex) \{
+57             Logger.getLogger(\mbox{\hyperlink{class_sockets_1_1_cliente_ab3aed9d5de2bafbb190c27a9c5e7cfd1}{Cliente}}.class.getName()).log(Level.SEVERE, null, ex);
+58         \}
+59     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_sockets_1_1_cliente_ae2687fb804fba298cfa152bf078f6795}\label{class_sockets_1_1_cliente_ae2687fb804fba298cfa152bf078f6795}} 
+\index{Sockets\+::\+Cliente@{Sockets\+::\+Cliente}!reanudar@{reanudar}}
+\index{reanudar@{reanudar}!Sockets\+::\+Cliente@{Sockets\+::\+Cliente}}
+\subsubsection{\texorpdfstring{reanudar()}{reanudar()}}
+{\footnotesize\ttfamily void Sockets.\+Cliente.\+reanudar (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+62     \{
+63         \textcolor{keywordflow}{try} \{
+64             \mbox{\hyperlink{class_sockets_1_1_cliente_a0e85d127bffa834dc946bb2c39a8a7a2}{salida}} = \textcolor{keyword}{new} DataOutputStream(\mbox{\hyperlink{class_sockets_1_1_cliente_afe26e0d4cbe42f094ce76f958e15fb58}{cliente}}.getOutputStream());
+65         \} \textcolor{keywordflow}{catch} (IOException ex) \{
+66             Logger.getLogger(\mbox{\hyperlink{class_sockets_1_1_cliente_ab3aed9d5de2bafbb190c27a9c5e7cfd1}{Cliente}}.class.getName()).log(Level.SEVERE, null, ex);
+67         \}
+68         \textcolor{keywordflow}{try} \{
+69             \mbox{\hyperlink{class_sockets_1_1_cliente_a0e85d127bffa834dc946bb2c39a8a7a2}{salida}}.writeUTF(\textcolor{stringliteral}{"reanudar"});
+70         \} \textcolor{keywordflow}{catch} (IOException ex) \{
+71             Logger.getLogger(\mbox{\hyperlink{class_sockets_1_1_cliente_ab3aed9d5de2bafbb190c27a9c5e7cfd1}{Cliente}}.class.getName()).log(Level.SEVERE, null, ex);
+72         \}
+73     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_sockets_1_1_cliente_afcd5b6491c7ac4855464028c93d9b0de}\label{class_sockets_1_1_cliente_afcd5b6491c7ac4855464028c93d9b0de}} 
+\index{Sockets\+::\+Cliente@{Sockets\+::\+Cliente}!run@{run}}
+\index{run@{run}!Sockets\+::\+Cliente@{Sockets\+::\+Cliente}}
+\subsubsection{\texorpdfstring{run()}{run()}}
+{\footnotesize\ttfamily void Sockets.\+Cliente.\+run (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+108     \{
+109         \textcolor{comment}{//System.out.println("El cliente runnea");}
+110         \textcolor{keywordflow}{while}(!\mbox{\hyperlink{class_sockets_1_1_cliente_ab72910fbf98a6c65607aeb382526389a}{salir}})
+111         \{
+112             
+113         \textcolor{keywordflow}{try} \{\textcolor{comment}{//tecnicamente sobra}
+114             \mbox{\hyperlink{class_sockets_1_1_cliente_a0e85d127bffa834dc946bb2c39a8a7a2}{salida}} = \textcolor{keyword}{new} DataOutputStream(\mbox{\hyperlink{class_sockets_1_1_cliente_afe26e0d4cbe42f094ce76f958e15fb58}{cliente}}.getOutputStream());
+115         \} \textcolor{keywordflow}{catch} (IOException ex) \{
+116             Logger.getLogger(\mbox{\hyperlink{class_sockets_1_1_cliente_ab3aed9d5de2bafbb190c27a9c5e7cfd1}{Cliente}}.class.getName()).log(Level.SEVERE, null, ex);
+117         \}
+118             
+119         \mbox{\hyperlink{class_sockets_1_1_cliente_ad771c3e62e58392ade4f7cddb361bf05}{esperar}}();
+120         
+121         \}
+122     \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_sockets_1_1_cliente_afe26e0d4cbe42f094ce76f958e15fb58}\label{class_sockets_1_1_cliente_afe26e0d4cbe42f094ce76f958e15fb58}} 
+\index{Sockets\+::\+Cliente@{Sockets\+::\+Cliente}!cliente@{cliente}}
+\index{cliente@{cliente}!Sockets\+::\+Cliente@{Sockets\+::\+Cliente}}
+\subsubsection{\texorpdfstring{cliente}{cliente}}
+{\footnotesize\ttfamily Socket Sockets.\+Cliente.\+cliente\hspace{0.3cm}{\ttfamily [package]}}
+
+\mbox{\Hypertarget{class_sockets_1_1_cliente_a4a8b83baab9f078a2972e51e3f671bf0}\label{class_sockets_1_1_cliente_a4a8b83baab9f078a2972e51e3f671bf0}} 
+\index{Sockets\+::\+Cliente@{Sockets\+::\+Cliente}!equipo@{equipo}}
+\index{equipo@{equipo}!Sockets\+::\+Cliente@{Sockets\+::\+Cliente}}
+\subsubsection{\texorpdfstring{equipo}{equipo}}
+{\footnotesize\ttfamily Inet\+Address Sockets.\+Cliente.\+equipo\hspace{0.3cm}{\ttfamily [package]}}
+
+\mbox{\Hypertarget{class_sockets_1_1_cliente_a0e85d127bffa834dc946bb2c39a8a7a2}\label{class_sockets_1_1_cliente_a0e85d127bffa834dc946bb2c39a8a7a2}} 
+\index{Sockets\+::\+Cliente@{Sockets\+::\+Cliente}!salida@{salida}}
+\index{salida@{salida}!Sockets\+::\+Cliente@{Sockets\+::\+Cliente}}
+\subsubsection{\texorpdfstring{salida}{salida}}
+{\footnotesize\ttfamily Data\+Output\+Stream Sockets.\+Cliente.\+salida\hspace{0.3cm}{\ttfamily [package]}}
+
+\mbox{\Hypertarget{class_sockets_1_1_cliente_ab72910fbf98a6c65607aeb382526389a}\label{class_sockets_1_1_cliente_ab72910fbf98a6c65607aeb382526389a}} 
+\index{Sockets\+::\+Cliente@{Sockets\+::\+Cliente}!salir@{salir}}
+\index{salir@{salir}!Sockets\+::\+Cliente@{Sockets\+::\+Cliente}}
+\subsubsection{\texorpdfstring{salir}{salir}}
+{\footnotesize\ttfamily boolean Sockets.\+Cliente.\+salir\hspace{0.3cm}{\ttfamily [package]}}
+

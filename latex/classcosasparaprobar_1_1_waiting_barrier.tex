@@ -1,0 +1,84 @@
+\hypertarget{classcosasparaprobar_1_1_waiting_barrier}{}\section{cosasparaprobar.\+Waiting\+Barrier Class Reference}
+\label{classcosasparaprobar_1_1_waiting_barrier}\index{cosasparaprobar.\+Waiting\+Barrier@{cosasparaprobar.\+Waiting\+Barrier}}
+Inheritance diagram for cosasparaprobar.\+Waiting\+Barrier\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classcosasparaprobar_1_1_waiting_barrier}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classcosasparaprobar_1_1_waiting_barrier_a0914ceff2faf3ab517feecd074549789}{Waiting\+Barrier}} (int \mbox{\hyperlink{classcosasparaprobar_1_1_waiting_barrier_a6549abdaae9647b2134980d403273773}{i}}, Cyclic\+Barrier \mbox{\hyperlink{classcosasparaprobar_1_1_waiting_barrier_ac29649ee49c77a7acdd5598806a0c097}{x}})
+\item 
+void \mbox{\hyperlink{classcosasparaprobar_1_1_waiting_barrier_a8bd7e01bc5d2cf7a34f6c97ca9cea646}{run}} ()
+\end{DoxyCompactItemize}
+\subsection*{Package Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Cyclic\+Barrier \mbox{\hyperlink{classcosasparaprobar_1_1_waiting_barrier_ac29649ee49c77a7acdd5598806a0c097}{x}}
+\item 
+int \mbox{\hyperlink{classcosasparaprobar_1_1_waiting_barrier_a6549abdaae9647b2134980d403273773}{i}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyAuthor}{Author}
+Ignacio 
+\end{DoxyAuthor}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classcosasparaprobar_1_1_waiting_barrier_a0914ceff2faf3ab517feecd074549789}\label{classcosasparaprobar_1_1_waiting_barrier_a0914ceff2faf3ab517feecd074549789}} 
+\index{cosasparaprobar\+::\+Waiting\+Barrier@{cosasparaprobar\+::\+Waiting\+Barrier}!Waiting\+Barrier@{Waiting\+Barrier}}
+\index{Waiting\+Barrier@{Waiting\+Barrier}!cosasparaprobar\+::\+Waiting\+Barrier@{cosasparaprobar\+::\+Waiting\+Barrier}}
+\subsubsection{\texorpdfstring{Waiting\+Barrier()}{WaitingBarrier()}}
+{\footnotesize\ttfamily cosasparaprobar.\+Waiting\+Barrier.\+Waiting\+Barrier (\begin{DoxyParamCaption}\item[{int}]{i,  }\item[{Cyclic\+Barrier}]{x }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+23     \{
+24         this.\mbox{\hyperlink{classcosasparaprobar_1_1_waiting_barrier_a6549abdaae9647b2134980d403273773}{i}} = \mbox{\hyperlink{classcosasparaprobar_1_1_waiting_barrier_a6549abdaae9647b2134980d403273773}{i}};
+25         this.\mbox{\hyperlink{classcosasparaprobar_1_1_waiting_barrier_ac29649ee49c77a7acdd5598806a0c097}{x}} = \mbox{\hyperlink{classcosasparaprobar_1_1_waiting_barrier_ac29649ee49c77a7acdd5598806a0c097}{x}};
+26     \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classcosasparaprobar_1_1_waiting_barrier_a8bd7e01bc5d2cf7a34f6c97ca9cea646}\label{classcosasparaprobar_1_1_waiting_barrier_a8bd7e01bc5d2cf7a34f6c97ca9cea646}} 
+\index{cosasparaprobar\+::\+Waiting\+Barrier@{cosasparaprobar\+::\+Waiting\+Barrier}!run@{run}}
+\index{run@{run}!cosasparaprobar\+::\+Waiting\+Barrier@{cosasparaprobar\+::\+Waiting\+Barrier}}
+\subsubsection{\texorpdfstring{run()}{run()}}
+{\footnotesize\ttfamily void cosasparaprobar.\+Waiting\+Barrier.\+run (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+28                      \{
+29         
+30         System.out.println(\mbox{\hyperlink{classcosasparaprobar_1_1_waiting_barrier_a6549abdaae9647b2134980d403273773}{i}} + \textcolor{stringliteral}{" quiero entrar."});
+31         \textcolor{keywordflow}{try} \{
+32             \mbox{\hyperlink{classcosasparaprobar_1_1_waiting_barrier_ac29649ee49c77a7acdd5598806a0c097}{x}}.await();
+33         \} \textcolor{keywordflow}{catch} (InterruptedException ex) \{
+34             Logger.getLogger(\mbox{\hyperlink{classcosasparaprobar_1_1_waiting_barrier_a0914ceff2faf3ab517feecd074549789}{WaitingBarrier}}.class.getName()).log(Level.SEVERE, null, ex);
+35         \} \textcolor{keywordflow}{catch} (BrokenBarrierException ex) \{
+36             Logger.getLogger(\mbox{\hyperlink{classcosasparaprobar_1_1_waiting_barrier_a0914ceff2faf3ab517feecd074549789}{WaitingBarrier}}.class.getName()).log(Level.SEVERE, null, ex);
+37         \}
+38         
+39         System.out.println(\mbox{\hyperlink{classcosasparaprobar_1_1_waiting_barrier_a6549abdaae9647b2134980d403273773}{i}}+\textcolor{stringliteral}{" he pasado."});
+40     \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classcosasparaprobar_1_1_waiting_barrier_a6549abdaae9647b2134980d403273773}\label{classcosasparaprobar_1_1_waiting_barrier_a6549abdaae9647b2134980d403273773}} 
+\index{cosasparaprobar\+::\+Waiting\+Barrier@{cosasparaprobar\+::\+Waiting\+Barrier}!i@{i}}
+\index{i@{i}!cosasparaprobar\+::\+Waiting\+Barrier@{cosasparaprobar\+::\+Waiting\+Barrier}}
+\subsubsection{\texorpdfstring{i}{i}}
+{\footnotesize\ttfamily int cosasparaprobar.\+Waiting\+Barrier.\+i\hspace{0.3cm}{\ttfamily [package]}}
+
+\mbox{\Hypertarget{classcosasparaprobar_1_1_waiting_barrier_ac29649ee49c77a7acdd5598806a0c097}\label{classcosasparaprobar_1_1_waiting_barrier_ac29649ee49c77a7acdd5598806a0c097}} 
+\index{cosasparaprobar\+::\+Waiting\+Barrier@{cosasparaprobar\+::\+Waiting\+Barrier}!x@{x}}
+\index{x@{x}!cosasparaprobar\+::\+Waiting\+Barrier@{cosasparaprobar\+::\+Waiting\+Barrier}}
+\subsubsection{\texorpdfstring{x}{x}}
+{\footnotesize\ttfamily Cyclic\+Barrier cosasparaprobar.\+Waiting\+Barrier.\+x\hspace{0.3cm}{\ttfamily [package]}}
+

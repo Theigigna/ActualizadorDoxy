@@ -1,0 +1,66 @@
+\hypertarget{classpa__sesion6_1_1_visitante}{}\section{pa\+\_\+sesion6.\+Visitante Class Reference}
+\label{classpa__sesion6_1_1_visitante}\index{pa\+\_\+sesion6.\+Visitante@{pa\+\_\+sesion6.\+Visitante}}
+Inheritance diagram for pa\+\_\+sesion6.\+Visitante\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classpa__sesion6_1_1_visitante}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpa__sesion6_1_1_visitante_acf989dbf6a8886b3be3b0ab4042b3b60}{Visitante}} (int id, \mbox{\hyperlink{classpa__sesion6_1_1_exposicion}{Exposicion}} \mbox{\hyperlink{classpa__sesion6_1_1_visitante_a09960f68f8c9a0d5d44bd607c11d6675}{expo}})
+\item 
+void \mbox{\hyperlink{classpa__sesion6_1_1_visitante_ac241b7a933b87a209c0c89b357a8d4ec}{run}} ()
+\end{DoxyCompactItemize}
+\subsection*{Package Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpa__sesion6_1_1_exposicion}{Exposicion}} \mbox{\hyperlink{classpa__sesion6_1_1_visitante_a09960f68f8c9a0d5d44bd607c11d6675}{expo}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classpa__sesion6_1_1_visitante_acf989dbf6a8886b3be3b0ab4042b3b60}\label{classpa__sesion6_1_1_visitante_acf989dbf6a8886b3be3b0ab4042b3b60}} 
+\index{pa\+\_\+sesion6\+::\+Visitante@{pa\+\_\+sesion6\+::\+Visitante}!Visitante@{Visitante}}
+\index{Visitante@{Visitante}!pa\+\_\+sesion6\+::\+Visitante@{pa\+\_\+sesion6\+::\+Visitante}}
+\subsubsection{\texorpdfstring{Visitante()}{Visitante()}}
+{\footnotesize\ttfamily pa\+\_\+sesion6.\+Visitante.\+Visitante (\begin{DoxyParamCaption}\item[{int}]{id,  }\item[{\mbox{\hyperlink{classpa__sesion6_1_1_exposicion}{Exposicion}}}]{expo }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+8     \{
+9         super.setName(String.valueOf(\textcolor{keywordtype}{id}));
+10         this.\mbox{\hyperlink{classpa__sesion6_1_1_visitante_a09960f68f8c9a0d5d44bd607c11d6675}{expo}}=\mbox{\hyperlink{classpa__sesion6_1_1_visitante_a09960f68f8c9a0d5d44bd607c11d6675}{expo}};
+11     \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classpa__sesion6_1_1_visitante_ac241b7a933b87a209c0c89b357a8d4ec}\label{classpa__sesion6_1_1_visitante_ac241b7a933b87a209c0c89b357a8d4ec}} 
+\index{pa\+\_\+sesion6\+::\+Visitante@{pa\+\_\+sesion6\+::\+Visitante}!run@{run}}
+\index{run@{run}!pa\+\_\+sesion6\+::\+Visitante@{pa\+\_\+sesion6\+::\+Visitante}}
+\subsubsection{\texorpdfstring{run()}{run()}}
+{\footnotesize\ttfamily void pa\+\_\+sesion6.\+Visitante.\+run (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+14     \{
+15         \textcolor{keywordflow}{try}
+16         \{
+17             sleep((\textcolor{keywordtype}{int})(3000*Math.random()));
+18         \} \textcolor{keywordflow}{catch} (InterruptedException e)\{ \}
+19         \mbox{\hyperlink{classpa__sesion6_1_1_visitante_a09960f68f8c9a0d5d44bd607c11d6675}{expo}}.\mbox{\hyperlink{classpa__sesion6_1_1_exposicion_a290de0143a4ac3d4144b59da8998590f}{entrar}}(\textcolor{keyword}{this}); \textcolor{comment}{//Entra en la exposición, si hay hueco; y sino espera en la cola}
+20         \mbox{\hyperlink{classpa__sesion6_1_1_visitante_a09960f68f8c9a0d5d44bd607c11d6675}{expo}}.\mbox{\hyperlink{classpa__sesion6_1_1_exposicion_a88cad59e332e16a6a199ca599d70239f}{mirar}}(\textcolor{keyword}{this}); \textcolor{comment}{//Está un tiempo dentro de la exposición}
+21         \mbox{\hyperlink{classpa__sesion6_1_1_visitante_a09960f68f8c9a0d5d44bd607c11d6675}{expo}}.\mbox{\hyperlink{classpa__sesion6_1_1_exposicion_af3dad6816f86cb8fccc96b5347820a8d}{salir}}(\textcolor{keyword}{this}); \textcolor{comment}{//Sale de la exposición}
+22     \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classpa__sesion6_1_1_visitante_a09960f68f8c9a0d5d44bd607c11d6675}\label{classpa__sesion6_1_1_visitante_a09960f68f8c9a0d5d44bd607c11d6675}} 
+\index{pa\+\_\+sesion6\+::\+Visitante@{pa\+\_\+sesion6\+::\+Visitante}!expo@{expo}}
+\index{expo@{expo}!pa\+\_\+sesion6\+::\+Visitante@{pa\+\_\+sesion6\+::\+Visitante}}
+\subsubsection{\texorpdfstring{expo}{expo}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classpa__sesion6_1_1_exposicion}{Exposicion}} pa\+\_\+sesion6.\+Visitante.\+expo\hspace{0.3cm}{\ttfamily [package]}}
+

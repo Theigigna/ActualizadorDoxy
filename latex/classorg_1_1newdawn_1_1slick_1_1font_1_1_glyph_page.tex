@@ -1,0 +1,466 @@
+\hypertarget{classorg_1_1newdawn_1_1slick_1_1font_1_1_glyph_page}{}\section{org.\+newdawn.\+slick.\+font.\+Glyph\+Page Class Reference}
+\label{classorg_1_1newdawn_1_1slick_1_1font_1_1_glyph_page}\index{org.\+newdawn.\+slick.\+font.\+Glyph\+Page@{org.\+newdawn.\+slick.\+font.\+Glyph\+Page}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1font_1_1_glyph_page_a69fca021e03c5cb4b44c24d36251bc1b}{Glyph\+Page}} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_unicode_font}{Unicode\+Font}} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1font_1_1_glyph_page_a24df618c9e902dd841e708d572559641}{unicode\+Font}}, int \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1font_1_1_glyph_page_a92a417a19c115ae906499f7d8c026130}{page\+Width}}, int \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1font_1_1_glyph_page_a87d58eab40df58d9ad0d1cd5f2d0db3b}{page\+Height}})  throws Slick\+Exception 
+\item 
+int \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1font_1_1_glyph_page_a2123a4715446781b1baae6f8a4c7d811}{load\+Glyphs}} (List glyphs, int max\+Glyphs\+To\+Load)  throws Slick\+Exception 
+\item 
+List \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1font_1_1_glyph_page_a1255caa181a9f4d6fa6442a8ddc17546}{get\+Glyphs}} ()
+\item 
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_image}{Image}} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1font_1_1_glyph_page_ae2b1131c437b43c1c3e6d774d09f9ee7}{get\+Image}} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static Graphics2D \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1font_1_1_glyph_page_a0c33343f5d5b8c363cace62804c1d443}{get\+Scratch\+Graphics}} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static final int \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1font_1_1_glyph_page_ac45492a4d734e35753d7fa4f7730e5c1}{M\+A\+X\+\_\+\+G\+L\+Y\+P\+H\+\_\+\+S\+I\+ZE}} = 256
+\item 
+static Font\+Render\+Context \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1font_1_1_glyph_page_ad822e77c036e6182652982a3def3de64}{render\+Context}} = scratch\+Graphics.\+get\+Font\+Render\+Context()
+\end{DoxyCompactItemize}
+\subsection*{Static Package Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1font_1_1_glyph_page_acc727475850f1b225b4dd58b627838d7}{\mbox{[}static initializer\mbox{]}}}
+\item 
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1font_1_1_glyph_page_acc727475850f1b225b4dd58b627838d7}{\mbox{[}static initializer\mbox{]}}}
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1font_1_1_glyph_page_ab2f0b2c9a31ae9402ab7a0575fb855c0}{render\+Glyph}} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1font_1_1_glyph}{Glyph}} glyph, int width, int height)  throws Slick\+Exception 
+\item 
+Iterator \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1font_1_1_glyph_page_a7803412d2be72ebd03d1dee29f571770}{get\+Iterator}} (List glyphs)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+final \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_unicode_font}{Unicode\+Font}} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1font_1_1_glyph_page_a24df618c9e902dd841e708d572559641}{unicode\+Font}}
+\item 
+final int \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1font_1_1_glyph_page_a92a417a19c115ae906499f7d8c026130}{page\+Width}}
+\item 
+final int \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1font_1_1_glyph_page_a87d58eab40df58d9ad0d1cd5f2d0db3b}{page\+Height}}
+\item 
+final \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_image}{Image}} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1font_1_1_glyph_page_a9ca6f69c7df1769fe54cbd6a13f46645}{page\+Image}}
+\item 
+int \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1font_1_1_glyph_page_a6d1de13b49bd950e136d250a37eee4eb}{pageX}}
+\item 
+int \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1font_1_1_glyph_page_a94b7aa9b91e5227a58e8f416ffe0fbaa}{pageY}}
+\item 
+int \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1font_1_1_glyph_page_a98ef737403aa53fed93e68e08117ec39}{row\+Height}}
+\item 
+boolean \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1font_1_1_glyph_page_a2503df17a682f59d93a93acb3182075b}{order\+Ascending}}
+\item 
+final List \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1font_1_1_glyph_page_a9e91d415e3d3b45f8e9ffaa687701bb4}{page\+Glyphs}} = new Array\+List(32)
+\end{DoxyCompactItemize}
+\subsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static final \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1opengl_1_1renderer_1_1_s_g_l}{S\+GL}} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1font_1_1_glyph_page_a5d5c2f94f75d77839cd0715607d326cc}{GL}} = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1renderer_1_1_renderer_abe742c3a7dfca67c6c01821d27087308}{Renderer.\+get}}()
+\item 
+static Byte\+Buffer \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1font_1_1_glyph_page_a08e07e05a984560722f01af927f205c5}{scratch\+Byte\+Buffer}} = Byte\+Buffer.\+allocate\+Direct(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1font_1_1_glyph_page_ac45492a4d734e35753d7fa4f7730e5c1}{M\+A\+X\+\_\+\+G\+L\+Y\+P\+H\+\_\+\+S\+I\+ZE}} $\ast$ \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1font_1_1_glyph_page_ac45492a4d734e35753d7fa4f7730e5c1}{M\+A\+X\+\_\+\+G\+L\+Y\+P\+H\+\_\+\+S\+I\+ZE}} $\ast$ 4)
+\item 
+static Int\+Buffer \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1font_1_1_glyph_page_a1ca850b88627ce8b0d534f80b797ec51}{scratch\+Int\+Buffer}} = scratch\+Byte\+Buffer.\+as\+Int\+Buffer()
+\item 
+static Buffered\+Image \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1font_1_1_glyph_page_a4151d180856eeb907b906dde31e7f93f}{scratch\+Image}} = new Buffered\+Image(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1font_1_1_glyph_page_ac45492a4d734e35753d7fa4f7730e5c1}{M\+A\+X\+\_\+\+G\+L\+Y\+P\+H\+\_\+\+S\+I\+ZE}}, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1font_1_1_glyph_page_ac45492a4d734e35753d7fa4f7730e5c1}{M\+A\+X\+\_\+\+G\+L\+Y\+P\+H\+\_\+\+S\+I\+ZE}}, Buffered\+Image.\+T\+Y\+P\+E\+\_\+\+I\+N\+T\+\_\+\+A\+R\+GB)
+\item 
+static Graphics2D \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1font_1_1_glyph_page_a493fd684bdaaf07f0e15d00e4e173391}{scratch\+Graphics}} = (Graphics2D)scratch\+Image.\+get\+Graphics()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Stores a number of glyphs on a single texture.
+
+\begin{DoxyAuthor}{Author}
+Nathan Sweet \href{mailto:misc@n4te.com}{\tt misc@n4te.\+com} 
+\end{DoxyAuthor}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1font_1_1_glyph_page_a69fca021e03c5cb4b44c24d36251bc1b}\label{classorg_1_1newdawn_1_1slick_1_1font_1_1_glyph_page_a69fca021e03c5cb4b44c24d36251bc1b}} 
+\index{org\+::newdawn\+::slick\+::font\+::\+Glyph\+Page@{org\+::newdawn\+::slick\+::font\+::\+Glyph\+Page}!Glyph\+Page@{Glyph\+Page}}
+\index{Glyph\+Page@{Glyph\+Page}!org\+::newdawn\+::slick\+::font\+::\+Glyph\+Page@{org\+::newdawn\+::slick\+::font\+::\+Glyph\+Page}}
+\subsubsection{\texorpdfstring{Glyph\+Page()}{GlyphPage()}}
+{\footnotesize\ttfamily org.\+newdawn.\+slick.\+font.\+Glyph\+Page.\+Glyph\+Page (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_unicode_font}{Unicode\+Font}}}]{unicode\+Font,  }\item[{int}]{page\+Width,  }\item[{int}]{page\+Height }\end{DoxyParamCaption}) throws \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_slick_exception}{Slick\+Exception}}\hspace{0.3cm}{\ttfamily [inline]}}
+
+Create a new page of glyphs
+
+
+\begin{DoxyParams}{Parameters}
+{\em unicode\+Font} & The font this page forms part of \\
+\hline
+{\em page\+Width} & The width of the backing texture. \\
+\hline
+{\em page\+Height} & The height of the backing texture. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_slick_exception}{Slick\+Exception}}} & if the backing texture could not be created. \\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyCode}
+100                                                                                                    \{
+101         this.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1font_1_1_glyph_page_a24df618c9e902dd841e708d572559641}{unicodeFont}} = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1font_1_1_glyph_page_a24df618c9e902dd841e708d572559641}{unicodeFont}};
+102         this.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1font_1_1_glyph_page_a92a417a19c115ae906499f7d8c026130}{pageWidth}} = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1font_1_1_glyph_page_a92a417a19c115ae906499f7d8c026130}{pageWidth}};
+103         this.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1font_1_1_glyph_page_a87d58eab40df58d9ad0d1cd5f2d0db3b}{pageHeight}} = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1font_1_1_glyph_page_a87d58eab40df58d9ad0d1cd5f2d0db3b}{pageHeight}};
+104 
+105         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1font_1_1_glyph_page_a9ca6f69c7df1769fe54cbd6a13f46645}{pageImage}} = \textcolor{keyword}{new} Image(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1font_1_1_glyph_page_a92a417a19c115ae906499f7d8c026130}{pageWidth}}, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1font_1_1_glyph_page_a87d58eab40df58d9ad0d1cd5f2d0db3b}{pageHeight}});
+106     \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1font_1_1_glyph_page_acc727475850f1b225b4dd58b627838d7}\label{classorg_1_1newdawn_1_1slick_1_1font_1_1_glyph_page_acc727475850f1b225b4dd58b627838d7}} 
+\index{org\+::newdawn\+::slick\+::font\+::\+Glyph\+Page@{org\+::newdawn\+::slick\+::font\+::\+Glyph\+Page}!\mbox{[}static initializer\mbox{]}@{[static initializer]}}
+\index{\mbox{[}static initializer\mbox{]}@{[static initializer]}!org\+::newdawn\+::slick\+::font\+::\+Glyph\+Page@{org\+::newdawn\+::slick\+::font\+::\+Glyph\+Page}}
+\subsubsection{\texorpdfstring{[static initializer]()}{[static initializer]()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily org.\+newdawn.\+slick.\+font.\+Glyph\+Page.\mbox{[}static initializer\mbox{]} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}, {\ttfamily [package]}}
+
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1font_1_1_glyph_page_acc727475850f1b225b4dd58b627838d7}\label{classorg_1_1newdawn_1_1slick_1_1font_1_1_glyph_page_acc727475850f1b225b4dd58b627838d7}} 
+\index{org\+::newdawn\+::slick\+::font\+::\+Glyph\+Page@{org\+::newdawn\+::slick\+::font\+::\+Glyph\+Page}!\mbox{[}static initializer\mbox{]}@{[static initializer]}}
+\index{\mbox{[}static initializer\mbox{]}@{[static initializer]}!org\+::newdawn\+::slick\+::font\+::\+Glyph\+Page@{org\+::newdawn\+::slick\+::font\+::\+Glyph\+Page}}
+\subsubsection{\texorpdfstring{[static initializer]()}{[static initializer]()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily org.\+newdawn.\+slick.\+font.\+Glyph\+Page.\mbox{[}static initializer\mbox{]} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}, {\ttfamily [package]}}
+
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1font_1_1_glyph_page_a1255caa181a9f4d6fa6442a8ddc17546}\label{classorg_1_1newdawn_1_1slick_1_1font_1_1_glyph_page_a1255caa181a9f4d6fa6442a8ddc17546}} 
+\index{org\+::newdawn\+::slick\+::font\+::\+Glyph\+Page@{org\+::newdawn\+::slick\+::font\+::\+Glyph\+Page}!get\+Glyphs@{get\+Glyphs}}
+\index{get\+Glyphs@{get\+Glyphs}!org\+::newdawn\+::slick\+::font\+::\+Glyph\+Page@{org\+::newdawn\+::slick\+::font\+::\+Glyph\+Page}}
+\subsubsection{\texorpdfstring{get\+Glyphs()}{getGlyphs()}}
+{\footnotesize\ttfamily List org.\+newdawn.\+slick.\+font.\+Glyph\+Page.\+get\+Glyphs (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns the glyphs stored on this page.
+
+\begin{DoxyReturn}{Returns}
+A list of \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1font_1_1_glyph}{Glyph}} elements on this page 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+248                              \{
+249         \textcolor{keywordflow}{return} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1font_1_1_glyph_page_a9e91d415e3d3b45f8e9ffaa687701bb4}{pageGlyphs}};
+250     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1font_1_1_glyph_page_ae2b1131c437b43c1c3e6d774d09f9ee7}\label{classorg_1_1newdawn_1_1slick_1_1font_1_1_glyph_page_ae2b1131c437b43c1c3e6d774d09f9ee7}} 
+\index{org\+::newdawn\+::slick\+::font\+::\+Glyph\+Page@{org\+::newdawn\+::slick\+::font\+::\+Glyph\+Page}!get\+Image@{get\+Image}}
+\index{get\+Image@{get\+Image}!org\+::newdawn\+::slick\+::font\+::\+Glyph\+Page@{org\+::newdawn\+::slick\+::font\+::\+Glyph\+Page}}
+\subsubsection{\texorpdfstring{get\+Image()}{getImage()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_image}{Image}} org.\+newdawn.\+slick.\+font.\+Glyph\+Page.\+get\+Image (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns the backing texture for this page.
+
+\begin{DoxyReturn}{Returns}
+The image of this page of glyphs 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+257                              \{
+258         \textcolor{keywordflow}{return} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1font_1_1_glyph_page_a9ca6f69c7df1769fe54cbd6a13f46645}{pageImage}};
+259     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1font_1_1_glyph_page_a7803412d2be72ebd03d1dee29f571770}\label{classorg_1_1newdawn_1_1slick_1_1font_1_1_glyph_page_a7803412d2be72ebd03d1dee29f571770}} 
+\index{org\+::newdawn\+::slick\+::font\+::\+Glyph\+Page@{org\+::newdawn\+::slick\+::font\+::\+Glyph\+Page}!get\+Iterator@{get\+Iterator}}
+\index{get\+Iterator@{get\+Iterator}!org\+::newdawn\+::slick\+::font\+::\+Glyph\+Page@{org\+::newdawn\+::slick\+::font\+::\+Glyph\+Page}}
+\subsubsection{\texorpdfstring{get\+Iterator()}{getIterator()}}
+{\footnotesize\ttfamily Iterator org.\+newdawn.\+slick.\+font.\+Glyph\+Page.\+get\+Iterator (\begin{DoxyParamCaption}\item[{List}]{glyphs }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+Returns an iterator for the specified glyphs, sorted either ascending or descending.
+
+
+\begin{DoxyParams}{Parameters}
+{\em glyphs} & The glyphs to return if present \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+An iterator of the sorted list of glyphs 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+225                                               \{
+226         \textcolor{keywordflow}{if} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1font_1_1_glyph_page_a2503df17a682f59d93a93acb3182075b}{orderAscending}}) \textcolor{keywordflow}{return} glyphs.iterator();
+227         \textcolor{keyword}{final} ListIterator iter = glyphs.listIterator(glyphs.size());
+228         \textcolor{keywordflow}{return} \textcolor{keyword}{new} Iterator() \{
+229             \textcolor{keyword}{public} \textcolor{keywordtype}{boolean} hasNext () \{
+230                 \textcolor{keywordflow}{return} iter.hasPrevious();
+231             \}
+232 
+233             \textcolor{keyword}{public} Object next () \{
+234                 \textcolor{keywordflow}{return} iter.previous();
+235             \}
+236 
+237             \textcolor{keyword}{public} \textcolor{keywordtype}{void} \textcolor{keyword}{remove} () \{
+238                 iter.remove();
+239             \}
+240         \};
+241     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1font_1_1_glyph_page_a0c33343f5d5b8c363cace62804c1d443}\label{classorg_1_1newdawn_1_1slick_1_1font_1_1_glyph_page_a0c33343f5d5b8c363cace62804c1d443}} 
+\index{org\+::newdawn\+::slick\+::font\+::\+Glyph\+Page@{org\+::newdawn\+::slick\+::font\+::\+Glyph\+Page}!get\+Scratch\+Graphics@{get\+Scratch\+Graphics}}
+\index{get\+Scratch\+Graphics@{get\+Scratch\+Graphics}!org\+::newdawn\+::slick\+::font\+::\+Glyph\+Page@{org\+::newdawn\+::slick\+::font\+::\+Glyph\+Page}}
+\subsubsection{\texorpdfstring{get\+Scratch\+Graphics()}{getScratchGraphics()}}
+{\footnotesize\ttfamily static Graphics2D org.\+newdawn.\+slick.\+font.\+Glyph\+Page.\+get\+Scratch\+Graphics (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Get the scratch graphics used to generate the page of glyphs
+
+\begin{DoxyReturn}{Returns}
+The scratch graphics used to build the page 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+69                                                   \{
+70         \textcolor{keywordflow}{return} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1font_1_1_glyph_page_a493fd684bdaaf07f0e15d00e4e173391}{scratchGraphics}};
+71     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1font_1_1_glyph_page_a2123a4715446781b1baae6f8a4c7d811}\label{classorg_1_1newdawn_1_1slick_1_1font_1_1_glyph_page_a2123a4715446781b1baae6f8a4c7d811}} 
+\index{org\+::newdawn\+::slick\+::font\+::\+Glyph\+Page@{org\+::newdawn\+::slick\+::font\+::\+Glyph\+Page}!load\+Glyphs@{load\+Glyphs}}
+\index{load\+Glyphs@{load\+Glyphs}!org\+::newdawn\+::slick\+::font\+::\+Glyph\+Page@{org\+::newdawn\+::slick\+::font\+::\+Glyph\+Page}}
+\subsubsection{\texorpdfstring{load\+Glyphs()}{loadGlyphs()}}
+{\footnotesize\ttfamily int org.\+newdawn.\+slick.\+font.\+Glyph\+Page.\+load\+Glyphs (\begin{DoxyParamCaption}\item[{List}]{glyphs,  }\item[{int}]{max\+Glyphs\+To\+Load }\end{DoxyParamCaption}) throws \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_slick_exception}{Slick\+Exception}}\hspace{0.3cm}{\ttfamily [inline]}}
+
+Loads glyphs to the backing texture and sets the image on each loaded glyph. Loaded glyphs are removed from the list.
+
+If this page already has glyphs and max\+Glyphs\+To\+Load is -\/1, then this method will return 0 if all the new glyphs don\textquotesingle{}t fit. This reduces texture binds when drawing since glyphs loaded at once are typically displayed together. 
+\begin{DoxyParams}{Parameters}
+{\em glyphs} & The glyphs to load. \\
+\hline
+{\em max\+Glyphs\+To\+Load} & This is the maximum number of glyphs to load from the list. Set to -\/1 to attempt to load all the glyphs. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The number of glyphs that were actually loaded. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_slick_exception}{Slick\+Exception}}} & if the glyph could not be rendered. \\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyCode}
+119                                                                                    \{
+120         \textcolor{keywordflow}{if} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1font_1_1_glyph_page_a98ef737403aa53fed93e68e08117ec39}{rowHeight}} != 0 && maxGlyphsToLoad == -1) \{
+121             \textcolor{comment}{// If this page has glyphs and we are not loading incrementally, return zero if any of the
+       glyphs don't fit.}
+122             \textcolor{keywordtype}{int} testX = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1font_1_1_glyph_page_a6d1de13b49bd950e136d250a37eee4eb}{pageX}};
+123             \textcolor{keywordtype}{int} testY = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1font_1_1_glyph_page_a94b7aa9b91e5227a58e8f416ffe0fbaa}{pageY}};
+124             \textcolor{keywordtype}{int} testRowHeight = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1font_1_1_glyph_page_a98ef737403aa53fed93e68e08117ec39}{rowHeight}};
+125             \textcolor{keywordflow}{for} (Iterator iter = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1font_1_1_glyph_page_a7803412d2be72ebd03d1dee29f571770}{getIterator}}(glyphs); iter.hasNext();) \{
+126                 Glyph glyph = (Glyph)iter.next();
+127                 \textcolor{keywordtype}{int} width = glyph.getWidth();
+128                 \textcolor{keywordtype}{int} height = glyph.getHeight();
+129                 \textcolor{keywordflow}{if} (testX + width >= \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1font_1_1_glyph_page_a92a417a19c115ae906499f7d8c026130}{pageWidth}}) \{
+130                     testX = 0;
+131                     testY += testRowHeight;
+132                     testRowHeight = height;
+133                 \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (height > testRowHeight) \{
+134                     testRowHeight = height;
+135                 \}
+136                 \textcolor{keywordflow}{if} (testY + testRowHeight >= \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1font_1_1_glyph_page_a92a417a19c115ae906499f7d8c026130}{pageWidth}}) \textcolor{keywordflow}{return} 0;
+137                 testX += width;
+138             \}
+139         \}
+140 
+141         Color.white.bind();
+142         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1font_1_1_glyph_page_a9ca6f69c7df1769fe54cbd6a13f46645}{pageImage}}.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_image_ad5e41640d7b1b235926f3d248935e694}{bind}}();
+143 
+144         \textcolor{keywordtype}{int} i = 0;
+145         \textcolor{keywordflow}{for} (Iterator iter = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1font_1_1_glyph_page_a7803412d2be72ebd03d1dee29f571770}{getIterator}}(glyphs); iter.hasNext();) \{
+146             Glyph glyph = (Glyph)iter.next();
+147             \textcolor{keywordtype}{int} width = Math.min(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1font_1_1_glyph_page_ac45492a4d734e35753d7fa4f7730e5c1}{MAX\_GLYPH\_SIZE}}, glyph.getWidth());
+148             \textcolor{keywordtype}{int} height = Math.min(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1font_1_1_glyph_page_ac45492a4d734e35753d7fa4f7730e5c1}{MAX\_GLYPH\_SIZE}}, glyph.getHeight());
+149 
+150             \textcolor{keywordflow}{if} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1font_1_1_glyph_page_a98ef737403aa53fed93e68e08117ec39}{rowHeight}} == 0) \{
+151                 \textcolor{comment}{// The first glyph always fits.}
+152                 \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1font_1_1_glyph_page_a98ef737403aa53fed93e68e08117ec39}{rowHeight}} = height;
+153             \} \textcolor{keywordflow}{else} \{
+154                 \textcolor{comment}{// Wrap to the next line if needed, or break if no more fit.}
+155                 \textcolor{keywordflow}{if} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1font_1_1_glyph_page_a6d1de13b49bd950e136d250a37eee4eb}{pageX}} + width >= \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1font_1_1_glyph_page_a92a417a19c115ae906499f7d8c026130}{pageWidth}}) \{
+156                     \textcolor{keywordflow}{if} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1font_1_1_glyph_page_a94b7aa9b91e5227a58e8f416ffe0fbaa}{pageY}} + \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1font_1_1_glyph_page_a98ef737403aa53fed93e68e08117ec39}{rowHeight}} + height >= \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1font_1_1_glyph_page_a87d58eab40df58d9ad0d1cd5f2d0db3b}{pageHeight}}) \textcolor{keywordflow}{break};
+157                     \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1font_1_1_glyph_page_a6d1de13b49bd950e136d250a37eee4eb}{pageX}} = 0;
+158                     \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1font_1_1_glyph_page_a94b7aa9b91e5227a58e8f416ffe0fbaa}{pageY}} += \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1font_1_1_glyph_page_a98ef737403aa53fed93e68e08117ec39}{rowHeight}};
+159                     \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1font_1_1_glyph_page_a98ef737403aa53fed93e68e08117ec39}{rowHeight}} = height;
+160                 \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (height > \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1font_1_1_glyph_page_a98ef737403aa53fed93e68e08117ec39}{rowHeight}}) \{
+161                     \textcolor{keywordflow}{if} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1font_1_1_glyph_page_a94b7aa9b91e5227a58e8f416ffe0fbaa}{pageY}} + height >= \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1font_1_1_glyph_page_a87d58eab40df58d9ad0d1cd5f2d0db3b}{pageHeight}}) \textcolor{keywordflow}{break};
+162                     \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1font_1_1_glyph_page_a98ef737403aa53fed93e68e08117ec39}{rowHeight}} = height;
+163                 \}
+164             \}
+165 
+166             \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1font_1_1_glyph_page_ab2f0b2c9a31ae9402ab7a0575fb855c0}{renderGlyph}}(glyph, width, height);
+167             \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1font_1_1_glyph_page_a9e91d415e3d3b45f8e9ffaa687701bb4}{pageGlyphs}}.add(glyph);
+168 
+169             \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1font_1_1_glyph_page_a6d1de13b49bd950e136d250a37eee4eb}{pageX}} += width;
+170 
+171             iter.remove();
+172             i++;
+173             \textcolor{keywordflow}{if} (i == maxGlyphsToLoad) \{
+174                 \textcolor{comment}{// If loading incrementally, flip orderAscending so it won't change, since we'll probably
+       load the rest next time.}
+175                 \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1font_1_1_glyph_page_a2503df17a682f59d93a93acb3182075b}{orderAscending}} = !\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1font_1_1_glyph_page_a2503df17a682f59d93a93acb3182075b}{orderAscending}};
+176                 \textcolor{keywordflow}{break};
+177             \}
+178         \}
+179 
+180         TextureImpl.bindNone();
+181 
+182         \textcolor{comment}{// Every other batch of glyphs added to a page are sorted the opposite way to attempt to keep same
+       size glyps together.}
+183         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1font_1_1_glyph_page_a2503df17a682f59d93a93acb3182075b}{orderAscending}} = !\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1font_1_1_glyph_page_a2503df17a682f59d93a93acb3182075b}{orderAscending}};
+184 
+185         \textcolor{keywordflow}{return} i;
+186     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1font_1_1_glyph_page_ab2f0b2c9a31ae9402ab7a0575fb855c0}\label{classorg_1_1newdawn_1_1slick_1_1font_1_1_glyph_page_ab2f0b2c9a31ae9402ab7a0575fb855c0}} 
+\index{org\+::newdawn\+::slick\+::font\+::\+Glyph\+Page@{org\+::newdawn\+::slick\+::font\+::\+Glyph\+Page}!render\+Glyph@{render\+Glyph}}
+\index{render\+Glyph@{render\+Glyph}!org\+::newdawn\+::slick\+::font\+::\+Glyph\+Page@{org\+::newdawn\+::slick\+::font\+::\+Glyph\+Page}}
+\subsubsection{\texorpdfstring{render\+Glyph()}{renderGlyph()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+font.\+Glyph\+Page.\+render\+Glyph (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1font_1_1_glyph}{Glyph}}}]{glyph,  }\item[{int}]{width,  }\item[{int}]{height }\end{DoxyParamCaption}) throws \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_slick_exception}{Slick\+Exception}}\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+Loads a single glyph to the backing texture, if it fits.
+
+
+\begin{DoxyParams}{Parameters}
+{\em glyph} & The glyph to be rendered \\
+\hline
+{\em width} & The expected width of the glyph \\
+\hline
+{\em height} & The expected height of the glyph \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_slick_exception}{Slick\+Exception}}} & if the glyph could not be rendered. \\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyCode}
+196                                                                                        \{
+197         \textcolor{comment}{// Draw the glyph to the scratch image using Java2D.}
+198         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1font_1_1_glyph_page_a493fd684bdaaf07f0e15d00e4e173391}{scratchGraphics}}.setComposite(AlphaComposite.Clear);
+199         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1font_1_1_glyph_page_a493fd684bdaaf07f0e15d00e4e173391}{scratchGraphics}}.fillRect(0, 0, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1font_1_1_glyph_page_ac45492a4d734e35753d7fa4f7730e5c1}{MAX\_GLYPH\_SIZE}}, 
+      \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1font_1_1_glyph_page_ac45492a4d734e35753d7fa4f7730e5c1}{MAX\_GLYPH\_SIZE}});
+200         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1font_1_1_glyph_page_a493fd684bdaaf07f0e15d00e4e173391}{scratchGraphics}}.setComposite(AlphaComposite.SrcOver);
+201         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1font_1_1_glyph_page_a493fd684bdaaf07f0e15d00e4e173391}{scratchGraphics}}.setColor(java.awt.Color.white);
+202         \textcolor{keywordflow}{for} (Iterator iter = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1font_1_1_glyph_page_a24df618c9e902dd841e708d572559641}{unicodeFont}}.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_unicode_font_a939775feafa7099e8631da5ef44ee28c}{getEffects}}().iterator(); iter.hasNext();)
+203             ((Effect)iter.next()).draw(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1font_1_1_glyph_page_a4151d180856eeb907b906dde31e7f93f}{scratchImage}}, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1font_1_1_glyph_page_a493fd684bdaaf07f0e15d00e4e173391}{scratchGraphics}}, 
+      \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1font_1_1_glyph_page_a24df618c9e902dd841e708d572559641}{unicodeFont}}, glyph);
+204         glyph.setShape(null); \textcolor{comment}{// The shape will never be needed again.}
+205 
+206         WritableRaster raster = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1font_1_1_glyph_page_a4151d180856eeb907b906dde31e7f93f}{scratchImage}}.getRaster();
+207         \textcolor{keywordtype}{int}[] row = \textcolor{keyword}{new} \textcolor{keywordtype}{int}[width];
+208         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} y = 0; y < height; y++) \{
+209             raster.getDataElements(0, y, width, 1, row);
+210             \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1font_1_1_glyph_page_a1ca850b88627ce8b0d534f80b797ec51}{scratchIntBuffer}}.put(row);
+211         \}
+212         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1font_1_1_glyph_page_a5d5c2f94f75d77839cd0715607d326cc}{GL}}.\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1opengl_1_1renderer_1_1_s_g_l_a0c94360a9a5a4d66cd52b21d181c8987}{glTexSubImage2D}}(SGL.GL\_TEXTURE\_2D, 0, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1font_1_1_glyph_page_a6d1de13b49bd950e136d250a37eee4eb}{pageX}}, 
+      \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1font_1_1_glyph_page_a94b7aa9b91e5227a58e8f416ffe0fbaa}{pageY}}, width, height, SGL.GL\_BGRA, SGL.GL\_UNSIGNED\_BYTE,
+213             \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1font_1_1_glyph_page_a08e07e05a984560722f01af927f205c5}{scratchByteBuffer}});
+214         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1font_1_1_glyph_page_a1ca850b88627ce8b0d534f80b797ec51}{scratchIntBuffer}}.clear();
+215 
+216         glyph.setImage(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1font_1_1_glyph_page_a9ca6f69c7df1769fe54cbd6a13f46645}{pageImage}}.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_image_a2ccb3bbdda674f9efdec614a54e31e32}{getSubImage}}(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1font_1_1_glyph_page_a6d1de13b49bd950e136d250a37eee4eb}{pageX}}, 
+      \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1font_1_1_glyph_page_a94b7aa9b91e5227a58e8f416ffe0fbaa}{pageY}}, width, height));
+217     \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1font_1_1_glyph_page_a5d5c2f94f75d77839cd0715607d326cc}\label{classorg_1_1newdawn_1_1slick_1_1font_1_1_glyph_page_a5d5c2f94f75d77839cd0715607d326cc}} 
+\index{org\+::newdawn\+::slick\+::font\+::\+Glyph\+Page@{org\+::newdawn\+::slick\+::font\+::\+Glyph\+Page}!GL@{GL}}
+\index{GL@{GL}!org\+::newdawn\+::slick\+::font\+::\+Glyph\+Page@{org\+::newdawn\+::slick\+::font\+::\+Glyph\+Page}}
+\subsubsection{\texorpdfstring{GL}{GL}}
+{\footnotesize\ttfamily final \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1opengl_1_1renderer_1_1_s_g_l}{S\+GL}} org.\+newdawn.\+slick.\+font.\+Glyph\+Page.\+GL = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1renderer_1_1_renderer_abe742c3a7dfca67c6c01821d27087308}{Renderer.\+get}}()\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+The interface to Open\+GL \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1font_1_1_glyph_page_ac45492a4d734e35753d7fa4f7730e5c1}\label{classorg_1_1newdawn_1_1slick_1_1font_1_1_glyph_page_ac45492a4d734e35753d7fa4f7730e5c1}} 
+\index{org\+::newdawn\+::slick\+::font\+::\+Glyph\+Page@{org\+::newdawn\+::slick\+::font\+::\+Glyph\+Page}!M\+A\+X\+\_\+\+G\+L\+Y\+P\+H\+\_\+\+S\+I\+ZE@{M\+A\+X\+\_\+\+G\+L\+Y\+P\+H\+\_\+\+S\+I\+ZE}}
+\index{M\+A\+X\+\_\+\+G\+L\+Y\+P\+H\+\_\+\+S\+I\+ZE@{M\+A\+X\+\_\+\+G\+L\+Y\+P\+H\+\_\+\+S\+I\+ZE}!org\+::newdawn\+::slick\+::font\+::\+Glyph\+Page@{org\+::newdawn\+::slick\+::font\+::\+Glyph\+Page}}
+\subsubsection{\texorpdfstring{M\+A\+X\+\_\+\+G\+L\+Y\+P\+H\+\_\+\+S\+I\+ZE}{MAX\_GLYPH\_SIZE}}
+{\footnotesize\ttfamily final int org.\+newdawn.\+slick.\+font.\+Glyph\+Page.\+M\+A\+X\+\_\+\+G\+L\+Y\+P\+H\+\_\+\+S\+I\+ZE = 256\hspace{0.3cm}{\ttfamily [static]}}
+
+The maxium size of an individual glyph \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1font_1_1_glyph_page_a2503df17a682f59d93a93acb3182075b}\label{classorg_1_1newdawn_1_1slick_1_1font_1_1_glyph_page_a2503df17a682f59d93a93acb3182075b}} 
+\index{org\+::newdawn\+::slick\+::font\+::\+Glyph\+Page@{org\+::newdawn\+::slick\+::font\+::\+Glyph\+Page}!order\+Ascending@{order\+Ascending}}
+\index{order\+Ascending@{order\+Ascending}!org\+::newdawn\+::slick\+::font\+::\+Glyph\+Page@{org\+::newdawn\+::slick\+::font\+::\+Glyph\+Page}}
+\subsubsection{\texorpdfstring{order\+Ascending}{orderAscending}}
+{\footnotesize\ttfamily boolean org.\+newdawn.\+slick.\+font.\+Glyph\+Page.\+order\+Ascending\hspace{0.3cm}{\ttfamily [private]}}
+
+True if the glyphs are ordered \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1font_1_1_glyph_page_a9e91d415e3d3b45f8e9ffaa687701bb4}\label{classorg_1_1newdawn_1_1slick_1_1font_1_1_glyph_page_a9e91d415e3d3b45f8e9ffaa687701bb4}} 
+\index{org\+::newdawn\+::slick\+::font\+::\+Glyph\+Page@{org\+::newdawn\+::slick\+::font\+::\+Glyph\+Page}!page\+Glyphs@{page\+Glyphs}}
+\index{page\+Glyphs@{page\+Glyphs}!org\+::newdawn\+::slick\+::font\+::\+Glyph\+Page@{org\+::newdawn\+::slick\+::font\+::\+Glyph\+Page}}
+\subsubsection{\texorpdfstring{page\+Glyphs}{pageGlyphs}}
+{\footnotesize\ttfamily final List org.\+newdawn.\+slick.\+font.\+Glyph\+Page.\+page\+Glyphs = new Array\+List(32)\hspace{0.3cm}{\ttfamily [private]}}
+
+The list of glyphs on this page \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1font_1_1_glyph_page_a87d58eab40df58d9ad0d1cd5f2d0db3b}\label{classorg_1_1newdawn_1_1slick_1_1font_1_1_glyph_page_a87d58eab40df58d9ad0d1cd5f2d0db3b}} 
+\index{org\+::newdawn\+::slick\+::font\+::\+Glyph\+Page@{org\+::newdawn\+::slick\+::font\+::\+Glyph\+Page}!page\+Height@{page\+Height}}
+\index{page\+Height@{page\+Height}!org\+::newdawn\+::slick\+::font\+::\+Glyph\+Page@{org\+::newdawn\+::slick\+::font\+::\+Glyph\+Page}}
+\subsubsection{\texorpdfstring{page\+Height}{pageHeight}}
+{\footnotesize\ttfamily final int org.\+newdawn.\+slick.\+font.\+Glyph\+Page.\+page\+Height\hspace{0.3cm}{\ttfamily [private]}}
+
+The height of this page\textquotesingle{}s image \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1font_1_1_glyph_page_a9ca6f69c7df1769fe54cbd6a13f46645}\label{classorg_1_1newdawn_1_1slick_1_1font_1_1_glyph_page_a9ca6f69c7df1769fe54cbd6a13f46645}} 
+\index{org\+::newdawn\+::slick\+::font\+::\+Glyph\+Page@{org\+::newdawn\+::slick\+::font\+::\+Glyph\+Page}!page\+Image@{page\+Image}}
+\index{page\+Image@{page\+Image}!org\+::newdawn\+::slick\+::font\+::\+Glyph\+Page@{org\+::newdawn\+::slick\+::font\+::\+Glyph\+Page}}
+\subsubsection{\texorpdfstring{page\+Image}{pageImage}}
+{\footnotesize\ttfamily final \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_image}{Image}} org.\+newdawn.\+slick.\+font.\+Glyph\+Page.\+page\+Image\hspace{0.3cm}{\ttfamily [private]}}
+
+The image containing the glyphs \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1font_1_1_glyph_page_a92a417a19c115ae906499f7d8c026130}\label{classorg_1_1newdawn_1_1slick_1_1font_1_1_glyph_page_a92a417a19c115ae906499f7d8c026130}} 
+\index{org\+::newdawn\+::slick\+::font\+::\+Glyph\+Page@{org\+::newdawn\+::slick\+::font\+::\+Glyph\+Page}!page\+Width@{page\+Width}}
+\index{page\+Width@{page\+Width}!org\+::newdawn\+::slick\+::font\+::\+Glyph\+Page@{org\+::newdawn\+::slick\+::font\+::\+Glyph\+Page}}
+\subsubsection{\texorpdfstring{page\+Width}{pageWidth}}
+{\footnotesize\ttfamily final int org.\+newdawn.\+slick.\+font.\+Glyph\+Page.\+page\+Width\hspace{0.3cm}{\ttfamily [private]}}
+
+The width of this page\textquotesingle{}s image \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1font_1_1_glyph_page_a6d1de13b49bd950e136d250a37eee4eb}\label{classorg_1_1newdawn_1_1slick_1_1font_1_1_glyph_page_a6d1de13b49bd950e136d250a37eee4eb}} 
+\index{org\+::newdawn\+::slick\+::font\+::\+Glyph\+Page@{org\+::newdawn\+::slick\+::font\+::\+Glyph\+Page}!pageX@{pageX}}
+\index{pageX@{pageX}!org\+::newdawn\+::slick\+::font\+::\+Glyph\+Page@{org\+::newdawn\+::slick\+::font\+::\+Glyph\+Page}}
+\subsubsection{\texorpdfstring{pageX}{pageX}}
+{\footnotesize\ttfamily int org.\+newdawn.\+slick.\+font.\+Glyph\+Page.\+pageX\hspace{0.3cm}{\ttfamily [private]}}
+
+The x position of the page \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1font_1_1_glyph_page_a94b7aa9b91e5227a58e8f416ffe0fbaa}\label{classorg_1_1newdawn_1_1slick_1_1font_1_1_glyph_page_a94b7aa9b91e5227a58e8f416ffe0fbaa}} 
+\index{org\+::newdawn\+::slick\+::font\+::\+Glyph\+Page@{org\+::newdawn\+::slick\+::font\+::\+Glyph\+Page}!pageY@{pageY}}
+\index{pageY@{pageY}!org\+::newdawn\+::slick\+::font\+::\+Glyph\+Page@{org\+::newdawn\+::slick\+::font\+::\+Glyph\+Page}}
+\subsubsection{\texorpdfstring{pageY}{pageY}}
+{\footnotesize\ttfamily int org.\+newdawn.\+slick.\+font.\+Glyph\+Page.\+pageY\hspace{0.3cm}{\ttfamily [private]}}
+
+The y position of the page \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1font_1_1_glyph_page_ad822e77c036e6182652982a3def3de64}\label{classorg_1_1newdawn_1_1slick_1_1font_1_1_glyph_page_ad822e77c036e6182652982a3def3de64}} 
+\index{org\+::newdawn\+::slick\+::font\+::\+Glyph\+Page@{org\+::newdawn\+::slick\+::font\+::\+Glyph\+Page}!render\+Context@{render\+Context}}
+\index{render\+Context@{render\+Context}!org\+::newdawn\+::slick\+::font\+::\+Glyph\+Page@{org\+::newdawn\+::slick\+::font\+::\+Glyph\+Page}}
+\subsubsection{\texorpdfstring{render\+Context}{renderContext}}
+{\footnotesize\ttfamily Font\+Render\+Context org.\+newdawn.\+slick.\+font.\+Glyph\+Page.\+render\+Context = scratch\+Graphics.\+get\+Font\+Render\+Context()\hspace{0.3cm}{\ttfamily [static]}}
+
+The render context in which the glyphs will be generated \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1font_1_1_glyph_page_a98ef737403aa53fed93e68e08117ec39}\label{classorg_1_1newdawn_1_1slick_1_1font_1_1_glyph_page_a98ef737403aa53fed93e68e08117ec39}} 
+\index{org\+::newdawn\+::slick\+::font\+::\+Glyph\+Page@{org\+::newdawn\+::slick\+::font\+::\+Glyph\+Page}!row\+Height@{row\+Height}}
+\index{row\+Height@{row\+Height}!org\+::newdawn\+::slick\+::font\+::\+Glyph\+Page@{org\+::newdawn\+::slick\+::font\+::\+Glyph\+Page}}
+\subsubsection{\texorpdfstring{row\+Height}{rowHeight}}
+{\footnotesize\ttfamily int org.\+newdawn.\+slick.\+font.\+Glyph\+Page.\+row\+Height\hspace{0.3cm}{\ttfamily [private]}}
+
+The height of the last row on the page \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1font_1_1_glyph_page_a08e07e05a984560722f01af927f205c5}\label{classorg_1_1newdawn_1_1slick_1_1font_1_1_glyph_page_a08e07e05a984560722f01af927f205c5}} 
+\index{org\+::newdawn\+::slick\+::font\+::\+Glyph\+Page@{org\+::newdawn\+::slick\+::font\+::\+Glyph\+Page}!scratch\+Byte\+Buffer@{scratch\+Byte\+Buffer}}
+\index{scratch\+Byte\+Buffer@{scratch\+Byte\+Buffer}!org\+::newdawn\+::slick\+::font\+::\+Glyph\+Page@{org\+::newdawn\+::slick\+::font\+::\+Glyph\+Page}}
+\subsubsection{\texorpdfstring{scratch\+Byte\+Buffer}{scratchByteBuffer}}
+{\footnotesize\ttfamily Byte\+Buffer org.\+newdawn.\+slick.\+font.\+Glyph\+Page.\+scratch\+Byte\+Buffer = Byte\+Buffer.\+allocate\+Direct(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1font_1_1_glyph_page_ac45492a4d734e35753d7fa4f7730e5c1}{M\+A\+X\+\_\+\+G\+L\+Y\+P\+H\+\_\+\+S\+I\+ZE}} $\ast$ \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1font_1_1_glyph_page_ac45492a4d734e35753d7fa4f7730e5c1}{M\+A\+X\+\_\+\+G\+L\+Y\+P\+H\+\_\+\+S\+I\+ZE}} $\ast$ 4)\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+A temporary working buffer \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1font_1_1_glyph_page_a493fd684bdaaf07f0e15d00e4e173391}\label{classorg_1_1newdawn_1_1slick_1_1font_1_1_glyph_page_a493fd684bdaaf07f0e15d00e4e173391}} 
+\index{org\+::newdawn\+::slick\+::font\+::\+Glyph\+Page@{org\+::newdawn\+::slick\+::font\+::\+Glyph\+Page}!scratch\+Graphics@{scratch\+Graphics}}
+\index{scratch\+Graphics@{scratch\+Graphics}!org\+::newdawn\+::slick\+::font\+::\+Glyph\+Page@{org\+::newdawn\+::slick\+::font\+::\+Glyph\+Page}}
+\subsubsection{\texorpdfstring{scratch\+Graphics}{scratchGraphics}}
+{\footnotesize\ttfamily Graphics2D org.\+newdawn.\+slick.\+font.\+Glyph\+Page.\+scratch\+Graphics = (Graphics2D)scratch\+Image.\+get\+Graphics()\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+The graphics context form the temporary image \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1font_1_1_glyph_page_a4151d180856eeb907b906dde31e7f93f}\label{classorg_1_1newdawn_1_1slick_1_1font_1_1_glyph_page_a4151d180856eeb907b906dde31e7f93f}} 
+\index{org\+::newdawn\+::slick\+::font\+::\+Glyph\+Page@{org\+::newdawn\+::slick\+::font\+::\+Glyph\+Page}!scratch\+Image@{scratch\+Image}}
+\index{scratch\+Image@{scratch\+Image}!org\+::newdawn\+::slick\+::font\+::\+Glyph\+Page@{org\+::newdawn\+::slick\+::font\+::\+Glyph\+Page}}
+\subsubsection{\texorpdfstring{scratch\+Image}{scratchImage}}
+{\footnotesize\ttfamily Buffered\+Image org.\+newdawn.\+slick.\+font.\+Glyph\+Page.\+scratch\+Image = new Buffered\+Image(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1font_1_1_glyph_page_ac45492a4d734e35753d7fa4f7730e5c1}{M\+A\+X\+\_\+\+G\+L\+Y\+P\+H\+\_\+\+S\+I\+ZE}}, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1font_1_1_glyph_page_ac45492a4d734e35753d7fa4f7730e5c1}{M\+A\+X\+\_\+\+G\+L\+Y\+P\+H\+\_\+\+S\+I\+ZE}}, Buffered\+Image.\+T\+Y\+P\+E\+\_\+\+I\+N\+T\+\_\+\+A\+R\+GB)\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+A temporary image used to generate the glyph page \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1font_1_1_glyph_page_a1ca850b88627ce8b0d534f80b797ec51}\label{classorg_1_1newdawn_1_1slick_1_1font_1_1_glyph_page_a1ca850b88627ce8b0d534f80b797ec51}} 
+\index{org\+::newdawn\+::slick\+::font\+::\+Glyph\+Page@{org\+::newdawn\+::slick\+::font\+::\+Glyph\+Page}!scratch\+Int\+Buffer@{scratch\+Int\+Buffer}}
+\index{scratch\+Int\+Buffer@{scratch\+Int\+Buffer}!org\+::newdawn\+::slick\+::font\+::\+Glyph\+Page@{org\+::newdawn\+::slick\+::font\+::\+Glyph\+Page}}
+\subsubsection{\texorpdfstring{scratch\+Int\+Buffer}{scratchIntBuffer}}
+{\footnotesize\ttfamily Int\+Buffer org.\+newdawn.\+slick.\+font.\+Glyph\+Page.\+scratch\+Int\+Buffer = scratch\+Byte\+Buffer.\+as\+Int\+Buffer()\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+A temporary working buffer \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1font_1_1_glyph_page_a24df618c9e902dd841e708d572559641}\label{classorg_1_1newdawn_1_1slick_1_1font_1_1_glyph_page_a24df618c9e902dd841e708d572559641}} 
+\index{org\+::newdawn\+::slick\+::font\+::\+Glyph\+Page@{org\+::newdawn\+::slick\+::font\+::\+Glyph\+Page}!unicode\+Font@{unicode\+Font}}
+\index{unicode\+Font@{unicode\+Font}!org\+::newdawn\+::slick\+::font\+::\+Glyph\+Page@{org\+::newdawn\+::slick\+::font\+::\+Glyph\+Page}}
+\subsubsection{\texorpdfstring{unicode\+Font}{unicodeFont}}
+{\footnotesize\ttfamily final \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_unicode_font}{Unicode\+Font}} org.\+newdawn.\+slick.\+font.\+Glyph\+Page.\+unicode\+Font\hspace{0.3cm}{\ttfamily [private]}}
+
+The font this page is part of 

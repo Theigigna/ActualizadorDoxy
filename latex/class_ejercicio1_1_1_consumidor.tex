@@ -1,0 +1,76 @@
+\hypertarget{class_ejercicio1_1_1_consumidor}{}\section{Ejercicio1.\+Consumidor Class Reference}
+\label{class_ejercicio1_1_1_consumidor}\index{Ejercicio1.\+Consumidor@{Ejercicio1.\+Consumidor}}
+Inheritance diagram for Ejercicio1.\+Consumidor\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_ejercicio1_1_1_consumidor}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_ejercicio1_1_1_consumidor_a160124b1c03fe7b1b9c894bf7a2fd94a}{Consumidor}} (String \mbox{\hyperlink{class_ejercicio1_1_1_consumidor_ab75c008fd9c0c5a5e0ce3e09101ba3e4}{nombre}}, \mbox{\hyperlink{class_ejercicio1_1_1_buffer}{Buffer}} mi\+Buzon)
+\item 
+void \mbox{\hyperlink{class_ejercicio1_1_1_consumidor_abce2b0923447de7c4fe720301d8da71b}{run}} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+String \mbox{\hyperlink{class_ejercicio1_1_1_consumidor_ab75c008fd9c0c5a5e0ce3e09101ba3e4}{nombre}}
+\item 
+\mbox{\hyperlink{class_ejercicio1_1_1_buffer}{Buffer}} \mbox{\hyperlink{class_ejercicio1_1_1_consumidor_a1175b191e4381ba7b58a8049158791b5}{mi\+Buffer}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_ejercicio1_1_1_consumidor_a160124b1c03fe7b1b9c894bf7a2fd94a}\label{class_ejercicio1_1_1_consumidor_a160124b1c03fe7b1b9c894bf7a2fd94a}} 
+\index{Ejercicio1\+::\+Consumidor@{Ejercicio1\+::\+Consumidor}!Consumidor@{Consumidor}}
+\index{Consumidor@{Consumidor}!Ejercicio1\+::\+Consumidor@{Ejercicio1\+::\+Consumidor}}
+\subsubsection{\texorpdfstring{Consumidor()}{Consumidor()}}
+{\footnotesize\ttfamily Ejercicio1.\+Consumidor.\+Consumidor (\begin{DoxyParamCaption}\item[{String}]{nombre,  }\item[{\mbox{\hyperlink{class_ejercicio1_1_1_buffer}{Buffer}}}]{mi\+Buzon }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+17     \{
+18         this.\mbox{\hyperlink{class_ejercicio1_1_1_consumidor_ab75c008fd9c0c5a5e0ce3e09101ba3e4}{nombre}} = \mbox{\hyperlink{class_ejercicio1_1_1_consumidor_ab75c008fd9c0c5a5e0ce3e09101ba3e4}{nombre}};
+19         this.\mbox{\hyperlink{class_ejercicio1_1_1_consumidor_a1175b191e4381ba7b58a8049158791b5}{miBuffer}}=miBuzon;
+20     \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_ejercicio1_1_1_consumidor_abce2b0923447de7c4fe720301d8da71b}\label{class_ejercicio1_1_1_consumidor_abce2b0923447de7c4fe720301d8da71b}} 
+\index{Ejercicio1\+::\+Consumidor@{Ejercicio1\+::\+Consumidor}!run@{run}}
+\index{run@{run}!Ejercicio1\+::\+Consumidor@{Ejercicio1\+::\+Consumidor}}
+\subsubsection{\texorpdfstring{run()}{run()}}
+{\footnotesize\ttfamily void Ejercicio1.\+Consumidor.\+run (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+24     \{
+25         \textcolor{keywordflow}{while}(\textcolor{keyword}{true})
+26         \{
+27             \textcolor{keywordflow}{try}
+28             \{
+29                 sleep((\textcolor{keywordtype}{int})(300+300*Math.random()));
+30             \} \textcolor{keywordflow}{catch}(InterruptedException e)\{ \}
+31             System.out.println(\mbox{\hyperlink{class_ejercicio1_1_1_consumidor_ab75c008fd9c0c5a5e0ce3e09101ba3e4}{nombre}} + \textcolor{stringliteral}{"ha leido: "} + \mbox{\hyperlink{class_ejercicio1_1_1_consumidor_a1175b191e4381ba7b58a8049158791b5}{miBuffer}}.
+      \mbox{\hyperlink{class_ejercicio1_1_1_buffer_a534af142b15755b1e0d4c6511e37683b}{recibeMensaje}}());
+32         \}
+33     \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_ejercicio1_1_1_consumidor_a1175b191e4381ba7b58a8049158791b5}\label{class_ejercicio1_1_1_consumidor_a1175b191e4381ba7b58a8049158791b5}} 
+\index{Ejercicio1\+::\+Consumidor@{Ejercicio1\+::\+Consumidor}!mi\+Buffer@{mi\+Buffer}}
+\index{mi\+Buffer@{mi\+Buffer}!Ejercicio1\+::\+Consumidor@{Ejercicio1\+::\+Consumidor}}
+\subsubsection{\texorpdfstring{mi\+Buffer}{miBuffer}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_ejercicio1_1_1_buffer}{Buffer}} Ejercicio1.\+Consumidor.\+mi\+Buffer\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_ejercicio1_1_1_consumidor_ab75c008fd9c0c5a5e0ce3e09101ba3e4}\label{class_ejercicio1_1_1_consumidor_ab75c008fd9c0c5a5e0ce3e09101ba3e4}} 
+\index{Ejercicio1\+::\+Consumidor@{Ejercicio1\+::\+Consumidor}!nombre@{nombre}}
+\index{nombre@{nombre}!Ejercicio1\+::\+Consumidor@{Ejercicio1\+::\+Consumidor}}
+\subsubsection{\texorpdfstring{nombre}{nombre}}
+{\footnotesize\ttfamily String Ejercicio1.\+Consumidor.\+nombre\hspace{0.3cm}{\ttfamily [private]}}
+

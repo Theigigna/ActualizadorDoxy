@@ -1,0 +1,95 @@
+\hypertarget{classcosasparaprobar_1_1_prueba_exchange}{}\section{cosasparaprobar.\+Prueba\+Exchange Class Reference}
+\label{classcosasparaprobar_1_1_prueba_exchange}\index{cosasparaprobar.\+Prueba\+Exchange@{cosasparaprobar.\+Prueba\+Exchange}}
+Inheritance diagram for cosasparaprobar.\+Prueba\+Exchange\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classcosasparaprobar_1_1_prueba_exchange}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classcosasparaprobar_1_1_prueba_exchange_ad9e7b50dfabee058757d9f2fb7ea83b1}{Prueba\+Exchange}} (int \mbox{\hyperlink{classcosasparaprobar_1_1_prueba_exchange_ad45f6d758155fab2ad13a5f7b403c1b6}{i}}, Exchanger$<$ String $>$ \mbox{\hyperlink{classcosasparaprobar_1_1_prueba_exchange_a9c9b91539573982d12dc4f56a948e527}{a}})
+\item 
+void \mbox{\hyperlink{classcosasparaprobar_1_1_prueba_exchange_a67dfba19ce6f5d55f46f066b45783311}{run}} ()
+\end{DoxyCompactItemize}
+\subsection*{Package Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classcosasparaprobar_1_1_prueba_exchange_ad45f6d758155fab2ad13a5f7b403c1b6}{i}}
+\item 
+Exchanger$<$ String $>$ \mbox{\hyperlink{classcosasparaprobar_1_1_prueba_exchange_a9c9b91539573982d12dc4f56a948e527}{a}}
+\item 
+String \mbox{\hyperlink{classcosasparaprobar_1_1_prueba_exchange_a6b85e0f1bfaba3f17f162a97625b6e64}{aux}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyAuthor}{Author}
+Ignacio 
+\end{DoxyAuthor}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classcosasparaprobar_1_1_prueba_exchange_ad9e7b50dfabee058757d9f2fb7ea83b1}\label{classcosasparaprobar_1_1_prueba_exchange_ad9e7b50dfabee058757d9f2fb7ea83b1}} 
+\index{cosasparaprobar\+::\+Prueba\+Exchange@{cosasparaprobar\+::\+Prueba\+Exchange}!Prueba\+Exchange@{Prueba\+Exchange}}
+\index{Prueba\+Exchange@{Prueba\+Exchange}!cosasparaprobar\+::\+Prueba\+Exchange@{cosasparaprobar\+::\+Prueba\+Exchange}}
+\subsubsection{\texorpdfstring{Prueba\+Exchange()}{PruebaExchange()}}
+{\footnotesize\ttfamily cosasparaprobar.\+Prueba\+Exchange.\+Prueba\+Exchange (\begin{DoxyParamCaption}\item[{int}]{i,  }\item[{Exchanger$<$ String $>$}]{a }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+23     \{
+24         this.\mbox{\hyperlink{classcosasparaprobar_1_1_prueba_exchange_ad45f6d758155fab2ad13a5f7b403c1b6}{i}} = \mbox{\hyperlink{classcosasparaprobar_1_1_prueba_exchange_ad45f6d758155fab2ad13a5f7b403c1b6}{i}};
+25         this.\mbox{\hyperlink{classcosasparaprobar_1_1_prueba_exchange_a9c9b91539573982d12dc4f56a948e527}{a}} = \mbox{\hyperlink{classcosasparaprobar_1_1_prueba_exchange_a9c9b91539573982d12dc4f56a948e527}{a}};
+26         this.\mbox{\hyperlink{classcosasparaprobar_1_1_prueba_exchange_a6b85e0f1bfaba3f17f162a97625b6e64}{aux}} = \textcolor{stringliteral}{"poderoso: "} + \mbox{\hyperlink{classcosasparaprobar_1_1_prueba_exchange_ad45f6d758155fab2ad13a5f7b403c1b6}{i}};
+27     \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classcosasparaprobar_1_1_prueba_exchange_a67dfba19ce6f5d55f46f066b45783311}\label{classcosasparaprobar_1_1_prueba_exchange_a67dfba19ce6f5d55f46f066b45783311}} 
+\index{cosasparaprobar\+::\+Prueba\+Exchange@{cosasparaprobar\+::\+Prueba\+Exchange}!run@{run}}
+\index{run@{run}!cosasparaprobar\+::\+Prueba\+Exchange@{cosasparaprobar\+::\+Prueba\+Exchange}}
+\subsubsection{\texorpdfstring{run()}{run()}}
+{\footnotesize\ttfamily void cosasparaprobar.\+Prueba\+Exchange.\+run (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+30     \{
+31         System.out.println(\textcolor{stringliteral}{"Preparado: "} + \mbox{\hyperlink{classcosasparaprobar_1_1_prueba_exchange_ad45f6d758155fab2ad13a5f7b403c1b6}{i}});
+32         System.out.println(\mbox{\hyperlink{classcosasparaprobar_1_1_prueba_exchange_a6b85e0f1bfaba3f17f162a97625b6e64}{aux}});
+33         \textcolor{keywordflow}{try} \{
+34             sleep (1000);
+35         \} \textcolor{keywordflow}{catch} (InterruptedException ex) \{
+36             Logger.getLogger(\mbox{\hyperlink{classcosasparaprobar_1_1_prueba_exchange_ad9e7b50dfabee058757d9f2fb7ea83b1}{PruebaExchange}}.class.getName()).log(Level.SEVERE, null, ex);
+37         \}
+38         \textcolor{keywordflow}{try} \{
+39             \mbox{\hyperlink{classcosasparaprobar_1_1_prueba_exchange_a6b85e0f1bfaba3f17f162a97625b6e64}{aux}} = \mbox{\hyperlink{classcosasparaprobar_1_1_prueba_exchange_a9c9b91539573982d12dc4f56a948e527}{a}}.exchange(\mbox{\hyperlink{classcosasparaprobar_1_1_prueba_exchange_a6b85e0f1bfaba3f17f162a97625b6e64}{aux}});
+40         \} \textcolor{keywordflow}{catch} (InterruptedException ex) \{
+41             Logger.getLogger(\mbox{\hyperlink{classcosasparaprobar_1_1_prueba_exchange_ad9e7b50dfabee058757d9f2fb7ea83b1}{PruebaExchange}}.class.getName()).log(Level.SEVERE, null, ex);
+42         \}
+43         System.out.println(\textcolor{stringliteral}{"Soy el: "} + \mbox{\hyperlink{classcosasparaprobar_1_1_prueba_exchange_ad45f6d758155fab2ad13a5f7b403c1b6}{i}} + \textcolor{stringliteral}{" y tengo: "} + \mbox{\hyperlink{classcosasparaprobar_1_1_prueba_exchange_a6b85e0f1bfaba3f17f162a97625b6e64}{aux}});
+44     \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classcosasparaprobar_1_1_prueba_exchange_a9c9b91539573982d12dc4f56a948e527}\label{classcosasparaprobar_1_1_prueba_exchange_a9c9b91539573982d12dc4f56a948e527}} 
+\index{cosasparaprobar\+::\+Prueba\+Exchange@{cosasparaprobar\+::\+Prueba\+Exchange}!a@{a}}
+\index{a@{a}!cosasparaprobar\+::\+Prueba\+Exchange@{cosasparaprobar\+::\+Prueba\+Exchange}}
+\subsubsection{\texorpdfstring{a}{a}}
+{\footnotesize\ttfamily Exchanger$<$String$>$ cosasparaprobar.\+Prueba\+Exchange.\+a\hspace{0.3cm}{\ttfamily [package]}}
+
+\mbox{\Hypertarget{classcosasparaprobar_1_1_prueba_exchange_a6b85e0f1bfaba3f17f162a97625b6e64}\label{classcosasparaprobar_1_1_prueba_exchange_a6b85e0f1bfaba3f17f162a97625b6e64}} 
+\index{cosasparaprobar\+::\+Prueba\+Exchange@{cosasparaprobar\+::\+Prueba\+Exchange}!aux@{aux}}
+\index{aux@{aux}!cosasparaprobar\+::\+Prueba\+Exchange@{cosasparaprobar\+::\+Prueba\+Exchange}}
+\subsubsection{\texorpdfstring{aux}{aux}}
+{\footnotesize\ttfamily String cosasparaprobar.\+Prueba\+Exchange.\+aux\hspace{0.3cm}{\ttfamily [package]}}
+
+\mbox{\Hypertarget{classcosasparaprobar_1_1_prueba_exchange_ad45f6d758155fab2ad13a5f7b403c1b6}\label{classcosasparaprobar_1_1_prueba_exchange_ad45f6d758155fab2ad13a5f7b403c1b6}} 
+\index{cosasparaprobar\+::\+Prueba\+Exchange@{cosasparaprobar\+::\+Prueba\+Exchange}!i@{i}}
+\index{i@{i}!cosasparaprobar\+::\+Prueba\+Exchange@{cosasparaprobar\+::\+Prueba\+Exchange}}
+\subsubsection{\texorpdfstring{i}{i}}
+{\footnotesize\ttfamily int cosasparaprobar.\+Prueba\+Exchange.\+i\hspace{0.3cm}{\ttfamily [package]}}
+

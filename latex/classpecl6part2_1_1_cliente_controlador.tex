@@ -1,0 +1,417 @@
+\hypertarget{classpecl6part2_1_1_cliente_controlador}{}\section{pecl6part2.\+Cliente\+Controlador Class Reference}
+\label{classpecl6part2_1_1_cliente_controlador}\index{pecl6part2.\+Cliente\+Controlador@{pecl6part2.\+Cliente\+Controlador}}
+Inheritance diagram for pecl6part2.\+Cliente\+Controlador\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classpecl6part2_1_1_cliente_controlador}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpecl6part2_1_1_cliente_controlador_a6e526681bd2137858bfb2940eeb23cc8}{Cliente\+Controlador}} (javax.\+swing.\+J\+Frame j\+Frame, javax.\+swing.\+J\+Button j1, javax.\+swing.\+J\+Button j2, javax.\+swing.\+J\+Button j3, javax.\+swing.\+J\+Button j4, javax.\+swing.\+J\+Label l1, javax.\+swing.\+J\+Text\+Field t1)
+\item 
+void \mbox{\hyperlink{classpecl6part2_1_1_cliente_controlador_a77cde1bf892e57d766c03a80a107d2f9}{abrir}} ()
+\item 
+void \mbox{\hyperlink{classpecl6part2_1_1_cliente_controlador_acaff5088389f8aa5f3571c802b910d28}{loggear}} (String password)
+\item 
+void \mbox{\hyperlink{classpecl6part2_1_1_cliente_controlador_ab228718d193754ecf65492b86d5be0d4}{enviar\+Parar}} ()
+\item 
+void \mbox{\hyperlink{classpecl6part2_1_1_cliente_controlador_af4b9fc77a65fa32d6d9fd5ae39da2b30}{enviar\+Reanudar}} ()
+\item 
+void \mbox{\hyperlink{classpecl6part2_1_1_cliente_controlador_a69a201c1f92fec9afb9f0729f784c489}{salir}} ()
+\item 
+synchronized void \mbox{\hyperlink{classpecl6part2_1_1_cliente_controlador_a34f39a3db52b361b1fa0ec5213cd8e24}{notificar}} ()
+\item 
+synchronized void \mbox{\hyperlink{classpecl6part2_1_1_cliente_controlador_af39e4985e3ba35a96c459f1713fa389a}{esperar}} ()
+\item 
+void \mbox{\hyperlink{classpecl6part2_1_1_cliente_controlador_a2ff467a81804aead5a07c2da9e279920}{run}} ()
+\end{DoxyCompactItemize}
+\subsection*{Package Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Data\+Output\+Stream \mbox{\hyperlink{classpecl6part2_1_1_cliente_controlador_a05461ea286f84b5f3f8b82641a5d23af}{salida}}
+\item 
+Data\+Input\+Stream \mbox{\hyperlink{classpecl6part2_1_1_cliente_controlador_aaafa871f0ee5e5d481b9ffb65b9a2a8a}{entrada}}
+\item 
+Socket \mbox{\hyperlink{classpecl6part2_1_1_cliente_controlador_a4882463501ccc3555c15225ea3076745}{conexion}}
+\item 
+String \mbox{\hyperlink{classpecl6part2_1_1_cliente_controlador_ac5b6761cd1ff976535207035f94a6396}{mensaje}}
+\item 
+Semaphore \mbox{\hyperlink{classpecl6part2_1_1_cliente_controlador_a200ce4defcaa86a68e9c8234f9e48a81}{semaforo}}
+\item 
+boolean \mbox{\hyperlink{classpecl6part2_1_1_cliente_controlador_a3af6d2071d85755b557cf2a98fca51d5}{logeado}}
+\item 
+javax.\+swing.\+J\+Button \mbox{\hyperlink{classpecl6part2_1_1_cliente_controlador_a5571779a9b4a52006f160ba893b7c62d}{j\+Button1}}
+\item 
+javax.\+swing.\+J\+Button \mbox{\hyperlink{classpecl6part2_1_1_cliente_controlador_a0de10db6dfe46c00048ea574708f4898}{j\+Button2}}
+\item 
+javax.\+swing.\+J\+Button \mbox{\hyperlink{classpecl6part2_1_1_cliente_controlador_a6ed6a9f1bcab81559b649c08fd2a59b8}{j\+Button3}}
+\item 
+javax.\+swing.\+J\+Button \mbox{\hyperlink{classpecl6part2_1_1_cliente_controlador_a4d53fe3682184dc12af7fb5edaa74f3a}{j\+Button4}}
+\item 
+javax.\+swing.\+J\+Label \mbox{\hyperlink{classpecl6part2_1_1_cliente_controlador_a9bc2f24760cd5b88584b4275aa3845db}{j\+Label1}}
+\item 
+javax.\+swing.\+J\+Label \mbox{\hyperlink{classpecl6part2_1_1_cliente_controlador_ad3f5a84dad8ebb14caedb619cec82f7b}{j\+Label2}}
+\item 
+javax.\+swing.\+J\+Text\+Field \mbox{\hyperlink{classpecl6part2_1_1_cliente_controlador_a04f4a0311eac4cee8bca8c1617f2f249}{j\+Text\+Field1}}
+\item 
+javax.\+swing.\+J\+Frame \mbox{\hyperlink{classpecl6part2_1_1_cliente_controlador_a8f6efcec989c5ef5daccf7a9009ffbb2}{j\+Frame1}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyAuthor}{Author}
+Ignacio 
+\end{DoxyAuthor}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classpecl6part2_1_1_cliente_controlador_a6e526681bd2137858bfb2940eeb23cc8}\label{classpecl6part2_1_1_cliente_controlador_a6e526681bd2137858bfb2940eeb23cc8}} 
+\index{pecl6part2\+::\+Cliente\+Controlador@{pecl6part2\+::\+Cliente\+Controlador}!Cliente\+Controlador@{Cliente\+Controlador}}
+\index{Cliente\+Controlador@{Cliente\+Controlador}!pecl6part2\+::\+Cliente\+Controlador@{pecl6part2\+::\+Cliente\+Controlador}}
+\subsubsection{\texorpdfstring{Cliente\+Controlador()}{ClienteControlador()}}
+{\footnotesize\ttfamily pecl6part2.\+Cliente\+Controlador.\+Cliente\+Controlador (\begin{DoxyParamCaption}\item[{javax.\+swing.\+J\+Frame}]{j\+Frame,  }\item[{javax.\+swing.\+J\+Button}]{j1,  }\item[{javax.\+swing.\+J\+Button}]{j2,  }\item[{javax.\+swing.\+J\+Button}]{j3,  }\item[{javax.\+swing.\+J\+Button}]{j4,  }\item[{javax.\+swing.\+J\+Label}]{l1,  }\item[{javax.\+swing.\+J\+Text\+Field}]{t1 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+40         \{
+41             \mbox{\hyperlink{classpecl6part2_1_1_cliente_controlador_a200ce4defcaa86a68e9c8234f9e48a81}{semaforo}} = \textcolor{keyword}{new} Semaphore(1);
+42             \mbox{\hyperlink{classpecl6part2_1_1_cliente_controlador_a8f6efcec989c5ef5daccf7a9009ffbb2}{jFrame1}} = jFrame;
+43             this.\mbox{\hyperlink{classpecl6part2_1_1_cliente_controlador_a5571779a9b4a52006f160ba893b7c62d}{jButton1}} = j1;
+44             this.\mbox{\hyperlink{classpecl6part2_1_1_cliente_controlador_a0de10db6dfe46c00048ea574708f4898}{jButton2}} = j2;
+45             this.\mbox{\hyperlink{classpecl6part2_1_1_cliente_controlador_a6ed6a9f1bcab81559b649c08fd2a59b8}{jButton3}} = j3;
+46             this.\mbox{\hyperlink{classpecl6part2_1_1_cliente_controlador_a4d53fe3682184dc12af7fb5edaa74f3a}{jButton4}} = j4;
+47             this.\mbox{\hyperlink{classpecl6part2_1_1_cliente_controlador_a9bc2f24760cd5b88584b4275aa3845db}{jLabel1}} = l1;
+48             this.\mbox{\hyperlink{classpecl6part2_1_1_cliente_controlador_a04f4a0311eac4cee8bca8c1617f2f249}{jTextField1}} = t1;
+49             \mbox{\hyperlink{classpecl6part2_1_1_cliente_controlador_ac5b6761cd1ff976535207035f94a6396}{mensaje}} = \textcolor{stringliteral}{""};
+50             \mbox{\hyperlink{classpecl6part2_1_1_cliente_controlador_a3af6d2071d85755b557cf2a98fca51d5}{logeado}} = \textcolor{keyword}{false};
+51         \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classpecl6part2_1_1_cliente_controlador_a77cde1bf892e57d766c03a80a107d2f9}\label{classpecl6part2_1_1_cliente_controlador_a77cde1bf892e57d766c03a80a107d2f9}} 
+\index{pecl6part2\+::\+Cliente\+Controlador@{pecl6part2\+::\+Cliente\+Controlador}!abrir@{abrir}}
+\index{abrir@{abrir}!pecl6part2\+::\+Cliente\+Controlador@{pecl6part2\+::\+Cliente\+Controlador}}
+\subsubsection{\texorpdfstring{abrir()}{abrir()}}
+{\footnotesize\ttfamily void pecl6part2.\+Cliente\+Controlador.\+abrir (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+54         \{
+55             \mbox{\hyperlink{classpecl6part2_1_1_cliente_controlador_a200ce4defcaa86a68e9c8234f9e48a81}{semaforo}}.release();
+56         \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classpecl6part2_1_1_cliente_controlador_ab228718d193754ecf65492b86d5be0d4}\label{classpecl6part2_1_1_cliente_controlador_ab228718d193754ecf65492b86d5be0d4}} 
+\index{pecl6part2\+::\+Cliente\+Controlador@{pecl6part2\+::\+Cliente\+Controlador}!enviar\+Parar@{enviar\+Parar}}
+\index{enviar\+Parar@{enviar\+Parar}!pecl6part2\+::\+Cliente\+Controlador@{pecl6part2\+::\+Cliente\+Controlador}}
+\subsubsection{\texorpdfstring{enviar\+Parar()}{enviarParar()}}
+{\footnotesize\ttfamily void pecl6part2.\+Cliente\+Controlador.\+enviar\+Parar (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+120         \{
+121             \textcolor{keywordflow}{try} \{
+122                 \mbox{\hyperlink{classpecl6part2_1_1_cliente_controlador_a4882463501ccc3555c15225ea3076745}{conexion}} = \textcolor{keyword}{new} Socket(InetAddress.getLocalHost(),5031);
+123                 \textcolor{comment}{//entrada = new DataInputStream(conexion.getInputStream());  // Abrimos los canales de E/S}
+124                 \mbox{\hyperlink{classpecl6part2_1_1_cliente_controlador_a05461ea286f84b5f3f8b82641a5d23af}{salida}}  = \textcolor{keyword}{new} DataOutputStream(\mbox{\hyperlink{classpecl6part2_1_1_cliente_controlador_a4882463501ccc3555c15225ea3076745}{conexion}}.getOutputStream());
+125                 \mbox{\hyperlink{classpecl6part2_1_1_cliente_controlador_a05461ea286f84b5f3f8b82641a5d23af}{salida}}.writeUTF(\textcolor{stringliteral}{"parar"});
+126                 System.out.println(\textcolor{stringliteral}{"Intenta parar"});
+127             \} \textcolor{keywordflow}{catch} (IOException ex) \{
+128                 Logger.getLogger(\mbox{\hyperlink{classpecl6part2_1_1_cliente_controlador_a6e526681bd2137858bfb2940eeb23cc8}{ClienteControlador}}.class.getName()).log(Level.SEVERE, 
+      null, ex);
+129             \}
+130         \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classpecl6part2_1_1_cliente_controlador_af4b9fc77a65fa32d6d9fd5ae39da2b30}\label{classpecl6part2_1_1_cliente_controlador_af4b9fc77a65fa32d6d9fd5ae39da2b30}} 
+\index{pecl6part2\+::\+Cliente\+Controlador@{pecl6part2\+::\+Cliente\+Controlador}!enviar\+Reanudar@{enviar\+Reanudar}}
+\index{enviar\+Reanudar@{enviar\+Reanudar}!pecl6part2\+::\+Cliente\+Controlador@{pecl6part2\+::\+Cliente\+Controlador}}
+\subsubsection{\texorpdfstring{enviar\+Reanudar()}{enviarReanudar()}}
+{\footnotesize\ttfamily void pecl6part2.\+Cliente\+Controlador.\+enviar\+Reanudar (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+133         \{
+134             \textcolor{keywordflow}{try} \{
+135                 \mbox{\hyperlink{classpecl6part2_1_1_cliente_controlador_a4882463501ccc3555c15225ea3076745}{conexion}} = \textcolor{keyword}{new} Socket(InetAddress.getLocalHost(),5031);
+136                 \textcolor{comment}{//conexion = new Socket(InetAddress.getLocalHost(),5001);}
+137                 \textcolor{comment}{//entrada = new DataInputStream(conexion.getInputStream());  // Abrimos los canales de E/S}
+138                 \mbox{\hyperlink{classpecl6part2_1_1_cliente_controlador_a05461ea286f84b5f3f8b82641a5d23af}{salida}}  = \textcolor{keyword}{new} DataOutputStream(\mbox{\hyperlink{classpecl6part2_1_1_cliente_controlador_a4882463501ccc3555c15225ea3076745}{conexion}}.getOutputStream());
+139                 \mbox{\hyperlink{classpecl6part2_1_1_cliente_controlador_a05461ea286f84b5f3f8b82641a5d23af}{salida}}.writeUTF(\textcolor{stringliteral}{"reanudar"});
+140                 
+141                 System.out.println(\textcolor{stringliteral}{"Intenta parar"});
+142             \} \textcolor{keywordflow}{catch} (IOException ex) \{
+143                 Logger.getLogger(\mbox{\hyperlink{classpecl6part2_1_1_cliente_controlador_a6e526681bd2137858bfb2940eeb23cc8}{ClienteControlador}}.class.getName()).log(Level.SEVERE, 
+      null, ex);
+144             \}
+145         \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classpecl6part2_1_1_cliente_controlador_af39e4985e3ba35a96c459f1713fa389a}\label{classpecl6part2_1_1_cliente_controlador_af39e4985e3ba35a96c459f1713fa389a}} 
+\index{pecl6part2\+::\+Cliente\+Controlador@{pecl6part2\+::\+Cliente\+Controlador}!esperar@{esperar}}
+\index{esperar@{esperar}!pecl6part2\+::\+Cliente\+Controlador@{pecl6part2\+::\+Cliente\+Controlador}}
+\subsubsection{\texorpdfstring{esperar()}{esperar()}}
+{\footnotesize\ttfamily synchronized void pecl6part2.\+Cliente\+Controlador.\+esperar (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+164         \{
+165             \textcolor{keywordflow}{try} \{
+166                 wait();
+167             \} \textcolor{keywordflow}{catch} (InterruptedException ex) \{
+168                 Logger.getLogger(\mbox{\hyperlink{classpecl6part2_1_1_cliente_controlador_a6e526681bd2137858bfb2940eeb23cc8}{ClienteControlador}}.class.getName()).log(Level.SEVERE, 
+      null, ex);
+169             \}
+170         \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classpecl6part2_1_1_cliente_controlador_acaff5088389f8aa5f3571c802b910d28}\label{classpecl6part2_1_1_cliente_controlador_acaff5088389f8aa5f3571c802b910d28}} 
+\index{pecl6part2\+::\+Cliente\+Controlador@{pecl6part2\+::\+Cliente\+Controlador}!loggear@{loggear}}
+\index{loggear@{loggear}!pecl6part2\+::\+Cliente\+Controlador@{pecl6part2\+::\+Cliente\+Controlador}}
+\subsubsection{\texorpdfstring{loggear()}{loggear()}}
+{\footnotesize\ttfamily void pecl6part2.\+Cliente\+Controlador.\+loggear (\begin{DoxyParamCaption}\item[{String}]{password }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+68         \{
+69             String aux = password;
+70             \textcolor{keywordflow}{try} \{
+71                 
+72                 \textcolor{comment}{//conexion = new Socket(InetAddress.getLocalHost(),4950);}
+73                 \mbox{\hyperlink{classpecl6part2_1_1_cliente_controlador_a05461ea286f84b5f3f8b82641a5d23af}{salida}}  = \textcolor{keyword}{new} DataOutputStream(\mbox{\hyperlink{classpecl6part2_1_1_cliente_controlador_a4882463501ccc3555c15225ea3076745}{conexion}}.getOutputStream());  \textcolor{comment}{// Abrimos los
+       canales de E/S}
+74                 \mbox{\hyperlink{classpecl6part2_1_1_cliente_controlador_aaafa871f0ee5e5d481b9ffb65b9a2a8a}{entrada}} = \textcolor{keyword}{new} DataInputStream(\mbox{\hyperlink{classpecl6part2_1_1_cliente_controlador_a4882463501ccc3555c15225ea3076745}{conexion}}.getInputStream());
+75                 \mbox{\hyperlink{classpecl6part2_1_1_cliente_controlador_a05461ea286f84b5f3f8b82641a5d23af}{salida}}.writeUTF(aux);
+76                 System.out.println(\textcolor{stringliteral}{"Has introducido: /"}+aux+\textcolor{stringliteral}{"/"});
+77                 aux = \mbox{\hyperlink{classpecl6part2_1_1_cliente_controlador_aaafa871f0ee5e5d481b9ffb65b9a2a8a}{entrada}}.readUTF();
+78                 System.out.println(\textcolor{stringliteral}{"Hemos recibido: /"}+aux+\textcolor{stringliteral}{"/"});
+79             \} \textcolor{keywordflow}{catch} (IOException ex) \{
+80                 Logger.getLogger(\mbox{\hyperlink{classpecl6part2_1_1_cliente_controlador_a6e526681bd2137858bfb2940eeb23cc8}{ClienteControlador}}.class.getName()).log(Level.SEVERE, 
+      null, ex);
+81             \}
+82             \textcolor{keywordflow}{if}(aux.equals(\textcolor{stringliteral}{"correcto"}))
+83             \{
+84                 System.out.println(\textcolor{stringliteral}{"Entra"});
+85                 \textcolor{keywordflow}{try} \{
+86                     \textcolor{comment}{//jFrame1.jButton4.setVisible(false);}
+87                     \mbox{\hyperlink{classpecl6part2_1_1_cliente_controlador_aaafa871f0ee5e5d481b9ffb65b9a2a8a}{entrada}}.close();
+88                 \} \textcolor{keywordflow}{catch} (IOException ex) \{
+89                     Logger.getLogger(\mbox{\hyperlink{classpecl6part2_1_1_cliente_controlador_a6e526681bd2137858bfb2940eeb23cc8}{ClienteControlador}}.class.getName()).log(Level.SEVERE
+      , null, ex);
+90                 \}
+91                 \mbox{\hyperlink{classpecl6part2_1_1_cliente_controlador_a9bc2f24760cd5b88584b4275aa3845db}{jLabel1}}.setVisible(\textcolor{keyword}{false});
+92                 \mbox{\hyperlink{classpecl6part2_1_1_cliente_controlador_a04f4a0311eac4cee8bca8c1617f2f249}{jTextField1}}.setVisible(\textcolor{keyword}{false});
+93                 \mbox{\hyperlink{classpecl6part2_1_1_cliente_controlador_a4d53fe3682184dc12af7fb5edaa74f3a}{jButton4}}.setVisible(\textcolor{keyword}{false});
+94                 \mbox{\hyperlink{classpecl6part2_1_1_cliente_controlador_a5571779a9b4a52006f160ba893b7c62d}{jButton1}}.setVisible(\textcolor{keyword}{true});
+95                 \mbox{\hyperlink{classpecl6part2_1_1_cliente_controlador_a0de10db6dfe46c00048ea574708f4898}{jButton2}}.setVisible(\textcolor{keyword}{true});
+96                 \mbox{\hyperlink{classpecl6part2_1_1_cliente_controlador_a6ed6a9f1bcab81559b649c08fd2a59b8}{jButton3}}.setVisible(\textcolor{keyword}{true});
+97                 \mbox{\hyperlink{classpecl6part2_1_1_cliente_controlador_a200ce4defcaa86a68e9c8234f9e48a81}{semaforo}}.release();
+98                 \textcolor{comment}{/*try \{}
+99 \textcolor{comment}{                    conexion.close();}
+100 \textcolor{comment}{                \} catch (IOException ex) \{}
+101 \textcolor{comment}{                    Logger.getLogger(ClienteControlador.class.getName()).log(Level.SEVERE, null, ex);}
+102 \textcolor{comment}{                \}}
+103 \textcolor{comment}{                try \{}
+104 \textcolor{comment}{                    conexion = new Socket(InetAddress.getLocalHost(),5031);}
+105 \textcolor{comment}{                \} catch (IOException ex) \{}
+106 \textcolor{comment}{                    Logger.getLogger(ClienteControlador.class.getName()).log(Level.SEVERE, null, ex);}
+107 \textcolor{comment}{                \}*/}
+108             \}
+109             \textcolor{keywordflow}{else}
+110             \{
+111                 \textcolor{keywordflow}{if}(aux == \textcolor{stringliteral}{"Error"})
+112                 \{
+113                     \textcolor{comment}{//nada}
+114                 \}
+115             \}
+116             \textcolor{comment}{//return aux;}
+117         \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classpecl6part2_1_1_cliente_controlador_a34f39a3db52b361b1fa0ec5213cd8e24}\label{classpecl6part2_1_1_cliente_controlador_a34f39a3db52b361b1fa0ec5213cd8e24}} 
+\index{pecl6part2\+::\+Cliente\+Controlador@{pecl6part2\+::\+Cliente\+Controlador}!notificar@{notificar}}
+\index{notificar@{notificar}!pecl6part2\+::\+Cliente\+Controlador@{pecl6part2\+::\+Cliente\+Controlador}}
+\subsubsection{\texorpdfstring{notificar()}{notificar()}}
+{\footnotesize\ttfamily synchronized void pecl6part2.\+Cliente\+Controlador.\+notificar (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+159         \{
+160             notify();
+161         \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classpecl6part2_1_1_cliente_controlador_a2ff467a81804aead5a07c2da9e279920}\label{classpecl6part2_1_1_cliente_controlador_a2ff467a81804aead5a07c2da9e279920}} 
+\index{pecl6part2\+::\+Cliente\+Controlador@{pecl6part2\+::\+Cliente\+Controlador}!run@{run}}
+\index{run@{run}!pecl6part2\+::\+Cliente\+Controlador@{pecl6part2\+::\+Cliente\+Controlador}}
+\subsubsection{\texorpdfstring{run()}{run()}}
+{\footnotesize\ttfamily void pecl6part2.\+Cliente\+Controlador.\+run (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+173         \{
+174             \textcolor{keywordflow}{try} \{
+175             \mbox{\hyperlink{classpecl6part2_1_1_cliente_controlador_a200ce4defcaa86a68e9c8234f9e48a81}{semaforo}}.acquire();
+176                 \mbox{\hyperlink{classpecl6part2_1_1_cliente_controlador_a4882463501ccc3555c15225ea3076745}{conexion}} = \textcolor{keyword}{new} Socket(InetAddress.getLocalHost(),5031);
+177             \} \textcolor{keywordflow}{catch} (IOException ex) \{
+178                 Logger.getLogger(\mbox{\hyperlink{classpecl6part2_1_1_cliente_controlador_a6e526681bd2137858bfb2940eeb23cc8}{ClienteControlador}}.class.getName()).log(Level.SEVERE, 
+      null, ex);
+179             \} \textcolor{keywordflow}{catch} (InterruptedException ex) \{
+180                 Logger.getLogger(\mbox{\hyperlink{classpecl6part2_1_1_cliente_controlador_a6e526681bd2137858bfb2940eeb23cc8}{ClienteControlador}}.class.getName()).log(Level.SEVERE, 
+      null, ex);
+181             \}
+182             \textcolor{comment}{/*}
+183 \textcolor{comment}{            try \{}
+184 \textcolor{comment}{                /}
+185 \textcolor{comment}{                }
+186 \textcolor{comment}{                while(!logeado)}
+187 \textcolor{comment}{                \{}
+188 \textcolor{comment}{                }
+189 \textcolor{comment}{                try \{}
+190 \textcolor{comment}{                entrada = new DataInputStream(conexion.getInputStream());  // Abrimos los canales de E/S}
+191 \textcolor{comment}{                salida  = new DataOutputStream(conexion.getOutputStream());}
+192 \textcolor{comment}{                mensaje = entrada.readUTF();}
+193 \textcolor{comment}{                }
+194 \textcolor{comment}{                \} catch (IOException ex) \{}
+195 \textcolor{comment}{                Logger.getLogger(ServidorControlador.class.getName()).log(Level.SEVERE, null, ex);}
+196 \textcolor{comment}{                \}}
+197 \textcolor{comment}{                semaforo.acquire(); //hasta que no se logee no puede pasar}
+198 \textcolor{comment}{            \} catch (InterruptedException ex) \{}
+199 \textcolor{comment}{                Logger.getLogger(ClienteControlador.class.getName()).log(Level.SEVERE, null, ex);}
+200 \textcolor{comment}{            \} catch (UnknownHostException ex) \{}
+201 \textcolor{comment}{                Logger.getLogger(ClienteControlador.class.getName()).log(Level.SEVERE, null, ex);}
+202 \textcolor{comment}{            \} catch (IOException ex) \{}
+203 \textcolor{comment}{                Logger.getLogger(ClienteControlador.class.getName()).log(Level.SEVERE, null, ex);}
+204 \textcolor{comment}{            \}*/}
+205             \textcolor{comment}{//semaforo.release();}
+206             \textcolor{keywordflow}{try} \{
+207                 \mbox{\hyperlink{classpecl6part2_1_1_cliente_controlador_a200ce4defcaa86a68e9c8234f9e48a81}{semaforo}}.acquire();
+208             \} \textcolor{keywordflow}{catch} (InterruptedException ex) \{
+209                 Logger.getLogger(\mbox{\hyperlink{classpecl6part2_1_1_cliente_controlador_a6e526681bd2137858bfb2940eeb23cc8}{ClienteControlador}}.class.getName()).log(Level.SEVERE, 
+      null, ex);
+210             \}
+211             
+212             \textcolor{comment}{/*try \{}
+213 \textcolor{comment}{                conexion = new Socket(InetAddress.getLocalHost(),5001);}
+214 \textcolor{comment}{            \} catch (IOException ex) \{}
+215 \textcolor{comment}{                Logger.getLogger(ClienteControlador.class.getName()).log(Level.SEVERE, null, ex);}
+216 \textcolor{comment}{            \}*/}
+217                 
+218             \textcolor{keywordflow}{try} \{
+219                 \mbox{\hyperlink{classpecl6part2_1_1_cliente_controlador_a200ce4defcaa86a68e9c8234f9e48a81}{semaforo}}.acquire();
+220             \} \textcolor{keywordflow}{catch} (InterruptedException ex) \{
+221                 Logger.getLogger(\mbox{\hyperlink{classpecl6part2_1_1_cliente_controlador_a6e526681bd2137858bfb2940eeb23cc8}{ClienteControlador}}.class.getName()).log(Level.SEVERE, 
+      null, ex);
+222             \}
+223             \mbox{\hyperlink{classpecl6part2_1_1_cliente_controlador_a200ce4defcaa86a68e9c8234f9e48a81}{semaforo}}.release();
+224             \textcolor{keywordflow}{try} \{
+225                 \mbox{\hyperlink{classpecl6part2_1_1_cliente_controlador_a4882463501ccc3555c15225ea3076745}{conexion}}.close();
+226             \} \textcolor{keywordflow}{catch} (IOException ex) \{
+227                 Logger.getLogger(\mbox{\hyperlink{classpecl6part2_1_1_cliente_controlador_a6e526681bd2137858bfb2940eeb23cc8}{ClienteControlador}}.class.getName()).log(Level.SEVERE, 
+      null, ex);
+228             \}
+229         \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classpecl6part2_1_1_cliente_controlador_a69a201c1f92fec9afb9f0729f784c489}\label{classpecl6part2_1_1_cliente_controlador_a69a201c1f92fec9afb9f0729f784c489}} 
+\index{pecl6part2\+::\+Cliente\+Controlador@{pecl6part2\+::\+Cliente\+Controlador}!salir@{salir}}
+\index{salir@{salir}!pecl6part2\+::\+Cliente\+Controlador@{pecl6part2\+::\+Cliente\+Controlador}}
+\subsubsection{\texorpdfstring{salir()}{salir()}}
+{\footnotesize\ttfamily void pecl6part2.\+Cliente\+Controlador.\+salir (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+148         \{
+149             \textcolor{keywordflow}{try} \{
+150                 \mbox{\hyperlink{classpecl6part2_1_1_cliente_controlador_a05461ea286f84b5f3f8b82641a5d23af}{salida}}  = \textcolor{keyword}{new} DataOutputStream(\mbox{\hyperlink{classpecl6part2_1_1_cliente_controlador_a4882463501ccc3555c15225ea3076745}{conexion}}.getOutputStream());
+151                 \mbox{\hyperlink{classpecl6part2_1_1_cliente_controlador_a05461ea286f84b5f3f8b82641a5d23af}{salida}}.writeUTF(\textcolor{stringliteral}{"salir"});
+152             \} \textcolor{keywordflow}{catch} (IOException ex) \{
+153                 Logger.getLogger(\mbox{\hyperlink{classpecl6part2_1_1_cliente_controlador_a6e526681bd2137858bfb2940eeb23cc8}{ClienteControlador}}.class.getName()).log(Level.SEVERE, 
+      null, ex);
+154             \}
+155             \mbox{\hyperlink{classpecl6part2_1_1_cliente_controlador_a200ce4defcaa86a68e9c8234f9e48a81}{semaforo}}.release();\textcolor{comment}{//dejará acabar al cliente}
+156         \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classpecl6part2_1_1_cliente_controlador_a4882463501ccc3555c15225ea3076745}\label{classpecl6part2_1_1_cliente_controlador_a4882463501ccc3555c15225ea3076745}} 
+\index{pecl6part2\+::\+Cliente\+Controlador@{pecl6part2\+::\+Cliente\+Controlador}!conexion@{conexion}}
+\index{conexion@{conexion}!pecl6part2\+::\+Cliente\+Controlador@{pecl6part2\+::\+Cliente\+Controlador}}
+\subsubsection{\texorpdfstring{conexion}{conexion}}
+{\footnotesize\ttfamily Socket pecl6part2.\+Cliente\+Controlador.\+conexion\hspace{0.3cm}{\ttfamily [package]}}
+
+\mbox{\Hypertarget{classpecl6part2_1_1_cliente_controlador_aaafa871f0ee5e5d481b9ffb65b9a2a8a}\label{classpecl6part2_1_1_cliente_controlador_aaafa871f0ee5e5d481b9ffb65b9a2a8a}} 
+\index{pecl6part2\+::\+Cliente\+Controlador@{pecl6part2\+::\+Cliente\+Controlador}!entrada@{entrada}}
+\index{entrada@{entrada}!pecl6part2\+::\+Cliente\+Controlador@{pecl6part2\+::\+Cliente\+Controlador}}
+\subsubsection{\texorpdfstring{entrada}{entrada}}
+{\footnotesize\ttfamily Data\+Input\+Stream pecl6part2.\+Cliente\+Controlador.\+entrada\hspace{0.3cm}{\ttfamily [package]}}
+
+\mbox{\Hypertarget{classpecl6part2_1_1_cliente_controlador_a5571779a9b4a52006f160ba893b7c62d}\label{classpecl6part2_1_1_cliente_controlador_a5571779a9b4a52006f160ba893b7c62d}} 
+\index{pecl6part2\+::\+Cliente\+Controlador@{pecl6part2\+::\+Cliente\+Controlador}!j\+Button1@{j\+Button1}}
+\index{j\+Button1@{j\+Button1}!pecl6part2\+::\+Cliente\+Controlador@{pecl6part2\+::\+Cliente\+Controlador}}
+\subsubsection{\texorpdfstring{j\+Button1}{jButton1}}
+{\footnotesize\ttfamily javax.\+swing.\+J\+Button pecl6part2.\+Cliente\+Controlador.\+j\+Button1\hspace{0.3cm}{\ttfamily [package]}}
+
+\mbox{\Hypertarget{classpecl6part2_1_1_cliente_controlador_a0de10db6dfe46c00048ea574708f4898}\label{classpecl6part2_1_1_cliente_controlador_a0de10db6dfe46c00048ea574708f4898}} 
+\index{pecl6part2\+::\+Cliente\+Controlador@{pecl6part2\+::\+Cliente\+Controlador}!j\+Button2@{j\+Button2}}
+\index{j\+Button2@{j\+Button2}!pecl6part2\+::\+Cliente\+Controlador@{pecl6part2\+::\+Cliente\+Controlador}}
+\subsubsection{\texorpdfstring{j\+Button2}{jButton2}}
+{\footnotesize\ttfamily javax.\+swing.\+J\+Button pecl6part2.\+Cliente\+Controlador.\+j\+Button2\hspace{0.3cm}{\ttfamily [package]}}
+
+\mbox{\Hypertarget{classpecl6part2_1_1_cliente_controlador_a6ed6a9f1bcab81559b649c08fd2a59b8}\label{classpecl6part2_1_1_cliente_controlador_a6ed6a9f1bcab81559b649c08fd2a59b8}} 
+\index{pecl6part2\+::\+Cliente\+Controlador@{pecl6part2\+::\+Cliente\+Controlador}!j\+Button3@{j\+Button3}}
+\index{j\+Button3@{j\+Button3}!pecl6part2\+::\+Cliente\+Controlador@{pecl6part2\+::\+Cliente\+Controlador}}
+\subsubsection{\texorpdfstring{j\+Button3}{jButton3}}
+{\footnotesize\ttfamily javax.\+swing.\+J\+Button pecl6part2.\+Cliente\+Controlador.\+j\+Button3\hspace{0.3cm}{\ttfamily [package]}}
+
+\mbox{\Hypertarget{classpecl6part2_1_1_cliente_controlador_a4d53fe3682184dc12af7fb5edaa74f3a}\label{classpecl6part2_1_1_cliente_controlador_a4d53fe3682184dc12af7fb5edaa74f3a}} 
+\index{pecl6part2\+::\+Cliente\+Controlador@{pecl6part2\+::\+Cliente\+Controlador}!j\+Button4@{j\+Button4}}
+\index{j\+Button4@{j\+Button4}!pecl6part2\+::\+Cliente\+Controlador@{pecl6part2\+::\+Cliente\+Controlador}}
+\subsubsection{\texorpdfstring{j\+Button4}{jButton4}}
+{\footnotesize\ttfamily javax.\+swing.\+J\+Button pecl6part2.\+Cliente\+Controlador.\+j\+Button4\hspace{0.3cm}{\ttfamily [package]}}
+
+\mbox{\Hypertarget{classpecl6part2_1_1_cliente_controlador_a8f6efcec989c5ef5daccf7a9009ffbb2}\label{classpecl6part2_1_1_cliente_controlador_a8f6efcec989c5ef5daccf7a9009ffbb2}} 
+\index{pecl6part2\+::\+Cliente\+Controlador@{pecl6part2\+::\+Cliente\+Controlador}!j\+Frame1@{j\+Frame1}}
+\index{j\+Frame1@{j\+Frame1}!pecl6part2\+::\+Cliente\+Controlador@{pecl6part2\+::\+Cliente\+Controlador}}
+\subsubsection{\texorpdfstring{j\+Frame1}{jFrame1}}
+{\footnotesize\ttfamily javax.\+swing.\+J\+Frame pecl6part2.\+Cliente\+Controlador.\+j\+Frame1\hspace{0.3cm}{\ttfamily [package]}}
+
+\mbox{\Hypertarget{classpecl6part2_1_1_cliente_controlador_a9bc2f24760cd5b88584b4275aa3845db}\label{classpecl6part2_1_1_cliente_controlador_a9bc2f24760cd5b88584b4275aa3845db}} 
+\index{pecl6part2\+::\+Cliente\+Controlador@{pecl6part2\+::\+Cliente\+Controlador}!j\+Label1@{j\+Label1}}
+\index{j\+Label1@{j\+Label1}!pecl6part2\+::\+Cliente\+Controlador@{pecl6part2\+::\+Cliente\+Controlador}}
+\subsubsection{\texorpdfstring{j\+Label1}{jLabel1}}
+{\footnotesize\ttfamily javax.\+swing.\+J\+Label pecl6part2.\+Cliente\+Controlador.\+j\+Label1\hspace{0.3cm}{\ttfamily [package]}}
+
+\mbox{\Hypertarget{classpecl6part2_1_1_cliente_controlador_ad3f5a84dad8ebb14caedb619cec82f7b}\label{classpecl6part2_1_1_cliente_controlador_ad3f5a84dad8ebb14caedb619cec82f7b}} 
+\index{pecl6part2\+::\+Cliente\+Controlador@{pecl6part2\+::\+Cliente\+Controlador}!j\+Label2@{j\+Label2}}
+\index{j\+Label2@{j\+Label2}!pecl6part2\+::\+Cliente\+Controlador@{pecl6part2\+::\+Cliente\+Controlador}}
+\subsubsection{\texorpdfstring{j\+Label2}{jLabel2}}
+{\footnotesize\ttfamily javax.\+swing.\+J\+Label pecl6part2.\+Cliente\+Controlador.\+j\+Label2\hspace{0.3cm}{\ttfamily [package]}}
+
+\mbox{\Hypertarget{classpecl6part2_1_1_cliente_controlador_a04f4a0311eac4cee8bca8c1617f2f249}\label{classpecl6part2_1_1_cliente_controlador_a04f4a0311eac4cee8bca8c1617f2f249}} 
+\index{pecl6part2\+::\+Cliente\+Controlador@{pecl6part2\+::\+Cliente\+Controlador}!j\+Text\+Field1@{j\+Text\+Field1}}
+\index{j\+Text\+Field1@{j\+Text\+Field1}!pecl6part2\+::\+Cliente\+Controlador@{pecl6part2\+::\+Cliente\+Controlador}}
+\subsubsection{\texorpdfstring{j\+Text\+Field1}{jTextField1}}
+{\footnotesize\ttfamily javax.\+swing.\+J\+Text\+Field pecl6part2.\+Cliente\+Controlador.\+j\+Text\+Field1\hspace{0.3cm}{\ttfamily [package]}}
+
+\mbox{\Hypertarget{classpecl6part2_1_1_cliente_controlador_a3af6d2071d85755b557cf2a98fca51d5}\label{classpecl6part2_1_1_cliente_controlador_a3af6d2071d85755b557cf2a98fca51d5}} 
+\index{pecl6part2\+::\+Cliente\+Controlador@{pecl6part2\+::\+Cliente\+Controlador}!logeado@{logeado}}
+\index{logeado@{logeado}!pecl6part2\+::\+Cliente\+Controlador@{pecl6part2\+::\+Cliente\+Controlador}}
+\subsubsection{\texorpdfstring{logeado}{logeado}}
+{\footnotesize\ttfamily boolean pecl6part2.\+Cliente\+Controlador.\+logeado\hspace{0.3cm}{\ttfamily [package]}}
+
+\mbox{\Hypertarget{classpecl6part2_1_1_cliente_controlador_ac5b6761cd1ff976535207035f94a6396}\label{classpecl6part2_1_1_cliente_controlador_ac5b6761cd1ff976535207035f94a6396}} 
+\index{pecl6part2\+::\+Cliente\+Controlador@{pecl6part2\+::\+Cliente\+Controlador}!mensaje@{mensaje}}
+\index{mensaje@{mensaje}!pecl6part2\+::\+Cliente\+Controlador@{pecl6part2\+::\+Cliente\+Controlador}}
+\subsubsection{\texorpdfstring{mensaje}{mensaje}}
+{\footnotesize\ttfamily String pecl6part2.\+Cliente\+Controlador.\+mensaje\hspace{0.3cm}{\ttfamily [package]}}
+
+\mbox{\Hypertarget{classpecl6part2_1_1_cliente_controlador_a05461ea286f84b5f3f8b82641a5d23af}\label{classpecl6part2_1_1_cliente_controlador_a05461ea286f84b5f3f8b82641a5d23af}} 
+\index{pecl6part2\+::\+Cliente\+Controlador@{pecl6part2\+::\+Cliente\+Controlador}!salida@{salida}}
+\index{salida@{salida}!pecl6part2\+::\+Cliente\+Controlador@{pecl6part2\+::\+Cliente\+Controlador}}
+\subsubsection{\texorpdfstring{salida}{salida}}
+{\footnotesize\ttfamily Data\+Output\+Stream pecl6part2.\+Cliente\+Controlador.\+salida\hspace{0.3cm}{\ttfamily [package]}}
+
+\mbox{\Hypertarget{classpecl6part2_1_1_cliente_controlador_a200ce4defcaa86a68e9c8234f9e48a81}\label{classpecl6part2_1_1_cliente_controlador_a200ce4defcaa86a68e9c8234f9e48a81}} 
+\index{pecl6part2\+::\+Cliente\+Controlador@{pecl6part2\+::\+Cliente\+Controlador}!semaforo@{semaforo}}
+\index{semaforo@{semaforo}!pecl6part2\+::\+Cliente\+Controlador@{pecl6part2\+::\+Cliente\+Controlador}}
+\subsubsection{\texorpdfstring{semaforo}{semaforo}}
+{\footnotesize\ttfamily Semaphore pecl6part2.\+Cliente\+Controlador.\+semaforo\hspace{0.3cm}{\ttfamily [package]}}
+

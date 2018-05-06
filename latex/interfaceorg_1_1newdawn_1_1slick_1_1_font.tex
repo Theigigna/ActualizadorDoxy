@@ -1,0 +1,160 @@
+\hypertarget{interfaceorg_1_1newdawn_1_1slick_1_1_font}{}\section{org.\+newdawn.\+slick.\+Font Interface Reference}
+\label{interfaceorg_1_1newdawn_1_1slick_1_1_font}\index{org.\+newdawn.\+slick.\+Font@{org.\+newdawn.\+slick.\+Font}}
+Inheritance diagram for org.\+newdawn.\+slick.\+Font\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.917808cm]{interfaceorg_1_1newdawn_1_1slick_1_1_font}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+abstract int \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1_font_a6dbdd5828730e18fcf0612307d0394b1}{get\+Width}} (String str)
+\item 
+abstract int \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1_font_ac6a8b604bee484ad3ac2dd57a3eb65c9}{get\+Height}} (String str)
+\item 
+int \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1_font_aeb4b7770f47c5e2631d84b35924376d7}{get\+Line\+Height}} ()
+\item 
+abstract void \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1_font_a40b19381efcb64ce1ce4d446eff1e350}{draw\+String}} (float x, float y, String text)
+\item 
+abstract void \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1_font_afa84859277995b6537d940e466d9f011}{draw\+String}} (float x, float y, String text, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_color}{Color}} col)
+\item 
+abstract void \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1_font_a81ec0a184b55c2f7860d2644bc0731cf}{draw\+String}} (float x, float y, String text, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_color}{Color}} col, int start\+Index, int end\+Index)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The proprites of any font implementation
+
+\begin{DoxyAuthor}{Author}
+Kevin Glass 
+\end{DoxyAuthor}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{interfaceorg_1_1newdawn_1_1slick_1_1_font_a40b19381efcb64ce1ce4d446eff1e350}\label{interfaceorg_1_1newdawn_1_1slick_1_1_font_a40b19381efcb64ce1ce4d446eff1e350}} 
+\index{org\+::newdawn\+::slick\+::\+Font@{org\+::newdawn\+::slick\+::\+Font}!draw\+String@{draw\+String}}
+\index{draw\+String@{draw\+String}!org\+::newdawn\+::slick\+::\+Font@{org\+::newdawn\+::slick\+::\+Font}}
+\subsubsection{\texorpdfstring{draw\+String()}{drawString()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily abstract void org.\+newdawn.\+slick.\+Font.\+draw\+String (\begin{DoxyParamCaption}\item[{float}]{x,  }\item[{float}]{y,  }\item[{String}]{text }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}}
+
+Draw a string to the screen
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & The x location at which to draw the string \\
+\hline
+{\em y} & The y location at which to draw the string \\
+\hline
+{\em text} & The text to be displayed \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_unicode_font_ac2c988a80ba2adb70f5bea216c26efc8}{org.\+newdawn.\+slick.\+Unicode\+Font}}, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_true_type_font_a732f297676331fd0ac0bd802a733d8c2}{org.\+newdawn.\+slick.\+True\+Type\+Font}}, and \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_angel_code_font_a8cc06c81dd2f11c47844d863a03e3433}{org.\+newdawn.\+slick.\+Angel\+Code\+Font}}.
+
+\mbox{\Hypertarget{interfaceorg_1_1newdawn_1_1slick_1_1_font_afa84859277995b6537d940e466d9f011}\label{interfaceorg_1_1newdawn_1_1slick_1_1_font_afa84859277995b6537d940e466d9f011}} 
+\index{org\+::newdawn\+::slick\+::\+Font@{org\+::newdawn\+::slick\+::\+Font}!draw\+String@{draw\+String}}
+\index{draw\+String@{draw\+String}!org\+::newdawn\+::slick\+::\+Font@{org\+::newdawn\+::slick\+::\+Font}}
+\subsubsection{\texorpdfstring{draw\+String()}{drawString()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily abstract void org.\+newdawn.\+slick.\+Font.\+draw\+String (\begin{DoxyParamCaption}\item[{float}]{x,  }\item[{float}]{y,  }\item[{String}]{text,  }\item[{\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_color}{Color}}}]{col }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}}
+
+Draw a string to the screen
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & The x location at which to draw the string \\
+\hline
+{\em y} & The y location at which to draw the string \\
+\hline
+{\em text} & The text to be displayed \\
+\hline
+{\em col} & The colour to draw with \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_unicode_font_a20edc716f0bd41db0e8dc19b535cef25}{org.\+newdawn.\+slick.\+Unicode\+Font}}, and \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_angel_code_font_a8067ec0d8027311bbcc16aaec1421b2d}{org.\+newdawn.\+slick.\+Angel\+Code\+Font}}.
+
+\mbox{\Hypertarget{interfaceorg_1_1newdawn_1_1slick_1_1_font_a81ec0a184b55c2f7860d2644bc0731cf}\label{interfaceorg_1_1newdawn_1_1slick_1_1_font_a81ec0a184b55c2f7860d2644bc0731cf}} 
+\index{org\+::newdawn\+::slick\+::\+Font@{org\+::newdawn\+::slick\+::\+Font}!draw\+String@{draw\+String}}
+\index{draw\+String@{draw\+String}!org\+::newdawn\+::slick\+::\+Font@{org\+::newdawn\+::slick\+::\+Font}}
+\subsubsection{\texorpdfstring{draw\+String()}{drawString()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily abstract void org.\+newdawn.\+slick.\+Font.\+draw\+String (\begin{DoxyParamCaption}\item[{float}]{x,  }\item[{float}]{y,  }\item[{String}]{text,  }\item[{\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_color}{Color}}}]{col,  }\item[{int}]{start\+Index,  }\item[{int}]{end\+Index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}}
+
+Draw part of a string to the screen. Note that this will still position the text as though it\textquotesingle{}s part of the bigger string.
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & The x location at which to draw the string \\
+\hline
+{\em y} & The y location at which to draw the string \\
+\hline
+{\em text} & The text to be displayed \\
+\hline
+{\em col} & The colour to draw with \\
+\hline
+{\em start\+Index} & The index of the first character to draw \\
+\hline
+{\em end\+Index} & The index of the last character from the string to draw \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_unicode_font_adc10a2fd18ea1ddbac3bcb2e7d14d0e2}{org.\+newdawn.\+slick.\+Unicode\+Font}}, and \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_angel_code_font_abed0e6374eb587d6a49f3f33e69f34c0}{org.\+newdawn.\+slick.\+Angel\+Code\+Font}}.
+
+\mbox{\Hypertarget{interfaceorg_1_1newdawn_1_1slick_1_1_font_ac6a8b604bee484ad3ac2dd57a3eb65c9}\label{interfaceorg_1_1newdawn_1_1slick_1_1_font_ac6a8b604bee484ad3ac2dd57a3eb65c9}} 
+\index{org\+::newdawn\+::slick\+::\+Font@{org\+::newdawn\+::slick\+::\+Font}!get\+Height@{get\+Height}}
+\index{get\+Height@{get\+Height}!org\+::newdawn\+::slick\+::\+Font@{org\+::newdawn\+::slick\+::\+Font}}
+\subsubsection{\texorpdfstring{get\+Height()}{getHeight()}}
+{\footnotesize\ttfamily abstract int org.\+newdawn.\+slick.\+Font.\+get\+Height (\begin{DoxyParamCaption}\item[{String}]{str }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}}
+
+Get the height of the given string
+
+
+\begin{DoxyParams}{Parameters}
+{\em str} & The string to obtain the rendered with of \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The width of the given string 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_unicode_font_a409f20ee363890da63571bbc46567808}{org.\+newdawn.\+slick.\+Unicode\+Font}}, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_angel_code_font_ad962179705beb6355e270ebc65b04b2a}{org.\+newdawn.\+slick.\+Angel\+Code\+Font}}, and \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_true_type_font_a077395a15b52dd9b4831b3ce8d6c8430}{org.\+newdawn.\+slick.\+True\+Type\+Font}}.
+
+\mbox{\Hypertarget{interfaceorg_1_1newdawn_1_1slick_1_1_font_aeb4b7770f47c5e2631d84b35924376d7}\label{interfaceorg_1_1newdawn_1_1slick_1_1_font_aeb4b7770f47c5e2631d84b35924376d7}} 
+\index{org\+::newdawn\+::slick\+::\+Font@{org\+::newdawn\+::slick\+::\+Font}!get\+Line\+Height@{get\+Line\+Height}}
+\index{get\+Line\+Height@{get\+Line\+Height}!org\+::newdawn\+::slick\+::\+Font@{org\+::newdawn\+::slick\+::\+Font}}
+\subsubsection{\texorpdfstring{get\+Line\+Height()}{getLineHeight()}}
+{\footnotesize\ttfamily int org.\+newdawn.\+slick.\+Font.\+get\+Line\+Height (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Get the maximum height of any line drawn by this font
+
+\begin{DoxyReturn}{Returns}
+The maxium height of any line drawn by this font 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_unicode_font_a4f245d11a64ccc71aa9b1d48d89cbc09}{org.\+newdawn.\+slick.\+Unicode\+Font}}, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_angel_code_font_aa462c138af142eb6086c66205b0456af}{org.\+newdawn.\+slick.\+Angel\+Code\+Font}}, and \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_true_type_font_a16d8fe4babd9423e3cc197662889faaf}{org.\+newdawn.\+slick.\+True\+Type\+Font}}.
+
+\mbox{\Hypertarget{interfaceorg_1_1newdawn_1_1slick_1_1_font_a6dbdd5828730e18fcf0612307d0394b1}\label{interfaceorg_1_1newdawn_1_1slick_1_1_font_a6dbdd5828730e18fcf0612307d0394b1}} 
+\index{org\+::newdawn\+::slick\+::\+Font@{org\+::newdawn\+::slick\+::\+Font}!get\+Width@{get\+Width}}
+\index{get\+Width@{get\+Width}!org\+::newdawn\+::slick\+::\+Font@{org\+::newdawn\+::slick\+::\+Font}}
+\subsubsection{\texorpdfstring{get\+Width()}{getWidth()}}
+{\footnotesize\ttfamily abstract int org.\+newdawn.\+slick.\+Font.\+get\+Width (\begin{DoxyParamCaption}\item[{String}]{str }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}}
+
+Get the width of the given string
+
+
+\begin{DoxyParams}{Parameters}
+{\em str} & The string to obtain the rendered with of \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The width of the given string 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_unicode_font_a5a1aa518193d31f1407d3cb5e5997ca8}{org.\+newdawn.\+slick.\+Unicode\+Font}}, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_angel_code_font_a0202edaba33e21e6bfb3c7dbaebbbb92}{org.\+newdawn.\+slick.\+Angel\+Code\+Font}}, and \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_true_type_font_ad5614f14f3194de0b68f9fe095ab0bfa}{org.\+newdawn.\+slick.\+True\+Type\+Font}}.
+

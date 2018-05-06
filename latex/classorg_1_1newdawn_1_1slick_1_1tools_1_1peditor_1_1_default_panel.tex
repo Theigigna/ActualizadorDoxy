@@ -1,0 +1,44 @@
+\hypertarget{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_default_panel}{}\section{org.\+newdawn.\+slick.\+tools.\+peditor.\+Default\+Panel Class Reference}
+\label{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_default_panel}\index{org.\+newdawn.\+slick.\+tools.\+peditor.\+Default\+Panel@{org.\+newdawn.\+slick.\+tools.\+peditor.\+Default\+Panel}}
+Inheritance diagram for org.\+newdawn.\+slick.\+tools.\+peditor.\+Default\+Panel\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.252796cm]{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_default_panel}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_default_panel_ae7d7b9c33e70e3725f76d561955aac38}{set\+Enabled}} (boolean enabled)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A panel to get round the stupidity that disabling a J\+Panel doesn\textquotesingle{}t disable it\textquotesingle{}s children.
+
+\begin{DoxyAuthor}{Author}
+kevin 
+\end{DoxyAuthor}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_default_panel_ae7d7b9c33e70e3725f76d561955aac38}\label{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_default_panel_ae7d7b9c33e70e3725f76d561955aac38}} 
+\index{org\+::newdawn\+::slick\+::tools\+::peditor\+::\+Default\+Panel@{org\+::newdawn\+::slick\+::tools\+::peditor\+::\+Default\+Panel}!set\+Enabled@{set\+Enabled}}
+\index{set\+Enabled@{set\+Enabled}!org\+::newdawn\+::slick\+::tools\+::peditor\+::\+Default\+Panel@{org\+::newdawn\+::slick\+::tools\+::peditor\+::\+Default\+Panel}}
+\subsubsection{\texorpdfstring{set\+Enabled()}{setEnabled()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+tools.\+peditor.\+Default\+Panel.\+set\+Enabled (\begin{DoxyParamCaption}\item[{boolean}]{enabled }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxySeeAlso}{See also}
+javax.\+swing.\+J\+Component\+::set\+Enabled(boolean) 
+\end{DoxySeeAlso}
+
+\begin{DoxyCode}
+17                                             \{
+18         super.setEnabled(enabled);
+19         
+20         Component[] components = getComponents();
+21         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i=0;i<components.length;i++) \{
+22             components[i].setEnabled(enabled);
+23         \}
+24     \}
+\end{DoxyCode}

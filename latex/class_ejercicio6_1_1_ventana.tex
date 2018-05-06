@@ -1,0 +1,156 @@
+\hypertarget{class_ejercicio6_1_1_ventana}{}\section{Ejercicio6.\+Ventana Class Reference}
+\label{class_ejercicio6_1_1_ventana}\index{Ejercicio6.\+Ventana@{Ejercicio6.\+Ventana}}
+Inheritance diagram for Ejercicio6.\+Ventana\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_ejercicio6_1_1_ventana}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_ejercicio6_1_1_ventana_ae3dbf01a448d02dcc9a5b858e902ca23}{Ventana}} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{class_ejercicio6_1_1_ventana_ad8b396e48f768f227d519aa72bae8057}{main}} (String args\mbox{[}$\,$\mbox{]})
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_ejercicio6_1_1_ventana_a0e149e1c8087dce9a724c6e8e4b8ca7d}{init\+Components}} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+J\+Button \mbox{\hyperlink{class_ejercicio6_1_1_ventana_ad44d1eb3a44301c300133e494094fa82}{j\+Button1}}
+\item 
+J\+Button \mbox{\hyperlink{class_ejercicio6_1_1_ventana_a2ed2a64625ce0750faff659b6877db2a}{j\+Button2}}
+\item 
+J\+Button \mbox{\hyperlink{class_ejercicio6_1_1_ventana_a5e56d7fdd53c855b57547c618c29838a}{j\+Button3}}
+\item 
+J\+Button \mbox{\hyperlink{class_ejercicio6_1_1_ventana_a2ec5afa2ee7fdb55cebb1e2809f4a662}{j\+Button4}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_ejercicio6_1_1_ventana_ae3dbf01a448d02dcc9a5b858e902ca23}\label{class_ejercicio6_1_1_ventana_ae3dbf01a448d02dcc9a5b858e902ca23}} 
+\index{Ejercicio6\+::\+Ventana@{Ejercicio6\+::\+Ventana}!Ventana@{Ventana}}
+\index{Ventana@{Ventana}!Ejercicio6\+::\+Ventana@{Ejercicio6\+::\+Ventana}}
+\subsubsection{\texorpdfstring{Ventana()}{Ventana()}}
+{\footnotesize\ttfamily Ejercicio6.\+Ventana.\+Ventana (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+20                      \{
+21         \mbox{\hyperlink{class_ejercicio6_1_1_ventana_a0e149e1c8087dce9a724c6e8e4b8ca7d}{initComponents}}();
+22         setVisible(\textcolor{keyword}{true});
+23         \textcolor{keyword}{new} Pintor(\mbox{\hyperlink{class_ejercicio6_1_1_ventana_ad44d1eb3a44301c300133e494094fa82}{jButton1}});
+24         \textcolor{keyword}{new} Pintor(\mbox{\hyperlink{class_ejercicio6_1_1_ventana_a2ed2a64625ce0750faff659b6877db2a}{jButton2}});
+25         \textcolor{keyword}{new} Pintor(\mbox{\hyperlink{class_ejercicio6_1_1_ventana_a5e56d7fdd53c855b57547c618c29838a}{jButton3}});
+26         \textcolor{keyword}{new} Pintor(\mbox{\hyperlink{class_ejercicio6_1_1_ventana_a2ec5afa2ee7fdb55cebb1e2809f4a662}{jButton4}});
+27     \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_ejercicio6_1_1_ventana_a0e149e1c8087dce9a724c6e8e4b8ca7d}\label{class_ejercicio6_1_1_ventana_a0e149e1c8087dce9a724c6e8e4b8ca7d}} 
+\index{Ejercicio6\+::\+Ventana@{Ejercicio6\+::\+Ventana}!init\+Components@{init\+Components}}
+\index{init\+Components@{init\+Components}!Ejercicio6\+::\+Ventana@{Ejercicio6\+::\+Ventana}}
+\subsubsection{\texorpdfstring{init\+Components()}{initComponents()}}
+{\footnotesize\ttfamily void Ejercicio6.\+Ventana.\+init\+Components (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+\begin{DoxyCode}
+29                                   \{
+30         \mbox{\hyperlink{class_ejercicio6_1_1_ventana_ad44d1eb3a44301c300133e494094fa82}{jButton1}} = \textcolor{keyword}{new} JButton();
+31         \mbox{\hyperlink{class_ejercicio6_1_1_ventana_a2ed2a64625ce0750faff659b6877db2a}{jButton2}} = \textcolor{keyword}{new} JButton();
+32         \mbox{\hyperlink{class_ejercicio6_1_1_ventana_a5e56d7fdd53c855b57547c618c29838a}{jButton3}} = \textcolor{keyword}{new} JButton();
+33         \mbox{\hyperlink{class_ejercicio6_1_1_ventana_a2ec5afa2ee7fdb55cebb1e2809f4a662}{jButton4}} = \textcolor{keyword}{new} JButton();
+34  
+35         setDefaultCloseOperation(WindowConstants.EXIT\_ON\_CLOSE);
+36         setTitle(\textcolor{stringliteral}{"Colores"});
+37         setBounds(\textcolor{keyword}{new} java.awt.Rectangle(0, 0, 0, 0));
+38  
+39         GroupLayout layout = \textcolor{keyword}{new} GroupLayout(getContentPane());
+40         getContentPane().setLayout(layout);
+41         layout.setHorizontalGroup(
+42             layout.createParallelGroup(GroupLayout.Alignment.LEADING)
+43             .addGroup(layout.createSequentialGroup()
+44                 .addGap(116, 116, 116)
+45                 .addComponent(\mbox{\hyperlink{class_ejercicio6_1_1_ventana_ad44d1eb3a44301c300133e494094fa82}{jButton1}}, GroupLayout.PREFERRED\_SIZE, 144, GroupLayout.PREFERRED\_SIZE
+      )
+46                 .addGap(43, 43, 43)
+47                 .addComponent(\mbox{\hyperlink{class_ejercicio6_1_1_ventana_a2ed2a64625ce0750faff659b6877db2a}{jButton2}}, GroupLayout.PREFERRED\_SIZE, 150, GroupLayout.PREFERRED\_SIZE
+      )
+48                 .addGap(42, 42, 42)
+49                 .addComponent(\mbox{\hyperlink{class_ejercicio6_1_1_ventana_a5e56d7fdd53c855b57547c618c29838a}{jButton3}}, GroupLayout.PREFERRED\_SIZE, 151, GroupLayout.PREFERRED\_SIZE
+      )
+50                 .addGap(38, 38, 38)
+51                 .addComponent(\mbox{\hyperlink{class_ejercicio6_1_1_ventana_a2ec5afa2ee7fdb55cebb1e2809f4a662}{jButton4}}, GroupLayout.PREFERRED\_SIZE, 145, GroupLayout.PREFERRED\_SIZE
+      )
+52                 .addContainerGap(124, Short.MAX\_VALUE))
+53         );
+54         layout.setVerticalGroup(
+55             layout.createParallelGroup(GroupLayout.Alignment.LEADING)
+56             .addGroup(layout.createSequentialGroup()
+57                 .addGap(118, 118, 118)
+58                 .addGroup(layout.createParallelGroup(GroupLayout.Alignment.TRAILING, \textcolor{keyword}{false})
+59                    .addComponent(\mbox{\hyperlink{class_ejercicio6_1_1_ventana_a2ec5afa2ee7fdb55cebb1e2809f4a662}{jButton4}},GroupLayout.Alignment.LEADING,GroupLayout.DEFAULT\_SIZE, 
+      GroupLayout.DEFAULT\_SIZE, Short.MAX\_VALUE)
+60                    .addComponent(\mbox{\hyperlink{class_ejercicio6_1_1_ventana_a5e56d7fdd53c855b57547c618c29838a}{jButton3}}, GroupLayout.Alignment.LEADING, GroupLayout.DEFAULT\_SIZE,
+       GroupLayout.DEFAULT\_SIZE, Short.MAX\_VALUE)
+61                    .addComponent(\mbox{\hyperlink{class_ejercicio6_1_1_ventana_a2ed2a64625ce0750faff659b6877db2a}{jButton2}}, GroupLayout.Alignment.LEADING, GroupLayout.DEFAULT\_SIZE,
+       GroupLayout.DEFAULT\_SIZE, Short.MAX\_VALUE)
+62                    .addComponent(\mbox{\hyperlink{class_ejercicio6_1_1_ventana_ad44d1eb3a44301c300133e494094fa82}{jButton1}}, GroupLayout.Alignment.LEADING, GroupLayout.DEFAULT\_SIZE,
+       147, Short.MAX\_VALUE))
+63                 .addContainerGap(130, Short.MAX\_VALUE))
+64         );
+65         java.awt.Dimension screenSize = java.awt.Toolkit.getDefaultToolkit().getScreenSize();
+66         setBounds((screenSize.width-961)/2, (screenSize.height-422)/2, 961, 422);
+67     \}\textcolor{comment}{// </editor-fold>}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_ejercicio6_1_1_ventana_ad8b396e48f768f227d519aa72bae8057}\label{class_ejercicio6_1_1_ventana_ad8b396e48f768f227d519aa72bae8057}} 
+\index{Ejercicio6\+::\+Ventana@{Ejercicio6\+::\+Ventana}!main@{main}}
+\index{main@{main}!Ejercicio6\+::\+Ventana@{Ejercicio6\+::\+Ventana}}
+\subsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily static void Ejercicio6.\+Ventana.\+main (\begin{DoxyParamCaption}\item[{String}]{args\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+\begin{DoxyCode}
+69                                            \{
+70         java.awt.EventQueue.invokeLater(\textcolor{keyword}{new} Runnable() \{
+71             \textcolor{keyword}{public} \textcolor{keywordtype}{void} run() \{
+72                 \textcolor{keyword}{new} \mbox{\hyperlink{class_ejercicio6_1_1_ventana_ae3dbf01a448d02dcc9a5b858e902ca23}{Ventana}}();
+73             \}
+74         \});
+75     \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_ejercicio6_1_1_ventana_ad44d1eb3a44301c300133e494094fa82}\label{class_ejercicio6_1_1_ventana_ad44d1eb3a44301c300133e494094fa82}} 
+\index{Ejercicio6\+::\+Ventana@{Ejercicio6\+::\+Ventana}!j\+Button1@{j\+Button1}}
+\index{j\+Button1@{j\+Button1}!Ejercicio6\+::\+Ventana@{Ejercicio6\+::\+Ventana}}
+\subsubsection{\texorpdfstring{j\+Button1}{jButton1}}
+{\footnotesize\ttfamily J\+Button Ejercicio6.\+Ventana.\+j\+Button1\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_ejercicio6_1_1_ventana_a2ed2a64625ce0750faff659b6877db2a}\label{class_ejercicio6_1_1_ventana_a2ed2a64625ce0750faff659b6877db2a}} 
+\index{Ejercicio6\+::\+Ventana@{Ejercicio6\+::\+Ventana}!j\+Button2@{j\+Button2}}
+\index{j\+Button2@{j\+Button2}!Ejercicio6\+::\+Ventana@{Ejercicio6\+::\+Ventana}}
+\subsubsection{\texorpdfstring{j\+Button2}{jButton2}}
+{\footnotesize\ttfamily J\+Button Ejercicio6.\+Ventana.\+j\+Button2\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_ejercicio6_1_1_ventana_a5e56d7fdd53c855b57547c618c29838a}\label{class_ejercicio6_1_1_ventana_a5e56d7fdd53c855b57547c618c29838a}} 
+\index{Ejercicio6\+::\+Ventana@{Ejercicio6\+::\+Ventana}!j\+Button3@{j\+Button3}}
+\index{j\+Button3@{j\+Button3}!Ejercicio6\+::\+Ventana@{Ejercicio6\+::\+Ventana}}
+\subsubsection{\texorpdfstring{j\+Button3}{jButton3}}
+{\footnotesize\ttfamily J\+Button Ejercicio6.\+Ventana.\+j\+Button3\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_ejercicio6_1_1_ventana_a2ec5afa2ee7fdb55cebb1e2809f4a662}\label{class_ejercicio6_1_1_ventana_a2ec5afa2ee7fdb55cebb1e2809f4a662}} 
+\index{Ejercicio6\+::\+Ventana@{Ejercicio6\+::\+Ventana}!j\+Button4@{j\+Button4}}
+\index{j\+Button4@{j\+Button4}!Ejercicio6\+::\+Ventana@{Ejercicio6\+::\+Ventana}}
+\subsubsection{\texorpdfstring{j\+Button4}{jButton4}}
+{\footnotesize\ttfamily J\+Button Ejercicio6.\+Ventana.\+j\+Button4\hspace{0.3cm}{\ttfamily [private]}}
+

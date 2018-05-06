@@ -1,0 +1,102 @@
+\hypertarget{classorg_1_1newdawn_1_1slick_1_1muffin_1_1_file_muffin}{}\section{org.\+newdawn.\+slick.\+muffin.\+File\+Muffin Class Reference}
+\label{classorg_1_1newdawn_1_1slick_1_1muffin_1_1_file_muffin}\index{org.\+newdawn.\+slick.\+muffin.\+File\+Muffin@{org.\+newdawn.\+slick.\+muffin.\+File\+Muffin}}
+Inheritance diagram for org.\+newdawn.\+slick.\+muffin.\+File\+Muffin\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classorg_1_1newdawn_1_1slick_1_1muffin_1_1_file_muffin}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1muffin_1_1_file_muffin_ade293cc9f254442a763d22c2b0988aad}{save\+File}} (Hash\+Map score\+Map, String file\+Name)  throws I\+O\+Exception 
+\item 
+Hash\+Map \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1muffin_1_1_file_muffin_a5db97db7631d95ba851f1d4d81ed3825}{load\+File}} (String file\+Name)  throws I\+O\+Exception 
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+An implementation of the muffin load/save mechanism based around using the local file system.
+
+\begin{DoxyAuthor}{Author}
+kappa\+One 
+\end{DoxyAuthor}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1muffin_1_1_file_muffin_a5db97db7631d95ba851f1d4d81ed3825}\label{classorg_1_1newdawn_1_1slick_1_1muffin_1_1_file_muffin_a5db97db7631d95ba851f1d4d81ed3825}} 
+\index{org\+::newdawn\+::slick\+::muffin\+::\+File\+Muffin@{org\+::newdawn\+::slick\+::muffin\+::\+File\+Muffin}!load\+File@{load\+File}}
+\index{load\+File@{load\+File}!org\+::newdawn\+::slick\+::muffin\+::\+File\+Muffin@{org\+::newdawn\+::slick\+::muffin\+::\+File\+Muffin}}
+\subsubsection{\texorpdfstring{load\+File()}{loadFile()}}
+{\footnotesize\ttfamily Hash\+Map org.\+newdawn.\+slick.\+muffin.\+File\+Muffin.\+load\+File (\begin{DoxyParamCaption}\item[{String}]{file\+Name }\end{DoxyParamCaption}) throws I\+O\+Exception\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1muffin_1_1_muffin_a2d6256b6d8f26b294f06341985047fbe}{org.\+newdawn.\+slick.\+muffin.\+Muffin\+::load\+File}}(java.\+lang.\+String) 
+\end{DoxySeeAlso}
+
+
+Implements \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1muffin_1_1_muffin_a2d6256b6d8f26b294f06341985047fbe}{org.\+newdawn.\+slick.\+muffin.\+Muffin}}.
+
+
+\begin{DoxyCode}
+47                                                                 \{
+48         HashMap hashMap = \textcolor{keyword}{new} HashMap();
+49         String userHome = System.getProperty(\textcolor{stringliteral}{"user.home"});
+50 
+51         File file = \textcolor{keyword}{new} File(userHome);
+52         file = \textcolor{keyword}{new} File(file, \textcolor{stringliteral}{".java"});
+53         file = \textcolor{keyword}{new} File(file, fileName);
+54 
+55         \textcolor{keywordflow}{if} (file.exists()) \{
+56             \textcolor{keywordflow}{try} \{
+57                 FileInputStream fis = \textcolor{keyword}{new} FileInputStream(file);
+58                 ObjectInputStream ois = \textcolor{keyword}{new} ObjectInputStream(fis);
+59 
+60                 hashMap = (HashMap) ois.readObject();
+61 
+62                 ois.close();
+63 
+64             \} \textcolor{keywordflow}{catch} (EOFException e) \{
+65                 \textcolor{comment}{// End of the file reached, do nothing}
+66             \} \textcolor{keywordflow}{catch} (ClassNotFoundException e) \{
+67                 Log.error(e);
+68                 \textcolor{keywordflow}{throw} \textcolor{keyword}{new} IOException(\textcolor{stringliteral}{"Failed to pull state from store - class not found"});
+69             \}
+70         \}
+71 
+72         \textcolor{keywordflow}{return} hashMap;
+73     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1muffin_1_1_file_muffin_ade293cc9f254442a763d22c2b0988aad}\label{classorg_1_1newdawn_1_1slick_1_1muffin_1_1_file_muffin_ade293cc9f254442a763d22c2b0988aad}} 
+\index{org\+::newdawn\+::slick\+::muffin\+::\+File\+Muffin@{org\+::newdawn\+::slick\+::muffin\+::\+File\+Muffin}!save\+File@{save\+File}}
+\index{save\+File@{save\+File}!org\+::newdawn\+::slick\+::muffin\+::\+File\+Muffin@{org\+::newdawn\+::slick\+::muffin\+::\+File\+Muffin}}
+\subsubsection{\texorpdfstring{save\+File()}{saveFile()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+muffin.\+File\+Muffin.\+save\+File (\begin{DoxyParamCaption}\item[{Hash\+Map}]{score\+Map,  }\item[{String}]{file\+Name }\end{DoxyParamCaption}) throws I\+O\+Exception\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1muffin_1_1_muffin_a025189130fb123bc751e58677435974a}{org.\+newdawn.\+slick.\+muffin.\+Muffin\+::save\+File}}(java.\+util.\+Hash\+Map, java.\+lang.\+String) 
+\end{DoxySeeAlso}
+
+
+Implements \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1muffin_1_1_muffin_a025189130fb123bc751e58677435974a}{org.\+newdawn.\+slick.\+muffin.\+Muffin}}.
+
+
+\begin{DoxyCode}
+26                                                                                \{
+27         String userHome = System.getProperty(\textcolor{stringliteral}{"user.home"});
+28         File file = \textcolor{keyword}{new} File(userHome);
+29         file = \textcolor{keyword}{new} File(file, \textcolor{stringliteral}{".java"});
+30         \textcolor{keywordflow}{if} (!file.exists()) \{
+31             file.mkdir();
+32         \}
+33 
+34         file = \textcolor{keyword}{new} File(file, fileName);
+35         FileOutputStream fos = \textcolor{keyword}{new} FileOutputStream(file);
+36         ObjectOutputStream oos = \textcolor{keyword}{new} ObjectOutputStream(fos);
+37 
+38         \textcolor{comment}{// save hashMap}
+39         oos.writeObject(scoreMap);
+40 
+41         oos.close();
+42     \}
+\end{DoxyCode}

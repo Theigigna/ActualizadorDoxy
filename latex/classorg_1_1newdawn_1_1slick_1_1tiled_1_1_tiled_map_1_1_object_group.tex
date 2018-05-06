@@ -1,0 +1,126 @@
+\hypertarget{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_1_1_object_group}{}\section{org.\+newdawn.\+slick.\+tiled.\+Tiled\+Map.\+Object\+Group Class Reference}
+\label{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_1_1_object_group}\index{org.\+newdawn.\+slick.\+tiled.\+Tiled\+Map.\+Object\+Group@{org.\+newdawn.\+slick.\+tiled.\+Tiled\+Map.\+Object\+Group}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_1_1_object_group_a2030b1cef151fcb6a2185e1aa9de571a}{Object\+Group}} (Element element)  throws Slick\+Exception 
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_1_1_object_group_a3f12f222fefae365181b2fc1b9a3ec33}{index}}
+\item 
+String \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_1_1_object_group_affd673a1cabc99a8c700de0f82e41ba7}{name}}
+\item 
+Array\+List \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_1_1_object_group_ab11d113b64b9555b7f9e4fb1b2ceccae}{objects}}
+\item 
+int \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_1_1_object_group_a5a09777de1d3208dfd45df20aa97b266}{width}}
+\item 
+int \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_1_1_object_group_a645fa921dd9c7a684e13b513c00072b7}{height}}
+\item 
+Properties \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_1_1_object_group_a601905936bbd5be629c436112c3e86cd}{props}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A group of objects on the map (objects layer)
+
+\begin{DoxyAuthor}{Author}
+kulpae 
+\end{DoxyAuthor}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_1_1_object_group_a2030b1cef151fcb6a2185e1aa9de571a}\label{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_1_1_object_group_a2030b1cef151fcb6a2185e1aa9de571a}} 
+\index{org\+::newdawn\+::slick\+::tiled\+::\+Tiled\+Map\+::\+Object\+Group@{org\+::newdawn\+::slick\+::tiled\+::\+Tiled\+Map\+::\+Object\+Group}!Object\+Group@{Object\+Group}}
+\index{Object\+Group@{Object\+Group}!org\+::newdawn\+::slick\+::tiled\+::\+Tiled\+Map\+::\+Object\+Group@{org\+::newdawn\+::slick\+::tiled\+::\+Tiled\+Map\+::\+Object\+Group}}
+\subsubsection{\texorpdfstring{Object\+Group()}{ObjectGroup()}}
+{\footnotesize\ttfamily org.\+newdawn.\+slick.\+tiled.\+Tiled\+Map.\+Object\+Group.\+Object\+Group (\begin{DoxyParamCaption}\item[{Element}]{element }\end{DoxyParamCaption}) throws \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_slick_exception}{Slick\+Exception}}\hspace{0.3cm}{\ttfamily [inline]}}
+
+Create a new group based on the X\+ML definition
+
+
+\begin{DoxyParams}{Parameters}
+{\em element} & The X\+ML element describing the layer \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_slick_exception}{Slick\+Exception}}} & Indicates a failure to parse the X\+ML group \\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyCode}
+1006                                                                   \{
+1007             \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_1_1_object_group_affd673a1cabc99a8c700de0f82e41ba7}{name}} = element.getAttribute(\textcolor{stringliteral}{"name"});
+1008             \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_1_1_object_group_a5a09777de1d3208dfd45df20aa97b266}{width}} = Integer.parseInt(element.getAttribute(\textcolor{stringliteral}{"width"}));
+1009             \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_1_1_object_group_a645fa921dd9c7a684e13b513c00072b7}{height}} = Integer.parseInt(element.getAttribute(\textcolor{stringliteral}{"height"}));
+1010             \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_1_1_object_group_ab11d113b64b9555b7f9e4fb1b2ceccae}{objects}} = \textcolor{keyword}{new} ArrayList();
+1011 
+1012             \textcolor{comment}{// now read the layer properties}
+1013             Element propsElement = (Element) element.getElementsByTagName(
+1014                     \textcolor{stringliteral}{"properties"}).item(0);
+1015             \textcolor{keywordflow}{if} (propsElement != null) \{
+1016                 NodeList properties = propsElement
+1017                         .getElementsByTagName(\textcolor{stringliteral}{"property"});
+1018                 \textcolor{keywordflow}{if} (properties != null) \{
+1019                     \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_1_1_object_group_a601905936bbd5be629c436112c3e86cd}{props}} = \textcolor{keyword}{new} Properties();
+1020                     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} p = 0; p < properties.getLength(); p++) \{
+1021                         Element propElement = (Element) properties.item(p);
+1022 
+1023                         String \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_1_1_object_group_affd673a1cabc99a8c700de0f82e41ba7}{name}} = propElement.getAttribute(\textcolor{stringliteral}{"name"});
+1024                         String value = propElement.getAttribute(\textcolor{stringliteral}{"value"});
+1025                         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_1_1_object_group_a601905936bbd5be629c436112c3e86cd}{props}}.setProperty(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_1_1_object_group_affd673a1cabc99a8c700de0f82e41ba7}{name}}, value);
+1026                     \}
+1027                 \}
+1028             \}
+1029 
+1030             NodeList objectNodes = element.getElementsByTagName(\textcolor{stringliteral}{"object"});
+1031             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < objectNodes.getLength(); i++) \{
+1032                 Element objElement = (Element) objectNodes.item(i);
+1033                 GroupObject \textcolor{keywordtype}{object} = \textcolor{keyword}{new} GroupObject(objElement);
+1034                 \textcolor{keywordtype}{object}.index = i;
+1035                 \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_1_1_object_group_ab11d113b64b9555b7f9e4fb1b2ceccae}{objects}}.add(\textcolor{keywordtype}{object});
+1036             \}
+1037         \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_1_1_object_group_a645fa921dd9c7a684e13b513c00072b7}\label{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_1_1_object_group_a645fa921dd9c7a684e13b513c00072b7}} 
+\index{org\+::newdawn\+::slick\+::tiled\+::\+Tiled\+Map\+::\+Object\+Group@{org\+::newdawn\+::slick\+::tiled\+::\+Tiled\+Map\+::\+Object\+Group}!height@{height}}
+\index{height@{height}!org\+::newdawn\+::slick\+::tiled\+::\+Tiled\+Map\+::\+Object\+Group@{org\+::newdawn\+::slick\+::tiled\+::\+Tiled\+Map\+::\+Object\+Group}}
+\subsubsection{\texorpdfstring{height}{height}}
+{\footnotesize\ttfamily int org.\+newdawn.\+slick.\+tiled.\+Tiled\+Map.\+Object\+Group.\+height}
+
+The height of this layer \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_1_1_object_group_a3f12f222fefae365181b2fc1b9a3ec33}\label{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_1_1_object_group_a3f12f222fefae365181b2fc1b9a3ec33}} 
+\index{org\+::newdawn\+::slick\+::tiled\+::\+Tiled\+Map\+::\+Object\+Group@{org\+::newdawn\+::slick\+::tiled\+::\+Tiled\+Map\+::\+Object\+Group}!index@{index}}
+\index{index@{index}!org\+::newdawn\+::slick\+::tiled\+::\+Tiled\+Map\+::\+Object\+Group@{org\+::newdawn\+::slick\+::tiled\+::\+Tiled\+Map\+::\+Object\+Group}}
+\subsubsection{\texorpdfstring{index}{index}}
+{\footnotesize\ttfamily int org.\+newdawn.\+slick.\+tiled.\+Tiled\+Map.\+Object\+Group.\+index}
+
+The index of this group \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_1_1_object_group_affd673a1cabc99a8c700de0f82e41ba7}\label{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_1_1_object_group_affd673a1cabc99a8c700de0f82e41ba7}} 
+\index{org\+::newdawn\+::slick\+::tiled\+::\+Tiled\+Map\+::\+Object\+Group@{org\+::newdawn\+::slick\+::tiled\+::\+Tiled\+Map\+::\+Object\+Group}!name@{name}}
+\index{name@{name}!org\+::newdawn\+::slick\+::tiled\+::\+Tiled\+Map\+::\+Object\+Group@{org\+::newdawn\+::slick\+::tiled\+::\+Tiled\+Map\+::\+Object\+Group}}
+\subsubsection{\texorpdfstring{name}{name}}
+{\footnotesize\ttfamily String org.\+newdawn.\+slick.\+tiled.\+Tiled\+Map.\+Object\+Group.\+name}
+
+The name of this group -\/ read from the X\+ML \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_1_1_object_group_ab11d113b64b9555b7f9e4fb1b2ceccae}\label{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_1_1_object_group_ab11d113b64b9555b7f9e4fb1b2ceccae}} 
+\index{org\+::newdawn\+::slick\+::tiled\+::\+Tiled\+Map\+::\+Object\+Group@{org\+::newdawn\+::slick\+::tiled\+::\+Tiled\+Map\+::\+Object\+Group}!objects@{objects}}
+\index{objects@{objects}!org\+::newdawn\+::slick\+::tiled\+::\+Tiled\+Map\+::\+Object\+Group@{org\+::newdawn\+::slick\+::tiled\+::\+Tiled\+Map\+::\+Object\+Group}}
+\subsubsection{\texorpdfstring{objects}{objects}}
+{\footnotesize\ttfamily Array\+List org.\+newdawn.\+slick.\+tiled.\+Tiled\+Map.\+Object\+Group.\+objects}
+
+The Objects of this group \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_1_1_object_group_a601905936bbd5be629c436112c3e86cd}\label{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_1_1_object_group_a601905936bbd5be629c436112c3e86cd}} 
+\index{org\+::newdawn\+::slick\+::tiled\+::\+Tiled\+Map\+::\+Object\+Group@{org\+::newdawn\+::slick\+::tiled\+::\+Tiled\+Map\+::\+Object\+Group}!props@{props}}
+\index{props@{props}!org\+::newdawn\+::slick\+::tiled\+::\+Tiled\+Map\+::\+Object\+Group@{org\+::newdawn\+::slick\+::tiled\+::\+Tiled\+Map\+::\+Object\+Group}}
+\subsubsection{\texorpdfstring{props}{props}}
+{\footnotesize\ttfamily Properties org.\+newdawn.\+slick.\+tiled.\+Tiled\+Map.\+Object\+Group.\+props}
+
+the properties of this group \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_1_1_object_group_a5a09777de1d3208dfd45df20aa97b266}\label{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_1_1_object_group_a5a09777de1d3208dfd45df20aa97b266}} 
+\index{org\+::newdawn\+::slick\+::tiled\+::\+Tiled\+Map\+::\+Object\+Group@{org\+::newdawn\+::slick\+::tiled\+::\+Tiled\+Map\+::\+Object\+Group}!width@{width}}
+\index{width@{width}!org\+::newdawn\+::slick\+::tiled\+::\+Tiled\+Map\+::\+Object\+Group@{org\+::newdawn\+::slick\+::tiled\+::\+Tiled\+Map\+::\+Object\+Group}}
+\subsubsection{\texorpdfstring{width}{width}}
+{\footnotesize\ttfamily int org.\+newdawn.\+slick.\+tiled.\+Tiled\+Map.\+Object\+Group.\+width}
+
+The width of this layer 

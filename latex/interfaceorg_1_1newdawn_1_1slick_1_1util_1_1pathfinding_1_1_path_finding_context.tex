@@ -1,0 +1,90 @@
+\hypertarget{interfaceorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_path_finding_context}{}\section{org.\+newdawn.\+slick.\+util.\+pathfinding.\+Path\+Finding\+Context Interface Reference}
+\label{interfaceorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_path_finding_context}\index{org.\+newdawn.\+slick.\+util.\+pathfinding.\+Path\+Finding\+Context@{org.\+newdawn.\+slick.\+util.\+pathfinding.\+Path\+Finding\+Context}}
+Inheritance diagram for org.\+newdawn.\+slick.\+util.\+pathfinding.\+Path\+Finding\+Context\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.028466cm]{interfaceorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_path_finding_context}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_mover}{Mover}} \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_path_finding_context_a50e439d467ccdf457dca18ca60ab367c}{get\+Mover}} ()
+\item 
+int \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_path_finding_context_a7b67cdc7d0eaf54e6e07d09b1a575065}{get\+SourceX}} ()
+\item 
+int \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_path_finding_context_a30ac68532d0f3e9e5f4ce5e5e88f593e}{get\+SourceY}} ()
+\item 
+int \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_path_finding_context_af6c873041cbca8ad6edfd63c6e10d243}{get\+Search\+Distance}} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The context describing the current path finding state
+
+\begin{DoxyAuthor}{Author}
+kevin 
+\end{DoxyAuthor}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{interfaceorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_path_finding_context_a50e439d467ccdf457dca18ca60ab367c}\label{interfaceorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_path_finding_context_a50e439d467ccdf457dca18ca60ab367c}} 
+\index{org\+::newdawn\+::slick\+::util\+::pathfinding\+::\+Path\+Finding\+Context@{org\+::newdawn\+::slick\+::util\+::pathfinding\+::\+Path\+Finding\+Context}!get\+Mover@{get\+Mover}}
+\index{get\+Mover@{get\+Mover}!org\+::newdawn\+::slick\+::util\+::pathfinding\+::\+Path\+Finding\+Context@{org\+::newdawn\+::slick\+::util\+::pathfinding\+::\+Path\+Finding\+Context}}
+\subsubsection{\texorpdfstring{get\+Mover()}{getMover()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_mover}{Mover}} org.\+newdawn.\+slick.\+util.\+pathfinding.\+Path\+Finding\+Context.\+get\+Mover (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Get the object being moved along the path if any
+
+\begin{DoxyReturn}{Returns}
+The object being moved along the path 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_path_finder_a87eea405304f151bf2ef8621aefe4183}{org.\+newdawn.\+slick.\+util.\+pathfinding.\+A\+Star\+Path\+Finder}}, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1navmesh_1_1_nav_mesh_builder_aa085ed8b240abd28e09687941b65eb1e}{org.\+newdawn.\+slick.\+util.\+pathfinding.\+navmesh.\+Nav\+Mesh\+Builder}}, and \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_nav_mesh_test_ac645cd0e18a27972590065e165b949f1}{org.\+newdawn.\+slick.\+tests.\+Nav\+Mesh\+Test}}.
+
+\mbox{\Hypertarget{interfaceorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_path_finding_context_af6c873041cbca8ad6edfd63c6e10d243}\label{interfaceorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_path_finding_context_af6c873041cbca8ad6edfd63c6e10d243}} 
+\index{org\+::newdawn\+::slick\+::util\+::pathfinding\+::\+Path\+Finding\+Context@{org\+::newdawn\+::slick\+::util\+::pathfinding\+::\+Path\+Finding\+Context}!get\+Search\+Distance@{get\+Search\+Distance}}
+\index{get\+Search\+Distance@{get\+Search\+Distance}!org\+::newdawn\+::slick\+::util\+::pathfinding\+::\+Path\+Finding\+Context@{org\+::newdawn\+::slick\+::util\+::pathfinding\+::\+Path\+Finding\+Context}}
+\subsubsection{\texorpdfstring{get\+Search\+Distance()}{getSearchDistance()}}
+{\footnotesize\ttfamily int org.\+newdawn.\+slick.\+util.\+pathfinding.\+Path\+Finding\+Context.\+get\+Search\+Distance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Get the distance that has been searched to reach this point
+
+\begin{DoxyReturn}{Returns}
+The distance that has been search to reach this point 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_path_finder_abf095f4193d79acc42fdceb293468e14}{org.\+newdawn.\+slick.\+util.\+pathfinding.\+A\+Star\+Path\+Finder}}, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1navmesh_1_1_nav_mesh_builder_ad5148985f384f4fd0a1bc61ad92c7ea9}{org.\+newdawn.\+slick.\+util.\+pathfinding.\+navmesh.\+Nav\+Mesh\+Builder}}, and \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_nav_mesh_test_ada8b9e7b14d4ca0de9094cd67f0ec9bf}{org.\+newdawn.\+slick.\+tests.\+Nav\+Mesh\+Test}}.
+
+\mbox{\Hypertarget{interfaceorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_path_finding_context_a7b67cdc7d0eaf54e6e07d09b1a575065}\label{interfaceorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_path_finding_context_a7b67cdc7d0eaf54e6e07d09b1a575065}} 
+\index{org\+::newdawn\+::slick\+::util\+::pathfinding\+::\+Path\+Finding\+Context@{org\+::newdawn\+::slick\+::util\+::pathfinding\+::\+Path\+Finding\+Context}!get\+SourceX@{get\+SourceX}}
+\index{get\+SourceX@{get\+SourceX}!org\+::newdawn\+::slick\+::util\+::pathfinding\+::\+Path\+Finding\+Context@{org\+::newdawn\+::slick\+::util\+::pathfinding\+::\+Path\+Finding\+Context}}
+\subsubsection{\texorpdfstring{get\+Source\+X()}{getSourceX()}}
+{\footnotesize\ttfamily int org.\+newdawn.\+slick.\+util.\+pathfinding.\+Path\+Finding\+Context.\+get\+SourceX (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Get the x coordinate of the source location
+
+\begin{DoxyReturn}{Returns}
+The x coordinate of the source location 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_path_finder_a170c66a9356c930fa83a50567f64be52}{org.\+newdawn.\+slick.\+util.\+pathfinding.\+A\+Star\+Path\+Finder}}, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1navmesh_1_1_nav_mesh_builder_a368af4ad284ad517158244a34f6111a5}{org.\+newdawn.\+slick.\+util.\+pathfinding.\+navmesh.\+Nav\+Mesh\+Builder}}, and \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_nav_mesh_test_af3706d73f28af86dd69006f8095f76ef}{org.\+newdawn.\+slick.\+tests.\+Nav\+Mesh\+Test}}.
+
+\mbox{\Hypertarget{interfaceorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_path_finding_context_a30ac68532d0f3e9e5f4ce5e5e88f593e}\label{interfaceorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_path_finding_context_a30ac68532d0f3e9e5f4ce5e5e88f593e}} 
+\index{org\+::newdawn\+::slick\+::util\+::pathfinding\+::\+Path\+Finding\+Context@{org\+::newdawn\+::slick\+::util\+::pathfinding\+::\+Path\+Finding\+Context}!get\+SourceY@{get\+SourceY}}
+\index{get\+SourceY@{get\+SourceY}!org\+::newdawn\+::slick\+::util\+::pathfinding\+::\+Path\+Finding\+Context@{org\+::newdawn\+::slick\+::util\+::pathfinding\+::\+Path\+Finding\+Context}}
+\subsubsection{\texorpdfstring{get\+Source\+Y()}{getSourceY()}}
+{\footnotesize\ttfamily int org.\+newdawn.\+slick.\+util.\+pathfinding.\+Path\+Finding\+Context.\+get\+SourceY (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Get the y coordinate of the source location
+
+\begin{DoxyReturn}{Returns}
+The y coordinate of the source location 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_path_finder_abfd761f71fe0c43a7d3533e49cf5be33}{org.\+newdawn.\+slick.\+util.\+pathfinding.\+A\+Star\+Path\+Finder}}, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1navmesh_1_1_nav_mesh_builder_af86bf1e346eb82762f69a1d4de6ba315}{org.\+newdawn.\+slick.\+util.\+pathfinding.\+navmesh.\+Nav\+Mesh\+Builder}}, and \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_nav_mesh_test_a97359fb033667ef886d266231204adcf}{org.\+newdawn.\+slick.\+tests.\+Nav\+Mesh\+Test}}.
+

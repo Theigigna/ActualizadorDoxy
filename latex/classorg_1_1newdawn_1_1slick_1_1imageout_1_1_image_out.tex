@@ -1,0 +1,284 @@
+\hypertarget{classorg_1_1newdawn_1_1slick_1_1imageout_1_1_image_out}{}\section{org.\+newdawn.\+slick.\+imageout.\+Image\+Out Class Reference}
+\label{classorg_1_1newdawn_1_1slick_1_1imageout_1_1_image_out}\index{org.\+newdawn.\+slick.\+imageout.\+Image\+Out@{org.\+newdawn.\+slick.\+imageout.\+Image\+Out}}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static String \mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1imageout_1_1_image_out_a5f0e565089362d9df4c3cf11c6f52445}{get\+Supported\+Formats}} ()
+\item 
+static void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1imageout_1_1_image_out_a3b5d59b0d7fbacc07f04a2e3c687cd74}{write}} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_image}{Image}} image, String format, Output\+Stream out)  throws Slick\+Exception 
+\item 
+static void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1imageout_1_1_image_out_a1919735506d349b80950072af1cd144e}{write}} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_image}{Image}} image, String format, Output\+Stream out, boolean write\+Alpha)  throws Slick\+Exception 
+\item 
+static void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1imageout_1_1_image_out_a882977334716c5207011a3606c8e0b56}{write}} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_image}{Image}} image, String dest)  throws Slick\+Exception 
+\item 
+static void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1imageout_1_1_image_out_a4fb9c013b521ae23b30074fb75a5da24}{write}} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_image}{Image}} image, String dest, boolean write\+Alpha)  throws Slick\+Exception 
+\item 
+static void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1imageout_1_1_image_out_a85927f3db76e9a4ce353a44d5fb12b6d}{write}} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_image}{Image}} image, String format, String dest)  throws Slick\+Exception 
+\item 
+static void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1imageout_1_1_image_out_a982565477e5540db4af99348e0543616}{write}} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_image}{Image}} image, String format, String dest, boolean write\+Alpha)  throws Slick\+Exception 
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static String \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1imageout_1_1_image_out_a099a7b974713f1bcf93e186e501d4a71}{T\+GA}} = \char`\"{}tga\char`\"{}
+\item 
+static String \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1imageout_1_1_image_out_a7fb9f32ed48aaf7f75eb914a65a0f086}{P\+NG}} = \char`\"{}png\char`\"{}
+\item 
+static String \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1imageout_1_1_image_out_af340492a2d2cc6dcfc3701657f613e45}{J\+PG}} = \char`\"{}jpg\char`\"{}
+\end{DoxyCompactItemize}
+\subsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static final boolean \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1imageout_1_1_image_out_a914d905541d22894588097301e2fc5fb}{D\+E\+F\+A\+U\+L\+T\+\_\+\+A\+L\+P\+H\+A\+\_\+\+W\+R\+I\+TE}} = false
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A static hook to access all the \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_image}{Image}} output utilities. The list of format strings provided is not the limit of capability. These are provided for utility, use \begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1imageout_1_1_image_out_a5f0e565089362d9df4c3cf11c6f52445}{get\+Supported\+Formats()}} for a full list of supported formats.
+\end{DoxySeeAlso}
+\begin{DoxyAuthor}{Author}
+kevin 
+\end{DoxyAuthor}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1imageout_1_1_image_out_a5f0e565089362d9df4c3cf11c6f52445}\label{classorg_1_1newdawn_1_1slick_1_1imageout_1_1_image_out_a5f0e565089362d9df4c3cf11c6f52445}} 
+\index{org\+::newdawn\+::slick\+::imageout\+::\+Image\+Out@{org\+::newdawn\+::slick\+::imageout\+::\+Image\+Out}!get\+Supported\+Formats@{get\+Supported\+Formats}}
+\index{get\+Supported\+Formats@{get\+Supported\+Formats}!org\+::newdawn\+::slick\+::imageout\+::\+Image\+Out@{org\+::newdawn\+::slick\+::imageout\+::\+Image\+Out}}
+\subsubsection{\texorpdfstring{get\+Supported\+Formats()}{getSupportedFormats()}}
+{\footnotesize\ttfamily static String \mbox{[}$\,$\mbox{]} org.\+newdawn.\+slick.\+imageout.\+Image\+Out.\+get\+Supported\+Formats (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Get a list of supported formats
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1imageout_1_1_image_writer_factory_a582dd022e333ee816d486158729f226a}{Image\+Writer\+Factory\+::get\+Supported\+Formats()}} 
+\end{DoxySeeAlso}
+\begin{DoxyReturn}{Returns}
+The list of supported format strings 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+34                                                  \{
+35         \textcolor{keywordflow}{return} ImageWriterFactory.getSupportedFormats();
+36     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1imageout_1_1_image_out_a3b5d59b0d7fbacc07f04a2e3c687cd74}\label{classorg_1_1newdawn_1_1slick_1_1imageout_1_1_image_out_a3b5d59b0d7fbacc07f04a2e3c687cd74}} 
+\index{org\+::newdawn\+::slick\+::imageout\+::\+Image\+Out@{org\+::newdawn\+::slick\+::imageout\+::\+Image\+Out}!write@{write}}
+\index{write@{write}!org\+::newdawn\+::slick\+::imageout\+::\+Image\+Out@{org\+::newdawn\+::slick\+::imageout\+::\+Image\+Out}}
+\subsubsection{\texorpdfstring{write()}{write()}\hspace{0.1cm}{\footnotesize\ttfamily [1/6]}}
+{\footnotesize\ttfamily static void org.\+newdawn.\+slick.\+imageout.\+Image\+Out.\+write (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_image}{Image}}}]{image,  }\item[{String}]{format,  }\item[{Output\+Stream}]{out }\end{DoxyParamCaption}) throws \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_slick_exception}{Slick\+Exception}}\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Write an image out to a specified output stream
+
+
+\begin{DoxyParams}{Parameters}
+{\em image} & The image to write out to \\
+\hline
+{\em format} & The format to write the image out in \\
+\hline
+{\em out} & The output stream to which the image should be written \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_slick_exception}{Slick\+Exception}}} & Indicates a failure to write the image in the specified format \\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyCode}
+46                                                                                                  \{
+47         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1imageout_1_1_image_out_a3b5d59b0d7fbacc07f04a2e3c687cd74}{write}}(image, format, out, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1imageout_1_1_image_out_a914d905541d22894588097301e2fc5fb}{DEFAULT\_ALPHA\_WRITE}});
+48     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1imageout_1_1_image_out_a1919735506d349b80950072af1cd144e}\label{classorg_1_1newdawn_1_1slick_1_1imageout_1_1_image_out_a1919735506d349b80950072af1cd144e}} 
+\index{org\+::newdawn\+::slick\+::imageout\+::\+Image\+Out@{org\+::newdawn\+::slick\+::imageout\+::\+Image\+Out}!write@{write}}
+\index{write@{write}!org\+::newdawn\+::slick\+::imageout\+::\+Image\+Out@{org\+::newdawn\+::slick\+::imageout\+::\+Image\+Out}}
+\subsubsection{\texorpdfstring{write()}{write()}\hspace{0.1cm}{\footnotesize\ttfamily [2/6]}}
+{\footnotesize\ttfamily static void org.\+newdawn.\+slick.\+imageout.\+Image\+Out.\+write (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_image}{Image}}}]{image,  }\item[{String}]{format,  }\item[{Output\+Stream}]{out,  }\item[{boolean}]{write\+Alpha }\end{DoxyParamCaption}) throws \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_slick_exception}{Slick\+Exception}}\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Write an image out to a specified output stream
+
+
+\begin{DoxyParams}{Parameters}
+{\em image} & The image to write out to \\
+\hline
+{\em format} & The format to write the image out in \\
+\hline
+{\em out} & The output stream to which the image should be written \\
+\hline
+{\em write\+Alpha} & True if we should write the alpha channel out (some formats don\textquotesingle{}t support this, like J\+PG) \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_slick_exception}{Slick\+Exception}}} & Indicates a failure to write the image in the specified format \\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyCode}
+59                                                                                                            
+                \{
+60         \textcolor{keywordflow}{try} \{
+61             ImageWriter writer = ImageWriterFactory.getWriterForFormat(format);
+62             writer.saveImage(image, format, out, writeAlpha);
+63         \} \textcolor{keywordflow}{catch} (IOException e) \{
+64             \textcolor{keywordflow}{throw} \textcolor{keyword}{new} SlickException(\textcolor{stringliteral}{"Unable to write out the image in format: "}+format, e);
+65         \}
+66     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1imageout_1_1_image_out_a882977334716c5207011a3606c8e0b56}\label{classorg_1_1newdawn_1_1slick_1_1imageout_1_1_image_out_a882977334716c5207011a3606c8e0b56}} 
+\index{org\+::newdawn\+::slick\+::imageout\+::\+Image\+Out@{org\+::newdawn\+::slick\+::imageout\+::\+Image\+Out}!write@{write}}
+\index{write@{write}!org\+::newdawn\+::slick\+::imageout\+::\+Image\+Out@{org\+::newdawn\+::slick\+::imageout\+::\+Image\+Out}}
+\subsubsection{\texorpdfstring{write()}{write()}\hspace{0.1cm}{\footnotesize\ttfamily [3/6]}}
+{\footnotesize\ttfamily static void org.\+newdawn.\+slick.\+imageout.\+Image\+Out.\+write (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_image}{Image}}}]{image,  }\item[{String}]{dest }\end{DoxyParamCaption}) throws \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_slick_exception}{Slick\+Exception}}\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Write an image out to a file on the local file system. The format of the output is determined based on the file name extension
+
+
+\begin{DoxyParams}{Parameters}
+{\em image} & The image to be written out \\
+\hline
+{\em dest} & The destination path to write to \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_slick_exception}{Slick\+Exception}}} & Indicates a failure to write the image in the determined format \\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyCode}
+76                                                                              \{
+77         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1imageout_1_1_image_out_a3b5d59b0d7fbacc07f04a2e3c687cd74}{write}}(image, dest, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1imageout_1_1_image_out_a914d905541d22894588097301e2fc5fb}{DEFAULT\_ALPHA\_WRITE}});
+78     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1imageout_1_1_image_out_a4fb9c013b521ae23b30074fb75a5da24}\label{classorg_1_1newdawn_1_1slick_1_1imageout_1_1_image_out_a4fb9c013b521ae23b30074fb75a5da24}} 
+\index{org\+::newdawn\+::slick\+::imageout\+::\+Image\+Out@{org\+::newdawn\+::slick\+::imageout\+::\+Image\+Out}!write@{write}}
+\index{write@{write}!org\+::newdawn\+::slick\+::imageout\+::\+Image\+Out@{org\+::newdawn\+::slick\+::imageout\+::\+Image\+Out}}
+\subsubsection{\texorpdfstring{write()}{write()}\hspace{0.1cm}{\footnotesize\ttfamily [4/6]}}
+{\footnotesize\ttfamily static void org.\+newdawn.\+slick.\+imageout.\+Image\+Out.\+write (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_image}{Image}}}]{image,  }\item[{String}]{dest,  }\item[{boolean}]{write\+Alpha }\end{DoxyParamCaption}) throws \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_slick_exception}{Slick\+Exception}}\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Write an image out to a file on the local file system. The format of the output is determined based on the file name extension
+
+
+\begin{DoxyParams}{Parameters}
+{\em image} & The image to be written out \\
+\hline
+{\em dest} & The destination path to write to \\
+\hline
+{\em write\+Alpha} & True if we should write the alpha channel out (some formats don\textquotesingle{}t support this, like J\+PG) \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_slick_exception}{Slick\+Exception}}} & Indicates a failure to write the image in the determined format \\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyCode}
+89                                                                                                  \{
+90         \textcolor{keywordflow}{try} \{
+91             \textcolor{keywordtype}{int} ext = dest.lastIndexOf(\textcolor{charliteral}{'.'});
+92             \textcolor{keywordflow}{if} (ext < 0) \{
+93                 \textcolor{keywordflow}{throw} \textcolor{keyword}{new} SlickException(\textcolor{stringliteral}{"Unable to determine format from: "}+dest);
+94             \}
+95             
+96             String format = dest.substring(ext+1);
+97             \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1imageout_1_1_image_out_a3b5d59b0d7fbacc07f04a2e3c687cd74}{write}}(image, format, \textcolor{keyword}{new} FileOutputStream(dest), writeAlpha);
+98         \} \textcolor{keywordflow}{catch} (IOException e) \{
+99             \textcolor{keywordflow}{throw} \textcolor{keyword}{new} SlickException(\textcolor{stringliteral}{"Unable to write to the destination: "}+dest, e);
+100         \}
+101     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1imageout_1_1_image_out_a85927f3db76e9a4ce353a44d5fb12b6d}\label{classorg_1_1newdawn_1_1slick_1_1imageout_1_1_image_out_a85927f3db76e9a4ce353a44d5fb12b6d}} 
+\index{org\+::newdawn\+::slick\+::imageout\+::\+Image\+Out@{org\+::newdawn\+::slick\+::imageout\+::\+Image\+Out}!write@{write}}
+\index{write@{write}!org\+::newdawn\+::slick\+::imageout\+::\+Image\+Out@{org\+::newdawn\+::slick\+::imageout\+::\+Image\+Out}}
+\subsubsection{\texorpdfstring{write()}{write()}\hspace{0.1cm}{\footnotesize\ttfamily [5/6]}}
+{\footnotesize\ttfamily static void org.\+newdawn.\+slick.\+imageout.\+Image\+Out.\+write (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_image}{Image}}}]{image,  }\item[{String}]{format,  }\item[{String}]{dest }\end{DoxyParamCaption}) throws \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_slick_exception}{Slick\+Exception}}\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Write an image out to a file on the local file system.
+
+
+\begin{DoxyParams}{Parameters}
+{\em image} & The image to be written out \\
+\hline
+{\em format} & The format to write the image out in \\
+\hline
+{\em dest} & The destination path to write to \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_slick_exception}{Slick\+Exception}}} & Indicates a failure to write the image in the determined format \\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyCode}
+111                                                                                             \{
+112         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1imageout_1_1_image_out_a3b5d59b0d7fbacc07f04a2e3c687cd74}{write}}(image, format, dest, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1imageout_1_1_image_out_a914d905541d22894588097301e2fc5fb}{DEFAULT\_ALPHA\_WRITE}});
+113     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1imageout_1_1_image_out_a982565477e5540db4af99348e0543616}\label{classorg_1_1newdawn_1_1slick_1_1imageout_1_1_image_out_a982565477e5540db4af99348e0543616}} 
+\index{org\+::newdawn\+::slick\+::imageout\+::\+Image\+Out@{org\+::newdawn\+::slick\+::imageout\+::\+Image\+Out}!write@{write}}
+\index{write@{write}!org\+::newdawn\+::slick\+::imageout\+::\+Image\+Out@{org\+::newdawn\+::slick\+::imageout\+::\+Image\+Out}}
+\subsubsection{\texorpdfstring{write()}{write()}\hspace{0.1cm}{\footnotesize\ttfamily [6/6]}}
+{\footnotesize\ttfamily static void org.\+newdawn.\+slick.\+imageout.\+Image\+Out.\+write (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_image}{Image}}}]{image,  }\item[{String}]{format,  }\item[{String}]{dest,  }\item[{boolean}]{write\+Alpha }\end{DoxyParamCaption}) throws \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_slick_exception}{Slick\+Exception}}\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Write an image out to a file on the local file system.
+
+
+\begin{DoxyParams}{Parameters}
+{\em image} & The image to be written out \\
+\hline
+{\em format} & The format to write the image out in \\
+\hline
+{\em dest} & The destination path to write to \\
+\hline
+{\em write\+Alpha} & True if we should write the alpha channel out (some formats don\textquotesingle{}t support this, like J\+PG) \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_slick_exception}{Slick\+Exception}}} & Indicates a failure to write the image in the determined format \\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyCode}
+124                                                                                                            
+           \{
+125         \textcolor{keywordflow}{try} \{
+126             \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1imageout_1_1_image_out_a3b5d59b0d7fbacc07f04a2e3c687cd74}{write}}(image, format, \textcolor{keyword}{new} FileOutputStream(dest), writeAlpha);
+127         \} \textcolor{keywordflow}{catch} (IOException e) \{
+128             \textcolor{keywordflow}{throw} \textcolor{keyword}{new} SlickException(\textcolor{stringliteral}{"Unable to write to the destination: "}+dest, e);
+129         \}
+130     \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1imageout_1_1_image_out_a914d905541d22894588097301e2fc5fb}\label{classorg_1_1newdawn_1_1slick_1_1imageout_1_1_image_out_a914d905541d22894588097301e2fc5fb}} 
+\index{org\+::newdawn\+::slick\+::imageout\+::\+Image\+Out@{org\+::newdawn\+::slick\+::imageout\+::\+Image\+Out}!D\+E\+F\+A\+U\+L\+T\+\_\+\+A\+L\+P\+H\+A\+\_\+\+W\+R\+I\+TE@{D\+E\+F\+A\+U\+L\+T\+\_\+\+A\+L\+P\+H\+A\+\_\+\+W\+R\+I\+TE}}
+\index{D\+E\+F\+A\+U\+L\+T\+\_\+\+A\+L\+P\+H\+A\+\_\+\+W\+R\+I\+TE@{D\+E\+F\+A\+U\+L\+T\+\_\+\+A\+L\+P\+H\+A\+\_\+\+W\+R\+I\+TE}!org\+::newdawn\+::slick\+::imageout\+::\+Image\+Out@{org\+::newdawn\+::slick\+::imageout\+::\+Image\+Out}}
+\subsubsection{\texorpdfstring{D\+E\+F\+A\+U\+L\+T\+\_\+\+A\+L\+P\+H\+A\+\_\+\+W\+R\+I\+TE}{DEFAULT\_ALPHA\_WRITE}}
+{\footnotesize\ttfamily final boolean org.\+newdawn.\+slick.\+imageout.\+Image\+Out.\+D\+E\+F\+A\+U\+L\+T\+\_\+\+A\+L\+P\+H\+A\+\_\+\+W\+R\+I\+TE = false\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+The default setting for writing out the alpha channel \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1imageout_1_1_image_out_af340492a2d2cc6dcfc3701657f613e45}\label{classorg_1_1newdawn_1_1slick_1_1imageout_1_1_image_out_af340492a2d2cc6dcfc3701657f613e45}} 
+\index{org\+::newdawn\+::slick\+::imageout\+::\+Image\+Out@{org\+::newdawn\+::slick\+::imageout\+::\+Image\+Out}!J\+PG@{J\+PG}}
+\index{J\+PG@{J\+PG}!org\+::newdawn\+::slick\+::imageout\+::\+Image\+Out@{org\+::newdawn\+::slick\+::imageout\+::\+Image\+Out}}
+\subsubsection{\texorpdfstring{J\+PG}{JPG}}
+{\footnotesize\ttfamily String org.\+newdawn.\+slick.\+imageout.\+Image\+Out.\+J\+PG = \char`\"{}jpg\char`\"{}\hspace{0.3cm}{\ttfamily [static]}}
+
+The format string for J\+PG \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1imageout_1_1_image_out_a7fb9f32ed48aaf7f75eb914a65a0f086}\label{classorg_1_1newdawn_1_1slick_1_1imageout_1_1_image_out_a7fb9f32ed48aaf7f75eb914a65a0f086}} 
+\index{org\+::newdawn\+::slick\+::imageout\+::\+Image\+Out@{org\+::newdawn\+::slick\+::imageout\+::\+Image\+Out}!P\+NG@{P\+NG}}
+\index{P\+NG@{P\+NG}!org\+::newdawn\+::slick\+::imageout\+::\+Image\+Out@{org\+::newdawn\+::slick\+::imageout\+::\+Image\+Out}}
+\subsubsection{\texorpdfstring{P\+NG}{PNG}}
+{\footnotesize\ttfamily String org.\+newdawn.\+slick.\+imageout.\+Image\+Out.\+P\+NG = \char`\"{}png\char`\"{}\hspace{0.3cm}{\ttfamily [static]}}
+
+The format string for P\+NG \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1imageout_1_1_image_out_a099a7b974713f1bcf93e186e501d4a71}\label{classorg_1_1newdawn_1_1slick_1_1imageout_1_1_image_out_a099a7b974713f1bcf93e186e501d4a71}} 
+\index{org\+::newdawn\+::slick\+::imageout\+::\+Image\+Out@{org\+::newdawn\+::slick\+::imageout\+::\+Image\+Out}!T\+GA@{T\+GA}}
+\index{T\+GA@{T\+GA}!org\+::newdawn\+::slick\+::imageout\+::\+Image\+Out@{org\+::newdawn\+::slick\+::imageout\+::\+Image\+Out}}
+\subsubsection{\texorpdfstring{T\+GA}{TGA}}
+{\footnotesize\ttfamily String org.\+newdawn.\+slick.\+imageout.\+Image\+Out.\+T\+GA = \char`\"{}tga\char`\"{}\hspace{0.3cm}{\ttfamily [static]}}
+
+The format string for T\+GA 

@@ -1,0 +1,214 @@
+\hypertarget{interfaceorg_1_1newdawn_1_1slick_1_1particles_1_1_particle_emitter}{}\section{org.\+newdawn.\+slick.\+particles.\+Particle\+Emitter Interface Reference}
+\label{interfaceorg_1_1newdawn_1_1slick_1_1particles_1_1_particle_emitter}\index{org.\+newdawn.\+slick.\+particles.\+Particle\+Emitter@{org.\+newdawn.\+slick.\+particles.\+Particle\+Emitter}}
+Inheritance diagram for org.\+newdawn.\+slick.\+particles.\+Particle\+Emitter\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.917808cm]{interfaceorg_1_1newdawn_1_1slick_1_1particles_1_1_particle_emitter}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1particles_1_1_particle_emitter_a18e2a8e6264aa46fb874f992c2093e15}{update}} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1particles_1_1_particle_system}{Particle\+System}} system, int delta)
+\item 
+boolean \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1particles_1_1_particle_emitter_a6741f9cbee46594a774b1bfd24a4bf3d}{completed}} ()
+\item 
+void \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1particles_1_1_particle_emitter_ad8549755b39d63bdde71860be6b0f1f9}{wrap\+Up}} ()
+\item 
+void \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1particles_1_1_particle_emitter_ac0792f19fdebd62a321bcdc487e0cba5}{update\+Particle}} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1particles_1_1_particle}{Particle}} particle, int delta)
+\item 
+boolean \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1particles_1_1_particle_emitter_a6a6fabad4971a0634a0a99dbed53c47d}{is\+Enabled}} ()
+\item 
+void \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1particles_1_1_particle_emitter_a0db4bbc7bb9b5cc2b828993e065db057}{set\+Enabled}} (boolean enabled)
+\item 
+boolean \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1particles_1_1_particle_emitter_a36f6bfeef5567c7c5b42c866a738cdb7}{use\+Additive}} ()
+\item 
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_image}{Image}} \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1particles_1_1_particle_emitter_a8a4c81c409b505d6708519c492660746}{get\+Image}} ()
+\item 
+boolean \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1particles_1_1_particle_emitter_a4a51564b4539a1eb2c3fc0d322ac5c2a}{is\+Oriented}} ()
+\item 
+boolean \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1particles_1_1_particle_emitter_a26ad157d83aebf2e49163ddaae6a9edd}{use\+Points}} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1particles_1_1_particle_system}{Particle\+System}} system)
+\item 
+void \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1particles_1_1_particle_emitter_a1120925a31c61fc95dc38eca9b01b9ef}{reset\+State}} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+An emitter is responsible for producing the particles and controlling them during their life. An implementation of this interface can be considered a particle effect.
+
+\begin{DoxyAuthor}{Author}
+kevin 
+\end{DoxyAuthor}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{interfaceorg_1_1newdawn_1_1slick_1_1particles_1_1_particle_emitter_a6741f9cbee46594a774b1bfd24a4bf3d}\label{interfaceorg_1_1newdawn_1_1slick_1_1particles_1_1_particle_emitter_a6741f9cbee46594a774b1bfd24a4bf3d}} 
+\index{org\+::newdawn\+::slick\+::particles\+::\+Particle\+Emitter@{org\+::newdawn\+::slick\+::particles\+::\+Particle\+Emitter}!completed@{completed}}
+\index{completed@{completed}!org\+::newdawn\+::slick\+::particles\+::\+Particle\+Emitter@{org\+::newdawn\+::slick\+::particles\+::\+Particle\+Emitter}}
+\subsubsection{\texorpdfstring{completed()}{completed()}}
+{\footnotesize\ttfamily boolean org.\+newdawn.\+slick.\+particles.\+Particle\+Emitter.\+completed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Check if this emitter has completed it\textquotesingle{}s cycle
+
+\begin{DoxyReturn}{Returns}
+True if the emitter has completed it\textquotesingle{}s cycle 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1particles_1_1_configurable_emitter_abcb8dd0c86a998fc1f386254e4a27c86}{org.\+newdawn.\+slick.\+particles.\+Configurable\+Emitter}}, and \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1particles_1_1effects_1_1_fire_emitter_a6048e7cbb34fe2604668027278d47ee3}{org.\+newdawn.\+slick.\+particles.\+effects.\+Fire\+Emitter}}.
+
+\mbox{\Hypertarget{interfaceorg_1_1newdawn_1_1slick_1_1particles_1_1_particle_emitter_a8a4c81c409b505d6708519c492660746}\label{interfaceorg_1_1newdawn_1_1slick_1_1particles_1_1_particle_emitter_a8a4c81c409b505d6708519c492660746}} 
+\index{org\+::newdawn\+::slick\+::particles\+::\+Particle\+Emitter@{org\+::newdawn\+::slick\+::particles\+::\+Particle\+Emitter}!get\+Image@{get\+Image}}
+\index{get\+Image@{get\+Image}!org\+::newdawn\+::slick\+::particles\+::\+Particle\+Emitter@{org\+::newdawn\+::slick\+::particles\+::\+Particle\+Emitter}}
+\subsubsection{\texorpdfstring{get\+Image()}{getImage()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_image}{Image}} org.\+newdawn.\+slick.\+particles.\+Particle\+Emitter.\+get\+Image (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Get the image to draw for each particle
+
+\begin{DoxyReturn}{Returns}
+The image to draw for each particle 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1particles_1_1_configurable_emitter_a27d040118a59ae29818f23ceb97f37f8}{org.\+newdawn.\+slick.\+particles.\+Configurable\+Emitter}}, and \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1particles_1_1effects_1_1_fire_emitter_afa45cb540a0c320d45c530d499d6eae3}{org.\+newdawn.\+slick.\+particles.\+effects.\+Fire\+Emitter}}.
+
+\mbox{\Hypertarget{interfaceorg_1_1newdawn_1_1slick_1_1particles_1_1_particle_emitter_a6a6fabad4971a0634a0a99dbed53c47d}\label{interfaceorg_1_1newdawn_1_1slick_1_1particles_1_1_particle_emitter_a6a6fabad4971a0634a0a99dbed53c47d}} 
+\index{org\+::newdawn\+::slick\+::particles\+::\+Particle\+Emitter@{org\+::newdawn\+::slick\+::particles\+::\+Particle\+Emitter}!is\+Enabled@{is\+Enabled}}
+\index{is\+Enabled@{is\+Enabled}!org\+::newdawn\+::slick\+::particles\+::\+Particle\+Emitter@{org\+::newdawn\+::slick\+::particles\+::\+Particle\+Emitter}}
+\subsubsection{\texorpdfstring{is\+Enabled()}{isEnabled()}}
+{\footnotesize\ttfamily boolean org.\+newdawn.\+slick.\+particles.\+Particle\+Emitter.\+is\+Enabled (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Check if the emitter is enabled
+
+\begin{DoxyReturn}{Returns}
+True if the emitter is enabled 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1particles_1_1_configurable_emitter_a2e85f026589d4cd80c64dd3e983461fc}{org.\+newdawn.\+slick.\+particles.\+Configurable\+Emitter}}, and \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1particles_1_1effects_1_1_fire_emitter_aae670e35b6ee409d83482a14e4228b75}{org.\+newdawn.\+slick.\+particles.\+effects.\+Fire\+Emitter}}.
+
+\mbox{\Hypertarget{interfaceorg_1_1newdawn_1_1slick_1_1particles_1_1_particle_emitter_a4a51564b4539a1eb2c3fc0d322ac5c2a}\label{interfaceorg_1_1newdawn_1_1slick_1_1particles_1_1_particle_emitter_a4a51564b4539a1eb2c3fc0d322ac5c2a}} 
+\index{org\+::newdawn\+::slick\+::particles\+::\+Particle\+Emitter@{org\+::newdawn\+::slick\+::particles\+::\+Particle\+Emitter}!is\+Oriented@{is\+Oriented}}
+\index{is\+Oriented@{is\+Oriented}!org\+::newdawn\+::slick\+::particles\+::\+Particle\+Emitter@{org\+::newdawn\+::slick\+::particles\+::\+Particle\+Emitter}}
+\subsubsection{\texorpdfstring{is\+Oriented()}{isOriented()}}
+{\footnotesize\ttfamily boolean org.\+newdawn.\+slick.\+particles.\+Particle\+Emitter.\+is\+Oriented (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Check if the particles produced should maintain orientation
+
+\begin{DoxyReturn}{Returns}
+True if the particles produced should maintain orientation 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1particles_1_1_configurable_emitter_a1435dc04f4e3a38ba5af82650ca3f9ea}{org.\+newdawn.\+slick.\+particles.\+Configurable\+Emitter}}, and \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1particles_1_1effects_1_1_fire_emitter_a192b97279748b97f24fce7e04b9fc90b}{org.\+newdawn.\+slick.\+particles.\+effects.\+Fire\+Emitter}}.
+
+\mbox{\Hypertarget{interfaceorg_1_1newdawn_1_1slick_1_1particles_1_1_particle_emitter_a1120925a31c61fc95dc38eca9b01b9ef}\label{interfaceorg_1_1newdawn_1_1slick_1_1particles_1_1_particle_emitter_a1120925a31c61fc95dc38eca9b01b9ef}} 
+\index{org\+::newdawn\+::slick\+::particles\+::\+Particle\+Emitter@{org\+::newdawn\+::slick\+::particles\+::\+Particle\+Emitter}!reset\+State@{reset\+State}}
+\index{reset\+State@{reset\+State}!org\+::newdawn\+::slick\+::particles\+::\+Particle\+Emitter@{org\+::newdawn\+::slick\+::particles\+::\+Particle\+Emitter}}
+\subsubsection{\texorpdfstring{reset\+State()}{resetState()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+particles.\+Particle\+Emitter.\+reset\+State (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Clear the state of emitter back to default 
+
+Implemented in \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1particles_1_1_configurable_emitter_a91eff5a7a412cfed942a10a261a4432e}{org.\+newdawn.\+slick.\+particles.\+Configurable\+Emitter}}, and \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1particles_1_1effects_1_1_fire_emitter_a8caebb6bf21a766da28469533db95b37}{org.\+newdawn.\+slick.\+particles.\+effects.\+Fire\+Emitter}}.
+
+\mbox{\Hypertarget{interfaceorg_1_1newdawn_1_1slick_1_1particles_1_1_particle_emitter_a0db4bbc7bb9b5cc2b828993e065db057}\label{interfaceorg_1_1newdawn_1_1slick_1_1particles_1_1_particle_emitter_a0db4bbc7bb9b5cc2b828993e065db057}} 
+\index{org\+::newdawn\+::slick\+::particles\+::\+Particle\+Emitter@{org\+::newdawn\+::slick\+::particles\+::\+Particle\+Emitter}!set\+Enabled@{set\+Enabled}}
+\index{set\+Enabled@{set\+Enabled}!org\+::newdawn\+::slick\+::particles\+::\+Particle\+Emitter@{org\+::newdawn\+::slick\+::particles\+::\+Particle\+Emitter}}
+\subsubsection{\texorpdfstring{set\+Enabled()}{setEnabled()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+particles.\+Particle\+Emitter.\+set\+Enabled (\begin{DoxyParamCaption}\item[{boolean}]{enabled }\end{DoxyParamCaption})}
+
+Indicate whether the emitter should be enabled
+
+
+\begin{DoxyParams}{Parameters}
+{\em enabled} & True if the emitter should be enabled \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1particles_1_1_configurable_emitter_a7a8a0b2b5f5ecbe56ef46310a219a45b}{org.\+newdawn.\+slick.\+particles.\+Configurable\+Emitter}}, and \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1particles_1_1effects_1_1_fire_emitter_a9558a088fe132a0ea0bc5fd74585b9a1}{org.\+newdawn.\+slick.\+particles.\+effects.\+Fire\+Emitter}}.
+
+\mbox{\Hypertarget{interfaceorg_1_1newdawn_1_1slick_1_1particles_1_1_particle_emitter_a18e2a8e6264aa46fb874f992c2093e15}\label{interfaceorg_1_1newdawn_1_1slick_1_1particles_1_1_particle_emitter_a18e2a8e6264aa46fb874f992c2093e15}} 
+\index{org\+::newdawn\+::slick\+::particles\+::\+Particle\+Emitter@{org\+::newdawn\+::slick\+::particles\+::\+Particle\+Emitter}!update@{update}}
+\index{update@{update}!org\+::newdawn\+::slick\+::particles\+::\+Particle\+Emitter@{org\+::newdawn\+::slick\+::particles\+::\+Particle\+Emitter}}
+\subsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+particles.\+Particle\+Emitter.\+update (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1particles_1_1_particle_system}{Particle\+System}}}]{system,  }\item[{int}]{delta }\end{DoxyParamCaption})}
+
+Update the emitter, produce any particles required by requesting them from the particle system provided.
+
+
+\begin{DoxyParams}{Parameters}
+{\em system} & The particle system used to create particles \\
+\hline
+{\em delta} & The amount of time in milliseconds since last emitter update \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1particles_1_1_configurable_emitter_a982eeb3a795db37d7065e8b20868281c}{org.\+newdawn.\+slick.\+particles.\+Configurable\+Emitter}}, and \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1particles_1_1effects_1_1_fire_emitter_a377a97e3799473ee2e2f026ac4530ad4}{org.\+newdawn.\+slick.\+particles.\+effects.\+Fire\+Emitter}}.
+
+\mbox{\Hypertarget{interfaceorg_1_1newdawn_1_1slick_1_1particles_1_1_particle_emitter_ac0792f19fdebd62a321bcdc487e0cba5}\label{interfaceorg_1_1newdawn_1_1slick_1_1particles_1_1_particle_emitter_ac0792f19fdebd62a321bcdc487e0cba5}} 
+\index{org\+::newdawn\+::slick\+::particles\+::\+Particle\+Emitter@{org\+::newdawn\+::slick\+::particles\+::\+Particle\+Emitter}!update\+Particle@{update\+Particle}}
+\index{update\+Particle@{update\+Particle}!org\+::newdawn\+::slick\+::particles\+::\+Particle\+Emitter@{org\+::newdawn\+::slick\+::particles\+::\+Particle\+Emitter}}
+\subsubsection{\texorpdfstring{update\+Particle()}{updateParticle()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+particles.\+Particle\+Emitter.\+update\+Particle (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1particles_1_1_particle}{Particle}}}]{particle,  }\item[{int}]{delta }\end{DoxyParamCaption})}
+
+Update a single particle that this emitter produced
+
+
+\begin{DoxyParams}{Parameters}
+{\em particle} & The particle to be updated \\
+\hline
+{\em delta} & The amount of time in millisecond since last particle update \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1particles_1_1_configurable_emitter_afb381373acb3d59327528045c126d0fb}{org.\+newdawn.\+slick.\+particles.\+Configurable\+Emitter}}, and \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1particles_1_1effects_1_1_fire_emitter_a82aca444c3f089dd9d2c84f028e1f35b}{org.\+newdawn.\+slick.\+particles.\+effects.\+Fire\+Emitter}}.
+
+\mbox{\Hypertarget{interfaceorg_1_1newdawn_1_1slick_1_1particles_1_1_particle_emitter_a36f6bfeef5567c7c5b42c866a738cdb7}\label{interfaceorg_1_1newdawn_1_1slick_1_1particles_1_1_particle_emitter_a36f6bfeef5567c7c5b42c866a738cdb7}} 
+\index{org\+::newdawn\+::slick\+::particles\+::\+Particle\+Emitter@{org\+::newdawn\+::slick\+::particles\+::\+Particle\+Emitter}!use\+Additive@{use\+Additive}}
+\index{use\+Additive@{use\+Additive}!org\+::newdawn\+::slick\+::particles\+::\+Particle\+Emitter@{org\+::newdawn\+::slick\+::particles\+::\+Particle\+Emitter}}
+\subsubsection{\texorpdfstring{use\+Additive()}{useAdditive()}}
+{\footnotesize\ttfamily boolean org.\+newdawn.\+slick.\+particles.\+Particle\+Emitter.\+use\+Additive (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Check if this emitter should use additive blending
+
+\begin{DoxyReturn}{Returns}
+True if the emitter should use the right blending 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1particles_1_1_configurable_emitter_a417f9091bafd99eaed6984b22190b798}{org.\+newdawn.\+slick.\+particles.\+Configurable\+Emitter}}, and \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1particles_1_1effects_1_1_fire_emitter_afbace8ff2bcdb80e3ec810ffcdeaf521}{org.\+newdawn.\+slick.\+particles.\+effects.\+Fire\+Emitter}}.
+
+\mbox{\Hypertarget{interfaceorg_1_1newdawn_1_1slick_1_1particles_1_1_particle_emitter_a26ad157d83aebf2e49163ddaae6a9edd}\label{interfaceorg_1_1newdawn_1_1slick_1_1particles_1_1_particle_emitter_a26ad157d83aebf2e49163ddaae6a9edd}} 
+\index{org\+::newdawn\+::slick\+::particles\+::\+Particle\+Emitter@{org\+::newdawn\+::slick\+::particles\+::\+Particle\+Emitter}!use\+Points@{use\+Points}}
+\index{use\+Points@{use\+Points}!org\+::newdawn\+::slick\+::particles\+::\+Particle\+Emitter@{org\+::newdawn\+::slick\+::particles\+::\+Particle\+Emitter}}
+\subsubsection{\texorpdfstring{use\+Points()}{usePoints()}}
+{\footnotesize\ttfamily boolean org.\+newdawn.\+slick.\+particles.\+Particle\+Emitter.\+use\+Points (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1particles_1_1_particle_system}{Particle\+System}}}]{system }\end{DoxyParamCaption})}
+
+Check if this emitter should use points based on it\textquotesingle{}s own settings and those of the particle system
+
+
+\begin{DoxyParams}{Parameters}
+{\em system} & The particle system to cross check agianst \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if we should use points 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1particles_1_1_configurable_emitter_a8034277f8d85d47a5460665c5212d351}{org.\+newdawn.\+slick.\+particles.\+Configurable\+Emitter}}, and \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1particles_1_1effects_1_1_fire_emitter_ab1eb7609b370a6a8cffbb5b7e1bd6cb3}{org.\+newdawn.\+slick.\+particles.\+effects.\+Fire\+Emitter}}.
+
+\mbox{\Hypertarget{interfaceorg_1_1newdawn_1_1slick_1_1particles_1_1_particle_emitter_ad8549755b39d63bdde71860be6b0f1f9}\label{interfaceorg_1_1newdawn_1_1slick_1_1particles_1_1_particle_emitter_ad8549755b39d63bdde71860be6b0f1f9}} 
+\index{org\+::newdawn\+::slick\+::particles\+::\+Particle\+Emitter@{org\+::newdawn\+::slick\+::particles\+::\+Particle\+Emitter}!wrap\+Up@{wrap\+Up}}
+\index{wrap\+Up@{wrap\+Up}!org\+::newdawn\+::slick\+::particles\+::\+Particle\+Emitter@{org\+::newdawn\+::slick\+::particles\+::\+Particle\+Emitter}}
+\subsubsection{\texorpdfstring{wrap\+Up()}{wrapUp()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+particles.\+Particle\+Emitter.\+wrap\+Up (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Wrap up the particle emitter. This means the emitter will no longer produce particles and will be marked as completed once the particles have expired 
+
+Implemented in \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1particles_1_1_configurable_emitter_a641b7c71e746caa939d3a2c16976b4e4}{org.\+newdawn.\+slick.\+particles.\+Configurable\+Emitter}}, and \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1particles_1_1effects_1_1_fire_emitter_a8e888bb6d290b9df6883d0ebb35f1067}{org.\+newdawn.\+slick.\+particles.\+effects.\+Fire\+Emitter}}.
+

@@ -1,0 +1,121 @@
+\hypertarget{classpecl6part2_1_1_monitor}{}\section{pecl6part2.\+Monitor Class Reference}
+\label{classpecl6part2_1_1_monitor}\index{pecl6part2.\+Monitor@{pecl6part2.\+Monitor}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpecl6part2_1_1_monitor_a5536d0457447aae6c00be38f0414d386}{Monitor}} ()
+\item 
+synchronized void \mbox{\hyperlink{classpecl6part2_1_1_monitor_aba7c54d3f7bb8f4e19bcec5d7f8dcb76}{cambiar\+Ascensor}} ()
+\item 
+synchronized void \mbox{\hyperlink{classpecl6part2_1_1_monitor_accec6614f7f330bda0ce5a47ec7ac502}{incrementar}} ()
+\item 
+synchronized void \mbox{\hyperlink{classpecl6part2_1_1_monitor_aaf66683271f65268b7d18799972819e0}{esperar}} ()
+\item 
+synchronized void \mbox{\hyperlink{classpecl6part2_1_1_monitor_a77ff6dc9ee3ab70a9f20daea657d856b}{notificar}} ()
+\end{DoxyCompactItemize}
+\subsection*{Package Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classpecl6part2_1_1_monitor_a0d9c747a36ef376665ed43b257c623ad}{contador}}
+\item 
+int \mbox{\hyperlink{classpecl6part2_1_1_monitor_abfc1bfd2de962ac64f1c505d9dbe136a}{ascensor}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyAuthor}{Author}
+Ignacio 
+\end{DoxyAuthor}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classpecl6part2_1_1_monitor_a5536d0457447aae6c00be38f0414d386}\label{classpecl6part2_1_1_monitor_a5536d0457447aae6c00be38f0414d386}} 
+\index{pecl6part2\+::\+Monitor@{pecl6part2\+::\+Monitor}!Monitor@{Monitor}}
+\index{Monitor@{Monitor}!pecl6part2\+::\+Monitor@{pecl6part2\+::\+Monitor}}
+\subsubsection{\texorpdfstring{Monitor()}{Monitor()}}
+{\footnotesize\ttfamily pecl6part2.\+Monitor.\+Monitor (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+24     \{
+25         this.\mbox{\hyperlink{classpecl6part2_1_1_monitor_a0d9c747a36ef376665ed43b257c623ad}{contador}} = 0;
+26         this.\mbox{\hyperlink{classpecl6part2_1_1_monitor_abfc1bfd2de962ac64f1c505d9dbe136a}{ascensor}} = 0;
+27     \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classpecl6part2_1_1_monitor_aba7c54d3f7bb8f4e19bcec5d7f8dcb76}\label{classpecl6part2_1_1_monitor_aba7c54d3f7bb8f4e19bcec5d7f8dcb76}} 
+\index{pecl6part2\+::\+Monitor@{pecl6part2\+::\+Monitor}!cambiar\+Ascensor@{cambiar\+Ascensor}}
+\index{cambiar\+Ascensor@{cambiar\+Ascensor}!pecl6part2\+::\+Monitor@{pecl6part2\+::\+Monitor}}
+\subsubsection{\texorpdfstring{cambiar\+Ascensor()}{cambiarAscensor()}}
+{\footnotesize\ttfamily synchronized void pecl6part2.\+Monitor.\+cambiar\+Ascensor (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+30     \{
+31         \textcolor{keywordflow}{if}(\mbox{\hyperlink{classpecl6part2_1_1_monitor_abfc1bfd2de962ac64f1c505d9dbe136a}{ascensor}} == 0)
+32         \{
+33             \mbox{\hyperlink{classpecl6part2_1_1_monitor_abfc1bfd2de962ac64f1c505d9dbe136a}{ascensor}} = 1;
+34         \}
+35         \textcolor{keywordflow}{else}
+36         \{
+37             \mbox{\hyperlink{classpecl6part2_1_1_monitor_abfc1bfd2de962ac64f1c505d9dbe136a}{ascensor}} = 0;
+38         \}
+39     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classpecl6part2_1_1_monitor_aaf66683271f65268b7d18799972819e0}\label{classpecl6part2_1_1_monitor_aaf66683271f65268b7d18799972819e0}} 
+\index{pecl6part2\+::\+Monitor@{pecl6part2\+::\+Monitor}!esperar@{esperar}}
+\index{esperar@{esperar}!pecl6part2\+::\+Monitor@{pecl6part2\+::\+Monitor}}
+\subsubsection{\texorpdfstring{esperar()}{esperar()}}
+{\footnotesize\ttfamily synchronized void pecl6part2.\+Monitor.\+esperar (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+47     \{
+48         \textcolor{keywordflow}{try} \{
+49             wait();
+50         \} \textcolor{keywordflow}{catch} (InterruptedException ex) \{
+51             Logger.getLogger(\mbox{\hyperlink{classpecl6part1_1_1_monitor}{Monitor}}.class.getName()).log(Level.SEVERE, null, ex);
+52         \}
+53     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classpecl6part2_1_1_monitor_accec6614f7f330bda0ce5a47ec7ac502}\label{classpecl6part2_1_1_monitor_accec6614f7f330bda0ce5a47ec7ac502}} 
+\index{pecl6part2\+::\+Monitor@{pecl6part2\+::\+Monitor}!incrementar@{incrementar}}
+\index{incrementar@{incrementar}!pecl6part2\+::\+Monitor@{pecl6part2\+::\+Monitor}}
+\subsubsection{\texorpdfstring{incrementar()}{incrementar()}}
+{\footnotesize\ttfamily synchronized void pecl6part2.\+Monitor.\+incrementar (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+42     \{
+43         \mbox{\hyperlink{classpecl6part2_1_1_monitor_a0d9c747a36ef376665ed43b257c623ad}{contador}}++;
+44     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classpecl6part2_1_1_monitor_a77ff6dc9ee3ab70a9f20daea657d856b}\label{classpecl6part2_1_1_monitor_a77ff6dc9ee3ab70a9f20daea657d856b}} 
+\index{pecl6part2\+::\+Monitor@{pecl6part2\+::\+Monitor}!notificar@{notificar}}
+\index{notificar@{notificar}!pecl6part2\+::\+Monitor@{pecl6part2\+::\+Monitor}}
+\subsubsection{\texorpdfstring{notificar()}{notificar()}}
+{\footnotesize\ttfamily synchronized void pecl6part2.\+Monitor.\+notificar (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+56     \{
+57         notifyAll();
+58     \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classpecl6part2_1_1_monitor_abfc1bfd2de962ac64f1c505d9dbe136a}\label{classpecl6part2_1_1_monitor_abfc1bfd2de962ac64f1c505d9dbe136a}} 
+\index{pecl6part2\+::\+Monitor@{pecl6part2\+::\+Monitor}!ascensor@{ascensor}}
+\index{ascensor@{ascensor}!pecl6part2\+::\+Monitor@{pecl6part2\+::\+Monitor}}
+\subsubsection{\texorpdfstring{ascensor}{ascensor}}
+{\footnotesize\ttfamily int pecl6part2.\+Monitor.\+ascensor\hspace{0.3cm}{\ttfamily [package]}}
+
+\mbox{\Hypertarget{classpecl6part2_1_1_monitor_a0d9c747a36ef376665ed43b257c623ad}\label{classpecl6part2_1_1_monitor_a0d9c747a36ef376665ed43b257c623ad}} 
+\index{pecl6part2\+::\+Monitor@{pecl6part2\+::\+Monitor}!contador@{contador}}
+\index{contador@{contador}!pecl6part2\+::\+Monitor@{pecl6part2\+::\+Monitor}}
+\subsubsection{\texorpdfstring{contador}{contador}}
+{\footnotesize\ttfamily int pecl6part2.\+Monitor.\+contador\hspace{0.3cm}{\ttfamily [package]}}
+

@@ -1,0 +1,171 @@
+\hypertarget{classentities_1_1_path_finder}{}\section{entities.\+Path\+Finder Class Reference}
+\label{classentities_1_1_path_finder}\index{entities.\+Path\+Finder@{entities.\+Path\+Finder}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classentities_1_1_path_finder_afcf6c2098929ad2f90bcc34875a0902f}{Path\+Finder}} (\mbox{\hyperlink{classentities_1_1_map}{Map}} \mbox{\hyperlink{classentities_1_1_path_finder_a55024473615fc2ba75d7faf5dcd78b3f}{map}})
+\item 
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_path}{Path}} \mbox{\hyperlink{classentities_1_1_path_finder_a392069295c51a6b5470585f2f956a226}{find\+Path}} (\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_mover}{Mover}} mover, int sx, int sy, int tx, int ty)
+\item 
+void \mbox{\hyperlink{classentities_1_1_path_finder_a43344b26144ea29f390b8be84f14ee7a}{reinit}} ()
+\item 
+int \mbox{\hyperlink{classentities_1_1_path_finder_a35e329ef378f48050d49408140412e7f}{get\+Tile\+Width}} ()
+\item 
+int \mbox{\hyperlink{classentities_1_1_path_finder_a3193394c83000018da44409a33f8720c}{get\+Tile\+Height}} ()
+\item 
+\mbox{\hyperlink{classentities_1_1_map}{Map}} \mbox{\hyperlink{classentities_1_1_path_finder_a130df479b259cdc0904207301454dc2f}{get\+Map}} ()
+\item 
+void \mbox{\hyperlink{classentities_1_1_path_finder_a20d8d7bca113f2a92740b00fb5c8f6ee}{set\+Map}} (\mbox{\hyperlink{classentities_1_1_map}{Map}} \mbox{\hyperlink{classentities_1_1_path_finder_a55024473615fc2ba75d7faf5dcd78b3f}{map}})
+\item 
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_path_finder}{A\+Star\+Path\+Finder}} \mbox{\hyperlink{classentities_1_1_path_finder_a25a38e5f0d878079b9fde1260dc5074a}{get\+Path\+Finder}} ()
+\item 
+void \mbox{\hyperlink{classentities_1_1_path_finder_acf5f6e67e696814ab392055be456af7a}{set\+Path\+Finder}} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_path_finder}{A\+Star\+Path\+Finder}} \mbox{\hyperlink{classentities_1_1_path_finder_a3ee55002f6ed410109207b43757e93f7}{path\+Finder}})
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classentities_1_1_map}{Map}} \mbox{\hyperlink{classentities_1_1_path_finder_a55024473615fc2ba75d7faf5dcd78b3f}{map}}
+\item 
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_path_finder}{A\+Star\+Path\+Finder}} \mbox{\hyperlink{classentities_1_1_path_finder_a3ee55002f6ed410109207b43757e93f7}{path\+Finder}}
+\end{DoxyCompactItemize}
+\subsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static int \mbox{\hyperlink{classentities_1_1_path_finder_a851c29b8b7dda1ff3488998c540dafc3}{M\+A\+X\+\_\+\+D\+I\+S\+T\+A\+N\+CE}} = 20
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classentities_1_1_path_finder_afcf6c2098929ad2f90bcc34875a0902f}\label{classentities_1_1_path_finder_afcf6c2098929ad2f90bcc34875a0902f}} 
+\index{entities\+::\+Path\+Finder@{entities\+::\+Path\+Finder}!Path\+Finder@{Path\+Finder}}
+\index{Path\+Finder@{Path\+Finder}!entities\+::\+Path\+Finder@{entities\+::\+Path\+Finder}}
+\subsubsection{\texorpdfstring{Path\+Finder()}{PathFinder()}}
+{\footnotesize\ttfamily entities.\+Path\+Finder.\+Path\+Finder (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classentities_1_1_map}{Map}}}]{map }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+17                                \{
+18         this.\mbox{\hyperlink{classentities_1_1_path_finder_a55024473615fc2ba75d7faf5dcd78b3f}{map}} = \mbox{\hyperlink{classentities_1_1_path_finder_a55024473615fc2ba75d7faf5dcd78b3f}{map}};
+19         this.\mbox{\hyperlink{classentities_1_1_path_finder_a3ee55002f6ed410109207b43757e93f7}{pathFinder}} = \textcolor{keyword}{new} AStarPathFinder(\mbox{\hyperlink{classentities_1_1_path_finder_a55024473615fc2ba75d7faf5dcd78b3f}{map}}, \mbox{\hyperlink{classentities_1_1_path_finder_a851c29b8b7dda1ff3488998c540dafc3}{MAX\_DISTANCE}}, \textcolor{keyword}{false});
+20     \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classentities_1_1_path_finder_a392069295c51a6b5470585f2f956a226}\label{classentities_1_1_path_finder_a392069295c51a6b5470585f2f956a226}} 
+\index{entities\+::\+Path\+Finder@{entities\+::\+Path\+Finder}!find\+Path@{find\+Path}}
+\index{find\+Path@{find\+Path}!entities\+::\+Path\+Finder@{entities\+::\+Path\+Finder}}
+\subsubsection{\texorpdfstring{find\+Path()}{findPath()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_path}{Path}} entities.\+Path\+Finder.\+find\+Path (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_mover}{Mover}}}]{mover,  }\item[{int}]{sx,  }\item[{int}]{sy,  }\item[{int}]{tx,  }\item[{int}]{ty }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+22                                                                       \{
+23         \textcolor{keywordflow}{return} \mbox{\hyperlink{classentities_1_1_path_finder_a3ee55002f6ed410109207b43757e93f7}{pathFinder}}.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_path_finder_a603b1ac6a40ac99d3bc38740f46b2706}{findPath}}(mover, sx, sy, tx, ty);
+24     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classentities_1_1_path_finder_a130df479b259cdc0904207301454dc2f}\label{classentities_1_1_path_finder_a130df479b259cdc0904207301454dc2f}} 
+\index{entities\+::\+Path\+Finder@{entities\+::\+Path\+Finder}!get\+Map@{get\+Map}}
+\index{get\+Map@{get\+Map}!entities\+::\+Path\+Finder@{entities\+::\+Path\+Finder}}
+\subsubsection{\texorpdfstring{get\+Map()}{getMap()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classentities_1_1_map}{Map}} entities.\+Path\+Finder.\+get\+Map (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+35                         \{
+36         \textcolor{keywordflow}{return} \mbox{\hyperlink{classentities_1_1_path_finder_a55024473615fc2ba75d7faf5dcd78b3f}{map}};
+37     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classentities_1_1_path_finder_a25a38e5f0d878079b9fde1260dc5074a}\label{classentities_1_1_path_finder_a25a38e5f0d878079b9fde1260dc5074a}} 
+\index{entities\+::\+Path\+Finder@{entities\+::\+Path\+Finder}!get\+Path\+Finder@{get\+Path\+Finder}}
+\index{get\+Path\+Finder@{get\+Path\+Finder}!entities\+::\+Path\+Finder@{entities\+::\+Path\+Finder}}
+\subsubsection{\texorpdfstring{get\+Path\+Finder()}{getPathFinder()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_path_finder}{A\+Star\+Path\+Finder}} entities.\+Path\+Finder.\+get\+Path\+Finder (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+43                                            \{
+44         \textcolor{keywordflow}{return} \mbox{\hyperlink{classentities_1_1_path_finder_a3ee55002f6ed410109207b43757e93f7}{pathFinder}};
+45     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classentities_1_1_path_finder_a3193394c83000018da44409a33f8720c}\label{classentities_1_1_path_finder_a3193394c83000018da44409a33f8720c}} 
+\index{entities\+::\+Path\+Finder@{entities\+::\+Path\+Finder}!get\+Tile\+Height@{get\+Tile\+Height}}
+\index{get\+Tile\+Height@{get\+Tile\+Height}!entities\+::\+Path\+Finder@{entities\+::\+Path\+Finder}}
+\subsubsection{\texorpdfstring{get\+Tile\+Height()}{getTileHeight()}}
+{\footnotesize\ttfamily int entities.\+Path\+Finder.\+get\+Tile\+Height (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+32                           \{
+33     \textcolor{keywordflow}{return} \mbox{\hyperlink{classentities_1_1_path_finder_a55024473615fc2ba75d7faf5dcd78b3f}{map}}.\mbox{\hyperlink{classentities_1_1_map_a43c2e5888d77a6b400cc6dd2c9aa1769}{getTileHeight}}();
+34 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classentities_1_1_path_finder_a35e329ef378f48050d49408140412e7f}\label{classentities_1_1_path_finder_a35e329ef378f48050d49408140412e7f}} 
+\index{entities\+::\+Path\+Finder@{entities\+::\+Path\+Finder}!get\+Tile\+Width@{get\+Tile\+Width}}
+\index{get\+Tile\+Width@{get\+Tile\+Width}!entities\+::\+Path\+Finder@{entities\+::\+Path\+Finder}}
+\subsubsection{\texorpdfstring{get\+Tile\+Width()}{getTileWidth()}}
+{\footnotesize\ttfamily int entities.\+Path\+Finder.\+get\+Tile\+Width (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+29                          \{
+30     \textcolor{keywordflow}{return} \mbox{\hyperlink{classentities_1_1_path_finder_a55024473615fc2ba75d7faf5dcd78b3f}{map}}.\mbox{\hyperlink{classentities_1_1_map_ada3d3610a5bdc025e1509583e0e36746}{getTileWidth}}();
+31 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classentities_1_1_path_finder_a43344b26144ea29f390b8be84f14ee7a}\label{classentities_1_1_path_finder_a43344b26144ea29f390b8be84f14ee7a}} 
+\index{entities\+::\+Path\+Finder@{entities\+::\+Path\+Finder}!reinit@{reinit}}
+\index{reinit@{reinit}!entities\+::\+Path\+Finder@{entities\+::\+Path\+Finder}}
+\subsubsection{\texorpdfstring{reinit()}{reinit()}}
+{\footnotesize\ttfamily void entities.\+Path\+Finder.\+reinit (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+26                          \{
+27         \mbox{\hyperlink{classentities_1_1_path_finder_a3ee55002f6ed410109207b43757e93f7}{pathFinder}}=\textcolor{keyword}{new} AStarPathFinder(\mbox{\hyperlink{classentities_1_1_path_finder_a55024473615fc2ba75d7faf5dcd78b3f}{map}},\mbox{\hyperlink{classentities_1_1_path_finder_a851c29b8b7dda1ff3488998c540dafc3}{MAX\_DISTANCE}},\textcolor{keyword}{false});
+28     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classentities_1_1_path_finder_a20d8d7bca113f2a92740b00fb5c8f6ee}\label{classentities_1_1_path_finder_a20d8d7bca113f2a92740b00fb5c8f6ee}} 
+\index{entities\+::\+Path\+Finder@{entities\+::\+Path\+Finder}!set\+Map@{set\+Map}}
+\index{set\+Map@{set\+Map}!entities\+::\+Path\+Finder@{entities\+::\+Path\+Finder}}
+\subsubsection{\texorpdfstring{set\+Map()}{setMap()}}
+{\footnotesize\ttfamily void entities.\+Path\+Finder.\+set\+Map (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classentities_1_1_map}{Map}}}]{map }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+39                                 \{
+40         this.\mbox{\hyperlink{classentities_1_1_path_finder_a55024473615fc2ba75d7faf5dcd78b3f}{map}} = \mbox{\hyperlink{classentities_1_1_path_finder_a55024473615fc2ba75d7faf5dcd78b3f}{map}};
+41     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classentities_1_1_path_finder_acf5f6e67e696814ab392055be456af7a}\label{classentities_1_1_path_finder_acf5f6e67e696814ab392055be456af7a}} 
+\index{entities\+::\+Path\+Finder@{entities\+::\+Path\+Finder}!set\+Path\+Finder@{set\+Path\+Finder}}
+\index{set\+Path\+Finder@{set\+Path\+Finder}!entities\+::\+Path\+Finder@{entities\+::\+Path\+Finder}}
+\subsubsection{\texorpdfstring{set\+Path\+Finder()}{setPathFinder()}}
+{\footnotesize\ttfamily void entities.\+Path\+Finder.\+set\+Path\+Finder (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_path_finder}{A\+Star\+Path\+Finder}}}]{path\+Finder }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+47                                                           \{
+48         this.\mbox{\hyperlink{classentities_1_1_path_finder_a3ee55002f6ed410109207b43757e93f7}{pathFinder}} = \mbox{\hyperlink{classentities_1_1_path_finder_a3ee55002f6ed410109207b43757e93f7}{pathFinder}};
+49     \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classentities_1_1_path_finder_a55024473615fc2ba75d7faf5dcd78b3f}\label{classentities_1_1_path_finder_a55024473615fc2ba75d7faf5dcd78b3f}} 
+\index{entities\+::\+Path\+Finder@{entities\+::\+Path\+Finder}!map@{map}}
+\index{map@{map}!entities\+::\+Path\+Finder@{entities\+::\+Path\+Finder}}
+\subsubsection{\texorpdfstring{map}{map}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classentities_1_1_map}{Map}} entities.\+Path\+Finder.\+map\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classentities_1_1_path_finder_a851c29b8b7dda1ff3488998c540dafc3}\label{classentities_1_1_path_finder_a851c29b8b7dda1ff3488998c540dafc3}} 
+\index{entities\+::\+Path\+Finder@{entities\+::\+Path\+Finder}!M\+A\+X\+\_\+\+D\+I\+S\+T\+A\+N\+CE@{M\+A\+X\+\_\+\+D\+I\+S\+T\+A\+N\+CE}}
+\index{M\+A\+X\+\_\+\+D\+I\+S\+T\+A\+N\+CE@{M\+A\+X\+\_\+\+D\+I\+S\+T\+A\+N\+CE}!entities\+::\+Path\+Finder@{entities\+::\+Path\+Finder}}
+\subsubsection{\texorpdfstring{M\+A\+X\+\_\+\+D\+I\+S\+T\+A\+N\+CE}{MAX\_DISTANCE}}
+{\footnotesize\ttfamily int entities.\+Path\+Finder.\+M\+A\+X\+\_\+\+D\+I\+S\+T\+A\+N\+CE = 20\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{classentities_1_1_path_finder_a3ee55002f6ed410109207b43757e93f7}\label{classentities_1_1_path_finder_a3ee55002f6ed410109207b43757e93f7}} 
+\index{entities\+::\+Path\+Finder@{entities\+::\+Path\+Finder}!path\+Finder@{path\+Finder}}
+\index{path\+Finder@{path\+Finder}!entities\+::\+Path\+Finder@{entities\+::\+Path\+Finder}}
+\subsubsection{\texorpdfstring{path\+Finder}{pathFinder}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_path_finder}{A\+Star\+Path\+Finder}} entities.\+Path\+Finder.\+path\+Finder\hspace{0.3cm}{\ttfamily [private]}}
+

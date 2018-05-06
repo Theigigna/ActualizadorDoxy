@@ -1,0 +1,407 @@
+\hypertarget{classconcurrency_1_1bridge_1_1_bridge_canvas}{}\section{concurrency.\+bridge.\+Bridge\+Canvas Class Reference}
+\label{classconcurrency_1_1bridge_1_1_bridge_canvas}\index{concurrency.\+bridge.\+Bridge\+Canvas@{concurrency.\+bridge.\+Bridge\+Canvas}}
+Inheritance diagram for concurrency.\+bridge.\+Bridge\+Canvas\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classconcurrency_1_1bridge_1_1_bridge_canvas}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classconcurrency_1_1bridge_1_1_bridge_canvas_abe6fd58a5a831f80fd3716103cc12672}{init}} (int ncars)
+\item 
+void \mbox{\hyperlink{classconcurrency_1_1bridge_1_1_bridge_canvas_a9839d0c214779138f97f4aaf972991c3}{backdrop}} ()
+\item 
+void \mbox{\hyperlink{classconcurrency_1_1bridge_1_1_bridge_canvas_a9b8e8df5174b22c0ebf8096e651a4440}{paint}} (Graphics g)
+\item 
+void \mbox{\hyperlink{classconcurrency_1_1bridge_1_1_bridge_canvas_a3cdc761a16dc589c729d515abbd772b9}{update}} (Graphics g)
+\item 
+boolean \mbox{\hyperlink{classconcurrency_1_1bridge_1_1_bridge_canvas_a166d001c782d362f3a8aca27e493a074}{move\+Red}} (int i)  throws Interrupted\+Exception
+\item 
+boolean \mbox{\hyperlink{classconcurrency_1_1bridge_1_1_bridge_canvas_aef8d7c1ca31663c9ba3ec0fdebfc4b73}{move\+Blue}} (int i)  throws Interrupted\+Exception
+\item 
+synchronized void \mbox{\hyperlink{classconcurrency_1_1bridge_1_1_bridge_canvas_a777eb5e18c6ee3a77ef029230101f2d1}{freeze}} ()
+\item 
+synchronized void \mbox{\hyperlink{classconcurrency_1_1bridge_1_1_bridge_canvas_af3ce80d4ece527c54b0e7eb74ce75af4}{thaw}} ()
+\end{DoxyCompactItemize}
+\subsection*{Package Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classconcurrency_1_1bridge_1_1_bridge_canvas_ad6be71b4c4f47474857fa7ab12ff2eae}{Bridge\+Canvas}} (\mbox{\hyperlink{classconcurrency_1_1bridge_1_1_single_lane_bridge}{Single\+Lane\+Bridge}} \mbox{\hyperlink{classconcurrency_1_1bridge_1_1_bridge_canvas_a97bf3b1d7ca18448f9dbffb1ad3d338b}{controller}})
+\end{DoxyCompactItemize}
+\subsection*{Package Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classconcurrency_1_1bridge_1_1_single_lane_bridge}{Single\+Lane\+Bridge}} \mbox{\hyperlink{classconcurrency_1_1bridge_1_1_bridge_canvas_a97bf3b1d7ca18448f9dbffb1ad3d338b}{controller}}
+\item 
+Image \mbox{\hyperlink{classconcurrency_1_1bridge_1_1_bridge_canvas_a1a5c8a702a67d366bde10b8244d640ec}{red\+Car}}
+\item 
+Image \mbox{\hyperlink{classconcurrency_1_1bridge_1_1_bridge_canvas_a91bf760b46dad2c617f3aabbb3189514}{blue\+Car}}
+\item 
+Image \mbox{\hyperlink{classconcurrency_1_1bridge_1_1_bridge_canvas_a093c40564a9ca64281c41956931f76a8}{bridge}}
+\item 
+Audio\+Clip \mbox{\hyperlink{classconcurrency_1_1bridge_1_1_bridge_canvas_a2492efe597458043440671d512472f53}{crash\+Sound}}
+\item 
+int \mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classconcurrency_1_1bridge_1_1_bridge_canvas_a649bbe8c1ea85f52794e197b79c1b5fc}{redX}}
+\item 
+int \mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classconcurrency_1_1bridge_1_1_bridge_canvas_a39d21c119f401d65e7887fe6af161434}{redY}}
+\item 
+int \mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classconcurrency_1_1bridge_1_1_bridge_canvas_a5f11f5f30befee832aacd3795a93088f}{blueX}}
+\item 
+int \mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classconcurrency_1_1bridge_1_1_bridge_canvas_a6673d04f80b8b4bea8d99120907abed5}{blueY}}
+\item 
+int \mbox{\hyperlink{classconcurrency_1_1bridge_1_1_bridge_canvas_a3a961a1fde2ee084eed2d52ab7711c92}{max\+Car}} = 2
+\item 
+boolean \mbox{\hyperlink{classconcurrency_1_1bridge_1_1_bridge_canvas_a1f2ccdf0586d82761c1c372e24643c0e}{frozen}} = false
+\item 
+int \mbox{\hyperlink{classconcurrency_1_1bridge_1_1_bridge_canvas_a65748edb1df4eae39a0c357cd9db326e}{cycle\+Time}} = 20
+\item 
+Image \mbox{\hyperlink{classconcurrency_1_1bridge_1_1_bridge_canvas_a4cec0da8bb85dc5d656839dd0749a6ca}{offscreen}}
+\item 
+Dimension \mbox{\hyperlink{classconcurrency_1_1bridge_1_1_bridge_canvas_ae145b2afc3e45b132c0684dd8a831e9e}{offscreensize}}
+\item 
+Graphics \mbox{\hyperlink{classconcurrency_1_1bridge_1_1_bridge_canvas_a3b4e5707689a65fee4d96c5cd1017a52}{offgraphics}}
+\end{DoxyCompactItemize}
+\subsection*{Static Package Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static final int \mbox{\hyperlink{classconcurrency_1_1bridge_1_1_bridge_canvas_a0fd57d2f7899991524b141fdbd64e4f9}{initredX}} = 5
+\item 
+static final int \mbox{\hyperlink{classconcurrency_1_1bridge_1_1_bridge_canvas_a116ddc62a00b1a3b726c73036b25b121}{initredY}} = 55
+\item 
+static final int \mbox{\hyperlink{classconcurrency_1_1bridge_1_1_bridge_canvas_a7e103fbded63455304609b40b6e5458c}{initblueX}} = 410
+\item 
+static final int \mbox{\hyperlink{classconcurrency_1_1bridge_1_1_bridge_canvas_a8cd98ed2b254d9f99152833053f1d85c}{initblueY}} = 130
+\item 
+static final int \mbox{\hyperlink{classconcurrency_1_1bridge_1_1_bridge_canvas_acf28c3801b04a1ddf864888e06d0cc4a}{bridgeY}} = 90
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classconcurrency_1_1bridge_1_1_bridge_canvas_ad6be71b4c4f47474857fa7ab12ff2eae}\label{classconcurrency_1_1bridge_1_1_bridge_canvas_ad6be71b4c4f47474857fa7ab12ff2eae}} 
+\index{concurrency\+::bridge\+::\+Bridge\+Canvas@{concurrency\+::bridge\+::\+Bridge\+Canvas}!Bridge\+Canvas@{Bridge\+Canvas}}
+\index{Bridge\+Canvas@{Bridge\+Canvas}!concurrency\+::bridge\+::\+Bridge\+Canvas@{concurrency\+::bridge\+::\+Bridge\+Canvas}}
+\subsubsection{\texorpdfstring{Bridge\+Canvas()}{BridgeCanvas()}}
+{\footnotesize\ttfamily concurrency.\+bridge.\+Bridge\+Canvas.\+Bridge\+Canvas (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classconcurrency_1_1bridge_1_1_single_lane_bridge}{Single\+Lane\+Bridge}}}]{controller }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [package]}}
+
+
+\begin{DoxyCode}
+29                                               \{
+30         super();
+31         this.\mbox{\hyperlink{classconcurrency_1_1bridge_1_1_bridge_canvas_a97bf3b1d7ca18448f9dbffb1ad3d338b}{controller}} = \mbox{\hyperlink{classconcurrency_1_1bridge_1_1_bridge_canvas_a97bf3b1d7ca18448f9dbffb1ad3d338b}{controller}};
+32 
+33         \mbox{\hyperlink{classconcurrency_1_1bridge_1_1_bridge_canvas_a2492efe597458043440671d512472f53}{crashSound}}=\mbox{\hyperlink{classconcurrency_1_1bridge_1_1_bridge_canvas_a97bf3b1d7ca18448f9dbffb1ad3d338b}{controller}}.getAudioClip(\mbox{\hyperlink{classconcurrency_1_1bridge_1_1_bridge_canvas_a97bf3b1d7ca18448f9dbffb1ad3d338b}{controller}}.getCodeBase(),\textcolor{stringliteral}{"
+      sound/crash.au"});
+34 
+35         MediaTracker mt;
+36         mt = \textcolor{keyword}{new} MediaTracker(\textcolor{keyword}{this});
+37 
+38         \mbox{\hyperlink{classconcurrency_1_1bridge_1_1_bridge_canvas_a1a5c8a702a67d366bde10b8244d640ec}{redCar}} = \mbox{\hyperlink{classconcurrency_1_1bridge_1_1_bridge_canvas_a97bf3b1d7ca18448f9dbffb1ad3d338b}{controller}}.getImage(\mbox{\hyperlink{classconcurrency_1_1bridge_1_1_bridge_canvas_a97bf3b1d7ca18448f9dbffb1ad3d338b}{controller}}.getCodeBase(), \textcolor{stringliteral}{"image/redcar.gif"}
+      );
+39         mt.addImage(\mbox{\hyperlink{classconcurrency_1_1bridge_1_1_bridge_canvas_a1a5c8a702a67d366bde10b8244d640ec}{redCar}}, 0);
+40         \mbox{\hyperlink{classconcurrency_1_1bridge_1_1_bridge_canvas_a91bf760b46dad2c617f3aabbb3189514}{blueCar}} = \mbox{\hyperlink{classconcurrency_1_1bridge_1_1_bridge_canvas_a97bf3b1d7ca18448f9dbffb1ad3d338b}{controller}}.getImage(\mbox{\hyperlink{classconcurrency_1_1bridge_1_1_bridge_canvas_a97bf3b1d7ca18448f9dbffb1ad3d338b}{controller}}.getCodeBase(), \textcolor{stringliteral}{"
+      image/bluecar.gif"});
+41         mt.addImage(\mbox{\hyperlink{classconcurrency_1_1bridge_1_1_bridge_canvas_a91bf760b46dad2c617f3aabbb3189514}{blueCar}}, 1);
+42         \mbox{\hyperlink{classconcurrency_1_1bridge_1_1_bridge_canvas_a093c40564a9ca64281c41956931f76a8}{bridge}} = \mbox{\hyperlink{classconcurrency_1_1bridge_1_1_bridge_canvas_a97bf3b1d7ca18448f9dbffb1ad3d338b}{controller}}.getImage(\mbox{\hyperlink{classconcurrency_1_1bridge_1_1_bridge_canvas_a97bf3b1d7ca18448f9dbffb1ad3d338b}{controller}}.getCodeBase(), \textcolor{stringliteral}{"image/bridge.gif"}
+      );
+43         mt.addImage(\mbox{\hyperlink{classconcurrency_1_1bridge_1_1_bridge_canvas_a093c40564a9ca64281c41956931f76a8}{bridge}}, 2);
+44 
+45         \textcolor{keywordflow}{try} \{
+46             mt.waitForID(0);
+47             mt.waitForID(1);
+48             mt.waitForID(2);
+49         \} \textcolor{keywordflow}{catch} (java.lang.InterruptedException e) \{
+50             System.out.println(\textcolor{stringliteral}{"Couldn't load one of the images"});
+51         \}
+52         setSize(\mbox{\hyperlink{classconcurrency_1_1bridge_1_1_bridge_canvas_a093c40564a9ca64281c41956931f76a8}{bridge}}.getWidth(null),\mbox{\hyperlink{classconcurrency_1_1bridge_1_1_bridge_canvas_a093c40564a9ca64281c41956931f76a8}{bridge}}.getHeight(null));
+53         \mbox{\hyperlink{classconcurrency_1_1bridge_1_1_bridge_canvas_abe6fd58a5a831f80fd3716103cc12672}{init}}(1);
+54     \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classconcurrency_1_1bridge_1_1_bridge_canvas_a9839d0c214779138f97f4aaf972991c3}\label{classconcurrency_1_1bridge_1_1_bridge_canvas_a9839d0c214779138f97f4aaf972991c3}} 
+\index{concurrency\+::bridge\+::\+Bridge\+Canvas@{concurrency\+::bridge\+::\+Bridge\+Canvas}!backdrop@{backdrop}}
+\index{backdrop@{backdrop}!concurrency\+::bridge\+::\+Bridge\+Canvas@{concurrency\+::bridge\+::\+Bridge\+Canvas}}
+\subsubsection{\texorpdfstring{backdrop()}{backdrop()}}
+{\footnotesize\ttfamily void concurrency.\+bridge.\+Bridge\+Canvas.\+backdrop (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+77                            \{
+78         Dimension d = getSize();
+79         \textcolor{keywordflow}{if} ((\mbox{\hyperlink{classconcurrency_1_1bridge_1_1_bridge_canvas_a4cec0da8bb85dc5d656839dd0749a6ca}{offscreen}} == null) || (d.width != \mbox{\hyperlink{classconcurrency_1_1bridge_1_1_bridge_canvas_ae145b2afc3e45b132c0684dd8a831e9e}{offscreensize}}.width)
+80                                 || (d.height != \mbox{\hyperlink{classconcurrency_1_1bridge_1_1_bridge_canvas_ae145b2afc3e45b132c0684dd8a831e9e}{offscreensize}}.height)) \{
+81             \mbox{\hyperlink{classconcurrency_1_1bridge_1_1_bridge_canvas_a4cec0da8bb85dc5d656839dd0749a6ca}{offscreen}} = createImage(d.width, d.height);
+82             \mbox{\hyperlink{classconcurrency_1_1bridge_1_1_bridge_canvas_ae145b2afc3e45b132c0684dd8a831e9e}{offscreensize}} = d;
+83             \mbox{\hyperlink{classconcurrency_1_1bridge_1_1_bridge_canvas_a3b4e5707689a65fee4d96c5cd1017a52}{offgraphics}} = \mbox{\hyperlink{classconcurrency_1_1bridge_1_1_bridge_canvas_a4cec0da8bb85dc5d656839dd0749a6ca}{offscreen}}.getGraphics();
+84             \mbox{\hyperlink{classconcurrency_1_1bridge_1_1_bridge_canvas_a3b4e5707689a65fee4d96c5cd1017a52}{offgraphics}}.setFont(\textcolor{keyword}{new} Font(\textcolor{stringliteral}{"Helvetica"},Font.BOLD,36));
+85         \}
+86         \mbox{\hyperlink{classconcurrency_1_1bridge_1_1_bridge_canvas_a3b4e5707689a65fee4d96c5cd1017a52}{offgraphics}}.setColor(Color.lightGray);
+87         \mbox{\hyperlink{classconcurrency_1_1bridge_1_1_bridge_canvas_a3b4e5707689a65fee4d96c5cd1017a52}{offgraphics}}.drawImage(\mbox{\hyperlink{classconcurrency_1_1bridge_1_1_bridge_canvas_a093c40564a9ca64281c41956931f76a8}{bridge}},0,0,\textcolor{keyword}{this});
+88     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classconcurrency_1_1bridge_1_1_bridge_canvas_a777eb5e18c6ee3a77ef029230101f2d1}\label{classconcurrency_1_1bridge_1_1_bridge_canvas_a777eb5e18c6ee3a77ef029230101f2d1}} 
+\index{concurrency\+::bridge\+::\+Bridge\+Canvas@{concurrency\+::bridge\+::\+Bridge\+Canvas}!freeze@{freeze}}
+\index{freeze@{freeze}!concurrency\+::bridge\+::\+Bridge\+Canvas@{concurrency\+::bridge\+::\+Bridge\+Canvas}}
+\subsubsection{\texorpdfstring{freeze()}{freeze()}}
+{\footnotesize\ttfamily synchronized void concurrency.\+bridge.\+Bridge\+Canvas.\+freeze (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+151                                      \{
+152         \mbox{\hyperlink{classconcurrency_1_1bridge_1_1_bridge_canvas_a1f2ccdf0586d82761c1c372e24643c0e}{frozen}} = \textcolor{keyword}{true};
+153     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classconcurrency_1_1bridge_1_1_bridge_canvas_abe6fd58a5a831f80fd3716103cc12672}\label{classconcurrency_1_1bridge_1_1_bridge_canvas_abe6fd58a5a831f80fd3716103cc12672}} 
+\index{concurrency\+::bridge\+::\+Bridge\+Canvas@{concurrency\+::bridge\+::\+Bridge\+Canvas}!init@{init}}
+\index{init@{init}!concurrency\+::bridge\+::\+Bridge\+Canvas@{concurrency\+::bridge\+::\+Bridge\+Canvas}}
+\subsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily void concurrency.\+bridge.\+Bridge\+Canvas.\+init (\begin{DoxyParamCaption}\item[{int}]{ncars }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+56                                 \{ \textcolor{comment}{//set number of cars}
+57         \mbox{\hyperlink{classconcurrency_1_1bridge_1_1_bridge_canvas_a3a961a1fde2ee084eed2d52ab7711c92}{maxCar}} = ncars;
+58         \mbox{\hyperlink{classconcurrency_1_1bridge_1_1_bridge_canvas_a1f2ccdf0586d82761c1c372e24643c0e}{frozen}} = \textcolor{keyword}{false};
+59         \mbox{\hyperlink{classconcurrency_1_1bridge_1_1_bridge_canvas_a649bbe8c1ea85f52794e197b79c1b5fc}{redX}}  = \textcolor{keyword}{new} \textcolor{keywordtype}{int}[\mbox{\hyperlink{classconcurrency_1_1bridge_1_1_bridge_canvas_a3a961a1fde2ee084eed2d52ab7711c92}{maxCar}}];
+60         \mbox{\hyperlink{classconcurrency_1_1bridge_1_1_bridge_canvas_a39d21c119f401d65e7887fe6af161434}{redY}}  = \textcolor{keyword}{new} \textcolor{keywordtype}{int}[\mbox{\hyperlink{classconcurrency_1_1bridge_1_1_bridge_canvas_a3a961a1fde2ee084eed2d52ab7711c92}{maxCar}}];
+61         \mbox{\hyperlink{classconcurrency_1_1bridge_1_1_bridge_canvas_a5f11f5f30befee832aacd3795a93088f}{blueX}} = \textcolor{keyword}{new} \textcolor{keywordtype}{int}[\mbox{\hyperlink{classconcurrency_1_1bridge_1_1_bridge_canvas_a3a961a1fde2ee084eed2d52ab7711c92}{maxCar}}];
+62         \mbox{\hyperlink{classconcurrency_1_1bridge_1_1_bridge_canvas_a6673d04f80b8b4bea8d99120907abed5}{blueY}} = \textcolor{keyword}{new} \textcolor{keywordtype}{int}[\mbox{\hyperlink{classconcurrency_1_1bridge_1_1_bridge_canvas_a3a961a1fde2ee084eed2d52ab7711c92}{maxCar}}];
+63 
+64         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i<\mbox{\hyperlink{classconcurrency_1_1bridge_1_1_bridge_canvas_a3a961a1fde2ee084eed2d52ab7711c92}{maxCar}} ; i++) \{
+65             \mbox{\hyperlink{classconcurrency_1_1bridge_1_1_bridge_canvas_a649bbe8c1ea85f52794e197b79c1b5fc}{redX}}[i] = \mbox{\hyperlink{classconcurrency_1_1bridge_1_1_bridge_canvas_a0fd57d2f7899991524b141fdbd64e4f9}{initredX}} - i*85;
+66             \mbox{\hyperlink{classconcurrency_1_1bridge_1_1_bridge_canvas_a39d21c119f401d65e7887fe6af161434}{redY}}[i] = \mbox{\hyperlink{classconcurrency_1_1bridge_1_1_bridge_canvas_a116ddc62a00b1a3b726c73036b25b121}{initredY}};
+67             \mbox{\hyperlink{classconcurrency_1_1bridge_1_1_bridge_canvas_a5f11f5f30befee832aacd3795a93088f}{blueX}}[i] =\mbox{\hyperlink{classconcurrency_1_1bridge_1_1_bridge_canvas_a7e103fbded63455304609b40b6e5458c}{initblueX}} + i*85;
+68             \mbox{\hyperlink{classconcurrency_1_1bridge_1_1_bridge_canvas_a6673d04f80b8b4bea8d99120907abed5}{blueY}}[i] =\mbox{\hyperlink{classconcurrency_1_1bridge_1_1_bridge_canvas_a8cd98ed2b254d9f99152833053f1d85c}{initblueY}};
+69         \}
+70         repaint();
+71     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classconcurrency_1_1bridge_1_1_bridge_canvas_aef8d7c1ca31663c9ba3ec0fdebfc4b73}\label{classconcurrency_1_1bridge_1_1_bridge_canvas_aef8d7c1ca31663c9ba3ec0fdebfc4b73}} 
+\index{concurrency\+::bridge\+::\+Bridge\+Canvas@{concurrency\+::bridge\+::\+Bridge\+Canvas}!move\+Blue@{move\+Blue}}
+\index{move\+Blue@{move\+Blue}!concurrency\+::bridge\+::\+Bridge\+Canvas@{concurrency\+::bridge\+::\+Bridge\+Canvas}}
+\subsubsection{\texorpdfstring{move\+Blue()}{moveBlue()}}
+{\footnotesize\ttfamily boolean concurrency.\+bridge.\+Bridge\+Canvas.\+move\+Blue (\begin{DoxyParamCaption}\item[{int}]{i }\end{DoxyParamCaption}) throws Interrupted\+Exception\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+130                                                                \{
+131         \textcolor{keywordtype}{int} X = \mbox{\hyperlink{classconcurrency_1_1bridge_1_1_bridge_canvas_a5f11f5f30befee832aacd3795a93088f}{blueX}}[i];
+132         \textcolor{keywordtype}{int} Y = \mbox{\hyperlink{classconcurrency_1_1bridge_1_1_bridge_canvas_a6673d04f80b8b4bea8d99120907abed5}{blueY}}[i];
+133         \textcolor{keyword}{synchronized} (\textcolor{keyword}{this}) \{
+134             \textcolor{keywordflow}{while} (\mbox{\hyperlink{classconcurrency_1_1bridge_1_1_bridge_canvas_a1f2ccdf0586d82761c1c372e24643c0e}{frozen}} ) wait();
+135             \textcolor{keywordflow}{if} (i==0 || Math.abs(\mbox{\hyperlink{classconcurrency_1_1bridge_1_1_bridge_canvas_a5f11f5f30befee832aacd3795a93088f}{blueX}}[i-1] - X) > 120) \{
+136                 X -= 2;
+137                 \textcolor{keywordflow}{if} (X <=-80) \{ X = 500; Y = \mbox{\hyperlink{classconcurrency_1_1bridge_1_1_bridge_canvas_a8cd98ed2b254d9f99152833053f1d85c}{initblueY}};\}
+138                 \textcolor{keywordflow}{if} (X <=370 && X > 130 && Y>\mbox{\hyperlink{classconcurrency_1_1bridge_1_1_bridge_canvas_acf28c3801b04a1ddf864888e06d0cc4a}{bridgeY}}) --Y;
+139                 \textcolor{keywordflow}{if} (X <=130 && Y<\mbox{\hyperlink{classconcurrency_1_1bridge_1_1_bridge_canvas_a8cd98ed2b254d9f99152833053f1d85c}{initblueY}}) ++Y;
+140                 \mbox{\hyperlink{classconcurrency_1_1bridge_1_1_bridge_canvas_a5f11f5f30befee832aacd3795a93088f}{blueX}}[i]=X;
+141             \}
+142             \mbox{\hyperlink{classconcurrency_1_1bridge_1_1_bridge_canvas_a6673d04f80b8b4bea8d99120907abed5}{blueY}}[i]=Y;
+143             repaint();
+144         \}
+145         Thread.sleep(\mbox{\hyperlink{classconcurrency_1_1bridge_1_1_bridge_canvas_a65748edb1df4eae39a0c357cd9db326e}{cycleTime}});
+146         repaint();
+147         \textcolor{keywordflow}{return} (X>25 && X<400);
+148     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classconcurrency_1_1bridge_1_1_bridge_canvas_a166d001c782d362f3a8aca27e493a074}\label{classconcurrency_1_1bridge_1_1_bridge_canvas_a166d001c782d362f3a8aca27e493a074}} 
+\index{concurrency\+::bridge\+::\+Bridge\+Canvas@{concurrency\+::bridge\+::\+Bridge\+Canvas}!move\+Red@{move\+Red}}
+\index{move\+Red@{move\+Red}!concurrency\+::bridge\+::\+Bridge\+Canvas@{concurrency\+::bridge\+::\+Bridge\+Canvas}}
+\subsubsection{\texorpdfstring{move\+Red()}{moveRed()}}
+{\footnotesize\ttfamily boolean concurrency.\+bridge.\+Bridge\+Canvas.\+move\+Red (\begin{DoxyParamCaption}\item[{int}]{i }\end{DoxyParamCaption}) throws Interrupted\+Exception\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+110                                                               \{
+111         \textcolor{keywordtype}{int} X = \mbox{\hyperlink{classconcurrency_1_1bridge_1_1_bridge_canvas_a649bbe8c1ea85f52794e197b79c1b5fc}{redX}}[i];
+112         \textcolor{keywordtype}{int} Y = \mbox{\hyperlink{classconcurrency_1_1bridge_1_1_bridge_canvas_a39d21c119f401d65e7887fe6af161434}{redY}}[i];
+113         \textcolor{keyword}{synchronized} (\textcolor{keyword}{this}) \{
+114             \textcolor{keywordflow}{while} (\mbox{\hyperlink{classconcurrency_1_1bridge_1_1_bridge_canvas_a1f2ccdf0586d82761c1c372e24643c0e}{frozen}} ) wait();
+115             \textcolor{keywordflow}{if} (i==0 || Math.abs(\mbox{\hyperlink{classconcurrency_1_1bridge_1_1_bridge_canvas_a649bbe8c1ea85f52794e197b79c1b5fc}{redX}}[i-1] - X) > 120) \{
+116                 X += 2;
+117                 \textcolor{keywordflow}{if} (X >=500) \{ X = -80; Y = \mbox{\hyperlink{classconcurrency_1_1bridge_1_1_bridge_canvas_a116ddc62a00b1a3b726c73036b25b121}{initredY}};\}
+118                 \textcolor{keywordflow}{if} (X >=60 && X < 290 && Y<\mbox{\hyperlink{classconcurrency_1_1bridge_1_1_bridge_canvas_acf28c3801b04a1ddf864888e06d0cc4a}{bridgeY}}) ++Y;
+119                 \textcolor{keywordflow}{if} (X >=290 && Y>\mbox{\hyperlink{classconcurrency_1_1bridge_1_1_bridge_canvas_a116ddc62a00b1a3b726c73036b25b121}{initredY}}) --Y;
+120             \}
+121             \mbox{\hyperlink{classconcurrency_1_1bridge_1_1_bridge_canvas_a649bbe8c1ea85f52794e197b79c1b5fc}{redX}}[i]=X;
+122             \mbox{\hyperlink{classconcurrency_1_1bridge_1_1_bridge_canvas_a39d21c119f401d65e7887fe6af161434}{redY}}[i]=Y;
+123             repaint();
+124         \}
+125         Thread.sleep(\mbox{\hyperlink{classconcurrency_1_1bridge_1_1_bridge_canvas_a65748edb1df4eae39a0c357cd9db326e}{cycleTime}});
+126         \textcolor{keywordflow}{return} (X>25 && X<400);
+127      \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classconcurrency_1_1bridge_1_1_bridge_canvas_a9b8e8df5174b22c0ebf8096e651a4440}\label{classconcurrency_1_1bridge_1_1_bridge_canvas_a9b8e8df5174b22c0ebf8096e651a4440}} 
+\index{concurrency\+::bridge\+::\+Bridge\+Canvas@{concurrency\+::bridge\+::\+Bridge\+Canvas}!paint@{paint}}
+\index{paint@{paint}!concurrency\+::bridge\+::\+Bridge\+Canvas@{concurrency\+::bridge\+::\+Bridge\+Canvas}}
+\subsubsection{\texorpdfstring{paint()}{paint()}}
+{\footnotesize\ttfamily void concurrency.\+bridge.\+Bridge\+Canvas.\+paint (\begin{DoxyParamCaption}\item[{Graphics}]{g }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+90                                   \{
+91          \mbox{\hyperlink{classconcurrency_1_1bridge_1_1_bridge_canvas_a3cdc761a16dc589c729d515abbd772b9}{update}}(g);
+92     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classconcurrency_1_1bridge_1_1_bridge_canvas_af3ce80d4ece527c54b0e7eb74ce75af4}\label{classconcurrency_1_1bridge_1_1_bridge_canvas_af3ce80d4ece527c54b0e7eb74ce75af4}} 
+\index{concurrency\+::bridge\+::\+Bridge\+Canvas@{concurrency\+::bridge\+::\+Bridge\+Canvas}!thaw@{thaw}}
+\index{thaw@{thaw}!concurrency\+::bridge\+::\+Bridge\+Canvas@{concurrency\+::bridge\+::\+Bridge\+Canvas}}
+\subsubsection{\texorpdfstring{thaw()}{thaw()}}
+{\footnotesize\ttfamily synchronized void concurrency.\+bridge.\+Bridge\+Canvas.\+thaw (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+155                                     \{
+156         \mbox{\hyperlink{classconcurrency_1_1bridge_1_1_bridge_canvas_a1f2ccdf0586d82761c1c372e24643c0e}{frozen}} = \textcolor{keyword}{false};
+157         notifyAll();
+158     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classconcurrency_1_1bridge_1_1_bridge_canvas_a3cdc761a16dc589c729d515abbd772b9}\label{classconcurrency_1_1bridge_1_1_bridge_canvas_a3cdc761a16dc589c729d515abbd772b9}} 
+\index{concurrency\+::bridge\+::\+Bridge\+Canvas@{concurrency\+::bridge\+::\+Bridge\+Canvas}!update@{update}}
+\index{update@{update}!concurrency\+::bridge\+::\+Bridge\+Canvas@{concurrency\+::bridge\+::\+Bridge\+Canvas}}
+\subsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void concurrency.\+bridge.\+Bridge\+Canvas.\+update (\begin{DoxyParamCaption}\item[{Graphics}]{g }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+94                                    \{
+95         \mbox{\hyperlink{classconcurrency_1_1bridge_1_1_bridge_canvas_a9839d0c214779138f97f4aaf972991c3}{backdrop}}();
+96         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i=0; i<\mbox{\hyperlink{classconcurrency_1_1bridge_1_1_bridge_canvas_a3a961a1fde2ee084eed2d52ab7711c92}{maxCar}}; i++) \{
+97             \mbox{\hyperlink{classconcurrency_1_1bridge_1_1_bridge_canvas_a3b4e5707689a65fee4d96c5cd1017a52}{offgraphics}}.drawImage(\mbox{\hyperlink{classconcurrency_1_1bridge_1_1_bridge_canvas_a1a5c8a702a67d366bde10b8244d640ec}{redCar}},\mbox{\hyperlink{classconcurrency_1_1bridge_1_1_bridge_canvas_a649bbe8c1ea85f52794e197b79c1b5fc}{redX}}[i],\mbox{\hyperlink{classconcurrency_1_1bridge_1_1_bridge_canvas_a39d21c119f401d65e7887fe6af161434}{redY}}[i],\textcolor{keyword}{this});
+98             \mbox{\hyperlink{classconcurrency_1_1bridge_1_1_bridge_canvas_a3b4e5707689a65fee4d96c5cd1017a52}{offgraphics}}.drawImage(\mbox{\hyperlink{classconcurrency_1_1bridge_1_1_bridge_canvas_a91bf760b46dad2c617f3aabbb3189514}{blueCar}},\mbox{\hyperlink{classconcurrency_1_1bridge_1_1_bridge_canvas_a5f11f5f30befee832aacd3795a93088f}{blueX}}[i],\mbox{\hyperlink{classconcurrency_1_1bridge_1_1_bridge_canvas_a6673d04f80b8b4bea8d99120907abed5}{blueY}}[i],\textcolor{keyword}{this});
+99         \}
+100         \textcolor{keywordflow}{if} (\mbox{\hyperlink{classconcurrency_1_1bridge_1_1_bridge_canvas_a6673d04f80b8b4bea8d99120907abed5}{blueY}}[0]==\mbox{\hyperlink{classconcurrency_1_1bridge_1_1_bridge_canvas_a39d21c119f401d65e7887fe6af161434}{redY}}[0] && Math.abs(\mbox{\hyperlink{classconcurrency_1_1bridge_1_1_bridge_canvas_a649bbe8c1ea85f52794e197b79c1b5fc}{redX}}[0]+80 - \mbox{\hyperlink{classconcurrency_1_1bridge_1_1_bridge_canvas_a5f11f5f30befee832aacd3795a93088f}{blueX}}[0])<5) \{
+101             \mbox{\hyperlink{classconcurrency_1_1bridge_1_1_bridge_canvas_a3b4e5707689a65fee4d96c5cd1017a52}{offgraphics}}.setColor(Color.red);
+102             \mbox{\hyperlink{classconcurrency_1_1bridge_1_1_bridge_canvas_a3b4e5707689a65fee4d96c5cd1017a52}{offgraphics}}.drawString(\textcolor{stringliteral}{"Crunch!"},200,100);
+103             \mbox{\hyperlink{classconcurrency_1_1bridge_1_1_bridge_canvas_a1f2ccdf0586d82761c1c372e24643c0e}{frozen}}=\textcolor{keyword}{true};
+104             \mbox{\hyperlink{classconcurrency_1_1bridge_1_1_bridge_canvas_a2492efe597458043440671d512472f53}{crashSound}}.play();
+105         \}
+106         g.drawImage(\mbox{\hyperlink{classconcurrency_1_1bridge_1_1_bridge_canvas_a4cec0da8bb85dc5d656839dd0749a6ca}{offscreen}}, 0, 0, null);
+107     \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classconcurrency_1_1bridge_1_1_bridge_canvas_a91bf760b46dad2c617f3aabbb3189514}\label{classconcurrency_1_1bridge_1_1_bridge_canvas_a91bf760b46dad2c617f3aabbb3189514}} 
+\index{concurrency\+::bridge\+::\+Bridge\+Canvas@{concurrency\+::bridge\+::\+Bridge\+Canvas}!blue\+Car@{blue\+Car}}
+\index{blue\+Car@{blue\+Car}!concurrency\+::bridge\+::\+Bridge\+Canvas@{concurrency\+::bridge\+::\+Bridge\+Canvas}}
+\subsubsection{\texorpdfstring{blue\+Car}{blueCar}}
+{\footnotesize\ttfamily Image concurrency.\+bridge.\+Bridge\+Canvas.\+blue\+Car\hspace{0.3cm}{\ttfamily [package]}}
+
+\mbox{\Hypertarget{classconcurrency_1_1bridge_1_1_bridge_canvas_a5f11f5f30befee832aacd3795a93088f}\label{classconcurrency_1_1bridge_1_1_bridge_canvas_a5f11f5f30befee832aacd3795a93088f}} 
+\index{concurrency\+::bridge\+::\+Bridge\+Canvas@{concurrency\+::bridge\+::\+Bridge\+Canvas}!blueX@{blueX}}
+\index{blueX@{blueX}!concurrency\+::bridge\+::\+Bridge\+Canvas@{concurrency\+::bridge\+::\+Bridge\+Canvas}}
+\subsubsection{\texorpdfstring{blueX}{blueX}}
+{\footnotesize\ttfamily int \mbox{[}$\,$\mbox{]} concurrency.\+bridge.\+Bridge\+Canvas.\+blueX\hspace{0.3cm}{\ttfamily [package]}}
+
+\mbox{\Hypertarget{classconcurrency_1_1bridge_1_1_bridge_canvas_a6673d04f80b8b4bea8d99120907abed5}\label{classconcurrency_1_1bridge_1_1_bridge_canvas_a6673d04f80b8b4bea8d99120907abed5}} 
+\index{concurrency\+::bridge\+::\+Bridge\+Canvas@{concurrency\+::bridge\+::\+Bridge\+Canvas}!blueY@{blueY}}
+\index{blueY@{blueY}!concurrency\+::bridge\+::\+Bridge\+Canvas@{concurrency\+::bridge\+::\+Bridge\+Canvas}}
+\subsubsection{\texorpdfstring{blueY}{blueY}}
+{\footnotesize\ttfamily int \mbox{[}$\,$\mbox{]} concurrency.\+bridge.\+Bridge\+Canvas.\+blueY\hspace{0.3cm}{\ttfamily [package]}}
+
+\mbox{\Hypertarget{classconcurrency_1_1bridge_1_1_bridge_canvas_a093c40564a9ca64281c41956931f76a8}\label{classconcurrency_1_1bridge_1_1_bridge_canvas_a093c40564a9ca64281c41956931f76a8}} 
+\index{concurrency\+::bridge\+::\+Bridge\+Canvas@{concurrency\+::bridge\+::\+Bridge\+Canvas}!bridge@{bridge}}
+\index{bridge@{bridge}!concurrency\+::bridge\+::\+Bridge\+Canvas@{concurrency\+::bridge\+::\+Bridge\+Canvas}}
+\subsubsection{\texorpdfstring{bridge}{bridge}}
+{\footnotesize\ttfamily Image concurrency.\+bridge.\+Bridge\+Canvas.\+bridge\hspace{0.3cm}{\ttfamily [package]}}
+
+\mbox{\Hypertarget{classconcurrency_1_1bridge_1_1_bridge_canvas_acf28c3801b04a1ddf864888e06d0cc4a}\label{classconcurrency_1_1bridge_1_1_bridge_canvas_acf28c3801b04a1ddf864888e06d0cc4a}} 
+\index{concurrency\+::bridge\+::\+Bridge\+Canvas@{concurrency\+::bridge\+::\+Bridge\+Canvas}!bridgeY@{bridgeY}}
+\index{bridgeY@{bridgeY}!concurrency\+::bridge\+::\+Bridge\+Canvas@{concurrency\+::bridge\+::\+Bridge\+Canvas}}
+\subsubsection{\texorpdfstring{bridgeY}{bridgeY}}
+{\footnotesize\ttfamily final int concurrency.\+bridge.\+Bridge\+Canvas.\+bridgeY = 90\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [package]}}
+
+\mbox{\Hypertarget{classconcurrency_1_1bridge_1_1_bridge_canvas_a97bf3b1d7ca18448f9dbffb1ad3d338b}\label{classconcurrency_1_1bridge_1_1_bridge_canvas_a97bf3b1d7ca18448f9dbffb1ad3d338b}} 
+\index{concurrency\+::bridge\+::\+Bridge\+Canvas@{concurrency\+::bridge\+::\+Bridge\+Canvas}!controller@{controller}}
+\index{controller@{controller}!concurrency\+::bridge\+::\+Bridge\+Canvas@{concurrency\+::bridge\+::\+Bridge\+Canvas}}
+\subsubsection{\texorpdfstring{controller}{controller}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classconcurrency_1_1bridge_1_1_single_lane_bridge}{Single\+Lane\+Bridge}} concurrency.\+bridge.\+Bridge\+Canvas.\+controller\hspace{0.3cm}{\ttfamily [package]}}
+
+\mbox{\Hypertarget{classconcurrency_1_1bridge_1_1_bridge_canvas_a2492efe597458043440671d512472f53}\label{classconcurrency_1_1bridge_1_1_bridge_canvas_a2492efe597458043440671d512472f53}} 
+\index{concurrency\+::bridge\+::\+Bridge\+Canvas@{concurrency\+::bridge\+::\+Bridge\+Canvas}!crash\+Sound@{crash\+Sound}}
+\index{crash\+Sound@{crash\+Sound}!concurrency\+::bridge\+::\+Bridge\+Canvas@{concurrency\+::bridge\+::\+Bridge\+Canvas}}
+\subsubsection{\texorpdfstring{crash\+Sound}{crashSound}}
+{\footnotesize\ttfamily Audio\+Clip concurrency.\+bridge.\+Bridge\+Canvas.\+crash\+Sound\hspace{0.3cm}{\ttfamily [package]}}
+
+\mbox{\Hypertarget{classconcurrency_1_1bridge_1_1_bridge_canvas_a65748edb1df4eae39a0c357cd9db326e}\label{classconcurrency_1_1bridge_1_1_bridge_canvas_a65748edb1df4eae39a0c357cd9db326e}} 
+\index{concurrency\+::bridge\+::\+Bridge\+Canvas@{concurrency\+::bridge\+::\+Bridge\+Canvas}!cycle\+Time@{cycle\+Time}}
+\index{cycle\+Time@{cycle\+Time}!concurrency\+::bridge\+::\+Bridge\+Canvas@{concurrency\+::bridge\+::\+Bridge\+Canvas}}
+\subsubsection{\texorpdfstring{cycle\+Time}{cycleTime}}
+{\footnotesize\ttfamily int concurrency.\+bridge.\+Bridge\+Canvas.\+cycle\+Time = 20\hspace{0.3cm}{\ttfamily [package]}}
+
+\mbox{\Hypertarget{classconcurrency_1_1bridge_1_1_bridge_canvas_a1f2ccdf0586d82761c1c372e24643c0e}\label{classconcurrency_1_1bridge_1_1_bridge_canvas_a1f2ccdf0586d82761c1c372e24643c0e}} 
+\index{concurrency\+::bridge\+::\+Bridge\+Canvas@{concurrency\+::bridge\+::\+Bridge\+Canvas}!frozen@{frozen}}
+\index{frozen@{frozen}!concurrency\+::bridge\+::\+Bridge\+Canvas@{concurrency\+::bridge\+::\+Bridge\+Canvas}}
+\subsubsection{\texorpdfstring{frozen}{frozen}}
+{\footnotesize\ttfamily boolean concurrency.\+bridge.\+Bridge\+Canvas.\+frozen = false\hspace{0.3cm}{\ttfamily [package]}}
+
+\mbox{\Hypertarget{classconcurrency_1_1bridge_1_1_bridge_canvas_a7e103fbded63455304609b40b6e5458c}\label{classconcurrency_1_1bridge_1_1_bridge_canvas_a7e103fbded63455304609b40b6e5458c}} 
+\index{concurrency\+::bridge\+::\+Bridge\+Canvas@{concurrency\+::bridge\+::\+Bridge\+Canvas}!initblueX@{initblueX}}
+\index{initblueX@{initblueX}!concurrency\+::bridge\+::\+Bridge\+Canvas@{concurrency\+::bridge\+::\+Bridge\+Canvas}}
+\subsubsection{\texorpdfstring{initblueX}{initblueX}}
+{\footnotesize\ttfamily final int concurrency.\+bridge.\+Bridge\+Canvas.\+initblueX = 410\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [package]}}
+
+\mbox{\Hypertarget{classconcurrency_1_1bridge_1_1_bridge_canvas_a8cd98ed2b254d9f99152833053f1d85c}\label{classconcurrency_1_1bridge_1_1_bridge_canvas_a8cd98ed2b254d9f99152833053f1d85c}} 
+\index{concurrency\+::bridge\+::\+Bridge\+Canvas@{concurrency\+::bridge\+::\+Bridge\+Canvas}!initblueY@{initblueY}}
+\index{initblueY@{initblueY}!concurrency\+::bridge\+::\+Bridge\+Canvas@{concurrency\+::bridge\+::\+Bridge\+Canvas}}
+\subsubsection{\texorpdfstring{initblueY}{initblueY}}
+{\footnotesize\ttfamily final int concurrency.\+bridge.\+Bridge\+Canvas.\+initblueY = 130\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [package]}}
+
+\mbox{\Hypertarget{classconcurrency_1_1bridge_1_1_bridge_canvas_a0fd57d2f7899991524b141fdbd64e4f9}\label{classconcurrency_1_1bridge_1_1_bridge_canvas_a0fd57d2f7899991524b141fdbd64e4f9}} 
+\index{concurrency\+::bridge\+::\+Bridge\+Canvas@{concurrency\+::bridge\+::\+Bridge\+Canvas}!initredX@{initredX}}
+\index{initredX@{initredX}!concurrency\+::bridge\+::\+Bridge\+Canvas@{concurrency\+::bridge\+::\+Bridge\+Canvas}}
+\subsubsection{\texorpdfstring{initredX}{initredX}}
+{\footnotesize\ttfamily final int concurrency.\+bridge.\+Bridge\+Canvas.\+initredX = 5\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [package]}}
+
+\mbox{\Hypertarget{classconcurrency_1_1bridge_1_1_bridge_canvas_a116ddc62a00b1a3b726c73036b25b121}\label{classconcurrency_1_1bridge_1_1_bridge_canvas_a116ddc62a00b1a3b726c73036b25b121}} 
+\index{concurrency\+::bridge\+::\+Bridge\+Canvas@{concurrency\+::bridge\+::\+Bridge\+Canvas}!initredY@{initredY}}
+\index{initredY@{initredY}!concurrency\+::bridge\+::\+Bridge\+Canvas@{concurrency\+::bridge\+::\+Bridge\+Canvas}}
+\subsubsection{\texorpdfstring{initredY}{initredY}}
+{\footnotesize\ttfamily final int concurrency.\+bridge.\+Bridge\+Canvas.\+initredY = 55\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [package]}}
+
+\mbox{\Hypertarget{classconcurrency_1_1bridge_1_1_bridge_canvas_a3a961a1fde2ee084eed2d52ab7711c92}\label{classconcurrency_1_1bridge_1_1_bridge_canvas_a3a961a1fde2ee084eed2d52ab7711c92}} 
+\index{concurrency\+::bridge\+::\+Bridge\+Canvas@{concurrency\+::bridge\+::\+Bridge\+Canvas}!max\+Car@{max\+Car}}
+\index{max\+Car@{max\+Car}!concurrency\+::bridge\+::\+Bridge\+Canvas@{concurrency\+::bridge\+::\+Bridge\+Canvas}}
+\subsubsection{\texorpdfstring{max\+Car}{maxCar}}
+{\footnotesize\ttfamily int concurrency.\+bridge.\+Bridge\+Canvas.\+max\+Car = 2\hspace{0.3cm}{\ttfamily [package]}}
+
+\mbox{\Hypertarget{classconcurrency_1_1bridge_1_1_bridge_canvas_a3b4e5707689a65fee4d96c5cd1017a52}\label{classconcurrency_1_1bridge_1_1_bridge_canvas_a3b4e5707689a65fee4d96c5cd1017a52}} 
+\index{concurrency\+::bridge\+::\+Bridge\+Canvas@{concurrency\+::bridge\+::\+Bridge\+Canvas}!offgraphics@{offgraphics}}
+\index{offgraphics@{offgraphics}!concurrency\+::bridge\+::\+Bridge\+Canvas@{concurrency\+::bridge\+::\+Bridge\+Canvas}}
+\subsubsection{\texorpdfstring{offgraphics}{offgraphics}}
+{\footnotesize\ttfamily Graphics concurrency.\+bridge.\+Bridge\+Canvas.\+offgraphics\hspace{0.3cm}{\ttfamily [package]}}
+
+\mbox{\Hypertarget{classconcurrency_1_1bridge_1_1_bridge_canvas_a4cec0da8bb85dc5d656839dd0749a6ca}\label{classconcurrency_1_1bridge_1_1_bridge_canvas_a4cec0da8bb85dc5d656839dd0749a6ca}} 
+\index{concurrency\+::bridge\+::\+Bridge\+Canvas@{concurrency\+::bridge\+::\+Bridge\+Canvas}!offscreen@{offscreen}}
+\index{offscreen@{offscreen}!concurrency\+::bridge\+::\+Bridge\+Canvas@{concurrency\+::bridge\+::\+Bridge\+Canvas}}
+\subsubsection{\texorpdfstring{offscreen}{offscreen}}
+{\footnotesize\ttfamily Image concurrency.\+bridge.\+Bridge\+Canvas.\+offscreen\hspace{0.3cm}{\ttfamily [package]}}
+
+\mbox{\Hypertarget{classconcurrency_1_1bridge_1_1_bridge_canvas_ae145b2afc3e45b132c0684dd8a831e9e}\label{classconcurrency_1_1bridge_1_1_bridge_canvas_ae145b2afc3e45b132c0684dd8a831e9e}} 
+\index{concurrency\+::bridge\+::\+Bridge\+Canvas@{concurrency\+::bridge\+::\+Bridge\+Canvas}!offscreensize@{offscreensize}}
+\index{offscreensize@{offscreensize}!concurrency\+::bridge\+::\+Bridge\+Canvas@{concurrency\+::bridge\+::\+Bridge\+Canvas}}
+\subsubsection{\texorpdfstring{offscreensize}{offscreensize}}
+{\footnotesize\ttfamily Dimension concurrency.\+bridge.\+Bridge\+Canvas.\+offscreensize\hspace{0.3cm}{\ttfamily [package]}}
+
+\mbox{\Hypertarget{classconcurrency_1_1bridge_1_1_bridge_canvas_a1a5c8a702a67d366bde10b8244d640ec}\label{classconcurrency_1_1bridge_1_1_bridge_canvas_a1a5c8a702a67d366bde10b8244d640ec}} 
+\index{concurrency\+::bridge\+::\+Bridge\+Canvas@{concurrency\+::bridge\+::\+Bridge\+Canvas}!red\+Car@{red\+Car}}
+\index{red\+Car@{red\+Car}!concurrency\+::bridge\+::\+Bridge\+Canvas@{concurrency\+::bridge\+::\+Bridge\+Canvas}}
+\subsubsection{\texorpdfstring{red\+Car}{redCar}}
+{\footnotesize\ttfamily Image concurrency.\+bridge.\+Bridge\+Canvas.\+red\+Car\hspace{0.3cm}{\ttfamily [package]}}
+
+\mbox{\Hypertarget{classconcurrency_1_1bridge_1_1_bridge_canvas_a649bbe8c1ea85f52794e197b79c1b5fc}\label{classconcurrency_1_1bridge_1_1_bridge_canvas_a649bbe8c1ea85f52794e197b79c1b5fc}} 
+\index{concurrency\+::bridge\+::\+Bridge\+Canvas@{concurrency\+::bridge\+::\+Bridge\+Canvas}!redX@{redX}}
+\index{redX@{redX}!concurrency\+::bridge\+::\+Bridge\+Canvas@{concurrency\+::bridge\+::\+Bridge\+Canvas}}
+\subsubsection{\texorpdfstring{redX}{redX}}
+{\footnotesize\ttfamily int \mbox{[}$\,$\mbox{]} concurrency.\+bridge.\+Bridge\+Canvas.\+redX\hspace{0.3cm}{\ttfamily [package]}}
+
+\mbox{\Hypertarget{classconcurrency_1_1bridge_1_1_bridge_canvas_a39d21c119f401d65e7887fe6af161434}\label{classconcurrency_1_1bridge_1_1_bridge_canvas_a39d21c119f401d65e7887fe6af161434}} 
+\index{concurrency\+::bridge\+::\+Bridge\+Canvas@{concurrency\+::bridge\+::\+Bridge\+Canvas}!redY@{redY}}
+\index{redY@{redY}!concurrency\+::bridge\+::\+Bridge\+Canvas@{concurrency\+::bridge\+::\+Bridge\+Canvas}}
+\subsubsection{\texorpdfstring{redY}{redY}}
+{\footnotesize\ttfamily int \mbox{[}$\,$\mbox{]} concurrency.\+bridge.\+Bridge\+Canvas.\+redY\hspace{0.3cm}{\ttfamily [package]}}
+

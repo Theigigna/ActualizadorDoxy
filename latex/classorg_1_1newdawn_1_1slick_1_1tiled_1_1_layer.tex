@@ -1,0 +1,406 @@
+\hypertarget{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_layer}{}\section{org.\+newdawn.\+slick.\+tiled.\+Layer Class Reference}
+\label{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_layer}\index{org.\+newdawn.\+slick.\+tiled.\+Layer@{org.\+newdawn.\+slick.\+tiled.\+Layer}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_layer_ad70b6189c60a0f7d1ca336d7febff1a0}{Layer}} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map}{Tiled\+Map}} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_layer_ad6494d6da75ffb77cacdec8d38d74982}{map}}, Element element)  throws Slick\+Exception 
+\item 
+int \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_layer_a3930aabf5f88cef45dad40439dc44f19}{get\+Tile\+ID}} (int x, int y)
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_layer_a8529c961c803882ae6be3ba7b49b995a}{set\+Tile\+ID}} (int x, int y, int tile)
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_layer_a25e1b0f9ec38e79ca80defa8b05f9218}{render}} (int x, int y, int sx, int sy, int \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_layer_a901731d81cc624050ffefd1af9d09119}{width}}, int ty, boolean line\+By\+Line, int map\+Tile\+Width, int map\+Tile\+Height)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_layer_ab1bb4ba1300c8e2d08bdbcefa14ab60e}{index}}
+\item 
+String \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_layer_a0792a70cf99a57c1a2a3042ead9b7873}{name}}
+\item 
+int \mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_layer_a9370f031c215f22f2b18135d8ca5cbc8}{data}}
+\item 
+int \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_layer_a901731d81cc624050ffefd1af9d09119}{width}}
+\item 
+int \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_layer_acf0299abe971ba325493fd8031db08be}{height}}
+\item 
+Properties \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_layer_a457f0627d1e59eb8fdcd273f958d5759}{props}}
+\end{DoxyCompactItemize}
+\subsection*{Static Package Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_layer_a9b36eb42cf8972b2fce1cef60c4e3283}{\mbox{[}static initializer\mbox{]}}}
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+byte \mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_layer_af31e22c2a21a77e000afee8a40393019}{decode\+Base64}} (char\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_layer_a9370f031c215f22f2b18135d8ca5cbc8}{data}})
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+final \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map}{Tiled\+Map}} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_layer_ad6494d6da75ffb77cacdec8d38d74982}{map}}
+\end{DoxyCompactItemize}
+\subsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static byte \mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_layer_a2e6c0049e12c85170c87ea9ef3b54779}{base\+Codes}} = new byte\mbox{[}256\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A layer of tiles on the map
+
+\begin{DoxyAuthor}{Author}
+kevin 
+\end{DoxyAuthor}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_layer_ad70b6189c60a0f7d1ca336d7febff1a0}\label{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_layer_ad70b6189c60a0f7d1ca336d7febff1a0}} 
+\index{org\+::newdawn\+::slick\+::tiled\+::\+Layer@{org\+::newdawn\+::slick\+::tiled\+::\+Layer}!Layer@{Layer}}
+\index{Layer@{Layer}!org\+::newdawn\+::slick\+::tiled\+::\+Layer@{org\+::newdawn\+::slick\+::tiled\+::\+Layer}}
+\subsubsection{\texorpdfstring{Layer()}{Layer()}}
+{\footnotesize\ttfamily org.\+newdawn.\+slick.\+tiled.\+Layer.\+Layer (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map}{Tiled\+Map}}}]{map,  }\item[{Element}]{element }\end{DoxyParamCaption}) throws \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_slick_exception}{Slick\+Exception}}\hspace{0.3cm}{\ttfamily [inline]}}
+
+Create a new layer based on the X\+ML definition
+
+
+\begin{DoxyParams}{Parameters}
+{\em element} & The X\+ML element describing the layer \\
+\hline
+{\em map} & The map this layer is part of \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_slick_exception}{Slick\+Exception}}} & Indicates a failure to parse the X\+ML layer \\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyCode}
+68                                                                       \{
+69         this.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_layer_ad6494d6da75ffb77cacdec8d38d74982}{map}} = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_layer_ad6494d6da75ffb77cacdec8d38d74982}{map}};
+70         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_layer_a0792a70cf99a57c1a2a3042ead9b7873}{name}} = element.getAttribute(\textcolor{stringliteral}{"name"});
+71         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_layer_a901731d81cc624050ffefd1af9d09119}{width}} = Integer.parseInt(element.getAttribute(\textcolor{stringliteral}{"width"}));
+72         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_layer_acf0299abe971ba325493fd8031db08be}{height}} = Integer.parseInt(element.getAttribute(\textcolor{stringliteral}{"height"}));
+73         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_layer_a9370f031c215f22f2b18135d8ca5cbc8}{data}} = \textcolor{keyword}{new} \textcolor{keywordtype}{int}[\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_layer_a901731d81cc624050ffefd1af9d09119}{width}}][\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_layer_acf0299abe971ba325493fd8031db08be}{height}}][3];
+74 
+75         \textcolor{comment}{// now read the layer properties}
+76         Element propsElement = (Element) element.getElementsByTagName(
+77                 \textcolor{stringliteral}{"properties"}).item(0);
+78         \textcolor{keywordflow}{if} (propsElement != null) \{
+79             NodeList properties = propsElement.getElementsByTagName(\textcolor{stringliteral}{"property"});
+80             \textcolor{keywordflow}{if} (properties != null) \{
+81                 \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_layer_a457f0627d1e59eb8fdcd273f958d5759}{props}} = \textcolor{keyword}{new} Properties();
+82                 \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} p = 0; p < properties.getLength(); p++) \{
+83                     Element propElement = (Element) properties.item(p);
+84 
+85                     String \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_layer_a0792a70cf99a57c1a2a3042ead9b7873}{name}} = propElement.getAttribute(\textcolor{stringliteral}{"name"});
+86                     String value = propElement.getAttribute(\textcolor{stringliteral}{"value"});
+87                     \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_layer_a457f0627d1e59eb8fdcd273f958d5759}{props}}.setProperty(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_layer_a0792a70cf99a57c1a2a3042ead9b7873}{name}}, value);
+88                 \}
+89             \}
+90         \}
+91 
+92         Element dataNode = (Element) element.getElementsByTagName(\textcolor{stringliteral}{"data"}).item(
+93                 0);
+94         String encoding = dataNode.getAttribute(\textcolor{stringliteral}{"encoding"});
+95         String compression = dataNode.getAttribute(\textcolor{stringliteral}{"compression"});
+96 
+97         \textcolor{keywordflow}{if} (encoding.equals(\textcolor{stringliteral}{"base64"}) && compression.equals(\textcolor{stringliteral}{"gzip"})) \{
+98             \textcolor{keywordflow}{try} \{
+99                 Node cdata = dataNode.getFirstChild();
+100                 \textcolor{keywordtype}{char}[] enc = cdata.getNodeValue().trim().toCharArray();
+101                 byte[] dec = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_layer_af31e22c2a21a77e000afee8a40393019}{decodeBase64}}(enc);
+102                 GZIPInputStream is = \textcolor{keyword}{new} GZIPInputStream(
+103                         \textcolor{keyword}{new} ByteArrayInputStream(dec));
+104 
+105                 \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} y = 0; y < \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_layer_acf0299abe971ba325493fd8031db08be}{height}}; y++) \{
+106                     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} x = 0; x < \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_layer_a901731d81cc624050ffefd1af9d09119}{width}}; x++) \{
+107                         \textcolor{keywordtype}{int} tileId = 0;
+108                         tileId |= is.read();
+109                         tileId |= is.read() << 8;
+110                         tileId |= is.read() << 16;
+111                         tileId |= is.read() << 24;
+112 
+113                         \textcolor{keywordflow}{if} (tileId == 0) \{
+114                             \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_layer_a9370f031c215f22f2b18135d8ca5cbc8}{data}}[x][y][0] = -1;
+115                             \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_layer_a9370f031c215f22f2b18135d8ca5cbc8}{data}}[x][y][1] = 0;
+116                             \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_layer_a9370f031c215f22f2b18135d8ca5cbc8}{data}}[x][y][2] = 0;
+117                         \} \textcolor{keywordflow}{else} \{
+118                             TileSet \textcolor{keyword}{set} = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_layer_ad6494d6da75ffb77cacdec8d38d74982}{map}}.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_a136e9d5ff92016dcfaf8effa027147a2}{findTileSet}}(tileId);
+119 
+120                             \textcolor{keywordflow}{if} (\textcolor{keyword}{set} != null) \{
+121                                 \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_layer_a9370f031c215f22f2b18135d8ca5cbc8}{data}}[x][y][0] = \textcolor{keyword}{set}.index;
+122                                 \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_layer_a9370f031c215f22f2b18135d8ca5cbc8}{data}}[x][y][1] = tileId - \textcolor{keyword}{set}.firstGID;
+123                             \}
+124                             \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_layer_a9370f031c215f22f2b18135d8ca5cbc8}{data}}[x][y][2] = tileId;
+125                         \}
+126                     \}
+127                 \}
+128             \} \textcolor{keywordflow}{catch} (IOException e) \{
+129                 Log.error(e);
+130                 \textcolor{keywordflow}{throw} \textcolor{keyword}{new} SlickException(\textcolor{stringliteral}{"Unable to decode base 64 block"});
+131             \}
+132         \} \textcolor{keywordflow}{else} \{
+133             \textcolor{keywordflow}{throw} \textcolor{keyword}{new} SlickException(\textcolor{stringliteral}{"Unsupport tiled map type: "} + encoding
+134                     + \textcolor{stringliteral}{","} + compression + \textcolor{stringliteral}{" (only gzip base64 supported)"});
+135         \}
+136     \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_layer_a9b36eb42cf8972b2fce1cef60c4e3283}\label{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_layer_a9b36eb42cf8972b2fce1cef60c4e3283}} 
+\index{org\+::newdawn\+::slick\+::tiled\+::\+Layer@{org\+::newdawn\+::slick\+::tiled\+::\+Layer}!\mbox{[}static initializer\mbox{]}@{[static initializer]}}
+\index{\mbox{[}static initializer\mbox{]}@{[static initializer]}!org\+::newdawn\+::slick\+::tiled\+::\+Layer@{org\+::newdawn\+::slick\+::tiled\+::\+Layer}}
+\subsubsection{\texorpdfstring{[static initializer]()}{[static initializer]()}}
+{\footnotesize\ttfamily org.\+newdawn.\+slick.\+tiled.\+Layer.\mbox{[}static initializer\mbox{]} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}, {\ttfamily [package]}}
+
+Static initialiser for the codes created against Base64 \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_layer_af31e22c2a21a77e000afee8a40393019}\label{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_layer_af31e22c2a21a77e000afee8a40393019}} 
+\index{org\+::newdawn\+::slick\+::tiled\+::\+Layer@{org\+::newdawn\+::slick\+::tiled\+::\+Layer}!decode\+Base64@{decode\+Base64}}
+\index{decode\+Base64@{decode\+Base64}!org\+::newdawn\+::slick\+::tiled\+::\+Layer@{org\+::newdawn\+::slick\+::tiled\+::\+Layer}}
+\subsubsection{\texorpdfstring{decode\+Base64()}{decodeBase64()}}
+{\footnotesize\ttfamily byte \mbox{[}$\,$\mbox{]} org.\+newdawn.\+slick.\+tiled.\+Layer.\+decode\+Base64 (\begin{DoxyParamCaption}\item[{char \mbox{[}$\,$\mbox{]}}]{data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+Decode a Base64 string as encoded by Til\+ED
+
+
+\begin{DoxyParams}{Parameters}
+{\em data} & The string of character to decode \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The byte array represented by character encoding 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+251                                              \{
+252         \textcolor{keywordtype}{int} temp = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_layer_a9370f031c215f22f2b18135d8ca5cbc8}{data}}.length;
+253         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} ix = 0; ix < \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_layer_a9370f031c215f22f2b18135d8ca5cbc8}{data}}.length; ix++) \{
+254             \textcolor{keywordflow}{if} ((\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_layer_a9370f031c215f22f2b18135d8ca5cbc8}{data}}[ix] > 255) || \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_layer_a2e6c0049e12c85170c87ea9ef3b54779}{baseCodes}}[\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_layer_a9370f031c215f22f2b18135d8ca5cbc8}{data}}[ix]] < 0) \{
+255                 --temp;
+256             \}
+257         \}
+258 
+259         \textcolor{keywordtype}{int} len = (temp / 4) * 3;
+260         \textcolor{keywordflow}{if} ((temp % 4) == 3)
+261             len += 2;
+262         \textcolor{keywordflow}{if} ((temp % 4) == 2)
+263             len += 1;
+264 
+265         byte[] out = \textcolor{keyword}{new} byte[len];
+266 
+267         \textcolor{keywordtype}{int} shift = 0;
+268         \textcolor{keywordtype}{int} accum = 0;
+269         \textcolor{keywordtype}{int} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_layer_ab1bb4ba1300c8e2d08bdbcefa14ab60e}{index}} = 0;
+270 
+271         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} ix = 0; ix < \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_layer_a9370f031c215f22f2b18135d8ca5cbc8}{data}}.length; ix++) \{
+272             \textcolor{keywordtype}{int} value = (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_layer_a9370f031c215f22f2b18135d8ca5cbc8}{data}}[ix] > 255) ? -1 : \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_layer_a2e6c0049e12c85170c87ea9ef3b54779}{baseCodes}}[\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_layer_a9370f031c215f22f2b18135d8ca5cbc8}{data}}[ix]];
+273 
+274             \textcolor{keywordflow}{if} (value >= 0) \{
+275                 accum <<= 6;
+276                 shift += 6;
+277                 accum |= value;
+278                 \textcolor{keywordflow}{if} (shift >= 8) \{
+279                     shift -= 8;
+280                     out[\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_layer_ab1bb4ba1300c8e2d08bdbcefa14ab60e}{index}}++] = (byte) ((accum >> shift) & 0xff);
+281                 \}
+282             \}
+283         \}
+284 
+285         \textcolor{keywordflow}{if} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_layer_ab1bb4ba1300c8e2d08bdbcefa14ab60e}{index}} != out.length) \{
+286             \textcolor{keywordflow}{throw} \textcolor{keyword}{new} RuntimeException(
+287                     \textcolor{stringliteral}{"Data length appears to be wrong (wrote "} + \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_layer_ab1bb4ba1300c8e2d08bdbcefa14ab60e}{index}}
+288                             + \textcolor{stringliteral}{" should be "} + out.length + \textcolor{stringliteral}{")"});
+289         \}
+290 
+291         \textcolor{keywordflow}{return} out;
+292     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_layer_a3930aabf5f88cef45dad40439dc44f19}\label{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_layer_a3930aabf5f88cef45dad40439dc44f19}} 
+\index{org\+::newdawn\+::slick\+::tiled\+::\+Layer@{org\+::newdawn\+::slick\+::tiled\+::\+Layer}!get\+Tile\+ID@{get\+Tile\+ID}}
+\index{get\+Tile\+ID@{get\+Tile\+ID}!org\+::newdawn\+::slick\+::tiled\+::\+Layer@{org\+::newdawn\+::slick\+::tiled\+::\+Layer}}
+\subsubsection{\texorpdfstring{get\+Tile\+I\+D()}{getTileID()}}
+{\footnotesize\ttfamily int org.\+newdawn.\+slick.\+tiled.\+Layer.\+get\+Tile\+ID (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get the gloal ID of the tile at the specified location in this layer
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & The x coorindate of the tile \\
+\hline
+{\em y} & The y coorindate of the tile \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The global ID of the tile 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+147                                        \{
+148         \textcolor{keywordflow}{return} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_layer_a9370f031c215f22f2b18135d8ca5cbc8}{data}}[x][y][2];
+149     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_layer_a25e1b0f9ec38e79ca80defa8b05f9218}\label{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_layer_a25e1b0f9ec38e79ca80defa8b05f9218}} 
+\index{org\+::newdawn\+::slick\+::tiled\+::\+Layer@{org\+::newdawn\+::slick\+::tiled\+::\+Layer}!render@{render}}
+\index{render@{render}!org\+::newdawn\+::slick\+::tiled\+::\+Layer@{org\+::newdawn\+::slick\+::tiled\+::\+Layer}}
+\subsubsection{\texorpdfstring{render()}{render()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+tiled.\+Layer.\+render (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y,  }\item[{int}]{sx,  }\item[{int}]{sy,  }\item[{int}]{width,  }\item[{int}]{ty,  }\item[{boolean}]{line\+By\+Line,  }\item[{int}]{map\+Tile\+Width,  }\item[{int}]{map\+Tile\+Height }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Render a section of this layer
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & The x location to render at \\
+\hline
+{\em y} & The y location to render at \\
+\hline
+{\em sx} & The x tile location to start rendering \\
+\hline
+{\em sy} & The y tile location to start rendering \\
+\hline
+{\em width} & The number of tiles across to render \\
+\hline
+{\em ty} & The line of tiles to render \\
+\hline
+{\em line\+By\+Line} & True if we should render line by line, i.\+e. giving us a chance to render something else between lines \\
+\hline
+{\em map\+Tile\+Width} & the tile width specified in the map file \\
+\hline
+{\em map\+Tile\+Height} & the tile height specified in the map file \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+199                                                                      \{
+200         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} tileset = 0; tileset < \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_layer_ad6494d6da75ffb77cacdec8d38d74982}{map}}.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_a349e3cf63beff71c33ae39a451dff398}{getTileSetCount}}(); tileset++) \{
+201             TileSet \textcolor{keyword}{set} = null;
+202 
+203             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} tx = 0; tx < \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_layer_a901731d81cc624050ffefd1af9d09119}{width}}; tx++) \{
+204                 \textcolor{keywordflow}{if} ((sx + tx < 0) || (sy + ty < 0)) \{
+205                     \textcolor{keywordflow}{continue};
+206                 \}
+207                 \textcolor{keywordflow}{if} ((sx + tx >= this.width) || (sy + ty >= this.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_layer_acf0299abe971ba325493fd8031db08be}{height}})) \{
+208                     \textcolor{keywordflow}{continue};
+209                 \}
+210 
+211                 \textcolor{keywordflow}{if} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_layer_a9370f031c215f22f2b18135d8ca5cbc8}{data}}[sx + tx][sy + ty][0] == tileset) \{
+212                     \textcolor{keywordflow}{if} (\textcolor{keyword}{set} == null) \{
+213                         \textcolor{keyword}{set} = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_layer_ad6494d6da75ffb77cacdec8d38d74982}{map}}.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_a3a39c575b5073bbb6bef273d27b3e73a}{getTileSet}}(tileset);
+214                         \textcolor{keyword}{set}.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tile_set_aef351a8396d7a309b80115d07ebdbeed}{tiles}}.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_sprite_sheet_a71347c9175fad7bb725d5a4730a4e698}{startUse}}();
+215                     \}
+216 
+217                     \textcolor{keywordtype}{int} sheetX = \textcolor{keyword}{set}.getTileX(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_layer_a9370f031c215f22f2b18135d8ca5cbc8}{data}}[sx + tx][sy + ty][1]);
+218                     \textcolor{keywordtype}{int} sheetY = \textcolor{keyword}{set}.getTileY(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_layer_a9370f031c215f22f2b18135d8ca5cbc8}{data}}[sx + tx][sy + ty][1]);
+219 
+220                     \textcolor{keywordtype}{int} tileOffsetY = \textcolor{keyword}{set}.tileHeight - mapTileHeight;
+221 
+222                     \textcolor{comment}{// set.tiles.renderInUse(x+(tx*set.tileWidth),}
+223                     \textcolor{comment}{// y+(ty*set.tileHeight), sheetX, sheetY);}
+224                     \textcolor{keyword}{set}.tiles.renderInUse(x + (tx * mapTileWidth), y
+225                             + (ty * mapTileHeight) - tileOffsetY, sheetX,
+226                             sheetY);
+227                 \}
+228             \}
+229 
+230             \textcolor{keywordflow}{if} (lineByLine) \{
+231                 \textcolor{keywordflow}{if} (\textcolor{keyword}{set} != null) \{
+232                     \textcolor{keyword}{set}.tiles.endUse();
+233                     \textcolor{keyword}{set} = null;
+234                 \}
+235                 \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_layer_ad6494d6da75ffb77cacdec8d38d74982}{map}}.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_acf9160a21ea260cfce93e14567252781}{renderedLine}}(ty, ty + sy, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_layer_ab1bb4ba1300c8e2d08bdbcefa14ab60e}{index}});
+236             \}
+237 
+238             \textcolor{keywordflow}{if} (\textcolor{keyword}{set} != null) \{
+239                 \textcolor{keyword}{set}.tiles.endUse();
+240             \}
+241         \}
+242     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_layer_a8529c961c803882ae6be3ba7b49b995a}\label{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_layer_a8529c961c803882ae6be3ba7b49b995a}} 
+\index{org\+::newdawn\+::slick\+::tiled\+::\+Layer@{org\+::newdawn\+::slick\+::tiled\+::\+Layer}!set\+Tile\+ID@{set\+Tile\+ID}}
+\index{set\+Tile\+ID@{set\+Tile\+ID}!org\+::newdawn\+::slick\+::tiled\+::\+Layer@{org\+::newdawn\+::slick\+::tiled\+::\+Layer}}
+\subsubsection{\texorpdfstring{set\+Tile\+I\+D()}{setTileID()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+tiled.\+Layer.\+set\+Tile\+ID (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y,  }\item[{int}]{tile }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Set the global tile ID at a specified location
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & The x location to set \\
+\hline
+{\em y} & The y location to set \\
+\hline
+{\em tile} & The tile value to set \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+161                                                   \{
+162         \textcolor{keywordflow}{if} (tile == 0) \{
+163             \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_layer_a9370f031c215f22f2b18135d8ca5cbc8}{data}}[x][y][0] = -1;
+164             \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_layer_a9370f031c215f22f2b18135d8ca5cbc8}{data}}[x][y][1] = 0;
+165             \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_layer_a9370f031c215f22f2b18135d8ca5cbc8}{data}}[x][y][2] = 0;
+166         \} \textcolor{keywordflow}{else} \{
+167             TileSet \textcolor{keyword}{set} = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_layer_ad6494d6da75ffb77cacdec8d38d74982}{map}}.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_a136e9d5ff92016dcfaf8effa027147a2}{findTileSet}}(tile);
+168 
+169             \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_layer_a9370f031c215f22f2b18135d8ca5cbc8}{data}}[x][y][0] = \textcolor{keyword}{set}.index;
+170             \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_layer_a9370f031c215f22f2b18135d8ca5cbc8}{data}}[x][y][1] = tile - \textcolor{keyword}{set}.firstGID;
+171             \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_layer_a9370f031c215f22f2b18135d8ca5cbc8}{data}}[x][y][2] = tile;
+172         \}
+173     \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_layer_a2e6c0049e12c85170c87ea9ef3b54779}\label{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_layer_a2e6c0049e12c85170c87ea9ef3b54779}} 
+\index{org\+::newdawn\+::slick\+::tiled\+::\+Layer@{org\+::newdawn\+::slick\+::tiled\+::\+Layer}!base\+Codes@{base\+Codes}}
+\index{base\+Codes@{base\+Codes}!org\+::newdawn\+::slick\+::tiled\+::\+Layer@{org\+::newdawn\+::slick\+::tiled\+::\+Layer}}
+\subsubsection{\texorpdfstring{base\+Codes}{baseCodes}}
+{\footnotesize\ttfamily byte \mbox{[}$\,$\mbox{]} org.\+newdawn.\+slick.\+tiled.\+Layer.\+base\+Codes = new byte\mbox{[}256\mbox{]}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+The code used to decode Base64 encoding \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_layer_a9370f031c215f22f2b18135d8ca5cbc8}\label{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_layer_a9370f031c215f22f2b18135d8ca5cbc8}} 
+\index{org\+::newdawn\+::slick\+::tiled\+::\+Layer@{org\+::newdawn\+::slick\+::tiled\+::\+Layer}!data@{data}}
+\index{data@{data}!org\+::newdawn\+::slick\+::tiled\+::\+Layer@{org\+::newdawn\+::slick\+::tiled\+::\+Layer}}
+\subsubsection{\texorpdfstring{data}{data}}
+{\footnotesize\ttfamily int \mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} org.\+newdawn.\+slick.\+tiled.\+Layer.\+data}
+
+The tile data representing this data, index 0 = tileset, index 1 = tile id \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_layer_acf0299abe971ba325493fd8031db08be}\label{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_layer_acf0299abe971ba325493fd8031db08be}} 
+\index{org\+::newdawn\+::slick\+::tiled\+::\+Layer@{org\+::newdawn\+::slick\+::tiled\+::\+Layer}!height@{height}}
+\index{height@{height}!org\+::newdawn\+::slick\+::tiled\+::\+Layer@{org\+::newdawn\+::slick\+::tiled\+::\+Layer}}
+\subsubsection{\texorpdfstring{height}{height}}
+{\footnotesize\ttfamily int org.\+newdawn.\+slick.\+tiled.\+Layer.\+height}
+
+The height of this layer \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_layer_ab1bb4ba1300c8e2d08bdbcefa14ab60e}\label{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_layer_ab1bb4ba1300c8e2d08bdbcefa14ab60e}} 
+\index{org\+::newdawn\+::slick\+::tiled\+::\+Layer@{org\+::newdawn\+::slick\+::tiled\+::\+Layer}!index@{index}}
+\index{index@{index}!org\+::newdawn\+::slick\+::tiled\+::\+Layer@{org\+::newdawn\+::slick\+::tiled\+::\+Layer}}
+\subsubsection{\texorpdfstring{index}{index}}
+{\footnotesize\ttfamily int org.\+newdawn.\+slick.\+tiled.\+Layer.\+index}
+
+The index of this layer \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_layer_ad6494d6da75ffb77cacdec8d38d74982}\label{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_layer_ad6494d6da75ffb77cacdec8d38d74982}} 
+\index{org\+::newdawn\+::slick\+::tiled\+::\+Layer@{org\+::newdawn\+::slick\+::tiled\+::\+Layer}!map@{map}}
+\index{map@{map}!org\+::newdawn\+::slick\+::tiled\+::\+Layer@{org\+::newdawn\+::slick\+::tiled\+::\+Layer}}
+\subsubsection{\texorpdfstring{map}{map}}
+{\footnotesize\ttfamily final \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map}{Tiled\+Map}} org.\+newdawn.\+slick.\+tiled.\+Layer.\+map\hspace{0.3cm}{\ttfamily [private]}}
+
+The map this layer belongs to \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_layer_a0792a70cf99a57c1a2a3042ead9b7873}\label{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_layer_a0792a70cf99a57c1a2a3042ead9b7873}} 
+\index{org\+::newdawn\+::slick\+::tiled\+::\+Layer@{org\+::newdawn\+::slick\+::tiled\+::\+Layer}!name@{name}}
+\index{name@{name}!org\+::newdawn\+::slick\+::tiled\+::\+Layer@{org\+::newdawn\+::slick\+::tiled\+::\+Layer}}
+\subsubsection{\texorpdfstring{name}{name}}
+{\footnotesize\ttfamily String org.\+newdawn.\+slick.\+tiled.\+Layer.\+name}
+
+The name of this layer -\/ read from the X\+ML \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_layer_a457f0627d1e59eb8fdcd273f958d5759}\label{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_layer_a457f0627d1e59eb8fdcd273f958d5759}} 
+\index{org\+::newdawn\+::slick\+::tiled\+::\+Layer@{org\+::newdawn\+::slick\+::tiled\+::\+Layer}!props@{props}}
+\index{props@{props}!org\+::newdawn\+::slick\+::tiled\+::\+Layer@{org\+::newdawn\+::slick\+::tiled\+::\+Layer}}
+\subsubsection{\texorpdfstring{props}{props}}
+{\footnotesize\ttfamily Properties org.\+newdawn.\+slick.\+tiled.\+Layer.\+props}
+
+the properties of this layer \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_layer_a901731d81cc624050ffefd1af9d09119}\label{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_layer_a901731d81cc624050ffefd1af9d09119}} 
+\index{org\+::newdawn\+::slick\+::tiled\+::\+Layer@{org\+::newdawn\+::slick\+::tiled\+::\+Layer}!width@{width}}
+\index{width@{width}!org\+::newdawn\+::slick\+::tiled\+::\+Layer@{org\+::newdawn\+::slick\+::tiled\+::\+Layer}}
+\subsubsection{\texorpdfstring{width}{width}}
+{\footnotesize\ttfamily int org.\+newdawn.\+slick.\+tiled.\+Layer.\+width}
+
+The width of this layer 

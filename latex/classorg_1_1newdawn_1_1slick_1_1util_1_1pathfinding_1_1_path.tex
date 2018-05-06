@@ -1,0 +1,231 @@
+\hypertarget{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_path}{}\section{org.\+newdawn.\+slick.\+util.\+pathfinding.\+Path Class Reference}
+\label{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_path}\index{org.\+newdawn.\+slick.\+util.\+pathfinding.\+Path@{org.\+newdawn.\+slick.\+util.\+pathfinding.\+Path}}
+Inheritance diagram for org.\+newdawn.\+slick.\+util.\+pathfinding.\+Path\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_path}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_path_1_1_step}{Step}}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_path_a3c986d4c312a5f30a37763a0b757bdd1}{Path}} ()
+\item 
+int \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_path_a6aa805d1ba541d0136586273e1e68b2a}{get\+Length}} ()
+\item 
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_path_1_1_step}{Step}} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_path_acc362a056f4565a8eec1361266eac671}{get\+Step}} (int index)
+\item 
+int \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_path_a87c7bbf87033a3481744cf8a65307ef7}{getX}} (int index)
+\item 
+int \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_path_ae3dc411882e33d0d196173964e938f81}{getY}} (int index)
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_path_ad78d2c2efdbe0353192021b46fbb782e}{append\+Step}} (int x, int y)
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_path_ae8736f56aa7a12a793c8ac8c51a77f70}{prepend\+Step}} (int x, int y)
+\item 
+boolean \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_path_a74af06518bbc01b02caa8ffa2acc7edb}{contains}} (int x, int y)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Array\+List \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_path_ac2472e1febece895b3e77854043fb4ad}{steps}} = new Array\+List()
+\end{DoxyCompactItemize}
+\subsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static final long \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_path_a11534240eff7a163acf2c36a563af4e8}{serial\+Version\+U\+ID}} = 1L
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A path determined by some path finding algorithm. A series of steps from the starting location to the target location. This includes a step for the initial location.
+
+\begin{DoxyAuthor}{Author}
+Kevin Glass 
+\end{DoxyAuthor}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_path_a3c986d4c312a5f30a37763a0b757bdd1}\label{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_path_a3c986d4c312a5f30a37763a0b757bdd1}} 
+\index{org\+::newdawn\+::slick\+::util\+::pathfinding\+::\+Path@{org\+::newdawn\+::slick\+::util\+::pathfinding\+::\+Path}!Path@{Path}}
+\index{Path@{Path}!org\+::newdawn\+::slick\+::util\+::pathfinding\+::\+Path@{org\+::newdawn\+::slick\+::util\+::pathfinding\+::\+Path}}
+\subsubsection{\texorpdfstring{Path()}{Path()}}
+{\footnotesize\ttfamily org.\+newdawn.\+slick.\+util.\+pathfinding.\+Path.\+Path (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Create an empty path 
+\begin{DoxyCode}
+23                   \{
+24         
+25     \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_path_ad78d2c2efdbe0353192021b46fbb782e}\label{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_path_ad78d2c2efdbe0353192021b46fbb782e}} 
+\index{org\+::newdawn\+::slick\+::util\+::pathfinding\+::\+Path@{org\+::newdawn\+::slick\+::util\+::pathfinding\+::\+Path}!append\+Step@{append\+Step}}
+\index{append\+Step@{append\+Step}!org\+::newdawn\+::slick\+::util\+::pathfinding\+::\+Path@{org\+::newdawn\+::slick\+::util\+::pathfinding\+::\+Path}}
+\subsubsection{\texorpdfstring{append\+Step()}{appendStep()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+util.\+pathfinding.\+Path.\+append\+Step (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Append a step to the path. ~\newline
+ 
+\begin{DoxyParams}{Parameters}
+{\em x} & The x coordinate of the new step \\
+\hline
+{\em y} & The y coordinate of the new step \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+73                                          \{
+74         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_path_ac2472e1febece895b3e77854043fb4ad}{steps}}.add(\textcolor{keyword}{new} Step(x,y));
+75     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_path_a74af06518bbc01b02caa8ffa2acc7edb}\label{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_path_a74af06518bbc01b02caa8ffa2acc7edb}} 
+\index{org\+::newdawn\+::slick\+::util\+::pathfinding\+::\+Path@{org\+::newdawn\+::slick\+::util\+::pathfinding\+::\+Path}!contains@{contains}}
+\index{contains@{contains}!org\+::newdawn\+::slick\+::util\+::pathfinding\+::\+Path@{org\+::newdawn\+::slick\+::util\+::pathfinding\+::\+Path}}
+\subsubsection{\texorpdfstring{contains()}{contains()}}
+{\footnotesize\ttfamily boolean org.\+newdawn.\+slick.\+util.\+pathfinding.\+Path.\+contains (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Check if this path contains the given step
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & The x coordinate of the step to check for \\
+\hline
+{\em y} & The y coordinate of the step to check for \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the path contains the given step 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+94                                           \{
+95         \textcolor{keywordflow}{return} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_path_ac2472e1febece895b3e77854043fb4ad}{steps}}.contains(\textcolor{keyword}{new} Step(x,y));
+96     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_path_a6aa805d1ba541d0136586273e1e68b2a}\label{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_path_a6aa805d1ba541d0136586273e1e68b2a}} 
+\index{org\+::newdawn\+::slick\+::util\+::pathfinding\+::\+Path@{org\+::newdawn\+::slick\+::util\+::pathfinding\+::\+Path}!get\+Length@{get\+Length}}
+\index{get\+Length@{get\+Length}!org\+::newdawn\+::slick\+::util\+::pathfinding\+::\+Path@{org\+::newdawn\+::slick\+::util\+::pathfinding\+::\+Path}}
+\subsubsection{\texorpdfstring{get\+Length()}{getLength()}}
+{\footnotesize\ttfamily int org.\+newdawn.\+slick.\+util.\+pathfinding.\+Path.\+get\+Length (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get the length of the path, i.\+e. the number of steps
+
+\begin{DoxyReturn}{Returns}
+The number of steps in this path 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+32                            \{
+33         \textcolor{keywordflow}{return} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_path_ac2472e1febece895b3e77854043fb4ad}{steps}}.size();
+34     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_path_acc362a056f4565a8eec1361266eac671}\label{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_path_acc362a056f4565a8eec1361266eac671}} 
+\index{org\+::newdawn\+::slick\+::util\+::pathfinding\+::\+Path@{org\+::newdawn\+::slick\+::util\+::pathfinding\+::\+Path}!get\+Step@{get\+Step}}
+\index{get\+Step@{get\+Step}!org\+::newdawn\+::slick\+::util\+::pathfinding\+::\+Path@{org\+::newdawn\+::slick\+::util\+::pathfinding\+::\+Path}}
+\subsubsection{\texorpdfstring{get\+Step()}{getStep()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_path_1_1_step}{Step}} org.\+newdawn.\+slick.\+util.\+pathfinding.\+Path.\+get\+Step (\begin{DoxyParamCaption}\item[{int}]{index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get the step at a given index in the path
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & The index of the step to retrieve. Note this should be $>$= 0 and $<$ \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_path_a6aa805d1ba541d0136586273e1e68b2a}{get\+Length()}}; \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The step information, the position on the map. 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+43                                    \{
+44         \textcolor{keywordflow}{return} (Step) \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_path_ac2472e1febece895b3e77854043fb4ad}{steps}}.get(index);
+45     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_path_a87c7bbf87033a3481744cf8a65307ef7}\label{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_path_a87c7bbf87033a3481744cf8a65307ef7}} 
+\index{org\+::newdawn\+::slick\+::util\+::pathfinding\+::\+Path@{org\+::newdawn\+::slick\+::util\+::pathfinding\+::\+Path}!getX@{getX}}
+\index{getX@{getX}!org\+::newdawn\+::slick\+::util\+::pathfinding\+::\+Path@{org\+::newdawn\+::slick\+::util\+::pathfinding\+::\+Path}}
+\subsubsection{\texorpdfstring{get\+X()}{getX()}}
+{\footnotesize\ttfamily int org.\+newdawn.\+slick.\+util.\+pathfinding.\+Path.\+getX (\begin{DoxyParamCaption}\item[{int}]{index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get the x coordinate for the step at the given index
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & The index of the step whose x coordinate should be retrieved \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The x coordinate at the step 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+53                                \{
+54         \textcolor{keywordflow}{return} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_path_acc362a056f4565a8eec1361266eac671}{getStep}}(index).\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_path_1_1_step_a6764404c2d713db22efbeb2ec33cbdc1}{x}};
+55     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_path_ae3dc411882e33d0d196173964e938f81}\label{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_path_ae3dc411882e33d0d196173964e938f81}} 
+\index{org\+::newdawn\+::slick\+::util\+::pathfinding\+::\+Path@{org\+::newdawn\+::slick\+::util\+::pathfinding\+::\+Path}!getY@{getY}}
+\index{getY@{getY}!org\+::newdawn\+::slick\+::util\+::pathfinding\+::\+Path@{org\+::newdawn\+::slick\+::util\+::pathfinding\+::\+Path}}
+\subsubsection{\texorpdfstring{get\+Y()}{getY()}}
+{\footnotesize\ttfamily int org.\+newdawn.\+slick.\+util.\+pathfinding.\+Path.\+getY (\begin{DoxyParamCaption}\item[{int}]{index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get the y coordinate for the step at the given index
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & The index of the step whose y coordinate should be retrieved \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The y coordinate at the step 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+63                                \{
+64         \textcolor{keywordflow}{return} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_path_acc362a056f4565a8eec1361266eac671}{getStep}}(index).\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_path_1_1_step_ae77364516b69d2b5ed5ed550413c05e9}{y}};
+65     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_path_ae8736f56aa7a12a793c8ac8c51a77f70}\label{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_path_ae8736f56aa7a12a793c8ac8c51a77f70}} 
+\index{org\+::newdawn\+::slick\+::util\+::pathfinding\+::\+Path@{org\+::newdawn\+::slick\+::util\+::pathfinding\+::\+Path}!prepend\+Step@{prepend\+Step}}
+\index{prepend\+Step@{prepend\+Step}!org\+::newdawn\+::slick\+::util\+::pathfinding\+::\+Path@{org\+::newdawn\+::slick\+::util\+::pathfinding\+::\+Path}}
+\subsubsection{\texorpdfstring{prepend\+Step()}{prependStep()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+util.\+pathfinding.\+Path.\+prepend\+Step (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Prepend a step to the path. ~\newline
+ 
+\begin{DoxyParams}{Parameters}
+{\em x} & The x coordinate of the new step \\
+\hline
+{\em y} & The y coordinate of the new step \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+83                                           \{
+84         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_path_ac2472e1febece895b3e77854043fb4ad}{steps}}.add(0, \textcolor{keyword}{new} Step(x, y));
+85     \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_path_a11534240eff7a163acf2c36a563af4e8}\label{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_path_a11534240eff7a163acf2c36a563af4e8}} 
+\index{org\+::newdawn\+::slick\+::util\+::pathfinding\+::\+Path@{org\+::newdawn\+::slick\+::util\+::pathfinding\+::\+Path}!serial\+Version\+U\+ID@{serial\+Version\+U\+ID}}
+\index{serial\+Version\+U\+ID@{serial\+Version\+U\+ID}!org\+::newdawn\+::slick\+::util\+::pathfinding\+::\+Path@{org\+::newdawn\+::slick\+::util\+::pathfinding\+::\+Path}}
+\subsubsection{\texorpdfstring{serial\+Version\+U\+ID}{serialVersionUID}}
+{\footnotesize\ttfamily final long org.\+newdawn.\+slick.\+util.\+pathfinding.\+Path.\+serial\+Version\+U\+ID = 1L\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+The serial identifier for this class \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_path_ac2472e1febece895b3e77854043fb4ad}\label{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_path_ac2472e1febece895b3e77854043fb4ad}} 
+\index{org\+::newdawn\+::slick\+::util\+::pathfinding\+::\+Path@{org\+::newdawn\+::slick\+::util\+::pathfinding\+::\+Path}!steps@{steps}}
+\index{steps@{steps}!org\+::newdawn\+::slick\+::util\+::pathfinding\+::\+Path@{org\+::newdawn\+::slick\+::util\+::pathfinding\+::\+Path}}
+\subsubsection{\texorpdfstring{steps}{steps}}
+{\footnotesize\ttfamily Array\+List org.\+newdawn.\+slick.\+util.\+pathfinding.\+Path.\+steps = new Array\+List()\hspace{0.3cm}{\ttfamily [private]}}
+
+The list of steps building up this path 

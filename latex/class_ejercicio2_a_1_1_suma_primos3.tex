@@ -1,0 +1,44 @@
+\hypertarget{class_ejercicio2_a_1_1_suma_primos3}{}\section{Ejercicio2\+A.\+Suma\+Primos3 Class Reference}
+\label{class_ejercicio2_a_1_1_suma_primos3}\index{Ejercicio2\+A.\+Suma\+Primos3@{Ejercicio2\+A.\+Suma\+Primos3}}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{class_ejercicio2_a_1_1_suma_primos3_aadf88bb0e79fc994faddd9247ba27ae5}{main}} (String\mbox{[}$\,$\mbox{]} x)
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_ejercicio2_a_1_1_suma_primos3_aadf88bb0e79fc994faddd9247ba27ae5}\label{class_ejercicio2_a_1_1_suma_primos3_aadf88bb0e79fc994faddd9247ba27ae5}} 
+\index{Ejercicio2\+A\+::\+Suma\+Primos3@{Ejercicio2\+A\+::\+Suma\+Primos3}!main@{main}}
+\index{main@{main}!Ejercicio2\+A\+::\+Suma\+Primos3@{Ejercicio2\+A\+::\+Suma\+Primos3}}
+\subsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily static void Ejercicio2\+A.\+Suma\+Primos3.\+main (\begin{DoxyParamCaption}\item[{String \mbox{[}$\,$\mbox{]}}]{x }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+\begin{DoxyCode}
+15     \{      
+16         Resultado \mbox{\hyperlink{namespacesuma}{suma}} = \textcolor{keyword}{new} Resultado();
+17         \textcolor{keywordtype}{long} t0 = (\textcolor{keyword}{new} Date()).getTime(); \textcolor{comment}{//t0=instante de inicio de los cálculos}
+18         Calculador p1 = \textcolor{keyword}{new} Calculador(1,2000000,\mbox{\hyperlink{namespacesuma}{suma}});
+19         Calculador p2 = \textcolor{keyword}{new} Calculador(2000001,4000000,\mbox{\hyperlink{namespacesuma}{suma}});
+20         Calculador p3 = \textcolor{keyword}{new} Calculador(4000001,6000000,\mbox{\hyperlink{namespacesuma}{suma}});
+21         Calculador p4 = \textcolor{keyword}{new} Calculador(6000001,8000000,\mbox{\hyperlink{namespacesuma}{suma}});
+22         Calculador p5 = \textcolor{keyword}{new} Calculador(8000001,10000000,\mbox{\hyperlink{namespacesuma}{suma}});
+23         p1.start();
+24         p2.start();
+25         p3.start();
+26         p4.start();
+27         p5.start();
+28         \textcolor{keywordflow}{try}
+29         \{
+30             p1.join();
+31             p2.join();
+32             p3.join();
+33             p4.join();
+34             p5.join(); \textcolor{comment}{//esperamos a que terminen todos}
+35         \} \textcolor{keywordflow}{catch} (InterruptedException e)\{\}
+36         \textcolor{keywordtype}{long} t1 = (\textcolor{keyword}{new} Date()).getTime(); \textcolor{comment}{//t1=instante de final de los cálculos}
+37         System.out.println(\textcolor{stringliteral}{"La suma de los números primos hasta 10000000 es: "}+
+      \mbox{\hyperlink{namespacesuma}{suma}}.getSuma()+\textcolor{stringliteral}{" calculado en "}+(t1-t0)+\textcolor{stringliteral}{" miliseg."});
+38     \}
+\end{DoxyCode}

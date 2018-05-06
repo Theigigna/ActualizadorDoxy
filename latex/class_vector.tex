@@ -1,0 +1,166 @@
+\hypertarget{class_vector}{}\section{Vector Class Reference}
+\label{class_vector}\index{Vector@{Vector}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_vector_aff16a046f1232ec3c1e00f6b01e2e48c}{Vector}} (\mbox{\hyperlink{class_coordenadas}{Coordenadas}} \mbox{\hyperlink{class_vector_a3c83b7dd875429ec0bb3a799d928bc47}{origen}}, \mbox{\hyperlink{class_coordenadas}{Coordenadas}} \mbox{\hyperlink{class_vector_af0a20e915c3efce53463578d8e73948e}{destino}})
+\item 
+\mbox{\hyperlink{class_vector_ae4d8991b3f3cac54955a6fc0dcad9550}{Vector}} (\mbox{\hyperlink{class_coordenadas}{Coordenadas}} \mbox{\hyperlink{class_vector_af0a20e915c3efce53463578d8e73948e}{destino}})
+\item 
+\mbox{\hyperlink{class_coordenadas}{Coordenadas}} \mbox{\hyperlink{class_vector_a27cc1a78b33cfa545f94d24ad0120c1d}{get\+Origen}} ()
+\item 
+\mbox{\hyperlink{class_coordenadas}{Coordenadas}} \mbox{\hyperlink{class_vector_ae6c100e98564be0a47f1c755948eba0a}{get\+Destino}} ()
+\item 
+void \mbox{\hyperlink{class_vector_a3ed415ef492b294d7ed8cf66f76a8b67}{set\+Origen}} (\mbox{\hyperlink{class_coordenadas}{Coordenadas}} \mbox{\hyperlink{class_vector_a3c83b7dd875429ec0bb3a799d928bc47}{origen}})
+\item 
+void \mbox{\hyperlink{class_vector_acc3b5049ab01e2a6c7922c12347eb0cb}{set\+Destino}} (\mbox{\hyperlink{class_coordenadas}{Coordenadas}} \mbox{\hyperlink{class_vector_af0a20e915c3efce53463578d8e73948e}{destino}})
+\item 
+float \mbox{\hyperlink{class_vector_a3d9de615137bc20dd4f1d6aa8fefa167}{getX}} ()
+\item 
+float \mbox{\hyperlink{class_vector_ac862d32aed23f8ca72176940f76dc1f9}{getY}} ()
+\item 
+float \mbox{\hyperlink{class_vector_aadab8c5ce31cc4244e8ca06c13bc0b95}{get\+Modulo}} ()
+\end{DoxyCompactItemize}
+\subsection*{Package Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_coordenadas}{Coordenadas}} \mbox{\hyperlink{class_vector_af0a20e915c3efce53463578d8e73948e}{destino}}
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_coordenadas}{Coordenadas}} \mbox{\hyperlink{class_vector_a3c83b7dd875429ec0bb3a799d928bc47}{origen}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_vector_aff16a046f1232ec3c1e00f6b01e2e48c}\label{class_vector_aff16a046f1232ec3c1e00f6b01e2e48c}} 
+\index{Vector@{Vector}!Vector@{Vector}}
+\index{Vector@{Vector}!Vector@{Vector}}
+\subsubsection{\texorpdfstring{Vector()}{Vector()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Vector.\+Vector (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_coordenadas}{Coordenadas}}}]{origen,  }\item[{\mbox{\hyperlink{class_coordenadas}{Coordenadas}}}]{destino }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+6                                                            \{
+7         super();
+8         this.origen = \mbox{\hyperlink{class_vector_a3c83b7dd875429ec0bb3a799d928bc47}{origen}};
+9         this.destino = \mbox{\hyperlink{class_vector_af0a20e915c3efce53463578d8e73948e}{destino}};
+10     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_vector_ae4d8991b3f3cac54955a6fc0dcad9550}\label{class_vector_ae4d8991b3f3cac54955a6fc0dcad9550}} 
+\index{Vector@{Vector}!Vector@{Vector}}
+\index{Vector@{Vector}!Vector@{Vector}}
+\subsubsection{\texorpdfstring{Vector()}{Vector()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Vector.\+Vector (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_coordenadas}{Coordenadas}}}]{destino }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+12                                       \{
+13         \textcolor{keyword}{this}(\textcolor{keyword}{new} \mbox{\hyperlink{class_coordenadas}{Coordenadas}}(0, 0), \mbox{\hyperlink{class_vector_af0a20e915c3efce53463578d8e73948e}{destino}});
+14     \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_vector_ae6c100e98564be0a47f1c755948eba0a}\label{class_vector_ae6c100e98564be0a47f1c755948eba0a}} 
+\index{Vector@{Vector}!get\+Destino@{get\+Destino}}
+\index{get\+Destino@{get\+Destino}!Vector@{Vector}}
+\subsubsection{\texorpdfstring{get\+Destino()}{getDestino()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_coordenadas}{Coordenadas}} Vector.\+get\+Destino (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+20                                     \{
+21         \textcolor{keywordflow}{return} \mbox{\hyperlink{class_vector_af0a20e915c3efce53463578d8e73948e}{destino}};
+22     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_vector_aadab8c5ce31cc4244e8ca06c13bc0b95}\label{class_vector_aadab8c5ce31cc4244e8ca06c13bc0b95}} 
+\index{Vector@{Vector}!get\+Modulo@{get\+Modulo}}
+\index{get\+Modulo@{get\+Modulo}!Vector@{Vector}}
+\subsubsection{\texorpdfstring{get\+Modulo()}{getModulo()}}
+{\footnotesize\ttfamily float Vector.\+get\+Modulo (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+40                             \{
+41         \textcolor{keywordtype}{double} x = (double) this.\mbox{\hyperlink{class_vector_a3d9de615137bc20dd4f1d6aa8fefa167}{getX}}();
+42         \textcolor{keywordtype}{double} y = (double) this.\mbox{\hyperlink{class_vector_ac862d32aed23f8ca72176940f76dc1f9}{getY}}();
+43         \textcolor{keywordflow}{return} (\textcolor{keywordtype}{float}) Math.sqrt(x*x + y*y);
+44     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_vector_a27cc1a78b33cfa545f94d24ad0120c1d}\label{class_vector_a27cc1a78b33cfa545f94d24ad0120c1d}} 
+\index{Vector@{Vector}!get\+Origen@{get\+Origen}}
+\index{get\+Origen@{get\+Origen}!Vector@{Vector}}
+\subsubsection{\texorpdfstring{get\+Origen()}{getOrigen()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_coordenadas}{Coordenadas}} Vector.\+get\+Origen (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+16                                    \{
+17         \textcolor{keywordflow}{return} \mbox{\hyperlink{class_vector_a3c83b7dd875429ec0bb3a799d928bc47}{origen}};
+18     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_vector_a3d9de615137bc20dd4f1d6aa8fefa167}\label{class_vector_a3d9de615137bc20dd4f1d6aa8fefa167}} 
+\index{Vector@{Vector}!getX@{getX}}
+\index{getX@{getX}!Vector@{Vector}}
+\subsubsection{\texorpdfstring{get\+X()}{getX()}}
+{\footnotesize\ttfamily float Vector.\+getX (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+32                        \{
+33         \textcolor{keywordflow}{return} \mbox{\hyperlink{class_vector_af0a20e915c3efce53463578d8e73948e}{destino}}.\mbox{\hyperlink{class_coordenadas_a7b3fc725f9146220813dc0084fecc3ca}{getX}}() - \mbox{\hyperlink{class_vector_a3c83b7dd875429ec0bb3a799d928bc47}{origen}}.\mbox{\hyperlink{class_coordenadas_a7b3fc725f9146220813dc0084fecc3ca}{getX}}();
+34     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_vector_ac862d32aed23f8ca72176940f76dc1f9}\label{class_vector_ac862d32aed23f8ca72176940f76dc1f9}} 
+\index{Vector@{Vector}!getY@{getY}}
+\index{getY@{getY}!Vector@{Vector}}
+\subsubsection{\texorpdfstring{get\+Y()}{getY()}}
+{\footnotesize\ttfamily float Vector.\+getY (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+36                        \{
+37         \textcolor{keywordflow}{return} \mbox{\hyperlink{class_vector_af0a20e915c3efce53463578d8e73948e}{destino}}.\mbox{\hyperlink{class_coordenadas_aa10f46c8c62df3db3a05d4550f20b197}{getY}}() - \mbox{\hyperlink{class_vector_a3c83b7dd875429ec0bb3a799d928bc47}{origen}}.\mbox{\hyperlink{class_coordenadas_aa10f46c8c62df3db3a05d4550f20b197}{getY}}();
+38     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_vector_acc3b5049ab01e2a6c7922c12347eb0cb}\label{class_vector_acc3b5049ab01e2a6c7922c12347eb0cb}} 
+\index{Vector@{Vector}!set\+Destino@{set\+Destino}}
+\index{set\+Destino@{set\+Destino}!Vector@{Vector}}
+\subsubsection{\texorpdfstring{set\+Destino()}{setDestino()}}
+{\footnotesize\ttfamily void Vector.\+set\+Destino (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_coordenadas}{Coordenadas}}}]{destino }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+28                                                 \{
+29         this.destino = \mbox{\hyperlink{class_vector_af0a20e915c3efce53463578d8e73948e}{destino}};
+30     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_vector_a3ed415ef492b294d7ed8cf66f76a8b67}\label{class_vector_a3ed415ef492b294d7ed8cf66f76a8b67}} 
+\index{Vector@{Vector}!set\+Origen@{set\+Origen}}
+\index{set\+Origen@{set\+Origen}!Vector@{Vector}}
+\subsubsection{\texorpdfstring{set\+Origen()}{setOrigen()}}
+{\footnotesize\ttfamily void Vector.\+set\+Origen (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_coordenadas}{Coordenadas}}}]{origen }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+24                                               \{
+25         this.origen = \mbox{\hyperlink{class_vector_a3c83b7dd875429ec0bb3a799d928bc47}{origen}};
+26     \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_vector_af0a20e915c3efce53463578d8e73948e}\label{class_vector_af0a20e915c3efce53463578d8e73948e}} 
+\index{Vector@{Vector}!destino@{destino}}
+\index{destino@{destino}!Vector@{Vector}}
+\subsubsection{\texorpdfstring{destino}{destino}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_coordenadas}{Coordenadas}} Vector.\+destino\hspace{0.3cm}{\ttfamily [package]}}
+
+\mbox{\Hypertarget{class_vector_a3c83b7dd875429ec0bb3a799d928bc47}\label{class_vector_a3c83b7dd875429ec0bb3a799d928bc47}} 
+\index{Vector@{Vector}!origen@{origen}}
+\index{origen@{origen}!Vector@{Vector}}
+\subsubsection{\texorpdfstring{origen}{origen}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_coordenadas}{Coordenadas}} Vector.\+origen\hspace{0.3cm}{\ttfamily [private]}}
+

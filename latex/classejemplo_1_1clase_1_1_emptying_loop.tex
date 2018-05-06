@@ -1,0 +1,43 @@
+\hypertarget{classejemplo_1_1clase_1_1_emptying_loop}{}\section{ejemplo.\+clase.\+Emptying\+Loop Class Reference}
+\label{classejemplo_1_1clase_1_1_emptying_loop}\index{ejemplo.\+clase.\+Emptying\+Loop@{ejemplo.\+clase.\+Emptying\+Loop}}
+Inheritance diagram for ejemplo.\+clase.\+Emptying\+Loop\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classejemplo_1_1clase_1_1_emptying_loop}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classejemplo_1_1clase_1_1_emptying_loop_aa09be232e3626b42753cb521b8aa70e8}{run}} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyAuthor}{Author}
+Ignacio 
+\end{DoxyAuthor}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classejemplo_1_1clase_1_1_emptying_loop_aa09be232e3626b42753cb521b8aa70e8}\label{classejemplo_1_1clase_1_1_emptying_loop_aa09be232e3626b42753cb521b8aa70e8}} 
+\index{ejemplo\+::clase\+::\+Emptying\+Loop@{ejemplo\+::clase\+::\+Emptying\+Loop}!run@{run}}
+\index{run@{run}!ejemplo\+::clase\+::\+Emptying\+Loop@{ejemplo\+::clase\+::\+Emptying\+Loop}}
+\subsubsection{\texorpdfstring{run()}{run()}}
+{\footnotesize\ttfamily void ejemplo.\+clase.\+Emptying\+Loop.\+run (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+14                    \{
+15  DataBuffer curBuffer = initialFullBuffer;
+16  \textcolor{keywordflow}{try} \{
+17  \textcolor{keywordflow}{while} (curBuffer != null) \{
+18  takeFromBuffer(curBuffer);
+19  \textcolor{keywordflow}{if} (curBuffer.empty())
+20  curBuffer = exch.exchange
+21 (curBuffer);
+22  \}
+23  \}
+24  \textcolor{keywordflow}{catch} (InterruptedException ex) \{ ... handle ...\}
+25  \}
+\end{DoxyCode}

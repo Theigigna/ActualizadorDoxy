@@ -1,0 +1,257 @@
+\hypertarget{classorg_1_1newdawn_1_1slick_1_1_applet_game_container}{}\section{org.\+newdawn.\+slick.\+Applet\+Game\+Container Class Reference}
+\label{classorg_1_1newdawn_1_1slick_1_1_applet_game_container}\index{org.\+newdawn.\+slick.\+Applet\+Game\+Container@{org.\+newdawn.\+slick.\+Applet\+Game\+Container}}
+Inheritance diagram for org.\+newdawn.\+slick.\+Applet\+Game\+Container\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classorg_1_1newdawn_1_1slick_1_1_applet_game_container}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_applet_game_container_1_1_console_panel}{Console\+Panel}}
+\item 
+class \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_applet_game_container_1_1_container}{Container}}
+\item 
+class \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_applet_game_container_1_1_container_panel}{Container\+Panel}}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_applet_game_container_aa7a9fa819a8255d5b902f9e941d31491}{destroy}} ()
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_applet_game_container_a4eaf8c9a006d8877050863c07da85c3f}{start}} ()
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_applet_game_container_af95e36a2d15fa8475f93483776eb2fe3}{start\+L\+W\+J\+GL}} ()
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_applet_game_container_ad376fb700e65999dafc33171e4334560}{stop}} ()
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_applet_game_container_ae10d7b8c504322bcbf04333382230df1}{init}} ()
+\item 
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_game_container}{Game\+Container}} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_applet_game_container_aab420b4026d156dcfb6b5b2bc614d5ce}{get\+Container}} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_applet_game_container_1_1_container_panel}{Container\+Panel}} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_applet_game_container_acf26307e20e497f0fbdabbb5110ab852}{canvas}}
+\item 
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_applet_game_container_1_1_container}{Container}} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_applet_game_container_ad11e66254b14c604db1a66c3d4efc818}{container}}
+\item 
+Canvas \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_applet_game_container_a62b5a90dcfc53b23717ea63133f86332}{display\+Parent}}
+\item 
+Thread \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_applet_game_container_a490e718a0298d5f4731c117197fb36d0}{game\+Thread}}
+\item 
+boolean \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_applet_game_container_a975d5cbb1d3d12649282b6ab406dafce}{alpha\+Support}} = true
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_applet_game_container_af77f7ab58fe34f57e2e81343edde8c18}{destroy\+L\+W\+J\+GL}} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A game container that displays the game as an applet. Note however that the actual game container implementation is an internal class which can be obtained with the \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_applet_game_container_aab420b4026d156dcfb6b5b2bc614d5ce}{get\+Container()}} method -\/ this is due to the Applet being a class wrap than an interface.
+
+\begin{DoxyAuthor}{Author}
+kevin 
+\end{DoxyAuthor}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1_applet_game_container_aa7a9fa819a8255d5b902f9e941d31491}\label{classorg_1_1newdawn_1_1slick_1_1_applet_game_container_aa7a9fa819a8255d5b902f9e941d31491}} 
+\index{org\+::newdawn\+::slick\+::\+Applet\+Game\+Container@{org\+::newdawn\+::slick\+::\+Applet\+Game\+Container}!destroy@{destroy}}
+\index{destroy@{destroy}!org\+::newdawn\+::slick\+::\+Applet\+Game\+Container@{org\+::newdawn\+::slick\+::\+Applet\+Game\+Container}}
+\subsubsection{\texorpdfstring{destroy()}{destroy()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+Applet\+Game\+Container.\+destroy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxySeeAlso}{See also}
+java.\+applet.\+Applet\+::destroy() 
+\end{DoxySeeAlso}
+
+\begin{DoxyCode}
+52                          \{
+53       \textcolor{keywordflow}{if} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_applet_game_container_a62b5a90dcfc53b23717ea63133f86332}{displayParent}} != null) \{
+54          \textcolor{keyword}{remove}(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_applet_game_container_a62b5a90dcfc53b23717ea63133f86332}{displayParent}});
+55       \}
+56       super.destroy();
+57       
+58       Log.info(\textcolor{stringliteral}{"Clear up"});
+59    \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1_applet_game_container_af77f7ab58fe34f57e2e81343edde8c18}\label{classorg_1_1newdawn_1_1slick_1_1_applet_game_container_af77f7ab58fe34f57e2e81343edde8c18}} 
+\index{org\+::newdawn\+::slick\+::\+Applet\+Game\+Container@{org\+::newdawn\+::slick\+::\+Applet\+Game\+Container}!destroy\+L\+W\+J\+GL@{destroy\+L\+W\+J\+GL}}
+\index{destroy\+L\+W\+J\+GL@{destroy\+L\+W\+J\+GL}!org\+::newdawn\+::slick\+::\+Applet\+Game\+Container@{org\+::newdawn\+::slick\+::\+Applet\+Game\+Container}}
+\subsubsection{\texorpdfstring{destroy\+L\+W\+J\+G\+L()}{destroyLWJGL()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+Applet\+Game\+Container.\+destroy\+L\+W\+J\+GL (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+Clean up the L\+W\+J\+GL resources 
+\begin{DoxyCode}
+64                                \{
+65       \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_applet_game_container_ad11e66254b14c604db1a66c3d4efc818}{container}}.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_applet_game_container_1_1_container_a9e11859f475dfad8eb146c894b7cf814}{stopApplet}}();
+66       
+67       \textcolor{keywordflow}{try} \{
+68          \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_applet_game_container_a490e718a0298d5f4731c117197fb36d0}{gameThread}}.join();
+69       \} \textcolor{keywordflow}{catch} (InterruptedException e) \{
+70          Log.error(e);
+71       \}
+72    \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1_applet_game_container_aab420b4026d156dcfb6b5b2bc614d5ce}\label{classorg_1_1newdawn_1_1slick_1_1_applet_game_container_aab420b4026d156dcfb6b5b2bc614d5ce}} 
+\index{org\+::newdawn\+::slick\+::\+Applet\+Game\+Container@{org\+::newdawn\+::slick\+::\+Applet\+Game\+Container}!get\+Container@{get\+Container}}
+\index{get\+Container@{get\+Container}!org\+::newdawn\+::slick\+::\+Applet\+Game\+Container@{org\+::newdawn\+::slick\+::\+Applet\+Game\+Container}}
+\subsubsection{\texorpdfstring{get\+Container()}{getContainer()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_game_container}{Game\+Container}} org.\+newdawn.\+slick.\+Applet\+Game\+Container.\+get\+Container (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get the \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_game_container}{Game\+Container}} providing this applet
+
+\begin{DoxyReturn}{Returns}
+The game container providing this applet 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+157                                        \{
+158       \textcolor{keywordflow}{return} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_applet_game_container_ad11e66254b14c604db1a66c3d4efc818}{container}};
+159    \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1_applet_game_container_ae10d7b8c504322bcbf04333382230df1}\label{classorg_1_1newdawn_1_1slick_1_1_applet_game_container_ae10d7b8c504322bcbf04333382230df1}} 
+\index{org\+::newdawn\+::slick\+::\+Applet\+Game\+Container@{org\+::newdawn\+::slick\+::\+Applet\+Game\+Container}!init@{init}}
+\index{init@{init}!org\+::newdawn\+::slick\+::\+Applet\+Game\+Container@{org\+::newdawn\+::slick\+::\+Applet\+Game\+Container}}
+\subsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+Applet\+Game\+Container.\+init (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxySeeAlso}{See also}
+java.\+applet.\+Applet\+::init() 
+\end{DoxySeeAlso}
+
+\begin{DoxyCode}
+118                       \{
+119       removeAll();
+120       setLayout(\textcolor{keyword}{new} BorderLayout());
+121       setIgnoreRepaint(\textcolor{keyword}{true});
+122 
+123       \textcolor{keywordflow}{try} \{
+124          Game game = (Game) Class.forName(getParameter(\textcolor{stringliteral}{"game"})).newInstance();
+125          
+126          \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_applet_game_container_ad11e66254b14c604db1a66c3d4efc818}{container}} = \textcolor{keyword}{new} Container(game);
+127          \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_applet_game_container_acf26307e20e497f0fbdabbb5110ab852}{canvas}} = \textcolor{keyword}{new} ContainerPanel(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_applet_game_container_ad11e66254b14c604db1a66c3d4efc818}{container}});
+128          \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_applet_game_container_a62b5a90dcfc53b23717ea63133f86332}{displayParent}} = \textcolor{keyword}{new} Canvas() \{
+129             \textcolor{keyword}{public} \textcolor{keyword}{final} \textcolor{keywordtype}{void} addNotify() \{
+130                super.addNotify();
+131                \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_applet_game_container_af95e36a2d15fa8475f93483776eb2fe3}{startLWJGL}}();
+132             \}
+133             \textcolor{keyword}{public} \textcolor{keyword}{final} \textcolor{keywordtype}{void} removeNotify() \{
+134                \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_applet_game_container_af77f7ab58fe34f57e2e81343edde8c18}{destroyLWJGL}}();
+135                super.removeNotify();
+136             \}
+137 
+138          \};
+139 
+140          \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_applet_game_container_a62b5a90dcfc53b23717ea63133f86332}{displayParent}}.setSize(getWidth(), getHeight());
+141          add(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_applet_game_container_a62b5a90dcfc53b23717ea63133f86332}{displayParent}});
+142          \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_applet_game_container_a62b5a90dcfc53b23717ea63133f86332}{displayParent}}.setFocusable(\textcolor{keyword}{true});
+143          \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_applet_game_container_a62b5a90dcfc53b23717ea63133f86332}{displayParent}}.requestFocus();
+144          \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_applet_game_container_a62b5a90dcfc53b23717ea63133f86332}{displayParent}}.setIgnoreRepaint(\textcolor{keyword}{true});
+145          setVisible(\textcolor{keyword}{true});
+146       \} \textcolor{keywordflow}{catch} (Exception e) \{
+147          Log.error(e);
+148          \textcolor{keywordflow}{throw} \textcolor{keyword}{new} RuntimeException(\textcolor{stringliteral}{"Unable to create game container"});
+149       \}
+150    \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1_applet_game_container_a4eaf8c9a006d8877050863c07da85c3f}\label{classorg_1_1newdawn_1_1slick_1_1_applet_game_container_a4eaf8c9a006d8877050863c07da85c3f}} 
+\index{org\+::newdawn\+::slick\+::\+Applet\+Game\+Container@{org\+::newdawn\+::slick\+::\+Applet\+Game\+Container}!start@{start}}
+\index{start@{start}!org\+::newdawn\+::slick\+::\+Applet\+Game\+Container@{org\+::newdawn\+::slick\+::\+Applet\+Game\+Container}}
+\subsubsection{\texorpdfstring{start()}{start()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+Applet\+Game\+Container.\+start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxySeeAlso}{See also}
+java.\+applet.\+Applet\+::start() 
+\end{DoxySeeAlso}
+
+\begin{DoxyCode}
+77                        \{
+78       
+79    \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1_applet_game_container_af95e36a2d15fa8475f93483776eb2fe3}\label{classorg_1_1newdawn_1_1slick_1_1_applet_game_container_af95e36a2d15fa8475f93483776eb2fe3}} 
+\index{org\+::newdawn\+::slick\+::\+Applet\+Game\+Container@{org\+::newdawn\+::slick\+::\+Applet\+Game\+Container}!start\+L\+W\+J\+GL@{start\+L\+W\+J\+GL}}
+\index{start\+L\+W\+J\+GL@{start\+L\+W\+J\+GL}!org\+::newdawn\+::slick\+::\+Applet\+Game\+Container@{org\+::newdawn\+::slick\+::\+Applet\+Game\+Container}}
+\subsubsection{\texorpdfstring{start\+L\+W\+J\+G\+L()}{startLWJGL()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+Applet\+Game\+Container.\+start\+L\+W\+J\+GL (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Start a thread to run L\+W\+J\+GL in 
+\begin{DoxyCode}
+84                             \{
+85       \textcolor{keywordflow}{if} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_applet_game_container_a490e718a0298d5f4731c117197fb36d0}{gameThread}} != null) \{
+86          \textcolor{keywordflow}{return};
+87       \}
+88       
+89       \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_applet_game_container_a490e718a0298d5f4731c117197fb36d0}{gameThread}} = \textcolor{keyword}{new} Thread() \{
+90          \textcolor{keyword}{public} \textcolor{keywordtype}{void} run() \{
+91             \textcolor{keywordflow}{try} \{
+92                \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_applet_game_container_acf26307e20e497f0fbdabbb5110ab852}{canvas}}.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_applet_game_container_1_1_container_panel_af7a71499be1ee871ac8ec833a3cbec90}{start}}();
+93             \}
+94             \textcolor{keywordflow}{catch} (Exception e) \{
+95                e.printStackTrace();
+96                \textcolor{keywordflow}{if} (Display.isCreated()) \{
+97                   Display.destroy();
+98                \}
+99                \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_applet_game_container_a62b5a90dcfc53b23717ea63133f86332}{displayParent}}.setVisible(\textcolor{keyword}{false});\textcolor{comment}{//removeAll();}
+100                add(\textcolor{keyword}{new} ConsolePanel(e));
+101                validate();
+102             \}
+103          \}
+104       \};
+105       
+106       \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_applet_game_container_a490e718a0298d5f4731c117197fb36d0}{gameThread}}.start();
+107    \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1_applet_game_container_ad376fb700e65999dafc33171e4334560}\label{classorg_1_1newdawn_1_1slick_1_1_applet_game_container_ad376fb700e65999dafc33171e4334560}} 
+\index{org\+::newdawn\+::slick\+::\+Applet\+Game\+Container@{org\+::newdawn\+::slick\+::\+Applet\+Game\+Container}!stop@{stop}}
+\index{stop@{stop}!org\+::newdawn\+::slick\+::\+Applet\+Game\+Container@{org\+::newdawn\+::slick\+::\+Applet\+Game\+Container}}
+\subsubsection{\texorpdfstring{stop()}{stop()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+Applet\+Game\+Container.\+stop (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxySeeAlso}{See also}
+java.\+applet.\+Applet\+::stop() 
+\end{DoxySeeAlso}
+
+\begin{DoxyCode}
+112                       \{
+113    \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1_applet_game_container_a975d5cbb1d3d12649282b6ab406dafce}\label{classorg_1_1newdawn_1_1slick_1_1_applet_game_container_a975d5cbb1d3d12649282b6ab406dafce}} 
+\index{org\+::newdawn\+::slick\+::\+Applet\+Game\+Container@{org\+::newdawn\+::slick\+::\+Applet\+Game\+Container}!alpha\+Support@{alpha\+Support}}
+\index{alpha\+Support@{alpha\+Support}!org\+::newdawn\+::slick\+::\+Applet\+Game\+Container@{org\+::newdawn\+::slick\+::\+Applet\+Game\+Container}}
+\subsubsection{\texorpdfstring{alpha\+Support}{alphaSupport}}
+{\footnotesize\ttfamily boolean org.\+newdawn.\+slick.\+Applet\+Game\+Container.\+alpha\+Support = true\hspace{0.3cm}{\ttfamily [protected]}}
+
+Alpha background supported \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1_applet_game_container_acf26307e20e497f0fbdabbb5110ab852}\label{classorg_1_1newdawn_1_1slick_1_1_applet_game_container_acf26307e20e497f0fbdabbb5110ab852}} 
+\index{org\+::newdawn\+::slick\+::\+Applet\+Game\+Container@{org\+::newdawn\+::slick\+::\+Applet\+Game\+Container}!canvas@{canvas}}
+\index{canvas@{canvas}!org\+::newdawn\+::slick\+::\+Applet\+Game\+Container@{org\+::newdawn\+::slick\+::\+Applet\+Game\+Container}}
+\subsubsection{\texorpdfstring{canvas}{canvas}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_applet_game_container_1_1_container_panel}{Container\+Panel}} org.\+newdawn.\+slick.\+Applet\+Game\+Container.\+canvas\hspace{0.3cm}{\ttfamily [protected]}}
+
+The GL Canvas used for this container \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1_applet_game_container_ad11e66254b14c604db1a66c3d4efc818}\label{classorg_1_1newdawn_1_1slick_1_1_applet_game_container_ad11e66254b14c604db1a66c3d4efc818}} 
+\index{org\+::newdawn\+::slick\+::\+Applet\+Game\+Container@{org\+::newdawn\+::slick\+::\+Applet\+Game\+Container}!container@{container}}
+\index{container@{container}!org\+::newdawn\+::slick\+::\+Applet\+Game\+Container@{org\+::newdawn\+::slick\+::\+Applet\+Game\+Container}}
+\subsubsection{\texorpdfstring{container}{container}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_applet_game_container_1_1_container}{Container}} org.\+newdawn.\+slick.\+Applet\+Game\+Container.\+container\hspace{0.3cm}{\ttfamily [protected]}}
+
+The actual container implementation \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1_applet_game_container_a62b5a90dcfc53b23717ea63133f86332}\label{classorg_1_1newdawn_1_1slick_1_1_applet_game_container_a62b5a90dcfc53b23717ea63133f86332}} 
+\index{org\+::newdawn\+::slick\+::\+Applet\+Game\+Container@{org\+::newdawn\+::slick\+::\+Applet\+Game\+Container}!display\+Parent@{display\+Parent}}
+\index{display\+Parent@{display\+Parent}!org\+::newdawn\+::slick\+::\+Applet\+Game\+Container@{org\+::newdawn\+::slick\+::\+Applet\+Game\+Container}}
+\subsubsection{\texorpdfstring{display\+Parent}{displayParent}}
+{\footnotesize\ttfamily Canvas org.\+newdawn.\+slick.\+Applet\+Game\+Container.\+display\+Parent\hspace{0.3cm}{\ttfamily [protected]}}
+
+The parent of the display \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1_applet_game_container_a490e718a0298d5f4731c117197fb36d0}\label{classorg_1_1newdawn_1_1slick_1_1_applet_game_container_a490e718a0298d5f4731c117197fb36d0}} 
+\index{org\+::newdawn\+::slick\+::\+Applet\+Game\+Container@{org\+::newdawn\+::slick\+::\+Applet\+Game\+Container}!game\+Thread@{game\+Thread}}
+\index{game\+Thread@{game\+Thread}!org\+::newdawn\+::slick\+::\+Applet\+Game\+Container@{org\+::newdawn\+::slick\+::\+Applet\+Game\+Container}}
+\subsubsection{\texorpdfstring{game\+Thread}{gameThread}}
+{\footnotesize\ttfamily Thread org.\+newdawn.\+slick.\+Applet\+Game\+Container.\+game\+Thread\hspace{0.3cm}{\ttfamily [protected]}}
+
+The thread that is looping for the game 

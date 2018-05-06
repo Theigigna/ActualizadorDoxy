@@ -1,0 +1,96 @@
+\hypertarget{class_ejercicio4_1_1_bicho2}{}\section{Ejercicio4.\+Bicho2 Class Reference}
+\label{class_ejercicio4_1_1_bicho2}\index{Ejercicio4.\+Bicho2@{Ejercicio4.\+Bicho2}}
+Inheritance diagram for Ejercicio4.\+Bicho2\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_ejercicio4_1_1_bicho2}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_ejercicio4_1_1_bicho2_a0317dd47a7f91ecddd5985c6a328afd4}{Bicho2}} (int \mbox{\hyperlink{class_ejercicio4_1_1_bicho2_a52c8486d264ae216ff0dd1d6c08f8916}{gen}}, String \mbox{\hyperlink{class_ejercicio4_1_1_bicho2_a2afa745208a498ecffc1b2843bc0da82}{nombre}})
+\item 
+void \mbox{\hyperlink{class_ejercicio4_1_1_bicho2_aae5ca96ca417369d0f5c05daf12fe3c5}{run}} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+String \mbox{\hyperlink{class_ejercicio4_1_1_bicho2_a2afa745208a498ecffc1b2843bc0da82}{nombre}}
+\item 
+int \mbox{\hyperlink{class_ejercicio4_1_1_bicho2_a52c8486d264ae216ff0dd1d6c08f8916}{gen}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_ejercicio4_1_1_bicho2_a0317dd47a7f91ecddd5985c6a328afd4}\label{class_ejercicio4_1_1_bicho2_a0317dd47a7f91ecddd5985c6a328afd4}} 
+\index{Ejercicio4\+::\+Bicho2@{Ejercicio4\+::\+Bicho2}!Bicho2@{Bicho2}}
+\index{Bicho2@{Bicho2}!Ejercicio4\+::\+Bicho2@{Ejercicio4\+::\+Bicho2}}
+\subsubsection{\texorpdfstring{Bicho2()}{Bicho2()}}
+{\footnotesize\ttfamily Ejercicio4.\+Bicho2.\+Bicho2 (\begin{DoxyParamCaption}\item[{int}]{gen,  }\item[{String}]{nombre }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+22                                           \{
+23         this.\mbox{\hyperlink{class_ejercicio4_1_1_bicho2_a2afa745208a498ecffc1b2843bc0da82}{nombre}} = \mbox{\hyperlink{class_ejercicio4_1_1_bicho2_a2afa745208a498ecffc1b2843bc0da82}{nombre}};
+24         this.\mbox{\hyperlink{class_ejercicio4_1_1_bicho2_a52c8486d264ae216ff0dd1d6c08f8916}{gen}} = \mbox{\hyperlink{class_ejercicio4_1_1_bicho2_a52c8486d264ae216ff0dd1d6c08f8916}{gen}};
+25         \mbox{\hyperlink{namespaceejemplo_1_1clase_abcf43191f0ecf3b071ca2db7696ba821}{start}}();
+26     \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_ejercicio4_1_1_bicho2_aae5ca96ca417369d0f5c05daf12fe3c5}\label{class_ejercicio4_1_1_bicho2_aae5ca96ca417369d0f5c05daf12fe3c5}} 
+\index{Ejercicio4\+::\+Bicho2@{Ejercicio4\+::\+Bicho2}!run@{run}}
+\index{run@{run}!Ejercicio4\+::\+Bicho2@{Ejercicio4\+::\+Bicho2}}
+\subsubsection{\texorpdfstring{run()}{run()}}
+{\footnotesize\ttfamily void Ejercicio4.\+Bicho2.\+run (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+28                       \{
+29         \textcolor{keywordtype}{long} t0 = (\textcolor{keyword}{new} Date()).getTime(); \textcolor{comment}{//t0=instante de inicio de los cálculos}
+30         System.out.println(\textcolor{stringliteral}{"Nace: "} + \mbox{\hyperlink{class_ejercicio4_1_1_bicho2_a2afa745208a498ecffc1b2843bc0da82}{nombre}} + \textcolor{stringliteral}{" de la generación: "} + \mbox{\hyperlink{class_ejercicio4_1_1_bicho2_a52c8486d264ae216ff0dd1d6c08f8916}{gen}});
+31         \textcolor{keywordtype}{int} i = (int)(500. * Math.random());
+32         i += 500;
+33         \textcolor{comment}{/*try \{}
+34 \textcolor{comment}{            sleep(i);}
+35 \textcolor{comment}{        \} catch (InterruptedException ex) \{}
+36 \textcolor{comment}{            Logger.getLogger(Bicho2.class.getName()).log(Level.SEVERE, null, ex);}
+37 \textcolor{comment}{        \}*/}
+38         \textcolor{keywordflow}{if}(\mbox{\hyperlink{class_ejercicio4_1_1_bicho2_a52c8486d264ae216ff0dd1d6c08f8916}{gen}}<150000)
+39         \{
+40             \mbox{\hyperlink{class_ejercicio4_1_1_bicho2_a0317dd47a7f91ecddd5985c6a328afd4}{Bicho2}} hijo = \textcolor{keyword}{new} \mbox{\hyperlink{class_ejercicio4_1_1_bicho2_a0317dd47a7f91ecddd5985c6a328afd4}{Bicho2}}(\mbox{\hyperlink{class_ejercicio4_1_1_bicho2_a52c8486d264ae216ff0dd1d6c08f8916}{gen}}+1,\textcolor{stringliteral}{"Hijo"});
+41             \textcolor{keywordflow}{try} \{
+42                 hijo.join();
+43             \} \textcolor{keywordflow}{catch} (InterruptedException ex) \{
+44                 Logger.getLogger(\mbox{\hyperlink{class_ejercicio4_1_1_bicho2_a0317dd47a7f91ecddd5985c6a328afd4}{Bicho2}}.class.getName()).log(Level.SEVERE, null, ex);
+45             \}
+46         \}
+47         \textcolor{keywordflow}{try} \{
+48             sleep(20000);
+49         \} \textcolor{keywordflow}{catch} (InterruptedException ex) \{
+50             Logger.getLogger(\mbox{\hyperlink{class_ejercicio4_1_1_bicho2_a0317dd47a7f91ecddd5985c6a328afd4}{Bicho2}}.class.getName()).log(Level.SEVERE, null, ex);
+51         \}
+52         
+53         \textcolor{keywordtype}{long} t1 = (\textcolor{keyword}{new} Date()).getTime(); \textcolor{comment}{//t1=instante de final de los cálculos}
+54         System.out.println(\textcolor{stringliteral}{"Muere: "} + \mbox{\hyperlink{class_ejercicio4_1_1_bicho2_a2afa745208a498ecffc1b2843bc0da82}{nombre}} + \textcolor{stringliteral}{", de generacion: "} + \mbox{\hyperlink{class_ejercicio4_1_1_bicho2_a52c8486d264ae216ff0dd1d6c08f8916}{gen}} + \textcolor{stringliteral}{". Vivio: "} + (t1-t0) 
+      +\textcolor{stringliteral}{" miliseg."});
+55         
+56     \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_ejercicio4_1_1_bicho2_a52c8486d264ae216ff0dd1d6c08f8916}\label{class_ejercicio4_1_1_bicho2_a52c8486d264ae216ff0dd1d6c08f8916}} 
+\index{Ejercicio4\+::\+Bicho2@{Ejercicio4\+::\+Bicho2}!gen@{gen}}
+\index{gen@{gen}!Ejercicio4\+::\+Bicho2@{Ejercicio4\+::\+Bicho2}}
+\subsubsection{\texorpdfstring{gen}{gen}}
+{\footnotesize\ttfamily int Ejercicio4.\+Bicho2.\+gen\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_ejercicio4_1_1_bicho2_a2afa745208a498ecffc1b2843bc0da82}\label{class_ejercicio4_1_1_bicho2_a2afa745208a498ecffc1b2843bc0da82}} 
+\index{Ejercicio4\+::\+Bicho2@{Ejercicio4\+::\+Bicho2}!nombre@{nombre}}
+\index{nombre@{nombre}!Ejercicio4\+::\+Bicho2@{Ejercicio4\+::\+Bicho2}}
+\subsubsection{\texorpdfstring{nombre}{nombre}}
+{\footnotesize\ttfamily String Ejercicio4.\+Bicho2.\+nombre\hspace{0.3cm}{\ttfamily [private]}}
+

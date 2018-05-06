@@ -1,0 +1,204 @@
+\hypertarget{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_combined_transition}{}\section{org.\+newdawn.\+slick.\+state.\+transition.\+Combined\+Transition Class Reference}
+\label{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_combined_transition}\index{org.\+newdawn.\+slick.\+state.\+transition.\+Combined\+Transition@{org.\+newdawn.\+slick.\+state.\+transition.\+Combined\+Transition}}
+Inheritance diagram for org.\+newdawn.\+slick.\+state.\+transition.\+Combined\+Transition\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_combined_transition}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_combined_transition_a511392d989e61d42152634fd7df72d23}{Combined\+Transition}} ()
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_combined_transition_afa738677ed94e8507bd452d1ed88b1bd}{add\+Transition}} (\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_transition}{Transition}} t)
+\item 
+boolean \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_combined_transition_a8c5e343409337ff699285e29ca8ec457}{is\+Complete}} ()
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_combined_transition_a31b265b22a85d140c70135142e499a81}{post\+Render}} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1_state_based_game}{State\+Based\+Game}} game, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_game_container}{Game\+Container}} container, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_graphics}{Graphics}} g)  throws Slick\+Exception 
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_combined_transition_ae98ecdbd92ff9280e4d1c7a9cb2c52a4}{pre\+Render}} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1_state_based_game}{State\+Based\+Game}} game, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_game_container}{Game\+Container}} container, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_graphics}{Graphics}} g)  throws Slick\+Exception 
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_combined_transition_a2cabd31a15e0fcddff1bcea6690fab6e}{update}} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1_state_based_game}{State\+Based\+Game}} game, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_game_container}{Game\+Container}} container, int delta)  throws Slick\+Exception 
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_combined_transition_add47b8016bc87384ec197ba6923d1438}{init}} (\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1state_1_1_game_state}{Game\+State}} first\+State, \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1state_1_1_game_state}{Game\+State}} second\+State)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Array\+List \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_combined_transition_a4fea111ea283a26351cb164e389ebbbf}{transitions}} = new Array\+List()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A transition thats built of a set of other transitions which are chained together to build the overall effect.
+
+\begin{DoxyAuthor}{Author}
+kevin 
+\end{DoxyAuthor}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_combined_transition_a511392d989e61d42152634fd7df72d23}\label{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_combined_transition_a511392d989e61d42152634fd7df72d23}} 
+\index{org\+::newdawn\+::slick\+::state\+::transition\+::\+Combined\+Transition@{org\+::newdawn\+::slick\+::state\+::transition\+::\+Combined\+Transition}!Combined\+Transition@{Combined\+Transition}}
+\index{Combined\+Transition@{Combined\+Transition}!org\+::newdawn\+::slick\+::state\+::transition\+::\+Combined\+Transition@{org\+::newdawn\+::slick\+::state\+::transition\+::\+Combined\+Transition}}
+\subsubsection{\texorpdfstring{Combined\+Transition()}{CombinedTransition()}}
+{\footnotesize\ttfamily org.\+newdawn.\+slick.\+state.\+transition.\+Combined\+Transition.\+Combined\+Transition (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Create an empty transition 
+\begin{DoxyCode}
+24                                 \{
+25     \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_combined_transition_afa738677ed94e8507bd452d1ed88b1bd}\label{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_combined_transition_afa738677ed94e8507bd452d1ed88b1bd}} 
+\index{org\+::newdawn\+::slick\+::state\+::transition\+::\+Combined\+Transition@{org\+::newdawn\+::slick\+::state\+::transition\+::\+Combined\+Transition}!add\+Transition@{add\+Transition}}
+\index{add\+Transition@{add\+Transition}!org\+::newdawn\+::slick\+::state\+::transition\+::\+Combined\+Transition@{org\+::newdawn\+::slick\+::state\+::transition\+::\+Combined\+Transition}}
+\subsubsection{\texorpdfstring{add\+Transition()}{addTransition()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+state.\+transition.\+Combined\+Transition.\+add\+Transition (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_transition}{Transition}}}]{t }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Add a transition to the list that will be combined to form the final transition
+
+
+\begin{DoxyParams}{Parameters}
+{\em t} & The transition to add \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+33                                             \{
+34           \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_combined_transition_a4fea111ea283a26351cb164e389ebbbf}{transitions}}.add(t);
+35     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_combined_transition_add47b8016bc87384ec197ba6923d1438}\label{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_combined_transition_add47b8016bc87384ec197ba6923d1438}} 
+\index{org\+::newdawn\+::slick\+::state\+::transition\+::\+Combined\+Transition@{org\+::newdawn\+::slick\+::state\+::transition\+::\+Combined\+Transition}!init@{init}}
+\index{init@{init}!org\+::newdawn\+::slick\+::state\+::transition\+::\+Combined\+Transition@{org\+::newdawn\+::slick\+::state\+::transition\+::\+Combined\+Transition}}
+\subsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+state.\+transition.\+Combined\+Transition.\+init (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1state_1_1_game_state}{Game\+State}}}]{first\+State,  }\item[{\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1state_1_1_game_state}{Game\+State}}}]{second\+State }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Initialise the transition
+
+
+\begin{DoxyParams}{Parameters}
+{\em first\+State} & The first state we\textquotesingle{}re rendering (this will be rendered by the framework) \\
+\hline
+{\em second\+State} & The second stat we\textquotesingle{}re transitioning to or from (this one won\textquotesingle{}t be rendered) \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_transition_a7b59f0c9205f1f0417ee18bc526e5b01}{org.\+newdawn.\+slick.\+state.\+transition.\+Transition}}.
+
+
+\begin{DoxyCode}
+81                                                                   \{
+82        \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_combined_transition_a4fea111ea283a26351cb164e389ebbbf}{transitions}}.size() - 1; i >= 0; i--) \{
+83           ((Transition)\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_combined_transition_a4fea111ea283a26351cb164e389ebbbf}{transitions}}.get(i)).\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_combined_transition_add47b8016bc87384ec197ba6923d1438}{init}}(firstState, secondState);
+84        \}
+85     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_combined_transition_a8c5e343409337ff699285e29ca8ec457}\label{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_combined_transition_a8c5e343409337ff699285e29ca8ec457}} 
+\index{org\+::newdawn\+::slick\+::state\+::transition\+::\+Combined\+Transition@{org\+::newdawn\+::slick\+::state\+::transition\+::\+Combined\+Transition}!is\+Complete@{is\+Complete}}
+\index{is\+Complete@{is\+Complete}!org\+::newdawn\+::slick\+::state\+::transition\+::\+Combined\+Transition@{org\+::newdawn\+::slick\+::state\+::transition\+::\+Combined\+Transition}}
+\subsubsection{\texorpdfstring{is\+Complete()}{isComplete()}}
+{\footnotesize\ttfamily boolean org.\+newdawn.\+slick.\+state.\+transition.\+Combined\+Transition.\+is\+Complete (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_transition_af397d5185cf09c30c3f51d5021d63815}{org.\+newdawn.\+slick.\+state.\+transition.\+Transition\+::is\+Complete()}} 
+\end{DoxySeeAlso}
+
+
+Implements \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_transition_af397d5185cf09c30c3f51d5021d63815}{org.\+newdawn.\+slick.\+state.\+transition.\+Transition}}.
+
+
+\begin{DoxyCode}
+40                                 \{
+41         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i=0;i<\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_combined_transition_a4fea111ea283a26351cb164e389ebbbf}{transitions}}.size();i++) \{
+42             \textcolor{keywordflow}{if} (!((Transition) \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_combined_transition_a4fea111ea283a26351cb164e389ebbbf}{transitions}}.get(i)).\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_combined_transition_a8c5e343409337ff699285e29ca8ec457}{isComplete}}()) \{
+43                 \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+44             \}
+45         \}
+46         
+47         \textcolor{keywordflow}{return} \textcolor{keyword}{true};
+48     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_combined_transition_a31b265b22a85d140c70135142e499a81}\label{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_combined_transition_a31b265b22a85d140c70135142e499a81}} 
+\index{org\+::newdawn\+::slick\+::state\+::transition\+::\+Combined\+Transition@{org\+::newdawn\+::slick\+::state\+::transition\+::\+Combined\+Transition}!post\+Render@{post\+Render}}
+\index{post\+Render@{post\+Render}!org\+::newdawn\+::slick\+::state\+::transition\+::\+Combined\+Transition@{org\+::newdawn\+::slick\+::state\+::transition\+::\+Combined\+Transition}}
+\subsubsection{\texorpdfstring{post\+Render()}{postRender()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+state.\+transition.\+Combined\+Transition.\+post\+Render (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1_state_based_game}{State\+Based\+Game}}}]{game,  }\item[{\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_game_container}{Game\+Container}}}]{container,  }\item[{\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_graphics}{Graphics}}}]{g }\end{DoxyParamCaption}) throws \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_slick_exception}{Slick\+Exception}}\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_transition_ac113f4d5a19962a62a8adec7f9ab5d47}{org.\+newdawn.\+slick.\+state.\+transition.\+Transition\+::post\+Render}}(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1_state_based_game}{org.\+newdawn.\+slick.\+state.\+State\+Based\+Game}}, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_game_container}{org.\+newdawn.\+slick.\+Game\+Container}}, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_graphics}{org.\+newdawn.\+slick.\+Graphics}}) 
+\end{DoxySeeAlso}
+
+
+Implements \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_transition_ac113f4d5a19962a62a8adec7f9ab5d47}{org.\+newdawn.\+slick.\+state.\+transition.\+Transition}}.
+
+
+\begin{DoxyCode}
+53                                                                                                            
+      \{
+54         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i=\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_combined_transition_a4fea111ea283a26351cb164e389ebbbf}{transitions}}.size()-1;i>=0;i--) \{
+55             ((Transition) \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_combined_transition_a4fea111ea283a26351cb164e389ebbbf}{transitions}}.get(i)).\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_combined_transition_a31b265b22a85d140c70135142e499a81}{postRender}}(game, container, g);
+56         \}
+57     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_combined_transition_ae98ecdbd92ff9280e4d1c7a9cb2c52a4}\label{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_combined_transition_ae98ecdbd92ff9280e4d1c7a9cb2c52a4}} 
+\index{org\+::newdawn\+::slick\+::state\+::transition\+::\+Combined\+Transition@{org\+::newdawn\+::slick\+::state\+::transition\+::\+Combined\+Transition}!pre\+Render@{pre\+Render}}
+\index{pre\+Render@{pre\+Render}!org\+::newdawn\+::slick\+::state\+::transition\+::\+Combined\+Transition@{org\+::newdawn\+::slick\+::state\+::transition\+::\+Combined\+Transition}}
+\subsubsection{\texorpdfstring{pre\+Render()}{preRender()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+state.\+transition.\+Combined\+Transition.\+pre\+Render (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1_state_based_game}{State\+Based\+Game}}}]{game,  }\item[{\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_game_container}{Game\+Container}}}]{container,  }\item[{\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_graphics}{Graphics}}}]{g }\end{DoxyParamCaption}) throws \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_slick_exception}{Slick\+Exception}}\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_transition_ab8b0668c059830d938575d1a0b08bd93}{org.\+newdawn.\+slick.\+state.\+transition.\+Transition\+::pre\+Render}}(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1_state_based_game}{org.\+newdawn.\+slick.\+state.\+State\+Based\+Game}}, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_game_container}{org.\+newdawn.\+slick.\+Game\+Container}}, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_graphics}{org.\+newdawn.\+slick.\+Graphics}}) 
+\end{DoxySeeAlso}
+
+
+Implements \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_transition_ab8b0668c059830d938575d1a0b08bd93}{org.\+newdawn.\+slick.\+state.\+transition.\+Transition}}.
+
+
+\begin{DoxyCode}
+62                                                                                                           \{
+63         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i=0;i<\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_combined_transition_a4fea111ea283a26351cb164e389ebbbf}{transitions}}.size();i++) \{
+64             ((Transition) \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_combined_transition_a4fea111ea283a26351cb164e389ebbbf}{transitions}}.get(i)).\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_combined_transition_a31b265b22a85d140c70135142e499a81}{postRender}}(game, container, g);
+65         \}
+66     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_combined_transition_a2cabd31a15e0fcddff1bcea6690fab6e}\label{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_combined_transition_a2cabd31a15e0fcddff1bcea6690fab6e}} 
+\index{org\+::newdawn\+::slick\+::state\+::transition\+::\+Combined\+Transition@{org\+::newdawn\+::slick\+::state\+::transition\+::\+Combined\+Transition}!update@{update}}
+\index{update@{update}!org\+::newdawn\+::slick\+::state\+::transition\+::\+Combined\+Transition@{org\+::newdawn\+::slick\+::state\+::transition\+::\+Combined\+Transition}}
+\subsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+state.\+transition.\+Combined\+Transition.\+update (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1_state_based_game}{State\+Based\+Game}}}]{game,  }\item[{\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_game_container}{Game\+Container}}}]{container,  }\item[{int}]{delta }\end{DoxyParamCaption}) throws \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_slick_exception}{Slick\+Exception}}\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_transition_a9be3072f6e2423e3d0a451a419d1d518}{org.\+newdawn.\+slick.\+state.\+transition.\+Transition\+::update}}(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1_state_based_game}{org.\+newdawn.\+slick.\+state.\+State\+Based\+Game}}, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_game_container}{org.\+newdawn.\+slick.\+Game\+Container}}, int) 
+\end{DoxySeeAlso}
+
+
+Implements \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_transition_a9be3072f6e2423e3d0a451a419d1d518}{org.\+newdawn.\+slick.\+state.\+transition.\+Transition}}.
+
+
+\begin{DoxyCode}
+71                                                                                                       \{
+72         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i=0;i<\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_combined_transition_a4fea111ea283a26351cb164e389ebbbf}{transitions}}.size();i++) \{
+73             Transition t = (Transition) \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_combined_transition_a4fea111ea283a26351cb164e389ebbbf}{transitions}}.get(i);
+74             
+75             \textcolor{keywordflow}{if} (!t.isComplete()) \{
+76                 t.update(game, container, delta);
+77             \}
+78         \}
+79     \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_combined_transition_a4fea111ea283a26351cb164e389ebbbf}\label{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_combined_transition_a4fea111ea283a26351cb164e389ebbbf}} 
+\index{org\+::newdawn\+::slick\+::state\+::transition\+::\+Combined\+Transition@{org\+::newdawn\+::slick\+::state\+::transition\+::\+Combined\+Transition}!transitions@{transitions}}
+\index{transitions@{transitions}!org\+::newdawn\+::slick\+::state\+::transition\+::\+Combined\+Transition@{org\+::newdawn\+::slick\+::state\+::transition\+::\+Combined\+Transition}}
+\subsubsection{\texorpdfstring{transitions}{transitions}}
+{\footnotesize\ttfamily Array\+List org.\+newdawn.\+slick.\+state.\+transition.\+Combined\+Transition.\+transitions = new Array\+List()\hspace{0.3cm}{\ttfamily [private]}}
+
+The list of transitions to be combined 

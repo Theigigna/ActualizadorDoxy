@@ -1,0 +1,202 @@
+\hypertarget{classorg_1_1newdawn_1_1slick_1_1tests_1_1xml_1_1_x_m_l_test}{}\section{org.\+newdawn.\+slick.\+tests.\+xml.\+X\+M\+L\+Test Class Reference}
+\label{classorg_1_1newdawn_1_1slick_1_1tests_1_1xml_1_1_x_m_l_test}\index{org.\+newdawn.\+slick.\+tests.\+xml.\+X\+M\+L\+Test@{org.\+newdawn.\+slick.\+tests.\+xml.\+X\+M\+L\+Test}}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1xml_1_1_x_m_l_test_a6fe82594702b83a5d0dd0264b3d34562}{main}} (String\mbox{[}$\,$\mbox{]} argv)  throws Slick\+Exception 
+\end{DoxyCompactItemize}
+\subsection*{Static Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1xml_1_1_x_m_l_test_a2ebb5c21c202786fb9222bee867ae91c}{fail}} (String message)
+\item 
+static void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1xml_1_1_x_m_l_test_a516de8777172f1a41cb9ff310cc3b667}{assert\+Not\+Null}} (Object object1)
+\item 
+static void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1xml_1_1_x_m_l_test_adbfd9cbd27f7f0377c936ef816a067ac}{assert\+Equals}} (float a1, float a2)
+\item 
+static void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1xml_1_1_x_m_l_test_a362776dbdd8611cebc3203c860a79f92}{assert\+Equals}} (int a1, int a2)
+\item 
+static void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1xml_1_1_x_m_l_test_a80cef1ae18e5a1eea6e6b2eaaeed2bc5}{assert\+Equals}} (Object a1, Object a2)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Silly test to check X\+ML parsing functionality, note the J\+Unit like methods, want to move it to J\+Unit soon but not quite there yet.
+
+\begin{DoxyAuthor}{Author}
+kevin 
+\end{DoxyAuthor}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tests_1_1xml_1_1_x_m_l_test_adbfd9cbd27f7f0377c936ef816a067ac}\label{classorg_1_1newdawn_1_1slick_1_1tests_1_1xml_1_1_x_m_l_test_adbfd9cbd27f7f0377c936ef816a067ac}} 
+\index{org\+::newdawn\+::slick\+::tests\+::xml\+::\+X\+M\+L\+Test@{org\+::newdawn\+::slick\+::tests\+::xml\+::\+X\+M\+L\+Test}!assert\+Equals@{assert\+Equals}}
+\index{assert\+Equals@{assert\+Equals}!org\+::newdawn\+::slick\+::tests\+::xml\+::\+X\+M\+L\+Test@{org\+::newdawn\+::slick\+::tests\+::xml\+::\+X\+M\+L\+Test}}
+\subsubsection{\texorpdfstring{assert\+Equals()}{assertEquals()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily static void org.\+newdawn.\+slick.\+tests.\+xml.\+X\+M\+L\+Test.\+assert\+Equals (\begin{DoxyParamCaption}\item[{float}]{a1,  }\item[{float}]{a2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}, {\ttfamily [private]}}
+
+Ensure that the two values given are equal, if not fail the test
+
+
+\begin{DoxyParams}{Parameters}
+{\em a1} & The first value to compare \\
+\hline
+{\em a2} & The second value to compare \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+40                                                          \{
+41         \textcolor{keywordflow}{if} (a1 != a2) \{
+42             \textcolor{keywordflow}{throw} \textcolor{keyword}{new} RuntimeException(\textcolor{stringliteral}{"TEST FAILS: "}+a1+\textcolor{stringliteral}{" should be "}+a2);
+43         \}
+44     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tests_1_1xml_1_1_x_m_l_test_a362776dbdd8611cebc3203c860a79f92}\label{classorg_1_1newdawn_1_1slick_1_1tests_1_1xml_1_1_x_m_l_test_a362776dbdd8611cebc3203c860a79f92}} 
+\index{org\+::newdawn\+::slick\+::tests\+::xml\+::\+X\+M\+L\+Test@{org\+::newdawn\+::slick\+::tests\+::xml\+::\+X\+M\+L\+Test}!assert\+Equals@{assert\+Equals}}
+\index{assert\+Equals@{assert\+Equals}!org\+::newdawn\+::slick\+::tests\+::xml\+::\+X\+M\+L\+Test@{org\+::newdawn\+::slick\+::tests\+::xml\+::\+X\+M\+L\+Test}}
+\subsubsection{\texorpdfstring{assert\+Equals()}{assertEquals()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily static void org.\+newdawn.\+slick.\+tests.\+xml.\+X\+M\+L\+Test.\+assert\+Equals (\begin{DoxyParamCaption}\item[{int}]{a1,  }\item[{int}]{a2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}, {\ttfamily [private]}}
+
+Ensure that the two values given are equal, if not fail the test
+
+
+\begin{DoxyParams}{Parameters}
+{\em a1} & The first value to compare \\
+\hline
+{\em a2} & The second value to compare \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+52                                                      \{
+53         \textcolor{keywordflow}{if} (a1 != a2) \{
+54             \textcolor{keywordflow}{throw} \textcolor{keyword}{new} RuntimeException(\textcolor{stringliteral}{"TEST FAILS: "}+a1+\textcolor{stringliteral}{" should be "}+a2);
+55         \}
+56     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tests_1_1xml_1_1_x_m_l_test_a80cef1ae18e5a1eea6e6b2eaaeed2bc5}\label{classorg_1_1newdawn_1_1slick_1_1tests_1_1xml_1_1_x_m_l_test_a80cef1ae18e5a1eea6e6b2eaaeed2bc5}} 
+\index{org\+::newdawn\+::slick\+::tests\+::xml\+::\+X\+M\+L\+Test@{org\+::newdawn\+::slick\+::tests\+::xml\+::\+X\+M\+L\+Test}!assert\+Equals@{assert\+Equals}}
+\index{assert\+Equals@{assert\+Equals}!org\+::newdawn\+::slick\+::tests\+::xml\+::\+X\+M\+L\+Test@{org\+::newdawn\+::slick\+::tests\+::xml\+::\+X\+M\+L\+Test}}
+\subsubsection{\texorpdfstring{assert\+Equals()}{assertEquals()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily static void org.\+newdawn.\+slick.\+tests.\+xml.\+X\+M\+L\+Test.\+assert\+Equals (\begin{DoxyParamCaption}\item[{Object}]{a1,  }\item[{Object}]{a2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}, {\ttfamily [private]}}
+
+Ensure that the two values given are equal, if not fail the test
+
+
+\begin{DoxyParams}{Parameters}
+{\em a1} & The first value to compare \\
+\hline
+{\em a2} & The second value to compare \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+64                                                            \{
+65         \textcolor{keywordflow}{if} (!a1.equals(a2)) \{
+66             \textcolor{keywordflow}{throw} \textcolor{keyword}{new} RuntimeException(\textcolor{stringliteral}{"TEST FAILS: "}+a1+\textcolor{stringliteral}{" should be "}+a2);
+67         \}
+68     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tests_1_1xml_1_1_x_m_l_test_a516de8777172f1a41cb9ff310cc3b667}\label{classorg_1_1newdawn_1_1slick_1_1tests_1_1xml_1_1_x_m_l_test_a516de8777172f1a41cb9ff310cc3b667}} 
+\index{org\+::newdawn\+::slick\+::tests\+::xml\+::\+X\+M\+L\+Test@{org\+::newdawn\+::slick\+::tests\+::xml\+::\+X\+M\+L\+Test}!assert\+Not\+Null@{assert\+Not\+Null}}
+\index{assert\+Not\+Null@{assert\+Not\+Null}!org\+::newdawn\+::slick\+::tests\+::xml\+::\+X\+M\+L\+Test@{org\+::newdawn\+::slick\+::tests\+::xml\+::\+X\+M\+L\+Test}}
+\subsubsection{\texorpdfstring{assert\+Not\+Null()}{assertNotNull()}}
+{\footnotesize\ttfamily static void org.\+newdawn.\+slick.\+tests.\+xml.\+X\+M\+L\+Test.\+assert\+Not\+Null (\begin{DoxyParamCaption}\item[{Object}]{object1 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}, {\ttfamily [private]}}
+
+Ensure that the given object is not null, if it is fail the test
+
+
+\begin{DoxyParams}{Parameters}
+{\em object1} & The object to test \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+28                                                       \{
+29         \textcolor{keywordflow}{if} (object1 == null) \{
+30             \textcolor{keywordflow}{throw} \textcolor{keyword}{new} RuntimeException(\textcolor{stringliteral}{"TEST FAILS: "}+object1+\textcolor{stringliteral}{" must not be null"});
+31         \}
+32     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tests_1_1xml_1_1_x_m_l_test_a2ebb5c21c202786fb9222bee867ae91c}\label{classorg_1_1newdawn_1_1slick_1_1tests_1_1xml_1_1_x_m_l_test_a2ebb5c21c202786fb9222bee867ae91c}} 
+\index{org\+::newdawn\+::slick\+::tests\+::xml\+::\+X\+M\+L\+Test@{org\+::newdawn\+::slick\+::tests\+::xml\+::\+X\+M\+L\+Test}!fail@{fail}}
+\index{fail@{fail}!org\+::newdawn\+::slick\+::tests\+::xml\+::\+X\+M\+L\+Test@{org\+::newdawn\+::slick\+::tests\+::xml\+::\+X\+M\+L\+Test}}
+\subsubsection{\texorpdfstring{fail()}{fail()}}
+{\footnotesize\ttfamily static void org.\+newdawn.\+slick.\+tests.\+xml.\+X\+M\+L\+Test.\+fail (\begin{DoxyParamCaption}\item[{String}]{message }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}, {\ttfamily [private]}}
+
+Fail the test
+
+
+\begin{DoxyParams}{Parameters}
+{\em message} & The message to describe the failure \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+19                                              \{
+20         \textcolor{keywordflow}{throw} \textcolor{keyword}{new} RuntimeException(message);
+21     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tests_1_1xml_1_1_x_m_l_test_a6fe82594702b83a5d0dd0264b3d34562}\label{classorg_1_1newdawn_1_1slick_1_1tests_1_1xml_1_1_x_m_l_test_a6fe82594702b83a5d0dd0264b3d34562}} 
+\index{org\+::newdawn\+::slick\+::tests\+::xml\+::\+X\+M\+L\+Test@{org\+::newdawn\+::slick\+::tests\+::xml\+::\+X\+M\+L\+Test}!main@{main}}
+\index{main@{main}!org\+::newdawn\+::slick\+::tests\+::xml\+::\+X\+M\+L\+Test@{org\+::newdawn\+::slick\+::tests\+::xml\+::\+X\+M\+L\+Test}}
+\subsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily static void org.\+newdawn.\+slick.\+tests.\+xml.\+X\+M\+L\+Test.\+main (\begin{DoxyParamCaption}\item[{String \mbox{[}$\,$\mbox{]}}]{argv }\end{DoxyParamCaption}) throws \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_slick_exception}{Slick\+Exception}}\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Simple test for the X\+ML parsing A\+PI
+
+
+\begin{DoxyParams}{Parameters}
+{\em argv} & The arguments given to the test \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_slick_exception}{Slick\+Exception}}} & Indicates a failure \\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyCode}
+76                                                                  \{
+77         XMLParser parser = \textcolor{keyword}{new} XMLParser();
+78         
+79         XMLElement root = parser.parse(\textcolor{stringliteral}{"testdata/test.xml"});
+80         
+81         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1xml_1_1_x_m_l_test_adbfd9cbd27f7f0377c936ef816a067ac}{assertEquals}}(root.getName(), \textcolor{stringliteral}{"testRoot"});
+82         System.out.println(root);
+83         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1xml_1_1_x_m_l_test_a516de8777172f1a41cb9ff310cc3b667}{assertNotNull}}(root.getChildrenByName(\textcolor{stringliteral}{"simple"}).get(0).getContent());
+84         System.out.println(root.getChildrenByName(\textcolor{stringliteral}{"simple"}).get(0).getContent());
+85         
+86         XMLElement parent = root.getChildrenByName(\textcolor{stringliteral}{"parent"}).get(0);
+87         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1xml_1_1_x_m_l_test_adbfd9cbd27f7f0377c936ef816a067ac}{assertEquals}}(parent.getChildrenByName(\textcolor{stringliteral}{"grandchild"}).size(),0);
+88         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1xml_1_1_x_m_l_test_adbfd9cbd27f7f0377c936ef816a067ac}{assertEquals}}(parent.getChildrenByName(\textcolor{stringliteral}{"child"}).size(),2);
+89         
+90         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1xml_1_1_x_m_l_test_adbfd9cbd27f7f0377c936ef816a067ac}{assertEquals}}(parent.getChildrenByName(\textcolor{stringliteral}{"child"}).get(0).getChildren().size(),2);
+91         XMLElement child = parent.getChildrenByName(\textcolor{stringliteral}{"child"}).get(0).getChildren().get(0);
+92         
+93         String name = child.getAttribute(\textcolor{stringliteral}{"name"});
+94         String test = child.getAttribute(\textcolor{stringliteral}{"nothere"},\textcolor{stringliteral}{"defaultValue"});
+95         \textcolor{keywordtype}{int} age = child.getIntAttribute(\textcolor{stringliteral}{"age"});
+96         
+97         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1xml_1_1_x_m_l_test_adbfd9cbd27f7f0377c936ef816a067ac}{assertEquals}}(name, \textcolor{stringliteral}{"bob"});
+98         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1xml_1_1_x_m_l_test_adbfd9cbd27f7f0377c936ef816a067ac}{assertEquals}}(test, \textcolor{stringliteral}{"defaultValue"});
+99         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1xml_1_1_x_m_l_test_adbfd9cbd27f7f0377c936ef816a067ac}{assertEquals}}(age, 1);
+100         
+101         XMLElement other = root.getChildrenByName(\textcolor{stringliteral}{"other"}).get(0);
+102         \textcolor{keywordtype}{float} x = (float) other.getDoubleAttribute(\textcolor{stringliteral}{"x"});
+103         \textcolor{keywordtype}{float} y = (float) other.getDoubleAttribute(\textcolor{stringliteral}{"y"}, 1.0f);
+104         \textcolor{keywordtype}{float} z = (float) other.getDoubleAttribute(\textcolor{stringliteral}{"z"}, 83.0f);
+105         
+106         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1xml_1_1_x_m_l_test_adbfd9cbd27f7f0377c936ef816a067ac}{assertEquals}}(x, 5.3f);
+107         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1xml_1_1_x_m_l_test_adbfd9cbd27f7f0377c936ef816a067ac}{assertEquals}}(y, 5.4f);
+108         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1xml_1_1_x_m_l_test_adbfd9cbd27f7f0377c936ef816a067ac}{assertEquals}}(z, 83.0f);
+109         
+110         \textcolor{keywordflow}{try} \{
+111             z = (float) other.getDoubleAttribute(\textcolor{stringliteral}{"z"});
+112             \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1xml_1_1_x_m_l_test_a2ebb5c21c202786fb9222bee867ae91c}{fail}}(\textcolor{stringliteral}{"Attribute z as a double should fail"});
+113         \} \textcolor{keywordflow}{catch} (SlickException e) \{
+114             \textcolor{comment}{// expect exception}
+115         \}
+116     \}
+\end{DoxyCode}

@@ -1,0 +1,106 @@
+\hypertarget{classorg_1_1newdawn_1_1slick_1_1util_1_1_fast_trig}{}\section{org.\+newdawn.\+slick.\+util.\+Fast\+Trig Class Reference}
+\label{classorg_1_1newdawn_1_1slick_1_1util_1_1_fast_trig}\index{org.\+newdawn.\+slick.\+util.\+Fast\+Trig@{org.\+newdawn.\+slick.\+util.\+Fast\+Trig}}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static double \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1_fast_trig_afb5f3af5e68974ea439119bd3eb365a5}{sin}} (double radians)
+\item 
+static double \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1_fast_trig_a1839bed93db3a122acadd8abc2580d11}{cos}} (double radians)
+\end{DoxyCompactItemize}
+\subsection*{Static Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static double \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1_fast_trig_a91525588388e9e09ba6694764a77545b}{reduce\+Sin\+Angle}} (double radians)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Utility to handle Java\textquotesingle{}s odd trig performance issues
+
+\begin{DoxyAuthor}{Author}
+JeffK 
+\end{DoxyAuthor}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1util_1_1_fast_trig_a1839bed93db3a122acadd8abc2580d11}\label{classorg_1_1newdawn_1_1slick_1_1util_1_1_fast_trig_a1839bed93db3a122acadd8abc2580d11}} 
+\index{org\+::newdawn\+::slick\+::util\+::\+Fast\+Trig@{org\+::newdawn\+::slick\+::util\+::\+Fast\+Trig}!cos@{cos}}
+\index{cos@{cos}!org\+::newdawn\+::slick\+::util\+::\+Fast\+Trig@{org\+::newdawn\+::slick\+::util\+::\+Fast\+Trig}}
+\subsubsection{\texorpdfstring{cos()}{cos()}}
+{\footnotesize\ttfamily static double org.\+newdawn.\+slick.\+util.\+Fast\+Trig.\+cos (\begin{DoxyParamCaption}\item[{double}]{radians }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Get the cosine of an angle
+
+
+\begin{DoxyParams}{Parameters}
+{\em radians} & The angle \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The cosine of the angle 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+52                                              \{
+53         \textcolor{keywordflow}{return} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1_fast_trig_afb5f3af5e68974ea439119bd3eb365a5}{sin}}(radians + Math.PI / 2);
+54     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1util_1_1_fast_trig_a91525588388e9e09ba6694764a77545b}\label{classorg_1_1newdawn_1_1slick_1_1util_1_1_fast_trig_a91525588388e9e09ba6694764a77545b}} 
+\index{org\+::newdawn\+::slick\+::util\+::\+Fast\+Trig@{org\+::newdawn\+::slick\+::util\+::\+Fast\+Trig}!reduce\+Sin\+Angle@{reduce\+Sin\+Angle}}
+\index{reduce\+Sin\+Angle@{reduce\+Sin\+Angle}!org\+::newdawn\+::slick\+::util\+::\+Fast\+Trig@{org\+::newdawn\+::slick\+::util\+::\+Fast\+Trig}}
+\subsubsection{\texorpdfstring{reduce\+Sin\+Angle()}{reduceSinAngle()}}
+{\footnotesize\ttfamily static double org.\+newdawn.\+slick.\+util.\+Fast\+Trig.\+reduce\+Sin\+Angle (\begin{DoxyParamCaption}\item[{double}]{radians }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}, {\ttfamily [private]}}
+
+Fast Trig functions for x86. ~\newline
+This forces the trig functiosn to stay within the safe area on the x86 processor (-\/45 degrees to +45 degrees) The results may be very slightly off from what the Math and Strict\+Math trig functions give due to rounding in the angle reduction but it will be very very close.
+
+
+\begin{DoxyParams}{Parameters}
+{\em radians} & The original angle \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The reduced Sin angle 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+18                                                          \{
+19         \textcolor{keywordtype}{double} orig = radians;
+20         radians %= Math.PI * 2.0; \textcolor{comment}{// put us in -2PI to +2PI space}
+21         \textcolor{keywordflow}{if} (Math.abs(radians) > Math.PI) \{ \textcolor{comment}{// put us in -PI to +PI space}
+22             radians = radians - (Math.PI * 2.0);
+23         \}
+24         \textcolor{keywordflow}{if} (Math.abs(radians) > Math.PI / 2) \{\textcolor{comment}{// put us in -PI/2 to +PI/2 space}
+25             radians = Math.PI - radians;
+26         \}
+27 
+28         \textcolor{keywordflow}{return} radians;
+29     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1util_1_1_fast_trig_afb5f3af5e68974ea439119bd3eb365a5}\label{classorg_1_1newdawn_1_1slick_1_1util_1_1_fast_trig_afb5f3af5e68974ea439119bd3eb365a5}} 
+\index{org\+::newdawn\+::slick\+::util\+::\+Fast\+Trig@{org\+::newdawn\+::slick\+::util\+::\+Fast\+Trig}!sin@{sin}}
+\index{sin@{sin}!org\+::newdawn\+::slick\+::util\+::\+Fast\+Trig@{org\+::newdawn\+::slick\+::util\+::\+Fast\+Trig}}
+\subsubsection{\texorpdfstring{sin()}{sin()}}
+{\footnotesize\ttfamily static double org.\+newdawn.\+slick.\+util.\+Fast\+Trig.\+sin (\begin{DoxyParamCaption}\item[{double}]{radians }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Get the sine of an angle
+
+
+\begin{DoxyParams}{Parameters}
+{\em radians} & The angle \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The sine of the angle 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+37                                              \{
+38         radians = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1_fast_trig_a91525588388e9e09ba6694764a77545b}{reduceSinAngle}}(radians); \textcolor{comment}{// limits angle to between -PI/2 and +PI/2}
+39         \textcolor{keywordflow}{if} (Math.abs(radians) <= Math.PI / 4) \{
+40             \textcolor{keywordflow}{return} Math.sin(radians);
+41         \} \textcolor{keywordflow}{else} \{
+42             \textcolor{keywordflow}{return} Math.cos(Math.PI / 2 - radians);
+43         \}
+44     \}
+\end{DoxyCode}

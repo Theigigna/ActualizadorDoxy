@@ -1,0 +1,120 @@
+\hypertarget{classcms_1_1_j_d_b_c_admin_d_a_o}{}\section{cms.\+J\+D\+B\+C\+Admin\+D\+AO Class Reference}
+\label{classcms_1_1_j_d_b_c_admin_d_a_o}\index{cms.\+J\+D\+B\+C\+Admin\+D\+AO@{cms.\+J\+D\+B\+C\+Admin\+D\+AO}}
+Inheritance diagram for cms.\+J\+D\+B\+C\+Admin\+D\+AO\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classcms_1_1_j_d_b_c_admin_d_a_o}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classcms_1_1_j_d_b_c_admin_d_a_o_aa81abd0562cf5876cc32a62150c77433}{J\+D\+B\+C\+Admin\+D\+AO}} (Connection \mbox{\hyperlink{classcms_1_1_j_d_b_c_admin_d_a_o_a970f1be51071c85c0b1e55b45f21bcad}{connection}})
+\item 
+void \mbox{\hyperlink{classcms_1_1_j_d_b_c_admin_d_a_o_a63cbff25e5bc997e5976e37d2b809270}{insert}} (\mbox{\hyperlink{classcms_1_1_admin}{Admin}} admin)
+\item 
+List$<$ \mbox{\hyperlink{classcms_1_1_admin}{Admin}} $>$ \mbox{\hyperlink{classcms_1_1_j_d_b_c_admin_d_a_o_a4cfb093895262f1b8a4ac7695cf50d74}{select}} ()
+\end{DoxyCompactItemize}
+\subsection*{Package Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Connection \mbox{\hyperlink{classcms_1_1_j_d_b_c_admin_d_a_o_a970f1be51071c85c0b1e55b45f21bcad}{connection}} = null
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classcms_1_1_j_d_b_c_admin_d_a_o_aa81abd0562cf5876cc32a62150c77433}\label{classcms_1_1_j_d_b_c_admin_d_a_o_aa81abd0562cf5876cc32a62150c77433}} 
+\index{cms\+::\+J\+D\+B\+C\+Admin\+D\+AO@{cms\+::\+J\+D\+B\+C\+Admin\+D\+AO}!J\+D\+B\+C\+Admin\+D\+AO@{J\+D\+B\+C\+Admin\+D\+AO}}
+\index{J\+D\+B\+C\+Admin\+D\+AO@{J\+D\+B\+C\+Admin\+D\+AO}!cms\+::\+J\+D\+B\+C\+Admin\+D\+AO@{cms\+::\+J\+D\+B\+C\+Admin\+D\+AO}}
+\subsubsection{\texorpdfstring{J\+D\+B\+C\+Admin\+D\+A\+O()}{JDBCAdminDAO()}}
+{\footnotesize\ttfamily cms.\+J\+D\+B\+C\+Admin\+D\+A\+O.\+J\+D\+B\+C\+Admin\+D\+AO (\begin{DoxyParamCaption}\item[{Connection}]{connection }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+25                                            \{
+26      this.\mbox{\hyperlink{classcms_1_1_j_d_b_c_admin_d_a_o_a970f1be51071c85c0b1e55b45f21bcad}{connection}}=\mbox{\hyperlink{classcms_1_1_j_d_b_c_admin_d_a_o_a970f1be51071c85c0b1e55b45f21bcad}{connection}};
+27  \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classcms_1_1_j_d_b_c_admin_d_a_o_a63cbff25e5bc997e5976e37d2b809270}\label{classcms_1_1_j_d_b_c_admin_d_a_o_a63cbff25e5bc997e5976e37d2b809270}} 
+\index{cms\+::\+J\+D\+B\+C\+Admin\+D\+AO@{cms\+::\+J\+D\+B\+C\+Admin\+D\+AO}!insert@{insert}}
+\index{insert@{insert}!cms\+::\+J\+D\+B\+C\+Admin\+D\+AO@{cms\+::\+J\+D\+B\+C\+Admin\+D\+AO}}
+\subsubsection{\texorpdfstring{insert()}{insert()}}
+{\footnotesize\ttfamily void cms.\+J\+D\+B\+C\+Admin\+D\+A\+O.\+insert (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classcms_1_1_admin}{Admin}}}]{admin }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Implements \mbox{\hyperlink{interfacecms_1_1_admin_d_a_o_ae4de78db63d901e5855f242d5ae06869}{cms.\+Admin\+D\+AO}}.
+
+
+\begin{DoxyCode}
+30                                     \{
+31         \textcolor{keywordflow}{try} \{
+32             PreparedStatement preparedStatement = \mbox{\hyperlink{classcms_1_1_j_d_b_c_admin_d_a_o_a970f1be51071c85c0b1e55b45f21bcad}{connection}}.prepareStatement(\textcolor{stringliteral}{"INSERT INTO
+       cms.admin (admin\_id, first\_name,last\_name ,shares\_id) VALUES (default , ?, ?, ?)"});
+33             preparedStatement.setString(1,  admin.getFirst\_name());
+34             preparedStatement.setString(2,  admin.getLast\_name());
+35             preparedStatement.setInt(3,  admin.getShares\_id());
+36             preparedStatement.executeUpdate();
+37             preparedStatement.close();
+38         \} \textcolor{keywordflow}{catch} (SQLException e) \{
+39             \textcolor{comment}{// TODO Auto-generated catch block}
+40             e.printStackTrace();
+41         \}
+42          
+43     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classcms_1_1_j_d_b_c_admin_d_a_o_a4cfb093895262f1b8a4ac7695cf50d74}\label{classcms_1_1_j_d_b_c_admin_d_a_o_a4cfb093895262f1b8a4ac7695cf50d74}} 
+\index{cms\+::\+J\+D\+B\+C\+Admin\+D\+AO@{cms\+::\+J\+D\+B\+C\+Admin\+D\+AO}!select@{select}}
+\index{select@{select}!cms\+::\+J\+D\+B\+C\+Admin\+D\+AO@{cms\+::\+J\+D\+B\+C\+Admin\+D\+AO}}
+\subsubsection{\texorpdfstring{select()}{select()}}
+{\footnotesize\ttfamily List$<$\mbox{\hyperlink{classcms_1_1_admin}{Admin}}$>$ cms.\+J\+D\+B\+C\+Admin\+D\+A\+O.\+select (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Implements \mbox{\hyperlink{interfacecms_1_1_admin_d_a_o_a3e45698575b289bb1772162a6f332d2e}{cms.\+Admin\+D\+AO}}.
+
+
+\begin{DoxyCode}
+46                                 \{
+47         List<Admin> admins = \textcolor{keyword}{new} LinkedList<>();
+48          \textcolor{keywordflow}{try} \{
+49                 Statement statement = \mbox{\hyperlink{classcms_1_1_j_d_b_c_admin_d_a_o_a970f1be51071c85c0b1e55b45f21bcad}{connection}}.createStatement();
+50                 ResultSet resultSet = statement.executeQuery(\textcolor{stringliteral}{"SELECT * FROM cms.Admin"});
+51                  
+52                 Admin admin = null;
+53                 \textcolor{keywordflow}{while}(resultSet.next())\{
+54                     admin = \textcolor{keyword}{new} Admin();
+55                     admin.setAdmin\_id(Integer.parseInt(resultSet.getString(\textcolor{stringliteral}{"admin\_id"})));
+56                     admin.setFirst\_name(resultSet.getString(\textcolor{stringliteral}{"first\_name"}));
+57                     admin.setLast\_name(resultSet.getString(\textcolor{stringliteral}{"last\_name"}));
+58                     admin.setShares\_id(Integer.parseInt(resultSet.getString(\textcolor{stringliteral}{"shares\_id"})));
+59                     admins.add(admin);
+60                 \}
+61                 resultSet.close();
+62                 statement.close();
+63                  
+64             \} \textcolor{keywordflow}{catch} (SQLException e) \{
+65                 e.printStackTrace();
+66             \}
+67            \textcolor{keywordtype}{int} i;
+68             i=0;
+69             \textcolor{keywordflow}{while}(i < admins.size()) \{
+70                     System.out.println(admins.get(i));
+71                     i++;
+72              \}
+73             \textcolor{comment}{//System.out.println(admins);}
+74             \textcolor{keywordflow}{return} admins;
+75     \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classcms_1_1_j_d_b_c_admin_d_a_o_a970f1be51071c85c0b1e55b45f21bcad}\label{classcms_1_1_j_d_b_c_admin_d_a_o_a970f1be51071c85c0b1e55b45f21bcad}} 
+\index{cms\+::\+J\+D\+B\+C\+Admin\+D\+AO@{cms\+::\+J\+D\+B\+C\+Admin\+D\+AO}!connection@{connection}}
+\index{connection@{connection}!cms\+::\+J\+D\+B\+C\+Admin\+D\+AO@{cms\+::\+J\+D\+B\+C\+Admin\+D\+AO}}
+\subsubsection{\texorpdfstring{connection}{connection}}
+{\footnotesize\ttfamily Connection cms.\+J\+D\+B\+C\+Admin\+D\+A\+O.\+connection = null\hspace{0.3cm}{\ttfamily [package]}}
+

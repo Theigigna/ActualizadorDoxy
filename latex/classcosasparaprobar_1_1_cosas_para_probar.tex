@@ -1,0 +1,111 @@
+\hypertarget{classcosasparaprobar_1_1_cosas_para_probar}{}\section{cosasparaprobar.\+Cosas\+Para\+Probar Class Reference}
+\label{classcosasparaprobar_1_1_cosas_para_probar}\index{cosasparaprobar.\+Cosas\+Para\+Probar@{cosasparaprobar.\+Cosas\+Para\+Probar}}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{classcosasparaprobar_1_1_cosas_para_probar_a423e54efe75a56697e235ff194ae3226}{main}} (String\mbox{[}$\,$\mbox{]} args)  throws Interrupted\+Exception 
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyAuthor}{Author}
+Ignacio 
+\end{DoxyAuthor}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classcosasparaprobar_1_1_cosas_para_probar_a423e54efe75a56697e235ff194ae3226}\label{classcosasparaprobar_1_1_cosas_para_probar_a423e54efe75a56697e235ff194ae3226}} 
+\index{cosasparaprobar\+::\+Cosas\+Para\+Probar@{cosasparaprobar\+::\+Cosas\+Para\+Probar}!main@{main}}
+\index{main@{main}!cosasparaprobar\+::\+Cosas\+Para\+Probar@{cosasparaprobar\+::\+Cosas\+Para\+Probar}}
+\subsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily static void cosasparaprobar.\+Cosas\+Para\+Probar.\+main (\begin{DoxyParamCaption}\item[{String \mbox{[}$\,$\mbox{]}}]{args }\end{DoxyParamCaption}) throws Interrupted\+Exception\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em args} & the command line arguments \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+23                                                                        \{
+24         
+25         Semaphore x;
+26         x = \textcolor{keyword}{new} Semaphore(2);
+27         
+28         CyclicBarrier barrera = \textcolor{keyword}{new} CyclicBarrier(3);
+29         
+30         LiberadorBarrier x1 = \textcolor{keyword}{new} LiberadorBarrier(barrera);
+31         WaitingBarrier a1 = \textcolor{keyword}{new} WaitingBarrier(1,barrera);
+32         WaitingBarrier a2 = \textcolor{keyword}{new} WaitingBarrier(2,barrera);
+33         x1.start();
+34         a1.start();
+35         a2.start();
+36         
+37         \textcolor{comment}{//WaitingBarrier a3 = new WaitingBarrier(3,barrera);}
+38         
+39         
+40         
+41         \textcolor{comment}{// TODO code application logic here}
+42         
+43         
+44         
+45         \textcolor{comment}{/*}
+46 \textcolor{comment}{        }
+47 \textcolor{comment}{        }
+48 \textcolor{comment}{        int i = 0;}
+49 \textcolor{comment}{        pruebaLock x [] = new pruebaLock[5];}
+50 \textcolor{comment}{        }
+51 \textcolor{comment}{        for(i = 0;i < 5;i++)}
+52 \textcolor{comment}{        \{}
+53 \textcolor{comment}{            x[i] = new pruebaLock(i);}
+54 \textcolor{comment}{        \}}
+55 \textcolor{comment}{        }
+56 \textcolor{comment}{        for(i = 0;i < 5;i++)}
+57 \textcolor{comment}{        \{}
+58 \textcolor{comment}{            x[i].start();}
+59 \textcolor{comment}{        \}*/}
+60         
+61         
+62         
+63         
+64         \textcolor{comment}{/*}
+65 \textcolor{comment}{        //prueba 1 semaforos}
+66 \textcolor{comment}{        }
+67 \textcolor{comment}{        pruebaSemaoro x1 = new pruebaSemaoro(1,x);}
+68 \textcolor{comment}{        pruebaSemaoro x2 = new pruebaSemaoro(2,x);}
+69 \textcolor{comment}{        pruebaSemaoro x3 = new pruebaSemaoro(3,x);}
+70 \textcolor{comment}{        pruebaSemaoro x4 = new pruebaSemaoro(4,x);}
+71 \textcolor{comment}{        }
+72 \textcolor{comment}{        x1.start();}
+73 \textcolor{comment}{        x2.start();}
+74 \textcolor{comment}{        x3.start();}
+75 \textcolor{comment}{        x4.start();}
+76 \textcolor{comment}{        }
+77 \textcolor{comment}{        x1.join();}
+78 \textcolor{comment}{        x2.join();}
+79 \textcolor{comment}{        x3.join();}
+80 \textcolor{comment}{        x4.join();}
+81 \textcolor{comment}{        */}
+82         
+83         
+84         
+85         
+86         \textcolor{comment}{/*}
+87 \textcolor{comment}{        //prueba 2 semaforo}
+88 \textcolor{comment}{        }
+89 \textcolor{comment}{        x.acquire();}
+90 \textcolor{comment}{        SemaforoAcaparador x1 = new SemaforoAcaparador(x);}
+91 \textcolor{comment}{        SemaforoLiberador x2 = new SemaforoLiberador(x);}
+92 \textcolor{comment}{        }
+93 \textcolor{comment}{        new Thread(x1).start();}
+94 \textcolor{comment}{        new Thread(x2).start();}
+95 \textcolor{comment}{        */}
+96         
+97         
+98         
+99         
+100         
+101         
+102         
+103     \}
+\end{DoxyCode}

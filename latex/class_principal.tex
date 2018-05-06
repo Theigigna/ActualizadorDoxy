@@ -1,0 +1,71 @@
+\hypertarget{class_principal}{}\section{Principal Class Reference}
+\label{class_principal}\index{Principal@{Principal}}
+Inheritance diagram for Principal\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.522012cm]{class_principal}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_principal_a57fba8fa2eedee48e3467024e1a980da}{Principal}} ()
+\item 
+void \mbox{\hyperlink{class_principal_ab5582a52acd5ef67a52625e0a44ac2e9}{init\+States\+List}} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_game_container}{Game\+Container}} arg0)  throws Slick\+Exception
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{class_principal_a122f5159f9c20dc1ac51d94a71dde7a5}{main}} (String\mbox{[}$\,$\mbox{]} args)
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_principal_a57fba8fa2eedee48e3467024e1a980da}\label{class_principal_a57fba8fa2eedee48e3467024e1a980da}} 
+\index{Principal@{Principal}!Principal@{Principal}}
+\index{Principal@{Principal}!Principal@{Principal}}
+\subsubsection{\texorpdfstring{Principal()}{Principal()}}
+{\footnotesize\ttfamily Principal.\+Principal (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+8                       \{
+9         super(\textcolor{stringliteral}{"The Early Access Adventure"});
+10     \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_principal_ab5582a52acd5ef67a52625e0a44ac2e9}\label{class_principal_ab5582a52acd5ef67a52625e0a44ac2e9}} 
+\index{Principal@{Principal}!init\+States\+List@{init\+States\+List}}
+\index{init\+States\+List@{init\+States\+List}!Principal@{Principal}}
+\subsubsection{\texorpdfstring{init\+States\+List()}{initStatesList()}}
+{\footnotesize\ttfamily void Principal.\+init\+States\+List (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_game_container}{Game\+Container}}}]{arg0 }\end{DoxyParamCaption}) throws \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_slick_exception}{Slick\+Exception}}\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+13                                                                         \{
+14         this.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1_state_based_game_acfd4acadb4a4f79fddd7e76250da37dc}{addState}}(\textcolor{keyword}{new} \mbox{\hyperlink{class_lvl1}{Lvl1}}());
+15     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_principal_a122f5159f9c20dc1ac51d94a71dde7a5}\label{class_principal_a122f5159f9c20dc1ac51d94a71dde7a5}} 
+\index{Principal@{Principal}!main@{main}}
+\index{main@{main}!Principal@{Principal}}
+\subsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily static void Principal.\+main (\begin{DoxyParamCaption}\item[{String \mbox{[}$\,$\mbox{]}}]{args }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+\begin{DoxyCode}
+17                                           \{
+18     \textcolor{keywordflow}{try}\{    
+19         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_app_game_container}{AppGameContainer}} app = \textcolor{keyword}{new} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_app_game_container}{AppGameContainer}}(\textcolor{keyword}{new} 
+      \mbox{\hyperlink{class_principal_a57fba8fa2eedee48e3467024e1a980da}{Principal}}());
+20         app.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_app_game_container_aa2de68db61ddd3917a8edc0177ebdfe3}{setDisplayMode}}(640, 360, \textcolor{keyword}{false});
+21         app.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_game_container_aebc1dd5b9cf552bd5c4ff52849920360}{setShowFPS}}(\textcolor{keyword}{false});
+22         app.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_app_game_container_adcadc0e560e64d03be24c817931fdd54}{start}}();
+23     \}\textcolor{keywordflow}{catch}(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_slick_exception}{SlickException}} slick)\{
+24         slick.printStackTrace();
+25     \}
+26     \}
+\end{DoxyCode}

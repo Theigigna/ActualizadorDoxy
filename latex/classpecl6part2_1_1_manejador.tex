@@ -1,0 +1,134 @@
+\hypertarget{classpecl6part2_1_1_manejador}{}\section{pecl6part2.\+Manejador Class Reference}
+\label{classpecl6part2_1_1_manejador}\index{pecl6part2.\+Manejador@{pecl6part2.\+Manejador}}
+Inheritance diagram for pecl6part2.\+Manejador\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classpecl6part2_1_1_manejador}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpecl6part2_1_1_manejador_a2dfa6bc9597c33674de7f04523bbd225}{Manejador}} (Socket \mbox{\hyperlink{classpecl6part2_1_1_manejador_abc6cd500e4ba790bc3ec8415b15c4402}{socket}}, \mbox{\hyperlink{classpecl6part2_1_1_controlador}{Controlador}} \mbox{\hyperlink{classpecl6part2_1_1_manejador_a8c505f81f85f3c9966ab7e7b1df1ce52}{controlador}})
+\item 
+void \mbox{\hyperlink{classpecl6part2_1_1_manejador_a373cdf24e59b78b7a7b17253ba048d65}{run}} ()
+\end{DoxyCompactItemize}
+\subsection*{Package Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Data\+Output\+Stream \mbox{\hyperlink{classpecl6part2_1_1_manejador_aa4962e22248b79c0b03d8e664665f8c7}{salida}}
+\item 
+Data\+Input\+Stream \mbox{\hyperlink{classpecl6part2_1_1_manejador_a77a06f1b0bf9b5c096f487d78d8297ba}{entrada}}
+\item 
+String \mbox{\hyperlink{classpecl6part2_1_1_manejador_a07653dd76eb61d9ca9e453f63d97a700}{respuesta}}
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Socket \mbox{\hyperlink{classpecl6part2_1_1_manejador_abc6cd500e4ba790bc3ec8415b15c4402}{socket}}
+\item 
+\mbox{\hyperlink{classpecl6part2_1_1_controlador}{Controlador}} \mbox{\hyperlink{classpecl6part2_1_1_manejador_a8c505f81f85f3c9966ab7e7b1df1ce52}{controlador}}
+\item 
+boolean \mbox{\hyperlink{classpecl6part2_1_1_manejador_ad89c1ebe96b5a689227a38946ddc5b5d}{salir}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyAuthor}{Author}
+Ignacio 
+\end{DoxyAuthor}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classpecl6part2_1_1_manejador_a2dfa6bc9597c33674de7f04523bbd225}\label{classpecl6part2_1_1_manejador_a2dfa6bc9597c33674de7f04523bbd225}} 
+\index{pecl6part2\+::\+Manejador@{pecl6part2\+::\+Manejador}!Manejador@{Manejador}}
+\index{Manejador@{Manejador}!pecl6part2\+::\+Manejador@{pecl6part2\+::\+Manejador}}
+\subsubsection{\texorpdfstring{Manejador()}{Manejador()}}
+{\footnotesize\ttfamily pecl6part2.\+Manejador.\+Manejador (\begin{DoxyParamCaption}\item[{Socket}]{socket,  }\item[{\mbox{\hyperlink{classpecl6part2_1_1_controlador}{Controlador}}}]{controlador }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+29     \{
+30         this.\mbox{\hyperlink{classpecl6part2_1_1_manejador_ad89c1ebe96b5a689227a38946ddc5b5d}{salir}} = \textcolor{keyword}{false};
+31         this.\mbox{\hyperlink{classpecl6part2_1_1_manejador_a8c505f81f85f3c9966ab7e7b1df1ce52}{controlador}} = \mbox{\hyperlink{classpecl6part2_1_1_manejador_a8c505f81f85f3c9966ab7e7b1df1ce52}{controlador}};
+32         this.\mbox{\hyperlink{classpecl6part2_1_1_manejador_abc6cd500e4ba790bc3ec8415b15c4402}{socket}} = \mbox{\hyperlink{classpecl6part2_1_1_manejador_abc6cd500e4ba790bc3ec8415b15c4402}{socket}};
+33     \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classpecl6part2_1_1_manejador_a373cdf24e59b78b7a7b17253ba048d65}\label{classpecl6part2_1_1_manejador_a373cdf24e59b78b7a7b17253ba048d65}} 
+\index{pecl6part2\+::\+Manejador@{pecl6part2\+::\+Manejador}!run@{run}}
+\index{run@{run}!pecl6part2\+::\+Manejador@{pecl6part2\+::\+Manejador}}
+\subsubsection{\texorpdfstring{run()}{run()}}
+{\footnotesize\ttfamily void pecl6part2.\+Manejador.\+run (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+36     \{
+37         
+38             String mensaje;
+39         \textcolor{keywordflow}{while}(!\mbox{\hyperlink{classpecl6part2_1_1_manejador_ad89c1ebe96b5a689227a38946ddc5b5d}{salir}})
+40         \{
+41             \textcolor{keywordflow}{try} \{
+42                 \mbox{\hyperlink{classpecl6part2_1_1_manejador_a77a06f1b0bf9b5c096f487d78d8297ba}{entrada}} = \textcolor{keyword}{new} DataInputStream(\mbox{\hyperlink{classpecl6part2_1_1_manejador_abc6cd500e4ba790bc3ec8415b15c4402}{socket}}.getInputStream());  \textcolor{comment}{// Abrimos los
+       canales de E/S}
+43                 \mbox{\hyperlink{classpecl6part2_1_1_manejador_aa4962e22248b79c0b03d8e664665f8c7}{salida}}  = \textcolor{keyword}{new} DataOutputStream(\mbox{\hyperlink{classpecl6part2_1_1_manejador_abc6cd500e4ba790bc3ec8415b15c4402}{socket}}.getOutputStream());
+44                  mensaje = \mbox{\hyperlink{classpecl6part2_1_1_manejador_a77a06f1b0bf9b5c096f487d78d8297ba}{entrada}}.readUTF();
+45                  \mbox{\hyperlink{classpecl6part2_1_1_manejador_aa4962e22248b79c0b03d8e664665f8c7}{salida}}.writeUTF(\mbox{\hyperlink{classpecl6part2_1_1_manejador_a8c505f81f85f3c9966ab7e7b1df1ce52}{controlador}}.\mbox{\hyperlink{classpecl6part2_1_1_controlador_a239e662ed9f4ba0e12f81e47f3f2773f}{paraElServer}}); 
+46                 \textcolor{keywordflow}{if}(mensaje == \textcolor{stringliteral}{"Mostrar"})
+47                 \{ \textcolor{comment}{// Le respondemos}
+48                 \}
+49                 \textcolor{keywordflow}{else}
+50                 \{
+51                     \textcolor{keywordflow}{if}(mensaje == \textcolor{stringliteral}{"Salir"})
+52                     \{
+53                         \mbox{\hyperlink{classpecl6part2_1_1_manejador_ad89c1ebe96b5a689227a38946ddc5b5d}{salir}} = \textcolor{keyword}{true};
+54                         \mbox{\hyperlink{classpecl6part2_1_1_manejador_abc6cd500e4ba790bc3ec8415b15c4402}{socket}}.close();  
+55                     \}
+56                 \}
+57             \} \textcolor{keywordflow}{catch} (IOException ex) \{
+58                 Logger.getLogger(\mbox{\hyperlink{classpecl6part2_1_1_manejador_a2dfa6bc9597c33674de7f04523bbd225}{Manejador}}.class.getName()).log(Level.SEVERE, null, ex);
+59             \}
+60         \}
+61     \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classpecl6part2_1_1_manejador_a8c505f81f85f3c9966ab7e7b1df1ce52}\label{classpecl6part2_1_1_manejador_a8c505f81f85f3c9966ab7e7b1df1ce52}} 
+\index{pecl6part2\+::\+Manejador@{pecl6part2\+::\+Manejador}!controlador@{controlador}}
+\index{controlador@{controlador}!pecl6part2\+::\+Manejador@{pecl6part2\+::\+Manejador}}
+\subsubsection{\texorpdfstring{controlador}{controlador}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classpecl6part2_1_1_controlador}{Controlador}} pecl6part2.\+Manejador.\+controlador\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classpecl6part2_1_1_manejador_a77a06f1b0bf9b5c096f487d78d8297ba}\label{classpecl6part2_1_1_manejador_a77a06f1b0bf9b5c096f487d78d8297ba}} 
+\index{pecl6part2\+::\+Manejador@{pecl6part2\+::\+Manejador}!entrada@{entrada}}
+\index{entrada@{entrada}!pecl6part2\+::\+Manejador@{pecl6part2\+::\+Manejador}}
+\subsubsection{\texorpdfstring{entrada}{entrada}}
+{\footnotesize\ttfamily Data\+Input\+Stream pecl6part2.\+Manejador.\+entrada\hspace{0.3cm}{\ttfamily [package]}}
+
+\mbox{\Hypertarget{classpecl6part2_1_1_manejador_a07653dd76eb61d9ca9e453f63d97a700}\label{classpecl6part2_1_1_manejador_a07653dd76eb61d9ca9e453f63d97a700}} 
+\index{pecl6part2\+::\+Manejador@{pecl6part2\+::\+Manejador}!respuesta@{respuesta}}
+\index{respuesta@{respuesta}!pecl6part2\+::\+Manejador@{pecl6part2\+::\+Manejador}}
+\subsubsection{\texorpdfstring{respuesta}{respuesta}}
+{\footnotesize\ttfamily String pecl6part2.\+Manejador.\+respuesta\hspace{0.3cm}{\ttfamily [package]}}
+
+\mbox{\Hypertarget{classpecl6part2_1_1_manejador_aa4962e22248b79c0b03d8e664665f8c7}\label{classpecl6part2_1_1_manejador_aa4962e22248b79c0b03d8e664665f8c7}} 
+\index{pecl6part2\+::\+Manejador@{pecl6part2\+::\+Manejador}!salida@{salida}}
+\index{salida@{salida}!pecl6part2\+::\+Manejador@{pecl6part2\+::\+Manejador}}
+\subsubsection{\texorpdfstring{salida}{salida}}
+{\footnotesize\ttfamily Data\+Output\+Stream pecl6part2.\+Manejador.\+salida\hspace{0.3cm}{\ttfamily [package]}}
+
+\mbox{\Hypertarget{classpecl6part2_1_1_manejador_ad89c1ebe96b5a689227a38946ddc5b5d}\label{classpecl6part2_1_1_manejador_ad89c1ebe96b5a689227a38946ddc5b5d}} 
+\index{pecl6part2\+::\+Manejador@{pecl6part2\+::\+Manejador}!salir@{salir}}
+\index{salir@{salir}!pecl6part2\+::\+Manejador@{pecl6part2\+::\+Manejador}}
+\subsubsection{\texorpdfstring{salir}{salir}}
+{\footnotesize\ttfamily boolean pecl6part2.\+Manejador.\+salir\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classpecl6part2_1_1_manejador_abc6cd500e4ba790bc3ec8415b15c4402}\label{classpecl6part2_1_1_manejador_abc6cd500e4ba790bc3ec8415b15c4402}} 
+\index{pecl6part2\+::\+Manejador@{pecl6part2\+::\+Manejador}!socket@{socket}}
+\index{socket@{socket}!pecl6part2\+::\+Manejador@{pecl6part2\+::\+Manejador}}
+\subsubsection{\texorpdfstring{socket}{socket}}
+{\footnotesize\ttfamily Socket pecl6part2.\+Manejador.\+socket\hspace{0.3cm}{\ttfamily [private]}}
+

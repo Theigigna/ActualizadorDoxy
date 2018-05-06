@@ -1,0 +1,99 @@
+\hypertarget{classorg_1_1newdawn_1_1slick_1_1particles_1_1_particle_system_1_1_particle_pool}{}\section{org.\+newdawn.\+slick.\+particles.\+Particle\+System.\+Particle\+Pool Class Reference}
+\label{classorg_1_1newdawn_1_1slick_1_1particles_1_1_particle_system_1_1_particle_pool}\index{org.\+newdawn.\+slick.\+particles.\+Particle\+System.\+Particle\+Pool@{org.\+newdawn.\+slick.\+particles.\+Particle\+System.\+Particle\+Pool}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1particles_1_1_particle_system_1_1_particle_pool_a07642b4092c609693a51f6e6d7d728dc}{Particle\+Pool}} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1particles_1_1_particle_system}{Particle\+System}} system, int max\+Particles)
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1particles_1_1_particle_system_1_1_particle_pool_a09cbcb1e4ef2844bb213923afedbf536}{reset}} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1particles_1_1_particle_system}{Particle\+System}} system)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1particles_1_1_particle}{Particle}} \mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1particles_1_1_particle_system_1_1_particle_pool_a6b4dcf4ad8123ed1dd510d1e50ba7adf}{particles}}
+\item 
+Array\+List \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1particles_1_1_particle_system_1_1_particle_pool_aec7206b9670d0a0826151c81b89f8681}{available}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A pool of particles being used by a specific emitter
+
+\begin{DoxyAuthor}{Author}
+void 
+\end{DoxyAuthor}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1particles_1_1_particle_system_1_1_particle_pool_a07642b4092c609693a51f6e6d7d728dc}\label{classorg_1_1newdawn_1_1slick_1_1particles_1_1_particle_system_1_1_particle_pool_a07642b4092c609693a51f6e6d7d728dc}} 
+\index{org\+::newdawn\+::slick\+::particles\+::\+Particle\+System\+::\+Particle\+Pool@{org\+::newdawn\+::slick\+::particles\+::\+Particle\+System\+::\+Particle\+Pool}!Particle\+Pool@{Particle\+Pool}}
+\index{Particle\+Pool@{Particle\+Pool}!org\+::newdawn\+::slick\+::particles\+::\+Particle\+System\+::\+Particle\+Pool@{org\+::newdawn\+::slick\+::particles\+::\+Particle\+System\+::\+Particle\+Pool}}
+\subsubsection{\texorpdfstring{Particle\+Pool()}{ParticlePool()}}
+{\footnotesize\ttfamily org.\+newdawn.\+slick.\+particles.\+Particle\+System.\+Particle\+Pool.\+Particle\+Pool (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1particles_1_1_particle_system}{Particle\+System}}}]{system,  }\item[{int}]{max\+Particles }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Create a new particle pool contiaining a set of particles
+
+
+\begin{DoxyParams}{Parameters}
+{\em system} & The system that owns the particles over all \\
+\hline
+{\em max\+Particles} & The maximum number of particles in the pool \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+71         \{
+72             \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1particles_1_1_particle_system_1_1_particle_pool_a6b4dcf4ad8123ed1dd510d1e50ba7adf}{particles}} = \textcolor{keyword}{new} Particle[ maxParticles ];
+73             \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1particles_1_1_particle_system_1_1_particle_pool_aec7206b9670d0a0826151c81b89f8681}{available}} = \textcolor{keyword}{new} ArrayList();
+74             
+75             \textcolor{keywordflow}{for}( \textcolor{keywordtype}{int} i=0; i<\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1particles_1_1_particle_system_1_1_particle_pool_a6b4dcf4ad8123ed1dd510d1e50ba7adf}{particles}}.length; i++ )
+76             \{
+77                 \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1particles_1_1_particle_system_1_1_particle_pool_a6b4dcf4ad8123ed1dd510d1e50ba7adf}{particles}}[i] = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1particles_1_1_particle_system_ac03492cca10c01f7df6968e4293f65b7}{createParticle}}( system );
+78             \}
+79             
+80             \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1particles_1_1_particle_system_1_1_particle_pool_a09cbcb1e4ef2844bb213923afedbf536}{reset}}(system);
+81         \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1particles_1_1_particle_system_1_1_particle_pool_a09cbcb1e4ef2844bb213923afedbf536}\label{classorg_1_1newdawn_1_1slick_1_1particles_1_1_particle_system_1_1_particle_pool_a09cbcb1e4ef2844bb213923afedbf536}} 
+\index{org\+::newdawn\+::slick\+::particles\+::\+Particle\+System\+::\+Particle\+Pool@{org\+::newdawn\+::slick\+::particles\+::\+Particle\+System\+::\+Particle\+Pool}!reset@{reset}}
+\index{reset@{reset}!org\+::newdawn\+::slick\+::particles\+::\+Particle\+System\+::\+Particle\+Pool@{org\+::newdawn\+::slick\+::particles\+::\+Particle\+System\+::\+Particle\+Pool}}
+\subsubsection{\texorpdfstring{reset()}{reset()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+particles.\+Particle\+System.\+Particle\+Pool.\+reset (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1particles_1_1_particle_system}{Particle\+System}}}]{system }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Rest the list of particles
+
+
+\begin{DoxyParams}{Parameters}
+{\em system} & The system in which the particle belong \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+88                                                  \{
+89             \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1particles_1_1_particle_system_1_1_particle_pool_aec7206b9670d0a0826151c81b89f8681}{available}}.clear();
+90             
+91             \textcolor{keywordflow}{for}( \textcolor{keywordtype}{int} i=0; i<\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1particles_1_1_particle_system_1_1_particle_pool_a6b4dcf4ad8123ed1dd510d1e50ba7adf}{particles}}.length; i++ )
+92             \{
+93                 \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1particles_1_1_particle_system_1_1_particle_pool_aec7206b9670d0a0826151c81b89f8681}{available}}.add(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1particles_1_1_particle_system_1_1_particle_pool_a6b4dcf4ad8123ed1dd510d1e50ba7adf}{particles}}[i]);
+94             \}
+95         \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1particles_1_1_particle_system_1_1_particle_pool_aec7206b9670d0a0826151c81b89f8681}\label{classorg_1_1newdawn_1_1slick_1_1particles_1_1_particle_system_1_1_particle_pool_aec7206b9670d0a0826151c81b89f8681}} 
+\index{org\+::newdawn\+::slick\+::particles\+::\+Particle\+System\+::\+Particle\+Pool@{org\+::newdawn\+::slick\+::particles\+::\+Particle\+System\+::\+Particle\+Pool}!available@{available}}
+\index{available@{available}!org\+::newdawn\+::slick\+::particles\+::\+Particle\+System\+::\+Particle\+Pool@{org\+::newdawn\+::slick\+::particles\+::\+Particle\+System\+::\+Particle\+Pool}}
+\subsubsection{\texorpdfstring{available}{available}}
+{\footnotesize\ttfamily Array\+List org.\+newdawn.\+slick.\+particles.\+Particle\+System.\+Particle\+Pool.\+available}
+
+The list of particles left to be used, if this size() == 0 then the particle engine was too small for the effect \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1particles_1_1_particle_system_1_1_particle_pool_a6b4dcf4ad8123ed1dd510d1e50ba7adf}\label{classorg_1_1newdawn_1_1slick_1_1particles_1_1_particle_system_1_1_particle_pool_a6b4dcf4ad8123ed1dd510d1e50ba7adf}} 
+\index{org\+::newdawn\+::slick\+::particles\+::\+Particle\+System\+::\+Particle\+Pool@{org\+::newdawn\+::slick\+::particles\+::\+Particle\+System\+::\+Particle\+Pool}!particles@{particles}}
+\index{particles@{particles}!org\+::newdawn\+::slick\+::particles\+::\+Particle\+System\+::\+Particle\+Pool@{org\+::newdawn\+::slick\+::particles\+::\+Particle\+System\+::\+Particle\+Pool}}
+\subsubsection{\texorpdfstring{particles}{particles}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1particles_1_1_particle}{Particle}} \mbox{[}$\,$\mbox{]} org.\+newdawn.\+slick.\+particles.\+Particle\+System.\+Particle\+Pool.\+particles}
+
+The particles being rendered and maintained 

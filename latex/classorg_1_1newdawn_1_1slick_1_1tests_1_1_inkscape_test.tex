@@ -1,0 +1,229 @@
+\hypertarget{classorg_1_1newdawn_1_1slick_1_1tests_1_1_inkscape_test}{}\section{org.\+newdawn.\+slick.\+tests.\+Inkscape\+Test Class Reference}
+\label{classorg_1_1newdawn_1_1slick_1_1tests_1_1_inkscape_test}\index{org.\+newdawn.\+slick.\+tests.\+Inkscape\+Test@{org.\+newdawn.\+slick.\+tests.\+Inkscape\+Test}}
+Inheritance diagram for org.\+newdawn.\+slick.\+tests.\+Inkscape\+Test\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.522012cm]{classorg_1_1newdawn_1_1slick_1_1tests_1_1_inkscape_test}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_inkscape_test_af8c8454a56a3690c18456a069a166a90}{Inkscape\+Test}} ()
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_inkscape_test_a8a36fbd071d89a6d399673e246fe9409}{init}} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_game_container}{Game\+Container}} container)  throws Slick\+Exception 
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_inkscape_test_ac8de6c02e969c4349f2b6b428d3f8630}{update}} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_game_container}{Game\+Container}} container, int delta)  throws Slick\+Exception 
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_inkscape_test_a76a9b74eff0ae959f572bc67c2f13124}{render}} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_game_container}{Game\+Container}} container, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_graphics}{Graphics}} g)  throws Slick\+Exception 
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_inkscape_test_a3a2111e00dd3ca25c44e087984e5fece}{main}} (String argv\mbox{[}$\,$\mbox{]})
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1_simple_diagram_renderer}{Simple\+Diagram\+Renderer}} \mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_inkscape_test_ad55f8a6c6ee8f9f5b708e61240e4ce9a}{renderer}} = new \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1_simple_diagram_renderer}{Simple\+Diagram\+Renderer}}\mbox{[}5\mbox{]}
+\item 
+float \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_inkscape_test_ab12f97286b8d91a4a34120db6c223d73}{zoom}} = 1
+\item 
+float \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_inkscape_test_ac1c5e9cb77532a2ac45acb0463eff275}{x}}
+\item 
+float \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_inkscape_test_a33b17405f7d73dabfaa62122e2a042c8}{y}}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+A rudimentry test of loading S\+VG from inkscape
+
+\begin{DoxyAuthor}{Author}
+kevin 
+\end{DoxyAuthor}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tests_1_1_inkscape_test_af8c8454a56a3690c18456a069a166a90}\label{classorg_1_1newdawn_1_1slick_1_1tests_1_1_inkscape_test_af8c8454a56a3690c18456a069a166a90}} 
+\index{org\+::newdawn\+::slick\+::tests\+::\+Inkscape\+Test@{org\+::newdawn\+::slick\+::tests\+::\+Inkscape\+Test}!Inkscape\+Test@{Inkscape\+Test}}
+\index{Inkscape\+Test@{Inkscape\+Test}!org\+::newdawn\+::slick\+::tests\+::\+Inkscape\+Test@{org\+::newdawn\+::slick\+::tests\+::\+Inkscape\+Test}}
+\subsubsection{\texorpdfstring{Inkscape\+Test()}{InkscapeTest()}}
+{\footnotesize\ttfamily org.\+newdawn.\+slick.\+tests.\+Inkscape\+Test.\+Inkscape\+Test (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Create a new test for inkscape loading 
+\begin{DoxyCode}
+32                           \{
+33         super(\textcolor{stringliteral}{"Inkscape Test"});
+34     \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tests_1_1_inkscape_test_a8a36fbd071d89a6d399673e246fe9409}\label{classorg_1_1newdawn_1_1slick_1_1tests_1_1_inkscape_test_a8a36fbd071d89a6d399673e246fe9409}} 
+\index{org\+::newdawn\+::slick\+::tests\+::\+Inkscape\+Test@{org\+::newdawn\+::slick\+::tests\+::\+Inkscape\+Test}!init@{init}}
+\index{init@{init}!org\+::newdawn\+::slick\+::tests\+::\+Inkscape\+Test@{org\+::newdawn\+::slick\+::tests\+::\+Inkscape\+Test}}
+\subsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+tests.\+Inkscape\+Test.\+init (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_game_container}{Game\+Container}}}]{container }\end{DoxyParamCaption}) throws \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_slick_exception}{Slick\+Exception}}\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_basic_game_a8af0900217e4d389249f71367b22d114}{org.\+newdawn.\+slick.\+Basic\+Game\+::init}}(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_game_container}{org.\+newdawn.\+slick.\+Game\+Container}}) 
+\end{DoxySeeAlso}
+
+
+Implements \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1_game_ad2dd6affab08bb8fdb5fab0815957b7a}{org.\+newdawn.\+slick.\+Game}}.
+
+
+\begin{DoxyCode}
+39                                                                     \{
+40         container.getGraphics().setBackground(Color.white);
+41         
+42         InkscapeLoader.RADIAL\_TRIANGULATION\_LEVEL = 2;
+43         
+44 \textcolor{comment}{//      renderer[0] = new SimpleDiagramRenderer(InkscapeLoader.load("testdata/svg/orc.svg"));}
+45 \textcolor{comment}{//      renderer[1] = new SimpleDiagramRenderer(InkscapeLoader.load("testdata/svg/head2.svg"));}
+46 \textcolor{comment}{//      renderer[2] = new SimpleDiagramRenderer(InkscapeLoader.load("testdata/svg/head3.svg"));}
+47         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_inkscape_test_ad55f8a6c6ee8f9f5b708e61240e4ce9a}{renderer}}[3] = \textcolor{keyword}{new} SimpleDiagramRenderer(InkscapeLoader.load(\textcolor{stringliteral}{"testdata/svg/clonetest.svg"}));
+48 \textcolor{comment}{//      renderer[4] = new SimpleDiagramRenderer(InkscapeLoader.load("testdata/svg/cow.svg"));}
+49         
+50         container.getGraphics().setBackground(\textcolor{keyword}{new} Color(0.5f,0.7f,1.0f));
+51     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tests_1_1_inkscape_test_a3a2111e00dd3ca25c44e087984e5fece}\label{classorg_1_1newdawn_1_1slick_1_1tests_1_1_inkscape_test_a3a2111e00dd3ca25c44e087984e5fece}} 
+\index{org\+::newdawn\+::slick\+::tests\+::\+Inkscape\+Test@{org\+::newdawn\+::slick\+::tests\+::\+Inkscape\+Test}!main@{main}}
+\index{main@{main}!org\+::newdawn\+::slick\+::tests\+::\+Inkscape\+Test@{org\+::newdawn\+::slick\+::tests\+::\+Inkscape\+Test}}
+\subsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily static void org.\+newdawn.\+slick.\+tests.\+Inkscape\+Test.\+main (\begin{DoxyParamCaption}\item[{String}]{argv\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Entry point to our simple test
+
+
+\begin{DoxyParams}{Parameters}
+{\em argv} & The arguments passed in \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+116                                            \{
+117         \textcolor{keywordflow}{try} \{
+118             Renderer.setRenderer(Renderer.VERTEX\_ARRAY\_RENDERER);
+119             Renderer.setLineStripRenderer(Renderer.QUAD\_BASED\_LINE\_STRIP\_RENDERER);
+120             
+121             AppGameContainer container = \textcolor{keyword}{new} AppGameContainer(\textcolor{keyword}{new} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_inkscape_test_af8c8454a56a3690c18456a069a166a90}{InkscapeTest}}());
+122             container.setDisplayMode(800,600,\textcolor{keyword}{false});
+123             container.start();
+124         \} \textcolor{keywordflow}{catch} (SlickException e) \{
+125             e.printStackTrace();
+126         \}
+127     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tests_1_1_inkscape_test_a76a9b74eff0ae959f572bc67c2f13124}\label{classorg_1_1newdawn_1_1slick_1_1tests_1_1_inkscape_test_a76a9b74eff0ae959f572bc67c2f13124}} 
+\index{org\+::newdawn\+::slick\+::tests\+::\+Inkscape\+Test@{org\+::newdawn\+::slick\+::tests\+::\+Inkscape\+Test}!render@{render}}
+\index{render@{render}!org\+::newdawn\+::slick\+::tests\+::\+Inkscape\+Test@{org\+::newdawn\+::slick\+::tests\+::\+Inkscape\+Test}}
+\subsubsection{\texorpdfstring{render()}{render()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+tests.\+Inkscape\+Test.\+render (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_game_container}{Game\+Container}}}]{container,  }\item[{\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_graphics}{Graphics}}}]{g }\end{DoxyParamCaption}) throws \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_slick_exception}{Slick\+Exception}}\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1_game_af1a4670d43eb3ba04dfcf55ab1975b64}{org.\+newdawn.\+slick.\+Game\+::render}}(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_game_container}{org.\+newdawn.\+slick.\+Game\+Container}}, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_graphics}{org.\+newdawn.\+slick.\+Graphics}}) 
+\end{DoxySeeAlso}
+
+
+Implements \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1_game_af1a4670d43eb3ba04dfcf55ab1975b64}{org.\+newdawn.\+slick.\+Game}}.
+
+
+\begin{DoxyCode}
+86                                                                                   \{
+87         g.scale(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_inkscape_test_ab12f97286b8d91a4a34120db6c223d73}{zoom}},\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_inkscape_test_ab12f97286b8d91a4a34120db6c223d73}{zoom}});
+88         g.translate(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_inkscape_test_ac1c5e9cb77532a2ac45acb0463eff275}{x}}, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_inkscape_test_a33b17405f7d73dabfaa62122e2a042c8}{y}});
+89         g.scale(0.3f,0.3f);
+90         \textcolor{comment}{//renderer[0].render(g);}
+91         g.scale(1/0.3f,1/0.3f);
+92         g.translate(400, 0);
+93         \textcolor{comment}{//renderer[1].render(g);}
+94         g.translate(100, 300);
+95         g.scale(0.7f,0.7f);
+96         \textcolor{comment}{//renderer[2].render(g);}
+97         g.scale(1/0.7f,1/0.7f);
+98         
+99         g.scale(0.5f,0.5f);
+100         g.translate(-1100, -380);
+101         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_inkscape_test_ad55f8a6c6ee8f9f5b708e61240e4ce9a}{renderer}}[3].\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1_simple_diagram_renderer_a96e551c2437df27242c43353a85bd8ec}{render}}(g);
+102         g.scale(1/0.5f,1/0.5f);
+103         
+104 \textcolor{comment}{//      g.translate(280, 100);}
+105 \textcolor{comment}{//      g.scale(0.5f,0.5f);}
+106 \textcolor{comment}{//      renderer[4].render(g);}
+107         
+108         g.resetTransform();
+109     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tests_1_1_inkscape_test_ac8de6c02e969c4349f2b6b428d3f8630}\label{classorg_1_1newdawn_1_1slick_1_1tests_1_1_inkscape_test_ac8de6c02e969c4349f2b6b428d3f8630}} 
+\index{org\+::newdawn\+::slick\+::tests\+::\+Inkscape\+Test@{org\+::newdawn\+::slick\+::tests\+::\+Inkscape\+Test}!update@{update}}
+\index{update@{update}!org\+::newdawn\+::slick\+::tests\+::\+Inkscape\+Test@{org\+::newdawn\+::slick\+::tests\+::\+Inkscape\+Test}}
+\subsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+tests.\+Inkscape\+Test.\+update (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_game_container}{Game\+Container}}}]{container,  }\item[{int}]{delta }\end{DoxyParamCaption}) throws \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_slick_exception}{Slick\+Exception}}\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_basic_game_acfe6fa05aef83bff1631af91a3e4bd20}{org.\+newdawn.\+slick.\+Basic\+Game\+::update}}(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_game_container}{org.\+newdawn.\+slick.\+Game\+Container}}, int) 
+\end{DoxySeeAlso}
+
+
+Implements \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1_game_ab07b2e9463ee4631620dde0de25bdee8}{org.\+newdawn.\+slick.\+Game}}.
+
+
+\begin{DoxyCode}
+56                                                                                  \{
+57         \textcolor{keywordflow}{if} (container.getInput().isKeyDown(Input.KEY\_Q)) \{
+58             \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_inkscape_test_ab12f97286b8d91a4a34120db6c223d73}{zoom}} += (delta * 0.01f);
+59             \textcolor{keywordflow}{if} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_inkscape_test_ab12f97286b8d91a4a34120db6c223d73}{zoom}} > 10) \{
+60                 \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_inkscape_test_ab12f97286b8d91a4a34120db6c223d73}{zoom}} = 10;
+61             \}
+62         \}
+63         \textcolor{keywordflow}{if} (container.getInput().isKeyDown(Input.KEY\_A)) \{
+64             \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_inkscape_test_ab12f97286b8d91a4a34120db6c223d73}{zoom}} -= (delta * 0.01f);
+65             \textcolor{keywordflow}{if} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_inkscape_test_ab12f97286b8d91a4a34120db6c223d73}{zoom}} < 0.1f) \{
+66                 \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_inkscape_test_ab12f97286b8d91a4a34120db6c223d73}{zoom}} = 0.1f;
+67             \}
+68         \}
+69         \textcolor{keywordflow}{if} (container.getInput().isKeyDown(Input.KEY\_RIGHT)) \{
+70             \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_inkscape_test_ac1c5e9cb77532a2ac45acb0463eff275}{x}} += (delta * 0.1f);
+71         \}
+72         \textcolor{keywordflow}{if} (container.getInput().isKeyDown(Input.KEY\_LEFT)) \{
+73             \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_inkscape_test_ac1c5e9cb77532a2ac45acb0463eff275}{x}} -= (delta * 0.1f);
+74         \}
+75         \textcolor{keywordflow}{if} (container.getInput().isKeyDown(Input.KEY\_DOWN)) \{
+76             \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_inkscape_test_a33b17405f7d73dabfaa62122e2a042c8}{y}} += (delta * 0.1f);
+77         \}
+78         \textcolor{keywordflow}{if} (container.getInput().isKeyDown(Input.KEY\_UP)) \{
+79             \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_inkscape_test_a33b17405f7d73dabfaa62122e2a042c8}{y}} -= (delta * 0.1f);
+80         \}
+81     \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tests_1_1_inkscape_test_ad55f8a6c6ee8f9f5b708e61240e4ce9a}\label{classorg_1_1newdawn_1_1slick_1_1tests_1_1_inkscape_test_ad55f8a6c6ee8f9f5b708e61240e4ce9a}} 
+\index{org\+::newdawn\+::slick\+::tests\+::\+Inkscape\+Test@{org\+::newdawn\+::slick\+::tests\+::\+Inkscape\+Test}!renderer@{renderer}}
+\index{renderer@{renderer}!org\+::newdawn\+::slick\+::tests\+::\+Inkscape\+Test@{org\+::newdawn\+::slick\+::tests\+::\+Inkscape\+Test}}
+\subsubsection{\texorpdfstring{renderer}{renderer}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1_simple_diagram_renderer}{Simple\+Diagram\+Renderer}} \mbox{[}$\,$\mbox{]} org.\+newdawn.\+slick.\+tests.\+Inkscape\+Test.\+renderer = new \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1_simple_diagram_renderer}{Simple\+Diagram\+Renderer}}\mbox{[}5\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}
+
+The renderer doing the work \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tests_1_1_inkscape_test_ac1c5e9cb77532a2ac45acb0463eff275}\label{classorg_1_1newdawn_1_1slick_1_1tests_1_1_inkscape_test_ac1c5e9cb77532a2ac45acb0463eff275}} 
+\index{org\+::newdawn\+::slick\+::tests\+::\+Inkscape\+Test@{org\+::newdawn\+::slick\+::tests\+::\+Inkscape\+Test}!x@{x}}
+\index{x@{x}!org\+::newdawn\+::slick\+::tests\+::\+Inkscape\+Test@{org\+::newdawn\+::slick\+::tests\+::\+Inkscape\+Test}}
+\subsubsection{\texorpdfstring{x}{x}}
+{\footnotesize\ttfamily float org.\+newdawn.\+slick.\+tests.\+Inkscape\+Test.\+x\hspace{0.3cm}{\ttfamily [private]}}
+
+The x location \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tests_1_1_inkscape_test_a33b17405f7d73dabfaa62122e2a042c8}\label{classorg_1_1newdawn_1_1slick_1_1tests_1_1_inkscape_test_a33b17405f7d73dabfaa62122e2a042c8}} 
+\index{org\+::newdawn\+::slick\+::tests\+::\+Inkscape\+Test@{org\+::newdawn\+::slick\+::tests\+::\+Inkscape\+Test}!y@{y}}
+\index{y@{y}!org\+::newdawn\+::slick\+::tests\+::\+Inkscape\+Test@{org\+::newdawn\+::slick\+::tests\+::\+Inkscape\+Test}}
+\subsubsection{\texorpdfstring{y}{y}}
+{\footnotesize\ttfamily float org.\+newdawn.\+slick.\+tests.\+Inkscape\+Test.\+y\hspace{0.3cm}{\ttfamily [private]}}
+
+The y location \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tests_1_1_inkscape_test_ab12f97286b8d91a4a34120db6c223d73}\label{classorg_1_1newdawn_1_1slick_1_1tests_1_1_inkscape_test_ab12f97286b8d91a4a34120db6c223d73}} 
+\index{org\+::newdawn\+::slick\+::tests\+::\+Inkscape\+Test@{org\+::newdawn\+::slick\+::tests\+::\+Inkscape\+Test}!zoom@{zoom}}
+\index{zoom@{zoom}!org\+::newdawn\+::slick\+::tests\+::\+Inkscape\+Test@{org\+::newdawn\+::slick\+::tests\+::\+Inkscape\+Test}}
+\subsubsection{\texorpdfstring{zoom}{zoom}}
+{\footnotesize\ttfamily float org.\+newdawn.\+slick.\+tests.\+Inkscape\+Test.\+zoom = 1\hspace{0.3cm}{\ttfamily [private]}}
+
+The zoom 

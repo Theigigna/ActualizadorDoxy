@@ -1,0 +1,142 @@
+\hypertarget{class_ejercicio1_1_1_buffer}{}\section{Ejercicio1.\+Buffer Class Reference}
+\label{class_ejercicio1_1_1_buffer}\index{Ejercicio1.\+Buffer@{Ejercicio1.\+Buffer}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+synchronized void \mbox{\hyperlink{class_ejercicio1_1_1_buffer_ae8a567959dc32c3965d89f487e2b889f}{envia\+Mensaje}} (String msg)
+\item 
+synchronized String \mbox{\hyperlink{class_ejercicio1_1_1_buffer_a534af142b15755b1e0d4c6511e37683b}{recibe\+Mensaje}} ()
+\end{DoxyCompactItemize}
+\subsection*{Package Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Boolean \mbox{\hyperlink{class_ejercicio1_1_1_buffer_afdd9e035a2241756d0af2c6c75e51e16}{recibiendo}} = false
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Blocking\+Queue \mbox{\hyperlink{class_ejercicio1_1_1_buffer_a8aac505cb8d56d8242ef65e0701079bf}{buffer}} = new Array\+Blocking\+Queue$<$String$>$(40)
+\item 
+String \mbox{\hyperlink{class_ejercicio1_1_1_buffer_a65724a90ec1aad8e0123885df33c1b2d}{mensaje}} \mbox{[}$\,$\mbox{]} = new String \mbox{[}40\mbox{]}
+\item 
+boolean \mbox{\hyperlink{class_ejercicio1_1_1_buffer_ac31a3784041537125eb245e82a5dcc8f}{lleno}} =false
+\item 
+int \mbox{\hyperlink{class_ejercicio1_1_1_buffer_a2d253914c2d2e673971f0486f0499e82}{contador}} = 0
+\item 
+Boolean \mbox{\hyperlink{class_ejercicio1_1_1_buffer_a7aa644ce09536853de7eb8568628db7b}{enviando}} = false
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_ejercicio1_1_1_buffer_ae8a567959dc32c3965d89f487e2b889f}\label{class_ejercicio1_1_1_buffer_ae8a567959dc32c3965d89f487e2b889f}} 
+\index{Ejercicio1\+::\+Buffer@{Ejercicio1\+::\+Buffer}!envia\+Mensaje@{envia\+Mensaje}}
+\index{envia\+Mensaje@{envia\+Mensaje}!Ejercicio1\+::\+Buffer@{Ejercicio1\+::\+Buffer}}
+\subsubsection{\texorpdfstring{envia\+Mensaje()}{enviaMensaje()}}
+{\footnotesize\ttfamily synchronized void Ejercicio1.\+Buffer.\+envia\+Mensaje (\begin{DoxyParamCaption}\item[{String}]{msg }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+24     \{
+25         
+26         \textcolor{keywordflow}{while}(\mbox{\hyperlink{class_ejercicio1_1_1_buffer_ac31a3784041537125eb245e82a5dcc8f}{lleno}})
+27         \{
+28             \textcolor{keywordflow}{try} \{
+29                 wait();
+30             \} \textcolor{keywordflow}{catch} (InterruptedException ex) \{
+31                 Logger.getLogger(Buffer.class.getName()).log(Level.SEVERE, null, ex);
+32             \}
+33         \}
+34         
+35         \mbox{\hyperlink{class_ejercicio1_1_1_buffer_a2d253914c2d2e673971f0486f0499e82}{contador}}++;
+36         
+37         \textcolor{keywordflow}{try} \{
+38             \mbox{\hyperlink{class_ejercicio1_1_1_buffer_a8aac505cb8d56d8242ef65e0701079bf}{buffer}}.put(msg);
+39         \} \textcolor{keywordflow}{catch} (InterruptedException ex) \{
+40             Logger.getLogger(Buffer.class.getName()).log(Level.SEVERE, null, ex);
+41         \}
+42         
+43         \textcolor{keywordflow}{if}(\mbox{\hyperlink{class_ejercicio1_1_1_buffer_a2d253914c2d2e673971f0486f0499e82}{contador}} == 40)
+44         \{
+45             \mbox{\hyperlink{class_ejercicio1_1_1_buffer_ac31a3784041537125eb245e82a5dcc8f}{lleno}}=\textcolor{keyword}{true};
+46         \}
+47         
+48         
+49         notifyAll();
+50     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_ejercicio1_1_1_buffer_a534af142b15755b1e0d4c6511e37683b}\label{class_ejercicio1_1_1_buffer_a534af142b15755b1e0d4c6511e37683b}} 
+\index{Ejercicio1\+::\+Buffer@{Ejercicio1\+::\+Buffer}!recibe\+Mensaje@{recibe\+Mensaje}}
+\index{recibe\+Mensaje@{recibe\+Mensaje}!Ejercicio1\+::\+Buffer@{Ejercicio1\+::\+Buffer}}
+\subsubsection{\texorpdfstring{recibe\+Mensaje()}{recibeMensaje()}}
+{\footnotesize\ttfamily synchronized String Ejercicio1.\+Buffer.\+recibe\+Mensaje (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+55     \{
+56         String aux = \textcolor{stringliteral}{"ERROR"};
+57         \textcolor{keywordtype}{int} i = 0;
+58         
+59         
+60         \textcolor{keywordflow}{while}(\mbox{\hyperlink{class_ejercicio1_1_1_buffer_a2d253914c2d2e673971f0486f0499e82}{contador}} <= 0)
+61         \{
+62             \textcolor{keywordflow}{try} \{
+63                 wait();
+64             \} \textcolor{keywordflow}{catch} (InterruptedException ex) \{
+65                 Logger.getLogger(Buffer.class.getName()).log(Level.SEVERE, null, ex);
+66             \}
+67             
+68         \}
+69         
+70         \textcolor{keywordflow}{try} \{
+71             aux = (String) \mbox{\hyperlink{class_ejercicio1_1_1_buffer_a8aac505cb8d56d8242ef65e0701079bf}{buffer}}.take();
+72         \} \textcolor{keywordflow}{catch} (InterruptedException ex) \{
+73             Logger.getLogger(Buffer.class.getName()).log(Level.SEVERE, null, ex);
+74         \}
+75         
+76         \mbox{\hyperlink{class_ejercicio1_1_1_buffer_a2d253914c2d2e673971f0486f0499e82}{contador}}--;
+77         \mbox{\hyperlink{class_ejercicio1_1_1_buffer_ac31a3784041537125eb245e82a5dcc8f}{lleno}}=\textcolor{keyword}{false};
+78         
+79         notifyAll();
+80         \textcolor{keywordflow}{return} aux;
+81         
+82     \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_ejercicio1_1_1_buffer_a8aac505cb8d56d8242ef65e0701079bf}\label{class_ejercicio1_1_1_buffer_a8aac505cb8d56d8242ef65e0701079bf}} 
+\index{Ejercicio1\+::\+Buffer@{Ejercicio1\+::\+Buffer}!buffer@{buffer}}
+\index{buffer@{buffer}!Ejercicio1\+::\+Buffer@{Ejercicio1\+::\+Buffer}}
+\subsubsection{\texorpdfstring{buffer}{buffer}}
+{\footnotesize\ttfamily Blocking\+Queue Ejercicio1.\+Buffer.\+buffer = new Array\+Blocking\+Queue$<$String$>$(40)\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_ejercicio1_1_1_buffer_a2d253914c2d2e673971f0486f0499e82}\label{class_ejercicio1_1_1_buffer_a2d253914c2d2e673971f0486f0499e82}} 
+\index{Ejercicio1\+::\+Buffer@{Ejercicio1\+::\+Buffer}!contador@{contador}}
+\index{contador@{contador}!Ejercicio1\+::\+Buffer@{Ejercicio1\+::\+Buffer}}
+\subsubsection{\texorpdfstring{contador}{contador}}
+{\footnotesize\ttfamily int Ejercicio1.\+Buffer.\+contador = 0\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_ejercicio1_1_1_buffer_a7aa644ce09536853de7eb8568628db7b}\label{class_ejercicio1_1_1_buffer_a7aa644ce09536853de7eb8568628db7b}} 
+\index{Ejercicio1\+::\+Buffer@{Ejercicio1\+::\+Buffer}!enviando@{enviando}}
+\index{enviando@{enviando}!Ejercicio1\+::\+Buffer@{Ejercicio1\+::\+Buffer}}
+\subsubsection{\texorpdfstring{enviando}{enviando}}
+{\footnotesize\ttfamily Boolean Ejercicio1.\+Buffer.\+enviando = false\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_ejercicio1_1_1_buffer_ac31a3784041537125eb245e82a5dcc8f}\label{class_ejercicio1_1_1_buffer_ac31a3784041537125eb245e82a5dcc8f}} 
+\index{Ejercicio1\+::\+Buffer@{Ejercicio1\+::\+Buffer}!lleno@{lleno}}
+\index{lleno@{lleno}!Ejercicio1\+::\+Buffer@{Ejercicio1\+::\+Buffer}}
+\subsubsection{\texorpdfstring{lleno}{lleno}}
+{\footnotesize\ttfamily boolean Ejercicio1.\+Buffer.\+lleno =false\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_ejercicio1_1_1_buffer_a65724a90ec1aad8e0123885df33c1b2d}\label{class_ejercicio1_1_1_buffer_a65724a90ec1aad8e0123885df33c1b2d}} 
+\index{Ejercicio1\+::\+Buffer@{Ejercicio1\+::\+Buffer}!mensaje@{mensaje}}
+\index{mensaje@{mensaje}!Ejercicio1\+::\+Buffer@{Ejercicio1\+::\+Buffer}}
+\subsubsection{\texorpdfstring{mensaje}{mensaje}}
+{\footnotesize\ttfamily String Ejercicio1.\+Buffer.\+mensaje\mbox{[}$\,$\mbox{]} = new String \mbox{[}40\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_ejercicio1_1_1_buffer_afdd9e035a2241756d0af2c6c75e51e16}\label{class_ejercicio1_1_1_buffer_afdd9e035a2241756d0af2c6c75e51e16}} 
+\index{Ejercicio1\+::\+Buffer@{Ejercicio1\+::\+Buffer}!recibiendo@{recibiendo}}
+\index{recibiendo@{recibiendo}!Ejercicio1\+::\+Buffer@{Ejercicio1\+::\+Buffer}}
+\subsubsection{\texorpdfstring{recibiendo}{recibiendo}}
+{\footnotesize\ttfamily Boolean Ejercicio1.\+Buffer.\+recibiendo = false\hspace{0.3cm}{\ttfamily [package]}}
+

@@ -1,0 +1,84 @@
+\hypertarget{classentities_1_1_multiple_event_launcher}{}\section{entities.\+Multiple\+Event\+Launcher Class Reference}
+\label{classentities_1_1_multiple_event_launcher}\index{entities.\+Multiple\+Event\+Launcher@{entities.\+Multiple\+Event\+Launcher}}
+Inheritance diagram for entities.\+Multiple\+Event\+Launcher\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classentities_1_1_multiple_event_launcher}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classentities_1_1_multiple_event_launcher_a9ccdc84e550b1c2de8d96d4fe52adc1c}{Multiple\+Event\+Launcher}} (int \mbox{\hyperlink{classentities_1_1_multiple_event_launcher_a236cd02f077a8fcc6afbfb425817a4f3}{max\+Num}}, \mbox{\hyperlink{interfaceentities_1_1_event_launcher}{Event\+Launcher}} \mbox{\hyperlink{classentities_1_1_multiple_event_launcher_a2b7fce6ca63ed808d27e9d1d0469ce4a}{event}})
+\item 
+void \mbox{\hyperlink{classentities_1_1_multiple_event_launcher_a04d341ee9976ef057ab55b74ae99e6db}{launch\+Event}} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classentities_1_1_multiple_event_launcher_a35cd67fc18c6015e136245890bbdd9b1}{num}}
+\item 
+int \mbox{\hyperlink{classentities_1_1_multiple_event_launcher_a236cd02f077a8fcc6afbfb425817a4f3}{max\+Num}}
+\item 
+\mbox{\hyperlink{interfaceentities_1_1_event_launcher}{Event\+Launcher}} \mbox{\hyperlink{classentities_1_1_multiple_event_launcher_a2b7fce6ca63ed808d27e9d1d0469ce4a}{event}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classentities_1_1_multiple_event_launcher_a9ccdc84e550b1c2de8d96d4fe52adc1c}\label{classentities_1_1_multiple_event_launcher_a9ccdc84e550b1c2de8d96d4fe52adc1c}} 
+\index{entities\+::\+Multiple\+Event\+Launcher@{entities\+::\+Multiple\+Event\+Launcher}!Multiple\+Event\+Launcher@{Multiple\+Event\+Launcher}}
+\index{Multiple\+Event\+Launcher@{Multiple\+Event\+Launcher}!entities\+::\+Multiple\+Event\+Launcher@{entities\+::\+Multiple\+Event\+Launcher}}
+\subsubsection{\texorpdfstring{Multiple\+Event\+Launcher()}{MultipleEventLauncher()}}
+{\footnotesize\ttfamily entities.\+Multiple\+Event\+Launcher.\+Multiple\+Event\+Launcher (\begin{DoxyParamCaption}\item[{int}]{max\+Num,  }\item[{\mbox{\hyperlink{interfaceentities_1_1_event_launcher}{Event\+Launcher}}}]{event }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+13                                                                   \{
+14         this.\mbox{\hyperlink{classentities_1_1_multiple_event_launcher_a236cd02f077a8fcc6afbfb425817a4f3}{maxNum}} = \mbox{\hyperlink{classentities_1_1_multiple_event_launcher_a236cd02f077a8fcc6afbfb425817a4f3}{maxNum}};
+15         this.\textcolor{keyword}{event} = \mbox{\hyperlink{classentities_1_1_multiple_event_launcher_a2b7fce6ca63ed808d27e9d1d0469ce4a}{event}};
+16         \mbox{\hyperlink{classentities_1_1_multiple_event_launcher_a35cd67fc18c6015e136245890bbdd9b1}{num}}=0;
+17     \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classentities_1_1_multiple_event_launcher_a04d341ee9976ef057ab55b74ae99e6db}\label{classentities_1_1_multiple_event_launcher_a04d341ee9976ef057ab55b74ae99e6db}} 
+\index{entities\+::\+Multiple\+Event\+Launcher@{entities\+::\+Multiple\+Event\+Launcher}!launch\+Event@{launch\+Event}}
+\index{launch\+Event@{launch\+Event}!entities\+::\+Multiple\+Event\+Launcher@{entities\+::\+Multiple\+Event\+Launcher}}
+\subsubsection{\texorpdfstring{launch\+Event()}{launchEvent()}}
+{\footnotesize\ttfamily void entities.\+Multiple\+Event\+Launcher.\+launch\+Event (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Implements \mbox{\hyperlink{interfaceentities_1_1_event_launcher_a4aa8692d30404ff21b04dfc688e8efe0}{entities.\+Event\+Launcher}}.
+
+
+\begin{DoxyCode}
+20                               \{
+21         \mbox{\hyperlink{classentities_1_1_multiple_event_launcher_a35cd67fc18c6015e136245890bbdd9b1}{num}}++;
+22         \textcolor{keywordflow}{if}(\mbox{\hyperlink{classentities_1_1_multiple_event_launcher_a35cd67fc18c6015e136245890bbdd9b1}{num}}>=\mbox{\hyperlink{classentities_1_1_multiple_event_launcher_a236cd02f077a8fcc6afbfb425817a4f3}{maxNum}})\{
+23             \textcolor{keyword}{event}.launchEvent();
+24         \}
+25     \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classentities_1_1_multiple_event_launcher_a2b7fce6ca63ed808d27e9d1d0469ce4a}\label{classentities_1_1_multiple_event_launcher_a2b7fce6ca63ed808d27e9d1d0469ce4a}} 
+\index{entities\+::\+Multiple\+Event\+Launcher@{entities\+::\+Multiple\+Event\+Launcher}!event@{event}}
+\index{event@{event}!entities\+::\+Multiple\+Event\+Launcher@{entities\+::\+Multiple\+Event\+Launcher}}
+\subsubsection{\texorpdfstring{event}{event}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfaceentities_1_1_event_launcher}{Event\+Launcher}} entities.\+Multiple\+Event\+Launcher.\+event\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classentities_1_1_multiple_event_launcher_a236cd02f077a8fcc6afbfb425817a4f3}\label{classentities_1_1_multiple_event_launcher_a236cd02f077a8fcc6afbfb425817a4f3}} 
+\index{entities\+::\+Multiple\+Event\+Launcher@{entities\+::\+Multiple\+Event\+Launcher}!max\+Num@{max\+Num}}
+\index{max\+Num@{max\+Num}!entities\+::\+Multiple\+Event\+Launcher@{entities\+::\+Multiple\+Event\+Launcher}}
+\subsubsection{\texorpdfstring{max\+Num}{maxNum}}
+{\footnotesize\ttfamily int entities.\+Multiple\+Event\+Launcher.\+max\+Num\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classentities_1_1_multiple_event_launcher_a35cd67fc18c6015e136245890bbdd9b1}\label{classentities_1_1_multiple_event_launcher_a35cd67fc18c6015e136245890bbdd9b1}} 
+\index{entities\+::\+Multiple\+Event\+Launcher@{entities\+::\+Multiple\+Event\+Launcher}!num@{num}}
+\index{num@{num}!entities\+::\+Multiple\+Event\+Launcher@{entities\+::\+Multiple\+Event\+Launcher}}
+\subsubsection{\texorpdfstring{num}{num}}
+{\footnotesize\ttfamily int entities.\+Multiple\+Event\+Launcher.\+num\hspace{0.3cm}{\ttfamily [private]}}
+

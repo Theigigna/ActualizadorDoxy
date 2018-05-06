@@ -1,0 +1,237 @@
+\hypertarget{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_cross_state_transition}{}\section{org.\+newdawn.\+slick.\+state.\+transition.\+Cross\+State\+Transition Class Reference}
+\label{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_cross_state_transition}\index{org.\+newdawn.\+slick.\+state.\+transition.\+Cross\+State\+Transition@{org.\+newdawn.\+slick.\+state.\+transition.\+Cross\+State\+Transition}}
+Inheritance diagram for org.\+newdawn.\+slick.\+state.\+transition.\+Cross\+State\+Transition\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_cross_state_transition}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_cross_state_transition_a0062eac1fd64938d473ca4d6ffaaa6ee}{Cross\+State\+Transition}} (\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1state_1_1_game_state}{Game\+State}} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_cross_state_transition_a75dc8f5366c67cb40b833672578fd7e5}{second\+State}})
+\item 
+abstract boolean \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_cross_state_transition_a2a81c43dc051ee2290787a5a10ab2ac2}{is\+Complete}} ()
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_cross_state_transition_ad932e1984f648e582290937e9f1c880f}{post\+Render}} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1_state_based_game}{State\+Based\+Game}} game, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_game_container}{Game\+Container}} container, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_graphics}{Graphics}} g)  throws Slick\+Exception 
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_cross_state_transition_abcc8e000421b21be33f4165808023f54}{pre\+Render}} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1_state_based_game}{State\+Based\+Game}} game, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_game_container}{Game\+Container}} container, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_graphics}{Graphics}} g)  throws Slick\+Exception 
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_cross_state_transition_ab619f7506eb8e6c1ff13c86e79a99777}{update}} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1_state_based_game}{State\+Based\+Game}} game, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_game_container}{Game\+Container}} container, int delta)  throws Slick\+Exception 
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_cross_state_transition_a2b0f6825775c51f909cdabda0feb8d73}{pre\+Render\+First\+State}} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1_state_based_game}{State\+Based\+Game}} game, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_game_container}{Game\+Container}} container, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_graphics}{Graphics}} g)  throws Slick\+Exception 
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_cross_state_transition_a87a8c85266ef00b34bbe8888c358aab0}{pre\+Render\+Second\+State}} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1_state_based_game}{State\+Based\+Game}} game, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_game_container}{Game\+Container}} container, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_graphics}{Graphics}} g)  throws Slick\+Exception 
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_cross_state_transition_a8b0b46e75abd29cf46e844de048b6227}{post\+Render\+Second\+State}} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1_state_based_game}{State\+Based\+Game}} game, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_game_container}{Game\+Container}} container, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_graphics}{Graphics}} g)  throws Slick\+Exception 
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1state_1_1_game_state}{Game\+State}} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_cross_state_transition_a75dc8f5366c67cb40b833672578fd7e5}{second\+State}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A transition that will combine two states into one effect. The first state is the one we\textquotesingle{}re transitioning from. The second state is specified in the constructor.
+
+By default one state will simply be rendered over the other. Subclass this transition overriding the pre\+Render\+First\+State and pre\+Render\+Second\+State to setup the rendering for each state (alpha or what ever). Note that it\textquotesingle{}s also possible to use the post\+Render\+Second\+State method to clean up your Open\+GL setup.
+
+So these methods are called like so\+:
+
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_cross_state_transition_a2b0f6825775c51f909cdabda0feb8d73}{pre\+Render\+First\+State()}} = the first state is rendered \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_cross_state_transition_a87a8c85266ef00b34bbe8888c358aab0}{pre\+Render\+Second\+State()}} = the second state is rendered \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_cross_state_transition_a8b0b46e75abd29cf46e844de048b6227}{post\+Render\+Second\+State()}}
+
+\begin{DoxyAuthor}{Author}
+kevin 
+\end{DoxyAuthor}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_cross_state_transition_a0062eac1fd64938d473ca4d6ffaaa6ee}\label{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_cross_state_transition_a0062eac1fd64938d473ca4d6ffaaa6ee}} 
+\index{org\+::newdawn\+::slick\+::state\+::transition\+::\+Cross\+State\+Transition@{org\+::newdawn\+::slick\+::state\+::transition\+::\+Cross\+State\+Transition}!Cross\+State\+Transition@{Cross\+State\+Transition}}
+\index{Cross\+State\+Transition@{Cross\+State\+Transition}!org\+::newdawn\+::slick\+::state\+::transition\+::\+Cross\+State\+Transition@{org\+::newdawn\+::slick\+::state\+::transition\+::\+Cross\+State\+Transition}}
+\subsubsection{\texorpdfstring{Cross\+State\+Transition()}{CrossStateTransition()}}
+{\footnotesize\ttfamily org.\+newdawn.\+slick.\+state.\+transition.\+Cross\+State\+Transition.\+Cross\+State\+Transition (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1state_1_1_game_state}{Game\+State}}}]{second\+State }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Create a cross state transitions
+
+
+\begin{DoxyParams}{Parameters}
+{\em second\+State} & The secondary state with combining with the source state. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+38                                                        \{
+39         this.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_cross_state_transition_a75dc8f5366c67cb40b833672578fd7e5}{secondState}} = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_cross_state_transition_a75dc8f5366c67cb40b833672578fd7e5}{secondState}};
+40     \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_cross_state_transition_a2a81c43dc051ee2290787a5a10ab2ac2}\label{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_cross_state_transition_a2a81c43dc051ee2290787a5a10ab2ac2}} 
+\index{org\+::newdawn\+::slick\+::state\+::transition\+::\+Cross\+State\+Transition@{org\+::newdawn\+::slick\+::state\+::transition\+::\+Cross\+State\+Transition}!is\+Complete@{is\+Complete}}
+\index{is\+Complete@{is\+Complete}!org\+::newdawn\+::slick\+::state\+::transition\+::\+Cross\+State\+Transition@{org\+::newdawn\+::slick\+::state\+::transition\+::\+Cross\+State\+Transition}}
+\subsubsection{\texorpdfstring{is\+Complete()}{isComplete()}}
+{\footnotesize\ttfamily abstract boolean org.\+newdawn.\+slick.\+state.\+transition.\+Cross\+State\+Transition.\+is\+Complete (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}}
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_transition_af397d5185cf09c30c3f51d5021d63815}{org.\+newdawn.\+slick.\+state.\+transition.\+Transition\+::is\+Complete()}} 
+\end{DoxySeeAlso}
+
+
+Implements \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_transition_af397d5185cf09c30c3f51d5021d63815}{org.\+newdawn.\+slick.\+state.\+transition.\+Transition}}.
+
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_cross_state_transition_ad932e1984f648e582290937e9f1c880f}\label{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_cross_state_transition_ad932e1984f648e582290937e9f1c880f}} 
+\index{org\+::newdawn\+::slick\+::state\+::transition\+::\+Cross\+State\+Transition@{org\+::newdawn\+::slick\+::state\+::transition\+::\+Cross\+State\+Transition}!post\+Render@{post\+Render}}
+\index{post\+Render@{post\+Render}!org\+::newdawn\+::slick\+::state\+::transition\+::\+Cross\+State\+Transition@{org\+::newdawn\+::slick\+::state\+::transition\+::\+Cross\+State\+Transition}}
+\subsubsection{\texorpdfstring{post\+Render()}{postRender()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+state.\+transition.\+Cross\+State\+Transition.\+post\+Render (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1_state_based_game}{State\+Based\+Game}}}]{game,  }\item[{\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_game_container}{Game\+Container}}}]{container,  }\item[{\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_graphics}{Graphics}}}]{g }\end{DoxyParamCaption}) throws \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_slick_exception}{Slick\+Exception}}\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_transition_ac113f4d5a19962a62a8adec7f9ab5d47}{org.\+newdawn.\+slick.\+state.\+transition.\+Transition\+::post\+Render}}(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1_state_based_game}{org.\+newdawn.\+slick.\+state.\+State\+Based\+Game}}, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_game_container}{org.\+newdawn.\+slick.\+Game\+Container}}, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_graphics}{org.\+newdawn.\+slick.\+Graphics}}) 
+\end{DoxySeeAlso}
+
+
+Implements \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_transition_ac113f4d5a19962a62a8adec7f9ab5d47}{org.\+newdawn.\+slick.\+state.\+transition.\+Transition}}.
+
+
+\begin{DoxyCode}
+50                                                                                                            
+      \{
+51         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_cross_state_transition_a87a8c85266ef00b34bbe8888c358aab0}{preRenderSecondState}}(game, container, g);
+52         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_cross_state_transition_a75dc8f5366c67cb40b833672578fd7e5}{secondState}}.\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1state_1_1_game_state_a065352d2725274c5244cd022f226eb17}{render}}(container, game, g);
+53         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_cross_state_transition_a8b0b46e75abd29cf46e844de048b6227}{postRenderSecondState}}(game, container, g);
+54     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_cross_state_transition_a8b0b46e75abd29cf46e844de048b6227}\label{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_cross_state_transition_a8b0b46e75abd29cf46e844de048b6227}} 
+\index{org\+::newdawn\+::slick\+::state\+::transition\+::\+Cross\+State\+Transition@{org\+::newdawn\+::slick\+::state\+::transition\+::\+Cross\+State\+Transition}!post\+Render\+Second\+State@{post\+Render\+Second\+State}}
+\index{post\+Render\+Second\+State@{post\+Render\+Second\+State}!org\+::newdawn\+::slick\+::state\+::transition\+::\+Cross\+State\+Transition@{org\+::newdawn\+::slick\+::state\+::transition\+::\+Cross\+State\+Transition}}
+\subsubsection{\texorpdfstring{post\+Render\+Second\+State()}{postRenderSecondState()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+state.\+transition.\+Cross\+State\+Transition.\+post\+Render\+Second\+State (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1_state_based_game}{State\+Based\+Game}}}]{game,  }\item[{\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_game_container}{Game\+Container}}}]{container,  }\item[{\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_graphics}{Graphics}}}]{g }\end{DoxyParamCaption}) throws \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_slick_exception}{Slick\+Exception}}\hspace{0.3cm}{\ttfamily [inline]}}
+
+Notification that the transition is has just rendered the second state is the cross transition.
+
+
+\begin{DoxyParams}{Parameters}
+{\em game} & The game being rendered \\
+\hline
+{\em container} & The container holding the game \\
+\hline
+{\em g} & The graphic context used to render \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_slick_exception}{Slick\+Exception}}} & Indicates a failure to setup the rendering state -\/ throw for anything that goes wrong \\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyCode}
+102                                                                                                            
+                 \{
+103     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_cross_state_transition_abcc8e000421b21be33f4165808023f54}\label{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_cross_state_transition_abcc8e000421b21be33f4165808023f54}} 
+\index{org\+::newdawn\+::slick\+::state\+::transition\+::\+Cross\+State\+Transition@{org\+::newdawn\+::slick\+::state\+::transition\+::\+Cross\+State\+Transition}!pre\+Render@{pre\+Render}}
+\index{pre\+Render@{pre\+Render}!org\+::newdawn\+::slick\+::state\+::transition\+::\+Cross\+State\+Transition@{org\+::newdawn\+::slick\+::state\+::transition\+::\+Cross\+State\+Transition}}
+\subsubsection{\texorpdfstring{pre\+Render()}{preRender()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+state.\+transition.\+Cross\+State\+Transition.\+pre\+Render (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1_state_based_game}{State\+Based\+Game}}}]{game,  }\item[{\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_game_container}{Game\+Container}}}]{container,  }\item[{\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_graphics}{Graphics}}}]{g }\end{DoxyParamCaption}) throws \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_slick_exception}{Slick\+Exception}}\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_transition_ab8b0668c059830d938575d1a0b08bd93}{org.\+newdawn.\+slick.\+state.\+transition.\+Transition\+::pre\+Render}}(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1_state_based_game}{org.\+newdawn.\+slick.\+state.\+State\+Based\+Game}}, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_game_container}{org.\+newdawn.\+slick.\+Game\+Container}}, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_graphics}{org.\+newdawn.\+slick.\+Graphics}}) 
+\end{DoxySeeAlso}
+
+
+Implements \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_transition_ab8b0668c059830d938575d1a0b08bd93}{org.\+newdawn.\+slick.\+state.\+transition.\+Transition}}.
+
+
+\begin{DoxyCode}
+59                                                                                                           \{
+60         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_cross_state_transition_a2b0f6825775c51f909cdabda0feb8d73}{preRenderFirstState}}(game, container, g);
+61     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_cross_state_transition_a2b0f6825775c51f909cdabda0feb8d73}\label{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_cross_state_transition_a2b0f6825775c51f909cdabda0feb8d73}} 
+\index{org\+::newdawn\+::slick\+::state\+::transition\+::\+Cross\+State\+Transition@{org\+::newdawn\+::slick\+::state\+::transition\+::\+Cross\+State\+Transition}!pre\+Render\+First\+State@{pre\+Render\+First\+State}}
+\index{pre\+Render\+First\+State@{pre\+Render\+First\+State}!org\+::newdawn\+::slick\+::state\+::transition\+::\+Cross\+State\+Transition@{org\+::newdawn\+::slick\+::state\+::transition\+::\+Cross\+State\+Transition}}
+\subsubsection{\texorpdfstring{pre\+Render\+First\+State()}{preRenderFirstState()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+state.\+transition.\+Cross\+State\+Transition.\+pre\+Render\+First\+State (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1_state_based_game}{State\+Based\+Game}}}]{game,  }\item[{\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_game_container}{Game\+Container}}}]{container,  }\item[{\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_graphics}{Graphics}}}]{g }\end{DoxyParamCaption}) throws \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_slick_exception}{Slick\+Exception}}\hspace{0.3cm}{\ttfamily [inline]}}
+
+Notification that the transition is about to render the first state is the cross transition.
+
+
+\begin{DoxyParams}{Parameters}
+{\em game} & The game being rendered \\
+\hline
+{\em container} & The container holding the game \\
+\hline
+{\em g} & The graphic context used to render \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_slick_exception}{Slick\+Exception}}} & Indicates a failure to setup the rendering state -\/ throw for anything that goes wrong \\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyCode}
+78                                                                                                            
+               \{
+79     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_cross_state_transition_a87a8c85266ef00b34bbe8888c358aab0}\label{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_cross_state_transition_a87a8c85266ef00b34bbe8888c358aab0}} 
+\index{org\+::newdawn\+::slick\+::state\+::transition\+::\+Cross\+State\+Transition@{org\+::newdawn\+::slick\+::state\+::transition\+::\+Cross\+State\+Transition}!pre\+Render\+Second\+State@{pre\+Render\+Second\+State}}
+\index{pre\+Render\+Second\+State@{pre\+Render\+Second\+State}!org\+::newdawn\+::slick\+::state\+::transition\+::\+Cross\+State\+Transition@{org\+::newdawn\+::slick\+::state\+::transition\+::\+Cross\+State\+Transition}}
+\subsubsection{\texorpdfstring{pre\+Render\+Second\+State()}{preRenderSecondState()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+state.\+transition.\+Cross\+State\+Transition.\+pre\+Render\+Second\+State (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1_state_based_game}{State\+Based\+Game}}}]{game,  }\item[{\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_game_container}{Game\+Container}}}]{container,  }\item[{\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_graphics}{Graphics}}}]{g }\end{DoxyParamCaption}) throws \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_slick_exception}{Slick\+Exception}}\hspace{0.3cm}{\ttfamily [inline]}}
+
+Notification that the transition is about to render the second state is the cross transition.
+
+
+\begin{DoxyParams}{Parameters}
+{\em game} & The game being rendered \\
+\hline
+{\em container} & The container holding the game \\
+\hline
+{\em g} & The graphic context used to render \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_slick_exception}{Slick\+Exception}}} & Indicates a failure to setup the rendering state -\/ throw for anything that goes wrong \\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyCode}
+90                                                                                                            
+                \{
+91     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_cross_state_transition_ab619f7506eb8e6c1ff13c86e79a99777}\label{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_cross_state_transition_ab619f7506eb8e6c1ff13c86e79a99777}} 
+\index{org\+::newdawn\+::slick\+::state\+::transition\+::\+Cross\+State\+Transition@{org\+::newdawn\+::slick\+::state\+::transition\+::\+Cross\+State\+Transition}!update@{update}}
+\index{update@{update}!org\+::newdawn\+::slick\+::state\+::transition\+::\+Cross\+State\+Transition@{org\+::newdawn\+::slick\+::state\+::transition\+::\+Cross\+State\+Transition}}
+\subsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+state.\+transition.\+Cross\+State\+Transition.\+update (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1_state_based_game}{State\+Based\+Game}}}]{game,  }\item[{\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_game_container}{Game\+Container}}}]{container,  }\item[{int}]{delta }\end{DoxyParamCaption}) throws \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_slick_exception}{Slick\+Exception}}\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_transition_a9be3072f6e2423e3d0a451a419d1d518}{org.\+newdawn.\+slick.\+state.\+transition.\+Transition\+::update}}(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1_state_based_game}{org.\+newdawn.\+slick.\+state.\+State\+Based\+Game}}, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_game_container}{org.\+newdawn.\+slick.\+Game\+Container}}, int) 
+\end{DoxySeeAlso}
+
+
+Implements \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_transition_a9be3072f6e2423e3d0a451a419d1d518}{org.\+newdawn.\+slick.\+state.\+transition.\+Transition}}.
+
+
+\begin{DoxyCode}
+66                                                                                                       \{
+67     \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_cross_state_transition_a75dc8f5366c67cb40b833672578fd7e5}\label{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_cross_state_transition_a75dc8f5366c67cb40b833672578fd7e5}} 
+\index{org\+::newdawn\+::slick\+::state\+::transition\+::\+Cross\+State\+Transition@{org\+::newdawn\+::slick\+::state\+::transition\+::\+Cross\+State\+Transition}!second\+State@{second\+State}}
+\index{second\+State@{second\+State}!org\+::newdawn\+::slick\+::state\+::transition\+::\+Cross\+State\+Transition@{org\+::newdawn\+::slick\+::state\+::transition\+::\+Cross\+State\+Transition}}
+\subsubsection{\texorpdfstring{second\+State}{secondState}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1state_1_1_game_state}{Game\+State}} org.\+newdawn.\+slick.\+state.\+transition.\+Cross\+State\+Transition.\+second\+State\hspace{0.3cm}{\ttfamily [private]}}
+
+The second state to cross with 

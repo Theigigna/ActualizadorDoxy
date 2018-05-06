@@ -1,0 +1,25 @@
+var classlibreria_1_1_libro =
+[
+    [ "Libro", "classlibreria_1_1_libro.html#aebec824403e4537753ea3b24f5854587", null ],
+    [ "getAutor", "classlibreria_1_1_libro.html#a728146cad416bde473aa6e169f6accff", null ],
+    [ "getEditorial", "classlibreria_1_1_libro.html#a2c75d916c4636900590dc6ed9be19c13", null ],
+    [ "getFechapublicacion", "classlibreria_1_1_libro.html#a95dc4e4af6ec1bc331dfbc9f450332ef", null ],
+    [ "getIsbn", "classlibreria_1_1_libro.html#a79a31f66b8e3f247928931756199d107", null ],
+    [ "getPrecio", "classlibreria_1_1_libro.html#a2492008220692a6e4c9c929a666acdd7", null ],
+    [ "getPreciomensual", "classlibreria_1_1_libro.html#a4e96b191b19827c24320095b9a13ec1b", null ],
+    [ "getTitulo", "classlibreria_1_1_libro.html#ac07542098ad57c5c5e1e608d4bf67ae8", null ],
+    [ "setAutor", "classlibreria_1_1_libro.html#a0c49a8ce6e5ad49d281acaa5ad6eddbe", null ],
+    [ "setEditorial", "classlibreria_1_1_libro.html#a4fbeb961016d6cd0bd63ff2b252010ee", null ],
+    [ "setFechapublicacion", "classlibreria_1_1_libro.html#af7ef1b61c19ad0c9b9c37e84e16dd943", null ],
+    [ "setIsbn", "classlibreria_1_1_libro.html#ac9b15637f6aa44daa264bc9f7f9627cb", null ],
+    [ "setPrecio", "classlibreria_1_1_libro.html#a0263e8520885851783e3f46d150be0c5", null ],
+    [ "setPreciomensual", "classlibreria_1_1_libro.html#acfd01d2c473e359ace0d642597d1b271", null ],
+    [ "setTitulo", "classlibreria_1_1_libro.html#a698c25403141da07d2a4e5dc337d8419", null ],
+    [ "Autor", "classlibreria_1_1_libro.html#aa5040773b6ae3f4b9538418a4499ba9c", null ],
+    [ "Editorial", "classlibreria_1_1_libro.html#a0e45b510f79de7f6aaa678f4cf060b45", null ],
+    [ "fechapublicacion", "classlibreria_1_1_libro.html#a1feec01556c7a8ffe5963b544b7ebc58", null ],
+    [ "isbn", "classlibreria_1_1_libro.html#a855939c41be35682aad6b6c08962dde3", null ],
+    [ "precio", "classlibreria_1_1_libro.html#ab19a3f31d2aaab1bca6ba4f188951adc", null ],
+    [ "preciomensual", "classlibreria_1_1_libro.html#aa3ecf9746a1de3547b71c154ffbcbeb7", null ],
+    [ "titulo", "classlibreria_1_1_libro.html#aa45a435366afb4759f59f6f4d86d0e3a", null ]
+];

@@ -1,0 +1,32 @@
+\hypertarget{classejemplo1_1_1_prueba_buzon1}{}\section{ejemplo1.\+Prueba\+Buzon1 Class Reference}
+\label{classejemplo1_1_1_prueba_buzon1}\index{ejemplo1.\+Prueba\+Buzon1@{ejemplo1.\+Prueba\+Buzon1}}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{classejemplo1_1_1_prueba_buzon1_afec3b6ac421215cf389aefc11a299760}{main}} (String\mbox{[}$\,$\mbox{]} s)
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classejemplo1_1_1_prueba_buzon1_afec3b6ac421215cf389aefc11a299760}\label{classejemplo1_1_1_prueba_buzon1_afec3b6ac421215cf389aefc11a299760}} 
+\index{ejemplo1\+::\+Prueba\+Buzon1@{ejemplo1\+::\+Prueba\+Buzon1}!main@{main}}
+\index{main@{main}!ejemplo1\+::\+Prueba\+Buzon1@{ejemplo1\+::\+Prueba\+Buzon1}}
+\subsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily static void ejemplo1.\+Prueba\+Buzon1.\+main (\begin{DoxyParamCaption}\item[{String \mbox{[}$\,$\mbox{]}}]{s }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+\begin{DoxyCode}
+17     \{
+18         Buzon buzonX = \textcolor{keyword}{new} Buzon();
+19         Productor pedro = \textcolor{keyword}{new} Productor(\textcolor{stringliteral}{"Pedro "},5,buzonX);
+20         Productor juan = \textcolor{keyword}{new} Productor(\textcolor{stringliteral}{"Juan "},4,buzonX);
+21         Productor antonio = \textcolor{keyword}{new} Productor(\textcolor{stringliteral}{"Antonio "},6,buzonX);
+22         Productor luis = \textcolor{keyword}{new} Productor(\textcolor{stringliteral}{"Luis "},7,buzonX);
+23         Consumidor jose = \textcolor{keyword}{new} Consumidor(22,buzonX);
+24         pedro.start();
+25         juan.start();
+26         antonio.start();
+27         luis.start();
+28         jose.start();
+29     \}
+\end{DoxyCode}

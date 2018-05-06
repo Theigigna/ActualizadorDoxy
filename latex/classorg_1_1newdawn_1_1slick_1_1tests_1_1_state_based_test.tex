@@ -1,0 +1,90 @@
+\hypertarget{classorg_1_1newdawn_1_1slick_1_1tests_1_1_state_based_test}{}\section{org.\+newdawn.\+slick.\+tests.\+State\+Based\+Test Class Reference}
+\label{classorg_1_1newdawn_1_1slick_1_1tests_1_1_state_based_test}\index{org.\+newdawn.\+slick.\+tests.\+State\+Based\+Test@{org.\+newdawn.\+slick.\+tests.\+State\+Based\+Test}}
+Inheritance diagram for org.\+newdawn.\+slick.\+tests.\+State\+Based\+Test\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.522012cm]{classorg_1_1newdawn_1_1slick_1_1tests_1_1_state_based_test}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_state_based_test_adda4a4dfe7070c4b4cea79dd83158757}{State\+Based\+Test}} ()
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_state_based_test_a4b73ca3cda0cffc582a2527bd983d5dc}{init\+States\+List}} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_game_container}{Game\+Container}} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1_state_based_game_a538846600436175cbed48450adfdd025}{container}})
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_state_based_test_a7a7ee9e069ada40fb4fadc2e36cd1d9f}{main}} (String\mbox{[}$\,$\mbox{]} argv)
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+A test for the multi-\/state based functionality
+
+\begin{DoxyAuthor}{Author}
+kevin 
+\end{DoxyAuthor}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tests_1_1_state_based_test_adda4a4dfe7070c4b4cea79dd83158757}\label{classorg_1_1newdawn_1_1slick_1_1tests_1_1_state_based_test_adda4a4dfe7070c4b4cea79dd83158757}} 
+\index{org\+::newdawn\+::slick\+::tests\+::\+State\+Based\+Test@{org\+::newdawn\+::slick\+::tests\+::\+State\+Based\+Test}!State\+Based\+Test@{State\+Based\+Test}}
+\index{State\+Based\+Test@{State\+Based\+Test}!org\+::newdawn\+::slick\+::tests\+::\+State\+Based\+Test@{org\+::newdawn\+::slick\+::tests\+::\+State\+Based\+Test}}
+\subsubsection{\texorpdfstring{State\+Based\+Test()}{StateBasedTest()}}
+{\footnotesize\ttfamily org.\+newdawn.\+slick.\+tests.\+State\+Based\+Test.\+State\+Based\+Test (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Create a new test 
+\begin{DoxyCode}
+21                             \{
+22         super(\textcolor{stringliteral}{"State Based Test"});
+23     \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tests_1_1_state_based_test_a4b73ca3cda0cffc582a2527bd983d5dc}\label{classorg_1_1newdawn_1_1slick_1_1tests_1_1_state_based_test_a4b73ca3cda0cffc582a2527bd983d5dc}} 
+\index{org\+::newdawn\+::slick\+::tests\+::\+State\+Based\+Test@{org\+::newdawn\+::slick\+::tests\+::\+State\+Based\+Test}!init\+States\+List@{init\+States\+List}}
+\index{init\+States\+List@{init\+States\+List}!org\+::newdawn\+::slick\+::tests\+::\+State\+Based\+Test@{org\+::newdawn\+::slick\+::tests\+::\+State\+Based\+Test}}
+\subsubsection{\texorpdfstring{init\+States\+List()}{initStatesList()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+tests.\+State\+Based\+Test.\+init\+States\+List (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_game_container}{Game\+Container}}}]{container }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1_state_based_game_af62d7a82f042c5b2d73e102ab94a07c0}{org.\+newdawn.\+slick.\+state.\+State\+Based\+Game\+::init\+States\+List}}(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_game_container}{org.\+newdawn.\+slick.\+Game\+Container}}) 
+\end{DoxySeeAlso}
+
+\begin{DoxyCode}
+28                                                         \{
+29         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1_state_based_game_acfd4acadb4a4f79fddd7e76250da37dc}{addState}}(\textcolor{keyword}{new} TestState1());
+30         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1_state_based_game_acfd4acadb4a4f79fddd7e76250da37dc}{addState}}(\textcolor{keyword}{new} TestState2());
+31         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1_state_based_game_acfd4acadb4a4f79fddd7e76250da37dc}{addState}}(\textcolor{keyword}{new} TestState3());
+32     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tests_1_1_state_based_test_a7a7ee9e069ada40fb4fadc2e36cd1d9f}\label{classorg_1_1newdawn_1_1slick_1_1tests_1_1_state_based_test_a7a7ee9e069ada40fb4fadc2e36cd1d9f}} 
+\index{org\+::newdawn\+::slick\+::tests\+::\+State\+Based\+Test@{org\+::newdawn\+::slick\+::tests\+::\+State\+Based\+Test}!main@{main}}
+\index{main@{main}!org\+::newdawn\+::slick\+::tests\+::\+State\+Based\+Test@{org\+::newdawn\+::slick\+::tests\+::\+State\+Based\+Test}}
+\subsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily static void org.\+newdawn.\+slick.\+tests.\+State\+Based\+Test.\+main (\begin{DoxyParamCaption}\item[{String \mbox{[}$\,$\mbox{]}}]{argv }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Entry point to our test
+
+
+\begin{DoxyParams}{Parameters}
+{\em argv} & The arguments to pass into the test \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+39                                            \{
+40         \textcolor{keywordflow}{try} \{
+41             AppGameContainer \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1_state_based_game_a538846600436175cbed48450adfdd025}{container}} = \textcolor{keyword}{new} AppGameContainer(\textcolor{keyword}{new} 
+      \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_state_based_test_adda4a4dfe7070c4b4cea79dd83158757}{StateBasedTest}}());
+42             \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1_state_based_game_a538846600436175cbed48450adfdd025}{container}}.setDisplayMode(800,600,\textcolor{keyword}{false});
+43             \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1_state_based_game_a538846600436175cbed48450adfdd025}{container}}.start();
+44         \} \textcolor{keywordflow}{catch} (SlickException e) \{
+45             e.printStackTrace();
+46         \}
+47     \}
+\end{DoxyCode}

@@ -1,0 +1,97 @@
+\hypertarget{classpa__sesion6_1_1_lista_threads}{}\section{pa\+\_\+sesion6.\+Lista\+Threads Class Reference}
+\label{classpa__sesion6_1_1_lista_threads}\index{pa\+\_\+sesion6.\+Lista\+Threads@{pa\+\_\+sesion6.\+Lista\+Threads}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpa__sesion6_1_1_lista_threads_a7e301d2a3483abb2ffdb55093e0a9e15}{Lista\+Threads}} (J\+Text\+Field \mbox{\hyperlink{classpa__sesion6_1_1_lista_threads_a3fe988c4626e0a9dad9f164b8c6fd426}{tf}})
+\item 
+synchronized void \mbox{\hyperlink{classpa__sesion6_1_1_lista_threads_a624e853e2ebdf3ccf90692fee902183e}{meter}} (Thread t)
+\item 
+synchronized void \mbox{\hyperlink{classpa__sesion6_1_1_lista_threads_a750595ae1fea92fc8270776a0aebaa58}{sacar}} (Thread t)
+\item 
+void \mbox{\hyperlink{classpa__sesion6_1_1_lista_threads_ae469a3e62adee9a81540a7e1c80602bb}{imprimir}} ()
+\end{DoxyCompactItemize}
+\subsection*{Package Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Array\+List$<$ Thread $>$ \mbox{\hyperlink{classpa__sesion6_1_1_lista_threads_a934ff238b8937623cc1a047bc9860605}{lista}}
+\item 
+J\+Text\+Field \mbox{\hyperlink{classpa__sesion6_1_1_lista_threads_a3fe988c4626e0a9dad9f164b8c6fd426}{tf}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classpa__sesion6_1_1_lista_threads_a7e301d2a3483abb2ffdb55093e0a9e15}\label{classpa__sesion6_1_1_lista_threads_a7e301d2a3483abb2ffdb55093e0a9e15}} 
+\index{pa\+\_\+sesion6\+::\+Lista\+Threads@{pa\+\_\+sesion6\+::\+Lista\+Threads}!Lista\+Threads@{Lista\+Threads}}
+\index{Lista\+Threads@{Lista\+Threads}!pa\+\_\+sesion6\+::\+Lista\+Threads@{pa\+\_\+sesion6\+::\+Lista\+Threads}}
+\subsubsection{\texorpdfstring{Lista\+Threads()}{ListaThreads()}}
+{\footnotesize\ttfamily pa\+\_\+sesion6.\+Lista\+Threads.\+Lista\+Threads (\begin{DoxyParamCaption}\item[{J\+Text\+Field}]{tf }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+14     \{
+15         \mbox{\hyperlink{classpa__sesion6_1_1_lista_threads_a934ff238b8937623cc1a047bc9860605}{lista}}=\textcolor{keyword}{new} ArrayList<Thread>();
+16         this.\mbox{\hyperlink{classpa__sesion6_1_1_lista_threads_a3fe988c4626e0a9dad9f164b8c6fd426}{tf}}=\mbox{\hyperlink{classpa__sesion6_1_1_lista_threads_a3fe988c4626e0a9dad9f164b8c6fd426}{tf}};
+17     \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classpa__sesion6_1_1_lista_threads_ae469a3e62adee9a81540a7e1c80602bb}\label{classpa__sesion6_1_1_lista_threads_ae469a3e62adee9a81540a7e1c80602bb}} 
+\index{pa\+\_\+sesion6\+::\+Lista\+Threads@{pa\+\_\+sesion6\+::\+Lista\+Threads}!imprimir@{imprimir}}
+\index{imprimir@{imprimir}!pa\+\_\+sesion6\+::\+Lista\+Threads@{pa\+\_\+sesion6\+::\+Lista\+Threads}}
+\subsubsection{\texorpdfstring{imprimir()}{imprimir()}}
+{\footnotesize\ttfamily void pa\+\_\+sesion6.\+Lista\+Threads.\+imprimir (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+32     \{
+33         String contenido=\textcolor{stringliteral}{""};
+34         \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i=0; i<\mbox{\hyperlink{classpa__sesion6_1_1_lista_threads_a934ff238b8937623cc1a047bc9860605}{lista}}.size(); i++)
+35         \{
+36            contenido=contenido+\mbox{\hyperlink{classpa__sesion6_1_1_lista_threads_a934ff238b8937623cc1a047bc9860605}{lista}}.get(i).getName()+\textcolor{stringliteral}{" "};
+37         \}
+38         \mbox{\hyperlink{classpa__sesion6_1_1_lista_threads_a3fe988c4626e0a9dad9f164b8c6fd426}{tf}}.setText(contenido);
+39     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classpa__sesion6_1_1_lista_threads_a624e853e2ebdf3ccf90692fee902183e}\label{classpa__sesion6_1_1_lista_threads_a624e853e2ebdf3ccf90692fee902183e}} 
+\index{pa\+\_\+sesion6\+::\+Lista\+Threads@{pa\+\_\+sesion6\+::\+Lista\+Threads}!meter@{meter}}
+\index{meter@{meter}!pa\+\_\+sesion6\+::\+Lista\+Threads@{pa\+\_\+sesion6\+::\+Lista\+Threads}}
+\subsubsection{\texorpdfstring{meter()}{meter()}}
+{\footnotesize\ttfamily synchronized void pa\+\_\+sesion6.\+Lista\+Threads.\+meter (\begin{DoxyParamCaption}\item[{Thread}]{t }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+20     \{
+21         \mbox{\hyperlink{classpa__sesion6_1_1_lista_threads_a934ff238b8937623cc1a047bc9860605}{lista}}.add(t);
+22         \mbox{\hyperlink{classpa__sesion6_1_1_lista_threads_ae469a3e62adee9a81540a7e1c80602bb}{imprimir}}();
+23     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classpa__sesion6_1_1_lista_threads_a750595ae1fea92fc8270776a0aebaa58}\label{classpa__sesion6_1_1_lista_threads_a750595ae1fea92fc8270776a0aebaa58}} 
+\index{pa\+\_\+sesion6\+::\+Lista\+Threads@{pa\+\_\+sesion6\+::\+Lista\+Threads}!sacar@{sacar}}
+\index{sacar@{sacar}!pa\+\_\+sesion6\+::\+Lista\+Threads@{pa\+\_\+sesion6\+::\+Lista\+Threads}}
+\subsubsection{\texorpdfstring{sacar()}{sacar()}}
+{\footnotesize\ttfamily synchronized void pa\+\_\+sesion6.\+Lista\+Threads.\+sacar (\begin{DoxyParamCaption}\item[{Thread}]{t }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+26     \{
+27         \mbox{\hyperlink{classpa__sesion6_1_1_lista_threads_a934ff238b8937623cc1a047bc9860605}{lista}}.remove(t);
+28         \mbox{\hyperlink{classpa__sesion6_1_1_lista_threads_ae469a3e62adee9a81540a7e1c80602bb}{imprimir}}();
+29     \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classpa__sesion6_1_1_lista_threads_a934ff238b8937623cc1a047bc9860605}\label{classpa__sesion6_1_1_lista_threads_a934ff238b8937623cc1a047bc9860605}} 
+\index{pa\+\_\+sesion6\+::\+Lista\+Threads@{pa\+\_\+sesion6\+::\+Lista\+Threads}!lista@{lista}}
+\index{lista@{lista}!pa\+\_\+sesion6\+::\+Lista\+Threads@{pa\+\_\+sesion6\+::\+Lista\+Threads}}
+\subsubsection{\texorpdfstring{lista}{lista}}
+{\footnotesize\ttfamily Array\+List$<$Thread$>$ pa\+\_\+sesion6.\+Lista\+Threads.\+lista\hspace{0.3cm}{\ttfamily [package]}}
+
+\mbox{\Hypertarget{classpa__sesion6_1_1_lista_threads_a3fe988c4626e0a9dad9f164b8c6fd426}\label{classpa__sesion6_1_1_lista_threads_a3fe988c4626e0a9dad9f164b8c6fd426}} 
+\index{pa\+\_\+sesion6\+::\+Lista\+Threads@{pa\+\_\+sesion6\+::\+Lista\+Threads}!tf@{tf}}
+\index{tf@{tf}!pa\+\_\+sesion6\+::\+Lista\+Threads@{pa\+\_\+sesion6\+::\+Lista\+Threads}}
+\subsubsection{\texorpdfstring{tf}{tf}}
+{\footnotesize\ttfamily J\+Text\+Field pa\+\_\+sesion6.\+Lista\+Threads.\+tf\hspace{0.3cm}{\ttfamily [package]}}
+

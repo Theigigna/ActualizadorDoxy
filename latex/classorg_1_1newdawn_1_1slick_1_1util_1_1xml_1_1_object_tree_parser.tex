@@ -1,0 +1,821 @@
+\hypertarget{classorg_1_1newdawn_1_1slick_1_1util_1_1xml_1_1_object_tree_parser}{}\section{org.\+newdawn.\+slick.\+util.\+xml.\+Object\+Tree\+Parser Class Reference}
+\label{classorg_1_1newdawn_1_1slick_1_1util_1_1xml_1_1_object_tree_parser}\index{org.\+newdawn.\+slick.\+util.\+xml.\+Object\+Tree\+Parser@{org.\+newdawn.\+slick.\+util.\+xml.\+Object\+Tree\+Parser}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1xml_1_1_object_tree_parser_af4c8c1f09a9c56dce175cb70e9a57926}{Object\+Tree\+Parser}} ()
+\item 
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1xml_1_1_object_tree_parser_a8e6ee678892b8b9f6b2547c12b6a0317}{Object\+Tree\+Parser}} (String \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1xml_1_1_object_tree_parser_ab71da775b688ffcb01dd17456a4013bb}{default\+Package}})
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1xml_1_1_object_tree_parser_a03026019c9ab19b319fb0ef0ce32217e}{add\+Element\+Mapping}} (String element\+Name, Class element\+Class)
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1xml_1_1_object_tree_parser_a309e9f0ca0c24b6cb4120da36f3ddf9d}{add\+Ignored\+Element}} (String element\+Name)
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1xml_1_1_object_tree_parser_a378493da252c061831b9df7f8269d34c}{set\+Add\+Method\+Name}} (String method\+Name)
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1xml_1_1_object_tree_parser_a3257fc35ecae8f9c27bbdc9cd2b489b2}{set\+Default\+Package}} (String \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1xml_1_1_object_tree_parser_ab71da775b688ffcb01dd17456a4013bb}{default\+Package}})
+\item 
+Object \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1xml_1_1_object_tree_parser_a0e937d050a1ad0e58e24465f87ac5eee}{parse}} (String ref)  throws Slick\+X\+M\+L\+Exception 
+\item 
+Object \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1xml_1_1_object_tree_parser_ad4fb701b5ad924401683319443407f2e}{parse}} (String name, Input\+Stream in)  throws Slick\+X\+M\+L\+Exception 
+\item 
+Object \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1xml_1_1_object_tree_parser_ae2b6f03bcd08a6968a300f58e0b24f2e}{parse\+Onto}} (String ref, Object target)  throws Slick\+X\+M\+L\+Exception 
+\item 
+Object \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1xml_1_1_object_tree_parser_a2196c40ecd24a4cc73b3471bcc44a682}{parse\+Onto}} (String name, Input\+Stream in, Object target)  throws Slick\+X\+M\+L\+Exception 
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+Class \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1xml_1_1_object_tree_parser_a0c4c72b306807c49a12e60724c0eddb3}{get\+Class\+For\+Element\+Name}} (String name)
+\item 
+Object \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1xml_1_1_object_tree_parser_a1adc20e7ba6879b553d681e59f182126}{traverse}} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1xml_1_1_x_m_l_element}{X\+M\+L\+Element}} current)  throws Slick\+X\+M\+L\+Exception 
+\item 
+Object \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1xml_1_1_object_tree_parser_aae6a4de36679329fe38f61bfbd4b9ad2}{traverse}} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1xml_1_1_x_m_l_element}{X\+M\+L\+Element}} current, Object instance)  throws Slick\+X\+M\+L\+Exception 
+\item 
+Object \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1xml_1_1_object_tree_parser_aec7415fa8c060d9a5841c7b54a50ff27}{type\+Value}} (String value, Class clazz)  throws Slick\+X\+M\+L\+Exception 
+\item 
+Class \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1xml_1_1_object_tree_parser_a26a6afeae2913c5b30e54d78b2996fb7}{map\+Primitive}} (Class clazz)
+\item 
+Field \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1xml_1_1_object_tree_parser_a8498dcdf85563156aa04fd5dbc6b3637}{find\+Field}} (Class clazz, String name)
+\item 
+Method \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1xml_1_1_object_tree_parser_adeb37b83c1082cd794c9ec1ca5da9e9f}{find\+Method}} (Class clazz, String name)
+\item 
+Method \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1xml_1_1_object_tree_parser_a712b6ea598e6983075d30056ff583274}{find\+Method}} (Class clazz, String name, Class parameter)
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1xml_1_1_object_tree_parser_a9476f849ee25e45b5fa65229adf01cd2}{set\+Field}} (Field field, Object instance, Object value)  throws Slick\+X\+M\+L\+Exception 
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1xml_1_1_object_tree_parser_a0c4e621ec62be84ee45a12a99714aa64}{invoke}} (Method method, Object instance, Object\mbox{[}$\,$\mbox{]} params)  throws Slick\+X\+M\+L\+Exception 
+\item 
+Method \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1xml_1_1_object_tree_parser_a6d75c7a61198e54be45a307a9815c583}{get\+Method}} (Class clazz, String name, Class\mbox{[}$\,$\mbox{]} params)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Hash\+Map \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1xml_1_1_object_tree_parser_ac81f61688951ebf234982da046b22dd9}{name\+To\+Class}} = new Hash\+Map()
+\item 
+String \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1xml_1_1_object_tree_parser_ab71da775b688ffcb01dd17456a4013bb}{default\+Package}}
+\item 
+Array\+List \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1xml_1_1_object_tree_parser_ac7fe7d041a44835a28a1f7effaf03410}{ignored}} = new Array\+List()
+\item 
+String \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1xml_1_1_object_tree_parser_a063295dc4b123cde10949867045f71e6}{add\+Method}} = \char`\"{}add\char`\"{}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Provides a method of parsing X\+ML into an existing data model. This does not provide the same functionality as J\+A\+XB or the variety of X\+ML bindings out there. This is a utility to map X\+ML onto an existing data model. The idea being that the design level model should not be driven by the X\+ML schema thats defined. The two arn\textquotesingle{}t always equal and often you end up with a set of class that represent your X\+ML that you then have to traverse to extract into your normal data model.
+
+This utility hopes to take a piece of X\+ML and map it onto a previously designed data model. At the moment it\textquotesingle{}s way to tied to the structure of the X\+ML but this will hopefully change with time.
+
+X\+ML element names must be mapped to class names. This can be done in two ways either\+:
+
+
+\begin{DoxyItemize}
+\item Specify an explict mapping with \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1xml_1_1_object_tree_parser_a03026019c9ab19b319fb0ef0ce32217e}{add\+Element\+Mapping()}}
+\item Specify the default package name and use the element name as the class name
+\end{DoxyItemize}
+
+Each attribute in an element is mapped into a property of the element class, preferably through a set$<$\+Attr\+Name$>$ bean method, but alternatively by direct injection into private fields.
+
+Each child element is added to the target class by call the method add() on it with a single parameter of the type generated for the child element.
+
+Classes can optionally implement set\+X\+M\+L\+Element\+Name(\+String) and set\+X\+M\+L\+Element\+Content(\+String) to recieve the name and content respectively of the \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1xml_1_1_x_m_l_element}{X\+M\+L\+Element}} they were parsed from. This can help when mapping two elements to a single class.
+
+To reiterate, I\textquotesingle{}m not sure this is a good idea yet. It helps me as a utility since I\textquotesingle{}ve done this several times in the past but in the general case it may not be perfect. Consider a custom parser using \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1xml_1_1_x_m_l_parser}{X\+M\+L\+Parser}} or J\+A\+XB (et al) seriously instead.
+
+\begin{DoxyAuthor}{Author}
+kevin 
+\end{DoxyAuthor}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1util_1_1xml_1_1_object_tree_parser_af4c8c1f09a9c56dce175cb70e9a57926}\label{classorg_1_1newdawn_1_1slick_1_1util_1_1xml_1_1_object_tree_parser_af4c8c1f09a9c56dce175cb70e9a57926}} 
+\index{org\+::newdawn\+::slick\+::util\+::xml\+::\+Object\+Tree\+Parser@{org\+::newdawn\+::slick\+::util\+::xml\+::\+Object\+Tree\+Parser}!Object\+Tree\+Parser@{Object\+Tree\+Parser}}
+\index{Object\+Tree\+Parser@{Object\+Tree\+Parser}!org\+::newdawn\+::slick\+::util\+::xml\+::\+Object\+Tree\+Parser@{org\+::newdawn\+::slick\+::util\+::xml\+::\+Object\+Tree\+Parser}}
+\subsubsection{\texorpdfstring{Object\+Tree\+Parser()}{ObjectTreeParser()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily org.\+newdawn.\+slick.\+util.\+xml.\+Object\+Tree\+Parser.\+Object\+Tree\+Parser (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Create an object tree parser with no default package 
+\begin{DoxyCode}
+61                               \{
+62     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1util_1_1xml_1_1_object_tree_parser_a8e6ee678892b8b9f6b2547c12b6a0317}\label{classorg_1_1newdawn_1_1slick_1_1util_1_1xml_1_1_object_tree_parser_a8e6ee678892b8b9f6b2547c12b6a0317}} 
+\index{org\+::newdawn\+::slick\+::util\+::xml\+::\+Object\+Tree\+Parser@{org\+::newdawn\+::slick\+::util\+::xml\+::\+Object\+Tree\+Parser}!Object\+Tree\+Parser@{Object\+Tree\+Parser}}
+\index{Object\+Tree\+Parser@{Object\+Tree\+Parser}!org\+::newdawn\+::slick\+::util\+::xml\+::\+Object\+Tree\+Parser@{org\+::newdawn\+::slick\+::util\+::xml\+::\+Object\+Tree\+Parser}}
+\subsubsection{\texorpdfstring{Object\+Tree\+Parser()}{ObjectTreeParser()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily org.\+newdawn.\+slick.\+util.\+xml.\+Object\+Tree\+Parser.\+Object\+Tree\+Parser (\begin{DoxyParamCaption}\item[{String}]{default\+Package }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Create an object tree parser specifing the default package where classes will be search for using the X\+ML element name
+
+
+\begin{DoxyParams}{Parameters}
+{\em default\+Package} & The default package to be searched \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+70                                                    \{
+71         this.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1xml_1_1_object_tree_parser_ab71da775b688ffcb01dd17456a4013bb}{defaultPackage}} = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1xml_1_1_object_tree_parser_ab71da775b688ffcb01dd17456a4013bb}{defaultPackage}};
+72     \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1util_1_1xml_1_1_object_tree_parser_a03026019c9ab19b319fb0ef0ce32217e}\label{classorg_1_1newdawn_1_1slick_1_1util_1_1xml_1_1_object_tree_parser_a03026019c9ab19b319fb0ef0ce32217e}} 
+\index{org\+::newdawn\+::slick\+::util\+::xml\+::\+Object\+Tree\+Parser@{org\+::newdawn\+::slick\+::util\+::xml\+::\+Object\+Tree\+Parser}!add\+Element\+Mapping@{add\+Element\+Mapping}}
+\index{add\+Element\+Mapping@{add\+Element\+Mapping}!org\+::newdawn\+::slick\+::util\+::xml\+::\+Object\+Tree\+Parser@{org\+::newdawn\+::slick\+::util\+::xml\+::\+Object\+Tree\+Parser}}
+\subsubsection{\texorpdfstring{add\+Element\+Mapping()}{addElementMapping()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+util.\+xml.\+Object\+Tree\+Parser.\+add\+Element\+Mapping (\begin{DoxyParamCaption}\item[{String}]{element\+Name,  }\item[{Class}]{element\+Class }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Add a mapping between X\+ML element name and class name
+
+
+\begin{DoxyParams}{Parameters}
+{\em element\+Name} & The name of the X\+ML element \\
+\hline
+{\em element\+Class} & The class to be created for the given element \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+80                                                                           \{
+81         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1xml_1_1_object_tree_parser_ac81f61688951ebf234982da046b22dd9}{nameToClass}}.put(elementName, elementClass);
+82     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1util_1_1xml_1_1_object_tree_parser_a309e9f0ca0c24b6cb4120da36f3ddf9d}\label{classorg_1_1newdawn_1_1slick_1_1util_1_1xml_1_1_object_tree_parser_a309e9f0ca0c24b6cb4120da36f3ddf9d}} 
+\index{org\+::newdawn\+::slick\+::util\+::xml\+::\+Object\+Tree\+Parser@{org\+::newdawn\+::slick\+::util\+::xml\+::\+Object\+Tree\+Parser}!add\+Ignored\+Element@{add\+Ignored\+Element}}
+\index{add\+Ignored\+Element@{add\+Ignored\+Element}!org\+::newdawn\+::slick\+::util\+::xml\+::\+Object\+Tree\+Parser@{org\+::newdawn\+::slick\+::util\+::xml\+::\+Object\+Tree\+Parser}}
+\subsubsection{\texorpdfstring{add\+Ignored\+Element()}{addIgnoredElement()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+util.\+xml.\+Object\+Tree\+Parser.\+add\+Ignored\+Element (\begin{DoxyParamCaption}\item[{String}]{element\+Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Add a name to the list of elements ignored
+
+
+\begin{DoxyParams}{Parameters}
+{\em element\+Name} & The name to ignore \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+89                                                       \{
+90         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1xml_1_1_object_tree_parser_ac7fe7d041a44835a28a1f7effaf03410}{ignored}}.add(elementName);
+91     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1util_1_1xml_1_1_object_tree_parser_a8498dcdf85563156aa04fd5dbc6b3637}\label{classorg_1_1newdawn_1_1slick_1_1util_1_1xml_1_1_object_tree_parser_a8498dcdf85563156aa04fd5dbc6b3637}} 
+\index{org\+::newdawn\+::slick\+::util\+::xml\+::\+Object\+Tree\+Parser@{org\+::newdawn\+::slick\+::util\+::xml\+::\+Object\+Tree\+Parser}!find\+Field@{find\+Field}}
+\index{find\+Field@{find\+Field}!org\+::newdawn\+::slick\+::util\+::xml\+::\+Object\+Tree\+Parser@{org\+::newdawn\+::slick\+::util\+::xml\+::\+Object\+Tree\+Parser}}
+\subsubsection{\texorpdfstring{find\+Field()}{findField()}}
+{\footnotesize\ttfamily Field org.\+newdawn.\+slick.\+util.\+xml.\+Object\+Tree\+Parser.\+find\+Field (\begin{DoxyParamCaption}\item[{Class}]{clazz,  }\item[{String}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+Find a field in a class by it\textquotesingle{}s name. Note that this method is only needed because the general reflection method is case sensitive
+
+
+\begin{DoxyParams}{Parameters}
+{\em clazz} & The clazz to search \\
+\hline
+{\em name} & The name of the field to search for \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The field or null if none could be located 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+354                                                       \{
+355         Field[] fields = clazz.getDeclaredFields();
+356         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i=0;i<fields.length;i++) \{
+357             \textcolor{keywordflow}{if} (fields[i].getName().equalsIgnoreCase(name)) \{
+358                 \textcolor{keywordflow}{if} (fields[i].getType().isPrimitive()) \{
+359                     \textcolor{keywordflow}{return} fields[i];
+360                 \}
+361                 \textcolor{keywordflow}{if} (fields[i].getType() == String.class) \{
+362                     \textcolor{keywordflow}{return} fields[i];
+363                 \}
+364             \}
+365         \}
+366         
+367         \textcolor{keywordflow}{return} null;
+368     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1util_1_1xml_1_1_object_tree_parser_adeb37b83c1082cd794c9ec1ca5da9e9f}\label{classorg_1_1newdawn_1_1slick_1_1util_1_1xml_1_1_object_tree_parser_adeb37b83c1082cd794c9ec1ca5da9e9f}} 
+\index{org\+::newdawn\+::slick\+::util\+::xml\+::\+Object\+Tree\+Parser@{org\+::newdawn\+::slick\+::util\+::xml\+::\+Object\+Tree\+Parser}!find\+Method@{find\+Method}}
+\index{find\+Method@{find\+Method}!org\+::newdawn\+::slick\+::util\+::xml\+::\+Object\+Tree\+Parser@{org\+::newdawn\+::slick\+::util\+::xml\+::\+Object\+Tree\+Parser}}
+\subsubsection{\texorpdfstring{find\+Method()}{findMethod()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Method org.\+newdawn.\+slick.\+util.\+xml.\+Object\+Tree\+Parser.\+find\+Method (\begin{DoxyParamCaption}\item[{Class}]{clazz,  }\item[{String}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+Find a method in a class by it\textquotesingle{}s name. Note that this method is only needed because the general reflection method is case sensitive
+
+
+\begin{DoxyParams}{Parameters}
+{\em clazz} & The clazz to search \\
+\hline
+{\em name} & The name of the method to search for \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The method or null if none could be located 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+379                                                         \{
+380         Method[] methods = clazz.getDeclaredMethods();
+381         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i=0;i<methods.length;i++) \{
+382             \textcolor{keywordflow}{if} (methods[i].getName().equalsIgnoreCase(name)) \{
+383                 Method method = methods[i];
+384                 Class[] params = method.getParameterTypes();
+385                 
+386                 \textcolor{keywordflow}{if} (params.length == 1) \{
+387                     \textcolor{keywordflow}{return} method;
+388                 \}
+389             \}
+390         \}
+391         
+392         \textcolor{keywordflow}{return} null;
+393     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1util_1_1xml_1_1_object_tree_parser_a712b6ea598e6983075d30056ff583274}\label{classorg_1_1newdawn_1_1slick_1_1util_1_1xml_1_1_object_tree_parser_a712b6ea598e6983075d30056ff583274}} 
+\index{org\+::newdawn\+::slick\+::util\+::xml\+::\+Object\+Tree\+Parser@{org\+::newdawn\+::slick\+::util\+::xml\+::\+Object\+Tree\+Parser}!find\+Method@{find\+Method}}
+\index{find\+Method@{find\+Method}!org\+::newdawn\+::slick\+::util\+::xml\+::\+Object\+Tree\+Parser@{org\+::newdawn\+::slick\+::util\+::xml\+::\+Object\+Tree\+Parser}}
+\subsubsection{\texorpdfstring{find\+Method()}{findMethod()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Method org.\+newdawn.\+slick.\+util.\+xml.\+Object\+Tree\+Parser.\+find\+Method (\begin{DoxyParamCaption}\item[{Class}]{clazz,  }\item[{String}]{name,  }\item[{Class}]{parameter }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+Find a method on a class with a single given parameter.
+
+
+\begin{DoxyParams}{Parameters}
+{\em clazz} & The clazz to search through \\
+\hline
+{\em name} & The name of the method to locate \\
+\hline
+{\em parameter} & The type the single parameter must have \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The method or null if none could be located 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+403                                                                          \{
+404         Method[] methods = clazz.getDeclaredMethods();
+405         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i=0;i<methods.length;i++) \{
+406             \textcolor{keywordflow}{if} (methods[i].getName().equalsIgnoreCase(name)) \{
+407                 Method method = methods[i];
+408                 Class[] params = method.getParameterTypes();
+409                 
+410                 \textcolor{keywordflow}{if} (params.length == 1) \{
+411                     \textcolor{keywordflow}{if} (method.getParameterTypes()[0].isAssignableFrom(parameter)) \{
+412                         \textcolor{keywordflow}{return} method;
+413                     \}
+414                 \}
+415             \}
+416         \}
+417         
+418         \textcolor{keywordflow}{return} null;
+419     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1util_1_1xml_1_1_object_tree_parser_a0c4c72b306807c49a12e60724c0eddb3}\label{classorg_1_1newdawn_1_1slick_1_1util_1_1xml_1_1_object_tree_parser_a0c4c72b306807c49a12e60724c0eddb3}} 
+\index{org\+::newdawn\+::slick\+::util\+::xml\+::\+Object\+Tree\+Parser@{org\+::newdawn\+::slick\+::util\+::xml\+::\+Object\+Tree\+Parser}!get\+Class\+For\+Element\+Name@{get\+Class\+For\+Element\+Name}}
+\index{get\+Class\+For\+Element\+Name@{get\+Class\+For\+Element\+Name}!org\+::newdawn\+::slick\+::util\+::xml\+::\+Object\+Tree\+Parser@{org\+::newdawn\+::slick\+::util\+::xml\+::\+Object\+Tree\+Parser}}
+\subsubsection{\texorpdfstring{get\+Class\+For\+Element\+Name()}{getClassForElementName()}}
+{\footnotesize\ttfamily Class org.\+newdawn.\+slick.\+util.\+xml.\+Object\+Tree\+Parser.\+get\+Class\+For\+Element\+Name (\begin{DoxyParamCaption}\item[{String}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+Deterine the name of the class that should be used for a given X\+ML element name.
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The name of the X\+ML element \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The class to be used or null if none can be found 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+181                                                       \{
+182         Class clazz = (Class) \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1xml_1_1_object_tree_parser_ac81f61688951ebf234982da046b22dd9}{nameToClass}}.get(name);
+183         \textcolor{keywordflow}{if} (clazz != null) \{
+184             \textcolor{keywordflow}{return} clazz;
+185         \}
+186         
+187         \textcolor{keywordflow}{if} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1xml_1_1_object_tree_parser_ab71da775b688ffcb01dd17456a4013bb}{defaultPackage}} != null) \{
+188             \textcolor{keywordflow}{try} \{
+189                 \textcolor{keywordflow}{return} Class.forName(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1xml_1_1_object_tree_parser_ab71da775b688ffcb01dd17456a4013bb}{defaultPackage}}+\textcolor{stringliteral}{"."}+name);
+190             \} \textcolor{keywordflow}{catch} (ClassNotFoundException e) \{
+191                 \textcolor{comment}{// ignore, it's just not there}
+192             \}
+193         \}
+194         
+195         \textcolor{keywordflow}{return} null;
+196     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1util_1_1xml_1_1_object_tree_parser_a6d75c7a61198e54be45a307a9815c583}\label{classorg_1_1newdawn_1_1slick_1_1util_1_1xml_1_1_object_tree_parser_a6d75c7a61198e54be45a307a9815c583}} 
+\index{org\+::newdawn\+::slick\+::util\+::xml\+::\+Object\+Tree\+Parser@{org\+::newdawn\+::slick\+::util\+::xml\+::\+Object\+Tree\+Parser}!get\+Method@{get\+Method}}
+\index{get\+Method@{get\+Method}!org\+::newdawn\+::slick\+::util\+::xml\+::\+Object\+Tree\+Parser@{org\+::newdawn\+::slick\+::util\+::xml\+::\+Object\+Tree\+Parser}}
+\subsubsection{\texorpdfstring{get\+Method()}{getMethod()}}
+{\footnotesize\ttfamily Method org.\+newdawn.\+slick.\+util.\+xml.\+Object\+Tree\+Parser.\+get\+Method (\begin{DoxyParamCaption}\item[{Class}]{clazz,  }\item[{String}]{name,  }\item[{Class \mbox{[}$\,$\mbox{]}}]{params }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+Get a method on a given class. Only here for tidy purposes, hides the the big exceptions.
+
+
+\begin{DoxyParams}{Parameters}
+{\em clazz} & The class to search \\
+\hline
+{\em name} & The name of the method \\
+\hline
+{\em params} & The parameters for the method \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The method or null if none can be found 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+474                                                                        \{
+475         \textcolor{keywordflow}{try} \{
+476             \textcolor{keywordflow}{return} clazz.getMethod(name, params);
+477         \} \textcolor{keywordflow}{catch} (SecurityException e) \{
+478             \textcolor{keywordflow}{return} null;
+479         \} \textcolor{keywordflow}{catch} (NoSuchMethodException e) \{
+480             \textcolor{keywordflow}{return} null;
+481         \}
+482     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1util_1_1xml_1_1_object_tree_parser_a0c4e621ec62be84ee45a12a99714aa64}\label{classorg_1_1newdawn_1_1slick_1_1util_1_1xml_1_1_object_tree_parser_a0c4e621ec62be84ee45a12a99714aa64}} 
+\index{org\+::newdawn\+::slick\+::util\+::xml\+::\+Object\+Tree\+Parser@{org\+::newdawn\+::slick\+::util\+::xml\+::\+Object\+Tree\+Parser}!invoke@{invoke}}
+\index{invoke@{invoke}!org\+::newdawn\+::slick\+::util\+::xml\+::\+Object\+Tree\+Parser@{org\+::newdawn\+::slick\+::util\+::xml\+::\+Object\+Tree\+Parser}}
+\subsubsection{\texorpdfstring{invoke()}{invoke()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+util.\+xml.\+Object\+Tree\+Parser.\+invoke (\begin{DoxyParamCaption}\item[{Method}]{method,  }\item[{Object}]{instance,  }\item[{Object \mbox{[}$\,$\mbox{]}}]{params }\end{DoxyParamCaption}) throws \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1xml_1_1_slick_x_m_l_exception}{Slick\+X\+M\+L\+Exception}}\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+Call a method on a object
+
+
+\begin{DoxyParams}{Parameters}
+{\em method} & The method to call \\
+\hline
+{\em instance} & The objet to call the method on \\
+\hline
+{\em params} & The parameters to pass \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1xml_1_1_slick_x_m_l_exception}{Slick\+X\+M\+L\+Exception}}} & Indicates a failure to call or access the method \\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyCode}
+450                                                                                                   \{
+451         \textcolor{keywordflow}{try} \{
+452             method.setAccessible(\textcolor{keyword}{true});
+453             method.invoke(instance, params);
+454         \} \textcolor{keywordflow}{catch} (IllegalArgumentException e) \{
+455             \textcolor{keywordflow}{throw} \textcolor{keyword}{new} SlickXMLException(\textcolor{stringliteral}{"Failed to invoke: "}+method+\textcolor{stringliteral}{" for an XML attribute, is it valid?"}, 
+      e);
+456         \} \textcolor{keywordflow}{catch} (IllegalAccessException e) \{
+457             \textcolor{keywordflow}{throw} \textcolor{keyword}{new} SlickXMLException(\textcolor{stringliteral}{"Failed to invoke: "}+method+\textcolor{stringliteral}{" for an XML attribute, is it valid?"}, 
+      e);
+458         \} \textcolor{keywordflow}{catch} (InvocationTargetException e) \{
+459             \textcolor{keywordflow}{throw} \textcolor{keyword}{new} SlickXMLException(\textcolor{stringliteral}{"Failed to invoke: "}+method+\textcolor{stringliteral}{" for an XML attribute, is it valid?"}, 
+      e);
+460         \} \textcolor{keywordflow}{finally} \{
+461             method.setAccessible(\textcolor{keyword}{false});
+462         \}
+463     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1util_1_1xml_1_1_object_tree_parser_a26a6afeae2913c5b30e54d78b2996fb7}\label{classorg_1_1newdawn_1_1slick_1_1util_1_1xml_1_1_object_tree_parser_a26a6afeae2913c5b30e54d78b2996fb7}} 
+\index{org\+::newdawn\+::slick\+::util\+::xml\+::\+Object\+Tree\+Parser@{org\+::newdawn\+::slick\+::util\+::xml\+::\+Object\+Tree\+Parser}!map\+Primitive@{map\+Primitive}}
+\index{map\+Primitive@{map\+Primitive}!org\+::newdawn\+::slick\+::util\+::xml\+::\+Object\+Tree\+Parser@{org\+::newdawn\+::slick\+::util\+::xml\+::\+Object\+Tree\+Parser}}
+\subsubsection{\texorpdfstring{map\+Primitive()}{mapPrimitive()}}
+{\footnotesize\ttfamily Class org.\+newdawn.\+slick.\+util.\+xml.\+Object\+Tree\+Parser.\+map\+Primitive (\begin{DoxyParamCaption}\item[{Class}]{clazz }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+Map a primitive class type to it\textquotesingle{}s real object wrapper
+
+
+\begin{DoxyParams}{Parameters}
+{\em clazz} & The primitive type class \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The object wrapper class 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+325                                             \{
+326         \textcolor{keywordflow}{if} (clazz == Integer.TYPE) \{
+327             \textcolor{keywordflow}{return} Integer.class;
+328         \}
+329         \textcolor{keywordflow}{if} (clazz == Double.TYPE) \{
+330             \textcolor{keywordflow}{return} Double.class;
+331         \}
+332         \textcolor{keywordflow}{if} (clazz == Float.TYPE) \{
+333             \textcolor{keywordflow}{return} Float.class;
+334         \}
+335         \textcolor{keywordflow}{if} (clazz == Boolean.TYPE) \{
+336             \textcolor{keywordflow}{return} Boolean.class;
+337         \}
+338         \textcolor{keywordflow}{if} (clazz == Long.TYPE) \{
+339             \textcolor{keywordflow}{return} Long.class;
+340         \}
+341         
+342         \textcolor{keywordflow}{throw} \textcolor{keyword}{new} RuntimeException(\textcolor{stringliteral}{"Unsupported primitive: "}+clazz);
+343     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1util_1_1xml_1_1_object_tree_parser_a0e937d050a1ad0e58e24465f87ac5eee}\label{classorg_1_1newdawn_1_1slick_1_1util_1_1xml_1_1_object_tree_parser_a0e937d050a1ad0e58e24465f87ac5eee}} 
+\index{org\+::newdawn\+::slick\+::util\+::xml\+::\+Object\+Tree\+Parser@{org\+::newdawn\+::slick\+::util\+::xml\+::\+Object\+Tree\+Parser}!parse@{parse}}
+\index{parse@{parse}!org\+::newdawn\+::slick\+::util\+::xml\+::\+Object\+Tree\+Parser@{org\+::newdawn\+::slick\+::util\+::xml\+::\+Object\+Tree\+Parser}}
+\subsubsection{\texorpdfstring{parse()}{parse()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Object org.\+newdawn.\+slick.\+util.\+xml.\+Object\+Tree\+Parser.\+parse (\begin{DoxyParamCaption}\item[{String}]{ref }\end{DoxyParamCaption}) throws \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1xml_1_1_slick_x_m_l_exception}{Slick\+X\+M\+L\+Exception}}\hspace{0.3cm}{\ttfamily [inline]}}
+
+Parse the X\+ML document located by the slick resource loader using the reference given.
+
+
+\begin{DoxyParams}{Parameters}
+{\em ref} & The reference to the X\+ML document \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The root element of the newly parse document 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1xml_1_1_slick_x_m_l_exception}{Slick\+X\+M\+L\+Exception}}} & Indicates a failure to parse the X\+ML, most likely the X\+ML is malformed in some way. \\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyCode}
+123                                                              \{
+124         \textcolor{keywordflow}{return} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1xml_1_1_object_tree_parser_a0e937d050a1ad0e58e24465f87ac5eee}{parse}}(ref, ResourceLoader.getResourceAsStream(ref));
+125     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1util_1_1xml_1_1_object_tree_parser_ad4fb701b5ad924401683319443407f2e}\label{classorg_1_1newdawn_1_1slick_1_1util_1_1xml_1_1_object_tree_parser_ad4fb701b5ad924401683319443407f2e}} 
+\index{org\+::newdawn\+::slick\+::util\+::xml\+::\+Object\+Tree\+Parser@{org\+::newdawn\+::slick\+::util\+::xml\+::\+Object\+Tree\+Parser}!parse@{parse}}
+\index{parse@{parse}!org\+::newdawn\+::slick\+::util\+::xml\+::\+Object\+Tree\+Parser@{org\+::newdawn\+::slick\+::util\+::xml\+::\+Object\+Tree\+Parser}}
+\subsubsection{\texorpdfstring{parse()}{parse()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Object org.\+newdawn.\+slick.\+util.\+xml.\+Object\+Tree\+Parser.\+parse (\begin{DoxyParamCaption}\item[{String}]{name,  }\item[{Input\+Stream}]{in }\end{DoxyParamCaption}) throws \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1xml_1_1_slick_x_m_l_exception}{Slick\+X\+M\+L\+Exception}}\hspace{0.3cm}{\ttfamily [inline]}}
+
+Parse the X\+ML document that can be read from the given input stream
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The name of the document \\
+\hline
+{\em in} & The input stream from which the document can be read \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The root element of the newly parse document 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1xml_1_1_slick_x_m_l_exception}{Slick\+X\+M\+L\+Exception}}} & Indicates a failure to parse the X\+ML, most likely the X\+ML is malformed in some way. \\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyCode}
+136                                                                               \{
+137         XMLParser parser = \textcolor{keyword}{new} XMLParser();
+138         XMLElement root = parser.parse(name, in);
+139         
+140         \textcolor{keywordflow}{return} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1xml_1_1_object_tree_parser_a1adc20e7ba6879b553d681e59f182126}{traverse}}(root);
+141     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1util_1_1xml_1_1_object_tree_parser_ae2b6f03bcd08a6968a300f58e0b24f2e}\label{classorg_1_1newdawn_1_1slick_1_1util_1_1xml_1_1_object_tree_parser_ae2b6f03bcd08a6968a300f58e0b24f2e}} 
+\index{org\+::newdawn\+::slick\+::util\+::xml\+::\+Object\+Tree\+Parser@{org\+::newdawn\+::slick\+::util\+::xml\+::\+Object\+Tree\+Parser}!parse\+Onto@{parse\+Onto}}
+\index{parse\+Onto@{parse\+Onto}!org\+::newdawn\+::slick\+::util\+::xml\+::\+Object\+Tree\+Parser@{org\+::newdawn\+::slick\+::util\+::xml\+::\+Object\+Tree\+Parser}}
+\subsubsection{\texorpdfstring{parse\+Onto()}{parseOnto()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Object org.\+newdawn.\+slick.\+util.\+xml.\+Object\+Tree\+Parser.\+parse\+Onto (\begin{DoxyParamCaption}\item[{String}]{ref,  }\item[{Object}]{target }\end{DoxyParamCaption}) throws \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1xml_1_1_slick_x_m_l_exception}{Slick\+X\+M\+L\+Exception}}\hspace{0.3cm}{\ttfamily [inline]}}
+
+Parse the X\+ML document located by the slick resource loader using the reference given.
+
+
+\begin{DoxyParams}{Parameters}
+{\em ref} & The reference to the X\+ML document \\
+\hline
+{\em target} & The top level object that represents the root node \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The root element of the newly parse document 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1xml_1_1_slick_x_m_l_exception}{Slick\+X\+M\+L\+Exception}}} & Indicates a failure to parse the X\+ML, most likely the X\+ML is malformed in some way. \\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyCode}
+153                                                                                 \{
+154         \textcolor{keywordflow}{return} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1xml_1_1_object_tree_parser_ae2b6f03bcd08a6968a300f58e0b24f2e}{parseOnto}}(ref, ResourceLoader.getResourceAsStream(ref), target);
+155     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1util_1_1xml_1_1_object_tree_parser_a2196c40ecd24a4cc73b3471bcc44a682}\label{classorg_1_1newdawn_1_1slick_1_1util_1_1xml_1_1_object_tree_parser_a2196c40ecd24a4cc73b3471bcc44a682}} 
+\index{org\+::newdawn\+::slick\+::util\+::xml\+::\+Object\+Tree\+Parser@{org\+::newdawn\+::slick\+::util\+::xml\+::\+Object\+Tree\+Parser}!parse\+Onto@{parse\+Onto}}
+\index{parse\+Onto@{parse\+Onto}!org\+::newdawn\+::slick\+::util\+::xml\+::\+Object\+Tree\+Parser@{org\+::newdawn\+::slick\+::util\+::xml\+::\+Object\+Tree\+Parser}}
+\subsubsection{\texorpdfstring{parse\+Onto()}{parseOnto()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Object org.\+newdawn.\+slick.\+util.\+xml.\+Object\+Tree\+Parser.\+parse\+Onto (\begin{DoxyParamCaption}\item[{String}]{name,  }\item[{Input\+Stream}]{in,  }\item[{Object}]{target }\end{DoxyParamCaption}) throws \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1xml_1_1_slick_x_m_l_exception}{Slick\+X\+M\+L\+Exception}}\hspace{0.3cm}{\ttfamily [inline]}}
+
+Parse the X\+ML document that can be read from the given input stream
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The name of the document \\
+\hline
+{\em in} & The input stream from which the document can be read \\
+\hline
+{\em target} & The top level object that represents the root node \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The root element of the newly parse document 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1xml_1_1_slick_x_m_l_exception}{Slick\+X\+M\+L\+Exception}}} & Indicates a failure to parse the X\+ML, most likely the X\+ML is malformed in some way. \\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyCode}
+167                                                                                                  \{
+168         XMLParser parser = \textcolor{keyword}{new} XMLParser();
+169         XMLElement root = parser.parse(name, in);
+170         
+171         \textcolor{keywordflow}{return} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1xml_1_1_object_tree_parser_a1adc20e7ba6879b553d681e59f182126}{traverse}}(root, target);
+172     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1util_1_1xml_1_1_object_tree_parser_a378493da252c061831b9df7f8269d34c}\label{classorg_1_1newdawn_1_1slick_1_1util_1_1xml_1_1_object_tree_parser_a378493da252c061831b9df7f8269d34c}} 
+\index{org\+::newdawn\+::slick\+::util\+::xml\+::\+Object\+Tree\+Parser@{org\+::newdawn\+::slick\+::util\+::xml\+::\+Object\+Tree\+Parser}!set\+Add\+Method\+Name@{set\+Add\+Method\+Name}}
+\index{set\+Add\+Method\+Name@{set\+Add\+Method\+Name}!org\+::newdawn\+::slick\+::util\+::xml\+::\+Object\+Tree\+Parser@{org\+::newdawn\+::slick\+::util\+::xml\+::\+Object\+Tree\+Parser}}
+\subsubsection{\texorpdfstring{set\+Add\+Method\+Name()}{setAddMethodName()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+util.\+xml.\+Object\+Tree\+Parser.\+set\+Add\+Method\+Name (\begin{DoxyParamCaption}\item[{String}]{method\+Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Set the name of the method to use to add child objects to their parents. This is sometimes useful to not clash with the existing data model methods.
+
+
+\begin{DoxyParams}{Parameters}
+{\em method\+Name} & The name of the method to call \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+100                                                     \{
+101         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1xml_1_1_object_tree_parser_a063295dc4b123cde10949867045f71e6}{addMethod}} = methodName;
+102     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1util_1_1xml_1_1_object_tree_parser_a3257fc35ecae8f9c27bbdc9cd2b489b2}\label{classorg_1_1newdawn_1_1slick_1_1util_1_1xml_1_1_object_tree_parser_a3257fc35ecae8f9c27bbdc9cd2b489b2}} 
+\index{org\+::newdawn\+::slick\+::util\+::xml\+::\+Object\+Tree\+Parser@{org\+::newdawn\+::slick\+::util\+::xml\+::\+Object\+Tree\+Parser}!set\+Default\+Package@{set\+Default\+Package}}
+\index{set\+Default\+Package@{set\+Default\+Package}!org\+::newdawn\+::slick\+::util\+::xml\+::\+Object\+Tree\+Parser@{org\+::newdawn\+::slick\+::util\+::xml\+::\+Object\+Tree\+Parser}}
+\subsubsection{\texorpdfstring{set\+Default\+Package()}{setDefaultPackage()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+util.\+xml.\+Object\+Tree\+Parser.\+set\+Default\+Package (\begin{DoxyParamCaption}\item[{String}]{default\+Package }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Set the default package which will be search for classes by their X\+ML element name.
+
+
+\begin{DoxyParams}{Parameters}
+{\em default\+Package} & The default package to be searched \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+110                                                          \{
+111         this.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1xml_1_1_object_tree_parser_ab71da775b688ffcb01dd17456a4013bb}{defaultPackage}} = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1xml_1_1_object_tree_parser_ab71da775b688ffcb01dd17456a4013bb}{defaultPackage}};
+112     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1util_1_1xml_1_1_object_tree_parser_a9476f849ee25e45b5fa65229adf01cd2}\label{classorg_1_1newdawn_1_1slick_1_1util_1_1xml_1_1_object_tree_parser_a9476f849ee25e45b5fa65229adf01cd2}} 
+\index{org\+::newdawn\+::slick\+::util\+::xml\+::\+Object\+Tree\+Parser@{org\+::newdawn\+::slick\+::util\+::xml\+::\+Object\+Tree\+Parser}!set\+Field@{set\+Field}}
+\index{set\+Field@{set\+Field}!org\+::newdawn\+::slick\+::util\+::xml\+::\+Object\+Tree\+Parser@{org\+::newdawn\+::slick\+::util\+::xml\+::\+Object\+Tree\+Parser}}
+\subsubsection{\texorpdfstring{set\+Field()}{setField()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+util.\+xml.\+Object\+Tree\+Parser.\+set\+Field (\begin{DoxyParamCaption}\item[{Field}]{field,  }\item[{Object}]{instance,  }\item[{Object}]{value }\end{DoxyParamCaption}) throws \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1xml_1_1_slick_x_m_l_exception}{Slick\+X\+M\+L\+Exception}}\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+Set a field value on a object instance
+
+
+\begin{DoxyParams}{Parameters}
+{\em field} & The field to be set \\
+\hline
+{\em instance} & The instance of the object to set it on \\
+\hline
+{\em value} & The value to set \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1xml_1_1_slick_x_m_l_exception}{Slick\+X\+M\+L\+Exception}}} & Indicates a failure to set or access the field \\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyCode}
+429                                                                                                \{
+430         \textcolor{keywordflow}{try} \{
+431             field.setAccessible(\textcolor{keyword}{true});
+432             field.set(instance, value);
+433         \} \textcolor{keywordflow}{catch} (IllegalArgumentException e) \{
+434             \textcolor{keywordflow}{throw} \textcolor{keyword}{new} SlickXMLException(\textcolor{stringliteral}{"Failed to set: "}+field+\textcolor{stringliteral}{" for an XML attribute, is it valid?"}, e);
+435         \} \textcolor{keywordflow}{catch} (IllegalAccessException e) \{
+436             \textcolor{keywordflow}{throw} \textcolor{keyword}{new} SlickXMLException(\textcolor{stringliteral}{"Failed to set: "}+field+\textcolor{stringliteral}{" for an XML attribute, is it valid?"}, e);
+437         \} \textcolor{keywordflow}{finally} \{
+438             field.setAccessible(\textcolor{keyword}{false});
+439         \}
+440     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1util_1_1xml_1_1_object_tree_parser_a1adc20e7ba6879b553d681e59f182126}\label{classorg_1_1newdawn_1_1slick_1_1util_1_1xml_1_1_object_tree_parser_a1adc20e7ba6879b553d681e59f182126}} 
+\index{org\+::newdawn\+::slick\+::util\+::xml\+::\+Object\+Tree\+Parser@{org\+::newdawn\+::slick\+::util\+::xml\+::\+Object\+Tree\+Parser}!traverse@{traverse}}
+\index{traverse@{traverse}!org\+::newdawn\+::slick\+::util\+::xml\+::\+Object\+Tree\+Parser@{org\+::newdawn\+::slick\+::util\+::xml\+::\+Object\+Tree\+Parser}}
+\subsubsection{\texorpdfstring{traverse()}{traverse()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Object org.\+newdawn.\+slick.\+util.\+xml.\+Object\+Tree\+Parser.\+traverse (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1xml_1_1_x_m_l_element}{X\+M\+L\+Element}}}]{current }\end{DoxyParamCaption}) throws \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1xml_1_1_slick_x_m_l_exception}{Slick\+X\+M\+L\+Exception}}\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+Traverse the X\+ML element specified generating the appropriate object structure for it and it\textquotesingle{}s children
+
+
+\begin{DoxyParams}{Parameters}
+{\em current} & The X\+ML element to process \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The object created for the given element 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1xml_1_1_slick_x_m_l_exception}{Slick\+X\+M\+L\+Exception}}} & \\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyCode}
+206                                                                          \{
+207         \textcolor{keywordflow}{return} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1xml_1_1_object_tree_parser_a1adc20e7ba6879b553d681e59f182126}{traverse}}(current, null);
+208     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1util_1_1xml_1_1_object_tree_parser_aae6a4de36679329fe38f61bfbd4b9ad2}\label{classorg_1_1newdawn_1_1slick_1_1util_1_1xml_1_1_object_tree_parser_aae6a4de36679329fe38f61bfbd4b9ad2}} 
+\index{org\+::newdawn\+::slick\+::util\+::xml\+::\+Object\+Tree\+Parser@{org\+::newdawn\+::slick\+::util\+::xml\+::\+Object\+Tree\+Parser}!traverse@{traverse}}
+\index{traverse@{traverse}!org\+::newdawn\+::slick\+::util\+::xml\+::\+Object\+Tree\+Parser@{org\+::newdawn\+::slick\+::util\+::xml\+::\+Object\+Tree\+Parser}}
+\subsubsection{\texorpdfstring{traverse()}{traverse()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Object org.\+newdawn.\+slick.\+util.\+xml.\+Object\+Tree\+Parser.\+traverse (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1xml_1_1_x_m_l_element}{X\+M\+L\+Element}}}]{current,  }\item[{Object}]{instance }\end{DoxyParamCaption}) throws \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1xml_1_1_slick_x_m_l_exception}{Slick\+X\+M\+L\+Exception}}\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+Traverse the X\+ML element specified generating the appropriate object structure for it and it\textquotesingle{}s children
+
+
+\begin{DoxyParams}{Parameters}
+{\em current} & The X\+ML element to process \\
+\hline
+{\em instance} & The instance to parse onto, normally null \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The object created for the given element 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1xml_1_1_slick_x_m_l_exception}{Slick\+X\+M\+L\+Exception}}} & \\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyCode}
+219                                                                                           \{
+220         String name = current.getName();
+221         \textcolor{keywordflow}{if} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1xml_1_1_object_tree_parser_ac7fe7d041a44835a28a1f7effaf03410}{ignored}}.contains(name)) \{
+222             \textcolor{keywordflow}{return} null;
+223         \}
+224         
+225         Class clazz;
+226         
+227         \textcolor{keywordflow}{if} (instance == null) \{
+228             clazz = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1xml_1_1_object_tree_parser_a0c4c72b306807c49a12e60724c0eddb3}{getClassForElementName}}(name);
+229         \} \textcolor{keywordflow}{else} \{
+230             clazz = instance.getClass();
+231         \}
+232         
+233         \textcolor{keywordflow}{if} (clazz == null) \{
+234             \textcolor{keywordflow}{throw} \textcolor{keyword}{new} SlickXMLException(\textcolor{stringliteral}{"Unable to map element "}+name+\textcolor{stringliteral}{" to a class, define the mapping"});
+235         \}
+236         
+237         \textcolor{keywordflow}{try} \{
+238             \textcolor{keywordflow}{if} (instance == null) \{
+239                 instance = clazz.newInstance();
+240                 
+241                 Method elementNameMethod = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1xml_1_1_object_tree_parser_a6d75c7a61198e54be45a307a9815c583}{getMethod}}(clazz, \textcolor{stringliteral}{"setXMLElementName"}, \textcolor{keyword}{new} Class[] \{
+      String.class\});
+242                 \textcolor{keywordflow}{if} (elementNameMethod != null) \{
+243                     \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1xml_1_1_object_tree_parser_a0c4e621ec62be84ee45a12a99714aa64}{invoke}}(elementNameMethod, instance, \textcolor{keyword}{new} Object[] \{name\});
+244                 \}
+245                 Method contentMethod = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1xml_1_1_object_tree_parser_a6d75c7a61198e54be45a307a9815c583}{getMethod}}(clazz, \textcolor{stringliteral}{"setXMLElementContent"}, \textcolor{keyword}{new} Class[] \{
+      String.class\});
+246                 \textcolor{keywordflow}{if} (contentMethod != null) \{
+247                     \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1xml_1_1_object_tree_parser_a0c4e621ec62be84ee45a12a99714aa64}{invoke}}(contentMethod, instance, \textcolor{keyword}{new} Object[] \{current.getContent()\});
+248                 \}
+249             \}
+250             
+251             String[] attrs = current.getAttributeNames();
+252             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i=0;i<attrs.length;i++) \{
+253                 String methodName = \textcolor{stringliteral}{"set"}+attrs[i];
+254                 
+255                 Method method = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1xml_1_1_object_tree_parser_adeb37b83c1082cd794c9ec1ca5da9e9f}{findMethod}}(clazz, methodName);
+256                 
+257                 \textcolor{keywordflow}{if} (method == null) \{
+258                     Field field = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1xml_1_1_object_tree_parser_a8498dcdf85563156aa04fd5dbc6b3637}{findField}}(clazz, attrs[i]);
+259                     \textcolor{keywordflow}{if} (field != null) \{
+260                         String value = current.getAttribute(attrs[i]);
+261                         Object typedValue = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1xml_1_1_object_tree_parser_aec7415fa8c060d9a5841c7b54a50ff27}{typeValue}}(value, field.getType());
+262                         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1xml_1_1_object_tree_parser_a9476f849ee25e45b5fa65229adf01cd2}{setField}}(field, instance, typedValue);
+263                     \} \textcolor{keywordflow}{else} \{
+264                         Log.info(\textcolor{stringliteral}{"Unable to find property on: "}+clazz+\textcolor{stringliteral}{" for attribute: "}+attrs[i]);
+265                     \}
+266                 \} \textcolor{keywordflow}{else} \{
+267                     String value = current.getAttribute(attrs[i]);
+268                     Object typedValue = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1xml_1_1_object_tree_parser_aec7415fa8c060d9a5841c7b54a50ff27}{typeValue}}(value, method.getParameterTypes()[0]);
+269                     \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1xml_1_1_object_tree_parser_a0c4e621ec62be84ee45a12a99714aa64}{invoke}}(method, instance, \textcolor{keyword}{new} Object[] \{typedValue\});
+270                 \}
+271             \}
+272             
+273             XMLElementList children = current.getChildren();
+274             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i=0;i<children.size();i++) \{
+275                 XMLElement element = children.get(i);
+276                 
+277                 Object child = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1xml_1_1_object_tree_parser_a1adc20e7ba6879b553d681e59f182126}{traverse}}(element);
+278                 \textcolor{keywordflow}{if} (child != null) \{
+279                     String methodName = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1xml_1_1_object_tree_parser_a063295dc4b123cde10949867045f71e6}{addMethod}};
+280                     
+281                     Method method = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1xml_1_1_object_tree_parser_adeb37b83c1082cd794c9ec1ca5da9e9f}{findMethod}}(clazz, methodName, child.getClass());
+282                     \textcolor{keywordflow}{if} (method == null) \{
+283                         Log.info(\textcolor{stringliteral}{"Unable to find method to add: "}+child+\textcolor{stringliteral}{" to "}+clazz);
+284                     \} \textcolor{keywordflow}{else} \{
+285                         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1xml_1_1_object_tree_parser_a0c4e621ec62be84ee45a12a99714aa64}{invoke}}(method, instance, \textcolor{keyword}{new} Object[] \{child\});
+286                     \}
+287                 \}
+288             \}
+289             
+290             \textcolor{keywordflow}{return} instance;
+291         \} \textcolor{keywordflow}{catch} (InstantiationException e) \{
+292             \textcolor{keywordflow}{throw} \textcolor{keyword}{new} SlickXMLException(\textcolor{stringliteral}{"Unable to instance "}+clazz+\textcolor{stringliteral}{" for element "}+name+\textcolor{stringliteral}{", no zero
+       parameter constructor?"}, e);
+293         \} \textcolor{keywordflow}{catch} (IllegalAccessException e) \{
+294             \textcolor{keywordflow}{throw} \textcolor{keyword}{new} SlickXMLException(\textcolor{stringliteral}{"Unable to instance "}+clazz+\textcolor{stringliteral}{" for element "}+name+\textcolor{stringliteral}{", no zero
+       parameter constructor?"}, e);
+295         \}
+296     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1util_1_1xml_1_1_object_tree_parser_aec7415fa8c060d9a5841c7b54a50ff27}\label{classorg_1_1newdawn_1_1slick_1_1util_1_1xml_1_1_object_tree_parser_aec7415fa8c060d9a5841c7b54a50ff27}} 
+\index{org\+::newdawn\+::slick\+::util\+::xml\+::\+Object\+Tree\+Parser@{org\+::newdawn\+::slick\+::util\+::xml\+::\+Object\+Tree\+Parser}!type\+Value@{type\+Value}}
+\index{type\+Value@{type\+Value}!org\+::newdawn\+::slick\+::util\+::xml\+::\+Object\+Tree\+Parser@{org\+::newdawn\+::slick\+::util\+::xml\+::\+Object\+Tree\+Parser}}
+\subsubsection{\texorpdfstring{type\+Value()}{typeValue()}}
+{\footnotesize\ttfamily Object org.\+newdawn.\+slick.\+util.\+xml.\+Object\+Tree\+Parser.\+type\+Value (\begin{DoxyParamCaption}\item[{String}]{value,  }\item[{Class}]{clazz }\end{DoxyParamCaption}) throws \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1xml_1_1_slick_x_m_l_exception}{Slick\+X\+M\+L\+Exception}}\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+Convert a given value to a given type
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & The value to convert \\
+\hline
+{\em clazz} & The class that the returned object must be \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The value as the given type 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1xml_1_1_slick_x_m_l_exception}{Slick\+X\+M\+L\+Exception}}} & Indicates there is no automatic way of converting the value to the type \\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyCode}
+306                                                                                  \{
+307         \textcolor{keywordflow}{if} (clazz == String.class) \{
+308             \textcolor{keywordflow}{return} value;
+309         \}
+310 
+311         \textcolor{keywordflow}{try} \{
+312             clazz = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1xml_1_1_object_tree_parser_a26a6afeae2913c5b30e54d78b2996fb7}{mapPrimitive}}(clazz);
+313             \textcolor{keywordflow}{return} clazz.getConstructor(\textcolor{keyword}{new} Class[] \{String.class\}).newInstance(\textcolor{keyword}{new} Object[] \{value\});
+314         \} \textcolor{keywordflow}{catch} (Exception e) \{
+315             \textcolor{keywordflow}{throw} \textcolor{keyword}{new} SlickXMLException(\textcolor{stringliteral}{"Failed to convert: "}+value+\textcolor{stringliteral}{" to the expected primitive type: "}+
+      clazz, e);
+316         \}
+317     \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1util_1_1xml_1_1_object_tree_parser_a063295dc4b123cde10949867045f71e6}\label{classorg_1_1newdawn_1_1slick_1_1util_1_1xml_1_1_object_tree_parser_a063295dc4b123cde10949867045f71e6}} 
+\index{org\+::newdawn\+::slick\+::util\+::xml\+::\+Object\+Tree\+Parser@{org\+::newdawn\+::slick\+::util\+::xml\+::\+Object\+Tree\+Parser}!add\+Method@{add\+Method}}
+\index{add\+Method@{add\+Method}!org\+::newdawn\+::slick\+::util\+::xml\+::\+Object\+Tree\+Parser@{org\+::newdawn\+::slick\+::util\+::xml\+::\+Object\+Tree\+Parser}}
+\subsubsection{\texorpdfstring{add\+Method}{addMethod}}
+{\footnotesize\ttfamily String org.\+newdawn.\+slick.\+util.\+xml.\+Object\+Tree\+Parser.\+add\+Method = \char`\"{}add\char`\"{}\hspace{0.3cm}{\ttfamily [private]}}
+
+The name of the method to add an child object to it\textquotesingle{}s parent \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1util_1_1xml_1_1_object_tree_parser_ab71da775b688ffcb01dd17456a4013bb}\label{classorg_1_1newdawn_1_1slick_1_1util_1_1xml_1_1_object_tree_parser_ab71da775b688ffcb01dd17456a4013bb}} 
+\index{org\+::newdawn\+::slick\+::util\+::xml\+::\+Object\+Tree\+Parser@{org\+::newdawn\+::slick\+::util\+::xml\+::\+Object\+Tree\+Parser}!default\+Package@{default\+Package}}
+\index{default\+Package@{default\+Package}!org\+::newdawn\+::slick\+::util\+::xml\+::\+Object\+Tree\+Parser@{org\+::newdawn\+::slick\+::util\+::xml\+::\+Object\+Tree\+Parser}}
+\subsubsection{\texorpdfstring{default\+Package}{defaultPackage}}
+{\footnotesize\ttfamily String org.\+newdawn.\+slick.\+util.\+xml.\+Object\+Tree\+Parser.\+default\+Package\hspace{0.3cm}{\ttfamily [private]}}
+
+The default package where classes will be searched for \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1util_1_1xml_1_1_object_tree_parser_ac7fe7d041a44835a28a1f7effaf03410}\label{classorg_1_1newdawn_1_1slick_1_1util_1_1xml_1_1_object_tree_parser_ac7fe7d041a44835a28a1f7effaf03410}} 
+\index{org\+::newdawn\+::slick\+::util\+::xml\+::\+Object\+Tree\+Parser@{org\+::newdawn\+::slick\+::util\+::xml\+::\+Object\+Tree\+Parser}!ignored@{ignored}}
+\index{ignored@{ignored}!org\+::newdawn\+::slick\+::util\+::xml\+::\+Object\+Tree\+Parser@{org\+::newdawn\+::slick\+::util\+::xml\+::\+Object\+Tree\+Parser}}
+\subsubsection{\texorpdfstring{ignored}{ignored}}
+{\footnotesize\ttfamily Array\+List org.\+newdawn.\+slick.\+util.\+xml.\+Object\+Tree\+Parser.\+ignored = new Array\+List()\hspace{0.3cm}{\ttfamily [private]}}
+
+The list of elements to ignore \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1util_1_1xml_1_1_object_tree_parser_ac81f61688951ebf234982da046b22dd9}\label{classorg_1_1newdawn_1_1slick_1_1util_1_1xml_1_1_object_tree_parser_ac81f61688951ebf234982da046b22dd9}} 
+\index{org\+::newdawn\+::slick\+::util\+::xml\+::\+Object\+Tree\+Parser@{org\+::newdawn\+::slick\+::util\+::xml\+::\+Object\+Tree\+Parser}!name\+To\+Class@{name\+To\+Class}}
+\index{name\+To\+Class@{name\+To\+Class}!org\+::newdawn\+::slick\+::util\+::xml\+::\+Object\+Tree\+Parser@{org\+::newdawn\+::slick\+::util\+::xml\+::\+Object\+Tree\+Parser}}
+\subsubsection{\texorpdfstring{name\+To\+Class}{nameToClass}}
+{\footnotesize\ttfamily Hash\+Map org.\+newdawn.\+slick.\+util.\+xml.\+Object\+Tree\+Parser.\+name\+To\+Class = new Hash\+Map()\hspace{0.3cm}{\ttfamily [private]}}
+
+The mapping of X\+ML element names to class names 

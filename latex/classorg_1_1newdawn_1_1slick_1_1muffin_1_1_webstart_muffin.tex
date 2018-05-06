@@ -1,0 +1,162 @@
+\hypertarget{classorg_1_1newdawn_1_1slick_1_1muffin_1_1_webstart_muffin}{}\section{org.\+newdawn.\+slick.\+muffin.\+Webstart\+Muffin Class Reference}
+\label{classorg_1_1newdawn_1_1slick_1_1muffin_1_1_webstart_muffin}\index{org.\+newdawn.\+slick.\+muffin.\+Webstart\+Muffin@{org.\+newdawn.\+slick.\+muffin.\+Webstart\+Muffin}}
+Inheritance diagram for org.\+newdawn.\+slick.\+muffin.\+Webstart\+Muffin\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classorg_1_1newdawn_1_1slick_1_1muffin_1_1_webstart_muffin}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1muffin_1_1_webstart_muffin_a4109511b5120d8588fcb4543202d9763}{save\+File}} (Hash\+Map score\+Map, String file\+Name)  throws I\+O\+Exception 
+\item 
+Hash\+Map \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1muffin_1_1_webstart_muffin_a671e964aa3e400ae2c9d2a4d6a9ebeef}{load\+File}} (String file\+Name)  throws I\+O\+Exception 
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A muffin load/save implementation based on using Webstart Muffins (a bit like cookies only for webstart)
+
+\begin{DoxyAuthor}{Author}
+kappa\+One 
+\end{DoxyAuthor}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1muffin_1_1_webstart_muffin_a671e964aa3e400ae2c9d2a4d6a9ebeef}\label{classorg_1_1newdawn_1_1slick_1_1muffin_1_1_webstart_muffin_a671e964aa3e400ae2c9d2a4d6a9ebeef}} 
+\index{org\+::newdawn\+::slick\+::muffin\+::\+Webstart\+Muffin@{org\+::newdawn\+::slick\+::muffin\+::\+Webstart\+Muffin}!load\+File@{load\+File}}
+\index{load\+File@{load\+File}!org\+::newdawn\+::slick\+::muffin\+::\+Webstart\+Muffin@{org\+::newdawn\+::slick\+::muffin\+::\+Webstart\+Muffin}}
+\subsubsection{\texorpdfstring{load\+File()}{loadFile()}}
+{\footnotesize\ttfamily Hash\+Map org.\+newdawn.\+slick.\+muffin.\+Webstart\+Muffin.\+load\+File (\begin{DoxyParamCaption}\item[{String}]{file\+Name }\end{DoxyParamCaption}) throws I\+O\+Exception\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1muffin_1_1_muffin_a2d6256b6d8f26b294f06341985047fbe}{org.\+newdawn.\+slick.\+muffin.\+Muffin\+::load\+File}}(java.\+lang.\+String) 
+\end{DoxySeeAlso}
+
+
+Implements \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1muffin_1_1_muffin_a2d6256b6d8f26b294f06341985047fbe}{org.\+newdawn.\+slick.\+muffin.\+Muffin}}.
+
+
+\begin{DoxyCode}
+91                                                                 \{
+92         HashMap hashMap = \textcolor{keyword}{new} HashMap();
+93 
+94         \textcolor{keywordflow}{try} \{
+95             PersistenceService ps = (PersistenceService) ServiceManager
+96                     .lookup(\textcolor{stringliteral}{"javax.jnlp.PersistenceService"});
+97             BasicService bs = (BasicService) ServiceManager
+98                     .lookup(\textcolor{stringliteral}{"javax.jnlp.BasicService"});
+99             URL baseURL = bs.getCodeBase();
+100             URL configURL = \textcolor{keyword}{new} URL(baseURL, fileName);
+101             FileContents fc = ps.get(configURL);
+102             DataInputStream ois = \textcolor{keyword}{new} DataInputStream(fc.getInputStream());
+103 
+104             \textcolor{comment}{// read in data from muffin}
+105             String key;
+106 
+107             \textcolor{comment}{// load hashMap as <String, Int> or <String, String>}
+108             \textcolor{keywordflow}{if} (fileName.endsWith(\textcolor{stringliteral}{"Number"})) \{
+109                 \textcolor{keywordtype}{double} value;
+110                 \textcolor{comment}{// while not end of file}
+111                 \textcolor{keywordflow}{while} ((key = ois.readUTF()) != null) \{
+112                     value = ois.readDouble();
+113                     \textcolor{comment}{// load value into hashMap}
+114                     hashMap.put(key, \textcolor{keyword}{new} Double(value));
+115                 \}
+116             \} \textcolor{keywordflow}{else} \{
+117                 String value;
+118                 \textcolor{comment}{// while not end of file}
+119                 \textcolor{keywordflow}{while} ((key = ois.readUTF()) != null) \{
+120                     value = ois.readUTF();
+121                     \textcolor{comment}{// load value into hashMap}
+122                     hashMap.put(key, value);
+123                 \}
+124             \}
+125 
+126             ois.close();
+127         \} \textcolor{keywordflow}{catch} (EOFException e) \{
+128             \textcolor{comment}{// End of the file reached, do nothing}
+129         \} \textcolor{keywordflow}{catch} (IOException e) \{
+130             \textcolor{comment}{// No data there - thats ok, just not saved before}
+131         \} \textcolor{keywordflow}{catch} (Exception e) \{
+132             Log.error(e);
+133             \textcolor{keywordflow}{throw} \textcolor{keyword}{new} IOException(\textcolor{stringliteral}{"Failed to load state from webstart muffin"});
+134         \}
+135 
+136         \textcolor{keywordflow}{return} hashMap;
+137     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1muffin_1_1_webstart_muffin_a4109511b5120d8588fcb4543202d9763}\label{classorg_1_1newdawn_1_1slick_1_1muffin_1_1_webstart_muffin_a4109511b5120d8588fcb4543202d9763}} 
+\index{org\+::newdawn\+::slick\+::muffin\+::\+Webstart\+Muffin@{org\+::newdawn\+::slick\+::muffin\+::\+Webstart\+Muffin}!save\+File@{save\+File}}
+\index{save\+File@{save\+File}!org\+::newdawn\+::slick\+::muffin\+::\+Webstart\+Muffin@{org\+::newdawn\+::slick\+::muffin\+::\+Webstart\+Muffin}}
+\subsubsection{\texorpdfstring{save\+File()}{saveFile()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+muffin.\+Webstart\+Muffin.\+save\+File (\begin{DoxyParamCaption}\item[{Hash\+Map}]{score\+Map,  }\item[{String}]{file\+Name }\end{DoxyParamCaption}) throws I\+O\+Exception\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1muffin_1_1_muffin_a025189130fb123bc751e58677435974a}{org.\+newdawn.\+slick.\+muffin.\+Muffin\+::save\+File}}(java.\+util.\+Hash\+Map, java.\+lang.\+String) 
+\end{DoxySeeAlso}
+
+
+Implements \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1muffin_1_1_muffin_a025189130fb123bc751e58677435974a}{org.\+newdawn.\+slick.\+muffin.\+Muffin}}.
+
+
+\begin{DoxyCode}
+30                                                                                \{
+31 
+32         PersistenceService ps;
+33         BasicService bs;
+34         URL configURL;
+35 
+36         \textcolor{keywordflow}{try} \{
+37             ps = (PersistenceService) ServiceManager
+38                     .lookup(\textcolor{stringliteral}{"javax.jnlp.PersistenceService"});
+39             bs = (BasicService) ServiceManager
+40                     .lookup(\textcolor{stringliteral}{"javax.jnlp.BasicService"});
+41             URL baseURL = bs.getCodeBase();
+42             \textcolor{comment}{// System.out.println("CodeBase was " + baseURL);}
+43             configURL = \textcolor{keyword}{new} URL(baseURL, fileName);
+44         \} \textcolor{keywordflow}{catch} (Exception e) \{
+45             Log.error(e);
+46             \textcolor{keywordflow}{throw} \textcolor{keyword}{new} IOException(\textcolor{stringliteral}{"Failed to save state: "});
+47         \}
+48 
+49         \textcolor{keywordflow}{try} \{
+50             ps.delete(configURL);
+51         \} \textcolor{keywordflow}{catch} (Exception e) \{
+52             Log.info(\textcolor{stringliteral}{"No exisiting Muffin Found - First Save"});
+53         \}
+54         
+55         \textcolor{keywordflow}{try} \{
+56             ps.create(configURL, 1024); \textcolor{comment}{// 1024 bytes for our data}
+57 
+58             FileContents fc = ps.get(configURL);
+59             DataOutputStream oos = \textcolor{keyword}{new} DataOutputStream(fc
+60                     .getOutputStream(\textcolor{keyword}{false}));
+61 
+62             \textcolor{comment}{// scroll through hashMap and write key and value to file}
+63             Set keys = scoreMap.keySet(); \textcolor{comment}{// get the keys}
+64 
+65             \textcolor{comment}{// get values using keys}
+66             \textcolor{keywordflow}{for} (Iterator i = keys.iterator(); i.hasNext();) \{
+67                 String key = (String) i.next();
+68 
+69                 oos.writeUTF(key);
+70 
+71                 \textcolor{keywordflow}{if} (fileName.endsWith(\textcolor{stringliteral}{"Number"})) \{
+72                     \textcolor{keywordtype}{double} value = ((Double) scoreMap.get(key)).doubleValue();
+73                     oos.writeDouble(value);
+74                 \} \textcolor{keywordflow}{else} \{
+75                     String value = (String) scoreMap.get(key);
+76                     oos.writeUTF(value);
+77                 \}
+78             \}
+79 
+80             oos.flush();
+81             oos.close();
+82         \} \textcolor{keywordflow}{catch} (Exception e) \{
+83             Log.error(e);
+84             \textcolor{keywordflow}{throw} \textcolor{keyword}{new} IOException(\textcolor{stringliteral}{"Failed to store map of state data"});
+85         \}
+86     \}
+\end{DoxyCode}

@@ -1,0 +1,349 @@
+\hypertarget{classorg_1_1newdawn_1_1slick_1_1svg_1_1inkscape_1_1_util}{}\section{org.\+newdawn.\+slick.\+svg.\+inkscape.\+Util Class Reference}
+\label{classorg_1_1newdawn_1_1slick_1_1svg_1_1inkscape_1_1_util}\index{org.\+newdawn.\+slick.\+svg.\+inkscape.\+Util@{org.\+newdawn.\+slick.\+svg.\+inkscape.\+Util}}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static String \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1inkscape_1_1_util_a5c5c9cf51e4c8021b7eeac2714142a1f}{get\+As\+Reference}} (String value)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static final String \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1inkscape_1_1_util_af7a7fcda04b0fd373a2ed92aa5e26cdc}{I\+N\+K\+S\+C\+A\+PE}} = \char`\"{}http\+://www.\+inkscape.\+org/namespaces/inkscape\char`\"{}
+\item 
+static final String \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1inkscape_1_1_util_ae8d1dafc96d1e9a111de141dcc6f6d6f}{S\+O\+D\+I\+P\+O\+DI}} = \char`\"{}http\+://sodipodi.\+sourceforge.\+net/D\+TD/sodipodi-\/0.dtd\char`\"{}
+\item 
+static final String \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1inkscape_1_1_util_acaa162b07865246ad8a853344f83abd2}{X\+L\+I\+NK}} = \char`\"{}http\+://www.\+w3.\+org/1999/xlink\char`\"{}
+\end{DoxyCompactItemize}
+\subsection*{Static Package Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1_non_geometric_data}{Non\+Geometric\+Data}} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1inkscape_1_1_util_aa784c3edeb4aad8fc26ec54e4f8c7d04}{get\+Non\+Geometric\+Data}} (Element element)
+\item 
+static String \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1inkscape_1_1_util_a93a7132a1178ccfeb1341987b00ef513}{get\+Meta\+Data}} (Element element)
+\item 
+static String \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1inkscape_1_1_util_a868edc35f1d8da87bfbc5cff12514217}{get\+Style}} (Element element, String style\+Name)
+\item 
+static String \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1inkscape_1_1_util_a97d0515ddad8d405e9770c1f1d1592e0}{extract\+Style}} (String style, String attribute)
+\item 
+static Transform \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1inkscape_1_1_util_a96fccbd8e9ba06987f1e5d978f2b9ff4}{get\+Transform}} (Element element)
+\item 
+static Transform \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1inkscape_1_1_util_ae45ba35602eb8b3071c732e60edf609d}{get\+Transform}} (Element element, String attribute)
+\item 
+static float \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1inkscape_1_1_util_a263828dc423a571645718f7413f83cf9}{get\+Float\+Attribute}} (Element element, String attr)  throws Parsing\+Exception 
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A set of utility for processing the S\+VG documents produced by Inkscape
+
+\begin{DoxyAuthor}{Author}
+kevin 
+\end{DoxyAuthor}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1svg_1_1inkscape_1_1_util_a97d0515ddad8d405e9770c1f1d1592e0}\label{classorg_1_1newdawn_1_1slick_1_1svg_1_1inkscape_1_1_util_a97d0515ddad8d405e9770c1f1d1592e0}} 
+\index{org\+::newdawn\+::slick\+::svg\+::inkscape\+::\+Util@{org\+::newdawn\+::slick\+::svg\+::inkscape\+::\+Util}!extract\+Style@{extract\+Style}}
+\index{extract\+Style@{extract\+Style}!org\+::newdawn\+::slick\+::svg\+::inkscape\+::\+Util@{org\+::newdawn\+::slick\+::svg\+::inkscape\+::\+Util}}
+\subsubsection{\texorpdfstring{extract\+Style()}{extractStyle()}}
+{\footnotesize\ttfamily static String org.\+newdawn.\+slick.\+svg.\+inkscape.\+Util.\+extract\+Style (\begin{DoxyParamCaption}\item[{String}]{style,  }\item[{String}]{attribute }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}, {\ttfamily [package]}}
+
+Extract the style value from a Inkscape encoded string
+
+
+\begin{DoxyParams}{Parameters}
+{\em style} & The style string to be decoded \\
+\hline
+{\em attribute} & The style attribute to retrieve \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The value for the given attribute 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+87                                                                \{
+88         \textcolor{keywordflow}{if} (style == null) \{
+89             \textcolor{keywordflow}{return} \textcolor{stringliteral}{""};
+90         \}
+91         
+92         StringTokenizer tokens = \textcolor{keyword}{new} StringTokenizer(style,\textcolor{stringliteral}{";"});
+93         
+94         \textcolor{keywordflow}{while} (tokens.hasMoreTokens()) \{
+95             String token = tokens.nextToken();
+96             String key = token.substring(0,token.indexOf(\textcolor{charliteral}{':'}));
+97             \textcolor{keywordflow}{if} (key.equals(attribute)) \{
+98                 \textcolor{keywordflow}{return} token.substring(token.indexOf(\textcolor{charliteral}{':'})+1);
+99             \}
+100         \}
+101         
+102         \textcolor{keywordflow}{return} \textcolor{stringliteral}{""};
+103     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1svg_1_1inkscape_1_1_util_a5c5c9cf51e4c8021b7eeac2714142a1f}\label{classorg_1_1newdawn_1_1slick_1_1svg_1_1inkscape_1_1_util_a5c5c9cf51e4c8021b7eeac2714142a1f}} 
+\index{org\+::newdawn\+::slick\+::svg\+::inkscape\+::\+Util@{org\+::newdawn\+::slick\+::svg\+::inkscape\+::\+Util}!get\+As\+Reference@{get\+As\+Reference}}
+\index{get\+As\+Reference@{get\+As\+Reference}!org\+::newdawn\+::slick\+::svg\+::inkscape\+::\+Util@{org\+::newdawn\+::slick\+::svg\+::inkscape\+::\+Util}}
+\subsubsection{\texorpdfstring{get\+As\+Reference()}{getAsReference()}}
+{\footnotesize\ttfamily static String org.\+newdawn.\+slick.\+svg.\+inkscape.\+Util.\+get\+As\+Reference (\begin{DoxyParamCaption}\item[{String}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Get the attribute value as a reference to another entity
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & The value to treat as reference \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The reference part of the attribute value 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+189                                                       \{
+190         \textcolor{keywordflow}{if} (value.length() < 2) \{
+191             \textcolor{keywordflow}{return} \textcolor{stringliteral}{""};
+192         \}
+193         
+194         value = value.substring(1, value.length());
+195         
+196         \textcolor{keywordflow}{return} value;
+197     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1svg_1_1inkscape_1_1_util_a263828dc423a571645718f7413f83cf9}\label{classorg_1_1newdawn_1_1slick_1_1svg_1_1inkscape_1_1_util_a263828dc423a571645718f7413f83cf9}} 
+\index{org\+::newdawn\+::slick\+::svg\+::inkscape\+::\+Util@{org\+::newdawn\+::slick\+::svg\+::inkscape\+::\+Util}!get\+Float\+Attribute@{get\+Float\+Attribute}}
+\index{get\+Float\+Attribute@{get\+Float\+Attribute}!org\+::newdawn\+::slick\+::svg\+::inkscape\+::\+Util@{org\+::newdawn\+::slick\+::svg\+::inkscape\+::\+Util}}
+\subsubsection{\texorpdfstring{get\+Float\+Attribute()}{getFloatAttribute()}}
+{\footnotesize\ttfamily static float org.\+newdawn.\+slick.\+svg.\+inkscape.\+Util.\+get\+Float\+Attribute (\begin{DoxyParamCaption}\item[{Element}]{element,  }\item[{String}]{attr }\end{DoxyParamCaption}) throws \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1_parsing_exception}{Parsing\+Exception}}\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}, {\ttfamily [package]}}
+
+Get a floating point attribute that may appear in either the default or S\+O\+D\+I\+P\+O\+DI namespace
+
+
+\begin{DoxyParams}{Parameters}
+{\em element} & The element from which the attribute should be read \\
+\hline
+{\em attr} & The attribute to be read \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The value from the given attribute 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1_parsing_exception}{Parsing\+Exception}}} & Indicates the value in the attribute was not a float \\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyCode}
+170                                                                                          \{
+171         String cx = element.getAttribute(attr);
+172         \textcolor{keywordflow}{if} ((cx == null) || (cx.equals(\textcolor{stringliteral}{""}))) \{
+173             cx = element.getAttributeNS(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1inkscape_1_1_util_ae8d1dafc96d1e9a111de141dcc6f6d6f}{SODIPODI}}, attr);
+174         \}
+175         
+176         \textcolor{keywordflow}{try} \{
+177             \textcolor{keywordflow}{return} Float.parseFloat(cx);
+178         \} \textcolor{keywordflow}{catch} (NumberFormatException e) \{
+179             \textcolor{keywordflow}{throw} \textcolor{keyword}{new} ParsingException(element, \textcolor{stringliteral}{"Invalid value for: "}+attr, e);
+180         \}
+181     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1svg_1_1inkscape_1_1_util_a93a7132a1178ccfeb1341987b00ef513}\label{classorg_1_1newdawn_1_1slick_1_1svg_1_1inkscape_1_1_util_a93a7132a1178ccfeb1341987b00ef513}} 
+\index{org\+::newdawn\+::slick\+::svg\+::inkscape\+::\+Util@{org\+::newdawn\+::slick\+::svg\+::inkscape\+::\+Util}!get\+Meta\+Data@{get\+Meta\+Data}}
+\index{get\+Meta\+Data@{get\+Meta\+Data}!org\+::newdawn\+::slick\+::svg\+::inkscape\+::\+Util@{org\+::newdawn\+::slick\+::svg\+::inkscape\+::\+Util}}
+\subsubsection{\texorpdfstring{get\+Meta\+Data()}{getMetaData()}}
+{\footnotesize\ttfamily static String org.\+newdawn.\+slick.\+svg.\+inkscape.\+Util.\+get\+Meta\+Data (\begin{DoxyParamCaption}\item[{Element}]{element }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}, {\ttfamily [package]}}
+
+Get the meta data store within an element either in the label or id atributes
+
+
+\begin{DoxyParams}{Parameters}
+{\em element} & The element to be processed \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The meta data stored 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+53                                                \{
+54         String label = element.getAttributeNS(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1inkscape_1_1_util_af7a7fcda04b0fd373a2ed92aa5e26cdc}{INKSCAPE}}, \textcolor{stringliteral}{"label"});
+55         \textcolor{keywordflow}{if} ((label != null) && (!label.equals(\textcolor{stringliteral}{""}))) \{
+56             \textcolor{keywordflow}{return} label;
+57         \}
+58         
+59         \textcolor{keywordflow}{return} element.getAttribute(\textcolor{stringliteral}{"id"});
+60     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1svg_1_1inkscape_1_1_util_aa784c3edeb4aad8fc26ec54e4f8c7d04}\label{classorg_1_1newdawn_1_1slick_1_1svg_1_1inkscape_1_1_util_aa784c3edeb4aad8fc26ec54e4f8c7d04}} 
+\index{org\+::newdawn\+::slick\+::svg\+::inkscape\+::\+Util@{org\+::newdawn\+::slick\+::svg\+::inkscape\+::\+Util}!get\+Non\+Geometric\+Data@{get\+Non\+Geometric\+Data}}
+\index{get\+Non\+Geometric\+Data@{get\+Non\+Geometric\+Data}!org\+::newdawn\+::slick\+::svg\+::inkscape\+::\+Util@{org\+::newdawn\+::slick\+::svg\+::inkscape\+::\+Util}}
+\subsubsection{\texorpdfstring{get\+Non\+Geometric\+Data()}{getNonGeometricData()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1_non_geometric_data}{Non\+Geometric\+Data}} org.\+newdawn.\+slick.\+svg.\+inkscape.\+Util.\+get\+Non\+Geometric\+Data (\begin{DoxyParamCaption}\item[{Element}]{element }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}, {\ttfamily [package]}}
+
+Get the non-\/geometric data information from an X\+ML element
+
+
+\begin{DoxyParams}{Parameters}
+{\em element} & The element to be processed \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The non-\/geometric data (i.\+e. stroke, fill, etc) 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+29                                                                  \{
+30         String meta = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1inkscape_1_1_util_a93a7132a1178ccfeb1341987b00ef513}{getMetaData}}(element);
+31         
+32         NonGeometricData data = \textcolor{keyword}{new} InkscapeNonGeometricData(meta, element);
+33         data.addAttribute(NonGeometricData.ID, element.getAttribute(\textcolor{stringliteral}{"id"}));
+34         data.addAttribute(NonGeometricData.FILL, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1inkscape_1_1_util_a868edc35f1d8da87bfbc5cff12514217}{getStyle}}(element, NonGeometricData.FILL));
+35         data.addAttribute(NonGeometricData.STROKE, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1inkscape_1_1_util_a868edc35f1d8da87bfbc5cff12514217}{getStyle}}(element, NonGeometricData.STROKE));
+36         data.addAttribute(NonGeometricData.OPACITY, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1inkscape_1_1_util_a868edc35f1d8da87bfbc5cff12514217}{getStyle}}(element, NonGeometricData.OPACITY));
+37         data.addAttribute(NonGeometricData.STROKE\_DASHARRAY, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1inkscape_1_1_util_a868edc35f1d8da87bfbc5cff12514217}{getStyle}}(element, NonGeometricData.
+      STROKE\_DASHARRAY));
+38         data.addAttribute(NonGeometricData.STROKE\_DASHOFFSET, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1inkscape_1_1_util_a868edc35f1d8da87bfbc5cff12514217}{getStyle}}(element, NonGeometricData.
+      STROKE\_DASHOFFSET));
+39         data.addAttribute(NonGeometricData.STROKE\_MITERLIMIT, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1inkscape_1_1_util_a868edc35f1d8da87bfbc5cff12514217}{getStyle}}(element, NonGeometricData.
+      STROKE\_MITERLIMIT));
+40         data.addAttribute(NonGeometricData.STROKE\_OPACITY, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1inkscape_1_1_util_a868edc35f1d8da87bfbc5cff12514217}{getStyle}}(element, NonGeometricData.
+      STROKE\_OPACITY));
+41         data.addAttribute(NonGeometricData.STROKE\_WIDTH, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1inkscape_1_1_util_a868edc35f1d8da87bfbc5cff12514217}{getStyle}}(element, NonGeometricData.
+      STROKE\_WIDTH));
+42         
+43         \textcolor{keywordflow}{return} data;
+44     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1svg_1_1inkscape_1_1_util_a868edc35f1d8da87bfbc5cff12514217}\label{classorg_1_1newdawn_1_1slick_1_1svg_1_1inkscape_1_1_util_a868edc35f1d8da87bfbc5cff12514217}} 
+\index{org\+::newdawn\+::slick\+::svg\+::inkscape\+::\+Util@{org\+::newdawn\+::slick\+::svg\+::inkscape\+::\+Util}!get\+Style@{get\+Style}}
+\index{get\+Style@{get\+Style}!org\+::newdawn\+::slick\+::svg\+::inkscape\+::\+Util@{org\+::newdawn\+::slick\+::svg\+::inkscape\+::\+Util}}
+\subsubsection{\texorpdfstring{get\+Style()}{getStyle()}}
+{\footnotesize\ttfamily static String org.\+newdawn.\+slick.\+svg.\+inkscape.\+Util.\+get\+Style (\begin{DoxyParamCaption}\item[{Element}]{element,  }\item[{String}]{style\+Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}, {\ttfamily [package]}}
+
+Get the style attribute setting for a given style information element (i.\+e. fill, stroke)
+
+
+\begin{DoxyParams}{Parameters}
+{\em element} & The element to be processed \\
+\hline
+{\em style\+Name} & The name of the attribute to retrieve \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The style value 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+69                                                               \{
+70         String value = element.getAttribute(styleName);
+71         
+72         \textcolor{keywordflow}{if} ((value != null) && (value.length() > 0)) \{
+73             \textcolor{keywordflow}{return} value;
+74         \}
+75         
+76         String style = element.getAttribute(\textcolor{stringliteral}{"style"});
+77         \textcolor{keywordflow}{return} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1inkscape_1_1_util_a97d0515ddad8d405e9770c1f1d1592e0}{extractStyle}}(style, styleName);
+78     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1svg_1_1inkscape_1_1_util_a96fccbd8e9ba06987f1e5d978f2b9ff4}\label{classorg_1_1newdawn_1_1slick_1_1svg_1_1inkscape_1_1_util_a96fccbd8e9ba06987f1e5d978f2b9ff4}} 
+\index{org\+::newdawn\+::slick\+::svg\+::inkscape\+::\+Util@{org\+::newdawn\+::slick\+::svg\+::inkscape\+::\+Util}!get\+Transform@{get\+Transform}}
+\index{get\+Transform@{get\+Transform}!org\+::newdawn\+::slick\+::svg\+::inkscape\+::\+Util@{org\+::newdawn\+::slick\+::svg\+::inkscape\+::\+Util}}
+\subsubsection{\texorpdfstring{get\+Transform()}{getTransform()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily static Transform org.\+newdawn.\+slick.\+svg.\+inkscape.\+Util.\+get\+Transform (\begin{DoxyParamCaption}\item[{Element}]{element }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}, {\ttfamily [package]}}
+
+Get a transform defined in the X\+ML
+
+
+\begin{DoxyParams}{Parameters}
+{\em element} & The element from which the transform should be read \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The transform to be applied 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+111                                                    \{
+112         \textcolor{keywordflow}{return} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1inkscape_1_1_util_a96fccbd8e9ba06987f1e5d978f2b9ff4}{getTransform}}(element, \textcolor{stringliteral}{"transform"});
+113     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1svg_1_1inkscape_1_1_util_ae45ba35602eb8b3071c732e60edf609d}\label{classorg_1_1newdawn_1_1slick_1_1svg_1_1inkscape_1_1_util_ae45ba35602eb8b3071c732e60edf609d}} 
+\index{org\+::newdawn\+::slick\+::svg\+::inkscape\+::\+Util@{org\+::newdawn\+::slick\+::svg\+::inkscape\+::\+Util}!get\+Transform@{get\+Transform}}
+\index{get\+Transform@{get\+Transform}!org\+::newdawn\+::slick\+::svg\+::inkscape\+::\+Util@{org\+::newdawn\+::slick\+::svg\+::inkscape\+::\+Util}}
+\subsubsection{\texorpdfstring{get\+Transform()}{getTransform()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily static Transform org.\+newdawn.\+slick.\+svg.\+inkscape.\+Util.\+get\+Transform (\begin{DoxyParamCaption}\item[{Element}]{element,  }\item[{String}]{attribute }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}, {\ttfamily [package]}}
+
+Get a transform defined in the X\+ML
+
+
+\begin{DoxyParams}{Parameters}
+{\em element} & The element from which the transform should be read \\
+\hline
+{\em attribute} & The name of the attribute holding the transform \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The transform to be applied 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+122                                                                      \{
+123         String str = element.getAttribute(attribute);
+124         \textcolor{keywordflow}{if} (str == null) \{
+125             \textcolor{keywordflow}{return} \textcolor{keyword}{new} Transform();
+126         \}
+127         
+128         \textcolor{keywordflow}{if} (str.equals(\textcolor{stringliteral}{""})) \{
+129             \textcolor{keywordflow}{return} \textcolor{keyword}{new} Transform();
+130         \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (str.startsWith(\textcolor{stringliteral}{"translate"})) \{
+131             str = str.substring(0, str.length()-1);
+132             str = str.substring(\textcolor{stringliteral}{"translate("}.length());
+133             StringTokenizer tokens = \textcolor{keyword}{new} StringTokenizer(str, \textcolor{stringliteral}{", "});
+134             \textcolor{keywordtype}{float} x = Float.parseFloat(tokens.nextToken());
+135             \textcolor{keywordtype}{float} y = Float.parseFloat(tokens.nextToken());
+136             
+137             \textcolor{keywordflow}{return} Transform.createTranslateTransform(x,y);
+138         \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (str.startsWith(\textcolor{stringliteral}{"matrix"})) \{
+139             \textcolor{keywordtype}{float}[] pose = \textcolor{keyword}{new} \textcolor{keywordtype}{float}[6];
+140             str = str.substring(0, str.length()-1);
+141             str = str.substring(\textcolor{stringliteral}{"matrix("}.length());
+142             StringTokenizer tokens = \textcolor{keyword}{new} StringTokenizer(str, \textcolor{stringliteral}{", "});
+143             \textcolor{keywordtype}{float}[] tr = \textcolor{keyword}{new} \textcolor{keywordtype}{float}[6];
+144             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} j=0;j<tr.length;j++) \{
+145                 tr[j] = Float.parseFloat(tokens.nextToken());
+146             \}
+147             
+148             pose[0] = tr[0];
+149             pose[1] = tr[2];
+150             pose[2] = tr[4];
+151             pose[3] = tr[1];
+152             pose[4] = tr[3];
+153             pose[5] = tr[5];
+154             
+155             \textcolor{keywordflow}{return} \textcolor{keyword}{new} Transform(pose);
+156         \}
+157         
+158         \textcolor{keywordflow}{return} \textcolor{keyword}{new} Transform();
+159     \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1svg_1_1inkscape_1_1_util_af7a7fcda04b0fd373a2ed92aa5e26cdc}\label{classorg_1_1newdawn_1_1slick_1_1svg_1_1inkscape_1_1_util_af7a7fcda04b0fd373a2ed92aa5e26cdc}} 
+\index{org\+::newdawn\+::slick\+::svg\+::inkscape\+::\+Util@{org\+::newdawn\+::slick\+::svg\+::inkscape\+::\+Util}!I\+N\+K\+S\+C\+A\+PE@{I\+N\+K\+S\+C\+A\+PE}}
+\index{I\+N\+K\+S\+C\+A\+PE@{I\+N\+K\+S\+C\+A\+PE}!org\+::newdawn\+::slick\+::svg\+::inkscape\+::\+Util@{org\+::newdawn\+::slick\+::svg\+::inkscape\+::\+Util}}
+\subsubsection{\texorpdfstring{I\+N\+K\+S\+C\+A\+PE}{INKSCAPE}}
+{\footnotesize\ttfamily final String org.\+newdawn.\+slick.\+svg.\+inkscape.\+Util.\+I\+N\+K\+S\+C\+A\+PE = \char`\"{}http\+://www.\+inkscape.\+org/namespaces/inkscape\char`\"{}\hspace{0.3cm}{\ttfamily [static]}}
+
+The namespace for inkscape \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1svg_1_1inkscape_1_1_util_ae8d1dafc96d1e9a111de141dcc6f6d6f}\label{classorg_1_1newdawn_1_1slick_1_1svg_1_1inkscape_1_1_util_ae8d1dafc96d1e9a111de141dcc6f6d6f}} 
+\index{org\+::newdawn\+::slick\+::svg\+::inkscape\+::\+Util@{org\+::newdawn\+::slick\+::svg\+::inkscape\+::\+Util}!S\+O\+D\+I\+P\+O\+DI@{S\+O\+D\+I\+P\+O\+DI}}
+\index{S\+O\+D\+I\+P\+O\+DI@{S\+O\+D\+I\+P\+O\+DI}!org\+::newdawn\+::slick\+::svg\+::inkscape\+::\+Util@{org\+::newdawn\+::slick\+::svg\+::inkscape\+::\+Util}}
+\subsubsection{\texorpdfstring{S\+O\+D\+I\+P\+O\+DI}{SODIPODI}}
+{\footnotesize\ttfamily final String org.\+newdawn.\+slick.\+svg.\+inkscape.\+Util.\+S\+O\+D\+I\+P\+O\+DI = \char`\"{}http\+://sodipodi.\+sourceforge.\+net/D\+TD/sodipodi-\/0.dtd\char`\"{}\hspace{0.3cm}{\ttfamily [static]}}
+
+The namespace for sodipodi \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1svg_1_1inkscape_1_1_util_acaa162b07865246ad8a853344f83abd2}\label{classorg_1_1newdawn_1_1slick_1_1svg_1_1inkscape_1_1_util_acaa162b07865246ad8a853344f83abd2}} 
+\index{org\+::newdawn\+::slick\+::svg\+::inkscape\+::\+Util@{org\+::newdawn\+::slick\+::svg\+::inkscape\+::\+Util}!X\+L\+I\+NK@{X\+L\+I\+NK}}
+\index{X\+L\+I\+NK@{X\+L\+I\+NK}!org\+::newdawn\+::slick\+::svg\+::inkscape\+::\+Util@{org\+::newdawn\+::slick\+::svg\+::inkscape\+::\+Util}}
+\subsubsection{\texorpdfstring{X\+L\+I\+NK}{XLINK}}
+{\footnotesize\ttfamily final String org.\+newdawn.\+slick.\+svg.\+inkscape.\+Util.\+X\+L\+I\+NK = \char`\"{}http\+://www.\+w3.\+org/1999/xlink\char`\"{}\hspace{0.3cm}{\ttfamily [static]}}
+
+The namespace for xlink 

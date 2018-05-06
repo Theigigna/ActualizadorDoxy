@@ -1,0 +1,128 @@
+\hypertarget{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_limit_panel}{}\section{org.\+newdawn.\+slick.\+tools.\+peditor.\+Limit\+Panel Class Reference}
+\label{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_limit_panel}\index{org.\+newdawn.\+slick.\+tools.\+peditor.\+Limit\+Panel@{org.\+newdawn.\+slick.\+tools.\+peditor.\+Limit\+Panel}}
+Inheritance diagram for org.\+newdawn.\+slick.\+tools.\+peditor.\+Limit\+Panel\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.660131cm]{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_limit_panel}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_limit_panel_afc404d364477e64bf7b3165dd325962d}{Limit\+Panel}} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_emitter_list}{Emitter\+List}} l)
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_limit_panel_a2e80ba4676be1b1e01aaec91f0e190b2}{min\+Max\+Updated}} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_min_max_panel}{Min\+Max\+Panel}} source)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_limit_panel_a193a0ea6307de7fe4d2b9f04920e52e5}{link\+Emitter\+To\+Fields}} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1particles_1_1_configurable_emitter}{Configurable\+Emitter}} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_control_panel_aaa170169fa574cb6b271f782afcd2517}{emitter}})
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_min_max_panel}{Min\+Max\+Panel}} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_limit_panel_ad3bc8a56a885b464af5b4e62fa362ca1}{length\+Panel}}
+\item 
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_min_max_panel}{Min\+Max\+Panel}} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_limit_panel_a045b6429f6d14167c06956c97ca71e49}{emit\+Count\+Panel}}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+A colletion of controls for the limiting the emitter
+
+\begin{DoxyAuthor}{Author}
+kevin 
+\end{DoxyAuthor}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_limit_panel_afc404d364477e64bf7b3165dd325962d}\label{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_limit_panel_afc404d364477e64bf7b3165dd325962d}} 
+\index{org\+::newdawn\+::slick\+::tools\+::peditor\+::\+Limit\+Panel@{org\+::newdawn\+::slick\+::tools\+::peditor\+::\+Limit\+Panel}!Limit\+Panel@{Limit\+Panel}}
+\index{Limit\+Panel@{Limit\+Panel}!org\+::newdawn\+::slick\+::tools\+::peditor\+::\+Limit\+Panel@{org\+::newdawn\+::slick\+::tools\+::peditor\+::\+Limit\+Panel}}
+\subsubsection{\texorpdfstring{Limit\+Panel()}{LimitPanel()}}
+{\footnotesize\ttfamily org.\+newdawn.\+slick.\+tools.\+peditor.\+Limit\+Panel.\+Limit\+Panel (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_emitter_list}{Emitter\+List}}}]{l }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Create a new panel for limiting controls
+
+
+\begin{DoxyParams}{Parameters}
+{\em l} & The list to be notified when the name changes \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+21                                      \{
+22         setLayout(null);
+23         
+24         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_limit_panel_ad3bc8a56a885b464af5b4e62fa362ca1}{lengthPanel}} = \textcolor{keyword}{new} MinMaxPanel(\textcolor{stringliteral}{"Effect Length"},0,100000,1000,1000,\textcolor{keyword}{true},-1,\textcolor{stringliteral}{"The length the
+       effect will last"});
+25         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_control_panel_aae097ab8bc9bd722af51818b15bcc823}{addMinMax}}(\textcolor{stringliteral}{"length"}, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_limit_panel_ad3bc8a56a885b464af5b4e62fa362ca1}{lengthPanel}});
+26         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_limit_panel_a045b6429f6d14167c06956c97ca71e49}{emitCountPanel}} = \textcolor{keyword}{new} MinMaxPanel(\textcolor{stringliteral}{"Particle Emission Count"},0,100000,1000,1000,\textcolor{keyword}{true},-1
+      ,\textcolor{stringliteral}{"The number of particles that will be emitted during the effect"});
+27         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_control_panel_aae097ab8bc9bd722af51818b15bcc823}{addMinMax}}(\textcolor{stringliteral}{"emitCount"}, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_limit_panel_a045b6429f6d14167c06956c97ca71e49}{emitCountPanel}});
+28     \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_limit_panel_a193a0ea6307de7fe4d2b9f04920e52e5}\label{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_limit_panel_a193a0ea6307de7fe4d2b9f04920e52e5}} 
+\index{org\+::newdawn\+::slick\+::tools\+::peditor\+::\+Limit\+Panel@{org\+::newdawn\+::slick\+::tools\+::peditor\+::\+Limit\+Panel}!link\+Emitter\+To\+Fields@{link\+Emitter\+To\+Fields}}
+\index{link\+Emitter\+To\+Fields@{link\+Emitter\+To\+Fields}!org\+::newdawn\+::slick\+::tools\+::peditor\+::\+Limit\+Panel@{org\+::newdawn\+::slick\+::tools\+::peditor\+::\+Limit\+Panel}}
+\subsubsection{\texorpdfstring{link\+Emitter\+To\+Fields()}{linkEmitterToFields()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+tools.\+peditor.\+Limit\+Panel.\+link\+Emitter\+To\+Fields (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1particles_1_1_configurable_emitter}{Configurable\+Emitter}}}]{emitter }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_control_panel_a55fa468548caadc265ea28c5f3214a20}{org.\+newdawn.\+slick.\+tools.\+peditor.\+Control\+Panel\+::link\+Emitter\+To\+Fields}}(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1particles_1_1_configurable_emitter}{org.\+newdawn.\+slick.\+particles.\+Configurable\+Emitter}}) 
+\end{DoxySeeAlso}
+
+\begin{DoxyCode}
+33                                                                     \{
+34         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_control_panel_a0cd8f0c59ddca29c48029fcc41c0bbde}{link}}(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_control_panel_aaa170169fa574cb6b271f782afcd2517}{emitter}}.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1particles_1_1_configurable_emitter_afe1766fe8f366d2eb6d051877a9920e9}{length}}, \textcolor{stringliteral}{"length"});
+35         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_control_panel_a0cd8f0c59ddca29c48029fcc41c0bbde}{link}}(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_control_panel_aaa170169fa574cb6b271f782afcd2517}{emitter}}.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1particles_1_1_configurable_emitter_ada09b861f9d81935e3fb2729e2660871}{emitCount}}, \textcolor{stringliteral}{"emitCount"});
+36     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_limit_panel_a2e80ba4676be1b1e01aaec91f0e190b2}\label{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_limit_panel_a2e80ba4676be1b1e01aaec91f0e190b2}} 
+\index{org\+::newdawn\+::slick\+::tools\+::peditor\+::\+Limit\+Panel@{org\+::newdawn\+::slick\+::tools\+::peditor\+::\+Limit\+Panel}!min\+Max\+Updated@{min\+Max\+Updated}}
+\index{min\+Max\+Updated@{min\+Max\+Updated}!org\+::newdawn\+::slick\+::tools\+::peditor\+::\+Limit\+Panel@{org\+::newdawn\+::slick\+::tools\+::peditor\+::\+Limit\+Panel}}
+\subsubsection{\texorpdfstring{min\+Max\+Updated()}{minMaxUpdated()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+tools.\+peditor.\+Limit\+Panel.\+min\+Max\+Updated (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_min_max_panel}{Min\+Max\+Panel}}}]{source }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_control_panel_ae8f9c3f55e43dad862c8520af7c3fac8}{org.\+newdawn.\+slick.\+tools.\+peditor.\+Control\+Panel\+::min\+Max\+Updated}}(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_min_max_panel}{org.\+newdawn.\+slick.\+tools.\+peditor.\+Min\+Max\+Panel}}) 
+\end{DoxySeeAlso}
+
+
+Implements \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_input_panel_listener_a2f2fda874b026dd19ca947af14bc65c0}{org.\+newdawn.\+slick.\+tools.\+peditor.\+Input\+Panel\+Listener}}.
+
+
+\begin{DoxyCode}
+41                                                   \{
+42         super.minMaxUpdated(source);
+43         
+44         \textcolor{keywordflow}{if} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_control_panel_aaa170169fa574cb6b271f782afcd2517}{emitter}} != null) \{
+45             \textcolor{keywordflow}{if} (source == \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_limit_panel_ad3bc8a56a885b464af5b4e62fa362ca1}{lengthPanel}}) \{
+46                 \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_control_panel_aaa170169fa574cb6b271f782afcd2517}{emitter}}.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1particles_1_1_configurable_emitter_a86bf563a92e8c12e4390f822e872c696}{replay}}();
+47             \}
+48             \textcolor{keywordflow}{if} (source == \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_limit_panel_a045b6429f6d14167c06956c97ca71e49}{emitCountPanel}}) \{
+49                 \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_control_panel_aaa170169fa574cb6b271f782afcd2517}{emitter}}.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1particles_1_1_configurable_emitter_a86bf563a92e8c12e4390f822e872c696}{replay}}();
+50             \}
+51         \}
+52     \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_limit_panel_a045b6429f6d14167c06956c97ca71e49}\label{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_limit_panel_a045b6429f6d14167c06956c97ca71e49}} 
+\index{org\+::newdawn\+::slick\+::tools\+::peditor\+::\+Limit\+Panel@{org\+::newdawn\+::slick\+::tools\+::peditor\+::\+Limit\+Panel}!emit\+Count\+Panel@{emit\+Count\+Panel}}
+\index{emit\+Count\+Panel@{emit\+Count\+Panel}!org\+::newdawn\+::slick\+::tools\+::peditor\+::\+Limit\+Panel@{org\+::newdawn\+::slick\+::tools\+::peditor\+::\+Limit\+Panel}}
+\subsubsection{\texorpdfstring{emit\+Count\+Panel}{emitCountPanel}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_min_max_panel}{Min\+Max\+Panel}} org.\+newdawn.\+slick.\+tools.\+peditor.\+Limit\+Panel.\+emit\+Count\+Panel\hspace{0.3cm}{\ttfamily [private]}}
+
+The number of particles that will be emitted during the effect \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_limit_panel_ad3bc8a56a885b464af5b4e62fa362ca1}\label{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_limit_panel_ad3bc8a56a885b464af5b4e62fa362ca1}} 
+\index{org\+::newdawn\+::slick\+::tools\+::peditor\+::\+Limit\+Panel@{org\+::newdawn\+::slick\+::tools\+::peditor\+::\+Limit\+Panel}!length\+Panel@{length\+Panel}}
+\index{length\+Panel@{length\+Panel}!org\+::newdawn\+::slick\+::tools\+::peditor\+::\+Limit\+Panel@{org\+::newdawn\+::slick\+::tools\+::peditor\+::\+Limit\+Panel}}
+\subsubsection{\texorpdfstring{length\+Panel}{lengthPanel}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_min_max_panel}{Min\+Max\+Panel}} org.\+newdawn.\+slick.\+tools.\+peditor.\+Limit\+Panel.\+length\+Panel\hspace{0.3cm}{\ttfamily [private]}}
+
+The length of the effect 

@@ -1,0 +1,130 @@
+\hypertarget{class_controlador_flechas}{}\section{Controlador\+Flechas Class Reference}
+\label{class_controlador_flechas}\index{Controlador\+Flechas@{Controlador\+Flechas}}
+Inheritance diagram for Controlador\+Flechas\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_controlador_flechas}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_controlador_flechas_aa3c0b2e8ba9e7eb027311d29751a575e}{Controlador\+Flechas}} ()
+\item 
+void \mbox{\hyperlink{class_controlador_flechas_a0f13f2616d99a402e2b5fe2385dd208f}{add}} (float x, float y)  throws Slick\+Exception
+\item 
+void \mbox{\hyperlink{class_controlador_flechas_a4a4d76786169ef23360cbe57b8c81df2}{draw}} ()
+\item 
+void \mbox{\hyperlink{class_controlador_flechas_afcc63da58b6dd22715c017593731577e}{update}} (int delta)
+\item 
+void \mbox{\hyperlink{class_controlador_flechas_abc0b5e9945efd4696c827fecf42503df}{delete}} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Array\+List$<$ \mbox{\hyperlink{class_sprite_movil}{Sprite\+Movil}} $>$ \mbox{\hyperlink{class_controlador_flechas_a1214f7644979b0d063796611a3965201}{flechas}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_controlador_flechas_aa3c0b2e8ba9e7eb027311d29751a575e}\label{class_controlador_flechas_aa3c0b2e8ba9e7eb027311d29751a575e}} 
+\index{Controlador\+Flechas@{Controlador\+Flechas}!Controlador\+Flechas@{Controlador\+Flechas}}
+\index{Controlador\+Flechas@{Controlador\+Flechas}!Controlador\+Flechas@{Controlador\+Flechas}}
+\subsubsection{\texorpdfstring{Controlador\+Flechas()}{ControladorFlechas()}}
+{\footnotesize\ttfamily Controlador\+Flechas.\+Controlador\+Flechas (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+10                                \{
+11         \mbox{\hyperlink{class_controlador_flechas_a1214f7644979b0d063796611a3965201}{flechas}} = \textcolor{keyword}{new} ArrayList<SpriteMovil>();
+12     \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_controlador_flechas_a0f13f2616d99a402e2b5fe2385dd208f}\label{class_controlador_flechas_a0f13f2616d99a402e2b5fe2385dd208f}} 
+\index{Controlador\+Flechas@{Controlador\+Flechas}!add@{add}}
+\index{add@{add}!Controlador\+Flechas@{Controlador\+Flechas}}
+\subsubsection{\texorpdfstring{add()}{add()}}
+{\footnotesize\ttfamily void Controlador\+Flechas.\+add (\begin{DoxyParamCaption}\item[{float}]{x,  }\item[{float}]{y }\end{DoxyParamCaption}) throws \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_slick_exception}{Slick\+Exception}}\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Implements \mbox{\hyperlink{interface_i_controlador_af6e795781b2eead3e435cbbdd61bde41}{I\+Controlador}}.
+
+
+\begin{DoxyCode}
+14                                                            \{
+15         \mbox{\hyperlink{class_sprite_movil}{SpriteMovil}} flecha = \textcolor{keyword}{new} \mbox{\hyperlink{class_sprite_movil}{SpriteMovil}}(\textcolor{stringliteral}{"res/armas/flecha.png"}, \textcolor{keyword}{new} 
+      \mbox{\hyperlink{class_coordenadas}{Coordenadas}}(x, y), \textcolor{keyword}{new} \mbox{\hyperlink{class_coordenadas}{Coordenadas}}(300, 0));
+16         \mbox{\hyperlink{class_controlador_flechas_a1214f7644979b0d063796611a3965201}{flechas}}.add(flecha);
+17     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_controlador_flechas_abc0b5e9945efd4696c827fecf42503df}\label{class_controlador_flechas_abc0b5e9945efd4696c827fecf42503df}} 
+\index{Controlador\+Flechas@{Controlador\+Flechas}!delete@{delete}}
+\index{delete@{delete}!Controlador\+Flechas@{Controlador\+Flechas}}
+\subsubsection{\texorpdfstring{delete()}{delete()}}
+{\footnotesize\ttfamily void Controlador\+Flechas.\+delete (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Implements \mbox{\hyperlink{interface_i_controlador_a6a799d4959078e9b84d9de7fee44e0ba}{I\+Controlador}}.
+
+
+\begin{DoxyCode}
+34                         \{
+35         \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i=0; i < \mbox{\hyperlink{class_controlador_flechas_a1214f7644979b0d063796611a3965201}{flechas}}.size(); i++)\{
+36             \textcolor{keywordflow}{if}(\mbox{\hyperlink{class_controlador_flechas_a1214f7644979b0d063796611a3965201}{flechas}}.get(i).getCoordenadas().getX()>640)\{
+37                 \mbox{\hyperlink{class_controlador_flechas_a1214f7644979b0d063796611a3965201}{flechas}}.remove(1);
+38             \}
+39         \}
+40     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_controlador_flechas_a4a4d76786169ef23360cbe57b8c81df2}\label{class_controlador_flechas_a4a4d76786169ef23360cbe57b8c81df2}} 
+\index{Controlador\+Flechas@{Controlador\+Flechas}!draw@{draw}}
+\index{draw@{draw}!Controlador\+Flechas@{Controlador\+Flechas}}
+\subsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily void Controlador\+Flechas.\+draw (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Implements \mbox{\hyperlink{interface_i_controlador_a220648ff53334f380d52e2d2ec78e2e8}{I\+Controlador}}.
+
+
+\begin{DoxyCode}
+19                       \{
+20         \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i=0; i < \mbox{\hyperlink{class_controlador_flechas_a1214f7644979b0d063796611a3965201}{flechas}}.size(); i++)\{
+21             \mbox{\hyperlink{class_controlador_flechas_a1214f7644979b0d063796611a3965201}{flechas}}.get(i).draw();
+22         \}
+23     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_controlador_flechas_afcc63da58b6dd22715c017593731577e}\label{class_controlador_flechas_afcc63da58b6dd22715c017593731577e}} 
+\index{Controlador\+Flechas@{Controlador\+Flechas}!update@{update}}
+\index{update@{update}!Controlador\+Flechas@{Controlador\+Flechas}}
+\subsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void Controlador\+Flechas.\+update (\begin{DoxyParamCaption}\item[{int}]{delta }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Implements \mbox{\hyperlink{interface_i_controlador_a06ccd4613ae1662a3a45620104c5224b}{I\+Controlador}}.
+
+
+\begin{DoxyCode}
+25                                  \{
+26         \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i=0; i < \mbox{\hyperlink{class_controlador_flechas_a1214f7644979b0d063796611a3965201}{flechas}}.size(); i++)\{
+27             \mbox{\hyperlink{class_controlador_flechas_a1214f7644979b0d063796611a3965201}{flechas}}.get(i).update(delta);
+28             \textcolor{keywordflow}{if} (i>10) \{ \textcolor{comment}{//Con esto se limitan las balas a la vez en pantalla}
+29                 \textcolor{keyword}{delete}();
+30             \}
+31         \}
+32     \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_controlador_flechas_a1214f7644979b0d063796611a3965201}\label{class_controlador_flechas_a1214f7644979b0d063796611a3965201}} 
+\index{Controlador\+Flechas@{Controlador\+Flechas}!flechas@{flechas}}
+\index{flechas@{flechas}!Controlador\+Flechas@{Controlador\+Flechas}}
+\subsubsection{\texorpdfstring{flechas}{flechas}}
+{\footnotesize\ttfamily Array\+List$<$\mbox{\hyperlink{class_sprite_movil}{Sprite\+Movil}}$>$ Controlador\+Flechas.\+flechas\hspace{0.3cm}{\ttfamily [private]}}
+

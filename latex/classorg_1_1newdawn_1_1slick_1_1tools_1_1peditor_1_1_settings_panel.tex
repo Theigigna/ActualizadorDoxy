@@ -1,0 +1,188 @@
+\hypertarget{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_settings_panel}{}\section{org.\+newdawn.\+slick.\+tools.\+peditor.\+Settings\+Panel Class Reference}
+\label{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_settings_panel}\index{org.\+newdawn.\+slick.\+tools.\+peditor.\+Settings\+Panel@{org.\+newdawn.\+slick.\+tools.\+peditor.\+Settings\+Panel}}
+Inheritance diagram for org.\+newdawn.\+slick.\+tools.\+peditor.\+Settings\+Panel\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.660131cm]{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_settings_panel}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_settings_panel_a947bd9e9d1a61073529603369b8fda3b}{Settings\+Panel}} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_emitter_list}{Emitter\+List}} l)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_settings_panel_ab5e3da40629484295a5dcd9e0fc1c396}{link\+Emitter\+To\+Fields}} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1particles_1_1_configurable_emitter}{Configurable\+Emitter}} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_control_panel_aaa170169fa574cb6b271f782afcd2517}{emitter}})
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_settings_panel_a2cf6675584c386d4feb59b6b39390724}{browse\+For\+Image}} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+J\+Text\+Field \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_settings_panel_a89dd9ef29714429f196e1009b3a230e9}{name}}
+\item 
+J\+Text\+Field \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_settings_panel_a4890547c09df436528a31f392cec73dd}{image\+Name}}
+\item 
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_emitter_list}{Emitter\+List}} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_settings_panel_afb541f799b3425231538a17ca72e8c7c}{list}}
+\item 
+J\+File\+Chooser \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_settings_panel_a33ff97f1c03365d359210ba6c1809726}{chooser}} = new J\+File\+Chooser(new File(\char`\"{}.\char`\"{}))
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+A colletion of controls for the global settings of an emitter
+
+\begin{DoxyAuthor}{Author}
+kevin 
+\end{DoxyAuthor}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_settings_panel_a947bd9e9d1a61073529603369b8fda3b}\label{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_settings_panel_a947bd9e9d1a61073529603369b8fda3b}} 
+\index{org\+::newdawn\+::slick\+::tools\+::peditor\+::\+Settings\+Panel@{org\+::newdawn\+::slick\+::tools\+::peditor\+::\+Settings\+Panel}!Settings\+Panel@{Settings\+Panel}}
+\index{Settings\+Panel@{Settings\+Panel}!org\+::newdawn\+::slick\+::tools\+::peditor\+::\+Settings\+Panel@{org\+::newdawn\+::slick\+::tools\+::peditor\+::\+Settings\+Panel}}
+\subsubsection{\texorpdfstring{Settings\+Panel()}{SettingsPanel()}}
+{\footnotesize\ttfamily org.\+newdawn.\+slick.\+tools.\+peditor.\+Settings\+Panel.\+Settings\+Panel (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_emitter_list}{Emitter\+List}}}]{l }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Create a new panel for global settings controls
+
+
+\begin{DoxyParams}{Parameters}
+{\em l} & The list to be notified when the name changes \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+37                                         \{
+38         setLayout(null);
+39         
+40         this.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_settings_panel_afb541f799b3425231538a17ca72e8c7c}{list}} = l;
+41         
+42         JPanel namePanel = \textcolor{keyword}{new} DefaultPanel();
+43         namePanel.setBorder(BorderFactory.createTitledBorder(\textcolor{stringliteral}{"Emitter Name"}));
+44         namePanel.setLayout(null);
+45         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_settings_panel_a89dd9ef29714429f196e1009b3a230e9}{name}} = \textcolor{keyword}{new} JTextField();
+46         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_settings_panel_a89dd9ef29714429f196e1009b3a230e9}{name}}.setBounds(10,20,260,25);
+47         namePanel.add(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_settings_panel_a89dd9ef29714429f196e1009b3a230e9}{name}});
+48         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_settings_panel_a89dd9ef29714429f196e1009b3a230e9}{name}}.addCaretListener(\textcolor{keyword}{new} CaretListener() \{
+49             \textcolor{keyword}{public} \textcolor{keywordtype}{void} caretUpdate(CaretEvent e) \{
+50                 \textcolor{keywordflow}{if} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_control_panel_aaa170169fa574cb6b271f782afcd2517}{emitter}} != null) \{
+51                     \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_control_panel_aaa170169fa574cb6b271f782afcd2517}{emitter}}.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1particles_1_1_configurable_emitter_af63b15389d206c6318e14ff4bc909ac0}{name}} = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_settings_panel_a89dd9ef29714429f196e1009b3a230e9}{name}}.getText();
+52                     \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_settings_panel_afb541f799b3425231538a17ca72e8c7c}{list}}.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_emitter_list_a7adaa05d68e52574bcb10b551bbc081d}{update}}(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_control_panel_aaa170169fa574cb6b271f782afcd2517}{emitter}});
+53                 \}
+54             \}
+55         \});
+56         
+57         namePanel.setBounds(0,0,280,55);
+58         add(namePanel);
+59         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_control_panel_a3d5996be7856b645ae7a1288ce688623}{yPos}}+=55;
+60         
+61         JPanel imagePanel = \textcolor{keyword}{new} DefaultPanel();
+62         imagePanel.setBorder(BorderFactory.createTitledBorder(\textcolor{stringliteral}{"Particle Image"}));
+63         imagePanel.setLayout(null);
+64         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_settings_panel_a4890547c09df436528a31f392cec73dd}{imageName}} = \textcolor{keyword}{new} JTextField();
+65         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_settings_panel_a4890547c09df436528a31f392cec73dd}{imageName}}.setBounds(10,20,185,25);
+66         imagePanel.add(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_settings_panel_a4890547c09df436528a31f392cec73dd}{imageName}});
+67         JButton browse = \textcolor{keyword}{new} JButton(\textcolor{stringliteral}{"Browse"});
+68         browse.setBounds(200,20,70,25);
+69         browse.addActionListener(\textcolor{keyword}{new} ActionListener() \{
+70             \textcolor{keyword}{public} \textcolor{keywordtype}{void} actionPerformed(ActionEvent e) \{
+71                 \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_settings_panel_a2cf6675584c386d4feb59b6b39390724}{browseForImage}}();
+72             \}
+73         \});
+74         
+75         imagePanel.add(browse);
+76         imagePanel.setBounds(0,55,280,55);
+77         add(imagePanel);
+78         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_control_panel_a3d5996be7856b645ae7a1288ce688623}{yPos}}+=45;
+79         
+80         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_control_panel_af298d1803e4450ed4ffe735500bb7c60}{addValue}}(\textcolor{stringliteral}{"gravity"},\textcolor{keyword}{new} ValuePanel(\textcolor{stringliteral}{"Gravity"},-200,200,0,\textcolor{stringliteral}{"The gravity effect to apply"},\textcolor{keyword}{false})
+      );
+81         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_control_panel_af298d1803e4450ed4ffe735500bb7c60}{addValue}}(\textcolor{stringliteral}{"wind"},\textcolor{keyword}{new} ValuePanel(\textcolor{stringliteral}{"Wind"},-200,200,0,\textcolor{stringliteral}{"The horizontal force effect to apply"},\textcolor{keyword}{
+      false}));
+82     \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_settings_panel_a2cf6675584c386d4feb59b6b39390724}\label{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_settings_panel_a2cf6675584c386d4feb59b6b39390724}} 
+\index{org\+::newdawn\+::slick\+::tools\+::peditor\+::\+Settings\+Panel@{org\+::newdawn\+::slick\+::tools\+::peditor\+::\+Settings\+Panel}!browse\+For\+Image@{browse\+For\+Image}}
+\index{browse\+For\+Image@{browse\+For\+Image}!org\+::newdawn\+::slick\+::tools\+::peditor\+::\+Settings\+Panel@{org\+::newdawn\+::slick\+::tools\+::peditor\+::\+Settings\+Panel}}
+\subsubsection{\texorpdfstring{browse\+For\+Image()}{browseForImage()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+tools.\+peditor.\+Settings\+Panel.\+browse\+For\+Image (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+Browse for a particle image and set the value into both the emitter and text field on successful completion 
+\begin{DoxyCode}
+88                                   \{
+89         \textcolor{keywordflow}{if} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_control_panel_aaa170169fa574cb6b271f782afcd2517}{emitter}} != null) \{
+90             \textcolor{keywordtype}{int} resp = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_settings_panel_a33ff97f1c03365d359210ba6c1809726}{chooser}}.showOpenDialog(\textcolor{keyword}{this});
+91             \textcolor{keywordflow}{if} (resp == JFileChooser.APPROVE\_OPTION) \{
+92                 File file = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_settings_panel_a33ff97f1c03365d359210ba6c1809726}{chooser}}.getSelectedFile();
+93                 String path = file.getParentFile().getAbsolutePath();
+94                 String \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_settings_panel_a89dd9ef29714429f196e1009b3a230e9}{name}} = file.getName();
+95                 
+96                 ConfigurableEmitter.setRelativePath(path);
+97                 \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_control_panel_aaa170169fa574cb6b271f782afcd2517}{emitter}}.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1particles_1_1_configurable_emitter_aa4bbab57939ae64a1a3fd83704df7065}{setImageName}}(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_settings_panel_a89dd9ef29714429f196e1009b3a230e9}{name}});
+98                 
+99                 \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_settings_panel_a4890547c09df436528a31f392cec73dd}{imageName}}.setText(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_settings_panel_a89dd9ef29714429f196e1009b3a230e9}{name}});
+100             \}
+101         \}
+102     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_settings_panel_ab5e3da40629484295a5dcd9e0fc1c396}\label{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_settings_panel_ab5e3da40629484295a5dcd9e0fc1c396}} 
+\index{org\+::newdawn\+::slick\+::tools\+::peditor\+::\+Settings\+Panel@{org\+::newdawn\+::slick\+::tools\+::peditor\+::\+Settings\+Panel}!link\+Emitter\+To\+Fields@{link\+Emitter\+To\+Fields}}
+\index{link\+Emitter\+To\+Fields@{link\+Emitter\+To\+Fields}!org\+::newdawn\+::slick\+::tools\+::peditor\+::\+Settings\+Panel@{org\+::newdawn\+::slick\+::tools\+::peditor\+::\+Settings\+Panel}}
+\subsubsection{\texorpdfstring{link\+Emitter\+To\+Fields()}{linkEmitterToFields()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+tools.\+peditor.\+Settings\+Panel.\+link\+Emitter\+To\+Fields (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1particles_1_1_configurable_emitter}{Configurable\+Emitter}}}]{emitter }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_control_panel_a55fa468548caadc265ea28c5f3214a20}{org.\+newdawn.\+slick.\+tools.\+peditor.\+Control\+Panel\+::link\+Emitter\+To\+Fields}}(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1particles_1_1_configurable_emitter}{org.\+newdawn.\+slick.\+particles.\+Configurable\+Emitter}}) 
+\end{DoxySeeAlso}
+
+\begin{DoxyCode}
+107                                                                     \{
+108         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_settings_panel_a89dd9ef29714429f196e1009b3a230e9}{name}}.setText(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_control_panel_aaa170169fa574cb6b271f782afcd2517}{emitter}}.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1particles_1_1_configurable_emitter_af63b15389d206c6318e14ff4bc909ac0}{name}});
+109         String value = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_control_panel_aaa170169fa574cb6b271f782afcd2517}{emitter}}.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1particles_1_1_configurable_emitter_a7bf7f9630e0c8ca6a2903da8128d325f}{getImageName}}();
+110         \textcolor{keywordflow}{if} (value != null) \{
+111             value = value.substring(value.lastIndexOf(File.separatorChar)+1);   
+112             \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_settings_panel_a4890547c09df436528a31f392cec73dd}{imageName}}.setText(value);
+113         \}
+114         
+115         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_control_panel_a0cd8f0c59ddca29c48029fcc41c0bbde}{link}}(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_control_panel_aaa170169fa574cb6b271f782afcd2517}{emitter}}.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1particles_1_1_configurable_emitter_a70357a5c44e704c90f3a0b905978d3c8}{gravityFactor}}, \textcolor{stringliteral}{"gravity"});
+116         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_control_panel_a0cd8f0c59ddca29c48029fcc41c0bbde}{link}}(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_control_panel_aaa170169fa574cb6b271f782afcd2517}{emitter}}.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1particles_1_1_configurable_emitter_a0b2b2fcff95db03cf39c1ad5911b5176}{windFactor}}, \textcolor{stringliteral}{"wind"});
+117     \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_settings_panel_a33ff97f1c03365d359210ba6c1809726}\label{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_settings_panel_a33ff97f1c03365d359210ba6c1809726}} 
+\index{org\+::newdawn\+::slick\+::tools\+::peditor\+::\+Settings\+Panel@{org\+::newdawn\+::slick\+::tools\+::peditor\+::\+Settings\+Panel}!chooser@{chooser}}
+\index{chooser@{chooser}!org\+::newdawn\+::slick\+::tools\+::peditor\+::\+Settings\+Panel@{org\+::newdawn\+::slick\+::tools\+::peditor\+::\+Settings\+Panel}}
+\subsubsection{\texorpdfstring{chooser}{chooser}}
+{\footnotesize\ttfamily J\+File\+Chooser org.\+newdawn.\+slick.\+tools.\+peditor.\+Settings\+Panel.\+chooser = new J\+File\+Chooser(new File(\char`\"{}.\char`\"{}))\hspace{0.3cm}{\ttfamily [private]}}
+
+Choose used to select image files \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_settings_panel_a4890547c09df436528a31f392cec73dd}\label{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_settings_panel_a4890547c09df436528a31f392cec73dd}} 
+\index{org\+::newdawn\+::slick\+::tools\+::peditor\+::\+Settings\+Panel@{org\+::newdawn\+::slick\+::tools\+::peditor\+::\+Settings\+Panel}!image\+Name@{image\+Name}}
+\index{image\+Name@{image\+Name}!org\+::newdawn\+::slick\+::tools\+::peditor\+::\+Settings\+Panel@{org\+::newdawn\+::slick\+::tools\+::peditor\+::\+Settings\+Panel}}
+\subsubsection{\texorpdfstring{image\+Name}{imageName}}
+{\footnotesize\ttfamily J\+Text\+Field org.\+newdawn.\+slick.\+tools.\+peditor.\+Settings\+Panel.\+image\+Name\hspace{0.3cm}{\ttfamily [private]}}
+
+A field to select the image to be used by the emitter \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_settings_panel_afb541f799b3425231538a17ca72e8c7c}\label{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_settings_panel_afb541f799b3425231538a17ca72e8c7c}} 
+\index{org\+::newdawn\+::slick\+::tools\+::peditor\+::\+Settings\+Panel@{org\+::newdawn\+::slick\+::tools\+::peditor\+::\+Settings\+Panel}!list@{list}}
+\index{list@{list}!org\+::newdawn\+::slick\+::tools\+::peditor\+::\+Settings\+Panel@{org\+::newdawn\+::slick\+::tools\+::peditor\+::\+Settings\+Panel}}
+\subsubsection{\texorpdfstring{list}{list}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_emitter_list}{Emitter\+List}} org.\+newdawn.\+slick.\+tools.\+peditor.\+Settings\+Panel.\+list\hspace{0.3cm}{\ttfamily [private]}}
+
+The list of emitters to be notified when the name is updated \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_settings_panel_a89dd9ef29714429f196e1009b3a230e9}\label{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_settings_panel_a89dd9ef29714429f196e1009b3a230e9}} 
+\index{org\+::newdawn\+::slick\+::tools\+::peditor\+::\+Settings\+Panel@{org\+::newdawn\+::slick\+::tools\+::peditor\+::\+Settings\+Panel}!name@{name}}
+\index{name@{name}!org\+::newdawn\+::slick\+::tools\+::peditor\+::\+Settings\+Panel@{org\+::newdawn\+::slick\+::tools\+::peditor\+::\+Settings\+Panel}}
+\subsubsection{\texorpdfstring{name}{name}}
+{\footnotesize\ttfamily J\+Text\+Field org.\+newdawn.\+slick.\+tools.\+peditor.\+Settings\+Panel.\+name\hspace{0.3cm}{\ttfamily [private]}}
+
+A field for the symbolic name of the emitter 

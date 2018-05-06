@@ -1,0 +1,69 @@
+\hypertarget{classejemplo1_1_1_direcciones_i_p}{}\section{ejemplo1.\+Direcciones\+IP Class Reference}
+\label{classejemplo1_1_1_direcciones_i_p}\index{ejemplo1.\+Direcciones\+IP@{ejemplo1.\+Direcciones\+IP}}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{classejemplo1_1_1_direcciones_i_p_ae53a0ef82dfe3ce922686ecf8dfad214}{main}} (String\mbox{[}$\,$\mbox{]} args)
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classejemplo1_1_1_direcciones_i_p_ae53a0ef82dfe3ce922686ecf8dfad214}\label{classejemplo1_1_1_direcciones_i_p_ae53a0ef82dfe3ce922686ecf8dfad214}} 
+\index{ejemplo1\+::\+Direcciones\+IP@{ejemplo1\+::\+Direcciones\+IP}!main@{main}}
+\index{main@{main}!ejemplo1\+::\+Direcciones\+IP@{ejemplo1\+::\+Direcciones\+IP}}
+\subsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily static void ejemplo1.\+Direcciones\+I\+P.\+main (\begin{DoxyParamCaption}\item[{String \mbox{[}$\,$\mbox{]}}]{args }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+\begin{DoxyCode}
+8     \{
+9         byte[] dirparguela = \{(byte)192, (byte)168, 56, 1\};
+10         byte[] direccionLocal = \{127, 0, 0, 1\}; \textcolor{comment}{//Dirección IP del Localhost}
+11         InetAddress equipo;
+12         \textcolor{keywordflow}{try}
+13         \{
+14             \textcolor{comment}{// Métodos estáticos de InetAddress para obtener el objeto equipo}
+15             equipo = InetAddress.getLocalHost();  \textcolor{comment}{// Creamos el objeto equipo de la clase InetAddress}
+16             System.out.println(\textcolor{stringliteral}{"Mi equipo es: "}+equipo);
+17             System.out.println(\textcolor{stringliteral}{"Su dirección IP es: "}+equipo.getHostAddress());
+18             System.out.println(\textcolor{stringliteral}{"Su nombre es: "}+equipo.getHostName());
+19             System.out.println(\textcolor{stringliteral}{"Y su nombre canónico: "}+equipo.getCanonicalHostName());
+20             System.out.println();
+21 
+22             \textcolor{comment}{// Obtenemos el equipo a partir del nombre}
+23             equipo = InetAddress.getByName(\textcolor{stringliteral}{"www.google.com"});
+24             System.out.println(\textcolor{stringliteral}{"el equipo www.google.com es: "}+equipo);
+25             System.out.println(\textcolor{stringliteral}{"Su dirección IP es: "}+equipo.getHostAddress());
+26             System.out.println(\textcolor{stringliteral}{"Su nombre es: "}+equipo.getHostName());
+27             System.out.println(\textcolor{stringliteral}{"Y su nombre canónico: "}+equipo.getCanonicalHostName());
+28             System.out.println();
+29 
+30             \textcolor{comment}{// Obtenemos el equipo a partir de su dirección IP}
+31             equipo = InetAddress.getByAddress(direccionLocal);
+32             System.out.println(\textcolor{stringliteral}{"Mi equipo es: "}+equipo);
+33             System.out.println(\textcolor{stringliteral}{"Su dirección IP es: "}+equipo.getHostAddress());
+34             System.out.println();
+35 
+36             equipo = InetAddress.getByAddress(dirparguela);
+37             System.out.println(\textcolor{stringliteral}{"El equipo de Adri es: "}+equipo);
+38             System.out.println(\textcolor{stringliteral}{"Su dirección IP es: "}+equipo.getHostAddress());
+39             System.out.println();
+40             
+41             \textcolor{comment}{// Obtenemos todas las direcciones IP de un equipo}
+42             InetAddress[] identidades;
+43             equipo = InetAddress.getLocalHost();
+44             identidades = InetAddress.getAllByName(equipo.getHostName());
+45             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i=0; i<identidades.length; i++)
+46             \{
+47                 System.out.println(\textcolor{stringliteral}{"Id"}+i+\textcolor{stringliteral}{": "}+identidades[i]);
+48             \}
+49             System.out.println();
+50 
+51         \}
+52         \textcolor{keywordflow}{catch} (UnknownHostException e)
+53         \{
+54             System.out.println(\textcolor{stringliteral}{"Error de conexión"});
+55             System.out.println(e.toString());
+56         \}
+57     \}
+\end{DoxyCode}

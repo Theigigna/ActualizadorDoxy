@@ -1,0 +1,113 @@
+\hypertarget{classorg_1_1newdawn_1_1slick_1_1util_1_1_mask_util}{}\section{org.\+newdawn.\+slick.\+util.\+Mask\+Util Class Reference}
+\label{classorg_1_1newdawn_1_1slick_1_1util_1_1_mask_util}\index{org.\+newdawn.\+slick.\+util.\+Mask\+Util@{org.\+newdawn.\+slick.\+util.\+Mask\+Util}}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1_mask_util_a8033731490b12eacce6a79d8e856c13a}{define\+Mask}} ()
+\item 
+static void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1_mask_util_a96a931dbb0d5d98dbfb107da8bd4dc79}{finish\+Define\+Mask}} ()
+\item 
+static void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1_mask_util_a6653026353cf1f1726a47229baa0a3f4}{draw\+On\+Mask}} ()
+\item 
+static void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1_mask_util_acf09fe93160deff60fe300a6f4b9721f}{draw\+Off\+Mask}} ()
+\item 
+static void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1_mask_util_a8d7e56e8716eefd2d771f079c084bf22}{reset\+Mask}} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1opengl_1_1renderer_1_1_s_g_l}{S\+GL}} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1_mask_util_a0a8dc1ea7550e654529a6f92dadea889}{GL}} = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1renderer_1_1_renderer_abe742c3a7dfca67c6c01821d27087308}{Renderer.\+get}}()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A utility to provide full screen masking
+
+\begin{DoxyAuthor}{Author}
+kevin 
+\end{DoxyAuthor}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1util_1_1_mask_util_a8033731490b12eacce6a79d8e856c13a}\label{classorg_1_1newdawn_1_1slick_1_1util_1_1_mask_util_a8033731490b12eacce6a79d8e856c13a}} 
+\index{org\+::newdawn\+::slick\+::util\+::\+Mask\+Util@{org\+::newdawn\+::slick\+::util\+::\+Mask\+Util}!define\+Mask@{define\+Mask}}
+\index{define\+Mask@{define\+Mask}!org\+::newdawn\+::slick\+::util\+::\+Mask\+Util@{org\+::newdawn\+::slick\+::util\+::\+Mask\+Util}}
+\subsubsection{\texorpdfstring{define\+Mask()}{defineMask()}}
+{\footnotesize\ttfamily static void org.\+newdawn.\+slick.\+util.\+Mask\+Util.\+define\+Mask (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Start defining the screen mask. After calling this use graphics functions to mask out the area 
+\begin{DoxyCode}
+19                                     \{
+20         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1_mask_util_a0a8dc1ea7550e654529a6f92dadea889}{GL}}.\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1opengl_1_1renderer_1_1_s_g_l_a38dbc27d7cec53cf04ff1d98fd8c15e0}{glDepthMask}}(\textcolor{keyword}{true});
+21         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1_mask_util_a0a8dc1ea7550e654529a6f92dadea889}{GL}}.\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1opengl_1_1renderer_1_1_s_g_l_ab485cf2f4c743772ed5d24a66d7c1af3}{glClearDepth}}(1);
+22         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1_mask_util_a0a8dc1ea7550e654529a6f92dadea889}{GL}}.\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1opengl_1_1renderer_1_1_s_g_l_a254bdaa78a48f3fd3fd4ada15c910d4a}{glClear}}(SGL.GL\_DEPTH\_BUFFER\_BIT);
+23         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1_mask_util_a0a8dc1ea7550e654529a6f92dadea889}{GL}}.\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1opengl_1_1renderer_1_1_s_g_l_a3704d17846e7513cc280e6275c73ace9}{glDepthFunc}}(SGL.GL\_ALWAYS);
+24         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1_mask_util_a0a8dc1ea7550e654529a6f92dadea889}{GL}}.\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1opengl_1_1renderer_1_1_s_g_l_a35991f93081980b303d6ccc5bd88c8da}{glEnable}}(SGL.GL\_DEPTH\_TEST);
+25         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1_mask_util_a0a8dc1ea7550e654529a6f92dadea889}{GL}}.\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1opengl_1_1renderer_1_1_s_g_l_a38dbc27d7cec53cf04ff1d98fd8c15e0}{glDepthMask}}(\textcolor{keyword}{true});
+26         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1_mask_util_a0a8dc1ea7550e654529a6f92dadea889}{GL}}.\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1opengl_1_1renderer_1_1_s_g_l_a35f9b484d84c168623bc7236152f2d50}{glColorMask}}(\textcolor{keyword}{false}, \textcolor{keyword}{false}, \textcolor{keyword}{false}, \textcolor{keyword}{false});
+27     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1util_1_1_mask_util_acf09fe93160deff60fe300a6f4b9721f}\label{classorg_1_1newdawn_1_1slick_1_1util_1_1_mask_util_acf09fe93160deff60fe300a6f4b9721f}} 
+\index{org\+::newdawn\+::slick\+::util\+::\+Mask\+Util@{org\+::newdawn\+::slick\+::util\+::\+Mask\+Util}!draw\+Off\+Mask@{draw\+Off\+Mask}}
+\index{draw\+Off\+Mask@{draw\+Off\+Mask}!org\+::newdawn\+::slick\+::util\+::\+Mask\+Util@{org\+::newdawn\+::slick\+::util\+::\+Mask\+Util}}
+\subsubsection{\texorpdfstring{draw\+Off\+Mask()}{drawOffMask()}}
+{\footnotesize\ttfamily static void org.\+newdawn.\+slick.\+util.\+Mask\+Util.\+draw\+Off\+Mask (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Start drawing only off the masked area 
+\begin{DoxyCode}
+47                                      \{
+48         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1_mask_util_a0a8dc1ea7550e654529a6f92dadea889}{GL}}.\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1opengl_1_1renderer_1_1_s_g_l_a3704d17846e7513cc280e6275c73ace9}{glDepthFunc}}(SGL.GL\_NOTEQUAL);
+49     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1util_1_1_mask_util_a6653026353cf1f1726a47229baa0a3f4}\label{classorg_1_1newdawn_1_1slick_1_1util_1_1_mask_util_a6653026353cf1f1726a47229baa0a3f4}} 
+\index{org\+::newdawn\+::slick\+::util\+::\+Mask\+Util@{org\+::newdawn\+::slick\+::util\+::\+Mask\+Util}!draw\+On\+Mask@{draw\+On\+Mask}}
+\index{draw\+On\+Mask@{draw\+On\+Mask}!org\+::newdawn\+::slick\+::util\+::\+Mask\+Util@{org\+::newdawn\+::slick\+::util\+::\+Mask\+Util}}
+\subsubsection{\texorpdfstring{draw\+On\+Mask()}{drawOnMask()}}
+{\footnotesize\ttfamily static void org.\+newdawn.\+slick.\+util.\+Mask\+Util.\+draw\+On\+Mask (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Start drawing only on the masked area 
+\begin{DoxyCode}
+40                                     \{
+41         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1_mask_util_a0a8dc1ea7550e654529a6f92dadea889}{GL}}.\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1opengl_1_1renderer_1_1_s_g_l_a3704d17846e7513cc280e6275c73ace9}{glDepthFunc}}(SGL.GL\_EQUAL);
+42     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1util_1_1_mask_util_a96a931dbb0d5d98dbfb107da8bd4dc79}\label{classorg_1_1newdawn_1_1slick_1_1util_1_1_mask_util_a96a931dbb0d5d98dbfb107da8bd4dc79}} 
+\index{org\+::newdawn\+::slick\+::util\+::\+Mask\+Util@{org\+::newdawn\+::slick\+::util\+::\+Mask\+Util}!finish\+Define\+Mask@{finish\+Define\+Mask}}
+\index{finish\+Define\+Mask@{finish\+Define\+Mask}!org\+::newdawn\+::slick\+::util\+::\+Mask\+Util@{org\+::newdawn\+::slick\+::util\+::\+Mask\+Util}}
+\subsubsection{\texorpdfstring{finish\+Define\+Mask()}{finishDefineMask()}}
+{\footnotesize\ttfamily static void org.\+newdawn.\+slick.\+util.\+Mask\+Util.\+finish\+Define\+Mask (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Finish defining the screen mask 
+\begin{DoxyCode}
+32                                           \{
+33         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1_mask_util_a0a8dc1ea7550e654529a6f92dadea889}{GL}}.\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1opengl_1_1renderer_1_1_s_g_l_a38dbc27d7cec53cf04ff1d98fd8c15e0}{glDepthMask}}(\textcolor{keyword}{false});
+34         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1_mask_util_a0a8dc1ea7550e654529a6f92dadea889}{GL}}.\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1opengl_1_1renderer_1_1_s_g_l_a35f9b484d84c168623bc7236152f2d50}{glColorMask}}(\textcolor{keyword}{true}, \textcolor{keyword}{true}, \textcolor{keyword}{true}, \textcolor{keyword}{true});
+35     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1util_1_1_mask_util_a8d7e56e8716eefd2d771f079c084bf22}\label{classorg_1_1newdawn_1_1slick_1_1util_1_1_mask_util_a8d7e56e8716eefd2d771f079c084bf22}} 
+\index{org\+::newdawn\+::slick\+::util\+::\+Mask\+Util@{org\+::newdawn\+::slick\+::util\+::\+Mask\+Util}!reset\+Mask@{reset\+Mask}}
+\index{reset\+Mask@{reset\+Mask}!org\+::newdawn\+::slick\+::util\+::\+Mask\+Util@{org\+::newdawn\+::slick\+::util\+::\+Mask\+Util}}
+\subsubsection{\texorpdfstring{reset\+Mask()}{resetMask()}}
+{\footnotesize\ttfamily static void org.\+newdawn.\+slick.\+util.\+Mask\+Util.\+reset\+Mask (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Reset the masked area -\/ should be done after you\textquotesingle{}ve finished rendering 
+\begin{DoxyCode}
+54                                    \{
+55         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1_mask_util_a0a8dc1ea7550e654529a6f92dadea889}{GL}}.\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1opengl_1_1renderer_1_1_s_g_l_a38dbc27d7cec53cf04ff1d98fd8c15e0}{glDepthMask}}(\textcolor{keyword}{true});
+56         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1_mask_util_a0a8dc1ea7550e654529a6f92dadea889}{GL}}.\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1opengl_1_1renderer_1_1_s_g_l_ab485cf2f4c743772ed5d24a66d7c1af3}{glClearDepth}}(0);
+57         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1_mask_util_a0a8dc1ea7550e654529a6f92dadea889}{GL}}.\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1opengl_1_1renderer_1_1_s_g_l_a254bdaa78a48f3fd3fd4ada15c910d4a}{glClear}}(SGL.GL\_DEPTH\_BUFFER\_BIT);
+58         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1_mask_util_a0a8dc1ea7550e654529a6f92dadea889}{GL}}.\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1opengl_1_1renderer_1_1_s_g_l_a38dbc27d7cec53cf04ff1d98fd8c15e0}{glDepthMask}}(\textcolor{keyword}{false});
+59         
+60         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1_mask_util_a0a8dc1ea7550e654529a6f92dadea889}{GL}}.\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1opengl_1_1renderer_1_1_s_g_l_a3b47b402f84bc1404e6b218264981bb5}{glDisable}}(SGL.GL\_DEPTH\_TEST);
+61     \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1util_1_1_mask_util_a0a8dc1ea7550e654529a6f92dadea889}\label{classorg_1_1newdawn_1_1slick_1_1util_1_1_mask_util_a0a8dc1ea7550e654529a6f92dadea889}} 
+\index{org\+::newdawn\+::slick\+::util\+::\+Mask\+Util@{org\+::newdawn\+::slick\+::util\+::\+Mask\+Util}!GL@{GL}}
+\index{GL@{GL}!org\+::newdawn\+::slick\+::util\+::\+Mask\+Util@{org\+::newdawn\+::slick\+::util\+::\+Mask\+Util}}
+\subsubsection{\texorpdfstring{GL}{GL}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1opengl_1_1renderer_1_1_s_g_l}{S\+GL}} org.\+newdawn.\+slick.\+util.\+Mask\+Util.\+GL = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1renderer_1_1_renderer_abe742c3a7dfca67c6c01821d27087308}{Renderer.\+get}}()\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+The renderer to use for all GL operations 

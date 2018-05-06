@@ -1,0 +1,464 @@
+\hypertarget{classpecl2ignacioribera_1_1_libro}{}\section{pecl2ignacioribera.\+Libro Class Reference}
+\label{classpecl2ignacioribera_1_1_libro}\index{pecl2ignacioribera.\+Libro@{pecl2ignacioribera.\+Libro}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+synchronized void \mbox{\hyperlink{classpecl2ignacioribera_1_1_libro_a44cfbf7f47ada045300c48a3712aa804}{notificar}} ()
+\item 
+synchronized void \mbox{\hyperlink{classpecl2ignacioribera_1_1_libro_a76e984080b5b46f17b7f7c7a1d880779}{mensaje\+Final}} (int id)
+\item 
+synchronized void \mbox{\hyperlink{classpecl2ignacioribera_1_1_libro_abe0c6068a2acc893bca1caff4c6bf424}{mostrar\+Contenido}} ()
+\item 
+boolean \mbox{\hyperlink{classpecl2ignacioribera_1_1_libro_a5d5ef2c83d96944b1d043e9fb5378edd}{is\+Parar\+Lectores}} ()
+\item 
+boolean \mbox{\hyperlink{classpecl2ignacioribera_1_1_libro_aabc572905978f8f3e19dd6533084149a}{is\+Parar\+Escritores}} ()
+\item 
+void \mbox{\hyperlink{classpecl2ignacioribera_1_1_libro_aec141b6a8787d8af7f1596a42283d378}{parar\+Reanudar\+Lectores}} ()
+\item 
+void \mbox{\hyperlink{classpecl2ignacioribera_1_1_libro_aa841d46804bc4a70f1f1fc5300257380}{parar\+Reanudar\+Escritores}} ()
+\item 
+synchronized void \mbox{\hyperlink{classpecl2ignacioribera_1_1_libro_a4c83b4f2726cfe98dcac1feb72e39b02}{esperar}} ()
+\item 
+boolean \mbox{\hyperlink{classpecl2ignacioribera_1_1_libro_ae907d7ff683317468cf2772211b5289c}{leer}} (int identificador)
+\item 
+synchronized void \mbox{\hyperlink{classpecl2ignacioribera_1_1_libro_ac19867792e66d8a51752c91888b25e07}{escribir}} (int identificador)
+\item 
+synchronized void \mbox{\hyperlink{classpecl2ignacioribera_1_1_libro_aa68bbbcfa16984a13f848e8a2038c97a}{pedir\+Turno}} ()
+\item 
+synchronized void \mbox{\hyperlink{classpecl2ignacioribera_1_1_libro_a78cc01e6cefa7dc833706d59550a4624}{ceder\+Turno}} ()
+\item 
+synchronized void \mbox{\hyperlink{classpecl2ignacioribera_1_1_libro_a62a722c8f7e5675f5ab3561a86eda1c1}{empezar\+Leer}} (int id)
+\item 
+synchronized void \mbox{\hyperlink{classpecl2ignacioribera_1_1_libro_abd96718ab4e489e84f69dc24a7229f18}{dejar\+Leer}} (int id)
+\item 
+synchronized void \mbox{\hyperlink{classpecl2ignacioribera_1_1_libro_a2e74a67a271d83b8ce93e1807216c997}{sumar\+A\+Contador\+Escritura}} ()
+\item 
+boolean \mbox{\hyperlink{classpecl2ignacioribera_1_1_libro_ab8a6fd43e4d95068bbb7cfbcf5ff04a5}{hay\+Alguien\+Escribiendo}} ()
+\item 
+boolean \mbox{\hyperlink{classpecl2ignacioribera_1_1_libro_a3ec78c4737fd60d84388e87f7f1d606f}{hay\+Alguien\+Leyendo}} ()
+\item 
+\mbox{\hyperlink{classpecl2ignacioribera_1_1_libro_a959d8e97c56f6a3f9f779f26674f12a2}{Libro}} (int \mbox{\hyperlink{classpecl2ignacioribera_1_1_libro_a8c1b217886e7be49de89d57c5ef47c7e}{numero\+Lectores}}, int \mbox{\hyperlink{classpecl2ignacioribera_1_1_libro_a1645482c1d2dbef4a6537b1a96986529}{numero\+Escritores}}, javax.\+swing.\+J\+Label \mbox{\hyperlink{classpecl2ignacioribera_1_1_libro_a4dfd577c8a08d50696cc33d536d5f2fa}{j\+Label\+Aux}}, javax.\+swing.\+J\+Text\+Field \mbox{\hyperlink{classpecl2ignacioribera_1_1_libro_a087e60795a9f9b8c9f393bfcb9a4d70b}{j\+Text\+Field\+Aux}}, javax.\+swing.\+J\+Text\+Area \mbox{\hyperlink{classpecl2ignacioribera_1_1_libro_aa3e89b7cad094609fe96bb5ec370c5a6}{j\+Text\+Area\+Aux}})
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+javax.\+swing.\+J\+Text\+Field \mbox{\hyperlink{classpecl2ignacioribera_1_1_libro_a087e60795a9f9b8c9f393bfcb9a4d70b}{j\+Text\+Field\+Aux}}
+\item 
+javax.\+swing.\+J\+Text\+Area \mbox{\hyperlink{classpecl2ignacioribera_1_1_libro_aa3e89b7cad094609fe96bb5ec370c5a6}{j\+Text\+Area\+Aux}}
+\item 
+javax.\+swing.\+J\+Label \mbox{\hyperlink{classpecl2ignacioribera_1_1_libro_a4dfd577c8a08d50696cc33d536d5f2fa}{j\+Label\+Aux}}
+\item 
+Lock \mbox{\hyperlink{classpecl2ignacioribera_1_1_libro_a22f5f2548738658bcdeaf0f8ee7fc11c}{parar\+Lect}}
+\item 
+Lock \mbox{\hyperlink{classpecl2ignacioribera_1_1_libro_a04507c6abbbfac23e0faf81ba95e774a}{parar\+Esc}}
+\item 
+Lock \mbox{\hyperlink{classpecl2ignacioribera_1_1_libro_a068f41dc0aac9a0755aacb19126110bf}{escribir}}
+\item 
+String \mbox{\hyperlink{classpecl2ignacioribera_1_1_libro_acb52ac741427b64544c1f65b6bbb898a}{contenido}}
+\item 
+boolean \mbox{\hyperlink{classpecl2ignacioribera_1_1_libro_a34d076d438d7b6309b4b499a94d52277}{turno\+Escribir}}
+\item 
+boolean \mbox{\hyperlink{classpecl2ignacioribera_1_1_libro_adc1f39f45ab2ae4174206c9ee53f2f97}{leyendo}} \mbox{[}$\,$\mbox{]}
+\item 
+boolean \mbox{\hyperlink{classpecl2ignacioribera_1_1_libro_a5d69f4d0825673ec1882cfdb390217a9}{parar\+Lectores}}
+\item 
+boolean \mbox{\hyperlink{classpecl2ignacioribera_1_1_libro_a8925b951b1b46dc4c3620730cd28480a}{parar\+Escritores}}
+\item 
+int \mbox{\hyperlink{classpecl2ignacioribera_1_1_libro_a85a779880390c56f68c584689668e3d0}{contador\+Escrituras}}
+\item 
+int \mbox{\hyperlink{classpecl2ignacioribera_1_1_libro_a8c1b217886e7be49de89d57c5ef47c7e}{numero\+Lectores}}
+\item 
+int \mbox{\hyperlink{classpecl2ignacioribera_1_1_libro_a1645482c1d2dbef4a6537b1a96986529}{numero\+Escritores}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyAuthor}{Author}
+Ignacio 
+\end{DoxyAuthor}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classpecl2ignacioribera_1_1_libro_a959d8e97c56f6a3f9f779f26674f12a2}\label{classpecl2ignacioribera_1_1_libro_a959d8e97c56f6a3f9f779f26674f12a2}} 
+\index{pecl2ignacioribera\+::\+Libro@{pecl2ignacioribera\+::\+Libro}!Libro@{Libro}}
+\index{Libro@{Libro}!pecl2ignacioribera\+::\+Libro@{pecl2ignacioribera\+::\+Libro}}
+\subsubsection{\texorpdfstring{Libro()}{Libro()}}
+{\footnotesize\ttfamily pecl2ignacioribera.\+Libro.\+Libro (\begin{DoxyParamCaption}\item[{int}]{numero\+Lectores,  }\item[{int}]{numero\+Escritores,  }\item[{javax.\+swing.\+J\+Label}]{j\+Label\+Aux,  }\item[{javax.\+swing.\+J\+Text\+Field}]{j\+Text\+Field\+Aux,  }\item[{javax.\+swing.\+J\+Text\+Area}]{j\+Text\+Area\+Aux }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+180     \{
+181         \textcolor{keywordtype}{int} i;
+182         this.\mbox{\hyperlink{classpecl2ignacioribera_1_1_libro_a4dfd577c8a08d50696cc33d536d5f2fa}{jLabelAux}} = \mbox{\hyperlink{classpecl2ignacioribera_1_1_libro_a4dfd577c8a08d50696cc33d536d5f2fa}{jLabelAux}};
+183         this.\mbox{\hyperlink{classpecl2ignacioribera_1_1_libro_a087e60795a9f9b8c9f393bfcb9a4d70b}{jTextFieldAux}} = \mbox{\hyperlink{classpecl2ignacioribera_1_1_libro_a087e60795a9f9b8c9f393bfcb9a4d70b}{jTextFieldAux}};
+184         this.\mbox{\hyperlink{classpecl2ignacioribera_1_1_libro_aa3e89b7cad094609fe96bb5ec370c5a6}{jTextAreaAux}} = \mbox{\hyperlink{classpecl2ignacioribera_1_1_libro_aa3e89b7cad094609fe96bb5ec370c5a6}{jTextAreaAux}};
+185         this.\mbox{\hyperlink{classpecl2ignacioribera_1_1_libro_a5d69f4d0825673ec1882cfdb390217a9}{pararLectores}} = \textcolor{keyword}{false};
+186         this.\mbox{\hyperlink{classpecl2ignacioribera_1_1_libro_a8925b951b1b46dc4c3620730cd28480a}{pararEscritores}} = \textcolor{keyword}{false};
+187         this.\mbox{\hyperlink{classpecl2ignacioribera_1_1_libro_a8c1b217886e7be49de89d57c5ef47c7e}{numeroLectores}} = \mbox{\hyperlink{classpecl2ignacioribera_1_1_libro_a8c1b217886e7be49de89d57c5ef47c7e}{numeroLectores}};
+188         this.\mbox{\hyperlink{classpecl2ignacioribera_1_1_libro_a1645482c1d2dbef4a6537b1a96986529}{numeroEscritores}} = \mbox{\hyperlink{classpecl2ignacioribera_1_1_libro_a1645482c1d2dbef4a6537b1a96986529}{numeroEscritores}};
+189         this.\mbox{\hyperlink{classpecl2ignacioribera_1_1_libro_adc1f39f45ab2ae4174206c9ee53f2f97}{leyendo}} = \textcolor{keyword}{new} \textcolor{keywordtype}{boolean}[\mbox{\hyperlink{classpecl2ignacioribera_1_1_libro_a8c1b217886e7be49de89d57c5ef47c7e}{numeroLectores}}];
+190         this.\mbox{\hyperlink{classpecl2ignacioribera_1_1_libro_a34d076d438d7b6309b4b499a94d52277}{turnoEscribir}} = \textcolor{keyword}{false};
+191         \textcolor{keywordflow}{for}(i=0;i<\mbox{\hyperlink{classpecl2ignacioribera_1_1_libro_a8c1b217886e7be49de89d57c5ef47c7e}{numeroLectores}};i++)
+192         \{
+193             this.\mbox{\hyperlink{classpecl2ignacioribera_1_1_libro_adc1f39f45ab2ae4174206c9ee53f2f97}{leyendo}}[i]=\textcolor{keyword}{false};
+194         \}
+195         this.\mbox{\hyperlink{classpecl2ignacioribera_1_1_libro_a85a779880390c56f68c584689668e3d0}{contadorEscrituras}} = 0;
+196         this.\mbox{\hyperlink{classpecl2ignacioribera_1_1_libro_acb52ac741427b64544c1f65b6bbb898a}{contenido}} = \textcolor{stringliteral}{""};
+197     \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classpecl2ignacioribera_1_1_libro_a78cc01e6cefa7dc833706d59550a4624}\label{classpecl2ignacioribera_1_1_libro_a78cc01e6cefa7dc833706d59550a4624}} 
+\index{pecl2ignacioribera\+::\+Libro@{pecl2ignacioribera\+::\+Libro}!ceder\+Turno@{ceder\+Turno}}
+\index{ceder\+Turno@{ceder\+Turno}!pecl2ignacioribera\+::\+Libro@{pecl2ignacioribera\+::\+Libro}}
+\subsubsection{\texorpdfstring{ceder\+Turno()}{cederTurno()}}
+{\footnotesize\ttfamily synchronized void pecl2ignacioribera.\+Libro.\+ceder\+Turno (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+126     \{
+127         \mbox{\hyperlink{classpecl2ignacioribera_1_1_libro_a34d076d438d7b6309b4b499a94d52277}{turnoEscribir}} = \textcolor{keyword}{false};
+128     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classpecl2ignacioribera_1_1_libro_abd96718ab4e489e84f69dc24a7229f18}\label{classpecl2ignacioribera_1_1_libro_abd96718ab4e489e84f69dc24a7229f18}} 
+\index{pecl2ignacioribera\+::\+Libro@{pecl2ignacioribera\+::\+Libro}!dejar\+Leer@{dejar\+Leer}}
+\index{dejar\+Leer@{dejar\+Leer}!pecl2ignacioribera\+::\+Libro@{pecl2ignacioribera\+::\+Libro}}
+\subsubsection{\texorpdfstring{dejar\+Leer()}{dejarLeer()}}
+{\footnotesize\ttfamily synchronized void pecl2ignacioribera.\+Libro.\+dejar\+Leer (\begin{DoxyParamCaption}\item[{int}]{id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+144     \{
+145         \mbox{\hyperlink{classpecl2ignacioribera_1_1_libro_adc1f39f45ab2ae4174206c9ee53f2f97}{leyendo}}[\textcolor{keywordtype}{id}-20] = \textcolor{keyword}{false};
+146         \textcolor{keywordflow}{if}(\mbox{\hyperlink{classpecl2ignacioribera_1_1_libro_a3ec78c4737fd60d84388e87f7f1d606f}{hayAlguienLeyendo}}())
+147         \{
+148             \mbox{\hyperlink{classpecl2ignacioribera_1_1_libro_a4dfd577c8a08d50696cc33d536d5f2fa}{jLabelAux}}.setText(\textcolor{stringliteral}{"Leyendo: true"});
+149         \}
+150         \textcolor{keywordflow}{else}
+151         \{
+152             \mbox{\hyperlink{classpecl2ignacioribera_1_1_libro_a4dfd577c8a08d50696cc33d536d5f2fa}{jLabelAux}}.setText(\textcolor{stringliteral}{"Leyendo: false"});
+153         \}
+154     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classpecl2ignacioribera_1_1_libro_a62a722c8f7e5675f5ab3561a86eda1c1}\label{classpecl2ignacioribera_1_1_libro_a62a722c8f7e5675f5ab3561a86eda1c1}} 
+\index{pecl2ignacioribera\+::\+Libro@{pecl2ignacioribera\+::\+Libro}!empezar\+Leer@{empezar\+Leer}}
+\index{empezar\+Leer@{empezar\+Leer}!pecl2ignacioribera\+::\+Libro@{pecl2ignacioribera\+::\+Libro}}
+\subsubsection{\texorpdfstring{empezar\+Leer()}{empezarLeer()}}
+{\footnotesize\ttfamily synchronized void pecl2ignacioribera.\+Libro.\+empezar\+Leer (\begin{DoxyParamCaption}\item[{int}]{id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+131     \{
+132         \mbox{\hyperlink{classpecl2ignacioribera_1_1_libro_adc1f39f45ab2ae4174206c9ee53f2f97}{leyendo}}[\textcolor{keywordtype}{id}-20] = \textcolor{keyword}{true};
+133         \textcolor{keywordflow}{if}(\mbox{\hyperlink{classpecl2ignacioribera_1_1_libro_a3ec78c4737fd60d84388e87f7f1d606f}{hayAlguienLeyendo}}())
+134         \{
+135             \mbox{\hyperlink{classpecl2ignacioribera_1_1_libro_a4dfd577c8a08d50696cc33d536d5f2fa}{jLabelAux}}.setText(\textcolor{stringliteral}{"Leyendo: true"});
+136         \}
+137         \textcolor{keywordflow}{else}
+138         \{
+139             \mbox{\hyperlink{classpecl2ignacioribera_1_1_libro_a4dfd577c8a08d50696cc33d536d5f2fa}{jLabelAux}}.setText(\textcolor{stringliteral}{"Leyendo: false"});
+140         \}
+141     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classpecl2ignacioribera_1_1_libro_ac19867792e66d8a51752c91888b25e07}\label{classpecl2ignacioribera_1_1_libro_ac19867792e66d8a51752c91888b25e07}} 
+\index{pecl2ignacioribera\+::\+Libro@{pecl2ignacioribera\+::\+Libro}!escribir@{escribir}}
+\index{escribir@{escribir}!pecl2ignacioribera\+::\+Libro@{pecl2ignacioribera\+::\+Libro}}
+\subsubsection{\texorpdfstring{escribir()}{escribir()}}
+{\footnotesize\ttfamily synchronized void pecl2ignacioribera.\+Libro.\+escribir (\begin{DoxyParamCaption}\item[{int}]{identificador }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+102     \{
+103         \mbox{\hyperlink{classpecl2ignacioribera_1_1_libro_aa68bbbcfa16984a13f848e8a2038c97a}{pedirTurno}}();
+104         \textcolor{keywordflow}{while}(\mbox{\hyperlink{classpecl2ignacioribera_1_1_libro_a3ec78c4737fd60d84388e87f7f1d606f}{hayAlguienLeyendo}}()||\mbox{\hyperlink{classpecl2ignacioribera_1_1_libro_aabc572905978f8f3e19dd6533084149a}{isPararEscritores}}())
+105         \{
+106             \mbox{\hyperlink{classpecl2ignacioribera_1_1_libro_a4c83b4f2726cfe98dcac1feb72e39b02}{esperar}}();
+107         \}
+108         \mbox{\hyperlink{classpecl2ignacioribera_1_1_libro_acb52ac741427b64544c1f65b6bbb898a}{contenido}} = \mbox{\hyperlink{classpecl2ignacioribera_1_1_libro_acb52ac741427b64544c1f65b6bbb898a}{contenido}} + identificador;
+109         \textcolor{comment}{/*try \{}
+110 \textcolor{comment}{            sleep(500);}
+111 \textcolor{comment}{        \} catch (InterruptedException ex) \{}
+112 \textcolor{comment}{            Logger.getLogger(Libro.class.getName()).log(Level.SEVERE, null, ex);}
+113 \textcolor{comment}{        \}*/}
+114         \mbox{\hyperlink{classpecl2ignacioribera_1_1_libro_abe0c6068a2acc893bca1caff4c6bf424}{mostrarContenido}}();
+115         \mbox{\hyperlink{classpecl2ignacioribera_1_1_libro_a2e74a67a271d83b8ce93e1807216c997}{sumarAContadorEscritura}}();
+116         \mbox{\hyperlink{classpecl2ignacioribera_1_1_libro_a78cc01e6cefa7dc833706d59550a4624}{cederTurno}}();
+117         \mbox{\hyperlink{classpecl2ignacioribera_1_1_libro_a44cfbf7f47ada045300c48a3712aa804}{notificar}}();
+118     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classpecl2ignacioribera_1_1_libro_a4c83b4f2726cfe98dcac1feb72e39b02}\label{classpecl2ignacioribera_1_1_libro_a4c83b4f2726cfe98dcac1feb72e39b02}} 
+\index{pecl2ignacioribera\+::\+Libro@{pecl2ignacioribera\+::\+Libro}!esperar@{esperar}}
+\index{esperar@{esperar}!pecl2ignacioribera\+::\+Libro@{pecl2ignacioribera\+::\+Libro}}
+\subsubsection{\texorpdfstring{esperar()}{esperar()}}
+{\footnotesize\ttfamily synchronized void pecl2ignacioribera.\+Libro.\+esperar (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+69     \{
+70         \textcolor{keywordflow}{try} \{
+71             wait();
+72         \} \textcolor{keywordflow}{catch} (InterruptedException ex) \{
+73             Logger.getLogger(\mbox{\hyperlink{classpecl2ignacioribera_1_1_libro_a959d8e97c56f6a3f9f779f26674f12a2}{Libro}}.class.getName()).log(Level.SEVERE, null, ex);
+74         \}
+75     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classpecl2ignacioribera_1_1_libro_ab8a6fd43e4d95068bbb7cfbcf5ff04a5}\label{classpecl2ignacioribera_1_1_libro_ab8a6fd43e4d95068bbb7cfbcf5ff04a5}} 
+\index{pecl2ignacioribera\+::\+Libro@{pecl2ignacioribera\+::\+Libro}!hay\+Alguien\+Escribiendo@{hay\+Alguien\+Escribiendo}}
+\index{hay\+Alguien\+Escribiendo@{hay\+Alguien\+Escribiendo}!pecl2ignacioribera\+::\+Libro@{pecl2ignacioribera\+::\+Libro}}
+\subsubsection{\texorpdfstring{hay\+Alguien\+Escribiendo()}{hayAlguienEscribiendo()}}
+{\footnotesize\ttfamily boolean pecl2ignacioribera.\+Libro.\+hay\+Alguien\+Escribiendo (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+162     \{
+163         \textcolor{keywordflow}{return} \mbox{\hyperlink{classpecl2ignacioribera_1_1_libro_a34d076d438d7b6309b4b499a94d52277}{turnoEscribir}};
+164     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classpecl2ignacioribera_1_1_libro_a3ec78c4737fd60d84388e87f7f1d606f}\label{classpecl2ignacioribera_1_1_libro_a3ec78c4737fd60d84388e87f7f1d606f}} 
+\index{pecl2ignacioribera\+::\+Libro@{pecl2ignacioribera\+::\+Libro}!hay\+Alguien\+Leyendo@{hay\+Alguien\+Leyendo}}
+\index{hay\+Alguien\+Leyendo@{hay\+Alguien\+Leyendo}!pecl2ignacioribera\+::\+Libro@{pecl2ignacioribera\+::\+Libro}}
+\subsubsection{\texorpdfstring{hay\+Alguien\+Leyendo()}{hayAlguienLeyendo()}}
+{\footnotesize\ttfamily boolean pecl2ignacioribera.\+Libro.\+hay\+Alguien\+Leyendo (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+167     \{
+168         \textcolor{keywordtype}{int} i;
+169         \textcolor{keywordflow}{for}(i=0;i<\mbox{\hyperlink{classpecl2ignacioribera_1_1_libro_a8c1b217886e7be49de89d57c5ef47c7e}{numeroLectores}};i++)
+170         \{
+171             \textcolor{keywordflow}{if}(\mbox{\hyperlink{classpecl2ignacioribera_1_1_libro_adc1f39f45ab2ae4174206c9ee53f2f97}{leyendo}}[i])
+172             \{
+173                 \textcolor{keywordflow}{return} \textcolor{keyword}{true};
+174             \}
+175         \}
+176         \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+177     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classpecl2ignacioribera_1_1_libro_aabc572905978f8f3e19dd6533084149a}\label{classpecl2ignacioribera_1_1_libro_aabc572905978f8f3e19dd6533084149a}} 
+\index{pecl2ignacioribera\+::\+Libro@{pecl2ignacioribera\+::\+Libro}!is\+Parar\+Escritores@{is\+Parar\+Escritores}}
+\index{is\+Parar\+Escritores@{is\+Parar\+Escritores}!pecl2ignacioribera\+::\+Libro@{pecl2ignacioribera\+::\+Libro}}
+\subsubsection{\texorpdfstring{is\+Parar\+Escritores()}{isPararEscritores()}}
+{\footnotesize\ttfamily boolean pecl2ignacioribera.\+Libro.\+is\+Parar\+Escritores (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+54                                        \{
+55         \textcolor{keywordflow}{return} \mbox{\hyperlink{classpecl2ignacioribera_1_1_libro_a8925b951b1b46dc4c3620730cd28480a}{pararEscritores}};
+56     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classpecl2ignacioribera_1_1_libro_a5d5ef2c83d96944b1d043e9fb5378edd}\label{classpecl2ignacioribera_1_1_libro_a5d5ef2c83d96944b1d043e9fb5378edd}} 
+\index{pecl2ignacioribera\+::\+Libro@{pecl2ignacioribera\+::\+Libro}!is\+Parar\+Lectores@{is\+Parar\+Lectores}}
+\index{is\+Parar\+Lectores@{is\+Parar\+Lectores}!pecl2ignacioribera\+::\+Libro@{pecl2ignacioribera\+::\+Libro}}
+\subsubsection{\texorpdfstring{is\+Parar\+Lectores()}{isPararLectores()}}
+{\footnotesize\ttfamily boolean pecl2ignacioribera.\+Libro.\+is\+Parar\+Lectores (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+50                                      \{
+51         \textcolor{keywordflow}{return} \mbox{\hyperlink{classpecl2ignacioribera_1_1_libro_a5d69f4d0825673ec1882cfdb390217a9}{pararLectores}};
+52     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classpecl2ignacioribera_1_1_libro_ae907d7ff683317468cf2772211b5289c}\label{classpecl2ignacioribera_1_1_libro_ae907d7ff683317468cf2772211b5289c}} 
+\index{pecl2ignacioribera\+::\+Libro@{pecl2ignacioribera\+::\+Libro}!leer@{leer}}
+\index{leer@{leer}!pecl2ignacioribera\+::\+Libro@{pecl2ignacioribera\+::\+Libro}}
+\subsubsection{\texorpdfstring{leer()}{leer()}}
+{\footnotesize\ttfamily boolean pecl2ignacioribera.\+Libro.\+leer (\begin{DoxyParamCaption}\item[{int}]{identificador }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+78      \{
+79          \textcolor{keywordflow}{while}(\mbox{\hyperlink{classpecl2ignacioribera_1_1_libro_ab8a6fd43e4d95068bbb7cfbcf5ff04a5}{hayAlguienEscribiendo}}() || \mbox{\hyperlink{classpecl2ignacioribera_1_1_libro_a5d5ef2c83d96944b1d043e9fb5378edd}{isPararLectores}}())
+80          \{
+81              \mbox{\hyperlink{classpecl2ignacioribera_1_1_libro_a4c83b4f2726cfe98dcac1feb72e39b02}{esperar}}();
+82          \}
+83          \mbox{\hyperlink{classpecl2ignacioribera_1_1_libro_a62a722c8f7e5675f5ab3561a86eda1c1}{empezarLeer}}(identificador);
+84          \textcolor{keywordflow}{try} \{
+85              sleep((\textcolor{keywordtype}{int})(500+(1000*Math.random())));\textcolor{comment}{//leer}
+86          \} \textcolor{keywordflow}{catch} (InterruptedException ex) \{
+87              Logger.getLogger(Lector.class.getName()).log(Level.SEVERE, null, ex);
+88          \}
+89          \mbox{\hyperlink{classpecl2ignacioribera_1_1_libro_abd96718ab4e489e84f69dc24a7229f18}{dejarLeer}}(identificador);
+90          \textcolor{keywordflow}{if}(\mbox{\hyperlink{classpecl2ignacioribera_1_1_libro_acb52ac741427b64544c1f65b6bbb898a}{contenido}}.length()==50)
+91          \{
+92              \mbox{\hyperlink{classpecl2ignacioribera_1_1_libro_a76e984080b5b46f17b7f7c7a1d880779}{mensajeFinal}}(identificador);
+93              \mbox{\hyperlink{classpecl2ignacioribera_1_1_libro_a44cfbf7f47ada045300c48a3712aa804}{notificar}}();
+94              \textcolor{keywordflow}{return} \textcolor{keyword}{true};
+95          \}\textcolor{keywordflow}{else}\{
+96              \mbox{\hyperlink{classpecl2ignacioribera_1_1_libro_a44cfbf7f47ada045300c48a3712aa804}{notificar}}();
+97              \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+98          \}
+99      \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classpecl2ignacioribera_1_1_libro_a76e984080b5b46f17b7f7c7a1d880779}\label{classpecl2ignacioribera_1_1_libro_a76e984080b5b46f17b7f7c7a1d880779}} 
+\index{pecl2ignacioribera\+::\+Libro@{pecl2ignacioribera\+::\+Libro}!mensaje\+Final@{mensaje\+Final}}
+\index{mensaje\+Final@{mensaje\+Final}!pecl2ignacioribera\+::\+Libro@{pecl2ignacioribera\+::\+Libro}}
+\subsubsection{\texorpdfstring{mensaje\+Final()}{mensajeFinal()}}
+{\footnotesize\ttfamily synchronized void pecl2ignacioribera.\+Libro.\+mensaje\+Final (\begin{DoxyParamCaption}\item[{int}]{id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+40     \{
+41         \mbox{\hyperlink{classpecl2ignacioribera_1_1_libro_aa3e89b7cad094609fe96bb5ec370c5a6}{jTextAreaAux}}.setText(\mbox{\hyperlink{classpecl2ignacioribera_1_1_libro_aa3e89b7cad094609fe96bb5ec370c5a6}{jTextAreaAux}}.getText()+\textcolor{stringliteral}{"\(\backslash\)nLeído por "} + \textcolor{keywordtype}{id} +\textcolor{stringliteral}{": "} + 
+      \mbox{\hyperlink{classpecl2ignacioribera_1_1_libro_acb52ac741427b64544c1f65b6bbb898a}{contenido}});
+42     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classpecl2ignacioribera_1_1_libro_abe0c6068a2acc893bca1caff4c6bf424}\label{classpecl2ignacioribera_1_1_libro_abe0c6068a2acc893bca1caff4c6bf424}} 
+\index{pecl2ignacioribera\+::\+Libro@{pecl2ignacioribera\+::\+Libro}!mostrar\+Contenido@{mostrar\+Contenido}}
+\index{mostrar\+Contenido@{mostrar\+Contenido}!pecl2ignacioribera\+::\+Libro@{pecl2ignacioribera\+::\+Libro}}
+\subsubsection{\texorpdfstring{mostrar\+Contenido()}{mostrarContenido()}}
+{\footnotesize\ttfamily synchronized void pecl2ignacioribera.\+Libro.\+mostrar\+Contenido (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+45     \{
+46         \mbox{\hyperlink{classpecl2ignacioribera_1_1_libro_a087e60795a9f9b8c9f393bfcb9a4d70b}{jTextFieldAux}}.setText(\mbox{\hyperlink{classpecl2ignacioribera_1_1_libro_acb52ac741427b64544c1f65b6bbb898a}{contenido}});
+47     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classpecl2ignacioribera_1_1_libro_a44cfbf7f47ada045300c48a3712aa804}\label{classpecl2ignacioribera_1_1_libro_a44cfbf7f47ada045300c48a3712aa804}} 
+\index{pecl2ignacioribera\+::\+Libro@{pecl2ignacioribera\+::\+Libro}!notificar@{notificar}}
+\index{notificar@{notificar}!pecl2ignacioribera\+::\+Libro@{pecl2ignacioribera\+::\+Libro}}
+\subsubsection{\texorpdfstring{notificar()}{notificar()}}
+{\footnotesize\ttfamily synchronized void pecl2ignacioribera.\+Libro.\+notificar (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+35     \{
+36         notifyAll();
+37     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classpecl2ignacioribera_1_1_libro_aa841d46804bc4a70f1f1fc5300257380}\label{classpecl2ignacioribera_1_1_libro_aa841d46804bc4a70f1f1fc5300257380}} 
+\index{pecl2ignacioribera\+::\+Libro@{pecl2ignacioribera\+::\+Libro}!parar\+Reanudar\+Escritores@{parar\+Reanudar\+Escritores}}
+\index{parar\+Reanudar\+Escritores@{parar\+Reanudar\+Escritores}!pecl2ignacioribera\+::\+Libro@{pecl2ignacioribera\+::\+Libro}}
+\subsubsection{\texorpdfstring{parar\+Reanudar\+Escritores()}{pararReanudarEscritores()}}
+{\footnotesize\ttfamily void pecl2ignacioribera.\+Libro.\+parar\+Reanudar\+Escritores (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+64     \{
+65         \mbox{\hyperlink{classpecl2ignacioribera_1_1_libro_a8925b951b1b46dc4c3620730cd28480a}{pararEscritores}} = !\mbox{\hyperlink{classpecl2ignacioribera_1_1_libro_a8925b951b1b46dc4c3620730cd28480a}{pararEscritores}};
+66     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classpecl2ignacioribera_1_1_libro_aec141b6a8787d8af7f1596a42283d378}\label{classpecl2ignacioribera_1_1_libro_aec141b6a8787d8af7f1596a42283d378}} 
+\index{pecl2ignacioribera\+::\+Libro@{pecl2ignacioribera\+::\+Libro}!parar\+Reanudar\+Lectores@{parar\+Reanudar\+Lectores}}
+\index{parar\+Reanudar\+Lectores@{parar\+Reanudar\+Lectores}!pecl2ignacioribera\+::\+Libro@{pecl2ignacioribera\+::\+Libro}}
+\subsubsection{\texorpdfstring{parar\+Reanudar\+Lectores()}{pararReanudarLectores()}}
+{\footnotesize\ttfamily void pecl2ignacioribera.\+Libro.\+parar\+Reanudar\+Lectores (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+59     \{
+60         \mbox{\hyperlink{classpecl2ignacioribera_1_1_libro_a5d69f4d0825673ec1882cfdb390217a9}{pararLectores}} = !\mbox{\hyperlink{classpecl2ignacioribera_1_1_libro_a5d69f4d0825673ec1882cfdb390217a9}{pararLectores}};
+61     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classpecl2ignacioribera_1_1_libro_aa68bbbcfa16984a13f848e8a2038c97a}\label{classpecl2ignacioribera_1_1_libro_aa68bbbcfa16984a13f848e8a2038c97a}} 
+\index{pecl2ignacioribera\+::\+Libro@{pecl2ignacioribera\+::\+Libro}!pedir\+Turno@{pedir\+Turno}}
+\index{pedir\+Turno@{pedir\+Turno}!pecl2ignacioribera\+::\+Libro@{pecl2ignacioribera\+::\+Libro}}
+\subsubsection{\texorpdfstring{pedir\+Turno()}{pedirTurno()}}
+{\footnotesize\ttfamily synchronized void pecl2ignacioribera.\+Libro.\+pedir\+Turno (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+121     \{
+122         \mbox{\hyperlink{classpecl2ignacioribera_1_1_libro_a34d076d438d7b6309b4b499a94d52277}{turnoEscribir}} = \textcolor{keyword}{true};
+123     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classpecl2ignacioribera_1_1_libro_a2e74a67a271d83b8ce93e1807216c997}\label{classpecl2ignacioribera_1_1_libro_a2e74a67a271d83b8ce93e1807216c997}} 
+\index{pecl2ignacioribera\+::\+Libro@{pecl2ignacioribera\+::\+Libro}!sumar\+A\+Contador\+Escritura@{sumar\+A\+Contador\+Escritura}}
+\index{sumar\+A\+Contador\+Escritura@{sumar\+A\+Contador\+Escritura}!pecl2ignacioribera\+::\+Libro@{pecl2ignacioribera\+::\+Libro}}
+\subsubsection{\texorpdfstring{sumar\+A\+Contador\+Escritura()}{sumarAContadorEscritura()}}
+{\footnotesize\ttfamily synchronized void pecl2ignacioribera.\+Libro.\+sumar\+A\+Contador\+Escritura (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+157     \{
+158         \mbox{\hyperlink{classpecl2ignacioribera_1_1_libro_a85a779880390c56f68c584689668e3d0}{contadorEscrituras}}++;
+159     \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classpecl2ignacioribera_1_1_libro_a85a779880390c56f68c584689668e3d0}\label{classpecl2ignacioribera_1_1_libro_a85a779880390c56f68c584689668e3d0}} 
+\index{pecl2ignacioribera\+::\+Libro@{pecl2ignacioribera\+::\+Libro}!contador\+Escrituras@{contador\+Escrituras}}
+\index{contador\+Escrituras@{contador\+Escrituras}!pecl2ignacioribera\+::\+Libro@{pecl2ignacioribera\+::\+Libro}}
+\subsubsection{\texorpdfstring{contador\+Escrituras}{contadorEscrituras}}
+{\footnotesize\ttfamily int pecl2ignacioribera.\+Libro.\+contador\+Escrituras\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classpecl2ignacioribera_1_1_libro_acb52ac741427b64544c1f65b6bbb898a}\label{classpecl2ignacioribera_1_1_libro_acb52ac741427b64544c1f65b6bbb898a}} 
+\index{pecl2ignacioribera\+::\+Libro@{pecl2ignacioribera\+::\+Libro}!contenido@{contenido}}
+\index{contenido@{contenido}!pecl2ignacioribera\+::\+Libro@{pecl2ignacioribera\+::\+Libro}}
+\subsubsection{\texorpdfstring{contenido}{contenido}}
+{\footnotesize\ttfamily String pecl2ignacioribera.\+Libro.\+contenido\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classpecl2ignacioribera_1_1_libro_a068f41dc0aac9a0755aacb19126110bf}\label{classpecl2ignacioribera_1_1_libro_a068f41dc0aac9a0755aacb19126110bf}} 
+\index{pecl2ignacioribera\+::\+Libro@{pecl2ignacioribera\+::\+Libro}!escribir@{escribir}}
+\index{escribir@{escribir}!pecl2ignacioribera\+::\+Libro@{pecl2ignacioribera\+::\+Libro}}
+\subsubsection{\texorpdfstring{escribir}{escribir}}
+{\footnotesize\ttfamily Lock pecl2ignacioribera.\+Libro.\+escribir\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classpecl2ignacioribera_1_1_libro_a4dfd577c8a08d50696cc33d536d5f2fa}\label{classpecl2ignacioribera_1_1_libro_a4dfd577c8a08d50696cc33d536d5f2fa}} 
+\index{pecl2ignacioribera\+::\+Libro@{pecl2ignacioribera\+::\+Libro}!j\+Label\+Aux@{j\+Label\+Aux}}
+\index{j\+Label\+Aux@{j\+Label\+Aux}!pecl2ignacioribera\+::\+Libro@{pecl2ignacioribera\+::\+Libro}}
+\subsubsection{\texorpdfstring{j\+Label\+Aux}{jLabelAux}}
+{\footnotesize\ttfamily javax.\+swing.\+J\+Label pecl2ignacioribera.\+Libro.\+j\+Label\+Aux\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classpecl2ignacioribera_1_1_libro_aa3e89b7cad094609fe96bb5ec370c5a6}\label{classpecl2ignacioribera_1_1_libro_aa3e89b7cad094609fe96bb5ec370c5a6}} 
+\index{pecl2ignacioribera\+::\+Libro@{pecl2ignacioribera\+::\+Libro}!j\+Text\+Area\+Aux@{j\+Text\+Area\+Aux}}
+\index{j\+Text\+Area\+Aux@{j\+Text\+Area\+Aux}!pecl2ignacioribera\+::\+Libro@{pecl2ignacioribera\+::\+Libro}}
+\subsubsection{\texorpdfstring{j\+Text\+Area\+Aux}{jTextAreaAux}}
+{\footnotesize\ttfamily javax.\+swing.\+J\+Text\+Area pecl2ignacioribera.\+Libro.\+j\+Text\+Area\+Aux\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classpecl2ignacioribera_1_1_libro_a087e60795a9f9b8c9f393bfcb9a4d70b}\label{classpecl2ignacioribera_1_1_libro_a087e60795a9f9b8c9f393bfcb9a4d70b}} 
+\index{pecl2ignacioribera\+::\+Libro@{pecl2ignacioribera\+::\+Libro}!j\+Text\+Field\+Aux@{j\+Text\+Field\+Aux}}
+\index{j\+Text\+Field\+Aux@{j\+Text\+Field\+Aux}!pecl2ignacioribera\+::\+Libro@{pecl2ignacioribera\+::\+Libro}}
+\subsubsection{\texorpdfstring{j\+Text\+Field\+Aux}{jTextFieldAux}}
+{\footnotesize\ttfamily javax.\+swing.\+J\+Text\+Field pecl2ignacioribera.\+Libro.\+j\+Text\+Field\+Aux\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classpecl2ignacioribera_1_1_libro_adc1f39f45ab2ae4174206c9ee53f2f97}\label{classpecl2ignacioribera_1_1_libro_adc1f39f45ab2ae4174206c9ee53f2f97}} 
+\index{pecl2ignacioribera\+::\+Libro@{pecl2ignacioribera\+::\+Libro}!leyendo@{leyendo}}
+\index{leyendo@{leyendo}!pecl2ignacioribera\+::\+Libro@{pecl2ignacioribera\+::\+Libro}}
+\subsubsection{\texorpdfstring{leyendo}{leyendo}}
+{\footnotesize\ttfamily boolean pecl2ignacioribera.\+Libro.\+leyendo\mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classpecl2ignacioribera_1_1_libro_a1645482c1d2dbef4a6537b1a96986529}\label{classpecl2ignacioribera_1_1_libro_a1645482c1d2dbef4a6537b1a96986529}} 
+\index{pecl2ignacioribera\+::\+Libro@{pecl2ignacioribera\+::\+Libro}!numero\+Escritores@{numero\+Escritores}}
+\index{numero\+Escritores@{numero\+Escritores}!pecl2ignacioribera\+::\+Libro@{pecl2ignacioribera\+::\+Libro}}
+\subsubsection{\texorpdfstring{numero\+Escritores}{numeroEscritores}}
+{\footnotesize\ttfamily int pecl2ignacioribera.\+Libro.\+numero\+Escritores\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classpecl2ignacioribera_1_1_libro_a8c1b217886e7be49de89d57c5ef47c7e}\label{classpecl2ignacioribera_1_1_libro_a8c1b217886e7be49de89d57c5ef47c7e}} 
+\index{pecl2ignacioribera\+::\+Libro@{pecl2ignacioribera\+::\+Libro}!numero\+Lectores@{numero\+Lectores}}
+\index{numero\+Lectores@{numero\+Lectores}!pecl2ignacioribera\+::\+Libro@{pecl2ignacioribera\+::\+Libro}}
+\subsubsection{\texorpdfstring{numero\+Lectores}{numeroLectores}}
+{\footnotesize\ttfamily int pecl2ignacioribera.\+Libro.\+numero\+Lectores\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classpecl2ignacioribera_1_1_libro_a04507c6abbbfac23e0faf81ba95e774a}\label{classpecl2ignacioribera_1_1_libro_a04507c6abbbfac23e0faf81ba95e774a}} 
+\index{pecl2ignacioribera\+::\+Libro@{pecl2ignacioribera\+::\+Libro}!parar\+Esc@{parar\+Esc}}
+\index{parar\+Esc@{parar\+Esc}!pecl2ignacioribera\+::\+Libro@{pecl2ignacioribera\+::\+Libro}}
+\subsubsection{\texorpdfstring{parar\+Esc}{pararEsc}}
+{\footnotesize\ttfamily Lock pecl2ignacioribera.\+Libro.\+parar\+Esc\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classpecl2ignacioribera_1_1_libro_a8925b951b1b46dc4c3620730cd28480a}\label{classpecl2ignacioribera_1_1_libro_a8925b951b1b46dc4c3620730cd28480a}} 
+\index{pecl2ignacioribera\+::\+Libro@{pecl2ignacioribera\+::\+Libro}!parar\+Escritores@{parar\+Escritores}}
+\index{parar\+Escritores@{parar\+Escritores}!pecl2ignacioribera\+::\+Libro@{pecl2ignacioribera\+::\+Libro}}
+\subsubsection{\texorpdfstring{parar\+Escritores}{pararEscritores}}
+{\footnotesize\ttfamily boolean pecl2ignacioribera.\+Libro.\+parar\+Escritores\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classpecl2ignacioribera_1_1_libro_a22f5f2548738658bcdeaf0f8ee7fc11c}\label{classpecl2ignacioribera_1_1_libro_a22f5f2548738658bcdeaf0f8ee7fc11c}} 
+\index{pecl2ignacioribera\+::\+Libro@{pecl2ignacioribera\+::\+Libro}!parar\+Lect@{parar\+Lect}}
+\index{parar\+Lect@{parar\+Lect}!pecl2ignacioribera\+::\+Libro@{pecl2ignacioribera\+::\+Libro}}
+\subsubsection{\texorpdfstring{parar\+Lect}{pararLect}}
+{\footnotesize\ttfamily Lock pecl2ignacioribera.\+Libro.\+parar\+Lect\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classpecl2ignacioribera_1_1_libro_a5d69f4d0825673ec1882cfdb390217a9}\label{classpecl2ignacioribera_1_1_libro_a5d69f4d0825673ec1882cfdb390217a9}} 
+\index{pecl2ignacioribera\+::\+Libro@{pecl2ignacioribera\+::\+Libro}!parar\+Lectores@{parar\+Lectores}}
+\index{parar\+Lectores@{parar\+Lectores}!pecl2ignacioribera\+::\+Libro@{pecl2ignacioribera\+::\+Libro}}
+\subsubsection{\texorpdfstring{parar\+Lectores}{pararLectores}}
+{\footnotesize\ttfamily boolean pecl2ignacioribera.\+Libro.\+parar\+Lectores\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classpecl2ignacioribera_1_1_libro_a34d076d438d7b6309b4b499a94d52277}\label{classpecl2ignacioribera_1_1_libro_a34d076d438d7b6309b4b499a94d52277}} 
+\index{pecl2ignacioribera\+::\+Libro@{pecl2ignacioribera\+::\+Libro}!turno\+Escribir@{turno\+Escribir}}
+\index{turno\+Escribir@{turno\+Escribir}!pecl2ignacioribera\+::\+Libro@{pecl2ignacioribera\+::\+Libro}}
+\subsubsection{\texorpdfstring{turno\+Escribir}{turnoEscribir}}
+{\footnotesize\ttfamily boolean pecl2ignacioribera.\+Libro.\+turno\+Escribir\hspace{0.3cm}{\ttfamily [private]}}
+

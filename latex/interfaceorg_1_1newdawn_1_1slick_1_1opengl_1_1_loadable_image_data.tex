@@ -1,0 +1,132 @@
+\hypertarget{interfaceorg_1_1newdawn_1_1slick_1_1opengl_1_1_loadable_image_data}{}\section{org.\+newdawn.\+slick.\+opengl.\+Loadable\+Image\+Data Interface Reference}
+\label{interfaceorg_1_1newdawn_1_1slick_1_1opengl_1_1_loadable_image_data}\index{org.\+newdawn.\+slick.\+opengl.\+Loadable\+Image\+Data@{org.\+newdawn.\+slick.\+opengl.\+Loadable\+Image\+Data}}
+Inheritance diagram for org.\+newdawn.\+slick.\+opengl.\+Loadable\+Image\+Data\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.458333cm]{interfaceorg_1_1newdawn_1_1slick_1_1opengl_1_1_loadable_image_data}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1opengl_1_1_loadable_image_data_a1f9fb94bae3936761535408ba7afc0df}{configure\+Edging}} (boolean edging)
+\item 
+Byte\+Buffer \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1opengl_1_1_loadable_image_data_a640021b955dde7deeeeabb5ac3738d2b}{load\+Image}} (Input\+Stream fis)  throws I\+O\+Exception
+\item 
+Byte\+Buffer \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1opengl_1_1_loadable_image_data_a448a235d1058316349f513a69f593d9b}{load\+Image}} (Input\+Stream fis, boolean flipped, int\mbox{[}$\,$\mbox{]} transparent)  throws I\+O\+Exception
+\item 
+Byte\+Buffer \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1opengl_1_1_loadable_image_data_ae1be205b86c674550235e9f357adadf5}{load\+Image}} (Input\+Stream fis, boolean flipped, boolean force\+Alpha, int\mbox{[}$\,$\mbox{]} transparent)  throws I\+O\+Exception
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+An image data source that can load images from a stream
+
+\begin{DoxyAuthor}{Author}
+kevin 
+\end{DoxyAuthor}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{interfaceorg_1_1newdawn_1_1slick_1_1opengl_1_1_loadable_image_data_a1f9fb94bae3936761535408ba7afc0df}\label{interfaceorg_1_1newdawn_1_1slick_1_1opengl_1_1_loadable_image_data_a1f9fb94bae3936761535408ba7afc0df}} 
+\index{org\+::newdawn\+::slick\+::opengl\+::\+Loadable\+Image\+Data@{org\+::newdawn\+::slick\+::opengl\+::\+Loadable\+Image\+Data}!configure\+Edging@{configure\+Edging}}
+\index{configure\+Edging@{configure\+Edging}!org\+::newdawn\+::slick\+::opengl\+::\+Loadable\+Image\+Data@{org\+::newdawn\+::slick\+::opengl\+::\+Loadable\+Image\+Data}}
+\subsubsection{\texorpdfstring{configure\+Edging()}{configureEdging()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+opengl.\+Loadable\+Image\+Data.\+configure\+Edging (\begin{DoxyParamCaption}\item[{boolean}]{edging }\end{DoxyParamCaption})}
+
+Configure the edging that can be used to make texture edges loop more cleanly
+
+
+\begin{DoxyParams}{Parameters}
+{\em edging} & True if we should edge \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_t_g_a_image_data_a05f274a1f466b4a58192c99d1c500535}{org.\+newdawn.\+slick.\+opengl.\+T\+G\+A\+Image\+Data}}, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_image_i_o_image_data_a6329973823fe6d99e2238530bac60a60}{org.\+newdawn.\+slick.\+opengl.\+Image\+I\+O\+Image\+Data}}, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_image_data_a9083d1ca4c73f7d648eaa73d477d4d63}{org.\+newdawn.\+slick.\+opengl.\+P\+N\+G\+Image\+Data}}, and \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_composite_image_data_a9f2859d594b5040ea7ab930f194412ac}{org.\+newdawn.\+slick.\+opengl.\+Composite\+Image\+Data}}.
+
+\mbox{\Hypertarget{interfaceorg_1_1newdawn_1_1slick_1_1opengl_1_1_loadable_image_data_a640021b955dde7deeeeabb5ac3738d2b}\label{interfaceorg_1_1newdawn_1_1slick_1_1opengl_1_1_loadable_image_data_a640021b955dde7deeeeabb5ac3738d2b}} 
+\index{org\+::newdawn\+::slick\+::opengl\+::\+Loadable\+Image\+Data@{org\+::newdawn\+::slick\+::opengl\+::\+Loadable\+Image\+Data}!load\+Image@{load\+Image}}
+\index{load\+Image@{load\+Image}!org\+::newdawn\+::slick\+::opengl\+::\+Loadable\+Image\+Data@{org\+::newdawn\+::slick\+::opengl\+::\+Loadable\+Image\+Data}}
+\subsubsection{\texorpdfstring{load\+Image()}{loadImage()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily Byte\+Buffer org.\+newdawn.\+slick.\+opengl.\+Loadable\+Image\+Data.\+load\+Image (\begin{DoxyParamCaption}\item[{Input\+Stream}]{fis }\end{DoxyParamCaption}) throws I\+O\+Exception}
+
+Load a image from the specified stream
+
+
+\begin{DoxyParams}{Parameters}
+{\em fis} & The stream from which we\textquotesingle{}ll load the T\+GA \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em I\+O\+Exception} & Indicates a failure to read the T\+GA \\
+\hline
+\end{DoxyExceptions}
+\begin{DoxyReturn}{Returns}
+The byte buffer containing texture data 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_image_i_o_image_data_aa524a7c6717557a6ac60d1ac8b413950}{org.\+newdawn.\+slick.\+opengl.\+Image\+I\+O\+Image\+Data}}, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_t_g_a_image_data_a9ac907fe85767aad15fa1c05af8fb093}{org.\+newdawn.\+slick.\+opengl.\+T\+G\+A\+Image\+Data}}, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_image_data_ad5507c5228d071b2936b8aa91f18e9e1}{org.\+newdawn.\+slick.\+opengl.\+P\+N\+G\+Image\+Data}}, and \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_composite_image_data_afac01aa86b627c3e172aeb7e66ec2b2f}{org.\+newdawn.\+slick.\+opengl.\+Composite\+Image\+Data}}.
+
+\mbox{\Hypertarget{interfaceorg_1_1newdawn_1_1slick_1_1opengl_1_1_loadable_image_data_a448a235d1058316349f513a69f593d9b}\label{interfaceorg_1_1newdawn_1_1slick_1_1opengl_1_1_loadable_image_data_a448a235d1058316349f513a69f593d9b}} 
+\index{org\+::newdawn\+::slick\+::opengl\+::\+Loadable\+Image\+Data@{org\+::newdawn\+::slick\+::opengl\+::\+Loadable\+Image\+Data}!load\+Image@{load\+Image}}
+\index{load\+Image@{load\+Image}!org\+::newdawn\+::slick\+::opengl\+::\+Loadable\+Image\+Data@{org\+::newdawn\+::slick\+::opengl\+::\+Loadable\+Image\+Data}}
+\subsubsection{\texorpdfstring{load\+Image()}{loadImage()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily Byte\+Buffer org.\+newdawn.\+slick.\+opengl.\+Loadable\+Image\+Data.\+load\+Image (\begin{DoxyParamCaption}\item[{Input\+Stream}]{fis,  }\item[{boolean}]{flipped,  }\item[{int \mbox{[}$\,$\mbox{]}}]{transparent }\end{DoxyParamCaption}) throws I\+O\+Exception}
+
+Load a image from the specified stream
+
+
+\begin{DoxyParams}{Parameters}
+{\em fis} & The stream from which we\textquotesingle{}ll load the T\+GA \\
+\hline
+{\em flipped} & True if we loading in flipped mode (used for cursors) \\
+\hline
+{\em transparent} & The colour to interpret as transparent or null if none \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The byte buffer containing texture data 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em I\+O\+Exception} & Indicates a failure to read the T\+GA \\
+\hline
+\end{DoxyExceptions}
+
+
+Implemented in \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_image_i_o_image_data_adfea90f9552b2fc504f28d0de7712ce1}{org.\+newdawn.\+slick.\+opengl.\+Image\+I\+O\+Image\+Data}}, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_t_g_a_image_data_afeb723edb941a99d15296d28b4404c31}{org.\+newdawn.\+slick.\+opengl.\+T\+G\+A\+Image\+Data}}, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_image_data_a9a005163153012911fd6a209ae5f2613}{org.\+newdawn.\+slick.\+opengl.\+P\+N\+G\+Image\+Data}}, and \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_composite_image_data_a6fa4aa2e8b4b4768415f2a40a7acb8f1}{org.\+newdawn.\+slick.\+opengl.\+Composite\+Image\+Data}}.
+
+\mbox{\Hypertarget{interfaceorg_1_1newdawn_1_1slick_1_1opengl_1_1_loadable_image_data_ae1be205b86c674550235e9f357adadf5}\label{interfaceorg_1_1newdawn_1_1slick_1_1opengl_1_1_loadable_image_data_ae1be205b86c674550235e9f357adadf5}} 
+\index{org\+::newdawn\+::slick\+::opengl\+::\+Loadable\+Image\+Data@{org\+::newdawn\+::slick\+::opengl\+::\+Loadable\+Image\+Data}!load\+Image@{load\+Image}}
+\index{load\+Image@{load\+Image}!org\+::newdawn\+::slick\+::opengl\+::\+Loadable\+Image\+Data@{org\+::newdawn\+::slick\+::opengl\+::\+Loadable\+Image\+Data}}
+\subsubsection{\texorpdfstring{load\+Image()}{loadImage()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily Byte\+Buffer org.\+newdawn.\+slick.\+opengl.\+Loadable\+Image\+Data.\+load\+Image (\begin{DoxyParamCaption}\item[{Input\+Stream}]{fis,  }\item[{boolean}]{flipped,  }\item[{boolean}]{force\+Alpha,  }\item[{int \mbox{[}$\,$\mbox{]}}]{transparent }\end{DoxyParamCaption}) throws I\+O\+Exception}
+
+Load a image from the specified stream
+
+
+\begin{DoxyParams}{Parameters}
+{\em fis} & The stream from which we\textquotesingle{}ll load the T\+GA \\
+\hline
+{\em flipped} & True if we loading in flipped mode (used for cursors) \\
+\hline
+{\em force\+Alpha} & Force the output to have an alpha channel \\
+\hline
+{\em transparent} & The colour to interpret as transparent or null if none \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The byte buffer containing texture data 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em I\+O\+Exception} & Indicates a failure to read the T\+GA \\
+\hline
+\end{DoxyExceptions}
+
+
+Implemented in \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_image_i_o_image_data_acd7d95d98f777ed7abff40dcb07d9d01}{org.\+newdawn.\+slick.\+opengl.\+Image\+I\+O\+Image\+Data}}, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_t_g_a_image_data_a45d077de182a890729f2e9cf9e408520}{org.\+newdawn.\+slick.\+opengl.\+T\+G\+A\+Image\+Data}}, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_image_data_ac6fdfb909f0b3ee35afebc4ea1940637}{org.\+newdawn.\+slick.\+opengl.\+P\+N\+G\+Image\+Data}}, and \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_composite_image_data_abdc1f3d531423e34b3f8a04e4854e5c5}{org.\+newdawn.\+slick.\+opengl.\+Composite\+Image\+Data}}.
+

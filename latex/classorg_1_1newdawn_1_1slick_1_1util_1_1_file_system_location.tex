@@ -1,0 +1,123 @@
+\hypertarget{classorg_1_1newdawn_1_1slick_1_1util_1_1_file_system_location}{}\section{org.\+newdawn.\+slick.\+util.\+File\+System\+Location Class Reference}
+\label{classorg_1_1newdawn_1_1slick_1_1util_1_1_file_system_location}\index{org.\+newdawn.\+slick.\+util.\+File\+System\+Location@{org.\+newdawn.\+slick.\+util.\+File\+System\+Location}}
+Inheritance diagram for org.\+newdawn.\+slick.\+util.\+File\+System\+Location\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classorg_1_1newdawn_1_1slick_1_1util_1_1_file_system_location}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1_file_system_location_aa21c8d2fe37743d92736667a8efc98da}{File\+System\+Location}} (File \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1_file_system_location_a63b136315b940762412adc61596fb6cf}{root}})
+\item 
+U\+RL \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1_file_system_location_ad667c6a3c97a76caf89ffa816904033a}{get\+Resource}} (String ref)
+\item 
+Input\+Stream \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1_file_system_location_a01200401dca18c8a89c2e866abcc48a3}{get\+Resource\+As\+Stream}} (String ref)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+File \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1_file_system_location_a63b136315b940762412adc61596fb6cf}{root}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A resource loading location that searches somewhere on the classpath
+
+\begin{DoxyAuthor}{Author}
+kevin 
+\end{DoxyAuthor}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1util_1_1_file_system_location_aa21c8d2fe37743d92736667a8efc98da}\label{classorg_1_1newdawn_1_1slick_1_1util_1_1_file_system_location_aa21c8d2fe37743d92736667a8efc98da}} 
+\index{org\+::newdawn\+::slick\+::util\+::\+File\+System\+Location@{org\+::newdawn\+::slick\+::util\+::\+File\+System\+Location}!File\+System\+Location@{File\+System\+Location}}
+\index{File\+System\+Location@{File\+System\+Location}!org\+::newdawn\+::slick\+::util\+::\+File\+System\+Location@{org\+::newdawn\+::slick\+::util\+::\+File\+System\+Location}}
+\subsubsection{\texorpdfstring{File\+System\+Location()}{FileSystemLocation()}}
+{\footnotesize\ttfamily org.\+newdawn.\+slick.\+util.\+File\+System\+Location.\+File\+System\+Location (\begin{DoxyParamCaption}\item[{File}]{root }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Create a new resoruce location based on the file system
+
+
+\begin{DoxyParams}{Parameters}
+{\em root} & The root of the file system to search \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+23                                          \{
+24         this.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1_file_system_location_a63b136315b940762412adc61596fb6cf}{root}} = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1_file_system_location_a63b136315b940762412adc61596fb6cf}{root}};
+25     \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1util_1_1_file_system_location_ad667c6a3c97a76caf89ffa816904033a}\label{classorg_1_1newdawn_1_1slick_1_1util_1_1_file_system_location_ad667c6a3c97a76caf89ffa816904033a}} 
+\index{org\+::newdawn\+::slick\+::util\+::\+File\+System\+Location@{org\+::newdawn\+::slick\+::util\+::\+File\+System\+Location}!get\+Resource@{get\+Resource}}
+\index{get\+Resource@{get\+Resource}!org\+::newdawn\+::slick\+::util\+::\+File\+System\+Location@{org\+::newdawn\+::slick\+::util\+::\+File\+System\+Location}}
+\subsubsection{\texorpdfstring{get\+Resource()}{getResource()}}
+{\footnotesize\ttfamily U\+RL org.\+newdawn.\+slick.\+util.\+File\+System\+Location.\+get\+Resource (\begin{DoxyParamCaption}\item[{String}]{ref }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1util_1_1_resource_location_a3f83afd2bf20002625526dc19ddfff96}{Resource\+Location\+::get\+Resource(\+String)}} 
+\end{DoxySeeAlso}
+
+
+Implements \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1util_1_1_resource_location_a3f83afd2bf20002625526dc19ddfff96}{org.\+newdawn.\+slick.\+util.\+Resource\+Location}}.
+
+
+\begin{DoxyCode}
+30                                        \{
+31         \textcolor{keywordflow}{try} \{
+32             File file = \textcolor{keyword}{new} File(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1_file_system_location_a63b136315b940762412adc61596fb6cf}{root}}, ref);
+33             \textcolor{keywordflow}{if} (!file.exists()) \{
+34                 file = \textcolor{keyword}{new} File(ref);
+35             \}
+36             \textcolor{keywordflow}{if} (!file.exists()) \{
+37                 \textcolor{keywordflow}{return} null;
+38             \}
+39             
+40             \textcolor{keywordflow}{return} file.toURI().toURL();
+41         \} \textcolor{keywordflow}{catch} (IOException e) \{
+42             \textcolor{keywordflow}{return} null;
+43         \}
+44     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1util_1_1_file_system_location_a01200401dca18c8a89c2e866abcc48a3}\label{classorg_1_1newdawn_1_1slick_1_1util_1_1_file_system_location_a01200401dca18c8a89c2e866abcc48a3}} 
+\index{org\+::newdawn\+::slick\+::util\+::\+File\+System\+Location@{org\+::newdawn\+::slick\+::util\+::\+File\+System\+Location}!get\+Resource\+As\+Stream@{get\+Resource\+As\+Stream}}
+\index{get\+Resource\+As\+Stream@{get\+Resource\+As\+Stream}!org\+::newdawn\+::slick\+::util\+::\+File\+System\+Location@{org\+::newdawn\+::slick\+::util\+::\+File\+System\+Location}}
+\subsubsection{\texorpdfstring{get\+Resource\+As\+Stream()}{getResourceAsStream()}}
+{\footnotesize\ttfamily Input\+Stream org.\+newdawn.\+slick.\+util.\+File\+System\+Location.\+get\+Resource\+As\+Stream (\begin{DoxyParamCaption}\item[{String}]{ref }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1util_1_1_resource_location_a484bade425ef16b2230d28701b2c5e2f}{Resource\+Location\+::get\+Resource\+As\+Stream(\+String)}} 
+\end{DoxySeeAlso}
+
+
+Implements \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1util_1_1_resource_location_a484bade425ef16b2230d28701b2c5e2f}{org.\+newdawn.\+slick.\+util.\+Resource\+Location}}.
+
+
+\begin{DoxyCode}
+49                                                        \{
+50         \textcolor{keywordflow}{try} \{
+51             File file = \textcolor{keyword}{new} File(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1_file_system_location_a63b136315b940762412adc61596fb6cf}{root}}, ref);
+52             \textcolor{keywordflow}{if} (!file.exists()) \{
+53                 file = \textcolor{keyword}{new} File(ref);
+54             \}
+55             \textcolor{keywordflow}{return} \textcolor{keyword}{new} FileInputStream(file);
+56         \} \textcolor{keywordflow}{catch} (IOException e) \{
+57             \textcolor{keywordflow}{return} null;
+58         \}
+59     \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1util_1_1_file_system_location_a63b136315b940762412adc61596fb6cf}\label{classorg_1_1newdawn_1_1slick_1_1util_1_1_file_system_location_a63b136315b940762412adc61596fb6cf}} 
+\index{org\+::newdawn\+::slick\+::util\+::\+File\+System\+Location@{org\+::newdawn\+::slick\+::util\+::\+File\+System\+Location}!root@{root}}
+\index{root@{root}!org\+::newdawn\+::slick\+::util\+::\+File\+System\+Location@{org\+::newdawn\+::slick\+::util\+::\+File\+System\+Location}}
+\subsubsection{\texorpdfstring{root}{root}}
+{\footnotesize\ttfamily File org.\+newdawn.\+slick.\+util.\+File\+System\+Location.\+root\hspace{0.3cm}{\ttfamily [private]}}
+
+The root of the file system to search 

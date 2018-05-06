@@ -1,0 +1,99 @@
+\hypertarget{classpecl3ignacioriberasemaforos_1_1_monitor}{}\section{pecl3ignacioriberasemaforos.\+Monitor Class Reference}
+\label{classpecl3ignacioriberasemaforos_1_1_monitor}\index{pecl3ignacioriberasemaforos.\+Monitor@{pecl3ignacioriberasemaforos.\+Monitor}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+synchronized void \mbox{\hyperlink{classpecl3ignacioriberasemaforos_1_1_monitor_a20de281e9dcdc5ce8f558e8ecc8f3138}{abrir}} ()
+\item 
+void \mbox{\hyperlink{classpecl3ignacioriberasemaforos_1_1_monitor_a7ff2d70abae6eea63a0eb96ffd1112df}{cerrar}} ()
+\item 
+void \mbox{\hyperlink{classpecl3ignacioriberasemaforos_1_1_monitor_a5bad35ef1f814400404e5e846db6a88f}{comprobar}} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+boolean \mbox{\hyperlink{classpecl3ignacioriberasemaforos_1_1_monitor_a45065f5df094d93eb9f369453e8ce5ec}{abierto}} = true
+\item 
+Semaphore \mbox{\hyperlink{classpecl3ignacioriberasemaforos_1_1_monitor_add0c5e8d57580a613d07b14abac72354}{semaux}} = new Semaphore(1,true)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyAuthor}{Author}
+Ignacio 
+\end{DoxyAuthor}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classpecl3ignacioriberasemaforos_1_1_monitor_a20de281e9dcdc5ce8f558e8ecc8f3138}\label{classpecl3ignacioriberasemaforos_1_1_monitor_a20de281e9dcdc5ce8f558e8ecc8f3138}} 
+\index{pecl3ignacioriberasemaforos\+::\+Monitor@{pecl3ignacioriberasemaforos\+::\+Monitor}!abrir@{abrir}}
+\index{abrir@{abrir}!pecl3ignacioriberasemaforos\+::\+Monitor@{pecl3ignacioriberasemaforos\+::\+Monitor}}
+\subsubsection{\texorpdfstring{abrir()}{abrir()}}
+{\footnotesize\ttfamily synchronized void pecl3ignacioriberasemaforos.\+Monitor.\+abrir (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+22     \{
+23         \textcolor{comment}{/*abierto = true;}
+24 \textcolor{comment}{        notifyAll();*/}
+25         \mbox{\hyperlink{classpecl3ignacioriberasemaforos_1_1_monitor_add0c5e8d57580a613d07b14abac72354}{semaux}}.release();
+26     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classpecl3ignacioriberasemaforos_1_1_monitor_a7ff2d70abae6eea63a0eb96ffd1112df}\label{classpecl3ignacioriberasemaforos_1_1_monitor_a7ff2d70abae6eea63a0eb96ffd1112df}} 
+\index{pecl3ignacioriberasemaforos\+::\+Monitor@{pecl3ignacioriberasemaforos\+::\+Monitor}!cerrar@{cerrar}}
+\index{cerrar@{cerrar}!pecl3ignacioriberasemaforos\+::\+Monitor@{pecl3ignacioriberasemaforos\+::\+Monitor}}
+\subsubsection{\texorpdfstring{cerrar()}{cerrar()}}
+{\footnotesize\ttfamily void pecl3ignacioriberasemaforos.\+Monitor.\+cerrar (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+29     \{
+30         \textcolor{comment}{//abierto = false;}
+31         \textcolor{keywordflow}{try} \{
+32             \mbox{\hyperlink{classpecl3ignacioriberasemaforos_1_1_monitor_add0c5e8d57580a613d07b14abac72354}{semaux}}.acquire();
+33         \} \textcolor{keywordflow}{catch} (InterruptedException ex) \{
+34             Logger.getLogger(Monitor.class.getName()).log(Level.SEVERE, null, ex);
+35         \}
+36     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classpecl3ignacioriberasemaforos_1_1_monitor_a5bad35ef1f814400404e5e846db6a88f}\label{classpecl3ignacioriberasemaforos_1_1_monitor_a5bad35ef1f814400404e5e846db6a88f}} 
+\index{pecl3ignacioriberasemaforos\+::\+Monitor@{pecl3ignacioriberasemaforos\+::\+Monitor}!comprobar@{comprobar}}
+\index{comprobar@{comprobar}!pecl3ignacioriberasemaforos\+::\+Monitor@{pecl3ignacioriberasemaforos\+::\+Monitor}}
+\subsubsection{\texorpdfstring{comprobar()}{comprobar()}}
+{\footnotesize\ttfamily void pecl3ignacioriberasemaforos.\+Monitor.\+comprobar (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+38                             \{
+39         \textcolor{keywordflow}{try} \{
+40             \textcolor{comment}{/*}
+41 \textcolor{comment}{            while (!abierto) \{}
+42 \textcolor{comment}{            try \{}
+43 \textcolor{comment}{            wait();}
+44 \textcolor{comment}{            \} catch (InterruptedException ex) \{}
+45 \textcolor{comment}{            Logger.getLogger(Monitor.class.getName()).log(Level.SEVERE, null, ex);}
+46 \textcolor{comment}{            \}}
+47 \textcolor{comment}{            \}*/}
+48             \mbox{\hyperlink{classpecl3ignacioriberasemaforos_1_1_monitor_add0c5e8d57580a613d07b14abac72354}{semaux}}.acquire();
+49             \mbox{\hyperlink{classpecl3ignacioriberasemaforos_1_1_monitor_add0c5e8d57580a613d07b14abac72354}{semaux}}.release();
+50         \} \textcolor{keywordflow}{catch} (InterruptedException ex) \{
+51             Logger.getLogger(Monitor.class.getName()).log(Level.SEVERE, null, ex);
+52         \}
+53         
+54     \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classpecl3ignacioriberasemaforos_1_1_monitor_a45065f5df094d93eb9f369453e8ce5ec}\label{classpecl3ignacioriberasemaforos_1_1_monitor_a45065f5df094d93eb9f369453e8ce5ec}} 
+\index{pecl3ignacioriberasemaforos\+::\+Monitor@{pecl3ignacioriberasemaforos\+::\+Monitor}!abierto@{abierto}}
+\index{abierto@{abierto}!pecl3ignacioriberasemaforos\+::\+Monitor@{pecl3ignacioriberasemaforos\+::\+Monitor}}
+\subsubsection{\texorpdfstring{abierto}{abierto}}
+{\footnotesize\ttfamily boolean pecl3ignacioriberasemaforos.\+Monitor.\+abierto = true\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classpecl3ignacioriberasemaforos_1_1_monitor_add0c5e8d57580a613d07b14abac72354}\label{classpecl3ignacioriberasemaforos_1_1_monitor_add0c5e8d57580a613d07b14abac72354}} 
+\index{pecl3ignacioriberasemaforos\+::\+Monitor@{pecl3ignacioriberasemaforos\+::\+Monitor}!semaux@{semaux}}
+\index{semaux@{semaux}!pecl3ignacioriberasemaforos\+::\+Monitor@{pecl3ignacioriberasemaforos\+::\+Monitor}}
+\subsubsection{\texorpdfstring{semaux}{semaux}}
+{\footnotesize\ttfamily Semaphore pecl3ignacioriberasemaforos.\+Monitor.\+semaux = new Semaphore(1,true)\hspace{0.3cm}{\ttfamily [private]}}
+

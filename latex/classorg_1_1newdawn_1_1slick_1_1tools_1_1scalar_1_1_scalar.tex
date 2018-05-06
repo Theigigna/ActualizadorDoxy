@@ -1,0 +1,317 @@
+\hypertarget{classorg_1_1newdawn_1_1slick_1_1tools_1_1scalar_1_1_scalar}{}\section{org.\+newdawn.\+slick.\+tools.\+scalar.\+Scalar Class Reference}
+\label{classorg_1_1newdawn_1_1slick_1_1tools_1_1scalar_1_1_scalar}\index{org.\+newdawn.\+slick.\+tools.\+scalar.\+Scalar@{org.\+newdawn.\+slick.\+tools.\+scalar.\+Scalar}}
+Inheritance diagram for org.\+newdawn.\+slick.\+tools.\+scalar.\+Scalar\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classorg_1_1newdawn_1_1slick_1_1tools_1_1scalar_1_1_scalar}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1scalar_1_1_scalar_a9041a9bf0c10b24ed8d96c6acd056019}{Scalar}} ()
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1scalar_1_1_scalar_a52e46006fcc3c6987af1643a97d2d7ef}{load}} ()
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1scalar_1_1_scalar_a68119c1aa5736c2a2f65ffe6f62f6ee9}{save}} ()
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1scalar_1_1_scalar_af7a11c387283a843d0991eeb7f9f7b17}{scale2x}} ()
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1scalar_1_1_scalar_a708bacdbf38e24c992ca8d919b2c8aed}{scale3x}} ()
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1scalar_1_1_scalar_ae0f2111b7ad2a03db31292f6ad5f9502}{quit}} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1scalar_1_1_scalar_a291af21bfb69996922012f2967009677}{main}} (String\mbox{[}$\,$\mbox{]} argv)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+J\+File\+Chooser \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1scalar_1_1_scalar_a36ca61e15f5624af75dfa66a9212e97e}{load\+Chooser}} = new J\+File\+Chooser(\char`\"{}.\char`\"{})
+\item 
+J\+File\+Chooser \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1scalar_1_1_scalar_aaba5299d75aaf1c811ea0a7395ef2afb}{save\+Chooser}} = new J\+File\+Chooser(\char`\"{}.\char`\"{})
+\item 
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1scalar_1_1_image_panel}{Image\+Panel}} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1scalar_1_1_scalar_a660c23cbae7b52f06768db8e8841bc39}{image\+Panel}}
+\item 
+File \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1scalar_1_1_scalar_a4259f6e51797ec01cafec826854c94a4}{last\+Selected}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A simple tool for applying Scale2X and Scale3X for small cartoon style images. The Scale2X and 3X algorithms provide a better scaling for block/cartoon images since they\textquotesingle{}re based on pattern analysis rather than simple pixel scaling and filtering.
+
+\begin{DoxyAuthor}{Author}
+kevin 
+\end{DoxyAuthor}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tools_1_1scalar_1_1_scalar_a9041a9bf0c10b24ed8d96c6acd056019}\label{classorg_1_1newdawn_1_1slick_1_1tools_1_1scalar_1_1_scalar_a9041a9bf0c10b24ed8d96c6acd056019}} 
+\index{org\+::newdawn\+::slick\+::tools\+::scalar\+::\+Scalar@{org\+::newdawn\+::slick\+::tools\+::scalar\+::\+Scalar}!Scalar@{Scalar}}
+\index{Scalar@{Scalar}!org\+::newdawn\+::slick\+::tools\+::scalar\+::\+Scalar@{org\+::newdawn\+::slick\+::tools\+::scalar\+::\+Scalar}}
+\subsubsection{\texorpdfstring{Scalar()}{Scalar()}}
+{\footnotesize\ttfamily org.\+newdawn.\+slick.\+tools.\+scalar.\+Scalar.\+Scalar (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Create the scalar window and tool 
+\begin{DoxyCode}
+43                     \{
+44         super(\textcolor{stringliteral}{"Scalar"});
+45 
+46         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1scalar_1_1_scalar_aaba5299d75aaf1c811ea0a7395ef2afb}{saveChooser}}.addChoosableFileFilter(\textcolor{keyword}{new} FileFilter() \{
+47 
+48             \textcolor{keyword}{public} \textcolor{keywordtype}{boolean} accept(File f) \{
+49                 \textcolor{keywordflow}{if} (f.isDirectory()) \{
+50                     \textcolor{keywordflow}{return} \textcolor{keyword}{true};
+51                 \}
+52                 \textcolor{keywordflow}{if} (f.getName().endsWith(\textcolor{stringliteral}{".jpg"})) \{
+53                     \textcolor{keywordflow}{return} \textcolor{keyword}{true};
+54                 \}
+55                 \textcolor{keywordflow}{if} (f.getName().endsWith(\textcolor{stringliteral}{".gif"})) \{
+56                     \textcolor{keywordflow}{return} \textcolor{keyword}{true};
+57                 \}
+58                 \textcolor{keywordflow}{if} (f.getName().endsWith(\textcolor{stringliteral}{".png"})) \{
+59                     \textcolor{keywordflow}{return} \textcolor{keyword}{true};
+60                 \}
+61                 
+62                 \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+63             \}
+64 
+65             \textcolor{keyword}{public} String getDescription() \{
+66                 \textcolor{keywordflow}{return} \textcolor{stringliteral}{"Image files (*.png, *.jpg, *.gif)"};
+67             \}
+68             
+69         \});
+70         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1scalar_1_1_scalar_a36ca61e15f5624af75dfa66a9212e97e}{loadChooser}}.addChoosableFileFilter(\textcolor{keyword}{new} FileFilter() \{
+71 
+72             \textcolor{keyword}{public} \textcolor{keywordtype}{boolean} accept(File f) \{
+73                 \textcolor{keywordflow}{if} (f.isDirectory()) \{
+74                     \textcolor{keywordflow}{return} \textcolor{keyword}{true};
+75                 \}
+76                 \textcolor{keywordflow}{if} (f.getName().endsWith(\textcolor{stringliteral}{".jpg"})) \{
+77                     \textcolor{keywordflow}{return} \textcolor{keyword}{true};
+78                 \}
+79                 \textcolor{keywordflow}{if} (f.getName().endsWith(\textcolor{stringliteral}{".gif"})) \{
+80                     \textcolor{keywordflow}{return} \textcolor{keyword}{true};
+81                 \}
+82                 \textcolor{keywordflow}{if} (f.getName().endsWith(\textcolor{stringliteral}{".png"})) \{
+83                     \textcolor{keywordflow}{return} \textcolor{keyword}{true};
+84                 \}
+85                 
+86                 \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+87             \}
+88 
+89             \textcolor{keyword}{public} String getDescription() \{
+90                 \textcolor{keywordflow}{return} \textcolor{stringliteral}{"Image files (*.png, *.jpg, *.gif)"};
+91             \}
+92             
+93         \});
+94         
+95         JMenuBar bar = \textcolor{keyword}{new} JMenuBar();
+96         JMenu file = \textcolor{keyword}{new} JMenu(\textcolor{stringliteral}{"File"});
+97         JMenuItem \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1scalar_1_1_scalar_a52e46006fcc3c6987af1643a97d2d7ef}{load}} = \textcolor{keyword}{new} JMenuItem(\textcolor{stringliteral}{"Load Image"});
+98         JMenuItem \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1scalar_1_1_scalar_a68119c1aa5736c2a2f65ffe6f62f6ee9}{save}} = \textcolor{keyword}{new} JMenuItem(\textcolor{stringliteral}{"Save Image"});
+99         JMenuItem \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1scalar_1_1_scalar_af7a11c387283a843d0991eeb7f9f7b17}{scale2x}} = \textcolor{keyword}{new} JMenuItem(\textcolor{stringliteral}{"Apply Scale2X"});
+100         JMenuItem \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1scalar_1_1_scalar_a708bacdbf38e24c992ca8d919b2c8aed}{scale3x}} = \textcolor{keyword}{new} JMenuItem(\textcolor{stringliteral}{"Apply Scale3X"});
+101         JMenuItem \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1scalar_1_1_scalar_ae0f2111b7ad2a03db31292f6ad5f9502}{quit}} = \textcolor{keyword}{new} JMenuItem(\textcolor{stringliteral}{"Exit"});
+102         
+103         file.add(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1scalar_1_1_scalar_a52e46006fcc3c6987af1643a97d2d7ef}{load}});
+104         file.add(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1scalar_1_1_scalar_a68119c1aa5736c2a2f65ffe6f62f6ee9}{save}});
+105         file.addSeparator();
+106         file.add(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1scalar_1_1_scalar_af7a11c387283a843d0991eeb7f9f7b17}{scale2x}});
+107         file.add(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1scalar_1_1_scalar_a708bacdbf38e24c992ca8d919b2c8aed}{scale3x}});
+108         file.addSeparator();
+109         file.add(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1scalar_1_1_scalar_ae0f2111b7ad2a03db31292f6ad5f9502}{quit}});
+110         bar.add(file);
+111         setJMenuBar(bar);
+112         
+113         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1scalar_1_1_scalar_a52e46006fcc3c6987af1643a97d2d7ef}{load}}.addActionListener(\textcolor{keyword}{new} ActionListener() \{
+114             \textcolor{keyword}{public} \textcolor{keywordtype}{void} actionPerformed(ActionEvent e) \{
+115                 \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1scalar_1_1_scalar_a52e46006fcc3c6987af1643a97d2d7ef}{load}}();
+116             \}
+117         \});
+118         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1scalar_1_1_scalar_a68119c1aa5736c2a2f65ffe6f62f6ee9}{save}}.addActionListener(\textcolor{keyword}{new} ActionListener() \{
+119             \textcolor{keyword}{public} \textcolor{keywordtype}{void} actionPerformed(ActionEvent e) \{
+120                 \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1scalar_1_1_scalar_a68119c1aa5736c2a2f65ffe6f62f6ee9}{save}}();
+121             \}
+122         \});
+123         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1scalar_1_1_scalar_af7a11c387283a843d0991eeb7f9f7b17}{scale2x}}.addActionListener(\textcolor{keyword}{new} ActionListener() \{
+124             \textcolor{keyword}{public} \textcolor{keywordtype}{void} actionPerformed(ActionEvent e) \{
+125                 \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1scalar_1_1_scalar_af7a11c387283a843d0991eeb7f9f7b17}{scale2x}}();
+126             \}
+127         \});
+128         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1scalar_1_1_scalar_a708bacdbf38e24c992ca8d919b2c8aed}{scale3x}}.addActionListener(\textcolor{keyword}{new} ActionListener() \{
+129             \textcolor{keyword}{public} \textcolor{keywordtype}{void} actionPerformed(ActionEvent e) \{
+130                 \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1scalar_1_1_scalar_a708bacdbf38e24c992ca8d919b2c8aed}{scale3x}}();
+131             \}
+132         \});
+133         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1scalar_1_1_scalar_ae0f2111b7ad2a03db31292f6ad5f9502}{quit}}.addActionListener(\textcolor{keyword}{new} ActionListener() \{
+134             \textcolor{keyword}{public} \textcolor{keywordtype}{void} actionPerformed(ActionEvent e) \{
+135                 \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1scalar_1_1_scalar_ae0f2111b7ad2a03db31292f6ad5f9502}{quit}}();
+136             \}
+137         \});
+138         
+139         addWindowListener(\textcolor{keyword}{new} WindowAdapter() \{
+140             \textcolor{keyword}{public} \textcolor{keywordtype}{void} windowClosing(WindowEvent e) \{
+141                 System.exit(0);
+142             \}
+143         \});
+144         
+145         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1scalar_1_1_scalar_a660c23cbae7b52f06768db8e8841bc39}{imagePanel}} = \textcolor{keyword}{new} ImagePanel();
+146         setContentPane(\textcolor{keyword}{new} JScrollPane(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1scalar_1_1_scalar_a660c23cbae7b52f06768db8e8841bc39}{imagePanel}}));
+147         
+148         setSize(600,600);
+149         Dimension dims = Toolkit.getDefaultToolkit().getScreenSize();
+150         setLocation((dims.width - getWidth())/2, (dims.height - getHeight()) / 2);
+151         setVisible(\textcolor{keyword}{true});
+152     \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tools_1_1scalar_1_1_scalar_a52e46006fcc3c6987af1643a97d2d7ef}\label{classorg_1_1newdawn_1_1slick_1_1tools_1_1scalar_1_1_scalar_a52e46006fcc3c6987af1643a97d2d7ef}} 
+\index{org\+::newdawn\+::slick\+::tools\+::scalar\+::\+Scalar@{org\+::newdawn\+::slick\+::tools\+::scalar\+::\+Scalar}!load@{load}}
+\index{load@{load}!org\+::newdawn\+::slick\+::tools\+::scalar\+::\+Scalar@{org\+::newdawn\+::slick\+::tools\+::scalar\+::\+Scalar}}
+\subsubsection{\texorpdfstring{load()}{load()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+tools.\+scalar.\+Scalar.\+load (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Load the current image 
+\begin{DoxyCode}
+157                        \{
+158         \textcolor{keywordtype}{int} resp = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1scalar_1_1_scalar_a36ca61e15f5624af75dfa66a9212e97e}{loadChooser}}.showOpenDialog(\textcolor{keyword}{this});
+159         \textcolor{keywordflow}{if} (resp == JFileChooser.APPROVE\_OPTION) \{
+160             \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1scalar_1_1_scalar_a4259f6e51797ec01cafec826854c94a4}{lastSelected}} = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1scalar_1_1_scalar_a36ca61e15f5624af75dfa66a9212e97e}{loadChooser}}.getSelectedFile();
+161             \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1scalar_1_1_scalar_aaba5299d75aaf1c811ea0a7395ef2afb}{saveChooser}}.setCurrentDirectory(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1scalar_1_1_scalar_a36ca61e15f5624af75dfa66a9212e97e}{loadChooser}}.getCurrentDirectory());
+162             \textcolor{keywordflow}{try} \{
+163                 BufferedImage image = ImageIO.read(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1scalar_1_1_scalar_a4259f6e51797ec01cafec826854c94a4}{lastSelected}});
+164                 \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1scalar_1_1_scalar_a660c23cbae7b52f06768db8e8841bc39}{imagePanel}}.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1scalar_1_1_image_panel_a16339485944d8c28fc4c198f5fc21705}{setImage}}(image);
+165             \} \textcolor{keywordflow}{catch} (Exception e) \{
+166                 e.printStackTrace();
+167                 JOptionPane.showMessageDialog(\textcolor{keyword}{this}, \textcolor{stringliteral}{"Unable to load image "}+
+      \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1scalar_1_1_scalar_a4259f6e51797ec01cafec826854c94a4}{lastSelected}}.getName()+\textcolor{stringliteral}{" "});
+168             \}
+169         \}
+170     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tools_1_1scalar_1_1_scalar_a291af21bfb69996922012f2967009677}\label{classorg_1_1newdawn_1_1slick_1_1tools_1_1scalar_1_1_scalar_a291af21bfb69996922012f2967009677}} 
+\index{org\+::newdawn\+::slick\+::tools\+::scalar\+::\+Scalar@{org\+::newdawn\+::slick\+::tools\+::scalar\+::\+Scalar}!main@{main}}
+\index{main@{main}!org\+::newdawn\+::slick\+::tools\+::scalar\+::\+Scalar@{org\+::newdawn\+::slick\+::tools\+::scalar\+::\+Scalar}}
+\subsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily static void org.\+newdawn.\+slick.\+tools.\+scalar.\+Scalar.\+main (\begin{DoxyParamCaption}\item[{String \mbox{[}$\,$\mbox{]}}]{argv }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Entry point to the scalar tool
+
+
+\begin{DoxyParams}{Parameters}
+{\em argv} & The arguments passed into the application \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+229                                            \{
+230         \textcolor{keyword}{new} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1scalar_1_1_scalar_a9041a9bf0c10b24ed8d96c6acd056019}{Scalar}}();
+231     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tools_1_1scalar_1_1_scalar_ae0f2111b7ad2a03db31292f6ad5f9502}\label{classorg_1_1newdawn_1_1slick_1_1tools_1_1scalar_1_1_scalar_ae0f2111b7ad2a03db31292f6ad5f9502}} 
+\index{org\+::newdawn\+::slick\+::tools\+::scalar\+::\+Scalar@{org\+::newdawn\+::slick\+::tools\+::scalar\+::\+Scalar}!quit@{quit}}
+\index{quit@{quit}!org\+::newdawn\+::slick\+::tools\+::scalar\+::\+Scalar@{org\+::newdawn\+::slick\+::tools\+::scalar\+::\+Scalar}}
+\subsubsection{\texorpdfstring{quit()}{quit()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+tools.\+scalar.\+Scalar.\+quit (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Quit the tool 
+\begin{DoxyCode}
+220                        \{
+221         System.exit(0);
+222     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tools_1_1scalar_1_1_scalar_a68119c1aa5736c2a2f65ffe6f62f6ee9}\label{classorg_1_1newdawn_1_1slick_1_1tools_1_1scalar_1_1_scalar_a68119c1aa5736c2a2f65ffe6f62f6ee9}} 
+\index{org\+::newdawn\+::slick\+::tools\+::scalar\+::\+Scalar@{org\+::newdawn\+::slick\+::tools\+::scalar\+::\+Scalar}!save@{save}}
+\index{save@{save}!org\+::newdawn\+::slick\+::tools\+::scalar\+::\+Scalar@{org\+::newdawn\+::slick\+::tools\+::scalar\+::\+Scalar}}
+\subsubsection{\texorpdfstring{save()}{save()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+tools.\+scalar.\+Scalar.\+save (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Save the current image 
+\begin{DoxyCode}
+175                        \{
+176         \textcolor{keywordtype}{int} resp = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1scalar_1_1_scalar_aaba5299d75aaf1c811ea0a7395ef2afb}{saveChooser}}.showSaveDialog(\textcolor{keyword}{this});
+177         \textcolor{keywordflow}{if} (resp == JFileChooser.APPROVE\_OPTION) \{
+178             File file = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1scalar_1_1_scalar_aaba5299d75aaf1c811ea0a7395ef2afb}{saveChooser}}.getSelectedFile();
+179             String type = null;
+180             \textcolor{keywordflow}{if} (file.getName().endsWith(\textcolor{stringliteral}{".png"})) \{
+181                 type = \textcolor{stringliteral}{"PNG"};
+182             \}
+183             \textcolor{keywordflow}{if} (file.getName().endsWith(\textcolor{stringliteral}{".gif"})) \{
+184                 type = \textcolor{stringliteral}{"GIF"};
+185             \}
+186             \textcolor{keywordflow}{if} (file.getName().endsWith(\textcolor{stringliteral}{".jpg"})) \{
+187                 type = \textcolor{stringliteral}{"JPG"};
+188             \}
+189             \textcolor{keywordflow}{if} (type == null) \{
+190                 file = \textcolor{keyword}{new} File(file.getAbsolutePath()+\textcolor{stringliteral}{".png"});
+191                 type = \textcolor{stringliteral}{"PNG"};
+192             \}
+193             
+194             \textcolor{keywordflow}{try} \{
+195                 ImageIO.write(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1scalar_1_1_scalar_a660c23cbae7b52f06768db8e8841bc39}{imagePanel}}.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1scalar_1_1_image_panel_af4f896a1413288f465a7651d4c562c3c}{getImage}}(), type, file);
+196             \} \textcolor{keywordflow}{catch} (Exception e) \{
+197                 e.printStackTrace();
+198                 JOptionPane.showMessageDialog(\textcolor{keyword}{this}, \textcolor{stringliteral}{"Unable to save file "}+file.getName());
+199             \}
+200         \}
+201     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tools_1_1scalar_1_1_scalar_af7a11c387283a843d0991eeb7f9f7b17}\label{classorg_1_1newdawn_1_1slick_1_1tools_1_1scalar_1_1_scalar_af7a11c387283a843d0991eeb7f9f7b17}} 
+\index{org\+::newdawn\+::slick\+::tools\+::scalar\+::\+Scalar@{org\+::newdawn\+::slick\+::tools\+::scalar\+::\+Scalar}!scale2x@{scale2x}}
+\index{scale2x@{scale2x}!org\+::newdawn\+::slick\+::tools\+::scalar\+::\+Scalar@{org\+::newdawn\+::slick\+::tools\+::scalar\+::\+Scalar}}
+\subsubsection{\texorpdfstring{scale2x()}{scale2x()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+tools.\+scalar.\+Scalar.\+scale2x (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Scale the current image using scale 2X 
+\begin{DoxyCode}
+206                           \{
+207         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1scalar_1_1_scalar_a660c23cbae7b52f06768db8e8841bc39}{imagePanel}}.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1scalar_1_1_image_panel_a16339485944d8c28fc4c198f5fc21705}{setImage}}(\textcolor{keyword}{new} ImageScale2x(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1scalar_1_1_scalar_a660c23cbae7b52f06768db8e8841bc39}{imagePanel}}.
+      \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1scalar_1_1_image_panel_af4f896a1413288f465a7651d4c562c3c}{getImage}}()).getScaledImage());
+208     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tools_1_1scalar_1_1_scalar_a708bacdbf38e24c992ca8d919b2c8aed}\label{classorg_1_1newdawn_1_1slick_1_1tools_1_1scalar_1_1_scalar_a708bacdbf38e24c992ca8d919b2c8aed}} 
+\index{org\+::newdawn\+::slick\+::tools\+::scalar\+::\+Scalar@{org\+::newdawn\+::slick\+::tools\+::scalar\+::\+Scalar}!scale3x@{scale3x}}
+\index{scale3x@{scale3x}!org\+::newdawn\+::slick\+::tools\+::scalar\+::\+Scalar@{org\+::newdawn\+::slick\+::tools\+::scalar\+::\+Scalar}}
+\subsubsection{\texorpdfstring{scale3x()}{scale3x()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+tools.\+scalar.\+Scalar.\+scale3x (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Scale the current image using scale 3X 
+\begin{DoxyCode}
+213                           \{
+214         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1scalar_1_1_scalar_a660c23cbae7b52f06768db8e8841bc39}{imagePanel}}.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1scalar_1_1_image_panel_a16339485944d8c28fc4c198f5fc21705}{setImage}}(\textcolor{keyword}{new} ImageScale3x(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1scalar_1_1_scalar_a660c23cbae7b52f06768db8e8841bc39}{imagePanel}}.
+      \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1scalar_1_1_image_panel_af4f896a1413288f465a7651d4c562c3c}{getImage}}()).getScaledImage());
+215     \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tools_1_1scalar_1_1_scalar_a660c23cbae7b52f06768db8e8841bc39}\label{classorg_1_1newdawn_1_1slick_1_1tools_1_1scalar_1_1_scalar_a660c23cbae7b52f06768db8e8841bc39}} 
+\index{org\+::newdawn\+::slick\+::tools\+::scalar\+::\+Scalar@{org\+::newdawn\+::slick\+::tools\+::scalar\+::\+Scalar}!image\+Panel@{image\+Panel}}
+\index{image\+Panel@{image\+Panel}!org\+::newdawn\+::slick\+::tools\+::scalar\+::\+Scalar@{org\+::newdawn\+::slick\+::tools\+::scalar\+::\+Scalar}}
+\subsubsection{\texorpdfstring{image\+Panel}{imagePanel}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1scalar_1_1_image_panel}{Image\+Panel}} org.\+newdawn.\+slick.\+tools.\+scalar.\+Scalar.\+image\+Panel\hspace{0.3cm}{\ttfamily [private]}}
+
+The panel displaying the current image \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tools_1_1scalar_1_1_scalar_a4259f6e51797ec01cafec826854c94a4}\label{classorg_1_1newdawn_1_1slick_1_1tools_1_1scalar_1_1_scalar_a4259f6e51797ec01cafec826854c94a4}} 
+\index{org\+::newdawn\+::slick\+::tools\+::scalar\+::\+Scalar@{org\+::newdawn\+::slick\+::tools\+::scalar\+::\+Scalar}!last\+Selected@{last\+Selected}}
+\index{last\+Selected@{last\+Selected}!org\+::newdawn\+::slick\+::tools\+::scalar\+::\+Scalar@{org\+::newdawn\+::slick\+::tools\+::scalar\+::\+Scalar}}
+\subsubsection{\texorpdfstring{last\+Selected}{lastSelected}}
+{\footnotesize\ttfamily File org.\+newdawn.\+slick.\+tools.\+scalar.\+Scalar.\+last\+Selected\hspace{0.3cm}{\ttfamily [private]}}
+
+The last selectd file \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tools_1_1scalar_1_1_scalar_a36ca61e15f5624af75dfa66a9212e97e}\label{classorg_1_1newdawn_1_1slick_1_1tools_1_1scalar_1_1_scalar_a36ca61e15f5624af75dfa66a9212e97e}} 
+\index{org\+::newdawn\+::slick\+::tools\+::scalar\+::\+Scalar@{org\+::newdawn\+::slick\+::tools\+::scalar\+::\+Scalar}!load\+Chooser@{load\+Chooser}}
+\index{load\+Chooser@{load\+Chooser}!org\+::newdawn\+::slick\+::tools\+::scalar\+::\+Scalar@{org\+::newdawn\+::slick\+::tools\+::scalar\+::\+Scalar}}
+\subsubsection{\texorpdfstring{load\+Chooser}{loadChooser}}
+{\footnotesize\ttfamily J\+File\+Chooser org.\+newdawn.\+slick.\+tools.\+scalar.\+Scalar.\+load\+Chooser = new J\+File\+Chooser(\char`\"{}.\char`\"{})\hspace{0.3cm}{\ttfamily [private]}}
+
+The chooser used to load image \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tools_1_1scalar_1_1_scalar_aaba5299d75aaf1c811ea0a7395ef2afb}\label{classorg_1_1newdawn_1_1slick_1_1tools_1_1scalar_1_1_scalar_aaba5299d75aaf1c811ea0a7395ef2afb}} 
+\index{org\+::newdawn\+::slick\+::tools\+::scalar\+::\+Scalar@{org\+::newdawn\+::slick\+::tools\+::scalar\+::\+Scalar}!save\+Chooser@{save\+Chooser}}
+\index{save\+Chooser@{save\+Chooser}!org\+::newdawn\+::slick\+::tools\+::scalar\+::\+Scalar@{org\+::newdawn\+::slick\+::tools\+::scalar\+::\+Scalar}}
+\subsubsection{\texorpdfstring{save\+Chooser}{saveChooser}}
+{\footnotesize\ttfamily J\+File\+Chooser org.\+newdawn.\+slick.\+tools.\+scalar.\+Scalar.\+save\+Chooser = new J\+File\+Chooser(\char`\"{}.\char`\"{})\hspace{0.3cm}{\ttfamily [private]}}
+
+The chooser used to saveimage 

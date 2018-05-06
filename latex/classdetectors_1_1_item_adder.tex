@@ -1,0 +1,147 @@
+\hypertarget{classdetectors_1_1_item_adder}{}\section{detectors.\+Item\+Adder Class Reference}
+\label{classdetectors_1_1_item_adder}\index{detectors.\+Item\+Adder@{detectors.\+Item\+Adder}}
+Inheritance diagram for detectors.\+Item\+Adder\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{classdetectors_1_1_item_adder}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdetectors_1_1_item_adder_af4b3e0a665b216da9f79393848081355}{Item\+Adder}} (float \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_shape_a3e985bfff386c15a4efaad03d8ad60d3}{x}}, float \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_shape_a9f934baded6a1b65ebb69e7e5f80ea00}{y}}, float \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_rectangle_a967e1823f62daf45abb142779d1be62d}{width}}, float \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_rectangle_a3bd010fdce636fc11ed0e0ad4d4b4a0a}{height}})
+\item 
+\mbox{\hyperlink{classdetectors_1_1_item_adder_a8a6ffb3f3af90b2c88fd613781be483d}{Item\+Adder}} (int \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_shape_a3e985bfff386c15a4efaad03d8ad60d3}{x}}, int \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_shape_a9f934baded6a1b65ebb69e7e5f80ea00}{y}}, int \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_rectangle_a967e1823f62daf45abb142779d1be62d}{width}}, int \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_rectangle_a3bd010fdce636fc11ed0e0ad4d4b4a0a}{height}}, int hp, int sp, int dp, int potion\+Level, int weapon\+Level, boolean sword)
+\item 
+void \mbox{\hyperlink{classdetectors_1_1_item_adder_a434a5f13dfd6987f9a55f9ccb7cf0d68}{object\+Over}} (Object obj)
+\item 
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_shape}{Shape}} \mbox{\hyperlink{classdetectors_1_1_item_adder_ae42202ce2878233f85ab4a7b2d446140}{get\+Area}} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classitems_1_1_weapon_item}{Weapon\+Item}} \mbox{\hyperlink{classdetectors_1_1_item_adder_ac322ec31bdcfdcc3039e8d0ecc8d530f}{weapon\+Item}}
+\item 
+Array\+List$<$ \mbox{\hyperlink{classitems_1_1_potion}{Potion}} $>$ \mbox{\hyperlink{classdetectors_1_1_item_adder_a26e510502039e2245428cf040fafbd9c}{potions}}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classdetectors_1_1_item_adder_af4b3e0a665b216da9f79393848081355}\label{classdetectors_1_1_item_adder_af4b3e0a665b216da9f79393848081355}} 
+\index{detectors\+::\+Item\+Adder@{detectors\+::\+Item\+Adder}!Item\+Adder@{Item\+Adder}}
+\index{Item\+Adder@{Item\+Adder}!detectors\+::\+Item\+Adder@{detectors\+::\+Item\+Adder}}
+\subsubsection{\texorpdfstring{Item\+Adder()}{ItemAdder()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily detectors.\+Item\+Adder.\+Item\+Adder (\begin{DoxyParamCaption}\item[{float}]{x,  }\item[{float}]{y,  }\item[{float}]{width,  }\item[{float}]{height }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+24                                                                   \{
+25         super(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_shape_a3e985bfff386c15a4efaad03d8ad60d3}{x}}, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_shape_a9f934baded6a1b65ebb69e7e5f80ea00}{y}}, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_rectangle_a967e1823f62daf45abb142779d1be62d}{width}}, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_rectangle_a3bd010fdce636fc11ed0e0ad4d4b4a0a}{height}});
+26         \mbox{\hyperlink{classdetectors_1_1_item_adder_a26e510502039e2245428cf040fafbd9c}{potions}} = \textcolor{keyword}{new} ArrayList();
+27     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classdetectors_1_1_item_adder_a8a6ffb3f3af90b2c88fd613781be483d}\label{classdetectors_1_1_item_adder_a8a6ffb3f3af90b2c88fd613781be483d}} 
+\index{detectors\+::\+Item\+Adder@{detectors\+::\+Item\+Adder}!Item\+Adder@{Item\+Adder}}
+\index{Item\+Adder@{Item\+Adder}!detectors\+::\+Item\+Adder@{detectors\+::\+Item\+Adder}}
+\subsubsection{\texorpdfstring{Item\+Adder()}{ItemAdder()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily detectors.\+Item\+Adder.\+Item\+Adder (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y,  }\item[{int}]{width,  }\item[{int}]{height,  }\item[{int}]{hp,  }\item[{int}]{sp,  }\item[{int}]{dp,  }\item[{int}]{potion\+Level,  }\item[{int}]{weapon\+Level,  }\item[{boolean}]{sword }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+29                                                                                                            
+                              \{
+30         super(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_shape_a3e985bfff386c15a4efaad03d8ad60d3}{x}}, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_shape_a9f934baded6a1b65ebb69e7e5f80ea00}{y}}, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_rectangle_a967e1823f62daf45abb142779d1be62d}{width}}, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_rectangle_a3bd010fdce636fc11ed0e0ad4d4b4a0a}{height}});
+31         System.out.println(\textcolor{stringliteral}{"ItemAdder"});
+32         \textcolor{keywordtype}{int} total = hp + dp + sp;
+33         \mbox{\hyperlink{classdetectors_1_1_item_adder_a26e510502039e2245428cf040fafbd9c}{potions}} = \textcolor{keyword}{new} ArrayList();
+34         \textcolor{keywordflow}{try} \{
+35             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < hp; i++) \{
+36                 \mbox{\hyperlink{classdetectors_1_1_item_adder_a26e510502039e2245428cf040fafbd9c}{potions}}.add(\textcolor{keyword}{new} \mbox{\hyperlink{classitems_1_1potions_1_1_health_potion}{HealthPotion}}(potionLevel));
+37             \}
+38             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < dp; i++) \{
+39                 \mbox{\hyperlink{classdetectors_1_1_item_adder_a26e510502039e2245428cf040fafbd9c}{potions}}.add(\textcolor{keyword}{new} \mbox{\hyperlink{classitems_1_1potions_1_1_damage_potion}{DamagePotion}}(potionLevel));
+40             \}
+41             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < sp; i++) \{
+42                 \mbox{\hyperlink{classdetectors_1_1_item_adder_a26e510502039e2245428cf040fafbd9c}{potions}}.add(\textcolor{keyword}{new} \mbox{\hyperlink{classitems_1_1potions_1_1_speed_potion}{SpeedPotion}}(potionLevel));
+43             \}
+44             \textcolor{keywordflow}{if} (weaponLevel > 0) \{
+45                 \textcolor{keywordflow}{if} (sword) \{
+46                     \mbox{\hyperlink{classdetectors_1_1_item_adder_ac322ec31bdcfdcc3039e8d0ecc8d530f}{weaponItem}} = \mbox{\hyperlink{classitems_1_1_item_factory}{ItemFactory}}.\mbox{\hyperlink{classitems_1_1_item_factory_abb755482bc46d97e59fa015d2a87a630}{newSwordItem}}(
+      \mbox{\hyperlink{classentities_1_1_player}{Player}}.class,weaponLevel);
+47                 \} \textcolor{keywordflow}{else} \{
+48                     \mbox{\hyperlink{classdetectors_1_1_item_adder_ac322ec31bdcfdcc3039e8d0ecc8d530f}{weaponItem}} = \mbox{\hyperlink{classitems_1_1_item_factory}{ItemFactory}}.\mbox{\hyperlink{classitems_1_1_item_factory_a1cdf8d06be10362a07e285cdd0765a2d}{newBowItem}}(
+      \mbox{\hyperlink{classentities_1_1_player}{Player}}.class, weaponLevel);
+49                 \}
+50             \}
+51 
+52         \} \textcolor{keywordflow}{catch} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_slick_exception}{SlickException}} ex) \{
+53             Logger.getLogger(\mbox{\hyperlink{classdetectors_1_1_item_adder_af4b3e0a665b216da9f79393848081355}{ItemAdder}}.class.getName()).log(Level.SEVERE, null, ex);
+54         \}
+55     \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classdetectors_1_1_item_adder_ae42202ce2878233f85ab4a7b2d446140}\label{classdetectors_1_1_item_adder_ae42202ce2878233f85ab4a7b2d446140}} 
+\index{detectors\+::\+Item\+Adder@{detectors\+::\+Item\+Adder}!get\+Area@{get\+Area}}
+\index{get\+Area@{get\+Area}!detectors\+::\+Item\+Adder@{detectors\+::\+Item\+Adder}}
+\subsubsection{\texorpdfstring{get\+Area()}{getArea()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_shape}{Shape}} detectors.\+Item\+Adder.\+get\+Area (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Implements \mbox{\hyperlink{interfacedetectors_1_1_detector_a0b2ecb13c6db0ff6a02e57c193bcf8b2}{detectors.\+Detector}}.
+
+
+\begin{DoxyCode}
+78                            \{
+79         \textcolor{keywordflow}{return} \textcolor{keyword}{this};
+80     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classdetectors_1_1_item_adder_a434a5f13dfd6987f9a55f9ccb7cf0d68}\label{classdetectors_1_1_item_adder_a434a5f13dfd6987f9a55f9ccb7cf0d68}} 
+\index{detectors\+::\+Item\+Adder@{detectors\+::\+Item\+Adder}!object\+Over@{object\+Over}}
+\index{object\+Over@{object\+Over}!detectors\+::\+Item\+Adder@{detectors\+::\+Item\+Adder}}
+\subsubsection{\texorpdfstring{object\+Over()}{objectOver()}}
+{\footnotesize\ttfamily void detectors.\+Item\+Adder.\+object\+Over (\begin{DoxyParamCaption}\item[{Object}]{obj }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Implements \mbox{\hyperlink{interfacedetectors_1_1_detector_ab35eeb78e8216f8100d4651993668d44}{detectors.\+Detector}}.
+
+
+\begin{DoxyCode}
+58                                        \{
+59         \textcolor{keywordflow}{if} (obj instanceof \mbox{\hyperlink{classentities_1_1_player}{Player}}) \{
+60             \textcolor{keywordflow}{if} (\mbox{\hyperlink{classdetectors_1_1_item_adder_ac322ec31bdcfdcc3039e8d0ecc8d530f}{weaponItem}} != null) \{
+61                 ((\mbox{\hyperlink{classentities_1_1_player}{Player}}) obj).getInventary().setWeaponAux(\mbox{\hyperlink{classdetectors_1_1_item_adder_ac322ec31bdcfdcc3039e8d0ecc8d530f}{weaponItem}});
+62                 System.out.println(\textcolor{stringliteral}{"Añadido arma"});
+63                 \mbox{\hyperlink{classdetectors_1_1_item_adder_ac322ec31bdcfdcc3039e8d0ecc8d530f}{weaponItem}} = null;
+64             \}
+65             \textcolor{keywordflow}{if} (\mbox{\hyperlink{classdetectors_1_1_item_adder_a26e510502039e2245428cf040fafbd9c}{potions}} != null) \{
+66                 \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < \mbox{\hyperlink{classdetectors_1_1_item_adder_a26e510502039e2245428cf040fafbd9c}{potions}}.size(); i++) \{
+67                     \textcolor{keywordflow}{if} (((\mbox{\hyperlink{classentities_1_1_player}{Player}}) obj).getInventary().addPotion(\mbox{\hyperlink{classdetectors_1_1_item_adder_a26e510502039e2245428cf040fafbd9c}{potions}}.get(i))) \{
+68                         System.out.println(\textcolor{stringliteral}{"Añadido poción"});
+69                         \mbox{\hyperlink{classdetectors_1_1_item_adder_a26e510502039e2245428cf040fafbd9c}{potions}}.remove(i);
+70                     \}
+71                 \}
+72             \}
+73         \}
+74 
+75     \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classdetectors_1_1_item_adder_a26e510502039e2245428cf040fafbd9c}\label{classdetectors_1_1_item_adder_a26e510502039e2245428cf040fafbd9c}} 
+\index{detectors\+::\+Item\+Adder@{detectors\+::\+Item\+Adder}!potions@{potions}}
+\index{potions@{potions}!detectors\+::\+Item\+Adder@{detectors\+::\+Item\+Adder}}
+\subsubsection{\texorpdfstring{potions}{potions}}
+{\footnotesize\ttfamily Array\+List$<$\mbox{\hyperlink{classitems_1_1_potion}{Potion}}$>$ detectors.\+Item\+Adder.\+potions\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classdetectors_1_1_item_adder_ac322ec31bdcfdcc3039e8d0ecc8d530f}\label{classdetectors_1_1_item_adder_ac322ec31bdcfdcc3039e8d0ecc8d530f}} 
+\index{detectors\+::\+Item\+Adder@{detectors\+::\+Item\+Adder}!weapon\+Item@{weapon\+Item}}
+\index{weapon\+Item@{weapon\+Item}!detectors\+::\+Item\+Adder@{detectors\+::\+Item\+Adder}}
+\subsubsection{\texorpdfstring{weapon\+Item}{weaponItem}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classitems_1_1_weapon_item}{Weapon\+Item}} detectors.\+Item\+Adder.\+weapon\+Item\hspace{0.3cm}{\ttfamily [private]}}
+

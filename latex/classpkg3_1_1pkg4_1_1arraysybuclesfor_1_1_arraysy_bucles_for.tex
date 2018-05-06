@@ -1,0 +1,57 @@
+\hypertarget{classpkg3_1_1pkg4_1_1arraysybuclesfor_1_1_arraysy_bucles_for}{}\section{pkg3.\+pkg4.\+arraysybuclesfor.\+Arraysy\+Bucles\+For Class Reference}
+\label{classpkg3_1_1pkg4_1_1arraysybuclesfor_1_1_arraysy_bucles_for}\index{pkg3.\+pkg4.\+arraysybuclesfor.\+Arraysy\+Bucles\+For@{pkg3.\+pkg4.\+arraysybuclesfor.\+Arraysy\+Bucles\+For}}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{classpkg3_1_1pkg4_1_1arraysybuclesfor_1_1_arraysy_bucles_for_a02220e5bf40cc135b53e2432bad5f3a4}{main}} (String\mbox{[}$\,$\mbox{]} args)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyAuthor}{Author}
+Jorgito 
+\end{DoxyAuthor}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classpkg3_1_1pkg4_1_1arraysybuclesfor_1_1_arraysy_bucles_for_a02220e5bf40cc135b53e2432bad5f3a4}\label{classpkg3_1_1pkg4_1_1arraysybuclesfor_1_1_arraysy_bucles_for_a02220e5bf40cc135b53e2432bad5f3a4}} 
+\index{pkg3\+::pkg4\+::arraysybuclesfor\+::\+Arraysy\+Bucles\+For@{pkg3\+::pkg4\+::arraysybuclesfor\+::\+Arraysy\+Bucles\+For}!main@{main}}
+\index{main@{main}!pkg3\+::pkg4\+::arraysybuclesfor\+::\+Arraysy\+Bucles\+For@{pkg3\+::pkg4\+::arraysybuclesfor\+::\+Arraysy\+Bucles\+For}}
+\subsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily static void pkg3.\+pkg4.\+arraysybuclesfor.\+Arraysy\+Bucles\+For.\+main (\begin{DoxyParamCaption}\item[{String \mbox{[}$\,$\mbox{]}}]{args }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em args} & the command line arguments \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+17                                            \{
+18         \textcolor{keywordtype}{int} arrayint[] = \textcolor{keyword}{new} \textcolor{keywordtype}{int}[3];
+19         \textcolor{keywordtype}{char} arraychar[] = \{\textcolor{charliteral}{'a'}, \textcolor{charliteral}{'b'}, \textcolor{charliteral}{'c'}\};
+20  
+21         \textcolor{comment}{//rellenamos el array de enteros}
+22         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < arrayint.length; i++) \{
+23             arrayint[i] = i;
+24         \}
+25         \textcolor{comment}{//imprimimos su valor}
+26         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < arrayint.length; i++) \{
+27             System.out.println(\textcolor{stringliteral}{"arrayint["} + i + \textcolor{stringliteral}{"]: "} + arrayint[i]);
+28         \}
+29         \textcolor{comment}{//incrementamos en 1 cada valor}
+30         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < arrayint.length; i++) \{
+31             arrayint[i] += 1;
+32             System.out.println(\textcolor{stringliteral}{"arrayint["} + i + \textcolor{stringliteral}{"]: "} + arrayint[i]);
+33         \}
+34         \textcolor{comment}{//incrementamos en 1 cada letra}
+35         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < arraychar.length; i++) \{
+36             arraychar[i] += 1;
+37         \}
+38         \textcolor{comment}{//imprimimos su valor}
+39         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < arraychar.length; i++) \{
+40             System.out.println(\textcolor{stringliteral}{"arraychar["} + i + \textcolor{stringliteral}{"]: "} + arraychar[i]);
+41         \textcolor{comment}{// TODO code application logic here}
+42         \}
+43     \}
+\end{DoxyCode}

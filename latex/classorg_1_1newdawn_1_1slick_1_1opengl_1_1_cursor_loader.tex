@@ -1,0 +1,309 @@
+\hypertarget{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_cursor_loader}{}\section{org.\+newdawn.\+slick.\+opengl.\+Cursor\+Loader Class Reference}
+\label{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_cursor_loader}\index{org.\+newdawn.\+slick.\+opengl.\+Cursor\+Loader@{org.\+newdawn.\+slick.\+opengl.\+Cursor\+Loader}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+Cursor \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_cursor_loader_ac4f0e812a577dac3ec62798e502a537f}{get\+Cursor}} (String ref, int x, int y)  throws I\+O\+Exception, L\+W\+J\+G\+L\+Exception 
+\item 
+Cursor \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_cursor_loader_a12f03f9c48a6ce9d08e8fb7e0dbb0e44}{get\+Cursor}} (Byte\+Buffer buf, int x, int y, int width, int height)  throws I\+O\+Exception, L\+W\+J\+G\+L\+Exception 
+\item 
+Cursor \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_cursor_loader_af11a55cc66ccb52ecb4f9ded039852d6}{get\+Cursor}} (\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1opengl_1_1_image_data}{Image\+Data}} image\+Data, int x, int y)  throws I\+O\+Exception, L\+W\+J\+G\+L\+Exception 
+\item 
+Cursor \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_cursor_loader_af5c88d9adc8a074148976143c1e6ca4f}{get\+Animated\+Cursor}} (String ref, int x, int y, int width, int height, int\mbox{[}$\,$\mbox{]} cursor\+Delays)  throws I\+O\+Exception, L\+W\+J\+G\+L\+Exception 
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_cursor_loader}{Cursor\+Loader}} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_cursor_loader_acbc2feefd76526fce430c5e935831f7e}{get}} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_cursor_loader_a9393afc9bc9126a7e07ee1754f56f3c4}{Cursor\+Loader}} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_cursor_loader}{Cursor\+Loader}} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_cursor_loader_a0550bb212ff0bdb84ff32b244360c40e}{single}} = new \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_cursor_loader}{Cursor\+Loader}}()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A utility to load cursors (thanks go to Kappa for the animated cursor loader)
+
+\begin{DoxyAuthor}{Author}
+Kevin Glass 
+
+Kappa-\/\+One 
+\end{DoxyAuthor}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_cursor_loader_a9393afc9bc9126a7e07ee1754f56f3c4}\label{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_cursor_loader_a9393afc9bc9126a7e07ee1754f56f3c4}} 
+\index{org\+::newdawn\+::slick\+::opengl\+::\+Cursor\+Loader@{org\+::newdawn\+::slick\+::opengl\+::\+Cursor\+Loader}!Cursor\+Loader@{Cursor\+Loader}}
+\index{Cursor\+Loader@{Cursor\+Loader}!org\+::newdawn\+::slick\+::opengl\+::\+Cursor\+Loader@{org\+::newdawn\+::slick\+::opengl\+::\+Cursor\+Loader}}
+\subsubsection{\texorpdfstring{Cursor\+Loader()}{CursorLoader()}}
+{\footnotesize\ttfamily org.\+newdawn.\+slick.\+opengl.\+Cursor\+Loader.\+Cursor\+Loader (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+Create a new cursor loader 
+\begin{DoxyCode}
+36                            \{
+37     \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_cursor_loader_acbc2feefd76526fce430c5e935831f7e}\label{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_cursor_loader_acbc2feefd76526fce430c5e935831f7e}} 
+\index{org\+::newdawn\+::slick\+::opengl\+::\+Cursor\+Loader@{org\+::newdawn\+::slick\+::opengl\+::\+Cursor\+Loader}!get@{get}}
+\index{get@{get}!org\+::newdawn\+::slick\+::opengl\+::\+Cursor\+Loader@{org\+::newdawn\+::slick\+::opengl\+::\+Cursor\+Loader}}
+\subsubsection{\texorpdfstring{get()}{get()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_cursor_loader}{Cursor\+Loader}} org.\+newdawn.\+slick.\+opengl.\+Cursor\+Loader.\+get (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Retrieve the single instance of this loader -\/ convinient huh?
+
+\begin{DoxyReturn}{Returns}
+The single instance of the cursor loader 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+29                                      \{
+30         \textcolor{keywordflow}{return} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_cursor_loader_a0550bb212ff0bdb84ff32b244360c40e}{single}};
+31     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_cursor_loader_af5c88d9adc8a074148976143c1e6ca4f}\label{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_cursor_loader_af5c88d9adc8a074148976143c1e6ca4f}} 
+\index{org\+::newdawn\+::slick\+::opengl\+::\+Cursor\+Loader@{org\+::newdawn\+::slick\+::opengl\+::\+Cursor\+Loader}!get\+Animated\+Cursor@{get\+Animated\+Cursor}}
+\index{get\+Animated\+Cursor@{get\+Animated\+Cursor}!org\+::newdawn\+::slick\+::opengl\+::\+Cursor\+Loader@{org\+::newdawn\+::slick\+::opengl\+::\+Cursor\+Loader}}
+\subsubsection{\texorpdfstring{get\+Animated\+Cursor()}{getAnimatedCursor()}}
+{\footnotesize\ttfamily Cursor org.\+newdawn.\+slick.\+opengl.\+Cursor\+Loader.\+get\+Animated\+Cursor (\begin{DoxyParamCaption}\item[{String}]{ref,  }\item[{int}]{x,  }\item[{int}]{y,  }\item[{int}]{width,  }\item[{int}]{height,  }\item[{int \mbox{[}$\,$\mbox{]}}]{cursor\+Delays }\end{DoxyParamCaption}) throws I\+O\+Exception, L\+W\+J\+G\+L\+Exception\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get a cursor based on a image reference on the classpath. The image is assumed to be a set/strip of cursor animation frames running from top to bottom.
+
+
+\begin{DoxyParams}{Parameters}
+{\em ref} & The reference to the image to be loaded \\
+\hline
+{\em x} & The x-\/coordinate of the cursor hotspot (left -\/$>$ right) \\
+\hline
+{\em y} & The y-\/coordinate of the cursor hotspot (bottom -\/$>$ top) \\
+\hline
+{\em width} & The x width of the cursor \\
+\hline
+{\em height} & The y height of the cursor \\
+\hline
+{\em cursor\+Delays} & image delays between changing frames in animation\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The created cursor 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em I\+O\+Exception} & Indicates a failure to load the image \\
+\hline
+{\em L\+W\+J\+G\+L\+Exception} & Indicates a failure to create the hardware cursor \\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyCode}
+171                                                                                                            
+                                     \{
+172         IntBuffer cursorDelaysBuffer = ByteBuffer.allocateDirect(cursorDelays.length*4).order(ByteOrder.
+      nativeOrder()).asIntBuffer();
+173         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i=0;i<cursorDelays.length;i++) \{
+174             cursorDelaysBuffer.put(cursorDelays[i]);
+175         \}
+176         cursorDelaysBuffer.flip();
+177 
+178         LoadableImageData imageData = \textcolor{keyword}{new} TGAImageData();
+179         ByteBuffer buf = imageData.loadImage(ResourceLoader.getResourceAsStream(ref), \textcolor{keyword}{false}, null);
+180                     
+181         \textcolor{keywordflow}{return} \textcolor{keyword}{new} Cursor(width, height, x, y, cursorDelays.length, buf.asIntBuffer(), cursorDelaysBuffer);
+182     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_cursor_loader_ac4f0e812a577dac3ec62798e502a537f}\label{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_cursor_loader_ac4f0e812a577dac3ec62798e502a537f}} 
+\index{org\+::newdawn\+::slick\+::opengl\+::\+Cursor\+Loader@{org\+::newdawn\+::slick\+::opengl\+::\+Cursor\+Loader}!get\+Cursor@{get\+Cursor}}
+\index{get\+Cursor@{get\+Cursor}!org\+::newdawn\+::slick\+::opengl\+::\+Cursor\+Loader@{org\+::newdawn\+::slick\+::opengl\+::\+Cursor\+Loader}}
+\subsubsection{\texorpdfstring{get\+Cursor()}{getCursor()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily Cursor org.\+newdawn.\+slick.\+opengl.\+Cursor\+Loader.\+get\+Cursor (\begin{DoxyParamCaption}\item[{String}]{ref,  }\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption}) throws I\+O\+Exception, L\+W\+J\+G\+L\+Exception\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get a cursor based on a image reference on the classpath
+
+
+\begin{DoxyParams}{Parameters}
+{\em ref} & The reference to the image to be loaded \\
+\hline
+{\em x} & The x-\/coordinate of the cursor hotspot (left -\/$>$ right) \\
+\hline
+{\em y} & The y-\/coordinate of the cursor hotspot (bottom -\/$>$ top) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The create cursor 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em I\+O\+Exception} & Indicates a failure to load the image \\
+\hline
+{\em L\+W\+J\+G\+L\+Exception} & Indicates a failure to create the hardware cursor \\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyCode}
+49                                                                                        \{
+50         LoadableImageData imageData = null;
+51         
+52         imageData = ImageDataFactory.getImageDataFor(ref);
+53         imageData.configureEdging(\textcolor{keyword}{false});
+54         
+55         ByteBuffer buf = imageData.loadImage(ResourceLoader.getResourceAsStream(ref), \textcolor{keyword}{true}, \textcolor{keyword}{true}, null);
+56         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i=0;i<buf.limit();i+=4) \{
+57             byte red = buf.get(i);
+58             byte green = buf.get(i+1);
+59             byte blue = buf.get(i+2);
+60             byte alpha = buf.get(i+3);
+61             
+62             buf.put(i+2, red);
+63             buf.put(i+1, green);
+64             buf.put(i, blue);
+65             buf.put(i+3, alpha);
+66         \}
+67         
+68         \textcolor{keywordflow}{try} \{
+69             \textcolor{keywordtype}{int} yspot = imageData.getHeight() - y - 1;
+70             \textcolor{keywordflow}{if} (yspot < 0) \{
+71                 yspot = 0;
+72             \}
+73             
+74             \textcolor{keywordflow}{return} \textcolor{keyword}{new} Cursor(imageData.getTexWidth(), imageData.getTexHeight(), x, yspot, 1, buf.
+      asIntBuffer(), null);
+75         \} \textcolor{keywordflow}{catch} (Throwable e) \{
+76             Log.info(\textcolor{stringliteral}{"Chances are you cursor is too small for this platform"});
+77             \textcolor{keywordflow}{throw} \textcolor{keyword}{new} LWJGLException(e);
+78         \}
+79     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_cursor_loader_a12f03f9c48a6ce9d08e8fb7e0dbb0e44}\label{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_cursor_loader_a12f03f9c48a6ce9d08e8fb7e0dbb0e44}} 
+\index{org\+::newdawn\+::slick\+::opengl\+::\+Cursor\+Loader@{org\+::newdawn\+::slick\+::opengl\+::\+Cursor\+Loader}!get\+Cursor@{get\+Cursor}}
+\index{get\+Cursor@{get\+Cursor}!org\+::newdawn\+::slick\+::opengl\+::\+Cursor\+Loader@{org\+::newdawn\+::slick\+::opengl\+::\+Cursor\+Loader}}
+\subsubsection{\texorpdfstring{get\+Cursor()}{getCursor()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily Cursor org.\+newdawn.\+slick.\+opengl.\+Cursor\+Loader.\+get\+Cursor (\begin{DoxyParamCaption}\item[{Byte\+Buffer}]{buf,  }\item[{int}]{x,  }\item[{int}]{y,  }\item[{int}]{width,  }\item[{int}]{height }\end{DoxyParamCaption}) throws I\+O\+Exception, L\+W\+J\+G\+L\+Exception\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get a cursor based on a set of image data
+
+
+\begin{DoxyParams}{Parameters}
+{\em buf} & The image data (stored in R\+G\+BA) to load the cursor from \\
+\hline
+{\em x} & The x-\/coordinate of the cursor hotspot (left -\/$>$ right) \\
+\hline
+{\em y} & The y-\/coordinate of the cursor hotspot (bottom -\/$>$ top) \\
+\hline
+{\em width} & The width of the image data provided \\
+\hline
+{\em height} & The height of the image data provided \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The create cursor 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em I\+O\+Exception} & Indicates a failure to load the image \\
+\hline
+{\em L\+W\+J\+G\+L\+Exception} & Indicates a failure to create the hardware cursor \\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyCode}
+94                                                                                                            
+           \{
+95         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i=0;i<buf.limit();i+=4) \{
+96             byte red = buf.get(i);
+97             byte green = buf.get(i+1);
+98             byte blue = buf.get(i+2);
+99             byte alpha = buf.get(i+3);
+100             
+101             buf.put(i+2, red);
+102             buf.put(i+1, green);
+103             buf.put(i, blue);
+104             buf.put(i+3, alpha);
+105         \}
+106         
+107         \textcolor{keywordflow}{try} \{
+108             \textcolor{keywordtype}{int} yspot = height - y - 1;
+109             \textcolor{keywordflow}{if} (yspot < 0) \{
+110                 yspot = 0;
+111             \}
+112             \textcolor{keywordflow}{return} \textcolor{keyword}{new} Cursor(width,height, x, yspot, 1, buf.asIntBuffer(), null);
+113         \} \textcolor{keywordflow}{catch} (Throwable e) \{
+114             Log.info(\textcolor{stringliteral}{"Chances are you cursor is too small for this platform"});
+115             \textcolor{keywordflow}{throw} \textcolor{keyword}{new} LWJGLException(e);
+116         \}
+117     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_cursor_loader_af11a55cc66ccb52ecb4f9ded039852d6}\label{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_cursor_loader_af11a55cc66ccb52ecb4f9ded039852d6}} 
+\index{org\+::newdawn\+::slick\+::opengl\+::\+Cursor\+Loader@{org\+::newdawn\+::slick\+::opengl\+::\+Cursor\+Loader}!get\+Cursor@{get\+Cursor}}
+\index{get\+Cursor@{get\+Cursor}!org\+::newdawn\+::slick\+::opengl\+::\+Cursor\+Loader@{org\+::newdawn\+::slick\+::opengl\+::\+Cursor\+Loader}}
+\subsubsection{\texorpdfstring{get\+Cursor()}{getCursor()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily Cursor org.\+newdawn.\+slick.\+opengl.\+Cursor\+Loader.\+get\+Cursor (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1opengl_1_1_image_data}{Image\+Data}}}]{image\+Data,  }\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption}) throws I\+O\+Exception, L\+W\+J\+G\+L\+Exception\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get a cursor based on a set of image data
+
+
+\begin{DoxyParams}{Parameters}
+{\em image\+Data} & The data from which the cursor can read it\textquotesingle{}s contents \\
+\hline
+{\em x} & The x-\/coordinate of the cursor hotspot (left -\/$>$ right) \\
+\hline
+{\em y} & The y-\/coordinate of the cursor hotspot (bottom -\/$>$ top) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The create cursor 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em I\+O\+Exception} & Indicates a failure to load the image \\
+\hline
+{\em L\+W\+J\+G\+L\+Exception} & Indicates a failure to create the hardware cursor \\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyCode}
+129                                                                                                 \{
+130         ByteBuffer buf = imageData.getImageBufferData();
+131         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i=0;i<buf.limit();i+=4) \{
+132             byte red = buf.get(i);
+133             byte green = buf.get(i+1);
+134             byte blue = buf.get(i+2);
+135             byte alpha = buf.get(i+3);
+136             
+137             buf.put(i+2, red);
+138             buf.put(i+1, green);
+139             buf.put(i, blue);
+140             buf.put(i+3, alpha);
+141         \}
+142         
+143         \textcolor{keywordflow}{try} \{
+144             \textcolor{keywordtype}{int} yspot = imageData.getHeight() - y - 1;
+145             \textcolor{keywordflow}{if} (yspot < 0) \{
+146                 yspot = 0;
+147             \}
+148             \textcolor{keywordflow}{return} \textcolor{keyword}{new} Cursor(imageData.getTexWidth(), imageData.getTexHeight(), x, yspot, 1, buf.
+      asIntBuffer(), null);
+149         \} \textcolor{keywordflow}{catch} (Throwable e) \{
+150             Log.info(\textcolor{stringliteral}{"Chances are you cursor is too small for this platform"});
+151             \textcolor{keywordflow}{throw} \textcolor{keyword}{new} LWJGLException(e);
+152         \}
+153     \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_cursor_loader_a0550bb212ff0bdb84ff32b244360c40e}\label{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_cursor_loader_a0550bb212ff0bdb84ff32b244360c40e}} 
+\index{org\+::newdawn\+::slick\+::opengl\+::\+Cursor\+Loader@{org\+::newdawn\+::slick\+::opengl\+::\+Cursor\+Loader}!single@{single}}
+\index{single@{single}!org\+::newdawn\+::slick\+::opengl\+::\+Cursor\+Loader@{org\+::newdawn\+::slick\+::opengl\+::\+Cursor\+Loader}}
+\subsubsection{\texorpdfstring{single}{single}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_cursor_loader}{Cursor\+Loader}} org.\+newdawn.\+slick.\+opengl.\+Cursor\+Loader.\+single = new \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_cursor_loader}{Cursor\+Loader}}()\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+The single instnace of this loader to exist 

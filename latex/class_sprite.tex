@@ -1,0 +1,134 @@
+\hypertarget{class_sprite}{}\section{Sprite Class Reference}
+\label{class_sprite}\index{Sprite@{Sprite}}
+Inheritance diagram for Sprite\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{class_sprite}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_sprite_ad2d0e8ee8d56c6939aeb7c85e8f95ad1}{Sprite}} (String ruta, \mbox{\hyperlink{class_coordenadas}{Coordenadas}} coord)  throws Slick\+Exception
+\item 
+\mbox{\hyperlink{class_sprite_abcc912a68992f5d1f3566386f885f9bb}{Sprite}} (String ruta)  throws Slick\+Exception
+\item 
+\mbox{\hyperlink{class_sprite_a0a53bf04225c024f0499c8c2bd092b5d}{Sprite}} (String ruta, float x, float y)  throws Slick\+Exception
+\item 
+void \mbox{\hyperlink{class_sprite_a0d3088cb4ee83eb438a48bb47351fe8e}{draw}} ()
+\item 
+\mbox{\hyperlink{class_coordenadas}{Coordenadas}} \mbox{\hyperlink{class_sprite_a1ea85b8bbd32ba06d279b76b3ffad9e0}{get\+Coordenadas}} ()
+\item 
+void \mbox{\hyperlink{class_sprite_ab6507a100fad450d688f71d08cc91715}{set\+Coordenadas}} (\mbox{\hyperlink{class_coordenadas}{Coordenadas}} \mbox{\hyperlink{class_sprite_ada651b6921cee54a619e11c4eb01526d}{coordenadas}})
+\item 
+void \mbox{\hyperlink{class_sprite_abc4cf5a191273ec5ae4943b95d3198cb}{set\+Coordenadas}} (float x, float y)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_coordenadas}{Coordenadas}} \mbox{\hyperlink{class_sprite_ada651b6921cee54a619e11c4eb01526d}{coordenadas}}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_sprite_ad2d0e8ee8d56c6939aeb7c85e8f95ad1}\label{class_sprite_ad2d0e8ee8d56c6939aeb7c85e8f95ad1}} 
+\index{Sprite@{Sprite}!Sprite@{Sprite}}
+\index{Sprite@{Sprite}!Sprite@{Sprite}}
+\subsubsection{\texorpdfstring{Sprite()}{Sprite()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily Sprite.\+Sprite (\begin{DoxyParamCaption}\item[{String}]{ruta,  }\item[{\mbox{\hyperlink{class_coordenadas}{Coordenadas}}}]{coord }\end{DoxyParamCaption}) throws \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_slick_exception}{Slick\+Exception}}\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+9                                                                        \{
+10         super(ruta);
+11         this.\mbox{\hyperlink{class_sprite_ada651b6921cee54a619e11c4eb01526d}{coordenadas}} = coord;
+12     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_sprite_abcc912a68992f5d1f3566386f885f9bb}\label{class_sprite_abcc912a68992f5d1f3566386f885f9bb}} 
+\index{Sprite@{Sprite}!Sprite@{Sprite}}
+\index{Sprite@{Sprite}!Sprite@{Sprite}}
+\subsubsection{\texorpdfstring{Sprite()}{Sprite()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily Sprite.\+Sprite (\begin{DoxyParamCaption}\item[{String}]{ruta }\end{DoxyParamCaption}) throws \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_slick_exception}{Slick\+Exception}}\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+14                                                     \{
+15         super(ruta);
+16         this.\mbox{\hyperlink{class_sprite_ada651b6921cee54a619e11c4eb01526d}{coordenadas}} = \textcolor{keyword}{new} \mbox{\hyperlink{class_coordenadas}{Coordenadas}}(0, 0);
+17     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_sprite_a0a53bf04225c024f0499c8c2bd092b5d}\label{class_sprite_a0a53bf04225c024f0499c8c2bd092b5d}} 
+\index{Sprite@{Sprite}!Sprite@{Sprite}}
+\index{Sprite@{Sprite}!Sprite@{Sprite}}
+\subsubsection{\texorpdfstring{Sprite()}{Sprite()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily Sprite.\+Sprite (\begin{DoxyParamCaption}\item[{String}]{ruta,  }\item[{float}]{x,  }\item[{float}]{y }\end{DoxyParamCaption}) throws \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_slick_exception}{Slick\+Exception}}\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+19                                                                       \{
+20         super(ruta);
+21         this.\mbox{\hyperlink{class_sprite_ada651b6921cee54a619e11c4eb01526d}{coordenadas}} = \textcolor{keyword}{new} \mbox{\hyperlink{class_coordenadas}{Coordenadas}}(x, y);
+22     \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_sprite_a0d3088cb4ee83eb438a48bb47351fe8e}\label{class_sprite_a0d3088cb4ee83eb438a48bb47351fe8e}} 
+\index{Sprite@{Sprite}!draw@{draw}}
+\index{draw@{draw}!Sprite@{Sprite}}
+\subsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily void Sprite.\+draw (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+24                       \{
+25         super.draw(\mbox{\hyperlink{class_sprite_ada651b6921cee54a619e11c4eb01526d}{coordenadas}}.\mbox{\hyperlink{class_coordenadas_a7b3fc725f9146220813dc0084fecc3ca}{getX}}(), \mbox{\hyperlink{class_sprite_ada651b6921cee54a619e11c4eb01526d}{coordenadas}}.
+      \mbox{\hyperlink{class_coordenadas_aa10f46c8c62df3db3a05d4550f20b197}{getY}}());
+26     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_sprite_a1ea85b8bbd32ba06d279b76b3ffad9e0}\label{class_sprite_a1ea85b8bbd32ba06d279b76b3ffad9e0}} 
+\index{Sprite@{Sprite}!get\+Coordenadas@{get\+Coordenadas}}
+\index{get\+Coordenadas@{get\+Coordenadas}!Sprite@{Sprite}}
+\subsubsection{\texorpdfstring{get\+Coordenadas()}{getCoordenadas()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_coordenadas}{Coordenadas}} Sprite.\+get\+Coordenadas (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+28                                        \{
+29         \textcolor{keywordflow}{return} this.\mbox{\hyperlink{class_sprite_ada651b6921cee54a619e11c4eb01526d}{coordenadas}};
+30     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_sprite_ab6507a100fad450d688f71d08cc91715}\label{class_sprite_ab6507a100fad450d688f71d08cc91715}} 
+\index{Sprite@{Sprite}!set\+Coordenadas@{set\+Coordenadas}}
+\index{set\+Coordenadas@{set\+Coordenadas}!Sprite@{Sprite}}
+\subsubsection{\texorpdfstring{set\+Coordenadas()}{setCoordenadas()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Sprite.\+set\+Coordenadas (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_coordenadas}{Coordenadas}}}]{coordenadas }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+32                                                        \{
+33         this.coordenadas = \mbox{\hyperlink{class_sprite_ada651b6921cee54a619e11c4eb01526d}{coordenadas}};
+34     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_sprite_abc4cf5a191273ec5ae4943b95d3198cb}\label{class_sprite_abc4cf5a191273ec5ae4943b95d3198cb}} 
+\index{Sprite@{Sprite}!set\+Coordenadas@{set\+Coordenadas}}
+\index{set\+Coordenadas@{set\+Coordenadas}!Sprite@{Sprite}}
+\subsubsection{\texorpdfstring{set\+Coordenadas()}{setCoordenadas()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Sprite.\+set\+Coordenadas (\begin{DoxyParamCaption}\item[{float}]{x,  }\item[{float}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+36                                                 \{
+37         this.\mbox{\hyperlink{class_sprite_ada651b6921cee54a619e11c4eb01526d}{coordenadas}} = \textcolor{keyword}{new} \mbox{\hyperlink{class_coordenadas}{Coordenadas}}(x, y);
+38     \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_sprite_ada651b6921cee54a619e11c4eb01526d}\label{class_sprite_ada651b6921cee54a619e11c4eb01526d}} 
+\index{Sprite@{Sprite}!coordenadas@{coordenadas}}
+\index{coordenadas@{coordenadas}!Sprite@{Sprite}}
+\subsubsection{\texorpdfstring{coordenadas}{coordenadas}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_coordenadas}{Coordenadas}} Sprite.\+coordenadas\hspace{0.3cm}{\ttfamily [protected]}}
+

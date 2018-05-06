@@ -1,0 +1,91 @@
+\hypertarget{classorg_1_1newdawn_1_1slick_1_1svg_1_1inkscape_1_1_ellipse_processor}{}\section{org.\+newdawn.\+slick.\+svg.\+inkscape.\+Ellipse\+Processor Class Reference}
+\label{classorg_1_1newdawn_1_1slick_1_1svg_1_1inkscape_1_1_ellipse_processor}\index{org.\+newdawn.\+slick.\+svg.\+inkscape.\+Ellipse\+Processor@{org.\+newdawn.\+slick.\+svg.\+inkscape.\+Ellipse\+Processor}}
+Inheritance diagram for org.\+newdawn.\+slick.\+svg.\+inkscape.\+Ellipse\+Processor\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classorg_1_1newdawn_1_1slick_1_1svg_1_1inkscape_1_1_ellipse_processor}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1inkscape_1_1_ellipse_processor_aa1d099c3b7ce4be328ccde1a5a2d1fb7}{process}} (\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1svg_1_1_loader}{Loader}} loader, Element element, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1_diagram}{Diagram}} diagram, Transform t)  throws Parsing\+Exception 
+\item 
+boolean \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1inkscape_1_1_ellipse_processor_a54a6dbcfc6d01e3fd2bc61aeed789c88}{handles}} (Element element)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Processor for $<$ellipse$>$ and $<$path$>$ nodes marked as arcs
+
+\begin{DoxyAuthor}{Author}
+kevin 
+\end{DoxyAuthor}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1svg_1_1inkscape_1_1_ellipse_processor_a54a6dbcfc6d01e3fd2bc61aeed789c88}\label{classorg_1_1newdawn_1_1slick_1_1svg_1_1inkscape_1_1_ellipse_processor_a54a6dbcfc6d01e3fd2bc61aeed789c88}} 
+\index{org\+::newdawn\+::slick\+::svg\+::inkscape\+::\+Ellipse\+Processor@{org\+::newdawn\+::slick\+::svg\+::inkscape\+::\+Ellipse\+Processor}!handles@{handles}}
+\index{handles@{handles}!org\+::newdawn\+::slick\+::svg\+::inkscape\+::\+Ellipse\+Processor@{org\+::newdawn\+::slick\+::svg\+::inkscape\+::\+Ellipse\+Processor}}
+\subsubsection{\texorpdfstring{handles()}{handles()}}
+{\footnotesize\ttfamily boolean org.\+newdawn.\+slick.\+svg.\+inkscape.\+Ellipse\+Processor.\+handles (\begin{DoxyParamCaption}\item[{Element}]{element }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1svg_1_1inkscape_1_1_element_processor_ae95bbf21a67c52aff02cf09259c554a3}{org.\+newdawn.\+slick.\+svg.\+inkscape.\+Element\+Processor\+::handles}}(org.\+w3c.\+dom.\+Element) 
+\end{DoxySeeAlso}
+
+
+Implements \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1svg_1_1inkscape_1_1_element_processor_ae95bbf21a67c52aff02cf09259c554a3}{org.\+newdawn.\+slick.\+svg.\+inkscape.\+Element\+Processor}}.
+
+
+\begin{DoxyCode}
+47                                             \{
+48         \textcolor{keywordflow}{if} (element.getNodeName().equals(\textcolor{stringliteral}{"ellipse"})) \{
+49             \textcolor{keywordflow}{return} \textcolor{keyword}{true};
+50         \}
+51         \textcolor{keywordflow}{if} (element.getNodeName().equals(\textcolor{stringliteral}{"path"})) \{
+52             \textcolor{keywordflow}{if} (\textcolor{stringliteral}{"arc"}.equals(element.getAttributeNS(Util.SODIPODI, \textcolor{stringliteral}{"type"}))) \{
+53                 \textcolor{keywordflow}{return} \textcolor{keyword}{true};
+54             \}
+55         \}
+56         
+57         \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+58     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1svg_1_1inkscape_1_1_ellipse_processor_aa1d099c3b7ce4be328ccde1a5a2d1fb7}\label{classorg_1_1newdawn_1_1slick_1_1svg_1_1inkscape_1_1_ellipse_processor_aa1d099c3b7ce4be328ccde1a5a2d1fb7}} 
+\index{org\+::newdawn\+::slick\+::svg\+::inkscape\+::\+Ellipse\+Processor@{org\+::newdawn\+::slick\+::svg\+::inkscape\+::\+Ellipse\+Processor}!process@{process}}
+\index{process@{process}!org\+::newdawn\+::slick\+::svg\+::inkscape\+::\+Ellipse\+Processor@{org\+::newdawn\+::slick\+::svg\+::inkscape\+::\+Ellipse\+Processor}}
+\subsubsection{\texorpdfstring{process()}{process()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+svg.\+inkscape.\+Ellipse\+Processor.\+process (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1svg_1_1_loader}{Loader}}}]{loader,  }\item[{Element}]{element,  }\item[{\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1_diagram}{Diagram}}}]{diagram,  }\item[{Transform}]{t }\end{DoxyParamCaption}) throws \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1_parsing_exception}{Parsing\+Exception}}\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1svg_1_1inkscape_1_1_element_processor_acd170a9e1119481edae885780db59a2e}{org.\+newdawn.\+slick.\+svg.\+inkscape.\+Element\+Processor\+::process}}(\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1svg_1_1_loader}{org.\+newdawn.\+slick.\+svg.\+Loader}}, org.\+w3c.\+dom.\+Element, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1_diagram}{org.\+newdawn.\+slick.\+svg.\+Diagram}}, org.\+newdawn.\+slick.\+geom.\+Transform) 
+\end{DoxySeeAlso}
+
+
+Implements \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1svg_1_1inkscape_1_1_element_processor_acd170a9e1119481edae885780db59a2e}{org.\+newdawn.\+slick.\+svg.\+inkscape.\+Element\+Processor}}.
+
+
+\begin{DoxyCode}
+23                                                                                                            
+         \{
+24         Transform transform = Util.getTransform(element);
+25         transform = \textcolor{keyword}{new} Transform(t, transform);
+26         
+27         \textcolor{keywordtype}{float} x = Util.getFloatAttribute(element,\textcolor{stringliteral}{"cx"});
+28         \textcolor{keywordtype}{float} y = Util.getFloatAttribute(element,\textcolor{stringliteral}{"cy"});
+29         \textcolor{keywordtype}{float} rx = Util.getFloatAttribute(element,\textcolor{stringliteral}{"rx"});
+30         \textcolor{keywordtype}{float} ry = Util.getFloatAttribute(element,\textcolor{stringliteral}{"ry"});
+31         
+32         Ellipse ellipse = \textcolor{keyword}{new} Ellipse(x,y,rx,ry);
+33         Shape shape = ellipse.transform(transform);
+34 
+35         NonGeometricData data = Util.getNonGeometricData(element);
+36         data.addAttribute(\textcolor{stringliteral}{"cx"}, \textcolor{stringliteral}{""}+x);
+37         data.addAttribute(\textcolor{stringliteral}{"cy"}, \textcolor{stringliteral}{""}+y);
+38         data.addAttribute(\textcolor{stringliteral}{"rx"}, \textcolor{stringliteral}{""}+rx);
+39         data.addAttribute(\textcolor{stringliteral}{"ry"}, \textcolor{stringliteral}{""}+ry);
+40         
+41         diagram.addFigure(\textcolor{keyword}{new} Figure(Figure.ELLIPSE, shape, data, transform));
+42     \}
+\end{DoxyCode}

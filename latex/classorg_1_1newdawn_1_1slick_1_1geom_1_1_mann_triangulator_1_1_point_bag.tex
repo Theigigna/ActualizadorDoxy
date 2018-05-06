@@ -1,0 +1,224 @@
+\hypertarget{classorg_1_1newdawn_1_1slick_1_1geom_1_1_mann_triangulator_1_1_point_bag}{}\section{org.\+newdawn.\+slick.\+geom.\+Mann\+Triangulator.\+Point\+Bag Class Reference}
+\label{classorg_1_1newdawn_1_1slick_1_1geom_1_1_mann_triangulator_1_1_point_bag}\index{org.\+newdawn.\+slick.\+geom.\+Mann\+Triangulator.\+Point\+Bag@{org.\+newdawn.\+slick.\+geom.\+Mann\+Triangulator.\+Point\+Bag}}
+Inheritance diagram for org.\+newdawn.\+slick.\+geom.\+Mann\+Triangulator.\+Point\+Bag\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classorg_1_1newdawn_1_1slick_1_1geom_1_1_mann_triangulator_1_1_point_bag}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_mann_triangulator_1_1_point_bag_a5c4e5b96ea8667ed723478412b412d3c}{clear}} ()
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_mann_triangulator_1_1_point_bag_a7af185327fa10df11a02cf2f1fe6dcd4}{add}} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_mann_triangulator_1_1_point}{Point}} p)
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_mann_triangulator_1_1_point_bag_a718c1b78b0745ea72f661d00882250a3}{compute\+Angles}} ()
+\item 
+boolean \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_mann_triangulator_1_1_point_bag_a8db4f4ea9b3ed93c73fa322fe1f28ebc}{does\+Intersect\+Segment}} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_vector2f}{Vector2f}} v1, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_vector2f}{Vector2f}} v2)
+\item 
+int \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_mann_triangulator_1_1_point_bag_ab40da343a7df21c7fa966a70890ae985}{count\+Points}} ()
+\item 
+boolean \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_mann_triangulator_1_1_point_bag_aa6ec224f791da0d76127b41cd216b977}{contains}} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_vector2f}{Vector2f}} point)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_mann_triangulator_1_1_point}{Point}} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_mann_triangulator_1_1_point_bag_a120e5163711d94563be103af953fe059}{first}}
+\item 
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_mann_triangulator_1_1_point_bag}{Point\+Bag}} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_mann_triangulator_1_1_point_bag_aa38075c8f56143bcdd9f754bfea38018}{next}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A bag/pool of point objects
+
+\begin{DoxyAuthor}{Author}
+kevin 
+\end{DoxyAuthor}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1geom_1_1_mann_triangulator_1_1_point_bag_a7af185327fa10df11a02cf2f1fe6dcd4}\label{classorg_1_1newdawn_1_1slick_1_1geom_1_1_mann_triangulator_1_1_point_bag_a7af185327fa10df11a02cf2f1fe6dcd4}} 
+\index{org\+::newdawn\+::slick\+::geom\+::\+Mann\+Triangulator\+::\+Point\+Bag@{org\+::newdawn\+::slick\+::geom\+::\+Mann\+Triangulator\+::\+Point\+Bag}!add@{add}}
+\index{add@{add}!org\+::newdawn\+::slick\+::geom\+::\+Mann\+Triangulator\+::\+Point\+Bag@{org\+::newdawn\+::slick\+::geom\+::\+Mann\+Triangulator\+::\+Point\+Bag}}
+\subsubsection{\texorpdfstring{add()}{add()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+geom.\+Mann\+Triangulator.\+Point\+Bag.\+add (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_mann_triangulator_1_1_point}{Point}}}]{p }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Add a point to the bag
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & The point to add \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+486                                  \{
+487             \textcolor{keywordflow}{if} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_mann_triangulator_1_1_point_bag_a120e5163711d94563be103af953fe059}{first}} != null) \{
+488                 \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_mann_triangulator_1_1_point_bag_a120e5163711d94563be103af953fe059}{first}}.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_mann_triangulator_1_1_point_afd6f758bff5fb93dc7ebc2921ce9ad95}{insertBefore}}(p);
+489             \} \textcolor{keywordflow}{else} \{
+490                 \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_mann_triangulator_1_1_point_bag_a120e5163711d94563be103af953fe059}{first}} = p;
+491                 p.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_mann_triangulator_1_1_point_a5679974de3d6ea0e554138b1d4e19123}{next}} = p;
+492                 p.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_mann_triangulator_1_1_point_aada0547222c51b32a918839db2eca9f2}{prev}} = p;
+493             \}
+494         \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1geom_1_1_mann_triangulator_1_1_point_bag_a5c4e5b96ea8667ed723478412b412d3c}\label{classorg_1_1newdawn_1_1slick_1_1geom_1_1_mann_triangulator_1_1_point_bag_a5c4e5b96ea8667ed723478412b412d3c}} 
+\index{org\+::newdawn\+::slick\+::geom\+::\+Mann\+Triangulator\+::\+Point\+Bag@{org\+::newdawn\+::slick\+::geom\+::\+Mann\+Triangulator\+::\+Point\+Bag}!clear@{clear}}
+\index{clear@{clear}!org\+::newdawn\+::slick\+::geom\+::\+Mann\+Triangulator\+::\+Point\+Bag@{org\+::newdawn\+::slick\+::geom\+::\+Mann\+Triangulator\+::\+Point\+Bag}}
+\subsubsection{\texorpdfstring{clear()}{clear()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+geom.\+Mann\+Triangulator.\+Point\+Bag.\+clear (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Clear all the points from this bag 
+\begin{DoxyCode}
+474                             \{
+475             \textcolor{keywordflow}{if} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_mann_triangulator_1_1_point_bag_a120e5163711d94563be103af953fe059}{first}} != null) \{
+476                 \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_mann_triangulator_a89a455a22b02af6f023dc3411b430909}{freePoints}}(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_mann_triangulator_1_1_point_bag_a120e5163711d94563be103af953fe059}{first}});
+477                 \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_mann_triangulator_1_1_point_bag_a120e5163711d94563be103af953fe059}{first}} = null;
+478             \}
+479         \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1geom_1_1_mann_triangulator_1_1_point_bag_a718c1b78b0745ea72f661d00882250a3}\label{classorg_1_1newdawn_1_1slick_1_1geom_1_1_mann_triangulator_1_1_point_bag_a718c1b78b0745ea72f661d00882250a3}} 
+\index{org\+::newdawn\+::slick\+::geom\+::\+Mann\+Triangulator\+::\+Point\+Bag@{org\+::newdawn\+::slick\+::geom\+::\+Mann\+Triangulator\+::\+Point\+Bag}!compute\+Angles@{compute\+Angles}}
+\index{compute\+Angles@{compute\+Angles}!org\+::newdawn\+::slick\+::geom\+::\+Mann\+Triangulator\+::\+Point\+Bag@{org\+::newdawn\+::slick\+::geom\+::\+Mann\+Triangulator\+::\+Point\+Bag}}
+\subsubsection{\texorpdfstring{compute\+Angles()}{computeAngles()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+geom.\+Mann\+Triangulator.\+Point\+Bag.\+compute\+Angles (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Compute the angles for the points in this bag 
+\begin{DoxyCode}
+499                                     \{
+500             \textcolor{keywordflow}{if} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_mann_triangulator_1_1_point_bag_a120e5163711d94563be103af953fe059}{first}} == null) \{
+501                 \textcolor{keywordflow}{return};
+502             \}
+503 
+504             Point p = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_mann_triangulator_1_1_point_bag_a120e5163711d94563be103af953fe059}{first}};
+505             \textcolor{keywordflow}{do} \{
+506                 p.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_mann_triangulator_1_1_point_a61201245a3be65aae48cc8a678e7d4ac}{computeAngle}}();
+507             \} \textcolor{keywordflow}{while} ((p = p.next) != \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_mann_triangulator_1_1_point_bag_a120e5163711d94563be103af953fe059}{first}});
+508         \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1geom_1_1_mann_triangulator_1_1_point_bag_aa6ec224f791da0d76127b41cd216b977}\label{classorg_1_1newdawn_1_1slick_1_1geom_1_1_mann_triangulator_1_1_point_bag_aa6ec224f791da0d76127b41cd216b977}} 
+\index{org\+::newdawn\+::slick\+::geom\+::\+Mann\+Triangulator\+::\+Point\+Bag@{org\+::newdawn\+::slick\+::geom\+::\+Mann\+Triangulator\+::\+Point\+Bag}!contains@{contains}}
+\index{contains@{contains}!org\+::newdawn\+::slick\+::geom\+::\+Mann\+Triangulator\+::\+Point\+Bag@{org\+::newdawn\+::slick\+::geom\+::\+Mann\+Triangulator\+::\+Point\+Bag}}
+\subsubsection{\texorpdfstring{contains()}{contains()}}
+{\footnotesize\ttfamily boolean org.\+newdawn.\+slick.\+geom.\+Mann\+Triangulator.\+Point\+Bag.\+contains (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_vector2f}{Vector2f}}}]{point }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Check if the point provided was contained
+
+
+\begin{DoxyParams}{Parameters}
+{\em point} & The point provided \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if it\textquotesingle{}s in the bag 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+572                                                 \{
+573             \textcolor{keywordflow}{if} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_mann_triangulator_1_1_point_bag_a120e5163711d94563be103af953fe059}{first}} == null) \{
+574                 \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+575             \}
+576             
+577             \textcolor{keywordflow}{if} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_mann_triangulator_1_1_point_bag_a120e5163711d94563be103af953fe059}{first}}.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_mann_triangulator_1_1_point_aada0547222c51b32a918839db2eca9f2}{prev}}.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_mann_triangulator_1_1_point_afd78802a3fe9d6abf60a218d24be56aa}{pt}}.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_vector2f_a064d1ba4d71fc4ebf1d6fa8adca00784}{equals}}(point)) \{
+578                 \textcolor{keywordflow}{return} \textcolor{keyword}{true};
+579             \}
+580             \textcolor{keywordflow}{if} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_mann_triangulator_1_1_point_bag_a120e5163711d94563be103af953fe059}{first}}.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_mann_triangulator_1_1_point_afd78802a3fe9d6abf60a218d24be56aa}{pt}}.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_vector2f_a064d1ba4d71fc4ebf1d6fa8adca00784}{equals}}(point)) \{
+581                 \textcolor{keywordflow}{return} \textcolor{keyword}{true};
+582             \}
+583             \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+584         \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1geom_1_1_mann_triangulator_1_1_point_bag_ab40da343a7df21c7fa966a70890ae985}\label{classorg_1_1newdawn_1_1slick_1_1geom_1_1_mann_triangulator_1_1_point_bag_ab40da343a7df21c7fa966a70890ae985}} 
+\index{org\+::newdawn\+::slick\+::geom\+::\+Mann\+Triangulator\+::\+Point\+Bag@{org\+::newdawn\+::slick\+::geom\+::\+Mann\+Triangulator\+::\+Point\+Bag}!count\+Points@{count\+Points}}
+\index{count\+Points@{count\+Points}!org\+::newdawn\+::slick\+::geom\+::\+Mann\+Triangulator\+::\+Point\+Bag@{org\+::newdawn\+::slick\+::geom\+::\+Mann\+Triangulator\+::\+Point\+Bag}}
+\subsubsection{\texorpdfstring{count\+Points()}{countPoints()}}
+{\footnotesize\ttfamily int org.\+newdawn.\+slick.\+geom.\+Mann\+Triangulator.\+Point\+Bag.\+count\+Points (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get the number of points in the bag
+
+\begin{DoxyReturn}{Returns}
+The number of points in the bag 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+553                                  \{
+554             \textcolor{keywordflow}{if} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_mann_triangulator_1_1_point_bag_a120e5163711d94563be103af953fe059}{first}} == null) \{
+555                 \textcolor{keywordflow}{return} 0;
+556             \}
+557 
+558             \textcolor{keywordtype}{int} count = 0;
+559             Point p = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_mann_triangulator_1_1_point_bag_a120e5163711d94563be103af953fe059}{first}};
+560             \textcolor{keywordflow}{do} \{
+561                 ++count;
+562             \} \textcolor{keywordflow}{while} ((p = p.next) != \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_mann_triangulator_1_1_point_bag_a120e5163711d94563be103af953fe059}{first}});
+563             \textcolor{keywordflow}{return} count;
+564         \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1geom_1_1_mann_triangulator_1_1_point_bag_a8db4f4ea9b3ed93c73fa322fe1f28ebc}\label{classorg_1_1newdawn_1_1slick_1_1geom_1_1_mann_triangulator_1_1_point_bag_a8db4f4ea9b3ed93c73fa322fe1f28ebc}} 
+\index{org\+::newdawn\+::slick\+::geom\+::\+Mann\+Triangulator\+::\+Point\+Bag@{org\+::newdawn\+::slick\+::geom\+::\+Mann\+Triangulator\+::\+Point\+Bag}!does\+Intersect\+Segment@{does\+Intersect\+Segment}}
+\index{does\+Intersect\+Segment@{does\+Intersect\+Segment}!org\+::newdawn\+::slick\+::geom\+::\+Mann\+Triangulator\+::\+Point\+Bag@{org\+::newdawn\+::slick\+::geom\+::\+Mann\+Triangulator\+::\+Point\+Bag}}
+\subsubsection{\texorpdfstring{does\+Intersect\+Segment()}{doesIntersectSegment()}}
+{\footnotesize\ttfamily boolean org.\+newdawn.\+slick.\+geom.\+Mann\+Triangulator.\+Point\+Bag.\+does\+Intersect\+Segment (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_vector2f}{Vector2f}}}]{v1,  }\item[{\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_vector2f}{Vector2f}}}]{v2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Check if the points in this bag form a path intersecting with the specified path
+
+
+\begin{DoxyParams}{Parameters}
+{\em v1} & The start point of the segment \\
+\hline
+{\em v2} & The end point of the segment \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if points in this contour intersect with the segment 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+518                                                                       \{
+519             \textcolor{keywordtype}{double} dxA = v2.x - v1.x;
+520             \textcolor{keywordtype}{double} dyA = v2.y - v1.y;
+521 
+522             \textcolor{keywordflow}{for} (Point p = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_mann_triangulator_1_1_point_bag_a120e5163711d94563be103af953fe059}{first}};;) \{
+523                 Point n = p.next;
+524                 \textcolor{keywordflow}{if} (p.pt != v1 && n.pt != v1 && p.pt != v2 && n.pt != v2) \{
+525                     \textcolor{keywordtype}{double} dxB = n.pt.x - p.pt.x;
+526                     \textcolor{keywordtype}{double} dyB = n.pt.y - p.pt.y;
+527                     \textcolor{keywordtype}{double} d = (dxA * dyB) - (dyA * dxB);
+528 
+529                     \textcolor{keywordflow}{if} (Math.abs(d) > \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_mann_triangulator_a78771c6d0430b774acac9eee87d0886a}{EPSILON}}) \{
+530                         \textcolor{keywordtype}{double} tmp1 = p.pt.x - v1.x;
+531                         \textcolor{keywordtype}{double} tmp2 = p.pt.y - v1.y;
+532                         \textcolor{keywordtype}{double} tA = (dyB * tmp1 - dxB * tmp2) / d;
+533                         \textcolor{keywordtype}{double} tB = (dyA * tmp1 - dxA * tmp2) / d;
+534 
+535                         \textcolor{keywordflow}{if} (tA >= 0 && tA <= 1 && tB >= 0 && tB <= 1) \{
+536                             \textcolor{keywordflow}{return} \textcolor{keyword}{true};
+537                         \}
+538                     \}
+539                 \}
+540 
+541                 \textcolor{keywordflow}{if} (n == \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_mann_triangulator_1_1_point_bag_a120e5163711d94563be103af953fe059}{first}}) \{
+542                     \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+543                 \}
+544                 p = n;
+545             \}
+546         \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1geom_1_1_mann_triangulator_1_1_point_bag_a120e5163711d94563be103af953fe059}\label{classorg_1_1newdawn_1_1slick_1_1geom_1_1_mann_triangulator_1_1_point_bag_a120e5163711d94563be103af953fe059}} 
+\index{org\+::newdawn\+::slick\+::geom\+::\+Mann\+Triangulator\+::\+Point\+Bag@{org\+::newdawn\+::slick\+::geom\+::\+Mann\+Triangulator\+::\+Point\+Bag}!first@{first}}
+\index{first@{first}!org\+::newdawn\+::slick\+::geom\+::\+Mann\+Triangulator\+::\+Point\+Bag@{org\+::newdawn\+::slick\+::geom\+::\+Mann\+Triangulator\+::\+Point\+Bag}}
+\subsubsection{\texorpdfstring{first}{first}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_mann_triangulator_1_1_point}{Point}} org.\+newdawn.\+slick.\+geom.\+Mann\+Triangulator.\+Point\+Bag.\+first\hspace{0.3cm}{\ttfamily [protected]}}
+
+The first point in the bag -\/ head of the list \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1geom_1_1_mann_triangulator_1_1_point_bag_aa38075c8f56143bcdd9f754bfea38018}\label{classorg_1_1newdawn_1_1slick_1_1geom_1_1_mann_triangulator_1_1_point_bag_aa38075c8f56143bcdd9f754bfea38018}} 
+\index{org\+::newdawn\+::slick\+::geom\+::\+Mann\+Triangulator\+::\+Point\+Bag@{org\+::newdawn\+::slick\+::geom\+::\+Mann\+Triangulator\+::\+Point\+Bag}!next@{next}}
+\index{next@{next}!org\+::newdawn\+::slick\+::geom\+::\+Mann\+Triangulator\+::\+Point\+Bag@{org\+::newdawn\+::slick\+::geom\+::\+Mann\+Triangulator\+::\+Point\+Bag}}
+\subsubsection{\texorpdfstring{next}{next}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_mann_triangulator_1_1_point_bag}{Point\+Bag}} org.\+newdawn.\+slick.\+geom.\+Mann\+Triangulator.\+Point\+Bag.\+next\hspace{0.3cm}{\ttfamily [protected]}}
+
+The next bag in the list of bags 

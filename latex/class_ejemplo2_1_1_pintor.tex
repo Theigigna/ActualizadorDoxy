@@ -1,0 +1,101 @@
+\hypertarget{class_ejemplo2_1_1_pintor}{}\section{Ejemplo2.\+Pintor Class Reference}
+\label{class_ejemplo2_1_1_pintor}\index{Ejemplo2.\+Pintor@{Ejemplo2.\+Pintor}}
+Inheritance diagram for Ejemplo2.\+Pintor\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_ejemplo2_1_1_pintor}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_ejemplo2_1_1_pintor_a2b7757077832db106287bdd5cd27f89f}{Pintor}} (J\+Button \mbox{\hyperlink{class_ejemplo2_1_1_pintor_a6021262faf6f2f448fae53f631925af4}{b}}, \mbox{\hyperlink{class_ejemplo2_1_1_paleta}{Paleta}} \mbox{\hyperlink{class_ejemplo2_1_1_pintor_af9c943ecf491a9a812b1df951af13bf3}{p}}, \mbox{\hyperlink{class_ejemplo2_1_1_paso}{Paso}} \mbox{\hyperlink{class_ejemplo2_1_1_pintor_aa876f4590a419d58d81a29fcbf2a7529}{paso}})
+\item 
+void \mbox{\hyperlink{class_ejemplo2_1_1_pintor_a9d8a7b2851801f1613795f4848be48b3}{run}} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+J\+Button \mbox{\hyperlink{class_ejemplo2_1_1_pintor_a6021262faf6f2f448fae53f631925af4}{b}}
+\item 
+\mbox{\hyperlink{class_ejemplo2_1_1_paleta}{Paleta}} \mbox{\hyperlink{class_ejemplo2_1_1_pintor_af9c943ecf491a9a812b1df951af13bf3}{p}}
+\item 
+Color \mbox{\hyperlink{class_ejemplo2_1_1_pintor_a57bbfcbb65b0411c016704b96e9206d2}{negro}} = Color.\+black
+\item 
+\mbox{\hyperlink{class_ejemplo2_1_1_paso}{Paso}} \mbox{\hyperlink{class_ejemplo2_1_1_pintor_aa876f4590a419d58d81a29fcbf2a7529}{paso}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_ejemplo2_1_1_pintor_a2b7757077832db106287bdd5cd27f89f}\label{class_ejemplo2_1_1_pintor_a2b7757077832db106287bdd5cd27f89f}} 
+\index{Ejemplo2\+::\+Pintor@{Ejemplo2\+::\+Pintor}!Pintor@{Pintor}}
+\index{Pintor@{Pintor}!Ejemplo2\+::\+Pintor@{Ejemplo2\+::\+Pintor}}
+\subsubsection{\texorpdfstring{Pintor()}{Pintor()}}
+{\footnotesize\ttfamily Ejemplo2.\+Pintor.\+Pintor (\begin{DoxyParamCaption}\item[{J\+Button}]{b,  }\item[{\mbox{\hyperlink{class_ejemplo2_1_1_paleta}{Paleta}}}]{p,  }\item[{\mbox{\hyperlink{class_ejemplo2_1_1_paso}{Paso}}}]{paso }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+23     \{
+24         this.\mbox{\hyperlink{class_ejemplo2_1_1_pintor_a6021262faf6f2f448fae53f631925af4}{b}}=\mbox{\hyperlink{class_ejemplo2_1_1_pintor_a6021262faf6f2f448fae53f631925af4}{b}};
+25         this.\mbox{\hyperlink{class_ejemplo2_1_1_pintor_af9c943ecf491a9a812b1df951af13bf3}{p}}=\mbox{\hyperlink{class_ejemplo2_1_1_pintor_af9c943ecf491a9a812b1df951af13bf3}{p}};
+26         this.\mbox{\hyperlink{class_ejemplo2_1_1_pintor_aa876f4590a419d58d81a29fcbf2a7529}{paso}}=\mbox{\hyperlink{class_ejemplo2_1_1_pintor_aa876f4590a419d58d81a29fcbf2a7529}{paso}};
+27     \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_ejemplo2_1_1_pintor_a9d8a7b2851801f1613795f4848be48b3}\label{class_ejemplo2_1_1_pintor_a9d8a7b2851801f1613795f4848be48b3}} 
+\index{Ejemplo2\+::\+Pintor@{Ejemplo2\+::\+Pintor}!run@{run}}
+\index{run@{run}!Ejemplo2\+::\+Pintor@{Ejemplo2\+::\+Pintor}}
+\subsubsection{\texorpdfstring{run()}{run()}}
+{\footnotesize\ttfamily void Ejemplo2.\+Pintor.\+run (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+30     \{
+31         \textcolor{keywordflow}{while} (\textcolor{keyword}{true})
+32         \{
+33             \mbox{\hyperlink{class_ejemplo2_1_1_pintor_a6021262faf6f2f448fae53f631925af4}{b}}.setBackground(\mbox{\hyperlink{class_ejemplo2_1_1_pintor_a57bbfcbb65b0411c016704b96e9206d2}{negro}});             \textcolor{comment}{//Pinta el botón de negro}
+34             \textcolor{keywordflow}{try}
+35             \{
+36                 sleep(500 + (\textcolor{keywordtype}{int})(1500*Math.random()));  \textcolor{comment}{//Espera entre 0.5 y 2 seg.}
+37             \} \textcolor{keywordflow}{catch} (InterruptedException e)\{\}
+38             \mbox{\hyperlink{class_ejemplo2_1_1_pintor_aa876f4590a419d58d81a29fcbf2a7529}{paso}}.\mbox{\hyperlink{class_ejemplo2_1_1_paso_a6d40a9340440e7b4fc7f19a35df68001}{mirar}}();              \textcolor{comment}{//Mira a ver si tiene que detenerse}
+39             Color c=\mbox{\hyperlink{class_ejemplo2_1_1_pintor_af9c943ecf491a9a812b1df951af13bf3}{p}}.\mbox{\hyperlink{class_ejemplo2_1_1_paleta_a4b360ca77c1d02b9c06f5211effa22a0}{tomaColor}}();     \textcolor{comment}{//Toma un color cualquiera de la paleta}
+40             \mbox{\hyperlink{class_ejemplo2_1_1_pintor_a6021262faf6f2f448fae53f631925af4}{b}}.setBackground(c);        \textcolor{comment}{//y pinta con él el botón}
+41             \textcolor{keywordflow}{try}
+42             \{
+43                 sleep(1000 + (\textcolor{keywordtype}{int})(2000*Math.random()));  \textcolor{comment}{//Espera entre 1 y 3 seg.}
+44             \} \textcolor{keywordflow}{catch} (InterruptedException e)\{\}
+45             \mbox{\hyperlink{class_ejemplo2_1_1_pintor_aa876f4590a419d58d81a29fcbf2a7529}{paso}}.\mbox{\hyperlink{class_ejemplo2_1_1_paso_a6d40a9340440e7b4fc7f19a35df68001}{mirar}}();             \textcolor{comment}{//Mira a ver si tiene que detenerse}
+46             \mbox{\hyperlink{class_ejemplo2_1_1_pintor_af9c943ecf491a9a812b1df951af13bf3}{p}}.\mbox{\hyperlink{class_ejemplo2_1_1_paleta_abe11e44a413ddff63a5758f67ace794b}{dejaColor}}(c);           \textcolor{comment}{// Libera el color utilizado}
+47         \}
+48     \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_ejemplo2_1_1_pintor_a6021262faf6f2f448fae53f631925af4}\label{class_ejemplo2_1_1_pintor_a6021262faf6f2f448fae53f631925af4}} 
+\index{Ejemplo2\+::\+Pintor@{Ejemplo2\+::\+Pintor}!b@{b}}
+\index{b@{b}!Ejemplo2\+::\+Pintor@{Ejemplo2\+::\+Pintor}}
+\subsubsection{\texorpdfstring{b}{b}}
+{\footnotesize\ttfamily J\+Button Ejemplo2.\+Pintor.\+b\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_ejemplo2_1_1_pintor_a57bbfcbb65b0411c016704b96e9206d2}\label{class_ejemplo2_1_1_pintor_a57bbfcbb65b0411c016704b96e9206d2}} 
+\index{Ejemplo2\+::\+Pintor@{Ejemplo2\+::\+Pintor}!negro@{negro}}
+\index{negro@{negro}!Ejemplo2\+::\+Pintor@{Ejemplo2\+::\+Pintor}}
+\subsubsection{\texorpdfstring{negro}{negro}}
+{\footnotesize\ttfamily Color Ejemplo2.\+Pintor.\+negro = Color.\+black\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_ejemplo2_1_1_pintor_af9c943ecf491a9a812b1df951af13bf3}\label{class_ejemplo2_1_1_pintor_af9c943ecf491a9a812b1df951af13bf3}} 
+\index{Ejemplo2\+::\+Pintor@{Ejemplo2\+::\+Pintor}!p@{p}}
+\index{p@{p}!Ejemplo2\+::\+Pintor@{Ejemplo2\+::\+Pintor}}
+\subsubsection{\texorpdfstring{p}{p}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_ejemplo2_1_1_paleta}{Paleta}} Ejemplo2.\+Pintor.\+p\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_ejemplo2_1_1_pintor_aa876f4590a419d58d81a29fcbf2a7529}\label{class_ejemplo2_1_1_pintor_aa876f4590a419d58d81a29fcbf2a7529}} 
+\index{Ejemplo2\+::\+Pintor@{Ejemplo2\+::\+Pintor}!paso@{paso}}
+\index{paso@{paso}!Ejemplo2\+::\+Pintor@{Ejemplo2\+::\+Pintor}}
+\subsubsection{\texorpdfstring{paso}{paso}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_ejemplo2_1_1_paso}{Paso}} Ejemplo2.\+Pintor.\+paso\hspace{0.3cm}{\ttfamily [private]}}
+

@@ -1,0 +1,358 @@
+\hypertarget{classorg_1_1newdawn_1_1slick_1_1openal_1_1_deferred_sound}{}\section{org.\+newdawn.\+slick.\+openal.\+Deferred\+Sound Class Reference}
+\label{classorg_1_1newdawn_1_1slick_1_1openal_1_1_deferred_sound}\index{org.\+newdawn.\+slick.\+openal.\+Deferred\+Sound@{org.\+newdawn.\+slick.\+openal.\+Deferred\+Sound}}
+Inheritance diagram for org.\+newdawn.\+slick.\+openal.\+Deferred\+Sound\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classorg_1_1newdawn_1_1slick_1_1openal_1_1_deferred_sound}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_deferred_sound_a8861b7f487cf1d467a062106b9045fbb}{Deferred\+Sound}} (String \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_deferred_sound_adfed2acfb0cb1ef789edfc3102fa682c}{ref}}, Input\+Stream \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_deferred_sound_a3abbd7ab8edc3ba6fc29e0a62388b898}{in}}, int \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_deferred_sound_aaebd240dac7c3e4dba3a81fe174a9028}{type}})
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_deferred_sound_a4f7e7f24c22aa787cc38ef670c4e4dc8}{load}} ()  throws I\+O\+Exception 
+\item 
+boolean \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_deferred_sound_a165c465a5d0e1092cf2a6c1a0cf77e96}{is\+Playing}} ()
+\item 
+int \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_deferred_sound_a45f8b32fe216cc2430b16a10f1104aab}{play\+As\+Music}} (float pitch, float gain, boolean loop)
+\item 
+int \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_deferred_sound_a190d70bc5dc152dbc8ca60a2842d02ee}{play\+As\+Sound\+Effect}} (float pitch, float gain, boolean loop)
+\item 
+int \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_deferred_sound_ae3a58c7d18fdd5d5444351631977eb8f}{play\+As\+Sound\+Effect}} (float pitch, float gain, boolean loop, float x, float y, float z)
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_deferred_sound_af5e0e80f3944f1cb3bba586f67b94337}{stop}} ()
+\item 
+String \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_deferred_sound_ade00f475d697e1a4152be52b478210cc}{get\+Description}} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static final int \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_deferred_sound_a8c51f8e7ef170801332ccd24b4162c34}{O\+GG}} = 1
+\item 
+static final int \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_deferred_sound_af83a9e7ce95e92c243d48878d0576e6e}{W\+AV}} = 2
+\item 
+static final int \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_deferred_sound_aeaaf7badbe884f825415140f16141fe4}{M\+OD}} = 3
+\item 
+static final int \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_deferred_sound_abf62a0f4062961ae7a52af61455ba0ed}{A\+IF}} = 4
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_deferred_sound_a63fc1a65a177fcaeb93ba0a071c10086}{check\+Target}} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_deferred_sound_aaebd240dac7c3e4dba3a81fe174a9028}{type}}
+\item 
+String \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_deferred_sound_adfed2acfb0cb1ef789edfc3102fa682c}{ref}}
+\item 
+\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1openal_1_1_audio}{Audio}} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_deferred_sound_ab156655c2d91c0a6bbec8bd4438ac875}{target}}
+\item 
+Input\+Stream \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_deferred_sound_a3abbd7ab8edc3ba6fc29e0a62388b898}{in}}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+A sound implementation that can load the actual sound file at a later point.
+
+\begin{DoxyAuthor}{Author}
+kevin 
+\end{DoxyAuthor}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1openal_1_1_deferred_sound_a8861b7f487cf1d467a062106b9045fbb}\label{classorg_1_1newdawn_1_1slick_1_1openal_1_1_deferred_sound_a8861b7f487cf1d467a062106b9045fbb}} 
+\index{org\+::newdawn\+::slick\+::openal\+::\+Deferred\+Sound@{org\+::newdawn\+::slick\+::openal\+::\+Deferred\+Sound}!Deferred\+Sound@{Deferred\+Sound}}
+\index{Deferred\+Sound@{Deferred\+Sound}!org\+::newdawn\+::slick\+::openal\+::\+Deferred\+Sound@{org\+::newdawn\+::slick\+::openal\+::\+Deferred\+Sound}}
+\subsubsection{\texorpdfstring{Deferred\+Sound()}{DeferredSound()}}
+{\footnotesize\ttfamily org.\+newdawn.\+slick.\+openal.\+Deferred\+Sound.\+Deferred\+Sound (\begin{DoxyParamCaption}\item[{String}]{ref,  }\item[{Input\+Stream}]{in,  }\item[{int}]{type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Create a new sound on request to load
+
+
+\begin{DoxyParams}{Parameters}
+{\em ref} & The location of the sound to load \\
+\hline
+{\em type} & The type of sound to load \\
+\hline
+{\em in} & The input stream to load from \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+42                                                                \{
+43         this.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_deferred_sound_adfed2acfb0cb1ef789edfc3102fa682c}{ref}} = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_deferred_sound_adfed2acfb0cb1ef789edfc3102fa682c}{ref}};
+44         this.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_deferred_sound_aaebd240dac7c3e4dba3a81fe174a9028}{type}} = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_deferred_sound_aaebd240dac7c3e4dba3a81fe174a9028}{type}};
+45         
+46         \textcolor{comment}{// nasty hack to detect when we're loading from a stream}
+47         \textcolor{keywordflow}{if} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_deferred_sound_adfed2acfb0cb1ef789edfc3102fa682c}{ref}}.equals(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_deferred_sound_a3abbd7ab8edc3ba6fc29e0a62388b898}{in}}.toString())) \{
+48             this.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_deferred_sound_a3abbd7ab8edc3ba6fc29e0a62388b898}{in}} = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_deferred_sound_a3abbd7ab8edc3ba6fc29e0a62388b898}{in}};
+49         \}
+50         
+51         LoadingList.get().add(\textcolor{keyword}{this});
+52     \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1openal_1_1_deferred_sound_a63fc1a65a177fcaeb93ba0a071c10086}\label{classorg_1_1newdawn_1_1slick_1_1openal_1_1_deferred_sound_a63fc1a65a177fcaeb93ba0a071c10086}} 
+\index{org\+::newdawn\+::slick\+::openal\+::\+Deferred\+Sound@{org\+::newdawn\+::slick\+::openal\+::\+Deferred\+Sound}!check\+Target@{check\+Target}}
+\index{check\+Target@{check\+Target}!org\+::newdawn\+::slick\+::openal\+::\+Deferred\+Sound@{org\+::newdawn\+::slick\+::openal\+::\+Deferred\+Sound}}
+\subsubsection{\texorpdfstring{check\+Target()}{checkTarget()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+openal.\+Deferred\+Sound.\+check\+Target (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+Check if the target has already been loaded 
+\begin{DoxyCode}
+57                                \{
+58         \textcolor{keywordflow}{if} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_deferred_sound_ab156655c2d91c0a6bbec8bd4438ac875}{target}} == null) \{
+59             \textcolor{keywordflow}{throw} \textcolor{keyword}{new} RuntimeException(\textcolor{stringliteral}{"Attempt to use deferred sound before loading"});
+60         \}
+61     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1openal_1_1_deferred_sound_ade00f475d697e1a4152be52b478210cc}\label{classorg_1_1newdawn_1_1slick_1_1openal_1_1_deferred_sound_ade00f475d697e1a4152be52b478210cc}} 
+\index{org\+::newdawn\+::slick\+::openal\+::\+Deferred\+Sound@{org\+::newdawn\+::slick\+::openal\+::\+Deferred\+Sound}!get\+Description@{get\+Description}}
+\index{get\+Description@{get\+Description}!org\+::newdawn\+::slick\+::openal\+::\+Deferred\+Sound@{org\+::newdawn\+::slick\+::openal\+::\+Deferred\+Sound}}
+\subsubsection{\texorpdfstring{get\+Description()}{getDescription()}}
+{\footnotesize\ttfamily String org.\+newdawn.\+slick.\+openal.\+Deferred\+Sound.\+get\+Description (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1loading_1_1_deferred_resource_ab529c610c01ad0aaab6361c13010ba06}{org.\+newdawn.\+slick.\+loading.\+Deferred\+Resource\+::get\+Description()}} 
+\end{DoxySeeAlso}
+
+
+Implements \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1loading_1_1_deferred_resource_ab529c610c01ad0aaab6361c13010ba06}{org.\+newdawn.\+slick.\+loading.\+Deferred\+Resource}}.
+
+
+\begin{DoxyCode}
+160                                    \{
+161         \textcolor{keywordflow}{return} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_deferred_sound_adfed2acfb0cb1ef789edfc3102fa682c}{ref}};
+162     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1openal_1_1_deferred_sound_a165c465a5d0e1092cf2a6c1a0cf77e96}\label{classorg_1_1newdawn_1_1slick_1_1openal_1_1_deferred_sound_a165c465a5d0e1092cf2a6c1a0cf77e96}} 
+\index{org\+::newdawn\+::slick\+::openal\+::\+Deferred\+Sound@{org\+::newdawn\+::slick\+::openal\+::\+Deferred\+Sound}!is\+Playing@{is\+Playing}}
+\index{is\+Playing@{is\+Playing}!org\+::newdawn\+::slick\+::openal\+::\+Deferred\+Sound@{org\+::newdawn\+::slick\+::openal\+::\+Deferred\+Sound}}
+\subsubsection{\texorpdfstring{is\+Playing()}{isPlaying()}}
+{\footnotesize\ttfamily boolean org.\+newdawn.\+slick.\+openal.\+Deferred\+Sound.\+is\+Playing (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_audio_impl_a842212ec52d43824dee1d7c6e7fa4ce1}{org.\+newdawn.\+slick.\+openal.\+Audio\+Impl\+::is\+Playing()}} 
+\end{DoxySeeAlso}
+
+
+Implements \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1openal_1_1_audio_a842b49128a58be8c4473cbcc8ee4ad9e}{org.\+newdawn.\+slick.\+openal.\+Audio}}.
+
+
+\begin{DoxyCode}
+112                                \{
+113         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_deferred_sound_a63fc1a65a177fcaeb93ba0a071c10086}{checkTarget}}();
+114         
+115         \textcolor{keywordflow}{return} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_deferred_sound_ab156655c2d91c0a6bbec8bd4438ac875}{target}}.\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1openal_1_1_audio_a842b49128a58be8c4473cbcc8ee4ad9e}{isPlaying}}();
+116     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1openal_1_1_deferred_sound_a4f7e7f24c22aa787cc38ef670c4e4dc8}\label{classorg_1_1newdawn_1_1slick_1_1openal_1_1_deferred_sound_a4f7e7f24c22aa787cc38ef670c4e4dc8}} 
+\index{org\+::newdawn\+::slick\+::openal\+::\+Deferred\+Sound@{org\+::newdawn\+::slick\+::openal\+::\+Deferred\+Sound}!load@{load}}
+\index{load@{load}!org\+::newdawn\+::slick\+::openal\+::\+Deferred\+Sound@{org\+::newdawn\+::slick\+::openal\+::\+Deferred\+Sound}}
+\subsubsection{\texorpdfstring{load()}{load()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+openal.\+Deferred\+Sound.\+load (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws I\+O\+Exception\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1loading_1_1_deferred_resource_a08c6171e3a44634c06c9160f5b785ad6}{org.\+newdawn.\+slick.\+loading.\+Deferred\+Resource\+::load()}} 
+\end{DoxySeeAlso}
+
+
+Implements \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1loading_1_1_deferred_resource_a08c6171e3a44634c06c9160f5b785ad6}{org.\+newdawn.\+slick.\+loading.\+Deferred\+Resource}}.
+
+
+\begin{DoxyCode}
+66                                           \{
+67         \textcolor{keywordtype}{boolean} before = SoundStore.get().isDeferredLoading();
+68         SoundStore.get().setDeferredLoading(\textcolor{keyword}{false});
+69         \textcolor{keywordflow}{if} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_deferred_sound_a3abbd7ab8edc3ba6fc29e0a62388b898}{in}} != null) \{
+70             \textcolor{keywordflow}{switch} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_deferred_sound_aaebd240dac7c3e4dba3a81fe174a9028}{type}}) \{
+71             \textcolor{keywordflow}{case} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_deferred_sound_a8c51f8e7ef170801332ccd24b4162c34}{OGG}}:
+72                 \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_deferred_sound_ab156655c2d91c0a6bbec8bd4438ac875}{target}} = SoundStore.get().getOgg(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_deferred_sound_a3abbd7ab8edc3ba6fc29e0a62388b898}{in}});
+73                 \textcolor{keywordflow}{break};
+74             \textcolor{keywordflow}{case} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_deferred_sound_af83a9e7ce95e92c243d48878d0576e6e}{WAV}}:
+75                 \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_deferred_sound_ab156655c2d91c0a6bbec8bd4438ac875}{target}} = SoundStore.get().getWAV(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_deferred_sound_a3abbd7ab8edc3ba6fc29e0a62388b898}{in}});
+76                 \textcolor{keywordflow}{break};
+77             \textcolor{keywordflow}{case} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_deferred_sound_aeaaf7badbe884f825415140f16141fe4}{MOD}}:
+78                 \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_deferred_sound_ab156655c2d91c0a6bbec8bd4438ac875}{target}} = SoundStore.get().getMOD(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_deferred_sound_a3abbd7ab8edc3ba6fc29e0a62388b898}{in}});
+79                 \textcolor{keywordflow}{break};
+80             \textcolor{keywordflow}{case} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_deferred_sound_abf62a0f4062961ae7a52af61455ba0ed}{AIF}}:
+81                 \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_deferred_sound_ab156655c2d91c0a6bbec8bd4438ac875}{target}} = SoundStore.get().getAIF(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_deferred_sound_a3abbd7ab8edc3ba6fc29e0a62388b898}{in}});
+82                 \textcolor{keywordflow}{break};
+83             \textcolor{keywordflow}{default}:
+84                 Log.error(\textcolor{stringliteral}{"Unrecognised sound type: "}+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_deferred_sound_aaebd240dac7c3e4dba3a81fe174a9028}{type}});
+85                 \textcolor{keywordflow}{break};
+86             \}
+87         \} \textcolor{keywordflow}{else} \{
+88             \textcolor{keywordflow}{switch} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_deferred_sound_aaebd240dac7c3e4dba3a81fe174a9028}{type}}) \{
+89             \textcolor{keywordflow}{case} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_deferred_sound_a8c51f8e7ef170801332ccd24b4162c34}{OGG}}:
+90                 \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_deferred_sound_ab156655c2d91c0a6bbec8bd4438ac875}{target}} = SoundStore.get().getOgg(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_deferred_sound_adfed2acfb0cb1ef789edfc3102fa682c}{ref}});
+91                 \textcolor{keywordflow}{break};
+92             \textcolor{keywordflow}{case} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_deferred_sound_af83a9e7ce95e92c243d48878d0576e6e}{WAV}}:
+93                 \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_deferred_sound_ab156655c2d91c0a6bbec8bd4438ac875}{target}} = SoundStore.get().getWAV(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_deferred_sound_adfed2acfb0cb1ef789edfc3102fa682c}{ref}});
+94                 \textcolor{keywordflow}{break};
+95             \textcolor{keywordflow}{case} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_deferred_sound_aeaaf7badbe884f825415140f16141fe4}{MOD}}:
+96                 \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_deferred_sound_ab156655c2d91c0a6bbec8bd4438ac875}{target}} = SoundStore.get().getMOD(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_deferred_sound_adfed2acfb0cb1ef789edfc3102fa682c}{ref}});
+97                 \textcolor{keywordflow}{break};
+98             \textcolor{keywordflow}{case} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_deferred_sound_abf62a0f4062961ae7a52af61455ba0ed}{AIF}}:
+99                 \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_deferred_sound_ab156655c2d91c0a6bbec8bd4438ac875}{target}} = SoundStore.get().getAIF(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_deferred_sound_adfed2acfb0cb1ef789edfc3102fa682c}{ref}});
+100                 \textcolor{keywordflow}{break};
+101             \textcolor{keywordflow}{default}:
+102                 Log.error(\textcolor{stringliteral}{"Unrecognised sound type: "}+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_deferred_sound_aaebd240dac7c3e4dba3a81fe174a9028}{type}});
+103                 \textcolor{keywordflow}{break};
+104             \}
+105         \}
+106         SoundStore.get().setDeferredLoading(before);
+107     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1openal_1_1_deferred_sound_a45f8b32fe216cc2430b16a10f1104aab}\label{classorg_1_1newdawn_1_1slick_1_1openal_1_1_deferred_sound_a45f8b32fe216cc2430b16a10f1104aab}} 
+\index{org\+::newdawn\+::slick\+::openal\+::\+Deferred\+Sound@{org\+::newdawn\+::slick\+::openal\+::\+Deferred\+Sound}!play\+As\+Music@{play\+As\+Music}}
+\index{play\+As\+Music@{play\+As\+Music}!org\+::newdawn\+::slick\+::openal\+::\+Deferred\+Sound@{org\+::newdawn\+::slick\+::openal\+::\+Deferred\+Sound}}
+\subsubsection{\texorpdfstring{play\+As\+Music()}{playAsMusic()}}
+{\footnotesize\ttfamily int org.\+newdawn.\+slick.\+openal.\+Deferred\+Sound.\+play\+As\+Music (\begin{DoxyParamCaption}\item[{float}]{pitch,  }\item[{float}]{gain,  }\item[{boolean}]{loop }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_audio_impl_ac8b7973bc209b0a2ecfc169b1d9eaae4}{org.\+newdawn.\+slick.\+openal.\+Audio\+Impl\+::play\+As\+Music(float, float, boolean)}} 
+\end{DoxySeeAlso}
+
+
+Implements \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1openal_1_1_audio_a9a13784b5ec9ce06c8756f98b00e05ab}{org.\+newdawn.\+slick.\+openal.\+Audio}}.
+
+
+\begin{DoxyCode}
+121                                                                   \{
+122         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_deferred_sound_a63fc1a65a177fcaeb93ba0a071c10086}{checkTarget}}();
+123         \textcolor{keywordflow}{return} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_deferred_sound_ab156655c2d91c0a6bbec8bd4438ac875}{target}}.\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1openal_1_1_audio_a9a13784b5ec9ce06c8756f98b00e05ab}{playAsMusic}}(pitch, gain, loop);
+124     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1openal_1_1_deferred_sound_a190d70bc5dc152dbc8ca60a2842d02ee}\label{classorg_1_1newdawn_1_1slick_1_1openal_1_1_deferred_sound_a190d70bc5dc152dbc8ca60a2842d02ee}} 
+\index{org\+::newdawn\+::slick\+::openal\+::\+Deferred\+Sound@{org\+::newdawn\+::slick\+::openal\+::\+Deferred\+Sound}!play\+As\+Sound\+Effect@{play\+As\+Sound\+Effect}}
+\index{play\+As\+Sound\+Effect@{play\+As\+Sound\+Effect}!org\+::newdawn\+::slick\+::openal\+::\+Deferred\+Sound@{org\+::newdawn\+::slick\+::openal\+::\+Deferred\+Sound}}
+\subsubsection{\texorpdfstring{play\+As\+Sound\+Effect()}{playAsSoundEffect()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily int org.\+newdawn.\+slick.\+openal.\+Deferred\+Sound.\+play\+As\+Sound\+Effect (\begin{DoxyParamCaption}\item[{float}]{pitch,  }\item[{float}]{gain,  }\item[{boolean}]{loop }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_audio_impl_a731e0f7331c13b1c6507303ab875c6da}{org.\+newdawn.\+slick.\+openal.\+Audio\+Impl\+::play\+As\+Sound\+Effect(float, float, boolean)}} 
+\end{DoxySeeAlso}
+
+
+Implements \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1openal_1_1_audio_a69c3621a4a4bcbe9f1711f569c54017b}{org.\+newdawn.\+slick.\+openal.\+Audio}}.
+
+
+\begin{DoxyCode}
+129                                                                         \{
+130         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_deferred_sound_a63fc1a65a177fcaeb93ba0a071c10086}{checkTarget}}();
+131         \textcolor{keywordflow}{return} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_deferred_sound_ab156655c2d91c0a6bbec8bd4438ac875}{target}}.\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1openal_1_1_audio_a69c3621a4a4bcbe9f1711f569c54017b}{playAsSoundEffect}}(pitch, gain, loop);
+132     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1openal_1_1_deferred_sound_ae3a58c7d18fdd5d5444351631977eb8f}\label{classorg_1_1newdawn_1_1slick_1_1openal_1_1_deferred_sound_ae3a58c7d18fdd5d5444351631977eb8f}} 
+\index{org\+::newdawn\+::slick\+::openal\+::\+Deferred\+Sound@{org\+::newdawn\+::slick\+::openal\+::\+Deferred\+Sound}!play\+As\+Sound\+Effect@{play\+As\+Sound\+Effect}}
+\index{play\+As\+Sound\+Effect@{play\+As\+Sound\+Effect}!org\+::newdawn\+::slick\+::openal\+::\+Deferred\+Sound@{org\+::newdawn\+::slick\+::openal\+::\+Deferred\+Sound}}
+\subsubsection{\texorpdfstring{play\+As\+Sound\+Effect()}{playAsSoundEffect()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily int org.\+newdawn.\+slick.\+openal.\+Deferred\+Sound.\+play\+As\+Sound\+Effect (\begin{DoxyParamCaption}\item[{float}]{pitch,  }\item[{float}]{gain,  }\item[{boolean}]{loop,  }\item[{float}]{x,  }\item[{float}]{y,  }\item[{float}]{z }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Play this sound as a sound effect
+
+
+\begin{DoxyParams}{Parameters}
+{\em pitch} & The pitch of the play back \\
+\hline
+{\em gain} & The gain of the play back \\
+\hline
+{\em loop} & True if we should loop \\
+\hline
+{\em x} & The x position of the sound \\
+\hline
+{\em y} & The y position of the sound \\
+\hline
+{\em z} & The z position of the sound \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1openal_1_1_audio_aebd22c97a1ed92528ad816e7152c7e00}{org.\+newdawn.\+slick.\+openal.\+Audio}}.
+
+
+\begin{DoxyCode}
+144                                                                                                    \{
+145         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_deferred_sound_a63fc1a65a177fcaeb93ba0a071c10086}{checkTarget}}();
+146         \textcolor{keywordflow}{return} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_deferred_sound_ab156655c2d91c0a6bbec8bd4438ac875}{target}}.\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1openal_1_1_audio_a69c3621a4a4bcbe9f1711f569c54017b}{playAsSoundEffect}}(pitch, gain, loop, x, y, z);
+147     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1openal_1_1_deferred_sound_af5e0e80f3944f1cb3bba586f67b94337}\label{classorg_1_1newdawn_1_1slick_1_1openal_1_1_deferred_sound_af5e0e80f3944f1cb3bba586f67b94337}} 
+\index{org\+::newdawn\+::slick\+::openal\+::\+Deferred\+Sound@{org\+::newdawn\+::slick\+::openal\+::\+Deferred\+Sound}!stop@{stop}}
+\index{stop@{stop}!org\+::newdawn\+::slick\+::openal\+::\+Deferred\+Sound@{org\+::newdawn\+::slick\+::openal\+::\+Deferred\+Sound}}
+\subsubsection{\texorpdfstring{stop()}{stop()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+openal.\+Deferred\+Sound.\+stop (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_audio_impl_a8ad896e19c35a9d3d1d93e52685158ff}{org.\+newdawn.\+slick.\+openal.\+Audio\+Impl\+::stop()}} 
+\end{DoxySeeAlso}
+
+
+Implements \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1openal_1_1_audio_a8346ca83b84cb6605efb695462f12337}{org.\+newdawn.\+slick.\+openal.\+Audio}}.
+
+
+\begin{DoxyCode}
+152                        \{
+153         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_deferred_sound_a63fc1a65a177fcaeb93ba0a071c10086}{checkTarget}}();
+154         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_deferred_sound_ab156655c2d91c0a6bbec8bd4438ac875}{target}}.\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1openal_1_1_audio_a8346ca83b84cb6605efb695462f12337}{stop}}();
+155     \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1openal_1_1_deferred_sound_abf62a0f4062961ae7a52af61455ba0ed}\label{classorg_1_1newdawn_1_1slick_1_1openal_1_1_deferred_sound_abf62a0f4062961ae7a52af61455ba0ed}} 
+\index{org\+::newdawn\+::slick\+::openal\+::\+Deferred\+Sound@{org\+::newdawn\+::slick\+::openal\+::\+Deferred\+Sound}!A\+IF@{A\+IF}}
+\index{A\+IF@{A\+IF}!org\+::newdawn\+::slick\+::openal\+::\+Deferred\+Sound@{org\+::newdawn\+::slick\+::openal\+::\+Deferred\+Sound}}
+\subsubsection{\texorpdfstring{A\+IF}{AIF}}
+{\footnotesize\ttfamily final int org.\+newdawn.\+slick.\+openal.\+Deferred\+Sound.\+A\+IF = 4\hspace{0.3cm}{\ttfamily [static]}}
+
+Indicate a A\+IF to be loaded \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1openal_1_1_deferred_sound_a3abbd7ab8edc3ba6fc29e0a62388b898}\label{classorg_1_1newdawn_1_1slick_1_1openal_1_1_deferred_sound_a3abbd7ab8edc3ba6fc29e0a62388b898}} 
+\index{org\+::newdawn\+::slick\+::openal\+::\+Deferred\+Sound@{org\+::newdawn\+::slick\+::openal\+::\+Deferred\+Sound}!in@{in}}
+\index{in@{in}!org\+::newdawn\+::slick\+::openal\+::\+Deferred\+Sound@{org\+::newdawn\+::slick\+::openal\+::\+Deferred\+Sound}}
+\subsubsection{\texorpdfstring{in}{in}}
+{\footnotesize\ttfamily Input\+Stream org.\+newdawn.\+slick.\+openal.\+Deferred\+Sound.\+in\hspace{0.3cm}{\ttfamily [private]}}
+
+The input stream to load the sound this proxy wraps from (can be null) \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1openal_1_1_deferred_sound_aeaaf7badbe884f825415140f16141fe4}\label{classorg_1_1newdawn_1_1slick_1_1openal_1_1_deferred_sound_aeaaf7badbe884f825415140f16141fe4}} 
+\index{org\+::newdawn\+::slick\+::openal\+::\+Deferred\+Sound@{org\+::newdawn\+::slick\+::openal\+::\+Deferred\+Sound}!M\+OD@{M\+OD}}
+\index{M\+OD@{M\+OD}!org\+::newdawn\+::slick\+::openal\+::\+Deferred\+Sound@{org\+::newdawn\+::slick\+::openal\+::\+Deferred\+Sound}}
+\subsubsection{\texorpdfstring{M\+OD}{MOD}}
+{\footnotesize\ttfamily final int org.\+newdawn.\+slick.\+openal.\+Deferred\+Sound.\+M\+OD = 3\hspace{0.3cm}{\ttfamily [static]}}
+
+Indicate a M\+O\+D/\+XM to be loaded \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1openal_1_1_deferred_sound_a8c51f8e7ef170801332ccd24b4162c34}\label{classorg_1_1newdawn_1_1slick_1_1openal_1_1_deferred_sound_a8c51f8e7ef170801332ccd24b4162c34}} 
+\index{org\+::newdawn\+::slick\+::openal\+::\+Deferred\+Sound@{org\+::newdawn\+::slick\+::openal\+::\+Deferred\+Sound}!O\+GG@{O\+GG}}
+\index{O\+GG@{O\+GG}!org\+::newdawn\+::slick\+::openal\+::\+Deferred\+Sound@{org\+::newdawn\+::slick\+::openal\+::\+Deferred\+Sound}}
+\subsubsection{\texorpdfstring{O\+GG}{OGG}}
+{\footnotesize\ttfamily final int org.\+newdawn.\+slick.\+openal.\+Deferred\+Sound.\+O\+GG = 1\hspace{0.3cm}{\ttfamily [static]}}
+
+Indicate a O\+GG to be loaded \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1openal_1_1_deferred_sound_adfed2acfb0cb1ef789edfc3102fa682c}\label{classorg_1_1newdawn_1_1slick_1_1openal_1_1_deferred_sound_adfed2acfb0cb1ef789edfc3102fa682c}} 
+\index{org\+::newdawn\+::slick\+::openal\+::\+Deferred\+Sound@{org\+::newdawn\+::slick\+::openal\+::\+Deferred\+Sound}!ref@{ref}}
+\index{ref@{ref}!org\+::newdawn\+::slick\+::openal\+::\+Deferred\+Sound@{org\+::newdawn\+::slick\+::openal\+::\+Deferred\+Sound}}
+\subsubsection{\texorpdfstring{ref}{ref}}
+{\footnotesize\ttfamily String org.\+newdawn.\+slick.\+openal.\+Deferred\+Sound.\+ref\hspace{0.3cm}{\ttfamily [private]}}
+
+The location of the sound this proxy wraps \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1openal_1_1_deferred_sound_ab156655c2d91c0a6bbec8bd4438ac875}\label{classorg_1_1newdawn_1_1slick_1_1openal_1_1_deferred_sound_ab156655c2d91c0a6bbec8bd4438ac875}} 
+\index{org\+::newdawn\+::slick\+::openal\+::\+Deferred\+Sound@{org\+::newdawn\+::slick\+::openal\+::\+Deferred\+Sound}!target@{target}}
+\index{target@{target}!org\+::newdawn\+::slick\+::openal\+::\+Deferred\+Sound@{org\+::newdawn\+::slick\+::openal\+::\+Deferred\+Sound}}
+\subsubsection{\texorpdfstring{target}{target}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1openal_1_1_audio}{Audio}} org.\+newdawn.\+slick.\+openal.\+Deferred\+Sound.\+target\hspace{0.3cm}{\ttfamily [private]}}
+
+The loaded sound if it\textquotesingle{}s already been brought up \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1openal_1_1_deferred_sound_aaebd240dac7c3e4dba3a81fe174a9028}\label{classorg_1_1newdawn_1_1slick_1_1openal_1_1_deferred_sound_aaebd240dac7c3e4dba3a81fe174a9028}} 
+\index{org\+::newdawn\+::slick\+::openal\+::\+Deferred\+Sound@{org\+::newdawn\+::slick\+::openal\+::\+Deferred\+Sound}!type@{type}}
+\index{type@{type}!org\+::newdawn\+::slick\+::openal\+::\+Deferred\+Sound@{org\+::newdawn\+::slick\+::openal\+::\+Deferred\+Sound}}
+\subsubsection{\texorpdfstring{type}{type}}
+{\footnotesize\ttfamily int org.\+newdawn.\+slick.\+openal.\+Deferred\+Sound.\+type\hspace{0.3cm}{\ttfamily [private]}}
+
+The type of sound to be loader \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1openal_1_1_deferred_sound_af83a9e7ce95e92c243d48878d0576e6e}\label{classorg_1_1newdawn_1_1slick_1_1openal_1_1_deferred_sound_af83a9e7ce95e92c243d48878d0576e6e}} 
+\index{org\+::newdawn\+::slick\+::openal\+::\+Deferred\+Sound@{org\+::newdawn\+::slick\+::openal\+::\+Deferred\+Sound}!W\+AV@{W\+AV}}
+\index{W\+AV@{W\+AV}!org\+::newdawn\+::slick\+::openal\+::\+Deferred\+Sound@{org\+::newdawn\+::slick\+::openal\+::\+Deferred\+Sound}}
+\subsubsection{\texorpdfstring{W\+AV}{WAV}}
+{\footnotesize\ttfamily final int org.\+newdawn.\+slick.\+openal.\+Deferred\+Sound.\+W\+AV = 2\hspace{0.3cm}{\ttfamily [static]}}
+
+Indicate a W\+AV to be loaded 

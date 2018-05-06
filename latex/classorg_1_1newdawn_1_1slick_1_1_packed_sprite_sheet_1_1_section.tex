@@ -1,0 +1,117 @@
+\hypertarget{classorg_1_1newdawn_1_1slick_1_1_packed_sprite_sheet_1_1_section}{}\section{org.\+newdawn.\+slick.\+Packed\+Sprite\+Sheet.\+Section Class Reference}
+\label{classorg_1_1newdawn_1_1slick_1_1_packed_sprite_sheet_1_1_section}\index{org.\+newdawn.\+slick.\+Packed\+Sprite\+Sheet.\+Section@{org.\+newdawn.\+slick.\+Packed\+Sprite\+Sheet.\+Section}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_packed_sprite_sheet_1_1_section_a5fce67d90dcd951945532a9711f6c5d9}{Section}} (Buffered\+Reader reader)  throws I\+O\+Exception 
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_packed_sprite_sheet_1_1_section_ae603cab589363ffc1b833258b559937b}{x}}
+\item 
+int \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_packed_sprite_sheet_1_1_section_a7d86b43b67407affcf680d1cd8a779b6}{y}}
+\item 
+int \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_packed_sprite_sheet_1_1_section_a8ba0f4e09e47b11d4d7a3d49716d5878}{width}}
+\item 
+int \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_packed_sprite_sheet_1_1_section_a124dc6dd1dace77f4781fff3c1f6888c}{height}}
+\item 
+int \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_packed_sprite_sheet_1_1_section_acc4f72d41639de1c3175edd200052884}{tilesx}}
+\item 
+int \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_packed_sprite_sheet_1_1_section_aa43b4c5021af79e89586876435b2a9cc}{tilesy}}
+\item 
+String \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_packed_sprite_sheet_1_1_section_ae0f0486e047a283f5beb7d7a42311d07}{name}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A single section defined within the packed sheet
+
+\begin{DoxyAuthor}{Author}
+kevin 
+\end{DoxyAuthor}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1_packed_sprite_sheet_1_1_section_a5fce67d90dcd951945532a9711f6c5d9}\label{classorg_1_1newdawn_1_1slick_1_1_packed_sprite_sheet_1_1_section_a5fce67d90dcd951945532a9711f6c5d9}} 
+\index{org\+::newdawn\+::slick\+::\+Packed\+Sprite\+Sheet\+::\+Section@{org\+::newdawn\+::slick\+::\+Packed\+Sprite\+Sheet\+::\+Section}!Section@{Section}}
+\index{Section@{Section}!org\+::newdawn\+::slick\+::\+Packed\+Sprite\+Sheet\+::\+Section@{org\+::newdawn\+::slick\+::\+Packed\+Sprite\+Sheet\+::\+Section}}
+\subsubsection{\texorpdfstring{Section()}{Section()}}
+{\footnotesize\ttfamily org.\+newdawn.\+slick.\+Packed\+Sprite\+Sheet.\+Section.\+Section (\begin{DoxyParamCaption}\item[{Buffered\+Reader}]{reader }\end{DoxyParamCaption}) throws I\+O\+Exception\hspace{0.3cm}{\ttfamily [inline]}}
+
+Create a new section by reading the stream provided
+
+
+\begin{DoxyParams}{Parameters}
+{\em reader} & The reader from which the definition can be read \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em I\+O\+Exception} & Indicates a failure toread the provided stream \\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyCode}
+177                                                                  \{
+178             \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_packed_sprite_sheet_1_1_section_ae0f0486e047a283f5beb7d7a42311d07}{name}} = reader.readLine().trim();
+179             
+180             \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_packed_sprite_sheet_1_1_section_ae603cab589363ffc1b833258b559937b}{x}} = Integer.parseInt(reader.readLine().trim());
+181             \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_packed_sprite_sheet_1_1_section_a7d86b43b67407affcf680d1cd8a779b6}{y}} = Integer.parseInt(reader.readLine().trim());
+182             \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_packed_sprite_sheet_1_1_section_a8ba0f4e09e47b11d4d7a3d49716d5878}{width}} = Integer.parseInt(reader.readLine().trim());
+183             \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_packed_sprite_sheet_1_1_section_a124dc6dd1dace77f4781fff3c1f6888c}{height}} = Integer.parseInt(reader.readLine().trim());
+184             \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_packed_sprite_sheet_1_1_section_acc4f72d41639de1c3175edd200052884}{tilesx}} = Integer.parseInt(reader.readLine().trim());
+185             \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_packed_sprite_sheet_1_1_section_aa43b4c5021af79e89586876435b2a9cc}{tilesy}} = Integer.parseInt(reader.readLine().trim());
+186             reader.readLine().trim();
+187             reader.readLine().trim();
+188             
+189             \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_packed_sprite_sheet_1_1_section_acc4f72d41639de1c3175edd200052884}{tilesx}} = Math.max(1,\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_packed_sprite_sheet_1_1_section_acc4f72d41639de1c3175edd200052884}{tilesx}});
+190             \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_packed_sprite_sheet_1_1_section_aa43b4c5021af79e89586876435b2a9cc}{tilesy}} = Math.max(1,\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_packed_sprite_sheet_1_1_section_aa43b4c5021af79e89586876435b2a9cc}{tilesy}});
+191         \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1_packed_sprite_sheet_1_1_section_a124dc6dd1dace77f4781fff3c1f6888c}\label{classorg_1_1newdawn_1_1slick_1_1_packed_sprite_sheet_1_1_section_a124dc6dd1dace77f4781fff3c1f6888c}} 
+\index{org\+::newdawn\+::slick\+::\+Packed\+Sprite\+Sheet\+::\+Section@{org\+::newdawn\+::slick\+::\+Packed\+Sprite\+Sheet\+::\+Section}!height@{height}}
+\index{height@{height}!org\+::newdawn\+::slick\+::\+Packed\+Sprite\+Sheet\+::\+Section@{org\+::newdawn\+::slick\+::\+Packed\+Sprite\+Sheet\+::\+Section}}
+\subsubsection{\texorpdfstring{height}{height}}
+{\footnotesize\ttfamily int org.\+newdawn.\+slick.\+Packed\+Sprite\+Sheet.\+Section.\+height}
+
+The height of the section \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1_packed_sprite_sheet_1_1_section_ae0f0486e047a283f5beb7d7a42311d07}\label{classorg_1_1newdawn_1_1slick_1_1_packed_sprite_sheet_1_1_section_ae0f0486e047a283f5beb7d7a42311d07}} 
+\index{org\+::newdawn\+::slick\+::\+Packed\+Sprite\+Sheet\+::\+Section@{org\+::newdawn\+::slick\+::\+Packed\+Sprite\+Sheet\+::\+Section}!name@{name}}
+\index{name@{name}!org\+::newdawn\+::slick\+::\+Packed\+Sprite\+Sheet\+::\+Section@{org\+::newdawn\+::slick\+::\+Packed\+Sprite\+Sheet\+::\+Section}}
+\subsubsection{\texorpdfstring{name}{name}}
+{\footnotesize\ttfamily String org.\+newdawn.\+slick.\+Packed\+Sprite\+Sheet.\+Section.\+name}
+
+The name of this section \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1_packed_sprite_sheet_1_1_section_acc4f72d41639de1c3175edd200052884}\label{classorg_1_1newdawn_1_1slick_1_1_packed_sprite_sheet_1_1_section_acc4f72d41639de1c3175edd200052884}} 
+\index{org\+::newdawn\+::slick\+::\+Packed\+Sprite\+Sheet\+::\+Section@{org\+::newdawn\+::slick\+::\+Packed\+Sprite\+Sheet\+::\+Section}!tilesx@{tilesx}}
+\index{tilesx@{tilesx}!org\+::newdawn\+::slick\+::\+Packed\+Sprite\+Sheet\+::\+Section@{org\+::newdawn\+::slick\+::\+Packed\+Sprite\+Sheet\+::\+Section}}
+\subsubsection{\texorpdfstring{tilesx}{tilesx}}
+{\footnotesize\ttfamily int org.\+newdawn.\+slick.\+Packed\+Sprite\+Sheet.\+Section.\+tilesx}
+
+The number of sprites across this section \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1_packed_sprite_sheet_1_1_section_aa43b4c5021af79e89586876435b2a9cc}\label{classorg_1_1newdawn_1_1slick_1_1_packed_sprite_sheet_1_1_section_aa43b4c5021af79e89586876435b2a9cc}} 
+\index{org\+::newdawn\+::slick\+::\+Packed\+Sprite\+Sheet\+::\+Section@{org\+::newdawn\+::slick\+::\+Packed\+Sprite\+Sheet\+::\+Section}!tilesy@{tilesy}}
+\index{tilesy@{tilesy}!org\+::newdawn\+::slick\+::\+Packed\+Sprite\+Sheet\+::\+Section@{org\+::newdawn\+::slick\+::\+Packed\+Sprite\+Sheet\+::\+Section}}
+\subsubsection{\texorpdfstring{tilesy}{tilesy}}
+{\footnotesize\ttfamily int org.\+newdawn.\+slick.\+Packed\+Sprite\+Sheet.\+Section.\+tilesy}
+
+The number of sprites down this section \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1_packed_sprite_sheet_1_1_section_a8ba0f4e09e47b11d4d7a3d49716d5878}\label{classorg_1_1newdawn_1_1slick_1_1_packed_sprite_sheet_1_1_section_a8ba0f4e09e47b11d4d7a3d49716d5878}} 
+\index{org\+::newdawn\+::slick\+::\+Packed\+Sprite\+Sheet\+::\+Section@{org\+::newdawn\+::slick\+::\+Packed\+Sprite\+Sheet\+::\+Section}!width@{width}}
+\index{width@{width}!org\+::newdawn\+::slick\+::\+Packed\+Sprite\+Sheet\+::\+Section@{org\+::newdawn\+::slick\+::\+Packed\+Sprite\+Sheet\+::\+Section}}
+\subsubsection{\texorpdfstring{width}{width}}
+{\footnotesize\ttfamily int org.\+newdawn.\+slick.\+Packed\+Sprite\+Sheet.\+Section.\+width}
+
+The width of the section \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1_packed_sprite_sheet_1_1_section_ae603cab589363ffc1b833258b559937b}\label{classorg_1_1newdawn_1_1slick_1_1_packed_sprite_sheet_1_1_section_ae603cab589363ffc1b833258b559937b}} 
+\index{org\+::newdawn\+::slick\+::\+Packed\+Sprite\+Sheet\+::\+Section@{org\+::newdawn\+::slick\+::\+Packed\+Sprite\+Sheet\+::\+Section}!x@{x}}
+\index{x@{x}!org\+::newdawn\+::slick\+::\+Packed\+Sprite\+Sheet\+::\+Section@{org\+::newdawn\+::slick\+::\+Packed\+Sprite\+Sheet\+::\+Section}}
+\subsubsection{\texorpdfstring{x}{x}}
+{\footnotesize\ttfamily int org.\+newdawn.\+slick.\+Packed\+Sprite\+Sheet.\+Section.\+x}
+
+The x position of the section \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1_packed_sprite_sheet_1_1_section_a7d86b43b67407affcf680d1cd8a779b6}\label{classorg_1_1newdawn_1_1slick_1_1_packed_sprite_sheet_1_1_section_a7d86b43b67407affcf680d1cd8a779b6}} 
+\index{org\+::newdawn\+::slick\+::\+Packed\+Sprite\+Sheet\+::\+Section@{org\+::newdawn\+::slick\+::\+Packed\+Sprite\+Sheet\+::\+Section}!y@{y}}
+\index{y@{y}!org\+::newdawn\+::slick\+::\+Packed\+Sprite\+Sheet\+::\+Section@{org\+::newdawn\+::slick\+::\+Packed\+Sprite\+Sheet\+::\+Section}}
+\subsubsection{\texorpdfstring{y}{y}}
+{\footnotesize\ttfamily int org.\+newdawn.\+slick.\+Packed\+Sprite\+Sheet.\+Section.\+y}
+
+The y position of the section 

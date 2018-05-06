@@ -1,0 +1,137 @@
+\hypertarget{classorg_1_1newdawn_1_1slick_1_1geom_1_1_point}{}\section{org.\+newdawn.\+slick.\+geom.\+Point Class Reference}
+\label{classorg_1_1newdawn_1_1slick_1_1geom_1_1_point}\index{org.\+newdawn.\+slick.\+geom.\+Point@{org.\+newdawn.\+slick.\+geom.\+Point}}
+Inheritance diagram for org.\+newdawn.\+slick.\+geom.\+Point\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classorg_1_1newdawn_1_1slick_1_1geom_1_1_point}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_point_a64fbbb67319dc26073ef25c688385009}{Point}} (float \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_shape_a3e985bfff386c15a4efaad03d8ad60d3}{x}}, float \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_shape_a9f934baded6a1b65ebb69e7e5f80ea00}{y}})
+\item 
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_shape}{Shape}} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_point_a9c3bead7f43bac5c80d377c08d7829f0}{transform}} (Transform transform)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_point_ad5e57ed805113788063eda20f406a5bd}{create\+Points}} ()
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_point_afbfcbe702da917ba51825c4febde800a}{find\+Center}} ()
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_point_a35cb6b96446be89822bc8f88faf0502a}{calculate\+Radius}} ()
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+A single point shape
+
+\begin{DoxyAuthor}{Author}
+Kova 
+\end{DoxyAuthor}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1geom_1_1_point_a64fbbb67319dc26073ef25c688385009}\label{classorg_1_1newdawn_1_1slick_1_1geom_1_1_point_a64fbbb67319dc26073ef25c688385009}} 
+\index{org\+::newdawn\+::slick\+::geom\+::\+Point@{org\+::newdawn\+::slick\+::geom\+::\+Point}!Point@{Point}}
+\index{Point@{Point}!org\+::newdawn\+::slick\+::geom\+::\+Point@{org\+::newdawn\+::slick\+::geom\+::\+Point}}
+\subsubsection{\texorpdfstring{Point()}{Point()}}
+{\footnotesize\ttfamily org.\+newdawn.\+slick.\+geom.\+Point.\+Point (\begin{DoxyParamCaption}\item[{float}]{x,  }\item[{float}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Create a new point
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & The x coordinate of the point \\
+\hline
+{\em y} & The y coordinate of the point \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+20     \{ 
+21         this.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_shape_a3e985bfff386c15a4efaad03d8ad60d3}{x}} = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_shape_a3e985bfff386c15a4efaad03d8ad60d3}{x}}; 
+22         this.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_shape_a9f934baded6a1b65ebb69e7e5f80ea00}{y}} = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_shape_a9f934baded6a1b65ebb69e7e5f80ea00}{y}}; 
+23         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_shape_a84293802d05e8666a441720bfc12745d}{checkPoints}}(); 
+24     \} 
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1geom_1_1_point_a35cb6b96446be89822bc8f88faf0502a}\label{classorg_1_1newdawn_1_1slick_1_1geom_1_1_point_a35cb6b96446be89822bc8f88faf0502a}} 
+\index{org\+::newdawn\+::slick\+::geom\+::\+Point@{org\+::newdawn\+::slick\+::geom\+::\+Point}!calculate\+Radius@{calculate\+Radius}}
+\index{calculate\+Radius@{calculate\+Radius}!org\+::newdawn\+::slick\+::geom\+::\+Point@{org\+::newdawn\+::slick\+::geom\+::\+Point}}
+\subsubsection{\texorpdfstring{calculate\+Radius()}{calculateRadius()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+geom.\+Point.\+calculate\+Radius (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_shape_a276adc040a678116054b860c4eb5adab}{org.\+newdawn.\+slick.\+geom.\+Shape\+::calculate\+Radius()}} 
+\end{DoxySeeAlso}
+
+\begin{DoxyCode}
+69     \{ 
+70         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_shape_ac89bf2b9c93a7294b49797fc7a054c11}{boundingCircleRadius}} = 0; 
+71     \} 
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1geom_1_1_point_ad5e57ed805113788063eda20f406a5bd}\label{classorg_1_1newdawn_1_1slick_1_1geom_1_1_point_ad5e57ed805113788063eda20f406a5bd}} 
+\index{org\+::newdawn\+::slick\+::geom\+::\+Point@{org\+::newdawn\+::slick\+::geom\+::\+Point}!create\+Points@{create\+Points}}
+\index{create\+Points@{create\+Points}!org\+::newdawn\+::slick\+::geom\+::\+Point@{org\+::newdawn\+::slick\+::geom\+::\+Point}}
+\subsubsection{\texorpdfstring{create\+Points()}{createPoints()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+geom.\+Point.\+create\+Points (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_shape_a2f5907ca87e87f8794161f46389ff8c8}{org.\+newdawn.\+slick.\+geom.\+Shape\+::create\+Points()}} 
+\end{DoxySeeAlso}
+
+\begin{DoxyCode}
+41     \{ 
+42         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_shape_a8b4d4058734bbb3b96072e470b92aa37}{points}} = \textcolor{keyword}{new} \textcolor{keywordtype}{float}[2]; 
+43         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_shape_a8b4d4058734bbb3b96072e470b92aa37}{points}}[0] = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_shape_a736a47bfdd6f164558b43fd497a3a3f3}{getX}}(); 
+44         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_shape_a8b4d4058734bbb3b96072e470b92aa37}{points}}[1] = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_shape_a5f334f962d8fc525d522fe0f8ac20b35}{getY}}(); 
+45         
+46         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_shape_a8c820b5a7df465beab7f021cdd09b826}{maxX}} = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_shape_a3e985bfff386c15a4efaad03d8ad60d3}{x}}; 
+47         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_shape_aaacbabfb1b7d0653f59658d92ded1c2b}{maxY}} = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_shape_a9f934baded6a1b65ebb69e7e5f80ea00}{y}}; 
+48         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_shape_a5bd07629e85d4a15fc03e3d60edb7c03}{minX}} = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_shape_a3e985bfff386c15a4efaad03d8ad60d3}{x}}; 
+49         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_shape_a4794592d5238a8c51d9d8ac4a11e68d4}{minY}} = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_shape_a9f934baded6a1b65ebb69e7e5f80ea00}{y}}; 
+50         
+51         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_point_afbfcbe702da917ba51825c4febde800a}{findCenter}}(); 
+52         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_point_a35cb6b96446be89822bc8f88faf0502a}{calculateRadius}}(); 
+53     \} 
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1geom_1_1_point_afbfcbe702da917ba51825c4febde800a}\label{classorg_1_1newdawn_1_1slick_1_1geom_1_1_point_afbfcbe702da917ba51825c4febde800a}} 
+\index{org\+::newdawn\+::slick\+::geom\+::\+Point@{org\+::newdawn\+::slick\+::geom\+::\+Point}!find\+Center@{find\+Center}}
+\index{find\+Center@{find\+Center}!org\+::newdawn\+::slick\+::geom\+::\+Point@{org\+::newdawn\+::slick\+::geom\+::\+Point}}
+\subsubsection{\texorpdfstring{find\+Center()}{findCenter()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+geom.\+Point.\+find\+Center (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_shape_ac90548bc552524c42ca2daad8e1ba692}{org.\+newdawn.\+slick.\+geom.\+Shape\+::find\+Center()}} 
+\end{DoxySeeAlso}
+
+\begin{DoxyCode}
+59     \{ 
+60         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_shape_a15ecde3336c4310cd927d766bb9a0b3b}{center}} = \textcolor{keyword}{new} \textcolor{keywordtype}{float}[2];
+61         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_shape_a15ecde3336c4310cd927d766bb9a0b3b}{center}}[0] = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_shape_a8b4d4058734bbb3b96072e470b92aa37}{points}}[0]; 
+62         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_shape_a15ecde3336c4310cd927d766bb9a0b3b}{center}}[1] = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_shape_a8b4d4058734bbb3b96072e470b92aa37}{points}}[1]; 
+63     \} 
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1geom_1_1_point_a9c3bead7f43bac5c80d377c08d7829f0}\label{classorg_1_1newdawn_1_1slick_1_1geom_1_1_point_a9c3bead7f43bac5c80d377c08d7829f0}} 
+\index{org\+::newdawn\+::slick\+::geom\+::\+Point@{org\+::newdawn\+::slick\+::geom\+::\+Point}!transform@{transform}}
+\index{transform@{transform}!org\+::newdawn\+::slick\+::geom\+::\+Point@{org\+::newdawn\+::slick\+::geom\+::\+Point}}
+\subsubsection{\texorpdfstring{transform()}{transform()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_shape}{Shape}} org.\+newdawn.\+slick.\+geom.\+Point.\+transform (\begin{DoxyParamCaption}\item[{Transform}]{transform }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_shape_a463826a085479c379e40f012e970b997}{org.\+newdawn.\+slick.\+geom.\+Shape\+::transform}}(org.\+newdawn.\+slick.\+geom.\+Transform) 
+\end{DoxySeeAlso}
+
+\begin{DoxyCode}
+30     \{ 
+31         \textcolor{keywordtype}{float} result[] = \textcolor{keyword}{new} \textcolor{keywordtype}{float}[\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_shape_a8b4d4058734bbb3b96072e470b92aa37}{points}}.length]; 
+32         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_point_a9c3bead7f43bac5c80d377c08d7829f0}{transform}}.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_shape_a463826a085479c379e40f012e970b997}{transform}}(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_shape_a8b4d4058734bbb3b96072e470b92aa37}{points}}, 0, result, 0, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_shape_a8b4d4058734bbb3b96072e470b92aa37}{points}}.length / 2); 
+33         
+34         \textcolor{keywordflow}{return} \textcolor{keyword}{new} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_point_a64fbbb67319dc26073ef25c688385009}{Point}}(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_shape_a8b4d4058734bbb3b96072e470b92aa37}{points}}[0], \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_shape_a8b4d4058734bbb3b96072e470b92aa37}{points}}[1]); 
+35     \} 
+\end{DoxyCode}

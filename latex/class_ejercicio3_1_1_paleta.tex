@@ -1,0 +1,119 @@
+\hypertarget{class_ejercicio3_1_1_paleta}{}\section{Ejercicio3.\+Paleta Class Reference}
+\label{class_ejercicio3_1_1_paleta}\index{Ejercicio3.\+Paleta@{Ejercicio3.\+Paleta}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_ejercicio3_1_1_paleta_a39dd8e80bfeee979782583154781986b}{Paleta}} ()
+\item 
+boolean \mbox{\hyperlink{class_ejercicio3_1_1_paleta_a4d66d1d99e8559d15abe32808bd51f00}{esta\+Libre}} (int a)
+\item 
+void \mbox{\hyperlink{class_ejercicio3_1_1_paleta_abd1d94b50d8ff18205c7265f3002fbb6}{set\+Libre}} (int a)
+\item 
+synchronized Color \mbox{\hyperlink{class_ejercicio3_1_1_paleta_a0e3c5e71ab1f44028fa072043a154cd0}{toma\+Color}} ()
+\item 
+Color \mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_ejercicio3_1_1_paleta_a2c27da86276ac62593e2e8e1bbfa7a12}{get\+Paleta}} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Color \mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_ejercicio3_1_1_paleta_ad197acb4f704b18fcf00ad02ad45b47d}{colores}} = new Color\mbox{[}4\mbox{]}
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+boolean \mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_ejercicio3_1_1_paleta_a1e0d32a96f88fc79dcca5cf1f5758f6b}{Comp}} = new boolean\mbox{[}4\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_ejercicio3_1_1_paleta_a39dd8e80bfeee979782583154781986b}\label{class_ejercicio3_1_1_paleta_a39dd8e80bfeee979782583154781986b}} 
+\index{Ejercicio3\+::\+Paleta@{Ejercicio3\+::\+Paleta}!Paleta@{Paleta}}
+\index{Paleta@{Paleta}!Ejercicio3\+::\+Paleta@{Ejercicio3\+::\+Paleta}}
+\subsubsection{\texorpdfstring{Paleta()}{Paleta()}}
+{\footnotesize\ttfamily Ejercicio3.\+Paleta.\+Paleta (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+15     \{
+16         \mbox{\hyperlink{class_ejercicio3_1_1_paleta_ad197acb4f704b18fcf00ad02ad45b47d}{colores}}[0]=Color.red;
+17         \mbox{\hyperlink{class_ejercicio3_1_1_paleta_ad197acb4f704b18fcf00ad02ad45b47d}{colores}}[1]=Color.blue;
+18         \mbox{\hyperlink{class_ejercicio3_1_1_paleta_ad197acb4f704b18fcf00ad02ad45b47d}{colores}}[2]=Color.green;
+19         \mbox{\hyperlink{class_ejercicio3_1_1_paleta_ad197acb4f704b18fcf00ad02ad45b47d}{colores}}[3]=Color.yellow;
+20         \mbox{\hyperlink{class_ejercicio3_1_1_paleta_a1e0d32a96f88fc79dcca5cf1f5758f6b}{Comp}}[0]=\textcolor{keyword}{true};
+21         \mbox{\hyperlink{class_ejercicio3_1_1_paleta_a1e0d32a96f88fc79dcca5cf1f5758f6b}{Comp}}[1]=\textcolor{keyword}{true};
+22         \mbox{\hyperlink{class_ejercicio3_1_1_paleta_a1e0d32a96f88fc79dcca5cf1f5758f6b}{Comp}}[2]=\textcolor{keyword}{true};
+23         \mbox{\hyperlink{class_ejercicio3_1_1_paleta_a1e0d32a96f88fc79dcca5cf1f5758f6b}{Comp}}[3]=\textcolor{keyword}{true};
+24     \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_ejercicio3_1_1_paleta_a4d66d1d99e8559d15abe32808bd51f00}\label{class_ejercicio3_1_1_paleta_a4d66d1d99e8559d15abe32808bd51f00}} 
+\index{Ejercicio3\+::\+Paleta@{Ejercicio3\+::\+Paleta}!esta\+Libre@{esta\+Libre}}
+\index{esta\+Libre@{esta\+Libre}!Ejercicio3\+::\+Paleta@{Ejercicio3\+::\+Paleta}}
+\subsubsection{\texorpdfstring{esta\+Libre()}{estaLibre()}}
+{\footnotesize\ttfamily boolean Ejercicio3.\+Paleta.\+esta\+Libre (\begin{DoxyParamCaption}\item[{int}]{a }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+27     \{
+28         \textcolor{keywordflow}{return} \mbox{\hyperlink{class_ejercicio3_1_1_paleta_a1e0d32a96f88fc79dcca5cf1f5758f6b}{Comp}}[a];
+29     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_ejercicio3_1_1_paleta_a2c27da86276ac62593e2e8e1bbfa7a12}\label{class_ejercicio3_1_1_paleta_a2c27da86276ac62593e2e8e1bbfa7a12}} 
+\index{Ejercicio3\+::\+Paleta@{Ejercicio3\+::\+Paleta}!get\+Paleta@{get\+Paleta}}
+\index{get\+Paleta@{get\+Paleta}!Ejercicio3\+::\+Paleta@{Ejercicio3\+::\+Paleta}}
+\subsubsection{\texorpdfstring{get\+Paleta()}{getPaleta()}}
+{\footnotesize\ttfamily Color \mbox{[}$\,$\mbox{]} Ejercicio3.\+Paleta.\+get\+Paleta (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+48     \{
+49         \textcolor{keywordflow}{return} \mbox{\hyperlink{class_ejercicio3_1_1_paleta_ad197acb4f704b18fcf00ad02ad45b47d}{colores}};
+50     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_ejercicio3_1_1_paleta_abd1d94b50d8ff18205c7265f3002fbb6}\label{class_ejercicio3_1_1_paleta_abd1d94b50d8ff18205c7265f3002fbb6}} 
+\index{Ejercicio3\+::\+Paleta@{Ejercicio3\+::\+Paleta}!set\+Libre@{set\+Libre}}
+\index{set\+Libre@{set\+Libre}!Ejercicio3\+::\+Paleta@{Ejercicio3\+::\+Paleta}}
+\subsubsection{\texorpdfstring{set\+Libre()}{setLibre()}}
+{\footnotesize\ttfamily void Ejercicio3.\+Paleta.\+set\+Libre (\begin{DoxyParamCaption}\item[{int}]{a }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+32     \{
+33         \mbox{\hyperlink{class_ejercicio3_1_1_paleta_a1e0d32a96f88fc79dcca5cf1f5758f6b}{Comp}}[a] = \textcolor{keyword}{true};
+34     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_ejercicio3_1_1_paleta_a0e3c5e71ab1f44028fa072043a154cd0}\label{class_ejercicio3_1_1_paleta_a0e3c5e71ab1f44028fa072043a154cd0}} 
+\index{Ejercicio3\+::\+Paleta@{Ejercicio3\+::\+Paleta}!toma\+Color@{toma\+Color}}
+\index{toma\+Color@{toma\+Color}!Ejercicio3\+::\+Paleta@{Ejercicio3\+::\+Paleta}}
+\subsubsection{\texorpdfstring{toma\+Color()}{tomaColor()}}
+{\footnotesize\ttfamily synchronized Color Ejercicio3.\+Paleta.\+toma\+Color (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+37     \{
+38         \textcolor{keywordtype}{int} i;
+39         \textcolor{keywordflow}{do}
+40         \{
+41         i = (int)(4 * Math.random());  \textcolor{comment}{//Elige color al azar}
+42         \}\textcolor{keywordflow}{while}(!\mbox{\hyperlink{class_ejercicio3_1_1_paleta_a4d66d1d99e8559d15abe32808bd51f00}{estaLibre}}(i));
+43         \mbox{\hyperlink{class_ejercicio3_1_1_paleta_a1e0d32a96f88fc79dcca5cf1f5758f6b}{Comp}} [i] = \textcolor{keyword}{false};
+44         \textcolor{keywordflow}{return} \mbox{\hyperlink{class_ejercicio3_1_1_paleta_ad197acb4f704b18fcf00ad02ad45b47d}{colores}}[i];
+45     \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_ejercicio3_1_1_paleta_ad197acb4f704b18fcf00ad02ad45b47d}\label{class_ejercicio3_1_1_paleta_ad197acb4f704b18fcf00ad02ad45b47d}} 
+\index{Ejercicio3\+::\+Paleta@{Ejercicio3\+::\+Paleta}!colores@{colores}}
+\index{colores@{colores}!Ejercicio3\+::\+Paleta@{Ejercicio3\+::\+Paleta}}
+\subsubsection{\texorpdfstring{colores}{colores}}
+{\footnotesize\ttfamily Color \mbox{[}$\,$\mbox{]} Ejercicio3.\+Paleta.\+colores = new Color\mbox{[}4\mbox{]}}
+
+\mbox{\Hypertarget{class_ejercicio3_1_1_paleta_a1e0d32a96f88fc79dcca5cf1f5758f6b}\label{class_ejercicio3_1_1_paleta_a1e0d32a96f88fc79dcca5cf1f5758f6b}} 
+\index{Ejercicio3\+::\+Paleta@{Ejercicio3\+::\+Paleta}!Comp@{Comp}}
+\index{Comp@{Comp}!Ejercicio3\+::\+Paleta@{Ejercicio3\+::\+Paleta}}
+\subsubsection{\texorpdfstring{Comp}{Comp}}
+{\footnotesize\ttfamily boolean \mbox{[}$\,$\mbox{]} Ejercicio3.\+Paleta.\+Comp = new boolean\mbox{[}4\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}
+

@@ -1,0 +1,48 @@
+\hypertarget{class_ejercicio4_1_1_cuantos_primos2}{}\section{Ejercicio4.\+Cuantos\+Primos2 Class Reference}
+\label{class_ejercicio4_1_1_cuantos_primos2}\index{Ejercicio4.\+Cuantos\+Primos2@{Ejercicio4.\+Cuantos\+Primos2}}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{class_ejercicio4_1_1_cuantos_primos2_aea16483ae02a004005ce92f4697dbe19}{main}} (String\mbox{[}$\,$\mbox{]} x)
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_ejercicio4_1_1_cuantos_primos2_aea16483ae02a004005ce92f4697dbe19}\label{class_ejercicio4_1_1_cuantos_primos2_aea16483ae02a004005ce92f4697dbe19}} 
+\index{Ejercicio4\+::\+Cuantos\+Primos2@{Ejercicio4\+::\+Cuantos\+Primos2}!main@{main}}
+\index{main@{main}!Ejercicio4\+::\+Cuantos\+Primos2@{Ejercicio4\+::\+Cuantos\+Primos2}}
+\subsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily static void Ejercicio4.\+Cuantos\+Primos2.\+main (\begin{DoxyParamCaption}\item[{String \mbox{[}$\,$\mbox{]}}]{x }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+\begin{DoxyCode}
+15                                        \{
+16            \textcolor{keywordtype}{long} t0 = (\textcolor{keyword}{new} Date()).getTime(); \textcolor{comment}{//t0=instante de inicio de los cálculos}
+17            PrimosRunnable p1 = \textcolor{keyword}{new} PrimosRunnable(1,2000000);
+18            PrimosRunnable p2 = \textcolor{keyword}{new} PrimosRunnable(2000001,4000000);
+19            PrimosRunnable p3 = \textcolor{keyword}{new} PrimosRunnable(4000001,6000000);
+20            PrimosRunnable p4 = \textcolor{keyword}{new} PrimosRunnable(6000001,8000000);
+21            PrimosRunnable p5 = \textcolor{keyword}{new} PrimosRunnable(8000001,10000000);
+22            
+23            Thread pr1 = \textcolor{keyword}{new} Thread(p1);
+24            Thread pr2 = \textcolor{keyword}{new} Thread(p2);
+25            Thread pr3 = \textcolor{keyword}{new} Thread(p3);
+26            Thread pr4 = \textcolor{keyword}{new} Thread(p4);
+27            Thread pr5 = \textcolor{keyword}{new} Thread(p5);
+28            
+29            pr1.start();
+30            pr2.start();
+31            pr3.start();
+32            pr4.start();
+33            pr5.start();
+34            
+35            \textcolor{keywordflow}{try}\{
+36             pr1.join(); pr2.join(); pr3.join(); pr4.join(); pr5.join(); \textcolor{comment}{//esperamos a que terminen todos}
+37            \} \textcolor{keywordflow}{catch} (InterruptedException e)\{\}
+38            
+39            \textcolor{keywordtype}{int} n = p1.cuantos() + p2.cuantos() + p3.cuantos() + p4.cuantos() + p5.cuantos();
+40            \textcolor{keywordtype}{long} t1 = (\textcolor{keyword}{new} Date()).getTime(); \textcolor{comment}{//t1=instante de final de los cálculos}
+41            System.out.println(\textcolor{stringliteral}{"Número de primos menores que 10.000.000: "}+ n +\textcolor{stringliteral}{" calculado en "}+ (t1-t0) +\textcolor{stringliteral}{"
+       miliseg."});
+42     \}
+\end{DoxyCode}

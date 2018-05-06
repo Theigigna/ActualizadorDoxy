@@ -1,0 +1,128 @@
+\hypertarget{classcms_1_1_j_d_b_c_property_d_a_o}{}\section{cms.\+J\+D\+B\+C\+Property\+D\+AO Class Reference}
+\label{classcms_1_1_j_d_b_c_property_d_a_o}\index{cms.\+J\+D\+B\+C\+Property\+D\+AO@{cms.\+J\+D\+B\+C\+Property\+D\+AO}}
+Inheritance diagram for cms.\+J\+D\+B\+C\+Property\+D\+AO\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classcms_1_1_j_d_b_c_property_d_a_o}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classcms_1_1_j_d_b_c_property_d_a_o_aa41812a8d2030b224507345fe715e729}{J\+D\+B\+C\+Property\+D\+AO}} (Connection \mbox{\hyperlink{classcms_1_1_j_d_b_c_property_d_a_o_abf9c487234968fce867ee559ed4ccd59}{connection}})
+\item 
+void \mbox{\hyperlink{classcms_1_1_j_d_b_c_property_d_a_o_a5fc189c30f4112d03a6de691b1747667}{insert}} (\mbox{\hyperlink{classcms_1_1_property}{Property}} prop)
+\item 
+List$<$ \mbox{\hyperlink{classcms_1_1_property}{Property}} $>$ \mbox{\hyperlink{classcms_1_1_j_d_b_c_property_d_a_o_a2858ac4d2c7cc8345a02e2ebb555c7f7}{select}} ()
+\end{DoxyCompactItemize}
+\subsection*{Package Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Connection \mbox{\hyperlink{classcms_1_1_j_d_b_c_property_d_a_o_abf9c487234968fce867ee559ed4ccd59}{connection}} = null
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classcms_1_1_j_d_b_c_property_d_a_o_aa41812a8d2030b224507345fe715e729}\label{classcms_1_1_j_d_b_c_property_d_a_o_aa41812a8d2030b224507345fe715e729}} 
+\index{cms\+::\+J\+D\+B\+C\+Property\+D\+AO@{cms\+::\+J\+D\+B\+C\+Property\+D\+AO}!J\+D\+B\+C\+Property\+D\+AO@{J\+D\+B\+C\+Property\+D\+AO}}
+\index{J\+D\+B\+C\+Property\+D\+AO@{J\+D\+B\+C\+Property\+D\+AO}!cms\+::\+J\+D\+B\+C\+Property\+D\+AO@{cms\+::\+J\+D\+B\+C\+Property\+D\+AO}}
+\subsubsection{\texorpdfstring{J\+D\+B\+C\+Property\+D\+A\+O()}{JDBCPropertyDAO()}}
+{\footnotesize\ttfamily cms.\+J\+D\+B\+C\+Property\+D\+A\+O.\+J\+D\+B\+C\+Property\+D\+AO (\begin{DoxyParamCaption}\item[{Connection}]{connection }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+24                                                  \{
+25          this.\mbox{\hyperlink{classcms_1_1_j_d_b_c_property_d_a_o_abf9c487234968fce867ee559ed4ccd59}{connection}}=\mbox{\hyperlink{classcms_1_1_j_d_b_c_property_d_a_o_abf9c487234968fce867ee559ed4ccd59}{connection}};
+26     \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classcms_1_1_j_d_b_c_property_d_a_o_a5fc189c30f4112d03a6de691b1747667}\label{classcms_1_1_j_d_b_c_property_d_a_o_a5fc189c30f4112d03a6de691b1747667}} 
+\index{cms\+::\+J\+D\+B\+C\+Property\+D\+AO@{cms\+::\+J\+D\+B\+C\+Property\+D\+AO}!insert@{insert}}
+\index{insert@{insert}!cms\+::\+J\+D\+B\+C\+Property\+D\+AO@{cms\+::\+J\+D\+B\+C\+Property\+D\+AO}}
+\subsubsection{\texorpdfstring{insert()}{insert()}}
+{\footnotesize\ttfamily void cms.\+J\+D\+B\+C\+Property\+D\+A\+O.\+insert (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classcms_1_1_property}{Property}}}]{prop }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Implements \mbox{\hyperlink{interfacecms_1_1_property_d_a_o_a56361b7ac5be33a70e6d0651f9c42b27}{cms.\+Property\+D\+AO}}.
+
+
+\begin{DoxyCode}
+47                                       \{
+48         \textcolor{keywordflow}{try} \{
+49             PreparedStatement preparedStatement = \mbox{\hyperlink{classcms_1_1_j_d_b_c_property_d_a_o_abf9c487234968fce867ee559ed4ccd59}{connection}}.prepareStatement(\textcolor{stringliteral}{"INSERT INTO
+       cms.Property (property\_id, property\_name,property\_type ,property\_admin, maintenance\_id, neighbourhood\_id, own\_id)
+       VALUES (default , ?, ?, ?, ?, ?, ?)"});
+50             preparedStatement.setString(1,  prop.getProperty\_name());
+51             preparedStatement.setString(2,  prop.getProperty\_type());
+52             preparedStatement.setInt(3,  prop.getProperty\_admin());
+53             preparedStatement.setInt(4,  prop.getMaintenance\_id());
+54             preparedStatement.setInt(5,  prop.getNeighbourhood\_id());
+55             preparedStatement.setInt(6,  prop.getOwn\_id());
+56             preparedStatement.executeUpdate();
+57             preparedStatement.close();
+58         \} \textcolor{keywordflow}{catch} (SQLException e) \{
+59             \textcolor{comment}{// TODO Auto-generated catch block}
+60             e.printStackTrace();
+61         \}
+62          
+63     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classcms_1_1_j_d_b_c_property_d_a_o_a2858ac4d2c7cc8345a02e2ebb555c7f7}\label{classcms_1_1_j_d_b_c_property_d_a_o_a2858ac4d2c7cc8345a02e2ebb555c7f7}} 
+\index{cms\+::\+J\+D\+B\+C\+Property\+D\+AO@{cms\+::\+J\+D\+B\+C\+Property\+D\+AO}!select@{select}}
+\index{select@{select}!cms\+::\+J\+D\+B\+C\+Property\+D\+AO@{cms\+::\+J\+D\+B\+C\+Property\+D\+AO}}
+\subsubsection{\texorpdfstring{select()}{select()}}
+{\footnotesize\ttfamily List$<$\mbox{\hyperlink{classcms_1_1_property}{Property}}$>$ cms.\+J\+D\+B\+C\+Property\+D\+A\+O.\+select (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Implements \mbox{\hyperlink{interfacecms_1_1_property_d_a_o_ad2087f5bf664d57bd7e75c09280b1fe5}{cms.\+Property\+D\+AO}}.
+
+
+\begin{DoxyCode}
+66                                    \{
+67         List<Property> properties = \textcolor{keyword}{new} LinkedList<>();
+68          \textcolor{keywordflow}{try} \{
+69                 Statement statement = \mbox{\hyperlink{classcms_1_1_j_d_b_c_property_d_a_o_abf9c487234968fce867ee559ed4ccd59}{connection}}.createStatement();
+70                 ResultSet resultSet = statement.executeQuery(\textcolor{stringliteral}{"SELECT * FROM cms.Property"});
+71                  
+72                 Property prop = null;
+73                 \textcolor{keywordflow}{while}(resultSet.next())\{
+74                     prop = \textcolor{keyword}{new} Property();
+75                     prop.setProperty\_id(Integer.parseInt(resultSet.getString(\textcolor{stringliteral}{"property\_id"})));
+76                     prop.setProperty\_name(resultSet.getString(\textcolor{stringliteral}{"property\_name"}));
+77                     prop.setProperty\_name(resultSet.getString(\textcolor{stringliteral}{"property\_type"}));
+78                     prop.setProperty\_admin(Integer.parseInt(resultSet.getString(\textcolor{stringliteral}{"property\_admin"})));
+79                     prop.setMaintenance\_id(Integer.parseInt(resultSet.getString(\textcolor{stringliteral}{"maintenance\_id"})));
+80                     prop.setNeighbourhood\_id(Integer.parseInt(resultSet.getString(\textcolor{stringliteral}{"neighbourhood\_id"})));
+81                     prop.setOwn\_id(Integer.parseInt(resultSet.getString(\textcolor{stringliteral}{"own\_id"})));
+82                     
+83                     properties.add(prop);
+84                 \}
+85                 resultSet.close();
+86                 statement.close();
+87                  
+88             \} \textcolor{keywordflow}{catch} (SQLException e) \{
+89                 e.printStackTrace();
+90             \}
+91             \textcolor{keywordtype}{int} i;
+92             i=0;
+93             \textcolor{keywordflow}{while}(i < properties.size()) \{
+94                     System.out.println(properties.get(i));
+95                     i++;
+96              \}
+97             \textcolor{comment}{//System.out.println(properties);}
+98             \textcolor{keywordflow}{return} properties;
+99     \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classcms_1_1_j_d_b_c_property_d_a_o_abf9c487234968fce867ee559ed4ccd59}\label{classcms_1_1_j_d_b_c_property_d_a_o_abf9c487234968fce867ee559ed4ccd59}} 
+\index{cms\+::\+J\+D\+B\+C\+Property\+D\+AO@{cms\+::\+J\+D\+B\+C\+Property\+D\+AO}!connection@{connection}}
+\index{connection@{connection}!cms\+::\+J\+D\+B\+C\+Property\+D\+AO@{cms\+::\+J\+D\+B\+C\+Property\+D\+AO}}
+\subsubsection{\texorpdfstring{connection}{connection}}
+{\footnotesize\ttfamily Connection cms.\+J\+D\+B\+C\+Property\+D\+A\+O.\+connection = null\hspace{0.3cm}{\ttfamily [package]}}
+

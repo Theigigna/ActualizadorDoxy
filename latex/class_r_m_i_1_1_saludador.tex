@@ -1,0 +1,156 @@
+\hypertarget{class_r_m_i_1_1_saludador}{}\section{R\+M\+I.\+Saludador Class Reference}
+\label{class_r_m_i_1_1_saludador}\index{R\+M\+I.\+Saludador@{R\+M\+I.\+Saludador}}
+Inheritance diagram for R\+M\+I.\+Saludador\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_r_m_i_1_1_saludador}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+boolean \mbox{\hyperlink{class_r_m_i_1_1_saludador_a1fc26b10a1968a3d7080adf3acf37718}{puedo\+Entrar}} ()
+\item 
+\mbox{\hyperlink{class_r_m_i_1_1_saludador_a142d4fff5a3506d069b4a80a9e571de0}{Saludador}} (\mbox{\hyperlink{class_r_m_i_1_1_paso}{Paso}} \mbox{\hyperlink{class_r_m_i_1_1_saludador_acf8f2452f97fd371135558ba37283fa4}{paso}})  throws Remote\+Exception           
+\item 
+void \mbox{\hyperlink{class_r_m_i_1_1_saludador_af163fac056a4927e199c43262d3f3b05}{reanudar}} ()  throws Remote\+Exception       
+\item 
+void \mbox{\hyperlink{class_r_m_i_1_1_saludador_a0d92560cbe25dfcfc18c73dfd3295fa4}{detener}} ()  throws Remote\+Exception     
+\item 
+void \mbox{\hyperlink{class_r_m_i_1_1_saludador_af05a48b9f5aaacd7c3cefcf12e9c1969}{salir}} ()
+\end{DoxyCompactItemize}
+\subsection*{Package Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{class_r_m_i_1_1_saludador_aee589ef80147254fc33e2b73d5f8ca2b}{contador}} = 0
+\item 
+Semaphore \mbox{\hyperlink{class_r_m_i_1_1_saludador_a772baa4676a1aa111b792ebd3d77cfcd}{semaforo}}
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_r_m_i_1_1_paso}{Paso}} \mbox{\hyperlink{class_r_m_i_1_1_saludador_acf8f2452f97fd371135558ba37283fa4}{paso}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_r_m_i_1_1_saludador_a142d4fff5a3506d069b4a80a9e571de0}\label{class_r_m_i_1_1_saludador_a142d4fff5a3506d069b4a80a9e571de0}} 
+\index{R\+M\+I\+::\+Saludador@{R\+M\+I\+::\+Saludador}!Saludador@{Saludador}}
+\index{Saludador@{Saludador}!R\+M\+I\+::\+Saludador@{R\+M\+I\+::\+Saludador}}
+\subsubsection{\texorpdfstring{Saludador()}{Saludador()}}
+{\footnotesize\ttfamily R\+M\+I.\+Saludador.\+Saludador (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_r_m_i_1_1_paso}{Paso}}}]{paso }\end{DoxyParamCaption}) throws Remote\+Exception\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+38     \{
+39         this.\mbox{\hyperlink{class_r_m_i_1_1_saludador_acf8f2452f97fd371135558ba37283fa4}{paso}} = \mbox{\hyperlink{class_r_m_i_1_1_saludador_acf8f2452f97fd371135558ba37283fa4}{paso}};
+40         this.\mbox{\hyperlink{class_r_m_i_1_1_saludador_aee589ef80147254fc33e2b73d5f8ca2b}{contador}} = 0;
+41         this.\mbox{\hyperlink{class_r_m_i_1_1_saludador_a772baa4676a1aa111b792ebd3d77cfcd}{semaforo}} = \textcolor{keyword}{new} Semaphore(1);
+42     \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_r_m_i_1_1_saludador_a0d92560cbe25dfcfc18c73dfd3295fa4}\label{class_r_m_i_1_1_saludador_a0d92560cbe25dfcfc18c73dfd3295fa4}} 
+\index{R\+M\+I\+::\+Saludador@{R\+M\+I\+::\+Saludador}!detener@{detener}}
+\index{detener@{detener}!R\+M\+I\+::\+Saludador@{R\+M\+I\+::\+Saludador}}
+\subsubsection{\texorpdfstring{detener()}{detener()}}
+{\footnotesize\ttfamily void R\+M\+I.\+Saludador.\+detener (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws Remote\+Exception\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Implements \mbox{\hyperlink{interface_r_m_i_1_1_interface_saluda_a271848a330c374eb0f6f5157cc2b60c6}{R\+M\+I.\+Interface\+Saluda}}.
+
+
+\begin{DoxyCode}
+48     \{
+49         \mbox{\hyperlink{class_r_m_i_1_1_saludador_acf8f2452f97fd371135558ba37283fa4}{paso}}.\mbox{\hyperlink{class_r_m_i_1_1_paso_a94a5334985d909a4db0b5efda2f68a9f}{cerrar}}();
+50     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_r_m_i_1_1_saludador_a1fc26b10a1968a3d7080adf3acf37718}\label{class_r_m_i_1_1_saludador_a1fc26b10a1968a3d7080adf3acf37718}} 
+\index{R\+M\+I\+::\+Saludador@{R\+M\+I\+::\+Saludador}!puedo\+Entrar@{puedo\+Entrar}}
+\index{puedo\+Entrar@{puedo\+Entrar}!R\+M\+I\+::\+Saludador@{R\+M\+I\+::\+Saludador}}
+\subsubsection{\texorpdfstring{puedo\+Entrar()}{puedoEntrar()}}
+{\footnotesize\ttfamily boolean R\+M\+I.\+Saludador.\+puedo\+Entrar (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Implements \mbox{\hyperlink{interface_r_m_i_1_1_interface_saluda_afbc3db469b848c5a90bbf10ebc20823f}{R\+M\+I.\+Interface\+Saluda}}.
+
+
+\begin{DoxyCode}
+15     \{
+16         \textcolor{keywordtype}{boolean} aux = \textcolor{keyword}{false};
+17         \textcolor{keywordflow}{try} \{
+18             \mbox{\hyperlink{class_r_m_i_1_1_saludador_a772baa4676a1aa111b792ebd3d77cfcd}{semaforo}}.acquire();
+19             \textcolor{keywordflow}{if}(\mbox{\hyperlink{class_r_m_i_1_1_saludador_aee589ef80147254fc33e2b73d5f8ca2b}{contador}} < 10)
+20             \{
+21                 \mbox{\hyperlink{class_r_m_i_1_1_saludador_aee589ef80147254fc33e2b73d5f8ca2b}{contador}} ++;
+22                 aux = \textcolor{keyword}{true};
+23             \}
+24             \textcolor{keywordflow}{else}
+25             \{
+26                 aux = \textcolor{keyword}{false};
+27             \}
+28         \} \textcolor{keywordflow}{catch} (InterruptedException ex) \{
+29             Logger.getLogger(\mbox{\hyperlink{class_r_m_i_1_1_saludador_a142d4fff5a3506d069b4a80a9e571de0}{Saludador}}.class.getName()).log(Level.SEVERE, null, ex);
+30         \}\textcolor{keywordflow}{finally}
+31         \{
+32             \mbox{\hyperlink{class_r_m_i_1_1_saludador_a772baa4676a1aa111b792ebd3d77cfcd}{semaforo}}.release();
+33             \textcolor{keywordflow}{return} aux;
+34         \}
+35     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_r_m_i_1_1_saludador_af163fac056a4927e199c43262d3f3b05}\label{class_r_m_i_1_1_saludador_af163fac056a4927e199c43262d3f3b05}} 
+\index{R\+M\+I\+::\+Saludador@{R\+M\+I\+::\+Saludador}!reanudar@{reanudar}}
+\index{reanudar@{reanudar}!R\+M\+I\+::\+Saludador@{R\+M\+I\+::\+Saludador}}
+\subsubsection{\texorpdfstring{reanudar()}{reanudar()}}
+{\footnotesize\ttfamily void R\+M\+I.\+Saludador.\+reanudar (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws Remote\+Exception\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Implements \mbox{\hyperlink{interface_r_m_i_1_1_interface_saluda_a8d97c9155ed6c35d8691263d1b70000a}{R\+M\+I.\+Interface\+Saluda}}.
+
+
+\begin{DoxyCode}
+44     \{   
+45         \mbox{\hyperlink{class_r_m_i_1_1_saludador_acf8f2452f97fd371135558ba37283fa4}{paso}}.\mbox{\hyperlink{class_r_m_i_1_1_paso_a812e38e5e102e7da3fbd1ba669baa213}{abrir}}();
+46     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_r_m_i_1_1_saludador_af05a48b9f5aaacd7c3cefcf12e9c1969}\label{class_r_m_i_1_1_saludador_af05a48b9f5aaacd7c3cefcf12e9c1969}} 
+\index{R\+M\+I\+::\+Saludador@{R\+M\+I\+::\+Saludador}!salir@{salir}}
+\index{salir@{salir}!R\+M\+I\+::\+Saludador@{R\+M\+I\+::\+Saludador}}
+\subsubsection{\texorpdfstring{salir()}{salir()}}
+{\footnotesize\ttfamily void R\+M\+I.\+Saludador.\+salir (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Implements \mbox{\hyperlink{interface_r_m_i_1_1_interface_saluda_a9bfad049387b9c751039d6c796f30db6}{R\+M\+I.\+Interface\+Saluda}}.
+
+
+\begin{DoxyCode}
+52     \{
+53         \mbox{\hyperlink{class_r_m_i_1_1_saludador_aee589ef80147254fc33e2b73d5f8ca2b}{contador}}--;
+54     \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_r_m_i_1_1_saludador_aee589ef80147254fc33e2b73d5f8ca2b}\label{class_r_m_i_1_1_saludador_aee589ef80147254fc33e2b73d5f8ca2b}} 
+\index{R\+M\+I\+::\+Saludador@{R\+M\+I\+::\+Saludador}!contador@{contador}}
+\index{contador@{contador}!R\+M\+I\+::\+Saludador@{R\+M\+I\+::\+Saludador}}
+\subsubsection{\texorpdfstring{contador}{contador}}
+{\footnotesize\ttfamily int R\+M\+I.\+Saludador.\+contador = 0\hspace{0.3cm}{\ttfamily [package]}}
+
+\mbox{\Hypertarget{class_r_m_i_1_1_saludador_acf8f2452f97fd371135558ba37283fa4}\label{class_r_m_i_1_1_saludador_acf8f2452f97fd371135558ba37283fa4}} 
+\index{R\+M\+I\+::\+Saludador@{R\+M\+I\+::\+Saludador}!paso@{paso}}
+\index{paso@{paso}!R\+M\+I\+::\+Saludador@{R\+M\+I\+::\+Saludador}}
+\subsubsection{\texorpdfstring{paso}{paso}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_r_m_i_1_1_paso}{Paso}} R\+M\+I.\+Saludador.\+paso\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_r_m_i_1_1_saludador_a772baa4676a1aa111b792ebd3d77cfcd}\label{class_r_m_i_1_1_saludador_a772baa4676a1aa111b792ebd3d77cfcd}} 
+\index{R\+M\+I\+::\+Saludador@{R\+M\+I\+::\+Saludador}!semaforo@{semaforo}}
+\index{semaforo@{semaforo}!R\+M\+I\+::\+Saludador@{R\+M\+I\+::\+Saludador}}
+\subsubsection{\texorpdfstring{semaforo}{semaforo}}
+{\footnotesize\ttfamily Semaphore R\+M\+I.\+Saludador.\+semaforo\hspace{0.3cm}{\ttfamily [package]}}
+

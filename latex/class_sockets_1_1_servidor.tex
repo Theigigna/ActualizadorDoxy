@@ -1,0 +1,100 @@
+\hypertarget{class_sockets_1_1_servidor}{}\section{Sockets.\+Servidor Class Reference}
+\label{class_sockets_1_1_servidor}\index{Sockets.\+Servidor@{Sockets.\+Servidor}}
+Inheritance diagram for Sockets.\+Servidor\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_sockets_1_1_servidor}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_sockets_1_1_servidor_a96cc7a6530e585d256ba5c381e04b3a6}{Servidor}} (int puerto, int \mbox{\hyperlink{class_sockets_1_1_servidor_a691693d40a5185891964aea68f2e01c7}{numero\+Hilos}}, \mbox{\hyperlink{class_sockets_1_1_paso}{Paso}} \mbox{\hyperlink{class_sockets_1_1_servidor_ae795e6902937973b50d977b2ed77b470}{paso}})  throws I\+O\+Exception 
+\item 
+void \mbox{\hyperlink{class_sockets_1_1_servidor_abd6e00143db2f9368f53083c427ad2b4}{run}} ()
+\end{DoxyCompactItemize}
+\subsection*{Package Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{class_sockets_1_1_servidor_a691693d40a5185891964aea68f2e01c7}{numero\+Hilos}}
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+final Server\+Socket \mbox{\hyperlink{class_sockets_1_1_servidor_aa6eba116bcc543fa6b532894a6402957}{server\+Socket}}
+\item 
+final Executor\+Service \mbox{\hyperlink{class_sockets_1_1_servidor_a1a2e8bae5883a358083c35093a2a74b3}{pool}}
+\item 
+\mbox{\hyperlink{class_sockets_1_1_paso}{Paso}} \mbox{\hyperlink{class_sockets_1_1_servidor_ae795e6902937973b50d977b2ed77b470}{paso}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyAuthor}{Author}
+Ignacio 
+\end{DoxyAuthor}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_sockets_1_1_servidor_a96cc7a6530e585d256ba5c381e04b3a6}\label{class_sockets_1_1_servidor_a96cc7a6530e585d256ba5c381e04b3a6}} 
+\index{Sockets\+::\+Servidor@{Sockets\+::\+Servidor}!Servidor@{Servidor}}
+\index{Servidor@{Servidor}!Sockets\+::\+Servidor@{Sockets\+::\+Servidor}}
+\subsubsection{\texorpdfstring{Servidor()}{Servidor()}}
+{\footnotesize\ttfamily Sockets.\+Servidor.\+Servidor (\begin{DoxyParamCaption}\item[{int}]{puerto,  }\item[{int}]{numero\+Hilos,  }\item[{\mbox{\hyperlink{class_sockets_1_1_paso}{Paso}}}]{paso }\end{DoxyParamCaption}) throws I\+O\+Exception\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+23                                                                                \{
+24       \mbox{\hyperlink{class_sockets_1_1_servidor_aa6eba116bcc543fa6b532894a6402957}{serverSocket}} = \textcolor{keyword}{new} ServerSocket(puerto);
+25       \mbox{\hyperlink{class_sockets_1_1_servidor_a1a2e8bae5883a358083c35093a2a74b3}{pool}} = Executors.newFixedThreadPool(\mbox{\hyperlink{class_sockets_1_1_servidor_a691693d40a5185891964aea68f2e01c7}{numeroHilos}});
+26       this.\mbox{\hyperlink{class_sockets_1_1_servidor_ae795e6902937973b50d977b2ed77b470}{paso}} = \mbox{\hyperlink{class_sockets_1_1_servidor_ae795e6902937973b50d977b2ed77b470}{paso}};
+27     \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_sockets_1_1_servidor_abd6e00143db2f9368f53083c427ad2b4}\label{class_sockets_1_1_servidor_abd6e00143db2f9368f53083c427ad2b4}} 
+\index{Sockets\+::\+Servidor@{Sockets\+::\+Servidor}!run@{run}}
+\index{run@{run}!Sockets\+::\+Servidor@{Sockets\+::\+Servidor}}
+\subsubsection{\texorpdfstring{run()}{run()}}
+{\footnotesize\ttfamily void Sockets.\+Servidor.\+run (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+29                       \{
+30       \textcolor{keywordflow}{try} \{
+31         \textcolor{keywordflow}{while}(\textcolor{keyword}{true}) \{
+32           \mbox{\hyperlink{class_sockets_1_1_servidor_a1a2e8bae5883a358083c35093a2a74b3}{pool}}.execute(\textcolor{keyword}{new} Manejador(\mbox{\hyperlink{class_sockets_1_1_servidor_ae795e6902937973b50d977b2ed77b470}{paso}}, \mbox{\hyperlink{class_sockets_1_1_servidor_aa6eba116bcc543fa6b532894a6402957}{serverSocket}}.accept()));
+33         \}
+34       \} \textcolor{keywordflow}{catch} (IOException ex) \{
+35           \mbox{\hyperlink{class_sockets_1_1_servidor_a1a2e8bae5883a358083c35093a2a74b3}{pool}}.shutdown();
+36       \}
+37     \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_sockets_1_1_servidor_a691693d40a5185891964aea68f2e01c7}\label{class_sockets_1_1_servidor_a691693d40a5185891964aea68f2e01c7}} 
+\index{Sockets\+::\+Servidor@{Sockets\+::\+Servidor}!numero\+Hilos@{numero\+Hilos}}
+\index{numero\+Hilos@{numero\+Hilos}!Sockets\+::\+Servidor@{Sockets\+::\+Servidor}}
+\subsubsection{\texorpdfstring{numero\+Hilos}{numeroHilos}}
+{\footnotesize\ttfamily int Sockets.\+Servidor.\+numero\+Hilos\hspace{0.3cm}{\ttfamily [package]}}
+
+\mbox{\Hypertarget{class_sockets_1_1_servidor_ae795e6902937973b50d977b2ed77b470}\label{class_sockets_1_1_servidor_ae795e6902937973b50d977b2ed77b470}} 
+\index{Sockets\+::\+Servidor@{Sockets\+::\+Servidor}!paso@{paso}}
+\index{paso@{paso}!Sockets\+::\+Servidor@{Sockets\+::\+Servidor}}
+\subsubsection{\texorpdfstring{paso}{paso}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_sockets_1_1_paso}{Paso}} Sockets.\+Servidor.\+paso\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_sockets_1_1_servidor_a1a2e8bae5883a358083c35093a2a74b3}\label{class_sockets_1_1_servidor_a1a2e8bae5883a358083c35093a2a74b3}} 
+\index{Sockets\+::\+Servidor@{Sockets\+::\+Servidor}!pool@{pool}}
+\index{pool@{pool}!Sockets\+::\+Servidor@{Sockets\+::\+Servidor}}
+\subsubsection{\texorpdfstring{pool}{pool}}
+{\footnotesize\ttfamily final Executor\+Service Sockets.\+Servidor.\+pool\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_sockets_1_1_servidor_aa6eba116bcc543fa6b532894a6402957}\label{class_sockets_1_1_servidor_aa6eba116bcc543fa6b532894a6402957}} 
+\index{Sockets\+::\+Servidor@{Sockets\+::\+Servidor}!server\+Socket@{server\+Socket}}
+\index{server\+Socket@{server\+Socket}!Sockets\+::\+Servidor@{Sockets\+::\+Servidor}}
+\subsubsection{\texorpdfstring{server\+Socket}{serverSocket}}
+{\footnotesize\ttfamily final Server\+Socket Sockets.\+Servidor.\+server\+Socket\hspace{0.3cm}{\ttfamily [private]}}
+

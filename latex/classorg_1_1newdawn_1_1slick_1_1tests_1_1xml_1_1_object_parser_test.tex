@@ -1,0 +1,46 @@
+\hypertarget{classorg_1_1newdawn_1_1slick_1_1tests_1_1xml_1_1_object_parser_test}{}\section{org.\+newdawn.\+slick.\+tests.\+xml.\+Object\+Parser\+Test Class Reference}
+\label{classorg_1_1newdawn_1_1slick_1_1tests_1_1xml_1_1_object_parser_test}\index{org.\+newdawn.\+slick.\+tests.\+xml.\+Object\+Parser\+Test@{org.\+newdawn.\+slick.\+tests.\+xml.\+Object\+Parser\+Test}}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1xml_1_1_object_parser_test_a9a32ce53ed96a12e394a3b84c92030b9}{main}} (String\mbox{[}$\,$\mbox{]} argv)  throws Slick\+X\+M\+L\+Exception 
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A simple test to check that the object parser from X\+ML works. Read the Javadoc of Object\+Parser to work out whats going on here
+
+\begin{DoxyAuthor}{Author}
+kevin 
+\end{DoxyAuthor}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tests_1_1xml_1_1_object_parser_test_a9a32ce53ed96a12e394a3b84c92030b9}\label{classorg_1_1newdawn_1_1slick_1_1tests_1_1xml_1_1_object_parser_test_a9a32ce53ed96a12e394a3b84c92030b9}} 
+\index{org\+::newdawn\+::slick\+::tests\+::xml\+::\+Object\+Parser\+Test@{org\+::newdawn\+::slick\+::tests\+::xml\+::\+Object\+Parser\+Test}!main@{main}}
+\index{main@{main}!org\+::newdawn\+::slick\+::tests\+::xml\+::\+Object\+Parser\+Test@{org\+::newdawn\+::slick\+::tests\+::xml\+::\+Object\+Parser\+Test}}
+\subsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily static void org.\+newdawn.\+slick.\+tests.\+xml.\+Object\+Parser\+Test.\+main (\begin{DoxyParamCaption}\item[{String \mbox{[}$\,$\mbox{]}}]{argv }\end{DoxyParamCaption}) throws \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1xml_1_1_slick_x_m_l_exception}{Slick\+X\+M\+L\+Exception}}\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1xml_1_1_entity}{Entity}} point to our test. Simple read some X\+ML which should generate an object tree.
+
+
+\begin{DoxyParams}{Parameters}
+{\em argv} & The arguments passed into the test \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Slick\+X\+M\+L\+Exception} & Indicates a failure to parse X\+ML or generate objects \\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyCode}
+21                                                                     \{
+22         ObjectTreeParser parser = \textcolor{keyword}{new} ObjectTreeParser(\textcolor{stringliteral}{"org.newdawn.slick.tests.xml"});
+23         parser.addElementMapping(\textcolor{stringliteral}{"Bag"}, ItemContainer.class);
+24         
+25         GameData parsedData = (GameData) parser.parse(\textcolor{stringliteral}{"testdata/objxmltest.xml"});
+26         parsedData.dump(\textcolor{stringliteral}{""});
+27     \}
+\end{DoxyCode}

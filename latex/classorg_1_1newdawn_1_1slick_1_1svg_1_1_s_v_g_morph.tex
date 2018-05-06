@@ -1,0 +1,221 @@
+\hypertarget{classorg_1_1newdawn_1_1slick_1_1svg_1_1_s_v_g_morph}{}\section{org.\+newdawn.\+slick.\+svg.\+S\+V\+G\+Morph Class Reference}
+\label{classorg_1_1newdawn_1_1slick_1_1svg_1_1_s_v_g_morph}\index{org.\+newdawn.\+slick.\+svg.\+S\+V\+G\+Morph@{org.\+newdawn.\+slick.\+svg.\+S\+V\+G\+Morph}}
+Inheritance diagram for org.\+newdawn.\+slick.\+svg.\+S\+V\+G\+Morph\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classorg_1_1newdawn_1_1slick_1_1svg_1_1_s_v_g_morph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1_s_v_g_morph_a34006c6c880ef50451536a41e7a74fd2}{S\+V\+G\+Morph}} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1_diagram}{Diagram}} diagram)
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1_s_v_g_morph_ae23a44badfe2dd598ef09d4edfcbfb4d}{add\+Step}} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1_diagram}{Diagram}} diagram)
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1_s_v_g_morph_a7ae01b8d069c42d3c008bf36ce1af112}{set\+External\+Diagram}} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1_diagram}{Diagram}} diagram)
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1_s_v_g_morph_afba9cd5655c85ee202a36f57afdbb86d}{update\+Morph\+Time}} (float delta)
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1_s_v_g_morph_a2c74a6faaa71fd64eaee5a0848f29423}{set\+Morph\+Time}} (float time)
+\item 
+int \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1_s_v_g_morph_a0a4c1056e8d80f0d00ecfe06b90c2f06}{get\+Figure\+Count}} ()
+\item 
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1_figure}{Figure}} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1_s_v_g_morph_aeef258b49ed563264f9686d542634d94}{get\+Figure}} (int index)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Array\+List \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1_s_v_g_morph_ab3f69a342347ec5d6fa4c65aa6671e4b}{figures}} = new Array\+List()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A utility to allow morphing between a set of similar S\+VG diagrams
+
+\begin{DoxyAuthor}{Author}
+kevin 
+\end{DoxyAuthor}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1svg_1_1_s_v_g_morph_a34006c6c880ef50451536a41e7a74fd2}\label{classorg_1_1newdawn_1_1slick_1_1svg_1_1_s_v_g_morph_a34006c6c880ef50451536a41e7a74fd2}} 
+\index{org\+::newdawn\+::slick\+::svg\+::\+S\+V\+G\+Morph@{org\+::newdawn\+::slick\+::svg\+::\+S\+V\+G\+Morph}!S\+V\+G\+Morph@{S\+V\+G\+Morph}}
+\index{S\+V\+G\+Morph@{S\+V\+G\+Morph}!org\+::newdawn\+::slick\+::svg\+::\+S\+V\+G\+Morph@{org\+::newdawn\+::slick\+::svg\+::\+S\+V\+G\+Morph}}
+\subsubsection{\texorpdfstring{S\+V\+G\+Morph()}{SVGMorph()}}
+{\footnotesize\ttfamily org.\+newdawn.\+slick.\+svg.\+S\+V\+G\+Morph.\+S\+V\+G\+Morph (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1_diagram}{Diagram}}}]{diagram }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Create a new morph with a first diagram base
+
+
+\begin{DoxyParams}{Parameters}
+{\em diagram} & The base diagram which provides the first step of the morph \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+21                                      \{
+22         super(diagram.getWidth(), diagram.getHeight());
+23         
+24         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i=0;i<diagram.getFigureCount();i++) \{
+25             Figure figure = diagram.getFigure(i);
+26             Figure copy = \textcolor{keyword}{new} Figure(figure.getType(), \textcolor{keyword}{new} MorphShape(figure.getShape()), figure.getData(),
+       figure.getTransform());
+27             
+28             \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1_s_v_g_morph_ab3f69a342347ec5d6fa4c65aa6671e4b}{figures}}.add(copy);
+29         \}
+30     \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1svg_1_1_s_v_g_morph_ae23a44badfe2dd598ef09d4edfcbfb4d}\label{classorg_1_1newdawn_1_1slick_1_1svg_1_1_s_v_g_morph_ae23a44badfe2dd598ef09d4edfcbfb4d}} 
+\index{org\+::newdawn\+::slick\+::svg\+::\+S\+V\+G\+Morph@{org\+::newdawn\+::slick\+::svg\+::\+S\+V\+G\+Morph}!add\+Step@{add\+Step}}
+\index{add\+Step@{add\+Step}!org\+::newdawn\+::slick\+::svg\+::\+S\+V\+G\+Morph@{org\+::newdawn\+::slick\+::svg\+::\+S\+V\+G\+Morph}}
+\subsubsection{\texorpdfstring{add\+Step()}{addStep()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+svg.\+S\+V\+G\+Morph.\+add\+Step (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1_diagram}{Diagram}}}]{diagram }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Add a subsquent step to the morphing
+
+
+\begin{DoxyParams}{Parameters}
+{\em diagram} & The diagram to add as the next step in the morph \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+37                                          \{
+38         \textcolor{keywordflow}{if} (diagram.getFigureCount() != \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1_s_v_g_morph_ab3f69a342347ec5d6fa4c65aa6671e4b}{figures}}.size()) \{
+39             \textcolor{keywordflow}{throw} \textcolor{keyword}{new} RuntimeException(\textcolor{stringliteral}{"Mismatched diagrams, missing ids"});
+40         \}
+41         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i=0;i<diagram.getFigureCount();i++) \{
+42             Figure figure = diagram.getFigure(i);
+43             String \textcolor{keywordtype}{id} = figure.getData().getMetaData();
+44             
+45             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} j=0;j<\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1_s_v_g_morph_ab3f69a342347ec5d6fa4c65aa6671e4b}{figures}}.size();j++) \{
+46                 Figure existing = (Figure) \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1_s_v_g_morph_ab3f69a342347ec5d6fa4c65aa6671e4b}{figures}}.get(j);
+47                 \textcolor{keywordflow}{if} (existing.getData().getMetaData().equals(\textcolor{keywordtype}{id})) \{
+48                     MorphShape morph = (MorphShape) existing.getShape();
+49                     morph.addShape(figure.getShape());
+50                     \textcolor{keywordflow}{break};
+51                 \}
+52             \}
+53         \}
+54     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1svg_1_1_s_v_g_morph_aeef258b49ed563264f9686d542634d94}\label{classorg_1_1newdawn_1_1slick_1_1svg_1_1_s_v_g_morph_aeef258b49ed563264f9686d542634d94}} 
+\index{org\+::newdawn\+::slick\+::svg\+::\+S\+V\+G\+Morph@{org\+::newdawn\+::slick\+::svg\+::\+S\+V\+G\+Morph}!get\+Figure@{get\+Figure}}
+\index{get\+Figure@{get\+Figure}!org\+::newdawn\+::slick\+::svg\+::\+S\+V\+G\+Morph@{org\+::newdawn\+::slick\+::svg\+::\+S\+V\+G\+Morph}}
+\subsubsection{\texorpdfstring{get\+Figure()}{getFigure()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1_figure}{Figure}} org.\+newdawn.\+slick.\+svg.\+S\+V\+G\+Morph.\+get\+Figure (\begin{DoxyParamCaption}\item[{int}]{index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1_diagram_aa331087982df2abf665a0b8bb7787118}{Diagram\+::get\+Figure(int)}} 
+\end{DoxySeeAlso}
+
+\begin{DoxyCode}
+115                                        \{
+116         \textcolor{keywordflow}{return} (Figure) \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1_s_v_g_morph_ab3f69a342347ec5d6fa4c65aa6671e4b}{figures}}.get(index);
+117     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1svg_1_1_s_v_g_morph_a0a4c1056e8d80f0d00ecfe06b90c2f06}\label{classorg_1_1newdawn_1_1slick_1_1svg_1_1_s_v_g_morph_a0a4c1056e8d80f0d00ecfe06b90c2f06}} 
+\index{org\+::newdawn\+::slick\+::svg\+::\+S\+V\+G\+Morph@{org\+::newdawn\+::slick\+::svg\+::\+S\+V\+G\+Morph}!get\+Figure\+Count@{get\+Figure\+Count}}
+\index{get\+Figure\+Count@{get\+Figure\+Count}!org\+::newdawn\+::slick\+::svg\+::\+S\+V\+G\+Morph@{org\+::newdawn\+::slick\+::svg\+::\+S\+V\+G\+Morph}}
+\subsubsection{\texorpdfstring{get\+Figure\+Count()}{getFigureCount()}}
+{\footnotesize\ttfamily int org.\+newdawn.\+slick.\+svg.\+S\+V\+G\+Morph.\+get\+Figure\+Count (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1_diagram_a869127d837d1ffa281dc3e50817ae22e}{Diagram\+::get\+Figure\+Count()}} 
+\end{DoxySeeAlso}
+
+\begin{DoxyCode}
+108                                 \{
+109         \textcolor{keywordflow}{return} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1_s_v_g_morph_ab3f69a342347ec5d6fa4c65aa6671e4b}{figures}}.size();
+110     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1svg_1_1_s_v_g_morph_a7ae01b8d069c42d3c008bf36ce1af112}\label{classorg_1_1newdawn_1_1slick_1_1svg_1_1_s_v_g_morph_a7ae01b8d069c42d3c008bf36ce1af112}} 
+\index{org\+::newdawn\+::slick\+::svg\+::\+S\+V\+G\+Morph@{org\+::newdawn\+::slick\+::svg\+::\+S\+V\+G\+Morph}!set\+External\+Diagram@{set\+External\+Diagram}}
+\index{set\+External\+Diagram@{set\+External\+Diagram}!org\+::newdawn\+::slick\+::svg\+::\+S\+V\+G\+Morph@{org\+::newdawn\+::slick\+::svg\+::\+S\+V\+G\+Morph}}
+\subsubsection{\texorpdfstring{set\+External\+Diagram()}{setExternalDiagram()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+svg.\+S\+V\+G\+Morph.\+set\+External\+Diagram (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1_diagram}{Diagram}}}]{diagram }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Set the current diagram we should morph from. This only really works with \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1_s_v_g_morph_afba9cd5655c85ee202a36f57afdbb86d}{update\+Morph\+Time()}} but can be used for smooth transitions between morphs.
+
+
+\begin{DoxyParams}{Parameters}
+{\em diagram} & The diagram to use as the base of the morph \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+63                                                     \{
+64         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i=0;i<\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1_s_v_g_morph_ab3f69a342347ec5d6fa4c65aa6671e4b}{figures}}.size();i++) \{
+65             Figure figure = (Figure) \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1_s_v_g_morph_ab3f69a342347ec5d6fa4c65aa6671e4b}{figures}}.get(i);
+66             
+67             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} j=0;j<diagram.getFigureCount();j++) \{
+68                 Figure newBase = diagram.getFigure(j);
+69                 \textcolor{keywordflow}{if} (newBase.getData().getMetaData().equals(figure.getData().getMetaData())) \{
+70                     MorphShape shape = (MorphShape) figure.getShape();
+71                     shape.setExternalFrame(newBase.getShape());
+72                     \textcolor{keywordflow}{break};
+73                 \}
+74             \}
+75         \}
+76     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1svg_1_1_s_v_g_morph_a2c74a6faaa71fd64eaee5a0848f29423}\label{classorg_1_1newdawn_1_1slick_1_1svg_1_1_s_v_g_morph_a2c74a6faaa71fd64eaee5a0848f29423}} 
+\index{org\+::newdawn\+::slick\+::svg\+::\+S\+V\+G\+Morph@{org\+::newdawn\+::slick\+::svg\+::\+S\+V\+G\+Morph}!set\+Morph\+Time@{set\+Morph\+Time}}
+\index{set\+Morph\+Time@{set\+Morph\+Time}!org\+::newdawn\+::slick\+::svg\+::\+S\+V\+G\+Morph@{org\+::newdawn\+::slick\+::svg\+::\+S\+V\+G\+Morph}}
+\subsubsection{\texorpdfstring{set\+Morph\+Time()}{setMorphTime()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+svg.\+S\+V\+G\+Morph.\+set\+Morph\+Time (\begin{DoxyParamCaption}\item[{float}]{time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Set the \char`\"{}time\char`\"{} index for this morph. This is given in terms of diagrams, so 0.\+5f would give you the position half way between the first and second diagrams.
+
+
+\begin{DoxyParams}{Parameters}
+{\em time} & The time index to represent on this diagrams \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+97                                          \{
+98         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i=0;i<\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1_s_v_g_morph_ab3f69a342347ec5d6fa4c65aa6671e4b}{figures}}.size();i++) \{
+99             Figure figure = (Figure) \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1_s_v_g_morph_ab3f69a342347ec5d6fa4c65aa6671e4b}{figures}}.get(i);
+100             MorphShape shape = (MorphShape) figure.getShape();
+101             shape.setMorphTime(time);
+102         \}
+103     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1svg_1_1_s_v_g_morph_afba9cd5655c85ee202a36f57afdbb86d}\label{classorg_1_1newdawn_1_1slick_1_1svg_1_1_s_v_g_morph_afba9cd5655c85ee202a36f57afdbb86d}} 
+\index{org\+::newdawn\+::slick\+::svg\+::\+S\+V\+G\+Morph@{org\+::newdawn\+::slick\+::svg\+::\+S\+V\+G\+Morph}!update\+Morph\+Time@{update\+Morph\+Time}}
+\index{update\+Morph\+Time@{update\+Morph\+Time}!org\+::newdawn\+::slick\+::svg\+::\+S\+V\+G\+Morph@{org\+::newdawn\+::slick\+::svg\+::\+S\+V\+G\+Morph}}
+\subsubsection{\texorpdfstring{update\+Morph\+Time()}{updateMorphTime()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+svg.\+S\+V\+G\+Morph.\+update\+Morph\+Time (\begin{DoxyParamCaption}\item[{float}]{delta }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Update the morph time index by the amount specified
+
+
+\begin{DoxyParams}{Parameters}
+{\em delta} & The amount to update the morph by \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+83                                              \{
+84         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i=0;i<\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1_s_v_g_morph_ab3f69a342347ec5d6fa4c65aa6671e4b}{figures}}.size();i++) \{
+85             Figure figure = (Figure) \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1_s_v_g_morph_ab3f69a342347ec5d6fa4c65aa6671e4b}{figures}}.get(i);
+86             MorphShape shape = (MorphShape) figure.getShape();
+87             shape.updateMorphTime(delta);
+88         \}
+89     \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1svg_1_1_s_v_g_morph_ab3f69a342347ec5d6fa4c65aa6671e4b}\label{classorg_1_1newdawn_1_1slick_1_1svg_1_1_s_v_g_morph_ab3f69a342347ec5d6fa4c65aa6671e4b}} 
+\index{org\+::newdawn\+::slick\+::svg\+::\+S\+V\+G\+Morph@{org\+::newdawn\+::slick\+::svg\+::\+S\+V\+G\+Morph}!figures@{figures}}
+\index{figures@{figures}!org\+::newdawn\+::slick\+::svg\+::\+S\+V\+G\+Morph@{org\+::newdawn\+::slick\+::svg\+::\+S\+V\+G\+Morph}}
+\subsubsection{\texorpdfstring{figures}{figures}}
+{\footnotesize\ttfamily Array\+List org.\+newdawn.\+slick.\+svg.\+S\+V\+G\+Morph.\+figures = new Array\+List()\hspace{0.3cm}{\ttfamily [private]}}
+
+The list of figures being morphed 

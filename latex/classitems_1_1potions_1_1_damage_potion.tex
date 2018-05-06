@@ -1,0 +1,88 @@
+\hypertarget{classitems_1_1potions_1_1_damage_potion}{}\section{items.\+potions.\+Damage\+Potion Class Reference}
+\label{classitems_1_1potions_1_1_damage_potion}\index{items.\+potions.\+Damage\+Potion@{items.\+potions.\+Damage\+Potion}}
+Inheritance diagram for items.\+potions.\+Damage\+Potion\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classitems_1_1potions_1_1_damage_potion}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classitems_1_1potions_1_1_damage_potion_a9d1f05ff48a0dba21732d396c442c2af}{Damage\+Potion}} (int level)  throws Slick\+Exception 
+\item 
+void \mbox{\hyperlink{classitems_1_1potions_1_1_damage_potion_a5ad48837266e61f13c6c1d2ac7321133}{use}} (\mbox{\hyperlink{classentities_1_1_subject}{Subject}} c)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classitems_1_1potions_1_1_damage_potion_a0278c2e62e2d1bea2ee348110474d812}{num}}
+\item 
+int \mbox{\hyperlink{classitems_1_1potions_1_1_damage_potion_a0d769ebd1b8063daafe958a488fb4174}{duration}} = 10000
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+\begin{DoxyAuthor}{Author}
+Bea 
+\end{DoxyAuthor}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classitems_1_1potions_1_1_damage_potion_a9d1f05ff48a0dba21732d396c442c2af}\label{classitems_1_1potions_1_1_damage_potion_a9d1f05ff48a0dba21732d396c442c2af}} 
+\index{items\+::potions\+::\+Damage\+Potion@{items\+::potions\+::\+Damage\+Potion}!Damage\+Potion@{Damage\+Potion}}
+\index{Damage\+Potion@{Damage\+Potion}!items\+::potions\+::\+Damage\+Potion@{items\+::potions\+::\+Damage\+Potion}}
+\subsubsection{\texorpdfstring{Damage\+Potion()}{DamagePotion()}}
+{\footnotesize\ttfamily items.\+potions.\+Damage\+Potion.\+Damage\+Potion (\begin{DoxyParamCaption}\item[{int}]{level }\end{DoxyParamCaption}) throws \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_slick_exception}{Slick\+Exception}}\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+27                                                          \{
+28         super(\textcolor{keyword}{new} Image(\textcolor{stringliteral}{"res/potions/DmgPot.png"}), \textcolor{stringliteral}{"DamagePotion"}, \mbox{\hyperlink{classitems_1_1_potion_ab2a46630762ff8d852c72333029252e5}{Potion}}.DAMAGE\_TYPE);
+29         \textcolor{keywordflow}{switch} (level) \{
+30             \textcolor{keywordflow}{case} 1:
+31                 this.\mbox{\hyperlink{classitems_1_1potions_1_1_damage_potion_a0278c2e62e2d1bea2ee348110474d812}{num}} = 1;
+32                 \textcolor{keywordflow}{break};
+33             \textcolor{keywordflow}{case} 2:
+34                 this.\mbox{\hyperlink{classitems_1_1potions_1_1_damage_potion_a0278c2e62e2d1bea2ee348110474d812}{num}} = 2;
+35                 \textcolor{keywordflow}{break};
+36             \textcolor{keywordflow}{case} 3:
+37                 this.\mbox{\hyperlink{classitems_1_1potions_1_1_damage_potion_a0278c2e62e2d1bea2ee348110474d812}{num}} = 3;
+38                 \textcolor{keywordflow}{break};
+39         \}
+40     \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classitems_1_1potions_1_1_damage_potion_a5ad48837266e61f13c6c1d2ac7321133}\label{classitems_1_1potions_1_1_damage_potion_a5ad48837266e61f13c6c1d2ac7321133}} 
+\index{items\+::potions\+::\+Damage\+Potion@{items\+::potions\+::\+Damage\+Potion}!use@{use}}
+\index{use@{use}!items\+::potions\+::\+Damage\+Potion@{items\+::potions\+::\+Damage\+Potion}}
+\subsubsection{\texorpdfstring{use()}{use()}}
+{\footnotesize\ttfamily void items.\+potions.\+Damage\+Potion.\+use (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classentities_1_1_subject}{Subject}}}]{c }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+43                                \{
+44         \mbox{\hyperlink{classitems_1_1_potion_a33ab3390826ef43ddfa94fc812e53afe}{eat}}();
+45         c.activateDamagePotion(\mbox{\hyperlink{classitems_1_1potions_1_1_damage_potion_a0d769ebd1b8063daafe958a488fb4174}{duration}}, \mbox{\hyperlink{classitems_1_1potions_1_1_damage_potion_a0278c2e62e2d1bea2ee348110474d812}{num}});
+46         \textcolor{comment}{//c.setPower(num + c.getPower()); // posible cambio a subir el arma, ¿poner limite?}
+47 
+48     \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classitems_1_1potions_1_1_damage_potion_a0d769ebd1b8063daafe958a488fb4174}\label{classitems_1_1potions_1_1_damage_potion_a0d769ebd1b8063daafe958a488fb4174}} 
+\index{items\+::potions\+::\+Damage\+Potion@{items\+::potions\+::\+Damage\+Potion}!duration@{duration}}
+\index{duration@{duration}!items\+::potions\+::\+Damage\+Potion@{items\+::potions\+::\+Damage\+Potion}}
+\subsubsection{\texorpdfstring{duration}{duration}}
+{\footnotesize\ttfamily int items.\+potions.\+Damage\+Potion.\+duration = 10000\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classitems_1_1potions_1_1_damage_potion_a0278c2e62e2d1bea2ee348110474d812}\label{classitems_1_1potions_1_1_damage_potion_a0278c2e62e2d1bea2ee348110474d812}} 
+\index{items\+::potions\+::\+Damage\+Potion@{items\+::potions\+::\+Damage\+Potion}!num@{num}}
+\index{num@{num}!items\+::potions\+::\+Damage\+Potion@{items\+::potions\+::\+Damage\+Potion}}
+\subsubsection{\texorpdfstring{num}{num}}
+{\footnotesize\ttfamily int items.\+potions.\+Damage\+Potion.\+num\hspace{0.3cm}{\ttfamily [private]}}
+

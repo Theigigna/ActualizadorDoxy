@@ -1,0 +1,161 @@
+\hypertarget{classcosasparaprobar_1_1personas}{}\section{cosasparaprobar.\+personas Class Reference}
+\label{classcosasparaprobar_1_1personas}\index{cosasparaprobar.\+personas@{cosasparaprobar.\+personas}}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{classcosasparaprobar_1_1personas_aefa0643078c9ade42af7cb543ee097c7}{main}} (String\mbox{[}$\,$\mbox{]} args)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Programa que calcula los números primos que hay en un rango determinado \begin{DoxyAuthor}{Author}
+
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classcosasparaprobar_1_1personas_aefa0643078c9ade42af7cb543ee097c7}\label{classcosasparaprobar_1_1personas_aefa0643078c9ade42af7cb543ee097c7}} 
+\index{cosasparaprobar\+::personas@{cosasparaprobar\+::personas}!main@{main}}
+\index{main@{main}!cosasparaprobar\+::personas@{cosasparaprobar\+::personas}}
+\subsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily static void cosasparaprobar.\+personas.\+main (\begin{DoxyParamCaption}\item[{String \mbox{[}$\,$\mbox{]}}]{args }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Programa principal 
+\begin{DoxyParams}{Parameters}
+{\em args} & Argumentos recibidos al ejecutar el programa\+: límite superior del rango \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+21                                            \{
+22     \textcolor{keywordtype}{int} i=0, j;
+23     \textcolor{keywordtype}{double} contadorimc=0;
+24     \textcolor{keywordtype}{double} media=0;
+25     \textcolor{keywordtype}{double} peso=0;
+26     \textcolor{keywordtype}{double} altura=0;
+27     \textcolor{keywordtype}{double} imc=0;
+28     \textcolor{keywordtype}{int} num\_personas;
+29     \textcolor{keywordtype}{boolean} a=\textcolor{keyword}{true};
+30     \textcolor{keywordtype}{boolean} b=\textcolor{keyword}{true};
+31     \textcolor{keywordtype}{boolean} c=\textcolor{keyword}{false};
+32     String categoria=\textcolor{stringliteral}{""};
+33     String categoria1=\textcolor{stringliteral}{""};
+34     String opcion = \textcolor{stringliteral}{""};
+35     String nombre=\textcolor{stringliteral}{""};
+36     
+37     \textcolor{keywordflow}{if} (args.length != 0) \{
+38         System.out.println (\textcolor{stringliteral}{"Error. No ha introducido par‡metros."});
+39     
+40     \} \textcolor{keywordflow}{else} \{
+41         num\_personas= Integer.parseInt(\textcolor{stringliteral}{"2"});
+42         String[] info = \textcolor{keyword}{new} String[num\_personas];
+43         Scanner sc = \textcolor{keyword}{new} Scanner (System.in);
+44         
+45         \textcolor{keywordflow}{while} (i<num\_personas && (!opcion.equals(\textcolor{stringliteral}{"s"})) && (!opcion.equals(\textcolor{stringliteral}{"S"}))) \{
+46             System.out.println(\textcolor{stringliteral}{"Teclee nombre del sujeto: "});
+47             nombre=sc.nextLine();
+48             a=\textcolor{keyword}{true};
+49             b=\textcolor{keyword}{true};
+50             c=\textcolor{keyword}{true};
+51             
+52             \textcolor{keywordflow}{while} (a) \{
+53                 System.out.println(\textcolor{stringliteral}{"Teclee peso del sujeto: "});
+54                 peso=sc.nextDouble();  sc.nextLine();
+55                 \textcolor{keywordflow}{if} (peso<25 || peso>160) \{
+56                     System.out.println(\textcolor{stringliteral}{"Peso incorrecto."});
+57                     a=\textcolor{keyword}{false};
+58                     b=\textcolor{keyword}{false};
+59                     
+60                 \} \textcolor{keywordflow}{else} \{
+61                     System.out.println(\textcolor{stringliteral}{"Teclee altura del sujeto: "});
+62                     altura=sc.nextDouble(); sc.nextLine();
+63                     \textcolor{keywordflow}{if} (altura<0.5 || altura>2.5) \{
+64                         System.out.println(\textcolor{stringliteral}{"Altura incorrecta."});
+65                         a=\textcolor{keyword}{false};
+66                         c=\textcolor{keyword}{false};
+67                     \} 
+68                 \}
+69                 a=\textcolor{keyword}{false};
+70             \}
+71                 
+72             \textcolor{keywordflow}{if} (\textcolor{keyword}{true}) \{
+73                 imc=peso/(altura*altura);
+74                 \textcolor{keywordflow}{if} (imc<18) categoria=\textcolor{stringliteral}{"Peso menor que el normal"};
+75                 \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (18<=imc && imc<25) categoria=\textcolor{stringliteral}{"Normal"};                 
+76                 \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (25<=imc && imc<30) categoria=\textcolor{stringliteral}{"Sobrepeso"};
+77                 \textcolor{keywordflow}{else} categoria=\textcolor{stringliteral}{"Obesidad"};
+78                 info[i]= nombre+\textcolor{stringliteral}{":"}+peso+\textcolor{stringliteral}{":"}+altura+\textcolor{stringliteral}{":"}+imc+\textcolor{stringliteral}{":"}+categoria;
+79                 i++;
+80             \}
+81             \textcolor{keywordflow}{if} (i==num\_personas) System.out.println(\textcolor{stringliteral}{"Array lleno. "});
+82             \textcolor{keywordflow}{else} \{
+83             System.out.println(\textcolor{stringliteral}{"Teclee s o S para salir de obtener valores."});
+84             opcion=sc.nextLine();
+85             \}
+86         \}
+87         
+88         \textcolor{keywordflow}{do} \{
+89         System.out.println(\textcolor{stringliteral}{"Menœ de opciones:"});
+90         System.out.println(\textcolor{stringliteral}{"Opci—n A: Todas las personas. "});
+91         System.out.println(\textcolor{stringliteral}{"Opci—n B: Todas las personas de determinada categor’a. "});
+92         System.out.println(\textcolor{stringliteral}{"Opci—n C: Todas las personas con IMC superior a la media. "});
+93         System.out.println(\textcolor{stringliteral}{"Opci—n S: Finalizar. "});
+94         System.out.println(\textcolor{stringliteral}{"Teclee A, B, C para hacer un c‡lculo o S para finalizar. "});
+95         opcion=sc.nextLine();
+96         \textcolor{keywordtype}{char} m=opcion.charAt(0);
+97         
+98         \textcolor{keywordflow}{switch} (m) \{
+99             \textcolor{keywordflow}{case} \textcolor{charliteral}{'A'}:
+100             \textcolor{keywordflow}{case} \textcolor{charliteral}{'a'}:
+101         String[] lineadatos;
+102                             
+103                 \textcolor{keywordflow}{for} (j=0; j<num\_personas; j++) \{
+104                     lineadatos=info[j].split(\textcolor{stringliteral}{"\(\backslash\)\(\backslash\):"});
+105                     System.out.println(\textcolor{stringliteral}{"Nombre:"}+lineadatos[0]+\textcolor{stringliteral}{"IMC:"}+lineadatos[3]+\textcolor{stringliteral}{"Categoria:"}+lineadatos
+      [4]+\textcolor{stringliteral}{"Peso:"}+lineadatos[1]+\textcolor{stringliteral}{"Altura:"}+lineadatos[2]);
+106                     
+107                 \}
+108                 \textcolor{keywordflow}{break};
+109             \textcolor{keywordflow}{case} \textcolor{charliteral}{'b'}:
+110             \textcolor{keywordflow}{case} \textcolor{charliteral}{'B'}:
+111                 System.out.println(\textcolor{stringliteral}{"Introduce una categor’a: "});
+112                 categoria1=sc.nextLine();
+113                 \textcolor{keywordflow}{if} ((categoria1.equals(\textcolor{stringliteral}{"Peso menor que el normal"}))||categoria1.equals(\textcolor{stringliteral}{"Normal"})||
+      categoria1.equals(\textcolor{stringliteral}{"Sobrepeso"})||categoria1.equals(\textcolor{stringliteral}{"Obesidad"}))\{
+114                     System.out.println(\textcolor{stringliteral}{"Las personas con categor’a "}+categoria+\textcolor{stringliteral}{" son: "});
+115                     \textcolor{keywordflow}{for} (j=0;j<=i;j++) \{
+116                         lineadatos=info[i].split(\textcolor{stringliteral}{":"});
+117                         \textcolor{keywordflow}{if} (lineadatos[4].equals(categoria1))
+118                             System.out.println(\textcolor{stringliteral}{"Nombre:"}+lineadatos[0]+\textcolor{stringliteral}{"IMC:"}+lineadatos[3]+\textcolor{stringliteral}{"Categoria:"}+
+      lineadatos[4]+\textcolor{stringliteral}{"Peso:"}+lineadatos[1]+\textcolor{stringliteral}{"Altura:"}+lineadatos[2]);
+119                     \}
+120                 \} \textcolor{keywordflow}{else} System.out.println(\textcolor{stringliteral}{"La categor’a seleccionada no existe."});
+121                 \textcolor{keywordflow}{break};
+122             
+123             \textcolor{keywordflow}{case} \textcolor{charliteral}{'c'}:
+124             \textcolor{keywordflow}{case} \textcolor{charliteral}{'C'}:
+125                 \textcolor{keywordflow}{for} (j=0;j<=i;j++) \{
+126                     lineadatos=info[i].split(\textcolor{stringliteral}{"\(\backslash\)\(\backslash\):"});
+127                     contadorimc=contadorimc+Double.parseDouble(lineadatos[3]);
+128                 \}
+129                 media=contadorimc/i;
+130                 
+131                 System.out.println(\textcolor{stringliteral}{"La media es:"} +media);
+132                 \textcolor{keywordflow}{for} (j=0;j<=i;j++) \{
+133                     lineadatos=info[i].split(\textcolor{stringliteral}{"\(\backslash\)\(\backslash\):"});
+134                     \textcolor{keywordflow}{if} (Double.parseDouble(lineadatos[3])>media)
+135                         System.out.println(\textcolor{stringliteral}{"Nombre:"}+lineadatos[0]+\textcolor{stringliteral}{"IMC:"}+lineadatos[3]+\textcolor{stringliteral}{"Categoria:"}+
+      lineadatos[4]+\textcolor{stringliteral}{"Peso:"}+lineadatos[1]+\textcolor{stringliteral}{"Altura:"}+lineadatos[2]);
+136                 \}
+137                 
+138         \}
+139         
+140                                 System.out.println(\textcolor{stringliteral}{"Sale del break"});
+141         \} \textcolor{keywordflow}{while} (!opcion.equals(\textcolor{stringliteral}{"s"}));
+142         
+143     \}
+144 \}
+\end{DoxyCode}

@@ -1,0 +1,208 @@
+\hypertarget{classconcurrency_1_1diners_1_1_diners}{}\section{concurrency.\+diners.\+Diners Class Reference}
+\label{classconcurrency_1_1diners_1_1_diners}\index{concurrency.\+diners.\+Diners@{concurrency.\+diners.\+Diners}}
+Inheritance diagram for concurrency.\+diners.\+Diners\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classconcurrency_1_1diners_1_1_diners}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classconcurrency_1_1diners_1_1_diners_a8fa1aaa0013516431481bc274e86717a}{init}} ()
+\item 
+int \mbox{\hyperlink{classconcurrency_1_1diners_1_1_diners_afda5c09982e95dad9d35038d370f0526}{sleep\+Time}} ()
+\item 
+int \mbox{\hyperlink{classconcurrency_1_1diners_1_1_diners_aa9a143c6257dd6e5c179fc47d53753c6}{eat\+Time}} ()
+\item 
+void \mbox{\hyperlink{classconcurrency_1_1diners_1_1_diners_a125c1910ae8e2052ba0c77e27e7cc6d3}{start}} ()
+\item 
+void \mbox{\hyperlink{classconcurrency_1_1diners_1_1_diners_a8220eee7d0a03b9d21b3a2501b6abed8}{stop}} ()
+\end{DoxyCompactItemize}
+\subsection*{Package Functions}
+\begin{DoxyCompactItemize}
+\item 
+Thread \mbox{\hyperlink{classconcurrency_1_1diners_1_1_diners_a2576319d2ab7d71417cccc214fab518d}{make\+Philosopher}} (\mbox{\hyperlink{classconcurrency_1_1diners_1_1_diners}{Diners}} d, int id, \mbox{\hyperlink{classconcurrency_1_1diners_1_1_fork}{Fork}} left, \mbox{\hyperlink{classconcurrency_1_1diners_1_1_fork}{Fork}} right)
+\end{DoxyCompactItemize}
+\subsection*{Package Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classconcurrency_1_1diners_1_1_phil_canvas}{Phil\+Canvas}} \mbox{\hyperlink{classconcurrency_1_1diners_1_1_diners_a89ca881884065b1e357a0556bb1be1fe}{display}}
+\item 
+Thread \mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classconcurrency_1_1diners_1_1_diners_adf06d18b05e5ad766ef522c1744bee13}{phil}} = new Thread\mbox{[}\mbox{\hyperlink{classconcurrency_1_1diners_1_1_phil_canvas_a3eeb58e8b150bc1715a708ef38171fd5}{Phil\+Canvas.\+N\+U\+M\+P\+H\+I\+LS}}\mbox{]}
+\item 
+\mbox{\hyperlink{classconcurrency_1_1diners_1_1_fork}{Fork}} \mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classconcurrency_1_1diners_1_1_diners_ab9e7ad456ad4ea3b62cea71de11c147d}{fork}} = new \mbox{\hyperlink{classconcurrency_1_1diners_1_1_fork}{Fork}}\mbox{[}\mbox{\hyperlink{classconcurrency_1_1diners_1_1_phil_canvas_a3eeb58e8b150bc1715a708ef38171fd5}{Phil\+Canvas.\+N\+U\+M\+P\+H\+I\+LS}}\mbox{]}
+\item 
+Scrollbar \mbox{\hyperlink{classconcurrency_1_1diners_1_1_diners_a39973398065942d8583b0c74d4c2365f}{slider}}
+\item 
+Button \mbox{\hyperlink{classconcurrency_1_1diners_1_1_diners_abefc470d4d20e4ac1877eca30012b009}{restart}}
+\item 
+Button \mbox{\hyperlink{classconcurrency_1_1diners_1_1_diners_a3d8a584bc67f1e9bf15ff9236cb078f9}{freeze}}
+\item 
+boolean \mbox{\hyperlink{classconcurrency_1_1diners_1_1_diners_a4c5e0aefcf719aeed27ca1bb9dca8294}{fixed}} = false
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classconcurrency_1_1diners_1_1_diners_aa9a143c6257dd6e5c179fc47d53753c6}\label{classconcurrency_1_1diners_1_1_diners_aa9a143c6257dd6e5c179fc47d53753c6}} 
+\index{concurrency\+::diners\+::\+Diners@{concurrency\+::diners\+::\+Diners}!eat\+Time@{eat\+Time}}
+\index{eat\+Time@{eat\+Time}!concurrency\+::diners\+::\+Diners@{concurrency\+::diners\+::\+Diners}}
+\subsubsection{\texorpdfstring{eat\+Time()}{eatTime()}}
+{\footnotesize\ttfamily int concurrency.\+diners.\+Diners.\+eat\+Time (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+64                          \{
+65         \textcolor{keywordflow}{return} (\mbox{\hyperlink{classconcurrency_1_1diners_1_1_diners_a39973398065942d8583b0c74d4c2365f}{slider}}.getValue()*(int)(50*Math.random()));
+66     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classconcurrency_1_1diners_1_1_diners_a8fa1aaa0013516431481bc274e86717a}\label{classconcurrency_1_1diners_1_1_diners_a8fa1aaa0013516431481bc274e86717a}} 
+\index{concurrency\+::diners\+::\+Diners@{concurrency\+::diners\+::\+Diners}!init@{init}}
+\index{init@{init}!concurrency\+::diners\+::\+Diners@{concurrency\+::diners\+::\+Diners}}
+\subsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily void concurrency.\+diners.\+Diners.\+init (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+17                        \{
+18         setLayout(\textcolor{keyword}{new} BorderLayout());
+19         String s = getParameter(\textcolor{stringliteral}{"Version"});
+20         \mbox{\hyperlink{classconcurrency_1_1diners_1_1_diners_a4c5e0aefcf719aeed27ca1bb9dca8294}{fixed}} = s.equals(\textcolor{stringliteral}{"FIXED"});
+21         \mbox{\hyperlink{classconcurrency_1_1diners_1_1_diners_a89ca881884065b1e357a0556bb1be1fe}{display}} = \textcolor{keyword}{new} PhilCanvas(\textcolor{keyword}{this});
+22         \mbox{\hyperlink{classconcurrency_1_1diners_1_1_diners_a89ca881884065b1e357a0556bb1be1fe}{display}}.setSize(300,320);
+23         add(\textcolor{stringliteral}{"Center"},\mbox{\hyperlink{classconcurrency_1_1diners_1_1_diners_a89ca881884065b1e357a0556bb1be1fe}{display}});
+24         \mbox{\hyperlink{classconcurrency_1_1diners_1_1_diners_a39973398065942d8583b0c74d4c2365f}{slider}} = \textcolor{keyword}{new} Scrollbar(Scrollbar.HORIZONTAL, 50, 5, 0, 100);
+25         
+26         \mbox{\hyperlink{classconcurrency_1_1diners_1_1_diners_abefc470d4d20e4ac1877eca30012b009}{restart}} = \textcolor{keyword}{new} Button(\textcolor{stringliteral}{"Restart"}); 
+27         \mbox{\hyperlink{classconcurrency_1_1diners_1_1_diners_abefc470d4d20e4ac1877eca30012b009}{restart}}.addActionListener(\textcolor{keyword}{new} ActionListener() \{
+28           \textcolor{keyword}{public} \textcolor{keywordtype}{void} actionPerformed(ActionEvent e) \{
+29             \textcolor{keywordflow}{if} (\mbox{\hyperlink{classconcurrency_1_1diners_1_1_diners_a89ca881884065b1e357a0556bb1be1fe}{display}}.\mbox{\hyperlink{classconcurrency_1_1diners_1_1_phil_canvas_a4792fa3037ac30fdc1645047637b861a}{deadlocked}}()) \{
+30                 \mbox{\hyperlink{classconcurrency_1_1diners_1_1_diners_a8220eee7d0a03b9d21b3a2501b6abed8}{stop}}();
+31                 \mbox{\hyperlink{classconcurrency_1_1diners_1_1_diners_a39973398065942d8583b0c74d4c2365f}{slider}}.setValue(50);
+32                 \mbox{\hyperlink{classconcurrency_1_1diners_1_1_diners_a125c1910ae8e2052ba0c77e27e7cc6d3}{start}}();
+33             \}
+34             \mbox{\hyperlink{classconcurrency_1_1diners_1_1_diners_a89ca881884065b1e357a0556bb1be1fe}{display}}.\mbox{\hyperlink{classconcurrency_1_1diners_1_1_phil_canvas_aa9331adb1fde2018cb5bce063873f910}{thaw}}();
+35           \}
+36         \});
+37 
+38         \mbox{\hyperlink{classconcurrency_1_1diners_1_1_diners_a3d8a584bc67f1e9bf15ff9236cb078f9}{freeze}} = \textcolor{keyword}{new} Button(\textcolor{stringliteral}{"Freeze"});        
+39         \mbox{\hyperlink{classconcurrency_1_1diners_1_1_diners_a3d8a584bc67f1e9bf15ff9236cb078f9}{freeze}}.addActionListener(\textcolor{keyword}{new} ActionListener() \{
+40           \textcolor{keyword}{public} \textcolor{keywordtype}{void} actionPerformed(ActionEvent e) \{
+41             \mbox{\hyperlink{classconcurrency_1_1diners_1_1_diners_a89ca881884065b1e357a0556bb1be1fe}{display}}.\mbox{\hyperlink{classconcurrency_1_1diners_1_1_phil_canvas_a25f9595a38651070830f45ef9a4c2b51}{freeze}}();
+42           \}
+43         \});
+44 
+45         Panel p1 = \textcolor{keyword}{new} Panel();
+46         p1.setLayout(\textcolor{keyword}{new} BorderLayout());
+47         p1.add(\textcolor{stringliteral}{"Center"},\mbox{\hyperlink{classconcurrency_1_1diners_1_1_diners_a39973398065942d8583b0c74d4c2365f}{slider}});
+48         p1.add(\textcolor{stringliteral}{"East"},\mbox{\hyperlink{classconcurrency_1_1diners_1_1_diners_abefc470d4d20e4ac1877eca30012b009}{restart}});
+49         p1.add(\textcolor{stringliteral}{"West"},\mbox{\hyperlink{classconcurrency_1_1diners_1_1_diners_a3d8a584bc67f1e9bf15ff9236cb078f9}{freeze}});
+50         add(\textcolor{stringliteral}{"South"},p1);
+51     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classconcurrency_1_1diners_1_1_diners_a2576319d2ab7d71417cccc214fab518d}\label{classconcurrency_1_1diners_1_1_diners_a2576319d2ab7d71417cccc214fab518d}} 
+\index{concurrency\+::diners\+::\+Diners@{concurrency\+::diners\+::\+Diners}!make\+Philosopher@{make\+Philosopher}}
+\index{make\+Philosopher@{make\+Philosopher}!concurrency\+::diners\+::\+Diners@{concurrency\+::diners\+::\+Diners}}
+\subsubsection{\texorpdfstring{make\+Philosopher()}{makePhilosopher()}}
+{\footnotesize\ttfamily Thread concurrency.\+diners.\+Diners.\+make\+Philosopher (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classconcurrency_1_1diners_1_1_diners}{Diners}}}]{d,  }\item[{int}]{id,  }\item[{\mbox{\hyperlink{classconcurrency_1_1diners_1_1_fork}{Fork}}}]{left,  }\item[{\mbox{\hyperlink{classconcurrency_1_1diners_1_1_fork}{Fork}}}]{right }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [package]}}
+
+
+\begin{DoxyCode}
+53                                                                     \{
+54         \textcolor{keywordflow}{if} (\mbox{\hyperlink{classconcurrency_1_1diners_1_1_diners_a4c5e0aefcf719aeed27ca1bb9dca8294}{fixed}})
+55             \textcolor{keywordflow}{return} \textcolor{keyword}{new} FixedPhilosopher(d,\textcolor{keywordtype}{id},left,right);
+56          \textcolor{keywordflow}{else}
+57             \textcolor{keywordflow}{return} \textcolor{keyword}{new} Philosopher(d,\textcolor{keywordtype}{id},left,right);
+58         \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classconcurrency_1_1diners_1_1_diners_afda5c09982e95dad9d35038d370f0526}\label{classconcurrency_1_1diners_1_1_diners_afda5c09982e95dad9d35038d370f0526}} 
+\index{concurrency\+::diners\+::\+Diners@{concurrency\+::diners\+::\+Diners}!sleep\+Time@{sleep\+Time}}
+\index{sleep\+Time@{sleep\+Time}!concurrency\+::diners\+::\+Diners@{concurrency\+::diners\+::\+Diners}}
+\subsubsection{\texorpdfstring{sleep\+Time()}{sleepTime()}}
+{\footnotesize\ttfamily int concurrency.\+diners.\+Diners.\+sleep\+Time (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+60                            \{
+61         \textcolor{keywordflow}{return} (\mbox{\hyperlink{classconcurrency_1_1diners_1_1_diners_a39973398065942d8583b0c74d4c2365f}{slider}}.getValue()*(int)(100*Math.random()));
+62     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classconcurrency_1_1diners_1_1_diners_a125c1910ae8e2052ba0c77e27e7cc6d3}\label{classconcurrency_1_1diners_1_1_diners_a125c1910ae8e2052ba0c77e27e7cc6d3}} 
+\index{concurrency\+::diners\+::\+Diners@{concurrency\+::diners\+::\+Diners}!start@{start}}
+\index{start@{start}!concurrency\+::diners\+::\+Diners@{concurrency\+::diners\+::\+Diners}}
+\subsubsection{\texorpdfstring{start()}{start()}}
+{\footnotesize\ttfamily void concurrency.\+diners.\+Diners.\+start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+68                         \{
+69        \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i =0; i<\mbox{\hyperlink{classconcurrency_1_1diners_1_1_diners_a89ca881884065b1e357a0556bb1be1fe}{display}}.\mbox{\hyperlink{classconcurrency_1_1diners_1_1_phil_canvas_a3eeb58e8b150bc1715a708ef38171fd5}{NUMPHILS}}; ++i)
+70             \mbox{\hyperlink{classconcurrency_1_1diners_1_1_diners_ab9e7ad456ad4ea3b62cea71de11c147d}{fork}}[i] = \textcolor{keyword}{new} Fork(\mbox{\hyperlink{classconcurrency_1_1diners_1_1_diners_a89ca881884065b1e357a0556bb1be1fe}{display}},i);
+71        \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i =0; i<\mbox{\hyperlink{classconcurrency_1_1diners_1_1_diners_a89ca881884065b1e357a0556bb1be1fe}{display}}.\mbox{\hyperlink{classconcurrency_1_1diners_1_1_phil_canvas_a3eeb58e8b150bc1715a708ef38171fd5}{NUMPHILS}}; ++i)\{
+72             \mbox{\hyperlink{classconcurrency_1_1diners_1_1_diners_adf06d18b05e5ad766ef522c1744bee13}{phil}}[i] = \mbox{\hyperlink{classconcurrency_1_1diners_1_1_diners_a2576319d2ab7d71417cccc214fab518d}{makePhilosopher}}(\textcolor{keyword}{this},i,
+73                         \mbox{\hyperlink{classconcurrency_1_1diners_1_1_diners_ab9e7ad456ad4ea3b62cea71de11c147d}{fork}}[(i-1+\mbox{\hyperlink{classconcurrency_1_1diners_1_1_diners_a89ca881884065b1e357a0556bb1be1fe}{display}}.\mbox{\hyperlink{classconcurrency_1_1diners_1_1_phil_canvas_a3eeb58e8b150bc1715a708ef38171fd5}{NUMPHILS}})% \mbox{\hyperlink{classconcurrency_1_1diners_1_1_diners_a89ca881884065b1e357a0556bb1be1fe}{display}}.
+      \mbox{\hyperlink{classconcurrency_1_1diners_1_1_phil_canvas_a3eeb58e8b150bc1715a708ef38171fd5}{NUMPHILS}}],
+74                         \mbox{\hyperlink{classconcurrency_1_1diners_1_1_diners_ab9e7ad456ad4ea3b62cea71de11c147d}{fork}}[i]);
+75             \mbox{\hyperlink{classconcurrency_1_1diners_1_1_diners_adf06d18b05e5ad766ef522c1744bee13}{phil}}[i].start();
+76        \}
+77     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classconcurrency_1_1diners_1_1_diners_a8220eee7d0a03b9d21b3a2501b6abed8}\label{classconcurrency_1_1diners_1_1_diners_a8220eee7d0a03b9d21b3a2501b6abed8}} 
+\index{concurrency\+::diners\+::\+Diners@{concurrency\+::diners\+::\+Diners}!stop@{stop}}
+\index{stop@{stop}!concurrency\+::diners\+::\+Diners@{concurrency\+::diners\+::\+Diners}}
+\subsubsection{\texorpdfstring{stop()}{stop()}}
+{\footnotesize\ttfamily void concurrency.\+diners.\+Diners.\+stop (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+79                        \{
+80         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i =0; i<\mbox{\hyperlink{classconcurrency_1_1diners_1_1_diners_a89ca881884065b1e357a0556bb1be1fe}{display}}.\mbox{\hyperlink{classconcurrency_1_1diners_1_1_phil_canvas_a3eeb58e8b150bc1715a708ef38171fd5}{NUMPHILS}}; ++i) \{
+81             \mbox{\hyperlink{classconcurrency_1_1diners_1_1_diners_adf06d18b05e5ad766ef522c1744bee13}{phil}}[i].interrupt();
+82         \}
+83     \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classconcurrency_1_1diners_1_1_diners_a89ca881884065b1e357a0556bb1be1fe}\label{classconcurrency_1_1diners_1_1_diners_a89ca881884065b1e357a0556bb1be1fe}} 
+\index{concurrency\+::diners\+::\+Diners@{concurrency\+::diners\+::\+Diners}!display@{display}}
+\index{display@{display}!concurrency\+::diners\+::\+Diners@{concurrency\+::diners\+::\+Diners}}
+\subsubsection{\texorpdfstring{display}{display}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classconcurrency_1_1diners_1_1_phil_canvas}{Phil\+Canvas}} concurrency.\+diners.\+Diners.\+display\hspace{0.3cm}{\ttfamily [package]}}
+
+\mbox{\Hypertarget{classconcurrency_1_1diners_1_1_diners_a4c5e0aefcf719aeed27ca1bb9dca8294}\label{classconcurrency_1_1diners_1_1_diners_a4c5e0aefcf719aeed27ca1bb9dca8294}} 
+\index{concurrency\+::diners\+::\+Diners@{concurrency\+::diners\+::\+Diners}!fixed@{fixed}}
+\index{fixed@{fixed}!concurrency\+::diners\+::\+Diners@{concurrency\+::diners\+::\+Diners}}
+\subsubsection{\texorpdfstring{fixed}{fixed}}
+{\footnotesize\ttfamily boolean concurrency.\+diners.\+Diners.\+fixed = false\hspace{0.3cm}{\ttfamily [package]}}
+
+\mbox{\Hypertarget{classconcurrency_1_1diners_1_1_diners_ab9e7ad456ad4ea3b62cea71de11c147d}\label{classconcurrency_1_1diners_1_1_diners_ab9e7ad456ad4ea3b62cea71de11c147d}} 
+\index{concurrency\+::diners\+::\+Diners@{concurrency\+::diners\+::\+Diners}!fork@{fork}}
+\index{fork@{fork}!concurrency\+::diners\+::\+Diners@{concurrency\+::diners\+::\+Diners}}
+\subsubsection{\texorpdfstring{fork}{fork}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classconcurrency_1_1diners_1_1_fork}{Fork}} \mbox{[}$\,$\mbox{]} concurrency.\+diners.\+Diners.\+fork = new \mbox{\hyperlink{classconcurrency_1_1diners_1_1_fork}{Fork}}\mbox{[}\mbox{\hyperlink{classconcurrency_1_1diners_1_1_phil_canvas_a3eeb58e8b150bc1715a708ef38171fd5}{Phil\+Canvas.\+N\+U\+M\+P\+H\+I\+LS}}\mbox{]}\hspace{0.3cm}{\ttfamily [package]}}
+
+\mbox{\Hypertarget{classconcurrency_1_1diners_1_1_diners_a3d8a584bc67f1e9bf15ff9236cb078f9}\label{classconcurrency_1_1diners_1_1_diners_a3d8a584bc67f1e9bf15ff9236cb078f9}} 
+\index{concurrency\+::diners\+::\+Diners@{concurrency\+::diners\+::\+Diners}!freeze@{freeze}}
+\index{freeze@{freeze}!concurrency\+::diners\+::\+Diners@{concurrency\+::diners\+::\+Diners}}
+\subsubsection{\texorpdfstring{freeze}{freeze}}
+{\footnotesize\ttfamily Button concurrency.\+diners.\+Diners.\+freeze\hspace{0.3cm}{\ttfamily [package]}}
+
+\mbox{\Hypertarget{classconcurrency_1_1diners_1_1_diners_adf06d18b05e5ad766ef522c1744bee13}\label{classconcurrency_1_1diners_1_1_diners_adf06d18b05e5ad766ef522c1744bee13}} 
+\index{concurrency\+::diners\+::\+Diners@{concurrency\+::diners\+::\+Diners}!phil@{phil}}
+\index{phil@{phil}!concurrency\+::diners\+::\+Diners@{concurrency\+::diners\+::\+Diners}}
+\subsubsection{\texorpdfstring{phil}{phil}}
+{\footnotesize\ttfamily Thread \mbox{[}$\,$\mbox{]} concurrency.\+diners.\+Diners.\+phil = new Thread\mbox{[}\mbox{\hyperlink{classconcurrency_1_1diners_1_1_phil_canvas_a3eeb58e8b150bc1715a708ef38171fd5}{Phil\+Canvas.\+N\+U\+M\+P\+H\+I\+LS}}\mbox{]}\hspace{0.3cm}{\ttfamily [package]}}
+
+\mbox{\Hypertarget{classconcurrency_1_1diners_1_1_diners_abefc470d4d20e4ac1877eca30012b009}\label{classconcurrency_1_1diners_1_1_diners_abefc470d4d20e4ac1877eca30012b009}} 
+\index{concurrency\+::diners\+::\+Diners@{concurrency\+::diners\+::\+Diners}!restart@{restart}}
+\index{restart@{restart}!concurrency\+::diners\+::\+Diners@{concurrency\+::diners\+::\+Diners}}
+\subsubsection{\texorpdfstring{restart}{restart}}
+{\footnotesize\ttfamily Button concurrency.\+diners.\+Diners.\+restart\hspace{0.3cm}{\ttfamily [package]}}
+
+\mbox{\Hypertarget{classconcurrency_1_1diners_1_1_diners_a39973398065942d8583b0c74d4c2365f}\label{classconcurrency_1_1diners_1_1_diners_a39973398065942d8583b0c74d4c2365f}} 
+\index{concurrency\+::diners\+::\+Diners@{concurrency\+::diners\+::\+Diners}!slider@{slider}}
+\index{slider@{slider}!concurrency\+::diners\+::\+Diners@{concurrency\+::diners\+::\+Diners}}
+\subsubsection{\texorpdfstring{slider}{slider}}
+{\footnotesize\ttfamily Scrollbar concurrency.\+diners.\+Diners.\+slider\hspace{0.3cm}{\ttfamily [package]}}
+

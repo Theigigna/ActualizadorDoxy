@@ -1,0 +1,45 @@
+\hypertarget{class_ejercicio1_1_1_prueba_buffer}{}\section{Ejercicio1.\+Prueba\+Buffer Class Reference}
+\label{class_ejercicio1_1_1_prueba_buffer}\index{Ejercicio1.\+Prueba\+Buffer@{Ejercicio1.\+Prueba\+Buffer}}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{class_ejercicio1_1_1_prueba_buffer_a2d41e4205314a1a5be6b3873352ac52a}{main}} (String\mbox{[}$\,$\mbox{]} s)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyAuthor}{Author}
+Ignacio 
+\end{DoxyAuthor}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_ejercicio1_1_1_prueba_buffer_a2d41e4205314a1a5be6b3873352ac52a}\label{class_ejercicio1_1_1_prueba_buffer_a2d41e4205314a1a5be6b3873352ac52a}} 
+\index{Ejercicio1\+::\+Prueba\+Buffer@{Ejercicio1\+::\+Prueba\+Buffer}!main@{main}}
+\index{main@{main}!Ejercicio1\+::\+Prueba\+Buffer@{Ejercicio1\+::\+Prueba\+Buffer}}
+\subsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily static void Ejercicio1.\+Prueba\+Buffer.\+main (\begin{DoxyParamCaption}\item[{String \mbox{[}$\,$\mbox{]}}]{s }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+\begin{DoxyCode}
+17     \{
+18         Buffer bufferX = \textcolor{keyword}{new} Buffer();
+19         Productor pA = \textcolor{keyword}{new} Productor(\textcolor{stringliteral}{"A "},99,bufferX);
+20         Productor pB = \textcolor{keyword}{new} Productor(\textcolor{stringliteral}{"B "},99,bufferX);
+21         Productor pC = \textcolor{keyword}{new} Productor(\textcolor{stringliteral}{"C "},99,bufferX);
+22         Productor pD = \textcolor{keyword}{new} Productor(\textcolor{stringliteral}{"D "},99,bufferX);
+23         Productor pE = \textcolor{keyword}{new} Productor(\textcolor{stringliteral}{"E "},99,bufferX);
+24         Consumidor Luis = \textcolor{keyword}{new} Consumidor(\textcolor{stringliteral}{"Luis "},bufferX);
+25         Consumidor Juan = \textcolor{keyword}{new} Consumidor(\textcolor{stringliteral}{"Juan "},bufferX);
+26         Consumidor Maria = \textcolor{keyword}{new} Consumidor(\textcolor{stringliteral}{"maria "},bufferX);
+27         
+28         pA.start();
+29         pB.start();
+30         pC.start();
+31         pD.start();
+32         pE.start();
+33         Luis.start();
+34         Juan.start();
+35         Maria.start();
+36     \}
+\end{DoxyCode}

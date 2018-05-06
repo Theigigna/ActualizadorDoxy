@@ -1,0 +1,94 @@
+\hypertarget{classcosasparaprobar_1_1prueba_semaoro}{}\section{cosasparaprobar.\+prueba\+Semaoro Class Reference}
+\label{classcosasparaprobar_1_1prueba_semaoro}\index{cosasparaprobar.\+prueba\+Semaoro@{cosasparaprobar.\+prueba\+Semaoro}}
+Inheritance diagram for cosasparaprobar.\+prueba\+Semaoro\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classcosasparaprobar_1_1prueba_semaoro}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classcosasparaprobar_1_1prueba_semaoro_a73082d9634e3a14bcdc678355a0930ca}{prueba\+Semaoro}} (int \mbox{\hyperlink{classcosasparaprobar_1_1prueba_semaoro_a9b8c78f7d8f806c59eef71f170426c0b}{i}}, Semaphore x)
+\item 
+void \mbox{\hyperlink{classcosasparaprobar_1_1prueba_semaoro_ad522317dbe89134e39ce5c5e3cd06adc}{run}} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Semaphore \mbox{\hyperlink{classcosasparaprobar_1_1prueba_semaoro_aff63c1c25145c5470c86f8b97fa93c81}{sem}}
+\item 
+int \mbox{\hyperlink{classcosasparaprobar_1_1prueba_semaoro_a9b8c78f7d8f806c59eef71f170426c0b}{i}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyAuthor}{Author}
+Ignacio 
+\end{DoxyAuthor}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classcosasparaprobar_1_1prueba_semaoro_a73082d9634e3a14bcdc678355a0930ca}\label{classcosasparaprobar_1_1prueba_semaoro_a73082d9634e3a14bcdc678355a0930ca}} 
+\index{cosasparaprobar\+::prueba\+Semaoro@{cosasparaprobar\+::prueba\+Semaoro}!prueba\+Semaoro@{prueba\+Semaoro}}
+\index{prueba\+Semaoro@{prueba\+Semaoro}!cosasparaprobar\+::prueba\+Semaoro@{cosasparaprobar\+::prueba\+Semaoro}}
+\subsubsection{\texorpdfstring{prueba\+Semaoro()}{pruebaSemaoro()}}
+{\footnotesize\ttfamily cosasparaprobar.\+prueba\+Semaoro.\+prueba\+Semaoro (\begin{DoxyParamCaption}\item[{int}]{i,  }\item[{Semaphore}]{x }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+22     \{
+23         this.\mbox{\hyperlink{classcosasparaprobar_1_1prueba_semaoro_aff63c1c25145c5470c86f8b97fa93c81}{sem}} = x;
+24         this.\mbox{\hyperlink{classcosasparaprobar_1_1prueba_semaoro_a9b8c78f7d8f806c59eef71f170426c0b}{i}} = \mbox{\hyperlink{classcosasparaprobar_1_1prueba_semaoro_a9b8c78f7d8f806c59eef71f170426c0b}{i}};
+25     \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classcosasparaprobar_1_1prueba_semaoro_ad522317dbe89134e39ce5c5e3cd06adc}\label{classcosasparaprobar_1_1prueba_semaoro_ad522317dbe89134e39ce5c5e3cd06adc}} 
+\index{cosasparaprobar\+::prueba\+Semaoro@{cosasparaprobar\+::prueba\+Semaoro}!run@{run}}
+\index{run@{run}!cosasparaprobar\+::prueba\+Semaoro@{cosasparaprobar\+::prueba\+Semaoro}}
+\subsubsection{\texorpdfstring{run()}{run()}}
+{\footnotesize\ttfamily void cosasparaprobar.\+prueba\+Semaoro.\+run (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+27                      \{
+28         \textcolor{keywordtype}{int} j = 0;
+29         \textcolor{keywordflow}{for}(j = 0;j<4;j++)
+30         \{
+31             
+32         \textcolor{keywordflow}{try} \{
+33             \mbox{\hyperlink{classcosasparaprobar_1_1prueba_semaoro_aff63c1c25145c5470c86f8b97fa93c81}{sem}}.acquire(); \textcolor{comment}{//entra al semaforo}
+34         \} \textcolor{keywordflow}{catch} (InterruptedException ex) \{
+35             Logger.getLogger(\mbox{\hyperlink{classcosasparaprobar_1_1prueba_semaoro_a73082d9634e3a14bcdc678355a0930ca}{pruebaSemaoro}}.class.getName()).log(Level.SEVERE, null, ex);
+36         \}
+37         
+38         System.out.println(\textcolor{stringliteral}{"Hilo "} + \mbox{\hyperlink{classcosasparaprobar_1_1prueba_semaoro_a9b8c78f7d8f806c59eef71f170426c0b}{i}} + \textcolor{stringliteral}{" imprimiendo "} + j);
+39         
+40             \textcolor{keywordflow}{try} \{
+41                 sleep(1500);
+42             \} \textcolor{keywordflow}{catch} (InterruptedException ex) \{
+43                 Logger.getLogger(\mbox{\hyperlink{classcosasparaprobar_1_1prueba_semaoro_a73082d9634e3a14bcdc678355a0930ca}{pruebaSemaoro}}.class.getName()).log(Level.SEVERE, null, ex);
+44             \}
+45             
+46         \mbox{\hyperlink{classcosasparaprobar_1_1prueba_semaoro_aff63c1c25145c5470c86f8b97fa93c81}{sem}}.release(); \textcolor{comment}{//dar permisos}
+47         
+48         \}
+49     \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classcosasparaprobar_1_1prueba_semaoro_a9b8c78f7d8f806c59eef71f170426c0b}\label{classcosasparaprobar_1_1prueba_semaoro_a9b8c78f7d8f806c59eef71f170426c0b}} 
+\index{cosasparaprobar\+::prueba\+Semaoro@{cosasparaprobar\+::prueba\+Semaoro}!i@{i}}
+\index{i@{i}!cosasparaprobar\+::prueba\+Semaoro@{cosasparaprobar\+::prueba\+Semaoro}}
+\subsubsection{\texorpdfstring{i}{i}}
+{\footnotesize\ttfamily int cosasparaprobar.\+prueba\+Semaoro.\+i\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classcosasparaprobar_1_1prueba_semaoro_aff63c1c25145c5470c86f8b97fa93c81}\label{classcosasparaprobar_1_1prueba_semaoro_aff63c1c25145c5470c86f8b97fa93c81}} 
+\index{cosasparaprobar\+::prueba\+Semaoro@{cosasparaprobar\+::prueba\+Semaoro}!sem@{sem}}
+\index{sem@{sem}!cosasparaprobar\+::prueba\+Semaoro@{cosasparaprobar\+::prueba\+Semaoro}}
+\subsubsection{\texorpdfstring{sem}{sem}}
+{\footnotesize\ttfamily Semaphore cosasparaprobar.\+prueba\+Semaoro.\+sem\hspace{0.3cm}{\ttfamily [private]}}
+

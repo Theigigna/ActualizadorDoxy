@@ -1,0 +1,46 @@
+\hypertarget{classorg_1_1newdawn_1_1slick_1_1command_1_1_controller_button_control}{}\section{org.\+newdawn.\+slick.\+command.\+Controller\+Button\+Control Class Reference}
+\label{classorg_1_1newdawn_1_1slick_1_1command_1_1_controller_button_control}\index{org.\+newdawn.\+slick.\+command.\+Controller\+Button\+Control@{org.\+newdawn.\+slick.\+command.\+Controller\+Button\+Control}}
+Inheritance diagram for org.\+newdawn.\+slick.\+command.\+Controller\+Button\+Control\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classorg_1_1newdawn_1_1slick_1_1command_1_1_controller_button_control}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1command_1_1_controller_button_control_aec92ab43b38eb977f61e2774a51f2e0e}{Controller\+Button\+Control}} (int controller\+Index, int \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1command_1_1_controller_control_ad8d48f8cc2889d5360de6dc2202203f4}{button}})
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+A control indicating that a gamepad/joystick button must be pressed or released to invoke an command.
+
+\begin{DoxyAuthor}{Author}
+kevin 
+\end{DoxyAuthor}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1command_1_1_controller_button_control_aec92ab43b38eb977f61e2774a51f2e0e}\label{classorg_1_1newdawn_1_1slick_1_1command_1_1_controller_button_control_aec92ab43b38eb977f61e2774a51f2e0e}} 
+\index{org\+::newdawn\+::slick\+::command\+::\+Controller\+Button\+Control@{org\+::newdawn\+::slick\+::command\+::\+Controller\+Button\+Control}!Controller\+Button\+Control@{Controller\+Button\+Control}}
+\index{Controller\+Button\+Control@{Controller\+Button\+Control}!org\+::newdawn\+::slick\+::command\+::\+Controller\+Button\+Control@{org\+::newdawn\+::slick\+::command\+::\+Controller\+Button\+Control}}
+\subsubsection{\texorpdfstring{Controller\+Button\+Control()}{ControllerButtonControl()}}
+{\footnotesize\ttfamily org.\+newdawn.\+slick.\+command.\+Controller\+Button\+Control.\+Controller\+Button\+Control (\begin{DoxyParamCaption}\item[{int}]{controller\+Index,  }\item[{int}]{button }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Create a new control based on a controller input
+
+
+\begin{DoxyParams}{Parameters}
+{\em controller\+Index} & The index of the controller to listen to \\
+\hline
+{\em button} & The index of the button that causes the command \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+17                                                                     \{
+18         super(controllerIndex, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1command_1_1_controller_control_a0e2e21a7d85dd11ac52ce6bba40e3260}{BUTTON\_EVENT}}, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1command_1_1_controller_control_ad8d48f8cc2889d5360de6dc2202203f4}{button}});
+19     \}
+\end{DoxyCode}

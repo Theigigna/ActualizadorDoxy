@@ -1,0 +1,185 @@
+\hypertarget{classorg_1_1newdawn_1_1slick_1_1tests_1_1_cached_render_test}{}\section{org.\+newdawn.\+slick.\+tests.\+Cached\+Render\+Test Class Reference}
+\label{classorg_1_1newdawn_1_1slick_1_1tests_1_1_cached_render_test}\index{org.\+newdawn.\+slick.\+tests.\+Cached\+Render\+Test@{org.\+newdawn.\+slick.\+tests.\+Cached\+Render\+Test}}
+Inheritance diagram for org.\+newdawn.\+slick.\+tests.\+Cached\+Render\+Test\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.508772cm]{classorg_1_1newdawn_1_1slick_1_1tests_1_1_cached_render_test}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_cached_render_test_aec210751ba11df5b8061d362723f21f0}{Cached\+Render\+Test}} ()
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_cached_render_test_a03ef696801a0f0b42eb3e68cb162b154}{init}} (final \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_game_container}{Game\+Container}} container)  throws Slick\+Exception 
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_cached_render_test_ad267cdebf5cc325fb32c997d876a9eb1}{update}} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_game_container}{Game\+Container}} container, int delta)  throws Slick\+Exception 
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_cached_render_test_a9314cb710b62c992d698e1f15337f3d7}{render}} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_game_container}{Game\+Container}} container, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_graphics}{Graphics}} g)  throws Slick\+Exception 
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_cached_render_test_a49297378321ea39d8ec3850beaf1266f}{main}} (String\mbox{[}$\,$\mbox{]} argv)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Runnable \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_cached_render_test_a2b36bcbc4ab1194e7809b06b2457ca84}{operations}}
+\item 
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_cached_render}{Cached\+Render}} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_cached_render_test_a62630e9785f2d264aece45743623722a}{cached}}
+\item 
+boolean \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_cached_render_test_ab144e14912cdadf27a4bfcdb5379d49c}{draw\+Cached}}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+A simple test to show performance gains from cache operations in situtations where rendering is static and heavy
+
+\begin{DoxyAuthor}{Author}
+kevin 
+\end{DoxyAuthor}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tests_1_1_cached_render_test_aec210751ba11df5b8061d362723f21f0}\label{classorg_1_1newdawn_1_1slick_1_1tests_1_1_cached_render_test_aec210751ba11df5b8061d362723f21f0}} 
+\index{org\+::newdawn\+::slick\+::tests\+::\+Cached\+Render\+Test@{org\+::newdawn\+::slick\+::tests\+::\+Cached\+Render\+Test}!Cached\+Render\+Test@{Cached\+Render\+Test}}
+\index{Cached\+Render\+Test@{Cached\+Render\+Test}!org\+::newdawn\+::slick\+::tests\+::\+Cached\+Render\+Test@{org\+::newdawn\+::slick\+::tests\+::\+Cached\+Render\+Test}}
+\subsubsection{\texorpdfstring{Cached\+Render\+Test()}{CachedRenderTest()}}
+{\footnotesize\ttfamily org.\+newdawn.\+slick.\+tests.\+Cached\+Render\+Test.\+Cached\+Render\+Test (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Create a new simple test for cached rendering (aka display lists) 
+\begin{DoxyCode}
+29                               \{
+30         super(\textcolor{stringliteral}{"Cached Render Test"});
+31     \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tests_1_1_cached_render_test_a03ef696801a0f0b42eb3e68cb162b154}\label{classorg_1_1newdawn_1_1slick_1_1tests_1_1_cached_render_test_a03ef696801a0f0b42eb3e68cb162b154}} 
+\index{org\+::newdawn\+::slick\+::tests\+::\+Cached\+Render\+Test@{org\+::newdawn\+::slick\+::tests\+::\+Cached\+Render\+Test}!init@{init}}
+\index{init@{init}!org\+::newdawn\+::slick\+::tests\+::\+Cached\+Render\+Test@{org\+::newdawn\+::slick\+::tests\+::\+Cached\+Render\+Test}}
+\subsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+tests.\+Cached\+Render\+Test.\+init (\begin{DoxyParamCaption}\item[{final \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_game_container}{Game\+Container}}}]{container }\end{DoxyParamCaption}) throws \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_slick_exception}{Slick\+Exception}}\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_basic_game_a8af0900217e4d389249f71367b22d114}{org.\+newdawn.\+slick.\+Basic\+Game\+::init}}(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_game_container}{org.\+newdawn.\+slick.\+Game\+Container}}) 
+\end{DoxySeeAlso}
+
+
+Implements \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1_game_ad2dd6affab08bb8fdb5fab0815957b7a}{org.\+newdawn.\+slick.\+Game}}.
+
+
+\begin{DoxyCode}
+36                                                                           \{
+37         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_cached_render_test_a2b36bcbc4ab1194e7809b06b2457ca84}{operations}} = \textcolor{keyword}{new} Runnable() \{
+38             \textcolor{keyword}{public} \textcolor{keywordtype}{void} run() \{
+39                 \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i=0;i<100;i++) \{
+40                     \textcolor{keywordtype}{int} c = i+100;
+41                     container.getGraphics().setColor(\textcolor{keyword}{new} Color(c,c,c,c));
+42                     container.getGraphics().drawOval((i*5)+50,(i*3)+50,100,100);
+43                 \}
+44             \}
+45         \};
+46         
+47         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_cached_render_test_a62630e9785f2d264aece45743623722a}{cached}} = \textcolor{keyword}{new} CachedRender(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_cached_render_test_a2b36bcbc4ab1194e7809b06b2457ca84}{operations}});
+48     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tests_1_1_cached_render_test_a49297378321ea39d8ec3850beaf1266f}\label{classorg_1_1newdawn_1_1slick_1_1tests_1_1_cached_render_test_a49297378321ea39d8ec3850beaf1266f}} 
+\index{org\+::newdawn\+::slick\+::tests\+::\+Cached\+Render\+Test@{org\+::newdawn\+::slick\+::tests\+::\+Cached\+Render\+Test}!main@{main}}
+\index{main@{main}!org\+::newdawn\+::slick\+::tests\+::\+Cached\+Render\+Test@{org\+::newdawn\+::slick\+::tests\+::\+Cached\+Render\+Test}}
+\subsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily static void org.\+newdawn.\+slick.\+tests.\+Cached\+Render\+Test.\+main (\begin{DoxyParamCaption}\item[{String \mbox{[}$\,$\mbox{]}}]{argv }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Entry point to our test
+
+
+\begin{DoxyParams}{Parameters}
+{\em argv} & The arguments to pass into the test \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+79                                            \{
+80         \textcolor{keywordflow}{try} \{
+81             AppGameContainer container = \textcolor{keyword}{new} AppGameContainer(\textcolor{keyword}{new} 
+      \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_cached_render_test_aec210751ba11df5b8061d362723f21f0}{CachedRenderTest}}());
+82             container.setDisplayMode(800,600,\textcolor{keyword}{false});
+83             container.start();
+84         \} \textcolor{keywordflow}{catch} (SlickException e) \{
+85             e.printStackTrace();
+86         \}
+87     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tests_1_1_cached_render_test_a9314cb710b62c992d698e1f15337f3d7}\label{classorg_1_1newdawn_1_1slick_1_1tests_1_1_cached_render_test_a9314cb710b62c992d698e1f15337f3d7}} 
+\index{org\+::newdawn\+::slick\+::tests\+::\+Cached\+Render\+Test@{org\+::newdawn\+::slick\+::tests\+::\+Cached\+Render\+Test}!render@{render}}
+\index{render@{render}!org\+::newdawn\+::slick\+::tests\+::\+Cached\+Render\+Test@{org\+::newdawn\+::slick\+::tests\+::\+Cached\+Render\+Test}}
+\subsubsection{\texorpdfstring{render()}{render()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+tests.\+Cached\+Render\+Test.\+render (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_game_container}{Game\+Container}}}]{container,  }\item[{\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_graphics}{Graphics}}}]{g }\end{DoxyParamCaption}) throws \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_slick_exception}{Slick\+Exception}}\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1_game_af1a4670d43eb3ba04dfcf55ab1975b64}{org.\+newdawn.\+slick.\+Game\+::render}}(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_game_container}{org.\+newdawn.\+slick.\+Game\+Container}}, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_graphics}{org.\+newdawn.\+slick.\+Graphics}}) 
+\end{DoxySeeAlso}
+
+
+Implements \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1_game_af1a4670d43eb3ba04dfcf55ab1975b64}{org.\+newdawn.\+slick.\+Game}}.
+
+
+\begin{DoxyCode}
+62                                                                                   \{
+63         g.setColor(Color.white);
+64         g.drawString(\textcolor{stringliteral}{"Press space to toggle caching"}, 10, 130);
+65         \textcolor{keywordflow}{if} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_cached_render_test_ab144e14912cdadf27a4bfcdb5379d49c}{drawCached}}) \{
+66             g.drawString(\textcolor{stringliteral}{"Drawing from cache"}, 10, 100);
+67             \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_cached_render_test_a62630e9785f2d264aece45743623722a}{cached}}.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_cached_render_a9482132cdcf677dac93768e4161b5dfe}{render}}();
+68         \} \textcolor{keywordflow}{else} \{
+69             g.drawString(\textcolor{stringliteral}{"Drawing direct"}, 10, 100);
+70             \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_cached_render_test_a2b36bcbc4ab1194e7809b06b2457ca84}{operations}}.run();
+71         \}
+72     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tests_1_1_cached_render_test_ad267cdebf5cc325fb32c997d876a9eb1}\label{classorg_1_1newdawn_1_1slick_1_1tests_1_1_cached_render_test_ad267cdebf5cc325fb32c997d876a9eb1}} 
+\index{org\+::newdawn\+::slick\+::tests\+::\+Cached\+Render\+Test@{org\+::newdawn\+::slick\+::tests\+::\+Cached\+Render\+Test}!update@{update}}
+\index{update@{update}!org\+::newdawn\+::slick\+::tests\+::\+Cached\+Render\+Test@{org\+::newdawn\+::slick\+::tests\+::\+Cached\+Render\+Test}}
+\subsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+tests.\+Cached\+Render\+Test.\+update (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_game_container}{Game\+Container}}}]{container,  }\item[{int}]{delta }\end{DoxyParamCaption}) throws \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_slick_exception}{Slick\+Exception}}\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_basic_game_acfe6fa05aef83bff1631af91a3e4bd20}{org.\+newdawn.\+slick.\+Basic\+Game\+::update}}(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_game_container}{org.\+newdawn.\+slick.\+Game\+Container}}, int) 
+\end{DoxySeeAlso}
+
+
+Implements \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1_game_ab07b2e9463ee4631620dde0de25bdee8}{org.\+newdawn.\+slick.\+Game}}.
+
+
+\begin{DoxyCode}
+53                                                                                  \{
+54         \textcolor{keywordflow}{if} (container.getInput().isKeyPressed(Input.KEY\_SPACE)) \{
+55             \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_cached_render_test_ab144e14912cdadf27a4bfcdb5379d49c}{drawCached}} = !\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_cached_render_test_ab144e14912cdadf27a4bfcdb5379d49c}{drawCached}};
+56         \}
+57     \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tests_1_1_cached_render_test_a62630e9785f2d264aece45743623722a}\label{classorg_1_1newdawn_1_1slick_1_1tests_1_1_cached_render_test_a62630e9785f2d264aece45743623722a}} 
+\index{org\+::newdawn\+::slick\+::tests\+::\+Cached\+Render\+Test@{org\+::newdawn\+::slick\+::tests\+::\+Cached\+Render\+Test}!cached@{cached}}
+\index{cached@{cached}!org\+::newdawn\+::slick\+::tests\+::\+Cached\+Render\+Test@{org\+::newdawn\+::slick\+::tests\+::\+Cached\+Render\+Test}}
+\subsubsection{\texorpdfstring{cached}{cached}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_cached_render}{Cached\+Render}} org.\+newdawn.\+slick.\+tests.\+Cached\+Render\+Test.\+cached\hspace{0.3cm}{\ttfamily [private]}}
+
+The cached version of the operations \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tests_1_1_cached_render_test_ab144e14912cdadf27a4bfcdb5379d49c}\label{classorg_1_1newdawn_1_1slick_1_1tests_1_1_cached_render_test_ab144e14912cdadf27a4bfcdb5379d49c}} 
+\index{org\+::newdawn\+::slick\+::tests\+::\+Cached\+Render\+Test@{org\+::newdawn\+::slick\+::tests\+::\+Cached\+Render\+Test}!draw\+Cached@{draw\+Cached}}
+\index{draw\+Cached@{draw\+Cached}!org\+::newdawn\+::slick\+::tests\+::\+Cached\+Render\+Test@{org\+::newdawn\+::slick\+::tests\+::\+Cached\+Render\+Test}}
+\subsubsection{\texorpdfstring{draw\+Cached}{drawCached}}
+{\footnotesize\ttfamily boolean org.\+newdawn.\+slick.\+tests.\+Cached\+Render\+Test.\+draw\+Cached\hspace{0.3cm}{\ttfamily [private]}}
+
+True if we\textquotesingle{}re drawing the cached version \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tests_1_1_cached_render_test_a2b36bcbc4ab1194e7809b06b2457ca84}\label{classorg_1_1newdawn_1_1slick_1_1tests_1_1_cached_render_test_a2b36bcbc4ab1194e7809b06b2457ca84}} 
+\index{org\+::newdawn\+::slick\+::tests\+::\+Cached\+Render\+Test@{org\+::newdawn\+::slick\+::tests\+::\+Cached\+Render\+Test}!operations@{operations}}
+\index{operations@{operations}!org\+::newdawn\+::slick\+::tests\+::\+Cached\+Render\+Test@{org\+::newdawn\+::slick\+::tests\+::\+Cached\+Render\+Test}}
+\subsubsection{\texorpdfstring{operations}{operations}}
+{\footnotesize\ttfamily Runnable org.\+newdawn.\+slick.\+tests.\+Cached\+Render\+Test.\+operations\hspace{0.3cm}{\ttfamily [private]}}
+
+The set of operations to be cached 

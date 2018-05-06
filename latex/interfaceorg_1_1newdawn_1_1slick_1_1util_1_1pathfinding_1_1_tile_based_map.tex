@@ -1,0 +1,129 @@
+\hypertarget{interfaceorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_tile_based_map}{}\section{org.\+newdawn.\+slick.\+util.\+pathfinding.\+Tile\+Based\+Map Interface Reference}
+\label{interfaceorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_tile_based_map}\index{org.\+newdawn.\+slick.\+util.\+pathfinding.\+Tile\+Based\+Map@{org.\+newdawn.\+slick.\+util.\+pathfinding.\+Tile\+Based\+Map}}
+Inheritance diagram for org.\+newdawn.\+slick.\+util.\+pathfinding.\+Tile\+Based\+Map\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.898305cm]{interfaceorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_tile_based_map}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_tile_based_map_a5efac540b233405c4ae65b784a7c6d22}{get\+Width\+In\+Tiles}} ()
+\item 
+int \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_tile_based_map_a9669f3dafa1ce48a20e3d7d8c1de239a}{get\+Height\+In\+Tiles}} ()
+\item 
+void \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_tile_based_map_aeb1c1b5cbb0aecc4e280dbe18d5af5ac}{path\+Finder\+Visited}} (int x, int y)
+\item 
+boolean \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_tile_based_map_af01ba12d90f794cd16138e05dc328725}{blocked}} (\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_path_finding_context}{Path\+Finding\+Context}} context, int tx, int ty)
+\item 
+float \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_tile_based_map_ad2e68a8e3405c15b90b5247ffb70897f}{get\+Cost}} (\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_path_finding_context}{Path\+Finding\+Context}} context, int tx, int ty)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The description for the data we\textquotesingle{}re pathfinding over. This provides the contract between the data being searched (i.\+e. the in game map) and the path finding generic tools
+
+\begin{DoxyAuthor}{Author}
+Kevin Glass 
+\end{DoxyAuthor}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{interfaceorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_tile_based_map_af01ba12d90f794cd16138e05dc328725}\label{interfaceorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_tile_based_map_af01ba12d90f794cd16138e05dc328725}} 
+\index{org\+::newdawn\+::slick\+::util\+::pathfinding\+::\+Tile\+Based\+Map@{org\+::newdawn\+::slick\+::util\+::pathfinding\+::\+Tile\+Based\+Map}!blocked@{blocked}}
+\index{blocked@{blocked}!org\+::newdawn\+::slick\+::util\+::pathfinding\+::\+Tile\+Based\+Map@{org\+::newdawn\+::slick\+::util\+::pathfinding\+::\+Tile\+Based\+Map}}
+\subsubsection{\texorpdfstring{blocked()}{blocked()}}
+{\footnotesize\ttfamily boolean org.\+newdawn.\+slick.\+util.\+pathfinding.\+Tile\+Based\+Map.\+blocked (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_path_finding_context}{Path\+Finding\+Context}}}]{context,  }\item[{int}]{tx,  }\item[{int}]{ty }\end{DoxyParamCaption})}
+
+Check if the given location is blocked, i.\+e. blocks movement of the supplied mover.
+
+
+\begin{DoxyParams}{Parameters}
+{\em context} & The context describing the pathfinding at the time of this request \\
+\hline
+{\em tx} & The x coordinate of the tile we\textquotesingle{}re moving to \\
+\hline
+{\em ty} & The y coordinate of the tile we\textquotesingle{}re moving to \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the location is blocked 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classentities_1_1_map_a656ea4cf7c3477ccbc785b36a2cda9fe}{entities.\+Map}}, and \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_nav_mesh_test_1_1_data_map_abb481ef621cd7b14c3dd9aedfb49c90f}{org.\+newdawn.\+slick.\+tests.\+Nav\+Mesh\+Test.\+Data\+Map}}.
+
+\mbox{\Hypertarget{interfaceorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_tile_based_map_ad2e68a8e3405c15b90b5247ffb70897f}\label{interfaceorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_tile_based_map_ad2e68a8e3405c15b90b5247ffb70897f}} 
+\index{org\+::newdawn\+::slick\+::util\+::pathfinding\+::\+Tile\+Based\+Map@{org\+::newdawn\+::slick\+::util\+::pathfinding\+::\+Tile\+Based\+Map}!get\+Cost@{get\+Cost}}
+\index{get\+Cost@{get\+Cost}!org\+::newdawn\+::slick\+::util\+::pathfinding\+::\+Tile\+Based\+Map@{org\+::newdawn\+::slick\+::util\+::pathfinding\+::\+Tile\+Based\+Map}}
+\subsubsection{\texorpdfstring{get\+Cost()}{getCost()}}
+{\footnotesize\ttfamily float org.\+newdawn.\+slick.\+util.\+pathfinding.\+Tile\+Based\+Map.\+get\+Cost (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_path_finding_context}{Path\+Finding\+Context}}}]{context,  }\item[{int}]{tx,  }\item[{int}]{ty }\end{DoxyParamCaption})}
+
+Get the cost of moving through the given tile. This can be used to make certain areas more desirable. A simple and valid implementation of this method would be to return 1 in all cases.
+
+
+\begin{DoxyParams}{Parameters}
+{\em context} & The context describing the pathfinding at the time of this request \\
+\hline
+{\em tx} & The x coordinate of the tile we\textquotesingle{}re moving to \\
+\hline
+{\em ty} & The y coordinate of the tile we\textquotesingle{}re moving to \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The relative cost of moving across the given tile 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classentities_1_1_map_a251d9d490fc34a64fa2b67798c9a44a7}{entities.\+Map}}, and \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_nav_mesh_test_1_1_data_map_a94ee56daa57d506c05a25d4198032ba8}{org.\+newdawn.\+slick.\+tests.\+Nav\+Mesh\+Test.\+Data\+Map}}.
+
+\mbox{\Hypertarget{interfaceorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_tile_based_map_a9669f3dafa1ce48a20e3d7d8c1de239a}\label{interfaceorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_tile_based_map_a9669f3dafa1ce48a20e3d7d8c1de239a}} 
+\index{org\+::newdawn\+::slick\+::util\+::pathfinding\+::\+Tile\+Based\+Map@{org\+::newdawn\+::slick\+::util\+::pathfinding\+::\+Tile\+Based\+Map}!get\+Height\+In\+Tiles@{get\+Height\+In\+Tiles}}
+\index{get\+Height\+In\+Tiles@{get\+Height\+In\+Tiles}!org\+::newdawn\+::slick\+::util\+::pathfinding\+::\+Tile\+Based\+Map@{org\+::newdawn\+::slick\+::util\+::pathfinding\+::\+Tile\+Based\+Map}}
+\subsubsection{\texorpdfstring{get\+Height\+In\+Tiles()}{getHeightInTiles()}}
+{\footnotesize\ttfamily int org.\+newdawn.\+slick.\+util.\+pathfinding.\+Tile\+Based\+Map.\+get\+Height\+In\+Tiles (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Get the height of the tile map. The slightly odd name is used to distiguish this method from commonly used names in game maps.
+
+\begin{DoxyReturn}{Returns}
+The number of tiles down the map 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classentities_1_1_map_ae174e8e21c6307ea9058905778480ec1}{entities.\+Map}}, and \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_nav_mesh_test_1_1_data_map_a17b7ae15c28e0d59d4ef2f789f13dad9}{org.\+newdawn.\+slick.\+tests.\+Nav\+Mesh\+Test.\+Data\+Map}}.
+
+\mbox{\Hypertarget{interfaceorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_tile_based_map_a5efac540b233405c4ae65b784a7c6d22}\label{interfaceorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_tile_based_map_a5efac540b233405c4ae65b784a7c6d22}} 
+\index{org\+::newdawn\+::slick\+::util\+::pathfinding\+::\+Tile\+Based\+Map@{org\+::newdawn\+::slick\+::util\+::pathfinding\+::\+Tile\+Based\+Map}!get\+Width\+In\+Tiles@{get\+Width\+In\+Tiles}}
+\index{get\+Width\+In\+Tiles@{get\+Width\+In\+Tiles}!org\+::newdawn\+::slick\+::util\+::pathfinding\+::\+Tile\+Based\+Map@{org\+::newdawn\+::slick\+::util\+::pathfinding\+::\+Tile\+Based\+Map}}
+\subsubsection{\texorpdfstring{get\+Width\+In\+Tiles()}{getWidthInTiles()}}
+{\footnotesize\ttfamily int org.\+newdawn.\+slick.\+util.\+pathfinding.\+Tile\+Based\+Map.\+get\+Width\+In\+Tiles (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Get the width of the tile map. The slightly odd name is used to distiguish this method from commonly used names in game maps.
+
+\begin{DoxyReturn}{Returns}
+The number of tiles across the map 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classentities_1_1_map_a7caa160e4dd0164e861ad238cc58ac36}{entities.\+Map}}, and \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_nav_mesh_test_1_1_data_map_a9c463e2f4c3c3c208961d40e40529cb3}{org.\+newdawn.\+slick.\+tests.\+Nav\+Mesh\+Test.\+Data\+Map}}.
+
+\mbox{\Hypertarget{interfaceorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_tile_based_map_aeb1c1b5cbb0aecc4e280dbe18d5af5ac}\label{interfaceorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_tile_based_map_aeb1c1b5cbb0aecc4e280dbe18d5af5ac}} 
+\index{org\+::newdawn\+::slick\+::util\+::pathfinding\+::\+Tile\+Based\+Map@{org\+::newdawn\+::slick\+::util\+::pathfinding\+::\+Tile\+Based\+Map}!path\+Finder\+Visited@{path\+Finder\+Visited}}
+\index{path\+Finder\+Visited@{path\+Finder\+Visited}!org\+::newdawn\+::slick\+::util\+::pathfinding\+::\+Tile\+Based\+Map@{org\+::newdawn\+::slick\+::util\+::pathfinding\+::\+Tile\+Based\+Map}}
+\subsubsection{\texorpdfstring{path\+Finder\+Visited()}{pathFinderVisited()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+util.\+pathfinding.\+Tile\+Based\+Map.\+path\+Finder\+Visited (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})}
+
+Notification that the path finder visited a given tile. This is used for debugging new heuristics.
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & The x coordinate of the tile that was visited \\
+\hline
+{\em y} & The y coordinate of the tile that was visited \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classentities_1_1_map_a0ad9c4406c9c9de0cfd6dfbf4acdd924}{entities.\+Map}}, and \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_nav_mesh_test_1_1_data_map_af2bca0a48cb72d6e19d4c6e4ffcd6dba}{org.\+newdawn.\+slick.\+tests.\+Nav\+Mesh\+Test.\+Data\+Map}}.
+

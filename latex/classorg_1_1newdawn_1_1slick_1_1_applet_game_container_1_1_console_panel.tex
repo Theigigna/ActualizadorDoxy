@@ -1,0 +1,82 @@
+\hypertarget{classorg_1_1newdawn_1_1slick_1_1_applet_game_container_1_1_console_panel}{}\section{org.\+newdawn.\+slick.\+Applet\+Game\+Container.\+Console\+Panel Class Reference}
+\label{classorg_1_1newdawn_1_1slick_1_1_applet_game_container_1_1_console_panel}\index{org.\+newdawn.\+slick.\+Applet\+Game\+Container.\+Console\+Panel@{org.\+newdawn.\+slick.\+Applet\+Game\+Container.\+Console\+Panel}}
+Inheritance diagram for org.\+newdawn.\+slick.\+Applet\+Game\+Container.\+Console\+Panel\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classorg_1_1newdawn_1_1slick_1_1_applet_game_container_1_1_console_panel}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_applet_game_container_1_1_console_panel_aa4b984a07ff3e137cb6a86d01907efa6}{Console\+Panel}} (Exception e)
+\end{DoxyCompactItemize}
+\subsection*{Package Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Text\+Area \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_applet_game_container_1_1_console_panel_af71b345c0d2ac0773ca77f00e01d4af2}{text\+Area}} = new Text\+Area()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A basic console to display an error message if the applet crashes. This will prevent the applet from just freezing in the browser and give the end user an a nice gui where the error message can easily be viewed and copied. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1_applet_game_container_1_1_console_panel_aa4b984a07ff3e137cb6a86d01907efa6}\label{classorg_1_1newdawn_1_1slick_1_1_applet_game_container_1_1_console_panel_aa4b984a07ff3e137cb6a86d01907efa6}} 
+\index{org\+::newdawn\+::slick\+::\+Applet\+Game\+Container\+::\+Console\+Panel@{org\+::newdawn\+::slick\+::\+Applet\+Game\+Container\+::\+Console\+Panel}!Console\+Panel@{Console\+Panel}}
+\index{Console\+Panel@{Console\+Panel}!org\+::newdawn\+::slick\+::\+Applet\+Game\+Container\+::\+Console\+Panel@{org\+::newdawn\+::slick\+::\+Applet\+Game\+Container\+::\+Console\+Panel}}
+\subsubsection{\texorpdfstring{Console\+Panel()}{ConsolePanel()}}
+{\footnotesize\ttfamily org.\+newdawn.\+slick.\+Applet\+Game\+Container.\+Console\+Panel.\+Console\+Panel (\begin{DoxyParamCaption}\item[{Exception}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Create a new panel to display the console output
+
+
+\begin{DoxyParams}{Parameters}
+{\em e} & The exception causing the console to be displayed \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+543                                        \{
+544          setLayout(\textcolor{keyword}{new} BorderLayout());
+545          setBackground(Color.black);
+546          setForeground(Color.white);
+547          
+548          Font consoleFont = \textcolor{keyword}{new} Font(\textcolor{stringliteral}{"Arial"}, Font.BOLD, 14);
+549          
+550          Label slickLabel = \textcolor{keyword}{new} Label(\textcolor{stringliteral}{"SLICK CONSOLE"}, Label.CENTER);
+551          slickLabel.setFont(consoleFont);
+552          add(slickLabel, BorderLayout.PAGE\_START);
+553          
+554          StringWriter sw = \textcolor{keyword}{new} StringWriter();
+555          e.printStackTrace(\textcolor{keyword}{new} PrintWriter(sw));
+556          
+557          \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_applet_game_container_1_1_console_panel_af71b345c0d2ac0773ca77f00e01d4af2}{textArea}}.setText(sw.toString());
+558          \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_applet_game_container_1_1_console_panel_af71b345c0d2ac0773ca77f00e01d4af2}{textArea}}.setEditable(\textcolor{keyword}{false});
+559          add(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_applet_game_container_1_1_console_panel_af71b345c0d2ac0773ca77f00e01d4af2}{textArea}}, BorderLayout.CENTER);
+560          
+561          \textcolor{comment}{// add a border on both sides of the console}
+562          add(\textcolor{keyword}{new} Panel(), BorderLayout.LINE\_START);
+563          add(\textcolor{keyword}{new} Panel(), BorderLayout.LINE\_END);
+564          
+565          Panel bottomPanel = \textcolor{keyword}{new} Panel();
+566          bottomPanel.setLayout(\textcolor{keyword}{new} GridLayout(0, 1));
+567          Label infoLabel1 = \textcolor{keyword}{new} Label(\textcolor{stringliteral}{"An error occured while running the applet."}, Label.CENTER);
+568          Label infoLabel2 = \textcolor{keyword}{new} Label(\textcolor{stringliteral}{"Plese contact support to resolve this issue."}, Label.CENTER);
+569          infoLabel1.setFont(consoleFont);
+570          infoLabel2.setFont(consoleFont);
+571          bottomPanel.add(infoLabel1);
+572          bottomPanel.add(infoLabel2);
+573          add(bottomPanel, BorderLayout.PAGE\_END);
+574       \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1_applet_game_container_1_1_console_panel_af71b345c0d2ac0773ca77f00e01d4af2}\label{classorg_1_1newdawn_1_1slick_1_1_applet_game_container_1_1_console_panel_af71b345c0d2ac0773ca77f00e01d4af2}} 
+\index{org\+::newdawn\+::slick\+::\+Applet\+Game\+Container\+::\+Console\+Panel@{org\+::newdawn\+::slick\+::\+Applet\+Game\+Container\+::\+Console\+Panel}!text\+Area@{text\+Area}}
+\index{text\+Area@{text\+Area}!org\+::newdawn\+::slick\+::\+Applet\+Game\+Container\+::\+Console\+Panel@{org\+::newdawn\+::slick\+::\+Applet\+Game\+Container\+::\+Console\+Panel}}
+\subsubsection{\texorpdfstring{text\+Area}{textArea}}
+{\footnotesize\ttfamily Text\+Area org.\+newdawn.\+slick.\+Applet\+Game\+Container.\+Console\+Panel.\+text\+Area = new Text\+Area()\hspace{0.3cm}{\ttfamily [package]}}
+
+The area display the console output 

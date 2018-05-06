@@ -1,0 +1,175 @@
+\hypertarget{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1navmesh_1_1_nav_path}{}\section{org.\+newdawn.\+slick.\+util.\+pathfinding.\+navmesh.\+Nav\+Path Class Reference}
+\label{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1navmesh_1_1_nav_path}\index{org.\+newdawn.\+slick.\+util.\+pathfinding.\+navmesh.\+Nav\+Path@{org.\+newdawn.\+slick.\+util.\+pathfinding.\+navmesh.\+Nav\+Path}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1navmesh_1_1_nav_path_ae66c827176e3d64a7b9bfddc289666da}{Nav\+Path}} ()
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1navmesh_1_1_nav_path_adc600d773ef90ccfa1f694a4360de4ce}{push}} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1navmesh_1_1_link}{Link}} link)
+\item 
+int \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1navmesh_1_1_nav_path_a57379bacf5476fb52e7f42d4565f37ac}{length}} ()
+\item 
+float \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1navmesh_1_1_nav_path_a7272c9ccd8f6bb478be3a4451e9d029f}{getX}} (int step)
+\item 
+float \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1navmesh_1_1_nav_path_a9070ea91900af3a0ba8a76b6a6067a08}{getY}} (int step)
+\item 
+String \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1navmesh_1_1_nav_path_a77930ab81227498f028e0dd3c67be8c2}{to\+String}} ()
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1navmesh_1_1_nav_path_a9c30f810bc9b2eba2b244a34f26d1f88}{remove}} (int i)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Array\+List \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1navmesh_1_1_nav_path_aa79523223a18486178fbb21fe550f253}{links}} = new Array\+List()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A path across a navigation mesh
+
+\begin{DoxyAuthor}{Author}
+kevin 
+\end{DoxyAuthor}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1navmesh_1_1_nav_path_ae66c827176e3d64a7b9bfddc289666da}\label{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1navmesh_1_1_nav_path_ae66c827176e3d64a7b9bfddc289666da}} 
+\index{org\+::newdawn\+::slick\+::util\+::pathfinding\+::navmesh\+::\+Nav\+Path@{org\+::newdawn\+::slick\+::util\+::pathfinding\+::navmesh\+::\+Nav\+Path}!Nav\+Path@{Nav\+Path}}
+\index{Nav\+Path@{Nav\+Path}!org\+::newdawn\+::slick\+::util\+::pathfinding\+::navmesh\+::\+Nav\+Path@{org\+::newdawn\+::slick\+::util\+::pathfinding\+::navmesh\+::\+Nav\+Path}}
+\subsubsection{\texorpdfstring{Nav\+Path()}{NavPath()}}
+{\footnotesize\ttfamily org.\+newdawn.\+slick.\+util.\+pathfinding.\+navmesh.\+Nav\+Path.\+Nav\+Path (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Create a new path 
+\begin{DoxyCode}
+17                      \{      
+18     \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1navmesh_1_1_nav_path_a7272c9ccd8f6bb478be3a4451e9d029f}\label{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1navmesh_1_1_nav_path_a7272c9ccd8f6bb478be3a4451e9d029f}} 
+\index{org\+::newdawn\+::slick\+::util\+::pathfinding\+::navmesh\+::\+Nav\+Path@{org\+::newdawn\+::slick\+::util\+::pathfinding\+::navmesh\+::\+Nav\+Path}!getX@{getX}}
+\index{getX@{getX}!org\+::newdawn\+::slick\+::util\+::pathfinding\+::navmesh\+::\+Nav\+Path@{org\+::newdawn\+::slick\+::util\+::pathfinding\+::navmesh\+::\+Nav\+Path}}
+\subsubsection{\texorpdfstring{get\+X()}{getX()}}
+{\footnotesize\ttfamily float org.\+newdawn.\+slick.\+util.\+pathfinding.\+navmesh.\+Nav\+Path.\+getX (\begin{DoxyParamCaption}\item[{int}]{step }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get the x coordinate of the given step
+
+
+\begin{DoxyParams}{Parameters}
+{\em step} & The index of the step to retrieve \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The x coordinate at the given step index 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+44                                 \{
+45         \textcolor{keywordflow}{return} ((Link) \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1navmesh_1_1_nav_path_aa79523223a18486178fbb21fe550f253}{links}}.get(step)).\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1navmesh_1_1_nav_path_a7272c9ccd8f6bb478be3a4451e9d029f}{getX}}();
+46     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1navmesh_1_1_nav_path_a9070ea91900af3a0ba8a76b6a6067a08}\label{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1navmesh_1_1_nav_path_a9070ea91900af3a0ba8a76b6a6067a08}} 
+\index{org\+::newdawn\+::slick\+::util\+::pathfinding\+::navmesh\+::\+Nav\+Path@{org\+::newdawn\+::slick\+::util\+::pathfinding\+::navmesh\+::\+Nav\+Path}!getY@{getY}}
+\index{getY@{getY}!org\+::newdawn\+::slick\+::util\+::pathfinding\+::navmesh\+::\+Nav\+Path@{org\+::newdawn\+::slick\+::util\+::pathfinding\+::navmesh\+::\+Nav\+Path}}
+\subsubsection{\texorpdfstring{get\+Y()}{getY()}}
+{\footnotesize\ttfamily float org.\+newdawn.\+slick.\+util.\+pathfinding.\+navmesh.\+Nav\+Path.\+getY (\begin{DoxyParamCaption}\item[{int}]{step }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get the y coordinate of the given step
+
+
+\begin{DoxyParams}{Parameters}
+{\em step} & The index of the step to retrieve \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The y coordinate at the given step index 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+54                                 \{
+55         \textcolor{keywordflow}{return} ((Link) \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1navmesh_1_1_nav_path_aa79523223a18486178fbb21fe550f253}{links}}.get(step)).\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1navmesh_1_1_nav_path_a9070ea91900af3a0ba8a76b6a6067a08}{getY}}();
+56     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1navmesh_1_1_nav_path_a57379bacf5476fb52e7f42d4565f37ac}\label{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1navmesh_1_1_nav_path_a57379bacf5476fb52e7f42d4565f37ac}} 
+\index{org\+::newdawn\+::slick\+::util\+::pathfinding\+::navmesh\+::\+Nav\+Path@{org\+::newdawn\+::slick\+::util\+::pathfinding\+::navmesh\+::\+Nav\+Path}!length@{length}}
+\index{length@{length}!org\+::newdawn\+::slick\+::util\+::pathfinding\+::navmesh\+::\+Nav\+Path@{org\+::newdawn\+::slick\+::util\+::pathfinding\+::navmesh\+::\+Nav\+Path}}
+\subsubsection{\texorpdfstring{length()}{length()}}
+{\footnotesize\ttfamily int org.\+newdawn.\+slick.\+util.\+pathfinding.\+navmesh.\+Nav\+Path.\+length (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get the length of the path
+
+\begin{DoxyReturn}{Returns}
+The number of steps in the path 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+34                         \{
+35         \textcolor{keywordflow}{return} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1navmesh_1_1_nav_path_aa79523223a18486178fbb21fe550f253}{links}}.size();
+36     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1navmesh_1_1_nav_path_adc600d773ef90ccfa1f694a4360de4ce}\label{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1navmesh_1_1_nav_path_adc600d773ef90ccfa1f694a4360de4ce}} 
+\index{org\+::newdawn\+::slick\+::util\+::pathfinding\+::navmesh\+::\+Nav\+Path@{org\+::newdawn\+::slick\+::util\+::pathfinding\+::navmesh\+::\+Nav\+Path}!push@{push}}
+\index{push@{push}!org\+::newdawn\+::slick\+::util\+::pathfinding\+::navmesh\+::\+Nav\+Path@{org\+::newdawn\+::slick\+::util\+::pathfinding\+::navmesh\+::\+Nav\+Path}}
+\subsubsection{\texorpdfstring{push()}{push()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+util.\+pathfinding.\+navmesh.\+Nav\+Path.\+push (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1navmesh_1_1_link}{Link}}}]{link }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Push a link to the end of the path
+
+
+\begin{DoxyParams}{Parameters}
+{\em link} & The link to the end of the path \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+25                                 \{
+26         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1navmesh_1_1_nav_path_aa79523223a18486178fbb21fe550f253}{links}}.add(link);
+27     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1navmesh_1_1_nav_path_a9c30f810bc9b2eba2b244a34f26d1f88}\label{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1navmesh_1_1_nav_path_a9c30f810bc9b2eba2b244a34f26d1f88}} 
+\index{org\+::newdawn\+::slick\+::util\+::pathfinding\+::navmesh\+::\+Nav\+Path@{org\+::newdawn\+::slick\+::util\+::pathfinding\+::navmesh\+::\+Nav\+Path}!remove@{remove}}
+\index{remove@{remove}!org\+::newdawn\+::slick\+::util\+::pathfinding\+::navmesh\+::\+Nav\+Path@{org\+::newdawn\+::slick\+::util\+::pathfinding\+::navmesh\+::\+Nav\+Path}}
+\subsubsection{\texorpdfstring{remove()}{remove()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+util.\+pathfinding.\+navmesh.\+Nav\+Path.\+remove (\begin{DoxyParamCaption}\item[{int}]{i }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Remove a step in the path
+
+
+\begin{DoxyParams}{Parameters}
+{\em i} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+72                               \{
+73         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1navmesh_1_1_nav_path_aa79523223a18486178fbb21fe550f253}{links}}.remove(i);
+74     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1navmesh_1_1_nav_path_a77930ab81227498f028e0dd3c67be8c2}\label{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1navmesh_1_1_nav_path_a77930ab81227498f028e0dd3c67be8c2}} 
+\index{org\+::newdawn\+::slick\+::util\+::pathfinding\+::navmesh\+::\+Nav\+Path@{org\+::newdawn\+::slick\+::util\+::pathfinding\+::navmesh\+::\+Nav\+Path}!to\+String@{to\+String}}
+\index{to\+String@{to\+String}!org\+::newdawn\+::slick\+::util\+::pathfinding\+::navmesh\+::\+Nav\+Path@{org\+::newdawn\+::slick\+::util\+::pathfinding\+::navmesh\+::\+Nav\+Path}}
+\subsubsection{\texorpdfstring{to\+String()}{toString()}}
+{\footnotesize\ttfamily String org.\+newdawn.\+slick.\+util.\+pathfinding.\+navmesh.\+Nav\+Path.\+to\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get a string representation of this instance
+
+\begin{DoxyReturn}{Returns}
+The string representation of this instance 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+63                              \{
+64         \textcolor{keywordflow}{return} \textcolor{stringliteral}{"[Path length="}+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1navmesh_1_1_nav_path_a57379bacf5476fb52e7f42d4565f37ac}{length}}()+\textcolor{stringliteral}{"]"};
+65     \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1navmesh_1_1_nav_path_aa79523223a18486178fbb21fe550f253}\label{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1navmesh_1_1_nav_path_aa79523223a18486178fbb21fe550f253}} 
+\index{org\+::newdawn\+::slick\+::util\+::pathfinding\+::navmesh\+::\+Nav\+Path@{org\+::newdawn\+::slick\+::util\+::pathfinding\+::navmesh\+::\+Nav\+Path}!links@{links}}
+\index{links@{links}!org\+::newdawn\+::slick\+::util\+::pathfinding\+::navmesh\+::\+Nav\+Path@{org\+::newdawn\+::slick\+::util\+::pathfinding\+::navmesh\+::\+Nav\+Path}}
+\subsubsection{\texorpdfstring{links}{links}}
+{\footnotesize\ttfamily Array\+List org.\+newdawn.\+slick.\+util.\+pathfinding.\+navmesh.\+Nav\+Path.\+links = new Array\+List()\hspace{0.3cm}{\ttfamily [private]}}
+
+The list of links that form this path 

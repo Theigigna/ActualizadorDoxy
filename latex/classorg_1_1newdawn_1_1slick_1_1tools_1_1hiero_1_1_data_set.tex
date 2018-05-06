@@ -1,0 +1,382 @@
+\hypertarget{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_data_set}{}\section{org.\+newdawn.\+slick.\+tools.\+hiero.\+Data\+Set Class Reference}
+\label{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_data_set}\index{org.\+newdawn.\+slick.\+tools.\+hiero.\+Data\+Set@{org.\+newdawn.\+slick.\+tools.\+hiero.\+Data\+Set}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_data_set_1_1_char_data}{Char\+Data}}
+\item 
+class \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_data_set_1_1_kerning_data}{Kerning\+Data}}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_data_set_a0b1f344c50413ba77ff7eda8ba1937d5}{Data\+Set}} (String \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_data_set_ab0f4c67d67a65d79f10572e7ce459769}{font\+Name}}, int \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_data_set_ac4d3e35615d65f0ed46ff2cea9dcc895}{size}}, int \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_data_set_adfaf42d468a6c97ab5e478c89db021d7}{line\+Height}}, int \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_data_set_afbd3cb40d79ad92dd8c605d1a6a9e420}{width}}, int \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_data_set_a4e81f554bbcc0c83a03123c0d84256c6}{height}}, String \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_data_set_aa99e808e25a854b36feda6b64cb08bc9}{set\+Name}}, String \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_data_set_afc8adad2798f5bec23a83211af00241c}{image\+Name}})
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_data_set_a3a3fe3ef5c04f42a4e549edfe0da0002}{clear\+Kerning}} ()
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_data_set_add4f6b4e306788e704d5749ba27ede82}{dump\+Stats}} ()
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_data_set_adb6e371c799a6a95c3a97ec95cc27e70}{to\+Angel\+Code\+Text}} (Print\+Stream out, String \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_data_set_afc8adad2798f5bec23a83211af00241c}{image\+Name}})
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_data_set_a597971c1aa14c5e6ba5e7a44bee55921}{to\+Angel\+Code\+X\+ML}} (Print\+Stream out, String \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_data_set_afc8adad2798f5bec23a83211af00241c}{image\+Name}})  throws I\+O\+Exception 
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_data_set_adb5d9def53b15ec6d2bc2974b5d2b201}{add\+Character}} (int code, int xadvance, int x, int y, int \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_data_set_afbd3cb40d79ad92dd8c605d1a6a9e420}{width}}, int \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_data_set_a4e81f554bbcc0c83a03123c0d84256c6}{height}}, int yoffset)
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_data_set_a8b0ac6175fed0ac2a4730b44b735466a}{add\+Kerning}} (int first, int second, int offset)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Array\+List \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_data_set_a6623d34b60d062494838b664632c15a6}{chars}} = new Array\+List()
+\item 
+Array\+List \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_data_set_a6a34bd71965bd3b2e169755305389ab8}{kerning}} = new Array\+List()
+\item 
+String \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_data_set_ab0f4c67d67a65d79f10572e7ce459769}{font\+Name}}
+\item 
+int \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_data_set_a4e81f554bbcc0c83a03123c0d84256c6}{height}}
+\item 
+int \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_data_set_afbd3cb40d79ad92dd8c605d1a6a9e420}{width}}
+\item 
+String \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_data_set_aa99e808e25a854b36feda6b64cb08bc9}{set\+Name}}
+\item 
+String \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_data_set_afc8adad2798f5bec23a83211af00241c}{image\+Name}}
+\item 
+int \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_data_set_ac4d3e35615d65f0ed46ff2cea9dcc895}{size}}
+\item 
+int \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_data_set_adfaf42d468a6c97ab5e478c89db021d7}{line\+Height}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The data set generated from the font rendering
+
+\begin{DoxyAuthor}{Author}
+kevin 
+\end{DoxyAuthor}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_data_set_a0b1f344c50413ba77ff7eda8ba1937d5}\label{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_data_set_a0b1f344c50413ba77ff7eda8ba1937d5}} 
+\index{org\+::newdawn\+::slick\+::tools\+::hiero\+::\+Data\+Set@{org\+::newdawn\+::slick\+::tools\+::hiero\+::\+Data\+Set}!Data\+Set@{Data\+Set}}
+\index{Data\+Set@{Data\+Set}!org\+::newdawn\+::slick\+::tools\+::hiero\+::\+Data\+Set@{org\+::newdawn\+::slick\+::tools\+::hiero\+::\+Data\+Set}}
+\subsubsection{\texorpdfstring{Data\+Set()}{DataSet()}}
+{\footnotesize\ttfamily org.\+newdawn.\+slick.\+tools.\+hiero.\+Data\+Set.\+Data\+Set (\begin{DoxyParamCaption}\item[{String}]{font\+Name,  }\item[{int}]{size,  }\item[{int}]{line\+Height,  }\item[{int}]{width,  }\item[{int}]{height,  }\item[{String}]{set\+Name,  }\item[{String}]{image\+Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Create a new data set
+
+
+\begin{DoxyParams}{Parameters}
+{\em font\+Name} & The name of the font generated \\
+\hline
+{\em size} & The size of the font generated \\
+\hline
+{\em line\+Height} & The height of a line of text \\
+\hline
+{\em width} & The width of the texture generated \\
+\hline
+{\em height} & The height of the texture generated \\
+\hline
+{\em set\+Name} & The name of the set \\
+\hline
+{\em image\+Name} & The name of the image \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+63                                                                                                            
+                  \{
+64         this.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_data_set_ab0f4c67d67a65d79f10572e7ce459769}{fontName}} = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_data_set_ab0f4c67d67a65d79f10572e7ce459769}{fontName}};
+65         this.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_data_set_a4e81f554bbcc0c83a03123c0d84256c6}{height}} = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_data_set_a4e81f554bbcc0c83a03123c0d84256c6}{height}};
+66         this.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_data_set_afbd3cb40d79ad92dd8c605d1a6a9e420}{width}} = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_data_set_afbd3cb40d79ad92dd8c605d1a6a9e420}{width}};
+67         this.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_data_set_aa99e808e25a854b36feda6b64cb08bc9}{setName}} = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_data_set_aa99e808e25a854b36feda6b64cb08bc9}{setName}};
+68         this.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_data_set_afc8adad2798f5bec23a83211af00241c}{imageName}} = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_data_set_afc8adad2798f5bec23a83211af00241c}{imageName}};
+69         this.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_data_set_ac4d3e35615d65f0ed46ff2cea9dcc895}{size}} = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_data_set_ac4d3e35615d65f0ed46ff2cea9dcc895}{size}};
+70         this.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_data_set_adfaf42d468a6c97ab5e478c89db021d7}{lineHeight}} = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_data_set_adfaf42d468a6c97ab5e478c89db021d7}{lineHeight}};
+71     \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_data_set_adb5d9def53b15ec6d2bc2974b5d2b201}\label{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_data_set_adb5d9def53b15ec6d2bc2974b5d2b201}} 
+\index{org\+::newdawn\+::slick\+::tools\+::hiero\+::\+Data\+Set@{org\+::newdawn\+::slick\+::tools\+::hiero\+::\+Data\+Set}!add\+Character@{add\+Character}}
+\index{add\+Character@{add\+Character}!org\+::newdawn\+::slick\+::tools\+::hiero\+::\+Data\+Set@{org\+::newdawn\+::slick\+::tools\+::hiero\+::\+Data\+Set}}
+\subsubsection{\texorpdfstring{add\+Character()}{addCharacter()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+tools.\+hiero.\+Data\+Set.\+add\+Character (\begin{DoxyParamCaption}\item[{int}]{code,  }\item[{int}]{xadvance,  }\item[{int}]{x,  }\item[{int}]{y,  }\item[{int}]{width,  }\item[{int}]{height,  }\item[{int}]{yoffset }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Add a character to the data set
+
+
+\begin{DoxyParams}{Parameters}
+{\em code} & The character code \\
+\hline
+{\em xadvance} & The advance on the x axis after writing this character \\
+\hline
+{\em x} & The x position on the sheet of the character \\
+\hline
+{\em y} & The y position on the sheet of the character \\
+\hline
+{\em width} & The width of the character on the sheet \\
+\hline
+{\em height} & The height of the character on the sheet \\
+\hline
+{\em yoffset} & The offset on the y axis when drawing the character \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+214                                                                                                       \{
+215         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_data_set_a6623d34b60d062494838b664632c15a6}{chars}}.add(\textcolor{keyword}{new} CharData(code, xadvance, x, y, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_data_set_afbd3cb40d79ad92dd8c605d1a6a9e420}{width}}, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_data_set_a4e81f554bbcc0c83a03123c0d84256c6}{height}},
+      \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_data_set_ac4d3e35615d65f0ed46ff2cea9dcc895}{size}} + yoffset));
+216     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_data_set_a8b0ac6175fed0ac2a4730b44b735466a}\label{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_data_set_a8b0ac6175fed0ac2a4730b44b735466a}} 
+\index{org\+::newdawn\+::slick\+::tools\+::hiero\+::\+Data\+Set@{org\+::newdawn\+::slick\+::tools\+::hiero\+::\+Data\+Set}!add\+Kerning@{add\+Kerning}}
+\index{add\+Kerning@{add\+Kerning}!org\+::newdawn\+::slick\+::tools\+::hiero\+::\+Data\+Set@{org\+::newdawn\+::slick\+::tools\+::hiero\+::\+Data\+Set}}
+\subsubsection{\texorpdfstring{add\+Kerning()}{addKerning()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+tools.\+hiero.\+Data\+Set.\+add\+Kerning (\begin{DoxyParamCaption}\item[{int}]{first,  }\item[{int}]{second,  }\item[{int}]{offset }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Add some kerning data
+
+
+\begin{DoxyParams}{Parameters}
+{\em first} & The first character \\
+\hline
+{\em second} & The second character \\
+\hline
+{\em offset} & The kerning offset to apply \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+225                                                               \{
+226         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_data_set_a6a34bd71965bd3b2e169755305389ab8}{kerning}}.add(\textcolor{keyword}{new} KerningData(first, second, offset));
+227     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_data_set_a3a3fe3ef5c04f42a4e549edfe0da0002}\label{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_data_set_a3a3fe3ef5c04f42a4e549edfe0da0002}} 
+\index{org\+::newdawn\+::slick\+::tools\+::hiero\+::\+Data\+Set@{org\+::newdawn\+::slick\+::tools\+::hiero\+::\+Data\+Set}!clear\+Kerning@{clear\+Kerning}}
+\index{clear\+Kerning@{clear\+Kerning}!org\+::newdawn\+::slick\+::tools\+::hiero\+::\+Data\+Set@{org\+::newdawn\+::slick\+::tools\+::hiero\+::\+Data\+Set}}
+\subsubsection{\texorpdfstring{clear\+Kerning()}{clearKerning()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+tools.\+hiero.\+Data\+Set.\+clear\+Kerning (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Clear the kerning data 
+\begin{DoxyCode}
+76                                \{
+77         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_data_set_a6a34bd71965bd3b2e169755305389ab8}{kerning}}.clear();
+78     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_data_set_add4f6b4e306788e704d5749ba27ede82}\label{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_data_set_add4f6b4e306788e704d5749ba27ede82}} 
+\index{org\+::newdawn\+::slick\+::tools\+::hiero\+::\+Data\+Set@{org\+::newdawn\+::slick\+::tools\+::hiero\+::\+Data\+Set}!dump\+Stats@{dump\+Stats}}
+\index{dump\+Stats@{dump\+Stats}!org\+::newdawn\+::slick\+::tools\+::hiero\+::\+Data\+Set@{org\+::newdawn\+::slick\+::tools\+::hiero\+::\+Data\+Set}}
+\subsubsection{\texorpdfstring{dump\+Stats()}{dumpStats()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+tools.\+hiero.\+Data\+Set.\+dump\+Stats (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Dump statistics on this set 
+\begin{DoxyCode}
+83                             \{
+84         System.out.println(\textcolor{stringliteral}{"Kerning Count: "}+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_data_set_a6a34bd71965bd3b2e169755305389ab8}{kerning}}.size());
+85     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_data_set_adb6e371c799a6a95c3a97ec95cc27e70}\label{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_data_set_adb6e371c799a6a95c3a97ec95cc27e70}} 
+\index{org\+::newdawn\+::slick\+::tools\+::hiero\+::\+Data\+Set@{org\+::newdawn\+::slick\+::tools\+::hiero\+::\+Data\+Set}!to\+Angel\+Code\+Text@{to\+Angel\+Code\+Text}}
+\index{to\+Angel\+Code\+Text@{to\+Angel\+Code\+Text}!org\+::newdawn\+::slick\+::tools\+::hiero\+::\+Data\+Set@{org\+::newdawn\+::slick\+::tools\+::hiero\+::\+Data\+Set}}
+\subsubsection{\texorpdfstring{to\+Angel\+Code\+Text()}{toAngelCodeText()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+tools.\+hiero.\+Data\+Set.\+to\+Angel\+Code\+Text (\begin{DoxyParamCaption}\item[{Print\+Stream}]{out,  }\item[{String}]{image\+Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Output this data set as an angel code data file
+
+
+\begin{DoxyParams}{Parameters}
+{\em image\+Name} & The name of the image to reference \\
+\hline
+{\em out} & The output stream to write to \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+93                                                                    \{
+94         out.println(\textcolor{stringliteral}{"info face=\(\backslash\)""}+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_data_set_ab0f4c67d67a65d79f10572e7ce459769}{fontName}}+\textcolor{stringliteral}{"\(\backslash\)" size="}+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_data_set_ac4d3e35615d65f0ed46ff2cea9dcc895}{size}}+\textcolor{stringliteral}{" bold=0 italic=0 charset=\(\backslash\)""}+
+      \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_data_set_aa99e808e25a854b36feda6b64cb08bc9}{setName}}+\textcolor{stringliteral}{"\(\backslash\)" unicode=0 stretchH=100 smooth=1 aa=1 padding=0,0,0,0 spacing=1,1"});
+95         out.println(\textcolor{stringliteral}{"common lineHeight="}+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_data_set_adfaf42d468a6c97ab5e478c89db021d7}{lineHeight}}+\textcolor{stringliteral}{" base=26 scaleW="}+
+      \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_data_set_afbd3cb40d79ad92dd8c605d1a6a9e420}{width}}+\textcolor{stringliteral}{" scaleH="}+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_data_set_a4e81f554bbcc0c83a03123c0d84256c6}{height}}+\textcolor{stringliteral}{" pages=1 packed=0"});
+96         out.println(\textcolor{stringliteral}{"page id=0 file=\(\backslash\)""}+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_data_set_afc8adad2798f5bec23a83211af00241c}{imageName}}+\textcolor{stringliteral}{"\(\backslash\)""});
+97 
+98         out.println(\textcolor{stringliteral}{"chars count="}+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_data_set_a6623d34b60d062494838b664632c15a6}{chars}}.size());
+99         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i=0;i<\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_data_set_a6623d34b60d062494838b664632c15a6}{chars}}.size();i++) \{
+100             CharData c = (CharData) \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_data_set_a6623d34b60d062494838b664632c15a6}{chars}}.get(i);
+101             out.println(\textcolor{stringliteral}{"char id="}+c.getID()+\textcolor{stringliteral}{"   x="}+c.getX()+\textcolor{stringliteral}{"     y="}+c.getY()+\textcolor{stringliteral}{"     width="}+c.getWidth()
+      +\textcolor{stringliteral}{"     height="}+c.getHeight()+\textcolor{stringliteral}{"     xoffset=0     yoffset="}+c.getYOffset()+\textcolor{stringliteral}{"    xadvance="}+c.getXAdvance()+\textcolor{stringliteral}{"
+           page=0  chnl=0 "});
+102         \}
+103         out.println(\textcolor{stringliteral}{"kernings count="}+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_data_set_a6a34bd71965bd3b2e169755305389ab8}{kerning}}.size());
+104         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i=0;i<\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_data_set_a6a34bd71965bd3b2e169755305389ab8}{kerning}}.size();i++) \{
+105             KerningData k = (KerningData) \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_data_set_a6a34bd71965bd3b2e169755305389ab8}{kerning}}.get(i);
+106             out.println(\textcolor{stringliteral}{"kerning first="}+k.first+\textcolor{stringliteral}{"  second="}+k.second+\textcolor{stringliteral}{"  amount="}+k.offset);
+107         \}
+108     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_data_set_a597971c1aa14c5e6ba5e7a44bee55921}\label{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_data_set_a597971c1aa14c5e6ba5e7a44bee55921}} 
+\index{org\+::newdawn\+::slick\+::tools\+::hiero\+::\+Data\+Set@{org\+::newdawn\+::slick\+::tools\+::hiero\+::\+Data\+Set}!to\+Angel\+Code\+X\+ML@{to\+Angel\+Code\+X\+ML}}
+\index{to\+Angel\+Code\+X\+ML@{to\+Angel\+Code\+X\+ML}!org\+::newdawn\+::slick\+::tools\+::hiero\+::\+Data\+Set@{org\+::newdawn\+::slick\+::tools\+::hiero\+::\+Data\+Set}}
+\subsubsection{\texorpdfstring{to\+Angel\+Code\+X\+M\+L()}{toAngelCodeXML()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+tools.\+hiero.\+Data\+Set.\+to\+Angel\+Code\+X\+ML (\begin{DoxyParamCaption}\item[{Print\+Stream}]{out,  }\item[{String}]{image\+Name }\end{DoxyParamCaption}) throws I\+O\+Exception\hspace{0.3cm}{\ttfamily [inline]}}
+
+Output this data set as an angle code X\+ML data file
+
+
+\begin{DoxyParams}{Parameters}
+{\em out} & The output stream to write to \\
+\hline
+{\em image\+Name} & The name of the image \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em I\+O\+Exception} & Indicates a failure to build the X\+ML \\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyCode}
+117                                                                                      \{
+118         \textcolor{keywordflow}{try} \{
+119             DocumentBuilder builder = DocumentBuilderFactory.newInstance().newDocumentBuilder();
+120             Document document = builder.newDocument();
+121             Element root = document.createElement(\textcolor{stringliteral}{"font"});
+122             document.appendChild(root);
+123             
+124             Element info = document.createElement(\textcolor{stringliteral}{"info"});
+125             info.setAttribute(\textcolor{stringliteral}{"face"},\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_data_set_ab0f4c67d67a65d79f10572e7ce459769}{fontName}});
+126             info.setAttribute(\textcolor{stringliteral}{"size"},\textcolor{stringliteral}{""}+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_data_set_ac4d3e35615d65f0ed46ff2cea9dcc895}{size}});
+127             info.setAttribute(\textcolor{stringliteral}{"bold"},\textcolor{stringliteral}{"0"});
+128             info.setAttribute(\textcolor{stringliteral}{"italic"},\textcolor{stringliteral}{"0"});
+129             info.setAttribute(\textcolor{stringliteral}{"charSet"},\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_data_set_aa99e808e25a854b36feda6b64cb08bc9}{setName}});
+130             info.setAttribute(\textcolor{stringliteral}{"unicode"},\textcolor{stringliteral}{""}+0);
+131             info.setAttribute(\textcolor{stringliteral}{"stretchH"},\textcolor{stringliteral}{""}+100);
+132             info.setAttribute(\textcolor{stringliteral}{"smooth"},\textcolor{stringliteral}{""}+0);
+133             info.setAttribute(\textcolor{stringliteral}{"aa"},\textcolor{stringliteral}{""}+0);
+134             info.setAttribute(\textcolor{stringliteral}{"padding"},\textcolor{stringliteral}{"0,0,0,0"});
+135             info.setAttribute(\textcolor{stringliteral}{"spacing"},\textcolor{stringliteral}{"0,0"});
+136             root.appendChild(info);
+137             Element common = document.createElement(\textcolor{stringliteral}{"common"});
+138             common.setAttribute(\textcolor{stringliteral}{"lineHeight"},\textcolor{stringliteral}{""}+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_data_set_adfaf42d468a6c97ab5e478c89db021d7}{lineHeight}});
+139             common.setAttribute(\textcolor{stringliteral}{"base"},\textcolor{stringliteral}{"0"});
+140             common.setAttribute(\textcolor{stringliteral}{"scaleW"},\textcolor{stringliteral}{""}+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_data_set_afbd3cb40d79ad92dd8c605d1a6a9e420}{width}});
+141             common.setAttribute(\textcolor{stringliteral}{"scaleH"},\textcolor{stringliteral}{""}+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_data_set_a4e81f554bbcc0c83a03123c0d84256c6}{height}});
+142             common.setAttribute(\textcolor{stringliteral}{"pages"},\textcolor{stringliteral}{"1"});
+143             common.setAttribute(\textcolor{stringliteral}{"packed"},\textcolor{stringliteral}{"0"});
+144             root.appendChild(common);
+145             Element pages = document.createElement(\textcolor{stringliteral}{"pages"});
+146             Element page = document.createElement(\textcolor{stringliteral}{"page"});
+147             page.setAttribute(\textcolor{stringliteral}{"id"},\textcolor{stringliteral}{"0"});
+148             page.setAttribute(\textcolor{stringliteral}{"file"},\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_data_set_afc8adad2798f5bec23a83211af00241c}{imageName}});
+149             root.appendChild(pages);
+150             pages.appendChild(page);
+151             
+152             Element charsElement = document.createElement(\textcolor{stringliteral}{"chars"});
+153             charsElement.setAttribute(\textcolor{stringliteral}{"count"},\textcolor{stringliteral}{""}+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_data_set_a6623d34b60d062494838b664632c15a6}{chars}}.size());
+154             root.appendChild(charsElement);
+155             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i=0;i<\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_data_set_a6623d34b60d062494838b664632c15a6}{chars}}.size();i++) \{
+156                 CharData c = (CharData) \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_data_set_a6623d34b60d062494838b664632c15a6}{chars}}.get(i);
+157                 Element charElement = document.createElement(\textcolor{stringliteral}{"char"});
+158                 
+159                 charElement.setAttribute(\textcolor{stringliteral}{"id"}, \textcolor{stringliteral}{""}+c.getID());
+160                 charElement.setAttribute(\textcolor{stringliteral}{"x"}, \textcolor{stringliteral}{""}+c.getX());
+161                 charElement.setAttribute(\textcolor{stringliteral}{"y"}, \textcolor{stringliteral}{""}+c.getY());
+162                 charElement.setAttribute(\textcolor{stringliteral}{"width"}, \textcolor{stringliteral}{""}+c.getWidth());
+163                 charElement.setAttribute(\textcolor{stringliteral}{"height"}, \textcolor{stringliteral}{""}+c.getHeight());
+164                 charElement.setAttribute(\textcolor{stringliteral}{"xoffset"}, \textcolor{stringliteral}{"0"});
+165                 charElement.setAttribute(\textcolor{stringliteral}{"yoffset"}, \textcolor{stringliteral}{""}+c.getYOffset());
+166                 charElement.setAttribute(\textcolor{stringliteral}{"xadvance"}, \textcolor{stringliteral}{""}+c.getXAdvance());
+167                 charElement.setAttribute(\textcolor{stringliteral}{"page"}, \textcolor{stringliteral}{"0"});
+168                 charElement.setAttribute(\textcolor{stringliteral}{"chnl"}, \textcolor{stringliteral}{"0"});
+169                 charsElement.appendChild(charElement);
+170             \}
+171             
+172             Element kernsElement = document.createElement(\textcolor{stringliteral}{"kernings"});
+173             kernsElement.setAttribute(\textcolor{stringliteral}{"count"},\textcolor{stringliteral}{""}+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_data_set_a6a34bd71965bd3b2e169755305389ab8}{kerning}}.size());
+174             root.appendChild(kernsElement);
+175             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i=0;i<\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_data_set_a6a34bd71965bd3b2e169755305389ab8}{kerning}}.size();i++) \{
+176                 KerningData k = (KerningData) \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_data_set_a6a34bd71965bd3b2e169755305389ab8}{kerning}}.get(i);
+177                 Element kernElement = document.createElement(\textcolor{stringliteral}{"kerning"});
+178                 
+179                 kernElement.setAttribute(\textcolor{stringliteral}{"first"}, \textcolor{stringliteral}{""}+k.first);
+180                 kernElement.setAttribute(\textcolor{stringliteral}{"second"}, \textcolor{stringliteral}{""}+k.second);
+181                 kernElement.setAttribute(\textcolor{stringliteral}{"amount"}, \textcolor{stringliteral}{""}+k.offset);
+182                 kernsElement.appendChild(kernElement);
+183             \}
+184             
+185             Result result = \textcolor{keyword}{new} StreamResult(\textcolor{keyword}{new} OutputStreamWriter(out,
+186                     \textcolor{stringliteral}{"utf-8"}));
+187             DOMSource source = \textcolor{keyword}{new} DOMSource(document);
+188             TransformerFactory factory = TransformerFactory.newInstance();
+189             factory.setAttribute(\textcolor{stringliteral}{"indent-number"}, \textcolor{keyword}{new} Integer(2));
+190             Transformer xformer = factory.newTransformer();
+191             xformer.setOutputProperty(OutputKeys.INDENT, \textcolor{stringliteral}{"yes"});
+192             
+193             xformer.transform(source, result);
+194         \} \textcolor{keywordflow}{catch} (Exception e) \{
+195             e.printStackTrace();
+196             IOException x = \textcolor{keyword}{new} IOException();
+197             x.initCause(e);
+198             
+199             \textcolor{keywordflow}{throw} x;
+200         \}
+201     \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_data_set_a6623d34b60d062494838b664632c15a6}\label{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_data_set_a6623d34b60d062494838b664632c15a6}} 
+\index{org\+::newdawn\+::slick\+::tools\+::hiero\+::\+Data\+Set@{org\+::newdawn\+::slick\+::tools\+::hiero\+::\+Data\+Set}!chars@{chars}}
+\index{chars@{chars}!org\+::newdawn\+::slick\+::tools\+::hiero\+::\+Data\+Set@{org\+::newdawn\+::slick\+::tools\+::hiero\+::\+Data\+Set}}
+\subsubsection{\texorpdfstring{chars}{chars}}
+{\footnotesize\ttfamily Array\+List org.\+newdawn.\+slick.\+tools.\+hiero.\+Data\+Set.\+chars = new Array\+List()\hspace{0.3cm}{\ttfamily [private]}}
+
+The character information \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_data_set_ab0f4c67d67a65d79f10572e7ce459769}\label{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_data_set_ab0f4c67d67a65d79f10572e7ce459769}} 
+\index{org\+::newdawn\+::slick\+::tools\+::hiero\+::\+Data\+Set@{org\+::newdawn\+::slick\+::tools\+::hiero\+::\+Data\+Set}!font\+Name@{font\+Name}}
+\index{font\+Name@{font\+Name}!org\+::newdawn\+::slick\+::tools\+::hiero\+::\+Data\+Set@{org\+::newdawn\+::slick\+::tools\+::hiero\+::\+Data\+Set}}
+\subsubsection{\texorpdfstring{font\+Name}{fontName}}
+{\footnotesize\ttfamily String org.\+newdawn.\+slick.\+tools.\+hiero.\+Data\+Set.\+font\+Name\hspace{0.3cm}{\ttfamily [private]}}
+
+The name fo the font face \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_data_set_a4e81f554bbcc0c83a03123c0d84256c6}\label{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_data_set_a4e81f554bbcc0c83a03123c0d84256c6}} 
+\index{org\+::newdawn\+::slick\+::tools\+::hiero\+::\+Data\+Set@{org\+::newdawn\+::slick\+::tools\+::hiero\+::\+Data\+Set}!height@{height}}
+\index{height@{height}!org\+::newdawn\+::slick\+::tools\+::hiero\+::\+Data\+Set@{org\+::newdawn\+::slick\+::tools\+::hiero\+::\+Data\+Set}}
+\subsubsection{\texorpdfstring{height}{height}}
+{\footnotesize\ttfamily int org.\+newdawn.\+slick.\+tools.\+hiero.\+Data\+Set.\+height\hspace{0.3cm}{\ttfamily [private]}}
+
+The height of generated texture \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_data_set_afc8adad2798f5bec23a83211af00241c}\label{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_data_set_afc8adad2798f5bec23a83211af00241c}} 
+\index{org\+::newdawn\+::slick\+::tools\+::hiero\+::\+Data\+Set@{org\+::newdawn\+::slick\+::tools\+::hiero\+::\+Data\+Set}!image\+Name@{image\+Name}}
+\index{image\+Name@{image\+Name}!org\+::newdawn\+::slick\+::tools\+::hiero\+::\+Data\+Set@{org\+::newdawn\+::slick\+::tools\+::hiero\+::\+Data\+Set}}
+\subsubsection{\texorpdfstring{image\+Name}{imageName}}
+{\footnotesize\ttfamily String org.\+newdawn.\+slick.\+tools.\+hiero.\+Data\+Set.\+image\+Name\hspace{0.3cm}{\ttfamily [private]}}
+
+The name of the image \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_data_set_a6a34bd71965bd3b2e169755305389ab8}\label{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_data_set_a6a34bd71965bd3b2e169755305389ab8}} 
+\index{org\+::newdawn\+::slick\+::tools\+::hiero\+::\+Data\+Set@{org\+::newdawn\+::slick\+::tools\+::hiero\+::\+Data\+Set}!kerning@{kerning}}
+\index{kerning@{kerning}!org\+::newdawn\+::slick\+::tools\+::hiero\+::\+Data\+Set@{org\+::newdawn\+::slick\+::tools\+::hiero\+::\+Data\+Set}}
+\subsubsection{\texorpdfstring{kerning}{kerning}}
+{\footnotesize\ttfamily Array\+List org.\+newdawn.\+slick.\+tools.\+hiero.\+Data\+Set.\+kerning = new Array\+List()\hspace{0.3cm}{\ttfamily [private]}}
+
+The kerning information \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_data_set_adfaf42d468a6c97ab5e478c89db021d7}\label{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_data_set_adfaf42d468a6c97ab5e478c89db021d7}} 
+\index{org\+::newdawn\+::slick\+::tools\+::hiero\+::\+Data\+Set@{org\+::newdawn\+::slick\+::tools\+::hiero\+::\+Data\+Set}!line\+Height@{line\+Height}}
+\index{line\+Height@{line\+Height}!org\+::newdawn\+::slick\+::tools\+::hiero\+::\+Data\+Set@{org\+::newdawn\+::slick\+::tools\+::hiero\+::\+Data\+Set}}
+\subsubsection{\texorpdfstring{line\+Height}{lineHeight}}
+{\footnotesize\ttfamily int org.\+newdawn.\+slick.\+tools.\+hiero.\+Data\+Set.\+line\+Height\hspace{0.3cm}{\ttfamily [private]}}
+
+The global line height \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_data_set_aa99e808e25a854b36feda6b64cb08bc9}\label{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_data_set_aa99e808e25a854b36feda6b64cb08bc9}} 
+\index{org\+::newdawn\+::slick\+::tools\+::hiero\+::\+Data\+Set@{org\+::newdawn\+::slick\+::tools\+::hiero\+::\+Data\+Set}!set\+Name@{set\+Name}}
+\index{set\+Name@{set\+Name}!org\+::newdawn\+::slick\+::tools\+::hiero\+::\+Data\+Set@{org\+::newdawn\+::slick\+::tools\+::hiero\+::\+Data\+Set}}
+\subsubsection{\texorpdfstring{set\+Name}{setName}}
+{\footnotesize\ttfamily String org.\+newdawn.\+slick.\+tools.\+hiero.\+Data\+Set.\+set\+Name\hspace{0.3cm}{\ttfamily [private]}}
+
+The name of the set \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_data_set_ac4d3e35615d65f0ed46ff2cea9dcc895}\label{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_data_set_ac4d3e35615d65f0ed46ff2cea9dcc895}} 
+\index{org\+::newdawn\+::slick\+::tools\+::hiero\+::\+Data\+Set@{org\+::newdawn\+::slick\+::tools\+::hiero\+::\+Data\+Set}!size@{size}}
+\index{size@{size}!org\+::newdawn\+::slick\+::tools\+::hiero\+::\+Data\+Set@{org\+::newdawn\+::slick\+::tools\+::hiero\+::\+Data\+Set}}
+\subsubsection{\texorpdfstring{size}{size}}
+{\footnotesize\ttfamily int org.\+newdawn.\+slick.\+tools.\+hiero.\+Data\+Set.\+size\hspace{0.3cm}{\ttfamily [private]}}
+
+The font size \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_data_set_afbd3cb40d79ad92dd8c605d1a6a9e420}\label{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_data_set_afbd3cb40d79ad92dd8c605d1a6a9e420}} 
+\index{org\+::newdawn\+::slick\+::tools\+::hiero\+::\+Data\+Set@{org\+::newdawn\+::slick\+::tools\+::hiero\+::\+Data\+Set}!width@{width}}
+\index{width@{width}!org\+::newdawn\+::slick\+::tools\+::hiero\+::\+Data\+Set@{org\+::newdawn\+::slick\+::tools\+::hiero\+::\+Data\+Set}}
+\subsubsection{\texorpdfstring{width}{width}}
+{\footnotesize\ttfamily int org.\+newdawn.\+slick.\+tools.\+hiero.\+Data\+Set.\+width\hspace{0.3cm}{\ttfamily [private]}}
+
+The width of generated texture 

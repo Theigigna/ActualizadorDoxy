@@ -1,0 +1,345 @@
+\hypertarget{classorg_1_1newdawn_1_1slick_1_1_saved_state}{}\section{org.\+newdawn.\+slick.\+Saved\+State Class Reference}
+\label{classorg_1_1newdawn_1_1slick_1_1_saved_state}\index{org.\+newdawn.\+slick.\+Saved\+State@{org.\+newdawn.\+slick.\+Saved\+State}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_saved_state_aef2409061a497111c6a6b64a798af41d}{Saved\+State}} (String \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_saved_state_ace5c7436bfdba5164f2b1826bb173388}{file\+Name}})  throws Slick\+Exception 
+\item 
+double \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_saved_state_a6daea1aaa6e5d6121457332cb5728af2}{get\+Number}} (String name\+Of\+Field)
+\item 
+double \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_saved_state_a02c20e8a5b92fabf133ccebf295cb492}{get\+Number}} (String name\+Of\+Field, double default\+Value)
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_saved_state_ab0249cdc735869ea0fe006e0004021d5}{set\+Number}} (String name\+Of\+Field, double value)
+\item 
+String \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_saved_state_a360539d1b89bf1eb115c2d3227a0c7a1}{get\+String}} (String name\+Of\+Field)
+\item 
+String \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_saved_state_ac2e99c29bc57e9dfae89446cdd9ae6a3}{get\+String}} (String name\+Of\+Field, String default\+Value)
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_saved_state_a28ee41003a982243b0ebf820a169ff90}{set\+String}} (String name\+Of\+Field, String value)
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_saved_state_aa611e00cc3b27ac35104a970c41791f8}{save}} ()  throws I\+O\+Exception 
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_saved_state_a40cf0eea8c044407bfdee0e801887ed8}{load}} ()  throws I\+O\+Exception 
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_saved_state_a4784b56dee7616e98dd456b8c92f7212}{clear}} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+boolean \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_saved_state_a2073d608e7e841ae5ff8eef63f596cf2}{is\+Webstart\+Available}} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+String \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_saved_state_ace5c7436bfdba5164f2b1826bb173388}{file\+Name}}
+\item 
+\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1muffin_1_1_muffin}{Muffin}} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_saved_state_a461d13c1acfff7fbc631724ff5fae6a1}{muffin}}
+\item 
+Hash\+Map \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_saved_state_ad734be75c78cdbd06ed020c7d416e187}{numeric\+Data}} = new Hash\+Map()
+\item 
+Hash\+Map \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_saved_state_a5c7e1053721ddfee0b4a2a29facd103b}{string\+Data}} = new Hash\+Map()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A utility to allow game setup/state to be stored locally. This utility will adapt to the current enviornment (webstart or file based). Note that this will not currently work in an applet.
+
+\begin{DoxyAuthor}{Author}
+kappa\+One 
+\end{DoxyAuthor}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1_saved_state_aef2409061a497111c6a6b64a798af41d}\label{classorg_1_1newdawn_1_1slick_1_1_saved_state_aef2409061a497111c6a6b64a798af41d}} 
+\index{org\+::newdawn\+::slick\+::\+Saved\+State@{org\+::newdawn\+::slick\+::\+Saved\+State}!Saved\+State@{Saved\+State}}
+\index{Saved\+State@{Saved\+State}!org\+::newdawn\+::slick\+::\+Saved\+State@{org\+::newdawn\+::slick\+::\+Saved\+State}}
+\subsubsection{\texorpdfstring{Saved\+State()}{SavedState()}}
+{\footnotesize\ttfamily org.\+newdawn.\+slick.\+Saved\+State.\+Saved\+State (\begin{DoxyParamCaption}\item[{String}]{file\+Name }\end{DoxyParamCaption}) throws \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_slick_exception}{Slick\+Exception}}\hspace{0.3cm}{\ttfamily [inline]}}
+
+Create and Test to see if the app is running as webstart or local app and select the appropriate muffin type
+
+
+\begin{DoxyParams}{Parameters}
+{\em file\+Name} & name of muffin where data will be saved \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_slick_exception}{Slick\+Exception}}} & Indicates a failure to load the stored state \\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyCode}
+38                                                              \{
+39         this.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_saved_state_ace5c7436bfdba5164f2b1826bb173388}{fileName}} = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_saved_state_ace5c7436bfdba5164f2b1826bb173388}{fileName}};
+40         
+41         \textcolor{keywordflow}{if} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_saved_state_a2073d608e7e841ae5ff8eef63f596cf2}{isWebstartAvailable}}()) \{
+42             \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_saved_state_a461d13c1acfff7fbc631724ff5fae6a1}{muffin}} = \textcolor{keyword}{new} WebstartMuffin();
+43         \}
+44         \textcolor{keywordflow}{else} \{
+45             \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_saved_state_a461d13c1acfff7fbc631724ff5fae6a1}{muffin}} = \textcolor{keyword}{new} FileMuffin();
+46         \}
+47         
+48         \textcolor{keywordflow}{try} \{
+49             \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_saved_state_a40cf0eea8c044407bfdee0e801887ed8}{load}}();
+50         \} \textcolor{keywordflow}{catch} (IOException e) \{
+51             \textcolor{keywordflow}{throw} \textcolor{keyword}{new} SlickException(\textcolor{stringliteral}{"Failed to load state on startup"},e);
+52         \}
+53     \}   
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1_saved_state_a4784b56dee7616e98dd456b8c92f7212}\label{classorg_1_1newdawn_1_1slick_1_1_saved_state_a4784b56dee7616e98dd456b8c92f7212}} 
+\index{org\+::newdawn\+::slick\+::\+Saved\+State@{org\+::newdawn\+::slick\+::\+Saved\+State}!clear@{clear}}
+\index{clear@{clear}!org\+::newdawn\+::slick\+::\+Saved\+State@{org\+::newdawn\+::slick\+::\+Saved\+State}}
+\subsubsection{\texorpdfstring{clear()}{clear()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+Saved\+State.\+clear (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Will delete all current data held in Score 
+\begin{DoxyCode}
+154                         \{
+155         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_saved_state_ad734be75c78cdbd06ed020c7d416e187}{numericData}}.clear();
+156         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_saved_state_a5c7e1053721ddfee0b4a2a29facd103b}{stringData}}.clear();
+157     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1_saved_state_a6daea1aaa6e5d6121457332cb5728af2}\label{classorg_1_1newdawn_1_1slick_1_1_saved_state_a6daea1aaa6e5d6121457332cb5728af2}} 
+\index{org\+::newdawn\+::slick\+::\+Saved\+State@{org\+::newdawn\+::slick\+::\+Saved\+State}!get\+Number@{get\+Number}}
+\index{get\+Number@{get\+Number}!org\+::newdawn\+::slick\+::\+Saved\+State@{org\+::newdawn\+::slick\+::\+Saved\+State}}
+\subsubsection{\texorpdfstring{get\+Number()}{getNumber()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily double org.\+newdawn.\+slick.\+Saved\+State.\+get\+Number (\begin{DoxyParamCaption}\item[{String}]{name\+Of\+Field }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get number stored at given location
+
+
+\begin{DoxyParams}{Parameters}
+{\em name\+Of\+Field} & The name of the number to retrieve \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The number saved at this location 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+61                                                 \{
+62         \textcolor{keywordflow}{return} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_saved_state_a6daea1aaa6e5d6121457332cb5728af2}{getNumber}}(nameOfField, 0);
+63     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1_saved_state_a02c20e8a5b92fabf133ccebf295cb492}\label{classorg_1_1newdawn_1_1slick_1_1_saved_state_a02c20e8a5b92fabf133ccebf295cb492}} 
+\index{org\+::newdawn\+::slick\+::\+Saved\+State@{org\+::newdawn\+::slick\+::\+Saved\+State}!get\+Number@{get\+Number}}
+\index{get\+Number@{get\+Number}!org\+::newdawn\+::slick\+::\+Saved\+State@{org\+::newdawn\+::slick\+::\+Saved\+State}}
+\subsubsection{\texorpdfstring{get\+Number()}{getNumber()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily double org.\+newdawn.\+slick.\+Saved\+State.\+get\+Number (\begin{DoxyParamCaption}\item[{String}]{name\+Of\+Field,  }\item[{double}]{default\+Value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get number stored at given location
+
+
+\begin{DoxyParams}{Parameters}
+{\em name\+Of\+Field} & The name of the number to retrieve \\
+\hline
+{\em default\+Value} & The value to return if the specified value hasn\textquotesingle{}t been set \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The number saved at this location 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+72                                                                      \{
+73         Double value = ((Double)\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_saved_state_ad734be75c78cdbd06ed020c7d416e187}{numericData}}.get(nameOfField));
+74         
+75         \textcolor{keywordflow}{if} (value == null) \{
+76             \textcolor{keywordflow}{return} defaultValue;
+77         \}
+78         
+79         \textcolor{keywordflow}{return} value.doubleValue();
+80     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1_saved_state_a360539d1b89bf1eb115c2d3227a0c7a1}\label{classorg_1_1newdawn_1_1slick_1_1_saved_state_a360539d1b89bf1eb115c2d3227a0c7a1}} 
+\index{org\+::newdawn\+::slick\+::\+Saved\+State@{org\+::newdawn\+::slick\+::\+Saved\+State}!get\+String@{get\+String}}
+\index{get\+String@{get\+String}!org\+::newdawn\+::slick\+::\+Saved\+State@{org\+::newdawn\+::slick\+::\+Saved\+State}}
+\subsubsection{\texorpdfstring{get\+String()}{getString()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily String org.\+newdawn.\+slick.\+Saved\+State.\+get\+String (\begin{DoxyParamCaption}\item[{String}]{name\+Of\+Field }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get the String at the given location
+
+
+\begin{DoxyParams}{Parameters}
+{\em name\+Of\+Field} & location of string \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+String stored at the location given 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+99                                                 \{
+100         \textcolor{keywordflow}{return} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_saved_state_a360539d1b89bf1eb115c2d3227a0c7a1}{getString}}(nameOfField, null);
+101     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1_saved_state_ac2e99c29bc57e9dfae89446cdd9ae6a3}\label{classorg_1_1newdawn_1_1slick_1_1_saved_state_ac2e99c29bc57e9dfae89446cdd9ae6a3}} 
+\index{org\+::newdawn\+::slick\+::\+Saved\+State@{org\+::newdawn\+::slick\+::\+Saved\+State}!get\+String@{get\+String}}
+\index{get\+String@{get\+String}!org\+::newdawn\+::slick\+::\+Saved\+State@{org\+::newdawn\+::slick\+::\+Saved\+State}}
+\subsubsection{\texorpdfstring{get\+String()}{getString()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily String org.\+newdawn.\+slick.\+Saved\+State.\+get\+String (\begin{DoxyParamCaption}\item[{String}]{name\+Of\+Field,  }\item[{String}]{default\+Value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get the String at the given location
+
+
+\begin{DoxyParams}{Parameters}
+{\em name\+Of\+Field} & location of string \\
+\hline
+{\em default\+Value} & The value to return if the specified value hasn\textquotesingle{}t been set \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+String stored at the location given 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+110                                                                      \{
+111         String value = (String) \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_saved_state_a5c7e1053721ddfee0b4a2a29facd103b}{stringData}}.get(nameOfField);
+112         
+113         \textcolor{keywordflow}{if} (value == null) \{
+114             \textcolor{keywordflow}{return} defaultValue;
+115         \}
+116         
+117         \textcolor{keywordflow}{return} value;
+118     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1_saved_state_a2073d608e7e841ae5ff8eef63f596cf2}\label{classorg_1_1newdawn_1_1slick_1_1_saved_state_a2073d608e7e841ae5ff8eef63f596cf2}} 
+\index{org\+::newdawn\+::slick\+::\+Saved\+State@{org\+::newdawn\+::slick\+::\+Saved\+State}!is\+Webstart\+Available@{is\+Webstart\+Available}}
+\index{is\+Webstart\+Available@{is\+Webstart\+Available}!org\+::newdawn\+::slick\+::\+Saved\+State@{org\+::newdawn\+::slick\+::\+Saved\+State}}
+\subsubsection{\texorpdfstring{is\+Webstart\+Available()}{isWebstartAvailable()}}
+{\footnotesize\ttfamily boolean org.\+newdawn.\+slick.\+Saved\+State.\+is\+Webstart\+Available (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+Quick test to see if running through Java webstart
+
+\begin{DoxyReturn}{Returns}
+True if jws running 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+164                                           \{
+165         \textcolor{keywordflow}{try} \{
+166             Class.forName(\textcolor{stringliteral}{"javax.jnlp.ServiceManager"});
+167             \textcolor{comment}{// this causes to go and see if the service is available}
+168             ServiceManager.lookup(\textcolor{stringliteral}{"javax.jnlp.PersistenceService"});
+169             Log.info(\textcolor{stringliteral}{"Webstart detected using Muffins"});
+170         \} \textcolor{keywordflow}{catch} (Exception e) \{
+171             Log.info(\textcolor{stringliteral}{"Using Local File System"});
+172             \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+173         \}
+174         \textcolor{keywordflow}{return} \textcolor{keyword}{true};
+175     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1_saved_state_a40cf0eea8c044407bfdee0e801887ed8}\label{classorg_1_1newdawn_1_1slick_1_1_saved_state_a40cf0eea8c044407bfdee0e801887ed8}} 
+\index{org\+::newdawn\+::slick\+::\+Saved\+State@{org\+::newdawn\+::slick\+::\+Saved\+State}!load@{load}}
+\index{load@{load}!org\+::newdawn\+::slick\+::\+Saved\+State@{org\+::newdawn\+::slick\+::\+Saved\+State}}
+\subsubsection{\texorpdfstring{load()}{load()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+Saved\+State.\+load (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws I\+O\+Exception\hspace{0.3cm}{\ttfamily [inline]}}
+
+Load the data from file/muffin
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em I\+O\+Exception} & Indicates it wasn\textquotesingle{}t possible to load the state \\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyCode}
+146                                           \{
+147         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_saved_state_ad734be75c78cdbd06ed020c7d416e187}{numericData}} = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_saved_state_a461d13c1acfff7fbc631724ff5fae6a1}{muffin}}.\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1muffin_1_1_muffin_a2d6256b6d8f26b294f06341985047fbe}{loadFile}}(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_saved_state_ace5c7436bfdba5164f2b1826bb173388}{fileName}} + \textcolor{stringliteral}{"\_Number"});
+148         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_saved_state_a5c7e1053721ddfee0b4a2a29facd103b}{stringData}} = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_saved_state_a461d13c1acfff7fbc631724ff5fae6a1}{muffin}}.\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1muffin_1_1_muffin_a2d6256b6d8f26b294f06341985047fbe}{loadFile}}(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_saved_state_ace5c7436bfdba5164f2b1826bb173388}{fileName}} + \textcolor{stringliteral}{"\_String"});
+149     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1_saved_state_aa611e00cc3b27ac35104a970c41791f8}\label{classorg_1_1newdawn_1_1slick_1_1_saved_state_aa611e00cc3b27ac35104a970c41791f8}} 
+\index{org\+::newdawn\+::slick\+::\+Saved\+State@{org\+::newdawn\+::slick\+::\+Saved\+State}!save@{save}}
+\index{save@{save}!org\+::newdawn\+::slick\+::\+Saved\+State@{org\+::newdawn\+::slick\+::\+Saved\+State}}
+\subsubsection{\texorpdfstring{save()}{save()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+Saved\+State.\+save (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws I\+O\+Exception\hspace{0.3cm}{\ttfamily [inline]}}
+
+Save the stored data to file/muffin
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em I\+O\+Exception} & Indicates it wasn\textquotesingle{}t possible to store the state \\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyCode}
+136                                           \{
+137         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_saved_state_a461d13c1acfff7fbc631724ff5fae6a1}{muffin}}.\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1muffin_1_1_muffin_a025189130fb123bc751e58677435974a}{saveFile}}(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_saved_state_ad734be75c78cdbd06ed020c7d416e187}{numericData}}, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_saved_state_ace5c7436bfdba5164f2b1826bb173388}{fileName}} + \textcolor{stringliteral}{"\_Number"});
+138         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_saved_state_a461d13c1acfff7fbc631724ff5fae6a1}{muffin}}.\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1muffin_1_1_muffin_a025189130fb123bc751e58677435974a}{saveFile}}(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_saved_state_a5c7e1053721ddfee0b4a2a29facd103b}{stringData}}, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_saved_state_ace5c7436bfdba5164f2b1826bb173388}{fileName}} + \textcolor{stringliteral}{"\_String"});
+139     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1_saved_state_ab0249cdc735869ea0fe006e0004021d5}\label{classorg_1_1newdawn_1_1slick_1_1_saved_state_ab0249cdc735869ea0fe006e0004021d5}} 
+\index{org\+::newdawn\+::slick\+::\+Saved\+State@{org\+::newdawn\+::slick\+::\+Saved\+State}!set\+Number@{set\+Number}}
+\index{set\+Number@{set\+Number}!org\+::newdawn\+::slick\+::\+Saved\+State@{org\+::newdawn\+::slick\+::\+Saved\+State}}
+\subsubsection{\texorpdfstring{set\+Number()}{setNumber()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+Saved\+State.\+set\+Number (\begin{DoxyParamCaption}\item[{String}]{name\+Of\+Field,  }\item[{double}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Save the given value at the given location will overwrite any previous value at this location
+
+
+\begin{DoxyParams}{Parameters}
+{\em name\+Of\+Field} & The name to store the value against \\
+\hline
+{\em value} & The value to store \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+89                                                            \{
+90         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_saved_state_ad734be75c78cdbd06ed020c7d416e187}{numericData}}.put(nameOfField, \textcolor{keyword}{new} Double(value));
+91     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1_saved_state_a28ee41003a982243b0ebf820a169ff90}\label{classorg_1_1newdawn_1_1slick_1_1_saved_state_a28ee41003a982243b0ebf820a169ff90}} 
+\index{org\+::newdawn\+::slick\+::\+Saved\+State@{org\+::newdawn\+::slick\+::\+Saved\+State}!set\+String@{set\+String}}
+\index{set\+String@{set\+String}!org\+::newdawn\+::slick\+::\+Saved\+State@{org\+::newdawn\+::slick\+::\+Saved\+State}}
+\subsubsection{\texorpdfstring{set\+String()}{setString()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+Saved\+State.\+set\+String (\begin{DoxyParamCaption}\item[{String}]{name\+Of\+Field,  }\item[{String}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Save the given value at the given location will overwrite any previous value at this location
+
+
+\begin{DoxyParams}{Parameters}
+{\em name\+Of\+Field} & location to store int \\
+\hline
+{\em value} & The value to store \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+127                                                            \{
+128         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_saved_state_a5c7e1053721ddfee0b4a2a29facd103b}{stringData}}.put(nameOfField, value);
+129     \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1_saved_state_ace5c7436bfdba5164f2b1826bb173388}\label{classorg_1_1newdawn_1_1slick_1_1_saved_state_ace5c7436bfdba5164f2b1826bb173388}} 
+\index{org\+::newdawn\+::slick\+::\+Saved\+State@{org\+::newdawn\+::slick\+::\+Saved\+State}!file\+Name@{file\+Name}}
+\index{file\+Name@{file\+Name}!org\+::newdawn\+::slick\+::\+Saved\+State@{org\+::newdawn\+::slick\+::\+Saved\+State}}
+\subsubsection{\texorpdfstring{file\+Name}{fileName}}
+{\footnotesize\ttfamily String org.\+newdawn.\+slick.\+Saved\+State.\+file\+Name\hspace{0.3cm}{\ttfamily [private]}}
+
+file name of where the scores will be saved \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1_saved_state_a461d13c1acfff7fbc631724ff5fae6a1}\label{classorg_1_1newdawn_1_1slick_1_1_saved_state_a461d13c1acfff7fbc631724ff5fae6a1}} 
+\index{org\+::newdawn\+::slick\+::\+Saved\+State@{org\+::newdawn\+::slick\+::\+Saved\+State}!muffin@{muffin}}
+\index{muffin@{muffin}!org\+::newdawn\+::slick\+::\+Saved\+State@{org\+::newdawn\+::slick\+::\+Saved\+State}}
+\subsubsection{\texorpdfstring{muffin}{muffin}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1muffin_1_1_muffin}{Muffin}} org.\+newdawn.\+slick.\+Saved\+State.\+muffin\hspace{0.3cm}{\ttfamily [private]}}
+
+Type of Muffin to use \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1_saved_state_ad734be75c78cdbd06ed020c7d416e187}\label{classorg_1_1newdawn_1_1slick_1_1_saved_state_ad734be75c78cdbd06ed020c7d416e187}} 
+\index{org\+::newdawn\+::slick\+::\+Saved\+State@{org\+::newdawn\+::slick\+::\+Saved\+State}!numeric\+Data@{numeric\+Data}}
+\index{numeric\+Data@{numeric\+Data}!org\+::newdawn\+::slick\+::\+Saved\+State@{org\+::newdawn\+::slick\+::\+Saved\+State}}
+\subsubsection{\texorpdfstring{numeric\+Data}{numericData}}
+{\footnotesize\ttfamily Hash\+Map org.\+newdawn.\+slick.\+Saved\+State.\+numeric\+Data = new Hash\+Map()\hspace{0.3cm}{\ttfamily [private]}}
+
+hash map where int data will be stored \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1_saved_state_a5c7e1053721ddfee0b4a2a29facd103b}\label{classorg_1_1newdawn_1_1slick_1_1_saved_state_a5c7e1053721ddfee0b4a2a29facd103b}} 
+\index{org\+::newdawn\+::slick\+::\+Saved\+State@{org\+::newdawn\+::slick\+::\+Saved\+State}!string\+Data@{string\+Data}}
+\index{string\+Data@{string\+Data}!org\+::newdawn\+::slick\+::\+Saved\+State@{org\+::newdawn\+::slick\+::\+Saved\+State}}
+\subsubsection{\texorpdfstring{string\+Data}{stringData}}
+{\footnotesize\ttfamily Hash\+Map org.\+newdawn.\+slick.\+Saved\+State.\+string\+Data = new Hash\+Map()\hspace{0.3cm}{\ttfamily [private]}}
+
+hash map where string data will be stored 

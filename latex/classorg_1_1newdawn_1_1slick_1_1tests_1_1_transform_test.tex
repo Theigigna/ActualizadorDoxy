@@ -1,0 +1,237 @@
+\hypertarget{classorg_1_1newdawn_1_1slick_1_1tests_1_1_transform_test}{}\section{org.\+newdawn.\+slick.\+tests.\+Transform\+Test Class Reference}
+\label{classorg_1_1newdawn_1_1slick_1_1tests_1_1_transform_test}\index{org.\+newdawn.\+slick.\+tests.\+Transform\+Test@{org.\+newdawn.\+slick.\+tests.\+Transform\+Test}}
+Inheritance diagram for org.\+newdawn.\+slick.\+tests.\+Transform\+Test\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.522012cm]{classorg_1_1newdawn_1_1slick_1_1tests_1_1_transform_test}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_transform_test_a9842c748eea04a509dd47a049c877d35}{Transform\+Test}} ()
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_transform_test_a02c6b90af96ba846d8b48b5f9d7783e8}{init}} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_game_container}{Game\+Container}} container)  throws Slick\+Exception 
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_transform_test_a928dd1a413227df47f44cf4d9ab05b98}{render}} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_game_container}{Game\+Container}} contiainer, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_graphics}{Graphics}} g)
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_transform_test_a314f8f1c057599f9af7c8036b28a4c3e}{update}} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_game_container}{Game\+Container}} container, int delta)
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_transform_test_af22d2326472f2119364c3bbe40ec02db}{key\+Pressed}} (int key, char c)
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_transform_test_a418cf1065d117540939795dff77a226c}{key\+Released}} (int key, char c)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_transform_test_a3c04f73037a551e84f971fa0511d13ff}{main}} (String\mbox{[}$\,$\mbox{]} argv)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+float \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_transform_test_a3f9bd311b4aed7f2b69dac1f422e1547}{scale}} = 1
+\item 
+boolean \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_transform_test_aae392ece0303e93157331a226863f789}{scale\+Up}}
+\item 
+boolean \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_transform_test_a3f3abdb195eb3e8d3f94035370279110}{scale\+Down}}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+A test for transforming the graphics context
+
+\begin{DoxyAuthor}{Author}
+kevin 
+\end{DoxyAuthor}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tests_1_1_transform_test_a9842c748eea04a509dd47a049c877d35}\label{classorg_1_1newdawn_1_1slick_1_1tests_1_1_transform_test_a9842c748eea04a509dd47a049c877d35}} 
+\index{org\+::newdawn\+::slick\+::tests\+::\+Transform\+Test@{org\+::newdawn\+::slick\+::tests\+::\+Transform\+Test}!Transform\+Test@{Transform\+Test}}
+\index{Transform\+Test@{Transform\+Test}!org\+::newdawn\+::slick\+::tests\+::\+Transform\+Test@{org\+::newdawn\+::slick\+::tests\+::\+Transform\+Test}}
+\subsubsection{\texorpdfstring{Transform\+Test()}{TransformTest()}}
+{\footnotesize\ttfamily org.\+newdawn.\+slick.\+tests.\+Transform\+Test.\+Transform\+Test (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Create a new test of graphics context rendering 
+\begin{DoxyCode}
+27                            \{
+28         super(\textcolor{stringliteral}{"Transform Test"});
+29     \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tests_1_1_transform_test_a02c6b90af96ba846d8b48b5f9d7783e8}\label{classorg_1_1newdawn_1_1slick_1_1tests_1_1_transform_test_a02c6b90af96ba846d8b48b5f9d7783e8}} 
+\index{org\+::newdawn\+::slick\+::tests\+::\+Transform\+Test@{org\+::newdawn\+::slick\+::tests\+::\+Transform\+Test}!init@{init}}
+\index{init@{init}!org\+::newdawn\+::slick\+::tests\+::\+Transform\+Test@{org\+::newdawn\+::slick\+::tests\+::\+Transform\+Test}}
+\subsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+tests.\+Transform\+Test.\+init (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_game_container}{Game\+Container}}}]{container }\end{DoxyParamCaption}) throws \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_slick_exception}{Slick\+Exception}}\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_basic_game_a8af0900217e4d389249f71367b22d114}{org.\+newdawn.\+slick.\+Basic\+Game\+::init}}(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_game_container}{org.\+newdawn.\+slick.\+Game\+Container}}) 
+\end{DoxySeeAlso}
+
+
+Implements \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1_game_ad2dd6affab08bb8fdb5fab0815957b7a}{org.\+newdawn.\+slick.\+Game}}.
+
+
+\begin{DoxyCode}
+34                                                                     \{
+35         container.setTargetFrameRate(100);
+36     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tests_1_1_transform_test_af22d2326472f2119364c3bbe40ec02db}\label{classorg_1_1newdawn_1_1slick_1_1tests_1_1_transform_test_af22d2326472f2119364c3bbe40ec02db}} 
+\index{org\+::newdawn\+::slick\+::tests\+::\+Transform\+Test@{org\+::newdawn\+::slick\+::tests\+::\+Transform\+Test}!key\+Pressed@{key\+Pressed}}
+\index{key\+Pressed@{key\+Pressed}!org\+::newdawn\+::slick\+::tests\+::\+Transform\+Test@{org\+::newdawn\+::slick\+::tests\+::\+Transform\+Test}}
+\subsubsection{\texorpdfstring{key\+Pressed()}{keyPressed()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+tests.\+Transform\+Test.\+key\+Pressed (\begin{DoxyParamCaption}\item[{int}]{key,  }\item[{char}]{c }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_basic_game_a4fbb3345b5abf5ddd54a99466d07f02f}{org.\+newdawn.\+slick.\+Basic\+Game\+::key\+Pressed(int, char)}} 
+\end{DoxySeeAlso}
+
+
+Implements \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1_key_listener_ac0b0568a21ef486c4f51382614c196ef}{org.\+newdawn.\+slick.\+Key\+Listener}}.
+
+
+\begin{DoxyCode}
+73                                             \{
+74         \textcolor{keywordflow}{if} (key == Input.KEY\_ESCAPE) \{
+75             System.exit(0);
+76         \}
+77         \textcolor{keywordflow}{if} (key == Input.KEY\_Q) \{
+78             \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_transform_test_aae392ece0303e93157331a226863f789}{scaleUp}} = \textcolor{keyword}{true};
+79         \}
+80         \textcolor{keywordflow}{if} (key == Input.KEY\_A) \{
+81             \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_transform_test_a3f3abdb195eb3e8d3f94035370279110}{scaleDown}} = \textcolor{keyword}{true};
+82         \}
+83     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tests_1_1_transform_test_a418cf1065d117540939795dff77a226c}\label{classorg_1_1newdawn_1_1slick_1_1tests_1_1_transform_test_a418cf1065d117540939795dff77a226c}} 
+\index{org\+::newdawn\+::slick\+::tests\+::\+Transform\+Test@{org\+::newdawn\+::slick\+::tests\+::\+Transform\+Test}!key\+Released@{key\+Released}}
+\index{key\+Released@{key\+Released}!org\+::newdawn\+::slick\+::tests\+::\+Transform\+Test@{org\+::newdawn\+::slick\+::tests\+::\+Transform\+Test}}
+\subsubsection{\texorpdfstring{key\+Released()}{keyReleased()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+tests.\+Transform\+Test.\+key\+Released (\begin{DoxyParamCaption}\item[{int}]{key,  }\item[{char}]{c }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_basic_game_ae8ce436f93206f0b251a0fbf2a345849}{org.\+newdawn.\+slick.\+Basic\+Game\+::key\+Released(int, char)}} 
+\end{DoxySeeAlso}
+
+
+Implements \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1_key_listener_a474673b59bc77266bcef3c261c26ee2b}{org.\+newdawn.\+slick.\+Key\+Listener}}.
+
+
+\begin{DoxyCode}
+88                                              \{
+89         \textcolor{keywordflow}{if} (key == Input.KEY\_Q) \{
+90             \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_transform_test_aae392ece0303e93157331a226863f789}{scaleUp}} = \textcolor{keyword}{false};
+91         \}
+92         \textcolor{keywordflow}{if} (key == Input.KEY\_A) \{
+93             \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_transform_test_a3f3abdb195eb3e8d3f94035370279110}{scaleDown}} = \textcolor{keyword}{false};
+94         \}
+95     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tests_1_1_transform_test_a3c04f73037a551e84f971fa0511d13ff}\label{classorg_1_1newdawn_1_1slick_1_1tests_1_1_transform_test_a3c04f73037a551e84f971fa0511d13ff}} 
+\index{org\+::newdawn\+::slick\+::tests\+::\+Transform\+Test@{org\+::newdawn\+::slick\+::tests\+::\+Transform\+Test}!main@{main}}
+\index{main@{main}!org\+::newdawn\+::slick\+::tests\+::\+Transform\+Test@{org\+::newdawn\+::slick\+::tests\+::\+Transform\+Test}}
+\subsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily static void org.\+newdawn.\+slick.\+tests.\+Transform\+Test.\+main (\begin{DoxyParamCaption}\item[{String \mbox{[}$\,$\mbox{]}}]{argv }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Entry point to our test
+
+
+\begin{DoxyParams}{Parameters}
+{\em argv} & The arguments passed to the test \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+102                                            \{
+103         \textcolor{keywordflow}{try} \{
+104             AppGameContainer container = \textcolor{keyword}{new} AppGameContainer(\textcolor{keyword}{new} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_transform_test_a9842c748eea04a509dd47a049c877d35}{TransformTest}}());
+105             container.setDisplayMode(640,480,\textcolor{keyword}{false});
+106             container.start();
+107         \} \textcolor{keywordflow}{catch} (SlickException e) \{
+108             e.printStackTrace();
+109         \}
+110     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tests_1_1_transform_test_a928dd1a413227df47f44cf4d9ab05b98}\label{classorg_1_1newdawn_1_1slick_1_1tests_1_1_transform_test_a928dd1a413227df47f44cf4d9ab05b98}} 
+\index{org\+::newdawn\+::slick\+::tests\+::\+Transform\+Test@{org\+::newdawn\+::slick\+::tests\+::\+Transform\+Test}!render@{render}}
+\index{render@{render}!org\+::newdawn\+::slick\+::tests\+::\+Transform\+Test@{org\+::newdawn\+::slick\+::tests\+::\+Transform\+Test}}
+\subsubsection{\texorpdfstring{render()}{render()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+tests.\+Transform\+Test.\+render (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_game_container}{Game\+Container}}}]{contiainer,  }\item[{\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_graphics}{Graphics}}}]{g }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1_game_af1a4670d43eb3ba04dfcf55ab1975b64}{org.\+newdawn.\+slick.\+Basic\+Game\+::render}}(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_game_container}{org.\+newdawn.\+slick.\+Game\+Container}}, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_graphics}{org.\+newdawn.\+slick.\+Graphics}}) 
+\end{DoxySeeAlso}
+
+
+Implements \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1_game_af1a4670d43eb3ba04dfcf55ab1975b64}{org.\+newdawn.\+slick.\+Game}}.
+
+
+\begin{DoxyCode}
+41                                                              \{
+42         g.translate(320,240);
+43         g.scale(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_transform_test_a3f9bd311b4aed7f2b69dac1f422e1547}{scale}}, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_transform_test_a3f9bd311b4aed7f2b69dac1f422e1547}{scale}});
+44 
+45         g.setColor(Color.red);
+46         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} x=0;x<10;x++) \{
+47             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} y=0;y<10;y++) \{
+48                 g.fillRect(-500+(x*100), -500+(y*100), 80, 80);
+49             \}
+50         \}
+51         
+52         g.setColor(\textcolor{keyword}{new} Color(1,1,1,0.5f));
+53         g.fillRect(-320,-240,640,480);
+54         g.setColor(Color.white);
+55         g.drawRect(-320,-240,640,480);
+56     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tests_1_1_transform_test_a314f8f1c057599f9af7c8036b28a4c3e}\label{classorg_1_1newdawn_1_1slick_1_1tests_1_1_transform_test_a314f8f1c057599f9af7c8036b28a4c3e}} 
+\index{org\+::newdawn\+::slick\+::tests\+::\+Transform\+Test@{org\+::newdawn\+::slick\+::tests\+::\+Transform\+Test}!update@{update}}
+\index{update@{update}!org\+::newdawn\+::slick\+::tests\+::\+Transform\+Test@{org\+::newdawn\+::slick\+::tests\+::\+Transform\+Test}}
+\subsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+tests.\+Transform\+Test.\+update (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_game_container}{Game\+Container}}}]{container,  }\item[{int}]{delta }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_basic_game_acfe6fa05aef83bff1631af91a3e4bd20}{org.\+newdawn.\+slick.\+Basic\+Game\+::update}}(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_game_container}{org.\+newdawn.\+slick.\+Game\+Container}}, int) 
+\end{DoxySeeAlso}
+
+
+Implements \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1_game_ab07b2e9463ee4631620dde0de25bdee8}{org.\+newdawn.\+slick.\+Game}}.
+
+
+\begin{DoxyCode}
+61                                                            \{
+62         \textcolor{keywordflow}{if} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_transform_test_aae392ece0303e93157331a226863f789}{scaleUp}}) \{
+63             \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_transform_test_a3f9bd311b4aed7f2b69dac1f422e1547}{scale}} += delta * 0.001f;
+64         \}
+65         \textcolor{keywordflow}{if} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_transform_test_a3f3abdb195eb3e8d3f94035370279110}{scaleDown}}) \{
+66             \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_transform_test_a3f9bd311b4aed7f2b69dac1f422e1547}{scale}} -= delta * 0.001f;
+67         \}
+68     \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tests_1_1_transform_test_a3f9bd311b4aed7f2b69dac1f422e1547}\label{classorg_1_1newdawn_1_1slick_1_1tests_1_1_transform_test_a3f9bd311b4aed7f2b69dac1f422e1547}} 
+\index{org\+::newdawn\+::slick\+::tests\+::\+Transform\+Test@{org\+::newdawn\+::slick\+::tests\+::\+Transform\+Test}!scale@{scale}}
+\index{scale@{scale}!org\+::newdawn\+::slick\+::tests\+::\+Transform\+Test@{org\+::newdawn\+::slick\+::tests\+::\+Transform\+Test}}
+\subsubsection{\texorpdfstring{scale}{scale}}
+{\footnotesize\ttfamily float org.\+newdawn.\+slick.\+tests.\+Transform\+Test.\+scale = 1\hspace{0.3cm}{\ttfamily [private]}}
+
+The current scale applied to the graphics context \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tests_1_1_transform_test_a3f3abdb195eb3e8d3f94035370279110}\label{classorg_1_1newdawn_1_1slick_1_1tests_1_1_transform_test_a3f3abdb195eb3e8d3f94035370279110}} 
+\index{org\+::newdawn\+::slick\+::tests\+::\+Transform\+Test@{org\+::newdawn\+::slick\+::tests\+::\+Transform\+Test}!scale\+Down@{scale\+Down}}
+\index{scale\+Down@{scale\+Down}!org\+::newdawn\+::slick\+::tests\+::\+Transform\+Test@{org\+::newdawn\+::slick\+::tests\+::\+Transform\+Test}}
+\subsubsection{\texorpdfstring{scale\+Down}{scaleDown}}
+{\footnotesize\ttfamily boolean org.\+newdawn.\+slick.\+tests.\+Transform\+Test.\+scale\+Down\hspace{0.3cm}{\ttfamily [private]}}
+
+True if we should be scaling down \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tests_1_1_transform_test_aae392ece0303e93157331a226863f789}\label{classorg_1_1newdawn_1_1slick_1_1tests_1_1_transform_test_aae392ece0303e93157331a226863f789}} 
+\index{org\+::newdawn\+::slick\+::tests\+::\+Transform\+Test@{org\+::newdawn\+::slick\+::tests\+::\+Transform\+Test}!scale\+Up@{scale\+Up}}
+\index{scale\+Up@{scale\+Up}!org\+::newdawn\+::slick\+::tests\+::\+Transform\+Test@{org\+::newdawn\+::slick\+::tests\+::\+Transform\+Test}}
+\subsubsection{\texorpdfstring{scale\+Up}{scaleUp}}
+{\footnotesize\ttfamily boolean org.\+newdawn.\+slick.\+tests.\+Transform\+Test.\+scale\+Up\hspace{0.3cm}{\ttfamily [private]}}
+
+True if we should be scaling up 

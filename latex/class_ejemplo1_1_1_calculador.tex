@@ -1,0 +1,115 @@
+\hypertarget{class_ejemplo1_1_1_calculador}{}\section{Ejemplo1.\+Calculador Class Reference}
+\label{class_ejemplo1_1_1_calculador}\index{Ejemplo1.\+Calculador@{Ejemplo1.\+Calculador}}
+Inheritance diagram for Ejemplo1.\+Calculador\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_ejemplo1_1_1_calculador}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_ejemplo1_1_1_calculador_a80cde3ae5440c9a6cec72fe788f08f0c}{Calculador}} (int x, int y, \mbox{\hyperlink{class_ejemplo1_1_1_resultado}{Resultado}} \mbox{\hyperlink{class_ejemplo1_1_1_calculador_a630ab3c94b10e8ca0483b6ca6a6dc380}{r}})
+\item 
+void \mbox{\hyperlink{class_ejemplo1_1_1_calculador_ae4be53c009236802d18046f14b93d739}{run}} ()
+\end{DoxyCompactItemize}
+\subsection*{Package Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{class_ejemplo1_1_1_calculador_ae2bd37cb102b858db503e8b30c8f4ae6}{desde}}
+\item 
+int \mbox{\hyperlink{class_ejemplo1_1_1_calculador_ad47ad2af292db2c559a379ecc3e15f73}{hasta}}
+\item 
+\mbox{\hyperlink{class_ejemplo1_1_1_resultado}{Resultado}} \mbox{\hyperlink{class_ejemplo1_1_1_calculador_a630ab3c94b10e8ca0483b6ca6a6dc380}{r}}
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+boolean \mbox{\hyperlink{class_ejemplo1_1_1_calculador_ad9ecfddfb2d7350e2b30ff9bdc4cc97d}{es\+Primo}} (int n)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyAuthor}{Author}
+Ignacio 
+\end{DoxyAuthor}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_ejemplo1_1_1_calculador_a80cde3ae5440c9a6cec72fe788f08f0c}\label{class_ejemplo1_1_1_calculador_a80cde3ae5440c9a6cec72fe788f08f0c}} 
+\index{Ejemplo1\+::\+Calculador@{Ejemplo1\+::\+Calculador}!Calculador@{Calculador}}
+\index{Calculador@{Calculador}!Ejemplo1\+::\+Calculador@{Ejemplo1\+::\+Calculador}}
+\subsubsection{\texorpdfstring{Calculador()}{Calculador()}}
+{\footnotesize\ttfamily Ejemplo1.\+Calculador.\+Calculador (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y,  }\item[{\mbox{\hyperlink{class_ejemplo1_1_1_resultado}{Resultado}}}]{r }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+18     \{
+19         \mbox{\hyperlink{class_ejemplo1_1_1_calculador_ae2bd37cb102b858db503e8b30c8f4ae6}{desde}}=x;
+20         \mbox{\hyperlink{class_ejemplo1_1_1_calculador_ad47ad2af292db2c559a379ecc3e15f73}{hasta}}=y;
+21         this.\mbox{\hyperlink{class_ejemplo1_1_1_calculador_a630ab3c94b10e8ca0483b6ca6a6dc380}{r}}=\mbox{\hyperlink{class_ejemplo1_1_1_calculador_a630ab3c94b10e8ca0483b6ca6a6dc380}{r}};
+22     \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_ejemplo1_1_1_calculador_ad9ecfddfb2d7350e2b30ff9bdc4cc97d}\label{class_ejemplo1_1_1_calculador_ad9ecfddfb2d7350e2b30ff9bdc4cc97d}} 
+\index{Ejemplo1\+::\+Calculador@{Ejemplo1\+::\+Calculador}!es\+Primo@{es\+Primo}}
+\index{es\+Primo@{es\+Primo}!Ejemplo1\+::\+Calculador@{Ejemplo1\+::\+Calculador}}
+\subsubsection{\texorpdfstring{es\+Primo()}{esPrimo()}}
+{\footnotesize\ttfamily boolean Ejemplo1.\+Calculador.\+es\+Primo (\begin{DoxyParamCaption}\item[{int}]{n }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+\begin{DoxyCode}
+36     \{
+37         \textcolor{keywordtype}{int} raiz = (int) Math.sqrt((\textcolor{keywordtype}{double}) n);
+38         \textcolor{keywordtype}{boolean} primo = \textcolor{keyword}{true};
+39         \textcolor{keywordtype}{int} i=2;
+40         \textcolor{keywordflow}{while}(primo && i<=raiz)
+41         \{
+42             \textcolor{keywordflow}{if} (n % i == 0)
+43                 primo=\textcolor{keyword}{false};
+44             i++;
+45         \}
+46         \textcolor{keywordflow}{return} primo;
+47     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_ejemplo1_1_1_calculador_ae4be53c009236802d18046f14b93d739}\label{class_ejemplo1_1_1_calculador_ae4be53c009236802d18046f14b93d739}} 
+\index{Ejemplo1\+::\+Calculador@{Ejemplo1\+::\+Calculador}!run@{run}}
+\index{run@{run}!Ejemplo1\+::\+Calculador@{Ejemplo1\+::\+Calculador}}
+\subsubsection{\texorpdfstring{run()}{run()}}
+{\footnotesize\ttfamily void Ejemplo1.\+Calculador.\+run (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+25     \{
+26         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i=\mbox{\hyperlink{class_ejemplo1_1_1_calculador_ae2bd37cb102b858db503e8b30c8f4ae6}{desde}}; i<=\mbox{\hyperlink{class_ejemplo1_1_1_calculador_ad47ad2af292db2c559a379ecc3e15f73}{hasta}}; i++)
+27         \{
+28             \textcolor{keywordflow}{if}(\mbox{\hyperlink{class_ejemplo1_1_1_calculador_ad9ecfddfb2d7350e2b30ff9bdc4cc97d}{esPrimo}}(i))
+29             \{
+30                 \mbox{\hyperlink{class_ejemplo1_1_1_calculador_a630ab3c94b10e8ca0483b6ca6a6dc380}{r}}.\mbox{\hyperlink{class_ejemplo1_1_1_resultado_a2a8879e3a5c2d5e25191ec99fabe45e6}{sumar}}(i);
+31             \}
+32         \}
+33     \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_ejemplo1_1_1_calculador_ae2bd37cb102b858db503e8b30c8f4ae6}\label{class_ejemplo1_1_1_calculador_ae2bd37cb102b858db503e8b30c8f4ae6}} 
+\index{Ejemplo1\+::\+Calculador@{Ejemplo1\+::\+Calculador}!desde@{desde}}
+\index{desde@{desde}!Ejemplo1\+::\+Calculador@{Ejemplo1\+::\+Calculador}}
+\subsubsection{\texorpdfstring{desde}{desde}}
+{\footnotesize\ttfamily int Ejemplo1.\+Calculador.\+desde\hspace{0.3cm}{\ttfamily [package]}}
+
+\mbox{\Hypertarget{class_ejemplo1_1_1_calculador_ad47ad2af292db2c559a379ecc3e15f73}\label{class_ejemplo1_1_1_calculador_ad47ad2af292db2c559a379ecc3e15f73}} 
+\index{Ejemplo1\+::\+Calculador@{Ejemplo1\+::\+Calculador}!hasta@{hasta}}
+\index{hasta@{hasta}!Ejemplo1\+::\+Calculador@{Ejemplo1\+::\+Calculador}}
+\subsubsection{\texorpdfstring{hasta}{hasta}}
+{\footnotesize\ttfamily int Ejemplo1.\+Calculador.\+hasta\hspace{0.3cm}{\ttfamily [package]}}
+
+\mbox{\Hypertarget{class_ejemplo1_1_1_calculador_a630ab3c94b10e8ca0483b6ca6a6dc380}\label{class_ejemplo1_1_1_calculador_a630ab3c94b10e8ca0483b6ca6a6dc380}} 
+\index{Ejemplo1\+::\+Calculador@{Ejemplo1\+::\+Calculador}!r@{r}}
+\index{r@{r}!Ejemplo1\+::\+Calculador@{Ejemplo1\+::\+Calculador}}
+\subsubsection{\texorpdfstring{r}{r}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_ejemplo1_1_1_resultado}{Resultado}} Ejemplo1.\+Calculador.\+r\hspace{0.3cm}{\ttfamily [package]}}
+

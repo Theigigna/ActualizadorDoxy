@@ -1,0 +1,153 @@
+\hypertarget{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_1_1_group_object}{}\section{org.\+newdawn.\+slick.\+tiled.\+Tiled\+Map.\+Group\+Object Class Reference}
+\label{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_1_1_group_object}\index{org.\+newdawn.\+slick.\+tiled.\+Tiled\+Map.\+Group\+Object@{org.\+newdawn.\+slick.\+tiled.\+Tiled\+Map.\+Group\+Object}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_1_1_group_object_a6c56bc60351f83f1aba8a6b25bdefa0b}{Group\+Object}} (Element element)  throws Slick\+Exception 
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_1_1_group_object_a29e0a4d647a1aeff45512e34d2664260}{index}}
+\item 
+String \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_1_1_group_object_a647061794f0489797202fc8eab87203e}{name}}
+\item 
+String \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_1_1_group_object_a942a05d677b367df56b5ca6e2e914e81}{type}}
+\item 
+int \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_1_1_group_object_a0d11ce828b2e7773a4cc53ad06c20e4e}{x}}
+\item 
+int \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_1_1_group_object_a071873f26528e4962cfc4fdb552847fa}{y}}
+\item 
+int \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_1_1_group_object_ada43f94fe097ddcd8f21592cd4a1cb6b}{width}}
+\item 
+int \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_1_1_group_object_a4d0f25828c9cff534be4ee5c889d6230}{height}}
+\item 
+Properties \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_1_1_group_object_a63381a58364283a036c59d7f40c1b575}{props}}
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+String \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_1_1_group_object_a9a9480bd47b25ee7d59fd6ba5b242452}{image}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+An object from a object-\/group on the map
+
+\begin{DoxyAuthor}{Author}
+kulpae 
+\end{DoxyAuthor}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_1_1_group_object_a6c56bc60351f83f1aba8a6b25bdefa0b}\label{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_1_1_group_object_a6c56bc60351f83f1aba8a6b25bdefa0b}} 
+\index{org\+::newdawn\+::slick\+::tiled\+::\+Tiled\+Map\+::\+Group\+Object@{org\+::newdawn\+::slick\+::tiled\+::\+Tiled\+Map\+::\+Group\+Object}!Group\+Object@{Group\+Object}}
+\index{Group\+Object@{Group\+Object}!org\+::newdawn\+::slick\+::tiled\+::\+Tiled\+Map\+::\+Group\+Object@{org\+::newdawn\+::slick\+::tiled\+::\+Tiled\+Map\+::\+Group\+Object}}
+\subsubsection{\texorpdfstring{Group\+Object()}{GroupObject()}}
+{\footnotesize\ttfamily org.\+newdawn.\+slick.\+tiled.\+Tiled\+Map.\+Group\+Object.\+Group\+Object (\begin{DoxyParamCaption}\item[{Element}]{element }\end{DoxyParamCaption}) throws \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_slick_exception}{Slick\+Exception}}\hspace{0.3cm}{\ttfamily [inline]}}
+
+Create a new group based on the X\+ML definition
+
+
+\begin{DoxyParams}{Parameters}
+{\em element} & The X\+ML element describing the layer \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_slick_exception}{Slick\+Exception}}} & Indicates a failure to parse the X\+ML group \\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyCode}
+1074                                                                   \{
+1075             \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_1_1_group_object_a647061794f0489797202fc8eab87203e}{name}} = element.getAttribute(\textcolor{stringliteral}{"name"});
+1076             \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_1_1_group_object_a942a05d677b367df56b5ca6e2e914e81}{type}} = element.getAttribute(\textcolor{stringliteral}{"type"});
+1077             \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_1_1_group_object_a0d11ce828b2e7773a4cc53ad06c20e4e}{x}} = Integer.parseInt(element.getAttribute(\textcolor{stringliteral}{"x"}));
+1078             \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_1_1_group_object_a071873f26528e4962cfc4fdb552847fa}{y}} = Integer.parseInt(element.getAttribute(\textcolor{stringliteral}{"y"}));
+1079             \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_1_1_group_object_ada43f94fe097ddcd8f21592cd4a1cb6b}{width}} = Integer.parseInt(element.getAttribute(\textcolor{stringliteral}{"width"}));
+1080             \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_1_1_group_object_a4d0f25828c9cff534be4ee5c889d6230}{height}} = Integer.parseInt(element.getAttribute(\textcolor{stringliteral}{"height"}));
+1081 
+1082             Element imageElement = (Element) element.getElementsByTagName(
+1083                     \textcolor{stringliteral}{"image"}).item(0);
+1084             \textcolor{keywordflow}{if} (imageElement != null) \{
+1085                 \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_1_1_group_object_a9a9480bd47b25ee7d59fd6ba5b242452}{image}} = imageElement.getAttribute(\textcolor{stringliteral}{"source"});
+1086             \}
+1087 
+1088             \textcolor{comment}{// now read the layer properties}
+1089             Element propsElement = (Element) element.getElementsByTagName(
+1090                     \textcolor{stringliteral}{"properties"}).item(0);
+1091             \textcolor{keywordflow}{if} (propsElement != null) \{
+1092                 NodeList properties = propsElement
+1093                         .getElementsByTagName(\textcolor{stringliteral}{"property"});
+1094                 \textcolor{keywordflow}{if} (properties != null) \{
+1095                     \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_1_1_group_object_a63381a58364283a036c59d7f40c1b575}{props}} = \textcolor{keyword}{new} Properties();
+1096                     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} p = 0; p < properties.getLength(); p++) \{
+1097                         Element propElement = (Element) properties.item(p);
+1098 
+1099                         String \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_1_1_group_object_a647061794f0489797202fc8eab87203e}{name}} = propElement.getAttribute(\textcolor{stringliteral}{"name"});
+1100                         String value = propElement.getAttribute(\textcolor{stringliteral}{"value"});
+1101                         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_1_1_group_object_a63381a58364283a036c59d7f40c1b575}{props}}.setProperty(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_1_1_group_object_a647061794f0489797202fc8eab87203e}{name}}, value);
+1102                     \}
+1103                 \}
+1104             \}
+1105         \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_1_1_group_object_a4d0f25828c9cff534be4ee5c889d6230}\label{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_1_1_group_object_a4d0f25828c9cff534be4ee5c889d6230}} 
+\index{org\+::newdawn\+::slick\+::tiled\+::\+Tiled\+Map\+::\+Group\+Object@{org\+::newdawn\+::slick\+::tiled\+::\+Tiled\+Map\+::\+Group\+Object}!height@{height}}
+\index{height@{height}!org\+::newdawn\+::slick\+::tiled\+::\+Tiled\+Map\+::\+Group\+Object@{org\+::newdawn\+::slick\+::tiled\+::\+Tiled\+Map\+::\+Group\+Object}}
+\subsubsection{\texorpdfstring{height}{height}}
+{\footnotesize\ttfamily int org.\+newdawn.\+slick.\+tiled.\+Tiled\+Map.\+Group\+Object.\+height}
+
+The height of this object \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_1_1_group_object_a9a9480bd47b25ee7d59fd6ba5b242452}\label{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_1_1_group_object_a9a9480bd47b25ee7d59fd6ba5b242452}} 
+\index{org\+::newdawn\+::slick\+::tiled\+::\+Tiled\+Map\+::\+Group\+Object@{org\+::newdawn\+::slick\+::tiled\+::\+Tiled\+Map\+::\+Group\+Object}!image@{image}}
+\index{image@{image}!org\+::newdawn\+::slick\+::tiled\+::\+Tiled\+Map\+::\+Group\+Object@{org\+::newdawn\+::slick\+::tiled\+::\+Tiled\+Map\+::\+Group\+Object}}
+\subsubsection{\texorpdfstring{image}{image}}
+{\footnotesize\ttfamily String org.\+newdawn.\+slick.\+tiled.\+Tiled\+Map.\+Group\+Object.\+image\hspace{0.3cm}{\ttfamily [private]}}
+
+The image source \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_1_1_group_object_a29e0a4d647a1aeff45512e34d2664260}\label{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_1_1_group_object_a29e0a4d647a1aeff45512e34d2664260}} 
+\index{org\+::newdawn\+::slick\+::tiled\+::\+Tiled\+Map\+::\+Group\+Object@{org\+::newdawn\+::slick\+::tiled\+::\+Tiled\+Map\+::\+Group\+Object}!index@{index}}
+\index{index@{index}!org\+::newdawn\+::slick\+::tiled\+::\+Tiled\+Map\+::\+Group\+Object@{org\+::newdawn\+::slick\+::tiled\+::\+Tiled\+Map\+::\+Group\+Object}}
+\subsubsection{\texorpdfstring{index}{index}}
+{\footnotesize\ttfamily int org.\+newdawn.\+slick.\+tiled.\+Tiled\+Map.\+Group\+Object.\+index}
+
+The index of this object \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_1_1_group_object_a647061794f0489797202fc8eab87203e}\label{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_1_1_group_object_a647061794f0489797202fc8eab87203e}} 
+\index{org\+::newdawn\+::slick\+::tiled\+::\+Tiled\+Map\+::\+Group\+Object@{org\+::newdawn\+::slick\+::tiled\+::\+Tiled\+Map\+::\+Group\+Object}!name@{name}}
+\index{name@{name}!org\+::newdawn\+::slick\+::tiled\+::\+Tiled\+Map\+::\+Group\+Object@{org\+::newdawn\+::slick\+::tiled\+::\+Tiled\+Map\+::\+Group\+Object}}
+\subsubsection{\texorpdfstring{name}{name}}
+{\footnotesize\ttfamily String org.\+newdawn.\+slick.\+tiled.\+Tiled\+Map.\+Group\+Object.\+name}
+
+The name of this object -\/ read from the X\+ML \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_1_1_group_object_a63381a58364283a036c59d7f40c1b575}\label{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_1_1_group_object_a63381a58364283a036c59d7f40c1b575}} 
+\index{org\+::newdawn\+::slick\+::tiled\+::\+Tiled\+Map\+::\+Group\+Object@{org\+::newdawn\+::slick\+::tiled\+::\+Tiled\+Map\+::\+Group\+Object}!props@{props}}
+\index{props@{props}!org\+::newdawn\+::slick\+::tiled\+::\+Tiled\+Map\+::\+Group\+Object@{org\+::newdawn\+::slick\+::tiled\+::\+Tiled\+Map\+::\+Group\+Object}}
+\subsubsection{\texorpdfstring{props}{props}}
+{\footnotesize\ttfamily Properties org.\+newdawn.\+slick.\+tiled.\+Tiled\+Map.\+Group\+Object.\+props}
+
+the properties of this group \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_1_1_group_object_a942a05d677b367df56b5ca6e2e914e81}\label{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_1_1_group_object_a942a05d677b367df56b5ca6e2e914e81}} 
+\index{org\+::newdawn\+::slick\+::tiled\+::\+Tiled\+Map\+::\+Group\+Object@{org\+::newdawn\+::slick\+::tiled\+::\+Tiled\+Map\+::\+Group\+Object}!type@{type}}
+\index{type@{type}!org\+::newdawn\+::slick\+::tiled\+::\+Tiled\+Map\+::\+Group\+Object@{org\+::newdawn\+::slick\+::tiled\+::\+Tiled\+Map\+::\+Group\+Object}}
+\subsubsection{\texorpdfstring{type}{type}}
+{\footnotesize\ttfamily String org.\+newdawn.\+slick.\+tiled.\+Tiled\+Map.\+Group\+Object.\+type}
+
+The type of this object -\/ read from the X\+ML \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_1_1_group_object_ada43f94fe097ddcd8f21592cd4a1cb6b}\label{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_1_1_group_object_ada43f94fe097ddcd8f21592cd4a1cb6b}} 
+\index{org\+::newdawn\+::slick\+::tiled\+::\+Tiled\+Map\+::\+Group\+Object@{org\+::newdawn\+::slick\+::tiled\+::\+Tiled\+Map\+::\+Group\+Object}!width@{width}}
+\index{width@{width}!org\+::newdawn\+::slick\+::tiled\+::\+Tiled\+Map\+::\+Group\+Object@{org\+::newdawn\+::slick\+::tiled\+::\+Tiled\+Map\+::\+Group\+Object}}
+\subsubsection{\texorpdfstring{width}{width}}
+{\footnotesize\ttfamily int org.\+newdawn.\+slick.\+tiled.\+Tiled\+Map.\+Group\+Object.\+width}
+
+The width of this object \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_1_1_group_object_a0d11ce828b2e7773a4cc53ad06c20e4e}\label{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_1_1_group_object_a0d11ce828b2e7773a4cc53ad06c20e4e}} 
+\index{org\+::newdawn\+::slick\+::tiled\+::\+Tiled\+Map\+::\+Group\+Object@{org\+::newdawn\+::slick\+::tiled\+::\+Tiled\+Map\+::\+Group\+Object}!x@{x}}
+\index{x@{x}!org\+::newdawn\+::slick\+::tiled\+::\+Tiled\+Map\+::\+Group\+Object@{org\+::newdawn\+::slick\+::tiled\+::\+Tiled\+Map\+::\+Group\+Object}}
+\subsubsection{\texorpdfstring{x}{x}}
+{\footnotesize\ttfamily int org.\+newdawn.\+slick.\+tiled.\+Tiled\+Map.\+Group\+Object.\+x}
+
+The x-\/coordinate of this object \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_1_1_group_object_a071873f26528e4962cfc4fdb552847fa}\label{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_1_1_group_object_a071873f26528e4962cfc4fdb552847fa}} 
+\index{org\+::newdawn\+::slick\+::tiled\+::\+Tiled\+Map\+::\+Group\+Object@{org\+::newdawn\+::slick\+::tiled\+::\+Tiled\+Map\+::\+Group\+Object}!y@{y}}
+\index{y@{y}!org\+::newdawn\+::slick\+::tiled\+::\+Tiled\+Map\+::\+Group\+Object@{org\+::newdawn\+::slick\+::tiled\+::\+Tiled\+Map\+::\+Group\+Object}}
+\subsubsection{\texorpdfstring{y}{y}}
+{\footnotesize\ttfamily int org.\+newdawn.\+slick.\+tiled.\+Tiled\+Map.\+Group\+Object.\+y}
+
+The y-\/coordinate of this object 

@@ -1,0 +1,242 @@
+\hypertarget{classorg_1_1newdawn_1_1slick_1_1tests_1_1_input_provider_test}{}\section{org.\+newdawn.\+slick.\+tests.\+Input\+Provider\+Test Class Reference}
+\label{classorg_1_1newdawn_1_1slick_1_1tests_1_1_input_provider_test}\index{org.\+newdawn.\+slick.\+tests.\+Input\+Provider\+Test@{org.\+newdawn.\+slick.\+tests.\+Input\+Provider\+Test}}
+Inheritance diagram for org.\+newdawn.\+slick.\+tests.\+Input\+Provider\+Test\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.040174cm]{classorg_1_1newdawn_1_1slick_1_1tests_1_1_input_provider_test}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_input_provider_test_ac6ab40655e43c6a108007f014f4ee12a}{Input\+Provider\+Test}} ()
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_input_provider_test_a8ad5b9906f771a9d63e0a60df3993fcb}{init}} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_game_container}{Game\+Container}} container)  throws Slick\+Exception 
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_input_provider_test_a6b981fe1165f32a4c2d98179e693fc23}{render}} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_game_container}{Game\+Container}} container, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_graphics}{Graphics}} g)
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_input_provider_test_adda44b955459185b6cb6f61211f23b72}{update}} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_game_container}{Game\+Container}} container, int delta)
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_input_provider_test_a5f5dd215fc34d2df28f71d4739fd9c81}{control\+Pressed}} (\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1command_1_1_command}{Command}} command)
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_input_provider_test_a68bf86e0de9df06f1a129faa2337a662}{control\+Released}} (\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1command_1_1_command}{Command}} command)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_input_provider_test_a7771e32ff42ae4161c6f1eaffdb2efb9}{main}} (String\mbox{[}$\,$\mbox{]} argv)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1command_1_1_command}{Command}} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_input_provider_test_a8a624395dae059c0cfaab284f7d69eda}{attack}} = new \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1command_1_1_basic_command}{Basic\+Command}}(\char`\"{}attack\char`\"{})
+\item 
+\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1command_1_1_command}{Command}} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_input_provider_test_a173ff3b9a22623008ac6eea7d6ab07a3}{jump}} = new \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1command_1_1_basic_command}{Basic\+Command}}(\char`\"{}jump\char`\"{})
+\item 
+\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1command_1_1_command}{Command}} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_input_provider_test_aaa8a5641456fb2963ab865f7d761eb38}{run}} = new \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1command_1_1_basic_command}{Basic\+Command}}(\char`\"{}run\char`\"{})
+\item 
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1command_1_1_input_provider}{Input\+Provider}} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_input_provider_test_a7249d16e0b69f5ee309e1da3c059ceef}{provider}}
+\item 
+String \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_input_provider_test_a730fb6709b68daac2561204c3ab0e7fc}{message}} = \char`\"{}\char`\"{}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+A test for abstract input via Input\+Provider
+
+\begin{DoxyAuthor}{Author}
+kevin 
+\end{DoxyAuthor}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tests_1_1_input_provider_test_ac6ab40655e43c6a108007f014f4ee12a}\label{classorg_1_1newdawn_1_1slick_1_1tests_1_1_input_provider_test_ac6ab40655e43c6a108007f014f4ee12a}} 
+\index{org\+::newdawn\+::slick\+::tests\+::\+Input\+Provider\+Test@{org\+::newdawn\+::slick\+::tests\+::\+Input\+Provider\+Test}!Input\+Provider\+Test@{Input\+Provider\+Test}}
+\index{Input\+Provider\+Test@{Input\+Provider\+Test}!org\+::newdawn\+::slick\+::tests\+::\+Input\+Provider\+Test@{org\+::newdawn\+::slick\+::tests\+::\+Input\+Provider\+Test}}
+\subsubsection{\texorpdfstring{Input\+Provider\+Test()}{InputProviderTest()}}
+{\footnotesize\ttfamily org.\+newdawn.\+slick.\+tests.\+Input\+Provider\+Test.\+Input\+Provider\+Test (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Create a new image rendering test 
+\begin{DoxyCode}
+38                                \{
+39         super(\textcolor{stringliteral}{"InputProvider Test"});
+40     \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tests_1_1_input_provider_test_a5f5dd215fc34d2df28f71d4739fd9c81}\label{classorg_1_1newdawn_1_1slick_1_1tests_1_1_input_provider_test_a5f5dd215fc34d2df28f71d4739fd9c81}} 
+\index{org\+::newdawn\+::slick\+::tests\+::\+Input\+Provider\+Test@{org\+::newdawn\+::slick\+::tests\+::\+Input\+Provider\+Test}!control\+Pressed@{control\+Pressed}}
+\index{control\+Pressed@{control\+Pressed}!org\+::newdawn\+::slick\+::tests\+::\+Input\+Provider\+Test@{org\+::newdawn\+::slick\+::tests\+::\+Input\+Provider\+Test}}
+\subsubsection{\texorpdfstring{control\+Pressed()}{controlPressed()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+tests.\+Input\+Provider\+Test.\+control\+Pressed (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1command_1_1_command}{Command}}}]{command }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1command_1_1_input_provider_listener_a6c01290edae31f20d1577ffa7e0c3907}{org.\+newdawn.\+slick.\+command.\+Input\+Provider\+Listener\+::control\+Pressed}}(\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1command_1_1_command}{org.\+newdawn.\+slick.\+command.\+Command}}) 
+\end{DoxySeeAlso}
+
+
+Implements \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1command_1_1_input_provider_listener_a6c01290edae31f20d1577ffa7e0c3907}{org.\+newdawn.\+slick.\+command.\+Input\+Provider\+Listener}}.
+
+
+\begin{DoxyCode}
+77                                                 \{
+78         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_input_provider_test_a730fb6709b68daac2561204c3ab0e7fc}{message}} = \textcolor{stringliteral}{"Pressed: "}+command;
+79     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tests_1_1_input_provider_test_a68bf86e0de9df06f1a129faa2337a662}\label{classorg_1_1newdawn_1_1slick_1_1tests_1_1_input_provider_test_a68bf86e0de9df06f1a129faa2337a662}} 
+\index{org\+::newdawn\+::slick\+::tests\+::\+Input\+Provider\+Test@{org\+::newdawn\+::slick\+::tests\+::\+Input\+Provider\+Test}!control\+Released@{control\+Released}}
+\index{control\+Released@{control\+Released}!org\+::newdawn\+::slick\+::tests\+::\+Input\+Provider\+Test@{org\+::newdawn\+::slick\+::tests\+::\+Input\+Provider\+Test}}
+\subsubsection{\texorpdfstring{control\+Released()}{controlReleased()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+tests.\+Input\+Provider\+Test.\+control\+Released (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1command_1_1_command}{Command}}}]{command }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1command_1_1_input_provider_listener_a28d87cd5fecc65f097e2034abe58bc7a}{org.\+newdawn.\+slick.\+command.\+Input\+Provider\+Listener\+::control\+Released}}(\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1command_1_1_command}{org.\+newdawn.\+slick.\+command.\+Command}}) 
+\end{DoxySeeAlso}
+
+
+Implements \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1command_1_1_input_provider_listener_a28d87cd5fecc65f097e2034abe58bc7a}{org.\+newdawn.\+slick.\+command.\+Input\+Provider\+Listener}}.
+
+
+\begin{DoxyCode}
+84                                                  \{
+85         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_input_provider_test_a730fb6709b68daac2561204c3ab0e7fc}{message}} = \textcolor{stringliteral}{"Released: "}+command;
+86     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tests_1_1_input_provider_test_a8ad5b9906f771a9d63e0a60df3993fcb}\label{classorg_1_1newdawn_1_1slick_1_1tests_1_1_input_provider_test_a8ad5b9906f771a9d63e0a60df3993fcb}} 
+\index{org\+::newdawn\+::slick\+::tests\+::\+Input\+Provider\+Test@{org\+::newdawn\+::slick\+::tests\+::\+Input\+Provider\+Test}!init@{init}}
+\index{init@{init}!org\+::newdawn\+::slick\+::tests\+::\+Input\+Provider\+Test@{org\+::newdawn\+::slick\+::tests\+::\+Input\+Provider\+Test}}
+\subsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+tests.\+Input\+Provider\+Test.\+init (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_game_container}{Game\+Container}}}]{container }\end{DoxyParamCaption}) throws \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_slick_exception}{Slick\+Exception}}\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_basic_game_a8af0900217e4d389249f71367b22d114}{org.\+newdawn.\+slick.\+Basic\+Game\+::init}}(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_game_container}{org.\+newdawn.\+slick.\+Game\+Container}}) 
+\end{DoxySeeAlso}
+
+
+Implements \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1_game_ad2dd6affab08bb8fdb5fab0815957b7a}{org.\+newdawn.\+slick.\+Game}}.
+
+
+\begin{DoxyCode}
+45                                                                     \{
+46         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_input_provider_test_a7249d16e0b69f5ee309e1da3c059ceef}{provider}} = \textcolor{keyword}{new} InputProvider(container.getInput());
+47         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_input_provider_test_a7249d16e0b69f5ee309e1da3c059ceef}{provider}}.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1command_1_1_input_provider_a1170cd03e9cb6062346408e77ddc686e}{addListener}}(\textcolor{keyword}{this});
+48         
+49         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_input_provider_test_a7249d16e0b69f5ee309e1da3c059ceef}{provider}}.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1command_1_1_input_provider_a3d2308c3affc346525025891e91845fc}{bindCommand}}(\textcolor{keyword}{new} KeyControl(Input.KEY\_LEFT), 
+      \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_input_provider_test_aaa8a5641456fb2963ab865f7d761eb38}{run}});
+50         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_input_provider_test_a7249d16e0b69f5ee309e1da3c059ceef}{provider}}.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1command_1_1_input_provider_a3d2308c3affc346525025891e91845fc}{bindCommand}}(\textcolor{keyword}{new} KeyControl(Input.KEY\_A), \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_input_provider_test_aaa8a5641456fb2963ab865f7d761eb38}{run}});
+51         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_input_provider_test_a7249d16e0b69f5ee309e1da3c059ceef}{provider}}.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1command_1_1_input_provider_a3d2308c3affc346525025891e91845fc}{bindCommand}}(\textcolor{keyword}{new} ControllerDirectionControl(0, 
+      ControllerDirectionControl.LEFT), \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_input_provider_test_aaa8a5641456fb2963ab865f7d761eb38}{run}});
+52         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_input_provider_test_a7249d16e0b69f5ee309e1da3c059ceef}{provider}}.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1command_1_1_input_provider_a3d2308c3affc346525025891e91845fc}{bindCommand}}(\textcolor{keyword}{new} KeyControl(Input.KEY\_UP), 
+      \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_input_provider_test_a173ff3b9a22623008ac6eea7d6ab07a3}{jump}});
+53         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_input_provider_test_a7249d16e0b69f5ee309e1da3c059ceef}{provider}}.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1command_1_1_input_provider_a3d2308c3affc346525025891e91845fc}{bindCommand}}(\textcolor{keyword}{new} KeyControl(Input.KEY\_W), 
+      \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_input_provider_test_a173ff3b9a22623008ac6eea7d6ab07a3}{jump}});
+54         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_input_provider_test_a7249d16e0b69f5ee309e1da3c059ceef}{provider}}.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1command_1_1_input_provider_a3d2308c3affc346525025891e91845fc}{bindCommand}}(\textcolor{keyword}{new} ControllerDirectionControl(0, 
+      ControllerDirectionControl.UP), \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_input_provider_test_a173ff3b9a22623008ac6eea7d6ab07a3}{jump}});
+55         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_input_provider_test_a7249d16e0b69f5ee309e1da3c059ceef}{provider}}.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1command_1_1_input_provider_a3d2308c3affc346525025891e91845fc}{bindCommand}}(\textcolor{keyword}{new} KeyControl(Input.KEY\_SPACE), 
+      \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_input_provider_test_a8a624395dae059c0cfaab284f7d69eda}{attack}});
+56         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_input_provider_test_a7249d16e0b69f5ee309e1da3c059ceef}{provider}}.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1command_1_1_input_provider_a3d2308c3affc346525025891e91845fc}{bindCommand}}(\textcolor{keyword}{new} MouseButtonControl(0), 
+      \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_input_provider_test_a8a624395dae059c0cfaab284f7d69eda}{attack}});
+57         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_input_provider_test_a7249d16e0b69f5ee309e1da3c059ceef}{provider}}.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1command_1_1_input_provider_a3d2308c3affc346525025891e91845fc}{bindCommand}}(\textcolor{keyword}{new} ControllerButtonControl(0, 1), 
+      \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_input_provider_test_a8a624395dae059c0cfaab284f7d69eda}{attack}});
+58     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tests_1_1_input_provider_test_a7771e32ff42ae4161c6f1eaffdb2efb9}\label{classorg_1_1newdawn_1_1slick_1_1tests_1_1_input_provider_test_a7771e32ff42ae4161c6f1eaffdb2efb9}} 
+\index{org\+::newdawn\+::slick\+::tests\+::\+Input\+Provider\+Test@{org\+::newdawn\+::slick\+::tests\+::\+Input\+Provider\+Test}!main@{main}}
+\index{main@{main}!org\+::newdawn\+::slick\+::tests\+::\+Input\+Provider\+Test@{org\+::newdawn\+::slick\+::tests\+::\+Input\+Provider\+Test}}
+\subsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily static void org.\+newdawn.\+slick.\+tests.\+Input\+Provider\+Test.\+main (\begin{DoxyParamCaption}\item[{String \mbox{[}$\,$\mbox{]}}]{argv }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Entry point to our test
+
+
+\begin{DoxyParams}{Parameters}
+{\em argv} & The arguments to pass into the test \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+93                                            \{
+94         \textcolor{keywordflow}{try} \{
+95             AppGameContainer container = \textcolor{keyword}{new} AppGameContainer(\textcolor{keyword}{new} 
+      \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_input_provider_test_ac6ab40655e43c6a108007f014f4ee12a}{InputProviderTest}}());
+96             container.setDisplayMode(800,600,\textcolor{keyword}{false});
+97             container.start();
+98         \} \textcolor{keywordflow}{catch} (SlickException e) \{
+99             e.printStackTrace();
+100         \}
+101     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tests_1_1_input_provider_test_a6b981fe1165f32a4c2d98179e693fc23}\label{classorg_1_1newdawn_1_1slick_1_1tests_1_1_input_provider_test_a6b981fe1165f32a4c2d98179e693fc23}} 
+\index{org\+::newdawn\+::slick\+::tests\+::\+Input\+Provider\+Test@{org\+::newdawn\+::slick\+::tests\+::\+Input\+Provider\+Test}!render@{render}}
+\index{render@{render}!org\+::newdawn\+::slick\+::tests\+::\+Input\+Provider\+Test@{org\+::newdawn\+::slick\+::tests\+::\+Input\+Provider\+Test}}
+\subsubsection{\texorpdfstring{render()}{render()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+tests.\+Input\+Provider\+Test.\+render (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_game_container}{Game\+Container}}}]{container,  }\item[{\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_graphics}{Graphics}}}]{g }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1_game_af1a4670d43eb3ba04dfcf55ab1975b64}{org.\+newdawn.\+slick.\+Basic\+Game\+::render}}(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_game_container}{org.\+newdawn.\+slick.\+Game\+Container}}, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_graphics}{org.\+newdawn.\+slick.\+Graphics}}) 
+\end{DoxySeeAlso}
+
+
+Implements \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1_game_af1a4670d43eb3ba04dfcf55ab1975b64}{org.\+newdawn.\+slick.\+Game}}.
+
+
+\begin{DoxyCode}
+63                                                             \{
+64         g.drawString(\textcolor{stringliteral}{"Press A, W, Left, Up, space, mouse button 1,and gamepad controls"},10,50);
+65         g.drawString(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_input_provider_test_a730fb6709b68daac2561204c3ab0e7fc}{message}},100,150);
+66     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tests_1_1_input_provider_test_adda44b955459185b6cb6f61211f23b72}\label{classorg_1_1newdawn_1_1slick_1_1tests_1_1_input_provider_test_adda44b955459185b6cb6f61211f23b72}} 
+\index{org\+::newdawn\+::slick\+::tests\+::\+Input\+Provider\+Test@{org\+::newdawn\+::slick\+::tests\+::\+Input\+Provider\+Test}!update@{update}}
+\index{update@{update}!org\+::newdawn\+::slick\+::tests\+::\+Input\+Provider\+Test@{org\+::newdawn\+::slick\+::tests\+::\+Input\+Provider\+Test}}
+\subsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+tests.\+Input\+Provider\+Test.\+update (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_game_container}{Game\+Container}}}]{container,  }\item[{int}]{delta }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_basic_game_acfe6fa05aef83bff1631af91a3e4bd20}{org.\+newdawn.\+slick.\+Basic\+Game\+::update}}(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_game_container}{org.\+newdawn.\+slick.\+Game\+Container}}, int) 
+\end{DoxySeeAlso}
+
+
+Implements \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1_game_ab07b2e9463ee4631620dde0de25bdee8}{org.\+newdawn.\+slick.\+Game}}.
+
+
+\begin{DoxyCode}
+71                                                            \{
+72     \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tests_1_1_input_provider_test_a8a624395dae059c0cfaab284f7d69eda}\label{classorg_1_1newdawn_1_1slick_1_1tests_1_1_input_provider_test_a8a624395dae059c0cfaab284f7d69eda}} 
+\index{org\+::newdawn\+::slick\+::tests\+::\+Input\+Provider\+Test@{org\+::newdawn\+::slick\+::tests\+::\+Input\+Provider\+Test}!attack@{attack}}
+\index{attack@{attack}!org\+::newdawn\+::slick\+::tests\+::\+Input\+Provider\+Test@{org\+::newdawn\+::slick\+::tests\+::\+Input\+Provider\+Test}}
+\subsubsection{\texorpdfstring{attack}{attack}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1command_1_1_command}{Command}} org.\+newdawn.\+slick.\+tests.\+Input\+Provider\+Test.\+attack = new \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1command_1_1_basic_command}{Basic\+Command}}(\char`\"{}attack\char`\"{})\hspace{0.3cm}{\ttfamily [private]}}
+
+The command for attack \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tests_1_1_input_provider_test_a173ff3b9a22623008ac6eea7d6ab07a3}\label{classorg_1_1newdawn_1_1slick_1_1tests_1_1_input_provider_test_a173ff3b9a22623008ac6eea7d6ab07a3}} 
+\index{org\+::newdawn\+::slick\+::tests\+::\+Input\+Provider\+Test@{org\+::newdawn\+::slick\+::tests\+::\+Input\+Provider\+Test}!jump@{jump}}
+\index{jump@{jump}!org\+::newdawn\+::slick\+::tests\+::\+Input\+Provider\+Test@{org\+::newdawn\+::slick\+::tests\+::\+Input\+Provider\+Test}}
+\subsubsection{\texorpdfstring{jump}{jump}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1command_1_1_command}{Command}} org.\+newdawn.\+slick.\+tests.\+Input\+Provider\+Test.\+jump = new \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1command_1_1_basic_command}{Basic\+Command}}(\char`\"{}jump\char`\"{})\hspace{0.3cm}{\ttfamily [private]}}
+
+The command for jump \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tests_1_1_input_provider_test_a730fb6709b68daac2561204c3ab0e7fc}\label{classorg_1_1newdawn_1_1slick_1_1tests_1_1_input_provider_test_a730fb6709b68daac2561204c3ab0e7fc}} 
+\index{org\+::newdawn\+::slick\+::tests\+::\+Input\+Provider\+Test@{org\+::newdawn\+::slick\+::tests\+::\+Input\+Provider\+Test}!message@{message}}
+\index{message@{message}!org\+::newdawn\+::slick\+::tests\+::\+Input\+Provider\+Test@{org\+::newdawn\+::slick\+::tests\+::\+Input\+Provider\+Test}}
+\subsubsection{\texorpdfstring{message}{message}}
+{\footnotesize\ttfamily String org.\+newdawn.\+slick.\+tests.\+Input\+Provider\+Test.\+message = \char`\"{}\char`\"{}\hspace{0.3cm}{\ttfamily [private]}}
+
+The message to be displayed \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tests_1_1_input_provider_test_a7249d16e0b69f5ee309e1da3c059ceef}\label{classorg_1_1newdawn_1_1slick_1_1tests_1_1_input_provider_test_a7249d16e0b69f5ee309e1da3c059ceef}} 
+\index{org\+::newdawn\+::slick\+::tests\+::\+Input\+Provider\+Test@{org\+::newdawn\+::slick\+::tests\+::\+Input\+Provider\+Test}!provider@{provider}}
+\index{provider@{provider}!org\+::newdawn\+::slick\+::tests\+::\+Input\+Provider\+Test@{org\+::newdawn\+::slick\+::tests\+::\+Input\+Provider\+Test}}
+\subsubsection{\texorpdfstring{provider}{provider}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1command_1_1_input_provider}{Input\+Provider}} org.\+newdawn.\+slick.\+tests.\+Input\+Provider\+Test.\+provider\hspace{0.3cm}{\ttfamily [private]}}
+
+The input provider abstracting input \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tests_1_1_input_provider_test_aaa8a5641456fb2963ab865f7d761eb38}\label{classorg_1_1newdawn_1_1slick_1_1tests_1_1_input_provider_test_aaa8a5641456fb2963ab865f7d761eb38}} 
+\index{org\+::newdawn\+::slick\+::tests\+::\+Input\+Provider\+Test@{org\+::newdawn\+::slick\+::tests\+::\+Input\+Provider\+Test}!run@{run}}
+\index{run@{run}!org\+::newdawn\+::slick\+::tests\+::\+Input\+Provider\+Test@{org\+::newdawn\+::slick\+::tests\+::\+Input\+Provider\+Test}}
+\subsubsection{\texorpdfstring{run}{run}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1command_1_1_command}{Command}} org.\+newdawn.\+slick.\+tests.\+Input\+Provider\+Test.\+run = new \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1command_1_1_basic_command}{Basic\+Command}}(\char`\"{}run\char`\"{})\hspace{0.3cm}{\ttfamily [private]}}
+
+The command for jump 

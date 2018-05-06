@@ -1,0 +1,114 @@
+\hypertarget{classitems_1_1_potion}{}\section{items.\+Potion Class Reference}
+\label{classitems_1_1_potion}\index{items.\+Potion@{items.\+Potion}}
+Inheritance diagram for items.\+Potion\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classitems_1_1_potion}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classitems_1_1_potion_ab2a46630762ff8d852c72333029252e5}{Potion}} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_image}{Image}} \mbox{\hyperlink{classitems_1_1_item_afa445ad011d48c3455b0c04bec2581f9}{icon}}, String \mbox{\hyperlink{classitems_1_1_item_a086327df1ba046bbbe3fa2f753226d73}{name}}, int \mbox{\hyperlink{classitems_1_1_potion_a9f9bc89fd8dfdadc0fa0101b725c524e}{type}})
+\item 
+int \mbox{\hyperlink{classitems_1_1_potion_a6c04f56c990c3782b5786252bb73545e}{get\+Type}} ()
+\item 
+void \mbox{\hyperlink{classitems_1_1_potion_a33ab3390826ef43ddfa94fc812e53afe}{eat}} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static final int \mbox{\hyperlink{classitems_1_1_potion_ac52a6d60f2a804077f3850d4e3d18134}{D\+A\+M\+A\+G\+E\+\_\+\+T\+Y\+PE}} =0
+\item 
+static final int \mbox{\hyperlink{classitems_1_1_potion_ad061a8ede39b64c807666a1bdab25ad8}{H\+E\+A\+L\+T\+H\+\_\+\+T\+Y\+PE}} =1
+\item 
+static final int \mbox{\hyperlink{classitems_1_1_potion_a619c80930d2ccb61d07ed13da3ee475b}{S\+P\+E\+E\+D\+\_\+\+T\+Y\+PE}} =2
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_sound}{Sound}} \mbox{\hyperlink{classitems_1_1_potion_a4f366c06faf54019df1c647f470b4f66}{glup}}
+\item 
+int \mbox{\hyperlink{classitems_1_1_potion_a9f9bc89fd8dfdadc0fa0101b725c524e}{type}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classitems_1_1_potion_ab2a46630762ff8d852c72333029252e5}\label{classitems_1_1_potion_ab2a46630762ff8d852c72333029252e5}} 
+\index{items\+::\+Potion@{items\+::\+Potion}!Potion@{Potion}}
+\index{Potion@{Potion}!items\+::\+Potion@{items\+::\+Potion}}
+\subsubsection{\texorpdfstring{Potion()}{Potion()}}
+{\footnotesize\ttfamily items.\+Potion.\+Potion (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_image}{Image}}}]{icon,  }\item[{String}]{name,  }\item[{int}]{type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+22                                                     \{
+23         super(\mbox{\hyperlink{classitems_1_1_item_afa445ad011d48c3455b0c04bec2581f9}{icon}}, \mbox{\hyperlink{classitems_1_1_item_a086327df1ba046bbbe3fa2f753226d73}{name}});
+24         this.\mbox{\hyperlink{classitems_1_1_potion_a9f9bc89fd8dfdadc0fa0101b725c524e}{type}} = \mbox{\hyperlink{classitems_1_1_potion_a9f9bc89fd8dfdadc0fa0101b725c524e}{type}};
+25         \textcolor{keywordflow}{try} \{
+26             \mbox{\hyperlink{classitems_1_1_potion_a4f366c06faf54019df1c647f470b4f66}{glup}}=\textcolor{keyword}{new} Sound(\textcolor{stringliteral}{"res/sonido/trago.wav"});
+27         \} \textcolor{keywordflow}{catch} (SlickException ex) \{
+28             Logger.getLogger(\mbox{\hyperlink{classitems_1_1_potion_ab2a46630762ff8d852c72333029252e5}{Potion}}.class.getName()).log(Level.SEVERE, null, ex);
+29         \}
+30     \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classitems_1_1_potion_a33ab3390826ef43ddfa94fc812e53afe}\label{classitems_1_1_potion_a33ab3390826ef43ddfa94fc812e53afe}} 
+\index{items\+::\+Potion@{items\+::\+Potion}!eat@{eat}}
+\index{eat@{eat}!items\+::\+Potion@{items\+::\+Potion}}
+\subsubsection{\texorpdfstring{eat()}{eat()}}
+{\footnotesize\ttfamily void items.\+Potion.\+eat (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+37                      \{
+38         \mbox{\hyperlink{classitems_1_1_potion_a4f366c06faf54019df1c647f470b4f66}{glup}}.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_sound_aed5db39a69e8ed57eb14053f7588ab90}{play}}();
+39     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classitems_1_1_potion_a6c04f56c990c3782b5786252bb73545e}\label{classitems_1_1_potion_a6c04f56c990c3782b5786252bb73545e}} 
+\index{items\+::\+Potion@{items\+::\+Potion}!get\+Type@{get\+Type}}
+\index{get\+Type@{get\+Type}!items\+::\+Potion@{items\+::\+Potion}}
+\subsubsection{\texorpdfstring{get\+Type()}{getType()}}
+{\footnotesize\ttfamily int items.\+Potion.\+get\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+33     \{
+34         \textcolor{keywordflow}{return} \mbox{\hyperlink{classitems_1_1_potion_a9f9bc89fd8dfdadc0fa0101b725c524e}{type}};
+35     \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classitems_1_1_potion_ac52a6d60f2a804077f3850d4e3d18134}\label{classitems_1_1_potion_ac52a6d60f2a804077f3850d4e3d18134}} 
+\index{items\+::\+Potion@{items\+::\+Potion}!D\+A\+M\+A\+G\+E\+\_\+\+T\+Y\+PE@{D\+A\+M\+A\+G\+E\+\_\+\+T\+Y\+PE}}
+\index{D\+A\+M\+A\+G\+E\+\_\+\+T\+Y\+PE@{D\+A\+M\+A\+G\+E\+\_\+\+T\+Y\+PE}!items\+::\+Potion@{items\+::\+Potion}}
+\subsubsection{\texorpdfstring{D\+A\+M\+A\+G\+E\+\_\+\+T\+Y\+PE}{DAMAGE\_TYPE}}
+{\footnotesize\ttfamily final int items.\+Potion.\+D\+A\+M\+A\+G\+E\+\_\+\+T\+Y\+PE =0\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classitems_1_1_potion_a4f366c06faf54019df1c647f470b4f66}\label{classitems_1_1_potion_a4f366c06faf54019df1c647f470b4f66}} 
+\index{items\+::\+Potion@{items\+::\+Potion}!glup@{glup}}
+\index{glup@{glup}!items\+::\+Potion@{items\+::\+Potion}}
+\subsubsection{\texorpdfstring{glup}{glup}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_sound}{Sound}} items.\+Potion.\+glup\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classitems_1_1_potion_ad061a8ede39b64c807666a1bdab25ad8}\label{classitems_1_1_potion_ad061a8ede39b64c807666a1bdab25ad8}} 
+\index{items\+::\+Potion@{items\+::\+Potion}!H\+E\+A\+L\+T\+H\+\_\+\+T\+Y\+PE@{H\+E\+A\+L\+T\+H\+\_\+\+T\+Y\+PE}}
+\index{H\+E\+A\+L\+T\+H\+\_\+\+T\+Y\+PE@{H\+E\+A\+L\+T\+H\+\_\+\+T\+Y\+PE}!items\+::\+Potion@{items\+::\+Potion}}
+\subsubsection{\texorpdfstring{H\+E\+A\+L\+T\+H\+\_\+\+T\+Y\+PE}{HEALTH\_TYPE}}
+{\footnotesize\ttfamily final int items.\+Potion.\+H\+E\+A\+L\+T\+H\+\_\+\+T\+Y\+PE =1\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classitems_1_1_potion_a619c80930d2ccb61d07ed13da3ee475b}\label{classitems_1_1_potion_a619c80930d2ccb61d07ed13da3ee475b}} 
+\index{items\+::\+Potion@{items\+::\+Potion}!S\+P\+E\+E\+D\+\_\+\+T\+Y\+PE@{S\+P\+E\+E\+D\+\_\+\+T\+Y\+PE}}
+\index{S\+P\+E\+E\+D\+\_\+\+T\+Y\+PE@{S\+P\+E\+E\+D\+\_\+\+T\+Y\+PE}!items\+::\+Potion@{items\+::\+Potion}}
+\subsubsection{\texorpdfstring{S\+P\+E\+E\+D\+\_\+\+T\+Y\+PE}{SPEED\_TYPE}}
+{\footnotesize\ttfamily final int items.\+Potion.\+S\+P\+E\+E\+D\+\_\+\+T\+Y\+PE =2\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classitems_1_1_potion_a9f9bc89fd8dfdadc0fa0101b725c524e}\label{classitems_1_1_potion_a9f9bc89fd8dfdadc0fa0101b725c524e}} 
+\index{items\+::\+Potion@{items\+::\+Potion}!type@{type}}
+\index{type@{type}!items\+::\+Potion@{items\+::\+Potion}}
+\subsubsection{\texorpdfstring{type}{type}}
+{\footnotesize\ttfamily int items.\+Potion.\+type\hspace{0.3cm}{\ttfamily [private]}}
+

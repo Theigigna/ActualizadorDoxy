@@ -1,0 +1,126 @@
+\hypertarget{class_controla_enemigos}{}\section{Controla\+Enemigos Class Reference}
+\label{class_controla_enemigos}\index{Controla\+Enemigos@{Controla\+Enemigos}}
+Inheritance diagram for Controla\+Enemigos\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_controla_enemigos}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_controla_enemigos_ae4a82e766666de8d91b20b6e038ac42c}{Controla\+Enemigos}} ()
+\item 
+void \mbox{\hyperlink{class_controla_enemigos_a891536374c60a0b946b72a3c02458952}{add}} (float x, float y)  throws Slick\+Exception 
+\item 
+void \mbox{\hyperlink{class_controla_enemigos_af3ef61229a21ef509dcf8397e870666e}{draw}} ()
+\item 
+void \mbox{\hyperlink{class_controla_enemigos_a0f43235e03225c9fbd077c5bfd2df923}{update}} (int delta)
+\item 
+void \mbox{\hyperlink{class_controla_enemigos_a3ae667fde8e2bf5a38a4ada28ac6db26}{delete}} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Array\+List$<$ \mbox{\hyperlink{class_sprite_movil}{Sprite\+Movil}} $>$ \mbox{\hyperlink{class_controla_enemigos_a00bc1b9f42ef341339d0d7a00ed60319}{enemigos}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_controla_enemigos_ae4a82e766666de8d91b20b6e038ac42c}\label{class_controla_enemigos_ae4a82e766666de8d91b20b6e038ac42c}} 
+\index{Controla\+Enemigos@{Controla\+Enemigos}!Controla\+Enemigos@{Controla\+Enemigos}}
+\index{Controla\+Enemigos@{Controla\+Enemigos}!Controla\+Enemigos@{Controla\+Enemigos}}
+\subsubsection{\texorpdfstring{Controla\+Enemigos()}{ControlaEnemigos()}}
+{\footnotesize\ttfamily Controla\+Enemigos.\+Controla\+Enemigos (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+10                              \{
+11         \mbox{\hyperlink{class_controla_enemigos_a00bc1b9f42ef341339d0d7a00ed60319}{enemigos}} = \textcolor{keyword}{new} ArrayList<SpriteMovil>();
+12     \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_controla_enemigos_a891536374c60a0b946b72a3c02458952}\label{class_controla_enemigos_a891536374c60a0b946b72a3c02458952}} 
+\index{Controla\+Enemigos@{Controla\+Enemigos}!add@{add}}
+\index{add@{add}!Controla\+Enemigos@{Controla\+Enemigos}}
+\subsubsection{\texorpdfstring{add()}{add()}}
+{\footnotesize\ttfamily void Controla\+Enemigos.\+add (\begin{DoxyParamCaption}\item[{float}]{x,  }\item[{float}]{y }\end{DoxyParamCaption}) throws \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_slick_exception}{Slick\+Exception}}\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Implements \mbox{\hyperlink{interface_i_controlador_af6e795781b2eead3e435cbbdd61bde41}{I\+Controlador}}.
+
+
+\begin{DoxyCode}
+15                                                             \{
+16       \mbox{\hyperlink{class_sprite_movil}{SpriteMovil}} enemigo = \textcolor{keyword}{new} \mbox{\hyperlink{class_sprite_movil}{SpriteMovil}}(\textcolor{stringliteral}{"res/bug/bug32x32.png"}, \textcolor{keyword}{new} 
+      \mbox{\hyperlink{class_coordenadas}{Coordenadas}}(600, y), \textcolor{keyword}{new} \mbox{\hyperlink{class_coordenadas}{Coordenadas}}(-250, 0));
+17       \mbox{\hyperlink{class_controla_enemigos_a00bc1b9f42ef341339d0d7a00ed60319}{enemigos}}.add(enemigo);
+18     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_controla_enemigos_a3ae667fde8e2bf5a38a4ada28ac6db26}\label{class_controla_enemigos_a3ae667fde8e2bf5a38a4ada28ac6db26}} 
+\index{Controla\+Enemigos@{Controla\+Enemigos}!delete@{delete}}
+\index{delete@{delete}!Controla\+Enemigos@{Controla\+Enemigos}}
+\subsubsection{\texorpdfstring{delete()}{delete()}}
+{\footnotesize\ttfamily void Controla\+Enemigos.\+delete (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Implements \mbox{\hyperlink{interface_i_controlador_a6a799d4959078e9b84d9de7fee44e0ba}{I\+Controlador}}.
+
+
+\begin{DoxyCode}
+35                          \{
+36         \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i = 0; i< \mbox{\hyperlink{class_controla_enemigos_a00bc1b9f42ef341339d0d7a00ed60319}{enemigos}}.size(); i++)\{
+37             \textcolor{keywordflow}{if}(\mbox{\hyperlink{class_controla_enemigos_a00bc1b9f42ef341339d0d7a00ed60319}{enemigos}}.get(i).getCoordenadas().getX() < 0)
+38             \mbox{\hyperlink{class_controla_enemigos_a00bc1b9f42ef341339d0d7a00ed60319}{enemigos}}.remove(i);
+39         \}
+40     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_controla_enemigos_af3ef61229a21ef509dcf8397e870666e}\label{class_controla_enemigos_af3ef61229a21ef509dcf8397e870666e}} 
+\index{Controla\+Enemigos@{Controla\+Enemigos}!draw@{draw}}
+\index{draw@{draw}!Controla\+Enemigos@{Controla\+Enemigos}}
+\subsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily void Controla\+Enemigos.\+draw (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Implements \mbox{\hyperlink{interface_i_controlador_a220648ff53334f380d52e2d2ec78e2e8}{I\+Controlador}}.
+
+
+\begin{DoxyCode}
+21                        \{
+22         \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i = 0; i< \mbox{\hyperlink{class_controla_enemigos_a00bc1b9f42ef341339d0d7a00ed60319}{enemigos}}.size(); i++)\{
+23             \mbox{\hyperlink{class_controla_enemigos_a00bc1b9f42ef341339d0d7a00ed60319}{enemigos}}.get(i).draw();
+24         \}
+25     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_controla_enemigos_a0f43235e03225c9fbd077c5bfd2df923}\label{class_controla_enemigos_a0f43235e03225c9fbd077c5bfd2df923}} 
+\index{Controla\+Enemigos@{Controla\+Enemigos}!update@{update}}
+\index{update@{update}!Controla\+Enemigos@{Controla\+Enemigos}}
+\subsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void Controla\+Enemigos.\+update (\begin{DoxyParamCaption}\item[{int}]{delta }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Implements \mbox{\hyperlink{interface_i_controlador_a06ccd4613ae1662a3a45620104c5224b}{I\+Controlador}}.
+
+
+\begin{DoxyCode}
+28                                   \{
+29         \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i = 0; i< \mbox{\hyperlink{class_controla_enemigos_a00bc1b9f42ef341339d0d7a00ed60319}{enemigos}}.size(); i++)\{
+30             \mbox{\hyperlink{class_controla_enemigos_a00bc1b9f42ef341339d0d7a00ed60319}{enemigos}}.get(i).update(delta);
+31         \}
+32     \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_controla_enemigos_a00bc1b9f42ef341339d0d7a00ed60319}\label{class_controla_enemigos_a00bc1b9f42ef341339d0d7a00ed60319}} 
+\index{Controla\+Enemigos@{Controla\+Enemigos}!enemigos@{enemigos}}
+\index{enemigos@{enemigos}!Controla\+Enemigos@{Controla\+Enemigos}}
+\subsubsection{\texorpdfstring{enemigos}{enemigos}}
+{\footnotesize\ttfamily Array\+List$<$\mbox{\hyperlink{class_sprite_movil}{Sprite\+Movil}}$>$ Controla\+Enemigos.\+enemigos\hspace{0.3cm}{\ttfamily [private]}}
+

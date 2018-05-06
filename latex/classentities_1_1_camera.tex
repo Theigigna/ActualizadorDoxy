@@ -1,0 +1,255 @@
+\hypertarget{classentities_1_1_camera}{}\section{entities.\+Camera Class Reference}
+\label{classentities_1_1_camera}\index{entities.\+Camera@{entities.\+Camera}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classentities_1_1_camera_a38cfcedc6aa02ecc7bcfb6ad050692f3}{Camera}} (int \mbox{\hyperlink{classentities_1_1_camera_a66b52dbb998f7f0a8f0a191d9bf7d35e}{x}}, int \mbox{\hyperlink{classentities_1_1_camera_ab37210b8774bf7d2210ab91bd1656e68}{y}})
+\item 
+\mbox{\hyperlink{classentities_1_1_camera_a36acc56a0a5627c07779da8116145f50}{Camera}} (\mbox{\hyperlink{classentities_1_1_mobile_entity}{Mobile\+Entity}} \mbox{\hyperlink{classentities_1_1_camera_ae57035ea7f7d7d60fc7da6cd51b93316}{entity}})
+\item 
+void \mbox{\hyperlink{classentities_1_1_camera_aae34158cc2c20916570929c01605dc5c}{init\+Camera}} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_game_container}{Game\+Container}} \mbox{\hyperlink{classentities_1_1_camera_ab4ac985dbca326ba055c90fd80b1e1ad}{container}}, \mbox{\hyperlink{classentities_1_1_map}{Map}} \mbox{\hyperlink{classentities_1_1_camera_a33fca5e9de17b38aa1ddea3a75e89784}{map}})
+\item 
+void \mbox{\hyperlink{classentities_1_1_camera_aa751a4113be4d9302fafeb69ab6042d4}{translate}} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_graphics}{Graphics}} g)
+\item 
+void \mbox{\hyperlink{classentities_1_1_camera_a89429480df11ec77d4b6e76672d77e96}{reset}} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_graphics}{Graphics}} g)
+\item 
+void \mbox{\hyperlink{classentities_1_1_camera_afc9fce5bc7a2d64ca42a04c5f34f6f8c}{update}} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+float \mbox{\hyperlink{classentities_1_1_camera_a66b52dbb998f7f0a8f0a191d9bf7d35e}{x}}
+\item 
+float \mbox{\hyperlink{classentities_1_1_camera_ab37210b8774bf7d2210ab91bd1656e68}{y}}
+\item 
+\mbox{\hyperlink{classentities_1_1_mobile_entity}{Mobile\+Entity}} \mbox{\hyperlink{classentities_1_1_camera_ae57035ea7f7d7d60fc7da6cd51b93316}{entity}}
+\item 
+float \mbox{\hyperlink{classentities_1_1_camera_aa5e6560668484615713b725a6e1c33b8}{sizeX}}
+\item 
+float \mbox{\hyperlink{classentities_1_1_camera_a57263eec54d4e2aaee3c60a9591182cf}{sizeY}}
+\item 
+float \mbox{\hyperlink{classentities_1_1_camera_aff3fca00a4578d5a45ddb9c402d1bf0e}{correctX}}
+\item 
+float \mbox{\hyperlink{classentities_1_1_camera_a4e9aeca687823695b7f8bd5842d063fc}{correctY}}
+\item 
+float \mbox{\hyperlink{classentities_1_1_camera_a908104b580c678d793dbbcba35276ff1}{centerX}}
+\item 
+float \mbox{\hyperlink{classentities_1_1_camera_a67cda85f879ad07eb4884f58ec41e957}{centerY}}
+\item 
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_game_container}{Game\+Container}} \mbox{\hyperlink{classentities_1_1_camera_ab4ac985dbca326ba055c90fd80b1e1ad}{container}}
+\item 
+\mbox{\hyperlink{classentities_1_1_map}{Map}} \mbox{\hyperlink{classentities_1_1_camera_a33fca5e9de17b38aa1ddea3a75e89784}{map}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyAuthor}{Author}
+Solfamida  08-\/mar-\/2016  \mbox{\hyperlink{classentities_1_1_camera}{Camera}} Description\+: 
+\end{DoxyAuthor}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classentities_1_1_camera_a38cfcedc6aa02ecc7bcfb6ad050692f3}\label{classentities_1_1_camera_a38cfcedc6aa02ecc7bcfb6ad050692f3}} 
+\index{entities\+::\+Camera@{entities\+::\+Camera}!Camera@{Camera}}
+\index{Camera@{Camera}!entities\+::\+Camera@{entities\+::\+Camera}}
+\subsubsection{\texorpdfstring{Camera()}{Camera()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily entities.\+Camera.\+Camera (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+28                                 \{
+29         this.\mbox{\hyperlink{classentities_1_1_camera_a66b52dbb998f7f0a8f0a191d9bf7d35e}{x}} = \mbox{\hyperlink{classentities_1_1_camera_a66b52dbb998f7f0a8f0a191d9bf7d35e}{x}};
+30         this.\mbox{\hyperlink{classentities_1_1_camera_ab37210b8774bf7d2210ab91bd1656e68}{y}} = \mbox{\hyperlink{classentities_1_1_camera_ab37210b8774bf7d2210ab91bd1656e68}{y}};
+31         \mbox{\hyperlink{classentities_1_1_camera_aa5e6560668484615713b725a6e1c33b8}{sizeX}} = 1;
+32         \mbox{\hyperlink{classentities_1_1_camera_a57263eec54d4e2aaee3c60a9591182cf}{sizeY}} = 1;
+33         \mbox{\hyperlink{classentities_1_1_camera_aff3fca00a4578d5a45ddb9c402d1bf0e}{correctX}} = 0;
+34         \mbox{\hyperlink{classentities_1_1_camera_a4e9aeca687823695b7f8bd5842d063fc}{correctY}} = 0;
+35     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classentities_1_1_camera_a36acc56a0a5627c07779da8116145f50}\label{classentities_1_1_camera_a36acc56a0a5627c07779da8116145f50}} 
+\index{entities\+::\+Camera@{entities\+::\+Camera}!Camera@{Camera}}
+\index{Camera@{Camera}!entities\+::\+Camera@{entities\+::\+Camera}}
+\subsubsection{\texorpdfstring{Camera()}{Camera()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily entities.\+Camera.\+Camera (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classentities_1_1_mobile_entity}{Mobile\+Entity}}}]{entity }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+37                                        \{
+38         this.\mbox{\hyperlink{classentities_1_1_camera_ae57035ea7f7d7d60fc7da6cd51b93316}{entity}} = \mbox{\hyperlink{classentities_1_1_camera_ae57035ea7f7d7d60fc7da6cd51b93316}{entity}};
+39     \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classentities_1_1_camera_aae34158cc2c20916570929c01605dc5c}\label{classentities_1_1_camera_aae34158cc2c20916570929c01605dc5c}} 
+\index{entities\+::\+Camera@{entities\+::\+Camera}!init\+Camera@{init\+Camera}}
+\index{init\+Camera@{init\+Camera}!entities\+::\+Camera@{entities\+::\+Camera}}
+\subsubsection{\texorpdfstring{init\+Camera()}{initCamera()}}
+{\footnotesize\ttfamily void entities.\+Camera.\+init\+Camera (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_game_container}{Game\+Container}}}]{container,  }\item[{\mbox{\hyperlink{classentities_1_1_map}{Map}}}]{map }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+41                                                              \{
+42         this.\mbox{\hyperlink{classentities_1_1_camera_ab4ac985dbca326ba055c90fd80b1e1ad}{container}} = \mbox{\hyperlink{classentities_1_1_camera_ab4ac985dbca326ba055c90fd80b1e1ad}{container}};
+43         this.\mbox{\hyperlink{classentities_1_1_camera_a33fca5e9de17b38aa1ddea3a75e89784}{map}} = \mbox{\hyperlink{classentities_1_1_camera_a33fca5e9de17b38aa1ddea3a75e89784}{map}};
+44 
+45         System.out.println(\textcolor{stringliteral}{"Size x: "} + \mbox{\hyperlink{classentities_1_1_camera_ab4ac985dbca326ba055c90fd80b1e1ad}{container}}.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_game_container_a938fe1a28567182445e60450915d5f69}{getWidth}}() + \textcolor{stringliteral}{" Size y: "} + 
+      \mbox{\hyperlink{classentities_1_1_camera_ab4ac985dbca326ba055c90fd80b1e1ad}{container}}.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_game_container_a7eff88473fe5715fdfc2f92e8cb48521}{getHeight}}());
+46         \textcolor{keywordflow}{if} (\mbox{\hyperlink{classentities_1_1_camera_a33fca5e9de17b38aa1ddea3a75e89784}{map}}.\mbox{\hyperlink{classentities_1_1_map_a7c15a6b2fac91bdb2592e1db1bc78623}{getWidth}}() >= \mbox{\hyperlink{classentities_1_1_camera_ab4ac985dbca326ba055c90fd80b1e1ad}{container}}.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_game_container_a938fe1a28567182445e60450915d5f69}{getWidth}}()) \{
+47             \mbox{\hyperlink{classentities_1_1_camera_aa5e6560668484615713b725a6e1c33b8}{sizeX}} = 1;
+48         \} \textcolor{keywordflow}{else} \{
+49             \mbox{\hyperlink{classentities_1_1_camera_aa5e6560668484615713b725a6e1c33b8}{sizeX}} = \mbox{\hyperlink{classentities_1_1_camera_ab4ac985dbca326ba055c90fd80b1e1ad}{container}}.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_game_container_a938fe1a28567182445e60450915d5f69}{getWidth}}() / \mbox{\hyperlink{classentities_1_1_camera_a33fca5e9de17b38aa1ddea3a75e89784}{map}}.\mbox{\hyperlink{classentities_1_1_map_a7c15a6b2fac91bdb2592e1db1bc78623}{getWidth}}();
+50             \mbox{\hyperlink{classentities_1_1_camera_a908104b580c678d793dbbcba35276ff1}{centerX}} = (\mbox{\hyperlink{classentities_1_1_camera_ab4ac985dbca326ba055c90fd80b1e1ad}{container}}.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_game_container_a938fe1a28567182445e60450915d5f69}{getWidth}}() - \mbox{\hyperlink{classentities_1_1_camera_a33fca5e9de17b38aa1ddea3a75e89784}{map}}.
+      \mbox{\hyperlink{classentities_1_1_map_a7c15a6b2fac91bdb2592e1db1bc78623}{getWidth}}()) / 2;
+51         \}
+52         \textcolor{keywordflow}{if} (\mbox{\hyperlink{classentities_1_1_camera_a33fca5e9de17b38aa1ddea3a75e89784}{map}}.\mbox{\hyperlink{classentities_1_1_map_a9ed9d1f8683c86dfca33639e252aaded}{getHeight}}() >= \mbox{\hyperlink{classentities_1_1_camera_ab4ac985dbca326ba055c90fd80b1e1ad}{container}}.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_game_container_a7eff88473fe5715fdfc2f92e8cb48521}{getHeight}}()) \{
+53             \mbox{\hyperlink{classentities_1_1_camera_a57263eec54d4e2aaee3c60a9591182cf}{sizeY}} = 1;
+54         \} \textcolor{keywordflow}{else} \{
+55             \mbox{\hyperlink{classentities_1_1_camera_a57263eec54d4e2aaee3c60a9591182cf}{sizeY}} = \mbox{\hyperlink{classentities_1_1_camera_ab4ac985dbca326ba055c90fd80b1e1ad}{container}}.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_game_container_a7eff88473fe5715fdfc2f92e8cb48521}{getHeight}}() / \mbox{\hyperlink{classentities_1_1_camera_a33fca5e9de17b38aa1ddea3a75e89784}{map}}.
+      \mbox{\hyperlink{classentities_1_1_map_a9ed9d1f8683c86dfca33639e252aaded}{getHeight}}();
+56             \mbox{\hyperlink{classentities_1_1_camera_a67cda85f879ad07eb4884f58ec41e957}{centerY}} = (\mbox{\hyperlink{classentities_1_1_camera_ab4ac985dbca326ba055c90fd80b1e1ad}{container}}.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_game_container_a7eff88473fe5715fdfc2f92e8cb48521}{getHeight}}() - \mbox{\hyperlink{classentities_1_1_camera_a33fca5e9de17b38aa1ddea3a75e89784}{map}}.
+      \mbox{\hyperlink{classentities_1_1_map_a9ed9d1f8683c86dfca33639e252aaded}{getHeight}}()) / 2;
+57         \}
+58 
+59     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classentities_1_1_camera_a89429480df11ec77d4b6e76672d77e96}\label{classentities_1_1_camera_a89429480df11ec77d4b6e76672d77e96}} 
+\index{entities\+::\+Camera@{entities\+::\+Camera}!reset@{reset}}
+\index{reset@{reset}!entities\+::\+Camera@{entities\+::\+Camera}}
+\subsubsection{\texorpdfstring{reset()}{reset()}}
+{\footnotesize\ttfamily void entities.\+Camera.\+reset (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_graphics}{Graphics}}}]{g }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+68                                   \{
+69         \textcolor{comment}{//Devolver cámara a la posición inicial}
+70         \textcolor{comment}{//g.scale(1 / sizeX, 1 / sizeY);}
+71         g.translate(\mbox{\hyperlink{classentities_1_1_camera_aff3fca00a4578d5a45ddb9c402d1bf0e}{correctX}}, \mbox{\hyperlink{classentities_1_1_camera_a4e9aeca687823695b7f8bd5842d063fc}{correctY}});
+72     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classentities_1_1_camera_aa751a4113be4d9302fafeb69ab6042d4}\label{classentities_1_1_camera_aa751a4113be4d9302fafeb69ab6042d4}} 
+\index{entities\+::\+Camera@{entities\+::\+Camera}!translate@{translate}}
+\index{translate@{translate}!entities\+::\+Camera@{entities\+::\+Camera}}
+\subsubsection{\texorpdfstring{translate()}{translate()}}
+{\footnotesize\ttfamily void entities.\+Camera.\+translate (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_graphics}{Graphics}}}]{g }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+61                                       \{
+62         \textcolor{comment}{//Desplazar gráficos en sentido contrario}
+63         \textcolor{comment}{//g.scale(sizeX, sizeY);}
+64         g.translate(-\mbox{\hyperlink{classentities_1_1_camera_aff3fca00a4578d5a45ddb9c402d1bf0e}{correctX}}, -\mbox{\hyperlink{classentities_1_1_camera_a4e9aeca687823695b7f8bd5842d063fc}{correctY}});
+65         \textcolor{comment}{//System.out.println("Correct X: " + correctX + "Correct Y: " + correctY);}
+66     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classentities_1_1_camera_afc9fce5bc7a2d64ca42a04c5f34f6f8c}\label{classentities_1_1_camera_afc9fce5bc7a2d64ca42a04c5f34f6f8c}} 
+\index{entities\+::\+Camera@{entities\+::\+Camera}!update@{update}}
+\index{update@{update}!entities\+::\+Camera@{entities\+::\+Camera}}
+\subsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void entities.\+Camera.\+update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+74                          \{
+75         \textcolor{keywordflow}{if} (\mbox{\hyperlink{classentities_1_1_camera_ae57035ea7f7d7d60fc7da6cd51b93316}{entity}} != null) \{
+76             this.\mbox{\hyperlink{classentities_1_1_camera_a66b52dbb998f7f0a8f0a191d9bf7d35e}{x}} = \mbox{\hyperlink{classentities_1_1_camera_ae57035ea7f7d7d60fc7da6cd51b93316}{entity}}.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_shape_a736a47bfdd6f164558b43fd497a3a3f3}{getX}}();
+77             this.\mbox{\hyperlink{classentities_1_1_camera_ab37210b8774bf7d2210ab91bd1656e68}{y}} = \mbox{\hyperlink{classentities_1_1_camera_ae57035ea7f7d7d60fc7da6cd51b93316}{entity}}.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_shape_a5f334f962d8fc525d522fe0f8ac20b35}{getY}}();
+78         \}
+79 
+80         \mbox{\hyperlink{classentities_1_1_camera_aff3fca00a4578d5a45ddb9c402d1bf0e}{correctX}} = this.\mbox{\hyperlink{classentities_1_1_camera_a66b52dbb998f7f0a8f0a191d9bf7d35e}{x}} - (\mbox{\hyperlink{classentities_1_1_camera_ab4ac985dbca326ba055c90fd80b1e1ad}{container}}.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_game_container_a938fe1a28567182445e60450915d5f69}{getWidth}}() / 2);   \textcolor{comment}{//Corrección en X para
+       centrar la cámara}
+81         \mbox{\hyperlink{classentities_1_1_camera_a4e9aeca687823695b7f8bd5842d063fc}{correctY}} = this.\mbox{\hyperlink{classentities_1_1_camera_ab37210b8774bf7d2210ab91bd1656e68}{y}} - (\mbox{\hyperlink{classentities_1_1_camera_ab4ac985dbca326ba055c90fd80b1e1ad}{container}}.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_game_container_a7eff88473fe5715fdfc2f92e8cb48521}{getHeight}}() / 2);  \textcolor{comment}{//Corrección en Y para
+       centrar la cámara}
+82         \textcolor{keywordflow}{if} (\mbox{\hyperlink{classentities_1_1_camera_aa5e6560668484615713b725a6e1c33b8}{sizeX}} != 1) \{
+83             \mbox{\hyperlink{classentities_1_1_camera_aff3fca00a4578d5a45ddb9c402d1bf0e}{correctX}} = -\mbox{\hyperlink{classentities_1_1_camera_a908104b580c678d793dbbcba35276ff1}{centerX}};
+84         \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (\mbox{\hyperlink{classentities_1_1_camera_aff3fca00a4578d5a45ddb9c402d1bf0e}{correctX}} < 0) \{
+85             \textcolor{comment}{//Si la corrección desplazase el mapa de forma negativa en X}
+86             \mbox{\hyperlink{classentities_1_1_camera_aff3fca00a4578d5a45ddb9c402d1bf0e}{correctX}} = 0; \textcolor{comment}{//Anular corrección}
+87         \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (\mbox{\hyperlink{classentities_1_1_camera_aff3fca00a4578d5a45ddb9c402d1bf0e}{correctX}} > ((\mbox{\hyperlink{classentities_1_1_camera_a33fca5e9de17b38aa1ddea3a75e89784}{map}}.\mbox{\hyperlink{classentities_1_1_map_a7c15a6b2fac91bdb2592e1db1bc78623}{getWidth}}()) - \mbox{\hyperlink{classentities_1_1_camera_ab4ac985dbca326ba055c90fd80b1e1ad}{container}}.
+      \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_game_container_a938fe1a28567182445e60450915d5f69}{getWidth}}())) \{
+88             \textcolor{comment}{//Si la corrección desplaza el mapa demasiado en sentido positivo}
+89             \mbox{\hyperlink{classentities_1_1_camera_aff3fca00a4578d5a45ddb9c402d1bf0e}{correctX}} = \mbox{\hyperlink{classentities_1_1_camera_a33fca5e9de17b38aa1ddea3a75e89784}{map}}.\mbox{\hyperlink{classentities_1_1_map_a7c15a6b2fac91bdb2592e1db1bc78623}{getWidth}}() - \mbox{\hyperlink{classentities_1_1_camera_ab4ac985dbca326ba055c90fd80b1e1ad}{container}}.
+      \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_game_container_a938fe1a28567182445e60450915d5f69}{getWidth}}();   \textcolor{comment}{//Corrección máxima permitida}
+90         \}
+91         \textcolor{keywordflow}{if} (\mbox{\hyperlink{classentities_1_1_camera_a57263eec54d4e2aaee3c60a9591182cf}{sizeY}} != 1) \{
+92             correctY = -\mbox{\hyperlink{classentities_1_1_camera_a67cda85f879ad07eb4884f58ec41e957}{centerY}};
+93         \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (\mbox{\hyperlink{classentities_1_1_camera_a4e9aeca687823695b7f8bd5842d063fc}{correctY}} < 0 || \mbox{\hyperlink{classentities_1_1_camera_a57263eec54d4e2aaee3c60a9591182cf}{sizeY}} != 1) \{
+94             \textcolor{comment}{//Si la corrección desplazase el mapa de forma negativa en Y}
+95             \mbox{\hyperlink{classentities_1_1_camera_a4e9aeca687823695b7f8bd5842d063fc}{correctY}} = 0; \textcolor{comment}{//Anular corrección}
+96         \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (\mbox{\hyperlink{classentities_1_1_camera_a4e9aeca687823695b7f8bd5842d063fc}{correctY}} > (\mbox{\hyperlink{classentities_1_1_camera_a33fca5e9de17b38aa1ddea3a75e89784}{map}}.\mbox{\hyperlink{classentities_1_1_map_a9ed9d1f8683c86dfca33639e252aaded}{getHeight}}() - \mbox{\hyperlink{classentities_1_1_camera_ab4ac985dbca326ba055c90fd80b1e1ad}{container}}.
+      \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_game_container_a7eff88473fe5715fdfc2f92e8cb48521}{getHeight}}())) \{
+97             \textcolor{comment}{//Si la corrección desplaza el mapa demasiado en sentido positivo}
+98             \mbox{\hyperlink{classentities_1_1_camera_a4e9aeca687823695b7f8bd5842d063fc}{correctY}} = \mbox{\hyperlink{classentities_1_1_camera_a33fca5e9de17b38aa1ddea3a75e89784}{map}}.\mbox{\hyperlink{classentities_1_1_map_a9ed9d1f8683c86dfca33639e252aaded}{getHeight}}() - \mbox{\hyperlink{classentities_1_1_camera_ab4ac985dbca326ba055c90fd80b1e1ad}{container}}.
+      \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_game_container_a7eff88473fe5715fdfc2f92e8cb48521}{getHeight}}(); \textcolor{comment}{//Corrección máxima permitida}
+99         \}
+100     \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classentities_1_1_camera_a908104b580c678d793dbbcba35276ff1}\label{classentities_1_1_camera_a908104b580c678d793dbbcba35276ff1}} 
+\index{entities\+::\+Camera@{entities\+::\+Camera}!centerX@{centerX}}
+\index{centerX@{centerX}!entities\+::\+Camera@{entities\+::\+Camera}}
+\subsubsection{\texorpdfstring{centerX}{centerX}}
+{\footnotesize\ttfamily float entities.\+Camera.\+centerX\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classentities_1_1_camera_a67cda85f879ad07eb4884f58ec41e957}\label{classentities_1_1_camera_a67cda85f879ad07eb4884f58ec41e957}} 
+\index{entities\+::\+Camera@{entities\+::\+Camera}!centerY@{centerY}}
+\index{centerY@{centerY}!entities\+::\+Camera@{entities\+::\+Camera}}
+\subsubsection{\texorpdfstring{centerY}{centerY}}
+{\footnotesize\ttfamily float entities.\+Camera.\+centerY\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classentities_1_1_camera_ab4ac985dbca326ba055c90fd80b1e1ad}\label{classentities_1_1_camera_ab4ac985dbca326ba055c90fd80b1e1ad}} 
+\index{entities\+::\+Camera@{entities\+::\+Camera}!container@{container}}
+\index{container@{container}!entities\+::\+Camera@{entities\+::\+Camera}}
+\subsubsection{\texorpdfstring{container}{container}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_game_container}{Game\+Container}} entities.\+Camera.\+container\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classentities_1_1_camera_aff3fca00a4578d5a45ddb9c402d1bf0e}\label{classentities_1_1_camera_aff3fca00a4578d5a45ddb9c402d1bf0e}} 
+\index{entities\+::\+Camera@{entities\+::\+Camera}!correctX@{correctX}}
+\index{correctX@{correctX}!entities\+::\+Camera@{entities\+::\+Camera}}
+\subsubsection{\texorpdfstring{correctX}{correctX}}
+{\footnotesize\ttfamily float entities.\+Camera.\+correctX\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classentities_1_1_camera_a4e9aeca687823695b7f8bd5842d063fc}\label{classentities_1_1_camera_a4e9aeca687823695b7f8bd5842d063fc}} 
+\index{entities\+::\+Camera@{entities\+::\+Camera}!correctY@{correctY}}
+\index{correctY@{correctY}!entities\+::\+Camera@{entities\+::\+Camera}}
+\subsubsection{\texorpdfstring{correctY}{correctY}}
+{\footnotesize\ttfamily float entities.\+Camera.\+correctY\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classentities_1_1_camera_ae57035ea7f7d7d60fc7da6cd51b93316}\label{classentities_1_1_camera_ae57035ea7f7d7d60fc7da6cd51b93316}} 
+\index{entities\+::\+Camera@{entities\+::\+Camera}!entity@{entity}}
+\index{entity@{entity}!entities\+::\+Camera@{entities\+::\+Camera}}
+\subsubsection{\texorpdfstring{entity}{entity}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classentities_1_1_mobile_entity}{Mobile\+Entity}} entities.\+Camera.\+entity\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classentities_1_1_camera_a33fca5e9de17b38aa1ddea3a75e89784}\label{classentities_1_1_camera_a33fca5e9de17b38aa1ddea3a75e89784}} 
+\index{entities\+::\+Camera@{entities\+::\+Camera}!map@{map}}
+\index{map@{map}!entities\+::\+Camera@{entities\+::\+Camera}}
+\subsubsection{\texorpdfstring{map}{map}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classentities_1_1_map}{Map}} entities.\+Camera.\+map\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classentities_1_1_camera_aa5e6560668484615713b725a6e1c33b8}\label{classentities_1_1_camera_aa5e6560668484615713b725a6e1c33b8}} 
+\index{entities\+::\+Camera@{entities\+::\+Camera}!sizeX@{sizeX}}
+\index{sizeX@{sizeX}!entities\+::\+Camera@{entities\+::\+Camera}}
+\subsubsection{\texorpdfstring{sizeX}{sizeX}}
+{\footnotesize\ttfamily float entities.\+Camera.\+sizeX\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classentities_1_1_camera_a57263eec54d4e2aaee3c60a9591182cf}\label{classentities_1_1_camera_a57263eec54d4e2aaee3c60a9591182cf}} 
+\index{entities\+::\+Camera@{entities\+::\+Camera}!sizeY@{sizeY}}
+\index{sizeY@{sizeY}!entities\+::\+Camera@{entities\+::\+Camera}}
+\subsubsection{\texorpdfstring{sizeY}{sizeY}}
+{\footnotesize\ttfamily float entities.\+Camera.\+sizeY\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classentities_1_1_camera_a66b52dbb998f7f0a8f0a191d9bf7d35e}\label{classentities_1_1_camera_a66b52dbb998f7f0a8f0a191d9bf7d35e}} 
+\index{entities\+::\+Camera@{entities\+::\+Camera}!x@{x}}
+\index{x@{x}!entities\+::\+Camera@{entities\+::\+Camera}}
+\subsubsection{\texorpdfstring{x}{x}}
+{\footnotesize\ttfamily float entities.\+Camera.\+x\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classentities_1_1_camera_ab37210b8774bf7d2210ab91bd1656e68}\label{classentities_1_1_camera_ab37210b8774bf7d2210ab91bd1656e68}} 
+\index{entities\+::\+Camera@{entities\+::\+Camera}!y@{y}}
+\index{y@{y}!entities\+::\+Camera@{entities\+::\+Camera}}
+\subsubsection{\texorpdfstring{y}{y}}
+{\footnotesize\ttfamily float entities.\+Camera.\+y\hspace{0.3cm}{\ttfamily [private]}}
+

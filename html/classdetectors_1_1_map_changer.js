@@ -1,0 +1,25 @@
+var classdetectors_1_1_map_changer =
+[
+    [ "MapChanger", "classdetectors_1_1_map_changer.html#a533001d33ce9a267a1fb928ec45f5354", null ],
+    [ "MapChanger", "classdetectors_1_1_map_changer.html#af710deefd9b30c1be946aa696ea54d63", null ],
+    [ "disable", "classdetectors_1_1_map_changer.html#abc1c02ba44ab3c41c5281d4eb18eab63", null ],
+    [ "enable", "classdetectors_1_1_map_changer.html#ac62f6efb8dbbbf91ca21b3789de4f755", null ],
+    [ "getArea", "classdetectors_1_1_map_changer.html#a6aa16432a59706e55237c61cde2e3336", null ],
+    [ "getIdentifier", "classdetectors_1_1_map_changer.html#af5ecc9f5fa80c769ace0b1e623d9f431", null ],
+    [ "getInitX", "classdetectors_1_1_map_changer.html#a4d7a3d7511cffb43d1bcf866927a7c12", null ],
+    [ "getInitY", "classdetectors_1_1_map_changer.html#acb4c06fa4e179d3b8465e80932ed2310", null ],
+    [ "getMap", "classdetectors_1_1_map_changer.html#a9751921504c31dd83363b128431b6633", null ],
+    [ "isEnabled", "classdetectors_1_1_map_changer.html#afea07edc6a03aef261b674c21dd9c50e", null ],
+    [ "objectOver", "classdetectors_1_1_map_changer.html#a4803cdf3ccad2502423706f266869a72", null ],
+    [ "setEnabled", "classdetectors_1_1_map_changer.html#ae99885d28c5978a4dcbc0e1c484eb7a0", null ],
+    [ "setIdentifier", "classdetectors_1_1_map_changer.html#ae812ca1f161dd4e001b87b3a7961fb17", null ],
+    [ "setInitX", "classdetectors_1_1_map_changer.html#a96d45124191401322f3f9bfc76b3830f", null ],
+    [ "setInitY", "classdetectors_1_1_map_changer.html#a5b0f5e7cd4c82d221683bc224e5ab14a", null ],
+    [ "setMap", "classdetectors_1_1_map_changer.html#ae894dd5e58b9f82acefbfc85a928ecb6", null ],
+    [ "enabled", "classdetectors_1_1_map_changer.html#a603d3a106676167a607d9acd5176f8f8", null ],
+    [ "gameState", "classdetectors_1_1_map_changer.html#a2a72dbaade77a4f83acdc5ba1d745c48", null ],
+    [ "identifier", "classdetectors_1_1_map_changer.html#a4c880379dc5b9cdd0c11d388ed7d28ca", null ],
+    [ "initX", "classdetectors_1_1_map_changer.html#a45c8356dc930a1289333a55a1a13a606", null ],
+    [ "initY", "classdetectors_1_1_map_changer.html#a893e5aefb0e75665409f73b6e1542b59", null ],
+    [ "map", "classdetectors_1_1_map_changer.html#ad642fa774f24afd2651f54d430608092", null ]
+];

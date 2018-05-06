@@ -1,0 +1,279 @@
+\hypertarget{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_emitter_list}{}\section{org.\+newdawn.\+slick.\+tools.\+peditor.\+Emitter\+List Class Reference}
+\label{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_emitter_list}\index{org.\+newdawn.\+slick.\+tools.\+peditor.\+Emitter\+List@{org.\+newdawn.\+slick.\+tools.\+peditor.\+Emitter\+List}}
+Inheritance diagram for org.\+newdawn.\+slick.\+tools.\+peditor.\+Emitter\+List\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_emitter_list}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_emitter_list_1_1_renderer}{Renderer}}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_emitter_list_a975c297ae89d721d63d06fd7b4c6412d}{Emitter\+List}} (final \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_particle_editor}{Particle\+Editor}} editor)
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_emitter_list_a2d4c1c8b76d20c25f3a7183ab5b4cd25}{set\+Selected}} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1particles_1_1_configurable_emitter}{Configurable\+Emitter}} emitter)
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_emitter_list_a85497a336416b7d921ea40d32a880854}{set\+Selected}} (int index)
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_emitter_list_a7adaa05d68e52574bcb10b551bbc081d}{update}} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1particles_1_1_configurable_emitter}{Configurable\+Emitter}} emitter)
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_emitter_list_ae05eade7e60681dcd66ec02b53c1b813}{clear}} ()
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_emitter_list_ac399df0532416eee42952010e219cc5b}{add}} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1particles_1_1_configurable_emitter}{Configurable\+Emitter}} emitter)
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_emitter_list_af62b14c24122b09a3a77f2eaea806e7d}{remove}} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1particles_1_1_configurable_emitter}{Configurable\+Emitter}} emitter)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Default\+List\+Model \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_emitter_list_af49e1d51ea3ee483a77a30ce7aaa6d89}{emitters}} = new Default\+List\+Model()
+\item 
+J\+List \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_emitter_list_a201acbbfa375f50045f4f87452a9c722}{list}} = new J\+List(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_emitter_list_af49e1d51ea3ee483a77a30ce7aaa6d89}{emitters}})
+\item 
+J\+Button \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_emitter_list_a8917d12ded4e0e597c9ef64fa7812aee}{add}} = new J\+Button(\char`\"{}Add\char`\"{})
+\item 
+J\+Button \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_emitter_list_ac7b91624c7504f3ea8fb21a71aba6b48}{remove}} = new J\+Button(\char`\"{}Remove\char`\"{})
+\item 
+Hash\+Map \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_emitter_list_ab4a9e11fc917db0ed6c38a4980a8ee4c}{checks}} = new Hash\+Map()
+\item 
+int \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_emitter_list_a65e90671226a94c9d05cae2c3bfd7728}{last\+Select}} = -\/1
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A visual list of the emitter being editing
+
+\begin{DoxyAuthor}{Author}
+kevin 
+\end{DoxyAuthor}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_emitter_list_a975c297ae89d721d63d06fd7b4c6412d}\label{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_emitter_list_a975c297ae89d721d63d06fd7b4c6412d}} 
+\index{org\+::newdawn\+::slick\+::tools\+::peditor\+::\+Emitter\+List@{org\+::newdawn\+::slick\+::tools\+::peditor\+::\+Emitter\+List}!Emitter\+List@{Emitter\+List}}
+\index{Emitter\+List@{Emitter\+List}!org\+::newdawn\+::slick\+::tools\+::peditor\+::\+Emitter\+List@{org\+::newdawn\+::slick\+::tools\+::peditor\+::\+Emitter\+List}}
+\subsubsection{\texorpdfstring{Emitter\+List()}{EmitterList()}}
+{\footnotesize\ttfamily org.\+newdawn.\+slick.\+tools.\+peditor.\+Emitter\+List.\+Emitter\+List (\begin{DoxyParamCaption}\item[{final \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_particle_editor}{Particle\+Editor}}}]{editor }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Create a new visual list of emitters
+
+
+\begin{DoxyParams}{Parameters}
+{\em editor} & The editor to report updates to \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+48                                                     \{
+49         setLayout(null);
+50         JScrollPane scroll = \textcolor{keyword}{new} JScrollPane(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_emitter_list_a201acbbfa375f50045f4f87452a9c722}{list}});
+51         scroll.setBounds(5,25,285,100);
+52         scroll.setBorder(BorderFactory.createEtchedBorder());
+53         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_emitter_list_a8917d12ded4e0e597c9ef64fa7812aee}{add}}.setBounds(150,125,60,20);
+54         \textcolor{keyword}{remove}.setBounds(209,125,80,20);
+55             
+56         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_emitter_list_a8917d12ded4e0e597c9ef64fa7812aee}{add}}.addActionListener(\textcolor{keyword}{new} ActionListener() \{
+57             \textcolor{keyword}{public} \textcolor{keywordtype}{void} actionPerformed(ActionEvent e) \{
+58                 editor.addEmitter(\textcolor{keyword}{new} ConfigurableEmitter(\textcolor{stringliteral}{"NewEmitter\_"}+System.currentTimeMillis()));
+59             \}
+60         \});
+61         \textcolor{keyword}{remove}.addActionListener(\textcolor{keyword}{new} ActionListener() \{
+62             \textcolor{keyword}{public} \textcolor{keywordtype}{void} actionPerformed(ActionEvent e) \{
+63                 ConfigurableEmitter emitter = (ConfigurableEmitter) \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_emitter_list_a201acbbfa375f50045f4f87452a9c722}{list}}.getSelectedValue();
+64                 \textcolor{keywordflow}{if} (emitter != null) \{
+65                     editor.removeEmitter(emitter);
+66                 \}
+67             \}
+68         \});
+69         
+70         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_emitter_list_a201acbbfa375f50045f4f87452a9c722}{list}}.setCellRenderer(\textcolor{keyword}{new} Renderer());
+71         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_emitter_list_a201acbbfa375f50045f4f87452a9c722}{list}}.addMouseListener(\textcolor{keyword}{new} MouseAdapter() \{
+72             \textcolor{keyword}{public} \textcolor{keywordtype}{void} mousePressed(MouseEvent e) \{
+73                 \textcolor{keywordtype}{int} index = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_emitter_list_a201acbbfa375f50045f4f87452a9c722}{list}}.locationToIndex(e.getPoint());
+74 
+75                 \textcolor{keywordflow}{if} (index != -1) \{
+76                     \textcolor{keywordflow}{if} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_emitter_list_a201acbbfa375f50045f4f87452a9c722}{list}}.getCellBounds(index, index).contains(e.getPoint())) \{
+77                         \textcolor{keywordflow}{if} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_emitter_list_a65e90671226a94c9d05cae2c3bfd7728}{lastSelect}} == \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_emitter_list_a201acbbfa375f50045f4f87452a9c722}{list}}.getSelectedIndex()) \{
+78                             ConfigurableEmitter emitter = (ConfigurableEmitter) 
+      \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_emitter_list_a201acbbfa375f50045f4f87452a9c722}{list}}.getModel().getElementAt(index);
+79                             JCheckBox box = (JCheckBox) \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_emitter_list_ab4a9e11fc917db0ed6c38a4980a8ee4c}{checks}}.get(emitter);
+80                             emitter.setEnabled(!emitter.isEnabled());
+81                             box.setSelected(emitter.isEnabled());
+82                             
+83                             repaint();
+84                         \} \textcolor{keywordflow}{else} \{
+85                             \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_emitter_list_a65e90671226a94c9d05cae2c3bfd7728}{lastSelect}} = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_emitter_list_a201acbbfa375f50045f4f87452a9c722}{list}}.getSelectedIndex();
+86                         \}
+87                     \}
+88                 \}
+89             \}
+90         \});
+91         
+92         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_emitter_list_a201acbbfa375f50045f4f87452a9c722}{list}}.addListSelectionListener(\textcolor{keyword}{new} ListSelectionListener() \{
+93             \textcolor{keyword}{public} \textcolor{keywordtype}{void} valueChanged(ListSelectionEvent e) \{
+94                 editor.setCurrentEmitter((ConfigurableEmitter) \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_emitter_list_a201acbbfa375f50045f4f87452a9c722}{list}}.getSelectedValue());
+95             \}
+96         \});
+97         
+98         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_emitter_list_a8917d12ded4e0e597c9ef64fa7812aee}{add}}(scroll);
+99         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_emitter_list_a8917d12ded4e0e597c9ef64fa7812aee}{add}}(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_emitter_list_a8917d12ded4e0e597c9ef64fa7812aee}{add}});
+100         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_emitter_list_a8917d12ded4e0e597c9ef64fa7812aee}{add}}(\textcolor{keyword}{remove});     
+101     \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_emitter_list_ac399df0532416eee42952010e219cc5b}\label{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_emitter_list_ac399df0532416eee42952010e219cc5b}} 
+\index{org\+::newdawn\+::slick\+::tools\+::peditor\+::\+Emitter\+List@{org\+::newdawn\+::slick\+::tools\+::peditor\+::\+Emitter\+List}!add@{add}}
+\index{add@{add}!org\+::newdawn\+::slick\+::tools\+::peditor\+::\+Emitter\+List@{org\+::newdawn\+::slick\+::tools\+::peditor\+::\+Emitter\+List}}
+\subsubsection{\texorpdfstring{add()}{add()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+tools.\+peditor.\+Emitter\+List.\+add (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1particles_1_1_configurable_emitter}{Configurable\+Emitter}}}]{emitter }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Add an emitter to the list
+
+
+\begin{DoxyParams}{Parameters}
+{\em emitter} & The emitter to add \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+145                                                  \{
+146         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_emitter_list_af49e1d51ea3ee483a77a30ce7aaa6d89}{emitters}}.addElement(emitter);
+147     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_emitter_list_ae05eade7e60681dcd66ec02b53c1b813}\label{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_emitter_list_ae05eade7e60681dcd66ec02b53c1b813}} 
+\index{org\+::newdawn\+::slick\+::tools\+::peditor\+::\+Emitter\+List@{org\+::newdawn\+::slick\+::tools\+::peditor\+::\+Emitter\+List}!clear@{clear}}
+\index{clear@{clear}!org\+::newdawn\+::slick\+::tools\+::peditor\+::\+Emitter\+List@{org\+::newdawn\+::slick\+::tools\+::peditor\+::\+Emitter\+List}}
+\subsubsection{\texorpdfstring{clear()}{clear()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+tools.\+peditor.\+Emitter\+List.\+clear (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Remove all emitters from the list 
+\begin{DoxyCode}
+136                         \{
+137         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_emitter_list_af49e1d51ea3ee483a77a30ce7aaa6d89}{emitters}}.clear();
+138     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_emitter_list_af62b14c24122b09a3a77f2eaea806e7d}\label{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_emitter_list_af62b14c24122b09a3a77f2eaea806e7d}} 
+\index{org\+::newdawn\+::slick\+::tools\+::peditor\+::\+Emitter\+List@{org\+::newdawn\+::slick\+::tools\+::peditor\+::\+Emitter\+List}!remove@{remove}}
+\index{remove@{remove}!org\+::newdawn\+::slick\+::tools\+::peditor\+::\+Emitter\+List@{org\+::newdawn\+::slick\+::tools\+::peditor\+::\+Emitter\+List}}
+\subsubsection{\texorpdfstring{remove()}{remove()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+tools.\+peditor.\+Emitter\+List.\+remove (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1particles_1_1_configurable_emitter}{Configurable\+Emitter}}}]{emitter }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Remove an emitter from the list
+
+
+\begin{DoxyParams}{Parameters}
+{\em emitter} & The emitter to remove \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+154                                                     \{
+155         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_emitter_list_af49e1d51ea3ee483a77a30ce7aaa6d89}{emitters}}.removeElement(emitter);
+156     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_emitter_list_a2d4c1c8b76d20c25f3a7183ab5b4cd25}\label{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_emitter_list_a2d4c1c8b76d20c25f3a7183ab5b4cd25}} 
+\index{org\+::newdawn\+::slick\+::tools\+::peditor\+::\+Emitter\+List@{org\+::newdawn\+::slick\+::tools\+::peditor\+::\+Emitter\+List}!set\+Selected@{set\+Selected}}
+\index{set\+Selected@{set\+Selected}!org\+::newdawn\+::slick\+::tools\+::peditor\+::\+Emitter\+List@{org\+::newdawn\+::slick\+::tools\+::peditor\+::\+Emitter\+List}}
+\subsubsection{\texorpdfstring{set\+Selected()}{setSelected()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+tools.\+peditor.\+Emitter\+List.\+set\+Selected (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1particles_1_1_configurable_emitter}{Configurable\+Emitter}}}]{emitter }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Set the currently selected emitter
+
+
+\begin{DoxyParams}{Parameters}
+{\em emitter} & The emitter to be selected \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+108                                                          \{
+109         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_emitter_list_a201acbbfa375f50045f4f87452a9c722}{list}}.setSelectedValue(emitter, \textcolor{keyword}{true});
+110     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_emitter_list_a85497a336416b7d921ea40d32a880854}\label{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_emitter_list_a85497a336416b7d921ea40d32a880854}} 
+\index{org\+::newdawn\+::slick\+::tools\+::peditor\+::\+Emitter\+List@{org\+::newdawn\+::slick\+::tools\+::peditor\+::\+Emitter\+List}!set\+Selected@{set\+Selected}}
+\index{set\+Selected@{set\+Selected}!org\+::newdawn\+::slick\+::tools\+::peditor\+::\+Emitter\+List@{org\+::newdawn\+::slick\+::tools\+::peditor\+::\+Emitter\+List}}
+\subsubsection{\texorpdfstring{set\+Selected()}{setSelected()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+tools.\+peditor.\+Emitter\+List.\+set\+Selected (\begin{DoxyParamCaption}\item[{int}]{index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Set the currently selected index in the list
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & The index to be selected \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+117                                        \{
+118         \textcolor{keywordflow}{if} (index < \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_emitter_list_af49e1d51ea3ee483a77a30ce7aaa6d89}{emitters}}.size()) \{
+119             \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_emitter_list_a201acbbfa375f50045f4f87452a9c722}{list}}.setSelectedIndex(index);
+120         \}
+121     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_emitter_list_a7adaa05d68e52574bcb10b551bbc081d}\label{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_emitter_list_a7adaa05d68e52574bcb10b551bbc081d}} 
+\index{org\+::newdawn\+::slick\+::tools\+::peditor\+::\+Emitter\+List@{org\+::newdawn\+::slick\+::tools\+::peditor\+::\+Emitter\+List}!update@{update}}
+\index{update@{update}!org\+::newdawn\+::slick\+::tools\+::peditor\+::\+Emitter\+List@{org\+::newdawn\+::slick\+::tools\+::peditor\+::\+Emitter\+List}}
+\subsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+tools.\+peditor.\+Emitter\+List.\+update (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1particles_1_1_configurable_emitter}{Configurable\+Emitter}}}]{emitter }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Update the visual state of the specified emitter in the list
+
+
+\begin{DoxyParams}{Parameters}
+{\em emitter} & The emitter to be updated \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+128                                                     \{
+129         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_emitter_list_af49e1d51ea3ee483a77a30ce7aaa6d89}{emitters}}.set(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_emitter_list_af49e1d51ea3ee483a77a30ce7aaa6d89}{emitters}}.indexOf(emitter), emitter);
+130     \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_emitter_list_a8917d12ded4e0e597c9ef64fa7812aee}\label{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_emitter_list_a8917d12ded4e0e597c9ef64fa7812aee}} 
+\index{org\+::newdawn\+::slick\+::tools\+::peditor\+::\+Emitter\+List@{org\+::newdawn\+::slick\+::tools\+::peditor\+::\+Emitter\+List}!add@{add}}
+\index{add@{add}!org\+::newdawn\+::slick\+::tools\+::peditor\+::\+Emitter\+List@{org\+::newdawn\+::slick\+::tools\+::peditor\+::\+Emitter\+List}}
+\subsubsection{\texorpdfstring{add}{add}}
+{\footnotesize\ttfamily J\+Button org.\+newdawn.\+slick.\+tools.\+peditor.\+Emitter\+List.\+add = new J\+Button(\char`\"{}Add\char`\"{})\hspace{0.3cm}{\ttfamily [private]}}
+
+Button to add an emitter to the list \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_emitter_list_ab4a9e11fc917db0ed6c38a4980a8ee4c}\label{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_emitter_list_ab4a9e11fc917db0ed6c38a4980a8ee4c}} 
+\index{org\+::newdawn\+::slick\+::tools\+::peditor\+::\+Emitter\+List@{org\+::newdawn\+::slick\+::tools\+::peditor\+::\+Emitter\+List}!checks@{checks}}
+\index{checks@{checks}!org\+::newdawn\+::slick\+::tools\+::peditor\+::\+Emitter\+List@{org\+::newdawn\+::slick\+::tools\+::peditor\+::\+Emitter\+List}}
+\subsubsection{\texorpdfstring{checks}{checks}}
+{\footnotesize\ttfamily Hash\+Map org.\+newdawn.\+slick.\+tools.\+peditor.\+Emitter\+List.\+checks = new Hash\+Map()\hspace{0.3cm}{\ttfamily [private]}}
+
+The map from emitter to J\+Check\+Box in the list \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_emitter_list_af49e1d51ea3ee483a77a30ce7aaa6d89}\label{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_emitter_list_af49e1d51ea3ee483a77a30ce7aaa6d89}} 
+\index{org\+::newdawn\+::slick\+::tools\+::peditor\+::\+Emitter\+List@{org\+::newdawn\+::slick\+::tools\+::peditor\+::\+Emitter\+List}!emitters@{emitters}}
+\index{emitters@{emitters}!org\+::newdawn\+::slick\+::tools\+::peditor\+::\+Emitter\+List@{org\+::newdawn\+::slick\+::tools\+::peditor\+::\+Emitter\+List}}
+\subsubsection{\texorpdfstring{emitters}{emitters}}
+{\footnotesize\ttfamily Default\+List\+Model org.\+newdawn.\+slick.\+tools.\+peditor.\+Emitter\+List.\+emitters = new Default\+List\+Model()\hspace{0.3cm}{\ttfamily [private]}}
+
+The actual list of emitters \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_emitter_list_a65e90671226a94c9d05cae2c3bfd7728}\label{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_emitter_list_a65e90671226a94c9d05cae2c3bfd7728}} 
+\index{org\+::newdawn\+::slick\+::tools\+::peditor\+::\+Emitter\+List@{org\+::newdawn\+::slick\+::tools\+::peditor\+::\+Emitter\+List}!last\+Select@{last\+Select}}
+\index{last\+Select@{last\+Select}!org\+::newdawn\+::slick\+::tools\+::peditor\+::\+Emitter\+List@{org\+::newdawn\+::slick\+::tools\+::peditor\+::\+Emitter\+List}}
+\subsubsection{\texorpdfstring{last\+Select}{lastSelect}}
+{\footnotesize\ttfamily int org.\+newdawn.\+slick.\+tools.\+peditor.\+Emitter\+List.\+last\+Select = -\/1\hspace{0.3cm}{\ttfamily [private]}}
+
+The last selected emitter (index into the list) \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_emitter_list_a201acbbfa375f50045f4f87452a9c722}\label{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_emitter_list_a201acbbfa375f50045f4f87452a9c722}} 
+\index{org\+::newdawn\+::slick\+::tools\+::peditor\+::\+Emitter\+List@{org\+::newdawn\+::slick\+::tools\+::peditor\+::\+Emitter\+List}!list@{list}}
+\index{list@{list}!org\+::newdawn\+::slick\+::tools\+::peditor\+::\+Emitter\+List@{org\+::newdawn\+::slick\+::tools\+::peditor\+::\+Emitter\+List}}
+\subsubsection{\texorpdfstring{list}{list}}
+{\footnotesize\ttfamily J\+List org.\+newdawn.\+slick.\+tools.\+peditor.\+Emitter\+List.\+list = new J\+List(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_emitter_list_af49e1d51ea3ee483a77a30ce7aaa6d89}{emitters}})\hspace{0.3cm}{\ttfamily [private]}}
+
+The visual list of controllable emitters \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_emitter_list_ac7b91624c7504f3ea8fb21a71aba6b48}\label{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_emitter_list_ac7b91624c7504f3ea8fb21a71aba6b48}} 
+\index{org\+::newdawn\+::slick\+::tools\+::peditor\+::\+Emitter\+List@{org\+::newdawn\+::slick\+::tools\+::peditor\+::\+Emitter\+List}!remove@{remove}}
+\index{remove@{remove}!org\+::newdawn\+::slick\+::tools\+::peditor\+::\+Emitter\+List@{org\+::newdawn\+::slick\+::tools\+::peditor\+::\+Emitter\+List}}
+\subsubsection{\texorpdfstring{remove}{remove}}
+{\footnotesize\ttfamily J\+Button org.\+newdawn.\+slick.\+tools.\+peditor.\+Emitter\+List.\+remove = new J\+Button(\char`\"{}Remove\char`\"{})\hspace{0.3cm}{\ttfamily [private]}}
+
+Button to remove an emitter from the list 

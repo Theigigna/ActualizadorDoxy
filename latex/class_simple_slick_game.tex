@@ -1,0 +1,150 @@
+\hypertarget{class_simple_slick_game}{}\section{Simple\+Slick\+Game Class Reference}
+\label{class_simple_slick_game}\index{Simple\+Slick\+Game@{Simple\+Slick\+Game}}
+Inheritance diagram for Simple\+Slick\+Game\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.522012cm]{class_simple_slick_game}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_simple_slick_game_a4e58074dc344280962a5db792e242612}{Simple\+Slick\+Game}} (String gamename)
+\item 
+void \mbox{\hyperlink{class_simple_slick_game_a2380b54e7768fd10b9959866dffc57ce}{init}} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_game_container}{Game\+Container}} gc)  throws Slick\+Exception 
+\item 
+void \mbox{\hyperlink{class_simple_slick_game_aea7cb63494fc122b2de53f909910a2cd}{update}} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_game_container}{Game\+Container}} gc, int i)  throws Slick\+Exception 
+\item 
+void \mbox{\hyperlink{class_simple_slick_game_a7c65120173cde5294f3c4b7aa733b00a}{render}} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_game_container}{Game\+Container}} gc, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_graphics}{Graphics}} g)  throws Slick\+Exception 	
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{class_simple_slick_game_a8d7c9dfdb647da562993ab6deb8c562d}{main}} (String\mbox{[}$\,$\mbox{]} args)
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_simple_slick_game_a4e58074dc344280962a5db792e242612}\label{class_simple_slick_game_a4e58074dc344280962a5db792e242612}} 
+\index{Simple\+Slick\+Game@{Simple\+Slick\+Game}!Simple\+Slick\+Game@{Simple\+Slick\+Game}}
+\index{Simple\+Slick\+Game@{Simple\+Slick\+Game}!Simple\+Slick\+Game@{Simple\+Slick\+Game}}
+\subsubsection{\texorpdfstring{Simple\+Slick\+Game()}{SimpleSlickGame()}}
+{\footnotesize\ttfamily Simple\+Slick\+Game.\+Simple\+Slick\+Game (\begin{DoxyParamCaption}\item[{String}]{gamename }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+13     \{
+14         super(gamename);
+15     \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_simple_slick_game_a2380b54e7768fd10b9959866dffc57ce}\label{class_simple_slick_game_a2380b54e7768fd10b9959866dffc57ce}} 
+\index{Simple\+Slick\+Game@{Simple\+Slick\+Game}!init@{init}}
+\index{init@{init}!Simple\+Slick\+Game@{Simple\+Slick\+Game}}
+\subsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily void Simple\+Slick\+Game.\+init (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_game_container}{Game\+Container}}}]{container }\end{DoxyParamCaption}) throws \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_slick_exception}{Slick\+Exception}}\hspace{0.3cm}{\ttfamily [inline]}}
+
+Initialise the game. This can be used to load static resources. It\textquotesingle{}s called before the game loop starts
+
+
+\begin{DoxyParams}{Parameters}
+{\em container} & The container holding the game \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Slick\+Exception} & Throw to indicate an internal error \\
+\hline
+\end{DoxyExceptions}
+
+
+Implements \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1_game_ad2dd6affab08bb8fdb5fab0815957b7a}{org.\+newdawn.\+slick.\+Game}}.
+
+
+\begin{DoxyCode}
+18 \{\}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_simple_slick_game_a8d7c9dfdb647da562993ab6deb8c562d}\label{class_simple_slick_game_a8d7c9dfdb647da562993ab6deb8c562d}} 
+\index{Simple\+Slick\+Game@{Simple\+Slick\+Game}!main@{main}}
+\index{main@{main}!Simple\+Slick\+Game@{Simple\+Slick\+Game}}
+\subsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily static void Simple\+Slick\+Game.\+main (\begin{DoxyParamCaption}\item[{String \mbox{[}$\,$\mbox{]}}]{args }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+\begin{DoxyCode}
+30     \{
+31         \textcolor{keywordflow}{try}
+32         \{
+33             \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_app_game_container}{AppGameContainer}} appgc;
+34             appgc = \textcolor{keyword}{new} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_app_game_container}{AppGameContainer}}(\textcolor{keyword}{new} \mbox{\hyperlink{class_simple_slick_game_a4e58074dc344280962a5db792e242612}{SimpleSlickGame}}(\textcolor{stringliteral}{"Simple Slick
+       Game"}));
+35             appgc.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_app_game_container_aa2de68db61ddd3917a8edc0177ebdfe3}{setDisplayMode}}(640, 480, \textcolor{keyword}{false});
+36             appgc.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_app_game_container_adcadc0e560e64d03be24c817931fdd54}{start}}();
+37         \}
+38         \textcolor{keywordflow}{catch} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_slick_exception}{SlickException}} ex)
+39         \{
+40             Logger.getLogger(\mbox{\hyperlink{class_simple_slick_game}{SimpleSlickGame}}.class.getName()).log(Level.SEVERE, null, ex);
+41         \}
+42     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_simple_slick_game_a7c65120173cde5294f3c4b7aa733b00a}\label{class_simple_slick_game_a7c65120173cde5294f3c4b7aa733b00a}} 
+\index{Simple\+Slick\+Game@{Simple\+Slick\+Game}!render@{render}}
+\index{render@{render}!Simple\+Slick\+Game@{Simple\+Slick\+Game}}
+\subsubsection{\texorpdfstring{render()}{render()}}
+{\footnotesize\ttfamily void Simple\+Slick\+Game.\+render (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_game_container}{Game\+Container}}}]{container,  }\item[{\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_graphics}{Graphics}}}]{g }\end{DoxyParamCaption}) throws \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_slick_exception}{Slick\+Exception}}\hspace{0.3cm}{\ttfamily [inline]}}
+
+Render the game\textquotesingle{}s screen here.
+
+
+\begin{DoxyParams}{Parameters}
+{\em container} & The container holing this game \\
+\hline
+{\em g} & The graphics context that can be used to render. However, normal rendering routines can also be used. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Slick\+Exception} & Throw to indicate a internal error \\
+\hline
+\end{DoxyExceptions}
+
+
+Implements \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1_game_af1a4670d43eb3ba04dfcf55ab1975b64}{org.\+newdawn.\+slick.\+Game}}.
+
+
+\begin{DoxyCode}
+25     \{
+26         g.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_graphics_a94021ab8d17140db411b6bb92f35ef31}{drawString}}(\textcolor{stringliteral}{"Howdy!"}, 10, 10);
+27     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_simple_slick_game_aea7cb63494fc122b2de53f909910a2cd}\label{class_simple_slick_game_aea7cb63494fc122b2de53f909910a2cd}} 
+\index{Simple\+Slick\+Game@{Simple\+Slick\+Game}!update@{update}}
+\index{update@{update}!Simple\+Slick\+Game@{Simple\+Slick\+Game}}
+\subsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void Simple\+Slick\+Game.\+update (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_game_container}{Game\+Container}}}]{container,  }\item[{int}]{delta }\end{DoxyParamCaption}) throws \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_slick_exception}{Slick\+Exception}}\hspace{0.3cm}{\ttfamily [inline]}}
+
+Update the game logic here. No rendering should take place in this method though it won\textquotesingle{}t do any harm.
+
+
+\begin{DoxyParams}{Parameters}
+{\em container} & The container holing this game \\
+\hline
+{\em delta} & The amount of time thats passed since last update in milliseconds \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Slick\+Exception} & Throw to indicate an internal error \\
+\hline
+\end{DoxyExceptions}
+
+
+Implements \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1_game_ab07b2e9463ee4631620dde0de25bdee8}{org.\+newdawn.\+slick.\+Game}}.
+
+
+\begin{DoxyCode}
+21 \{\}
+\end{DoxyCode}

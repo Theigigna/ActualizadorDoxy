@@ -1,0 +1,572 @@
+\hypertarget{classorg_1_1newdawn_1_1slick_1_1openal_1_1_open_a_l_stream_player}{}\section{org.\+newdawn.\+slick.\+openal.\+Open\+A\+L\+Stream\+Player Class Reference}
+\label{classorg_1_1newdawn_1_1slick_1_1openal_1_1_open_a_l_stream_player}\index{org.\+newdawn.\+slick.\+openal.\+Open\+A\+L\+Stream\+Player@{org.\+newdawn.\+slick.\+openal.\+Open\+A\+L\+Stream\+Player}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_open_a_l_stream_player_af1d0e6ffda79b5da70fb520231954be5}{Open\+A\+L\+Stream\+Player}} (int \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_open_a_l_stream_player_abe9f7d1ac52a705aa359cf3eb1c69464}{source}}, String \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_open_a_l_stream_player_ab01c1f73849aaeae84d969cbd05d4683}{ref}})
+\item 
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_open_a_l_stream_player_a8ad9837700d6ade18caa42643c96c916}{Open\+A\+L\+Stream\+Player}} (int \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_open_a_l_stream_player_abe9f7d1ac52a705aa359cf3eb1c69464}{source}}, U\+RL \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_open_a_l_stream_player_a2f903c9bc54f0a1d739ad917a8aa97f6}{url}})
+\item 
+String \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_open_a_l_stream_player_ac995066157d65c9191cbdb7ef2c0d2f4}{get\+Source}} ()
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_open_a_l_stream_player_a6b07841e79d68f51bbc8fd33527e296a}{play}} (boolean \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_open_a_l_stream_player_a377b3e28ef63fca0134898a07b086e7f}{loop}})  throws I\+O\+Exception 
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_open_a_l_stream_player_a7bfabcfeaa56d6561604d3936d9d1a51}{setup}} (float \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_open_a_l_stream_player_a3841668c39ff3eccf93978ee5ca7bc3e}{pitch}})
+\item 
+boolean \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_open_a_l_stream_player_a64962f56b4c366c19fe3c2bff2f55842}{done}} ()
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_open_a_l_stream_player_af92a75dd6caa02680b7520511137ae8d}{update}} ()
+\item 
+boolean \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_open_a_l_stream_player_a2facc6d1dcd937dbdc5dadcbb81929ed}{stream}} (int buffer\+Id)
+\item 
+boolean \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_open_a_l_stream_player_ae35c80f50f55bb5efc88aebf809f7d5b}{set\+Position}} (float position)
+\item 
+float \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_open_a_l_stream_player_a9abaf98266809fa03b92f42744a3d332}{get\+Position}} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static final int \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_open_a_l_stream_player_a6fabd8395e8301d9b2ea613f8b7d739c}{B\+U\+F\+F\+E\+R\+\_\+\+C\+O\+U\+NT}} = 3
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_open_a_l_stream_player_a765f3c95de540350a0ed4902a6d9792a}{init\+Streams}} ()  throws I\+O\+Exception 
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_open_a_l_stream_player_a6819d005f935905cb6c8419154ed05a5}{remove\+Buffers}} ()
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_open_a_l_stream_player_a42538934813aebc2b0b210953afc74d6}{start\+Playback}} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+byte \mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_open_a_l_stream_player_a43f0da73ce6a383cda06b37d7927f58f}{buffer}} = new byte\mbox{[}\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_open_a_l_stream_player_a15d60c799362a5a58f98c2b4d9eaeeed}{section\+Size}}\mbox{]}
+\item 
+Int\+Buffer \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_open_a_l_stream_player_a97e8e27c6864fcc5abe85728a3e0a60b}{buffer\+Names}}
+\item 
+Byte\+Buffer \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_open_a_l_stream_player_a7bbb81d01fec7e276db23218472f642f}{buffer\+Data}} = Buffer\+Utils.\+create\+Byte\+Buffer(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_open_a_l_stream_player_a15d60c799362a5a58f98c2b4d9eaeeed}{section\+Size}})
+\item 
+Int\+Buffer \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_open_a_l_stream_player_a57522a0a0a5ef27a24b13672a7637174}{unqueued}} = Buffer\+Utils.\+create\+Int\+Buffer(1)
+\item 
+int \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_open_a_l_stream_player_abe9f7d1ac52a705aa359cf3eb1c69464}{source}}
+\item 
+int \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_open_a_l_stream_player_a071d3388ce422c839a62047c0a966315}{remaining\+Buffer\+Count}}
+\item 
+boolean \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_open_a_l_stream_player_a377b3e28ef63fca0134898a07b086e7f}{loop}}
+\item 
+boolean \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_open_a_l_stream_player_aacfd7caed9c004b1f0828d8e5bf3e2b2}{done}} = true
+\item 
+\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1openal_1_1_audio_input_stream}{Audio\+Input\+Stream}} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_open_a_l_stream_player_a694870dca2079ff6e6269a394a126d17}{audio}}
+\item 
+String \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_open_a_l_stream_player_ab01c1f73849aaeae84d969cbd05d4683}{ref}}
+\item 
+U\+RL \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_open_a_l_stream_player_a2f903c9bc54f0a1d739ad917a8aa97f6}{url}}
+\item 
+float \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_open_a_l_stream_player_a3841668c39ff3eccf93978ee5ca7bc3e}{pitch}}
+\item 
+float \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_open_a_l_stream_player_a41556aeb2058a1c2dd04177e1d61d43c}{position\+Offset}}
+\end{DoxyCompactItemize}
+\subsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static final int \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_open_a_l_stream_player_a15d60c799362a5a58f98c2b4d9eaeeed}{section\+Size}} = 4096 $\ast$ 20
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A generic tool to work on a supplied stream, pulling out P\+CM data and buffered it to Open\+AL as required.
+
+\begin{DoxyAuthor}{Author}
+Kevin Glass 
+
+Nathan Sweet \href{mailto:misc@n4te.com}{\tt misc@n4te.\+com} 
+
+Rockstar play and set\+Position cleanup 
+\end{DoxyAuthor}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1openal_1_1_open_a_l_stream_player_af1d0e6ffda79b5da70fb520231954be5}\label{classorg_1_1newdawn_1_1slick_1_1openal_1_1_open_a_l_stream_player_af1d0e6ffda79b5da70fb520231954be5}} 
+\index{org\+::newdawn\+::slick\+::openal\+::\+Open\+A\+L\+Stream\+Player@{org\+::newdawn\+::slick\+::openal\+::\+Open\+A\+L\+Stream\+Player}!Open\+A\+L\+Stream\+Player@{Open\+A\+L\+Stream\+Player}}
+\index{Open\+A\+L\+Stream\+Player@{Open\+A\+L\+Stream\+Player}!org\+::newdawn\+::slick\+::openal\+::\+Open\+A\+L\+Stream\+Player@{org\+::newdawn\+::slick\+::openal\+::\+Open\+A\+L\+Stream\+Player}}
+\subsubsection{\texorpdfstring{Open\+A\+L\+Stream\+Player()}{OpenALStreamPlayer()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily org.\+newdawn.\+slick.\+openal.\+Open\+A\+L\+Stream\+Player.\+Open\+A\+L\+Stream\+Player (\begin{DoxyParamCaption}\item[{int}]{source,  }\item[{String}]{ref }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Create a new player to work on an audio stream
+
+
+\begin{DoxyParams}{Parameters}
+{\em source} & The source on which we\textquotesingle{}ll play the audio \\
+\hline
+{\em ref} & A reference to the audio file to stream \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+62                                                       \{
+63         this.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_open_a_l_stream_player_abe9f7d1ac52a705aa359cf3eb1c69464}{source}} = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_open_a_l_stream_player_abe9f7d1ac52a705aa359cf3eb1c69464}{source}};
+64         this.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_open_a_l_stream_player_ab01c1f73849aaeae84d969cbd05d4683}{ref}} = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_open_a_l_stream_player_ab01c1f73849aaeae84d969cbd05d4683}{ref}};
+65         
+66         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_open_a_l_stream_player_a97e8e27c6864fcc5abe85728a3e0a60b}{bufferNames}} = BufferUtils.createIntBuffer(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_open_a_l_stream_player_a6fabd8395e8301d9b2ea613f8b7d739c}{BUFFER\_COUNT}});
+67         AL10.alGenBuffers(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_open_a_l_stream_player_a97e8e27c6864fcc5abe85728a3e0a60b}{bufferNames}});
+68     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1openal_1_1_open_a_l_stream_player_a8ad9837700d6ade18caa42643c96c916}\label{classorg_1_1newdawn_1_1slick_1_1openal_1_1_open_a_l_stream_player_a8ad9837700d6ade18caa42643c96c916}} 
+\index{org\+::newdawn\+::slick\+::openal\+::\+Open\+A\+L\+Stream\+Player@{org\+::newdawn\+::slick\+::openal\+::\+Open\+A\+L\+Stream\+Player}!Open\+A\+L\+Stream\+Player@{Open\+A\+L\+Stream\+Player}}
+\index{Open\+A\+L\+Stream\+Player@{Open\+A\+L\+Stream\+Player}!org\+::newdawn\+::slick\+::openal\+::\+Open\+A\+L\+Stream\+Player@{org\+::newdawn\+::slick\+::openal\+::\+Open\+A\+L\+Stream\+Player}}
+\subsubsection{\texorpdfstring{Open\+A\+L\+Stream\+Player()}{OpenALStreamPlayer()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily org.\+newdawn.\+slick.\+openal.\+Open\+A\+L\+Stream\+Player.\+Open\+A\+L\+Stream\+Player (\begin{DoxyParamCaption}\item[{int}]{source,  }\item[{U\+RL}]{url }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Create a new player to work on an audio stream
+
+
+\begin{DoxyParams}{Parameters}
+{\em source} & The source on which we\textquotesingle{}ll play the audio \\
+\hline
+{\em url} & A reference to the audio file to stream \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+76                                                    \{
+77         this.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_open_a_l_stream_player_abe9f7d1ac52a705aa359cf3eb1c69464}{source}} = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_open_a_l_stream_player_abe9f7d1ac52a705aa359cf3eb1c69464}{source}};
+78         this.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_open_a_l_stream_player_a2f903c9bc54f0a1d739ad917a8aa97f6}{url}} = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_open_a_l_stream_player_a2f903c9bc54f0a1d739ad917a8aa97f6}{url}};
+79 
+80         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_open_a_l_stream_player_a97e8e27c6864fcc5abe85728a3e0a60b}{bufferNames}} = BufferUtils.createIntBuffer(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_open_a_l_stream_player_a6fabd8395e8301d9b2ea613f8b7d739c}{BUFFER\_COUNT}});
+81         AL10.alGenBuffers(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_open_a_l_stream_player_a97e8e27c6864fcc5abe85728a3e0a60b}{bufferNames}});
+82     \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1openal_1_1_open_a_l_stream_player_a64962f56b4c366c19fe3c2bff2f55842}\label{classorg_1_1newdawn_1_1slick_1_1openal_1_1_open_a_l_stream_player_a64962f56b4c366c19fe3c2bff2f55842}} 
+\index{org\+::newdawn\+::slick\+::openal\+::\+Open\+A\+L\+Stream\+Player@{org\+::newdawn\+::slick\+::openal\+::\+Open\+A\+L\+Stream\+Player}!done@{done}}
+\index{done@{done}!org\+::newdawn\+::slick\+::openal\+::\+Open\+A\+L\+Stream\+Player@{org\+::newdawn\+::slick\+::openal\+::\+Open\+A\+L\+Stream\+Player}}
+\subsubsection{\texorpdfstring{done()}{done()}}
+{\footnotesize\ttfamily boolean org.\+newdawn.\+slick.\+openal.\+Open\+A\+L\+Stream\+Player.\+done (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Check if the playback is complete. Note this will never return true if we\textquotesingle{}re looping
+
+\begin{DoxyReturn}{Returns}
+True if we\textquotesingle{}re looping 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+162                           \{
+163         \textcolor{keywordflow}{return} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_open_a_l_stream_player_a64962f56b4c366c19fe3c2bff2f55842}{done}};
+164     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1openal_1_1_open_a_l_stream_player_a9abaf98266809fa03b92f42744a3d332}\label{classorg_1_1newdawn_1_1slick_1_1openal_1_1_open_a_l_stream_player_a9abaf98266809fa03b92f42744a3d332}} 
+\index{org\+::newdawn\+::slick\+::openal\+::\+Open\+A\+L\+Stream\+Player@{org\+::newdawn\+::slick\+::openal\+::\+Open\+A\+L\+Stream\+Player}!get\+Position@{get\+Position}}
+\index{get\+Position@{get\+Position}!org\+::newdawn\+::slick\+::openal\+::\+Open\+A\+L\+Stream\+Player@{org\+::newdawn\+::slick\+::openal\+::\+Open\+A\+L\+Stream\+Player}}
+\subsubsection{\texorpdfstring{get\+Position()}{getPosition()}}
+{\footnotesize\ttfamily float org.\+newdawn.\+slick.\+openal.\+Open\+A\+L\+Stream\+Player.\+get\+Position (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Return the current playing position in the sound
+
+\begin{DoxyReturn}{Returns}
+The current position in seconds. 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+318                                \{
+319         \textcolor{keywordflow}{return} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_open_a_l_stream_player_a41556aeb2058a1c2dd04177e1d61d43c}{positionOffset}} + AL10.alGetSourcef(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_open_a_l_stream_player_abe9f7d1ac52a705aa359cf3eb1c69464}{source}}, AL11.AL\_SEC\_OFFSET);
+320     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1openal_1_1_open_a_l_stream_player_ac995066157d65c9191cbdb7ef2c0d2f4}\label{classorg_1_1newdawn_1_1slick_1_1openal_1_1_open_a_l_stream_player_ac995066157d65c9191cbdb7ef2c0d2f4}} 
+\index{org\+::newdawn\+::slick\+::openal\+::\+Open\+A\+L\+Stream\+Player@{org\+::newdawn\+::slick\+::openal\+::\+Open\+A\+L\+Stream\+Player}!get\+Source@{get\+Source}}
+\index{get\+Source@{get\+Source}!org\+::newdawn\+::slick\+::openal\+::\+Open\+A\+L\+Stream\+Player@{org\+::newdawn\+::slick\+::openal\+::\+Open\+A\+L\+Stream\+Player}}
+\subsubsection{\texorpdfstring{get\+Source()}{getSource()}}
+{\footnotesize\ttfamily String org.\+newdawn.\+slick.\+openal.\+Open\+A\+L\+Stream\+Player.\+get\+Source (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get the source of this stream
+
+\begin{DoxyReturn}{Returns}
+The name of the source of string 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+111                               \{
+112         \textcolor{keywordflow}{return} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_open_a_l_stream_player_a2f903c9bc54f0a1d739ad917a8aa97f6}{url}} == null) ? \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_open_a_l_stream_player_ab01c1f73849aaeae84d969cbd05d4683}{ref}} : \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_open_a_l_stream_player_a2f903c9bc54f0a1d739ad917a8aa97f6}{url}}.toString();
+113     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1openal_1_1_open_a_l_stream_player_a765f3c95de540350a0ed4902a6d9792a}\label{classorg_1_1newdawn_1_1slick_1_1openal_1_1_open_a_l_stream_player_a765f3c95de540350a0ed4902a6d9792a}} 
+\index{org\+::newdawn\+::slick\+::openal\+::\+Open\+A\+L\+Stream\+Player@{org\+::newdawn\+::slick\+::openal\+::\+Open\+A\+L\+Stream\+Player}!init\+Streams@{init\+Streams}}
+\index{init\+Streams@{init\+Streams}!org\+::newdawn\+::slick\+::openal\+::\+Open\+A\+L\+Stream\+Player@{org\+::newdawn\+::slick\+::openal\+::\+Open\+A\+L\+Stream\+Player}}
+\subsubsection{\texorpdfstring{init\+Streams()}{initStreams()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+openal.\+Open\+A\+L\+Stream\+Player.\+init\+Streams (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws I\+O\+Exception\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+Initialise our connection to the underlying resource
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em I\+O\+Exception} & Indicates a failure to open the underling resource \\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyCode}
+89                                                   \{
+90         \textcolor{keywordflow}{if} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_open_a_l_stream_player_a694870dca2079ff6e6269a394a126d17}{audio}} != null) \{
+91             \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_open_a_l_stream_player_a694870dca2079ff6e6269a394a126d17}{audio}}.\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1openal_1_1_audio_input_stream_a2b70decb677f0cc88365a689f4953eeb}{close}}();
+92         \}
+93         
+94         OggInputStream \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_open_a_l_stream_player_a694870dca2079ff6e6269a394a126d17}{audio}};
+95         
+96         \textcolor{keywordflow}{if} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_open_a_l_stream_player_a2f903c9bc54f0a1d739ad917a8aa97f6}{url}} != null) \{
+97             \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_open_a_l_stream_player_a694870dca2079ff6e6269a394a126d17}{audio}} = \textcolor{keyword}{new} OggInputStream(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_open_a_l_stream_player_a2f903c9bc54f0a1d739ad917a8aa97f6}{url}}.openStream());
+98         \} \textcolor{keywordflow}{else} \{
+99             \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_open_a_l_stream_player_a694870dca2079ff6e6269a394a126d17}{audio}} = \textcolor{keyword}{new} OggInputStream(ResourceLoader.getResourceAsStream(
+      \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_open_a_l_stream_player_ab01c1f73849aaeae84d969cbd05d4683}{ref}}));
+100         \}
+101         
+102         this.audio = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_open_a_l_stream_player_a694870dca2079ff6e6269a394a126d17}{audio}};
+103         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_open_a_l_stream_player_a41556aeb2058a1c2dd04177e1d61d43c}{positionOffset}} = 0;
+104     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1openal_1_1_open_a_l_stream_player_a6b07841e79d68f51bbc8fd33527e296a}\label{classorg_1_1newdawn_1_1slick_1_1openal_1_1_open_a_l_stream_player_a6b07841e79d68f51bbc8fd33527e296a}} 
+\index{org\+::newdawn\+::slick\+::openal\+::\+Open\+A\+L\+Stream\+Player@{org\+::newdawn\+::slick\+::openal\+::\+Open\+A\+L\+Stream\+Player}!play@{play}}
+\index{play@{play}!org\+::newdawn\+::slick\+::openal\+::\+Open\+A\+L\+Stream\+Player@{org\+::newdawn\+::slick\+::openal\+::\+Open\+A\+L\+Stream\+Player}}
+\subsubsection{\texorpdfstring{play()}{play()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+openal.\+Open\+A\+L\+Stream\+Player.\+play (\begin{DoxyParamCaption}\item[{boolean}]{loop }\end{DoxyParamCaption}) throws I\+O\+Exception\hspace{0.3cm}{\ttfamily [inline]}}
+
+Start this stream playing
+
+
+\begin{DoxyParams}{Parameters}
+{\em loop} & True if the stream should loop \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em I\+O\+Exception} & Indicates a failure to read from the stream \\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyCode}
+135                                                       \{
+136         this.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_open_a_l_stream_player_a377b3e28ef63fca0134898a07b086e7f}{loop}} = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_open_a_l_stream_player_a377b3e28ef63fca0134898a07b086e7f}{loop}};
+137         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_open_a_l_stream_player_a765f3c95de540350a0ed4902a6d9792a}{initStreams}}();
+138         
+139         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_open_a_l_stream_player_a64962f56b4c366c19fe3c2bff2f55842}{done}} = \textcolor{keyword}{false};
+140 
+141         AL10.alSourceStop(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_open_a_l_stream_player_abe9f7d1ac52a705aa359cf3eb1c69464}{source}});
+142         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_open_a_l_stream_player_a6819d005f935905cb6c8419154ed05a5}{removeBuffers}}();
+143         
+144         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_open_a_l_stream_player_a42538934813aebc2b0b210953afc74d6}{startPlayback}}();
+145     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1openal_1_1_open_a_l_stream_player_a6819d005f935905cb6c8419154ed05a5}\label{classorg_1_1newdawn_1_1slick_1_1openal_1_1_open_a_l_stream_player_a6819d005f935905cb6c8419154ed05a5}} 
+\index{org\+::newdawn\+::slick\+::openal\+::\+Open\+A\+L\+Stream\+Player@{org\+::newdawn\+::slick\+::openal\+::\+Open\+A\+L\+Stream\+Player}!remove\+Buffers@{remove\+Buffers}}
+\index{remove\+Buffers@{remove\+Buffers}!org\+::newdawn\+::slick\+::openal\+::\+Open\+A\+L\+Stream\+Player@{org\+::newdawn\+::slick\+::openal\+::\+Open\+A\+L\+Stream\+Player}}
+\subsubsection{\texorpdfstring{remove\+Buffers()}{removeBuffers()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+openal.\+Open\+A\+L\+Stream\+Player.\+remove\+Buffers (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+Clean up the buffers applied to the sound source 
+\begin{DoxyCode}
+118                                  \{
+119         IntBuffer \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_open_a_l_stream_player_a43f0da73ce6a383cda06b37d7927f58f}{buffer}} = BufferUtils.createIntBuffer(1);
+120         \textcolor{keywordtype}{int} queued = AL10.alGetSourcei(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_open_a_l_stream_player_abe9f7d1ac52a705aa359cf3eb1c69464}{source}}, AL10.AL\_BUFFERS\_QUEUED);
+121         
+122         \textcolor{keywordflow}{while} (queued > 0)
+123         \{
+124             AL10.alSourceUnqueueBuffers(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_open_a_l_stream_player_abe9f7d1ac52a705aa359cf3eb1c69464}{source}}, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_open_a_l_stream_player_a43f0da73ce6a383cda06b37d7927f58f}{buffer}});
+125             queued--;
+126         \}
+127     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1openal_1_1_open_a_l_stream_player_ae35c80f50f55bb5efc88aebf809f7d5b}\label{classorg_1_1newdawn_1_1slick_1_1openal_1_1_open_a_l_stream_player_ae35c80f50f55bb5efc88aebf809f7d5b}} 
+\index{org\+::newdawn\+::slick\+::openal\+::\+Open\+A\+L\+Stream\+Player@{org\+::newdawn\+::slick\+::openal\+::\+Open\+A\+L\+Stream\+Player}!set\+Position@{set\+Position}}
+\index{set\+Position@{set\+Position}!org\+::newdawn\+::slick\+::openal\+::\+Open\+A\+L\+Stream\+Player@{org\+::newdawn\+::slick\+::openal\+::\+Open\+A\+L\+Stream\+Player}}
+\subsubsection{\texorpdfstring{set\+Position()}{setPosition()}}
+{\footnotesize\ttfamily boolean org.\+newdawn.\+slick.\+openal.\+Open\+A\+L\+Stream\+Player.\+set\+Position (\begin{DoxyParamCaption}\item[{float}]{position }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Seeks to a position in the music.
+
+
+\begin{DoxyParams}{Parameters}
+{\em position} & Position in seconds. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the setting of the position was successful 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+258                                                \{
+259         \textcolor{keywordflow}{try} \{
+260             \textcolor{keywordflow}{if} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_open_a_l_stream_player_a9abaf98266809fa03b92f42744a3d332}{getPosition}}() > position) \{
+261                 \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_open_a_l_stream_player_a765f3c95de540350a0ed4902a6d9792a}{initStreams}}();
+262             \}
+263 
+264             \textcolor{keywordtype}{float} sampleRate = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_open_a_l_stream_player_a694870dca2079ff6e6269a394a126d17}{audio}}.\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1openal_1_1_audio_input_stream_a461c4ad4304ff8d75693c93e525e0f85}{getRate}}();
+265             \textcolor{keywordtype}{float} sampleSize;
+266             \textcolor{keywordflow}{if} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_open_a_l_stream_player_a694870dca2079ff6e6269a394a126d17}{audio}}.\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1openal_1_1_audio_input_stream_a2bee5322dd7878c18fa8f16bd52bbdfa}{getChannels}}() > 1) \{
+267                 sampleSize = 4; \textcolor{comment}{// AL10.AL\_FORMAT\_STEREO16}
+268             \} \textcolor{keywordflow}{else} \{
+269                 sampleSize = 2; \textcolor{comment}{// AL10.AL\_FORMAT\_MONO16}
+270             \}
+271 
+272             \textcolor{keywordflow}{while} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_open_a_l_stream_player_a41556aeb2058a1c2dd04177e1d61d43c}{positionOffset}} < position) \{
+273                 \textcolor{keywordtype}{int} count = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_open_a_l_stream_player_a694870dca2079ff6e6269a394a126d17}{audio}}.\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1openal_1_1_audio_input_stream_a4e9ee99faa0551bca581a985e262d619}{read}}(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_open_a_l_stream_player_a43f0da73ce6a383cda06b37d7927f58f}{buffer}});
+274                 \textcolor{keywordflow}{if} (count != -1) \{
+275                     \textcolor{keywordtype}{float} bufferLength = (count / sampleSize) / sampleRate;
+276                     \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_open_a_l_stream_player_a41556aeb2058a1c2dd04177e1d61d43c}{positionOffset}} += bufferLength;
+277                 \} \textcolor{keywordflow}{else} \{
+278                     \textcolor{keywordflow}{if} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_open_a_l_stream_player_a377b3e28ef63fca0134898a07b086e7f}{loop}}) \{
+279                         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_open_a_l_stream_player_a765f3c95de540350a0ed4902a6d9792a}{initStreams}}();
+280                     \} \textcolor{keywordflow}{else} \{
+281                         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_open_a_l_stream_player_a64962f56b4c366c19fe3c2bff2f55842}{done}} = \textcolor{keyword}{true};
+282                     \}
+283                     \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+284                 \}
+285             \}
+286 
+287             \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_open_a_l_stream_player_a42538934813aebc2b0b210953afc74d6}{startPlayback}}(); 
+288 
+289             \textcolor{keywordflow}{return} \textcolor{keyword}{true};
+290         \} \textcolor{keywordflow}{catch} (IOException e) \{
+291             Log.error(e);
+292             \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+293         \}
+294     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1openal_1_1_open_a_l_stream_player_a7bfabcfeaa56d6561604d3936d9d1a51}\label{classorg_1_1newdawn_1_1slick_1_1openal_1_1_open_a_l_stream_player_a7bfabcfeaa56d6561604d3936d9d1a51}} 
+\index{org\+::newdawn\+::slick\+::openal\+::\+Open\+A\+L\+Stream\+Player@{org\+::newdawn\+::slick\+::openal\+::\+Open\+A\+L\+Stream\+Player}!setup@{setup}}
+\index{setup@{setup}!org\+::newdawn\+::slick\+::openal\+::\+Open\+A\+L\+Stream\+Player@{org\+::newdawn\+::slick\+::openal\+::\+Open\+A\+L\+Stream\+Player}}
+\subsubsection{\texorpdfstring{setup()}{setup()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+openal.\+Open\+A\+L\+Stream\+Player.\+setup (\begin{DoxyParamCaption}\item[{float}]{pitch }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Setup the playback properties
+
+
+\begin{DoxyParams}{Parameters}
+{\em pitch} & The pitch to play back at \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+152                                    \{
+153         this.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_open_a_l_stream_player_a3841668c39ff3eccf93978ee5ca7bc3e}{pitch}} = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_open_a_l_stream_player_a3841668c39ff3eccf93978ee5ca7bc3e}{pitch}};
+154     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1openal_1_1_open_a_l_stream_player_a42538934813aebc2b0b210953afc74d6}\label{classorg_1_1newdawn_1_1slick_1_1openal_1_1_open_a_l_stream_player_a42538934813aebc2b0b210953afc74d6}} 
+\index{org\+::newdawn\+::slick\+::openal\+::\+Open\+A\+L\+Stream\+Player@{org\+::newdawn\+::slick\+::openal\+::\+Open\+A\+L\+Stream\+Player}!start\+Playback@{start\+Playback}}
+\index{start\+Playback@{start\+Playback}!org\+::newdawn\+::slick\+::openal\+::\+Open\+A\+L\+Stream\+Player@{org\+::newdawn\+::slick\+::openal\+::\+Open\+A\+L\+Stream\+Player}}
+\subsubsection{\texorpdfstring{start\+Playback()}{startPlayback()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+openal.\+Open\+A\+L\+Stream\+Player.\+start\+Playback (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+Starts the streaming. 
+\begin{DoxyCode}
+299                                  \{
+300         AL10.alSourcei(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_open_a_l_stream_player_abe9f7d1ac52a705aa359cf3eb1c69464}{source}}, AL10.AL\_LOOPING, AL10.AL\_FALSE);
+301         AL10.alSourcef(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_open_a_l_stream_player_abe9f7d1ac52a705aa359cf3eb1c69464}{source}}, AL10.AL\_PITCH, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_open_a_l_stream_player_a3841668c39ff3eccf93978ee5ca7bc3e}{pitch}});
+302 
+303         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_open_a_l_stream_player_a071d3388ce422c839a62047c0a966315}{remainingBufferCount}} = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_open_a_l_stream_player_a6fabd8395e8301d9b2ea613f8b7d739c}{BUFFER\_COUNT}};
+304 
+305         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_open_a_l_stream_player_a6fabd8395e8301d9b2ea613f8b7d739c}{BUFFER\_COUNT}}; i++) \{
+306             \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_open_a_l_stream_player_a2facc6d1dcd937dbdc5dadcbb81929ed}{stream}}(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_open_a_l_stream_player_a97e8e27c6864fcc5abe85728a3e0a60b}{bufferNames}}.get(i));
+307         \}
+308 
+309         AL10.alSourceQueueBuffers(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_open_a_l_stream_player_abe9f7d1ac52a705aa359cf3eb1c69464}{source}}, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_open_a_l_stream_player_a97e8e27c6864fcc5abe85728a3e0a60b}{bufferNames}});
+310         AL10.alSourcePlay(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_open_a_l_stream_player_abe9f7d1ac52a705aa359cf3eb1c69464}{source}});
+311     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1openal_1_1_open_a_l_stream_player_a2facc6d1dcd937dbdc5dadcbb81929ed}\label{classorg_1_1newdawn_1_1slick_1_1openal_1_1_open_a_l_stream_player_a2facc6d1dcd937dbdc5dadcbb81929ed}} 
+\index{org\+::newdawn\+::slick\+::openal\+::\+Open\+A\+L\+Stream\+Player@{org\+::newdawn\+::slick\+::openal\+::\+Open\+A\+L\+Stream\+Player}!stream@{stream}}
+\index{stream@{stream}!org\+::newdawn\+::slick\+::openal\+::\+Open\+A\+L\+Stream\+Player@{org\+::newdawn\+::slick\+::openal\+::\+Open\+A\+L\+Stream\+Player}}
+\subsubsection{\texorpdfstring{stream()}{stream()}}
+{\footnotesize\ttfamily boolean org.\+newdawn.\+slick.\+openal.\+Open\+A\+L\+Stream\+Player.\+stream (\begin{DoxyParamCaption}\item[{int}]{buffer\+Id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Stream some data from the audio stream to the buffer indicates by the ID
+
+
+\begin{DoxyParams}{Parameters}
+{\em buffer\+Id} & The ID of the buffer to fill \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if another section was available 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+219                                         \{
+220         \textcolor{keywordflow}{try} \{
+221             \textcolor{keywordtype}{int} count = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_open_a_l_stream_player_a694870dca2079ff6e6269a394a126d17}{audio}}.\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1openal_1_1_audio_input_stream_a4e9ee99faa0551bca581a985e262d619}{read}}(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_open_a_l_stream_player_a43f0da73ce6a383cda06b37d7927f58f}{buffer}});
+222             
+223             \textcolor{keywordflow}{if} (count != -1) \{
+224                 \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_open_a_l_stream_player_a7bbb81d01fec7e276db23218472f642f}{bufferData}}.clear();
+225                 \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_open_a_l_stream_player_a7bbb81d01fec7e276db23218472f642f}{bufferData}}.put(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_open_a_l_stream_player_a43f0da73ce6a383cda06b37d7927f58f}{buffer}},0,count);
+226                 \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_open_a_l_stream_player_a7bbb81d01fec7e276db23218472f642f}{bufferData}}.flip();
+227 
+228                 \textcolor{keywordtype}{int} format = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_open_a_l_stream_player_a694870dca2079ff6e6269a394a126d17}{audio}}.\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1openal_1_1_audio_input_stream_a2bee5322dd7878c18fa8f16bd52bbdfa}{getChannels}}() > 1 ? AL10.AL\_FORMAT\_STEREO16 : AL10.
+      AL\_FORMAT\_MONO16;
+229                 \textcolor{keywordflow}{try} \{
+230                     AL10.alBufferData(bufferId, format, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_open_a_l_stream_player_a7bbb81d01fec7e276db23218472f642f}{bufferData}}, 
+      \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_open_a_l_stream_player_a694870dca2079ff6e6269a394a126d17}{audio}}.\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1openal_1_1_audio_input_stream_a461c4ad4304ff8d75693c93e525e0f85}{getRate}}());
+231                 \} \textcolor{keywordflow}{catch} (OpenALException e) \{
+232                     Log.error(\textcolor{stringliteral}{"Failed to loop buffer: "}+bufferId+\textcolor{stringliteral}{" "}+format+\textcolor{stringliteral}{" "}+count+\textcolor{stringliteral}{" "}+
+      \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_open_a_l_stream_player_a694870dca2079ff6e6269a394a126d17}{audio}}.\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1openal_1_1_audio_input_stream_a461c4ad4304ff8d75693c93e525e0f85}{getRate}}(), e);
+233                     \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+234                 \}
+235             \} \textcolor{keywordflow}{else} \{
+236                 \textcolor{keywordflow}{if} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_open_a_l_stream_player_a377b3e28ef63fca0134898a07b086e7f}{loop}}) \{
+237                     \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_open_a_l_stream_player_a765f3c95de540350a0ed4902a6d9792a}{initStreams}}();
+238                     \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_open_a_l_stream_player_a2facc6d1dcd937dbdc5dadcbb81929ed}{stream}}(bufferId);
+239                 \} \textcolor{keywordflow}{else} \{
+240                     \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_open_a_l_stream_player_a64962f56b4c366c19fe3c2bff2f55842}{done}} = \textcolor{keyword}{true};
+241                     \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+242                 \}
+243             \}
+244             
+245             \textcolor{keywordflow}{return} \textcolor{keyword}{true};
+246         \} \textcolor{keywordflow}{catch} (IOException e) \{
+247             Log.error(e);
+248             \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+249         \}
+250     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1openal_1_1_open_a_l_stream_player_af92a75dd6caa02680b7520511137ae8d}\label{classorg_1_1newdawn_1_1slick_1_1openal_1_1_open_a_l_stream_player_af92a75dd6caa02680b7520511137ae8d}} 
+\index{org\+::newdawn\+::slick\+::openal\+::\+Open\+A\+L\+Stream\+Player@{org\+::newdawn\+::slick\+::openal\+::\+Open\+A\+L\+Stream\+Player}!update@{update}}
+\index{update@{update}!org\+::newdawn\+::slick\+::openal\+::\+Open\+A\+L\+Stream\+Player@{org\+::newdawn\+::slick\+::openal\+::\+Open\+A\+L\+Stream\+Player}}
+\subsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+openal.\+Open\+A\+L\+Stream\+Player.\+update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Poll the buffer\+Names -\/ check if we need to fill the buffer\+Names with another section.
+
+Most of the time this should be reasonably quick 
+\begin{DoxyCode}
+172                          \{
+173         \textcolor{keywordflow}{if} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_open_a_l_stream_player_a64962f56b4c366c19fe3c2bff2f55842}{done}}) \{
+174             \textcolor{keywordflow}{return};
+175         \}
+176 
+177         \textcolor{keywordtype}{float} sampleRate = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_open_a_l_stream_player_a694870dca2079ff6e6269a394a126d17}{audio}}.\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1openal_1_1_audio_input_stream_a461c4ad4304ff8d75693c93e525e0f85}{getRate}}();
+178         \textcolor{keywordtype}{float} sampleSize;
+179         \textcolor{keywordflow}{if} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_open_a_l_stream_player_a694870dca2079ff6e6269a394a126d17}{audio}}.\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1openal_1_1_audio_input_stream_a2bee5322dd7878c18fa8f16bd52bbdfa}{getChannels}}() > 1) \{
+180             sampleSize = 4; \textcolor{comment}{// AL10.AL\_FORMAT\_STEREO16}
+181         \} \textcolor{keywordflow}{else} \{
+182             sampleSize = 2; \textcolor{comment}{// AL10.AL\_FORMAT\_MONO16}
+183         \}
+184         
+185         \textcolor{keywordtype}{int} processed = AL10.alGetSourcei(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_open_a_l_stream_player_abe9f7d1ac52a705aa359cf3eb1c69464}{source}}, AL10.AL\_BUFFERS\_PROCESSED);
+186         \textcolor{keywordflow}{while} (processed > 0) \{
+187             \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_open_a_l_stream_player_a57522a0a0a5ef27a24b13672a7637174}{unqueued}}.clear();
+188             AL10.alSourceUnqueueBuffers(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_open_a_l_stream_player_abe9f7d1ac52a705aa359cf3eb1c69464}{source}}, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_open_a_l_stream_player_a57522a0a0a5ef27a24b13672a7637174}{unqueued}});
+189             
+190             \textcolor{keywordtype}{int} bufferIndex = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_open_a_l_stream_player_a57522a0a0a5ef27a24b13672a7637174}{unqueued}}.get(0);
+191 
+192             \textcolor{keywordtype}{float} bufferLength = (AL10.alGetBufferi(bufferIndex, AL10.AL\_SIZE) / sampleSize) / sampleRate;
+193             \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_open_a_l_stream_player_a41556aeb2058a1c2dd04177e1d61d43c}{positionOffset}} += bufferLength;
+194             
+195             \textcolor{keywordflow}{if} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_open_a_l_stream_player_a2facc6d1dcd937dbdc5dadcbb81929ed}{stream}}(bufferIndex)) \{            
+196                 AL10.alSourceQueueBuffers(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_open_a_l_stream_player_abe9f7d1ac52a705aa359cf3eb1c69464}{source}}, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_open_a_l_stream_player_a57522a0a0a5ef27a24b13672a7637174}{unqueued}});
+197             \} \textcolor{keywordflow}{else} \{
+198                 \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_open_a_l_stream_player_a071d3388ce422c839a62047c0a966315}{remainingBufferCount}}--;
+199                 \textcolor{keywordflow}{if} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_open_a_l_stream_player_a071d3388ce422c839a62047c0a966315}{remainingBufferCount}} == 0) \{
+200                     \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_open_a_l_stream_player_a64962f56b4c366c19fe3c2bff2f55842}{done}} = \textcolor{keyword}{true};
+201                 \}
+202             \}
+203             processed--;
+204         \}
+205         
+206         \textcolor{keywordtype}{int} state = AL10.alGetSourcei(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_open_a_l_stream_player_abe9f7d1ac52a705aa359cf3eb1c69464}{source}}, AL10.AL\_SOURCE\_STATE);
+207         
+208         \textcolor{keywordflow}{if} (state != AL10.AL\_PLAYING) \{
+209             AL10.alSourcePlay(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_open_a_l_stream_player_abe9f7d1ac52a705aa359cf3eb1c69464}{source}});
+210         \}
+211     \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1openal_1_1_open_a_l_stream_player_a694870dca2079ff6e6269a394a126d17}\label{classorg_1_1newdawn_1_1slick_1_1openal_1_1_open_a_l_stream_player_a694870dca2079ff6e6269a394a126d17}} 
+\index{org\+::newdawn\+::slick\+::openal\+::\+Open\+A\+L\+Stream\+Player@{org\+::newdawn\+::slick\+::openal\+::\+Open\+A\+L\+Stream\+Player}!audio@{audio}}
+\index{audio@{audio}!org\+::newdawn\+::slick\+::openal\+::\+Open\+A\+L\+Stream\+Player@{org\+::newdawn\+::slick\+::openal\+::\+Open\+A\+L\+Stream\+Player}}
+\subsubsection{\texorpdfstring{audio}{audio}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1openal_1_1_audio_input_stream}{Audio\+Input\+Stream}} org.\+newdawn.\+slick.\+openal.\+Open\+A\+L\+Stream\+Player.\+audio\hspace{0.3cm}{\ttfamily [private]}}
+
+The stream we\textquotesingle{}re currently reading from \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1openal_1_1_open_a_l_stream_player_a43f0da73ce6a383cda06b37d7927f58f}\label{classorg_1_1newdawn_1_1slick_1_1openal_1_1_open_a_l_stream_player_a43f0da73ce6a383cda06b37d7927f58f}} 
+\index{org\+::newdawn\+::slick\+::openal\+::\+Open\+A\+L\+Stream\+Player@{org\+::newdawn\+::slick\+::openal\+::\+Open\+A\+L\+Stream\+Player}!buffer@{buffer}}
+\index{buffer@{buffer}!org\+::newdawn\+::slick\+::openal\+::\+Open\+A\+L\+Stream\+Player@{org\+::newdawn\+::slick\+::openal\+::\+Open\+A\+L\+Stream\+Player}}
+\subsubsection{\texorpdfstring{buffer}{buffer}}
+{\footnotesize\ttfamily byte \mbox{[}$\,$\mbox{]} org.\+newdawn.\+slick.\+openal.\+Open\+A\+L\+Stream\+Player.\+buffer = new byte\mbox{[}\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_open_a_l_stream_player_a15d60c799362a5a58f98c2b4d9eaeeed}{section\+Size}}\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}
+
+The buffer read from the data stream \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1openal_1_1_open_a_l_stream_player_a6fabd8395e8301d9b2ea613f8b7d739c}\label{classorg_1_1newdawn_1_1slick_1_1openal_1_1_open_a_l_stream_player_a6fabd8395e8301d9b2ea613f8b7d739c}} 
+\index{org\+::newdawn\+::slick\+::openal\+::\+Open\+A\+L\+Stream\+Player@{org\+::newdawn\+::slick\+::openal\+::\+Open\+A\+L\+Stream\+Player}!B\+U\+F\+F\+E\+R\+\_\+\+C\+O\+U\+NT@{B\+U\+F\+F\+E\+R\+\_\+\+C\+O\+U\+NT}}
+\index{B\+U\+F\+F\+E\+R\+\_\+\+C\+O\+U\+NT@{B\+U\+F\+F\+E\+R\+\_\+\+C\+O\+U\+NT}!org\+::newdawn\+::slick\+::openal\+::\+Open\+A\+L\+Stream\+Player@{org\+::newdawn\+::slick\+::openal\+::\+Open\+A\+L\+Stream\+Player}}
+\subsubsection{\texorpdfstring{B\+U\+F\+F\+E\+R\+\_\+\+C\+O\+U\+NT}{BUFFER\_COUNT}}
+{\footnotesize\ttfamily final int org.\+newdawn.\+slick.\+openal.\+Open\+A\+L\+Stream\+Player.\+B\+U\+F\+F\+E\+R\+\_\+\+C\+O\+U\+NT = 3\hspace{0.3cm}{\ttfamily [static]}}
+
+The number of buffers to maintain \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1openal_1_1_open_a_l_stream_player_a7bbb81d01fec7e276db23218472f642f}\label{classorg_1_1newdawn_1_1slick_1_1openal_1_1_open_a_l_stream_player_a7bbb81d01fec7e276db23218472f642f}} 
+\index{org\+::newdawn\+::slick\+::openal\+::\+Open\+A\+L\+Stream\+Player@{org\+::newdawn\+::slick\+::openal\+::\+Open\+A\+L\+Stream\+Player}!buffer\+Data@{buffer\+Data}}
+\index{buffer\+Data@{buffer\+Data}!org\+::newdawn\+::slick\+::openal\+::\+Open\+A\+L\+Stream\+Player@{org\+::newdawn\+::slick\+::openal\+::\+Open\+A\+L\+Stream\+Player}}
+\subsubsection{\texorpdfstring{buffer\+Data}{bufferData}}
+{\footnotesize\ttfamily Byte\+Buffer org.\+newdawn.\+slick.\+openal.\+Open\+A\+L\+Stream\+Player.\+buffer\+Data = Buffer\+Utils.\+create\+Byte\+Buffer(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_open_a_l_stream_player_a15d60c799362a5a58f98c2b4d9eaeeed}{section\+Size}})\hspace{0.3cm}{\ttfamily [private]}}
+
+The byte buffer passed to Open\+AL containing the section \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1openal_1_1_open_a_l_stream_player_a97e8e27c6864fcc5abe85728a3e0a60b}\label{classorg_1_1newdawn_1_1slick_1_1openal_1_1_open_a_l_stream_player_a97e8e27c6864fcc5abe85728a3e0a60b}} 
+\index{org\+::newdawn\+::slick\+::openal\+::\+Open\+A\+L\+Stream\+Player@{org\+::newdawn\+::slick\+::openal\+::\+Open\+A\+L\+Stream\+Player}!buffer\+Names@{buffer\+Names}}
+\index{buffer\+Names@{buffer\+Names}!org\+::newdawn\+::slick\+::openal\+::\+Open\+A\+L\+Stream\+Player@{org\+::newdawn\+::slick\+::openal\+::\+Open\+A\+L\+Stream\+Player}}
+\subsubsection{\texorpdfstring{buffer\+Names}{bufferNames}}
+{\footnotesize\ttfamily Int\+Buffer org.\+newdawn.\+slick.\+openal.\+Open\+A\+L\+Stream\+Player.\+buffer\+Names\hspace{0.3cm}{\ttfamily [private]}}
+
+Holds the Open\+AL buffer names \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1openal_1_1_open_a_l_stream_player_aacfd7caed9c004b1f0828d8e5bf3e2b2}\label{classorg_1_1newdawn_1_1slick_1_1openal_1_1_open_a_l_stream_player_aacfd7caed9c004b1f0828d8e5bf3e2b2}} 
+\index{org\+::newdawn\+::slick\+::openal\+::\+Open\+A\+L\+Stream\+Player@{org\+::newdawn\+::slick\+::openal\+::\+Open\+A\+L\+Stream\+Player}!done@{done}}
+\index{done@{done}!org\+::newdawn\+::slick\+::openal\+::\+Open\+A\+L\+Stream\+Player@{org\+::newdawn\+::slick\+::openal\+::\+Open\+A\+L\+Stream\+Player}}
+\subsubsection{\texorpdfstring{done}{done}}
+{\footnotesize\ttfamily boolean org.\+newdawn.\+slick.\+openal.\+Open\+A\+L\+Stream\+Player.\+done = true\hspace{0.3cm}{\ttfamily [private]}}
+
+True if we\textquotesingle{}ve completed play back \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1openal_1_1_open_a_l_stream_player_a377b3e28ef63fca0134898a07b086e7f}\label{classorg_1_1newdawn_1_1slick_1_1openal_1_1_open_a_l_stream_player_a377b3e28ef63fca0134898a07b086e7f}} 
+\index{org\+::newdawn\+::slick\+::openal\+::\+Open\+A\+L\+Stream\+Player@{org\+::newdawn\+::slick\+::openal\+::\+Open\+A\+L\+Stream\+Player}!loop@{loop}}
+\index{loop@{loop}!org\+::newdawn\+::slick\+::openal\+::\+Open\+A\+L\+Stream\+Player@{org\+::newdawn\+::slick\+::openal\+::\+Open\+A\+L\+Stream\+Player}}
+\subsubsection{\texorpdfstring{loop}{loop}}
+{\footnotesize\ttfamily boolean org.\+newdawn.\+slick.\+openal.\+Open\+A\+L\+Stream\+Player.\+loop\hspace{0.3cm}{\ttfamily [private]}}
+
+True if we should loop the track \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1openal_1_1_open_a_l_stream_player_a3841668c39ff3eccf93978ee5ca7bc3e}\label{classorg_1_1newdawn_1_1slick_1_1openal_1_1_open_a_l_stream_player_a3841668c39ff3eccf93978ee5ca7bc3e}} 
+\index{org\+::newdawn\+::slick\+::openal\+::\+Open\+A\+L\+Stream\+Player@{org\+::newdawn\+::slick\+::openal\+::\+Open\+A\+L\+Stream\+Player}!pitch@{pitch}}
+\index{pitch@{pitch}!org\+::newdawn\+::slick\+::openal\+::\+Open\+A\+L\+Stream\+Player@{org\+::newdawn\+::slick\+::openal\+::\+Open\+A\+L\+Stream\+Player}}
+\subsubsection{\texorpdfstring{pitch}{pitch}}
+{\footnotesize\ttfamily float org.\+newdawn.\+slick.\+openal.\+Open\+A\+L\+Stream\+Player.\+pitch\hspace{0.3cm}{\ttfamily [private]}}
+
+The pitch of the music \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1openal_1_1_open_a_l_stream_player_a41556aeb2058a1c2dd04177e1d61d43c}\label{classorg_1_1newdawn_1_1slick_1_1openal_1_1_open_a_l_stream_player_a41556aeb2058a1c2dd04177e1d61d43c}} 
+\index{org\+::newdawn\+::slick\+::openal\+::\+Open\+A\+L\+Stream\+Player@{org\+::newdawn\+::slick\+::openal\+::\+Open\+A\+L\+Stream\+Player}!position\+Offset@{position\+Offset}}
+\index{position\+Offset@{position\+Offset}!org\+::newdawn\+::slick\+::openal\+::\+Open\+A\+L\+Stream\+Player@{org\+::newdawn\+::slick\+::openal\+::\+Open\+A\+L\+Stream\+Player}}
+\subsubsection{\texorpdfstring{position\+Offset}{positionOffset}}
+{\footnotesize\ttfamily float org.\+newdawn.\+slick.\+openal.\+Open\+A\+L\+Stream\+Player.\+position\+Offset\hspace{0.3cm}{\ttfamily [private]}}
+
+Position in seconds of the previously played buffers \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1openal_1_1_open_a_l_stream_player_ab01c1f73849aaeae84d969cbd05d4683}\label{classorg_1_1newdawn_1_1slick_1_1openal_1_1_open_a_l_stream_player_ab01c1f73849aaeae84d969cbd05d4683}} 
+\index{org\+::newdawn\+::slick\+::openal\+::\+Open\+A\+L\+Stream\+Player@{org\+::newdawn\+::slick\+::openal\+::\+Open\+A\+L\+Stream\+Player}!ref@{ref}}
+\index{ref@{ref}!org\+::newdawn\+::slick\+::openal\+::\+Open\+A\+L\+Stream\+Player@{org\+::newdawn\+::slick\+::openal\+::\+Open\+A\+L\+Stream\+Player}}
+\subsubsection{\texorpdfstring{ref}{ref}}
+{\footnotesize\ttfamily String org.\+newdawn.\+slick.\+openal.\+Open\+A\+L\+Stream\+Player.\+ref\hspace{0.3cm}{\ttfamily [private]}}
+
+The source of the data \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1openal_1_1_open_a_l_stream_player_a071d3388ce422c839a62047c0a966315}\label{classorg_1_1newdawn_1_1slick_1_1openal_1_1_open_a_l_stream_player_a071d3388ce422c839a62047c0a966315}} 
+\index{org\+::newdawn\+::slick\+::openal\+::\+Open\+A\+L\+Stream\+Player@{org\+::newdawn\+::slick\+::openal\+::\+Open\+A\+L\+Stream\+Player}!remaining\+Buffer\+Count@{remaining\+Buffer\+Count}}
+\index{remaining\+Buffer\+Count@{remaining\+Buffer\+Count}!org\+::newdawn\+::slick\+::openal\+::\+Open\+A\+L\+Stream\+Player@{org\+::newdawn\+::slick\+::openal\+::\+Open\+A\+L\+Stream\+Player}}
+\subsubsection{\texorpdfstring{remaining\+Buffer\+Count}{remainingBufferCount}}
+{\footnotesize\ttfamily int org.\+newdawn.\+slick.\+openal.\+Open\+A\+L\+Stream\+Player.\+remaining\+Buffer\+Count\hspace{0.3cm}{\ttfamily [private]}}
+
+The number of buffers remaining \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1openal_1_1_open_a_l_stream_player_a15d60c799362a5a58f98c2b4d9eaeeed}\label{classorg_1_1newdawn_1_1slick_1_1openal_1_1_open_a_l_stream_player_a15d60c799362a5a58f98c2b4d9eaeeed}} 
+\index{org\+::newdawn\+::slick\+::openal\+::\+Open\+A\+L\+Stream\+Player@{org\+::newdawn\+::slick\+::openal\+::\+Open\+A\+L\+Stream\+Player}!section\+Size@{section\+Size}}
+\index{section\+Size@{section\+Size}!org\+::newdawn\+::slick\+::openal\+::\+Open\+A\+L\+Stream\+Player@{org\+::newdawn\+::slick\+::openal\+::\+Open\+A\+L\+Stream\+Player}}
+\subsubsection{\texorpdfstring{section\+Size}{sectionSize}}
+{\footnotesize\ttfamily final int org.\+newdawn.\+slick.\+openal.\+Open\+A\+L\+Stream\+Player.\+section\+Size = 4096 $\ast$ 20\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+The size of the sections to stream from the stream \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1openal_1_1_open_a_l_stream_player_abe9f7d1ac52a705aa359cf3eb1c69464}\label{classorg_1_1newdawn_1_1slick_1_1openal_1_1_open_a_l_stream_player_abe9f7d1ac52a705aa359cf3eb1c69464}} 
+\index{org\+::newdawn\+::slick\+::openal\+::\+Open\+A\+L\+Stream\+Player@{org\+::newdawn\+::slick\+::openal\+::\+Open\+A\+L\+Stream\+Player}!source@{source}}
+\index{source@{source}!org\+::newdawn\+::slick\+::openal\+::\+Open\+A\+L\+Stream\+Player@{org\+::newdawn\+::slick\+::openal\+::\+Open\+A\+L\+Stream\+Player}}
+\subsubsection{\texorpdfstring{source}{source}}
+{\footnotesize\ttfamily int org.\+newdawn.\+slick.\+openal.\+Open\+A\+L\+Stream\+Player.\+source\hspace{0.3cm}{\ttfamily [private]}}
+
+The source we\textquotesingle{}re playing back on \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1openal_1_1_open_a_l_stream_player_a57522a0a0a5ef27a24b13672a7637174}\label{classorg_1_1newdawn_1_1slick_1_1openal_1_1_open_a_l_stream_player_a57522a0a0a5ef27a24b13672a7637174}} 
+\index{org\+::newdawn\+::slick\+::openal\+::\+Open\+A\+L\+Stream\+Player@{org\+::newdawn\+::slick\+::openal\+::\+Open\+A\+L\+Stream\+Player}!unqueued@{unqueued}}
+\index{unqueued@{unqueued}!org\+::newdawn\+::slick\+::openal\+::\+Open\+A\+L\+Stream\+Player@{org\+::newdawn\+::slick\+::openal\+::\+Open\+A\+L\+Stream\+Player}}
+\subsubsection{\texorpdfstring{unqueued}{unqueued}}
+{\footnotesize\ttfamily Int\+Buffer org.\+newdawn.\+slick.\+openal.\+Open\+A\+L\+Stream\+Player.\+unqueued = Buffer\+Utils.\+create\+Int\+Buffer(1)\hspace{0.3cm}{\ttfamily [private]}}
+
+The buffer holding the names of the Open\+AL buffer thats been fully played back \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1openal_1_1_open_a_l_stream_player_a2f903c9bc54f0a1d739ad917a8aa97f6}\label{classorg_1_1newdawn_1_1slick_1_1openal_1_1_open_a_l_stream_player_a2f903c9bc54f0a1d739ad917a8aa97f6}} 
+\index{org\+::newdawn\+::slick\+::openal\+::\+Open\+A\+L\+Stream\+Player@{org\+::newdawn\+::slick\+::openal\+::\+Open\+A\+L\+Stream\+Player}!url@{url}}
+\index{url@{url}!org\+::newdawn\+::slick\+::openal\+::\+Open\+A\+L\+Stream\+Player@{org\+::newdawn\+::slick\+::openal\+::\+Open\+A\+L\+Stream\+Player}}
+\subsubsection{\texorpdfstring{url}{url}}
+{\footnotesize\ttfamily U\+RL org.\+newdawn.\+slick.\+openal.\+Open\+A\+L\+Stream\+Player.\+url\hspace{0.3cm}{\ttfamily [private]}}
+
+The source of the data 

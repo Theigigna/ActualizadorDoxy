@@ -1,0 +1,101 @@
+\hypertarget{class_sockets_1_1_pintor}{}\section{Sockets.\+Pintor Class Reference}
+\label{class_sockets_1_1_pintor}\index{Sockets.\+Pintor@{Sockets.\+Pintor}}
+Inheritance diagram for Sockets.\+Pintor\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_sockets_1_1_pintor}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_sockets_1_1_pintor_a7ec9ea9ba4e21c302383a8d55c3cd97d}{Pintor}} (J\+Button \mbox{\hyperlink{class_sockets_1_1_pintor_a2b07cfc2a0f93afd9841f74ade3a61f8}{b}}, \mbox{\hyperlink{class_sockets_1_1_paleta}{Paleta}} \mbox{\hyperlink{class_sockets_1_1_pintor_a92e89c1dc89460b6da4128e8fd6a45ec}{p}}, \mbox{\hyperlink{class_sockets_1_1_paso}{Paso}} \mbox{\hyperlink{class_sockets_1_1_pintor_a2107c61fca16f1e39d835ac82eaf7f4d}{paso}})
+\item 
+void \mbox{\hyperlink{class_sockets_1_1_pintor_a7203e551c81501d2b04622d76ed1bf46}{run}} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+J\+Button \mbox{\hyperlink{class_sockets_1_1_pintor_a2b07cfc2a0f93afd9841f74ade3a61f8}{b}}
+\item 
+\mbox{\hyperlink{class_sockets_1_1_paleta}{Paleta}} \mbox{\hyperlink{class_sockets_1_1_pintor_a92e89c1dc89460b6da4128e8fd6a45ec}{p}}
+\item 
+Color \mbox{\hyperlink{class_sockets_1_1_pintor_aaeaa548dd4f01d22c45f0dbc48373ec6}{negro}} = Color.\+black
+\item 
+\mbox{\hyperlink{class_sockets_1_1_paso}{Paso}} \mbox{\hyperlink{class_sockets_1_1_pintor_a2107c61fca16f1e39d835ac82eaf7f4d}{paso}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_sockets_1_1_pintor_a7ec9ea9ba4e21c302383a8d55c3cd97d}\label{class_sockets_1_1_pintor_a7ec9ea9ba4e21c302383a8d55c3cd97d}} 
+\index{Sockets\+::\+Pintor@{Sockets\+::\+Pintor}!Pintor@{Pintor}}
+\index{Pintor@{Pintor}!Sockets\+::\+Pintor@{Sockets\+::\+Pintor}}
+\subsubsection{\texorpdfstring{Pintor()}{Pintor()}}
+{\footnotesize\ttfamily Sockets.\+Pintor.\+Pintor (\begin{DoxyParamCaption}\item[{J\+Button}]{b,  }\item[{\mbox{\hyperlink{class_sockets_1_1_paleta}{Paleta}}}]{p,  }\item[{\mbox{\hyperlink{class_sockets_1_1_paso}{Paso}}}]{paso }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+17     \{
+18         this.\mbox{\hyperlink{class_sockets_1_1_pintor_a2b07cfc2a0f93afd9841f74ade3a61f8}{b}}=\mbox{\hyperlink{class_sockets_1_1_pintor_a2b07cfc2a0f93afd9841f74ade3a61f8}{b}};
+19         this.\mbox{\hyperlink{class_sockets_1_1_pintor_a92e89c1dc89460b6da4128e8fd6a45ec}{p}}=\mbox{\hyperlink{class_sockets_1_1_pintor_a92e89c1dc89460b6da4128e8fd6a45ec}{p}};
+20         this.\mbox{\hyperlink{class_sockets_1_1_pintor_a2107c61fca16f1e39d835ac82eaf7f4d}{paso}}=\mbox{\hyperlink{class_sockets_1_1_pintor_a2107c61fca16f1e39d835ac82eaf7f4d}{paso}};
+21     \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_sockets_1_1_pintor_a7203e551c81501d2b04622d76ed1bf46}\label{class_sockets_1_1_pintor_a7203e551c81501d2b04622d76ed1bf46}} 
+\index{Sockets\+::\+Pintor@{Sockets\+::\+Pintor}!run@{run}}
+\index{run@{run}!Sockets\+::\+Pintor@{Sockets\+::\+Pintor}}
+\subsubsection{\texorpdfstring{run()}{run()}}
+{\footnotesize\ttfamily void Sockets.\+Pintor.\+run (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+24     \{
+25         \textcolor{keywordflow}{while} (\textcolor{keyword}{true})
+26         \{
+27             \mbox{\hyperlink{class_sockets_1_1_pintor_a2b07cfc2a0f93afd9841f74ade3a61f8}{b}}.setBackground(\mbox{\hyperlink{class_sockets_1_1_pintor_aaeaa548dd4f01d22c45f0dbc48373ec6}{negro}});             \textcolor{comment}{//Pinta el botón de negro}
+28             \textcolor{keywordflow}{try}
+29             \{
+30                 sleep(500 + (\textcolor{keywordtype}{int})(1500*Math.random()));  \textcolor{comment}{//Espera entre 0.5 y 2 seg.}
+31             \} \textcolor{keywordflow}{catch} (InterruptedException e)\{\}
+32             \mbox{\hyperlink{class_sockets_1_1_pintor_a2107c61fca16f1e39d835ac82eaf7f4d}{paso}}.\mbox{\hyperlink{class_sockets_1_1_paso_a56cd4d4d8e714895b6cc7692223d303c}{mirar}}();              \textcolor{comment}{//Mira a ver si tiene que detenerse}
+33             Color c=\mbox{\hyperlink{class_sockets_1_1_pintor_a92e89c1dc89460b6da4128e8fd6a45ec}{p}}.\mbox{\hyperlink{class_sockets_1_1_paleta_a84e276825a78a7a716c088e1e4306c70}{tomaColor}}();     \textcolor{comment}{//Toma un color cualquiera de la paleta}
+34             \mbox{\hyperlink{class_sockets_1_1_pintor_a2b07cfc2a0f93afd9841f74ade3a61f8}{b}}.setBackground(c);        \textcolor{comment}{//y pinta con él el botón}
+35             \textcolor{keywordflow}{try}
+36             \{
+37                 sleep(1000 + (\textcolor{keywordtype}{int})(2000*Math.random()));  \textcolor{comment}{//Espera entre 1 y 3 seg.}
+38             \} \textcolor{keywordflow}{catch} (InterruptedException e)\{\}
+39             \mbox{\hyperlink{class_sockets_1_1_pintor_a2107c61fca16f1e39d835ac82eaf7f4d}{paso}}.\mbox{\hyperlink{class_sockets_1_1_paso_a56cd4d4d8e714895b6cc7692223d303c}{mirar}}();             \textcolor{comment}{//Mira a ver si tiene que detenerse}
+40             \mbox{\hyperlink{class_sockets_1_1_pintor_a92e89c1dc89460b6da4128e8fd6a45ec}{p}}.\mbox{\hyperlink{class_sockets_1_1_paleta_aef920b8ba5dcf546887e48fe95dde588}{dejaColor}}(c);           \textcolor{comment}{// Libera el color utilizado}
+41         \}
+42     \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_sockets_1_1_pintor_a2b07cfc2a0f93afd9841f74ade3a61f8}\label{class_sockets_1_1_pintor_a2b07cfc2a0f93afd9841f74ade3a61f8}} 
+\index{Sockets\+::\+Pintor@{Sockets\+::\+Pintor}!b@{b}}
+\index{b@{b}!Sockets\+::\+Pintor@{Sockets\+::\+Pintor}}
+\subsubsection{\texorpdfstring{b}{b}}
+{\footnotesize\ttfamily J\+Button Sockets.\+Pintor.\+b\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_sockets_1_1_pintor_aaeaa548dd4f01d22c45f0dbc48373ec6}\label{class_sockets_1_1_pintor_aaeaa548dd4f01d22c45f0dbc48373ec6}} 
+\index{Sockets\+::\+Pintor@{Sockets\+::\+Pintor}!negro@{negro}}
+\index{negro@{negro}!Sockets\+::\+Pintor@{Sockets\+::\+Pintor}}
+\subsubsection{\texorpdfstring{negro}{negro}}
+{\footnotesize\ttfamily Color Sockets.\+Pintor.\+negro = Color.\+black\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_sockets_1_1_pintor_a92e89c1dc89460b6da4128e8fd6a45ec}\label{class_sockets_1_1_pintor_a92e89c1dc89460b6da4128e8fd6a45ec}} 
+\index{Sockets\+::\+Pintor@{Sockets\+::\+Pintor}!p@{p}}
+\index{p@{p}!Sockets\+::\+Pintor@{Sockets\+::\+Pintor}}
+\subsubsection{\texorpdfstring{p}{p}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_sockets_1_1_paleta}{Paleta}} Sockets.\+Pintor.\+p\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_sockets_1_1_pintor_a2107c61fca16f1e39d835ac82eaf7f4d}\label{class_sockets_1_1_pintor_a2107c61fca16f1e39d835ac82eaf7f4d}} 
+\index{Sockets\+::\+Pintor@{Sockets\+::\+Pintor}!paso@{paso}}
+\index{paso@{paso}!Sockets\+::\+Pintor@{Sockets\+::\+Pintor}}
+\subsubsection{\texorpdfstring{paso}{paso}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_sockets_1_1_paso}{Paso}} Sockets.\+Pintor.\+paso\hspace{0.3cm}{\ttfamily [private]}}
+

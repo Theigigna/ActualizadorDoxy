@@ -1,0 +1,72 @@
+\hypertarget{classcosasparaprobar_1_1_prueba_count_down}{}\section{cosasparaprobar.\+Prueba\+Count\+Down Class Reference}
+\label{classcosasparaprobar_1_1_prueba_count_down}\index{cosasparaprobar.\+Prueba\+Count\+Down@{cosasparaprobar.\+Prueba\+Count\+Down}}
+Inheritance diagram for cosasparaprobar.\+Prueba\+Count\+Down\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classcosasparaprobar_1_1_prueba_count_down}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classcosasparaprobar_1_1_prueba_count_down_a89832a2fb0a7768fdd9541cfca2508bf}{Prueba\+Count\+Down}} (Count\+Down\+Latch x)
+\item 
+void \mbox{\hyperlink{classcosasparaprobar_1_1_prueba_count_down_a7fbad5dff58f3d7bb6f35f3b357dc242}{run}} ()
+\end{DoxyCompactItemize}
+\subsection*{Package Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Count\+Down\+Latch \mbox{\hyperlink{classcosasparaprobar_1_1_prueba_count_down_a94e899bc1667541a563b159ff8d5229e}{contador}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyAuthor}{Author}
+Ignacio 
+\end{DoxyAuthor}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classcosasparaprobar_1_1_prueba_count_down_a89832a2fb0a7768fdd9541cfca2508bf}\label{classcosasparaprobar_1_1_prueba_count_down_a89832a2fb0a7768fdd9541cfca2508bf}} 
+\index{cosasparaprobar\+::\+Prueba\+Count\+Down@{cosasparaprobar\+::\+Prueba\+Count\+Down}!Prueba\+Count\+Down@{Prueba\+Count\+Down}}
+\index{Prueba\+Count\+Down@{Prueba\+Count\+Down}!cosasparaprobar\+::\+Prueba\+Count\+Down@{cosasparaprobar\+::\+Prueba\+Count\+Down}}
+\subsubsection{\texorpdfstring{Prueba\+Count\+Down()}{PruebaCountDown()}}
+{\footnotesize\ttfamily cosasparaprobar.\+Prueba\+Count\+Down.\+Prueba\+Count\+Down (\begin{DoxyParamCaption}\item[{Count\+Down\+Latch}]{x }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+21     \{
+22         this.\mbox{\hyperlink{classcosasparaprobar_1_1_prueba_count_down_a94e899bc1667541a563b159ff8d5229e}{contador}} = x;
+23     \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classcosasparaprobar_1_1_prueba_count_down_a7fbad5dff58f3d7bb6f35f3b357dc242}\label{classcosasparaprobar_1_1_prueba_count_down_a7fbad5dff58f3d7bb6f35f3b357dc242}} 
+\index{cosasparaprobar\+::\+Prueba\+Count\+Down@{cosasparaprobar\+::\+Prueba\+Count\+Down}!run@{run}}
+\index{run@{run}!cosasparaprobar\+::\+Prueba\+Count\+Down@{cosasparaprobar\+::\+Prueba\+Count\+Down}}
+\subsubsection{\texorpdfstring{run()}{run()}}
+{\footnotesize\ttfamily void cosasparaprobar.\+Prueba\+Count\+Down.\+run (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+26     \{
+27         System.out.println(\textcolor{stringliteral}{"Me meto."});
+28         \textcolor{keywordflow}{try} \{
+29             \mbox{\hyperlink{classcosasparaprobar_1_1_prueba_count_down_a94e899bc1667541a563b159ff8d5229e}{contador}}.await();
+30         \} \textcolor{keywordflow}{catch} (InterruptedException ex) \{
+31             Logger.getLogger(\mbox{\hyperlink{classcosasparaprobar_1_1_prueba_count_down_a89832a2fb0a7768fdd9541cfca2508bf}{PruebaCountDown}}.class.getName()).log(Level.SEVERE, null, ex);
+32         \}
+33         System.out.println(\textcolor{stringliteral}{"Salgo."});
+34         
+35     \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classcosasparaprobar_1_1_prueba_count_down_a94e899bc1667541a563b159ff8d5229e}\label{classcosasparaprobar_1_1_prueba_count_down_a94e899bc1667541a563b159ff8d5229e}} 
+\index{cosasparaprobar\+::\+Prueba\+Count\+Down@{cosasparaprobar\+::\+Prueba\+Count\+Down}!contador@{contador}}
+\index{contador@{contador}!cosasparaprobar\+::\+Prueba\+Count\+Down@{cosasparaprobar\+::\+Prueba\+Count\+Down}}
+\subsubsection{\texorpdfstring{contador}{contador}}
+{\footnotesize\ttfamily Count\+Down\+Latch cosasparaprobar.\+Prueba\+Count\+Down.\+contador\hspace{0.3cm}{\ttfamily [package]}}
+

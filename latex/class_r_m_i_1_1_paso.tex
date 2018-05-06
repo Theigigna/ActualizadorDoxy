@@ -1,0 +1,71 @@
+\hypertarget{class_r_m_i_1_1_paso}{}\section{R\+M\+I.\+Paso Class Reference}
+\label{class_r_m_i_1_1_paso}\index{R\+M\+I.\+Paso@{R\+M\+I.\+Paso}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+synchronized void \mbox{\hyperlink{class_r_m_i_1_1_paso_a988694346834bbf37f12e3ea425a277c}{mirar}} ()
+\item 
+synchronized void \mbox{\hyperlink{class_r_m_i_1_1_paso_a812e38e5e102e7da3fbd1ba669baa213}{abrir}} ()
+\item 
+synchronized void \mbox{\hyperlink{class_r_m_i_1_1_paso_a94a5334985d909a4db0b5efda2f68a9f}{cerrar}} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+boolean \mbox{\hyperlink{class_r_m_i_1_1_paso_acf12d24b9ce56005480644624d042067}{cerrado}} =false
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_r_m_i_1_1_paso_a812e38e5e102e7da3fbd1ba669baa213}\label{class_r_m_i_1_1_paso_a812e38e5e102e7da3fbd1ba669baa213}} 
+\index{R\+M\+I\+::\+Paso@{R\+M\+I\+::\+Paso}!abrir@{abrir}}
+\index{abrir@{abrir}!R\+M\+I\+::\+Paso@{R\+M\+I\+::\+Paso}}
+\subsubsection{\texorpdfstring{abrir()}{abrir()}}
+{\footnotesize\ttfamily synchronized void R\+M\+I.\+Paso.\+abrir (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+22     \{
+23         \mbox{\hyperlink{class_r_m_i_1_1_paso_acf12d24b9ce56005480644624d042067}{cerrado}}=\textcolor{keyword}{false};
+24         notifyAll();
+25     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_r_m_i_1_1_paso_a94a5334985d909a4db0b5efda2f68a9f}\label{class_r_m_i_1_1_paso_a94a5334985d909a4db0b5efda2f68a9f}} 
+\index{R\+M\+I\+::\+Paso@{R\+M\+I\+::\+Paso}!cerrar@{cerrar}}
+\index{cerrar@{cerrar}!R\+M\+I\+::\+Paso@{R\+M\+I\+::\+Paso}}
+\subsubsection{\texorpdfstring{cerrar()}{cerrar()}}
+{\footnotesize\ttfamily synchronized void R\+M\+I.\+Paso.\+cerrar (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+28     \{
+29         \mbox{\hyperlink{class_r_m_i_1_1_paso_acf12d24b9ce56005480644624d042067}{cerrado}}=\textcolor{keyword}{true};
+30     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_r_m_i_1_1_paso_a988694346834bbf37f12e3ea425a277c}\label{class_r_m_i_1_1_paso_a988694346834bbf37f12e3ea425a277c}} 
+\index{R\+M\+I\+::\+Paso@{R\+M\+I\+::\+Paso}!mirar@{mirar}}
+\index{mirar@{mirar}!R\+M\+I\+::\+Paso@{R\+M\+I\+::\+Paso}}
+\subsubsection{\texorpdfstring{mirar()}{mirar()}}
+{\footnotesize\ttfamily synchronized void R\+M\+I.\+Paso.\+mirar (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+11     \{
+12         \textcolor{keywordflow}{while}(\mbox{\hyperlink{class_r_m_i_1_1_paso_acf12d24b9ce56005480644624d042067}{cerrado}})
+13         \{
+14             \textcolor{keywordflow}{try}
+15             \{
+16                 wait();
+17             \} \textcolor{keywordflow}{catch}(InterruptedException ie)\{ \}
+18         \}
+19     \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_r_m_i_1_1_paso_acf12d24b9ce56005480644624d042067}\label{class_r_m_i_1_1_paso_acf12d24b9ce56005480644624d042067}} 
+\index{R\+M\+I\+::\+Paso@{R\+M\+I\+::\+Paso}!cerrado@{cerrado}}
+\index{cerrado@{cerrado}!R\+M\+I\+::\+Paso@{R\+M\+I\+::\+Paso}}
+\subsubsection{\texorpdfstring{cerrado}{cerrado}}
+{\footnotesize\ttfamily boolean R\+M\+I.\+Paso.\+cerrado =false\hspace{0.3cm}{\ttfamily [private]}}
+

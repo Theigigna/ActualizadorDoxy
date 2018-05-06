@@ -1,0 +1,784 @@
+\hypertarget{classstates_1_1_game_state}{}\section{states.\+Game\+State Class Reference}
+\label{classstates_1_1_game_state}\index{states.\+Game\+State@{states.\+Game\+State}}
+Inheritance diagram for states.\+Game\+State\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.226415cm]{classstates_1_1_game_state}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classstates_1_1_game_state_ad9c29c35e2006697858b75c75a6c9b8b}{Game\+State}} (int \mbox{\hyperlink{classstates_1_1_game_state_a6753ed5810e190d122a36ede7a52d4b3}{id}})
+\item 
+int \mbox{\hyperlink{classstates_1_1_game_state_a7d95efb1651c71933e6c3228829cfb33}{get\+ID}} ()
+\item 
+void \mbox{\hyperlink{classstates_1_1_game_state_a487c240070c56cae7ca69c4066ccefa8}{open\+Inventary}} ()
+\item 
+void \mbox{\hyperlink{classstates_1_1_game_state_a7b673342f6dc74ba4c452ff346782d04}{close\+Inventary}} ()
+\item 
+void \mbox{\hyperlink{classstates_1_1_game_state_a4d77661bfb3bf9d51cb10807fb300215}{open\+Dialogue}} ()
+\item 
+void \mbox{\hyperlink{classstates_1_1_game_state_a68370a33c4250e3a8fe588e1ace01d85}{close\+Dialogue}} ()
+\item 
+void \mbox{\hyperlink{classstates_1_1_game_state_a3fe60e1878feb13a073438a647273343}{init}} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_game_container}{Game\+Container}} \mbox{\hyperlink{classstates_1_1_game_state_a88b0df4b57ada742c53e4e1ee3b25827}{container}}, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1_state_based_game}{State\+Based\+Game}} \mbox{\hyperlink{classstates_1_1_game_state_a5f563e34a3fc7d777396b68e00b321f5}{game}})  throws Slick\+Exception 
+\item 
+void \mbox{\hyperlink{classstates_1_1_game_state_a9ed552e4fa17b64ddca450de007ba411}{init\+Game\+Mode}} (boolean \mbox{\hyperlink{classstates_1_1_game_state_af984dc048942d10169fb7127bcc30273}{sword}})  throws Slick\+Exception 
+\item 
+void \mbox{\hyperlink{classstates_1_1_game_state_a9500cae36bcfef4c7002c7086ef9429d}{render}} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_game_container}{Game\+Container}} \mbox{\hyperlink{classstates_1_1_game_state_a88b0df4b57ada742c53e4e1ee3b25827}{container}}, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1_state_based_game}{State\+Based\+Game}} \mbox{\hyperlink{classstates_1_1_game_state_a5f563e34a3fc7d777396b68e00b321f5}{game}}, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_graphics}{Graphics}} g)  throws Slick\+Exception 
+\item 
+void \mbox{\hyperlink{classstates_1_1_game_state_a0d50f38e70aa11191ecdc79a7df4c91b}{clean\+Enemies}} ()
+\item 
+void \mbox{\hyperlink{classstates_1_1_game_state_a5b3d7d529435681f3276acf887f137a7}{update}} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_game_container}{Game\+Container}} \mbox{\hyperlink{classstates_1_1_game_state_a88b0df4b57ada742c53e4e1ee3b25827}{container}}, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1_state_based_game}{State\+Based\+Game}} \mbox{\hyperlink{classstates_1_1_game_state_a5f563e34a3fc7d777396b68e00b321f5}{game}}, int delta)  throws Slick\+Exception 
+\item 
+void \mbox{\hyperlink{classstates_1_1_game_state_a48c6c35635d58caba6995ea8dbd328cd}{change\+Map}} (\mbox{\hyperlink{classdetectors_1_1_map_changer}{Map\+Changer}} map\+Changer)
+\item 
+void \mbox{\hyperlink{classstates_1_1_game_state_a5561200f7d5c881b84ce6369f6fad705}{init\+Dialogue}} (String source, int num)
+\item 
+void \mbox{\hyperlink{classstates_1_1_game_state_a124cf2badd7eb25cf101898d6542a052}{restore\+Game}} ()
+\item 
+\mbox{\hyperlink{classentities_1_1_player}{Player}} \mbox{\hyperlink{classstates_1_1_game_state_acd86ca53723e41d0bc440cf07c753048}{get\+Player}} ()
+\item 
+\mbox{\hyperlink{classentities_1_1_map}{Map}} \mbox{\hyperlink{classstates_1_1_game_state_a5ef1de01f68adafec12bb3bb78010e2e}{get\+Map}} ()
+\item 
+int \mbox{\hyperlink{classstates_1_1_game_state_ab3aace79bbd3da8c4e838ac872ffb2a2}{get\+State}} ()
+\item 
+void \mbox{\hyperlink{classstates_1_1_game_state_a641263329dfd0fd93b595ccddfc393fa}{set\+State}} (int \mbox{\hyperlink{classstates_1_1_game_state_a5e07b1776e13d009e1a8c6a1e8140d04}{state}})
+\item 
+\mbox{\hyperlink{classentities_1_1_collision_handler}{Collision\+Handler}} \mbox{\hyperlink{classstates_1_1_game_state_af774083d4669d438a4c9248859f64c08}{get\+Collision\+Handler}} ()
+\item 
+boolean \mbox{\hyperlink{classstates_1_1_game_state_add3708153f0df86c7909ae99846f2597}{is\+Sword}} ()
+\item 
+void \mbox{\hyperlink{classstates_1_1_game_state_a4b4deae89360aac49314b7b0a1c87f6c}{set\+Sword}} (boolean \mbox{\hyperlink{classstates_1_1_game_state_af984dc048942d10169fb7127bcc30273}{sword}})
+\item 
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1_state_based_game}{State\+Based\+Game}} \mbox{\hyperlink{classstates_1_1_game_state_a08a716dc1292aef4744b305312e598f1}{get\+Game}} ()
+\item 
+void \mbox{\hyperlink{classstates_1_1_game_state_a5da1739500cab675c70888ad75ec458a}{set\+Game}} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1_state_based_game}{State\+Based\+Game}} \mbox{\hyperlink{classstates_1_1_game_state_a5f563e34a3fc7d777396b68e00b321f5}{game}})
+\item 
+boolean \mbox{\hyperlink{classstates_1_1_game_state_a30ae5d760e45322b8e77c5959dc992f5}{is\+Game\+Ended}} ()
+\item 
+void \mbox{\hyperlink{classstates_1_1_game_state_acdafba6555f9ca9a6ce73f2b385d3e9a}{set\+Game\+Ended}} (boolean \mbox{\hyperlink{classstates_1_1_game_state_a67de2baaf7f13d4c875e9b34a54fed5e}{game\+Ended}})
+\item 
+\mbox{\hyperlink{classentities_1_1_path_finder}{Path\+Finder}} \mbox{\hyperlink{classstates_1_1_game_state_a624f1d82e4bfb86a85f7e624b9010209}{get\+Path\+Finder}} ()
+\item 
+void \mbox{\hyperlink{classstates_1_1_game_state_a8df71c0f666c07222b9d6314c2ee0c26}{set\+Path\+Finder}} (\mbox{\hyperlink{classentities_1_1_path_finder}{Path\+Finder}} \mbox{\hyperlink{classstates_1_1_game_state_aeaae3c340636293db4737187e847f764}{path\+Finder}})
+\item 
+Array\+List$<$ \mbox{\hyperlink{classentities_1_1_subject}{Subject}} $>$ \mbox{\hyperlink{classstates_1_1_game_state_ac441d850526544e548921068f5eb78d6}{get\+Entities}} ()
+\item 
+void \mbox{\hyperlink{classstates_1_1_game_state_a1bc370871445113aae1a9bff43dcc50f}{set\+Entities}} (Array\+List$<$ \mbox{\hyperlink{classentities_1_1_subject}{Subject}} $>$ \mbox{\hyperlink{classstates_1_1_game_state_abb21bb28c6cdc15af651221a524d5073}{entities}})
+\item 
+void \mbox{\hyperlink{classstates_1_1_game_state_a4429ea297dfd50415f68436e93ee4a43}{set\+Chief\+Dead}} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classentities_1_1_collision_handler}{Collision\+Handler}} \mbox{\hyperlink{classstates_1_1_game_state_a7640e08453b2ce79066278d32d28ab63}{collision\+Handler}}
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static int \mbox{\hyperlink{classstates_1_1_game_state_a8617f1d8be7bed020eeab9384e731bc6}{G\+A\+ME}} = 0
+\item 
+static int \mbox{\hyperlink{classstates_1_1_game_state_a4cc6c1ac20c3d3590424e5b199a4663c}{I\+N\+V\+E\+N\+T\+A\+RY}} = 1
+\item 
+static int \mbox{\hyperlink{classstates_1_1_game_state_ae5ee1ef1d4462e5a6667b05addc61fb6}{D\+I\+A\+L\+O\+G\+UE}} = 2
+\item 
+static int \mbox{\hyperlink{classstates_1_1_game_state_a47d917ebca3ed09f171231d9e36cf2e3}{P\+A\+U\+SE}} = 3
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+boolean \mbox{\hyperlink{classstates_1_1_game_state_a67de2baaf7f13d4c875e9b34a54fed5e}{game\+Ended}}
+\item 
+int \mbox{\hyperlink{classstates_1_1_game_state_a6753ed5810e190d122a36ede7a52d4b3}{id}}
+\item 
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_game_container}{Game\+Container}} \mbox{\hyperlink{classstates_1_1_game_state_a88b0df4b57ada742c53e4e1ee3b25827}{container}}
+\item 
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1_state_based_game}{State\+Based\+Game}} \mbox{\hyperlink{classstates_1_1_game_state_a5f563e34a3fc7d777396b68e00b321f5}{game}}
+\item 
+\mbox{\hyperlink{classentities_1_1_map}{Map}} \mbox{\hyperlink{classstates_1_1_game_state_ab5dc1b5f4f87c6fc5684832bfba3b939}{map}}
+\item 
+boolean \mbox{\hyperlink{classstates_1_1_game_state_af984dc048942d10169fb7127bcc30273}{sword}}
+\item 
+\mbox{\hyperlink{classentities_1_1_camera}{Camera}} \mbox{\hyperlink{classstates_1_1_game_state_a0ed0ff756171316575f1bb875591b14d}{camera}}
+\item 
+\mbox{\hyperlink{classitems_1_1weapons_1_1_arrow_handler}{Arrow\+Handler}} \mbox{\hyperlink{classstates_1_1_game_state_ad403f3cc9e4c649012a647fe88ada09f}{ah}}
+\item 
+\mbox{\hyperlink{classgui_1_1_g_u_i}{G\+UI}} \mbox{\hyperlink{classstates_1_1_game_state_a06c55ea6da4254b914abd92c912036c1}{gui}}
+\item 
+\mbox{\hyperlink{classentities_1_1_player}{Player}} \mbox{\hyperlink{classstates_1_1_game_state_ae8ec891c55e1c5d43372a289d8a6d87e}{player}}
+\item 
+Array\+List$<$ \mbox{\hyperlink{classentities_1_1_subject}{Subject}} $>$ \mbox{\hyperlink{classstates_1_1_game_state_abb21bb28c6cdc15af651221a524d5073}{entities}}
+\item 
+int \mbox{\hyperlink{classstates_1_1_game_state_a5e07b1776e13d009e1a8c6a1e8140d04}{state}}
+\item 
+\mbox{\hyperlink{classentities_1_1_path_finder}{Path\+Finder}} \mbox{\hyperlink{classstates_1_1_game_state_aeaae3c340636293db4737187e847f764}{path\+Finder}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classstates_1_1_game_state_ad9c29c35e2006697858b75c75a6c9b8b}\label{classstates_1_1_game_state_ad9c29c35e2006697858b75c75a6c9b8b}} 
+\index{states\+::\+Game\+State@{states\+::\+Game\+State}!Game\+State@{Game\+State}}
+\index{Game\+State@{Game\+State}!states\+::\+Game\+State@{states\+::\+Game\+State}}
+\subsubsection{\texorpdfstring{Game\+State()}{GameState()}}
+{\footnotesize\ttfamily states.\+Game\+State.\+Game\+State (\begin{DoxyParamCaption}\item[{int}]{id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+71                              \{
+72         this.\textcolor{keywordtype}{id} = \mbox{\hyperlink{classstates_1_1_game_state_a6753ed5810e190d122a36ede7a52d4b3}{id}};
+73 
+74     \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classstates_1_1_game_state_a48c6c35635d58caba6995ea8dbd328cd}\label{classstates_1_1_game_state_a48c6c35635d58caba6995ea8dbd328cd}} 
+\index{states\+::\+Game\+State@{states\+::\+Game\+State}!change\+Map@{change\+Map}}
+\index{change\+Map@{change\+Map}!states\+::\+Game\+State@{states\+::\+Game\+State}}
+\subsubsection{\texorpdfstring{change\+Map()}{changeMap()}}
+{\footnotesize\ttfamily void states.\+Game\+State.\+change\+Map (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classdetectors_1_1_map_changer}{Map\+Changer}}}]{map\+Changer }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+222                                                  \{
+223         \mbox{\hyperlink{classstates_1_1_game_state_a0d50f38e70aa11191ecdc79a7df4c91b}{cleanEnemies}}();
+224 
+225         \mbox{\hyperlink{classstates_1_1_game_state_ab5dc1b5f4f87c6fc5684832bfba3b939}{map}}.\mbox{\hyperlink{classentities_1_1_map_aa6e658d7d233c2f7d52d10e65d8f3d8e}{changeMap}}(\textcolor{stringliteral}{"res/maps/"} + mapChanger.getMap() + \textcolor{stringliteral}{".tmx"}, mapChanger.getMap());
+226         \textcolor{keywordflow}{try} \{
+227             \mbox{\hyperlink{classstates_1_1_game_state_ab5dc1b5f4f87c6fc5684832bfba3b939}{map}}.\mbox{\hyperlink{classentities_1_1_map_a183d1b160c442fc50c37cf0cb956f5cd}{init}}(\mbox{\hyperlink{classstates_1_1_game_state_a7640e08453b2ce79066278d32d28ab63}{collisionHandler}}, \textcolor{keyword}{this});
+228             \mbox{\hyperlink{classstates_1_1_game_state_aeaae3c340636293db4737187e847f764}{pathFinder}}.\mbox{\hyperlink{classentities_1_1_path_finder_a43344b26144ea29f390b8be84f14ee7a}{reinit}}();
+229         \} \textcolor{keywordflow}{catch} (SlickException ex) \{
+230             Logger.getLogger(\mbox{\hyperlink{classstates_1_1_game_state_ad9c29c35e2006697858b75c75a6c9b8b}{GameState}}.class.getName()).log(Level.SEVERE, null, ex);
+231         \}
+232         \mbox{\hyperlink{classstates_1_1_game_state_ae8ec891c55e1c5d43372a289d8a6d87e}{player}}.\mbox{\hyperlink{classentities_1_1_mobile_entity_a99e4a1603aabaaf21c91ffad2e0d86cf}{setEntityX}}(mapChanger.getInitX());
+233         \mbox{\hyperlink{classstates_1_1_game_state_ae8ec891c55e1c5d43372a289d8a6d87e}{player}}.\mbox{\hyperlink{classentities_1_1_mobile_entity_a08206aa00cd7b2e7d5cfeb2b1b2338cb}{setEntityY}}(mapChanger.getInitY());
+234         \mbox{\hyperlink{classstates_1_1_game_state_a0ed0ff756171316575f1bb875591b14d}{camera}}.\mbox{\hyperlink{classentities_1_1_camera_aae34158cc2c20916570929c01605dc5c}{initCamera}}(\mbox{\hyperlink{classstates_1_1_game_state_a88b0df4b57ada742c53e4e1ee3b25827}{container}}, \mbox{\hyperlink{classstates_1_1_game_state_ab5dc1b5f4f87c6fc5684832bfba3b939}{map}});
+235     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classstates_1_1_game_state_a0d50f38e70aa11191ecdc79a7df4c91b}\label{classstates_1_1_game_state_a0d50f38e70aa11191ecdc79a7df4c91b}} 
+\index{states\+::\+Game\+State@{states\+::\+Game\+State}!clean\+Enemies@{clean\+Enemies}}
+\index{clean\+Enemies@{clean\+Enemies}!states\+::\+Game\+State@{states\+::\+Game\+State}}
+\subsubsection{\texorpdfstring{clean\+Enemies()}{cleanEnemies()}}
+{\footnotesize\ttfamily void states.\+Game\+State.\+clean\+Enemies (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+197                                \{
+198         \textcolor{keywordtype}{int} nonDeleted=0;
+199         \textcolor{keywordflow}{while}((\mbox{\hyperlink{namespaceentities}{entities}}.size()-nonDeleted)>0)\{
+200             Subject aux=\mbox{\hyperlink{namespaceentities}{entities}}.get(nonDeleted);
+201             \textcolor{keywordflow}{if}(!(aux instanceof \mbox{\hyperlink{class_player}{Player}}))\{
+202                 \mbox{\hyperlink{classstates_1_1_game_state_a7640e08453b2ce79066278d32d28ab63}{collisionHandler}}.\mbox{\hyperlink{classentities_1_1_collision_handler_a0634abfade22196f7c8292dca6d4c883}{removeCollisionable}}(aux);
+203                 \mbox{\hyperlink{namespaceentities}{entities}}.remove(aux);
+204             \}\textcolor{keywordflow}{else}\{
+205                 nonDeleted++;
+206             \}
+207         \}
+208     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classstates_1_1_game_state_a68370a33c4250e3a8fe588e1ace01d85}\label{classstates_1_1_game_state_a68370a33c4250e3a8fe588e1ace01d85}} 
+\index{states\+::\+Game\+State@{states\+::\+Game\+State}!close\+Dialogue@{close\+Dialogue}}
+\index{close\+Dialogue@{close\+Dialogue}!states\+::\+Game\+State@{states\+::\+Game\+State}}
+\subsubsection{\texorpdfstring{close\+Dialogue()}{closeDialogue()}}
+{\footnotesize\ttfamily void states.\+Game\+State.\+close\+Dialogue (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+99                                 \{
+100         \mbox{\hyperlink{classstates_1_1_game_state_a5e07b1776e13d009e1a8c6a1e8140d04}{state}} = \mbox{\hyperlink{classstates_1_1_game_state_a8617f1d8be7bed020eeab9384e731bc6}{GAME}};
+101         \mbox{\hyperlink{classstates_1_1_game_state_a88b0df4b57ada742c53e4e1ee3b25827}{container}}.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_game_container_a6042fd06c54872f9f791bd33beffec88}{getInput}}().\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_input_ae9aa4789e13f1528ae603939684a4237}{removeAllKeyListeners}}();
+102         \mbox{\hyperlink{classstates_1_1_game_state_a88b0df4b57ada742c53e4e1ee3b25827}{container}}.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_game_container_a6042fd06c54872f9f791bd33beffec88}{getInput}}().\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_input_af5ad91bb375e8834e1914f441794561b}{addKeyListener}}(
+      \mbox{\hyperlink{classstates_1_1_game_state_ae8ec891c55e1c5d43372a289d8a6d87e}{player}}.\mbox{\hyperlink{classentities_1_1_player_afddc465ed5f94a8137b90790e815ecea}{getInputHandler}}());
+103     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classstates_1_1_game_state_a7b673342f6dc74ba4c452ff346782d04}\label{classstates_1_1_game_state_a7b673342f6dc74ba4c452ff346782d04}} 
+\index{states\+::\+Game\+State@{states\+::\+Game\+State}!close\+Inventary@{close\+Inventary}}
+\index{close\+Inventary@{close\+Inventary}!states\+::\+Game\+State@{states\+::\+Game\+State}}
+\subsubsection{\texorpdfstring{close\+Inventary()}{closeInventary()}}
+{\footnotesize\ttfamily void states.\+Game\+State.\+close\+Inventary (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+87                                  \{
+88         \mbox{\hyperlink{classstates_1_1_game_state_a5e07b1776e13d009e1a8c6a1e8140d04}{state}} = \mbox{\hyperlink{classstates_1_1_game_state_a8617f1d8be7bed020eeab9384e731bc6}{GAME}};
+89         \mbox{\hyperlink{classstates_1_1_game_state_a88b0df4b57ada742c53e4e1ee3b25827}{container}}.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_game_container_a6042fd06c54872f9f791bd33beffec88}{getInput}}().\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_input_ae9aa4789e13f1528ae603939684a4237}{removeAllKeyListeners}}();
+90         \mbox{\hyperlink{classstates_1_1_game_state_a88b0df4b57ada742c53e4e1ee3b25827}{container}}.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_game_container_a6042fd06c54872f9f791bd33beffec88}{getInput}}().\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_input_af5ad91bb375e8834e1914f441794561b}{addKeyListener}}(
+      \mbox{\hyperlink{classstates_1_1_game_state_ae8ec891c55e1c5d43372a289d8a6d87e}{player}}.\mbox{\hyperlink{classentities_1_1_player_afddc465ed5f94a8137b90790e815ecea}{getInputHandler}}());
+91     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classstates_1_1_game_state_af774083d4669d438a4c9248859f64c08}\label{classstates_1_1_game_state_af774083d4669d438a4c9248859f64c08}} 
+\index{states\+::\+Game\+State@{states\+::\+Game\+State}!get\+Collision\+Handler@{get\+Collision\+Handler}}
+\index{get\+Collision\+Handler@{get\+Collision\+Handler}!states\+::\+Game\+State@{states\+::\+Game\+State}}
+\subsubsection{\texorpdfstring{get\+Collision\+Handler()}{getCollisionHandler()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classentities_1_1_collision_handler}{Collision\+Handler}} states.\+Game\+State.\+get\+Collision\+Handler (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+265                                                   \{
+266         \textcolor{keywordflow}{return} \mbox{\hyperlink{classstates_1_1_game_state_a7640e08453b2ce79066278d32d28ab63}{collisionHandler}};
+267     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classstates_1_1_game_state_ac441d850526544e548921068f5eb78d6}\label{classstates_1_1_game_state_ac441d850526544e548921068f5eb78d6}} 
+\index{states\+::\+Game\+State@{states\+::\+Game\+State}!get\+Entities@{get\+Entities}}
+\index{get\+Entities@{get\+Entities}!states\+::\+Game\+State@{states\+::\+Game\+State}}
+\subsubsection{\texorpdfstring{get\+Entities()}{getEntities()}}
+{\footnotesize\ttfamily Array\+List$<$\mbox{\hyperlink{classentities_1_1_subject}{Subject}}$>$ states.\+Game\+State.\+get\+Entities (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+301                                             \{
+302         \textcolor{keywordflow}{return} \mbox{\hyperlink{classstates_1_1_game_state_abb21bb28c6cdc15af651221a524d5073}{entities}};
+303     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classstates_1_1_game_state_a08a716dc1292aef4744b305312e598f1}\label{classstates_1_1_game_state_a08a716dc1292aef4744b305312e598f1}} 
+\index{states\+::\+Game\+State@{states\+::\+Game\+State}!get\+Game@{get\+Game}}
+\index{get\+Game@{get\+Game}!states\+::\+Game\+State@{states\+::\+Game\+State}}
+\subsubsection{\texorpdfstring{get\+Game()}{getGame()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1_state_based_game}{State\+Based\+Game}} states.\+Game\+State.\+get\+Game (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+277                                     \{
+278         \textcolor{keywordflow}{return} \mbox{\hyperlink{classstates_1_1_game_state_a5f563e34a3fc7d777396b68e00b321f5}{game}};
+279     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classstates_1_1_game_state_a7d95efb1651c71933e6c3228829cfb33}\label{classstates_1_1_game_state_a7d95efb1651c71933e6c3228829cfb33}} 
+\index{states\+::\+Game\+State@{states\+::\+Game\+State}!get\+ID@{get\+ID}}
+\index{get\+ID@{get\+ID}!states\+::\+Game\+State@{states\+::\+Game\+State}}
+\subsubsection{\texorpdfstring{get\+I\+D()}{getID()}}
+{\footnotesize\ttfamily int states.\+Game\+State.\+get\+ID (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get the ID of this state
+
+\begin{DoxyReturn}{Returns}
+The game unique ID of this state 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1state_1_1_game_state_a54f2bc6a91feaf0614a5ef19f1d03313}{org.\+newdawn.\+slick.\+state.\+Game\+State}}.
+
+
+\begin{DoxyCode}
+77                        \{
+78         \textcolor{keywordflow}{return} \mbox{\hyperlink{classstates_1_1_game_state_a6753ed5810e190d122a36ede7a52d4b3}{id}};
+79     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classstates_1_1_game_state_a5ef1de01f68adafec12bb3bb78010e2e}\label{classstates_1_1_game_state_a5ef1de01f68adafec12bb3bb78010e2e}} 
+\index{states\+::\+Game\+State@{states\+::\+Game\+State}!get\+Map@{get\+Map}}
+\index{get\+Map@{get\+Map}!states\+::\+Game\+State@{states\+::\+Game\+State}}
+\subsubsection{\texorpdfstring{get\+Map()}{getMap()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classentities_1_1_map}{Map}} states.\+Game\+State.\+get\+Map (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+252                         \{
+253         \textcolor{keywordflow}{return} \mbox{\hyperlink{classstates_1_1_game_state_ab5dc1b5f4f87c6fc5684832bfba3b939}{map}};
+254     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classstates_1_1_game_state_a624f1d82e4bfb86a85f7e624b9010209}\label{classstates_1_1_game_state_a624f1d82e4bfb86a85f7e624b9010209}} 
+\index{states\+::\+Game\+State@{states\+::\+Game\+State}!get\+Path\+Finder@{get\+Path\+Finder}}
+\index{get\+Path\+Finder@{get\+Path\+Finder}!states\+::\+Game\+State@{states\+::\+Game\+State}}
+\subsubsection{\texorpdfstring{get\+Path\+Finder()}{getPathFinder()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classentities_1_1_path_finder}{Path\+Finder}} states.\+Game\+State.\+get\+Path\+Finder (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+293                                       \{
+294         \textcolor{keywordflow}{return} \mbox{\hyperlink{classstates_1_1_game_state_aeaae3c340636293db4737187e847f764}{pathFinder}};
+295     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classstates_1_1_game_state_acd86ca53723e41d0bc440cf07c753048}\label{classstates_1_1_game_state_acd86ca53723e41d0bc440cf07c753048}} 
+\index{states\+::\+Game\+State@{states\+::\+Game\+State}!get\+Player@{get\+Player}}
+\index{get\+Player@{get\+Player}!states\+::\+Game\+State@{states\+::\+Game\+State}}
+\subsubsection{\texorpdfstring{get\+Player()}{getPlayer()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classentities_1_1_player}{Player}} states.\+Game\+State.\+get\+Player (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+248                               \{
+249         \textcolor{keywordflow}{return} \mbox{\hyperlink{classstates_1_1_game_state_ae8ec891c55e1c5d43372a289d8a6d87e}{player}};
+250     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classstates_1_1_game_state_ab3aace79bbd3da8c4e838ac872ffb2a2}\label{classstates_1_1_game_state_ab3aace79bbd3da8c4e838ac872ffb2a2}} 
+\index{states\+::\+Game\+State@{states\+::\+Game\+State}!get\+State@{get\+State}}
+\index{get\+State@{get\+State}!states\+::\+Game\+State@{states\+::\+Game\+State}}
+\subsubsection{\texorpdfstring{get\+State()}{getState()}}
+{\footnotesize\ttfamily int states.\+Game\+State.\+get\+State (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+256                           \{
+257         \textcolor{keywordflow}{return} \mbox{\hyperlink{classstates_1_1_game_state_a5e07b1776e13d009e1a8c6a1e8140d04}{state}};
+258     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classstates_1_1_game_state_a3fe60e1878feb13a073438a647273343}\label{classstates_1_1_game_state_a3fe60e1878feb13a073438a647273343}} 
+\index{states\+::\+Game\+State@{states\+::\+Game\+State}!init@{init}}
+\index{init@{init}!states\+::\+Game\+State@{states\+::\+Game\+State}}
+\subsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily void states.\+Game\+State.\+init (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_game_container}{Game\+Container}}}]{container,  }\item[{\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1_state_based_game}{State\+Based\+Game}}}]{game }\end{DoxyParamCaption}) throws \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_slick_exception}{Slick\+Exception}}\hspace{0.3cm}{\ttfamily [inline]}}
+
+Initialise the state. It should load any resources it needs at this stage
+
+
+\begin{DoxyParams}{Parameters}
+{\em container} & The container holding the game \\
+\hline
+{\em game} & The game holding this state \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Slick\+Exception} & Indicates a failure to initialise a resource for this state \\
+\hline
+\end{DoxyExceptions}
+
+
+Implements \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1state_1_1_game_state_aa799a369e0fcfe6822d2d586fa6f5bbc}{org.\+newdawn.\+slick.\+state.\+Game\+State}}.
+
+
+\begin{DoxyCode}
+106                                                                                          \{
+107        this.\mbox{\hyperlink{classstates_1_1_game_state_a88b0df4b57ada742c53e4e1ee3b25827}{container}}=\mbox{\hyperlink{classstates_1_1_game_state_a88b0df4b57ada742c53e4e1ee3b25827}{container}};
+108        this.\mbox{\hyperlink{classstates_1_1_game_state_a5f563e34a3fc7d777396b68e00b321f5}{game}}=\mbox{\hyperlink{classstates_1_1_game_state_a5f563e34a3fc7d777396b68e00b321f5}{game}};
+109        \textcolor{comment}{//initGameMode(false);}
+110     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classstates_1_1_game_state_a5561200f7d5c881b84ce6369f6fad705}\label{classstates_1_1_game_state_a5561200f7d5c881b84ce6369f6fad705}} 
+\index{states\+::\+Game\+State@{states\+::\+Game\+State}!init\+Dialogue@{init\+Dialogue}}
+\index{init\+Dialogue@{init\+Dialogue}!states\+::\+Game\+State@{states\+::\+Game\+State}}
+\subsubsection{\texorpdfstring{init\+Dialogue()}{initDialogue()}}
+{\footnotesize\ttfamily void states.\+Game\+State.\+init\+Dialogue (\begin{DoxyParamCaption}\item[{String}]{source,  }\item[{int}]{num }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+237                                                      \{
+238         \textcolor{keywordtype}{int} w = \mbox{\hyperlink{classstates_1_1_game_state_a88b0df4b57ada742c53e4e1ee3b25827}{container}}.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_game_container_a938fe1a28567182445e60450915d5f69}{getWidth}}();
+239         \textcolor{keywordtype}{int} h = \mbox{\hyperlink{classstates_1_1_game_state_a88b0df4b57ada742c53e4e1ee3b25827}{container}}.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_game_container_a7eff88473fe5715fdfc2f92e8cb48521}{getHeight}}();
+240         \mbox{\hyperlink{namespacegui}{gui}}.initDialogue(source, num);
+241         \mbox{\hyperlink{classstates_1_1_game_state_a4d77661bfb3bf9d51cb10807fb300215}{openDialogue}}();
+242     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classstates_1_1_game_state_a9ed552e4fa17b64ddca450de007ba411}\label{classstates_1_1_game_state_a9ed552e4fa17b64ddca450de007ba411}} 
+\index{states\+::\+Game\+State@{states\+::\+Game\+State}!init\+Game\+Mode@{init\+Game\+Mode}}
+\index{init\+Game\+Mode@{init\+Game\+Mode}!states\+::\+Game\+State@{states\+::\+Game\+State}}
+\subsubsection{\texorpdfstring{init\+Game\+Mode()}{initGameMode()}}
+{\footnotesize\ttfamily void states.\+Game\+State.\+init\+Game\+Mode (\begin{DoxyParamCaption}\item[{boolean}]{sword }\end{DoxyParamCaption}) throws \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_slick_exception}{Slick\+Exception}}\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+112                                                                   \{
+113         \textcolor{comment}{//Iniciar modo de juego}
+114         this.\mbox{\hyperlink{classstates_1_1_game_state_af984dc048942d10169fb7127bcc30273}{sword}}=\mbox{\hyperlink{classstates_1_1_game_state_af984dc048942d10169fb7127bcc30273}{sword}};
+115         
+116         \mbox{\hyperlink{namespaceentities}{entities}} = \textcolor{keyword}{new} ArrayList<>();
+117 
+118         this.\mbox{\hyperlink{classstates_1_1_game_state_a5e07b1776e13d009e1a8c6a1e8140d04}{state}} = \mbox{\hyperlink{classstates_1_1_game_state_a8617f1d8be7bed020eeab9384e731bc6}{GAME}};
+119         this.\mbox{\hyperlink{classstates_1_1_game_state_a88b0df4b57ada742c53e4e1ee3b25827}{container}} = \mbox{\hyperlink{classstates_1_1_game_state_a88b0df4b57ada742c53e4e1ee3b25827}{container}};
+120 
+121         \mbox{\hyperlink{classstates_1_1_game_state_ab5dc1b5f4f87c6fc5684832bfba3b939}{map}} = \textcolor{keyword}{new} Map(\textcolor{stringliteral}{"01\_Start\_V2"}, \textcolor{stringliteral}{"res\(\backslash\)\(\backslash\)maps\(\backslash\)\(\backslash\)01\_Start\_V2.tmx"}); \textcolor{comment}{//Create map}
+122         \mbox{\hyperlink{classstates_1_1_game_state_ad403f3cc9e4c649012a647fe88ada09f}{ah}} = ArrowHandler.\mbox{\hyperlink{classitems_1_1weapons_1_1_arrow_handler_a67870bc30237b05a43008c330ec748ce}{getArrowHandler}}();
+123         \mbox{\hyperlink{classstates_1_1_game_state_a7640e08453b2ce79066278d32d28ab63}{collisionHandler}} = CollisionHandler.\mbox{\hyperlink{classentities_1_1_collision_handler_a40a5776ef3782f3bfe037085dc1c10cf}{getCollisionHandler}}();    \textcolor{comment}{//
+      Create collision handler}
+124         \mbox{\hyperlink{classstates_1_1_game_state_a7640e08453b2ce79066278d32d28ab63}{collisionHandler}}.\mbox{\hyperlink{classentities_1_1_collision_handler_a7bf0999c216ce86964042ad3e836686e}{initCollisions}}(\mbox{\hyperlink{classstates_1_1_game_state_ab5dc1b5f4f87c6fc5684832bfba3b939}{map}});
+125 
+126         \mbox{\hyperlink{classstates_1_1_game_state_ab5dc1b5f4f87c6fc5684832bfba3b939}{map}}.\mbox{\hyperlink{classentities_1_1_map_a183d1b160c442fc50c37cf0cb956f5cd}{init}}(\mbox{\hyperlink{classstates_1_1_game_state_a7640e08453b2ce79066278d32d28ab63}{collisionHandler}}, \textcolor{keyword}{this});   \textcolor{comment}{//Init map collisions and detectors}
+127 
+128         \mbox{\hyperlink{classstates_1_1_game_state_ae8ec891c55e1c5d43372a289d8a6d87e}{player}} = \textcolor{keyword}{new} \mbox{\hyperlink{class_player}{Player}}( \textcolor{keyword}{this},10, 1, 1, \mbox{\hyperlink{classstates_1_1_game_state_a7640e08453b2ce79066278d32d28ab63}{collisionHandler}},
+129                 \textcolor{keyword}{new} Image(\textcolor{stringliteral}{"res\(\backslash\)\(\backslash\)characters\(\backslash\)\(\backslash\)abajo2.png"}), 20, 200, 96, 96);   \textcolor{comment}{//Create player}
+130         \mbox{\hyperlink{classstates_1_1_game_state_ae8ec891c55e1c5d43372a289d8a6d87e}{player}}.\mbox{\hyperlink{classentities_1_1_player_a3ec19c021327522cc987ae6c4610338e}{init}}(\mbox{\hyperlink{classstates_1_1_game_state_a88b0df4b57ada742c53e4e1ee3b25827}{container}}, \mbox{\hyperlink{classstates_1_1_game_state_a5f563e34a3fc7d777396b68e00b321f5}{game}}, \textcolor{keyword}{this});    \textcolor{comment}{//Init input 192, }
+131         
+132         Inventary pInv=\mbox{\hyperlink{classstates_1_1_game_state_ae8ec891c55e1c5d43372a289d8a6d87e}{player}}.\mbox{\hyperlink{classentities_1_1_subject_a38fe8f9b3cc9f4c551163ae1f09f480b}{getInventary}}();
+133         \textcolor{keywordflow}{if}(\mbox{\hyperlink{classstates_1_1_game_state_af984dc048942d10169fb7127bcc30273}{sword}})\{
+134             pInv.\mbox{\hyperlink{classitems_1_1_inventary_a41de26269c15ca5a9ecac80c89f2454c}{setWeapon1}}(ItemFactory.newSwordItem(\mbox{\hyperlink{class_player}{Player}}.class,1));
+135        \}\textcolor{keywordflow}{else}\{
+136             pInv.setWeapon1(ItemFactory.newBowItem(\mbox{\hyperlink{class_player}{Player}}.class,1));
+137         \}
+138         \mbox{\hyperlink{classstates_1_1_game_state_ae8ec891c55e1c5d43372a289d8a6d87e}{player}}.\mbox{\hyperlink{classentities_1_1_subject_ad84e9c9719aedcfc3387ddc8b3d1ecd7}{setWeapon}}(pInv.getWeapon1().getWeapon());
+139         
+140         \mbox{\hyperlink{classstates_1_1_game_state_a7640e08453b2ce79066278d32d28ab63}{collisionHandler}}.\mbox{\hyperlink{classentities_1_1_collision_handler_aa81b3fa6857eeb5d4b2a06aff4dcea87}{insertCollisionable}}(
+      \mbox{\hyperlink{classstates_1_1_game_state_ae8ec891c55e1c5d43372a289d8a6d87e}{player}});
+141         \mbox{\hyperlink{namespaceentities}{entities}}.add(\mbox{\hyperlink{classstates_1_1_game_state_ae8ec891c55e1c5d43372a289d8a6d87e}{player}});
+142 
+143         \mbox{\hyperlink{classstates_1_1_game_state_aeaae3c340636293db4737187e847f764}{pathFinder}} = \textcolor{keyword}{new} PathFinder(\mbox{\hyperlink{classstates_1_1_game_state_ab5dc1b5f4f87c6fc5684832bfba3b939}{map}});
+144         
+145         \mbox{\hyperlink{classstates_1_1_game_state_a0ed0ff756171316575f1bb875591b14d}{camera}} = \textcolor{keyword}{new} Camera(\mbox{\hyperlink{classstates_1_1_game_state_ae8ec891c55e1c5d43372a289d8a6d87e}{player}});  \textcolor{comment}{//Center the camera on the player}
+146         \mbox{\hyperlink{classstates_1_1_game_state_a0ed0ff756171316575f1bb875591b14d}{camera}}.\mbox{\hyperlink{classentities_1_1_camera_aae34158cc2c20916570929c01605dc5c}{initCamera}}(\mbox{\hyperlink{classstates_1_1_game_state_a88b0df4b57ada742c53e4e1ee3b25827}{container}}, \mbox{\hyperlink{classstates_1_1_game_state_ab5dc1b5f4f87c6fc5684832bfba3b939}{map}});
+147 
+148         \mbox{\hyperlink{namespacegui}{gui}} = GUI.getGUI();
+149         \mbox{\hyperlink{namespacegui}{gui}}.init(\textcolor{keyword}{this}, \mbox{\hyperlink{classstates_1_1_game_state_a88b0df4b57ada742c53e4e1ee3b25827}{container}}, \mbox{\hyperlink{classstates_1_1_game_state_ae8ec891c55e1c5d43372a289d8a6d87e}{player}});
+150     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classstates_1_1_game_state_a30ae5d760e45322b8e77c5959dc992f5}\label{classstates_1_1_game_state_a30ae5d760e45322b8e77c5959dc992f5}} 
+\index{states\+::\+Game\+State@{states\+::\+Game\+State}!is\+Game\+Ended@{is\+Game\+Ended}}
+\index{is\+Game\+Ended@{is\+Game\+Ended}!states\+::\+Game\+State@{states\+::\+Game\+State}}
+\subsubsection{\texorpdfstring{is\+Game\+Ended()}{isGameEnded()}}
+{\footnotesize\ttfamily boolean states.\+Game\+State.\+is\+Game\+Ended (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+285                                  \{
+286         \textcolor{keywordflow}{return} \mbox{\hyperlink{classstates_1_1_game_state_a67de2baaf7f13d4c875e9b34a54fed5e}{gameEnded}};
+287     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classstates_1_1_game_state_add3708153f0df86c7909ae99846f2597}\label{classstates_1_1_game_state_add3708153f0df86c7909ae99846f2597}} 
+\index{states\+::\+Game\+State@{states\+::\+Game\+State}!is\+Sword@{is\+Sword}}
+\index{is\+Sword@{is\+Sword}!states\+::\+Game\+State@{states\+::\+Game\+State}}
+\subsubsection{\texorpdfstring{is\+Sword()}{isSword()}}
+{\footnotesize\ttfamily boolean states.\+Game\+State.\+is\+Sword (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+269                              \{
+270         \textcolor{keywordflow}{return} \mbox{\hyperlink{classstates_1_1_game_state_af984dc048942d10169fb7127bcc30273}{sword}};
+271     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classstates_1_1_game_state_a4d77661bfb3bf9d51cb10807fb300215}\label{classstates_1_1_game_state_a4d77661bfb3bf9d51cb10807fb300215}} 
+\index{states\+::\+Game\+State@{states\+::\+Game\+State}!open\+Dialogue@{open\+Dialogue}}
+\index{open\+Dialogue@{open\+Dialogue}!states\+::\+Game\+State@{states\+::\+Game\+State}}
+\subsubsection{\texorpdfstring{open\+Dialogue()}{openDialogue()}}
+{\footnotesize\ttfamily void states.\+Game\+State.\+open\+Dialogue (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+93                                \{
+94         \mbox{\hyperlink{classstates_1_1_game_state_a5e07b1776e13d009e1a8c6a1e8140d04}{state}} = \mbox{\hyperlink{classstates_1_1_game_state_ae5ee1ef1d4462e5a6667b05addc61fb6}{DIALOGUE}};
+95         \mbox{\hyperlink{classstates_1_1_game_state_a88b0df4b57ada742c53e4e1ee3b25827}{container}}.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_game_container_a6042fd06c54872f9f791bd33beffec88}{getInput}}().\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_input_ae9aa4789e13f1528ae603939684a4237}{removeAllKeyListeners}}();
+96         \mbox{\hyperlink{classstates_1_1_game_state_a88b0df4b57ada742c53e4e1ee3b25827}{container}}.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_game_container_a6042fd06c54872f9f791bd33beffec88}{getInput}}().\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_input_af5ad91bb375e8834e1914f441794561b}{addKeyListener}}(\mbox{\hyperlink{namespacegui}{gui}});
+97     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classstates_1_1_game_state_a487c240070c56cae7ca69c4066ccefa8}\label{classstates_1_1_game_state_a487c240070c56cae7ca69c4066ccefa8}} 
+\index{states\+::\+Game\+State@{states\+::\+Game\+State}!open\+Inventary@{open\+Inventary}}
+\index{open\+Inventary@{open\+Inventary}!states\+::\+Game\+State@{states\+::\+Game\+State}}
+\subsubsection{\texorpdfstring{open\+Inventary()}{openInventary()}}
+{\footnotesize\ttfamily void states.\+Game\+State.\+open\+Inventary (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+81                                 \{
+82         \mbox{\hyperlink{classstates_1_1_game_state_a5e07b1776e13d009e1a8c6a1e8140d04}{state}} = \mbox{\hyperlink{classstates_1_1_game_state_a4cc6c1ac20c3d3590424e5b199a4663c}{INVENTARY}};
+83         \mbox{\hyperlink{classstates_1_1_game_state_a88b0df4b57ada742c53e4e1ee3b25827}{container}}.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_game_container_a6042fd06c54872f9f791bd33beffec88}{getInput}}().\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_input_ae9aa4789e13f1528ae603939684a4237}{removeAllKeyListeners}}();
+84         \mbox{\hyperlink{classstates_1_1_game_state_a88b0df4b57ada742c53e4e1ee3b25827}{container}}.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_game_container_a6042fd06c54872f9f791bd33beffec88}{getInput}}().\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_input_af5ad91bb375e8834e1914f441794561b}{addKeyListener}}(\mbox{\hyperlink{namespacegui}{gui}});
+85     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classstates_1_1_game_state_a9500cae36bcfef4c7002c7086ef9429d}\label{classstates_1_1_game_state_a9500cae36bcfef4c7002c7086ef9429d}} 
+\index{states\+::\+Game\+State@{states\+::\+Game\+State}!render@{render}}
+\index{render@{render}!states\+::\+Game\+State@{states\+::\+Game\+State}}
+\subsubsection{\texorpdfstring{render()}{render()}}
+{\footnotesize\ttfamily void states.\+Game\+State.\+render (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_game_container}{Game\+Container}}}]{container,  }\item[{\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1_state_based_game}{State\+Based\+Game}}}]{game,  }\item[{\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_graphics}{Graphics}}}]{g }\end{DoxyParamCaption}) throws \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_slick_exception}{Slick\+Exception}}\hspace{0.3cm}{\ttfamily [inline]}}
+
+Render this state to the game\textquotesingle{}s graphics context
+
+
+\begin{DoxyParams}{Parameters}
+{\em container} & The container holding the game \\
+\hline
+{\em game} & The game holding this state \\
+\hline
+{\em g} & The graphics context to render to \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Slick\+Exception} & Indicates a failure to render an artifact \\
+\hline
+\end{DoxyExceptions}
+
+
+Implements \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1state_1_1_game_state_a065352d2725274c5244cd022f226eb17}{org.\+newdawn.\+slick.\+state.\+Game\+State}}.
+
+
+\begin{DoxyCode}
+153                                                                                                        \{
+154 
+155         \textcolor{keywordflow}{if} (\mbox{\hyperlink{classstates_1_1_game_state_a5e07b1776e13d009e1a8c6a1e8140d04}{state}} == \mbox{\hyperlink{classstates_1_1_game_state_a8617f1d8be7bed020eeab9384e731bc6}{GAME}} || \mbox{\hyperlink{classstates_1_1_game_state_a5e07b1776e13d009e1a8c6a1e8140d04}{state}} == \mbox{\hyperlink{classstates_1_1_game_state_ae5ee1ef1d4462e5a6667b05addc61fb6}{DIALOGUE}} || \mbox{\hyperlink{classstates_1_1_game_state_a5e07b1776e13d009e1a8c6a1e8140d04}{state}} == 
+      \mbox{\hyperlink{classstates_1_1_game_state_a4cc6c1ac20c3d3590424e5b199a4663c}{INVENTARY}}) \{
+156             \mbox{\hyperlink{classstates_1_1_game_state_a0ed0ff756171316575f1bb875591b14d}{camera}}.\mbox{\hyperlink{classentities_1_1_camera_aa751a4113be4d9302fafeb69ab6042d4}{translate}}(g);
+157 
+158             Collections.sort(\mbox{\hyperlink{namespaceentities}{entities}}, \textcolor{keyword}{new} Comparator< MobileEntity>() \{
+159                 @Override
+160                 \textcolor{keyword}{public} \textcolor{keywordtype}{int} compare(MobileEntity o1, MobileEntity o2) \{
+161                     \textcolor{keywordflow}{if} (o1.getY() == o2.getY()) \{
+162                         \textcolor{keywordflow}{return} 0;
+163                     \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (o1.getY() > o2.getY()) \{
+164                         \textcolor{keywordflow}{return} 1;
+165                     \} \textcolor{keywordflow}{else} \{
+166                         \textcolor{keywordflow}{return} -1;
+167                     \}
+168                 \}
+169             \});
+170 
+171             \mbox{\hyperlink{classstates_1_1_game_state_ab5dc1b5f4f87c6fc5684832bfba3b939}{map}}.\mbox{\hyperlink{classentities_1_1_map_a2342f9740e05311c015fdcbd07c86f11}{render}}(\mbox{\hyperlink{classstates_1_1_game_state_a88b0df4b57ada742c53e4e1ee3b25827}{container}}, g);
+172             \mbox{\hyperlink{classstates_1_1_game_state_ad403f3cc9e4c649012a647fe88ada09f}{ah}}.\mbox{\hyperlink{classitems_1_1weapons_1_1_arrow_handler_abe0324e6596b718769e45b8165c25673}{render}}(\mbox{\hyperlink{classstates_1_1_game_state_a88b0df4b57ada742c53e4e1ee3b25827}{container}}, \mbox{\hyperlink{classstates_1_1_game_state_a5f563e34a3fc7d777396b68e00b321f5}{game}}, g);\textcolor{comment}{//Arrows}
+173 
+174             \textcolor{keywordflow}{for} (MobileEntity m : \mbox{\hyperlink{namespaceentities}{entities}}) \{
+175                 m.render(\mbox{\hyperlink{classstates_1_1_game_state_a88b0df4b57ada742c53e4e1ee3b25827}{container}}, g);
+176             \}
+177             
+178             \textcolor{comment}{//collisionHandler.renderPositionDetectors(g); //Utilizado para ver el contarno de los
+       detectores}
+179             
+180             \mbox{\hyperlink{classstates_1_1_game_state_ab5dc1b5f4f87c6fc5684832bfba3b939}{map}}.\mbox{\hyperlink{classentities_1_1_map_a5089d63a94806cd3e9d2bdd0d31a799e}{renderHigh}}(\mbox{\hyperlink{classstates_1_1_game_state_a88b0df4b57ada742c53e4e1ee3b25827}{container}}, g);
+181             
+182             \mbox{\hyperlink{classstates_1_1_game_state_a0ed0ff756171316575f1bb875591b14d}{camera}}.\mbox{\hyperlink{classentities_1_1_camera_a89429480df11ec77d4b6e76672d77e96}{reset}}(g);
+183             \mbox{\hyperlink{namespacegui}{gui}}.drawHealthBar(g);
+184             
+185         \}
+186         \textcolor{keywordflow}{if} (\mbox{\hyperlink{classstates_1_1_game_state_a5e07b1776e13d009e1a8c6a1e8140d04}{state}} == \mbox{\hyperlink{classstates_1_1_game_state_a4cc6c1ac20c3d3590424e5b199a4663c}{INVENTARY}}) \{
+187             
+188             \mbox{\hyperlink{namespacegui}{gui}}.drawInventary(g);
+189         \}
+190         \textcolor{keywordflow}{if} (\mbox{\hyperlink{classstates_1_1_game_state_a5e07b1776e13d009e1a8c6a1e8140d04}{state}} == \mbox{\hyperlink{classstates_1_1_game_state_ae5ee1ef1d4462e5a6667b05addc61fb6}{DIALOGUE}}) \{
+191             
+192             \mbox{\hyperlink{namespacegui}{gui}}.drawDialogue(g);
+193         \}
+194 
+195     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classstates_1_1_game_state_a124cf2badd7eb25cf101898d6542a052}\label{classstates_1_1_game_state_a124cf2badd7eb25cf101898d6542a052}} 
+\index{states\+::\+Game\+State@{states\+::\+Game\+State}!restore\+Game@{restore\+Game}}
+\index{restore\+Game@{restore\+Game}!states\+::\+Game\+State@{states\+::\+Game\+State}}
+\subsubsection{\texorpdfstring{restore\+Game()}{restoreGame()}}
+{\footnotesize\ttfamily void states.\+Game\+State.\+restore\+Game (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+244                               \{
+245         \mbox{\hyperlink{classstates_1_1_game_state_a5e07b1776e13d009e1a8c6a1e8140d04}{state}} = \mbox{\hyperlink{classstates_1_1_game_state_a8617f1d8be7bed020eeab9384e731bc6}{GAME}};
+246     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classstates_1_1_game_state_a4429ea297dfd50415f68436e93ee4a43}\label{classstates_1_1_game_state_a4429ea297dfd50415f68436e93ee4a43}} 
+\index{states\+::\+Game\+State@{states\+::\+Game\+State}!set\+Chief\+Dead@{set\+Chief\+Dead}}
+\index{set\+Chief\+Dead@{set\+Chief\+Dead}!states\+::\+Game\+State@{states\+::\+Game\+State}}
+\subsubsection{\texorpdfstring{set\+Chief\+Dead()}{setChiefDead()}}
+{\footnotesize\ttfamily void states.\+Game\+State.\+set\+Chief\+Dead (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+309                               \{
+310         \mbox{\hyperlink{classstates_1_1_game_state_ae8ec891c55e1c5d43372a289d8a6d87e}{player}}.\mbox{\hyperlink{classentities_1_1_subject_a1f173d38d9133a93636087ff78975e90}{setChiefDead}}(\textcolor{keyword}{true});
+311     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classstates_1_1_game_state_a1bc370871445113aae1a9bff43dcc50f}\label{classstates_1_1_game_state_a1bc370871445113aae1a9bff43dcc50f}} 
+\index{states\+::\+Game\+State@{states\+::\+Game\+State}!set\+Entities@{set\+Entities}}
+\index{set\+Entities@{set\+Entities}!states\+::\+Game\+State@{states\+::\+Game\+State}}
+\subsubsection{\texorpdfstring{set\+Entities()}{setEntities()}}
+{\footnotesize\ttfamily void states.\+Game\+State.\+set\+Entities (\begin{DoxyParamCaption}\item[{Array\+List$<$ \mbox{\hyperlink{classentities_1_1_subject}{Subject}} $>$}]{entities }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+305                                                          \{
+306         this.\mbox{\hyperlink{namespaceentities}{entities}} = \mbox{\hyperlink{classstates_1_1_game_state_abb21bb28c6cdc15af651221a524d5073}{entities}};
+307     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classstates_1_1_game_state_a5da1739500cab675c70888ad75ec458a}\label{classstates_1_1_game_state_a5da1739500cab675c70888ad75ec458a}} 
+\index{states\+::\+Game\+State@{states\+::\+Game\+State}!set\+Game@{set\+Game}}
+\index{set\+Game@{set\+Game}!states\+::\+Game\+State@{states\+::\+Game\+State}}
+\subsubsection{\texorpdfstring{set\+Game()}{setGame()}}
+{\footnotesize\ttfamily void states.\+Game\+State.\+set\+Game (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1_state_based_game}{State\+Based\+Game}}}]{game }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+281                                              \{
+282         this.\mbox{\hyperlink{classstates_1_1_game_state_a5f563e34a3fc7d777396b68e00b321f5}{game}} = \mbox{\hyperlink{classstates_1_1_game_state_a5f563e34a3fc7d777396b68e00b321f5}{game}};
+283     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classstates_1_1_game_state_acdafba6555f9ca9a6ce73f2b385d3e9a}\label{classstates_1_1_game_state_acdafba6555f9ca9a6ce73f2b385d3e9a}} 
+\index{states\+::\+Game\+State@{states\+::\+Game\+State}!set\+Game\+Ended@{set\+Game\+Ended}}
+\index{set\+Game\+Ended@{set\+Game\+Ended}!states\+::\+Game\+State@{states\+::\+Game\+State}}
+\subsubsection{\texorpdfstring{set\+Game\+Ended()}{setGameEnded()}}
+{\footnotesize\ttfamily void states.\+Game\+State.\+set\+Game\+Ended (\begin{DoxyParamCaption}\item[{boolean}]{game\+Ended }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+289                                                 \{
+290         this.\mbox{\hyperlink{classstates_1_1_game_state_a67de2baaf7f13d4c875e9b34a54fed5e}{gameEnded}} = \mbox{\hyperlink{classstates_1_1_game_state_a67de2baaf7f13d4c875e9b34a54fed5e}{gameEnded}};
+291     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classstates_1_1_game_state_a8df71c0f666c07222b9d6314c2ee0c26}\label{classstates_1_1_game_state_a8df71c0f666c07222b9d6314c2ee0c26}} 
+\index{states\+::\+Game\+State@{states\+::\+Game\+State}!set\+Path\+Finder@{set\+Path\+Finder}}
+\index{set\+Path\+Finder@{set\+Path\+Finder}!states\+::\+Game\+State@{states\+::\+Game\+State}}
+\subsubsection{\texorpdfstring{set\+Path\+Finder()}{setPathFinder()}}
+{\footnotesize\ttfamily void states.\+Game\+State.\+set\+Path\+Finder (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classentities_1_1_path_finder}{Path\+Finder}}}]{path\+Finder }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+297                                                      \{
+298         this.\mbox{\hyperlink{classstates_1_1_game_state_aeaae3c340636293db4737187e847f764}{pathFinder}} = \mbox{\hyperlink{classstates_1_1_game_state_aeaae3c340636293db4737187e847f764}{pathFinder}};
+299     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classstates_1_1_game_state_a641263329dfd0fd93b595ccddfc393fa}\label{classstates_1_1_game_state_a641263329dfd0fd93b595ccddfc393fa}} 
+\index{states\+::\+Game\+State@{states\+::\+Game\+State}!set\+State@{set\+State}}
+\index{set\+State@{set\+State}!states\+::\+Game\+State@{states\+::\+Game\+State}}
+\subsubsection{\texorpdfstring{set\+State()}{setState()}}
+{\footnotesize\ttfamily void states.\+Game\+State.\+set\+State (\begin{DoxyParamCaption}\item[{int}]{state }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+260                                     \{
+261         this.\mbox{\hyperlink{classstates_1_1_game_state_a5e07b1776e13d009e1a8c6a1e8140d04}{state}} = \mbox{\hyperlink{classstates_1_1_game_state_a5e07b1776e13d009e1a8c6a1e8140d04}{state}};
+262     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classstates_1_1_game_state_a4b4deae89360aac49314b7b0a1c87f6c}\label{classstates_1_1_game_state_a4b4deae89360aac49314b7b0a1c87f6c}} 
+\index{states\+::\+Game\+State@{states\+::\+Game\+State}!set\+Sword@{set\+Sword}}
+\index{set\+Sword@{set\+Sword}!states\+::\+Game\+State@{states\+::\+Game\+State}}
+\subsubsection{\texorpdfstring{set\+Sword()}{setSword()}}
+{\footnotesize\ttfamily void states.\+Game\+State.\+set\+Sword (\begin{DoxyParamCaption}\item[{boolean}]{sword }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+273                                         \{
+274         this.\mbox{\hyperlink{classstates_1_1_game_state_af984dc048942d10169fb7127bcc30273}{sword}} = \mbox{\hyperlink{classstates_1_1_game_state_af984dc048942d10169fb7127bcc30273}{sword}};
+275     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classstates_1_1_game_state_a5b3d7d529435681f3276acf887f137a7}\label{classstates_1_1_game_state_a5b3d7d529435681f3276acf887f137a7}} 
+\index{states\+::\+Game\+State@{states\+::\+Game\+State}!update@{update}}
+\index{update@{update}!states\+::\+Game\+State@{states\+::\+Game\+State}}
+\subsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void states.\+Game\+State.\+update (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_game_container}{Game\+Container}}}]{container,  }\item[{\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1_state_based_game}{State\+Based\+Game}}}]{game,  }\item[{int}]{delta }\end{DoxyParamCaption}) throws \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_slick_exception}{Slick\+Exception}}\hspace{0.3cm}{\ttfamily [inline]}}
+
+Update the state\textquotesingle{}s logic based on the amount of time thats passed
+
+
+\begin{DoxyParams}{Parameters}
+{\em container} & The container holding the game \\
+\hline
+{\em game} & The game holding this state \\
+\hline
+{\em delta} & The amount of time thats passed in millisecond since last update \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Slick\+Exception} & Indicates an internal error that will be reported through the standard framework mechanism \\
+\hline
+\end{DoxyExceptions}
+
+
+Implements \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1state_1_1_game_state_ab5ec3bc37a9bd1eb5679577408c562c1}{org.\+newdawn.\+slick.\+state.\+Game\+State}}.
+
+
+\begin{DoxyCode}
+210                                                                                                       \{
+211         \textcolor{keywordflow}{if} (\mbox{\hyperlink{classstates_1_1_game_state_a5e07b1776e13d009e1a8c6a1e8140d04}{state}} == \mbox{\hyperlink{classstates_1_1_game_state_a8617f1d8be7bed020eeab9384e731bc6}{GAME}}) \{
+212             \mbox{\hyperlink{classstates_1_1_game_state_ae8ec891c55e1c5d43372a289d8a6d87e}{player}}.\mbox{\hyperlink{classentities_1_1_player_abd693dd7c24c59d268906f115f9a4a3b}{update}}(\mbox{\hyperlink{classstates_1_1_game_state_a88b0df4b57ada742c53e4e1ee3b25827}{container}}, delta);
+213             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < \mbox{\hyperlink{namespaceentities}{entities}}.size(); i++) \{
+214                 \mbox{\hyperlink{namespaceentities}{entities}}.get(i).update(\mbox{\hyperlink{classstates_1_1_game_state_a88b0df4b57ada742c53e4e1ee3b25827}{container}}, delta);
+215             \}
+216             \mbox{\hyperlink{classstates_1_1_game_state_ad403f3cc9e4c649012a647fe88ada09f}{ah}}.\mbox{\hyperlink{classitems_1_1weapons_1_1_arrow_handler_a64a0233c91c8aef9289012c67bdf6874}{update}}(delta);
+217             \mbox{\hyperlink{classstates_1_1_game_state_a0ed0ff756171316575f1bb875591b14d}{camera}}.\mbox{\hyperlink{classentities_1_1_camera_afc9fce5bc7a2d64ca42a04c5f34f6f8c}{update}}();
+218         \}
+219 
+220     \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classstates_1_1_game_state_ad403f3cc9e4c649012a647fe88ada09f}\label{classstates_1_1_game_state_ad403f3cc9e4c649012a647fe88ada09f}} 
+\index{states\+::\+Game\+State@{states\+::\+Game\+State}!ah@{ah}}
+\index{ah@{ah}!states\+::\+Game\+State@{states\+::\+Game\+State}}
+\subsubsection{\texorpdfstring{ah}{ah}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classitems_1_1weapons_1_1_arrow_handler}{Arrow\+Handler}} states.\+Game\+State.\+ah\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classstates_1_1_game_state_a0ed0ff756171316575f1bb875591b14d}\label{classstates_1_1_game_state_a0ed0ff756171316575f1bb875591b14d}} 
+\index{states\+::\+Game\+State@{states\+::\+Game\+State}!camera@{camera}}
+\index{camera@{camera}!states\+::\+Game\+State@{states\+::\+Game\+State}}
+\subsubsection{\texorpdfstring{camera}{camera}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classentities_1_1_camera}{Camera}} states.\+Game\+State.\+camera\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classstates_1_1_game_state_a7640e08453b2ce79066278d32d28ab63}\label{classstates_1_1_game_state_a7640e08453b2ce79066278d32d28ab63}} 
+\index{states\+::\+Game\+State@{states\+::\+Game\+State}!collision\+Handler@{collision\+Handler}}
+\index{collision\+Handler@{collision\+Handler}!states\+::\+Game\+State@{states\+::\+Game\+State}}
+\subsubsection{\texorpdfstring{collision\+Handler}{collisionHandler}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classentities_1_1_collision_handler}{Collision\+Handler}} states.\+Game\+State.\+collision\+Handler}
+
+\mbox{\Hypertarget{classstates_1_1_game_state_a88b0df4b57ada742c53e4e1ee3b25827}\label{classstates_1_1_game_state_a88b0df4b57ada742c53e4e1ee3b25827}} 
+\index{states\+::\+Game\+State@{states\+::\+Game\+State}!container@{container}}
+\index{container@{container}!states\+::\+Game\+State@{states\+::\+Game\+State}}
+\subsubsection{\texorpdfstring{container}{container}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_game_container}{Game\+Container}} states.\+Game\+State.\+container\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classstates_1_1_game_state_ae5ee1ef1d4462e5a6667b05addc61fb6}\label{classstates_1_1_game_state_ae5ee1ef1d4462e5a6667b05addc61fb6}} 
+\index{states\+::\+Game\+State@{states\+::\+Game\+State}!D\+I\+A\+L\+O\+G\+UE@{D\+I\+A\+L\+O\+G\+UE}}
+\index{D\+I\+A\+L\+O\+G\+UE@{D\+I\+A\+L\+O\+G\+UE}!states\+::\+Game\+State@{states\+::\+Game\+State}}
+\subsubsection{\texorpdfstring{D\+I\+A\+L\+O\+G\+UE}{DIALOGUE}}
+{\footnotesize\ttfamily int states.\+Game\+State.\+D\+I\+A\+L\+O\+G\+UE = 2\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classstates_1_1_game_state_abb21bb28c6cdc15af651221a524d5073}\label{classstates_1_1_game_state_abb21bb28c6cdc15af651221a524d5073}} 
+\index{states\+::\+Game\+State@{states\+::\+Game\+State}!entities@{entities}}
+\index{entities@{entities}!states\+::\+Game\+State@{states\+::\+Game\+State}}
+\subsubsection{\texorpdfstring{entities}{entities}}
+{\footnotesize\ttfamily Array\+List$<$\mbox{\hyperlink{classentities_1_1_subject}{Subject}}$>$ states.\+Game\+State.\+entities\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classstates_1_1_game_state_a8617f1d8be7bed020eeab9384e731bc6}\label{classstates_1_1_game_state_a8617f1d8be7bed020eeab9384e731bc6}} 
+\index{states\+::\+Game\+State@{states\+::\+Game\+State}!G\+A\+ME@{G\+A\+ME}}
+\index{G\+A\+ME@{G\+A\+ME}!states\+::\+Game\+State@{states\+::\+Game\+State}}
+\subsubsection{\texorpdfstring{G\+A\+ME}{GAME}}
+{\footnotesize\ttfamily int states.\+Game\+State.\+G\+A\+ME = 0\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classstates_1_1_game_state_a5f563e34a3fc7d777396b68e00b321f5}\label{classstates_1_1_game_state_a5f563e34a3fc7d777396b68e00b321f5}} 
+\index{states\+::\+Game\+State@{states\+::\+Game\+State}!game@{game}}
+\index{game@{game}!states\+::\+Game\+State@{states\+::\+Game\+State}}
+\subsubsection{\texorpdfstring{game}{game}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1_state_based_game}{State\+Based\+Game}} states.\+Game\+State.\+game\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classstates_1_1_game_state_a67de2baaf7f13d4c875e9b34a54fed5e}\label{classstates_1_1_game_state_a67de2baaf7f13d4c875e9b34a54fed5e}} 
+\index{states\+::\+Game\+State@{states\+::\+Game\+State}!game\+Ended@{game\+Ended}}
+\index{game\+Ended@{game\+Ended}!states\+::\+Game\+State@{states\+::\+Game\+State}}
+\subsubsection{\texorpdfstring{game\+Ended}{gameEnded}}
+{\footnotesize\ttfamily boolean states.\+Game\+State.\+game\+Ended\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classstates_1_1_game_state_a06c55ea6da4254b914abd92c912036c1}\label{classstates_1_1_game_state_a06c55ea6da4254b914abd92c912036c1}} 
+\index{states\+::\+Game\+State@{states\+::\+Game\+State}!gui@{gui}}
+\index{gui@{gui}!states\+::\+Game\+State@{states\+::\+Game\+State}}
+\subsubsection{\texorpdfstring{gui}{gui}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classgui_1_1_g_u_i}{G\+UI}} states.\+Game\+State.\+gui\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classstates_1_1_game_state_a6753ed5810e190d122a36ede7a52d4b3}\label{classstates_1_1_game_state_a6753ed5810e190d122a36ede7a52d4b3}} 
+\index{states\+::\+Game\+State@{states\+::\+Game\+State}!id@{id}}
+\index{id@{id}!states\+::\+Game\+State@{states\+::\+Game\+State}}
+\subsubsection{\texorpdfstring{id}{id}}
+{\footnotesize\ttfamily int states.\+Game\+State.\+id\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classstates_1_1_game_state_a4cc6c1ac20c3d3590424e5b199a4663c}\label{classstates_1_1_game_state_a4cc6c1ac20c3d3590424e5b199a4663c}} 
+\index{states\+::\+Game\+State@{states\+::\+Game\+State}!I\+N\+V\+E\+N\+T\+A\+RY@{I\+N\+V\+E\+N\+T\+A\+RY}}
+\index{I\+N\+V\+E\+N\+T\+A\+RY@{I\+N\+V\+E\+N\+T\+A\+RY}!states\+::\+Game\+State@{states\+::\+Game\+State}}
+\subsubsection{\texorpdfstring{I\+N\+V\+E\+N\+T\+A\+RY}{INVENTARY}}
+{\footnotesize\ttfamily int states.\+Game\+State.\+I\+N\+V\+E\+N\+T\+A\+RY = 1\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classstates_1_1_game_state_ab5dc1b5f4f87c6fc5684832bfba3b939}\label{classstates_1_1_game_state_ab5dc1b5f4f87c6fc5684832bfba3b939}} 
+\index{states\+::\+Game\+State@{states\+::\+Game\+State}!map@{map}}
+\index{map@{map}!states\+::\+Game\+State@{states\+::\+Game\+State}}
+\subsubsection{\texorpdfstring{map}{map}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classentities_1_1_map}{Map}} states.\+Game\+State.\+map\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classstates_1_1_game_state_aeaae3c340636293db4737187e847f764}\label{classstates_1_1_game_state_aeaae3c340636293db4737187e847f764}} 
+\index{states\+::\+Game\+State@{states\+::\+Game\+State}!path\+Finder@{path\+Finder}}
+\index{path\+Finder@{path\+Finder}!states\+::\+Game\+State@{states\+::\+Game\+State}}
+\subsubsection{\texorpdfstring{path\+Finder}{pathFinder}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classentities_1_1_path_finder}{Path\+Finder}} states.\+Game\+State.\+path\+Finder\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classstates_1_1_game_state_a47d917ebca3ed09f171231d9e36cf2e3}\label{classstates_1_1_game_state_a47d917ebca3ed09f171231d9e36cf2e3}} 
+\index{states\+::\+Game\+State@{states\+::\+Game\+State}!P\+A\+U\+SE@{P\+A\+U\+SE}}
+\index{P\+A\+U\+SE@{P\+A\+U\+SE}!states\+::\+Game\+State@{states\+::\+Game\+State}}
+\subsubsection{\texorpdfstring{P\+A\+U\+SE}{PAUSE}}
+{\footnotesize\ttfamily int states.\+Game\+State.\+P\+A\+U\+SE = 3\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classstates_1_1_game_state_ae8ec891c55e1c5d43372a289d8a6d87e}\label{classstates_1_1_game_state_ae8ec891c55e1c5d43372a289d8a6d87e}} 
+\index{states\+::\+Game\+State@{states\+::\+Game\+State}!player@{player}}
+\index{player@{player}!states\+::\+Game\+State@{states\+::\+Game\+State}}
+\subsubsection{\texorpdfstring{player}{player}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classentities_1_1_player}{Player}} states.\+Game\+State.\+player\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classstates_1_1_game_state_a5e07b1776e13d009e1a8c6a1e8140d04}\label{classstates_1_1_game_state_a5e07b1776e13d009e1a8c6a1e8140d04}} 
+\index{states\+::\+Game\+State@{states\+::\+Game\+State}!state@{state}}
+\index{state@{state}!states\+::\+Game\+State@{states\+::\+Game\+State}}
+\subsubsection{\texorpdfstring{state}{state}}
+{\footnotesize\ttfamily int states.\+Game\+State.\+state\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classstates_1_1_game_state_af984dc048942d10169fb7127bcc30273}\label{classstates_1_1_game_state_af984dc048942d10169fb7127bcc30273}} 
+\index{states\+::\+Game\+State@{states\+::\+Game\+State}!sword@{sword}}
+\index{sword@{sword}!states\+::\+Game\+State@{states\+::\+Game\+State}}
+\subsubsection{\texorpdfstring{sword}{sword}}
+{\footnotesize\ttfamily boolean states.\+Game\+State.\+sword\hspace{0.3cm}{\ttfamily [private]}}
+

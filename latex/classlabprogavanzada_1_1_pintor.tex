@@ -1,0 +1,76 @@
+\hypertarget{classlabprogavanzada_1_1_pintor}{}\section{labprogavanzada.\+Pintor Class Reference}
+\label{classlabprogavanzada_1_1_pintor}\index{labprogavanzada.\+Pintor@{labprogavanzada.\+Pintor}}
+Inheritance diagram for labprogavanzada.\+Pintor\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classlabprogavanzada_1_1_pintor}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classlabprogavanzada_1_1_pintor_ac860bb13dfb9a119752fcfde4c7322f8}{Pintor}} (J\+Button \mbox{\hyperlink{classlabprogavanzada_1_1_pintor_a171f3004a9b9e99f64e81de4c1257d6f}{b}})
+\item 
+void \mbox{\hyperlink{classlabprogavanzada_1_1_pintor_a8bf856de5794d5fd6efe70f3b04802a0}{run}} ()
+\end{DoxyCompactItemize}
+\subsection*{Package Attributes}
+\begin{DoxyCompactItemize}
+\item 
+J\+Button \mbox{\hyperlink{classlabprogavanzada_1_1_pintor_a171f3004a9b9e99f64e81de4c1257d6f}{b}}
+\item 
+Color \mbox{\hyperlink{classlabprogavanzada_1_1_pintor_aa726e5f94f03e7e1ee20eb9995e368e5}{paleta}} \mbox{[}$\,$\mbox{]} = new Color\mbox{[}5\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classlabprogavanzada_1_1_pintor_ac860bb13dfb9a119752fcfde4c7322f8}\label{classlabprogavanzada_1_1_pintor_ac860bb13dfb9a119752fcfde4c7322f8}} 
+\index{labprogavanzada\+::\+Pintor@{labprogavanzada\+::\+Pintor}!Pintor@{Pintor}}
+\index{Pintor@{Pintor}!labprogavanzada\+::\+Pintor@{labprogavanzada\+::\+Pintor}}
+\subsubsection{\texorpdfstring{Pintor()}{Pintor()}}
+{\footnotesize\ttfamily labprogavanzada.\+Pintor.\+Pintor (\begin{DoxyParamCaption}\item[{J\+Button}]{b }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+23                             \{
+24         this.\mbox{\hyperlink{classlabprogavanzada_1_1_pintor_a171f3004a9b9e99f64e81de4c1257d6f}{b}}=\mbox{\hyperlink{classlabprogavanzada_1_1_pintor_a171f3004a9b9e99f64e81de4c1257d6f}{b}};
+25         \mbox{\hyperlink{classlabprogavanzada_1_1_pintor_aa726e5f94f03e7e1ee20eb9995e368e5}{paleta}}[0]=Color.BLACK;
+26         \mbox{\hyperlink{classlabprogavanzada_1_1_pintor_aa726e5f94f03e7e1ee20eb9995e368e5}{paleta}}[1]=Color.RED;
+27         \mbox{\hyperlink{classlabprogavanzada_1_1_pintor_aa726e5f94f03e7e1ee20eb9995e368e5}{paleta}}[2]=Color.GREEN;
+28         \mbox{\hyperlink{classlabprogavanzada_1_1_pintor_aa726e5f94f03e7e1ee20eb9995e368e5}{paleta}}[3]=Color.BLUE;
+29         \mbox{\hyperlink{classlabprogavanzada_1_1_pintor_aa726e5f94f03e7e1ee20eb9995e368e5}{paleta}}[4]=Color.YELLOW;
+30         \mbox{\hyperlink{namespaceejemplo_1_1clase_abcf43191f0ecf3b071ca2db7696ba821}{start}}();
+31     \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classlabprogavanzada_1_1_pintor_a8bf856de5794d5fd6efe70f3b04802a0}\label{classlabprogavanzada_1_1_pintor_a8bf856de5794d5fd6efe70f3b04802a0}} 
+\index{labprogavanzada\+::\+Pintor@{labprogavanzada\+::\+Pintor}!run@{run}}
+\index{run@{run}!labprogavanzada\+::\+Pintor@{labprogavanzada\+::\+Pintor}}
+\subsubsection{\texorpdfstring{run()}{run()}}
+{\footnotesize\ttfamily void labprogavanzada.\+Pintor.\+run (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+32                      \{
+33           \textcolor{keywordflow}{while} (\textcolor{keyword}{true})\{
+34             \textcolor{keywordtype}{int} i = (int)(5. * Math.random());
+35             \mbox{\hyperlink{classlabprogavanzada_1_1_pintor_a171f3004a9b9e99f64e81de4c1257d6f}{b}}.setBackground(\mbox{\hyperlink{classlabprogavanzada_1_1_pintor_aa726e5f94f03e7e1ee20eb9995e368e5}{paleta}}[i]);
+36         \}
+37     \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classlabprogavanzada_1_1_pintor_a171f3004a9b9e99f64e81de4c1257d6f}\label{classlabprogavanzada_1_1_pintor_a171f3004a9b9e99f64e81de4c1257d6f}} 
+\index{labprogavanzada\+::\+Pintor@{labprogavanzada\+::\+Pintor}!b@{b}}
+\index{b@{b}!labprogavanzada\+::\+Pintor@{labprogavanzada\+::\+Pintor}}
+\subsubsection{\texorpdfstring{b}{b}}
+{\footnotesize\ttfamily J\+Button labprogavanzada.\+Pintor.\+b\hspace{0.3cm}{\ttfamily [package]}}
+
+\mbox{\Hypertarget{classlabprogavanzada_1_1_pintor_aa726e5f94f03e7e1ee20eb9995e368e5}\label{classlabprogavanzada_1_1_pintor_aa726e5f94f03e7e1ee20eb9995e368e5}} 
+\index{labprogavanzada\+::\+Pintor@{labprogavanzada\+::\+Pintor}!paleta@{paleta}}
+\index{paleta@{paleta}!labprogavanzada\+::\+Pintor@{labprogavanzada\+::\+Pintor}}
+\subsubsection{\texorpdfstring{paleta}{paleta}}
+{\footnotesize\ttfamily Color labprogavanzada.\+Pintor.\+paleta\mbox{[}$\,$\mbox{]} = new Color\mbox{[}5\mbox{]}\hspace{0.3cm}{\ttfamily [package]}}
+

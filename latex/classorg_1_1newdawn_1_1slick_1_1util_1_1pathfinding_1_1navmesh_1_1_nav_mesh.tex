@@ -1,0 +1,313 @@
+\hypertarget{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1navmesh_1_1_nav_mesh}{}\section{org.\+newdawn.\+slick.\+util.\+pathfinding.\+navmesh.\+Nav\+Mesh Class Reference}
+\label{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1navmesh_1_1_nav_mesh}\index{org.\+newdawn.\+slick.\+util.\+pathfinding.\+navmesh.\+Nav\+Mesh@{org.\+newdawn.\+slick.\+util.\+pathfinding.\+navmesh.\+Nav\+Mesh}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1navmesh_1_1_nav_mesh_a869d431a90904428d2ca7ab8060d2408}{Nav\+Mesh}} ()
+\item 
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1navmesh_1_1_nav_mesh_a9d478db4c2c95601f314fdaa46abd06d}{Nav\+Mesh}} (Array\+List \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1navmesh_1_1_nav_mesh_a753a5f03305449a3c61d01a41c2fb129}{spaces}})
+\item 
+int \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1navmesh_1_1_nav_mesh_abbd3c88a9f491f55a6af41485c359212}{get\+Space\+Count}} ()
+\item 
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1navmesh_1_1_space}{Space}} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1navmesh_1_1_nav_mesh_a261df818d2d9a983c1b9771589b03e25}{get\+Space}} (int index)
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1navmesh_1_1_nav_mesh_af95eb7b9e8c43bdff8b280c2245fdbd8}{add\+Space}} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1navmesh_1_1_space}{Space}} space)
+\item 
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1navmesh_1_1_space}{Space}} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1navmesh_1_1_nav_mesh_a975721b13902b5107ad636ccb1974653}{find\+Space}} (float x, float y)
+\item 
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1navmesh_1_1_nav_path}{Nav\+Path}} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1navmesh_1_1_nav_mesh_a06001526185445260c9f957cb9eb8ac8}{find\+Path}} (float sx, float sy, float tx, float ty, boolean \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1navmesh_1_1_nav_mesh_ae0b7a2d894c694edddba9e83e65f7824}{optimize}})
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+boolean \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1navmesh_1_1_nav_mesh_ad40443ffa577a525bf4ac169f2c1d0de}{is\+Clear}} (float x1, float y1, float x2, float y2, float step)
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1navmesh_1_1_nav_mesh_ae0b7a2d894c694edddba9e83e65f7824}{optimize}} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1navmesh_1_1_nav_path}{Nav\+Path}} path)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Array\+List \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1navmesh_1_1_nav_mesh_a753a5f03305449a3c61d01a41c2fb129}{spaces}} = new Array\+List()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A nav-\/mesh is a set of shapes that describe the navigation of a map. These shapes are linked together allow path finding but without the high resolution that tile maps require. This leads to fast path finding and potentially much more accurate map definition.
+
+\begin{DoxyAuthor}{Author}
+kevin 
+\end{DoxyAuthor}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1navmesh_1_1_nav_mesh_a869d431a90904428d2ca7ab8060d2408}\label{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1navmesh_1_1_nav_mesh_a869d431a90904428d2ca7ab8060d2408}} 
+\index{org\+::newdawn\+::slick\+::util\+::pathfinding\+::navmesh\+::\+Nav\+Mesh@{org\+::newdawn\+::slick\+::util\+::pathfinding\+::navmesh\+::\+Nav\+Mesh}!Nav\+Mesh@{Nav\+Mesh}}
+\index{Nav\+Mesh@{Nav\+Mesh}!org\+::newdawn\+::slick\+::util\+::pathfinding\+::navmesh\+::\+Nav\+Mesh@{org\+::newdawn\+::slick\+::util\+::pathfinding\+::navmesh\+::\+Nav\+Mesh}}
+\subsubsection{\texorpdfstring{Nav\+Mesh()}{NavMesh()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily org.\+newdawn.\+slick.\+util.\+pathfinding.\+navmesh.\+Nav\+Mesh.\+Nav\+Mesh (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Create a new empty mesh 
+\begin{DoxyCode}
+21                      \{
+22         
+23     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1navmesh_1_1_nav_mesh_a9d478db4c2c95601f314fdaa46abd06d}\label{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1navmesh_1_1_nav_mesh_a9d478db4c2c95601f314fdaa46abd06d}} 
+\index{org\+::newdawn\+::slick\+::util\+::pathfinding\+::navmesh\+::\+Nav\+Mesh@{org\+::newdawn\+::slick\+::util\+::pathfinding\+::navmesh\+::\+Nav\+Mesh}!Nav\+Mesh@{Nav\+Mesh}}
+\index{Nav\+Mesh@{Nav\+Mesh}!org\+::newdawn\+::slick\+::util\+::pathfinding\+::navmesh\+::\+Nav\+Mesh@{org\+::newdawn\+::slick\+::util\+::pathfinding\+::navmesh\+::\+Nav\+Mesh}}
+\subsubsection{\texorpdfstring{Nav\+Mesh()}{NavMesh()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily org.\+newdawn.\+slick.\+util.\+pathfinding.\+navmesh.\+Nav\+Mesh.\+Nav\+Mesh (\begin{DoxyParamCaption}\item[{Array\+List}]{spaces }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Create a new mesh with a set of spaces
+
+
+\begin{DoxyParams}{Parameters}
+{\em spaces} & The spaces included in the mesh \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+30                                      \{
+31         this.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1navmesh_1_1_nav_mesh_a753a5f03305449a3c61d01a41c2fb129}{spaces}}.addAll(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1navmesh_1_1_nav_mesh_a753a5f03305449a3c61d01a41c2fb129}{spaces}});
+32     \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1navmesh_1_1_nav_mesh_af95eb7b9e8c43bdff8b280c2245fdbd8}\label{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1navmesh_1_1_nav_mesh_af95eb7b9e8c43bdff8b280c2245fdbd8}} 
+\index{org\+::newdawn\+::slick\+::util\+::pathfinding\+::navmesh\+::\+Nav\+Mesh@{org\+::newdawn\+::slick\+::util\+::pathfinding\+::navmesh\+::\+Nav\+Mesh}!add\+Space@{add\+Space}}
+\index{add\+Space@{add\+Space}!org\+::newdawn\+::slick\+::util\+::pathfinding\+::navmesh\+::\+Nav\+Mesh@{org\+::newdawn\+::slick\+::util\+::pathfinding\+::navmesh\+::\+Nav\+Mesh}}
+\subsubsection{\texorpdfstring{add\+Space()}{addSpace()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+util.\+pathfinding.\+navmesh.\+Nav\+Mesh.\+add\+Space (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1navmesh_1_1_space}{Space}}}]{space }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Add a single space to the mesh
+
+
+\begin{DoxyParams}{Parameters}
+{\em space} & The space to be added \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+58                                       \{
+59         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1navmesh_1_1_nav_mesh_a753a5f03305449a3c61d01a41c2fb129}{spaces}}.add(space);
+60     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1navmesh_1_1_nav_mesh_a06001526185445260c9f957cb9eb8ac8}\label{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1navmesh_1_1_nav_mesh_a06001526185445260c9f957cb9eb8ac8}} 
+\index{org\+::newdawn\+::slick\+::util\+::pathfinding\+::navmesh\+::\+Nav\+Mesh@{org\+::newdawn\+::slick\+::util\+::pathfinding\+::navmesh\+::\+Nav\+Mesh}!find\+Path@{find\+Path}}
+\index{find\+Path@{find\+Path}!org\+::newdawn\+::slick\+::util\+::pathfinding\+::navmesh\+::\+Nav\+Mesh@{org\+::newdawn\+::slick\+::util\+::pathfinding\+::navmesh\+::\+Nav\+Mesh}}
+\subsubsection{\texorpdfstring{find\+Path()}{findPath()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1navmesh_1_1_nav_path}{Nav\+Path}} org.\+newdawn.\+slick.\+util.\+pathfinding.\+navmesh.\+Nav\+Mesh.\+find\+Path (\begin{DoxyParamCaption}\item[{float}]{sx,  }\item[{float}]{sy,  }\item[{float}]{tx,  }\item[{float}]{ty,  }\item[{boolean}]{optimize }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Find a path from the source to the target coordinates
+
+
+\begin{DoxyParams}{Parameters}
+{\em sx} & The x coordinate of the source location \\
+\hline
+{\em sy} & The y coordinate of the source location \\
+\hline
+{\em tx} & The x coordinate of the target location \\
+\hline
+{\em ty} & The y coordinate of the target location \\
+\hline
+{\em optimize} & True if paths should be optimized \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The path between the two spaces 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+90                                                                                       \{
+91         Space source = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1navmesh_1_1_nav_mesh_a975721b13902b5107ad636ccb1974653}{findSpace}}(sx,sy);
+92         Space target = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1navmesh_1_1_nav_mesh_a975721b13902b5107ad636ccb1974653}{findSpace}}(tx,ty);
+93         
+94         \textcolor{keywordflow}{if} ((source == null) || (target == null)) \{
+95             \textcolor{keywordflow}{return} null;
+96         \}
+97         
+98         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i=0;i<\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1navmesh_1_1_nav_mesh_a753a5f03305449a3c61d01a41c2fb129}{spaces}}.size();i++) \{
+99             ((Space) \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1navmesh_1_1_nav_mesh_a753a5f03305449a3c61d01a41c2fb129}{spaces}}.get(i)).clearCost();
+100         \}
+101         target.fill(source,tx, ty, 0);
+102         \textcolor{keywordflow}{if} (target.getCost() == Float.MAX\_VALUE) \{
+103             \textcolor{keywordflow}{return} null;
+104         \}
+105         \textcolor{keywordflow}{if} (source.getCost() == Float.MAX\_VALUE) \{
+106             \textcolor{keywordflow}{return} null;
+107         \}
+108         
+109         NavPath path = \textcolor{keyword}{new} NavPath();
+110         path.push(\textcolor{keyword}{new} Link(sx, sy, null));
+111         \textcolor{keywordflow}{if} (source.pickLowestCost(target, path)) \{
+112             path.push(\textcolor{keyword}{new} Link(tx, ty, null));
+113             \textcolor{keywordflow}{if} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1navmesh_1_1_nav_mesh_ae0b7a2d894c694edddba9e83e65f7824}{optimize}}) \{
+114                 \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1navmesh_1_1_nav_mesh_ae0b7a2d894c694edddba9e83e65f7824}{optimize}}(path);
+115             \}
+116             \textcolor{keywordflow}{return} path;
+117         \}
+118         
+119         \textcolor{keywordflow}{return} null;
+120     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1navmesh_1_1_nav_mesh_a975721b13902b5107ad636ccb1974653}\label{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1navmesh_1_1_nav_mesh_a975721b13902b5107ad636ccb1974653}} 
+\index{org\+::newdawn\+::slick\+::util\+::pathfinding\+::navmesh\+::\+Nav\+Mesh@{org\+::newdawn\+::slick\+::util\+::pathfinding\+::navmesh\+::\+Nav\+Mesh}!find\+Space@{find\+Space}}
+\index{find\+Space@{find\+Space}!org\+::newdawn\+::slick\+::util\+::pathfinding\+::navmesh\+::\+Nav\+Mesh@{org\+::newdawn\+::slick\+::util\+::pathfinding\+::navmesh\+::\+Nav\+Mesh}}
+\subsubsection{\texorpdfstring{find\+Space()}{findSpace()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1navmesh_1_1_space}{Space}} org.\+newdawn.\+slick.\+util.\+pathfinding.\+navmesh.\+Nav\+Mesh.\+find\+Space (\begin{DoxyParamCaption}\item[{float}]{x,  }\item[{float}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Find the space at a given location
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & The x coordinate at which to find the space \\
+\hline
+{\em y} & The y coordinate at which to find the space \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The space at the given location 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+69                                              \{
+70         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i=0;i<\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1navmesh_1_1_nav_mesh_a753a5f03305449a3c61d01a41c2fb129}{spaces}}.size();i++) \{
+71             Space space = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1navmesh_1_1_nav_mesh_a261df818d2d9a983c1b9771589b03e25}{getSpace}}(i);
+72             \textcolor{keywordflow}{if} (space.contains(x,y)) \{
+73                 \textcolor{keywordflow}{return} space;
+74             \}
+75         \}
+76         
+77         \textcolor{keywordflow}{return} null;
+78     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1navmesh_1_1_nav_mesh_a261df818d2d9a983c1b9771589b03e25}\label{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1navmesh_1_1_nav_mesh_a261df818d2d9a983c1b9771589b03e25}} 
+\index{org\+::newdawn\+::slick\+::util\+::pathfinding\+::navmesh\+::\+Nav\+Mesh@{org\+::newdawn\+::slick\+::util\+::pathfinding\+::navmesh\+::\+Nav\+Mesh}!get\+Space@{get\+Space}}
+\index{get\+Space@{get\+Space}!org\+::newdawn\+::slick\+::util\+::pathfinding\+::navmesh\+::\+Nav\+Mesh@{org\+::newdawn\+::slick\+::util\+::pathfinding\+::navmesh\+::\+Nav\+Mesh}}
+\subsubsection{\texorpdfstring{get\+Space()}{getSpace()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1navmesh_1_1_space}{Space}} org.\+newdawn.\+slick.\+util.\+pathfinding.\+navmesh.\+Nav\+Mesh.\+get\+Space (\begin{DoxyParamCaption}\item[{int}]{index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get the space at a given index
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & The index of the space to retrieve \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The space at the given index 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+49                                      \{
+50         \textcolor{keywordflow}{return} (Space) \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1navmesh_1_1_nav_mesh_a753a5f03305449a3c61d01a41c2fb129}{spaces}}.get(index);
+51     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1navmesh_1_1_nav_mesh_abbd3c88a9f491f55a6af41485c359212}\label{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1navmesh_1_1_nav_mesh_abbd3c88a9f491f55a6af41485c359212}} 
+\index{org\+::newdawn\+::slick\+::util\+::pathfinding\+::navmesh\+::\+Nav\+Mesh@{org\+::newdawn\+::slick\+::util\+::pathfinding\+::navmesh\+::\+Nav\+Mesh}!get\+Space\+Count@{get\+Space\+Count}}
+\index{get\+Space\+Count@{get\+Space\+Count}!org\+::newdawn\+::slick\+::util\+::pathfinding\+::navmesh\+::\+Nav\+Mesh@{org\+::newdawn\+::slick\+::util\+::pathfinding\+::navmesh\+::\+Nav\+Mesh}}
+\subsubsection{\texorpdfstring{get\+Space\+Count()}{getSpaceCount()}}
+{\footnotesize\ttfamily int org.\+newdawn.\+slick.\+util.\+pathfinding.\+navmesh.\+Nav\+Mesh.\+get\+Space\+Count (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get the number of spaces that are in the mesh
+
+\begin{DoxyReturn}{Returns}
+The spaces in the mesh 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+39                                \{
+40         \textcolor{keywordflow}{return} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1navmesh_1_1_nav_mesh_a753a5f03305449a3c61d01a41c2fb129}{spaces}}.size();
+41     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1navmesh_1_1_nav_mesh_ad40443ffa577a525bf4ac169f2c1d0de}\label{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1navmesh_1_1_nav_mesh_ad40443ffa577a525bf4ac169f2c1d0de}} 
+\index{org\+::newdawn\+::slick\+::util\+::pathfinding\+::navmesh\+::\+Nav\+Mesh@{org\+::newdawn\+::slick\+::util\+::pathfinding\+::navmesh\+::\+Nav\+Mesh}!is\+Clear@{is\+Clear}}
+\index{is\+Clear@{is\+Clear}!org\+::newdawn\+::slick\+::util\+::pathfinding\+::navmesh\+::\+Nav\+Mesh@{org\+::newdawn\+::slick\+::util\+::pathfinding\+::navmesh\+::\+Nav\+Mesh}}
+\subsubsection{\texorpdfstring{is\+Clear()}{isClear()}}
+{\footnotesize\ttfamily boolean org.\+newdawn.\+slick.\+util.\+pathfinding.\+navmesh.\+Nav\+Mesh.\+is\+Clear (\begin{DoxyParamCaption}\item[{float}]{x1,  }\item[{float}]{y1,  }\item[{float}]{x2,  }\item[{float}]{y2,  }\item[{float}]{step }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+Check if a particular path is clear
+
+
+\begin{DoxyParams}{Parameters}
+{\em x1} & The x coordinate of the starting point \\
+\hline
+{\em y1} & The y coordinate of the starting point \\
+\hline
+{\em x2} & The x coordinate of the ending point \\
+\hline
+{\em y2} & The y coordinate of the ending point \\
+\hline
+{\em step} & The size of the step between points \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if there are no blockages along the path 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+132                                                                                 \{
+133         \textcolor{keywordtype}{float} dx = (x2 - x1);
+134         \textcolor{keywordtype}{float} dy = (y2 - y1);
+135         \textcolor{keywordtype}{float} len = (float) Math.sqrt((dx*dx)+(dy*dy));
+136         dx *= step;
+137         dx /= len;
+138         dy *= step;
+139         dy /= len;
+140         \textcolor{keywordtype}{int} steps = (int) (len / step);
+141         
+142         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i=0;i<steps;i++) \{
+143             \textcolor{keywordtype}{float} x = x1 + (dx*i);
+144             \textcolor{keywordtype}{float} y = y1 + (dy*i);
+145             
+146             \textcolor{keywordflow}{if} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1navmesh_1_1_nav_mesh_a975721b13902b5107ad636ccb1974653}{findSpace}}(x,y) == null) \{
+147                 \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+148             \}
+149         \}
+150         
+151         \textcolor{keywordflow}{return} \textcolor{keyword}{true};
+152     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1navmesh_1_1_nav_mesh_ae0b7a2d894c694edddba9e83e65f7824}\label{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1navmesh_1_1_nav_mesh_ae0b7a2d894c694edddba9e83e65f7824}} 
+\index{org\+::newdawn\+::slick\+::util\+::pathfinding\+::navmesh\+::\+Nav\+Mesh@{org\+::newdawn\+::slick\+::util\+::pathfinding\+::navmesh\+::\+Nav\+Mesh}!optimize@{optimize}}
+\index{optimize@{optimize}!org\+::newdawn\+::slick\+::util\+::pathfinding\+::navmesh\+::\+Nav\+Mesh@{org\+::newdawn\+::slick\+::util\+::pathfinding\+::navmesh\+::\+Nav\+Mesh}}
+\subsubsection{\texorpdfstring{optimize()}{optimize()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+util.\+pathfinding.\+navmesh.\+Nav\+Mesh.\+optimize (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1navmesh_1_1_nav_path}{Nav\+Path}}}]{path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+Optimize a path by removing segments that arn\textquotesingle{}t required to reach the end point
+
+
+\begin{DoxyParams}{Parameters}
+{\em path} & The path to optimize. Redundant segments will be removed \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+160                                         \{
+161         \textcolor{keywordtype}{int} pt = 0;
+162         
+163         \textcolor{keywordflow}{while} (pt < path.length()-2) \{
+164             \textcolor{keywordtype}{float} sx = path.getX(pt);
+165             \textcolor{keywordtype}{float} sy = path.getY(pt);
+166             \textcolor{keywordtype}{float} nx = path.getX(pt+2);
+167             \textcolor{keywordtype}{float} ny = path.getY(pt+2);
+168             
+169             \textcolor{keywordflow}{if} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1navmesh_1_1_nav_mesh_ad40443ffa577a525bf4ac169f2c1d0de}{isClear}}(sx,sy,nx,ny,0.1f)) \{
+170                 path.remove(pt+1);
+171             \} \textcolor{keywordflow}{else} \{
+172                 pt++;
+173             \}
+174         \}
+175     \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1navmesh_1_1_nav_mesh_a753a5f03305449a3c61d01a41c2fb129}\label{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1navmesh_1_1_nav_mesh_a753a5f03305449a3c61d01a41c2fb129}} 
+\index{org\+::newdawn\+::slick\+::util\+::pathfinding\+::navmesh\+::\+Nav\+Mesh@{org\+::newdawn\+::slick\+::util\+::pathfinding\+::navmesh\+::\+Nav\+Mesh}!spaces@{spaces}}
+\index{spaces@{spaces}!org\+::newdawn\+::slick\+::util\+::pathfinding\+::navmesh\+::\+Nav\+Mesh@{org\+::newdawn\+::slick\+::util\+::pathfinding\+::navmesh\+::\+Nav\+Mesh}}
+\subsubsection{\texorpdfstring{spaces}{spaces}}
+{\footnotesize\ttfamily Array\+List org.\+newdawn.\+slick.\+util.\+pathfinding.\+navmesh.\+Nav\+Mesh.\+spaces = new Array\+List()\hspace{0.3cm}{\ttfamily [private]}}
+
+The list of spaces that build up this navigation mesh 

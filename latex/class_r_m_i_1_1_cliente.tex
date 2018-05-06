@@ -1,0 +1,150 @@
+\hypertarget{class_r_m_i_1_1_cliente}{}\section{R\+M\+I.\+Cliente Class Reference}
+\label{class_r_m_i_1_1_cliente}\index{R\+M\+I.\+Cliente@{R\+M\+I.\+Cliente}}
+Inheritance diagram for R\+M\+I.\+Cliente\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_r_m_i_1_1_cliente}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_r_m_i_1_1_cliente_af1963dfc32e418055908fd85f49143e0}{comprobador}} ()
+\item 
+void \mbox{\hyperlink{class_r_m_i_1_1_cliente_a6ecb7f16d4b6a7dc46ce4302f45a0fe9}{run}} ()
+\item 
+void \mbox{\hyperlink{class_r_m_i_1_1_cliente_ae9504706637d8e4abfe5e11760fa9ce9}{reanudar}} ()
+\item 
+void \mbox{\hyperlink{class_r_m_i_1_1_cliente_a5b7c4cee8614116c01643bf47de62e7a}{detener}} ()
+\item 
+void \mbox{\hyperlink{class_r_m_i_1_1_cliente_ae6ed71195a80194555ce07416ca64406}{salir}} ()
+\end{DoxyCompactItemize}
+\subsection*{Package Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Semaphore \mbox{\hyperlink{class_r_m_i_1_1_cliente_aded0f4d7b773e89ec8c162cf94c83504}{semaforo}}
+\end{DoxyCompactItemize}
+\subsection*{Static Package Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{interface_r_m_i_1_1_interface_saluda}{Interface\+Saluda}} \mbox{\hyperlink{class_r_m_i_1_1_cliente_ac0b62b87dd4c8edc00a335d7f029f8fa}{obj}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_r_m_i_1_1_cliente_af1963dfc32e418055908fd85f49143e0}\label{class_r_m_i_1_1_cliente_af1963dfc32e418055908fd85f49143e0}} 
+\index{R\+M\+I\+::\+Cliente@{R\+M\+I\+::\+Cliente}!comprobador@{comprobador}}
+\index{comprobador@{comprobador}!R\+M\+I\+::\+Cliente@{R\+M\+I\+::\+Cliente}}
+\subsubsection{\texorpdfstring{comprobador()}{comprobador()}}
+{\footnotesize\ttfamily void R\+M\+I.\+Cliente.\+comprobador (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+16     \{
+17         \textcolor{keywordflow}{try}
+18         \{
+19             \mbox{\hyperlink{class_r_m_i_1_1_cliente_ac0b62b87dd4c8edc00a335d7f029f8fa}{obj}} = (InterfaceSaluda) Naming.lookup(\textcolor{stringliteral}{"//127.0.0.1:1099/ObjetoSaluda"}); \textcolor{comment}{//Localiza el objeto
+       distribuido}
+20             \textcolor{keywordflow}{if}(\mbox{\hyperlink{class_r_m_i_1_1_cliente_ac0b62b87dd4c8edc00a335d7f029f8fa}{obj}}.\mbox{\hyperlink{interface_r_m_i_1_1_interface_saluda_afbc3db469b848c5a90bbf10ebc20823f}{puedoEntrar}}())
+21             \{
+22                 \mbox{\hyperlink{namespaceejemplo_1_1clase_abcf43191f0ecf3b071ca2db7696ba821}{start}}();
+23             \}
+24             \textcolor{keywordflow}{else}
+25             \{
+26                 System.exit(0);
+27             \}
+28         \}
+29         \textcolor{keywordflow}{catch} (Exception e)
+30         \{
+31             System.out.println(\textcolor{stringliteral}{"Excepción : "} + e.getMessage());
+32             e.printStackTrace();
+33         \}
+34     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_r_m_i_1_1_cliente_a5b7c4cee8614116c01643bf47de62e7a}\label{class_r_m_i_1_1_cliente_a5b7c4cee8614116c01643bf47de62e7a}} 
+\index{R\+M\+I\+::\+Cliente@{R\+M\+I\+::\+Cliente}!detener@{detener}}
+\index{detener@{detener}!R\+M\+I\+::\+Cliente@{R\+M\+I\+::\+Cliente}}
+\subsubsection{\texorpdfstring{detener()}{detener()}}
+{\footnotesize\ttfamily void R\+M\+I.\+Cliente.\+detener (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+62     \{
+63         \textcolor{keywordflow}{try} \{
+64             \mbox{\hyperlink{class_r_m_i_1_1_cliente_ac0b62b87dd4c8edc00a335d7f029f8fa}{obj}}.\mbox{\hyperlink{interface_r_m_i_1_1_interface_saluda_a271848a330c374eb0f6f5157cc2b60c6}{detener}}();
+65         \} \textcolor{keywordflow}{catch} (RemoteException ex) \{
+66             Logger.getLogger(Cliente.class.getName()).log(Level.SEVERE, null, ex);
+67         \}
+68     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_r_m_i_1_1_cliente_ae9504706637d8e4abfe5e11760fa9ce9}\label{class_r_m_i_1_1_cliente_ae9504706637d8e4abfe5e11760fa9ce9}} 
+\index{R\+M\+I\+::\+Cliente@{R\+M\+I\+::\+Cliente}!reanudar@{reanudar}}
+\index{reanudar@{reanudar}!R\+M\+I\+::\+Cliente@{R\+M\+I\+::\+Cliente}}
+\subsubsection{\texorpdfstring{reanudar()}{reanudar()}}
+{\footnotesize\ttfamily void R\+M\+I.\+Cliente.\+reanudar (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+53     \{
+54         \textcolor{keywordflow}{try} \{
+55             \mbox{\hyperlink{class_r_m_i_1_1_cliente_ac0b62b87dd4c8edc00a335d7f029f8fa}{obj}}.\mbox{\hyperlink{interface_r_m_i_1_1_interface_saluda_a8d97c9155ed6c35d8691263d1b70000a}{reanudar}}();
+56         \} \textcolor{keywordflow}{catch} (RemoteException ex) \{
+57             Logger.getLogger(Cliente.class.getName()).log(Level.SEVERE, null, ex);
+58         \}
+59     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_r_m_i_1_1_cliente_a6ecb7f16d4b6a7dc46ce4302f45a0fe9}\label{class_r_m_i_1_1_cliente_a6ecb7f16d4b6a7dc46ce4302f45a0fe9}} 
+\index{R\+M\+I\+::\+Cliente@{R\+M\+I\+::\+Cliente}!run@{run}}
+\index{run@{run}!R\+M\+I\+::\+Cliente@{R\+M\+I\+::\+Cliente}}
+\subsubsection{\texorpdfstring{run()}{run()}}
+{\footnotesize\ttfamily void R\+M\+I.\+Cliente.\+run (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+37     \{
+38         \mbox{\hyperlink{class_r_m_i_1_1_cliente_aded0f4d7b773e89ec8c162cf94c83504}{semaforo}} = \textcolor{keyword}{new} Semaphore(1);
+39         \textcolor{keywordflow}{try}
+40         \{
+41             \mbox{\hyperlink{class_r_m_i_1_1_cliente_aded0f4d7b773e89ec8c162cf94c83504}{semaforo}}.acquire();
+42             \mbox{\hyperlink{class_r_m_i_1_1_cliente_aded0f4d7b773e89ec8c162cf94c83504}{semaforo}}.acquire();
+43         \}
+44         \textcolor{keywordflow}{catch} (Exception e)
+45         \{
+46             System.out.println(\textcolor{stringliteral}{"Excepción : "} + e.getMessage());
+47             e.printStackTrace();
+48         \}
+49         \mbox{\hyperlink{class_r_m_i_1_1_cliente_aded0f4d7b773e89ec8c162cf94c83504}{semaforo}}.release();
+50     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_r_m_i_1_1_cliente_ae6ed71195a80194555ce07416ca64406}\label{class_r_m_i_1_1_cliente_ae6ed71195a80194555ce07416ca64406}} 
+\index{R\+M\+I\+::\+Cliente@{R\+M\+I\+::\+Cliente}!salir@{salir}}
+\index{salir@{salir}!R\+M\+I\+::\+Cliente@{R\+M\+I\+::\+Cliente}}
+\subsubsection{\texorpdfstring{salir()}{salir()}}
+{\footnotesize\ttfamily void R\+M\+I.\+Cliente.\+salir (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+71     \{
+72         \textcolor{keywordflow}{try} \{
+73             \mbox{\hyperlink{class_r_m_i_1_1_cliente_ac0b62b87dd4c8edc00a335d7f029f8fa}{obj}}.\mbox{\hyperlink{interface_r_m_i_1_1_interface_saluda_a9bfad049387b9c751039d6c796f30db6}{salir}}();
+74         \} \textcolor{keywordflow}{catch} (RemoteException ex) \{
+75             Logger.getLogger(Cliente.class.getName()).log(Level.SEVERE, null, ex);
+76         \}
+77         \mbox{\hyperlink{class_r_m_i_1_1_cliente_aded0f4d7b773e89ec8c162cf94c83504}{semaforo}}.release();
+78     \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_r_m_i_1_1_cliente_ac0b62b87dd4c8edc00a335d7f029f8fa}\label{class_r_m_i_1_1_cliente_ac0b62b87dd4c8edc00a335d7f029f8fa}} 
+\index{R\+M\+I\+::\+Cliente@{R\+M\+I\+::\+Cliente}!obj@{obj}}
+\index{obj@{obj}!R\+M\+I\+::\+Cliente@{R\+M\+I\+::\+Cliente}}
+\subsubsection{\texorpdfstring{obj}{obj}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interface_r_m_i_1_1_interface_saluda}{Interface\+Saluda}} R\+M\+I.\+Cliente.\+obj\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [package]}}
+
+\mbox{\Hypertarget{class_r_m_i_1_1_cliente_aded0f4d7b773e89ec8c162cf94c83504}\label{class_r_m_i_1_1_cliente_aded0f4d7b773e89ec8c162cf94c83504}} 
+\index{R\+M\+I\+::\+Cliente@{R\+M\+I\+::\+Cliente}!semaforo@{semaforo}}
+\index{semaforo@{semaforo}!R\+M\+I\+::\+Cliente@{R\+M\+I\+::\+Cliente}}
+\subsubsection{\texorpdfstring{semaforo}{semaforo}}
+{\footnotesize\ttfamily Semaphore R\+M\+I.\+Cliente.\+semaforo\hspace{0.3cm}{\ttfamily [package]}}
+

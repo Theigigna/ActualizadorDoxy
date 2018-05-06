@@ -1,0 +1,84 @@
+\hypertarget{classejemplo1_1_1_productor}{}\section{ejemplo1.\+Productor Class Reference}
+\label{classejemplo1_1_1_productor}\index{ejemplo1.\+Productor@{ejemplo1.\+Productor}}
+Inheritance diagram for ejemplo1.\+Productor\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classejemplo1_1_1_productor}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classejemplo1_1_1_productor_a27592dd79d64eaa966be4a758b87b5ef}{Productor}} (String \mbox{\hyperlink{classejemplo1_1_1_productor_a205e5e4e819a322d2017fd816ac94d2d}{prefijo}}, int n, \mbox{\hyperlink{classejemplo1_1_1_buzon}{Buzon}} buzon)
+\item 
+void \mbox{\hyperlink{classejemplo1_1_1_productor_a813cc92fe486532214ebe9b626a39cd5}{run}} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+String \mbox{\hyperlink{classejemplo1_1_1_productor_a205e5e4e819a322d2017fd816ac94d2d}{prefijo}}
+\item 
+int \mbox{\hyperlink{classejemplo1_1_1_productor_a6be9757fc794b9da3639d7f4f1acef1a}{num\+Mensajes}}
+\item 
+\mbox{\hyperlink{classejemplo1_1_1_buzon}{Buzon}} \mbox{\hyperlink{classejemplo1_1_1_productor_a92dfbce31b3fc0ff14d36d51ba0619bd}{mi\+Buzon}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classejemplo1_1_1_productor_a27592dd79d64eaa966be4a758b87b5ef}\label{classejemplo1_1_1_productor_a27592dd79d64eaa966be4a758b87b5ef}} 
+\index{ejemplo1\+::\+Productor@{ejemplo1\+::\+Productor}!Productor@{Productor}}
+\index{Productor@{Productor}!ejemplo1\+::\+Productor@{ejemplo1\+::\+Productor}}
+\subsubsection{\texorpdfstring{Productor()}{Productor()}}
+{\footnotesize\ttfamily ejemplo1.\+Productor.\+Productor (\begin{DoxyParamCaption}\item[{String}]{prefijo,  }\item[{int}]{n,  }\item[{\mbox{\hyperlink{classejemplo1_1_1_buzon}{Buzon}}}]{buzon }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+19     \{
+20         this.\mbox{\hyperlink{classejemplo1_1_1_productor_a205e5e4e819a322d2017fd816ac94d2d}{prefijo}}=\mbox{\hyperlink{classejemplo1_1_1_productor_a205e5e4e819a322d2017fd816ac94d2d}{prefijo}};
+21         \mbox{\hyperlink{classejemplo1_1_1_productor_a6be9757fc794b9da3639d7f4f1acef1a}{numMensajes}}=n;
+22         \mbox{\hyperlink{classejemplo1_1_1_productor_a92dfbce31b3fc0ff14d36d51ba0619bd}{miBuzon}}=buzon;
+23     \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classejemplo1_1_1_productor_a813cc92fe486532214ebe9b626a39cd5}\label{classejemplo1_1_1_productor_a813cc92fe486532214ebe9b626a39cd5}} 
+\index{ejemplo1\+::\+Productor@{ejemplo1\+::\+Productor}!run@{run}}
+\index{run@{run}!ejemplo1\+::\+Productor@{ejemplo1\+::\+Productor}}
+\subsubsection{\texorpdfstring{run()}{run()}}
+{\footnotesize\ttfamily void ejemplo1.\+Productor.\+run (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+26     \{
+27         \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i=1; i<=\mbox{\hyperlink{classejemplo1_1_1_productor_a6be9757fc794b9da3639d7f4f1acef1a}{numMensajes}}; i++)
+28         \{
+29             \textcolor{keywordflow}{try}
+30             \{
+31                 sleep((\textcolor{keywordtype}{int})(500+500*Math.random()));
+32             \} \textcolor{keywordflow}{catch}(InterruptedException e)\{  \}
+33             \mbox{\hyperlink{classejemplo1_1_1_productor_a92dfbce31b3fc0ff14d36d51ba0619bd}{miBuzon}}.\mbox{\hyperlink{classejemplo1_1_1_buzon_a0d9762b5773778ad0c357001bfd17393}{enviaMensaje}}(\mbox{\hyperlink{classejemplo1_1_1_productor_a205e5e4e819a322d2017fd816ac94d2d}{prefijo}}+i);
+34         \}
+35     \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classejemplo1_1_1_productor_a92dfbce31b3fc0ff14d36d51ba0619bd}\label{classejemplo1_1_1_productor_a92dfbce31b3fc0ff14d36d51ba0619bd}} 
+\index{ejemplo1\+::\+Productor@{ejemplo1\+::\+Productor}!mi\+Buzon@{mi\+Buzon}}
+\index{mi\+Buzon@{mi\+Buzon}!ejemplo1\+::\+Productor@{ejemplo1\+::\+Productor}}
+\subsubsection{\texorpdfstring{mi\+Buzon}{miBuzon}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classejemplo1_1_1_buzon}{Buzon}} ejemplo1.\+Productor.\+mi\+Buzon\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classejemplo1_1_1_productor_a6be9757fc794b9da3639d7f4f1acef1a}\label{classejemplo1_1_1_productor_a6be9757fc794b9da3639d7f4f1acef1a}} 
+\index{ejemplo1\+::\+Productor@{ejemplo1\+::\+Productor}!num\+Mensajes@{num\+Mensajes}}
+\index{num\+Mensajes@{num\+Mensajes}!ejemplo1\+::\+Productor@{ejemplo1\+::\+Productor}}
+\subsubsection{\texorpdfstring{num\+Mensajes}{numMensajes}}
+{\footnotesize\ttfamily int ejemplo1.\+Productor.\+num\+Mensajes\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classejemplo1_1_1_productor_a205e5e4e819a322d2017fd816ac94d2d}\label{classejemplo1_1_1_productor_a205e5e4e819a322d2017fd816ac94d2d}} 
+\index{ejemplo1\+::\+Productor@{ejemplo1\+::\+Productor}!prefijo@{prefijo}}
+\index{prefijo@{prefijo}!ejemplo1\+::\+Productor@{ejemplo1\+::\+Productor}}
+\subsubsection{\texorpdfstring{prefijo}{prefijo}}
+{\footnotesize\ttfamily String ejemplo1.\+Productor.\+prefijo\hspace{0.3cm}{\ttfamily [private]}}
+

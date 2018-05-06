@@ -1,0 +1,1359 @@
+\hypertarget{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder}{}\section{org.\+newdawn.\+slick.\+opengl.\+P\+N\+G\+Decoder Class Reference}
+\label{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder}\index{org.\+newdawn.\+slick.\+opengl.\+P\+N\+G\+Decoder@{org.\+newdawn.\+slick.\+opengl.\+P\+N\+G\+Decoder}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_1_1_format}{Format}}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_ae3e7f9921e7a1e1ad605cff63100d98a}{P\+N\+G\+Decoder}} (Input\+Stream \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_a5714583b8e4e668d86f45065cda6e20b}{input}})  throws I\+O\+Exception 
+\item 
+int \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_a1972b2918da3ba0701b1f3694ae31e60}{get\+Height}} ()
+\item 
+int \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_a7e93e69b81d656bbec28e6971898657e}{get\+Width}} ()
+\item 
+boolean \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_a03f7526d0ae6a3cbedb4cd9745462330}{has\+Alpha}} ()
+\item 
+boolean \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_a04a6ed620e9af0576fc0ba93d418f017}{is\+R\+GB}} ()
+\item 
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_1_1_format}{Format}} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_aba256a6afc6ba9bd28f8244d7a79d09d}{decide\+Texture\+Format}} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_1_1_format}{Format}} fmt)
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_ad9b6eabeb88368645325bfb634a133b6}{decode}} (Byte\+Buffer \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_ae205f9222586a2bc01a8a240c5c210ad}{buffer}}, int stride, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_1_1_format}{Format}} fmt)  throws I\+O\+Exception 
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_1_1_format}{Format}} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_a2616963cd5d05e3a659cf81363629062}{A\+L\+P\+HA}} = new \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_1_1_format}{Format}}(1, true)
+\item 
+static \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_1_1_format}{Format}} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_a0ecc59fd1d47827a9c16df0bfbb033d2}{L\+U\+M\+I\+N\+A\+N\+CE}} = new \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_1_1_format}{Format}}(1, false)
+\item 
+static \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_1_1_format}{Format}} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_a1bf5eb8cd445b84d0b5a0861648d1ee4}{L\+U\+M\+I\+N\+A\+N\+C\+E\+\_\+\+A\+L\+P\+HA}} = new \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_1_1_format}{Format}}(2, true)
+\item 
+static \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_1_1_format}{Format}} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_a47bc282c529d4fd9e913912ee2a7c87f}{R\+GB}} = new \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_1_1_format}{Format}}(3, false)
+\item 
+static \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_1_1_format}{Format}} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_a2b0f49c7439fb444549baac99a120bfe}{R\+G\+BA}} = new \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_1_1_format}{Format}}(4, true)
+\item 
+static \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_1_1_format}{Format}} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_a306c7b9315ccc42ea3e8c73642de3dcc}{B\+G\+RA}} = new \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_1_1_format}{Format}}(4, true)
+\item 
+static \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_1_1_format}{Format}} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_a3df8efe1a627d4c86526e3d74d13e350}{A\+B\+GR}} = new \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_1_1_format}{Format}}(4, true)
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_ad54fc61c8d8d92d35f051e3b5f3f5a31}{copy}} (Byte\+Buffer \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_ae205f9222586a2bc01a8a240c5c210ad}{buffer}}, byte\mbox{[}$\,$\mbox{]} cur\+Line)
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_a749e57099e563da4f6508a337825adaa}{copy\+R\+G\+Bto\+A\+B\+GR}} (Byte\+Buffer \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_ae205f9222586a2bc01a8a240c5c210ad}{buffer}}, byte\mbox{[}$\,$\mbox{]} cur\+Line)
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_a02412286c8a28c2dedcbf64948b727ee}{copy\+R\+G\+Bto\+R\+G\+BA}} (Byte\+Buffer \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_ae205f9222586a2bc01a8a240c5c210ad}{buffer}}, byte\mbox{[}$\,$\mbox{]} cur\+Line)
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_ac2904e15dbda28288e3baf4b1354c6b7}{copy\+R\+G\+Bto\+B\+G\+RA}} (Byte\+Buffer \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_ae205f9222586a2bc01a8a240c5c210ad}{buffer}}, byte\mbox{[}$\,$\mbox{]} cur\+Line)
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_abc5f2f03f08657972dbaaab349118db0}{copy\+R\+G\+B\+Ato\+A\+B\+GR}} (Byte\+Buffer \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_ae205f9222586a2bc01a8a240c5c210ad}{buffer}}, byte\mbox{[}$\,$\mbox{]} cur\+Line)
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_a8c5b826b6abd782f69528d39e71183c3}{copy\+R\+G\+B\+Ato\+B\+G\+RA}} (Byte\+Buffer \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_ae205f9222586a2bc01a8a240c5c210ad}{buffer}}, byte\mbox{[}$\,$\mbox{]} cur\+Line)
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_a131a42f31d463259fae5359856d0b251}{copy\+R\+G\+B\+Ato\+R\+GB}} (Byte\+Buffer \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_ae205f9222586a2bc01a8a240c5c210ad}{buffer}}, byte\mbox{[}$\,$\mbox{]} cur\+Line)
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_af953ec84436cf0d1f6f01ccb06f0a7c6}{copy\+P\+A\+Lto\+A\+B\+GR}} (Byte\+Buffer \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_ae205f9222586a2bc01a8a240c5c210ad}{buffer}}, byte\mbox{[}$\,$\mbox{]} cur\+Line)
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_a5c051e4b5546f946205133a5001cb713}{copy\+P\+A\+Lto\+R\+G\+BA}} (Byte\+Buffer \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_ae205f9222586a2bc01a8a240c5c210ad}{buffer}}, byte\mbox{[}$\,$\mbox{]} cur\+Line)
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_a5df8dd1ce316baadb24936f6d039052f}{copy\+P\+A\+Lto\+B\+G\+RA}} (Byte\+Buffer \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_ae205f9222586a2bc01a8a240c5c210ad}{buffer}}, byte\mbox{[}$\,$\mbox{]} cur\+Line)
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_a0ca84983943d5e90a184e0ac16833d4e}{expand4}} (byte\mbox{[}$\,$\mbox{]} src, byte\mbox{[}$\,$\mbox{]} dst)
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_aa9bfde671b761d559aaa785457ec5c94}{expand2}} (byte\mbox{[}$\,$\mbox{]} src, byte\mbox{[}$\,$\mbox{]} dst)
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_ae4687a998385d98ed9e733def922f1ed}{expand1}} (byte\mbox{[}$\,$\mbox{]} src, byte\mbox{[}$\,$\mbox{]} dst)
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_acc27514c9030ef279d2322f986bde82a}{unfilter}} (byte\mbox{[}$\,$\mbox{]} cur\+Line, byte\mbox{[}$\,$\mbox{]} prev\+Line)  throws I\+O\+Exception 
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_a1939d148e672836c11da54bc8edf16fe}{unfilter\+Sub}} (byte\mbox{[}$\,$\mbox{]} cur\+Line)
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_a5d759acd42a8f0e0569c534c1a9bcf55}{unfilter\+Up}} (byte\mbox{[}$\,$\mbox{]} cur\+Line, byte\mbox{[}$\,$\mbox{]} prev\+Line)
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_ae3f43d398d4d8cc4900900e9a3d0adff}{unfilter\+Average}} (byte\mbox{[}$\,$\mbox{]} cur\+Line, byte\mbox{[}$\,$\mbox{]} prev\+Line)
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_a19d3f37f70d1993a379d3573a5517b66}{unfilter\+Paeth}} (byte\mbox{[}$\,$\mbox{]} cur\+Line, byte\mbox{[}$\,$\mbox{]} prev\+Line)
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_a9e7ed3f5ce8aaf724e3da6bdd9db1bd1}{read\+I\+H\+DR}} ()  throws I\+O\+Exception 
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_ab43622729c487fd442e6cbd9fcd7e1ed}{read\+P\+L\+TE}} ()  throws I\+O\+Exception 
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_a4f69d28cdeb7cbd83b4b6dfef7662e48}{readt\+R\+NS}} ()  throws I\+O\+Exception 
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_a8be80afb9e66943952de1e7d429303ac}{close\+Chunk}} ()  throws I\+O\+Exception 
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_afa7ad43df0de182a0fd27c9f6ca52e3d}{open\+Chunk}} ()  throws I\+O\+Exception 
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_ada9398fa248ff898e0c5195419026495}{open\+Chunk}} (int expected)  throws I\+O\+Exception 
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_aef71cafb11cec0a888ba705be7211e48}{check\+Chunk\+Length}} (int expected)  throws I\+O\+Exception 
+\item 
+int \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_ae2014f14734121c02f976b1fe4733c2d}{read\+Chunk}} (byte\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_ae205f9222586a2bc01a8a240c5c210ad}{buffer}}, int offset, int length)  throws I\+O\+Exception 
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_a041df9ceb129f2b773de08dff8899a28}{refill\+Inflater}} (Inflater inflater)  throws I\+O\+Exception 
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_a1c0d026f9bcd6134e9847846c8eb393e}{read\+Chunk\+Unzip}} (Inflater inflater, byte\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_ae205f9222586a2bc01a8a240c5c210ad}{buffer}}, int offset, int length)  throws I\+O\+Exception 
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_ac1389015c67277f87b9f759e6095f2c0}{read\+Fully}} (byte\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_ae205f9222586a2bc01a8a240c5c210ad}{buffer}}, int offset, int length)  throws I\+O\+Exception 
+\item 
+int \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_a6a9d36165b993d86112b50b6d2026f63}{read\+Int}} (byte\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_ae205f9222586a2bc01a8a240c5c210ad}{buffer}}, int offset)
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_a40dd58180327dca560b33952f36a70c4}{skip}} (long amount)  throws I\+O\+Exception 
+\end{DoxyCompactItemize}
+\subsection*{Static Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static boolean \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_a025dcd998650265f0d15edd6c68c049d}{check\+Signature}} (byte\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_ae205f9222586a2bc01a8a240c5c210ad}{buffer}})
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+final Input\+Stream \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_a5714583b8e4e668d86f45065cda6e20b}{input}}
+\item 
+final C\+R\+C32 \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_acd77b774496f8b2d08303022c6227ff1}{crc}}
+\item 
+final byte \mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_ae205f9222586a2bc01a8a240c5c210ad}{buffer}}
+\item 
+int \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_aeb23de3eba5a6505ee1dd16094f78d7b}{chunk\+Length}}
+\item 
+int \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_a7d32000e77c9c28ad7751acf96da46ec}{chunk\+Type}}
+\item 
+int \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_a7304a0a75ad5821c3f8241a829705b42}{chunk\+Remaining}}
+\item 
+int \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_ab0fa613df8a9dadfcc722e8f038f3bc1}{width}}
+\item 
+int \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_a35019c52c6ce77631e6659743577854b}{height}}
+\item 
+int \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_a9fb5dab97411b31b55f38a801fe28d20}{bitdepth}}
+\item 
+int \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_a01a4bfaf3046e4b6eb944e7d48eb31c3}{color\+Type}}
+\item 
+int \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_aa7dcf351689be9279548b306395ee1a8}{bytes\+Per\+Pixel}}
+\item 
+byte \mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_ad65d46461f9f8df68a6b5551d56d8479}{palette}}
+\item 
+byte \mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_a273b1728dfd1158eb001f98fd4255a58}{paletteA}}
+\item 
+byte \mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_ad3c546cf013c0c8bdee84a07fdc08389}{trans\+Pixel}}
+\end{DoxyCompactItemize}
+\subsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static final byte \mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_a150f394aab124e6e1fe24130c0ca6879}{S\+I\+G\+N\+A\+T\+U\+RE}} = \{(byte)137, 80, 78, 71, 13, 10, 26, 10\}
+\item 
+static final int \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_a884520c9bbbbb9c389cf679b1955f23c}{I\+H\+DR}} = 0x49484452
+\item 
+static final int \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_ab0ffecb5ed3291a27538566f8f26aa6e}{P\+L\+TE}} = 0x504\+C5445
+\item 
+static final int \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_a5f97fa38a4d7475be6a390f85ea1550d}{t\+R\+NS}} = 0x74524\+E53
+\item 
+static final int \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_a99571bca75a4f458cb1113006aa99075}{I\+D\+AT}} = 0x49444154
+\item 
+static final int \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_a5cc56faca9b4243d012ae613e31c23da}{I\+E\+ND}} = 0x49454\+E44
+\item 
+static final byte \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_aecc7370603e0c3bb70b761be9be7fd18}{C\+O\+L\+O\+R\+\_\+\+G\+R\+E\+Y\+S\+C\+A\+LE}} = 0
+\item 
+static final byte \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_a54e437f6d3679769a356402f7c86b763}{C\+O\+L\+O\+R\+\_\+\+T\+R\+U\+E\+C\+O\+L\+OR}} = 2
+\item 
+static final byte \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_a229a5a6a3ed73b28cbbe7d36bc78c4d1}{C\+O\+L\+O\+R\+\_\+\+I\+N\+D\+E\+X\+ED}} = 3
+\item 
+static final byte \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_a0d509a1ae82f19ef4da0c9f2e0671d77}{C\+O\+L\+O\+R\+\_\+\+G\+R\+E\+Y\+A\+L\+P\+HA}} = 4
+\item 
+static final byte \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_a96c509f7243118174cd8d25c50314713}{C\+O\+L\+O\+R\+\_\+\+T\+R\+U\+E\+A\+L\+P\+HA}} = 6
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder}{P\+N\+G\+Decoder}}. The slick P\+NG decoder is based on this class \+:)
+
+\begin{DoxyAuthor}{Author}
+Matthias Mann 
+\end{DoxyAuthor}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_ae3e7f9921e7a1e1ad605cff63100d98a}\label{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_ae3e7f9921e7a1e1ad605cff63100d98a}} 
+\index{org\+::newdawn\+::slick\+::opengl\+::\+P\+N\+G\+Decoder@{org\+::newdawn\+::slick\+::opengl\+::\+P\+N\+G\+Decoder}!P\+N\+G\+Decoder@{P\+N\+G\+Decoder}}
+\index{P\+N\+G\+Decoder@{P\+N\+G\+Decoder}!org\+::newdawn\+::slick\+::opengl\+::\+P\+N\+G\+Decoder@{org\+::newdawn\+::slick\+::opengl\+::\+P\+N\+G\+Decoder}}
+\subsubsection{\texorpdfstring{P\+N\+G\+Decoder()}{PNGDecoder()}}
+{\footnotesize\ttfamily org.\+newdawn.\+slick.\+opengl.\+P\+N\+G\+Decoder.\+P\+N\+G\+Decoder (\begin{DoxyParamCaption}\item[{Input\+Stream}]{input }\end{DoxyParamCaption}) throws I\+O\+Exception\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+105                                                             \{
+106         this.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_a5714583b8e4e668d86f45065cda6e20b}{input}} = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_a5714583b8e4e668d86f45065cda6e20b}{input}};
+107         this.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_acd77b774496f8b2d08303022c6227ff1}{crc}} = \textcolor{keyword}{new} CRC32();
+108         this.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_ae205f9222586a2bc01a8a240c5c210ad}{buffer}} = \textcolor{keyword}{new} byte[4096];
+109         
+110         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_ac1389015c67277f87b9f759e6095f2c0}{readFully}}(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_ae205f9222586a2bc01a8a240c5c210ad}{buffer}}, 0, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_a150f394aab124e6e1fe24130c0ca6879}{SIGNATURE}}.length);
+111         \textcolor{keywordflow}{if}(!\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_a025dcd998650265f0d15edd6c68c049d}{checkSignature}}(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_ae205f9222586a2bc01a8a240c5c210ad}{buffer}})) \{
+112             \textcolor{keywordflow}{throw} \textcolor{keyword}{new} IOException(\textcolor{stringliteral}{"Not a valid PNG file"});
+113         \}
+114         
+115         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_afa7ad43df0de182a0fd27c9f6ca52e3d}{openChunk}}(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_a884520c9bbbbb9c389cf679b1955f23c}{IHDR}});
+116         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_a9e7ed3f5ce8aaf724e3da6bdd9db1bd1}{readIHDR}}();
+117         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_a8be80afb9e66943952de1e7d429303ac}{closeChunk}}();
+118         
+119         searchIDAT: \textcolor{keywordflow}{for}(;;) \{
+120             \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_afa7ad43df0de182a0fd27c9f6ca52e3d}{openChunk}}();
+121             \textcolor{keywordflow}{switch} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_a7d32000e77c9c28ad7751acf96da46ec}{chunkType}}) \{
+122             \textcolor{keywordflow}{case} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_a99571bca75a4f458cb1113006aa99075}{IDAT}}:
+123                 \textcolor{keywordflow}{break} searchIDAT;
+124             \textcolor{keywordflow}{case} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_ab0ffecb5ed3291a27538566f8f26aa6e}{PLTE}}:
+125                 \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_ab43622729c487fd442e6cbd9fcd7e1ed}{readPLTE}}();
+126                 \textcolor{keywordflow}{break};
+127             \textcolor{keywordflow}{case} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_a5f97fa38a4d7475be6a390f85ea1550d}{tRNS}}:
+128                 \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_a4f69d28cdeb7cbd83b4b6dfef7662e48}{readtRNS}}();
+129                 \textcolor{keywordflow}{break};
+130             \}
+131             \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_a8be80afb9e66943952de1e7d429303ac}{closeChunk}}();
+132         \}
+133 
+134         \textcolor{keywordflow}{if}(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_a01a4bfaf3046e4b6eb944e7d48eb31c3}{colorType}} == \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_a229a5a6a3ed73b28cbbe7d36bc78c4d1}{COLOR\_INDEXED}} && \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_ad65d46461f9f8df68a6b5551d56d8479}{palette}} == null) \{
+135             \textcolor{keywordflow}{throw} \textcolor{keyword}{new} IOException(\textcolor{stringliteral}{"Missing PLTE chunk"});
+136         \}
+137     \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_aef71cafb11cec0a888ba705be7211e48}\label{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_aef71cafb11cec0a888ba705be7211e48}} 
+\index{org\+::newdawn\+::slick\+::opengl\+::\+P\+N\+G\+Decoder@{org\+::newdawn\+::slick\+::opengl\+::\+P\+N\+G\+Decoder}!check\+Chunk\+Length@{check\+Chunk\+Length}}
+\index{check\+Chunk\+Length@{check\+Chunk\+Length}!org\+::newdawn\+::slick\+::opengl\+::\+P\+N\+G\+Decoder@{org\+::newdawn\+::slick\+::opengl\+::\+P\+N\+G\+Decoder}}
+\subsubsection{\texorpdfstring{check\+Chunk\+Length()}{checkChunkLength()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+opengl.\+P\+N\+G\+Decoder.\+check\+Chunk\+Length (\begin{DoxyParamCaption}\item[{int}]{expected }\end{DoxyParamCaption}) throws I\+O\+Exception\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+\begin{DoxyCode}
+677                                                                    \{
+678         \textcolor{keywordflow}{if}(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_aeb23de3eba5a6505ee1dd16094f78d7b}{chunkLength}} != expected) \{
+679             \textcolor{keywordflow}{throw} \textcolor{keyword}{new} IOException(\textcolor{stringliteral}{"Chunk has wrong size"});
+680         \}
+681     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_a025dcd998650265f0d15edd6c68c049d}\label{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_a025dcd998650265f0d15edd6c68c049d}} 
+\index{org\+::newdawn\+::slick\+::opengl\+::\+P\+N\+G\+Decoder@{org\+::newdawn\+::slick\+::opengl\+::\+P\+N\+G\+Decoder}!check\+Signature@{check\+Signature}}
+\index{check\+Signature@{check\+Signature}!org\+::newdawn\+::slick\+::opengl\+::\+P\+N\+G\+Decoder@{org\+::newdawn\+::slick\+::opengl\+::\+P\+N\+G\+Decoder}}
+\subsubsection{\texorpdfstring{check\+Signature()}{checkSignature()}}
+{\footnotesize\ttfamily static boolean org.\+newdawn.\+slick.\+opengl.\+P\+N\+G\+Decoder.\+check\+Signature (\begin{DoxyParamCaption}\item[{byte \mbox{[}$\,$\mbox{]}}]{buffer }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}, {\ttfamily [private]}}
+
+
+\begin{DoxyCode}
+754                                                          \{
+755         \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i=0 ; i<\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_a150f394aab124e6e1fe24130c0ca6879}{SIGNATURE}}.length ; i++) \{
+756             \textcolor{keywordflow}{if}(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_ae205f9222586a2bc01a8a240c5c210ad}{buffer}}[i] != \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_a150f394aab124e6e1fe24130c0ca6879}{SIGNATURE}}[i]) \{
+757                 \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+758             \}
+759         \}
+760         \textcolor{keywordflow}{return} \textcolor{keyword}{true};
+761     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_a8be80afb9e66943952de1e7d429303ac}\label{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_a8be80afb9e66943952de1e7d429303ac}} 
+\index{org\+::newdawn\+::slick\+::opengl\+::\+P\+N\+G\+Decoder@{org\+::newdawn\+::slick\+::opengl\+::\+P\+N\+G\+Decoder}!close\+Chunk@{close\+Chunk}}
+\index{close\+Chunk@{close\+Chunk}!org\+::newdawn\+::slick\+::opengl\+::\+P\+N\+G\+Decoder@{org\+::newdawn\+::slick\+::opengl\+::\+P\+N\+G\+Decoder}}
+\subsubsection{\texorpdfstring{close\+Chunk()}{closeChunk()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+opengl.\+P\+N\+G\+Decoder.\+close\+Chunk (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws I\+O\+Exception\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+\begin{DoxyCode}
+644                                                  \{
+645         \textcolor{keywordflow}{if}(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_a7304a0a75ad5821c3f8241a829705b42}{chunkRemaining}} > 0) \{
+646             \textcolor{comment}{// just skip the rest and the CRC}
+647             \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_a40dd58180327dca560b33952f36a70c4}{skip}}(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_a7304a0a75ad5821c3f8241a829705b42}{chunkRemaining}} + 4);
+648         \} \textcolor{keywordflow}{else} \{
+649             \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_ac1389015c67277f87b9f759e6095f2c0}{readFully}}(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_ae205f9222586a2bc01a8a240c5c210ad}{buffer}}, 0, 4);
+650             \textcolor{keywordtype}{int} expectedCrc = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_a6a9d36165b993d86112b50b6d2026f63}{readInt}}(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_ae205f9222586a2bc01a8a240c5c210ad}{buffer}}, 0);
+651             \textcolor{keywordtype}{int} computedCrc = (int)\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_acd77b774496f8b2d08303022c6227ff1}{crc}}.getValue();
+652             \textcolor{keywordflow}{if}(computedCrc != expectedCrc) \{
+653                 \textcolor{keywordflow}{throw} \textcolor{keyword}{new} IOException(\textcolor{stringliteral}{"Invalid CRC"});
+654             \}
+655         \}
+656         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_a7304a0a75ad5821c3f8241a829705b42}{chunkRemaining}} = 0;
+657         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_aeb23de3eba5a6505ee1dd16094f78d7b}{chunkLength}} = 0;
+658         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_a7d32000e77c9c28ad7751acf96da46ec}{chunkType}} = 0;
+659     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_ad54fc61c8d8d92d35f051e3b5f3f5a31}\label{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_ad54fc61c8d8d92d35f051e3b5f3f5a31}} 
+\index{org\+::newdawn\+::slick\+::opengl\+::\+P\+N\+G\+Decoder@{org\+::newdawn\+::slick\+::opengl\+::\+P\+N\+G\+Decoder}!copy@{copy}}
+\index{copy@{copy}!org\+::newdawn\+::slick\+::opengl\+::\+P\+N\+G\+Decoder@{org\+::newdawn\+::slick\+::opengl\+::\+P\+N\+G\+Decoder}}
+\subsubsection{\texorpdfstring{copy()}{copy()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+opengl.\+P\+N\+G\+Decoder.\+copy (\begin{DoxyParamCaption}\item[{Byte\+Buffer}]{buffer,  }\item[{byte \mbox{[}$\,$\mbox{]}}]{cur\+Line }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+\begin{DoxyCode}
+288                                                          \{
+289         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_ae205f9222586a2bc01a8a240c5c210ad}{buffer}}.put(curLine, 1, curLine.length-1);
+290     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_af953ec84436cf0d1f6f01ccb06f0a7c6}\label{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_af953ec84436cf0d1f6f01ccb06f0a7c6}} 
+\index{org\+::newdawn\+::slick\+::opengl\+::\+P\+N\+G\+Decoder@{org\+::newdawn\+::slick\+::opengl\+::\+P\+N\+G\+Decoder}!copy\+P\+A\+Lto\+A\+B\+GR@{copy\+P\+A\+Lto\+A\+B\+GR}}
+\index{copy\+P\+A\+Lto\+A\+B\+GR@{copy\+P\+A\+Lto\+A\+B\+GR}!org\+::newdawn\+::slick\+::opengl\+::\+P\+N\+G\+Decoder@{org\+::newdawn\+::slick\+::opengl\+::\+P\+N\+G\+Decoder}}
+\subsubsection{\texorpdfstring{copy\+P\+A\+Lto\+A\+B\+G\+R()}{copyPALtoABGR()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+opengl.\+P\+N\+G\+Decoder.\+copy\+P\+A\+Lto\+A\+B\+GR (\begin{DoxyParamCaption}\item[{Byte\+Buffer}]{buffer,  }\item[{byte \mbox{[}$\,$\mbox{]}}]{cur\+Line }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+\begin{DoxyCode}
+376                                                                   \{
+377         \textcolor{keywordflow}{if}(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_a273b1728dfd1158eb001f98fd4255a58}{paletteA}} != null) \{
+378             \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i=1,n=curLine.length ; i<n ; i+=1) \{
+379                 \textcolor{keywordtype}{int} idx = curLine[i] & 255;
+380                 byte r = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_ad65d46461f9f8df68a6b5551d56d8479}{palette}}[idx*3 + 0];
+381                 byte g = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_ad65d46461f9f8df68a6b5551d56d8479}{palette}}[idx*3 + 1];
+382                 byte b = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_ad65d46461f9f8df68a6b5551d56d8479}{palette}}[idx*3 + 2];
+383                 byte a = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_a273b1728dfd1158eb001f98fd4255a58}{paletteA}}[idx];
+384                 \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_ae205f9222586a2bc01a8a240c5c210ad}{buffer}}.put(a).put(b).put(g).put(r);
+385             \}
+386         \} \textcolor{keywordflow}{else} \{
+387             \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i=1,n=curLine.length ; i<n ; i+=1) \{
+388                 \textcolor{keywordtype}{int} idx = curLine[i] & 255;
+389                 byte r = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_ad65d46461f9f8df68a6b5551d56d8479}{palette}}[idx*3 + 0];
+390                 byte g = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_ad65d46461f9f8df68a6b5551d56d8479}{palette}}[idx*3 + 1];
+391                 byte b = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_ad65d46461f9f8df68a6b5551d56d8479}{palette}}[idx*3 + 2];
+392                 byte a = (byte)0xFF;
+393                 \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_ae205f9222586a2bc01a8a240c5c210ad}{buffer}}.put(a).put(b).put(g).put(r);
+394             \}
+395         \}
+396     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_a5df8dd1ce316baadb24936f6d039052f}\label{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_a5df8dd1ce316baadb24936f6d039052f}} 
+\index{org\+::newdawn\+::slick\+::opengl\+::\+P\+N\+G\+Decoder@{org\+::newdawn\+::slick\+::opengl\+::\+P\+N\+G\+Decoder}!copy\+P\+A\+Lto\+B\+G\+RA@{copy\+P\+A\+Lto\+B\+G\+RA}}
+\index{copy\+P\+A\+Lto\+B\+G\+RA@{copy\+P\+A\+Lto\+B\+G\+RA}!org\+::newdawn\+::slick\+::opengl\+::\+P\+N\+G\+Decoder@{org\+::newdawn\+::slick\+::opengl\+::\+P\+N\+G\+Decoder}}
+\subsubsection{\texorpdfstring{copy\+P\+A\+Lto\+B\+G\+R\+A()}{copyPALtoBGRA()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+opengl.\+P\+N\+G\+Decoder.\+copy\+P\+A\+Lto\+B\+G\+RA (\begin{DoxyParamCaption}\item[{Byte\+Buffer}]{buffer,  }\item[{byte \mbox{[}$\,$\mbox{]}}]{cur\+Line }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+\begin{DoxyCode}
+420                                                                   \{
+421         \textcolor{keywordflow}{if}(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_a273b1728dfd1158eb001f98fd4255a58}{paletteA}} != null) \{
+422             \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i=1,n=curLine.length ; i<n ; i+=1) \{
+423                 \textcolor{keywordtype}{int} idx = curLine[i] & 255;
+424                 byte r = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_ad65d46461f9f8df68a6b5551d56d8479}{palette}}[idx*3 + 0];
+425                 byte g = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_ad65d46461f9f8df68a6b5551d56d8479}{palette}}[idx*3 + 1];
+426                 byte b = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_ad65d46461f9f8df68a6b5551d56d8479}{palette}}[idx*3 + 2];
+427                 byte a = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_a273b1728dfd1158eb001f98fd4255a58}{paletteA}}[idx];
+428                 \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_ae205f9222586a2bc01a8a240c5c210ad}{buffer}}.put(b).put(g).put(r).put(a);
+429             \}
+430         \} \textcolor{keywordflow}{else} \{
+431             \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i=1,n=curLine.length ; i<n ; i+=1) \{
+432                 \textcolor{keywordtype}{int} idx = curLine[i] & 255;
+433                 byte r = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_ad65d46461f9f8df68a6b5551d56d8479}{palette}}[idx*3 + 0];
+434                 byte g = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_ad65d46461f9f8df68a6b5551d56d8479}{palette}}[idx*3 + 1];
+435                 byte b = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_ad65d46461f9f8df68a6b5551d56d8479}{palette}}[idx*3 + 2];
+436                 byte a = (byte)0xFF;
+437                 \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_ae205f9222586a2bc01a8a240c5c210ad}{buffer}}.put(b).put(g).put(r).put(a);
+438             \}
+439         \}
+440     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_a5c051e4b5546f946205133a5001cb713}\label{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_a5c051e4b5546f946205133a5001cb713}} 
+\index{org\+::newdawn\+::slick\+::opengl\+::\+P\+N\+G\+Decoder@{org\+::newdawn\+::slick\+::opengl\+::\+P\+N\+G\+Decoder}!copy\+P\+A\+Lto\+R\+G\+BA@{copy\+P\+A\+Lto\+R\+G\+BA}}
+\index{copy\+P\+A\+Lto\+R\+G\+BA@{copy\+P\+A\+Lto\+R\+G\+BA}!org\+::newdawn\+::slick\+::opengl\+::\+P\+N\+G\+Decoder@{org\+::newdawn\+::slick\+::opengl\+::\+P\+N\+G\+Decoder}}
+\subsubsection{\texorpdfstring{copy\+P\+A\+Lto\+R\+G\+B\+A()}{copyPALtoRGBA()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+opengl.\+P\+N\+G\+Decoder.\+copy\+P\+A\+Lto\+R\+G\+BA (\begin{DoxyParamCaption}\item[{Byte\+Buffer}]{buffer,  }\item[{byte \mbox{[}$\,$\mbox{]}}]{cur\+Line }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+\begin{DoxyCode}
+398                                                                   \{
+399         \textcolor{keywordflow}{if}(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_a273b1728dfd1158eb001f98fd4255a58}{paletteA}} != null) \{
+400             \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i=1,n=curLine.length ; i<n ; i+=1) \{
+401                 \textcolor{keywordtype}{int} idx = curLine[i] & 255;
+402                 byte r = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_ad65d46461f9f8df68a6b5551d56d8479}{palette}}[idx*3 + 0];
+403                 byte g = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_ad65d46461f9f8df68a6b5551d56d8479}{palette}}[idx*3 + 1];
+404                 byte b = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_ad65d46461f9f8df68a6b5551d56d8479}{palette}}[idx*3 + 2];
+405                 byte a = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_a273b1728dfd1158eb001f98fd4255a58}{paletteA}}[idx];
+406                 \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_ae205f9222586a2bc01a8a240c5c210ad}{buffer}}.put(r).put(g).put(b).put(a);
+407             \}
+408         \} \textcolor{keywordflow}{else} \{
+409             \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i=1,n=curLine.length ; i<n ; i+=1) \{
+410                 \textcolor{keywordtype}{int} idx = curLine[i] & 255;
+411                 byte r = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_ad65d46461f9f8df68a6b5551d56d8479}{palette}}[idx*3 + 0];
+412                 byte g = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_ad65d46461f9f8df68a6b5551d56d8479}{palette}}[idx*3 + 1];
+413                 byte b = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_ad65d46461f9f8df68a6b5551d56d8479}{palette}}[idx*3 + 2];
+414                 byte a = (byte)0xFF;
+415                 \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_ae205f9222586a2bc01a8a240c5c210ad}{buffer}}.put(r).put(g).put(b).put(a);
+416             \}
+417         \}
+418     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_abc5f2f03f08657972dbaaab349118db0}\label{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_abc5f2f03f08657972dbaaab349118db0}} 
+\index{org\+::newdawn\+::slick\+::opengl\+::\+P\+N\+G\+Decoder@{org\+::newdawn\+::slick\+::opengl\+::\+P\+N\+G\+Decoder}!copy\+R\+G\+B\+Ato\+A\+B\+GR@{copy\+R\+G\+B\+Ato\+A\+B\+GR}}
+\index{copy\+R\+G\+B\+Ato\+A\+B\+GR@{copy\+R\+G\+B\+Ato\+A\+B\+GR}!org\+::newdawn\+::slick\+::opengl\+::\+P\+N\+G\+Decoder@{org\+::newdawn\+::slick\+::opengl\+::\+P\+N\+G\+Decoder}}
+\subsubsection{\texorpdfstring{copy\+R\+G\+B\+Ato\+A\+B\+G\+R()}{copyRGBAtoABGR()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+opengl.\+P\+N\+G\+Decoder.\+copy\+R\+G\+B\+Ato\+A\+B\+GR (\begin{DoxyParamCaption}\item[{Byte\+Buffer}]{buffer,  }\item[{byte \mbox{[}$\,$\mbox{]}}]{cur\+Line }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+\begin{DoxyCode}
+358                                                                    \{
+359         \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i=1,n=curLine.length ; i<n ; i+=4) \{
+360             \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_ae205f9222586a2bc01a8a240c5c210ad}{buffer}}.put(curLine[i+3]).put(curLine[i+2]).put(curLine[i+1]).put(curLine[i]);
+361         \}
+362     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_a8c5b826b6abd782f69528d39e71183c3}\label{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_a8c5b826b6abd782f69528d39e71183c3}} 
+\index{org\+::newdawn\+::slick\+::opengl\+::\+P\+N\+G\+Decoder@{org\+::newdawn\+::slick\+::opengl\+::\+P\+N\+G\+Decoder}!copy\+R\+G\+B\+Ato\+B\+G\+RA@{copy\+R\+G\+B\+Ato\+B\+G\+RA}}
+\index{copy\+R\+G\+B\+Ato\+B\+G\+RA@{copy\+R\+G\+B\+Ato\+B\+G\+RA}!org\+::newdawn\+::slick\+::opengl\+::\+P\+N\+G\+Decoder@{org\+::newdawn\+::slick\+::opengl\+::\+P\+N\+G\+Decoder}}
+\subsubsection{\texorpdfstring{copy\+R\+G\+B\+Ato\+B\+G\+R\+A()}{copyRGBAtoBGRA()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+opengl.\+P\+N\+G\+Decoder.\+copy\+R\+G\+B\+Ato\+B\+G\+RA (\begin{DoxyParamCaption}\item[{Byte\+Buffer}]{buffer,  }\item[{byte \mbox{[}$\,$\mbox{]}}]{cur\+Line }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+\begin{DoxyCode}
+364                                                                    \{
+365         \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i=1,n=curLine.length ; i<n ; i+=4) \{
+366             \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_ae205f9222586a2bc01a8a240c5c210ad}{buffer}}.put(curLine[i+2]).put(curLine[i+1]).put(curLine[i+0]).put(curLine[i+3]);
+367         \}
+368     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_a131a42f31d463259fae5359856d0b251}\label{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_a131a42f31d463259fae5359856d0b251}} 
+\index{org\+::newdawn\+::slick\+::opengl\+::\+P\+N\+G\+Decoder@{org\+::newdawn\+::slick\+::opengl\+::\+P\+N\+G\+Decoder}!copy\+R\+G\+B\+Ato\+R\+GB@{copy\+R\+G\+B\+Ato\+R\+GB}}
+\index{copy\+R\+G\+B\+Ato\+R\+GB@{copy\+R\+G\+B\+Ato\+R\+GB}!org\+::newdawn\+::slick\+::opengl\+::\+P\+N\+G\+Decoder@{org\+::newdawn\+::slick\+::opengl\+::\+P\+N\+G\+Decoder}}
+\subsubsection{\texorpdfstring{copy\+R\+G\+B\+Ato\+R\+G\+B()}{copyRGBAtoRGB()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+opengl.\+P\+N\+G\+Decoder.\+copy\+R\+G\+B\+Ato\+R\+GB (\begin{DoxyParamCaption}\item[{Byte\+Buffer}]{buffer,  }\item[{byte \mbox{[}$\,$\mbox{]}}]{cur\+Line }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+\begin{DoxyCode}
+370                                                                   \{
+371         \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i=1,n=curLine.length ; i<n ; i+=4) \{
+372             \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_ae205f9222586a2bc01a8a240c5c210ad}{buffer}}.put(curLine[i]).put(curLine[i+1]).put(curLine[i+2]);
+373         \}
+374     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_a749e57099e563da4f6508a337825adaa}\label{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_a749e57099e563da4f6508a337825adaa}} 
+\index{org\+::newdawn\+::slick\+::opengl\+::\+P\+N\+G\+Decoder@{org\+::newdawn\+::slick\+::opengl\+::\+P\+N\+G\+Decoder}!copy\+R\+G\+Bto\+A\+B\+GR@{copy\+R\+G\+Bto\+A\+B\+GR}}
+\index{copy\+R\+G\+Bto\+A\+B\+GR@{copy\+R\+G\+Bto\+A\+B\+GR}!org\+::newdawn\+::slick\+::opengl\+::\+P\+N\+G\+Decoder@{org\+::newdawn\+::slick\+::opengl\+::\+P\+N\+G\+Decoder}}
+\subsubsection{\texorpdfstring{copy\+R\+G\+Bto\+A\+B\+G\+R()}{copyRGBtoABGR()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+opengl.\+P\+N\+G\+Decoder.\+copy\+R\+G\+Bto\+A\+B\+GR (\begin{DoxyParamCaption}\item[{Byte\+Buffer}]{buffer,  }\item[{byte \mbox{[}$\,$\mbox{]}}]{cur\+Line }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+\begin{DoxyCode}
+292                                                                   \{
+293         \textcolor{keywordflow}{if}(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_ad3c546cf013c0c8bdee84a07fdc08389}{transPixel}} != null) \{
+294             byte tr = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_ad3c546cf013c0c8bdee84a07fdc08389}{transPixel}}[1];
+295             byte tg = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_ad3c546cf013c0c8bdee84a07fdc08389}{transPixel}}[3];
+296             byte tb = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_ad3c546cf013c0c8bdee84a07fdc08389}{transPixel}}[5];
+297             \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i=1,n=curLine.length ; i<n ; i+=3) \{
+298                 byte r = curLine[i];
+299                 byte g = curLine[i+1];
+300                 byte b = curLine[i+2];
+301                 byte a = (byte)0xFF;
+302                 \textcolor{keywordflow}{if}(r==tr && g==tg && b==tb) \{
+303                     a = 0;
+304                 \}
+305                 \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_ae205f9222586a2bc01a8a240c5c210ad}{buffer}}.put(a).put(b).put(g).put(r);
+306             \}
+307         \} \textcolor{keywordflow}{else} \{
+308             \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i=1,n=curLine.length ; i<n ; i+=3) \{
+309                 \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_ae205f9222586a2bc01a8a240c5c210ad}{buffer}}.put((byte)0xFF).put(curLine[i+2]).put(curLine[i+1]).put(curLine[i]);
+310             \}
+311         \}
+312     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_ac2904e15dbda28288e3baf4b1354c6b7}\label{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_ac2904e15dbda28288e3baf4b1354c6b7}} 
+\index{org\+::newdawn\+::slick\+::opengl\+::\+P\+N\+G\+Decoder@{org\+::newdawn\+::slick\+::opengl\+::\+P\+N\+G\+Decoder}!copy\+R\+G\+Bto\+B\+G\+RA@{copy\+R\+G\+Bto\+B\+G\+RA}}
+\index{copy\+R\+G\+Bto\+B\+G\+RA@{copy\+R\+G\+Bto\+B\+G\+RA}!org\+::newdawn\+::slick\+::opengl\+::\+P\+N\+G\+Decoder@{org\+::newdawn\+::slick\+::opengl\+::\+P\+N\+G\+Decoder}}
+\subsubsection{\texorpdfstring{copy\+R\+G\+Bto\+B\+G\+R\+A()}{copyRGBtoBGRA()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+opengl.\+P\+N\+G\+Decoder.\+copy\+R\+G\+Bto\+B\+G\+RA (\begin{DoxyParamCaption}\item[{Byte\+Buffer}]{buffer,  }\item[{byte \mbox{[}$\,$\mbox{]}}]{cur\+Line }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+\begin{DoxyCode}
+336                                                                   \{
+337         \textcolor{keywordflow}{if}(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_ad3c546cf013c0c8bdee84a07fdc08389}{transPixel}} != null) \{
+338             byte tr = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_ad3c546cf013c0c8bdee84a07fdc08389}{transPixel}}[1];
+339             byte tg = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_ad3c546cf013c0c8bdee84a07fdc08389}{transPixel}}[3];
+340             byte tb = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_ad3c546cf013c0c8bdee84a07fdc08389}{transPixel}}[5];
+341             \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i=1,n=curLine.length ; i<n ; i+=3) \{
+342                 byte r = curLine[i];
+343                 byte g = curLine[i+1];
+344                 byte b = curLine[i+2];
+345                 byte a = (byte)0xFF;
+346                 \textcolor{keywordflow}{if}(r==tr && g==tg && b==tb) \{
+347                     a = 0;
+348                 \}
+349                 \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_ae205f9222586a2bc01a8a240c5c210ad}{buffer}}.put(b).put(g).put(r).put(a);
+350             \}
+351         \} \textcolor{keywordflow}{else} \{
+352             \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i=1,n=curLine.length ; i<n ; i+=3) \{
+353                 \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_ae205f9222586a2bc01a8a240c5c210ad}{buffer}}.put(curLine[i+2]).put(curLine[i+1]).put(curLine[i]).put((byte)0xFF);
+354             \}
+355         \}
+356     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_a02412286c8a28c2dedcbf64948b727ee}\label{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_a02412286c8a28c2dedcbf64948b727ee}} 
+\index{org\+::newdawn\+::slick\+::opengl\+::\+P\+N\+G\+Decoder@{org\+::newdawn\+::slick\+::opengl\+::\+P\+N\+G\+Decoder}!copy\+R\+G\+Bto\+R\+G\+BA@{copy\+R\+G\+Bto\+R\+G\+BA}}
+\index{copy\+R\+G\+Bto\+R\+G\+BA@{copy\+R\+G\+Bto\+R\+G\+BA}!org\+::newdawn\+::slick\+::opengl\+::\+P\+N\+G\+Decoder@{org\+::newdawn\+::slick\+::opengl\+::\+P\+N\+G\+Decoder}}
+\subsubsection{\texorpdfstring{copy\+R\+G\+Bto\+R\+G\+B\+A()}{copyRGBtoRGBA()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+opengl.\+P\+N\+G\+Decoder.\+copy\+R\+G\+Bto\+R\+G\+BA (\begin{DoxyParamCaption}\item[{Byte\+Buffer}]{buffer,  }\item[{byte \mbox{[}$\,$\mbox{]}}]{cur\+Line }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+\begin{DoxyCode}
+314                                                                   \{
+315         \textcolor{keywordflow}{if}(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_ad3c546cf013c0c8bdee84a07fdc08389}{transPixel}} != null) \{
+316             byte tr = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_ad3c546cf013c0c8bdee84a07fdc08389}{transPixel}}[1];
+317             byte tg = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_ad3c546cf013c0c8bdee84a07fdc08389}{transPixel}}[3];
+318             byte tb = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_ad3c546cf013c0c8bdee84a07fdc08389}{transPixel}}[5];
+319             \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i=1,n=curLine.length ; i<n ; i+=3) \{
+320                 byte r = curLine[i];
+321                 byte g = curLine[i+1];
+322                 byte b = curLine[i+2];
+323                 byte a = (byte)0xFF;
+324                 \textcolor{keywordflow}{if}(r==tr && g==tg && b==tb) \{
+325                     a = 0;
+326                 \}
+327                 \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_ae205f9222586a2bc01a8a240c5c210ad}{buffer}}.put(r).put(g).put(b).put(a);
+328             \}
+329         \} \textcolor{keywordflow}{else} \{
+330             \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i=1,n=curLine.length ; i<n ; i+=3) \{
+331                 \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_ae205f9222586a2bc01a8a240c5c210ad}{buffer}}.put(curLine[i]).put(curLine[i+1]).put(curLine[i+2]).put((byte)0xFF);
+332             \}
+333         \}
+334     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_aba256a6afc6ba9bd28f8244d7a79d09d}\label{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_aba256a6afc6ba9bd28f8244d7a79d09d}} 
+\index{org\+::newdawn\+::slick\+::opengl\+::\+P\+N\+G\+Decoder@{org\+::newdawn\+::slick\+::opengl\+::\+P\+N\+G\+Decoder}!decide\+Texture\+Format@{decide\+Texture\+Format}}
+\index{decide\+Texture\+Format@{decide\+Texture\+Format}!org\+::newdawn\+::slick\+::opengl\+::\+P\+N\+G\+Decoder@{org\+::newdawn\+::slick\+::opengl\+::\+P\+N\+G\+Decoder}}
+\subsubsection{\texorpdfstring{decide\+Texture\+Format()}{decideTextureFormat()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_1_1_format}{Format}} org.\+newdawn.\+slick.\+opengl.\+P\+N\+G\+Decoder.\+decide\+Texture\+Format (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_1_1_format}{Format}}}]{fmt }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Computes the implemented format conversion for the desired format.
+
+
+\begin{DoxyParams}{Parameters}
+{\em fmt} & the desired format \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+format which best matches the desired format 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Unsupported\+Operation\+Exception} & if this P\+NG file can\textquotesingle{}t be decoded \\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyCode}
+165                                                   \{
+166         \textcolor{keywordflow}{switch} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_a01a4bfaf3046e4b6eb944e7d48eb31c3}{colorType}}) \{
+167         \textcolor{keywordflow}{case} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_a54e437f6d3679769a356402f7c86b763}{COLOR\_TRUECOLOR}}:
+168             \textcolor{keywordflow}{if} ((fmt == \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_a3df8efe1a627d4c86526e3d74d13e350}{ABGR}}) || (fmt == \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_a2b0f49c7439fb444549baac99a120bfe}{RGBA}}) || (fmt == \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_a306c7b9315ccc42ea3e8c73642de3dcc}{BGRA}}) || (fmt == 
+      \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_a47bc282c529d4fd9e913912ee2a7c87f}{RGB}})) \{
+169                 \textcolor{keywordflow}{return} fmt;
+170             \}
+171             
+172             \textcolor{keywordflow}{return} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_a47bc282c529d4fd9e913912ee2a7c87f}{RGB}};
+173         \textcolor{keywordflow}{case} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_a96c509f7243118174cd8d25c50314713}{COLOR\_TRUEALPHA}}:
+174             \textcolor{keywordflow}{if} ((fmt == \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_a3df8efe1a627d4c86526e3d74d13e350}{ABGR}}) || (fmt == \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_a2b0f49c7439fb444549baac99a120bfe}{RGBA}}) || (fmt == \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_a306c7b9315ccc42ea3e8c73642de3dcc}{BGRA}}) || (fmt == 
+      \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_a47bc282c529d4fd9e913912ee2a7c87f}{RGB}})) \{
+175                 \textcolor{keywordflow}{return} fmt;
+176             \}
+177             
+178             \textcolor{keywordflow}{return} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_a2b0f49c7439fb444549baac99a120bfe}{RGBA}};
+179         \textcolor{keywordflow}{case} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_aecc7370603e0c3bb70b761be9be7fd18}{COLOR\_GREYSCALE}}:
+180             \textcolor{keywordflow}{if} ((fmt == \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_a0ecc59fd1d47827a9c16df0bfbb033d2}{LUMINANCE}}) || (fmt == \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_a2616963cd5d05e3a659cf81363629062}{ALPHA}})) \{
+181                 \textcolor{keywordflow}{return} fmt;
+182             \}
+183             
+184             \textcolor{keywordflow}{return} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_a0ecc59fd1d47827a9c16df0bfbb033d2}{LUMINANCE}};
+185         \textcolor{keywordflow}{case} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_a0d509a1ae82f19ef4da0c9f2e0671d77}{COLOR\_GREYALPHA}}:
+186             \textcolor{keywordflow}{return} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_a1bf5eb8cd445b84d0b5a0861648d1ee4}{LUMINANCE\_ALPHA}};
+187         \textcolor{keywordflow}{case} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_a229a5a6a3ed73b28cbbe7d36bc78c4d1}{COLOR\_INDEXED}}:
+188             \textcolor{keywordflow}{if} ((fmt == \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_a3df8efe1a627d4c86526e3d74d13e350}{ABGR}}) || (fmt == \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_a2b0f49c7439fb444549baac99a120bfe}{RGBA}}) || (fmt == \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_a306c7b9315ccc42ea3e8c73642de3dcc}{BGRA}})) \{
+189                 \textcolor{keywordflow}{return} fmt;
+190             \}
+191             
+192             \textcolor{keywordflow}{return} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_a2b0f49c7439fb444549baac99a120bfe}{RGBA}};
+193         \textcolor{keywordflow}{default}:
+194             \textcolor{keywordflow}{throw} \textcolor{keyword}{new} UnsupportedOperationException(\textcolor{stringliteral}{"Not yet implemented"});
+195         \}
+196     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_ad9b6eabeb88368645325bfb634a133b6}\label{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_ad9b6eabeb88368645325bfb634a133b6}} 
+\index{org\+::newdawn\+::slick\+::opengl\+::\+P\+N\+G\+Decoder@{org\+::newdawn\+::slick\+::opengl\+::\+P\+N\+G\+Decoder}!decode@{decode}}
+\index{decode@{decode}!org\+::newdawn\+::slick\+::opengl\+::\+P\+N\+G\+Decoder@{org\+::newdawn\+::slick\+::opengl\+::\+P\+N\+G\+Decoder}}
+\subsubsection{\texorpdfstring{decode()}{decode()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+opengl.\+P\+N\+G\+Decoder.\+decode (\begin{DoxyParamCaption}\item[{Byte\+Buffer}]{buffer,  }\item[{int}]{stride,  }\item[{\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_1_1_format}{Format}}}]{fmt }\end{DoxyParamCaption}) throws I\+O\+Exception\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+198                                                                                      \{
+199         \textcolor{keyword}{final} \textcolor{keywordtype}{int} offset = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_ae205f9222586a2bc01a8a240c5c210ad}{buffer}}.position();
+200         \textcolor{keyword}{final} \textcolor{keywordtype}{int} lineSize = ((\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_ab0fa613df8a9dadfcc722e8f038f3bc1}{width}} * \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_a9fb5dab97411b31b55f38a801fe28d20}{bitdepth}} + 7) / 8) * 
+      \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_aa7dcf351689be9279548b306395ee1a8}{bytesPerPixel}};
+201         byte[] curLine = \textcolor{keyword}{new} byte[lineSize+1];
+202         byte[] prevLine = \textcolor{keyword}{new} byte[lineSize+1];
+203         byte[] palLine = (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_a9fb5dab97411b31b55f38a801fe28d20}{bitdepth}} < 8) ? \textcolor{keyword}{new} byte[\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_ab0fa613df8a9dadfcc722e8f038f3bc1}{width}}+1] : null;
+204         
+205         \textcolor{keyword}{final} Inflater inflater = \textcolor{keyword}{new} Inflater();
+206         \textcolor{keywordflow}{try} \{
+207             \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} y=0 ; y<\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_a35019c52c6ce77631e6659743577854b}{height}} ; y++) \{
+208                 \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_a1c0d026f9bcd6134e9847846c8eb393e}{readChunkUnzip}}(inflater, curLine, 0, curLine.length);
+209                 \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_acc27514c9030ef279d2322f986bde82a}{unfilter}}(curLine, prevLine);
+210 
+211                 \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_ae205f9222586a2bc01a8a240c5c210ad}{buffer}}.position(offset + y*stride);
+212 
+213                 \textcolor{keywordflow}{switch} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_a01a4bfaf3046e4b6eb944e7d48eb31c3}{colorType}}) \{
+214                 \textcolor{keywordflow}{case} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_a54e437f6d3679769a356402f7c86b763}{COLOR\_TRUECOLOR}}:
+215                     \textcolor{keywordflow}{if} (fmt == \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_a3df8efe1a627d4c86526e3d74d13e350}{ABGR}}) \{
+216                         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_a749e57099e563da4f6508a337825adaa}{copyRGBtoABGR}}(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_ae205f9222586a2bc01a8a240c5c210ad}{buffer}}, curLine); 
+217                     \}
+218                     \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (fmt == \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_a2b0f49c7439fb444549baac99a120bfe}{RGBA}}) \{
+219                         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_a02412286c8a28c2dedcbf64948b727ee}{copyRGBtoRGBA}}(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_ae205f9222586a2bc01a8a240c5c210ad}{buffer}}, curLine); 
+220                     \}
+221                     \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (fmt == \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_a306c7b9315ccc42ea3e8c73642de3dcc}{BGRA}}) \{
+222                         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_ac2904e15dbda28288e3baf4b1354c6b7}{copyRGBtoBGRA}}(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_ae205f9222586a2bc01a8a240c5c210ad}{buffer}}, curLine); 
+223                     \}
+224                     \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (fmt == \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_a47bc282c529d4fd9e913912ee2a7c87f}{RGB}}) \{
+225                         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_ad54fc61c8d8d92d35f051e3b5f3f5a31}{copy}}(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_ae205f9222586a2bc01a8a240c5c210ad}{buffer}}, curLine); 
+226                     \} \textcolor{keywordflow}{else} \{
+227                         \textcolor{keywordflow}{throw} \textcolor{keyword}{new} UnsupportedOperationException(\textcolor{stringliteral}{"Unsupported format for this image"});
+228                     \}
+229                     \textcolor{keywordflow}{break};
+230                 \textcolor{keywordflow}{case} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_a96c509f7243118174cd8d25c50314713}{COLOR\_TRUEALPHA}}:
+231                     \textcolor{keywordflow}{if} (fmt == \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_a3df8efe1a627d4c86526e3d74d13e350}{ABGR}}) \{
+232                         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_abc5f2f03f08657972dbaaab349118db0}{copyRGBAtoABGR}}(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_ae205f9222586a2bc01a8a240c5c210ad}{buffer}}, curLine);
+233                     \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (fmt == \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_a2b0f49c7439fb444549baac99a120bfe}{RGBA}}) \{ 
+234                         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_ad54fc61c8d8d92d35f051e3b5f3f5a31}{copy}}(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_ae205f9222586a2bc01a8a240c5c210ad}{buffer}}, curLine);
+235                     \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (fmt == \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_a306c7b9315ccc42ea3e8c73642de3dcc}{BGRA}}) \{
+236                         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_a8c5b826b6abd782f69528d39e71183c3}{copyRGBAtoBGRA}}(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_ae205f9222586a2bc01a8a240c5c210ad}{buffer}}, curLine); \textcolor{keywordflow}{break};
+237                     \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (fmt == \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_a47bc282c529d4fd9e913912ee2a7c87f}{RGB}}) \{
+238                         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_a131a42f31d463259fae5359856d0b251}{copyRGBAtoRGB}}(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_ae205f9222586a2bc01a8a240c5c210ad}{buffer}}, curLine); \textcolor{keywordflow}{break};
+239                     \} \textcolor{keywordflow}{else} \{
+240                         \textcolor{keywordflow}{throw} \textcolor{keyword}{new} UnsupportedOperationException(\textcolor{stringliteral}{"Unsupported format for this image"});
+241                     \}
+242                     \textcolor{keywordflow}{break};
+243                 \textcolor{keywordflow}{case} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_aecc7370603e0c3bb70b761be9be7fd18}{COLOR\_GREYSCALE}}:
+244                     \textcolor{keywordflow}{if} ((fmt == \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_a0ecc59fd1d47827a9c16df0bfbb033d2}{LUMINANCE}}) || (fmt == \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_a2616963cd5d05e3a659cf81363629062}{ALPHA}})) \{
+245                         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_ad54fc61c8d8d92d35f051e3b5f3f5a31}{copy}}(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_ae205f9222586a2bc01a8a240c5c210ad}{buffer}}, curLine);
+246                     \} \textcolor{keywordflow}{else} \{
+247                         \textcolor{keywordflow}{throw} \textcolor{keyword}{new} UnsupportedOperationException(\textcolor{stringliteral}{"Unsupported format for this image"});
+248                     \}
+249                     \textcolor{keywordflow}{break};
+250                 \textcolor{keywordflow}{case} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_a0d509a1ae82f19ef4da0c9f2e0671d77}{COLOR\_GREYALPHA}}:
+251                     \textcolor{keywordflow}{if} (fmt == \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_a1bf5eb8cd445b84d0b5a0861648d1ee4}{LUMINANCE\_ALPHA}}) \{
+252                         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_ad54fc61c8d8d92d35f051e3b5f3f5a31}{copy}}(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_ae205f9222586a2bc01a8a240c5c210ad}{buffer}}, curLine);
+253                     \} \textcolor{keywordflow}{else} \{
+254                         \textcolor{keywordflow}{throw} \textcolor{keyword}{new} UnsupportedOperationException(\textcolor{stringliteral}{"Unsupported format for this image"});
+255                     \}
+256                     \textcolor{keywordflow}{break};
+257                 \textcolor{keywordflow}{case} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_a229a5a6a3ed73b28cbbe7d36bc78c4d1}{COLOR\_INDEXED}}:
+258                     \textcolor{keywordflow}{switch}(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_a9fb5dab97411b31b55f38a801fe28d20}{bitdepth}}) \{
+259                         \textcolor{keywordflow}{case} 8: palLine = curLine; \textcolor{keywordflow}{break};
+260                         \textcolor{keywordflow}{case} 4: \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_a0ca84983943d5e90a184e0ac16833d4e}{expand4}}(curLine, palLine); \textcolor{keywordflow}{break};
+261                         \textcolor{keywordflow}{case} 2: \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_aa9bfde671b761d559aaa785457ec5c94}{expand2}}(curLine, palLine); \textcolor{keywordflow}{break};
+262                         \textcolor{keywordflow}{case} 1: \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_ae4687a998385d98ed9e733def922f1ed}{expand1}}(curLine, palLine); \textcolor{keywordflow}{break};
+263                         \textcolor{keywordflow}{default}: \textcolor{keywordflow}{throw} \textcolor{keyword}{new} UnsupportedOperationException(\textcolor{stringliteral}{"Unsupported bitdepth for this
+       image"});
+264                     \}
+265                     \textcolor{keywordflow}{if} (fmt == \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_a3df8efe1a627d4c86526e3d74d13e350}{ABGR}}) \{
+266                         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_af953ec84436cf0d1f6f01ccb06f0a7c6}{copyPALtoABGR}}(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_ae205f9222586a2bc01a8a240c5c210ad}{buffer}}, palLine);
+267                     \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (fmt == \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_a2b0f49c7439fb444549baac99a120bfe}{RGBA}}) \{
+268                         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_a5c051e4b5546f946205133a5001cb713}{copyPALtoRGBA}}(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_ae205f9222586a2bc01a8a240c5c210ad}{buffer}}, palLine);
+269                     \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (fmt == \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_a306c7b9315ccc42ea3e8c73642de3dcc}{BGRA}}) \{
+270                         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_a5df8dd1ce316baadb24936f6d039052f}{copyPALtoBGRA}}(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_ae205f9222586a2bc01a8a240c5c210ad}{buffer}}, palLine);
+271                     \} \textcolor{keywordflow}{else} \{
+272                         \textcolor{keywordflow}{throw} \textcolor{keyword}{new} UnsupportedOperationException(\textcolor{stringliteral}{"Unsupported format for this image"});
+273                     \}
+274                     \textcolor{keywordflow}{break};
+275                 \textcolor{keywordflow}{default}:
+276                     \textcolor{keywordflow}{throw} \textcolor{keyword}{new} UnsupportedOperationException(\textcolor{stringliteral}{"Not yet implemented"});
+277                 \}
+278 
+279                 byte[] tmp = curLine;
+280                 curLine = prevLine;
+281                 prevLine = tmp;
+282             \}
+283         \} \textcolor{keywordflow}{finally} \{
+284             inflater.end();
+285         \}
+286     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_ae4687a998385d98ed9e733def922f1ed}\label{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_ae4687a998385d98ed9e733def922f1ed}} 
+\index{org\+::newdawn\+::slick\+::opengl\+::\+P\+N\+G\+Decoder@{org\+::newdawn\+::slick\+::opengl\+::\+P\+N\+G\+Decoder}!expand1@{expand1}}
+\index{expand1@{expand1}!org\+::newdawn\+::slick\+::opengl\+::\+P\+N\+G\+Decoder@{org\+::newdawn\+::slick\+::opengl\+::\+P\+N\+G\+Decoder}}
+\subsubsection{\texorpdfstring{expand1()}{expand1()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+opengl.\+P\+N\+G\+Decoder.\+expand1 (\begin{DoxyParamCaption}\item[{byte \mbox{[}$\,$\mbox{]}}]{src,  }\item[{byte \mbox{[}$\,$\mbox{]}}]{dst }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+\begin{DoxyCode}
+464                                                  \{
+465         \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i=1,n=dst.length ; i<n ; i+=8) \{
+466             \textcolor{keywordtype}{int} val = src[1 + (i >> 3)] & 255;
+467             \textcolor{keywordflow}{switch}(n-i) \{
+468                 \textcolor{keywordflow}{default}: dst[i+7] = (byte)((val     ) & 1);
+469                 \textcolor{keywordflow}{case} 7:  dst[i+6] = (byte)((val >> 1) & 1);
+470                 \textcolor{keywordflow}{case} 6:  dst[i+5] = (byte)((val >> 2) & 1);
+471                 \textcolor{keywordflow}{case} 5:  dst[i+4] = (byte)((val >> 3) & 1);
+472                 \textcolor{keywordflow}{case} 4:  dst[i+3] = (byte)((val >> 4) & 1);
+473                 \textcolor{keywordflow}{case} 3:  dst[i+2] = (byte)((val >> 5) & 1);
+474                 \textcolor{keywordflow}{case} 2:  dst[i+1] = (byte)((val >> 6) & 1);
+475                 \textcolor{keywordflow}{case} 1:  dst[i  ] = (byte)((val >> 7)    );
+476             \}
+477         \}
+478     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_aa9bfde671b761d559aaa785457ec5c94}\label{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_aa9bfde671b761d559aaa785457ec5c94}} 
+\index{org\+::newdawn\+::slick\+::opengl\+::\+P\+N\+G\+Decoder@{org\+::newdawn\+::slick\+::opengl\+::\+P\+N\+G\+Decoder}!expand2@{expand2}}
+\index{expand2@{expand2}!org\+::newdawn\+::slick\+::opengl\+::\+P\+N\+G\+Decoder@{org\+::newdawn\+::slick\+::opengl\+::\+P\+N\+G\+Decoder}}
+\subsubsection{\texorpdfstring{expand2()}{expand2()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+opengl.\+P\+N\+G\+Decoder.\+expand2 (\begin{DoxyParamCaption}\item[{byte \mbox{[}$\,$\mbox{]}}]{src,  }\item[{byte \mbox{[}$\,$\mbox{]}}]{dst }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+\begin{DoxyCode}
+452                                                  \{
+453         \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i=1,n=dst.length ; i<n ; i+=4) \{
+454             \textcolor{keywordtype}{int} val = src[1 + (i >> 2)] & 255;
+455             \textcolor{keywordflow}{switch}(n-i) \{
+456                 \textcolor{keywordflow}{default}: dst[i+3] = (byte)((val     ) & 3);
+457                 \textcolor{keywordflow}{case} 3:  dst[i+2] = (byte)((val >> 2) & 3);
+458                 \textcolor{keywordflow}{case} 2:  dst[i+1] = (byte)((val >> 4) & 3);
+459                 \textcolor{keywordflow}{case} 1:  dst[i  ] = (byte)((val >> 6)    );
+460             \}
+461         \}
+462     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_a0ca84983943d5e90a184e0ac16833d4e}\label{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_a0ca84983943d5e90a184e0ac16833d4e}} 
+\index{org\+::newdawn\+::slick\+::opengl\+::\+P\+N\+G\+Decoder@{org\+::newdawn\+::slick\+::opengl\+::\+P\+N\+G\+Decoder}!expand4@{expand4}}
+\index{expand4@{expand4}!org\+::newdawn\+::slick\+::opengl\+::\+P\+N\+G\+Decoder@{org\+::newdawn\+::slick\+::opengl\+::\+P\+N\+G\+Decoder}}
+\subsubsection{\texorpdfstring{expand4()}{expand4()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+opengl.\+P\+N\+G\+Decoder.\+expand4 (\begin{DoxyParamCaption}\item[{byte \mbox{[}$\,$\mbox{]}}]{src,  }\item[{byte \mbox{[}$\,$\mbox{]}}]{dst }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+\begin{DoxyCode}
+442                                                  \{
+443         \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i=1,n=dst.length ; i<n ; i+=2) \{
+444             \textcolor{keywordtype}{int} val = src[1 + (i >> 1)] & 255;
+445             \textcolor{keywordflow}{switch}(n-i) \{
+446                 \textcolor{keywordflow}{default}: dst[i+1] = (byte)(val & 15);
+447                 \textcolor{keywordflow}{case} 1:  dst[i  ] = (byte)(val >> 4);
+448             \}
+449         \}
+450     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_a1972b2918da3ba0701b1f3694ae31e60}\label{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_a1972b2918da3ba0701b1f3694ae31e60}} 
+\index{org\+::newdawn\+::slick\+::opengl\+::\+P\+N\+G\+Decoder@{org\+::newdawn\+::slick\+::opengl\+::\+P\+N\+G\+Decoder}!get\+Height@{get\+Height}}
+\index{get\+Height@{get\+Height}!org\+::newdawn\+::slick\+::opengl\+::\+P\+N\+G\+Decoder@{org\+::newdawn\+::slick\+::opengl\+::\+P\+N\+G\+Decoder}}
+\subsubsection{\texorpdfstring{get\+Height()}{getHeight()}}
+{\footnotesize\ttfamily int org.\+newdawn.\+slick.\+opengl.\+P\+N\+G\+Decoder.\+get\+Height (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+139                            \{
+140         \textcolor{keywordflow}{return} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_a35019c52c6ce77631e6659743577854b}{height}};
+141     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_a7e93e69b81d656bbec28e6971898657e}\label{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_a7e93e69b81d656bbec28e6971898657e}} 
+\index{org\+::newdawn\+::slick\+::opengl\+::\+P\+N\+G\+Decoder@{org\+::newdawn\+::slick\+::opengl\+::\+P\+N\+G\+Decoder}!get\+Width@{get\+Width}}
+\index{get\+Width@{get\+Width}!org\+::newdawn\+::slick\+::opengl\+::\+P\+N\+G\+Decoder@{org\+::newdawn\+::slick\+::opengl\+::\+P\+N\+G\+Decoder}}
+\subsubsection{\texorpdfstring{get\+Width()}{getWidth()}}
+{\footnotesize\ttfamily int org.\+newdawn.\+slick.\+opengl.\+P\+N\+G\+Decoder.\+get\+Width (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+143                           \{
+144         \textcolor{keywordflow}{return} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_ab0fa613df8a9dadfcc722e8f038f3bc1}{width}};
+145     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_a03f7526d0ae6a3cbedb4cd9745462330}\label{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_a03f7526d0ae6a3cbedb4cd9745462330}} 
+\index{org\+::newdawn\+::slick\+::opengl\+::\+P\+N\+G\+Decoder@{org\+::newdawn\+::slick\+::opengl\+::\+P\+N\+G\+Decoder}!has\+Alpha@{has\+Alpha}}
+\index{has\+Alpha@{has\+Alpha}!org\+::newdawn\+::slick\+::opengl\+::\+P\+N\+G\+Decoder@{org\+::newdawn\+::slick\+::opengl\+::\+P\+N\+G\+Decoder}}
+\subsubsection{\texorpdfstring{has\+Alpha()}{hasAlpha()}}
+{\footnotesize\ttfamily boolean org.\+newdawn.\+slick.\+opengl.\+P\+N\+G\+Decoder.\+has\+Alpha (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+147                               \{
+148         \textcolor{keywordflow}{return} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_a01a4bfaf3046e4b6eb944e7d48eb31c3}{colorType}} == \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_a96c509f7243118174cd8d25c50314713}{COLOR\_TRUEALPHA}} ||
+149                 \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_a273b1728dfd1158eb001f98fd4255a58}{paletteA}} != null || \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_ad3c546cf013c0c8bdee84a07fdc08389}{transPixel}} != null;
+150     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_a04a6ed620e9af0576fc0ba93d418f017}\label{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_a04a6ed620e9af0576fc0ba93d418f017}} 
+\index{org\+::newdawn\+::slick\+::opengl\+::\+P\+N\+G\+Decoder@{org\+::newdawn\+::slick\+::opengl\+::\+P\+N\+G\+Decoder}!is\+R\+GB@{is\+R\+GB}}
+\index{is\+R\+GB@{is\+R\+GB}!org\+::newdawn\+::slick\+::opengl\+::\+P\+N\+G\+Decoder@{org\+::newdawn\+::slick\+::opengl\+::\+P\+N\+G\+Decoder}}
+\subsubsection{\texorpdfstring{is\+R\+G\+B()}{isRGB()}}
+{\footnotesize\ttfamily boolean org.\+newdawn.\+slick.\+opengl.\+P\+N\+G\+Decoder.\+is\+R\+GB (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+152                            \{
+153         \textcolor{keywordflow}{return} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_a01a4bfaf3046e4b6eb944e7d48eb31c3}{colorType}} == \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_a96c509f7243118174cd8d25c50314713}{COLOR\_TRUEALPHA}} ||
+154                 \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_a01a4bfaf3046e4b6eb944e7d48eb31c3}{colorType}} == \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_a54e437f6d3679769a356402f7c86b763}{COLOR\_TRUECOLOR}} ||
+155                 \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_a01a4bfaf3046e4b6eb944e7d48eb31c3}{colorType}} == \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_a229a5a6a3ed73b28cbbe7d36bc78c4d1}{COLOR\_INDEXED}};
+156     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_afa7ad43df0de182a0fd27c9f6ca52e3d}\label{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_afa7ad43df0de182a0fd27c9f6ca52e3d}} 
+\index{org\+::newdawn\+::slick\+::opengl\+::\+P\+N\+G\+Decoder@{org\+::newdawn\+::slick\+::opengl\+::\+P\+N\+G\+Decoder}!open\+Chunk@{open\+Chunk}}
+\index{open\+Chunk@{open\+Chunk}!org\+::newdawn\+::slick\+::opengl\+::\+P\+N\+G\+Decoder@{org\+::newdawn\+::slick\+::opengl\+::\+P\+N\+G\+Decoder}}
+\subsubsection{\texorpdfstring{open\+Chunk()}{openChunk()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+opengl.\+P\+N\+G\+Decoder.\+open\+Chunk (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws I\+O\+Exception\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+\begin{DoxyCode}
+661                                                 \{
+662         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_ac1389015c67277f87b9f759e6095f2c0}{readFully}}(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_ae205f9222586a2bc01a8a240c5c210ad}{buffer}}, 0, 8);
+663         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_aeb23de3eba5a6505ee1dd16094f78d7b}{chunkLength}} = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_a6a9d36165b993d86112b50b6d2026f63}{readInt}}(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_ae205f9222586a2bc01a8a240c5c210ad}{buffer}}, 0);
+664         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_a7d32000e77c9c28ad7751acf96da46ec}{chunkType}} = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_a6a9d36165b993d86112b50b6d2026f63}{readInt}}(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_ae205f9222586a2bc01a8a240c5c210ad}{buffer}}, 4);
+665         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_a7304a0a75ad5821c3f8241a829705b42}{chunkRemaining}} = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_aeb23de3eba5a6505ee1dd16094f78d7b}{chunkLength}};
+666         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_acd77b774496f8b2d08303022c6227ff1}{crc}}.reset();
+667         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_acd77b774496f8b2d08303022c6227ff1}{crc}}.update(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_ae205f9222586a2bc01a8a240c5c210ad}{buffer}}, 4, 4);   \textcolor{comment}{// only chunkType}
+668     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_ada9398fa248ff898e0c5195419026495}\label{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_ada9398fa248ff898e0c5195419026495}} 
+\index{org\+::newdawn\+::slick\+::opengl\+::\+P\+N\+G\+Decoder@{org\+::newdawn\+::slick\+::opengl\+::\+P\+N\+G\+Decoder}!open\+Chunk@{open\+Chunk}}
+\index{open\+Chunk@{open\+Chunk}!org\+::newdawn\+::slick\+::opengl\+::\+P\+N\+G\+Decoder@{org\+::newdawn\+::slick\+::opengl\+::\+P\+N\+G\+Decoder}}
+\subsubsection{\texorpdfstring{open\+Chunk()}{openChunk()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+opengl.\+P\+N\+G\+Decoder.\+open\+Chunk (\begin{DoxyParamCaption}\item[{int}]{expected }\end{DoxyParamCaption}) throws I\+O\+Exception\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+\begin{DoxyCode}
+670                                                             \{
+671         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_afa7ad43df0de182a0fd27c9f6ca52e3d}{openChunk}}();
+672         \textcolor{keywordflow}{if}(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_a7d32000e77c9c28ad7751acf96da46ec}{chunkType}} != expected) \{
+673             \textcolor{keywordflow}{throw} \textcolor{keyword}{new} IOException(\textcolor{stringliteral}{"Expected chunk: "} + Integer.toHexString(expected));
+674         \}
+675     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_ae2014f14734121c02f976b1fe4733c2d}\label{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_ae2014f14734121c02f976b1fe4733c2d}} 
+\index{org\+::newdawn\+::slick\+::opengl\+::\+P\+N\+G\+Decoder@{org\+::newdawn\+::slick\+::opengl\+::\+P\+N\+G\+Decoder}!read\+Chunk@{read\+Chunk}}
+\index{read\+Chunk@{read\+Chunk}!org\+::newdawn\+::slick\+::opengl\+::\+P\+N\+G\+Decoder@{org\+::newdawn\+::slick\+::opengl\+::\+P\+N\+G\+Decoder}}
+\subsubsection{\texorpdfstring{read\+Chunk()}{readChunk()}}
+{\footnotesize\ttfamily int org.\+newdawn.\+slick.\+opengl.\+P\+N\+G\+Decoder.\+read\+Chunk (\begin{DoxyParamCaption}\item[{byte \mbox{[}$\,$\mbox{]}}]{buffer,  }\item[{int}]{offset,  }\item[{int}]{length }\end{DoxyParamCaption}) throws I\+O\+Exception\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+\begin{DoxyCode}
+683                                                                                     \{
+684         \textcolor{keywordflow}{if}(length > \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_a7304a0a75ad5821c3f8241a829705b42}{chunkRemaining}}) \{
+685             length = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_a7304a0a75ad5821c3f8241a829705b42}{chunkRemaining}};
+686         \}
+687         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_ac1389015c67277f87b9f759e6095f2c0}{readFully}}(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_ae205f9222586a2bc01a8a240c5c210ad}{buffer}}, offset, length);
+688         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_acd77b774496f8b2d08303022c6227ff1}{crc}}.update(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_ae205f9222586a2bc01a8a240c5c210ad}{buffer}}, offset, length);
+689         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_a7304a0a75ad5821c3f8241a829705b42}{chunkRemaining}} -= length;
+690         \textcolor{keywordflow}{return} length;
+691     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_a1c0d026f9bcd6134e9847846c8eb393e}\label{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_a1c0d026f9bcd6134e9847846c8eb393e}} 
+\index{org\+::newdawn\+::slick\+::opengl\+::\+P\+N\+G\+Decoder@{org\+::newdawn\+::slick\+::opengl\+::\+P\+N\+G\+Decoder}!read\+Chunk\+Unzip@{read\+Chunk\+Unzip}}
+\index{read\+Chunk\+Unzip@{read\+Chunk\+Unzip}!org\+::newdawn\+::slick\+::opengl\+::\+P\+N\+G\+Decoder@{org\+::newdawn\+::slick\+::opengl\+::\+P\+N\+G\+Decoder}}
+\subsubsection{\texorpdfstring{read\+Chunk\+Unzip()}{readChunkUnzip()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+opengl.\+P\+N\+G\+Decoder.\+read\+Chunk\+Unzip (\begin{DoxyParamCaption}\item[{Inflater}]{inflater,  }\item[{byte \mbox{[}$\,$\mbox{]}}]{buffer,  }\item[{int}]{offset,  }\item[{int}]{length }\end{DoxyParamCaption}) throws I\+O\+Exception\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+\begin{DoxyCode}
+702                                                                                                            
+        \{
+703         \textcolor{keywordflow}{try} \{
+704             \textcolor{keywordflow}{do} \{
+705                 \textcolor{keywordtype}{int} read = inflater.inflate(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_ae205f9222586a2bc01a8a240c5c210ad}{buffer}}, offset, length);
+706                 \textcolor{keywordflow}{if}(read <= 0) \{
+707                     \textcolor{keywordflow}{if}(inflater.finished()) \{
+708                         \textcolor{keywordflow}{throw} \textcolor{keyword}{new} EOFException();
+709                     \}
+710                     \textcolor{keywordflow}{if}(inflater.needsInput()) \{
+711                         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_a041df9ceb129f2b773de08dff8899a28}{refillInflater}}(inflater);
+712                     \} \textcolor{keywordflow}{else} \{
+713                         \textcolor{keywordflow}{throw} \textcolor{keyword}{new} IOException(\textcolor{stringliteral}{"Can't inflate "} + length + \textcolor{stringliteral}{" bytes"});
+714                     \}
+715                 \} \textcolor{keywordflow}{else} \{
+716                     offset += read;
+717                     length -= read;
+718                 \}
+719             \} \textcolor{keywordflow}{while}(length > 0);
+720         \} \textcolor{keywordflow}{catch} (DataFormatException ex) \{
+721             \textcolor{keywordflow}{throw} (IOException)(\textcolor{keyword}{new} IOException(\textcolor{stringliteral}{"inflate error"}).initCause(ex));
+722         \}
+723     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_ac1389015c67277f87b9f759e6095f2c0}\label{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_ac1389015c67277f87b9f759e6095f2c0}} 
+\index{org\+::newdawn\+::slick\+::opengl\+::\+P\+N\+G\+Decoder@{org\+::newdawn\+::slick\+::opengl\+::\+P\+N\+G\+Decoder}!read\+Fully@{read\+Fully}}
+\index{read\+Fully@{read\+Fully}!org\+::newdawn\+::slick\+::opengl\+::\+P\+N\+G\+Decoder@{org\+::newdawn\+::slick\+::opengl\+::\+P\+N\+G\+Decoder}}
+\subsubsection{\texorpdfstring{read\+Fully()}{readFully()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+opengl.\+P\+N\+G\+Decoder.\+read\+Fully (\begin{DoxyParamCaption}\item[{byte \mbox{[}$\,$\mbox{]}}]{buffer,  }\item[{int}]{offset,  }\item[{int}]{length }\end{DoxyParamCaption}) throws I\+O\+Exception\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+\begin{DoxyCode}
+725                                                                                      \{
+726         \textcolor{keywordflow}{do} \{
+727             \textcolor{keywordtype}{int} read = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_a5714583b8e4e668d86f45065cda6e20b}{input}}.read(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_ae205f9222586a2bc01a8a240c5c210ad}{buffer}}, offset, length);
+728             \textcolor{keywordflow}{if}(read < 0) \{
+729                 \textcolor{keywordflow}{throw} \textcolor{keyword}{new} EOFException();
+730             \}
+731             offset += read;
+732             length -= read;
+733         \} \textcolor{keywordflow}{while}(length > 0);
+734     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_a9e7ed3f5ce8aaf724e3da6bdd9db1bd1}\label{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_a9e7ed3f5ce8aaf724e3da6bdd9db1bd1}} 
+\index{org\+::newdawn\+::slick\+::opengl\+::\+P\+N\+G\+Decoder@{org\+::newdawn\+::slick\+::opengl\+::\+P\+N\+G\+Decoder}!read\+I\+H\+DR@{read\+I\+H\+DR}}
+\index{read\+I\+H\+DR@{read\+I\+H\+DR}!org\+::newdawn\+::slick\+::opengl\+::\+P\+N\+G\+Decoder@{org\+::newdawn\+::slick\+::opengl\+::\+P\+N\+G\+Decoder}}
+\subsubsection{\texorpdfstring{read\+I\+H\+D\+R()}{readIHDR()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+opengl.\+P\+N\+G\+Decoder.\+read\+I\+H\+DR (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws I\+O\+Exception\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+\begin{DoxyCode}
+550                                                \{
+551         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_aef71cafb11cec0a888ba705be7211e48}{checkChunkLength}}(13);
+552         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_ae2014f14734121c02f976b1fe4733c2d}{readChunk}}(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_ae205f9222586a2bc01a8a240c5c210ad}{buffer}}, 0, 13);
+553         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_ab0fa613df8a9dadfcc722e8f038f3bc1}{width}} = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_a6a9d36165b993d86112b50b6d2026f63}{readInt}}(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_ae205f9222586a2bc01a8a240c5c210ad}{buffer}}, 0);
+554         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_a35019c52c6ce77631e6659743577854b}{height}} = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_a6a9d36165b993d86112b50b6d2026f63}{readInt}}(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_ae205f9222586a2bc01a8a240c5c210ad}{buffer}}, 4);
+555         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_a9fb5dab97411b31b55f38a801fe28d20}{bitdepth}} = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_ae205f9222586a2bc01a8a240c5c210ad}{buffer}}[8] & 255;
+556         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_a01a4bfaf3046e4b6eb944e7d48eb31c3}{colorType}} = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_ae205f9222586a2bc01a8a240c5c210ad}{buffer}}[9] & 255;
+557         
+558         \textcolor{keywordflow}{switch} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_a01a4bfaf3046e4b6eb944e7d48eb31c3}{colorType}}) \{
+559         \textcolor{keywordflow}{case} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_aecc7370603e0c3bb70b761be9be7fd18}{COLOR\_GREYSCALE}}:
+560             \textcolor{keywordflow}{if}(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_a9fb5dab97411b31b55f38a801fe28d20}{bitdepth}} != 8) \{
+561                 \textcolor{keywordflow}{throw} \textcolor{keyword}{new} IOException(\textcolor{stringliteral}{"Unsupported bit depth: "} + \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_a9fb5dab97411b31b55f38a801fe28d20}{bitdepth}});
+562             \}
+563             \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_aa7dcf351689be9279548b306395ee1a8}{bytesPerPixel}} = 1;
+564             \textcolor{keywordflow}{break};
+565         \textcolor{keywordflow}{case} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_a0d509a1ae82f19ef4da0c9f2e0671d77}{COLOR\_GREYALPHA}}:
+566             \textcolor{keywordflow}{if}(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_a9fb5dab97411b31b55f38a801fe28d20}{bitdepth}} != 8) \{
+567                 \textcolor{keywordflow}{throw} \textcolor{keyword}{new} IOException(\textcolor{stringliteral}{"Unsupported bit depth: "} + \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_a9fb5dab97411b31b55f38a801fe28d20}{bitdepth}});
+568             \}
+569             \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_aa7dcf351689be9279548b306395ee1a8}{bytesPerPixel}} = 2;
+570             \textcolor{keywordflow}{break};
+571         \textcolor{keywordflow}{case} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_a54e437f6d3679769a356402f7c86b763}{COLOR\_TRUECOLOR}}:
+572             \textcolor{keywordflow}{if}(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_a9fb5dab97411b31b55f38a801fe28d20}{bitdepth}} != 8) \{
+573                 \textcolor{keywordflow}{throw} \textcolor{keyword}{new} IOException(\textcolor{stringliteral}{"Unsupported bit depth: "} + \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_a9fb5dab97411b31b55f38a801fe28d20}{bitdepth}});
+574             \}
+575             \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_aa7dcf351689be9279548b306395ee1a8}{bytesPerPixel}} = 3;
+576             \textcolor{keywordflow}{break};
+577         \textcolor{keywordflow}{case} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_a96c509f7243118174cd8d25c50314713}{COLOR\_TRUEALPHA}}:
+578             \textcolor{keywordflow}{if}(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_a9fb5dab97411b31b55f38a801fe28d20}{bitdepth}} != 8) \{
+579                 \textcolor{keywordflow}{throw} \textcolor{keyword}{new} IOException(\textcolor{stringliteral}{"Unsupported bit depth: "} + \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_a9fb5dab97411b31b55f38a801fe28d20}{bitdepth}});
+580             \}
+581             \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_aa7dcf351689be9279548b306395ee1a8}{bytesPerPixel}} = 4;
+582             \textcolor{keywordflow}{break};
+583         \textcolor{keywordflow}{case} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_a229a5a6a3ed73b28cbbe7d36bc78c4d1}{COLOR\_INDEXED}}:
+584             \textcolor{keywordflow}{switch}(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_a9fb5dab97411b31b55f38a801fe28d20}{bitdepth}}) \{
+585             \textcolor{keywordflow}{case} 8:
+586             \textcolor{keywordflow}{case} 4:
+587             \textcolor{keywordflow}{case} 2:
+588             \textcolor{keywordflow}{case} 1:
+589                 \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_aa7dcf351689be9279548b306395ee1a8}{bytesPerPixel}} = 1;
+590                 \textcolor{keywordflow}{break};
+591             \textcolor{keywordflow}{default}:
+592                 \textcolor{keywordflow}{throw} \textcolor{keyword}{new} IOException(\textcolor{stringliteral}{"Unsupported bit depth: "} + \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_a9fb5dab97411b31b55f38a801fe28d20}{bitdepth}});
+593             \}
+594             \textcolor{keywordflow}{break};
+595         \textcolor{keywordflow}{default}:
+596             \textcolor{keywordflow}{throw} \textcolor{keyword}{new} IOException(\textcolor{stringliteral}{"unsupported color format: "} + \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_a01a4bfaf3046e4b6eb944e7d48eb31c3}{colorType}});
+597         \}
+598         
+599         \textcolor{keywordflow}{if}(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_ae205f9222586a2bc01a8a240c5c210ad}{buffer}}[10] != 0) \{
+600             \textcolor{keywordflow}{throw} \textcolor{keyword}{new} IOException(\textcolor{stringliteral}{"unsupported compression method"});
+601         \}
+602         \textcolor{keywordflow}{if}(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_ae205f9222586a2bc01a8a240c5c210ad}{buffer}}[11] != 0) \{
+603             \textcolor{keywordflow}{throw} \textcolor{keyword}{new} IOException(\textcolor{stringliteral}{"unsupported filtering method"});
+604         \}
+605         \textcolor{keywordflow}{if}(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_ae205f9222586a2bc01a8a240c5c210ad}{buffer}}[12] != 0) \{
+606             \textcolor{keywordflow}{throw} \textcolor{keyword}{new} IOException(\textcolor{stringliteral}{"unsupported interlace method"});
+607         \}
+608     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_a6a9d36165b993d86112b50b6d2026f63}\label{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_a6a9d36165b993d86112b50b6d2026f63}} 
+\index{org\+::newdawn\+::slick\+::opengl\+::\+P\+N\+G\+Decoder@{org\+::newdawn\+::slick\+::opengl\+::\+P\+N\+G\+Decoder}!read\+Int@{read\+Int}}
+\index{read\+Int@{read\+Int}!org\+::newdawn\+::slick\+::opengl\+::\+P\+N\+G\+Decoder@{org\+::newdawn\+::slick\+::opengl\+::\+P\+N\+G\+Decoder}}
+\subsubsection{\texorpdfstring{read\+Int()}{readInt()}}
+{\footnotesize\ttfamily int org.\+newdawn.\+slick.\+opengl.\+P\+N\+G\+Decoder.\+read\+Int (\begin{DoxyParamCaption}\item[{byte \mbox{[}$\,$\mbox{]}}]{buffer,  }\item[{int}]{offset }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+\begin{DoxyCode}
+736                                                    \{
+737         \textcolor{keywordflow}{return}
+738                 ((\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_ae205f9222586a2bc01a8a240c5c210ad}{buffer}}[offset  ]      ) << 24) |
+739                 ((\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_ae205f9222586a2bc01a8a240c5c210ad}{buffer}}[offset+1] & 255) << 16) |
+740                 ((\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_ae205f9222586a2bc01a8a240c5c210ad}{buffer}}[offset+2] & 255) <<  8) |
+741                 ((\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_ae205f9222586a2bc01a8a240c5c210ad}{buffer}}[offset+3] & 255)      );
+742     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_ab43622729c487fd442e6cbd9fcd7e1ed}\label{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_ab43622729c487fd442e6cbd9fcd7e1ed}} 
+\index{org\+::newdawn\+::slick\+::opengl\+::\+P\+N\+G\+Decoder@{org\+::newdawn\+::slick\+::opengl\+::\+P\+N\+G\+Decoder}!read\+P\+L\+TE@{read\+P\+L\+TE}}
+\index{read\+P\+L\+TE@{read\+P\+L\+TE}!org\+::newdawn\+::slick\+::opengl\+::\+P\+N\+G\+Decoder@{org\+::newdawn\+::slick\+::opengl\+::\+P\+N\+G\+Decoder}}
+\subsubsection{\texorpdfstring{read\+P\+L\+T\+E()}{readPLTE()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+opengl.\+P\+N\+G\+Decoder.\+read\+P\+L\+TE (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws I\+O\+Exception\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+\begin{DoxyCode}
+610                                                \{
+611         \textcolor{keywordtype}{int} paletteEntries = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_aeb23de3eba5a6505ee1dd16094f78d7b}{chunkLength}} / 3;
+612         \textcolor{keywordflow}{if}(paletteEntries < 1 || paletteEntries > 256 || (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_aeb23de3eba5a6505ee1dd16094f78d7b}{chunkLength}} % 3) != 0) \{
+613             \textcolor{keywordflow}{throw} \textcolor{keyword}{new} IOException(\textcolor{stringliteral}{"PLTE chunk has wrong length"});
+614         \}
+615         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_ad65d46461f9f8df68a6b5551d56d8479}{palette}} = \textcolor{keyword}{new} byte[paletteEntries*3];
+616         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_ae2014f14734121c02f976b1fe4733c2d}{readChunk}}(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_ad65d46461f9f8df68a6b5551d56d8479}{palette}}, 0, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_ad65d46461f9f8df68a6b5551d56d8479}{palette}}.length);
+617     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_a4f69d28cdeb7cbd83b4b6dfef7662e48}\label{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_a4f69d28cdeb7cbd83b4b6dfef7662e48}} 
+\index{org\+::newdawn\+::slick\+::opengl\+::\+P\+N\+G\+Decoder@{org\+::newdawn\+::slick\+::opengl\+::\+P\+N\+G\+Decoder}!readt\+R\+NS@{readt\+R\+NS}}
+\index{readt\+R\+NS@{readt\+R\+NS}!org\+::newdawn\+::slick\+::opengl\+::\+P\+N\+G\+Decoder@{org\+::newdawn\+::slick\+::opengl\+::\+P\+N\+G\+Decoder}}
+\subsubsection{\texorpdfstring{readt\+R\+N\+S()}{readtRNS()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+opengl.\+P\+N\+G\+Decoder.\+readt\+R\+NS (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws I\+O\+Exception\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+\begin{DoxyCode}
+619                                                \{
+620         \textcolor{keywordflow}{switch} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_a01a4bfaf3046e4b6eb944e7d48eb31c3}{colorType}}) \{
+621         \textcolor{keywordflow}{case} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_aecc7370603e0c3bb70b761be9be7fd18}{COLOR\_GREYSCALE}}:
+622             \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_aef71cafb11cec0a888ba705be7211e48}{checkChunkLength}}(2);
+623             \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_ad3c546cf013c0c8bdee84a07fdc08389}{transPixel}} = \textcolor{keyword}{new} byte[2];
+624             \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_ae2014f14734121c02f976b1fe4733c2d}{readChunk}}(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_ad3c546cf013c0c8bdee84a07fdc08389}{transPixel}}, 0, 2);
+625             \textcolor{keywordflow}{break};
+626         \textcolor{keywordflow}{case} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_a54e437f6d3679769a356402f7c86b763}{COLOR\_TRUECOLOR}}:
+627             \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_aef71cafb11cec0a888ba705be7211e48}{checkChunkLength}}(6);
+628             \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_ad3c546cf013c0c8bdee84a07fdc08389}{transPixel}} = \textcolor{keyword}{new} byte[6];
+629             \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_ae2014f14734121c02f976b1fe4733c2d}{readChunk}}(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_ad3c546cf013c0c8bdee84a07fdc08389}{transPixel}}, 0, 6);
+630             \textcolor{keywordflow}{break};
+631         \textcolor{keywordflow}{case} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_a229a5a6a3ed73b28cbbe7d36bc78c4d1}{COLOR\_INDEXED}}:
+632             \textcolor{keywordflow}{if}(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_ad65d46461f9f8df68a6b5551d56d8479}{palette}} == null) \{
+633                 \textcolor{keywordflow}{throw} \textcolor{keyword}{new} IOException(\textcolor{stringliteral}{"tRNS chunk without PLTE chunk"});
+634             \}
+635             \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_a273b1728dfd1158eb001f98fd4255a58}{paletteA}} = \textcolor{keyword}{new} byte[\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_ad65d46461f9f8df68a6b5551d56d8479}{palette}}.length/3];
+636             Arrays.fill(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_a273b1728dfd1158eb001f98fd4255a58}{paletteA}}, (byte)0xFF);
+637             \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_ae2014f14734121c02f976b1fe4733c2d}{readChunk}}(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_a273b1728dfd1158eb001f98fd4255a58}{paletteA}}, 0, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_a273b1728dfd1158eb001f98fd4255a58}{paletteA}}.length);
+638             \textcolor{keywordflow}{break};
+639         \textcolor{keywordflow}{default}:
+640             \textcolor{comment}{// just ignore it}
+641         \}
+642     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_a041df9ceb129f2b773de08dff8899a28}\label{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_a041df9ceb129f2b773de08dff8899a28}} 
+\index{org\+::newdawn\+::slick\+::opengl\+::\+P\+N\+G\+Decoder@{org\+::newdawn\+::slick\+::opengl\+::\+P\+N\+G\+Decoder}!refill\+Inflater@{refill\+Inflater}}
+\index{refill\+Inflater@{refill\+Inflater}!org\+::newdawn\+::slick\+::opengl\+::\+P\+N\+G\+Decoder@{org\+::newdawn\+::slick\+::opengl\+::\+P\+N\+G\+Decoder}}
+\subsubsection{\texorpdfstring{refill\+Inflater()}{refillInflater()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+opengl.\+P\+N\+G\+Decoder.\+refill\+Inflater (\begin{DoxyParamCaption}\item[{Inflater}]{inflater }\end{DoxyParamCaption}) throws I\+O\+Exception\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+\begin{DoxyCode}
+693                                                                       \{
+694         \textcolor{keywordflow}{while}(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_a7304a0a75ad5821c3f8241a829705b42}{chunkRemaining}} == 0) \{
+695             \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_a8be80afb9e66943952de1e7d429303ac}{closeChunk}}();
+696             \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_afa7ad43df0de182a0fd27c9f6ca52e3d}{openChunk}}(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_a99571bca75a4f458cb1113006aa99075}{IDAT}});
+697         \}
+698         \textcolor{keywordtype}{int} read = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_ae2014f14734121c02f976b1fe4733c2d}{readChunk}}(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_ae205f9222586a2bc01a8a240c5c210ad}{buffer}}, 0, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_ae205f9222586a2bc01a8a240c5c210ad}{buffer}}.length);
+699         inflater.setInput(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_ae205f9222586a2bc01a8a240c5c210ad}{buffer}}, 0, read);
+700     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_a40dd58180327dca560b33952f36a70c4}\label{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_a40dd58180327dca560b33952f36a70c4}} 
+\index{org\+::newdawn\+::slick\+::opengl\+::\+P\+N\+G\+Decoder@{org\+::newdawn\+::slick\+::opengl\+::\+P\+N\+G\+Decoder}!skip@{skip}}
+\index{skip@{skip}!org\+::newdawn\+::slick\+::opengl\+::\+P\+N\+G\+Decoder@{org\+::newdawn\+::slick\+::opengl\+::\+P\+N\+G\+Decoder}}
+\subsubsection{\texorpdfstring{skip()}{skip()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+opengl.\+P\+N\+G\+Decoder.\+skip (\begin{DoxyParamCaption}\item[{long}]{amount }\end{DoxyParamCaption}) throws I\+O\+Exception\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+\begin{DoxyCode}
+744                                                       \{
+745         \textcolor{keywordflow}{while}(amount > 0) \{
+746             \textcolor{keywordtype}{long} skipped = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_a5714583b8e4e668d86f45065cda6e20b}{input}}.skip(amount);
+747             \textcolor{keywordflow}{if}(skipped < 0) \{
+748                 \textcolor{keywordflow}{throw} \textcolor{keyword}{new} EOFException();
+749             \}
+750             amount -= skipped;
+751         \}
+752     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_acc27514c9030ef279d2322f986bde82a}\label{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_acc27514c9030ef279d2322f986bde82a}} 
+\index{org\+::newdawn\+::slick\+::opengl\+::\+P\+N\+G\+Decoder@{org\+::newdawn\+::slick\+::opengl\+::\+P\+N\+G\+Decoder}!unfilter@{unfilter}}
+\index{unfilter@{unfilter}!org\+::newdawn\+::slick\+::opengl\+::\+P\+N\+G\+Decoder@{org\+::newdawn\+::slick\+::opengl\+::\+P\+N\+G\+Decoder}}
+\subsubsection{\texorpdfstring{unfilter()}{unfilter()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+opengl.\+P\+N\+G\+Decoder.\+unfilter (\begin{DoxyParamCaption}\item[{byte \mbox{[}$\,$\mbox{]}}]{cur\+Line,  }\item[{byte \mbox{[}$\,$\mbox{]}}]{prev\+Line }\end{DoxyParamCaption}) throws I\+O\+Exception\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+\begin{DoxyCode}
+480                                                                               \{
+481         \textcolor{keywordflow}{switch} (curLine[0]) \{
+482             \textcolor{keywordflow}{case} 0: \textcolor{comment}{// none}
+483                 \textcolor{keywordflow}{break};
+484             \textcolor{keywordflow}{case} 1:
+485                 \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_a1939d148e672836c11da54bc8edf16fe}{unfilterSub}}(curLine);
+486                 \textcolor{keywordflow}{break};
+487             \textcolor{keywordflow}{case} 2:
+488                 \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_a5d759acd42a8f0e0569c534c1a9bcf55}{unfilterUp}}(curLine, prevLine);
+489                 \textcolor{keywordflow}{break};
+490             \textcolor{keywordflow}{case} 3:
+491                 \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_ae3f43d398d4d8cc4900900e9a3d0adff}{unfilterAverage}}(curLine, prevLine);
+492                 \textcolor{keywordflow}{break};
+493             \textcolor{keywordflow}{case} 4:
+494                 \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_a19d3f37f70d1993a379d3573a5517b66}{unfilterPaeth}}(curLine, prevLine);
+495                 \textcolor{keywordflow}{break};
+496             \textcolor{keywordflow}{default}:
+497                 \textcolor{keywordflow}{throw} \textcolor{keyword}{new} IOException(\textcolor{stringliteral}{"invalide filter type in scanline: "} + curLine[0]);
+498         \}
+499     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_ae3f43d398d4d8cc4900900e9a3d0adff}\label{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_ae3f43d398d4d8cc4900900e9a3d0adff}} 
+\index{org\+::newdawn\+::slick\+::opengl\+::\+P\+N\+G\+Decoder@{org\+::newdawn\+::slick\+::opengl\+::\+P\+N\+G\+Decoder}!unfilter\+Average@{unfilter\+Average}}
+\index{unfilter\+Average@{unfilter\+Average}!org\+::newdawn\+::slick\+::opengl\+::\+P\+N\+G\+Decoder@{org\+::newdawn\+::slick\+::opengl\+::\+P\+N\+G\+Decoder}}
+\subsubsection{\texorpdfstring{unfilter\+Average()}{unfilterAverage()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+opengl.\+P\+N\+G\+Decoder.\+unfilter\+Average (\begin{DoxyParamCaption}\item[{byte \mbox{[}$\,$\mbox{]}}]{cur\+Line,  }\item[{byte \mbox{[}$\,$\mbox{]}}]{prev\+Line }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+\begin{DoxyCode}
+515                                                                   \{
+516         \textcolor{keyword}{final} \textcolor{keywordtype}{int} bpp = this.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_aa7dcf351689be9279548b306395ee1a8}{bytesPerPixel}};
+517         
+518         \textcolor{keywordtype}{int} i;
+519         \textcolor{keywordflow}{for}(i=1 ; i<=bpp ; ++i) \{
+520             curLine[i] += (byte)((prevLine[i] & 0xFF) >>> 1);
+521         \}
+522         \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} n=curLine.length ; i<n ; ++i) \{
+523             curLine[i] += (byte)(((prevLine[i] & 0xFF) + (curLine[i - bpp] & 0xFF)) >>> 1);
+524         \}
+525     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_a19d3f37f70d1993a379d3573a5517b66}\label{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_a19d3f37f70d1993a379d3573a5517b66}} 
+\index{org\+::newdawn\+::slick\+::opengl\+::\+P\+N\+G\+Decoder@{org\+::newdawn\+::slick\+::opengl\+::\+P\+N\+G\+Decoder}!unfilter\+Paeth@{unfilter\+Paeth}}
+\index{unfilter\+Paeth@{unfilter\+Paeth}!org\+::newdawn\+::slick\+::opengl\+::\+P\+N\+G\+Decoder@{org\+::newdawn\+::slick\+::opengl\+::\+P\+N\+G\+Decoder}}
+\subsubsection{\texorpdfstring{unfilter\+Paeth()}{unfilterPaeth()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+opengl.\+P\+N\+G\+Decoder.\+unfilter\+Paeth (\begin{DoxyParamCaption}\item[{byte \mbox{[}$\,$\mbox{]}}]{cur\+Line,  }\item[{byte \mbox{[}$\,$\mbox{]}}]{prev\+Line }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+\begin{DoxyCode}
+527                                                                 \{
+528         \textcolor{keyword}{final} \textcolor{keywordtype}{int} bpp = this.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_aa7dcf351689be9279548b306395ee1a8}{bytesPerPixel}};
+529         
+530         \textcolor{keywordtype}{int} i;
+531         \textcolor{keywordflow}{for}(i=1 ; i<=bpp ; ++i) \{
+532             curLine[i] += prevLine[i];
+533         \}
+534         \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} n=curLine.length ; i<n ; ++i) \{
+535             \textcolor{keywordtype}{int} a = curLine[i - bpp] & 255;
+536             \textcolor{keywordtype}{int} b = prevLine[i] & 255;
+537             \textcolor{keywordtype}{int} c = prevLine[i - bpp] & 255;
+538             \textcolor{keywordtype}{int} p = a + b - c;
+539             \textcolor{keywordtype}{int} \mbox{\hyperlink{namespacepa}{pa}} = p - a; \textcolor{keywordflow}{if}(\mbox{\hyperlink{namespacepa}{pa}} < 0) \mbox{\hyperlink{namespacepa}{pa}} = -\mbox{\hyperlink{namespacepa}{pa}};
+540             \textcolor{keywordtype}{int} pb = p - b; \textcolor{keywordflow}{if}(pb < 0) pb = -pb;
+541             \textcolor{keywordtype}{int} pc = p - c; \textcolor{keywordflow}{if}(pc < 0) pc = -pc;
+542             \textcolor{keywordflow}{if}(\mbox{\hyperlink{namespacepa}{pa}}<=pb && \mbox{\hyperlink{namespacepa}{pa}}<=pc)
+543                 c = a;
+544             \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(pb<=pc)
+545                 c = b;
+546             curLine[i] += (byte)c;
+547         \}
+548     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_a1939d148e672836c11da54bc8edf16fe}\label{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_a1939d148e672836c11da54bc8edf16fe}} 
+\index{org\+::newdawn\+::slick\+::opengl\+::\+P\+N\+G\+Decoder@{org\+::newdawn\+::slick\+::opengl\+::\+P\+N\+G\+Decoder}!unfilter\+Sub@{unfilter\+Sub}}
+\index{unfilter\+Sub@{unfilter\+Sub}!org\+::newdawn\+::slick\+::opengl\+::\+P\+N\+G\+Decoder@{org\+::newdawn\+::slick\+::opengl\+::\+P\+N\+G\+Decoder}}
+\subsubsection{\texorpdfstring{unfilter\+Sub()}{unfilterSub()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+opengl.\+P\+N\+G\+Decoder.\+unfilter\+Sub (\begin{DoxyParamCaption}\item[{byte \mbox{[}$\,$\mbox{]}}]{cur\+Line }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+\begin{DoxyCode}
+501                                              \{
+502         \textcolor{keyword}{final} \textcolor{keywordtype}{int} bpp = this.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_aa7dcf351689be9279548b306395ee1a8}{bytesPerPixel}};
+503         \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i=bpp+1,n=curLine.length ; i<n ; ++i) \{
+504             curLine[i] += curLine[i-bpp];
+505         \}
+506     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_a5d759acd42a8f0e0569c534c1a9bcf55}\label{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_a5d759acd42a8f0e0569c534c1a9bcf55}} 
+\index{org\+::newdawn\+::slick\+::opengl\+::\+P\+N\+G\+Decoder@{org\+::newdawn\+::slick\+::opengl\+::\+P\+N\+G\+Decoder}!unfilter\+Up@{unfilter\+Up}}
+\index{unfilter\+Up@{unfilter\+Up}!org\+::newdawn\+::slick\+::opengl\+::\+P\+N\+G\+Decoder@{org\+::newdawn\+::slick\+::opengl\+::\+P\+N\+G\+Decoder}}
+\subsubsection{\texorpdfstring{unfilter\+Up()}{unfilterUp()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+opengl.\+P\+N\+G\+Decoder.\+unfilter\+Up (\begin{DoxyParamCaption}\item[{byte \mbox{[}$\,$\mbox{]}}]{cur\+Line,  }\item[{byte \mbox{[}$\,$\mbox{]}}]{prev\+Line }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+\begin{DoxyCode}
+508                                                              \{
+509         \textcolor{keyword}{final} \textcolor{keywordtype}{int} bpp = this.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_aa7dcf351689be9279548b306395ee1a8}{bytesPerPixel}};
+510         \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i=1,n=curLine.length ; i<n ; ++i) \{
+511             curLine[i] += prevLine[i];
+512         \}
+513     \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_a3df8efe1a627d4c86526e3d74d13e350}\label{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_a3df8efe1a627d4c86526e3d74d13e350}} 
+\index{org\+::newdawn\+::slick\+::opengl\+::\+P\+N\+G\+Decoder@{org\+::newdawn\+::slick\+::opengl\+::\+P\+N\+G\+Decoder}!A\+B\+GR@{A\+B\+GR}}
+\index{A\+B\+GR@{A\+B\+GR}!org\+::newdawn\+::slick\+::opengl\+::\+P\+N\+G\+Decoder@{org\+::newdawn\+::slick\+::opengl\+::\+P\+N\+G\+Decoder}}
+\subsubsection{\texorpdfstring{A\+B\+GR}{ABGR}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_1_1_format}{Format}} org.\+newdawn.\+slick.\+opengl.\+P\+N\+G\+Decoder.\+A\+B\+GR = new \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_1_1_format}{Format}}(4, true)\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_a2616963cd5d05e3a659cf81363629062}\label{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_a2616963cd5d05e3a659cf81363629062}} 
+\index{org\+::newdawn\+::slick\+::opengl\+::\+P\+N\+G\+Decoder@{org\+::newdawn\+::slick\+::opengl\+::\+P\+N\+G\+Decoder}!A\+L\+P\+HA@{A\+L\+P\+HA}}
+\index{A\+L\+P\+HA@{A\+L\+P\+HA}!org\+::newdawn\+::slick\+::opengl\+::\+P\+N\+G\+Decoder@{org\+::newdawn\+::slick\+::opengl\+::\+P\+N\+G\+Decoder}}
+\subsubsection{\texorpdfstring{A\+L\+P\+HA}{ALPHA}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_1_1_format}{Format}} org.\+newdawn.\+slick.\+opengl.\+P\+N\+G\+Decoder.\+A\+L\+P\+HA = new \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_1_1_format}{Format}}(1, true)\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_a306c7b9315ccc42ea3e8c73642de3dcc}\label{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_a306c7b9315ccc42ea3e8c73642de3dcc}} 
+\index{org\+::newdawn\+::slick\+::opengl\+::\+P\+N\+G\+Decoder@{org\+::newdawn\+::slick\+::opengl\+::\+P\+N\+G\+Decoder}!B\+G\+RA@{B\+G\+RA}}
+\index{B\+G\+RA@{B\+G\+RA}!org\+::newdawn\+::slick\+::opengl\+::\+P\+N\+G\+Decoder@{org\+::newdawn\+::slick\+::opengl\+::\+P\+N\+G\+Decoder}}
+\subsubsection{\texorpdfstring{B\+G\+RA}{BGRA}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_1_1_format}{Format}} org.\+newdawn.\+slick.\+opengl.\+P\+N\+G\+Decoder.\+B\+G\+RA = new \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_1_1_format}{Format}}(4, true)\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_a9fb5dab97411b31b55f38a801fe28d20}\label{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_a9fb5dab97411b31b55f38a801fe28d20}} 
+\index{org\+::newdawn\+::slick\+::opengl\+::\+P\+N\+G\+Decoder@{org\+::newdawn\+::slick\+::opengl\+::\+P\+N\+G\+Decoder}!bitdepth@{bitdepth}}
+\index{bitdepth@{bitdepth}!org\+::newdawn\+::slick\+::opengl\+::\+P\+N\+G\+Decoder@{org\+::newdawn\+::slick\+::opengl\+::\+P\+N\+G\+Decoder}}
+\subsubsection{\texorpdfstring{bitdepth}{bitdepth}}
+{\footnotesize\ttfamily int org.\+newdawn.\+slick.\+opengl.\+P\+N\+G\+Decoder.\+bitdepth\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_ae205f9222586a2bc01a8a240c5c210ad}\label{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_ae205f9222586a2bc01a8a240c5c210ad}} 
+\index{org\+::newdawn\+::slick\+::opengl\+::\+P\+N\+G\+Decoder@{org\+::newdawn\+::slick\+::opengl\+::\+P\+N\+G\+Decoder}!buffer@{buffer}}
+\index{buffer@{buffer}!org\+::newdawn\+::slick\+::opengl\+::\+P\+N\+G\+Decoder@{org\+::newdawn\+::slick\+::opengl\+::\+P\+N\+G\+Decoder}}
+\subsubsection{\texorpdfstring{buffer}{buffer}}
+{\footnotesize\ttfamily final byte \mbox{[}$\,$\mbox{]} org.\+newdawn.\+slick.\+opengl.\+P\+N\+G\+Decoder.\+buffer\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_aa7dcf351689be9279548b306395ee1a8}\label{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_aa7dcf351689be9279548b306395ee1a8}} 
+\index{org\+::newdawn\+::slick\+::opengl\+::\+P\+N\+G\+Decoder@{org\+::newdawn\+::slick\+::opengl\+::\+P\+N\+G\+Decoder}!bytes\+Per\+Pixel@{bytes\+Per\+Pixel}}
+\index{bytes\+Per\+Pixel@{bytes\+Per\+Pixel}!org\+::newdawn\+::slick\+::opengl\+::\+P\+N\+G\+Decoder@{org\+::newdawn\+::slick\+::opengl\+::\+P\+N\+G\+Decoder}}
+\subsubsection{\texorpdfstring{bytes\+Per\+Pixel}{bytesPerPixel}}
+{\footnotesize\ttfamily int org.\+newdawn.\+slick.\+opengl.\+P\+N\+G\+Decoder.\+bytes\+Per\+Pixel\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_aeb23de3eba5a6505ee1dd16094f78d7b}\label{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_aeb23de3eba5a6505ee1dd16094f78d7b}} 
+\index{org\+::newdawn\+::slick\+::opengl\+::\+P\+N\+G\+Decoder@{org\+::newdawn\+::slick\+::opengl\+::\+P\+N\+G\+Decoder}!chunk\+Length@{chunk\+Length}}
+\index{chunk\+Length@{chunk\+Length}!org\+::newdawn\+::slick\+::opengl\+::\+P\+N\+G\+Decoder@{org\+::newdawn\+::slick\+::opengl\+::\+P\+N\+G\+Decoder}}
+\subsubsection{\texorpdfstring{chunk\+Length}{chunkLength}}
+{\footnotesize\ttfamily int org.\+newdawn.\+slick.\+opengl.\+P\+N\+G\+Decoder.\+chunk\+Length\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_a7304a0a75ad5821c3f8241a829705b42}\label{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_a7304a0a75ad5821c3f8241a829705b42}} 
+\index{org\+::newdawn\+::slick\+::opengl\+::\+P\+N\+G\+Decoder@{org\+::newdawn\+::slick\+::opengl\+::\+P\+N\+G\+Decoder}!chunk\+Remaining@{chunk\+Remaining}}
+\index{chunk\+Remaining@{chunk\+Remaining}!org\+::newdawn\+::slick\+::opengl\+::\+P\+N\+G\+Decoder@{org\+::newdawn\+::slick\+::opengl\+::\+P\+N\+G\+Decoder}}
+\subsubsection{\texorpdfstring{chunk\+Remaining}{chunkRemaining}}
+{\footnotesize\ttfamily int org.\+newdawn.\+slick.\+opengl.\+P\+N\+G\+Decoder.\+chunk\+Remaining\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_a7d32000e77c9c28ad7751acf96da46ec}\label{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_a7d32000e77c9c28ad7751acf96da46ec}} 
+\index{org\+::newdawn\+::slick\+::opengl\+::\+P\+N\+G\+Decoder@{org\+::newdawn\+::slick\+::opengl\+::\+P\+N\+G\+Decoder}!chunk\+Type@{chunk\+Type}}
+\index{chunk\+Type@{chunk\+Type}!org\+::newdawn\+::slick\+::opengl\+::\+P\+N\+G\+Decoder@{org\+::newdawn\+::slick\+::opengl\+::\+P\+N\+G\+Decoder}}
+\subsubsection{\texorpdfstring{chunk\+Type}{chunkType}}
+{\footnotesize\ttfamily int org.\+newdawn.\+slick.\+opengl.\+P\+N\+G\+Decoder.\+chunk\+Type\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_a0d509a1ae82f19ef4da0c9f2e0671d77}\label{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_a0d509a1ae82f19ef4da0c9f2e0671d77}} 
+\index{org\+::newdawn\+::slick\+::opengl\+::\+P\+N\+G\+Decoder@{org\+::newdawn\+::slick\+::opengl\+::\+P\+N\+G\+Decoder}!C\+O\+L\+O\+R\+\_\+\+G\+R\+E\+Y\+A\+L\+P\+HA@{C\+O\+L\+O\+R\+\_\+\+G\+R\+E\+Y\+A\+L\+P\+HA}}
+\index{C\+O\+L\+O\+R\+\_\+\+G\+R\+E\+Y\+A\+L\+P\+HA@{C\+O\+L\+O\+R\+\_\+\+G\+R\+E\+Y\+A\+L\+P\+HA}!org\+::newdawn\+::slick\+::opengl\+::\+P\+N\+G\+Decoder@{org\+::newdawn\+::slick\+::opengl\+::\+P\+N\+G\+Decoder}}
+\subsubsection{\texorpdfstring{C\+O\+L\+O\+R\+\_\+\+G\+R\+E\+Y\+A\+L\+P\+HA}{COLOR\_GREYALPHA}}
+{\footnotesize\ttfamily final byte org.\+newdawn.\+slick.\+opengl.\+P\+N\+G\+Decoder.\+C\+O\+L\+O\+R\+\_\+\+G\+R\+E\+Y\+A\+L\+P\+HA = 4\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_aecc7370603e0c3bb70b761be9be7fd18}\label{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_aecc7370603e0c3bb70b761be9be7fd18}} 
+\index{org\+::newdawn\+::slick\+::opengl\+::\+P\+N\+G\+Decoder@{org\+::newdawn\+::slick\+::opengl\+::\+P\+N\+G\+Decoder}!C\+O\+L\+O\+R\+\_\+\+G\+R\+E\+Y\+S\+C\+A\+LE@{C\+O\+L\+O\+R\+\_\+\+G\+R\+E\+Y\+S\+C\+A\+LE}}
+\index{C\+O\+L\+O\+R\+\_\+\+G\+R\+E\+Y\+S\+C\+A\+LE@{C\+O\+L\+O\+R\+\_\+\+G\+R\+E\+Y\+S\+C\+A\+LE}!org\+::newdawn\+::slick\+::opengl\+::\+P\+N\+G\+Decoder@{org\+::newdawn\+::slick\+::opengl\+::\+P\+N\+G\+Decoder}}
+\subsubsection{\texorpdfstring{C\+O\+L\+O\+R\+\_\+\+G\+R\+E\+Y\+S\+C\+A\+LE}{COLOR\_GREYSCALE}}
+{\footnotesize\ttfamily final byte org.\+newdawn.\+slick.\+opengl.\+P\+N\+G\+Decoder.\+C\+O\+L\+O\+R\+\_\+\+G\+R\+E\+Y\+S\+C\+A\+LE = 0\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_a229a5a6a3ed73b28cbbe7d36bc78c4d1}\label{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_a229a5a6a3ed73b28cbbe7d36bc78c4d1}} 
+\index{org\+::newdawn\+::slick\+::opengl\+::\+P\+N\+G\+Decoder@{org\+::newdawn\+::slick\+::opengl\+::\+P\+N\+G\+Decoder}!C\+O\+L\+O\+R\+\_\+\+I\+N\+D\+E\+X\+ED@{C\+O\+L\+O\+R\+\_\+\+I\+N\+D\+E\+X\+ED}}
+\index{C\+O\+L\+O\+R\+\_\+\+I\+N\+D\+E\+X\+ED@{C\+O\+L\+O\+R\+\_\+\+I\+N\+D\+E\+X\+ED}!org\+::newdawn\+::slick\+::opengl\+::\+P\+N\+G\+Decoder@{org\+::newdawn\+::slick\+::opengl\+::\+P\+N\+G\+Decoder}}
+\subsubsection{\texorpdfstring{C\+O\+L\+O\+R\+\_\+\+I\+N\+D\+E\+X\+ED}{COLOR\_INDEXED}}
+{\footnotesize\ttfamily final byte org.\+newdawn.\+slick.\+opengl.\+P\+N\+G\+Decoder.\+C\+O\+L\+O\+R\+\_\+\+I\+N\+D\+E\+X\+ED = 3\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_a96c509f7243118174cd8d25c50314713}\label{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_a96c509f7243118174cd8d25c50314713}} 
+\index{org\+::newdawn\+::slick\+::opengl\+::\+P\+N\+G\+Decoder@{org\+::newdawn\+::slick\+::opengl\+::\+P\+N\+G\+Decoder}!C\+O\+L\+O\+R\+\_\+\+T\+R\+U\+E\+A\+L\+P\+HA@{C\+O\+L\+O\+R\+\_\+\+T\+R\+U\+E\+A\+L\+P\+HA}}
+\index{C\+O\+L\+O\+R\+\_\+\+T\+R\+U\+E\+A\+L\+P\+HA@{C\+O\+L\+O\+R\+\_\+\+T\+R\+U\+E\+A\+L\+P\+HA}!org\+::newdawn\+::slick\+::opengl\+::\+P\+N\+G\+Decoder@{org\+::newdawn\+::slick\+::opengl\+::\+P\+N\+G\+Decoder}}
+\subsubsection{\texorpdfstring{C\+O\+L\+O\+R\+\_\+\+T\+R\+U\+E\+A\+L\+P\+HA}{COLOR\_TRUEALPHA}}
+{\footnotesize\ttfamily final byte org.\+newdawn.\+slick.\+opengl.\+P\+N\+G\+Decoder.\+C\+O\+L\+O\+R\+\_\+\+T\+R\+U\+E\+A\+L\+P\+HA = 6\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_a54e437f6d3679769a356402f7c86b763}\label{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_a54e437f6d3679769a356402f7c86b763}} 
+\index{org\+::newdawn\+::slick\+::opengl\+::\+P\+N\+G\+Decoder@{org\+::newdawn\+::slick\+::opengl\+::\+P\+N\+G\+Decoder}!C\+O\+L\+O\+R\+\_\+\+T\+R\+U\+E\+C\+O\+L\+OR@{C\+O\+L\+O\+R\+\_\+\+T\+R\+U\+E\+C\+O\+L\+OR}}
+\index{C\+O\+L\+O\+R\+\_\+\+T\+R\+U\+E\+C\+O\+L\+OR@{C\+O\+L\+O\+R\+\_\+\+T\+R\+U\+E\+C\+O\+L\+OR}!org\+::newdawn\+::slick\+::opengl\+::\+P\+N\+G\+Decoder@{org\+::newdawn\+::slick\+::opengl\+::\+P\+N\+G\+Decoder}}
+\subsubsection{\texorpdfstring{C\+O\+L\+O\+R\+\_\+\+T\+R\+U\+E\+C\+O\+L\+OR}{COLOR\_TRUECOLOR}}
+{\footnotesize\ttfamily final byte org.\+newdawn.\+slick.\+opengl.\+P\+N\+G\+Decoder.\+C\+O\+L\+O\+R\+\_\+\+T\+R\+U\+E\+C\+O\+L\+OR = 2\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_a01a4bfaf3046e4b6eb944e7d48eb31c3}\label{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_a01a4bfaf3046e4b6eb944e7d48eb31c3}} 
+\index{org\+::newdawn\+::slick\+::opengl\+::\+P\+N\+G\+Decoder@{org\+::newdawn\+::slick\+::opengl\+::\+P\+N\+G\+Decoder}!color\+Type@{color\+Type}}
+\index{color\+Type@{color\+Type}!org\+::newdawn\+::slick\+::opengl\+::\+P\+N\+G\+Decoder@{org\+::newdawn\+::slick\+::opengl\+::\+P\+N\+G\+Decoder}}
+\subsubsection{\texorpdfstring{color\+Type}{colorType}}
+{\footnotesize\ttfamily int org.\+newdawn.\+slick.\+opengl.\+P\+N\+G\+Decoder.\+color\+Type\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_acd77b774496f8b2d08303022c6227ff1}\label{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_acd77b774496f8b2d08303022c6227ff1}} 
+\index{org\+::newdawn\+::slick\+::opengl\+::\+P\+N\+G\+Decoder@{org\+::newdawn\+::slick\+::opengl\+::\+P\+N\+G\+Decoder}!crc@{crc}}
+\index{crc@{crc}!org\+::newdawn\+::slick\+::opengl\+::\+P\+N\+G\+Decoder@{org\+::newdawn\+::slick\+::opengl\+::\+P\+N\+G\+Decoder}}
+\subsubsection{\texorpdfstring{crc}{crc}}
+{\footnotesize\ttfamily final C\+R\+C32 org.\+newdawn.\+slick.\+opengl.\+P\+N\+G\+Decoder.\+crc\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_a35019c52c6ce77631e6659743577854b}\label{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_a35019c52c6ce77631e6659743577854b}} 
+\index{org\+::newdawn\+::slick\+::opengl\+::\+P\+N\+G\+Decoder@{org\+::newdawn\+::slick\+::opengl\+::\+P\+N\+G\+Decoder}!height@{height}}
+\index{height@{height}!org\+::newdawn\+::slick\+::opengl\+::\+P\+N\+G\+Decoder@{org\+::newdawn\+::slick\+::opengl\+::\+P\+N\+G\+Decoder}}
+\subsubsection{\texorpdfstring{height}{height}}
+{\footnotesize\ttfamily int org.\+newdawn.\+slick.\+opengl.\+P\+N\+G\+Decoder.\+height\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_a99571bca75a4f458cb1113006aa99075}\label{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_a99571bca75a4f458cb1113006aa99075}} 
+\index{org\+::newdawn\+::slick\+::opengl\+::\+P\+N\+G\+Decoder@{org\+::newdawn\+::slick\+::opengl\+::\+P\+N\+G\+Decoder}!I\+D\+AT@{I\+D\+AT}}
+\index{I\+D\+AT@{I\+D\+AT}!org\+::newdawn\+::slick\+::opengl\+::\+P\+N\+G\+Decoder@{org\+::newdawn\+::slick\+::opengl\+::\+P\+N\+G\+Decoder}}
+\subsubsection{\texorpdfstring{I\+D\+AT}{IDAT}}
+{\footnotesize\ttfamily final int org.\+newdawn.\+slick.\+opengl.\+P\+N\+G\+Decoder.\+I\+D\+AT = 0x49444154\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_a5cc56faca9b4243d012ae613e31c23da}\label{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_a5cc56faca9b4243d012ae613e31c23da}} 
+\index{org\+::newdawn\+::slick\+::opengl\+::\+P\+N\+G\+Decoder@{org\+::newdawn\+::slick\+::opengl\+::\+P\+N\+G\+Decoder}!I\+E\+ND@{I\+E\+ND}}
+\index{I\+E\+ND@{I\+E\+ND}!org\+::newdawn\+::slick\+::opengl\+::\+P\+N\+G\+Decoder@{org\+::newdawn\+::slick\+::opengl\+::\+P\+N\+G\+Decoder}}
+\subsubsection{\texorpdfstring{I\+E\+ND}{IEND}}
+{\footnotesize\ttfamily final int org.\+newdawn.\+slick.\+opengl.\+P\+N\+G\+Decoder.\+I\+E\+ND = 0x49454\+E44\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_a884520c9bbbbb9c389cf679b1955f23c}\label{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_a884520c9bbbbb9c389cf679b1955f23c}} 
+\index{org\+::newdawn\+::slick\+::opengl\+::\+P\+N\+G\+Decoder@{org\+::newdawn\+::slick\+::opengl\+::\+P\+N\+G\+Decoder}!I\+H\+DR@{I\+H\+DR}}
+\index{I\+H\+DR@{I\+H\+DR}!org\+::newdawn\+::slick\+::opengl\+::\+P\+N\+G\+Decoder@{org\+::newdawn\+::slick\+::opengl\+::\+P\+N\+G\+Decoder}}
+\subsubsection{\texorpdfstring{I\+H\+DR}{IHDR}}
+{\footnotesize\ttfamily final int org.\+newdawn.\+slick.\+opengl.\+P\+N\+G\+Decoder.\+I\+H\+DR = 0x49484452\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_a5714583b8e4e668d86f45065cda6e20b}\label{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_a5714583b8e4e668d86f45065cda6e20b}} 
+\index{org\+::newdawn\+::slick\+::opengl\+::\+P\+N\+G\+Decoder@{org\+::newdawn\+::slick\+::opengl\+::\+P\+N\+G\+Decoder}!input@{input}}
+\index{input@{input}!org\+::newdawn\+::slick\+::opengl\+::\+P\+N\+G\+Decoder@{org\+::newdawn\+::slick\+::opengl\+::\+P\+N\+G\+Decoder}}
+\subsubsection{\texorpdfstring{input}{input}}
+{\footnotesize\ttfamily final Input\+Stream org.\+newdawn.\+slick.\+opengl.\+P\+N\+G\+Decoder.\+input\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_a0ecc59fd1d47827a9c16df0bfbb033d2}\label{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_a0ecc59fd1d47827a9c16df0bfbb033d2}} 
+\index{org\+::newdawn\+::slick\+::opengl\+::\+P\+N\+G\+Decoder@{org\+::newdawn\+::slick\+::opengl\+::\+P\+N\+G\+Decoder}!L\+U\+M\+I\+N\+A\+N\+CE@{L\+U\+M\+I\+N\+A\+N\+CE}}
+\index{L\+U\+M\+I\+N\+A\+N\+CE@{L\+U\+M\+I\+N\+A\+N\+CE}!org\+::newdawn\+::slick\+::opengl\+::\+P\+N\+G\+Decoder@{org\+::newdawn\+::slick\+::opengl\+::\+P\+N\+G\+Decoder}}
+\subsubsection{\texorpdfstring{L\+U\+M\+I\+N\+A\+N\+CE}{LUMINANCE}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_1_1_format}{Format}} org.\+newdawn.\+slick.\+opengl.\+P\+N\+G\+Decoder.\+L\+U\+M\+I\+N\+A\+N\+CE = new \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_1_1_format}{Format}}(1, false)\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_a1bf5eb8cd445b84d0b5a0861648d1ee4}\label{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_a1bf5eb8cd445b84d0b5a0861648d1ee4}} 
+\index{org\+::newdawn\+::slick\+::opengl\+::\+P\+N\+G\+Decoder@{org\+::newdawn\+::slick\+::opengl\+::\+P\+N\+G\+Decoder}!L\+U\+M\+I\+N\+A\+N\+C\+E\+\_\+\+A\+L\+P\+HA@{L\+U\+M\+I\+N\+A\+N\+C\+E\+\_\+\+A\+L\+P\+HA}}
+\index{L\+U\+M\+I\+N\+A\+N\+C\+E\+\_\+\+A\+L\+P\+HA@{L\+U\+M\+I\+N\+A\+N\+C\+E\+\_\+\+A\+L\+P\+HA}!org\+::newdawn\+::slick\+::opengl\+::\+P\+N\+G\+Decoder@{org\+::newdawn\+::slick\+::opengl\+::\+P\+N\+G\+Decoder}}
+\subsubsection{\texorpdfstring{L\+U\+M\+I\+N\+A\+N\+C\+E\+\_\+\+A\+L\+P\+HA}{LUMINANCE\_ALPHA}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_1_1_format}{Format}} org.\+newdawn.\+slick.\+opengl.\+P\+N\+G\+Decoder.\+L\+U\+M\+I\+N\+A\+N\+C\+E\+\_\+\+A\+L\+P\+HA = new \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_1_1_format}{Format}}(2, true)\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_ad65d46461f9f8df68a6b5551d56d8479}\label{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_ad65d46461f9f8df68a6b5551d56d8479}} 
+\index{org\+::newdawn\+::slick\+::opengl\+::\+P\+N\+G\+Decoder@{org\+::newdawn\+::slick\+::opengl\+::\+P\+N\+G\+Decoder}!palette@{palette}}
+\index{palette@{palette}!org\+::newdawn\+::slick\+::opengl\+::\+P\+N\+G\+Decoder@{org\+::newdawn\+::slick\+::opengl\+::\+P\+N\+G\+Decoder}}
+\subsubsection{\texorpdfstring{palette}{palette}}
+{\footnotesize\ttfamily byte \mbox{[}$\,$\mbox{]} org.\+newdawn.\+slick.\+opengl.\+P\+N\+G\+Decoder.\+palette\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_a273b1728dfd1158eb001f98fd4255a58}\label{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_a273b1728dfd1158eb001f98fd4255a58}} 
+\index{org\+::newdawn\+::slick\+::opengl\+::\+P\+N\+G\+Decoder@{org\+::newdawn\+::slick\+::opengl\+::\+P\+N\+G\+Decoder}!paletteA@{paletteA}}
+\index{paletteA@{paletteA}!org\+::newdawn\+::slick\+::opengl\+::\+P\+N\+G\+Decoder@{org\+::newdawn\+::slick\+::opengl\+::\+P\+N\+G\+Decoder}}
+\subsubsection{\texorpdfstring{paletteA}{paletteA}}
+{\footnotesize\ttfamily byte \mbox{[}$\,$\mbox{]} org.\+newdawn.\+slick.\+opengl.\+P\+N\+G\+Decoder.\+paletteA\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_ab0ffecb5ed3291a27538566f8f26aa6e}\label{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_ab0ffecb5ed3291a27538566f8f26aa6e}} 
+\index{org\+::newdawn\+::slick\+::opengl\+::\+P\+N\+G\+Decoder@{org\+::newdawn\+::slick\+::opengl\+::\+P\+N\+G\+Decoder}!P\+L\+TE@{P\+L\+TE}}
+\index{P\+L\+TE@{P\+L\+TE}!org\+::newdawn\+::slick\+::opengl\+::\+P\+N\+G\+Decoder@{org\+::newdawn\+::slick\+::opengl\+::\+P\+N\+G\+Decoder}}
+\subsubsection{\texorpdfstring{P\+L\+TE}{PLTE}}
+{\footnotesize\ttfamily final int org.\+newdawn.\+slick.\+opengl.\+P\+N\+G\+Decoder.\+P\+L\+TE = 0x504\+C5445\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_a47bc282c529d4fd9e913912ee2a7c87f}\label{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_a47bc282c529d4fd9e913912ee2a7c87f}} 
+\index{org\+::newdawn\+::slick\+::opengl\+::\+P\+N\+G\+Decoder@{org\+::newdawn\+::slick\+::opengl\+::\+P\+N\+G\+Decoder}!R\+GB@{R\+GB}}
+\index{R\+GB@{R\+GB}!org\+::newdawn\+::slick\+::opengl\+::\+P\+N\+G\+Decoder@{org\+::newdawn\+::slick\+::opengl\+::\+P\+N\+G\+Decoder}}
+\subsubsection{\texorpdfstring{R\+GB}{RGB}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_1_1_format}{Format}} org.\+newdawn.\+slick.\+opengl.\+P\+N\+G\+Decoder.\+R\+GB = new \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_1_1_format}{Format}}(3, false)\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_a2b0f49c7439fb444549baac99a120bfe}\label{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_a2b0f49c7439fb444549baac99a120bfe}} 
+\index{org\+::newdawn\+::slick\+::opengl\+::\+P\+N\+G\+Decoder@{org\+::newdawn\+::slick\+::opengl\+::\+P\+N\+G\+Decoder}!R\+G\+BA@{R\+G\+BA}}
+\index{R\+G\+BA@{R\+G\+BA}!org\+::newdawn\+::slick\+::opengl\+::\+P\+N\+G\+Decoder@{org\+::newdawn\+::slick\+::opengl\+::\+P\+N\+G\+Decoder}}
+\subsubsection{\texorpdfstring{R\+G\+BA}{RGBA}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_1_1_format}{Format}} org.\+newdawn.\+slick.\+opengl.\+P\+N\+G\+Decoder.\+R\+G\+BA = new \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_1_1_format}{Format}}(4, true)\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_a150f394aab124e6e1fe24130c0ca6879}\label{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_a150f394aab124e6e1fe24130c0ca6879}} 
+\index{org\+::newdawn\+::slick\+::opengl\+::\+P\+N\+G\+Decoder@{org\+::newdawn\+::slick\+::opengl\+::\+P\+N\+G\+Decoder}!S\+I\+G\+N\+A\+T\+U\+RE@{S\+I\+G\+N\+A\+T\+U\+RE}}
+\index{S\+I\+G\+N\+A\+T\+U\+RE@{S\+I\+G\+N\+A\+T\+U\+RE}!org\+::newdawn\+::slick\+::opengl\+::\+P\+N\+G\+Decoder@{org\+::newdawn\+::slick\+::opengl\+::\+P\+N\+G\+Decoder}}
+\subsubsection{\texorpdfstring{S\+I\+G\+N\+A\+T\+U\+RE}{SIGNATURE}}
+{\footnotesize\ttfamily final byte \mbox{[}$\,$\mbox{]} org.\+newdawn.\+slick.\+opengl.\+P\+N\+G\+Decoder.\+S\+I\+G\+N\+A\+T\+U\+RE = \{(byte)137, 80, 78, 71, 13, 10, 26, 10\}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_ad3c546cf013c0c8bdee84a07fdc08389}\label{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_ad3c546cf013c0c8bdee84a07fdc08389}} 
+\index{org\+::newdawn\+::slick\+::opengl\+::\+P\+N\+G\+Decoder@{org\+::newdawn\+::slick\+::opengl\+::\+P\+N\+G\+Decoder}!trans\+Pixel@{trans\+Pixel}}
+\index{trans\+Pixel@{trans\+Pixel}!org\+::newdawn\+::slick\+::opengl\+::\+P\+N\+G\+Decoder@{org\+::newdawn\+::slick\+::opengl\+::\+P\+N\+G\+Decoder}}
+\subsubsection{\texorpdfstring{trans\+Pixel}{transPixel}}
+{\footnotesize\ttfamily byte \mbox{[}$\,$\mbox{]} org.\+newdawn.\+slick.\+opengl.\+P\+N\+G\+Decoder.\+trans\+Pixel\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_a5f97fa38a4d7475be6a390f85ea1550d}\label{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_a5f97fa38a4d7475be6a390f85ea1550d}} 
+\index{org\+::newdawn\+::slick\+::opengl\+::\+P\+N\+G\+Decoder@{org\+::newdawn\+::slick\+::opengl\+::\+P\+N\+G\+Decoder}!t\+R\+NS@{t\+R\+NS}}
+\index{t\+R\+NS@{t\+R\+NS}!org\+::newdawn\+::slick\+::opengl\+::\+P\+N\+G\+Decoder@{org\+::newdawn\+::slick\+::opengl\+::\+P\+N\+G\+Decoder}}
+\subsubsection{\texorpdfstring{t\+R\+NS}{tRNS}}
+{\footnotesize\ttfamily final int org.\+newdawn.\+slick.\+opengl.\+P\+N\+G\+Decoder.\+t\+R\+NS = 0x74524\+E53\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_ab0fa613df8a9dadfcc722e8f038f3bc1}\label{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_p_n_g_decoder_ab0fa613df8a9dadfcc722e8f038f3bc1}} 
+\index{org\+::newdawn\+::slick\+::opengl\+::\+P\+N\+G\+Decoder@{org\+::newdawn\+::slick\+::opengl\+::\+P\+N\+G\+Decoder}!width@{width}}
+\index{width@{width}!org\+::newdawn\+::slick\+::opengl\+::\+P\+N\+G\+Decoder@{org\+::newdawn\+::slick\+::opengl\+::\+P\+N\+G\+Decoder}}
+\subsubsection{\texorpdfstring{width}{width}}
+{\footnotesize\ttfamily int org.\+newdawn.\+slick.\+opengl.\+P\+N\+G\+Decoder.\+width\hspace{0.3cm}{\ttfamily [private]}}
+

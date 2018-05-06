@@ -1,0 +1,121 @@
+\hypertarget{classcms_1_1_j_d_b_c_tenant_d_a_o}{}\section{cms.\+J\+D\+B\+C\+Tenant\+D\+AO Class Reference}
+\label{classcms_1_1_j_d_b_c_tenant_d_a_o}\index{cms.\+J\+D\+B\+C\+Tenant\+D\+AO@{cms.\+J\+D\+B\+C\+Tenant\+D\+AO}}
+Inheritance diagram for cms.\+J\+D\+B\+C\+Tenant\+D\+AO\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classcms_1_1_j_d_b_c_tenant_d_a_o}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classcms_1_1_j_d_b_c_tenant_d_a_o_abb0023657a39a71998bb10663f13da4c}{J\+D\+B\+C\+Tenant\+D\+AO}} (Connection \mbox{\hyperlink{classcms_1_1_j_d_b_c_tenant_d_a_o_a08dc3f2801dc5348c6473632b342d62a}{connection}})
+\item 
+void \mbox{\hyperlink{classcms_1_1_j_d_b_c_tenant_d_a_o_a76c9d02d8ea133d2f38744f15726ace9}{insert}} (\mbox{\hyperlink{classcms_1_1_tenant}{Tenant}} tnt)
+\item 
+List$<$ \mbox{\hyperlink{classcms_1_1_tenant}{Tenant}} $>$ \mbox{\hyperlink{classcms_1_1_j_d_b_c_tenant_d_a_o_ac021642b8b94d054fbdc74cd87b4a98d}{select}} ()
+\end{DoxyCompactItemize}
+\subsection*{Package Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Connection \mbox{\hyperlink{classcms_1_1_j_d_b_c_tenant_d_a_o_a08dc3f2801dc5348c6473632b342d62a}{connection}} = null
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classcms_1_1_j_d_b_c_tenant_d_a_o_abb0023657a39a71998bb10663f13da4c}\label{classcms_1_1_j_d_b_c_tenant_d_a_o_abb0023657a39a71998bb10663f13da4c}} 
+\index{cms\+::\+J\+D\+B\+C\+Tenant\+D\+AO@{cms\+::\+J\+D\+B\+C\+Tenant\+D\+AO}!J\+D\+B\+C\+Tenant\+D\+AO@{J\+D\+B\+C\+Tenant\+D\+AO}}
+\index{J\+D\+B\+C\+Tenant\+D\+AO@{J\+D\+B\+C\+Tenant\+D\+AO}!cms\+::\+J\+D\+B\+C\+Tenant\+D\+AO@{cms\+::\+J\+D\+B\+C\+Tenant\+D\+AO}}
+\subsubsection{\texorpdfstring{J\+D\+B\+C\+Tenant\+D\+A\+O()}{JDBCTenantDAO()}}
+{\footnotesize\ttfamily cms.\+J\+D\+B\+C\+Tenant\+D\+A\+O.\+J\+D\+B\+C\+Tenant\+D\+AO (\begin{DoxyParamCaption}\item[{Connection}]{connection }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+24                                                \{
+25          this.\mbox{\hyperlink{classcms_1_1_j_d_b_c_tenant_d_a_o_a08dc3f2801dc5348c6473632b342d62a}{connection}}=\mbox{\hyperlink{classcms_1_1_j_d_b_c_tenant_d_a_o_a08dc3f2801dc5348c6473632b342d62a}{connection}};
+26     \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classcms_1_1_j_d_b_c_tenant_d_a_o_a76c9d02d8ea133d2f38744f15726ace9}\label{classcms_1_1_j_d_b_c_tenant_d_a_o_a76c9d02d8ea133d2f38744f15726ace9}} 
+\index{cms\+::\+J\+D\+B\+C\+Tenant\+D\+AO@{cms\+::\+J\+D\+B\+C\+Tenant\+D\+AO}!insert@{insert}}
+\index{insert@{insert}!cms\+::\+J\+D\+B\+C\+Tenant\+D\+AO@{cms\+::\+J\+D\+B\+C\+Tenant\+D\+AO}}
+\subsubsection{\texorpdfstring{insert()}{insert()}}
+{\footnotesize\ttfamily void cms.\+J\+D\+B\+C\+Tenant\+D\+A\+O.\+insert (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classcms_1_1_tenant}{Tenant}}}]{tnt }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Implements \mbox{\hyperlink{interfacecms_1_1_tenant_d_a_o_a4c4f436ddf88bf487f1ab639ca383bb6}{cms.\+Tenant\+D\+AO}}.
+
+
+\begin{DoxyCode}
+47                                    \{
+48         \textcolor{keywordflow}{try} \{
+49             PreparedStatement preparedStatement = \mbox{\hyperlink{classcms_1_1_j_d_b_c_tenant_d_a_o_a08dc3f2801dc5348c6473632b342d62a}{connection}}.prepareStatement(\textcolor{stringliteral}{"INSERT INTO
+       cms.Tenant (admin\_id, first\_name,last\_name ,property\_id) VALUES (default , ?, ?, ?)"});
+50             preparedStatement.setString(1,  tnt.getFirst\_name());
+51             preparedStatement.setString(2,  tnt.getLast\_name());
+52             preparedStatement.setInt(3,  tnt.getProperty\_id());
+53             preparedStatement.executeUpdate();
+54             preparedStatement.close();
+55         \} \textcolor{keywordflow}{catch} (SQLException e) \{
+56             \textcolor{comment}{// TODO Auto-generated catch block}
+57             e.printStackTrace();
+58         \}
+59          
+60     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classcms_1_1_j_d_b_c_tenant_d_a_o_ac021642b8b94d054fbdc74cd87b4a98d}\label{classcms_1_1_j_d_b_c_tenant_d_a_o_ac021642b8b94d054fbdc74cd87b4a98d}} 
+\index{cms\+::\+J\+D\+B\+C\+Tenant\+D\+AO@{cms\+::\+J\+D\+B\+C\+Tenant\+D\+AO}!select@{select}}
+\index{select@{select}!cms\+::\+J\+D\+B\+C\+Tenant\+D\+AO@{cms\+::\+J\+D\+B\+C\+Tenant\+D\+AO}}
+\subsubsection{\texorpdfstring{select()}{select()}}
+{\footnotesize\ttfamily List$<$\mbox{\hyperlink{classcms_1_1_tenant}{Tenant}}$>$ cms.\+J\+D\+B\+C\+Tenant\+D\+A\+O.\+select (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Implements \mbox{\hyperlink{interfacecms_1_1_tenant_d_a_o_ab87faa632f84a2592f6f1b9bcb1ef2fe}{cms.\+Tenant\+D\+AO}}.
+
+
+\begin{DoxyCode}
+63                                  \{
+64         List<Tenant> tenants = \textcolor{keyword}{new} LinkedList<>();
+65          \textcolor{keywordflow}{try} \{
+66                 Statement statement = \mbox{\hyperlink{classcms_1_1_j_d_b_c_tenant_d_a_o_a08dc3f2801dc5348c6473632b342d62a}{connection}}.createStatement();
+67                 ResultSet resultSet = statement.executeQuery(\textcolor{stringliteral}{"SELECT * FROM cms.Tenant"});
+68                  
+69                 Tenant tnt = null;
+70                 \textcolor{keywordflow}{while}(resultSet.next())\{
+71                     tnt = \textcolor{keyword}{new} Tenant();
+72                     tnt.setTenant\_id(Integer.parseInt(resultSet.getString(\textcolor{stringliteral}{"tenant\_id"})));
+73                     tnt.setFirst\_name(resultSet.getString(\textcolor{stringliteral}{"first\_name"}));
+74                     tnt.setLast\_name(resultSet.getString(\textcolor{stringliteral}{"last\_name"}));
+75                     tnt.setProperty\_id(Integer.parseInt(resultSet.getString(\textcolor{stringliteral}{"property\_id"})));
+76                      
+77                     tenants.add(tnt);
+78                 \}
+79                 resultSet.close();
+80                 statement.close();
+81                  
+82             \} \textcolor{keywordflow}{catch} (SQLException e) \{
+83                 e.printStackTrace();
+84             \}
+85             \textcolor{keywordtype}{int} i;
+86             i=0;
+87             \textcolor{keywordflow}{while}(i < tenants.size()) \{
+88                     System.out.println(tenants.get(i));
+89                     i++;
+90              \}
+91             \textcolor{comment}{//System.out.println(tenants);}
+92             \textcolor{keywordflow}{return} tenants;
+93     \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classcms_1_1_j_d_b_c_tenant_d_a_o_a08dc3f2801dc5348c6473632b342d62a}\label{classcms_1_1_j_d_b_c_tenant_d_a_o_a08dc3f2801dc5348c6473632b342d62a}} 
+\index{cms\+::\+J\+D\+B\+C\+Tenant\+D\+AO@{cms\+::\+J\+D\+B\+C\+Tenant\+D\+AO}!connection@{connection}}
+\index{connection@{connection}!cms\+::\+J\+D\+B\+C\+Tenant\+D\+AO@{cms\+::\+J\+D\+B\+C\+Tenant\+D\+AO}}
+\subsubsection{\texorpdfstring{connection}{connection}}
+{\footnotesize\ttfamily Connection cms.\+J\+D\+B\+C\+Tenant\+D\+A\+O.\+connection = null\hspace{0.3cm}{\ttfamily [package]}}
+

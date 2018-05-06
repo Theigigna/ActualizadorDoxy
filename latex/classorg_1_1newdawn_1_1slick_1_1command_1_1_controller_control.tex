@@ -1,0 +1,171 @@
+\hypertarget{classorg_1_1newdawn_1_1slick_1_1command_1_1_controller_control}{}\section{org.\+newdawn.\+slick.\+command.\+Controller\+Control Class Reference}
+\label{classorg_1_1newdawn_1_1slick_1_1command_1_1_controller_control}\index{org.\+newdawn.\+slick.\+command.\+Controller\+Control@{org.\+newdawn.\+slick.\+command.\+Controller\+Control}}
+Inheritance diagram for org.\+newdawn.\+slick.\+command.\+Controller\+Control\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.514970cm]{classorg_1_1newdawn_1_1slick_1_1command_1_1_controller_control}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+boolean \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1command_1_1_controller_control_acfe105999ec655c1e74ae103d439c9fd}{equals}} (Object o)
+\item 
+int \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1command_1_1_controller_control_a39f49615766d263e781442f9b553694a}{hash\+Code}} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1command_1_1_controller_control_adf8bbe383d714ea06a61632b6b7e250c}{Controller\+Control}} (int \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1command_1_1_controller_control_a4372c7c9a9aa160ea43f48dc27b1ad40}{controller\+Number}}, int \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1command_1_1_controller_control_abd69f401973385e8f882097235fcda38}{event}}, int \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1command_1_1_controller_control_ad8d48f8cc2889d5360de6dc2202203f4}{button}})
+\end{DoxyCompactItemize}
+\subsection*{Static Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static final int \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1command_1_1_controller_control_a0e2e21a7d85dd11ac52ce6bba40e3260}{B\+U\+T\+T\+O\+N\+\_\+\+E\+V\+E\+NT}} = 0
+\item 
+static final int \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1command_1_1_controller_control_a6ab45f44c82328eec0129ec6449d0fd8}{L\+E\+F\+T\+\_\+\+E\+V\+E\+NT}} = 1
+\item 
+static final int \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1command_1_1_controller_control_a62b7d89e02ab3846e5a38dbd5d8da751}{R\+I\+G\+H\+T\+\_\+\+E\+V\+E\+NT}} = 2
+\item 
+static final int \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1command_1_1_controller_control_ae540186bc6a893c019894143082ed376}{U\+P\+\_\+\+E\+V\+E\+NT}} = 3
+\item 
+static final int \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1command_1_1_controller_control_a8bb2b5bc9aec486088eda6e6f925c06d}{D\+O\+W\+N\+\_\+\+E\+V\+E\+NT}} = 4
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1command_1_1_controller_control_abd69f401973385e8f882097235fcda38}{event}}
+\item 
+int \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1command_1_1_controller_control_ad8d48f8cc2889d5360de6dc2202203f4}{button}}
+\item 
+int \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1command_1_1_controller_control_a4372c7c9a9aa160ea43f48dc27b1ad40}{controller\+Number}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A control describing input provided from a controller. This allows controls to be mapped to game pad inputs.
+
+\begin{DoxyAuthor}{Author}
+joverton 
+\end{DoxyAuthor}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1command_1_1_controller_control_adf8bbe383d714ea06a61632b6b7e250c}\label{classorg_1_1newdawn_1_1slick_1_1command_1_1_controller_control_adf8bbe383d714ea06a61632b6b7e250c}} 
+\index{org\+::newdawn\+::slick\+::command\+::\+Controller\+Control@{org\+::newdawn\+::slick\+::command\+::\+Controller\+Control}!Controller\+Control@{Controller\+Control}}
+\index{Controller\+Control@{Controller\+Control}!org\+::newdawn\+::slick\+::command\+::\+Controller\+Control@{org\+::newdawn\+::slick\+::command\+::\+Controller\+Control}}
+\subsubsection{\texorpdfstring{Controller\+Control()}{ControllerControl()}}
+{\footnotesize\ttfamily org.\+newdawn.\+slick.\+command.\+Controller\+Control.\+Controller\+Control (\begin{DoxyParamCaption}\item[{int}]{controller\+Number,  }\item[{int}]{event,  }\item[{int}]{button }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+Create a new controller control
+
+
+\begin{DoxyParams}{Parameters}
+{\em controller\+Number} & The index of the controller to react to \\
+\hline
+{\em event} & The event to react to \\
+\hline
+{\em button} & The button index to react to on a B\+U\+T\+T\+ON event \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+35                                                                              \{
+36         this.\textcolor{keyword}{event} = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1command_1_1_controller_control_abd69f401973385e8f882097235fcda38}{event}};
+37         this.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1command_1_1_controller_control_ad8d48f8cc2889d5360de6dc2202203f4}{button}} = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1command_1_1_controller_control_ad8d48f8cc2889d5360de6dc2202203f4}{button}};
+38         this.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1command_1_1_controller_control_a4372c7c9a9aa160ea43f48dc27b1ad40}{controllerNumber}} = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1command_1_1_controller_control_a4372c7c9a9aa160ea43f48dc27b1ad40}{controllerNumber}};
+39     \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1command_1_1_controller_control_acfe105999ec655c1e74ae103d439c9fd}\label{classorg_1_1newdawn_1_1slick_1_1command_1_1_controller_control_acfe105999ec655c1e74ae103d439c9fd}} 
+\index{org\+::newdawn\+::slick\+::command\+::\+Controller\+Control@{org\+::newdawn\+::slick\+::command\+::\+Controller\+Control}!equals@{equals}}
+\index{equals@{equals}!org\+::newdawn\+::slick\+::command\+::\+Controller\+Control@{org\+::newdawn\+::slick\+::command\+::\+Controller\+Control}}
+\subsubsection{\texorpdfstring{equals()}{equals()}}
+{\footnotesize\ttfamily boolean org.\+newdawn.\+slick.\+command.\+Controller\+Control.\+equals (\begin{DoxyParamCaption}\item[{Object}]{o }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxySeeAlso}{See also}
+java.\+lang.\+Object\+::equals(java.\+lang.\+Object) 
+\end{DoxySeeAlso}
+
+\begin{DoxyCode}
+44                                     \{
+45         \textcolor{keywordflow}{if}(o == null)
+46             \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+47         \textcolor{keywordflow}{if}(!(o instanceof \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1command_1_1_controller_control_adf8bbe383d714ea06a61632b6b7e250c}{ControllerControl}}))
+48             \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+49         
+50         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1command_1_1_controller_control_adf8bbe383d714ea06a61632b6b7e250c}{ControllerControl}} c = (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1command_1_1_controller_control_adf8bbe383d714ea06a61632b6b7e250c}{ControllerControl}})o;
+51         
+52         \textcolor{keywordflow}{return} c.controllerNumber == \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1command_1_1_controller_control_a4372c7c9a9aa160ea43f48dc27b1ad40}{controllerNumber}} && c.event == \textcolor{keyword}{event} && c.button == 
+      \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1command_1_1_controller_control_ad8d48f8cc2889d5360de6dc2202203f4}{button}};
+53     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1command_1_1_controller_control_a39f49615766d263e781442f9b553694a}\label{classorg_1_1newdawn_1_1slick_1_1command_1_1_controller_control_a39f49615766d263e781442f9b553694a}} 
+\index{org\+::newdawn\+::slick\+::command\+::\+Controller\+Control@{org\+::newdawn\+::slick\+::command\+::\+Controller\+Control}!hash\+Code@{hash\+Code}}
+\index{hash\+Code@{hash\+Code}!org\+::newdawn\+::slick\+::command\+::\+Controller\+Control@{org\+::newdawn\+::slick\+::command\+::\+Controller\+Control}}
+\subsubsection{\texorpdfstring{hash\+Code()}{hashCode()}}
+{\footnotesize\ttfamily int org.\+newdawn.\+slick.\+command.\+Controller\+Control.\+hash\+Code (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxySeeAlso}{See also}
+java.\+lang.\+Object\+::hash\+Code() 
+\end{DoxySeeAlso}
+
+\begin{DoxyCode}
+58                           \{
+59         \textcolor{keywordflow}{return} \textcolor{keyword}{event} + \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1command_1_1_controller_control_ad8d48f8cc2889d5360de6dc2202203f4}{button}} + \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1command_1_1_controller_control_a4372c7c9a9aa160ea43f48dc27b1ad40}{controllerNumber}};
+60     \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1command_1_1_controller_control_ad8d48f8cc2889d5360de6dc2202203f4}\label{classorg_1_1newdawn_1_1slick_1_1command_1_1_controller_control_ad8d48f8cc2889d5360de6dc2202203f4}} 
+\index{org\+::newdawn\+::slick\+::command\+::\+Controller\+Control@{org\+::newdawn\+::slick\+::command\+::\+Controller\+Control}!button@{button}}
+\index{button@{button}!org\+::newdawn\+::slick\+::command\+::\+Controller\+Control@{org\+::newdawn\+::slick\+::command\+::\+Controller\+Control}}
+\subsubsection{\texorpdfstring{button}{button}}
+{\footnotesize\ttfamily int org.\+newdawn.\+slick.\+command.\+Controller\+Control.\+button\hspace{0.3cm}{\ttfamily [private]}}
+
+The index of the button we\textquotesingle{}re waiting for \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1command_1_1_controller_control_a0e2e21a7d85dd11ac52ce6bba40e3260}\label{classorg_1_1newdawn_1_1slick_1_1command_1_1_controller_control_a0e2e21a7d85dd11ac52ce6bba40e3260}} 
+\index{org\+::newdawn\+::slick\+::command\+::\+Controller\+Control@{org\+::newdawn\+::slick\+::command\+::\+Controller\+Control}!B\+U\+T\+T\+O\+N\+\_\+\+E\+V\+E\+NT@{B\+U\+T\+T\+O\+N\+\_\+\+E\+V\+E\+NT}}
+\index{B\+U\+T\+T\+O\+N\+\_\+\+E\+V\+E\+NT@{B\+U\+T\+T\+O\+N\+\_\+\+E\+V\+E\+NT}!org\+::newdawn\+::slick\+::command\+::\+Controller\+Control@{org\+::newdawn\+::slick\+::command\+::\+Controller\+Control}}
+\subsubsection{\texorpdfstring{B\+U\+T\+T\+O\+N\+\_\+\+E\+V\+E\+NT}{BUTTON\_EVENT}}
+{\footnotesize\ttfamily final int org.\+newdawn.\+slick.\+command.\+Controller\+Control.\+B\+U\+T\+T\+O\+N\+\_\+\+E\+V\+E\+NT = 0\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+Indicates a button was pressed \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1command_1_1_controller_control_a4372c7c9a9aa160ea43f48dc27b1ad40}\label{classorg_1_1newdawn_1_1slick_1_1command_1_1_controller_control_a4372c7c9a9aa160ea43f48dc27b1ad40}} 
+\index{org\+::newdawn\+::slick\+::command\+::\+Controller\+Control@{org\+::newdawn\+::slick\+::command\+::\+Controller\+Control}!controller\+Number@{controller\+Number}}
+\index{controller\+Number@{controller\+Number}!org\+::newdawn\+::slick\+::command\+::\+Controller\+Control@{org\+::newdawn\+::slick\+::command\+::\+Controller\+Control}}
+\subsubsection{\texorpdfstring{controller\+Number}{controllerNumber}}
+{\footnotesize\ttfamily int org.\+newdawn.\+slick.\+command.\+Controller\+Control.\+controller\+Number\hspace{0.3cm}{\ttfamily [private]}}
+
+The index of the controller we\textquotesingle{}re waiting on \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1command_1_1_controller_control_a8bb2b5bc9aec486088eda6e6f925c06d}\label{classorg_1_1newdawn_1_1slick_1_1command_1_1_controller_control_a8bb2b5bc9aec486088eda6e6f925c06d}} 
+\index{org\+::newdawn\+::slick\+::command\+::\+Controller\+Control@{org\+::newdawn\+::slick\+::command\+::\+Controller\+Control}!D\+O\+W\+N\+\_\+\+E\+V\+E\+NT@{D\+O\+W\+N\+\_\+\+E\+V\+E\+NT}}
+\index{D\+O\+W\+N\+\_\+\+E\+V\+E\+NT@{D\+O\+W\+N\+\_\+\+E\+V\+E\+NT}!org\+::newdawn\+::slick\+::command\+::\+Controller\+Control@{org\+::newdawn\+::slick\+::command\+::\+Controller\+Control}}
+\subsubsection{\texorpdfstring{D\+O\+W\+N\+\_\+\+E\+V\+E\+NT}{DOWN\_EVENT}}
+{\footnotesize\ttfamily final int org.\+newdawn.\+slick.\+command.\+Controller\+Control.\+D\+O\+W\+N\+\_\+\+E\+V\+E\+NT = 4\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+Indicates down was pressed \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1command_1_1_controller_control_abd69f401973385e8f882097235fcda38}\label{classorg_1_1newdawn_1_1slick_1_1command_1_1_controller_control_abd69f401973385e8f882097235fcda38}} 
+\index{org\+::newdawn\+::slick\+::command\+::\+Controller\+Control@{org\+::newdawn\+::slick\+::command\+::\+Controller\+Control}!event@{event}}
+\index{event@{event}!org\+::newdawn\+::slick\+::command\+::\+Controller\+Control@{org\+::newdawn\+::slick\+::command\+::\+Controller\+Control}}
+\subsubsection{\texorpdfstring{event}{event}}
+{\footnotesize\ttfamily int org.\+newdawn.\+slick.\+command.\+Controller\+Control.\+event\hspace{0.3cm}{\ttfamily [private]}}
+
+The type of event we\textquotesingle{}re looking for \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1command_1_1_controller_control_a6ab45f44c82328eec0129ec6449d0fd8}\label{classorg_1_1newdawn_1_1slick_1_1command_1_1_controller_control_a6ab45f44c82328eec0129ec6449d0fd8}} 
+\index{org\+::newdawn\+::slick\+::command\+::\+Controller\+Control@{org\+::newdawn\+::slick\+::command\+::\+Controller\+Control}!L\+E\+F\+T\+\_\+\+E\+V\+E\+NT@{L\+E\+F\+T\+\_\+\+E\+V\+E\+NT}}
+\index{L\+E\+F\+T\+\_\+\+E\+V\+E\+NT@{L\+E\+F\+T\+\_\+\+E\+V\+E\+NT}!org\+::newdawn\+::slick\+::command\+::\+Controller\+Control@{org\+::newdawn\+::slick\+::command\+::\+Controller\+Control}}
+\subsubsection{\texorpdfstring{L\+E\+F\+T\+\_\+\+E\+V\+E\+NT}{LEFT\_EVENT}}
+{\footnotesize\ttfamily final int org.\+newdawn.\+slick.\+command.\+Controller\+Control.\+L\+E\+F\+T\+\_\+\+E\+V\+E\+NT = 1\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+Indicates left was pressed \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1command_1_1_controller_control_a62b7d89e02ab3846e5a38dbd5d8da751}\label{classorg_1_1newdawn_1_1slick_1_1command_1_1_controller_control_a62b7d89e02ab3846e5a38dbd5d8da751}} 
+\index{org\+::newdawn\+::slick\+::command\+::\+Controller\+Control@{org\+::newdawn\+::slick\+::command\+::\+Controller\+Control}!R\+I\+G\+H\+T\+\_\+\+E\+V\+E\+NT@{R\+I\+G\+H\+T\+\_\+\+E\+V\+E\+NT}}
+\index{R\+I\+G\+H\+T\+\_\+\+E\+V\+E\+NT@{R\+I\+G\+H\+T\+\_\+\+E\+V\+E\+NT}!org\+::newdawn\+::slick\+::command\+::\+Controller\+Control@{org\+::newdawn\+::slick\+::command\+::\+Controller\+Control}}
+\subsubsection{\texorpdfstring{R\+I\+G\+H\+T\+\_\+\+E\+V\+E\+NT}{RIGHT\_EVENT}}
+{\footnotesize\ttfamily final int org.\+newdawn.\+slick.\+command.\+Controller\+Control.\+R\+I\+G\+H\+T\+\_\+\+E\+V\+E\+NT = 2\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+Indicates right was pressed \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1command_1_1_controller_control_ae540186bc6a893c019894143082ed376}\label{classorg_1_1newdawn_1_1slick_1_1command_1_1_controller_control_ae540186bc6a893c019894143082ed376}} 
+\index{org\+::newdawn\+::slick\+::command\+::\+Controller\+Control@{org\+::newdawn\+::slick\+::command\+::\+Controller\+Control}!U\+P\+\_\+\+E\+V\+E\+NT@{U\+P\+\_\+\+E\+V\+E\+NT}}
+\index{U\+P\+\_\+\+E\+V\+E\+NT@{U\+P\+\_\+\+E\+V\+E\+NT}!org\+::newdawn\+::slick\+::command\+::\+Controller\+Control@{org\+::newdawn\+::slick\+::command\+::\+Controller\+Control}}
+\subsubsection{\texorpdfstring{U\+P\+\_\+\+E\+V\+E\+NT}{UP\_EVENT}}
+{\footnotesize\ttfamily final int org.\+newdawn.\+slick.\+command.\+Controller\+Control.\+U\+P\+\_\+\+E\+V\+E\+NT = 3\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+Indicates up was pressed 

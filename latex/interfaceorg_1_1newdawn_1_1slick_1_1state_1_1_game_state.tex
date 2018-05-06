@@ -1,0 +1,173 @@
+\hypertarget{interfaceorg_1_1newdawn_1_1slick_1_1state_1_1_game_state}{}\section{org.\+newdawn.\+slick.\+state.\+Game\+State Interface Reference}
+\label{interfaceorg_1_1newdawn_1_1slick_1_1state_1_1_game_state}\index{org.\+newdawn.\+slick.\+state.\+Game\+State@{org.\+newdawn.\+slick.\+state.\+Game\+State}}
+Inheritance diagram for org.\+newdawn.\+slick.\+state.\+Game\+State\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=10.542636cm]{interfaceorg_1_1newdawn_1_1slick_1_1state_1_1_game_state}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1state_1_1_game_state_a54f2bc6a91feaf0614a5ef19f1d03313}{get\+ID}} ()
+\item 
+void \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1state_1_1_game_state_aa799a369e0fcfe6822d2d586fa6f5bbc}{init}} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_game_container}{Game\+Container}} container, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1_state_based_game}{State\+Based\+Game}} game)  throws Slick\+Exception
+\item 
+void \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1state_1_1_game_state_a065352d2725274c5244cd022f226eb17}{render}} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_game_container}{Game\+Container}} container, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1_state_based_game}{State\+Based\+Game}} game, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_graphics}{Graphics}} g)  throws Slick\+Exception
+\item 
+void \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1state_1_1_game_state_ab5ec3bc37a9bd1eb5679577408c562c1}{update}} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_game_container}{Game\+Container}} container, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1_state_based_game}{State\+Based\+Game}} game, int delta)  throws Slick\+Exception 
+\item 
+void \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1state_1_1_game_state_ad5fc28eca9bed5ca50fffa9adf138884}{enter}} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_game_container}{Game\+Container}} container, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1_state_based_game}{State\+Based\+Game}} game)  throws Slick\+Exception
+\item 
+void \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1state_1_1_game_state_a3198498951e2674dac79b3c81f7af0f0}{leave}} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_game_container}{Game\+Container}} container, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1_state_based_game}{State\+Based\+Game}} game)  throws Slick\+Exception
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A single state building up part of the game. The state include rendering, logic and input handling for the state.
+
+\begin{DoxyAuthor}{Author}
+kevin 
+\end{DoxyAuthor}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{interfaceorg_1_1newdawn_1_1slick_1_1state_1_1_game_state_ad5fc28eca9bed5ca50fffa9adf138884}\label{interfaceorg_1_1newdawn_1_1slick_1_1state_1_1_game_state_ad5fc28eca9bed5ca50fffa9adf138884}} 
+\index{org\+::newdawn\+::slick\+::state\+::\+Game\+State@{org\+::newdawn\+::slick\+::state\+::\+Game\+State}!enter@{enter}}
+\index{enter@{enter}!org\+::newdawn\+::slick\+::state\+::\+Game\+State@{org\+::newdawn\+::slick\+::state\+::\+Game\+State}}
+\subsubsection{\texorpdfstring{enter()}{enter()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+state.\+Game\+State.\+enter (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_game_container}{Game\+Container}}}]{container,  }\item[{\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1_state_based_game}{State\+Based\+Game}}}]{game }\end{DoxyParamCaption}) throws \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_slick_exception}{Slick\+Exception}}}
+
+Notification that we\textquotesingle{}ve entered this game state
+
+
+\begin{DoxyParams}{Parameters}
+{\em container} & The container holding the game \\
+\hline
+{\em game} & The game holding this state \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_slick_exception}{Slick\+Exception}}} & Indicates an internal error that will be reported through the standard framework mechanism \\
+\hline
+\end{DoxyExceptions}
+
+
+Implemented in \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1_basic_game_state_a911b009b86365da17fa6c1814ba2e1b4}{org.\+newdawn.\+slick.\+state.\+Basic\+Game\+State}}.
+
+\mbox{\Hypertarget{interfaceorg_1_1newdawn_1_1slick_1_1state_1_1_game_state_a54f2bc6a91feaf0614a5ef19f1d03313}\label{interfaceorg_1_1newdawn_1_1slick_1_1state_1_1_game_state_a54f2bc6a91feaf0614a5ef19f1d03313}} 
+\index{org\+::newdawn\+::slick\+::state\+::\+Game\+State@{org\+::newdawn\+::slick\+::state\+::\+Game\+State}!get\+ID@{get\+ID}}
+\index{get\+ID@{get\+ID}!org\+::newdawn\+::slick\+::state\+::\+Game\+State@{org\+::newdawn\+::slick\+::state\+::\+Game\+State}}
+\subsubsection{\texorpdfstring{get\+I\+D()}{getID()}}
+{\footnotesize\ttfamily int org.\+newdawn.\+slick.\+state.\+Game\+State.\+get\+ID (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Get the ID of this state
+
+\begin{DoxyReturn}{Returns}
+The game unique ID of this state 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_transition_test_1_1_image_state_a1c34b3d7fa12b658f0d2b1a45cbb5c15}{org.\+newdawn.\+slick.\+tests.\+Transition\+Test.\+Image\+State}}, \mbox{\hyperlink{class_lvl1_a7753633f6de7e33f5049c3621e6cb049}{Lvl1}}, \mbox{\hyperlink{classstates_1_1_game_state_a7d95efb1651c71933e6c3228829cfb33}{states.\+Game\+State}}, \mbox{\hyperlink{classstates_1_1_options_state_a8db11ba0aff06b6e7afe929599640c73}{states.\+Options\+State}}, \mbox{\hyperlink{classstates_1_1_main_menu_adbf17a27cb74ddf0365ca09fd0758b3f}{states.\+Main\+Menu}}, \mbox{\hyperlink{classstates_1_1_final_credits_aa078f93a7bd5ae2194d959f8dded659f}{states.\+Final\+Credits}}, \mbox{\hyperlink{classstates_1_1_select_character_a06b40374019fef5b3f3f88be6a3a8686}{states.\+Select\+Character}}, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1_basic_game_state_a781ce2b3d6dd9b9853adb011f5e75cf7}{org.\+newdawn.\+slick.\+state.\+Basic\+Game\+State}}, \mbox{\hyperlink{classstates_1_1_dead_state_aed9ba185773a1be650305bd8c8d00a20}{states.\+Dead\+State}}, \mbox{\hyperlink{classstates_1_1_init_screen_a7ca8734976ee39db7bd5c72d63e7a9b9}{states.\+Init\+Screen}}, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1states_1_1_test_state2_a953f427bf8f09b723e036ee8eb5b455c}{org.\+newdawn.\+slick.\+tests.\+states.\+Test\+State2}}, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1states_1_1_test_state3_a0cd328d3f5ef77423e54e7e51ff87dab}{org.\+newdawn.\+slick.\+tests.\+states.\+Test\+State3}}, and \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1states_1_1_test_state1_a441e5a49fc651b943a076d76dafa360c}{org.\+newdawn.\+slick.\+tests.\+states.\+Test\+State1}}.
+
+\mbox{\Hypertarget{interfaceorg_1_1newdawn_1_1slick_1_1state_1_1_game_state_aa799a369e0fcfe6822d2d586fa6f5bbc}\label{interfaceorg_1_1newdawn_1_1slick_1_1state_1_1_game_state_aa799a369e0fcfe6822d2d586fa6f5bbc}} 
+\index{org\+::newdawn\+::slick\+::state\+::\+Game\+State@{org\+::newdawn\+::slick\+::state\+::\+Game\+State}!init@{init}}
+\index{init@{init}!org\+::newdawn\+::slick\+::state\+::\+Game\+State@{org\+::newdawn\+::slick\+::state\+::\+Game\+State}}
+\subsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+state.\+Game\+State.\+init (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_game_container}{Game\+Container}}}]{container,  }\item[{\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1_state_based_game}{State\+Based\+Game}}}]{game }\end{DoxyParamCaption}) throws \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_slick_exception}{Slick\+Exception}}}
+
+Initialise the state. It should load any resources it needs at this stage
+
+
+\begin{DoxyParams}{Parameters}
+{\em container} & The container holding the game \\
+\hline
+{\em game} & The game holding this state \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_slick_exception}{Slick\+Exception}}} & Indicates a failure to initialise a resource for this state \\
+\hline
+\end{DoxyExceptions}
+
+
+Implemented in \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_transition_test_1_1_image_state_a34a3137ea1f75dbcb0ebfa2ee40bb13f}{org.\+newdawn.\+slick.\+tests.\+Transition\+Test.\+Image\+State}}, \mbox{\hyperlink{classstates_1_1_game_state_a3fe60e1878feb13a073438a647273343}{states.\+Game\+State}}, \mbox{\hyperlink{classstates_1_1_options_state_a173809c3faa8e5ba70be2b5c3b374899}{states.\+Options\+State}}, \mbox{\hyperlink{classstates_1_1_main_menu_adbc27fa7433e43c8cbb8bb86db82daa1}{states.\+Main\+Menu}}, \mbox{\hyperlink{classstates_1_1_final_credits_acb91cf3998cc530727fb2ca5926c57b1}{states.\+Final\+Credits}}, \mbox{\hyperlink{classstates_1_1_select_character_af65a8be402fe3506397f096d75a8adf2}{states.\+Select\+Character}}, \mbox{\hyperlink{classstates_1_1_dead_state_a0ef2cdab84227544109b871136e629eb}{states.\+Dead\+State}}, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1states_1_1_test_state2_a90fa7ac501b43d077653fbb8e158fe82}{org.\+newdawn.\+slick.\+tests.\+states.\+Test\+State2}}, \mbox{\hyperlink{classstates_1_1_init_screen_aaf434e33dbe6466006ef3693e1140c7c}{states.\+Init\+Screen}}, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1states_1_1_test_state3_ad83c2a6d037e5d73d45f0ffea9d332cc}{org.\+newdawn.\+slick.\+tests.\+states.\+Test\+State3}}, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1states_1_1_test_state1_aac578ad98e5a4631d030cb36d8d421de}{org.\+newdawn.\+slick.\+tests.\+states.\+Test\+State1}}, and \mbox{\hyperlink{class_lvl1_a4b928f9625e0441dae8ed54bfdf479cc}{Lvl1}}.
+
+\mbox{\Hypertarget{interfaceorg_1_1newdawn_1_1slick_1_1state_1_1_game_state_a3198498951e2674dac79b3c81f7af0f0}\label{interfaceorg_1_1newdawn_1_1slick_1_1state_1_1_game_state_a3198498951e2674dac79b3c81f7af0f0}} 
+\index{org\+::newdawn\+::slick\+::state\+::\+Game\+State@{org\+::newdawn\+::slick\+::state\+::\+Game\+State}!leave@{leave}}
+\index{leave@{leave}!org\+::newdawn\+::slick\+::state\+::\+Game\+State@{org\+::newdawn\+::slick\+::state\+::\+Game\+State}}
+\subsubsection{\texorpdfstring{leave()}{leave()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+state.\+Game\+State.\+leave (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_game_container}{Game\+Container}}}]{container,  }\item[{\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1_state_based_game}{State\+Based\+Game}}}]{game }\end{DoxyParamCaption}) throws \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_slick_exception}{Slick\+Exception}}}
+
+Notification that we\textquotesingle{}re leaving this game state
+
+
+\begin{DoxyParams}{Parameters}
+{\em container} & The container holding the game \\
+\hline
+{\em game} & The game holding this state \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_slick_exception}{Slick\+Exception}}} & Indicates an internal error that will be reported through the standard framework mechanism \\
+\hline
+\end{DoxyExceptions}
+
+
+Implemented in \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1_basic_game_state_ae9a3aab0c109cfe3f3aa56d1d6b4f33e}{org.\+newdawn.\+slick.\+state.\+Basic\+Game\+State}}.
+
+\mbox{\Hypertarget{interfaceorg_1_1newdawn_1_1slick_1_1state_1_1_game_state_a065352d2725274c5244cd022f226eb17}\label{interfaceorg_1_1newdawn_1_1slick_1_1state_1_1_game_state_a065352d2725274c5244cd022f226eb17}} 
+\index{org\+::newdawn\+::slick\+::state\+::\+Game\+State@{org\+::newdawn\+::slick\+::state\+::\+Game\+State}!render@{render}}
+\index{render@{render}!org\+::newdawn\+::slick\+::state\+::\+Game\+State@{org\+::newdawn\+::slick\+::state\+::\+Game\+State}}
+\subsubsection{\texorpdfstring{render()}{render()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+state.\+Game\+State.\+render (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_game_container}{Game\+Container}}}]{container,  }\item[{\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1_state_based_game}{State\+Based\+Game}}}]{game,  }\item[{\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_graphics}{Graphics}}}]{g }\end{DoxyParamCaption}) throws \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_slick_exception}{Slick\+Exception}}}
+
+Render this state to the game\textquotesingle{}s graphics context
+
+
+\begin{DoxyParams}{Parameters}
+{\em container} & The container holding the game \\
+\hline
+{\em game} & The game holding this state \\
+\hline
+{\em g} & The graphics context to render to \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_slick_exception}{Slick\+Exception}}} & Indicates a failure to render an artifact \\
+\hline
+\end{DoxyExceptions}
+
+
+Implemented in \mbox{\hyperlink{classstates_1_1_game_state_a9500cae36bcfef4c7002c7086ef9429d}{states.\+Game\+State}}, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_transition_test_1_1_image_state_a618c4ccf2c0b81b9f7d1bf75f94d7325}{org.\+newdawn.\+slick.\+tests.\+Transition\+Test.\+Image\+State}}, \mbox{\hyperlink{classstates_1_1_options_state_a6ef7592783839cec26d0d167d84252cc}{states.\+Options\+State}}, \mbox{\hyperlink{classstates_1_1_select_character_a665bedb1393a574746edaafd0835775e}{states.\+Select\+Character}}, \mbox{\hyperlink{classstates_1_1_main_menu_ad36f80560779b3cf28f76f2a44d640de}{states.\+Main\+Menu}}, \mbox{\hyperlink{classstates_1_1_final_credits_a48f6a5fefe171870bf0d8419f15b791d}{states.\+Final\+Credits}}, \mbox{\hyperlink{classstates_1_1_dead_state_a0c76c2d5c196804e0a0362ef198c6f55}{states.\+Dead\+State}}, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1states_1_1_test_state2_a28f05d3267f4376851287e4696808182}{org.\+newdawn.\+slick.\+tests.\+states.\+Test\+State2}}, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1states_1_1_test_state3_a15616ab5da1b4ec709f5940530906270}{org.\+newdawn.\+slick.\+tests.\+states.\+Test\+State3}}, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1states_1_1_test_state1_a5fbc3543f628bd8f38e9bcd38c019a79}{org.\+newdawn.\+slick.\+tests.\+states.\+Test\+State1}}, \mbox{\hyperlink{classstates_1_1_init_screen_ae9974ec1ac8cad862a037775f8250e75}{states.\+Init\+Screen}}, and \mbox{\hyperlink{class_lvl1_abd2b3619698781c674910dc755908858}{Lvl1}}.
+
+\mbox{\Hypertarget{interfaceorg_1_1newdawn_1_1slick_1_1state_1_1_game_state_ab5ec3bc37a9bd1eb5679577408c562c1}\label{interfaceorg_1_1newdawn_1_1slick_1_1state_1_1_game_state_ab5ec3bc37a9bd1eb5679577408c562c1}} 
+\index{org\+::newdawn\+::slick\+::state\+::\+Game\+State@{org\+::newdawn\+::slick\+::state\+::\+Game\+State}!update@{update}}
+\index{update@{update}!org\+::newdawn\+::slick\+::state\+::\+Game\+State@{org\+::newdawn\+::slick\+::state\+::\+Game\+State}}
+\subsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+state.\+Game\+State.\+update (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_game_container}{Game\+Container}}}]{container,  }\item[{\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1_state_based_game}{State\+Based\+Game}}}]{game,  }\item[{int}]{delta }\end{DoxyParamCaption}) throws \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_slick_exception}{Slick\+Exception}}}
+
+Update the state\textquotesingle{}s logic based on the amount of time thats passed
+
+
+\begin{DoxyParams}{Parameters}
+{\em container} & The container holding the game \\
+\hline
+{\em game} & The game holding this state \\
+\hline
+{\em delta} & The amount of time thats passed in millisecond since last update \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_slick_exception}{Slick\+Exception}}} & Indicates an internal error that will be reported through the standard framework mechanism \\
+\hline
+\end{DoxyExceptions}
+
+
+Implemented in \mbox{\hyperlink{classstates_1_1_game_state_a5b3d7d529435681f3276acf887f137a7}{states.\+Game\+State}}, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_transition_test_1_1_image_state_ab1aa849ffc7219c30355b5f1707f2465}{org.\+newdawn.\+slick.\+tests.\+Transition\+Test.\+Image\+State}}, \mbox{\hyperlink{classstates_1_1_options_state_a9c157deaed29b7efad997acfa6999cd8}{states.\+Options\+State}}, \mbox{\hyperlink{classstates_1_1_select_character_a195f11a8a0d64fb19d044a1535db7629}{states.\+Select\+Character}}, \mbox{\hyperlink{classstates_1_1_main_menu_a83292d85c5e93f8209e65afdfed4d5da}{states.\+Main\+Menu}}, \mbox{\hyperlink{classstates_1_1_final_credits_a4a374cbcb25a79fa9f8590d2c2653df3}{states.\+Final\+Credits}}, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1states_1_1_test_state3_aa709ad4d618f9801bc5016acba14de95}{org.\+newdawn.\+slick.\+tests.\+states.\+Test\+State3}}, \mbox{\hyperlink{classstates_1_1_dead_state_ad8f7baa8e5ae45ef5673ccbdb9ee0229}{states.\+Dead\+State}}, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1states_1_1_test_state2_a1ecb35eb7dcbd78c01c63e36a9be9580}{org.\+newdawn.\+slick.\+tests.\+states.\+Test\+State2}}, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1states_1_1_test_state1_af8ac211813005d2976684963c46986f8}{org.\+newdawn.\+slick.\+tests.\+states.\+Test\+State1}}, \mbox{\hyperlink{classstates_1_1_init_screen_a1da0633b981bad92a90d5f72e56561bd}{states.\+Init\+Screen}}, and \mbox{\hyperlink{class_lvl1_a97ca32ddae9c594af0f2ea4b93096ca2}{Lvl1}}.
+

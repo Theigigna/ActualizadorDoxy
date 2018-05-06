@@ -1,0 +1,62 @@
+\hypertarget{interfaceorg_1_1newdawn_1_1slick_1_1_music_listener}{}\section{org.\+newdawn.\+slick.\+Music\+Listener Interface Reference}
+\label{interfaceorg_1_1newdawn_1_1slick_1_1_music_listener}\index{org.\+newdawn.\+slick.\+Music\+Listener@{org.\+newdawn.\+slick.\+Music\+Listener}}
+Inheritance diagram for org.\+newdawn.\+slick.\+Music\+Listener\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interfaceorg_1_1newdawn_1_1slick_1_1_music_listener}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1_music_listener_af0d830c22b57e9d811d91e0e430b122e}{music\+Ended}} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_music}{Music}} music)
+\item 
+void \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1_music_listener_a29d640b90aae8c8de8a9bfe903eff2e3}{music\+Swapped}} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_music}{Music}} music, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_music}{Music}} new\+Music)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The description of any class needing to recieve notification of changes to music state.
+
+\begin{DoxyAuthor}{Author}
+kevin 
+\end{DoxyAuthor}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{interfaceorg_1_1newdawn_1_1slick_1_1_music_listener_af0d830c22b57e9d811d91e0e430b122e}\label{interfaceorg_1_1newdawn_1_1slick_1_1_music_listener_af0d830c22b57e9d811d91e0e430b122e}} 
+\index{org\+::newdawn\+::slick\+::\+Music\+Listener@{org\+::newdawn\+::slick\+::\+Music\+Listener}!music\+Ended@{music\+Ended}}
+\index{music\+Ended@{music\+Ended}!org\+::newdawn\+::slick\+::\+Music\+Listener@{org\+::newdawn\+::slick\+::\+Music\+Listener}}
+\subsubsection{\texorpdfstring{music\+Ended()}{musicEnded()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+Music\+Listener.\+music\+Ended (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_music}{Music}}}]{music }\end{DoxyParamCaption})}
+
+Notification that a piece of music finished playing
+
+
+\begin{DoxyParams}{Parameters}
+{\em music} & The music that finished playing \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_music_listener_test_aba42fdf23841e22f89ef620b1b30fed1}{org.\+newdawn.\+slick.\+tests.\+Music\+Listener\+Test}}.
+
+\mbox{\Hypertarget{interfaceorg_1_1newdawn_1_1slick_1_1_music_listener_a29d640b90aae8c8de8a9bfe903eff2e3}\label{interfaceorg_1_1newdawn_1_1slick_1_1_music_listener_a29d640b90aae8c8de8a9bfe903eff2e3}} 
+\index{org\+::newdawn\+::slick\+::\+Music\+Listener@{org\+::newdawn\+::slick\+::\+Music\+Listener}!music\+Swapped@{music\+Swapped}}
+\index{music\+Swapped@{music\+Swapped}!org\+::newdawn\+::slick\+::\+Music\+Listener@{org\+::newdawn\+::slick\+::\+Music\+Listener}}
+\subsubsection{\texorpdfstring{music\+Swapped()}{musicSwapped()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+Music\+Listener.\+music\+Swapped (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_music}{Music}}}]{music,  }\item[{\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_music}{Music}}}]{new\+Music }\end{DoxyParamCaption})}
+
+Notification that a piece of music has been swapped for another.
+
+
+\begin{DoxyParams}{Parameters}
+{\em music} & The music that has been swapped out \\
+\hline
+{\em new\+Music} & The new music we\textquotesingle{}re playing \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_music_listener_test_afec2f67261476d841473bf75637cc595}{org.\+newdawn.\+slick.\+tests.\+Music\+Listener\+Test}}.
+

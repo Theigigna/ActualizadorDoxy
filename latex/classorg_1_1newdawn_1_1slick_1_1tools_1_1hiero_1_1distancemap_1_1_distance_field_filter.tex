@@ -1,0 +1,303 @@
+\hypertarget{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1distancemap_1_1_distance_field_filter}{}\section{org.\+newdawn.\+slick.\+tools.\+hiero.\+distancemap.\+Distance\+Field\+Filter Class Reference}
+\label{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1distancemap_1_1_distance_field_filter}\index{org.\+newdawn.\+slick.\+tools.\+hiero.\+distancemap.\+Distance\+Field\+Filter@{org.\+newdawn.\+slick.\+tools.\+hiero.\+distancemap.\+Distance\+Field\+Filter}}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static Buffered\+Image \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1distancemap_1_1_distance_field_filter_aef9a297ea02c10dadb6325423186f832}{process}} (Buffered\+Image in\+Image, int out\+Width, int out\+Height, int scan\+Size, \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_progress_listener}{Progress\+Listener}} listener)
+\item 
+static int \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1distancemap_1_1_distance_field_filter_aa00f09a7d2e13879b1434ed53aea0eef}{progress}} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static float \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1distancemap_1_1_distance_field_filter_a22ed8f3b6d1c38791056d8a063d85452}{separation}} (final float x1, final float y1, final float x2, final float y2)
+\item 
+static float \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1distancemap_1_1_distance_field_filter_a1db145606e5aad5d9d2007a8fe07a19d}{find\+Signed\+Distance}} (final int pointX, final int pointY, Buffered\+Image in\+Image, final int scan\+Width, final int scan\+Height)
+\end{DoxyCompactItemize}
+\subsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static int \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1distancemap_1_1_distance_field_filter_ad0847cf76175019f672f40085ba85d2d}{progress}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A filter to create a distance field from a source image
+
+\begin{DoxyAuthor}{Author}
+Orangy 
+\end{DoxyAuthor}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1distancemap_1_1_distance_field_filter_a1db145606e5aad5d9d2007a8fe07a19d}\label{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1distancemap_1_1_distance_field_filter_a1db145606e5aad5d9d2007a8fe07a19d}} 
+\index{org\+::newdawn\+::slick\+::tools\+::hiero\+::distancemap\+::\+Distance\+Field\+Filter@{org\+::newdawn\+::slick\+::tools\+::hiero\+::distancemap\+::\+Distance\+Field\+Filter}!find\+Signed\+Distance@{find\+Signed\+Distance}}
+\index{find\+Signed\+Distance@{find\+Signed\+Distance}!org\+::newdawn\+::slick\+::tools\+::hiero\+::distancemap\+::\+Distance\+Field\+Filter@{org\+::newdawn\+::slick\+::tools\+::hiero\+::distancemap\+::\+Distance\+Field\+Filter}}
+\subsubsection{\texorpdfstring{find\+Signed\+Distance()}{findSignedDistance()}}
+{\footnotesize\ttfamily static float org.\+newdawn.\+slick.\+tools.\+hiero.\+distancemap.\+Distance\+Field\+Filter.\+find\+Signed\+Distance (\begin{DoxyParamCaption}\item[{final int}]{pointX,  }\item[{final int}]{pointY,  }\item[{Buffered\+Image}]{in\+Image,  }\item[{final int}]{scan\+Width,  }\item[{final int}]{scan\+Height }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}, {\ttfamily [private]}}
+
+Find the signed distance for a given point
+
+
+\begin{DoxyParams}{Parameters}
+{\em pointX} & The x coordinate of the point \\
+\hline
+{\em pointY} & The y coordinate of the point \\
+\hline
+{\em in\+Image} & The image on which the point exists \\
+\hline
+{\em scan\+Width} & The scan line of the image \\
+\hline
+{\em scan\+Height} & The scan height of the image \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The signed distance 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+159     \{
+160         Color baseColour = \textcolor{keyword}{new} Color(inImage.getRGB(pointX, pointY) );
+161         \textcolor{keyword}{final} \textcolor{keywordtype}{boolean} baseIsSolid = baseColour.getRed() > 0;
+162         
+163         \textcolor{keywordtype}{float} closestDistance = Float.MAX\_VALUE;
+164         \textcolor{keywordtype}{boolean} closestValid = \textcolor{keyword}{false};
+165         
+166         \textcolor{keyword}{final} \textcolor{keywordtype}{int} startX = pointX - (scanWidth / 2);
+167         \textcolor{keyword}{final} \textcolor{keywordtype}{int} endX  = startX + scanWidth;
+168         \textcolor{keyword}{final} \textcolor{keywordtype}{int} startY = pointY - (scanHeight / 2);
+169         \textcolor{keyword}{final} \textcolor{keywordtype}{int} endY = startY + scanHeight;
+170         
+171         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} x=startX; x<endX; x++)
+172         \{
+173             \textcolor{keywordflow}{if} (x < 0 || x >= inImage.getWidth())
+174                 \textcolor{keywordflow}{continue};
+175             
+176             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} y=startY; y<endY; y++)
+177             \{           
+178                 \textcolor{keywordflow}{if} (y < 0 || y >= inImage.getWidth())
+179                     \textcolor{keywordflow}{continue};
+180                 
+181                 Color c = \textcolor{keyword}{new} Color(inImage.getRGB(x, y));
+182                 
+183                 \textcolor{keywordflow}{if} (baseIsSolid)
+184                 \{
+185                     \textcolor{keywordflow}{if} (c.getRed() == 0)
+186                     \{
+187                         \textcolor{keyword}{final} \textcolor{keywordtype}{float} dist = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1distancemap_1_1_distance_field_filter_a22ed8f3b6d1c38791056d8a063d85452}{separation}}(pointX, pointY, x, y);
+188                         \textcolor{keywordflow}{if} (dist < closestDistance)
+189                         \{
+190                             closestDistance = dist;
+191                             closestValid = \textcolor{keyword}{true};
+192                         \}
+193                     \}
+194                 \}
+195                 \textcolor{keywordflow}{else}
+196                 \{
+197                     \textcolor{keywordflow}{if} (c.getRed() > 0)
+198                     \{
+199                         \textcolor{keyword}{final} \textcolor{keywordtype}{float} dist = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1distancemap_1_1_distance_field_filter_a22ed8f3b6d1c38791056d8a063d85452}{separation}}(pointX, pointY, x, y);
+200                         \textcolor{keywordflow}{if} (dist < closestDistance)
+201                         \{
+202                             closestDistance = dist;
+203                             closestValid = \textcolor{keyword}{true};
+204                         \}
+205                     \}
+206                 \}
+207             \}
+208         \}
+209         
+210         \textcolor{keywordflow}{if} (baseIsSolid)
+211         \{
+212             \textcolor{keywordflow}{if} (closestValid)
+213                 \textcolor{keywordflow}{return} closestDistance;
+214             \textcolor{keywordflow}{else}
+215                 \textcolor{keywordflow}{return} Float.MAX\_VALUE;
+216         \}
+217         \textcolor{keywordflow}{else}
+218         \{
+219             \textcolor{keywordflow}{if} (closestValid)
+220                 \textcolor{keywordflow}{return} -closestDistance;
+221             \textcolor{keywordflow}{else}
+222                 \textcolor{keywordflow}{return} Float.MIN\_VALUE;
+223         \}
+224     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1distancemap_1_1_distance_field_filter_aef9a297ea02c10dadb6325423186f832}\label{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1distancemap_1_1_distance_field_filter_aef9a297ea02c10dadb6325423186f832}} 
+\index{org\+::newdawn\+::slick\+::tools\+::hiero\+::distancemap\+::\+Distance\+Field\+Filter@{org\+::newdawn\+::slick\+::tools\+::hiero\+::distancemap\+::\+Distance\+Field\+Filter}!process@{process}}
+\index{process@{process}!org\+::newdawn\+::slick\+::tools\+::hiero\+::distancemap\+::\+Distance\+Field\+Filter@{org\+::newdawn\+::slick\+::tools\+::hiero\+::distancemap\+::\+Distance\+Field\+Filter}}
+\subsubsection{\texorpdfstring{process()}{process()}}
+{\footnotesize\ttfamily static Buffered\+Image org.\+newdawn.\+slick.\+tools.\+hiero.\+distancemap.\+Distance\+Field\+Filter.\+process (\begin{DoxyParamCaption}\item[{Buffered\+Image}]{in\+Image,  }\item[{int}]{out\+Width,  }\item[{int}]{out\+Height,  }\item[{int}]{scan\+Size,  }\item[{\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_progress_listener}{Progress\+Listener}}}]{listener }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Process the image into a distance field
+
+
+\begin{DoxyParams}{Parameters}
+{\em in\+Image} & The image to process \\
+\hline
+{\em out\+Width} & The width of the output field \\
+\hline
+{\em out\+Height} & The height of the output field \\
+\hline
+{\em scan\+Size} & The scan size, controls the quality \\
+\hline
+{\em listener} & The lisetener to report progress to \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The distance field image 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+45     \{
+46         System.out.println(\textcolor{stringliteral}{"DistanceFieldFilter.process"});
+47         
+48         BufferedImage outImage = \textcolor{keyword}{new} BufferedImage(outWidth, outHeight, BufferedImage.TYPE\_4BYTE\_ABGR);
+49         \textcolor{keywordtype}{float}[][] distances = \textcolor{keyword}{new} \textcolor{keywordtype}{float}[outImage.getWidth()][outImage.getHeight()];
+50         
+51         \textcolor{keyword}{final} \textcolor{keywordtype}{int} blockWidth = inImage.getWidth() / outImage.getWidth();
+52         \textcolor{keyword}{final} \textcolor{keywordtype}{int} blockHeight = inImage.getHeight() / outImage.getHeight();
+53         
+54         System.out.println(\textcolor{stringliteral}{"Block size is "}+blockWidth+\textcolor{stringliteral}{","}+blockHeight);
+55         
+56         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} x=0; x<outImage.getWidth(); x++)
+57         \{
+58             listener.reportProgress(\textcolor{stringliteral}{"Finding signed distance"}, x, outImage.getWidth());
+59             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} y=0; y<outImage.getHeight(); y++)
+60             \{
+61                 distances[x][y] = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1distancemap_1_1_distance_field_filter_a1db145606e5aad5d9d2007a8fe07a19d}{findSignedDistance}}( (x * blockWidth) + (blockWidth / 2)
+      ,
+62                                                       (y * blockHeight) + (blockHeight / 2),
+63                                                       inImage,
+64                                                       scanSize, scanSize);
+65             \}
+66         \}
+67         
+68         \textcolor{keywordtype}{float} max = 0;
+69         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} x=0; x<distances.length; x++)
+70         \{
+71             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} y=0; y<distances[0].length; y++)
+72             \{
+73                 \textcolor{keyword}{final} \textcolor{keywordtype}{float} d = distances[x][y];
+74                 \textcolor{keywordflow}{if} (d != Float.MAX\_VALUE && d > max)
+75                     max = d;
+76             \}
+77         \}
+78         \textcolor{keywordtype}{float} min = 0;
+79         
+80         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} x=0; x<distances.length; x++)
+81         \{
+82             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} y=0; y<distances[0].length; y++)
+83             \{
+84                 \textcolor{keyword}{final} \textcolor{keywordtype}{float} d = distances[x][y];
+85                 \textcolor{keywordflow}{if} (d != Float.MIN\_VALUE && d < min)
+86                     min = d;
+87             \}
+88         \}
+89         
+90         \textcolor{keyword}{final} \textcolor{keywordtype}{float} range = max - min;
+91         \textcolor{keyword}{final} \textcolor{keywordtype}{float} scale = Math.max( Math.abs(min), Math.abs(max) );
+92         
+93         System.out.println(\textcolor{stringliteral}{"Max: "}+max+\textcolor{stringliteral}{", Min:"}+min+\textcolor{stringliteral}{", Range:"}+range);
+94         
+95         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} x=0; x<distances.length; x++)
+96         \{
+97             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} y=0; y<distances[0].length; y++)
+98             \{
+99                 \textcolor{keywordtype}{float} d = distances[x][y];
+100                 
+101                 \textcolor{keywordflow}{if} (d == Float.MAX\_VALUE)
+102                     d = 1.0f;
+103                 \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (d == Float.MIN\_VALUE)
+104                     d = 0.0f;
+105                 \textcolor{keywordflow}{else}
+106                 \{
+107                     d /= scale;
+108                     d /= 2;
+109                     d += 0.5f;
+110                 \}
+111                 
+112                 distances[x][y] = d;
+113             \}
+114         \}
+115 
+116         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} x=0; x<distances.length; x++)
+117         \{
+118             listener.reportProgress(\textcolor{stringliteral}{"Setting Image"}, x, outImage.getWidth());
+119             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} y=0; y<distances[0].length; y++)
+120             \{
+121                 \textcolor{keywordtype}{float} d = distances[x][y];
+122                 \textcolor{keywordflow}{if} (d == Float.NaN)
+123                     d = 0;
+124                 
+125                 \textcolor{comment}{// As greyscale}
+126             \textcolor{comment}{//  outImage.setRGB(x, y, new Color(d, d, d, 1.0f).getRGB());}
+127                 
+128                 \textcolor{comment}{// As alpha}
+129                 outImage.setRGB(x, y, \textcolor{keyword}{new} Color(1.0f, 1.0f, 1.0f, d).getRGB());
+130                 
+131                 \textcolor{comment}{// As both}
+132             \textcolor{comment}{//  outImage.setRGB(x, y, new Color(d, d, d, d).getRGB());}
+133             \}
+134         \}
+135         
+136         \textcolor{keywordflow}{return} outImage;
+137     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1distancemap_1_1_distance_field_filter_aa00f09a7d2e13879b1434ed53aea0eef}\label{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1distancemap_1_1_distance_field_filter_aa00f09a7d2e13879b1434ed53aea0eef}} 
+\index{org\+::newdawn\+::slick\+::tools\+::hiero\+::distancemap\+::\+Distance\+Field\+Filter@{org\+::newdawn\+::slick\+::tools\+::hiero\+::distancemap\+::\+Distance\+Field\+Filter}!progress@{progress}}
+\index{progress@{progress}!org\+::newdawn\+::slick\+::tools\+::hiero\+::distancemap\+::\+Distance\+Field\+Filter@{org\+::newdawn\+::slick\+::tools\+::hiero\+::distancemap\+::\+Distance\+Field\+Filter}}
+\subsubsection{\texorpdfstring{progress()}{progress()}}
+{\footnotesize\ttfamily static int org.\+newdawn.\+slick.\+tools.\+hiero.\+distancemap.\+Distance\+Field\+Filter.\+progress (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Get the progress indicator
+
+\begin{DoxyReturn}{Returns}
+The progress indicator 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+144                                  \{
+145         \textcolor{keywordflow}{return} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1distancemap_1_1_distance_field_filter_aa00f09a7d2e13879b1434ed53aea0eef}{progress}};
+146     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1distancemap_1_1_distance_field_filter_a22ed8f3b6d1c38791056d8a063d85452}\label{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1distancemap_1_1_distance_field_filter_a22ed8f3b6d1c38791056d8a063d85452}} 
+\index{org\+::newdawn\+::slick\+::tools\+::hiero\+::distancemap\+::\+Distance\+Field\+Filter@{org\+::newdawn\+::slick\+::tools\+::hiero\+::distancemap\+::\+Distance\+Field\+Filter}!separation@{separation}}
+\index{separation@{separation}!org\+::newdawn\+::slick\+::tools\+::hiero\+::distancemap\+::\+Distance\+Field\+Filter@{org\+::newdawn\+::slick\+::tools\+::hiero\+::distancemap\+::\+Distance\+Field\+Filter}}
+\subsubsection{\texorpdfstring{separation()}{separation()}}
+{\footnotesize\ttfamily static float org.\+newdawn.\+slick.\+tools.\+hiero.\+distancemap.\+Distance\+Field\+Filter.\+separation (\begin{DoxyParamCaption}\item[{final float}]{x1,  }\item[{final float}]{y1,  }\item[{final float}]{x2,  }\item[{final float}]{y2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}, {\ttfamily [private]}}
+
+Caclulate the distance between two points
+
+
+\begin{DoxyParams}{Parameters}
+{\em x1} & The x coordinate of the first point \\
+\hline
+{\em y1} & The y coordiante of the first point \\
+\hline
+{\em x2} & The x coordinate of the second point \\
+\hline
+{\em y2} & The y coordinate of the second point \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The distance between two point 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+28     \{
+29         \textcolor{keyword}{final} \textcolor{keywordtype}{float} dx = x1 - x2;
+30         \textcolor{keyword}{final} \textcolor{keywordtype}{float} dy = y1 - y2;
+31         \textcolor{keywordflow}{return} (\textcolor{keywordtype}{float})Math.sqrt(dx*dx + dy*dy);
+32     \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1distancemap_1_1_distance_field_filter_ad0847cf76175019f672f40085ba85d2d}\label{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1distancemap_1_1_distance_field_filter_ad0847cf76175019f672f40085ba85d2d}} 
+\index{org\+::newdawn\+::slick\+::tools\+::hiero\+::distancemap\+::\+Distance\+Field\+Filter@{org\+::newdawn\+::slick\+::tools\+::hiero\+::distancemap\+::\+Distance\+Field\+Filter}!progress@{progress}}
+\index{progress@{progress}!org\+::newdawn\+::slick\+::tools\+::hiero\+::distancemap\+::\+Distance\+Field\+Filter@{org\+::newdawn\+::slick\+::tools\+::hiero\+::distancemap\+::\+Distance\+Field\+Filter}}
+\subsubsection{\texorpdfstring{progress}{progress}}
+{\footnotesize\ttfamily int org.\+newdawn.\+slick.\+tools.\+hiero.\+distancemap.\+Distance\+Field\+Filter.\+progress\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+The progress indicator 

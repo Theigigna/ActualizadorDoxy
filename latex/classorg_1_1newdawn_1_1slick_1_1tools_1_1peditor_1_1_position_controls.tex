@@ -1,0 +1,135 @@
+\hypertarget{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_position_controls}{}\section{org.\+newdawn.\+slick.\+tools.\+peditor.\+Position\+Controls Class Reference}
+\label{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_position_controls}\index{org.\+newdawn.\+slick.\+tools.\+peditor.\+Position\+Controls@{org.\+newdawn.\+slick.\+tools.\+peditor.\+Position\+Controls}}
+Inheritance diagram for org.\+newdawn.\+slick.\+tools.\+peditor.\+Position\+Controls\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.440087cm]{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_position_controls}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_position_controls_a038f5e0c0fd697f1c3c07587b8f088aa}{Position\+Controls}} ()
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_position_controls_ae51ae70abf10cee5baf34d30e4dccdff}{set\+Position}} (int x, int y)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_position_controls_a682f1a5893312b3de3ceee398efd9ff6}{link\+Emitter\+To\+Fields}} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1particles_1_1_configurable_emitter}{Configurable\+Emitter}} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_control_panel_aaa170169fa574cb6b271f782afcd2517}{emitter}})
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_min_max_panel}{Min\+Max\+Panel}} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_position_controls_a5359752fcf9f38522fe43da65b639303}{xoffset}}
+\item 
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_min_max_panel}{Min\+Max\+Panel}} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_position_controls_a846a05883448e390fe31c3a726619b86}{yoffset}}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+A set of controls for the spawning position of particles from the emitter
+
+\begin{DoxyAuthor}{Author}
+kevin 
+\end{DoxyAuthor}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_position_controls_a038f5e0c0fd697f1c3c07587b8f088aa}\label{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_position_controls_a038f5e0c0fd697f1c3c07587b8f088aa}} 
+\index{org\+::newdawn\+::slick\+::tools\+::peditor\+::\+Position\+Controls@{org\+::newdawn\+::slick\+::tools\+::peditor\+::\+Position\+Controls}!Position\+Controls@{Position\+Controls}}
+\index{Position\+Controls@{Position\+Controls}!org\+::newdawn\+::slick\+::tools\+::peditor\+::\+Position\+Controls@{org\+::newdawn\+::slick\+::tools\+::peditor\+::\+Position\+Controls}}
+\subsubsection{\texorpdfstring{Position\+Controls()}{PositionControls()}}
+{\footnotesize\ttfamily org.\+newdawn.\+slick.\+tools.\+peditor.\+Position\+Controls.\+Position\+Controls (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Create a new set of particle spawn poistion controls 
+\begin{DoxyCode}
+19                               \{
+20         setLayout(null);
+21     
+22         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_position_controls_a5359752fcf9f38522fe43da65b639303}{xoffset}} = \textcolor{keyword}{new} MinMaxPanel(\textcolor{stringliteral}{"X Offset"},-10000,10000,1,1,\textcolor{stringliteral}{"The offset on the x-axis at which
+       particles will appear"});
+23         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_control_panel_aae097ab8bc9bd722af51818b15bcc823}{addMinMax}}(\textcolor{stringliteral}{"x"}, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_position_controls_a5359752fcf9f38522fe43da65b639303}{xoffset}});
+24         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_position_controls_a846a05883448e390fe31c3a726619b86}{yoffset}} = \textcolor{keyword}{new} MinMaxPanel(\textcolor{stringliteral}{"Y Offset"},-10000,10000,1,1,\textcolor{stringliteral}{"The offset on the y-axis at which
+       particles will appear"});
+25         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_control_panel_aae097ab8bc9bd722af51818b15bcc823}{addMinMax}}(\textcolor{stringliteral}{"y"}, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_position_controls_a846a05883448e390fe31c3a726619b86}{yoffset}});
+26         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_control_panel_af298d1803e4450ed4ffe735500bb7c60}{addValue}}(\textcolor{stringliteral}{"spread"}, \textcolor{keyword}{new} ValuePanel(\textcolor{stringliteral}{"Spread Angle (degrees)"},0,360,360,\textcolor{stringliteral}{"The range of angles
+       the particles can spew out in"},\textcolor{keyword}{false}));
+27         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_control_panel_af298d1803e4450ed4ffe735500bb7c60}{addValue}}(\textcolor{stringliteral}{"angularOffset"}, \textcolor{keyword}{new} ValuePanel(\textcolor{stringliteral}{"Angular Offset (degrees)"},0,360,360,\textcolor{stringliteral}{"The
+       direction the particles should spill out at"},\textcolor{keyword}{false}));
+28         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_control_panel_aae097ab8bc9bd722af51818b15bcc823}{addMinMax}}(\textcolor{stringliteral}{"initialDistance"}, \textcolor{keyword}{new} MinMaxPanel(\textcolor{stringliteral}{"Initial Distance"},0,10000,0,0,\textcolor{stringliteral}{"The distance
+       from the emitter center particles will appear at"}));
+29     \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_position_controls_a682f1a5893312b3de3ceee398efd9ff6}\label{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_position_controls_a682f1a5893312b3de3ceee398efd9ff6}} 
+\index{org\+::newdawn\+::slick\+::tools\+::peditor\+::\+Position\+Controls@{org\+::newdawn\+::slick\+::tools\+::peditor\+::\+Position\+Controls}!link\+Emitter\+To\+Fields@{link\+Emitter\+To\+Fields}}
+\index{link\+Emitter\+To\+Fields@{link\+Emitter\+To\+Fields}!org\+::newdawn\+::slick\+::tools\+::peditor\+::\+Position\+Controls@{org\+::newdawn\+::slick\+::tools\+::peditor\+::\+Position\+Controls}}
+\subsubsection{\texorpdfstring{link\+Emitter\+To\+Fields()}{linkEmitterToFields()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+tools.\+peditor.\+Position\+Controls.\+link\+Emitter\+To\+Fields (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1particles_1_1_configurable_emitter}{Configurable\+Emitter}}}]{emitter }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_control_panel_a55fa468548caadc265ea28c5f3214a20}{org.\+newdawn.\+slick.\+tools.\+peditor.\+Control\+Panel\+::link\+Emitter\+To\+Fields}}(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1particles_1_1_configurable_emitter}{org.\+newdawn.\+slick.\+particles.\+Configurable\+Emitter}}) 
+\end{DoxySeeAlso}
+
+\begin{DoxyCode}
+56                                                                     \{
+57         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_control_panel_a0cd8f0c59ddca29c48029fcc41c0bbde}{link}}(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_control_panel_aaa170169fa574cb6b271f782afcd2517}{emitter}}.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1particles_1_1_configurable_emitter_a0eb1d41da14b62651296bb0466ee9fe8}{xOffset}}, \textcolor{stringliteral}{"x"});
+58         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_control_panel_a0cd8f0c59ddca29c48029fcc41c0bbde}{link}}(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_control_panel_aaa170169fa574cb6b271f782afcd2517}{emitter}}.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1particles_1_1_configurable_emitter_aba8d74515c296a68ec08ff2c43ad184e}{yOffset}}, \textcolor{stringliteral}{"y"});
+59         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_control_panel_a0cd8f0c59ddca29c48029fcc41c0bbde}{link}}(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_control_panel_aaa170169fa574cb6b271f782afcd2517}{emitter}}.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1particles_1_1_configurable_emitter_a78691f0f94c650977b977d7c7e449d1f}{spread}}, \textcolor{stringliteral}{"spread"});
+60         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_control_panel_a0cd8f0c59ddca29c48029fcc41c0bbde}{link}}(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_control_panel_aaa170169fa574cb6b271f782afcd2517}{emitter}}.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1particles_1_1_configurable_emitter_aecf830b27b82da690b49566a7c74aaa0}{angularOffset}}, \textcolor{stringliteral}{"angularOffset"});
+61         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_control_panel_a0cd8f0c59ddca29c48029fcc41c0bbde}{link}}(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_control_panel_aaa170169fa574cb6b271f782afcd2517}{emitter}}.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1particles_1_1_configurable_emitter_a8afe8f189acb7cf6b098bef88e601d9d}{initialDistance}}, \textcolor{stringliteral}{"initialDistance"});
+62     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_position_controls_ae51ae70abf10cee5baf34d30e4dccdff}\label{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_position_controls_ae51ae70abf10cee5baf34d30e4dccdff}} 
+\index{org\+::newdawn\+::slick\+::tools\+::peditor\+::\+Position\+Controls@{org\+::newdawn\+::slick\+::tools\+::peditor\+::\+Position\+Controls}!set\+Position@{set\+Position}}
+\index{set\+Position@{set\+Position}!org\+::newdawn\+::slick\+::tools\+::peditor\+::\+Position\+Controls@{org\+::newdawn\+::slick\+::tools\+::peditor\+::\+Position\+Controls}}
+\subsubsection{\texorpdfstring{set\+Position()}{setPosition()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+tools.\+peditor.\+Position\+Controls.\+set\+Position (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Set the position of the emitter
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & The x position of the emitter \\
+\hline
+{\em y} & The y position of the emitter \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+37                                          \{
+38         \textcolor{keywordtype}{int} cx = (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_position_controls_a5359752fcf9f38522fe43da65b639303}{xoffset}}.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_min_max_panel_adf479f7a027d743b06f16e54f03f6691}{getMin}}() + \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_position_controls_a5359752fcf9f38522fe43da65b639303}{xoffset}}.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_min_max_panel_ad7a04168e42375f9bb72fd34712858cc}{getMax}}()) / 2;
+39         \textcolor{keywordtype}{int} cy = (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_position_controls_a846a05883448e390fe31c3a726619b86}{yoffset}}.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_min_max_panel_adf479f7a027d743b06f16e54f03f6691}{getMin}}() + \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_position_controls_a846a05883448e390fe31c3a726619b86}{yoffset}}.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_min_max_panel_ad7a04168e42375f9bb72fd34712858cc}{getMax}}()) / 2;
+40         
+41         \textcolor{keywordtype}{int} dx = x - cx;
+42         \textcolor{keywordtype}{int} dy = y - cy;
+43         
+44         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_position_controls_a5359752fcf9f38522fe43da65b639303}{xoffset}}.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_min_max_panel_af0431110deccd05c43e767dbc04cf9b8}{setMin}}(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_position_controls_a5359752fcf9f38522fe43da65b639303}{xoffset}}.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_min_max_panel_adf479f7a027d743b06f16e54f03f6691}{getMin}}() + dx);
+45         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_position_controls_a5359752fcf9f38522fe43da65b639303}{xoffset}}.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_min_max_panel_a3beee34aaf43d6a97e842d563edc0ce0}{setMax}}(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_position_controls_a5359752fcf9f38522fe43da65b639303}{xoffset}}.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_min_max_panel_ad7a04168e42375f9bb72fd34712858cc}{getMax}}() + dx);
+46         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_position_controls_a846a05883448e390fe31c3a726619b86}{yoffset}}.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_min_max_panel_af0431110deccd05c43e767dbc04cf9b8}{setMin}}(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_position_controls_a846a05883448e390fe31c3a726619b86}{yoffset}}.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_min_max_panel_adf479f7a027d743b06f16e54f03f6691}{getMin}}() + dy);
+47         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_position_controls_a846a05883448e390fe31c3a726619b86}{yoffset}}.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_min_max_panel_a3beee34aaf43d6a97e842d563edc0ce0}{setMax}}(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_position_controls_a846a05883448e390fe31c3a726619b86}{yoffset}}.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_min_max_panel_ad7a04168e42375f9bb72fd34712858cc}{getMax}}() + dy);
+48         
+49         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_position_controls_a5359752fcf9f38522fe43da65b639303}{xoffset}}.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_min_max_panel_a644b9b3a4aba513423b79140a87e362e}{fireUpdated}}(null);
+50         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_position_controls_a846a05883448e390fe31c3a726619b86}{yoffset}}.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_min_max_panel_a644b9b3a4aba513423b79140a87e362e}{fireUpdated}}(null);
+51     \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_position_controls_a5359752fcf9f38522fe43da65b639303}\label{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_position_controls_a5359752fcf9f38522fe43da65b639303}} 
+\index{org\+::newdawn\+::slick\+::tools\+::peditor\+::\+Position\+Controls@{org\+::newdawn\+::slick\+::tools\+::peditor\+::\+Position\+Controls}!xoffset@{xoffset}}
+\index{xoffset@{xoffset}!org\+::newdawn\+::slick\+::tools\+::peditor\+::\+Position\+Controls@{org\+::newdawn\+::slick\+::tools\+::peditor\+::\+Position\+Controls}}
+\subsubsection{\texorpdfstring{xoffset}{xoffset}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_min_max_panel}{Min\+Max\+Panel}} org.\+newdawn.\+slick.\+tools.\+peditor.\+Position\+Controls.\+xoffset\hspace{0.3cm}{\ttfamily [private]}}
+
+The x offset panel \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_position_controls_a846a05883448e390fe31c3a726619b86}\label{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_position_controls_a846a05883448e390fe31c3a726619b86}} 
+\index{org\+::newdawn\+::slick\+::tools\+::peditor\+::\+Position\+Controls@{org\+::newdawn\+::slick\+::tools\+::peditor\+::\+Position\+Controls}!yoffset@{yoffset}}
+\index{yoffset@{yoffset}!org\+::newdawn\+::slick\+::tools\+::peditor\+::\+Position\+Controls@{org\+::newdawn\+::slick\+::tools\+::peditor\+::\+Position\+Controls}}
+\subsubsection{\texorpdfstring{yoffset}{yoffset}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_min_max_panel}{Min\+Max\+Panel}} org.\+newdawn.\+slick.\+tools.\+peditor.\+Position\+Controls.\+yoffset\hspace{0.3cm}{\ttfamily [private]}}
+
+The y offset panel 

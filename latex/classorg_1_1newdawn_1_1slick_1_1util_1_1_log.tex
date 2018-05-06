@@ -1,0 +1,324 @@
+\hypertarget{classorg_1_1newdawn_1_1slick_1_1util_1_1_log}{}\section{org.\+newdawn.\+slick.\+util.\+Log Class Reference}
+\label{classorg_1_1newdawn_1_1slick_1_1util_1_1_log}\index{org.\+newdawn.\+slick.\+util.\+Log@{org.\+newdawn.\+slick.\+util.\+Log}}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1_log_a74c387a36803509c62b7b7e1e6415c1c}{set\+Log\+System}} (\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1util_1_1_log_system}{Log\+System}} system)
+\item 
+static void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1_log_a0d73ddb12d5b83e05963129645067699}{set\+Verbose}} (boolean v)
+\item 
+static void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1_log_aeb42cb2c3abf9a72353199c7dabe3b78}{check\+Verbose\+Log\+Setting}} ()
+\item 
+static void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1_log_a87cd4bd74b579277c3e0a6083868b324}{set\+Forced\+Verbose\+On}} ()
+\item 
+static void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1_log_af7c392bb99b0afd00b28d89fffd70a11}{error}} (String message, Throwable e)
+\item 
+static void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1_log_a549d8d55defc0302044e2c05d69ba486}{error}} (Throwable e)
+\item 
+static void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1_log_a5c6d71feeab34353e0c70b9899cfbf78}{error}} (String message)
+\item 
+static void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1_log_af9e5027a42fc8dd4ec64812ae7da79ba}{warn}} (String message)
+\item 
+static void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1_log_a6cce7f2804423230c52de48c0e9c71d1}{warn}} (String message, Throwable e)
+\item 
+static void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1_log_aa324d3f6c44b2a66707b9d87edce37f8}{info}} (String message)
+\item 
+static void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1_log_a495951d927703781889c7bc55dfc8a5d}{debug}} (String message)
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1_log_a12b5743a88444ce86c46aa807fd0d0e9}{Log}} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static boolean \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1_log_af438e0ccf09b79bc870bd66fb9a02150}{verbose}} = true
+\item 
+static boolean \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1_log_ac5c775f540d68914085b57d8ac1868f8}{forced\+Verbose}} = false
+\item 
+static final String \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1_log_a8beda0caa3ca5e7c2e548ed75441651e}{force\+Verbose\+Property}} = \char`\"{}org.\+newdawn.\+slick.\+force\+Verbose\+Log\char`\"{}
+\item 
+static final String \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1_log_ad68d2c98c3de4a4b3ce34bc5e195cc9a}{force\+Verbose\+Property\+On\+Value}} = \char`\"{}true\char`\"{}
+\item 
+static \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1util_1_1_log_system}{Log\+System}} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1_log_acca32268a2a183e671051b4b9188cc72}{log\+System}} = new \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1_default_log_system}{Default\+Log\+System}}()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A simple central logging system
+
+\begin{DoxyAuthor}{Author}
+kevin 
+\end{DoxyAuthor}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1util_1_1_log_a12b5743a88444ce86c46aa807fd0d0e9}\label{classorg_1_1newdawn_1_1slick_1_1util_1_1_log_a12b5743a88444ce86c46aa807fd0d0e9}} 
+\index{org\+::newdawn\+::slick\+::util\+::\+Log@{org\+::newdawn\+::slick\+::util\+::\+Log}!Log@{Log}}
+\index{Log@{Log}!org\+::newdawn\+::slick\+::util\+::\+Log@{org\+::newdawn\+::slick\+::util\+::\+Log}}
+\subsubsection{\texorpdfstring{Log()}{Log()}}
+{\footnotesize\ttfamily org.\+newdawn.\+slick.\+util.\+Log.\+Log (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+The log is a simple static utility, no construction 
+\begin{DoxyCode}
+35                   \{
+36         
+37     \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1util_1_1_log_aeb42cb2c3abf9a72353199c7dabe3b78}\label{classorg_1_1newdawn_1_1slick_1_1util_1_1_log_aeb42cb2c3abf9a72353199c7dabe3b78}} 
+\index{org\+::newdawn\+::slick\+::util\+::\+Log@{org\+::newdawn\+::slick\+::util\+::\+Log}!check\+Verbose\+Log\+Setting@{check\+Verbose\+Log\+Setting}}
+\index{check\+Verbose\+Log\+Setting@{check\+Verbose\+Log\+Setting}!org\+::newdawn\+::slick\+::util\+::\+Log@{org\+::newdawn\+::slick\+::util\+::\+Log}}
+\subsubsection{\texorpdfstring{check\+Verbose\+Log\+Setting()}{checkVerboseLogSetting()}}
+{\footnotesize\ttfamily static void org.\+newdawn.\+slick.\+util.\+Log.\+check\+Verbose\+Log\+Setting (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Check if the system property org.\+newdawn.\+slick.\+verbose\+Log is set to true. If this is the case we activate the verbose logging mode 
+\begin{DoxyCode}
+66                                                 \{
+67         \textcolor{keywordflow}{try} \{
+68             AccessController.doPrivileged(\textcolor{keyword}{new} PrivilegedAction() \{
+69                 \textcolor{keyword}{public} Object run() \{
+70                     String val = System.getProperty(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1_log_a12b5743a88444ce86c46aa807fd0d0e9}{Log}}.forceVerboseProperty);
+71                     \textcolor{keywordflow}{if} ((val != null) && (val.equalsIgnoreCase(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1_log_a12b5743a88444ce86c46aa807fd0d0e9}{Log}}.forceVerbosePropertyOnValue))) \{
+72                         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1_log_a12b5743a88444ce86c46aa807fd0d0e9}{Log}}.setForcedVerboseOn();
+73                     \}
+74                     
+75                     \textcolor{keywordflow}{return} null;
+76                 \}
+77             \});
+78         \} \textcolor{keywordflow}{catch} (Throwable e) \{
+79             \textcolor{comment}{// ignore, security failure - probably an applet}
+80         \}
+81     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1util_1_1_log_a495951d927703781889c7bc55dfc8a5d}\label{classorg_1_1newdawn_1_1slick_1_1util_1_1_log_a495951d927703781889c7bc55dfc8a5d}} 
+\index{org\+::newdawn\+::slick\+::util\+::\+Log@{org\+::newdawn\+::slick\+::util\+::\+Log}!debug@{debug}}
+\index{debug@{debug}!org\+::newdawn\+::slick\+::util\+::\+Log@{org\+::newdawn\+::slick\+::util\+::\+Log}}
+\subsubsection{\texorpdfstring{debug()}{debug()}}
+{\footnotesize\ttfamily static void org.\+newdawn.\+slick.\+util.\+Log.\+debug (\begin{DoxyParamCaption}\item[{String}]{message }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1_log}{Log}} a debug message
+
+
+\begin{DoxyParams}{Parameters}
+{\em message} & The message describing the debug \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+156                                              \{
+157         \textcolor{keywordflow}{if} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1_log_af438e0ccf09b79bc870bd66fb9a02150}{verbose}} || \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1_log_ac5c775f540d68914085b57d8ac1868f8}{forcedVerbose}}) \{
+158             \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1_log_acca32268a2a183e671051b4b9188cc72}{logSystem}}.\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1util_1_1_log_system_af8c0140f915bdebab6ac9062e9fea015}{debug}}(message);
+159         \}
+160     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1util_1_1_log_af7c392bb99b0afd00b28d89fffd70a11}\label{classorg_1_1newdawn_1_1slick_1_1util_1_1_log_af7c392bb99b0afd00b28d89fffd70a11}} 
+\index{org\+::newdawn\+::slick\+::util\+::\+Log@{org\+::newdawn\+::slick\+::util\+::\+Log}!error@{error}}
+\index{error@{error}!org\+::newdawn\+::slick\+::util\+::\+Log@{org\+::newdawn\+::slick\+::util\+::\+Log}}
+\subsubsection{\texorpdfstring{error()}{error()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily static void org.\+newdawn.\+slick.\+util.\+Log.\+error (\begin{DoxyParamCaption}\item[{String}]{message,  }\item[{Throwable}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1_log}{Log}} an error
+
+
+\begin{DoxyParams}{Parameters}
+{\em message} & The message describing the error \\
+\hline
+{\em e} & The exception causing the error \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+99                                                           \{
+100         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1_log_acca32268a2a183e671051b4b9188cc72}{logSystem}}.\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1util_1_1_log_system_a9ba18920fcc1e6b04324a1b9dfb40640}{error}}(message, e);
+101     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1util_1_1_log_a549d8d55defc0302044e2c05d69ba486}\label{classorg_1_1newdawn_1_1slick_1_1util_1_1_log_a549d8d55defc0302044e2c05d69ba486}} 
+\index{org\+::newdawn\+::slick\+::util\+::\+Log@{org\+::newdawn\+::slick\+::util\+::\+Log}!error@{error}}
+\index{error@{error}!org\+::newdawn\+::slick\+::util\+::\+Log@{org\+::newdawn\+::slick\+::util\+::\+Log}}
+\subsubsection{\texorpdfstring{error()}{error()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily static void org.\+newdawn.\+slick.\+util.\+Log.\+error (\begin{DoxyParamCaption}\item[{Throwable}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1_log}{Log}} an error
+
+
+\begin{DoxyParams}{Parameters}
+{\em e} & The exception causing the error \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+108                                           \{
+109         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1_log_acca32268a2a183e671051b4b9188cc72}{logSystem}}.\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1util_1_1_log_system_a9ba18920fcc1e6b04324a1b9dfb40640}{error}}(e);
+110     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1util_1_1_log_a5c6d71feeab34353e0c70b9899cfbf78}\label{classorg_1_1newdawn_1_1slick_1_1util_1_1_log_a5c6d71feeab34353e0c70b9899cfbf78}} 
+\index{org\+::newdawn\+::slick\+::util\+::\+Log@{org\+::newdawn\+::slick\+::util\+::\+Log}!error@{error}}
+\index{error@{error}!org\+::newdawn\+::slick\+::util\+::\+Log@{org\+::newdawn\+::slick\+::util\+::\+Log}}
+\subsubsection{\texorpdfstring{error()}{error()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily static void org.\+newdawn.\+slick.\+util.\+Log.\+error (\begin{DoxyParamCaption}\item[{String}]{message }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1_log}{Log}} an error
+
+
+\begin{DoxyParams}{Parameters}
+{\em message} & The message describing the error \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+117                                              \{
+118         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1_log_acca32268a2a183e671051b4b9188cc72}{logSystem}}.\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1util_1_1_log_system_a9ba18920fcc1e6b04324a1b9dfb40640}{error}}(message);
+119     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1util_1_1_log_aa324d3f6c44b2a66707b9d87edce37f8}\label{classorg_1_1newdawn_1_1slick_1_1util_1_1_log_aa324d3f6c44b2a66707b9d87edce37f8}} 
+\index{org\+::newdawn\+::slick\+::util\+::\+Log@{org\+::newdawn\+::slick\+::util\+::\+Log}!info@{info}}
+\index{info@{info}!org\+::newdawn\+::slick\+::util\+::\+Log@{org\+::newdawn\+::slick\+::util\+::\+Log}}
+\subsubsection{\texorpdfstring{info()}{info()}}
+{\footnotesize\ttfamily static void org.\+newdawn.\+slick.\+util.\+Log.\+info (\begin{DoxyParamCaption}\item[{String}]{message }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1_log}{Log}} an information message
+
+
+\begin{DoxyParams}{Parameters}
+{\em message} & The message describing the infomation \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+145                                             \{
+146         \textcolor{keywordflow}{if} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1_log_af438e0ccf09b79bc870bd66fb9a02150}{verbose}} || \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1_log_ac5c775f540d68914085b57d8ac1868f8}{forcedVerbose}}) \{
+147             \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1_log_acca32268a2a183e671051b4b9188cc72}{logSystem}}.\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1util_1_1_log_system_a8430f000d206c109e47bea6a30b93be7}{info}}(message);
+148         \}
+149     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1util_1_1_log_a87cd4bd74b579277c3e0a6083868b324}\label{classorg_1_1newdawn_1_1slick_1_1util_1_1_log_a87cd4bd74b579277c3e0a6083868b324}} 
+\index{org\+::newdawn\+::slick\+::util\+::\+Log@{org\+::newdawn\+::slick\+::util\+::\+Log}!set\+Forced\+Verbose\+On@{set\+Forced\+Verbose\+On}}
+\index{set\+Forced\+Verbose\+On@{set\+Forced\+Verbose\+On}!org\+::newdawn\+::slick\+::util\+::\+Log@{org\+::newdawn\+::slick\+::util\+::\+Log}}
+\subsubsection{\texorpdfstring{set\+Forced\+Verbose\+On()}{setForcedVerboseOn()}}
+{\footnotesize\ttfamily static void org.\+newdawn.\+slick.\+util.\+Log.\+set\+Forced\+Verbose\+On (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Indicate that we want verbose logging, even if switched off in game code. Only be called when system property \char`\"{}org.\+newdawn.\+slick.\+force\+Verbose\+Log\char`\"{} is set to true. You must not call this method directly. 
+\begin{DoxyCode}
+88                                             \{
+89         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1_log_ac5c775f540d68914085b57d8ac1868f8}{forcedVerbose}} = \textcolor{keyword}{true};
+90         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1_log_af438e0ccf09b79bc870bd66fb9a02150}{verbose}} = \textcolor{keyword}{true};
+91     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1util_1_1_log_a74c387a36803509c62b7b7e1e6415c1c}\label{classorg_1_1newdawn_1_1slick_1_1util_1_1_log_a74c387a36803509c62b7b7e1e6415c1c}} 
+\index{org\+::newdawn\+::slick\+::util\+::\+Log@{org\+::newdawn\+::slick\+::util\+::\+Log}!set\+Log\+System@{set\+Log\+System}}
+\index{set\+Log\+System@{set\+Log\+System}!org\+::newdawn\+::slick\+::util\+::\+Log@{org\+::newdawn\+::slick\+::util\+::\+Log}}
+\subsubsection{\texorpdfstring{set\+Log\+System()}{setLogSystem()}}
+{\footnotesize\ttfamily static void org.\+newdawn.\+slick.\+util.\+Log.\+set\+Log\+System (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1util_1_1_log_system}{Log\+System}}}]{system }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Set the log system that will have all of the log info sent to it.
+
+
+\begin{DoxyParams}{Parameters}
+{\em system} & The system to use for logging. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+45                                                       \{
+46         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1_log_acca32268a2a183e671051b4b9188cc72}{logSystem}} = system;
+47     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1util_1_1_log_a0d73ddb12d5b83e05963129645067699}\label{classorg_1_1newdawn_1_1slick_1_1util_1_1_log_a0d73ddb12d5b83e05963129645067699}} 
+\index{org\+::newdawn\+::slick\+::util\+::\+Log@{org\+::newdawn\+::slick\+::util\+::\+Log}!set\+Verbose@{set\+Verbose}}
+\index{set\+Verbose@{set\+Verbose}!org\+::newdawn\+::slick\+::util\+::\+Log@{org\+::newdawn\+::slick\+::util\+::\+Log}}
+\subsubsection{\texorpdfstring{set\+Verbose()}{setVerbose()}}
+{\footnotesize\ttfamily static void org.\+newdawn.\+slick.\+util.\+Log.\+set\+Verbose (\begin{DoxyParamCaption}\item[{boolean}]{v }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Indicate that we want verbose logging. The call is ignored if verbose logging is forced by the system property \char`\"{}org.\+newdawn.\+slick.\+force\+Verbose\+Log\char`\"{}
+
+
+\begin{DoxyParams}{Parameters}
+{\em v} & True if we want verbose logging (I\+N\+FO and D\+E\+B\+UG) \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+56                                              \{
+57         \textcolor{keywordflow}{if} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1_log_ac5c775f540d68914085b57d8ac1868f8}{forcedVerbose}})
+58             \textcolor{keywordflow}{return};
+59         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1_log_af438e0ccf09b79bc870bd66fb9a02150}{verbose}} = v;
+60     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1util_1_1_log_af9e5027a42fc8dd4ec64812ae7da79ba}\label{classorg_1_1newdawn_1_1slick_1_1util_1_1_log_af9e5027a42fc8dd4ec64812ae7da79ba}} 
+\index{org\+::newdawn\+::slick\+::util\+::\+Log@{org\+::newdawn\+::slick\+::util\+::\+Log}!warn@{warn}}
+\index{warn@{warn}!org\+::newdawn\+::slick\+::util\+::\+Log@{org\+::newdawn\+::slick\+::util\+::\+Log}}
+\subsubsection{\texorpdfstring{warn()}{warn()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily static void org.\+newdawn.\+slick.\+util.\+Log.\+warn (\begin{DoxyParamCaption}\item[{String}]{message }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1_log}{Log}} a warning
+
+
+\begin{DoxyParams}{Parameters}
+{\em message} & The message describing the warning \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+126                                             \{
+127         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1_log_acca32268a2a183e671051b4b9188cc72}{logSystem}}.\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1util_1_1_log_system_a4c4f5a96667389bbca64c86f63272b7d}{warn}}(message);
+128     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1util_1_1_log_a6cce7f2804423230c52de48c0e9c71d1}\label{classorg_1_1newdawn_1_1slick_1_1util_1_1_log_a6cce7f2804423230c52de48c0e9c71d1}} 
+\index{org\+::newdawn\+::slick\+::util\+::\+Log@{org\+::newdawn\+::slick\+::util\+::\+Log}!warn@{warn}}
+\index{warn@{warn}!org\+::newdawn\+::slick\+::util\+::\+Log@{org\+::newdawn\+::slick\+::util\+::\+Log}}
+\subsubsection{\texorpdfstring{warn()}{warn()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily static void org.\+newdawn.\+slick.\+util.\+Log.\+warn (\begin{DoxyParamCaption}\item[{String}]{message,  }\item[{Throwable}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1_log}{Log}} a warning
+
+
+\begin{DoxyParams}{Parameters}
+{\em message} & The message describing the warning \\
+\hline
+{\em e} & The issue causing the warning \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+136                                                          \{
+137         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1_log_acca32268a2a183e671051b4b9188cc72}{logSystem}}.\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1util_1_1_log_system_a4c4f5a96667389bbca64c86f63272b7d}{warn}}(message, e);
+138     \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1util_1_1_log_ac5c775f540d68914085b57d8ac1868f8}\label{classorg_1_1newdawn_1_1slick_1_1util_1_1_log_ac5c775f540d68914085b57d8ac1868f8}} 
+\index{org\+::newdawn\+::slick\+::util\+::\+Log@{org\+::newdawn\+::slick\+::util\+::\+Log}!forced\+Verbose@{forced\+Verbose}}
+\index{forced\+Verbose@{forced\+Verbose}!org\+::newdawn\+::slick\+::util\+::\+Log@{org\+::newdawn\+::slick\+::util\+::\+Log}}
+\subsubsection{\texorpdfstring{forced\+Verbose}{forcedVerbose}}
+{\footnotesize\ttfamily boolean org.\+newdawn.\+slick.\+util.\+Log.\+forced\+Verbose = false\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+true if activated by the system property \char`\"{}org.\+newdawn.\+slick.\+force\+Verbose\+Log\char`\"{} \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1util_1_1_log_a8beda0caa3ca5e7c2e548ed75441651e}\label{classorg_1_1newdawn_1_1slick_1_1util_1_1_log_a8beda0caa3ca5e7c2e548ed75441651e}} 
+\index{org\+::newdawn\+::slick\+::util\+::\+Log@{org\+::newdawn\+::slick\+::util\+::\+Log}!force\+Verbose\+Property@{force\+Verbose\+Property}}
+\index{force\+Verbose\+Property@{force\+Verbose\+Property}!org\+::newdawn\+::slick\+::util\+::\+Log@{org\+::newdawn\+::slick\+::util\+::\+Log}}
+\subsubsection{\texorpdfstring{force\+Verbose\+Property}{forceVerboseProperty}}
+{\footnotesize\ttfamily final String org.\+newdawn.\+slick.\+util.\+Log.\+force\+Verbose\+Property = \char`\"{}org.\+newdawn.\+slick.\+force\+Verbose\+Log\char`\"{}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+The debug property which can be set via J\+N\+LP or startup parameter to switch logging mode to verbose for games that were released without verbose logging value must be \char`\"{}true\char`\"{} \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1util_1_1_log_ad68d2c98c3de4a4b3ce34bc5e195cc9a}\label{classorg_1_1newdawn_1_1slick_1_1util_1_1_log_ad68d2c98c3de4a4b3ce34bc5e195cc9a}} 
+\index{org\+::newdawn\+::slick\+::util\+::\+Log@{org\+::newdawn\+::slick\+::util\+::\+Log}!force\+Verbose\+Property\+On\+Value@{force\+Verbose\+Property\+On\+Value}}
+\index{force\+Verbose\+Property\+On\+Value@{force\+Verbose\+Property\+On\+Value}!org\+::newdawn\+::slick\+::util\+::\+Log@{org\+::newdawn\+::slick\+::util\+::\+Log}}
+\subsubsection{\texorpdfstring{force\+Verbose\+Property\+On\+Value}{forceVerbosePropertyOnValue}}
+{\footnotesize\ttfamily final String org.\+newdawn.\+slick.\+util.\+Log.\+force\+Verbose\+Property\+On\+Value = \char`\"{}true\char`\"{}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+the verbose property must be set to \char`\"{}true\char`\"{} to switch on verbose logging \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1util_1_1_log_acca32268a2a183e671051b4b9188cc72}\label{classorg_1_1newdawn_1_1slick_1_1util_1_1_log_acca32268a2a183e671051b4b9188cc72}} 
+\index{org\+::newdawn\+::slick\+::util\+::\+Log@{org\+::newdawn\+::slick\+::util\+::\+Log}!log\+System@{log\+System}}
+\index{log\+System@{log\+System}!org\+::newdawn\+::slick\+::util\+::\+Log@{org\+::newdawn\+::slick\+::util\+::\+Log}}
+\subsubsection{\texorpdfstring{log\+System}{logSystem}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1util_1_1_log_system}{Log\+System}} org.\+newdawn.\+slick.\+util.\+Log.\+log\+System = new \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1_default_log_system}{Default\+Log\+System}}()\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+The log system plugin in use \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1util_1_1_log_af438e0ccf09b79bc870bd66fb9a02150}\label{classorg_1_1newdawn_1_1slick_1_1util_1_1_log_af438e0ccf09b79bc870bd66fb9a02150}} 
+\index{org\+::newdawn\+::slick\+::util\+::\+Log@{org\+::newdawn\+::slick\+::util\+::\+Log}!verbose@{verbose}}
+\index{verbose@{verbose}!org\+::newdawn\+::slick\+::util\+::\+Log@{org\+::newdawn\+::slick\+::util\+::\+Log}}
+\subsubsection{\texorpdfstring{verbose}{verbose}}
+{\footnotesize\ttfamily boolean org.\+newdawn.\+slick.\+util.\+Log.\+verbose = true\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+True if we\textquotesingle{}re doing verbose logging I\+N\+FO and D\+E\+B\+UG 

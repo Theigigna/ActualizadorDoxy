@@ -1,0 +1,250 @@
+\hypertarget{classstates_1_1_final_credits}{}\section{states.\+Final\+Credits Class Reference}
+\label{classstates_1_1_final_credits}\index{states.\+Final\+Credits@{states.\+Final\+Credits}}
+Inheritance diagram for states.\+Final\+Credits\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.226415cm]{classstates_1_1_final_credits}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classstates_1_1_final_credits_a2696358b5ac79f9385759c4a217b0bd0}{Final\+Credits}} (int \mbox{\hyperlink{classstates_1_1_final_credits_afdc1fee5ede57fa6fcc6d70025a0b7c5}{id}})
+\item 
+int \mbox{\hyperlink{classstates_1_1_final_credits_aa078f93a7bd5ae2194d959f8dded659f}{get\+ID}} ()
+\item 
+void \mbox{\hyperlink{classstates_1_1_final_credits_acb91cf3998cc530727fb2ca5926c57b1}{init}} (final \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_game_container}{Game\+Container}} container, final \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1_state_based_game}{State\+Based\+Game}} game)  throws Slick\+Exception 
+\item 
+void \mbox{\hyperlink{classstates_1_1_final_credits_a48f6a5fefe171870bf0d8419f15b791d}{render}} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_game_container}{Game\+Container}} container, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1_state_based_game}{State\+Based\+Game}} game, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_graphics}{Graphics}} g)  throws Slick\+Exception 
+\item 
+void \mbox{\hyperlink{classstates_1_1_final_credits_a4a374cbcb25a79fa9f8590d2c2653df3}{update}} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_game_container}{Game\+Container}} container, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1_state_based_game}{State\+Based\+Game}} game, int delta)  throws Slick\+Exception 
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classstates_1_1_final_credits_afdc1fee5ede57fa6fcc6d70025a0b7c5}{id}}
+\item 
+\mbox{\hyperlink{classgui_1_1_g_u_i_font}{G\+U\+I\+Font}} \mbox{\hyperlink{classstates_1_1_final_credits_a03543cc856cb4e1b2fb064dc86913fbc}{font}}
+\item 
+\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_transition}{Transition}} \mbox{\hyperlink{classstates_1_1_final_credits_ad16d712e09a7a1691ef0c5c1e8af43a2}{to}}
+\item 
+\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_transition}{Transition}} \mbox{\hyperlink{classstates_1_1_final_credits_a4fd006baab2595e4e9ffd3ac7ca8998f}{ti}}
+\item 
+String \mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classstates_1_1_final_credits_aa72712a2592f1b5e7025dc65bf28c43d}{strings}}
+\item 
+int \mbox{\hyperlink{classstates_1_1_final_credits_aecf9d8b376badec5eed9ad03986ec8c3}{now}}
+\item 
+int \mbox{\hyperlink{classstates_1_1_final_credits_a982b8c49cb19952faa0cd28aedea2e28}{time}}
+\end{DoxyCompactItemize}
+\subsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static final int \mbox{\hyperlink{classstates_1_1_final_credits_a111fac3fed4b39752db6f751018aac08}{C\+H\+A\+N\+G\+E\+\_\+\+T\+I\+ME}} =5000
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classstates_1_1_final_credits_a2696358b5ac79f9385759c4a217b0bd0}\label{classstates_1_1_final_credits_a2696358b5ac79f9385759c4a217b0bd0}} 
+\index{states\+::\+Final\+Credits@{states\+::\+Final\+Credits}!Final\+Credits@{Final\+Credits}}
+\index{Final\+Credits@{Final\+Credits}!states\+::\+Final\+Credits@{states\+::\+Final\+Credits}}
+\subsubsection{\texorpdfstring{Final\+Credits()}{FinalCredits()}}
+{\footnotesize\ttfamily states.\+Final\+Credits.\+Final\+Credits (\begin{DoxyParamCaption}\item[{int}]{id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+37                                 \{
+38         this.\textcolor{keywordtype}{id} = \mbox{\hyperlink{classstates_1_1_final_credits_afdc1fee5ede57fa6fcc6d70025a0b7c5}{id}};
+39         \mbox{\hyperlink{classstates_1_1_final_credits_ad16d712e09a7a1691ef0c5c1e8af43a2}{to}} = \textcolor{keyword}{new} FadeOutTransition();
+40         \mbox{\hyperlink{classstates_1_1_final_credits_a4fd006baab2595e4e9ffd3ac7ca8998f}{ti}} = \textcolor{keyword}{new} FadeInTransition();
+41         \textcolor{keywordflow}{try} \{
+42             \mbox{\hyperlink{classstates_1_1_final_credits_a03543cc856cb4e1b2fb064dc86913fbc}{font}} = \textcolor{keyword}{new} GUIFont(38);
+43         \} \textcolor{keywordflow}{catch} (SlickException ex) \{
+44             Logger.getLogger(MainMenu.class.getName()).log(Level.SEVERE, null, ex);
+45         \}
+46 
+47     \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classstates_1_1_final_credits_aa078f93a7bd5ae2194d959f8dded659f}\label{classstates_1_1_final_credits_aa078f93a7bd5ae2194d959f8dded659f}} 
+\index{states\+::\+Final\+Credits@{states\+::\+Final\+Credits}!get\+ID@{get\+ID}}
+\index{get\+ID@{get\+ID}!states\+::\+Final\+Credits@{states\+::\+Final\+Credits}}
+\subsubsection{\texorpdfstring{get\+I\+D()}{getID()}}
+{\footnotesize\ttfamily int states.\+Final\+Credits.\+get\+ID (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get the ID of this state
+
+\begin{DoxyReturn}{Returns}
+The game unique ID of this state 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1state_1_1_game_state_a54f2bc6a91feaf0614a5ef19f1d03313}{org.\+newdawn.\+slick.\+state.\+Game\+State}}.
+
+
+\begin{DoxyCode}
+50                        \{
+51         \textcolor{keywordflow}{return} \mbox{\hyperlink{classstates_1_1_final_credits_afdc1fee5ede57fa6fcc6d70025a0b7c5}{id}};
+52     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classstates_1_1_final_credits_acb91cf3998cc530727fb2ca5926c57b1}\label{classstates_1_1_final_credits_acb91cf3998cc530727fb2ca5926c57b1}} 
+\index{states\+::\+Final\+Credits@{states\+::\+Final\+Credits}!init@{init}}
+\index{init@{init}!states\+::\+Final\+Credits@{states\+::\+Final\+Credits}}
+\subsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily void states.\+Final\+Credits.\+init (\begin{DoxyParamCaption}\item[{final \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_game_container}{Game\+Container}}}]{container,  }\item[{final \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1_state_based_game}{State\+Based\+Game}}}]{game }\end{DoxyParamCaption}) throws \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_slick_exception}{Slick\+Exception}}\hspace{0.3cm}{\ttfamily [inline]}}
+
+Initialise the state. It should load any resources it needs at this stage
+
+
+\begin{DoxyParams}{Parameters}
+{\em container} & The container holding the game \\
+\hline
+{\em game} & The game holding this state \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Slick\+Exception} & Indicates a failure to initialise a resource for this state \\
+\hline
+\end{DoxyExceptions}
+
+
+Implements \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1state_1_1_game_state_aa799a369e0fcfe6822d2d586fa6f5bbc}{org.\+newdawn.\+slick.\+state.\+Game\+State}}.
+
+
+\begin{DoxyCode}
+55                                                                                                      \{
+56         \mbox{\hyperlink{classstates_1_1_final_credits_a03543cc856cb4e1b2fb064dc86913fbc}{font}}.\mbox{\hyperlink{classgui_1_1_g_u_i_font_ae1fccb6783e7c0f11fdcedd36362585d}{initFont}}(Color.yellow);
+57         \mbox{\hyperlink{classstates_1_1_final_credits_aa72712a2592f1b5e7025dc65bf28c43d}{strings}}=\textcolor{keyword}{new} String[6];
+58         \mbox{\hyperlink{classstates_1_1_final_credits_aa72712a2592f1b5e7025dc65bf28c43d}{strings}}[0]=\textcolor{stringliteral}{"Fin"};
+59         \mbox{\hyperlink{classstates_1_1_final_credits_aa72712a2592f1b5e7025dc65bf28c43d}{strings}}[1]=\textcolor{stringliteral}{"Enrique (el boss)"};
+60         \mbox{\hyperlink{classstates_1_1_final_credits_aa72712a2592f1b5e7025dc65bf28c43d}{strings}}[2]=\textcolor{stringliteral}{"Beatriz (la musiquitas)"};
+61         \mbox{\hyperlink{classstates_1_1_final_credits_aa72712a2592f1b5e7025dc65bf28c43d}{strings}}[3]=\textcolor{stringliteral}{"Ignacio (el malote)"};
+62         \mbox{\hyperlink{classstates_1_1_final_credits_aa72712a2592f1b5e7025dc65bf28c43d}{strings}}[4]=\textcolor{stringliteral}{"Pedro (el artista)"};
+63         \mbox{\hyperlink{classstates_1_1_final_credits_aa72712a2592f1b5e7025dc65bf28c43d}{strings}}[5]=\textcolor{stringliteral}{"Raúl (el otro malote)"};
+64     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classstates_1_1_final_credits_a48f6a5fefe171870bf0d8419f15b791d}\label{classstates_1_1_final_credits_a48f6a5fefe171870bf0d8419f15b791d}} 
+\index{states\+::\+Final\+Credits@{states\+::\+Final\+Credits}!render@{render}}
+\index{render@{render}!states\+::\+Final\+Credits@{states\+::\+Final\+Credits}}
+\subsubsection{\texorpdfstring{render()}{render()}}
+{\footnotesize\ttfamily void states.\+Final\+Credits.\+render (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_game_container}{Game\+Container}}}]{container,  }\item[{\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1_state_based_game}{State\+Based\+Game}}}]{game,  }\item[{\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_graphics}{Graphics}}}]{g }\end{DoxyParamCaption}) throws \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_slick_exception}{Slick\+Exception}}\hspace{0.3cm}{\ttfamily [inline]}}
+
+Render this state to the game\textquotesingle{}s graphics context
+
+
+\begin{DoxyParams}{Parameters}
+{\em container} & The container holding the game \\
+\hline
+{\em game} & The game holding this state \\
+\hline
+{\em g} & The graphics context to render to \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Slick\+Exception} & Indicates a failure to render an artifact \\
+\hline
+\end{DoxyExceptions}
+
+
+Implements \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1state_1_1_game_state_a065352d2725274c5244cd022f226eb17}{org.\+newdawn.\+slick.\+state.\+Game\+State}}.
+
+
+\begin{DoxyCode}
+67                                                                                                        \{
+68         FontUtils.drawCenter(\mbox{\hyperlink{classstates_1_1_final_credits_a03543cc856cb4e1b2fb064dc86913fbc}{font}}, \mbox{\hyperlink{classstates_1_1_final_credits_aa72712a2592f1b5e7025dc65bf28c43d}{strings}}[\mbox{\hyperlink{classstates_1_1_final_credits_aecf9d8b376badec5eed9ad03986ec8c3}{now}}%\mbox{\hyperlink{classstates_1_1_final_credits_aa72712a2592f1b5e7025dc65bf28c43d}{strings}}.length], container.getWidth()/
+      10, container.getHeight()/10, 8*container.getWidth()/10);
+69     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classstates_1_1_final_credits_a4a374cbcb25a79fa9f8590d2c2653df3}\label{classstates_1_1_final_credits_a4a374cbcb25a79fa9f8590d2c2653df3}} 
+\index{states\+::\+Final\+Credits@{states\+::\+Final\+Credits}!update@{update}}
+\index{update@{update}!states\+::\+Final\+Credits@{states\+::\+Final\+Credits}}
+\subsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void states.\+Final\+Credits.\+update (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_game_container}{Game\+Container}}}]{container,  }\item[{\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1_state_based_game}{State\+Based\+Game}}}]{game,  }\item[{int}]{delta }\end{DoxyParamCaption}) throws \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_slick_exception}{Slick\+Exception}}\hspace{0.3cm}{\ttfamily [inline]}}
+
+Update the state\textquotesingle{}s logic based on the amount of time thats passed
+
+
+\begin{DoxyParams}{Parameters}
+{\em container} & The container holding the game \\
+\hline
+{\em game} & The game holding this state \\
+\hline
+{\em delta} & The amount of time thats passed in millisecond since last update \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Slick\+Exception} & Indicates an internal error that will be reported through the standard framework mechanism \\
+\hline
+\end{DoxyExceptions}
+
+
+Implements \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1state_1_1_game_state_ab5ec3bc37a9bd1eb5679577408c562c1}{org.\+newdawn.\+slick.\+state.\+Game\+State}}.
+
+
+\begin{DoxyCode}
+72                                                                                                       \{
+73         \textcolor{keywordflow}{if}(\mbox{\hyperlink{classstates_1_1_final_credits_a982b8c49cb19952faa0cd28aedea2e28}{time}}>\mbox{\hyperlink{classstates_1_1_final_credits_a111fac3fed4b39752db6f751018aac08}{CHANGE\_TIME}})\{
+74             \mbox{\hyperlink{classstates_1_1_final_credits_a982b8c49cb19952faa0cd28aedea2e28}{time}}=0;
+75             \mbox{\hyperlink{classstates_1_1_final_credits_aecf9d8b376badec5eed9ad03986ec8c3}{now}}++;
+76             \textcolor{keywordflow}{if}(\mbox{\hyperlink{classstates_1_1_final_credits_aecf9d8b376badec5eed9ad03986ec8c3}{now}}>=\mbox{\hyperlink{classstates_1_1_final_credits_aa72712a2592f1b5e7025dc65bf28c43d}{strings}}.length)\{
+77                 game.enterState(NotEvenAnEarlyAccess.MAIN\_MENU, \mbox{\hyperlink{classstates_1_1_final_credits_ad16d712e09a7a1691ef0c5c1e8af43a2}{to}}, \mbox{\hyperlink{classstates_1_1_final_credits_ad16d712e09a7a1691ef0c5c1e8af43a2}{to}});
+78             \}
+79         \}
+80         \mbox{\hyperlink{classstates_1_1_final_credits_a982b8c49cb19952faa0cd28aedea2e28}{time}}+=delta;
+81     \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classstates_1_1_final_credits_a111fac3fed4b39752db6f751018aac08}\label{classstates_1_1_final_credits_a111fac3fed4b39752db6f751018aac08}} 
+\index{states\+::\+Final\+Credits@{states\+::\+Final\+Credits}!C\+H\+A\+N\+G\+E\+\_\+\+T\+I\+ME@{C\+H\+A\+N\+G\+E\+\_\+\+T\+I\+ME}}
+\index{C\+H\+A\+N\+G\+E\+\_\+\+T\+I\+ME@{C\+H\+A\+N\+G\+E\+\_\+\+T\+I\+ME}!states\+::\+Final\+Credits@{states\+::\+Final\+Credits}}
+\subsubsection{\texorpdfstring{C\+H\+A\+N\+G\+E\+\_\+\+T\+I\+ME}{CHANGE\_TIME}}
+{\footnotesize\ttfamily final int states.\+Final\+Credits.\+C\+H\+A\+N\+G\+E\+\_\+\+T\+I\+ME =5000\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{classstates_1_1_final_credits_a03543cc856cb4e1b2fb064dc86913fbc}\label{classstates_1_1_final_credits_a03543cc856cb4e1b2fb064dc86913fbc}} 
+\index{states\+::\+Final\+Credits@{states\+::\+Final\+Credits}!font@{font}}
+\index{font@{font}!states\+::\+Final\+Credits@{states\+::\+Final\+Credits}}
+\subsubsection{\texorpdfstring{font}{font}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classgui_1_1_g_u_i_font}{G\+U\+I\+Font}} states.\+Final\+Credits.\+font\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classstates_1_1_final_credits_afdc1fee5ede57fa6fcc6d70025a0b7c5}\label{classstates_1_1_final_credits_afdc1fee5ede57fa6fcc6d70025a0b7c5}} 
+\index{states\+::\+Final\+Credits@{states\+::\+Final\+Credits}!id@{id}}
+\index{id@{id}!states\+::\+Final\+Credits@{states\+::\+Final\+Credits}}
+\subsubsection{\texorpdfstring{id}{id}}
+{\footnotesize\ttfamily int states.\+Final\+Credits.\+id\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classstates_1_1_final_credits_aecf9d8b376badec5eed9ad03986ec8c3}\label{classstates_1_1_final_credits_aecf9d8b376badec5eed9ad03986ec8c3}} 
+\index{states\+::\+Final\+Credits@{states\+::\+Final\+Credits}!now@{now}}
+\index{now@{now}!states\+::\+Final\+Credits@{states\+::\+Final\+Credits}}
+\subsubsection{\texorpdfstring{now}{now}}
+{\footnotesize\ttfamily int states.\+Final\+Credits.\+now\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classstates_1_1_final_credits_aa72712a2592f1b5e7025dc65bf28c43d}\label{classstates_1_1_final_credits_aa72712a2592f1b5e7025dc65bf28c43d}} 
+\index{states\+::\+Final\+Credits@{states\+::\+Final\+Credits}!strings@{strings}}
+\index{strings@{strings}!states\+::\+Final\+Credits@{states\+::\+Final\+Credits}}
+\subsubsection{\texorpdfstring{strings}{strings}}
+{\footnotesize\ttfamily String \mbox{[}$\,$\mbox{]} states.\+Final\+Credits.\+strings\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classstates_1_1_final_credits_a4fd006baab2595e4e9ffd3ac7ca8998f}\label{classstates_1_1_final_credits_a4fd006baab2595e4e9ffd3ac7ca8998f}} 
+\index{states\+::\+Final\+Credits@{states\+::\+Final\+Credits}!ti@{ti}}
+\index{ti@{ti}!states\+::\+Final\+Credits@{states\+::\+Final\+Credits}}
+\subsubsection{\texorpdfstring{ti}{ti}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_transition}{Transition}} states.\+Final\+Credits.\+ti\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classstates_1_1_final_credits_a982b8c49cb19952faa0cd28aedea2e28}\label{classstates_1_1_final_credits_a982b8c49cb19952faa0cd28aedea2e28}} 
+\index{states\+::\+Final\+Credits@{states\+::\+Final\+Credits}!time@{time}}
+\index{time@{time}!states\+::\+Final\+Credits@{states\+::\+Final\+Credits}}
+\subsubsection{\texorpdfstring{time}{time}}
+{\footnotesize\ttfamily int states.\+Final\+Credits.\+time\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classstates_1_1_final_credits_ad16d712e09a7a1691ef0c5c1e8af43a2}\label{classstates_1_1_final_credits_ad16d712e09a7a1691ef0c5c1e8af43a2}} 
+\index{states\+::\+Final\+Credits@{states\+::\+Final\+Credits}!to@{to}}
+\index{to@{to}!states\+::\+Final\+Credits@{states\+::\+Final\+Credits}}
+\subsubsection{\texorpdfstring{to}{to}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_transition}{Transition}} states.\+Final\+Credits.\+to\hspace{0.3cm}{\ttfamily [private]}}
+

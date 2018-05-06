@@ -1,0 +1,371 @@
+\hypertarget{classorg_1_1newdawn_1_1slick_1_1geom_1_1_path}{}\section{org.\+newdawn.\+slick.\+geom.\+Path Class Reference}
+\label{classorg_1_1newdawn_1_1slick_1_1geom_1_1_path}\index{org.\+newdawn.\+slick.\+geom.\+Path@{org.\+newdawn.\+slick.\+geom.\+Path}}
+Inheritance diagram for org.\+newdawn.\+slick.\+geom.\+Path\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classorg_1_1newdawn_1_1slick_1_1geom_1_1_path}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_path_a5fef0f2e57590f14cccad52e87d5c0bb}{Path}} (float sx, float sy)
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_path_a0f2db2e3edd88b4deb26c107473bb8ea}{start\+Hole}} (float sx, float sy)
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_path_a5ccd0274fe2b8aa3db05ddd777ff2bce}{line\+To}} (float \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_shape_a3e985bfff386c15a4efaad03d8ad60d3}{x}}, float \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_shape_a9f934baded6a1b65ebb69e7e5f80ea00}{y}})
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_path_aa4171633209585dddcf46195c30e9bc9}{close}} ()
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_path_aa7ba55ecbfb56e6cfd2158086d362051}{curve\+To}} (float \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_shape_a3e985bfff386c15a4efaad03d8ad60d3}{x}}, float \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_shape_a9f934baded6a1b65ebb69e7e5f80ea00}{y}}, float cx1, float cy1, float cx2, float cy2)
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_path_a680f7d8723465657fc576c0fa123e02a}{curve\+To}} (float \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_shape_a3e985bfff386c15a4efaad03d8ad60d3}{x}}, float \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_shape_a9f934baded6a1b65ebb69e7e5f80ea00}{y}}, float cx1, float cy1, float cx2, float cy2, int segments)
+\item 
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_shape}{Shape}} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_path_a17055610942f82343760c043ace084df}{transform}} (Transform transform)
+\item 
+boolean \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_path_a237262eda546795e1ff49f4d8da5c383}{closed}} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_path_ade98d8658a21b9e18b03977a91ef21ae}{create\+Points}} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+Array\+List \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_path_ae23520204ac0d447d1ca0e88467c8efe}{transform}} (Array\+List pts, Transform t)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Array\+List \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_path_af67630a074a387ccbe4ea8ad67e013d8}{local\+Points}} = new Array\+List()
+\item 
+float \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_path_acbc8efe2abb56bf2aa33889ec35a2e3b}{cx}}
+\item 
+float \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_path_aecd6f6aaf8fd79b3acec8a24c2fd1a83}{cy}}
+\item 
+boolean \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_path_ad5c0e47e461c78c960f30a7085c45c93}{closed}}
+\item 
+Array\+List \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_path_aaed98e69613a609d6461530dc8c2f20b}{holes}} = new Array\+List()
+\item 
+Array\+List \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_path_a55b64931dd61b899d51a58c1e969e728}{hole}}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+A shape built from lines and curves. Hole support is present but restricted.
+
+\begin{DoxyAuthor}{Author}
+kevin 
+\end{DoxyAuthor}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1geom_1_1_path_a5fef0f2e57590f14cccad52e87d5c0bb}\label{classorg_1_1newdawn_1_1slick_1_1geom_1_1_path_a5fef0f2e57590f14cccad52e87d5c0bb}} 
+\index{org\+::newdawn\+::slick\+::geom\+::\+Path@{org\+::newdawn\+::slick\+::geom\+::\+Path}!Path@{Path}}
+\index{Path@{Path}!org\+::newdawn\+::slick\+::geom\+::\+Path@{org\+::newdawn\+::slick\+::geom\+::\+Path}}
+\subsubsection{\texorpdfstring{Path()}{Path()}}
+{\footnotesize\ttfamily org.\+newdawn.\+slick.\+geom.\+Path.\+Path (\begin{DoxyParamCaption}\item[{float}]{sx,  }\item[{float}]{sy }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Create a new path
+
+
+\begin{DoxyParams}{Parameters}
+{\em sx} & The start x coordinate of the path \\
+\hline
+{\em sy} & The start y coordiante of the path \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+31                                     \{
+32         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_path_af67630a074a387ccbe4ea8ad67e013d8}{localPoints}}.add(\textcolor{keyword}{new} \textcolor{keywordtype}{float}[] \{sx,sy\});
+33         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_path_acbc8efe2abb56bf2aa33889ec35a2e3b}{cx}} = sx;
+34         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_path_aecd6f6aaf8fd79b3acec8a24c2fd1a83}{cy}} = sy;
+35         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_shape_a61fe1954d2fdefc72c34b284f4fcfdb4}{pointsDirty}} = \textcolor{keyword}{true};
+36     \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1geom_1_1_path_aa4171633209585dddcf46195c30e9bc9}\label{classorg_1_1newdawn_1_1slick_1_1geom_1_1_path_aa4171633209585dddcf46195c30e9bc9}} 
+\index{org\+::newdawn\+::slick\+::geom\+::\+Path@{org\+::newdawn\+::slick\+::geom\+::\+Path}!close@{close}}
+\index{close@{close}!org\+::newdawn\+::slick\+::geom\+::\+Path@{org\+::newdawn\+::slick\+::geom\+::\+Path}}
+\subsubsection{\texorpdfstring{close()}{close()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+geom.\+Path.\+close (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Close the path to form a polygon 
+\begin{DoxyCode}
+70                         \{
+71         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_path_a237262eda546795e1ff49f4d8da5c383}{closed}} = \textcolor{keyword}{true};
+72     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1geom_1_1_path_a237262eda546795e1ff49f4d8da5c383}\label{classorg_1_1newdawn_1_1slick_1_1geom_1_1_path_a237262eda546795e1ff49f4d8da5c383}} 
+\index{org\+::newdawn\+::slick\+::geom\+::\+Path@{org\+::newdawn\+::slick\+::geom\+::\+Path}!closed@{closed}}
+\index{closed@{closed}!org\+::newdawn\+::slick\+::geom\+::\+Path@{org\+::newdawn\+::slick\+::geom\+::\+Path}}
+\subsubsection{\texorpdfstring{closed()}{closed()}}
+{\footnotesize\ttfamily boolean org.\+newdawn.\+slick.\+geom.\+Path.\+closed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Calculate the triangles that can fill this shape True if this is a closed shape
+
+\begin{DoxyReturn}{Returns}
+True if this is a closed shape 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+238                             \{
+239         \textcolor{keywordflow}{return} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_path_a237262eda546795e1ff49f4d8da5c383}{closed}};
+240     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1geom_1_1_path_ade98d8658a21b9e18b03977a91ef21ae}\label{classorg_1_1newdawn_1_1slick_1_1geom_1_1_path_ade98d8658a21b9e18b03977a91ef21ae}} 
+\index{org\+::newdawn\+::slick\+::geom\+::\+Path@{org\+::newdawn\+::slick\+::geom\+::\+Path}!create\+Points@{create\+Points}}
+\index{create\+Points@{create\+Points}!org\+::newdawn\+::slick\+::geom\+::\+Path@{org\+::newdawn\+::slick\+::geom\+::\+Path}}
+\subsubsection{\texorpdfstring{create\+Points()}{createPoints()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+geom.\+Path.\+create\+Points (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_shape_a2f5907ca87e87f8794161f46389ff8c8}{org.\+newdawn.\+slick.\+geom.\+Shape\+::create\+Points()}} 
+\end{DoxySeeAlso}
+
+\begin{DoxyCode}
+125                                   \{
+126         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_shape_a8b4d4058734bbb3b96072e470b92aa37}{points}} = \textcolor{keyword}{new} \textcolor{keywordtype}{float}[\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_path_af67630a074a387ccbe4ea8ad67e013d8}{localPoints}}.size() * 2];
+127         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i=0;i<\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_path_af67630a074a387ccbe4ea8ad67e013d8}{localPoints}}.size();i++) \{
+128             \textcolor{keywordtype}{float}[] p = (\textcolor{keywordtype}{float}[]) \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_path_af67630a074a387ccbe4ea8ad67e013d8}{localPoints}}.get(i);
+129             \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_shape_a8b4d4058734bbb3b96072e470b92aa37}{points}}[(i*2)] = p[0];
+130             \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_shape_a8b4d4058734bbb3b96072e470b92aa37}{points}}[(i*2)+1] = p[1];
+131         \}
+132     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1geom_1_1_path_aa7ba55ecbfb56e6cfd2158086d362051}\label{classorg_1_1newdawn_1_1slick_1_1geom_1_1_path_aa7ba55ecbfb56e6cfd2158086d362051}} 
+\index{org\+::newdawn\+::slick\+::geom\+::\+Path@{org\+::newdawn\+::slick\+::geom\+::\+Path}!curve\+To@{curve\+To}}
+\index{curve\+To@{curve\+To}!org\+::newdawn\+::slick\+::geom\+::\+Path@{org\+::newdawn\+::slick\+::geom\+::\+Path}}
+\subsubsection{\texorpdfstring{curve\+To()}{curveTo()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+geom.\+Path.\+curve\+To (\begin{DoxyParamCaption}\item[{float}]{x,  }\item[{float}]{y,  }\item[{float}]{cx1,  }\item[{float}]{cy1,  }\item[{float}]{cx2,  }\item[{float}]{cy2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Add a curve to the specified location (using the default segments 10)
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & The destination x coordinate \\
+\hline
+{\em y} & The destination y coordiante \\
+\hline
+{\em cx1} & The x coordiante of the first control point \\
+\hline
+{\em cy1} & The y coordiante of the first control point \\
+\hline
+{\em cx2} & The x coordinate of the second control point \\
+\hline
+{\em cy2} & The y coordinate of the second control point \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+84                                                                                       \{
+85         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_path_aa7ba55ecbfb56e6cfd2158086d362051}{curveTo}}(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_shape_a3e985bfff386c15a4efaad03d8ad60d3}{x}},\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_shape_a9f934baded6a1b65ebb69e7e5f80ea00}{y}},cx1,cy1,cx2,cy2,10);
+86     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1geom_1_1_path_a680f7d8723465657fc576c0fa123e02a}\label{classorg_1_1newdawn_1_1slick_1_1geom_1_1_path_a680f7d8723465657fc576c0fa123e02a}} 
+\index{org\+::newdawn\+::slick\+::geom\+::\+Path@{org\+::newdawn\+::slick\+::geom\+::\+Path}!curve\+To@{curve\+To}}
+\index{curve\+To@{curve\+To}!org\+::newdawn\+::slick\+::geom\+::\+Path@{org\+::newdawn\+::slick\+::geom\+::\+Path}}
+\subsubsection{\texorpdfstring{curve\+To()}{curveTo()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+geom.\+Path.\+curve\+To (\begin{DoxyParamCaption}\item[{float}]{x,  }\item[{float}]{y,  }\item[{float}]{cx1,  }\item[{float}]{cy1,  }\item[{float}]{cx2,  }\item[{float}]{cy2,  }\item[{int}]{segments }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Add a curve to the specified location (specifing the number of segments)
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & The destination x coordinate \\
+\hline
+{\em y} & The destination y coordiante \\
+\hline
+{\em cx1} & The x coordiante of the first control point \\
+\hline
+{\em cy1} & The y coordiante of the first control point \\
+\hline
+{\em cx2} & The x coordinate of the second control point \\
+\hline
+{\em cy2} & The y coordinate of the second control point \\
+\hline
+{\em segments} & The number of segments to use for the new curve \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+99                                                                                                     \{
+100         \textcolor{comment}{// special case for zero movement}
+101         \textcolor{keywordflow}{if} ((\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_path_acbc8efe2abb56bf2aa33889ec35a2e3b}{cx}} == \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_shape_a3e985bfff386c15a4efaad03d8ad60d3}{x}}) && (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_path_aecd6f6aaf8fd79b3acec8a24c2fd1a83}{cy}} == \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_shape_a9f934baded6a1b65ebb69e7e5f80ea00}{y}})) \{
+102             \textcolor{keywordflow}{return};
+103         \}
+104         
+105         Curve curve = \textcolor{keyword}{new} Curve(\textcolor{keyword}{new} Vector2f(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_path_acbc8efe2abb56bf2aa33889ec35a2e3b}{cx}},\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_path_aecd6f6aaf8fd79b3acec8a24c2fd1a83}{cy}}),\textcolor{keyword}{new} Vector2f(cx1,cy1),\textcolor{keyword}{new} Vector2f(cx2,cy2),\textcolor{keyword}{new} 
+      Vector2f(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_shape_a3e985bfff386c15a4efaad03d8ad60d3}{x}},\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_shape_a9f934baded6a1b65ebb69e7e5f80ea00}{y}}));
+106         \textcolor{keywordtype}{float} step = 1.0f / segments;
+107         
+108         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i=1;i<segments+1;i++) \{
+109             \textcolor{keywordtype}{float} t = i * step;
+110             Vector2f p = curve.pointAt(t);
+111             \textcolor{keywordflow}{if} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_path_a55b64931dd61b899d51a58c1e969e728}{hole}} != null) \{
+112                 \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_path_a55b64931dd61b899d51a58c1e969e728}{hole}}.add(\textcolor{keyword}{new} \textcolor{keywordtype}{float}[] \{p.x,p.y\});
+113             \} \textcolor{keywordflow}{else} \{
+114                 \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_path_af67630a074a387ccbe4ea8ad67e013d8}{localPoints}}.add(\textcolor{keyword}{new} \textcolor{keywordtype}{float}[] \{p.x,p.y\});
+115             \}
+116             \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_path_acbc8efe2abb56bf2aa33889ec35a2e3b}{cx}} = p.x;
+117             \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_path_aecd6f6aaf8fd79b3acec8a24c2fd1a83}{cy}} = p.y;
+118         \}
+119         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_shape_a61fe1954d2fdefc72c34b284f4fcfdb4}{pointsDirty}} = \textcolor{keyword}{true};
+120     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1geom_1_1_path_a5ccd0274fe2b8aa3db05ddd777ff2bce}\label{classorg_1_1newdawn_1_1slick_1_1geom_1_1_path_a5ccd0274fe2b8aa3db05ddd777ff2bce}} 
+\index{org\+::newdawn\+::slick\+::geom\+::\+Path@{org\+::newdawn\+::slick\+::geom\+::\+Path}!line\+To@{line\+To}}
+\index{line\+To@{line\+To}!org\+::newdawn\+::slick\+::geom\+::\+Path@{org\+::newdawn\+::slick\+::geom\+::\+Path}}
+\subsubsection{\texorpdfstring{line\+To()}{lineTo()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+geom.\+Path.\+line\+To (\begin{DoxyParamCaption}\item[{float}]{x,  }\item[{float}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Add a line to the contour or hole which ends at the specified location.
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & The x coordinate to draw the line to \\
+\hline
+{\em y} & The y coordiante to draw the line to \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+56                                          \{
+57         \textcolor{keywordflow}{if} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_path_a55b64931dd61b899d51a58c1e969e728}{hole}} != null) \{
+58             \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_path_a55b64931dd61b899d51a58c1e969e728}{hole}}.add(\textcolor{keyword}{new} \textcolor{keywordtype}{float}[] \{\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_shape_a3e985bfff386c15a4efaad03d8ad60d3}{x}},\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_shape_a9f934baded6a1b65ebb69e7e5f80ea00}{y}}\});
+59         \} \textcolor{keywordflow}{else} \{
+60             \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_path_af67630a074a387ccbe4ea8ad67e013d8}{localPoints}}.add(\textcolor{keyword}{new} \textcolor{keywordtype}{float}[] \{\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_shape_a3e985bfff386c15a4efaad03d8ad60d3}{x}},\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_shape_a9f934baded6a1b65ebb69e7e5f80ea00}{y}}\});
+61         \}
+62         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_path_acbc8efe2abb56bf2aa33889ec35a2e3b}{cx}} = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_shape_a3e985bfff386c15a4efaad03d8ad60d3}{x}};
+63         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_path_aecd6f6aaf8fd79b3acec8a24c2fd1a83}{cy}} = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_shape_a9f934baded6a1b65ebb69e7e5f80ea00}{y}};
+64         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_shape_a61fe1954d2fdefc72c34b284f4fcfdb4}{pointsDirty}} = \textcolor{keyword}{true};
+65     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1geom_1_1_path_a0f2db2e3edd88b4deb26c107473bb8ea}\label{classorg_1_1newdawn_1_1slick_1_1geom_1_1_path_a0f2db2e3edd88b4deb26c107473bb8ea}} 
+\index{org\+::newdawn\+::slick\+::geom\+::\+Path@{org\+::newdawn\+::slick\+::geom\+::\+Path}!start\+Hole@{start\+Hole}}
+\index{start\+Hole@{start\+Hole}!org\+::newdawn\+::slick\+::geom\+::\+Path@{org\+::newdawn\+::slick\+::geom\+::\+Path}}
+\subsubsection{\texorpdfstring{start\+Hole()}{startHole()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+geom.\+Path.\+start\+Hole (\begin{DoxyParamCaption}\item[{float}]{sx,  }\item[{float}]{sy }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Start building a hole in the previously defined contour
+
+
+\begin{DoxyParams}{Parameters}
+{\em sx} & The start point of the hole \\
+\hline
+{\em sy} & The start point of the hole \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+44                                               \{
+45         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_path_a55b64931dd61b899d51a58c1e969e728}{hole}} = \textcolor{keyword}{new} ArrayList();
+46         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_path_aaed98e69613a609d6461530dc8c2f20b}{holes}}.add(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_path_a55b64931dd61b899d51a58c1e969e728}{hole}});
+47     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1geom_1_1_path_a17055610942f82343760c043ace084df}\label{classorg_1_1newdawn_1_1slick_1_1geom_1_1_path_a17055610942f82343760c043ace084df}} 
+\index{org\+::newdawn\+::slick\+::geom\+::\+Path@{org\+::newdawn\+::slick\+::geom\+::\+Path}!transform@{transform}}
+\index{transform@{transform}!org\+::newdawn\+::slick\+::geom\+::\+Path@{org\+::newdawn\+::slick\+::geom\+::\+Path}}
+\subsubsection{\texorpdfstring{transform()}{transform()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_shape}{Shape}} org.\+newdawn.\+slick.\+geom.\+Path.\+transform (\begin{DoxyParamCaption}\item[{Transform}]{transform }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_shape_a463826a085479c379e40f012e970b997}{org.\+newdawn.\+slick.\+geom.\+Shape\+::transform}}(org.\+newdawn.\+slick.\+geom.\+Transform) 
+\end{DoxySeeAlso}
+
+\begin{DoxyCode}
+137                                                 \{
+138         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_path_a5fef0f2e57590f14cccad52e87d5c0bb}{Path}} p = \textcolor{keyword}{new} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_path_a5fef0f2e57590f14cccad52e87d5c0bb}{Path}}(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_path_acbc8efe2abb56bf2aa33889ec35a2e3b}{cx}},\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_path_aecd6f6aaf8fd79b3acec8a24c2fd1a83}{cy}});
+139         p.localPoints = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_path_a17055610942f82343760c043ace084df}{transform}}(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_path_af67630a074a387ccbe4ea8ad67e013d8}{localPoints}}, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_path_a17055610942f82343760c043ace084df}{transform}});
+140         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i=0;i<\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_path_aaed98e69613a609d6461530dc8c2f20b}{holes}}.size();i++) \{
+141             p.holes.add(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_path_a17055610942f82343760c043ace084df}{transform}}((ArrayList) \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_path_aaed98e69613a609d6461530dc8c2f20b}{holes}}.get(i), 
+      \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_path_a17055610942f82343760c043ace084df}{transform}}));
+142         \}
+143         p.closed = this.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_path_a237262eda546795e1ff49f4d8da5c383}{closed}};
+144         
+145         \textcolor{keywordflow}{return} p;
+146     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1geom_1_1_path_ae23520204ac0d447d1ca0e88467c8efe}\label{classorg_1_1newdawn_1_1slick_1_1geom_1_1_path_ae23520204ac0d447d1ca0e88467c8efe}} 
+\index{org\+::newdawn\+::slick\+::geom\+::\+Path@{org\+::newdawn\+::slick\+::geom\+::\+Path}!transform@{transform}}
+\index{transform@{transform}!org\+::newdawn\+::slick\+::geom\+::\+Path@{org\+::newdawn\+::slick\+::geom\+::\+Path}}
+\subsubsection{\texorpdfstring{transform()}{transform()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Array\+List org.\+newdawn.\+slick.\+geom.\+Path.\+transform (\begin{DoxyParamCaption}\item[{Array\+List}]{pts,  }\item[{Transform}]{t }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+Transform a list of points
+
+
+\begin{DoxyParams}{Parameters}
+{\em pts} & The pts to transform \\
+\hline
+{\em t} & The transform to apply \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The transformed points 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+155                                                             \{
+156         \textcolor{keywordtype}{float}[] in = \textcolor{keyword}{new} \textcolor{keywordtype}{float}[pts.size()*2];
+157         \textcolor{keywordtype}{float}[] out = \textcolor{keyword}{new} \textcolor{keywordtype}{float}[pts.size()*2];
+158     
+159         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i=0;i<pts.size();i++) \{
+160             in[i*2] = ((\textcolor{keywordtype}{float}[]) pts.get(i))[0];
+161             in[(i*2)+1] = ((\textcolor{keywordtype}{float}[]) pts.get(i))[1];
+162         \}
+163         t.transform(in, 0, out, 0, pts.size());
+164         
+165         ArrayList outList = \textcolor{keyword}{new} ArrayList();
+166         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i=0;i<pts.size();i++) \{
+167             outList.add(\textcolor{keyword}{new} \textcolor{keywordtype}{float}[] \{out[(i*2)],out[(i*2)+1]\});
+168         \}
+169         
+170         \textcolor{keywordflow}{return} outList;
+171     \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1geom_1_1_path_ad5c0e47e461c78c960f30a7085c45c93}\label{classorg_1_1newdawn_1_1slick_1_1geom_1_1_path_ad5c0e47e461c78c960f30a7085c45c93}} 
+\index{org\+::newdawn\+::slick\+::geom\+::\+Path@{org\+::newdawn\+::slick\+::geom\+::\+Path}!closed@{closed}}
+\index{closed@{closed}!org\+::newdawn\+::slick\+::geom\+::\+Path@{org\+::newdawn\+::slick\+::geom\+::\+Path}}
+\subsubsection{\texorpdfstring{closed}{closed}}
+{\footnotesize\ttfamily boolean org.\+newdawn.\+slick.\+geom.\+Path.\+closed\hspace{0.3cm}{\ttfamily [private]}}
+
+True if the path has been closed \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1geom_1_1_path_acbc8efe2abb56bf2aa33889ec35a2e3b}\label{classorg_1_1newdawn_1_1slick_1_1geom_1_1_path_acbc8efe2abb56bf2aa33889ec35a2e3b}} 
+\index{org\+::newdawn\+::slick\+::geom\+::\+Path@{org\+::newdawn\+::slick\+::geom\+::\+Path}!cx@{cx}}
+\index{cx@{cx}!org\+::newdawn\+::slick\+::geom\+::\+Path@{org\+::newdawn\+::slick\+::geom\+::\+Path}}
+\subsubsection{\texorpdfstring{cx}{cx}}
+{\footnotesize\ttfamily float org.\+newdawn.\+slick.\+geom.\+Path.\+cx\hspace{0.3cm}{\ttfamily [private]}}
+
+The current x coordinate \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1geom_1_1_path_aecd6f6aaf8fd79b3acec8a24c2fd1a83}\label{classorg_1_1newdawn_1_1slick_1_1geom_1_1_path_aecd6f6aaf8fd79b3acec8a24c2fd1a83}} 
+\index{org\+::newdawn\+::slick\+::geom\+::\+Path@{org\+::newdawn\+::slick\+::geom\+::\+Path}!cy@{cy}}
+\index{cy@{cy}!org\+::newdawn\+::slick\+::geom\+::\+Path@{org\+::newdawn\+::slick\+::geom\+::\+Path}}
+\subsubsection{\texorpdfstring{cy}{cy}}
+{\footnotesize\ttfamily float org.\+newdawn.\+slick.\+geom.\+Path.\+cy\hspace{0.3cm}{\ttfamily [private]}}
+
+The current y coordiante \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1geom_1_1_path_a55b64931dd61b899d51a58c1e969e728}\label{classorg_1_1newdawn_1_1slick_1_1geom_1_1_path_a55b64931dd61b899d51a58c1e969e728}} 
+\index{org\+::newdawn\+::slick\+::geom\+::\+Path@{org\+::newdawn\+::slick\+::geom\+::\+Path}!hole@{hole}}
+\index{hole@{hole}!org\+::newdawn\+::slick\+::geom\+::\+Path@{org\+::newdawn\+::slick\+::geom\+::\+Path}}
+\subsubsection{\texorpdfstring{hole}{hole}}
+{\footnotesize\ttfamily Array\+List org.\+newdawn.\+slick.\+geom.\+Path.\+hole\hspace{0.3cm}{\ttfamily [private]}}
+
+The current hole being built \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1geom_1_1_path_aaed98e69613a609d6461530dc8c2f20b}\label{classorg_1_1newdawn_1_1slick_1_1geom_1_1_path_aaed98e69613a609d6461530dc8c2f20b}} 
+\index{org\+::newdawn\+::slick\+::geom\+::\+Path@{org\+::newdawn\+::slick\+::geom\+::\+Path}!holes@{holes}}
+\index{holes@{holes}!org\+::newdawn\+::slick\+::geom\+::\+Path@{org\+::newdawn\+::slick\+::geom\+::\+Path}}
+\subsubsection{\texorpdfstring{holes}{holes}}
+{\footnotesize\ttfamily Array\+List org.\+newdawn.\+slick.\+geom.\+Path.\+holes = new Array\+List()\hspace{0.3cm}{\ttfamily [private]}}
+
+The list of holes placed \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1geom_1_1_path_af67630a074a387ccbe4ea8ad67e013d8}\label{classorg_1_1newdawn_1_1slick_1_1geom_1_1_path_af67630a074a387ccbe4ea8ad67e013d8}} 
+\index{org\+::newdawn\+::slick\+::geom\+::\+Path@{org\+::newdawn\+::slick\+::geom\+::\+Path}!local\+Points@{local\+Points}}
+\index{local\+Points@{local\+Points}!org\+::newdawn\+::slick\+::geom\+::\+Path@{org\+::newdawn\+::slick\+::geom\+::\+Path}}
+\subsubsection{\texorpdfstring{local\+Points}{localPoints}}
+{\footnotesize\ttfamily Array\+List org.\+newdawn.\+slick.\+geom.\+Path.\+local\+Points = new Array\+List()\hspace{0.3cm}{\ttfamily [private]}}
+
+The local list of points 

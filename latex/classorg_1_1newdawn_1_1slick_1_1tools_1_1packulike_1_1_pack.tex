@@ -1,0 +1,227 @@
+\hypertarget{classorg_1_1newdawn_1_1slick_1_1tools_1_1packulike_1_1_pack}{}\section{org.\+newdawn.\+slick.\+tools.\+packulike.\+Pack Class Reference}
+\label{classorg_1_1newdawn_1_1slick_1_1tools_1_1packulike_1_1_pack}\index{org.\+newdawn.\+slick.\+tools.\+packulike.\+Pack@{org.\+newdawn.\+slick.\+tools.\+packulike.\+Pack}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1packulike_1_1_sheet}{Sheet}} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1packulike_1_1_pack_a9c82c8b100ebd308e42424b1dced8213}{pack}} (Array\+List files, int width, int height, int border, File out)  throws I\+O\+Exception 
+\item 
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1packulike_1_1_sheet}{Sheet}} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1packulike_1_1_pack_a303621f1e4590a9898ccbac6daa6c112}{pack\+Images}} (Array\+List images, int width, int height, int border, File out)  throws I\+O\+Exception 
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1packulike_1_1_pack_a13cb6a44408e07c044c05a75e783caf0}{main}} (String\mbox{[}$\,$\mbox{]} argv)  throws I\+O\+Exception 
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A daft image packer
+
+\begin{DoxyAuthor}{Author}
+kevin 
+\end{DoxyAuthor}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tools_1_1packulike_1_1_pack_a13cb6a44408e07c044c05a75e783caf0}\label{classorg_1_1newdawn_1_1slick_1_1tools_1_1packulike_1_1_pack_a13cb6a44408e07c044c05a75e783caf0}} 
+\index{org\+::newdawn\+::slick\+::tools\+::packulike\+::\+Pack@{org\+::newdawn\+::slick\+::tools\+::packulike\+::\+Pack}!main@{main}}
+\index{main@{main}!org\+::newdawn\+::slick\+::tools\+::packulike\+::\+Pack@{org\+::newdawn\+::slick\+::tools\+::packulike\+::\+Pack}}
+\subsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily static void org.\+newdawn.\+slick.\+tools.\+packulike.\+Pack.\+main (\begin{DoxyParamCaption}\item[{String \mbox{[}$\,$\mbox{]}}]{argv }\end{DoxyParamCaption}) throws I\+O\+Exception\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Entry point to the tool, just pack the current directory of images
+
+
+\begin{DoxyParams}{Parameters}
+{\em argv} & The arguments to the program \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em I\+O\+Exception} & Indicates a failure to write out files \\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyCode}
+148                                                               \{
+149         File dir = \textcolor{keyword}{new} File(\textcolor{stringliteral}{"."});
+150         dir = \textcolor{keyword}{new} File(\textcolor{stringliteral}{"C:\(\backslash\)\(\backslash\)eclipse\(\backslash\)\(\backslash\)grobot-workspace\(\backslash\)\(\backslash\)anon\(\backslash\)\(\backslash\)res\(\backslash\)\(\backslash\)tiles\(\backslash\)\(\backslash\)indoor1"});
+151         
+152         ArrayList list = \textcolor{keyword}{new} ArrayList();
+153         File[] files = dir.listFiles();
+154         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i=0;i<files.length;i++) \{
+155             \textcolor{keywordflow}{if} (files[i].getName().endsWith(\textcolor{stringliteral}{".png"})) \{
+156                 \textcolor{keywordflow}{if} (!files[i].getName().startsWith(\textcolor{stringliteral}{"output"})) \{
+157                     list.add(files[i]);
+158                 \}
+159             \}
+160         \}
+161         
+162         Pack packer = \textcolor{keyword}{new} Pack();
+163         packer.pack(list, 512, 512, 1, \textcolor{keyword}{new} File(dir, \textcolor{stringliteral}{"output.png"}));
+164         System.out.println(\textcolor{stringliteral}{"Output Generated."});
+165     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tools_1_1packulike_1_1_pack_a9c82c8b100ebd308e42424b1dced8213}\label{classorg_1_1newdawn_1_1slick_1_1tools_1_1packulike_1_1_pack_a9c82c8b100ebd308e42424b1dced8213}} 
+\index{org\+::newdawn\+::slick\+::tools\+::packulike\+::\+Pack@{org\+::newdawn\+::slick\+::tools\+::packulike\+::\+Pack}!pack@{pack}}
+\index{pack@{pack}!org\+::newdawn\+::slick\+::tools\+::packulike\+::\+Pack@{org\+::newdawn\+::slick\+::tools\+::packulike\+::\+Pack}}
+\subsubsection{\texorpdfstring{pack()}{pack()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1packulike_1_1_sheet}{Sheet}} org.\+newdawn.\+slick.\+tools.\+packulike.\+Pack.\+pack (\begin{DoxyParamCaption}\item[{Array\+List}]{files,  }\item[{int}]{width,  }\item[{int}]{height,  }\item[{int}]{border,  }\item[{File}]{out }\end{DoxyParamCaption}) throws I\+O\+Exception\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1packulike_1_1_pack}{Pack}} the images provided
+
+
+\begin{DoxyParams}{Parameters}
+{\em files} & The list of file objects pointing at the images to be packed \\
+\hline
+{\em width} & The width of the sheet to be generated \\
+\hline
+{\em height} & The height of the sheet to be generated \\
+\hline
+{\em border} & The border between sprites \\
+\hline
+{\em out} & The file to write out to \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The generated sprite sheet 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em I\+O\+Exception} & Indicates a failure to write out files \\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyCode}
+32                                                                                                        \{
+33         ArrayList images = \textcolor{keyword}{new} ArrayList();
+34         
+35         \textcolor{keywordflow}{try} \{
+36             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i=0;i<files.size();i++) \{
+37                 File file = (File) files.get(i);
+38                 \mbox{\hyperlink{class_sprite}{Sprite}} sprite = \textcolor{keyword}{new} \mbox{\hyperlink{class_sprite}{Sprite}}(file.getName(), ImageIO.read(file));
+39                 
+40                 images.add(sprite);
+41             \}
+42         \} \textcolor{keywordflow}{catch} (Exception e) \{
+43             e.printStackTrace();
+44         \}
+45         
+46         \textcolor{keywordflow}{return} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1packulike_1_1_pack_a303621f1e4590a9898ccbac6daa6c112}{packImages}}(images, width, height, border, out);
+47     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tools_1_1packulike_1_1_pack_a303621f1e4590a9898ccbac6daa6c112}\label{classorg_1_1newdawn_1_1slick_1_1tools_1_1packulike_1_1_pack_a303621f1e4590a9898ccbac6daa6c112}} 
+\index{org\+::newdawn\+::slick\+::tools\+::packulike\+::\+Pack@{org\+::newdawn\+::slick\+::tools\+::packulike\+::\+Pack}!pack\+Images@{pack\+Images}}
+\index{pack\+Images@{pack\+Images}!org\+::newdawn\+::slick\+::tools\+::packulike\+::\+Pack@{org\+::newdawn\+::slick\+::tools\+::packulike\+::\+Pack}}
+\subsubsection{\texorpdfstring{pack\+Images()}{packImages()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1packulike_1_1_sheet}{Sheet}} org.\+newdawn.\+slick.\+tools.\+packulike.\+Pack.\+pack\+Images (\begin{DoxyParamCaption}\item[{Array\+List}]{images,  }\item[{int}]{width,  }\item[{int}]{height,  }\item[{int}]{border,  }\item[{File}]{out }\end{DoxyParamCaption}) throws I\+O\+Exception\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1packulike_1_1_pack}{Pack}} the images provided
+
+
+\begin{DoxyParams}{Parameters}
+{\em images} & The list of sprite objects pointing at the images to be packed \\
+\hline
+{\em width} & The width of the sheet to be generated \\
+\hline
+{\em height} & The height of the sheet to be generated \\
+\hline
+{\em border} & The border between sprites \\
+\hline
+{\em out} & The file to write out to \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The generated sprite sheet 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em I\+O\+Exception} & Indicates a failure to write out files \\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyCode}
+60                                                                                                            
+         \{
+61         Collections.sort(images, \textcolor{keyword}{new} Comparator() \{
+62             \textcolor{keyword}{public} \textcolor{keywordtype}{int} compare(Object o1, Object o2) \{
+63                 \mbox{\hyperlink{class_sprite}{Sprite}} a = (\mbox{\hyperlink{class_sprite}{Sprite}}) o1;
+64                 \mbox{\hyperlink{class_sprite}{Sprite}} b = (\mbox{\hyperlink{class_sprite}{Sprite}}) o2;
+65                 
+66                 \textcolor{keywordtype}{int} asize = a.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_image_aa2594a93f5126f60ad8a72444fceee98}{getHeight}}();
+67                 \textcolor{keywordtype}{int} bsize = b.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_image_aa2594a93f5126f60ad8a72444fceee98}{getHeight}}();
+68                 \textcolor{keywordflow}{return} bsize - asize;
+69             \}
+70         \});
+71         
+72         \textcolor{keywordtype}{int} x = 0;
+73         \textcolor{keywordtype}{int} y = 0;
+74         
+75         BufferedImage result = \textcolor{keyword}{new} BufferedImage(width, height, BufferedImage.TYPE\_INT\_ARGB);
+76         Graphics g = result.getGraphics();
+77         \textcolor{keywordtype}{int} rowHeight = 0;
+78         
+79         \textcolor{keywordflow}{try} \{
+80             PrintStream pout = null;
+81             \textcolor{keywordflow}{if} (out != null) \{
+82                 pout = \textcolor{keyword}{new} PrintStream(\textcolor{keyword}{new} FileOutputStream(\textcolor{keyword}{new} File(out.getParentFile(), out.getName()+\textcolor{stringliteral}{"
+      .xml"})));
+83                 pout.println(\textcolor{stringliteral}{"<sheet>"});
+84             \}
+85             
+86             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i=0;i<images.size();i++) \{
+87                 \mbox{\hyperlink{class_sprite}{Sprite}} current = (\mbox{\hyperlink{class_sprite}{Sprite}}) images.get(i);
+88                 \textcolor{keywordflow}{if} (x + current.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_image_a94a5d32276e8a27930480223c5d69e11}{getWidth}}() > width) \{
+89                     x = 0;
+90                     y += rowHeight;
+91                     rowHeight = 0;
+92                 \}
+93                 
+94                 \textcolor{keywordflow}{if} (rowHeight == 0) \{
+95                     rowHeight = current.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_image_aa2594a93f5126f60ad8a72444fceee98}{getHeight}}() + border;
+96                 \}
+97                 
+98                 \textcolor{keywordflow}{if} (out != null) \{
+99                     pout.print(\textcolor{stringliteral}{"\(\backslash\)t<sprite "});
+100                     pout.print(\textcolor{stringliteral}{"name=\(\backslash\)""}+current.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_image_a3d7329c13259ffebd9efc30deb5655fc}{getName}}()+\textcolor{stringliteral}{"\(\backslash\)" "});
+101                     pout.print(\textcolor{stringliteral}{"x=\(\backslash\)""}+x+\textcolor{stringliteral}{"\(\backslash\)" "});
+102                     pout.print(\textcolor{stringliteral}{"y=\(\backslash\)""}+y+\textcolor{stringliteral}{"\(\backslash\)" "});
+103                     pout.print(\textcolor{stringliteral}{"width=\(\backslash\)""}+current.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_image_a94a5d32276e8a27930480223c5d69e11}{getWidth}}()+\textcolor{stringliteral}{"\(\backslash\)" "});
+104                     pout.print(\textcolor{stringliteral}{"height=\(\backslash\)""}+current.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_image_aa2594a93f5126f60ad8a72444fceee98}{getHeight}}()+\textcolor{stringliteral}{"\(\backslash\)" "});
+105                     pout.println(\textcolor{stringliteral}{"/>"});
+106                 \}
+107                 
+108                 current.setPosition(x,y);
+109                 g.drawImage(current.getImage(), x, y, null);
+110                 x += current.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_image_a94a5d32276e8a27930480223c5d69e11}{getWidth}}() + border;
+111             \}
+112             g.dispose();
+113             
+114             \textcolor{keywordflow}{if} (out != null) \{
+115                 pout.println(\textcolor{stringliteral}{"</sheet>"});
+116                 pout.close();
+117             \}
+118         \} \textcolor{keywordflow}{catch} (Exception e) \{
+119             e.printStackTrace();
+120             IOException io = \textcolor{keyword}{new} IOException(\textcolor{stringliteral}{"Failed writing image XML"});
+121             io.initCause(e);
+122             
+123             \textcolor{keywordflow}{throw} io;
+124         \}
+125         
+126         \textcolor{keywordflow}{if} (out != null) \{
+127             \textcolor{keywordflow}{try} \{
+128                 ImageIO.write(result, \textcolor{stringliteral}{"PNG"}, out);
+129             \} \textcolor{keywordflow}{catch} (IOException e) \{
+130                 e.printStackTrace();
+131                 
+132                 IOException io = \textcolor{keyword}{new} IOException(\textcolor{stringliteral}{"Failed writing image"});
+133                 io.initCause(e);
+134                 
+135                 \textcolor{keywordflow}{throw} io;
+136             \}
+137         \}
+138         
+139         \textcolor{keywordflow}{return} \textcolor{keyword}{new} Sheet(result, images);
+140     \}
+\end{DoxyCode}

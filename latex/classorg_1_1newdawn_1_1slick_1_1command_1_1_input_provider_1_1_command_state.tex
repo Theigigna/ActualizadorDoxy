@@ -1,0 +1,82 @@
+\hypertarget{classorg_1_1newdawn_1_1slick_1_1command_1_1_input_provider_1_1_command_state}{}\section{org.\+newdawn.\+slick.\+command.\+Input\+Provider.\+Command\+State Class Reference}
+\label{classorg_1_1newdawn_1_1slick_1_1command_1_1_input_provider_1_1_command_state}\index{org.\+newdawn.\+slick.\+command.\+Input\+Provider.\+Command\+State@{org.\+newdawn.\+slick.\+command.\+Input\+Provider.\+Command\+State}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+boolean \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1command_1_1_input_provider_1_1_command_state_a8216987ce9b6ed4abf545af323b341bc}{is\+Pressed}} ()
+\item 
+boolean \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1command_1_1_input_provider_1_1_command_state_aa59f3f148709346d8722c652048fa2cc}{is\+Down}} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+boolean \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1command_1_1_input_provider_1_1_command_state_a8cfa0dcf27d3c3a5f389bebea44da4b4}{down}}
+\item 
+boolean \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1command_1_1_input_provider_1_1_command_state_a984ed679625be22d8159a28470d7bbd8}{pressed}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A token representing the state of all the controls causing an command to be invoked
+
+\begin{DoxyAuthor}{Author}
+kevin 
+\end{DoxyAuthor}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1command_1_1_input_provider_1_1_command_state_aa59f3f148709346d8722c652048fa2cc}\label{classorg_1_1newdawn_1_1slick_1_1command_1_1_input_provider_1_1_command_state_aa59f3f148709346d8722c652048fa2cc}} 
+\index{org\+::newdawn\+::slick\+::command\+::\+Input\+Provider\+::\+Command\+State@{org\+::newdawn\+::slick\+::command\+::\+Input\+Provider\+::\+Command\+State}!is\+Down@{is\+Down}}
+\index{is\+Down@{is\+Down}!org\+::newdawn\+::slick\+::command\+::\+Input\+Provider\+::\+Command\+State@{org\+::newdawn\+::slick\+::command\+::\+Input\+Provider\+::\+Command\+State}}
+\subsubsection{\texorpdfstring{is\+Down()}{isDown()}}
+{\footnotesize\ttfamily boolean org.\+newdawn.\+slick.\+command.\+Input\+Provider.\+Command\+State.\+is\+Down (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Check if the last event we had indicated the control was pressed
+
+\begin{DoxyReturn}{Returns}
+True if the control was pressed 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+285                                 \{
+286             \textcolor{keywordflow}{return} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1command_1_1_input_provider_1_1_command_state_a8cfa0dcf27d3c3a5f389bebea44da4b4}{down}};
+287         \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1command_1_1_input_provider_1_1_command_state_a8216987ce9b6ed4abf545af323b341bc}\label{classorg_1_1newdawn_1_1slick_1_1command_1_1_input_provider_1_1_command_state_a8216987ce9b6ed4abf545af323b341bc}} 
+\index{org\+::newdawn\+::slick\+::command\+::\+Input\+Provider\+::\+Command\+State@{org\+::newdawn\+::slick\+::command\+::\+Input\+Provider\+::\+Command\+State}!is\+Pressed@{is\+Pressed}}
+\index{is\+Pressed@{is\+Pressed}!org\+::newdawn\+::slick\+::command\+::\+Input\+Provider\+::\+Command\+State@{org\+::newdawn\+::slick\+::command\+::\+Input\+Provider\+::\+Command\+State}}
+\subsubsection{\texorpdfstring{is\+Pressed()}{isPressed()}}
+{\footnotesize\ttfamily boolean org.\+newdawn.\+slick.\+command.\+Input\+Provider.\+Command\+State.\+is\+Pressed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Check if a control for the command has been pressed since last call.
+
+\begin{DoxyReturn}{Returns}
+True if the command has been pressed 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+271                                    \{
+272             \textcolor{keywordflow}{if} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1command_1_1_input_provider_1_1_command_state_a984ed679625be22d8159a28470d7bbd8}{pressed}}) \{
+273                 \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1command_1_1_input_provider_1_1_command_state_a984ed679625be22d8159a28470d7bbd8}{pressed}} = \textcolor{keyword}{false};
+274                 \textcolor{keywordflow}{return} \textcolor{keyword}{true};
+275             \}
+276 
+277             \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+278         \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1command_1_1_input_provider_1_1_command_state_a8cfa0dcf27d3c3a5f389bebea44da4b4}\label{classorg_1_1newdawn_1_1slick_1_1command_1_1_input_provider_1_1_command_state_a8cfa0dcf27d3c3a5f389bebea44da4b4}} 
+\index{org\+::newdawn\+::slick\+::command\+::\+Input\+Provider\+::\+Command\+State@{org\+::newdawn\+::slick\+::command\+::\+Input\+Provider\+::\+Command\+State}!down@{down}}
+\index{down@{down}!org\+::newdawn\+::slick\+::command\+::\+Input\+Provider\+::\+Command\+State@{org\+::newdawn\+::slick\+::command\+::\+Input\+Provider\+::\+Command\+State}}
+\subsubsection{\texorpdfstring{down}{down}}
+{\footnotesize\ttfamily boolean org.\+newdawn.\+slick.\+command.\+Input\+Provider.\+Command\+State.\+down\hspace{0.3cm}{\ttfamily [private]}}
+
+True if one of the controls for this command is down \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1command_1_1_input_provider_1_1_command_state_a984ed679625be22d8159a28470d7bbd8}\label{classorg_1_1newdawn_1_1slick_1_1command_1_1_input_provider_1_1_command_state_a984ed679625be22d8159a28470d7bbd8}} 
+\index{org\+::newdawn\+::slick\+::command\+::\+Input\+Provider\+::\+Command\+State@{org\+::newdawn\+::slick\+::command\+::\+Input\+Provider\+::\+Command\+State}!pressed@{pressed}}
+\index{pressed@{pressed}!org\+::newdawn\+::slick\+::command\+::\+Input\+Provider\+::\+Command\+State@{org\+::newdawn\+::slick\+::command\+::\+Input\+Provider\+::\+Command\+State}}
+\subsubsection{\texorpdfstring{pressed}{pressed}}
+{\footnotesize\ttfamily boolean org.\+newdawn.\+slick.\+command.\+Input\+Provider.\+Command\+State.\+pressed\hspace{0.3cm}{\ttfamily [private]}}
+
+True if one of the controls for this command is pressed 

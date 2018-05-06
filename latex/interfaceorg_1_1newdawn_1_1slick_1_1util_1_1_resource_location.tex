@@ -1,0 +1,66 @@
+\hypertarget{interfaceorg_1_1newdawn_1_1slick_1_1util_1_1_resource_location}{}\section{org.\+newdawn.\+slick.\+util.\+Resource\+Location Interface Reference}
+\label{interfaceorg_1_1newdawn_1_1slick_1_1util_1_1_resource_location}\index{org.\+newdawn.\+slick.\+util.\+Resource\+Location@{org.\+newdawn.\+slick.\+util.\+Resource\+Location}}
+Inheritance diagram for org.\+newdawn.\+slick.\+util.\+Resource\+Location\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interfaceorg_1_1newdawn_1_1slick_1_1util_1_1_resource_location}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+Input\+Stream \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1util_1_1_resource_location_a484bade425ef16b2230d28701b2c5e2f}{get\+Resource\+As\+Stream}} (String ref)
+\item 
+U\+RL \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1util_1_1_resource_location_a3f83afd2bf20002625526dc19ddfff96}{get\+Resource}} (String ref)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A location from which resources can be loaded
+
+\begin{DoxyAuthor}{Author}
+kevin 
+\end{DoxyAuthor}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{interfaceorg_1_1newdawn_1_1slick_1_1util_1_1_resource_location_a3f83afd2bf20002625526dc19ddfff96}\label{interfaceorg_1_1newdawn_1_1slick_1_1util_1_1_resource_location_a3f83afd2bf20002625526dc19ddfff96}} 
+\index{org\+::newdawn\+::slick\+::util\+::\+Resource\+Location@{org\+::newdawn\+::slick\+::util\+::\+Resource\+Location}!get\+Resource@{get\+Resource}}
+\index{get\+Resource@{get\+Resource}!org\+::newdawn\+::slick\+::util\+::\+Resource\+Location@{org\+::newdawn\+::slick\+::util\+::\+Resource\+Location}}
+\subsubsection{\texorpdfstring{get\+Resource()}{getResource()}}
+{\footnotesize\ttfamily U\+RL org.\+newdawn.\+slick.\+util.\+Resource\+Location.\+get\+Resource (\begin{DoxyParamCaption}\item[{String}]{ref }\end{DoxyParamCaption})}
+
+Get a resource as a U\+RL
+
+
+\begin{DoxyParams}{Parameters}
+{\em ref} & The reference to the resource to retrieve \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A U\+RL from which the resource can be read 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1_file_system_location_ad667c6a3c97a76caf89ffa816904033a}{org.\+newdawn.\+slick.\+util.\+File\+System\+Location}}, and \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1_classpath_location_a4608719eee9b1ef3b90d7056f7064cde}{org.\+newdawn.\+slick.\+util.\+Classpath\+Location}}.
+
+\mbox{\Hypertarget{interfaceorg_1_1newdawn_1_1slick_1_1util_1_1_resource_location_a484bade425ef16b2230d28701b2c5e2f}\label{interfaceorg_1_1newdawn_1_1slick_1_1util_1_1_resource_location_a484bade425ef16b2230d28701b2c5e2f}} 
+\index{org\+::newdawn\+::slick\+::util\+::\+Resource\+Location@{org\+::newdawn\+::slick\+::util\+::\+Resource\+Location}!get\+Resource\+As\+Stream@{get\+Resource\+As\+Stream}}
+\index{get\+Resource\+As\+Stream@{get\+Resource\+As\+Stream}!org\+::newdawn\+::slick\+::util\+::\+Resource\+Location@{org\+::newdawn\+::slick\+::util\+::\+Resource\+Location}}
+\subsubsection{\texorpdfstring{get\+Resource\+As\+Stream()}{getResourceAsStream()}}
+{\footnotesize\ttfamily Input\+Stream org.\+newdawn.\+slick.\+util.\+Resource\+Location.\+get\+Resource\+As\+Stream (\begin{DoxyParamCaption}\item[{String}]{ref }\end{DoxyParamCaption})}
+
+Get a resource as an input stream
+
+
+\begin{DoxyParams}{Parameters}
+{\em ref} & The reference to the resource to retrieve \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A stream from which the resource can be read or null if the resource can\textquotesingle{}t be found in this location 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1_file_system_location_a01200401dca18c8a89c2e866abcc48a3}{org.\+newdawn.\+slick.\+util.\+File\+System\+Location}}, and \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1_classpath_location_a452b5faed4fb19992109e2a1d9109ee4}{org.\+newdawn.\+slick.\+util.\+Classpath\+Location}}.
+

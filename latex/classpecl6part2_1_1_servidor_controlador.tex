@@ -1,0 +1,221 @@
+\hypertarget{classpecl6part2_1_1_servidor_controlador}{}\section{pecl6part2.\+Servidor\+Controlador Class Reference}
+\label{classpecl6part2_1_1_servidor_controlador}\index{pecl6part2.\+Servidor\+Controlador@{pecl6part2.\+Servidor\+Controlador}}
+Inheritance diagram for pecl6part2.\+Servidor\+Controlador\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classpecl6part2_1_1_servidor_controlador}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpecl6part2_1_1_servidor_controlador_a6f49d3d66d33c0f6dc5e7dab2af6766b}{Servidor\+Controlador}} (int port, \mbox{\hyperlink{classpecl6part2_1_1_paso}{Paso}} \mbox{\hyperlink{classpecl6part2_1_1_servidor_controlador_a3d1fc8f640e9e8271b06bf8ae9ea1176}{paso}})  throws I\+O\+Exception 
+\item 
+void \mbox{\hyperlink{classpecl6part2_1_1_servidor_controlador_a884b191679d749a264476c350c815d75}{run}} ()
+\end{DoxyCompactItemize}
+\subsection*{Package Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpecl6part2_1_1_paso}{Paso}} \mbox{\hyperlink{classpecl6part2_1_1_servidor_controlador_a3d1fc8f640e9e8271b06bf8ae9ea1176}{paso}}
+\item 
+int \mbox{\hyperlink{classpecl6part2_1_1_servidor_controlador_a685d8d2e3aba27e77af577046faadabe}{puerto}}
+\item 
+boolean \mbox{\hyperlink{classpecl6part2_1_1_servidor_controlador_a1721c97ac463f940af370521ac8f78db}{salir1}}
+\item 
+String \mbox{\hyperlink{classpecl6part2_1_1_servidor_controlador_ac8db190b3104ab20a03976a5411f3bd6}{mensaje}}
+\item 
+Data\+Output\+Stream \mbox{\hyperlink{classpecl6part2_1_1_servidor_controlador_a1a4f0c67b54fa5aa781c1ceafb347e47}{salida}}
+\item 
+Data\+Input\+Stream \mbox{\hyperlink{classpecl6part2_1_1_servidor_controlador_a38528daafe711028fb1bf830801923ba}{entrada}}
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Server\+Socket \mbox{\hyperlink{classpecl6part2_1_1_servidor_controlador_ac114e889059ed268a9df9f1dc7447f4b}{server\+Socket}}
+\item 
+Socket \mbox{\hyperlink{classpecl6part2_1_1_servidor_controlador_a5a4f104c0585b0e66492f05ef7e32510}{conexion}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyAuthor}{Author}
+Ignacio 
+\end{DoxyAuthor}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classpecl6part2_1_1_servidor_controlador_a6f49d3d66d33c0f6dc5e7dab2af6766b}\label{classpecl6part2_1_1_servidor_controlador_a6f49d3d66d33c0f6dc5e7dab2af6766b}} 
+\index{pecl6part2\+::\+Servidor\+Controlador@{pecl6part2\+::\+Servidor\+Controlador}!Servidor\+Controlador@{Servidor\+Controlador}}
+\index{Servidor\+Controlador@{Servidor\+Controlador}!pecl6part2\+::\+Servidor\+Controlador@{pecl6part2\+::\+Servidor\+Controlador}}
+\subsubsection{\texorpdfstring{Servidor\+Controlador()}{ServidorControlador()}}
+{\footnotesize\ttfamily pecl6part2.\+Servidor\+Controlador.\+Servidor\+Controlador (\begin{DoxyParamCaption}\item[{int}]{port,  }\item[{\mbox{\hyperlink{classpecl6part2_1_1_paso}{Paso}}}]{paso }\end{DoxyParamCaption}) throws I\+O\+Exception\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+29                                                                        \{
+30       this.\mbox{\hyperlink{classpecl6part2_1_1_servidor_controlador_a685d8d2e3aba27e77af577046faadabe}{puerto}}=port;
+31       this.\mbox{\hyperlink{classpecl6part2_1_1_servidor_controlador_ac114e889059ed268a9df9f1dc7447f4b}{serverSocket}} = \textcolor{keyword}{new} ServerSocket(port);
+32       this.\mbox{\hyperlink{classpecl6part2_1_1_servidor_controlador_a1721c97ac463f940af370521ac8f78db}{salir1}} = \textcolor{keyword}{false};
+33       \textcolor{comment}{//this.salir2 = false;}
+34       this.\mbox{\hyperlink{classpecl6part2_1_1_servidor_controlador_a3d1fc8f640e9e8271b06bf8ae9ea1176}{paso}} = \mbox{\hyperlink{classpecl6part2_1_1_servidor_controlador_a3d1fc8f640e9e8271b06bf8ae9ea1176}{paso}};
+35       this.\mbox{\hyperlink{classpecl6part2_1_1_servidor_controlador_ac8db190b3104ab20a03976a5411f3bd6}{mensaje}} = \textcolor{stringliteral}{""};
+36     \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classpecl6part2_1_1_servidor_controlador_a884b191679d749a264476c350c815d75}\label{classpecl6part2_1_1_servidor_controlador_a884b191679d749a264476c350c815d75}} 
+\index{pecl6part2\+::\+Servidor\+Controlador@{pecl6part2\+::\+Servidor\+Controlador}!run@{run}}
+\index{run@{run}!pecl6part2\+::\+Servidor\+Controlador@{pecl6part2\+::\+Servidor\+Controlador}}
+\subsubsection{\texorpdfstring{run()}{run()}}
+{\footnotesize\ttfamily void pecl6part2.\+Servidor\+Controlador.\+run (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+38                       \{
+39         \textcolor{comment}{/*}
+40 \textcolor{comment}{        try \{}
+41 \textcolor{comment}{            serverSocket = new ServerSocket(puerto);}
+42 \textcolor{comment}{        \} catch (IOException ex) \{}
+43 \textcolor{comment}{            Logger.getLogger(ServidorControlador.class.getName()).log(Level.SEVERE, null, ex);}
+44 \textcolor{comment}{        \}}
+45 \textcolor{comment}{        */}
+46         \textcolor{keywordflow}{while}(\textcolor{keyword}{true})
+47         \{
+48             \textcolor{keywordflow}{try} \{
+49                 \mbox{\hyperlink{classpecl6part2_1_1_servidor_controlador_a5a4f104c0585b0e66492f05ef7e32510}{conexion}} = \mbox{\hyperlink{classpecl6part2_1_1_servidor_controlador_ac114e889059ed268a9df9f1dc7447f4b}{serverSocket}}.accept();
+50                 \mbox{\hyperlink{classpecl6part2_1_1_servidor_controlador_a38528daafe711028fb1bf830801923ba}{entrada}} = \textcolor{keyword}{new} DataInputStream(\mbox{\hyperlink{classpecl6part2_1_1_servidor_controlador_a5a4f104c0585b0e66492f05ef7e32510}{conexion}}.getInputStream());  \textcolor{comment}{// Abrimos los
+       canales de E/S}
+51                 
+52                 \mbox{\hyperlink{classpecl6part2_1_1_servidor_controlador_ac8db190b3104ab20a03976a5411f3bd6}{mensaje}} = \mbox{\hyperlink{classpecl6part2_1_1_servidor_controlador_a38528daafe711028fb1bf830801923ba}{entrada}}.readUTF();
+53                 System.out.println(\textcolor{stringliteral}{"Has recibido: /"}+\mbox{\hyperlink{classpecl6part2_1_1_servidor_controlador_ac8db190b3104ab20a03976a5411f3bd6}{mensaje}}+\textcolor{stringliteral}{"/"});
+54             \} \textcolor{keywordflow}{catch} (IOException ex) \{
+55                 Logger.getLogger(\mbox{\hyperlink{classpecl6part2_1_1_servidor_controlador_a6f49d3d66d33c0f6dc5e7dab2af6766b}{ServidorControlador}}.class.getName()).log(Level.SEVERE, 
+      null, ex);
+56             \}
+57             
+58             \textcolor{comment}{//System.out.println("Mensaje recibido: /"+mensaje+"/");}
+59             
+60             \textcolor{keywordflow}{if}(\mbox{\hyperlink{classpecl6part2_1_1_servidor_controlador_ac8db190b3104ab20a03976a5411f3bd6}{mensaje}}.equals(\textcolor{stringliteral}{"rascacielos2016"}))
+61             \{
+62                 \textcolor{keywordflow}{try} \{
+63                     \mbox{\hyperlink{classpecl6part2_1_1_servidor_controlador_a1a4f0c67b54fa5aa781c1ceafb347e47}{salida}}  = \textcolor{keyword}{new} DataOutputStream(\mbox{\hyperlink{classpecl6part2_1_1_servidor_controlador_a5a4f104c0585b0e66492f05ef7e32510}{conexion}}.getOutputStream());
+64                     \mbox{\hyperlink{classpecl6part2_1_1_servidor_controlador_a1a4f0c67b54fa5aa781c1ceafb347e47}{salida}}.writeUTF(\textcolor{stringliteral}{"correcto"});
+65                 \} \textcolor{keywordflow}{catch} (IOException ex) \{
+66                     Logger.getLogger(\mbox{\hyperlink{classpecl6part2_1_1_servidor_controlador_a6f49d3d66d33c0f6dc5e7dab2af6766b}{ServidorControlador}}.class.getName()).log(Level.
+      SEVERE, null, ex);
+67                 \}
+68                 \textcolor{comment}{/*try \{}
+69 \textcolor{comment}{                    //salida.close();}
+70 \textcolor{comment}{                    conexion = serverSocket.accept();}
+71 \textcolor{comment}{                \} catch (IOException ex) \{}
+72 \textcolor{comment}{                    Logger.getLogger(ServidorControlador.class.getName()).log(Level.SEVERE, null, ex);}
+73 \textcolor{comment}{                \}*/}
+74                 \textcolor{keywordflow}{while}(!\mbox{\hyperlink{classpecl6part2_1_1_servidor_controlador_a1721c97ac463f940af370521ac8f78db}{salir1}})
+75                 \{
+76                     \textcolor{keywordflow}{try} 
+77                     \{
+78                         \mbox{\hyperlink{classpecl6part2_1_1_servidor_controlador_a5a4f104c0585b0e66492f05ef7e32510}{conexion}} = \mbox{\hyperlink{classpecl6part2_1_1_servidor_controlador_ac114e889059ed268a9df9f1dc7447f4b}{serverSocket}}.accept();
+79                         \mbox{\hyperlink{classpecl6part2_1_1_servidor_controlador_a38528daafe711028fb1bf830801923ba}{entrada}}  = \textcolor{keyword}{new} DataInputStream(\mbox{\hyperlink{classpecl6part2_1_1_servidor_controlador_a5a4f104c0585b0e66492f05ef7e32510}{conexion}}.getInputStream());
+80                         \mbox{\hyperlink{classpecl6part2_1_1_servidor_controlador_ac8db190b3104ab20a03976a5411f3bd6}{mensaje}} = \mbox{\hyperlink{classpecl6part2_1_1_servidor_controlador_a38528daafe711028fb1bf830801923ba}{entrada}}.readUTF();
+81                     \} \textcolor{keywordflow}{catch} (IOException ex) \{
+82                         Logger.getLogger(\mbox{\hyperlink{classpecl6part2_1_1_servidor_controlador_a6f49d3d66d33c0f6dc5e7dab2af6766b}{ServidorControlador}}.class.getName()).log(Level.
+      SEVERE, null, ex);
+83                     \}
+84                     \textcolor{keywordflow}{if}(\mbox{\hyperlink{classpecl6part2_1_1_servidor_controlador_ac8db190b3104ab20a03976a5411f3bd6}{mensaje}}.equals(\textcolor{stringliteral}{"parar"}))
+85                     \{
+86                         \mbox{\hyperlink{classpecl6part2_1_1_servidor_controlador_a3d1fc8f640e9e8271b06bf8ae9ea1176}{paso}}.\mbox{\hyperlink{classpecl6part2_1_1_paso_a3868cf1f106bb5b195ea9a7e44c3644a}{cerrar}}();
+87                     \}
+88                     \textcolor{keywordflow}{if}(\mbox{\hyperlink{classpecl6part2_1_1_servidor_controlador_ac8db190b3104ab20a03976a5411f3bd6}{mensaje}}.equals(\textcolor{stringliteral}{"reanudar"}))
+89                     \{
+90                         \mbox{\hyperlink{classpecl6part2_1_1_servidor_controlador_a3d1fc8f640e9e8271b06bf8ae9ea1176}{paso}}.\mbox{\hyperlink{classpecl6part2_1_1_paso_a88a25090462335e5c21d6bbdd68f5a5e}{abrir}}();
+91                     \}
+92                     \textcolor{keywordflow}{if}(\mbox{\hyperlink{classpecl6part2_1_1_servidor_controlador_ac8db190b3104ab20a03976a5411f3bd6}{mensaje}}.equals(\textcolor{stringliteral}{"salir"}))
+93                     \{
+94                         \textcolor{comment}{//salir2 = true;}
+95                         \mbox{\hyperlink{classpecl6part2_1_1_servidor_controlador_a1721c97ac463f940af370521ac8f78db}{salir1}} = \textcolor{keyword}{true};
+96                     \}
+97                 \}
+98                 
+99                 
+100             \}
+101             \textcolor{keywordflow}{else}
+102             \{
+103                 \textcolor{keywordflow}{try} \{
+104                     \mbox{\hyperlink{classpecl6part2_1_1_servidor_controlador_a1a4f0c67b54fa5aa781c1ceafb347e47}{salida}}.writeUTF(\textcolor{stringliteral}{"Error"});
+105                     \mbox{\hyperlink{classpecl6part2_1_1_servidor_controlador_a5a4f104c0585b0e66492f05ef7e32510}{conexion}}.close();
+106                 \} \textcolor{keywordflow}{catch} (IOException ex) \{
+107                     Logger.getLogger(\mbox{\hyperlink{classpecl6part2_1_1_servidor_controlador_a6f49d3d66d33c0f6dc5e7dab2af6766b}{ServidorControlador}}.class.getName()).log(Level.
+      SEVERE, null, ex);
+108                 \}
+109             \}
+110             
+111             
+112             
+113             \textcolor{comment}{/*}
+114 \textcolor{comment}{            try \{}
+115 \textcolor{comment}{                conexion.close();}
+116 \textcolor{comment}{            \} catch (IOException ex) \{}
+117 \textcolor{comment}{                Logger.getLogger(ServidorControlador.class.getName()).log(Level.SEVERE, null, ex);}
+118 \textcolor{comment}{            \}*/}
+119         \}
+120         
+121         \textcolor{comment}{/*}
+122 \textcolor{comment}{      try \{}
+123 \textcolor{comment}{          //}
+124 \textcolor{comment}{      \} catch (IOException ex) \{}
+125 \textcolor{comment}{        pool.shutdown();}
+126 \textcolor{comment}{      \}*/}
+127          \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classpecl6part2_1_1_servidor_controlador_a5a4f104c0585b0e66492f05ef7e32510}\label{classpecl6part2_1_1_servidor_controlador_a5a4f104c0585b0e66492f05ef7e32510}} 
+\index{pecl6part2\+::\+Servidor\+Controlador@{pecl6part2\+::\+Servidor\+Controlador}!conexion@{conexion}}
+\index{conexion@{conexion}!pecl6part2\+::\+Servidor\+Controlador@{pecl6part2\+::\+Servidor\+Controlador}}
+\subsubsection{\texorpdfstring{conexion}{conexion}}
+{\footnotesize\ttfamily Socket pecl6part2.\+Servidor\+Controlador.\+conexion\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classpecl6part2_1_1_servidor_controlador_a38528daafe711028fb1bf830801923ba}\label{classpecl6part2_1_1_servidor_controlador_a38528daafe711028fb1bf830801923ba}} 
+\index{pecl6part2\+::\+Servidor\+Controlador@{pecl6part2\+::\+Servidor\+Controlador}!entrada@{entrada}}
+\index{entrada@{entrada}!pecl6part2\+::\+Servidor\+Controlador@{pecl6part2\+::\+Servidor\+Controlador}}
+\subsubsection{\texorpdfstring{entrada}{entrada}}
+{\footnotesize\ttfamily Data\+Input\+Stream pecl6part2.\+Servidor\+Controlador.\+entrada\hspace{0.3cm}{\ttfamily [package]}}
+
+\mbox{\Hypertarget{classpecl6part2_1_1_servidor_controlador_ac8db190b3104ab20a03976a5411f3bd6}\label{classpecl6part2_1_1_servidor_controlador_ac8db190b3104ab20a03976a5411f3bd6}} 
+\index{pecl6part2\+::\+Servidor\+Controlador@{pecl6part2\+::\+Servidor\+Controlador}!mensaje@{mensaje}}
+\index{mensaje@{mensaje}!pecl6part2\+::\+Servidor\+Controlador@{pecl6part2\+::\+Servidor\+Controlador}}
+\subsubsection{\texorpdfstring{mensaje}{mensaje}}
+{\footnotesize\ttfamily String pecl6part2.\+Servidor\+Controlador.\+mensaje\hspace{0.3cm}{\ttfamily [package]}}
+
+\mbox{\Hypertarget{classpecl6part2_1_1_servidor_controlador_a3d1fc8f640e9e8271b06bf8ae9ea1176}\label{classpecl6part2_1_1_servidor_controlador_a3d1fc8f640e9e8271b06bf8ae9ea1176}} 
+\index{pecl6part2\+::\+Servidor\+Controlador@{pecl6part2\+::\+Servidor\+Controlador}!paso@{paso}}
+\index{paso@{paso}!pecl6part2\+::\+Servidor\+Controlador@{pecl6part2\+::\+Servidor\+Controlador}}
+\subsubsection{\texorpdfstring{paso}{paso}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classpecl6part2_1_1_paso}{Paso}} pecl6part2.\+Servidor\+Controlador.\+paso\hspace{0.3cm}{\ttfamily [package]}}
+
+\mbox{\Hypertarget{classpecl6part2_1_1_servidor_controlador_a685d8d2e3aba27e77af577046faadabe}\label{classpecl6part2_1_1_servidor_controlador_a685d8d2e3aba27e77af577046faadabe}} 
+\index{pecl6part2\+::\+Servidor\+Controlador@{pecl6part2\+::\+Servidor\+Controlador}!puerto@{puerto}}
+\index{puerto@{puerto}!pecl6part2\+::\+Servidor\+Controlador@{pecl6part2\+::\+Servidor\+Controlador}}
+\subsubsection{\texorpdfstring{puerto}{puerto}}
+{\footnotesize\ttfamily int pecl6part2.\+Servidor\+Controlador.\+puerto\hspace{0.3cm}{\ttfamily [package]}}
+
+\mbox{\Hypertarget{classpecl6part2_1_1_servidor_controlador_a1a4f0c67b54fa5aa781c1ceafb347e47}\label{classpecl6part2_1_1_servidor_controlador_a1a4f0c67b54fa5aa781c1ceafb347e47}} 
+\index{pecl6part2\+::\+Servidor\+Controlador@{pecl6part2\+::\+Servidor\+Controlador}!salida@{salida}}
+\index{salida@{salida}!pecl6part2\+::\+Servidor\+Controlador@{pecl6part2\+::\+Servidor\+Controlador}}
+\subsubsection{\texorpdfstring{salida}{salida}}
+{\footnotesize\ttfamily Data\+Output\+Stream pecl6part2.\+Servidor\+Controlador.\+salida\hspace{0.3cm}{\ttfamily [package]}}
+
+\mbox{\Hypertarget{classpecl6part2_1_1_servidor_controlador_a1721c97ac463f940af370521ac8f78db}\label{classpecl6part2_1_1_servidor_controlador_a1721c97ac463f940af370521ac8f78db}} 
+\index{pecl6part2\+::\+Servidor\+Controlador@{pecl6part2\+::\+Servidor\+Controlador}!salir1@{salir1}}
+\index{salir1@{salir1}!pecl6part2\+::\+Servidor\+Controlador@{pecl6part2\+::\+Servidor\+Controlador}}
+\subsubsection{\texorpdfstring{salir1}{salir1}}
+{\footnotesize\ttfamily boolean pecl6part2.\+Servidor\+Controlador.\+salir1\hspace{0.3cm}{\ttfamily [package]}}
+
+\mbox{\Hypertarget{classpecl6part2_1_1_servidor_controlador_ac114e889059ed268a9df9f1dc7447f4b}\label{classpecl6part2_1_1_servidor_controlador_ac114e889059ed268a9df9f1dc7447f4b}} 
+\index{pecl6part2\+::\+Servidor\+Controlador@{pecl6part2\+::\+Servidor\+Controlador}!server\+Socket@{server\+Socket}}
+\index{server\+Socket@{server\+Socket}!pecl6part2\+::\+Servidor\+Controlador@{pecl6part2\+::\+Servidor\+Controlador}}
+\subsubsection{\texorpdfstring{server\+Socket}{serverSocket}}
+{\footnotesize\ttfamily Server\+Socket pecl6part2.\+Servidor\+Controlador.\+server\+Socket\hspace{0.3cm}{\ttfamily [private]}}
+

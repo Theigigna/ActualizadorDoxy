@@ -1,0 +1,193 @@
+\hypertarget{classorg_1_1newdawn_1_1slick_1_1openal_1_1_audio_loader}{}\section{org.\+newdawn.\+slick.\+openal.\+Audio\+Loader Class Reference}
+\label{classorg_1_1newdawn_1_1slick_1_1openal_1_1_audio_loader}\index{org.\+newdawn.\+slick.\+openal.\+Audio\+Loader@{org.\+newdawn.\+slick.\+openal.\+Audio\+Loader}}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1openal_1_1_audio}{Audio}} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_audio_loader_a122ea3006a94beb60a54c57d8c36520c}{get\+Audio}} (String format, Input\+Stream in)  throws I\+O\+Exception 
+\item 
+static \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1openal_1_1_audio}{Audio}} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_audio_loader_aa74731b7521ad2ee66779ff471d85d2b}{get\+Streaming\+Audio}} (String format, U\+RL url)  throws I\+O\+Exception 
+\item 
+static void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_audio_loader_ad0f82b81a9441b1b2bd432ec648dfed1}{update}} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_audio_loader_ad2d2f4bb59fef206981fbe0896ecc87c}{init}} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static final String \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_audio_loader_a024d05c95399aa1523b15b37c34d58b6}{A\+IF}} = \char`\"{}A\+IF\char`\"{}
+\item 
+static final String \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_audio_loader_a34a9e47a5090ab343885f032a800082d}{W\+AV}} = \char`\"{}W\+AV\char`\"{}
+\item 
+static final String \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_audio_loader_ad4fe9acae97947804dc4c70ef7bbff24}{O\+GG}} = \char`\"{}O\+GG\char`\"{}
+\item 
+static final String \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_audio_loader_a24d845d2340fdda4197cb5654963b3d2}{M\+OD}} = \char`\"{}M\+OD\char`\"{}
+\item 
+static final String \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_audio_loader_adfb5103d54cb3853abc1ec6d0f4c002f}{XM}} = \char`\"{}XM\char`\"{}
+\item 
+static boolean \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_audio_loader_a9c9bf94e8f3380290bb6abd89c82d66c}{inited}} = false
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A utility to provide a simple and rational interface to the slick internals
+
+\begin{DoxyAuthor}{Author}
+kevin 
+\end{DoxyAuthor}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1openal_1_1_audio_loader_a122ea3006a94beb60a54c57d8c36520c}\label{classorg_1_1newdawn_1_1slick_1_1openal_1_1_audio_loader_a122ea3006a94beb60a54c57d8c36520c}} 
+\index{org\+::newdawn\+::slick\+::openal\+::\+Audio\+Loader@{org\+::newdawn\+::slick\+::openal\+::\+Audio\+Loader}!get\+Audio@{get\+Audio}}
+\index{get\+Audio@{get\+Audio}!org\+::newdawn\+::slick\+::openal\+::\+Audio\+Loader@{org\+::newdawn\+::slick\+::openal\+::\+Audio\+Loader}}
+\subsubsection{\texorpdfstring{get\+Audio()}{getAudio()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1openal_1_1_audio}{Audio}} org.\+newdawn.\+slick.\+openal.\+Audio\+Loader.\+get\+Audio (\begin{DoxyParamCaption}\item[{String}]{format,  }\item[{Input\+Stream}]{in }\end{DoxyParamCaption}) throws I\+O\+Exception\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Get audio data in a playable state by loading the complete audio into memory.
+
+
+\begin{DoxyParams}{Parameters}
+{\em format} & The format of the audio to be loaded (something like \char`\"{}\+X\+M\char`\"{} or \char`\"{}\+O\+G\+G\char`\"{}) \\
+\hline
+{\em in} & The input stream from which to load the audio data \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+An object representing the audio data 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em I\+O\+Exception} & Indicates a failure to access the audio data \\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyCode}
+47                                                                                    \{
+48         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_audio_loader_ad2d2f4bb59fef206981fbe0896ecc87c}{init}}();
+49         
+50         \textcolor{keywordflow}{if} (format.equals(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_audio_loader_a024d05c95399aa1523b15b37c34d58b6}{AIF}})) \{
+51             \textcolor{keywordflow}{return} SoundStore.get().getAIF(in);
+52         \}
+53         \textcolor{keywordflow}{if} (format.equals(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_audio_loader_a34a9e47a5090ab343885f032a800082d}{WAV}})) \{
+54             \textcolor{keywordflow}{return} SoundStore.get().getWAV(in);
+55         \}
+56         \textcolor{keywordflow}{if} (format.equals(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_audio_loader_ad4fe9acae97947804dc4c70ef7bbff24}{OGG}})) \{
+57             \textcolor{keywordflow}{return} SoundStore.get().getOgg(in);
+58         \}
+59         
+60         \textcolor{keywordflow}{throw} \textcolor{keyword}{new} IOException(\textcolor{stringliteral}{"Unsupported format for non-streaming Audio: "}+format);
+61     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1openal_1_1_audio_loader_aa74731b7521ad2ee66779ff471d85d2b}\label{classorg_1_1newdawn_1_1slick_1_1openal_1_1_audio_loader_aa74731b7521ad2ee66779ff471d85d2b}} 
+\index{org\+::newdawn\+::slick\+::openal\+::\+Audio\+Loader@{org\+::newdawn\+::slick\+::openal\+::\+Audio\+Loader}!get\+Streaming\+Audio@{get\+Streaming\+Audio}}
+\index{get\+Streaming\+Audio@{get\+Streaming\+Audio}!org\+::newdawn\+::slick\+::openal\+::\+Audio\+Loader@{org\+::newdawn\+::slick\+::openal\+::\+Audio\+Loader}}
+\subsubsection{\texorpdfstring{get\+Streaming\+Audio()}{getStreamingAudio()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1openal_1_1_audio}{Audio}} org.\+newdawn.\+slick.\+openal.\+Audio\+Loader.\+get\+Streaming\+Audio (\begin{DoxyParamCaption}\item[{String}]{format,  }\item[{U\+RL}]{url }\end{DoxyParamCaption}) throws I\+O\+Exception\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Get audio data in a playable state by setting up a stream that can be piped into Open\+AL -\/ i.\+e. streaming audio
+
+
+\begin{DoxyParams}{Parameters}
+{\em format} & The format of the audio to be loaded (something like \char`\"{}\+X\+M\char`\"{} or \char`\"{}\+O\+G\+G\char`\"{}) \\
+\hline
+{\em url} & The location of the data that should be streamed \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+An object representing the audio data 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em I\+O\+Exception} & Indicates a failure to access the audio data \\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyCode}
+72                                                                                      \{
+73         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_audio_loader_ad2d2f4bb59fef206981fbe0896ecc87c}{init}}();
+74         
+75         \textcolor{keywordflow}{if} (format.equals(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_audio_loader_ad4fe9acae97947804dc4c70ef7bbff24}{OGG}})) \{
+76             \textcolor{keywordflow}{return} SoundStore.get().getOggStream(url);
+77         \}
+78         \textcolor{keywordflow}{if} (format.equals(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_audio_loader_a24d845d2340fdda4197cb5654963b3d2}{MOD}})) \{
+79             \textcolor{keywordflow}{return} SoundStore.get().getMOD(url.openStream());
+80         \}
+81         \textcolor{keywordflow}{if} (format.equals(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_audio_loader_adfb5103d54cb3853abc1ec6d0f4c002f}{XM}})) \{
+82             \textcolor{keywordflow}{return} SoundStore.get().getMOD(url.openStream());
+83         \}
+84         
+85         \textcolor{keywordflow}{throw} \textcolor{keyword}{new} IOException(\textcolor{stringliteral}{"Unsupported format for streaming Audio: "}+format);
+86     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1openal_1_1_audio_loader_ad2d2f4bb59fef206981fbe0896ecc87c}\label{classorg_1_1newdawn_1_1slick_1_1openal_1_1_audio_loader_ad2d2f4bb59fef206981fbe0896ecc87c}} 
+\index{org\+::newdawn\+::slick\+::openal\+::\+Audio\+Loader@{org\+::newdawn\+::slick\+::openal\+::\+Audio\+Loader}!init@{init}}
+\index{init@{init}!org\+::newdawn\+::slick\+::openal\+::\+Audio\+Loader@{org\+::newdawn\+::slick\+::openal\+::\+Audio\+Loader}}
+\subsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily static void org.\+newdawn.\+slick.\+openal.\+Audio\+Loader.\+init (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}, {\ttfamily [private]}}
+
+Initialise the audio loader 
+\begin{DoxyCode}
+31                                \{
+32         \textcolor{keywordflow}{if} (!\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_audio_loader_a9c9bf94e8f3380290bb6abd89c82d66c}{inited}}) \{
+33             SoundStore.get().init();
+34             \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_audio_loader_a9c9bf94e8f3380290bb6abd89c82d66c}{inited}} = \textcolor{keyword}{true};
+35         \}
+36     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1openal_1_1_audio_loader_ad0f82b81a9441b1b2bd432ec648dfed1}\label{classorg_1_1newdawn_1_1slick_1_1openal_1_1_audio_loader_ad0f82b81a9441b1b2bd432ec648dfed1}} 
+\index{org\+::newdawn\+::slick\+::openal\+::\+Audio\+Loader@{org\+::newdawn\+::slick\+::openal\+::\+Audio\+Loader}!update@{update}}
+\index{update@{update}!org\+::newdawn\+::slick\+::openal\+::\+Audio\+Loader@{org\+::newdawn\+::slick\+::openal\+::\+Audio\+Loader}}
+\subsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily static void org.\+newdawn.\+slick.\+openal.\+Audio\+Loader.\+update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Allow the streaming system to update itself 
+\begin{DoxyCode}
+91                                 \{
+92         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_audio_loader_ad2d2f4bb59fef206981fbe0896ecc87c}{init}}();
+93         
+94         SoundStore.get().poll(0);
+95     \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1openal_1_1_audio_loader_a024d05c95399aa1523b15b37c34d58b6}\label{classorg_1_1newdawn_1_1slick_1_1openal_1_1_audio_loader_a024d05c95399aa1523b15b37c34d58b6}} 
+\index{org\+::newdawn\+::slick\+::openal\+::\+Audio\+Loader@{org\+::newdawn\+::slick\+::openal\+::\+Audio\+Loader}!A\+IF@{A\+IF}}
+\index{A\+IF@{A\+IF}!org\+::newdawn\+::slick\+::openal\+::\+Audio\+Loader@{org\+::newdawn\+::slick\+::openal\+::\+Audio\+Loader}}
+\subsubsection{\texorpdfstring{A\+IF}{AIF}}
+{\footnotesize\ttfamily final String org.\+newdawn.\+slick.\+openal.\+Audio\+Loader.\+A\+IF = \char`\"{}A\+IF\char`\"{}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+A\+IF Format Indicator \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1openal_1_1_audio_loader_a9c9bf94e8f3380290bb6abd89c82d66c}\label{classorg_1_1newdawn_1_1slick_1_1openal_1_1_audio_loader_a9c9bf94e8f3380290bb6abd89c82d66c}} 
+\index{org\+::newdawn\+::slick\+::openal\+::\+Audio\+Loader@{org\+::newdawn\+::slick\+::openal\+::\+Audio\+Loader}!inited@{inited}}
+\index{inited@{inited}!org\+::newdawn\+::slick\+::openal\+::\+Audio\+Loader@{org\+::newdawn\+::slick\+::openal\+::\+Audio\+Loader}}
+\subsubsection{\texorpdfstring{inited}{inited}}
+{\footnotesize\ttfamily boolean org.\+newdawn.\+slick.\+openal.\+Audio\+Loader.\+inited = false\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+True if the audio loader has be initialised \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1openal_1_1_audio_loader_a24d845d2340fdda4197cb5654963b3d2}\label{classorg_1_1newdawn_1_1slick_1_1openal_1_1_audio_loader_a24d845d2340fdda4197cb5654963b3d2}} 
+\index{org\+::newdawn\+::slick\+::openal\+::\+Audio\+Loader@{org\+::newdawn\+::slick\+::openal\+::\+Audio\+Loader}!M\+OD@{M\+OD}}
+\index{M\+OD@{M\+OD}!org\+::newdawn\+::slick\+::openal\+::\+Audio\+Loader@{org\+::newdawn\+::slick\+::openal\+::\+Audio\+Loader}}
+\subsubsection{\texorpdfstring{M\+OD}{MOD}}
+{\footnotesize\ttfamily final String org.\+newdawn.\+slick.\+openal.\+Audio\+Loader.\+M\+OD = \char`\"{}M\+OD\char`\"{}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+M\+O\+D/\+XM Format Indicator \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1openal_1_1_audio_loader_ad4fe9acae97947804dc4c70ef7bbff24}\label{classorg_1_1newdawn_1_1slick_1_1openal_1_1_audio_loader_ad4fe9acae97947804dc4c70ef7bbff24}} 
+\index{org\+::newdawn\+::slick\+::openal\+::\+Audio\+Loader@{org\+::newdawn\+::slick\+::openal\+::\+Audio\+Loader}!O\+GG@{O\+GG}}
+\index{O\+GG@{O\+GG}!org\+::newdawn\+::slick\+::openal\+::\+Audio\+Loader@{org\+::newdawn\+::slick\+::openal\+::\+Audio\+Loader}}
+\subsubsection{\texorpdfstring{O\+GG}{OGG}}
+{\footnotesize\ttfamily final String org.\+newdawn.\+slick.\+openal.\+Audio\+Loader.\+O\+GG = \char`\"{}O\+GG\char`\"{}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+O\+GG Format Indicator \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1openal_1_1_audio_loader_a34a9e47a5090ab343885f032a800082d}\label{classorg_1_1newdawn_1_1slick_1_1openal_1_1_audio_loader_a34a9e47a5090ab343885f032a800082d}} 
+\index{org\+::newdawn\+::slick\+::openal\+::\+Audio\+Loader@{org\+::newdawn\+::slick\+::openal\+::\+Audio\+Loader}!W\+AV@{W\+AV}}
+\index{W\+AV@{W\+AV}!org\+::newdawn\+::slick\+::openal\+::\+Audio\+Loader@{org\+::newdawn\+::slick\+::openal\+::\+Audio\+Loader}}
+\subsubsection{\texorpdfstring{W\+AV}{WAV}}
+{\footnotesize\ttfamily final String org.\+newdawn.\+slick.\+openal.\+Audio\+Loader.\+W\+AV = \char`\"{}W\+AV\char`\"{}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+W\+AV Format Indicator \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1openal_1_1_audio_loader_adfb5103d54cb3853abc1ec6d0f4c002f}\label{classorg_1_1newdawn_1_1slick_1_1openal_1_1_audio_loader_adfb5103d54cb3853abc1ec6d0f4c002f}} 
+\index{org\+::newdawn\+::slick\+::openal\+::\+Audio\+Loader@{org\+::newdawn\+::slick\+::openal\+::\+Audio\+Loader}!XM@{XM}}
+\index{XM@{XM}!org\+::newdawn\+::slick\+::openal\+::\+Audio\+Loader@{org\+::newdawn\+::slick\+::openal\+::\+Audio\+Loader}}
+\subsubsection{\texorpdfstring{XM}{XM}}
+{\footnotesize\ttfamily final String org.\+newdawn.\+slick.\+openal.\+Audio\+Loader.\+XM = \char`\"{}XM\char`\"{}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+M\+O\+D/\+XM Format Indicator 

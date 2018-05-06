@@ -1,0 +1,66 @@
+\hypertarget{classorg_1_1newdawn_1_1slick_1_1util_1_1_classpath_location}{}\section{org.\+newdawn.\+slick.\+util.\+Classpath\+Location Class Reference}
+\label{classorg_1_1newdawn_1_1slick_1_1util_1_1_classpath_location}\index{org.\+newdawn.\+slick.\+util.\+Classpath\+Location@{org.\+newdawn.\+slick.\+util.\+Classpath\+Location}}
+Inheritance diagram for org.\+newdawn.\+slick.\+util.\+Classpath\+Location\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classorg_1_1newdawn_1_1slick_1_1util_1_1_classpath_location}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+U\+RL \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1_classpath_location_a4608719eee9b1ef3b90d7056f7064cde}{get\+Resource}} (String ref)
+\item 
+Input\+Stream \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1_classpath_location_a452b5faed4fb19992109e2a1d9109ee4}{get\+Resource\+As\+Stream}} (String ref)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A resource location that searches the classpath
+
+\begin{DoxyAuthor}{Author}
+kevin 
+\end{DoxyAuthor}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1util_1_1_classpath_location_a4608719eee9b1ef3b90d7056f7064cde}\label{classorg_1_1newdawn_1_1slick_1_1util_1_1_classpath_location_a4608719eee9b1ef3b90d7056f7064cde}} 
+\index{org\+::newdawn\+::slick\+::util\+::\+Classpath\+Location@{org\+::newdawn\+::slick\+::util\+::\+Classpath\+Location}!get\+Resource@{get\+Resource}}
+\index{get\+Resource@{get\+Resource}!org\+::newdawn\+::slick\+::util\+::\+Classpath\+Location@{org\+::newdawn\+::slick\+::util\+::\+Classpath\+Location}}
+\subsubsection{\texorpdfstring{get\+Resource()}{getResource()}}
+{\footnotesize\ttfamily U\+RL org.\+newdawn.\+slick.\+util.\+Classpath\+Location.\+get\+Resource (\begin{DoxyParamCaption}\item[{String}]{ref }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1util_1_1_resource_location_a3f83afd2bf20002625526dc19ddfff96}{org.\+newdawn.\+slick.\+util.\+Resource\+Location\+::get\+Resource}}(java.\+lang.\+String) 
+\end{DoxySeeAlso}
+
+
+Implements \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1util_1_1_resource_location_a3f83afd2bf20002625526dc19ddfff96}{org.\+newdawn.\+slick.\+util.\+Resource\+Location}}.
+
+
+\begin{DoxyCode}
+15                                        \{
+16         String cpRef = ref.replace(\textcolor{charliteral}{'\(\backslash\)\(\backslash\)'}, \textcolor{charliteral}{'/'});
+17         \textcolor{keywordflow}{return} ResourceLoader.class.getClassLoader().getResource(cpRef);
+18     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1util_1_1_classpath_location_a452b5faed4fb19992109e2a1d9109ee4}\label{classorg_1_1newdawn_1_1slick_1_1util_1_1_classpath_location_a452b5faed4fb19992109e2a1d9109ee4}} 
+\index{org\+::newdawn\+::slick\+::util\+::\+Classpath\+Location@{org\+::newdawn\+::slick\+::util\+::\+Classpath\+Location}!get\+Resource\+As\+Stream@{get\+Resource\+As\+Stream}}
+\index{get\+Resource\+As\+Stream@{get\+Resource\+As\+Stream}!org\+::newdawn\+::slick\+::util\+::\+Classpath\+Location@{org\+::newdawn\+::slick\+::util\+::\+Classpath\+Location}}
+\subsubsection{\texorpdfstring{get\+Resource\+As\+Stream()}{getResourceAsStream()}}
+{\footnotesize\ttfamily Input\+Stream org.\+newdawn.\+slick.\+util.\+Classpath\+Location.\+get\+Resource\+As\+Stream (\begin{DoxyParamCaption}\item[{String}]{ref }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1util_1_1_resource_location_a484bade425ef16b2230d28701b2c5e2f}{org.\+newdawn.\+slick.\+util.\+Resource\+Location\+::get\+Resource\+As\+Stream}}(java.\+lang.\+String) 
+\end{DoxySeeAlso}
+
+
+Implements \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1util_1_1_resource_location_a484bade425ef16b2230d28701b2c5e2f}{org.\+newdawn.\+slick.\+util.\+Resource\+Location}}.
+
+
+\begin{DoxyCode}
+23                                                        \{
+24         String cpRef = ref.replace(\textcolor{charliteral}{'\(\backslash\)\(\backslash\)'}, \textcolor{charliteral}{'/'});
+25         \textcolor{keywordflow}{return} ResourceLoader.class.getClassLoader().getResourceAsStream(cpRef);    
+26     \}
+\end{DoxyCode}

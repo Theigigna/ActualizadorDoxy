@@ -1,0 +1,187 @@
+\hypertarget{classorg_1_1newdawn_1_1slick_1_1tests_1_1_copy_area_alpha_test}{}\section{org.\+newdawn.\+slick.\+tests.\+Copy\+Area\+Alpha\+Test Class Reference}
+\label{classorg_1_1newdawn_1_1slick_1_1tests_1_1_copy_area_alpha_test}\index{org.\+newdawn.\+slick.\+tests.\+Copy\+Area\+Alpha\+Test@{org.\+newdawn.\+slick.\+tests.\+Copy\+Area\+Alpha\+Test}}
+Inheritance diagram for org.\+newdawn.\+slick.\+tests.\+Copy\+Area\+Alpha\+Test\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.431373cm]{classorg_1_1newdawn_1_1slick_1_1tests_1_1_copy_area_alpha_test}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_copy_area_alpha_test_a95cd6685fac4e989127bcaa9c008d1c0}{Copy\+Area\+Alpha\+Test}} ()
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_copy_area_alpha_test_a14877413f55e6ff6cef16b2249105aad}{init}} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_game_container}{Game\+Container}} container)  throws Slick\+Exception 
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_copy_area_alpha_test_a8d99e3ef92c1464dfaa101c4ad7ec1ba}{update}} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_game_container}{Game\+Container}} container, int delta)  throws Slick\+Exception 
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_copy_area_alpha_test_a861c4d706463e2ee31d15eb576ce3864}{render}} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_game_container}{Game\+Container}} container, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_graphics}{Graphics}} g)  throws Slick\+Exception 
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_copy_area_alpha_test_ad3e659c4fc1026d613ffa7515ca21049}{key\+Pressed}} (int key, char c)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_copy_area_alpha_test_a8951242f70d532c48647bbcfeac17594}{main}} (String\mbox{[}$\,$\mbox{]} argv)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_image}{Image}} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_copy_area_alpha_test_a3ac052d3b96d0a06b587b856f390f0bd}{texture\+Map}}
+\item 
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_image}{Image}} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_copy_area_alpha_test_a65e4d5c340fc8e416483cfb8e9cce6be}{copy}}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+A test to demonstrate world clipping as opposed to screen clipping
+
+\begin{DoxyAuthor}{Author}
+kevin 
+\end{DoxyAuthor}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tests_1_1_copy_area_alpha_test_a95cd6685fac4e989127bcaa9c008d1c0}\label{classorg_1_1newdawn_1_1slick_1_1tests_1_1_copy_area_alpha_test_a95cd6685fac4e989127bcaa9c008d1c0}} 
+\index{org\+::newdawn\+::slick\+::tests\+::\+Copy\+Area\+Alpha\+Test@{org\+::newdawn\+::slick\+::tests\+::\+Copy\+Area\+Alpha\+Test}!Copy\+Area\+Alpha\+Test@{Copy\+Area\+Alpha\+Test}}
+\index{Copy\+Area\+Alpha\+Test@{Copy\+Area\+Alpha\+Test}!org\+::newdawn\+::slick\+::tests\+::\+Copy\+Area\+Alpha\+Test@{org\+::newdawn\+::slick\+::tests\+::\+Copy\+Area\+Alpha\+Test}}
+\subsubsection{\texorpdfstring{Copy\+Area\+Alpha\+Test()}{CopyAreaAlphaTest()}}
+{\footnotesize\ttfamily org.\+newdawn.\+slick.\+tests.\+Copy\+Area\+Alpha\+Test.\+Copy\+Area\+Alpha\+Test (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Create a new tester for the clip plane based clipping 
+\begin{DoxyCode}
+25                                \{
+26         super(\textcolor{stringliteral}{"CopyArea Alpha Test"});
+27     \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tests_1_1_copy_area_alpha_test_a14877413f55e6ff6cef16b2249105aad}\label{classorg_1_1newdawn_1_1slick_1_1tests_1_1_copy_area_alpha_test_a14877413f55e6ff6cef16b2249105aad}} 
+\index{org\+::newdawn\+::slick\+::tests\+::\+Copy\+Area\+Alpha\+Test@{org\+::newdawn\+::slick\+::tests\+::\+Copy\+Area\+Alpha\+Test}!init@{init}}
+\index{init@{init}!org\+::newdawn\+::slick\+::tests\+::\+Copy\+Area\+Alpha\+Test@{org\+::newdawn\+::slick\+::tests\+::\+Copy\+Area\+Alpha\+Test}}
+\subsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+tests.\+Copy\+Area\+Alpha\+Test.\+init (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_game_container}{Game\+Container}}}]{container }\end{DoxyParamCaption}) throws \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_slick_exception}{Slick\+Exception}}\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_basic_game_a8af0900217e4d389249f71367b22d114}{org.\+newdawn.\+slick.\+Basic\+Game\+::init}}(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_game_container}{org.\+newdawn.\+slick.\+Game\+Container}}) 
+\end{DoxySeeAlso}
+
+
+Implements \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1_game_ad2dd6affab08bb8fdb5fab0815957b7a}{org.\+newdawn.\+slick.\+Game}}.
+
+
+\begin{DoxyCode}
+32                                                                     \{
+33         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_copy_area_alpha_test_a3ac052d3b96d0a06b587b856f390f0bd}{textureMap}} = \textcolor{keyword}{new} Image(\textcolor{stringliteral}{"testdata/grass.png"});
+34         container.getGraphics().setBackground(Color.black);
+35         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_copy_area_alpha_test_a65e4d5c340fc8e416483cfb8e9cce6be}{copy}} = \textcolor{keyword}{new} Image(100,100);
+36     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tests_1_1_copy_area_alpha_test_ad3e659c4fc1026d613ffa7515ca21049}\label{classorg_1_1newdawn_1_1slick_1_1tests_1_1_copy_area_alpha_test_ad3e659c4fc1026d613ffa7515ca21049}} 
+\index{org\+::newdawn\+::slick\+::tests\+::\+Copy\+Area\+Alpha\+Test@{org\+::newdawn\+::slick\+::tests\+::\+Copy\+Area\+Alpha\+Test}!key\+Pressed@{key\+Pressed}}
+\index{key\+Pressed@{key\+Pressed}!org\+::newdawn\+::slick\+::tests\+::\+Copy\+Area\+Alpha\+Test@{org\+::newdawn\+::slick\+::tests\+::\+Copy\+Area\+Alpha\+Test}}
+\subsubsection{\texorpdfstring{key\+Pressed()}{keyPressed()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+tests.\+Copy\+Area\+Alpha\+Test.\+key\+Pressed (\begin{DoxyParamCaption}\item[{int}]{key,  }\item[{char}]{c }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_basic_game_a4fbb3345b5abf5ddd54a99466d07f02f}{org.\+newdawn.\+slick.\+Basic\+Game\+::key\+Pressed(int, char)}} 
+\end{DoxySeeAlso}
+
+
+Implements \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1_key_listener_ac0b0568a21ef486c4f51382614c196ef}{org.\+newdawn.\+slick.\+Key\+Listener}}.
+
+
+\begin{DoxyCode}
+65                                             \{
+66     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tests_1_1_copy_area_alpha_test_a8951242f70d532c48647bbcfeac17594}\label{classorg_1_1newdawn_1_1slick_1_1tests_1_1_copy_area_alpha_test_a8951242f70d532c48647bbcfeac17594}} 
+\index{org\+::newdawn\+::slick\+::tests\+::\+Copy\+Area\+Alpha\+Test@{org\+::newdawn\+::slick\+::tests\+::\+Copy\+Area\+Alpha\+Test}!main@{main}}
+\index{main@{main}!org\+::newdawn\+::slick\+::tests\+::\+Copy\+Area\+Alpha\+Test@{org\+::newdawn\+::slick\+::tests\+::\+Copy\+Area\+Alpha\+Test}}
+\subsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily static void org.\+newdawn.\+slick.\+tests.\+Copy\+Area\+Alpha\+Test.\+main (\begin{DoxyParamCaption}\item[{String \mbox{[}$\,$\mbox{]}}]{argv }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Entry point to our test
+
+
+\begin{DoxyParams}{Parameters}
+{\em argv} & The arguments to pass into the test \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+73                                            \{
+74         \textcolor{keywordflow}{try} \{
+75             AppGameContainer container = \textcolor{keyword}{new} AppGameContainer(\textcolor{keyword}{new} 
+      \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_copy_area_alpha_test_a95cd6685fac4e989127bcaa9c008d1c0}{CopyAreaAlphaTest}}());
+76             container.setDisplayMode(800,600,\textcolor{keyword}{false});
+77             container.start();
+78         \} \textcolor{keywordflow}{catch} (SlickException e) \{
+79             e.printStackTrace();
+80         \}
+81     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tests_1_1_copy_area_alpha_test_a861c4d706463e2ee31d15eb576ce3864}\label{classorg_1_1newdawn_1_1slick_1_1tests_1_1_copy_area_alpha_test_a861c4d706463e2ee31d15eb576ce3864}} 
+\index{org\+::newdawn\+::slick\+::tests\+::\+Copy\+Area\+Alpha\+Test@{org\+::newdawn\+::slick\+::tests\+::\+Copy\+Area\+Alpha\+Test}!render@{render}}
+\index{render@{render}!org\+::newdawn\+::slick\+::tests\+::\+Copy\+Area\+Alpha\+Test@{org\+::newdawn\+::slick\+::tests\+::\+Copy\+Area\+Alpha\+Test}}
+\subsubsection{\texorpdfstring{render()}{render()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+tests.\+Copy\+Area\+Alpha\+Test.\+render (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_game_container}{Game\+Container}}}]{container,  }\item[{\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_graphics}{Graphics}}}]{g }\end{DoxyParamCaption}) throws \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_slick_exception}{Slick\+Exception}}\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1_game_af1a4670d43eb3ba04dfcf55ab1975b64}{org.\+newdawn.\+slick.\+Game\+::render}}(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_game_container}{org.\+newdawn.\+slick.\+Game\+Container}}, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_graphics}{org.\+newdawn.\+slick.\+Graphics}}) 
+\end{DoxySeeAlso}
+
+
+Implements \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1_game_af1a4670d43eb3ba04dfcf55ab1975b64}{org.\+newdawn.\+slick.\+Game}}.
+
+
+\begin{DoxyCode}
+49                                   \{
+50         g.clearAlphaMap();
+51         g.setDrawMode(Graphics.MODE\_NORMAL);
+52         g.setColor(Color.white);
+53         g.fillOval(100,100,150,150);
+54         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_copy_area_alpha_test_a3ac052d3b96d0a06b587b856f390f0bd}{textureMap}}.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_image_a9bddcca05c7140ab45df8ac5b250b6cd}{draw}}(10,50);
+55         
+56         g.copyArea(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_copy_area_alpha_test_a65e4d5c340fc8e416483cfb8e9cce6be}{copy}}, 100,100);
+57         g.setColor(Color.red);
+58         g.fillRect(300,100,200,200);
+59         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_copy_area_alpha_test_a65e4d5c340fc8e416483cfb8e9cce6be}{copy}}.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_image_a9bddcca05c7140ab45df8ac5b250b6cd}{draw}}(350,150);
+60     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tests_1_1_copy_area_alpha_test_a8d99e3ef92c1464dfaa101c4ad7ec1ba}\label{classorg_1_1newdawn_1_1slick_1_1tests_1_1_copy_area_alpha_test_a8d99e3ef92c1464dfaa101c4ad7ec1ba}} 
+\index{org\+::newdawn\+::slick\+::tests\+::\+Copy\+Area\+Alpha\+Test@{org\+::newdawn\+::slick\+::tests\+::\+Copy\+Area\+Alpha\+Test}!update@{update}}
+\index{update@{update}!org\+::newdawn\+::slick\+::tests\+::\+Copy\+Area\+Alpha\+Test@{org\+::newdawn\+::slick\+::tests\+::\+Copy\+Area\+Alpha\+Test}}
+\subsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+tests.\+Copy\+Area\+Alpha\+Test.\+update (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_game_container}{Game\+Container}}}]{container,  }\item[{int}]{delta }\end{DoxyParamCaption}) throws \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_slick_exception}{Slick\+Exception}}\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_basic_game_acfe6fa05aef83bff1631af91a3e4bd20}{org.\+newdawn.\+slick.\+Basic\+Game\+::update}}(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_game_container}{org.\+newdawn.\+slick.\+Game\+Container}}, int) 
+\end{DoxySeeAlso}
+
+
+Implements \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1_game_ab07b2e9463ee4631620dde0de25bdee8}{org.\+newdawn.\+slick.\+Game}}.
+
+
+\begin{DoxyCode}
+42                                   \{
+43     \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tests_1_1_copy_area_alpha_test_a65e4d5c340fc8e416483cfb8e9cce6be}\label{classorg_1_1newdawn_1_1slick_1_1tests_1_1_copy_area_alpha_test_a65e4d5c340fc8e416483cfb8e9cce6be}} 
+\index{org\+::newdawn\+::slick\+::tests\+::\+Copy\+Area\+Alpha\+Test@{org\+::newdawn\+::slick\+::tests\+::\+Copy\+Area\+Alpha\+Test}!copy@{copy}}
+\index{copy@{copy}!org\+::newdawn\+::slick\+::tests\+::\+Copy\+Area\+Alpha\+Test@{org\+::newdawn\+::slick\+::tests\+::\+Copy\+Area\+Alpha\+Test}}
+\subsubsection{\texorpdfstring{copy}{copy}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_image}{Image}} org.\+newdawn.\+slick.\+tests.\+Copy\+Area\+Alpha\+Test.\+copy\hspace{0.3cm}{\ttfamily [private]}}
+
+The copied image \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tests_1_1_copy_area_alpha_test_a3ac052d3b96d0a06b587b856f390f0bd}\label{classorg_1_1newdawn_1_1slick_1_1tests_1_1_copy_area_alpha_test_a3ac052d3b96d0a06b587b856f390f0bd}} 
+\index{org\+::newdawn\+::slick\+::tests\+::\+Copy\+Area\+Alpha\+Test@{org\+::newdawn\+::slick\+::tests\+::\+Copy\+Area\+Alpha\+Test}!texture\+Map@{texture\+Map}}
+\index{texture\+Map@{texture\+Map}!org\+::newdawn\+::slick\+::tests\+::\+Copy\+Area\+Alpha\+Test@{org\+::newdawn\+::slick\+::tests\+::\+Copy\+Area\+Alpha\+Test}}
+\subsubsection{\texorpdfstring{texture\+Map}{textureMap}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_image}{Image}} org.\+newdawn.\+slick.\+tests.\+Copy\+Area\+Alpha\+Test.\+texture\+Map\hspace{0.3cm}{\ttfamily [private]}}
+
+The texture to apply over the top 

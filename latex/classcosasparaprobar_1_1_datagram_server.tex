@@ -1,0 +1,52 @@
+\hypertarget{classcosasparaprobar_1_1_datagram_server}{}\section{cosasparaprobar.\+Datagram\+Server Class Reference}
+\label{classcosasparaprobar_1_1_datagram_server}\index{cosasparaprobar.\+Datagram\+Server@{cosasparaprobar.\+Datagram\+Server}}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{classcosasparaprobar_1_1_datagram_server_adc5bebf5f9dc06c39412c2218d9c6d84}{main}} (String\mbox{[}$\,$\mbox{]} args)  throws I\+O\+Exception     
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyAuthor}{Author}
+Ignacio 
+\end{DoxyAuthor}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classcosasparaprobar_1_1_datagram_server_adc5bebf5f9dc06c39412c2218d9c6d84}\label{classcosasparaprobar_1_1_datagram_server_adc5bebf5f9dc06c39412c2218d9c6d84}} 
+\index{cosasparaprobar\+::\+Datagram\+Server@{cosasparaprobar\+::\+Datagram\+Server}!main@{main}}
+\index{main@{main}!cosasparaprobar\+::\+Datagram\+Server@{cosasparaprobar\+::\+Datagram\+Server}}
+\subsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily static void cosasparaprobar.\+Datagram\+Server.\+main (\begin{DoxyParamCaption}\item[{String \mbox{[}$\,$\mbox{]}}]{args }\end{DoxyParamCaption}) throws I\+O\+Exception\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+\begin{DoxyCode}
+23     \{
+24         DatagramSocket socket = null;
+25         \textcolor{keywordflow}{try} \{
+26             socket = \textcolor{keyword}{new} DatagramSocket(4445);
+27         \} \textcolor{keywordflow}{catch} (SocketException ex) \{
+28             Logger.getLogger(DatagramServer.class.getName()).log(Level.SEVERE, null, ex);
+29         \}
+30         String received=null;
+31         DatagramPacket paquete;
+32         \textcolor{keywordflow}{do} \{
+33             \textcolor{keywordflow}{try}\{
+34                 byte[] buf = \textcolor{keyword}{new} byte[128];
+35                 DatagramPacket packet = \textcolor{keyword}{new} DatagramPacket(buf, buf.length);
+36                 socket.receive(packet);  received = \textcolor{keyword}{new} String(packet.getData( ));
+37                 String dString = \textcolor{stringliteral}{"Eco: "} + received;  
+38                 buf = dString.getBytes( );
+39                 InetAddress address = packet.getAddress( );
+40                 \textcolor{keywordtype}{int} port = packet.getPort( );
+41                 packet = \textcolor{keyword}{new} DatagramPacket(buf, buf.length, address, port);
+42                 socket.send(packet);
+43             \} \textcolor{keywordflow}{catch} (IOException e)
+44             \{
+45                 
+46             \}
+47         \} \textcolor{keywordflow}{while} ( !received.equals( \textcolor{stringliteral}{"chao"} ) );
+48         socket.close();
+49                 \} 
+\end{DoxyCode}

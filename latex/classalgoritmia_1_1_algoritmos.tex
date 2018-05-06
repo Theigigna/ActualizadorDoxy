@@ -1,0 +1,388 @@
+\hypertarget{classalgoritmia_1_1_algoritmos}{}\section{algoritmia.\+Algoritmos Class Reference}
+\label{classalgoritmia_1_1_algoritmos}\index{algoritmia.\+Algoritmos@{algoritmia.\+Algoritmos}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classalgoritmia_1_1_algoritmos_a1ecfcbbdfa9fe28357385a28d24677e9}{Algoritmos}} ()
+\item 
+String \mbox{\hyperlink{classalgoritmia_1_1_algoritmos_a673473cfeaecd827c7345fb929e19464}{Dinamico}} ()
+\item 
+boolean \mbox{\hyperlink{classalgoritmia_1_1_algoritmos_a2c160a1d7cd8443433d2b8fc72148304}{Voraz}} ()
+\item 
+boolean \mbox{\hyperlink{classalgoritmia_1_1_algoritmos_a3b4d1e52cfec7e78cb42208bf63a4f65}{Cargar\+Datos}} (String direccion)
+\end{DoxyCompactItemize}
+\subsection*{Package Attributes}
+\begin{DoxyCompactItemize}
+\item 
+double \mbox{\hyperlink{classalgoritmia_1_1_algoritmos_a3f6bbaa8358a204e6dc486d7e818146f}{monedas}} \mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]}
+\item 
+double \mbox{\hyperlink{classalgoritmia_1_1_algoritmos_a3c4b89e8f06344f051f0812d67d2fe42}{cantidad\+\_\+solucion}} \mbox{[}$\,$\mbox{]}
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classalgoritmia_1_1_algoritmos_a7c37ed16dedcd133fa5a9a7dec5a734a}{calcular\+Cantidad}} (double valor, int cantidad, double devolucion)
+\end{DoxyCompactItemize}
+\subsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static final int \mbox{\hyperlink{classalgoritmia_1_1_algoritmos_a0a9ba4978b5b882c24472df7d5d97010}{V\+O\+R\+AZ}} = 0
+\item 
+static final int \mbox{\hyperlink{classalgoritmia_1_1_algoritmos_a1b1c4d0c3b1fc5aabe419e2951b9ed06}{D\+I\+N\+A\+M\+I\+CO}} = 1
+\item 
+static final int \mbox{\hyperlink{classalgoritmia_1_1_algoritmos_a25b962b4dc61840abf40b275011197a5}{B\+A\+C\+K\+T\+R\+A\+C\+K\+I\+NG}} = 2
+\item 
+static final int \mbox{\hyperlink{classalgoritmia_1_1_algoritmos_ad95879cb27d38d149e733992fb487933}{V\+A\+L\+OR}} = 0
+\item 
+static final int \mbox{\hyperlink{classalgoritmia_1_1_algoritmos_a42fcc64ce734e24638709e966f66e63b}{C\+A\+N\+T\+I\+D\+AD}} = 1
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyAuthor}{Author}
+Ignacio 
+\end{DoxyAuthor}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classalgoritmia_1_1_algoritmos_a1ecfcbbdfa9fe28357385a28d24677e9}\label{classalgoritmia_1_1_algoritmos_a1ecfcbbdfa9fe28357385a28d24677e9}} 
+\index{algoritmia\+::\+Algoritmos@{algoritmia\+::\+Algoritmos}!Algoritmos@{Algoritmos}}
+\index{Algoritmos@{Algoritmos}!algoritmia\+::\+Algoritmos@{algoritmia\+::\+Algoritmos}}
+\subsubsection{\texorpdfstring{Algoritmos()}{Algoritmos()}}
+{\footnotesize\ttfamily algoritmia.\+Algoritmos.\+Algoritmos (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+30                         \{
+31         
+32         this.\mbox{\hyperlink{classalgoritmia_1_1_algoritmos_a3c4b89e8f06344f051f0812d67d2fe42}{cantidad\_solucion}} = \textcolor{keyword}{new} \textcolor{keywordtype}{double} [15];
+33         
+34         this.\mbox{\hyperlink{classalgoritmia_1_1_algoritmos_a3f6bbaa8358a204e6dc486d7e818146f}{monedas}} = \textcolor{keyword}{new} \textcolor{keywordtype}{double}[2][15];
+35         this.\mbox{\hyperlink{classalgoritmia_1_1_algoritmos_a3f6bbaa8358a204e6dc486d7e818146f}{monedas}}[0][0] = 0.01;
+36         this.\mbox{\hyperlink{classalgoritmia_1_1_algoritmos_a3f6bbaa8358a204e6dc486d7e818146f}{monedas}}[1][0] = 3.00;
+37         this.\mbox{\hyperlink{classalgoritmia_1_1_algoritmos_a3f6bbaa8358a204e6dc486d7e818146f}{monedas}}[0][1] = 0.02;
+38         this.\mbox{\hyperlink{classalgoritmia_1_1_algoritmos_a3f6bbaa8358a204e6dc486d7e818146f}{monedas}}[1][1] = 0.00;
+39         this.\mbox{\hyperlink{classalgoritmia_1_1_algoritmos_a3f6bbaa8358a204e6dc486d7e818146f}{monedas}}[0][2] = 0.05;
+40         this.\mbox{\hyperlink{classalgoritmia_1_1_algoritmos_a3f6bbaa8358a204e6dc486d7e818146f}{monedas}}[1][2] = 2.00;
+41         this.\mbox{\hyperlink{classalgoritmia_1_1_algoritmos_a3f6bbaa8358a204e6dc486d7e818146f}{monedas}}[0][3] = 0.10;
+42         this.\mbox{\hyperlink{classalgoritmia_1_1_algoritmos_a3f6bbaa8358a204e6dc486d7e818146f}{monedas}}[1][3] = 4.00;
+43         this.\mbox{\hyperlink{classalgoritmia_1_1_algoritmos_a3f6bbaa8358a204e6dc486d7e818146f}{monedas}}[0][4] = 0.20;
+44         this.\mbox{\hyperlink{classalgoritmia_1_1_algoritmos_a3f6bbaa8358a204e6dc486d7e818146f}{monedas}}[1][4] = 0.00;
+45         this.\mbox{\hyperlink{classalgoritmia_1_1_algoritmos_a3f6bbaa8358a204e6dc486d7e818146f}{monedas}}[0][5] = 0.50;
+46         this.\mbox{\hyperlink{classalgoritmia_1_1_algoritmos_a3f6bbaa8358a204e6dc486d7e818146f}{monedas}}[1][5] = 3.00;
+47         this.\mbox{\hyperlink{classalgoritmia_1_1_algoritmos_a3f6bbaa8358a204e6dc486d7e818146f}{monedas}}[0][6] = 1.00;
+48         this.\mbox{\hyperlink{classalgoritmia_1_1_algoritmos_a3f6bbaa8358a204e6dc486d7e818146f}{monedas}}[1][6] = 4.00;
+49         this.\mbox{\hyperlink{classalgoritmia_1_1_algoritmos_a3f6bbaa8358a204e6dc486d7e818146f}{monedas}}[0][7] = 2.00;
+50         this.\mbox{\hyperlink{classalgoritmia_1_1_algoritmos_a3f6bbaa8358a204e6dc486d7e818146f}{monedas}}[1][7] = 2.00;
+51         this.\mbox{\hyperlink{classalgoritmia_1_1_algoritmos_a3f6bbaa8358a204e6dc486d7e818146f}{monedas}}[0][8] = 5.00;
+52         this.\mbox{\hyperlink{classalgoritmia_1_1_algoritmos_a3f6bbaa8358a204e6dc486d7e818146f}{monedas}}[1][8] = 2.00;
+53         this.\mbox{\hyperlink{classalgoritmia_1_1_algoritmos_a3f6bbaa8358a204e6dc486d7e818146f}{monedas}}[0][9] = 10.00;
+54         this.\mbox{\hyperlink{classalgoritmia_1_1_algoritmos_a3f6bbaa8358a204e6dc486d7e818146f}{monedas}}[1][9] = 4.00;
+55         this.\mbox{\hyperlink{classalgoritmia_1_1_algoritmos_a3f6bbaa8358a204e6dc486d7e818146f}{monedas}}[0][10] = 20.00;
+56         this.\mbox{\hyperlink{classalgoritmia_1_1_algoritmos_a3f6bbaa8358a204e6dc486d7e818146f}{monedas}}[1][10] = 3.00;
+57         this.\mbox{\hyperlink{classalgoritmia_1_1_algoritmos_a3f6bbaa8358a204e6dc486d7e818146f}{monedas}}[0][11] = 50.00;
+58         this.\mbox{\hyperlink{classalgoritmia_1_1_algoritmos_a3f6bbaa8358a204e6dc486d7e818146f}{monedas}}[1][11] = 2.00;
+59         this.\mbox{\hyperlink{classalgoritmia_1_1_algoritmos_a3f6bbaa8358a204e6dc486d7e818146f}{monedas}}[0][12] = 100.00;
+60         this.\mbox{\hyperlink{classalgoritmia_1_1_algoritmos_a3f6bbaa8358a204e6dc486d7e818146f}{monedas}}[1][12] = 4.00;
+61         this.\mbox{\hyperlink{classalgoritmia_1_1_algoritmos_a3f6bbaa8358a204e6dc486d7e818146f}{monedas}}[0][13] = 200.00;
+62         this.\mbox{\hyperlink{classalgoritmia_1_1_algoritmos_a3f6bbaa8358a204e6dc486d7e818146f}{monedas}}[1][13] = 2.00;
+63         this.\mbox{\hyperlink{classalgoritmia_1_1_algoritmos_a3f6bbaa8358a204e6dc486d7e818146f}{monedas}}[0][14] = 500.00;
+64         this.\mbox{\hyperlink{classalgoritmia_1_1_algoritmos_a3f6bbaa8358a204e6dc486d7e818146f}{monedas}}[1][14] = 1.00;
+65     \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classalgoritmia_1_1_algoritmos_a7c37ed16dedcd133fa5a9a7dec5a734a}\label{classalgoritmia_1_1_algoritmos_a7c37ed16dedcd133fa5a9a7dec5a734a}} 
+\index{algoritmia\+::\+Algoritmos@{algoritmia\+::\+Algoritmos}!calcular\+Cantidad@{calcular\+Cantidad}}
+\index{calcular\+Cantidad@{calcular\+Cantidad}!algoritmia\+::\+Algoritmos@{algoritmia\+::\+Algoritmos}}
+\subsubsection{\texorpdfstring{calcular\+Cantidad()}{calcularCantidad()}}
+{\footnotesize\ttfamily int algoritmia.\+Algoritmos.\+calcular\+Cantidad (\begin{DoxyParamCaption}\item[{double}]{valor,  }\item[{int}]{cantidad,  }\item[{double}]{devolucion }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+\begin{DoxyCode}
+228     \{
+229     \textcolor{keywordtype}{int} i = 0;
+230     \textcolor{keywordflow}{while}(i<cantidad || (valor*i+1)<=devolucion )
+231         i++;
+232     \textcolor{keywordflow}{return} i;
+233     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classalgoritmia_1_1_algoritmos_a3b4d1e52cfec7e78cb42208bf63a4f65}\label{classalgoritmia_1_1_algoritmos_a3b4d1e52cfec7e78cb42208bf63a4f65}} 
+\index{algoritmia\+::\+Algoritmos@{algoritmia\+::\+Algoritmos}!Cargar\+Datos@{Cargar\+Datos}}
+\index{Cargar\+Datos@{Cargar\+Datos}!algoritmia\+::\+Algoritmos@{algoritmia\+::\+Algoritmos}}
+\subsubsection{\texorpdfstring{Cargar\+Datos()}{CargarDatos()}}
+{\footnotesize\ttfamily boolean algoritmia.\+Algoritmos.\+Cargar\+Datos (\begin{DoxyParamCaption}\item[{String}]{direccion }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+236     \{
+237         \textcolor{comment}{/*String direccion = "";}
+238 \textcolor{comment}{        Scanner escaner = new Scanner (System.in); //Creación de un objeto Scanner}
+239 \textcolor{comment}{        direccion = escaner.nextLine (); //Invocamos un método sobre un objeto Scanner*/}
+240         
+241         
+242         \textcolor{keywordtype}{int} posx = 0, posy = 0;
+243         \textcolor{keywordtype}{double} monedas\_aux [][] = \textcolor{keyword}{new} \textcolor{keywordtype}{double}[2][15];
+244         String cadena;
+245         \textcolor{keywordtype}{int} i;
+246         FileReader f;
+247         \textcolor{keywordflow}{try} \{
+248             f = \textcolor{keyword}{new} FileReader(direccion);
+249             BufferedReader b = \textcolor{keyword}{new} BufferedReader(f);
+250             
+251             \textcolor{keywordflow}{for}(i=0;i<45;i++)
+252             \{
+253                 cadena = b.readLine();
+254                 \textcolor{keywordflow}{if}((i%3)==2)
+255                 \{
+256                     monedas\_aux[posx][posy] = Double.parseDouble(cadena);
+257                     posx--;
+258                 \}\textcolor{keywordflow}{else}\{
+259                     \textcolor{keywordflow}{if}((i%3)==1)\{
+260                         monedas\_aux[posx][posy] = Double.parseDouble(cadena);
+261                         posx++;
+262                     \}\textcolor{keywordflow}{else}\{
+263                         \textcolor{keywordflow}{if}(i==0)\{
+264                             
+265                         \}\textcolor{keywordflow}{else}\{
+266                             posy++;
+267                         \}
+268                     \}
+269                 \}
+270             \}
+271             System.out.println(\textcolor{stringliteral}{"Monedas cargadas correctamente.."});
+272             b.close();
+273         \} \textcolor{keywordflow}{catch} (FileNotFoundException ex) \{ \textcolor{comment}{//new Filereader}
+274             Logger.getLogger(\mbox{\hyperlink{classalgoritmia_1_1_algoritmos_a1ecfcbbdfa9fe28357385a28d24677e9}{Algoritmos}}.class.getName()).log(Level.SEVERE, null, ex);
+275             System.out.println(\textcolor{stringliteral}{"Direccion incorrecta."});
+276             \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+277         \} \textcolor{keywordflow}{catch} (IOException ex) \{ \textcolor{comment}{//readline}
+278             Logger.getLogger(\mbox{\hyperlink{classalgoritmia_1_1_algoritmos_a1ecfcbbdfa9fe28357385a28d24677e9}{Algoritmos}}.class.getName()).log(Level.SEVERE, null, ex);
+279             System.out.println(\textcolor{stringliteral}{"Formato incorrecto."});
+280             \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+281         \}
+282         this.\mbox{\hyperlink{classalgoritmia_1_1_algoritmos_a3f6bbaa8358a204e6dc486d7e818146f}{monedas}} = monedas\_aux;
+283         \textcolor{keywordflow}{return} \textcolor{keyword}{true};
+284     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classalgoritmia_1_1_algoritmos_a673473cfeaecd827c7345fb929e19464}\label{classalgoritmia_1_1_algoritmos_a673473cfeaecd827c7345fb929e19464}} 
+\index{algoritmia\+::\+Algoritmos@{algoritmia\+::\+Algoritmos}!Dinamico@{Dinamico}}
+\index{Dinamico@{Dinamico}!algoritmia\+::\+Algoritmos@{algoritmia\+::\+Algoritmos}}
+\subsubsection{\texorpdfstring{Dinamico()}{Dinamico()}}
+{\footnotesize\ttfamily String algoritmia.\+Algoritmos.\+Dinamico (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+67                               \{
+68         String aDevolver= \textcolor{stringliteral}{""};
+69         
+70         \textcolor{keywordtype}{int} centimos\_aux[][] = \textcolor{keyword}{new} \textcolor{keywordtype}{int}[2][15];
+71         \textcolor{keywordtype}{int} i, j, k;
+72         \textcolor{keywordtype}{double} auxd;
+73         \textcolor{keywordtype}{int} aux, c;
+74         \textcolor{keywordtype}{double} objetivo = 0.11; \textcolor{comment}{//hay que quitar esto y pasarlo por parametro en la version final}
+75         
+76         objetivo *= 100;
+77         \textcolor{keywordtype}{double} cantidadDinero = 0;
+78         \textcolor{keywordtype}{int} centimos;
+79         centimos = (int) objetivo;
+80         \textcolor{keywordflow}{if} (centimos < objetivo) \{
+81             centimos += 1;
+82         \}\textcolor{keywordflow}{else}\{
+83             \textcolor{keywordflow}{if}(centimos > objetivo)
+84             \{
+85                 centimos -= 1;
+86             \}
+87         \}
+88         
+89         System.out.println();
+90         \textcolor{keywordtype}{double} monedas\_aux[][] = this.\mbox{\hyperlink{classalgoritmia_1_1_algoritmos_a3f6bbaa8358a204e6dc486d7e818146f}{monedas}};
+91         
+92         \textcolor{keywordflow}{for}(i=0;i<15;i++)\{
+93             cantidadDinero += monedas\_aux[1][i] * monedas\_aux[0][i];
+94         \}
+95         cantidadDinero *= 100;
+96         
+97         \textcolor{keywordflow}{if}(objetivo > cantidadDinero)\{
+98             aDevolver = \textcolor{stringliteral}{"No tenemos dinero suficiente."};
+99             System.out.println(\textcolor{stringliteral}{"No tenemos dinero suficiente."});
+100             \textcolor{keywordflow}{return} aDevolver;
+101         \}
+102         
+103         \textcolor{keywordflow}{for} (i = 0; i < 2; i++) \{
+104             \textcolor{keywordflow}{for} (j = 0; j < 15; j++) \{
+105                 \textcolor{comment}{//si es el valor, lo multiplicamos por 100 para tener valor entero}
+106                 \textcolor{keywordflow}{if} (i == 0) \{
+107                     centimos\_aux[i][j] = (int) (monedas\_aux[i][j] * 100);
+108                 \} \textcolor{keywordflow}{else} \{
+109                     \textcolor{comment}{//si es la cantidad, se copia tal cual}
+110                     centimos\_aux[i][j] = (int) (monedas\_aux[i][j]);
+111                 \}
+112             \}
+113         \}
+114 
+115         \textcolor{comment}{//int euros = (int) ((objetivo*100)/100);}
+116         \textcolor{comment}{//[i][j][k]   i-->valores 1-50   j-->0-objetivo a conseguir   k==0-->cantidad de monedas totales   
+       k>0-->cantidades cantidad1-cantidad50}
+117         \textcolor{keywordtype}{int} tabla\_centimos[][][] = \textcolor{keyword}{new} \textcolor{keywordtype}{int}[16][centimos + 1][16];
+118 
+119         \textcolor{comment}{//inicializamos la tabla }
+120         \textcolor{comment}{//  0   -1  -1  -1  -1}
+121         \textcolor{comment}{//  0}
+122         \textcolor{comment}{//  0}
+123         \textcolor{comment}{//  0}
+124         \textcolor{keywordflow}{for} (i = 0; i < 16; i++) \{
+125             tabla\_centimos[i][0][0] = 0;
+126         \}
+127         \textcolor{keywordflow}{for} (j = 1; j < centimos + 1; j++) \{
+128             tabla\_centimos[0][j][0] = -1;
+129         \}
+130         \textcolor{comment}{//inicializamos las cantidades de monedas utilizadas a 0 en toda la tabal}
+131         \textcolor{keywordflow}{for} (i = 0; i < 16; i++) \{
+132             \textcolor{keywordflow}{for} (j = 0; j < centimos + 1; j++) \{
+133                 \textcolor{keywordflow}{for} (k = 1; k < 16; k++) \{
+134                     tabla\_centimos[i][j][k] = 0;
+135                 \}
+136             \}
+137         \}
+138         
+139         System.out.println(\textcolor{stringliteral}{"Tabla dinamica inicializada. Empezamos a rellenar."});
+140 
+141         \textcolor{comment}{//calcularemos primero los centimos}
+142         \textcolor{keywordflow}{for} (i = 1; i < 16; i++) \{
+143             \textcolor{keywordflow}{for} (j = 1; j < centimos + 1; j++) \{
+144                 \textcolor{keywordflow}{if} ((centimos\_aux[0][i - 1] * centimos\_aux[1][i - 1]) == j) \{
+145                     tabla\_centimos[i][j][0] = centimos\_aux[1][i - 1];
+146                     tabla\_centimos[i][j][i] = centimos\_aux[1][i - 1];
+147                 \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} ((centimos\_aux[0][i - 1] * centimos\_aux[1][i - 1]) < j) \{
+148                     aux = j - (centimos\_aux[0][i - 1] * centimos\_aux[1][i - 1]);
+149                     \textcolor{keywordflow}{if} (tabla\_centimos[i - 1][aux][0] == (-1)) \{
+150                         tabla\_centimos[i][j][0] = -1;
+151                     \} \textcolor{keywordflow}{else} \{
+152                         tabla\_centimos[i][j][0] = centimos\_aux[1][i - 1] + tabla\_centimos[i - 1][aux][0];
+153                         tabla\_centimos[i][j][i] = centimos\_aux[1][i - 1];
+154                         \textcolor{keywordflow}{for} (k = 1; k < 16; k++) \{
+155                             tabla\_centimos[i][j][k] += tabla\_centimos[i - 1][aux][k];
+156                         \}
+157                     \}
+158                 \} \textcolor{keywordflow}{else} \{ \textcolor{comment}{//cantidad * valor > buscado}
+159                     c = j / centimos\_aux[0][i - 1]; \textcolor{comment}{//cuantas monedas de esa cantidad necesitamos}
+160                     \textcolor{comment}{//si nos da justo con ese tipo de moneda}
+161                     \textcolor{keywordflow}{if} (centimos\_aux[0][i - 1] * c == j) \{
+162                         tabla\_centimos[i][j][0] = c;
+163                         tabla\_centimos[i][j][i] = c;
+164                     \} \textcolor{keywordflow}{else} \{\textcolor{comment}{//si ademas necesitamos anteriores}
+165                         aux = j - (centimos\_aux[0][i - 1] * c);
+166                         \textcolor{keywordflow}{if} (tabla\_centimos[i - 1][aux][0] == (-1)) \{
+167                             tabla\_centimos[i][j][0] = -1;
+168                         \} \textcolor{keywordflow}{else} \{
+169                             tabla\_centimos[i][j][0] = c + tabla\_centimos[i - 1][aux][0];
+170                             tabla\_centimos[i][j][i] = c;
+171                             \textcolor{keywordflow}{for} (k = 1; k < 16; k++) \{
+172                                 tabla\_centimos[i][j][k] += tabla\_centimos[i - 1][aux][k];
+173                             \}
+174                         \}
+175                     \}
+176                 \}
+177             \}
+178         \}
+179         
+180         System.out.println(\textcolor{stringliteral}{"Tabla dinamica terminada."});
+181         
+182         \textcolor{keywordflow}{if} (tabla\_centimos[15][centimos][0] == -1) \{
+183             aDevolver = \textcolor{stringliteral}{"No tenemos cambio."};
+184             System.out.println(\textcolor{stringliteral}{"No tenemos cambio."});
+185             \textcolor{keywordflow}{return} aDevolver;
+186         \} \textcolor{keywordflow}{else} \{
+187             System.out.println(\textcolor{stringliteral}{"Tenemos cambio."});
+188             System.out.println(\textcolor{stringliteral}{"Conseguido con:"});
+189             aDevolver = \textcolor{stringliteral}{"Tenemos cambio.\(\backslash\)nConseguido con:\(\backslash\)n"};
+190             \textcolor{keywordflow}{for} (j = 1; j < 16; j++) \{
+191                 \textcolor{comment}{//auxd = centimos\_aux[0][j-1]/100;}
+192                 System.out.printf(tabla\_centimos[15][centimos][j] + \textcolor{stringliteral}{" monedas de: %.2f"}+\textcolor{stringliteral}{"\(\backslash\)n"}, monedas\_aux[0
+      ][j - 1]);
+193                 aDevolver += tabla\_centimos[15][centimos][j] + \textcolor{stringliteral}{" monedas de: "}+monedas\_aux[0][j - 1]+\textcolor{stringliteral}{"\(\backslash\)n"};
+194             \}
+195 
+196         \}
+197 
+198         \textcolor{keywordflow}{return} aDevolver;
+199     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classalgoritmia_1_1_algoritmos_a2c160a1d7cd8443433d2b8fc72148304}\label{classalgoritmia_1_1_algoritmos_a2c160a1d7cd8443433d2b8fc72148304}} 
+\index{algoritmia\+::\+Algoritmos@{algoritmia\+::\+Algoritmos}!Voraz@{Voraz}}
+\index{Voraz@{Voraz}!algoritmia\+::\+Algoritmos@{algoritmia\+::\+Algoritmos}}
+\subsubsection{\texorpdfstring{Voraz()}{Voraz()}}
+{\footnotesize\ttfamily boolean algoritmia.\+Algoritmos.\+Voraz (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+201                            \{
+202         \textcolor{keywordtype}{double} maquina [][] = this.\mbox{\hyperlink{classalgoritmia_1_1_algoritmos_a3f6bbaa8358a204e6dc486d7e818146f}{monedas}};
+203         \textcolor{keywordtype}{double} devolucion = 123.23;
+204         \textcolor{keywordtype}{int} contador;
+205         \textcolor{keywordtype}{double} acumulado =0;
+206         \textcolor{keywordtype}{int} cantidad =0;
+207         \textcolor{keywordtype}{boolean} resultado=\textcolor{keyword}{false};
+208         \textcolor{comment}{/*El contador se inicializa en la ultima posicion, mientras que nos nos hayamos quedado sin monedas
+       }
+209 \textcolor{comment}{         o no podamos devolver el precio justo, iteramos*/}
+210         \textcolor{keywordflow}{for}(contador = maquina[1].length -1 ; contador >=0 || acumulado!= devolucion; contador--)
+211             \{
+212                 cantidad=\mbox{\hyperlink{classalgoritmia_1_1_algoritmos_a7c37ed16dedcd133fa5a9a7dec5a734a}{calcularCantidad}}(maquina[\mbox{\hyperlink{classalgoritmia_1_1_algoritmos_ad95879cb27d38d149e733992fb487933}{VALOR}}][contador],(\textcolor{keywordtype}{int}) maquina[
+      \mbox{\hyperlink{classalgoritmia_1_1_algoritmos_a42fcc64ce734e24638709e966f66e63b}{CANTIDAD}}][contador],devolucion);
+213                 acumulado+=cantidad*maquina[\mbox{\hyperlink{classalgoritmia_1_1_algoritmos_ad95879cb27d38d149e733992fb487933}{VALOR}}][contador];
+214             \}
+215         \textcolor{keywordflow}{if}(acumulado==devolucion)
+216         \{
+217             resultado=\textcolor{keyword}{true};
+218         \}
+219         \textcolor{keywordflow}{return} resultado;
+220     \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classalgoritmia_1_1_algoritmos_a25b962b4dc61840abf40b275011197a5}\label{classalgoritmia_1_1_algoritmos_a25b962b4dc61840abf40b275011197a5}} 
+\index{algoritmia\+::\+Algoritmos@{algoritmia\+::\+Algoritmos}!B\+A\+C\+K\+T\+R\+A\+C\+K\+I\+NG@{B\+A\+C\+K\+T\+R\+A\+C\+K\+I\+NG}}
+\index{B\+A\+C\+K\+T\+R\+A\+C\+K\+I\+NG@{B\+A\+C\+K\+T\+R\+A\+C\+K\+I\+NG}!algoritmia\+::\+Algoritmos@{algoritmia\+::\+Algoritmos}}
+\subsubsection{\texorpdfstring{B\+A\+C\+K\+T\+R\+A\+C\+K\+I\+NG}{BACKTRACKING}}
+{\footnotesize\ttfamily final int algoritmia.\+Algoritmos.\+B\+A\+C\+K\+T\+R\+A\+C\+K\+I\+NG = 2\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{classalgoritmia_1_1_algoritmos_a42fcc64ce734e24638709e966f66e63b}\label{classalgoritmia_1_1_algoritmos_a42fcc64ce734e24638709e966f66e63b}} 
+\index{algoritmia\+::\+Algoritmos@{algoritmia\+::\+Algoritmos}!C\+A\+N\+T\+I\+D\+AD@{C\+A\+N\+T\+I\+D\+AD}}
+\index{C\+A\+N\+T\+I\+D\+AD@{C\+A\+N\+T\+I\+D\+AD}!algoritmia\+::\+Algoritmos@{algoritmia\+::\+Algoritmos}}
+\subsubsection{\texorpdfstring{C\+A\+N\+T\+I\+D\+AD}{CANTIDAD}}
+{\footnotesize\ttfamily final int algoritmia.\+Algoritmos.\+C\+A\+N\+T\+I\+D\+AD = 1\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{classalgoritmia_1_1_algoritmos_a3c4b89e8f06344f051f0812d67d2fe42}\label{classalgoritmia_1_1_algoritmos_a3c4b89e8f06344f051f0812d67d2fe42}} 
+\index{algoritmia\+::\+Algoritmos@{algoritmia\+::\+Algoritmos}!cantidad\+\_\+solucion@{cantidad\+\_\+solucion}}
+\index{cantidad\+\_\+solucion@{cantidad\+\_\+solucion}!algoritmia\+::\+Algoritmos@{algoritmia\+::\+Algoritmos}}
+\subsubsection{\texorpdfstring{cantidad\+\_\+solucion}{cantidad\_solucion}}
+{\footnotesize\ttfamily double algoritmia.\+Algoritmos.\+cantidad\+\_\+solucion\mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\ttfamily [package]}}
+
+\mbox{\Hypertarget{classalgoritmia_1_1_algoritmos_a1b1c4d0c3b1fc5aabe419e2951b9ed06}\label{classalgoritmia_1_1_algoritmos_a1b1c4d0c3b1fc5aabe419e2951b9ed06}} 
+\index{algoritmia\+::\+Algoritmos@{algoritmia\+::\+Algoritmos}!D\+I\+N\+A\+M\+I\+CO@{D\+I\+N\+A\+M\+I\+CO}}
+\index{D\+I\+N\+A\+M\+I\+CO@{D\+I\+N\+A\+M\+I\+CO}!algoritmia\+::\+Algoritmos@{algoritmia\+::\+Algoritmos}}
+\subsubsection{\texorpdfstring{D\+I\+N\+A\+M\+I\+CO}{DINAMICO}}
+{\footnotesize\ttfamily final int algoritmia.\+Algoritmos.\+D\+I\+N\+A\+M\+I\+CO = 1\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{classalgoritmia_1_1_algoritmos_a3f6bbaa8358a204e6dc486d7e818146f}\label{classalgoritmia_1_1_algoritmos_a3f6bbaa8358a204e6dc486d7e818146f}} 
+\index{algoritmia\+::\+Algoritmos@{algoritmia\+::\+Algoritmos}!monedas@{monedas}}
+\index{monedas@{monedas}!algoritmia\+::\+Algoritmos@{algoritmia\+::\+Algoritmos}}
+\subsubsection{\texorpdfstring{monedas}{monedas}}
+{\footnotesize\ttfamily double algoritmia.\+Algoritmos.\+monedas\mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\ttfamily [package]}}
+
+\mbox{\Hypertarget{classalgoritmia_1_1_algoritmos_ad95879cb27d38d149e733992fb487933}\label{classalgoritmia_1_1_algoritmos_ad95879cb27d38d149e733992fb487933}} 
+\index{algoritmia\+::\+Algoritmos@{algoritmia\+::\+Algoritmos}!V\+A\+L\+OR@{V\+A\+L\+OR}}
+\index{V\+A\+L\+OR@{V\+A\+L\+OR}!algoritmia\+::\+Algoritmos@{algoritmia\+::\+Algoritmos}}
+\subsubsection{\texorpdfstring{V\+A\+L\+OR}{VALOR}}
+{\footnotesize\ttfamily final int algoritmia.\+Algoritmos.\+V\+A\+L\+OR = 0\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{classalgoritmia_1_1_algoritmos_a0a9ba4978b5b882c24472df7d5d97010}\label{classalgoritmia_1_1_algoritmos_a0a9ba4978b5b882c24472df7d5d97010}} 
+\index{algoritmia\+::\+Algoritmos@{algoritmia\+::\+Algoritmos}!V\+O\+R\+AZ@{V\+O\+R\+AZ}}
+\index{V\+O\+R\+AZ@{V\+O\+R\+AZ}!algoritmia\+::\+Algoritmos@{algoritmia\+::\+Algoritmos}}
+\subsubsection{\texorpdfstring{V\+O\+R\+AZ}{VORAZ}}
+{\footnotesize\ttfamily final int algoritmia.\+Algoritmos.\+V\+O\+R\+AZ = 0\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+

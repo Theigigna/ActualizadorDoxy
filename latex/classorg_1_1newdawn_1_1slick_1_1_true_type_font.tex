@@ -1,0 +1,640 @@
+\hypertarget{classorg_1_1newdawn_1_1slick_1_1_true_type_font}{}\section{org.\+newdawn.\+slick.\+True\+Type\+Font Class Reference}
+\label{classorg_1_1newdawn_1_1slick_1_1_true_type_font}\index{org.\+newdawn.\+slick.\+True\+Type\+Font@{org.\+newdawn.\+slick.\+True\+Type\+Font}}
+Inheritance diagram for org.\+newdawn.\+slick.\+True\+Type\+Font\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classorg_1_1newdawn_1_1slick_1_1_true_type_font}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_true_type_font_classorg_1_1newdawn_1_1slick_1_1_true_type_font_1_1_int_object}{Int\+Object}}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_true_type_font_affbebba5345c77b20cec3af40a878170}{True\+Type\+Font}} (java.\+awt.\+Font \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_true_type_font_a7c0b002b6010aa855bf4391ecf749498}{font}}, boolean \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_true_type_font_a1dc8e98ba06633544ec9f69c434dc126}{anti\+Alias}}, char\mbox{[}$\,$\mbox{]} additional\+Chars)
+\item 
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_true_type_font_a8e2f2993f972ca7a18e47297f9ee12e4}{True\+Type\+Font}} (java.\+awt.\+Font \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_true_type_font_a7c0b002b6010aa855bf4391ecf749498}{font}}, boolean \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_true_type_font_a1dc8e98ba06633544ec9f69c434dc126}{anti\+Alias}})
+\item 
+int \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_true_type_font_ad5614f14f3194de0b68f9fe095ab0bfa}{get\+Width}} (String whatchars)
+\item 
+int \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_true_type_font_ab2097e844d68fb72890b12db859493d7}{get\+Height}} ()
+\item 
+int \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_true_type_font_a077395a15b52dd9b4831b3ce8d6c8430}{get\+Height}} (String Height\+String)
+\item 
+int \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_true_type_font_a16d8fe4babd9423e3cc197662889faaf}{get\+Line\+Height}} ()
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_true_type_font_a348f5304a388040ffe1d87b2f17487de}{draw\+String}} (float x, float y, String whatchars, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_color}{org.\+newdawn.\+slick.\+Color}} color)
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_true_type_font_a6b7a0c70c011517ac5dc2bc498516120}{draw\+String}} (float x, float y, String whatchars, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_color}{org.\+newdawn.\+slick.\+Color}} color, int start\+Index, int end\+Index)
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_true_type_font_a732f297676331fd0ac0bd802a733d8c2}{draw\+String}} (float x, float y, String whatchars)
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+Buffered\+Image \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_true_type_font_aab88533daf9111e6f9c1514da3426d68}{get\+Font\+Image}} (char ch)
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_true_type_font_ab68a888a4721942a09812e27bccddced}{create\+Set}} (char\mbox{[}$\,$\mbox{]} custom\+Chars\+Array)
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_true_type_font_a0086e7a568d5ecd92f718bb2c31890f5}{draw\+Quad}} (float drawX, float drawY, float draw\+X2, float draw\+Y2, float srcX, float srcY, float src\+X2, float src\+Y2)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_true_type_font_classorg_1_1newdawn_1_1slick_1_1_true_type_font_1_1_int_object}{Int\+Object}} \mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_true_type_font_ae10a9ca17036288b7f76bd7ca10e4ea6}{char\+Array}} = new \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_true_type_font_classorg_1_1newdawn_1_1slick_1_1_true_type_font_1_1_int_object}{Int\+Object}}\mbox{[}256\mbox{]}
+\item 
+Map \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_true_type_font_a9043b8f092d2d1b8c7d65a4518fc4d3f}{custom\+Chars}} = new Hash\+Map()
+\item 
+boolean \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_true_type_font_a1dc8e98ba06633544ec9f69c434dc126}{anti\+Alias}}
+\item 
+int \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_true_type_font_ac16e29cb90eac37712d06dc36aaced56}{font\+Size}} = 0
+\item 
+int \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_true_type_font_a9bf36f9ee8aac6e87f0d1e2ba299cb3e}{font\+Height}} = 0
+\item 
+\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1opengl_1_1_texture}{Texture}} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_true_type_font_ace4f234c78e28498a78c1879c943704a}{font\+Texture}}
+\item 
+int \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_true_type_font_a9b5d5e4b07516d5c5f2918de908a6305}{texture\+Width}} = 512
+\item 
+int \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_true_type_font_aca6f680b23843c55b4ac0fd6097204b5}{texture\+Height}} = 512
+\item 
+java.\+awt.\+Font \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_true_type_font_a7c0b002b6010aa855bf4391ecf749498}{font}}
+\item 
+Font\+Metrics \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_true_type_font_ad34436ad15502ef14d8e1a4092d7ab2f}{font\+Metrics}}
+\end{DoxyCompactItemize}
+\subsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static final \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1opengl_1_1renderer_1_1_s_g_l}{S\+GL}} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_true_type_font_a2a59b22a758ee1ea01b39a890bb9ce35}{GL}} = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1renderer_1_1_renderer_abe742c3a7dfca67c6c01821d27087308}{Renderer.\+get}}()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A True\+Type font implementation for Slick
+
+\begin{DoxyAuthor}{Author}
+James Chambers (Jimmy) 
+
+Jeremy Adams (elias4444) 
+
+Kevin Glass (kevglass) 
+
+Peter Korzuszek (genail) 
+\end{DoxyAuthor}
+
+
+\subsection{Class Documentation}
+\index{org\+::newdawn\+::slick\+::\+True\+Type\+Font\+::\+Int\+Object@{org\+::newdawn\+::slick\+::\+True\+Type\+Font\+::\+Int\+Object}}\label{classorg_1_1newdawn_1_1slick_1_1_true_type_font_1_1_int_object}
+\Hypertarget{classorg_1_1newdawn_1_1slick_1_1_true_type_font_classorg_1_1newdawn_1_1slick_1_1_true_type_font_1_1_int_object}
+\subsubsection{class org\+:\+:newdawn\+:\+:slick\+:\+:True\+Type\+Font\+:\+:Int\+Object}
+This is a special internal class that holds our necessary information for the font characters. This includes width, height, and where the character is stored on the font texture. \begin{DoxyFields}{Class Members}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1_true_type_font_a40b6dc081892ad94432c12e43ec3a32f}\label{classorg_1_1newdawn_1_1slick_1_1_true_type_font_a40b6dc081892ad94432c12e43ec3a32f}} 
+int&
+height&
+Character\textquotesingle{}s height \\
+\hline
+
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1_true_type_font_a13120f072d235e565fa6512353f09a65}\label{classorg_1_1newdawn_1_1slick_1_1_true_type_font_a13120f072d235e565fa6512353f09a65}} 
+int&
+storedX&
+Character\textquotesingle{}s stored x position \\
+\hline
+
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1_true_type_font_a2e0689f86152e30cc1a0766162d2e263}\label{classorg_1_1newdawn_1_1slick_1_1_true_type_font_a2e0689f86152e30cc1a0766162d2e263}} 
+int&
+storedY&
+Character\textquotesingle{}s stored y position \\
+\hline
+
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1_true_type_font_a0145cf18e07aa4acde27296933dfb73b}\label{classorg_1_1newdawn_1_1slick_1_1_true_type_font_a0145cf18e07aa4acde27296933dfb73b}} 
+int&
+width&
+Character\textquotesingle{}s width \\
+\hline
+
+\end{DoxyFields}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1_true_type_font_affbebba5345c77b20cec3af40a878170}\label{classorg_1_1newdawn_1_1slick_1_1_true_type_font_affbebba5345c77b20cec3af40a878170}} 
+\index{org\+::newdawn\+::slick\+::\+True\+Type\+Font@{org\+::newdawn\+::slick\+::\+True\+Type\+Font}!True\+Type\+Font@{True\+Type\+Font}}
+\index{True\+Type\+Font@{True\+Type\+Font}!org\+::newdawn\+::slick\+::\+True\+Type\+Font@{org\+::newdawn\+::slick\+::\+True\+Type\+Font}}
+\subsubsection{\texorpdfstring{True\+Type\+Font()}{TrueTypeFont()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily org.\+newdawn.\+slick.\+True\+Type\+Font.\+True\+Type\+Font (\begin{DoxyParamCaption}\item[{java.\+awt.\+Font}]{font,  }\item[{boolean}]{anti\+Alias,  }\item[{char \mbox{[}$\,$\mbox{]}}]{additional\+Chars }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Constructor for the \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_true_type_font}{True\+Type\+Font}} class Pass in the preloaded standard Java True\+Type font, and whether you want it to be cached with Anti\+Aliasing applied.
+
+
+\begin{DoxyParams}{Parameters}
+{\em font} & Standard Java A\+WT font \\
+\hline
+{\em anti\+Alias} & Whether or not to apply Anti\+Aliasing to the cached font \\
+\hline
+{\em additional\+Chars} & Characters of font that will be used in addition of first 256 (by unicode). \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+91                                                                                        \{
+92         GLUtils.checkGLContext();
+93         
+94         this.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_true_type_font_a7c0b002b6010aa855bf4391ecf749498}{font}} = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_true_type_font_a7c0b002b6010aa855bf4391ecf749498}{font}};
+95         this.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_true_type_font_ac16e29cb90eac37712d06dc36aaced56}{fontSize}} = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_true_type_font_a7c0b002b6010aa855bf4391ecf749498}{font}}.getSize();
+96         this.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_true_type_font_a1dc8e98ba06633544ec9f69c434dc126}{antiAlias}} = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_true_type_font_a1dc8e98ba06633544ec9f69c434dc126}{antiAlias}};
+97 
+98         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_true_type_font_ab68a888a4721942a09812e27bccddced}{createSet}}( additionalChars );
+99     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1_true_type_font_a8e2f2993f972ca7a18e47297f9ee12e4}\label{classorg_1_1newdawn_1_1slick_1_1_true_type_font_a8e2f2993f972ca7a18e47297f9ee12e4}} 
+\index{org\+::newdawn\+::slick\+::\+True\+Type\+Font@{org\+::newdawn\+::slick\+::\+True\+Type\+Font}!True\+Type\+Font@{True\+Type\+Font}}
+\index{True\+Type\+Font@{True\+Type\+Font}!org\+::newdawn\+::slick\+::\+True\+Type\+Font@{org\+::newdawn\+::slick\+::\+True\+Type\+Font}}
+\subsubsection{\texorpdfstring{True\+Type\+Font()}{TrueTypeFont()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily org.\+newdawn.\+slick.\+True\+Type\+Font.\+True\+Type\+Font (\begin{DoxyParamCaption}\item[{java.\+awt.\+Font}]{font,  }\item[{boolean}]{anti\+Alias }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Constructor for the \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_true_type_font}{True\+Type\+Font}} class Pass in the preloaded standard Java True\+Type font, and whether you want it to be cached with Anti\+Aliasing applied.
+
+
+\begin{DoxyParams}{Parameters}
+{\em font} & Standard Java A\+WT font \\
+\hline
+{\em anti\+Alias} & Whether or not to apply Anti\+Aliasing to the cached font \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+111                                                                \{
+112         \textcolor{keyword}{this}( \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_true_type_font_a7c0b002b6010aa855bf4391ecf749498}{font}}, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_true_type_font_a1dc8e98ba06633544ec9f69c434dc126}{antiAlias}}, null );
+113     \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1_true_type_font_ab68a888a4721942a09812e27bccddced}\label{classorg_1_1newdawn_1_1slick_1_1_true_type_font_ab68a888a4721942a09812e27bccddced}} 
+\index{org\+::newdawn\+::slick\+::\+True\+Type\+Font@{org\+::newdawn\+::slick\+::\+True\+Type\+Font}!create\+Set@{create\+Set}}
+\index{create\+Set@{create\+Set}!org\+::newdawn\+::slick\+::\+True\+Type\+Font@{org\+::newdawn\+::slick\+::\+True\+Type\+Font}}
+\subsubsection{\texorpdfstring{create\+Set()}{createSet()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+True\+Type\+Font.\+create\+Set (\begin{DoxyParamCaption}\item[{char \mbox{[}$\,$\mbox{]}}]{custom\+Chars\+Array }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+Create and store the font
+
+
+\begin{DoxyParams}{Parameters}
+{\em custom\+Chars\+Array} & Characters that should be also added to the cache. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+170                                                       \{
+171         \textcolor{comment}{// If there are custom chars then I expand the font texture twice       }
+172         \textcolor{keywordflow}{if}  (customCharsArray != null && customCharsArray.length > 0) \{
+173             \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_true_type_font_a9b5d5e4b07516d5c5f2918de908a6305}{textureWidth}} *= 2;
+174         \}
+175         
+176         \textcolor{comment}{// In any case this should be done in other way. Texture with size 512x512}
+177         \textcolor{comment}{// can maintain only 256 characters with resolution of 32x32. The texture}
+178         \textcolor{comment}{// size should be calculated dynamicaly by looking at character sizes. }
+179         
+180         \textcolor{keywordflow}{try} \{
+181             
+182             BufferedImage imgTemp = \textcolor{keyword}{new} BufferedImage(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_true_type_font_a9b5d5e4b07516d5c5f2918de908a6305}{textureWidth}}, 
+      \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_true_type_font_aca6f680b23843c55b4ac0fd6097204b5}{textureHeight}}, BufferedImage.TYPE\_INT\_ARGB);
+183             Graphics2D g = (Graphics2D) imgTemp.getGraphics();
+184 
+185             g.setColor(\textcolor{keyword}{new} Color(255,255,255,1));
+186             g.fillRect(0,0,\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_true_type_font_a9b5d5e4b07516d5c5f2918de908a6305}{textureWidth}},\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_true_type_font_aca6f680b23843c55b4ac0fd6097204b5}{textureHeight}});
+187             
+188             \textcolor{keywordtype}{int} rowHeight = 0;
+189             \textcolor{keywordtype}{int} positionX = 0;
+190             \textcolor{keywordtype}{int} positionY = 0;
+191             
+192             \textcolor{keywordtype}{int} customCharsLength = ( customCharsArray != null ) ? customCharsArray.length : 0; 
+193 
+194             for (\textcolor{keywordtype}{int} i = 0; i < 256 + customCharsLength; i++) \{
+195                 
+196                 \textcolor{comment}{// get 0-255 characters and then custom characters}
+197                 \textcolor{keywordtype}{char} ch = ( i < 256 ) ? (\textcolor{keywordtype}{char}) i : customCharsArray[i-256];
+198                 
+199                 BufferedImage fontImage = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_true_type_font_aab88533daf9111e6f9c1514da3426d68}{getFontImage}}(ch);
+200 
+201                 IntObject newIntObject = \textcolor{keyword}{new} IntObject();
+202 
+203                 newIntObject.width = fontImage.getWidth();
+204                 newIntObject.height = fontImage.getHeight();
+205 
+206                 \textcolor{keywordflow}{if} (positionX + newIntObject.width >= \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_true_type_font_a9b5d5e4b07516d5c5f2918de908a6305}{textureWidth}}) \{
+207                     positionX = 0;
+208                     positionY += rowHeight;
+209                     rowHeight = 0;
+210                 \}
+211 
+212                 newIntObject.storedX = positionX;
+213                 newIntObject.storedY = positionY;
+214 
+215                 \textcolor{keywordflow}{if} (newIntObject.height > \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_true_type_font_a9bf36f9ee8aac6e87f0d1e2ba299cb3e}{fontHeight}}) \{
+216                     \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_true_type_font_a9bf36f9ee8aac6e87f0d1e2ba299cb3e}{fontHeight}} = newIntObject.height;
+217                 \}
+218 
+219                 \textcolor{keywordflow}{if} (newIntObject.height > rowHeight) \{
+220                     rowHeight = newIntObject.height;
+221                 \}
+222 
+223                 \textcolor{comment}{// Draw it here}
+224                 g.drawImage(fontImage, positionX, positionY, null);
+225 
+226                 positionX += newIntObject.width;
+227 
+228                 \textcolor{keywordflow}{if}( i < 256 ) \{ \textcolor{comment}{// standard characters}
+229                     \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_true_type_font_ae10a9ca17036288b7f76bd7ca10e4ea6}{charArray}}[i] = newIntObject;
+230                 \} \textcolor{keywordflow}{else} \{ \textcolor{comment}{// custom characters}
+231                     \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_true_type_font_a9043b8f092d2d1b8c7d65a4518fc4d3f}{customChars}}.put( \textcolor{keyword}{new} Character( ch ), newIntObject );
+232                 \}
+233 
+234                 fontImage = null;
+235             \}
+236 
+237             \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_true_type_font_ace4f234c78e28498a78c1879c943704a}{fontTexture}} = BufferedImageUtil
+238                     .getTexture(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_true_type_font_a7c0b002b6010aa855bf4391ecf749498}{font}}.toString(), imgTemp);
+239 
+240         \} \textcolor{keywordflow}{catch} (IOException e) \{
+241             System.err.println(\textcolor{stringliteral}{"Failed to create font."});
+242             e.printStackTrace();
+243         \}
+244     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1_true_type_font_a0086e7a568d5ecd92f718bb2c31890f5}\label{classorg_1_1newdawn_1_1slick_1_1_true_type_font_a0086e7a568d5ecd92f718bb2c31890f5}} 
+\index{org\+::newdawn\+::slick\+::\+True\+Type\+Font@{org\+::newdawn\+::slick\+::\+True\+Type\+Font}!draw\+Quad@{draw\+Quad}}
+\index{draw\+Quad@{draw\+Quad}!org\+::newdawn\+::slick\+::\+True\+Type\+Font@{org\+::newdawn\+::slick\+::\+True\+Type\+Font}}
+\subsubsection{\texorpdfstring{draw\+Quad()}{drawQuad()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+True\+Type\+Font.\+draw\+Quad (\begin{DoxyParamCaption}\item[{float}]{drawX,  }\item[{float}]{drawY,  }\item[{float}]{draw\+X2,  }\item[{float}]{draw\+Y2,  }\item[{float}]{srcX,  }\item[{float}]{srcY,  }\item[{float}]{src\+X2,  }\item[{float}]{src\+Y2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+Draw a textured quad
+
+
+\begin{DoxyParams}{Parameters}
+{\em drawX} & The left x position to draw to \\
+\hline
+{\em drawY} & The top y position to draw to \\
+\hline
+{\em draw\+X2} & The right x position to draw to \\
+\hline
+{\em draw\+Y2} & The bottom y position to draw to \\
+\hline
+{\em srcX} & The left source x position to draw from \\
+\hline
+{\em srcY} & The top source y position to draw from \\
+\hline
+{\em src\+X2} & The right source x position to draw from \\
+\hline
+{\em src\+Y2} & The bottom source y position to draw from \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+268                                                               \{
+269         \textcolor{keywordtype}{float} DrawWidth = drawX2 - drawX;
+270         \textcolor{keywordtype}{float} DrawHeight = drawY2 - drawY;
+271         \textcolor{keywordtype}{float} TextureSrcX = srcX / \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_true_type_font_a9b5d5e4b07516d5c5f2918de908a6305}{textureWidth}};
+272         \textcolor{keywordtype}{float} TextureSrcY = srcY / \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_true_type_font_aca6f680b23843c55b4ac0fd6097204b5}{textureHeight}};
+273         \textcolor{keywordtype}{float} SrcWidth = srcX2 - srcX;
+274         \textcolor{keywordtype}{float} SrcHeight = srcY2 - srcY;
+275         \textcolor{keywordtype}{float} RenderWidth = (SrcWidth / \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_true_type_font_a9b5d5e4b07516d5c5f2918de908a6305}{textureWidth}});
+276         \textcolor{keywordtype}{float} RenderHeight = (SrcHeight / \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_true_type_font_aca6f680b23843c55b4ac0fd6097204b5}{textureHeight}});
+277 
+278         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_true_type_font_a2a59b22a758ee1ea01b39a890bb9ce35}{GL}}.\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1opengl_1_1renderer_1_1_s_g_l_a5f661318cf9926c586a9837d0ded9fbd}{glTexCoord2f}}(TextureSrcX, TextureSrcY);
+279         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_true_type_font_a2a59b22a758ee1ea01b39a890bb9ce35}{GL}}.\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1opengl_1_1renderer_1_1_s_g_l_ad9c89f8bb275f22956f7687da5ec27c5}{glVertex2f}}(drawX, drawY);
+280         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_true_type_font_a2a59b22a758ee1ea01b39a890bb9ce35}{GL}}.\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1opengl_1_1renderer_1_1_s_g_l_a5f661318cf9926c586a9837d0ded9fbd}{glTexCoord2f}}(TextureSrcX, TextureSrcY + RenderHeight);
+281         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_true_type_font_a2a59b22a758ee1ea01b39a890bb9ce35}{GL}}.\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1opengl_1_1renderer_1_1_s_g_l_ad9c89f8bb275f22956f7687da5ec27c5}{glVertex2f}}(drawX, drawY + DrawHeight);
+282         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_true_type_font_a2a59b22a758ee1ea01b39a890bb9ce35}{GL}}.\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1opengl_1_1renderer_1_1_s_g_l_a5f661318cf9926c586a9837d0ded9fbd}{glTexCoord2f}}(TextureSrcX + RenderWidth, TextureSrcY + RenderHeight);
+283         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_true_type_font_a2a59b22a758ee1ea01b39a890bb9ce35}{GL}}.\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1opengl_1_1renderer_1_1_s_g_l_ad9c89f8bb275f22956f7687da5ec27c5}{glVertex2f}}(drawX + DrawWidth, drawY + DrawHeight);
+284         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_true_type_font_a2a59b22a758ee1ea01b39a890bb9ce35}{GL}}.\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1opengl_1_1renderer_1_1_s_g_l_a5f661318cf9926c586a9837d0ded9fbd}{glTexCoord2f}}(TextureSrcX + RenderWidth, TextureSrcY);
+285         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_true_type_font_a2a59b22a758ee1ea01b39a890bb9ce35}{GL}}.\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1opengl_1_1renderer_1_1_s_g_l_ad9c89f8bb275f22956f7687da5ec27c5}{glVertex2f}}(drawX + DrawWidth, drawY);
+286     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1_true_type_font_a348f5304a388040ffe1d87b2f17487de}\label{classorg_1_1newdawn_1_1slick_1_1_true_type_font_a348f5304a388040ffe1d87b2f17487de}} 
+\index{org\+::newdawn\+::slick\+::\+True\+Type\+Font@{org\+::newdawn\+::slick\+::\+True\+Type\+Font}!draw\+String@{draw\+String}}
+\index{draw\+String@{draw\+String}!org\+::newdawn\+::slick\+::\+True\+Type\+Font@{org\+::newdawn\+::slick\+::\+True\+Type\+Font}}
+\subsubsection{\texorpdfstring{draw\+String()}{drawString()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+True\+Type\+Font.\+draw\+String (\begin{DoxyParamCaption}\item[{float}]{x,  }\item[{float}]{y,  }\item[{String}]{whatchars,  }\item[{\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_color}{org.\+newdawn.\+slick.\+Color}}}]{color }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Draw a string
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & The x position to draw the string \\
+\hline
+{\em y} & The y position to draw the string \\
+\hline
+{\em whatchars} & The string to draw \\
+\hline
+{\em color} & The color to draw the text \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+354                                            \{
+355         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_true_type_font_a348f5304a388040ffe1d87b2f17487de}{drawString}}(x,y,whatchars,color,0,whatchars.length()-1);
+356     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1_true_type_font_a6b7a0c70c011517ac5dc2bc498516120}\label{classorg_1_1newdawn_1_1slick_1_1_true_type_font_a6b7a0c70c011517ac5dc2bc498516120}} 
+\index{org\+::newdawn\+::slick\+::\+True\+Type\+Font@{org\+::newdawn\+::slick\+::\+True\+Type\+Font}!draw\+String@{draw\+String}}
+\index{draw\+String@{draw\+String}!org\+::newdawn\+::slick\+::\+True\+Type\+Font@{org\+::newdawn\+::slick\+::\+True\+Type\+Font}}
+\subsubsection{\texorpdfstring{draw\+String()}{drawString()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+True\+Type\+Font.\+draw\+String (\begin{DoxyParamCaption}\item[{float}]{x,  }\item[{float}]{y,  }\item[{String}]{whatchars,  }\item[{\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_color}{org.\+newdawn.\+slick.\+Color}}}]{color,  }\item[{int}]{start\+Index,  }\item[{int}]{end\+Index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1_font_a40b19381efcb64ce1ce4d446eff1e350}{Font\+::draw\+String}}(float, float, String, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_color}{org.\+newdawn.\+slick.\+Color}}, int, int) 
+\end{DoxySeeAlso}
+
+\begin{DoxyCode}
+362                                                                          \{
+363         color.bind();
+364         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_true_type_font_ace4f234c78e28498a78c1879c943704a}{fontTexture}}.\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1opengl_1_1_texture_a97c02b82a8170c4c0bccb570dc872873}{bind}}();
+365 
+366         IntObject intObject = null;
+367         \textcolor{keywordtype}{int} charCurrent;
+368 
+369         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_true_type_font_a2a59b22a758ee1ea01b39a890bb9ce35}{GL}}.\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1opengl_1_1renderer_1_1_s_g_l_a34ef78aa5f8f5774c06117a01932fb02}{glBegin}}(SGL.GL\_QUADS);
+370 
+371         \textcolor{keywordtype}{int} totalwidth = 0;
+372         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < whatchars.length(); i++) \{
+373             charCurrent = whatchars.charAt(i);
+374             \textcolor{keywordflow}{if} (charCurrent < 256) \{
+375                 intObject = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_true_type_font_ae10a9ca17036288b7f76bd7ca10e4ea6}{charArray}}[charCurrent];
+376             \} \textcolor{keywordflow}{else} \{
+377                 intObject = (IntObject)\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_true_type_font_a9043b8f092d2d1b8c7d65a4518fc4d3f}{customChars}}.get( \textcolor{keyword}{new} Character( (\textcolor{keywordtype}{char}) charCurrent ) );
+378             \} 
+379             
+380             \textcolor{keywordflow}{if}( intObject != null ) \{
+381                 \textcolor{keywordflow}{if} ((i >= startIndex) || (i <= endIndex)) \{
+382                     \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_true_type_font_a0086e7a568d5ecd92f718bb2c31890f5}{drawQuad}}((x + totalwidth), y,
+383                             (x + totalwidth + intObject.width),
+384                             (y + intObject.height), intObject.storedX,
+385                             intObject.storedY, intObject.storedX + intObject.width,
+386                             intObject.storedY + intObject.height);
+387                 \}
+388                 totalwidth += intObject.width;
+389             \}
+390         \}
+391 
+392         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_true_type_font_a2a59b22a758ee1ea01b39a890bb9ce35}{GL}}.\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1opengl_1_1renderer_1_1_s_g_l_a7f5666aaa59b12617ab81e1263140f72}{glEnd}}();
+393     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1_true_type_font_a732f297676331fd0ac0bd802a733d8c2}\label{classorg_1_1newdawn_1_1slick_1_1_true_type_font_a732f297676331fd0ac0bd802a733d8c2}} 
+\index{org\+::newdawn\+::slick\+::\+True\+Type\+Font@{org\+::newdawn\+::slick\+::\+True\+Type\+Font}!draw\+String@{draw\+String}}
+\index{draw\+String@{draw\+String}!org\+::newdawn\+::slick\+::\+True\+Type\+Font@{org\+::newdawn\+::slick\+::\+True\+Type\+Font}}
+\subsubsection{\texorpdfstring{draw\+String()}{drawString()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+True\+Type\+Font.\+draw\+String (\begin{DoxyParamCaption}\item[{float}]{x,  }\item[{float}]{y,  }\item[{String}]{whatchars }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Draw a string
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & The x position to draw the string \\
+\hline
+{\em y} & The y position to draw the string \\
+\hline
+{\em whatchars} & The string to draw \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1_font_a40b19381efcb64ce1ce4d446eff1e350}{org.\+newdawn.\+slick.\+Font}}.
+
+
+\begin{DoxyCode}
+405                                                                \{
+406         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_true_type_font_a348f5304a388040ffe1d87b2f17487de}{drawString}}(x, y, whatchars, \mbox{\hyperlink{namespaceorg}{org}}.\mbox{\hyperlink{namespaceorg_1_1newdawn}{newdawn}}.\mbox{\hyperlink{namespaceorg_1_1newdawn_1_1slick}{slick}}.
+      \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_color}{Color}}.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_color_afcd91cbdd26233d226d734f70dca3d2e}{white}});
+407     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1_true_type_font_aab88533daf9111e6f9c1514da3426d68}\label{classorg_1_1newdawn_1_1slick_1_1_true_type_font_aab88533daf9111e6f9c1514da3426d68}} 
+\index{org\+::newdawn\+::slick\+::\+True\+Type\+Font@{org\+::newdawn\+::slick\+::\+True\+Type\+Font}!get\+Font\+Image@{get\+Font\+Image}}
+\index{get\+Font\+Image@{get\+Font\+Image}!org\+::newdawn\+::slick\+::\+True\+Type\+Font@{org\+::newdawn\+::slick\+::\+True\+Type\+Font}}
+\subsubsection{\texorpdfstring{get\+Font\+Image()}{getFontImage()}}
+{\footnotesize\ttfamily Buffered\+Image org.\+newdawn.\+slick.\+True\+Type\+Font.\+get\+Font\+Image (\begin{DoxyParamCaption}\item[{char}]{ch }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+Create a standard Java2D Buffered\+Image of the given character
+
+
+\begin{DoxyParams}{Parameters}
+{\em ch} & The character to create a Buffered\+Image for\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A Buffered\+Image containing the character 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+123                                                 \{
+124         \textcolor{comment}{// Create a temporary image to extract the character's size}
+125         BufferedImage tempfontImage = \textcolor{keyword}{new} BufferedImage(1, 1,
+126                 BufferedImage.TYPE\_INT\_ARGB);
+127         Graphics2D g = (Graphics2D) tempfontImage.getGraphics();
+128         \textcolor{keywordflow}{if} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_true_type_font_a1dc8e98ba06633544ec9f69c434dc126}{antiAlias}} == \textcolor{keyword}{true}) \{
+129             g.setRenderingHint(RenderingHints.KEY\_ANTIALIASING,
+130                     RenderingHints.VALUE\_ANTIALIAS\_ON);
+131         \}
+132         g.setFont(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_true_type_font_a7c0b002b6010aa855bf4391ecf749498}{font}});
+133         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_true_type_font_ad34436ad15502ef14d8e1a4092d7ab2f}{fontMetrics}} = g.getFontMetrics();
+134         \textcolor{keywordtype}{int} charwidth = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_true_type_font_ad34436ad15502ef14d8e1a4092d7ab2f}{fontMetrics}}.charWidth(ch);
+135 
+136         \textcolor{keywordflow}{if} (charwidth <= 0) \{
+137             charwidth = 1;
+138         \}
+139         \textcolor{keywordtype}{int} charheight = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_true_type_font_ad34436ad15502ef14d8e1a4092d7ab2f}{fontMetrics}}.getHeight();
+140         \textcolor{keywordflow}{if} (charheight <= 0) \{
+141             charheight = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_true_type_font_ac16e29cb90eac37712d06dc36aaced56}{fontSize}};
+142         \}
+143 
+144         \textcolor{comment}{// Create another image holding the character we are creating}
+145         BufferedImage fontImage;
+146         fontImage = \textcolor{keyword}{new} BufferedImage(charwidth, charheight,
+147                 BufferedImage.TYPE\_INT\_ARGB);
+148         Graphics2D gt = (Graphics2D) fontImage.getGraphics();
+149         \textcolor{keywordflow}{if} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_true_type_font_a1dc8e98ba06633544ec9f69c434dc126}{antiAlias}} == \textcolor{keyword}{true}) \{
+150             gt.setRenderingHint(RenderingHints.KEY\_ANTIALIASING,
+151                     RenderingHints.VALUE\_ANTIALIAS\_ON);
+152         \}
+153         gt.setFont(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_true_type_font_a7c0b002b6010aa855bf4391ecf749498}{font}});
+154 
+155         gt.setColor(Color.WHITE);
+156         \textcolor{keywordtype}{int} charx = 0;
+157         \textcolor{keywordtype}{int} chary = 0;
+158         gt.drawString(String.valueOf(ch), (charx), (chary)
+159                 + \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_true_type_font_ad34436ad15502ef14d8e1a4092d7ab2f}{fontMetrics}}.getAscent());
+160 
+161         \textcolor{keywordflow}{return} fontImage;
+162 
+163     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1_true_type_font_ab2097e844d68fb72890b12db859493d7}\label{classorg_1_1newdawn_1_1slick_1_1_true_type_font_ab2097e844d68fb72890b12db859493d7}} 
+\index{org\+::newdawn\+::slick\+::\+True\+Type\+Font@{org\+::newdawn\+::slick\+::\+True\+Type\+Font}!get\+Height@{get\+Height}}
+\index{get\+Height@{get\+Height}!org\+::newdawn\+::slick\+::\+True\+Type\+Font@{org\+::newdawn\+::slick\+::\+True\+Type\+Font}}
+\subsubsection{\texorpdfstring{get\+Height()}{getHeight()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily int org.\+newdawn.\+slick.\+True\+Type\+Font.\+get\+Height (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get the font\textquotesingle{}s height
+
+\begin{DoxyReturn}{Returns}
+The height of the font 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+319                            \{
+320         \textcolor{keywordflow}{return} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_true_type_font_a9bf36f9ee8aac6e87f0d1e2ba299cb3e}{fontHeight}};
+321     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1_true_type_font_a077395a15b52dd9b4831b3ce8d6c8430}\label{classorg_1_1newdawn_1_1slick_1_1_true_type_font_a077395a15b52dd9b4831b3ce8d6c8430}} 
+\index{org\+::newdawn\+::slick\+::\+True\+Type\+Font@{org\+::newdawn\+::slick\+::\+True\+Type\+Font}!get\+Height@{get\+Height}}
+\index{get\+Height@{get\+Height}!org\+::newdawn\+::slick\+::\+True\+Type\+Font@{org\+::newdawn\+::slick\+::\+True\+Type\+Font}}
+\subsubsection{\texorpdfstring{get\+Height()}{getHeight()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily int org.\+newdawn.\+slick.\+True\+Type\+Font.\+get\+Height (\begin{DoxyParamCaption}\item[{String}]{Height\+String }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get the height of a String
+
+\begin{DoxyReturn}{Returns}
+The height of a given string 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1_font_ac6a8b604bee484ad3ac2dd57a3eb65c9}{org.\+newdawn.\+slick.\+Font}}.
+
+
+\begin{DoxyCode}
+328                                               \{
+329         \textcolor{keywordflow}{return} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_true_type_font_a9bf36f9ee8aac6e87f0d1e2ba299cb3e}{fontHeight}};
+330     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1_true_type_font_a16d8fe4babd9423e3cc197662889faaf}\label{classorg_1_1newdawn_1_1slick_1_1_true_type_font_a16d8fe4babd9423e3cc197662889faaf}} 
+\index{org\+::newdawn\+::slick\+::\+True\+Type\+Font@{org\+::newdawn\+::slick\+::\+True\+Type\+Font}!get\+Line\+Height@{get\+Line\+Height}}
+\index{get\+Line\+Height@{get\+Line\+Height}!org\+::newdawn\+::slick\+::\+True\+Type\+Font@{org\+::newdawn\+::slick\+::\+True\+Type\+Font}}
+\subsubsection{\texorpdfstring{get\+Line\+Height()}{getLineHeight()}}
+{\footnotesize\ttfamily int org.\+newdawn.\+slick.\+True\+Type\+Font.\+get\+Line\+Height (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get the font\textquotesingle{}s line height
+
+\begin{DoxyReturn}{Returns}
+The line height of the font 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1_font_aeb4b7770f47c5e2631d84b35924376d7}{org.\+newdawn.\+slick.\+Font}}.
+
+
+\begin{DoxyCode}
+337                                \{
+338         \textcolor{keywordflow}{return} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_true_type_font_a9bf36f9ee8aac6e87f0d1e2ba299cb3e}{fontHeight}};
+339     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1_true_type_font_ad5614f14f3194de0b68f9fe095ab0bfa}\label{classorg_1_1newdawn_1_1slick_1_1_true_type_font_ad5614f14f3194de0b68f9fe095ab0bfa}} 
+\index{org\+::newdawn\+::slick\+::\+True\+Type\+Font@{org\+::newdawn\+::slick\+::\+True\+Type\+Font}!get\+Width@{get\+Width}}
+\index{get\+Width@{get\+Width}!org\+::newdawn\+::slick\+::\+True\+Type\+Font@{org\+::newdawn\+::slick\+::\+True\+Type\+Font}}
+\subsubsection{\texorpdfstring{get\+Width()}{getWidth()}}
+{\footnotesize\ttfamily int org.\+newdawn.\+slick.\+True\+Type\+Font.\+get\+Width (\begin{DoxyParamCaption}\item[{String}]{whatchars }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get the width of a given String
+
+
+\begin{DoxyParams}{Parameters}
+{\em whatchars} & The characters to get the width of\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The width of the characters 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1_font_a6dbdd5828730e18fcf0612307d0394b1}{org.\+newdawn.\+slick.\+Font}}.
+
+
+\begin{DoxyCode}
+296                                           \{
+297         \textcolor{keywordtype}{int} totalwidth = 0;
+298         IntObject intObject = null;
+299         \textcolor{keywordtype}{int} currentChar = 0;
+300         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < whatchars.length(); i++) \{
+301             currentChar = whatchars.charAt(i);
+302             \textcolor{keywordflow}{if} (currentChar < 256) \{
+303                 intObject = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_true_type_font_ae10a9ca17036288b7f76bd7ca10e4ea6}{charArray}}[currentChar];
+304             \} \textcolor{keywordflow}{else} \{
+305                 intObject = (IntObject)\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_true_type_font_a9043b8f092d2d1b8c7d65a4518fc4d3f}{customChars}}.get( \textcolor{keyword}{new} Character( (\textcolor{keywordtype}{char}) currentChar ) );
+306             \}
+307             
+308             \textcolor{keywordflow}{if}( intObject != null )
+309                 totalwidth += intObject.width;
+310         \}
+311         \textcolor{keywordflow}{return} totalwidth;
+312     \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1_true_type_font_a1dc8e98ba06633544ec9f69c434dc126}\label{classorg_1_1newdawn_1_1slick_1_1_true_type_font_a1dc8e98ba06633544ec9f69c434dc126}} 
+\index{org\+::newdawn\+::slick\+::\+True\+Type\+Font@{org\+::newdawn\+::slick\+::\+True\+Type\+Font}!anti\+Alias@{anti\+Alias}}
+\index{anti\+Alias@{anti\+Alias}!org\+::newdawn\+::slick\+::\+True\+Type\+Font@{org\+::newdawn\+::slick\+::\+True\+Type\+Font}}
+\subsubsection{\texorpdfstring{anti\+Alias}{antiAlias}}
+{\footnotesize\ttfamily boolean org.\+newdawn.\+slick.\+True\+Type\+Font.\+anti\+Alias\hspace{0.3cm}{\ttfamily [private]}}
+
+Boolean flag on whether Anti\+Aliasing is enabled or not \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1_true_type_font_ae10a9ca17036288b7f76bd7ca10e4ea6}\label{classorg_1_1newdawn_1_1slick_1_1_true_type_font_ae10a9ca17036288b7f76bd7ca10e4ea6}} 
+\index{org\+::newdawn\+::slick\+::\+True\+Type\+Font@{org\+::newdawn\+::slick\+::\+True\+Type\+Font}!char\+Array@{char\+Array}}
+\index{char\+Array@{char\+Array}!org\+::newdawn\+::slick\+::\+True\+Type\+Font@{org\+::newdawn\+::slick\+::\+True\+Type\+Font}}
+\subsubsection{\texorpdfstring{char\+Array}{charArray}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_true_type_font_classorg_1_1newdawn_1_1slick_1_1_true_type_font_1_1_int_object}{Int\+Object}} \mbox{[}$\,$\mbox{]} org.\+newdawn.\+slick.\+True\+Type\+Font.\+char\+Array = new \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_true_type_font_classorg_1_1newdawn_1_1slick_1_1_true_type_font_1_1_int_object}{Int\+Object}}\mbox{[}256\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}
+
+Array that holds necessary information about the font characters \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1_true_type_font_a9043b8f092d2d1b8c7d65a4518fc4d3f}\label{classorg_1_1newdawn_1_1slick_1_1_true_type_font_a9043b8f092d2d1b8c7d65a4518fc4d3f}} 
+\index{org\+::newdawn\+::slick\+::\+True\+Type\+Font@{org\+::newdawn\+::slick\+::\+True\+Type\+Font}!custom\+Chars@{custom\+Chars}}
+\index{custom\+Chars@{custom\+Chars}!org\+::newdawn\+::slick\+::\+True\+Type\+Font@{org\+::newdawn\+::slick\+::\+True\+Type\+Font}}
+\subsubsection{\texorpdfstring{custom\+Chars}{customChars}}
+{\footnotesize\ttfamily Map org.\+newdawn.\+slick.\+True\+Type\+Font.\+custom\+Chars = new Hash\+Map()\hspace{0.3cm}{\ttfamily [private]}}
+
+Map of user defined font characters (Character $<$-\/$>$ \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_true_type_font_classorg_1_1newdawn_1_1slick_1_1_true_type_font_1_1_int_object}{Int\+Object}}) \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1_true_type_font_a7c0b002b6010aa855bf4391ecf749498}\label{classorg_1_1newdawn_1_1slick_1_1_true_type_font_a7c0b002b6010aa855bf4391ecf749498}} 
+\index{org\+::newdawn\+::slick\+::\+True\+Type\+Font@{org\+::newdawn\+::slick\+::\+True\+Type\+Font}!font@{font}}
+\index{font@{font}!org\+::newdawn\+::slick\+::\+True\+Type\+Font@{org\+::newdawn\+::slick\+::\+True\+Type\+Font}}
+\subsubsection{\texorpdfstring{font}{font}}
+{\footnotesize\ttfamily java.\+awt.\+Font org.\+newdawn.\+slick.\+True\+Type\+Font.\+font\hspace{0.3cm}{\ttfamily [private]}}
+
+A reference to Java\textquotesingle{}s A\+WT \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1_font}{Font}} that we create our font texture from \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1_true_type_font_a9bf36f9ee8aac6e87f0d1e2ba299cb3e}\label{classorg_1_1newdawn_1_1slick_1_1_true_type_font_a9bf36f9ee8aac6e87f0d1e2ba299cb3e}} 
+\index{org\+::newdawn\+::slick\+::\+True\+Type\+Font@{org\+::newdawn\+::slick\+::\+True\+Type\+Font}!font\+Height@{font\+Height}}
+\index{font\+Height@{font\+Height}!org\+::newdawn\+::slick\+::\+True\+Type\+Font@{org\+::newdawn\+::slick\+::\+True\+Type\+Font}}
+\subsubsection{\texorpdfstring{font\+Height}{fontHeight}}
+{\footnotesize\ttfamily int org.\+newdawn.\+slick.\+True\+Type\+Font.\+font\+Height = 0\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1_font}{Font}}\textquotesingle{}s height \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1_true_type_font_ad34436ad15502ef14d8e1a4092d7ab2f}\label{classorg_1_1newdawn_1_1slick_1_1_true_type_font_ad34436ad15502ef14d8e1a4092d7ab2f}} 
+\index{org\+::newdawn\+::slick\+::\+True\+Type\+Font@{org\+::newdawn\+::slick\+::\+True\+Type\+Font}!font\+Metrics@{font\+Metrics}}
+\index{font\+Metrics@{font\+Metrics}!org\+::newdawn\+::slick\+::\+True\+Type\+Font@{org\+::newdawn\+::slick\+::\+True\+Type\+Font}}
+\subsubsection{\texorpdfstring{font\+Metrics}{fontMetrics}}
+{\footnotesize\ttfamily Font\+Metrics org.\+newdawn.\+slick.\+True\+Type\+Font.\+font\+Metrics\hspace{0.3cm}{\ttfamily [private]}}
+
+The font metrics for our Java A\+WT font \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1_true_type_font_ac16e29cb90eac37712d06dc36aaced56}\label{classorg_1_1newdawn_1_1slick_1_1_true_type_font_ac16e29cb90eac37712d06dc36aaced56}} 
+\index{org\+::newdawn\+::slick\+::\+True\+Type\+Font@{org\+::newdawn\+::slick\+::\+True\+Type\+Font}!font\+Size@{font\+Size}}
+\index{font\+Size@{font\+Size}!org\+::newdawn\+::slick\+::\+True\+Type\+Font@{org\+::newdawn\+::slick\+::\+True\+Type\+Font}}
+\subsubsection{\texorpdfstring{font\+Size}{fontSize}}
+{\footnotesize\ttfamily int org.\+newdawn.\+slick.\+True\+Type\+Font.\+font\+Size = 0\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1_font}{Font}}\textquotesingle{}s size \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1_true_type_font_ace4f234c78e28498a78c1879c943704a}\label{classorg_1_1newdawn_1_1slick_1_1_true_type_font_ace4f234c78e28498a78c1879c943704a}} 
+\index{org\+::newdawn\+::slick\+::\+True\+Type\+Font@{org\+::newdawn\+::slick\+::\+True\+Type\+Font}!font\+Texture@{font\+Texture}}
+\index{font\+Texture@{font\+Texture}!org\+::newdawn\+::slick\+::\+True\+Type\+Font@{org\+::newdawn\+::slick\+::\+True\+Type\+Font}}
+\subsubsection{\texorpdfstring{font\+Texture}{fontTexture}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1opengl_1_1_texture}{Texture}} org.\+newdawn.\+slick.\+True\+Type\+Font.\+font\+Texture\hspace{0.3cm}{\ttfamily [private]}}
+
+Texture used to cache the font 0-\/255 characters \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1_true_type_font_a2a59b22a758ee1ea01b39a890bb9ce35}\label{classorg_1_1newdawn_1_1slick_1_1_true_type_font_a2a59b22a758ee1ea01b39a890bb9ce35}} 
+\index{org\+::newdawn\+::slick\+::\+True\+Type\+Font@{org\+::newdawn\+::slick\+::\+True\+Type\+Font}!GL@{GL}}
+\index{GL@{GL}!org\+::newdawn\+::slick\+::\+True\+Type\+Font@{org\+::newdawn\+::slick\+::\+True\+Type\+Font}}
+\subsubsection{\texorpdfstring{GL}{GL}}
+{\footnotesize\ttfamily final \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1opengl_1_1renderer_1_1_s_g_l}{S\+GL}} org.\+newdawn.\+slick.\+True\+Type\+Font.\+GL = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1renderer_1_1_renderer_abe742c3a7dfca67c6c01821d27087308}{Renderer.\+get}}()\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+The renderer to use for all GL operations \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1_true_type_font_aca6f680b23843c55b4ac0fd6097204b5}\label{classorg_1_1newdawn_1_1slick_1_1_true_type_font_aca6f680b23843c55b4ac0fd6097204b5}} 
+\index{org\+::newdawn\+::slick\+::\+True\+Type\+Font@{org\+::newdawn\+::slick\+::\+True\+Type\+Font}!texture\+Height@{texture\+Height}}
+\index{texture\+Height@{texture\+Height}!org\+::newdawn\+::slick\+::\+True\+Type\+Font@{org\+::newdawn\+::slick\+::\+True\+Type\+Font}}
+\subsubsection{\texorpdfstring{texture\+Height}{textureHeight}}
+{\footnotesize\ttfamily int org.\+newdawn.\+slick.\+True\+Type\+Font.\+texture\+Height = 512\hspace{0.3cm}{\ttfamily [private]}}
+
+Default font texture height \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1_true_type_font_a9b5d5e4b07516d5c5f2918de908a6305}\label{classorg_1_1newdawn_1_1slick_1_1_true_type_font_a9b5d5e4b07516d5c5f2918de908a6305}} 
+\index{org\+::newdawn\+::slick\+::\+True\+Type\+Font@{org\+::newdawn\+::slick\+::\+True\+Type\+Font}!texture\+Width@{texture\+Width}}
+\index{texture\+Width@{texture\+Width}!org\+::newdawn\+::slick\+::\+True\+Type\+Font@{org\+::newdawn\+::slick\+::\+True\+Type\+Font}}
+\subsubsection{\texorpdfstring{texture\+Width}{textureWidth}}
+{\footnotesize\ttfamily int org.\+newdawn.\+slick.\+True\+Type\+Font.\+texture\+Width = 512\hspace{0.3cm}{\ttfamily [private]}}
+
+Default font texture width 

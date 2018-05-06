@@ -1,0 +1,42 @@
+\hypertarget{classpkg3_1_1pkg6_1_1entradaysalidabasica_1_1_entrada_y_salida_basica}{}\section{pkg3.\+pkg6.\+entradaysalidabasica.\+Entrada\+Y\+Salida\+Basica Class Reference}
+\label{classpkg3_1_1pkg6_1_1entradaysalidabasica_1_1_entrada_y_salida_basica}\index{pkg3.\+pkg6.\+entradaysalidabasica.\+Entrada\+Y\+Salida\+Basica@{pkg3.\+pkg6.\+entradaysalidabasica.\+Entrada\+Y\+Salida\+Basica}}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{classpkg3_1_1pkg6_1_1entradaysalidabasica_1_1_entrada_y_salida_basica_a83313a6dcc83eb59319aad6eeb10b853}{main}} (String\mbox{[}$\,$\mbox{]} args)
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classpkg3_1_1pkg6_1_1entradaysalidabasica_1_1_entrada_y_salida_basica_a83313a6dcc83eb59319aad6eeb10b853}\label{classpkg3_1_1pkg6_1_1entradaysalidabasica_1_1_entrada_y_salida_basica_a83313a6dcc83eb59319aad6eeb10b853}} 
+\index{pkg3\+::pkg6\+::entradaysalidabasica\+::\+Entrada\+Y\+Salida\+Basica@{pkg3\+::pkg6\+::entradaysalidabasica\+::\+Entrada\+Y\+Salida\+Basica}!main@{main}}
+\index{main@{main}!pkg3\+::pkg6\+::entradaysalidabasica\+::\+Entrada\+Y\+Salida\+Basica@{pkg3\+::pkg6\+::entradaysalidabasica\+::\+Entrada\+Y\+Salida\+Basica}}
+\subsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily static void pkg3.\+pkg6.\+entradaysalidabasica.\+Entrada\+Y\+Salida\+Basica.\+main (\begin{DoxyParamCaption}\item[{String \mbox{[}$\,$\mbox{]}}]{args }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em args} & the command line arguments \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+18                                            \{
+19         Scanner entrada = \textcolor{keyword}{new} Scanner(System.in);
+20        
+21         \textcolor{keywordtype}{int} edad;
+22         String nombre;
+23        
+24         System.out.println( \textcolor{stringliteral}{"\(\backslash\)nIntroduce tu nombre:"} );
+25         \textcolor{comment}{//lectura de un String}
+26         nombre = entrada.nextLine();
+27        
+28         System.out.println( \textcolor{stringliteral}{"\(\backslash\)nIntroduce tu edad:"} );       
+29         \textcolor{comment}{//lectura de un int}
+30         edad = entrada.nextInt();
+31        
+32         System.out.print( \textcolor{stringliteral}{"\(\backslash\)nTe llamas "} + nombre + \textcolor{stringliteral}{" y tienes "}
+33                                                + edad + \textcolor{stringliteral}{" años."});
+34         \textcolor{comment}{// TODO code application logic here}
+35     \}
+\end{DoxyCode}

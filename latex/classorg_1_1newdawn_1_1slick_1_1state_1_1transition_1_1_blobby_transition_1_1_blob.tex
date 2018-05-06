@@ -1,0 +1,123 @@
+\hypertarget{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_blobby_transition_1_1_blob}{}\section{org.\+newdawn.\+slick.\+state.\+transition.\+Blobby\+Transition.\+Blob Class Reference}
+\label{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_blobby_transition_1_1_blob}\index{org.\+newdawn.\+slick.\+state.\+transition.\+Blobby\+Transition.\+Blob@{org.\+newdawn.\+slick.\+state.\+transition.\+Blobby\+Transition.\+Blob}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_blobby_transition_1_1_blob_ab1b40eda2938b706839b2dbf57b6a02e}{Blob}} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_game_container}{Game\+Container}} container)
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_blobby_transition_1_1_blob_a7c1bf72bc3cbeccbee6a41b6f0ab4f3f}{update}} (int delta)
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_blobby_transition_1_1_blob_a26fabc726e7bdccf9287f104eae21d3c}{render}} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_graphics}{Graphics}} g)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+float \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_blobby_transition_1_1_blob_a5026febe6bf250f540a3c1dd931075e0}{x}}
+\item 
+float \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_blobby_transition_1_1_blob_a0880120ef6ca11df411b7e37a69bdad3}{y}}
+\item 
+float \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_blobby_transition_1_1_blob_a8fd7600bebcc9b209c3eeee0a83e8dc8}{grow\+Speed}}
+\item 
+float \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_blobby_transition_1_1_blob_a51823cbba4d39976abf9c6a567c8be5a}{rad}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A blob to show the new state
+
+\begin{DoxyAuthor}{Author}
+kevin 
+\end{DoxyAuthor}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_blobby_transition_1_1_blob_ab1b40eda2938b706839b2dbf57b6a02e}\label{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_blobby_transition_1_1_blob_ab1b40eda2938b706839b2dbf57b6a02e}} 
+\index{org\+::newdawn\+::slick\+::state\+::transition\+::\+Blobby\+Transition\+::\+Blob@{org\+::newdawn\+::slick\+::state\+::transition\+::\+Blobby\+Transition\+::\+Blob}!Blob@{Blob}}
+\index{Blob@{Blob}!org\+::newdawn\+::slick\+::state\+::transition\+::\+Blobby\+Transition\+::\+Blob@{org\+::newdawn\+::slick\+::state\+::transition\+::\+Blobby\+Transition\+::\+Blob}}
+\subsubsection{\texorpdfstring{Blob()}{Blob()}}
+{\footnotesize\ttfamily org.\+newdawn.\+slick.\+state.\+transition.\+Blobby\+Transition.\+Blob.\+Blob (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_game_container}{Game\+Container}}}]{container }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Create a new blob
+
+
+\begin{DoxyParams}{Parameters}
+{\em container} & The container for dimensions \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+140                                              \{
+141             \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_blobby_transition_1_1_blob_a5026febe6bf250f540a3c1dd931075e0}{x}} = (float) (Math.random() * container.getWidth());
+142             \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_blobby_transition_1_1_blob_a0880120ef6ca11df411b7e37a69bdad3}{y}} = (float) (Math.random() * container.getWidth());
+143             \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_blobby_transition_1_1_blob_a8fd7600bebcc9b209c3eeee0a83e8dc8}{growSpeed}} = (float) (1f + (Math.random() * 1f));
+144         \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_blobby_transition_1_1_blob_a26fabc726e7bdccf9287f104eae21d3c}\label{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_blobby_transition_1_1_blob_a26fabc726e7bdccf9287f104eae21d3c}} 
+\index{org\+::newdawn\+::slick\+::state\+::transition\+::\+Blobby\+Transition\+::\+Blob@{org\+::newdawn\+::slick\+::state\+::transition\+::\+Blobby\+Transition\+::\+Blob}!render@{render}}
+\index{render@{render}!org\+::newdawn\+::slick\+::state\+::transition\+::\+Blobby\+Transition\+::\+Blob@{org\+::newdawn\+::slick\+::state\+::transition\+::\+Blobby\+Transition\+::\+Blob}}
+\subsubsection{\texorpdfstring{render()}{render()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+state.\+transition.\+Blobby\+Transition.\+Blob.\+render (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_graphics}{Graphics}}}]{g }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Render the blob -\/ i.\+e. the mask
+
+
+\begin{DoxyParams}{Parameters}
+{\em g} & The grphics context on which the mask should be drawn \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+160                                        \{
+161             g.fillOval(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_blobby_transition_1_1_blob_a5026febe6bf250f540a3c1dd931075e0}{x}}-\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_blobby_transition_1_1_blob_a51823cbba4d39976abf9c6a567c8be5a}{rad}},\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_blobby_transition_1_1_blob_a0880120ef6ca11df411b7e37a69bdad3}{y}}-\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_blobby_transition_1_1_blob_a51823cbba4d39976abf9c6a567c8be5a}{rad}},\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_blobby_transition_1_1_blob_a51823cbba4d39976abf9c6a567c8be5a}{rad}}*2,\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_blobby_transition_1_1_blob_a51823cbba4d39976abf9c6a567c8be5a}{rad}}*2);
+162         \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_blobby_transition_1_1_blob_a7c1bf72bc3cbeccbee6a41b6f0ab4f3f}\label{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_blobby_transition_1_1_blob_a7c1bf72bc3cbeccbee6a41b6f0ab4f3f}} 
+\index{org\+::newdawn\+::slick\+::state\+::transition\+::\+Blobby\+Transition\+::\+Blob@{org\+::newdawn\+::slick\+::state\+::transition\+::\+Blobby\+Transition\+::\+Blob}!update@{update}}
+\index{update@{update}!org\+::newdawn\+::slick\+::state\+::transition\+::\+Blobby\+Transition\+::\+Blob@{org\+::newdawn\+::slick\+::state\+::transition\+::\+Blobby\+Transition\+::\+Blob}}
+\subsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+state.\+transition.\+Blobby\+Transition.\+Blob.\+update (\begin{DoxyParamCaption}\item[{int}]{delta }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Update the blob
+
+
+\begin{DoxyParams}{Parameters}
+{\em delta} & The change in time in milliseconds \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+151                                       \{
+152             \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_blobby_transition_1_1_blob_a51823cbba4d39976abf9c6a567c8be5a}{rad}} += \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_blobby_transition_1_1_blob_a8fd7600bebcc9b209c3eeee0a83e8dc8}{growSpeed}} * delta * 0.4f;
+153         \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_blobby_transition_1_1_blob_a8fd7600bebcc9b209c3eeee0a83e8dc8}\label{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_blobby_transition_1_1_blob_a8fd7600bebcc9b209c3eeee0a83e8dc8}} 
+\index{org\+::newdawn\+::slick\+::state\+::transition\+::\+Blobby\+Transition\+::\+Blob@{org\+::newdawn\+::slick\+::state\+::transition\+::\+Blobby\+Transition\+::\+Blob}!grow\+Speed@{grow\+Speed}}
+\index{grow\+Speed@{grow\+Speed}!org\+::newdawn\+::slick\+::state\+::transition\+::\+Blobby\+Transition\+::\+Blob@{org\+::newdawn\+::slick\+::state\+::transition\+::\+Blobby\+Transition\+::\+Blob}}
+\subsubsection{\texorpdfstring{grow\+Speed}{growSpeed}}
+{\footnotesize\ttfamily float org.\+newdawn.\+slick.\+state.\+transition.\+Blobby\+Transition.\+Blob.\+grow\+Speed\hspace{0.3cm}{\ttfamily [private]}}
+
+The speed at which this blob grows \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_blobby_transition_1_1_blob_a51823cbba4d39976abf9c6a567c8be5a}\label{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_blobby_transition_1_1_blob_a51823cbba4d39976abf9c6a567c8be5a}} 
+\index{org\+::newdawn\+::slick\+::state\+::transition\+::\+Blobby\+Transition\+::\+Blob@{org\+::newdawn\+::slick\+::state\+::transition\+::\+Blobby\+Transition\+::\+Blob}!rad@{rad}}
+\index{rad@{rad}!org\+::newdawn\+::slick\+::state\+::transition\+::\+Blobby\+Transition\+::\+Blob@{org\+::newdawn\+::slick\+::state\+::transition\+::\+Blobby\+Transition\+::\+Blob}}
+\subsubsection{\texorpdfstring{rad}{rad}}
+{\footnotesize\ttfamily float org.\+newdawn.\+slick.\+state.\+transition.\+Blobby\+Transition.\+Blob.\+rad\hspace{0.3cm}{\ttfamily [private]}}
+
+The radius of this blob \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_blobby_transition_1_1_blob_a5026febe6bf250f540a3c1dd931075e0}\label{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_blobby_transition_1_1_blob_a5026febe6bf250f540a3c1dd931075e0}} 
+\index{org\+::newdawn\+::slick\+::state\+::transition\+::\+Blobby\+Transition\+::\+Blob@{org\+::newdawn\+::slick\+::state\+::transition\+::\+Blobby\+Transition\+::\+Blob}!x@{x}}
+\index{x@{x}!org\+::newdawn\+::slick\+::state\+::transition\+::\+Blobby\+Transition\+::\+Blob@{org\+::newdawn\+::slick\+::state\+::transition\+::\+Blobby\+Transition\+::\+Blob}}
+\subsubsection{\texorpdfstring{x}{x}}
+{\footnotesize\ttfamily float org.\+newdawn.\+slick.\+state.\+transition.\+Blobby\+Transition.\+Blob.\+x\hspace{0.3cm}{\ttfamily [private]}}
+
+The x coordinate of the centre of this blob \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_blobby_transition_1_1_blob_a0880120ef6ca11df411b7e37a69bdad3}\label{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_blobby_transition_1_1_blob_a0880120ef6ca11df411b7e37a69bdad3}} 
+\index{org\+::newdawn\+::slick\+::state\+::transition\+::\+Blobby\+Transition\+::\+Blob@{org\+::newdawn\+::slick\+::state\+::transition\+::\+Blobby\+Transition\+::\+Blob}!y@{y}}
+\index{y@{y}!org\+::newdawn\+::slick\+::state\+::transition\+::\+Blobby\+Transition\+::\+Blob@{org\+::newdawn\+::slick\+::state\+::transition\+::\+Blobby\+Transition\+::\+Blob}}
+\subsubsection{\texorpdfstring{y}{y}}
+{\footnotesize\ttfamily float org.\+newdawn.\+slick.\+state.\+transition.\+Blobby\+Transition.\+Blob.\+y\hspace{0.3cm}{\ttfamily [private]}}
+
+The y coordinate of the centre of this blob 

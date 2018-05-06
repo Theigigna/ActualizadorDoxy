@@ -1,0 +1,82 @@
+\hypertarget{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1heuristics_1_1_manhattan_heuristic}{}\section{org.\+newdawn.\+slick.\+util.\+pathfinding.\+heuristics.\+Manhattan\+Heuristic Class Reference}
+\label{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1heuristics_1_1_manhattan_heuristic}\index{org.\+newdawn.\+slick.\+util.\+pathfinding.\+heuristics.\+Manhattan\+Heuristic@{org.\+newdawn.\+slick.\+util.\+pathfinding.\+heuristics.\+Manhattan\+Heuristic}}
+Inheritance diagram for org.\+newdawn.\+slick.\+util.\+pathfinding.\+heuristics.\+Manhattan\+Heuristic\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1heuristics_1_1_manhattan_heuristic}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1heuristics_1_1_manhattan_heuristic_a84454e3742e506767479223dbae1a36f}{Manhattan\+Heuristic}} (int \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1heuristics_1_1_manhattan_heuristic_aa9c2d604c30d1ab8c31672ea5daeef40}{minimum\+Cost}})
+\item 
+float \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1heuristics_1_1_manhattan_heuristic_a9ff77608b7c1a2b33cce627c5495b39e}{get\+Cost}} (\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_tile_based_map}{Tile\+Based\+Map}} map, \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_mover}{Mover}} mover, int x, int y, int tx, int ty)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1heuristics_1_1_manhattan_heuristic_aa9c2d604c30d1ab8c31672ea5daeef40}{minimum\+Cost}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A heuristic that drives the search based on the Manhattan distance between the current location and the target
+
+\begin{DoxyAuthor}{Author}
+Kevin Glass 
+\end{DoxyAuthor}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1heuristics_1_1_manhattan_heuristic_a84454e3742e506767479223dbae1a36f}\label{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1heuristics_1_1_manhattan_heuristic_a84454e3742e506767479223dbae1a36f}} 
+\index{org\+::newdawn\+::slick\+::util\+::pathfinding\+::heuristics\+::\+Manhattan\+Heuristic@{org\+::newdawn\+::slick\+::util\+::pathfinding\+::heuristics\+::\+Manhattan\+Heuristic}!Manhattan\+Heuristic@{Manhattan\+Heuristic}}
+\index{Manhattan\+Heuristic@{Manhattan\+Heuristic}!org\+::newdawn\+::slick\+::util\+::pathfinding\+::heuristics\+::\+Manhattan\+Heuristic@{org\+::newdawn\+::slick\+::util\+::pathfinding\+::heuristics\+::\+Manhattan\+Heuristic}}
+\subsubsection{\texorpdfstring{Manhattan\+Heuristic()}{ManhattanHeuristic()}}
+{\footnotesize\ttfamily org.\+newdawn.\+slick.\+util.\+pathfinding.\+heuristics.\+Manhattan\+Heuristic.\+Manhattan\+Heuristic (\begin{DoxyParamCaption}\item[{int}]{minimum\+Cost }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Create a new heuristic
+
+
+\begin{DoxyParams}{Parameters}
+{\em minimum\+Cost} & The minimum movement cost from any one square to the next \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+22                                                \{
+23         this.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1heuristics_1_1_manhattan_heuristic_aa9c2d604c30d1ab8c31672ea5daeef40}{minimumCost}} = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1heuristics_1_1_manhattan_heuristic_aa9c2d604c30d1ab8c31672ea5daeef40}{minimumCost}};
+24     \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1heuristics_1_1_manhattan_heuristic_a9ff77608b7c1a2b33cce627c5495b39e}\label{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1heuristics_1_1_manhattan_heuristic_a9ff77608b7c1a2b33cce627c5495b39e}} 
+\index{org\+::newdawn\+::slick\+::util\+::pathfinding\+::heuristics\+::\+Manhattan\+Heuristic@{org\+::newdawn\+::slick\+::util\+::pathfinding\+::heuristics\+::\+Manhattan\+Heuristic}!get\+Cost@{get\+Cost}}
+\index{get\+Cost@{get\+Cost}!org\+::newdawn\+::slick\+::util\+::pathfinding\+::heuristics\+::\+Manhattan\+Heuristic@{org\+::newdawn\+::slick\+::util\+::pathfinding\+::heuristics\+::\+Manhattan\+Heuristic}}
+\subsubsection{\texorpdfstring{get\+Cost()}{getCost()}}
+{\footnotesize\ttfamily float org.\+newdawn.\+slick.\+util.\+pathfinding.\+heuristics.\+Manhattan\+Heuristic.\+get\+Cost (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_tile_based_map}{Tile\+Based\+Map}}}]{map,  }\item[{\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_mover}{Mover}}}]{mover,  }\item[{int}]{x,  }\item[{int}]{y,  }\item[{int}]{tx,  }\item[{int}]{ty }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_heuristic_a6655bf4053ece54e62beec26876ad285}{A\+Star\+Heuristic\+::get\+Cost(\+Tile\+Based\+Map, Mover, int, int, int, int)}} 
+\end{DoxySeeAlso}
+
+
+Implements \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_heuristic_a6655bf4053ece54e62beec26876ad285}{org.\+newdawn.\+slick.\+util.\+pathfinding.\+A\+Star\+Heuristic}}.
+
+
+\begin{DoxyCode}
+30                     \{
+31         \textcolor{keywordflow}{return} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1heuristics_1_1_manhattan_heuristic_aa9c2d604c30d1ab8c31672ea5daeef40}{minimumCost}} * (Math.abs(x-tx) + Math.abs(y-ty));
+32     \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1heuristics_1_1_manhattan_heuristic_aa9c2d604c30d1ab8c31672ea5daeef40}\label{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1heuristics_1_1_manhattan_heuristic_aa9c2d604c30d1ab8c31672ea5daeef40}} 
+\index{org\+::newdawn\+::slick\+::util\+::pathfinding\+::heuristics\+::\+Manhattan\+Heuristic@{org\+::newdawn\+::slick\+::util\+::pathfinding\+::heuristics\+::\+Manhattan\+Heuristic}!minimum\+Cost@{minimum\+Cost}}
+\index{minimum\+Cost@{minimum\+Cost}!org\+::newdawn\+::slick\+::util\+::pathfinding\+::heuristics\+::\+Manhattan\+Heuristic@{org\+::newdawn\+::slick\+::util\+::pathfinding\+::heuristics\+::\+Manhattan\+Heuristic}}
+\subsubsection{\texorpdfstring{minimum\+Cost}{minimumCost}}
+{\footnotesize\ttfamily int org.\+newdawn.\+slick.\+util.\+pathfinding.\+heuristics.\+Manhattan\+Heuristic.\+minimum\+Cost\hspace{0.3cm}{\ttfamily [private]}}
+
+The minimum movement cost from any one square to the next 

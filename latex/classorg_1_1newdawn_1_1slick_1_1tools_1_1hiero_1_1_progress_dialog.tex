@@ -1,0 +1,126 @@
+\hypertarget{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_progress_dialog}{}\section{org.\+newdawn.\+slick.\+tools.\+hiero.\+Progress\+Dialog Class Reference}
+\label{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_progress_dialog}\index{org.\+newdawn.\+slick.\+tools.\+hiero.\+Progress\+Dialog@{org.\+newdawn.\+slick.\+tools.\+hiero.\+Progress\+Dialog}}
+Inheritance diagram for org.\+newdawn.\+slick.\+tools.\+hiero.\+Progress\+Dialog\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.944445cm]{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_progress_dialog}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_progress_dialog_a682daff052b72afb47eeb3daae24aaa6}{Progress\+Dialog}} (J\+Frame frame)
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_progress_dialog_ab20af450e284c7b3e838b45c40389ab0}{paint}} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_graphics}{Graphics}} g)
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_progress_dialog_a4adf31baf5b6bd6056548bfa991aadb1}{report\+Progress}} (String type, int \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_progress_dialog_aba73b86e01e2e9a3cde55146ce905aa5}{current}}, int \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_progress_dialog_a7facb05047f254e898637bdfde4d3000}{total}})
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+String \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_progress_dialog_acd9d79724bb00dac233a3fb61df9b3e8}{message}}
+\item 
+int \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_progress_dialog_aba73b86e01e2e9a3cde55146ce905aa5}{current}}
+\item 
+int \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_progress_dialog_a7facb05047f254e898637bdfde4d3000}{total}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A dialog to show progress of the distance map generation
+
+\begin{DoxyAuthor}{Author}
+kevin 
+\end{DoxyAuthor}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_progress_dialog_a682daff052b72afb47eeb3daae24aaa6}\label{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_progress_dialog_a682daff052b72afb47eeb3daae24aaa6}} 
+\index{org\+::newdawn\+::slick\+::tools\+::hiero\+::\+Progress\+Dialog@{org\+::newdawn\+::slick\+::tools\+::hiero\+::\+Progress\+Dialog}!Progress\+Dialog@{Progress\+Dialog}}
+\index{Progress\+Dialog@{Progress\+Dialog}!org\+::newdawn\+::slick\+::tools\+::hiero\+::\+Progress\+Dialog@{org\+::newdawn\+::slick\+::tools\+::hiero\+::\+Progress\+Dialog}}
+\subsubsection{\texorpdfstring{Progress\+Dialog()}{ProgressDialog()}}
+{\footnotesize\ttfamily org.\+newdawn.\+slick.\+tools.\+hiero.\+Progress\+Dialog.\+Progress\+Dialog (\begin{DoxyParamCaption}\item[{J\+Frame}]{frame }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Create a new dialog
+
+
+\begin{DoxyParams}{Parameters}
+{\em frame} & The owner frame that should be blocked \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+27                                         \{
+28         super(frame, \textcolor{stringliteral}{"Generating Distance Map"}, \textcolor{keyword}{true});
+29     
+30         setSize(300,200);
+31         setResizable(\textcolor{keyword}{false});
+32         setLocationRelativeTo(frame);
+33     \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_progress_dialog_ab20af450e284c7b3e838b45c40389ab0}\label{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_progress_dialog_ab20af450e284c7b3e838b45c40389ab0}} 
+\index{org\+::newdawn\+::slick\+::tools\+::hiero\+::\+Progress\+Dialog@{org\+::newdawn\+::slick\+::tools\+::hiero\+::\+Progress\+Dialog}!paint@{paint}}
+\index{paint@{paint}!org\+::newdawn\+::slick\+::tools\+::hiero\+::\+Progress\+Dialog@{org\+::newdawn\+::slick\+::tools\+::hiero\+::\+Progress\+Dialog}}
+\subsubsection{\texorpdfstring{paint()}{paint()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+tools.\+hiero.\+Progress\+Dialog.\+paint (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_graphics}{Graphics}}}]{g }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxySeeAlso}{See also}
+java.\+awt.\+Container\+::paint(java.\+awt.\+Graphics) 
+\end{DoxySeeAlso}
+
+\begin{DoxyCode}
+38                                   \{
+39         super.paint(g);
+40         
+41         g.setColor(Color.black);
+42         g.drawString(\textcolor{stringliteral}{"Generating Distance Map"}, 10, 100);
+43         g.drawString(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_progress_dialog_acd9d79724bb00dac233a3fb61df9b3e8}{message}} + \textcolor{stringliteral}{"("}+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_progress_dialog_aba73b86e01e2e9a3cde55146ce905aa5}{current}}+\textcolor{stringliteral}{"/"}+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_progress_dialog_a7facb05047f254e898637bdfde4d3000}{total}}+\textcolor{stringliteral}{")"}, 20, 150);
+44     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_progress_dialog_a4adf31baf5b6bd6056548bfa991aadb1}\label{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_progress_dialog_a4adf31baf5b6bd6056548bfa991aadb1}} 
+\index{org\+::newdawn\+::slick\+::tools\+::hiero\+::\+Progress\+Dialog@{org\+::newdawn\+::slick\+::tools\+::hiero\+::\+Progress\+Dialog}!report\+Progress@{report\+Progress}}
+\index{report\+Progress@{report\+Progress}!org\+::newdawn\+::slick\+::tools\+::hiero\+::\+Progress\+Dialog@{org\+::newdawn\+::slick\+::tools\+::hiero\+::\+Progress\+Dialog}}
+\subsubsection{\texorpdfstring{report\+Progress()}{reportProgress()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+tools.\+hiero.\+Progress\+Dialog.\+report\+Progress (\begin{DoxyParamCaption}\item[{String}]{type,  }\item[{int}]{current,  }\item[{int}]{total }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_progress_listener_a2b34243285df0b11dc2719c062474cfc}{org.\+newdawn.\+slick.\+tools.\+hiero.\+Progress\+Listener\+::report\+Progress}}(java.\+lang.\+String, int, int) 
+\end{DoxySeeAlso}
+
+
+Implements \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_progress_listener_a2b34243285df0b11dc2719c062474cfc}{org.\+newdawn.\+slick.\+tools.\+hiero.\+Progress\+Listener}}.
+
+
+\begin{DoxyCode}
+49                                                                     \{
+50         this.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_progress_dialog_acd9d79724bb00dac233a3fb61df9b3e8}{message}} = type;
+51         this.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_progress_dialog_aba73b86e01e2e9a3cde55146ce905aa5}{current}} = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_progress_dialog_aba73b86e01e2e9a3cde55146ce905aa5}{current}};
+52         this.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_progress_dialog_a7facb05047f254e898637bdfde4d3000}{total}} = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_progress_dialog_a7facb05047f254e898637bdfde4d3000}{total}};
+53         repaint();
+54     \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_progress_dialog_aba73b86e01e2e9a3cde55146ce905aa5}\label{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_progress_dialog_aba73b86e01e2e9a3cde55146ce905aa5}} 
+\index{org\+::newdawn\+::slick\+::tools\+::hiero\+::\+Progress\+Dialog@{org\+::newdawn\+::slick\+::tools\+::hiero\+::\+Progress\+Dialog}!current@{current}}
+\index{current@{current}!org\+::newdawn\+::slick\+::tools\+::hiero\+::\+Progress\+Dialog@{org\+::newdawn\+::slick\+::tools\+::hiero\+::\+Progress\+Dialog}}
+\subsubsection{\texorpdfstring{current}{current}}
+{\footnotesize\ttfamily int org.\+newdawn.\+slick.\+tools.\+hiero.\+Progress\+Dialog.\+current\hspace{0.3cm}{\ttfamily [private]}}
+
+The current message to display \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_progress_dialog_acd9d79724bb00dac233a3fb61df9b3e8}\label{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_progress_dialog_acd9d79724bb00dac233a3fb61df9b3e8}} 
+\index{org\+::newdawn\+::slick\+::tools\+::hiero\+::\+Progress\+Dialog@{org\+::newdawn\+::slick\+::tools\+::hiero\+::\+Progress\+Dialog}!message@{message}}
+\index{message@{message}!org\+::newdawn\+::slick\+::tools\+::hiero\+::\+Progress\+Dialog@{org\+::newdawn\+::slick\+::tools\+::hiero\+::\+Progress\+Dialog}}
+\subsubsection{\texorpdfstring{message}{message}}
+{\footnotesize\ttfamily String org.\+newdawn.\+slick.\+tools.\+hiero.\+Progress\+Dialog.\+message\hspace{0.3cm}{\ttfamily [private]}}
+
+The progress message to display \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_progress_dialog_a7facb05047f254e898637bdfde4d3000}\label{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_progress_dialog_a7facb05047f254e898637bdfde4d3000}} 
+\index{org\+::newdawn\+::slick\+::tools\+::hiero\+::\+Progress\+Dialog@{org\+::newdawn\+::slick\+::tools\+::hiero\+::\+Progress\+Dialog}!total@{total}}
+\index{total@{total}!org\+::newdawn\+::slick\+::tools\+::hiero\+::\+Progress\+Dialog@{org\+::newdawn\+::slick\+::tools\+::hiero\+::\+Progress\+Dialog}}
+\subsubsection{\texorpdfstring{total}{total}}
+{\footnotesize\ttfamily int org.\+newdawn.\+slick.\+tools.\+hiero.\+Progress\+Dialog.\+total\hspace{0.3cm}{\ttfamily [private]}}
+
+The total message to display 

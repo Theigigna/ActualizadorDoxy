@@ -1,0 +1,27 @@
+var classorg_1_1newdawn_1_1slick_1_1_sprite_sheet =
+[
+    [ "SpriteSheet", "classorg_1_1newdawn_1_1slick_1_1_sprite_sheet.html#af85d7abd2fa01203c49cf0de15f35987", null ],
+    [ "SpriteSheet", "classorg_1_1newdawn_1_1slick_1_1_sprite_sheet.html#a14d18f31732985b816f58710b51389bd", null ],
+    [ "SpriteSheet", "classorg_1_1newdawn_1_1slick_1_1_sprite_sheet.html#a1f940de5a7721c43cd13880c489ce737", null ],
+    [ "SpriteSheet", "classorg_1_1newdawn_1_1slick_1_1_sprite_sheet.html#a3845be1d373a8929503922089a39afa5", null ],
+    [ "SpriteSheet", "classorg_1_1newdawn_1_1slick_1_1_sprite_sheet.html#a4bc4c2d5da3ef320925c0f8891b81f97", null ],
+    [ "SpriteSheet", "classorg_1_1newdawn_1_1slick_1_1_sprite_sheet.html#acd47d12eb46bfe0cbd9094b8c7a99d03", null ],
+    [ "SpriteSheet", "classorg_1_1newdawn_1_1slick_1_1_sprite_sheet.html#ac6ba9a3ebff6d2a20c7c842d430cff98", null ],
+    [ "SpriteSheet", "classorg_1_1newdawn_1_1slick_1_1_sprite_sheet.html#ae93b02cc6d916b1738de6dbab5bd4629", null ],
+    [ "SpriteSheet", "classorg_1_1newdawn_1_1slick_1_1_sprite_sheet.html#a50a902bc58922e6b7ef57d51b0bd9d12", null ],
+    [ "endUse", "classorg_1_1newdawn_1_1slick_1_1_sprite_sheet.html#aa265f92f608b1241b93aad81779d8826", null ],
+    [ "getHorizontalCount", "classorg_1_1newdawn_1_1slick_1_1_sprite_sheet.html#ad27a155a90551c1a233dae5d4b2c1d92", null ],
+    [ "getSprite", "classorg_1_1newdawn_1_1slick_1_1_sprite_sheet.html#af79773fd002b7f1b78ccbf52a8c60319", null ],
+    [ "getSubImage", "classorg_1_1newdawn_1_1slick_1_1_sprite_sheet.html#a66c998ab00c7183ca0b41514132431a1", null ],
+    [ "getVerticalCount", "classorg_1_1newdawn_1_1slick_1_1_sprite_sheet.html#a3fdf40d87de7a4f360c5bdcf637cc6a4", null ],
+    [ "initImpl", "classorg_1_1newdawn_1_1slick_1_1_sprite_sheet.html#a66be61bdff9a452f365abe95d2b47da2", null ],
+    [ "renderInUse", "classorg_1_1newdawn_1_1slick_1_1_sprite_sheet.html#a6f8fd3a1353fa726828d331088902dd4", null ],
+    [ "setTexture", "classorg_1_1newdawn_1_1slick_1_1_sprite_sheet.html#ac0cf863ef29281ed6ad7e8a53cd6751a", null ],
+    [ "startUse", "classorg_1_1newdawn_1_1slick_1_1_sprite_sheet.html#a71347c9175fad7bb725d5a4730a4e698", null ],
+    [ "margin", "classorg_1_1newdawn_1_1slick_1_1_sprite_sheet.html#a971a0145bb69e5bf2ae0432b7f2a69f5", null ],
+    [ "spacing", "classorg_1_1newdawn_1_1slick_1_1_sprite_sheet.html#acfe40394e52d34270bc42e936472b5a6", null ],
+    [ "subImages", "classorg_1_1newdawn_1_1slick_1_1_sprite_sheet.html#a4aa6be08aecfbd439794ca984ce6e44c", null ],
+    [ "target", "classorg_1_1newdawn_1_1slick_1_1_sprite_sheet.html#a54e0b09e9140db02bc11ac22fff5d464", null ],
+    [ "th", "classorg_1_1newdawn_1_1slick_1_1_sprite_sheet.html#a9bb93039202eef9a5284f5d5565b23c9", null ],
+    [ "tw", "classorg_1_1newdawn_1_1slick_1_1_sprite_sheet.html#a98ea5eda333db800a8e0ab4251bacfdc", null ]
+];

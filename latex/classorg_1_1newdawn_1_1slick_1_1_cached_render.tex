@@ -1,0 +1,139 @@
+\hypertarget{classorg_1_1newdawn_1_1slick_1_1_cached_render}{}\section{org.\+newdawn.\+slick.\+Cached\+Render Class Reference}
+\label{classorg_1_1newdawn_1_1slick_1_1_cached_render}\index{org.\+newdawn.\+slick.\+Cached\+Render@{org.\+newdawn.\+slick.\+Cached\+Render}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_cached_render_ad3b6420296d51324138f0a14d354c7db}{Cached\+Render}} (Runnable \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_cached_render_adbb423a793a3b64353bf95ccdf9a99e9}{runnable}})
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_cached_render_a9482132cdcf677dac93768e4161b5dfe}{render}} ()
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_cached_render_a194e9daac130a45cdcb6ea944819a4e2}{destroy}} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1opengl_1_1renderer_1_1_s_g_l}{S\+GL}} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_cached_render_ac66ef801567b1c74e2cb8d5f47045dc4}{GL}} = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1renderer_1_1_renderer_abe742c3a7dfca67c6c01821d27087308}{Renderer.\+get}}()
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_cached_render_a7631a43ef217b03800f81030b8636487}{build}} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Runnable \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_cached_render_adbb423a793a3b64353bf95ccdf9a99e9}{runnable}}
+\item 
+int \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_cached_render_a0f2a2eb4568a66cd3b2c3bc6d7e6ad83}{list}} = -\/1
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A set of rendering that is cached onto the graphics card and hopefully is quicker to render. Note that there are some things that can\textquotesingle{}t be done in lists and that all dependent operations must be container. For instance, any colour configuration can not be assumed from outside the cache.
+
+Note\+: The destroy method needs to be used to tidy up. This is pretty important in this case since there are limited number of underlying resources.
+
+\begin{DoxyAuthor}{Author}
+kevin 
+\end{DoxyAuthor}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1_cached_render_ad3b6420296d51324138f0a14d354c7db}\label{classorg_1_1newdawn_1_1slick_1_1_cached_render_ad3b6420296d51324138f0a14d354c7db}} 
+\index{org\+::newdawn\+::slick\+::\+Cached\+Render@{org\+::newdawn\+::slick\+::\+Cached\+Render}!Cached\+Render@{Cached\+Render}}
+\index{Cached\+Render@{Cached\+Render}!org\+::newdawn\+::slick\+::\+Cached\+Render@{org\+::newdawn\+::slick\+::\+Cached\+Render}}
+\subsubsection{\texorpdfstring{Cached\+Render()}{CachedRender()}}
+{\footnotesize\ttfamily org.\+newdawn.\+slick.\+Cached\+Render.\+Cached\+Render (\begin{DoxyParamCaption}\item[{Runnable}]{runnable }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Create a new cached render that will build the specified operations on to a video card resource
+
+
+\begin{DoxyParams}{Parameters}
+{\em runnable} & The operations to cache \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+33                                            \{
+34         this.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_cached_render_adbb423a793a3b64353bf95ccdf9a99e9}{runnable}} = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_cached_render_adbb423a793a3b64353bf95ccdf9a99e9}{runnable}};
+35         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_cached_render_a7631a43ef217b03800f81030b8636487}{build}}();
+36     \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1_cached_render_a7631a43ef217b03800f81030b8636487}\label{classorg_1_1newdawn_1_1slick_1_1_cached_render_a7631a43ef217b03800f81030b8636487}} 
+\index{org\+::newdawn\+::slick\+::\+Cached\+Render@{org\+::newdawn\+::slick\+::\+Cached\+Render}!build@{build}}
+\index{build@{build}!org\+::newdawn\+::slick\+::\+Cached\+Render@{org\+::newdawn\+::slick\+::\+Cached\+Render}}
+\subsubsection{\texorpdfstring{build()}{build()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+Cached\+Render.\+build (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+Build the display list 
+\begin{DoxyCode}
+41                          \{
+42         \textcolor{keywordflow}{if} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_cached_render_a0f2a2eb4568a66cd3b2c3bc6d7e6ad83}{list}} == -1) \{
+43             \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_cached_render_a0f2a2eb4568a66cd3b2c3bc6d7e6ad83}{list}} = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_cached_render_ac66ef801567b1c74e2cb8d5f47045dc4}{GL}}.\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1opengl_1_1renderer_1_1_s_g_l_a2c623d00bb2450569a6c86a71024b83d}{glGenLists}}(1);
+44             
+45             SlickCallable.enterSafeBlock();
+46             \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_cached_render_ac66ef801567b1c74e2cb8d5f47045dc4}{GL}}.\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1opengl_1_1renderer_1_1_s_g_l_a85746cd7e0de9297a821619097a5f7cc}{glNewList}}(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_cached_render_a0f2a2eb4568a66cd3b2c3bc6d7e6ad83}{list}}, SGL.GL\_COMPILE);
+47             \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_cached_render_adbb423a793a3b64353bf95ccdf9a99e9}{runnable}}.run();
+48             \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_cached_render_ac66ef801567b1c74e2cb8d5f47045dc4}{GL}}.\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1opengl_1_1renderer_1_1_s_g_l_a300a1d9b3c984ccc0a59eb951821bf37}{glEndList}}();
+49             SlickCallable.leaveSafeBlock();
+50         \} \textcolor{keywordflow}{else} \{
+51             \textcolor{keywordflow}{throw} \textcolor{keyword}{new} RuntimeException(\textcolor{stringliteral}{"Attempt to build the display list more than once in CachedRender"});
+52         \}
+53     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1_cached_render_a194e9daac130a45cdcb6ea944819a4e2}\label{classorg_1_1newdawn_1_1slick_1_1_cached_render_a194e9daac130a45cdcb6ea944819a4e2}} 
+\index{org\+::newdawn\+::slick\+::\+Cached\+Render@{org\+::newdawn\+::slick\+::\+Cached\+Render}!destroy@{destroy}}
+\index{destroy@{destroy}!org\+::newdawn\+::slick\+::\+Cached\+Render@{org\+::newdawn\+::slick\+::\+Cached\+Render}}
+\subsubsection{\texorpdfstring{destroy()}{destroy()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+Cached\+Render.\+destroy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Destroy this cached render 
+\begin{DoxyCode}
+72                           \{
+73         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_cached_render_ac66ef801567b1c74e2cb8d5f47045dc4}{GL}}.\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1opengl_1_1renderer_1_1_s_g_l_a06daf35b442a76f8d6ee62ae413fdd21}{glDeleteLists}}(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_cached_render_a0f2a2eb4568a66cd3b2c3bc6d7e6ad83}{list}},1);
+74         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_cached_render_a0f2a2eb4568a66cd3b2c3bc6d7e6ad83}{list}} = -1;
+75     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1_cached_render_a9482132cdcf677dac93768e4161b5dfe}\label{classorg_1_1newdawn_1_1slick_1_1_cached_render_a9482132cdcf677dac93768e4161b5dfe}} 
+\index{org\+::newdawn\+::slick\+::\+Cached\+Render@{org\+::newdawn\+::slick\+::\+Cached\+Render}!render@{render}}
+\index{render@{render}!org\+::newdawn\+::slick\+::\+Cached\+Render@{org\+::newdawn\+::slick\+::\+Cached\+Render}}
+\subsubsection{\texorpdfstring{render()}{render()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+Cached\+Render.\+render (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Render the cached operations. Note that this doesn\textquotesingle{}t call the operations, but rather calls the cached version 
+\begin{DoxyCode}
+59                          \{
+60         \textcolor{keywordflow}{if} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_cached_render_a0f2a2eb4568a66cd3b2c3bc6d7e6ad83}{list}} == -1) \{
+61             \textcolor{keywordflow}{throw} \textcolor{keyword}{new} RuntimeException(\textcolor{stringliteral}{"Attempt to render cached operations that have been destroyed"});
+62         \}
+63         
+64         SlickCallable.enterSafeBlock();
+65         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_cached_render_ac66ef801567b1c74e2cb8d5f47045dc4}{GL}}.\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1opengl_1_1renderer_1_1_s_g_l_a8482d9603203e93027e90042db3f561a}{glCallList}}(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_cached_render_a0f2a2eb4568a66cd3b2c3bc6d7e6ad83}{list}});
+66         SlickCallable.leaveSafeBlock();
+67     \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1_cached_render_ac66ef801567b1c74e2cb8d5f47045dc4}\label{classorg_1_1newdawn_1_1slick_1_1_cached_render_ac66ef801567b1c74e2cb8d5f47045dc4}} 
+\index{org\+::newdawn\+::slick\+::\+Cached\+Render@{org\+::newdawn\+::slick\+::\+Cached\+Render}!GL@{GL}}
+\index{GL@{GL}!org\+::newdawn\+::slick\+::\+Cached\+Render@{org\+::newdawn\+::slick\+::\+Cached\+Render}}
+\subsubsection{\texorpdfstring{GL}{GL}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1opengl_1_1renderer_1_1_s_g_l}{S\+GL}} org.\+newdawn.\+slick.\+Cached\+Render.\+GL = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1renderer_1_1_renderer_abe742c3a7dfca67c6c01821d27087308}{Renderer.\+get}}()\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+The renderer to use for all GL operations \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1_cached_render_a0f2a2eb4568a66cd3b2c3bc6d7e6ad83}\label{classorg_1_1newdawn_1_1slick_1_1_cached_render_a0f2a2eb4568a66cd3b2c3bc6d7e6ad83}} 
+\index{org\+::newdawn\+::slick\+::\+Cached\+Render@{org\+::newdawn\+::slick\+::\+Cached\+Render}!list@{list}}
+\index{list@{list}!org\+::newdawn\+::slick\+::\+Cached\+Render@{org\+::newdawn\+::slick\+::\+Cached\+Render}}
+\subsubsection{\texorpdfstring{list}{list}}
+{\footnotesize\ttfamily int org.\+newdawn.\+slick.\+Cached\+Render.\+list = -\/1\hspace{0.3cm}{\ttfamily [private]}}
+
+The display list cached to \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1_cached_render_adbb423a793a3b64353bf95ccdf9a99e9}\label{classorg_1_1newdawn_1_1slick_1_1_cached_render_adbb423a793a3b64353bf95ccdf9a99e9}} 
+\index{org\+::newdawn\+::slick\+::\+Cached\+Render@{org\+::newdawn\+::slick\+::\+Cached\+Render}!runnable@{runnable}}
+\index{runnable@{runnable}!org\+::newdawn\+::slick\+::\+Cached\+Render@{org\+::newdawn\+::slick\+::\+Cached\+Render}}
+\subsubsection{\texorpdfstring{runnable}{runnable}}
+{\footnotesize\ttfamily Runnable org.\+newdawn.\+slick.\+Cached\+Render.\+runnable\hspace{0.3cm}{\ttfamily [private]}}
+
+The operations to cache 

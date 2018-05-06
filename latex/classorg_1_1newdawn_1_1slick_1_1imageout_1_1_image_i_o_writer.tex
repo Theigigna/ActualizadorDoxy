@@ -1,0 +1,101 @@
+\hypertarget{classorg_1_1newdawn_1_1slick_1_1imageout_1_1_image_i_o_writer}{}\section{org.\+newdawn.\+slick.\+imageout.\+Image\+I\+O\+Writer Class Reference}
+\label{classorg_1_1newdawn_1_1slick_1_1imageout_1_1_image_i_o_writer}\index{org.\+newdawn.\+slick.\+imageout.\+Image\+I\+O\+Writer@{org.\+newdawn.\+slick.\+imageout.\+Image\+I\+O\+Writer}}
+Inheritance diagram for org.\+newdawn.\+slick.\+imageout.\+Image\+I\+O\+Writer\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classorg_1_1newdawn_1_1slick_1_1imageout_1_1_image_i_o_writer}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1imageout_1_1_image_i_o_writer_a16b8f7a58c4adc98658129bfaaafe751}{save\+Image}} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_image}{Image}} image, String format, Output\+Stream output, boolean has\+Alpha)  throws I\+O\+Exception 
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A utility to write a Slick image out using Image\+IO
+
+\begin{DoxyAuthor}{Author}
+Jon 
+\end{DoxyAuthor}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1imageout_1_1_image_i_o_writer_a16b8f7a58c4adc98658129bfaaafe751}\label{classorg_1_1newdawn_1_1slick_1_1imageout_1_1_image_i_o_writer_a16b8f7a58c4adc98658129bfaaafe751}} 
+\index{org\+::newdawn\+::slick\+::imageout\+::\+Image\+I\+O\+Writer@{org\+::newdawn\+::slick\+::imageout\+::\+Image\+I\+O\+Writer}!save\+Image@{save\+Image}}
+\index{save\+Image@{save\+Image}!org\+::newdawn\+::slick\+::imageout\+::\+Image\+I\+O\+Writer@{org\+::newdawn\+::slick\+::imageout\+::\+Image\+I\+O\+Writer}}
+\subsubsection{\texorpdfstring{save\+Image()}{saveImage()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+imageout.\+Image\+I\+O\+Writer.\+save\+Image (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_image}{Image}}}]{image,  }\item[{String}]{format,  }\item[{Output\+Stream}]{output,  }\item[{boolean}]{has\+Alpha }\end{DoxyParamCaption}) throws I\+O\+Exception\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1imageout_1_1_image_writer_ad911f19d2f2c9e9925c73510018423b9}{org.\+newdawn.\+slick.\+imageout.\+Image\+Writer\+::save\+Image}}(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_image}{org.\+newdawn.\+slick.\+Image}}, java.\+lang.\+String, java.\+io.\+Output\+Stream, boolean) 
+\end{DoxySeeAlso}
+
+
+Implements \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1imageout_1_1_image_writer_ad911f19d2f2c9e9925c73510018423b9}{org.\+newdawn.\+slick.\+imageout.\+Image\+Writer}}.
+
+
+\begin{DoxyCode}
+33                                \{
+34         \textcolor{comment}{// conver the image into a byte buffer by reading each pixel in turn}
+35         \textcolor{keywordtype}{int} len = 4 * image.getWidth() * image.getHeight();
+36         \textcolor{keywordflow}{if} (!hasAlpha) \{
+37             len = 3 * image.getWidth() * image.getHeight();
+38         \}
+39         
+40         ByteBuffer out = ByteBuffer.allocate(len);
+41         Color c;
+42 
+43         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} y = 0; y < image.getHeight(); y++) \{
+44             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} x = 0; x < image.getWidth(); x++) \{
+45                 c = image.getColor(x, y);
+46 
+47                 out.put((byte) (c.r * 255.0f));
+48                 out.put((byte) (c.g * 255.0f));
+49                 out.put((byte) (c.b * 255.0f));
+50                 \textcolor{keywordflow}{if} (hasAlpha) \{
+51                     out.put((byte) (c.a * 255.0f));
+52                 \}
+53             \}
+54         \}
+55 
+56         \textcolor{comment}{// create a raster of the correct format and fill it with our buffer}
+57         DataBufferByte dataBuffer = \textcolor{keyword}{new} DataBufferByte(out.array(), len);
+58         
+59         PixelInterleavedSampleModel sampleModel;
+60 
+61         ColorModel cm;
+62         
+63         \textcolor{keywordflow}{if} (hasAlpha) \{
+64             \textcolor{keywordtype}{int}[] offsets = \{ 0, 1, 2, 3 \};
+65             sampleModel = \textcolor{keyword}{new} PixelInterleavedSampleModel(
+66                     DataBuffer.TYPE\_BYTE, image.getWidth(), image.getHeight(), 4,
+67                     4 * image.getWidth(), offsets);
+68             
+69             cm = \textcolor{keyword}{new} ComponentColorModel(ColorSpace
+70                     .getInstance(ColorSpace.CS\_sRGB), \textcolor{keyword}{new} \textcolor{keywordtype}{int}[] \{ 8, 8, 8, 8 \},
+71                     \textcolor{keyword}{true}, \textcolor{keyword}{false}, ComponentColorModel.TRANSLUCENT,
+72                     DataBuffer.TYPE\_BYTE);
+73         \} \textcolor{keywordflow}{else} \{
+74             \textcolor{keywordtype}{int}[] offsets = \{ 0, 1, 2\};
+75             sampleModel = \textcolor{keyword}{new} PixelInterleavedSampleModel(
+76                     DataBuffer.TYPE\_BYTE, image.getWidth(), image.getHeight(), 3,
+77                     3 * image.getWidth(), offsets);
+78             
+79             cm = \textcolor{keyword}{new} ComponentColorModel(ColorSpace.getInstance(ColorSpace.CS\_sRGB),
+80                     \textcolor{keyword}{new} \textcolor{keywordtype}{int}[] \{8,8,8,0\},
+81                     \textcolor{keyword}{false},
+82                     \textcolor{keyword}{false},
+83                     ComponentColorModel.OPAQUE,
+84                     DataBuffer.TYPE\_BYTE);
+85         \}
+86         WritableRaster raster = Raster.createWritableRaster(sampleModel, dataBuffer, \textcolor{keyword}{new} Point(0, 0));
+87 
+88         \textcolor{comment}{// finally create the buffered image based on the data from the texture}
+89         \textcolor{comment}{// and spit it through to ImageIO}
+90         BufferedImage img = \textcolor{keyword}{new} BufferedImage(cm, raster, \textcolor{keyword}{false}, null);
+91         
+92         ImageIO.write(img, format, output);
+93     \}
+\end{DoxyCode}

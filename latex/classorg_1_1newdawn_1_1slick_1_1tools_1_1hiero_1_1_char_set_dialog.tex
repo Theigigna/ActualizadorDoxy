@@ -1,0 +1,156 @@
+\hypertarget{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_char_set_dialog}{}\section{org.\+newdawn.\+slick.\+tools.\+hiero.\+Char\+Set\+Dialog Class Reference}
+\label{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_char_set_dialog}\index{org.\+newdawn.\+slick.\+tools.\+hiero.\+Char\+Set\+Dialog@{org.\+newdawn.\+slick.\+tools.\+hiero.\+Char\+Set\+Dialog}}
+Inheritance diagram for org.\+newdawn.\+slick.\+tools.\+hiero.\+Char\+Set\+Dialog\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_char_set_dialog}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_char_set_dialog_1_1_chars_panel}{Chars\+Panel}}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_char_set_dialog_ad98e518276c347b0735f423346969033}{Char\+Set\+Dialog}} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_hiero}{Hiero}} parent, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_char_set}{Char\+Set}} s)
+\item 
+String \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_char_set_dialog_a2f4151632bd5b7d66bc342671e13c303}{get\+New\+Set}} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_char_set}{Char\+Set}} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_char_set_dialog_a8d1a0382707d44e97fe2e3b0edaa9728}{set}}
+\item 
+String \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_char_set_dialog_ab55224706d481bb64c291389c69e65c3}{new\+Set\+Name}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A dialog to allow the configuration of a character set
+
+\begin{DoxyAuthor}{Author}
+kevin 
+\end{DoxyAuthor}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_char_set_dialog_ad98e518276c347b0735f423346969033}\label{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_char_set_dialog_ad98e518276c347b0735f423346969033}} 
+\index{org\+::newdawn\+::slick\+::tools\+::hiero\+::\+Char\+Set\+Dialog@{org\+::newdawn\+::slick\+::tools\+::hiero\+::\+Char\+Set\+Dialog}!Char\+Set\+Dialog@{Char\+Set\+Dialog}}
+\index{Char\+Set\+Dialog@{Char\+Set\+Dialog}!org\+::newdawn\+::slick\+::tools\+::hiero\+::\+Char\+Set\+Dialog@{org\+::newdawn\+::slick\+::tools\+::hiero\+::\+Char\+Set\+Dialog}}
+\subsubsection{\texorpdfstring{Char\+Set\+Dialog()}{CharSetDialog()}}
+{\footnotesize\ttfamily org.\+newdawn.\+slick.\+tools.\+hiero.\+Char\+Set\+Dialog.\+Char\+Set\+Dialog (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_hiero}{Hiero}}}]{parent,  }\item[{\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_char_set}{Char\+Set}}}]{s }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Create a new dialog
+
+
+\begin{DoxyParams}{Parameters}
+{\em parent} & The parent window \\
+\hline
+{\em s} & The character set being edited \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+37                                                   \{
+38         super(parent, \textcolor{stringliteral}{"Editing "}+s.getName(), \textcolor{keyword}{true});
+39     
+40         this.\textcolor{keyword}{set} = s.copy(); 
+41         
+42         JMenuBar bar = \textcolor{keyword}{new} JMenuBar();
+43         JMenu file = \textcolor{keyword}{new} JMenu(\textcolor{stringliteral}{"File"});
+44         JMenuItem save = \textcolor{keyword}{new} JMenuItem(\textcolor{stringliteral}{"Save"});
+45         JMenuItem saveAs = \textcolor{keyword}{new} JMenuItem(\textcolor{stringliteral}{"Save As"});
+46         JMenuItem close = \textcolor{keyword}{new} JMenuItem(\textcolor{stringliteral}{"Close"});
+47         file.add(save);
+48         file.add(saveAs);
+49         file.addSeparator();
+50         file.add(close);
+51         bar.add(file);
+52         setJMenuBar(bar);
+53         
+54         setDefaultCloseOperation(JDialog.DISPOSE\_ON\_CLOSE);
+55         
+56         save.addActionListener(\textcolor{keyword}{new} ActionListener() \{
+57             \textcolor{keyword}{public} \textcolor{keywordtype}{void} actionPerformed(ActionEvent e) \{
+58                 \textcolor{keywordflow}{try} \{
+59                     \textcolor{keyword}{set}.save(\textcolor{keyword}{set}.getSource());
+60                     dispose();
+61                 \} \textcolor{keywordflow}{catch} (IOException x) \{
+62                     x.printStackTrace();
+63                     JOptionPane.showMessageDialog(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_char_set_dialog_ad98e518276c347b0735f423346969033}{CharSetDialog}}.this, \textcolor{stringliteral}{"Failed to resave
+       character set"});
+64                 \}
+65             \}
+66         \});
+67         saveAs.addActionListener(\textcolor{keyword}{new} ActionListener() \{
+68             \textcolor{keyword}{public} \textcolor{keywordtype}{void} actionPerformed(ActionEvent e) \{
+69                 \textcolor{keywordflow}{try} \{
+70                     String name = JOptionPane.showInputDialog(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_char_set_dialog_ad98e518276c347b0735f423346969033}{CharSetDialog}}.this, \textcolor{stringliteral}{"Enter a
+       name for the new Chararater Set:"});
+71                     \textcolor{keyword}{set}.setName(name);
+72                     \textcolor{keywordflow}{if} ((name != null) && (name.length() != 0)) \{
+73                         \textcolor{keyword}{set}.save(HieroConfig.getConfigFile(name+\textcolor{stringliteral}{".set"}));
+74                     \}
+75                     \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_char_set_dialog_ab55224706d481bb64c291389c69e65c3}{newSetName}} = name;
+76                     dispose();
+77                 \} \textcolor{keywordflow}{catch} (IOException x) \{
+78                     x.printStackTrace();
+79                     JOptionPane.showMessageDialog(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_char_set_dialog_ad98e518276c347b0735f423346969033}{CharSetDialog}}.this, \textcolor{stringliteral}{"Failed to resave
+       character set"});
+80                 \}
+81             \}
+82         \});
+83         close.addActionListener(\textcolor{keyword}{new} ActionListener() \{
+84             \textcolor{keyword}{public} \textcolor{keywordtype}{void} actionPerformed(ActionEvent e) \{
+85                 dispose();
+86             \}
+87         \});
+88         
+89         \textcolor{keywordflow}{if} (!s.isMutable()) \{
+90             save.setEnabled(\textcolor{keyword}{false});
+91         \}
+92         
+93         setContentPane(\textcolor{keyword}{new} CharsPanel());
+94         
+95         setSize(600,600);
+96         setResizable(\textcolor{keyword}{false});
+97     \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_char_set_dialog_a2f4151632bd5b7d66bc342671e13c303}\label{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_char_set_dialog_a2f4151632bd5b7d66bc342671e13c303}} 
+\index{org\+::newdawn\+::slick\+::tools\+::hiero\+::\+Char\+Set\+Dialog@{org\+::newdawn\+::slick\+::tools\+::hiero\+::\+Char\+Set\+Dialog}!get\+New\+Set@{get\+New\+Set}}
+\index{get\+New\+Set@{get\+New\+Set}!org\+::newdawn\+::slick\+::tools\+::hiero\+::\+Char\+Set\+Dialog@{org\+::newdawn\+::slick\+::tools\+::hiero\+::\+Char\+Set\+Dialog}}
+\subsubsection{\texorpdfstring{get\+New\+Set()}{getNewSet()}}
+{\footnotesize\ttfamily String org.\+newdawn.\+slick.\+tools.\+hiero.\+Char\+Set\+Dialog.\+get\+New\+Set (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get the new character set created
+
+\begin{DoxyReturn}{Returns}
+The name of the new set or null if no set was generated 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+104                               \{
+105         \textcolor{keywordflow}{return} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_char_set_dialog_ab55224706d481bb64c291389c69e65c3}{newSetName}};
+106     \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_char_set_dialog_ab55224706d481bb64c291389c69e65c3}\label{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_char_set_dialog_ab55224706d481bb64c291389c69e65c3}} 
+\index{org\+::newdawn\+::slick\+::tools\+::hiero\+::\+Char\+Set\+Dialog@{org\+::newdawn\+::slick\+::tools\+::hiero\+::\+Char\+Set\+Dialog}!new\+Set\+Name@{new\+Set\+Name}}
+\index{new\+Set\+Name@{new\+Set\+Name}!org\+::newdawn\+::slick\+::tools\+::hiero\+::\+Char\+Set\+Dialog@{org\+::newdawn\+::slick\+::tools\+::hiero\+::\+Char\+Set\+Dialog}}
+\subsubsection{\texorpdfstring{new\+Set\+Name}{newSetName}}
+{\footnotesize\ttfamily String org.\+newdawn.\+slick.\+tools.\+hiero.\+Char\+Set\+Dialog.\+new\+Set\+Name\hspace{0.3cm}{\ttfamily [private]}}
+
+The new set name \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_char_set_dialog_a8d1a0382707d44e97fe2e3b0edaa9728}\label{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_char_set_dialog_a8d1a0382707d44e97fe2e3b0edaa9728}} 
+\index{org\+::newdawn\+::slick\+::tools\+::hiero\+::\+Char\+Set\+Dialog@{org\+::newdawn\+::slick\+::tools\+::hiero\+::\+Char\+Set\+Dialog}!set@{set}}
+\index{set@{set}!org\+::newdawn\+::slick\+::tools\+::hiero\+::\+Char\+Set\+Dialog@{org\+::newdawn\+::slick\+::tools\+::hiero\+::\+Char\+Set\+Dialog}}
+\subsubsection{\texorpdfstring{set}{set}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_char_set}{Char\+Set}} org.\+newdawn.\+slick.\+tools.\+hiero.\+Char\+Set\+Dialog.\+set\hspace{0.3cm}{\ttfamily [private]}}
+
+The character set being edited 

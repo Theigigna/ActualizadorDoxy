@@ -1,0 +1,285 @@
+\hypertarget{classorg_1_1newdawn_1_1slick_1_1tests_1_1_graphics_test}{}\section{org.\+newdawn.\+slick.\+tests.\+Graphics\+Test Class Reference}
+\label{classorg_1_1newdawn_1_1slick_1_1tests_1_1_graphics_test}\index{org.\+newdawn.\+slick.\+tests.\+Graphics\+Test@{org.\+newdawn.\+slick.\+tests.\+Graphics\+Test}}
+Inheritance diagram for org.\+newdawn.\+slick.\+tests.\+Graphics\+Test\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.522012cm]{classorg_1_1newdawn_1_1slick_1_1tests_1_1_graphics_test}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_graphics_test_abb433e8bd2e5a754719a759827e94029}{Graphics\+Test}} ()
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_graphics_test_abd7a7a26ad7740e3443fea07bbb2577c}{init}} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_game_container}{Game\+Container}} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_graphics_test_a5484b72803a02c8eba6188f08e274f32}{container}})  throws Slick\+Exception 
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_graphics_test_a099b363f8b871ccc6da41e172c7ceeb6}{render}} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_game_container}{Game\+Container}} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_graphics_test_a5484b72803a02c8eba6188f08e274f32}{container}}, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_graphics}{Graphics}} g)  throws Slick\+Exception 
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_graphics_test_aba6467ff04e7fa1f1ae8930ab9d6949a}{update}} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_game_container}{Game\+Container}} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_graphics_test_a5484b72803a02c8eba6188f08e274f32}{container}}, int delta)
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_graphics_test_a36789cd962301ed1cef2b20092396cfa}{key\+Pressed}} (int key, char c)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_graphics_test_a62bbd7544fd5ecc0c156f06ff518a804}{main}} (String\mbox{[}$\,$\mbox{]} argv)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+boolean \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_graphics_test_a45883b25988c6ce31f644d342ab168f3}{clip}}
+\item 
+float \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_graphics_test_a4ed9f283437a082c3e14f94968f7cf70}{ang}}
+\item 
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_image}{Image}} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_graphics_test_a425fce4f6eef7e14bbe291e64d604fdf}{image}}
+\item 
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_polygon}{Polygon}} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_graphics_test_a3427e7e0650177a34f0a1df767f15720}{poly}}
+\item 
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_game_container}{Game\+Container}} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_graphics_test_a5484b72803a02c8eba6188f08e274f32}{container}}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+A simple graphics test for the context allowing vector based graphics
+
+\begin{DoxyAuthor}{Author}
+kevin 
+\end{DoxyAuthor}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tests_1_1_graphics_test_abb433e8bd2e5a754719a759827e94029}\label{classorg_1_1newdawn_1_1slick_1_1tests_1_1_graphics_test_abb433e8bd2e5a754719a759827e94029}} 
+\index{org\+::newdawn\+::slick\+::tests\+::\+Graphics\+Test@{org\+::newdawn\+::slick\+::tests\+::\+Graphics\+Test}!Graphics\+Test@{Graphics\+Test}}
+\index{Graphics\+Test@{Graphics\+Test}!org\+::newdawn\+::slick\+::tests\+::\+Graphics\+Test@{org\+::newdawn\+::slick\+::tests\+::\+Graphics\+Test}}
+\subsubsection{\texorpdfstring{Graphics\+Test()}{GraphicsTest()}}
+{\footnotesize\ttfamily org.\+newdawn.\+slick.\+tests.\+Graphics\+Test.\+Graphics\+Test (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Create a new test of graphics context rendering 
+\begin{DoxyCode}
+34                           \{
+35         super(\textcolor{stringliteral}{"Graphics Test"});
+36     \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tests_1_1_graphics_test_abd7a7a26ad7740e3443fea07bbb2577c}\label{classorg_1_1newdawn_1_1slick_1_1tests_1_1_graphics_test_abd7a7a26ad7740e3443fea07bbb2577c}} 
+\index{org\+::newdawn\+::slick\+::tests\+::\+Graphics\+Test@{org\+::newdawn\+::slick\+::tests\+::\+Graphics\+Test}!init@{init}}
+\index{init@{init}!org\+::newdawn\+::slick\+::tests\+::\+Graphics\+Test@{org\+::newdawn\+::slick\+::tests\+::\+Graphics\+Test}}
+\subsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+tests.\+Graphics\+Test.\+init (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_game_container}{Game\+Container}}}]{container }\end{DoxyParamCaption}) throws \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_slick_exception}{Slick\+Exception}}\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_basic_game_a8af0900217e4d389249f71367b22d114}{org.\+newdawn.\+slick.\+Basic\+Game\+::init}}(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_game_container}{org.\+newdawn.\+slick.\+Game\+Container}}) 
+\end{DoxySeeAlso}
+
+
+Implements \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1_game_ad2dd6affab08bb8fdb5fab0815957b7a}{org.\+newdawn.\+slick.\+Game}}.
+
+
+\begin{DoxyCode}
+41                                                                     \{
+42         this.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_graphics_test_a5484b72803a02c8eba6188f08e274f32}{container}} = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_graphics_test_a5484b72803a02c8eba6188f08e274f32}{container}};
+43         
+44         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_graphics_test_a425fce4f6eef7e14bbe291e64d604fdf}{image}} = \textcolor{keyword}{new} Image(\textcolor{stringliteral}{"testdata/logo.tga"}, \textcolor{keyword}{true});
+45         
+46         Image temp = \textcolor{keyword}{new} Image(\textcolor{stringliteral}{"testdata/palette\_tool.png"});
+47         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_graphics_test_a5484b72803a02c8eba6188f08e274f32}{container}}.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_game_container_a13e789e67755f14bad1caf70e3bd6d4e}{setMouseCursor}}(temp, 0, 0);
+48         
+49         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_graphics_test_a5484b72803a02c8eba6188f08e274f32}{container}}.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_game_container_a9be825e4e0980618340296e9cbbededf}{setIcons}}(\textcolor{keyword}{new} String[] \{\textcolor{stringliteral}{"testdata/icon.tga"}\});
+50         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_graphics_test_a5484b72803a02c8eba6188f08e274f32}{container}}.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_game_container_a223f9078e49a977358a2714c47fc91c3}{setTargetFrameRate}}(100);
+51         
+52         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_graphics_test_a3427e7e0650177a34f0a1df767f15720}{poly}} = \textcolor{keyword}{new} Polygon();
+53         \textcolor{keywordtype}{float} len = 100;
+54         
+55         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} x=0;x<360;x+=30) \{
+56             \textcolor{keywordflow}{if} (len == 100) \{
+57                 len = 50; 
+58             \} \textcolor{keywordflow}{else} \{
+59                 len = 100;
+60             \}
+61             \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_graphics_test_a3427e7e0650177a34f0a1df767f15720}{poly}}.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_polygon_a62d22ea48361fe38f8868f1f126a7b7a}{addPoint}}((\textcolor{keywordtype}{float}) FastTrig.cos(Math.toRadians(x)) * len, 
+62                           (\textcolor{keywordtype}{float}) FastTrig.sin(Math.toRadians(x)) * len);
+63         \}
+64     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tests_1_1_graphics_test_a36789cd962301ed1cef2b20092396cfa}\label{classorg_1_1newdawn_1_1slick_1_1tests_1_1_graphics_test_a36789cd962301ed1cef2b20092396cfa}} 
+\index{org\+::newdawn\+::slick\+::tests\+::\+Graphics\+Test@{org\+::newdawn\+::slick\+::tests\+::\+Graphics\+Test}!key\+Pressed@{key\+Pressed}}
+\index{key\+Pressed@{key\+Pressed}!org\+::newdawn\+::slick\+::tests\+::\+Graphics\+Test@{org\+::newdawn\+::slick\+::tests\+::\+Graphics\+Test}}
+\subsubsection{\texorpdfstring{key\+Pressed()}{keyPressed()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+tests.\+Graphics\+Test.\+key\+Pressed (\begin{DoxyParamCaption}\item[{int}]{key,  }\item[{char}]{c }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_basic_game_a4fbb3345b5abf5ddd54a99466d07f02f}{org.\+newdawn.\+slick.\+Basic\+Game\+::key\+Pressed(int, char)}} 
+\end{DoxySeeAlso}
+
+
+Implements \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1_key_listener_ac0b0568a21ef486c4f51382614c196ef}{org.\+newdawn.\+slick.\+Key\+Listener}}.
+
+
+\begin{DoxyCode}
+140                                             \{
+141         \textcolor{keywordflow}{if} (key == Input.KEY\_ESCAPE) \{
+142             System.exit(0);
+143         \}
+144         \textcolor{keywordflow}{if} (key == Input.KEY\_SPACE) \{
+145             \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_graphics_test_a45883b25988c6ce31f644d342ab168f3}{clip}} = !\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_graphics_test_a45883b25988c6ce31f644d342ab168f3}{clip}};
+146         \}
+147     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tests_1_1_graphics_test_a62bbd7544fd5ecc0c156f06ff518a804}\label{classorg_1_1newdawn_1_1slick_1_1tests_1_1_graphics_test_a62bbd7544fd5ecc0c156f06ff518a804}} 
+\index{org\+::newdawn\+::slick\+::tests\+::\+Graphics\+Test@{org\+::newdawn\+::slick\+::tests\+::\+Graphics\+Test}!main@{main}}
+\index{main@{main}!org\+::newdawn\+::slick\+::tests\+::\+Graphics\+Test@{org\+::newdawn\+::slick\+::tests\+::\+Graphics\+Test}}
+\subsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily static void org.\+newdawn.\+slick.\+tests.\+Graphics\+Test.\+main (\begin{DoxyParamCaption}\item[{String \mbox{[}$\,$\mbox{]}}]{argv }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Entry point to our test
+
+
+\begin{DoxyParams}{Parameters}
+{\em argv} & The arguments passed to the test \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+154                                            \{
+155         \textcolor{keywordflow}{try} \{
+156             AppGameContainer \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_graphics_test_a5484b72803a02c8eba6188f08e274f32}{container}} = \textcolor{keyword}{new} AppGameContainer(\textcolor{keyword}{new} 
+      \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_graphics_test_abb433e8bd2e5a754719a759827e94029}{GraphicsTest}}());
+157             \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_graphics_test_a5484b72803a02c8eba6188f08e274f32}{container}}.setDisplayMode(800,600,\textcolor{keyword}{false});
+158             \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_graphics_test_a5484b72803a02c8eba6188f08e274f32}{container}}.start();
+159         \} \textcolor{keywordflow}{catch} (SlickException e) \{
+160             e.printStackTrace();
+161         \}
+162     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tests_1_1_graphics_test_a099b363f8b871ccc6da41e172c7ceeb6}\label{classorg_1_1newdawn_1_1slick_1_1tests_1_1_graphics_test_a099b363f8b871ccc6da41e172c7ceeb6}} 
+\index{org\+::newdawn\+::slick\+::tests\+::\+Graphics\+Test@{org\+::newdawn\+::slick\+::tests\+::\+Graphics\+Test}!render@{render}}
+\index{render@{render}!org\+::newdawn\+::slick\+::tests\+::\+Graphics\+Test@{org\+::newdawn\+::slick\+::tests\+::\+Graphics\+Test}}
+\subsubsection{\texorpdfstring{render()}{render()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+tests.\+Graphics\+Test.\+render (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_game_container}{Game\+Container}}}]{container,  }\item[{\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_graphics}{Graphics}}}]{g }\end{DoxyParamCaption}) throws \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_slick_exception}{Slick\+Exception}}\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1_game_af1a4670d43eb3ba04dfcf55ab1975b64}{org.\+newdawn.\+slick.\+Basic\+Game\+::render}}(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_game_container}{org.\+newdawn.\+slick.\+Game\+Container}}, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_graphics}{org.\+newdawn.\+slick.\+Graphics}}) 
+\end{DoxySeeAlso}
+
+
+Implements \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1_game_af1a4670d43eb3ba04dfcf55ab1975b64}{org.\+newdawn.\+slick.\+Game}}.
+
+
+\begin{DoxyCode}
+69                                                                                   \{
+70         g.setColor(Color.white);
+71         
+72         g.setAntiAlias(\textcolor{keyword}{true});
+73         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} x=0;x<360;x+=10) \{
+74             g.drawLine(700,100,(\textcolor{keywordtype}{int}) (700+(Math.cos(Math.toRadians(x))*100)),
+75                                (\textcolor{keywordtype}{int}) (100+(Math.sin(Math.toRadians(x))*100)));
+76         \}
+77         g.setAntiAlias(\textcolor{keyword}{false});
+78         
+79         g.setColor(Color.yellow);
+80         g.drawString(\textcolor{stringliteral}{"The Graphics Test!"}, 300, 50);
+81         g.setColor(Color.white);
+82         g.drawString(\textcolor{stringliteral}{"Space - Toggles clipping"}, 400, 80);
+83         g.drawString(\textcolor{stringliteral}{"Frame rate capped to 100"}, 400, 120);
+84         
+85         \textcolor{keywordflow}{if} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_graphics_test_a45883b25988c6ce31f644d342ab168f3}{clip}}) \{
+86             g.setColor(Color.gray);
+87             g.drawRect(100,260,400,100);
+88             g.setClip(100,260,400,100);
+89         \}
+90 
+91         g.setColor(Color.yellow);
+92         g.translate(100, 120);
+93         g.fill(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_graphics_test_a3427e7e0650177a34f0a1df767f15720}{poly}});
+94         g.setColor(Color.blue);
+95         g.setLineWidth(3);
+96         g.draw(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_graphics_test_a3427e7e0650177a34f0a1df767f15720}{poly}});
+97         g.setLineWidth(1);
+98         g.translate(0, 230);
+99         g.draw(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_graphics_test_a3427e7e0650177a34f0a1df767f15720}{poly}});
+100         g.resetTransform();
+101         
+102         g.setColor(Color.magenta);
+103         g.drawRoundRect(10, 10, 100, 100, 10);
+104         g.fillRoundRect(10, 210, 100, 100, 10);
+105         
+106         g.rotate(400, 300, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_graphics_test_a4ed9f283437a082c3e14f94968f7cf70}{ang}});
+107         g.setColor(Color.green);
+108         g.drawRect(200,200,200,200);
+109         g.setColor(Color.blue);
+110         g.fillRect(250,250,100,100);
+111 
+112         g.drawImage(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_graphics_test_a425fce4f6eef7e14bbe291e64d604fdf}{image}}, 300,270);
+113         
+114         g.setColor(Color.red);
+115         g.drawOval(100,100,200,200);
+116         g.setColor(Color.red.darker());
+117         g.fillOval(300,300,150,100);
+118         g.setAntiAlias(\textcolor{keyword}{true});
+119         g.setColor(Color.white);
+120         g.setLineWidth(5.0f);
+121         g.drawOval(300,300,150,100);
+122         g.setAntiAlias(\textcolor{keyword}{true});
+123         g.resetTransform();
+124         
+125         \textcolor{keywordflow}{if} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_graphics_test_a45883b25988c6ce31f644d342ab168f3}{clip}}) \{
+126             g.clearClip();
+127         \}
+128     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tests_1_1_graphics_test_aba6467ff04e7fa1f1ae8930ab9d6949a}\label{classorg_1_1newdawn_1_1slick_1_1tests_1_1_graphics_test_aba6467ff04e7fa1f1ae8930ab9d6949a}} 
+\index{org\+::newdawn\+::slick\+::tests\+::\+Graphics\+Test@{org\+::newdawn\+::slick\+::tests\+::\+Graphics\+Test}!update@{update}}
+\index{update@{update}!org\+::newdawn\+::slick\+::tests\+::\+Graphics\+Test@{org\+::newdawn\+::slick\+::tests\+::\+Graphics\+Test}}
+\subsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+tests.\+Graphics\+Test.\+update (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_game_container}{Game\+Container}}}]{container,  }\item[{int}]{delta }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_basic_game_acfe6fa05aef83bff1631af91a3e4bd20}{org.\+newdawn.\+slick.\+Basic\+Game\+::update}}(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_game_container}{org.\+newdawn.\+slick.\+Game\+Container}}, int) 
+\end{DoxySeeAlso}
+
+
+Implements \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1_game_ab07b2e9463ee4631620dde0de25bdee8}{org.\+newdawn.\+slick.\+Game}}.
+
+
+\begin{DoxyCode}
+133                                                            \{
+134         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_graphics_test_a4ed9f283437a082c3e14f94968f7cf70}{ang}} += delta * 0.1f;
+135     \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tests_1_1_graphics_test_a4ed9f283437a082c3e14f94968f7cf70}\label{classorg_1_1newdawn_1_1slick_1_1tests_1_1_graphics_test_a4ed9f283437a082c3e14f94968f7cf70}} 
+\index{org\+::newdawn\+::slick\+::tests\+::\+Graphics\+Test@{org\+::newdawn\+::slick\+::tests\+::\+Graphics\+Test}!ang@{ang}}
+\index{ang@{ang}!org\+::newdawn\+::slick\+::tests\+::\+Graphics\+Test@{org\+::newdawn\+::slick\+::tests\+::\+Graphics\+Test}}
+\subsubsection{\texorpdfstring{ang}{ang}}
+{\footnotesize\ttfamily float org.\+newdawn.\+slick.\+tests.\+Graphics\+Test.\+ang\hspace{0.3cm}{\ttfamily [private]}}
+
+The angle of rotation \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tests_1_1_graphics_test_a45883b25988c6ce31f644d342ab168f3}\label{classorg_1_1newdawn_1_1slick_1_1tests_1_1_graphics_test_a45883b25988c6ce31f644d342ab168f3}} 
+\index{org\+::newdawn\+::slick\+::tests\+::\+Graphics\+Test@{org\+::newdawn\+::slick\+::tests\+::\+Graphics\+Test}!clip@{clip}}
+\index{clip@{clip}!org\+::newdawn\+::slick\+::tests\+::\+Graphics\+Test@{org\+::newdawn\+::slick\+::tests\+::\+Graphics\+Test}}
+\subsubsection{\texorpdfstring{clip}{clip}}
+{\footnotesize\ttfamily boolean org.\+newdawn.\+slick.\+tests.\+Graphics\+Test.\+clip\hspace{0.3cm}{\ttfamily [private]}}
+
+True if we\textquotesingle{}re clipping an area \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tests_1_1_graphics_test_a5484b72803a02c8eba6188f08e274f32}\label{classorg_1_1newdawn_1_1slick_1_1tests_1_1_graphics_test_a5484b72803a02c8eba6188f08e274f32}} 
+\index{org\+::newdawn\+::slick\+::tests\+::\+Graphics\+Test@{org\+::newdawn\+::slick\+::tests\+::\+Graphics\+Test}!container@{container}}
+\index{container@{container}!org\+::newdawn\+::slick\+::tests\+::\+Graphics\+Test@{org\+::newdawn\+::slick\+::tests\+::\+Graphics\+Test}}
+\subsubsection{\texorpdfstring{container}{container}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_game_container}{Game\+Container}} org.\+newdawn.\+slick.\+tests.\+Graphics\+Test.\+container\hspace{0.3cm}{\ttfamily [private]}}
+
+The container holding this test \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tests_1_1_graphics_test_a425fce4f6eef7e14bbe291e64d604fdf}\label{classorg_1_1newdawn_1_1slick_1_1tests_1_1_graphics_test_a425fce4f6eef7e14bbe291e64d604fdf}} 
+\index{org\+::newdawn\+::slick\+::tests\+::\+Graphics\+Test@{org\+::newdawn\+::slick\+::tests\+::\+Graphics\+Test}!image@{image}}
+\index{image@{image}!org\+::newdawn\+::slick\+::tests\+::\+Graphics\+Test@{org\+::newdawn\+::slick\+::tests\+::\+Graphics\+Test}}
+\subsubsection{\texorpdfstring{image}{image}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_image}{Image}} org.\+newdawn.\+slick.\+tests.\+Graphics\+Test.\+image\hspace{0.3cm}{\ttfamily [private]}}
+
+The image being rendered \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tests_1_1_graphics_test_a3427e7e0650177a34f0a1df767f15720}\label{classorg_1_1newdawn_1_1slick_1_1tests_1_1_graphics_test_a3427e7e0650177a34f0a1df767f15720}} 
+\index{org\+::newdawn\+::slick\+::tests\+::\+Graphics\+Test@{org\+::newdawn\+::slick\+::tests\+::\+Graphics\+Test}!poly@{poly}}
+\index{poly@{poly}!org\+::newdawn\+::slick\+::tests\+::\+Graphics\+Test@{org\+::newdawn\+::slick\+::tests\+::\+Graphics\+Test}}
+\subsubsection{\texorpdfstring{poly}{poly}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_polygon}{Polygon}} org.\+newdawn.\+slick.\+tests.\+Graphics\+Test.\+poly\hspace{0.3cm}{\ttfamily [private]}}
+
+A polygon to be rendered 

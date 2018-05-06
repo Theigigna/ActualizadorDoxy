@@ -1,0 +1,275 @@
+\hypertarget{classorg_1_1newdawn_1_1slick_1_1opengl_1_1pbuffer_1_1_graphics_factory}{}\section{org.\+newdawn.\+slick.\+opengl.\+pbuffer.\+Graphics\+Factory Class Reference}
+\label{classorg_1_1newdawn_1_1slick_1_1opengl_1_1pbuffer_1_1_graphics_factory}\index{org.\+newdawn.\+slick.\+opengl.\+pbuffer.\+Graphics\+Factory@{org.\+newdawn.\+slick.\+opengl.\+pbuffer.\+Graphics\+Factory}}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1pbuffer_1_1_graphics_factory_aff9664944bc477fc362c607ec842d9ec}{set\+Use\+F\+BO}} (boolean use\+F\+BO)
+\item 
+static boolean \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1pbuffer_1_1_graphics_factory_a8f59891b057912c68edd1877fbc9b157}{using\+F\+BO}} ()
+\item 
+static boolean \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1pbuffer_1_1_graphics_factory_a42836bb0632b387c81dbf7adb345f03a}{using\+P\+Buffer}} ()
+\item 
+static \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_graphics}{Graphics}} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1pbuffer_1_1_graphics_factory_a4607d79d1a18b06242ce69a006e2d5e5}{get\+Graphics\+For\+Image}} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_image}{Image}} image)  throws Slick\+Exception 
+\item 
+static void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1pbuffer_1_1_graphics_factory_a333ffcd0ae5c7754b5973a7a0b0da69c}{release\+Graphics\+For\+Image}} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_image}{Image}} image)  throws Slick\+Exception 
+\end{DoxyCompactItemize}
+\subsection*{Static Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1pbuffer_1_1_graphics_factory_aec2bf827e33a06307b20dc8470c53bca}{init}} ()  throws Slick\+Exception 
+\item 
+static \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_graphics}{Graphics}} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1pbuffer_1_1_graphics_factory_a1723770d9690868f06dbac9f7742eef9}{create\+Graphics}} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_image}{Image}} image)  throws Slick\+Exception 
+\end{DoxyCompactItemize}
+\subsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static Hash\+Map \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1pbuffer_1_1_graphics_factory_a782fd785834bb20f7159acf00db88712}{graphics}} = new Hash\+Map()
+\item 
+static boolean \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1pbuffer_1_1_graphics_factory_a93aabaabb380630168faa85ed5171c54}{pbuffer}} = true
+\item 
+static boolean \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1pbuffer_1_1_graphics_factory_a1e4cdc70af0c292f1277e6236a9c9478}{pbuffer\+RT}} = true
+\item 
+static boolean \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1pbuffer_1_1_graphics_factory_a9ff71f4ef96ff435c621dcfb206b5bd7}{fbo}} = true
+\item 
+static boolean \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1pbuffer_1_1_graphics_factory_a5eea4e175ff5f0b28ffdedb5d18ba614}{init}} = false
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A factory to produce an appropriate render to texture graphics context based on current hardware
+
+\begin{DoxyAuthor}{Author}
+kevin 
+\end{DoxyAuthor}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1opengl_1_1pbuffer_1_1_graphics_factory_a1723770d9690868f06dbac9f7742eef9}\label{classorg_1_1newdawn_1_1slick_1_1opengl_1_1pbuffer_1_1_graphics_factory_a1723770d9690868f06dbac9f7742eef9}} 
+\index{org\+::newdawn\+::slick\+::opengl\+::pbuffer\+::\+Graphics\+Factory@{org\+::newdawn\+::slick\+::opengl\+::pbuffer\+::\+Graphics\+Factory}!create\+Graphics@{create\+Graphics}}
+\index{create\+Graphics@{create\+Graphics}!org\+::newdawn\+::slick\+::opengl\+::pbuffer\+::\+Graphics\+Factory@{org\+::newdawn\+::slick\+::opengl\+::pbuffer\+::\+Graphics\+Factory}}
+\subsubsection{\texorpdfstring{create\+Graphics()}{createGraphics()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_graphics}{Graphics}} org.\+newdawn.\+slick.\+opengl.\+pbuffer.\+Graphics\+Factory.\+create\+Graphics (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_image}{Image}}}]{image }\end{DoxyParamCaption}) throws \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_slick_exception}{Slick\+Exception}}\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}, {\ttfamily [private]}}
+
+Create an underlying graphics context for the given image
+
+
+\begin{DoxyParams}{Parameters}
+{\em image} & The image we want to render to \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The graphics context created 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_slick_exception}{Slick\+Exception}}} & \\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyCode}
+119                                                                               \{
+120         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1pbuffer_1_1_graphics_factory_aec2bf827e33a06307b20dc8470c53bca}{init}}();
+121         
+122         \textcolor{keywordflow}{if} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1pbuffer_1_1_graphics_factory_a9ff71f4ef96ff435c621dcfb206b5bd7}{fbo}}) \{
+123             \textcolor{keywordflow}{try} \{
+124                 \textcolor{keywordflow}{return} \textcolor{keyword}{new} FBOGraphics(image);
+125             \} \textcolor{keywordflow}{catch} (Exception e) \{
+126                 \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1pbuffer_1_1_graphics_factory_a9ff71f4ef96ff435c621dcfb206b5bd7}{fbo}} = \textcolor{keyword}{false};
+127                 Log.warn(\textcolor{stringliteral}{"FBO failed in use, falling back to PBuffer"});
+128             \}
+129         \}
+130         
+131         \textcolor{keywordflow}{if} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1pbuffer_1_1_graphics_factory_a93aabaabb380630168faa85ed5171c54}{pbuffer}}) \{
+132             \textcolor{keywordflow}{if} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1pbuffer_1_1_graphics_factory_a1e4cdc70af0c292f1277e6236a9c9478}{pbufferRT}}) \{
+133                 \textcolor{keywordflow}{return} \textcolor{keyword}{new} PBufferGraphics(image);
+134             \} \textcolor{keywordflow}{else} \{
+135                 \textcolor{keywordflow}{return} \textcolor{keyword}{new} PBufferUniqueGraphics(image);
+136             \}
+137         \}
+138         
+139         \textcolor{keywordflow}{throw} \textcolor{keyword}{new} SlickException(\textcolor{stringliteral}{"Failed to create offscreen buffer even though the card reports it's
+       possible"});
+140     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1opengl_1_1pbuffer_1_1_graphics_factory_a4607d79d1a18b06242ce69a006e2d5e5}\label{classorg_1_1newdawn_1_1slick_1_1opengl_1_1pbuffer_1_1_graphics_factory_a4607d79d1a18b06242ce69a006e2d5e5}} 
+\index{org\+::newdawn\+::slick\+::opengl\+::pbuffer\+::\+Graphics\+Factory@{org\+::newdawn\+::slick\+::opengl\+::pbuffer\+::\+Graphics\+Factory}!get\+Graphics\+For\+Image@{get\+Graphics\+For\+Image}}
+\index{get\+Graphics\+For\+Image@{get\+Graphics\+For\+Image}!org\+::newdawn\+::slick\+::opengl\+::pbuffer\+::\+Graphics\+Factory@{org\+::newdawn\+::slick\+::opengl\+::pbuffer\+::\+Graphics\+Factory}}
+\subsubsection{\texorpdfstring{get\+Graphics\+For\+Image()}{getGraphicsForImage()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_graphics}{Graphics}} org.\+newdawn.\+slick.\+opengl.\+pbuffer.\+Graphics\+Factory.\+get\+Graphics\+For\+Image (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_image}{Image}}}]{image }\end{DoxyParamCaption}) throws \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_slick_exception}{Slick\+Exception}}\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Get a graphics context for a particular image
+
+
+\begin{DoxyParams}{Parameters}
+{\em image} & The image for which to retrieve the graphics context \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The graphics context 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_slick_exception}{Slick\+Exception}}} & Indicates it wasn\textquotesingle{}t possible to create a graphics context given available hardware. \\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyCode}
+87                                                                                   \{
+88         Graphics g = (Graphics) \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1pbuffer_1_1_graphics_factory_a782fd785834bb20f7159acf00db88712}{graphics}}.get(image.getTexture());
+89         
+90         \textcolor{keywordflow}{if} (g == null) \{
+91             g = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1pbuffer_1_1_graphics_factory_a1723770d9690868f06dbac9f7742eef9}{createGraphics}}(image);
+92             \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1pbuffer_1_1_graphics_factory_a782fd785834bb20f7159acf00db88712}{graphics}}.put(image.getTexture(), g);
+93         \}
+94         
+95         \textcolor{keywordflow}{return} g;
+96     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1opengl_1_1pbuffer_1_1_graphics_factory_aec2bf827e33a06307b20dc8470c53bca}\label{classorg_1_1newdawn_1_1slick_1_1opengl_1_1pbuffer_1_1_graphics_factory_aec2bf827e33a06307b20dc8470c53bca}} 
+\index{org\+::newdawn\+::slick\+::opengl\+::pbuffer\+::\+Graphics\+Factory@{org\+::newdawn\+::slick\+::opengl\+::pbuffer\+::\+Graphics\+Factory}!init@{init}}
+\index{init@{init}!org\+::newdawn\+::slick\+::opengl\+::pbuffer\+::\+Graphics\+Factory@{org\+::newdawn\+::slick\+::opengl\+::pbuffer\+::\+Graphics\+Factory}}
+\subsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily static void org.\+newdawn.\+slick.\+opengl.\+pbuffer.\+Graphics\+Factory.\+init (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_slick_exception}{Slick\+Exception}}\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}, {\ttfamily [private]}}
+
+Initialise offscreen rendering by checking what buffers are supported by the card
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_slick_exception}{Slick\+Exception}}} & Indicates no buffers are supported \\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyCode}
+36                                                      \{
+37         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1pbuffer_1_1_graphics_factory_aec2bf827e33a06307b20dc8470c53bca}{init}} = \textcolor{keyword}{true};
+38         
+39         \textcolor{keywordflow}{if} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1pbuffer_1_1_graphics_factory_a9ff71f4ef96ff435c621dcfb206b5bd7}{fbo}}) \{
+40             \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1pbuffer_1_1_graphics_factory_a9ff71f4ef96ff435c621dcfb206b5bd7}{fbo}} = GLContext.getCapabilities().GL\_EXT\_framebuffer\_object;
+41         \}
+42         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1pbuffer_1_1_graphics_factory_a93aabaabb380630168faa85ed5171c54}{pbuffer}} = (Pbuffer.getCapabilities() & Pbuffer.PBUFFER\_SUPPORTED) != 0;
+43         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1pbuffer_1_1_graphics_factory_a1e4cdc70af0c292f1277e6236a9c9478}{pbufferRT}} = (Pbuffer.getCapabilities() & Pbuffer.RENDER\_TEXTURE\_SUPPORTED) != 0;
+44         
+45         \textcolor{keywordflow}{if} (!\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1pbuffer_1_1_graphics_factory_a9ff71f4ef96ff435c621dcfb206b5bd7}{fbo}} && !\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1pbuffer_1_1_graphics_factory_a93aabaabb380630168faa85ed5171c54}{pbuffer}} && !\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1pbuffer_1_1_graphics_factory_a1e4cdc70af0c292f1277e6236a9c9478}{pbufferRT}}) \{
+46             \textcolor{keywordflow}{throw} \textcolor{keyword}{new} SlickException(\textcolor{stringliteral}{"Your OpenGL card does not support offscreen buffers and hence can't
+       handle the dynamic images required for this application."});
+47         \}
+48         
+49         Log.info(\textcolor{stringliteral}{"Offscreen Buffers FBO="}+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1pbuffer_1_1_graphics_factory_a9ff71f4ef96ff435c621dcfb206b5bd7}{fbo}}+\textcolor{stringliteral}{" PBUFFER="}+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1pbuffer_1_1_graphics_factory_a93aabaabb380630168faa85ed5171c54}{pbuffer}}+\textcolor{stringliteral}{" PBUFFERRT="}+
+      \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1pbuffer_1_1_graphics_factory_a1e4cdc70af0c292f1277e6236a9c9478}{pbufferRT}});
+50     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1opengl_1_1pbuffer_1_1_graphics_factory_a333ffcd0ae5c7754b5973a7a0b0da69c}\label{classorg_1_1newdawn_1_1slick_1_1opengl_1_1pbuffer_1_1_graphics_factory_a333ffcd0ae5c7754b5973a7a0b0da69c}} 
+\index{org\+::newdawn\+::slick\+::opengl\+::pbuffer\+::\+Graphics\+Factory@{org\+::newdawn\+::slick\+::opengl\+::pbuffer\+::\+Graphics\+Factory}!release\+Graphics\+For\+Image@{release\+Graphics\+For\+Image}}
+\index{release\+Graphics\+For\+Image@{release\+Graphics\+For\+Image}!org\+::newdawn\+::slick\+::opengl\+::pbuffer\+::\+Graphics\+Factory@{org\+::newdawn\+::slick\+::opengl\+::pbuffer\+::\+Graphics\+Factory}}
+\subsubsection{\texorpdfstring{release\+Graphics\+For\+Image()}{releaseGraphicsForImage()}}
+{\footnotesize\ttfamily static void org.\+newdawn.\+slick.\+opengl.\+pbuffer.\+Graphics\+Factory.\+release\+Graphics\+For\+Image (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_image}{Image}}}]{image }\end{DoxyParamCaption}) throws \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_slick_exception}{Slick\+Exception}}\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Release any graphics context that is assocaited with the given image
+
+
+\begin{DoxyParams}{Parameters}
+{\em image} & The image to release \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_slick_exception}{Slick\+Exception}}} & Indicates a failure to release the context \\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyCode}
+104                                                                                   \{
+105         Graphics g = (Graphics) \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1pbuffer_1_1_graphics_factory_a782fd785834bb20f7159acf00db88712}{graphics}}.remove(image.getTexture());
+106         
+107         \textcolor{keywordflow}{if} (g != null) \{
+108             g.destroy();
+109         \}
+110     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1opengl_1_1pbuffer_1_1_graphics_factory_aff9664944bc477fc362c607ec842d9ec}\label{classorg_1_1newdawn_1_1slick_1_1opengl_1_1pbuffer_1_1_graphics_factory_aff9664944bc477fc362c607ec842d9ec}} 
+\index{org\+::newdawn\+::slick\+::opengl\+::pbuffer\+::\+Graphics\+Factory@{org\+::newdawn\+::slick\+::opengl\+::pbuffer\+::\+Graphics\+Factory}!set\+Use\+F\+BO@{set\+Use\+F\+BO}}
+\index{set\+Use\+F\+BO@{set\+Use\+F\+BO}!org\+::newdawn\+::slick\+::opengl\+::pbuffer\+::\+Graphics\+Factory@{org\+::newdawn\+::slick\+::opengl\+::pbuffer\+::\+Graphics\+Factory}}
+\subsubsection{\texorpdfstring{set\+Use\+F\+B\+O()}{setUseFBO()}}
+{\footnotesize\ttfamily static void org.\+newdawn.\+slick.\+opengl.\+pbuffer.\+Graphics\+Factory.\+set\+Use\+F\+BO (\begin{DoxyParamCaption}\item[{boolean}]{use\+F\+BO }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Force F\+BO use on or off
+
+
+\begin{DoxyParams}{Parameters}
+{\em use\+F\+BO} & True if we should try and use F\+BO for offscreen images \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+57                                                  \{
+58         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1pbuffer_1_1_graphics_factory_a9ff71f4ef96ff435c621dcfb206b5bd7}{fbo}} = useFBO;
+59     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1opengl_1_1pbuffer_1_1_graphics_factory_a8f59891b057912c68edd1877fbc9b157}\label{classorg_1_1newdawn_1_1slick_1_1opengl_1_1pbuffer_1_1_graphics_factory_a8f59891b057912c68edd1877fbc9b157}} 
+\index{org\+::newdawn\+::slick\+::opengl\+::pbuffer\+::\+Graphics\+Factory@{org\+::newdawn\+::slick\+::opengl\+::pbuffer\+::\+Graphics\+Factory}!using\+F\+BO@{using\+F\+BO}}
+\index{using\+F\+BO@{using\+F\+BO}!org\+::newdawn\+::slick\+::opengl\+::pbuffer\+::\+Graphics\+Factory@{org\+::newdawn\+::slick\+::opengl\+::pbuffer\+::\+Graphics\+Factory}}
+\subsubsection{\texorpdfstring{using\+F\+B\+O()}{usingFBO()}}
+{\footnotesize\ttfamily static boolean org.\+newdawn.\+slick.\+opengl.\+pbuffer.\+Graphics\+Factory.\+using\+F\+BO (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Check if we\textquotesingle{}re using F\+BO for dynamic textures
+
+\begin{DoxyReturn}{Returns}
+True if we\textquotesingle{}re using F\+B\+Os 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+66                                      \{
+67         \textcolor{keywordflow}{return} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1pbuffer_1_1_graphics_factory_a9ff71f4ef96ff435c621dcfb206b5bd7}{fbo}};
+68     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1opengl_1_1pbuffer_1_1_graphics_factory_a42836bb0632b387c81dbf7adb345f03a}\label{classorg_1_1newdawn_1_1slick_1_1opengl_1_1pbuffer_1_1_graphics_factory_a42836bb0632b387c81dbf7adb345f03a}} 
+\index{org\+::newdawn\+::slick\+::opengl\+::pbuffer\+::\+Graphics\+Factory@{org\+::newdawn\+::slick\+::opengl\+::pbuffer\+::\+Graphics\+Factory}!using\+P\+Buffer@{using\+P\+Buffer}}
+\index{using\+P\+Buffer@{using\+P\+Buffer}!org\+::newdawn\+::slick\+::opengl\+::pbuffer\+::\+Graphics\+Factory@{org\+::newdawn\+::slick\+::opengl\+::pbuffer\+::\+Graphics\+Factory}}
+\subsubsection{\texorpdfstring{using\+P\+Buffer()}{usingPBuffer()}}
+{\footnotesize\ttfamily static boolean org.\+newdawn.\+slick.\+opengl.\+pbuffer.\+Graphics\+Factory.\+using\+P\+Buffer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Check if we\textquotesingle{}re using P\+Buffer for dynamic textures
+
+\begin{DoxyReturn}{Returns}
+True if we\textquotesingle{}re using P\+Buffer 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+75                                          \{
+76         \textcolor{keywordflow}{return} !\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1pbuffer_1_1_graphics_factory_a9ff71f4ef96ff435c621dcfb206b5bd7}{fbo}} && \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1pbuffer_1_1_graphics_factory_a93aabaabb380630168faa85ed5171c54}{pbuffer}};
+77     \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1opengl_1_1pbuffer_1_1_graphics_factory_a9ff71f4ef96ff435c621dcfb206b5bd7}\label{classorg_1_1newdawn_1_1slick_1_1opengl_1_1pbuffer_1_1_graphics_factory_a9ff71f4ef96ff435c621dcfb206b5bd7}} 
+\index{org\+::newdawn\+::slick\+::opengl\+::pbuffer\+::\+Graphics\+Factory@{org\+::newdawn\+::slick\+::opengl\+::pbuffer\+::\+Graphics\+Factory}!fbo@{fbo}}
+\index{fbo@{fbo}!org\+::newdawn\+::slick\+::opengl\+::pbuffer\+::\+Graphics\+Factory@{org\+::newdawn\+::slick\+::opengl\+::pbuffer\+::\+Graphics\+Factory}}
+\subsubsection{\texorpdfstring{fbo}{fbo}}
+{\footnotesize\ttfamily boolean org.\+newdawn.\+slick.\+opengl.\+pbuffer.\+Graphics\+Factory.\+fbo = true\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+True if fbo are supported \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1opengl_1_1pbuffer_1_1_graphics_factory_a782fd785834bb20f7159acf00db88712}\label{classorg_1_1newdawn_1_1slick_1_1opengl_1_1pbuffer_1_1_graphics_factory_a782fd785834bb20f7159acf00db88712}} 
+\index{org\+::newdawn\+::slick\+::opengl\+::pbuffer\+::\+Graphics\+Factory@{org\+::newdawn\+::slick\+::opengl\+::pbuffer\+::\+Graphics\+Factory}!graphics@{graphics}}
+\index{graphics@{graphics}!org\+::newdawn\+::slick\+::opengl\+::pbuffer\+::\+Graphics\+Factory@{org\+::newdawn\+::slick\+::opengl\+::pbuffer\+::\+Graphics\+Factory}}
+\subsubsection{\texorpdfstring{graphics}{graphics}}
+{\footnotesize\ttfamily Hash\+Map org.\+newdawn.\+slick.\+opengl.\+pbuffer.\+Graphics\+Factory.\+graphics = new Hash\+Map()\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+The graphics list of graphics contexts created \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1opengl_1_1pbuffer_1_1_graphics_factory_a5eea4e175ff5f0b28ffdedb5d18ba614}\label{classorg_1_1newdawn_1_1slick_1_1opengl_1_1pbuffer_1_1_graphics_factory_a5eea4e175ff5f0b28ffdedb5d18ba614}} 
+\index{org\+::newdawn\+::slick\+::opengl\+::pbuffer\+::\+Graphics\+Factory@{org\+::newdawn\+::slick\+::opengl\+::pbuffer\+::\+Graphics\+Factory}!init@{init}}
+\index{init@{init}!org\+::newdawn\+::slick\+::opengl\+::pbuffer\+::\+Graphics\+Factory@{org\+::newdawn\+::slick\+::opengl\+::pbuffer\+::\+Graphics\+Factory}}
+\subsubsection{\texorpdfstring{init}{init}}
+{\footnotesize\ttfamily boolean org.\+newdawn.\+slick.\+opengl.\+pbuffer.\+Graphics\+Factory.\+init = false\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+True if we\textquotesingle{}ve initialised \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1opengl_1_1pbuffer_1_1_graphics_factory_a93aabaabb380630168faa85ed5171c54}\label{classorg_1_1newdawn_1_1slick_1_1opengl_1_1pbuffer_1_1_graphics_factory_a93aabaabb380630168faa85ed5171c54}} 
+\index{org\+::newdawn\+::slick\+::opengl\+::pbuffer\+::\+Graphics\+Factory@{org\+::newdawn\+::slick\+::opengl\+::pbuffer\+::\+Graphics\+Factory}!pbuffer@{pbuffer}}
+\index{pbuffer@{pbuffer}!org\+::newdawn\+::slick\+::opengl\+::pbuffer\+::\+Graphics\+Factory@{org\+::newdawn\+::slick\+::opengl\+::pbuffer\+::\+Graphics\+Factory}}
+\subsubsection{\texorpdfstring{pbuffer}{pbuffer}}
+{\footnotesize\ttfamily boolean org.\+newdawn.\+slick.\+opengl.\+pbuffer.\+Graphics\+Factory.\+pbuffer = true\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+True if pbuffers are supported \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1opengl_1_1pbuffer_1_1_graphics_factory_a1e4cdc70af0c292f1277e6236a9c9478}\label{classorg_1_1newdawn_1_1slick_1_1opengl_1_1pbuffer_1_1_graphics_factory_a1e4cdc70af0c292f1277e6236a9c9478}} 
+\index{org\+::newdawn\+::slick\+::opengl\+::pbuffer\+::\+Graphics\+Factory@{org\+::newdawn\+::slick\+::opengl\+::pbuffer\+::\+Graphics\+Factory}!pbuffer\+RT@{pbuffer\+RT}}
+\index{pbuffer\+RT@{pbuffer\+RT}!org\+::newdawn\+::slick\+::opengl\+::pbuffer\+::\+Graphics\+Factory@{org\+::newdawn\+::slick\+::opengl\+::pbuffer\+::\+Graphics\+Factory}}
+\subsubsection{\texorpdfstring{pbuffer\+RT}{pbufferRT}}
+{\footnotesize\ttfamily boolean org.\+newdawn.\+slick.\+opengl.\+pbuffer.\+Graphics\+Factory.\+pbuffer\+RT = true\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+True if pbuffer render to texture are supported 

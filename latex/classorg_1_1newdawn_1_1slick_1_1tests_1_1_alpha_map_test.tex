@@ -1,0 +1,188 @@
+\hypertarget{classorg_1_1newdawn_1_1slick_1_1tests_1_1_alpha_map_test}{}\section{org.\+newdawn.\+slick.\+tests.\+Alpha\+Map\+Test Class Reference}
+\label{classorg_1_1newdawn_1_1slick_1_1tests_1_1_alpha_map_test}\index{org.\+newdawn.\+slick.\+tests.\+Alpha\+Map\+Test@{org.\+newdawn.\+slick.\+tests.\+Alpha\+Map\+Test}}
+Inheritance diagram for org.\+newdawn.\+slick.\+tests.\+Alpha\+Map\+Test\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.522012cm]{classorg_1_1newdawn_1_1slick_1_1tests_1_1_alpha_map_test}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_alpha_map_test_a2b9c7ee910b1bd0c590f169936e535e7}{Alpha\+Map\+Test}} ()
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_alpha_map_test_a4daa13d1f96a2f22faa66cd033a44894}{init}} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_game_container}{Game\+Container}} container)  throws Slick\+Exception 
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_alpha_map_test_a42988459f515e69d91b96917c218b6e1}{update}} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_game_container}{Game\+Container}} container, int delta)  throws Slick\+Exception 
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_alpha_map_test_a11802d19ba7c484c9db38366c96c857e}{render}} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_game_container}{Game\+Container}} container, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_graphics}{Graphics}} g)  throws Slick\+Exception 
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_alpha_map_test_a2197f031e4bcff4d6fee89d27fdce412}{key\+Pressed}} (int key, char c)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_alpha_map_test_a9d30318bcf8f95383bfaf3a7ef3ed6e6}{main}} (String\mbox{[}$\,$\mbox{]} argv)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_image}{Image}} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_alpha_map_test_a1feaeb3164bd0e648d4f9cf7a63ce24a}{alpha\+Map}}
+\item 
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_image}{Image}} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_alpha_map_test_a1ba492928b78eceb9442f13fb61a45f3}{texture\+Map}}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+A test to demonstrate world clipping as opposed to screen clipping
+
+\begin{DoxyAuthor}{Author}
+kevin 
+\end{DoxyAuthor}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tests_1_1_alpha_map_test_a2b9c7ee910b1bd0c590f169936e535e7}\label{classorg_1_1newdawn_1_1slick_1_1tests_1_1_alpha_map_test_a2b9c7ee910b1bd0c590f169936e535e7}} 
+\index{org\+::newdawn\+::slick\+::tests\+::\+Alpha\+Map\+Test@{org\+::newdawn\+::slick\+::tests\+::\+Alpha\+Map\+Test}!Alpha\+Map\+Test@{Alpha\+Map\+Test}}
+\index{Alpha\+Map\+Test@{Alpha\+Map\+Test}!org\+::newdawn\+::slick\+::tests\+::\+Alpha\+Map\+Test@{org\+::newdawn\+::slick\+::tests\+::\+Alpha\+Map\+Test}}
+\subsubsection{\texorpdfstring{Alpha\+Map\+Test()}{AlphaMapTest()}}
+{\footnotesize\ttfamily org.\+newdawn.\+slick.\+tests.\+Alpha\+Map\+Test.\+Alpha\+Map\+Test (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Create a new tester for the clip plane based clipping 
+\begin{DoxyCode}
+25                           \{
+26         super(\textcolor{stringliteral}{"AlphaMap Test"});
+27     \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tests_1_1_alpha_map_test_a4daa13d1f96a2f22faa66cd033a44894}\label{classorg_1_1newdawn_1_1slick_1_1tests_1_1_alpha_map_test_a4daa13d1f96a2f22faa66cd033a44894}} 
+\index{org\+::newdawn\+::slick\+::tests\+::\+Alpha\+Map\+Test@{org\+::newdawn\+::slick\+::tests\+::\+Alpha\+Map\+Test}!init@{init}}
+\index{init@{init}!org\+::newdawn\+::slick\+::tests\+::\+Alpha\+Map\+Test@{org\+::newdawn\+::slick\+::tests\+::\+Alpha\+Map\+Test}}
+\subsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+tests.\+Alpha\+Map\+Test.\+init (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_game_container}{Game\+Container}}}]{container }\end{DoxyParamCaption}) throws \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_slick_exception}{Slick\+Exception}}\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_basic_game_a8af0900217e4d389249f71367b22d114}{org.\+newdawn.\+slick.\+Basic\+Game\+::init}}(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_game_container}{org.\+newdawn.\+slick.\+Game\+Container}}) 
+\end{DoxySeeAlso}
+
+
+Implements \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1_game_ad2dd6affab08bb8fdb5fab0815957b7a}{org.\+newdawn.\+slick.\+Game}}.
+
+
+\begin{DoxyCode}
+32                                                                     \{
+33         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_alpha_map_test_a1feaeb3164bd0e648d4f9cf7a63ce24a}{alphaMap}} = \textcolor{keyword}{new} Image(\textcolor{stringliteral}{"testdata/alphamap.png"});
+34         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_alpha_map_test_a1ba492928b78eceb9442f13fb61a45f3}{textureMap}} = \textcolor{keyword}{new} Image(\textcolor{stringliteral}{"testdata/grass.png"});
+35         container.getGraphics().setBackground(Color.black);
+36     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tests_1_1_alpha_map_test_a2197f031e4bcff4d6fee89d27fdce412}\label{classorg_1_1newdawn_1_1slick_1_1tests_1_1_alpha_map_test_a2197f031e4bcff4d6fee89d27fdce412}} 
+\index{org\+::newdawn\+::slick\+::tests\+::\+Alpha\+Map\+Test@{org\+::newdawn\+::slick\+::tests\+::\+Alpha\+Map\+Test}!key\+Pressed@{key\+Pressed}}
+\index{key\+Pressed@{key\+Pressed}!org\+::newdawn\+::slick\+::tests\+::\+Alpha\+Map\+Test@{org\+::newdawn\+::slick\+::tests\+::\+Alpha\+Map\+Test}}
+\subsubsection{\texorpdfstring{key\+Pressed()}{keyPressed()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+tests.\+Alpha\+Map\+Test.\+key\+Pressed (\begin{DoxyParamCaption}\item[{int}]{key,  }\item[{char}]{c }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_basic_game_a4fbb3345b5abf5ddd54a99466d07f02f}{org.\+newdawn.\+slick.\+Basic\+Game\+::key\+Pressed(int, char)}} 
+\end{DoxySeeAlso}
+
+
+Implements \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1_key_listener_ac0b0568a21ef486c4f51382614c196ef}{org.\+newdawn.\+slick.\+Key\+Listener}}.
+
+
+\begin{DoxyCode}
+67                                             \{
+68     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tests_1_1_alpha_map_test_a9d30318bcf8f95383bfaf3a7ef3ed6e6}\label{classorg_1_1newdawn_1_1slick_1_1tests_1_1_alpha_map_test_a9d30318bcf8f95383bfaf3a7ef3ed6e6}} 
+\index{org\+::newdawn\+::slick\+::tests\+::\+Alpha\+Map\+Test@{org\+::newdawn\+::slick\+::tests\+::\+Alpha\+Map\+Test}!main@{main}}
+\index{main@{main}!org\+::newdawn\+::slick\+::tests\+::\+Alpha\+Map\+Test@{org\+::newdawn\+::slick\+::tests\+::\+Alpha\+Map\+Test}}
+\subsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily static void org.\+newdawn.\+slick.\+tests.\+Alpha\+Map\+Test.\+main (\begin{DoxyParamCaption}\item[{String \mbox{[}$\,$\mbox{]}}]{argv }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Entry point to our test
+
+
+\begin{DoxyParams}{Parameters}
+{\em argv} & The arguments to pass into the test \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+75                                            \{
+76         \textcolor{keywordflow}{try} \{
+77             AppGameContainer container = \textcolor{keyword}{new} AppGameContainer(\textcolor{keyword}{new} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_alpha_map_test_a2b9c7ee910b1bd0c590f169936e535e7}{AlphaMapTest}}());
+78             container.setDisplayMode(800,600,\textcolor{keyword}{false});
+79             container.start();
+80         \} \textcolor{keywordflow}{catch} (SlickException e) \{
+81             e.printStackTrace();
+82         \}
+83     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tests_1_1_alpha_map_test_a11802d19ba7c484c9db38366c96c857e}\label{classorg_1_1newdawn_1_1slick_1_1tests_1_1_alpha_map_test_a11802d19ba7c484c9db38366c96c857e}} 
+\index{org\+::newdawn\+::slick\+::tests\+::\+Alpha\+Map\+Test@{org\+::newdawn\+::slick\+::tests\+::\+Alpha\+Map\+Test}!render@{render}}
+\index{render@{render}!org\+::newdawn\+::slick\+::tests\+::\+Alpha\+Map\+Test@{org\+::newdawn\+::slick\+::tests\+::\+Alpha\+Map\+Test}}
+\subsubsection{\texorpdfstring{render()}{render()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+tests.\+Alpha\+Map\+Test.\+render (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_game_container}{Game\+Container}}}]{container,  }\item[{\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_graphics}{Graphics}}}]{g }\end{DoxyParamCaption}) throws \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_slick_exception}{Slick\+Exception}}\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1_game_af1a4670d43eb3ba04dfcf55ab1975b64}{org.\+newdawn.\+slick.\+Game\+::render}}(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_game_container}{org.\+newdawn.\+slick.\+Game\+Container}}, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_graphics}{org.\+newdawn.\+slick.\+Graphics}}) 
+\end{DoxySeeAlso}
+
+
+Implements \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1_game_af1a4670d43eb3ba04dfcf55ab1975b64}{org.\+newdawn.\+slick.\+Game}}.
+
+
+\begin{DoxyCode}
+49                                   \{
+50         g.clearAlphaMap();
+51         g.setDrawMode(Graphics.MODE\_NORMAL);
+52         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_alpha_map_test_a1ba492928b78eceb9442f13fb61a45f3}{textureMap}}.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_image_a9bddcca05c7140ab45df8ac5b250b6cd}{draw}}(10,50);
+53         g.setColor(Color.red);
+54         g.fillRect(290,40,200,200);
+55         g.setColor(Color.white);
+56         \textcolor{comment}{// write only alpha}
+57         g.setDrawMode(Graphics.MODE\_ALPHA\_MAP);
+58         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_alpha_map_test_a1feaeb3164bd0e648d4f9cf7a63ce24a}{alphaMap}}.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_image_a9bddcca05c7140ab45df8ac5b250b6cd}{draw}}(300,50);
+59         g.setDrawMode(Graphics.MODE\_ALPHA\_BLEND);
+60         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_alpha_map_test_a1ba492928b78eceb9442f13fb61a45f3}{textureMap}}.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_image_a9bddcca05c7140ab45df8ac5b250b6cd}{draw}}(300,50);
+61         g.setDrawMode(Graphics.MODE\_NORMAL);
+62     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tests_1_1_alpha_map_test_a42988459f515e69d91b96917c218b6e1}\label{classorg_1_1newdawn_1_1slick_1_1tests_1_1_alpha_map_test_a42988459f515e69d91b96917c218b6e1}} 
+\index{org\+::newdawn\+::slick\+::tests\+::\+Alpha\+Map\+Test@{org\+::newdawn\+::slick\+::tests\+::\+Alpha\+Map\+Test}!update@{update}}
+\index{update@{update}!org\+::newdawn\+::slick\+::tests\+::\+Alpha\+Map\+Test@{org\+::newdawn\+::slick\+::tests\+::\+Alpha\+Map\+Test}}
+\subsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+tests.\+Alpha\+Map\+Test.\+update (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_game_container}{Game\+Container}}}]{container,  }\item[{int}]{delta }\end{DoxyParamCaption}) throws \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_slick_exception}{Slick\+Exception}}\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_basic_game_acfe6fa05aef83bff1631af91a3e4bd20}{org.\+newdawn.\+slick.\+Basic\+Game\+::update}}(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_game_container}{org.\+newdawn.\+slick.\+Game\+Container}}, int) 
+\end{DoxySeeAlso}
+
+
+Implements \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1_game_ab07b2e9463ee4631620dde0de25bdee8}{org.\+newdawn.\+slick.\+Game}}.
+
+
+\begin{DoxyCode}
+42                                   \{
+43     \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tests_1_1_alpha_map_test_a1feaeb3164bd0e648d4f9cf7a63ce24a}\label{classorg_1_1newdawn_1_1slick_1_1tests_1_1_alpha_map_test_a1feaeb3164bd0e648d4f9cf7a63ce24a}} 
+\index{org\+::newdawn\+::slick\+::tests\+::\+Alpha\+Map\+Test@{org\+::newdawn\+::slick\+::tests\+::\+Alpha\+Map\+Test}!alpha\+Map@{alpha\+Map}}
+\index{alpha\+Map@{alpha\+Map}!org\+::newdawn\+::slick\+::tests\+::\+Alpha\+Map\+Test@{org\+::newdawn\+::slick\+::tests\+::\+Alpha\+Map\+Test}}
+\subsubsection{\texorpdfstring{alpha\+Map}{alphaMap}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_image}{Image}} org.\+newdawn.\+slick.\+tests.\+Alpha\+Map\+Test.\+alpha\+Map\hspace{0.3cm}{\ttfamily [private]}}
+
+The alpha map being applied \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tests_1_1_alpha_map_test_a1ba492928b78eceb9442f13fb61a45f3}\label{classorg_1_1newdawn_1_1slick_1_1tests_1_1_alpha_map_test_a1ba492928b78eceb9442f13fb61a45f3}} 
+\index{org\+::newdawn\+::slick\+::tests\+::\+Alpha\+Map\+Test@{org\+::newdawn\+::slick\+::tests\+::\+Alpha\+Map\+Test}!texture\+Map@{texture\+Map}}
+\index{texture\+Map@{texture\+Map}!org\+::newdawn\+::slick\+::tests\+::\+Alpha\+Map\+Test@{org\+::newdawn\+::slick\+::tests\+::\+Alpha\+Map\+Test}}
+\subsubsection{\texorpdfstring{texture\+Map}{textureMap}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_image}{Image}} org.\+newdawn.\+slick.\+tests.\+Alpha\+Map\+Test.\+texture\+Map\hspace{0.3cm}{\ttfamily [private]}}
+
+The texture to apply over the top 

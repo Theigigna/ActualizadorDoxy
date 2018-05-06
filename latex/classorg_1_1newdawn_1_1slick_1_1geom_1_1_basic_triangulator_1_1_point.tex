@@ -1,0 +1,171 @@
+\hypertarget{classorg_1_1newdawn_1_1slick_1_1geom_1_1_basic_triangulator_1_1_point}{}\section{org.\+newdawn.\+slick.\+geom.\+Basic\+Triangulator.\+Point Class Reference}
+\label{classorg_1_1newdawn_1_1slick_1_1geom_1_1_basic_triangulator_1_1_point}\index{org.\+newdawn.\+slick.\+geom.\+Basic\+Triangulator.\+Point@{org.\+newdawn.\+slick.\+geom.\+Basic\+Triangulator.\+Point}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_basic_triangulator_1_1_point_aece21dc99059c02dceef8a70eb47d4cc}{Point}} (float \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_basic_triangulator_1_1_point_a430d2074970ce9d8248e998f45e0deac}{x}}, float \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_basic_triangulator_1_1_point_aad601993c7f613bd1e26c48a62a950d7}{y}})
+\item 
+float \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_basic_triangulator_1_1_point_aeaef6b66057505fbb785e9e0bee90c25}{getX}} ()
+\item 
+float \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_basic_triangulator_1_1_point_a489a862ca5103c6ba00bcf5f9f1a1507}{getY}} ()
+\item 
+float \mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_basic_triangulator_1_1_point_acb4b7fb3bab66540d7cad1c662415c56}{to\+Array}} ()
+\item 
+int \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_basic_triangulator_1_1_point_a5c488f1e1930c32836c688375616450a}{hash\+Code}} ()
+\item 
+boolean \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_basic_triangulator_1_1_point_ac04a7b88ef5fa9160ca9f146e9585791}{equals}} (Object other)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+float \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_basic_triangulator_1_1_point_a430d2074970ce9d8248e998f45e0deac}{x}}
+\item 
+float \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_basic_triangulator_1_1_point_aad601993c7f613bd1e26c48a62a950d7}{y}}
+\item 
+float \mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_basic_triangulator_1_1_point_a029a72bfc3c624500744d9650e06aa77}{array}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A single point handled by the triangulator
+
+\begin{DoxyAuthor}{Author}
+Kevin Glass 
+\end{DoxyAuthor}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1geom_1_1_basic_triangulator_1_1_point_aece21dc99059c02dceef8a70eb47d4cc}\label{classorg_1_1newdawn_1_1slick_1_1geom_1_1_basic_triangulator_1_1_point_aece21dc99059c02dceef8a70eb47d4cc}} 
+\index{org\+::newdawn\+::slick\+::geom\+::\+Basic\+Triangulator\+::\+Point@{org\+::newdawn\+::slick\+::geom\+::\+Basic\+Triangulator\+::\+Point}!Point@{Point}}
+\index{Point@{Point}!org\+::newdawn\+::slick\+::geom\+::\+Basic\+Triangulator\+::\+Point@{org\+::newdawn\+::slick\+::geom\+::\+Basic\+Triangulator\+::\+Point}}
+\subsubsection{\texorpdfstring{Point()}{Point()}}
+{\footnotesize\ttfamily org.\+newdawn.\+slick.\+geom.\+Basic\+Triangulator.\+Point.\+Point (\begin{DoxyParamCaption}\item[{float}]{x,  }\item[{float}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Create a new point
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & The x coordindate of the point \\
+\hline
+{\em y} & The y coordindate of the point \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+307                                        \{
+308             this.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_basic_triangulator_1_1_point_a430d2074970ce9d8248e998f45e0deac}{x}} = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_basic_triangulator_1_1_point_a430d2074970ce9d8248e998f45e0deac}{x}};
+309             this.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_basic_triangulator_1_1_point_aad601993c7f613bd1e26c48a62a950d7}{y}} = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_basic_triangulator_1_1_point_aad601993c7f613bd1e26c48a62a950d7}{y}};
+310             \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_basic_triangulator_1_1_point_a029a72bfc3c624500744d9650e06aa77}{array}} = \textcolor{keyword}{new} \textcolor{keywordtype}{float}[] \{\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_basic_triangulator_1_1_point_a430d2074970ce9d8248e998f45e0deac}{x}},\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_basic_triangulator_1_1_point_aad601993c7f613bd1e26c48a62a950d7}{y}}\};
+311         \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1geom_1_1_basic_triangulator_1_1_point_ac04a7b88ef5fa9160ca9f146e9585791}\label{classorg_1_1newdawn_1_1slick_1_1geom_1_1_basic_triangulator_1_1_point_ac04a7b88ef5fa9160ca9f146e9585791}} 
+\index{org\+::newdawn\+::slick\+::geom\+::\+Basic\+Triangulator\+::\+Point@{org\+::newdawn\+::slick\+::geom\+::\+Basic\+Triangulator\+::\+Point}!equals@{equals}}
+\index{equals@{equals}!org\+::newdawn\+::slick\+::geom\+::\+Basic\+Triangulator\+::\+Point@{org\+::newdawn\+::slick\+::geom\+::\+Basic\+Triangulator\+::\+Point}}
+\subsubsection{\texorpdfstring{equals()}{equals()}}
+{\footnotesize\ttfamily boolean org.\+newdawn.\+slick.\+geom.\+Basic\+Triangulator.\+Point.\+equals (\begin{DoxyParamCaption}\item[{Object}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxySeeAlso}{See also}
+java.\+lang.\+Object\+::equals(java.\+lang.\+Object) 
+\end{DoxySeeAlso}
+
+\begin{DoxyCode}
+350                                             \{
+351             \textcolor{keywordflow}{if} (other instanceof \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_basic_triangulator_1_1_point_aece21dc99059c02dceef8a70eb47d4cc}{Point}}) \{
+352                 \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_basic_triangulator_1_1_point_aece21dc99059c02dceef8a70eb47d4cc}{Point}} p = (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_basic_triangulator_1_1_point_aece21dc99059c02dceef8a70eb47d4cc}{Point}}) other;
+353                 \textcolor{keywordflow}{return} (p.x == \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_basic_triangulator_1_1_point_a430d2074970ce9d8248e998f45e0deac}{x}}) && (p.y == \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_basic_triangulator_1_1_point_aad601993c7f613bd1e26c48a62a950d7}{y}});
+354             \}
+355             
+356             \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+357         \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1geom_1_1_basic_triangulator_1_1_point_aeaef6b66057505fbb785e9e0bee90c25}\label{classorg_1_1newdawn_1_1slick_1_1geom_1_1_basic_triangulator_1_1_point_aeaef6b66057505fbb785e9e0bee90c25}} 
+\index{org\+::newdawn\+::slick\+::geom\+::\+Basic\+Triangulator\+::\+Point@{org\+::newdawn\+::slick\+::geom\+::\+Basic\+Triangulator\+::\+Point}!getX@{getX}}
+\index{getX@{getX}!org\+::newdawn\+::slick\+::geom\+::\+Basic\+Triangulator\+::\+Point@{org\+::newdawn\+::slick\+::geom\+::\+Basic\+Triangulator\+::\+Point}}
+\subsubsection{\texorpdfstring{get\+X()}{getX()}}
+{\footnotesize\ttfamily float org.\+newdawn.\+slick.\+geom.\+Basic\+Triangulator.\+Point.\+getX (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get the x coordinate of the point
+
+\begin{DoxyReturn}{Returns}
+The x coordinate of the point 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+318                             \{
+319             \textcolor{keywordflow}{return} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_basic_triangulator_1_1_point_a430d2074970ce9d8248e998f45e0deac}{x}};
+320         \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1geom_1_1_basic_triangulator_1_1_point_a489a862ca5103c6ba00bcf5f9f1a1507}\label{classorg_1_1newdawn_1_1slick_1_1geom_1_1_basic_triangulator_1_1_point_a489a862ca5103c6ba00bcf5f9f1a1507}} 
+\index{org\+::newdawn\+::slick\+::geom\+::\+Basic\+Triangulator\+::\+Point@{org\+::newdawn\+::slick\+::geom\+::\+Basic\+Triangulator\+::\+Point}!getY@{getY}}
+\index{getY@{getY}!org\+::newdawn\+::slick\+::geom\+::\+Basic\+Triangulator\+::\+Point@{org\+::newdawn\+::slick\+::geom\+::\+Basic\+Triangulator\+::\+Point}}
+\subsubsection{\texorpdfstring{get\+Y()}{getY()}}
+{\footnotesize\ttfamily float org.\+newdawn.\+slick.\+geom.\+Basic\+Triangulator.\+Point.\+getY (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get the y coordinate of the point
+
+\begin{DoxyReturn}{Returns}
+The y coordinate of the point 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+327                             \{
+328             \textcolor{keywordflow}{return} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_basic_triangulator_1_1_point_aad601993c7f613bd1e26c48a62a950d7}{y}};
+329         \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1geom_1_1_basic_triangulator_1_1_point_a5c488f1e1930c32836c688375616450a}\label{classorg_1_1newdawn_1_1slick_1_1geom_1_1_basic_triangulator_1_1_point_a5c488f1e1930c32836c688375616450a}} 
+\index{org\+::newdawn\+::slick\+::geom\+::\+Basic\+Triangulator\+::\+Point@{org\+::newdawn\+::slick\+::geom\+::\+Basic\+Triangulator\+::\+Point}!hash\+Code@{hash\+Code}}
+\index{hash\+Code@{hash\+Code}!org\+::newdawn\+::slick\+::geom\+::\+Basic\+Triangulator\+::\+Point@{org\+::newdawn\+::slick\+::geom\+::\+Basic\+Triangulator\+::\+Point}}
+\subsubsection{\texorpdfstring{hash\+Code()}{hashCode()}}
+{\footnotesize\ttfamily int org.\+newdawn.\+slick.\+geom.\+Basic\+Triangulator.\+Point.\+hash\+Code (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxySeeAlso}{See also}
+java.\+lang.\+Object\+::hash\+Code() 
+\end{DoxySeeAlso}
+
+\begin{DoxyCode}
+343                               \{
+344             \textcolor{keywordflow}{return} (\textcolor{keywordtype}{int}) (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_basic_triangulator_1_1_point_a430d2074970ce9d8248e998f45e0deac}{x}} * \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_basic_triangulator_1_1_point_aad601993c7f613bd1e26c48a62a950d7}{y}} * 31);
+345         \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1geom_1_1_basic_triangulator_1_1_point_acb4b7fb3bab66540d7cad1c662415c56}\label{classorg_1_1newdawn_1_1slick_1_1geom_1_1_basic_triangulator_1_1_point_acb4b7fb3bab66540d7cad1c662415c56}} 
+\index{org\+::newdawn\+::slick\+::geom\+::\+Basic\+Triangulator\+::\+Point@{org\+::newdawn\+::slick\+::geom\+::\+Basic\+Triangulator\+::\+Point}!to\+Array@{to\+Array}}
+\index{to\+Array@{to\+Array}!org\+::newdawn\+::slick\+::geom\+::\+Basic\+Triangulator\+::\+Point@{org\+::newdawn\+::slick\+::geom\+::\+Basic\+Triangulator\+::\+Point}}
+\subsubsection{\texorpdfstring{to\+Array()}{toArray()}}
+{\footnotesize\ttfamily float \mbox{[}$\,$\mbox{]} org.\+newdawn.\+slick.\+geom.\+Basic\+Triangulator.\+Point.\+to\+Array (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Convert this point into a float array
+
+\begin{DoxyReturn}{Returns}
+The contents of this point as a float array 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+336                                  \{
+337             \textcolor{keywordflow}{return} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_basic_triangulator_1_1_point_a029a72bfc3c624500744d9650e06aa77}{array}};
+338         \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1geom_1_1_basic_triangulator_1_1_point_a029a72bfc3c624500744d9650e06aa77}\label{classorg_1_1newdawn_1_1slick_1_1geom_1_1_basic_triangulator_1_1_point_a029a72bfc3c624500744d9650e06aa77}} 
+\index{org\+::newdawn\+::slick\+::geom\+::\+Basic\+Triangulator\+::\+Point@{org\+::newdawn\+::slick\+::geom\+::\+Basic\+Triangulator\+::\+Point}!array@{array}}
+\index{array@{array}!org\+::newdawn\+::slick\+::geom\+::\+Basic\+Triangulator\+::\+Point@{org\+::newdawn\+::slick\+::geom\+::\+Basic\+Triangulator\+::\+Point}}
+\subsubsection{\texorpdfstring{array}{array}}
+{\footnotesize\ttfamily float \mbox{[}$\,$\mbox{]} org.\+newdawn.\+slick.\+geom.\+Basic\+Triangulator.\+Point.\+array\hspace{0.3cm}{\ttfamily [private]}}
+
+The points in an array \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1geom_1_1_basic_triangulator_1_1_point_a430d2074970ce9d8248e998f45e0deac}\label{classorg_1_1newdawn_1_1slick_1_1geom_1_1_basic_triangulator_1_1_point_a430d2074970ce9d8248e998f45e0deac}} 
+\index{org\+::newdawn\+::slick\+::geom\+::\+Basic\+Triangulator\+::\+Point@{org\+::newdawn\+::slick\+::geom\+::\+Basic\+Triangulator\+::\+Point}!x@{x}}
+\index{x@{x}!org\+::newdawn\+::slick\+::geom\+::\+Basic\+Triangulator\+::\+Point@{org\+::newdawn\+::slick\+::geom\+::\+Basic\+Triangulator\+::\+Point}}
+\subsubsection{\texorpdfstring{x}{x}}
+{\footnotesize\ttfamily float org.\+newdawn.\+slick.\+geom.\+Basic\+Triangulator.\+Point.\+x\hspace{0.3cm}{\ttfamily [private]}}
+
+The x coorindate of this point \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1geom_1_1_basic_triangulator_1_1_point_aad601993c7f613bd1e26c48a62a950d7}\label{classorg_1_1newdawn_1_1slick_1_1geom_1_1_basic_triangulator_1_1_point_aad601993c7f613bd1e26c48a62a950d7}} 
+\index{org\+::newdawn\+::slick\+::geom\+::\+Basic\+Triangulator\+::\+Point@{org\+::newdawn\+::slick\+::geom\+::\+Basic\+Triangulator\+::\+Point}!y@{y}}
+\index{y@{y}!org\+::newdawn\+::slick\+::geom\+::\+Basic\+Triangulator\+::\+Point@{org\+::newdawn\+::slick\+::geom\+::\+Basic\+Triangulator\+::\+Point}}
+\subsubsection{\texorpdfstring{y}{y}}
+{\footnotesize\ttfamily float org.\+newdawn.\+slick.\+geom.\+Basic\+Triangulator.\+Point.\+y\hspace{0.3cm}{\ttfamily [private]}}
+
+The y coorindate of this point 

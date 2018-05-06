@@ -1,0 +1,793 @@
+\hypertarget{classorg_1_1newdawn_1_1slick_1_1_music}{}\section{org.\+newdawn.\+slick.\+Music Class Reference}
+\label{classorg_1_1newdawn_1_1slick_1_1_music}\index{org.\+newdawn.\+slick.\+Music@{org.\+newdawn.\+slick.\+Music}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_music_a6a8d9426a6c0070efcd19ba03d218a89}{Music}} (String ref)  throws Slick\+Exception 
+\item 
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_music_a53829cfbe22f4a70e1cec04763ef9503}{Music}} (U\+RL ref)  throws Slick\+Exception 
+\item 
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_music_ab50cfd31e4ecf9c4da88bfd1294cfd12}{Music}} (Input\+Stream in, String ref)  throws Slick\+Exception 
+\item 
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_music_acc662b7dce73c0103286797e1446fe46}{Music}} (U\+RL url, boolean streaming\+Hint)  throws Slick\+Exception 
+\item 
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_music_a726446e0ec108da9d7e93db9a2738439}{Music}} (String ref, boolean streaming\+Hint)  throws Slick\+Exception 
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_music_a86c7f8a44c5d7a7f3226a1211b7d2b65}{add\+Listener}} (\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1_music_listener}{Music\+Listener}} listener)
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_music_a30daef9a8ca722cd5adc80252e332c47}{remove\+Listener}} (\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1_music_listener}{Music\+Listener}} listener)
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_music_aadc35375936c47d7a0e40cd1d719d070}{loop}} ()
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_music_a605a881eef7e5a4cca79cdeec7234fd0}{play}} ()
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_music_ac9d025e830a97f7a14a08fe5b3342324}{play}} (float pitch, float \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_music_a2fa10b80767b1a05925e1dc89a088e90}{volume}})
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_music_a7271654211e5d63c0a50b8ed7605a3a5}{loop}} (float pitch, float \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_music_a2fa10b80767b1a05925e1dc89a088e90}{volume}})
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_music_a1161bc6fe6a0ba7ab6284758b0a8306d}{pause}} ()
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_music_a2094f4ed0c3ed404540cebddc6f266d4}{stop}} ()
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_music_ac5a48d3b0d207d3740220190f4384033}{resume}} ()
+\item 
+boolean \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_music_a20709d497ca9027d874f7ffe970ce738}{playing}} ()
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_music_ac80cc7fda5ba80437bf1ea6efdc3f1a7}{set\+Volume}} (float \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_music_a2fa10b80767b1a05925e1dc89a088e90}{volume}})
+\item 
+float \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_music_a834f88da09d93163e857587c4e2908f6}{get\+Volume}} ()
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_music_afe49947375cd732f2944cfb5d0ea6a47}{fade}} (int duration, float end\+Volume, boolean \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_music_af40d098a3f18a0235d9daab0844edf7a}{stop\+After\+Fade}})
+\item 
+boolean \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_music_add55814269790879af02e9ce4309f26d}{set\+Position}} (float position)
+\item 
+float \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_music_ae565f77bca4ad79f367d6abd90488b26}{get\+Position}} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_music_af4cdd167509843b9afe9afecbc591217}{poll}} (int delta)
+\end{DoxyCompactItemize}
+\subsection*{Package Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_music_a93a114f3bdb3751b6df3650e5993cf13}{update}} (int delta)
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_music_af35afdd15c12852bb797b5661e7f46b6}{fire\+Music\+Ended}} ()
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_music_af4a8c635af98f064cc069383e64eed66}{fire\+Music\+Swapped}} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_music}{Music}} new\+Music)
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_music_afe4ced4d5134a3bfea291254e6fd2934}{start\+Music}} (float pitch, float \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_music_a2fa10b80767b1a05925e1dc89a088e90}{volume}}, boolean \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_music_aadc35375936c47d7a0e40cd1d719d070}{loop}})
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1openal_1_1_audio}{Audio}} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_music_a17daed326f24bf361ff8677c33f06b2f}{sound}}
+\item 
+boolean \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_music_aa81bfb24e3203b254c58425195ab17b7}{playing}}
+\item 
+Array\+List \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_music_ad57b22ce1f989d377f00f3c804a41db4}{listeners}} = new Array\+List()
+\item 
+float \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_music_a2fa10b80767b1a05925e1dc89a088e90}{volume}} = 1.\+0f
+\item 
+float \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_music_adae9aee08679631db780fea46d48735d}{fade\+Start\+Gain}}
+\item 
+float \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_music_a12c7133766d347ffbcf8d6e506165251}{fade\+End\+Gain}}
+\item 
+int \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_music_a83dfc85ef4588e511d667c78e882f3f3}{fade\+Time}}
+\item 
+int \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_music_adf35608195f978bed903af885397dd75}{fade\+Duration}}
+\item 
+boolean \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_music_af40d098a3f18a0235d9daab0844edf7a}{stop\+After\+Fade}}
+\item 
+boolean \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_music_a5b37d26c143b07b08eac2b3d79f940b9}{positioning}}
+\item 
+float \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_music_ac983016dac747c325214ae019b79d0f0}{required\+Position}} = -\/1
+\end{DoxyCompactItemize}
+\subsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_music}{Music}} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_music_a74d1b5592170c007631f4d3b7789dbbf}{current\+Music}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A piece of music loaded and playable within the game. Only one piece of music can play at any given time and a channel is reserved so music will always play.
+
+\begin{DoxyAuthor}{Author}
+kevin 
+
+Nathan Sweet \href{mailto:misc@n4te.com}{\tt misc@n4te.\+com} 
+\end{DoxyAuthor}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1_music_a6a8d9426a6c0070efcd19ba03d218a89}\label{classorg_1_1newdawn_1_1slick_1_1_music_a6a8d9426a6c0070efcd19ba03d218a89}} 
+\index{org\+::newdawn\+::slick\+::\+Music@{org\+::newdawn\+::slick\+::\+Music}!Music@{Music}}
+\index{Music@{Music}!org\+::newdawn\+::slick\+::\+Music@{org\+::newdawn\+::slick\+::\+Music}}
+\subsubsection{\texorpdfstring{Music()}{Music()}\hspace{0.1cm}{\footnotesize\ttfamily [1/5]}}
+{\footnotesize\ttfamily org.\+newdawn.\+slick.\+Music.\+Music (\begin{DoxyParamCaption}\item[{String}]{ref }\end{DoxyParamCaption}) throws \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_slick_exception}{Slick\+Exception}}\hspace{0.3cm}{\ttfamily [inline]}}
+
+Create and load a piece of music (either O\+GG or M\+O\+D/\+XM)
+
+
+\begin{DoxyParams}{Parameters}
+{\em ref} & The location of the music \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_slick_exception}{Slick\+Exception}}} & \\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyCode}
+74                                                    \{
+75         \textcolor{keyword}{this}(ref, \textcolor{keyword}{false});
+76     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1_music_a53829cfbe22f4a70e1cec04763ef9503}\label{classorg_1_1newdawn_1_1slick_1_1_music_a53829cfbe22f4a70e1cec04763ef9503}} 
+\index{org\+::newdawn\+::slick\+::\+Music@{org\+::newdawn\+::slick\+::\+Music}!Music@{Music}}
+\index{Music@{Music}!org\+::newdawn\+::slick\+::\+Music@{org\+::newdawn\+::slick\+::\+Music}}
+\subsubsection{\texorpdfstring{Music()}{Music()}\hspace{0.1cm}{\footnotesize\ttfamily [2/5]}}
+{\footnotesize\ttfamily org.\+newdawn.\+slick.\+Music.\+Music (\begin{DoxyParamCaption}\item[{U\+RL}]{ref }\end{DoxyParamCaption}) throws \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_slick_exception}{Slick\+Exception}}\hspace{0.3cm}{\ttfamily [inline]}}
+
+Create and load a piece of music (either O\+GG or M\+O\+D/\+XM)
+
+
+\begin{DoxyParams}{Parameters}
+{\em ref} & The location of the music \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_slick_exception}{Slick\+Exception}}} & \\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyCode}
+84                                                 \{
+85         \textcolor{keyword}{this}(ref, \textcolor{keyword}{false});
+86     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1_music_ab50cfd31e4ecf9c4da88bfd1294cfd12}\label{classorg_1_1newdawn_1_1slick_1_1_music_ab50cfd31e4ecf9c4da88bfd1294cfd12}} 
+\index{org\+::newdawn\+::slick\+::\+Music@{org\+::newdawn\+::slick\+::\+Music}!Music@{Music}}
+\index{Music@{Music}!org\+::newdawn\+::slick\+::\+Music@{org\+::newdawn\+::slick\+::\+Music}}
+\subsubsection{\texorpdfstring{Music()}{Music()}\hspace{0.1cm}{\footnotesize\ttfamily [3/5]}}
+{\footnotesize\ttfamily org.\+newdawn.\+slick.\+Music.\+Music (\begin{DoxyParamCaption}\item[{Input\+Stream}]{in,  }\item[{String}]{ref }\end{DoxyParamCaption}) throws \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_slick_exception}{Slick\+Exception}}\hspace{0.3cm}{\ttfamily [inline]}}
+
+Create and load a piece of music (either O\+GG or M\+O\+D/\+XM) 
+\begin{DoxyParams}{Parameters}
+{\em in} & The stream to read the music from \\
+\hline
+{\em ref} & The symbolic name of this music \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_slick_exception}{Slick\+Exception}}} & Indicates a failure to read the music from the stream \\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyCode}
+94                                                                    \{
+95         SoundStore.get().init();
+96         
+97         \textcolor{keywordflow}{try} \{
+98             \textcolor{keywordflow}{if} (ref.toLowerCase().endsWith(\textcolor{stringliteral}{".ogg"})) \{
+99                 \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_music_a17daed326f24bf361ff8677c33f06b2f}{sound}} = SoundStore.get().getOgg(in);
+100             \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (ref.toLowerCase().endsWith(\textcolor{stringliteral}{".wav"})) \{
+101                 \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_music_a17daed326f24bf361ff8677c33f06b2f}{sound}} = SoundStore.get().getWAV(in);
+102             \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (ref.toLowerCase().endsWith(\textcolor{stringliteral}{".xm"}) || ref.toLowerCase().endsWith(\textcolor{stringliteral}{".mod"})) \{
+103                 \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_music_a17daed326f24bf361ff8677c33f06b2f}{sound}} = SoundStore.get().getMOD(in);
+104             \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (ref.toLowerCase().endsWith(\textcolor{stringliteral}{".aif"}) || ref.toLowerCase().endsWith(\textcolor{stringliteral}{".aiff"})) \{
+105                 \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_music_a17daed326f24bf361ff8677c33f06b2f}{sound}} = SoundStore.get().getAIF(in);
+106             \} \textcolor{keywordflow}{else} \{
+107                 \textcolor{keywordflow}{throw} \textcolor{keyword}{new} SlickException(\textcolor{stringliteral}{"Only .xm, .mod, .ogg, and .aif/f are currently supported."});
+108             \}
+109         \} \textcolor{keywordflow}{catch} (Exception e) \{
+110             Log.error(e);
+111             \textcolor{keywordflow}{throw} \textcolor{keyword}{new} SlickException(\textcolor{stringliteral}{"Failed to load music: "}+ref);
+112         \}
+113     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1_music_acc662b7dce73c0103286797e1446fe46}\label{classorg_1_1newdawn_1_1slick_1_1_music_acc662b7dce73c0103286797e1446fe46}} 
+\index{org\+::newdawn\+::slick\+::\+Music@{org\+::newdawn\+::slick\+::\+Music}!Music@{Music}}
+\index{Music@{Music}!org\+::newdawn\+::slick\+::\+Music@{org\+::newdawn\+::slick\+::\+Music}}
+\subsubsection{\texorpdfstring{Music()}{Music()}\hspace{0.1cm}{\footnotesize\ttfamily [4/5]}}
+{\footnotesize\ttfamily org.\+newdawn.\+slick.\+Music.\+Music (\begin{DoxyParamCaption}\item[{U\+RL}]{url,  }\item[{boolean}]{streaming\+Hint }\end{DoxyParamCaption}) throws \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_slick_exception}{Slick\+Exception}}\hspace{0.3cm}{\ttfamily [inline]}}
+
+Create and load a piece of music (either O\+GG or M\+O\+D/\+XM)
+
+
+\begin{DoxyParams}{Parameters}
+{\em url} & The location of the music \\
+\hline
+{\em streaming\+Hint} & A hint to indicate whether streaming should be used if possible \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_slick_exception}{Slick\+Exception}}} & \\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyCode}
+122                                                                        \{
+123         SoundStore.get().init();
+124         String ref = url.getFile();
+125         
+126         \textcolor{keywordflow}{try} \{
+127             \textcolor{keywordflow}{if} (ref.toLowerCase().endsWith(\textcolor{stringliteral}{".ogg"})) \{
+128                 \textcolor{keywordflow}{if} (streamingHint) \{
+129                     \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_music_a17daed326f24bf361ff8677c33f06b2f}{sound}} = SoundStore.get().getOggStream(url);
+130                 \} \textcolor{keywordflow}{else} \{
+131                     \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_music_a17daed326f24bf361ff8677c33f06b2f}{sound}} = SoundStore.get().getOgg(url.openStream());
+132                 \}
+133             \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (ref.toLowerCase().endsWith(\textcolor{stringliteral}{".wav"})) \{
+134                 \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_music_a17daed326f24bf361ff8677c33f06b2f}{sound}} = SoundStore.get().getWAV(url.openStream());
+135             \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (ref.toLowerCase().endsWith(\textcolor{stringliteral}{".xm"}) || ref.toLowerCase().endsWith(\textcolor{stringliteral}{".mod"})) \{
+136                 \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_music_a17daed326f24bf361ff8677c33f06b2f}{sound}} = SoundStore.get().getMOD(url.openStream());
+137             \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (ref.toLowerCase().endsWith(\textcolor{stringliteral}{".aif"}) || ref.toLowerCase().endsWith(\textcolor{stringliteral}{".aiff"})) \{
+138                 \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_music_a17daed326f24bf361ff8677c33f06b2f}{sound}} = SoundStore.get().getAIF(url.openStream());
+139             \} \textcolor{keywordflow}{else} \{
+140                 \textcolor{keywordflow}{throw} \textcolor{keyword}{new} SlickException(\textcolor{stringliteral}{"Only .xm, .mod, .ogg, and .aif/f are currently supported."});
+141             \}
+142         \} \textcolor{keywordflow}{catch} (Exception e) \{
+143             Log.error(e);
+144             \textcolor{keywordflow}{throw} \textcolor{keyword}{new} SlickException(\textcolor{stringliteral}{"Failed to load sound: "}+url);
+145         \}
+146     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1_music_a726446e0ec108da9d7e93db9a2738439}\label{classorg_1_1newdawn_1_1slick_1_1_music_a726446e0ec108da9d7e93db9a2738439}} 
+\index{org\+::newdawn\+::slick\+::\+Music@{org\+::newdawn\+::slick\+::\+Music}!Music@{Music}}
+\index{Music@{Music}!org\+::newdawn\+::slick\+::\+Music@{org\+::newdawn\+::slick\+::\+Music}}
+\subsubsection{\texorpdfstring{Music()}{Music()}\hspace{0.1cm}{\footnotesize\ttfamily [5/5]}}
+{\footnotesize\ttfamily org.\+newdawn.\+slick.\+Music.\+Music (\begin{DoxyParamCaption}\item[{String}]{ref,  }\item[{boolean}]{streaming\+Hint }\end{DoxyParamCaption}) throws \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_slick_exception}{Slick\+Exception}}\hspace{0.3cm}{\ttfamily [inline]}}
+
+Create and load a piece of music (either O\+GG or M\+O\+D/\+XM)
+
+
+\begin{DoxyParams}{Parameters}
+{\em ref} & The location of the music \\
+\hline
+{\em streaming\+Hint} & A hint to indicate whether streaming should be used if possible \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_slick_exception}{Slick\+Exception}}} & \\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyCode}
+155                                                                           \{
+156         SoundStore.get().init();
+157         
+158         \textcolor{keywordflow}{try} \{
+159             \textcolor{keywordflow}{if} (ref.toLowerCase().endsWith(\textcolor{stringliteral}{".ogg"})) \{
+160                 \textcolor{keywordflow}{if} (streamingHint) \{
+161                     \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_music_a17daed326f24bf361ff8677c33f06b2f}{sound}} = SoundStore.get().getOggStream(ref);
+162                 \} \textcolor{keywordflow}{else} \{
+163                     \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_music_a17daed326f24bf361ff8677c33f06b2f}{sound}} = SoundStore.get().getOgg(ref);
+164                 \}
+165             \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (ref.toLowerCase().endsWith(\textcolor{stringliteral}{".wav"})) \{
+166                 \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_music_a17daed326f24bf361ff8677c33f06b2f}{sound}} = SoundStore.get().getWAV(ref);
+167             \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (ref.toLowerCase().endsWith(\textcolor{stringliteral}{".xm"}) || ref.toLowerCase().endsWith(\textcolor{stringliteral}{".mod"})) \{
+168                 \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_music_a17daed326f24bf361ff8677c33f06b2f}{sound}} = SoundStore.get().getMOD(ref);
+169             \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (ref.toLowerCase().endsWith(\textcolor{stringliteral}{".aif"}) || ref.toLowerCase().endsWith(\textcolor{stringliteral}{".aiff"})) \{
+170                 \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_music_a17daed326f24bf361ff8677c33f06b2f}{sound}} = SoundStore.get().getAIF(ref);
+171             \} \textcolor{keywordflow}{else} \{
+172                 \textcolor{keywordflow}{throw} \textcolor{keyword}{new} SlickException(\textcolor{stringliteral}{"Only .xm, .mod, .ogg, and .aif/f are currently supported."});
+173             \}
+174         \} \textcolor{keywordflow}{catch} (Exception e) \{
+175             Log.error(e);
+176             \textcolor{keywordflow}{throw} \textcolor{keyword}{new} SlickException(\textcolor{stringliteral}{"Failed to load sound: "}+ref);
+177         \}
+178     \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1_music_a86c7f8a44c5d7a7f3226a1211b7d2b65}\label{classorg_1_1newdawn_1_1slick_1_1_music_a86c7f8a44c5d7a7f3226a1211b7d2b65}} 
+\index{org\+::newdawn\+::slick\+::\+Music@{org\+::newdawn\+::slick\+::\+Music}!add\+Listener@{add\+Listener}}
+\index{add\+Listener@{add\+Listener}!org\+::newdawn\+::slick\+::\+Music@{org\+::newdawn\+::slick\+::\+Music}}
+\subsubsection{\texorpdfstring{add\+Listener()}{addListener()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+Music.\+add\+Listener (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1_music_listener}{Music\+Listener}}}]{listener }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Add a listener to this music
+
+
+\begin{DoxyParams}{Parameters}
+{\em listener} & The listener to add \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+185                                                     \{
+186         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_music_ad57b22ce1f989d377f00f3c804a41db4}{listeners}}.add(listener);
+187     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1_music_afe49947375cd732f2944cfb5d0ea6a47}\label{classorg_1_1newdawn_1_1slick_1_1_music_afe49947375cd732f2944cfb5d0ea6a47}} 
+\index{org\+::newdawn\+::slick\+::\+Music@{org\+::newdawn\+::slick\+::\+Music}!fade@{fade}}
+\index{fade@{fade}!org\+::newdawn\+::slick\+::\+Music@{org\+::newdawn\+::slick\+::\+Music}}
+\subsubsection{\texorpdfstring{fade()}{fade()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+Music.\+fade (\begin{DoxyParamCaption}\item[{int}]{duration,  }\item[{float}]{end\+Volume,  }\item[{boolean}]{stop\+After\+Fade }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Fade this music to the volume specified
+
+
+\begin{DoxyParams}{Parameters}
+{\em duration} & Fade time in milliseconds. \\
+\hline
+{\em end\+Volume} & The target volume \\
+\hline
+{\em stop\+After\+Fade} & True if music should be stopped after fading in/out \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+346                                                                             \{
+347         this.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_music_af40d098a3f18a0235d9daab0844edf7a}{stopAfterFade}} = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_music_af40d098a3f18a0235d9daab0844edf7a}{stopAfterFade}};
+348         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_music_adae9aee08679631db780fea46d48735d}{fadeStartGain}} = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_music_a2fa10b80767b1a05925e1dc89a088e90}{volume}};
+349         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_music_a12c7133766d347ffbcf8d6e506165251}{fadeEndGain}} = endVolume;
+350         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_music_adf35608195f978bed903af885397dd75}{fadeDuration}} = duration;
+351         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_music_a83dfc85ef4588e511d667c78e882f3f3}{fadeTime}} = duration;
+352     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1_music_af35afdd15c12852bb797b5661e7f46b6}\label{classorg_1_1newdawn_1_1slick_1_1_music_af35afdd15c12852bb797b5661e7f46b6}} 
+\index{org\+::newdawn\+::slick\+::\+Music@{org\+::newdawn\+::slick\+::\+Music}!fire\+Music\+Ended@{fire\+Music\+Ended}}
+\index{fire\+Music\+Ended@{fire\+Music\+Ended}!org\+::newdawn\+::slick\+::\+Music@{org\+::newdawn\+::slick\+::\+Music}}
+\subsubsection{\texorpdfstring{fire\+Music\+Ended()}{fireMusicEnded()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+Music.\+fire\+Music\+Ended (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+Fire notifications that this music ended 
+\begin{DoxyCode}
+201                                   \{
+202         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_music_a20709d497ca9027d874f7ffe970ce738}{playing}} = \textcolor{keyword}{false};
+203         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i=0;i<\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_music_ad57b22ce1f989d377f00f3c804a41db4}{listeners}}.size();i++) \{
+204             ((MusicListener) \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_music_ad57b22ce1f989d377f00f3c804a41db4}{listeners}}.get(i)).musicEnded(\textcolor{keyword}{this});
+205         \}
+206     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1_music_af4a8c635af98f064cc069383e64eed66}\label{classorg_1_1newdawn_1_1slick_1_1_music_af4a8c635af98f064cc069383e64eed66}} 
+\index{org\+::newdawn\+::slick\+::\+Music@{org\+::newdawn\+::slick\+::\+Music}!fire\+Music\+Swapped@{fire\+Music\+Swapped}}
+\index{fire\+Music\+Swapped@{fire\+Music\+Swapped}!org\+::newdawn\+::slick\+::\+Music@{org\+::newdawn\+::slick\+::\+Music}}
+\subsubsection{\texorpdfstring{fire\+Music\+Swapped()}{fireMusicSwapped()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+Music.\+fire\+Music\+Swapped (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_music}{Music}}}]{new\+Music }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+Fire notifications that this music was swapped out
+
+
+\begin{DoxyParams}{Parameters}
+{\em new\+Music} & The new music that will be played \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+213                                                   \{
+214         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_music_a20709d497ca9027d874f7ffe970ce738}{playing}} = \textcolor{keyword}{false};
+215         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i=0;i<\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_music_ad57b22ce1f989d377f00f3c804a41db4}{listeners}}.size();i++) \{
+216             ((MusicListener) \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_music_ad57b22ce1f989d377f00f3c804a41db4}{listeners}}.get(i)).musicSwapped(\textcolor{keyword}{this}, newMusic);
+217         \}
+218     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1_music_ae565f77bca4ad79f367d6abd90488b26}\label{classorg_1_1newdawn_1_1slick_1_1_music_ae565f77bca4ad79f367d6abd90488b26}} 
+\index{org\+::newdawn\+::slick\+::\+Music@{org\+::newdawn\+::slick\+::\+Music}!get\+Position@{get\+Position}}
+\index{get\+Position@{get\+Position}!org\+::newdawn\+::slick\+::\+Music@{org\+::newdawn\+::slick\+::\+Music}}
+\subsubsection{\texorpdfstring{get\+Position()}{getPosition()}}
+{\footnotesize\ttfamily float org.\+newdawn.\+slick.\+Music.\+get\+Position (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+The position into the sound thats being played
+
+\begin{DoxyReturn}{Returns}
+The current position in seconds. 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+409                                 \{
+410         \textcolor{keywordflow}{return} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_music_a17daed326f24bf361ff8677c33f06b2f}{sound}}.\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1openal_1_1_audio_aa838b5606c0aa5f23dd46ac5918bb717}{getPosition}}();
+411     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1_music_a834f88da09d93163e857587c4e2908f6}\label{classorg_1_1newdawn_1_1slick_1_1_music_a834f88da09d93163e857587c4e2908f6}} 
+\index{org\+::newdawn\+::slick\+::\+Music@{org\+::newdawn\+::slick\+::\+Music}!get\+Volume@{get\+Volume}}
+\index{get\+Volume@{get\+Volume}!org\+::newdawn\+::slick\+::\+Music@{org\+::newdawn\+::slick\+::\+Music}}
+\subsubsection{\texorpdfstring{get\+Volume()}{getVolume()}}
+{\footnotesize\ttfamily float org.\+newdawn.\+slick.\+Music.\+get\+Volume (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get the individual volume of the music \begin{DoxyReturn}{Returns}
+The volume of this music, still effected by global Sound\+Store volume. 0 -\/ 1, 1 is Max 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+335                              \{
+336         \textcolor{keywordflow}{return} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_music_a2fa10b80767b1a05925e1dc89a088e90}{volume}};
+337     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1_music_aadc35375936c47d7a0e40cd1d719d070}\label{classorg_1_1newdawn_1_1slick_1_1_music_aadc35375936c47d7a0e40cd1d719d070}} 
+\index{org\+::newdawn\+::slick\+::\+Music@{org\+::newdawn\+::slick\+::\+Music}!loop@{loop}}
+\index{loop@{loop}!org\+::newdawn\+::slick\+::\+Music@{org\+::newdawn\+::slick\+::\+Music}}
+\subsubsection{\texorpdfstring{loop()}{loop()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+Music.\+loop (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Loop the music 
+\begin{DoxyCode}
+222                        \{
+223         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_music_aadc35375936c47d7a0e40cd1d719d070}{loop}}(1.0f, 1.0f); 
+224     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1_music_a7271654211e5d63c0a50b8ed7605a3a5}\label{classorg_1_1newdawn_1_1slick_1_1_music_a7271654211e5d63c0a50b8ed7605a3a5}} 
+\index{org\+::newdawn\+::slick\+::\+Music@{org\+::newdawn\+::slick\+::\+Music}!loop@{loop}}
+\index{loop@{loop}!org\+::newdawn\+::slick\+::\+Music@{org\+::newdawn\+::slick\+::\+Music}}
+\subsubsection{\texorpdfstring{loop()}{loop()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+Music.\+loop (\begin{DoxyParamCaption}\item[{float}]{pitch,  }\item[{float}]{volume }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Loop the music at a given pitch and volume
+
+
+\begin{DoxyParams}{Parameters}
+{\em pitch} & The pitch to play the music at (1.\+0 = default) \\
+\hline
+{\em volume} & The volume to play the music at (1.\+0 = default) \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+249                                                 \{
+250         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_music_afe4ced4d5134a3bfea291254e6fd2934}{startMusic}}(pitch, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_music_a2fa10b80767b1a05925e1dc89a088e90}{volume}}, \textcolor{keyword}{true});
+251     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1_music_a1161bc6fe6a0ba7ab6284758b0a8306d}\label{classorg_1_1newdawn_1_1slick_1_1_music_a1161bc6fe6a0ba7ab6284758b0a8306d}} 
+\index{org\+::newdawn\+::slick\+::\+Music@{org\+::newdawn\+::slick\+::\+Music}!pause@{pause}}
+\index{pause@{pause}!org\+::newdawn\+::slick\+::\+Music@{org\+::newdawn\+::slick\+::\+Music}}
+\subsubsection{\texorpdfstring{pause()}{pause()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+Music.\+pause (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Pause the music playback 
+\begin{DoxyCode}
+282                         \{
+283         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_music_a20709d497ca9027d874f7ffe970ce738}{playing}} = \textcolor{keyword}{false};
+284         AudioImpl.pauseMusic();
+285     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1_music_a605a881eef7e5a4cca79cdeec7234fd0}\label{classorg_1_1newdawn_1_1slick_1_1_music_a605a881eef7e5a4cca79cdeec7234fd0}} 
+\index{org\+::newdawn\+::slick\+::\+Music@{org\+::newdawn\+::slick\+::\+Music}!play@{play}}
+\index{play@{play}!org\+::newdawn\+::slick\+::\+Music@{org\+::newdawn\+::slick\+::\+Music}}
+\subsubsection{\texorpdfstring{play()}{play()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+Music.\+play (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Play the music 
+\begin{DoxyCode}
+229                        \{
+230         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_music_a605a881eef7e5a4cca79cdeec7234fd0}{play}}(1.0f, 1.0f); 
+231     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1_music_ac9d025e830a97f7a14a08fe5b3342324}\label{classorg_1_1newdawn_1_1slick_1_1_music_ac9d025e830a97f7a14a08fe5b3342324}} 
+\index{org\+::newdawn\+::slick\+::\+Music@{org\+::newdawn\+::slick\+::\+Music}!play@{play}}
+\index{play@{play}!org\+::newdawn\+::slick\+::\+Music@{org\+::newdawn\+::slick\+::\+Music}}
+\subsubsection{\texorpdfstring{play()}{play()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+Music.\+play (\begin{DoxyParamCaption}\item[{float}]{pitch,  }\item[{float}]{volume }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Play the music at a given pitch and volume
+
+
+\begin{DoxyParams}{Parameters}
+{\em pitch} & The pitch to play the music at (1.\+0 = default) \\
+\hline
+{\em volume} & The volume to play the music at (1.\+0 = default) \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+239                                                 \{
+240         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_music_afe4ced4d5134a3bfea291254e6fd2934}{startMusic}}(pitch, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_music_a2fa10b80767b1a05925e1dc89a088e90}{volume}}, \textcolor{keyword}{false});
+241     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1_music_a20709d497ca9027d874f7ffe970ce738}\label{classorg_1_1newdawn_1_1slick_1_1_music_a20709d497ca9027d874f7ffe970ce738}} 
+\index{org\+::newdawn\+::slick\+::\+Music@{org\+::newdawn\+::slick\+::\+Music}!playing@{playing}}
+\index{playing@{playing}!org\+::newdawn\+::slick\+::\+Music@{org\+::newdawn\+::slick\+::\+Music}}
+\subsubsection{\texorpdfstring{playing()}{playing()}}
+{\footnotesize\ttfamily boolean org.\+newdawn.\+slick.\+Music.\+playing (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Check if the music is being played
+
+\begin{DoxyReturn}{Returns}
+True if the music is being played 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+307                              \{
+308         \textcolor{keywordflow}{return} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_music_a74d1b5592170c007631f4d3b7789dbbf}{currentMusic}} == \textcolor{keyword}{this}) && (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_music_a20709d497ca9027d874f7ffe970ce738}{playing}});
+309     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1_music_af4cdd167509843b9afe9afecbc591217}\label{classorg_1_1newdawn_1_1slick_1_1_music_af4cdd167509843b9afe9afecbc591217}} 
+\index{org\+::newdawn\+::slick\+::\+Music@{org\+::newdawn\+::slick\+::\+Music}!poll@{poll}}
+\index{poll@{poll}!org\+::newdawn\+::slick\+::\+Music@{org\+::newdawn\+::slick\+::\+Music}}
+\subsubsection{\texorpdfstring{poll()}{poll()}}
+{\footnotesize\ttfamily static void org.\+newdawn.\+slick.\+Music.\+poll (\begin{DoxyParamCaption}\item[{int}]{delta }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Poll the state of the current music. This causes streaming music to stream and checks listeners. Note that if you\textquotesingle{}re using a game container this will be auto-\/magically called for you.
+
+
+\begin{DoxyParams}{Parameters}
+{\em delta} & The amount of time since last poll \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+30                                        \{
+31         \textcolor{keywordflow}{if} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_music_a74d1b5592170c007631f4d3b7789dbbf}{currentMusic}} != null) \{
+32             SoundStore.get().poll(delta);
+33             \textcolor{keywordflow}{if} (!SoundStore.get().isMusicPlaying()) \{
+34                 \textcolor{keywordflow}{if} (!\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_music_a74d1b5592170c007631f4d3b7789dbbf}{currentMusic}}.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_music_a5b37d26c143b07b08eac2b3d79f940b9}{positioning}}) \{
+35                     \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_music_a6a8d9426a6c0070efcd19ba03d218a89}{Music}} oldMusic = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_music_a74d1b5592170c007631f4d3b7789dbbf}{currentMusic}};
+36                     \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_music_a74d1b5592170c007631f4d3b7789dbbf}{currentMusic}} = null;
+37                     oldMusic.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_music_af35afdd15c12852bb797b5661e7f46b6}{fireMusicEnded}}();
+38                 \}
+39             \} \textcolor{keywordflow}{else} \{
+40                 \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_music_a74d1b5592170c007631f4d3b7789dbbf}{currentMusic}}.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_music_a93a114f3bdb3751b6df3650e5993cf13}{update}}(delta);
+41             \}
+42         \}
+43     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1_music_a30daef9a8ca722cd5adc80252e332c47}\label{classorg_1_1newdawn_1_1slick_1_1_music_a30daef9a8ca722cd5adc80252e332c47}} 
+\index{org\+::newdawn\+::slick\+::\+Music@{org\+::newdawn\+::slick\+::\+Music}!remove\+Listener@{remove\+Listener}}
+\index{remove\+Listener@{remove\+Listener}!org\+::newdawn\+::slick\+::\+Music@{org\+::newdawn\+::slick\+::\+Music}}
+\subsubsection{\texorpdfstring{remove\+Listener()}{removeListener()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+Music.\+remove\+Listener (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1_music_listener}{Music\+Listener}}}]{listener }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Remove a listener from this music
+
+
+\begin{DoxyParams}{Parameters}
+{\em listener} & The listener to remove \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+194                                                        \{
+195         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_music_ad57b22ce1f989d377f00f3c804a41db4}{listeners}}.remove(listener);
+196     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1_music_ac5a48d3b0d207d3740220190f4384033}\label{classorg_1_1newdawn_1_1slick_1_1_music_ac5a48d3b0d207d3740220190f4384033}} 
+\index{org\+::newdawn\+::slick\+::\+Music@{org\+::newdawn\+::slick\+::\+Music}!resume@{resume}}
+\index{resume@{resume}!org\+::newdawn\+::slick\+::\+Music@{org\+::newdawn\+::slick\+::\+Music}}
+\subsubsection{\texorpdfstring{resume()}{resume()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+Music.\+resume (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Resume the music playback 
+\begin{DoxyCode}
+297                          \{
+298         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_music_a20709d497ca9027d874f7ffe970ce738}{playing}} = \textcolor{keyword}{true};
+299         AudioImpl.restartMusic();
+300     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1_music_add55814269790879af02e9ce4309f26d}\label{classorg_1_1newdawn_1_1slick_1_1_music_add55814269790879af02e9ce4309f26d}} 
+\index{org\+::newdawn\+::slick\+::\+Music@{org\+::newdawn\+::slick\+::\+Music}!set\+Position@{set\+Position}}
+\index{set\+Position@{set\+Position}!org\+::newdawn\+::slick\+::\+Music@{org\+::newdawn\+::slick\+::\+Music}}
+\subsubsection{\texorpdfstring{set\+Position()}{setPosition()}}
+{\footnotesize\ttfamily boolean org.\+newdawn.\+slick.\+Music.\+set\+Position (\begin{DoxyParamCaption}\item[{float}]{position }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Seeks to a position in the music. For streaming music, seeking before the current position causes the stream to be reloaded.
+
+
+\begin{DoxyParams}{Parameters}
+{\em position} & Position in seconds. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the seek was successful 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+387                                                \{
+388         \textcolor{keywordflow}{if} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_music_a20709d497ca9027d874f7ffe970ce738}{playing}}) \{
+389             \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_music_ac983016dac747c325214ae019b79d0f0}{requiredPosition}} = -1;
+390             
+391             \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_music_a5b37d26c143b07b08eac2b3d79f940b9}{positioning}} = \textcolor{keyword}{true};
+392             \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_music_a20709d497ca9027d874f7ffe970ce738}{playing}} = \textcolor{keyword}{false};
+393             \textcolor{keywordtype}{boolean} result = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_music_a17daed326f24bf361ff8677c33f06b2f}{sound}}.\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1openal_1_1_audio_ace6e2e6fd29f40a8fe5daf8b28bc75e7}{setPosition}}(position);
+394             \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_music_a20709d497ca9027d874f7ffe970ce738}{playing}} = \textcolor{keyword}{true};
+395             \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_music_a5b37d26c143b07b08eac2b3d79f940b9}{positioning}} = \textcolor{keyword}{false};
+396 
+397             \textcolor{keywordflow}{return} result;
+398         \} \textcolor{keywordflow}{else} \{
+399             \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_music_ac983016dac747c325214ae019b79d0f0}{requiredPosition}} = position;
+400             \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+401         \}
+402     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1_music_ac80cc7fda5ba80437bf1ea6efdc3f1a7}\label{classorg_1_1newdawn_1_1slick_1_1_music_ac80cc7fda5ba80437bf1ea6efdc3f1a7}} 
+\index{org\+::newdawn\+::slick\+::\+Music@{org\+::newdawn\+::slick\+::\+Music}!set\+Volume@{set\+Volume}}
+\index{set\+Volume@{set\+Volume}!org\+::newdawn\+::slick\+::\+Music@{org\+::newdawn\+::slick\+::\+Music}}
+\subsubsection{\texorpdfstring{set\+Volume()}{setVolume()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+Music.\+set\+Volume (\begin{DoxyParamCaption}\item[{float}]{volume }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Set the volume of the music as a factor of the global volume setting
+
+
+\begin{DoxyParams}{Parameters}
+{\em volume} & The volume to play music at. 0 -\/ 1, 1 is Max \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+316                                         \{
+317         \textcolor{comment}{// Bounds check}
+318         \textcolor{keywordflow}{if}(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_music_a2fa10b80767b1a05925e1dc89a088e90}{volume}} > 1) \{
+319             \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_music_a2fa10b80767b1a05925e1dc89a088e90}{volume}} = 1;
+320         \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_music_a2fa10b80767b1a05925e1dc89a088e90}{volume}} < 0) \{
+321             \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_music_a2fa10b80767b1a05925e1dc89a088e90}{volume}} = 0;
+322         \}
+323         
+324         this.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_music_a2fa10b80767b1a05925e1dc89a088e90}{volume}} = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_music_a2fa10b80767b1a05925e1dc89a088e90}{volume}};
+325         \textcolor{comment}{// This sound is being played as music}
+326         \textcolor{keywordflow}{if} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_music_a74d1b5592170c007631f4d3b7789dbbf}{currentMusic}} == \textcolor{keyword}{this}) \{
+327             SoundStore.get().setCurrentMusicVolume(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_music_a2fa10b80767b1a05925e1dc89a088e90}{volume}});
+328         \}
+329     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1_music_afe4ced4d5134a3bfea291254e6fd2934}\label{classorg_1_1newdawn_1_1slick_1_1_music_afe4ced4d5134a3bfea291254e6fd2934}} 
+\index{org\+::newdawn\+::slick\+::\+Music@{org\+::newdawn\+::slick\+::\+Music}!start\+Music@{start\+Music}}
+\index{start\+Music@{start\+Music}!org\+::newdawn\+::slick\+::\+Music@{org\+::newdawn\+::slick\+::\+Music}}
+\subsubsection{\texorpdfstring{start\+Music()}{startMusic()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+Music.\+start\+Music (\begin{DoxyParamCaption}\item[{float}]{pitch,  }\item[{float}]{volume,  }\item[{boolean}]{loop }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+play or loop the music at a given pitch and volume 
+\begin{DoxyParams}{Parameters}
+{\em pitch} & The pitch to play the music at (1.\+0 = default) \\
+\hline
+{\em volume} & The volume to play the music at (1.\+0 = default) \\
+\hline
+{\em loop} & if false the music is played once, the music is looped otherwise \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+259                                                                      \{
+260         \textcolor{keywordflow}{if} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_music_a74d1b5592170c007631f4d3b7789dbbf}{currentMusic}} != null) \{
+261             \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_music_a74d1b5592170c007631f4d3b7789dbbf}{currentMusic}}.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_music_a2094f4ed0c3ed404540cebddc6f266d4}{stop}}();
+262             \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_music_a74d1b5592170c007631f4d3b7789dbbf}{currentMusic}}.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_music_af4a8c635af98f064cc069383e64eed66}{fireMusicSwapped}}(\textcolor{keyword}{this});
+263         \}
+264         
+265         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_music_a74d1b5592170c007631f4d3b7789dbbf}{currentMusic}} = \textcolor{keyword}{this};
+266         \textcolor{keywordflow}{if} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_music_a2fa10b80767b1a05925e1dc89a088e90}{volume}} < 0.0f)
+267             \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_music_a2fa10b80767b1a05925e1dc89a088e90}{volume}} = 0.0f;
+268         \textcolor{keywordflow}{if} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_music_a2fa10b80767b1a05925e1dc89a088e90}{volume}} > 1.0f)
+269             \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_music_a2fa10b80767b1a05925e1dc89a088e90}{volume}} = 1.0f;
+270 
+271         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_music_a17daed326f24bf361ff8677c33f06b2f}{sound}}.\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1openal_1_1_audio_a9a13784b5ec9ce06c8756f98b00e05ab}{playAsMusic}}(pitch, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_music_a2fa10b80767b1a05925e1dc89a088e90}{volume}}, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_music_aadc35375936c47d7a0e40cd1d719d070}{loop}});
+272         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_music_a20709d497ca9027d874f7ffe970ce738}{playing}} = \textcolor{keyword}{true};
+273         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_music_ac80cc7fda5ba80437bf1ea6efdc3f1a7}{setVolume}}(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_music_a2fa10b80767b1a05925e1dc89a088e90}{volume}});
+274         \textcolor{keywordflow}{if} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_music_ac983016dac747c325214ae019b79d0f0}{requiredPosition}} != -1) \{
+275             \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_music_add55814269790879af02e9ce4309f26d}{setPosition}}(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_music_ac983016dac747c325214ae019b79d0f0}{requiredPosition}});
+276         \}
+277     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1_music_a2094f4ed0c3ed404540cebddc6f266d4}\label{classorg_1_1newdawn_1_1slick_1_1_music_a2094f4ed0c3ed404540cebddc6f266d4}} 
+\index{org\+::newdawn\+::slick\+::\+Music@{org\+::newdawn\+::slick\+::\+Music}!stop@{stop}}
+\index{stop@{stop}!org\+::newdawn\+::slick\+::\+Music@{org\+::newdawn\+::slick\+::\+Music}}
+\subsubsection{\texorpdfstring{stop()}{stop()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+Music.\+stop (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Stop the music playing 
+\begin{DoxyCode}
+290                        \{
+291         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_music_a17daed326f24bf361ff8677c33f06b2f}{sound}}.\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1openal_1_1_audio_a8346ca83b84cb6605efb695462f12337}{stop}}();
+292     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1_music_a93a114f3bdb3751b6df3650e5993cf13}\label{classorg_1_1newdawn_1_1slick_1_1_music_a93a114f3bdb3751b6df3650e5993cf13}} 
+\index{org\+::newdawn\+::slick\+::\+Music@{org\+::newdawn\+::slick\+::\+Music}!update@{update}}
+\index{update@{update}!org\+::newdawn\+::slick\+::\+Music@{org\+::newdawn\+::slick\+::\+Music}}
+\subsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+Music.\+update (\begin{DoxyParamCaption}\item[{int}]{delta }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [package]}}
+
+Update the current music applying any effects that need to updated per tick.
+
+
+\begin{DoxyParams}{Parameters}
+{\em delta} & The amount of time in milliseconds thats passed since last update \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+360                            \{
+361         \textcolor{keywordflow}{if} (!\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_music_a20709d497ca9027d874f7ffe970ce738}{playing}}) \{
+362             \textcolor{keywordflow}{return};
+363         \}
+364        
+365         \textcolor{keywordflow}{if} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_music_a83dfc85ef4588e511d667c78e882f3f3}{fadeTime}} > 0) \{
+366             \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_music_a83dfc85ef4588e511d667c78e882f3f3}{fadeTime}} -= delta;
+367             \textcolor{keywordflow}{if} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_music_a83dfc85ef4588e511d667c78e882f3f3}{fadeTime}} < 0) \{
+368                 \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_music_a83dfc85ef4588e511d667c78e882f3f3}{fadeTime}} = 0;
+369                 \textcolor{keywordflow}{if} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_music_af40d098a3f18a0235d9daab0844edf7a}{stopAfterFade}}) \{
+370                     \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_music_a2094f4ed0c3ed404540cebddc6f266d4}{stop}}();
+371                     \textcolor{keywordflow}{return};
+372                 \}
+373             \}
+374             
+375             \textcolor{keywordtype}{float} offset = (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_music_a12c7133766d347ffbcf8d6e506165251}{fadeEndGain}} - \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_music_adae9aee08679631db780fea46d48735d}{fadeStartGain}}) * (1 - (
+      \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_music_a83dfc85ef4588e511d667c78e882f3f3}{fadeTime}} / (\textcolor{keywordtype}{float})\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_music_adf35608195f978bed903af885397dd75}{fadeDuration}}));
+376             \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_music_ac80cc7fda5ba80437bf1ea6efdc3f1a7}{setVolume}}(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_music_adae9aee08679631db780fea46d48735d}{fadeStartGain}} + offset);
+377         \}
+378     \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1_music_a74d1b5592170c007631f4d3b7789dbbf}\label{classorg_1_1newdawn_1_1slick_1_1_music_a74d1b5592170c007631f4d3b7789dbbf}} 
+\index{org\+::newdawn\+::slick\+::\+Music@{org\+::newdawn\+::slick\+::\+Music}!current\+Music@{current\+Music}}
+\index{current\+Music@{current\+Music}!org\+::newdawn\+::slick\+::\+Music@{org\+::newdawn\+::slick\+::\+Music}}
+\subsubsection{\texorpdfstring{current\+Music}{currentMusic}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_music}{Music}} org.\+newdawn.\+slick.\+Music.\+current\+Music\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+The music currently being played or null if none \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1_music_adf35608195f978bed903af885397dd75}\label{classorg_1_1newdawn_1_1slick_1_1_music_adf35608195f978bed903af885397dd75}} 
+\index{org\+::newdawn\+::slick\+::\+Music@{org\+::newdawn\+::slick\+::\+Music}!fade\+Duration@{fade\+Duration}}
+\index{fade\+Duration@{fade\+Duration}!org\+::newdawn\+::slick\+::\+Music@{org\+::newdawn\+::slick\+::\+Music}}
+\subsubsection{\texorpdfstring{fade\+Duration}{fadeDuration}}
+{\footnotesize\ttfamily int org.\+newdawn.\+slick.\+Music.\+fade\+Duration\hspace{0.3cm}{\ttfamily [private]}}
+
+Duration for fading in/out \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1_music_a12c7133766d347ffbcf8d6e506165251}\label{classorg_1_1newdawn_1_1slick_1_1_music_a12c7133766d347ffbcf8d6e506165251}} 
+\index{org\+::newdawn\+::slick\+::\+Music@{org\+::newdawn\+::slick\+::\+Music}!fade\+End\+Gain@{fade\+End\+Gain}}
+\index{fade\+End\+Gain@{fade\+End\+Gain}!org\+::newdawn\+::slick\+::\+Music@{org\+::newdawn\+::slick\+::\+Music}}
+\subsubsection{\texorpdfstring{fade\+End\+Gain}{fadeEndGain}}
+{\footnotesize\ttfamily float org.\+newdawn.\+slick.\+Music.\+fade\+End\+Gain\hspace{0.3cm}{\ttfamily [private]}}
+
+End gain for fading in/out \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1_music_adae9aee08679631db780fea46d48735d}\label{classorg_1_1newdawn_1_1slick_1_1_music_adae9aee08679631db780fea46d48735d}} 
+\index{org\+::newdawn\+::slick\+::\+Music@{org\+::newdawn\+::slick\+::\+Music}!fade\+Start\+Gain@{fade\+Start\+Gain}}
+\index{fade\+Start\+Gain@{fade\+Start\+Gain}!org\+::newdawn\+::slick\+::\+Music@{org\+::newdawn\+::slick\+::\+Music}}
+\subsubsection{\texorpdfstring{fade\+Start\+Gain}{fadeStartGain}}
+{\footnotesize\ttfamily float org.\+newdawn.\+slick.\+Music.\+fade\+Start\+Gain\hspace{0.3cm}{\ttfamily [private]}}
+
+Start gain for fading in/out \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1_music_a83dfc85ef4588e511d667c78e882f3f3}\label{classorg_1_1newdawn_1_1slick_1_1_music_a83dfc85ef4588e511d667c78e882f3f3}} 
+\index{org\+::newdawn\+::slick\+::\+Music@{org\+::newdawn\+::slick\+::\+Music}!fade\+Time@{fade\+Time}}
+\index{fade\+Time@{fade\+Time}!org\+::newdawn\+::slick\+::\+Music@{org\+::newdawn\+::slick\+::\+Music}}
+\subsubsection{\texorpdfstring{fade\+Time}{fadeTime}}
+{\footnotesize\ttfamily int org.\+newdawn.\+slick.\+Music.\+fade\+Time\hspace{0.3cm}{\ttfamily [private]}}
+
+Countdown for fading in/out \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1_music_ad57b22ce1f989d377f00f3c804a41db4}\label{classorg_1_1newdawn_1_1slick_1_1_music_ad57b22ce1f989d377f00f3c804a41db4}} 
+\index{org\+::newdawn\+::slick\+::\+Music@{org\+::newdawn\+::slick\+::\+Music}!listeners@{listeners}}
+\index{listeners@{listeners}!org\+::newdawn\+::slick\+::\+Music@{org\+::newdawn\+::slick\+::\+Music}}
+\subsubsection{\texorpdfstring{listeners}{listeners}}
+{\footnotesize\ttfamily Array\+List org.\+newdawn.\+slick.\+Music.\+listeners = new Array\+List()\hspace{0.3cm}{\ttfamily [private]}}
+
+The list of listeners waiting for notification that the music ended \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1_music_aa81bfb24e3203b254c58425195ab17b7}\label{classorg_1_1newdawn_1_1slick_1_1_music_aa81bfb24e3203b254c58425195ab17b7}} 
+\index{org\+::newdawn\+::slick\+::\+Music@{org\+::newdawn\+::slick\+::\+Music}!playing@{playing}}
+\index{playing@{playing}!org\+::newdawn\+::slick\+::\+Music@{org\+::newdawn\+::slick\+::\+Music}}
+\subsubsection{\texorpdfstring{playing}{playing}}
+{\footnotesize\ttfamily boolean org.\+newdawn.\+slick.\+Music.\+playing\hspace{0.3cm}{\ttfamily [private]}}
+
+True if the music is playing \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1_music_a5b37d26c143b07b08eac2b3d79f940b9}\label{classorg_1_1newdawn_1_1slick_1_1_music_a5b37d26c143b07b08eac2b3d79f940b9}} 
+\index{org\+::newdawn\+::slick\+::\+Music@{org\+::newdawn\+::slick\+::\+Music}!positioning@{positioning}}
+\index{positioning@{positioning}!org\+::newdawn\+::slick\+::\+Music@{org\+::newdawn\+::slick\+::\+Music}}
+\subsubsection{\texorpdfstring{positioning}{positioning}}
+{\footnotesize\ttfamily boolean org.\+newdawn.\+slick.\+Music.\+positioning\hspace{0.3cm}{\ttfamily [private]}}
+
+True if the music is being repositioned and it is therefore normal that it\textquotesingle{}s not playing \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1_music_ac983016dac747c325214ae019b79d0f0}\label{classorg_1_1newdawn_1_1slick_1_1_music_ac983016dac747c325214ae019b79d0f0}} 
+\index{org\+::newdawn\+::slick\+::\+Music@{org\+::newdawn\+::slick\+::\+Music}!required\+Position@{required\+Position}}
+\index{required\+Position@{required\+Position}!org\+::newdawn\+::slick\+::\+Music@{org\+::newdawn\+::slick\+::\+Music}}
+\subsubsection{\texorpdfstring{required\+Position}{requiredPosition}}
+{\footnotesize\ttfamily float org.\+newdawn.\+slick.\+Music.\+required\+Position = -\/1\hspace{0.3cm}{\ttfamily [private]}}
+
+The position that was requested \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1_music_a17daed326f24bf361ff8677c33f06b2f}\label{classorg_1_1newdawn_1_1slick_1_1_music_a17daed326f24bf361ff8677c33f06b2f}} 
+\index{org\+::newdawn\+::slick\+::\+Music@{org\+::newdawn\+::slick\+::\+Music}!sound@{sound}}
+\index{sound@{sound}!org\+::newdawn\+::slick\+::\+Music@{org\+::newdawn\+::slick\+::\+Music}}
+\subsubsection{\texorpdfstring{sound}{sound}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1openal_1_1_audio}{Audio}} org.\+newdawn.\+slick.\+Music.\+sound\hspace{0.3cm}{\ttfamily [private]}}
+
+The sound from F\+E\+CK representing this music \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1_music_af40d098a3f18a0235d9daab0844edf7a}\label{classorg_1_1newdawn_1_1slick_1_1_music_af40d098a3f18a0235d9daab0844edf7a}} 
+\index{org\+::newdawn\+::slick\+::\+Music@{org\+::newdawn\+::slick\+::\+Music}!stop\+After\+Fade@{stop\+After\+Fade}}
+\index{stop\+After\+Fade@{stop\+After\+Fade}!org\+::newdawn\+::slick\+::\+Music@{org\+::newdawn\+::slick\+::\+Music}}
+\subsubsection{\texorpdfstring{stop\+After\+Fade}{stopAfterFade}}
+{\footnotesize\ttfamily boolean org.\+newdawn.\+slick.\+Music.\+stop\+After\+Fade\hspace{0.3cm}{\ttfamily [private]}}
+
+True if music should be stopped after fading in/out \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1_music_a2fa10b80767b1a05925e1dc89a088e90}\label{classorg_1_1newdawn_1_1slick_1_1_music_a2fa10b80767b1a05925e1dc89a088e90}} 
+\index{org\+::newdawn\+::slick\+::\+Music@{org\+::newdawn\+::slick\+::\+Music}!volume@{volume}}
+\index{volume@{volume}!org\+::newdawn\+::slick\+::\+Music@{org\+::newdawn\+::slick\+::\+Music}}
+\subsubsection{\texorpdfstring{volume}{volume}}
+{\footnotesize\ttfamily float org.\+newdawn.\+slick.\+Music.\+volume = 1.\+0f\hspace{0.3cm}{\ttfamily [private]}}
+
+The volume of this music 

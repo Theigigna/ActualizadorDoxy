@@ -1,0 +1,87 @@
+\hypertarget{classorg_1_1newdawn_1_1slick_1_1svg_1_1inkscape_1_1_use_processor}{}\section{org.\+newdawn.\+slick.\+svg.\+inkscape.\+Use\+Processor Class Reference}
+\label{classorg_1_1newdawn_1_1slick_1_1svg_1_1inkscape_1_1_use_processor}\index{org.\+newdawn.\+slick.\+svg.\+inkscape.\+Use\+Processor@{org.\+newdawn.\+slick.\+svg.\+inkscape.\+Use\+Processor}}
+Inheritance diagram for org.\+newdawn.\+slick.\+svg.\+inkscape.\+Use\+Processor\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classorg_1_1newdawn_1_1slick_1_1svg_1_1inkscape_1_1_use_processor}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+boolean \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1inkscape_1_1_use_processor_a708b3d8ee6187b45b27913116c689e43}{handles}} (Element element)
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1inkscape_1_1_use_processor_ad331d42472c6acee3c1c5ee1ddce27e9}{process}} (\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1svg_1_1_loader}{Loader}} loader, Element element, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1_diagram}{Diagram}} diagram, Transform transform)  throws Parsing\+Exception 
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Processor for the \char`\"{}use\char`\"{}, a tag that allows references to other elements and cloning.
+
+\begin{DoxyAuthor}{Author}
+kevin 
+\end{DoxyAuthor}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1svg_1_1inkscape_1_1_use_processor_a708b3d8ee6187b45b27913116c689e43}\label{classorg_1_1newdawn_1_1slick_1_1svg_1_1inkscape_1_1_use_processor_a708b3d8ee6187b45b27913116c689e43}} 
+\index{org\+::newdawn\+::slick\+::svg\+::inkscape\+::\+Use\+Processor@{org\+::newdawn\+::slick\+::svg\+::inkscape\+::\+Use\+Processor}!handles@{handles}}
+\index{handles@{handles}!org\+::newdawn\+::slick\+::svg\+::inkscape\+::\+Use\+Processor@{org\+::newdawn\+::slick\+::svg\+::inkscape\+::\+Use\+Processor}}
+\subsubsection{\texorpdfstring{handles()}{handles()}}
+{\footnotesize\ttfamily boolean org.\+newdawn.\+slick.\+svg.\+inkscape.\+Use\+Processor.\+handles (\begin{DoxyParamCaption}\item[{Element}]{element }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1svg_1_1inkscape_1_1_element_processor_ae95bbf21a67c52aff02cf09259c554a3}{org.\+newdawn.\+slick.\+svg.\+inkscape.\+Element\+Processor\+::handles}}(org.\+w3c.\+dom.\+Element) 
+\end{DoxySeeAlso}
+
+
+Implements \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1svg_1_1inkscape_1_1_element_processor_ae95bbf21a67c52aff02cf09259c554a3}{org.\+newdawn.\+slick.\+svg.\+inkscape.\+Element\+Processor}}.
+
+
+\begin{DoxyCode}
+23                                             \{
+24         \textcolor{keywordflow}{return} element.getNodeName().equals(\textcolor{stringliteral}{"use"});
+25     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1svg_1_1inkscape_1_1_use_processor_ad331d42472c6acee3c1c5ee1ddce27e9}\label{classorg_1_1newdawn_1_1slick_1_1svg_1_1inkscape_1_1_use_processor_ad331d42472c6acee3c1c5ee1ddce27e9}} 
+\index{org\+::newdawn\+::slick\+::svg\+::inkscape\+::\+Use\+Processor@{org\+::newdawn\+::slick\+::svg\+::inkscape\+::\+Use\+Processor}!process@{process}}
+\index{process@{process}!org\+::newdawn\+::slick\+::svg\+::inkscape\+::\+Use\+Processor@{org\+::newdawn\+::slick\+::svg\+::inkscape\+::\+Use\+Processor}}
+\subsubsection{\texorpdfstring{process()}{process()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+svg.\+inkscape.\+Use\+Processor.\+process (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1svg_1_1_loader}{Loader}}}]{loader,  }\item[{Element}]{element,  }\item[{\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1_diagram}{Diagram}}}]{diagram,  }\item[{Transform}]{transform }\end{DoxyParamCaption}) throws \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1_parsing_exception}{Parsing\+Exception}}\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1svg_1_1inkscape_1_1_element_processor_acd170a9e1119481edae885780db59a2e}{org.\+newdawn.\+slick.\+svg.\+inkscape.\+Element\+Processor\+::process}}(\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1svg_1_1_loader}{org.\+newdawn.\+slick.\+svg.\+Loader}}, org.\+w3c.\+dom.\+Element, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1_diagram}{org.\+newdawn.\+slick.\+svg.\+Diagram}}, org.\+newdawn.\+slick.\+geom.\+Transform) 
+\end{DoxySeeAlso}
+
+
+Implements \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1svg_1_1inkscape_1_1_element_processor_acd170a9e1119481edae885780db59a2e}{org.\+newdawn.\+slick.\+svg.\+inkscape.\+Element\+Processor}}.
+
+
+\begin{DoxyCode}
+31                                                          \{
+32 
+33         String ref = element.getAttributeNS(\textcolor{stringliteral}{"http://www.w3.org/1999/xlink"}, \textcolor{stringliteral}{"href"});
+34         String href = Util.getAsReference(ref);
+35         
+36         Figure referenced = diagram.getFigureByID(href);
+37         \textcolor{keywordflow}{if} (referenced == null) \{
+38             \textcolor{keywordflow}{throw} \textcolor{keyword}{new} ParsingException(element, \textcolor{stringliteral}{"Unable to locate referenced element: "}+href);
+39         \}
+40         
+41         Transform local = Util.getTransform(element);
+42         Transform trans = local.concatenate(referenced.getTransform());
+43         
+44         NonGeometricData data = Util.getNonGeometricData(element);
+45         Shape shape = referenced.getShape().transform(trans);
+46         data.addAttribute(NonGeometricData.FILL, referenced.getData().getAttribute(NonGeometricData.FILL));
+47         data.addAttribute(NonGeometricData.STROKE, referenced.getData().getAttribute(NonGeometricData.
+      STROKE));
+48         data.addAttribute(NonGeometricData.OPACITY, referenced.getData().getAttribute(NonGeometricData.
+      OPACITY));
+49         data.addAttribute(NonGeometricData.STROKE\_WIDTH, referenced.getData().getAttribute(NonGeometricData
+      .STROKE\_WIDTH));
+50         
+51         Figure figure = \textcolor{keyword}{new} Figure(referenced.getType(), shape, data, trans);
+52         diagram.addFigure(figure);
+53     \}
+\end{DoxyCode}

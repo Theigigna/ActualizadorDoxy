@@ -1,0 +1,84 @@
+\hypertarget{class_ejercicio2_1_1_productor}{}\section{Ejercicio2.\+Productor Class Reference}
+\label{class_ejercicio2_1_1_productor}\index{Ejercicio2.\+Productor@{Ejercicio2.\+Productor}}
+Inheritance diagram for Ejercicio2.\+Productor\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_ejercicio2_1_1_productor}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_ejercicio2_1_1_productor_a4d38b0aa19b1a633398d7ddd4e53abca}{Productor}} (String \mbox{\hyperlink{class_ejercicio2_1_1_productor_a7afbe84dee1488cfae3b8555281a4e3f}{prefijo}}, int n, \mbox{\hyperlink{class_ejercicio2_1_1_buffer}{Buffer}} buffer)
+\item 
+void \mbox{\hyperlink{class_ejercicio2_1_1_productor_a326c43803b7561976965faf07ccb0788}{run}} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+String \mbox{\hyperlink{class_ejercicio2_1_1_productor_a7afbe84dee1488cfae3b8555281a4e3f}{prefijo}}
+\item 
+int \mbox{\hyperlink{class_ejercicio2_1_1_productor_aa0ad1c460b23e61a4f67420e0ab5f7fa}{num\+Mensajes}}
+\item 
+\mbox{\hyperlink{class_ejercicio2_1_1_buffer}{Buffer}} \mbox{\hyperlink{class_ejercicio2_1_1_productor_a0321b6e81e1f2486ca097a1f36de7952}{mi\+Buffer}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_ejercicio2_1_1_productor_a4d38b0aa19b1a633398d7ddd4e53abca}\label{class_ejercicio2_1_1_productor_a4d38b0aa19b1a633398d7ddd4e53abca}} 
+\index{Ejercicio2\+::\+Productor@{Ejercicio2\+::\+Productor}!Productor@{Productor}}
+\index{Productor@{Productor}!Ejercicio2\+::\+Productor@{Ejercicio2\+::\+Productor}}
+\subsubsection{\texorpdfstring{Productor()}{Productor()}}
+{\footnotesize\ttfamily Ejercicio2.\+Productor.\+Productor (\begin{DoxyParamCaption}\item[{String}]{prefijo,  }\item[{int}]{n,  }\item[{\mbox{\hyperlink{class_ejercicio2_1_1_buffer}{Buffer}}}]{buffer }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+17     \{
+18         this.\mbox{\hyperlink{class_ejercicio2_1_1_productor_a7afbe84dee1488cfae3b8555281a4e3f}{prefijo}}=\mbox{\hyperlink{class_ejercicio2_1_1_productor_a7afbe84dee1488cfae3b8555281a4e3f}{prefijo}};
+19         \mbox{\hyperlink{class_ejercicio2_1_1_productor_aa0ad1c460b23e61a4f67420e0ab5f7fa}{numMensajes}}=n;
+20         \mbox{\hyperlink{class_ejercicio2_1_1_productor_a0321b6e81e1f2486ca097a1f36de7952}{miBuffer}}=buffer;
+21     \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_ejercicio2_1_1_productor_a326c43803b7561976965faf07ccb0788}\label{class_ejercicio2_1_1_productor_a326c43803b7561976965faf07ccb0788}} 
+\index{Ejercicio2\+::\+Productor@{Ejercicio2\+::\+Productor}!run@{run}}
+\index{run@{run}!Ejercicio2\+::\+Productor@{Ejercicio2\+::\+Productor}}
+\subsubsection{\texorpdfstring{run()}{run()}}
+{\footnotesize\ttfamily void Ejercicio2.\+Productor.\+run (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+24     \{
+25         \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i=1; i<=\mbox{\hyperlink{class_ejercicio2_1_1_productor_aa0ad1c460b23e61a4f67420e0ab5f7fa}{numMensajes}}; i++)
+26         \{
+27             \textcolor{keywordflow}{try}
+28             \{
+29                 sleep((\textcolor{keywordtype}{int})(400+400*Math.random()));
+30             \} \textcolor{keywordflow}{catch}(InterruptedException e)\{  \}
+31             \mbox{\hyperlink{class_ejercicio2_1_1_productor_a0321b6e81e1f2486ca097a1f36de7952}{miBuffer}}.\mbox{\hyperlink{class_ejercicio2_1_1_buffer_ab6e3390ea3256bde697612255687aafc}{enviaMensaje}}(\mbox{\hyperlink{class_ejercicio2_1_1_productor_a7afbe84dee1488cfae3b8555281a4e3f}{prefijo}}+i);
+32         \}
+33     \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_ejercicio2_1_1_productor_a0321b6e81e1f2486ca097a1f36de7952}\label{class_ejercicio2_1_1_productor_a0321b6e81e1f2486ca097a1f36de7952}} 
+\index{Ejercicio2\+::\+Productor@{Ejercicio2\+::\+Productor}!mi\+Buffer@{mi\+Buffer}}
+\index{mi\+Buffer@{mi\+Buffer}!Ejercicio2\+::\+Productor@{Ejercicio2\+::\+Productor}}
+\subsubsection{\texorpdfstring{mi\+Buffer}{miBuffer}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_ejercicio2_1_1_buffer}{Buffer}} Ejercicio2.\+Productor.\+mi\+Buffer\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_ejercicio2_1_1_productor_aa0ad1c460b23e61a4f67420e0ab5f7fa}\label{class_ejercicio2_1_1_productor_aa0ad1c460b23e61a4f67420e0ab5f7fa}} 
+\index{Ejercicio2\+::\+Productor@{Ejercicio2\+::\+Productor}!num\+Mensajes@{num\+Mensajes}}
+\index{num\+Mensajes@{num\+Mensajes}!Ejercicio2\+::\+Productor@{Ejercicio2\+::\+Productor}}
+\subsubsection{\texorpdfstring{num\+Mensajes}{numMensajes}}
+{\footnotesize\ttfamily int Ejercicio2.\+Productor.\+num\+Mensajes\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_ejercicio2_1_1_productor_a7afbe84dee1488cfae3b8555281a4e3f}\label{class_ejercicio2_1_1_productor_a7afbe84dee1488cfae3b8555281a4e3f}} 
+\index{Ejercicio2\+::\+Productor@{Ejercicio2\+::\+Productor}!prefijo@{prefijo}}
+\index{prefijo@{prefijo}!Ejercicio2\+::\+Productor@{Ejercicio2\+::\+Productor}}
+\subsubsection{\texorpdfstring{prefijo}{prefijo}}
+{\footnotesize\ttfamily String Ejercicio2.\+Productor.\+prefijo\hspace{0.3cm}{\ttfamily [private]}}
+

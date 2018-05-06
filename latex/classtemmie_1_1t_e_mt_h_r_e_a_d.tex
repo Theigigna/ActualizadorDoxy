@@ -1,0 +1,72 @@
+\hypertarget{classtemmie_1_1t_e_mt_h_r_e_a_d}{}\section{temmie.\+t\+E\+Mt\+H\+R\+E\+AD Class Reference}
+\label{classtemmie_1_1t_e_mt_h_r_e_a_d}\index{temmie.\+t\+E\+Mt\+H\+R\+E\+AD@{temmie.\+t\+E\+Mt\+H\+R\+E\+AD}}
+Inheritance diagram for temmie.\+t\+E\+Mt\+H\+R\+E\+AD\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classtemmie_1_1t_e_mt_h_r_e_a_d}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classtemmie_1_1t_e_mt_h_r_e_a_d_a1c67150dddfd2cb4259c847fb97ccefe}{t\+E\+Mt\+H\+R\+E\+AD}} (int i)
+\item 
+void \mbox{\hyperlink{classtemmie_1_1t_e_mt_h_r_e_a_d_a370afd7a88b491ab0cf01c5b4c571100}{run}} ()
+\end{DoxyCompactItemize}
+\subsection*{Package Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classtemmie_1_1t_e_mt_h_r_e_a_d_aafd575451a2e64d7376e0e715b301624}{num}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyAuthor}{Author}
+Beatriz 
+\end{DoxyAuthor}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classtemmie_1_1t_e_mt_h_r_e_a_d_a1c67150dddfd2cb4259c847fb97ccefe}\label{classtemmie_1_1t_e_mt_h_r_e_a_d_a1c67150dddfd2cb4259c847fb97ccefe}} 
+\index{temmie\+::t\+E\+Mt\+H\+R\+E\+AD@{temmie\+::t\+E\+Mt\+H\+R\+E\+AD}!t\+E\+Mt\+H\+R\+E\+AD@{t\+E\+Mt\+H\+R\+E\+AD}}
+\index{t\+E\+Mt\+H\+R\+E\+AD@{t\+E\+Mt\+H\+R\+E\+AD}!temmie\+::t\+E\+Mt\+H\+R\+E\+AD@{temmie\+::t\+E\+Mt\+H\+R\+E\+AD}}
+\subsubsection{\texorpdfstring{t\+E\+Mt\+H\+R\+E\+A\+D()}{tEMtHREAD()}}
+{\footnotesize\ttfamily temmie.\+t\+E\+Mt\+H\+R\+E\+A\+D.\+t\+E\+Mt\+H\+R\+E\+AD (\begin{DoxyParamCaption}\item[{int}]{i }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+13                            \{
+14         \mbox{\hyperlink{classtemmie_1_1t_e_mt_h_r_e_a_d_aafd575451a2e64d7376e0e715b301624}{num}} = i;
+15     \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classtemmie_1_1t_e_mt_h_r_e_a_d_a370afd7a88b491ab0cf01c5b4c571100}\label{classtemmie_1_1t_e_mt_h_r_e_a_d_a370afd7a88b491ab0cf01c5b4c571100}} 
+\index{temmie\+::t\+E\+Mt\+H\+R\+E\+AD@{temmie\+::t\+E\+Mt\+H\+R\+E\+AD}!run@{run}}
+\index{run@{run}!temmie\+::t\+E\+Mt\+H\+R\+E\+AD@{temmie\+::t\+E\+Mt\+H\+R\+E\+AD}}
+\subsubsection{\texorpdfstring{run()}{run()}}
+{\footnotesize\ttfamily void temmie.\+t\+E\+Mt\+H\+R\+E\+A\+D.\+run (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+17                       \{
+18         System.out.println(\textcolor{stringliteral}{"HOI! IM TEMMIE "} + \mbox{\hyperlink{classtemmie_1_1t_e_mt_h_r_e_a_d_aafd575451a2e64d7376e0e715b301624}{num}});
+19         \mbox{\hyperlink{classtemmie_1_1t_e_mt_h_r_e_a_d_a1c67150dddfd2cb4259c847fb97ccefe}{tEMtHREAD}} nextTem = \textcolor{keyword}{new} \mbox{\hyperlink{classtemmie_1_1t_e_mt_h_r_e_a_d_a1c67150dddfd2cb4259c847fb97ccefe}{tEMtHREAD}}(\mbox{\hyperlink{classtemmie_1_1t_e_mt_h_r_e_a_d_aafd575451a2e64d7376e0e715b301624}{num}}+1);  
+20         nextTem.start();
+21         \textcolor{keywordflow}{try}\{
+22             nextTem.join();
+23         \}\textcolor{keywordflow}{catch} (InterruptedException e)\{
+24             System.out.println(\textcolor{stringliteral}{"NOT CUTE!!!"});
+25         \}
+26     \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classtemmie_1_1t_e_mt_h_r_e_a_d_aafd575451a2e64d7376e0e715b301624}\label{classtemmie_1_1t_e_mt_h_r_e_a_d_aafd575451a2e64d7376e0e715b301624}} 
+\index{temmie\+::t\+E\+Mt\+H\+R\+E\+AD@{temmie\+::t\+E\+Mt\+H\+R\+E\+AD}!num@{num}}
+\index{num@{num}!temmie\+::t\+E\+Mt\+H\+R\+E\+AD@{temmie\+::t\+E\+Mt\+H\+R\+E\+AD}}
+\subsubsection{\texorpdfstring{num}{num}}
+{\footnotesize\ttfamily int temmie.\+t\+E\+Mt\+H\+R\+E\+A\+D.\+num\hspace{0.3cm}{\ttfamily [package]}}
+

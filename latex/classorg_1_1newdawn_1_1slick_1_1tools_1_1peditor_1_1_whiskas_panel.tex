@@ -1,0 +1,276 @@
+\hypertarget{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_whiskas_panel}{}\section{org.\+newdawn.\+slick.\+tools.\+peditor.\+Whiskas\+Panel Class Reference}
+\label{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_whiskas_panel}\index{org.\+newdawn.\+slick.\+tools.\+peditor.\+Whiskas\+Panel@{org.\+newdawn.\+slick.\+tools.\+peditor.\+Whiskas\+Panel}}
+Inheritance diagram for org.\+newdawn.\+slick.\+tools.\+peditor.\+Whiskas\+Panel\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.660131cm]{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_whiskas_panel}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_whiskas_panel_a4cf87fd77fc80f3c26254fd53ebc94af}{Whiskas\+Panel}} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_emitter_list}{Emitter\+List}} l, final \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_color_panel}{Color\+Panel}} color\+Panel, final \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_emission_controls}{Emission\+Controls}} emission\+Controls)
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_whiskas_panel_a646bd746c6286192f6b1d3ba98f3e25b}{item\+State\+Changed\+Handler}} (Item\+Event e)
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_whiskas_panel_a4686898fc7dbd9aa6fd3ca5d3f850e50}{set\+Editor}} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_graph_editor_window}{Graph\+Editor\+Window}} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_whiskas_panel_adafc0fc72d0d368d6298c3c44e4fa96c}{editor}})
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_whiskas_panel_a71a90d8afe5a7f2eefc72aecc4b07640}{link\+Emitter\+To\+Fields}} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1particles_1_1_configurable_emitter}{Configurable\+Emitter}} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_control_panel_aaa170169fa574cb6b271f782afcd2517}{emitter}})
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_whiskas_panel_aa9cd100f0001b41516cb06b9c6903b7a}{add\+Enable\+Control}} (String text, Item\+Listener listener)
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_whiskas_panel_aa8fd4ce760ea12d13153842f6dc4c902}{link\+To\+Emitter}} (String name, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1particles_1_1_configurable_emitter_1_1_linear_interpolator}{Linear\+Interpolator}} interpol)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_graph_editor_window}{Graph\+Editor\+Window}} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_whiskas_panel_adafc0fc72d0d368d6298c3c44e4fa96c}{editor}}
+\item 
+int \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_whiskas_panel_a56716629f78624b7be34453302c0699c}{offset}} = 25
+\item 
+Hash\+Map \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_whiskas_panel_adff62f4a99ab444f80c37b40d9ff0489}{control\+To\+Value\+Name}} = new Hash\+Map()
+\item 
+Hash\+Map \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_whiskas_panel_a299a865d47b6d893171286b501af69cb}{value\+Name\+To\+Control}} = new Hash\+Map()
+\item 
+Hash\+Map \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_whiskas_panel_a952aebc524d9c88dc4dc7bb7e2231fd1}{value\+Map}} = new Hash\+Map()
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+A panel to display the whiskas controls within pedigree G\+UI
+
+\begin{DoxyAuthor}{Author}
+void 
+\end{DoxyAuthor}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_whiskas_panel_a4cf87fd77fc80f3c26254fd53ebc94af}\label{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_whiskas_panel_a4cf87fd77fc80f3c26254fd53ebc94af}} 
+\index{org\+::newdawn\+::slick\+::tools\+::peditor\+::\+Whiskas\+Panel@{org\+::newdawn\+::slick\+::tools\+::peditor\+::\+Whiskas\+Panel}!Whiskas\+Panel@{Whiskas\+Panel}}
+\index{Whiskas\+Panel@{Whiskas\+Panel}!org\+::newdawn\+::slick\+::tools\+::peditor\+::\+Whiskas\+Panel@{org\+::newdawn\+::slick\+::tools\+::peditor\+::\+Whiskas\+Panel}}
+\subsubsection{\texorpdfstring{Whiskas\+Panel()}{WhiskasPanel()}}
+{\footnotesize\ttfamily org.\+newdawn.\+slick.\+tools.\+peditor.\+Whiskas\+Panel.\+Whiskas\+Panel (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_emitter_list}{Emitter\+List}}}]{l,  }\item[{final \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_color_panel}{Color\+Panel}}}]{color\+Panel,  }\item[{final \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_emission_controls}{Emission\+Controls}}}]{emission\+Controls }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Create a new panel for limiting controls
+
+
+\begin{DoxyParams}{Parameters}
+{\em l} & The list to be notified when the name changes \\
+\hline
+{\em color\+Panel} & The panel controlling the colours that needs to be controlled based on the enablement here \\
+\hline
+{\em emission\+Controls} & The panel controlling the emissions that needs to be controlled based on the enablement here \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+38                                                      \{
+39         setLayout(null);
+40         setBorder(BorderFactory
+41                 .createTitledBorder(\textcolor{stringliteral}{"Particle Life Time Gradients"}));
+42 
+43         \textcolor{comment}{// add checkbox controls for all linear values}
+44         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_whiskas_panel_aa9cd100f0001b41516cb06b9c6903b7a}{addEnableControl}}(\textcolor{stringliteral}{"Alpha"}, \textcolor{keyword}{new} ItemListener() \{
+45             \textcolor{keyword}{public} \textcolor{keywordtype}{void} itemStateChanged(ItemEvent e) \{
+46                 colorPanel.getStartAlpha().setEnabled(
+47                         e.getStateChange() != ItemEvent.SELECTED);
+48                 colorPanel.getEndAlpha().setEnabled(
+49                         e.getStateChange() != ItemEvent.SELECTED);
+50 
+51                 \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_whiskas_panel_a646bd746c6286192f6b1d3ba98f3e25b}{itemStateChangedHandler}}(e);
+52             \}
+53         \});
+54         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_whiskas_panel_aa9cd100f0001b41516cb06b9c6903b7a}{addEnableControl}}(\textcolor{stringliteral}{"Size"}, \textcolor{keyword}{new} ItemListener() \{
+55             \textcolor{keyword}{public} \textcolor{keywordtype}{void} itemStateChanged(ItemEvent e) \{
+56                 emissionControls.getInitialSize().setEnabledForced(
+57                         e.getStateChange() != ItemEvent.SELECTED);
+58                 \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_whiskas_panel_a646bd746c6286192f6b1d3ba98f3e25b}{itemStateChangedHandler}}(e);
+59             \}
+60         \});
+61         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_whiskas_panel_aa9cd100f0001b41516cb06b9c6903b7a}{addEnableControl}}(\textcolor{stringliteral}{"Velocity"}, \textcolor{keyword}{new} ItemListener() \{
+62             \textcolor{keyword}{public} \textcolor{keywordtype}{void} itemStateChanged(ItemEvent e) \{
+63                 \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_whiskas_panel_a646bd746c6286192f6b1d3ba98f3e25b}{itemStateChangedHandler}}(e);
+64             \}
+65         \});
+66         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_whiskas_panel_aa9cd100f0001b41516cb06b9c6903b7a}{addEnableControl}}(\textcolor{stringliteral}{"ScaleY"}, \textcolor{keyword}{new} ItemListener() \{
+67             \textcolor{keyword}{public} \textcolor{keywordtype}{void} itemStateChanged(ItemEvent e) \{
+68                 \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_whiskas_panel_a646bd746c6286192f6b1d3ba98f3e25b}{itemStateChangedHandler}}(e);
+69             \}
+70         \});
+71     \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_whiskas_panel_aa9cd100f0001b41516cb06b9c6903b7a}\label{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_whiskas_panel_aa9cd100f0001b41516cb06b9c6903b7a}} 
+\index{org\+::newdawn\+::slick\+::tools\+::peditor\+::\+Whiskas\+Panel@{org\+::newdawn\+::slick\+::tools\+::peditor\+::\+Whiskas\+Panel}!add\+Enable\+Control@{add\+Enable\+Control}}
+\index{add\+Enable\+Control@{add\+Enable\+Control}!org\+::newdawn\+::slick\+::tools\+::peditor\+::\+Whiskas\+Panel@{org\+::newdawn\+::slick\+::tools\+::peditor\+::\+Whiskas\+Panel}}
+\subsubsection{\texorpdfstring{add\+Enable\+Control()}{addEnableControl()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+tools.\+peditor.\+Whiskas\+Panel.\+add\+Enable\+Control (\begin{DoxyParamCaption}\item[{String}]{text,  }\item[{Item\+Listener}]{listener }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+Add a control for enablement
+
+
+\begin{DoxyParams}{Parameters}
+{\em text} & The label to be associated with the check box \\
+\hline
+{\em listener} & The listener to be notified of updates to the new control \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+79                                                                       \{
+80         JCheckBox enableControl = \textcolor{keyword}{new} JCheckBox(\textcolor{stringliteral}{"Enable "} + text);
+81         enableControl.setBounds(10, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_whiskas_panel_a56716629f78624b7be34453302c0699c}{offset}}, 200, 20);
+82         enableControl.addItemListener(listener);
+83         add(enableControl);
+84 
+85         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_whiskas_panel_adff62f4a99ab444f80c37b40d9ff0489}{controlToValueName}}.put(enableControl, text);
+86         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_whiskas_panel_a299a865d47b6d893171286b501af69cb}{valueNameToControl}}.put(text, enableControl);
+87         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_whiskas_panel_a56716629f78624b7be34453302c0699c}{offset}} += 25;
+88     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_whiskas_panel_a646bd746c6286192f6b1d3ba98f3e25b}\label{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_whiskas_panel_a646bd746c6286192f6b1d3ba98f3e25b}} 
+\index{org\+::newdawn\+::slick\+::tools\+::peditor\+::\+Whiskas\+Panel@{org\+::newdawn\+::slick\+::tools\+::peditor\+::\+Whiskas\+Panel}!item\+State\+Changed\+Handler@{item\+State\+Changed\+Handler}}
+\index{item\+State\+Changed\+Handler@{item\+State\+Changed\+Handler}!org\+::newdawn\+::slick\+::tools\+::peditor\+::\+Whiskas\+Panel@{org\+::newdawn\+::slick\+::tools\+::peditor\+::\+Whiskas\+Panel}}
+\subsubsection{\texorpdfstring{item\+State\+Changed\+Handler()}{itemStateChangedHandler()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+tools.\+peditor.\+Whiskas\+Panel.\+item\+State\+Changed\+Handler (\begin{DoxyParamCaption}\item[{Item\+Event}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Notificaiton that one of the configuration option has changed state
+
+
+\begin{DoxyParams}{Parameters}
+{\em e} & The event describing the change of state \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+95                                                      \{
+96         String valueName = (String) \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_whiskas_panel_adff62f4a99ab444f80c37b40d9ff0489}{controlToValueName}}.get(e.getSource());
+97         LinearInterpolator value = (LinearInterpolator) \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_whiskas_panel_a952aebc524d9c88dc4dc7bb7e2231fd1}{valueMap}}.get(valueName);
+98 
+99         \textcolor{keywordflow}{if} (e.getStateChange() == ItemEvent.SELECTED) \{
+100             value.setActive(\textcolor{keyword}{true});
+101             \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_whiskas_panel_adafc0fc72d0d368d6298c3c44e4fa96c}{editor}}.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_graph_editor_window_a791df9707751b4a07bbd20ede78b19a0}{registerValue}}(value, valueName);
+102         \} \textcolor{keywordflow}{else} \{
+103             value.setActive(\textcolor{keyword}{false});
+104             \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_whiskas_panel_adafc0fc72d0d368d6298c3c44e4fa96c}{editor}}.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_graph_editor_window_a97634b26159ce4a4c2019bad590bc51e}{removeValue}}(valueName);
+105         \}
+106     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_whiskas_panel_a71a90d8afe5a7f2eefc72aecc4b07640}\label{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_whiskas_panel_a71a90d8afe5a7f2eefc72aecc4b07640}} 
+\index{org\+::newdawn\+::slick\+::tools\+::peditor\+::\+Whiskas\+Panel@{org\+::newdawn\+::slick\+::tools\+::peditor\+::\+Whiskas\+Panel}!link\+Emitter\+To\+Fields@{link\+Emitter\+To\+Fields}}
+\index{link\+Emitter\+To\+Fields@{link\+Emitter\+To\+Fields}!org\+::newdawn\+::slick\+::tools\+::peditor\+::\+Whiskas\+Panel@{org\+::newdawn\+::slick\+::tools\+::peditor\+::\+Whiskas\+Panel}}
+\subsubsection{\texorpdfstring{link\+Emitter\+To\+Fields()}{linkEmitterToFields()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+tools.\+peditor.\+Whiskas\+Panel.\+link\+Emitter\+To\+Fields (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1particles_1_1_configurable_emitter}{Configurable\+Emitter}}}]{emitter }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_control_panel_a55fa468548caadc265ea28c5f3214a20}{org.\+newdawn.\+slick.\+tools.\+peditor.\+Control\+Panel\+::link\+Emitter\+To\+Fields}}(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1particles_1_1_configurable_emitter}{org.\+newdawn.\+slick.\+particles.\+Configurable\+Emitter}}) 
+\end{DoxySeeAlso}
+
+\begin{DoxyCode}
+120                                                                     \{
+121         this.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_control_panel_aaa170169fa574cb6b271f782afcd2517}{emitter}} = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_control_panel_aaa170169fa574cb6b271f782afcd2517}{emitter}};
+122 
+123         \textcolor{comment}{// register the new emitter}
+124         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_whiskas_panel_adafc0fc72d0d368d6298c3c44e4fa96c}{editor}}.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_graph_editor_window_a730b1623fd758a872f24f7593f8fbafb}{setLinkedEmitter}}(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_control_panel_aaa170169fa574cb6b271f782afcd2517}{emitter}});
+125 
+126         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_whiskas_panel_a952aebc524d9c88dc4dc7bb7e2231fd1}{valueMap}}.clear();
+127         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_whiskas_panel_aa8fd4ce760ea12d13153842f6dc4c902}{linkToEmitter}}(\textcolor{stringliteral}{"Alpha"}, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_control_panel_aaa170169fa574cb6b271f782afcd2517}{emitter}}.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1particles_1_1_configurable_emitter_a46fc28beed2b0a093edec2a9b6f4f03e}{alpha}});
+128         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_whiskas_panel_aa8fd4ce760ea12d13153842f6dc4c902}{linkToEmitter}}(\textcolor{stringliteral}{"Size"}, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_control_panel_aaa170169fa574cb6b271f782afcd2517}{emitter}}.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1particles_1_1_configurable_emitter_a750a7c4137618e73303061196da59ac2}{size}});
+129         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_whiskas_panel_aa8fd4ce760ea12d13153842f6dc4c902}{linkToEmitter}}(\textcolor{stringliteral}{"Velocity"}, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_control_panel_aaa170169fa574cb6b271f782afcd2517}{emitter}}.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1particles_1_1_configurable_emitter_a5d72439294c47104915106a1395010f8}{velocity}});
+130         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_whiskas_panel_aa8fd4ce760ea12d13153842f6dc4c902}{linkToEmitter}}(\textcolor{stringliteral}{"ScaleY"}, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_control_panel_aaa170169fa574cb6b271f782afcd2517}{emitter}}.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1particles_1_1_configurable_emitter_a3053f632afced7caddded1c79bb75193}{scaleY}});
+131 
+132         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_whiskas_panel_adafc0fc72d0d368d6298c3c44e4fa96c}{editor}}.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_graph_editor_window_a0b37256a05613c6413adbe156255639b}{setFirstProperty}}();
+133     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_whiskas_panel_aa8fd4ce760ea12d13153842f6dc4c902}\label{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_whiskas_panel_aa8fd4ce760ea12d13153842f6dc4c902}} 
+\index{org\+::newdawn\+::slick\+::tools\+::peditor\+::\+Whiskas\+Panel@{org\+::newdawn\+::slick\+::tools\+::peditor\+::\+Whiskas\+Panel}!link\+To\+Emitter@{link\+To\+Emitter}}
+\index{link\+To\+Emitter@{link\+To\+Emitter}!org\+::newdawn\+::slick\+::tools\+::peditor\+::\+Whiskas\+Panel@{org\+::newdawn\+::slick\+::tools\+::peditor\+::\+Whiskas\+Panel}}
+\subsubsection{\texorpdfstring{link\+To\+Emitter()}{linkToEmitter()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+tools.\+peditor.\+Whiskas\+Panel.\+link\+To\+Emitter (\begin{DoxyParamCaption}\item[{String}]{name,  }\item[{\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1particles_1_1_configurable_emitter_1_1_linear_interpolator}{Linear\+Interpolator}}}]{interpol }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+Link this set of controls to a linear interpolater within the particle emitter
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The name of the article emitter being linked \\
+\hline
+{\em interpol} & The interpolator being configured \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+141                                                                          \{
+142         \textcolor{comment}{// put to value map}
+143         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_whiskas_panel_a952aebc524d9c88dc4dc7bb7e2231fd1}{valueMap}}.put(name, interpol);
+144 
+145         \textcolor{comment}{// now update the checkbox to represent the state of the given}
+146         \textcolor{comment}{// interpolator}
+147         \textcolor{keywordtype}{boolean} checked = interpol.isActive();
+148         JCheckBox enableControl = (JCheckBox) \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_whiskas_panel_a299a865d47b6d893171286b501af69cb}{valueNameToControl}}.get(name);
+149         enableControl.setSelected(\textcolor{keyword}{false});
+150         \textcolor{keywordflow}{if} (checked)
+151             enableControl.setSelected(checked);
+152     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_whiskas_panel_a4686898fc7dbd9aa6fd3ca5d3f850e50}\label{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_whiskas_panel_a4686898fc7dbd9aa6fd3ca5d3f850e50}} 
+\index{org\+::newdawn\+::slick\+::tools\+::peditor\+::\+Whiskas\+Panel@{org\+::newdawn\+::slick\+::tools\+::peditor\+::\+Whiskas\+Panel}!set\+Editor@{set\+Editor}}
+\index{set\+Editor@{set\+Editor}!org\+::newdawn\+::slick\+::tools\+::peditor\+::\+Whiskas\+Panel@{org\+::newdawn\+::slick\+::tools\+::peditor\+::\+Whiskas\+Panel}}
+\subsubsection{\texorpdfstring{set\+Editor()}{setEditor()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+tools.\+peditor.\+Whiskas\+Panel.\+set\+Editor (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_graph_editor_window}{Graph\+Editor\+Window}}}]{editor }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Links this whiskas panel to the given editor
+
+
+\begin{DoxyParams}{Parameters}
+{\em editor} & The particle editor in use \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+113                                                     \{
+114         this.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_whiskas_panel_adafc0fc72d0d368d6298c3c44e4fa96c}{editor}} = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_whiskas_panel_adafc0fc72d0d368d6298c3c44e4fa96c}{editor}};
+115     \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_whiskas_panel_adff62f4a99ab444f80c37b40d9ff0489}\label{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_whiskas_panel_adff62f4a99ab444f80c37b40d9ff0489}} 
+\index{org\+::newdawn\+::slick\+::tools\+::peditor\+::\+Whiskas\+Panel@{org\+::newdawn\+::slick\+::tools\+::peditor\+::\+Whiskas\+Panel}!control\+To\+Value\+Name@{control\+To\+Value\+Name}}
+\index{control\+To\+Value\+Name@{control\+To\+Value\+Name}!org\+::newdawn\+::slick\+::tools\+::peditor\+::\+Whiskas\+Panel@{org\+::newdawn\+::slick\+::tools\+::peditor\+::\+Whiskas\+Panel}}
+\subsubsection{\texorpdfstring{control\+To\+Value\+Name}{controlToValueName}}
+{\footnotesize\ttfamily Hash\+Map org.\+newdawn.\+slick.\+tools.\+peditor.\+Whiskas\+Panel.\+control\+To\+Value\+Name = new Hash\+Map()\hspace{0.3cm}{\ttfamily [private]}}
+
+key\+: control, value\+: name of value \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_whiskas_panel_adafc0fc72d0d368d6298c3c44e4fa96c}\label{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_whiskas_panel_adafc0fc72d0d368d6298c3c44e4fa96c}} 
+\index{org\+::newdawn\+::slick\+::tools\+::peditor\+::\+Whiskas\+Panel@{org\+::newdawn\+::slick\+::tools\+::peditor\+::\+Whiskas\+Panel}!editor@{editor}}
+\index{editor@{editor}!org\+::newdawn\+::slick\+::tools\+::peditor\+::\+Whiskas\+Panel@{org\+::newdawn\+::slick\+::tools\+::peditor\+::\+Whiskas\+Panel}}
+\subsubsection{\texorpdfstring{editor}{editor}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_graph_editor_window}{Graph\+Editor\+Window}} org.\+newdawn.\+slick.\+tools.\+peditor.\+Whiskas\+Panel.\+editor\hspace{0.3cm}{\ttfamily [private]}}
+
+The window used to configure the linear interpolation graphs \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_whiskas_panel_a56716629f78624b7be34453302c0699c}\label{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_whiskas_panel_a56716629f78624b7be34453302c0699c}} 
+\index{org\+::newdawn\+::slick\+::tools\+::peditor\+::\+Whiskas\+Panel@{org\+::newdawn\+::slick\+::tools\+::peditor\+::\+Whiskas\+Panel}!offset@{offset}}
+\index{offset@{offset}!org\+::newdawn\+::slick\+::tools\+::peditor\+::\+Whiskas\+Panel@{org\+::newdawn\+::slick\+::tools\+::peditor\+::\+Whiskas\+Panel}}
+\subsubsection{\texorpdfstring{offset}{offset}}
+{\footnotesize\ttfamily int org.\+newdawn.\+slick.\+tools.\+peditor.\+Whiskas\+Panel.\+offset = 25\hspace{0.3cm}{\ttfamily [private]}}
+
+The offset into the panel \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_whiskas_panel_a952aebc524d9c88dc4dc7bb7e2231fd1}\label{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_whiskas_panel_a952aebc524d9c88dc4dc7bb7e2231fd1}} 
+\index{org\+::newdawn\+::slick\+::tools\+::peditor\+::\+Whiskas\+Panel@{org\+::newdawn\+::slick\+::tools\+::peditor\+::\+Whiskas\+Panel}!value\+Map@{value\+Map}}
+\index{value\+Map@{value\+Map}!org\+::newdawn\+::slick\+::tools\+::peditor\+::\+Whiskas\+Panel@{org\+::newdawn\+::slick\+::tools\+::peditor\+::\+Whiskas\+Panel}}
+\subsubsection{\texorpdfstring{value\+Map}{valueMap}}
+{\footnotesize\ttfamily Hash\+Map org.\+newdawn.\+slick.\+tools.\+peditor.\+Whiskas\+Panel.\+value\+Map = new Hash\+Map()\hspace{0.3cm}{\ttfamily [private]}}
+
+key\+: name, value\+: emitter value \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_whiskas_panel_a299a865d47b6d893171286b501af69cb}\label{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_whiskas_panel_a299a865d47b6d893171286b501af69cb}} 
+\index{org\+::newdawn\+::slick\+::tools\+::peditor\+::\+Whiskas\+Panel@{org\+::newdawn\+::slick\+::tools\+::peditor\+::\+Whiskas\+Panel}!value\+Name\+To\+Control@{value\+Name\+To\+Control}}
+\index{value\+Name\+To\+Control@{value\+Name\+To\+Control}!org\+::newdawn\+::slick\+::tools\+::peditor\+::\+Whiskas\+Panel@{org\+::newdawn\+::slick\+::tools\+::peditor\+::\+Whiskas\+Panel}}
+\subsubsection{\texorpdfstring{value\+Name\+To\+Control}{valueNameToControl}}
+{\footnotesize\ttfamily Hash\+Map org.\+newdawn.\+slick.\+tools.\+peditor.\+Whiskas\+Panel.\+value\+Name\+To\+Control = new Hash\+Map()\hspace{0.3cm}{\ttfamily [private]}}
+
+key\+: value name, value\+: control 

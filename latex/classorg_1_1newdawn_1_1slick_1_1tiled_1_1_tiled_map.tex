@@ -1,0 +1,1564 @@
+\hypertarget{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map}{}\section{org.\+newdawn.\+slick.\+tiled.\+Tiled\+Map Class Reference}
+\label{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map}\index{org.\+newdawn.\+slick.\+tiled.\+Tiled\+Map@{org.\+newdawn.\+slick.\+tiled.\+Tiled\+Map}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_1_1_group_object}{Group\+Object}}
+\item 
+class \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_1_1_object_group}{Object\+Group}}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_a364569bc60c0e5a76a0e0da82c3c2a6a}{Tiled\+Map}} (String ref)  throws Slick\+Exception 
+\item 
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_a288b9b24c3f96803f9aa813516e540f5}{Tiled\+Map}} (String ref, boolean \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_a49356f102a76e7845f6dfbd4c6b70b59}{load\+Tile\+Sets}})  throws Slick\+Exception 
+\item 
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_a33061cc036aa416441dff631f1fc2c75}{Tiled\+Map}} (String ref, String tile\+Sets\+Location)  throws Slick\+Exception 
+\item 
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_a7ec50b9ecb5af0e6326dd2dbd0276c50}{Tiled\+Map}} (Input\+Stream in)  throws Slick\+Exception 
+\item 
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_a105760713bf32625e188dd4e60989aeb}{Tiled\+Map}} (Input\+Stream in, String tile\+Sets\+Location)  throws Slick\+Exception 
+\item 
+String \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_adecd3ac79ebd72721187e7646d783782}{get\+Tiles\+Location}} ()
+\item 
+int \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_a70c72f5ad1f0fb784c6bfd0dc71d0608}{get\+Layer\+Index}} (String name)
+\item 
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_image}{Image}} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_ab7e63f5e49d17b00c9f38993d0112712}{get\+Tile\+Image}} (int x, int y, int layer\+Index)
+\item 
+int \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_a1a8a716864f741b9f788138407108eb3}{get\+Width}} ()
+\item 
+int \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_a6370cae21692dded6097e8f877b62cac}{get\+Height}} ()
+\item 
+int \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_a03d0f5ea72a93c1939e97deea19a1d3a}{get\+Tile\+Height}} ()
+\item 
+int \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_a44dd7389139c646e87d056fdd1e44232}{get\+Tile\+Width}} ()
+\item 
+int \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_a03f3fac591bac6a711f9b746a21da559}{get\+Tile\+Id}} (int x, int y, int layer\+Index)
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_a83940adc9a30f701eb793b8918f26d6b}{set\+Tile\+Id}} (int x, int y, int layer\+Index, int tileid)
+\item 
+String \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_a128392c0d3df060a45af99e04e1860d1}{get\+Map\+Property}} (String property\+Name, String def)
+\item 
+String \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_a3d0f5d0eab64ef750d18721530e3a43c}{get\+Layer\+Property}} (int layer\+Index, String property\+Name, String def)
+\item 
+String \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_aea96107a7e2b3c843771ae8c0f691368}{get\+Tile\+Property}} (int tile\+ID, String property\+Name, String def)
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_a313dd901616b31c772f213675d236389}{render}} (int x, int y)
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_a1348610840bcb4e3767b48050533b410}{render}} (int x, int y, int layer)
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_a2d681036859467cf77a235e0b082e6dc}{render}} (int x, int y, int sx, int sy, int \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_a13b00efd90dfee0ccc7474310e40199e}{width}}, int \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_a5f9af8e6eb820e35327c4290d14c0bd7}{height}})
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_a379329f5ea96f9fffcc9a55d18d32312}{render}} (int x, int y, int sx, int sy, int \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_a13b00efd90dfee0ccc7474310e40199e}{width}}, int \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_a5f9af8e6eb820e35327c4290d14c0bd7}{height}}, int l, boolean line\+By\+Line)
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_af25ff018d2ede1a3a57c27b6cb64e132}{render}} (int x, int y, int sx, int sy, int \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_a13b00efd90dfee0ccc7474310e40199e}{width}}, int \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_a5f9af8e6eb820e35327c4290d14c0bd7}{height}}, boolean line\+By\+Line)
+\item 
+int \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_a0d39d942ba61034ae79dfa9cec23905c}{get\+Layer\+Count}} ()
+\item 
+int \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_a349e3cf63beff71c33ae39a451dff398}{get\+Tile\+Set\+Count}} ()
+\item 
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tile_set}{Tile\+Set}} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_a3a39c575b5073bbb6bef273d27b3e73a}{get\+Tile\+Set}} (int index)
+\item 
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tile_set}{Tile\+Set}} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_acc1970d3267b2e382887f081242a8979}{get\+Tile\+Set\+By\+G\+ID}} (int gid)
+\item 
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tile_set}{Tile\+Set}} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_a136e9d5ff92016dcfaf8effa027147a2}{find\+Tile\+Set}} (int gid)
+\item 
+int \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_aa39650c84fe749bbe63ee1f65a80df20}{get\+Object\+Group\+Count}} ()
+\item 
+int \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_a445ccc51d54dfa01c589de1c957cce0c}{get\+Object\+Count}} (int group\+ID)
+\item 
+String \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_a4d3d91d20ab0a138825576fc0ccf0e51}{get\+Object\+Name}} (int group\+ID, int object\+ID)
+\item 
+String \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_a3403ac0fbe6152da4ed10ab85cd9a6bd}{get\+Object\+Type}} (int group\+ID, int object\+ID)
+\item 
+int \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_a1f3254dc5845b361c2cbde74f587d4c1}{get\+ObjectX}} (int group\+ID, int object\+ID)
+\item 
+int \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_a690410873e8b1ddcf677545432fb44f7}{get\+ObjectY}} (int group\+ID, int object\+ID)
+\item 
+int \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_afa4bb340b71651c7ac0b0a372f22ab60}{get\+Object\+Width}} (int group\+ID, int object\+ID)
+\item 
+int \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_a2da39e5d72913b52ebb5a12397724f96}{get\+Object\+Height}} (int group\+ID, int object\+ID)
+\item 
+String \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_a831cc73584eada0493627505cba1a42a}{get\+Object\+Image}} (int group\+ID, int object\+ID)
+\item 
+String \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_ac73d3772b22f8fc9e200b9f3db40116c}{get\+Object\+Property}} (int group\+ID, int object\+ID, String property\+Name, String def)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_a325186ad96c5d26d7565e166ff1a66dd}{render\+Isometric\+Map}} (int x, int y, int sx, int sy, int \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_a13b00efd90dfee0ccc7474310e40199e}{width}}, int \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_a5f9af8e6eb820e35327c4290d14c0bd7}{height}}, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_layer}{Layer}} layer, boolean line\+By\+Line)
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_acf9160a21ea260cfce93e14567252781}{rendered\+Line}} (int visualY, int mapY, int layer)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_a13b00efd90dfee0ccc7474310e40199e}{width}}
+\item 
+int \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_a5f9af8e6eb820e35327c4290d14c0bd7}{height}}
+\item 
+int \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_a35bfb6f4f23b344d4ad3f9bda198093e}{tile\+Width}}
+\item 
+int \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_aa521f50d236247a335994bba33b0baa7}{tile\+Height}}
+\item 
+String \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_ad72e470aa9510074aae12dab7968ec1f}{tiles\+Location}}
+\item 
+Properties \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_ace934059dd995f4bda5f4c1534df9d30}{props}}
+\item 
+Array\+List \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_a4fd72e23a7aaf6f85905f4bf78e2ce5f}{tile\+Sets}} = new Array\+List()
+\item 
+Array\+List \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_a33061324d017a4cd8f41d04e0c60ac27}{layers}} = new Array\+List()
+\item 
+Array\+List \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_aa446ef4b07ea80ab5f112e8512ed7561}{object\+Groups}} = new Array\+List()
+\item 
+int \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_a2985b80667928eae97e82ecad9e4432c}{orientation}}
+\end{DoxyCompactItemize}
+\subsection*{Static Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static final int \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_aee2ab711fd19bcd0a1977fe0895607bb}{O\+R\+T\+H\+O\+G\+O\+N\+AL}} = 1
+\item 
+static final int \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_abe8c8af0eeec35e4533db6fab4d53cba}{I\+S\+O\+M\+E\+T\+R\+IC}} = 2
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_a8958f06ac942b890600b3c7f92bfb9be}{parse\+Int}} (String value)
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_af1c08899abc9e8c33cb08704b764e498}{load}} (Input\+Stream in, String tile\+Sets\+Location)  throws Slick\+Exception 
+\end{DoxyCompactItemize}
+\subsection*{Static Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_a195198868d47b2d95af1ec6e99591885}{set\+Headless}} (boolean h)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+boolean \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_a49356f102a76e7845f6dfbd4c6b70b59}{load\+Tile\+Sets}} = true
+\end{DoxyCompactItemize}
+\subsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static boolean \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_aebbb5f7e7df93bc341d03b8bb55a2481}{headless}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This class is intended to parse Til\+ED maps. Til\+ED is a generic tool for tile map editing and can be found at\+:
+
+\href{http://mapeditor.org/}{\tt http\+://mapeditor.\+org/}
+
+\begin{DoxyAuthor}{Author}
+kevin 
+
+Tiago Costa 
+
+Loads of others! 
+\end{DoxyAuthor}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_a364569bc60c0e5a76a0e0da82c3c2a6a}\label{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_a364569bc60c0e5a76a0e0da82c3c2a6a}} 
+\index{org\+::newdawn\+::slick\+::tiled\+::\+Tiled\+Map@{org\+::newdawn\+::slick\+::tiled\+::\+Tiled\+Map}!Tiled\+Map@{Tiled\+Map}}
+\index{Tiled\+Map@{Tiled\+Map}!org\+::newdawn\+::slick\+::tiled\+::\+Tiled\+Map@{org\+::newdawn\+::slick\+::tiled\+::\+Tiled\+Map}}
+\subsubsection{\texorpdfstring{Tiled\+Map()}{TiledMap()}\hspace{0.1cm}{\footnotesize\ttfamily [1/5]}}
+{\footnotesize\ttfamily org.\+newdawn.\+slick.\+tiled.\+Tiled\+Map.\+Tiled\+Map (\begin{DoxyParamCaption}\item[{String}]{ref }\end{DoxyParamCaption}) throws \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_slick_exception}{Slick\+Exception}}\hspace{0.3cm}{\ttfamily [inline]}}
+
+Create a new tile map based on a given T\+MX file
+
+
+\begin{DoxyParams}{Parameters}
+{\em ref} & The location of the tile map to load \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_slick_exception}{Slick\+Exception}}} & Indicates a failure to load the tilemap \\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyCode}
+89                                                       \{
+90         \textcolor{keyword}{this}(ref, \textcolor{keyword}{true});
+91     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_a288b9b24c3f96803f9aa813516e540f5}\label{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_a288b9b24c3f96803f9aa813516e540f5}} 
+\index{org\+::newdawn\+::slick\+::tiled\+::\+Tiled\+Map@{org\+::newdawn\+::slick\+::tiled\+::\+Tiled\+Map}!Tiled\+Map@{Tiled\+Map}}
+\index{Tiled\+Map@{Tiled\+Map}!org\+::newdawn\+::slick\+::tiled\+::\+Tiled\+Map@{org\+::newdawn\+::slick\+::tiled\+::\+Tiled\+Map}}
+\subsubsection{\texorpdfstring{Tiled\+Map()}{TiledMap()}\hspace{0.1cm}{\footnotesize\ttfamily [2/5]}}
+{\footnotesize\ttfamily org.\+newdawn.\+slick.\+tiled.\+Tiled\+Map.\+Tiled\+Map (\begin{DoxyParamCaption}\item[{String}]{ref,  }\item[{boolean}]{load\+Tile\+Sets }\end{DoxyParamCaption}) throws \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_slick_exception}{Slick\+Exception}}\hspace{0.3cm}{\ttfamily [inline]}}
+
+Create a new tile map based on a given T\+MX file
+
+
+\begin{DoxyParams}{Parameters}
+{\em ref} & The location of the tile map to load \\
+\hline
+{\em load\+Tile\+Sets} & True if we want to load tilesets -\/ including their image data \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_slick_exception}{Slick\+Exception}}} & Indicates a failure to load the tilemap \\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyCode}
+103                                                                             \{
+104         this.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_a49356f102a76e7845f6dfbd4c6b70b59}{loadTileSets}} = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_a49356f102a76e7845f6dfbd4c6b70b59}{loadTileSets}};
+105         ref = ref.replace(\textcolor{charliteral}{'\(\backslash\)\(\backslash\)'}, \textcolor{charliteral}{'/'});
+106         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_af1c08899abc9e8c33cb08704b764e498}{load}}(ResourceLoader.getResourceAsStream(ref),
+107                 ref.substring(0, ref.lastIndexOf(\textcolor{stringliteral}{"/"})));
+108     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_a33061cc036aa416441dff631f1fc2c75}\label{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_a33061cc036aa416441dff631f1fc2c75}} 
+\index{org\+::newdawn\+::slick\+::tiled\+::\+Tiled\+Map@{org\+::newdawn\+::slick\+::tiled\+::\+Tiled\+Map}!Tiled\+Map@{Tiled\+Map}}
+\index{Tiled\+Map@{Tiled\+Map}!org\+::newdawn\+::slick\+::tiled\+::\+Tiled\+Map@{org\+::newdawn\+::slick\+::tiled\+::\+Tiled\+Map}}
+\subsubsection{\texorpdfstring{Tiled\+Map()}{TiledMap()}\hspace{0.1cm}{\footnotesize\ttfamily [3/5]}}
+{\footnotesize\ttfamily org.\+newdawn.\+slick.\+tiled.\+Tiled\+Map.\+Tiled\+Map (\begin{DoxyParamCaption}\item[{String}]{ref,  }\item[{String}]{tile\+Sets\+Location }\end{DoxyParamCaption}) throws \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_slick_exception}{Slick\+Exception}}\hspace{0.3cm}{\ttfamily [inline]}}
+
+Create a new tile map based on a given T\+MX file
+
+
+\begin{DoxyParams}{Parameters}
+{\em ref} & The location of the tile map to load \\
+\hline
+{\em tile\+Sets\+Location} & The location where we can find the tileset images and other resources \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_slick_exception}{Slick\+Exception}}} & Indicates a failure to load the tilemap \\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyCode}
+121                                                                                \{
+122         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_af1c08899abc9e8c33cb08704b764e498}{load}}(ResourceLoader.getResourceAsStream(ref), tileSetsLocation);
+123     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_a7ec50b9ecb5af0e6326dd2dbd0276c50}\label{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_a7ec50b9ecb5af0e6326dd2dbd0276c50}} 
+\index{org\+::newdawn\+::slick\+::tiled\+::\+Tiled\+Map@{org\+::newdawn\+::slick\+::tiled\+::\+Tiled\+Map}!Tiled\+Map@{Tiled\+Map}}
+\index{Tiled\+Map@{Tiled\+Map}!org\+::newdawn\+::slick\+::tiled\+::\+Tiled\+Map@{org\+::newdawn\+::slick\+::tiled\+::\+Tiled\+Map}}
+\subsubsection{\texorpdfstring{Tiled\+Map()}{TiledMap()}\hspace{0.1cm}{\footnotesize\ttfamily [4/5]}}
+{\footnotesize\ttfamily org.\+newdawn.\+slick.\+tiled.\+Tiled\+Map.\+Tiled\+Map (\begin{DoxyParamCaption}\item[{Input\+Stream}]{in }\end{DoxyParamCaption}) throws \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_slick_exception}{Slick\+Exception}}\hspace{0.3cm}{\ttfamily [inline]}}
+
+Load a tile map from an arbitary input stream
+
+
+\begin{DoxyParams}{Parameters}
+{\em in} & The input stream to load from \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_slick_exception}{Slick\+Exception}}} & Indicates a failure to load the tilemap \\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyCode}
+133                                                           \{
+134         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_af1c08899abc9e8c33cb08704b764e498}{load}}(in, \textcolor{stringliteral}{""});
+135     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_a105760713bf32625e188dd4e60989aeb}\label{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_a105760713bf32625e188dd4e60989aeb}} 
+\index{org\+::newdawn\+::slick\+::tiled\+::\+Tiled\+Map@{org\+::newdawn\+::slick\+::tiled\+::\+Tiled\+Map}!Tiled\+Map@{Tiled\+Map}}
+\index{Tiled\+Map@{Tiled\+Map}!org\+::newdawn\+::slick\+::tiled\+::\+Tiled\+Map@{org\+::newdawn\+::slick\+::tiled\+::\+Tiled\+Map}}
+\subsubsection{\texorpdfstring{Tiled\+Map()}{TiledMap()}\hspace{0.1cm}{\footnotesize\ttfamily [5/5]}}
+{\footnotesize\ttfamily org.\+newdawn.\+slick.\+tiled.\+Tiled\+Map.\+Tiled\+Map (\begin{DoxyParamCaption}\item[{Input\+Stream}]{in,  }\item[{String}]{tile\+Sets\+Location }\end{DoxyParamCaption}) throws \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_slick_exception}{Slick\+Exception}}\hspace{0.3cm}{\ttfamily [inline]}}
+
+Load a tile map from an arbitary input stream
+
+
+\begin{DoxyParams}{Parameters}
+{\em in} & The input stream to load from \\
+\hline
+{\em tile\+Sets\+Location} & The location at which we can find tileset images \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_slick_exception}{Slick\+Exception}}} & Indicates a failure to load the tilemap \\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyCode}
+148                                   \{
+149         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_af1c08899abc9e8c33cb08704b764e498}{load}}(in, tileSetsLocation);
+150     \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_a136e9d5ff92016dcfaf8effa027147a2}\label{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_a136e9d5ff92016dcfaf8effa027147a2}} 
+\index{org\+::newdawn\+::slick\+::tiled\+::\+Tiled\+Map@{org\+::newdawn\+::slick\+::tiled\+::\+Tiled\+Map}!find\+Tile\+Set@{find\+Tile\+Set}}
+\index{find\+Tile\+Set@{find\+Tile\+Set}!org\+::newdawn\+::slick\+::tiled\+::\+Tiled\+Map@{org\+::newdawn\+::slick\+::tiled\+::\+Tiled\+Map}}
+\subsubsection{\texorpdfstring{find\+Tile\+Set()}{findTileSet()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tile_set}{Tile\+Set}} org.\+newdawn.\+slick.\+tiled.\+Tiled\+Map.\+find\+Tile\+Set (\begin{DoxyParamCaption}\item[{int}]{gid }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Find a tile for a given global tile id
+
+
+\begin{DoxyParams}{Parameters}
+{\em gid} & The global tile id we\textquotesingle{}re looking for \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The tileset in which that tile lives or null if the gid is not defined 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+746                                         \{
+747         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_a4fd72e23a7aaf6f85905f4bf78e2ce5f}{tileSets}}.size(); i++) \{
+748             TileSet \textcolor{keyword}{set} = (TileSet) \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_a4fd72e23a7aaf6f85905f4bf78e2ce5f}{tileSets}}.get(i);
+749 
+750             \textcolor{keywordflow}{if} (\textcolor{keyword}{set}.contains(gid)) \{
+751                 \textcolor{keywordflow}{return} \textcolor{keyword}{set};
+752             \}
+753         \}
+754 
+755         \textcolor{keywordflow}{return} null;
+756     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_a6370cae21692dded6097e8f877b62cac}\label{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_a6370cae21692dded6097e8f877b62cac}} 
+\index{org\+::newdawn\+::slick\+::tiled\+::\+Tiled\+Map@{org\+::newdawn\+::slick\+::tiled\+::\+Tiled\+Map}!get\+Height@{get\+Height}}
+\index{get\+Height@{get\+Height}!org\+::newdawn\+::slick\+::tiled\+::\+Tiled\+Map@{org\+::newdawn\+::slick\+::tiled\+::\+Tiled\+Map}}
+\subsubsection{\texorpdfstring{get\+Height()}{getHeight()}}
+{\footnotesize\ttfamily int org.\+newdawn.\+slick.\+tiled.\+Tiled\+Map.\+get\+Height (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get the height of the map
+
+\begin{DoxyReturn}{Returns}
+The height of the map (in tiles) 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+226                            \{
+227         \textcolor{keywordflow}{return} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_a5f9af8e6eb820e35327c4290d14c0bd7}{height}};
+228     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_a0d39d942ba61034ae79dfa9cec23905c}\label{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_a0d39d942ba61034ae79dfa9cec23905c}} 
+\index{org\+::newdawn\+::slick\+::tiled\+::\+Tiled\+Map@{org\+::newdawn\+::slick\+::tiled\+::\+Tiled\+Map}!get\+Layer\+Count@{get\+Layer\+Count}}
+\index{get\+Layer\+Count@{get\+Layer\+Count}!org\+::newdawn\+::slick\+::tiled\+::\+Tiled\+Map@{org\+::newdawn\+::slick\+::tiled\+::\+Tiled\+Map}}
+\subsubsection{\texorpdfstring{get\+Layer\+Count()}{getLayerCount()}}
+{\footnotesize\ttfamily int org.\+newdawn.\+slick.\+tiled.\+Tiled\+Map.\+get\+Layer\+Count (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Retrieve a count of the number of layers available
+
+\begin{DoxyReturn}{Returns}
+The number of layers available in this map 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+571                                \{
+572         \textcolor{keywordflow}{return} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_a33061324d017a4cd8f41d04e0c60ac27}{layers}}.size();
+573     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_a70c72f5ad1f0fb784c6bfd0dc71d0608}\label{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_a70c72f5ad1f0fb784c6bfd0dc71d0608}} 
+\index{org\+::newdawn\+::slick\+::tiled\+::\+Tiled\+Map@{org\+::newdawn\+::slick\+::tiled\+::\+Tiled\+Map}!get\+Layer\+Index@{get\+Layer\+Index}}
+\index{get\+Layer\+Index@{get\+Layer\+Index}!org\+::newdawn\+::slick\+::tiled\+::\+Tiled\+Map@{org\+::newdawn\+::slick\+::tiled\+::\+Tiled\+Map}}
+\subsubsection{\texorpdfstring{get\+Layer\+Index()}{getLayerIndex()}}
+{\footnotesize\ttfamily int org.\+newdawn.\+slick.\+tiled.\+Tiled\+Map.\+get\+Layer\+Index (\begin{DoxyParamCaption}\item[{String}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get the index of the layer with given name
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The name of the tile to search for \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The index of the layer or -\/1 if there is no layer with given name 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+169                                           \{
+170         \textcolor{keywordtype}{int} idx = 0;
+171 
+172         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_a33061324d017a4cd8f41d04e0c60ac27}{layers}}.size(); i++) \{
+173             Layer layer = (Layer) \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_a33061324d017a4cd8f41d04e0c60ac27}{layers}}.get(i);
+174 
+175             \textcolor{keywordflow}{if} (layer.name.equals(name)) \{
+176                 \textcolor{keywordflow}{return} i;
+177             \}
+178         \}
+179 
+180         \textcolor{keywordflow}{return} -1;
+181     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_a3d0f5d0eab64ef750d18721530e3a43c}\label{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_a3d0f5d0eab64ef750d18721530e3a43c}} 
+\index{org\+::newdawn\+::slick\+::tiled\+::\+Tiled\+Map@{org\+::newdawn\+::slick\+::tiled\+::\+Tiled\+Map}!get\+Layer\+Property@{get\+Layer\+Property}}
+\index{get\+Layer\+Property@{get\+Layer\+Property}!org\+::newdawn\+::slick\+::tiled\+::\+Tiled\+Map@{org\+::newdawn\+::slick\+::tiled\+::\+Tiled\+Map}}
+\subsubsection{\texorpdfstring{get\+Layer\+Property()}{getLayerProperty()}}
+{\footnotesize\ttfamily String org.\+newdawn.\+slick.\+tiled.\+Tiled\+Map.\+get\+Layer\+Property (\begin{DoxyParamCaption}\item[{int}]{layer\+Index,  }\item[{String}]{property\+Name,  }\item[{String}]{def }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get a property given to a particular layer. Note that this method will not perform well and should not be used as part of the default code path in the game loop.
+
+
+\begin{DoxyParams}{Parameters}
+{\em layer\+Index} & The index of the layer to retrieve \\
+\hline
+{\em property\+Name} & The name of the property of this layer to retrieve \\
+\hline
+{\em def} & The default value to return \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The value assigned to the property on the layer (or the default value if none is supplied) 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+314                         \{
+315         Layer layer = (Layer) \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_a33061324d017a4cd8f41d04e0c60ac27}{layers}}.get(layerIndex);
+316         \textcolor{keywordflow}{if} (layer == null || layer.props == null)
+317             \textcolor{keywordflow}{return} def;
+318         \textcolor{keywordflow}{return} layer.props.getProperty(propertyName, def);
+319     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_a128392c0d3df060a45af99e04e1860d1}\label{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_a128392c0d3df060a45af99e04e1860d1}} 
+\index{org\+::newdawn\+::slick\+::tiled\+::\+Tiled\+Map@{org\+::newdawn\+::slick\+::tiled\+::\+Tiled\+Map}!get\+Map\+Property@{get\+Map\+Property}}
+\index{get\+Map\+Property@{get\+Map\+Property}!org\+::newdawn\+::slick\+::tiled\+::\+Tiled\+Map@{org\+::newdawn\+::slick\+::tiled\+::\+Tiled\+Map}}
+\subsubsection{\texorpdfstring{get\+Map\+Property()}{getMapProperty()}}
+{\footnotesize\ttfamily String org.\+newdawn.\+slick.\+tiled.\+Tiled\+Map.\+get\+Map\+Property (\begin{DoxyParamCaption}\item[{String}]{property\+Name,  }\item[{String}]{def }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get a property given to the map. Note that this method will not perform well and should not be used as part of the default code path in the game loop.
+
+
+\begin{DoxyParams}{Parameters}
+{\em property\+Name} & The name of the property of the map to retrieve \\
+\hline
+{\em def} & The default value to return \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The value assigned to the property on the map (or the default value if none is supplied) 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+293                                                                   \{
+294         \textcolor{keywordflow}{if} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_ace934059dd995f4bda5f4c1534df9d30}{props}} == null)
+295             \textcolor{keywordflow}{return} def;
+296         \textcolor{keywordflow}{return} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_ace934059dd995f4bda5f4c1534df9d30}{props}}.getProperty(propertyName, def);
+297     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_a445ccc51d54dfa01c589de1c957cce0c}\label{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_a445ccc51d54dfa01c589de1c957cce0c}} 
+\index{org\+::newdawn\+::slick\+::tiled\+::\+Tiled\+Map@{org\+::newdawn\+::slick\+::tiled\+::\+Tiled\+Map}!get\+Object\+Count@{get\+Object\+Count}}
+\index{get\+Object\+Count@{get\+Object\+Count}!org\+::newdawn\+::slick\+::tiled\+::\+Tiled\+Map@{org\+::newdawn\+::slick\+::tiled\+::\+Tiled\+Map}}
+\subsubsection{\texorpdfstring{get\+Object\+Count()}{getObjectCount()}}
+{\footnotesize\ttfamily int org.\+newdawn.\+slick.\+tiled.\+Tiled\+Map.\+get\+Object\+Count (\begin{DoxyParamCaption}\item[{int}]{group\+ID }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns the number of objects of a specific object-\/group.
+
+
+\begin{DoxyParams}{Parameters}
+{\em group\+ID} & The index of this object-\/group \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Number of the objects in the object-\/group or -\/1, when error occurred. 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+789                                            \{
+790         \textcolor{keywordflow}{if} (groupID >= 0 && groupID < \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_aa446ef4b07ea80ab5f112e8512ed7561}{objectGroups}}.size()) \{
+791             ObjectGroup grp = (ObjectGroup) \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_aa446ef4b07ea80ab5f112e8512ed7561}{objectGroups}}.get(groupID);
+792             \textcolor{keywordflow}{return} grp.objects.size();
+793         \}
+794         \textcolor{keywordflow}{return} -1;
+795     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_aa39650c84fe749bbe63ee1f65a80df20}\label{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_aa39650c84fe749bbe63ee1f65a80df20}} 
+\index{org\+::newdawn\+::slick\+::tiled\+::\+Tiled\+Map@{org\+::newdawn\+::slick\+::tiled\+::\+Tiled\+Map}!get\+Object\+Group\+Count@{get\+Object\+Group\+Count}}
+\index{get\+Object\+Group\+Count@{get\+Object\+Group\+Count}!org\+::newdawn\+::slick\+::tiled\+::\+Tiled\+Map@{org\+::newdawn\+::slick\+::tiled\+::\+Tiled\+Map}}
+\subsubsection{\texorpdfstring{get\+Object\+Group\+Count()}{getObjectGroupCount()}}
+{\footnotesize\ttfamily int org.\+newdawn.\+slick.\+tiled.\+Tiled\+Map.\+get\+Object\+Group\+Count (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns the number of object-\/groups defined in the map.
+
+\begin{DoxyReturn}{Returns}
+Number of object-\/groups on the map 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+777                                      \{
+778         \textcolor{keywordflow}{return} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_aa446ef4b07ea80ab5f112e8512ed7561}{objectGroups}}.size();
+779     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_a2da39e5d72913b52ebb5a12397724f96}\label{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_a2da39e5d72913b52ebb5a12397724f96}} 
+\index{org\+::newdawn\+::slick\+::tiled\+::\+Tiled\+Map@{org\+::newdawn\+::slick\+::tiled\+::\+Tiled\+Map}!get\+Object\+Height@{get\+Object\+Height}}
+\index{get\+Object\+Height@{get\+Object\+Height}!org\+::newdawn\+::slick\+::tiled\+::\+Tiled\+Map@{org\+::newdawn\+::slick\+::tiled\+::\+Tiled\+Map}}
+\subsubsection{\texorpdfstring{get\+Object\+Height()}{getObjectHeight()}}
+{\footnotesize\ttfamily int org.\+newdawn.\+slick.\+tiled.\+Tiled\+Map.\+get\+Object\+Height (\begin{DoxyParamCaption}\item[{int}]{group\+ID,  }\item[{int}]{object\+ID }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns the height of a specific object from a specific group.
+
+
+\begin{DoxyParams}{Parameters}
+{\em group\+ID} & Index of a group \\
+\hline
+{\em object\+ID} & Index of an object \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The height of an object, or -\/1, when error occurred 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+906                                                           \{
+907         \textcolor{keywordflow}{if} (groupID >= 0 && groupID < \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_aa446ef4b07ea80ab5f112e8512ed7561}{objectGroups}}.size()) \{
+908             ObjectGroup grp = (ObjectGroup) \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_aa446ef4b07ea80ab5f112e8512ed7561}{objectGroups}}.get(groupID);
+909             \textcolor{keywordflow}{if} (objectID >= 0 && objectID < grp.objects.size()) \{
+910                 GroupObject \textcolor{keywordtype}{object} = (GroupObject) grp.objects.get(objectID);
+911                 \textcolor{keywordflow}{return} \textcolor{keywordtype}{object}.height;
+912             \}
+913         \}
+914         \textcolor{keywordflow}{return} -1;
+915     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_a831cc73584eada0493627505cba1a42a}\label{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_a831cc73584eada0493627505cba1a42a}} 
+\index{org\+::newdawn\+::slick\+::tiled\+::\+Tiled\+Map@{org\+::newdawn\+::slick\+::tiled\+::\+Tiled\+Map}!get\+Object\+Image@{get\+Object\+Image}}
+\index{get\+Object\+Image@{get\+Object\+Image}!org\+::newdawn\+::slick\+::tiled\+::\+Tiled\+Map@{org\+::newdawn\+::slick\+::tiled\+::\+Tiled\+Map}}
+\subsubsection{\texorpdfstring{get\+Object\+Image()}{getObjectImage()}}
+{\footnotesize\ttfamily String org.\+newdawn.\+slick.\+tiled.\+Tiled\+Map.\+get\+Object\+Image (\begin{DoxyParamCaption}\item[{int}]{group\+ID,  }\item[{int}]{object\+ID }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Retrieve the image source property for a given object
+
+
+\begin{DoxyParams}{Parameters}
+{\em group\+ID} & Index of a group \\
+\hline
+{\em object\+ID} & Index of an object \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The image source reference or null if one isn\textquotesingle{}t defined 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+926                                                             \{
+927         \textcolor{keywordflow}{if} (groupID >= 0 && groupID < \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_aa446ef4b07ea80ab5f112e8512ed7561}{objectGroups}}.size()) \{
+928             ObjectGroup grp = (ObjectGroup) \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_aa446ef4b07ea80ab5f112e8512ed7561}{objectGroups}}.get(groupID);
+929             \textcolor{keywordflow}{if} (objectID >= 0 && objectID < grp.objects.size()) \{
+930                 GroupObject \textcolor{keywordtype}{object} = (GroupObject) grp.objects.get(objectID);
+931 
+932                 \textcolor{keywordflow}{if} (\textcolor{keywordtype}{object} == null) \{
+933                     \textcolor{keywordflow}{return} null;
+934                 \}
+935 
+936                 \textcolor{keywordflow}{return} \textcolor{keywordtype}{object}.image;
+937             \}
+938         \}
+939 
+940         \textcolor{keywordflow}{return} null;
+941     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_a4d3d91d20ab0a138825576fc0ccf0e51}\label{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_a4d3d91d20ab0a138825576fc0ccf0e51}} 
+\index{org\+::newdawn\+::slick\+::tiled\+::\+Tiled\+Map@{org\+::newdawn\+::slick\+::tiled\+::\+Tiled\+Map}!get\+Object\+Name@{get\+Object\+Name}}
+\index{get\+Object\+Name@{get\+Object\+Name}!org\+::newdawn\+::slick\+::tiled\+::\+Tiled\+Map@{org\+::newdawn\+::slick\+::tiled\+::\+Tiled\+Map}}
+\subsubsection{\texorpdfstring{get\+Object\+Name()}{getObjectName()}}
+{\footnotesize\ttfamily String org.\+newdawn.\+slick.\+tiled.\+Tiled\+Map.\+get\+Object\+Name (\begin{DoxyParamCaption}\item[{int}]{group\+ID,  }\item[{int}]{object\+ID }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Return the name of a specific object from a specific group.
+
+
+\begin{DoxyParams}{Parameters}
+{\em group\+ID} & Index of a group \\
+\hline
+{\em object\+ID} & Index of an object \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The name of an object or null, when error occurred 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+806                                                            \{
+807         \textcolor{keywordflow}{if} (groupID >= 0 && groupID < \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_aa446ef4b07ea80ab5f112e8512ed7561}{objectGroups}}.size()) \{
+808             ObjectGroup grp = (ObjectGroup) \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_aa446ef4b07ea80ab5f112e8512ed7561}{objectGroups}}.get(groupID);
+809             \textcolor{keywordflow}{if} (objectID >= 0 && objectID < grp.objects.size()) \{
+810                 GroupObject \textcolor{keywordtype}{object} = (GroupObject) grp.objects.get(objectID);
+811                 \textcolor{keywordflow}{return} \textcolor{keywordtype}{object}.name;
+812             \}
+813         \}
+814         \textcolor{keywordflow}{return} null;
+815     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_ac73d3772b22f8fc9e200b9f3db40116c}\label{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_ac73d3772b22f8fc9e200b9f3db40116c}} 
+\index{org\+::newdawn\+::slick\+::tiled\+::\+Tiled\+Map@{org\+::newdawn\+::slick\+::tiled\+::\+Tiled\+Map}!get\+Object\+Property@{get\+Object\+Property}}
+\index{get\+Object\+Property@{get\+Object\+Property}!org\+::newdawn\+::slick\+::tiled\+::\+Tiled\+Map@{org\+::newdawn\+::slick\+::tiled\+::\+Tiled\+Map}}
+\subsubsection{\texorpdfstring{get\+Object\+Property()}{getObjectProperty()}}
+{\footnotesize\ttfamily String org.\+newdawn.\+slick.\+tiled.\+Tiled\+Map.\+get\+Object\+Property (\begin{DoxyParamCaption}\item[{int}]{group\+ID,  }\item[{int}]{object\+ID,  }\item[{String}]{property\+Name,  }\item[{String}]{def }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Looks for a property with the given name and returns it\textquotesingle{}s value. If no property is found, def is returned.
+
+
+\begin{DoxyParams}{Parameters}
+{\em group\+ID} & Index of a group \\
+\hline
+{\em object\+ID} & Index of an object \\
+\hline
+{\em property\+Name} & Name of a property \\
+\hline
+{\em def} & default value to return, if no property is found \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The value of the property with the given name or def, if there is no property with that name. 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+959                                              \{
+960         \textcolor{keywordflow}{if} (groupID >= 0 && groupID < \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_aa446ef4b07ea80ab5f112e8512ed7561}{objectGroups}}.size()) \{
+961             ObjectGroup grp = (ObjectGroup) \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_aa446ef4b07ea80ab5f112e8512ed7561}{objectGroups}}.get(groupID);
+962             \textcolor{keywordflow}{if} (objectID >= 0 && objectID < grp.objects.size()) \{
+963                 GroupObject \textcolor{keywordtype}{object} = (GroupObject) grp.objects.get(objectID);
+964 
+965                 \textcolor{keywordflow}{if} (\textcolor{keywordtype}{object} == null) \{
+966                     \textcolor{keywordflow}{return} def;
+967                 \}
+968                 \textcolor{keywordflow}{if} (\textcolor{keywordtype}{object}.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_ace934059dd995f4bda5f4c1534df9d30}{props}} == null) \{
+969                     \textcolor{keywordflow}{return} def;
+970                 \}
+971 
+972                 \textcolor{keywordflow}{return} \textcolor{keywordtype}{object}.props.getProperty(propertyName, def);
+973             \}
+974         \}
+975         \textcolor{keywordflow}{return} def;
+976     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_a3403ac0fbe6152da4ed10ab85cd9a6bd}\label{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_a3403ac0fbe6152da4ed10ab85cd9a6bd}} 
+\index{org\+::newdawn\+::slick\+::tiled\+::\+Tiled\+Map@{org\+::newdawn\+::slick\+::tiled\+::\+Tiled\+Map}!get\+Object\+Type@{get\+Object\+Type}}
+\index{get\+Object\+Type@{get\+Object\+Type}!org\+::newdawn\+::slick\+::tiled\+::\+Tiled\+Map@{org\+::newdawn\+::slick\+::tiled\+::\+Tiled\+Map}}
+\subsubsection{\texorpdfstring{get\+Object\+Type()}{getObjectType()}}
+{\footnotesize\ttfamily String org.\+newdawn.\+slick.\+tiled.\+Tiled\+Map.\+get\+Object\+Type (\begin{DoxyParamCaption}\item[{int}]{group\+ID,  }\item[{int}]{object\+ID }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Return the type of an specific object from a specific group.
+
+
+\begin{DoxyParams}{Parameters}
+{\em group\+ID} & Index of a group \\
+\hline
+{\em object\+ID} & Index of an object \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The type of an object or null, when error occurred 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+826                                                            \{
+827         \textcolor{keywordflow}{if} (groupID >= 0 && groupID < \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_aa446ef4b07ea80ab5f112e8512ed7561}{objectGroups}}.size()) \{
+828             ObjectGroup grp = (ObjectGroup) \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_aa446ef4b07ea80ab5f112e8512ed7561}{objectGroups}}.get(groupID);
+829             \textcolor{keywordflow}{if} (objectID >= 0 && objectID < grp.objects.size()) \{
+830                 GroupObject \textcolor{keywordtype}{object} = (GroupObject) grp.objects.get(objectID);
+831                 \textcolor{keywordflow}{return} \textcolor{keywordtype}{object}.type;
+832             \}
+833         \}
+834         \textcolor{keywordflow}{return} null;
+835     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_afa4bb340b71651c7ac0b0a372f22ab60}\label{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_afa4bb340b71651c7ac0b0a372f22ab60}} 
+\index{org\+::newdawn\+::slick\+::tiled\+::\+Tiled\+Map@{org\+::newdawn\+::slick\+::tiled\+::\+Tiled\+Map}!get\+Object\+Width@{get\+Object\+Width}}
+\index{get\+Object\+Width@{get\+Object\+Width}!org\+::newdawn\+::slick\+::tiled\+::\+Tiled\+Map@{org\+::newdawn\+::slick\+::tiled\+::\+Tiled\+Map}}
+\subsubsection{\texorpdfstring{get\+Object\+Width()}{getObjectWidth()}}
+{\footnotesize\ttfamily int org.\+newdawn.\+slick.\+tiled.\+Tiled\+Map.\+get\+Object\+Width (\begin{DoxyParamCaption}\item[{int}]{group\+ID,  }\item[{int}]{object\+ID }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns the width of a specific object from a specific group.
+
+
+\begin{DoxyParams}{Parameters}
+{\em group\+ID} & Index of a group \\
+\hline
+{\em object\+ID} & Index of an object \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The width of an object, or -\/1, when error occurred 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+886                                                          \{
+887         \textcolor{keywordflow}{if} (groupID >= 0 && groupID < \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_aa446ef4b07ea80ab5f112e8512ed7561}{objectGroups}}.size()) \{
+888             ObjectGroup grp = (ObjectGroup) \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_aa446ef4b07ea80ab5f112e8512ed7561}{objectGroups}}.get(groupID);
+889             \textcolor{keywordflow}{if} (objectID >= 0 && objectID < grp.objects.size()) \{
+890                 GroupObject \textcolor{keywordtype}{object} = (GroupObject) grp.objects.get(objectID);
+891                 \textcolor{keywordflow}{return} \textcolor{keywordtype}{object}.width;
+892             \}
+893         \}
+894         \textcolor{keywordflow}{return} -1;
+895     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_a1f3254dc5845b361c2cbde74f587d4c1}\label{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_a1f3254dc5845b361c2cbde74f587d4c1}} 
+\index{org\+::newdawn\+::slick\+::tiled\+::\+Tiled\+Map@{org\+::newdawn\+::slick\+::tiled\+::\+Tiled\+Map}!get\+ObjectX@{get\+ObjectX}}
+\index{get\+ObjectX@{get\+ObjectX}!org\+::newdawn\+::slick\+::tiled\+::\+Tiled\+Map@{org\+::newdawn\+::slick\+::tiled\+::\+Tiled\+Map}}
+\subsubsection{\texorpdfstring{get\+Object\+X()}{getObjectX()}}
+{\footnotesize\ttfamily int org.\+newdawn.\+slick.\+tiled.\+Tiled\+Map.\+get\+ObjectX (\begin{DoxyParamCaption}\item[{int}]{group\+ID,  }\item[{int}]{object\+ID }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns the x-\/coordinate of a specific object from a specific group.
+
+
+\begin{DoxyParams}{Parameters}
+{\em group\+ID} & Index of a group \\
+\hline
+{\em object\+ID} & Index of an object \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The x-\/coordinate of an object, or -\/1, when error occurred 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+846                                                      \{
+847         \textcolor{keywordflow}{if} (groupID >= 0 && groupID < \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_aa446ef4b07ea80ab5f112e8512ed7561}{objectGroups}}.size()) \{
+848             ObjectGroup grp = (ObjectGroup) \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_aa446ef4b07ea80ab5f112e8512ed7561}{objectGroups}}.get(groupID);
+849             \textcolor{keywordflow}{if} (objectID >= 0 && objectID < grp.objects.size()) \{
+850                 GroupObject \textcolor{keywordtype}{object} = (GroupObject) grp.objects.get(objectID);
+851                 \textcolor{keywordflow}{return} \textcolor{keywordtype}{object}.x;
+852             \}
+853         \}
+854         \textcolor{keywordflow}{return} -1;
+855     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_a690410873e8b1ddcf677545432fb44f7}\label{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_a690410873e8b1ddcf677545432fb44f7}} 
+\index{org\+::newdawn\+::slick\+::tiled\+::\+Tiled\+Map@{org\+::newdawn\+::slick\+::tiled\+::\+Tiled\+Map}!get\+ObjectY@{get\+ObjectY}}
+\index{get\+ObjectY@{get\+ObjectY}!org\+::newdawn\+::slick\+::tiled\+::\+Tiled\+Map@{org\+::newdawn\+::slick\+::tiled\+::\+Tiled\+Map}}
+\subsubsection{\texorpdfstring{get\+Object\+Y()}{getObjectY()}}
+{\footnotesize\ttfamily int org.\+newdawn.\+slick.\+tiled.\+Tiled\+Map.\+get\+ObjectY (\begin{DoxyParamCaption}\item[{int}]{group\+ID,  }\item[{int}]{object\+ID }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns the y-\/coordinate of a specific object from a specific group.
+
+
+\begin{DoxyParams}{Parameters}
+{\em group\+ID} & Index of a group \\
+\hline
+{\em object\+ID} & Index of an object \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The y-\/coordinate of an object, or -\/1, when error occurred 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+866                                                      \{
+867         \textcolor{keywordflow}{if} (groupID >= 0 && groupID < \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_aa446ef4b07ea80ab5f112e8512ed7561}{objectGroups}}.size()) \{
+868             ObjectGroup grp = (ObjectGroup) \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_aa446ef4b07ea80ab5f112e8512ed7561}{objectGroups}}.get(groupID);
+869             \textcolor{keywordflow}{if} (objectID >= 0 && objectID < grp.objects.size()) \{
+870                 GroupObject \textcolor{keywordtype}{object} = (GroupObject) grp.objects.get(objectID);
+871                 \textcolor{keywordflow}{return} \textcolor{keywordtype}{object}.y;
+872             \}
+873         \}
+874         \textcolor{keywordflow}{return} -1;
+875     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_a03d0f5ea72a93c1939e97deea19a1d3a}\label{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_a03d0f5ea72a93c1939e97deea19a1d3a}} 
+\index{org\+::newdawn\+::slick\+::tiled\+::\+Tiled\+Map@{org\+::newdawn\+::slick\+::tiled\+::\+Tiled\+Map}!get\+Tile\+Height@{get\+Tile\+Height}}
+\index{get\+Tile\+Height@{get\+Tile\+Height}!org\+::newdawn\+::slick\+::tiled\+::\+Tiled\+Map@{org\+::newdawn\+::slick\+::tiled\+::\+Tiled\+Map}}
+\subsubsection{\texorpdfstring{get\+Tile\+Height()}{getTileHeight()}}
+{\footnotesize\ttfamily int org.\+newdawn.\+slick.\+tiled.\+Tiled\+Map.\+get\+Tile\+Height (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get the height of a single tile
+
+\begin{DoxyReturn}{Returns}
+The height of a single tile (in pixels) 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+235                                \{
+236         \textcolor{keywordflow}{return} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_aa521f50d236247a335994bba33b0baa7}{tileHeight}};
+237     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_a03f3fac591bac6a711f9b746a21da559}\label{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_a03f3fac591bac6a711f9b746a21da559}} 
+\index{org\+::newdawn\+::slick\+::tiled\+::\+Tiled\+Map@{org\+::newdawn\+::slick\+::tiled\+::\+Tiled\+Map}!get\+Tile\+Id@{get\+Tile\+Id}}
+\index{get\+Tile\+Id@{get\+Tile\+Id}!org\+::newdawn\+::slick\+::tiled\+::\+Tiled\+Map@{org\+::newdawn\+::slick\+::tiled\+::\+Tiled\+Map}}
+\subsubsection{\texorpdfstring{get\+Tile\+Id()}{getTileId()}}
+{\footnotesize\ttfamily int org.\+newdawn.\+slick.\+tiled.\+Tiled\+Map.\+get\+Tile\+Id (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y,  }\item[{int}]{layer\+Index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get the global ID of a tile at specified location in the map
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & The x location of the tile \\
+\hline
+{\em y} & The y location of the tile \\
+\hline
+{\em layer\+Index} & The index of the layer to retireve the tile from \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The global ID of the tile 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+259                                                        \{
+260         Layer layer = (Layer) \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_a33061324d017a4cd8f41d04e0c60ac27}{layers}}.get(layerIndex);
+261         \textcolor{keywordflow}{return} layer.getTileID(x, y);
+262     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_ab7e63f5e49d17b00c9f38993d0112712}\label{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_ab7e63f5e49d17b00c9f38993d0112712}} 
+\index{org\+::newdawn\+::slick\+::tiled\+::\+Tiled\+Map@{org\+::newdawn\+::slick\+::tiled\+::\+Tiled\+Map}!get\+Tile\+Image@{get\+Tile\+Image}}
+\index{get\+Tile\+Image@{get\+Tile\+Image}!org\+::newdawn\+::slick\+::tiled\+::\+Tiled\+Map@{org\+::newdawn\+::slick\+::tiled\+::\+Tiled\+Map}}
+\subsubsection{\texorpdfstring{get\+Tile\+Image()}{getTileImage()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_image}{Image}} org.\+newdawn.\+slick.\+tiled.\+Tiled\+Map.\+get\+Tile\+Image (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y,  }\item[{int}]{layer\+Index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Gets the \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_image}{Image}} used to draw the tile at the given x and y coordinates.
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & The x coordinate of the tile whose image should be retrieved \\
+\hline
+{\em y} & The y coordinate of the tile whose image should be retrieved \\
+\hline
+{\em layer\+Index} & The index of the layer on which the tile whose image should be retrieve exists \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The image used to draw the specified tile or null if there is no image for the specified tile. 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+196                                                             \{
+197         Layer layer = (Layer) \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_a33061324d017a4cd8f41d04e0c60ac27}{layers}}.get(layerIndex);
+198 
+199         \textcolor{keywordtype}{int} tileSetIndex = layer.data[x][y][0];
+200         \textcolor{keywordflow}{if} ((tileSetIndex >= 0) && (tileSetIndex < \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_a4fd72e23a7aaf6f85905f4bf78e2ce5f}{tileSets}}.size())) \{
+201             TileSet tileSet = (TileSet) \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_a4fd72e23a7aaf6f85905f4bf78e2ce5f}{tileSets}}.get(tileSetIndex);
+202 
+203             \textcolor{keywordtype}{int} sheetX = tileSet.getTileX(layer.data[x][y][1]);
+204             \textcolor{keywordtype}{int} sheetY = tileSet.getTileY(layer.data[x][y][1]);
+205 
+206             \textcolor{keywordflow}{return} tileSet.tiles.getSprite(sheetX, sheetY);
+207         \}
+208 
+209         \textcolor{keywordflow}{return} null;
+210     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_aea96107a7e2b3c843771ae8c0f691368}\label{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_aea96107a7e2b3c843771ae8c0f691368}} 
+\index{org\+::newdawn\+::slick\+::tiled\+::\+Tiled\+Map@{org\+::newdawn\+::slick\+::tiled\+::\+Tiled\+Map}!get\+Tile\+Property@{get\+Tile\+Property}}
+\index{get\+Tile\+Property@{get\+Tile\+Property}!org\+::newdawn\+::slick\+::tiled\+::\+Tiled\+Map@{org\+::newdawn\+::slick\+::tiled\+::\+Tiled\+Map}}
+\subsubsection{\texorpdfstring{get\+Tile\+Property()}{getTileProperty()}}
+{\footnotesize\ttfamily String org.\+newdawn.\+slick.\+tiled.\+Tiled\+Map.\+get\+Tile\+Property (\begin{DoxyParamCaption}\item[{int}]{tile\+ID,  }\item[{String}]{property\+Name,  }\item[{String}]{def }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get a propety given to a particular tile. Note that this method will not perform well and should not be used as part of the default code path in the game loop.
+
+
+\begin{DoxyParams}{Parameters}
+{\em tile\+ID} & The global ID of the tile to retrieve \\
+\hline
+{\em property\+Name} & The name of the property to retireve \\
+\hline
+{\em def} & The default value to return \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The value assigned to the property on the tile (or the default value if none is supplied) 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+335                                                                                \{
+336         \textcolor{keywordflow}{if} (tileID == 0) \{
+337             \textcolor{keywordflow}{return} def;
+338         \}
+339 
+340         TileSet \textcolor{keyword}{set} = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_a136e9d5ff92016dcfaf8effa027147a2}{findTileSet}}(tileID);
+341 
+342         Properties \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_ace934059dd995f4bda5f4c1534df9d30}{props}} = \textcolor{keyword}{set}.getProperties(tileID);
+343         \textcolor{keywordflow}{if} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_ace934059dd995f4bda5f4c1534df9d30}{props}} == null) \{
+344             \textcolor{keywordflow}{return} def;
+345         \}
+346         \textcolor{keywordflow}{return} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_ace934059dd995f4bda5f4c1534df9d30}{props}}.getProperty(propertyName, def);
+347     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_a3a39c575b5073bbb6bef273d27b3e73a}\label{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_a3a39c575b5073bbb6bef273d27b3e73a}} 
+\index{org\+::newdawn\+::slick\+::tiled\+::\+Tiled\+Map@{org\+::newdawn\+::slick\+::tiled\+::\+Tiled\+Map}!get\+Tile\+Set@{get\+Tile\+Set}}
+\index{get\+Tile\+Set@{get\+Tile\+Set}!org\+::newdawn\+::slick\+::tiled\+::\+Tiled\+Map@{org\+::newdawn\+::slick\+::tiled\+::\+Tiled\+Map}}
+\subsubsection{\texorpdfstring{get\+Tile\+Set()}{getTileSet()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tile_set}{Tile\+Set}} org.\+newdawn.\+slick.\+tiled.\+Tiled\+Map.\+get\+Tile\+Set (\begin{DoxyParamCaption}\item[{int}]{index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get a tileset at a particular index in the list of sets for this map
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & The index of the tileset. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tile_set}{Tile\+Set}} requested 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+715                                          \{
+716         \textcolor{keywordflow}{return} (TileSet) \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_a4fd72e23a7aaf6f85905f4bf78e2ce5f}{tileSets}}.get(index);
+717     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_acc1970d3267b2e382887f081242a8979}\label{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_acc1970d3267b2e382887f081242a8979}} 
+\index{org\+::newdawn\+::slick\+::tiled\+::\+Tiled\+Map@{org\+::newdawn\+::slick\+::tiled\+::\+Tiled\+Map}!get\+Tile\+Set\+By\+G\+ID@{get\+Tile\+Set\+By\+G\+ID}}
+\index{get\+Tile\+Set\+By\+G\+ID@{get\+Tile\+Set\+By\+G\+ID}!org\+::newdawn\+::slick\+::tiled\+::\+Tiled\+Map@{org\+::newdawn\+::slick\+::tiled\+::\+Tiled\+Map}}
+\subsubsection{\texorpdfstring{get\+Tile\+Set\+By\+G\+I\+D()}{getTileSetByGID()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tile_set}{Tile\+Set}} org.\+newdawn.\+slick.\+tiled.\+Tiled\+Map.\+get\+Tile\+Set\+By\+G\+ID (\begin{DoxyParamCaption}\item[{int}]{gid }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get a tileset by a given global ID
+
+
+\begin{DoxyParams}{Parameters}
+{\em gid} & The global ID of the tileset to retrieve \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The tileset requested or null if no tileset matches 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+726                                             \{
+727         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_a4fd72e23a7aaf6f85905f4bf78e2ce5f}{tileSets}}.size(); i++) \{
+728             TileSet \textcolor{keyword}{set} = (TileSet) \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_a4fd72e23a7aaf6f85905f4bf78e2ce5f}{tileSets}}.get(i);
+729 
+730             \textcolor{keywordflow}{if} (\textcolor{keyword}{set}.contains(gid)) \{
+731                 \textcolor{keywordflow}{return} \textcolor{keyword}{set};
+732             \}
+733         \}
+734 
+735         \textcolor{keywordflow}{return} null;
+736     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_a349e3cf63beff71c33ae39a451dff398}\label{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_a349e3cf63beff71c33ae39a451dff398}} 
+\index{org\+::newdawn\+::slick\+::tiled\+::\+Tiled\+Map@{org\+::newdawn\+::slick\+::tiled\+::\+Tiled\+Map}!get\+Tile\+Set\+Count@{get\+Tile\+Set\+Count}}
+\index{get\+Tile\+Set\+Count@{get\+Tile\+Set\+Count}!org\+::newdawn\+::slick\+::tiled\+::\+Tiled\+Map@{org\+::newdawn\+::slick\+::tiled\+::\+Tiled\+Map}}
+\subsubsection{\texorpdfstring{get\+Tile\+Set\+Count()}{getTileSetCount()}}
+{\footnotesize\ttfamily int org.\+newdawn.\+slick.\+tiled.\+Tiled\+Map.\+get\+Tile\+Set\+Count (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Retrieve the number of tilesets available in this map
+
+\begin{DoxyReturn}{Returns}
+The number of tilesets available in this map 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+704                                  \{
+705         \textcolor{keywordflow}{return} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_a4fd72e23a7aaf6f85905f4bf78e2ce5f}{tileSets}}.size();
+706     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_adecd3ac79ebd72721187e7646d783782}\label{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_adecd3ac79ebd72721187e7646d783782}} 
+\index{org\+::newdawn\+::slick\+::tiled\+::\+Tiled\+Map@{org\+::newdawn\+::slick\+::tiled\+::\+Tiled\+Map}!get\+Tiles\+Location@{get\+Tiles\+Location}}
+\index{get\+Tiles\+Location@{get\+Tiles\+Location}!org\+::newdawn\+::slick\+::tiled\+::\+Tiled\+Map@{org\+::newdawn\+::slick\+::tiled\+::\+Tiled\+Map}}
+\subsubsection{\texorpdfstring{get\+Tiles\+Location()}{getTilesLocation()}}
+{\footnotesize\ttfamily String org.\+newdawn.\+slick.\+tiled.\+Tiled\+Map.\+get\+Tiles\+Location (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get the location of the tile images specified
+
+\begin{DoxyReturn}{Returns}
+The location of the tile images specified as a resource reference prefix 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+158                                      \{
+159         \textcolor{keywordflow}{return} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_ad72e470aa9510074aae12dab7968ec1f}{tilesLocation}};
+160     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_a44dd7389139c646e87d056fdd1e44232}\label{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_a44dd7389139c646e87d056fdd1e44232}} 
+\index{org\+::newdawn\+::slick\+::tiled\+::\+Tiled\+Map@{org\+::newdawn\+::slick\+::tiled\+::\+Tiled\+Map}!get\+Tile\+Width@{get\+Tile\+Width}}
+\index{get\+Tile\+Width@{get\+Tile\+Width}!org\+::newdawn\+::slick\+::tiled\+::\+Tiled\+Map@{org\+::newdawn\+::slick\+::tiled\+::\+Tiled\+Map}}
+\subsubsection{\texorpdfstring{get\+Tile\+Width()}{getTileWidth()}}
+{\footnotesize\ttfamily int org.\+newdawn.\+slick.\+tiled.\+Tiled\+Map.\+get\+Tile\+Width (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get the width of a single tile
+
+\begin{DoxyReturn}{Returns}
+The height of a single tile (in pixels) 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+244                               \{
+245         \textcolor{keywordflow}{return} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_a35bfb6f4f23b344d4ad3f9bda198093e}{tileWidth}};
+246     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_a1a8a716864f741b9f788138407108eb3}\label{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_a1a8a716864f741b9f788138407108eb3}} 
+\index{org\+::newdawn\+::slick\+::tiled\+::\+Tiled\+Map@{org\+::newdawn\+::slick\+::tiled\+::\+Tiled\+Map}!get\+Width@{get\+Width}}
+\index{get\+Width@{get\+Width}!org\+::newdawn\+::slick\+::tiled\+::\+Tiled\+Map@{org\+::newdawn\+::slick\+::tiled\+::\+Tiled\+Map}}
+\subsubsection{\texorpdfstring{get\+Width()}{getWidth()}}
+{\footnotesize\ttfamily int org.\+newdawn.\+slick.\+tiled.\+Tiled\+Map.\+get\+Width (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get the width of the map
+
+\begin{DoxyReturn}{Returns}
+The width of the map (in tiles) 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+217                           \{
+218         \textcolor{keywordflow}{return} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_a13b00efd90dfee0ccc7474310e40199e}{width}};
+219     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_af1c08899abc9e8c33cb08704b764e498}\label{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_af1c08899abc9e8c33cb08704b764e498}} 
+\index{org\+::newdawn\+::slick\+::tiled\+::\+Tiled\+Map@{org\+::newdawn\+::slick\+::tiled\+::\+Tiled\+Map}!load@{load}}
+\index{load@{load}!org\+::newdawn\+::slick\+::tiled\+::\+Tiled\+Map@{org\+::newdawn\+::slick\+::tiled\+::\+Tiled\+Map}}
+\subsubsection{\texorpdfstring{load()}{load()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+tiled.\+Tiled\+Map.\+load (\begin{DoxyParamCaption}\item[{Input\+Stream}]{in,  }\item[{String}]{tile\+Sets\+Location }\end{DoxyParamCaption}) throws \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_slick_exception}{Slick\+Exception}}\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+Load a Til\+ED map
+
+
+\begin{DoxyParams}{Parameters}
+{\em in} & The input stream from which to load the map \\
+\hline
+{\em tile\+Sets\+Location} & The location from which we can retrieve tileset images \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_slick_exception}{Slick\+Exception}}} & Indicates a failure to parse the map or find a tileset \\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyCode}
+601                                   \{
+602         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_ad72e470aa9510074aae12dab7968ec1f}{tilesLocation}} = tileSetsLocation;
+603 
+604         \textcolor{keywordflow}{try} \{
+605             DocumentBuilderFactory factory = DocumentBuilderFactory
+606                     .newInstance();
+607             factory.setValidating(\textcolor{keyword}{false});
+608             DocumentBuilder builder = factory.newDocumentBuilder();
+609             builder.setEntityResolver(\textcolor{keyword}{new} EntityResolver() \{
+610                 \textcolor{keyword}{public} InputSource resolveEntity(String publicId,
+611                         String systemId) \textcolor{keywordflow}{throws} SAXException, IOException \{
+612                     \textcolor{keywordflow}{return} \textcolor{keyword}{new} InputSource(
+613                             \textcolor{keyword}{new} ByteArrayInputStream(\textcolor{keyword}{new} byte[0]));
+614                 \}
+615             \});
+616 
+617             Document doc = builder.parse(in);
+618             Element docElement = doc.getDocumentElement();
+619 
+620             \textcolor{keywordflow}{if} (docElement.getAttribute(\textcolor{stringliteral}{"orientation"}).equals(\textcolor{stringliteral}{"orthogonal"}))
+621                 \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_a2985b80667928eae97e82ecad9e4432c}{orientation}} = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_aee2ab711fd19bcd0a1977fe0895607bb}{ORTHOGONAL}};
+622             \textcolor{keywordflow}{else}
+623                 \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_a2985b80667928eae97e82ecad9e4432c}{orientation}} = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_abe8c8af0eeec35e4533db6fab4d53cba}{ISOMETRIC}};
+624             \textcolor{comment}{/*}
+625 \textcolor{comment}{             * if (!orient.equals("orthogonal")) \{ throw new}
+626 \textcolor{comment}{             * SlickException("Only orthogonal maps supported, found: "+orient);}
+627 \textcolor{comment}{             * \}}
+628 \textcolor{comment}{             */}
+629 
+630             \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_a13b00efd90dfee0ccc7474310e40199e}{width}} = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_a8958f06ac942b890600b3c7f92bfb9be}{parseInt}}(docElement.getAttribute(\textcolor{stringliteral}{"width"}));
+631             \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_a5f9af8e6eb820e35327c4290d14c0bd7}{height}} = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_a8958f06ac942b890600b3c7f92bfb9be}{parseInt}}(docElement.getAttribute(\textcolor{stringliteral}{"height"}));
+632             \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_a35bfb6f4f23b344d4ad3f9bda198093e}{tileWidth}} = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_a8958f06ac942b890600b3c7f92bfb9be}{parseInt}}(docElement.getAttribute(\textcolor{stringliteral}{"tilewidth"}));
+633             \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_aa521f50d236247a335994bba33b0baa7}{tileHeight}} = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_a8958f06ac942b890600b3c7f92bfb9be}{parseInt}}(docElement.getAttribute(\textcolor{stringliteral}{"tileheight"}));
+634 
+635             \textcolor{comment}{// now read the map properties}
+636             Element propsElement = (Element) docElement.getElementsByTagName(
+637                     \textcolor{stringliteral}{"properties"}).item(0);
+638             \textcolor{keywordflow}{if} (propsElement != null) \{
+639                 NodeList properties = propsElement
+640                         .getElementsByTagName(\textcolor{stringliteral}{"property"});
+641                 \textcolor{keywordflow}{if} (properties != null) \{
+642                     \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_ace934059dd995f4bda5f4c1534df9d30}{props}} = \textcolor{keyword}{new} Properties();
+643                     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} p = 0; p < properties.getLength(); p++) \{
+644                         Element propElement = (Element) properties.item(p);
+645 
+646                         String name = propElement.getAttribute(\textcolor{stringliteral}{"name"});
+647                         String value = propElement.getAttribute(\textcolor{stringliteral}{"value"});
+648                         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_ace934059dd995f4bda5f4c1534df9d30}{props}}.setProperty(name, value);
+649                     \}
+650                 \}
+651             \}
+652 
+653             \textcolor{keywordflow}{if} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_a49356f102a76e7845f6dfbd4c6b70b59}{loadTileSets}}) \{
+654                 TileSet tileSet = null;
+655                 TileSet lastSet = null;
+656 
+657                 NodeList setNodes = docElement.getElementsByTagName(\textcolor{stringliteral}{"tileset"});
+658                 \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < setNodes.getLength(); i++) \{
+659                     Element current = (Element) setNodes.item(i);
+660 
+661                     tileSet = \textcolor{keyword}{new} TileSet(\textcolor{keyword}{this}, current, !\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_aebbb5f7e7df93bc341d03b8bb55a2481}{headless}});
+662                     tileSet.index = i;
+663 
+664                     \textcolor{keywordflow}{if} (lastSet != null) \{
+665                         lastSet.setLimit(tileSet.firstGID - 1);
+666                     \}
+667                     lastSet = tileSet;
+668 
+669                     \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_a4fd72e23a7aaf6f85905f4bf78e2ce5f}{tileSets}}.add(tileSet);
+670                 \}
+671             \}
+672 
+673             NodeList layerNodes = docElement.getElementsByTagName(\textcolor{stringliteral}{"layer"});
+674             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < layerNodes.getLength(); i++) \{
+675                 Element current = (Element) layerNodes.item(i);
+676                 Layer layer = \textcolor{keyword}{new} Layer(\textcolor{keyword}{this}, current);
+677                 layer.index = i;
+678 
+679                 \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_a33061324d017a4cd8f41d04e0c60ac27}{layers}}.add(layer);
+680             \}
+681 
+682             \textcolor{comment}{// acquire object-groups}
+683             NodeList objectGroupNodes = docElement
+684                     .getElementsByTagName(\textcolor{stringliteral}{"objectgroup"});
+685 
+686             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < objectGroupNodes.getLength(); i++) \{
+687                 Element current = (Element) objectGroupNodes.item(i);
+688                 ObjectGroup objectGroup = \textcolor{keyword}{new} ObjectGroup(current);
+689                 objectGroup.index = i;
+690 
+691                 \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_aa446ef4b07ea80ab5f112e8512ed7561}{objectGroups}}.add(objectGroup);
+692             \}
+693         \} \textcolor{keywordflow}{catch} (Exception e) \{
+694             Log.error(e);
+695             \textcolor{keywordflow}{throw} \textcolor{keyword}{new} SlickException(\textcolor{stringliteral}{"Failed to parse tilemap"}, e);
+696         \}
+697     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_a8958f06ac942b890600b3c7f92bfb9be}\label{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_a8958f06ac942b890600b3c7f92bfb9be}} 
+\index{org\+::newdawn\+::slick\+::tiled\+::\+Tiled\+Map@{org\+::newdawn\+::slick\+::tiled\+::\+Tiled\+Map}!parse\+Int@{parse\+Int}}
+\index{parse\+Int@{parse\+Int}!org\+::newdawn\+::slick\+::tiled\+::\+Tiled\+Map@{org\+::newdawn\+::slick\+::tiled\+::\+Tiled\+Map}}
+\subsubsection{\texorpdfstring{parse\+Int()}{parseInt()}}
+{\footnotesize\ttfamily int org.\+newdawn.\+slick.\+tiled.\+Tiled\+Map.\+parse\+Int (\begin{DoxyParamCaption}\item[{String}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+Save parser for strings to ints
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & The string to parse \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The integer to parse or zero if the string isn\textquotesingle{}t an int 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+582                                        \{
+583         \textcolor{keywordflow}{try} \{
+584             \textcolor{keywordflow}{return} Integer.parseInt(value);
+585         \} \textcolor{keywordflow}{catch} (NumberFormatException e) \{
+586             \textcolor{keywordflow}{return} 0;
+587         \}
+588     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_a313dd901616b31c772f213675d236389}\label{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_a313dd901616b31c772f213675d236389}} 
+\index{org\+::newdawn\+::slick\+::tiled\+::\+Tiled\+Map@{org\+::newdawn\+::slick\+::tiled\+::\+Tiled\+Map}!render@{render}}
+\index{render@{render}!org\+::newdawn\+::slick\+::tiled\+::\+Tiled\+Map@{org\+::newdawn\+::slick\+::tiled\+::\+Tiled\+Map}}
+\subsubsection{\texorpdfstring{render()}{render()}\hspace{0.1cm}{\footnotesize\ttfamily [1/5]}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+tiled.\+Tiled\+Map.\+render (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Render the whole tile map at a given location
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & The x location to render at \\
+\hline
+{\em y} & The y location to render at \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+357                                      \{
+358         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_a313dd901616b31c772f213675d236389}{render}}(x, y, 0, 0, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_a13b00efd90dfee0ccc7474310e40199e}{width}}, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_a5f9af8e6eb820e35327c4290d14c0bd7}{height}}, \textcolor{keyword}{false});
+359     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_a1348610840bcb4e3767b48050533b410}\label{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_a1348610840bcb4e3767b48050533b410}} 
+\index{org\+::newdawn\+::slick\+::tiled\+::\+Tiled\+Map@{org\+::newdawn\+::slick\+::tiled\+::\+Tiled\+Map}!render@{render}}
+\index{render@{render}!org\+::newdawn\+::slick\+::tiled\+::\+Tiled\+Map@{org\+::newdawn\+::slick\+::tiled\+::\+Tiled\+Map}}
+\subsubsection{\texorpdfstring{render()}{render()}\hspace{0.1cm}{\footnotesize\ttfamily [2/5]}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+tiled.\+Tiled\+Map.\+render (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y,  }\item[{int}]{layer }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Render a single layer from the map
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & The x location to render at \\
+\hline
+{\em y} & The y location to render at \\
+\hline
+{\em layer} & The layer to render \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+371                                                 \{
+372         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_a313dd901616b31c772f213675d236389}{render}}(x, y, 0, 0, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_a1a8a716864f741b9f788138407108eb3}{getWidth}}(), \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_a6370cae21692dded6097e8f877b62cac}{getHeight}}(), layer, \textcolor{keyword}{false});
+373     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_a2d681036859467cf77a235e0b082e6dc}\label{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_a2d681036859467cf77a235e0b082e6dc}} 
+\index{org\+::newdawn\+::slick\+::tiled\+::\+Tiled\+Map@{org\+::newdawn\+::slick\+::tiled\+::\+Tiled\+Map}!render@{render}}
+\index{render@{render}!org\+::newdawn\+::slick\+::tiled\+::\+Tiled\+Map@{org\+::newdawn\+::slick\+::tiled\+::\+Tiled\+Map}}
+\subsubsection{\texorpdfstring{render()}{render()}\hspace{0.1cm}{\footnotesize\ttfamily [3/5]}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+tiled.\+Tiled\+Map.\+render (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y,  }\item[{int}]{sx,  }\item[{int}]{sy,  }\item[{int}]{width,  }\item[{int}]{height }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Render a section of the tile map
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & The x location to render at \\
+\hline
+{\em y} & The y location to render at \\
+\hline
+{\em sx} & The x tile location to start rendering \\
+\hline
+{\em sy} & The y tile location to start rendering \\
+\hline
+{\em width} & The width of the section to render (in tiles) \\
+\hline
+{\em height} & The height of the secton to render (in tiles) \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+391                                                                             \{
+392         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_a313dd901616b31c772f213675d236389}{render}}(x, y, sx, sy, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_a13b00efd90dfee0ccc7474310e40199e}{width}}, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_a5f9af8e6eb820e35327c4290d14c0bd7}{height}}, \textcolor{keyword}{false});
+393     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_a379329f5ea96f9fffcc9a55d18d32312}\label{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_a379329f5ea96f9fffcc9a55d18d32312}} 
+\index{org\+::newdawn\+::slick\+::tiled\+::\+Tiled\+Map@{org\+::newdawn\+::slick\+::tiled\+::\+Tiled\+Map}!render@{render}}
+\index{render@{render}!org\+::newdawn\+::slick\+::tiled\+::\+Tiled\+Map@{org\+::newdawn\+::slick\+::tiled\+::\+Tiled\+Map}}
+\subsubsection{\texorpdfstring{render()}{render()}\hspace{0.1cm}{\footnotesize\ttfamily [4/5]}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+tiled.\+Tiled\+Map.\+render (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y,  }\item[{int}]{sx,  }\item[{int}]{sy,  }\item[{int}]{width,  }\item[{int}]{height,  }\item[{int}]{l,  }\item[{boolean}]{line\+By\+Line }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Render a section of the tile map
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & The x location to render at \\
+\hline
+{\em y} & The y location to render at \\
+\hline
+{\em sx} & The x tile location to start rendering \\
+\hline
+{\em sy} & The y tile location to start rendering \\
+\hline
+{\em width} & The width of the section to render (in tiles) \\
+\hline
+{\em height} & The height of the secton to render (in tiles) \\
+\hline
+{\em l} & The index of the layer to render \\
+\hline
+{\em line\+By\+Line} & True if we should render line by line, i.\+e. giving us a chance to render something else between lines (\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_acf9160a21ea260cfce93e14567252781}{rendered\+Line(int, int, int)}} 
+\end{DoxySeeAlso}
+
+\begin{DoxyCode}
+418                                        \{
+419         Layer layer = (Layer) \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_a33061324d017a4cd8f41d04e0c60ac27}{layers}}.get(l);
+420 
+421         \textcolor{keywordflow}{switch} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_a2985b80667928eae97e82ecad9e4432c}{orientation}}) \{
+422         \textcolor{keywordflow}{case} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_aee2ab711fd19bcd0a1977fe0895607bb}{ORTHOGONAL}}:
+423             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} ty = 0; ty < \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_a5f9af8e6eb820e35327c4290d14c0bd7}{height}}; ty++) \{
+424                 layer.render(x, y, sx, sy, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_a13b00efd90dfee0ccc7474310e40199e}{width}}, ty, lineByLine, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_a35bfb6f4f23b344d4ad3f9bda198093e}{tileWidth}},
+425                         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_aa521f50d236247a335994bba33b0baa7}{tileHeight}});
+426             \}
+427             \textcolor{keywordflow}{break};
+428         \textcolor{keywordflow}{case} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_abe8c8af0eeec35e4533db6fab4d53cba}{ISOMETRIC}}:
+429             \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_a325186ad96c5d26d7565e166ff1a66dd}{renderIsometricMap}}(x, y, sx, sy, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_a13b00efd90dfee0ccc7474310e40199e}{width}}, 
+      \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_a5f9af8e6eb820e35327c4290d14c0bd7}{height}}, layer, lineByLine);
+430             \textcolor{keywordflow}{break};
+431         \textcolor{keywordflow}{default}:
+432             \textcolor{comment}{// log error or something}
+433         \}
+434     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_af25ff018d2ede1a3a57c27b6cb64e132}\label{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_af25ff018d2ede1a3a57c27b6cb64e132}} 
+\index{org\+::newdawn\+::slick\+::tiled\+::\+Tiled\+Map@{org\+::newdawn\+::slick\+::tiled\+::\+Tiled\+Map}!render@{render}}
+\index{render@{render}!org\+::newdawn\+::slick\+::tiled\+::\+Tiled\+Map@{org\+::newdawn\+::slick\+::tiled\+::\+Tiled\+Map}}
+\subsubsection{\texorpdfstring{render()}{render()}\hspace{0.1cm}{\footnotesize\ttfamily [5/5]}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+tiled.\+Tiled\+Map.\+render (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y,  }\item[{int}]{sx,  }\item[{int}]{sy,  }\item[{int}]{width,  }\item[{int}]{height,  }\item[{boolean}]{line\+By\+Line }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Render a section of the tile map
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & The x location to render at \\
+\hline
+{\em y} & The y location to render at \\
+\hline
+{\em sx} & The x tile location to start rendering \\
+\hline
+{\em sy} & The y tile location to start rendering \\
+\hline
+{\em width} & The width of the section to render (in tiles) \\
+\hline
+{\em height} & The height of the secton to render (in tiles) \\
+\hline
+{\em line\+By\+Line} & True if we should render line by line, i.\+e. giving us a chance to render something else between lines (\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_acf9160a21ea260cfce93e14567252781}{rendered\+Line(int, int, int)}} 
+\end{DoxySeeAlso}
+
+\begin{DoxyCode}
+457                                 \{
+458         \textcolor{keywordflow}{switch} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_a2985b80667928eae97e82ecad9e4432c}{orientation}}) \{
+459         \textcolor{keywordflow}{case} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_aee2ab711fd19bcd0a1977fe0895607bb}{ORTHOGONAL}}:
+460             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} ty = 0; ty < \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_a5f9af8e6eb820e35327c4290d14c0bd7}{height}}; ty++) \{
+461                 \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_a33061324d017a4cd8f41d04e0c60ac27}{layers}}.size(); i++) \{
+462                     Layer layer = (Layer) \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_a33061324d017a4cd8f41d04e0c60ac27}{layers}}.get(i);
+463                     layer.render(x, y, sx, sy, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_a13b00efd90dfee0ccc7474310e40199e}{width}}, ty, lineByLine,
+464                             \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_a35bfb6f4f23b344d4ad3f9bda198093e}{tileWidth}}, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_aa521f50d236247a335994bba33b0baa7}{tileHeight}});
+465                 \}
+466             \}
+467             \textcolor{keywordflow}{break};
+468         \textcolor{keywordflow}{case} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_abe8c8af0eeec35e4533db6fab4d53cba}{ISOMETRIC}}:
+469             \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_a325186ad96c5d26d7565e166ff1a66dd}{renderIsometricMap}}(x, y, sx, sy, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_a13b00efd90dfee0ccc7474310e40199e}{width}}, 
+      \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_a5f9af8e6eb820e35327c4290d14c0bd7}{height}}, null, lineByLine);
+470             \textcolor{keywordflow}{break};
+471         \textcolor{keywordflow}{default}:
+472             \textcolor{comment}{// log error or something}
+473         \}
+474     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_acf9160a21ea260cfce93e14567252781}\label{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_acf9160a21ea260cfce93e14567252781}} 
+\index{org\+::newdawn\+::slick\+::tiled\+::\+Tiled\+Map@{org\+::newdawn\+::slick\+::tiled\+::\+Tiled\+Map}!rendered\+Line@{rendered\+Line}}
+\index{rendered\+Line@{rendered\+Line}!org\+::newdawn\+::slick\+::tiled\+::\+Tiled\+Map@{org\+::newdawn\+::slick\+::tiled\+::\+Tiled\+Map}}
+\subsubsection{\texorpdfstring{rendered\+Line()}{renderedLine()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+tiled.\+Tiled\+Map.\+rendered\+Line (\begin{DoxyParamCaption}\item[{int}]{visualY,  }\item[{int}]{mapY,  }\item[{int}]{layer }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+Overrideable to allow other sprites to be rendered between lines of the map
+
+
+\begin{DoxyParams}{Parameters}
+{\em visualY} & The visual Y coordinate, i.\+e. 0-\/$>$height \\
+\hline
+{\em mapY} & The map Y coordinate, i.\+e. y-\/$>$y+height \\
+\hline
+{\em layer} & The layer being rendered \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+769                                                                   \{
+770     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_a325186ad96c5d26d7565e166ff1a66dd}\label{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_a325186ad96c5d26d7565e166ff1a66dd}} 
+\index{org\+::newdawn\+::slick\+::tiled\+::\+Tiled\+Map@{org\+::newdawn\+::slick\+::tiled\+::\+Tiled\+Map}!render\+Isometric\+Map@{render\+Isometric\+Map}}
+\index{render\+Isometric\+Map@{render\+Isometric\+Map}!org\+::newdawn\+::slick\+::tiled\+::\+Tiled\+Map@{org\+::newdawn\+::slick\+::tiled\+::\+Tiled\+Map}}
+\subsubsection{\texorpdfstring{render\+Isometric\+Map()}{renderIsometricMap()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+tiled.\+Tiled\+Map.\+render\+Isometric\+Map (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y,  }\item[{int}]{sx,  }\item[{int}]{sy,  }\item[{int}]{width,  }\item[{int}]{height,  }\item[{\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_layer}{Layer}}}]{layer,  }\item[{boolean}]{line\+By\+Line }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+Render of isometric map renders.
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & The x location to render at \\
+\hline
+{\em y} & The y location to render at \\
+\hline
+{\em sx} & The x tile location to start rendering \\
+\hline
+{\em sy} & The y tile location to start rendering \\
+\hline
+{\em width} & The width of the section to render (in tiles) \\
+\hline
+{\em height} & The height of the section to render (in tiles) \\
+\hline
+{\em layer} & if this is null all layers are rendered, if not only the selected layer is renderered \\
+\hline
+{\em line\+By\+Line} & True if we should render line by line, i.\+e. giving us a chance to render something else between lines (\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_acf9160a21ea260cfce93e14567252781}{rendered\+Line(int, int, int)}}
+\end{DoxySeeAlso}
+T\+O\+DO\+: \mbox{[}Isometric map\mbox{]} Render stuff between lines, concept of line differs from ortho maps 
+\begin{DoxyCode}
+503                                                          \{
+504         ArrayList drawLayers = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_a33061324d017a4cd8f41d04e0c60ac27}{layers}};
+505         \textcolor{keywordflow}{if} (layer != null) \{
+506             drawLayers = \textcolor{keyword}{new} ArrayList();
+507             drawLayers.add(layer);
+508         \}
+509 
+510         \textcolor{keywordtype}{int} maxCount = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_a13b00efd90dfee0ccc7474310e40199e}{width}} * \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_a5f9af8e6eb820e35327c4290d14c0bd7}{height}};
+511         \textcolor{keywordtype}{int} allCount = 0;
+512 
+513         \textcolor{keywordtype}{boolean} allProcessed = \textcolor{keyword}{false};
+514 
+515         \textcolor{keywordtype}{int} initialLineX = x;
+516         \textcolor{keywordtype}{int} initialLineY = y;
+517 
+518         \textcolor{keywordtype}{int} startLineTileX = 0;
+519         \textcolor{keywordtype}{int} startLineTileY = 0;
+520         \textcolor{keywordflow}{while} (!allProcessed) \{
+521 
+522             \textcolor{keywordtype}{int} currentTileX = startLineTileX;
+523             \textcolor{keywordtype}{int} currentTileY = startLineTileY;
+524             \textcolor{keywordtype}{int} currentLineX = initialLineX;
+525 
+526             \textcolor{keywordtype}{int} min = 0;
+527             \textcolor{keywordflow}{if} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_a5f9af8e6eb820e35327c4290d14c0bd7}{height}} > \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_a13b00efd90dfee0ccc7474310e40199e}{width}})
+528                 min = (startLineTileY < \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_a13b00efd90dfee0ccc7474310e40199e}{width}} - 1) ? startLineTileY : (
+      \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_a13b00efd90dfee0ccc7474310e40199e}{width}}
+529                         - currentTileX < \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_a5f9af8e6eb820e35327c4290d14c0bd7}{height}}) ? \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_a13b00efd90dfee0ccc7474310e40199e}{width}} - currentTileX - 1
+530                         : \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_a13b00efd90dfee0ccc7474310e40199e}{width}} - 1;
+531             \textcolor{keywordflow}{else}
+532                 min = (startLineTileY < \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_a5f9af8e6eb820e35327c4290d14c0bd7}{height}} - 1) ? startLineTileY : (
+      \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_a13b00efd90dfee0ccc7474310e40199e}{width}}
+533                         - currentTileX < \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_a5f9af8e6eb820e35327c4290d14c0bd7}{height}}) ? \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_a13b00efd90dfee0ccc7474310e40199e}{width}} - currentTileX - 1
+534                         : \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_a5f9af8e6eb820e35327c4290d14c0bd7}{height}} - 1;
+535 
+536             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} burner = 0; burner <= min; currentTileX++, currentTileY--, burner++) \{
+537                 \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} layerIdx = 0; layerIdx < drawLayers.size(); layerIdx++) \{
+538                     Layer currentLayer = (Layer) drawLayers.get(layerIdx);
+539                     currentLayer.render(currentLineX, initialLineY,
+540                             currentTileX, currentTileY, 1, 0, lineByLine,
+541                             \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_a35bfb6f4f23b344d4ad3f9bda198093e}{tileWidth}}, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_aa521f50d236247a335994bba33b0baa7}{tileHeight}});
+542                 \}
+543                 currentLineX += \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_a35bfb6f4f23b344d4ad3f9bda198093e}{tileWidth}};
+544 
+545                 allCount++;
+546             \}
+547 
+548             \textcolor{comment}{// System.out.println("Line : " + counter++ + " - " + count +}
+549             \textcolor{comment}{// "allcount : " + allCount);}
+550 
+551             \textcolor{keywordflow}{if} (startLineTileY < (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_a5f9af8e6eb820e35327c4290d14c0bd7}{height}} - 1)) \{
+552                 startLineTileY += 1;
+553                 initialLineX -= \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_a35bfb6f4f23b344d4ad3f9bda198093e}{tileWidth}} / 2;
+554                 initialLineY += \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_aa521f50d236247a335994bba33b0baa7}{tileHeight}} / 2;
+555             \} \textcolor{keywordflow}{else} \{
+556                 startLineTileX += 1;
+557                 initialLineX += \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_a35bfb6f4f23b344d4ad3f9bda198093e}{tileWidth}} / 2;
+558                 initialLineY += \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_aa521f50d236247a335994bba33b0baa7}{tileHeight}} / 2;
+559             \}
+560 
+561             \textcolor{keywordflow}{if} (allCount >= maxCount)
+562                 allProcessed = \textcolor{keyword}{true};
+563         \}
+564     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_a195198868d47b2d95af1ec6e99591885}\label{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_a195198868d47b2d95af1ec6e99591885}} 
+\index{org\+::newdawn\+::slick\+::tiled\+::\+Tiled\+Map@{org\+::newdawn\+::slick\+::tiled\+::\+Tiled\+Map}!set\+Headless@{set\+Headless}}
+\index{set\+Headless@{set\+Headless}!org\+::newdawn\+::slick\+::tiled\+::\+Tiled\+Map@{org\+::newdawn\+::slick\+::tiled\+::\+Tiled\+Map}}
+\subsubsection{\texorpdfstring{set\+Headless()}{setHeadless()}}
+{\footnotesize\ttfamily static void org.\+newdawn.\+slick.\+tiled.\+Tiled\+Map.\+set\+Headless (\begin{DoxyParamCaption}\item[{boolean}]{h }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}, {\ttfamily [private]}}
+
+Indicate if we\textquotesingle{}re running on a headless system where we\textquotesingle{}d just like to load the data model.
+
+
+\begin{DoxyParams}{Parameters}
+{\em h} & True if we\textquotesingle{}re running on a headless system \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+44                                                \{
+45         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_aebbb5f7e7df93bc341d03b8bb55a2481}{headless}} = h;
+46     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_a83940adc9a30f701eb793b8918f26d6b}\label{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_a83940adc9a30f701eb793b8918f26d6b}} 
+\index{org\+::newdawn\+::slick\+::tiled\+::\+Tiled\+Map@{org\+::newdawn\+::slick\+::tiled\+::\+Tiled\+Map}!set\+Tile\+Id@{set\+Tile\+Id}}
+\index{set\+Tile\+Id@{set\+Tile\+Id}!org\+::newdawn\+::slick\+::tiled\+::\+Tiled\+Map@{org\+::newdawn\+::slick\+::tiled\+::\+Tiled\+Map}}
+\subsubsection{\texorpdfstring{set\+Tile\+Id()}{setTileId()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+tiled.\+Tiled\+Map.\+set\+Tile\+Id (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y,  }\item[{int}]{layer\+Index,  }\item[{int}]{tileid }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Set the global ID of a tile at specified location in the map
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & The x location of the tile \\
+\hline
+{\em y} & The y location of the tile \\
+\hline
+{\em layer\+Index} & The index of the layer to set the new tileid \\
+\hline
+{\em tileid} & The tileid to be set \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+276                                                                     \{
+277         Layer layer = (Layer) \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_a33061324d017a4cd8f41d04e0c60ac27}{layers}}.get(layerIndex);
+278         layer.setTileID(x, y, tileid);
+279     \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_aebbb5f7e7df93bc341d03b8bb55a2481}\label{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_aebbb5f7e7df93bc341d03b8bb55a2481}} 
+\index{org\+::newdawn\+::slick\+::tiled\+::\+Tiled\+Map@{org\+::newdawn\+::slick\+::tiled\+::\+Tiled\+Map}!headless@{headless}}
+\index{headless@{headless}!org\+::newdawn\+::slick\+::tiled\+::\+Tiled\+Map@{org\+::newdawn\+::slick\+::tiled\+::\+Tiled\+Map}}
+\subsubsection{\texorpdfstring{headless}{headless}}
+{\footnotesize\ttfamily boolean org.\+newdawn.\+slick.\+tiled.\+Tiled\+Map.\+headless\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+Indicates if we\textquotesingle{}re running on a headless system \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_a5f9af8e6eb820e35327c4290d14c0bd7}\label{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_a5f9af8e6eb820e35327c4290d14c0bd7}} 
+\index{org\+::newdawn\+::slick\+::tiled\+::\+Tiled\+Map@{org\+::newdawn\+::slick\+::tiled\+::\+Tiled\+Map}!height@{height}}
+\index{height@{height}!org\+::newdawn\+::slick\+::tiled\+::\+Tiled\+Map@{org\+::newdawn\+::slick\+::tiled\+::\+Tiled\+Map}}
+\subsubsection{\texorpdfstring{height}{height}}
+{\footnotesize\ttfamily int org.\+newdawn.\+slick.\+tiled.\+Tiled\+Map.\+height\hspace{0.3cm}{\ttfamily [protected]}}
+
+The height of the map \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_abe8c8af0eeec35e4533db6fab4d53cba}\label{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_abe8c8af0eeec35e4533db6fab4d53cba}} 
+\index{org\+::newdawn\+::slick\+::tiled\+::\+Tiled\+Map@{org\+::newdawn\+::slick\+::tiled\+::\+Tiled\+Map}!I\+S\+O\+M\+E\+T\+R\+IC@{I\+S\+O\+M\+E\+T\+R\+IC}}
+\index{I\+S\+O\+M\+E\+T\+R\+IC@{I\+S\+O\+M\+E\+T\+R\+IC}!org\+::newdawn\+::slick\+::tiled\+::\+Tiled\+Map@{org\+::newdawn\+::slick\+::tiled\+::\+Tiled\+Map}}
+\subsubsection{\texorpdfstring{I\+S\+O\+M\+E\+T\+R\+IC}{ISOMETRIC}}
+{\footnotesize\ttfamily final int org.\+newdawn.\+slick.\+tiled.\+Tiled\+Map.\+I\+S\+O\+M\+E\+T\+R\+IC = 2\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+Indicates an isometric map \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_a33061324d017a4cd8f41d04e0c60ac27}\label{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_a33061324d017a4cd8f41d04e0c60ac27}} 
+\index{org\+::newdawn\+::slick\+::tiled\+::\+Tiled\+Map@{org\+::newdawn\+::slick\+::tiled\+::\+Tiled\+Map}!layers@{layers}}
+\index{layers@{layers}!org\+::newdawn\+::slick\+::tiled\+::\+Tiled\+Map@{org\+::newdawn\+::slick\+::tiled\+::\+Tiled\+Map}}
+\subsubsection{\texorpdfstring{layers}{layers}}
+{\footnotesize\ttfamily Array\+List org.\+newdawn.\+slick.\+tiled.\+Tiled\+Map.\+layers = new Array\+List()\hspace{0.3cm}{\ttfamily [protected]}}
+
+The list of layers defined in the map \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_a49356f102a76e7845f6dfbd4c6b70b59}\label{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_a49356f102a76e7845f6dfbd4c6b70b59}} 
+\index{org\+::newdawn\+::slick\+::tiled\+::\+Tiled\+Map@{org\+::newdawn\+::slick\+::tiled\+::\+Tiled\+Map}!load\+Tile\+Sets@{load\+Tile\+Sets}}
+\index{load\+Tile\+Sets@{load\+Tile\+Sets}!org\+::newdawn\+::slick\+::tiled\+::\+Tiled\+Map@{org\+::newdawn\+::slick\+::tiled\+::\+Tiled\+Map}}
+\subsubsection{\texorpdfstring{load\+Tile\+Sets}{loadTileSets}}
+{\footnotesize\ttfamily boolean org.\+newdawn.\+slick.\+tiled.\+Tiled\+Map.\+load\+Tile\+Sets = true\hspace{0.3cm}{\ttfamily [private]}}
+
+True if we want to load tilesets -\/ including their image data \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_aa446ef4b07ea80ab5f112e8512ed7561}\label{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_aa446ef4b07ea80ab5f112e8512ed7561}} 
+\index{org\+::newdawn\+::slick\+::tiled\+::\+Tiled\+Map@{org\+::newdawn\+::slick\+::tiled\+::\+Tiled\+Map}!object\+Groups@{object\+Groups}}
+\index{object\+Groups@{object\+Groups}!org\+::newdawn\+::slick\+::tiled\+::\+Tiled\+Map@{org\+::newdawn\+::slick\+::tiled\+::\+Tiled\+Map}}
+\subsubsection{\texorpdfstring{object\+Groups}{objectGroups}}
+{\footnotesize\ttfamily Array\+List org.\+newdawn.\+slick.\+tiled.\+Tiled\+Map.\+object\+Groups = new Array\+List()\hspace{0.3cm}{\ttfamily [protected]}}
+
+The list of object-\/groups defined in the map \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_a2985b80667928eae97e82ecad9e4432c}\label{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_a2985b80667928eae97e82ecad9e4432c}} 
+\index{org\+::newdawn\+::slick\+::tiled\+::\+Tiled\+Map@{org\+::newdawn\+::slick\+::tiled\+::\+Tiled\+Map}!orientation@{orientation}}
+\index{orientation@{orientation}!org\+::newdawn\+::slick\+::tiled\+::\+Tiled\+Map@{org\+::newdawn\+::slick\+::tiled\+::\+Tiled\+Map}}
+\subsubsection{\texorpdfstring{orientation}{orientation}}
+{\footnotesize\ttfamily int org.\+newdawn.\+slick.\+tiled.\+Tiled\+Map.\+orientation\hspace{0.3cm}{\ttfamily [protected]}}
+
+The orientation of this map \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_aee2ab711fd19bcd0a1977fe0895607bb}\label{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_aee2ab711fd19bcd0a1977fe0895607bb}} 
+\index{org\+::newdawn\+::slick\+::tiled\+::\+Tiled\+Map@{org\+::newdawn\+::slick\+::tiled\+::\+Tiled\+Map}!O\+R\+T\+H\+O\+G\+O\+N\+AL@{O\+R\+T\+H\+O\+G\+O\+N\+AL}}
+\index{O\+R\+T\+H\+O\+G\+O\+N\+AL@{O\+R\+T\+H\+O\+G\+O\+N\+AL}!org\+::newdawn\+::slick\+::tiled\+::\+Tiled\+Map@{org\+::newdawn\+::slick\+::tiled\+::\+Tiled\+Map}}
+\subsubsection{\texorpdfstring{O\+R\+T\+H\+O\+G\+O\+N\+AL}{ORTHOGONAL}}
+{\footnotesize\ttfamily final int org.\+newdawn.\+slick.\+tiled.\+Tiled\+Map.\+O\+R\+T\+H\+O\+G\+O\+N\+AL = 1\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+Indicates a orthogonal map \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_ace934059dd995f4bda5f4c1534df9d30}\label{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_ace934059dd995f4bda5f4c1534df9d30}} 
+\index{org\+::newdawn\+::slick\+::tiled\+::\+Tiled\+Map@{org\+::newdawn\+::slick\+::tiled\+::\+Tiled\+Map}!props@{props}}
+\index{props@{props}!org\+::newdawn\+::slick\+::tiled\+::\+Tiled\+Map@{org\+::newdawn\+::slick\+::tiled\+::\+Tiled\+Map}}
+\subsubsection{\texorpdfstring{props}{props}}
+{\footnotesize\ttfamily Properties org.\+newdawn.\+slick.\+tiled.\+Tiled\+Map.\+props\hspace{0.3cm}{\ttfamily [protected]}}
+
+the properties of the map \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_aa521f50d236247a335994bba33b0baa7}\label{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_aa521f50d236247a335994bba33b0baa7}} 
+\index{org\+::newdawn\+::slick\+::tiled\+::\+Tiled\+Map@{org\+::newdawn\+::slick\+::tiled\+::\+Tiled\+Map}!tile\+Height@{tile\+Height}}
+\index{tile\+Height@{tile\+Height}!org\+::newdawn\+::slick\+::tiled\+::\+Tiled\+Map@{org\+::newdawn\+::slick\+::tiled\+::\+Tiled\+Map}}
+\subsubsection{\texorpdfstring{tile\+Height}{tileHeight}}
+{\footnotesize\ttfamily int org.\+newdawn.\+slick.\+tiled.\+Tiled\+Map.\+tile\+Height\hspace{0.3cm}{\ttfamily [protected]}}
+
+The height of the tiles used on the map \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_a4fd72e23a7aaf6f85905f4bf78e2ce5f}\label{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_a4fd72e23a7aaf6f85905f4bf78e2ce5f}} 
+\index{org\+::newdawn\+::slick\+::tiled\+::\+Tiled\+Map@{org\+::newdawn\+::slick\+::tiled\+::\+Tiled\+Map}!tile\+Sets@{tile\+Sets}}
+\index{tile\+Sets@{tile\+Sets}!org\+::newdawn\+::slick\+::tiled\+::\+Tiled\+Map@{org\+::newdawn\+::slick\+::tiled\+::\+Tiled\+Map}}
+\subsubsection{\texorpdfstring{tile\+Sets}{tileSets}}
+{\footnotesize\ttfamily Array\+List org.\+newdawn.\+slick.\+tiled.\+Tiled\+Map.\+tile\+Sets = new Array\+List()\hspace{0.3cm}{\ttfamily [protected]}}
+
+The list of tilesets defined in the map \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_ad72e470aa9510074aae12dab7968ec1f}\label{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_ad72e470aa9510074aae12dab7968ec1f}} 
+\index{org\+::newdawn\+::slick\+::tiled\+::\+Tiled\+Map@{org\+::newdawn\+::slick\+::tiled\+::\+Tiled\+Map}!tiles\+Location@{tiles\+Location}}
+\index{tiles\+Location@{tiles\+Location}!org\+::newdawn\+::slick\+::tiled\+::\+Tiled\+Map@{org\+::newdawn\+::slick\+::tiled\+::\+Tiled\+Map}}
+\subsubsection{\texorpdfstring{tiles\+Location}{tilesLocation}}
+{\footnotesize\ttfamily String org.\+newdawn.\+slick.\+tiled.\+Tiled\+Map.\+tiles\+Location\hspace{0.3cm}{\ttfamily [protected]}}
+
+The location prefix where we can find tileset images \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_a35bfb6f4f23b344d4ad3f9bda198093e}\label{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_a35bfb6f4f23b344d4ad3f9bda198093e}} 
+\index{org\+::newdawn\+::slick\+::tiled\+::\+Tiled\+Map@{org\+::newdawn\+::slick\+::tiled\+::\+Tiled\+Map}!tile\+Width@{tile\+Width}}
+\index{tile\+Width@{tile\+Width}!org\+::newdawn\+::slick\+::tiled\+::\+Tiled\+Map@{org\+::newdawn\+::slick\+::tiled\+::\+Tiled\+Map}}
+\subsubsection{\texorpdfstring{tile\+Width}{tileWidth}}
+{\footnotesize\ttfamily int org.\+newdawn.\+slick.\+tiled.\+Tiled\+Map.\+tile\+Width\hspace{0.3cm}{\ttfamily [protected]}}
+
+The width of the tiles used on the map \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_a13b00efd90dfee0ccc7474310e40199e}\label{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_a13b00efd90dfee0ccc7474310e40199e}} 
+\index{org\+::newdawn\+::slick\+::tiled\+::\+Tiled\+Map@{org\+::newdawn\+::slick\+::tiled\+::\+Tiled\+Map}!width@{width}}
+\index{width@{width}!org\+::newdawn\+::slick\+::tiled\+::\+Tiled\+Map@{org\+::newdawn\+::slick\+::tiled\+::\+Tiled\+Map}}
+\subsubsection{\texorpdfstring{width}{width}}
+{\footnotesize\ttfamily int org.\+newdawn.\+slick.\+tiled.\+Tiled\+Map.\+width\hspace{0.3cm}{\ttfamily [protected]}}
+
+The width of the map 

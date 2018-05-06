@@ -1,0 +1,206 @@
+\hypertarget{classorg_1_1newdawn_1_1slick_1_1tests_1_1_nav_mesh_test_1_1_data_map}{}\section{org.\+newdawn.\+slick.\+tests.\+Nav\+Mesh\+Test.\+Data\+Map Class Reference}
+\label{classorg_1_1newdawn_1_1slick_1_1tests_1_1_nav_mesh_test_1_1_data_map}\index{org.\+newdawn.\+slick.\+tests.\+Nav\+Mesh\+Test.\+Data\+Map@{org.\+newdawn.\+slick.\+tests.\+Nav\+Mesh\+Test.\+Data\+Map}}
+Inheritance diagram for org.\+newdawn.\+slick.\+tests.\+Nav\+Mesh\+Test.\+Data\+Map\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classorg_1_1newdawn_1_1slick_1_1tests_1_1_nav_mesh_test_1_1_data_map}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_nav_mesh_test_1_1_data_map_a6f7a99c8153df6e09527f400345b5364}{Data\+Map}} (String ref)  throws I\+O\+Exception 
+\item 
+boolean \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_nav_mesh_test_1_1_data_map_abb481ef621cd7b14c3dd9aedfb49c90f}{blocked}} (\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_path_finding_context}{Path\+Finding\+Context}} context, int tx, int ty)
+\item 
+float \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_nav_mesh_test_1_1_data_map_a94ee56daa57d506c05a25d4198032ba8}{get\+Cost}} (\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_path_finding_context}{Path\+Finding\+Context}} context, int tx, int ty)
+\item 
+int \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_nav_mesh_test_1_1_data_map_a17b7ae15c28e0d59d4ef2f789f13dad9}{get\+Height\+In\+Tiles}} ()
+\item 
+int \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_nav_mesh_test_1_1_data_map_a9c463e2f4c3c3c208961d40e40529cb3}{get\+Width\+In\+Tiles}} ()
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_nav_mesh_test_1_1_data_map_af2bca0a48cb72d6e19d4c6e4ffcd6dba}{path\+Finder\+Visited}} (int x, int y)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+byte \mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_nav_mesh_test_1_1_data_map_a53320b21368a0f1e144396488d4ae3ee}{map}} = new byte\mbox{[}50$\ast$50\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A simple raw map implementation for testing purposes
+
+\begin{DoxyAuthor}{Author}
+kevin 
+\end{DoxyAuthor}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tests_1_1_nav_mesh_test_1_1_data_map_a6f7a99c8153df6e09527f400345b5364}\label{classorg_1_1newdawn_1_1slick_1_1tests_1_1_nav_mesh_test_1_1_data_map_a6f7a99c8153df6e09527f400345b5364}} 
+\index{org\+::newdawn\+::slick\+::tests\+::\+Nav\+Mesh\+Test\+::\+Data\+Map@{org\+::newdawn\+::slick\+::tests\+::\+Nav\+Mesh\+Test\+::\+Data\+Map}!Data\+Map@{Data\+Map}}
+\index{Data\+Map@{Data\+Map}!org\+::newdawn\+::slick\+::tests\+::\+Nav\+Mesh\+Test\+::\+Data\+Map@{org\+::newdawn\+::slick\+::tests\+::\+Nav\+Mesh\+Test\+::\+Data\+Map}}
+\subsubsection{\texorpdfstring{Data\+Map()}{DataMap()}}
+{\footnotesize\ttfamily org.\+newdawn.\+slick.\+tests.\+Nav\+Mesh\+Test.\+Data\+Map.\+Data\+Map (\begin{DoxyParamCaption}\item[{String}]{ref }\end{DoxyParamCaption}) throws I\+O\+Exception\hspace{0.3cm}{\ttfamily [inline]}}
+
+Create a new map loading it from a file
+
+
+\begin{DoxyParams}{Parameters}
+{\em ref} & The location to load the map from \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em I\+O\+Exception} & Indicatese a failure to access map data \\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyCode}
+202                                                       \{
+203             ResourceLoader.getResourceAsStream(ref).read(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_nav_mesh_test_1_1_data_map_a53320b21368a0f1e144396488d4ae3ee}{map}});
+204         \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tests_1_1_nav_mesh_test_1_1_data_map_abb481ef621cd7b14c3dd9aedfb49c90f}\label{classorg_1_1newdawn_1_1slick_1_1tests_1_1_nav_mesh_test_1_1_data_map_abb481ef621cd7b14c3dd9aedfb49c90f}} 
+\index{org\+::newdawn\+::slick\+::tests\+::\+Nav\+Mesh\+Test\+::\+Data\+Map@{org\+::newdawn\+::slick\+::tests\+::\+Nav\+Mesh\+Test\+::\+Data\+Map}!blocked@{blocked}}
+\index{blocked@{blocked}!org\+::newdawn\+::slick\+::tests\+::\+Nav\+Mesh\+Test\+::\+Data\+Map@{org\+::newdawn\+::slick\+::tests\+::\+Nav\+Mesh\+Test\+::\+Data\+Map}}
+\subsubsection{\texorpdfstring{blocked()}{blocked()}}
+{\footnotesize\ttfamily boolean org.\+newdawn.\+slick.\+tests.\+Nav\+Mesh\+Test.\+Data\+Map.\+blocked (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_path_finding_context}{Path\+Finding\+Context}}}]{context,  }\item[{int}]{tx,  }\item[{int}]{ty }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Check if the given location is blocked, i.\+e. blocks movement of the supplied mover.
+
+
+\begin{DoxyParams}{Parameters}
+{\em context} & The context describing the pathfinding at the time of this request \\
+\hline
+{\em tx} & The x coordinate of the tile we\textquotesingle{}re moving to \\
+\hline
+{\em ty} & The y coordinate of the tile we\textquotesingle{}re moving to \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the location is blocked 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_tile_based_map_af01ba12d90f794cd16138e05dc328725}{org.\+newdawn.\+slick.\+util.\+pathfinding.\+Tile\+Based\+Map}}.
+
+
+\begin{DoxyCode}
+210                                                                            \{
+211             \textcolor{keywordflow}{if} ((tx < 0) || (ty < 0) || (tx >= 50) || (ty >= 50)) \{
+212                 \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+213             \}
+214             
+215             \textcolor{keywordflow}{return} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_nav_mesh_test_1_1_data_map_a53320b21368a0f1e144396488d4ae3ee}{map}}[tx+(ty*50)] != 0;
+216         \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tests_1_1_nav_mesh_test_1_1_data_map_a94ee56daa57d506c05a25d4198032ba8}\label{classorg_1_1newdawn_1_1slick_1_1tests_1_1_nav_mesh_test_1_1_data_map_a94ee56daa57d506c05a25d4198032ba8}} 
+\index{org\+::newdawn\+::slick\+::tests\+::\+Nav\+Mesh\+Test\+::\+Data\+Map@{org\+::newdawn\+::slick\+::tests\+::\+Nav\+Mesh\+Test\+::\+Data\+Map}!get\+Cost@{get\+Cost}}
+\index{get\+Cost@{get\+Cost}!org\+::newdawn\+::slick\+::tests\+::\+Nav\+Mesh\+Test\+::\+Data\+Map@{org\+::newdawn\+::slick\+::tests\+::\+Nav\+Mesh\+Test\+::\+Data\+Map}}
+\subsubsection{\texorpdfstring{get\+Cost()}{getCost()}}
+{\footnotesize\ttfamily float org.\+newdawn.\+slick.\+tests.\+Nav\+Mesh\+Test.\+Data\+Map.\+get\+Cost (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_path_finding_context}{Path\+Finding\+Context}}}]{context,  }\item[{int}]{tx,  }\item[{int}]{ty }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get the cost of moving through the given tile. This can be used to make certain areas more desirable. A simple and valid implementation of this method would be to return 1 in all cases.
+
+
+\begin{DoxyParams}{Parameters}
+{\em context} & The context describing the pathfinding at the time of this request \\
+\hline
+{\em tx} & The x coordinate of the tile we\textquotesingle{}re moving to \\
+\hline
+{\em ty} & The y coordinate of the tile we\textquotesingle{}re moving to \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The relative cost of moving across the given tile 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_tile_based_map_ad2e68a8e3405c15b90b5247ffb70897f}{org.\+newdawn.\+slick.\+util.\+pathfinding.\+Tile\+Based\+Map}}.
+
+
+\begin{DoxyCode}
+222                                                                          \{
+223             \textcolor{keywordflow}{return} 1;
+224         \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tests_1_1_nav_mesh_test_1_1_data_map_a17b7ae15c28e0d59d4ef2f789f13dad9}\label{classorg_1_1newdawn_1_1slick_1_1tests_1_1_nav_mesh_test_1_1_data_map_a17b7ae15c28e0d59d4ef2f789f13dad9}} 
+\index{org\+::newdawn\+::slick\+::tests\+::\+Nav\+Mesh\+Test\+::\+Data\+Map@{org\+::newdawn\+::slick\+::tests\+::\+Nav\+Mesh\+Test\+::\+Data\+Map}!get\+Height\+In\+Tiles@{get\+Height\+In\+Tiles}}
+\index{get\+Height\+In\+Tiles@{get\+Height\+In\+Tiles}!org\+::newdawn\+::slick\+::tests\+::\+Nav\+Mesh\+Test\+::\+Data\+Map@{org\+::newdawn\+::slick\+::tests\+::\+Nav\+Mesh\+Test\+::\+Data\+Map}}
+\subsubsection{\texorpdfstring{get\+Height\+In\+Tiles()}{getHeightInTiles()}}
+{\footnotesize\ttfamily int org.\+newdawn.\+slick.\+tests.\+Nav\+Mesh\+Test.\+Data\+Map.\+get\+Height\+In\+Tiles (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get the height of the tile map. The slightly odd name is used to distiguish this method from commonly used names in game maps.
+
+\begin{DoxyReturn}{Returns}
+The number of tiles down the map 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_tile_based_map_a9669f3dafa1ce48a20e3d7d8c1de239a}{org.\+newdawn.\+slick.\+util.\+pathfinding.\+Tile\+Based\+Map}}.
+
+
+\begin{DoxyCode}
+230                                       \{
+231             \textcolor{keywordflow}{return} 50;
+232         \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tests_1_1_nav_mesh_test_1_1_data_map_a9c463e2f4c3c3c208961d40e40529cb3}\label{classorg_1_1newdawn_1_1slick_1_1tests_1_1_nav_mesh_test_1_1_data_map_a9c463e2f4c3c3c208961d40e40529cb3}} 
+\index{org\+::newdawn\+::slick\+::tests\+::\+Nav\+Mesh\+Test\+::\+Data\+Map@{org\+::newdawn\+::slick\+::tests\+::\+Nav\+Mesh\+Test\+::\+Data\+Map}!get\+Width\+In\+Tiles@{get\+Width\+In\+Tiles}}
+\index{get\+Width\+In\+Tiles@{get\+Width\+In\+Tiles}!org\+::newdawn\+::slick\+::tests\+::\+Nav\+Mesh\+Test\+::\+Data\+Map@{org\+::newdawn\+::slick\+::tests\+::\+Nav\+Mesh\+Test\+::\+Data\+Map}}
+\subsubsection{\texorpdfstring{get\+Width\+In\+Tiles()}{getWidthInTiles()}}
+{\footnotesize\ttfamily int org.\+newdawn.\+slick.\+tests.\+Nav\+Mesh\+Test.\+Data\+Map.\+get\+Width\+In\+Tiles (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get the width of the tile map. The slightly odd name is used to distiguish this method from commonly used names in game maps.
+
+\begin{DoxyReturn}{Returns}
+The number of tiles across the map 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_tile_based_map_a5efac540b233405c4ae65b784a7c6d22}{org.\+newdawn.\+slick.\+util.\+pathfinding.\+Tile\+Based\+Map}}.
+
+
+\begin{DoxyCode}
+238                                      \{
+239             \textcolor{keywordflow}{return} 50;
+240         \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tests_1_1_nav_mesh_test_1_1_data_map_af2bca0a48cb72d6e19d4c6e4ffcd6dba}\label{classorg_1_1newdawn_1_1slick_1_1tests_1_1_nav_mesh_test_1_1_data_map_af2bca0a48cb72d6e19d4c6e4ffcd6dba}} 
+\index{org\+::newdawn\+::slick\+::tests\+::\+Nav\+Mesh\+Test\+::\+Data\+Map@{org\+::newdawn\+::slick\+::tests\+::\+Nav\+Mesh\+Test\+::\+Data\+Map}!path\+Finder\+Visited@{path\+Finder\+Visited}}
+\index{path\+Finder\+Visited@{path\+Finder\+Visited}!org\+::newdawn\+::slick\+::tests\+::\+Nav\+Mesh\+Test\+::\+Data\+Map@{org\+::newdawn\+::slick\+::tests\+::\+Nav\+Mesh\+Test\+::\+Data\+Map}}
+\subsubsection{\texorpdfstring{path\+Finder\+Visited()}{pathFinderVisited()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+tests.\+Nav\+Mesh\+Test.\+Data\+Map.\+path\+Finder\+Visited (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Notification that the path finder visited a given tile. This is used for debugging new heuristics.
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & The x coordinate of the tile that was visited \\
+\hline
+{\em y} & The y coordinate of the tile that was visited \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_tile_based_map_aeb1c1b5cbb0aecc4e280dbe18d5af5ac}{org.\+newdawn.\+slick.\+util.\+pathfinding.\+Tile\+Based\+Map}}.
+
+
+\begin{DoxyCode}
+246                                                     \{
+247         \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tests_1_1_nav_mesh_test_1_1_data_map_a53320b21368a0f1e144396488d4ae3ee}\label{classorg_1_1newdawn_1_1slick_1_1tests_1_1_nav_mesh_test_1_1_data_map_a53320b21368a0f1e144396488d4ae3ee}} 
+\index{org\+::newdawn\+::slick\+::tests\+::\+Nav\+Mesh\+Test\+::\+Data\+Map@{org\+::newdawn\+::slick\+::tests\+::\+Nav\+Mesh\+Test\+::\+Data\+Map}!map@{map}}
+\index{map@{map}!org\+::newdawn\+::slick\+::tests\+::\+Nav\+Mesh\+Test\+::\+Data\+Map@{org\+::newdawn\+::slick\+::tests\+::\+Nav\+Mesh\+Test\+::\+Data\+Map}}
+\subsubsection{\texorpdfstring{map}{map}}
+{\footnotesize\ttfamily byte \mbox{[}$\,$\mbox{]} org.\+newdawn.\+slick.\+tests.\+Nav\+Mesh\+Test.\+Data\+Map.\+map = new byte\mbox{[}50$\ast$50\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}
+
+The map data 

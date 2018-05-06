@@ -1,0 +1,406 @@
+\hypertarget{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_kerning}{}\section{org.\+newdawn.\+slick.\+tools.\+hiero.\+Kerning Class Reference}
+\label{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_kerning}\index{org.\+newdawn.\+slick.\+tools.\+hiero.\+Kerning@{org.\+newdawn.\+slick.\+tools.\+hiero.\+Kerning}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_kerning_abf8ff328d00ee5187d4146203a84660f}{load}} (Input\+Stream input, int \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_kerning_ac5fb2c0fbb7c6ff5bb74545713f197d5}{size}})  throws I\+O\+Exception 
+\item 
+int \mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_kerning_aeff28298520b6c43eca3c2031679993c}{get\+Values}} (int first\+Glyph\+Code)
+\item 
+int \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_kerning_ab54e98c75369ce50198fe27f4973a613}{get\+Kerning}} (int\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_kerning_a2fb8954e8eb2c071e18a4e14b19ce352}{values}}, int other\+Glyph\+Code)
+\item 
+int \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_kerning_a4b370fa79f600d979db8ea2ee77abbf1}{get\+Count}} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_kerning_a07ee19cb53c5f0230a1eb88cb2d4ce75}{read\+Table\+Directory}} (Input\+Stream input)  throws I\+O\+Exception 
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_kerning_a3d1d60d638972f0b47916b296b11a82b}{read\+H\+E\+AD}} (Input\+Stream input)  throws I\+O\+Exception 
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_kerning_a36ce80f85555679417f5ba367ca4987a}{read\+K\+E\+RN}} (Input\+Stream input)  throws I\+O\+Exception 
+\item 
+int \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_kerning_a433922be5e8ae2ea7ebecc17adb480d1}{read\+Unsigned\+Byte}} (Input\+Stream input)  throws I\+O\+Exception 
+\item 
+byte \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_kerning_a226c7723ee9c8d6269c67b8e6ac45d13}{read\+Byte}} (Input\+Stream input)  throws I\+O\+Exception 
+\item 
+int \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_kerning_a8e409fe133f0b1741ba0c5a52ef13910}{read\+Unsigned\+Short}} (Input\+Stream input)  throws I\+O\+Exception 
+\item 
+short \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_kerning_a85a04fa801cb219c4555d38195ca6d47}{read\+Short}} (Input\+Stream input)  throws I\+O\+Exception 
+\item 
+long \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_kerning_aa3c458b9468029d2e7d2a1eccba11453}{read\+Unsigned\+Long}} (Input\+Stream input)  throws I\+O\+Exception 
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_kerning_afa04157519725497f528b5bc175f1abb}{skip}} (Input\+Stream input, long skip)  throws I\+O\+Exception 
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_kerning_a67a8ed1a557f152dab4fe70c02c1a5e9}{seek}} (Input\+Stream input, long position)  throws I\+O\+Exception 
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Map \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_kerning_a2fb8954e8eb2c071e18a4e14b19ce352}{values}} = Collections.\+E\+M\+P\+T\+Y\+\_\+\+M\+AP
+\item 
+int \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_kerning_ac5fb2c0fbb7c6ff5bb74545713f197d5}{size}} = -\/1
+\item 
+int \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_kerning_a5d054877d909331426a9195b9ce1d133}{kerning\+Pair\+Count}} = -\/1
+\item 
+float \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_kerning_a3738309c9d9966c1fee3a5694404b87e}{scale}}
+\item 
+long \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_kerning_a6c58cfffdf2d5619a257504e489deb1b}{byte\+Position}}
+\item 
+long \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_kerning_a62f4639c6dfb62dbec439d7abf53f20c}{head\+Offset}} = -\/1
+\item 
+long \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_kerning_a382489aa078253e87f23dc0be2ebd299}{kern\+Offset}} = -\/1
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Reads a T\+TF font file and provides access to kerning information.
+
+Thanks to the Apache F\+OP project for their inspiring work!
+
+\begin{DoxyAuthor}{Author}
+Nathan Sweet \href{mailto:misc@n4te.com}{\tt misc@n4te.\+com} 
+\end{DoxyAuthor}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_kerning_a4b370fa79f600d979db8ea2ee77abbf1}\label{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_kerning_a4b370fa79f600d979db8ea2ee77abbf1}} 
+\index{org\+::newdawn\+::slick\+::tools\+::hiero\+::\+Kerning@{org\+::newdawn\+::slick\+::tools\+::hiero\+::\+Kerning}!get\+Count@{get\+Count}}
+\index{get\+Count@{get\+Count}!org\+::newdawn\+::slick\+::tools\+::hiero\+::\+Kerning@{org\+::newdawn\+::slick\+::tools\+::hiero\+::\+Kerning}}
+\subsubsection{\texorpdfstring{get\+Count()}{getCount()}}
+{\footnotesize\ttfamily int org.\+newdawn.\+slick.\+tools.\+hiero.\+Kerning.\+get\+Count (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+109                            \{
+110         \textcolor{keywordflow}{return} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_kerning_a5d054877d909331426a9195b9ce1d133}{kerningPairCount}};
+111     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_kerning_ab54e98c75369ce50198fe27f4973a613}\label{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_kerning_ab54e98c75369ce50198fe27f4973a613}} 
+\index{org\+::newdawn\+::slick\+::tools\+::hiero\+::\+Kerning@{org\+::newdawn\+::slick\+::tools\+::hiero\+::\+Kerning}!get\+Kerning@{get\+Kerning}}
+\index{get\+Kerning@{get\+Kerning}!org\+::newdawn\+::slick\+::tools\+::hiero\+::\+Kerning@{org\+::newdawn\+::slick\+::tools\+::hiero\+::\+Kerning}}
+\subsubsection{\texorpdfstring{get\+Kerning()}{getKerning()}}
+{\footnotesize\ttfamily int org.\+newdawn.\+slick.\+tools.\+hiero.\+Kerning.\+get\+Kerning (\begin{DoxyParamCaption}\item[{int \mbox{[}$\,$\mbox{]}}]{values,  }\item[{int}]{other\+Glyph\+Code }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+92                                                              \{
+93         \textcolor{keywordtype}{int} low = 0;
+94         \textcolor{keywordtype}{int} high = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_kerning_a2fb8954e8eb2c071e18a4e14b19ce352}{values}}.length - 1;
+95         \textcolor{keywordflow}{while} (low <= high) \{
+96             \textcolor{keywordtype}{int} midIndex = (low + high) >>> 1;
+97             \textcolor{keywordtype}{int} value = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_kerning_a2fb8954e8eb2c071e18a4e14b19ce352}{values}}[midIndex];
+98             \textcolor{keywordtype}{int} foundGlyphCode = value & 0xffff;
+99             \textcolor{keywordflow}{if} (foundGlyphCode < otherGlyphCode)
+100                 low = midIndex + 1;
+101             \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (foundGlyphCode > otherGlyphCode)
+102                 high = midIndex - 1;
+103             \textcolor{keywordflow}{else}
+104                 \textcolor{keywordflow}{return} value >> 16;
+105         \}
+106         \textcolor{keywordflow}{return} 0;
+107     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_kerning_aeff28298520b6c43eca3c2031679993c}\label{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_kerning_aeff28298520b6c43eca3c2031679993c}} 
+\index{org\+::newdawn\+::slick\+::tools\+::hiero\+::\+Kerning@{org\+::newdawn\+::slick\+::tools\+::hiero\+::\+Kerning}!get\+Values@{get\+Values}}
+\index{get\+Values@{get\+Values}!org\+::newdawn\+::slick\+::tools\+::hiero\+::\+Kerning@{org\+::newdawn\+::slick\+::tools\+::hiero\+::\+Kerning}}
+\subsubsection{\texorpdfstring{get\+Values()}{getValues()}}
+{\footnotesize\ttfamily int \mbox{[}$\,$\mbox{]} org.\+newdawn.\+slick.\+tools.\+hiero.\+Kerning.\+get\+Values (\begin{DoxyParamCaption}\item[{int}]{first\+Glyph\+Code }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns the encoded kerning value for the specified glyph. The glyph code for a Unicode codepoint can be retrieved with \mbox{\hyperlink{}{Glyph\+Vector\#get\+Glyph\+Code(int)}}. 
+\begin{DoxyCode}
+88                                                 \{
+89         \textcolor{keywordflow}{return} (\textcolor{keywordtype}{int}[])\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_kerning_a2fb8954e8eb2c071e18a4e14b19ce352}{values}}.get(\textcolor{keyword}{new} Integer(firstGlyphCode));
+90     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_kerning_abf8ff328d00ee5187d4146203a84660f}\label{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_kerning_abf8ff328d00ee5187d4146203a84660f}} 
+\index{org\+::newdawn\+::slick\+::tools\+::hiero\+::\+Kerning@{org\+::newdawn\+::slick\+::tools\+::hiero\+::\+Kerning}!load@{load}}
+\index{load@{load}!org\+::newdawn\+::slick\+::tools\+::hiero\+::\+Kerning@{org\+::newdawn\+::slick\+::tools\+::hiero\+::\+Kerning}}
+\subsubsection{\texorpdfstring{load()}{load()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+tools.\+hiero.\+Kerning.\+load (\begin{DoxyParamCaption}\item[{Input\+Stream}]{input,  }\item[{int}]{size }\end{DoxyParamCaption}) throws I\+O\+Exception\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em input} & The data for the T\+TF font. \\
+\hline
+{\em size} & The font size to use to determine kerning pixel offsets. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em I\+O\+Exception} & If the font could not be read. \\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyCode}
+37                                                                       \{
+38         this.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_kerning_ac5fb2c0fbb7c6ff5bb74545713f197d5}{size}} = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_kerning_ac5fb2c0fbb7c6ff5bb74545713f197d5}{size}};
+39         \textcolor{keywordflow}{if} (input == null) \textcolor{keywordflow}{throw} \textcolor{keyword}{new} IllegalArgumentException(\textcolor{stringliteral}{"input cannot be null."});
+40         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_kerning_a07ee19cb53c5f0230a1eb88cb2d4ce75}{readTableDirectory}}(input);
+41         \textcolor{keywordflow}{if} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_kerning_a62f4639c6dfb62dbec439d7abf53f20c}{headOffset}} == -1) \textcolor{keywordflow}{throw} \textcolor{keyword}{new} IOException(\textcolor{stringliteral}{"HEAD table not found."});
+42         \textcolor{keywordflow}{if} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_kerning_a382489aa078253e87f23dc0be2ebd299}{kernOffset}} == -1) \{
+43             \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_kerning_a2fb8954e8eb2c071e18a4e14b19ce352}{values}} = Collections.EMPTY\_MAP;
+44             \textcolor{keywordflow}{return};
+45         \}
+46         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_kerning_a2fb8954e8eb2c071e18a4e14b19ce352}{values}} = \textcolor{keyword}{new} HashMap(256);
+47         \textcolor{keywordflow}{if} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_kerning_a62f4639c6dfb62dbec439d7abf53f20c}{headOffset}} < \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_kerning_a382489aa078253e87f23dc0be2ebd299}{kernOffset}}) \{
+48             \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_kerning_a3d1d60d638972f0b47916b296b11a82b}{readHEAD}}(input);
+49             \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_kerning_a36ce80f85555679417f5ba367ca4987a}{readKERN}}(input);
+50         \} \textcolor{keywordflow}{else} \{
+51             \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_kerning_a36ce80f85555679417f5ba367ca4987a}{readKERN}}(input);
+52             \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_kerning_a3d1d60d638972f0b47916b296b11a82b}{readHEAD}}(input);
+53         \}
+54         input.close();
+55 
+56         \textcolor{keywordflow}{for} (Iterator entryIter = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_kerning_a2fb8954e8eb2c071e18a4e14b19ce352}{values}}.entrySet().iterator(); entryIter.hasNext();) \{
+57             Entry entry = (Entry)entryIter.next();
+58             \textcolor{comment}{// Scale the offset values using the font size.}
+59             List valueList = (List)entry.getValue();
+60             \textcolor{keywordflow}{for} (ListIterator valueIter = valueList.listIterator(); valueIter.hasNext();) \{
+61                 \textcolor{keywordtype}{int} value = ((Integer)valueIter.next()).intValue();
+62                 \textcolor{keywordtype}{int} glyphCode = value & 0xffff;
+63                 \textcolor{keywordtype}{int} offset = value >> 16;
+64                 offset = Math.round(offset * \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_kerning_a3738309c9d9966c1fee3a5694404b87e}{scale}});
+65                 \textcolor{keywordflow}{if} (offset == 0)
+66                     valueIter.remove();
+67                 \textcolor{keywordflow}{else}
+68                     valueIter.set(\textcolor{keyword}{new} Integer((offset << 16) | glyphCode));
+69             \}
+70             \textcolor{keywordflow}{if} (valueList.isEmpty()) \{
+71                 entryIter.remove();
+72             \} \textcolor{keywordflow}{else} \{
+73                 \textcolor{comment}{// Replace ArrayList with int[].}
+74                 \textcolor{keywordtype}{int}[] valueArray = \textcolor{keyword}{new} \textcolor{keywordtype}{int}[valueList.size()];
+75                 \textcolor{keywordtype}{int} i = 0;
+76                 \textcolor{keywordflow}{for} (Iterator valueIter = valueList.iterator(); valueIter.hasNext(); i++)
+77                     valueArray[i] = ((Integer)valueIter.next()).intValue();
+78                 entry.setValue(valueArray);
+79                 \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_kerning_a5d054877d909331426a9195b9ce1d133}{kerningPairCount}} += valueArray.length;
+80             \}
+81         \}
+82     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_kerning_a226c7723ee9c8d6269c67b8e6ac45d13}\label{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_kerning_a226c7723ee9c8d6269c67b8e6ac45d13}} 
+\index{org\+::newdawn\+::slick\+::tools\+::hiero\+::\+Kerning@{org\+::newdawn\+::slick\+::tools\+::hiero\+::\+Kerning}!read\+Byte@{read\+Byte}}
+\index{read\+Byte@{read\+Byte}!org\+::newdawn\+::slick\+::tools\+::hiero\+::\+Kerning@{org\+::newdawn\+::slick\+::tools\+::hiero\+::\+Kerning}}
+\subsubsection{\texorpdfstring{read\+Byte()}{readByte()}}
+{\footnotesize\ttfamily byte org.\+newdawn.\+slick.\+tools.\+hiero.\+Kerning.\+read\+Byte (\begin{DoxyParamCaption}\item[{Input\+Stream}]{input }\end{DoxyParamCaption}) throws I\+O\+Exception\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+\begin{DoxyCode}
+178                                                                  \{
+179         \textcolor{keywordflow}{return} (byte)\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_kerning_a433922be5e8ae2ea7ebecc17adb480d1}{readUnsignedByte}}(input);
+180     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_kerning_a3d1d60d638972f0b47916b296b11a82b}\label{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_kerning_a3d1d60d638972f0b47916b296b11a82b}} 
+\index{org\+::newdawn\+::slick\+::tools\+::hiero\+::\+Kerning@{org\+::newdawn\+::slick\+::tools\+::hiero\+::\+Kerning}!read\+H\+E\+AD@{read\+H\+E\+AD}}
+\index{read\+H\+E\+AD@{read\+H\+E\+AD}!org\+::newdawn\+::slick\+::tools\+::hiero\+::\+Kerning@{org\+::newdawn\+::slick\+::tools\+::hiero\+::\+Kerning}}
+\subsubsection{\texorpdfstring{read\+H\+E\+A\+D()}{readHEAD()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+tools.\+hiero.\+Kerning.\+read\+H\+E\+AD (\begin{DoxyParamCaption}\item[{Input\+Stream}]{input }\end{DoxyParamCaption}) throws I\+O\+Exception\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+\begin{DoxyCode}
+139                                                                  \{
+140         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_kerning_a67a8ed1a557f152dab4fe70c02c1a5e9}{seek}}(input, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_kerning_a62f4639c6dfb62dbec439d7abf53f20c}{headOffset}} + 2 * 4 + 2 * 4 + 2);
+141         \textcolor{keywordtype}{int} unitsPerEm = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_kerning_a8e409fe133f0b1741ba0c5a52ef13910}{readUnsignedShort}}(input);
+142         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_kerning_a3738309c9d9966c1fee3a5694404b87e}{scale}} = (float)\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_kerning_ac5fb2c0fbb7c6ff5bb74545713f197d5}{size}} / unitsPerEm;
+143     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_kerning_a36ce80f85555679417f5ba367ca4987a}\label{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_kerning_a36ce80f85555679417f5ba367ca4987a}} 
+\index{org\+::newdawn\+::slick\+::tools\+::hiero\+::\+Kerning@{org\+::newdawn\+::slick\+::tools\+::hiero\+::\+Kerning}!read\+K\+E\+RN@{read\+K\+E\+RN}}
+\index{read\+K\+E\+RN@{read\+K\+E\+RN}!org\+::newdawn\+::slick\+::tools\+::hiero\+::\+Kerning@{org\+::newdawn\+::slick\+::tools\+::hiero\+::\+Kerning}}
+\subsubsection{\texorpdfstring{read\+K\+E\+R\+N()}{readKERN()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+tools.\+hiero.\+Kerning.\+read\+K\+E\+RN (\begin{DoxyParamCaption}\item[{Input\+Stream}]{input }\end{DoxyParamCaption}) throws I\+O\+Exception\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+\begin{DoxyCode}
+145                                                                  \{
+146         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_kerning_a67a8ed1a557f152dab4fe70c02c1a5e9}{seek}}(input, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_kerning_a382489aa078253e87f23dc0be2ebd299}{kernOffset}} + 2);
+147         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} subTableCount = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_kerning_a8e409fe133f0b1741ba0c5a52ef13910}{readUnsignedShort}}(input); subTableCount > 0; 
+      subTableCount--) \{
+148             \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_kerning_afa04157519725497f528b5bc175f1abb}{skip}}(input, 2 * 2);
+149             \textcolor{keywordtype}{int} tupleIndex = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_kerning_a8e409fe133f0b1741ba0c5a52ef13910}{readUnsignedShort}}(input);
+150             \textcolor{keywordflow}{if} (!((tupleIndex & 1) != 0) || (tupleIndex & 2) != 0 || (tupleIndex & 4) != 0) \textcolor{keywordflow}{return};
+151             \textcolor{keywordflow}{if} (tupleIndex >> 8 != 0) \textcolor{keywordflow}{continue};
+152 
+153             \textcolor{keywordtype}{int} kerningCount = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_kerning_a8e409fe133f0b1741ba0c5a52ef13910}{readUnsignedShort}}(input);
+154             \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_kerning_afa04157519725497f528b5bc175f1abb}{skip}}(input, 3 * 2);
+155             \textcolor{keywordflow}{while} (kerningCount-- > 0) \{
+156                 \textcolor{keywordtype}{int} firstGlyphCode = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_kerning_a8e409fe133f0b1741ba0c5a52ef13910}{readUnsignedShort}}(input);
+157                 \textcolor{keywordtype}{int} secondGlyphCode = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_kerning_a8e409fe133f0b1741ba0c5a52ef13910}{readUnsignedShort}}(input);
+158                 \textcolor{keywordtype}{int} offset = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_kerning_a85a04fa801cb219c4555d38195ca6d47}{readShort}}(input);
+159                 \textcolor{keywordtype}{int} value = (offset << 16) | secondGlyphCode;
+160 
+161                 List firstGlyphValues = (List)\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_kerning_a2fb8954e8eb2c071e18a4e14b19ce352}{values}}.get(\textcolor{keyword}{new} Integer(firstGlyphCode));
+162                 \textcolor{keywordflow}{if} (firstGlyphValues == null) \{
+163                     firstGlyphValues = \textcolor{keyword}{new} ArrayList(256);
+164                     \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_kerning_a2fb8954e8eb2c071e18a4e14b19ce352}{values}}.put(\textcolor{keyword}{new} Integer(firstGlyphCode), firstGlyphValues);
+165                 \}
+166                 firstGlyphValues.add(\textcolor{keyword}{new} Integer(value));
+167             \}
+168         \}
+169     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_kerning_a85a04fa801cb219c4555d38195ca6d47}\label{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_kerning_a85a04fa801cb219c4555d38195ca6d47}} 
+\index{org\+::newdawn\+::slick\+::tools\+::hiero\+::\+Kerning@{org\+::newdawn\+::slick\+::tools\+::hiero\+::\+Kerning}!read\+Short@{read\+Short}}
+\index{read\+Short@{read\+Short}!org\+::newdawn\+::slick\+::tools\+::hiero\+::\+Kerning@{org\+::newdawn\+::slick\+::tools\+::hiero\+::\+Kerning}}
+\subsubsection{\texorpdfstring{read\+Short()}{readShort()}}
+{\footnotesize\ttfamily short org.\+newdawn.\+slick.\+tools.\+hiero.\+Kerning.\+read\+Short (\begin{DoxyParamCaption}\item[{Input\+Stream}]{input }\end{DoxyParamCaption}) throws I\+O\+Exception\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+\begin{DoxyCode}
+186                                                                    \{
+187         \textcolor{keywordflow}{return} (\textcolor{keywordtype}{short})\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_kerning_a8e409fe133f0b1741ba0c5a52ef13910}{readUnsignedShort}}(input);
+188     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_kerning_a07ee19cb53c5f0230a1eb88cb2d4ce75}\label{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_kerning_a07ee19cb53c5f0230a1eb88cb2d4ce75}} 
+\index{org\+::newdawn\+::slick\+::tools\+::hiero\+::\+Kerning@{org\+::newdawn\+::slick\+::tools\+::hiero\+::\+Kerning}!read\+Table\+Directory@{read\+Table\+Directory}}
+\index{read\+Table\+Directory@{read\+Table\+Directory}!org\+::newdawn\+::slick\+::tools\+::hiero\+::\+Kerning@{org\+::newdawn\+::slick\+::tools\+::hiero\+::\+Kerning}}
+\subsubsection{\texorpdfstring{read\+Table\+Directory()}{readTableDirectory()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+tools.\+hiero.\+Kerning.\+read\+Table\+Directory (\begin{DoxyParamCaption}\item[{Input\+Stream}]{input }\end{DoxyParamCaption}) throws I\+O\+Exception\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+\begin{DoxyCode}
+113                                                                            \{
+114         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_kerning_afa04157519725497f528b5bc175f1abb}{skip}}(input, 4);
+115         \textcolor{keywordtype}{int} tableCount = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_kerning_a8e409fe133f0b1741ba0c5a52ef13910}{readUnsignedShort}}(input);
+116         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_kerning_afa04157519725497f528b5bc175f1abb}{skip}}(input, 6);
+117 
+118         byte[] tagBytes = \textcolor{keyword}{new} byte[4];
+119         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < tableCount; i++) \{
+120             tagBytes[0] = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_kerning_a226c7723ee9c8d6269c67b8e6ac45d13}{readByte}}(input);
+121             tagBytes[1] = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_kerning_a226c7723ee9c8d6269c67b8e6ac45d13}{readByte}}(input);
+122             tagBytes[2] = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_kerning_a226c7723ee9c8d6269c67b8e6ac45d13}{readByte}}(input);
+123             tagBytes[3] = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_kerning_a226c7723ee9c8d6269c67b8e6ac45d13}{readByte}}(input);
+124             \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_kerning_afa04157519725497f528b5bc175f1abb}{skip}}(input, 4);
+125             \textcolor{keywordtype}{long} offset = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_kerning_aa3c458b9468029d2e7d2a1eccba11453}{readUnsignedLong}}(input);
+126             \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_kerning_afa04157519725497f528b5bc175f1abb}{skip}}(input, 4);
+127 
+128             String tag = \textcolor{keyword}{new} String(tagBytes, \textcolor{stringliteral}{"ISO-8859-1"});
+129             \textcolor{keywordflow}{if} (tag.equals(\textcolor{stringliteral}{"head"})) \{
+130                 \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_kerning_a62f4639c6dfb62dbec439d7abf53f20c}{headOffset}} = offset;
+131                 \textcolor{keywordflow}{if} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_kerning_a382489aa078253e87f23dc0be2ebd299}{kernOffset}} != -1) \textcolor{keywordflow}{break};
+132             \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (tag.equals(\textcolor{stringliteral}{"kern"})) \{
+133                 \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_kerning_a382489aa078253e87f23dc0be2ebd299}{kernOffset}} = offset;
+134                 \textcolor{keywordflow}{if} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_kerning_a62f4639c6dfb62dbec439d7abf53f20c}{headOffset}} != -1) \textcolor{keywordflow}{break};
+135             \}
+136         \}
+137     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_kerning_a433922be5e8ae2ea7ebecc17adb480d1}\label{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_kerning_a433922be5e8ae2ea7ebecc17adb480d1}} 
+\index{org\+::newdawn\+::slick\+::tools\+::hiero\+::\+Kerning@{org\+::newdawn\+::slick\+::tools\+::hiero\+::\+Kerning}!read\+Unsigned\+Byte@{read\+Unsigned\+Byte}}
+\index{read\+Unsigned\+Byte@{read\+Unsigned\+Byte}!org\+::newdawn\+::slick\+::tools\+::hiero\+::\+Kerning@{org\+::newdawn\+::slick\+::tools\+::hiero\+::\+Kerning}}
+\subsubsection{\texorpdfstring{read\+Unsigned\+Byte()}{readUnsignedByte()}}
+{\footnotesize\ttfamily int org.\+newdawn.\+slick.\+tools.\+hiero.\+Kerning.\+read\+Unsigned\+Byte (\begin{DoxyParamCaption}\item[{Input\+Stream}]{input }\end{DoxyParamCaption}) throws I\+O\+Exception\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+\begin{DoxyCode}
+171                                                                         \{
+172         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_kerning_a6c58cfffdf2d5619a257504e489deb1b}{bytePosition}}++;
+173         \textcolor{keywordtype}{int} b = input.read();
+174         \textcolor{keywordflow}{if} (b == -1) \textcolor{keywordflow}{throw} \textcolor{keyword}{new} EOFException(\textcolor{stringliteral}{"Unexpected end of file."});
+175         \textcolor{keywordflow}{return} b;
+176     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_kerning_aa3c458b9468029d2e7d2a1eccba11453}\label{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_kerning_aa3c458b9468029d2e7d2a1eccba11453}} 
+\index{org\+::newdawn\+::slick\+::tools\+::hiero\+::\+Kerning@{org\+::newdawn\+::slick\+::tools\+::hiero\+::\+Kerning}!read\+Unsigned\+Long@{read\+Unsigned\+Long}}
+\index{read\+Unsigned\+Long@{read\+Unsigned\+Long}!org\+::newdawn\+::slick\+::tools\+::hiero\+::\+Kerning@{org\+::newdawn\+::slick\+::tools\+::hiero\+::\+Kerning}}
+\subsubsection{\texorpdfstring{read\+Unsigned\+Long()}{readUnsignedLong()}}
+{\footnotesize\ttfamily long org.\+newdawn.\+slick.\+tools.\+hiero.\+Kerning.\+read\+Unsigned\+Long (\begin{DoxyParamCaption}\item[{Input\+Stream}]{input }\end{DoxyParamCaption}) throws I\+O\+Exception\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+\begin{DoxyCode}
+190                                                                          \{
+191         \textcolor{keywordtype}{long} value = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_kerning_a433922be5e8ae2ea7ebecc17adb480d1}{readUnsignedByte}}(input);
+192         value = (value << 8) + \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_kerning_a433922be5e8ae2ea7ebecc17adb480d1}{readUnsignedByte}}(input);
+193         value = (value << 8) + \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_kerning_a433922be5e8ae2ea7ebecc17adb480d1}{readUnsignedByte}}(input);
+194         value = (value << 8) + \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_kerning_a433922be5e8ae2ea7ebecc17adb480d1}{readUnsignedByte}}(input);
+195         \textcolor{keywordflow}{return} value;
+196     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_kerning_a8e409fe133f0b1741ba0c5a52ef13910}\label{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_kerning_a8e409fe133f0b1741ba0c5a52ef13910}} 
+\index{org\+::newdawn\+::slick\+::tools\+::hiero\+::\+Kerning@{org\+::newdawn\+::slick\+::tools\+::hiero\+::\+Kerning}!read\+Unsigned\+Short@{read\+Unsigned\+Short}}
+\index{read\+Unsigned\+Short@{read\+Unsigned\+Short}!org\+::newdawn\+::slick\+::tools\+::hiero\+::\+Kerning@{org\+::newdawn\+::slick\+::tools\+::hiero\+::\+Kerning}}
+\subsubsection{\texorpdfstring{read\+Unsigned\+Short()}{readUnsignedShort()}}
+{\footnotesize\ttfamily int org.\+newdawn.\+slick.\+tools.\+hiero.\+Kerning.\+read\+Unsigned\+Short (\begin{DoxyParamCaption}\item[{Input\+Stream}]{input }\end{DoxyParamCaption}) throws I\+O\+Exception\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+\begin{DoxyCode}
+182                                                                          \{
+183         \textcolor{keywordflow}{return} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_kerning_a433922be5e8ae2ea7ebecc17adb480d1}{readUnsignedByte}}(input) << 8) + \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_kerning_a433922be5e8ae2ea7ebecc17adb480d1}{readUnsignedByte}}(input);
+184     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_kerning_a67a8ed1a557f152dab4fe70c02c1a5e9}\label{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_kerning_a67a8ed1a557f152dab4fe70c02c1a5e9}} 
+\index{org\+::newdawn\+::slick\+::tools\+::hiero\+::\+Kerning@{org\+::newdawn\+::slick\+::tools\+::hiero\+::\+Kerning}!seek@{seek}}
+\index{seek@{seek}!org\+::newdawn\+::slick\+::tools\+::hiero\+::\+Kerning@{org\+::newdawn\+::slick\+::tools\+::hiero\+::\+Kerning}}
+\subsubsection{\texorpdfstring{seek()}{seek()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+tools.\+hiero.\+Kerning.\+seek (\begin{DoxyParamCaption}\item[{Input\+Stream}]{input,  }\item[{long}]{position }\end{DoxyParamCaption}) throws I\+O\+Exception\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+\begin{DoxyCode}
+207                                                                             \{
+208         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_kerning_afa04157519725497f528b5bc175f1abb}{skip}}(input, position - \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_kerning_a6c58cfffdf2d5619a257504e489deb1b}{bytePosition}});
+209     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_kerning_afa04157519725497f528b5bc175f1abb}\label{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_kerning_afa04157519725497f528b5bc175f1abb}} 
+\index{org\+::newdawn\+::slick\+::tools\+::hiero\+::\+Kerning@{org\+::newdawn\+::slick\+::tools\+::hiero\+::\+Kerning}!skip@{skip}}
+\index{skip@{skip}!org\+::newdawn\+::slick\+::tools\+::hiero\+::\+Kerning@{org\+::newdawn\+::slick\+::tools\+::hiero\+::\+Kerning}}
+\subsubsection{\texorpdfstring{skip()}{skip()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+tools.\+hiero.\+Kerning.\+skip (\begin{DoxyParamCaption}\item[{Input\+Stream}]{input,  }\item[{long}]{skip }\end{DoxyParamCaption}) throws I\+O\+Exception\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+\begin{DoxyCode}
+198                                                                         \{
+199         \textcolor{keywordflow}{while} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_kerning_afa04157519725497f528b5bc175f1abb}{skip}} > 0) \{
+200             \textcolor{keywordtype}{long} skipped = input.skip(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_kerning_afa04157519725497f528b5bc175f1abb}{skip}});
+201             \textcolor{keywordflow}{if} (skipped <= 0) \textcolor{keywordflow}{break};
+202             \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_kerning_a6c58cfffdf2d5619a257504e489deb1b}{bytePosition}} += skipped;
+203             \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_kerning_afa04157519725497f528b5bc175f1abb}{skip}} -= skipped;
+204         \}
+205     \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_kerning_a6c58cfffdf2d5619a257504e489deb1b}\label{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_kerning_a6c58cfffdf2d5619a257504e489deb1b}} 
+\index{org\+::newdawn\+::slick\+::tools\+::hiero\+::\+Kerning@{org\+::newdawn\+::slick\+::tools\+::hiero\+::\+Kerning}!byte\+Position@{byte\+Position}}
+\index{byte\+Position@{byte\+Position}!org\+::newdawn\+::slick\+::tools\+::hiero\+::\+Kerning@{org\+::newdawn\+::slick\+::tools\+::hiero\+::\+Kerning}}
+\subsubsection{\texorpdfstring{byte\+Position}{bytePosition}}
+{\footnotesize\ttfamily long org.\+newdawn.\+slick.\+tools.\+hiero.\+Kerning.\+byte\+Position\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_kerning_a62f4639c6dfb62dbec439d7abf53f20c}\label{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_kerning_a62f4639c6dfb62dbec439d7abf53f20c}} 
+\index{org\+::newdawn\+::slick\+::tools\+::hiero\+::\+Kerning@{org\+::newdawn\+::slick\+::tools\+::hiero\+::\+Kerning}!head\+Offset@{head\+Offset}}
+\index{head\+Offset@{head\+Offset}!org\+::newdawn\+::slick\+::tools\+::hiero\+::\+Kerning@{org\+::newdawn\+::slick\+::tools\+::hiero\+::\+Kerning}}
+\subsubsection{\texorpdfstring{head\+Offset}{headOffset}}
+{\footnotesize\ttfamily long org.\+newdawn.\+slick.\+tools.\+hiero.\+Kerning.\+head\+Offset = -\/1\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_kerning_a5d054877d909331426a9195b9ce1d133}\label{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_kerning_a5d054877d909331426a9195b9ce1d133}} 
+\index{org\+::newdawn\+::slick\+::tools\+::hiero\+::\+Kerning@{org\+::newdawn\+::slick\+::tools\+::hiero\+::\+Kerning}!kerning\+Pair\+Count@{kerning\+Pair\+Count}}
+\index{kerning\+Pair\+Count@{kerning\+Pair\+Count}!org\+::newdawn\+::slick\+::tools\+::hiero\+::\+Kerning@{org\+::newdawn\+::slick\+::tools\+::hiero\+::\+Kerning}}
+\subsubsection{\texorpdfstring{kerning\+Pair\+Count}{kerningPairCount}}
+{\footnotesize\ttfamily int org.\+newdawn.\+slick.\+tools.\+hiero.\+Kerning.\+kerning\+Pair\+Count = -\/1\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_kerning_a382489aa078253e87f23dc0be2ebd299}\label{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_kerning_a382489aa078253e87f23dc0be2ebd299}} 
+\index{org\+::newdawn\+::slick\+::tools\+::hiero\+::\+Kerning@{org\+::newdawn\+::slick\+::tools\+::hiero\+::\+Kerning}!kern\+Offset@{kern\+Offset}}
+\index{kern\+Offset@{kern\+Offset}!org\+::newdawn\+::slick\+::tools\+::hiero\+::\+Kerning@{org\+::newdawn\+::slick\+::tools\+::hiero\+::\+Kerning}}
+\subsubsection{\texorpdfstring{kern\+Offset}{kernOffset}}
+{\footnotesize\ttfamily long org.\+newdawn.\+slick.\+tools.\+hiero.\+Kerning.\+kern\+Offset = -\/1\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_kerning_a3738309c9d9966c1fee3a5694404b87e}\label{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_kerning_a3738309c9d9966c1fee3a5694404b87e}} 
+\index{org\+::newdawn\+::slick\+::tools\+::hiero\+::\+Kerning@{org\+::newdawn\+::slick\+::tools\+::hiero\+::\+Kerning}!scale@{scale}}
+\index{scale@{scale}!org\+::newdawn\+::slick\+::tools\+::hiero\+::\+Kerning@{org\+::newdawn\+::slick\+::tools\+::hiero\+::\+Kerning}}
+\subsubsection{\texorpdfstring{scale}{scale}}
+{\footnotesize\ttfamily float org.\+newdawn.\+slick.\+tools.\+hiero.\+Kerning.\+scale\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_kerning_ac5fb2c0fbb7c6ff5bb74545713f197d5}\label{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_kerning_ac5fb2c0fbb7c6ff5bb74545713f197d5}} 
+\index{org\+::newdawn\+::slick\+::tools\+::hiero\+::\+Kerning@{org\+::newdawn\+::slick\+::tools\+::hiero\+::\+Kerning}!size@{size}}
+\index{size@{size}!org\+::newdawn\+::slick\+::tools\+::hiero\+::\+Kerning@{org\+::newdawn\+::slick\+::tools\+::hiero\+::\+Kerning}}
+\subsubsection{\texorpdfstring{size}{size}}
+{\footnotesize\ttfamily int org.\+newdawn.\+slick.\+tools.\+hiero.\+Kerning.\+size = -\/1\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_kerning_a2fb8954e8eb2c071e18a4e14b19ce352}\label{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_kerning_a2fb8954e8eb2c071e18a4e14b19ce352}} 
+\index{org\+::newdawn\+::slick\+::tools\+::hiero\+::\+Kerning@{org\+::newdawn\+::slick\+::tools\+::hiero\+::\+Kerning}!values@{values}}
+\index{values@{values}!org\+::newdawn\+::slick\+::tools\+::hiero\+::\+Kerning@{org\+::newdawn\+::slick\+::tools\+::hiero\+::\+Kerning}}
+\subsubsection{\texorpdfstring{values}{values}}
+{\footnotesize\ttfamily Map org.\+newdawn.\+slick.\+tools.\+hiero.\+Kerning.\+values = Collections.\+E\+M\+P\+T\+Y\+\_\+\+M\+AP\hspace{0.3cm}{\ttfamily [private]}}
+

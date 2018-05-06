@@ -1,0 +1,235 @@
+\hypertarget{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_rotate_transition}{}\section{org.\+newdawn.\+slick.\+state.\+transition.\+Rotate\+Transition Class Reference}
+\label{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_rotate_transition}\index{org.\+newdawn.\+slick.\+state.\+transition.\+Rotate\+Transition@{org.\+newdawn.\+slick.\+state.\+transition.\+Rotate\+Transition}}
+Inheritance diagram for org.\+newdawn.\+slick.\+state.\+transition.\+Rotate\+Transition\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_rotate_transition}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_rotate_transition_a83af1aebc17f3fc3433ae2802b46dc7c}{Rotate\+Transition}} ()
+\item 
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_rotate_transition_aefa7546ffe542346a0ca65349381651e}{Rotate\+Transition}} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_color}{Color}} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_rotate_transition_a8ab02534f280fe5883c5348a1eb399b2}{background}})
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_rotate_transition_a527c48345f18db529a56719c5647bd94}{init}} (\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1state_1_1_game_state}{Game\+State}} first\+State, \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1state_1_1_game_state}{Game\+State}} second\+State)
+\item 
+boolean \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_rotate_transition_a08722d7a235f796e69e77c5e665ab3e5}{is\+Complete}} ()
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_rotate_transition_aff86fd0d40fff8a2c1c126dc9ddba04e}{post\+Render}} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1_state_based_game}{State\+Based\+Game}} game, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_game_container}{Game\+Container}} container, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_graphics}{Graphics}} g)  throws Slick\+Exception 
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_rotate_transition_aac26c3811fc2aab9c291e5323bd4adab}{pre\+Render}} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1_state_based_game}{State\+Based\+Game}} game, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_game_container}{Game\+Container}} container, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_graphics}{Graphics}} g)  throws Slick\+Exception 
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_rotate_transition_a9e3f2c191f7f04925f8319b1e85a29f8}{update}} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1_state_based_game}{State\+Based\+Game}} game, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_game_container}{Game\+Container}} container, int delta)  throws Slick\+Exception 
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1state_1_1_game_state}{Game\+State}} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_rotate_transition_a838343f7970365450d9799df4b424451}{prev}}
+\item 
+float \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_rotate_transition_aea66eb59377c5e7f66b7a91642c06130}{ang}}
+\item 
+boolean \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_rotate_transition_ab25369d5c3cf43e51ac230f817b7557d}{finish}}
+\item 
+float \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_rotate_transition_aa8eff3f2cd4d25051e010b2c95fa8ef1}{scale}} = 1
+\item 
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_color}{Color}} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_rotate_transition_a8ab02534f280fe5883c5348a1eb399b2}{background}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A transition that causes the previous state to rotate and scale down into the new state.
+
+This is an enter transition
+
+\begin{DoxyAuthor}{Author}
+kevin 
+\end{DoxyAuthor}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_rotate_transition_a83af1aebc17f3fc3433ae2802b46dc7c}\label{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_rotate_transition_a83af1aebc17f3fc3433ae2802b46dc7c}} 
+\index{org\+::newdawn\+::slick\+::state\+::transition\+::\+Rotate\+Transition@{org\+::newdawn\+::slick\+::state\+::transition\+::\+Rotate\+Transition}!Rotate\+Transition@{Rotate\+Transition}}
+\index{Rotate\+Transition@{Rotate\+Transition}!org\+::newdawn\+::slick\+::state\+::transition\+::\+Rotate\+Transition@{org\+::newdawn\+::slick\+::state\+::transition\+::\+Rotate\+Transition}}
+\subsubsection{\texorpdfstring{Rotate\+Transition()}{RotateTransition()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily org.\+newdawn.\+slick.\+state.\+transition.\+Rotate\+Transition.\+Rotate\+Transition (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Create a new transition 
+\begin{DoxyCode}
+33                               \{
+34         
+35     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_rotate_transition_aefa7546ffe542346a0ca65349381651e}\label{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_rotate_transition_aefa7546ffe542346a0ca65349381651e}} 
+\index{org\+::newdawn\+::slick\+::state\+::transition\+::\+Rotate\+Transition@{org\+::newdawn\+::slick\+::state\+::transition\+::\+Rotate\+Transition}!Rotate\+Transition@{Rotate\+Transition}}
+\index{Rotate\+Transition@{Rotate\+Transition}!org\+::newdawn\+::slick\+::state\+::transition\+::\+Rotate\+Transition@{org\+::newdawn\+::slick\+::state\+::transition\+::\+Rotate\+Transition}}
+\subsubsection{\texorpdfstring{Rotate\+Transition()}{RotateTransition()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily org.\+newdawn.\+slick.\+state.\+transition.\+Rotate\+Transition.\+Rotate\+Transition (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_color}{Color}}}]{background }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Create a new transition
+
+
+\begin{DoxyParams}{Parameters}
+{\em background} & The background colour to draw under the previous state \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+42                                               \{
+43         this.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_rotate_transition_a8ab02534f280fe5883c5348a1eb399b2}{background}} = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_rotate_transition_a8ab02534f280fe5883c5348a1eb399b2}{background}};
+44     \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_rotate_transition_a527c48345f18db529a56719c5647bd94}\label{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_rotate_transition_a527c48345f18db529a56719c5647bd94}} 
+\index{org\+::newdawn\+::slick\+::state\+::transition\+::\+Rotate\+Transition@{org\+::newdawn\+::slick\+::state\+::transition\+::\+Rotate\+Transition}!init@{init}}
+\index{init@{init}!org\+::newdawn\+::slick\+::state\+::transition\+::\+Rotate\+Transition@{org\+::newdawn\+::slick\+::state\+::transition\+::\+Rotate\+Transition}}
+\subsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+state.\+transition.\+Rotate\+Transition.\+init (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1state_1_1_game_state}{Game\+State}}}]{first\+State,  }\item[{\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1state_1_1_game_state}{Game\+State}}}]{second\+State }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_transition_a7b59f0c9205f1f0417ee18bc526e5b01}{org.\+newdawn.\+slick.\+state.\+transition.\+Transition\+::init}}(\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1state_1_1_game_state}{org.\+newdawn.\+slick.\+state.\+Game\+State}}, \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1state_1_1_game_state}{org.\+newdawn.\+slick.\+state.\+Game\+State}}) 
+\end{DoxySeeAlso}
+
+
+Implements \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_transition_a7b59f0c9205f1f0417ee18bc526e5b01}{org.\+newdawn.\+slick.\+state.\+transition.\+Transition}}.
+
+
+\begin{DoxyCode}
+49                                                                   \{
+50         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_rotate_transition_a838343f7970365450d9799df4b424451}{prev}} = secondState;
+51     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_rotate_transition_a08722d7a235f796e69e77c5e665ab3e5}\label{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_rotate_transition_a08722d7a235f796e69e77c5e665ab3e5}} 
+\index{org\+::newdawn\+::slick\+::state\+::transition\+::\+Rotate\+Transition@{org\+::newdawn\+::slick\+::state\+::transition\+::\+Rotate\+Transition}!is\+Complete@{is\+Complete}}
+\index{is\+Complete@{is\+Complete}!org\+::newdawn\+::slick\+::state\+::transition\+::\+Rotate\+Transition@{org\+::newdawn\+::slick\+::state\+::transition\+::\+Rotate\+Transition}}
+\subsubsection{\texorpdfstring{is\+Complete()}{isComplete()}}
+{\footnotesize\ttfamily boolean org.\+newdawn.\+slick.\+state.\+transition.\+Rotate\+Transition.\+is\+Complete (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_transition_af397d5185cf09c30c3f51d5021d63815}{org.\+newdawn.\+slick.\+state.\+transition.\+Transition\+::is\+Complete()}} 
+\end{DoxySeeAlso}
+
+
+Implements \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_transition_af397d5185cf09c30c3f51d5021d63815}{org.\+newdawn.\+slick.\+state.\+transition.\+Transition}}.
+
+
+\begin{DoxyCode}
+56                                 \{
+57         \textcolor{keywordflow}{return} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_rotate_transition_ab25369d5c3cf43e51ac230f817b7557d}{finish}};
+58     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_rotate_transition_aff86fd0d40fff8a2c1c126dc9ddba04e}\label{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_rotate_transition_aff86fd0d40fff8a2c1c126dc9ddba04e}} 
+\index{org\+::newdawn\+::slick\+::state\+::transition\+::\+Rotate\+Transition@{org\+::newdawn\+::slick\+::state\+::transition\+::\+Rotate\+Transition}!post\+Render@{post\+Render}}
+\index{post\+Render@{post\+Render}!org\+::newdawn\+::slick\+::state\+::transition\+::\+Rotate\+Transition@{org\+::newdawn\+::slick\+::state\+::transition\+::\+Rotate\+Transition}}
+\subsubsection{\texorpdfstring{post\+Render()}{postRender()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+state.\+transition.\+Rotate\+Transition.\+post\+Render (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1_state_based_game}{State\+Based\+Game}}}]{game,  }\item[{\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_game_container}{Game\+Container}}}]{container,  }\item[{\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_graphics}{Graphics}}}]{g }\end{DoxyParamCaption}) throws \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_slick_exception}{Slick\+Exception}}\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_transition_ac113f4d5a19962a62a8adec7f9ab5d47}{org.\+newdawn.\+slick.\+state.\+transition.\+Transition\+::post\+Render}}(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1_state_based_game}{org.\+newdawn.\+slick.\+state.\+State\+Based\+Game}}, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_game_container}{org.\+newdawn.\+slick.\+Game\+Container}}, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_graphics}{org.\+newdawn.\+slick.\+Graphics}}) 
+\end{DoxySeeAlso}
+
+
+Implements \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_transition_ac113f4d5a19962a62a8adec7f9ab5d47}{org.\+newdawn.\+slick.\+state.\+transition.\+Transition}}.
+
+
+\begin{DoxyCode}
+63                                                                                                            
+      \{
+64         g.translate(container.getWidth()/2, container.getHeight()/2);
+65         g.scale(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_rotate_transition_aa8eff3f2cd4d25051e010b2c95fa8ef1}{scale}},\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_rotate_transition_aa8eff3f2cd4d25051e010b2c95fa8ef1}{scale}});
+66         g.rotate(0, 0, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_rotate_transition_aea66eb59377c5e7f66b7a91642c06130}{ang}});
+67         g.translate(-container.getWidth()/2, -container.getHeight()/2);
+68         \textcolor{keywordflow}{if} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_rotate_transition_a8ab02534f280fe5883c5348a1eb399b2}{background}} != null) \{
+69             Color c = g.getColor();
+70             g.setColor(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_rotate_transition_a8ab02534f280fe5883c5348a1eb399b2}{background}});
+71             g.fillRect(0,0,container.getWidth(),container.getHeight());
+72             g.setColor(c);
+73         \}
+74         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_rotate_transition_a838343f7970365450d9799df4b424451}{prev}}.\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1state_1_1_game_state_a065352d2725274c5244cd022f226eb17}{render}}(container, game, g);
+75         g.translate(container.getWidth()/2, container.getHeight()/2);
+76         g.rotate(0, 0, -\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_rotate_transition_aea66eb59377c5e7f66b7a91642c06130}{ang}});
+77         g.scale(1/\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_rotate_transition_aa8eff3f2cd4d25051e010b2c95fa8ef1}{scale}},1/\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_rotate_transition_aa8eff3f2cd4d25051e010b2c95fa8ef1}{scale}});
+78         g.translate(-container.getWidth()/2, -container.getHeight()/2);
+79     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_rotate_transition_aac26c3811fc2aab9c291e5323bd4adab}\label{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_rotate_transition_aac26c3811fc2aab9c291e5323bd4adab}} 
+\index{org\+::newdawn\+::slick\+::state\+::transition\+::\+Rotate\+Transition@{org\+::newdawn\+::slick\+::state\+::transition\+::\+Rotate\+Transition}!pre\+Render@{pre\+Render}}
+\index{pre\+Render@{pre\+Render}!org\+::newdawn\+::slick\+::state\+::transition\+::\+Rotate\+Transition@{org\+::newdawn\+::slick\+::state\+::transition\+::\+Rotate\+Transition}}
+\subsubsection{\texorpdfstring{pre\+Render()}{preRender()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+state.\+transition.\+Rotate\+Transition.\+pre\+Render (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1_state_based_game}{State\+Based\+Game}}}]{game,  }\item[{\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_game_container}{Game\+Container}}}]{container,  }\item[{\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_graphics}{Graphics}}}]{g }\end{DoxyParamCaption}) throws \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_slick_exception}{Slick\+Exception}}\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_transition_ab8b0668c059830d938575d1a0b08bd93}{org.\+newdawn.\+slick.\+state.\+transition.\+Transition\+::pre\+Render}}(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1_state_based_game}{org.\+newdawn.\+slick.\+state.\+State\+Based\+Game}}, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_game_container}{org.\+newdawn.\+slick.\+Game\+Container}}, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_graphics}{org.\+newdawn.\+slick.\+Graphics}}) 
+\end{DoxySeeAlso}
+
+
+Implements \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_transition_ab8b0668c059830d938575d1a0b08bd93}{org.\+newdawn.\+slick.\+state.\+transition.\+Transition}}.
+
+
+\begin{DoxyCode}
+85                                               \{
+86     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_rotate_transition_a9e3f2c191f7f04925f8319b1e85a29f8}\label{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_rotate_transition_a9e3f2c191f7f04925f8319b1e85a29f8}} 
+\index{org\+::newdawn\+::slick\+::state\+::transition\+::\+Rotate\+Transition@{org\+::newdawn\+::slick\+::state\+::transition\+::\+Rotate\+Transition}!update@{update}}
+\index{update@{update}!org\+::newdawn\+::slick\+::state\+::transition\+::\+Rotate\+Transition@{org\+::newdawn\+::slick\+::state\+::transition\+::\+Rotate\+Transition}}
+\subsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+state.\+transition.\+Rotate\+Transition.\+update (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1_state_based_game}{State\+Based\+Game}}}]{game,  }\item[{\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_game_container}{Game\+Container}}}]{container,  }\item[{int}]{delta }\end{DoxyParamCaption}) throws \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_slick_exception}{Slick\+Exception}}\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_transition_a9be3072f6e2423e3d0a451a419d1d518}{org.\+newdawn.\+slick.\+state.\+transition.\+Transition\+::update}}(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1_state_based_game}{org.\+newdawn.\+slick.\+state.\+State\+Based\+Game}}, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_game_container}{org.\+newdawn.\+slick.\+Game\+Container}}, int) 
+\end{DoxySeeAlso}
+
+
+Implements \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_transition_a9be3072f6e2423e3d0a451a419d1d518}{org.\+newdawn.\+slick.\+state.\+transition.\+Transition}}.
+
+
+\begin{DoxyCode}
+92                                   \{
+93         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_rotate_transition_aea66eb59377c5e7f66b7a91642c06130}{ang}} += delta * 0.5f;
+94         \textcolor{keywordflow}{if} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_rotate_transition_aea66eb59377c5e7f66b7a91642c06130}{ang}} > 500) \{
+95             \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_rotate_transition_ab25369d5c3cf43e51ac230f817b7557d}{finish}} = \textcolor{keyword}{true};
+96         \}
+97         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_rotate_transition_aa8eff3f2cd4d25051e010b2c95fa8ef1}{scale}} -= delta * 0.001f;
+98         \textcolor{keywordflow}{if} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_rotate_transition_aa8eff3f2cd4d25051e010b2c95fa8ef1}{scale}} < 0) \{
+99             \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_rotate_transition_aa8eff3f2cd4d25051e010b2c95fa8ef1}{scale}} = 0;
+100         \}
+101     \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_rotate_transition_aea66eb59377c5e7f66b7a91642c06130}\label{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_rotate_transition_aea66eb59377c5e7f66b7a91642c06130}} 
+\index{org\+::newdawn\+::slick\+::state\+::transition\+::\+Rotate\+Transition@{org\+::newdawn\+::slick\+::state\+::transition\+::\+Rotate\+Transition}!ang@{ang}}
+\index{ang@{ang}!org\+::newdawn\+::slick\+::state\+::transition\+::\+Rotate\+Transition@{org\+::newdawn\+::slick\+::state\+::transition\+::\+Rotate\+Transition}}
+\subsubsection{\texorpdfstring{ang}{ang}}
+{\footnotesize\ttfamily float org.\+newdawn.\+slick.\+state.\+transition.\+Rotate\+Transition.\+ang\hspace{0.3cm}{\ttfamily [private]}}
+
+The current angle of rotation \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_rotate_transition_a8ab02534f280fe5883c5348a1eb399b2}\label{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_rotate_transition_a8ab02534f280fe5883c5348a1eb399b2}} 
+\index{org\+::newdawn\+::slick\+::state\+::transition\+::\+Rotate\+Transition@{org\+::newdawn\+::slick\+::state\+::transition\+::\+Rotate\+Transition}!background@{background}}
+\index{background@{background}!org\+::newdawn\+::slick\+::state\+::transition\+::\+Rotate\+Transition@{org\+::newdawn\+::slick\+::state\+::transition\+::\+Rotate\+Transition}}
+\subsubsection{\texorpdfstring{background}{background}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_color}{Color}} org.\+newdawn.\+slick.\+state.\+transition.\+Rotate\+Transition.\+background\hspace{0.3cm}{\ttfamily [private]}}
+
+The background applied under the previous state if any \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_rotate_transition_ab25369d5c3cf43e51ac230f817b7557d}\label{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_rotate_transition_ab25369d5c3cf43e51ac230f817b7557d}} 
+\index{org\+::newdawn\+::slick\+::state\+::transition\+::\+Rotate\+Transition@{org\+::newdawn\+::slick\+::state\+::transition\+::\+Rotate\+Transition}!finish@{finish}}
+\index{finish@{finish}!org\+::newdawn\+::slick\+::state\+::transition\+::\+Rotate\+Transition@{org\+::newdawn\+::slick\+::state\+::transition\+::\+Rotate\+Transition}}
+\subsubsection{\texorpdfstring{finish}{finish}}
+{\footnotesize\ttfamily boolean org.\+newdawn.\+slick.\+state.\+transition.\+Rotate\+Transition.\+finish\hspace{0.3cm}{\ttfamily [private]}}
+
+True if the state has finished \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_rotate_transition_a838343f7970365450d9799df4b424451}\label{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_rotate_transition_a838343f7970365450d9799df4b424451}} 
+\index{org\+::newdawn\+::slick\+::state\+::transition\+::\+Rotate\+Transition@{org\+::newdawn\+::slick\+::state\+::transition\+::\+Rotate\+Transition}!prev@{prev}}
+\index{prev@{prev}!org\+::newdawn\+::slick\+::state\+::transition\+::\+Rotate\+Transition@{org\+::newdawn\+::slick\+::state\+::transition\+::\+Rotate\+Transition}}
+\subsubsection{\texorpdfstring{prev}{prev}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1state_1_1_game_state}{Game\+State}} org.\+newdawn.\+slick.\+state.\+transition.\+Rotate\+Transition.\+prev\hspace{0.3cm}{\ttfamily [private]}}
+
+The previous state \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_rotate_transition_aa8eff3f2cd4d25051e010b2c95fa8ef1}\label{classorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_rotate_transition_aa8eff3f2cd4d25051e010b2c95fa8ef1}} 
+\index{org\+::newdawn\+::slick\+::state\+::transition\+::\+Rotate\+Transition@{org\+::newdawn\+::slick\+::state\+::transition\+::\+Rotate\+Transition}!scale@{scale}}
+\index{scale@{scale}!org\+::newdawn\+::slick\+::state\+::transition\+::\+Rotate\+Transition@{org\+::newdawn\+::slick\+::state\+::transition\+::\+Rotate\+Transition}}
+\subsubsection{\texorpdfstring{scale}{scale}}
+{\footnotesize\ttfamily float org.\+newdawn.\+slick.\+state.\+transition.\+Rotate\+Transition.\+scale = 1\hspace{0.3cm}{\ttfamily [private]}}
+
+The current scale 

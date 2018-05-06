@@ -1,0 +1,48 @@
+\hypertarget{classorg_1_1newdawn_1_1slick_1_1util_1_1_bootstrap}{}\section{org.\+newdawn.\+slick.\+util.\+Bootstrap Class Reference}
+\label{classorg_1_1newdawn_1_1slick_1_1util_1_1_bootstrap}\index{org.\+newdawn.\+slick.\+util.\+Bootstrap@{org.\+newdawn.\+slick.\+util.\+Bootstrap}}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1_bootstrap_a8844195f1dea3d19398094e9c274ef5c}{run\+As\+Application}} (\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1_game}{Game}} game, int width, int height, boolean fullscreen)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Utility class to wrap up starting a game in a single line
+
+\begin{DoxyAuthor}{Author}
+kevin 
+\end{DoxyAuthor}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1util_1_1_bootstrap_a8844195f1dea3d19398094e9c274ef5c}\label{classorg_1_1newdawn_1_1slick_1_1util_1_1_bootstrap_a8844195f1dea3d19398094e9c274ef5c}} 
+\index{org\+::newdawn\+::slick\+::util\+::\+Bootstrap@{org\+::newdawn\+::slick\+::util\+::\+Bootstrap}!run\+As\+Application@{run\+As\+Application}}
+\index{run\+As\+Application@{run\+As\+Application}!org\+::newdawn\+::slick\+::util\+::\+Bootstrap@{org\+::newdawn\+::slick\+::util\+::\+Bootstrap}}
+\subsubsection{\texorpdfstring{run\+As\+Application()}{runAsApplication()}}
+{\footnotesize\ttfamily static void org.\+newdawn.\+slick.\+util.\+Bootstrap.\+run\+As\+Application (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1_game}{Game}}}]{game,  }\item[{int}]{width,  }\item[{int}]{height,  }\item[{boolean}]{fullscreen }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Start the game as an application
+
+
+\begin{DoxyParams}{Parameters}
+{\em game} & The game to be started \\
+\hline
+{\em width} & The width of the window \\
+\hline
+{\em height} & The height of the window \\
+\hline
+{\em fullscreen} & True if the window should be fullscreen \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+21                                                                                               \{
+22         \textcolor{keywordflow}{try} \{
+23             AppGameContainer container = \textcolor{keyword}{new} AppGameContainer(game, width, height, fullscreen);
+24             container.start();
+25         \} \textcolor{keywordflow}{catch} (Exception e) \{
+26             e.printStackTrace();
+27         \}
+28     \}
+\end{DoxyCode}

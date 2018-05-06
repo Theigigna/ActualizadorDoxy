@@ -1,0 +1,225 @@
+\hypertarget{classorg_1_1newdawn_1_1slick_1_1util_1_1_buffered_image_util}{}\section{org.\+newdawn.\+slick.\+util.\+Buffered\+Image\+Util Class Reference}
+\label{classorg_1_1newdawn_1_1slick_1_1util_1_1_buffered_image_util}\index{org.\+newdawn.\+slick.\+util.\+Buffered\+Image\+Util@{org.\+newdawn.\+slick.\+util.\+Buffered\+Image\+Util}}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1opengl_1_1_texture}{Texture}} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1_buffered_image_util_a60639f0e446fa211b987096681b98615}{get\+Texture}} (String resource\+Name, Buffered\+Image resource\+Image)  throws I\+O\+Exception 
+\item 
+static \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1opengl_1_1_texture}{Texture}} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1_buffered_image_util_aab5af0fd218410addd8f7feff0bbf8f4}{get\+Texture}} (String resource\+Name, Buffered\+Image resource\+Image, int filter)  throws I\+O\+Exception 
+\item 
+static \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1opengl_1_1_texture}{Texture}} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1_buffered_image_util_adeb7dc3f0a04a157bceb0a2e1aeaf57a}{get\+Texture}} (String resource\+Name, Buffered\+Image resourceimage, int target, int dst\+Pixel\+Format, int min\+Filter, int mag\+Filter)  throws I\+O\+Exception 
+\end{DoxyCompactItemize}
+\subsection*{Static Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1_buffered_image_util_a6975c7af5e9f4f590aa952966b4f2510}{copy\+Area}} (Buffered\+Image image, int x, int y, int width, int height, int dx, int dy)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This is a utility class that allows you to convert a Buffered\+Image into a texture.
+
+\begin{DoxyAuthor}{Author}
+James Chambers (Jimmy) 
+
+Jeremy Adams (elias\+\_\+naur) 
+
+Kevin Glass (kevglass) 
+\end{DoxyAuthor}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1util_1_1_buffered_image_util_a6975c7af5e9f4f590aa952966b4f2510}\label{classorg_1_1newdawn_1_1slick_1_1util_1_1_buffered_image_util_a6975c7af5e9f4f590aa952966b4f2510}} 
+\index{org\+::newdawn\+::slick\+::util\+::\+Buffered\+Image\+Util@{org\+::newdawn\+::slick\+::util\+::\+Buffered\+Image\+Util}!copy\+Area@{copy\+Area}}
+\index{copy\+Area@{copy\+Area}!org\+::newdawn\+::slick\+::util\+::\+Buffered\+Image\+Util@{org\+::newdawn\+::slick\+::util\+::\+Buffered\+Image\+Util}}
+\subsubsection{\texorpdfstring{copy\+Area()}{copyArea()}}
+{\footnotesize\ttfamily static void org.\+newdawn.\+slick.\+util.\+Buffered\+Image\+Util.\+copy\+Area (\begin{DoxyParamCaption}\item[{Buffered\+Image}]{image,  }\item[{int}]{x,  }\item[{int}]{y,  }\item[{int}]{width,  }\item[{int}]{height,  }\item[{int}]{dx,  }\item[{int}]{dy }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}, {\ttfamily [private]}}
+
+Implement of transform copy area for 1.\+4
+
+
+\begin{DoxyParams}{Parameters}
+{\em image} & The image to copy \\
+\hline
+{\em x} & The x position to copy to \\
+\hline
+{\em y} & The y position to copy to \\
+\hline
+{\em width} & The width of the image \\
+\hline
+{\em height} & The height of the image \\
+\hline
+{\em dx} & The transform on the x axis \\
+\hline
+{\em dy} & The transform on the y axis \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+157                                                                                                            
+      \{
+158         Graphics2D g = (Graphics2D) image.getGraphics();
+159         
+160         g.drawImage(image.getSubimage(x, y, width, height),x+dx,y+dy,null);
+161     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1util_1_1_buffered_image_util_a60639f0e446fa211b987096681b98615}\label{classorg_1_1newdawn_1_1slick_1_1util_1_1_buffered_image_util_a60639f0e446fa211b987096681b98615}} 
+\index{org\+::newdawn\+::slick\+::util\+::\+Buffered\+Image\+Util@{org\+::newdawn\+::slick\+::util\+::\+Buffered\+Image\+Util}!get\+Texture@{get\+Texture}}
+\index{get\+Texture@{get\+Texture}!org\+::newdawn\+::slick\+::util\+::\+Buffered\+Image\+Util@{org\+::newdawn\+::slick\+::util\+::\+Buffered\+Image\+Util}}
+\subsubsection{\texorpdfstring{get\+Texture()}{getTexture()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1opengl_1_1_texture}{Texture}} org.\+newdawn.\+slick.\+util.\+Buffered\+Image\+Util.\+get\+Texture (\begin{DoxyParamCaption}\item[{String}]{resource\+Name,  }\item[{Buffered\+Image}]{resource\+Image }\end{DoxyParamCaption}) throws I\+O\+Exception\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Load a texture
+
+
+\begin{DoxyParams}{Parameters}
+{\em resource\+Name} & The location of the resource to load \\
+\hline
+{\em resource\+Image} & The Buffered\+Image we are converting \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The loaded texture 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em I\+O\+Exception} & Indicates a failure to access the resource \\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyCode}
+38                                                             \{
+39         Texture tex = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1_buffered_image_util_a60639f0e446fa211b987096681b98615}{getTexture}}(resourceName, resourceImage,
+40                 SGL.GL\_TEXTURE\_2D, \textcolor{comment}{// target}
+41                 SGL.GL\_RGBA8, \textcolor{comment}{// dest pixel format}
+42                 SGL.GL\_LINEAR, \textcolor{comment}{// min filter (unused)}
+43                 SGL.GL\_LINEAR);
+44 
+45         \textcolor{keywordflow}{return} tex;
+46     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1util_1_1_buffered_image_util_aab5af0fd218410addd8f7feff0bbf8f4}\label{classorg_1_1newdawn_1_1slick_1_1util_1_1_buffered_image_util_aab5af0fd218410addd8f7feff0bbf8f4}} 
+\index{org\+::newdawn\+::slick\+::util\+::\+Buffered\+Image\+Util@{org\+::newdawn\+::slick\+::util\+::\+Buffered\+Image\+Util}!get\+Texture@{get\+Texture}}
+\index{get\+Texture@{get\+Texture}!org\+::newdawn\+::slick\+::util\+::\+Buffered\+Image\+Util@{org\+::newdawn\+::slick\+::util\+::\+Buffered\+Image\+Util}}
+\subsubsection{\texorpdfstring{get\+Texture()}{getTexture()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1opengl_1_1_texture}{Texture}} org.\+newdawn.\+slick.\+util.\+Buffered\+Image\+Util.\+get\+Texture (\begin{DoxyParamCaption}\item[{String}]{resource\+Name,  }\item[{Buffered\+Image}]{resource\+Image,  }\item[{int}]{filter }\end{DoxyParamCaption}) throws I\+O\+Exception\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Load a texture
+
+
+\begin{DoxyParams}{Parameters}
+{\em resource\+Name} & The location of the resource to load \\
+\hline
+{\em resource\+Image} & The Buffered\+Image we are converting \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The loaded texture 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em I\+O\+Exception} & Indicates a failure to access the resource \\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyCode}
+60                                                                         \{
+61         Texture tex = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1_buffered_image_util_a60639f0e446fa211b987096681b98615}{getTexture}}(resourceName, resourceImage,
+62                 SGL.GL\_TEXTURE\_2D, \textcolor{comment}{// target}
+63                 SGL.GL\_RGBA8, \textcolor{comment}{// dest pixel format}
+64                 filter, \textcolor{comment}{// min filter (unused)}
+65                 filter);
+66 
+67         \textcolor{keywordflow}{return} tex;
+68     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1util_1_1_buffered_image_util_adeb7dc3f0a04a157bceb0a2e1aeaf57a}\label{classorg_1_1newdawn_1_1slick_1_1util_1_1_buffered_image_util_adeb7dc3f0a04a157bceb0a2e1aeaf57a}} 
+\index{org\+::newdawn\+::slick\+::util\+::\+Buffered\+Image\+Util@{org\+::newdawn\+::slick\+::util\+::\+Buffered\+Image\+Util}!get\+Texture@{get\+Texture}}
+\index{get\+Texture@{get\+Texture}!org\+::newdawn\+::slick\+::util\+::\+Buffered\+Image\+Util@{org\+::newdawn\+::slick\+::util\+::\+Buffered\+Image\+Util}}
+\subsubsection{\texorpdfstring{get\+Texture()}{getTexture()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1opengl_1_1_texture}{Texture}} org.\+newdawn.\+slick.\+util.\+Buffered\+Image\+Util.\+get\+Texture (\begin{DoxyParamCaption}\item[{String}]{resource\+Name,  }\item[{Buffered\+Image}]{resourceimage,  }\item[{int}]{target,  }\item[{int}]{dst\+Pixel\+Format,  }\item[{int}]{min\+Filter,  }\item[{int}]{mag\+Filter }\end{DoxyParamCaption}) throws I\+O\+Exception\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Load a texture into Open\+GL from a Buffered\+Image
+
+
+\begin{DoxyParams}{Parameters}
+{\em resource\+Name} & The location of the resource to load \\
+\hline
+{\em resourceimage} & The Buffered\+Image we are converting \\
+\hline
+{\em target} & The GL target to load the texture against \\
+\hline
+{\em dst\+Pixel\+Format} & The pixel format of the screen \\
+\hline
+{\em min\+Filter} & The minimising filter \\
+\hline
+{\em mag\+Filter} & The magnification filter \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The loaded texture 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em I\+O\+Exception} & Indicates a failure to access the resource \\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyCode}
+91                                                              \{
+92         ImageIOImageData data = \textcolor{keyword}{new} ImageIOImageData();\textcolor{keywordtype}{int} srcPixelFormat = 0;
+93 
+94         \textcolor{comment}{// create the texture ID for this texture}
+95         \textcolor{keywordtype}{int} textureID = InternalTextureLoader.createTextureID();
+96         TextureImpl texture = \textcolor{keyword}{new} TextureImpl(resourceName, target, textureID);
+97 
+98         \textcolor{comment}{// Enable texturing}
+99         Renderer.get().glEnable(SGL.GL\_TEXTURE\_2D);
+100 
+101         \textcolor{comment}{// bind this texture}
+102         Renderer.get().glBindTexture(target, textureID);
+103 
+104         BufferedImage bufferedImage = resourceimage;
+105         texture.setWidth(bufferedImage.getWidth());
+106         texture.setHeight(bufferedImage.getHeight());
+107 
+108         \textcolor{keywordflow}{if} (bufferedImage.getColorModel().hasAlpha()) \{
+109             srcPixelFormat = SGL.GL\_RGBA;
+110         \} \textcolor{keywordflow}{else} \{
+111             srcPixelFormat = SGL.GL\_RGB;
+112         \}
+113 
+114         \textcolor{comment}{// convert that image into a byte buffer of texture data}
+115         ByteBuffer textureBuffer = data.imageToByteBuffer(bufferedImage, \textcolor{keyword}{false}, \textcolor{keyword}{false}, null);
+116         texture.setTextureHeight(data.getTexHeight());
+117         texture.setTextureWidth(data.getTexWidth());
+118         texture.setAlpha(data.getDepth() == 32);
+119         
+120         \textcolor{keywordflow}{if} (target == SGL.GL\_TEXTURE\_2D) \{
+121             Renderer.get().glTexParameteri(target, SGL.GL\_TEXTURE\_MIN\_FILTER, minFilter);
+122             Renderer.get().glTexParameteri(target, SGL.GL\_TEXTURE\_MAG\_FILTER, magFilter);
+123             
+124             \textcolor{keywordflow}{if} (Renderer.get().canTextureMirrorClamp()) \{
+125                 Renderer.get().glTexParameteri(SGL.GL\_TEXTURE\_2D, SGL.GL\_TEXTURE\_WRAP\_S, SGL.
+      GL\_MIRROR\_CLAMP\_TO\_EDGE\_EXT);
+126                 Renderer.get().glTexParameteri(SGL.GL\_TEXTURE\_2D, SGL.GL\_TEXTURE\_WRAP\_T, SGL.
+      GL\_MIRROR\_CLAMP\_TO\_EDGE\_EXT);
+127             \} \textcolor{keywordflow}{else} \{
+128                 Renderer.get().glTexParameteri(SGL.GL\_TEXTURE\_2D, SGL.GL\_TEXTURE\_WRAP\_S, SGL.GL\_CLAMP);
+129                 Renderer.get().glTexParameteri(SGL.GL\_TEXTURE\_2D, SGL.GL\_TEXTURE\_WRAP\_T, SGL.GL\_CLAMP);
+130             \}
+131         \}
+132 
+133         Renderer.get().glTexImage2D(target, 
+134                       0, 
+135                       dstPixelFormat, 
+136                       texture.getTextureWidth(), 
+137                       texture.getTextureHeight(), 
+138                       0, 
+139                       srcPixelFormat, 
+140                       SGL.GL\_UNSIGNED\_BYTE, 
+141                       textureBuffer); 
+142 
+143         \textcolor{keywordflow}{return} texture;
+144     \}
+\end{DoxyCode}

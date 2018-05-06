@@ -1,0 +1,66 @@
+\hypertarget{classorg_1_1newdawn_1_1slick_1_1_slick_exception}{}\section{org.\+newdawn.\+slick.\+Slick\+Exception Class Reference}
+\label{classorg_1_1newdawn_1_1slick_1_1_slick_exception}\index{org.\+newdawn.\+slick.\+Slick\+Exception@{org.\+newdawn.\+slick.\+Slick\+Exception}}
+Inheritance diagram for org.\+newdawn.\+slick.\+Slick\+Exception\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classorg_1_1newdawn_1_1slick_1_1_slick_exception}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_slick_exception_acbbdab9049fd2f6efc4e25c3ac3af5fa}{Slick\+Exception}} (String message)
+\item 
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_slick_exception_a4e4874e61391121a888a6770b4779c7e}{Slick\+Exception}} (String message, Throwable e)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A generic exception thrown by everything in the library
+
+\begin{DoxyAuthor}{Author}
+kevin 
+\end{DoxyAuthor}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1_slick_exception_acbbdab9049fd2f6efc4e25c3ac3af5fa}\label{classorg_1_1newdawn_1_1slick_1_1_slick_exception_acbbdab9049fd2f6efc4e25c3ac3af5fa}} 
+\index{org\+::newdawn\+::slick\+::\+Slick\+Exception@{org\+::newdawn\+::slick\+::\+Slick\+Exception}!Slick\+Exception@{Slick\+Exception}}
+\index{Slick\+Exception@{Slick\+Exception}!org\+::newdawn\+::slick\+::\+Slick\+Exception@{org\+::newdawn\+::slick\+::\+Slick\+Exception}}
+\subsubsection{\texorpdfstring{Slick\+Exception()}{SlickException()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily org.\+newdawn.\+slick.\+Slick\+Exception.\+Slick\+Exception (\begin{DoxyParamCaption}\item[{String}]{message }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Create a new exception with a detail message
+
+
+\begin{DoxyParams}{Parameters}
+{\em message} & The message describing the cause of this exception \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+14                                           \{
+15         super(message);
+16     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1_slick_exception_a4e4874e61391121a888a6770b4779c7e}\label{classorg_1_1newdawn_1_1slick_1_1_slick_exception_a4e4874e61391121a888a6770b4779c7e}} 
+\index{org\+::newdawn\+::slick\+::\+Slick\+Exception@{org\+::newdawn\+::slick\+::\+Slick\+Exception}!Slick\+Exception@{Slick\+Exception}}
+\index{Slick\+Exception@{Slick\+Exception}!org\+::newdawn\+::slick\+::\+Slick\+Exception@{org\+::newdawn\+::slick\+::\+Slick\+Exception}}
+\subsubsection{\texorpdfstring{Slick\+Exception()}{SlickException()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily org.\+newdawn.\+slick.\+Slick\+Exception.\+Slick\+Exception (\begin{DoxyParamCaption}\item[{String}]{message,  }\item[{Throwable}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Create a new exception with a detail message
+
+
+\begin{DoxyParams}{Parameters}
+{\em message} & The message describing the cause of this exception \\
+\hline
+{\em e} & The exception causing this exception to be thrown \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+24                                                        \{
+25         super(message, e);
+26     \}
+\end{DoxyCode}

@@ -1,0 +1,173 @@
+\hypertarget{classitems_1_1weapons_1_1_arrow_handler}{}\section{items.\+weapons.\+Arrow\+Handler Class Reference}
+\label{classitems_1_1weapons_1_1_arrow_handler}\index{items.\+weapons.\+Arrow\+Handler@{items.\+weapons.\+Arrow\+Handler}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classitems_1_1weapons_1_1_arrow_handler_a64a0233c91c8aef9289012c67bdf6874}{update}} (int delta)
+\item 
+void \mbox{\hyperlink{classitems_1_1weapons_1_1_arrow_handler_abe0324e6596b718769e45b8165c25673}{render}} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_game_container}{Game\+Container}} container, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1_state_based_game}{State\+Based\+Game}} game, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_graphics}{Graphics}} g)
+\item 
+boolean \mbox{\hyperlink{classitems_1_1weapons_1_1_arrow_handler_af197702f581022b65e7f0ded40f18758}{add\+Arrow}} (\mbox{\hyperlink{classitems_1_1weapons_1_1_arrow}{Arrow}} a)
+\item 
+boolean \mbox{\hyperlink{classitems_1_1weapons_1_1_arrow_handler_ab7e4dce0dc3cd385a870fe54ca1cabf1}{delete\+Arrow}} (\mbox{\hyperlink{classitems_1_1weapons_1_1_arrow}{Arrow}} arrow)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classitems_1_1weapons_1_1_arrow_handler}{Arrow\+Handler}} \mbox{\hyperlink{classitems_1_1weapons_1_1_arrow_handler_a67870bc30237b05a43008c330ec748ce}{get\+Arrow\+Handler}} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classitems_1_1weapons_1_1_arrow_handler_a8dfa1e68464bdd4eb03007cfc9412948}{Arrow\+Handler}} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Array\+List$<$ \mbox{\hyperlink{classitems_1_1weapons_1_1_arrow}{Arrow}} $>$ \mbox{\hyperlink{classitems_1_1weapons_1_1_arrow_handler_a7038dd7e7fa3db85bcddf0d8601d4271}{arrows}}
+\item 
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_image}{Image}} \mbox{\hyperlink{classitems_1_1weapons_1_1_arrow_handler_a5d5966436e98e6c2792992e1643fffd5}{arr}}
+\end{DoxyCompactItemize}
+\subsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classitems_1_1weapons_1_1_arrow_handler}{Arrow\+Handler}} \mbox{\hyperlink{classitems_1_1weapons_1_1_arrow_handler_a1d4f905a340ec4bdccbefeb1a8cac834}{arrow\+Handler}} =new \mbox{\hyperlink{classitems_1_1weapons_1_1_arrow_handler}{Arrow\+Handler}}()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyAuthor}{Author}
+Bea 
+\end{DoxyAuthor}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classitems_1_1weapons_1_1_arrow_handler_a8dfa1e68464bdd4eb03007cfc9412948}\label{classitems_1_1weapons_1_1_arrow_handler_a8dfa1e68464bdd4eb03007cfc9412948}} 
+\index{items\+::weapons\+::\+Arrow\+Handler@{items\+::weapons\+::\+Arrow\+Handler}!Arrow\+Handler@{Arrow\+Handler}}
+\index{Arrow\+Handler@{Arrow\+Handler}!items\+::weapons\+::\+Arrow\+Handler@{items\+::weapons\+::\+Arrow\+Handler}}
+\subsubsection{\texorpdfstring{Arrow\+Handler()}{ArrowHandler()}}
+{\footnotesize\ttfamily items.\+weapons.\+Arrow\+Handler.\+Arrow\+Handler (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+\begin{DoxyCode}
+29                            \{
+30         \mbox{\hyperlink{classitems_1_1weapons_1_1_arrow_handler_a7038dd7e7fa3db85bcddf0d8601d4271}{arrows}} = \textcolor{keyword}{new} ArrayList<Arrow>();
+31     \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classitems_1_1weapons_1_1_arrow_handler_af197702f581022b65e7f0ded40f18758}\label{classitems_1_1weapons_1_1_arrow_handler_af197702f581022b65e7f0ded40f18758}} 
+\index{items\+::weapons\+::\+Arrow\+Handler@{items\+::weapons\+::\+Arrow\+Handler}!add\+Arrow@{add\+Arrow}}
+\index{add\+Arrow@{add\+Arrow}!items\+::weapons\+::\+Arrow\+Handler@{items\+::weapons\+::\+Arrow\+Handler}}
+\subsubsection{\texorpdfstring{add\+Arrow()}{addArrow()}}
+{\footnotesize\ttfamily boolean items.\+weapons.\+Arrow\+Handler.\+add\+Arrow (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classitems_1_1weapons_1_1_arrow}{Arrow}}}]{a }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+58                                      \{
+59         \textcolor{keywordflow}{return} \mbox{\hyperlink{classitems_1_1weapons_1_1_arrow_handler_a7038dd7e7fa3db85bcddf0d8601d4271}{arrows}}.add(a);
+60     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classitems_1_1weapons_1_1_arrow_handler_ab7e4dce0dc3cd385a870fe54ca1cabf1}\label{classitems_1_1weapons_1_1_arrow_handler_ab7e4dce0dc3cd385a870fe54ca1cabf1}} 
+\index{items\+::weapons\+::\+Arrow\+Handler@{items\+::weapons\+::\+Arrow\+Handler}!delete\+Arrow@{delete\+Arrow}}
+\index{delete\+Arrow@{delete\+Arrow}!items\+::weapons\+::\+Arrow\+Handler@{items\+::weapons\+::\+Arrow\+Handler}}
+\subsubsection{\texorpdfstring{delete\+Arrow()}{deleteArrow()}}
+{\footnotesize\ttfamily boolean items.\+weapons.\+Arrow\+Handler.\+delete\+Arrow (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classitems_1_1weapons_1_1_arrow}{Arrow}}}]{arrow }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Stop drawing, updating and handling an arrow.
+
+
+\begin{DoxyParams}{Parameters}
+{\em arrow} & \mbox{\hyperlink{classitems_1_1weapons_1_1_arrow}{Arrow}} to remove of the arrow handler. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if it was removed correctly. 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+68                                             \{
+69         \textcolor{keywordflow}{return} \mbox{\hyperlink{classitems_1_1weapons_1_1_arrow_handler_a7038dd7e7fa3db85bcddf0d8601d4271}{arrows}}.remove(arrow);
+70     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classitems_1_1weapons_1_1_arrow_handler_a67870bc30237b05a43008c330ec748ce}\label{classitems_1_1weapons_1_1_arrow_handler_a67870bc30237b05a43008c330ec748ce}} 
+\index{items\+::weapons\+::\+Arrow\+Handler@{items\+::weapons\+::\+Arrow\+Handler}!get\+Arrow\+Handler@{get\+Arrow\+Handler}}
+\index{get\+Arrow\+Handler@{get\+Arrow\+Handler}!items\+::weapons\+::\+Arrow\+Handler@{items\+::weapons\+::\+Arrow\+Handler}}
+\subsubsection{\texorpdfstring{get\+Arrow\+Handler()}{getArrowHandler()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classitems_1_1weapons_1_1_arrow_handler}{Arrow\+Handler}} items.\+weapons.\+Arrow\+Handler.\+get\+Arrow\+Handler (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+\begin{DoxyCode}
+72                                                  \{
+73         \textcolor{keywordflow}{return} \mbox{\hyperlink{classitems_1_1weapons_1_1_arrow_handler_a1d4f905a340ec4bdccbefeb1a8cac834}{arrowHandler}};
+74     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classitems_1_1weapons_1_1_arrow_handler_abe0324e6596b718769e45b8165c25673}\label{classitems_1_1weapons_1_1_arrow_handler_abe0324e6596b718769e45b8165c25673}} 
+\index{items\+::weapons\+::\+Arrow\+Handler@{items\+::weapons\+::\+Arrow\+Handler}!render@{render}}
+\index{render@{render}!items\+::weapons\+::\+Arrow\+Handler@{items\+::weapons\+::\+Arrow\+Handler}}
+\subsubsection{\texorpdfstring{render()}{render()}}
+{\footnotesize\ttfamily void items.\+weapons.\+Arrow\+Handler.\+render (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_game_container}{Game\+Container}}}]{container,  }\item[{\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1_state_based_game}{State\+Based\+Game}}}]{game,  }\item[{\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_graphics}{Graphics}}}]{g }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Draws all the arrows of the arrow handler, to the Graphics of the game.
+
+
+\begin{DoxyParams}{Parameters}
+{\em container} & Container of the game. \\
+\hline
+{\em game} & Game\+State. \\
+\hline
+{\em g} & Graphics. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+51                                                                                  \{
+52         \textcolor{keywordflow}{for} (Arrow a : \mbox{\hyperlink{classitems_1_1weapons_1_1_arrow_handler_a7038dd7e7fa3db85bcddf0d8601d4271}{arrows}}) \{
+53             a.render(container, g);
+54         \}
+55 
+56     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classitems_1_1weapons_1_1_arrow_handler_a64a0233c91c8aef9289012c67bdf6874}\label{classitems_1_1weapons_1_1_arrow_handler_a64a0233c91c8aef9289012c67bdf6874}} 
+\index{items\+::weapons\+::\+Arrow\+Handler@{items\+::weapons\+::\+Arrow\+Handler}!update@{update}}
+\index{update@{update}!items\+::weapons\+::\+Arrow\+Handler@{items\+::weapons\+::\+Arrow\+Handler}}
+\subsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void items.\+weapons.\+Arrow\+Handler.\+update (\begin{DoxyParamCaption}\item[{int}]{delta }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Update all the arrows of the arrow handler.
+
+
+\begin{DoxyParams}{Parameters}
+{\em delta} & Time between updates. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+38                                   \{
+39         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < \mbox{\hyperlink{classitems_1_1weapons_1_1_arrow_handler_a7038dd7e7fa3db85bcddf0d8601d4271}{arrows}}.size(); i++) \{
+40             \mbox{\hyperlink{classitems_1_1weapons_1_1_arrow_handler_a7038dd7e7fa3db85bcddf0d8601d4271}{arrows}}.get(i).update(delta);
+41         \}
+42     \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classitems_1_1weapons_1_1_arrow_handler_a5d5966436e98e6c2792992e1643fffd5}\label{classitems_1_1weapons_1_1_arrow_handler_a5d5966436e98e6c2792992e1643fffd5}} 
+\index{items\+::weapons\+::\+Arrow\+Handler@{items\+::weapons\+::\+Arrow\+Handler}!arr@{arr}}
+\index{arr@{arr}!items\+::weapons\+::\+Arrow\+Handler@{items\+::weapons\+::\+Arrow\+Handler}}
+\subsubsection{\texorpdfstring{arr}{arr}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_image}{Image}} items.\+weapons.\+Arrow\+Handler.\+arr\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classitems_1_1weapons_1_1_arrow_handler_a1d4f905a340ec4bdccbefeb1a8cac834}\label{classitems_1_1weapons_1_1_arrow_handler_a1d4f905a340ec4bdccbefeb1a8cac834}} 
+\index{items\+::weapons\+::\+Arrow\+Handler@{items\+::weapons\+::\+Arrow\+Handler}!arrow\+Handler@{arrow\+Handler}}
+\index{arrow\+Handler@{arrow\+Handler}!items\+::weapons\+::\+Arrow\+Handler@{items\+::weapons\+::\+Arrow\+Handler}}
+\subsubsection{\texorpdfstring{arrow\+Handler}{arrowHandler}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classitems_1_1weapons_1_1_arrow_handler}{Arrow\+Handler}} items.\+weapons.\+Arrow\+Handler.\+arrow\+Handler =new \mbox{\hyperlink{classitems_1_1weapons_1_1_arrow_handler}{Arrow\+Handler}}()\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{classitems_1_1weapons_1_1_arrow_handler_a7038dd7e7fa3db85bcddf0d8601d4271}\label{classitems_1_1weapons_1_1_arrow_handler_a7038dd7e7fa3db85bcddf0d8601d4271}} 
+\index{items\+::weapons\+::\+Arrow\+Handler@{items\+::weapons\+::\+Arrow\+Handler}!arrows@{arrows}}
+\index{arrows@{arrows}!items\+::weapons\+::\+Arrow\+Handler@{items\+::weapons\+::\+Arrow\+Handler}}
+\subsubsection{\texorpdfstring{arrows}{arrows}}
+{\footnotesize\ttfamily Array\+List$<$\mbox{\hyperlink{classitems_1_1weapons_1_1_arrow}{Arrow}}$>$ items.\+weapons.\+Arrow\+Handler.\+arrows\hspace{0.3cm}{\ttfamily [private]}}
+

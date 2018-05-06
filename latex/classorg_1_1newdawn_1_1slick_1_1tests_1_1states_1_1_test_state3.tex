@@ -1,0 +1,207 @@
+\hypertarget{classorg_1_1newdawn_1_1slick_1_1tests_1_1states_1_1_test_state3}{}\section{org.\+newdawn.\+slick.\+tests.\+states.\+Test\+State3 Class Reference}
+\label{classorg_1_1newdawn_1_1slick_1_1tests_1_1states_1_1_test_state3}\index{org.\+newdawn.\+slick.\+tests.\+states.\+Test\+State3@{org.\+newdawn.\+slick.\+tests.\+states.\+Test\+State3}}
+Inheritance diagram for org.\+newdawn.\+slick.\+tests.\+states.\+Test\+State3\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.226415cm]{classorg_1_1newdawn_1_1slick_1_1tests_1_1states_1_1_test_state3}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1states_1_1_test_state3_a0cd328d3f5ef77423e54e7e51ff87dab}{get\+ID}} ()
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1states_1_1_test_state3_ad83c2a6d037e5d73d45f0ffea9d332cc}{init}} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_game_container}{Game\+Container}} container, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1_state_based_game}{State\+Based\+Game}} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1states_1_1_test_state3_a769f07538782627db0be9ce0043b356f}{game}})  throws Slick\+Exception 
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1states_1_1_test_state3_a15616ab5da1b4ec709f5940530906270}{render}} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_game_container}{Game\+Container}} container, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1_state_based_game}{State\+Based\+Game}} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1states_1_1_test_state3_a769f07538782627db0be9ce0043b356f}{game}}, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_graphics}{Graphics}} g)
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1states_1_1_test_state3_aa709ad4d618f9801bc5016acba14de95}{update}} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_game_container}{Game\+Container}} container, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1_state_based_game}{State\+Based\+Game}} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1states_1_1_test_state3_a769f07538782627db0be9ce0043b356f}{game}}, int delta)
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1states_1_1_test_state3_ae86e8703517f69bd92b44b4cebeac8fc}{key\+Released}} (int key, char c)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static final int \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1states_1_1_test_state3_aa6764107cd40c552a44fae60571ad04f}{ID}} = 3
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1_font}{Font}} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1states_1_1_test_state3_a7e7969f51b4cab9b70539243e13703f0}{font}}
+\item 
+String \mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1states_1_1_test_state3_a9065e2b5ba1de5f67640ce5787582d5b}{options}} = new String\mbox{[}$\,$\mbox{]} \{\char`\"{}Start \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1_game}{Game}}\char`\"{},\char`\"{}Credits\char`\"{},\char`\"{}Highscores\char`\"{},\char`\"{}Instructions\char`\"{},\char`\"{}Exit\char`\"{}\}
+\item 
+int \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1states_1_1_test_state3_a124621e929a74fd0ee0cb374eda7d667}{selected}}
+\item 
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1_state_based_game}{State\+Based\+Game}} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1states_1_1_test_state3_a769f07538782627db0be9ce0043b356f}{game}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A simple test state to display an image and rotate it
+
+\begin{DoxyAuthor}{Author}
+kevin 
+\end{DoxyAuthor}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tests_1_1states_1_1_test_state3_a0cd328d3f5ef77423e54e7e51ff87dab}\label{classorg_1_1newdawn_1_1slick_1_1tests_1_1states_1_1_test_state3_a0cd328d3f5ef77423e54e7e51ff87dab}} 
+\index{org\+::newdawn\+::slick\+::tests\+::states\+::\+Test\+State3@{org\+::newdawn\+::slick\+::tests\+::states\+::\+Test\+State3}!get\+ID@{get\+ID}}
+\index{get\+ID@{get\+ID}!org\+::newdawn\+::slick\+::tests\+::states\+::\+Test\+State3@{org\+::newdawn\+::slick\+::tests\+::states\+::\+Test\+State3}}
+\subsubsection{\texorpdfstring{get\+I\+D()}{getID()}}
+{\footnotesize\ttfamily int org.\+newdawn.\+slick.\+tests.\+states.\+Test\+State3.\+get\+ID (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1_basic_game_state_a781ce2b3d6dd9b9853adb011f5e75cf7}{org.\+newdawn.\+slick.\+state.\+Basic\+Game\+State\+::get\+I\+D()}} 
+\end{DoxySeeAlso}
+
+
+Implements \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1state_1_1_game_state_a54f2bc6a91feaf0614a5ef19f1d03313}{org.\+newdawn.\+slick.\+state.\+Game\+State}}.
+
+
+\begin{DoxyCode}
+35                        \{
+36         \textcolor{keywordflow}{return} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1states_1_1_test_state3_aa6764107cd40c552a44fae60571ad04f}{ID}};
+37     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tests_1_1states_1_1_test_state3_ad83c2a6d037e5d73d45f0ffea9d332cc}\label{classorg_1_1newdawn_1_1slick_1_1tests_1_1states_1_1_test_state3_ad83c2a6d037e5d73d45f0ffea9d332cc}} 
+\index{org\+::newdawn\+::slick\+::tests\+::states\+::\+Test\+State3@{org\+::newdawn\+::slick\+::tests\+::states\+::\+Test\+State3}!init@{init}}
+\index{init@{init}!org\+::newdawn\+::slick\+::tests\+::states\+::\+Test\+State3@{org\+::newdawn\+::slick\+::tests\+::states\+::\+Test\+State3}}
+\subsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+tests.\+states.\+Test\+State3.\+init (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_game_container}{Game\+Container}}}]{container,  }\item[{\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1_state_based_game}{State\+Based\+Game}}}]{game }\end{DoxyParamCaption}) throws \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_slick_exception}{Slick\+Exception}}\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1state_1_1_game_state_aa799a369e0fcfe6822d2d586fa6f5bbc}{org.\+newdawn.\+slick.\+state.\+Basic\+Game\+State\+::init}}(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_game_container}{org.\+newdawn.\+slick.\+Game\+Container}}, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1_state_based_game}{org.\+newdawn.\+slick.\+state.\+State\+Based\+Game}}) 
+\end{DoxySeeAlso}
+
+
+Implements \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1state_1_1_game_state_aa799a369e0fcfe6822d2d586fa6f5bbc}{org.\+newdawn.\+slick.\+state.\+Game\+State}}.
+
+
+\begin{DoxyCode}
+42                                                                                          \{
+43         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1states_1_1_test_state3_a7e7969f51b4cab9b70539243e13703f0}{font}} = \textcolor{keyword}{new} AngelCodeFont(\textcolor{stringliteral}{"testdata/demo2.fnt"},\textcolor{stringliteral}{"testdata/demo2\_00.tga"});
+44         this.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1states_1_1_test_state3_a769f07538782627db0be9ce0043b356f}{game}} = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1states_1_1_test_state3_a769f07538782627db0be9ce0043b356f}{game}};
+45     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tests_1_1states_1_1_test_state3_ae86e8703517f69bd92b44b4cebeac8fc}\label{classorg_1_1newdawn_1_1slick_1_1tests_1_1states_1_1_test_state3_ae86e8703517f69bd92b44b4cebeac8fc}} 
+\index{org\+::newdawn\+::slick\+::tests\+::states\+::\+Test\+State3@{org\+::newdawn\+::slick\+::tests\+::states\+::\+Test\+State3}!key\+Released@{key\+Released}}
+\index{key\+Released@{key\+Released}!org\+::newdawn\+::slick\+::tests\+::states\+::\+Test\+State3@{org\+::newdawn\+::slick\+::tests\+::states\+::\+Test\+State3}}
+\subsubsection{\texorpdfstring{key\+Released()}{keyReleased()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+tests.\+states.\+Test\+State3.\+key\+Released (\begin{DoxyParamCaption}\item[{int}]{key,  }\item[{char}]{c }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1_basic_game_state_ade382929c931cf15998df10559ae1f87}{org.\+newdawn.\+slick.\+state.\+Basic\+Game\+State\+::key\+Released(int, char)}} 
+\end{DoxySeeAlso}
+
+
+Implements \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1_key_listener_a474673b59bc77266bcef3c261c26ee2b}{org.\+newdawn.\+slick.\+Key\+Listener}}.
+
+
+\begin{DoxyCode}
+73                                              \{
+74         \textcolor{keywordflow}{if} (key == Input.KEY\_DOWN) \{
+75             \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1states_1_1_test_state3_a124621e929a74fd0ee0cb374eda7d667}{selected}}++;
+76             \textcolor{keywordflow}{if} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1states_1_1_test_state3_a124621e929a74fd0ee0cb374eda7d667}{selected}} >= \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1states_1_1_test_state3_a9065e2b5ba1de5f67640ce5787582d5b}{options}}.length) \{
+77                 \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1states_1_1_test_state3_a124621e929a74fd0ee0cb374eda7d667}{selected}} = 0;
+78             \}
+79         \}
+80         \textcolor{keywordflow}{if} (key == Input.KEY\_UP) \{
+81             \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1states_1_1_test_state3_a124621e929a74fd0ee0cb374eda7d667}{selected}}--;
+82             \textcolor{keywordflow}{if} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1states_1_1_test_state3_a124621e929a74fd0ee0cb374eda7d667}{selected}} < 0) \{
+83                 \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1states_1_1_test_state3_a124621e929a74fd0ee0cb374eda7d667}{selected}} = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1states_1_1_test_state3_a9065e2b5ba1de5f67640ce5787582d5b}{options}}.length - 1;
+84             \}
+85         \}
+86         \textcolor{keywordflow}{if} (key == Input.KEY\_1) \{
+87             \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1states_1_1_test_state3_a769f07538782627db0be9ce0043b356f}{game}}.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1_state_based_game_a30b279d5177837e9d4eee745c79cc069}{enterState}}(TestState1.ID, \textcolor{keyword}{new} FadeOutTransition(Color.black), \textcolor{keyword}{new} 
+      FadeInTransition(Color.black));
+88         \}
+89         \textcolor{keywordflow}{if} (key == Input.KEY\_2) \{
+90             \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1states_1_1_test_state3_a769f07538782627db0be9ce0043b356f}{game}}.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1_state_based_game_a30b279d5177837e9d4eee745c79cc069}{enterState}}(TestState2.ID, \textcolor{keyword}{new} FadeOutTransition(Color.black), \textcolor{keyword}{new} 
+      FadeInTransition(Color.black));
+91         \}
+92     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tests_1_1states_1_1_test_state3_a15616ab5da1b4ec709f5940530906270}\label{classorg_1_1newdawn_1_1slick_1_1tests_1_1states_1_1_test_state3_a15616ab5da1b4ec709f5940530906270}} 
+\index{org\+::newdawn\+::slick\+::tests\+::states\+::\+Test\+State3@{org\+::newdawn\+::slick\+::tests\+::states\+::\+Test\+State3}!render@{render}}
+\index{render@{render}!org\+::newdawn\+::slick\+::tests\+::states\+::\+Test\+State3@{org\+::newdawn\+::slick\+::tests\+::states\+::\+Test\+State3}}
+\subsubsection{\texorpdfstring{render()}{render()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+tests.\+states.\+Test\+State3.\+render (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_game_container}{Game\+Container}}}]{container,  }\item[{\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1_state_based_game}{State\+Based\+Game}}}]{game,  }\item[{\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_graphics}{Graphics}}}]{g }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1state_1_1_game_state_a065352d2725274c5244cd022f226eb17}{org.\+newdawn.\+slick.\+state.\+Basic\+Game\+State\+::render}}(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_game_container}{org.\+newdawn.\+slick.\+Game\+Container}}, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1_state_based_game}{org.\+newdawn.\+slick.\+state.\+State\+Based\+Game}}, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_graphics}{org.\+newdawn.\+slick.\+Graphics}}) 
+\end{DoxySeeAlso}
+
+
+Implements \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1state_1_1_game_state_a065352d2725274c5244cd022f226eb17}{org.\+newdawn.\+slick.\+state.\+Game\+State}}.
+
+
+\begin{DoxyCode}
+50                                                                                  \{
+51         g.setFont(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1states_1_1_test_state3_a7e7969f51b4cab9b70539243e13703f0}{font}});
+52         g.setColor(Color.blue);
+53         g.drawString(\textcolor{stringliteral}{"This is State 3"}, 200, 50);
+54         g.setColor(Color.white);
+55         
+56         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i=0;i<\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1states_1_1_test_state3_a9065e2b5ba1de5f67640ce5787582d5b}{options}}.length;i++) \{
+57             g.drawString(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1states_1_1_test_state3_a9065e2b5ba1de5f67640ce5787582d5b}{options}}[i], 400 - (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1states_1_1_test_state3_a7e7969f51b4cab9b70539243e13703f0}{font}}.\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1_font_a6dbdd5828730e18fcf0612307d0394b1}{getWidth}}(
+      \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1states_1_1_test_state3_a9065e2b5ba1de5f67640ce5787582d5b}{options}}[i])/2), 200+(i*50));
+58             \textcolor{keywordflow}{if} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1states_1_1_test_state3_a124621e929a74fd0ee0cb374eda7d667}{selected}} == i) \{
+59                 g.drawRect(200,190+(i*50),400,50);
+60             \}
+61         \}
+62     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tests_1_1states_1_1_test_state3_aa709ad4d618f9801bc5016acba14de95}\label{classorg_1_1newdawn_1_1slick_1_1tests_1_1states_1_1_test_state3_aa709ad4d618f9801bc5016acba14de95}} 
+\index{org\+::newdawn\+::slick\+::tests\+::states\+::\+Test\+State3@{org\+::newdawn\+::slick\+::tests\+::states\+::\+Test\+State3}!update@{update}}
+\index{update@{update}!org\+::newdawn\+::slick\+::tests\+::states\+::\+Test\+State3@{org\+::newdawn\+::slick\+::tests\+::states\+::\+Test\+State3}}
+\subsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+tests.\+states.\+Test\+State3.\+update (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_game_container}{Game\+Container}}}]{container,  }\item[{\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1_state_based_game}{State\+Based\+Game}}}]{game,  }\item[{int}]{delta }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1state_1_1_game_state_ab5ec3bc37a9bd1eb5679577408c562c1}{org.\+newdawn.\+slick.\+state.\+Basic\+Game\+State\+::update}}(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_game_container}{org.\+newdawn.\+slick.\+Game\+Container}}, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1_state_based_game}{org.\+newdawn.\+slick.\+state.\+State\+Based\+Game}}, int) 
+\end{DoxySeeAlso}
+
+
+Implements \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1state_1_1_game_state_ab5ec3bc37a9bd1eb5679577408c562c1}{org.\+newdawn.\+slick.\+state.\+Game\+State}}.
+
+
+\begin{DoxyCode}
+67                                                                                 \{
+68     \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tests_1_1states_1_1_test_state3_a7e7969f51b4cab9b70539243e13703f0}\label{classorg_1_1newdawn_1_1slick_1_1tests_1_1states_1_1_test_state3_a7e7969f51b4cab9b70539243e13703f0}} 
+\index{org\+::newdawn\+::slick\+::tests\+::states\+::\+Test\+State3@{org\+::newdawn\+::slick\+::tests\+::states\+::\+Test\+State3}!font@{font}}
+\index{font@{font}!org\+::newdawn\+::slick\+::tests\+::states\+::\+Test\+State3@{org\+::newdawn\+::slick\+::tests\+::states\+::\+Test\+State3}}
+\subsubsection{\texorpdfstring{font}{font}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1_font}{Font}} org.\+newdawn.\+slick.\+tests.\+states.\+Test\+State3.\+font\hspace{0.3cm}{\ttfamily [private]}}
+
+The font to write the message with \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tests_1_1states_1_1_test_state3_a769f07538782627db0be9ce0043b356f}\label{classorg_1_1newdawn_1_1slick_1_1tests_1_1states_1_1_test_state3_a769f07538782627db0be9ce0043b356f}} 
+\index{org\+::newdawn\+::slick\+::tests\+::states\+::\+Test\+State3@{org\+::newdawn\+::slick\+::tests\+::states\+::\+Test\+State3}!game@{game}}
+\index{game@{game}!org\+::newdawn\+::slick\+::tests\+::states\+::\+Test\+State3@{org\+::newdawn\+::slick\+::tests\+::states\+::\+Test\+State3}}
+\subsubsection{\texorpdfstring{game}{game}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1_state_based_game}{State\+Based\+Game}} org.\+newdawn.\+slick.\+tests.\+states.\+Test\+State3.\+game\hspace{0.3cm}{\ttfamily [private]}}
+
+The game holding this state \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tests_1_1states_1_1_test_state3_aa6764107cd40c552a44fae60571ad04f}\label{classorg_1_1newdawn_1_1slick_1_1tests_1_1states_1_1_test_state3_aa6764107cd40c552a44fae60571ad04f}} 
+\index{org\+::newdawn\+::slick\+::tests\+::states\+::\+Test\+State3@{org\+::newdawn\+::slick\+::tests\+::states\+::\+Test\+State3}!ID@{ID}}
+\index{ID@{ID}!org\+::newdawn\+::slick\+::tests\+::states\+::\+Test\+State3@{org\+::newdawn\+::slick\+::tests\+::states\+::\+Test\+State3}}
+\subsubsection{\texorpdfstring{ID}{ID}}
+{\footnotesize\ttfamily final int org.\+newdawn.\+slick.\+tests.\+states.\+Test\+State3.\+ID = 3\hspace{0.3cm}{\ttfamily [static]}}
+
+The ID given to this state \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tests_1_1states_1_1_test_state3_a9065e2b5ba1de5f67640ce5787582d5b}\label{classorg_1_1newdawn_1_1slick_1_1tests_1_1states_1_1_test_state3_a9065e2b5ba1de5f67640ce5787582d5b}} 
+\index{org\+::newdawn\+::slick\+::tests\+::states\+::\+Test\+State3@{org\+::newdawn\+::slick\+::tests\+::states\+::\+Test\+State3}!options@{options}}
+\index{options@{options}!org\+::newdawn\+::slick\+::tests\+::states\+::\+Test\+State3@{org\+::newdawn\+::slick\+::tests\+::states\+::\+Test\+State3}}
+\subsubsection{\texorpdfstring{options}{options}}
+{\footnotesize\ttfamily String \mbox{[}$\,$\mbox{]} org.\+newdawn.\+slick.\+tests.\+states.\+Test\+State3.\+options = new String\mbox{[}$\,$\mbox{]} \{\char`\"{}Start \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1_game}{Game}}\char`\"{},\char`\"{}Credits\char`\"{},\char`\"{}Highscores\char`\"{},\char`\"{}Instructions\char`\"{},\char`\"{}Exit\char`\"{}\}\hspace{0.3cm}{\ttfamily [private]}}
+
+The menu options \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tests_1_1states_1_1_test_state3_a124621e929a74fd0ee0cb374eda7d667}\label{classorg_1_1newdawn_1_1slick_1_1tests_1_1states_1_1_test_state3_a124621e929a74fd0ee0cb374eda7d667}} 
+\index{org\+::newdawn\+::slick\+::tests\+::states\+::\+Test\+State3@{org\+::newdawn\+::slick\+::tests\+::states\+::\+Test\+State3}!selected@{selected}}
+\index{selected@{selected}!org\+::newdawn\+::slick\+::tests\+::states\+::\+Test\+State3@{org\+::newdawn\+::slick\+::tests\+::states\+::\+Test\+State3}}
+\subsubsection{\texorpdfstring{selected}{selected}}
+{\footnotesize\ttfamily int org.\+newdawn.\+slick.\+tests.\+states.\+Test\+State3.\+selected\hspace{0.3cm}{\ttfamily [private]}}
+
+The index of the selected option 

@@ -1,0 +1,376 @@
+\hypertarget{classorg_1_1newdawn_1_1slick_1_1svg_1_1_diagram}{}\section{org.\+newdawn.\+slick.\+svg.\+Diagram Class Reference}
+\label{classorg_1_1newdawn_1_1slick_1_1svg_1_1_diagram}\index{org.\+newdawn.\+slick.\+svg.\+Diagram@{org.\+newdawn.\+slick.\+svg.\+Diagram}}
+Inheritance diagram for org.\+newdawn.\+slick.\+svg.\+Diagram\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classorg_1_1newdawn_1_1slick_1_1svg_1_1_diagram}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1_diagram_a195b124503d16a62bdb6a36dfb8effee}{Diagram}} (float \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1_diagram_aa2e5e9291614fb66fef4f8d0672a9da6}{width}}, float \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1_diagram_a5b6d7878e986b788521bb72fb0168518}{height}})
+\item 
+float \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1_diagram_ac7ae4b74889a46b9f8cec1aa73de4b44}{get\+Width}} ()
+\item 
+float \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1_diagram_ac5e6c5d35ccfdb09d256ae3118210eb8}{get\+Height}} ()
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1_diagram_a5c40fa781bb601e7d5590d81dd441661}{add\+Pattern\+Def}} (String name, String href)
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1_diagram_a53cfd1607b66ba8cf8ebc6d2417f7b41}{add\+Gradient}} (String name, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1_gradient}{Gradient}} gradient)
+\item 
+String \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1_diagram_a42164eb0201d4ab2b3d58ee7fd5aad26}{get\+Pattern\+Def}} (String name)
+\item 
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1_gradient}{Gradient}} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1_diagram_a13c8069cc4608b5f12fdab9586793d64}{get\+Gradient}} (String name)
+\item 
+String \mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1_diagram_a1e03fcbc57b25710101ef5aea4d43af1}{get\+Pattern\+Def\+Names}} ()
+\item 
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1_figure}{Figure}} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1_diagram_a48e5139af7e00cb48fcffcc5dea19106}{get\+Figure\+By\+ID}} (String id)
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1_diagram_a3236e5149ac3b950921c1c0fe27ad8ad}{add\+Figure}} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1_figure}{Figure}} figure)
+\item 
+int \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1_diagram_a869127d837d1ffa281dc3e50817ae22e}{get\+Figure\+Count}} ()
+\item 
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1_figure}{Figure}} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1_diagram_aa331087982df2abf665a0b8bb7787118}{get\+Figure}} (int index)
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1_diagram_a2252efc0fab27de7c268b0efb114c073}{remove\+Figure}} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1_figure}{Figure}} figure)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Array\+List \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1_diagram_aaddbe68bc0b0c847583aa35d530aba2f}{figures}} = new Array\+List()
+\item 
+Hash\+Map \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1_diagram_ae97126aa813213972c4c755710ab13e6}{patterns}} = new Hash\+Map()
+\item 
+Hash\+Map \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1_diagram_acdc6103a0bc213559f53001de2c06548}{gradients}} = new Hash\+Map()
+\item 
+Hash\+Map \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1_diagram_a71c079c584be2e55632123b9b2d939ad}{figure\+Map}} = new Hash\+Map()
+\item 
+float \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1_diagram_aa2e5e9291614fb66fef4f8d0672a9da6}{width}}
+\item 
+float \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1_diagram_a5b6d7878e986b788521bb72fb0168518}{height}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A diagram read from S\+VG containing multiple figures
+
+\begin{DoxyAuthor}{Author}
+kevin 
+\end{DoxyAuthor}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1svg_1_1_diagram_a195b124503d16a62bdb6a36dfb8effee}\label{classorg_1_1newdawn_1_1slick_1_1svg_1_1_diagram_a195b124503d16a62bdb6a36dfb8effee}} 
+\index{org\+::newdawn\+::slick\+::svg\+::\+Diagram@{org\+::newdawn\+::slick\+::svg\+::\+Diagram}!Diagram@{Diagram}}
+\index{Diagram@{Diagram}!org\+::newdawn\+::slick\+::svg\+::\+Diagram@{org\+::newdawn\+::slick\+::svg\+::\+Diagram}}
+\subsubsection{\texorpdfstring{Diagram()}{Diagram()}}
+{\footnotesize\ttfamily org.\+newdawn.\+slick.\+svg.\+Diagram.\+Diagram (\begin{DoxyParamCaption}\item[{float}]{width,  }\item[{float}]{height }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Create a new empty diagram
+
+
+\begin{DoxyParams}{Parameters}
+{\em width} & The width of the diagram \\
+\hline
+{\em height} & The height of the diagram \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+32                                               \{
+33         this.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1_diagram_aa2e5e9291614fb66fef4f8d0672a9da6}{width}} = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1_diagram_aa2e5e9291614fb66fef4f8d0672a9da6}{width}};
+34         this.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1_diagram_a5b6d7878e986b788521bb72fb0168518}{height}} = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1_diagram_a5b6d7878e986b788521bb72fb0168518}{height}};
+35     \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1svg_1_1_diagram_a3236e5149ac3b950921c1c0fe27ad8ad}\label{classorg_1_1newdawn_1_1slick_1_1svg_1_1_diagram_a3236e5149ac3b950921c1c0fe27ad8ad}} 
+\index{org\+::newdawn\+::slick\+::svg\+::\+Diagram@{org\+::newdawn\+::slick\+::svg\+::\+Diagram}!add\+Figure@{add\+Figure}}
+\index{add\+Figure@{add\+Figure}!org\+::newdawn\+::slick\+::svg\+::\+Diagram@{org\+::newdawn\+::slick\+::svg\+::\+Diagram}}
+\subsubsection{\texorpdfstring{add\+Figure()}{addFigure()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+svg.\+Diagram.\+add\+Figure (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1_figure}{Figure}}}]{figure }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Add a figure to the diagram
+
+
+\begin{DoxyParams}{Parameters}
+{\em figure} & The figure to add \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+119                                          \{
+120         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1_diagram_aaddbe68bc0b0c847583aa35d530aba2f}{figures}}.add(figure);
+121         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1_diagram_a71c079c584be2e55632123b9b2d939ad}{figureMap}}.put(figure.getData().getAttribute(NonGeometricData.ID), figure);
+122         
+123         String fillRef = figure.getData().getAsReference(NonGeometricData.FILL);
+124         Gradient gradient = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1_diagram_a13c8069cc4608b5f12fdab9586793d64}{getGradient}}(fillRef);
+125         \textcolor{keywordflow}{if} (gradient != null) \{
+126             \textcolor{keywordflow}{if} (gradient.isRadial()) \{
+127                 \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i=0;i<InkscapeLoader.RADIAL\_TRIANGULATION\_LEVEL;i++) \{
+128                     figure.getShape().increaseTriangulation();
+129                 \}
+130             \}
+131         \}
+132     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1svg_1_1_diagram_a53cfd1607b66ba8cf8ebc6d2417f7b41}\label{classorg_1_1newdawn_1_1slick_1_1svg_1_1_diagram_a53cfd1607b66ba8cf8ebc6d2417f7b41}} 
+\index{org\+::newdawn\+::slick\+::svg\+::\+Diagram@{org\+::newdawn\+::slick\+::svg\+::\+Diagram}!add\+Gradient@{add\+Gradient}}
+\index{add\+Gradient@{add\+Gradient}!org\+::newdawn\+::slick\+::svg\+::\+Diagram@{org\+::newdawn\+::slick\+::svg\+::\+Diagram}}
+\subsubsection{\texorpdfstring{add\+Gradient()}{addGradient()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+svg.\+Diagram.\+add\+Gradient (\begin{DoxyParamCaption}\item[{String}]{name,  }\item[{\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1_gradient}{Gradient}}}]{gradient }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Add gradient to the diagram
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The name of the gradient \\
+\hline
+{\em gradient} & The gradient to be added \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+71                                                             \{
+72         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1_diagram_acdc6103a0bc213559f53001de2c06548}{gradients}}.put(name, gradient);
+73     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1svg_1_1_diagram_a5c40fa781bb601e7d5590d81dd441661}\label{classorg_1_1newdawn_1_1slick_1_1svg_1_1_diagram_a5c40fa781bb601e7d5590d81dd441661}} 
+\index{org\+::newdawn\+::slick\+::svg\+::\+Diagram@{org\+::newdawn\+::slick\+::svg\+::\+Diagram}!add\+Pattern\+Def@{add\+Pattern\+Def}}
+\index{add\+Pattern\+Def@{add\+Pattern\+Def}!org\+::newdawn\+::slick\+::svg\+::\+Diagram@{org\+::newdawn\+::slick\+::svg\+::\+Diagram}}
+\subsubsection{\texorpdfstring{add\+Pattern\+Def()}{addPatternDef()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+svg.\+Diagram.\+add\+Pattern\+Def (\begin{DoxyParamCaption}\item[{String}]{name,  }\item[{String}]{href }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Add a pattern definition basd on a image
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The name of the pattern \\
+\hline
+{\em href} & The href to the image specified in the doc \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+61                                                         \{
+62         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1_diagram_ae97126aa813213972c4c755710ab13e6}{patterns}}.put(name, href);
+63     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1svg_1_1_diagram_aa331087982df2abf665a0b8bb7787118}\label{classorg_1_1newdawn_1_1slick_1_1svg_1_1_diagram_aa331087982df2abf665a0b8bb7787118}} 
+\index{org\+::newdawn\+::slick\+::svg\+::\+Diagram@{org\+::newdawn\+::slick\+::svg\+::\+Diagram}!get\+Figure@{get\+Figure}}
+\index{get\+Figure@{get\+Figure}!org\+::newdawn\+::slick\+::svg\+::\+Diagram@{org\+::newdawn\+::slick\+::svg\+::\+Diagram}}
+\subsubsection{\texorpdfstring{get\+Figure()}{getFigure()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1_figure}{Figure}} org.\+newdawn.\+slick.\+svg.\+Diagram.\+get\+Figure (\begin{DoxyParamCaption}\item[{int}]{index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get the figure at a given index
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & The index of the figure to retrieve \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The figure at the given index 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+149                                        \{
+150         \textcolor{keywordflow}{return} (Figure) \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1_diagram_aaddbe68bc0b0c847583aa35d530aba2f}{figures}}.get(index);
+151     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1svg_1_1_diagram_a48e5139af7e00cb48fcffcc5dea19106}\label{classorg_1_1newdawn_1_1slick_1_1svg_1_1_diagram_a48e5139af7e00cb48fcffcc5dea19106}} 
+\index{org\+::newdawn\+::slick\+::svg\+::\+Diagram@{org\+::newdawn\+::slick\+::svg\+::\+Diagram}!get\+Figure\+By\+ID@{get\+Figure\+By\+ID}}
+\index{get\+Figure\+By\+ID@{get\+Figure\+By\+ID}!org\+::newdawn\+::slick\+::svg\+::\+Diagram@{org\+::newdawn\+::slick\+::svg\+::\+Diagram}}
+\subsubsection{\texorpdfstring{get\+Figure\+By\+I\+D()}{getFigureByID()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1_figure}{Figure}} org.\+newdawn.\+slick.\+svg.\+Diagram.\+get\+Figure\+By\+ID (\begin{DoxyParamCaption}\item[{String}]{id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get a figure by a given ID
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & The ID of the figure \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The figure with the given ID 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+110                                            \{
+111         \textcolor{keywordflow}{return} (Figure) \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1_diagram_a71c079c584be2e55632123b9b2d939ad}{figureMap}}.get(\textcolor{keywordtype}{id});
+112     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1svg_1_1_diagram_a869127d837d1ffa281dc3e50817ae22e}\label{classorg_1_1newdawn_1_1slick_1_1svg_1_1_diagram_a869127d837d1ffa281dc3e50817ae22e}} 
+\index{org\+::newdawn\+::slick\+::svg\+::\+Diagram@{org\+::newdawn\+::slick\+::svg\+::\+Diagram}!get\+Figure\+Count@{get\+Figure\+Count}}
+\index{get\+Figure\+Count@{get\+Figure\+Count}!org\+::newdawn\+::slick\+::svg\+::\+Diagram@{org\+::newdawn\+::slick\+::svg\+::\+Diagram}}
+\subsubsection{\texorpdfstring{get\+Figure\+Count()}{getFigureCount()}}
+{\footnotesize\ttfamily int org.\+newdawn.\+slick.\+svg.\+Diagram.\+get\+Figure\+Count (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get the number of figures in the diagram
+
+\begin{DoxyReturn}{Returns}
+The number of figures in the diagram 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+139                                 \{
+140         \textcolor{keywordflow}{return} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1_diagram_aaddbe68bc0b0c847583aa35d530aba2f}{figures}}.size();
+141     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1svg_1_1_diagram_a13c8069cc4608b5f12fdab9586793d64}\label{classorg_1_1newdawn_1_1slick_1_1svg_1_1_diagram_a13c8069cc4608b5f12fdab9586793d64}} 
+\index{org\+::newdawn\+::slick\+::svg\+::\+Diagram@{org\+::newdawn\+::slick\+::svg\+::\+Diagram}!get\+Gradient@{get\+Gradient}}
+\index{get\+Gradient@{get\+Gradient}!org\+::newdawn\+::slick\+::svg\+::\+Diagram@{org\+::newdawn\+::slick\+::svg\+::\+Diagram}}
+\subsubsection{\texorpdfstring{get\+Gradient()}{getGradient()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1_gradient}{Gradient}} org.\+newdawn.\+slick.\+svg.\+Diagram.\+get\+Gradient (\begin{DoxyParamCaption}\item[{String}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get the gradient defined in this document
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The name of the gradient \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The gradient definition 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+91                                              \{
+92         \textcolor{keywordflow}{return} (Gradient) \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1_diagram_acdc6103a0bc213559f53001de2c06548}{gradients}}.get(name);
+93     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1svg_1_1_diagram_ac5e6c5d35ccfdb09d256ae3118210eb8}\label{classorg_1_1newdawn_1_1slick_1_1svg_1_1_diagram_ac5e6c5d35ccfdb09d256ae3118210eb8}} 
+\index{org\+::newdawn\+::slick\+::svg\+::\+Diagram@{org\+::newdawn\+::slick\+::svg\+::\+Diagram}!get\+Height@{get\+Height}}
+\index{get\+Height@{get\+Height}!org\+::newdawn\+::slick\+::svg\+::\+Diagram@{org\+::newdawn\+::slick\+::svg\+::\+Diagram}}
+\subsubsection{\texorpdfstring{get\+Height()}{getHeight()}}
+{\footnotesize\ttfamily float org.\+newdawn.\+slick.\+svg.\+Diagram.\+get\+Height (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get the height of the diagram
+
+\begin{DoxyReturn}{Returns}
+The height of the diagram 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+51                              \{
+52         \textcolor{keywordflow}{return} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1_diagram_a5b6d7878e986b788521bb72fb0168518}{height}};
+53     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1svg_1_1_diagram_a42164eb0201d4ab2b3d58ee7fd5aad26}\label{classorg_1_1newdawn_1_1slick_1_1svg_1_1_diagram_a42164eb0201d4ab2b3d58ee7fd5aad26}} 
+\index{org\+::newdawn\+::slick\+::svg\+::\+Diagram@{org\+::newdawn\+::slick\+::svg\+::\+Diagram}!get\+Pattern\+Def@{get\+Pattern\+Def}}
+\index{get\+Pattern\+Def@{get\+Pattern\+Def}!org\+::newdawn\+::slick\+::svg\+::\+Diagram@{org\+::newdawn\+::slick\+::svg\+::\+Diagram}}
+\subsubsection{\texorpdfstring{get\+Pattern\+Def()}{getPatternDef()}}
+{\footnotesize\ttfamily String org.\+newdawn.\+slick.\+svg.\+Diagram.\+get\+Pattern\+Def (\begin{DoxyParamCaption}\item[{String}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get a pattern definition from the diagram
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The name of the pattern \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The href to the image that was specified for the given pattern 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+81                                              \{
+82         \textcolor{keywordflow}{return} (String) \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1_diagram_ae97126aa813213972c4c755710ab13e6}{patterns}}.get(name);
+83     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1svg_1_1_diagram_a1e03fcbc57b25710101ef5aea4d43af1}\label{classorg_1_1newdawn_1_1slick_1_1svg_1_1_diagram_a1e03fcbc57b25710101ef5aea4d43af1}} 
+\index{org\+::newdawn\+::slick\+::svg\+::\+Diagram@{org\+::newdawn\+::slick\+::svg\+::\+Diagram}!get\+Pattern\+Def\+Names@{get\+Pattern\+Def\+Names}}
+\index{get\+Pattern\+Def\+Names@{get\+Pattern\+Def\+Names}!org\+::newdawn\+::slick\+::svg\+::\+Diagram@{org\+::newdawn\+::slick\+::svg\+::\+Diagram}}
+\subsubsection{\texorpdfstring{get\+Pattern\+Def\+Names()}{getPatternDefNames()}}
+{\footnotesize\ttfamily String \mbox{[}$\,$\mbox{]} org.\+newdawn.\+slick.\+svg.\+Diagram.\+get\+Pattern\+Def\+Names (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get the names of the patterns defined
+
+\begin{DoxyReturn}{Returns}
+The names of the pattern 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+100                                          \{
+101         \textcolor{keywordflow}{return} (String[]) \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1_diagram_ae97126aa813213972c4c755710ab13e6}{patterns}}.keySet().toArray(\textcolor{keyword}{new} String[0]);     
+102     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1svg_1_1_diagram_ac7ae4b74889a46b9f8cec1aa73de4b44}\label{classorg_1_1newdawn_1_1slick_1_1svg_1_1_diagram_ac7ae4b74889a46b9f8cec1aa73de4b44}} 
+\index{org\+::newdawn\+::slick\+::svg\+::\+Diagram@{org\+::newdawn\+::slick\+::svg\+::\+Diagram}!get\+Width@{get\+Width}}
+\index{get\+Width@{get\+Width}!org\+::newdawn\+::slick\+::svg\+::\+Diagram@{org\+::newdawn\+::slick\+::svg\+::\+Diagram}}
+\subsubsection{\texorpdfstring{get\+Width()}{getWidth()}}
+{\footnotesize\ttfamily float org.\+newdawn.\+slick.\+svg.\+Diagram.\+get\+Width (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get the width of the diagram
+
+\begin{DoxyReturn}{Returns}
+The width of the diagram 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+42                             \{
+43         \textcolor{keywordflow}{return} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1_diagram_aa2e5e9291614fb66fef4f8d0672a9da6}{width}};
+44     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1svg_1_1_diagram_a2252efc0fab27de7c268b0efb114c073}\label{classorg_1_1newdawn_1_1slick_1_1svg_1_1_diagram_a2252efc0fab27de7c268b0efb114c073}} 
+\index{org\+::newdawn\+::slick\+::svg\+::\+Diagram@{org\+::newdawn\+::slick\+::svg\+::\+Diagram}!remove\+Figure@{remove\+Figure}}
+\index{remove\+Figure@{remove\+Figure}!org\+::newdawn\+::slick\+::svg\+::\+Diagram@{org\+::newdawn\+::slick\+::svg\+::\+Diagram}}
+\subsubsection{\texorpdfstring{remove\+Figure()}{removeFigure()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+svg.\+Diagram.\+remove\+Figure (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1_figure}{Figure}}}]{figure }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Remove a figure from the diagram
+
+
+\begin{DoxyParams}{Parameters}
+{\em figure} & The figure to be removed \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+158                                             \{
+159         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1_diagram_aaddbe68bc0b0c847583aa35d530aba2f}{figures}}.remove(figure);
+160         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1_diagram_a71c079c584be2e55632123b9b2d939ad}{figureMap}}.remove(figure.getData().getAttribute(\textcolor{stringliteral}{"id"}));
+161     \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1svg_1_1_diagram_a71c079c584be2e55632123b9b2d939ad}\label{classorg_1_1newdawn_1_1slick_1_1svg_1_1_diagram_a71c079c584be2e55632123b9b2d939ad}} 
+\index{org\+::newdawn\+::slick\+::svg\+::\+Diagram@{org\+::newdawn\+::slick\+::svg\+::\+Diagram}!figure\+Map@{figure\+Map}}
+\index{figure\+Map@{figure\+Map}!org\+::newdawn\+::slick\+::svg\+::\+Diagram@{org\+::newdawn\+::slick\+::svg\+::\+Diagram}}
+\subsubsection{\texorpdfstring{figure\+Map}{figureMap}}
+{\footnotesize\ttfamily Hash\+Map org.\+newdawn.\+slick.\+svg.\+Diagram.\+figure\+Map = new Hash\+Map()\hspace{0.3cm}{\ttfamily [private]}}
+
+The figures mapping \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1svg_1_1_diagram_aaddbe68bc0b0c847583aa35d530aba2f}\label{classorg_1_1newdawn_1_1slick_1_1svg_1_1_diagram_aaddbe68bc0b0c847583aa35d530aba2f}} 
+\index{org\+::newdawn\+::slick\+::svg\+::\+Diagram@{org\+::newdawn\+::slick\+::svg\+::\+Diagram}!figures@{figures}}
+\index{figures@{figures}!org\+::newdawn\+::slick\+::svg\+::\+Diagram@{org\+::newdawn\+::slick\+::svg\+::\+Diagram}}
+\subsubsection{\texorpdfstring{figures}{figures}}
+{\footnotesize\ttfamily Array\+List org.\+newdawn.\+slick.\+svg.\+Diagram.\+figures = new Array\+List()\hspace{0.3cm}{\ttfamily [private]}}
+
+The figures in the diagram \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1svg_1_1_diagram_acdc6103a0bc213559f53001de2c06548}\label{classorg_1_1newdawn_1_1slick_1_1svg_1_1_diagram_acdc6103a0bc213559f53001de2c06548}} 
+\index{org\+::newdawn\+::slick\+::svg\+::\+Diagram@{org\+::newdawn\+::slick\+::svg\+::\+Diagram}!gradients@{gradients}}
+\index{gradients@{gradients}!org\+::newdawn\+::slick\+::svg\+::\+Diagram@{org\+::newdawn\+::slick\+::svg\+::\+Diagram}}
+\subsubsection{\texorpdfstring{gradients}{gradients}}
+{\footnotesize\ttfamily Hash\+Map org.\+newdawn.\+slick.\+svg.\+Diagram.\+gradients = new Hash\+Map()\hspace{0.3cm}{\ttfamily [private]}}
+
+The linear gradients defined within the diagram \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1svg_1_1_diagram_a5b6d7878e986b788521bb72fb0168518}\label{classorg_1_1newdawn_1_1slick_1_1svg_1_1_diagram_a5b6d7878e986b788521bb72fb0168518}} 
+\index{org\+::newdawn\+::slick\+::svg\+::\+Diagram@{org\+::newdawn\+::slick\+::svg\+::\+Diagram}!height@{height}}
+\index{height@{height}!org\+::newdawn\+::slick\+::svg\+::\+Diagram@{org\+::newdawn\+::slick\+::svg\+::\+Diagram}}
+\subsubsection{\texorpdfstring{height}{height}}
+{\footnotesize\ttfamily float org.\+newdawn.\+slick.\+svg.\+Diagram.\+height\hspace{0.3cm}{\ttfamily [private]}}
+
+The height of the diagram \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1svg_1_1_diagram_ae97126aa813213972c4c755710ab13e6}\label{classorg_1_1newdawn_1_1slick_1_1svg_1_1_diagram_ae97126aa813213972c4c755710ab13e6}} 
+\index{org\+::newdawn\+::slick\+::svg\+::\+Diagram@{org\+::newdawn\+::slick\+::svg\+::\+Diagram}!patterns@{patterns}}
+\index{patterns@{patterns}!org\+::newdawn\+::slick\+::svg\+::\+Diagram@{org\+::newdawn\+::slick\+::svg\+::\+Diagram}}
+\subsubsection{\texorpdfstring{patterns}{patterns}}
+{\footnotesize\ttfamily Hash\+Map org.\+newdawn.\+slick.\+svg.\+Diagram.\+patterns = new Hash\+Map()\hspace{0.3cm}{\ttfamily [private]}}
+
+The pattern definitions \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1svg_1_1_diagram_aa2e5e9291614fb66fef4f8d0672a9da6}\label{classorg_1_1newdawn_1_1slick_1_1svg_1_1_diagram_aa2e5e9291614fb66fef4f8d0672a9da6}} 
+\index{org\+::newdawn\+::slick\+::svg\+::\+Diagram@{org\+::newdawn\+::slick\+::svg\+::\+Diagram}!width@{width}}
+\index{width@{width}!org\+::newdawn\+::slick\+::svg\+::\+Diagram@{org\+::newdawn\+::slick\+::svg\+::\+Diagram}}
+\subsubsection{\texorpdfstring{width}{width}}
+{\footnotesize\ttfamily float org.\+newdawn.\+slick.\+svg.\+Diagram.\+width\hspace{0.3cm}{\ttfamily [private]}}
+
+The width of the diagram 

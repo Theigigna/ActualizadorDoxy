@@ -1,0 +1,294 @@
+\hypertarget{classitems_1_1weapons_1_1_sword}{}\section{items.\+weapons.\+Sword Class Reference}
+\label{classitems_1_1weapons_1_1_sword}\index{items.\+weapons.\+Sword@{items.\+weapons.\+Sword}}
+Inheritance diagram for items.\+weapons.\+Sword\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classitems_1_1weapons_1_1_sword}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classitems_1_1weapons_1_1_sword_a858d8a5d8fb4356c393ddd8dd726d375}{Sword}} (Class \mbox{\hyperlink{classitems_1_1weapons_1_1_sword_a63363009ee0969e2deb6d1f3af957d58}{friendly}}, int \mbox{\hyperlink{classitems_1_1weapons_1_1_weapon_aa84d0aca66daedb3adb9209b6f2846a3}{damage}}, int \mbox{\hyperlink{classitems_1_1weapons_1_1_weapon_a125dc77704bbb1758d35f282802dcb8d}{distance}}, int \mbox{\hyperlink{classitems_1_1weapons_1_1_sword_a8d69cc681b95f364381987f28546f382}{delay}}, int \mbox{\hyperlink{classitems_1_1weapons_1_1_weapon_ae66ceb47ad12380ee5d39960606980b3}{level}}, int \mbox{\hyperlink{classitems_1_1weapons_1_1_weapon_ac653ddf600cd6add7078dc32b5f1584a}{speed}})  throws Slick\+Exception 
+\item 
+void \mbox{\hyperlink{classitems_1_1weapons_1_1_sword_ac33fe7c9eaa35120c38e3b546f44f9c1}{attack}} (\mbox{\hyperlink{classentities_1_1_subject}{Subject}} s)
+\item 
+void \mbox{\hyperlink{classitems_1_1weapons_1_1_sword_a3b4292b936e2d5e5aad2b1f0b2c2f935}{do\+Collision}} (\mbox{\hyperlink{interfaceentities_1_1_collisionable}{Collisionable}} receptor)
+\item 
+void \mbox{\hyperlink{classitems_1_1weapons_1_1_sword_acf006a33d1194218cc4e3fa2474a401e}{receive\+Collision}} (\mbox{\hyperlink{interfaceentities_1_1_collisionable}{Collisionable}} author)
+\item 
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_shape}{Shape}} \mbox{\hyperlink{classitems_1_1weapons_1_1_sword_ab34faa345e31beb308cf3fbc3383aebf}{get\+Hit\+Box}} ()
+\item 
+void \mbox{\hyperlink{classitems_1_1weapons_1_1_sword_aa3aca5fbc0c268828584bcf4c32d9a4c}{sound\+Hit}} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static final int \mbox{\hyperlink{classitems_1_1weapons_1_1_sword_a2f54a51059264ae578a63bf4d5a56221}{A\+T\+T\+A\+C\+K\+\_\+\+W\+I\+D\+TH}} = 32
+\end{DoxyCompactItemize}
+\subsection*{Package Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_animation}{Animation}} \mbox{\hyperlink{classitems_1_1weapons_1_1_sword_a51568efb680439ac983310f400c495bb}{up}} = new \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_animation}{Animation}}(false)
+\item 
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_animation}{Animation}} \mbox{\hyperlink{classitems_1_1weapons_1_1_sword_a097785c8f06e25a2aede4884b9f49946}{down}} = new \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_animation}{Animation}}(false)
+\item 
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_animation}{Animation}} \mbox{\hyperlink{classitems_1_1weapons_1_1_sword_a243c3b4902003800080825055b4d5e4b}{left}} = new \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_animation}{Animation}}(false)
+\item 
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_animation}{Animation}} \mbox{\hyperlink{classitems_1_1weapons_1_1_sword_a5100ab52b0a0f565d2c85f7ca49602c7}{right}} = new \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_animation}{Animation}}(false)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+long \mbox{\hyperlink{classitems_1_1weapons_1_1_sword_a571fe801555f1c19f90b78ad683ed660}{last\+Time\+Attacked}}
+\item 
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_sound}{Sound}} \mbox{\hyperlink{classitems_1_1weapons_1_1_sword_a83b89e36fa2e2f6f6d6aa6827657cbb5}{sw\+Hit}}
+\item 
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_sound}{Sound}} \mbox{\hyperlink{classitems_1_1weapons_1_1_sword_a33baf7fba31bad5610a1ce68142debf9}{sw\+Miss}}
+\item 
+int \mbox{\hyperlink{classitems_1_1weapons_1_1_sword_a8d69cc681b95f364381987f28546f382}{delay}}
+\item 
+Class \mbox{\hyperlink{classitems_1_1weapons_1_1_sword_a63363009ee0969e2deb6d1f3af957d58}{friendly}}
+\item 
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_rectangle}{Rectangle}} \mbox{\hyperlink{classitems_1_1weapons_1_1_sword_a0e6a4807a1682dc6790d287b01077da9}{r}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Clase de la espada fisica. Representa el movimiento de la espada caja de colisiones. Metodos do colission, recive como el personaje, atack, llama a la espada, creas la caja de colision, try update con ella.
+
+\begin{DoxyAuthor}{Author}
+Raul 
+\end{DoxyAuthor}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classitems_1_1weapons_1_1_sword_a858d8a5d8fb4356c393ddd8dd726d375}\label{classitems_1_1weapons_1_1_sword_a858d8a5d8fb4356c393ddd8dd726d375}} 
+\index{items\+::weapons\+::\+Sword@{items\+::weapons\+::\+Sword}!Sword@{Sword}}
+\index{Sword@{Sword}!items\+::weapons\+::\+Sword@{items\+::weapons\+::\+Sword}}
+\subsubsection{\texorpdfstring{Sword()}{Sword()}}
+{\footnotesize\ttfamily items.\+weapons.\+Sword.\+Sword (\begin{DoxyParamCaption}\item[{Class}]{friendly,  }\item[{int}]{damage,  }\item[{int}]{distance,  }\item[{int}]{delay,  }\item[{int}]{level,  }\item[{int}]{speed }\end{DoxyParamCaption}) throws \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_slick_exception}{Slick\+Exception}}\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+53                                                                                                            
+             \{
+54         super(\mbox{\hyperlink{classitems_1_1weapons_1_1_weapon_aa84d0aca66daedb3adb9209b6f2846a3}{damage}}, \mbox{\hyperlink{classitems_1_1weapons_1_1_weapon_a125dc77704bbb1758d35f282802dcb8d}{distance}}, \mbox{\hyperlink{classitems_1_1weapons_1_1_sword_a8d69cc681b95f364381987f28546f382}{delay}}, \mbox{\hyperlink{classitems_1_1weapons_1_1_weapon_ae66ceb47ad12380ee5d39960606980b3}{level}}, \mbox{\hyperlink{classitems_1_1weapons_1_1_weapon_ac653ddf600cd6add7078dc32b5f1584a}{speed}});
+55         this.\mbox{\hyperlink{classitems_1_1weapons_1_1_sword_a8d69cc681b95f364381987f28546f382}{delay}} = \mbox{\hyperlink{classitems_1_1weapons_1_1_sword_a8d69cc681b95f364381987f28546f382}{delay}};
+56         this.\mbox{\hyperlink{classitems_1_1weapons_1_1_sword_a63363009ee0969e2deb6d1f3af957d58}{friendly}} = \mbox{\hyperlink{classitems_1_1weapons_1_1_sword_a63363009ee0969e2deb6d1f3af957d58}{friendly}};
+57         \textcolor{keywordflow}{try} \{
+58             this.\mbox{\hyperlink{classitems_1_1weapons_1_1_sword_a83b89e36fa2e2f6f6d6aa6827657cbb5}{swHit}} = \textcolor{keyword}{new} Sound(\textcolor{stringliteral}{"res/sonido/golpeespada.wav"});
+59             this.\mbox{\hyperlink{classitems_1_1weapons_1_1_sword_a33baf7fba31bad5610a1ce68142debf9}{swMiss}} = \textcolor{keyword}{new} Sound(\textcolor{stringliteral}{"res/sonido/falloespada.wav"});
+60         \} \textcolor{keywordflow}{catch} (SlickException ex) \{
+61             Logger.getLogger(\mbox{\hyperlink{classitems_1_1weapons_1_1_sword_a858d8a5d8fb4356c393ddd8dd726d375}{Sword}}.class.getName()).log(Level.SEVERE, null, ex);
+62         \}
+63         \mbox{\hyperlink{classitems_1_1weapons_1_1_sword_a0e6a4807a1682dc6790d287b01077da9}{r}} = \textcolor{keyword}{new} Rectangle(100, 200, 32, 32);
+64         \textcolor{comment}{//initAnimations();}
+65     \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classitems_1_1weapons_1_1_sword_ac33fe7c9eaa35120c38e3b546f44f9c1}\label{classitems_1_1weapons_1_1_sword_ac33fe7c9eaa35120c38e3b546f44f9c1}} 
+\index{items\+::weapons\+::\+Sword@{items\+::weapons\+::\+Sword}!attack@{attack}}
+\index{attack@{attack}!items\+::weapons\+::\+Sword@{items\+::weapons\+::\+Sword}}
+\subsubsection{\texorpdfstring{attack()}{attack()}}
+{\footnotesize\ttfamily void items.\+weapons.\+Sword.\+attack (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classentities_1_1_subject}{Subject}}}]{s }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+68                                   \{
+69         super.attack(s);
+70         \textcolor{comment}{//System.out.println("GETX " + p.getX() + " GETY " + p.getY());}
+71         \textcolor{keywordtype}{float} x = 0, y = 0;
+72         \textcolor{keywordflow}{if} (System.currentTimeMillis() > (\mbox{\hyperlink{classitems_1_1weapons_1_1_sword_a571fe801555f1c19f90b78ad683ed660}{lastTimeAttacked}} + 
+      \mbox{\hyperlink{classitems_1_1weapons_1_1_sword_a8d69cc681b95f364381987f28546f382}{delay}})) \{
+73 
+74             \mbox{\hyperlink{classitems_1_1weapons_1_1_sword_a33baf7fba31bad5610a1ce68142debf9}{swMiss}}.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_sound_aed5db39a69e8ed57eb14053f7588ab90}{play}}();
+75 
+76             \textcolor{keywordflow}{switch} (s.direction()) \{
+77                 \textcolor{keywordflow}{case} L:
+78                     System.out.println(\textcolor{stringliteral}{"Izquierda"});
+79                     x = s.getSubjectX() - \mbox{\hyperlink{classitems_1_1weapons_1_1_weapon_a4cc44ba68fb6d469b39ccdbd0fd418b6}{getDistance}}() - 1;
+80                     y = s.getSubjectY();
+81                     \mbox{\hyperlink{classitems_1_1weapons_1_1_sword_a0e6a4807a1682dc6790d287b01077da9}{r}} = \textcolor{keyword}{new} Rectangle(x, y, \mbox{\hyperlink{classitems_1_1weapons_1_1_weapon_a4cc44ba68fb6d469b39ccdbd0fd418b6}{getDistance}}(), 
+      \mbox{\hyperlink{classitems_1_1weapons_1_1_sword_a2f54a51059264ae578a63bf4d5a56221}{ATTACK\_WIDTH}});
+82                     \textcolor{keywordflow}{break};
+83                 \textcolor{keywordflow}{case} R:
+84                     System.out.println(\textcolor{stringliteral}{"Derecha"});
+85                     x = s.getSubjectX() + 33; \textcolor{comment}{//Image width +1}
+86                     y = s.getSubjectY();
+87                     \mbox{\hyperlink{classitems_1_1weapons_1_1_sword_a0e6a4807a1682dc6790d287b01077da9}{r}} = \textcolor{keyword}{new} Rectangle(x, y, \mbox{\hyperlink{classitems_1_1weapons_1_1_weapon_a4cc44ba68fb6d469b39ccdbd0fd418b6}{getDistance}}(), 
+      \mbox{\hyperlink{classitems_1_1weapons_1_1_sword_a2f54a51059264ae578a63bf4d5a56221}{ATTACK\_WIDTH}});
+88                     \textcolor{keywordflow}{break};
+89                 \textcolor{keywordflow}{case} U:
+90                     System.out.println(\textcolor{stringliteral}{"arriba"});
+91                     x = s.getSubjectX();
+92                     y = s.getSubjectY() - \mbox{\hyperlink{classitems_1_1weapons_1_1_weapon_a4cc44ba68fb6d469b39ccdbd0fd418b6}{getDistance}}() - 1;
+93                     \mbox{\hyperlink{classitems_1_1weapons_1_1_sword_a0e6a4807a1682dc6790d287b01077da9}{r}} = \textcolor{keyword}{new} Rectangle(x, y, \mbox{\hyperlink{classitems_1_1weapons_1_1_sword_a2f54a51059264ae578a63bf4d5a56221}{ATTACK\_WIDTH}}, 
+      \mbox{\hyperlink{classitems_1_1weapons_1_1_weapon_a4cc44ba68fb6d469b39ccdbd0fd418b6}{getDistance}}());
+94                     \textcolor{keywordflow}{break};
+95                 \textcolor{keywordflow}{case} D:
+96                     System.out.println(\textcolor{stringliteral}{"abajo"});
+97                     x = s.getSubjectX();
+98                     y = s.getSubjectY() + 33;
+99                     \mbox{\hyperlink{classitems_1_1weapons_1_1_sword_a0e6a4807a1682dc6790d287b01077da9}{r}} = \textcolor{keyword}{new} Rectangle(x, y, \mbox{\hyperlink{classitems_1_1weapons_1_1_sword_a2f54a51059264ae578a63bf4d5a56221}{ATTACK\_WIDTH}}, 
+      \mbox{\hyperlink{classitems_1_1weapons_1_1_weapon_a4cc44ba68fb6d469b39ccdbd0fd418b6}{getDistance}}());
+100                     \textcolor{keywordflow}{break};
+101             \}
+102             s.getCollisionHandler().tryMovingThrough(\mbox{\hyperlink{classitems_1_1weapons_1_1_sword_a0e6a4807a1682dc6790d287b01077da9}{r}}, \textcolor{keyword}{this});
+103         \}
+104     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classitems_1_1weapons_1_1_sword_a3b4292b936e2d5e5aad2b1f0b2c2f935}\label{classitems_1_1weapons_1_1_sword_a3b4292b936e2d5e5aad2b1f0b2c2f935}} 
+\index{items\+::weapons\+::\+Sword@{items\+::weapons\+::\+Sword}!do\+Collision@{do\+Collision}}
+\index{do\+Collision@{do\+Collision}!items\+::weapons\+::\+Sword@{items\+::weapons\+::\+Sword}}
+\subsubsection{\texorpdfstring{do\+Collision()}{doCollision()}}
+{\footnotesize\ttfamily void items.\+weapons.\+Sword.\+do\+Collision (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfaceentities_1_1_collisionable}{Collisionable}}}]{receptor }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+FunciÃ³n que implementa lo que ocurre cuando la espada choca con algo.
+
+
+\begin{DoxyParams}{Parameters}
+{\em receptor} & \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{interfaceentities_1_1_collisionable_aaebba0fda34be003cfe326471e1418c8}{entities.\+Collisionable}}.
+
+
+\begin{DoxyCode}
+112                                                     \{
+113         \textcolor{keywordflow}{if} (receptor != null) \{
+114             \textcolor{keywordflow}{if} (!(receptor.getClass().equals(\mbox{\hyperlink{classitems_1_1weapons_1_1_sword_a63363009ee0969e2deb6d1f3af957d58}{friendly}}))) \{
+115                \textcolor{comment}{// System.out.println("CollisionEspada: " + this.getClass().getTypeName() + " hits " +
+       receptor.getClass().getTypeName());}
+116                 \textcolor{keywordflow}{if} (receptor instanceof Subject) \{
+117                     this.\mbox{\hyperlink{classitems_1_1weapons_1_1_sword_a83b89e36fa2e2f6f6d6aa6827657cbb5}{swHit}}.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_sound_aed5db39a69e8ed57eb14053f7588ab90}{play}}();
+118                     ((Subject) receptor).receiveDamage(\mbox{\hyperlink{classitems_1_1weapons_1_1_weapon_a1df8f67e5cd632d225f5419b636507a4}{getTotalDamage}}());
+119                 \}
+120             \}
+121         \}
+122     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classitems_1_1weapons_1_1_sword_ab34faa345e31beb308cf3fbc3383aebf}\label{classitems_1_1weapons_1_1_sword_ab34faa345e31beb308cf3fbc3383aebf}} 
+\index{items\+::weapons\+::\+Sword@{items\+::weapons\+::\+Sword}!get\+Hit\+Box@{get\+Hit\+Box}}
+\index{get\+Hit\+Box@{get\+Hit\+Box}!items\+::weapons\+::\+Sword@{items\+::weapons\+::\+Sword}}
+\subsubsection{\texorpdfstring{get\+Hit\+Box()}{getHitBox()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_shape}{Shape}} items.\+weapons.\+Sword.\+get\+Hit\+Box (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Implements \mbox{\hyperlink{interfaceentities_1_1_collisionable_a850ae5aa594d7b0d29ccef98436b8e77}{entities.\+Collisionable}}.
+
+
+\begin{DoxyCode}
+138                              \{
+139         \textcolor{keywordflow}{return} \mbox{\hyperlink{classitems_1_1weapons_1_1_sword_a0e6a4807a1682dc6790d287b01077da9}{r}};
+140     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classitems_1_1weapons_1_1_sword_acf006a33d1194218cc4e3fa2474a401e}\label{classitems_1_1weapons_1_1_sword_acf006a33d1194218cc4e3fa2474a401e}} 
+\index{items\+::weapons\+::\+Sword@{items\+::weapons\+::\+Sword}!receive\+Collision@{receive\+Collision}}
+\index{receive\+Collision@{receive\+Collision}!items\+::weapons\+::\+Sword@{items\+::weapons\+::\+Sword}}
+\subsubsection{\texorpdfstring{receive\+Collision()}{receiveCollision()}}
+{\footnotesize\ttfamily void items.\+weapons.\+Sword.\+receive\+Collision (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfaceentities_1_1_collisionable}{Collisionable}}}]{author }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+FunciÃ³n que implementa lo que ocurre cuando la esapda recive un golpe. Cuando un objeto choca con la espada es igual que cuando la esapada colisiona con ese objeto
+
+
+\begin{DoxyParams}{Parameters}
+{\em author} & \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{interfaceentities_1_1_collisionable_a956a85182fef376af333622e844342e3}{entities.\+Collisionable}}.
+
+
+\begin{DoxyCode}
+133       \{
+134         \mbox{\hyperlink{classitems_1_1weapons_1_1_sword_a3b4292b936e2d5e5aad2b1f0b2c2f935}{doCollision}}(author);
+135     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classitems_1_1weapons_1_1_sword_aa3aca5fbc0c268828584bcf4c32d9a4c}\label{classitems_1_1weapons_1_1_sword_aa3aca5fbc0c268828584bcf4c32d9a4c}} 
+\index{items\+::weapons\+::\+Sword@{items\+::weapons\+::\+Sword}!sound\+Hit@{sound\+Hit}}
+\index{sound\+Hit@{sound\+Hit}!items\+::weapons\+::\+Sword@{items\+::weapons\+::\+Sword}}
+\subsubsection{\texorpdfstring{sound\+Hit()}{soundHit()}}
+{\footnotesize\ttfamily void items.\+weapons.\+Sword.\+sound\+Hit (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+143                            \{
+144         \mbox{\hyperlink{classitems_1_1weapons_1_1_sword_a83b89e36fa2e2f6f6d6aa6827657cbb5}{swHit}}.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_sound_aed5db39a69e8ed57eb14053f7588ab90}{play}}();
+145     \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classitems_1_1weapons_1_1_sword_a2f54a51059264ae578a63bf4d5a56221}\label{classitems_1_1weapons_1_1_sword_a2f54a51059264ae578a63bf4d5a56221}} 
+\index{items\+::weapons\+::\+Sword@{items\+::weapons\+::\+Sword}!A\+T\+T\+A\+C\+K\+\_\+\+W\+I\+D\+TH@{A\+T\+T\+A\+C\+K\+\_\+\+W\+I\+D\+TH}}
+\index{A\+T\+T\+A\+C\+K\+\_\+\+W\+I\+D\+TH@{A\+T\+T\+A\+C\+K\+\_\+\+W\+I\+D\+TH}!items\+::weapons\+::\+Sword@{items\+::weapons\+::\+Sword}}
+\subsubsection{\texorpdfstring{A\+T\+T\+A\+C\+K\+\_\+\+W\+I\+D\+TH}{ATTACK\_WIDTH}}
+{\footnotesize\ttfamily final int items.\+weapons.\+Sword.\+A\+T\+T\+A\+C\+K\+\_\+\+W\+I\+D\+TH = 32\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classitems_1_1weapons_1_1_sword_a8d69cc681b95f364381987f28546f382}\label{classitems_1_1weapons_1_1_sword_a8d69cc681b95f364381987f28546f382}} 
+\index{items\+::weapons\+::\+Sword@{items\+::weapons\+::\+Sword}!delay@{delay}}
+\index{delay@{delay}!items\+::weapons\+::\+Sword@{items\+::weapons\+::\+Sword}}
+\subsubsection{\texorpdfstring{delay}{delay}}
+{\footnotesize\ttfamily int items.\+weapons.\+Sword.\+delay\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classitems_1_1weapons_1_1_sword_a097785c8f06e25a2aede4884b9f49946}\label{classitems_1_1weapons_1_1_sword_a097785c8f06e25a2aede4884b9f49946}} 
+\index{items\+::weapons\+::\+Sword@{items\+::weapons\+::\+Sword}!down@{down}}
+\index{down@{down}!items\+::weapons\+::\+Sword@{items\+::weapons\+::\+Sword}}
+\subsubsection{\texorpdfstring{down}{down}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_animation}{Animation}} items.\+weapons.\+Sword.\+down = new \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_animation}{Animation}}(false)\hspace{0.3cm}{\ttfamily [package]}}
+
+\mbox{\Hypertarget{classitems_1_1weapons_1_1_sword_a63363009ee0969e2deb6d1f3af957d58}\label{classitems_1_1weapons_1_1_sword_a63363009ee0969e2deb6d1f3af957d58}} 
+\index{items\+::weapons\+::\+Sword@{items\+::weapons\+::\+Sword}!friendly@{friendly}}
+\index{friendly@{friendly}!items\+::weapons\+::\+Sword@{items\+::weapons\+::\+Sword}}
+\subsubsection{\texorpdfstring{friendly}{friendly}}
+{\footnotesize\ttfamily Class items.\+weapons.\+Sword.\+friendly\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classitems_1_1weapons_1_1_sword_a571fe801555f1c19f90b78ad683ed660}\label{classitems_1_1weapons_1_1_sword_a571fe801555f1c19f90b78ad683ed660}} 
+\index{items\+::weapons\+::\+Sword@{items\+::weapons\+::\+Sword}!last\+Time\+Attacked@{last\+Time\+Attacked}}
+\index{last\+Time\+Attacked@{last\+Time\+Attacked}!items\+::weapons\+::\+Sword@{items\+::weapons\+::\+Sword}}
+\subsubsection{\texorpdfstring{last\+Time\+Attacked}{lastTimeAttacked}}
+{\footnotesize\ttfamily long items.\+weapons.\+Sword.\+last\+Time\+Attacked\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classitems_1_1weapons_1_1_sword_a243c3b4902003800080825055b4d5e4b}\label{classitems_1_1weapons_1_1_sword_a243c3b4902003800080825055b4d5e4b}} 
+\index{items\+::weapons\+::\+Sword@{items\+::weapons\+::\+Sword}!left@{left}}
+\index{left@{left}!items\+::weapons\+::\+Sword@{items\+::weapons\+::\+Sword}}
+\subsubsection{\texorpdfstring{left}{left}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_animation}{Animation}} items.\+weapons.\+Sword.\+left = new \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_animation}{Animation}}(false)\hspace{0.3cm}{\ttfamily [package]}}
+
+\mbox{\Hypertarget{classitems_1_1weapons_1_1_sword_a0e6a4807a1682dc6790d287b01077da9}\label{classitems_1_1weapons_1_1_sword_a0e6a4807a1682dc6790d287b01077da9}} 
+\index{items\+::weapons\+::\+Sword@{items\+::weapons\+::\+Sword}!r@{r}}
+\index{r@{r}!items\+::weapons\+::\+Sword@{items\+::weapons\+::\+Sword}}
+\subsubsection{\texorpdfstring{r}{r}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_rectangle}{Rectangle}} items.\+weapons.\+Sword.\+r\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classitems_1_1weapons_1_1_sword_a5100ab52b0a0f565d2c85f7ca49602c7}\label{classitems_1_1weapons_1_1_sword_a5100ab52b0a0f565d2c85f7ca49602c7}} 
+\index{items\+::weapons\+::\+Sword@{items\+::weapons\+::\+Sword}!right@{right}}
+\index{right@{right}!items\+::weapons\+::\+Sword@{items\+::weapons\+::\+Sword}}
+\subsubsection{\texorpdfstring{right}{right}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_animation}{Animation}} items.\+weapons.\+Sword.\+right = new \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_animation}{Animation}}(false)\hspace{0.3cm}{\ttfamily [package]}}
+
+\mbox{\Hypertarget{classitems_1_1weapons_1_1_sword_a83b89e36fa2e2f6f6d6aa6827657cbb5}\label{classitems_1_1weapons_1_1_sword_a83b89e36fa2e2f6f6d6aa6827657cbb5}} 
+\index{items\+::weapons\+::\+Sword@{items\+::weapons\+::\+Sword}!sw\+Hit@{sw\+Hit}}
+\index{sw\+Hit@{sw\+Hit}!items\+::weapons\+::\+Sword@{items\+::weapons\+::\+Sword}}
+\subsubsection{\texorpdfstring{sw\+Hit}{swHit}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_sound}{Sound}} items.\+weapons.\+Sword.\+sw\+Hit\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classitems_1_1weapons_1_1_sword_a33baf7fba31bad5610a1ce68142debf9}\label{classitems_1_1weapons_1_1_sword_a33baf7fba31bad5610a1ce68142debf9}} 
+\index{items\+::weapons\+::\+Sword@{items\+::weapons\+::\+Sword}!sw\+Miss@{sw\+Miss}}
+\index{sw\+Miss@{sw\+Miss}!items\+::weapons\+::\+Sword@{items\+::weapons\+::\+Sword}}
+\subsubsection{\texorpdfstring{sw\+Miss}{swMiss}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_sound}{Sound}} items.\+weapons.\+Sword.\+sw\+Miss\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classitems_1_1weapons_1_1_sword_a51568efb680439ac983310f400c495bb}\label{classitems_1_1weapons_1_1_sword_a51568efb680439ac983310f400c495bb}} 
+\index{items\+::weapons\+::\+Sword@{items\+::weapons\+::\+Sword}!up@{up}}
+\index{up@{up}!items\+::weapons\+::\+Sword@{items\+::weapons\+::\+Sword}}
+\subsubsection{\texorpdfstring{up}{up}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_animation}{Animation}} items.\+weapons.\+Sword.\+up = new \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_animation}{Animation}}(false)\hspace{0.3cm}{\ttfamily [package]}}
+

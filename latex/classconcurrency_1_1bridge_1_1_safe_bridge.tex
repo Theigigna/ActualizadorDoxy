@@ -1,0 +1,98 @@
+\hypertarget{classconcurrency_1_1bridge_1_1_safe_bridge}{}\section{concurrency.\+bridge.\+Safe\+Bridge Class Reference}
+\label{classconcurrency_1_1bridge_1_1_safe_bridge}\index{concurrency.\+bridge.\+Safe\+Bridge@{concurrency.\+bridge.\+Safe\+Bridge}}
+Inheritance diagram for concurrency.\+bridge.\+Safe\+Bridge\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classconcurrency_1_1bridge_1_1_safe_bridge}
+\end{center}
+\end{figure}
+\subsection*{Package Functions}
+\begin{DoxyCompactItemize}
+\item 
+synchronized void \mbox{\hyperlink{classconcurrency_1_1bridge_1_1_safe_bridge_a291e117cad1bc432528de5622a0f77f3}{red\+Enter}} ()  throws Interrupted\+Exception 
+\item 
+synchronized void \mbox{\hyperlink{classconcurrency_1_1bridge_1_1_safe_bridge_a55f78f015ba654a529d3a4cf71e49261}{red\+Exit}} ()
+\item 
+synchronized void \mbox{\hyperlink{classconcurrency_1_1bridge_1_1_safe_bridge_a28cc98eb975d533c2c51c995b7f7362a}{blue\+Enter}} ()  throws Interrupted\+Exception 
+\item 
+synchronized void \mbox{\hyperlink{classconcurrency_1_1bridge_1_1_safe_bridge_aaabab0c6e58580d01fd01fd6ec242085}{blue\+Exit}} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classconcurrency_1_1bridge_1_1_safe_bridge_aa2abb2203b25978e240bb355a84ae5fc}{nred}} = 0
+\item 
+int \mbox{\hyperlink{classconcurrency_1_1bridge_1_1_safe_bridge_ac3f25c616210ab4cc7af4882a0145ae6}{nblue}} = 0
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classconcurrency_1_1bridge_1_1_safe_bridge_a28cc98eb975d533c2c51c995b7f7362a}\label{classconcurrency_1_1bridge_1_1_safe_bridge_a28cc98eb975d533c2c51c995b7f7362a}} 
+\index{concurrency\+::bridge\+::\+Safe\+Bridge@{concurrency\+::bridge\+::\+Safe\+Bridge}!blue\+Enter@{blue\+Enter}}
+\index{blue\+Enter@{blue\+Enter}!concurrency\+::bridge\+::\+Safe\+Bridge@{concurrency\+::bridge\+::\+Safe\+Bridge}}
+\subsubsection{\texorpdfstring{blue\+Enter()}{blueEnter()}}
+{\footnotesize\ttfamily synchronized void concurrency.\+bridge.\+Safe\+Bridge.\+blue\+Enter (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws Interrupted\+Exception\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [package]}}
+
+
+\begin{DoxyCode}
+21                                                               \{
+22         \textcolor{keywordflow}{while} (\mbox{\hyperlink{classconcurrency_1_1bridge_1_1_safe_bridge_aa2abb2203b25978e240bb355a84ae5fc}{nred}}>0) wait();
+23         ++\mbox{\hyperlink{classconcurrency_1_1bridge_1_1_safe_bridge_ac3f25c616210ab4cc7af4882a0145ae6}{nblue}};
+24     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classconcurrency_1_1bridge_1_1_safe_bridge_aaabab0c6e58580d01fd01fd6ec242085}\label{classconcurrency_1_1bridge_1_1_safe_bridge_aaabab0c6e58580d01fd01fd6ec242085}} 
+\index{concurrency\+::bridge\+::\+Safe\+Bridge@{concurrency\+::bridge\+::\+Safe\+Bridge}!blue\+Exit@{blue\+Exit}}
+\index{blue\+Exit@{blue\+Exit}!concurrency\+::bridge\+::\+Safe\+Bridge@{concurrency\+::bridge\+::\+Safe\+Bridge}}
+\subsubsection{\texorpdfstring{blue\+Exit()}{blueExit()}}
+{\footnotesize\ttfamily synchronized void concurrency.\+bridge.\+Safe\+Bridge.\+blue\+Exit (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [package]}}
+
+
+\begin{DoxyCode}
+26                                 \{
+27         --\mbox{\hyperlink{classconcurrency_1_1bridge_1_1_safe_bridge_ac3f25c616210ab4cc7af4882a0145ae6}{nblue}};
+28         \textcolor{keywordflow}{if} (\mbox{\hyperlink{classconcurrency_1_1bridge_1_1_safe_bridge_ac3f25c616210ab4cc7af4882a0145ae6}{nblue}}==0)
+29             notifyAll();
+30     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classconcurrency_1_1bridge_1_1_safe_bridge_a291e117cad1bc432528de5622a0f77f3}\label{classconcurrency_1_1bridge_1_1_safe_bridge_a291e117cad1bc432528de5622a0f77f3}} 
+\index{concurrency\+::bridge\+::\+Safe\+Bridge@{concurrency\+::bridge\+::\+Safe\+Bridge}!red\+Enter@{red\+Enter}}
+\index{red\+Enter@{red\+Enter}!concurrency\+::bridge\+::\+Safe\+Bridge@{concurrency\+::bridge\+::\+Safe\+Bridge}}
+\subsubsection{\texorpdfstring{red\+Enter()}{redEnter()}}
+{\footnotesize\ttfamily synchronized void concurrency.\+bridge.\+Safe\+Bridge.\+red\+Enter (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws Interrupted\+Exception\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [package]}}
+
+
+\begin{DoxyCode}
+10                                                              \{
+11         \textcolor{keywordflow}{while} (\mbox{\hyperlink{classconcurrency_1_1bridge_1_1_safe_bridge_ac3f25c616210ab4cc7af4882a0145ae6}{nblue}}>0) wait();
+12         ++\mbox{\hyperlink{classconcurrency_1_1bridge_1_1_safe_bridge_aa2abb2203b25978e240bb355a84ae5fc}{nred}};
+13     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classconcurrency_1_1bridge_1_1_safe_bridge_a55f78f015ba654a529d3a4cf71e49261}\label{classconcurrency_1_1bridge_1_1_safe_bridge_a55f78f015ba654a529d3a4cf71e49261}} 
+\index{concurrency\+::bridge\+::\+Safe\+Bridge@{concurrency\+::bridge\+::\+Safe\+Bridge}!red\+Exit@{red\+Exit}}
+\index{red\+Exit@{red\+Exit}!concurrency\+::bridge\+::\+Safe\+Bridge@{concurrency\+::bridge\+::\+Safe\+Bridge}}
+\subsubsection{\texorpdfstring{red\+Exit()}{redExit()}}
+{\footnotesize\ttfamily synchronized void concurrency.\+bridge.\+Safe\+Bridge.\+red\+Exit (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [package]}}
+
+
+\begin{DoxyCode}
+15                                \{
+16         --\mbox{\hyperlink{classconcurrency_1_1bridge_1_1_safe_bridge_aa2abb2203b25978e240bb355a84ae5fc}{nred}};
+17         \textcolor{keywordflow}{if} (\mbox{\hyperlink{classconcurrency_1_1bridge_1_1_safe_bridge_aa2abb2203b25978e240bb355a84ae5fc}{nred}}==0)
+18             notifyAll();
+19     \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classconcurrency_1_1bridge_1_1_safe_bridge_ac3f25c616210ab4cc7af4882a0145ae6}\label{classconcurrency_1_1bridge_1_1_safe_bridge_ac3f25c616210ab4cc7af4882a0145ae6}} 
+\index{concurrency\+::bridge\+::\+Safe\+Bridge@{concurrency\+::bridge\+::\+Safe\+Bridge}!nblue@{nblue}}
+\index{nblue@{nblue}!concurrency\+::bridge\+::\+Safe\+Bridge@{concurrency\+::bridge\+::\+Safe\+Bridge}}
+\subsubsection{\texorpdfstring{nblue}{nblue}}
+{\footnotesize\ttfamily int concurrency.\+bridge.\+Safe\+Bridge.\+nblue = 0\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classconcurrency_1_1bridge_1_1_safe_bridge_aa2abb2203b25978e240bb355a84ae5fc}\label{classconcurrency_1_1bridge_1_1_safe_bridge_aa2abb2203b25978e240bb355a84ae5fc}} 
+\index{concurrency\+::bridge\+::\+Safe\+Bridge@{concurrency\+::bridge\+::\+Safe\+Bridge}!nred@{nred}}
+\index{nred@{nred}!concurrency\+::bridge\+::\+Safe\+Bridge@{concurrency\+::bridge\+::\+Safe\+Bridge}}
+\subsubsection{\texorpdfstring{nred}{nred}}
+{\footnotesize\ttfamily int concurrency.\+bridge.\+Safe\+Bridge.\+nred = 0\hspace{0.3cm}{\ttfamily [private]}}
+

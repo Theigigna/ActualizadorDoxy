@@ -1,0 +1,56 @@
+\hypertarget{classpkg3_1_1pkg4_1_1temperaturas_1_1_temperaturas}{}\section{pkg3.\+pkg4.\+temperaturas.\+Temperaturas Class Reference}
+\label{classpkg3_1_1pkg4_1_1temperaturas_1_1_temperaturas}\index{pkg3.\+pkg4.\+temperaturas.\+Temperaturas@{pkg3.\+pkg4.\+temperaturas.\+Temperaturas}}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{classpkg3_1_1pkg4_1_1temperaturas_1_1_temperaturas_a5dd48ff7e52894f5d6bd57b7df54a43e}{main}} (String\mbox{[}$\,$\mbox{]} args)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyAuthor}{Author}
+Jorgito 
+\end{DoxyAuthor}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classpkg3_1_1pkg4_1_1temperaturas_1_1_temperaturas_a5dd48ff7e52894f5d6bd57b7df54a43e}\label{classpkg3_1_1pkg4_1_1temperaturas_1_1_temperaturas_a5dd48ff7e52894f5d6bd57b7df54a43e}} 
+\index{pkg3\+::pkg4\+::temperaturas\+::\+Temperaturas@{pkg3\+::pkg4\+::temperaturas\+::\+Temperaturas}!main@{main}}
+\index{main@{main}!pkg3\+::pkg4\+::temperaturas\+::\+Temperaturas@{pkg3\+::pkg4\+::temperaturas\+::\+Temperaturas}}
+\subsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily static void pkg3.\+pkg4.\+temperaturas.\+Temperaturas.\+main (\begin{DoxyParamCaption}\item[{String \mbox{[}$\,$\mbox{]}}]{args }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em args} & the command line arguments \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+17                                            \{
+18         \textcolor{keywordtype}{int} temperaturas[] = \textcolor{keyword}{new} \textcolor{keywordtype}{int}[5];
+19         temperaturas[0] = 15;
+20         temperaturas[1] = 29;
+21         temperaturas[2] = 6;
+22         temperaturas[3] = 23;
+23         temperaturas[4] = 3;
+24         \textcolor{keywordtype}{int} media, total = 0;
+25  
+26         \textcolor{comment}{//imprimimos las temperaturas}
+27         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < temperaturas.length; i++) \{
+28             System.out.println(\textcolor{stringliteral}{"temperaturas["} + i + \textcolor{stringliteral}{"]: "} + temperaturas[i]);
+29         \}
+30  
+31         \textcolor{comment}{//cambiamos algunas temperaturas}
+32         temperaturas[0] += 4;
+33         temperaturas[2] -= 2;
+34  
+35         \textcolor{comment}{//calculamos la media}
+36         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < temperaturas.length; i++) \{
+37             total += temperaturas[i];
+38         \}
+39         media = total / temperaturas.length;
+40         System.out.println(\textcolor{stringliteral}{"\(\backslash\)nTemperatura media: "} + media);
+41         \textcolor{comment}{// TODO code application logic here}
+42     \}
+\end{DoxyCode}

@@ -1,0 +1,336 @@
+\hypertarget{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_composite_image_data}{}\section{org.\+newdawn.\+slick.\+opengl.\+Composite\+Image\+Data Class Reference}
+\label{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_composite_image_data}\index{org.\+newdawn.\+slick.\+opengl.\+Composite\+Image\+Data@{org.\+newdawn.\+slick.\+opengl.\+Composite\+Image\+Data}}
+Inheritance diagram for org.\+newdawn.\+slick.\+opengl.\+Composite\+Image\+Data\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_composite_image_data}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_composite_image_data_ac36327aa091c87d4ef3426c1b8e476b4}{add}} (\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1opengl_1_1_loadable_image_data}{Loadable\+Image\+Data}} data)
+\item 
+Byte\+Buffer \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_composite_image_data_afac01aa86b627c3e172aeb7e66ec2b2f}{load\+Image}} (Input\+Stream fis)  throws I\+O\+Exception 
+\item 
+Byte\+Buffer \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_composite_image_data_a6fa4aa2e8b4b4768415f2a40a7acb8f1}{load\+Image}} (Input\+Stream fis, boolean flipped, int\mbox{[}$\,$\mbox{]} transparent)  throws I\+O\+Exception 
+\item 
+Byte\+Buffer \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_composite_image_data_abdc1f3d531423e34b3f8a04e4854e5c5}{load\+Image}} (Input\+Stream is, boolean flipped, boolean force\+Alpha, int\mbox{[}$\,$\mbox{]} transparent)  throws I\+O\+Exception 
+\item 
+int \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_composite_image_data_a4f8b573391ec1fea885ef56daac0a8f4}{get\+Depth}} ()
+\item 
+int \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_composite_image_data_a4dbc5f72fe7bfb16716c631c8b12c5fb}{get\+Height}} ()
+\item 
+Byte\+Buffer \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_composite_image_data_a3f1eae47b620e0eb4172fb58a87f5894}{get\+Image\+Buffer\+Data}} ()
+\item 
+int \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_composite_image_data_ac0733bc4b03bf553a9374b858343a0f0}{get\+Tex\+Height}} ()
+\item 
+int \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_composite_image_data_aa669973b504de478c91db03a0319b389}{get\+Tex\+Width}} ()
+\item 
+int \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_composite_image_data_afacb76ad47cbb2ce231c2f92ed87458c}{get\+Width}} ()
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_composite_image_data_a9f2859d594b5040ea7ab930f194412ac}{configure\+Edging}} (boolean edging)
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_composite_image_data_a1a95487f3cd09ae6bf1458ffa1d433b8}{check\+Picked}} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Array\+List \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_composite_image_data_a620f0a2292b907b7a3418d95d91e422c}{sources}} = new Array\+List()
+\item 
+\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1opengl_1_1_loadable_image_data}{Loadable\+Image\+Data}} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_composite_image_data_a7238cbb20cc08b68a29935b4bc222da7}{picked}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A composite data source that checks multiple loaders in order of preference
+
+\begin{DoxyAuthor}{Author}
+kevin 
+\end{DoxyAuthor}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_composite_image_data_ac36327aa091c87d4ef3426c1b8e476b4}\label{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_composite_image_data_ac36327aa091c87d4ef3426c1b8e476b4}} 
+\index{org\+::newdawn\+::slick\+::opengl\+::\+Composite\+Image\+Data@{org\+::newdawn\+::slick\+::opengl\+::\+Composite\+Image\+Data}!add@{add}}
+\index{add@{add}!org\+::newdawn\+::slick\+::opengl\+::\+Composite\+Image\+Data@{org\+::newdawn\+::slick\+::opengl\+::\+Composite\+Image\+Data}}
+\subsubsection{\texorpdfstring{add()}{add()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+opengl.\+Composite\+Image\+Data.\+add (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1opengl_1_1_loadable_image_data}{Loadable\+Image\+Data}}}]{data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Add a potentional source of image data
+
+
+\begin{DoxyParams}{Parameters}
+{\em data} & The data source to try \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+28                                             \{
+29         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_composite_image_data_a620f0a2292b907b7a3418d95d91e422c}{sources}}.add(data);
+30     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_composite_image_data_a1a95487f3cd09ae6bf1458ffa1d433b8}\label{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_composite_image_data_a1a95487f3cd09ae6bf1458ffa1d433b8}} 
+\index{org\+::newdawn\+::slick\+::opengl\+::\+Composite\+Image\+Data@{org\+::newdawn\+::slick\+::opengl\+::\+Composite\+Image\+Data}!check\+Picked@{check\+Picked}}
+\index{check\+Picked@{check\+Picked}!org\+::newdawn\+::slick\+::opengl\+::\+Composite\+Image\+Data@{org\+::newdawn\+::slick\+::opengl\+::\+Composite\+Image\+Data}}
+\subsubsection{\texorpdfstring{check\+Picked()}{checkPicked()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+opengl.\+Composite\+Image\+Data.\+check\+Picked (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+Check the state of the image data and throw a runtime exception if theres a problem 
+\begin{DoxyCode}
+82                                \{
+83         \textcolor{keywordflow}{if} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_composite_image_data_a7238cbb20cc08b68a29935b4bc222da7}{picked}} == null) \{
+84             \textcolor{keywordflow}{throw} \textcolor{keyword}{new} RuntimeException(\textcolor{stringliteral}{"Attempt to make use of uninitialised or invalid composite image
+       data"});
+85         \}
+86     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_composite_image_data_a9f2859d594b5040ea7ab930f194412ac}\label{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_composite_image_data_a9f2859d594b5040ea7ab930f194412ac}} 
+\index{org\+::newdawn\+::slick\+::opengl\+::\+Composite\+Image\+Data@{org\+::newdawn\+::slick\+::opengl\+::\+Composite\+Image\+Data}!configure\+Edging@{configure\+Edging}}
+\index{configure\+Edging@{configure\+Edging}!org\+::newdawn\+::slick\+::opengl\+::\+Composite\+Image\+Data@{org\+::newdawn\+::slick\+::opengl\+::\+Composite\+Image\+Data}}
+\subsubsection{\texorpdfstring{configure\+Edging()}{configureEdging()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+opengl.\+Composite\+Image\+Data.\+configure\+Edging (\begin{DoxyParamCaption}\item[{boolean}]{edging }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1opengl_1_1_loadable_image_data_a1f9fb94bae3936761535408ba7afc0df}{org.\+newdawn.\+slick.\+opengl.\+Loadable\+Image\+Data\+::configure\+Edging(boolean)}} 
+\end{DoxySeeAlso}
+
+
+Implements \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1opengl_1_1_loadable_image_data_a1f9fb94bae3936761535408ba7afc0df}{org.\+newdawn.\+slick.\+opengl.\+Loadable\+Image\+Data}}.
+
+
+\begin{DoxyCode}
+145                                                 \{
+146         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i=0;i<\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_composite_image_data_a620f0a2292b907b7a3418d95d91e422c}{sources}}.size();i++) \{
+147             ((LoadableImageData) \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_composite_image_data_a620f0a2292b907b7a3418d95d91e422c}{sources}}.get(i)).\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_composite_image_data_a9f2859d594b5040ea7ab930f194412ac}{configureEdging}}(edging);
+148         \}
+149     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_composite_image_data_a4f8b573391ec1fea885ef56daac0a8f4}\label{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_composite_image_data_a4f8b573391ec1fea885ef56daac0a8f4}} 
+\index{org\+::newdawn\+::slick\+::opengl\+::\+Composite\+Image\+Data@{org\+::newdawn\+::slick\+::opengl\+::\+Composite\+Image\+Data}!get\+Depth@{get\+Depth}}
+\index{get\+Depth@{get\+Depth}!org\+::newdawn\+::slick\+::opengl\+::\+Composite\+Image\+Data@{org\+::newdawn\+::slick\+::opengl\+::\+Composite\+Image\+Data}}
+\subsubsection{\texorpdfstring{get\+Depth()}{getDepth()}}
+{\footnotesize\ttfamily int org.\+newdawn.\+slick.\+opengl.\+Composite\+Image\+Data.\+get\+Depth (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1opengl_1_1_image_data_a69be40348e05222e8f0c65f5845adcb9}{org.\+newdawn.\+slick.\+opengl.\+Image\+Data\+::get\+Depth()}} 
+\end{DoxySeeAlso}
+
+
+Implements \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1opengl_1_1_image_data_a69be40348e05222e8f0c65f5845adcb9}{org.\+newdawn.\+slick.\+opengl.\+Image\+Data}}.
+
+
+\begin{DoxyCode}
+91                           \{
+92         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_composite_image_data_a1a95487f3cd09ae6bf1458ffa1d433b8}{checkPicked}}();
+93         
+94         \textcolor{keywordflow}{return} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_composite_image_data_a7238cbb20cc08b68a29935b4bc222da7}{picked}}.\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1opengl_1_1_image_data_a69be40348e05222e8f0c65f5845adcb9}{getDepth}}();
+95     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_composite_image_data_a4dbc5f72fe7bfb16716c631c8b12c5fb}\label{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_composite_image_data_a4dbc5f72fe7bfb16716c631c8b12c5fb}} 
+\index{org\+::newdawn\+::slick\+::opengl\+::\+Composite\+Image\+Data@{org\+::newdawn\+::slick\+::opengl\+::\+Composite\+Image\+Data}!get\+Height@{get\+Height}}
+\index{get\+Height@{get\+Height}!org\+::newdawn\+::slick\+::opengl\+::\+Composite\+Image\+Data@{org\+::newdawn\+::slick\+::opengl\+::\+Composite\+Image\+Data}}
+\subsubsection{\texorpdfstring{get\+Height()}{getHeight()}}
+{\footnotesize\ttfamily int org.\+newdawn.\+slick.\+opengl.\+Composite\+Image\+Data.\+get\+Height (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1opengl_1_1_image_data_acce23925ae561e75f051d3287a8dda06}{org.\+newdawn.\+slick.\+opengl.\+Image\+Data\+::get\+Height()}} 
+\end{DoxySeeAlso}
+
+
+Implements \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1opengl_1_1_image_data_acce23925ae561e75f051d3287a8dda06}{org.\+newdawn.\+slick.\+opengl.\+Image\+Data}}.
+
+
+\begin{DoxyCode}
+100                            \{
+101         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_composite_image_data_a1a95487f3cd09ae6bf1458ffa1d433b8}{checkPicked}}();
+102         
+103         \textcolor{keywordflow}{return} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_composite_image_data_a7238cbb20cc08b68a29935b4bc222da7}{picked}}.\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1opengl_1_1_image_data_acce23925ae561e75f051d3287a8dda06}{getHeight}}();
+104     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_composite_image_data_a3f1eae47b620e0eb4172fb58a87f5894}\label{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_composite_image_data_a3f1eae47b620e0eb4172fb58a87f5894}} 
+\index{org\+::newdawn\+::slick\+::opengl\+::\+Composite\+Image\+Data@{org\+::newdawn\+::slick\+::opengl\+::\+Composite\+Image\+Data}!get\+Image\+Buffer\+Data@{get\+Image\+Buffer\+Data}}
+\index{get\+Image\+Buffer\+Data@{get\+Image\+Buffer\+Data}!org\+::newdawn\+::slick\+::opengl\+::\+Composite\+Image\+Data@{org\+::newdawn\+::slick\+::opengl\+::\+Composite\+Image\+Data}}
+\subsubsection{\texorpdfstring{get\+Image\+Buffer\+Data()}{getImageBufferData()}}
+{\footnotesize\ttfamily Byte\+Buffer org.\+newdawn.\+slick.\+opengl.\+Composite\+Image\+Data.\+get\+Image\+Buffer\+Data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1opengl_1_1_image_data_a7b15d49f552cad075bb1179668ce5250}{org.\+newdawn.\+slick.\+opengl.\+Image\+Data\+::get\+Image\+Buffer\+Data()}} 
+\end{DoxySeeAlso}
+
+
+Implements \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1opengl_1_1_image_data_a7b15d49f552cad075bb1179668ce5250}{org.\+newdawn.\+slick.\+opengl.\+Image\+Data}}.
+
+
+\begin{DoxyCode}
+109                                            \{
+110         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_composite_image_data_a1a95487f3cd09ae6bf1458ffa1d433b8}{checkPicked}}();
+111         
+112         \textcolor{keywordflow}{return} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_composite_image_data_a7238cbb20cc08b68a29935b4bc222da7}{picked}}.\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1opengl_1_1_image_data_a7b15d49f552cad075bb1179668ce5250}{getImageBufferData}}();
+113     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_composite_image_data_ac0733bc4b03bf553a9374b858343a0f0}\label{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_composite_image_data_ac0733bc4b03bf553a9374b858343a0f0}} 
+\index{org\+::newdawn\+::slick\+::opengl\+::\+Composite\+Image\+Data@{org\+::newdawn\+::slick\+::opengl\+::\+Composite\+Image\+Data}!get\+Tex\+Height@{get\+Tex\+Height}}
+\index{get\+Tex\+Height@{get\+Tex\+Height}!org\+::newdawn\+::slick\+::opengl\+::\+Composite\+Image\+Data@{org\+::newdawn\+::slick\+::opengl\+::\+Composite\+Image\+Data}}
+\subsubsection{\texorpdfstring{get\+Tex\+Height()}{getTexHeight()}}
+{\footnotesize\ttfamily int org.\+newdawn.\+slick.\+opengl.\+Composite\+Image\+Data.\+get\+Tex\+Height (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1opengl_1_1_image_data_a316891c94ba43967d0554378c7197324}{org.\+newdawn.\+slick.\+opengl.\+Image\+Data\+::get\+Tex\+Height()}} 
+\end{DoxySeeAlso}
+
+
+Implements \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1opengl_1_1_image_data_a316891c94ba43967d0554378c7197324}{org.\+newdawn.\+slick.\+opengl.\+Image\+Data}}.
+
+
+\begin{DoxyCode}
+118                               \{
+119         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_composite_image_data_a1a95487f3cd09ae6bf1458ffa1d433b8}{checkPicked}}();
+120         
+121         \textcolor{keywordflow}{return} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_composite_image_data_a7238cbb20cc08b68a29935b4bc222da7}{picked}}.\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1opengl_1_1_image_data_a316891c94ba43967d0554378c7197324}{getTexHeight}}();
+122     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_composite_image_data_aa669973b504de478c91db03a0319b389}\label{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_composite_image_data_aa669973b504de478c91db03a0319b389}} 
+\index{org\+::newdawn\+::slick\+::opengl\+::\+Composite\+Image\+Data@{org\+::newdawn\+::slick\+::opengl\+::\+Composite\+Image\+Data}!get\+Tex\+Width@{get\+Tex\+Width}}
+\index{get\+Tex\+Width@{get\+Tex\+Width}!org\+::newdawn\+::slick\+::opengl\+::\+Composite\+Image\+Data@{org\+::newdawn\+::slick\+::opengl\+::\+Composite\+Image\+Data}}
+\subsubsection{\texorpdfstring{get\+Tex\+Width()}{getTexWidth()}}
+{\footnotesize\ttfamily int org.\+newdawn.\+slick.\+opengl.\+Composite\+Image\+Data.\+get\+Tex\+Width (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1opengl_1_1_image_data_abf26e8dcbf2ec52f9a49535d8912263e}{org.\+newdawn.\+slick.\+opengl.\+Image\+Data\+::get\+Tex\+Width()}} 
+\end{DoxySeeAlso}
+
+
+Implements \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1opengl_1_1_image_data_abf26e8dcbf2ec52f9a49535d8912263e}{org.\+newdawn.\+slick.\+opengl.\+Image\+Data}}.
+
+
+\begin{DoxyCode}
+127                              \{
+128         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_composite_image_data_a1a95487f3cd09ae6bf1458ffa1d433b8}{checkPicked}}();
+129         
+130         \textcolor{keywordflow}{return} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_composite_image_data_a7238cbb20cc08b68a29935b4bc222da7}{picked}}.\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1opengl_1_1_image_data_abf26e8dcbf2ec52f9a49535d8912263e}{getTexWidth}}();
+131     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_composite_image_data_afacb76ad47cbb2ce231c2f92ed87458c}\label{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_composite_image_data_afacb76ad47cbb2ce231c2f92ed87458c}} 
+\index{org\+::newdawn\+::slick\+::opengl\+::\+Composite\+Image\+Data@{org\+::newdawn\+::slick\+::opengl\+::\+Composite\+Image\+Data}!get\+Width@{get\+Width}}
+\index{get\+Width@{get\+Width}!org\+::newdawn\+::slick\+::opengl\+::\+Composite\+Image\+Data@{org\+::newdawn\+::slick\+::opengl\+::\+Composite\+Image\+Data}}
+\subsubsection{\texorpdfstring{get\+Width()}{getWidth()}}
+{\footnotesize\ttfamily int org.\+newdawn.\+slick.\+opengl.\+Composite\+Image\+Data.\+get\+Width (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1opengl_1_1_image_data_a59fd53f0ca1e501de35c1b2b4a7e69c5}{org.\+newdawn.\+slick.\+opengl.\+Image\+Data\+::get\+Width()}} 
+\end{DoxySeeAlso}
+
+
+Implements \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1opengl_1_1_image_data_a59fd53f0ca1e501de35c1b2b4a7e69c5}{org.\+newdawn.\+slick.\+opengl.\+Image\+Data}}.
+
+
+\begin{DoxyCode}
+136                           \{
+137         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_composite_image_data_a1a95487f3cd09ae6bf1458ffa1d433b8}{checkPicked}}();
+138         
+139         \textcolor{keywordflow}{return} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_composite_image_data_a7238cbb20cc08b68a29935b4bc222da7}{picked}}.\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1opengl_1_1_image_data_a59fd53f0ca1e501de35c1b2b4a7e69c5}{getWidth}}();
+140     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_composite_image_data_afac01aa86b627c3e172aeb7e66ec2b2f}\label{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_composite_image_data_afac01aa86b627c3e172aeb7e66ec2b2f}} 
+\index{org\+::newdawn\+::slick\+::opengl\+::\+Composite\+Image\+Data@{org\+::newdawn\+::slick\+::opengl\+::\+Composite\+Image\+Data}!load\+Image@{load\+Image}}
+\index{load\+Image@{load\+Image}!org\+::newdawn\+::slick\+::opengl\+::\+Composite\+Image\+Data@{org\+::newdawn\+::slick\+::opengl\+::\+Composite\+Image\+Data}}
+\subsubsection{\texorpdfstring{load\+Image()}{loadImage()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily Byte\+Buffer org.\+newdawn.\+slick.\+opengl.\+Composite\+Image\+Data.\+load\+Image (\begin{DoxyParamCaption}\item[{Input\+Stream}]{fis }\end{DoxyParamCaption}) throws I\+O\+Exception\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1opengl_1_1_loadable_image_data_a640021b955dde7deeeeabb5ac3738d2b}{org.\+newdawn.\+slick.\+opengl.\+Loadable\+Image\+Data\+::load\+Image}}(java.\+io.\+Input\+Stream) 
+\end{DoxySeeAlso}
+
+
+Implements \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1opengl_1_1_loadable_image_data_a640021b955dde7deeeeabb5ac3738d2b}{org.\+newdawn.\+slick.\+opengl.\+Loadable\+Image\+Data}}.
+
+
+\begin{DoxyCode}
+35                                                                     \{
+36         \textcolor{keywordflow}{return} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_composite_image_data_afac01aa86b627c3e172aeb7e66ec2b2f}{loadImage}}(fis, \textcolor{keyword}{false}, null);
+37     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_composite_image_data_a6fa4aa2e8b4b4768415f2a40a7acb8f1}\label{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_composite_image_data_a6fa4aa2e8b4b4768415f2a40a7acb8f1}} 
+\index{org\+::newdawn\+::slick\+::opengl\+::\+Composite\+Image\+Data@{org\+::newdawn\+::slick\+::opengl\+::\+Composite\+Image\+Data}!load\+Image@{load\+Image}}
+\index{load\+Image@{load\+Image}!org\+::newdawn\+::slick\+::opengl\+::\+Composite\+Image\+Data@{org\+::newdawn\+::slick\+::opengl\+::\+Composite\+Image\+Data}}
+\subsubsection{\texorpdfstring{load\+Image()}{loadImage()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily Byte\+Buffer org.\+newdawn.\+slick.\+opengl.\+Composite\+Image\+Data.\+load\+Image (\begin{DoxyParamCaption}\item[{Input\+Stream}]{fis,  }\item[{boolean}]{flipped,  }\item[{int \mbox{[}$\,$\mbox{]}}]{transparent }\end{DoxyParamCaption}) throws I\+O\+Exception\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1opengl_1_1_loadable_image_data_a640021b955dde7deeeeabb5ac3738d2b}{org.\+newdawn.\+slick.\+opengl.\+Loadable\+Image\+Data\+::load\+Image}}(java.\+io.\+Input\+Stream, boolean, int\mbox{[}\mbox{]}) 
+\end{DoxySeeAlso}
+
+
+Implements \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1opengl_1_1_loadable_image_data_a448a235d1058316349f513a69f593d9b}{org.\+newdawn.\+slick.\+opengl.\+Loadable\+Image\+Data}}.
+
+
+\begin{DoxyCode}
+42                                                                                                         \{
+43         \textcolor{keywordflow}{return} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_composite_image_data_afac01aa86b627c3e172aeb7e66ec2b2f}{loadImage}}(fis, flipped, \textcolor{keyword}{false}, transparent);
+44     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_composite_image_data_abdc1f3d531423e34b3f8a04e4854e5c5}\label{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_composite_image_data_abdc1f3d531423e34b3f8a04e4854e5c5}} 
+\index{org\+::newdawn\+::slick\+::opengl\+::\+Composite\+Image\+Data@{org\+::newdawn\+::slick\+::opengl\+::\+Composite\+Image\+Data}!load\+Image@{load\+Image}}
+\index{load\+Image@{load\+Image}!org\+::newdawn\+::slick\+::opengl\+::\+Composite\+Image\+Data@{org\+::newdawn\+::slick\+::opengl\+::\+Composite\+Image\+Data}}
+\subsubsection{\texorpdfstring{load\+Image()}{loadImage()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily Byte\+Buffer org.\+newdawn.\+slick.\+opengl.\+Composite\+Image\+Data.\+load\+Image (\begin{DoxyParamCaption}\item[{Input\+Stream}]{is,  }\item[{boolean}]{flipped,  }\item[{boolean}]{force\+Alpha,  }\item[{int \mbox{[}$\,$\mbox{]}}]{transparent }\end{DoxyParamCaption}) throws I\+O\+Exception\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1opengl_1_1_loadable_image_data_a640021b955dde7deeeeabb5ac3738d2b}{org.\+newdawn.\+slick.\+opengl.\+Loadable\+Image\+Data\+::load\+Image}}(java.\+io.\+Input\+Stream, boolean, boolean, int\mbox{[}\mbox{]}) 
+\end{DoxySeeAlso}
+
+
+Implements \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1opengl_1_1_loadable_image_data_ae1be205b86c674550235e9f357adadf5}{org.\+newdawn.\+slick.\+opengl.\+Loadable\+Image\+Data}}.
+
+
+\begin{DoxyCode}
+49                                                                                                            
+                      \{
+50         CompositeIOException exception = \textcolor{keyword}{new} CompositeIOException();
+51         ByteBuffer buffer = null;
+52         
+53         BufferedInputStream in = \textcolor{keyword}{new} BufferedInputStream(is, is.available());
+54         in.mark(is.available());
+55         
+56         \textcolor{comment}{// cycle through our source until one of them works}
+57         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i=0;i<\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_composite_image_data_a620f0a2292b907b7a3418d95d91e422c}{sources}}.size();i++) \{
+58             in.reset();
+59             \textcolor{keywordflow}{try} \{
+60                 LoadableImageData data = (LoadableImageData) \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_composite_image_data_a620f0a2292b907b7a3418d95d91e422c}{sources}}.get(i);
+61                 
+62                 buffer = data.loadImage(in, flipped, forceAlpha, transparent);
+63                 \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_composite_image_data_a7238cbb20cc08b68a29935b4bc222da7}{picked}} = data;
+64                 \textcolor{keywordflow}{break};
+65             \} \textcolor{keywordflow}{catch} (Exception e) \{
+66                 Log.warn(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_composite_image_data_a620f0a2292b907b7a3418d95d91e422c}{sources}}.get(i).getClass()+\textcolor{stringliteral}{" failed to read the data"}, e);
+67                 exception.addException(e);
+68             \}
+69         \}
+70         
+71         \textcolor{keywordflow}{if} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_composite_image_data_a7238cbb20cc08b68a29935b4bc222da7}{picked}} == null) \{
+72             \textcolor{keywordflow}{throw} exception;
+73         \}
+74         
+75         \textcolor{keywordflow}{return} buffer;
+76     \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_composite_image_data_a7238cbb20cc08b68a29935b4bc222da7}\label{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_composite_image_data_a7238cbb20cc08b68a29935b4bc222da7}} 
+\index{org\+::newdawn\+::slick\+::opengl\+::\+Composite\+Image\+Data@{org\+::newdawn\+::slick\+::opengl\+::\+Composite\+Image\+Data}!picked@{picked}}
+\index{picked@{picked}!org\+::newdawn\+::slick\+::opengl\+::\+Composite\+Image\+Data@{org\+::newdawn\+::slick\+::opengl\+::\+Composite\+Image\+Data}}
+\subsubsection{\texorpdfstring{picked}{picked}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1opengl_1_1_loadable_image_data}{Loadable\+Image\+Data}} org.\+newdawn.\+slick.\+opengl.\+Composite\+Image\+Data.\+picked\hspace{0.3cm}{\ttfamily [private]}}
+
+The data source that worked and was used -\/ or null if no luck \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_composite_image_data_a620f0a2292b907b7a3418d95d91e422c}\label{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_composite_image_data_a620f0a2292b907b7a3418d95d91e422c}} 
+\index{org\+::newdawn\+::slick\+::opengl\+::\+Composite\+Image\+Data@{org\+::newdawn\+::slick\+::opengl\+::\+Composite\+Image\+Data}!sources@{sources}}
+\index{sources@{sources}!org\+::newdawn\+::slick\+::opengl\+::\+Composite\+Image\+Data@{org\+::newdawn\+::slick\+::opengl\+::\+Composite\+Image\+Data}}
+\subsubsection{\texorpdfstring{sources}{sources}}
+{\footnotesize\ttfamily Array\+List org.\+newdawn.\+slick.\+opengl.\+Composite\+Image\+Data.\+sources = new Array\+List()\hspace{0.3cm}{\ttfamily [private]}}
+
+The list of images sources in order of preference to try loading the data with 

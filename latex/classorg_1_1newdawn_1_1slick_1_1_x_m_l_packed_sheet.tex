@@ -1,0 +1,114 @@
+\hypertarget{classorg_1_1newdawn_1_1slick_1_1_x_m_l_packed_sheet}{}\section{org.\+newdawn.\+slick.\+X\+M\+L\+Packed\+Sheet Class Reference}
+\label{classorg_1_1newdawn_1_1slick_1_1_x_m_l_packed_sheet}\index{org.\+newdawn.\+slick.\+X\+M\+L\+Packed\+Sheet@{org.\+newdawn.\+slick.\+X\+M\+L\+Packed\+Sheet}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_x_m_l_packed_sheet_a6bc2189b9444756a6287ea971796a910}{X\+M\+L\+Packed\+Sheet}} (String image\+Ref, String xml\+Ref)  throws Slick\+Exception 	
+\item 
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_image}{Image}} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_x_m_l_packed_sheet_a4d32457f7a969d9e97965017e878858b}{get\+Sprite}} (String name)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_image}{Image}} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_x_m_l_packed_sheet_a8f418205fde15e4b3e64b363b74a7fae}{image}}
+\item 
+Hash\+Map \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_x_m_l_packed_sheet_a4afb6e9a66274013a24e53f4f01864bb}{sprites}} = new Hash\+Map()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A sprite sheet based on an X\+ML descriptor generated from the simple slick tool
+
+\begin{DoxyAuthor}{Author}
+kevin 
+\end{DoxyAuthor}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1_x_m_l_packed_sheet_a6bc2189b9444756a6287ea971796a910}\label{classorg_1_1newdawn_1_1slick_1_1_x_m_l_packed_sheet_a6bc2189b9444756a6287ea971796a910}} 
+\index{org\+::newdawn\+::slick\+::\+X\+M\+L\+Packed\+Sheet@{org\+::newdawn\+::slick\+::\+X\+M\+L\+Packed\+Sheet}!X\+M\+L\+Packed\+Sheet@{X\+M\+L\+Packed\+Sheet}}
+\index{X\+M\+L\+Packed\+Sheet@{X\+M\+L\+Packed\+Sheet}!org\+::newdawn\+::slick\+::\+X\+M\+L\+Packed\+Sheet@{org\+::newdawn\+::slick\+::\+X\+M\+L\+Packed\+Sheet}}
+\subsubsection{\texorpdfstring{X\+M\+L\+Packed\+Sheet()}{XMLPackedSheet()}}
+{\footnotesize\ttfamily org.\+newdawn.\+slick.\+X\+M\+L\+Packed\+Sheet.\+X\+M\+L\+Packed\+Sheet (\begin{DoxyParamCaption}\item[{String}]{image\+Ref,  }\item[{String}]{xml\+Ref }\end{DoxyParamCaption}) throws \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_slick_exception}{Slick\+Exception}}\hspace{0.3cm}{\ttfamily [inline]}}
+
+Create a new X\+ML packed sheet from the X\+ML output by the slick tool
+
+
+\begin{DoxyParams}{Parameters}
+{\em image\+Ref} & The reference to the image \\
+\hline
+{\em xml\+Ref} & The reference to the X\+ML \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_slick_exception}{Slick\+Exception}}} & Indicates a failure to parse the X\+ML or read the image \\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyCode}
+32     \{
+33         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_x_m_l_packed_sheet_a8f418205fde15e4b3e64b363b74a7fae}{image}} = \textcolor{keyword}{new} Image(imageRef, \textcolor{keyword}{false}, Image.FILTER\_NEAREST);
+34     
+35         \textcolor{keywordflow}{try} \{
+36             DocumentBuilder builder = DocumentBuilderFactory.newInstance().newDocumentBuilder();
+37             Document doc = builder.parse(ResourceLoader.getResourceAsStream(xmlRef));
+38             
+39             NodeList list = doc.getElementsByTagName(\textcolor{stringliteral}{"sprite"});
+40             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i=0;i<list.getLength();i++) \{
+41                 Element element = (Element) list.item(i);
+42                 
+43                 String name = element.getAttribute(\textcolor{stringliteral}{"name"});
+44                 \textcolor{keywordtype}{int} x = Integer.parseInt(element.getAttribute(\textcolor{stringliteral}{"x"}));
+45                 \textcolor{keywordtype}{int} y = Integer.parseInt(element.getAttribute(\textcolor{stringliteral}{"y"}));
+46                 \textcolor{keywordtype}{int} width = Integer.parseInt(element.getAttribute(\textcolor{stringliteral}{"width"}));
+47                 \textcolor{keywordtype}{int} height = Integer.parseInt(element.getAttribute(\textcolor{stringliteral}{"height"}));
+48                 
+49                 \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_x_m_l_packed_sheet_a4afb6e9a66274013a24e53f4f01864bb}{sprites}}.put(name, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_x_m_l_packed_sheet_a8f418205fde15e4b3e64b363b74a7fae}{image}}.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_image_a2ccb3bbdda674f9efdec614a54e31e32}{getSubImage}}(x,y,width,height));
+50             \}
+51         \} \textcolor{keywordflow}{catch} (Exception e) \{
+52             \textcolor{keywordflow}{throw} \textcolor{keyword}{new} SlickException(\textcolor{stringliteral}{"Failed to parse sprite sheet XML"}, e);
+53         \}
+54     \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1_x_m_l_packed_sheet_a4d32457f7a969d9e97965017e878858b}\label{classorg_1_1newdawn_1_1slick_1_1_x_m_l_packed_sheet_a4d32457f7a969d9e97965017e878858b}} 
+\index{org\+::newdawn\+::slick\+::\+X\+M\+L\+Packed\+Sheet@{org\+::newdawn\+::slick\+::\+X\+M\+L\+Packed\+Sheet}!get\+Sprite@{get\+Sprite}}
+\index{get\+Sprite@{get\+Sprite}!org\+::newdawn\+::slick\+::\+X\+M\+L\+Packed\+Sheet@{org\+::newdawn\+::slick\+::\+X\+M\+L\+Packed\+Sheet}}
+\subsubsection{\texorpdfstring{get\+Sprite()}{getSprite()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_image}{Image}} org.\+newdawn.\+slick.\+X\+M\+L\+Packed\+Sheet.\+get\+Sprite (\begin{DoxyParamCaption}\item[{String}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get a sprite by it\textquotesingle{}s given name
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The name of the sprite to retrieve \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The sprite from the sheet or null if the name isn\textquotesingle{}t used in this sheet 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+62                                         \{
+63         \textcolor{keywordflow}{return} (Image) \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_x_m_l_packed_sheet_a4afb6e9a66274013a24e53f4f01864bb}{sprites}}.get(name);
+64     \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1_x_m_l_packed_sheet_a8f418205fde15e4b3e64b363b74a7fae}\label{classorg_1_1newdawn_1_1slick_1_1_x_m_l_packed_sheet_a8f418205fde15e4b3e64b363b74a7fae}} 
+\index{org\+::newdawn\+::slick\+::\+X\+M\+L\+Packed\+Sheet@{org\+::newdawn\+::slick\+::\+X\+M\+L\+Packed\+Sheet}!image@{image}}
+\index{image@{image}!org\+::newdawn\+::slick\+::\+X\+M\+L\+Packed\+Sheet@{org\+::newdawn\+::slick\+::\+X\+M\+L\+Packed\+Sheet}}
+\subsubsection{\texorpdfstring{image}{image}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_image}{Image}} org.\+newdawn.\+slick.\+X\+M\+L\+Packed\+Sheet.\+image\hspace{0.3cm}{\ttfamily [private]}}
+
+The full sheet image \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1_x_m_l_packed_sheet_a4afb6e9a66274013a24e53f4f01864bb}\label{classorg_1_1newdawn_1_1slick_1_1_x_m_l_packed_sheet_a4afb6e9a66274013a24e53f4f01864bb}} 
+\index{org\+::newdawn\+::slick\+::\+X\+M\+L\+Packed\+Sheet@{org\+::newdawn\+::slick\+::\+X\+M\+L\+Packed\+Sheet}!sprites@{sprites}}
+\index{sprites@{sprites}!org\+::newdawn\+::slick\+::\+X\+M\+L\+Packed\+Sheet@{org\+::newdawn\+::slick\+::\+X\+M\+L\+Packed\+Sheet}}
+\subsubsection{\texorpdfstring{sprites}{sprites}}
+{\footnotesize\ttfamily Hash\+Map org.\+newdawn.\+slick.\+X\+M\+L\+Packed\+Sheet.\+sprites = new Hash\+Map()\hspace{0.3cm}{\ttfamily [private]}}
+
+The sprites stored on the image 

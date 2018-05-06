@@ -1,0 +1,384 @@
+\hypertarget{classpecl3ignacioriberasemaforos_1_1_libro}{}\section{pecl3ignacioriberasemaforos.\+Libro Class Reference}
+\label{classpecl3ignacioriberasemaforos_1_1_libro}\index{pecl3ignacioriberasemaforos.\+Libro@{pecl3ignacioriberasemaforos.\+Libro}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+synchronized void \mbox{\hyperlink{classpecl3ignacioriberasemaforos_1_1_libro_ae829764ad31e50fb4431320afae79035}{mensaje\+Final}} (int id)
+\item 
+synchronized void \mbox{\hyperlink{classpecl3ignacioriberasemaforos_1_1_libro_adf6ca4b4723c810075def5c4c6f4a07c}{mostrar\+Contenido}} ()
+\item 
+boolean \mbox{\hyperlink{classpecl3ignacioriberasemaforos_1_1_libro_af6178cea680fdd2f3a42bbc477cf3a51}{is\+Parar\+Lectores}} ()
+\item 
+boolean \mbox{\hyperlink{classpecl3ignacioriberasemaforos_1_1_libro_aa68c7f9315d2c2f07ac549f13b1525bc}{is\+Parar\+Escritores}} ()
+\item 
+void \mbox{\hyperlink{classpecl3ignacioriberasemaforos_1_1_libro_afd336fcdff8177ebfcebbc68a7333fde}{parar\+Reanudar\+Lectores}} ()
+\item 
+void \mbox{\hyperlink{classpecl3ignacioriberasemaforos_1_1_libro_a73e931357770752d63a701195a996f09}{parar\+Reanudar\+Escritores}} ()
+\item 
+boolean \mbox{\hyperlink{classpecl3ignacioriberasemaforos_1_1_libro_a0c0063019147f6501b2216621ee020ce}{leer}} (int identificador)
+\item 
+void \mbox{\hyperlink{classpecl3ignacioriberasemaforos_1_1_libro_a8077242f921bac18bb1205ae15356d95}{escribir}} (int identificador)
+\item 
+void \mbox{\hyperlink{classpecl3ignacioriberasemaforos_1_1_libro_a21c76550518b5fd6a966cd4dc6522fff}{sumar\+A\+Contador\+Escritura}} ()
+\item 
+boolean \mbox{\hyperlink{classpecl3ignacioriberasemaforos_1_1_libro_aa0884cf350ca7e0e03ffc681d7404ab8}{hay\+Alguien\+Escribiendo}} ()
+\item 
+boolean \mbox{\hyperlink{classpecl3ignacioriberasemaforos_1_1_libro_ac67a7afbfa38fb566526bfa7f688beaa}{hay\+Alguien\+Leyendo}} ()
+\item 
+\mbox{\hyperlink{classpecl3ignacioriberasemaforos_1_1_libro_a9ed8398ba1fbcf45b74e0d73af9a0831}{Libro}} (int \mbox{\hyperlink{classpecl3ignacioriberasemaforos_1_1_libro_aab14f16eb696d97ce1373e7325b61077}{numero\+Lectores}}, int \mbox{\hyperlink{classpecl3ignacioriberasemaforos_1_1_libro_ad4d82015922415d96864d1370a3af2c5}{numero\+Escritores}}, javax.\+swing.\+J\+Label \mbox{\hyperlink{classpecl3ignacioriberasemaforos_1_1_libro_a126ba60cdc31f30cdf071606013951b7}{j\+Label\+Aux}}, javax.\+swing.\+J\+Text\+Field \mbox{\hyperlink{classpecl3ignacioriberasemaforos_1_1_libro_a4688b8afa2701493ac45bfbc35b1f8ca}{j\+Text\+Field\+Aux}}, javax.\+swing.\+J\+Text\+Area \mbox{\hyperlink{classpecl3ignacioriberasemaforos_1_1_libro_ab049d0206067da023a6231357b7efc75}{j\+Text\+Area\+Aux}})
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpecl3ignacioriberasemaforos_1_1_monitor}{Monitor}} \mbox{\hyperlink{classpecl3ignacioriberasemaforos_1_1_libro_a54d314cadff093d0ca9a579fdbc049fe}{escritores}}
+\item 
+\mbox{\hyperlink{classpecl3ignacioriberasemaforos_1_1_monitor}{Monitor}} \mbox{\hyperlink{classpecl3ignacioriberasemaforos_1_1_libro_a47b5756a2a1a97ad2a3c1d15996e7b63}{lectores}}
+\item 
+Semaphore \mbox{\hyperlink{classpecl3ignacioriberasemaforos_1_1_libro_a5b95dab8238745eb32f335c03f2d2dab}{lectura}}
+\item 
+Semaphore \mbox{\hyperlink{classpecl3ignacioriberasemaforos_1_1_libro_aad0e4f77750ad50ae397c58273dd4527}{escritura}}
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+javax.\+swing.\+J\+Text\+Field \mbox{\hyperlink{classpecl3ignacioriberasemaforos_1_1_libro_a4688b8afa2701493ac45bfbc35b1f8ca}{j\+Text\+Field\+Aux}}
+\item 
+javax.\+swing.\+J\+Text\+Area \mbox{\hyperlink{classpecl3ignacioriberasemaforos_1_1_libro_ab049d0206067da023a6231357b7efc75}{j\+Text\+Area\+Aux}}
+\item 
+javax.\+swing.\+J\+Label \mbox{\hyperlink{classpecl3ignacioriberasemaforos_1_1_libro_a126ba60cdc31f30cdf071606013951b7}{j\+Label\+Aux}}
+\item 
+String \mbox{\hyperlink{classpecl3ignacioriberasemaforos_1_1_libro_ab2fc8d572a85bf24b8c3558b7739d8a8}{contenido}}
+\item 
+int \mbox{\hyperlink{classpecl3ignacioriberasemaforos_1_1_libro_a3e40890fd6a99fd333cc76188bf0841b}{contador}}
+\item 
+boolean \mbox{\hyperlink{classpecl3ignacioriberasemaforos_1_1_libro_a970295d15bdfebb950a6fca5c300562a}{turno\+Escribir}}
+\item 
+boolean \mbox{\hyperlink{classpecl3ignacioriberasemaforos_1_1_libro_ac3024d92434cf24e0ebf9eca9c91f86a}{leyendo}} \mbox{[}$\,$\mbox{]}
+\item 
+boolean \mbox{\hyperlink{classpecl3ignacioriberasemaforos_1_1_libro_af552bf9166c3f93d14f20bdaca4a0735}{parar\+Lectores}}
+\item 
+boolean \mbox{\hyperlink{classpecl3ignacioriberasemaforos_1_1_libro_a3b3677781b08023845a9279e42d6e731}{parar\+Escritores}}
+\item 
+int \mbox{\hyperlink{classpecl3ignacioriberasemaforos_1_1_libro_a94d54e5e2f7b6bb396e9eaa6799fdbe9}{contador\+Escrituras}}
+\item 
+int \mbox{\hyperlink{classpecl3ignacioriberasemaforos_1_1_libro_aab14f16eb696d97ce1373e7325b61077}{numero\+Lectores}}
+\item 
+int \mbox{\hyperlink{classpecl3ignacioriberasemaforos_1_1_libro_ad4d82015922415d96864d1370a3af2c5}{numero\+Escritores}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyAuthor}{Author}
+Ignacio 
+\end{DoxyAuthor}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classpecl3ignacioriberasemaforos_1_1_libro_a9ed8398ba1fbcf45b74e0d73af9a0831}\label{classpecl3ignacioriberasemaforos_1_1_libro_a9ed8398ba1fbcf45b74e0d73af9a0831}} 
+\index{pecl3ignacioriberasemaforos\+::\+Libro@{pecl3ignacioriberasemaforos\+::\+Libro}!Libro@{Libro}}
+\index{Libro@{Libro}!pecl3ignacioriberasemaforos\+::\+Libro@{pecl3ignacioriberasemaforos\+::\+Libro}}
+\subsubsection{\texorpdfstring{Libro()}{Libro()}}
+{\footnotesize\ttfamily pecl3ignacioriberasemaforos.\+Libro.\+Libro (\begin{DoxyParamCaption}\item[{int}]{numero\+Lectores,  }\item[{int}]{numero\+Escritores,  }\item[{javax.\+swing.\+J\+Label}]{j\+Label\+Aux,  }\item[{javax.\+swing.\+J\+Text\+Field}]{j\+Text\+Field\+Aux,  }\item[{javax.\+swing.\+J\+Text\+Area}]{j\+Text\+Area\+Aux }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+137     \{
+138         \textcolor{keywordtype}{int} i;
+139         this.\mbox{\hyperlink{classpecl3ignacioriberasemaforos_1_1_libro_a5b95dab8238745eb32f335c03f2d2dab}{lectura}} = \textcolor{keyword}{new} Semaphore(\mbox{\hyperlink{classpecl3ignacioriberasemaforos_1_1_libro_aab14f16eb696d97ce1373e7325b61077}{numeroLectores}},\textcolor{keyword}{true});
+140         this.\mbox{\hyperlink{classpecl3ignacioriberasemaforos_1_1_libro_aad0e4f77750ad50ae397c58273dd4527}{escritura}} = \textcolor{keyword}{new} Semaphore(1,\textcolor{keyword}{true});
+141         this.\mbox{\hyperlink{classpecl3ignacioriberasemaforos_1_1_libro_a126ba60cdc31f30cdf071606013951b7}{jLabelAux}} = \mbox{\hyperlink{classpecl3ignacioriberasemaforos_1_1_libro_a126ba60cdc31f30cdf071606013951b7}{jLabelAux}};
+142         this.\mbox{\hyperlink{classpecl3ignacioriberasemaforos_1_1_libro_a4688b8afa2701493ac45bfbc35b1f8ca}{jTextFieldAux}} = \mbox{\hyperlink{classpecl3ignacioriberasemaforos_1_1_libro_a4688b8afa2701493ac45bfbc35b1f8ca}{jTextFieldAux}};
+143         this.\mbox{\hyperlink{classpecl3ignacioriberasemaforos_1_1_libro_ab049d0206067da023a6231357b7efc75}{jTextAreaAux}} = \mbox{\hyperlink{classpecl3ignacioriberasemaforos_1_1_libro_ab049d0206067da023a6231357b7efc75}{jTextAreaAux}};
+144         this.\mbox{\hyperlink{classpecl3ignacioriberasemaforos_1_1_libro_af552bf9166c3f93d14f20bdaca4a0735}{pararLectores}} = \textcolor{keyword}{false};
+145         this.\mbox{\hyperlink{classpecl3ignacioriberasemaforos_1_1_libro_a3b3677781b08023845a9279e42d6e731}{pararEscritores}} = \textcolor{keyword}{false};
+146         this.\mbox{\hyperlink{classpecl3ignacioriberasemaforos_1_1_libro_aab14f16eb696d97ce1373e7325b61077}{numeroLectores}} = \mbox{\hyperlink{classpecl3ignacioriberasemaforos_1_1_libro_aab14f16eb696d97ce1373e7325b61077}{numeroLectores}};
+147         this.\mbox{\hyperlink{classpecl3ignacioriberasemaforos_1_1_libro_ad4d82015922415d96864d1370a3af2c5}{numeroEscritores}} = \mbox{\hyperlink{classpecl3ignacioriberasemaforos_1_1_libro_ad4d82015922415d96864d1370a3af2c5}{numeroEscritores}};
+148         this.\mbox{\hyperlink{classpecl3ignacioriberasemaforos_1_1_libro_ac3024d92434cf24e0ebf9eca9c91f86a}{leyendo}} = \textcolor{keyword}{new} \textcolor{keywordtype}{boolean}[\mbox{\hyperlink{classpecl3ignacioriberasemaforos_1_1_libro_aab14f16eb696d97ce1373e7325b61077}{numeroLectores}}];
+149         this.\mbox{\hyperlink{classpecl3ignacioriberasemaforos_1_1_libro_a970295d15bdfebb950a6fca5c300562a}{turnoEscribir}} = \textcolor{keyword}{false};
+150         this.\mbox{\hyperlink{classpecl3ignacioriberasemaforos_1_1_libro_a47b5756a2a1a97ad2a3c1d15996e7b63}{lectores}} = \textcolor{keyword}{new} Monitor();
+151         this.\mbox{\hyperlink{classpecl3ignacioriberasemaforos_1_1_libro_a54d314cadff093d0ca9a579fdbc049fe}{escritores}} = \textcolor{keyword}{new} Monitor();
+152         this.\mbox{\hyperlink{classpecl3ignacioriberasemaforos_1_1_libro_a3e40890fd6a99fd333cc76188bf0841b}{contador}} = 0;
+153         this.\mbox{\hyperlink{classpecl3ignacioriberasemaforos_1_1_libro_a94d54e5e2f7b6bb396e9eaa6799fdbe9}{contadorEscrituras}} = 0;
+154         this.\mbox{\hyperlink{classpecl3ignacioriberasemaforos_1_1_libro_ab2fc8d572a85bf24b8c3558b7739d8a8}{contenido}} = \textcolor{stringliteral}{""};
+155     \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classpecl3ignacioriberasemaforos_1_1_libro_a8077242f921bac18bb1205ae15356d95}\label{classpecl3ignacioriberasemaforos_1_1_libro_a8077242f921bac18bb1205ae15356d95}} 
+\index{pecl3ignacioriberasemaforos\+::\+Libro@{pecl3ignacioriberasemaforos\+::\+Libro}!escribir@{escribir}}
+\index{escribir@{escribir}!pecl3ignacioriberasemaforos\+::\+Libro@{pecl3ignacioriberasemaforos\+::\+Libro}}
+\subsubsection{\texorpdfstring{escribir()}{escribir()}}
+{\footnotesize\ttfamily void pecl3ignacioriberasemaforos.\+Libro.\+escribir (\begin{DoxyParamCaption}\item[{int}]{identificador }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+95     \{
+96         \textcolor{keywordflow}{try} \{
+97             \mbox{\hyperlink{classpecl3ignacioriberasemaforos_1_1_libro_aad0e4f77750ad50ae397c58273dd4527}{escritura}}.acquire();
+98             \mbox{\hyperlink{classpecl3ignacioriberasemaforos_1_1_libro_a54d314cadff093d0ca9a579fdbc049fe}{escritores}}.\mbox{\hyperlink{classpecl3ignacioriberasemaforos_1_1_monitor_a5bad35ef1f814400404e5e846db6a88f}{comprobar}}();
+99             \mbox{\hyperlink{classpecl3ignacioriberasemaforos_1_1_libro_a5b95dab8238745eb32f335c03f2d2dab}{lectura}}.acquire(\mbox{\hyperlink{classpecl3ignacioriberasemaforos_1_1_libro_aab14f16eb696d97ce1373e7325b61077}{numeroLectores}});
+100             
+101             \mbox{\hyperlink{classpecl3ignacioriberasemaforos_1_1_libro_ab2fc8d572a85bf24b8c3558b7739d8a8}{contenido}} = \mbox{\hyperlink{classpecl3ignacioriberasemaforos_1_1_libro_ab2fc8d572a85bf24b8c3558b7739d8a8}{contenido}} + identificador;
+102             \mbox{\hyperlink{classpecl3ignacioriberasemaforos_1_1_libro_adf6ca4b4723c810075def5c4c6f4a07c}{mostrarContenido}}();
+103             \mbox{\hyperlink{classpecl3ignacioriberasemaforos_1_1_libro_a21c76550518b5fd6a966cd4dc6522fff}{sumarAContadorEscritura}}();
+104         \} \textcolor{keywordflow}{catch} (InterruptedException ex) \{
+105             Logger.getLogger(\mbox{\hyperlink{classpecl3ignacioriberasemaforos_1_1_libro_a9ed8398ba1fbcf45b74e0d73af9a0831}{Libro}}.class.getName()).log(Level.SEVERE, null, ex);
+106         \} \textcolor{keywordflow}{finally}\{
+107             \mbox{\hyperlink{classpecl3ignacioriberasemaforos_1_1_libro_aad0e4f77750ad50ae397c58273dd4527}{escritura}}.release();
+108             \mbox{\hyperlink{classpecl3ignacioriberasemaforos_1_1_libro_a5b95dab8238745eb32f335c03f2d2dab}{lectura}}.release(\mbox{\hyperlink{classpecl3ignacioriberasemaforos_1_1_libro_aab14f16eb696d97ce1373e7325b61077}{numeroLectores}});
+109         \}
+110     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classpecl3ignacioriberasemaforos_1_1_libro_aa0884cf350ca7e0e03ffc681d7404ab8}\label{classpecl3ignacioriberasemaforos_1_1_libro_aa0884cf350ca7e0e03ffc681d7404ab8}} 
+\index{pecl3ignacioriberasemaforos\+::\+Libro@{pecl3ignacioriberasemaforos\+::\+Libro}!hay\+Alguien\+Escribiendo@{hay\+Alguien\+Escribiendo}}
+\index{hay\+Alguien\+Escribiendo@{hay\+Alguien\+Escribiendo}!pecl3ignacioriberasemaforos\+::\+Libro@{pecl3ignacioriberasemaforos\+::\+Libro}}
+\subsubsection{\texorpdfstring{hay\+Alguien\+Escribiendo()}{hayAlguienEscribiendo()}}
+{\footnotesize\ttfamily boolean pecl3ignacioriberasemaforos.\+Libro.\+hay\+Alguien\+Escribiendo (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+119     \{
+120         \textcolor{keywordflow}{return} \mbox{\hyperlink{classpecl3ignacioriberasemaforos_1_1_libro_a970295d15bdfebb950a6fca5c300562a}{turnoEscribir}};
+121     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classpecl3ignacioriberasemaforos_1_1_libro_ac67a7afbfa38fb566526bfa7f688beaa}\label{classpecl3ignacioriberasemaforos_1_1_libro_ac67a7afbfa38fb566526bfa7f688beaa}} 
+\index{pecl3ignacioriberasemaforos\+::\+Libro@{pecl3ignacioriberasemaforos\+::\+Libro}!hay\+Alguien\+Leyendo@{hay\+Alguien\+Leyendo}}
+\index{hay\+Alguien\+Leyendo@{hay\+Alguien\+Leyendo}!pecl3ignacioriberasemaforos\+::\+Libro@{pecl3ignacioriberasemaforos\+::\+Libro}}
+\subsubsection{\texorpdfstring{hay\+Alguien\+Leyendo()}{hayAlguienLeyendo()}}
+{\footnotesize\ttfamily boolean pecl3ignacioriberasemaforos.\+Libro.\+hay\+Alguien\+Leyendo (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+124     \{
+125         \textcolor{keywordtype}{int} i;
+126         \textcolor{keywordflow}{for}(i=0;i<\mbox{\hyperlink{classpecl3ignacioriberasemaforos_1_1_libro_aab14f16eb696d97ce1373e7325b61077}{numeroLectores}};i++)
+127         \{
+128             \textcolor{keywordflow}{if}(\mbox{\hyperlink{classpecl3ignacioriberasemaforos_1_1_libro_ac3024d92434cf24e0ebf9eca9c91f86a}{leyendo}}[i])
+129             \{
+130                 \textcolor{keywordflow}{return} \textcolor{keyword}{true};
+131             \}
+132         \}
+133         \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+134     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classpecl3ignacioriberasemaforos_1_1_libro_aa68c7f9315d2c2f07ac549f13b1525bc}\label{classpecl3ignacioriberasemaforos_1_1_libro_aa68c7f9315d2c2f07ac549f13b1525bc}} 
+\index{pecl3ignacioriberasemaforos\+::\+Libro@{pecl3ignacioriberasemaforos\+::\+Libro}!is\+Parar\+Escritores@{is\+Parar\+Escritores}}
+\index{is\+Parar\+Escritores@{is\+Parar\+Escritores}!pecl3ignacioriberasemaforos\+::\+Libro@{pecl3ignacioriberasemaforos\+::\+Libro}}
+\subsubsection{\texorpdfstring{is\+Parar\+Escritores()}{isPararEscritores()}}
+{\footnotesize\ttfamily boolean pecl3ignacioriberasemaforos.\+Libro.\+is\+Parar\+Escritores (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+51                                        \{
+52         \textcolor{keywordflow}{return} \mbox{\hyperlink{classpecl3ignacioriberasemaforos_1_1_libro_a3b3677781b08023845a9279e42d6e731}{pararEscritores}};
+53     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classpecl3ignacioriberasemaforos_1_1_libro_af6178cea680fdd2f3a42bbc477cf3a51}\label{classpecl3ignacioriberasemaforos_1_1_libro_af6178cea680fdd2f3a42bbc477cf3a51}} 
+\index{pecl3ignacioriberasemaforos\+::\+Libro@{pecl3ignacioriberasemaforos\+::\+Libro}!is\+Parar\+Lectores@{is\+Parar\+Lectores}}
+\index{is\+Parar\+Lectores@{is\+Parar\+Lectores}!pecl3ignacioriberasemaforos\+::\+Libro@{pecl3ignacioriberasemaforos\+::\+Libro}}
+\subsubsection{\texorpdfstring{is\+Parar\+Lectores()}{isPararLectores()}}
+{\footnotesize\ttfamily boolean pecl3ignacioriberasemaforos.\+Libro.\+is\+Parar\+Lectores (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+47                                      \{
+48         \textcolor{keywordflow}{return} \mbox{\hyperlink{classpecl3ignacioriberasemaforos_1_1_libro_af552bf9166c3f93d14f20bdaca4a0735}{pararLectores}};
+49     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classpecl3ignacioriberasemaforos_1_1_libro_a0c0063019147f6501b2216621ee020ce}\label{classpecl3ignacioriberasemaforos_1_1_libro_a0c0063019147f6501b2216621ee020ce}} 
+\index{pecl3ignacioriberasemaforos\+::\+Libro@{pecl3ignacioriberasemaforos\+::\+Libro}!leer@{leer}}
+\index{leer@{leer}!pecl3ignacioriberasemaforos\+::\+Libro@{pecl3ignacioriberasemaforos\+::\+Libro}}
+\subsubsection{\texorpdfstring{leer()}{leer()}}
+{\footnotesize\ttfamily boolean pecl3ignacioriberasemaforos.\+Libro.\+leer (\begin{DoxyParamCaption}\item[{int}]{identificador }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+66      \{
+67         
+68         \textcolor{keywordflow}{try} \{
+69             \mbox{\hyperlink{classpecl3ignacioriberasemaforos_1_1_libro_a47b5756a2a1a97ad2a3c1d15996e7b63}{lectores}}.\mbox{\hyperlink{classpecl3ignacioriberasemaforos_1_1_monitor_a5bad35ef1f814400404e5e846db6a88f}{comprobar}}();
+70             \mbox{\hyperlink{classpecl3ignacioriberasemaforos_1_1_libro_a5b95dab8238745eb32f335c03f2d2dab}{lectura}}.acquire();
+71             \mbox{\hyperlink{classpecl3ignacioriberasemaforos_1_1_libro_a3e40890fd6a99fd333cc76188bf0841b}{contador}}++;
+72             sleep((\textcolor{keywordtype}{int})(500+(1000*Math.random())));\textcolor{comment}{//leer}
+73         \} \textcolor{keywordflow}{catch} (InterruptedException ex) \{
+74             Logger.getLogger(\mbox{\hyperlink{classpecl3ignacioriberasemaforos_1_1_libro_a9ed8398ba1fbcf45b74e0d73af9a0831}{Libro}}.class.getName()).log(Level.SEVERE, null, ex);
+75         \} \textcolor{keywordflow}{finally} \{
+76             \mbox{\hyperlink{classpecl3ignacioriberasemaforos_1_1_libro_a5b95dab8238745eb32f335c03f2d2dab}{lectura}}.release();
+77             \mbox{\hyperlink{classpecl3ignacioriberasemaforos_1_1_libro_a3e40890fd6a99fd333cc76188bf0841b}{contador}}--;
+78             \textcolor{keywordflow}{if}(\mbox{\hyperlink{classpecl3ignacioriberasemaforos_1_1_libro_a3e40890fd6a99fd333cc76188bf0841b}{contador}}==0)
+79             \{
+80                 \mbox{\hyperlink{classpecl3ignacioriberasemaforos_1_1_libro_a126ba60cdc31f30cdf071606013951b7}{jLabelAux}}.setText(\textcolor{stringliteral}{"Leyendo: false"});
+81             \}\textcolor{keywordflow}{else}\{
+82                 \mbox{\hyperlink{classpecl3ignacioriberasemaforos_1_1_libro_a126ba60cdc31f30cdf071606013951b7}{jLabelAux}}.setText(\textcolor{stringliteral}{"Leyendo: true"});
+83             \}
+84             \textcolor{keywordflow}{if}(\mbox{\hyperlink{classpecl3ignacioriberasemaforos_1_1_libro_ab2fc8d572a85bf24b8c3558b7739d8a8}{contenido}}.length()==50)
+85             \{
+86                 \mbox{\hyperlink{classpecl3ignacioriberasemaforos_1_1_libro_ae829764ad31e50fb4431320afae79035}{mensajeFinal}}(identificador);
+87                 \textcolor{keywordflow}{return} \textcolor{keyword}{true};
+88             \}\textcolor{keywordflow}{else}\{
+89                 \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+90             \}
+91         \}
+92      \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classpecl3ignacioriberasemaforos_1_1_libro_ae829764ad31e50fb4431320afae79035}\label{classpecl3ignacioriberasemaforos_1_1_libro_ae829764ad31e50fb4431320afae79035}} 
+\index{pecl3ignacioriberasemaforos\+::\+Libro@{pecl3ignacioriberasemaforos\+::\+Libro}!mensaje\+Final@{mensaje\+Final}}
+\index{mensaje\+Final@{mensaje\+Final}!pecl3ignacioriberasemaforos\+::\+Libro@{pecl3ignacioriberasemaforos\+::\+Libro}}
+\subsubsection{\texorpdfstring{mensaje\+Final()}{mensajeFinal()}}
+{\footnotesize\ttfamily synchronized void pecl3ignacioriberasemaforos.\+Libro.\+mensaje\+Final (\begin{DoxyParamCaption}\item[{int}]{id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+37     \{
+38         \mbox{\hyperlink{classpecl3ignacioriberasemaforos_1_1_libro_ab049d0206067da023a6231357b7efc75}{jTextAreaAux}}.setText(\mbox{\hyperlink{classpecl3ignacioriberasemaforos_1_1_libro_ab049d0206067da023a6231357b7efc75}{jTextAreaAux}}.getText()+\textcolor{stringliteral}{"\(\backslash\)nLeído por "} + \textcolor{keywordtype}{id} +\textcolor{stringliteral}{": "} + 
+      \mbox{\hyperlink{classpecl3ignacioriberasemaforos_1_1_libro_ab2fc8d572a85bf24b8c3558b7739d8a8}{contenido}});
+39     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classpecl3ignacioriberasemaforos_1_1_libro_adf6ca4b4723c810075def5c4c6f4a07c}\label{classpecl3ignacioriberasemaforos_1_1_libro_adf6ca4b4723c810075def5c4c6f4a07c}} 
+\index{pecl3ignacioriberasemaforos\+::\+Libro@{pecl3ignacioriberasemaforos\+::\+Libro}!mostrar\+Contenido@{mostrar\+Contenido}}
+\index{mostrar\+Contenido@{mostrar\+Contenido}!pecl3ignacioriberasemaforos\+::\+Libro@{pecl3ignacioriberasemaforos\+::\+Libro}}
+\subsubsection{\texorpdfstring{mostrar\+Contenido()}{mostrarContenido()}}
+{\footnotesize\ttfamily synchronized void pecl3ignacioriberasemaforos.\+Libro.\+mostrar\+Contenido (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+42     \{
+43         \mbox{\hyperlink{classpecl3ignacioriberasemaforos_1_1_libro_a4688b8afa2701493ac45bfbc35b1f8ca}{jTextFieldAux}}.setText(\mbox{\hyperlink{classpecl3ignacioriberasemaforos_1_1_libro_ab2fc8d572a85bf24b8c3558b7739d8a8}{contenido}});
+44     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classpecl3ignacioriberasemaforos_1_1_libro_a73e931357770752d63a701195a996f09}\label{classpecl3ignacioriberasemaforos_1_1_libro_a73e931357770752d63a701195a996f09}} 
+\index{pecl3ignacioriberasemaforos\+::\+Libro@{pecl3ignacioriberasemaforos\+::\+Libro}!parar\+Reanudar\+Escritores@{parar\+Reanudar\+Escritores}}
+\index{parar\+Reanudar\+Escritores@{parar\+Reanudar\+Escritores}!pecl3ignacioriberasemaforos\+::\+Libro@{pecl3ignacioriberasemaforos\+::\+Libro}}
+\subsubsection{\texorpdfstring{parar\+Reanudar\+Escritores()}{pararReanudarEscritores()}}
+{\footnotesize\ttfamily void pecl3ignacioriberasemaforos.\+Libro.\+parar\+Reanudar\+Escritores (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+61     \{
+62         \mbox{\hyperlink{classpecl3ignacioriberasemaforos_1_1_libro_a3b3677781b08023845a9279e42d6e731}{pararEscritores}} = !\mbox{\hyperlink{classpecl3ignacioriberasemaforos_1_1_libro_a3b3677781b08023845a9279e42d6e731}{pararEscritores}};
+63     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classpecl3ignacioriberasemaforos_1_1_libro_afd336fcdff8177ebfcebbc68a7333fde}\label{classpecl3ignacioriberasemaforos_1_1_libro_afd336fcdff8177ebfcebbc68a7333fde}} 
+\index{pecl3ignacioriberasemaforos\+::\+Libro@{pecl3ignacioriberasemaforos\+::\+Libro}!parar\+Reanudar\+Lectores@{parar\+Reanudar\+Lectores}}
+\index{parar\+Reanudar\+Lectores@{parar\+Reanudar\+Lectores}!pecl3ignacioriberasemaforos\+::\+Libro@{pecl3ignacioriberasemaforos\+::\+Libro}}
+\subsubsection{\texorpdfstring{parar\+Reanudar\+Lectores()}{pararReanudarLectores()}}
+{\footnotesize\ttfamily void pecl3ignacioriberasemaforos.\+Libro.\+parar\+Reanudar\+Lectores (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+56     \{
+57         \mbox{\hyperlink{classpecl3ignacioriberasemaforos_1_1_libro_af552bf9166c3f93d14f20bdaca4a0735}{pararLectores}} = !\mbox{\hyperlink{classpecl3ignacioriberasemaforos_1_1_libro_af552bf9166c3f93d14f20bdaca4a0735}{pararLectores}};
+58     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classpecl3ignacioriberasemaforos_1_1_libro_a21c76550518b5fd6a966cd4dc6522fff}\label{classpecl3ignacioriberasemaforos_1_1_libro_a21c76550518b5fd6a966cd4dc6522fff}} 
+\index{pecl3ignacioriberasemaforos\+::\+Libro@{pecl3ignacioriberasemaforos\+::\+Libro}!sumar\+A\+Contador\+Escritura@{sumar\+A\+Contador\+Escritura}}
+\index{sumar\+A\+Contador\+Escritura@{sumar\+A\+Contador\+Escritura}!pecl3ignacioriberasemaforos\+::\+Libro@{pecl3ignacioriberasemaforos\+::\+Libro}}
+\subsubsection{\texorpdfstring{sumar\+A\+Contador\+Escritura()}{sumarAContadorEscritura()}}
+{\footnotesize\ttfamily void pecl3ignacioriberasemaforos.\+Libro.\+sumar\+A\+Contador\+Escritura (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+114     \{
+115         \mbox{\hyperlink{classpecl3ignacioriberasemaforos_1_1_libro_a94d54e5e2f7b6bb396e9eaa6799fdbe9}{contadorEscrituras}}++;
+116     \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classpecl3ignacioriberasemaforos_1_1_libro_a3e40890fd6a99fd333cc76188bf0841b}\label{classpecl3ignacioriberasemaforos_1_1_libro_a3e40890fd6a99fd333cc76188bf0841b}} 
+\index{pecl3ignacioriberasemaforos\+::\+Libro@{pecl3ignacioriberasemaforos\+::\+Libro}!contador@{contador}}
+\index{contador@{contador}!pecl3ignacioriberasemaforos\+::\+Libro@{pecl3ignacioriberasemaforos\+::\+Libro}}
+\subsubsection{\texorpdfstring{contador}{contador}}
+{\footnotesize\ttfamily int pecl3ignacioriberasemaforos.\+Libro.\+contador\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classpecl3ignacioriberasemaforos_1_1_libro_a94d54e5e2f7b6bb396e9eaa6799fdbe9}\label{classpecl3ignacioriberasemaforos_1_1_libro_a94d54e5e2f7b6bb396e9eaa6799fdbe9}} 
+\index{pecl3ignacioriberasemaforos\+::\+Libro@{pecl3ignacioriberasemaforos\+::\+Libro}!contador\+Escrituras@{contador\+Escrituras}}
+\index{contador\+Escrituras@{contador\+Escrituras}!pecl3ignacioriberasemaforos\+::\+Libro@{pecl3ignacioriberasemaforos\+::\+Libro}}
+\subsubsection{\texorpdfstring{contador\+Escrituras}{contadorEscrituras}}
+{\footnotesize\ttfamily int pecl3ignacioriberasemaforos.\+Libro.\+contador\+Escrituras\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classpecl3ignacioriberasemaforos_1_1_libro_ab2fc8d572a85bf24b8c3558b7739d8a8}\label{classpecl3ignacioriberasemaforos_1_1_libro_ab2fc8d572a85bf24b8c3558b7739d8a8}} 
+\index{pecl3ignacioriberasemaforos\+::\+Libro@{pecl3ignacioriberasemaforos\+::\+Libro}!contenido@{contenido}}
+\index{contenido@{contenido}!pecl3ignacioriberasemaforos\+::\+Libro@{pecl3ignacioriberasemaforos\+::\+Libro}}
+\subsubsection{\texorpdfstring{contenido}{contenido}}
+{\footnotesize\ttfamily String pecl3ignacioriberasemaforos.\+Libro.\+contenido\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classpecl3ignacioriberasemaforos_1_1_libro_a54d314cadff093d0ca9a579fdbc049fe}\label{classpecl3ignacioriberasemaforos_1_1_libro_a54d314cadff093d0ca9a579fdbc049fe}} 
+\index{pecl3ignacioriberasemaforos\+::\+Libro@{pecl3ignacioriberasemaforos\+::\+Libro}!escritores@{escritores}}
+\index{escritores@{escritores}!pecl3ignacioriberasemaforos\+::\+Libro@{pecl3ignacioriberasemaforos\+::\+Libro}}
+\subsubsection{\texorpdfstring{escritores}{escritores}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classpecl3ignacioriberasemaforos_1_1_monitor}{Monitor}} pecl3ignacioriberasemaforos.\+Libro.\+escritores}
+
+\mbox{\Hypertarget{classpecl3ignacioriberasemaforos_1_1_libro_aad0e4f77750ad50ae397c58273dd4527}\label{classpecl3ignacioriberasemaforos_1_1_libro_aad0e4f77750ad50ae397c58273dd4527}} 
+\index{pecl3ignacioriberasemaforos\+::\+Libro@{pecl3ignacioriberasemaforos\+::\+Libro}!escritura@{escritura}}
+\index{escritura@{escritura}!pecl3ignacioriberasemaforos\+::\+Libro@{pecl3ignacioriberasemaforos\+::\+Libro}}
+\subsubsection{\texorpdfstring{escritura}{escritura}}
+{\footnotesize\ttfamily Semaphore pecl3ignacioriberasemaforos.\+Libro.\+escritura}
+
+\mbox{\Hypertarget{classpecl3ignacioriberasemaforos_1_1_libro_a126ba60cdc31f30cdf071606013951b7}\label{classpecl3ignacioriberasemaforos_1_1_libro_a126ba60cdc31f30cdf071606013951b7}} 
+\index{pecl3ignacioriberasemaforos\+::\+Libro@{pecl3ignacioriberasemaforos\+::\+Libro}!j\+Label\+Aux@{j\+Label\+Aux}}
+\index{j\+Label\+Aux@{j\+Label\+Aux}!pecl3ignacioriberasemaforos\+::\+Libro@{pecl3ignacioriberasemaforos\+::\+Libro}}
+\subsubsection{\texorpdfstring{j\+Label\+Aux}{jLabelAux}}
+{\footnotesize\ttfamily javax.\+swing.\+J\+Label pecl3ignacioriberasemaforos.\+Libro.\+j\+Label\+Aux\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classpecl3ignacioriberasemaforos_1_1_libro_ab049d0206067da023a6231357b7efc75}\label{classpecl3ignacioriberasemaforos_1_1_libro_ab049d0206067da023a6231357b7efc75}} 
+\index{pecl3ignacioriberasemaforos\+::\+Libro@{pecl3ignacioriberasemaforos\+::\+Libro}!j\+Text\+Area\+Aux@{j\+Text\+Area\+Aux}}
+\index{j\+Text\+Area\+Aux@{j\+Text\+Area\+Aux}!pecl3ignacioriberasemaforos\+::\+Libro@{pecl3ignacioriberasemaforos\+::\+Libro}}
+\subsubsection{\texorpdfstring{j\+Text\+Area\+Aux}{jTextAreaAux}}
+{\footnotesize\ttfamily javax.\+swing.\+J\+Text\+Area pecl3ignacioriberasemaforos.\+Libro.\+j\+Text\+Area\+Aux\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classpecl3ignacioriberasemaforos_1_1_libro_a4688b8afa2701493ac45bfbc35b1f8ca}\label{classpecl3ignacioriberasemaforos_1_1_libro_a4688b8afa2701493ac45bfbc35b1f8ca}} 
+\index{pecl3ignacioriberasemaforos\+::\+Libro@{pecl3ignacioriberasemaforos\+::\+Libro}!j\+Text\+Field\+Aux@{j\+Text\+Field\+Aux}}
+\index{j\+Text\+Field\+Aux@{j\+Text\+Field\+Aux}!pecl3ignacioriberasemaforos\+::\+Libro@{pecl3ignacioriberasemaforos\+::\+Libro}}
+\subsubsection{\texorpdfstring{j\+Text\+Field\+Aux}{jTextFieldAux}}
+{\footnotesize\ttfamily javax.\+swing.\+J\+Text\+Field pecl3ignacioriberasemaforos.\+Libro.\+j\+Text\+Field\+Aux\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classpecl3ignacioriberasemaforos_1_1_libro_a47b5756a2a1a97ad2a3c1d15996e7b63}\label{classpecl3ignacioriberasemaforos_1_1_libro_a47b5756a2a1a97ad2a3c1d15996e7b63}} 
+\index{pecl3ignacioriberasemaforos\+::\+Libro@{pecl3ignacioriberasemaforos\+::\+Libro}!lectores@{lectores}}
+\index{lectores@{lectores}!pecl3ignacioriberasemaforos\+::\+Libro@{pecl3ignacioriberasemaforos\+::\+Libro}}
+\subsubsection{\texorpdfstring{lectores}{lectores}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classpecl3ignacioriberasemaforos_1_1_monitor}{Monitor}} pecl3ignacioriberasemaforos.\+Libro.\+lectores}
+
+\mbox{\Hypertarget{classpecl3ignacioriberasemaforos_1_1_libro_a5b95dab8238745eb32f335c03f2d2dab}\label{classpecl3ignacioriberasemaforos_1_1_libro_a5b95dab8238745eb32f335c03f2d2dab}} 
+\index{pecl3ignacioriberasemaforos\+::\+Libro@{pecl3ignacioriberasemaforos\+::\+Libro}!lectura@{lectura}}
+\index{lectura@{lectura}!pecl3ignacioriberasemaforos\+::\+Libro@{pecl3ignacioriberasemaforos\+::\+Libro}}
+\subsubsection{\texorpdfstring{lectura}{lectura}}
+{\footnotesize\ttfamily Semaphore pecl3ignacioriberasemaforos.\+Libro.\+lectura}
+
+\mbox{\Hypertarget{classpecl3ignacioriberasemaforos_1_1_libro_ac3024d92434cf24e0ebf9eca9c91f86a}\label{classpecl3ignacioriberasemaforos_1_1_libro_ac3024d92434cf24e0ebf9eca9c91f86a}} 
+\index{pecl3ignacioriberasemaforos\+::\+Libro@{pecl3ignacioriberasemaforos\+::\+Libro}!leyendo@{leyendo}}
+\index{leyendo@{leyendo}!pecl3ignacioriberasemaforos\+::\+Libro@{pecl3ignacioriberasemaforos\+::\+Libro}}
+\subsubsection{\texorpdfstring{leyendo}{leyendo}}
+{\footnotesize\ttfamily boolean pecl3ignacioriberasemaforos.\+Libro.\+leyendo\mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classpecl3ignacioriberasemaforos_1_1_libro_ad4d82015922415d96864d1370a3af2c5}\label{classpecl3ignacioriberasemaforos_1_1_libro_ad4d82015922415d96864d1370a3af2c5}} 
+\index{pecl3ignacioriberasemaforos\+::\+Libro@{pecl3ignacioriberasemaforos\+::\+Libro}!numero\+Escritores@{numero\+Escritores}}
+\index{numero\+Escritores@{numero\+Escritores}!pecl3ignacioriberasemaforos\+::\+Libro@{pecl3ignacioriberasemaforos\+::\+Libro}}
+\subsubsection{\texorpdfstring{numero\+Escritores}{numeroEscritores}}
+{\footnotesize\ttfamily int pecl3ignacioriberasemaforos.\+Libro.\+numero\+Escritores\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classpecl3ignacioriberasemaforos_1_1_libro_aab14f16eb696d97ce1373e7325b61077}\label{classpecl3ignacioriberasemaforos_1_1_libro_aab14f16eb696d97ce1373e7325b61077}} 
+\index{pecl3ignacioriberasemaforos\+::\+Libro@{pecl3ignacioriberasemaforos\+::\+Libro}!numero\+Lectores@{numero\+Lectores}}
+\index{numero\+Lectores@{numero\+Lectores}!pecl3ignacioriberasemaforos\+::\+Libro@{pecl3ignacioriberasemaforos\+::\+Libro}}
+\subsubsection{\texorpdfstring{numero\+Lectores}{numeroLectores}}
+{\footnotesize\ttfamily int pecl3ignacioriberasemaforos.\+Libro.\+numero\+Lectores\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classpecl3ignacioriberasemaforos_1_1_libro_a3b3677781b08023845a9279e42d6e731}\label{classpecl3ignacioriberasemaforos_1_1_libro_a3b3677781b08023845a9279e42d6e731}} 
+\index{pecl3ignacioriberasemaforos\+::\+Libro@{pecl3ignacioriberasemaforos\+::\+Libro}!parar\+Escritores@{parar\+Escritores}}
+\index{parar\+Escritores@{parar\+Escritores}!pecl3ignacioriberasemaforos\+::\+Libro@{pecl3ignacioriberasemaforos\+::\+Libro}}
+\subsubsection{\texorpdfstring{parar\+Escritores}{pararEscritores}}
+{\footnotesize\ttfamily boolean pecl3ignacioriberasemaforos.\+Libro.\+parar\+Escritores\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classpecl3ignacioriberasemaforos_1_1_libro_af552bf9166c3f93d14f20bdaca4a0735}\label{classpecl3ignacioriberasemaforos_1_1_libro_af552bf9166c3f93d14f20bdaca4a0735}} 
+\index{pecl3ignacioriberasemaforos\+::\+Libro@{pecl3ignacioriberasemaforos\+::\+Libro}!parar\+Lectores@{parar\+Lectores}}
+\index{parar\+Lectores@{parar\+Lectores}!pecl3ignacioriberasemaforos\+::\+Libro@{pecl3ignacioriberasemaforos\+::\+Libro}}
+\subsubsection{\texorpdfstring{parar\+Lectores}{pararLectores}}
+{\footnotesize\ttfamily boolean pecl3ignacioriberasemaforos.\+Libro.\+parar\+Lectores\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classpecl3ignacioriberasemaforos_1_1_libro_a970295d15bdfebb950a6fca5c300562a}\label{classpecl3ignacioriberasemaforos_1_1_libro_a970295d15bdfebb950a6fca5c300562a}} 
+\index{pecl3ignacioriberasemaforos\+::\+Libro@{pecl3ignacioriberasemaforos\+::\+Libro}!turno\+Escribir@{turno\+Escribir}}
+\index{turno\+Escribir@{turno\+Escribir}!pecl3ignacioriberasemaforos\+::\+Libro@{pecl3ignacioriberasemaforos\+::\+Libro}}
+\subsubsection{\texorpdfstring{turno\+Escribir}{turnoEscribir}}
+{\footnotesize\ttfamily boolean pecl3ignacioriberasemaforos.\+Libro.\+turno\+Escribir\hspace{0.3cm}{\ttfamily [private]}}
+

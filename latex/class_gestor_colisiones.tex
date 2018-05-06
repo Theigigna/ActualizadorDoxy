@@ -1,0 +1,105 @@
+\hypertarget{class_gestor_colisiones}{}\section{Gestor\+Colisiones Class Reference}
+\label{class_gestor_colisiones}\index{Gestor\+Colisiones@{Gestor\+Colisiones}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_gestor_colisiones_ae0f419effcf9a15adad00cc36f792f5a}{Gestor\+Colisiones}} ()
+\item 
+void \mbox{\hyperlink{class_gestor_colisiones_aa507081e558aa27c6e9d7be44e2e620e}{registrar\+Cuerpo}} (\mbox{\hyperlink{interface_i_colisionable}{I\+Colisionable}} cuerpo)
+\item 
+void \mbox{\hyperlink{class_gestor_colisiones_acf5c4b8e58066b5e89c1ec9c16417acd}{anular\+Cuerpo}} (\mbox{\hyperlink{interface_i_colisionable}{I\+Colisionable}} cuerpo)
+\item 
+void \mbox{\hyperlink{class_gestor_colisiones_a9ac496985991a5271cf639db982e85f4}{comprobar\+Colisiones}} ()
+\item 
+void \mbox{\hyperlink{class_gestor_colisiones_a74fa3551ed7f8a2f8d045b8978953835}{buscar\+Colision}} (int i, int j)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Array\+List$<$ \mbox{\hyperlink{interface_i_colisionable}{I\+Colisionable}} $>$ \mbox{\hyperlink{class_gestor_colisiones_a549c1c33a353c2929b060fb9474e90ea}{lista}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_gestor_colisiones_ae0f419effcf9a15adad00cc36f792f5a}\label{class_gestor_colisiones_ae0f419effcf9a15adad00cc36f792f5a}} 
+\index{Gestor\+Colisiones@{Gestor\+Colisiones}!Gestor\+Colisiones@{Gestor\+Colisiones}}
+\index{Gestor\+Colisiones@{Gestor\+Colisiones}!Gestor\+Colisiones@{Gestor\+Colisiones}}
+\subsubsection{\texorpdfstring{Gestor\+Colisiones()}{GestorColisiones()}}
+{\footnotesize\ttfamily Gestor\+Colisiones.\+Gestor\+Colisiones (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+10                               \{
+11         \mbox{\hyperlink{class_gestor_colisiones_a549c1c33a353c2929b060fb9474e90ea}{lista}} = \textcolor{keyword}{new} ArrayList<>();
+12     \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_gestor_colisiones_acf5c4b8e58066b5e89c1ec9c16417acd}\label{class_gestor_colisiones_acf5c4b8e58066b5e89c1ec9c16417acd}} 
+\index{Gestor\+Colisiones@{Gestor\+Colisiones}!anular\+Cuerpo@{anular\+Cuerpo}}
+\index{anular\+Cuerpo@{anular\+Cuerpo}!Gestor\+Colisiones@{Gestor\+Colisiones}}
+\subsubsection{\texorpdfstring{anular\+Cuerpo()}{anularCuerpo()}}
+{\footnotesize\ttfamily void Gestor\+Colisiones.\+anular\+Cuerpo (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_i_colisionable}{I\+Colisionable}}}]{cuerpo }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+20                                                   \{
+21         \textcolor{keywordflow}{if}(\mbox{\hyperlink{class_gestor_colisiones_a549c1c33a353c2929b060fb9474e90ea}{lista}}.contains(cuerpo))\{
+22             \mbox{\hyperlink{class_gestor_colisiones_a549c1c33a353c2929b060fb9474e90ea}{lista}}.remove(cuerpo);
+23         \}
+24     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_gestor_colisiones_a74fa3551ed7f8a2f8d045b8978953835}\label{class_gestor_colisiones_a74fa3551ed7f8a2f8d045b8978953835}} 
+\index{Gestor\+Colisiones@{Gestor\+Colisiones}!buscar\+Colision@{buscar\+Colision}}
+\index{buscar\+Colision@{buscar\+Colision}!Gestor\+Colisiones@{Gestor\+Colisiones}}
+\subsubsection{\texorpdfstring{buscar\+Colision()}{buscarColision()}}
+{\footnotesize\ttfamily void Gestor\+Colisiones.\+buscar\+Colision (\begin{DoxyParamCaption}\item[{int}]{i,  }\item[{int}]{j }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+34                                             \{
+35         \textcolor{keywordflow}{if}(\mbox{\hyperlink{class_gestor_colisiones_a549c1c33a353c2929b060fb9474e90ea}{lista}}.get(i).getAreaColision().intersects((Rectangle2D) \mbox{\hyperlink{class_gestor_colisiones_a549c1c33a353c2929b060fb9474e90ea}{lista}}.get(i).getAreaColision()
+      ))\{
+36     \}
+37 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_gestor_colisiones_a9ac496985991a5271cf639db982e85f4}\label{class_gestor_colisiones_a9ac496985991a5271cf639db982e85f4}} 
+\index{Gestor\+Colisiones@{Gestor\+Colisiones}!comprobar\+Colisiones@{comprobar\+Colisiones}}
+\index{comprobar\+Colisiones@{comprobar\+Colisiones}!Gestor\+Colisiones@{Gestor\+Colisiones}}
+\subsubsection{\texorpdfstring{comprobar\+Colisiones()}{comprobarColisiones()}}
+{\footnotesize\ttfamily void Gestor\+Colisiones.\+comprobar\+Colisiones (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+26                                      \{
+27         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < \mbox{\hyperlink{class_gestor_colisiones_a549c1c33a353c2929b060fb9474e90ea}{lista}}.size(); i++) \{
+28             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} j = 0; j < \mbox{\hyperlink{class_gestor_colisiones_a549c1c33a353c2929b060fb9474e90ea}{lista}}.size(); j++) \{
+29                 \textcolor{keywordflow}{if}(i!=j)\mbox{\hyperlink{class_gestor_colisiones_a74fa3551ed7f8a2f8d045b8978953835}{buscarColision}}(i, j);
+30             \}
+31         \}
+32     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_gestor_colisiones_aa507081e558aa27c6e9d7be44e2e620e}\label{class_gestor_colisiones_aa507081e558aa27c6e9d7be44e2e620e}} 
+\index{Gestor\+Colisiones@{Gestor\+Colisiones}!registrar\+Cuerpo@{registrar\+Cuerpo}}
+\index{registrar\+Cuerpo@{registrar\+Cuerpo}!Gestor\+Colisiones@{Gestor\+Colisiones}}
+\subsubsection{\texorpdfstring{registrar\+Cuerpo()}{registrarCuerpo()}}
+{\footnotesize\ttfamily void Gestor\+Colisiones.\+registrar\+Cuerpo (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_i_colisionable}{I\+Colisionable}}}]{cuerpo }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+14                                                      \{
+15         \textcolor{keywordflow}{if}(!\mbox{\hyperlink{class_gestor_colisiones_a549c1c33a353c2929b060fb9474e90ea}{lista}}.contains(cuerpo))\{
+16             \mbox{\hyperlink{class_gestor_colisiones_a549c1c33a353c2929b060fb9474e90ea}{lista}}.add(cuerpo);
+17         \}
+18     \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_gestor_colisiones_a549c1c33a353c2929b060fb9474e90ea}\label{class_gestor_colisiones_a549c1c33a353c2929b060fb9474e90ea}} 
+\index{Gestor\+Colisiones@{Gestor\+Colisiones}!lista@{lista}}
+\index{lista@{lista}!Gestor\+Colisiones@{Gestor\+Colisiones}}
+\subsubsection{\texorpdfstring{lista}{lista}}
+{\footnotesize\ttfamily Array\+List$<$\mbox{\hyperlink{interface_i_colisionable}{I\+Colisionable}}$>$ Gestor\+Colisiones.\+lista\hspace{0.3cm}{\ttfamily [private]}}
+

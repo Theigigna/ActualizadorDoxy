@@ -1,0 +1,40 @@
+\hypertarget{classtemmie_1_1_temmie}{}\section{temmie.\+Temmie Class Reference}
+\label{classtemmie_1_1_temmie}\index{temmie.\+Temmie@{temmie.\+Temmie}}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{classtemmie_1_1_temmie_a582f80ec0be1b0cf0d81ea9a8fa36709}{main}} (String\mbox{[}$\,$\mbox{]} args)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyAuthor}{Author}
+Beatriz 
+\end{DoxyAuthor}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classtemmie_1_1_temmie_a582f80ec0be1b0cf0d81ea9a8fa36709}\label{classtemmie_1_1_temmie_a582f80ec0be1b0cf0d81ea9a8fa36709}} 
+\index{temmie\+::\+Temmie@{temmie\+::\+Temmie}!main@{main}}
+\index{main@{main}!temmie\+::\+Temmie@{temmie\+::\+Temmie}}
+\subsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily static void temmie.\+Temmie.\+main (\begin{DoxyParamCaption}\item[{String \mbox{[}$\,$\mbox{]}}]{args }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em args} & the command line arguments \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+12                                            \{
+13         tEMtHREAD temmieQueen = \textcolor{keyword}{new} tEMtHREAD(1);
+14         System.out.println(\textcolor{stringliteral}{"HOI! wELCOM... TO TEM PROGAM!!!"});
+15         temmieQueen.start();
+16         \textcolor{keywordflow}{try}\{
+17             temmieQueen.join();
+18         \}\textcolor{keywordflow}{catch} (InterruptedException e)\{
+19             System.out.println(\textcolor{stringliteral}{"NOT CUTE!!!"});
+20         \}
+21     \}
+\end{DoxyCode}

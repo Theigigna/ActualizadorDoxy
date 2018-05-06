@@ -1,0 +1,26 @@
+var classorg_1_1newdawn_1_1slick_1_1svg_1_1_non_geometric_data =
+[
+    [ "NonGeometricData", "classorg_1_1newdawn_1_1slick_1_1svg_1_1_non_geometric_data.html#a4349e32bb3c859d2a19dca9a941f75af", null ],
+    [ "addAttribute", "classorg_1_1newdawn_1_1slick_1_1svg_1_1_non_geometric_data.html#adfa186ba29a3db6f3210a861e5e55a45", null ],
+    [ "getAsColor", "classorg_1_1newdawn_1_1slick_1_1svg_1_1_non_geometric_data.html#a68187f6636101be64001bc748c04ef44", null ],
+    [ "getAsFloat", "classorg_1_1newdawn_1_1slick_1_1svg_1_1_non_geometric_data.html#a67a551dc7a2ce368d247d0db71dadf05", null ],
+    [ "getAsReference", "classorg_1_1newdawn_1_1slick_1_1svg_1_1_non_geometric_data.html#a7b5d3b3acd6be8061d53de032c9d5817", null ],
+    [ "getAttribute", "classorg_1_1newdawn_1_1slick_1_1svg_1_1_non_geometric_data.html#af14f4628737e3da9379ac25e0a56a92d", null ],
+    [ "getMetaData", "classorg_1_1newdawn_1_1slick_1_1svg_1_1_non_geometric_data.html#ad054d28cdc3c4070707e0b92b3e5ed0a", null ],
+    [ "isColor", "classorg_1_1newdawn_1_1slick_1_1svg_1_1_non_geometric_data.html#a3712fb62547b297f7d08259682fc2d90", null ],
+    [ "isFilled", "classorg_1_1newdawn_1_1slick_1_1svg_1_1_non_geometric_data.html#a9196c42840196638b0a4b694c09cd238", null ],
+    [ "isStroked", "classorg_1_1newdawn_1_1slick_1_1svg_1_1_non_geometric_data.html#a5d09ec586ae4d082566bfe815b6e41c7", null ],
+    [ "morphColor", "classorg_1_1newdawn_1_1slick_1_1svg_1_1_non_geometric_data.html#a5f09ddab2253b5bb0c3bca43b6407d41", null ],
+    [ "FILL", "classorg_1_1newdawn_1_1slick_1_1svg_1_1_non_geometric_data.html#a100ce60b2b8dec195850716cbf3aa500", null ],
+    [ "ID", "classorg_1_1newdawn_1_1slick_1_1svg_1_1_non_geometric_data.html#a3f699c855d9a2180a283ec410dda57ea", null ],
+    [ "metaData", "classorg_1_1newdawn_1_1slick_1_1svg_1_1_non_geometric_data.html#ab9720408fbd609767acb6528999a3f8d", null ],
+    [ "NONE", "classorg_1_1newdawn_1_1slick_1_1svg_1_1_non_geometric_data.html#a1b7889bd7fd378ea138023d10e1e8319", null ],
+    [ "OPACITY", "classorg_1_1newdawn_1_1slick_1_1svg_1_1_non_geometric_data.html#aa346daf50205f575a71994c28744d1d5", null ],
+    [ "props", "classorg_1_1newdawn_1_1slick_1_1svg_1_1_non_geometric_data.html#a75a905ff1c7bf271e32602cdc7f06191", null ],
+    [ "STROKE", "classorg_1_1newdawn_1_1slick_1_1svg_1_1_non_geometric_data.html#a2e4170b7a30903a3789bae566a1604e4", null ],
+    [ "STROKE_DASHARRAY", "classorg_1_1newdawn_1_1slick_1_1svg_1_1_non_geometric_data.html#a64ec4437b422a0496f04e1b1dfb57dbf", null ],
+    [ "STROKE_DASHOFFSET", "classorg_1_1newdawn_1_1slick_1_1svg_1_1_non_geometric_data.html#a70f8c97ab9dda4e75b436c0f198a296e", null ],
+    [ "STROKE_MITERLIMIT", "classorg_1_1newdawn_1_1slick_1_1svg_1_1_non_geometric_data.html#ac2f315f5dce4ec7d367105e0211776d5", null ],
+    [ "STROKE_OPACITY", "classorg_1_1newdawn_1_1slick_1_1svg_1_1_non_geometric_data.html#a5afeda15ca92e26fb0016871030ec9f6", null ],
+    [ "STROKE_WIDTH", "classorg_1_1newdawn_1_1slick_1_1svg_1_1_non_geometric_data.html#abe7b202a653bece82879b8108bc608bd", null ]
+];

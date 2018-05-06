@@ -1,0 +1,66 @@
+\hypertarget{classorg_1_1newdawn_1_1slick_1_1util_1_1xml_1_1_slick_x_m_l_exception}{}\section{org.\+newdawn.\+slick.\+util.\+xml.\+Slick\+X\+M\+L\+Exception Class Reference}
+\label{classorg_1_1newdawn_1_1slick_1_1util_1_1xml_1_1_slick_x_m_l_exception}\index{org.\+newdawn.\+slick.\+util.\+xml.\+Slick\+X\+M\+L\+Exception@{org.\+newdawn.\+slick.\+util.\+xml.\+Slick\+X\+M\+L\+Exception}}
+Inheritance diagram for org.\+newdawn.\+slick.\+util.\+xml.\+Slick\+X\+M\+L\+Exception\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classorg_1_1newdawn_1_1slick_1_1util_1_1xml_1_1_slick_x_m_l_exception}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1xml_1_1_slick_x_m_l_exception_a93f0c85d9af4cd046362723d699a767b}{Slick\+X\+M\+L\+Exception}} (String message)
+\item 
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1xml_1_1_slick_x_m_l_exception_a5f09e980539440e9cd943915340a3ade}{Slick\+X\+M\+L\+Exception}} (String message, Throwable e)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+An exception to describe failures in X\+ML. Made a special case because with X\+ML to object parsing you might want to handle it differently
+
+\begin{DoxyAuthor}{Author}
+kevin 
+\end{DoxyAuthor}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1util_1_1xml_1_1_slick_x_m_l_exception_a93f0c85d9af4cd046362723d699a767b}\label{classorg_1_1newdawn_1_1slick_1_1util_1_1xml_1_1_slick_x_m_l_exception_a93f0c85d9af4cd046362723d699a767b}} 
+\index{org\+::newdawn\+::slick\+::util\+::xml\+::\+Slick\+X\+M\+L\+Exception@{org\+::newdawn\+::slick\+::util\+::xml\+::\+Slick\+X\+M\+L\+Exception}!Slick\+X\+M\+L\+Exception@{Slick\+X\+M\+L\+Exception}}
+\index{Slick\+X\+M\+L\+Exception@{Slick\+X\+M\+L\+Exception}!org\+::newdawn\+::slick\+::util\+::xml\+::\+Slick\+X\+M\+L\+Exception@{org\+::newdawn\+::slick\+::util\+::xml\+::\+Slick\+X\+M\+L\+Exception}}
+\subsubsection{\texorpdfstring{Slick\+X\+M\+L\+Exception()}{SlickXMLException()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily org.\+newdawn.\+slick.\+util.\+xml.\+Slick\+X\+M\+L\+Exception.\+Slick\+X\+M\+L\+Exception (\begin{DoxyParamCaption}\item[{String}]{message }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Create a new exception
+
+
+\begin{DoxyParams}{Parameters}
+{\em message} & The message describing the failure \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+18                                              \{
+19         super(message);
+20     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1util_1_1xml_1_1_slick_x_m_l_exception_a5f09e980539440e9cd943915340a3ade}\label{classorg_1_1newdawn_1_1slick_1_1util_1_1xml_1_1_slick_x_m_l_exception_a5f09e980539440e9cd943915340a3ade}} 
+\index{org\+::newdawn\+::slick\+::util\+::xml\+::\+Slick\+X\+M\+L\+Exception@{org\+::newdawn\+::slick\+::util\+::xml\+::\+Slick\+X\+M\+L\+Exception}!Slick\+X\+M\+L\+Exception@{Slick\+X\+M\+L\+Exception}}
+\index{Slick\+X\+M\+L\+Exception@{Slick\+X\+M\+L\+Exception}!org\+::newdawn\+::slick\+::util\+::xml\+::\+Slick\+X\+M\+L\+Exception@{org\+::newdawn\+::slick\+::util\+::xml\+::\+Slick\+X\+M\+L\+Exception}}
+\subsubsection{\texorpdfstring{Slick\+X\+M\+L\+Exception()}{SlickXMLException()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily org.\+newdawn.\+slick.\+util.\+xml.\+Slick\+X\+M\+L\+Exception.\+Slick\+X\+M\+L\+Exception (\begin{DoxyParamCaption}\item[{String}]{message,  }\item[{Throwable}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Create a new exception
+
+
+\begin{DoxyParams}{Parameters}
+{\em message} & The message describing the failure \\
+\hline
+{\em e} & The exception causing this failure \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+28                                                           \{
+29         super(message, e);
+30     \}
+\end{DoxyCode}

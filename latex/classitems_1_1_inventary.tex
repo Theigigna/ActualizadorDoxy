@@ -1,0 +1,323 @@
+\hypertarget{classitems_1_1_inventary}{}\section{items.\+Inventary Class Reference}
+\label{classitems_1_1_inventary}\index{items.\+Inventary@{items.\+Inventary}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classitems_1_1_inventary_a375b341c9d44109ab5170722c5a614ee}{Inventary}} ()
+\item 
+void \mbox{\hyperlink{classitems_1_1_inventary_acbe2d05e6721de48084dbdf279cfccfd}{add\+Weapon}} (\mbox{\hyperlink{classitems_1_1_weapon_item}{Weapon\+Item}} w)
+\item 
+boolean \mbox{\hyperlink{classitems_1_1_inventary_ab729ee27d843b475311e4738a39782cf}{add\+Potion}} (\mbox{\hyperlink{classitems_1_1_potion}{Potion}} p)
+\item 
+Integer \mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classitems_1_1_inventary_a296224dd144bd2e6c11d7024d73767c3}{contar\+Potions}} ()
+\item 
+void \mbox{\hyperlink{classitems_1_1_inventary_a41de26269c15ca5a9ecac80c89f2454c}{set\+Weapon1}} (\mbox{\hyperlink{classitems_1_1_weapon_item}{Weapon\+Item}} \mbox{\hyperlink{classitems_1_1_inventary_ad16ddfb714d749294e1fe64841ca9074}{weapon1}})
+\item 
+void \mbox{\hyperlink{classitems_1_1_inventary_a920b6b914a6a972f6aeb92f5799755b9}{set\+Weapon\+Aux}} (\mbox{\hyperlink{classitems_1_1_weapon_item}{Weapon\+Item}} \mbox{\hyperlink{classitems_1_1_inventary_a1f8cf512e097112b449136da9c6670b7}{weapon\+Aux}})
+\item 
+\mbox{\hyperlink{classitems_1_1_weapon_item}{Weapon\+Item}} \mbox{\hyperlink{classitems_1_1_inventary_a250533cf9b23d61ec3489446538e38d1}{get\+Weapon1}} ()
+\item 
+\mbox{\hyperlink{classitems_1_1_weapon_item}{Weapon\+Item}} \mbox{\hyperlink{classitems_1_1_inventary_aaae786de7d4cb302e79c5f549fd2b608}{get\+Weapon\+Aux}} ()
+\item 
+void \mbox{\hyperlink{classitems_1_1_inventary_aa690ec2080d618693b97a6a27246098b}{Swap\+Weapons}} ()
+\item 
+Array\+List$<$ \mbox{\hyperlink{classitems_1_1_potion}{Potion}} $>$ \mbox{\hyperlink{classitems_1_1_inventary_af31e133ffd38797c19c417526304fec7}{get\+Potions}} ()
+\item 
+void \mbox{\hyperlink{classitems_1_1_inventary_a9d214c7fe7f1c10fc4d036676f1860a4}{set\+Potions}} (Array\+List$<$ \mbox{\hyperlink{classitems_1_1_potion}{Potion}} $>$ \mbox{\hyperlink{classitems_1_1_inventary_afa542455e08a2cc05377133889b7b091}{potions}})
+\item 
+boolean \mbox{\hyperlink{classitems_1_1_inventary_a16f2878bacc73497112aaadb1befef1c}{use\+Health\+Potion}} (\mbox{\hyperlink{classentities_1_1_subject}{Subject}} s)
+\item 
+boolean \mbox{\hyperlink{classitems_1_1_inventary_ac1eb691e8eacc5e30ae323ed5517af89}{use\+Speed\+Potion}} (\mbox{\hyperlink{classentities_1_1_subject}{Subject}} s)
+\item 
+boolean \mbox{\hyperlink{classitems_1_1_inventary_a648ae01539c92790718993880a097e55}{use\+Damage\+Potion}} (\mbox{\hyperlink{classentities_1_1_subject}{Subject}} s)
+\item 
+boolean \mbox{\hyperlink{classitems_1_1_inventary_a0465268c54df439b77684c86a07d3049}{use\+Sleep\+Potion}} (\mbox{\hyperlink{classentities_1_1_subject}{Subject}} s)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static final int \mbox{\hyperlink{classitems_1_1_inventary_abaf12a4cf7de3bd0ca1131e43800e2bb}{M\+A\+X\+\_\+\+P\+O\+T\+I\+O\+NS}} = 20
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classitems_1_1_weapon_item}{Weapon\+Item}} \mbox{\hyperlink{classitems_1_1_inventary_ad16ddfb714d749294e1fe64841ca9074}{weapon1}}
+\item 
+\mbox{\hyperlink{classitems_1_1_weapon_item}{Weapon\+Item}} \mbox{\hyperlink{classitems_1_1_inventary_a1f8cf512e097112b449136da9c6670b7}{weapon\+Aux}}
+\item 
+Array\+List$<$ \mbox{\hyperlink{classitems_1_1_potion}{Potion}} $>$ \mbox{\hyperlink{classitems_1_1_inventary_afa542455e08a2cc05377133889b7b091}{potions}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classitems_1_1_inventary_a375b341c9d44109ab5170722c5a614ee}\label{classitems_1_1_inventary_a375b341c9d44109ab5170722c5a614ee}} 
+\index{items\+::\+Inventary@{items\+::\+Inventary}!Inventary@{Inventary}}
+\index{Inventary@{Inventary}!items\+::\+Inventary@{items\+::\+Inventary}}
+\subsubsection{\texorpdfstring{Inventary()}{Inventary()}}
+{\footnotesize\ttfamily items.\+Inventary.\+Inventary (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+24                        \{
+25         \mbox{\hyperlink{classitems_1_1_inventary_ad16ddfb714d749294e1fe64841ca9074}{weapon1}} = null;
+26         \mbox{\hyperlink{classitems_1_1_inventary_a1f8cf512e097112b449136da9c6670b7}{weaponAux}} = null;
+27         \mbox{\hyperlink{classitems_1_1_inventary_afa542455e08a2cc05377133889b7b091}{potions}} = \textcolor{keyword}{new} ArrayList();
+28         
+29         \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i=0;i<3;i++)\{
+30             \textcolor{keywordflow}{try} \{
+31                 \mbox{\hyperlink{classitems_1_1_inventary_ab729ee27d843b475311e4738a39782cf}{addPotion}}(\textcolor{keyword}{new} HealthPotion(1));
+32                 \mbox{\hyperlink{classitems_1_1_inventary_ab729ee27d843b475311e4738a39782cf}{addPotion}}(\textcolor{keyword}{new} SpeedPotion(1));
+33                 \mbox{\hyperlink{classitems_1_1_inventary_ab729ee27d843b475311e4738a39782cf}{addPotion}}(\textcolor{keyword}{new} DamagePotion(1));
+34             \} \textcolor{keywordflow}{catch} (SlickException ex) \{
+35                 Logger.getLogger(\mbox{\hyperlink{classitems_1_1_inventary_a375b341c9d44109ab5170722c5a614ee}{Inventary}}.class.getName()).log(Level.SEVERE, null, ex);
+36             \}
+37         \}
+38 
+39     \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classitems_1_1_inventary_ab729ee27d843b475311e4738a39782cf}\label{classitems_1_1_inventary_ab729ee27d843b475311e4738a39782cf}} 
+\index{items\+::\+Inventary@{items\+::\+Inventary}!add\+Potion@{add\+Potion}}
+\index{add\+Potion@{add\+Potion}!items\+::\+Inventary@{items\+::\+Inventary}}
+\subsubsection{\texorpdfstring{add\+Potion()}{addPotion()}}
+{\footnotesize\ttfamily boolean items.\+Inventary.\+add\+Potion (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classitems_1_1_potion}{Potion}}}]{p }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+43                                   \{
+44     \textcolor{keywordflow}{if}(\mbox{\hyperlink{classitems_1_1_inventary_afa542455e08a2cc05377133889b7b091}{potions}}.size()<\mbox{\hyperlink{classitems_1_1_inventary_abaf12a4cf7de3bd0ca1131e43800e2bb}{MAX\_POTIONS}})\{
+45         \textcolor{keywordflow}{return} \mbox{\hyperlink{classitems_1_1_inventary_afa542455e08a2cc05377133889b7b091}{potions}}.add(p);
+46     \}\textcolor{keywordflow}{else}\{
+47         \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+48     \}   
+49 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classitems_1_1_inventary_acbe2d05e6721de48084dbdf279cfccfd}\label{classitems_1_1_inventary_acbe2d05e6721de48084dbdf279cfccfd}} 
+\index{items\+::\+Inventary@{items\+::\+Inventary}!add\+Weapon@{add\+Weapon}}
+\index{add\+Weapon@{add\+Weapon}!items\+::\+Inventary@{items\+::\+Inventary}}
+\subsubsection{\texorpdfstring{add\+Weapon()}{addWeapon()}}
+{\footnotesize\ttfamily void items.\+Inventary.\+add\+Weapon (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classitems_1_1_weapon_item}{Weapon\+Item}}}]{w }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+40                                            \{
+41             \mbox{\hyperlink{classitems_1_1_inventary_a1f8cf512e097112b449136da9c6670b7}{weaponAux}}=w;
+42         \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classitems_1_1_inventary_a296224dd144bd2e6c11d7024d73767c3}\label{classitems_1_1_inventary_a296224dd144bd2e6c11d7024d73767c3}} 
+\index{items\+::\+Inventary@{items\+::\+Inventary}!contar\+Potions@{contar\+Potions}}
+\index{contar\+Potions@{contar\+Potions}!items\+::\+Inventary@{items\+::\+Inventary}}
+\subsubsection{\texorpdfstring{contar\+Potions()}{contarPotions()}}
+{\footnotesize\ttfamily Integer \mbox{[}$\,$\mbox{]} items.\+Inventary.\+contar\+Potions (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+50                                      \{
+51         \textcolor{keywordtype}{int} i;
+52         Integer aux[] = \textcolor{keyword}{new} Integer[3];
+53 
+54         \textcolor{keywordflow}{for} (i = 0; i < 3; i++) \{
+55             aux[i] = 0;
+56         \}
+57 
+58         \textcolor{keywordflow}{for} (Potion p : \mbox{\hyperlink{classitems_1_1_inventary_afa542455e08a2cc05377133889b7b091}{potions}}) \{
+59 
+60             aux[p.getType()]++;
+61 
+62         \}
+63 
+64         \textcolor{keywordflow}{return} aux;
+65     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classitems_1_1_inventary_af31e133ffd38797c19c417526304fec7}\label{classitems_1_1_inventary_af31e133ffd38797c19c417526304fec7}} 
+\index{items\+::\+Inventary@{items\+::\+Inventary}!get\+Potions@{get\+Potions}}
+\index{get\+Potions@{get\+Potions}!items\+::\+Inventary@{items\+::\+Inventary}}
+\subsubsection{\texorpdfstring{get\+Potions()}{getPotions()}}
+{\footnotesize\ttfamily Array\+List$<$\mbox{\hyperlink{classitems_1_1_potion}{Potion}}$>$ items.\+Inventary.\+get\+Potions (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+90                                           \{
+91         \textcolor{keywordflow}{return} \mbox{\hyperlink{classitems_1_1_inventary_afa542455e08a2cc05377133889b7b091}{potions}};
+92     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classitems_1_1_inventary_a250533cf9b23d61ec3489446538e38d1}\label{classitems_1_1_inventary_a250533cf9b23d61ec3489446538e38d1}} 
+\index{items\+::\+Inventary@{items\+::\+Inventary}!get\+Weapon1@{get\+Weapon1}}
+\index{get\+Weapon1@{get\+Weapon1}!items\+::\+Inventary@{items\+::\+Inventary}}
+\subsubsection{\texorpdfstring{get\+Weapon1()}{getWeapon1()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classitems_1_1_weapon_item}{Weapon\+Item}} items.\+Inventary.\+get\+Weapon1 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+75                                    \{
+76         \textcolor{keywordflow}{return} \mbox{\hyperlink{classitems_1_1_inventary_ad16ddfb714d749294e1fe64841ca9074}{weapon1}};
+77     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classitems_1_1_inventary_aaae786de7d4cb302e79c5f549fd2b608}\label{classitems_1_1_inventary_aaae786de7d4cb302e79c5f549fd2b608}} 
+\index{items\+::\+Inventary@{items\+::\+Inventary}!get\+Weapon\+Aux@{get\+Weapon\+Aux}}
+\index{get\+Weapon\+Aux@{get\+Weapon\+Aux}!items\+::\+Inventary@{items\+::\+Inventary}}
+\subsubsection{\texorpdfstring{get\+Weapon\+Aux()}{getWeaponAux()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classitems_1_1_weapon_item}{Weapon\+Item}} items.\+Inventary.\+get\+Weapon\+Aux (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+79                                      \{
+80         \textcolor{keywordflow}{return} \mbox{\hyperlink{classitems_1_1_inventary_a1f8cf512e097112b449136da9c6670b7}{weaponAux}};
+81     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classitems_1_1_inventary_a9d214c7fe7f1c10fc4d036676f1860a4}\label{classitems_1_1_inventary_a9d214c7fe7f1c10fc4d036676f1860a4}} 
+\index{items\+::\+Inventary@{items\+::\+Inventary}!set\+Potions@{set\+Potions}}
+\index{set\+Potions@{set\+Potions}!items\+::\+Inventary@{items\+::\+Inventary}}
+\subsubsection{\texorpdfstring{set\+Potions()}{setPotions()}}
+{\footnotesize\ttfamily void items.\+Inventary.\+set\+Potions (\begin{DoxyParamCaption}\item[{Array\+List$<$ \mbox{\hyperlink{classitems_1_1_potion}{Potion}} $>$}]{potions }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+94                                                       \{
+95         this.\mbox{\hyperlink{classitems_1_1_inventary_afa542455e08a2cc05377133889b7b091}{potions}} = \mbox{\hyperlink{classitems_1_1_inventary_afa542455e08a2cc05377133889b7b091}{potions}};
+96     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classitems_1_1_inventary_a41de26269c15ca5a9ecac80c89f2454c}\label{classitems_1_1_inventary_a41de26269c15ca5a9ecac80c89f2454c}} 
+\index{items\+::\+Inventary@{items\+::\+Inventary}!set\+Weapon1@{set\+Weapon1}}
+\index{set\+Weapon1@{set\+Weapon1}!items\+::\+Inventary@{items\+::\+Inventary}}
+\subsubsection{\texorpdfstring{set\+Weapon1()}{setWeapon1()}}
+{\footnotesize\ttfamily void items.\+Inventary.\+set\+Weapon1 (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classitems_1_1_weapon_item}{Weapon\+Item}}}]{weapon1 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+67                                                \{
+68         this.\mbox{\hyperlink{classitems_1_1_inventary_ad16ddfb714d749294e1fe64841ca9074}{weapon1}} = \mbox{\hyperlink{classitems_1_1_inventary_ad16ddfb714d749294e1fe64841ca9074}{weapon1}};
+69     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classitems_1_1_inventary_a920b6b914a6a972f6aeb92f5799755b9}\label{classitems_1_1_inventary_a920b6b914a6a972f6aeb92f5799755b9}} 
+\index{items\+::\+Inventary@{items\+::\+Inventary}!set\+Weapon\+Aux@{set\+Weapon\+Aux}}
+\index{set\+Weapon\+Aux@{set\+Weapon\+Aux}!items\+::\+Inventary@{items\+::\+Inventary}}
+\subsubsection{\texorpdfstring{set\+Weapon\+Aux()}{setWeaponAux()}}
+{\footnotesize\ttfamily void items.\+Inventary.\+set\+Weapon\+Aux (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classitems_1_1_weapon_item}{Weapon\+Item}}}]{weapon\+Aux }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+71                                                    \{
+72         this.\mbox{\hyperlink{classitems_1_1_inventary_a1f8cf512e097112b449136da9c6670b7}{weaponAux}} = \mbox{\hyperlink{classitems_1_1_inventary_a1f8cf512e097112b449136da9c6670b7}{weaponAux}};
+73     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classitems_1_1_inventary_aa690ec2080d618693b97a6a27246098b}\label{classitems_1_1_inventary_aa690ec2080d618693b97a6a27246098b}} 
+\index{items\+::\+Inventary@{items\+::\+Inventary}!Swap\+Weapons@{Swap\+Weapons}}
+\index{Swap\+Weapons@{Swap\+Weapons}!items\+::\+Inventary@{items\+::\+Inventary}}
+\subsubsection{\texorpdfstring{Swap\+Weapons()}{SwapWeapons()}}
+{\footnotesize\ttfamily void items.\+Inventary.\+Swap\+Weapons (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+83                               \{
+84         WeaponItem aux;
+85         aux = \mbox{\hyperlink{classitems_1_1_inventary_ad16ddfb714d749294e1fe64841ca9074}{weapon1}};
+86         \mbox{\hyperlink{classitems_1_1_inventary_ad16ddfb714d749294e1fe64841ca9074}{weapon1}} = \mbox{\hyperlink{classitems_1_1_inventary_a1f8cf512e097112b449136da9c6670b7}{weaponAux}};
+87         \mbox{\hyperlink{classitems_1_1_inventary_a1f8cf512e097112b449136da9c6670b7}{weaponAux}} = aux;
+88     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classitems_1_1_inventary_a648ae01539c92790718993880a097e55}\label{classitems_1_1_inventary_a648ae01539c92790718993880a097e55}} 
+\index{items\+::\+Inventary@{items\+::\+Inventary}!use\+Damage\+Potion@{use\+Damage\+Potion}}
+\index{use\+Damage\+Potion@{use\+Damage\+Potion}!items\+::\+Inventary@{items\+::\+Inventary}}
+\subsubsection{\texorpdfstring{use\+Damage\+Potion()}{useDamagePotion()}}
+{\footnotesize\ttfamily boolean items.\+Inventary.\+use\+Damage\+Potion (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classentities_1_1_subject}{Subject}}}]{s }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+120                                               \{
+121         \textcolor{keywordflow}{for} (Potion p : \mbox{\hyperlink{classitems_1_1_inventary_afa542455e08a2cc05377133889b7b091}{potions}}) \{
+122             \textcolor{keywordflow}{if} (p instanceof DamagePotion) \{
+123                 ((DamagePotion) p).use(s);
+124                 \mbox{\hyperlink{classitems_1_1_inventary_afa542455e08a2cc05377133889b7b091}{potions}}.remove(p);
+125                 \textcolor{keywordflow}{return} \textcolor{keyword}{true};
+126             \}
+127         \}
+128         \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+129     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classitems_1_1_inventary_a16f2878bacc73497112aaadb1befef1c}\label{classitems_1_1_inventary_a16f2878bacc73497112aaadb1befef1c}} 
+\index{items\+::\+Inventary@{items\+::\+Inventary}!use\+Health\+Potion@{use\+Health\+Potion}}
+\index{use\+Health\+Potion@{use\+Health\+Potion}!items\+::\+Inventary@{items\+::\+Inventary}}
+\subsubsection{\texorpdfstring{use\+Health\+Potion()}{useHealthPotion()}}
+{\footnotesize\ttfamily boolean items.\+Inventary.\+use\+Health\+Potion (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classentities_1_1_subject}{Subject}}}]{s }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+98                                               \{
+99         \textcolor{keywordflow}{for} (Potion p : \mbox{\hyperlink{classitems_1_1_inventary_afa542455e08a2cc05377133889b7b091}{potions}}) \{
+100             \textcolor{keywordflow}{if} (p instanceof HealthPotion) \{
+101                 ((HealthPotion) p).use(s);
+102                 \mbox{\hyperlink{classitems_1_1_inventary_afa542455e08a2cc05377133889b7b091}{potions}}.remove(p);
+103                 \textcolor{keywordflow}{return} \textcolor{keyword}{true};
+104             \}
+105         \}
+106         \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+107     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classitems_1_1_inventary_a0465268c54df439b77684c86a07d3049}\label{classitems_1_1_inventary_a0465268c54df439b77684c86a07d3049}} 
+\index{items\+::\+Inventary@{items\+::\+Inventary}!use\+Sleep\+Potion@{use\+Sleep\+Potion}}
+\index{use\+Sleep\+Potion@{use\+Sleep\+Potion}!items\+::\+Inventary@{items\+::\+Inventary}}
+\subsubsection{\texorpdfstring{use\+Sleep\+Potion()}{useSleepPotion()}}
+{\footnotesize\ttfamily boolean items.\+Inventary.\+use\+Sleep\+Potion (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classentities_1_1_subject}{Subject}}}]{s }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+131                                              \{
+132         \textcolor{keywordflow}{for} (Potion p : \mbox{\hyperlink{classitems_1_1_inventary_afa542455e08a2cc05377133889b7b091}{potions}}) \{
+133             \textcolor{keywordflow}{if} (p instanceof SpeedPotion) \{
+134                 ((SpeedPotion) p).use(s);
+135                 \mbox{\hyperlink{classitems_1_1_inventary_afa542455e08a2cc05377133889b7b091}{potions}}.remove(p);
+136                 \textcolor{keywordflow}{return} \textcolor{keyword}{true};
+137             \}
+138         \}
+139         \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+140     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classitems_1_1_inventary_ac1eb691e8eacc5e30ae323ed5517af89}\label{classitems_1_1_inventary_ac1eb691e8eacc5e30ae323ed5517af89}} 
+\index{items\+::\+Inventary@{items\+::\+Inventary}!use\+Speed\+Potion@{use\+Speed\+Potion}}
+\index{use\+Speed\+Potion@{use\+Speed\+Potion}!items\+::\+Inventary@{items\+::\+Inventary}}
+\subsubsection{\texorpdfstring{use\+Speed\+Potion()}{useSpeedPotion()}}
+{\footnotesize\ttfamily boolean items.\+Inventary.\+use\+Speed\+Potion (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classentities_1_1_subject}{Subject}}}]{s }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+109                                              \{
+110         \textcolor{keywordflow}{for} (Potion p : \mbox{\hyperlink{classitems_1_1_inventary_afa542455e08a2cc05377133889b7b091}{potions}}) \{
+111             \textcolor{keywordflow}{if} (p instanceof SpeedPotion) \{
+112                 ((SpeedPotion) p).use(s);
+113                 \mbox{\hyperlink{classitems_1_1_inventary_afa542455e08a2cc05377133889b7b091}{potions}}.remove(p);
+114                 \textcolor{keywordflow}{return} \textcolor{keyword}{true};
+115             \}
+116         \}
+117         \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+118     \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classitems_1_1_inventary_abaf12a4cf7de3bd0ca1131e43800e2bb}\label{classitems_1_1_inventary_abaf12a4cf7de3bd0ca1131e43800e2bb}} 
+\index{items\+::\+Inventary@{items\+::\+Inventary}!M\+A\+X\+\_\+\+P\+O\+T\+I\+O\+NS@{M\+A\+X\+\_\+\+P\+O\+T\+I\+O\+NS}}
+\index{M\+A\+X\+\_\+\+P\+O\+T\+I\+O\+NS@{M\+A\+X\+\_\+\+P\+O\+T\+I\+O\+NS}!items\+::\+Inventary@{items\+::\+Inventary}}
+\subsubsection{\texorpdfstring{M\+A\+X\+\_\+\+P\+O\+T\+I\+O\+NS}{MAX\_POTIONS}}
+{\footnotesize\ttfamily final int items.\+Inventary.\+M\+A\+X\+\_\+\+P\+O\+T\+I\+O\+NS = 20\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classitems_1_1_inventary_afa542455e08a2cc05377133889b7b091}\label{classitems_1_1_inventary_afa542455e08a2cc05377133889b7b091}} 
+\index{items\+::\+Inventary@{items\+::\+Inventary}!potions@{potions}}
+\index{potions@{potions}!items\+::\+Inventary@{items\+::\+Inventary}}
+\subsubsection{\texorpdfstring{potions}{potions}}
+{\footnotesize\ttfamily Array\+List$<$\mbox{\hyperlink{classitems_1_1_potion}{Potion}}$>$ items.\+Inventary.\+potions\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classitems_1_1_inventary_ad16ddfb714d749294e1fe64841ca9074}\label{classitems_1_1_inventary_ad16ddfb714d749294e1fe64841ca9074}} 
+\index{items\+::\+Inventary@{items\+::\+Inventary}!weapon1@{weapon1}}
+\index{weapon1@{weapon1}!items\+::\+Inventary@{items\+::\+Inventary}}
+\subsubsection{\texorpdfstring{weapon1}{weapon1}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classitems_1_1_weapon_item}{Weapon\+Item}} items.\+Inventary.\+weapon1\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classitems_1_1_inventary_a1f8cf512e097112b449136da9c6670b7}\label{classitems_1_1_inventary_a1f8cf512e097112b449136da9c6670b7}} 
+\index{items\+::\+Inventary@{items\+::\+Inventary}!weapon\+Aux@{weapon\+Aux}}
+\index{weapon\+Aux@{weapon\+Aux}!items\+::\+Inventary@{items\+::\+Inventary}}
+\subsubsection{\texorpdfstring{weapon\+Aux}{weaponAux}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classitems_1_1_weapon_item}{Weapon\+Item}} items.\+Inventary.\+weapon\+Aux\hspace{0.3cm}{\ttfamily [private]}}
+

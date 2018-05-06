@@ -1,0 +1,352 @@
+\hypertarget{classorg_1_1newdawn_1_1slick_1_1gui_1_1_abstract_component}{}\section{org.\+newdawn.\+slick.\+gui.\+Abstract\+Component Class Reference}
+\label{classorg_1_1newdawn_1_1slick_1_1gui_1_1_abstract_component}\index{org.\+newdawn.\+slick.\+gui.\+Abstract\+Component@{org.\+newdawn.\+slick.\+gui.\+Abstract\+Component}}
+Inheritance diagram for org.\+newdawn.\+slick.\+gui.\+Abstract\+Component\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.226415cm]{classorg_1_1newdawn_1_1slick_1_1gui_1_1_abstract_component}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1gui_1_1_abstract_component_a8ee8763659ee9d2ac917601c98dfe907}{Abstract\+Component}} (\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1gui_1_1_g_u_i_context}{G\+U\+I\+Context}} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1gui_1_1_abstract_component_af6d1abaa24da0b9a06fb153722e15435}{container}})
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1gui_1_1_abstract_component_aa3bc3dddf346a26d8e26555106f2bae6}{add\+Listener}} (\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1gui_1_1_component_listener}{Component\+Listener}} listener)
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1gui_1_1_abstract_component_a263171ae72ff34fc5c17c8dd3bbf178a}{remove\+Listener}} (\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1gui_1_1_component_listener}{Component\+Listener}} listener)
+\item 
+abstract void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1gui_1_1_abstract_component_af2f66829fb28f1c9f27acfc6f1be2445}{render}} (\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1gui_1_1_g_u_i_context}{G\+U\+I\+Context}} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1gui_1_1_abstract_component_af6d1abaa24da0b9a06fb153722e15435}{container}}, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_graphics}{Graphics}} g)  throws Slick\+Exception
+\item 
+abstract void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1gui_1_1_abstract_component_a2cc82d8f8d0fddc059af2e60853f085a}{set\+Location}} (int x, int y)
+\item 
+abstract int \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1gui_1_1_abstract_component_a9b0ebb0eb32e92db4475960bb5ceec19}{getX}} ()
+\item 
+abstract int \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1gui_1_1_abstract_component_aaae887135b1574e5b9bb73ee867c2244}{getY}} ()
+\item 
+abstract int \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1gui_1_1_abstract_component_ab09e022b383b64e6b82dd03525a7efc9}{get\+Width}} ()
+\item 
+abstract int \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1gui_1_1_abstract_component_aa0963ca601fb01163572a9b3e05afd00}{get\+Height}} ()
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1gui_1_1_abstract_component_a92a19e06c7872abfb02d7e6625f449eb}{set\+Focus}} (boolean \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1gui_1_1_abstract_component_a9a7b67f481728081895d167e792aaa74}{focus}})
+\item 
+boolean \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1gui_1_1_abstract_component_a9dc45673bb368814f9e48ea846953abd}{has\+Focus}} ()
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1gui_1_1_abstract_component_a70585519bb21610b43de4743366732f5}{mouse\+Released}} (int button, int x, int y)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1gui_1_1_abstract_component_a949d3e24f0b4fa639c92efef6db3dcc7}{notify\+Listeners}} ()
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1gui_1_1_abstract_component_a76fb8b7de47e5ed6129010ad3d6e748d}{consume\+Event}} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1gui_1_1_g_u_i_context}{G\+U\+I\+Context}} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1gui_1_1_abstract_component_af6d1abaa24da0b9a06fb153722e15435}{container}}
+\item 
+Set \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1gui_1_1_abstract_component_a7cec595b9b830ed15376739af35a1492}{listeners}}
+\item 
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_input}{Input}} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1gui_1_1_abstract_component_a06d7d458d50451485923e23c7d9d2b60}{input}}
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+boolean \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1gui_1_1_abstract_component_a9a7b67f481728081895d167e792aaa74}{focus}} = false
+\end{DoxyCompactItemize}
+\subsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1gui_1_1_abstract_component}{Abstract\+Component}} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1gui_1_1_abstract_component_aa30f22e9d9dc79cef2e36d40a4435f0e}{current\+Focus}} = null
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The utility class to handle all the input related gubbins for basic G\+UI components
+
+\begin{DoxyAuthor}{Author}
+kevin 
+\end{DoxyAuthor}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1gui_1_1_abstract_component_a8ee8763659ee9d2ac917601c98dfe907}\label{classorg_1_1newdawn_1_1slick_1_1gui_1_1_abstract_component_a8ee8763659ee9d2ac917601c98dfe907}} 
+\index{org\+::newdawn\+::slick\+::gui\+::\+Abstract\+Component@{org\+::newdawn\+::slick\+::gui\+::\+Abstract\+Component}!Abstract\+Component@{Abstract\+Component}}
+\index{Abstract\+Component@{Abstract\+Component}!org\+::newdawn\+::slick\+::gui\+::\+Abstract\+Component@{org\+::newdawn\+::slick\+::gui\+::\+Abstract\+Component}}
+\subsubsection{\texorpdfstring{Abstract\+Component()}{AbstractComponent()}}
+{\footnotesize\ttfamily org.\+newdawn.\+slick.\+gui.\+Abstract\+Component.\+Abstract\+Component (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1gui_1_1_g_u_i_context}{G\+U\+I\+Context}}}]{container }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Create a new component
+
+
+\begin{DoxyParams}{Parameters}
+{\em container} & The container displaying this component \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+41                                                    \{
+42         this.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1gui_1_1_abstract_component_af6d1abaa24da0b9a06fb153722e15435}{container}} = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1gui_1_1_abstract_component_af6d1abaa24da0b9a06fb153722e15435}{container}};
+43 
+44         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1gui_1_1_abstract_component_a7cec595b9b830ed15376739af35a1492}{listeners}} = \textcolor{keyword}{new} HashSet();
+45 
+46         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1gui_1_1_abstract_component_a06d7d458d50451485923e23c7d9d2b60}{input}} = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1gui_1_1_abstract_component_af6d1abaa24da0b9a06fb153722e15435}{container}}.\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1gui_1_1_g_u_i_context_a716423197d42cf412e98f2650603914f}{getInput}}();
+47         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1gui_1_1_abstract_component_a06d7d458d50451485923e23c7d9d2b60}{input}}.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_input_a939b8b7b6b5b5f84a2d0bd96fb26ecdb}{addPrimaryListener}}(\textcolor{keyword}{this});
+48 
+49         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1gui_1_1_abstract_component_a2cc82d8f8d0fddc059af2e60853f085a}{setLocation}}(0, 0);
+50     \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1gui_1_1_abstract_component_aa3bc3dddf346a26d8e26555106f2bae6}\label{classorg_1_1newdawn_1_1slick_1_1gui_1_1_abstract_component_aa3bc3dddf346a26d8e26555106f2bae6}} 
+\index{org\+::newdawn\+::slick\+::gui\+::\+Abstract\+Component@{org\+::newdawn\+::slick\+::gui\+::\+Abstract\+Component}!add\+Listener@{add\+Listener}}
+\index{add\+Listener@{add\+Listener}!org\+::newdawn\+::slick\+::gui\+::\+Abstract\+Component@{org\+::newdawn\+::slick\+::gui\+::\+Abstract\+Component}}
+\subsubsection{\texorpdfstring{add\+Listener()}{addListener()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+gui.\+Abstract\+Component.\+add\+Listener (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1gui_1_1_component_listener}{Component\+Listener}}}]{listener }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Add a component listener to be informed when the component sees fit.
+
+It will ignore listeners already added.
+
+
+\begin{DoxyParams}{Parameters}
+{\em listener} & listener \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+60                                                         \{
+61         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1gui_1_1_abstract_component_a7cec595b9b830ed15376739af35a1492}{listeners}}.add(listener);
+62     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1gui_1_1_abstract_component_a76fb8b7de47e5ed6129010ad3d6e748d}\label{classorg_1_1newdawn_1_1slick_1_1gui_1_1_abstract_component_a76fb8b7de47e5ed6129010ad3d6e748d}} 
+\index{org\+::newdawn\+::slick\+::gui\+::\+Abstract\+Component@{org\+::newdawn\+::slick\+::gui\+::\+Abstract\+Component}!consume\+Event@{consume\+Event}}
+\index{consume\+Event@{consume\+Event}!org\+::newdawn\+::slick\+::gui\+::\+Abstract\+Component@{org\+::newdawn\+::slick\+::gui\+::\+Abstract\+Component}}
+\subsubsection{\texorpdfstring{consume\+Event()}{consumeEvent()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+gui.\+Abstract\+Component.\+consume\+Event (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+Consume the event currently being processed 
+\begin{DoxyCode}
+169                                   \{
+170         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1gui_1_1_abstract_component_a06d7d458d50451485923e23c7d9d2b60}{input}}.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_input_a03ef6ccfdd2aed8c0d25111b1d310a40}{consumeEvent}}();
+171     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1gui_1_1_abstract_component_aa0963ca601fb01163572a9b3e05afd00}\label{classorg_1_1newdawn_1_1slick_1_1gui_1_1_abstract_component_aa0963ca601fb01163572a9b3e05afd00}} 
+\index{org\+::newdawn\+::slick\+::gui\+::\+Abstract\+Component@{org\+::newdawn\+::slick\+::gui\+::\+Abstract\+Component}!get\+Height@{get\+Height}}
+\index{get\+Height@{get\+Height}!org\+::newdawn\+::slick\+::gui\+::\+Abstract\+Component@{org\+::newdawn\+::slick\+::gui\+::\+Abstract\+Component}}
+\subsubsection{\texorpdfstring{get\+Height()}{getHeight()}}
+{\footnotesize\ttfamily abstract int org.\+newdawn.\+slick.\+gui.\+Abstract\+Component.\+get\+Height (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}}
+
+Get the height of the component
+
+\begin{DoxyReturn}{Returns}
+The height of the component 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1gui_1_1_abstract_component_ab09e022b383b64e6b82dd03525a7efc9}\label{classorg_1_1newdawn_1_1slick_1_1gui_1_1_abstract_component_ab09e022b383b64e6b82dd03525a7efc9}} 
+\index{org\+::newdawn\+::slick\+::gui\+::\+Abstract\+Component@{org\+::newdawn\+::slick\+::gui\+::\+Abstract\+Component}!get\+Width@{get\+Width}}
+\index{get\+Width@{get\+Width}!org\+::newdawn\+::slick\+::gui\+::\+Abstract\+Component@{org\+::newdawn\+::slick\+::gui\+::\+Abstract\+Component}}
+\subsubsection{\texorpdfstring{get\+Width()}{getWidth()}}
+{\footnotesize\ttfamily abstract int org.\+newdawn.\+slick.\+gui.\+Abstract\+Component.\+get\+Width (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}}
+
+Get the width of the component
+
+\begin{DoxyReturn}{Returns}
+The width of the component 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1gui_1_1_abstract_component_a9b0ebb0eb32e92db4475960bb5ceec19}\label{classorg_1_1newdawn_1_1slick_1_1gui_1_1_abstract_component_a9b0ebb0eb32e92db4475960bb5ceec19}} 
+\index{org\+::newdawn\+::slick\+::gui\+::\+Abstract\+Component@{org\+::newdawn\+::slick\+::gui\+::\+Abstract\+Component}!getX@{getX}}
+\index{getX@{getX}!org\+::newdawn\+::slick\+::gui\+::\+Abstract\+Component@{org\+::newdawn\+::slick\+::gui\+::\+Abstract\+Component}}
+\subsubsection{\texorpdfstring{get\+X()}{getX()}}
+{\footnotesize\ttfamily abstract int org.\+newdawn.\+slick.\+gui.\+Abstract\+Component.\+getX (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}}
+
+Returns the position in the X coordinate
+
+\begin{DoxyReturn}{Returns}
+x 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1gui_1_1_abstract_component_aaae887135b1574e5b9bb73ee867c2244}\label{classorg_1_1newdawn_1_1slick_1_1gui_1_1_abstract_component_aaae887135b1574e5b9bb73ee867c2244}} 
+\index{org\+::newdawn\+::slick\+::gui\+::\+Abstract\+Component@{org\+::newdawn\+::slick\+::gui\+::\+Abstract\+Component}!getY@{getY}}
+\index{getY@{getY}!org\+::newdawn\+::slick\+::gui\+::\+Abstract\+Component@{org\+::newdawn\+::slick\+::gui\+::\+Abstract\+Component}}
+\subsubsection{\texorpdfstring{get\+Y()}{getY()}}
+{\footnotesize\ttfamily abstract int org.\+newdawn.\+slick.\+gui.\+Abstract\+Component.\+getY (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}}
+
+Returns the position in the Y coordinate
+
+\begin{DoxyReturn}{Returns}
+y 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1gui_1_1_abstract_component_a9dc45673bb368814f9e48ea846953abd}\label{classorg_1_1newdawn_1_1slick_1_1gui_1_1_abstract_component_a9dc45673bb368814f9e48ea846953abd}} 
+\index{org\+::newdawn\+::slick\+::gui\+::\+Abstract\+Component@{org\+::newdawn\+::slick\+::gui\+::\+Abstract\+Component}!has\+Focus@{has\+Focus}}
+\index{has\+Focus@{has\+Focus}!org\+::newdawn\+::slick\+::gui\+::\+Abstract\+Component@{org\+::newdawn\+::slick\+::gui\+::\+Abstract\+Component}}
+\subsubsection{\texorpdfstring{has\+Focus()}{hasFocus()}}
+{\footnotesize\ttfamily boolean org.\+newdawn.\+slick.\+gui.\+Abstract\+Component.\+has\+Focus (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Check if this component currently has focus
+
+\begin{DoxyReturn}{Returns}
+if this field currently has focus 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+162                               \{
+163         \textcolor{keywordflow}{return} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1gui_1_1_abstract_component_a9a7b67f481728081895d167e792aaa74}{focus}};
+164     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1gui_1_1_abstract_component_a70585519bb21610b43de4743366732f5}\label{classorg_1_1newdawn_1_1slick_1_1gui_1_1_abstract_component_a70585519bb21610b43de4743366732f5}} 
+\index{org\+::newdawn\+::slick\+::gui\+::\+Abstract\+Component@{org\+::newdawn\+::slick\+::gui\+::\+Abstract\+Component}!mouse\+Released@{mouse\+Released}}
+\index{mouse\+Released@{mouse\+Released}!org\+::newdawn\+::slick\+::gui\+::\+Abstract\+Component@{org\+::newdawn\+::slick\+::gui\+::\+Abstract\+Component}}
+\subsubsection{\texorpdfstring{mouse\+Released()}{mouseReleased()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+gui.\+Abstract\+Component.\+mouse\+Released (\begin{DoxyParamCaption}\item[{int}]{button,  }\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Gives the focus to this component with a click of the mouse.
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1gui_1_1_abstract_component_a70585519bb21610b43de4743366732f5}{org.\+newdawn.\+slick.\+gui.\+Abstract\+Component\+::mouse\+Released(int, int, int)}} 
+\end{DoxySeeAlso}
+
+
+Implements \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1_mouse_listener_a8d1606869f610664f9299565067d5571}{org.\+newdawn.\+slick.\+Mouse\+Listener}}.
+
+
+\begin{DoxyCode}
+178                                                         \{
+179         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1gui_1_1_abstract_component_a92a19e06c7872abfb02d7e6625f449eb}{setFocus}}(Rectangle.contains(x, y, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1gui_1_1_abstract_component_a9b0ebb0eb32e92db4475960bb5ceec19}{getX}}(), \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1gui_1_1_abstract_component_aaae887135b1574e5b9bb73ee867c2244}{getY}}(), 
+      \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1gui_1_1_abstract_component_ab09e022b383b64e6b82dd03525a7efc9}{getWidth}}(),
+180                 \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1gui_1_1_abstract_component_aa0963ca601fb01163572a9b3e05afd00}{getHeight}}()));
+181     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1gui_1_1_abstract_component_a949d3e24f0b4fa639c92efef6db3dcc7}\label{classorg_1_1newdawn_1_1slick_1_1gui_1_1_abstract_component_a949d3e24f0b4fa639c92efef6db3dcc7}} 
+\index{org\+::newdawn\+::slick\+::gui\+::\+Abstract\+Component@{org\+::newdawn\+::slick\+::gui\+::\+Abstract\+Component}!notify\+Listeners@{notify\+Listeners}}
+\index{notify\+Listeners@{notify\+Listeners}!org\+::newdawn\+::slick\+::gui\+::\+Abstract\+Component@{org\+::newdawn\+::slick\+::gui\+::\+Abstract\+Component}}
+\subsubsection{\texorpdfstring{notify\+Listeners()}{notifyListeners()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+gui.\+Abstract\+Component.\+notify\+Listeners (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+Notify all the listeners. 
+\begin{DoxyCode}
+79                                      \{
+80         Iterator it = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1gui_1_1_abstract_component_a7cec595b9b830ed15376739af35a1492}{listeners}}.iterator();
+81         \textcolor{keywordflow}{while} (it.hasNext()) \{
+82             ((ComponentListener) it.next()).componentActivated(\textcolor{keyword}{this});
+83         \}
+84     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1gui_1_1_abstract_component_a263171ae72ff34fc5c17c8dd3bbf178a}\label{classorg_1_1newdawn_1_1slick_1_1gui_1_1_abstract_component_a263171ae72ff34fc5c17c8dd3bbf178a}} 
+\index{org\+::newdawn\+::slick\+::gui\+::\+Abstract\+Component@{org\+::newdawn\+::slick\+::gui\+::\+Abstract\+Component}!remove\+Listener@{remove\+Listener}}
+\index{remove\+Listener@{remove\+Listener}!org\+::newdawn\+::slick\+::gui\+::\+Abstract\+Component@{org\+::newdawn\+::slick\+::gui\+::\+Abstract\+Component}}
+\subsubsection{\texorpdfstring{remove\+Listener()}{removeListener()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+gui.\+Abstract\+Component.\+remove\+Listener (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1gui_1_1_component_listener}{Component\+Listener}}}]{listener }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Remove a component listener.
+
+It will ignore if the listener wasn\textquotesingle{}t added.
+
+
+\begin{DoxyParams}{Parameters}
+{\em listener} & listener \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+72                                                            \{
+73         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1gui_1_1_abstract_component_a7cec595b9b830ed15376739af35a1492}{listeners}}.remove(listener);
+74     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1gui_1_1_abstract_component_af2f66829fb28f1c9f27acfc6f1be2445}\label{classorg_1_1newdawn_1_1slick_1_1gui_1_1_abstract_component_af2f66829fb28f1c9f27acfc6f1be2445}} 
+\index{org\+::newdawn\+::slick\+::gui\+::\+Abstract\+Component@{org\+::newdawn\+::slick\+::gui\+::\+Abstract\+Component}!render@{render}}
+\index{render@{render}!org\+::newdawn\+::slick\+::gui\+::\+Abstract\+Component@{org\+::newdawn\+::slick\+::gui\+::\+Abstract\+Component}}
+\subsubsection{\texorpdfstring{render()}{render()}}
+{\footnotesize\ttfamily abstract void org.\+newdawn.\+slick.\+gui.\+Abstract\+Component.\+render (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1gui_1_1_g_u_i_context}{G\+U\+I\+Context}}}]{container,  }\item[{\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_graphics}{Graphics}}}]{g }\end{DoxyParamCaption}) throws \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_slick_exception}{Slick\+Exception}}\hspace{0.3cm}{\ttfamily [abstract]}}
+
+Render this component to the screen
+
+
+\begin{DoxyParams}{Parameters}
+{\em container} & The container displaying this component \\
+\hline
+{\em g} & The graphics context used to render to the display \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_slick_exception}{Slick\+Exception}}} & If there has been an error rendering the component \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1gui_1_1_abstract_component_a92a19e06c7872abfb02d7e6625f449eb}\label{classorg_1_1newdawn_1_1slick_1_1gui_1_1_abstract_component_a92a19e06c7872abfb02d7e6625f449eb}} 
+\index{org\+::newdawn\+::slick\+::gui\+::\+Abstract\+Component@{org\+::newdawn\+::slick\+::gui\+::\+Abstract\+Component}!set\+Focus@{set\+Focus}}
+\index{set\+Focus@{set\+Focus}!org\+::newdawn\+::slick\+::gui\+::\+Abstract\+Component@{org\+::newdawn\+::slick\+::gui\+::\+Abstract\+Component}}
+\subsubsection{\texorpdfstring{set\+Focus()}{setFocus()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+gui.\+Abstract\+Component.\+set\+Focus (\begin{DoxyParamCaption}\item[{boolean}]{focus }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Indicate whether this component should be focused or not
+
+
+\begin{DoxyParams}{Parameters}
+{\em focus} & if the component should be focused \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+143                                         \{
+144         \textcolor{keywordflow}{if} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1gui_1_1_abstract_component_a9a7b67f481728081895d167e792aaa74}{focus}}) \{
+145             \textcolor{keywordflow}{if} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1gui_1_1_abstract_component_aa30f22e9d9dc79cef2e36d40a4435f0e}{currentFocus}} != null) \{
+146                 \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1gui_1_1_abstract_component_aa30f22e9d9dc79cef2e36d40a4435f0e}{currentFocus}}.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1gui_1_1_abstract_component_a92a19e06c7872abfb02d7e6625f449eb}{setFocus}}(\textcolor{keyword}{false});
+147             \}
+148             \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1gui_1_1_abstract_component_aa30f22e9d9dc79cef2e36d40a4435f0e}{currentFocus}} = \textcolor{keyword}{this};
+149         \} \textcolor{keywordflow}{else} \{
+150             \textcolor{keywordflow}{if} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1gui_1_1_abstract_component_aa30f22e9d9dc79cef2e36d40a4435f0e}{currentFocus}} == \textcolor{keyword}{this}) \{
+151                 \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1gui_1_1_abstract_component_aa30f22e9d9dc79cef2e36d40a4435f0e}{currentFocus}} = null;
+152             \}
+153         \}
+154         this.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1gui_1_1_abstract_component_a9a7b67f481728081895d167e792aaa74}{focus}} = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1gui_1_1_abstract_component_a9a7b67f481728081895d167e792aaa74}{focus}};
+155     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1gui_1_1_abstract_component_a2cc82d8f8d0fddc059af2e60853f085a}\label{classorg_1_1newdawn_1_1slick_1_1gui_1_1_abstract_component_a2cc82d8f8d0fddc059af2e60853f085a}} 
+\index{org\+::newdawn\+::slick\+::gui\+::\+Abstract\+Component@{org\+::newdawn\+::slick\+::gui\+::\+Abstract\+Component}!set\+Location@{set\+Location}}
+\index{set\+Location@{set\+Location}!org\+::newdawn\+::slick\+::gui\+::\+Abstract\+Component@{org\+::newdawn\+::slick\+::gui\+::\+Abstract\+Component}}
+\subsubsection{\texorpdfstring{set\+Location()}{setLocation()}}
+{\footnotesize\ttfamily abstract void org.\+newdawn.\+slick.\+gui.\+Abstract\+Component.\+set\+Location (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}}
+
+Moves the component.
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & X coordinate \\
+\hline
+{\em y} & Y coordinate \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1gui_1_1_abstract_component_af6d1abaa24da0b9a06fb153722e15435}\label{classorg_1_1newdawn_1_1slick_1_1gui_1_1_abstract_component_af6d1abaa24da0b9a06fb153722e15435}} 
+\index{org\+::newdawn\+::slick\+::gui\+::\+Abstract\+Component@{org\+::newdawn\+::slick\+::gui\+::\+Abstract\+Component}!container@{container}}
+\index{container@{container}!org\+::newdawn\+::slick\+::gui\+::\+Abstract\+Component@{org\+::newdawn\+::slick\+::gui\+::\+Abstract\+Component}}
+\subsubsection{\texorpdfstring{container}{container}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1gui_1_1_g_u_i_context}{G\+U\+I\+Context}} org.\+newdawn.\+slick.\+gui.\+Abstract\+Component.\+container\hspace{0.3cm}{\ttfamily [protected]}}
+
+The game container \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1gui_1_1_abstract_component_aa30f22e9d9dc79cef2e36d40a4435f0e}\label{classorg_1_1newdawn_1_1slick_1_1gui_1_1_abstract_component_aa30f22e9d9dc79cef2e36d40a4435f0e}} 
+\index{org\+::newdawn\+::slick\+::gui\+::\+Abstract\+Component@{org\+::newdawn\+::slick\+::gui\+::\+Abstract\+Component}!current\+Focus@{current\+Focus}}
+\index{current\+Focus@{current\+Focus}!org\+::newdawn\+::slick\+::gui\+::\+Abstract\+Component@{org\+::newdawn\+::slick\+::gui\+::\+Abstract\+Component}}
+\subsubsection{\texorpdfstring{current\+Focus}{currentFocus}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1gui_1_1_abstract_component}{Abstract\+Component}} org.\+newdawn.\+slick.\+gui.\+Abstract\+Component.\+current\+Focus = null\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+The component that currently has focus \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1gui_1_1_abstract_component_a9a7b67f481728081895d167e792aaa74}\label{classorg_1_1newdawn_1_1slick_1_1gui_1_1_abstract_component_a9a7b67f481728081895d167e792aaa74}} 
+\index{org\+::newdawn\+::slick\+::gui\+::\+Abstract\+Component@{org\+::newdawn\+::slick\+::gui\+::\+Abstract\+Component}!focus@{focus}}
+\index{focus@{focus}!org\+::newdawn\+::slick\+::gui\+::\+Abstract\+Component@{org\+::newdawn\+::slick\+::gui\+::\+Abstract\+Component}}
+\subsubsection{\texorpdfstring{focus}{focus}}
+{\footnotesize\ttfamily boolean org.\+newdawn.\+slick.\+gui.\+Abstract\+Component.\+focus = false\hspace{0.3cm}{\ttfamily [private]}}
+
+True if this component currently has focus \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1gui_1_1_abstract_component_a06d7d458d50451485923e23c7d9d2b60}\label{classorg_1_1newdawn_1_1slick_1_1gui_1_1_abstract_component_a06d7d458d50451485923e23c7d9d2b60}} 
+\index{org\+::newdawn\+::slick\+::gui\+::\+Abstract\+Component@{org\+::newdawn\+::slick\+::gui\+::\+Abstract\+Component}!input@{input}}
+\index{input@{input}!org\+::newdawn\+::slick\+::gui\+::\+Abstract\+Component@{org\+::newdawn\+::slick\+::gui\+::\+Abstract\+Component}}
+\subsubsection{\texorpdfstring{input}{input}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_input}{Input}} org.\+newdawn.\+slick.\+gui.\+Abstract\+Component.\+input\hspace{0.3cm}{\ttfamily [protected]}}
+
+The input we\textquotesingle{}re responding to \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1gui_1_1_abstract_component_a7cec595b9b830ed15376739af35a1492}\label{classorg_1_1newdawn_1_1slick_1_1gui_1_1_abstract_component_a7cec595b9b830ed15376739af35a1492}} 
+\index{org\+::newdawn\+::slick\+::gui\+::\+Abstract\+Component@{org\+::newdawn\+::slick\+::gui\+::\+Abstract\+Component}!listeners@{listeners}}
+\index{listeners@{listeners}!org\+::newdawn\+::slick\+::gui\+::\+Abstract\+Component@{org\+::newdawn\+::slick\+::gui\+::\+Abstract\+Component}}
+\subsubsection{\texorpdfstring{listeners}{listeners}}
+{\footnotesize\ttfamily Set org.\+newdawn.\+slick.\+gui.\+Abstract\+Component.\+listeners\hspace{0.3cm}{\ttfamily [protected]}}
+
+Listeners for the component to notify 

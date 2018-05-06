@@ -1,0 +1,457 @@
+\hypertarget{classcms_1_1_c_m_s}{}\section{cms.\+C\+MS Class Reference}
+\label{classcms_1_1_c_m_s}\index{cms.\+C\+MS@{cms.\+C\+MS}}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{classcms_1_1_c_m_s_a5c480aa2373ca60f78bcdf467c09d1d9}{main}} (String\mbox{[}$\,$\mbox{]} args)  throws I\+O\+Exception 
+\item 
+static void \mbox{\hyperlink{classcms_1_1_c_m_s_a8c344bccd734ba0a3dbadb99d2fcbed1}{logger}} ()  throws I\+O\+Exception
+\item 
+static void \mbox{\hyperlink{classcms_1_1_c_m_s_a3256378f3b9ccd38f1db10ee80daf9f3}{menu}} ()
+\item 
+static String \mbox{\hyperlink{classcms_1_1_c_m_s_ad13be0e97a0bb295dcedd134942a79b4}{receiver}} ()  throws I\+O\+Exception
+\item 
+static Connection \mbox{\hyperlink{classcms_1_1_c_m_s_ae70f453d4704bfb9d89ddc637c52dc30}{get\+Connection}} ()
+\item 
+static void \mbox{\hyperlink{classcms_1_1_c_m_s_a8f49d9319782a9aa839dd78bb30315cf}{close\+Connection}} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static Connection \mbox{\hyperlink{classcms_1_1_c_m_s_afc28cfd2c4356509b85775219b7b1e05}{connection}} = null
+\end{DoxyCompactItemize}
+\subsection*{Static Package Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static String \mbox{\hyperlink{classcms_1_1_c_m_s_acce8f8027f3a43eabae951ddf2a9c5d9}{usr}} =null
+\end{DoxyCompactItemize}
+\subsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static String \mbox{\hyperlink{classcms_1_1_c_m_s_a84681758bb3035a56a9bf541f47a6964}{psw}} =null
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyAuthor}{Author}
+Bruce Wayne 
+\end{DoxyAuthor}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classcms_1_1_c_m_s_a8f49d9319782a9aa839dd78bb30315cf}\label{classcms_1_1_c_m_s_a8f49d9319782a9aa839dd78bb30315cf}} 
+\index{cms\+::\+C\+MS@{cms\+::\+C\+MS}!close\+Connection@{close\+Connection}}
+\index{close\+Connection@{close\+Connection}!cms\+::\+C\+MS@{cms\+::\+C\+MS}}
+\subsubsection{\texorpdfstring{close\+Connection()}{closeConnection()}}
+{\footnotesize\ttfamily static void cms.\+C\+M\+S.\+close\+Connection (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+\begin{DoxyCode}
+348                                         \{
+349         \textcolor{keywordflow}{try} \{
+350               \textcolor{keywordflow}{if} (\mbox{\hyperlink{classcms_1_1_c_m_s_afc28cfd2c4356509b85775219b7b1e05}{connection}} != null) \{
+351                   \mbox{\hyperlink{classcms_1_1_c_m_s_afc28cfd2c4356509b85775219b7b1e05}{connection}}.close();
+352               \}
+353             \} \textcolor{keywordflow}{catch} (Exception e) \{ 
+354 
+355             \}
+356     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classcms_1_1_c_m_s_ae70f453d4704bfb9d89ddc637c52dc30}\label{classcms_1_1_c_m_s_ae70f453d4704bfb9d89ddc637c52dc30}} 
+\index{cms\+::\+C\+MS@{cms\+::\+C\+MS}!get\+Connection@{get\+Connection}}
+\index{get\+Connection@{get\+Connection}!cms\+::\+C\+MS@{cms\+::\+C\+MS}}
+\subsubsection{\texorpdfstring{get\+Connection()}{getConnection()}}
+{\footnotesize\ttfamily static Connection cms.\+C\+M\+S.\+get\+Connection (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+\begin{DoxyCode}
+330                                             \{
+331         \textcolor{keywordflow}{try} \{
+332             Class.forName(\textcolor{stringliteral}{"com.mysql.jdbc.Driver"});
+333             \textcolor{keywordflow}{if}(\mbox{\hyperlink{classcms_1_1_c_m_s_afc28cfd2c4356509b85775219b7b1e05}{connection}} == null)
+334                 \mbox{\hyperlink{classcms_1_1_c_m_s_afc28cfd2c4356509b85775219b7b1e05}{connection}} = DriverManager.getConnection(\textcolor{stringliteral}{"jdbc:mysql://localhost/CMS?user="}+
+      \mbox{\hyperlink{classcms_1_1_c_m_s_acce8f8027f3a43eabae951ddf2a9c5d9}{usr}}+\textcolor{stringliteral}{"&password="}+\mbox{\hyperlink{classcms_1_1_c_m_s_a84681758bb3035a56a9bf541f47a6964}{psw}});
+335  
+336         \} \textcolor{keywordflow}{catch} (ClassNotFoundException e) \{
+337  
+338             e.printStackTrace();
+339              
+340         \} \textcolor{keywordflow}{catch} (SQLException e) \{
+341              
+342             e.printStackTrace();
+343              
+344         \}
+345         \textcolor{keywordflow}{return} \mbox{\hyperlink{classcms_1_1_c_m_s_afc28cfd2c4356509b85775219b7b1e05}{connection}};
+346     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classcms_1_1_c_m_s_a8c344bccd734ba0a3dbadb99d2fcbed1}\label{classcms_1_1_c_m_s_a8c344bccd734ba0a3dbadb99d2fcbed1}} 
+\index{cms\+::\+C\+MS@{cms\+::\+C\+MS}!logger@{logger}}
+\index{logger@{logger}!cms\+::\+C\+MS@{cms\+::\+C\+MS}}
+\subsubsection{\texorpdfstring{logger()}{logger()}}
+{\footnotesize\ttfamily static void cms.\+C\+M\+S.\+logger (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws I\+O\+Exception\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+\begin{DoxyCode}
+305                                                   \{
+306         System.out.println(\textcolor{stringliteral}{"\(\backslash\)t*-*-*-*-*Loggin System CMS*-*-*-*-*"});
+307         System.out.print(\textcolor{stringliteral}{"User: "});
+308         \mbox{\hyperlink{classcms_1_1_c_m_s_acce8f8027f3a43eabae951ddf2a9c5d9}{usr}} = \mbox{\hyperlink{classcms_1_1_c_m_s_ad13be0e97a0bb295dcedd134942a79b4}{receiver}}();
+309         System.out.print(\textcolor{stringliteral}{"\(\backslash\)nPassword: "});
+310         \mbox{\hyperlink{classcms_1_1_c_m_s_a84681758bb3035a56a9bf541f47a6964}{psw}} = \mbox{\hyperlink{classcms_1_1_c_m_s_ad13be0e97a0bb295dcedd134942a79b4}{receiver}}();
+311     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classcms_1_1_c_m_s_a5c480aa2373ca60f78bcdf467c09d1d9}\label{classcms_1_1_c_m_s_a5c480aa2373ca60f78bcdf467c09d1d9}} 
+\index{cms\+::\+C\+MS@{cms\+::\+C\+MS}!main@{main}}
+\index{main@{main}!cms\+::\+C\+MS@{cms\+::\+C\+MS}}
+\subsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily static void cms.\+C\+M\+S.\+main (\begin{DoxyParamCaption}\item[{String \mbox{[}$\,$\mbox{]}}]{args }\end{DoxyParamCaption}) throws I\+O\+Exception\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em args} & the command line arguments \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em java.\+io.\+I\+O\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyCode}
+29                                                               \{
+30         \textcolor{comment}{//Local var}
+31         String flag=\textcolor{stringliteral}{"4"};
+32         \textcolor{keywordtype}{int} aux = 0;
+33         String flagaux = \textcolor{stringliteral}{"1"};
+34         
+35         \textcolor{comment}{//Code}
+36         \textcolor{keywordflow}{while}(\mbox{\hyperlink{classcms_1_1_c_m_s_afc28cfd2c4356509b85775219b7b1e05}{connection}}==null)\{
+37         \mbox{\hyperlink{classcms_1_1_c_m_s_a8c344bccd734ba0a3dbadb99d2fcbed1}{logger}}();        
+38         \mbox{\hyperlink{classcms_1_1_c_m_s_afc28cfd2c4356509b85775219b7b1e05}{connection}} = \mbox{\hyperlink{classcms_1_1_c_m_s_ae70f453d4704bfb9d89ddc637c52dc30}{getConnection}}();
+39         \}
+40         System.out.println(\textcolor{stringliteral}{"Connection succesfull!!"});
+41         \textcolor{keywordflow}{while}(!flag.equals(\textcolor{stringliteral}{"3"}))\{
+42         \mbox{\hyperlink{classcms_1_1_c_m_s_a3256378f3b9ccd38f1db10ee80daf9f3}{menu}}();
+43         flag = \mbox{\hyperlink{classcms_1_1_c_m_s_ad13be0e97a0bb295dcedd134942a79b4}{receiver}}();
+44         \textcolor{keywordflow}{switch}(flag)\{
+45             \textcolor{comment}{//case 1}
+46             \textcolor{keywordflow}{case} \textcolor{stringliteral}{"1"}:
+47                 System.out.println(\textcolor{stringliteral}{"1 - Admin."});
+48                 System.out.println(\textcolor{stringliteral}{"2 - CommonArea."});
+49                 System.out.println(\textcolor{stringliteral}{"3 - Neighbourhood."});
+50                 System.out.println(\textcolor{stringliteral}{"4 - Owner."});
+51                 System.out.println(\textcolor{stringliteral}{"5 - Property."});
+52                 System.out.println(\textcolor{stringliteral}{"6 - Shares."});
+53                 System.out.println(\textcolor{stringliteral}{"7 - Tenant."});
+54                 flagaux = \mbox{\hyperlink{classcms_1_1_c_m_s_ad13be0e97a0bb295dcedd134942a79b4}{receiver}}();
+55                 \textcolor{keywordflow}{switch}(flagaux)
+56                 \{
+57                     \textcolor{keywordflow}{case} \textcolor{stringliteral}{"1"}:
+58                         JDBCAdminDAO jdbcAdminDAO1 = \textcolor{keyword}{new} JDBCAdminDAO(\mbox{\hyperlink{classcms_1_1_c_m_s_afc28cfd2c4356509b85775219b7b1e05}{connection}});
+59                         jdbcAdminDAO1.select();
+60                     \textcolor{keywordflow}{break};
+61                     \textcolor{keywordflow}{case} \textcolor{stringliteral}{"2"}:
+62                         JDBCCommonAreaDAO jdbcCommonAreaDAO1 = \textcolor{keyword}{new} JDBCCommonAreaDAO(
+      \mbox{\hyperlink{classcms_1_1_c_m_s_afc28cfd2c4356509b85775219b7b1e05}{connection}});
+63                         jdbcCommonAreaDAO1.select();
+64                     \textcolor{keywordflow}{break};
+65                     \textcolor{keywordflow}{case} \textcolor{stringliteral}{"3"}:
+66                         JDBCNeighbourhoodDAO jdbcNeighbourhoodDAO1 = \textcolor{keyword}{new} JDBCNeighbourhoodDAO(
+      \mbox{\hyperlink{classcms_1_1_c_m_s_afc28cfd2c4356509b85775219b7b1e05}{connection}});
+67                         jdbcNeighbourhoodDAO1.select();
+68                     \textcolor{keywordflow}{break};
+69                     \textcolor{keywordflow}{case} \textcolor{stringliteral}{"4"}:
+70                         JDBCOwnerDAO jdbcOwnerDAO1 = \textcolor{keyword}{new} JDBCOwnerDAO(\mbox{\hyperlink{classcms_1_1_c_m_s_afc28cfd2c4356509b85775219b7b1e05}{connection}});
+71                         jdbcOwnerDAO1.select();
+72                     \textcolor{keywordflow}{break};
+73                     \textcolor{keywordflow}{case} \textcolor{stringliteral}{"5"}:
+74                         JDBCPropertyDAO jdbcPropertyDAO1 = \textcolor{keyword}{new} JDBCPropertyDAO(
+      \mbox{\hyperlink{classcms_1_1_c_m_s_afc28cfd2c4356509b85775219b7b1e05}{connection}});
+75                         jdbcPropertyDAO1.select();
+76                     \textcolor{keywordflow}{break};
+77                     \textcolor{keywordflow}{case} \textcolor{stringliteral}{"6"}:
+78                         JDBCSharesDAO jdbcSharesDAO1 = \textcolor{keyword}{new} JDBCSharesDAO(
+      \mbox{\hyperlink{classcms_1_1_c_m_s_afc28cfd2c4356509b85775219b7b1e05}{connection}});
+79                         jdbcSharesDAO1.select();
+80                     \textcolor{keywordflow}{break};
+81                     \textcolor{keywordflow}{case} \textcolor{stringliteral}{"7"}:
+82                         JDBCTenantDAO jdbcTenantDAO1 = \textcolor{keyword}{new} JDBCTenantDAO(
+      \mbox{\hyperlink{classcms_1_1_c_m_s_afc28cfd2c4356509b85775219b7b1e05}{connection}});
+83                         jdbcTenantDAO1.select();
+84                     \textcolor{keywordflow}{break};
+85                     \textcolor{keywordflow}{default}:
+86                         System.out.println(\textcolor{stringliteral}{"Option doesn't exist."});
+87                     \textcolor{keywordflow}{break};
+88                 \}
+89                 \textcolor{keywordflow}{break};
+90                 
+91      \textcolor{comment}{//case 2}
+92             \textcolor{keywordflow}{case} \textcolor{stringliteral}{"2"}:
+93                 
+94                 System.out.println(\textcolor{stringliteral}{"1 - Admin."});
+95                 System.out.println(\textcolor{stringliteral}{"2 - CommonArea."});
+96                 System.out.println(\textcolor{stringliteral}{"3 - Neighbourhood."});
+97                 System.out.println(\textcolor{stringliteral}{"4 - Owner."});
+98                 System.out.println(\textcolor{stringliteral}{"5 - Property."});
+99                 System.out.println(\textcolor{stringliteral}{"6 - Shares."});
+100                 System.out.println(\textcolor{stringliteral}{"7 - Tenant."});
+101                 flagaux = \mbox{\hyperlink{classcms_1_1_c_m_s_ad13be0e97a0bb295dcedd134942a79b4}{receiver}}();
+102                 
+103                 \textcolor{keywordflow}{switch}(flagaux)
+104                 \{
+105                     \textcolor{keywordflow}{case} \textcolor{stringliteral}{"1"}:
+106                         System.out.println(\textcolor{stringliteral}{"Introduce admin data: "});
+107                         Admin admin = \textcolor{keyword}{new} Admin();
+108                         
+109                         System.out.print(\textcolor{stringliteral}{"    id\_admin: "});
+110                         aux =  Integer.parseInt(\mbox{\hyperlink{classcms_1_1_c_m_s_ad13be0e97a0bb295dcedd134942a79b4}{receiver}}());
+111                         admin.setAdmin\_id(aux);
+112                         
+113                         
+114                         System.out.print(\textcolor{stringliteral}{"    First name: "});
+115                         flagaux = \mbox{\hyperlink{classcms_1_1_c_m_s_ad13be0e97a0bb295dcedd134942a79b4}{receiver}}();
+116                         admin.setFirst\_name(flagaux);
+117                         
+118                         System.out.print(\textcolor{stringliteral}{"    Last name: "});
+119                         flagaux = \mbox{\hyperlink{classcms_1_1_c_m_s_ad13be0e97a0bb295dcedd134942a79b4}{receiver}}();
+120                         admin.setLast\_name(flagaux);
+121                         
+122                         System.out.print(\textcolor{stringliteral}{"    Shares\_id: "});
+123                         aux =  Integer.parseInt(\mbox{\hyperlink{classcms_1_1_c_m_s_ad13be0e97a0bb295dcedd134942a79b4}{receiver}}());
+124                         admin.setShares\_id(aux);
+125                         
+126                         JDBCAdminDAO jdbcAdminDAO = \textcolor{keyword}{new} JDBCAdminDAO(\mbox{\hyperlink{classcms_1_1_c_m_s_afc28cfd2c4356509b85775219b7b1e05}{connection}});
+127                         jdbcAdminDAO.insert(admin);
+128                     \textcolor{keywordflow}{break};
+129                     \textcolor{keywordflow}{case} \textcolor{stringliteral}{"2"}:
+130                         System.out.println(\textcolor{stringliteral}{"Introduce common area: "});
+131                         CommonArea commonarea = \textcolor{keyword}{new} CommonArea();
+132                         
+133                         System.out.print(\textcolor{stringliteral}{"    area\_id: "});
+134                         aux =  Integer.parseInt(\mbox{\hyperlink{classcms_1_1_c_m_s_ad13be0e97a0bb295dcedd134942a79b4}{receiver}}());
+135                         commonarea.setArea\_id(aux);
+136                         
+137                         System.out.print(\textcolor{stringliteral}{"    area name: "});
+138                         flagaux = \mbox{\hyperlink{classcms_1_1_c_m_s_ad13be0e97a0bb295dcedd134942a79b4}{receiver}}();
+139                         commonarea.setArea\_name(flagaux);
+140                         
+141                         System.out.print(\textcolor{stringliteral}{"    property\_id: "});
+142                         aux =  Integer.parseInt(\mbox{\hyperlink{classcms_1_1_c_m_s_ad13be0e97a0bb295dcedd134942a79b4}{receiver}}());
+143                         commonarea.setProperty\_id(aux);
+144                         
+145                         JDBCCommonAreaDAO jdbcCommonAreaDAO1 = \textcolor{keyword}{new} JDBCCommonAreaDAO(
+      \mbox{\hyperlink{classcms_1_1_c_m_s_afc28cfd2c4356509b85775219b7b1e05}{connection}});
+146                         jdbcCommonAreaDAO1.insert(commonarea);
+147                     \textcolor{keywordflow}{break};
+148                     \textcolor{keywordflow}{case} \textcolor{stringliteral}{"3"}:
+149                         System.out.println(\textcolor{stringliteral}{"Introduce neighbourhood: "});
+150                         Neighbourhood ngaux = \textcolor{keyword}{new} Neighbourhood();
+151                         
+152                         System.out.print(\textcolor{stringliteral}{"    neighbourhood\_id: "});
+153                         aux =  Integer.parseInt(\mbox{\hyperlink{classcms_1_1_c_m_s_ad13be0e97a0bb295dcedd134942a79b4}{receiver}}());
+154                         ngaux.setNeighbourhood\_id(aux);
+155                         
+156                         System.out.print(\textcolor{stringliteral}{"    properties\_id (format: n1,n2,...): "});
+157                         flagaux = \mbox{\hyperlink{classcms_1_1_c_m_s_ad13be0e97a0bb295dcedd134942a79b4}{receiver}}();
+158                         ngaux.setProperties\_id(flagaux);
+159                         
+160                         JDBCNeighbourhoodDAO jdbcNeighbourhoodDAO1 = \textcolor{keyword}{new} JDBCNeighbourhoodDAO(
+      \mbox{\hyperlink{classcms_1_1_c_m_s_afc28cfd2c4356509b85775219b7b1e05}{connection}});
+161                         jdbcNeighbourhoodDAO1.insert(ngaux);
+162                     \textcolor{keywordflow}{break};
+163                     \textcolor{keywordflow}{case} \textcolor{stringliteral}{"4"}:
+164                         
+165                         System.out.println(\textcolor{stringliteral}{"Introduce owner: "});
+166                         Owner own = \textcolor{keyword}{new} Owner();
+167                         
+168                         System.out.print(\textcolor{stringliteral}{"    own\_id: "});
+169                         aux =  Integer.parseInt(\mbox{\hyperlink{classcms_1_1_c_m_s_ad13be0e97a0bb295dcedd134942a79b4}{receiver}}());
+170                         own.setOwn\_id(aux);
+171                         
+172                         System.out.print(\textcolor{stringliteral}{"    First name: "});
+173                         flagaux = \mbox{\hyperlink{classcms_1_1_c_m_s_ad13be0e97a0bb295dcedd134942a79b4}{receiver}}();
+174                         own.setFirst\_name(flagaux);
+175                         
+176                         System.out.print(\textcolor{stringliteral}{"    Last name: "});
+177                         flagaux = \mbox{\hyperlink{classcms_1_1_c_m_s_ad13be0e97a0bb295dcedd134942a79b4}{receiver}}();
+178                         own.setLast\_name(flagaux);
+179                         
+180                         System.out.print(\textcolor{stringliteral}{"    isAdmin (1 = true/other = not): "});
+181                         aux =  Integer.parseInt(\mbox{\hyperlink{classcms_1_1_c_m_s_ad13be0e97a0bb295dcedd134942a79b4}{receiver}}());
+182                         \textcolor{keywordflow}{if}(aux==1)
+183                         \{
+184                                 own.setIsAdmin(\textcolor{keyword}{true});
+185                         \}\textcolor{keywordflow}{else}
+186                         \{
+187                                 own.setIsAdmin(\textcolor{keyword}{false});
+188                         \}
+189                         
+190                         JDBCOwnerDAO jdbcOwnerDAO1 = \textcolor{keyword}{new} JDBCOwnerDAO(\mbox{\hyperlink{classcms_1_1_c_m_s_afc28cfd2c4356509b85775219b7b1e05}{connection}});
+191                         jdbcOwnerDAO1.insert(own);
+192                     \textcolor{keywordflow}{break};
+193                     \textcolor{keywordflow}{case} \textcolor{stringliteral}{"5"}:
+194                         System.out.println(\textcolor{stringliteral}{"Introduce property: "});
+195                         Property \textcolor{keyword}{property} = \textcolor{keyword}{new} Property();
+196                         
+197                         System.out.print(\textcolor{stringliteral}{"    property\_id: "});
+198                         aux =  Integer.parseInt(\mbox{\hyperlink{classcms_1_1_c_m_s_ad13be0e97a0bb295dcedd134942a79b4}{receiver}}());
+199                         \textcolor{keyword}{property}.setProperty\_id(aux);
+200                         
+201                         System.out.print(\textcolor{stringliteral}{"    Property name: "});
+202                         flagaux = \mbox{\hyperlink{classcms_1_1_c_m_s_ad13be0e97a0bb295dcedd134942a79b4}{receiver}}();
+203                         \textcolor{keyword}{property}.setProperty\_name(flagaux);
+204                         
+205                         System.out.print(\textcolor{stringliteral}{"    Property type: "});
+206                         flagaux = \mbox{\hyperlink{classcms_1_1_c_m_s_ad13be0e97a0bb295dcedd134942a79b4}{receiver}}();
+207                         \textcolor{keyword}{property}.setProperty\_type(flagaux);
+208                         
+209                         System.out.print(\textcolor{stringliteral}{"    property\_admin: "});
+210                         aux =  Integer.parseInt(\mbox{\hyperlink{classcms_1_1_c_m_s_ad13be0e97a0bb295dcedd134942a79b4}{receiver}}());
+211                         \textcolor{keyword}{property}.setProperty\_admin(aux);
+212                                 
+213                         System.out.print(\textcolor{stringliteral}{"    maintenance\_id: "});
+214                         aux =  Integer.parseInt(\mbox{\hyperlink{classcms_1_1_c_m_s_ad13be0e97a0bb295dcedd134942a79b4}{receiver}}());
+215                         \textcolor{keyword}{property}.setMaintenance\_id(aux);
+216                         
+217                         System.out.print(\textcolor{stringliteral}{"    neighbourhood\_id: "});
+218                         aux =  Integer.parseInt(\mbox{\hyperlink{classcms_1_1_c_m_s_ad13be0e97a0bb295dcedd134942a79b4}{receiver}}());
+219                         \textcolor{keyword}{property}.setNeighbourhood\_id(aux);
+220                         
+221                         System.out.print(\textcolor{stringliteral}{"    own\_id: "});
+222                         aux =  Integer.parseInt(\mbox{\hyperlink{classcms_1_1_c_m_s_ad13be0e97a0bb295dcedd134942a79b4}{receiver}}());
+223                         \textcolor{keyword}{property}.setOwn\_id(aux);
+224                         
+225                         JDBCPropertyDAO jdbcPropertyDAO1 = \textcolor{keyword}{new} JDBCPropertyDAO(
+      \mbox{\hyperlink{classcms_1_1_c_m_s_afc28cfd2c4356509b85775219b7b1e05}{connection}});
+226                         jdbcPropertyDAO1.insert(property);
+227                     \textcolor{keywordflow}{break};
+228                     \textcolor{keywordflow}{case} \textcolor{stringliteral}{"6"}:
+229                         System.out.println(\textcolor{stringliteral}{"Introduce owner: "});
+230                         Shares share = \textcolor{keyword}{new} Shares();
+231                         
+232                         System.out.print(\textcolor{stringliteral}{"    shares\_id: "});
+233                         aux =  Integer.parseInt(\mbox{\hyperlink{classcms_1_1_c_m_s_ad13be0e97a0bb295dcedd134942a79b4}{receiver}}());
+234                         share.setShares\_id(aux);
+235                         
+236                         System.out.print(\textcolor{stringliteral}{"    percentage: "});
+237                         aux =  Integer.parseInt(\mbox{\hyperlink{classcms_1_1_c_m_s_ad13be0e97a0bb295dcedd134942a79b4}{receiver}}());
+238                         share.setPercentage(aux);
+239                         
+240                         System.out.print(\textcolor{stringliteral}{"    admin\_id: "});
+241                         aux =  Integer.parseInt(\mbox{\hyperlink{classcms_1_1_c_m_s_ad13be0e97a0bb295dcedd134942a79b4}{receiver}}());
+242                         share.setAdmin\_id(aux);
+243                         
+244                         System.out.print(\textcolor{stringliteral}{"    total: "});
+245                         aux =  Integer.parseInt(\mbox{\hyperlink{classcms_1_1_c_m_s_ad13be0e97a0bb295dcedd134942a79b4}{receiver}}());
+246                         share.setTotal(aux);
+247                         
+248                         JDBCSharesDAO jdbcSharesDAO1 = \textcolor{keyword}{new} JDBCSharesDAO(
+      \mbox{\hyperlink{classcms_1_1_c_m_s_afc28cfd2c4356509b85775219b7b1e05}{connection}});
+249                         jdbcSharesDAO1.insert(share);
+250                     \textcolor{keywordflow}{break};
+251                     \textcolor{keywordflow}{case} \textcolor{stringliteral}{"7"}:
+252                         System.out.println(\textcolor{stringliteral}{"Introduce tenant data: "});
+253                         Tenant tenant = \textcolor{keyword}{new} Tenant();
+254                         
+255                         System.out.print(\textcolor{stringliteral}{"    tenant\_id: "});
+256                         aux =  Integer.parseInt(\mbox{\hyperlink{classcms_1_1_c_m_s_ad13be0e97a0bb295dcedd134942a79b4}{receiver}}());
+257                         tenant.setTenant\_id(aux);
+258                         
+259                         System.out.print(\textcolor{stringliteral}{"    First name: "});
+260                         flagaux = \mbox{\hyperlink{classcms_1_1_c_m_s_ad13be0e97a0bb295dcedd134942a79b4}{receiver}}();
+261                         tenant.setFirst\_name(flagaux);
+262                         
+263                         System.out.print(\textcolor{stringliteral}{"    Last name: "});
+264                         flagaux = \mbox{\hyperlink{classcms_1_1_c_m_s_ad13be0e97a0bb295dcedd134942a79b4}{receiver}}();
+265                         tenant.setLast\_name(flagaux);
+266                         
+267                         
+268                         System.out.print(\textcolor{stringliteral}{"    property\_id: "});
+269                         aux =  Integer.parseInt(\mbox{\hyperlink{classcms_1_1_c_m_s_ad13be0e97a0bb295dcedd134942a79b4}{receiver}}());
+270                         tenant.setProperty\_id(aux);
+271                         
+272                         JDBCTenantDAO jdbcTenantDAO1 = \textcolor{keyword}{new} JDBCTenantDAO(
+      \mbox{\hyperlink{classcms_1_1_c_m_s_afc28cfd2c4356509b85775219b7b1e05}{connection}});
+273                         jdbcTenantDAO1.insert(tenant);
+274                     \textcolor{keywordflow}{break};
+275                     \textcolor{keywordflow}{default}:
+276                         System.out.println(\textcolor{stringliteral}{"Doesn't exist "});
+277                     \textcolor{keywordflow}{break};
+278                 \}
+279                 
+280         
+281                 \textcolor{keywordflow}{break};
+282                 
+283             \textcolor{comment}{//case 3}
+284             \textcolor{keywordflow}{case} \textcolor{stringliteral}{"3"}:
+285                 \mbox{\hyperlink{classcms_1_1_c_m_s_a8f49d9319782a9aa839dd78bb30315cf}{closeConnection}}();
+286                 System.out.println(\textcolor{stringliteral}{"Bye"});
+287                 \textcolor{keywordflow}{break};
+288         \}
+289         \}
+290         \textcolor{comment}{/*Admin admin = new Admin();}
+291 \textcolor{comment}{        admin.setFirst\_name("Faker");}
+292 \textcolor{comment}{        admin.setLast\_name("Senpai");}
+293 \textcolor{comment}{        admin.setShares\_id(0);}
+294 \textcolor{comment}{         }
+295 \textcolor{comment}{        JDBCAdminDAO jdbcAdminDAO = new JDBCAdminDAO();}
+296 \textcolor{comment}{        jdbcAdminDAO.getConnection();}
+297 \textcolor{comment}{        jdbcAdminDAO.insert(admin);}
+298 \textcolor{comment}{}
+299 \textcolor{comment}{         }
+300 \textcolor{comment}{        jdbcAdminDAO.select();}
+301 \textcolor{comment}{        jdbcAdminDAO.closeConnection();*/}
+302     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classcms_1_1_c_m_s_a3256378f3b9ccd38f1db10ee80daf9f3}\label{classcms_1_1_c_m_s_a3256378f3b9ccd38f1db10ee80daf9f3}} 
+\index{cms\+::\+C\+MS@{cms\+::\+C\+MS}!menu@{menu}}
+\index{menu@{menu}!cms\+::\+C\+MS@{cms\+::\+C\+MS}}
+\subsubsection{\texorpdfstring{menu()}{menu()}}
+{\footnotesize\ttfamily static void cms.\+C\+M\+S.\+menu (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+\begin{DoxyCode}
+314                              \{
+315         System.out.println(\textcolor{stringliteral}{"\(\backslash\)t*-*-*-*-*-Condominium Managing System-*-*-*-*-*"});
+316         System.out.println(\textcolor{stringliteral}{"1. LOOKUP OPERATIONS"});
+317         System.out.println(\textcolor{stringliteral}{"2. POPULATE OPERATIONS"});
+318         System.out.println(\textcolor{stringliteral}{"3. CLOSE CONNECTION"});
+319         System.out.print(\textcolor{stringliteral}{"Choose an option:"});
+320     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classcms_1_1_c_m_s_ad13be0e97a0bb295dcedd134942a79b4}\label{classcms_1_1_c_m_s_ad13be0e97a0bb295dcedd134942a79b4}} 
+\index{cms\+::\+C\+MS@{cms\+::\+C\+MS}!receiver@{receiver}}
+\index{receiver@{receiver}!cms\+::\+C\+MS@{cms\+::\+C\+MS}}
+\subsubsection{\texorpdfstring{receiver()}{receiver()}}
+{\footnotesize\ttfamily static String cms.\+C\+M\+S.\+receiver (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws I\+O\+Exception\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+\begin{DoxyCode}
+323                                                       \{
+324         String input=null;
+325         BufferedReader bufferRead = \textcolor{keyword}{new} BufferedReader(\textcolor{keyword}{new} InputStreamReader(System.in));
+326         input = bufferRead.readLine();
+327         \textcolor{keywordflow}{return} input;
+328     \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classcms_1_1_c_m_s_afc28cfd2c4356509b85775219b7b1e05}\label{classcms_1_1_c_m_s_afc28cfd2c4356509b85775219b7b1e05}} 
+\index{cms\+::\+C\+MS@{cms\+::\+C\+MS}!connection@{connection}}
+\index{connection@{connection}!cms\+::\+C\+MS@{cms\+::\+C\+MS}}
+\subsubsection{\texorpdfstring{connection}{connection}}
+{\footnotesize\ttfamily Connection cms.\+C\+M\+S.\+connection = null\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classcms_1_1_c_m_s_a84681758bb3035a56a9bf541f47a6964}\label{classcms_1_1_c_m_s_a84681758bb3035a56a9bf541f47a6964}} 
+\index{cms\+::\+C\+MS@{cms\+::\+C\+MS}!psw@{psw}}
+\index{psw@{psw}!cms\+::\+C\+MS@{cms\+::\+C\+MS}}
+\subsubsection{\texorpdfstring{psw}{psw}}
+{\footnotesize\ttfamily String cms.\+C\+M\+S.\+psw =null\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{classcms_1_1_c_m_s_acce8f8027f3a43eabae951ddf2a9c5d9}\label{classcms_1_1_c_m_s_acce8f8027f3a43eabae951ddf2a9c5d9}} 
+\index{cms\+::\+C\+MS@{cms\+::\+C\+MS}!usr@{usr}}
+\index{usr@{usr}!cms\+::\+C\+MS@{cms\+::\+C\+MS}}
+\subsubsection{\texorpdfstring{usr}{usr}}
+{\footnotesize\ttfamily String cms.\+C\+M\+S.\+usr =null\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [package]}}
+

@@ -1,0 +1,326 @@
+\hypertarget{classentities_1_1_collision_handler}{}\section{entities.\+Collision\+Handler Class Reference}
+\label{classentities_1_1_collision_handler}\index{entities.\+Collision\+Handler@{entities.\+Collision\+Handler}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classentities_1_1_collision_handler_a7bf0999c216ce86964042ad3e836686e}{init\+Collisions}} (\mbox{\hyperlink{classentities_1_1_map}{Map}} \mbox{\hyperlink{classentities_1_1_collision_handler_a2490d8412bb72d221dd9f68f97565e6f}{map}})
+\item 
+boolean \mbox{\hyperlink{classentities_1_1_collision_handler_a8aedd2c44d177b1af64be0d7442ec3bb}{try\+Moving\+Through}} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_shape}{Shape}} s, \mbox{\hyperlink{interfaceentities_1_1_collisionable}{Collisionable}} this\+Entity)
+\item 
+\mbox{\hyperlink{interfaceentities_1_1_collisionable}{Collisionable}} \mbox{\hyperlink{classentities_1_1_collision_handler_a55c5a015e29edac05c725108e3d481f2}{get\+Collisionable\+Over\+Shape}} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_shape}{Shape}} s, \mbox{\hyperlink{interfaceentities_1_1_collisionable}{Collisionable}} this\+Entity)
+\item 
+Array\+List$<$ \mbox{\hyperlink{interfacedetectors_1_1_detector}{Detector}} $>$ \mbox{\hyperlink{classentities_1_1_collision_handler_ac09d2b1b7fff6e7dd141d09322beb922}{get\+Detector\+Over\+Shape}} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_shape}{Shape}} s)
+\item 
+boolean \mbox{\hyperlink{classentities_1_1_collision_handler_aa81b3fa6857eeb5d4b2a06aff4dcea87}{insert\+Collisionable}} (\mbox{\hyperlink{interfaceentities_1_1_collisionable}{Collisionable}} r)
+\item 
+boolean \mbox{\hyperlink{classentities_1_1_collision_handler_a0634abfade22196f7c8292dca6d4c883}{remove\+Collisionable}} (\mbox{\hyperlink{interfaceentities_1_1_collisionable}{Collisionable}} r)
+\item 
+boolean \mbox{\hyperlink{classentities_1_1_collision_handler_a4f975e65777d79754bab90482b46cf11}{insert\+Detector}} (\mbox{\hyperlink{interfacedetectors_1_1_detector}{Detector}} d)
+\item 
+boolean \mbox{\hyperlink{classentities_1_1_collision_handler_ac5666badd0093fd9c960c1a7a22ce65e}{remove\+Detector}} (\mbox{\hyperlink{interfacedetectors_1_1_detector}{Detector}} d)
+\item 
+void \mbox{\hyperlink{classentities_1_1_collision_handler_a8a5ec46b78904315d4ff7becc8da2f5d}{render\+Position\+Detectors}} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_graphics}{Graphics}} g)
+\item 
+void \mbox{\hyperlink{classentities_1_1_collision_handler_a305659bc4ab9c4f6c228214e67f92c5b}{remove\+Detectors}} ()
+\item 
+Array\+List$<$ \mbox{\hyperlink{interfacedetectors_1_1_detector}{Detector}} $>$ \mbox{\hyperlink{classentities_1_1_collision_handler_aec69dac5dbf97182129420150b0b5624}{get\+Position\+Detectors}} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classentities_1_1_collision_handler}{Collision\+Handler}} \mbox{\hyperlink{classentities_1_1_collision_handler_a40a5776ef3782f3bfe037085dc1c10cf}{get\+Collision\+Handler}} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classentities_1_1_collision_handler_ad94181e30c3d06d9d78d8244cc151c7a}{Collision\+Handler}} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Array\+List$<$ \mbox{\hyperlink{interfaceentities_1_1_collisionable}{Collisionable}} $>$ \mbox{\hyperlink{classentities_1_1_collision_handler_a4a3eab5e53bb34f16026644c4d7c0595}{hit\+Boxes}}
+\item 
+Array\+List$<$ \mbox{\hyperlink{interfacedetectors_1_1_detector}{Detector}} $>$ \mbox{\hyperlink{classentities_1_1_collision_handler_ac8a71d4c1785179065bb3461aae87a1f}{position\+Detectors}}
+\item 
+\mbox{\hyperlink{classentities_1_1_map}{Map}} \mbox{\hyperlink{classentities_1_1_collision_handler_a2490d8412bb72d221dd9f68f97565e6f}{map}}
+\end{DoxyCompactItemize}
+\subsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classentities_1_1_collision_handler}{Collision\+Handler}} \mbox{\hyperlink{classentities_1_1_collision_handler_a4ab7151e81e4b5e7e5bd99bf72f2dc3a}{collision\+Handler}} = new \mbox{\hyperlink{classentities_1_1_collision_handler}{Collision\+Handler}}()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyAuthor}{Author}
+Enrique  10-\/mar-\/2016  \mbox{\hyperlink{classentities_1_1_collision_handler}{Collision\+Handler}} 
+\end{DoxyAuthor}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classentities_1_1_collision_handler_ad94181e30c3d06d9d78d8244cc151c7a}\label{classentities_1_1_collision_handler_ad94181e30c3d06d9d78d8244cc151c7a}} 
+\index{entities\+::\+Collision\+Handler@{entities\+::\+Collision\+Handler}!Collision\+Handler@{Collision\+Handler}}
+\index{Collision\+Handler@{Collision\+Handler}!entities\+::\+Collision\+Handler@{entities\+::\+Collision\+Handler}}
+\subsubsection{\texorpdfstring{Collision\+Handler()}{CollisionHandler()}}
+{\footnotesize\ttfamily entities.\+Collision\+Handler.\+Collision\+Handler (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+Instancia un nuevo manejador de colisiones. Necesario especificar posteriormente el tamaño de los tiles y la matriz de celdas necesaria para la colision con el mapa. 
+\begin{DoxyCode}
+30                                \{
+31         \mbox{\hyperlink{classentities_1_1_collision_handler_a4a3eab5e53bb34f16026644c4d7c0595}{hitBoxes}} = \textcolor{keyword}{new} ArrayList<>();
+32         \mbox{\hyperlink{classentities_1_1_collision_handler_ac8a71d4c1785179065bb3461aae87a1f}{positionDetectors}} = \textcolor{keyword}{new} ArrayList<>();
+33     \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classentities_1_1_collision_handler_a55c5a015e29edac05c725108e3d481f2}\label{classentities_1_1_collision_handler_a55c5a015e29edac05c725108e3d481f2}} 
+\index{entities\+::\+Collision\+Handler@{entities\+::\+Collision\+Handler}!get\+Collisionable\+Over\+Shape@{get\+Collisionable\+Over\+Shape}}
+\index{get\+Collisionable\+Over\+Shape@{get\+Collisionable\+Over\+Shape}!entities\+::\+Collision\+Handler@{entities\+::\+Collision\+Handler}}
+\subsubsection{\texorpdfstring{get\+Collisionable\+Over\+Shape()}{getCollisionableOverShape()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfaceentities_1_1_collisionable}{Collisionable}} entities.\+Collision\+Handler.\+get\+Collisionable\+Over\+Shape (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_shape}{Shape}}}]{s,  }\item[{\mbox{\hyperlink{interfaceentities_1_1_collisionable}{Collisionable}}}]{this\+Entity }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Check if a \mbox{\hyperlink{interfaceentities_1_1_collisionable}{Collisionable}} object collides with a Shape.
+
+
+\begin{DoxyParams}{Parameters}
+{\em s} & Shape which will be compared. \\
+\hline
+{\em this\+Entity} & The entity asking for the collision \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The \mbox{\hyperlink{interfaceentities_1_1_collisionable}{Collisionable}} object which has collided whith the Shape. Null if there is no object. 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+91                                                                                       \{
+92         \textcolor{keywordflow}{for} (Collisionable c : \mbox{\hyperlink{classentities_1_1_collision_handler_a4a3eab5e53bb34f16026644c4d7c0595}{hitBoxes}}) \{
+93             \textcolor{keywordflow}{if} (!thisEntity.equals(c)) \{
+94                 \textcolor{keywordflow}{if} (s.intersects(c.getHitBox())) \{
+95                     \textcolor{keywordflow}{return} c;
+96                 \}
+97             \}
+98         \}
+99         \textcolor{keywordflow}{return} null;
+100     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classentities_1_1_collision_handler_a40a5776ef3782f3bfe037085dc1c10cf}\label{classentities_1_1_collision_handler_a40a5776ef3782f3bfe037085dc1c10cf}} 
+\index{entities\+::\+Collision\+Handler@{entities\+::\+Collision\+Handler}!get\+Collision\+Handler@{get\+Collision\+Handler}}
+\index{get\+Collision\+Handler@{get\+Collision\+Handler}!entities\+::\+Collision\+Handler@{entities\+::\+Collision\+Handler}}
+\subsubsection{\texorpdfstring{get\+Collision\+Handler()}{getCollisionHandler()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classentities_1_1_collision_handler}{Collision\+Handler}} entities.\+Collision\+Handler.\+get\+Collision\+Handler (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+\begin{DoxyCode}
+35                                                          \{
+36         \textcolor{keywordflow}{return} \mbox{\hyperlink{classentities_1_1_collision_handler_a4ab7151e81e4b5e7e5bd99bf72f2dc3a}{collisionHandler}};
+37     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classentities_1_1_collision_handler_ac09d2b1b7fff6e7dd141d09322beb922}\label{classentities_1_1_collision_handler_ac09d2b1b7fff6e7dd141d09322beb922}} 
+\index{entities\+::\+Collision\+Handler@{entities\+::\+Collision\+Handler}!get\+Detector\+Over\+Shape@{get\+Detector\+Over\+Shape}}
+\index{get\+Detector\+Over\+Shape@{get\+Detector\+Over\+Shape}!entities\+::\+Collision\+Handler@{entities\+::\+Collision\+Handler}}
+\subsubsection{\texorpdfstring{get\+Detector\+Over\+Shape()}{getDetectorOverShape()}}
+{\footnotesize\ttfamily Array\+List$<$\mbox{\hyperlink{interfacedetectors_1_1_detector}{Detector}}$>$ entities.\+Collision\+Handler.\+get\+Detector\+Over\+Shape (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_shape}{Shape}}}]{s }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Check if the shape is over a position detector.
+
+
+\begin{DoxyParams}{Parameters}
+{\em s} & Shape which will be compared. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The Detector object which is under whith the shape\textquotesingle{}s area. Null if there is no object. 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+109                                                              \{
+110         ArrayList<Detector> aux = \textcolor{keyword}{new} ArrayList();
+111         \textcolor{keywordflow}{for} (Detector d : \mbox{\hyperlink{classentities_1_1_collision_handler_ac8a71d4c1785179065bb3461aae87a1f}{positionDetectors}}) \{
+112             \textcolor{keywordflow}{if} (s.intersects(d.getArea())) \{
+113                 aux.add(d);
+114             \}
+115         \}
+116         \textcolor{keywordflow}{return} aux;
+117     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classentities_1_1_collision_handler_aec69dac5dbf97182129420150b0b5624}\label{classentities_1_1_collision_handler_aec69dac5dbf97182129420150b0b5624}} 
+\index{entities\+::\+Collision\+Handler@{entities\+::\+Collision\+Handler}!get\+Position\+Detectors@{get\+Position\+Detectors}}
+\index{get\+Position\+Detectors@{get\+Position\+Detectors}!entities\+::\+Collision\+Handler@{entities\+::\+Collision\+Handler}}
+\subsubsection{\texorpdfstring{get\+Position\+Detectors()}{getPositionDetectors()}}
+{\footnotesize\ttfamily Array\+List$<$\mbox{\hyperlink{interfacedetectors_1_1_detector}{Detector}}$>$ entities.\+Collision\+Handler.\+get\+Position\+Detectors (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+145                                                       \{
+146         \textcolor{keywordflow}{return} \mbox{\hyperlink{classentities_1_1_collision_handler_ac8a71d4c1785179065bb3461aae87a1f}{positionDetectors}};
+147     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classentities_1_1_collision_handler_a7bf0999c216ce86964042ad3e836686e}\label{classentities_1_1_collision_handler_a7bf0999c216ce86964042ad3e836686e}} 
+\index{entities\+::\+Collision\+Handler@{entities\+::\+Collision\+Handler}!init\+Collisions@{init\+Collisions}}
+\index{init\+Collisions@{init\+Collisions}!entities\+::\+Collision\+Handler@{entities\+::\+Collision\+Handler}}
+\subsubsection{\texorpdfstring{init\+Collisions()}{initCollisions()}}
+{\footnotesize\ttfamily void entities.\+Collision\+Handler.\+init\+Collisions (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classentities_1_1_map}{Map}}}]{map }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+39                                         \{
+40         this.\mbox{\hyperlink{classentities_1_1_collision_handler_a2490d8412bb72d221dd9f68f97565e6f}{map}} = \mbox{\hyperlink{classentities_1_1_collision_handler_a2490d8412bb72d221dd9f68f97565e6f}{map}};
+41     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classentities_1_1_collision_handler_aa81b3fa6857eeb5d4b2a06aff4dcea87}\label{classentities_1_1_collision_handler_aa81b3fa6857eeb5d4b2a06aff4dcea87}} 
+\index{entities\+::\+Collision\+Handler@{entities\+::\+Collision\+Handler}!insert\+Collisionable@{insert\+Collisionable}}
+\index{insert\+Collisionable@{insert\+Collisionable}!entities\+::\+Collision\+Handler@{entities\+::\+Collision\+Handler}}
+\subsubsection{\texorpdfstring{insert\+Collisionable()}{insertCollisionable()}}
+{\footnotesize\ttfamily boolean entities.\+Collision\+Handler.\+insert\+Collisionable (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfaceentities_1_1_collisionable}{Collisionable}}}]{r }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+119                                                         \{
+120         \textcolor{keywordflow}{return} this.\mbox{\hyperlink{classentities_1_1_collision_handler_a4a3eab5e53bb34f16026644c4d7c0595}{hitBoxes}}.add(r);
+121     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classentities_1_1_collision_handler_a4f975e65777d79754bab90482b46cf11}\label{classentities_1_1_collision_handler_a4f975e65777d79754bab90482b46cf11}} 
+\index{entities\+::\+Collision\+Handler@{entities\+::\+Collision\+Handler}!insert\+Detector@{insert\+Detector}}
+\index{insert\+Detector@{insert\+Detector}!entities\+::\+Collision\+Handler@{entities\+::\+Collision\+Handler}}
+\subsubsection{\texorpdfstring{insert\+Detector()}{insertDetector()}}
+{\footnotesize\ttfamily boolean entities.\+Collision\+Handler.\+insert\+Detector (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfacedetectors_1_1_detector}{Detector}}}]{d }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+127                                               \{
+128         \textcolor{keywordflow}{return} this.\mbox{\hyperlink{classentities_1_1_collision_handler_ac8a71d4c1785179065bb3461aae87a1f}{positionDetectors}}.add(d);
+129     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classentities_1_1_collision_handler_a0634abfade22196f7c8292dca6d4c883}\label{classentities_1_1_collision_handler_a0634abfade22196f7c8292dca6d4c883}} 
+\index{entities\+::\+Collision\+Handler@{entities\+::\+Collision\+Handler}!remove\+Collisionable@{remove\+Collisionable}}
+\index{remove\+Collisionable@{remove\+Collisionable}!entities\+::\+Collision\+Handler@{entities\+::\+Collision\+Handler}}
+\subsubsection{\texorpdfstring{remove\+Collisionable()}{removeCollisionable()}}
+{\footnotesize\ttfamily boolean entities.\+Collision\+Handler.\+remove\+Collisionable (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfaceentities_1_1_collisionable}{Collisionable}}}]{r }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+123                                                         \{
+124         \textcolor{keywordflow}{return} this.\mbox{\hyperlink{classentities_1_1_collision_handler_a4a3eab5e53bb34f16026644c4d7c0595}{hitBoxes}}.remove(r);
+125     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classentities_1_1_collision_handler_ac5666badd0093fd9c960c1a7a22ce65e}\label{classentities_1_1_collision_handler_ac5666badd0093fd9c960c1a7a22ce65e}} 
+\index{entities\+::\+Collision\+Handler@{entities\+::\+Collision\+Handler}!remove\+Detector@{remove\+Detector}}
+\index{remove\+Detector@{remove\+Detector}!entities\+::\+Collision\+Handler@{entities\+::\+Collision\+Handler}}
+\subsubsection{\texorpdfstring{remove\+Detector()}{removeDetector()}}
+{\footnotesize\ttfamily boolean entities.\+Collision\+Handler.\+remove\+Detector (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfacedetectors_1_1_detector}{Detector}}}]{d }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+131                                               \{
+132         \textcolor{keywordflow}{return} this.\mbox{\hyperlink{classentities_1_1_collision_handler_ac8a71d4c1785179065bb3461aae87a1f}{positionDetectors}}.remove(d);
+133     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classentities_1_1_collision_handler_a305659bc4ab9c4f6c228214e67f92c5b}\label{classentities_1_1_collision_handler_a305659bc4ab9c4f6c228214e67f92c5b}} 
+\index{entities\+::\+Collision\+Handler@{entities\+::\+Collision\+Handler}!remove\+Detectors@{remove\+Detectors}}
+\index{remove\+Detectors@{remove\+Detectors}!entities\+::\+Collision\+Handler@{entities\+::\+Collision\+Handler}}
+\subsubsection{\texorpdfstring{remove\+Detectors()}{removeDetectors()}}
+{\footnotesize\ttfamily void entities.\+Collision\+Handler.\+remove\+Detectors (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+141                                   \{
+142         \mbox{\hyperlink{classentities_1_1_collision_handler_ac8a71d4c1785179065bb3461aae87a1f}{positionDetectors}}.clear();
+143     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classentities_1_1_collision_handler_a8a5ec46b78904315d4ff7becc8da2f5d}\label{classentities_1_1_collision_handler_a8a5ec46b78904315d4ff7becc8da2f5d}} 
+\index{entities\+::\+Collision\+Handler@{entities\+::\+Collision\+Handler}!render\+Position\+Detectors@{render\+Position\+Detectors}}
+\index{render\+Position\+Detectors@{render\+Position\+Detectors}!entities\+::\+Collision\+Handler@{entities\+::\+Collision\+Handler}}
+\subsubsection{\texorpdfstring{render\+Position\+Detectors()}{renderPositionDetectors()}}
+{\footnotesize\ttfamily void entities.\+Collision\+Handler.\+render\+Position\+Detectors (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_graphics}{Graphics}}}]{g }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+135                                                     \{
+136         \textcolor{keywordflow}{for} (Detector d : \mbox{\hyperlink{classentities_1_1_collision_handler_ac8a71d4c1785179065bb3461aae87a1f}{positionDetectors}}) \{
+137             g.draw(d.getArea());
+138         \}
+139     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classentities_1_1_collision_handler_a8aedd2c44d177b1af64be0d7442ec3bb}\label{classentities_1_1_collision_handler_a8aedd2c44d177b1af64be0d7442ec3bb}} 
+\index{entities\+::\+Collision\+Handler@{entities\+::\+Collision\+Handler}!try\+Moving\+Through@{try\+Moving\+Through}}
+\index{try\+Moving\+Through@{try\+Moving\+Through}!entities\+::\+Collision\+Handler@{entities\+::\+Collision\+Handler}}
+\subsubsection{\texorpdfstring{try\+Moving\+Through()}{tryMovingThrough()}}
+{\footnotesize\ttfamily boolean entities.\+Collision\+Handler.\+try\+Moving\+Through (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_shape}{Shape}}}]{s,  }\item[{\mbox{\hyperlink{interfaceentities_1_1_collisionable}{Collisionable}}}]{this\+Entity }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Check if a \mbox{\hyperlink{classentities_1_1_mobile_entity}{Mobile\+Entity}} can move through an area.
+
+
+\begin{DoxyParams}{Parameters}
+{\em s} & Shape which represent the area in which the entity will stay. \\
+\hline
+{\em this\+Entity} & The entity which will be checked. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the entity can move there, and false if not. 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+50                                                                        \{
+51 
+52         \textcolor{comment}{//Ask the map if the shape is in collision}
+53         \textcolor{keywordtype}{boolean} aux = \textcolor{keyword}{true};
+54         \textcolor{keywordflow}{if} (\mbox{\hyperlink{classentities_1_1_collision_handler_a2490d8412bb72d221dd9f68f97565e6f}{map}} != null) \{
+55             \textcolor{keywordflow}{try} \{
+56                 \textcolor{keywordflow}{if} (\mbox{\hyperlink{classentities_1_1_collision_handler_a2490d8412bb72d221dd9f68f97565e6f}{map}}.\mbox{\hyperlink{classentities_1_1_map_a0dadc6784b338c8aa26adb95568e75fb}{collidesWithMap}}((Rectangle) s)) \{
+57                     aux = \textcolor{keyword}{false};
+58                     thisEntity.doCollision(null);
+59                 \}
+60             \} \textcolor{keywordflow}{catch} (SlickException ex) \{
+61                 Logger.getLogger(\mbox{\hyperlink{classentities_1_1_collision_handler_ad94181e30c3d06d9d78d8244cc151c7a}{CollisionHandler}}.class.getName()).log(Level.SEVERE, null, 
+      ex);
+62             \}
+63         \}
+64         \textcolor{comment}{//Check collision with Collisionable objects}
+65         Collisionable c = \mbox{\hyperlink{classentities_1_1_collision_handler_a55c5a015e29edac05c725108e3d481f2}{getCollisionableOverShape}}(s, thisEntity);
+66         \textcolor{keywordflow}{if} (c != null) \{
+67             c.receiveCollision(thisEntity);
+68             thisEntity.doCollision(c);
+69             aux = \textcolor{keyword}{false};
+70         \}
+71         \textcolor{comment}{//Check collision with Detector objects}
+72         ArrayList<Detector> d = \mbox{\hyperlink{classentities_1_1_collision_handler_ac09d2b1b7fff6e7dd141d09322beb922}{getDetectorOverShape}}(s);
+73         \textcolor{keywordflow}{if} (d.size() != 0) \{
+74             \textcolor{keywordflow}{for} (Detector det : d) \{
+75                 det.objectOver(thisEntity);
+76             \}
+77         \}
+78 
+79         \textcolor{keywordflow}{return} aux;    \textcolor{comment}{//There is nothing that stops the shape\}}
+80 
+81     \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classentities_1_1_collision_handler_a4ab7151e81e4b5e7e5bd99bf72f2dc3a}\label{classentities_1_1_collision_handler_a4ab7151e81e4b5e7e5bd99bf72f2dc3a}} 
+\index{entities\+::\+Collision\+Handler@{entities\+::\+Collision\+Handler}!collision\+Handler@{collision\+Handler}}
+\index{collision\+Handler@{collision\+Handler}!entities\+::\+Collision\+Handler@{entities\+::\+Collision\+Handler}}
+\subsubsection{\texorpdfstring{collision\+Handler}{collisionHandler}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classentities_1_1_collision_handler}{Collision\+Handler}} entities.\+Collision\+Handler.\+collision\+Handler = new \mbox{\hyperlink{classentities_1_1_collision_handler}{Collision\+Handler}}()\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{classentities_1_1_collision_handler_a4a3eab5e53bb34f16026644c4d7c0595}\label{classentities_1_1_collision_handler_a4a3eab5e53bb34f16026644c4d7c0595}} 
+\index{entities\+::\+Collision\+Handler@{entities\+::\+Collision\+Handler}!hit\+Boxes@{hit\+Boxes}}
+\index{hit\+Boxes@{hit\+Boxes}!entities\+::\+Collision\+Handler@{entities\+::\+Collision\+Handler}}
+\subsubsection{\texorpdfstring{hit\+Boxes}{hitBoxes}}
+{\footnotesize\ttfamily Array\+List$<$\mbox{\hyperlink{interfaceentities_1_1_collisionable}{Collisionable}}$>$ entities.\+Collision\+Handler.\+hit\+Boxes\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classentities_1_1_collision_handler_a2490d8412bb72d221dd9f68f97565e6f}\label{classentities_1_1_collision_handler_a2490d8412bb72d221dd9f68f97565e6f}} 
+\index{entities\+::\+Collision\+Handler@{entities\+::\+Collision\+Handler}!map@{map}}
+\index{map@{map}!entities\+::\+Collision\+Handler@{entities\+::\+Collision\+Handler}}
+\subsubsection{\texorpdfstring{map}{map}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classentities_1_1_map}{Map}} entities.\+Collision\+Handler.\+map\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classentities_1_1_collision_handler_ac8a71d4c1785179065bb3461aae87a1f}\label{classentities_1_1_collision_handler_ac8a71d4c1785179065bb3461aae87a1f}} 
+\index{entities\+::\+Collision\+Handler@{entities\+::\+Collision\+Handler}!position\+Detectors@{position\+Detectors}}
+\index{position\+Detectors@{position\+Detectors}!entities\+::\+Collision\+Handler@{entities\+::\+Collision\+Handler}}
+\subsubsection{\texorpdfstring{position\+Detectors}{positionDetectors}}
+{\footnotesize\ttfamily Array\+List$<$\mbox{\hyperlink{interfacedetectors_1_1_detector}{Detector}}$>$ entities.\+Collision\+Handler.\+position\+Detectors\hspace{0.3cm}{\ttfamily [private]}}
+

@@ -1,0 +1,171 @@
+\hypertarget{classorg_1_1newdawn_1_1slick_1_1svg_1_1inkscape_1_1_polygon_processor}{}\section{org.\+newdawn.\+slick.\+svg.\+inkscape.\+Polygon\+Processor Class Reference}
+\label{classorg_1_1newdawn_1_1slick_1_1svg_1_1inkscape_1_1_polygon_processor}\index{org.\+newdawn.\+slick.\+svg.\+inkscape.\+Polygon\+Processor@{org.\+newdawn.\+slick.\+svg.\+inkscape.\+Polygon\+Processor}}
+Inheritance diagram for org.\+newdawn.\+slick.\+svg.\+inkscape.\+Polygon\+Processor\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classorg_1_1newdawn_1_1slick_1_1svg_1_1inkscape_1_1_polygon_processor}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1inkscape_1_1_polygon_processor_afe4b2aaaa0651a682fad619a9dddf870}{process}} (\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1svg_1_1_loader}{Loader}} loader, Element element, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1_diagram}{Diagram}} diagram, Transform t)  throws Parsing\+Exception 
+\item 
+boolean \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1inkscape_1_1_polygon_processor_ae16fc3ea9284d46c0db316bfeeca56f5}{handles}} (Element element)
+\end{DoxyCompactItemize}
+\subsection*{Static Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static int \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1inkscape_1_1_polygon_processor_ac886c9f2c9de6f293db4158e6161b42a}{process\+Poly}} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_polygon}{Polygon}} poly, Element element, String\+Tokenizer tokens)  throws Parsing\+Exception 
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A processor for the $<$polygon$>$ and $<$path$>$ elements marked as not an arc.
+
+\begin{DoxyAuthor}{Author}
+kevin 
+\end{DoxyAuthor}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1svg_1_1inkscape_1_1_polygon_processor_ae16fc3ea9284d46c0db316bfeeca56f5}\label{classorg_1_1newdawn_1_1slick_1_1svg_1_1inkscape_1_1_polygon_processor_ae16fc3ea9284d46c0db316bfeeca56f5}} 
+\index{org\+::newdawn\+::slick\+::svg\+::inkscape\+::\+Polygon\+Processor@{org\+::newdawn\+::slick\+::svg\+::inkscape\+::\+Polygon\+Processor}!handles@{handles}}
+\index{handles@{handles}!org\+::newdawn\+::slick\+::svg\+::inkscape\+::\+Polygon\+Processor@{org\+::newdawn\+::slick\+::svg\+::inkscape\+::\+Polygon\+Processor}}
+\subsubsection{\texorpdfstring{handles()}{handles()}}
+{\footnotesize\ttfamily boolean org.\+newdawn.\+slick.\+svg.\+inkscape.\+Polygon\+Processor.\+handles (\begin{DoxyParamCaption}\item[{Element}]{element }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1svg_1_1inkscape_1_1_element_processor_ae95bbf21a67c52aff02cf09259c554a3}{org.\+newdawn.\+slick.\+svg.\+inkscape.\+Element\+Processor\+::handles}}(org.\+w3c.\+dom.\+Element) 
+\end{DoxySeeAlso}
+
+
+Implements \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1svg_1_1inkscape_1_1_element_processor_ae95bbf21a67c52aff02cf09259c554a3}{org.\+newdawn.\+slick.\+svg.\+inkscape.\+Element\+Processor}}.
+
+
+\begin{DoxyCode}
+106                                             \{
+107         \textcolor{keywordflow}{if} (element.getNodeName().equals(\textcolor{stringliteral}{"polygon"})) \{
+108             \textcolor{keywordflow}{return} \textcolor{keyword}{true};
+109         \}
+110         
+111         \textcolor{keywordflow}{if} (element.getNodeName().equals(\textcolor{stringliteral}{"path"})) \{
+112             \textcolor{keywordflow}{if} (!\textcolor{stringliteral}{"arc"}.equals(element.getAttributeNS(Util.SODIPODI, \textcolor{stringliteral}{"type"}))) \{
+113                 \textcolor{keywordflow}{return} \textcolor{keyword}{true};
+114             \}
+115         \}
+116         
+117         \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+118     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1svg_1_1inkscape_1_1_polygon_processor_afe4b2aaaa0651a682fad619a9dddf870}\label{classorg_1_1newdawn_1_1slick_1_1svg_1_1inkscape_1_1_polygon_processor_afe4b2aaaa0651a682fad619a9dddf870}} 
+\index{org\+::newdawn\+::slick\+::svg\+::inkscape\+::\+Polygon\+Processor@{org\+::newdawn\+::slick\+::svg\+::inkscape\+::\+Polygon\+Processor}!process@{process}}
+\index{process@{process}!org\+::newdawn\+::slick\+::svg\+::inkscape\+::\+Polygon\+Processor@{org\+::newdawn\+::slick\+::svg\+::inkscape\+::\+Polygon\+Processor}}
+\subsubsection{\texorpdfstring{process()}{process()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+svg.\+inkscape.\+Polygon\+Processor.\+process (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1svg_1_1_loader}{Loader}}}]{loader,  }\item[{Element}]{element,  }\item[{\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1_diagram}{Diagram}}}]{diagram,  }\item[{Transform}]{t }\end{DoxyParamCaption}) throws \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1_parsing_exception}{Parsing\+Exception}}\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1svg_1_1inkscape_1_1_element_processor_acd170a9e1119481edae885780db59a2e}{org.\+newdawn.\+slick.\+svg.\+inkscape.\+Element\+Processor\+::process}}(\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1svg_1_1_loader}{org.\+newdawn.\+slick.\+svg.\+Loader}}, org.\+w3c.\+dom.\+Element, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1_diagram}{org.\+newdawn.\+slick.\+svg.\+Diagram}}, org.\+newdawn.\+slick.\+geom.\+Transform) 
+\end{DoxySeeAlso}
+
+
+Implements \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1svg_1_1inkscape_1_1_element_processor_acd170a9e1119481edae885780db59a2e}{org.\+newdawn.\+slick.\+svg.\+inkscape.\+Element\+Processor}}.
+
+
+\begin{DoxyCode}
+82                                                                                                            
+         \{
+83         Transform transform = Util.getTransform(element);
+84         transform = \textcolor{keyword}{new} Transform(t, transform); 
+85         
+86         String points = element.getAttribute(\textcolor{stringliteral}{"points"});
+87         \textcolor{keywordflow}{if} (element.getNodeName().equals(\textcolor{stringliteral}{"path"})) \{
+88             points = element.getAttribute(\textcolor{stringliteral}{"d"});
+89         \}
+90         
+91         StringTokenizer tokens = \textcolor{keyword}{new} StringTokenizer(points, \textcolor{stringliteral}{", "});
+92         Polygon poly = \textcolor{keyword}{new} Polygon();
+93         \textcolor{keywordtype}{int} count = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1inkscape_1_1_polygon_processor_ac886c9f2c9de6f293db4158e6161b42a}{processPoly}}(poly, element, tokens);
+94         
+95         NonGeometricData data = Util.getNonGeometricData(element);
+96         \textcolor{keywordflow}{if} (count > 3) \{
+97             Shape shape = poly.transform(transform);
+98             
+99             diagram.addFigure(\textcolor{keyword}{new} Figure(Figure.POLYGON, shape, data, transform));
+100         \} 
+101     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1svg_1_1inkscape_1_1_polygon_processor_ac886c9f2c9de6f293db4158e6161b42a}\label{classorg_1_1newdawn_1_1slick_1_1svg_1_1inkscape_1_1_polygon_processor_ac886c9f2c9de6f293db4158e6161b42a}} 
+\index{org\+::newdawn\+::slick\+::svg\+::inkscape\+::\+Polygon\+Processor@{org\+::newdawn\+::slick\+::svg\+::inkscape\+::\+Polygon\+Processor}!process\+Poly@{process\+Poly}}
+\index{process\+Poly@{process\+Poly}!org\+::newdawn\+::slick\+::svg\+::inkscape\+::\+Polygon\+Processor@{org\+::newdawn\+::slick\+::svg\+::inkscape\+::\+Polygon\+Processor}}
+\subsubsection{\texorpdfstring{process\+Poly()}{processPoly()}}
+{\footnotesize\ttfamily static int org.\+newdawn.\+slick.\+svg.\+inkscape.\+Polygon\+Processor.\+process\+Poly (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_polygon}{Polygon}}}]{poly,  }\item[{Element}]{element,  }\item[{String\+Tokenizer}]{tokens }\end{DoxyParamCaption}) throws \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1_parsing_exception}{Parsing\+Exception}}\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}, {\ttfamily [private]}}
+
+Process the points in a polygon definition
+
+
+\begin{DoxyParams}{Parameters}
+{\em poly} & The polygon being built \\
+\hline
+{\em element} & The X\+ML element being read \\
+\hline
+{\em tokens} & The tokens representing the path \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The number of points found 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1_parsing_exception}{Parsing\+Exception}}} & Indicates an invalid token in the path \\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyCode}
+32                                                                                                            
+             \{
+33         \textcolor{keywordtype}{int} count = 0;
+34         
+35         ArrayList pts = \textcolor{keyword}{new} ArrayList();
+36         \textcolor{keywordtype}{boolean} moved = \textcolor{keyword}{false};
+37         \textcolor{keywordtype}{boolean} closed = \textcolor{keyword}{false};
+38         
+39         \textcolor{keywordflow}{while} (tokens.hasMoreTokens()) \{
+40             String nextToken = tokens.nextToken();
+41             \textcolor{keywordflow}{if} (nextToken.equals(\textcolor{stringliteral}{"L"})) \{
+42                 \textcolor{keywordflow}{continue};
+43             \}
+44             \textcolor{keywordflow}{if} (nextToken.equals(\textcolor{stringliteral}{"z"})) \{
+45                 closed = \textcolor{keyword}{true};
+46                 \textcolor{keywordflow}{break};
+47             \}
+48             \textcolor{keywordflow}{if} (nextToken.equals(\textcolor{stringliteral}{"M"})) \{
+49                 \textcolor{keywordflow}{if} (!moved) \{
+50                     moved = \textcolor{keyword}{true};
+51                     \textcolor{keywordflow}{continue};
+52                 \}
+53                 
+54                 \textcolor{keywordflow}{return} 0;
+55             \}
+56             \textcolor{keywordflow}{if} (nextToken.equals(\textcolor{stringliteral}{"C"})) \{
+57                 \textcolor{keywordflow}{return} 0;
+58             \}
+59             
+60             String tokenX = nextToken;
+61             String tokenY = tokens.nextToken();
+62             
+63             \textcolor{keywordflow}{try} \{
+64                 \textcolor{keywordtype}{float} x = Float.parseFloat(tokenX);
+65                 \textcolor{keywordtype}{float} y = Float.parseFloat(tokenY);
+66                 
+67                 poly.addPoint(x,y);
+68                 count++;
+69             \} \textcolor{keywordflow}{catch} (NumberFormatException e) \{
+70                 \textcolor{keywordflow}{throw} \textcolor{keyword}{new} ParsingException(element.getAttribute(\textcolor{stringliteral}{"id"}), \textcolor{stringliteral}{"Invalid token in points list"}, e);
+71             \}
+72         \}
+73         
+74         poly.setClosed(closed);
+75         \textcolor{keywordflow}{return} count;
+76     \}
+\end{DoxyCode}

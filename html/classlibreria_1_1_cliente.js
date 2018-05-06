@@ -1,0 +1,25 @@
+var classlibreria_1_1_cliente =
+[
+    [ "Cliente", "classlibreria_1_1_cliente.html#a1f6808b375b657135a0e5fc66d37c98c", null ],
+    [ "getApellido1", "classlibreria_1_1_cliente.html#a37166f7280771768679b29491274a82f", null ],
+    [ "getApellido2", "classlibreria_1_1_cliente.html#a884280e953d829fad5160128b11315af", null ],
+    [ "getContrasena", "classlibreria_1_1_cliente.html#afd6dd9ddfe54f2c7a1091268901bc0ab", null ],
+    [ "getNif", "classlibreria_1_1_cliente.html#afd350599d37e993f4ab78c71c5a0979d", null ],
+    [ "getNombre", "classlibreria_1_1_cliente.html#a4d318e045a10b2b77ef640e66c99e15c", null ],
+    [ "getNombreusuario", "classlibreria_1_1_cliente.html#a8456709fe1bc5fe72550413bb38b2ce3", null ],
+    [ "getTipousuario", "classlibreria_1_1_cliente.html#a3111aacdea652c8dd96664c643c3c52a", null ],
+    [ "setApellido1", "classlibreria_1_1_cliente.html#ad0a2505f0630318dca0221c8550c32b8", null ],
+    [ "setApellido2", "classlibreria_1_1_cliente.html#ad147b6ba3437c2fbcdd79094c7d07743", null ],
+    [ "setContrasena", "classlibreria_1_1_cliente.html#a7b98051bfe7df2214d6e191a72cd3e11", null ],
+    [ "setNif", "classlibreria_1_1_cliente.html#a2c5a66f0c73787d2f0e316a2a01159f1", null ],
+    [ "setNombre", "classlibreria_1_1_cliente.html#a6c073e25efa594766ab6f322bc566d1b", null ],
+    [ "setNombreusuario", "classlibreria_1_1_cliente.html#aace12b3fcc4e17f5aa871230ed25878d", null ],
+    [ "setTipousuario", "classlibreria_1_1_cliente.html#a4f67320d89bdf56838f95fa9cf493e45", null ],
+    [ "apellido1", "classlibreria_1_1_cliente.html#a9f1a869f9f8b0e14df73be50e636532e", null ],
+    [ "apellido2", "classlibreria_1_1_cliente.html#a9b97686667a729a4c0fd8b19d72b389a", null ],
+    [ "contrasena", "classlibreria_1_1_cliente.html#a0d80894cab7e9d1e3b531d29cf160737", null ],
+    [ "nif", "classlibreria_1_1_cliente.html#a6d50af0b6448c8ac66e9ae08c436cdfe", null ],
+    [ "nombre", "classlibreria_1_1_cliente.html#ab7862ac1d181becc7cf8a88ecf07b570", null ],
+    [ "nombreusuario", "classlibreria_1_1_cliente.html#a3018645e586ef4b1abef3ac1a7f2a464", null ],
+    [ "tipousuario", "classlibreria_1_1_cliente.html#a7b289ea086987adbd145bf6dc8024e9e", null ]
+];

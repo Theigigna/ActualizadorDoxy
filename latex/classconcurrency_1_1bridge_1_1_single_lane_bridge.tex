@@ -1,0 +1,250 @@
+\hypertarget{classconcurrency_1_1bridge_1_1_single_lane_bridge}{}\section{concurrency.\+bridge.\+Single\+Lane\+Bridge Class Reference}
+\label{classconcurrency_1_1bridge_1_1_single_lane_bridge}\index{concurrency.\+bridge.\+Single\+Lane\+Bridge@{concurrency.\+bridge.\+Single\+Lane\+Bridge}}
+Inheritance diagram for concurrency.\+bridge.\+Single\+Lane\+Bridge\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classconcurrency_1_1bridge_1_1_single_lane_bridge}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classconcurrency_1_1bridge_1_1_single_lane_bridge_a7e263daa87373f5eddda5822184c882e}{init}} ()
+\item 
+void \mbox{\hyperlink{classconcurrency_1_1bridge_1_1_single_lane_bridge_a26a57311e0ba405b17a99ee4cf37b929}{start}} ()
+\item 
+void \mbox{\hyperlink{classconcurrency_1_1bridge_1_1_single_lane_bridge_a51eb161521f0daea82f254d3eac1b3bd}{stop}} ()
+\end{DoxyCompactItemize}
+\subsection*{Package Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classconcurrency_1_1bridge_1_1_bridge_canvas}{Bridge\+Canvas}} \mbox{\hyperlink{classconcurrency_1_1bridge_1_1_single_lane_bridge_a9e5dd77ddd8d067890e37bdb92bcb5e5}{display}}
+\item 
+Button \mbox{\hyperlink{classconcurrency_1_1bridge_1_1_single_lane_bridge_ad2e50f105be9d4a771650080d1aa586f}{restart}}
+\item 
+Button \mbox{\hyperlink{classconcurrency_1_1bridge_1_1_single_lane_bridge_ae038eac0222c7e87f00367f7dad2ff77}{freeze}}
+\item 
+Button \mbox{\hyperlink{classconcurrency_1_1bridge_1_1_single_lane_bridge_a24f20b97d3e6eac70eee68a5b9a41edb}{onecar}}
+\item 
+Button \mbox{\hyperlink{classconcurrency_1_1bridge_1_1_single_lane_bridge_a3e064007da160275ffe29557a2097a4a}{twocar}}
+\item 
+Button \mbox{\hyperlink{classconcurrency_1_1bridge_1_1_single_lane_bridge_ae901031a7ed238a83f5bff437b2dfc93}{threecar}}
+\item 
+Checkbox \mbox{\hyperlink{classconcurrency_1_1bridge_1_1_single_lane_bridge_ae84cba52e0dfed9d908460163017ddfb}{fair}}
+\item 
+Checkbox \mbox{\hyperlink{classconcurrency_1_1bridge_1_1_single_lane_bridge_ac9b96efc9ee7a95fb5b71c166dc4ced5}{safe}}
+\item 
+boolean \mbox{\hyperlink{classconcurrency_1_1bridge_1_1_single_lane_bridge_a40275814ea4d9160ab1f700ca4154eb7}{fixed}} = false
+\item 
+int \mbox{\hyperlink{classconcurrency_1_1bridge_1_1_single_lane_bridge_ae8bd96d4cf6d5d7b71ad0acbe1bba3df}{max\+Car}} = 1
+\item 
+Thread \mbox{\hyperlink{classconcurrency_1_1bridge_1_1_single_lane_bridge_a17e1de5011188dd8038e1960b5679f36}{red}} \mbox{[}$\,$\mbox{]}
+\item 
+Thread \mbox{\hyperlink{classconcurrency_1_1bridge_1_1_single_lane_bridge_ad315140555d509cea539e61ae896a16d}{blue}} \mbox{[}$\,$\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classconcurrency_1_1bridge_1_1_single_lane_bridge_a7e263daa87373f5eddda5822184c882e}\label{classconcurrency_1_1bridge_1_1_single_lane_bridge_a7e263daa87373f5eddda5822184c882e}} 
+\index{concurrency\+::bridge\+::\+Single\+Lane\+Bridge@{concurrency\+::bridge\+::\+Single\+Lane\+Bridge}!init@{init}}
+\index{init@{init}!concurrency\+::bridge\+::\+Single\+Lane\+Bridge@{concurrency\+::bridge\+::\+Single\+Lane\+Bridge}}
+\subsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily void concurrency.\+bridge.\+Single\+Lane\+Bridge.\+init (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+23                        \{
+24         setLayout(\textcolor{keyword}{new} BorderLayout());
+25         \mbox{\hyperlink{classconcurrency_1_1bridge_1_1_single_lane_bridge_a9e5dd77ddd8d067890e37bdb92bcb5e5}{display}} = \textcolor{keyword}{new} BridgeCanvas(\textcolor{keyword}{this});
+26         add(\textcolor{stringliteral}{"Center"},\mbox{\hyperlink{classconcurrency_1_1bridge_1_1_single_lane_bridge_a9e5dd77ddd8d067890e37bdb92bcb5e5}{display}});
+27         \mbox{\hyperlink{classconcurrency_1_1bridge_1_1_single_lane_bridge_ad2e50f105be9d4a771650080d1aa586f}{restart}} = \textcolor{keyword}{new} Button(\textcolor{stringliteral}{"Restart"});
+28         \mbox{\hyperlink{classconcurrency_1_1bridge_1_1_single_lane_bridge_ad2e50f105be9d4a771650080d1aa586f}{restart}}.addActionListener(\textcolor{keyword}{new} ActionListener() \{
+29            \textcolor{keyword}{public} \textcolor{keywordtype}{void} actionPerformed(ActionEvent e) \{
+30              \mbox{\hyperlink{classconcurrency_1_1bridge_1_1_single_lane_bridge_a9e5dd77ddd8d067890e37bdb92bcb5e5}{display}}.\mbox{\hyperlink{classconcurrency_1_1bridge_1_1_bridge_canvas_af3ce80d4ece527c54b0e7eb74ce75af4}{thaw}}();
+31            \}
+32         \});
+33         
+34         \mbox{\hyperlink{classconcurrency_1_1bridge_1_1_single_lane_bridge_ae038eac0222c7e87f00367f7dad2ff77}{freeze}} = \textcolor{keyword}{new} Button(\textcolor{stringliteral}{"Freeze"});
+35         \mbox{\hyperlink{classconcurrency_1_1bridge_1_1_single_lane_bridge_ae038eac0222c7e87f00367f7dad2ff77}{freeze}}.addActionListener(\textcolor{keyword}{new} ActionListener() \{
+36            \textcolor{keyword}{public} \textcolor{keywordtype}{void} actionPerformed(ActionEvent e) \{
+37              \mbox{\hyperlink{classconcurrency_1_1bridge_1_1_single_lane_bridge_a9e5dd77ddd8d067890e37bdb92bcb5e5}{display}}.\mbox{\hyperlink{classconcurrency_1_1bridge_1_1_bridge_canvas_a777eb5e18c6ee3a77ef029230101f2d1}{freeze}}();
+38            \}
+39         \});
+40         
+41         \mbox{\hyperlink{classconcurrency_1_1bridge_1_1_single_lane_bridge_a24f20b97d3e6eac70eee68a5b9a41edb}{onecar}} = \textcolor{keyword}{new} Button(\textcolor{stringliteral}{"One Car"});
+42         \mbox{\hyperlink{classconcurrency_1_1bridge_1_1_single_lane_bridge_a24f20b97d3e6eac70eee68a5b9a41edb}{onecar}}.addActionListener(\textcolor{keyword}{new} ActionListener() \{
+43            \textcolor{keyword}{public} \textcolor{keywordtype}{void} actionPerformed(ActionEvent e) \{
+44              \mbox{\hyperlink{classconcurrency_1_1bridge_1_1_single_lane_bridge_a51eb161521f0daea82f254d3eac1b3bd}{stop}}();
+45              \mbox{\hyperlink{classconcurrency_1_1bridge_1_1_single_lane_bridge_ae8bd96d4cf6d5d7b71ad0acbe1bba3df}{maxCar}} = 1;
+46              \mbox{\hyperlink{classconcurrency_1_1bridge_1_1_single_lane_bridge_a26a57311e0ba405b17a99ee4cf37b929}{start}}();        
+47            \}
+48         \});
+49         
+50         \mbox{\hyperlink{classconcurrency_1_1bridge_1_1_single_lane_bridge_a3e064007da160275ffe29557a2097a4a}{twocar}} = \textcolor{keyword}{new} Button(\textcolor{stringliteral}{"Two Cars"});
+51         \mbox{\hyperlink{classconcurrency_1_1bridge_1_1_single_lane_bridge_a3e064007da160275ffe29557a2097a4a}{twocar}}.addActionListener(\textcolor{keyword}{new} ActionListener() \{
+52             \textcolor{keyword}{public} \textcolor{keywordtype}{void} actionPerformed(ActionEvent e) \{
+53               \mbox{\hyperlink{classconcurrency_1_1bridge_1_1_single_lane_bridge_a51eb161521f0daea82f254d3eac1b3bd}{stop}}();
+54               \mbox{\hyperlink{classconcurrency_1_1bridge_1_1_single_lane_bridge_ae8bd96d4cf6d5d7b71ad0acbe1bba3df}{maxCar}} = 2;
+55               \mbox{\hyperlink{classconcurrency_1_1bridge_1_1_single_lane_bridge_a26a57311e0ba405b17a99ee4cf37b929}{start}}();        
+56             \}
+57          \});
+58         
+59         \mbox{\hyperlink{classconcurrency_1_1bridge_1_1_single_lane_bridge_ae901031a7ed238a83f5bff437b2dfc93}{threecar}} = \textcolor{keyword}{new} Button(\textcolor{stringliteral}{"Three Cars"});
+60         \mbox{\hyperlink{classconcurrency_1_1bridge_1_1_single_lane_bridge_ae901031a7ed238a83f5bff437b2dfc93}{threecar}}.addActionListener(\textcolor{keyword}{new} ActionListener() \{
+61             \textcolor{keyword}{public} \textcolor{keywordtype}{void} actionPerformed(ActionEvent e) \{
+62               \mbox{\hyperlink{classconcurrency_1_1bridge_1_1_single_lane_bridge_a51eb161521f0daea82f254d3eac1b3bd}{stop}}();
+63               \mbox{\hyperlink{classconcurrency_1_1bridge_1_1_single_lane_bridge_ae8bd96d4cf6d5d7b71ad0acbe1bba3df}{maxCar}} = 3;
+64               \mbox{\hyperlink{classconcurrency_1_1bridge_1_1_single_lane_bridge_a26a57311e0ba405b17a99ee4cf37b929}{start}}();        
+65             \}
+66          \});
+67         
+68         \mbox{\hyperlink{classconcurrency_1_1bridge_1_1_single_lane_bridge_ac9b96efc9ee7a95fb5b71c166dc4ced5}{safe}} = \textcolor{keyword}{new} Checkbox(\textcolor{stringliteral}{"Safe"},null,\textcolor{keyword}{true});
+69         \mbox{\hyperlink{classconcurrency_1_1bridge_1_1_single_lane_bridge_ac9b96efc9ee7a95fb5b71c166dc4ced5}{safe}}.setBackground(Color.lightGray);
+70         \mbox{\hyperlink{classconcurrency_1_1bridge_1_1_single_lane_bridge_ac9b96efc9ee7a95fb5b71c166dc4ced5}{safe}}.addItemListener(\textcolor{keyword}{new} ItemListener() \{
+71             \textcolor{keyword}{public} \textcolor{keywordtype}{void} itemStateChanged(ItemEvent e) \{
+72               \mbox{\hyperlink{classconcurrency_1_1bridge_1_1_single_lane_bridge_a51eb161521f0daea82f254d3eac1b3bd}{stop}}();
+73               \mbox{\hyperlink{classconcurrency_1_1bridge_1_1_single_lane_bridge_a26a57311e0ba405b17a99ee4cf37b929}{start}}();        
+74             \}
+75          \});
+76     
+77         \mbox{\hyperlink{classconcurrency_1_1bridge_1_1_single_lane_bridge_ae84cba52e0dfed9d908460163017ddfb}{fair}} = \textcolor{keyword}{new} Checkbox(\textcolor{stringliteral}{"Fair"},null,\textcolor{keyword}{false});
+78         \mbox{\hyperlink{classconcurrency_1_1bridge_1_1_single_lane_bridge_ae84cba52e0dfed9d908460163017ddfb}{fair}}.setBackground(Color.lightGray);
+79         \mbox{\hyperlink{classconcurrency_1_1bridge_1_1_single_lane_bridge_ae84cba52e0dfed9d908460163017ddfb}{fair}}.addItemListener(\textcolor{keyword}{new} ItemListener() \{
+80             \textcolor{keyword}{public} \textcolor{keywordtype}{void} itemStateChanged(ItemEvent e) \{
+81               \mbox{\hyperlink{classconcurrency_1_1bridge_1_1_single_lane_bridge_a51eb161521f0daea82f254d3eac1b3bd}{stop}}();
+82               \mbox{\hyperlink{classconcurrency_1_1bridge_1_1_single_lane_bridge_a26a57311e0ba405b17a99ee4cf37b929}{start}}();        
+83             \}
+84          \});
+85         
+86         Panel p1 = \textcolor{keyword}{new} Panel();
+87         p1.setLayout(\textcolor{keyword}{new} FlowLayout());
+88         p1.add(\mbox{\hyperlink{classconcurrency_1_1bridge_1_1_single_lane_bridge_ae038eac0222c7e87f00367f7dad2ff77}{freeze}});
+89         p1.add(\mbox{\hyperlink{classconcurrency_1_1bridge_1_1_single_lane_bridge_ad2e50f105be9d4a771650080d1aa586f}{restart}});
+90         p1.add(\mbox{\hyperlink{classconcurrency_1_1bridge_1_1_single_lane_bridge_a24f20b97d3e6eac70eee68a5b9a41edb}{onecar}});
+91         p1.add(\mbox{\hyperlink{classconcurrency_1_1bridge_1_1_single_lane_bridge_a3e064007da160275ffe29557a2097a4a}{twocar}});
+92         p1.add(\mbox{\hyperlink{classconcurrency_1_1bridge_1_1_single_lane_bridge_ae901031a7ed238a83f5bff437b2dfc93}{threecar}});
+93         p1.add(\mbox{\hyperlink{classconcurrency_1_1bridge_1_1_single_lane_bridge_ac9b96efc9ee7a95fb5b71c166dc4ced5}{safe}});
+94         p1.add(\mbox{\hyperlink{classconcurrency_1_1bridge_1_1_single_lane_bridge_ae84cba52e0dfed9d908460163017ddfb}{fair}});
+95         add(\textcolor{stringliteral}{"South"},p1);
+96         setBackground(Color.lightGray);
+97    \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classconcurrency_1_1bridge_1_1_single_lane_bridge_a26a57311e0ba405b17a99ee4cf37b929}\label{classconcurrency_1_1bridge_1_1_single_lane_bridge_a26a57311e0ba405b17a99ee4cf37b929}} 
+\index{concurrency\+::bridge\+::\+Single\+Lane\+Bridge@{concurrency\+::bridge\+::\+Single\+Lane\+Bridge}!start@{start}}
+\index{start@{start}!concurrency\+::bridge\+::\+Single\+Lane\+Bridge@{concurrency\+::bridge\+::\+Single\+Lane\+Bridge}}
+\subsubsection{\texorpdfstring{start()}{start()}}
+{\footnotesize\ttfamily void concurrency.\+bridge.\+Single\+Lane\+Bridge.\+start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+100                         \{
+101         \mbox{\hyperlink{classconcurrency_1_1bridge_1_1_single_lane_bridge_a17e1de5011188dd8038e1960b5679f36}{red}} = \textcolor{keyword}{new} Thread[\mbox{\hyperlink{classconcurrency_1_1bridge_1_1_single_lane_bridge_ae8bd96d4cf6d5d7b71ad0acbe1bba3df}{maxCar}}];
+102         \mbox{\hyperlink{classconcurrency_1_1bridge_1_1_single_lane_bridge_ad315140555d509cea539e61ae896a16d}{blue}} = \textcolor{keyword}{new} Thread[\mbox{\hyperlink{classconcurrency_1_1bridge_1_1_single_lane_bridge_ae8bd96d4cf6d5d7b71ad0acbe1bba3df}{maxCar}}];
+103         \mbox{\hyperlink{classconcurrency_1_1bridge_1_1_single_lane_bridge_a9e5dd77ddd8d067890e37bdb92bcb5e5}{display}}.\mbox{\hyperlink{classconcurrency_1_1bridge_1_1_bridge_canvas_abe6fd58a5a831f80fd3716103cc12672}{init}}(\mbox{\hyperlink{classconcurrency_1_1bridge_1_1_single_lane_bridge_ae8bd96d4cf6d5d7b71ad0acbe1bba3df}{maxCar}});
+104         Bridge b;
+105         \textcolor{keywordflow}{if} (\mbox{\hyperlink{classconcurrency_1_1bridge_1_1_single_lane_bridge_ae84cba52e0dfed9d908460163017ddfb}{fair}}.getState() && \mbox{\hyperlink{classconcurrency_1_1bridge_1_1_single_lane_bridge_ac9b96efc9ee7a95fb5b71c166dc4ced5}{safe}}.getState())
+106             b = \textcolor{keyword}{new} FairBridge();
+107         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} ( \mbox{\hyperlink{classconcurrency_1_1bridge_1_1_single_lane_bridge_ac9b96efc9ee7a95fb5b71c166dc4ced5}{safe}}.getState())
+108             b = \textcolor{keyword}{new} SafeBridge();
+109         \textcolor{keywordflow}{else}
+110             b = \textcolor{keyword}{new} Bridge();
+111         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i<\mbox{\hyperlink{classconcurrency_1_1bridge_1_1_single_lane_bridge_ae8bd96d4cf6d5d7b71ad0acbe1bba3df}{maxCar}}; i++) \{
+112             \mbox{\hyperlink{classconcurrency_1_1bridge_1_1_single_lane_bridge_a17e1de5011188dd8038e1960b5679f36}{red}}[i] = \textcolor{keyword}{new} Thread(\textcolor{keyword}{new} RedCar(b,\mbox{\hyperlink{classconcurrency_1_1bridge_1_1_single_lane_bridge_a9e5dd77ddd8d067890e37bdb92bcb5e5}{display}},i));
+113             \mbox{\hyperlink{classconcurrency_1_1bridge_1_1_single_lane_bridge_ad315140555d509cea539e61ae896a16d}{blue}}[i] = \textcolor{keyword}{new} Thread(\textcolor{keyword}{new} BlueCar(b,\mbox{\hyperlink{classconcurrency_1_1bridge_1_1_single_lane_bridge_a9e5dd77ddd8d067890e37bdb92bcb5e5}{display}},i));
+114         \}
+115         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i<\mbox{\hyperlink{classconcurrency_1_1bridge_1_1_single_lane_bridge_ae8bd96d4cf6d5d7b71ad0acbe1bba3df}{maxCar}}; i++) \{
+116             \mbox{\hyperlink{classconcurrency_1_1bridge_1_1_single_lane_bridge_a17e1de5011188dd8038e1960b5679f36}{red}}[i].start();
+117             \mbox{\hyperlink{classconcurrency_1_1bridge_1_1_single_lane_bridge_ad315140555d509cea539e61ae896a16d}{blue}}[i].start();
+118         \}
+119     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classconcurrency_1_1bridge_1_1_single_lane_bridge_a51eb161521f0daea82f254d3eac1b3bd}\label{classconcurrency_1_1bridge_1_1_single_lane_bridge_a51eb161521f0daea82f254d3eac1b3bd}} 
+\index{concurrency\+::bridge\+::\+Single\+Lane\+Bridge@{concurrency\+::bridge\+::\+Single\+Lane\+Bridge}!stop@{stop}}
+\index{stop@{stop}!concurrency\+::bridge\+::\+Single\+Lane\+Bridge@{concurrency\+::bridge\+::\+Single\+Lane\+Bridge}}
+\subsubsection{\texorpdfstring{stop()}{stop()}}
+{\footnotesize\ttfamily void concurrency.\+bridge.\+Single\+Lane\+Bridge.\+stop (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+121                        \{
+122         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i<\mbox{\hyperlink{classconcurrency_1_1bridge_1_1_single_lane_bridge_ae8bd96d4cf6d5d7b71ad0acbe1bba3df}{maxCar}}; i++) \{
+123             \mbox{\hyperlink{classconcurrency_1_1bridge_1_1_single_lane_bridge_a17e1de5011188dd8038e1960b5679f36}{red}}[i].interrupt();
+124             \mbox{\hyperlink{classconcurrency_1_1bridge_1_1_single_lane_bridge_ad315140555d509cea539e61ae896a16d}{blue}}[i].interrupt();
+125         \}
+126     \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classconcurrency_1_1bridge_1_1_single_lane_bridge_ad315140555d509cea539e61ae896a16d}\label{classconcurrency_1_1bridge_1_1_single_lane_bridge_ad315140555d509cea539e61ae896a16d}} 
+\index{concurrency\+::bridge\+::\+Single\+Lane\+Bridge@{concurrency\+::bridge\+::\+Single\+Lane\+Bridge}!blue@{blue}}
+\index{blue@{blue}!concurrency\+::bridge\+::\+Single\+Lane\+Bridge@{concurrency\+::bridge\+::\+Single\+Lane\+Bridge}}
+\subsubsection{\texorpdfstring{blue}{blue}}
+{\footnotesize\ttfamily Thread concurrency.\+bridge.\+Single\+Lane\+Bridge.\+blue\mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\ttfamily [package]}}
+
+\mbox{\Hypertarget{classconcurrency_1_1bridge_1_1_single_lane_bridge_a9e5dd77ddd8d067890e37bdb92bcb5e5}\label{classconcurrency_1_1bridge_1_1_single_lane_bridge_a9e5dd77ddd8d067890e37bdb92bcb5e5}} 
+\index{concurrency\+::bridge\+::\+Single\+Lane\+Bridge@{concurrency\+::bridge\+::\+Single\+Lane\+Bridge}!display@{display}}
+\index{display@{display}!concurrency\+::bridge\+::\+Single\+Lane\+Bridge@{concurrency\+::bridge\+::\+Single\+Lane\+Bridge}}
+\subsubsection{\texorpdfstring{display}{display}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classconcurrency_1_1bridge_1_1_bridge_canvas}{Bridge\+Canvas}} concurrency.\+bridge.\+Single\+Lane\+Bridge.\+display\hspace{0.3cm}{\ttfamily [package]}}
+
+\mbox{\Hypertarget{classconcurrency_1_1bridge_1_1_single_lane_bridge_ae84cba52e0dfed9d908460163017ddfb}\label{classconcurrency_1_1bridge_1_1_single_lane_bridge_ae84cba52e0dfed9d908460163017ddfb}} 
+\index{concurrency\+::bridge\+::\+Single\+Lane\+Bridge@{concurrency\+::bridge\+::\+Single\+Lane\+Bridge}!fair@{fair}}
+\index{fair@{fair}!concurrency\+::bridge\+::\+Single\+Lane\+Bridge@{concurrency\+::bridge\+::\+Single\+Lane\+Bridge}}
+\subsubsection{\texorpdfstring{fair}{fair}}
+{\footnotesize\ttfamily Checkbox concurrency.\+bridge.\+Single\+Lane\+Bridge.\+fair\hspace{0.3cm}{\ttfamily [package]}}
+
+\mbox{\Hypertarget{classconcurrency_1_1bridge_1_1_single_lane_bridge_a40275814ea4d9160ab1f700ca4154eb7}\label{classconcurrency_1_1bridge_1_1_single_lane_bridge_a40275814ea4d9160ab1f700ca4154eb7}} 
+\index{concurrency\+::bridge\+::\+Single\+Lane\+Bridge@{concurrency\+::bridge\+::\+Single\+Lane\+Bridge}!fixed@{fixed}}
+\index{fixed@{fixed}!concurrency\+::bridge\+::\+Single\+Lane\+Bridge@{concurrency\+::bridge\+::\+Single\+Lane\+Bridge}}
+\subsubsection{\texorpdfstring{fixed}{fixed}}
+{\footnotesize\ttfamily boolean concurrency.\+bridge.\+Single\+Lane\+Bridge.\+fixed = false\hspace{0.3cm}{\ttfamily [package]}}
+
+\mbox{\Hypertarget{classconcurrency_1_1bridge_1_1_single_lane_bridge_ae038eac0222c7e87f00367f7dad2ff77}\label{classconcurrency_1_1bridge_1_1_single_lane_bridge_ae038eac0222c7e87f00367f7dad2ff77}} 
+\index{concurrency\+::bridge\+::\+Single\+Lane\+Bridge@{concurrency\+::bridge\+::\+Single\+Lane\+Bridge}!freeze@{freeze}}
+\index{freeze@{freeze}!concurrency\+::bridge\+::\+Single\+Lane\+Bridge@{concurrency\+::bridge\+::\+Single\+Lane\+Bridge}}
+\subsubsection{\texorpdfstring{freeze}{freeze}}
+{\footnotesize\ttfamily Button concurrency.\+bridge.\+Single\+Lane\+Bridge.\+freeze\hspace{0.3cm}{\ttfamily [package]}}
+
+\mbox{\Hypertarget{classconcurrency_1_1bridge_1_1_single_lane_bridge_ae8bd96d4cf6d5d7b71ad0acbe1bba3df}\label{classconcurrency_1_1bridge_1_1_single_lane_bridge_ae8bd96d4cf6d5d7b71ad0acbe1bba3df}} 
+\index{concurrency\+::bridge\+::\+Single\+Lane\+Bridge@{concurrency\+::bridge\+::\+Single\+Lane\+Bridge}!max\+Car@{max\+Car}}
+\index{max\+Car@{max\+Car}!concurrency\+::bridge\+::\+Single\+Lane\+Bridge@{concurrency\+::bridge\+::\+Single\+Lane\+Bridge}}
+\subsubsection{\texorpdfstring{max\+Car}{maxCar}}
+{\footnotesize\ttfamily int concurrency.\+bridge.\+Single\+Lane\+Bridge.\+max\+Car = 1\hspace{0.3cm}{\ttfamily [package]}}
+
+\mbox{\Hypertarget{classconcurrency_1_1bridge_1_1_single_lane_bridge_a24f20b97d3e6eac70eee68a5b9a41edb}\label{classconcurrency_1_1bridge_1_1_single_lane_bridge_a24f20b97d3e6eac70eee68a5b9a41edb}} 
+\index{concurrency\+::bridge\+::\+Single\+Lane\+Bridge@{concurrency\+::bridge\+::\+Single\+Lane\+Bridge}!onecar@{onecar}}
+\index{onecar@{onecar}!concurrency\+::bridge\+::\+Single\+Lane\+Bridge@{concurrency\+::bridge\+::\+Single\+Lane\+Bridge}}
+\subsubsection{\texorpdfstring{onecar}{onecar}}
+{\footnotesize\ttfamily Button concurrency.\+bridge.\+Single\+Lane\+Bridge.\+onecar\hspace{0.3cm}{\ttfamily [package]}}
+
+\mbox{\Hypertarget{classconcurrency_1_1bridge_1_1_single_lane_bridge_a17e1de5011188dd8038e1960b5679f36}\label{classconcurrency_1_1bridge_1_1_single_lane_bridge_a17e1de5011188dd8038e1960b5679f36}} 
+\index{concurrency\+::bridge\+::\+Single\+Lane\+Bridge@{concurrency\+::bridge\+::\+Single\+Lane\+Bridge}!red@{red}}
+\index{red@{red}!concurrency\+::bridge\+::\+Single\+Lane\+Bridge@{concurrency\+::bridge\+::\+Single\+Lane\+Bridge}}
+\subsubsection{\texorpdfstring{red}{red}}
+{\footnotesize\ttfamily Thread concurrency.\+bridge.\+Single\+Lane\+Bridge.\+red\mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\ttfamily [package]}}
+
+\mbox{\Hypertarget{classconcurrency_1_1bridge_1_1_single_lane_bridge_ad2e50f105be9d4a771650080d1aa586f}\label{classconcurrency_1_1bridge_1_1_single_lane_bridge_ad2e50f105be9d4a771650080d1aa586f}} 
+\index{concurrency\+::bridge\+::\+Single\+Lane\+Bridge@{concurrency\+::bridge\+::\+Single\+Lane\+Bridge}!restart@{restart}}
+\index{restart@{restart}!concurrency\+::bridge\+::\+Single\+Lane\+Bridge@{concurrency\+::bridge\+::\+Single\+Lane\+Bridge}}
+\subsubsection{\texorpdfstring{restart}{restart}}
+{\footnotesize\ttfamily Button concurrency.\+bridge.\+Single\+Lane\+Bridge.\+restart\hspace{0.3cm}{\ttfamily [package]}}
+
+\mbox{\Hypertarget{classconcurrency_1_1bridge_1_1_single_lane_bridge_ac9b96efc9ee7a95fb5b71c166dc4ced5}\label{classconcurrency_1_1bridge_1_1_single_lane_bridge_ac9b96efc9ee7a95fb5b71c166dc4ced5}} 
+\index{concurrency\+::bridge\+::\+Single\+Lane\+Bridge@{concurrency\+::bridge\+::\+Single\+Lane\+Bridge}!safe@{safe}}
+\index{safe@{safe}!concurrency\+::bridge\+::\+Single\+Lane\+Bridge@{concurrency\+::bridge\+::\+Single\+Lane\+Bridge}}
+\subsubsection{\texorpdfstring{safe}{safe}}
+{\footnotesize\ttfamily Checkbox concurrency.\+bridge.\+Single\+Lane\+Bridge.\+safe\hspace{0.3cm}{\ttfamily [package]}}
+
+\mbox{\Hypertarget{classconcurrency_1_1bridge_1_1_single_lane_bridge_ae901031a7ed238a83f5bff437b2dfc93}\label{classconcurrency_1_1bridge_1_1_single_lane_bridge_ae901031a7ed238a83f5bff437b2dfc93}} 
+\index{concurrency\+::bridge\+::\+Single\+Lane\+Bridge@{concurrency\+::bridge\+::\+Single\+Lane\+Bridge}!threecar@{threecar}}
+\index{threecar@{threecar}!concurrency\+::bridge\+::\+Single\+Lane\+Bridge@{concurrency\+::bridge\+::\+Single\+Lane\+Bridge}}
+\subsubsection{\texorpdfstring{threecar}{threecar}}
+{\footnotesize\ttfamily Button concurrency.\+bridge.\+Single\+Lane\+Bridge.\+threecar\hspace{0.3cm}{\ttfamily [package]}}
+
+\mbox{\Hypertarget{classconcurrency_1_1bridge_1_1_single_lane_bridge_a3e064007da160275ffe29557a2097a4a}\label{classconcurrency_1_1bridge_1_1_single_lane_bridge_a3e064007da160275ffe29557a2097a4a}} 
+\index{concurrency\+::bridge\+::\+Single\+Lane\+Bridge@{concurrency\+::bridge\+::\+Single\+Lane\+Bridge}!twocar@{twocar}}
+\index{twocar@{twocar}!concurrency\+::bridge\+::\+Single\+Lane\+Bridge@{concurrency\+::bridge\+::\+Single\+Lane\+Bridge}}
+\subsubsection{\texorpdfstring{twocar}{twocar}}
+{\footnotesize\ttfamily Button concurrency.\+bridge.\+Single\+Lane\+Bridge.\+twocar\hspace{0.3cm}{\ttfamily [package]}}
+

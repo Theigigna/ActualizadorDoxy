@@ -1,0 +1,192 @@
+\hypertarget{classorg_1_1newdawn_1_1slick_1_1tests_1_1_pure_font_test}{}\section{org.\+newdawn.\+slick.\+tests.\+Pure\+Font\+Test Class Reference}
+\label{classorg_1_1newdawn_1_1slick_1_1tests_1_1_pure_font_test}\index{org.\+newdawn.\+slick.\+tests.\+Pure\+Font\+Test@{org.\+newdawn.\+slick.\+tests.\+Pure\+Font\+Test}}
+Inheritance diagram for org.\+newdawn.\+slick.\+tests.\+Pure\+Font\+Test\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.522012cm]{classorg_1_1newdawn_1_1slick_1_1tests_1_1_pure_font_test}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_pure_font_test_a13e63fb95747ce5891d5e790446988d0}{Pure\+Font\+Test}} ()
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_pure_font_test_a0b2030d353fc6c81925f6ce6e583c62c}{init}} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_game_container}{Game\+Container}} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_pure_font_test_afb97856ff89ea6b4957e845fcba255fe}{container}})  throws Slick\+Exception 
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_pure_font_test_a2a5d9e4f0b8dc1a768304c9747cede17}{render}} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_game_container}{Game\+Container}} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_pure_font_test_afb97856ff89ea6b4957e845fcba255fe}{container}}, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_graphics}{Graphics}} g)
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_pure_font_test_a87f85cc4bba2ae7c3ffdcdd62a8c387a}{update}} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_game_container}{Game\+Container}} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_pure_font_test_afb97856ff89ea6b4957e845fcba255fe}{container}}, int delta)  throws Slick\+Exception 
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_pure_font_test_adec56bd90adaf27d114e39cbb6b3c17b}{key\+Pressed}} (int key, char c)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_pure_font_test_af075b56a41973e4024f3ef30d9ac789f}{main}} (String\mbox{[}$\,$\mbox{]} argv)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1_font}{Font}} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_pure_font_test_a6a077c1e23810818363d7a01a69ddd82}{font}}
+\item 
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_image}{Image}} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_pure_font_test_abf4f2b16a8b53a263efe45591327f0b0}{image}}
+\end{DoxyCompactItemize}
+\subsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_app_game_container}{App\+Game\+Container}} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_pure_font_test_afb97856ff89ea6b4957e845fcba255fe}{container}}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+A test of the font rendering capabilities
+
+\begin{DoxyAuthor}{Author}
+kevin 
+\end{DoxyAuthor}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tests_1_1_pure_font_test_a13e63fb95747ce5891d5e790446988d0}\label{classorg_1_1newdawn_1_1slick_1_1tests_1_1_pure_font_test_a13e63fb95747ce5891d5e790446988d0}} 
+\index{org\+::newdawn\+::slick\+::tests\+::\+Pure\+Font\+Test@{org\+::newdawn\+::slick\+::tests\+::\+Pure\+Font\+Test}!Pure\+Font\+Test@{Pure\+Font\+Test}}
+\index{Pure\+Font\+Test@{Pure\+Font\+Test}!org\+::newdawn\+::slick\+::tests\+::\+Pure\+Font\+Test@{org\+::newdawn\+::slick\+::tests\+::\+Pure\+Font\+Test}}
+\subsubsection{\texorpdfstring{Pure\+Font\+Test()}{PureFontTest()}}
+{\footnotesize\ttfamily org.\+newdawn.\+slick.\+tests.\+Pure\+Font\+Test.\+Pure\+Font\+Test (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Create a new test for font rendering 
+\begin{DoxyCode}
+27                           \{
+28         super(\textcolor{stringliteral}{"Hiero Font Test"});
+29     \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tests_1_1_pure_font_test_a0b2030d353fc6c81925f6ce6e583c62c}\label{classorg_1_1newdawn_1_1slick_1_1tests_1_1_pure_font_test_a0b2030d353fc6c81925f6ce6e583c62c}} 
+\index{org\+::newdawn\+::slick\+::tests\+::\+Pure\+Font\+Test@{org\+::newdawn\+::slick\+::tests\+::\+Pure\+Font\+Test}!init@{init}}
+\index{init@{init}!org\+::newdawn\+::slick\+::tests\+::\+Pure\+Font\+Test@{org\+::newdawn\+::slick\+::tests\+::\+Pure\+Font\+Test}}
+\subsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+tests.\+Pure\+Font\+Test.\+init (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_game_container}{Game\+Container}}}]{container }\end{DoxyParamCaption}) throws \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_slick_exception}{Slick\+Exception}}\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1_game_ad2dd6affab08bb8fdb5fab0815957b7a}{org.\+newdawn.\+slick.\+Game\+::init}}(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_game_container}{org.\+newdawn.\+slick.\+Game\+Container}}) 
+\end{DoxySeeAlso}
+
+
+Implements \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1_game_ad2dd6affab08bb8fdb5fab0815957b7a}{org.\+newdawn.\+slick.\+Game}}.
+
+
+\begin{DoxyCode}
+34                                                                     \{
+35         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_pure_font_test_abf4f2b16a8b53a263efe45591327f0b0}{image}} = \textcolor{keyword}{new} Image(\textcolor{stringliteral}{"testdata/sky.jpg"});
+36         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_pure_font_test_a6a077c1e23810818363d7a01a69ddd82}{font}} = \textcolor{keyword}{new} AngelCodeFont(\textcolor{stringliteral}{"testdata/hiero.fnt"},\textcolor{stringliteral}{"testdata/hiero.png"});
+37     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tests_1_1_pure_font_test_adec56bd90adaf27d114e39cbb6b3c17b}\label{classorg_1_1newdawn_1_1slick_1_1tests_1_1_pure_font_test_adec56bd90adaf27d114e39cbb6b3c17b}} 
+\index{org\+::newdawn\+::slick\+::tests\+::\+Pure\+Font\+Test@{org\+::newdawn\+::slick\+::tests\+::\+Pure\+Font\+Test}!key\+Pressed@{key\+Pressed}}
+\index{key\+Pressed@{key\+Pressed}!org\+::newdawn\+::slick\+::tests\+::\+Pure\+Font\+Test@{org\+::newdawn\+::slick\+::tests\+::\+Pure\+Font\+Test}}
+\subsubsection{\texorpdfstring{key\+Pressed()}{keyPressed()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+tests.\+Pure\+Font\+Test.\+key\+Pressed (\begin{DoxyParamCaption}\item[{int}]{key,  }\item[{char}]{c }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_basic_game_a4fbb3345b5abf5ddd54a99466d07f02f}{org.\+newdawn.\+slick.\+Basic\+Game\+::key\+Pressed(int, char)}} 
+\end{DoxySeeAlso}
+
+
+Implements \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1_key_listener_ac0b0568a21ef486c4f51382614c196ef}{org.\+newdawn.\+slick.\+Key\+Listener}}.
+
+
+\begin{DoxyCode}
+57                                             \{
+58         \textcolor{keywordflow}{if} (key == Input.KEY\_ESCAPE) \{
+59             System.exit(0);
+60         \}
+61     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tests_1_1_pure_font_test_af075b56a41973e4024f3ef30d9ac789f}\label{classorg_1_1newdawn_1_1slick_1_1tests_1_1_pure_font_test_af075b56a41973e4024f3ef30d9ac789f}} 
+\index{org\+::newdawn\+::slick\+::tests\+::\+Pure\+Font\+Test@{org\+::newdawn\+::slick\+::tests\+::\+Pure\+Font\+Test}!main@{main}}
+\index{main@{main}!org\+::newdawn\+::slick\+::tests\+::\+Pure\+Font\+Test@{org\+::newdawn\+::slick\+::tests\+::\+Pure\+Font\+Test}}
+\subsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily static void org.\+newdawn.\+slick.\+tests.\+Pure\+Font\+Test.\+main (\begin{DoxyParamCaption}\item[{String \mbox{[}$\,$\mbox{]}}]{argv }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Entry point to our test
+
+
+\begin{DoxyParams}{Parameters}
+{\em argv} & The arguments passed in the test \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+71                                            \{
+72         \textcolor{keywordflow}{try} \{
+73             \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_pure_font_test_afb97856ff89ea6b4957e845fcba255fe}{container}} = \textcolor{keyword}{new} AppGameContainer(\textcolor{keyword}{new} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_pure_font_test_a13e63fb95747ce5891d5e790446988d0}{PureFontTest}}());
+74             \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_pure_font_test_afb97856ff89ea6b4957e845fcba255fe}{container}}.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_app_game_container_aa2de68db61ddd3917a8edc0177ebdfe3}{setDisplayMode}}(800,600,\textcolor{keyword}{false});
+75             \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_pure_font_test_afb97856ff89ea6b4957e845fcba255fe}{container}}.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_app_game_container_adcadc0e560e64d03be24c817931fdd54}{start}}();
+76         \} \textcolor{keywordflow}{catch} (SlickException e) \{
+77             e.printStackTrace();
+78         \}
+79     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tests_1_1_pure_font_test_a2a5d9e4f0b8dc1a768304c9747cede17}\label{classorg_1_1newdawn_1_1slick_1_1tests_1_1_pure_font_test_a2a5d9e4f0b8dc1a768304c9747cede17}} 
+\index{org\+::newdawn\+::slick\+::tests\+::\+Pure\+Font\+Test@{org\+::newdawn\+::slick\+::tests\+::\+Pure\+Font\+Test}!render@{render}}
+\index{render@{render}!org\+::newdawn\+::slick\+::tests\+::\+Pure\+Font\+Test@{org\+::newdawn\+::slick\+::tests\+::\+Pure\+Font\+Test}}
+\subsubsection{\texorpdfstring{render()}{render()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+tests.\+Pure\+Font\+Test.\+render (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_game_container}{Game\+Container}}}]{container,  }\item[{\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_graphics}{Graphics}}}]{g }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1_game_af1a4670d43eb3ba04dfcf55ab1975b64}{org.\+newdawn.\+slick.\+Basic\+Game\+::render}}(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_game_container}{org.\+newdawn.\+slick.\+Game\+Container}}, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_graphics}{org.\+newdawn.\+slick.\+Graphics}}) 
+\end{DoxySeeAlso}
+
+
+Implements \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1_game_af1a4670d43eb3ba04dfcf55ab1975b64}{org.\+newdawn.\+slick.\+Game}}.
+
+
+\begin{DoxyCode}
+42                                                             \{
+43         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_pure_font_test_abf4f2b16a8b53a263efe45591327f0b0}{image}}.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_image_a9bddcca05c7140ab45df8ac5b250b6cd}{draw}}(0,0,800,600);
+44         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_pure_font_test_a6a077c1e23810818363d7a01a69ddd82}{font}}.\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1_font_a40b19381efcb64ce1ce4d446eff1e350}{drawString}}(100, 32, \textcolor{stringliteral}{"On top of old smokey, all"});
+45         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_pure_font_test_a6a077c1e23810818363d7a01a69ddd82}{font}}.\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1_font_a40b19381efcb64ce1ce4d446eff1e350}{drawString}}(100, 80, \textcolor{stringliteral}{"covered with sand.."});
+46     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tests_1_1_pure_font_test_a87f85cc4bba2ae7c3ffdcdd62a8c387a}\label{classorg_1_1newdawn_1_1slick_1_1tests_1_1_pure_font_test_a87f85cc4bba2ae7c3ffdcdd62a8c387a}} 
+\index{org\+::newdawn\+::slick\+::tests\+::\+Pure\+Font\+Test@{org\+::newdawn\+::slick\+::tests\+::\+Pure\+Font\+Test}!update@{update}}
+\index{update@{update}!org\+::newdawn\+::slick\+::tests\+::\+Pure\+Font\+Test@{org\+::newdawn\+::slick\+::tests\+::\+Pure\+Font\+Test}}
+\subsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+tests.\+Pure\+Font\+Test.\+update (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_game_container}{Game\+Container}}}]{container,  }\item[{int}]{delta }\end{DoxyParamCaption}) throws \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_slick_exception}{Slick\+Exception}}\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_basic_game_acfe6fa05aef83bff1631af91a3e4bd20}{org.\+newdawn.\+slick.\+Basic\+Game\+::update}}(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_game_container}{org.\+newdawn.\+slick.\+Game\+Container}}, int) 
+\end{DoxySeeAlso}
+
+
+Implements \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1_game_ab07b2e9463ee4631620dde0de25bdee8}{org.\+newdawn.\+slick.\+Game}}.
+
+
+\begin{DoxyCode}
+51                                                                                  \{
+52     \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tests_1_1_pure_font_test_afb97856ff89ea6b4957e845fcba255fe}\label{classorg_1_1newdawn_1_1slick_1_1tests_1_1_pure_font_test_afb97856ff89ea6b4957e845fcba255fe}} 
+\index{org\+::newdawn\+::slick\+::tests\+::\+Pure\+Font\+Test@{org\+::newdawn\+::slick\+::tests\+::\+Pure\+Font\+Test}!container@{container}}
+\index{container@{container}!org\+::newdawn\+::slick\+::tests\+::\+Pure\+Font\+Test@{org\+::newdawn\+::slick\+::tests\+::\+Pure\+Font\+Test}}
+\subsubsection{\texorpdfstring{container}{container}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_app_game_container}{App\+Game\+Container}} org.\+newdawn.\+slick.\+tests.\+Pure\+Font\+Test.\+container\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+The container we\textquotesingle{}re using \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tests_1_1_pure_font_test_a6a077c1e23810818363d7a01a69ddd82}\label{classorg_1_1newdawn_1_1slick_1_1tests_1_1_pure_font_test_a6a077c1e23810818363d7a01a69ddd82}} 
+\index{org\+::newdawn\+::slick\+::tests\+::\+Pure\+Font\+Test@{org\+::newdawn\+::slick\+::tests\+::\+Pure\+Font\+Test}!font@{font}}
+\index{font@{font}!org\+::newdawn\+::slick\+::tests\+::\+Pure\+Font\+Test@{org\+::newdawn\+::slick\+::tests\+::\+Pure\+Font\+Test}}
+\subsubsection{\texorpdfstring{font}{font}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1_font}{Font}} org.\+newdawn.\+slick.\+tests.\+Pure\+Font\+Test.\+font\hspace{0.3cm}{\ttfamily [private]}}
+
+The font we\textquotesingle{}re going to use to render \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tests_1_1_pure_font_test_abf4f2b16a8b53a263efe45591327f0b0}\label{classorg_1_1newdawn_1_1slick_1_1tests_1_1_pure_font_test_abf4f2b16a8b53a263efe45591327f0b0}} 
+\index{org\+::newdawn\+::slick\+::tests\+::\+Pure\+Font\+Test@{org\+::newdawn\+::slick\+::tests\+::\+Pure\+Font\+Test}!image@{image}}
+\index{image@{image}!org\+::newdawn\+::slick\+::tests\+::\+Pure\+Font\+Test@{org\+::newdawn\+::slick\+::tests\+::\+Pure\+Font\+Test}}
+\subsubsection{\texorpdfstring{image}{image}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_image}{Image}} org.\+newdawn.\+slick.\+tests.\+Pure\+Font\+Test.\+image\hspace{0.3cm}{\ttfamily [private]}}
+
+The image 

@@ -1,0 +1,84 @@
+\hypertarget{classpecl6part2_1_1_servidor_vigilante}{}\section{pecl6part2.\+Servidor\+Vigilante Class Reference}
+\label{classpecl6part2_1_1_servidor_vigilante}\index{pecl6part2.\+Servidor\+Vigilante@{pecl6part2.\+Servidor\+Vigilante}}
+Inheritance diagram for pecl6part2.\+Servidor\+Vigilante\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classpecl6part2_1_1_servidor_vigilante}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpecl6part2_1_1_servidor_vigilante_aec607bf37f7f8fe1c8ff1e6c36d5c3ca}{Servidor\+Vigilante}} (int port, \mbox{\hyperlink{classpecl6part2_1_1_controlador}{Controlador}} \mbox{\hyperlink{classpecl6part2_1_1_servidor_vigilante_a74b80f98c6625e80f95d1d1bfd0c49cc}{controlador}})  throws I\+O\+Exception 
+\item 
+void \mbox{\hyperlink{classpecl6part2_1_1_servidor_vigilante_a5bb0ef0a09a59f8d1589fa851085f190}{run}} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+final Server\+Socket \mbox{\hyperlink{classpecl6part2_1_1_servidor_vigilante_aaa40cd2b5cc8c603c6dce1d8a440aca6}{server\+Socket}}
+\item 
+\mbox{\hyperlink{classpecl6part2_1_1_controlador}{Controlador}} \mbox{\hyperlink{classpecl6part2_1_1_servidor_vigilante_a74b80f98c6625e80f95d1d1bfd0c49cc}{controlador}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyAuthor}{Author}
+Ignacio 
+\end{DoxyAuthor}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classpecl6part2_1_1_servidor_vigilante_aec607bf37f7f8fe1c8ff1e6c36d5c3ca}\label{classpecl6part2_1_1_servidor_vigilante_aec607bf37f7f8fe1c8ff1e6c36d5c3ca}} 
+\index{pecl6part2\+::\+Servidor\+Vigilante@{pecl6part2\+::\+Servidor\+Vigilante}!Servidor\+Vigilante@{Servidor\+Vigilante}}
+\index{Servidor\+Vigilante@{Servidor\+Vigilante}!pecl6part2\+::\+Servidor\+Vigilante@{pecl6part2\+::\+Servidor\+Vigilante}}
+\subsubsection{\texorpdfstring{Servidor\+Vigilante()}{ServidorVigilante()}}
+{\footnotesize\ttfamily pecl6part2.\+Servidor\+Vigilante.\+Servidor\+Vigilante (\begin{DoxyParamCaption}\item[{int}]{port,  }\item[{\mbox{\hyperlink{classpecl6part2_1_1_controlador}{Controlador}}}]{controlador }\end{DoxyParamCaption}) throws I\+O\+Exception\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+23                                                                                    \{
+24         this.\mbox{\hyperlink{classpecl6part2_1_1_servidor_vigilante_a74b80f98c6625e80f95d1d1bfd0c49cc}{controlador}} = \mbox{\hyperlink{classpecl6part2_1_1_servidor_vigilante_a74b80f98c6625e80f95d1d1bfd0c49cc}{controlador}};
+25       \mbox{\hyperlink{classpecl6part2_1_1_servidor_vigilante_aaa40cd2b5cc8c603c6dce1d8a440aca6}{serverSocket}} = \textcolor{keyword}{new} ServerSocket(port);
+26     \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classpecl6part2_1_1_servidor_vigilante_a5bb0ef0a09a59f8d1589fa851085f190}\label{classpecl6part2_1_1_servidor_vigilante_a5bb0ef0a09a59f8d1589fa851085f190}} 
+\index{pecl6part2\+::\+Servidor\+Vigilante@{pecl6part2\+::\+Servidor\+Vigilante}!run@{run}}
+\index{run@{run}!pecl6part2\+::\+Servidor\+Vigilante@{pecl6part2\+::\+Servidor\+Vigilante}}
+\subsubsection{\texorpdfstring{run()}{run()}}
+{\footnotesize\ttfamily void pecl6part2.\+Servidor\+Vigilante.\+run (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+28                       \{
+29         \textcolor{keywordflow}{while}(\textcolor{keyword}{true}) \{
+30                        
+31             \textcolor{keywordflow}{try} \{
+32                 \textcolor{keyword}{new} Thread(\textcolor{keyword}{new} Manejador(\mbox{\hyperlink{classpecl6part2_1_1_servidor_vigilante_aaa40cd2b5cc8c603c6dce1d8a440aca6}{serverSocket}}.accept(), 
+      \mbox{\hyperlink{classpecl6part2_1_1_servidor_vigilante_a74b80f98c6625e80f95d1d1bfd0c49cc}{controlador}})).start();
+33             \} \textcolor{keywordflow}{catch} (IOException ex) \{
+34                 Logger.getLogger(\mbox{\hyperlink{classpecl6part2_1_1_servidor_vigilante_aec607bf37f7f8fe1c8ff1e6c36d5c3ca}{ServidorVigilante}}.class.getName()).log(Level.SEVERE, null
+      , ex);
+35             \}
+36         
+37         \}
+38     \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classpecl6part2_1_1_servidor_vigilante_a74b80f98c6625e80f95d1d1bfd0c49cc}\label{classpecl6part2_1_1_servidor_vigilante_a74b80f98c6625e80f95d1d1bfd0c49cc}} 
+\index{pecl6part2\+::\+Servidor\+Vigilante@{pecl6part2\+::\+Servidor\+Vigilante}!controlador@{controlador}}
+\index{controlador@{controlador}!pecl6part2\+::\+Servidor\+Vigilante@{pecl6part2\+::\+Servidor\+Vigilante}}
+\subsubsection{\texorpdfstring{controlador}{controlador}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classpecl6part2_1_1_controlador}{Controlador}} pecl6part2.\+Servidor\+Vigilante.\+controlador\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classpecl6part2_1_1_servidor_vigilante_aaa40cd2b5cc8c603c6dce1d8a440aca6}\label{classpecl6part2_1_1_servidor_vigilante_aaa40cd2b5cc8c603c6dce1d8a440aca6}} 
+\index{pecl6part2\+::\+Servidor\+Vigilante@{pecl6part2\+::\+Servidor\+Vigilante}!server\+Socket@{server\+Socket}}
+\index{server\+Socket@{server\+Socket}!pecl6part2\+::\+Servidor\+Vigilante@{pecl6part2\+::\+Servidor\+Vigilante}}
+\subsubsection{\texorpdfstring{server\+Socket}{serverSocket}}
+{\footnotesize\ttfamily final Server\+Socket pecl6part2.\+Servidor\+Vigilante.\+server\+Socket\hspace{0.3cm}{\ttfamily [private]}}
+

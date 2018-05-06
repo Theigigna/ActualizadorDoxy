@@ -1,0 +1,73 @@
+\hypertarget{classejemplo2_1_1_servidor}{}\section{ejemplo2.\+Servidor Class Reference}
+\label{classejemplo2_1_1_servidor}\index{ejemplo2.\+Servidor@{ejemplo2.\+Servidor}}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{classejemplo2_1_1_servidor_aa867aa19fe8670511d9ae325b1b60be7}{main}} (String args\mbox{[}$\,$\mbox{]})
+\item 
+static void \mbox{\hyperlink{classejemplo2_1_1_servidor_aa867aa19fe8670511d9ae325b1b60be7}{main}} (String args\mbox{[}$\,$\mbox{]})
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classejemplo2_1_1_servidor_aa867aa19fe8670511d9ae325b1b60be7}\label{classejemplo2_1_1_servidor_aa867aa19fe8670511d9ae325b1b60be7}} 
+\index{ejemplo2\+::\+Servidor@{ejemplo2\+::\+Servidor}!main@{main}}
+\index{main@{main}!ejemplo2\+::\+Servidor@{ejemplo2\+::\+Servidor}}
+\subsubsection{\texorpdfstring{main()}{main()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily static void ejemplo2.\+Servidor.\+main (\begin{DoxyParamCaption}\item[{String}]{args\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+\begin{DoxyCode}
+8     \{
+9         ServerSocket servidor;
+10         Socket conexion;
+11         DataOutputStream salida;
+12         DataInputStream entrada;
+13         \textcolor{keywordtype}{int} num = 0;
+14         \textcolor{keywordflow}{try}
+15         \{
+16             servidor = \textcolor{keyword}{new} ServerSocket(5000); \textcolor{comment}{// Creamos un ServerSocket en el puerto 5000}
+17             System.out.println(\textcolor{stringliteral}{"Servidor Arrancado...."});
+18             \textcolor{keywordflow}{while} (\textcolor{keyword}{true})
+19             \{
+20                 conexion = servidor.accept();     \textcolor{comment}{// Esperamos una conexión}
+21                 num++;
+22                 System.out.println(\textcolor{stringliteral}{"Conexión nº "}+num+\textcolor{stringliteral}{" desde: "}+conexion.getInetAddress().getHostName());
+23                 entrada = \textcolor{keyword}{new} DataInputStream(conexion.getInputStream());  \textcolor{comment}{// Abrimos los canales de E/S}
+24                 salida  = \textcolor{keyword}{new} DataOutputStream(conexion.getOutputStream());
+25                 String mensaje = entrada.readUTF();    \textcolor{comment}{//Leemos el mensaje del cliente}
+26                 System.out.println(\textcolor{stringliteral}{"Conexión nº "}+num+\textcolor{stringliteral}{". Mensaje recibido: "}+mensaje);
+27                 salida.writeUTF(\textcolor{stringliteral}{"O te callas o me haces un hamster"});  \textcolor{comment}{// Le respondemos}
+28                 conexion.close();                           \textcolor{comment}{// Y cerramos la conexión}
+29             \}
+30         \} \textcolor{keywordflow}{catch} (IOException e) \{\}
+31     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classejemplo2_1_1_servidor_aa867aa19fe8670511d9ae325b1b60be7}\label{classejemplo2_1_1_servidor_aa867aa19fe8670511d9ae325b1b60be7}} 
+\index{ejemplo2\+::\+Servidor@{ejemplo2\+::\+Servidor}!main@{main}}
+\index{main@{main}!ejemplo2\+::\+Servidor@{ejemplo2\+::\+Servidor}}
+\subsubsection{\texorpdfstring{main()}{main()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily static void ejemplo2.\+Servidor.\+main (\begin{DoxyParamCaption}\item[{String}]{args\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+\begin{DoxyCode}
+9     \{
+10         \textcolor{comment}{//ip 172.22.14.224}
+11         \textcolor{keywordflow}{try}
+12         \{
+13             System.setProperty(\textcolor{stringliteral}{"java.rmi.server.hostname"},\textcolor{stringliteral}{"172.22.14.224"});
+14             Saludador obj = \textcolor{keyword}{new} Saludador(); \textcolor{comment}{//Crea una instancia del objeto que implementa la interfaz,
+       como objeto a registrar }
+15             Registry registry = LocateRegistry.createRegistry(1099); \textcolor{comment}{//Arranca rmiregistry local en el
+       puerto 1099}
+16             Naming.rebind(\textcolor{stringliteral}{"//localhost/ObjetoSaluda"},obj);   \textcolor{comment}{//rebind sólo funciona sobre una url del
+       equipo local }
+17             System.out.println(\textcolor{stringliteral}{"El Objeto Saluda ha quedado registrado"});
+18         \}
+19         \textcolor{keywordflow}{catch} (Exception e)
+20         \{
+21             System.out.println(\textcolor{stringliteral}{" Error: "} + e.getMessage());
+22             e.printStackTrace();
+23         \}
+24     \}
+\end{DoxyCode}

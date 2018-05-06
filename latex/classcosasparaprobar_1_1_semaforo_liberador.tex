@@ -1,0 +1,73 @@
+\hypertarget{classcosasparaprobar_1_1_semaforo_liberador}{}\section{cosasparaprobar.\+Semaforo\+Liberador Class Reference}
+\label{classcosasparaprobar_1_1_semaforo_liberador}\index{cosasparaprobar.\+Semaforo\+Liberador@{cosasparaprobar.\+Semaforo\+Liberador}}
+Inheritance diagram for cosasparaprobar.\+Semaforo\+Liberador\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classcosasparaprobar_1_1_semaforo_liberador}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classcosasparaprobar_1_1_semaforo_liberador_a4b87cbb393e66de3dcc8727741649b11}{Semaforo\+Liberador}} (Semaphore \mbox{\hyperlink{classcosasparaprobar_1_1_semaforo_liberador_aa58c46d88298972b9a7ba1c78ff9ab30}{x}})
+\item 
+void \mbox{\hyperlink{classcosasparaprobar_1_1_semaforo_liberador_a1d5f1711aeb1522013e09fca54f4c4dd}{run}} ()
+\end{DoxyCompactItemize}
+\subsection*{Package Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Semaphore \mbox{\hyperlink{classcosasparaprobar_1_1_semaforo_liberador_aa58c46d88298972b9a7ba1c78ff9ab30}{x}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyAuthor}{Author}
+Ignacio 
+\end{DoxyAuthor}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classcosasparaprobar_1_1_semaforo_liberador_a4b87cbb393e66de3dcc8727741649b11}\label{classcosasparaprobar_1_1_semaforo_liberador_a4b87cbb393e66de3dcc8727741649b11}} 
+\index{cosasparaprobar\+::\+Semaforo\+Liberador@{cosasparaprobar\+::\+Semaforo\+Liberador}!Semaforo\+Liberador@{Semaforo\+Liberador}}
+\index{Semaforo\+Liberador@{Semaforo\+Liberador}!cosasparaprobar\+::\+Semaforo\+Liberador@{cosasparaprobar\+::\+Semaforo\+Liberador}}
+\subsubsection{\texorpdfstring{Semaforo\+Liberador()}{SemaforoLiberador()}}
+{\footnotesize\ttfamily cosasparaprobar.\+Semaforo\+Liberador.\+Semaforo\+Liberador (\begin{DoxyParamCaption}\item[{Semaphore}]{x }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+22     \{
+23         this.\mbox{\hyperlink{classcosasparaprobar_1_1_semaforo_liberador_aa58c46d88298972b9a7ba1c78ff9ab30}{x}} = \mbox{\hyperlink{classcosasparaprobar_1_1_semaforo_liberador_aa58c46d88298972b9a7ba1c78ff9ab30}{x}};
+24     \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classcosasparaprobar_1_1_semaforo_liberador_a1d5f1711aeb1522013e09fca54f4c4dd}\label{classcosasparaprobar_1_1_semaforo_liberador_a1d5f1711aeb1522013e09fca54f4c4dd}} 
+\index{cosasparaprobar\+::\+Semaforo\+Liberador@{cosasparaprobar\+::\+Semaforo\+Liberador}!run@{run}}
+\index{run@{run}!cosasparaprobar\+::\+Semaforo\+Liberador@{cosasparaprobar\+::\+Semaforo\+Liberador}}
+\subsubsection{\texorpdfstring{run()}{run()}}
+{\footnotesize\ttfamily void cosasparaprobar.\+Semaforo\+Liberador.\+run (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+26                       \{
+27         System.out.println(\textcolor{stringliteral}{"Hilo liberador: Cuando despierte te dejo pasar."});
+28         \textcolor{keywordflow}{try} \{
+29             sleep(3000);
+30         \} \textcolor{keywordflow}{catch} (InterruptedException ex) \{
+31             Logger.getLogger(\mbox{\hyperlink{classcosasparaprobar_1_1_semaforo_liberador_a4b87cbb393e66de3dcc8727741649b11}{SemaforoLiberador}}.class.getName()).log(Level.SEVERE, null, ex
+      );
+32         \}
+33         System.out.println(\textcolor{stringliteral}{"Hilo liberador: Pasa."});
+34         \mbox{\hyperlink{classcosasparaprobar_1_1_semaforo_liberador_aa58c46d88298972b9a7ba1c78ff9ab30}{x}}.release();
+35     \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classcosasparaprobar_1_1_semaforo_liberador_aa58c46d88298972b9a7ba1c78ff9ab30}\label{classcosasparaprobar_1_1_semaforo_liberador_aa58c46d88298972b9a7ba1c78ff9ab30}} 
+\index{cosasparaprobar\+::\+Semaforo\+Liberador@{cosasparaprobar\+::\+Semaforo\+Liberador}!x@{x}}
+\index{x@{x}!cosasparaprobar\+::\+Semaforo\+Liberador@{cosasparaprobar\+::\+Semaforo\+Liberador}}
+\subsubsection{\texorpdfstring{x}{x}}
+{\footnotesize\ttfamily Semaphore cosasparaprobar.\+Semaforo\+Liberador.\+x\hspace{0.3cm}{\ttfamily [package]}}
+

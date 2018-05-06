@@ -1,0 +1,95 @@
+\hypertarget{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_hiero_1_1_splash}{}\section{org.\+newdawn.\+slick.\+tools.\+hiero.\+Hiero.\+Splash Class Reference}
+\label{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_hiero_1_1_splash}\index{org.\+newdawn.\+slick.\+tools.\+hiero.\+Hiero.\+Splash@{org.\+newdawn.\+slick.\+tools.\+hiero.\+Hiero.\+Splash}}
+Inheritance diagram for org.\+newdawn.\+slick.\+tools.\+hiero.\+Hiero.\+Splash\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_hiero_1_1_splash}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_hiero_1_1_splash_a99f1c81dda31cc8343280493b4d90c7f}{Splash}} (Frame frame, String image\+File, int \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_hiero_1_1_splash_a4a6f03856af4186e89f91fc54d722ca7}{min\+Millis}})
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_hiero_1_1_splash_a269c0f1d57d4eea0d5f4d11c1d5c34b7}{close}} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+final int \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_hiero_1_1_splash_a4a6f03856af4186e89f91fc54d722ca7}{min\+Millis}}
+\item 
+final long \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_hiero_1_1_splash_a455ff850b006e49cfa0cfeb29cdcd022}{start\+Time}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_hiero_1_1_splash_a99f1c81dda31cc8343280493b4d90c7f}\label{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_hiero_1_1_splash_a99f1c81dda31cc8343280493b4d90c7f}} 
+\index{org\+::newdawn\+::slick\+::tools\+::hiero\+::\+Hiero\+::\+Splash@{org\+::newdawn\+::slick\+::tools\+::hiero\+::\+Hiero\+::\+Splash}!Splash@{Splash}}
+\index{Splash@{Splash}!org\+::newdawn\+::slick\+::tools\+::hiero\+::\+Hiero\+::\+Splash@{org\+::newdawn\+::slick\+::tools\+::hiero\+::\+Hiero\+::\+Splash}}
+\subsubsection{\texorpdfstring{Splash()}{Splash()}}
+{\footnotesize\ttfamily org.\+newdawn.\+slick.\+tools.\+hiero.\+Hiero.\+Splash.\+Splash (\begin{DoxyParamCaption}\item[{Frame}]{frame,  }\item[{String}]{image\+File,  }\item[{int}]{min\+Millis }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+1150                                                                      \{
+1151             super(frame);
+1152             this.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_hiero_1_1_splash_a4a6f03856af4186e89f91fc54d722ca7}{minMillis}} = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_hiero_1_1_splash_a4a6f03856af4186e89f91fc54d722ca7}{minMillis}};
+1153             getContentPane().add(\textcolor{keyword}{new} JLabel(\textcolor{keyword}{new} ImageIcon(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_hiero_1_1_splash_a99f1c81dda31cc8343280493b4d90c7f}{Splash}}.class.getResource(imageFile))), 
+      BorderLayout.CENTER);
+1154             pack();
+1155             setLocationRelativeTo(null);
+1156             setVisible(\textcolor{keyword}{true});
+1157             \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_hiero_1_1_splash_a455ff850b006e49cfa0cfeb29cdcd022}{startTime}} = System.currentTimeMillis();
+1158         \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_hiero_1_1_splash_a269c0f1d57d4eea0d5f4d11c1d5c34b7}\label{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_hiero_1_1_splash_a269c0f1d57d4eea0d5f4d11c1d5c34b7}} 
+\index{org\+::newdawn\+::slick\+::tools\+::hiero\+::\+Hiero\+::\+Splash@{org\+::newdawn\+::slick\+::tools\+::hiero\+::\+Hiero\+::\+Splash}!close@{close}}
+\index{close@{close}!org\+::newdawn\+::slick\+::tools\+::hiero\+::\+Hiero\+::\+Splash@{org\+::newdawn\+::slick\+::tools\+::hiero\+::\+Hiero\+::\+Splash}}
+\subsubsection{\texorpdfstring{close()}{close()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+tools.\+hiero.\+Hiero.\+Splash.\+close (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+1160                              \{
+1161             \textcolor{keyword}{final} \textcolor{keywordtype}{long} endTime = System.currentTimeMillis();
+1162             \textcolor{keyword}{new} Thread(\textcolor{keyword}{new} Runnable() \{
+1163                 \textcolor{keyword}{public} \textcolor{keywordtype}{void} run () \{
+1164                     \textcolor{keywordflow}{if} (endTime - \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_hiero_1_1_splash_a455ff850b006e49cfa0cfeb29cdcd022}{startTime}} < \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_hiero_1_1_splash_a4a6f03856af4186e89f91fc54d722ca7}{minMillis}}) \{
+1165                         addMouseListener(\textcolor{keyword}{new} MouseAdapter() \{
+1166                             \textcolor{keyword}{public} \textcolor{keywordtype}{void} mousePressed (MouseEvent evt) \{
+1167                                 dispose();
+1168                             \}
+1169                         \});
+1170                         \textcolor{keywordflow}{try} \{
+1171                             Thread.sleep(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_hiero_1_1_splash_a4a6f03856af4186e89f91fc54d722ca7}{minMillis}} - (endTime - 
+      \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_hiero_1_1_splash_a455ff850b006e49cfa0cfeb29cdcd022}{startTime}}));
+1172                         \} \textcolor{keywordflow}{catch} (InterruptedException ignored) \{
+1173                         \}
+1174                     \}
+1175                     EventQueue.invokeLater(\textcolor{keyword}{new} Runnable() \{
+1176                         \textcolor{keyword}{public} \textcolor{keywordtype}{void} run () \{
+1177                             dispose();
+1178                         \}
+1179                     \});
+1180                 \}
+1181             \}, \textcolor{stringliteral}{"Splash"}).\mbox{\hyperlink{namespaceejemplo_1_1clase_abcf43191f0ecf3b071ca2db7696ba821}{start}}();
+1182         \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_hiero_1_1_splash_a4a6f03856af4186e89f91fc54d722ca7}\label{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_hiero_1_1_splash_a4a6f03856af4186e89f91fc54d722ca7}} 
+\index{org\+::newdawn\+::slick\+::tools\+::hiero\+::\+Hiero\+::\+Splash@{org\+::newdawn\+::slick\+::tools\+::hiero\+::\+Hiero\+::\+Splash}!min\+Millis@{min\+Millis}}
+\index{min\+Millis@{min\+Millis}!org\+::newdawn\+::slick\+::tools\+::hiero\+::\+Hiero\+::\+Splash@{org\+::newdawn\+::slick\+::tools\+::hiero\+::\+Hiero\+::\+Splash}}
+\subsubsection{\texorpdfstring{min\+Millis}{minMillis}}
+{\footnotesize\ttfamily final int org.\+newdawn.\+slick.\+tools.\+hiero.\+Hiero.\+Splash.\+min\+Millis\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_hiero_1_1_splash_a455ff850b006e49cfa0cfeb29cdcd022}\label{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_hiero_1_1_splash_a455ff850b006e49cfa0cfeb29cdcd022}} 
+\index{org\+::newdawn\+::slick\+::tools\+::hiero\+::\+Hiero\+::\+Splash@{org\+::newdawn\+::slick\+::tools\+::hiero\+::\+Hiero\+::\+Splash}!start\+Time@{start\+Time}}
+\index{start\+Time@{start\+Time}!org\+::newdawn\+::slick\+::tools\+::hiero\+::\+Hiero\+::\+Splash@{org\+::newdawn\+::slick\+::tools\+::hiero\+::\+Hiero\+::\+Splash}}
+\subsubsection{\texorpdfstring{start\+Time}{startTime}}
+{\footnotesize\ttfamily final long org.\+newdawn.\+slick.\+tools.\+hiero.\+Hiero.\+Splash.\+start\+Time\hspace{0.3cm}{\ttfamily [private]}}
+

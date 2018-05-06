@@ -1,0 +1,930 @@
+\hypertarget{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_internal_texture_loader}{}\section{org.\+newdawn.\+slick.\+opengl.\+Internal\+Texture\+Loader Class Reference}
+\label{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_internal_texture_loader}\index{org.\+newdawn.\+slick.\+opengl.\+Internal\+Texture\+Loader@{org.\+newdawn.\+slick.\+opengl.\+Internal\+Texture\+Loader}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_internal_texture_loader_aad0662c212972f36d5b0fd252934deaf}{set\+Hold\+Texture\+Data}} (boolean \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_internal_texture_loader_a45b8c17af18ad5095972b3f519eb17bd}{hold\+Texture\+Data}})
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_internal_texture_loader_a85712ee47210f31f5605e04dba77b5ab}{set\+Deferred\+Loading}} (boolean \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_internal_texture_loader_afde58d084fb7c587c15b674005617ff4}{deferred}})
+\item 
+boolean \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_internal_texture_loader_a0b944a7578a266f2ffae2b4259497823}{is\+Deferred\+Loading}} ()
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_internal_texture_loader_a80bb3806e16e4126079325b16621ed78}{clear}} (String name)
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_internal_texture_loader_ae362e4e3381e0c824ebf6538029c14e1}{clear}} ()
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_internal_texture_loader_a437129416e05ec67f039b06f2c3159af}{set16\+Bit\+Mode}} ()
+\item 
+\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1opengl_1_1_texture}{Texture}} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_internal_texture_loader_a5d76355a0aa7c2b3d7dd6106412d5805}{get\+Texture}} (File source, boolean flipped, int filter)  throws I\+O\+Exception 
+\item 
+\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1opengl_1_1_texture}{Texture}} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_internal_texture_loader_a87771fd138461a60d3ba7763a8712446}{get\+Texture}} (File source, boolean flipped, int filter, int\mbox{[}$\,$\mbox{]} transparent)  throws I\+O\+Exception 
+\item 
+\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1opengl_1_1_texture}{Texture}} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_internal_texture_loader_a1f123ec5aa1db858970982d6f7b2cc0c}{get\+Texture}} (String resource\+Name, boolean flipped, int filter)  throws I\+O\+Exception 
+\item 
+\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1opengl_1_1_texture}{Texture}} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_internal_texture_loader_a690450dca2c9fe7c2e0036a33ca79349}{get\+Texture}} (String resource\+Name, boolean flipped, int filter, int\mbox{[}$\,$\mbox{]} transparent)  throws I\+O\+Exception 
+\item 
+\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1opengl_1_1_texture}{Texture}} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_internal_texture_loader_a315d8e0c0dc76258342dd7e903bfa1af}{get\+Texture}} (Input\+Stream in, String resource\+Name, boolean flipped, int filter)  throws I\+O\+Exception 
+\item 
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_texture_impl}{Texture\+Impl}} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_internal_texture_loader_aab0726a2bebb2b26791977daa6c53a2b}{get\+Texture}} (Input\+Stream in, String resource\+Name, boolean flipped, int filter, int\mbox{[}$\,$\mbox{]} transparent)  throws I\+O\+Exception 
+\item 
+\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1opengl_1_1_texture}{Texture}} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_internal_texture_loader_a153ef66a72ef567377e97b6e9604f7a1}{create\+Texture}} (final int width, final int height)  throws I\+O\+Exception 
+\item 
+\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1opengl_1_1_texture}{Texture}} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_internal_texture_loader_ad8179a3093383267b4474ff018efed90}{create\+Texture}} (final int width, final int height, final int filter)  throws I\+O\+Exception 
+\item 
+\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1opengl_1_1_texture}{Texture}} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_internal_texture_loader_a50b4b6c9e8fc9590ee17ea1eff33ecbb}{get\+Texture}} (\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1opengl_1_1_image_data}{Image\+Data}} data\+Source, int filter)  throws I\+O\+Exception     
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_internal_texture_loader_a104bc76d2e57c583fb713651a08f69a1}{reload}} ()
+\item 
+int \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_internal_texture_loader_a027f068ce42f53062f37140d09204d6e}{reload}} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_texture_impl}{Texture\+Impl}} texture, int src\+Pixel\+Format, int component\+Count, int min\+Filter, int mag\+Filter, Byte\+Buffer texture\+Buffer)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_internal_texture_loader}{Internal\+Texture\+Loader}} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_internal_texture_loader_a01691a541caf71ca7f1daeac7defea02}{get}} ()
+\item 
+static int \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_internal_texture_loader_a1bebab39014659d66c3f45bfefb678a1}{create\+Texture\+ID}} ()
+\item 
+static int \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_internal_texture_loader_ae9aa071a4fa98cbc080f7d0ad9423ae1}{get2\+Fold}} (int fold)
+\item 
+static Int\+Buffer \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_internal_texture_loader_a395abad35456c2a752fbca089d209981}{create\+Int\+Buffer}} (int size)
+\end{DoxyCompactItemize}
+\subsection*{Static Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1opengl_1_1renderer_1_1_s_g_l}{S\+GL}} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_internal_texture_loader_a302f0e97810ce583189425dd693ae4c2}{GL}} = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1renderer_1_1_renderer_abe742c3a7dfca67c6c01821d27087308}{Renderer.\+get}}()
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_internal_texture_loader_a899c615acad92686e53288960ec9e982}{Internal\+Texture\+Loader}} ()
+\item 
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_texture_impl}{Texture\+Impl}} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_internal_texture_loader_a3b0ac135ea1ae7f431458f15ca702d56}{get\+Texture}} (Input\+Stream in, String resource\+Name, int target, int mag\+Filter, int min\+Filter, boolean flipped, int\mbox{[}$\,$\mbox{]} transparent)  throws I\+O\+Exception      
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Hash\+Map \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_internal_texture_loader_af5ded371f9b982d890be25766fb2ba46}{textures\+Linear}} = new Hash\+Map()
+\item 
+Hash\+Map \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_internal_texture_loader_a2212ea841053c4380293000579d0a068}{textures\+Nearest}} = new Hash\+Map()
+\item 
+int \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_internal_texture_loader_a38647f15e90386d1a6a3c398f1766611}{dst\+Pixel\+Format}} = \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1opengl_1_1renderer_1_1_s_g_l_a015ce5deda3c63768e9784f5132cfc17}{S\+G\+L.\+G\+L\+\_\+\+R\+G\+B\+A8}}
+\item 
+boolean \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_internal_texture_loader_afde58d084fb7c587c15b674005617ff4}{deferred}}
+\item 
+boolean \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_internal_texture_loader_a45b8c17af18ad5095972b3f519eb17bd}{hold\+Texture\+Data}}
+\end{DoxyCompactItemize}
+\subsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static final \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_internal_texture_loader}{Internal\+Texture\+Loader}} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_internal_texture_loader_aebc26e4ad3aef900e65a4f21436de165}{loader}} = new \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_internal_texture_loader}{Internal\+Texture\+Loader}}()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A texture loaded based on many old versions that will load image data from a file and produce Open\+GL textures.
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1opengl_1_1_image_data}{Image\+Data}}
+\end{DoxySeeAlso}
+\begin{DoxyAuthor}{Author}
+kevin 
+\end{DoxyAuthor}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_internal_texture_loader_a899c615acad92686e53288960ec9e982}\label{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_internal_texture_loader_a899c615acad92686e53288960ec9e982}} 
+\index{org\+::newdawn\+::slick\+::opengl\+::\+Internal\+Texture\+Loader@{org\+::newdawn\+::slick\+::opengl\+::\+Internal\+Texture\+Loader}!Internal\+Texture\+Loader@{Internal\+Texture\+Loader}}
+\index{Internal\+Texture\+Loader@{Internal\+Texture\+Loader}!org\+::newdawn\+::slick\+::opengl\+::\+Internal\+Texture\+Loader@{org\+::newdawn\+::slick\+::opengl\+::\+Internal\+Texture\+Loader}}
+\subsubsection{\texorpdfstring{Internal\+Texture\+Loader()}{InternalTextureLoader()}}
+{\footnotesize\ttfamily org.\+newdawn.\+slick.\+opengl.\+Internal\+Texture\+Loader.\+Internal\+Texture\+Loader (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+Create a new texture loader based on the game panel 
+\begin{DoxyCode}
+57                                     \{
+58     \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_internal_texture_loader_a80bb3806e16e4126079325b16621ed78}\label{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_internal_texture_loader_a80bb3806e16e4126079325b16621ed78}} 
+\index{org\+::newdawn\+::slick\+::opengl\+::\+Internal\+Texture\+Loader@{org\+::newdawn\+::slick\+::opengl\+::\+Internal\+Texture\+Loader}!clear@{clear}}
+\index{clear@{clear}!org\+::newdawn\+::slick\+::opengl\+::\+Internal\+Texture\+Loader@{org\+::newdawn\+::slick\+::opengl\+::\+Internal\+Texture\+Loader}}
+\subsubsection{\texorpdfstring{clear()}{clear()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+opengl.\+Internal\+Texture\+Loader.\+clear (\begin{DoxyParamCaption}\item[{String}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Remove a particular named image from the cache
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The name of the image to be cleared \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+94                                    \{
+95         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_internal_texture_loader_af5ded371f9b982d890be25766fb2ba46}{texturesLinear}}.remove(name);
+96         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_internal_texture_loader_a2212ea841053c4380293000579d0a068}{texturesNearest}}.remove(name);
+97     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_internal_texture_loader_ae362e4e3381e0c824ebf6538029c14e1}\label{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_internal_texture_loader_ae362e4e3381e0c824ebf6538029c14e1}} 
+\index{org\+::newdawn\+::slick\+::opengl\+::\+Internal\+Texture\+Loader@{org\+::newdawn\+::slick\+::opengl\+::\+Internal\+Texture\+Loader}!clear@{clear}}
+\index{clear@{clear}!org\+::newdawn\+::slick\+::opengl\+::\+Internal\+Texture\+Loader@{org\+::newdawn\+::slick\+::opengl\+::\+Internal\+Texture\+Loader}}
+\subsubsection{\texorpdfstring{clear()}{clear()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+opengl.\+Internal\+Texture\+Loader.\+clear (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Clear out the cached textures 
+\begin{DoxyCode}
+102                         \{
+103         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_internal_texture_loader_af5ded371f9b982d890be25766fb2ba46}{texturesLinear}}.clear();
+104         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_internal_texture_loader_a2212ea841053c4380293000579d0a068}{texturesNearest}}.clear();
+105     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_internal_texture_loader_a395abad35456c2a752fbca089d209981}\label{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_internal_texture_loader_a395abad35456c2a752fbca089d209981}} 
+\index{org\+::newdawn\+::slick\+::opengl\+::\+Internal\+Texture\+Loader@{org\+::newdawn\+::slick\+::opengl\+::\+Internal\+Texture\+Loader}!create\+Int\+Buffer@{create\+Int\+Buffer}}
+\index{create\+Int\+Buffer@{create\+Int\+Buffer}!org\+::newdawn\+::slick\+::opengl\+::\+Internal\+Texture\+Loader@{org\+::newdawn\+::slick\+::opengl\+::\+Internal\+Texture\+Loader}}
+\subsubsection{\texorpdfstring{create\+Int\+Buffer()}{createIntBuffer()}}
+{\footnotesize\ttfamily static Int\+Buffer org.\+newdawn.\+slick.\+opengl.\+Internal\+Texture\+Loader.\+create\+Int\+Buffer (\begin{DoxyParamCaption}\item[{int}]{size }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Creates an integer buffer to hold specified ints
+\begin{DoxyItemize}
+\item strictly a utility method
+\end{DoxyItemize}
+
+
+\begin{DoxyParams}{Parameters}
+{\em size} & how many int to contain \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+created Int\+Buffer 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+476                                                       \{
+477       ByteBuffer temp = ByteBuffer.allocateDirect(4 * size);
+478       temp.order(ByteOrder.nativeOrder());
+479 
+480       \textcolor{keywordflow}{return} temp.asIntBuffer();
+481     \}    
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_internal_texture_loader_a153ef66a72ef567377e97b6e9604f7a1}\label{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_internal_texture_loader_a153ef66a72ef567377e97b6e9604f7a1}} 
+\index{org\+::newdawn\+::slick\+::opengl\+::\+Internal\+Texture\+Loader@{org\+::newdawn\+::slick\+::opengl\+::\+Internal\+Texture\+Loader}!create\+Texture@{create\+Texture}}
+\index{create\+Texture@{create\+Texture}!org\+::newdawn\+::slick\+::opengl\+::\+Internal\+Texture\+Loader@{org\+::newdawn\+::slick\+::opengl\+::\+Internal\+Texture\+Loader}}
+\subsubsection{\texorpdfstring{create\+Texture()}{createTexture()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1opengl_1_1_texture}{Texture}} org.\+newdawn.\+slick.\+opengl.\+Internal\+Texture\+Loader.\+create\+Texture (\begin{DoxyParamCaption}\item[{final int}]{width,  }\item[{final int}]{height }\end{DoxyParamCaption}) throws I\+O\+Exception\hspace{0.3cm}{\ttfamily [inline]}}
+
+Create an empty texture
+
+
+\begin{DoxyParams}{Parameters}
+{\em width} & The width of the new texture \\
+\hline
+{\em height} & The height of the new texture \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The created empty texture 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em I\+O\+Exception} & Indicates a failure to create the texture on the graphics hardware \\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyCode}
+359                                                                                        \{
+360         \textcolor{keywordflow}{return} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_internal_texture_loader_a153ef66a72ef567377e97b6e9604f7a1}{createTexture}}(width, height, SGL.GL\_NEAREST);
+361     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_internal_texture_loader_ad8179a3093383267b4474ff018efed90}\label{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_internal_texture_loader_ad8179a3093383267b4474ff018efed90}} 
+\index{org\+::newdawn\+::slick\+::opengl\+::\+Internal\+Texture\+Loader@{org\+::newdawn\+::slick\+::opengl\+::\+Internal\+Texture\+Loader}!create\+Texture@{create\+Texture}}
+\index{create\+Texture@{create\+Texture}!org\+::newdawn\+::slick\+::opengl\+::\+Internal\+Texture\+Loader@{org\+::newdawn\+::slick\+::opengl\+::\+Internal\+Texture\+Loader}}
+\subsubsection{\texorpdfstring{create\+Texture()}{createTexture()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1opengl_1_1_texture}{Texture}} org.\+newdawn.\+slick.\+opengl.\+Internal\+Texture\+Loader.\+create\+Texture (\begin{DoxyParamCaption}\item[{final int}]{width,  }\item[{final int}]{height,  }\item[{final int}]{filter }\end{DoxyParamCaption}) throws I\+O\+Exception\hspace{0.3cm}{\ttfamily [inline]}}
+
+Create an empty texture
+
+
+\begin{DoxyParams}{Parameters}
+{\em width} & The width of the new texture \\
+\hline
+{\em height} & The height of the new texture \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The created empty texture 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em I\+O\+Exception} & Indicates a failure to create the texture on the graphics hardware \\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyCode}
+371                                                                                                          \{
+372         ImageData ds = \textcolor{keyword}{new} EmptyImageData(width, height);
+373         
+374         \textcolor{keywordflow}{return} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_internal_texture_loader_a5d76355a0aa7c2b3d7dd6106412d5805}{getTexture}}(ds, filter);
+375     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_internal_texture_loader_a1bebab39014659d66c3f45bfefb678a1}\label{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_internal_texture_loader_a1bebab39014659d66c3f45bfefb678a1}} 
+\index{org\+::newdawn\+::slick\+::opengl\+::\+Internal\+Texture\+Loader@{org\+::newdawn\+::slick\+::opengl\+::\+Internal\+Texture\+Loader}!create\+Texture\+ID@{create\+Texture\+ID}}
+\index{create\+Texture\+ID@{create\+Texture\+ID}!org\+::newdawn\+::slick\+::opengl\+::\+Internal\+Texture\+Loader@{org\+::newdawn\+::slick\+::opengl\+::\+Internal\+Texture\+Loader}}
+\subsubsection{\texorpdfstring{create\+Texture\+I\+D()}{createTextureID()}}
+{\footnotesize\ttfamily static int org.\+newdawn.\+slick.\+opengl.\+Internal\+Texture\+Loader.\+create\+Texture\+ID (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Create a new texture ID
+
+\begin{DoxyReturn}{Returns}
+A new texture ID 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+120     \{ 
+121        IntBuffer tmp = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_internal_texture_loader_a395abad35456c2a752fbca089d209981}{createIntBuffer}}(1); 
+122        \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_internal_texture_loader_a302f0e97810ce583189425dd693ae4c2}{GL}}.\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1opengl_1_1renderer_1_1_s_g_l_ab3f3f950cf59599784f17a0d19667829}{glGenTextures}}(tmp); 
+123        \textcolor{keywordflow}{return} tmp.get(0);
+124     \} 
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_internal_texture_loader_a01691a541caf71ca7f1daeac7defea02}\label{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_internal_texture_loader_a01691a541caf71ca7f1daeac7defea02}} 
+\index{org\+::newdawn\+::slick\+::opengl\+::\+Internal\+Texture\+Loader@{org\+::newdawn\+::slick\+::opengl\+::\+Internal\+Texture\+Loader}!get@{get}}
+\index{get@{get}!org\+::newdawn\+::slick\+::opengl\+::\+Internal\+Texture\+Loader@{org\+::newdawn\+::slick\+::opengl\+::\+Internal\+Texture\+Loader}}
+\subsubsection{\texorpdfstring{get()}{get()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_internal_texture_loader}{Internal\+Texture\+Loader}} org.\+newdawn.\+slick.\+opengl.\+Internal\+Texture\+Loader.\+get (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Get the single instance of this texture loader
+
+\begin{DoxyReturn}{Returns}
+The single instance of the texture loader 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+39                                               \{
+40         \textcolor{keywordflow}{return} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_internal_texture_loader_aebc26e4ad3aef900e65a4f21436de165}{loader}};
+41     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_internal_texture_loader_ae9aa071a4fa98cbc080f7d0ad9423ae1}\label{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_internal_texture_loader_ae9aa071a4fa98cbc080f7d0ad9423ae1}} 
+\index{org\+::newdawn\+::slick\+::opengl\+::\+Internal\+Texture\+Loader@{org\+::newdawn\+::slick\+::opengl\+::\+Internal\+Texture\+Loader}!get2\+Fold@{get2\+Fold}}
+\index{get2\+Fold@{get2\+Fold}!org\+::newdawn\+::slick\+::opengl\+::\+Internal\+Texture\+Loader@{org\+::newdawn\+::slick\+::opengl\+::\+Internal\+Texture\+Loader}}
+\subsubsection{\texorpdfstring{get2\+Fold()}{get2Fold()}}
+{\footnotesize\ttfamily static int org.\+newdawn.\+slick.\+opengl.\+Internal\+Texture\+Loader.\+get2\+Fold (\begin{DoxyParamCaption}\item[{int}]{fold }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Get the closest greater power of 2 to the fold number
+
+
+\begin{DoxyParams}{Parameters}
+{\em fold} & The target number \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The power of 2 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+461                                          \{
+462         \textcolor{keywordtype}{int} ret = 2;
+463         \textcolor{keywordflow}{while} (ret < fold) \{
+464             ret *= 2;
+465         \}
+466         \textcolor{keywordflow}{return} ret;
+467     \} 
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_internal_texture_loader_a5d76355a0aa7c2b3d7dd6106412d5805}\label{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_internal_texture_loader_a5d76355a0aa7c2b3d7dd6106412d5805}} 
+\index{org\+::newdawn\+::slick\+::opengl\+::\+Internal\+Texture\+Loader@{org\+::newdawn\+::slick\+::opengl\+::\+Internal\+Texture\+Loader}!get\+Texture@{get\+Texture}}
+\index{get\+Texture@{get\+Texture}!org\+::newdawn\+::slick\+::opengl\+::\+Internal\+Texture\+Loader@{org\+::newdawn\+::slick\+::opengl\+::\+Internal\+Texture\+Loader}}
+\subsubsection{\texorpdfstring{get\+Texture()}{getTexture()}\hspace{0.1cm}{\footnotesize\ttfamily [1/8]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1opengl_1_1_texture}{Texture}} org.\+newdawn.\+slick.\+opengl.\+Internal\+Texture\+Loader.\+get\+Texture (\begin{DoxyParamCaption}\item[{File}]{source,  }\item[{boolean}]{flipped,  }\item[{int}]{filter }\end{DoxyParamCaption}) throws I\+O\+Exception\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get a texture from a specific file
+
+
+\begin{DoxyParams}{Parameters}
+{\em source} & The file to load the texture from \\
+\hline
+{\em flipped} & True if we should flip the texture on the y axis while loading \\
+\hline
+{\em filter} & The filter to use \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The texture loaded 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em I\+O\+Exception} & Indicates a failure to load the image \\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyCode}
+135                                                                                           \{
+136         String resourceName = source.getAbsolutePath();
+137         InputStream in = \textcolor{keyword}{new} FileInputStream(source);
+138         
+139         \textcolor{keywordflow}{return} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_internal_texture_loader_a5d76355a0aa7c2b3d7dd6106412d5805}{getTexture}}(in, resourceName, flipped, filter, null);
+140     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_internal_texture_loader_a87771fd138461a60d3ba7763a8712446}\label{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_internal_texture_loader_a87771fd138461a60d3ba7763a8712446}} 
+\index{org\+::newdawn\+::slick\+::opengl\+::\+Internal\+Texture\+Loader@{org\+::newdawn\+::slick\+::opengl\+::\+Internal\+Texture\+Loader}!get\+Texture@{get\+Texture}}
+\index{get\+Texture@{get\+Texture}!org\+::newdawn\+::slick\+::opengl\+::\+Internal\+Texture\+Loader@{org\+::newdawn\+::slick\+::opengl\+::\+Internal\+Texture\+Loader}}
+\subsubsection{\texorpdfstring{get\+Texture()}{getTexture()}\hspace{0.1cm}{\footnotesize\ttfamily [2/8]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1opengl_1_1_texture}{Texture}} org.\+newdawn.\+slick.\+opengl.\+Internal\+Texture\+Loader.\+get\+Texture (\begin{DoxyParamCaption}\item[{File}]{source,  }\item[{boolean}]{flipped,  }\item[{int}]{filter,  }\item[{int \mbox{[}$\,$\mbox{]}}]{transparent }\end{DoxyParamCaption}) throws I\+O\+Exception\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get a texture from a specific file
+
+
+\begin{DoxyParams}{Parameters}
+{\em source} & The file to load the texture from \\
+\hline
+{\em flipped} & True if we should flip the texture on the y axis while loading \\
+\hline
+{\em filter} & The filter to use \\
+\hline
+{\em transparent} & The colour to interpret as transparent or null if none \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The texture loaded 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em I\+O\+Exception} & Indicates a failure to load the image \\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyCode}
+152                                                                                                            
+        \{
+153         String resourceName = source.getAbsolutePath();
+154         InputStream in = \textcolor{keyword}{new} FileInputStream(source);
+155         
+156         \textcolor{keywordflow}{return} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_internal_texture_loader_a5d76355a0aa7c2b3d7dd6106412d5805}{getTexture}}(in, resourceName, flipped, filter, transparent);
+157     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_internal_texture_loader_a1f123ec5aa1db858970982d6f7b2cc0c}\label{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_internal_texture_loader_a1f123ec5aa1db858970982d6f7b2cc0c}} 
+\index{org\+::newdawn\+::slick\+::opengl\+::\+Internal\+Texture\+Loader@{org\+::newdawn\+::slick\+::opengl\+::\+Internal\+Texture\+Loader}!get\+Texture@{get\+Texture}}
+\index{get\+Texture@{get\+Texture}!org\+::newdawn\+::slick\+::opengl\+::\+Internal\+Texture\+Loader@{org\+::newdawn\+::slick\+::opengl\+::\+Internal\+Texture\+Loader}}
+\subsubsection{\texorpdfstring{get\+Texture()}{getTexture()}\hspace{0.1cm}{\footnotesize\ttfamily [3/8]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1opengl_1_1_texture}{Texture}} org.\+newdawn.\+slick.\+opengl.\+Internal\+Texture\+Loader.\+get\+Texture (\begin{DoxyParamCaption}\item[{String}]{resource\+Name,  }\item[{boolean}]{flipped,  }\item[{int}]{filter }\end{DoxyParamCaption}) throws I\+O\+Exception\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get a texture from a resource location
+
+
+\begin{DoxyParams}{Parameters}
+{\em resource\+Name} & The location to load the texture from \\
+\hline
+{\em flipped} & True if we should flip the texture on the y axis while loading \\
+\hline
+{\em filter} & The filter to use when scaling the texture \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The texture loaded 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em I\+O\+Exception} & Indicates a failure to load the image \\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyCode}
+168                                                                                                    \{
+169         InputStream in = ResourceLoader.getResourceAsStream(resourceName);
+170         
+171         \textcolor{keywordflow}{return} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_internal_texture_loader_a5d76355a0aa7c2b3d7dd6106412d5805}{getTexture}}(in, resourceName, flipped, filter, null);
+172     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_internal_texture_loader_a690450dca2c9fe7c2e0036a33ca79349}\label{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_internal_texture_loader_a690450dca2c9fe7c2e0036a33ca79349}} 
+\index{org\+::newdawn\+::slick\+::opengl\+::\+Internal\+Texture\+Loader@{org\+::newdawn\+::slick\+::opengl\+::\+Internal\+Texture\+Loader}!get\+Texture@{get\+Texture}}
+\index{get\+Texture@{get\+Texture}!org\+::newdawn\+::slick\+::opengl\+::\+Internal\+Texture\+Loader@{org\+::newdawn\+::slick\+::opengl\+::\+Internal\+Texture\+Loader}}
+\subsubsection{\texorpdfstring{get\+Texture()}{getTexture()}\hspace{0.1cm}{\footnotesize\ttfamily [4/8]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1opengl_1_1_texture}{Texture}} org.\+newdawn.\+slick.\+opengl.\+Internal\+Texture\+Loader.\+get\+Texture (\begin{DoxyParamCaption}\item[{String}]{resource\+Name,  }\item[{boolean}]{flipped,  }\item[{int}]{filter,  }\item[{int \mbox{[}$\,$\mbox{]}}]{transparent }\end{DoxyParamCaption}) throws I\+O\+Exception\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get a texture from a resource location
+
+
+\begin{DoxyParams}{Parameters}
+{\em resource\+Name} & The location to load the texture from \\
+\hline
+{\em flipped} & True if we should flip the texture on the y axis while loading \\
+\hline
+{\em filter} & The filter to use when scaling the texture \\
+\hline
+{\em transparent} & The colour to interpret as transparent or null if none \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The texture loaded 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em I\+O\+Exception} & Indicates a failure to load the image \\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyCode}
+184                                                                                                            
+                 \{
+185         InputStream in = ResourceLoader.getResourceAsStream(resourceName);
+186         
+187         \textcolor{keywordflow}{return} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_internal_texture_loader_a5d76355a0aa7c2b3d7dd6106412d5805}{getTexture}}(in, resourceName, flipped, filter, transparent);
+188     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_internal_texture_loader_a315d8e0c0dc76258342dd7e903bfa1af}\label{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_internal_texture_loader_a315d8e0c0dc76258342dd7e903bfa1af}} 
+\index{org\+::newdawn\+::slick\+::opengl\+::\+Internal\+Texture\+Loader@{org\+::newdawn\+::slick\+::opengl\+::\+Internal\+Texture\+Loader}!get\+Texture@{get\+Texture}}
+\index{get\+Texture@{get\+Texture}!org\+::newdawn\+::slick\+::opengl\+::\+Internal\+Texture\+Loader@{org\+::newdawn\+::slick\+::opengl\+::\+Internal\+Texture\+Loader}}
+\subsubsection{\texorpdfstring{get\+Texture()}{getTexture()}\hspace{0.1cm}{\footnotesize\ttfamily [5/8]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1opengl_1_1_texture}{Texture}} org.\+newdawn.\+slick.\+opengl.\+Internal\+Texture\+Loader.\+get\+Texture (\begin{DoxyParamCaption}\item[{Input\+Stream}]{in,  }\item[{String}]{resource\+Name,  }\item[{boolean}]{flipped,  }\item[{int}]{filter }\end{DoxyParamCaption}) throws I\+O\+Exception\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get a texture from a image file
+
+
+\begin{DoxyParams}{Parameters}
+{\em in} & The stream from which we can load the image \\
+\hline
+{\em resource\+Name} & The name to give this image in the internal cache \\
+\hline
+{\em flipped} & True if we should flip the image on the y-\/axis while loading \\
+\hline
+{\em filter} & The filter to use when scaling the texture \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The texture loaded 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em I\+O\+Exception} & Indicates a failure to load the image \\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyCode}
+199                                                                                                            
+              \{
+200         \textcolor{keywordflow}{return} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_internal_texture_loader_a5d76355a0aa7c2b3d7dd6106412d5805}{getTexture}}(in, resourceName, flipped, filter, null);
+201     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_internal_texture_loader_aab0726a2bebb2b26791977daa6c53a2b}\label{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_internal_texture_loader_aab0726a2bebb2b26791977daa6c53a2b}} 
+\index{org\+::newdawn\+::slick\+::opengl\+::\+Internal\+Texture\+Loader@{org\+::newdawn\+::slick\+::opengl\+::\+Internal\+Texture\+Loader}!get\+Texture@{get\+Texture}}
+\index{get\+Texture@{get\+Texture}!org\+::newdawn\+::slick\+::opengl\+::\+Internal\+Texture\+Loader@{org\+::newdawn\+::slick\+::opengl\+::\+Internal\+Texture\+Loader}}
+\subsubsection{\texorpdfstring{get\+Texture()}{getTexture()}\hspace{0.1cm}{\footnotesize\ttfamily [6/8]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_texture_impl}{Texture\+Impl}} org.\+newdawn.\+slick.\+opengl.\+Internal\+Texture\+Loader.\+get\+Texture (\begin{DoxyParamCaption}\item[{Input\+Stream}]{in,  }\item[{String}]{resource\+Name,  }\item[{boolean}]{flipped,  }\item[{int}]{filter,  }\item[{int \mbox{[}$\,$\mbox{]}}]{transparent }\end{DoxyParamCaption}) throws I\+O\+Exception\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get a texture from a image file
+
+
+\begin{DoxyParams}{Parameters}
+{\em in} & The stream from which we can load the image \\
+\hline
+{\em resource\+Name} & The name to give this image in the internal cache \\
+\hline
+{\em flipped} & True if we should flip the image on the y-\/axis while loading \\
+\hline
+{\em filter} & The filter to use when scaling the texture \\
+\hline
+{\em transparent} & The colour to interpret as transparent or null if none \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The texture loaded 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em I\+O\+Exception} & Indicates a failure to load the image \\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyCode}
+214                                                                                                            
+                                     \{
+215         \textcolor{keywordflow}{if} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_internal_texture_loader_afde58d084fb7c587c15b674005617ff4}{deferred}}) \{
+216             \textcolor{keywordflow}{return} \textcolor{keyword}{new} DeferredTexture(in, resourceName, flipped, filter, transparent);
+217         \}
+218         
+219         HashMap hash = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_internal_texture_loader_af5ded371f9b982d890be25766fb2ba46}{texturesLinear}};
+220         \textcolor{keywordflow}{if} (filter == SGL.GL\_NEAREST) \{
+221             hash = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_internal_texture_loader_a2212ea841053c4380293000579d0a068}{texturesNearest}};
+222         \}
+223         
+224         String resName = resourceName;
+225         \textcolor{keywordflow}{if} (transparent != null) \{
+226             resName += \textcolor{stringliteral}{":"}+transparent[0]+\textcolor{stringliteral}{":"}+transparent[1]+\textcolor{stringliteral}{":"}+transparent[2];
+227         \}
+228         resName += \textcolor{stringliteral}{":"}+flipped;
+229         
+230         \textcolor{keywordflow}{if} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_internal_texture_loader_a45b8c17af18ad5095972b3f519eb17bd}{holdTextureData}}) \{
+231             TextureImpl tex = (TextureImpl)  hash.get(resName);
+232             \textcolor{keywordflow}{if} (tex != null) \{
+233                 \textcolor{keywordflow}{return} tex;
+234             \}
+235         \} \textcolor{keywordflow}{else} \{
+236             SoftReference ref = (SoftReference) hash.get(resName);
+237             \textcolor{keywordflow}{if} (ref != null) \{
+238                 TextureImpl tex = (TextureImpl) ref.get();
+239                 \textcolor{keywordflow}{if} (tex != null) \{
+240                     \textcolor{keywordflow}{return} tex;
+241                 \} \textcolor{keywordflow}{else} \{
+242                     hash.remove(resName);
+243                 \}
+244             \}
+245         \}
+246         
+247         \textcolor{comment}{// horrible test until I can find something more suitable}
+248         \textcolor{keywordflow}{try} \{
+249             \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_internal_texture_loader_a302f0e97810ce583189425dd693ae4c2}{GL}}.\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1opengl_1_1renderer_1_1_s_g_l_ad629cdbc2f5bd7148fad9c93b778ff47}{glGetError}}();
+250         \} \textcolor{keywordflow}{catch} (NullPointerException e) \{
+251             \textcolor{keywordflow}{throw} \textcolor{keyword}{new} RuntimeException(\textcolor{stringliteral}{"Image based resources must be loaded as part of init() or the game
+       loop. They cannot be loaded before initialisation."});
+252         \}
+253         
+254         TextureImpl tex = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_internal_texture_loader_a5d76355a0aa7c2b3d7dd6106412d5805}{getTexture}}(in, resourceName,
+255                          SGL.GL\_TEXTURE\_2D, 
+256                          filter, 
+257                          filter, flipped, transparent);
+258         
+259         tex.setCacheName(resName);
+260         \textcolor{keywordflow}{if} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_internal_texture_loader_a45b8c17af18ad5095972b3f519eb17bd}{holdTextureData}}) \{
+261             hash.put(resName, tex);
+262         \} \textcolor{keywordflow}{else} \{
+263             hash.put(resName, \textcolor{keyword}{new} SoftReference(tex));
+264         \}
+265         
+266         \textcolor{keywordflow}{return} tex;
+267     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_internal_texture_loader_a3b0ac135ea1ae7f431458f15ca702d56}\label{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_internal_texture_loader_a3b0ac135ea1ae7f431458f15ca702d56}} 
+\index{org\+::newdawn\+::slick\+::opengl\+::\+Internal\+Texture\+Loader@{org\+::newdawn\+::slick\+::opengl\+::\+Internal\+Texture\+Loader}!get\+Texture@{get\+Texture}}
+\index{get\+Texture@{get\+Texture}!org\+::newdawn\+::slick\+::opengl\+::\+Internal\+Texture\+Loader@{org\+::newdawn\+::slick\+::opengl\+::\+Internal\+Texture\+Loader}}
+\subsubsection{\texorpdfstring{get\+Texture()}{getTexture()}\hspace{0.1cm}{\footnotesize\ttfamily [7/8]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_texture_impl}{Texture\+Impl}} org.\+newdawn.\+slick.\+opengl.\+Internal\+Texture\+Loader.\+get\+Texture (\begin{DoxyParamCaption}\item[{Input\+Stream}]{in,  }\item[{String}]{resource\+Name,  }\item[{int}]{target,  }\item[{int}]{mag\+Filter,  }\item[{int}]{min\+Filter,  }\item[{boolean}]{flipped,  }\item[{int \mbox{[}$\,$\mbox{]}}]{transparent }\end{DoxyParamCaption}) throws I\+O\+Exception\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+Get a texture from a image file
+
+
+\begin{DoxyParams}{Parameters}
+{\em in} & The stream from which we can load the image \\
+\hline
+{\em resource\+Name} & The name to give this image in the internal cache \\
+\hline
+{\em flipped} & True if we should flip the image on the y-\/axis while loading \\
+\hline
+{\em target} & The texture target we\textquotesingle{}re loading this texture into \\
+\hline
+{\em min\+Filter} & The scaling down filter \\
+\hline
+{\em mag\+Filter} & The scaling up filter \\
+\hline
+{\em transparent} & The colour to interpret as transparent or null if none \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The texture loaded 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em I\+O\+Exception} & Indicates a failure to load the image \\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyCode}
+287     \{ 
+288         \textcolor{comment}{// create the texture ID for this texture }
+289         ByteBuffer textureBuffer;
+290         
+291         LoadableImageData imageData = ImageDataFactory.getImageDataFor(resourceName);
+292         textureBuffer = imageData.loadImage(\textcolor{keyword}{new} BufferedInputStream(in), flipped, transparent);
+293 
+294         \textcolor{keywordtype}{int} textureID = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_internal_texture_loader_a1bebab39014659d66c3f45bfefb678a1}{createTextureID}}(); 
+295         TextureImpl texture = \textcolor{keyword}{new} TextureImpl(resourceName, target, textureID); 
+296         \textcolor{comment}{// bind this texture }
+297         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_internal_texture_loader_a302f0e97810ce583189425dd693ae4c2}{GL}}.\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1opengl_1_1renderer_1_1_s_g_l_a7b546bba69c511f7d96d055ac1ed6a21}{glBindTexture}}(target, textureID); 
+298  
+299         \textcolor{keywordtype}{int} width;
+300         \textcolor{keywordtype}{int} height;
+301         \textcolor{keywordtype}{int} texWidth;
+302         \textcolor{keywordtype}{int} texHeight;
+303         
+304         \textcolor{keywordtype}{boolean} hasAlpha;
+305         
+306         width = imageData.getWidth();
+307         height = imageData.getHeight();
+308         hasAlpha = imageData.getDepth() == 32;
+309         
+310         texture.setTextureWidth(imageData.getTexWidth());
+311         texture.setTextureHeight(imageData.getTexHeight());
+312 
+313         texWidth = texture.getTextureWidth();
+314         texHeight = texture.getTextureHeight();
+315 
+316         IntBuffer temp = BufferUtils.createIntBuffer(16);
+317         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_internal_texture_loader_a302f0e97810ce583189425dd693ae4c2}{GL}}.\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1opengl_1_1renderer_1_1_s_g_l_ab04cb68029b55582eb4b17b489cbbb2f}{glGetInteger}}(SGL.GL\_MAX\_TEXTURE\_SIZE, temp);
+318         \textcolor{keywordtype}{int} max = temp.get(0);
+319         \textcolor{keywordflow}{if} ((texWidth > max) || (texHeight > max)) \{
+320             \textcolor{keywordflow}{throw} \textcolor{keyword}{new} IOException(\textcolor{stringliteral}{"Attempt to allocate a texture to big for the current hardware"});
+321         \}
+322         
+323         \textcolor{keywordtype}{int} srcPixelFormat = hasAlpha ? SGL.GL\_RGBA : SGL.GL\_RGB;
+324         \textcolor{keywordtype}{int} componentCount = hasAlpha ? 4 : 3;
+325         
+326         texture.setWidth(width);
+327         texture.setHeight(height);
+328         texture.setAlpha(hasAlpha);
+329 
+330         \textcolor{keywordflow}{if} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_internal_texture_loader_a45b8c17af18ad5095972b3f519eb17bd}{holdTextureData}}) \{
+331             texture.setTextureData(srcPixelFormat, componentCount, minFilter, magFilter, textureBuffer);
+332         \}
+333         
+334         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_internal_texture_loader_a302f0e97810ce583189425dd693ae4c2}{GL}}.\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1opengl_1_1renderer_1_1_s_g_l_a99abf6a580aac95c599916a61a4933d4}{glTexParameteri}}(target, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_internal_texture_loader_a302f0e97810ce583189425dd693ae4c2}{GL}}.\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1opengl_1_1renderer_1_1_s_g_l_a8b6856c305a08152807b7a75ba55dbc9}{GL\_TEXTURE\_MIN\_FILTER}}, 
+      minFilter); 
+335         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_internal_texture_loader_a302f0e97810ce583189425dd693ae4c2}{GL}}.\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1opengl_1_1renderer_1_1_s_g_l_a99abf6a580aac95c599916a61a4933d4}{glTexParameteri}}(target, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_internal_texture_loader_a302f0e97810ce583189425dd693ae4c2}{GL}}.\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1opengl_1_1renderer_1_1_s_g_l_a2a21c6a78f6e0b7289066941ddfa91b5}{GL\_TEXTURE\_MAG\_FILTER}}, 
+      magFilter); 
+336         
+337         \textcolor{comment}{// produce a texture from the byte buffer}
+338         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_internal_texture_loader_a302f0e97810ce583189425dd693ae4c2}{GL}}.\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1opengl_1_1renderer_1_1_s_g_l_ac54bd1b95351cf7ed72830324f256e2e}{glTexImage2D}}(target, 
+339                       0, 
+340                       \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_internal_texture_loader_a38647f15e90386d1a6a3c398f1766611}{dstPixelFormat}}, 
+341                       \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_internal_texture_loader_ae9aa071a4fa98cbc080f7d0ad9423ae1}{get2Fold}}(width), 
+342                       \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_internal_texture_loader_ae9aa071a4fa98cbc080f7d0ad9423ae1}{get2Fold}}(height), 
+343                       0, 
+344                       srcPixelFormat, 
+345                       SGL.GL\_UNSIGNED\_BYTE, 
+346                       textureBuffer); 
+347         
+348         \textcolor{keywordflow}{return} texture; 
+349     \} 
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_internal_texture_loader_a50b4b6c9e8fc9590ee17ea1eff33ecbb}\label{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_internal_texture_loader_a50b4b6c9e8fc9590ee17ea1eff33ecbb}} 
+\index{org\+::newdawn\+::slick\+::opengl\+::\+Internal\+Texture\+Loader@{org\+::newdawn\+::slick\+::opengl\+::\+Internal\+Texture\+Loader}!get\+Texture@{get\+Texture}}
+\index{get\+Texture@{get\+Texture}!org\+::newdawn\+::slick\+::opengl\+::\+Internal\+Texture\+Loader@{org\+::newdawn\+::slick\+::opengl\+::\+Internal\+Texture\+Loader}}
+\subsubsection{\texorpdfstring{get\+Texture()}{getTexture()}\hspace{0.1cm}{\footnotesize\ttfamily [8/8]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1opengl_1_1_texture}{Texture}} org.\+newdawn.\+slick.\+opengl.\+Internal\+Texture\+Loader.\+get\+Texture (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1opengl_1_1_image_data}{Image\+Data}}}]{data\+Source,  }\item[{int}]{filter }\end{DoxyParamCaption}) throws I\+O\+Exception\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get a texture from a image file
+
+
+\begin{DoxyParams}{Parameters}
+{\em data\+Source} & The image data to generate the texture from \\
+\hline
+{\em filter} & The filter to use when scaling the texture \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The texture created 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em I\+O\+Exception} & Indicates the texture is too big for the hardware \\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyCode}
+386     \{ 
+387         \textcolor{keywordtype}{int} target = SGL.GL\_TEXTURE\_2D;
+388 
+389         ByteBuffer textureBuffer;
+390         textureBuffer = dataSource.getImageBufferData();
+391         
+392         \textcolor{comment}{// create the texture ID for this texture }
+393         \textcolor{keywordtype}{int} textureID = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_internal_texture_loader_a1bebab39014659d66c3f45bfefb678a1}{createTextureID}}(); 
+394         TextureImpl texture = \textcolor{keyword}{new} TextureImpl(\textcolor{stringliteral}{"generated:"}+dataSource, target ,textureID); 
+395         
+396         \textcolor{keywordtype}{int} minFilter = filter;
+397         \textcolor{keywordtype}{int} magFilter = filter;
+398         \textcolor{keywordtype}{boolean} flipped = \textcolor{keyword}{false};
+399         
+400         \textcolor{comment}{// bind this texture }
+401         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_internal_texture_loader_a302f0e97810ce583189425dd693ae4c2}{GL}}.\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1opengl_1_1renderer_1_1_s_g_l_a7b546bba69c511f7d96d055ac1ed6a21}{glBindTexture}}(target, textureID); 
+402         
+403         \textcolor{keywordtype}{int} width;
+404         \textcolor{keywordtype}{int} height;
+405         \textcolor{keywordtype}{int} texWidth;
+406         \textcolor{keywordtype}{int} texHeight;
+407         
+408         \textcolor{keywordtype}{boolean} hasAlpha;
+409         
+410         width = dataSource.getWidth();
+411         height = dataSource.getHeight();
+412         hasAlpha = dataSource.getDepth() == 32;
+413         
+414         texture.setTextureWidth(dataSource.getTexWidth());
+415         texture.setTextureHeight(dataSource.getTexHeight());
+416 
+417         texWidth = texture.getTextureWidth();
+418         texHeight = texture.getTextureHeight();
+419         
+420         \textcolor{keywordtype}{int} srcPixelFormat = hasAlpha ? SGL.GL\_RGBA : SGL.GL\_RGB;
+421         \textcolor{keywordtype}{int} componentCount = hasAlpha ? 4 : 3;
+422         
+423         texture.setWidth(width);
+424         texture.setHeight(height);
+425         texture.setAlpha(hasAlpha);
+426         
+427         IntBuffer temp = BufferUtils.createIntBuffer(16);
+428         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_internal_texture_loader_a302f0e97810ce583189425dd693ae4c2}{GL}}.\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1opengl_1_1renderer_1_1_s_g_l_ab04cb68029b55582eb4b17b489cbbb2f}{glGetInteger}}(SGL.GL\_MAX\_TEXTURE\_SIZE, temp);
+429         \textcolor{keywordtype}{int} max = temp.get(0);
+430         \textcolor{keywordflow}{if} ((texWidth > max) || (texHeight > max)) \{
+431             \textcolor{keywordflow}{throw} \textcolor{keyword}{new} IOException(\textcolor{stringliteral}{"Attempt to allocate a texture to big for the current hardware"});
+432         \}
+433 
+434         \textcolor{keywordflow}{if} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_internal_texture_loader_a45b8c17af18ad5095972b3f519eb17bd}{holdTextureData}}) \{
+435             texture.setTextureData(srcPixelFormat, componentCount, minFilter, magFilter, textureBuffer);
+436         \}
+437         
+438         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_internal_texture_loader_a302f0e97810ce583189425dd693ae4c2}{GL}}.\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1opengl_1_1renderer_1_1_s_g_l_a99abf6a580aac95c599916a61a4933d4}{glTexParameteri}}(target, SGL.GL\_TEXTURE\_MIN\_FILTER, minFilter); 
+439         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_internal_texture_loader_a302f0e97810ce583189425dd693ae4c2}{GL}}.\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1opengl_1_1renderer_1_1_s_g_l_a99abf6a580aac95c599916a61a4933d4}{glTexParameteri}}(target, SGL.GL\_TEXTURE\_MAG\_FILTER, magFilter); 
+440         
+441         \textcolor{comment}{// produce a texture from the byte buffer}
+442         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_internal_texture_loader_a302f0e97810ce583189425dd693ae4c2}{GL}}.\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1opengl_1_1renderer_1_1_s_g_l_ac54bd1b95351cf7ed72830324f256e2e}{glTexImage2D}}(target, 
+443                       0, 
+444                       \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_internal_texture_loader_a38647f15e90386d1a6a3c398f1766611}{dstPixelFormat}}, 
+445                       \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_internal_texture_loader_ae9aa071a4fa98cbc080f7d0ad9423ae1}{get2Fold}}(width), 
+446                       \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_internal_texture_loader_ae9aa071a4fa98cbc080f7d0ad9423ae1}{get2Fold}}(height), 
+447                       0, 
+448                       srcPixelFormat, 
+449                       SGL.GL\_UNSIGNED\_BYTE, 
+450                       textureBuffer); 
+451         
+452         \textcolor{keywordflow}{return} texture; 
+453     \} 
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_internal_texture_loader_a0b944a7578a266f2ffae2b4259497823}\label{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_internal_texture_loader_a0b944a7578a266f2ffae2b4259497823}} 
+\index{org\+::newdawn\+::slick\+::opengl\+::\+Internal\+Texture\+Loader@{org\+::newdawn\+::slick\+::opengl\+::\+Internal\+Texture\+Loader}!is\+Deferred\+Loading@{is\+Deferred\+Loading}}
+\index{is\+Deferred\+Loading@{is\+Deferred\+Loading}!org\+::newdawn\+::slick\+::opengl\+::\+Internal\+Texture\+Loader@{org\+::newdawn\+::slick\+::opengl\+::\+Internal\+Texture\+Loader}}
+\subsubsection{\texorpdfstring{is\+Deferred\+Loading()}{isDeferredLoading()}}
+{\footnotesize\ttfamily boolean org.\+newdawn.\+slick.\+opengl.\+Internal\+Texture\+Loader.\+is\+Deferred\+Loading (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Check if we\textquotesingle{}re using deferred loading
+
+\begin{DoxyReturn}{Returns}
+True if we\textquotesingle{}re loading deferred textures 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+85                                        \{
+86         \textcolor{keywordflow}{return} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_internal_texture_loader_afde58d084fb7c587c15b674005617ff4}{deferred}};
+87     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_internal_texture_loader_a104bc76d2e57c583fb713651a08f69a1}\label{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_internal_texture_loader_a104bc76d2e57c583fb713651a08f69a1}} 
+\index{org\+::newdawn\+::slick\+::opengl\+::\+Internal\+Texture\+Loader@{org\+::newdawn\+::slick\+::opengl\+::\+Internal\+Texture\+Loader}!reload@{reload}}
+\index{reload@{reload}!org\+::newdawn\+::slick\+::opengl\+::\+Internal\+Texture\+Loader@{org\+::newdawn\+::slick\+::opengl\+::\+Internal\+Texture\+Loader}}
+\subsubsection{\texorpdfstring{reload()}{reload()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+opengl.\+Internal\+Texture\+Loader.\+reload (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Reload all the textures loaded in this loader 
+\begin{DoxyCode}
+486                          \{
+487         Iterator texs = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_internal_texture_loader_af5ded371f9b982d890be25766fb2ba46}{texturesLinear}}.values().iterator();
+488         \textcolor{keywordflow}{while} (texs.hasNext()) \{
+489             ((TextureImpl) texs.next()).\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_internal_texture_loader_a104bc76d2e57c583fb713651a08f69a1}{reload}}();
+490         \}
+491         texs = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_internal_texture_loader_a2212ea841053c4380293000579d0a068}{texturesNearest}}.values().iterator();
+492         \textcolor{keywordflow}{while} (texs.hasNext()) \{
+493             ((TextureImpl) texs.next()).\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_internal_texture_loader_a104bc76d2e57c583fb713651a08f69a1}{reload}}();
+494         \}
+495     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_internal_texture_loader_a027f068ce42f53062f37140d09204d6e}\label{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_internal_texture_loader_a027f068ce42f53062f37140d09204d6e}} 
+\index{org\+::newdawn\+::slick\+::opengl\+::\+Internal\+Texture\+Loader@{org\+::newdawn\+::slick\+::opengl\+::\+Internal\+Texture\+Loader}!reload@{reload}}
+\index{reload@{reload}!org\+::newdawn\+::slick\+::opengl\+::\+Internal\+Texture\+Loader@{org\+::newdawn\+::slick\+::opengl\+::\+Internal\+Texture\+Loader}}
+\subsubsection{\texorpdfstring{reload()}{reload()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily int org.\+newdawn.\+slick.\+opengl.\+Internal\+Texture\+Loader.\+reload (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_texture_impl}{Texture\+Impl}}}]{texture,  }\item[{int}]{src\+Pixel\+Format,  }\item[{int}]{component\+Count,  }\item[{int}]{min\+Filter,  }\item[{int}]{mag\+Filter,  }\item[{Byte\+Buffer}]{texture\+Buffer }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Reload a given texture blob
+
+
+\begin{DoxyParams}{Parameters}
+{\em texture} & The texture being reloaded \\
+\hline
+{\em src\+Pixel\+Format} & The source pixel format \\
+\hline
+{\em component\+Count} & The component count \\
+\hline
+{\em min\+Filter} & The minification filter \\
+\hline
+{\em mag\+Filter} & The magnification filter \\
+\hline
+{\em texture\+Buffer} & The pixel data \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The ID of the newly created texture 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+509                                                                     \{
+510         \textcolor{keywordtype}{int} target = SGL.GL\_TEXTURE\_2D;
+511         \textcolor{keywordtype}{int} textureID = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_internal_texture_loader_a1bebab39014659d66c3f45bfefb678a1}{createTextureID}}(); 
+512         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_internal_texture_loader_a302f0e97810ce583189425dd693ae4c2}{GL}}.\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1opengl_1_1renderer_1_1_s_g_l_a7b546bba69c511f7d96d055ac1ed6a21}{glBindTexture}}(target, textureID); 
+513         
+514         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_internal_texture_loader_a302f0e97810ce583189425dd693ae4c2}{GL}}.\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1opengl_1_1renderer_1_1_s_g_l_a99abf6a580aac95c599916a61a4933d4}{glTexParameteri}}(target, SGL.GL\_TEXTURE\_MIN\_FILTER, minFilter); 
+515         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_internal_texture_loader_a302f0e97810ce583189425dd693ae4c2}{GL}}.\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1opengl_1_1renderer_1_1_s_g_l_a99abf6a580aac95c599916a61a4933d4}{glTexParameteri}}(target, SGL.GL\_TEXTURE\_MAG\_FILTER, magFilter); 
+516         
+517         \textcolor{comment}{// produce a texture from the byte buffer}
+518         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_internal_texture_loader_a302f0e97810ce583189425dd693ae4c2}{GL}}.\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1opengl_1_1renderer_1_1_s_g_l_ac54bd1b95351cf7ed72830324f256e2e}{glTexImage2D}}(target, 
+519                       0, 
+520                       \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_internal_texture_loader_a38647f15e90386d1a6a3c398f1766611}{dstPixelFormat}}, 
+521                       texture.getTextureWidth(), 
+522                       texture.getTextureHeight(), 
+523                       0, 
+524                       srcPixelFormat, 
+525                       SGL.GL\_UNSIGNED\_BYTE, 
+526                       textureBuffer); 
+527         
+528         \textcolor{keywordflow}{return} textureID; 
+529     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_internal_texture_loader_a437129416e05ec67f039b06f2c3159af}\label{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_internal_texture_loader_a437129416e05ec67f039b06f2c3159af}} 
+\index{org\+::newdawn\+::slick\+::opengl\+::\+Internal\+Texture\+Loader@{org\+::newdawn\+::slick\+::opengl\+::\+Internal\+Texture\+Loader}!set16\+Bit\+Mode@{set16\+Bit\+Mode}}
+\index{set16\+Bit\+Mode@{set16\+Bit\+Mode}!org\+::newdawn\+::slick\+::opengl\+::\+Internal\+Texture\+Loader@{org\+::newdawn\+::slick\+::opengl\+::\+Internal\+Texture\+Loader}}
+\subsubsection{\texorpdfstring{set16\+Bit\+Mode()}{set16BitMode()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+opengl.\+Internal\+Texture\+Loader.\+set16\+Bit\+Mode (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Tell the loader to produce 16 bit textures 
+\begin{DoxyCode}
+110                                \{
+111         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_internal_texture_loader_a38647f15e90386d1a6a3c398f1766611}{dstPixelFormat}} = SGL.GL\_RGBA16;
+112     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_internal_texture_loader_a85712ee47210f31f5605e04dba77b5ab}\label{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_internal_texture_loader_a85712ee47210f31f5605e04dba77b5ab}} 
+\index{org\+::newdawn\+::slick\+::opengl\+::\+Internal\+Texture\+Loader@{org\+::newdawn\+::slick\+::opengl\+::\+Internal\+Texture\+Loader}!set\+Deferred\+Loading@{set\+Deferred\+Loading}}
+\index{set\+Deferred\+Loading@{set\+Deferred\+Loading}!org\+::newdawn\+::slick\+::opengl\+::\+Internal\+Texture\+Loader@{org\+::newdawn\+::slick\+::opengl\+::\+Internal\+Texture\+Loader}}
+\subsubsection{\texorpdfstring{set\+Deferred\+Loading()}{setDeferredLoading()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+opengl.\+Internal\+Texture\+Loader.\+set\+Deferred\+Loading (\begin{DoxyParamCaption}\item[{boolean}]{deferred }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+True if we should only record the request to load in the intention of loading the texture later
+
+
+\begin{DoxyParams}{Parameters}
+{\em deferred} & True if the we should load a token \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+76                                                      \{
+77         this.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_internal_texture_loader_afde58d084fb7c587c15b674005617ff4}{deferred}} = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_internal_texture_loader_afde58d084fb7c587c15b674005617ff4}{deferred}};
+78     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_internal_texture_loader_aad0662c212972f36d5b0fd252934deaf}\label{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_internal_texture_loader_aad0662c212972f36d5b0fd252934deaf}} 
+\index{org\+::newdawn\+::slick\+::opengl\+::\+Internal\+Texture\+Loader@{org\+::newdawn\+::slick\+::opengl\+::\+Internal\+Texture\+Loader}!set\+Hold\+Texture\+Data@{set\+Hold\+Texture\+Data}}
+\index{set\+Hold\+Texture\+Data@{set\+Hold\+Texture\+Data}!org\+::newdawn\+::slick\+::opengl\+::\+Internal\+Texture\+Loader@{org\+::newdawn\+::slick\+::opengl\+::\+Internal\+Texture\+Loader}}
+\subsubsection{\texorpdfstring{set\+Hold\+Texture\+Data()}{setHoldTextureData()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+opengl.\+Internal\+Texture\+Loader.\+set\+Hold\+Texture\+Data (\begin{DoxyParamCaption}\item[{boolean}]{hold\+Texture\+Data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Indicate where texture data should be held for reinitialising at a future point.
+
+
+\begin{DoxyParams}{Parameters}
+{\em hold\+Texture\+Data} & True if we should hold texture data \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+66                                                             \{
+67         this.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_internal_texture_loader_a45b8c17af18ad5095972b3f519eb17bd}{holdTextureData}} = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_internal_texture_loader_a45b8c17af18ad5095972b3f519eb17bd}{holdTextureData}};
+68     \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_internal_texture_loader_afde58d084fb7c587c15b674005617ff4}\label{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_internal_texture_loader_afde58d084fb7c587c15b674005617ff4}} 
+\index{org\+::newdawn\+::slick\+::opengl\+::\+Internal\+Texture\+Loader@{org\+::newdawn\+::slick\+::opengl\+::\+Internal\+Texture\+Loader}!deferred@{deferred}}
+\index{deferred@{deferred}!org\+::newdawn\+::slick\+::opengl\+::\+Internal\+Texture\+Loader@{org\+::newdawn\+::slick\+::opengl\+::\+Internal\+Texture\+Loader}}
+\subsubsection{\texorpdfstring{deferred}{deferred}}
+{\footnotesize\ttfamily boolean org.\+newdawn.\+slick.\+opengl.\+Internal\+Texture\+Loader.\+deferred\hspace{0.3cm}{\ttfamily [private]}}
+
+True if we\textquotesingle{}re using deferred loading \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_internal_texture_loader_a38647f15e90386d1a6a3c398f1766611}\label{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_internal_texture_loader_a38647f15e90386d1a6a3c398f1766611}} 
+\index{org\+::newdawn\+::slick\+::opengl\+::\+Internal\+Texture\+Loader@{org\+::newdawn\+::slick\+::opengl\+::\+Internal\+Texture\+Loader}!dst\+Pixel\+Format@{dst\+Pixel\+Format}}
+\index{dst\+Pixel\+Format@{dst\+Pixel\+Format}!org\+::newdawn\+::slick\+::opengl\+::\+Internal\+Texture\+Loader@{org\+::newdawn\+::slick\+::opengl\+::\+Internal\+Texture\+Loader}}
+\subsubsection{\texorpdfstring{dst\+Pixel\+Format}{dstPixelFormat}}
+{\footnotesize\ttfamily int org.\+newdawn.\+slick.\+opengl.\+Internal\+Texture\+Loader.\+dst\+Pixel\+Format = \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1opengl_1_1renderer_1_1_s_g_l_a015ce5deda3c63768e9784f5132cfc17}{S\+G\+L.\+G\+L\+\_\+\+R\+G\+B\+A8}}\hspace{0.3cm}{\ttfamily [private]}}
+
+The destination pixel format \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_internal_texture_loader_a302f0e97810ce583189425dd693ae4c2}\label{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_internal_texture_loader_a302f0e97810ce583189425dd693ae4c2}} 
+\index{org\+::newdawn\+::slick\+::opengl\+::\+Internal\+Texture\+Loader@{org\+::newdawn\+::slick\+::opengl\+::\+Internal\+Texture\+Loader}!GL@{GL}}
+\index{GL@{GL}!org\+::newdawn\+::slick\+::opengl\+::\+Internal\+Texture\+Loader@{org\+::newdawn\+::slick\+::opengl\+::\+Internal\+Texture\+Loader}}
+\subsubsection{\texorpdfstring{GL}{GL}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1opengl_1_1renderer_1_1_s_g_l}{S\+GL}} org.\+newdawn.\+slick.\+opengl.\+Internal\+Texture\+Loader.\+GL = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1renderer_1_1_renderer_abe742c3a7dfca67c6c01821d27087308}{Renderer.\+get}}()\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+The renderer to use for all GL operations \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_internal_texture_loader_a45b8c17af18ad5095972b3f519eb17bd}\label{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_internal_texture_loader_a45b8c17af18ad5095972b3f519eb17bd}} 
+\index{org\+::newdawn\+::slick\+::opengl\+::\+Internal\+Texture\+Loader@{org\+::newdawn\+::slick\+::opengl\+::\+Internal\+Texture\+Loader}!hold\+Texture\+Data@{hold\+Texture\+Data}}
+\index{hold\+Texture\+Data@{hold\+Texture\+Data}!org\+::newdawn\+::slick\+::opengl\+::\+Internal\+Texture\+Loader@{org\+::newdawn\+::slick\+::opengl\+::\+Internal\+Texture\+Loader}}
+\subsubsection{\texorpdfstring{hold\+Texture\+Data}{holdTextureData}}
+{\footnotesize\ttfamily boolean org.\+newdawn.\+slick.\+opengl.\+Internal\+Texture\+Loader.\+hold\+Texture\+Data\hspace{0.3cm}{\ttfamily [private]}}
+
+True if we should hold texture data \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_internal_texture_loader_aebc26e4ad3aef900e65a4f21436de165}\label{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_internal_texture_loader_aebc26e4ad3aef900e65a4f21436de165}} 
+\index{org\+::newdawn\+::slick\+::opengl\+::\+Internal\+Texture\+Loader@{org\+::newdawn\+::slick\+::opengl\+::\+Internal\+Texture\+Loader}!loader@{loader}}
+\index{loader@{loader}!org\+::newdawn\+::slick\+::opengl\+::\+Internal\+Texture\+Loader@{org\+::newdawn\+::slick\+::opengl\+::\+Internal\+Texture\+Loader}}
+\subsubsection{\texorpdfstring{loader}{loader}}
+{\footnotesize\ttfamily final \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_internal_texture_loader}{Internal\+Texture\+Loader}} org.\+newdawn.\+slick.\+opengl.\+Internal\+Texture\+Loader.\+loader = new \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_internal_texture_loader}{Internal\+Texture\+Loader}}()\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+The standard texture loaded used everywhere \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_internal_texture_loader_af5ded371f9b982d890be25766fb2ba46}\label{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_internal_texture_loader_af5ded371f9b982d890be25766fb2ba46}} 
+\index{org\+::newdawn\+::slick\+::opengl\+::\+Internal\+Texture\+Loader@{org\+::newdawn\+::slick\+::opengl\+::\+Internal\+Texture\+Loader}!textures\+Linear@{textures\+Linear}}
+\index{textures\+Linear@{textures\+Linear}!org\+::newdawn\+::slick\+::opengl\+::\+Internal\+Texture\+Loader@{org\+::newdawn\+::slick\+::opengl\+::\+Internal\+Texture\+Loader}}
+\subsubsection{\texorpdfstring{textures\+Linear}{texturesLinear}}
+{\footnotesize\ttfamily Hash\+Map org.\+newdawn.\+slick.\+opengl.\+Internal\+Texture\+Loader.\+textures\+Linear = new Hash\+Map()\hspace{0.3cm}{\ttfamily [private]}}
+
+The table of textures that have been loaded in this loader \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_internal_texture_loader_a2212ea841053c4380293000579d0a068}\label{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_internal_texture_loader_a2212ea841053c4380293000579d0a068}} 
+\index{org\+::newdawn\+::slick\+::opengl\+::\+Internal\+Texture\+Loader@{org\+::newdawn\+::slick\+::opengl\+::\+Internal\+Texture\+Loader}!textures\+Nearest@{textures\+Nearest}}
+\index{textures\+Nearest@{textures\+Nearest}!org\+::newdawn\+::slick\+::opengl\+::\+Internal\+Texture\+Loader@{org\+::newdawn\+::slick\+::opengl\+::\+Internal\+Texture\+Loader}}
+\subsubsection{\texorpdfstring{textures\+Nearest}{texturesNearest}}
+{\footnotesize\ttfamily Hash\+Map org.\+newdawn.\+slick.\+opengl.\+Internal\+Texture\+Loader.\+textures\+Nearest = new Hash\+Map()\hspace{0.3cm}{\ttfamily [private]}}
+
+The table of textures that have been loaded in this loader 

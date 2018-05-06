@@ -1,0 +1,74 @@
+\hypertarget{interfaceorg_1_1newdawn_1_1slick_1_1svg_1_1inkscape_1_1_element_processor}{}\section{org.\+newdawn.\+slick.\+svg.\+inkscape.\+Element\+Processor Interface Reference}
+\label{interfaceorg_1_1newdawn_1_1slick_1_1svg_1_1inkscape_1_1_element_processor}\index{org.\+newdawn.\+slick.\+svg.\+inkscape.\+Element\+Processor@{org.\+newdawn.\+slick.\+svg.\+inkscape.\+Element\+Processor}}
+Inheritance diagram for org.\+newdawn.\+slick.\+svg.\+inkscape.\+Element\+Processor\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=8.102894cm]{interfaceorg_1_1newdawn_1_1slick_1_1svg_1_1inkscape_1_1_element_processor}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1svg_1_1inkscape_1_1_element_processor_acd170a9e1119481edae885780db59a2e}{process}} (\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1svg_1_1_loader}{Loader}} loader, Element element, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1_diagram}{Diagram}} diagram, Transform transform)  throws Parsing\+Exception
+\item 
+boolean \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1svg_1_1inkscape_1_1_element_processor_ae95bbf21a67c52aff02cf09259c554a3}{handles}} (Element element)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The description of a module which processes a single X\+ML element from a S\+VG (inkscape) document.
+
+\begin{DoxyAuthor}{Author}
+kevin 
+\end{DoxyAuthor}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{interfaceorg_1_1newdawn_1_1slick_1_1svg_1_1inkscape_1_1_element_processor_ae95bbf21a67c52aff02cf09259c554a3}\label{interfaceorg_1_1newdawn_1_1slick_1_1svg_1_1inkscape_1_1_element_processor_ae95bbf21a67c52aff02cf09259c554a3}} 
+\index{org\+::newdawn\+::slick\+::svg\+::inkscape\+::\+Element\+Processor@{org\+::newdawn\+::slick\+::svg\+::inkscape\+::\+Element\+Processor}!handles@{handles}}
+\index{handles@{handles}!org\+::newdawn\+::slick\+::svg\+::inkscape\+::\+Element\+Processor@{org\+::newdawn\+::slick\+::svg\+::inkscape\+::\+Element\+Processor}}
+\subsubsection{\texorpdfstring{handles()}{handles()}}
+{\footnotesize\ttfamily boolean org.\+newdawn.\+slick.\+svg.\+inkscape.\+Element\+Processor.\+handles (\begin{DoxyParamCaption}\item[{Element}]{element }\end{DoxyParamCaption})}
+
+Check if this processor handles the element specified
+
+
+\begin{DoxyParams}{Parameters}
+{\em element} & The element to check \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if this processor can handle the given element 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1inkscape_1_1_path_processor_a0dda8e99a9e32cfa07593e50537be812}{org.\+newdawn.\+slick.\+svg.\+inkscape.\+Path\+Processor}}, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1inkscape_1_1_line_processor_ae2f55b553c23eb5a3bab9d194ce2b4bb}{org.\+newdawn.\+slick.\+svg.\+inkscape.\+Line\+Processor}}, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1inkscape_1_1_polygon_processor_ae16fc3ea9284d46c0db316bfeeca56f5}{org.\+newdawn.\+slick.\+svg.\+inkscape.\+Polygon\+Processor}}, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1inkscape_1_1_ellipse_processor_a54a6dbcfc6d01e3fd2bc61aeed789c88}{org.\+newdawn.\+slick.\+svg.\+inkscape.\+Ellipse\+Processor}}, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1inkscape_1_1_rect_processor_a8558ba7a28daef670cedb8afe8d68286}{org.\+newdawn.\+slick.\+svg.\+inkscape.\+Rect\+Processor}}, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1inkscape_1_1_defs_processor_a648d4dd3a482f1a7f329a7b1ae27e387}{org.\+newdawn.\+slick.\+svg.\+inkscape.\+Defs\+Processor}}, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1inkscape_1_1_use_processor_a708b3d8ee6187b45b27913116c689e43}{org.\+newdawn.\+slick.\+svg.\+inkscape.\+Use\+Processor}}, and \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1inkscape_1_1_group_processor_a870dccc7ed743d7d2456575009813c75}{org.\+newdawn.\+slick.\+svg.\+inkscape.\+Group\+Processor}}.
+
+\mbox{\Hypertarget{interfaceorg_1_1newdawn_1_1slick_1_1svg_1_1inkscape_1_1_element_processor_acd170a9e1119481edae885780db59a2e}\label{interfaceorg_1_1newdawn_1_1slick_1_1svg_1_1inkscape_1_1_element_processor_acd170a9e1119481edae885780db59a2e}} 
+\index{org\+::newdawn\+::slick\+::svg\+::inkscape\+::\+Element\+Processor@{org\+::newdawn\+::slick\+::svg\+::inkscape\+::\+Element\+Processor}!process@{process}}
+\index{process@{process}!org\+::newdawn\+::slick\+::svg\+::inkscape\+::\+Element\+Processor@{org\+::newdawn\+::slick\+::svg\+::inkscape\+::\+Element\+Processor}}
+\subsubsection{\texorpdfstring{process()}{process()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+svg.\+inkscape.\+Element\+Processor.\+process (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1svg_1_1_loader}{Loader}}}]{loader,  }\item[{Element}]{element,  }\item[{\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1_diagram}{Diagram}}}]{diagram,  }\item[{Transform}]{transform }\end{DoxyParamCaption}) throws \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1_parsing_exception}{Parsing\+Exception}}}
+
+Process a document extracting all the elements that the processor is interested in and producing appropriate diagram components for the element.
+
+
+\begin{DoxyParams}{Parameters}
+{\em loader} & The loader/context of the parsing \\
+\hline
+{\em element} & The element to be processed \\
+\hline
+{\em diagram} & The diagram to be built \\
+\hline
+{\em transform} & The transform to apply to all elements at this level \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1_parsing_exception}{Parsing\+Exception}}} & Indicates an invalid content to an element \\
+\hline
+\end{DoxyExceptions}
+
+
+Implemented in \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1inkscape_1_1_path_processor_ad4019c7c724b673d4c4aaa23dd95e50e}{org.\+newdawn.\+slick.\+svg.\+inkscape.\+Path\+Processor}}, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1inkscape_1_1_polygon_processor_afe4b2aaaa0651a682fad619a9dddf870}{org.\+newdawn.\+slick.\+svg.\+inkscape.\+Polygon\+Processor}}, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1inkscape_1_1_line_processor_a709d0be1a74b032aa4646f3a51a52657}{org.\+newdawn.\+slick.\+svg.\+inkscape.\+Line\+Processor}}, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1inkscape_1_1_defs_processor_a1ed9ee8ac601c75d66568a7c5dc84e17}{org.\+newdawn.\+slick.\+svg.\+inkscape.\+Defs\+Processor}}, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1inkscape_1_1_use_processor_ad331d42472c6acee3c1c5ee1ddce27e9}{org.\+newdawn.\+slick.\+svg.\+inkscape.\+Use\+Processor}}, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1inkscape_1_1_group_processor_af3d842954b1ee338f5dc0bbca656e9b9}{org.\+newdawn.\+slick.\+svg.\+inkscape.\+Group\+Processor}}, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1inkscape_1_1_ellipse_processor_aa1d099c3b7ce4be328ccde1a5a2d1fb7}{org.\+newdawn.\+slick.\+svg.\+inkscape.\+Ellipse\+Processor}}, and \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1inkscape_1_1_rect_processor_ab411c9f69524536d7b05ab0e7ea3e69e}{org.\+newdawn.\+slick.\+svg.\+inkscape.\+Rect\+Processor}}.
+

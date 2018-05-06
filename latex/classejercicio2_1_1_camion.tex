@@ -1,0 +1,119 @@
+\hypertarget{classejercicio2_1_1_camion}{}\section{ejercicio2.\+Camion Class Reference}
+\label{classejercicio2_1_1_camion}\index{ejercicio2.\+Camion@{ejercicio2.\+Camion}}
+Inheritance diagram for ejercicio2.\+Camion\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classejercicio2_1_1_camion}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classejercicio2_1_1_camion_a4bb6c2a4354fa219d24b61efedef7e1d}{Camion}} (boolean bonocamion, String matriculacamion, int numerodeejes)
+\item 
+double \mbox{\hyperlink{classejercicio2_1_1_camion_ad182c3e62eaf039f0228bf8c7449da2e}{calcular\+Importe}} (\mbox{\hyperlink{classejercicio2_1_1_camion}{Camion}} coche)
+\item 
+int \mbox{\hyperlink{classejercicio2_1_1_camion_acd892291ca5a4276973799bfd07dcd38}{get\+Numeroejes}} ()
+\item 
+void \mbox{\hyperlink{classejercicio2_1_1_camion_a5ebe5eaea3ed9c68de9cffe88c2f05b2}{set\+Numeroejes}} (int nuevonumeroejes)
+\item 
+double \mbox{\hyperlink{classejercicio2_1_1_camion_a99d3e7a5a9433e553bac3386f196bc9b}{calcular\+Importe}} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classejercicio2_1_1_camion_a212debf109984d9e6d453a0370bbad13}{numeroejes}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyAuthor}{Author}
+Ignacio 
+\end{DoxyAuthor}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classejercicio2_1_1_camion_a4bb6c2a4354fa219d24b61efedef7e1d}\label{classejercicio2_1_1_camion_a4bb6c2a4354fa219d24b61efedef7e1d}} 
+\index{ejercicio2\+::\+Camion@{ejercicio2\+::\+Camion}!Camion@{Camion}}
+\index{Camion@{Camion}!ejercicio2\+::\+Camion@{ejercicio2\+::\+Camion}}
+\subsubsection{\texorpdfstring{Camion()}{Camion()}}
+{\footnotesize\ttfamily ejercicio2.\+Camion.\+Camion (\begin{DoxyParamCaption}\item[{boolean}]{bonocamion,  }\item[{String}]{matriculacamion,  }\item[{int}]{numerodeejes }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+20                                                                                \{
+21         \mbox{\hyperlink{classejercicio2_1_1_vehiculo_a10083fde68a5b3ef8698c76adba64ad7}{setBono}}(bonocamion);
+22         \mbox{\hyperlink{classejercicio2_1_1_vehiculo_a839f602fe4695d9cb8d085bab398acd5}{setMatricula}}(matriculacamion);
+23         \mbox{\hyperlink{classejercicio2_1_1_vehiculo_a021e05ca70b02df5ff40d48692beb6ba}{setTiempoentrada}}(System.currentTimeMillis());
+24         \mbox{\hyperlink{classejercicio2_1_1_vehiculo_af87ce3fcfad1f20eb2fdbb87caaf6576}{setFechaentrada}}(Calendar.getInstance());
+25         this.\mbox{\hyperlink{classejercicio2_1_1_camion_a212debf109984d9e6d453a0370bbad13}{numeroejes}} = numerodeejes;
+26         
+27     \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classejercicio2_1_1_camion_ad182c3e62eaf039f0228bf8c7449da2e}\label{classejercicio2_1_1_camion_ad182c3e62eaf039f0228bf8c7449da2e}} 
+\index{ejercicio2\+::\+Camion@{ejercicio2\+::\+Camion}!calcular\+Importe@{calcular\+Importe}}
+\index{calcular\+Importe@{calcular\+Importe}!ejercicio2\+::\+Camion@{ejercicio2\+::\+Camion}}
+\subsubsection{\texorpdfstring{calcular\+Importe()}{calcularImporte()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily double ejercicio2.\+Camion.\+calcular\+Importe (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classejercicio2_1_1_camion}{Camion}}}]{coche }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+29                                                \{\textcolor{comment}{//metodo calcular importe de la clase camion (polimorfismo)}
+30         \textcolor{keywordtype}{double} importe;
+31         \textcolor{keywordflow}{if}(coche.numeroejes <= 3)
+32                 importe = (double)((System.currentTimeMillis()- coche.getTiempoentrada())/60000)*(4.5/60);
+33         \textcolor{keywordflow}{else}
+34                 importe = (double)((System.currentTimeMillis()- coche.getTiempoentrada())/60000)*(6.5/60.0)
+      ;
+35         \textcolor{keywordflow}{return} importe;
+36     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classejercicio2_1_1_camion_a99d3e7a5a9433e553bac3386f196bc9b}\label{classejercicio2_1_1_camion_a99d3e7a5a9433e553bac3386f196bc9b}} 
+\index{ejercicio2\+::\+Camion@{ejercicio2\+::\+Camion}!calcular\+Importe@{calcular\+Importe}}
+\index{calcular\+Importe@{calcular\+Importe}!ejercicio2\+::\+Camion@{ejercicio2\+::\+Camion}}
+\subsubsection{\texorpdfstring{calcular\+Importe()}{calcularImporte()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily double ejercicio2.\+Camion.\+calcular\+Importe (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+47                                     \{
+48         \textcolor{keywordflow}{throw} \textcolor{keyword}{new} UnsupportedOperationException(\textcolor{stringliteral}{"Not supported yet."}); \textcolor{comment}{//To change body of generated
+       methods, choose Tools | Templates.}
+49     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classejercicio2_1_1_camion_acd892291ca5a4276973799bfd07dcd38}\label{classejercicio2_1_1_camion_acd892291ca5a4276973799bfd07dcd38}} 
+\index{ejercicio2\+::\+Camion@{ejercicio2\+::\+Camion}!get\+Numeroejes@{get\+Numeroejes}}
+\index{get\+Numeroejes@{get\+Numeroejes}!ejercicio2\+::\+Camion@{ejercicio2\+::\+Camion}}
+\subsubsection{\texorpdfstring{get\+Numeroejes()}{getNumeroejes()}}
+{\footnotesize\ttfamily int ejercicio2.\+Camion.\+get\+Numeroejes (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+39                               \{
+40         \textcolor{keywordflow}{return} this.\mbox{\hyperlink{classejercicio2_1_1_camion_a212debf109984d9e6d453a0370bbad13}{numeroejes}};
+41     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classejercicio2_1_1_camion_a5ebe5eaea3ed9c68de9cffe88c2f05b2}\label{classejercicio2_1_1_camion_a5ebe5eaea3ed9c68de9cffe88c2f05b2}} 
+\index{ejercicio2\+::\+Camion@{ejercicio2\+::\+Camion}!set\+Numeroejes@{set\+Numeroejes}}
+\index{set\+Numeroejes@{set\+Numeroejes}!ejercicio2\+::\+Camion@{ejercicio2\+::\+Camion}}
+\subsubsection{\texorpdfstring{set\+Numeroejes()}{setNumeroejes()}}
+{\footnotesize\ttfamily void ejercicio2.\+Camion.\+set\+Numeroejes (\begin{DoxyParamCaption}\item[{int}]{nuevonumeroejes }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+42                                                   \{
+43         this.\mbox{\hyperlink{classejercicio2_1_1_camion_a212debf109984d9e6d453a0370bbad13}{numeroejes}} = nuevonumeroejes;
+44     \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classejercicio2_1_1_camion_a212debf109984d9e6d453a0370bbad13}\label{classejercicio2_1_1_camion_a212debf109984d9e6d453a0370bbad13}} 
+\index{ejercicio2\+::\+Camion@{ejercicio2\+::\+Camion}!numeroejes@{numeroejes}}
+\index{numeroejes@{numeroejes}!ejercicio2\+::\+Camion@{ejercicio2\+::\+Camion}}
+\subsubsection{\texorpdfstring{numeroejes}{numeroejes}}
+{\footnotesize\ttfamily int ejercicio2.\+Camion.\+numeroejes\hspace{0.3cm}{\ttfamily [private]}}
+

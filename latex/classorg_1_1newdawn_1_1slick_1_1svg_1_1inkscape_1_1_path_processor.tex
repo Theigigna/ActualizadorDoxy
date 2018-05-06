@@ -1,0 +1,176 @@
+\hypertarget{classorg_1_1newdawn_1_1slick_1_1svg_1_1inkscape_1_1_path_processor}{}\section{org.\+newdawn.\+slick.\+svg.\+inkscape.\+Path\+Processor Class Reference}
+\label{classorg_1_1newdawn_1_1slick_1_1svg_1_1inkscape_1_1_path_processor}\index{org.\+newdawn.\+slick.\+svg.\+inkscape.\+Path\+Processor@{org.\+newdawn.\+slick.\+svg.\+inkscape.\+Path\+Processor}}
+Inheritance diagram for org.\+newdawn.\+slick.\+svg.\+inkscape.\+Path\+Processor\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classorg_1_1newdawn_1_1slick_1_1svg_1_1inkscape_1_1_path_processor}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1inkscape_1_1_path_processor_ad4019c7c724b673d4c4aaa23dd95e50e}{process}} (\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1svg_1_1_loader}{Loader}} loader, Element element, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1_diagram}{Diagram}} diagram, Transform t)  throws Parsing\+Exception 
+\item 
+boolean \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1inkscape_1_1_path_processor_a0dda8e99a9e32cfa07593e50537be812}{handles}} (Element element)
+\end{DoxyCompactItemize}
+\subsection*{Static Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_path}{Path}} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1inkscape_1_1_path_processor_aead19050eb87e2b4e27228ddf54b7e8e}{process\+Poly}} (Element element, String\+Tokenizer tokens)  throws Parsing\+Exception 
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A processor for the $<$polygon$>$ and $<$path$>$ elements marked as not an arc.
+
+\begin{DoxyAuthor}{Author}
+kevin 
+\end{DoxyAuthor}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1svg_1_1inkscape_1_1_path_processor_a0dda8e99a9e32cfa07593e50537be812}\label{classorg_1_1newdawn_1_1slick_1_1svg_1_1inkscape_1_1_path_processor_a0dda8e99a9e32cfa07593e50537be812}} 
+\index{org\+::newdawn\+::slick\+::svg\+::inkscape\+::\+Path\+Processor@{org\+::newdawn\+::slick\+::svg\+::inkscape\+::\+Path\+Processor}!handles@{handles}}
+\index{handles@{handles}!org\+::newdawn\+::slick\+::svg\+::inkscape\+::\+Path\+Processor@{org\+::newdawn\+::slick\+::svg\+::inkscape\+::\+Path\+Processor}}
+\subsubsection{\texorpdfstring{handles()}{handles()}}
+{\footnotesize\ttfamily boolean org.\+newdawn.\+slick.\+svg.\+inkscape.\+Path\+Processor.\+handles (\begin{DoxyParamCaption}\item[{Element}]{element }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1svg_1_1inkscape_1_1_element_processor_ae95bbf21a67c52aff02cf09259c554a3}{org.\+newdawn.\+slick.\+svg.\+inkscape.\+Element\+Processor\+::handles}}(org.\+w3c.\+dom.\+Element) 
+\end{DoxySeeAlso}
+
+
+Implements \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1svg_1_1inkscape_1_1_element_processor_ae95bbf21a67c52aff02cf09259c554a3}{org.\+newdawn.\+slick.\+svg.\+inkscape.\+Element\+Processor}}.
+
+
+\begin{DoxyCode}
+117                                             \{
+118         \textcolor{keywordflow}{if} (element.getNodeName().equals(\textcolor{stringliteral}{"path"})) \{
+119             \textcolor{keywordflow}{if} (!\textcolor{stringliteral}{"arc"}.equals(element.getAttributeNS(Util.SODIPODI, \textcolor{stringliteral}{"type"}))) \{
+120                 \textcolor{keywordflow}{return} \textcolor{keyword}{true};
+121             \}
+122         \}
+123         
+124         \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+125     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1svg_1_1inkscape_1_1_path_processor_ad4019c7c724b673d4c4aaa23dd95e50e}\label{classorg_1_1newdawn_1_1slick_1_1svg_1_1inkscape_1_1_path_processor_ad4019c7c724b673d4c4aaa23dd95e50e}} 
+\index{org\+::newdawn\+::slick\+::svg\+::inkscape\+::\+Path\+Processor@{org\+::newdawn\+::slick\+::svg\+::inkscape\+::\+Path\+Processor}!process@{process}}
+\index{process@{process}!org\+::newdawn\+::slick\+::svg\+::inkscape\+::\+Path\+Processor@{org\+::newdawn\+::slick\+::svg\+::inkscape\+::\+Path\+Processor}}
+\subsubsection{\texorpdfstring{process()}{process()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+svg.\+inkscape.\+Path\+Processor.\+process (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1svg_1_1_loader}{Loader}}}]{loader,  }\item[{Element}]{element,  }\item[{\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1_diagram}{Diagram}}}]{diagram,  }\item[{Transform}]{t }\end{DoxyParamCaption}) throws \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1_parsing_exception}{Parsing\+Exception}}\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1svg_1_1inkscape_1_1_element_processor_acd170a9e1119481edae885780db59a2e}{org.\+newdawn.\+slick.\+svg.\+inkscape.\+Element\+Processor\+::process}}(\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1svg_1_1_loader}{org.\+newdawn.\+slick.\+svg.\+Loader}}, org.\+w3c.\+dom.\+Element, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1_diagram}{org.\+newdawn.\+slick.\+svg.\+Diagram}}, org.\+newdawn.\+slick.\+geom.\+Transform) 
+\end{DoxySeeAlso}
+
+
+Implements \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1svg_1_1inkscape_1_1_element_processor_acd170a9e1119481edae885780db59a2e}{org.\+newdawn.\+slick.\+svg.\+inkscape.\+Element\+Processor}}.
+
+
+\begin{DoxyCode}
+95                                                                                                            
+         \{
+96         Transform transform = Util.getTransform(element);
+97         transform = \textcolor{keyword}{new} Transform(t, transform);
+98         
+99         String points = element.getAttribute(\textcolor{stringliteral}{"points"});
+100         \textcolor{keywordflow}{if} (element.getNodeName().equals(\textcolor{stringliteral}{"path"})) \{
+101             points = element.getAttribute(\textcolor{stringliteral}{"d"});
+102         \}
+103         
+104         StringTokenizer tokens = \textcolor{keyword}{new} StringTokenizer(points, \textcolor{stringliteral}{", "});
+105         Path path = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1inkscape_1_1_path_processor_aead19050eb87e2b4e27228ddf54b7e8e}{processPoly}}(element, tokens);
+106         NonGeometricData data = Util.getNonGeometricData(element);
+107         \textcolor{keywordflow}{if} (path != null) \{
+108             Shape shape = path.transform(transform);
+109             
+110             diagram.addFigure(\textcolor{keyword}{new} Figure(Figure.PATH, shape, data, transform));
+111         \}
+112     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1svg_1_1inkscape_1_1_path_processor_aead19050eb87e2b4e27228ddf54b7e8e}\label{classorg_1_1newdawn_1_1slick_1_1svg_1_1inkscape_1_1_path_processor_aead19050eb87e2b4e27228ddf54b7e8e}} 
+\index{org\+::newdawn\+::slick\+::svg\+::inkscape\+::\+Path\+Processor@{org\+::newdawn\+::slick\+::svg\+::inkscape\+::\+Path\+Processor}!process\+Poly@{process\+Poly}}
+\index{process\+Poly@{process\+Poly}!org\+::newdawn\+::slick\+::svg\+::inkscape\+::\+Path\+Processor@{org\+::newdawn\+::slick\+::svg\+::inkscape\+::\+Path\+Processor}}
+\subsubsection{\texorpdfstring{process\+Poly()}{processPoly()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_path}{Path}} org.\+newdawn.\+slick.\+svg.\+inkscape.\+Path\+Processor.\+process\+Poly (\begin{DoxyParamCaption}\item[{Element}]{element,  }\item[{String\+Tokenizer}]{tokens }\end{DoxyParamCaption}) throws \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1_parsing_exception}{Parsing\+Exception}}\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}, {\ttfamily [private]}}
+
+Process the points in a polygon definition
+
+
+\begin{DoxyParams}{Parameters}
+{\em element} & The X\+ML element being read \\
+\hline
+{\em tokens} & The tokens representing the path \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The number of points found 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1_parsing_exception}{Parsing\+Exception}}} & Indicates an invalid token in the path \\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyCode}
+31                                                                                                      \{
+32         \textcolor{keywordtype}{int} count = 0;
+33         
+34         ArrayList pts = \textcolor{keyword}{new} ArrayList();
+35         \textcolor{keywordtype}{boolean} moved = \textcolor{keyword}{false};
+36         \textcolor{keywordtype}{boolean} reasonToBePath = \textcolor{keyword}{false};
+37         Path path = null;
+38         
+39         \textcolor{keywordflow}{while} (tokens.hasMoreTokens()) \{
+40             \textcolor{keywordflow}{try} \{
+41                 String nextToken = tokens.nextToken();
+42                 \textcolor{keywordflow}{if} (nextToken.equals(\textcolor{stringliteral}{"L"})) \{
+43                     \textcolor{keywordtype}{float} x = Float.parseFloat(tokens.nextToken());
+44                     \textcolor{keywordtype}{float} y = Float.parseFloat(tokens.nextToken());
+45                     path.lineTo(x,y);
+46                     \textcolor{keywordflow}{continue};
+47                 \}
+48                 \textcolor{keywordflow}{if} (nextToken.equals(\textcolor{stringliteral}{"z"})) \{
+49                     path.close();
+50                     \textcolor{keywordflow}{continue};
+51                 \}
+52                 \textcolor{keywordflow}{if} (nextToken.equals(\textcolor{stringliteral}{"M"})) \{
+53                     \textcolor{keywordflow}{if} (!moved) \{
+54                         moved = \textcolor{keyword}{true};
+55                         \textcolor{keywordtype}{float} x = Float.parseFloat(tokens.nextToken());
+56                         \textcolor{keywordtype}{float} y = Float.parseFloat(tokens.nextToken());
+57                         path = \textcolor{keyword}{new} Path(x,y);
+58                         \textcolor{keywordflow}{continue};
+59                     \}
+60     
+61                     reasonToBePath = \textcolor{keyword}{true};
+62                     \textcolor{keywordtype}{float} x = Float.parseFloat(tokens.nextToken());
+63                     \textcolor{keywordtype}{float} y = Float.parseFloat(tokens.nextToken());
+64                     path.startHole(x,y);
+65                     
+66                     \textcolor{keywordflow}{continue};
+67                 \}
+68                 \textcolor{keywordflow}{if} (nextToken.equals(\textcolor{stringliteral}{"C"})) \{
+69                     reasonToBePath = \textcolor{keyword}{true};
+70                     \textcolor{keywordtype}{float} cx1 = Float.parseFloat(tokens.nextToken());
+71                     \textcolor{keywordtype}{float} cy1 = Float.parseFloat(tokens.nextToken());
+72                     \textcolor{keywordtype}{float} cx2 = Float.parseFloat(tokens.nextToken());
+73                     \textcolor{keywordtype}{float} cy2 = Float.parseFloat(tokens.nextToken());
+74                     \textcolor{keywordtype}{float} x = Float.parseFloat(tokens.nextToken());
+75                     \textcolor{keywordtype}{float} y = Float.parseFloat(tokens.nextToken());
+76                     path.curveTo(x,y,cx1,cy1,cx2,cy2);
+77                     \textcolor{keywordflow}{continue};
+78                 \}
+79             \} \textcolor{keywordflow}{catch} (NumberFormatException e) \{
+80                 \textcolor{keywordflow}{throw} \textcolor{keyword}{new} ParsingException(element.getAttribute(\textcolor{stringliteral}{"id"}), \textcolor{stringliteral}{"Invalid token in points list"}, e);
+81             \}
+82         \}
+83         
+84         \textcolor{keywordflow}{if} (!reasonToBePath) \{
+85             \textcolor{keywordflow}{return} null;
+86         \}
+87         
+88         \textcolor{keywordflow}{return} path;
+89     \}
+\end{DoxyCode}

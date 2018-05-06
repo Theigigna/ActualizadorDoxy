@@ -1,0 +1,63 @@
+\hypertarget{classcosasparaprobar_1_1_apureba_count_down_latch}{}\section{cosasparaprobar.\+Apureba\+Count\+Down\+Latch Class Reference}
+\label{classcosasparaprobar_1_1_apureba_count_down_latch}\index{cosasparaprobar.\+Apureba\+Count\+Down\+Latch@{cosasparaprobar.\+Apureba\+Count\+Down\+Latch}}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{classcosasparaprobar_1_1_apureba_count_down_latch_a6b46f21184021f17c81dd720483da08d}{main}} (String\mbox{[}$\,$\mbox{]} args)  throws Interrupted\+Exception 
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyAuthor}{Author}
+Ignacio 
+\end{DoxyAuthor}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classcosasparaprobar_1_1_apureba_count_down_latch_a6b46f21184021f17c81dd720483da08d}\label{classcosasparaprobar_1_1_apureba_count_down_latch_a6b46f21184021f17c81dd720483da08d}} 
+\index{cosasparaprobar\+::\+Apureba\+Count\+Down\+Latch@{cosasparaprobar\+::\+Apureba\+Count\+Down\+Latch}!main@{main}}
+\index{main@{main}!cosasparaprobar\+::\+Apureba\+Count\+Down\+Latch@{cosasparaprobar\+::\+Apureba\+Count\+Down\+Latch}}
+\subsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily static void cosasparaprobar.\+Apureba\+Count\+Down\+Latch.\+main (\begin{DoxyParamCaption}\item[{String \mbox{[}$\,$\mbox{]}}]{args }\end{DoxyParamCaption}) throws Interrupted\+Exception\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+\begin{DoxyCode}
+18                                                                        \{
+19         CountDownLatch contador = \textcolor{keyword}{new} CountDownLatch(5);
+20         
+21         Exchanger<String> a = \textcolor{keyword}{new} Exchanger<String>();
+22         
+23         PruebaExchange a1 = \textcolor{keyword}{new} PruebaExchange(1,a);
+24         PruebaExchange a2 = \textcolor{keyword}{new} PruebaExchange(2,a);
+25         a1.start();
+26         a2.start();
+27         
+28         \textcolor{comment}{/*}
+29 \textcolor{comment}{               }
+30 \textcolor{comment}{        int i;}
+31 \textcolor{comment}{        int aux = (int)(10*Math.random());}
+32 \textcolor{comment}{        for(i=0;i<aux;i++)\{}
+33 \textcolor{comment}{            new PruebaCountDown(contador).start();}
+34 \textcolor{comment}{        \}        }
+35 \textcolor{comment}{        }
+36 \textcolor{comment}{        for(i=0;i<5;i++)}
+37 \textcolor{comment}{        \{}
+38 \textcolor{comment}{            contador.countDown();}
+39 \textcolor{comment}{        \}}
+40 \textcolor{comment}{        contador.wait(i);}
+41 \textcolor{comment}{        for(i=0;i<6;i++)}
+42 \textcolor{comment}{        \{}
+43 \textcolor{comment}{            new PruebaCountDown(contador).start();}
+44 \textcolor{comment}{        \}}
+45 \textcolor{comment}{        }
+46 \textcolor{comment}{        while(true)}
+47 \textcolor{comment}{        \{}
+48 \textcolor{comment}{            sleep(1000);}
+49 \textcolor{comment}{            System.out.println("Decremento el Latch.");}
+50 \textcolor{comment}{            contador.countDown();}
+51 \textcolor{comment}{        \}}
+52 \textcolor{comment}{        }
+53 \textcolor{comment}{    \}*/}
+54     
+55     \}
+\end{DoxyCode}

@@ -1,0 +1,748 @@
+\hypertarget{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_path_finder}{}\section{org.\+newdawn.\+slick.\+util.\+pathfinding.\+A\+Star\+Path\+Finder Class Reference}
+\label{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_path_finder}\index{org.\+newdawn.\+slick.\+util.\+pathfinding.\+A\+Star\+Path\+Finder@{org.\+newdawn.\+slick.\+util.\+pathfinding.\+A\+Star\+Path\+Finder}}
+Inheritance diagram for org.\+newdawn.\+slick.\+util.\+pathfinding.\+A\+Star\+Path\+Finder\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.728395cm]{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_path_finder}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_path_finder_1_1_node}{Node}}
+\item 
+class \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_path_finder_1_1_priority_list}{Priority\+List}}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_path_finder_ab47a3757f6298f52419b2ec6a6b1a998}{A\+Star\+Path\+Finder}} (\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_tile_based_map}{Tile\+Based\+Map}} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_path_finder_afdd901a5fe460e8ec85405cdd5389931}{map}}, int \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_path_finder_aaf433053cfc63dbf492b8e1c90f9ec3d}{max\+Search\+Distance}}, boolean \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_path_finder_a48df6bf1af744411f23f34caee6b0694}{allow\+Diag\+Movement}})
+\item 
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_path_finder_a025d7298ce4553f76ea8518a03c6dc91}{A\+Star\+Path\+Finder}} (\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_tile_based_map}{Tile\+Based\+Map}} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_path_finder_afdd901a5fe460e8ec85405cdd5389931}{map}}, int \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_path_finder_aaf433053cfc63dbf492b8e1c90f9ec3d}{max\+Search\+Distance}}, boolean \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_path_finder_a48df6bf1af744411f23f34caee6b0694}{allow\+Diag\+Movement}}, \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_heuristic}{A\+Star\+Heuristic}} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_path_finder_a563e3c6c8c16bfb8887fae510338e6be}{heuristic}})
+\item 
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_path}{Path}} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_path_finder_a603b1ac6a40ac99d3bc38740f46b2706}{find\+Path}} (\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_mover}{Mover}} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_path_finder_a5407fe31e264f03e9d6092bcb18aba4a}{mover}}, int sx, int sy, int tx, int ty)
+\item 
+int \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_path_finder_abd096900bd63a7ee01976e75ad7950d3}{get\+CurrentX}} ()
+\item 
+int \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_path_finder_a1e98b93b8c014045a831986f3de390c4}{get\+CurrentY}} ()
+\item 
+float \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_path_finder_af21aa3e1c2ff9f5277e24e9ea626220c}{get\+Movement\+Cost}} (\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_mover}{Mover}} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_path_finder_a5407fe31e264f03e9d6092bcb18aba4a}{mover}}, int sx, int sy, int tx, int ty)
+\item 
+float \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_path_finder_a15bc3df2a4e48452e9be63ac20b22303}{get\+Heuristic\+Cost}} (\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_mover}{Mover}} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_path_finder_a5407fe31e264f03e9d6092bcb18aba4a}{mover}}, int x, int y, int tx, int ty)
+\item 
+\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_mover}{Mover}} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_path_finder_a87eea405304f151bf2ef8621aefe4183}{get\+Mover}} ()
+\item 
+int \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_path_finder_abf095f4193d79acc42fdceb293468e14}{get\+Search\+Distance}} ()
+\item 
+int \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_path_finder_a170c66a9356c930fa83a50567f64be52}{get\+SourceX}} ()
+\item 
+int \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_path_finder_abfd761f71fe0c43a7d3533e49cf5be33}{get\+SourceY}} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_path_finder_1_1_node}{Node}} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_path_finder_acb31149ddbceaa1f0b23f211e113a54e}{get\+First\+In\+Open}} ()
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_path_finder_a412da764ea584cd8c7f6ae35c5a00314}{add\+To\+Open}} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_path_finder_1_1_node}{Node}} node)
+\item 
+boolean \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_path_finder_a8f95ed1da36dc1963067306788b2f2de}{in\+Open\+List}} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_path_finder_1_1_node}{Node}} node)
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_path_finder_a3efb779275ef97f7e5dc164be0488c08}{remove\+From\+Open}} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_path_finder_1_1_node}{Node}} node)
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_path_finder_a7978ff6c8e01fd6b55650f9eff9723ed}{add\+To\+Closed}} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_path_finder_1_1_node}{Node}} node)
+\item 
+boolean \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_path_finder_ad6b6d659cea8c18e998fd25080e902de}{in\+Closed\+List}} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_path_finder_1_1_node}{Node}} node)
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_path_finder_a7e61b3a937550a5ea0bc7901c9509d8f}{remove\+From\+Closed}} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_path_finder_1_1_node}{Node}} node)
+\item 
+boolean \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_path_finder_a815e6ff04646c49e3d0bacc2d06ee069}{is\+Valid\+Location}} (\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_mover}{Mover}} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_path_finder_a5407fe31e264f03e9d6092bcb18aba4a}{mover}}, int sx, int sy, int x, int y)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Array\+List \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_path_finder_aa8d4b6dec216f8e3f070889f1c722921}{closed}} = new Array\+List()
+\item 
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_path_finder_1_1_priority_list}{Priority\+List}} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_path_finder_a8614e10a1dd039e67263932fdc1206b2}{open}} = new \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_path_finder_1_1_priority_list}{Priority\+List}}()
+\item 
+\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_tile_based_map}{Tile\+Based\+Map}} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_path_finder_afdd901a5fe460e8ec85405cdd5389931}{map}}
+\item 
+int \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_path_finder_aaf433053cfc63dbf492b8e1c90f9ec3d}{max\+Search\+Distance}}
+\item 
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_path_finder_1_1_node}{Node}} \mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_path_finder_ab7dd9208b4a62c2289f049d4a32e7bbd}{nodes}}
+\item 
+boolean \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_path_finder_a48df6bf1af744411f23f34caee6b0694}{allow\+Diag\+Movement}}
+\item 
+\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_heuristic}{A\+Star\+Heuristic}} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_path_finder_a563e3c6c8c16bfb8887fae510338e6be}{heuristic}}
+\item 
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_path_finder_1_1_node}{Node}} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_path_finder_a560430f619222a3148fd1dd01c52b6ad}{current}}
+\item 
+\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_mover}{Mover}} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_path_finder_a5407fe31e264f03e9d6092bcb18aba4a}{mover}}
+\item 
+int \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_path_finder_aa57984b3f637153ce573e88bb635e87b}{sourceX}}
+\item 
+int \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_path_finder_a925d628f5ff0f25f13508a117c1ea663}{sourceY}}
+\item 
+int \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_path_finder_a8c4940ca4de03b42628e5cc6145e1390}{distance}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A path finder implementation that uses the A\+Star heuristic based algorithm to determine a path.
+
+\begin{DoxyAuthor}{Author}
+Kevin Glass 
+\end{DoxyAuthor}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_path_finder_ab47a3757f6298f52419b2ec6a6b1a998}\label{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_path_finder_ab47a3757f6298f52419b2ec6a6b1a998}} 
+\index{org\+::newdawn\+::slick\+::util\+::pathfinding\+::\+A\+Star\+Path\+Finder@{org\+::newdawn\+::slick\+::util\+::pathfinding\+::\+A\+Star\+Path\+Finder}!A\+Star\+Path\+Finder@{A\+Star\+Path\+Finder}}
+\index{A\+Star\+Path\+Finder@{A\+Star\+Path\+Finder}!org\+::newdawn\+::slick\+::util\+::pathfinding\+::\+A\+Star\+Path\+Finder@{org\+::newdawn\+::slick\+::util\+::pathfinding\+::\+A\+Star\+Path\+Finder}}
+\subsubsection{\texorpdfstring{A\+Star\+Path\+Finder()}{AStarPathFinder()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily org.\+newdawn.\+slick.\+util.\+pathfinding.\+A\+Star\+Path\+Finder.\+A\+Star\+Path\+Finder (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_tile_based_map}{Tile\+Based\+Map}}}]{map,  }\item[{int}]{max\+Search\+Distance,  }\item[{boolean}]{allow\+Diag\+Movement }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Create a path finder with the default heuristic -\/ closest to target.
+
+
+\begin{DoxyParams}{Parameters}
+{\em map} & The map to be searched \\
+\hline
+{\em max\+Search\+Distance} & The maximum depth we\textquotesingle{}ll search before giving up \\
+\hline
+{\em allow\+Diag\+Movement} & True if the search should try diaganol movement \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+51                                                                                                \{
+52         \textcolor{keyword}{this}(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_path_finder_afdd901a5fe460e8ec85405cdd5389931}{map}}, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_path_finder_aaf433053cfc63dbf492b8e1c90f9ec3d}{maxSearchDistance}}, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_path_finder_a48df6bf1af744411f23f34caee6b0694}{allowDiagMovement}}, \textcolor{keyword}{new} 
+      ClosestHeuristic());
+53     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_path_finder_a025d7298ce4553f76ea8518a03c6dc91}\label{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_path_finder_a025d7298ce4553f76ea8518a03c6dc91}} 
+\index{org\+::newdawn\+::slick\+::util\+::pathfinding\+::\+A\+Star\+Path\+Finder@{org\+::newdawn\+::slick\+::util\+::pathfinding\+::\+A\+Star\+Path\+Finder}!A\+Star\+Path\+Finder@{A\+Star\+Path\+Finder}}
+\index{A\+Star\+Path\+Finder@{A\+Star\+Path\+Finder}!org\+::newdawn\+::slick\+::util\+::pathfinding\+::\+A\+Star\+Path\+Finder@{org\+::newdawn\+::slick\+::util\+::pathfinding\+::\+A\+Star\+Path\+Finder}}
+\subsubsection{\texorpdfstring{A\+Star\+Path\+Finder()}{AStarPathFinder()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily org.\+newdawn.\+slick.\+util.\+pathfinding.\+A\+Star\+Path\+Finder.\+A\+Star\+Path\+Finder (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_tile_based_map}{Tile\+Based\+Map}}}]{map,  }\item[{int}]{max\+Search\+Distance,  }\item[{boolean}]{allow\+Diag\+Movement,  }\item[{\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_heuristic}{A\+Star\+Heuristic}}}]{heuristic }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Create a path finder
+
+
+\begin{DoxyParams}{Parameters}
+{\em heuristic} & The heuristic used to determine the search order of the map \\
+\hline
+{\em map} & The map to be searched \\
+\hline
+{\em max\+Search\+Distance} & The maximum depth we\textquotesingle{}ll search before giving up \\
+\hline
+{\em allow\+Diag\+Movement} & True if the search should try diaganol movement \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+64                                                                                 \{
+65         this.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_path_finder_a563e3c6c8c16bfb8887fae510338e6be}{heuristic}} = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_path_finder_a563e3c6c8c16bfb8887fae510338e6be}{heuristic}};
+66         this.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_path_finder_afdd901a5fe460e8ec85405cdd5389931}{map}} = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_path_finder_afdd901a5fe460e8ec85405cdd5389931}{map}};
+67         this.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_path_finder_aaf433053cfc63dbf492b8e1c90f9ec3d}{maxSearchDistance}} = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_path_finder_aaf433053cfc63dbf492b8e1c90f9ec3d}{maxSearchDistance}};
+68         this.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_path_finder_a48df6bf1af744411f23f34caee6b0694}{allowDiagMovement}} = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_path_finder_a48df6bf1af744411f23f34caee6b0694}{allowDiagMovement}};
+69         
+70         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_path_finder_ab7dd9208b4a62c2289f049d4a32e7bbd}{nodes}} = \textcolor{keyword}{new} Node[\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_path_finder_afdd901a5fe460e8ec85405cdd5389931}{map}}.\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_tile_based_map_a5efac540b233405c4ae65b784a7c6d22}{getWidthInTiles}}()][\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_path_finder_afdd901a5fe460e8ec85405cdd5389931}{map}}.
+      \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_tile_based_map_a9669f3dafa1ce48a20e3d7d8c1de239a}{getHeightInTiles}}()];
+71         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} x=0;x<\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_path_finder_afdd901a5fe460e8ec85405cdd5389931}{map}}.\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_tile_based_map_a5efac540b233405c4ae65b784a7c6d22}{getWidthInTiles}}();x++) \{
+72             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} y=0;y<\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_path_finder_afdd901a5fe460e8ec85405cdd5389931}{map}}.\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_tile_based_map_a9669f3dafa1ce48a20e3d7d8c1de239a}{getHeightInTiles}}();y++) \{
+73                 \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_path_finder_ab7dd9208b4a62c2289f049d4a32e7bbd}{nodes}}[x][y] = \textcolor{keyword}{new} Node(x,y);
+74             \}
+75         \}
+76     \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_path_finder_a7978ff6c8e01fd6b55650f9eff9723ed}\label{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_path_finder_a7978ff6c8e01fd6b55650f9eff9723ed}} 
+\index{org\+::newdawn\+::slick\+::util\+::pathfinding\+::\+A\+Star\+Path\+Finder@{org\+::newdawn\+::slick\+::util\+::pathfinding\+::\+A\+Star\+Path\+Finder}!add\+To\+Closed@{add\+To\+Closed}}
+\index{add\+To\+Closed@{add\+To\+Closed}!org\+::newdawn\+::slick\+::util\+::pathfinding\+::\+A\+Star\+Path\+Finder@{org\+::newdawn\+::slick\+::util\+::pathfinding\+::\+A\+Star\+Path\+Finder}}
+\subsubsection{\texorpdfstring{add\+To\+Closed()}{addToClosed()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+util.\+pathfinding.\+A\+Star\+Path\+Finder.\+add\+To\+Closed (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_path_finder_1_1_node}{Node}}}]{node }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+Add a node to the closed list
+
+
+\begin{DoxyParams}{Parameters}
+{\em node} & The node to add to the closed list \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+282                                           \{
+283         node.setClosed(\textcolor{keyword}{true});
+284         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_path_finder_aa8d4b6dec216f8e3f070889f1c722921}{closed}}.add(node);
+285     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_path_finder_a412da764ea584cd8c7f6ae35c5a00314}\label{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_path_finder_a412da764ea584cd8c7f6ae35c5a00314}} 
+\index{org\+::newdawn\+::slick\+::util\+::pathfinding\+::\+A\+Star\+Path\+Finder@{org\+::newdawn\+::slick\+::util\+::pathfinding\+::\+A\+Star\+Path\+Finder}!add\+To\+Open@{add\+To\+Open}}
+\index{add\+To\+Open@{add\+To\+Open}!org\+::newdawn\+::slick\+::util\+::pathfinding\+::\+A\+Star\+Path\+Finder@{org\+::newdawn\+::slick\+::util\+::pathfinding\+::\+A\+Star\+Path\+Finder}}
+\subsubsection{\texorpdfstring{add\+To\+Open()}{addToOpen()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+util.\+pathfinding.\+A\+Star\+Path\+Finder.\+add\+To\+Open (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_path_finder_1_1_node}{Node}}}]{node }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+Add a node to the open list
+
+
+\begin{DoxyParams}{Parameters}
+{\em node} & The node to be added to the open list \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+252                                         \{
+253         node.setOpen(\textcolor{keyword}{true});
+254         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_path_finder_a8614e10a1dd039e67263932fdc1206b2}{open}}.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_path_finder_1_1_priority_list_a0515cf76de099aa00ffb61ef30fb6cb8}{add}}(node);
+255     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_path_finder_a603b1ac6a40ac99d3bc38740f46b2706}\label{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_path_finder_a603b1ac6a40ac99d3bc38740f46b2706}} 
+\index{org\+::newdawn\+::slick\+::util\+::pathfinding\+::\+A\+Star\+Path\+Finder@{org\+::newdawn\+::slick\+::util\+::pathfinding\+::\+A\+Star\+Path\+Finder}!find\+Path@{find\+Path}}
+\index{find\+Path@{find\+Path}!org\+::newdawn\+::slick\+::util\+::pathfinding\+::\+A\+Star\+Path\+Finder@{org\+::newdawn\+::slick\+::util\+::pathfinding\+::\+A\+Star\+Path\+Finder}}
+\subsubsection{\texorpdfstring{find\+Path()}{findPath()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_path}{Path}} org.\+newdawn.\+slick.\+util.\+pathfinding.\+A\+Star\+Path\+Finder.\+find\+Path (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_mover}{Mover}}}]{mover,  }\item[{int}]{sx,  }\item[{int}]{sy,  }\item[{int}]{tx,  }\item[{int}]{ty }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_path_finder_a74ba20251bc78c37f91821c71a97a58d}{Path\+Finder\+::find\+Path(\+Mover, int, int, int, int)}} 
+\end{DoxySeeAlso}
+
+
+Implements \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_path_finder_a74ba20251bc78c37f91821c71a97a58d}{org.\+newdawn.\+slick.\+util.\+pathfinding.\+Path\+Finder}}.
+
+
+\begin{DoxyCode}
+81                                                                       \{
+82         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_path_finder_a560430f619222a3148fd1dd01c52b6ad}{current}} = null;
+83         
+84         \textcolor{comment}{// easy first check, if the destination is blocked, we can't get there}
+85         this.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_path_finder_a5407fe31e264f03e9d6092bcb18aba4a}{mover}} = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_path_finder_a5407fe31e264f03e9d6092bcb18aba4a}{mover}};
+86         this.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_path_finder_aa57984b3f637153ce573e88bb635e87b}{sourceX}} = tx;
+87         this.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_path_finder_a925d628f5ff0f25f13508a117c1ea663}{sourceY}} = ty;
+88         this.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_path_finder_a8c4940ca4de03b42628e5cc6145e1390}{distance}} = 0;
+89         
+90         \textcolor{keywordflow}{if} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_path_finder_afdd901a5fe460e8ec85405cdd5389931}{map}}.\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_tile_based_map_af01ba12d90f794cd16138e05dc328725}{blocked}}(\textcolor{keyword}{this}, tx, ty)) \{
+91             \textcolor{keywordflow}{return} null;
+92         \}
+93 
+94         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} x=0;x<\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_path_finder_afdd901a5fe460e8ec85405cdd5389931}{map}}.\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_tile_based_map_a5efac540b233405c4ae65b784a7c6d22}{getWidthInTiles}}();x++) \{
+95             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} y=0;y<\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_path_finder_afdd901a5fe460e8ec85405cdd5389931}{map}}.\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_tile_based_map_a9669f3dafa1ce48a20e3d7d8c1de239a}{getHeightInTiles}}();y++) \{
+96                 \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_path_finder_ab7dd9208b4a62c2289f049d4a32e7bbd}{nodes}}[x][y].\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_path_finder_1_1_node_a4b5b68c2f2ec41dadc29b884f8d5decf}{reset}}();
+97             \}
+98         \}
+99         
+100         \textcolor{comment}{// initial state for A*. The closed group is empty. Only the starting}
+101         \textcolor{comment}{// tile is in the open list and it's cost is zero, i.e. we're already there}
+102         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_path_finder_ab7dd9208b4a62c2289f049d4a32e7bbd}{nodes}}[sx][sy].\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_path_finder_1_1_node_afdb3132e5a155cb259db862e0a1ec018}{cost}} = 0;
+103         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_path_finder_ab7dd9208b4a62c2289f049d4a32e7bbd}{nodes}}[sx][sy].\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_path_finder_1_1_node_a71c1842ee82b0cd5cc3cf4c58c575034}{depth}} = 0;
+104         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_path_finder_aa8d4b6dec216f8e3f070889f1c722921}{closed}}.clear();
+105         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_path_finder_a8614e10a1dd039e67263932fdc1206b2}{open}}.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_path_finder_1_1_priority_list_aa9213d180d3cc63ae9762fac18d5ab0d}{clear}}();
+106         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_path_finder_a412da764ea584cd8c7f6ae35c5a00314}{addToOpen}}(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_path_finder_ab7dd9208b4a62c2289f049d4a32e7bbd}{nodes}}[sx][sy]);
+107         
+108         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_path_finder_ab7dd9208b4a62c2289f049d4a32e7bbd}{nodes}}[tx][ty].\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_path_finder_1_1_node_ade9fb25ef9f70ba6fded61359eb1fa81}{parent}} = null;
+109         
+110         \textcolor{comment}{// while we haven't found the goal and haven't exceeded our max search depth}
+111         \textcolor{keywordtype}{int} maxDepth = 0;
+112         \textcolor{keywordflow}{while} ((maxDepth < \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_path_finder_aaf433053cfc63dbf492b8e1c90f9ec3d}{maxSearchDistance}}) && (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_path_finder_a8614e10a1dd039e67263932fdc1206b2}{open}}.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_path_finder_1_1_priority_list_ad086ea92d9ebfe4ecf9fea3d45cdb1e0}{size}}() != 0)) \{
+113             \textcolor{comment}{// pull out the first node in our open list, this is determined to }
+114             \textcolor{comment}{// be the most likely to be the next step based on our heuristic}
+115             \textcolor{keywordtype}{int} lx = sx;
+116             \textcolor{keywordtype}{int} ly = sy;
+117             \textcolor{keywordflow}{if} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_path_finder_a560430f619222a3148fd1dd01c52b6ad}{current}} != null) \{
+118                 lx = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_path_finder_a560430f619222a3148fd1dd01c52b6ad}{current}}.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_path_finder_1_1_node_ada4322ce47f95ba2707c0b1a03ea0f87}{x}};
+119                 ly = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_path_finder_a560430f619222a3148fd1dd01c52b6ad}{current}}.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_path_finder_1_1_node_a926a7542d89578d05ea59a6803479355}{y}};
+120             \}
+121             
+122             \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_path_finder_a560430f619222a3148fd1dd01c52b6ad}{current}} = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_path_finder_acb31149ddbceaa1f0b23f211e113a54e}{getFirstInOpen}}();
+123             \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_path_finder_a8c4940ca4de03b42628e5cc6145e1390}{distance}} = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_path_finder_a560430f619222a3148fd1dd01c52b6ad}{current}}.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_path_finder_1_1_node_a71c1842ee82b0cd5cc3cf4c58c575034}{depth}};
+124             
+125             \textcolor{keywordflow}{if} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_path_finder_a560430f619222a3148fd1dd01c52b6ad}{current}} == \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_path_finder_ab7dd9208b4a62c2289f049d4a32e7bbd}{nodes}}[tx][ty]) \{
+126                 \textcolor{keywordflow}{if} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_path_finder_a815e6ff04646c49e3d0bacc2d06ee069}{isValidLocation}}(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_path_finder_a5407fe31e264f03e9d6092bcb18aba4a}{mover}},lx,ly,tx,ty)) \{
+127                     \textcolor{keywordflow}{break};
+128                 \}
+129             \}
+130             
+131             \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_path_finder_a3efb779275ef97f7e5dc164be0488c08}{removeFromOpen}}(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_path_finder_a560430f619222a3148fd1dd01c52b6ad}{current}});
+132             \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_path_finder_a7978ff6c8e01fd6b55650f9eff9723ed}{addToClosed}}(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_path_finder_a560430f619222a3148fd1dd01c52b6ad}{current}});
+133             
+134             \textcolor{comment}{// search through all the neighbours of the current node evaluating}
+135             \textcolor{comment}{// them as next steps}
+136             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} x=-1;x<2;x++) \{
+137                 \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} y=-1;y<2;y++) \{
+138                     \textcolor{comment}{// not a neighbour, its the current tile}
+139                     \textcolor{keywordflow}{if} ((x == 0) && (y == 0)) \{
+140                         \textcolor{keywordflow}{continue};
+141                     \}
+142                     
+143                     \textcolor{comment}{// if we're not allowing diaganol movement then only }
+144                     \textcolor{comment}{// one of x or y can be set}
+145                     \textcolor{keywordflow}{if} (!\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_path_finder_a48df6bf1af744411f23f34caee6b0694}{allowDiagMovement}}) \{
+146                         \textcolor{keywordflow}{if} ((x != 0) && (y != 0)) \{
+147                             \textcolor{keywordflow}{continue};
+148                         \}
+149                     \}
+150                     
+151                     \textcolor{comment}{// determine the location of the neighbour and evaluate it}
+152                     \textcolor{keywordtype}{int} xp = x + \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_path_finder_a560430f619222a3148fd1dd01c52b6ad}{current}}.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_path_finder_1_1_node_ada4322ce47f95ba2707c0b1a03ea0f87}{x}};
+153                     \textcolor{keywordtype}{int} yp = y + \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_path_finder_a560430f619222a3148fd1dd01c52b6ad}{current}}.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_path_finder_1_1_node_a926a7542d89578d05ea59a6803479355}{y}};
+154                     
+155                     \textcolor{keywordflow}{if} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_path_finder_a815e6ff04646c49e3d0bacc2d06ee069}{isValidLocation}}(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_path_finder_a5407fe31e264f03e9d6092bcb18aba4a}{mover}},\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_path_finder_a560430f619222a3148fd1dd01c52b6ad}{current}}.
+      \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_path_finder_1_1_node_ada4322ce47f95ba2707c0b1a03ea0f87}{x}},\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_path_finder_a560430f619222a3148fd1dd01c52b6ad}{current}}.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_path_finder_1_1_node_a926a7542d89578d05ea59a6803479355}{y}},xp,yp)) \{
+156                         \textcolor{comment}{// the cost to get to this node is cost the current plus the movement}
+157                         \textcolor{comment}{// cost to reach this node. Note that the heursitic value is only used}
+158                         \textcolor{comment}{// in the sorted open list}
+159                         \textcolor{keywordtype}{float} nextStepCost = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_path_finder_a560430f619222a3148fd1dd01c52b6ad}{current}}.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_path_finder_1_1_node_afdb3132e5a155cb259db862e0a1ec018}{cost}} + 
+      \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_path_finder_af21aa3e1c2ff9f5277e24e9ea626220c}{getMovementCost}}(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_path_finder_a5407fe31e264f03e9d6092bcb18aba4a}{mover}}, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_path_finder_a560430f619222a3148fd1dd01c52b6ad}{current}}.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_path_finder_1_1_node_ada4322ce47f95ba2707c0b1a03ea0f87}{x}}, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_path_finder_a560430f619222a3148fd1dd01c52b6ad}{current}}.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_path_finder_1_1_node_a926a7542d89578d05ea59a6803479355}{y}}, xp, yp);
+160                         Node neighbour = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_path_finder_ab7dd9208b4a62c2289f049d4a32e7bbd}{nodes}}[xp][yp];
+161                         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_path_finder_afdd901a5fe460e8ec85405cdd5389931}{map}}.\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_tile_based_map_aeb1c1b5cbb0aecc4e280dbe18d5af5ac}{pathFinderVisited}}(xp, yp);
+162                         
+163                         \textcolor{comment}{// if the new cost we've determined for this node is lower than }
+164                         \textcolor{comment}{// it has been previously makes sure the node hasn't been discarded. We've}
+165                         \textcolor{comment}{// determined that there might have been a better path to get to}
+166                         \textcolor{comment}{// this node so it needs to be re-evaluated}
+167                         \textcolor{keywordflow}{if} (nextStepCost < neighbour.cost) \{
+168                             \textcolor{keywordflow}{if} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_path_finder_a8f95ed1da36dc1963067306788b2f2de}{inOpenList}}(neighbour)) \{
+169                                 \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_path_finder_a3efb779275ef97f7e5dc164be0488c08}{removeFromOpen}}(neighbour);
+170                             \}
+171                             \textcolor{keywordflow}{if} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_path_finder_ad6b6d659cea8c18e998fd25080e902de}{inClosedList}}(neighbour)) \{
+172                                 \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_path_finder_a7e61b3a937550a5ea0bc7901c9509d8f}{removeFromClosed}}(neighbour);
+173                             \}
+174                         \}
+175                         
+176                         \textcolor{comment}{// if the node hasn't already been processed and discarded then}
+177                         \textcolor{comment}{// reset it's cost to our current cost and add it as a next possible}
+178                         \textcolor{comment}{// step (i.e. to the open list)}
+179                         \textcolor{keywordflow}{if} (!\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_path_finder_a8f95ed1da36dc1963067306788b2f2de}{inOpenList}}(neighbour) && !(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_path_finder_ad6b6d659cea8c18e998fd25080e902de}{inClosedList}}(neighbour))) \{
+180                             neighbour.cost = nextStepCost;
+181                             neighbour.heuristic = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_path_finder_a15bc3df2a4e48452e9be63ac20b22303}{getHeuristicCost}}(
+      \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_path_finder_a5407fe31e264f03e9d6092bcb18aba4a}{mover}}, xp, yp, tx, ty);
+182                             maxDepth = Math.max(maxDepth, neighbour.setParent(
+      \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_path_finder_a560430f619222a3148fd1dd01c52b6ad}{current}}));
+183                             \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_path_finder_a412da764ea584cd8c7f6ae35c5a00314}{addToOpen}}(neighbour);
+184                         \} 
+185                     \}
+186                 \}
+187             \}
+188         \}
+189 
+190         \textcolor{comment}{// since we've got an empty open list or we've run out of search }
+191         \textcolor{comment}{// there was no path. Just return null}
+192         \textcolor{keywordflow}{if} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_path_finder_ab7dd9208b4a62c2289f049d4a32e7bbd}{nodes}}[tx][ty].parent == null) \{
+193             \textcolor{keywordflow}{return} null;
+194         \}
+195         
+196         \textcolor{comment}{// At this point we've definitely found a path so we can uses the parent}
+197         \textcolor{comment}{// references of the nodes to find out way from the target location back}
+198         \textcolor{comment}{// to the start recording the nodes on the way.}
+199         Path path = \textcolor{keyword}{new} Path();
+200         Node target = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_path_finder_ab7dd9208b4a62c2289f049d4a32e7bbd}{nodes}}[tx][ty];
+201         \textcolor{keywordflow}{while} (target != \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_path_finder_ab7dd9208b4a62c2289f049d4a32e7bbd}{nodes}}[sx][sy]) \{
+202             path.prependStep(target.x, target.y);
+203             target = target.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_path_finder_1_1_node_ade9fb25ef9f70ba6fded61359eb1fa81}{parent}};
+204         \}
+205         path.prependStep(sx,sy);
+206         
+207         \textcolor{comment}{// thats it, we have our path }
+208         \textcolor{keywordflow}{return} path;
+209     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_path_finder_abd096900bd63a7ee01976e75ad7950d3}\label{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_path_finder_abd096900bd63a7ee01976e75ad7950d3}} 
+\index{org\+::newdawn\+::slick\+::util\+::pathfinding\+::\+A\+Star\+Path\+Finder@{org\+::newdawn\+::slick\+::util\+::pathfinding\+::\+A\+Star\+Path\+Finder}!get\+CurrentX@{get\+CurrentX}}
+\index{get\+CurrentX@{get\+CurrentX}!org\+::newdawn\+::slick\+::util\+::pathfinding\+::\+A\+Star\+Path\+Finder@{org\+::newdawn\+::slick\+::util\+::pathfinding\+::\+A\+Star\+Path\+Finder}}
+\subsubsection{\texorpdfstring{get\+Current\+X()}{getCurrentX()}}
+{\footnotesize\ttfamily int org.\+newdawn.\+slick.\+util.\+pathfinding.\+A\+Star\+Path\+Finder.\+get\+CurrentX (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get the X coordinate of the node currently being evaluated
+
+\begin{DoxyReturn}{Returns}
+The X coordinate of the node currently being evaluated 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+216                              \{
+217         \textcolor{keywordflow}{if} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_path_finder_a560430f619222a3148fd1dd01c52b6ad}{current}} == null) \{
+218             \textcolor{keywordflow}{return} -1;
+219         \}
+220         
+221         \textcolor{keywordflow}{return} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_path_finder_a560430f619222a3148fd1dd01c52b6ad}{current}}.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_path_finder_1_1_node_ada4322ce47f95ba2707c0b1a03ea0f87}{x}};
+222     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_path_finder_a1e98b93b8c014045a831986f3de390c4}\label{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_path_finder_a1e98b93b8c014045a831986f3de390c4}} 
+\index{org\+::newdawn\+::slick\+::util\+::pathfinding\+::\+A\+Star\+Path\+Finder@{org\+::newdawn\+::slick\+::util\+::pathfinding\+::\+A\+Star\+Path\+Finder}!get\+CurrentY@{get\+CurrentY}}
+\index{get\+CurrentY@{get\+CurrentY}!org\+::newdawn\+::slick\+::util\+::pathfinding\+::\+A\+Star\+Path\+Finder@{org\+::newdawn\+::slick\+::util\+::pathfinding\+::\+A\+Star\+Path\+Finder}}
+\subsubsection{\texorpdfstring{get\+Current\+Y()}{getCurrentY()}}
+{\footnotesize\ttfamily int org.\+newdawn.\+slick.\+util.\+pathfinding.\+A\+Star\+Path\+Finder.\+get\+CurrentY (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get the Y coordinate of the node currently being evaluated
+
+\begin{DoxyReturn}{Returns}
+The Y coordinate of the node currently being evaluated 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+229                              \{
+230         \textcolor{keywordflow}{if} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_path_finder_a560430f619222a3148fd1dd01c52b6ad}{current}} == null) \{
+231             \textcolor{keywordflow}{return} -1;
+232         \}
+233         
+234         \textcolor{keywordflow}{return} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_path_finder_a560430f619222a3148fd1dd01c52b6ad}{current}}.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_path_finder_1_1_node_a926a7542d89578d05ea59a6803479355}{y}};
+235     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_path_finder_acb31149ddbceaa1f0b23f211e113a54e}\label{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_path_finder_acb31149ddbceaa1f0b23f211e113a54e}} 
+\index{org\+::newdawn\+::slick\+::util\+::pathfinding\+::\+A\+Star\+Path\+Finder@{org\+::newdawn\+::slick\+::util\+::pathfinding\+::\+A\+Star\+Path\+Finder}!get\+First\+In\+Open@{get\+First\+In\+Open}}
+\index{get\+First\+In\+Open@{get\+First\+In\+Open}!org\+::newdawn\+::slick\+::util\+::pathfinding\+::\+A\+Star\+Path\+Finder@{org\+::newdawn\+::slick\+::util\+::pathfinding\+::\+A\+Star\+Path\+Finder}}
+\subsubsection{\texorpdfstring{get\+First\+In\+Open()}{getFirstInOpen()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_path_finder_1_1_node}{Node}} org.\+newdawn.\+slick.\+util.\+pathfinding.\+A\+Star\+Path\+Finder.\+get\+First\+In\+Open (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+Get the first element from the open list. This is the next one to be searched.
+
+\begin{DoxyReturn}{Returns}
+The first element in the open list 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+243                                     \{
+244         \textcolor{keywordflow}{return} (Node) \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_path_finder_a8614e10a1dd039e67263932fdc1206b2}{open}}.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_path_finder_1_1_priority_list_ad2e6435ff1feb6f838527d5e901d0d6c}{first}}();
+245     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_path_finder_a15bc3df2a4e48452e9be63ac20b22303}\label{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_path_finder_a15bc3df2a4e48452e9be63ac20b22303}} 
+\index{org\+::newdawn\+::slick\+::util\+::pathfinding\+::\+A\+Star\+Path\+Finder@{org\+::newdawn\+::slick\+::util\+::pathfinding\+::\+A\+Star\+Path\+Finder}!get\+Heuristic\+Cost@{get\+Heuristic\+Cost}}
+\index{get\+Heuristic\+Cost@{get\+Heuristic\+Cost}!org\+::newdawn\+::slick\+::util\+::pathfinding\+::\+A\+Star\+Path\+Finder@{org\+::newdawn\+::slick\+::util\+::pathfinding\+::\+A\+Star\+Path\+Finder}}
+\subsubsection{\texorpdfstring{get\+Heuristic\+Cost()}{getHeuristicCost()}}
+{\footnotesize\ttfamily float org.\+newdawn.\+slick.\+util.\+pathfinding.\+A\+Star\+Path\+Finder.\+get\+Heuristic\+Cost (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_mover}{Mover}}}]{mover,  }\item[{int}]{x,  }\item[{int}]{y,  }\item[{int}]{tx,  }\item[{int}]{ty }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get the heuristic cost for the given location. This determines in which order the locations are processed.
+
+
+\begin{DoxyParams}{Parameters}
+{\em mover} & The entity that is being moved \\
+\hline
+{\em x} & The x coordinate of the tile whose cost is being determined \\
+\hline
+{\em y} & The y coordiante of the tile whose cost is being determined \\
+\hline
+{\em tx} & The x coordinate of the target location \\
+\hline
+{\em ty} & The y coordinate of the target location \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The heuristic cost assigned to the tile 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+359                                                                              \{
+360         \textcolor{keywordflow}{return} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_path_finder_a563e3c6c8c16bfb8887fae510338e6be}{heuristic}}.\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_heuristic_a6655bf4053ece54e62beec26876ad285}{getCost}}(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_path_finder_afdd901a5fe460e8ec85405cdd5389931}{map}}, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_path_finder_a5407fe31e264f03e9d6092bcb18aba4a}{mover}}, x, y, tx, ty);
+361     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_path_finder_af21aa3e1c2ff9f5277e24e9ea626220c}\label{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_path_finder_af21aa3e1c2ff9f5277e24e9ea626220c}} 
+\index{org\+::newdawn\+::slick\+::util\+::pathfinding\+::\+A\+Star\+Path\+Finder@{org\+::newdawn\+::slick\+::util\+::pathfinding\+::\+A\+Star\+Path\+Finder}!get\+Movement\+Cost@{get\+Movement\+Cost}}
+\index{get\+Movement\+Cost@{get\+Movement\+Cost}!org\+::newdawn\+::slick\+::util\+::pathfinding\+::\+A\+Star\+Path\+Finder@{org\+::newdawn\+::slick\+::util\+::pathfinding\+::\+A\+Star\+Path\+Finder}}
+\subsubsection{\texorpdfstring{get\+Movement\+Cost()}{getMovementCost()}}
+{\footnotesize\ttfamily float org.\+newdawn.\+slick.\+util.\+pathfinding.\+A\+Star\+Path\+Finder.\+get\+Movement\+Cost (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_mover}{Mover}}}]{mover,  }\item[{int}]{sx,  }\item[{int}]{sy,  }\item[{int}]{tx,  }\item[{int}]{ty }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get the cost to move through a given location
+
+
+\begin{DoxyParams}{Parameters}
+{\em mover} & The entity that is being moved \\
+\hline
+{\em sx} & The x coordinate of the tile whose cost is being determined \\
+\hline
+{\em sy} & The y coordiante of the tile whose cost is being determined \\
+\hline
+{\em tx} & The x coordinate of the target location \\
+\hline
+{\em ty} & The y coordinate of the target location \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The cost of movement through the given tile 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+340                                                                               \{
+341         this.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_path_finder_a5407fe31e264f03e9d6092bcb18aba4a}{mover}} = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_path_finder_a5407fe31e264f03e9d6092bcb18aba4a}{mover}};
+342         this.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_path_finder_aa57984b3f637153ce573e88bb635e87b}{sourceX}} = sx;
+343         this.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_path_finder_a925d628f5ff0f25f13508a117c1ea663}{sourceY}} = sy;
+344         
+345         \textcolor{keywordflow}{return} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_path_finder_afdd901a5fe460e8ec85405cdd5389931}{map}}.\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_tile_based_map_ad2e68a8e3405c15b90b5247ffb70897f}{getCost}}(\textcolor{keyword}{this}, tx, ty);
+346     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_path_finder_a87eea405304f151bf2ef8621aefe4183}\label{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_path_finder_a87eea405304f151bf2ef8621aefe4183}} 
+\index{org\+::newdawn\+::slick\+::util\+::pathfinding\+::\+A\+Star\+Path\+Finder@{org\+::newdawn\+::slick\+::util\+::pathfinding\+::\+A\+Star\+Path\+Finder}!get\+Mover@{get\+Mover}}
+\index{get\+Mover@{get\+Mover}!org\+::newdawn\+::slick\+::util\+::pathfinding\+::\+A\+Star\+Path\+Finder@{org\+::newdawn\+::slick\+::util\+::pathfinding\+::\+A\+Star\+Path\+Finder}}
+\subsubsection{\texorpdfstring{get\+Mover()}{getMover()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_mover}{Mover}} org.\+newdawn.\+slick.\+util.\+pathfinding.\+A\+Star\+Path\+Finder.\+get\+Mover (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_path_finding_context_a50e439d467ccdf457dca18ca60ab367c}{org.\+newdawn.\+slick.\+util.\+pathfinding.\+Path\+Finding\+Context\+::get\+Mover()}} 
+\end{DoxySeeAlso}
+
+
+Implements \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_path_finding_context_a50e439d467ccdf457dca18ca60ab367c}{org.\+newdawn.\+slick.\+util.\+pathfinding.\+Path\+Finding\+Context}}.
+
+
+\begin{DoxyCode}
+566                             \{
+567         \textcolor{keywordflow}{return} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_path_finder_a5407fe31e264f03e9d6092bcb18aba4a}{mover}};
+568     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_path_finder_abf095f4193d79acc42fdceb293468e14}\label{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_path_finder_abf095f4193d79acc42fdceb293468e14}} 
+\index{org\+::newdawn\+::slick\+::util\+::pathfinding\+::\+A\+Star\+Path\+Finder@{org\+::newdawn\+::slick\+::util\+::pathfinding\+::\+A\+Star\+Path\+Finder}!get\+Search\+Distance@{get\+Search\+Distance}}
+\index{get\+Search\+Distance@{get\+Search\+Distance}!org\+::newdawn\+::slick\+::util\+::pathfinding\+::\+A\+Star\+Path\+Finder@{org\+::newdawn\+::slick\+::util\+::pathfinding\+::\+A\+Star\+Path\+Finder}}
+\subsubsection{\texorpdfstring{get\+Search\+Distance()}{getSearchDistance()}}
+{\footnotesize\ttfamily int org.\+newdawn.\+slick.\+util.\+pathfinding.\+A\+Star\+Path\+Finder.\+get\+Search\+Distance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_path_finding_context_af6c873041cbca8ad6edfd63c6e10d243}{org.\+newdawn.\+slick.\+util.\+pathfinding.\+Path\+Finding\+Context\+::get\+Search\+Distance()}} 
+\end{DoxySeeAlso}
+
+
+Implements \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_path_finding_context_af6c873041cbca8ad6edfd63c6e10d243}{org.\+newdawn.\+slick.\+util.\+pathfinding.\+Path\+Finding\+Context}}.
+
+
+\begin{DoxyCode}
+573                                    \{
+574         \textcolor{keywordflow}{return} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_path_finder_a8c4940ca4de03b42628e5cc6145e1390}{distance}};
+575     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_path_finder_a170c66a9356c930fa83a50567f64be52}\label{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_path_finder_a170c66a9356c930fa83a50567f64be52}} 
+\index{org\+::newdawn\+::slick\+::util\+::pathfinding\+::\+A\+Star\+Path\+Finder@{org\+::newdawn\+::slick\+::util\+::pathfinding\+::\+A\+Star\+Path\+Finder}!get\+SourceX@{get\+SourceX}}
+\index{get\+SourceX@{get\+SourceX}!org\+::newdawn\+::slick\+::util\+::pathfinding\+::\+A\+Star\+Path\+Finder@{org\+::newdawn\+::slick\+::util\+::pathfinding\+::\+A\+Star\+Path\+Finder}}
+\subsubsection{\texorpdfstring{get\+Source\+X()}{getSourceX()}}
+{\footnotesize\ttfamily int org.\+newdawn.\+slick.\+util.\+pathfinding.\+A\+Star\+Path\+Finder.\+get\+SourceX (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_path_finding_context_a7b67cdc7d0eaf54e6e07d09b1a575065}{org.\+newdawn.\+slick.\+util.\+pathfinding.\+Path\+Finding\+Context\+::get\+Source\+X()}} 
+\end{DoxySeeAlso}
+
+
+Implements \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_path_finding_context_a7b67cdc7d0eaf54e6e07d09b1a575065}{org.\+newdawn.\+slick.\+util.\+pathfinding.\+Path\+Finding\+Context}}.
+
+
+\begin{DoxyCode}
+580                             \{
+581         \textcolor{keywordflow}{return} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_path_finder_aa57984b3f637153ce573e88bb635e87b}{sourceX}};
+582     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_path_finder_abfd761f71fe0c43a7d3533e49cf5be33}\label{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_path_finder_abfd761f71fe0c43a7d3533e49cf5be33}} 
+\index{org\+::newdawn\+::slick\+::util\+::pathfinding\+::\+A\+Star\+Path\+Finder@{org\+::newdawn\+::slick\+::util\+::pathfinding\+::\+A\+Star\+Path\+Finder}!get\+SourceY@{get\+SourceY}}
+\index{get\+SourceY@{get\+SourceY}!org\+::newdawn\+::slick\+::util\+::pathfinding\+::\+A\+Star\+Path\+Finder@{org\+::newdawn\+::slick\+::util\+::pathfinding\+::\+A\+Star\+Path\+Finder}}
+\subsubsection{\texorpdfstring{get\+Source\+Y()}{getSourceY()}}
+{\footnotesize\ttfamily int org.\+newdawn.\+slick.\+util.\+pathfinding.\+A\+Star\+Path\+Finder.\+get\+SourceY (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_path_finding_context_a30ac68532d0f3e9e5f4ce5e5e88f593e}{org.\+newdawn.\+slick.\+util.\+pathfinding.\+Path\+Finding\+Context\+::get\+Source\+Y()}} 
+\end{DoxySeeAlso}
+
+
+Implements \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_path_finding_context_a30ac68532d0f3e9e5f4ce5e5e88f593e}{org.\+newdawn.\+slick.\+util.\+pathfinding.\+Path\+Finding\+Context}}.
+
+
+\begin{DoxyCode}
+587                             \{
+588         \textcolor{keywordflow}{return} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_path_finder_a925d628f5ff0f25f13508a117c1ea663}{sourceY}};
+589     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_path_finder_ad6b6d659cea8c18e998fd25080e902de}\label{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_path_finder_ad6b6d659cea8c18e998fd25080e902de}} 
+\index{org\+::newdawn\+::slick\+::util\+::pathfinding\+::\+A\+Star\+Path\+Finder@{org\+::newdawn\+::slick\+::util\+::pathfinding\+::\+A\+Star\+Path\+Finder}!in\+Closed\+List@{in\+Closed\+List}}
+\index{in\+Closed\+List@{in\+Closed\+List}!org\+::newdawn\+::slick\+::util\+::pathfinding\+::\+A\+Star\+Path\+Finder@{org\+::newdawn\+::slick\+::util\+::pathfinding\+::\+A\+Star\+Path\+Finder}}
+\subsubsection{\texorpdfstring{in\+Closed\+List()}{inClosedList()}}
+{\footnotesize\ttfamily boolean org.\+newdawn.\+slick.\+util.\+pathfinding.\+A\+Star\+Path\+Finder.\+in\+Closed\+List (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_path_finder_1_1_node}{Node}}}]{node }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+Check if the node supplied is in the closed list
+
+
+\begin{DoxyParams}{Parameters}
+{\em node} & The node to search for \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the node specified is in the closed list 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+293                                               \{
+294         \textcolor{keywordflow}{return} node.isClosed();
+295     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_path_finder_a8f95ed1da36dc1963067306788b2f2de}\label{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_path_finder_a8f95ed1da36dc1963067306788b2f2de}} 
+\index{org\+::newdawn\+::slick\+::util\+::pathfinding\+::\+A\+Star\+Path\+Finder@{org\+::newdawn\+::slick\+::util\+::pathfinding\+::\+A\+Star\+Path\+Finder}!in\+Open\+List@{in\+Open\+List}}
+\index{in\+Open\+List@{in\+Open\+List}!org\+::newdawn\+::slick\+::util\+::pathfinding\+::\+A\+Star\+Path\+Finder@{org\+::newdawn\+::slick\+::util\+::pathfinding\+::\+A\+Star\+Path\+Finder}}
+\subsubsection{\texorpdfstring{in\+Open\+List()}{inOpenList()}}
+{\footnotesize\ttfamily boolean org.\+newdawn.\+slick.\+util.\+pathfinding.\+A\+Star\+Path\+Finder.\+in\+Open\+List (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_path_finder_1_1_node}{Node}}}]{node }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+Check if a node is in the open list
+
+
+\begin{DoxyParams}{Parameters}
+{\em node} & The node to check for \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the node given is in the open list 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+263                                             \{
+264         \textcolor{keywordflow}{return} node.isOpen();
+265     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_path_finder_a815e6ff04646c49e3d0bacc2d06ee069}\label{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_path_finder_a815e6ff04646c49e3d0bacc2d06ee069}} 
+\index{org\+::newdawn\+::slick\+::util\+::pathfinding\+::\+A\+Star\+Path\+Finder@{org\+::newdawn\+::slick\+::util\+::pathfinding\+::\+A\+Star\+Path\+Finder}!is\+Valid\+Location@{is\+Valid\+Location}}
+\index{is\+Valid\+Location@{is\+Valid\+Location}!org\+::newdawn\+::slick\+::util\+::pathfinding\+::\+A\+Star\+Path\+Finder@{org\+::newdawn\+::slick\+::util\+::pathfinding\+::\+A\+Star\+Path\+Finder}}
+\subsubsection{\texorpdfstring{is\+Valid\+Location()}{isValidLocation()}}
+{\footnotesize\ttfamily boolean org.\+newdawn.\+slick.\+util.\+pathfinding.\+A\+Star\+Path\+Finder.\+is\+Valid\+Location (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_mover}{Mover}}}]{mover,  }\item[{int}]{sx,  }\item[{int}]{sy,  }\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+Check if a given location is valid for the supplied mover
+
+
+\begin{DoxyParams}{Parameters}
+{\em mover} & The mover that would hold a given location \\
+\hline
+{\em sx} & The starting x coordinate \\
+\hline
+{\em sy} & The starting y coordinate \\
+\hline
+{\em x} & The x coordinate of the location to check \\
+\hline
+{\em y} & The y coordinate of the location to check \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the location is valid for the given mover 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+317                                                                                  \{
+318         \textcolor{keywordtype}{boolean} invalid = (x < 0) || (y < 0) || (x >= \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_path_finder_afdd901a5fe460e8ec85405cdd5389931}{map}}.\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_tile_based_map_a5efac540b233405c4ae65b784a7c6d22}{getWidthInTiles}}()) || (y >= 
+      \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_path_finder_afdd901a5fe460e8ec85405cdd5389931}{map}}.\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_tile_based_map_a9669f3dafa1ce48a20e3d7d8c1de239a}{getHeightInTiles}}());
+319         
+320         \textcolor{keywordflow}{if} ((!invalid) && ((sx != x) || (sy != y))) \{
+321             this.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_path_finder_a5407fe31e264f03e9d6092bcb18aba4a}{mover}} = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_path_finder_a5407fe31e264f03e9d6092bcb18aba4a}{mover}};
+322             this.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_path_finder_aa57984b3f637153ce573e88bb635e87b}{sourceX}} = sx;
+323             this.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_path_finder_a925d628f5ff0f25f13508a117c1ea663}{sourceY}} = sy;
+324             invalid = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_path_finder_afdd901a5fe460e8ec85405cdd5389931}{map}}.\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_tile_based_map_af01ba12d90f794cd16138e05dc328725}{blocked}}(\textcolor{keyword}{this}, x, y);
+325         \}
+326         
+327         \textcolor{keywordflow}{return} !invalid;
+328     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_path_finder_a7e61b3a937550a5ea0bc7901c9509d8f}\label{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_path_finder_a7e61b3a937550a5ea0bc7901c9509d8f}} 
+\index{org\+::newdawn\+::slick\+::util\+::pathfinding\+::\+A\+Star\+Path\+Finder@{org\+::newdawn\+::slick\+::util\+::pathfinding\+::\+A\+Star\+Path\+Finder}!remove\+From\+Closed@{remove\+From\+Closed}}
+\index{remove\+From\+Closed@{remove\+From\+Closed}!org\+::newdawn\+::slick\+::util\+::pathfinding\+::\+A\+Star\+Path\+Finder@{org\+::newdawn\+::slick\+::util\+::pathfinding\+::\+A\+Star\+Path\+Finder}}
+\subsubsection{\texorpdfstring{remove\+From\+Closed()}{removeFromClosed()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+util.\+pathfinding.\+A\+Star\+Path\+Finder.\+remove\+From\+Closed (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_path_finder_1_1_node}{Node}}}]{node }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+Remove a node from the closed list
+
+
+\begin{DoxyParams}{Parameters}
+{\em node} & The node to remove from the closed list \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+302                                                \{
+303         node.setClosed(\textcolor{keyword}{false});
+304         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_path_finder_aa8d4b6dec216f8e3f070889f1c722921}{closed}}.remove(node);
+305     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_path_finder_a3efb779275ef97f7e5dc164be0488c08}\label{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_path_finder_a3efb779275ef97f7e5dc164be0488c08}} 
+\index{org\+::newdawn\+::slick\+::util\+::pathfinding\+::\+A\+Star\+Path\+Finder@{org\+::newdawn\+::slick\+::util\+::pathfinding\+::\+A\+Star\+Path\+Finder}!remove\+From\+Open@{remove\+From\+Open}}
+\index{remove\+From\+Open@{remove\+From\+Open}!org\+::newdawn\+::slick\+::util\+::pathfinding\+::\+A\+Star\+Path\+Finder@{org\+::newdawn\+::slick\+::util\+::pathfinding\+::\+A\+Star\+Path\+Finder}}
+\subsubsection{\texorpdfstring{remove\+From\+Open()}{removeFromOpen()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+util.\+pathfinding.\+A\+Star\+Path\+Finder.\+remove\+From\+Open (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_path_finder_1_1_node}{Node}}}]{node }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+Remove a node from the open list
+
+
+\begin{DoxyParams}{Parameters}
+{\em node} & The node to remove from the open list \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+272                                              \{
+273         node.setOpen(\textcolor{keyword}{false});
+274         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_path_finder_a8614e10a1dd039e67263932fdc1206b2}{open}}.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_path_finder_1_1_priority_list_a2876a214b6768f3aecdabdeed67a1986}{remove}}(node);
+275     \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_path_finder_a48df6bf1af744411f23f34caee6b0694}\label{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_path_finder_a48df6bf1af744411f23f34caee6b0694}} 
+\index{org\+::newdawn\+::slick\+::util\+::pathfinding\+::\+A\+Star\+Path\+Finder@{org\+::newdawn\+::slick\+::util\+::pathfinding\+::\+A\+Star\+Path\+Finder}!allow\+Diag\+Movement@{allow\+Diag\+Movement}}
+\index{allow\+Diag\+Movement@{allow\+Diag\+Movement}!org\+::newdawn\+::slick\+::util\+::pathfinding\+::\+A\+Star\+Path\+Finder@{org\+::newdawn\+::slick\+::util\+::pathfinding\+::\+A\+Star\+Path\+Finder}}
+\subsubsection{\texorpdfstring{allow\+Diag\+Movement}{allowDiagMovement}}
+{\footnotesize\ttfamily boolean org.\+newdawn.\+slick.\+util.\+pathfinding.\+A\+Star\+Path\+Finder.\+allow\+Diag\+Movement\hspace{0.3cm}{\ttfamily [private]}}
+
+True if we allow diaganol movement \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_path_finder_aa8d4b6dec216f8e3f070889f1c722921}\label{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_path_finder_aa8d4b6dec216f8e3f070889f1c722921}} 
+\index{org\+::newdawn\+::slick\+::util\+::pathfinding\+::\+A\+Star\+Path\+Finder@{org\+::newdawn\+::slick\+::util\+::pathfinding\+::\+A\+Star\+Path\+Finder}!closed@{closed}}
+\index{closed@{closed}!org\+::newdawn\+::slick\+::util\+::pathfinding\+::\+A\+Star\+Path\+Finder@{org\+::newdawn\+::slick\+::util\+::pathfinding\+::\+A\+Star\+Path\+Finder}}
+\subsubsection{\texorpdfstring{closed}{closed}}
+{\footnotesize\ttfamily Array\+List org.\+newdawn.\+slick.\+util.\+pathfinding.\+A\+Star\+Path\+Finder.\+closed = new Array\+List()\hspace{0.3cm}{\ttfamily [private]}}
+
+The set of nodes that have been searched through \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_path_finder_a560430f619222a3148fd1dd01c52b6ad}\label{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_path_finder_a560430f619222a3148fd1dd01c52b6ad}} 
+\index{org\+::newdawn\+::slick\+::util\+::pathfinding\+::\+A\+Star\+Path\+Finder@{org\+::newdawn\+::slick\+::util\+::pathfinding\+::\+A\+Star\+Path\+Finder}!current@{current}}
+\index{current@{current}!org\+::newdawn\+::slick\+::util\+::pathfinding\+::\+A\+Star\+Path\+Finder@{org\+::newdawn\+::slick\+::util\+::pathfinding\+::\+A\+Star\+Path\+Finder}}
+\subsubsection{\texorpdfstring{current}{current}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_path_finder_1_1_node}{Node}} org.\+newdawn.\+slick.\+util.\+pathfinding.\+A\+Star\+Path\+Finder.\+current\hspace{0.3cm}{\ttfamily [private]}}
+
+The node we\textquotesingle{}re currently searching from \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_path_finder_a8c4940ca4de03b42628e5cc6145e1390}\label{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_path_finder_a8c4940ca4de03b42628e5cc6145e1390}} 
+\index{org\+::newdawn\+::slick\+::util\+::pathfinding\+::\+A\+Star\+Path\+Finder@{org\+::newdawn\+::slick\+::util\+::pathfinding\+::\+A\+Star\+Path\+Finder}!distance@{distance}}
+\index{distance@{distance}!org\+::newdawn\+::slick\+::util\+::pathfinding\+::\+A\+Star\+Path\+Finder@{org\+::newdawn\+::slick\+::util\+::pathfinding\+::\+A\+Star\+Path\+Finder}}
+\subsubsection{\texorpdfstring{distance}{distance}}
+{\footnotesize\ttfamily int org.\+newdawn.\+slick.\+util.\+pathfinding.\+A\+Star\+Path\+Finder.\+distance\hspace{0.3cm}{\ttfamily [private]}}
+
+The distance searched so far \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_path_finder_a563e3c6c8c16bfb8887fae510338e6be}\label{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_path_finder_a563e3c6c8c16bfb8887fae510338e6be}} 
+\index{org\+::newdawn\+::slick\+::util\+::pathfinding\+::\+A\+Star\+Path\+Finder@{org\+::newdawn\+::slick\+::util\+::pathfinding\+::\+A\+Star\+Path\+Finder}!heuristic@{heuristic}}
+\index{heuristic@{heuristic}!org\+::newdawn\+::slick\+::util\+::pathfinding\+::\+A\+Star\+Path\+Finder@{org\+::newdawn\+::slick\+::util\+::pathfinding\+::\+A\+Star\+Path\+Finder}}
+\subsubsection{\texorpdfstring{heuristic}{heuristic}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_heuristic}{A\+Star\+Heuristic}} org.\+newdawn.\+slick.\+util.\+pathfinding.\+A\+Star\+Path\+Finder.\+heuristic\hspace{0.3cm}{\ttfamily [private]}}
+
+The heuristic we\textquotesingle{}re applying to determine which nodes to search first \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_path_finder_afdd901a5fe460e8ec85405cdd5389931}\label{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_path_finder_afdd901a5fe460e8ec85405cdd5389931}} 
+\index{org\+::newdawn\+::slick\+::util\+::pathfinding\+::\+A\+Star\+Path\+Finder@{org\+::newdawn\+::slick\+::util\+::pathfinding\+::\+A\+Star\+Path\+Finder}!map@{map}}
+\index{map@{map}!org\+::newdawn\+::slick\+::util\+::pathfinding\+::\+A\+Star\+Path\+Finder@{org\+::newdawn\+::slick\+::util\+::pathfinding\+::\+A\+Star\+Path\+Finder}}
+\subsubsection{\texorpdfstring{map}{map}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_tile_based_map}{Tile\+Based\+Map}} org.\+newdawn.\+slick.\+util.\+pathfinding.\+A\+Star\+Path\+Finder.\+map\hspace{0.3cm}{\ttfamily [private]}}
+
+The map being searched \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_path_finder_aaf433053cfc63dbf492b8e1c90f9ec3d}\label{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_path_finder_aaf433053cfc63dbf492b8e1c90f9ec3d}} 
+\index{org\+::newdawn\+::slick\+::util\+::pathfinding\+::\+A\+Star\+Path\+Finder@{org\+::newdawn\+::slick\+::util\+::pathfinding\+::\+A\+Star\+Path\+Finder}!max\+Search\+Distance@{max\+Search\+Distance}}
+\index{max\+Search\+Distance@{max\+Search\+Distance}!org\+::newdawn\+::slick\+::util\+::pathfinding\+::\+A\+Star\+Path\+Finder@{org\+::newdawn\+::slick\+::util\+::pathfinding\+::\+A\+Star\+Path\+Finder}}
+\subsubsection{\texorpdfstring{max\+Search\+Distance}{maxSearchDistance}}
+{\footnotesize\ttfamily int org.\+newdawn.\+slick.\+util.\+pathfinding.\+A\+Star\+Path\+Finder.\+max\+Search\+Distance\hspace{0.3cm}{\ttfamily [private]}}
+
+The maximum depth of search we\textquotesingle{}re willing to accept before giving up \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_path_finder_a5407fe31e264f03e9d6092bcb18aba4a}\label{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_path_finder_a5407fe31e264f03e9d6092bcb18aba4a}} 
+\index{org\+::newdawn\+::slick\+::util\+::pathfinding\+::\+A\+Star\+Path\+Finder@{org\+::newdawn\+::slick\+::util\+::pathfinding\+::\+A\+Star\+Path\+Finder}!mover@{mover}}
+\index{mover@{mover}!org\+::newdawn\+::slick\+::util\+::pathfinding\+::\+A\+Star\+Path\+Finder@{org\+::newdawn\+::slick\+::util\+::pathfinding\+::\+A\+Star\+Path\+Finder}}
+\subsubsection{\texorpdfstring{mover}{mover}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_mover}{Mover}} org.\+newdawn.\+slick.\+util.\+pathfinding.\+A\+Star\+Path\+Finder.\+mover\hspace{0.3cm}{\ttfamily [private]}}
+
+The mover going through the path \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_path_finder_ab7dd9208b4a62c2289f049d4a32e7bbd}\label{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_path_finder_ab7dd9208b4a62c2289f049d4a32e7bbd}} 
+\index{org\+::newdawn\+::slick\+::util\+::pathfinding\+::\+A\+Star\+Path\+Finder@{org\+::newdawn\+::slick\+::util\+::pathfinding\+::\+A\+Star\+Path\+Finder}!nodes@{nodes}}
+\index{nodes@{nodes}!org\+::newdawn\+::slick\+::util\+::pathfinding\+::\+A\+Star\+Path\+Finder@{org\+::newdawn\+::slick\+::util\+::pathfinding\+::\+A\+Star\+Path\+Finder}}
+\subsubsection{\texorpdfstring{nodes}{nodes}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_path_finder_1_1_node}{Node}} \mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} org.\+newdawn.\+slick.\+util.\+pathfinding.\+A\+Star\+Path\+Finder.\+nodes\hspace{0.3cm}{\ttfamily [private]}}
+
+The complete set of nodes across the map \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_path_finder_a8614e10a1dd039e67263932fdc1206b2}\label{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_path_finder_a8614e10a1dd039e67263932fdc1206b2}} 
+\index{org\+::newdawn\+::slick\+::util\+::pathfinding\+::\+A\+Star\+Path\+Finder@{org\+::newdawn\+::slick\+::util\+::pathfinding\+::\+A\+Star\+Path\+Finder}!open@{open}}
+\index{open@{open}!org\+::newdawn\+::slick\+::util\+::pathfinding\+::\+A\+Star\+Path\+Finder@{org\+::newdawn\+::slick\+::util\+::pathfinding\+::\+A\+Star\+Path\+Finder}}
+\subsubsection{\texorpdfstring{open}{open}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_path_finder_1_1_priority_list}{Priority\+List}} org.\+newdawn.\+slick.\+util.\+pathfinding.\+A\+Star\+Path\+Finder.\+open = new \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_path_finder_1_1_priority_list}{Priority\+List}}()\hspace{0.3cm}{\ttfamily [private]}}
+
+The set of nodes that we do not yet consider fully searched \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_path_finder_aa57984b3f637153ce573e88bb635e87b}\label{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_path_finder_aa57984b3f637153ce573e88bb635e87b}} 
+\index{org\+::newdawn\+::slick\+::util\+::pathfinding\+::\+A\+Star\+Path\+Finder@{org\+::newdawn\+::slick\+::util\+::pathfinding\+::\+A\+Star\+Path\+Finder}!sourceX@{sourceX}}
+\index{sourceX@{sourceX}!org\+::newdawn\+::slick\+::util\+::pathfinding\+::\+A\+Star\+Path\+Finder@{org\+::newdawn\+::slick\+::util\+::pathfinding\+::\+A\+Star\+Path\+Finder}}
+\subsubsection{\texorpdfstring{sourceX}{sourceX}}
+{\footnotesize\ttfamily int org.\+newdawn.\+slick.\+util.\+pathfinding.\+A\+Star\+Path\+Finder.\+sourceX\hspace{0.3cm}{\ttfamily [private]}}
+
+The x coordinate of the source tile we\textquotesingle{}re moving from \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_path_finder_a925d628f5ff0f25f13508a117c1ea663}\label{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_path_finder_a925d628f5ff0f25f13508a117c1ea663}} 
+\index{org\+::newdawn\+::slick\+::util\+::pathfinding\+::\+A\+Star\+Path\+Finder@{org\+::newdawn\+::slick\+::util\+::pathfinding\+::\+A\+Star\+Path\+Finder}!sourceY@{sourceY}}
+\index{sourceY@{sourceY}!org\+::newdawn\+::slick\+::util\+::pathfinding\+::\+A\+Star\+Path\+Finder@{org\+::newdawn\+::slick\+::util\+::pathfinding\+::\+A\+Star\+Path\+Finder}}
+\subsubsection{\texorpdfstring{sourceY}{sourceY}}
+{\footnotesize\ttfamily int org.\+newdawn.\+slick.\+util.\+pathfinding.\+A\+Star\+Path\+Finder.\+sourceY\hspace{0.3cm}{\ttfamily [private]}}
+
+The y coordinate of the source tile we\textquotesingle{}re moving from 

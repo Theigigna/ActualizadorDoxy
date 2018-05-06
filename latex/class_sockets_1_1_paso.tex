@@ -1,0 +1,71 @@
+\hypertarget{class_sockets_1_1_paso}{}\section{Sockets.\+Paso Class Reference}
+\label{class_sockets_1_1_paso}\index{Sockets.\+Paso@{Sockets.\+Paso}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+synchronized void \mbox{\hyperlink{class_sockets_1_1_paso_a56cd4d4d8e714895b6cc7692223d303c}{mirar}} ()
+\item 
+synchronized void \mbox{\hyperlink{class_sockets_1_1_paso_ae1faa4c34d81cb9ffaef7ff4bc49eab6}{abrir}} ()
+\item 
+synchronized void \mbox{\hyperlink{class_sockets_1_1_paso_a56e0e78be832edf53d6cbc29b095ac71}{cerrar}} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+boolean \mbox{\hyperlink{class_sockets_1_1_paso_adef5c84c1b38cd3d8d85e20b7aa5babe}{cerrado}} =false
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_sockets_1_1_paso_ae1faa4c34d81cb9ffaef7ff4bc49eab6}\label{class_sockets_1_1_paso_ae1faa4c34d81cb9ffaef7ff4bc49eab6}} 
+\index{Sockets\+::\+Paso@{Sockets\+::\+Paso}!abrir@{abrir}}
+\index{abrir@{abrir}!Sockets\+::\+Paso@{Sockets\+::\+Paso}}
+\subsubsection{\texorpdfstring{abrir()}{abrir()}}
+{\footnotesize\ttfamily synchronized void Sockets.\+Paso.\+abrir (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+22     \{
+23         \mbox{\hyperlink{class_sockets_1_1_paso_adef5c84c1b38cd3d8d85e20b7aa5babe}{cerrado}}=\textcolor{keyword}{false};
+24         notifyAll();
+25     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_sockets_1_1_paso_a56e0e78be832edf53d6cbc29b095ac71}\label{class_sockets_1_1_paso_a56e0e78be832edf53d6cbc29b095ac71}} 
+\index{Sockets\+::\+Paso@{Sockets\+::\+Paso}!cerrar@{cerrar}}
+\index{cerrar@{cerrar}!Sockets\+::\+Paso@{Sockets\+::\+Paso}}
+\subsubsection{\texorpdfstring{cerrar()}{cerrar()}}
+{\footnotesize\ttfamily synchronized void Sockets.\+Paso.\+cerrar (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+28     \{
+29         \mbox{\hyperlink{class_sockets_1_1_paso_adef5c84c1b38cd3d8d85e20b7aa5babe}{cerrado}}=\textcolor{keyword}{true};
+30     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_sockets_1_1_paso_a56cd4d4d8e714895b6cc7692223d303c}\label{class_sockets_1_1_paso_a56cd4d4d8e714895b6cc7692223d303c}} 
+\index{Sockets\+::\+Paso@{Sockets\+::\+Paso}!mirar@{mirar}}
+\index{mirar@{mirar}!Sockets\+::\+Paso@{Sockets\+::\+Paso}}
+\subsubsection{\texorpdfstring{mirar()}{mirar()}}
+{\footnotesize\ttfamily synchronized void Sockets.\+Paso.\+mirar (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+11     \{
+12         \textcolor{keywordflow}{while}(\mbox{\hyperlink{class_sockets_1_1_paso_adef5c84c1b38cd3d8d85e20b7aa5babe}{cerrado}})
+13         \{
+14             \textcolor{keywordflow}{try}
+15             \{
+16                 wait();
+17             \} \textcolor{keywordflow}{catch}(InterruptedException ie)\{ \}
+18         \}
+19     \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_sockets_1_1_paso_adef5c84c1b38cd3d8d85e20b7aa5babe}\label{class_sockets_1_1_paso_adef5c84c1b38cd3d8d85e20b7aa5babe}} 
+\index{Sockets\+::\+Paso@{Sockets\+::\+Paso}!cerrado@{cerrado}}
+\index{cerrado@{cerrado}!Sockets\+::\+Paso@{Sockets\+::\+Paso}}
+\subsubsection{\texorpdfstring{cerrado}{cerrado}}
+{\footnotesize\ttfamily boolean Sockets.\+Paso.\+cerrado =false\hspace{0.3cm}{\ttfamily [private]}}
+

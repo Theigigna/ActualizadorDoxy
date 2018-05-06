@@ -1,0 +1,542 @@
+\hypertarget{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_t_g_a_image_data}{}\section{org.\+newdawn.\+slick.\+opengl.\+T\+G\+A\+Image\+Data Class Reference}
+\label{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_t_g_a_image_data}\index{org.\+newdawn.\+slick.\+opengl.\+T\+G\+A\+Image\+Data@{org.\+newdawn.\+slick.\+opengl.\+T\+G\+A\+Image\+Data}}
+Inheritance diagram for org.\+newdawn.\+slick.\+opengl.\+T\+G\+A\+Image\+Data\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_t_g_a_image_data}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_t_g_a_image_data_a8fb7fd4d1276b068e3fec160d12a1059}{T\+G\+A\+Image\+Data}} ()
+\item 
+int \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_t_g_a_image_data_abcda568d9272d044fe65b2bba9905731}{get\+Depth}} ()
+\item 
+int \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_t_g_a_image_data_af1fc952e1578b431cfc2662387d9e38c}{get\+Width}} ()
+\item 
+int \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_t_g_a_image_data_a8c2eee4a09c160a0f4fbe6f49db7b888}{get\+Height}} ()
+\item 
+int \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_t_g_a_image_data_a4e4b19e2ec7982442fc5086cbf7f3a30}{get\+Tex\+Width}} ()
+\item 
+int \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_t_g_a_image_data_a787a45da7ec0d249ff4ab5db7784d535}{get\+Tex\+Height}} ()
+\item 
+Byte\+Buffer \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_t_g_a_image_data_a9ac907fe85767aad15fa1c05af8fb093}{load\+Image}} (Input\+Stream fis)  throws I\+O\+Exception 
+\item 
+Byte\+Buffer \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_t_g_a_image_data_afeb723edb941a99d15296d28b4404c31}{load\+Image}} (Input\+Stream fis, boolean flipped, int\mbox{[}$\,$\mbox{]} transparent)  throws I\+O\+Exception 
+\item 
+Byte\+Buffer \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_t_g_a_image_data_a45d077de182a890729f2e9cf9e408520}{load\+Image}} (Input\+Stream fis, boolean flipped, boolean force\+Alpha, int\mbox{[}$\,$\mbox{]} transparent)  throws I\+O\+Exception 
+\item 
+Byte\+Buffer \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_t_g_a_image_data_a282c69bf240178ff35cb72f91496ba3c}{get\+Image\+Buffer\+Data}} ()
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_t_g_a_image_data_a05f274a1f466b4a58192c99d1c500535}{configure\+Edging}} (boolean edging)
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+short \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_t_g_a_image_data_a17a25f35cb763e4698de412c2ef34493}{flip\+Endian}} (short signed\+Short)
+\item 
+int \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_t_g_a_image_data_ab9aff2ca0cec0b8ff114074236cdded1}{get2\+Fold}} (int fold)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_t_g_a_image_data_a1597fcbecdd0d2875a3950ebe60b2582}{tex\+Width}}
+\item 
+int \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_t_g_a_image_data_ab5bb366dc9a1fb7d18b96e732b8a74d5}{tex\+Height}}
+\item 
+int \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_t_g_a_image_data_a76539de4fa236043b0f8b31b0ce7c1cf}{width}}
+\item 
+int \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_t_g_a_image_data_ae129d18b6db032f7ef0ab8ebc795843b}{height}}
+\item 
+short \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_t_g_a_image_data_aa9222304ea8eae0cae78ff6ff0a7f8f2}{pixel\+Depth}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A utility to load T\+G\+As. Note\+: N\+OT T\+H\+R\+E\+AD S\+A\+FE
+
+Fresh cut of code but largely influeneced by the T\+GA loading class provided as part of the Java Monkey Engine (J\+ME). Why not check out what they\textquotesingle{}re doing over at \href{http://www.jmonkeyengine.com}{\tt http\+://www.\+jmonkeyengine.\+com}. kudos to Mark Powell.
+
+\begin{DoxyAuthor}{Author}
+Kevin Glass 
+\end{DoxyAuthor}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_t_g_a_image_data_a8fb7fd4d1276b068e3fec160d12a1059}\label{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_t_g_a_image_data_a8fb7fd4d1276b068e3fec160d12a1059}} 
+\index{org\+::newdawn\+::slick\+::opengl\+::\+T\+G\+A\+Image\+Data@{org\+::newdawn\+::slick\+::opengl\+::\+T\+G\+A\+Image\+Data}!T\+G\+A\+Image\+Data@{T\+G\+A\+Image\+Data}}
+\index{T\+G\+A\+Image\+Data@{T\+G\+A\+Image\+Data}!org\+::newdawn\+::slick\+::opengl\+::\+T\+G\+A\+Image\+Data@{org\+::newdawn\+::slick\+::opengl\+::\+T\+G\+A\+Image\+Data}}
+\subsubsection{\texorpdfstring{T\+G\+A\+Image\+Data()}{TGAImageData()}}
+{\footnotesize\ttfamily org.\+newdawn.\+slick.\+opengl.\+T\+G\+A\+Image\+Data.\+T\+G\+A\+Image\+Data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Create a new T\+GA Loader 
+\begin{DoxyCode}
+37                           \{
+38     \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_t_g_a_image_data_a05f274a1f466b4a58192c99d1c500535}\label{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_t_g_a_image_data_a05f274a1f466b4a58192c99d1c500535}} 
+\index{org\+::newdawn\+::slick\+::opengl\+::\+T\+G\+A\+Image\+Data@{org\+::newdawn\+::slick\+::opengl\+::\+T\+G\+A\+Image\+Data}!configure\+Edging@{configure\+Edging}}
+\index{configure\+Edging@{configure\+Edging}!org\+::newdawn\+::slick\+::opengl\+::\+T\+G\+A\+Image\+Data@{org\+::newdawn\+::slick\+::opengl\+::\+T\+G\+A\+Image\+Data}}
+\subsubsection{\texorpdfstring{configure\+Edging()}{configureEdging()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+opengl.\+T\+G\+A\+Image\+Data.\+configure\+Edging (\begin{DoxyParamCaption}\item[{boolean}]{edging }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1opengl_1_1_loadable_image_data_a1f9fb94bae3936761535408ba7afc0df}{org.\+newdawn.\+slick.\+opengl.\+Loadable\+Image\+Data\+::configure\+Edging(boolean)}} 
+\end{DoxySeeAlso}
+
+
+Implements \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1opengl_1_1_loadable_image_data_a1f9fb94bae3936761535408ba7afc0df}{org.\+newdawn.\+slick.\+opengl.\+Loadable\+Image\+Data}}.
+
+
+\begin{DoxyCode}
+317                                                 \{
+318     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_t_g_a_image_data_a17a25f35cb763e4698de412c2ef34493}\label{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_t_g_a_image_data_a17a25f35cb763e4698de412c2ef34493}} 
+\index{org\+::newdawn\+::slick\+::opengl\+::\+T\+G\+A\+Image\+Data@{org\+::newdawn\+::slick\+::opengl\+::\+T\+G\+A\+Image\+Data}!flip\+Endian@{flip\+Endian}}
+\index{flip\+Endian@{flip\+Endian}!org\+::newdawn\+::slick\+::opengl\+::\+T\+G\+A\+Image\+Data@{org\+::newdawn\+::slick\+::opengl\+::\+T\+G\+A\+Image\+Data}}
+\subsubsection{\texorpdfstring{flip\+Endian()}{flipEndian()}}
+{\footnotesize\ttfamily short org.\+newdawn.\+slick.\+opengl.\+T\+G\+A\+Image\+Data.\+flip\+Endian (\begin{DoxyParamCaption}\item[{short}]{signed\+Short }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+Flip the endian-\/ness of the short
+
+
+\begin{DoxyParams}{Parameters}
+{\em signed\+Short} & The short to flip \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The flipped short 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+46                                                 \{
+47         \textcolor{keywordtype}{int} input = signedShort & 0xFFFF;
+48         \textcolor{keywordflow}{return} (\textcolor{keywordtype}{short}) (input << 8 | (input & 0xFF00) >>> 8);
+49     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_t_g_a_image_data_ab9aff2ca0cec0b8ff114074236cdded1}\label{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_t_g_a_image_data_ab9aff2ca0cec0b8ff114074236cdded1}} 
+\index{org\+::newdawn\+::slick\+::opengl\+::\+T\+G\+A\+Image\+Data@{org\+::newdawn\+::slick\+::opengl\+::\+T\+G\+A\+Image\+Data}!get2\+Fold@{get2\+Fold}}
+\index{get2\+Fold@{get2\+Fold}!org\+::newdawn\+::slick\+::opengl\+::\+T\+G\+A\+Image\+Data@{org\+::newdawn\+::slick\+::opengl\+::\+T\+G\+A\+Image\+Data}}
+\subsubsection{\texorpdfstring{get2\+Fold()}{get2Fold()}}
+{\footnotesize\ttfamily int org.\+newdawn.\+slick.\+opengl.\+T\+G\+A\+Image\+Data.\+get2\+Fold (\begin{DoxyParamCaption}\item[{int}]{fold }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+Get the closest greater power of 2 to the fold number
+
+
+\begin{DoxyParams}{Parameters}
+{\em fold} & The target number \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The power of 2 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+299                                    \{
+300         \textcolor{keywordtype}{int} ret = 2;
+301         \textcolor{keywordflow}{while} (ret < fold) \{
+302             ret *= 2;
+303         \}
+304         \textcolor{keywordflow}{return} ret;
+305     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_t_g_a_image_data_abcda568d9272d044fe65b2bba9905731}\label{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_t_g_a_image_data_abcda568d9272d044fe65b2bba9905731}} 
+\index{org\+::newdawn\+::slick\+::opengl\+::\+T\+G\+A\+Image\+Data@{org\+::newdawn\+::slick\+::opengl\+::\+T\+G\+A\+Image\+Data}!get\+Depth@{get\+Depth}}
+\index{get\+Depth@{get\+Depth}!org\+::newdawn\+::slick\+::opengl\+::\+T\+G\+A\+Image\+Data@{org\+::newdawn\+::slick\+::opengl\+::\+T\+G\+A\+Image\+Data}}
+\subsubsection{\texorpdfstring{get\+Depth()}{getDepth()}}
+{\footnotesize\ttfamily int org.\+newdawn.\+slick.\+opengl.\+T\+G\+A\+Image\+Data.\+get\+Depth (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1opengl_1_1_image_data_a69be40348e05222e8f0c65f5845adcb9}{org.\+newdawn.\+slick.\+opengl.\+Image\+Data\+::get\+Depth()}} 
+\end{DoxySeeAlso}
+
+
+Implements \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1opengl_1_1_image_data_a69be40348e05222e8f0c65f5845adcb9}{org.\+newdawn.\+slick.\+opengl.\+Image\+Data}}.
+
+
+\begin{DoxyCode}
+54                           \{
+55         \textcolor{keywordflow}{return} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_t_g_a_image_data_aa9222304ea8eae0cae78ff6ff0a7f8f2}{pixelDepth}};
+56     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_t_g_a_image_data_a8c2eee4a09c160a0f4fbe6f49db7b888}\label{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_t_g_a_image_data_a8c2eee4a09c160a0f4fbe6f49db7b888}} 
+\index{org\+::newdawn\+::slick\+::opengl\+::\+T\+G\+A\+Image\+Data@{org\+::newdawn\+::slick\+::opengl\+::\+T\+G\+A\+Image\+Data}!get\+Height@{get\+Height}}
+\index{get\+Height@{get\+Height}!org\+::newdawn\+::slick\+::opengl\+::\+T\+G\+A\+Image\+Data@{org\+::newdawn\+::slick\+::opengl\+::\+T\+G\+A\+Image\+Data}}
+\subsubsection{\texorpdfstring{get\+Height()}{getHeight()}}
+{\footnotesize\ttfamily int org.\+newdawn.\+slick.\+opengl.\+T\+G\+A\+Image\+Data.\+get\+Height (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1opengl_1_1_image_data_acce23925ae561e75f051d3287a8dda06}{org.\+newdawn.\+slick.\+opengl.\+Image\+Data\+::get\+Height()}} 
+\end{DoxySeeAlso}
+
+
+Implements \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1opengl_1_1_image_data_acce23925ae561e75f051d3287a8dda06}{org.\+newdawn.\+slick.\+opengl.\+Image\+Data}}.
+
+
+\begin{DoxyCode}
+68                            \{
+69         \textcolor{keywordflow}{return} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_t_g_a_image_data_ae129d18b6db032f7ef0ab8ebc795843b}{height}};
+70     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_t_g_a_image_data_a282c69bf240178ff35cb72f91496ba3c}\label{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_t_g_a_image_data_a282c69bf240178ff35cb72f91496ba3c}} 
+\index{org\+::newdawn\+::slick\+::opengl\+::\+T\+G\+A\+Image\+Data@{org\+::newdawn\+::slick\+::opengl\+::\+T\+G\+A\+Image\+Data}!get\+Image\+Buffer\+Data@{get\+Image\+Buffer\+Data}}
+\index{get\+Image\+Buffer\+Data@{get\+Image\+Buffer\+Data}!org\+::newdawn\+::slick\+::opengl\+::\+T\+G\+A\+Image\+Data@{org\+::newdawn\+::slick\+::opengl\+::\+T\+G\+A\+Image\+Data}}
+\subsubsection{\texorpdfstring{get\+Image\+Buffer\+Data()}{getImageBufferData()}}
+{\footnotesize\ttfamily Byte\+Buffer org.\+newdawn.\+slick.\+opengl.\+T\+G\+A\+Image\+Data.\+get\+Image\+Buffer\+Data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1opengl_1_1_image_data_a7b15d49f552cad075bb1179668ce5250}{org.\+newdawn.\+slick.\+opengl.\+Image\+Data\+::get\+Image\+Buffer\+Data()}} 
+\end{DoxySeeAlso}
+
+
+Implements \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1opengl_1_1_image_data_a7b15d49f552cad075bb1179668ce5250}{org.\+newdawn.\+slick.\+opengl.\+Image\+Data}}.
+
+
+\begin{DoxyCode}
+310                                            \{
+311         \textcolor{keywordflow}{throw} \textcolor{keyword}{new} RuntimeException(\textcolor{stringliteral}{"TGAImageData doesn't store it's image."});
+312     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_t_g_a_image_data_a787a45da7ec0d249ff4ab5db7784d535}\label{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_t_g_a_image_data_a787a45da7ec0d249ff4ab5db7784d535}} 
+\index{org\+::newdawn\+::slick\+::opengl\+::\+T\+G\+A\+Image\+Data@{org\+::newdawn\+::slick\+::opengl\+::\+T\+G\+A\+Image\+Data}!get\+Tex\+Height@{get\+Tex\+Height}}
+\index{get\+Tex\+Height@{get\+Tex\+Height}!org\+::newdawn\+::slick\+::opengl\+::\+T\+G\+A\+Image\+Data@{org\+::newdawn\+::slick\+::opengl\+::\+T\+G\+A\+Image\+Data}}
+\subsubsection{\texorpdfstring{get\+Tex\+Height()}{getTexHeight()}}
+{\footnotesize\ttfamily int org.\+newdawn.\+slick.\+opengl.\+T\+G\+A\+Image\+Data.\+get\+Tex\+Height (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1opengl_1_1_image_data_a316891c94ba43967d0554378c7197324}{org.\+newdawn.\+slick.\+opengl.\+Image\+Data\+::get\+Tex\+Height()}} 
+\end{DoxySeeAlso}
+
+
+Implements \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1opengl_1_1_image_data_a316891c94ba43967d0554378c7197324}{org.\+newdawn.\+slick.\+opengl.\+Image\+Data}}.
+
+
+\begin{DoxyCode}
+82                               \{
+83         \textcolor{keywordflow}{return} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_t_g_a_image_data_ab5bb366dc9a1fb7d18b96e732b8a74d5}{texHeight}};
+84     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_t_g_a_image_data_a4e4b19e2ec7982442fc5086cbf7f3a30}\label{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_t_g_a_image_data_a4e4b19e2ec7982442fc5086cbf7f3a30}} 
+\index{org\+::newdawn\+::slick\+::opengl\+::\+T\+G\+A\+Image\+Data@{org\+::newdawn\+::slick\+::opengl\+::\+T\+G\+A\+Image\+Data}!get\+Tex\+Width@{get\+Tex\+Width}}
+\index{get\+Tex\+Width@{get\+Tex\+Width}!org\+::newdawn\+::slick\+::opengl\+::\+T\+G\+A\+Image\+Data@{org\+::newdawn\+::slick\+::opengl\+::\+T\+G\+A\+Image\+Data}}
+\subsubsection{\texorpdfstring{get\+Tex\+Width()}{getTexWidth()}}
+{\footnotesize\ttfamily int org.\+newdawn.\+slick.\+opengl.\+T\+G\+A\+Image\+Data.\+get\+Tex\+Width (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1opengl_1_1_image_data_abf26e8dcbf2ec52f9a49535d8912263e}{org.\+newdawn.\+slick.\+opengl.\+Image\+Data\+::get\+Tex\+Width()}} 
+\end{DoxySeeAlso}
+
+
+Implements \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1opengl_1_1_image_data_abf26e8dcbf2ec52f9a49535d8912263e}{org.\+newdawn.\+slick.\+opengl.\+Image\+Data}}.
+
+
+\begin{DoxyCode}
+75                              \{
+76         \textcolor{keywordflow}{return} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_t_g_a_image_data_a1597fcbecdd0d2875a3950ebe60b2582}{texWidth}};
+77     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_t_g_a_image_data_af1fc952e1578b431cfc2662387d9e38c}\label{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_t_g_a_image_data_af1fc952e1578b431cfc2662387d9e38c}} 
+\index{org\+::newdawn\+::slick\+::opengl\+::\+T\+G\+A\+Image\+Data@{org\+::newdawn\+::slick\+::opengl\+::\+T\+G\+A\+Image\+Data}!get\+Width@{get\+Width}}
+\index{get\+Width@{get\+Width}!org\+::newdawn\+::slick\+::opengl\+::\+T\+G\+A\+Image\+Data@{org\+::newdawn\+::slick\+::opengl\+::\+T\+G\+A\+Image\+Data}}
+\subsubsection{\texorpdfstring{get\+Width()}{getWidth()}}
+{\footnotesize\ttfamily int org.\+newdawn.\+slick.\+opengl.\+T\+G\+A\+Image\+Data.\+get\+Width (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1opengl_1_1_image_data_a59fd53f0ca1e501de35c1b2b4a7e69c5}{org.\+newdawn.\+slick.\+opengl.\+Image\+Data\+::get\+Width()}} 
+\end{DoxySeeAlso}
+
+
+Implements \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1opengl_1_1_image_data_a59fd53f0ca1e501de35c1b2b4a7e69c5}{org.\+newdawn.\+slick.\+opengl.\+Image\+Data}}.
+
+
+\begin{DoxyCode}
+61                           \{
+62         \textcolor{keywordflow}{return} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_t_g_a_image_data_a76539de4fa236043b0f8b31b0ce7c1cf}{width}};
+63     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_t_g_a_image_data_a9ac907fe85767aad15fa1c05af8fb093}\label{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_t_g_a_image_data_a9ac907fe85767aad15fa1c05af8fb093}} 
+\index{org\+::newdawn\+::slick\+::opengl\+::\+T\+G\+A\+Image\+Data@{org\+::newdawn\+::slick\+::opengl\+::\+T\+G\+A\+Image\+Data}!load\+Image@{load\+Image}}
+\index{load\+Image@{load\+Image}!org\+::newdawn\+::slick\+::opengl\+::\+T\+G\+A\+Image\+Data@{org\+::newdawn\+::slick\+::opengl\+::\+T\+G\+A\+Image\+Data}}
+\subsubsection{\texorpdfstring{load\+Image()}{loadImage()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily Byte\+Buffer org.\+newdawn.\+slick.\+opengl.\+T\+G\+A\+Image\+Data.\+load\+Image (\begin{DoxyParamCaption}\item[{Input\+Stream}]{fis }\end{DoxyParamCaption}) throws I\+O\+Exception\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1opengl_1_1_loadable_image_data_a640021b955dde7deeeeabb5ac3738d2b}{org.\+newdawn.\+slick.\+opengl.\+Loadable\+Image\+Data\+::load\+Image}}(java.\+io.\+Input\+Stream) 
+\end{DoxySeeAlso}
+
+
+Implements \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1opengl_1_1_loadable_image_data_a640021b955dde7deeeeabb5ac3738d2b}{org.\+newdawn.\+slick.\+opengl.\+Loadable\+Image\+Data}}.
+
+
+\begin{DoxyCode}
+89                                                                     \{
+90         \textcolor{keywordflow}{return} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_t_g_a_image_data_a9ac907fe85767aad15fa1c05af8fb093}{loadImage}}(fis,\textcolor{keyword}{true}, null);
+91     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_t_g_a_image_data_afeb723edb941a99d15296d28b4404c31}\label{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_t_g_a_image_data_afeb723edb941a99d15296d28b4404c31}} 
+\index{org\+::newdawn\+::slick\+::opengl\+::\+T\+G\+A\+Image\+Data@{org\+::newdawn\+::slick\+::opengl\+::\+T\+G\+A\+Image\+Data}!load\+Image@{load\+Image}}
+\index{load\+Image@{load\+Image}!org\+::newdawn\+::slick\+::opengl\+::\+T\+G\+A\+Image\+Data@{org\+::newdawn\+::slick\+::opengl\+::\+T\+G\+A\+Image\+Data}}
+\subsubsection{\texorpdfstring{load\+Image()}{loadImage()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily Byte\+Buffer org.\+newdawn.\+slick.\+opengl.\+T\+G\+A\+Image\+Data.\+load\+Image (\begin{DoxyParamCaption}\item[{Input\+Stream}]{fis,  }\item[{boolean}]{flipped,  }\item[{int \mbox{[}$\,$\mbox{]}}]{transparent }\end{DoxyParamCaption}) throws I\+O\+Exception\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1opengl_1_1_loadable_image_data_a640021b955dde7deeeeabb5ac3738d2b}{org.\+newdawn.\+slick.\+opengl.\+Loadable\+Image\+Data\+::load\+Image}}(java.\+io.\+Input\+Stream, boolean, int\mbox{[}\mbox{]}) 
+\end{DoxySeeAlso}
+
+
+Implements \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1opengl_1_1_loadable_image_data_a448a235d1058316349f513a69f593d9b}{org.\+newdawn.\+slick.\+opengl.\+Loadable\+Image\+Data}}.
+
+
+\begin{DoxyCode}
+96                                                                                                         \{
+97         \textcolor{keywordflow}{return} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_t_g_a_image_data_a9ac907fe85767aad15fa1c05af8fb093}{loadImage}}(fis, flipped, \textcolor{keyword}{false}, transparent);
+98     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_t_g_a_image_data_a45d077de182a890729f2e9cf9e408520}\label{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_t_g_a_image_data_a45d077de182a890729f2e9cf9e408520}} 
+\index{org\+::newdawn\+::slick\+::opengl\+::\+T\+G\+A\+Image\+Data@{org\+::newdawn\+::slick\+::opengl\+::\+T\+G\+A\+Image\+Data}!load\+Image@{load\+Image}}
+\index{load\+Image@{load\+Image}!org\+::newdawn\+::slick\+::opengl\+::\+T\+G\+A\+Image\+Data@{org\+::newdawn\+::slick\+::opengl\+::\+T\+G\+A\+Image\+Data}}
+\subsubsection{\texorpdfstring{load\+Image()}{loadImage()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily Byte\+Buffer org.\+newdawn.\+slick.\+opengl.\+T\+G\+A\+Image\+Data.\+load\+Image (\begin{DoxyParamCaption}\item[{Input\+Stream}]{fis,  }\item[{boolean}]{flipped,  }\item[{boolean}]{force\+Alpha,  }\item[{int \mbox{[}$\,$\mbox{]}}]{transparent }\end{DoxyParamCaption}) throws I\+O\+Exception\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1opengl_1_1_loadable_image_data_a640021b955dde7deeeeabb5ac3738d2b}{org.\+newdawn.\+slick.\+opengl.\+Loadable\+Image\+Data\+::load\+Image}}(java.\+io.\+Input\+Stream, boolean, boolean, int\mbox{[}\mbox{]}) 
+\end{DoxySeeAlso}
+
+
+Implements \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1opengl_1_1_loadable_image_data_ae1be205b86c674550235e9f357adadf5}{org.\+newdawn.\+slick.\+opengl.\+Loadable\+Image\+Data}}.
+
+
+\begin{DoxyCode}
+103                                                                                                            
+                       \{
+104         \textcolor{keywordflow}{if} (transparent != null) \{ 
+105             forceAlpha = \textcolor{keyword}{true};
+106         \}
+107         byte red = 0;
+108         byte green = 0;
+109         byte blue = 0;
+110         byte alpha = 0;
+111         
+112         BufferedInputStream bis = \textcolor{keyword}{new} BufferedInputStream(fis, 100000);
+113         DataInputStream dis = \textcolor{keyword}{new} DataInputStream(bis);
+114         
+115         \textcolor{comment}{// Read in the Header}
+116         \textcolor{keywordtype}{short} idLength = (short) dis.read();
+117         \textcolor{keywordtype}{short} colorMapType = (short) dis.read();
+118         \textcolor{keywordtype}{short} imageType = (short) dis.read();
+119         \textcolor{keywordtype}{short} cMapStart = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_t_g_a_image_data_a17a25f35cb763e4698de412c2ef34493}{flipEndian}}(dis.readShort());
+120         \textcolor{keywordtype}{short} cMapLength = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_t_g_a_image_data_a17a25f35cb763e4698de412c2ef34493}{flipEndian}}(dis.readShort());
+121         \textcolor{keywordtype}{short} cMapDepth = (short) dis.read();
+122         \textcolor{keywordtype}{short} xOffset = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_t_g_a_image_data_a17a25f35cb763e4698de412c2ef34493}{flipEndian}}(dis.readShort());
+123         \textcolor{keywordtype}{short} yOffset = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_t_g_a_image_data_a17a25f35cb763e4698de412c2ef34493}{flipEndian}}(dis.readShort());
+124         
+125         \textcolor{keywordflow}{if} (imageType != 2) \{
+126             \textcolor{keywordflow}{throw} \textcolor{keyword}{new} IOException(\textcolor{stringliteral}{"Slick only supports uncompressed RGB(A) TGA images"});
+127         \}
+128         
+129         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_t_g_a_image_data_a76539de4fa236043b0f8b31b0ce7c1cf}{width}} = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_t_g_a_image_data_a17a25f35cb763e4698de412c2ef34493}{flipEndian}}(dis.readShort());
+130         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_t_g_a_image_data_ae129d18b6db032f7ef0ab8ebc795843b}{height}} = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_t_g_a_image_data_a17a25f35cb763e4698de412c2ef34493}{flipEndian}}(dis.readShort());
+131         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_t_g_a_image_data_aa9222304ea8eae0cae78ff6ff0a7f8f2}{pixelDepth}} = (short) dis.read();
+132         \textcolor{keywordflow}{if} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_t_g_a_image_data_aa9222304ea8eae0cae78ff6ff0a7f8f2}{pixelDepth}} == 32) \{
+133             forceAlpha = \textcolor{keyword}{false};
+134         \}
+135         
+136         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_t_g_a_image_data_a1597fcbecdd0d2875a3950ebe60b2582}{texWidth}} = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_t_g_a_image_data_ab9aff2ca0cec0b8ff114074236cdded1}{get2Fold}}(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_t_g_a_image_data_a76539de4fa236043b0f8b31b0ce7c1cf}{width}});
+137         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_t_g_a_image_data_ab5bb366dc9a1fb7d18b96e732b8a74d5}{texHeight}} = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_t_g_a_image_data_ab9aff2ca0cec0b8ff114074236cdded1}{get2Fold}}(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_t_g_a_image_data_ae129d18b6db032f7ef0ab8ebc795843b}{height}});
+138         
+139         \textcolor{keywordtype}{short} imageDescriptor = (short) dis.read();
+140         \textcolor{keywordflow}{if} ((imageDescriptor & 0x0020) == 0) \{
+141            flipped = !flipped;
+142         \} 
+143         
+144         \textcolor{comment}{// Skip image ID}
+145         \textcolor{keywordflow}{if} (idLength > 0) \{
+146             bis.skip(idLength);
+147         \}
+148         
+149         byte[] rawData = null;
+150         \textcolor{keywordflow}{if} ((\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_t_g_a_image_data_aa9222304ea8eae0cae78ff6ff0a7f8f2}{pixelDepth}} == 32) || (forceAlpha)) \{
+151             \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_t_g_a_image_data_aa9222304ea8eae0cae78ff6ff0a7f8f2}{pixelDepth}} = 32;
+152             rawData = \textcolor{keyword}{new} byte[\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_t_g_a_image_data_a1597fcbecdd0d2875a3950ebe60b2582}{texWidth}} * \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_t_g_a_image_data_ab5bb366dc9a1fb7d18b96e732b8a74d5}{texHeight}} * 4];
+153         \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_t_g_a_image_data_aa9222304ea8eae0cae78ff6ff0a7f8f2}{pixelDepth}} == 24) \{
+154             rawData = \textcolor{keyword}{new} byte[\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_t_g_a_image_data_a1597fcbecdd0d2875a3950ebe60b2582}{texWidth}} * \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_t_g_a_image_data_ab5bb366dc9a1fb7d18b96e732b8a74d5}{texHeight}} * 3];
+155         \} \textcolor{keywordflow}{else} \{
+156             \textcolor{keywordflow}{throw} \textcolor{keyword}{new} RuntimeException(\textcolor{stringliteral}{"Only 24 and 32 bit TGAs are supported"});
+157         \}
+158         
+159         \textcolor{keywordflow}{if} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_t_g_a_image_data_aa9222304ea8eae0cae78ff6ff0a7f8f2}{pixelDepth}} == 24) \{
+160             \textcolor{keywordflow}{if} (flipped) \{
+161                 \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_t_g_a_image_data_ae129d18b6db032f7ef0ab8ebc795843b}{height}}-1; i >= 0; i--) \{
+162                     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} j = 0; j < \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_t_g_a_image_data_a76539de4fa236043b0f8b31b0ce7c1cf}{width}}; j++) \{
+163                         blue = dis.readByte();
+164                         green = dis.readByte();
+165                         red = dis.readByte();
+166                         
+167                         \textcolor{keywordtype}{int} ofs = ((j + (i * \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_t_g_a_image_data_a1597fcbecdd0d2875a3950ebe60b2582}{texWidth}})) * 3);
+168                         rawData[ofs] = red;
+169                         rawData[ofs + 1] = green;
+170                         rawData[ofs + 2] = blue;
+171                     \}
+172                 \}
+173             \} \textcolor{keywordflow}{else} \{
+174                 \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_t_g_a_image_data_ae129d18b6db032f7ef0ab8ebc795843b}{height}}; i++) \{
+175                     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} j = 0; j < \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_t_g_a_image_data_a76539de4fa236043b0f8b31b0ce7c1cf}{width}}; j++) \{
+176                         blue = dis.readByte();
+177                         green = dis.readByte();
+178                         red = dis.readByte();
+179                         
+180                         \textcolor{keywordtype}{int} ofs = ((j + (i * \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_t_g_a_image_data_a1597fcbecdd0d2875a3950ebe60b2582}{texWidth}})) * 3);
+181                         rawData[ofs] = red;
+182                         rawData[ofs + 1] = green;
+183                         rawData[ofs + 2] = blue;
+184                     \}
+185                 \}
+186             \}
+187         \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_t_g_a_image_data_aa9222304ea8eae0cae78ff6ff0a7f8f2}{pixelDepth}} == 32) \{
+188             \textcolor{keywordflow}{if} (flipped) \{
+189                 \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_t_g_a_image_data_ae129d18b6db032f7ef0ab8ebc795843b}{height}}-1; i >= 0; i--) \{
+190                     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} j = 0; j < \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_t_g_a_image_data_a76539de4fa236043b0f8b31b0ce7c1cf}{width}}; j++) \{
+191                         blue = dis.readByte();
+192                         green = dis.readByte();
+193                         red = dis.readByte();
+194                         \textcolor{keywordflow}{if} (forceAlpha) \{
+195                             alpha = (byte) 255;
+196                         \} \textcolor{keywordflow}{else} \{
+197                             alpha = dis.readByte();
+198                         \}
+199                         
+200                         \textcolor{keywordtype}{int} ofs = ((j + (i * \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_t_g_a_image_data_a1597fcbecdd0d2875a3950ebe60b2582}{texWidth}})) * 4);
+201                         
+202                         rawData[ofs] = red;
+203                         rawData[ofs + 1] = green;
+204                         rawData[ofs + 2] = blue;
+205                         rawData[ofs + 3] = alpha;
+206                         
+207                         \textcolor{keywordflow}{if} (alpha == 0) \{
+208                             rawData[ofs + 2] = (byte) 0;
+209                             rawData[ofs + 1] = (byte) 0;
+210                             rawData[ofs] = (byte) 0;
+211                         \}
+212                     \}
+213                 \}
+214             \} \textcolor{keywordflow}{else} \{
+215                 \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_t_g_a_image_data_ae129d18b6db032f7ef0ab8ebc795843b}{height}}; i++) \{
+216                     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} j = 0; j < \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_t_g_a_image_data_a76539de4fa236043b0f8b31b0ce7c1cf}{width}}; j++) \{
+217                         blue = dis.readByte();
+218                         green = dis.readByte();
+219                         red = dis.readByte();
+220                         \textcolor{keywordflow}{if} (forceAlpha) \{
+221                             alpha = (byte) 255;
+222                         \} \textcolor{keywordflow}{else} \{
+223                             alpha = dis.readByte();
+224                         \}
+225                         
+226                         \textcolor{keywordtype}{int} ofs = ((j + (i * \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_t_g_a_image_data_a1597fcbecdd0d2875a3950ebe60b2582}{texWidth}})) * 4);
+227                         
+228                         \textcolor{keywordflow}{if} (ByteOrder.nativeOrder() == ByteOrder.BIG\_ENDIAN) \{
+229                             rawData[ofs] = red;
+230                             rawData[ofs + 1] = green;
+231                             rawData[ofs + 2] = blue;
+232                             rawData[ofs + 3] = alpha;
+233                         \} \textcolor{keywordflow}{else} \{
+234                             rawData[ofs] = red;
+235                             rawData[ofs + 1] = green;
+236                             rawData[ofs + 2] = blue;
+237                             rawData[ofs + 3] = alpha;
+238                         \}
+239                         
+240                         \textcolor{keywordflow}{if} (alpha == 0) \{
+241                             rawData[ofs + 2] = 0;
+242                             rawData[ofs + 1] = 0;
+243                             rawData[ofs] = 0;
+244                         \}
+245                     \}
+246                 \}
+247             \}
+248         \}
+249         fis.close();
+250         
+251         \textcolor{keywordflow}{if} (transparent != null) \{
+252             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i=0;i<rawData.length;i+=4) \{
+253                 \textcolor{keywordtype}{boolean} match = \textcolor{keyword}{true};
+254                 \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} c=0;c<3;c++) \{
+255                     \textcolor{keywordflow}{if} (rawData[i+c] != transparent[c]) \{
+256                         match = \textcolor{keyword}{false};
+257                     \}
+258                 \}
+259       
+260                 \textcolor{keywordflow}{if} (match) \{
+261                     rawData[i+3] = 0;
+262                 \}
+263             \}
+264         \}
+265         
+266         \textcolor{comment}{// Get a pointer to the image memory}
+267         ByteBuffer scratch = BufferUtils.createByteBuffer(rawData.length);
+268         scratch.put(rawData);
+269         
+270         \textcolor{keywordtype}{int} perPixel = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_t_g_a_image_data_aa9222304ea8eae0cae78ff6ff0a7f8f2}{pixelDepth}} / 8;
+271         \textcolor{keywordflow}{if} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_t_g_a_image_data_ae129d18b6db032f7ef0ab8ebc795843b}{height}} < \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_t_g_a_image_data_ab5bb366dc9a1fb7d18b96e732b8a74d5}{texHeight}}-1) \{
+272             \textcolor{keywordtype}{int} topOffset = (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_t_g_a_image_data_ab5bb366dc9a1fb7d18b96e732b8a74d5}{texHeight}}-1) * (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_t_g_a_image_data_a1597fcbecdd0d2875a3950ebe60b2582}{texWidth}}*perPixel);
+273             \textcolor{keywordtype}{int} bottomOffset = (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_t_g_a_image_data_ae129d18b6db032f7ef0ab8ebc795843b}{height}}-1) * (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_t_g_a_image_data_a1597fcbecdd0d2875a3950ebe60b2582}{texWidth}}*perPixel);
+274             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} x=0;x<\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_t_g_a_image_data_a1597fcbecdd0d2875a3950ebe60b2582}{texWidth}}*perPixel;x++) \{
+275                 scratch.put(topOffset+x, scratch.get(x));
+276                 scratch.put(bottomOffset+(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_t_g_a_image_data_a1597fcbecdd0d2875a3950ebe60b2582}{texWidth}}*perPixel)+x, scratch.get((
+      \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_t_g_a_image_data_a1597fcbecdd0d2875a3950ebe60b2582}{texWidth}}*perPixel)+x));
+277             \}
+278         \}
+279         \textcolor{keywordflow}{if} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_t_g_a_image_data_a76539de4fa236043b0f8b31b0ce7c1cf}{width}} < \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_t_g_a_image_data_a1597fcbecdd0d2875a3950ebe60b2582}{texWidth}}-1) \{
+280             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} y=0;y<\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_t_g_a_image_data_ab5bb366dc9a1fb7d18b96e732b8a74d5}{texHeight}};y++) \{
+281                 \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i=0;i<perPixel;i++) \{
+282                     scratch.put(((y+1)*(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_t_g_a_image_data_a1597fcbecdd0d2875a3950ebe60b2582}{texWidth}}*perPixel))-perPixel+i, scratch.get(y*(
+      \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_t_g_a_image_data_a1597fcbecdd0d2875a3950ebe60b2582}{texWidth}}*perPixel)+i));
+283                     scratch.put((y*(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_t_g_a_image_data_a1597fcbecdd0d2875a3950ebe60b2582}{texWidth}}*perPixel))+(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_t_g_a_image_data_a76539de4fa236043b0f8b31b0ce7c1cf}{width}}*perPixel)+i, scratch.get((y*(
+      \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_t_g_a_image_data_a1597fcbecdd0d2875a3950ebe60b2582}{texWidth}}*perPixel))+((\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_t_g_a_image_data_a76539de4fa236043b0f8b31b0ce7c1cf}{width}}-1)*perPixel)+i));
+284                 \}
+285             \}
+286         \}
+287 
+288         scratch.flip();
+289 
+290         \textcolor{keywordflow}{return} scratch;
+291     \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_t_g_a_image_data_ae129d18b6db032f7ef0ab8ebc795843b}\label{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_t_g_a_image_data_ae129d18b6db032f7ef0ab8ebc795843b}} 
+\index{org\+::newdawn\+::slick\+::opengl\+::\+T\+G\+A\+Image\+Data@{org\+::newdawn\+::slick\+::opengl\+::\+T\+G\+A\+Image\+Data}!height@{height}}
+\index{height@{height}!org\+::newdawn\+::slick\+::opengl\+::\+T\+G\+A\+Image\+Data@{org\+::newdawn\+::slick\+::opengl\+::\+T\+G\+A\+Image\+Data}}
+\subsubsection{\texorpdfstring{height}{height}}
+{\footnotesize\ttfamily int org.\+newdawn.\+slick.\+opengl.\+T\+G\+A\+Image\+Data.\+height\hspace{0.3cm}{\ttfamily [private]}}
+
+The height of the T\+GA image \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_t_g_a_image_data_aa9222304ea8eae0cae78ff6ff0a7f8f2}\label{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_t_g_a_image_data_aa9222304ea8eae0cae78ff6ff0a7f8f2}} 
+\index{org\+::newdawn\+::slick\+::opengl\+::\+T\+G\+A\+Image\+Data@{org\+::newdawn\+::slick\+::opengl\+::\+T\+G\+A\+Image\+Data}!pixel\+Depth@{pixel\+Depth}}
+\index{pixel\+Depth@{pixel\+Depth}!org\+::newdawn\+::slick\+::opengl\+::\+T\+G\+A\+Image\+Data@{org\+::newdawn\+::slick\+::opengl\+::\+T\+G\+A\+Image\+Data}}
+\subsubsection{\texorpdfstring{pixel\+Depth}{pixelDepth}}
+{\footnotesize\ttfamily short org.\+newdawn.\+slick.\+opengl.\+T\+G\+A\+Image\+Data.\+pixel\+Depth\hspace{0.3cm}{\ttfamily [private]}}
+
+The bit depth of the image \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_t_g_a_image_data_ab5bb366dc9a1fb7d18b96e732b8a74d5}\label{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_t_g_a_image_data_ab5bb366dc9a1fb7d18b96e732b8a74d5}} 
+\index{org\+::newdawn\+::slick\+::opengl\+::\+T\+G\+A\+Image\+Data@{org\+::newdawn\+::slick\+::opengl\+::\+T\+G\+A\+Image\+Data}!tex\+Height@{tex\+Height}}
+\index{tex\+Height@{tex\+Height}!org\+::newdawn\+::slick\+::opengl\+::\+T\+G\+A\+Image\+Data@{org\+::newdawn\+::slick\+::opengl\+::\+T\+G\+A\+Image\+Data}}
+\subsubsection{\texorpdfstring{tex\+Height}{texHeight}}
+{\footnotesize\ttfamily int org.\+newdawn.\+slick.\+opengl.\+T\+G\+A\+Image\+Data.\+tex\+Height\hspace{0.3cm}{\ttfamily [private]}}
+
+The height of the texture that needs to be generated \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_t_g_a_image_data_a1597fcbecdd0d2875a3950ebe60b2582}\label{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_t_g_a_image_data_a1597fcbecdd0d2875a3950ebe60b2582}} 
+\index{org\+::newdawn\+::slick\+::opengl\+::\+T\+G\+A\+Image\+Data@{org\+::newdawn\+::slick\+::opengl\+::\+T\+G\+A\+Image\+Data}!tex\+Width@{tex\+Width}}
+\index{tex\+Width@{tex\+Width}!org\+::newdawn\+::slick\+::opengl\+::\+T\+G\+A\+Image\+Data@{org\+::newdawn\+::slick\+::opengl\+::\+T\+G\+A\+Image\+Data}}
+\subsubsection{\texorpdfstring{tex\+Width}{texWidth}}
+{\footnotesize\ttfamily int org.\+newdawn.\+slick.\+opengl.\+T\+G\+A\+Image\+Data.\+tex\+Width\hspace{0.3cm}{\ttfamily [private]}}
+
+The width of the texture that needs to be generated \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_t_g_a_image_data_a76539de4fa236043b0f8b31b0ce7c1cf}\label{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_t_g_a_image_data_a76539de4fa236043b0f8b31b0ce7c1cf}} 
+\index{org\+::newdawn\+::slick\+::opengl\+::\+T\+G\+A\+Image\+Data@{org\+::newdawn\+::slick\+::opengl\+::\+T\+G\+A\+Image\+Data}!width@{width}}
+\index{width@{width}!org\+::newdawn\+::slick\+::opengl\+::\+T\+G\+A\+Image\+Data@{org\+::newdawn\+::slick\+::opengl\+::\+T\+G\+A\+Image\+Data}}
+\subsubsection{\texorpdfstring{width}{width}}
+{\footnotesize\ttfamily int org.\+newdawn.\+slick.\+opengl.\+T\+G\+A\+Image\+Data.\+width\hspace{0.3cm}{\ttfamily [private]}}
+
+The width of the T\+GA image 

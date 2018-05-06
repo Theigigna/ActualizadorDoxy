@@ -1,0 +1,128 @@
+\hypertarget{classorg_1_1newdawn_1_1slick_1_1tests_1_1xml_1_1_item_container}{}\section{org.\+newdawn.\+slick.\+tests.\+xml.\+Item\+Container Class Reference}
+\label{classorg_1_1newdawn_1_1slick_1_1tests_1_1xml_1_1_item_container}\index{org.\+newdawn.\+slick.\+tests.\+xml.\+Item\+Container@{org.\+newdawn.\+slick.\+tests.\+xml.\+Item\+Container}}
+Inheritance diagram for org.\+newdawn.\+slick.\+tests.\+xml.\+Item\+Container\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classorg_1_1newdawn_1_1slick_1_1tests_1_1xml_1_1_item_container}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1xml_1_1_item_container_a4c88e3641269fe73a03a477ccb18fb68}{dump}} (String prefix)
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1xml_1_1_item_container_a1ae406b3084fa19e014a43045cdc1d5c}{add}} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1xml_1_1_item}{Item}} item)
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1xml_1_1_item_container_a3c73d9638d0579da23af1dd37b32008e}{set\+Name}} (String \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1xml_1_1_item_a5bbf1293e61bcd4d8c543caae4e3c967}{name}})
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1xml_1_1_item_container_ae791d328860ed0ff71bfbc42cdb91705}{set\+Condition}} (int \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1xml_1_1_item_a17a71d3cab0191fbd90b875a6483efea}{condition}})
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Array\+List \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1xml_1_1_item_container_a98670bb826569011f0e9d2d1ea088e83}{items}} = new Array\+List()
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+A test example of some object data that can be configured via X\+ML
+
+\begin{DoxyAuthor}{Author}
+kevin 
+\end{DoxyAuthor}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tests_1_1xml_1_1_item_container_a1ae406b3084fa19e014a43045cdc1d5c}\label{classorg_1_1newdawn_1_1slick_1_1tests_1_1xml_1_1_item_container_a1ae406b3084fa19e014a43045cdc1d5c}} 
+\index{org\+::newdawn\+::slick\+::tests\+::xml\+::\+Item\+Container@{org\+::newdawn\+::slick\+::tests\+::xml\+::\+Item\+Container}!add@{add}}
+\index{add@{add}!org\+::newdawn\+::slick\+::tests\+::xml\+::\+Item\+Container@{org\+::newdawn\+::slick\+::tests\+::xml\+::\+Item\+Container}}
+\subsubsection{\texorpdfstring{add()}{add()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+tests.\+xml.\+Item\+Container.\+add (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1xml_1_1_item}{Item}}}]{item }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+Called by X\+ML parser to add a configured item to the entity
+
+
+\begin{DoxyParams}{Parameters}
+{\em item} & The item to be added \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+19                                 \{
+20         \mbox{\hyperlink{namespaceitems}{items}}.add(item);
+21     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tests_1_1xml_1_1_item_container_a4c88e3641269fe73a03a477ccb18fb68}\label{classorg_1_1newdawn_1_1slick_1_1tests_1_1xml_1_1_item_container_a4c88e3641269fe73a03a477ccb18fb68}} 
+\index{org\+::newdawn\+::slick\+::tests\+::xml\+::\+Item\+Container@{org\+::newdawn\+::slick\+::tests\+::xml\+::\+Item\+Container}!dump@{dump}}
+\index{dump@{dump}!org\+::newdawn\+::slick\+::tests\+::xml\+::\+Item\+Container@{org\+::newdawn\+::slick\+::tests\+::xml\+::\+Item\+Container}}
+\subsubsection{\texorpdfstring{dump()}{dump()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+tests.\+xml.\+Item\+Container.\+dump (\begin{DoxyParamCaption}\item[{String}]{prefix }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Dump this object to sysout
+
+
+\begin{DoxyParams}{Parameters}
+{\em prefix} & The prefix to apply to all lines \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+50                                     \{
+51         System.out.println(prefix+\textcolor{stringliteral}{"Item Container "}+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1xml_1_1_item_a5bbf1293e61bcd4d8c543caae4e3c967}{name}}+\textcolor{stringliteral}{","}+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1xml_1_1_item_a17a71d3cab0191fbd90b875a6483efea}{condition}});
+52         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i=0;i<\mbox{\hyperlink{namespaceitems}{items}}.size();i++) \{
+53             ((Item) \mbox{\hyperlink{namespaceitems}{items}}.get(i)).\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1xml_1_1_item_container_a4c88e3641269fe73a03a477ccb18fb68}{dump}}(prefix+\textcolor{stringliteral}{"\(\backslash\)t"});
+54         \}
+55     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tests_1_1xml_1_1_item_container_ae791d328860ed0ff71bfbc42cdb91705}\label{classorg_1_1newdawn_1_1slick_1_1tests_1_1xml_1_1_item_container_ae791d328860ed0ff71bfbc42cdb91705}} 
+\index{org\+::newdawn\+::slick\+::tests\+::xml\+::\+Item\+Container@{org\+::newdawn\+::slick\+::tests\+::xml\+::\+Item\+Container}!set\+Condition@{set\+Condition}}
+\index{set\+Condition@{set\+Condition}!org\+::newdawn\+::slick\+::tests\+::xml\+::\+Item\+Container@{org\+::newdawn\+::slick\+::tests\+::xml\+::\+Item\+Container}}
+\subsubsection{\texorpdfstring{set\+Condition()}{setCondition()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+tests.\+xml.\+Item\+Container.\+set\+Condition (\begin{DoxyParamCaption}\item[{int}]{condition }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+Called by the X\+ML to set the condition attribute. Note that set methods can be used as well as direct field injection. In this case the setter {\itshape has} to be used to access the protected field from the super class
+
+
+\begin{DoxyParams}{Parameters}
+{\em condition} & The value to set \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+41                                              \{
+42         this.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1xml_1_1_item_a17a71d3cab0191fbd90b875a6483efea}{condition}} = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1xml_1_1_item_a17a71d3cab0191fbd90b875a6483efea}{condition}};
+43     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tests_1_1xml_1_1_item_container_a3c73d9638d0579da23af1dd37b32008e}\label{classorg_1_1newdawn_1_1slick_1_1tests_1_1xml_1_1_item_container_a3c73d9638d0579da23af1dd37b32008e}} 
+\index{org\+::newdawn\+::slick\+::tests\+::xml\+::\+Item\+Container@{org\+::newdawn\+::slick\+::tests\+::xml\+::\+Item\+Container}!set\+Name@{set\+Name}}
+\index{set\+Name@{set\+Name}!org\+::newdawn\+::slick\+::tests\+::xml\+::\+Item\+Container@{org\+::newdawn\+::slick\+::tests\+::xml\+::\+Item\+Container}}
+\subsubsection{\texorpdfstring{set\+Name()}{setName()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+tests.\+xml.\+Item\+Container.\+set\+Name (\begin{DoxyParamCaption}\item[{String}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+Called by the X\+ML to set the name attribute. Note that set methods can be used as well as direct field injection. In this case the setter {\itshape has} to be used to access the protected field from the super class
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The value to set \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+30                                       \{
+31         this.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1xml_1_1_item_a5bbf1293e61bcd4d8c543caae4e3c967}{name}} = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1xml_1_1_item_a5bbf1293e61bcd4d8c543caae4e3c967}{name}};
+32     \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tests_1_1xml_1_1_item_container_a98670bb826569011f0e9d2d1ea088e83}\label{classorg_1_1newdawn_1_1slick_1_1tests_1_1xml_1_1_item_container_a98670bb826569011f0e9d2d1ea088e83}} 
+\index{org\+::newdawn\+::slick\+::tests\+::xml\+::\+Item\+Container@{org\+::newdawn\+::slick\+::tests\+::xml\+::\+Item\+Container}!items@{items}}
+\index{items@{items}!org\+::newdawn\+::slick\+::tests\+::xml\+::\+Item\+Container@{org\+::newdawn\+::slick\+::tests\+::xml\+::\+Item\+Container}}
+\subsubsection{\texorpdfstring{items}{items}}
+{\footnotesize\ttfamily Array\+List org.\+newdawn.\+slick.\+tests.\+xml.\+Item\+Container.\+items = new Array\+List()\hspace{0.3cm}{\ttfamily [private]}}
+
+The items held in this container 

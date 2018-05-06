@@ -1,0 +1,85 @@
+\hypertarget{classconcurrency_1_1diners_1_1_fork}{}\section{concurrency.\+diners.\+Fork Class Reference}
+\label{classconcurrency_1_1diners_1_1_fork}\index{concurrency.\+diners.\+Fork@{concurrency.\+diners.\+Fork}}
+\subsection*{Package Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classconcurrency_1_1diners_1_1_fork_ad81f75b53a9b0302b6da551cc356adf5}{Fork}} (\mbox{\hyperlink{classconcurrency_1_1diners_1_1_phil_canvas}{Phil\+Canvas}} disp, int id)
+\item 
+synchronized void \mbox{\hyperlink{classconcurrency_1_1diners_1_1_fork_acff549ca1ca1540fa092ac44692624b5}{put}} ()
+\item 
+synchronized void \mbox{\hyperlink{classconcurrency_1_1diners_1_1_fork_abf1b23ca61bdc54fce3810309e72b876}{get}} ()  throws java.\+lang.\+Interrupted\+Exception 
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+boolean \mbox{\hyperlink{classconcurrency_1_1diners_1_1_fork_a875b343f95f6e3f07b2f2f5a5b83efb8}{taken}} =false
+\item 
+\mbox{\hyperlink{classconcurrency_1_1diners_1_1_phil_canvas}{Phil\+Canvas}} \mbox{\hyperlink{classconcurrency_1_1diners_1_1_fork_a7cb7b2dbd4bc84923557b292b10ac0a9}{display}}
+\item 
+int \mbox{\hyperlink{classconcurrency_1_1diners_1_1_fork_a27ae9a29dc069079538565c74931a0ef}{identity}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classconcurrency_1_1diners_1_1_fork_ad81f75b53a9b0302b6da551cc356adf5}\label{classconcurrency_1_1diners_1_1_fork_ad81f75b53a9b0302b6da551cc356adf5}} 
+\index{concurrency\+::diners\+::\+Fork@{concurrency\+::diners\+::\+Fork}!Fork@{Fork}}
+\index{Fork@{Fork}!concurrency\+::diners\+::\+Fork@{concurrency\+::diners\+::\+Fork}}
+\subsubsection{\texorpdfstring{Fork()}{Fork()}}
+{\footnotesize\ttfamily concurrency.\+diners.\+Fork.\+Fork (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classconcurrency_1_1diners_1_1_phil_canvas}{Phil\+Canvas}}}]{disp,  }\item[{int}]{id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [package]}}
+
+
+\begin{DoxyCode}
+12     \{ \mbox{\hyperlink{classconcurrency_1_1diners_1_1_fork_a7cb7b2dbd4bc84923557b292b10ac0a9}{display}} = disp; \mbox{\hyperlink{classconcurrency_1_1diners_1_1_fork_a27ae9a29dc069079538565c74931a0ef}{identity}} = id;\}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classconcurrency_1_1diners_1_1_fork_abf1b23ca61bdc54fce3810309e72b876}\label{classconcurrency_1_1diners_1_1_fork_abf1b23ca61bdc54fce3810309e72b876}} 
+\index{concurrency\+::diners\+::\+Fork@{concurrency\+::diners\+::\+Fork}!get@{get}}
+\index{get@{get}!concurrency\+::diners\+::\+Fork@{concurrency\+::diners\+::\+Fork}}
+\subsubsection{\texorpdfstring{get()}{get()}}
+{\footnotesize\ttfamily synchronized void concurrency.\+diners.\+Fork.\+get (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws java.\+lang.\+Interrupted\+Exception\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [package]}}
+
+
+\begin{DoxyCode}
+21                                            \{
+22     \textcolor{keywordflow}{while} (\mbox{\hyperlink{classconcurrency_1_1diners_1_1_fork_a875b343f95f6e3f07b2f2f5a5b83efb8}{taken}}) wait();
+23     \mbox{\hyperlink{classconcurrency_1_1diners_1_1_fork_a875b343f95f6e3f07b2f2f5a5b83efb8}{taken}}=\textcolor{keyword}{true};
+24     \mbox{\hyperlink{classconcurrency_1_1diners_1_1_fork_a7cb7b2dbd4bc84923557b292b10ac0a9}{display}}.\mbox{\hyperlink{classconcurrency_1_1diners_1_1_phil_canvas_a985316d908f267ebfe83d09c90e55e7a}{setFork}}(\mbox{\hyperlink{classconcurrency_1_1diners_1_1_fork_a27ae9a29dc069079538565c74931a0ef}{identity}},\mbox{\hyperlink{classconcurrency_1_1diners_1_1_fork_a875b343f95f6e3f07b2f2f5a5b83efb8}{taken}});
+25   \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classconcurrency_1_1diners_1_1_fork_acff549ca1ca1540fa092ac44692624b5}\label{classconcurrency_1_1diners_1_1_fork_acff549ca1ca1540fa092ac44692624b5}} 
+\index{concurrency\+::diners\+::\+Fork@{concurrency\+::diners\+::\+Fork}!put@{put}}
+\index{put@{put}!concurrency\+::diners\+::\+Fork@{concurrency\+::diners\+::\+Fork}}
+\subsubsection{\texorpdfstring{put()}{put()}}
+{\footnotesize\ttfamily synchronized void concurrency.\+diners.\+Fork.\+put (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [package]}}
+
+
+\begin{DoxyCode}
+14                           \{
+15     \mbox{\hyperlink{classconcurrency_1_1diners_1_1_fork_a875b343f95f6e3f07b2f2f5a5b83efb8}{taken}}=\textcolor{keyword}{false};
+16     \mbox{\hyperlink{classconcurrency_1_1diners_1_1_fork_a7cb7b2dbd4bc84923557b292b10ac0a9}{display}}.\mbox{\hyperlink{classconcurrency_1_1diners_1_1_phil_canvas_a985316d908f267ebfe83d09c90e55e7a}{setFork}}(\mbox{\hyperlink{classconcurrency_1_1diners_1_1_fork_a27ae9a29dc069079538565c74931a0ef}{identity}},\mbox{\hyperlink{classconcurrency_1_1diners_1_1_fork_a875b343f95f6e3f07b2f2f5a5b83efb8}{taken}});
+17     notify();
+18   \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classconcurrency_1_1diners_1_1_fork_a7cb7b2dbd4bc84923557b292b10ac0a9}\label{classconcurrency_1_1diners_1_1_fork_a7cb7b2dbd4bc84923557b292b10ac0a9}} 
+\index{concurrency\+::diners\+::\+Fork@{concurrency\+::diners\+::\+Fork}!display@{display}}
+\index{display@{display}!concurrency\+::diners\+::\+Fork@{concurrency\+::diners\+::\+Fork}}
+\subsubsection{\texorpdfstring{display}{display}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classconcurrency_1_1diners_1_1_phil_canvas}{Phil\+Canvas}} concurrency.\+diners.\+Fork.\+display\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classconcurrency_1_1diners_1_1_fork_a27ae9a29dc069079538565c74931a0ef}\label{classconcurrency_1_1diners_1_1_fork_a27ae9a29dc069079538565c74931a0ef}} 
+\index{concurrency\+::diners\+::\+Fork@{concurrency\+::diners\+::\+Fork}!identity@{identity}}
+\index{identity@{identity}!concurrency\+::diners\+::\+Fork@{concurrency\+::diners\+::\+Fork}}
+\subsubsection{\texorpdfstring{identity}{identity}}
+{\footnotesize\ttfamily int concurrency.\+diners.\+Fork.\+identity\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classconcurrency_1_1diners_1_1_fork_a875b343f95f6e3f07b2f2f5a5b83efb8}\label{classconcurrency_1_1diners_1_1_fork_a875b343f95f6e3f07b2f2f5a5b83efb8}} 
+\index{concurrency\+::diners\+::\+Fork@{concurrency\+::diners\+::\+Fork}!taken@{taken}}
+\index{taken@{taken}!concurrency\+::diners\+::\+Fork@{concurrency\+::diners\+::\+Fork}}
+\subsubsection{\texorpdfstring{taken}{taken}}
+{\footnotesize\ttfamily boolean concurrency.\+diners.\+Fork.\+taken =false\hspace{0.3cm}{\ttfamily [private]}}
+

@@ -1,0 +1,471 @@
+\hypertarget{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_min_max_panel}{}\section{org.\+newdawn.\+slick.\+tools.\+peditor.\+Min\+Max\+Panel Class Reference}
+\label{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_min_max_panel}\index{org.\+newdawn.\+slick.\+tools.\+peditor.\+Min\+Max\+Panel@{org.\+newdawn.\+slick.\+tools.\+peditor.\+Min\+Max\+Panel}}
+Inheritance diagram for org.\+newdawn.\+slick.\+tools.\+peditor.\+Min\+Max\+Panel\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_min_max_panel}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_min_max_panel_a1dab7426b0c3b5d05eb3ecfaf3693158}{Min\+Max\+Panel}} (String name, int min, int max, int def\+Min, int def\+Max, String tool\+Tip)
+\item 
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_min_max_panel_a1f711303b9369f055b1540ad6004a76a}{Min\+Max\+Panel}} (String name, int min, int max, int def\+Min, int def\+Max, boolean \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_min_max_panel_a82cdf912c2f081581d288b771c431703}{enablement}}, int \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_min_max_panel_a5abd0ceb9a2307cef6de8fbade8039db}{off\+Value}}, String tool\+Tip)
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_min_max_panel_a2c266f8a36221ca788e748726349c9ec}{set\+Enabled}} (boolean e)
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_min_max_panel_aeef464cdd41c692e0d674b91d3c0b687}{set\+Enabled\+Forced}} (boolean e)
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_min_max_panel_af0431110deccd05c43e767dbc04cf9b8}{set\+Min}} (int value)
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_min_max_panel_a3beee34aaf43d6a97e842d563edc0ce0}{set\+Max}} (int value)
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_min_max_panel_a734de4650f9d14151af09fa6733e8150}{add\+Listener}} (\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_input_panel_listener}{Input\+Panel\+Listener}} listener)
+\item 
+int \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_min_max_panel_a58840fac9d2ca629b3a8149042c405fd}{get\+Offset}} ()
+\item 
+boolean \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_min_max_panel_a35eed7db79e8c6b3f69b0a58e64d5910}{get\+Enabled}} ()
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_min_max_panel_a554148dcd8bb5b5bf6a91194f65f679b}{set\+Enabled\+Value}} (boolean e)
+\item 
+int \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_min_max_panel_ad7a04168e42375f9bb72fd34712858cc}{get\+Max}} ()
+\item 
+int \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_min_max_panel_adf479f7a027d743b06f16e54f03f6691}{get\+Min}} ()
+\end{DoxyCompactItemize}
+\subsection*{Package Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_min_max_panel_a644b9b3a4aba513423b79140a87e362e}{fire\+Updated}} (Object source)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+J\+Spinner \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_min_max_panel_ae09b9ecc2a254d7a74044bb20b6b62e6}{min\+Spinner}}
+\item 
+J\+Spinner \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_min_max_panel_a9e445c1f2ecd3c64e93ec8bf69f639f9}{max\+Spinner}}
+\item 
+Array\+List \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_min_max_panel_a0ce6fcb8afb2d292f7e3ab80d2180179}{listeners}} = new Array\+List()
+\item 
+boolean \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_min_max_panel_a491e9fbca948ae878becef9e86e06b74}{update\+Disable}} = false
+\item 
+J\+Check\+Box \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_min_max_panel_aff685339c4d9c4cf8009bcfbf2bc72de}{enabled}} = new J\+Check\+Box(\char`\"{}Enabled\char`\"{})
+\item 
+int \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_min_max_panel_a5abd0ceb9a2307cef6de8fbade8039db}{off\+Value}}
+\item 
+boolean \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_min_max_panel_a82cdf912c2f081581d288b771c431703}{enablement}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A panel allowing the definition of a range of values
+
+\begin{DoxyAuthor}{Author}
+kevin 
+\end{DoxyAuthor}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_min_max_panel_a1dab7426b0c3b5d05eb3ecfaf3693158}\label{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_min_max_panel_a1dab7426b0c3b5d05eb3ecfaf3693158}} 
+\index{org\+::newdawn\+::slick\+::tools\+::peditor\+::\+Min\+Max\+Panel@{org\+::newdawn\+::slick\+::tools\+::peditor\+::\+Min\+Max\+Panel}!Min\+Max\+Panel@{Min\+Max\+Panel}}
+\index{Min\+Max\+Panel@{Min\+Max\+Panel}!org\+::newdawn\+::slick\+::tools\+::peditor\+::\+Min\+Max\+Panel@{org\+::newdawn\+::slick\+::tools\+::peditor\+::\+Min\+Max\+Panel}}
+\subsubsection{\texorpdfstring{Min\+Max\+Panel()}{MinMaxPanel()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily org.\+newdawn.\+slick.\+tools.\+peditor.\+Min\+Max\+Panel.\+Min\+Max\+Panel (\begin{DoxyParamCaption}\item[{String}]{name,  }\item[{int}]{min,  }\item[{int}]{max,  }\item[{int}]{def\+Min,  }\item[{int}]{def\+Max,  }\item[{String}]{tool\+Tip }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Create a new panel for a range definition
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The name to display for this panel \\
+\hline
+{\em min} & The minimum lower bound \\
+\hline
+{\em max} & The maximum upper bound \\
+\hline
+{\em def\+Min} & The default lower bound \\
+\hline
+{\em def\+Max} & The default upper bound \\
+\hline
+{\em tool\+Tip} & The tooltip describing this function \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+46                                                                                               \{
+47         \textcolor{keyword}{this}(name, min, max, defMin, defMax, \textcolor{keyword}{false}, 0, toolTip);
+48     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_min_max_panel_a1f711303b9369f055b1540ad6004a76a}\label{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_min_max_panel_a1f711303b9369f055b1540ad6004a76a}} 
+\index{org\+::newdawn\+::slick\+::tools\+::peditor\+::\+Min\+Max\+Panel@{org\+::newdawn\+::slick\+::tools\+::peditor\+::\+Min\+Max\+Panel}!Min\+Max\+Panel@{Min\+Max\+Panel}}
+\index{Min\+Max\+Panel@{Min\+Max\+Panel}!org\+::newdawn\+::slick\+::tools\+::peditor\+::\+Min\+Max\+Panel@{org\+::newdawn\+::slick\+::tools\+::peditor\+::\+Min\+Max\+Panel}}
+\subsubsection{\texorpdfstring{Min\+Max\+Panel()}{MinMaxPanel()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily org.\+newdawn.\+slick.\+tools.\+peditor.\+Min\+Max\+Panel.\+Min\+Max\+Panel (\begin{DoxyParamCaption}\item[{String}]{name,  }\item[{int}]{min,  }\item[{int}]{max,  }\item[{int}]{def\+Min,  }\item[{int}]{def\+Max,  }\item[{boolean}]{enablement,  }\item[{int}]{off\+Value,  }\item[{String}]{tool\+Tip }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Create a new panel for a range definition
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The name to display for this panel \\
+\hline
+{\em min} & The minimum lower bound \\
+\hline
+{\em max} & The maximum upper bound \\
+\hline
+{\em def\+Min} & The default lower bound \\
+\hline
+{\em def\+Max} & The default upper bound \\
+\hline
+{\em enablement} & Indicates if this panel supports being enabled \\
+\hline
+{\em off\+Value} & The value to report when disabled \\
+\hline
+{\em tool\+Tip} & The tooltip describing this function \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+62                                                                                                            
+                           \{
+63         setLayout(null);
+64 
+65         this.setToolTipText(toolTip);
+66         this.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_min_max_panel_a5abd0ceb9a2307cef6de8fbade8039db}{offValue}} = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_min_max_panel_a5abd0ceb9a2307cef6de8fbade8039db}{offValue}};
+67         this.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_min_max_panel_a82cdf912c2f081581d288b771c431703}{enablement}} = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_min_max_panel_a82cdf912c2f081581d288b771c431703}{enablement}};
+68         \textcolor{keywordtype}{int} offset = 0;
+69         \textcolor{keywordflow}{if} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_min_max_panel_a82cdf912c2f081581d288b771c431703}{enablement}}) \{
+70             \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_min_max_panel_aff685339c4d9c4cf8009bcfbf2bc72de}{enabled}}.setBounds(10,20,200,20);
+71             add(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_min_max_panel_aff685339c4d9c4cf8009bcfbf2bc72de}{enabled}});
+72             offset += 20;
+73             
+74             \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_min_max_panel_aff685339c4d9c4cf8009bcfbf2bc72de}{enabled}}.addActionListener(\textcolor{keyword}{new} ActionListener() \{
+75 
+76                 \textcolor{keyword}{public} \textcolor{keywordtype}{void} actionPerformed(ActionEvent e) \{
+77                     \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_min_max_panel_ae09b9ecc2a254d7a74044bb20b6b62e6}{minSpinner}}.setEnabled(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_min_max_panel_aff685339c4d9c4cf8009bcfbf2bc72de}{enabled}}.isSelected());
+78                     \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_min_max_panel_a9e445c1f2ecd3c64e93ec8bf69f639f9}{maxSpinner}}.setEnabled(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_min_max_panel_aff685339c4d9c4cf8009bcfbf2bc72de}{enabled}}.isSelected());
+79                     \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_min_max_panel_a644b9b3a4aba513423b79140a87e362e}{fireUpdated}}(null);
+80                 \}
+81                 
+82             \});
+83         \}
+84         
+85         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_min_max_panel_ae09b9ecc2a254d7a74044bb20b6b62e6}{minSpinner}} = \textcolor{keyword}{new} JSpinner(\textcolor{keyword}{new} SpinnerNumberModel(defMin,min,max,1));
+86         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_min_max_panel_a9e445c1f2ecd3c64e93ec8bf69f639f9}{maxSpinner}} = \textcolor{keyword}{new} JSpinner(\textcolor{keyword}{new} SpinnerNumberModel(defMax,min,max,1));
+87         
+88         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_min_max_panel_ae09b9ecc2a254d7a74044bb20b6b62e6}{minSpinner}}.setBounds(50,20+offset,80,20);
+89         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_min_max_panel_a9e445c1f2ecd3c64e93ec8bf69f639f9}{maxSpinner}}.setBounds(190,20+offset,80,20);
+90         
+91         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_min_max_panel_ae09b9ecc2a254d7a74044bb20b6b62e6}{minSpinner}}.addChangeListener(\textcolor{keyword}{new} ChangeListener() \{
+92             \textcolor{keyword}{public} \textcolor{keywordtype}{void} stateChanged(ChangeEvent e) \{
+93                 \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_min_max_panel_a644b9b3a4aba513423b79140a87e362e}{fireUpdated}}(e.getSource());
+94             \}
+95         \});
+96         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_min_max_panel_a9e445c1f2ecd3c64e93ec8bf69f639f9}{maxSpinner}}.addChangeListener(\textcolor{keyword}{new} ChangeListener() \{
+97             \textcolor{keyword}{public} \textcolor{keywordtype}{void} stateChanged(ChangeEvent e) \{
+98                 \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_min_max_panel_a644b9b3a4aba513423b79140a87e362e}{fireUpdated}}(e.getSource());
+99             \}
+100         \});
+101         
+102         JLabel minLabel = \textcolor{keyword}{new} JLabel(\textcolor{stringliteral}{"Min"});
+103         minLabel.setBounds(10,20+offset,40,20);
+104         add(minLabel);
+105         JLabel maxLabel = \textcolor{keyword}{new} JLabel(\textcolor{stringliteral}{"Max"});
+106         maxLabel.setBounds(150,20+offset,40,20);
+107         add(maxLabel);
+108         
+109         add(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_min_max_panel_ae09b9ecc2a254d7a74044bb20b6b62e6}{minSpinner}});
+110         add(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_min_max_panel_a9e445c1f2ecd3c64e93ec8bf69f639f9}{maxSpinner}});
+111         setBorder(BorderFactory.createTitledBorder(name));
+112         
+113         \textcolor{keywordflow}{if} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_min_max_panel_a82cdf912c2f081581d288b771c431703}{enablement}}) \{
+114             \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_min_max_panel_ae09b9ecc2a254d7a74044bb20b6b62e6}{minSpinner}}.setEnabled(\textcolor{keyword}{false});
+115             \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_min_max_panel_a9e445c1f2ecd3c64e93ec8bf69f639f9}{maxSpinner}}.setEnabled(\textcolor{keyword}{false});
+116         \}
+117     \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_min_max_panel_a734de4650f9d14151af09fa6733e8150}\label{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_min_max_panel_a734de4650f9d14151af09fa6733e8150}} 
+\index{org\+::newdawn\+::slick\+::tools\+::peditor\+::\+Min\+Max\+Panel@{org\+::newdawn\+::slick\+::tools\+::peditor\+::\+Min\+Max\+Panel}!add\+Listener@{add\+Listener}}
+\index{add\+Listener@{add\+Listener}!org\+::newdawn\+::slick\+::tools\+::peditor\+::\+Min\+Max\+Panel@{org\+::newdawn\+::slick\+::tools\+::peditor\+::\+Min\+Max\+Panel}}
+\subsubsection{\texorpdfstring{add\+Listener()}{addListener()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+tools.\+peditor.\+Min\+Max\+Panel.\+add\+Listener (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_input_panel_listener}{Input\+Panel\+Listener}}}]{listener }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Add a listener to be notified of changes
+
+
+\begin{DoxyParams}{Parameters}
+{\em listener} & The listener to be notified of changes \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+167                                                          \{
+168         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_min_max_panel_a0ce6fcb8afb2d292f7e3ab80d2180179}{listeners}}.add(listener);
+169     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_min_max_panel_a644b9b3a4aba513423b79140a87e362e}\label{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_min_max_panel_a644b9b3a4aba513423b79140a87e362e}} 
+\index{org\+::newdawn\+::slick\+::tools\+::peditor\+::\+Min\+Max\+Panel@{org\+::newdawn\+::slick\+::tools\+::peditor\+::\+Min\+Max\+Panel}!fire\+Updated@{fire\+Updated}}
+\index{fire\+Updated@{fire\+Updated}!org\+::newdawn\+::slick\+::tools\+::peditor\+::\+Min\+Max\+Panel@{org\+::newdawn\+::slick\+::tools\+::peditor\+::\+Min\+Max\+Panel}}
+\subsubsection{\texorpdfstring{fire\+Updated()}{fireUpdated()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+tools.\+peditor.\+Min\+Max\+Panel.\+fire\+Updated (\begin{DoxyParamCaption}\item[{Object}]{source }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [package]}}
+
+Notify listeners a change has occured on this panel
+
+
+\begin{DoxyParams}{Parameters}
+{\em source} & The source of this event \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+185                                     \{
+186         \textcolor{keywordflow}{if} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_min_max_panel_a491e9fbca948ae878becef9e86e06b74}{updateDisable}}) \{
+187             \textcolor{keywordflow}{return};
+188         \}
+189         
+190         \textcolor{keywordflow}{if} (source == \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_min_max_panel_a9e445c1f2ecd3c64e93ec8bf69f639f9}{maxSpinner}}) \{
+191             \textcolor{keywordflow}{if} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_min_max_panel_ad7a04168e42375f9bb72fd34712858cc}{getMax}}() < \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_min_max_panel_adf479f7a027d743b06f16e54f03f6691}{getMin}}()) \{
+192                 \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_min_max_panel_af0431110deccd05c43e767dbc04cf9b8}{setMin}}(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_min_max_panel_ad7a04168e42375f9bb72fd34712858cc}{getMax}}());
+193             \}
+194         \}
+195         \textcolor{keywordflow}{if} (source == \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_min_max_panel_ae09b9ecc2a254d7a74044bb20b6b62e6}{minSpinner}}) \{
+196             \textcolor{keywordflow}{if} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_min_max_panel_ad7a04168e42375f9bb72fd34712858cc}{getMax}}() < \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_min_max_panel_adf479f7a027d743b06f16e54f03f6691}{getMin}}()) \{
+197                 \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_min_max_panel_a3beee34aaf43d6a97e842d563edc0ce0}{setMax}}(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_min_max_panel_adf479f7a027d743b06f16e54f03f6691}{getMin}}());
+198             \}
+199         \}
+200         
+201         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i=0;i<\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_min_max_panel_a0ce6fcb8afb2d292f7e3ab80d2180179}{listeners}}.size();i++) \{
+202             ((InputPanelListener) \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_min_max_panel_a0ce6fcb8afb2d292f7e3ab80d2180179}{listeners}}.get(i)).minMaxUpdated(\textcolor{keyword}{this});
+203         \}
+204     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_min_max_panel_a35eed7db79e8c6b3f69b0a58e64d5910}\label{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_min_max_panel_a35eed7db79e8c6b3f69b0a58e64d5910}} 
+\index{org\+::newdawn\+::slick\+::tools\+::peditor\+::\+Min\+Max\+Panel@{org\+::newdawn\+::slick\+::tools\+::peditor\+::\+Min\+Max\+Panel}!get\+Enabled@{get\+Enabled}}
+\index{get\+Enabled@{get\+Enabled}!org\+::newdawn\+::slick\+::tools\+::peditor\+::\+Min\+Max\+Panel@{org\+::newdawn\+::slick\+::tools\+::peditor\+::\+Min\+Max\+Panel}}
+\subsubsection{\texorpdfstring{get\+Enabled()}{getEnabled()}}
+{\footnotesize\ttfamily boolean org.\+newdawn.\+slick.\+tools.\+peditor.\+Min\+Max\+Panel.\+get\+Enabled (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Check if this panel is enabled
+
+\begin{DoxyReturn}{Returns}
+True if this panel is enabeld 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+211                                 \{
+212         \textcolor{keywordflow}{return} !\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_min_max_panel_a82cdf912c2f081581d288b771c431703}{enablement}} || \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_min_max_panel_aff685339c4d9c4cf8009bcfbf2bc72de}{enabled}}.isSelected();
+213     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_min_max_panel_ad7a04168e42375f9bb72fd34712858cc}\label{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_min_max_panel_ad7a04168e42375f9bb72fd34712858cc}} 
+\index{org\+::newdawn\+::slick\+::tools\+::peditor\+::\+Min\+Max\+Panel@{org\+::newdawn\+::slick\+::tools\+::peditor\+::\+Min\+Max\+Panel}!get\+Max@{get\+Max}}
+\index{get\+Max@{get\+Max}!org\+::newdawn\+::slick\+::tools\+::peditor\+::\+Min\+Max\+Panel@{org\+::newdawn\+::slick\+::tools\+::peditor\+::\+Min\+Max\+Panel}}
+\subsubsection{\texorpdfstring{get\+Max()}{getMax()}}
+{\footnotesize\ttfamily int org.\+newdawn.\+slick.\+tools.\+peditor.\+Min\+Max\+Panel.\+get\+Max (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get the defined upper bound
+
+\begin{DoxyReturn}{Returns}
+The defined upper bound 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+233                         \{
+234         \textcolor{keywordflow}{if} ((\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_min_max_panel_a82cdf912c2f081581d288b771c431703}{enablement}}) && (!\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_min_max_panel_aff685339c4d9c4cf8009bcfbf2bc72de}{enabled}}.isSelected())) \{
+235             \textcolor{keywordflow}{return} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_min_max_panel_a5abd0ceb9a2307cef6de8fbade8039db}{offValue}};
+236         \}
+237         
+238         \textcolor{keywordflow}{return} ((Integer) \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_min_max_panel_a9e445c1f2ecd3c64e93ec8bf69f639f9}{maxSpinner}}.getValue()).intValue();
+239     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_min_max_panel_adf479f7a027d743b06f16e54f03f6691}\label{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_min_max_panel_adf479f7a027d743b06f16e54f03f6691}} 
+\index{org\+::newdawn\+::slick\+::tools\+::peditor\+::\+Min\+Max\+Panel@{org\+::newdawn\+::slick\+::tools\+::peditor\+::\+Min\+Max\+Panel}!get\+Min@{get\+Min}}
+\index{get\+Min@{get\+Min}!org\+::newdawn\+::slick\+::tools\+::peditor\+::\+Min\+Max\+Panel@{org\+::newdawn\+::slick\+::tools\+::peditor\+::\+Min\+Max\+Panel}}
+\subsubsection{\texorpdfstring{get\+Min()}{getMin()}}
+{\footnotesize\ttfamily int org.\+newdawn.\+slick.\+tools.\+peditor.\+Min\+Max\+Panel.\+get\+Min (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get the defined lower bound
+
+\begin{DoxyReturn}{Returns}
+The defined lower bound 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+246                         \{
+247         \textcolor{keywordflow}{if} ((\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_min_max_panel_a82cdf912c2f081581d288b771c431703}{enablement}}) && (!\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_min_max_panel_aff685339c4d9c4cf8009bcfbf2bc72de}{enabled}}.isSelected())) \{
+248             \textcolor{keywordflow}{return} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_min_max_panel_a5abd0ceb9a2307cef6de8fbade8039db}{offValue}};
+249         \}
+250         
+251         \textcolor{keywordflow}{return} ((Integer) \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_min_max_panel_ae09b9ecc2a254d7a74044bb20b6b62e6}{minSpinner}}.getValue()).intValue();
+252     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_min_max_panel_a58840fac9d2ca629b3a8149042c405fd}\label{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_min_max_panel_a58840fac9d2ca629b3a8149042c405fd}} 
+\index{org\+::newdawn\+::slick\+::tools\+::peditor\+::\+Min\+Max\+Panel@{org\+::newdawn\+::slick\+::tools\+::peditor\+::\+Min\+Max\+Panel}!get\+Offset@{get\+Offset}}
+\index{get\+Offset@{get\+Offset}!org\+::newdawn\+::slick\+::tools\+::peditor\+::\+Min\+Max\+Panel@{org\+::newdawn\+::slick\+::tools\+::peditor\+::\+Min\+Max\+Panel}}
+\subsubsection{\texorpdfstring{get\+Offset()}{getOffset()}}
+{\footnotesize\ttfamily int org.\+newdawn.\+slick.\+tools.\+peditor.\+Min\+Max\+Panel.\+get\+Offset (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get the offset on the y axis for layout
+
+\begin{DoxyReturn}{Returns}
+The offset on the y axis for layout 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+176                            \{
+177         \textcolor{keywordflow}{return} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_min_max_panel_a82cdf912c2f081581d288b771c431703}{enablement}} ? 65 : 45;
+178     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_min_max_panel_a2c266f8a36221ca788e748726349c9ec}\label{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_min_max_panel_a2c266f8a36221ca788e748726349c9ec}} 
+\index{org\+::newdawn\+::slick\+::tools\+::peditor\+::\+Min\+Max\+Panel@{org\+::newdawn\+::slick\+::tools\+::peditor\+::\+Min\+Max\+Panel}!set\+Enabled@{set\+Enabled}}
+\index{set\+Enabled@{set\+Enabled}!org\+::newdawn\+::slick\+::tools\+::peditor\+::\+Min\+Max\+Panel@{org\+::newdawn\+::slick\+::tools\+::peditor\+::\+Min\+Max\+Panel}}
+\subsubsection{\texorpdfstring{set\+Enabled()}{setEnabled()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+tools.\+peditor.\+Min\+Max\+Panel.\+set\+Enabled (\begin{DoxyParamCaption}\item[{boolean}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_default_panel_ae7d7b9c33e70e3725f76d561955aac38}{org.\+newdawn.\+slick.\+tools.\+peditor.\+Default\+Panel\+::set\+Enabled(boolean)}} 
+\end{DoxySeeAlso}
+
+\begin{DoxyCode}
+122                                       \{
+123         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_min_max_panel_aff685339c4d9c4cf8009bcfbf2bc72de}{enabled}}.setEnabled(e);
+124         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_min_max_panel_ae09b9ecc2a254d7a74044bb20b6b62e6}{minSpinner}}.setEnabled(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_min_max_panel_aff685339c4d9c4cf8009bcfbf2bc72de}{enabled}}.isSelected() || !
+      \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_min_max_panel_a82cdf912c2f081581d288b771c431703}{enablement}});
+125         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_min_max_panel_a9e445c1f2ecd3c64e93ec8bf69f639f9}{maxSpinner}}.setEnabled(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_min_max_panel_aff685339c4d9c4cf8009bcfbf2bc72de}{enabled}}.isSelected() || !
+      \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_min_max_panel_a82cdf912c2f081581d288b771c431703}{enablement}});
+126     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_min_max_panel_aeef464cdd41c692e0d674b91d3c0b687}\label{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_min_max_panel_aeef464cdd41c692e0d674b91d3c0b687}} 
+\index{org\+::newdawn\+::slick\+::tools\+::peditor\+::\+Min\+Max\+Panel@{org\+::newdawn\+::slick\+::tools\+::peditor\+::\+Min\+Max\+Panel}!set\+Enabled\+Forced@{set\+Enabled\+Forced}}
+\index{set\+Enabled\+Forced@{set\+Enabled\+Forced}!org\+::newdawn\+::slick\+::tools\+::peditor\+::\+Min\+Max\+Panel@{org\+::newdawn\+::slick\+::tools\+::peditor\+::\+Min\+Max\+Panel}}
+\subsubsection{\texorpdfstring{set\+Enabled\+Forced()}{setEnabledForced()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+tools.\+peditor.\+Min\+Max\+Panel.\+set\+Enabled\+Forced (\begin{DoxyParamCaption}\item[{boolean}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Force the state of this component
+
+
+\begin{DoxyParams}{Parameters}
+{\em e} & True if we want this component to be enabled \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+134     \{
+135         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_min_max_panel_aff685339c4d9c4cf8009bcfbf2bc72de}{enabled}}.setEnabled(e);
+136         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_min_max_panel_ae09b9ecc2a254d7a74044bb20b6b62e6}{minSpinner}}.setEnabled(e);
+137         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_min_max_panel_a9e445c1f2ecd3c64e93ec8bf69f639f9}{maxSpinner}}.setEnabled(e);
+138     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_min_max_panel_a554148dcd8bb5b5bf6a91194f65f679b}\label{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_min_max_panel_a554148dcd8bb5b5bf6a91194f65f679b}} 
+\index{org\+::newdawn\+::slick\+::tools\+::peditor\+::\+Min\+Max\+Panel@{org\+::newdawn\+::slick\+::tools\+::peditor\+::\+Min\+Max\+Panel}!set\+Enabled\+Value@{set\+Enabled\+Value}}
+\index{set\+Enabled\+Value@{set\+Enabled\+Value}!org\+::newdawn\+::slick\+::tools\+::peditor\+::\+Min\+Max\+Panel@{org\+::newdawn\+::slick\+::tools\+::peditor\+::\+Min\+Max\+Panel}}
+\subsubsection{\texorpdfstring{set\+Enabled\+Value()}{setEnabledValue()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+tools.\+peditor.\+Min\+Max\+Panel.\+set\+Enabled\+Value (\begin{DoxyParamCaption}\item[{boolean}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Indicate if this panel should be enabled
+
+
+\begin{DoxyParams}{Parameters}
+{\em e} & True if this panel option should be enabled \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+220                                            \{
+221         \textcolor{keywordflow}{if} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_min_max_panel_a82cdf912c2f081581d288b771c431703}{enablement}}) \{
+222             \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_min_max_panel_aff685339c4d9c4cf8009bcfbf2bc72de}{enabled}}.setSelected(e);
+223         \}
+224         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_min_max_panel_ae09b9ecc2a254d7a74044bb20b6b62e6}{minSpinner}}.setEnabled(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_min_max_panel_aff685339c4d9c4cf8009bcfbf2bc72de}{enabled}}.isSelected() || !
+      \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_min_max_panel_a82cdf912c2f081581d288b771c431703}{enablement}});
+225         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_min_max_panel_a9e445c1f2ecd3c64e93ec8bf69f639f9}{maxSpinner}}.setEnabled(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_min_max_panel_aff685339c4d9c4cf8009bcfbf2bc72de}{enabled}}.isSelected() || !
+      \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_min_max_panel_a82cdf912c2f081581d288b771c431703}{enablement}});
+226     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_min_max_panel_a3beee34aaf43d6a97e842d563edc0ce0}\label{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_min_max_panel_a3beee34aaf43d6a97e842d563edc0ce0}} 
+\index{org\+::newdawn\+::slick\+::tools\+::peditor\+::\+Min\+Max\+Panel@{org\+::newdawn\+::slick\+::tools\+::peditor\+::\+Min\+Max\+Panel}!set\+Max@{set\+Max}}
+\index{set\+Max@{set\+Max}!org\+::newdawn\+::slick\+::tools\+::peditor\+::\+Min\+Max\+Panel@{org\+::newdawn\+::slick\+::tools\+::peditor\+::\+Min\+Max\+Panel}}
+\subsubsection{\texorpdfstring{set\+Max()}{setMax()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+tools.\+peditor.\+Min\+Max\+Panel.\+set\+Max (\begin{DoxyParamCaption}\item[{int}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Set the maximum value
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & The value to use as the upper bound \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+156                                   \{
+157         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_min_max_panel_a491e9fbca948ae878becef9e86e06b74}{updateDisable}} = \textcolor{keyword}{true};
+158         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_min_max_panel_a9e445c1f2ecd3c64e93ec8bf69f639f9}{maxSpinner}}.setValue(\textcolor{keyword}{new} Integer(value));
+159         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_min_max_panel_a491e9fbca948ae878becef9e86e06b74}{updateDisable}} = \textcolor{keyword}{false};
+160     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_min_max_panel_af0431110deccd05c43e767dbc04cf9b8}\label{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_min_max_panel_af0431110deccd05c43e767dbc04cf9b8}} 
+\index{org\+::newdawn\+::slick\+::tools\+::peditor\+::\+Min\+Max\+Panel@{org\+::newdawn\+::slick\+::tools\+::peditor\+::\+Min\+Max\+Panel}!set\+Min@{set\+Min}}
+\index{set\+Min@{set\+Min}!org\+::newdawn\+::slick\+::tools\+::peditor\+::\+Min\+Max\+Panel@{org\+::newdawn\+::slick\+::tools\+::peditor\+::\+Min\+Max\+Panel}}
+\subsubsection{\texorpdfstring{set\+Min()}{setMin()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+tools.\+peditor.\+Min\+Max\+Panel.\+set\+Min (\begin{DoxyParamCaption}\item[{int}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Set the minimum value
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & The value to use as the lower bound \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+145                                   \{
+146         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_min_max_panel_a491e9fbca948ae878becef9e86e06b74}{updateDisable}} = \textcolor{keyword}{true};
+147         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_min_max_panel_ae09b9ecc2a254d7a74044bb20b6b62e6}{minSpinner}}.setValue(\textcolor{keyword}{new} Integer(value));
+148         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_min_max_panel_a491e9fbca948ae878becef9e86e06b74}{updateDisable}} = \textcolor{keyword}{false};
+149     \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_min_max_panel_aff685339c4d9c4cf8009bcfbf2bc72de}\label{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_min_max_panel_aff685339c4d9c4cf8009bcfbf2bc72de}} 
+\index{org\+::newdawn\+::slick\+::tools\+::peditor\+::\+Min\+Max\+Panel@{org\+::newdawn\+::slick\+::tools\+::peditor\+::\+Min\+Max\+Panel}!enabled@{enabled}}
+\index{enabled@{enabled}!org\+::newdawn\+::slick\+::tools\+::peditor\+::\+Min\+Max\+Panel@{org\+::newdawn\+::slick\+::tools\+::peditor\+::\+Min\+Max\+Panel}}
+\subsubsection{\texorpdfstring{enabled}{enabled}}
+{\footnotesize\ttfamily J\+Check\+Box org.\+newdawn.\+slick.\+tools.\+peditor.\+Min\+Max\+Panel.\+enabled = new J\+Check\+Box(\char`\"{}Enabled\char`\"{})\hspace{0.3cm}{\ttfamily [private]}}
+
+Checkbox for enablement type fields \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_min_max_panel_a82cdf912c2f081581d288b771c431703}\label{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_min_max_panel_a82cdf912c2f081581d288b771c431703}} 
+\index{org\+::newdawn\+::slick\+::tools\+::peditor\+::\+Min\+Max\+Panel@{org\+::newdawn\+::slick\+::tools\+::peditor\+::\+Min\+Max\+Panel}!enablement@{enablement}}
+\index{enablement@{enablement}!org\+::newdawn\+::slick\+::tools\+::peditor\+::\+Min\+Max\+Panel@{org\+::newdawn\+::slick\+::tools\+::peditor\+::\+Min\+Max\+Panel}}
+\subsubsection{\texorpdfstring{enablement}{enablement}}
+{\footnotesize\ttfamily boolean org.\+newdawn.\+slick.\+tools.\+peditor.\+Min\+Max\+Panel.\+enablement\hspace{0.3cm}{\ttfamily [private]}}
+
+True if this panel support enabledment \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_min_max_panel_a0ce6fcb8afb2d292f7e3ab80d2180179}\label{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_min_max_panel_a0ce6fcb8afb2d292f7e3ab80d2180179}} 
+\index{org\+::newdawn\+::slick\+::tools\+::peditor\+::\+Min\+Max\+Panel@{org\+::newdawn\+::slick\+::tools\+::peditor\+::\+Min\+Max\+Panel}!listeners@{listeners}}
+\index{listeners@{listeners}!org\+::newdawn\+::slick\+::tools\+::peditor\+::\+Min\+Max\+Panel@{org\+::newdawn\+::slick\+::tools\+::peditor\+::\+Min\+Max\+Panel}}
+\subsubsection{\texorpdfstring{listeners}{listeners}}
+{\footnotesize\ttfamily Array\+List org.\+newdawn.\+slick.\+tools.\+peditor.\+Min\+Max\+Panel.\+listeners = new Array\+List()\hspace{0.3cm}{\ttfamily [private]}}
+
+The listeners to be notified of changes \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_min_max_panel_a9e445c1f2ecd3c64e93ec8bf69f639f9}\label{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_min_max_panel_a9e445c1f2ecd3c64e93ec8bf69f639f9}} 
+\index{org\+::newdawn\+::slick\+::tools\+::peditor\+::\+Min\+Max\+Panel@{org\+::newdawn\+::slick\+::tools\+::peditor\+::\+Min\+Max\+Panel}!max\+Spinner@{max\+Spinner}}
+\index{max\+Spinner@{max\+Spinner}!org\+::newdawn\+::slick\+::tools\+::peditor\+::\+Min\+Max\+Panel@{org\+::newdawn\+::slick\+::tools\+::peditor\+::\+Min\+Max\+Panel}}
+\subsubsection{\texorpdfstring{max\+Spinner}{maxSpinner}}
+{\footnotesize\ttfamily J\+Spinner org.\+newdawn.\+slick.\+tools.\+peditor.\+Min\+Max\+Panel.\+max\+Spinner\hspace{0.3cm}{\ttfamily [private]}}
+
+The spinner for the upper bound \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_min_max_panel_ae09b9ecc2a254d7a74044bb20b6b62e6}\label{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_min_max_panel_ae09b9ecc2a254d7a74044bb20b6b62e6}} 
+\index{org\+::newdawn\+::slick\+::tools\+::peditor\+::\+Min\+Max\+Panel@{org\+::newdawn\+::slick\+::tools\+::peditor\+::\+Min\+Max\+Panel}!min\+Spinner@{min\+Spinner}}
+\index{min\+Spinner@{min\+Spinner}!org\+::newdawn\+::slick\+::tools\+::peditor\+::\+Min\+Max\+Panel@{org\+::newdawn\+::slick\+::tools\+::peditor\+::\+Min\+Max\+Panel}}
+\subsubsection{\texorpdfstring{min\+Spinner}{minSpinner}}
+{\footnotesize\ttfamily J\+Spinner org.\+newdawn.\+slick.\+tools.\+peditor.\+Min\+Max\+Panel.\+min\+Spinner\hspace{0.3cm}{\ttfamily [private]}}
+
+The spinner for the lower bound \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_min_max_panel_a5abd0ceb9a2307cef6de8fbade8039db}\label{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_min_max_panel_a5abd0ceb9a2307cef6de8fbade8039db}} 
+\index{org\+::newdawn\+::slick\+::tools\+::peditor\+::\+Min\+Max\+Panel@{org\+::newdawn\+::slick\+::tools\+::peditor\+::\+Min\+Max\+Panel}!off\+Value@{off\+Value}}
+\index{off\+Value@{off\+Value}!org\+::newdawn\+::slick\+::tools\+::peditor\+::\+Min\+Max\+Panel@{org\+::newdawn\+::slick\+::tools\+::peditor\+::\+Min\+Max\+Panel}}
+\subsubsection{\texorpdfstring{off\+Value}{offValue}}
+{\footnotesize\ttfamily int org.\+newdawn.\+slick.\+tools.\+peditor.\+Min\+Max\+Panel.\+off\+Value\hspace{0.3cm}{\ttfamily [private]}}
+
+The value to report when the panel is disabled \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_min_max_panel_a491e9fbca948ae878becef9e86e06b74}\label{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_min_max_panel_a491e9fbca948ae878becef9e86e06b74}} 
+\index{org\+::newdawn\+::slick\+::tools\+::peditor\+::\+Min\+Max\+Panel@{org\+::newdawn\+::slick\+::tools\+::peditor\+::\+Min\+Max\+Panel}!update\+Disable@{update\+Disable}}
+\index{update\+Disable@{update\+Disable}!org\+::newdawn\+::slick\+::tools\+::peditor\+::\+Min\+Max\+Panel@{org\+::newdawn\+::slick\+::tools\+::peditor\+::\+Min\+Max\+Panel}}
+\subsubsection{\texorpdfstring{update\+Disable}{updateDisable}}
+{\footnotesize\ttfamily boolean org.\+newdawn.\+slick.\+tools.\+peditor.\+Min\+Max\+Panel.\+update\+Disable = false\hspace{0.3cm}{\ttfamily [private]}}
+
+Indicates if we should ignore updates 

@@ -1,0 +1,143 @@
+\hypertarget{classorg_1_1newdawn_1_1slick_1_1svg_1_1_linear_gradient_fill}{}\section{org.\+newdawn.\+slick.\+svg.\+Linear\+Gradient\+Fill Class Reference}
+\label{classorg_1_1newdawn_1_1slick_1_1svg_1_1_linear_gradient_fill}\index{org.\+newdawn.\+slick.\+svg.\+Linear\+Gradient\+Fill@{org.\+newdawn.\+slick.\+svg.\+Linear\+Gradient\+Fill}}
+Inheritance diagram for org.\+newdawn.\+slick.\+svg.\+Linear\+Gradient\+Fill\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classorg_1_1newdawn_1_1slick_1_1svg_1_1_linear_gradient_fill}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1_linear_gradient_fill_a84a3511eccce5286be653e3abdeab17c}{Linear\+Gradient\+Fill}} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_shape}{Shape}} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1_linear_gradient_fill_a8d9085ba4c009c6fce0b06a834ef30e3}{shape}}, Transform trans, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1_gradient}{Gradient}} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1_linear_gradient_fill_a91933ccdb47076eca69f1ebe6886933c}{gradient}})
+\item 
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_vector2f}{Vector2f}} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1_linear_gradient_fill_a2e7291eea3735f7070d9705dd1f43bb3}{get\+Coord\+For}} (float x, float y)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_vector2f}{Vector2f}} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1_linear_gradient_fill_acd016204314fd234afb74aa32282ac7d}{start}}
+\item 
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_vector2f}{Vector2f}} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1_linear_gradient_fill_a708d041bfb9a710bdb328561eacd169e}{end}}
+\item 
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1_gradient}{Gradient}} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1_linear_gradient_fill_a91933ccdb47076eca69f1ebe6886933c}{gradient}}
+\item 
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_line}{Line}} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1_linear_gradient_fill_a3c9d1489a824879ba1e0b3a95a08dbda}{line}}
+\item 
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_shape}{Shape}} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1_linear_gradient_fill_a8d9085ba4c009c6fce0b06a834ef30e3}{shape}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A filler for shapes that applys S\+VG linear gradients
+
+\begin{DoxyAuthor}{Author}
+kevin 
+\end{DoxyAuthor}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1svg_1_1_linear_gradient_fill_a84a3511eccce5286be653e3abdeab17c}\label{classorg_1_1newdawn_1_1slick_1_1svg_1_1_linear_gradient_fill_a84a3511eccce5286be653e3abdeab17c}} 
+\index{org\+::newdawn\+::slick\+::svg\+::\+Linear\+Gradient\+Fill@{org\+::newdawn\+::slick\+::svg\+::\+Linear\+Gradient\+Fill}!Linear\+Gradient\+Fill@{Linear\+Gradient\+Fill}}
+\index{Linear\+Gradient\+Fill@{Linear\+Gradient\+Fill}!org\+::newdawn\+::slick\+::svg\+::\+Linear\+Gradient\+Fill@{org\+::newdawn\+::slick\+::svg\+::\+Linear\+Gradient\+Fill}}
+\subsubsection{\texorpdfstring{Linear\+Gradient\+Fill()}{LinearGradientFill()}}
+{\footnotesize\ttfamily org.\+newdawn.\+slick.\+svg.\+Linear\+Gradient\+Fill.\+Linear\+Gradient\+Fill (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_shape}{Shape}}}]{shape,  }\item[{Transform}]{trans,  }\item[{\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1_gradient}{Gradient}}}]{gradient }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Create a new fill for gradients
+
+
+\begin{DoxyParams}{Parameters}
+{\em shape} & The shape being filled \\
+\hline
+{\em trans} & The transform given for the shape \\
+\hline
+{\em gradient} & The gradient to apply \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+33                                                                                \{
+34         this.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1_linear_gradient_fill_a91933ccdb47076eca69f1ebe6886933c}{gradient}} = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1_linear_gradient_fill_a91933ccdb47076eca69f1ebe6886933c}{gradient}};
+35         
+36         \textcolor{keywordtype}{float} x = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1_linear_gradient_fill_a91933ccdb47076eca69f1ebe6886933c}{gradient}}.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1_gradient_ae69b3be30a37c7efd9a4b63bbf7aba20}{getX1}}();
+37         \textcolor{keywordtype}{float} y = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1_linear_gradient_fill_a91933ccdb47076eca69f1ebe6886933c}{gradient}}.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1_gradient_afd11c4ec7edd35d8426f2190dedd2c5b}{getY1}}();
+38         \textcolor{keywordtype}{float} mx = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1_linear_gradient_fill_a91933ccdb47076eca69f1ebe6886933c}{gradient}}.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1_gradient_a13816e8cfa427ebfd0c328407eca151a}{getX2}}();
+39         \textcolor{keywordtype}{float} my = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1_linear_gradient_fill_a91933ccdb47076eca69f1ebe6886933c}{gradient}}.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1_gradient_a532eb210328cc87375bc3fc28ff0cc8a}{getY2}}();
+40     
+41         \textcolor{keywordtype}{float} h = my - y;
+42         \textcolor{keywordtype}{float} w = mx - x;
+43         
+44         \textcolor{keywordtype}{float}[] s = \textcolor{keyword}{new} \textcolor{keywordtype}{float}[] \{x,y+(h/2)\};
+45         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1_linear_gradient_fill_a91933ccdb47076eca69f1ebe6886933c}{gradient}}.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1_gradient_a797b696ffa9ef0cfee7f1dd99a884f35}{getTransform}}().transform(s, 0, s, 0, 1);
+46         trans.transform(s, 0, s, 0, 1);
+47         \textcolor{keywordtype}{float}[] e = \textcolor{keyword}{new} \textcolor{keywordtype}{float}[] \{x+w,y+(h/2)\};
+48         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1_linear_gradient_fill_a91933ccdb47076eca69f1ebe6886933c}{gradient}}.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1_gradient_a797b696ffa9ef0cfee7f1dd99a884f35}{getTransform}}().transform(e, 0, e, 0, 1);
+49         trans.transform(e, 0, e, 0, 1);
+50         
+51         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1_linear_gradient_fill_acd016204314fd234afb74aa32282ac7d}{start}} = \textcolor{keyword}{new} Vector2f(s[0],s[1]);
+52         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1_linear_gradient_fill_a708d041bfb9a710bdb328561eacd169e}{end}} = \textcolor{keyword}{new} Vector2f(e[0],e[1]);
+53         
+54         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1_linear_gradient_fill_a3c9d1489a824879ba1e0b3a95a08dbda}{line}} = \textcolor{keyword}{new} Line(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1_linear_gradient_fill_acd016204314fd234afb74aa32282ac7d}{start}}, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1_linear_gradient_fill_a708d041bfb9a710bdb328561eacd169e}{end}});
+55     \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1svg_1_1_linear_gradient_fill_a2e7291eea3735f7070d9705dd1f43bb3}\label{classorg_1_1newdawn_1_1slick_1_1svg_1_1_linear_gradient_fill_a2e7291eea3735f7070d9705dd1f43bb3}} 
+\index{org\+::newdawn\+::slick\+::svg\+::\+Linear\+Gradient\+Fill@{org\+::newdawn\+::slick\+::svg\+::\+Linear\+Gradient\+Fill}!get\+Coord\+For@{get\+Coord\+For}}
+\index{get\+Coord\+For@{get\+Coord\+For}!org\+::newdawn\+::slick\+::svg\+::\+Linear\+Gradient\+Fill@{org\+::newdawn\+::slick\+::svg\+::\+Linear\+Gradient\+Fill}}
+\subsubsection{\texorpdfstring{get\+Coord\+For()}{getCoordFor()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_vector2f}{Vector2f}} org.\+newdawn.\+slick.\+svg.\+Linear\+Gradient\+Fill.\+get\+Coord\+For (\begin{DoxyParamCaption}\item[{float}]{x,  }\item[{float}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1geom_1_1_tex_coord_generator_a2a67773df4f90a0bcb3f65d5499919d7}{org.\+newdawn.\+slick.\+geom.\+Tex\+Coord\+Generator\+::get\+Coord\+For(float, float)}} 
+\end{DoxySeeAlso}
+
+
+Implements \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1geom_1_1_tex_coord_generator_a2a67773df4f90a0bcb3f65d5499919d7}{org.\+newdawn.\+slick.\+geom.\+Tex\+Coord\+Generator}}.
+
+
+\begin{DoxyCode}
+60                                                   \{
+61         Vector2f result = \textcolor{keyword}{new} Vector2f();
+62         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1_linear_gradient_fill_a3c9d1489a824879ba1e0b3a95a08dbda}{line}}.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_line_ae555b65b604e0bed3e650ab156375a99}{getClosestPoint}}(\textcolor{keyword}{new} Vector2f(x,y), result);
+63         \textcolor{keywordtype}{float} u = result.distance(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1_linear_gradient_fill_acd016204314fd234afb74aa32282ac7d}{start}});
+64         u /= \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1_linear_gradient_fill_a3c9d1489a824879ba1e0b3a95a08dbda}{line}}.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_line_aae00113aea8d0d253962614a873f05a1}{length}}();
+65         
+66         \textcolor{keywordflow}{return} \textcolor{keyword}{new} Vector2f(u,0);
+67     \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1svg_1_1_linear_gradient_fill_a708d041bfb9a710bdb328561eacd169e}\label{classorg_1_1newdawn_1_1slick_1_1svg_1_1_linear_gradient_fill_a708d041bfb9a710bdb328561eacd169e}} 
+\index{org\+::newdawn\+::slick\+::svg\+::\+Linear\+Gradient\+Fill@{org\+::newdawn\+::slick\+::svg\+::\+Linear\+Gradient\+Fill}!end@{end}}
+\index{end@{end}!org\+::newdawn\+::slick\+::svg\+::\+Linear\+Gradient\+Fill@{org\+::newdawn\+::slick\+::svg\+::\+Linear\+Gradient\+Fill}}
+\subsubsection{\texorpdfstring{end}{end}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_vector2f}{Vector2f}} org.\+newdawn.\+slick.\+svg.\+Linear\+Gradient\+Fill.\+end\hspace{0.3cm}{\ttfamily [private]}}
+
+The ends position of the gradient line \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1svg_1_1_linear_gradient_fill_a91933ccdb47076eca69f1ebe6886933c}\label{classorg_1_1newdawn_1_1slick_1_1svg_1_1_linear_gradient_fill_a91933ccdb47076eca69f1ebe6886933c}} 
+\index{org\+::newdawn\+::slick\+::svg\+::\+Linear\+Gradient\+Fill@{org\+::newdawn\+::slick\+::svg\+::\+Linear\+Gradient\+Fill}!gradient@{gradient}}
+\index{gradient@{gradient}!org\+::newdawn\+::slick\+::svg\+::\+Linear\+Gradient\+Fill@{org\+::newdawn\+::slick\+::svg\+::\+Linear\+Gradient\+Fill}}
+\subsubsection{\texorpdfstring{gradient}{gradient}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1_gradient}{Gradient}} org.\+newdawn.\+slick.\+svg.\+Linear\+Gradient\+Fill.\+gradient\hspace{0.3cm}{\ttfamily [private]}}
+
+The gradient being applied \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1svg_1_1_linear_gradient_fill_a3c9d1489a824879ba1e0b3a95a08dbda}\label{classorg_1_1newdawn_1_1slick_1_1svg_1_1_linear_gradient_fill_a3c9d1489a824879ba1e0b3a95a08dbda}} 
+\index{org\+::newdawn\+::slick\+::svg\+::\+Linear\+Gradient\+Fill@{org\+::newdawn\+::slick\+::svg\+::\+Linear\+Gradient\+Fill}!line@{line}}
+\index{line@{line}!org\+::newdawn\+::slick\+::svg\+::\+Linear\+Gradient\+Fill@{org\+::newdawn\+::slick\+::svg\+::\+Linear\+Gradient\+Fill}}
+\subsubsection{\texorpdfstring{line}{line}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_line}{Line}} org.\+newdawn.\+slick.\+svg.\+Linear\+Gradient\+Fill.\+line\hspace{0.3cm}{\ttfamily [private]}}
+
+The line of the gradient \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1svg_1_1_linear_gradient_fill_a8d9085ba4c009c6fce0b06a834ef30e3}\label{classorg_1_1newdawn_1_1slick_1_1svg_1_1_linear_gradient_fill_a8d9085ba4c009c6fce0b06a834ef30e3}} 
+\index{org\+::newdawn\+::slick\+::svg\+::\+Linear\+Gradient\+Fill@{org\+::newdawn\+::slick\+::svg\+::\+Linear\+Gradient\+Fill}!shape@{shape}}
+\index{shape@{shape}!org\+::newdawn\+::slick\+::svg\+::\+Linear\+Gradient\+Fill@{org\+::newdawn\+::slick\+::svg\+::\+Linear\+Gradient\+Fill}}
+\subsubsection{\texorpdfstring{shape}{shape}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_shape}{Shape}} org.\+newdawn.\+slick.\+svg.\+Linear\+Gradient\+Fill.\+shape\hspace{0.3cm}{\ttfamily [private]}}
+
+The shape being filled with gradient \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1svg_1_1_linear_gradient_fill_acd016204314fd234afb74aa32282ac7d}\label{classorg_1_1newdawn_1_1slick_1_1svg_1_1_linear_gradient_fill_acd016204314fd234afb74aa32282ac7d}} 
+\index{org\+::newdawn\+::slick\+::svg\+::\+Linear\+Gradient\+Fill@{org\+::newdawn\+::slick\+::svg\+::\+Linear\+Gradient\+Fill}!start@{start}}
+\index{start@{start}!org\+::newdawn\+::slick\+::svg\+::\+Linear\+Gradient\+Fill@{org\+::newdawn\+::slick\+::svg\+::\+Linear\+Gradient\+Fill}}
+\subsubsection{\texorpdfstring{start}{start}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_vector2f}{Vector2f}} org.\+newdawn.\+slick.\+svg.\+Linear\+Gradient\+Fill.\+start\hspace{0.3cm}{\ttfamily [private]}}
+
+The start position of the gradient line 

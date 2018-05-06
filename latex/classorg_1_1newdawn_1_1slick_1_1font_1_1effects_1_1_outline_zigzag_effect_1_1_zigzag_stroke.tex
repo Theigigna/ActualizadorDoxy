@@ -1,0 +1,111 @@
+\hypertarget{classorg_1_1newdawn_1_1slick_1_1font_1_1effects_1_1_outline_zigzag_effect_1_1_zigzag_stroke}{}\section{org.\+newdawn.\+slick.\+font.\+effects.\+Outline\+Zigzag\+Effect.\+Zigzag\+Stroke Class Reference}
+\label{classorg_1_1newdawn_1_1slick_1_1font_1_1effects_1_1_outline_zigzag_effect_1_1_zigzag_stroke}\index{org.\+newdawn.\+slick.\+font.\+effects.\+Outline\+Zigzag\+Effect.\+Zigzag\+Stroke@{org.\+newdawn.\+slick.\+font.\+effects.\+Outline\+Zigzag\+Effect.\+Zigzag\+Stroke}}
+Inheritance diagram for org.\+newdawn.\+slick.\+font.\+effects.\+Outline\+Zigzag\+Effect.\+Zigzag\+Stroke\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classorg_1_1newdawn_1_1slick_1_1font_1_1effects_1_1_outline_zigzag_effect_1_1_zigzag_stroke}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+Shape \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1font_1_1effects_1_1_outline_zigzag_effect_1_1_zigzag_stroke_ac2e21e3dd033f15dfd89bea3dc6ff337}{create\+Stroked\+Shape}} (Shape shape)
+\end{DoxyCompactItemize}
+\subsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static final float \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1font_1_1effects_1_1_outline_zigzag_effect_1_1_zigzag_stroke_a23a03ec9f7b08b39400967cb8ad91582}{F\+L\+A\+T\+N\+E\+SS}} = 1
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A stroke to generate zigzags
+
+\begin{DoxyAuthor}{Author}
+Jerry Huxtable 
+
+Nathan Sweet \href{mailto:misc@n4te.com}{\tt misc@n4te.\+com} 
+\end{DoxyAuthor}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1font_1_1effects_1_1_outline_zigzag_effect_1_1_zigzag_stroke_ac2e21e3dd033f15dfd89bea3dc6ff337}\label{classorg_1_1newdawn_1_1slick_1_1font_1_1effects_1_1_outline_zigzag_effect_1_1_zigzag_stroke_ac2e21e3dd033f15dfd89bea3dc6ff337}} 
+\index{org\+::newdawn\+::slick\+::font\+::effects\+::\+Outline\+Zigzag\+Effect\+::\+Zigzag\+Stroke@{org\+::newdawn\+::slick\+::font\+::effects\+::\+Outline\+Zigzag\+Effect\+::\+Zigzag\+Stroke}!create\+Stroked\+Shape@{create\+Stroked\+Shape}}
+\index{create\+Stroked\+Shape@{create\+Stroked\+Shape}!org\+::newdawn\+::slick\+::font\+::effects\+::\+Outline\+Zigzag\+Effect\+::\+Zigzag\+Stroke@{org\+::newdawn\+::slick\+::font\+::effects\+::\+Outline\+Zigzag\+Effect\+::\+Zigzag\+Stroke}}
+\subsubsection{\texorpdfstring{create\+Stroked\+Shape()}{createStrokedShape()}}
+{\footnotesize\ttfamily Shape org.\+newdawn.\+slick.\+font.\+effects.\+Outline\+Zigzag\+Effect.\+Zigzag\+Stroke.\+create\+Stroked\+Shape (\begin{DoxyParamCaption}\item[{Shape}]{shape }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxySeeAlso}{See also}
+java.\+awt.\+Stroke\+::create\+Stroked\+Shape(java.\+awt.\+Shape) 
+\end{DoxySeeAlso}
+
+\begin{DoxyCode}
+139                                                       \{
+140             GeneralPath result = \textcolor{keyword}{new} GeneralPath();
+141             PathIterator it = \textcolor{keyword}{new} FlatteningPathIterator(shape.getPathIterator(null), 
+      \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1font_1_1effects_1_1_outline_zigzag_effect_1_1_zigzag_stroke_a23a03ec9f7b08b39400967cb8ad91582}{FLATNESS}});
+142             \textcolor{keywordtype}{float} points[] = \textcolor{keyword}{new} \textcolor{keywordtype}{float}[6];
+143             \textcolor{keywordtype}{float} moveX = 0, moveY = 0;
+144             \textcolor{keywordtype}{float} lastX = 0, lastY = 0;
+145             \textcolor{keywordtype}{float} thisX = 0, thisY = 0;
+146             \textcolor{keywordtype}{int} type = 0;
+147             \textcolor{keywordtype}{float} next = 0;
+148             \textcolor{keywordtype}{int} phase = 0;
+149             \textcolor{keywordflow}{while} (!it.isDone()) \{
+150                 type = it.currentSegment(points);
+151                 \textcolor{keywordflow}{switch} (type) \{
+152                 \textcolor{keywordflow}{case} PathIterator.SEG\_MOVETO:
+153                     moveX = lastX = points[0];
+154                     moveY = lastY = points[1];
+155                     result.moveTo(moveX, moveY);
+156                     next = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1font_1_1effects_1_1_outline_zigzag_effect_a4393ec4437b469ea2855c70deec82d09}{wavelength}} / 2;
+157                     \textcolor{keywordflow}{break};
+158 
+159                 \textcolor{keywordflow}{case} PathIterator.SEG\_CLOSE:
+160                     points[0] = moveX;
+161                     points[1] = moveY;
+162                     \textcolor{comment}{// Fall into....}
+163 
+164                 \textcolor{keywordflow}{case} PathIterator.SEG\_LINETO:
+165                     thisX = points[0];
+166                     thisY = points[1];
+167                     \textcolor{keywordtype}{float} dx = thisX - lastX;
+168                     \textcolor{keywordtype}{float} dy = thisY - lastY;
+169                     \textcolor{keywordtype}{float} distance = (float)Math.sqrt(dx * dx + dy * dy);
+170                     \textcolor{keywordflow}{if} (distance >= next) \{
+171                         \textcolor{keywordtype}{float} r = 1.0f / distance;
+172                         \textcolor{keywordflow}{while} (distance >= next) \{
+173                             \textcolor{keywordtype}{float} x = lastX + next * dx * r;
+174                             \textcolor{keywordtype}{float} y = lastY + next * dy * r;
+175                             \textcolor{keywordflow}{if} ((phase & 1) == 0)
+176                                 result.lineTo(x + \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1font_1_1effects_1_1_outline_zigzag_effect_a26543e6243bf5e4fb7486d7a7674ed1c}{amplitude}} * dy * r, y - 
+      \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1font_1_1effects_1_1_outline_zigzag_effect_a26543e6243bf5e4fb7486d7a7674ed1c}{amplitude}} * dx * r);
+177                             \textcolor{keywordflow}{else}
+178                                 result.lineTo(x - \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1font_1_1effects_1_1_outline_zigzag_effect_a26543e6243bf5e4fb7486d7a7674ed1c}{amplitude}} * dy * r, y + 
+      \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1font_1_1effects_1_1_outline_zigzag_effect_a26543e6243bf5e4fb7486d7a7674ed1c}{amplitude}} * dx * r);
+179                             next += \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1font_1_1effects_1_1_outline_zigzag_effect_a4393ec4437b469ea2855c70deec82d09}{wavelength}};
+180                             phase++;
+181                         \}
+182                     \}
+183                     next -= distance;
+184                     lastX = thisX;
+185                     lastY = thisY;
+186                     \textcolor{keywordflow}{if} (type == PathIterator.SEG\_CLOSE) result.closePath();
+187                     \textcolor{keywordflow}{break};
+188                 \}
+189                 it.next();
+190             \}
+191             \textcolor{keywordflow}{return} \textcolor{keyword}{new} BasicStroke(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1font_1_1effects_1_1_outline_effect_a4e38d6349e329f70056eaed9dece69a3}{getWidth}}(), BasicStroke.CAP\_SQUARE, 
+      \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1font_1_1effects_1_1_outline_effect_a495949cd03000b18b0d3907596afeb53}{getJoin}}()).createStrokedShape(result);
+192         \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1font_1_1effects_1_1_outline_zigzag_effect_1_1_zigzag_stroke_a23a03ec9f7b08b39400967cb8ad91582}\label{classorg_1_1newdawn_1_1slick_1_1font_1_1effects_1_1_outline_zigzag_effect_1_1_zigzag_stroke_a23a03ec9f7b08b39400967cb8ad91582}} 
+\index{org\+::newdawn\+::slick\+::font\+::effects\+::\+Outline\+Zigzag\+Effect\+::\+Zigzag\+Stroke@{org\+::newdawn\+::slick\+::font\+::effects\+::\+Outline\+Zigzag\+Effect\+::\+Zigzag\+Stroke}!F\+L\+A\+T\+N\+E\+SS@{F\+L\+A\+T\+N\+E\+SS}}
+\index{F\+L\+A\+T\+N\+E\+SS@{F\+L\+A\+T\+N\+E\+SS}!org\+::newdawn\+::slick\+::font\+::effects\+::\+Outline\+Zigzag\+Effect\+::\+Zigzag\+Stroke@{org\+::newdawn\+::slick\+::font\+::effects\+::\+Outline\+Zigzag\+Effect\+::\+Zigzag\+Stroke}}
+\subsubsection{\texorpdfstring{F\+L\+A\+T\+N\+E\+SS}{FLATNESS}}
+{\footnotesize\ttfamily final float org.\+newdawn.\+slick.\+font.\+effects.\+Outline\+Zigzag\+Effect.\+Zigzag\+Stroke.\+F\+L\+A\+T\+N\+E\+SS = 1\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+The flattening factor applied to the path iterator 

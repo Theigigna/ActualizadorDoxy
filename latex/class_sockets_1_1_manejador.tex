@@ -1,0 +1,143 @@
+\hypertarget{class_sockets_1_1_manejador}{}\section{Sockets.\+Manejador Class Reference}
+\label{class_sockets_1_1_manejador}\index{Sockets.\+Manejador@{Sockets.\+Manejador}}
+Inheritance diagram for Sockets.\+Manejador\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_sockets_1_1_manejador}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_sockets_1_1_manejador_a6f0db35c12ec8b3dc008fa0e8d07324f}{run}} ()
+\end{DoxyCompactItemize}
+\subsection*{Package Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_sockets_1_1_manejador_a074d5730fb98ef489d0af3786f5e58cb}{Manejador}} (\mbox{\hyperlink{class_sockets_1_1_paso}{Paso}} \mbox{\hyperlink{class_sockets_1_1_manejador_a9eebde9281de4525c33c8cf7ee278975}{paso}}, Socket \mbox{\hyperlink{class_sockets_1_1_manejador_a71819caa3c23e76fcd4faa94377cae72}{socket}})
+\end{DoxyCompactItemize}
+\subsection*{Package Attributes}
+\begin{DoxyCompactItemize}
+\item 
+boolean \mbox{\hyperlink{class_sockets_1_1_manejador_aa1ef67c0efe69c6b47c193c8d49a84f4}{salir}}
+\item 
+String \mbox{\hyperlink{class_sockets_1_1_manejador_a88d7f7ec2ce70bf96c09b715358b1b9b}{respuesta}}
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Socket \mbox{\hyperlink{class_sockets_1_1_manejador_a71819caa3c23e76fcd4faa94377cae72}{socket}}
+\item 
+Data\+Input\+Stream \mbox{\hyperlink{class_sockets_1_1_manejador_ac51aaab6667f8f43427bf39f8afb740a}{entrada}}
+\item 
+\mbox{\hyperlink{class_sockets_1_1_paso}{Paso}} \mbox{\hyperlink{class_sockets_1_1_manejador_a9eebde9281de4525c33c8cf7ee278975}{paso}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyAuthor}{Author}
+Ignacio 
+\end{DoxyAuthor}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_sockets_1_1_manejador_a074d5730fb98ef489d0af3786f5e58cb}\label{class_sockets_1_1_manejador_a074d5730fb98ef489d0af3786f5e58cb}} 
+\index{Sockets\+::\+Manejador@{Sockets\+::\+Manejador}!Manejador@{Manejador}}
+\index{Manejador@{Manejador}!Sockets\+::\+Manejador@{Sockets\+::\+Manejador}}
+\subsubsection{\texorpdfstring{Manejador()}{Manejador()}}
+{\footnotesize\ttfamily Sockets.\+Manejador.\+Manejador (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_sockets_1_1_paso}{Paso}}}]{paso,  }\item[{Socket}]{socket }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [package]}}
+
+
+\begin{DoxyCode}
+27     \{
+28         this.\mbox{\hyperlink{class_sockets_1_1_manejador_a88d7f7ec2ce70bf96c09b715358b1b9b}{respuesta}} = \textcolor{stringliteral}{""};
+29         this.\mbox{\hyperlink{class_sockets_1_1_manejador_aa1ef67c0efe69c6b47c193c8d49a84f4}{salir}} = \textcolor{keyword}{false};
+30         this.\mbox{\hyperlink{class_sockets_1_1_manejador_a71819caa3c23e76fcd4faa94377cae72}{socket}} = \mbox{\hyperlink{class_sockets_1_1_manejador_a71819caa3c23e76fcd4faa94377cae72}{socket}};
+31         this.\mbox{\hyperlink{class_sockets_1_1_manejador_a9eebde9281de4525c33c8cf7ee278975}{paso}} = \mbox{\hyperlink{class_sockets_1_1_manejador_a9eebde9281de4525c33c8cf7ee278975}{paso}};
+32     \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_sockets_1_1_manejador_a6f0db35c12ec8b3dc008fa0e8d07324f}\label{class_sockets_1_1_manejador_a6f0db35c12ec8b3dc008fa0e8d07324f}} 
+\index{Sockets\+::\+Manejador@{Sockets\+::\+Manejador}!run@{run}}
+\index{run@{run}!Sockets\+::\+Manejador@{Sockets\+::\+Manejador}}
+\subsubsection{\texorpdfstring{run()}{run()}}
+{\footnotesize\ttfamily void Sockets.\+Manejador.\+run (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+34                       \{
+35         System.out.println(\textcolor{stringliteral}{"El handler runnea"});
+36         \textcolor{keywordflow}{while}(!\mbox{\hyperlink{class_sockets_1_1_manejador_aa1ef67c0efe69c6b47c193c8d49a84f4}{salir}})
+37         \{
+38             \textcolor{keywordflow}{try} \{
+39              \textcolor{comment}{// read and service request}
+40              \mbox{\hyperlink{class_sockets_1_1_manejador_ac51aaab6667f8f43427bf39f8afb740a}{entrada}} = \textcolor{keyword}{new} DataInputStream(\mbox{\hyperlink{class_sockets_1_1_manejador_a71819caa3c23e76fcd4faa94377cae72}{socket}}.getInputStream());
+41          \} \textcolor{keywordflow}{catch} (IOException ex) \{
+42              Logger.getLogger(\mbox{\hyperlink{class_sockets_1_1_manejador_a074d5730fb98ef489d0af3786f5e58cb}{Manejador}}.class.getName()).log(Level.SEVERE, null, ex);
+43          \}
+44             
+45             \textcolor{keywordflow}{try} \{  
+46                 \mbox{\hyperlink{class_sockets_1_1_manejador_a88d7f7ec2ce70bf96c09b715358b1b9b}{respuesta}} = \mbox{\hyperlink{class_sockets_1_1_manejador_ac51aaab6667f8f43427bf39f8afb740a}{entrada}}.readUTF();
+47             \} \textcolor{keywordflow}{catch} (IOException ex) \{
+48                 Logger.getLogger(\mbox{\hyperlink{class_sockets_1_1_manejador_a074d5730fb98ef489d0af3786f5e58cb}{Manejador}}.class.getName()).log(Level.SEVERE, null, ex);
+49             \}
+50         
+51             \textcolor{keywordflow}{if}(\textcolor{stringliteral}{"parar"}.equals(\mbox{\hyperlink{class_sockets_1_1_manejador_a88d7f7ec2ce70bf96c09b715358b1b9b}{respuesta}}))\textcolor{comment}{//parar}
+52             \{
+53                 \mbox{\hyperlink{class_sockets_1_1_manejador_a9eebde9281de4525c33c8cf7ee278975}{paso}}.\mbox{\hyperlink{class_sockets_1_1_paso_a56e0e78be832edf53d6cbc29b095ac71}{cerrar}}();
+54             \}\textcolor{keywordflow}{else}
+55             \{
+56                 \textcolor{keywordflow}{if}(\textcolor{stringliteral}{"reanudar"}.equals(\mbox{\hyperlink{class_sockets_1_1_manejador_a88d7f7ec2ce70bf96c09b715358b1b9b}{respuesta}}))\textcolor{comment}{//reanudar}
+57                 \{
+58                     \mbox{\hyperlink{class_sockets_1_1_manejador_a9eebde9281de4525c33c8cf7ee278975}{paso}}.\mbox{\hyperlink{class_sockets_1_1_paso_ae1faa4c34d81cb9ffaef7ff4bc49eab6}{abrir}}();
+59                 \}
+60                 \textcolor{keywordflow}{else}\textcolor{comment}{//cerrar}
+61                 \{
+62                     \textcolor{keywordflow}{try} \{
+63                         \mbox{\hyperlink{class_sockets_1_1_manejador_ac51aaab6667f8f43427bf39f8afb740a}{entrada}}.close();
+64                         \mbox{\hyperlink{class_sockets_1_1_manejador_a71819caa3c23e76fcd4faa94377cae72}{socket}}.close();
+65                     \} \textcolor{keywordflow}{catch} (IOException ex) \{
+66                         Logger.getLogger(\mbox{\hyperlink{class_sockets_1_1_manejador_a074d5730fb98ef489d0af3786f5e58cb}{Manejador}}.class.getName()).log(Level.SEVERE, null, ex);
+67                     \}
+68                     \mbox{\hyperlink{class_sockets_1_1_manejador_aa1ef67c0efe69c6b47c193c8d49a84f4}{salir}} = \textcolor{keyword}{true};
+69                 \}
+70             \}
+71             
+72         \}
+73     \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_sockets_1_1_manejador_ac51aaab6667f8f43427bf39f8afb740a}\label{class_sockets_1_1_manejador_ac51aaab6667f8f43427bf39f8afb740a}} 
+\index{Sockets\+::\+Manejador@{Sockets\+::\+Manejador}!entrada@{entrada}}
+\index{entrada@{entrada}!Sockets\+::\+Manejador@{Sockets\+::\+Manejador}}
+\subsubsection{\texorpdfstring{entrada}{entrada}}
+{\footnotesize\ttfamily Data\+Input\+Stream Sockets.\+Manejador.\+entrada\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_sockets_1_1_manejador_a9eebde9281de4525c33c8cf7ee278975}\label{class_sockets_1_1_manejador_a9eebde9281de4525c33c8cf7ee278975}} 
+\index{Sockets\+::\+Manejador@{Sockets\+::\+Manejador}!paso@{paso}}
+\index{paso@{paso}!Sockets\+::\+Manejador@{Sockets\+::\+Manejador}}
+\subsubsection{\texorpdfstring{paso}{paso}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_sockets_1_1_paso}{Paso}} Sockets.\+Manejador.\+paso\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_sockets_1_1_manejador_a88d7f7ec2ce70bf96c09b715358b1b9b}\label{class_sockets_1_1_manejador_a88d7f7ec2ce70bf96c09b715358b1b9b}} 
+\index{Sockets\+::\+Manejador@{Sockets\+::\+Manejador}!respuesta@{respuesta}}
+\index{respuesta@{respuesta}!Sockets\+::\+Manejador@{Sockets\+::\+Manejador}}
+\subsubsection{\texorpdfstring{respuesta}{respuesta}}
+{\footnotesize\ttfamily String Sockets.\+Manejador.\+respuesta\hspace{0.3cm}{\ttfamily [package]}}
+
+\mbox{\Hypertarget{class_sockets_1_1_manejador_aa1ef67c0efe69c6b47c193c8d49a84f4}\label{class_sockets_1_1_manejador_aa1ef67c0efe69c6b47c193c8d49a84f4}} 
+\index{Sockets\+::\+Manejador@{Sockets\+::\+Manejador}!salir@{salir}}
+\index{salir@{salir}!Sockets\+::\+Manejador@{Sockets\+::\+Manejador}}
+\subsubsection{\texorpdfstring{salir}{salir}}
+{\footnotesize\ttfamily boolean Sockets.\+Manejador.\+salir\hspace{0.3cm}{\ttfamily [package]}}
+
+\mbox{\Hypertarget{class_sockets_1_1_manejador_a71819caa3c23e76fcd4faa94377cae72}\label{class_sockets_1_1_manejador_a71819caa3c23e76fcd4faa94377cae72}} 
+\index{Sockets\+::\+Manejador@{Sockets\+::\+Manejador}!socket@{socket}}
+\index{socket@{socket}!Sockets\+::\+Manejador@{Sockets\+::\+Manejador}}
+\subsubsection{\texorpdfstring{socket}{socket}}
+{\footnotesize\ttfamily Socket Sockets.\+Manejador.\+socket\hspace{0.3cm}{\ttfamily [private]}}
+

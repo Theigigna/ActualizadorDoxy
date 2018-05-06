@@ -1,0 +1,874 @@
+\hypertarget{classorg_1_1newdawn_1_1slick_1_1geom_1_1_neat_triangulator}{}\section{org.\+newdawn.\+slick.\+geom.\+Neat\+Triangulator Class Reference}
+\label{classorg_1_1newdawn_1_1slick_1_1geom_1_1_neat_triangulator}\index{org.\+newdawn.\+slick.\+geom.\+Neat\+Triangulator@{org.\+newdawn.\+slick.\+geom.\+Neat\+Triangulator}}
+Inheritance diagram for org.\+newdawn.\+slick.\+geom.\+Neat\+Triangulator\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classorg_1_1newdawn_1_1slick_1_1geom_1_1_neat_triangulator}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_neat_triangulator_1_1_edge}{Edge}}
+\item 
+class \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_neat_triangulator_1_1_internal_exception}{Internal\+Exception}}
+\item 
+class \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_neat_triangulator_1_1_triangle}{Triangle}}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_neat_triangulator_aa62b863de4b884975e744a452dd2f280}{Neat\+Triangulator}} ()
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_neat_triangulator_a907a9806c7f97a03fb7f450e64d93a13}{clear}} ()
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_neat_triangulator_ab1c1949c138da4b2c29a47c5326059e0}{basic\+Triangulation}} ()  throws Internal\+Exception     
+\item 
+boolean \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_neat_triangulator_a32227a64f0e7142d40d79a1adb3fdb24}{triangulate}} ()
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_neat_triangulator_a6203fd3d4b9892789ebd3512d6cb403f}{add\+Poly\+Point}} (float x, float y)
+\item 
+int \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_neat_triangulator_a9974151d5e703dc37326ac89f8db1de1}{get\+Triangle\+Count}} ()
+\item 
+float \mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_neat_triangulator_a286bb2dbff64783e498ec5b41003fb03}{get\+Triangle\+Point}} (int tri, int i)
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_neat_triangulator_ae035b8f5385bd2284cecd4fa1b98c2bc}{start\+Hole}} ()
+\end{DoxyCompactItemize}
+\subsection*{Package Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_neat_triangulator_a68d436b8465e95a2fc44584e9c6f77f0}{mark\+Suspect}} (int i, int j, boolean flag)  throws Internal\+Exception     
+\end{DoxyCompactItemize}
+\subsection*{Static Package Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static final float \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_neat_triangulator_a3591ad18c067004e78b06217362e3d7b}{E\+P\+S\+I\+L\+ON}} = 1\+E-\/006F
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_neat_triangulator_a78cbec0ff58e88805e3174b00ac42dc4}{find\+Edge}} (int i, int j)
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_neat_triangulator_a71083562024c4442249a515d92e70c00}{add\+Edge}} (int i, int j, int k)
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_neat_triangulator_a673c87f2077e95be1fc7dcfd61c02831}{delete\+Edge}} (int i, int j)  throws Internal\+Exception     
+\item 
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_neat_triangulator_1_1_edge}{Edge}} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_neat_triangulator_a0d36e6ed2cd14c353f7d3192cb403ed9}{choose\+Suspect}} ()
+\item 
+boolean \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_neat_triangulator_ae7609b9e246ca3e4c4716d89c4a8a66f}{snip}} (int i, int j, int k, int l)
+\item 
+float \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_neat_triangulator_ab9876be3379b56e71cce96d15fdd9044}{area}} ()
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_neat_triangulator_a9d31e5717d81b79f9be1c882031c549c}{optimize}} ()  throws Internal\+Exception     
+\end{DoxyCompactItemize}
+\subsection*{Static Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static float \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_neat_triangulator_a8d1807a32fd407da54f5fc48302197f3}{rho}} (float f, float f1, float f2, float f3, float f4, float f5)
+\item 
+static boolean \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_neat_triangulator_a95e47c0ce903fd1ea4ed9d7143c10ca8}{inside\+Triangle}} (float f, float f1, float f2, float f3, float f4, float f5, float f6, float f7)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+float \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_neat_triangulator_a651e2f489c027306dacf8b03fb0f04a0}{pointsX}} \mbox{[}$\,$\mbox{]}
+\item 
+float \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_neat_triangulator_ac4491217b5be9c7a1ccbdb5511f832d9}{pointsY}} \mbox{[}$\,$\mbox{]}
+\item 
+int \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_neat_triangulator_a24b4a230bc11d3c96dfe1de4dcb297f5}{num\+Points}}
+\item 
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_neat_triangulator_1_1_edge}{Edge}} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_neat_triangulator_a0abf260e1febb5ef0afc9894280f9efb}{edges}} \mbox{[}$\,$\mbox{]}
+\item 
+int \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_neat_triangulator_a149e043fb9cba67d89b3bcc8fb188df6}{V}} \mbox{[}$\,$\mbox{]}
+\item 
+int \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_neat_triangulator_a4c9fba4faad072774b3b0fcbc7fd0fff}{num\+Edges}}
+\item 
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_neat_triangulator_1_1_triangle}{Triangle}} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_neat_triangulator_a007f9ede3582ce3c9c1439b40e4e5f55}{triangles}} \mbox{[}$\,$\mbox{]}
+\item 
+int \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_neat_triangulator_a5a9d015e9872ed5961cddfb49b3d1853}{num\+Triangles}}
+\item 
+float \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_neat_triangulator_ab147880b88dbf400f31c1a5ac9667c7e}{offset}} = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_neat_triangulator_a3591ad18c067004e78b06217362e3d7b}{E\+P\+S\+I\+L\+ON}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A second triangulator that seems slightly more robust
+
+\begin{DoxyAuthor}{Author}
+Online examples 
+\end{DoxyAuthor}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1geom_1_1_neat_triangulator_aa62b863de4b884975e744a452dd2f280}\label{classorg_1_1newdawn_1_1slick_1_1geom_1_1_neat_triangulator_aa62b863de4b884975e744a452dd2f280}} 
+\index{org\+::newdawn\+::slick\+::geom\+::\+Neat\+Triangulator@{org\+::newdawn\+::slick\+::geom\+::\+Neat\+Triangulator}!Neat\+Triangulator@{Neat\+Triangulator}}
+\index{Neat\+Triangulator@{Neat\+Triangulator}!org\+::newdawn\+::slick\+::geom\+::\+Neat\+Triangulator@{org\+::newdawn\+::slick\+::geom\+::\+Neat\+Triangulator}}
+\subsubsection{\texorpdfstring{Neat\+Triangulator()}{NeatTriangulator()}}
+{\footnotesize\ttfamily org.\+newdawn.\+slick.\+geom.\+Neat\+Triangulator.\+Neat\+Triangulator (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Create a new triangulator 
+\begin{DoxyCode}
+37     \{
+38         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_neat_triangulator_a651e2f489c027306dacf8b03fb0f04a0}{pointsX}} = \textcolor{keyword}{new} \textcolor{keywordtype}{float}[100];
+39         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_neat_triangulator_ac4491217b5be9c7a1ccbdb5511f832d9}{pointsY}} = \textcolor{keyword}{new} \textcolor{keywordtype}{float}[100];
+40         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_neat_triangulator_a24b4a230bc11d3c96dfe1de4dcb297f5}{numPoints}} = 0;
+41         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_neat_triangulator_a0abf260e1febb5ef0afc9894280f9efb}{edges}} = \textcolor{keyword}{new} Edge[100];
+42         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_neat_triangulator_a4c9fba4faad072774b3b0fcbc7fd0fff}{numEdges}} = 0;
+43         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_neat_triangulator_a007f9ede3582ce3c9c1439b40e4e5f55}{triangles}} = \textcolor{keyword}{new} Triangle[100];
+44         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_neat_triangulator_a5a9d015e9872ed5961cddfb49b3d1853}{numTriangles}} = 0;
+45     \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1geom_1_1_neat_triangulator_a71083562024c4442249a515d92e70c00}\label{classorg_1_1newdawn_1_1slick_1_1geom_1_1_neat_triangulator_a71083562024c4442249a515d92e70c00}} 
+\index{org\+::newdawn\+::slick\+::geom\+::\+Neat\+Triangulator@{org\+::newdawn\+::slick\+::geom\+::\+Neat\+Triangulator}!add\+Edge@{add\+Edge}}
+\index{add\+Edge@{add\+Edge}!org\+::newdawn\+::slick\+::geom\+::\+Neat\+Triangulator@{org\+::newdawn\+::slick\+::geom\+::\+Neat\+Triangulator}}
+\subsubsection{\texorpdfstring{add\+Edge()}{addEdge()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+geom.\+Neat\+Triangulator.\+add\+Edge (\begin{DoxyParamCaption}\item[{int}]{i,  }\item[{int}]{j,  }\item[{int}]{k }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+Add a discovered edge
+
+
+\begin{DoxyParams}{Parameters}
+{\em i} & The index of the first vert \\
+\hline
+{\em j} & The index of the second vert \\
+\hline
+{\em k} & The index of the spread vert \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+92     \{
+93         \textcolor{keywordtype}{int} l1 = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_neat_triangulator_a78cbec0ff58e88805e3174b00ac42dc4}{findEdge}}(i, j);
+94         \textcolor{keywordtype}{int} j1;
+95         \textcolor{keywordtype}{int} k1;
+96         Edge edge;
+97         \textcolor{keywordflow}{if}(l1 < 0)
+98         \{
+99             \textcolor{keywordflow}{if}(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_neat_triangulator_a4c9fba4faad072774b3b0fcbc7fd0fff}{numEdges}} == \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_neat_triangulator_a0abf260e1febb5ef0afc9894280f9efb}{edges}}.length)
+100             \{
+101                 Edge aedge[] = \textcolor{keyword}{new} Edge[\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_neat_triangulator_a0abf260e1febb5ef0afc9894280f9efb}{edges}}.length * 2];
+102                 System.arraycopy(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_neat_triangulator_a0abf260e1febb5ef0afc9894280f9efb}{edges}}, 0, aedge, 0, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_neat_triangulator_a4c9fba4faad072774b3b0fcbc7fd0fff}{numEdges}});
+103                 \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_neat_triangulator_a0abf260e1febb5ef0afc9894280f9efb}{edges}} = aedge;
+104             \}
+105             j1 = -1;
+106             k1 = -1;
+107             l1 = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_neat_triangulator_a4c9fba4faad072774b3b0fcbc7fd0fff}{numEdges}}++;
+108             edge = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_neat_triangulator_a0abf260e1febb5ef0afc9894280f9efb}{edges}}[l1] = \textcolor{keyword}{new} Edge();
+109         \} \textcolor{keywordflow}{else}
+110         \{
+111             edge = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_neat_triangulator_a0abf260e1febb5ef0afc9894280f9efb}{edges}}[l1];
+112             j1 = edge.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_neat_triangulator_1_1_edge_a74e295c3081baba43bdd7fc93c758b37}{t0}};
+113             k1 = edge.t1;
+114         \}
+115         \textcolor{keywordtype}{int} l;
+116         \textcolor{keywordtype}{int} i1;
+117         \textcolor{keywordflow}{if}(i < j)
+118         \{
+119             l = i;
+120             i1 = j;
+121             j1 = k;
+122         \} \textcolor{keywordflow}{else}
+123         \{
+124             l = j;
+125             i1 = i;
+126             k1 = k;
+127         \}
+128         edge.v0 = l;
+129         edge.v1 = i1;
+130         edge.t0 = j1;
+131         edge.t1 = k1;
+132         edge.suspect = \textcolor{keyword}{true};
+133     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1geom_1_1_neat_triangulator_a6203fd3d4b9892789ebd3512d6cb403f}\label{classorg_1_1newdawn_1_1slick_1_1geom_1_1_neat_triangulator_a6203fd3d4b9892789ebd3512d6cb403f}} 
+\index{org\+::newdawn\+::slick\+::geom\+::\+Neat\+Triangulator@{org\+::newdawn\+::slick\+::geom\+::\+Neat\+Triangulator}!add\+Poly\+Point@{add\+Poly\+Point}}
+\index{add\+Poly\+Point@{add\+Poly\+Point}!org\+::newdawn\+::slick\+::geom\+::\+Neat\+Triangulator@{org\+::newdawn\+::slick\+::geom\+::\+Neat\+Triangulator}}
+\subsubsection{\texorpdfstring{add\+Poly\+Point()}{addPolyPoint()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+geom.\+Neat\+Triangulator.\+add\+Poly\+Point (\begin{DoxyParamCaption}\item[{float}]{x,  }\item[{float}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Add a point to the polygon 
+
+Implements \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1geom_1_1_triangulator_a32b11eccb582c7f4993a944df0b1db65}{org.\+newdawn.\+slick.\+geom.\+Triangulator}}.
+
+
+\begin{DoxyCode}
+499     \{
+500         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i=0;i<\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_neat_triangulator_a24b4a230bc11d3c96dfe1de4dcb297f5}{numPoints}};i++) \{
+501             \textcolor{keywordflow}{if} ((\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_neat_triangulator_a651e2f489c027306dacf8b03fb0f04a0}{pointsX}}[i] == x) && (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_neat_triangulator_ac4491217b5be9c7a1ccbdb5511f832d9}{pointsY}}[i] == y)) \{
+502                 \textcolor{comment}{//return;}
+503                 y += \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_neat_triangulator_ab147880b88dbf400f31c1a5ac9667c7e}{offset}};
+504                 \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_neat_triangulator_ab147880b88dbf400f31c1a5ac9667c7e}{offset}} += \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_neat_triangulator_a3591ad18c067004e78b06217362e3d7b}{EPSILON}};
+505             \}
+506         \}
+507         
+508         \textcolor{keywordflow}{if}(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_neat_triangulator_a24b4a230bc11d3c96dfe1de4dcb297f5}{numPoints}} == \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_neat_triangulator_a651e2f489c027306dacf8b03fb0f04a0}{pointsX}}.length)
+509         \{
+510             \textcolor{keywordtype}{float} af[] = \textcolor{keyword}{new} \textcolor{keywordtype}{float}[\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_neat_triangulator_a24b4a230bc11d3c96dfe1de4dcb297f5}{numPoints}} * 2];
+511             System.arraycopy(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_neat_triangulator_a651e2f489c027306dacf8b03fb0f04a0}{pointsX}}, 0, af, 0, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_neat_triangulator_a24b4a230bc11d3c96dfe1de4dcb297f5}{numPoints}});
+512             \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_neat_triangulator_a651e2f489c027306dacf8b03fb0f04a0}{pointsX}} = af;
+513             af = \textcolor{keyword}{new} \textcolor{keywordtype}{float}[\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_neat_triangulator_a24b4a230bc11d3c96dfe1de4dcb297f5}{numPoints}} * 2];
+514             System.arraycopy(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_neat_triangulator_ac4491217b5be9c7a1ccbdb5511f832d9}{pointsY}}, 0, af, 0, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_neat_triangulator_a24b4a230bc11d3c96dfe1de4dcb297f5}{numPoints}});
+515             \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_neat_triangulator_ac4491217b5be9c7a1ccbdb5511f832d9}{pointsY}} = af;
+516         \}
+517         
+518         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_neat_triangulator_a651e2f489c027306dacf8b03fb0f04a0}{pointsX}}[\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_neat_triangulator_a24b4a230bc11d3c96dfe1de4dcb297f5}{numPoints}}] = x;
+519         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_neat_triangulator_ac4491217b5be9c7a1ccbdb5511f832d9}{pointsY}}[\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_neat_triangulator_a24b4a230bc11d3c96dfe1de4dcb297f5}{numPoints}}] = y;
+520         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_neat_triangulator_a24b4a230bc11d3c96dfe1de4dcb297f5}{numPoints}}++;
+521     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1geom_1_1_neat_triangulator_ab9876be3379b56e71cce96d15fdd9044}\label{classorg_1_1newdawn_1_1slick_1_1geom_1_1_neat_triangulator_ab9876be3379b56e71cce96d15fdd9044}} 
+\index{org\+::newdawn\+::slick\+::geom\+::\+Neat\+Triangulator@{org\+::newdawn\+::slick\+::geom\+::\+Neat\+Triangulator}!area@{area}}
+\index{area@{area}!org\+::newdawn\+::slick\+::geom\+::\+Neat\+Triangulator@{org\+::newdawn\+::slick\+::geom\+::\+Neat\+Triangulator}}
+\subsubsection{\texorpdfstring{area()}{area()}}
+{\footnotesize\ttfamily float org.\+newdawn.\+slick.\+geom.\+Neat\+Triangulator.\+area (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+Get the area defined by the points
+
+\begin{DoxyReturn}{Returns}
+The area defined by the points 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+307     \{
+308         \textcolor{keywordtype}{float} f = 0.0F;
+309         \textcolor{keywordtype}{int} i = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_neat_triangulator_a24b4a230bc11d3c96dfe1de4dcb297f5}{numPoints}} - 1;
+310         \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} j = 0; j < \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_neat_triangulator_a24b4a230bc11d3c96dfe1de4dcb297f5}{numPoints}};)
+311         \{
+312             f += \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_neat_triangulator_a651e2f489c027306dacf8b03fb0f04a0}{pointsX}}[i] * \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_neat_triangulator_ac4491217b5be9c7a1ccbdb5511f832d9}{pointsY}}[j] - \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_neat_triangulator_ac4491217b5be9c7a1ccbdb5511f832d9}{pointsY}}[i] * 
+      \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_neat_triangulator_a651e2f489c027306dacf8b03fb0f04a0}{pointsX}}[j];
+313             i = j++;
+314         \}
+315 
+316         \textcolor{keywordflow}{return} f * 0.5F;
+317     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1geom_1_1_neat_triangulator_ab1c1949c138da4b2c29a47c5326059e0}\label{classorg_1_1newdawn_1_1slick_1_1geom_1_1_neat_triangulator_ab1c1949c138da4b2c29a47c5326059e0}} 
+\index{org\+::newdawn\+::slick\+::geom\+::\+Neat\+Triangulator@{org\+::newdawn\+::slick\+::geom\+::\+Neat\+Triangulator}!basic\+Triangulation@{basic\+Triangulation}}
+\index{basic\+Triangulation@{basic\+Triangulation}!org\+::newdawn\+::slick\+::geom\+::\+Neat\+Triangulator@{org\+::newdawn\+::slick\+::geom\+::\+Neat\+Triangulator}}
+\subsubsection{\texorpdfstring{basic\+Triangulation()}{basicTriangulation()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+geom.\+Neat\+Triangulator.\+basic\+Triangulation (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_neat_triangulator_1_1_internal_exception}{Internal\+Exception}}\hspace{0.3cm}{\ttfamily [inline]}}
+
+Perform simple triangulation
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_neat_triangulator_1_1_internal_exception}{Internal\+Exception}}} & Indicates a polygon that can\textquotesingle{}t be triangulated \\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyCode}
+325     \{
+326         \textcolor{keywordtype}{int} i = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_neat_triangulator_a24b4a230bc11d3c96dfe1de4dcb297f5}{numPoints}};
+327         \textcolor{keywordflow}{if}(i < 3)
+328             \textcolor{keywordflow}{return};
+329         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_neat_triangulator_a4c9fba4faad072774b3b0fcbc7fd0fff}{numEdges}} = 0;
+330         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_neat_triangulator_a5a9d015e9872ed5961cddfb49b3d1853}{numTriangles}} = 0;
+331         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_neat_triangulator_a149e043fb9cba67d89b3bcc8fb188df6}{V}} = \textcolor{keyword}{new} \textcolor{keywordtype}{int}[i];
+332         
+333         \textcolor{keywordflow}{if}(0.0D < \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_neat_triangulator_ab9876be3379b56e71cce96d15fdd9044}{area}}())
+334         \{
+335             \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} k = 0; k < i; k++)
+336                 \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_neat_triangulator_a149e043fb9cba67d89b3bcc8fb188df6}{V}}[k] = k;
+337 
+338         \} \textcolor{keywordflow}{else}
+339         \{
+340             \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} l = 0; l < i; l++)
+341                 \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_neat_triangulator_a149e043fb9cba67d89b3bcc8fb188df6}{V}}[l] = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_neat_triangulator_a24b4a230bc11d3c96dfe1de4dcb297f5}{numPoints}} - 1 - l;
+342 
+343         \}
+344         \textcolor{keywordtype}{int} k1 = 2 * i;
+345         \textcolor{keywordtype}{int} i1 = i - 1;
+346         \textcolor{keywordflow}{while}(i > 2) 
+347         \{
+348             \textcolor{keywordflow}{if}(0 >= k1--) \{
+349                 \textcolor{keywordflow}{throw} \textcolor{keyword}{new} InternalException(\textcolor{stringliteral}{"Bad polygon"});
+350             \}
+351             
+352             \textcolor{keywordtype}{int} j = i1;
+353             \textcolor{keywordflow}{if}(i <= j)
+354                 j = 0;
+355             i1 = j + 1;
+356             \textcolor{keywordflow}{if}(i <= i1)
+357                 i1 = 0;
+358             \textcolor{keywordtype}{int} j1 = i1 + 1;
+359             \textcolor{keywordflow}{if}(i <= j1)
+360                 j1 = 0;
+361             \textcolor{keywordflow}{if}(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_neat_triangulator_ae7609b9e246ca3e4c4716d89c4a8a66f}{snip}}(j, i1, j1, i))
+362             \{
+363                 \textcolor{keywordtype}{int} l1 = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_neat_triangulator_a149e043fb9cba67d89b3bcc8fb188df6}{V}}[j];
+364                 \textcolor{keywordtype}{int} i2 = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_neat_triangulator_a149e043fb9cba67d89b3bcc8fb188df6}{V}}[i1];
+365                 \textcolor{keywordtype}{int} j2 = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_neat_triangulator_a149e043fb9cba67d89b3bcc8fb188df6}{V}}[j1];
+366                 \textcolor{keywordflow}{if}(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_neat_triangulator_a5a9d015e9872ed5961cddfb49b3d1853}{numTriangles}} == \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_neat_triangulator_a007f9ede3582ce3c9c1439b40e4e5f55}{triangles}}.length)
+367                 \{
+368                     Triangle atriangle[] = \textcolor{keyword}{new} Triangle[\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_neat_triangulator_a007f9ede3582ce3c9c1439b40e4e5f55}{triangles}}.length * 2];
+369                     System.arraycopy(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_neat_triangulator_a007f9ede3582ce3c9c1439b40e4e5f55}{triangles}}, 0, atriangle, 0, 
+      \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_neat_triangulator_a5a9d015e9872ed5961cddfb49b3d1853}{numTriangles}});
+370                     \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_neat_triangulator_a007f9ede3582ce3c9c1439b40e4e5f55}{triangles}} = atriangle;
+371                 \}
+372                 \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_neat_triangulator_a007f9ede3582ce3c9c1439b40e4e5f55}{triangles}}[\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_neat_triangulator_a5a9d015e9872ed5961cddfb49b3d1853}{numTriangles}}] = \textcolor{keyword}{new} Triangle(l1, i2, j2);
+373                 \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_neat_triangulator_a71083562024c4442249a515d92e70c00}{addEdge}}(l1, i2, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_neat_triangulator_a5a9d015e9872ed5961cddfb49b3d1853}{numTriangles}});
+374                 \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_neat_triangulator_a71083562024c4442249a515d92e70c00}{addEdge}}(i2, j2, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_neat_triangulator_a5a9d015e9872ed5961cddfb49b3d1853}{numTriangles}});
+375                 \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_neat_triangulator_a71083562024c4442249a515d92e70c00}{addEdge}}(j2, l1, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_neat_triangulator_a5a9d015e9872ed5961cddfb49b3d1853}{numTriangles}});
+376                 \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_neat_triangulator_a5a9d015e9872ed5961cddfb49b3d1853}{numTriangles}}++;
+377                 \textcolor{keywordtype}{int} k2 = i1;
+378                 \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} l2 = i1 + 1; l2 < i; l2++)
+379                 \{
+380                     \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_neat_triangulator_a149e043fb9cba67d89b3bcc8fb188df6}{V}}[k2] = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_neat_triangulator_a149e043fb9cba67d89b3bcc8fb188df6}{V}}[l2];
+381                     k2++;
+382                 \}
+383 
+384                 i--;
+385                 k1 = 2 * i;
+386             \}
+387         \}
+388         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_neat_triangulator_a149e043fb9cba67d89b3bcc8fb188df6}{V}} = null;
+389     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1geom_1_1_neat_triangulator_a0d36e6ed2cd14c353f7d3192cb403ed9}\label{classorg_1_1newdawn_1_1slick_1_1geom_1_1_neat_triangulator_a0d36e6ed2cd14c353f7d3192cb403ed9}} 
+\index{org\+::newdawn\+::slick\+::geom\+::\+Neat\+Triangulator@{org\+::newdawn\+::slick\+::geom\+::\+Neat\+Triangulator}!choose\+Suspect@{choose\+Suspect}}
+\index{choose\+Suspect@{choose\+Suspect}!org\+::newdawn\+::slick\+::geom\+::\+Neat\+Triangulator@{org\+::newdawn\+::slick\+::geom\+::\+Neat\+Triangulator}}
+\subsubsection{\texorpdfstring{choose\+Suspect()}{chooseSuspect()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_neat_triangulator_1_1_edge}{Edge}} org.\+newdawn.\+slick.\+geom.\+Neat\+Triangulator.\+choose\+Suspect (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+Choose the suspect to become part of the triangle
+
+\begin{DoxyReturn}{Returns}
+The edge selected 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+183     \{
+184         \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i = 0; i < \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_neat_triangulator_a4c9fba4faad072774b3b0fcbc7fd0fff}{numEdges}}; i++)
+185         \{
+186             Edge edge = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_neat_triangulator_a0abf260e1febb5ef0afc9894280f9efb}{edges}}[i];
+187             \textcolor{keywordflow}{if}(edge.suspect)
+188             \{
+189                 edge.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_neat_triangulator_1_1_edge_a8c13f2c41069f6fbcfccb7ff5ed78e84}{suspect}} = \textcolor{keyword}{false};
+190                 \textcolor{keywordflow}{if}(edge.t0 >= 0 && edge.t1 >= 0)
+191                     \textcolor{keywordflow}{return} edge;
+192             \}
+193         \}
+194 
+195         \textcolor{keywordflow}{return} null;
+196     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1geom_1_1_neat_triangulator_a907a9806c7f97a03fb7f450e64d93a13}\label{classorg_1_1newdawn_1_1slick_1_1geom_1_1_neat_triangulator_a907a9806c7f97a03fb7f450e64d93a13}} 
+\index{org\+::newdawn\+::slick\+::geom\+::\+Neat\+Triangulator@{org\+::newdawn\+::slick\+::geom\+::\+Neat\+Triangulator}!clear@{clear}}
+\index{clear@{clear}!org\+::newdawn\+::slick\+::geom\+::\+Neat\+Triangulator@{org\+::newdawn\+::slick\+::geom\+::\+Neat\+Triangulator}}
+\subsubsection{\texorpdfstring{clear()}{clear()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+geom.\+Neat\+Triangulator.\+clear (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Clear the triangulator status 
+\begin{DoxyCode}
+51     \{
+52         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_neat_triangulator_a24b4a230bc11d3c96dfe1de4dcb297f5}{numPoints}} = 0;
+53         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_neat_triangulator_a4c9fba4faad072774b3b0fcbc7fd0fff}{numEdges}} = 0;
+54         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_neat_triangulator_a5a9d015e9872ed5961cddfb49b3d1853}{numTriangles}} = 0;
+55     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1geom_1_1_neat_triangulator_a673c87f2077e95be1fc7dcfd61c02831}\label{classorg_1_1newdawn_1_1slick_1_1geom_1_1_neat_triangulator_a673c87f2077e95be1fc7dcfd61c02831}} 
+\index{org\+::newdawn\+::slick\+::geom\+::\+Neat\+Triangulator@{org\+::newdawn\+::slick\+::geom\+::\+Neat\+Triangulator}!delete\+Edge@{delete\+Edge}}
+\index{delete\+Edge@{delete\+Edge}!org\+::newdawn\+::slick\+::geom\+::\+Neat\+Triangulator@{org\+::newdawn\+::slick\+::geom\+::\+Neat\+Triangulator}}
+\subsubsection{\texorpdfstring{delete\+Edge()}{deleteEdge()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+geom.\+Neat\+Triangulator.\+delete\+Edge (\begin{DoxyParamCaption}\item[{int}]{i,  }\item[{int}]{j }\end{DoxyParamCaption}) throws \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_neat_triangulator_1_1_internal_exception}{Internal\+Exception}}\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+Remove and edge identified by it\textquotesingle{}s verts
+
+
+\begin{DoxyParams}{Parameters}
+{\em i} & The index of the first vert \\
+\hline
+{\em j} & The index of the second vert \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_neat_triangulator_1_1_internal_exception}{Internal\+Exception}}} & Indicates the edge didn\textquotesingle{}t exist \\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyCode}
+143     \{
+144         \textcolor{keywordtype}{int} k;
+145         \textcolor{keywordflow}{if}(0 > (k = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_neat_triangulator_a78cbec0ff58e88805e3174b00ac42dc4}{findEdge}}(i, j)))
+146         \{
+147             \textcolor{keywordflow}{throw} \textcolor{keyword}{new} InternalException(\textcolor{stringliteral}{"Attempt to delete unknown edge"});
+148         \} 
+149         \textcolor{keywordflow}{else}
+150         \{
+151             \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_neat_triangulator_a0abf260e1febb5ef0afc9894280f9efb}{edges}}[k] = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_neat_triangulator_a0abf260e1febb5ef0afc9894280f9efb}{edges}}[--\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_neat_triangulator_a4c9fba4faad072774b3b0fcbc7fd0fff}{numEdges}}];
+152             \textcolor{keywordflow}{return};
+153         \}
+154     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1geom_1_1_neat_triangulator_a78cbec0ff58e88805e3174b00ac42dc4}\label{classorg_1_1newdawn_1_1slick_1_1geom_1_1_neat_triangulator_a78cbec0ff58e88805e3174b00ac42dc4}} 
+\index{org\+::newdawn\+::slick\+::geom\+::\+Neat\+Triangulator@{org\+::newdawn\+::slick\+::geom\+::\+Neat\+Triangulator}!find\+Edge@{find\+Edge}}
+\index{find\+Edge@{find\+Edge}!org\+::newdawn\+::slick\+::geom\+::\+Neat\+Triangulator@{org\+::newdawn\+::slick\+::geom\+::\+Neat\+Triangulator}}
+\subsubsection{\texorpdfstring{find\+Edge()}{findEdge()}}
+{\footnotesize\ttfamily int org.\+newdawn.\+slick.\+geom.\+Neat\+Triangulator.\+find\+Edge (\begin{DoxyParamCaption}\item[{int}]{i,  }\item[{int}]{j }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+Find an edge between two verts
+
+
+\begin{DoxyParams}{Parameters}
+{\em i} & The index of the first vert \\
+\hline
+{\em j} & The index of the second vert \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The index of the dge 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+65     \{
+66         \textcolor{keywordtype}{int} k;
+67         \textcolor{keywordtype}{int} l;
+68         \textcolor{keywordflow}{if}(i < j)
+69         \{
+70             k = i;
+71             l = j;
+72         \} \textcolor{keywordflow}{else}
+73         \{
+74             k = j;
+75             l = i;
+76         \}
+77         \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i1 = 0; i1 < \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_neat_triangulator_a4c9fba4faad072774b3b0fcbc7fd0fff}{numEdges}}; i1++)
+78             \textcolor{keywordflow}{if}(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_neat_triangulator_a0abf260e1febb5ef0afc9894280f9efb}{edges}}[i1].v0 == k && \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_neat_triangulator_a0abf260e1febb5ef0afc9894280f9efb}{edges}}[i1].v1 == l)
+79                 \textcolor{keywordflow}{return} i1;
+80 
+81         \textcolor{keywordflow}{return} -1;
+82     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1geom_1_1_neat_triangulator_a9974151d5e703dc37326ac89f8db1de1}\label{classorg_1_1newdawn_1_1slick_1_1geom_1_1_neat_triangulator_a9974151d5e703dc37326ac89f8db1de1}} 
+\index{org\+::newdawn\+::slick\+::geom\+::\+Neat\+Triangulator@{org\+::newdawn\+::slick\+::geom\+::\+Neat\+Triangulator}!get\+Triangle\+Count@{get\+Triangle\+Count}}
+\index{get\+Triangle\+Count@{get\+Triangle\+Count}!org\+::newdawn\+::slick\+::geom\+::\+Neat\+Triangulator@{org\+::newdawn\+::slick\+::geom\+::\+Neat\+Triangulator}}
+\subsubsection{\texorpdfstring{get\+Triangle\+Count()}{getTriangleCount()}}
+{\footnotesize\ttfamily int org.\+newdawn.\+slick.\+geom.\+Neat\+Triangulator.\+get\+Triangle\+Count (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1geom_1_1_triangulator_a7a5d68a694f2b80878c48563b5ea6f1f}{org.\+newdawn.\+slick.\+geom.\+Triangulator\+::get\+Triangle\+Count()}} 
+\end{DoxySeeAlso}
+
+
+Implements \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1geom_1_1_triangulator_a7a5d68a694f2b80878c48563b5ea6f1f}{org.\+newdawn.\+slick.\+geom.\+Triangulator}}.
+
+
+\begin{DoxyCode}
+598                                   \{
+599         \textcolor{keywordflow}{return} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_neat_triangulator_a5a9d015e9872ed5961cddfb49b3d1853}{numTriangles}};
+600     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1geom_1_1_neat_triangulator_a286bb2dbff64783e498ec5b41003fb03}\label{classorg_1_1newdawn_1_1slick_1_1geom_1_1_neat_triangulator_a286bb2dbff64783e498ec5b41003fb03}} 
+\index{org\+::newdawn\+::slick\+::geom\+::\+Neat\+Triangulator@{org\+::newdawn\+::slick\+::geom\+::\+Neat\+Triangulator}!get\+Triangle\+Point@{get\+Triangle\+Point}}
+\index{get\+Triangle\+Point@{get\+Triangle\+Point}!org\+::newdawn\+::slick\+::geom\+::\+Neat\+Triangulator@{org\+::newdawn\+::slick\+::geom\+::\+Neat\+Triangulator}}
+\subsubsection{\texorpdfstring{get\+Triangle\+Point()}{getTrianglePoint()}}
+{\footnotesize\ttfamily float \mbox{[}$\,$\mbox{]} org.\+newdawn.\+slick.\+geom.\+Neat\+Triangulator.\+get\+Triangle\+Point (\begin{DoxyParamCaption}\item[{int}]{tri,  }\item[{int}]{i }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1geom_1_1_triangulator_a0142ec1a5f11292813f0f4e9a1407efb}{org.\+newdawn.\+slick.\+geom.\+Triangulator\+::get\+Triangle\+Point(int, int)}} 
+\end{DoxySeeAlso}
+
+
+Implements \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1geom_1_1_triangulator_a0142ec1a5f11292813f0f4e9a1407efb}{org.\+newdawn.\+slick.\+geom.\+Triangulator}}.
+
+
+\begin{DoxyCode}
+605                                                     \{
+606         \textcolor{keywordtype}{float} xp = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_neat_triangulator_a651e2f489c027306dacf8b03fb0f04a0}{pointsX}}[\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_neat_triangulator_a007f9ede3582ce3c9c1439b40e4e5f55}{triangles}}[tri].\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_neat_triangulator_1_1_triangle_a2b3db61035c03f006545b890dccf89a0}{v}}[i]];
+607         \textcolor{keywordtype}{float} yp = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_neat_triangulator_ac4491217b5be9c7a1ccbdb5511f832d9}{pointsY}}[\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_neat_triangulator_a007f9ede3582ce3c9c1439b40e4e5f55}{triangles}}[tri].\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_neat_triangulator_1_1_triangle_a2b3db61035c03f006545b890dccf89a0}{v}}[i]];
+608         
+609         \textcolor{keywordflow}{return} \textcolor{keyword}{new} \textcolor{keywordtype}{float}[] \{xp,yp\};
+610     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1geom_1_1_neat_triangulator_a95e47c0ce903fd1ea4ed9d7143c10ca8}\label{classorg_1_1newdawn_1_1slick_1_1geom_1_1_neat_triangulator_a95e47c0ce903fd1ea4ed9d7143c10ca8}} 
+\index{org\+::newdawn\+::slick\+::geom\+::\+Neat\+Triangulator@{org\+::newdawn\+::slick\+::geom\+::\+Neat\+Triangulator}!inside\+Triangle@{inside\+Triangle}}
+\index{inside\+Triangle@{inside\+Triangle}!org\+::newdawn\+::slick\+::geom\+::\+Neat\+Triangulator@{org\+::newdawn\+::slick\+::geom\+::\+Neat\+Triangulator}}
+\subsubsection{\texorpdfstring{inside\+Triangle()}{insideTriangle()}}
+{\footnotesize\ttfamily static boolean org.\+newdawn.\+slick.\+geom.\+Neat\+Triangulator.\+inside\+Triangle (\begin{DoxyParamCaption}\item[{float}]{f,  }\item[{float}]{f1,  }\item[{float}]{f2,  }\item[{float}]{f3,  }\item[{float}]{f4,  }\item[{float}]{f5,  }\item[{float}]{f6,  }\item[{float}]{f7 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}, {\ttfamily [private]}}
+
+Check if the point P is inside the triangle defined by the points A,B,C
+
+
+\begin{DoxyParams}{Parameters}
+{\em f} & \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_point}{Point}} A x-\/coordinate \\
+\hline
+{\em f1} & \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_point}{Point}} A y-\/coordinate \\
+\hline
+{\em f2} & \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_point}{Point}} B x-\/coordinate \\
+\hline
+{\em f3} & \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_point}{Point}} B y-\/coordinate \\
+\hline
+{\em f4} & \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_point}{Point}} C x-\/coordinate \\
+\hline
+{\em f5} & \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_point}{Point}} C y-\/coordinate \\
+\hline
+{\em f6} & \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_point}{Point}} P x-\/coordinate \\
+\hline
+{\em f7} & \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_point}{Point}} P y-\/coordinate \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the point specified is within the triangle 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+250     \{
+251         \textcolor{keywordtype}{float} f8 = f4 - f2;
+252         \textcolor{keywordtype}{float} f9 = f5 - f3;
+253         \textcolor{keywordtype}{float} f10 = f - f4;
+254         \textcolor{keywordtype}{float} f11 = f1 - f5;
+255         \textcolor{keywordtype}{float} f12 = f2 - f;
+256         \textcolor{keywordtype}{float} f13 = f3 - f1;
+257         \textcolor{keywordtype}{float} f14 = f6 - f;
+258         \textcolor{keywordtype}{float} f15 = f7 - f1;
+259         \textcolor{keywordtype}{float} f16 = f6 - f2;
+260         \textcolor{keywordtype}{float} f17 = f7 - f3;
+261         \textcolor{keywordtype}{float} f18 = f6 - f4;
+262         \textcolor{keywordtype}{float} f19 = f7 - f5;
+263         \textcolor{keywordtype}{float} f22 = f8 * f17 - f9 * f16;
+264         \textcolor{keywordtype}{float} f20 = f12 * f15 - f13 * f14;
+265         \textcolor{keywordtype}{float} f21 = f10 * f19 - f11 * f18;
+266         \textcolor{keywordflow}{return} f22 >= 0.0D && f21 >= 0.0D && f20 >= 0.0D;
+267     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1geom_1_1_neat_triangulator_a68d436b8465e95a2fc44584e9c6f77f0}\label{classorg_1_1newdawn_1_1slick_1_1geom_1_1_neat_triangulator_a68d436b8465e95a2fc44584e9c6f77f0}} 
+\index{org\+::newdawn\+::slick\+::geom\+::\+Neat\+Triangulator@{org\+::newdawn\+::slick\+::geom\+::\+Neat\+Triangulator}!mark\+Suspect@{mark\+Suspect}}
+\index{mark\+Suspect@{mark\+Suspect}!org\+::newdawn\+::slick\+::geom\+::\+Neat\+Triangulator@{org\+::newdawn\+::slick\+::geom\+::\+Neat\+Triangulator}}
+\subsubsection{\texorpdfstring{mark\+Suspect()}{markSuspect()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+geom.\+Neat\+Triangulator.\+mark\+Suspect (\begin{DoxyParamCaption}\item[{int}]{i,  }\item[{int}]{j,  }\item[{boolean}]{flag }\end{DoxyParamCaption}) throws \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_neat_triangulator_1_1_internal_exception}{Internal\+Exception}}\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [package]}}
+
+Mark an edge as either a suspect or not
+
+
+\begin{DoxyParams}{Parameters}
+{\em i} & The index of the first vert \\
+\hline
+{\em j} & The index of the second vert \\
+\hline
+{\em flag} & True if the edge is a suspect \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_neat_triangulator_1_1_internal_exception}{Internal\+Exception}}} & Indicates the edge didn\textquotesingle{}t exist \\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyCode}
+165     \{
+166         \textcolor{keywordtype}{int} k;
+167         \textcolor{keywordflow}{if}(0 > (k = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_neat_triangulator_a78cbec0ff58e88805e3174b00ac42dc4}{findEdge}}(i, j)))
+168         \{
+169             \textcolor{keywordflow}{throw} \textcolor{keyword}{new} InternalException(\textcolor{stringliteral}{"Attempt to mark unknown edge"});
+170         \} \textcolor{keywordflow}{else}
+171         \{
+172             \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_neat_triangulator_a0abf260e1febb5ef0afc9894280f9efb}{edges}}[k].\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_neat_triangulator_1_1_edge_a8c13f2c41069f6fbcfccb7ff5ed78e84}{suspect}} = flag;
+173             \textcolor{keywordflow}{return};
+174         \}
+175     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1geom_1_1_neat_triangulator_a9d31e5717d81b79f9be1c882031c549c}\label{classorg_1_1newdawn_1_1slick_1_1geom_1_1_neat_triangulator_a9d31e5717d81b79f9be1c882031c549c}} 
+\index{org\+::newdawn\+::slick\+::geom\+::\+Neat\+Triangulator@{org\+::newdawn\+::slick\+::geom\+::\+Neat\+Triangulator}!optimize@{optimize}}
+\index{optimize@{optimize}!org\+::newdawn\+::slick\+::geom\+::\+Neat\+Triangulator@{org\+::newdawn\+::slick\+::geom\+::\+Neat\+Triangulator}}
+\subsubsection{\texorpdfstring{optimize()}{optimize()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+geom.\+Neat\+Triangulator.\+optimize (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_neat_triangulator_1_1_internal_exception}{Internal\+Exception}}\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+Optimize the triangulation by applying delauney rules
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_neat_triangulator_1_1_internal_exception}{Internal\+Exception}}} & Indicates an invalid polygon \\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyCode}
+397     \{
+398         \textcolor{keywordflow}{do}
+399         \{
+400             Edge edge;
+401             \textcolor{keywordflow}{if} ((edge = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_neat_triangulator_a0d36e6ed2cd14c353f7d3192cb403ed9}{chooseSuspect}}()) == null) \{
+402                 \textcolor{keywordflow}{break};
+403             \}
+404             \textcolor{keywordtype}{int} i1 = edge.v0;
+405             \textcolor{keywordtype}{int} k1 = edge.v1;
+406             \textcolor{keywordtype}{int} i = edge.t0;
+407             \textcolor{keywordtype}{int} j = edge.t1;
+408             \textcolor{keywordtype}{int} j1 = -1;
+409             \textcolor{keywordtype}{int} l1 = -1;
+410             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} k = 0; k < 3; k++)
+411             \{
+412                 \textcolor{keywordtype}{int} i2 = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_neat_triangulator_a007f9ede3582ce3c9c1439b40e4e5f55}{triangles}}[i].\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_neat_triangulator_1_1_triangle_a2b3db61035c03f006545b890dccf89a0}{v}}[k];
+413                 \textcolor{keywordflow}{if}(i1 == i2 || k1 == i2) \{
+414                     \textcolor{keywordflow}{continue};
+415                 \}
+416                 l1 = i2;
+417                 \textcolor{keywordflow}{break};
+418             \}
+419 
+420             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} l = 0; l < 3; l++)
+421             \{
+422                 \textcolor{keywordtype}{int} j2 = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_neat_triangulator_a007f9ede3582ce3c9c1439b40e4e5f55}{triangles}}[j].\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_neat_triangulator_1_1_triangle_a2b3db61035c03f006545b890dccf89a0}{v}}[l];
+423                 \textcolor{keywordflow}{if}(i1 == j2 || k1 == j2) \{
+424                     \textcolor{keywordflow}{continue};
+425                 \}
+426                 j1 = j2;
+427                 \textcolor{keywordflow}{break};
+428             \}
+429 
+430             \textcolor{keywordflow}{if}(-1 == j1 || -1 == l1) \{
+431                 \textcolor{keywordflow}{throw} \textcolor{keyword}{new} InternalException(\textcolor{stringliteral}{"can't find quad"});
+432             \}
+433             
+434             \textcolor{keywordtype}{float} f = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_neat_triangulator_a651e2f489c027306dacf8b03fb0f04a0}{pointsX}}[i1];
+435             \textcolor{keywordtype}{float} f1 = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_neat_triangulator_ac4491217b5be9c7a1ccbdb5511f832d9}{pointsY}}[i1];
+436             \textcolor{keywordtype}{float} f2 = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_neat_triangulator_a651e2f489c027306dacf8b03fb0f04a0}{pointsX}}[j1];
+437             \textcolor{keywordtype}{float} f3 = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_neat_triangulator_ac4491217b5be9c7a1ccbdb5511f832d9}{pointsY}}[j1];
+438             \textcolor{keywordtype}{float} f4 = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_neat_triangulator_a651e2f489c027306dacf8b03fb0f04a0}{pointsX}}[k1];
+439             \textcolor{keywordtype}{float} f5 = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_neat_triangulator_ac4491217b5be9c7a1ccbdb5511f832d9}{pointsY}}[k1];
+440             \textcolor{keywordtype}{float} f6 = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_neat_triangulator_a651e2f489c027306dacf8b03fb0f04a0}{pointsX}}[l1];
+441             \textcolor{keywordtype}{float} f7 = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_neat_triangulator_ac4491217b5be9c7a1ccbdb5511f832d9}{pointsY}}[l1];
+442             \textcolor{keywordtype}{float} f8 = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_neat_triangulator_a8d1807a32fd407da54f5fc48302197f3}{rho}}(f, f1, f2, f3, f4, f5);
+443             \textcolor{keywordtype}{float} f9 = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_neat_triangulator_a8d1807a32fd407da54f5fc48302197f3}{rho}}(f, f1, f4, f5, f6, f7);
+444             \textcolor{keywordtype}{float} f10 = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_neat_triangulator_a8d1807a32fd407da54f5fc48302197f3}{rho}}(f2, f3, f4, f5, f6, f7);
+445             \textcolor{keywordtype}{float} f11 = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_neat_triangulator_a8d1807a32fd407da54f5fc48302197f3}{rho}}(f2, f3, f6, f7, f, f1);
+446             \textcolor{keywordflow}{if}(0.0F > f8 || 0.0F > f9) \{
+447                 \textcolor{keywordflow}{throw} \textcolor{keyword}{new} InternalException(\textcolor{stringliteral}{"original triangles backwards"});
+448             \}
+449             \textcolor{keywordflow}{if}(0.0F <= f10 && 0.0F <= f11)
+450             \{
+451                 \textcolor{keywordflow}{if}(f8 > f9) \{
+452                     f8 = f9;
+453                 \}
+454                 \textcolor{keywordflow}{if}(f10 > f11) \{
+455                     f10 = f11;
+456                 \}
+457                 \textcolor{keywordflow}{if}(f8 > f10) \{
+458                     \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_neat_triangulator_a673c87f2077e95be1fc7dcfd61c02831}{deleteEdge}}(i1, k1);
+459                     \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_neat_triangulator_a007f9ede3582ce3c9c1439b40e4e5f55}{triangles}}[i].\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_neat_triangulator_1_1_triangle_a2b3db61035c03f006545b890dccf89a0}{v}}[0] = j1;
+460                     \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_neat_triangulator_a007f9ede3582ce3c9c1439b40e4e5f55}{triangles}}[i].\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_neat_triangulator_1_1_triangle_a2b3db61035c03f006545b890dccf89a0}{v}}[1] = k1;
+461                     \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_neat_triangulator_a007f9ede3582ce3c9c1439b40e4e5f55}{triangles}}[i].\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_neat_triangulator_1_1_triangle_a2b3db61035c03f006545b890dccf89a0}{v}}[2] = l1;
+462                     \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_neat_triangulator_a007f9ede3582ce3c9c1439b40e4e5f55}{triangles}}[j].\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_neat_triangulator_1_1_triangle_a2b3db61035c03f006545b890dccf89a0}{v}}[0] = j1;
+463                     \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_neat_triangulator_a007f9ede3582ce3c9c1439b40e4e5f55}{triangles}}[j].\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_neat_triangulator_1_1_triangle_a2b3db61035c03f006545b890dccf89a0}{v}}[1] = l1;
+464                     \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_neat_triangulator_a007f9ede3582ce3c9c1439b40e4e5f55}{triangles}}[j].\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_neat_triangulator_1_1_triangle_a2b3db61035c03f006545b890dccf89a0}{v}}[2] = i1;
+465                     \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_neat_triangulator_a71083562024c4442249a515d92e70c00}{addEdge}}(j1, k1, i);
+466                     \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_neat_triangulator_a71083562024c4442249a515d92e70c00}{addEdge}}(k1, l1, i);
+467                     \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_neat_triangulator_a71083562024c4442249a515d92e70c00}{addEdge}}(l1, j1, i);
+468                     \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_neat_triangulator_a71083562024c4442249a515d92e70c00}{addEdge}}(l1, i1, j);
+469                     \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_neat_triangulator_a71083562024c4442249a515d92e70c00}{addEdge}}(i1, j1, j);
+470                     \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_neat_triangulator_a71083562024c4442249a515d92e70c00}{addEdge}}(j1, l1, j);
+471                     \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_neat_triangulator_a68d436b8465e95a2fc44584e9c6f77f0}{markSuspect}}(j1, l1, \textcolor{keyword}{false});
+472                 \}
+473             \}
+474         \} \textcolor{keywordflow}{while}(\textcolor{keyword}{true});
+475     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1geom_1_1_neat_triangulator_a8d1807a32fd407da54f5fc48302197f3}\label{classorg_1_1newdawn_1_1slick_1_1geom_1_1_neat_triangulator_a8d1807a32fd407da54f5fc48302197f3}} 
+\index{org\+::newdawn\+::slick\+::geom\+::\+Neat\+Triangulator@{org\+::newdawn\+::slick\+::geom\+::\+Neat\+Triangulator}!rho@{rho}}
+\index{rho@{rho}!org\+::newdawn\+::slick\+::geom\+::\+Neat\+Triangulator@{org\+::newdawn\+::slick\+::geom\+::\+Neat\+Triangulator}}
+\subsubsection{\texorpdfstring{rho()}{rho()}}
+{\footnotesize\ttfamily static float org.\+newdawn.\+slick.\+geom.\+Neat\+Triangulator.\+rho (\begin{DoxyParamCaption}\item[{float}]{f,  }\item[{float}]{f1,  }\item[{float}]{f2,  }\item[{float}]{f3,  }\item[{float}]{f4,  }\item[{float}]{f5 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}, {\ttfamily [private]}}
+
+Factor rho.
+
+
+\begin{DoxyParams}{Parameters}
+{\em f} & Factor 1 \\
+\hline
+{\em f1} & Factor 2 \\
+\hline
+{\em f2} & Factor 3 \\
+\hline
+{\em f3} & Factor 4 \\
+\hline
+{\em f4} & Factor 5 \\
+\hline
+{\em f5} & Factor 6 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The computation of rho 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+210     \{
+211         \textcolor{keywordtype}{float} f6 = f4 - f2;
+212         \textcolor{keywordtype}{float} f7 = f5 - f3;
+213         \textcolor{keywordtype}{float} f8 = f - f4;
+214         \textcolor{keywordtype}{float} f9 = f1 - f5;
+215         \textcolor{keywordtype}{float} f18 = f6 * f9 - f7 * f8;
+216         \textcolor{keywordflow}{if}(f18 > 0.0F)
+217         \{
+218             \textcolor{keywordflow}{if}(f18 < 1E-006F)
+219                 f18 = 1E-006F;
+220             \textcolor{keywordtype}{float} f12 = f6 * f6;
+221             \textcolor{keywordtype}{float} f13 = f7 * f7;
+222             \textcolor{keywordtype}{float} f14 = f8 * f8;
+223             \textcolor{keywordtype}{float} f15 = f9 * f9;
+224             \textcolor{keywordtype}{float} f10 = f2 - f;
+225             \textcolor{keywordtype}{float} f11 = f3 - f1;
+226             \textcolor{keywordtype}{float} f16 = f10 * f10;
+227             \textcolor{keywordtype}{float} f17 = f11 * f11;
+228             \textcolor{keywordflow}{return} ((f12 + f13) * (f14 + f15) * (f16 + f17)) / (f18 * f18);
+229         \} \textcolor{keywordflow}{else}
+230         \{
+231             \textcolor{keywordflow}{return} -1F;
+232         \}
+233     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1geom_1_1_neat_triangulator_ae7609b9e246ca3e4c4716d89c4a8a66f}\label{classorg_1_1newdawn_1_1slick_1_1geom_1_1_neat_triangulator_ae7609b9e246ca3e4c4716d89c4a8a66f}} 
+\index{org\+::newdawn\+::slick\+::geom\+::\+Neat\+Triangulator@{org\+::newdawn\+::slick\+::geom\+::\+Neat\+Triangulator}!snip@{snip}}
+\index{snip@{snip}!org\+::newdawn\+::slick\+::geom\+::\+Neat\+Triangulator@{org\+::newdawn\+::slick\+::geom\+::\+Neat\+Triangulator}}
+\subsubsection{\texorpdfstring{snip()}{snip()}}
+{\footnotesize\ttfamily boolean org.\+newdawn.\+slick.\+geom.\+Neat\+Triangulator.\+snip (\begin{DoxyParamCaption}\item[{int}]{i,  }\item[{int}]{j,  }\item[{int}]{k,  }\item[{int}]{l }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+Cut a the contour and add a triangle into V to describe the location of the cut
+
+
+\begin{DoxyParams}{Parameters}
+{\em i} & The index of the first point \\
+\hline
+{\em j} & The index of the second point \\
+\hline
+{\em k} & The index of the third point \\
+\hline
+{\em l} & ? \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if a triangle was found 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+280     \{
+281         \textcolor{keywordtype}{float} f = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_neat_triangulator_a651e2f489c027306dacf8b03fb0f04a0}{pointsX}}[\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_neat_triangulator_a149e043fb9cba67d89b3bcc8fb188df6}{V}}[i]];
+282         \textcolor{keywordtype}{float} f1 = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_neat_triangulator_ac4491217b5be9c7a1ccbdb5511f832d9}{pointsY}}[\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_neat_triangulator_a149e043fb9cba67d89b3bcc8fb188df6}{V}}[i]];
+283         \textcolor{keywordtype}{float} f2 = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_neat_triangulator_a651e2f489c027306dacf8b03fb0f04a0}{pointsX}}[\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_neat_triangulator_a149e043fb9cba67d89b3bcc8fb188df6}{V}}[j]];
+284         \textcolor{keywordtype}{float} f3 = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_neat_triangulator_ac4491217b5be9c7a1ccbdb5511f832d9}{pointsY}}[\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_neat_triangulator_a149e043fb9cba67d89b3bcc8fb188df6}{V}}[j]];
+285         \textcolor{keywordtype}{float} f4 = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_neat_triangulator_a651e2f489c027306dacf8b03fb0f04a0}{pointsX}}[\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_neat_triangulator_a149e043fb9cba67d89b3bcc8fb188df6}{V}}[k]];
+286         \textcolor{keywordtype}{float} f5 = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_neat_triangulator_ac4491217b5be9c7a1ccbdb5511f832d9}{pointsY}}[\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_neat_triangulator_a149e043fb9cba67d89b3bcc8fb188df6}{V}}[k]];
+287         \textcolor{keywordflow}{if}(1E-006F > (f2 - f) * (f5 - f1) - (f3 - f1) * (f4 - f))
+288             \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+289         \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i1 = 0; i1 < l; i1++)
+290             \textcolor{keywordflow}{if}(i1 != i && i1 != j && i1 != k)
+291             \{
+292                 \textcolor{keywordtype}{float} f6 = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_neat_triangulator_a651e2f489c027306dacf8b03fb0f04a0}{pointsX}}[\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_neat_triangulator_a149e043fb9cba67d89b3bcc8fb188df6}{V}}[i1]];
+293                 \textcolor{keywordtype}{float} f7 = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_neat_triangulator_ac4491217b5be9c7a1ccbdb5511f832d9}{pointsY}}[\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_neat_triangulator_a149e043fb9cba67d89b3bcc8fb188df6}{V}}[i1]];
+294                 \textcolor{keywordflow}{if}(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_neat_triangulator_a95e47c0ce903fd1ea4ed9d7143c10ca8}{insideTriangle}}(f, f1, f2, f3, f4, f5, f6, f7))
+295                     \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+296             \}
+297 
+298         \textcolor{keywordflow}{return} \textcolor{keyword}{true};
+299     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1geom_1_1_neat_triangulator_ae035b8f5385bd2284cecd4fa1b98c2bc}\label{classorg_1_1newdawn_1_1slick_1_1geom_1_1_neat_triangulator_ae035b8f5385bd2284cecd4fa1b98c2bc}} 
+\index{org\+::newdawn\+::slick\+::geom\+::\+Neat\+Triangulator@{org\+::newdawn\+::slick\+::geom\+::\+Neat\+Triangulator}!start\+Hole@{start\+Hole}}
+\index{start\+Hole@{start\+Hole}!org\+::newdawn\+::slick\+::geom\+::\+Neat\+Triangulator@{org\+::newdawn\+::slick\+::geom\+::\+Neat\+Triangulator}}
+\subsubsection{\texorpdfstring{start\+Hole()}{startHole()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+geom.\+Neat\+Triangulator.\+start\+Hole (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1geom_1_1_triangulator_a0636d620daef98eab2ceb5bcf9dfaa9d}{org.\+newdawn.\+slick.\+geom.\+Triangulator\+::start\+Hole()}} 
+\end{DoxySeeAlso}
+
+
+Implements \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1geom_1_1_triangulator_a0636d620daef98eab2ceb5bcf9dfaa9d}{org.\+newdawn.\+slick.\+geom.\+Triangulator}}.
+
+
+\begin{DoxyCode}
+615                             \{
+616     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1geom_1_1_neat_triangulator_a32227a64f0e7142d40d79a1adb3fdb24}\label{classorg_1_1newdawn_1_1slick_1_1geom_1_1_neat_triangulator_a32227a64f0e7142d40d79a1adb3fdb24}} 
+\index{org\+::newdawn\+::slick\+::geom\+::\+Neat\+Triangulator@{org\+::newdawn\+::slick\+::geom\+::\+Neat\+Triangulator}!triangulate@{triangulate}}
+\index{triangulate@{triangulate}!org\+::newdawn\+::slick\+::geom\+::\+Neat\+Triangulator@{org\+::newdawn\+::slick\+::geom\+::\+Neat\+Triangulator}}
+\subsubsection{\texorpdfstring{triangulate()}{triangulate()}}
+{\footnotesize\ttfamily boolean org.\+newdawn.\+slick.\+geom.\+Neat\+Triangulator.\+triangulate (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Upate the triangles 
+
+Implements \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1geom_1_1_triangulator_a7c7ce8f59679b6c759a1e3d15ec4ee92}{org.\+newdawn.\+slick.\+geom.\+Triangulator}}.
+
+
+\begin{DoxyCode}
+481     \{
+482         \textcolor{keywordflow}{try}
+483         \{
+484             \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_neat_triangulator_ab1c1949c138da4b2c29a47c5326059e0}{basicTriangulation}}();
+485             \textcolor{comment}{//optimize();}
+486             \textcolor{keywordflow}{return} \textcolor{keyword}{true};
+487         \}
+488         \textcolor{keywordflow}{catch} (InternalException e)
+489         \{
+490             \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_neat_triangulator_a4c9fba4faad072774b3b0fcbc7fd0fff}{numEdges}} = 0;
+491         \}
+492         \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+493     \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1geom_1_1_neat_triangulator_a0abf260e1febb5ef0afc9894280f9efb}\label{classorg_1_1newdawn_1_1slick_1_1geom_1_1_neat_triangulator_a0abf260e1febb5ef0afc9894280f9efb}} 
+\index{org\+::newdawn\+::slick\+::geom\+::\+Neat\+Triangulator@{org\+::newdawn\+::slick\+::geom\+::\+Neat\+Triangulator}!edges@{edges}}
+\index{edges@{edges}!org\+::newdawn\+::slick\+::geom\+::\+Neat\+Triangulator@{org\+::newdawn\+::slick\+::geom\+::\+Neat\+Triangulator}}
+\subsubsection{\texorpdfstring{edges}{edges}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_neat_triangulator_1_1_edge}{Edge}} org.\+newdawn.\+slick.\+geom.\+Neat\+Triangulator.\+edges\mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}
+
+The edges defines by triangulation \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1geom_1_1_neat_triangulator_a3591ad18c067004e78b06217362e3d7b}\label{classorg_1_1newdawn_1_1slick_1_1geom_1_1_neat_triangulator_a3591ad18c067004e78b06217362e3d7b}} 
+\index{org\+::newdawn\+::slick\+::geom\+::\+Neat\+Triangulator@{org\+::newdawn\+::slick\+::geom\+::\+Neat\+Triangulator}!E\+P\+S\+I\+L\+ON@{E\+P\+S\+I\+L\+ON}}
+\index{E\+P\+S\+I\+L\+ON@{E\+P\+S\+I\+L\+ON}!org\+::newdawn\+::slick\+::geom\+::\+Neat\+Triangulator@{org\+::newdawn\+::slick\+::geom\+::\+Neat\+Triangulator}}
+\subsubsection{\texorpdfstring{E\+P\+S\+I\+L\+ON}{EPSILON}}
+{\footnotesize\ttfamily final float org.\+newdawn.\+slick.\+geom.\+Neat\+Triangulator.\+E\+P\+S\+I\+L\+ON = 1\+E-\/006F\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [package]}}
+
+The error factor \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1geom_1_1_neat_triangulator_a4c9fba4faad072774b3b0fcbc7fd0fff}\label{classorg_1_1newdawn_1_1slick_1_1geom_1_1_neat_triangulator_a4c9fba4faad072774b3b0fcbc7fd0fff}} 
+\index{org\+::newdawn\+::slick\+::geom\+::\+Neat\+Triangulator@{org\+::newdawn\+::slick\+::geom\+::\+Neat\+Triangulator}!num\+Edges@{num\+Edges}}
+\index{num\+Edges@{num\+Edges}!org\+::newdawn\+::slick\+::geom\+::\+Neat\+Triangulator@{org\+::newdawn\+::slick\+::geom\+::\+Neat\+Triangulator}}
+\subsubsection{\texorpdfstring{num\+Edges}{numEdges}}
+{\footnotesize\ttfamily int org.\+newdawn.\+slick.\+geom.\+Neat\+Triangulator.\+num\+Edges\hspace{0.3cm}{\ttfamily [private]}}
+
+The number of edges found \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1geom_1_1_neat_triangulator_a24b4a230bc11d3c96dfe1de4dcb297f5}\label{classorg_1_1newdawn_1_1slick_1_1geom_1_1_neat_triangulator_a24b4a230bc11d3c96dfe1de4dcb297f5}} 
+\index{org\+::newdawn\+::slick\+::geom\+::\+Neat\+Triangulator@{org\+::newdawn\+::slick\+::geom\+::\+Neat\+Triangulator}!num\+Points@{num\+Points}}
+\index{num\+Points@{num\+Points}!org\+::newdawn\+::slick\+::geom\+::\+Neat\+Triangulator@{org\+::newdawn\+::slick\+::geom\+::\+Neat\+Triangulator}}
+\subsubsection{\texorpdfstring{num\+Points}{numPoints}}
+{\footnotesize\ttfamily int org.\+newdawn.\+slick.\+geom.\+Neat\+Triangulator.\+num\+Points\hspace{0.3cm}{\ttfamily [private]}}
+
+The number of points that have been added \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1geom_1_1_neat_triangulator_a5a9d015e9872ed5961cddfb49b3d1853}\label{classorg_1_1newdawn_1_1slick_1_1geom_1_1_neat_triangulator_a5a9d015e9872ed5961cddfb49b3d1853}} 
+\index{org\+::newdawn\+::slick\+::geom\+::\+Neat\+Triangulator@{org\+::newdawn\+::slick\+::geom\+::\+Neat\+Triangulator}!num\+Triangles@{num\+Triangles}}
+\index{num\+Triangles@{num\+Triangles}!org\+::newdawn\+::slick\+::geom\+::\+Neat\+Triangulator@{org\+::newdawn\+::slick\+::geom\+::\+Neat\+Triangulator}}
+\subsubsection{\texorpdfstring{num\+Triangles}{numTriangles}}
+{\footnotesize\ttfamily int org.\+newdawn.\+slick.\+geom.\+Neat\+Triangulator.\+num\+Triangles\hspace{0.3cm}{\ttfamily [private]}}
+
+The number of triangles found \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1geom_1_1_neat_triangulator_ab147880b88dbf400f31c1a5ac9667c7e}\label{classorg_1_1newdawn_1_1slick_1_1geom_1_1_neat_triangulator_ab147880b88dbf400f31c1a5ac9667c7e}} 
+\index{org\+::newdawn\+::slick\+::geom\+::\+Neat\+Triangulator@{org\+::newdawn\+::slick\+::geom\+::\+Neat\+Triangulator}!offset@{offset}}
+\index{offset@{offset}!org\+::newdawn\+::slick\+::geom\+::\+Neat\+Triangulator@{org\+::newdawn\+::slick\+::geom\+::\+Neat\+Triangulator}}
+\subsubsection{\texorpdfstring{offset}{offset}}
+{\footnotesize\ttfamily float org.\+newdawn.\+slick.\+geom.\+Neat\+Triangulator.\+offset = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_neat_triangulator_a3591ad18c067004e78b06217362e3d7b}{E\+P\+S\+I\+L\+ON}}\hspace{0.3cm}{\ttfamily [private]}}
+
+The current offset \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1geom_1_1_neat_triangulator_a651e2f489c027306dacf8b03fb0f04a0}\label{classorg_1_1newdawn_1_1slick_1_1geom_1_1_neat_triangulator_a651e2f489c027306dacf8b03fb0f04a0}} 
+\index{org\+::newdawn\+::slick\+::geom\+::\+Neat\+Triangulator@{org\+::newdawn\+::slick\+::geom\+::\+Neat\+Triangulator}!pointsX@{pointsX}}
+\index{pointsX@{pointsX}!org\+::newdawn\+::slick\+::geom\+::\+Neat\+Triangulator@{org\+::newdawn\+::slick\+::geom\+::\+Neat\+Triangulator}}
+\subsubsection{\texorpdfstring{pointsX}{pointsX}}
+{\footnotesize\ttfamily float org.\+newdawn.\+slick.\+geom.\+Neat\+Triangulator.\+pointsX\mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}
+
+The x coordinates \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1geom_1_1_neat_triangulator_ac4491217b5be9c7a1ccbdb5511f832d9}\label{classorg_1_1newdawn_1_1slick_1_1geom_1_1_neat_triangulator_ac4491217b5be9c7a1ccbdb5511f832d9}} 
+\index{org\+::newdawn\+::slick\+::geom\+::\+Neat\+Triangulator@{org\+::newdawn\+::slick\+::geom\+::\+Neat\+Triangulator}!pointsY@{pointsY}}
+\index{pointsY@{pointsY}!org\+::newdawn\+::slick\+::geom\+::\+Neat\+Triangulator@{org\+::newdawn\+::slick\+::geom\+::\+Neat\+Triangulator}}
+\subsubsection{\texorpdfstring{pointsY}{pointsY}}
+{\footnotesize\ttfamily float org.\+newdawn.\+slick.\+geom.\+Neat\+Triangulator.\+pointsY\mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}
+
+The y coordiantes \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1geom_1_1_neat_triangulator_a007f9ede3582ce3c9c1439b40e4e5f55}\label{classorg_1_1newdawn_1_1slick_1_1geom_1_1_neat_triangulator_a007f9ede3582ce3c9c1439b40e4e5f55}} 
+\index{org\+::newdawn\+::slick\+::geom\+::\+Neat\+Triangulator@{org\+::newdawn\+::slick\+::geom\+::\+Neat\+Triangulator}!triangles@{triangles}}
+\index{triangles@{triangles}!org\+::newdawn\+::slick\+::geom\+::\+Neat\+Triangulator@{org\+::newdawn\+::slick\+::geom\+::\+Neat\+Triangulator}}
+\subsubsection{\texorpdfstring{triangles}{triangles}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_neat_triangulator_1_1_triangle}{Triangle}} org.\+newdawn.\+slick.\+geom.\+Neat\+Triangulator.\+triangles\mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}
+
+The triangles that have been found \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1geom_1_1_neat_triangulator_a149e043fb9cba67d89b3bcc8fb188df6}\label{classorg_1_1newdawn_1_1slick_1_1geom_1_1_neat_triangulator_a149e043fb9cba67d89b3bcc8fb188df6}} 
+\index{org\+::newdawn\+::slick\+::geom\+::\+Neat\+Triangulator@{org\+::newdawn\+::slick\+::geom\+::\+Neat\+Triangulator}!V@{V}}
+\index{V@{V}!org\+::newdawn\+::slick\+::geom\+::\+Neat\+Triangulator@{org\+::newdawn\+::slick\+::geom\+::\+Neat\+Triangulator}}
+\subsubsection{\texorpdfstring{V}{V}}
+{\footnotesize\ttfamily int org.\+newdawn.\+slick.\+geom.\+Neat\+Triangulator.\+V\mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}
+
+Voroni 

@@ -1,0 +1,360 @@
+\hypertarget{classentities_1_1_input_handler}{}\section{entities.\+Input\+Handler Class Reference}
+\label{classentities_1_1_input_handler}\index{entities.\+Input\+Handler@{entities.\+Input\+Handler}}
+Inheritance diagram for entities.\+Input\+Handler\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classentities_1_1_input_handler}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classentities_1_1_input_handler_a02a9317f35d6371983e903ef348e445a}{Input\+Handler}} (\mbox{\hyperlink{classentities_1_1_player}{Player}} \mbox{\hyperlink{classentities_1_1_input_handler_a65bea2d31684e8d91db9ffef9268f9e9}{player}}, \mbox{\hyperlink{classstates_1_1_game_state}{Game\+State}} \mbox{\hyperlink{classentities_1_1_input_handler_a9f4e32826b3780c5310530d3db807df1}{gamestate}})
+\item 
+void \mbox{\hyperlink{classentities_1_1_input_handler_a9e9d7c64bd18e93dfb7d8247ab635036}{key\+Pressed}} (int key, char c)
+\item 
+void \mbox{\hyperlink{classentities_1_1_input_handler_a2716ee43b20accd25e37268ac67c5488}{key\+Released}} (int key, char c)
+\item 
+void \mbox{\hyperlink{classentities_1_1_input_handler_ad3a1eb35970a169a68b3c01246562a3e}{set\+Input}} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_input}{Input}} \mbox{\hyperlink{classentities_1_1_input_handler_a924ff1658e32e10d77694adf4856b26f}{input}})
+\item 
+boolean \mbox{\hyperlink{classentities_1_1_input_handler_a3b0b01f1e82200097d90346ebe12e369}{is\+Accepting\+Input}} ()
+\item 
+void \mbox{\hyperlink{classentities_1_1_input_handler_ab5b8a1ac155983d92cdbbfa2e592654b}{input\+Ended}} ()
+\item 
+void \mbox{\hyperlink{classentities_1_1_input_handler_a3c2427c9f129a71286d592bf75dcb99f}{input\+Started}} ()
+\item 
+void \mbox{\hyperlink{classentities_1_1_input_handler_ac47130ba472782e616b9332f442320d2}{set\+Enable}} (boolean b)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_input}{Input}} \mbox{\hyperlink{classentities_1_1_input_handler_a924ff1658e32e10d77694adf4856b26f}{input}}
+\item 
+\mbox{\hyperlink{classentities_1_1_player}{Player}} \mbox{\hyperlink{classentities_1_1_input_handler_a65bea2d31684e8d91db9ffef9268f9e9}{player}}
+\item 
+\mbox{\hyperlink{classstates_1_1_game_state}{Game\+State}} \mbox{\hyperlink{classentities_1_1_input_handler_a9f4e32826b3780c5310530d3db807df1}{gamestate}}
+\item 
+boolean \mbox{\hyperlink{classentities_1_1_input_handler_a438eff19a77640d2055a83c332aff302}{enabled}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classentities_1_1_input_handler_a02a9317f35d6371983e903ef348e445a}\label{classentities_1_1_input_handler_a02a9317f35d6371983e903ef348e445a}} 
+\index{entities\+::\+Input\+Handler@{entities\+::\+Input\+Handler}!Input\+Handler@{Input\+Handler}}
+\index{Input\+Handler@{Input\+Handler}!entities\+::\+Input\+Handler@{entities\+::\+Input\+Handler}}
+\subsubsection{\texorpdfstring{Input\+Handler()}{InputHandler()}}
+{\footnotesize\ttfamily entities.\+Input\+Handler.\+Input\+Handler (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classentities_1_1_player}{Player}}}]{player,  }\item[{\mbox{\hyperlink{classstates_1_1_game_state}{Game\+State}}}]{gamestate }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+21                                                             \{
+22         this.player = \mbox{\hyperlink{classentities_1_1_input_handler_a65bea2d31684e8d91db9ffef9268f9e9}{player}};
+23         this.\mbox{\hyperlink{classentities_1_1_input_handler_a9f4e32826b3780c5310530d3db807df1}{gamestate}} = \mbox{\hyperlink{classentities_1_1_input_handler_a9f4e32826b3780c5310530d3db807df1}{gamestate}};
+24         \mbox{\hyperlink{classentities_1_1_input_handler_a438eff19a77640d2055a83c332aff302}{enabled}} = \textcolor{keyword}{true};
+25     \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classentities_1_1_input_handler_ab5b8a1ac155983d92cdbbfa2e592654b}\label{classentities_1_1_input_handler_ab5b8a1ac155983d92cdbbfa2e592654b}} 
+\index{entities\+::\+Input\+Handler@{entities\+::\+Input\+Handler}!input\+Ended@{input\+Ended}}
+\index{input\+Ended@{input\+Ended}!entities\+::\+Input\+Handler@{entities\+::\+Input\+Handler}}
+\subsubsection{\texorpdfstring{input\+Ended()}{inputEnded()}}
+{\footnotesize\ttfamily void entities.\+Input\+Handler.\+input\+Ended (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Notification that all input events have been sent for this frame 
+
+Implements \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1_controlled_input_reciever_a61c6cde7cbf28a6969cafe3ec4f1c121}{org.\+newdawn.\+slick.\+Controlled\+Input\+Reciever}}.
+
+
+\begin{DoxyCode}
+166                              \{
+167     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classentities_1_1_input_handler_a3c2427c9f129a71286d592bf75dcb99f}\label{classentities_1_1_input_handler_a3c2427c9f129a71286d592bf75dcb99f}} 
+\index{entities\+::\+Input\+Handler@{entities\+::\+Input\+Handler}!input\+Started@{input\+Started}}
+\index{input\+Started@{input\+Started}!entities\+::\+Input\+Handler@{entities\+::\+Input\+Handler}}
+\subsubsection{\texorpdfstring{input\+Started()}{inputStarted()}}
+{\footnotesize\ttfamily void entities.\+Input\+Handler.\+input\+Started (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Notification that input is about to be processed 
+
+Implements \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1_controlled_input_reciever_a718de21e9cd22f4c48ee87b5b8b32ed6}{org.\+newdawn.\+slick.\+Controlled\+Input\+Reciever}}.
+
+
+\begin{DoxyCode}
+170                                \{
+171     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classentities_1_1_input_handler_a3b0b01f1e82200097d90346ebe12e369}\label{classentities_1_1_input_handler_a3b0b01f1e82200097d90346ebe12e369}} 
+\index{entities\+::\+Input\+Handler@{entities\+::\+Input\+Handler}!is\+Accepting\+Input@{is\+Accepting\+Input}}
+\index{is\+Accepting\+Input@{is\+Accepting\+Input}!entities\+::\+Input\+Handler@{entities\+::\+Input\+Handler}}
+\subsubsection{\texorpdfstring{is\+Accepting\+Input()}{isAcceptingInput()}}
+{\footnotesize\ttfamily boolean entities.\+Input\+Handler.\+is\+Accepting\+Input (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Check if this input listener is accepting input
+
+\begin{DoxyReturn}{Returns}
+True if the input listener should recieve events 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1_controlled_input_reciever_a380186fb0c34c11c212b72fae8186dc7}{org.\+newdawn.\+slick.\+Controlled\+Input\+Reciever}}.
+
+
+\begin{DoxyCode}
+161                                       \{
+162         \textcolor{keywordflow}{return} \mbox{\hyperlink{classentities_1_1_input_handler_a438eff19a77640d2055a83c332aff302}{enabled}};
+163     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classentities_1_1_input_handler_a9e9d7c64bd18e93dfb7d8247ab635036}\label{classentities_1_1_input_handler_a9e9d7c64bd18e93dfb7d8247ab635036}} 
+\index{entities\+::\+Input\+Handler@{entities\+::\+Input\+Handler}!key\+Pressed@{key\+Pressed}}
+\index{key\+Pressed@{key\+Pressed}!entities\+::\+Input\+Handler@{entities\+::\+Input\+Handler}}
+\subsubsection{\texorpdfstring{key\+Pressed()}{keyPressed()}}
+{\footnotesize\ttfamily void entities.\+Input\+Handler.\+key\+Pressed (\begin{DoxyParamCaption}\item[{int}]{key,  }\item[{char}]{c }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Notification that a key was pressed
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & The key code that was pressed (\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_input}{org.\+newdawn.\+slick.\+Input}}) 
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}{Parameters}
+{\em c} & The character of the key that was pressed \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1_key_listener_ac0b0568a21ef486c4f51382614c196ef}{org.\+newdawn.\+slick.\+Key\+Listener}}.
+
+
+\begin{DoxyCode}
+28                                             \{
+29         \textcolor{keywordflow}{switch} (key) \{
+30             \textcolor{keywordflow}{case} Input.KEY\_W:
+31                 \textcolor{keywordflow}{if} (!\mbox{\hyperlink{classentities_1_1_input_handler_a65bea2d31684e8d91db9ffef9268f9e9}{player}}.\mbox{\hyperlink{classentities_1_1_subject_a2fa68c05da096ebbd98b65b91d73abc3}{isProgramadorMuerto}}()) \{ \textcolor{comment}{//si el programador no esta
+       muerto se mueve normal}
+32                     \mbox{\hyperlink{classentities_1_1_input_handler_a65bea2d31684e8d91db9ffef9268f9e9}{player}}.\mbox{\hyperlink{classentities_1_1_player_ae56a2b518ab7feca8267a1f07c0d7f62}{getMove}}()[0] = \textcolor{keyword}{true};
+33                     \mbox{\hyperlink{classentities_1_1_input_handler_a65bea2d31684e8d91db9ffef9268f9e9}{player}}.\mbox{\hyperlink{classentities_1_1_player_a72636c420f2cbca51ada895c6d948cdf}{initWalk}}();
+34                 \} \textcolor{keywordflow}{else} \{ \textcolor{comment}{//si esta muerto se mueve al reves}
+35                     \mbox{\hyperlink{classentities_1_1_input_handler_a65bea2d31684e8d91db9ffef9268f9e9}{player}}.\mbox{\hyperlink{classentities_1_1_player_ae56a2b518ab7feca8267a1f07c0d7f62}{getMove}}()[3] = \textcolor{keyword}{true};
+36                     \mbox{\hyperlink{classentities_1_1_input_handler_a65bea2d31684e8d91db9ffef9268f9e9}{player}}.\mbox{\hyperlink{classentities_1_1_player_a72636c420f2cbca51ada895c6d948cdf}{initWalk}}();
+37                 \}
+38                 \textcolor{keywordflow}{break};
+39             \textcolor{keywordflow}{case} Input.KEY\_S:
+40 
+41                 \textcolor{keywordflow}{if} (!\mbox{\hyperlink{classentities_1_1_input_handler_a65bea2d31684e8d91db9ffef9268f9e9}{player}}.\mbox{\hyperlink{classentities_1_1_subject_a2fa68c05da096ebbd98b65b91d73abc3}{isProgramadorMuerto}}()) \{ \textcolor{comment}{//si el programador no esta
+       muerto se mueve normal}
+42                     \mbox{\hyperlink{classentities_1_1_input_handler_a65bea2d31684e8d91db9ffef9268f9e9}{player}}.\mbox{\hyperlink{classentities_1_1_player_ae56a2b518ab7feca8267a1f07c0d7f62}{getMove}}()[3] = \textcolor{keyword}{true};
+43                     \mbox{\hyperlink{classentities_1_1_input_handler_a65bea2d31684e8d91db9ffef9268f9e9}{player}}.\mbox{\hyperlink{classentities_1_1_player_a72636c420f2cbca51ada895c6d948cdf}{initWalk}}();
+44                 \} \textcolor{keywordflow}{else} \{ \textcolor{comment}{//si esta muerto se mueve al reves}
+45                     \mbox{\hyperlink{classentities_1_1_input_handler_a65bea2d31684e8d91db9ffef9268f9e9}{player}}.\mbox{\hyperlink{classentities_1_1_player_ae56a2b518ab7feca8267a1f07c0d7f62}{getMove}}()[0] = \textcolor{keyword}{true};
+46                     \mbox{\hyperlink{classentities_1_1_input_handler_a65bea2d31684e8d91db9ffef9268f9e9}{player}}.\mbox{\hyperlink{classentities_1_1_player_a72636c420f2cbca51ada895c6d948cdf}{initWalk}}();
+47                 \}
+48                 \textcolor{keywordflow}{break};
+49             \textcolor{keywordflow}{case} Input.KEY\_A:
+50                 \textcolor{keywordflow}{if} (!\mbox{\hyperlink{classentities_1_1_input_handler_a65bea2d31684e8d91db9ffef9268f9e9}{player}}.\mbox{\hyperlink{classentities_1_1_subject_a2fa68c05da096ebbd98b65b91d73abc3}{isProgramadorMuerto}}()) \{ \textcolor{comment}{//si el programador no esta
+       muerto se mueve normal}
+51                     \mbox{\hyperlink{classentities_1_1_input_handler_a65bea2d31684e8d91db9ffef9268f9e9}{player}}.\mbox{\hyperlink{classentities_1_1_player_ae56a2b518ab7feca8267a1f07c0d7f62}{getMove}}()[1] = \textcolor{keyword}{true};
+52                     \mbox{\hyperlink{classentities_1_1_input_handler_a65bea2d31684e8d91db9ffef9268f9e9}{player}}.\mbox{\hyperlink{classentities_1_1_player_a72636c420f2cbca51ada895c6d948cdf}{initWalk}}();
+53                 \} \textcolor{keywordflow}{else} \{ \textcolor{comment}{//si esta muerto se mueve al reves}
+54                     \mbox{\hyperlink{classentities_1_1_input_handler_a65bea2d31684e8d91db9ffef9268f9e9}{player}}.\mbox{\hyperlink{classentities_1_1_player_ae56a2b518ab7feca8267a1f07c0d7f62}{getMove}}()[2] = \textcolor{keyword}{true};
+55                     \mbox{\hyperlink{classentities_1_1_input_handler_a65bea2d31684e8d91db9ffef9268f9e9}{player}}.\mbox{\hyperlink{classentities_1_1_player_a72636c420f2cbca51ada895c6d948cdf}{initWalk}}();
+56                 \}
+57                 \textcolor{keywordflow}{break};
+58             \textcolor{keywordflow}{case} Input.KEY\_D:
+59                 \textcolor{keywordflow}{if} (!\mbox{\hyperlink{classentities_1_1_input_handler_a65bea2d31684e8d91db9ffef9268f9e9}{player}}.\mbox{\hyperlink{classentities_1_1_subject_a2fa68c05da096ebbd98b65b91d73abc3}{isProgramadorMuerto}}()) \{ \textcolor{comment}{//si el programador no esta
+       muerto se mueve normal}
+60                     \mbox{\hyperlink{classentities_1_1_input_handler_a65bea2d31684e8d91db9ffef9268f9e9}{player}}.\mbox{\hyperlink{classentities_1_1_player_ae56a2b518ab7feca8267a1f07c0d7f62}{getMove}}()[2] = \textcolor{keyword}{true};
+61                     \mbox{\hyperlink{classentities_1_1_input_handler_a65bea2d31684e8d91db9ffef9268f9e9}{player}}.\mbox{\hyperlink{classentities_1_1_player_a72636c420f2cbca51ada895c6d948cdf}{initWalk}}();
+62                 \} \textcolor{keywordflow}{else} \{ \textcolor{comment}{//si esta muerto se mueve al reves}
+63                     \mbox{\hyperlink{classentities_1_1_input_handler_a65bea2d31684e8d91db9ffef9268f9e9}{player}}.\mbox{\hyperlink{classentities_1_1_player_ae56a2b518ab7feca8267a1f07c0d7f62}{getMove}}()[1] = \textcolor{keyword}{true};
+64                     \mbox{\hyperlink{classentities_1_1_input_handler_a65bea2d31684e8d91db9ffef9268f9e9}{player}}.\mbox{\hyperlink{classentities_1_1_player_a72636c420f2cbca51ada895c6d948cdf}{initWalk}}();
+65                 \}
+66                 \textcolor{keywordflow}{break};
+67             \textcolor{keywordflow}{case} Input.KEY\_L:
+68                 \mbox{\hyperlink{classentities_1_1_input_handler_a65bea2d31684e8d91db9ffef9268f9e9}{player}}.\mbox{\hyperlink{classentities_1_1_subject_a1f8a6d36e95270aee0e8d46e1c6c0712}{attack}}();
+69                 \textcolor{keywordflow}{break};
+70 
+71             \textcolor{keywordflow}{case} Input.KEY\_F11:
+72                 \textcolor{keywordflow}{if} (\mbox{\hyperlink{classentities_1_1_input_handler_a65bea2d31684e8d91db9ffef9268f9e9}{player}}.\mbox{\hyperlink{classentities_1_1_mobile_entity_a21020e5f09194aae693dbce8d7d59ffa}{getSpeed}}() == 1) \{
+73                     \mbox{\hyperlink{classentities_1_1_input_handler_a65bea2d31684e8d91db9ffef9268f9e9}{player}}.\mbox{\hyperlink{classentities_1_1_mobile_entity_a8b9394d985435fba88149c9dded2e69d}{setSpeed}}((\textcolor{keywordtype}{float}) 1.5);
+74                 \} \textcolor{keywordflow}{else} \{
+75                     \mbox{\hyperlink{classentities_1_1_input_handler_a65bea2d31684e8d91db9ffef9268f9e9}{player}}.\mbox{\hyperlink{classentities_1_1_mobile_entity_a8b9394d985435fba88149c9dded2e69d}{setSpeed}}(1);
+76                 \}
+77                 \textcolor{keywordflow}{break};
+78             \textcolor{keywordflow}{case} Input.KEY\_F9:
+79                 \mbox{\hyperlink{classentities_1_1_input_handler_a65bea2d31684e8d91db9ffef9268f9e9}{player}}.\mbox{\hyperlink{classentities_1_1_player_a3d96b84a313d4ab5278223c2e0a7df35}{setHealth}}(\mbox{\hyperlink{classentities_1_1_input_handler_a65bea2d31684e8d91db9ffef9268f9e9}{player}}.\mbox{\hyperlink{classentities_1_1_subject_ac44c73e2af436dff03d938fac9bfcd19}{getMaxHealth}}());
+80                 \textcolor{keywordflow}{break};
+81             \textcolor{keywordflow}{case} Input.KEY\_TAB:
+82                 \textcolor{keywordflow}{if} (\mbox{\hyperlink{classentities_1_1_input_handler_a9f4e32826b3780c5310530d3db807df1}{gamestate}}.\mbox{\hyperlink{classstates_1_1_game_state_ab3aace79bbd3da8c4e838ac872ffb2a2}{getState}}() == GameState.GAME) \{
+83                     \mbox{\hyperlink{classentities_1_1_input_handler_a9f4e32826b3780c5310530d3db807df1}{gamestate}}.\mbox{\hyperlink{classstates_1_1_game_state_a487c240070c56cae7ca69c4066ccefa8}{openInventary}}();
+84                     \mbox{\hyperlink{classentities_1_1_input_handler_a65bea2d31684e8d91db9ffef9268f9e9}{player}}.\mbox{\hyperlink{classentities_1_1_player_adc49b9d4f92d988724264ff27f2225d8}{stopAll}}();
+85                 \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (\mbox{\hyperlink{classentities_1_1_input_handler_a9f4e32826b3780c5310530d3db807df1}{gamestate}}.\mbox{\hyperlink{classstates_1_1_game_state_ab3aace79bbd3da8c4e838ac872ffb2a2}{getState}}() == GameState.INVENTARY) \{
+86                     \mbox{\hyperlink{classentities_1_1_input_handler_a9f4e32826b3780c5310530d3db807df1}{gamestate}}.\mbox{\hyperlink{classstates_1_1_game_state_a7b673342f6dc74ba4c452ff346782d04}{closeInventary}}();
+87                 \}
+88                 \textcolor{keywordflow}{break};
+89             \textcolor{keywordflow}{case} Input.KEY\_ESCAPE:
+90                 \textcolor{keywordflow}{if} (\mbox{\hyperlink{classentities_1_1_input_handler_a9f4e32826b3780c5310530d3db807df1}{gamestate}}.\mbox{\hyperlink{classstates_1_1_game_state_a30ae5d760e45322b8e77c5959dc992f5}{isGameEnded}}()) \{
+91                     \mbox{\hyperlink{classentities_1_1_input_handler_a9f4e32826b3780c5310530d3db807df1}{gamestate}}.\mbox{\hyperlink{classstates_1_1_game_state_a08a716dc1292aef4744b305312e598f1}{getGame}}().\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1_state_based_game_a30b279d5177837e9d4eee745c79cc069}{enterState}}(NotEvenAnEarlyAccess.
+      FINAL\_CREDITS);
+92                 \}
+93                 \textcolor{keywordflow}{break};
+94         \}
+95 
+96     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classentities_1_1_input_handler_a2716ee43b20accd25e37268ac67c5488}\label{classentities_1_1_input_handler_a2716ee43b20accd25e37268ac67c5488}} 
+\index{entities\+::\+Input\+Handler@{entities\+::\+Input\+Handler}!key\+Released@{key\+Released}}
+\index{key\+Released@{key\+Released}!entities\+::\+Input\+Handler@{entities\+::\+Input\+Handler}}
+\subsubsection{\texorpdfstring{key\+Released()}{keyReleased()}}
+{\footnotesize\ttfamily void entities.\+Input\+Handler.\+key\+Released (\begin{DoxyParamCaption}\item[{int}]{key,  }\item[{char}]{c }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Notification that a key was released
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & The key code that was released (\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_input}{org.\+newdawn.\+slick.\+Input}}) 
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}{Parameters}
+{\em c} & The character of the key that was released \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1_key_listener_a474673b59bc77266bcef3c261c26ee2b}{org.\+newdawn.\+slick.\+Key\+Listener}}.
+
+
+\begin{DoxyCode}
+99                                              \{
+100         System.out.println(\textcolor{stringliteral}{"Released: "} + c);
+101         \textcolor{keywordflow}{switch} (key) \{
+102             \textcolor{keywordflow}{case} Input.KEY\_W:
+103 
+104                 \textcolor{keywordflow}{if} (!\mbox{\hyperlink{classentities_1_1_input_handler_a65bea2d31684e8d91db9ffef9268f9e9}{player}}.\mbox{\hyperlink{classentities_1_1_subject_a2fa68c05da096ebbd98b65b91d73abc3}{isProgramadorMuerto}}()) \{ \textcolor{comment}{//si el programador no esta
+       muerto se mueve normal}
+105                     \mbox{\hyperlink{classentities_1_1_input_handler_a65bea2d31684e8d91db9ffef9268f9e9}{player}}.\mbox{\hyperlink{classentities_1_1_player_ae56a2b518ab7feca8267a1f07c0d7f62}{getMove}}()[0] = \textcolor{keyword}{false};
+106                     \mbox{\hyperlink{classentities_1_1_input_handler_a65bea2d31684e8d91db9ffef9268f9e9}{player}}.\mbox{\hyperlink{classentities_1_1_player_a85565dfb7b3f26180d56992f90b88d56}{stopWalk}}();
+107                     \mbox{\hyperlink{classentities_1_1_input_handler_a65bea2d31684e8d91db9ffef9268f9e9}{player}}.\mbox{\hyperlink{classentities_1_1_animated_sprite_entity_a968525f6ed17d7c57c1237dbc077b29d}{rest}}();  \textcolor{comment}{//Poner la animación base}
+108                 \} \textcolor{keywordflow}{else} \{ \textcolor{comment}{//si esta muerto se mueve al reves}
+109                     \mbox{\hyperlink{classentities_1_1_input_handler_a65bea2d31684e8d91db9ffef9268f9e9}{player}}.\mbox{\hyperlink{classentities_1_1_player_ae56a2b518ab7feca8267a1f07c0d7f62}{getMove}}()[3] = \textcolor{keyword}{false};
+110                     \mbox{\hyperlink{classentities_1_1_input_handler_a65bea2d31684e8d91db9ffef9268f9e9}{player}}.\mbox{\hyperlink{classentities_1_1_player_a85565dfb7b3f26180d56992f90b88d56}{stopWalk}}();
+111                     \mbox{\hyperlink{classentities_1_1_input_handler_a65bea2d31684e8d91db9ffef9268f9e9}{player}}.\mbox{\hyperlink{classentities_1_1_animated_sprite_entity_a968525f6ed17d7c57c1237dbc077b29d}{rest}}();
+112                 \}
+113                 \textcolor{keywordflow}{break};
+114             \textcolor{keywordflow}{case} Input.KEY\_S:
+115                 \textcolor{keywordflow}{if} (!\mbox{\hyperlink{classentities_1_1_input_handler_a65bea2d31684e8d91db9ffef9268f9e9}{player}}.\mbox{\hyperlink{classentities_1_1_subject_a2fa68c05da096ebbd98b65b91d73abc3}{isProgramadorMuerto}}()) \{ \textcolor{comment}{//si el programador no esta
+       muerto se mueve normal}
+116                     \mbox{\hyperlink{classentities_1_1_input_handler_a65bea2d31684e8d91db9ffef9268f9e9}{player}}.\mbox{\hyperlink{classentities_1_1_player_ae56a2b518ab7feca8267a1f07c0d7f62}{getMove}}()[3] = \textcolor{keyword}{false};
+117                     \mbox{\hyperlink{classentities_1_1_input_handler_a65bea2d31684e8d91db9ffef9268f9e9}{player}}.\mbox{\hyperlink{classentities_1_1_player_a85565dfb7b3f26180d56992f90b88d56}{stopWalk}}();
+118                     \mbox{\hyperlink{classentities_1_1_input_handler_a65bea2d31684e8d91db9ffef9268f9e9}{player}}.\mbox{\hyperlink{classentities_1_1_animated_sprite_entity_a968525f6ed17d7c57c1237dbc077b29d}{rest}}();
+119                 \} \textcolor{keywordflow}{else} \{ \textcolor{comment}{//si esta muerto se mueve al reves}
+120                     \mbox{\hyperlink{classentities_1_1_input_handler_a65bea2d31684e8d91db9ffef9268f9e9}{player}}.\mbox{\hyperlink{classentities_1_1_player_ae56a2b518ab7feca8267a1f07c0d7f62}{getMove}}()[0] = \textcolor{keyword}{false};
+121                     \mbox{\hyperlink{classentities_1_1_input_handler_a65bea2d31684e8d91db9ffef9268f9e9}{player}}.\mbox{\hyperlink{classentities_1_1_player_a85565dfb7b3f26180d56992f90b88d56}{stopWalk}}();
+122                     \mbox{\hyperlink{classentities_1_1_input_handler_a65bea2d31684e8d91db9ffef9268f9e9}{player}}.\mbox{\hyperlink{classentities_1_1_animated_sprite_entity_a968525f6ed17d7c57c1237dbc077b29d}{rest}}();  \textcolor{comment}{//Poner la animación base}
+123                 \}
+124                 \textcolor{keywordflow}{break};
+125             \textcolor{keywordflow}{case} Input.KEY\_A:
+126                 \textcolor{keywordflow}{if} (!\mbox{\hyperlink{classentities_1_1_input_handler_a65bea2d31684e8d91db9ffef9268f9e9}{player}}.\mbox{\hyperlink{classentities_1_1_subject_a2fa68c05da096ebbd98b65b91d73abc3}{isProgramadorMuerto}}()) \{ \textcolor{comment}{//si el programador no esta
+       muerto se mueve normal}
+127                     \mbox{\hyperlink{classentities_1_1_input_handler_a65bea2d31684e8d91db9ffef9268f9e9}{player}}.\mbox{\hyperlink{classentities_1_1_player_ae56a2b518ab7feca8267a1f07c0d7f62}{getMove}}()[1] = \textcolor{keyword}{false};
+128                     \mbox{\hyperlink{classentities_1_1_input_handler_a65bea2d31684e8d91db9ffef9268f9e9}{player}}.\mbox{\hyperlink{classentities_1_1_player_a85565dfb7b3f26180d56992f90b88d56}{stopWalk}}();
+129                     \mbox{\hyperlink{classentities_1_1_input_handler_a65bea2d31684e8d91db9ffef9268f9e9}{player}}.\mbox{\hyperlink{classentities_1_1_animated_sprite_entity_a968525f6ed17d7c57c1237dbc077b29d}{rest}}();
+130                 \} \textcolor{keywordflow}{else} \{ \textcolor{comment}{//si esta muerto se mueve al reves}
+131                     \mbox{\hyperlink{classentities_1_1_input_handler_a65bea2d31684e8d91db9ffef9268f9e9}{player}}.\mbox{\hyperlink{classentities_1_1_player_ae56a2b518ab7feca8267a1f07c0d7f62}{getMove}}()[2] = \textcolor{keyword}{false};
+132                     \mbox{\hyperlink{classentities_1_1_input_handler_a65bea2d31684e8d91db9ffef9268f9e9}{player}}.\mbox{\hyperlink{classentities_1_1_player_a85565dfb7b3f26180d56992f90b88d56}{stopWalk}}();
+133                     \mbox{\hyperlink{classentities_1_1_input_handler_a65bea2d31684e8d91db9ffef9268f9e9}{player}}.\mbox{\hyperlink{classentities_1_1_animated_sprite_entity_a968525f6ed17d7c57c1237dbc077b29d}{rest}}();
+134                 \}
+135                 \textcolor{keywordflow}{break};
+136             \textcolor{keywordflow}{case} Input.KEY\_D:
+137                 \textcolor{keywordflow}{if} (!\mbox{\hyperlink{classentities_1_1_input_handler_a65bea2d31684e8d91db9ffef9268f9e9}{player}}.\mbox{\hyperlink{classentities_1_1_subject_a2fa68c05da096ebbd98b65b91d73abc3}{isProgramadorMuerto}}()) \{ \textcolor{comment}{//si el programador no esta
+       muerto se mueve normal}
+138                     \mbox{\hyperlink{classentities_1_1_input_handler_a65bea2d31684e8d91db9ffef9268f9e9}{player}}.\mbox{\hyperlink{classentities_1_1_player_ae56a2b518ab7feca8267a1f07c0d7f62}{getMove}}()[2] = \textcolor{keyword}{false};
+139                     \mbox{\hyperlink{classentities_1_1_input_handler_a65bea2d31684e8d91db9ffef9268f9e9}{player}}.\mbox{\hyperlink{classentities_1_1_player_a85565dfb7b3f26180d56992f90b88d56}{stopWalk}}();
+140                     \mbox{\hyperlink{classentities_1_1_input_handler_a65bea2d31684e8d91db9ffef9268f9e9}{player}}.\mbox{\hyperlink{classentities_1_1_animated_sprite_entity_a968525f6ed17d7c57c1237dbc077b29d}{rest}}();
+141                 \} \textcolor{keywordflow}{else} \{ \textcolor{comment}{//si esta muerto se mueve al reves}
+142                     \mbox{\hyperlink{classentities_1_1_input_handler_a65bea2d31684e8d91db9ffef9268f9e9}{player}}.\mbox{\hyperlink{classentities_1_1_player_ae56a2b518ab7feca8267a1f07c0d7f62}{getMove}}()[1] = \textcolor{keyword}{false};
+143                     \mbox{\hyperlink{classentities_1_1_input_handler_a65bea2d31684e8d91db9ffef9268f9e9}{player}}.\mbox{\hyperlink{classentities_1_1_player_a85565dfb7b3f26180d56992f90b88d56}{stopWalk}}();
+144                     \mbox{\hyperlink{classentities_1_1_input_handler_a65bea2d31684e8d91db9ffef9268f9e9}{player}}.\mbox{\hyperlink{classentities_1_1_animated_sprite_entity_a968525f6ed17d7c57c1237dbc077b29d}{rest}}();
+145                 \}
+146                 \textcolor{keywordflow}{break};
+147             \textcolor{keywordflow}{case} Input.KEY\_L:
+148                 \textcolor{comment}{//player.resetDirection(player.direction());}
+149                 \textcolor{keywordflow}{break};
+150 
+151         \}
+152     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classentities_1_1_input_handler_ac47130ba472782e616b9332f442320d2}\label{classentities_1_1_input_handler_ac47130ba472782e616b9332f442320d2}} 
+\index{entities\+::\+Input\+Handler@{entities\+::\+Input\+Handler}!set\+Enable@{set\+Enable}}
+\index{set\+Enable@{set\+Enable}!entities\+::\+Input\+Handler@{entities\+::\+Input\+Handler}}
+\subsubsection{\texorpdfstring{set\+Enable()}{setEnable()}}
+{\footnotesize\ttfamily void entities.\+Input\+Handler.\+set\+Enable (\begin{DoxyParamCaption}\item[{boolean}]{b }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+173                                      \{
+174         \mbox{\hyperlink{classentities_1_1_input_handler_a438eff19a77640d2055a83c332aff302}{enabled}} = b;
+175     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classentities_1_1_input_handler_ad3a1eb35970a169a68b3c01246562a3e}\label{classentities_1_1_input_handler_ad3a1eb35970a169a68b3c01246562a3e}} 
+\index{entities\+::\+Input\+Handler@{entities\+::\+Input\+Handler}!set\+Input@{set\+Input}}
+\index{set\+Input@{set\+Input}!entities\+::\+Input\+Handler@{entities\+::\+Input\+Handler}}
+\subsubsection{\texorpdfstring{set\+Input()}{setInput()}}
+{\footnotesize\ttfamily void entities.\+Input\+Handler.\+set\+Input (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_input}{Input}}}]{input }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Set the input that events are being sent from
+
+
+\begin{DoxyParams}{Parameters}
+{\em input} & The input instance sending events \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1_controlled_input_reciever_ab838ca221a429b05c0b53aea9b4fe72f}{org.\+newdawn.\+slick.\+Controlled\+Input\+Reciever}}.
+
+
+\begin{DoxyCode}
+155                                       \{
+156         this.\mbox{\hyperlink{classentities_1_1_input_handler_a924ff1658e32e10d77694adf4856b26f}{input}} = \mbox{\hyperlink{classentities_1_1_input_handler_a924ff1658e32e10d77694adf4856b26f}{input}};
+157 
+158     \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classentities_1_1_input_handler_a438eff19a77640d2055a83c332aff302}\label{classentities_1_1_input_handler_a438eff19a77640d2055a83c332aff302}} 
+\index{entities\+::\+Input\+Handler@{entities\+::\+Input\+Handler}!enabled@{enabled}}
+\index{enabled@{enabled}!entities\+::\+Input\+Handler@{entities\+::\+Input\+Handler}}
+\subsubsection{\texorpdfstring{enabled}{enabled}}
+{\footnotesize\ttfamily boolean entities.\+Input\+Handler.\+enabled\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classentities_1_1_input_handler_a9f4e32826b3780c5310530d3db807df1}\label{classentities_1_1_input_handler_a9f4e32826b3780c5310530d3db807df1}} 
+\index{entities\+::\+Input\+Handler@{entities\+::\+Input\+Handler}!gamestate@{gamestate}}
+\index{gamestate@{gamestate}!entities\+::\+Input\+Handler@{entities\+::\+Input\+Handler}}
+\subsubsection{\texorpdfstring{gamestate}{gamestate}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classstates_1_1_game_state}{Game\+State}} entities.\+Input\+Handler.\+gamestate\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classentities_1_1_input_handler_a924ff1658e32e10d77694adf4856b26f}\label{classentities_1_1_input_handler_a924ff1658e32e10d77694adf4856b26f}} 
+\index{entities\+::\+Input\+Handler@{entities\+::\+Input\+Handler}!input@{input}}
+\index{input@{input}!entities\+::\+Input\+Handler@{entities\+::\+Input\+Handler}}
+\subsubsection{\texorpdfstring{input}{input}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_input}{Input}} entities.\+Input\+Handler.\+input\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classentities_1_1_input_handler_a65bea2d31684e8d91db9ffef9268f9e9}\label{classentities_1_1_input_handler_a65bea2d31684e8d91db9ffef9268f9e9}} 
+\index{entities\+::\+Input\+Handler@{entities\+::\+Input\+Handler}!player@{player}}
+\index{player@{player}!entities\+::\+Input\+Handler@{entities\+::\+Input\+Handler}}
+\subsubsection{\texorpdfstring{player}{player}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classentities_1_1_player}{Player}} entities.\+Input\+Handler.\+player\hspace{0.3cm}{\ttfamily [private]}}
+

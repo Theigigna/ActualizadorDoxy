@@ -1,0 +1,180 @@
+\hypertarget{classorg_1_1newdawn_1_1slick_1_1svg_1_1_simple_diagram_renderer}{}\section{org.\+newdawn.\+slick.\+svg.\+Simple\+Diagram\+Renderer Class Reference}
+\label{classorg_1_1newdawn_1_1slick_1_1svg_1_1_simple_diagram_renderer}\index{org.\+newdawn.\+slick.\+svg.\+Simple\+Diagram\+Renderer@{org.\+newdawn.\+slick.\+svg.\+Simple\+Diagram\+Renderer}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1_simple_diagram_renderer_a37e21a052f321aa7c91c9c5420adc8c9}{Simple\+Diagram\+Renderer}} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1_diagram}{Diagram}} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1_simple_diagram_renderer_a2b56dad891d98b19da92cd43376e02e8}{diagram}})
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1_simple_diagram_renderer_a96e551c2437df27242c43353a85bd8ec}{render}} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_graphics}{Graphics}} g)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1_simple_diagram_renderer_a33c25d60d0c42f10d7bac023cd8bb312}{render}} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_graphics}{Graphics}} g, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1_diagram}{Diagram}} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1_simple_diagram_renderer_a2b56dad891d98b19da92cd43376e02e8}{diagram}})
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1_diagram}{Diagram}} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1_simple_diagram_renderer_a2b56dad891d98b19da92cd43376e02e8}{diagram}}
+\item 
+int \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1_simple_diagram_renderer_a48000603b4c3624a604096f01f5d58d0}{list}} = -\/1
+\end{DoxyCompactItemize}
+\subsection*{Static Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1opengl_1_1renderer_1_1_s_g_l}{S\+GL}} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1_simple_diagram_renderer_adf6a659eed43175642b1d1ec2f94615b}{GL}} = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1renderer_1_1_renderer_abe742c3a7dfca67c6c01821d27087308}{Renderer.\+get}}()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A very primtive implementation for rendering a diagram. This simply sticks the shapes on the screen in the right fill and stroke colours
+
+\begin{DoxyAuthor}{Author}
+kevin 
+\end{DoxyAuthor}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1svg_1_1_simple_diagram_renderer_a37e21a052f321aa7c91c9c5420adc8c9}\label{classorg_1_1newdawn_1_1slick_1_1svg_1_1_simple_diagram_renderer_a37e21a052f321aa7c91c9c5420adc8c9}} 
+\index{org\+::newdawn\+::slick\+::svg\+::\+Simple\+Diagram\+Renderer@{org\+::newdawn\+::slick\+::svg\+::\+Simple\+Diagram\+Renderer}!Simple\+Diagram\+Renderer@{Simple\+Diagram\+Renderer}}
+\index{Simple\+Diagram\+Renderer@{Simple\+Diagram\+Renderer}!org\+::newdawn\+::slick\+::svg\+::\+Simple\+Diagram\+Renderer@{org\+::newdawn\+::slick\+::svg\+::\+Simple\+Diagram\+Renderer}}
+\subsubsection{\texorpdfstring{Simple\+Diagram\+Renderer()}{SimpleDiagramRenderer()}}
+{\footnotesize\ttfamily org.\+newdawn.\+slick.\+svg.\+Simple\+Diagram\+Renderer.\+Simple\+Diagram\+Renderer (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1_diagram}{Diagram}}}]{diagram }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Create a new simple renderer
+
+
+\begin{DoxyParams}{Parameters}
+{\em diagram} & The diagram to be rendered \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+32                                                   \{
+33         this.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1_simple_diagram_renderer_a2b56dad891d98b19da92cd43376e02e8}{diagram}} = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1_simple_diagram_renderer_a2b56dad891d98b19da92cd43376e02e8}{diagram}};
+34     \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1svg_1_1_simple_diagram_renderer_a96e551c2437df27242c43353a85bd8ec}\label{classorg_1_1newdawn_1_1slick_1_1svg_1_1_simple_diagram_renderer_a96e551c2437df27242c43353a85bd8ec}} 
+\index{org\+::newdawn\+::slick\+::svg\+::\+Simple\+Diagram\+Renderer@{org\+::newdawn\+::slick\+::svg\+::\+Simple\+Diagram\+Renderer}!render@{render}}
+\index{render@{render}!org\+::newdawn\+::slick\+::svg\+::\+Simple\+Diagram\+Renderer@{org\+::newdawn\+::slick\+::svg\+::\+Simple\+Diagram\+Renderer}}
+\subsubsection{\texorpdfstring{render()}{render()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+svg.\+Simple\+Diagram\+Renderer.\+render (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_graphics}{Graphics}}}]{g }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Render the diagram to the given graphics context
+
+
+\begin{DoxyParams}{Parameters}
+{\em g} & The graphics context to which we should render the diagram \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+41                                    \{
+42         \textcolor{comment}{// last list generation}
+43         \textcolor{keywordflow}{if} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1_simple_diagram_renderer_a48000603b4c3624a604096f01f5d58d0}{list}} == -1) \{
+44             \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1_simple_diagram_renderer_a48000603b4c3624a604096f01f5d58d0}{list}} = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1_simple_diagram_renderer_adf6a659eed43175642b1d1ec2f94615b}{GL}}.\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1opengl_1_1renderer_1_1_s_g_l_a2c623d00bb2450569a6c86a71024b83d}{glGenLists}}(1);
+45             \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1_simple_diagram_renderer_adf6a659eed43175642b1d1ec2f94615b}{GL}}.\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1opengl_1_1renderer_1_1_s_g_l_a85746cd7e0de9297a821619097a5f7cc}{glNewList}}(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1_simple_diagram_renderer_a48000603b4c3624a604096f01f5d58d0}{list}}, SGL.GL\_COMPILE);
+46                 \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1_simple_diagram_renderer_a96e551c2437df27242c43353a85bd8ec}{render}}(g, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1_simple_diagram_renderer_a2b56dad891d98b19da92cd43376e02e8}{diagram}});
+47             \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1_simple_diagram_renderer_adf6a659eed43175642b1d1ec2f94615b}{GL}}.\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1opengl_1_1renderer_1_1_s_g_l_a300a1d9b3c984ccc0a59eb951821bf37}{glEndList}}();
+48         \}
+49         
+50         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1_simple_diagram_renderer_adf6a659eed43175642b1d1ec2f94615b}{GL}}.\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1opengl_1_1renderer_1_1_s_g_l_a8482d9603203e93027e90042db3f561a}{glCallList}}(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1_simple_diagram_renderer_a48000603b4c3624a604096f01f5d58d0}{list}});
+51         
+52         TextureImpl.bindNone();
+53     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1svg_1_1_simple_diagram_renderer_a33c25d60d0c42f10d7bac023cd8bb312}\label{classorg_1_1newdawn_1_1slick_1_1svg_1_1_simple_diagram_renderer_a33c25d60d0c42f10d7bac023cd8bb312}} 
+\index{org\+::newdawn\+::slick\+::svg\+::\+Simple\+Diagram\+Renderer@{org\+::newdawn\+::slick\+::svg\+::\+Simple\+Diagram\+Renderer}!render@{render}}
+\index{render@{render}!org\+::newdawn\+::slick\+::svg\+::\+Simple\+Diagram\+Renderer@{org\+::newdawn\+::slick\+::svg\+::\+Simple\+Diagram\+Renderer}}
+\subsubsection{\texorpdfstring{render()}{render()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily static void org.\+newdawn.\+slick.\+svg.\+Simple\+Diagram\+Renderer.\+render (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_graphics}{Graphics}}}]{g,  }\item[{\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1_diagram}{Diagram}}}]{diagram }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Utility method to render a diagram in immediate mode
+
+
+\begin{DoxyParams}{Parameters}
+{\em g} & The graphics context to render to \\
+\hline
+{\em diagram} & The diagram to render \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+61                                                            \{
+62         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i=0;i<\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1_simple_diagram_renderer_a2b56dad891d98b19da92cd43376e02e8}{diagram}}.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1_diagram_a869127d837d1ffa281dc3e50817ae22e}{getFigureCount}}();i++) \{
+63             Figure figure = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1_simple_diagram_renderer_a2b56dad891d98b19da92cd43376e02e8}{diagram}}.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1_diagram_aa331087982df2abf665a0b8bb7787118}{getFigure}}(i);
+64 
+65             \textcolor{keywordflow}{if} (figure.getData().isFilled()) \{
+66                 \textcolor{keywordflow}{if} (figure.getData().isColor(NonGeometricData.FILL)) \{
+67                     g.setColor(figure.getData().getAsColor(NonGeometricData.FILL));
+68                     g.fill(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1_simple_diagram_renderer_a2b56dad891d98b19da92cd43376e02e8}{diagram}}.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1_diagram_aa331087982df2abf665a0b8bb7787118}{getFigure}}(i).\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1_figure_a980b7a979c218c2a73897ba47a2b3a17}{getShape}}());
+69                     g.setAntiAlias(\textcolor{keyword}{true});
+70                     g.draw(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1_simple_diagram_renderer_a2b56dad891d98b19da92cd43376e02e8}{diagram}}.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1_diagram_aa331087982df2abf665a0b8bb7787118}{getFigure}}(i).\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1_figure_a980b7a979c218c2a73897ba47a2b3a17}{getShape}}());
+71                     g.setAntiAlias(\textcolor{keyword}{false});
+72                 \}
+73                 
+74                 String fill = figure.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1_figure_af21423a8fd0c4f77485be8a5de8887eb}{getData}}().\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1_non_geometric_data_a7b5d3b3acd6be8061d53de032c9d5817}{getAsReference}}(NonGeometricData.FILL);
+75                 \textcolor{keywordflow}{if} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1_simple_diagram_renderer_a2b56dad891d98b19da92cd43376e02e8}{diagram}}.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1_diagram_a42164eb0201d4ab2b3d58ee7fd5aad26}{getPatternDef}}(fill) != null)\{
+76                     System.out.println(\textcolor{stringliteral}{"PATTERN"});
+77                 \}
+78                 \textcolor{keywordflow}{if} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1_simple_diagram_renderer_a2b56dad891d98b19da92cd43376e02e8}{diagram}}.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1_diagram_a13c8069cc4608b5f12fdab9586793d64}{getGradient}}(fill) != null) \{
+79                     Gradient gradient = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1_simple_diagram_renderer_a2b56dad891d98b19da92cd43376e02e8}{diagram}}.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1_diagram_a13c8069cc4608b5f12fdab9586793d64}{getGradient}}(fill);
+80                     Shape shape = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1_simple_diagram_renderer_a2b56dad891d98b19da92cd43376e02e8}{diagram}}.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1_diagram_aa331087982df2abf665a0b8bb7787118}{getFigure}}(i).\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1_figure_a980b7a979c218c2a73897ba47a2b3a17}{getShape}}();
+81                     TexCoordGenerator fg = null;
+82                     \textcolor{keywordflow}{if} (gradient.isRadial()) \{
+83                         fg = \textcolor{keyword}{new} RadialGradientFill(shape, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1_simple_diagram_renderer_a2b56dad891d98b19da92cd43376e02e8}{diagram}}.
+      \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1_diagram_aa331087982df2abf665a0b8bb7787118}{getFigure}}(i).\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1_figure_a407e6b796ef1ee5b6cd2ce29c9a72464}{getTransform}}(), gradient);    
+84                     \} \textcolor{keywordflow}{else} \{
+85                         fg = \textcolor{keyword}{new} LinearGradientFill(shape, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1_simple_diagram_renderer_a2b56dad891d98b19da92cd43376e02e8}{diagram}}.
+      \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1_diagram_aa331087982df2abf665a0b8bb7787118}{getFigure}}(i).\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1_figure_a407e6b796ef1ee5b6cd2ce29c9a72464}{getTransform}}(), gradient);
+86                     \}
+87                     
+88                     Color.white.bind();
+89                     ShapeRenderer.texture(shape, gradient.getImage(), fg);
+90                 \}
+91             \}
+92             
+93             \textcolor{keywordflow}{if} (figure.getData().isStroked()) \{
+94                 \textcolor{keywordflow}{if} (figure.getData().isColor(NonGeometricData.STROKE)) \{
+95                     g.setColor(figure.getData().getAsColor(NonGeometricData.STROKE));
+96                     g.setLineWidth(figure.getData().getAsFloat(NonGeometricData.STROKE\_WIDTH));
+97                     g.setAntiAlias(\textcolor{keyword}{true});
+98                     g.draw(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1_simple_diagram_renderer_a2b56dad891d98b19da92cd43376e02e8}{diagram}}.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1_diagram_aa331087982df2abf665a0b8bb7787118}{getFigure}}(i).\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1_figure_a980b7a979c218c2a73897ba47a2b3a17}{getShape}}());
+99                     g.setAntiAlias(\textcolor{keyword}{false});
+100                     g.resetLineWidth();
+101                 \}
+102             \}
+103     
+104             \textcolor{comment}{// DEBUG VERSION}
+105 \textcolor{comment}{//          g.setColor(Color.black);}
+106 \textcolor{comment}{//          g.draw(diagram.getFigure(i).getShape());}
+107 \textcolor{comment}{//          g.setColor(Color.red);}
+108 \textcolor{comment}{//          g.fill(diagram.getFigure(i).getShape());}
+109         \}
+110     \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1svg_1_1_simple_diagram_renderer_a2b56dad891d98b19da92cd43376e02e8}\label{classorg_1_1newdawn_1_1slick_1_1svg_1_1_simple_diagram_renderer_a2b56dad891d98b19da92cd43376e02e8}} 
+\index{org\+::newdawn\+::slick\+::svg\+::\+Simple\+Diagram\+Renderer@{org\+::newdawn\+::slick\+::svg\+::\+Simple\+Diagram\+Renderer}!diagram@{diagram}}
+\index{diagram@{diagram}!org\+::newdawn\+::slick\+::svg\+::\+Simple\+Diagram\+Renderer@{org\+::newdawn\+::slick\+::svg\+::\+Simple\+Diagram\+Renderer}}
+\subsubsection{\texorpdfstring{diagram}{diagram}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1_diagram}{Diagram}} org.\+newdawn.\+slick.\+svg.\+Simple\+Diagram\+Renderer.\+diagram}
+
+The diagram to be rendered \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1svg_1_1_simple_diagram_renderer_adf6a659eed43175642b1d1ec2f94615b}\label{classorg_1_1newdawn_1_1slick_1_1svg_1_1_simple_diagram_renderer_adf6a659eed43175642b1d1ec2f94615b}} 
+\index{org\+::newdawn\+::slick\+::svg\+::\+Simple\+Diagram\+Renderer@{org\+::newdawn\+::slick\+::svg\+::\+Simple\+Diagram\+Renderer}!GL@{GL}}
+\index{GL@{GL}!org\+::newdawn\+::slick\+::svg\+::\+Simple\+Diagram\+Renderer@{org\+::newdawn\+::slick\+::svg\+::\+Simple\+Diagram\+Renderer}}
+\subsubsection{\texorpdfstring{GL}{GL}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1opengl_1_1renderer_1_1_s_g_l}{S\+GL}} org.\+newdawn.\+slick.\+svg.\+Simple\+Diagram\+Renderer.\+GL = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1renderer_1_1_renderer_abe742c3a7dfca67c6c01821d27087308}{Renderer.\+get}}()\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+The renderer to use for all GL operations \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1svg_1_1_simple_diagram_renderer_a48000603b4c3624a604096f01f5d58d0}\label{classorg_1_1newdawn_1_1slick_1_1svg_1_1_simple_diagram_renderer_a48000603b4c3624a604096f01f5d58d0}} 
+\index{org\+::newdawn\+::slick\+::svg\+::\+Simple\+Diagram\+Renderer@{org\+::newdawn\+::slick\+::svg\+::\+Simple\+Diagram\+Renderer}!list@{list}}
+\index{list@{list}!org\+::newdawn\+::slick\+::svg\+::\+Simple\+Diagram\+Renderer@{org\+::newdawn\+::slick\+::svg\+::\+Simple\+Diagram\+Renderer}}
+\subsubsection{\texorpdfstring{list}{list}}
+{\footnotesize\ttfamily int org.\+newdawn.\+slick.\+svg.\+Simple\+Diagram\+Renderer.\+list = -\/1}
+
+The display list representing the diagram 

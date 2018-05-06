@@ -1,0 +1,75 @@
+\hypertarget{interfaceorg_1_1newdawn_1_1slick_1_1muffin_1_1_muffin}{}\section{org.\+newdawn.\+slick.\+muffin.\+Muffin Interface Reference}
+\label{interfaceorg_1_1newdawn_1_1slick_1_1muffin_1_1_muffin}\index{org.\+newdawn.\+slick.\+muffin.\+Muffin@{org.\+newdawn.\+slick.\+muffin.\+Muffin}}
+Inheritance diagram for org.\+newdawn.\+slick.\+muffin.\+Muffin\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interfaceorg_1_1newdawn_1_1slick_1_1muffin_1_1_muffin}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+abstract void \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1muffin_1_1_muffin_a025189130fb123bc751e58677435974a}{save\+File}} (Hash\+Map data, String file\+Name)  throws I\+O\+Exception
+\item 
+abstract Hash\+Map \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1muffin_1_1_muffin_a2d6256b6d8f26b294f06341985047fbe}{load\+File}} (String file\+Name)  throws I\+O\+Exception
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A description of any class with the ability to store state locally
+
+\begin{DoxyAuthor}{Author}
+kappa\+One 
+\end{DoxyAuthor}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{interfaceorg_1_1newdawn_1_1slick_1_1muffin_1_1_muffin_a2d6256b6d8f26b294f06341985047fbe}\label{interfaceorg_1_1newdawn_1_1slick_1_1muffin_1_1_muffin_a2d6256b6d8f26b294f06341985047fbe}} 
+\index{org\+::newdawn\+::slick\+::muffin\+::\+Muffin@{org\+::newdawn\+::slick\+::muffin\+::\+Muffin}!load\+File@{load\+File}}
+\index{load\+File@{load\+File}!org\+::newdawn\+::slick\+::muffin\+::\+Muffin@{org\+::newdawn\+::slick\+::muffin\+::\+Muffin}}
+\subsubsection{\texorpdfstring{load\+File()}{loadFile()}}
+{\footnotesize\ttfamily abstract Hash\+Map org.\+newdawn.\+slick.\+muffin.\+Muffin.\+load\+File (\begin{DoxyParamCaption}\item[{String}]{file\+Name }\end{DoxyParamCaption}) throws I\+O\+Exception\hspace{0.3cm}{\ttfamily [abstract]}}
+
+Load a file of data from the store
+
+
+\begin{DoxyParams}{Parameters}
+{\em file\+Name} & The name of the file to retrieve \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The data retrieved 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em I\+O\+Exception} & Indicates a failure to load the state \\
+\hline
+\end{DoxyExceptions}
+
+
+Implemented in \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1muffin_1_1_webstart_muffin_a671e964aa3e400ae2c9d2a4d6a9ebeef}{org.\+newdawn.\+slick.\+muffin.\+Webstart\+Muffin}}, and \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1muffin_1_1_file_muffin_a5db97db7631d95ba851f1d4d81ed3825}{org.\+newdawn.\+slick.\+muffin.\+File\+Muffin}}.
+
+\mbox{\Hypertarget{interfaceorg_1_1newdawn_1_1slick_1_1muffin_1_1_muffin_a025189130fb123bc751e58677435974a}\label{interfaceorg_1_1newdawn_1_1slick_1_1muffin_1_1_muffin_a025189130fb123bc751e58677435974a}} 
+\index{org\+::newdawn\+::slick\+::muffin\+::\+Muffin@{org\+::newdawn\+::slick\+::muffin\+::\+Muffin}!save\+File@{save\+File}}
+\index{save\+File@{save\+File}!org\+::newdawn\+::slick\+::muffin\+::\+Muffin@{org\+::newdawn\+::slick\+::muffin\+::\+Muffin}}
+\subsubsection{\texorpdfstring{save\+File()}{saveFile()}}
+{\footnotesize\ttfamily abstract void org.\+newdawn.\+slick.\+muffin.\+Muffin.\+save\+File (\begin{DoxyParamCaption}\item[{Hash\+Map}]{data,  }\item[{String}]{file\+Name }\end{DoxyParamCaption}) throws I\+O\+Exception\hspace{0.3cm}{\ttfamily [abstract]}}
+
+Save a file of data
+
+
+\begin{DoxyParams}{Parameters}
+{\em data} & The data to store \\
+\hline
+{\em file\+Name} & The name of the file to store it against \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em I\+O\+Exception} & Indicates a failure to save the state \\
+\hline
+\end{DoxyExceptions}
+
+
+Implemented in \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1muffin_1_1_webstart_muffin_a4109511b5120d8588fcb4543202d9763}{org.\+newdawn.\+slick.\+muffin.\+Webstart\+Muffin}}, and \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1muffin_1_1_file_muffin_ade293cc9f254442a763d22c2b0988aad}{org.\+newdawn.\+slick.\+muffin.\+File\+Muffin}}.
+

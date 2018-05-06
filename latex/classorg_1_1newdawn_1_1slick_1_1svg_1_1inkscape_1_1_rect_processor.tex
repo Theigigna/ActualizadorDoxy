@@ -1,0 +1,86 @@
+\hypertarget{classorg_1_1newdawn_1_1slick_1_1svg_1_1inkscape_1_1_rect_processor}{}\section{org.\+newdawn.\+slick.\+svg.\+inkscape.\+Rect\+Processor Class Reference}
+\label{classorg_1_1newdawn_1_1slick_1_1svg_1_1inkscape_1_1_rect_processor}\index{org.\+newdawn.\+slick.\+svg.\+inkscape.\+Rect\+Processor@{org.\+newdawn.\+slick.\+svg.\+inkscape.\+Rect\+Processor}}
+Inheritance diagram for org.\+newdawn.\+slick.\+svg.\+inkscape.\+Rect\+Processor\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classorg_1_1newdawn_1_1slick_1_1svg_1_1inkscape_1_1_rect_processor}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1inkscape_1_1_rect_processor_ab411c9f69524536d7b05ab0e7ea3e69e}{process}} (\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1svg_1_1_loader}{Loader}} loader, Element element, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1_diagram}{Diagram}} diagram, Transform t)  throws Parsing\+Exception 
+\item 
+boolean \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1inkscape_1_1_rect_processor_a8558ba7a28daef670cedb8afe8d68286}{handles}} (Element element)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A processor for the $<$rect$>$ element.
+
+\begin{DoxyAuthor}{Author}
+kevin 
+\end{DoxyAuthor}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1svg_1_1inkscape_1_1_rect_processor_a8558ba7a28daef670cedb8afe8d68286}\label{classorg_1_1newdawn_1_1slick_1_1svg_1_1inkscape_1_1_rect_processor_a8558ba7a28daef670cedb8afe8d68286}} 
+\index{org\+::newdawn\+::slick\+::svg\+::inkscape\+::\+Rect\+Processor@{org\+::newdawn\+::slick\+::svg\+::inkscape\+::\+Rect\+Processor}!handles@{handles}}
+\index{handles@{handles}!org\+::newdawn\+::slick\+::svg\+::inkscape\+::\+Rect\+Processor@{org\+::newdawn\+::slick\+::svg\+::inkscape\+::\+Rect\+Processor}}
+\subsubsection{\texorpdfstring{handles()}{handles()}}
+{\footnotesize\ttfamily boolean org.\+newdawn.\+slick.\+svg.\+inkscape.\+Rect\+Processor.\+handles (\begin{DoxyParamCaption}\item[{Element}]{element }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1svg_1_1inkscape_1_1_element_processor_ae95bbf21a67c52aff02cf09259c554a3}{org.\+newdawn.\+slick.\+svg.\+inkscape.\+Element\+Processor\+::handles}}(org.\+w3c.\+dom.\+Element) 
+\end{DoxySeeAlso}
+
+
+Implements \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1svg_1_1inkscape_1_1_element_processor_ae95bbf21a67c52aff02cf09259c554a3}{org.\+newdawn.\+slick.\+svg.\+inkscape.\+Element\+Processor}}.
+
+
+\begin{DoxyCode}
+47                                             \{
+48         \textcolor{keywordflow}{if} (element.getNodeName().equals(\textcolor{stringliteral}{"rect"})) \{
+49             \textcolor{keywordflow}{return} \textcolor{keyword}{true};
+50         \}
+51         
+52         \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+53     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1svg_1_1inkscape_1_1_rect_processor_ab411c9f69524536d7b05ab0e7ea3e69e}\label{classorg_1_1newdawn_1_1slick_1_1svg_1_1inkscape_1_1_rect_processor_ab411c9f69524536d7b05ab0e7ea3e69e}} 
+\index{org\+::newdawn\+::slick\+::svg\+::inkscape\+::\+Rect\+Processor@{org\+::newdawn\+::slick\+::svg\+::inkscape\+::\+Rect\+Processor}!process@{process}}
+\index{process@{process}!org\+::newdawn\+::slick\+::svg\+::inkscape\+::\+Rect\+Processor@{org\+::newdawn\+::slick\+::svg\+::inkscape\+::\+Rect\+Processor}}
+\subsubsection{\texorpdfstring{process()}{process()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+svg.\+inkscape.\+Rect\+Processor.\+process (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1svg_1_1_loader}{Loader}}}]{loader,  }\item[{Element}]{element,  }\item[{\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1_diagram}{Diagram}}}]{diagram,  }\item[{Transform}]{t }\end{DoxyParamCaption}) throws \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1_parsing_exception}{Parsing\+Exception}}\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1svg_1_1inkscape_1_1_element_processor_acd170a9e1119481edae885780db59a2e}{org.\+newdawn.\+slick.\+svg.\+inkscape.\+Element\+Processor\+::process}}(\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1svg_1_1_loader}{org.\+newdawn.\+slick.\+svg.\+Loader}}, org.\+w3c.\+dom.\+Element, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1_diagram}{org.\+newdawn.\+slick.\+svg.\+Diagram}}, org.\+newdawn.\+slick.\+geom.\+Transform) 
+\end{DoxySeeAlso}
+
+
+Implements \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1svg_1_1inkscape_1_1_element_processor_acd170a9e1119481edae885780db59a2e}{org.\+newdawn.\+slick.\+svg.\+inkscape.\+Element\+Processor}}.
+
+
+\begin{DoxyCode}
+23                                                                                                            
+         \{
+24         Transform transform = Util.getTransform(element);
+25         transform = \textcolor{keyword}{new} Transform(t, transform); 
+26         
+27         \textcolor{keywordtype}{float} width = Float.parseFloat(element.getAttribute(\textcolor{stringliteral}{"width"}));
+28         \textcolor{keywordtype}{float} height = Float.parseFloat(element.getAttribute(\textcolor{stringliteral}{"height"}));
+29         \textcolor{keywordtype}{float} x = Float.parseFloat(element.getAttribute(\textcolor{stringliteral}{"x"}));
+30         \textcolor{keywordtype}{float} y = Float.parseFloat(element.getAttribute(\textcolor{stringliteral}{"y"}));
+31         
+32         Rectangle rect = \textcolor{keyword}{new} Rectangle(x,y,width+1,height+1);
+33         Shape shape = rect.transform(transform);
+34         
+35         NonGeometricData data = Util.getNonGeometricData(element);
+36         data.addAttribute(\textcolor{stringliteral}{"width"}, \textcolor{stringliteral}{""}+width);
+37         data.addAttribute(\textcolor{stringliteral}{"height"}, \textcolor{stringliteral}{""}+height);
+38         data.addAttribute(\textcolor{stringliteral}{"x"}, \textcolor{stringliteral}{""}+x);
+39         data.addAttribute(\textcolor{stringliteral}{"y"}, \textcolor{stringliteral}{""}+y);
+40         
+41         diagram.addFigure(\textcolor{keyword}{new} Figure(Figure.RECTANGLE, shape, data, transform));
+42     \}
+\end{DoxyCode}

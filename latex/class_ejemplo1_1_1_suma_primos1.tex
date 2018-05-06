@@ -1,0 +1,32 @@
+\hypertarget{class_ejemplo1_1_1_suma_primos1}{}\section{Ejemplo1.\+Suma\+Primos1 Class Reference}
+\label{class_ejemplo1_1_1_suma_primos1}\index{Ejemplo1.\+Suma\+Primos1@{Ejemplo1.\+Suma\+Primos1}}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{class_ejemplo1_1_1_suma_primos1_a561553bc8f22335b5e41ca75b0518305}{main}} (String\mbox{[}$\,$\mbox{]} x)
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_ejemplo1_1_1_suma_primos1_a561553bc8f22335b5e41ca75b0518305}\label{class_ejemplo1_1_1_suma_primos1_a561553bc8f22335b5e41ca75b0518305}} 
+\index{Ejemplo1\+::\+Suma\+Primos1@{Ejemplo1\+::\+Suma\+Primos1}!main@{main}}
+\index{main@{main}!Ejemplo1\+::\+Suma\+Primos1@{Ejemplo1\+::\+Suma\+Primos1}}
+\subsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily static void Ejemplo1.\+Suma\+Primos1.\+main (\begin{DoxyParamCaption}\item[{String \mbox{[}$\,$\mbox{]}}]{x }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+\begin{DoxyCode}
+20     \{       
+21         Resultado \mbox{\hyperlink{namespacesuma}{suma}} = \textcolor{keyword}{new} Resultado();
+22         \textcolor{keywordtype}{long} t0 = (\textcolor{keyword}{new} Date()).getTime(); \textcolor{comment}{//t0=instante de inicio de los cálculos}
+23         Calculador p1 = \textcolor{keyword}{new} Calculador(1,10000000,\mbox{\hyperlink{namespacesuma}{suma}});
+24         p1.start();
+25         \textcolor{keywordflow}{try}
+26         \{
+27             p1.join();
+28         \} \textcolor{keywordflow}{catch} (InterruptedException e)\{\}
+29         \textcolor{keywordtype}{long} t1 = (\textcolor{keyword}{new} Date()).getTime(); \textcolor{comment}{//t1=instante de final de los cálculos}
+30         System.out.println(\textcolor{stringliteral}{"La suma de los números primos hasta 10000000 es: "}+
+      \mbox{\hyperlink{namespacesuma}{suma}}.getSuma()+\textcolor{stringliteral}{" calculado en "}+(t1-t0)+\textcolor{stringliteral}{" miliseg."});
+31     \}
+\end{DoxyCode}

@@ -1,0 +1,35 @@
+\hypertarget{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_g_l_utils}{}\section{org.\+newdawn.\+slick.\+opengl.\+G\+L\+Utils Class Reference}
+\label{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_g_l_utils}\index{org.\+newdawn.\+slick.\+opengl.\+G\+L\+Utils@{org.\+newdawn.\+slick.\+opengl.\+G\+L\+Utils}}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_g_l_utils_abd198c115d89b2112d06f109392d8b0f}{check\+G\+L\+Context}} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A collection of utilities to allow aid interaction with the GL provider
+
+\begin{DoxyAuthor}{Author}
+kevin 
+\end{DoxyAuthor}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_g_l_utils_abd198c115d89b2112d06f109392d8b0f}\label{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_g_l_utils_abd198c115d89b2112d06f109392d8b0f}} 
+\index{org\+::newdawn\+::slick\+::opengl\+::\+G\+L\+Utils@{org\+::newdawn\+::slick\+::opengl\+::\+G\+L\+Utils}!check\+G\+L\+Context@{check\+G\+L\+Context}}
+\index{check\+G\+L\+Context@{check\+G\+L\+Context}!org\+::newdawn\+::slick\+::opengl\+::\+G\+L\+Utils@{org\+::newdawn\+::slick\+::opengl\+::\+G\+L\+Utils}}
+\subsubsection{\texorpdfstring{check\+G\+L\+Context()}{checkGLContext()}}
+{\footnotesize\ttfamily static void org.\+newdawn.\+slick.\+opengl.\+G\+L\+Utils.\+check\+G\+L\+Context (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Check that we\textquotesingle{}re in the right place to be doing GL operations 
+\begin{DoxyCode}
+15                                         \{
+16         \textcolor{keywordflow}{try} \{
+17             Renderer.get().glGetError();
+18         \} \textcolor{keywordflow}{catch} (NullPointerException e) \{
+19             \textcolor{keywordflow}{throw} \textcolor{keyword}{new} RuntimeException(\textcolor{stringliteral}{"OpenGL based resources (images, fonts, sprites etc) must be loaded
+       as part of init() or the game loop. They cannot be loaded before initialisation."});
+20         \}
+21     \}
+\end{DoxyCode}

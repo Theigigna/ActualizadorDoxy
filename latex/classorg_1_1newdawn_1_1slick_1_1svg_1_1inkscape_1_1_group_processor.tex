@@ -1,0 +1,71 @@
+\hypertarget{classorg_1_1newdawn_1_1slick_1_1svg_1_1inkscape_1_1_group_processor}{}\section{org.\+newdawn.\+slick.\+svg.\+inkscape.\+Group\+Processor Class Reference}
+\label{classorg_1_1newdawn_1_1slick_1_1svg_1_1inkscape_1_1_group_processor}\index{org.\+newdawn.\+slick.\+svg.\+inkscape.\+Group\+Processor@{org.\+newdawn.\+slick.\+svg.\+inkscape.\+Group\+Processor}}
+Inheritance diagram for org.\+newdawn.\+slick.\+svg.\+inkscape.\+Group\+Processor\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classorg_1_1newdawn_1_1slick_1_1svg_1_1inkscape_1_1_group_processor}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+boolean \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1inkscape_1_1_group_processor_a870dccc7ed743d7d2456575009813c75}{handles}} (Element element)
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1inkscape_1_1_group_processor_af3d842954b1ee338f5dc0bbca656e9b9}{process}} (\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1svg_1_1_loader}{Loader}} loader, Element element, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1_diagram}{Diagram}} diagram, Transform t)  throws Parsing\+Exception 
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+T\+O\+DO\+: Document this class
+
+\begin{DoxyAuthor}{Author}
+kevin 
+\end{DoxyAuthor}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1svg_1_1inkscape_1_1_group_processor_a870dccc7ed743d7d2456575009813c75}\label{classorg_1_1newdawn_1_1slick_1_1svg_1_1inkscape_1_1_group_processor_a870dccc7ed743d7d2456575009813c75}} 
+\index{org\+::newdawn\+::slick\+::svg\+::inkscape\+::\+Group\+Processor@{org\+::newdawn\+::slick\+::svg\+::inkscape\+::\+Group\+Processor}!handles@{handles}}
+\index{handles@{handles}!org\+::newdawn\+::slick\+::svg\+::inkscape\+::\+Group\+Processor@{org\+::newdawn\+::slick\+::svg\+::inkscape\+::\+Group\+Processor}}
+\subsubsection{\texorpdfstring{handles()}{handles()}}
+{\footnotesize\ttfamily boolean org.\+newdawn.\+slick.\+svg.\+inkscape.\+Group\+Processor.\+handles (\begin{DoxyParamCaption}\item[{Element}]{element }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1svg_1_1inkscape_1_1_element_processor_ae95bbf21a67c52aff02cf09259c554a3}{org.\+newdawn.\+slick.\+svg.\+inkscape.\+Element\+Processor\+::handles}}(org.\+w3c.\+dom.\+Element) 
+\end{DoxySeeAlso}
+
+
+Implements \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1svg_1_1inkscape_1_1_element_processor_ae95bbf21a67c52aff02cf09259c554a3}{org.\+newdawn.\+slick.\+svg.\+inkscape.\+Element\+Processor}}.
+
+
+\begin{DoxyCode}
+19                                             \{
+20         \textcolor{keywordflow}{if} (element.getNodeName().equals(\textcolor{stringliteral}{"g"})) \{
+21             \textcolor{keywordflow}{return} \textcolor{keyword}{true};
+22         \}
+23         \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+24     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1svg_1_1inkscape_1_1_group_processor_af3d842954b1ee338f5dc0bbca656e9b9}\label{classorg_1_1newdawn_1_1slick_1_1svg_1_1inkscape_1_1_group_processor_af3d842954b1ee338f5dc0bbca656e9b9}} 
+\index{org\+::newdawn\+::slick\+::svg\+::inkscape\+::\+Group\+Processor@{org\+::newdawn\+::slick\+::svg\+::inkscape\+::\+Group\+Processor}!process@{process}}
+\index{process@{process}!org\+::newdawn\+::slick\+::svg\+::inkscape\+::\+Group\+Processor@{org\+::newdawn\+::slick\+::svg\+::inkscape\+::\+Group\+Processor}}
+\subsubsection{\texorpdfstring{process()}{process()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+svg.\+inkscape.\+Group\+Processor.\+process (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1svg_1_1_loader}{Loader}}}]{loader,  }\item[{Element}]{element,  }\item[{\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1_diagram}{Diagram}}}]{diagram,  }\item[{Transform}]{t }\end{DoxyParamCaption}) throws \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1_parsing_exception}{Parsing\+Exception}}\hspace{0.3cm}{\ttfamily [inline]}}
+
+O \begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1svg_1_1inkscape_1_1_element_processor_acd170a9e1119481edae885780db59a2e}{org.\+newdawn.\+slick.\+svg.\+inkscape.\+Element\+Processor\+::process}}(\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1svg_1_1_loader}{org.\+newdawn.\+slick.\+svg.\+Loader}}, org.\+w3c.\+dom.\+Element, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1svg_1_1_diagram}{org.\+newdawn.\+slick.\+svg.\+Diagram}}, org.\+newdawn.\+slick.\+geom.\+Transform) 
+\end{DoxySeeAlso}
+
+
+Implements \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1svg_1_1inkscape_1_1_element_processor_acd170a9e1119481edae885780db59a2e}{org.\+newdawn.\+slick.\+svg.\+inkscape.\+Element\+Processor}}.
+
+
+\begin{DoxyCode}
+29                                                                                                            
+         \{
+30         Transform transform = Util.getTransform(element);
+31         transform = \textcolor{keyword}{new} Transform(t, transform);
+32         
+33         loader.loadChildren(element, transform);
+34     \}
+\end{DoxyCode}

@@ -1,0 +1,243 @@
+\hypertarget{class_sockets_1_1_colores}{}\section{Sockets.\+Colores Class Reference}
+\label{class_sockets_1_1_colores}\index{Sockets.\+Colores@{Sockets.\+Colores}}
+Inheritance diagram for Sockets.\+Colores\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_sockets_1_1_colores}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_sockets_1_1_colores_a1d4e4f3b911aef7557c9dacd277afd67}{Colores}} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{class_sockets_1_1_colores_a0ae8f636007e78298110dbf1dcbedca7}{main}} (String args\mbox{[}$\,$\mbox{]})
+\end{DoxyCompactItemize}
+\subsection*{Package Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_sockets_1_1_servidor}{Servidor}} \mbox{\hyperlink{class_sockets_1_1_colores_a89813ab2c57db5af75da62b9419481f9}{servidor}}
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_sockets_1_1_colores_aac354d879e1d011b0612ebaf0c312df9}{init\+Components}} ()
+\item 
+void \mbox{\hyperlink{class_sockets_1_1_colores_a02b7b95d6d82af2a358d2d6a358a742b}{j\+Button5\+Action\+Performed}} (java.\+awt.\+event.\+Action\+Event evt)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_sockets_1_1_paso}{Paso}} \mbox{\hyperlink{class_sockets_1_1_colores_adf9fafb3fd2b7cdd9e555b80d94df744}{paso}} = new \mbox{\hyperlink{class_sockets_1_1_paso}{Paso}}()
+\item 
+boolean \mbox{\hyperlink{class_sockets_1_1_colores_ab9176a60b5bc0b70d94a23d9c1a448cd}{boton\+Pulsado}} = false
+\item 
+javax.\+swing.\+J\+Button \mbox{\hyperlink{class_sockets_1_1_colores_ab40711ac8b3b4ea81488754689d89db6}{j\+Button1}}
+\item 
+javax.\+swing.\+J\+Button \mbox{\hyperlink{class_sockets_1_1_colores_a4f1d1e8c1b92fee9bca285f52bf66b84}{j\+Button2}}
+\item 
+javax.\+swing.\+J\+Button \mbox{\hyperlink{class_sockets_1_1_colores_a7bba899d5ca449162ba9e0b7b3ae4264}{j\+Button3}}
+\item 
+javax.\+swing.\+J\+Button \mbox{\hyperlink{class_sockets_1_1_colores_ac555b14a5e9aa5fd552356f04d884d31}{j\+Button4}}
+\item 
+javax.\+swing.\+J\+Button \mbox{\hyperlink{class_sockets_1_1_colores_a4cacc03eb161c98ee51cfdd6970ecd35}{j\+Button5}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_sockets_1_1_colores_a1d4e4f3b911aef7557c9dacd277afd67}\label{class_sockets_1_1_colores_a1d4e4f3b911aef7557c9dacd277afd67}} 
+\index{Sockets\+::\+Colores@{Sockets\+::\+Colores}!Colores@{Colores}}
+\index{Colores@{Colores}!Sockets\+::\+Colores@{Sockets\+::\+Colores}}
+\subsubsection{\texorpdfstring{Colores()}{Colores()}}
+{\footnotesize\ttfamily Sockets.\+Colores.\+Colores (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Creates new form \mbox{\hyperlink{class_sockets_1_1_colores}{Colores}} 
+\begin{DoxyCode}
+15     \{
+16         \mbox{\hyperlink{class_sockets_1_1_colores_aac354d879e1d011b0612ebaf0c312df9}{initComponents}}();
+17         \textcolor{keywordflow}{try} \{
+18             \mbox{\hyperlink{class_sockets_1_1_colores_a89813ab2c57db5af75da62b9419481f9}{servidor}} = \textcolor{keyword}{new} Servidor(5000,10,\mbox{\hyperlink{class_sockets_1_1_colores_adf9fafb3fd2b7cdd9e555b80d94df744}{paso}});
+19         \} \textcolor{keywordflow}{catch} (IOException ex) \{
+20             Logger.getLogger(\mbox{\hyperlink{class_sockets_1_1_colores_a1d4e4f3b911aef7557c9dacd277afd67}{Colores}}.class.getName()).log(Level.SEVERE, null, ex);
+21         \}
+22         Paleta parchis = \textcolor{keyword}{new} Paleta();
+23         Pintor p1 = \textcolor{keyword}{new} Pintor(\mbox{\hyperlink{class_sockets_1_1_colores_ab40711ac8b3b4ea81488754689d89db6}{jButton1}},parchis,\mbox{\hyperlink{class_sockets_1_1_colores_adf9fafb3fd2b7cdd9e555b80d94df744}{paso}});
+24         Pintor p2 = \textcolor{keyword}{new} Pintor(\mbox{\hyperlink{class_sockets_1_1_colores_a4f1d1e8c1b92fee9bca285f52bf66b84}{jButton2}},parchis,\mbox{\hyperlink{class_sockets_1_1_colores_adf9fafb3fd2b7cdd9e555b80d94df744}{paso}});
+25         Pintor p3 = \textcolor{keyword}{new} Pintor(\mbox{\hyperlink{class_sockets_1_1_colores_a7bba899d5ca449162ba9e0b7b3ae4264}{jButton3}},parchis,\mbox{\hyperlink{class_sockets_1_1_colores_adf9fafb3fd2b7cdd9e555b80d94df744}{paso}});
+26         Pintor p4 = \textcolor{keyword}{new} Pintor(\mbox{\hyperlink{class_sockets_1_1_colores_ac555b14a5e9aa5fd552356f04d884d31}{jButton4}},parchis,\mbox{\hyperlink{class_sockets_1_1_colores_adf9fafb3fd2b7cdd9e555b80d94df744}{paso}});
+27         \mbox{\hyperlink{class_sockets_1_1_colores_a89813ab2c57db5af75da62b9419481f9}{servidor}}.start();
+28         p1.start();
+29         p2.start();
+30         p3.start();
+31         p4.start();
+32     \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_sockets_1_1_colores_aac354d879e1d011b0612ebaf0c312df9}\label{class_sockets_1_1_colores_aac354d879e1d011b0612ebaf0c312df9}} 
+\index{Sockets\+::\+Colores@{Sockets\+::\+Colores}!init\+Components@{init\+Components}}
+\index{init\+Components@{init\+Components}!Sockets\+::\+Colores@{Sockets\+::\+Colores}}
+\subsubsection{\texorpdfstring{init\+Components()}{initComponents()}}
+{\footnotesize\ttfamily void Sockets.\+Colores.\+init\+Components (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+This method is called from within the constructor to initialize the form. W\+A\+R\+N\+I\+NG\+: Do N\+OT modify this code. The content of this method is always regenerated by the Form Editor. 
+\begin{DoxyCode}
+41                                   \{
+42 
+43         \mbox{\hyperlink{class_sockets_1_1_colores_ab40711ac8b3b4ea81488754689d89db6}{jButton1}} = \textcolor{keyword}{new} javax.swing.JButton();
+44         \mbox{\hyperlink{class_sockets_1_1_colores_a4f1d1e8c1b92fee9bca285f52bf66b84}{jButton2}} = \textcolor{keyword}{new} javax.swing.JButton();
+45         \mbox{\hyperlink{class_sockets_1_1_colores_a7bba899d5ca449162ba9e0b7b3ae4264}{jButton3}} = \textcolor{keyword}{new} javax.swing.JButton();
+46         \mbox{\hyperlink{class_sockets_1_1_colores_ac555b14a5e9aa5fd552356f04d884d31}{jButton4}} = \textcolor{keyword}{new} javax.swing.JButton();
+47         \mbox{\hyperlink{class_sockets_1_1_colores_a4cacc03eb161c98ee51cfdd6970ecd35}{jButton5}} = \textcolor{keyword}{new} javax.swing.JButton();
+48 
+49         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT\_ON\_CLOSE);
+50         setTitle(\textcolor{stringliteral}{"Colores"});
+51 
+52         \mbox{\hyperlink{class_sockets_1_1_colores_a4cacc03eb161c98ee51cfdd6970ecd35}{jButton5}}.setText(\textcolor{stringliteral}{"Detener"});
+53         \mbox{\hyperlink{class_sockets_1_1_colores_a4cacc03eb161c98ee51cfdd6970ecd35}{jButton5}}.addActionListener(\textcolor{keyword}{new} java.awt.event.ActionListener() \{
+54             \textcolor{keyword}{public} \textcolor{keywordtype}{void} actionPerformed(java.awt.event.ActionEvent evt) \{
+55                 \mbox{\hyperlink{class_sockets_1_1_colores_a02b7b95d6d82af2a358d2d6a358a742b}{jButton5ActionPerformed}}(evt);
+56             \}
+57         \});
+58 
+59         javax.swing.GroupLayout layout = \textcolor{keyword}{new} javax.swing.GroupLayout(getContentPane());
+60         getContentPane().setLayout(layout);
+61         layout.setHorizontalGroup(
+62             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+63             .addGroup(layout.createSequentialGroup()
+64                 .addGap(52, 52, 52)
+65                 .addComponent(\mbox{\hyperlink{class_sockets_1_1_colores_ab40711ac8b3b4ea81488754689d89db6}{jButton1}}, javax.swing.GroupLayout.PREFERRED\_SIZE, 127, javax.swing.
+      GroupLayout.PREFERRED\_SIZE)
+66                 .addGap(61, 61, 61)
+67                 .addComponent(\mbox{\hyperlink{class_sockets_1_1_colores_a4f1d1e8c1b92fee9bca285f52bf66b84}{jButton2}}, javax.swing.GroupLayout.PREFERRED\_SIZE, 127, javax.swing.
+      GroupLayout.PREFERRED\_SIZE)
+68                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 64, Short.MAX\_VALUE)
+69                 .addComponent(\mbox{\hyperlink{class_sockets_1_1_colores_a7bba899d5ca449162ba9e0b7b3ae4264}{jButton3}}, javax.swing.GroupLayout.PREFERRED\_SIZE, 127, javax.swing.
+      GroupLayout.PREFERRED\_SIZE)
+70                 .addGap(55, 55, 55)
+71                 .addComponent(\mbox{\hyperlink{class_sockets_1_1_colores_ac555b14a5e9aa5fd552356f04d884d31}{jButton4}}, javax.swing.GroupLayout.PREFERRED\_SIZE, 127, javax.swing.
+      GroupLayout.PREFERRED\_SIZE)
+72                 .addGap(60, 60, 60))
+73             .addGroup(layout.createSequentialGroup()
+74                 .addGap(355, 355, 355)
+75                 .addComponent(\mbox{\hyperlink{class_sockets_1_1_colores_a4cacc03eb161c98ee51cfdd6970ecd35}{jButton5}})
+76                 .addContainerGap(374, Short.MAX\_VALUE))
+77         );
+78         layout.setVerticalGroup(
+79             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+80             .addGroup(layout.createSequentialGroup()
+81                 .addGap(68, 68, 68)
+82                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+83                     .addComponent(\mbox{\hyperlink{class_sockets_1_1_colores_ab40711ac8b3b4ea81488754689d89db6}{jButton1}}, javax.swing.GroupLayout.PREFERRED\_SIZE, 118, javax.
+      swing.GroupLayout.PREFERRED\_SIZE)
+84                     .addComponent(\mbox{\hyperlink{class_sockets_1_1_colores_ac555b14a5e9aa5fd552356f04d884d31}{jButton4}}, javax.swing.GroupLayout.PREFERRED\_SIZE, 118, javax.
+      swing.GroupLayout.PREFERRED\_SIZE)
+85                     .addComponent(\mbox{\hyperlink{class_sockets_1_1_colores_a7bba899d5ca449162ba9e0b7b3ae4264}{jButton3}}, javax.swing.GroupLayout.PREFERRED\_SIZE, 118, javax.
+      swing.GroupLayout.PREFERRED\_SIZE)
+86                     .addComponent(\mbox{\hyperlink{class_sockets_1_1_colores_a4f1d1e8c1b92fee9bca285f52bf66b84}{jButton2}}, javax.swing.GroupLayout.PREFERRED\_SIZE, 118, javax.
+      swing.GroupLayout.PREFERRED\_SIZE))
+87                 .addGap(44, 44, 44)
+88                 .addComponent(\mbox{\hyperlink{class_sockets_1_1_colores_a4cacc03eb161c98ee51cfdd6970ecd35}{jButton5}})
+89                 .addContainerGap(47, Short.MAX\_VALUE))
+90         );
+91 
+92         java.awt.Dimension screenSize = java.awt.Toolkit.getDefaultToolkit().getScreenSize();
+93         setBounds((screenSize.width-816)/2, (screenSize.height-338)/2, 816, 338);
+94     \}\textcolor{comment}{// </editor-fold>//GEN-END:initComponents}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_sockets_1_1_colores_a02b7b95d6d82af2a358d2d6a358a742b}\label{class_sockets_1_1_colores_a02b7b95d6d82af2a358d2d6a358a742b}} 
+\index{Sockets\+::\+Colores@{Sockets\+::\+Colores}!j\+Button5\+Action\+Performed@{j\+Button5\+Action\+Performed}}
+\index{j\+Button5\+Action\+Performed@{j\+Button5\+Action\+Performed}!Sockets\+::\+Colores@{Sockets\+::\+Colores}}
+\subsubsection{\texorpdfstring{j\+Button5\+Action\+Performed()}{jButton5ActionPerformed()}}
+{\footnotesize\ttfamily void Sockets.\+Colores.\+j\+Button5\+Action\+Performed (\begin{DoxyParamCaption}\item[{java.\+awt.\+event.\+Action\+Event}]{evt }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+\begin{DoxyCode}
+96                                                                          \{\textcolor{comment}{//
+      GEN-FIRST:event\_jButton5ActionPerformed}
+97         \textcolor{keywordflow}{if}(!\mbox{\hyperlink{class_sockets_1_1_colores_ab9176a60b5bc0b70d94a23d9c1a448cd}{botonPulsado}}) \textcolor{comment}{//Si no se ha pulsado}
+98         \{                 
+99             \mbox{\hyperlink{class_sockets_1_1_colores_ab9176a60b5bc0b70d94a23d9c1a448cd}{botonPulsado}}=\textcolor{keyword}{true};             \textcolor{comment}{//lo cambiamos a pulsado}
+100             \mbox{\hyperlink{class_sockets_1_1_colores_a4cacc03eb161c98ee51cfdd6970ecd35}{jButton5}}.setText(\textcolor{stringliteral}{"Reanudar"});  \textcolor{comment}{//y cambiamos el texto}
+101             \mbox{\hyperlink{class_sockets_1_1_colores_adf9fafb3fd2b7cdd9e555b80d94df744}{paso}}.\mbox{\hyperlink{class_sockets_1_1_paso_a56e0e78be832edf53d6cbc29b095ac71}{cerrar}}();    \textcolor{comment}{//Cerramos el paso para que los pintores se detengan}
+102         \}
+103         \textcolor{keywordflow}{else} \textcolor{comment}{//Si ya se había pulsado}
+104         \{                           
+105             \mbox{\hyperlink{class_sockets_1_1_colores_ab9176a60b5bc0b70d94a23d9c1a448cd}{botonPulsado}}=\textcolor{keyword}{false};            \textcolor{comment}{//lo cambiamos}
+106             \mbox{\hyperlink{class_sockets_1_1_colores_a4cacc03eb161c98ee51cfdd6970ecd35}{jButton5}}.setText(\textcolor{stringliteral}{"Detener"});  \textcolor{comment}{//y cambiamos el texto}
+107             \mbox{\hyperlink{class_sockets_1_1_colores_adf9fafb3fd2b7cdd9e555b80d94df744}{paso}}.\mbox{\hyperlink{class_sockets_1_1_paso_ae1faa4c34d81cb9ffaef7ff4bc49eab6}{abrir}}();    \textcolor{comment}{//Abrimos el paso para que los pintores sigan trabajando}
+108         \}
+109     \}\textcolor{comment}{//GEN-LAST:event\_jButton5ActionPerformed}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_sockets_1_1_colores_a0ae8f636007e78298110dbf1dcbedca7}\label{class_sockets_1_1_colores_a0ae8f636007e78298110dbf1dcbedca7}} 
+\index{Sockets\+::\+Colores@{Sockets\+::\+Colores}!main@{main}}
+\index{main@{main}!Sockets\+::\+Colores@{Sockets\+::\+Colores}}
+\subsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily static void Sockets.\+Colores.\+main (\begin{DoxyParamCaption}\item[{String}]{args\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+\begin{DoxyCode}
+112     \{
+113         java.awt.EventQueue.invokeLater(\textcolor{keyword}{new} Runnable() \{
+114             \textcolor{keyword}{public} \textcolor{keywordtype}{void} run()
+115             \{
+116                 \textcolor{keyword}{new} \mbox{\hyperlink{class_sockets_1_1_colores_a1d4e4f3b911aef7557c9dacd277afd67}{Colores}}().setVisible(\textcolor{keyword}{true});
+117             \}
+118         \});
+119     \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_sockets_1_1_colores_ab9176a60b5bc0b70d94a23d9c1a448cd}\label{class_sockets_1_1_colores_ab9176a60b5bc0b70d94a23d9c1a448cd}} 
+\index{Sockets\+::\+Colores@{Sockets\+::\+Colores}!boton\+Pulsado@{boton\+Pulsado}}
+\index{boton\+Pulsado@{boton\+Pulsado}!Sockets\+::\+Colores@{Sockets\+::\+Colores}}
+\subsubsection{\texorpdfstring{boton\+Pulsado}{botonPulsado}}
+{\footnotesize\ttfamily boolean Sockets.\+Colores.\+boton\+Pulsado = false\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_sockets_1_1_colores_ab40711ac8b3b4ea81488754689d89db6}\label{class_sockets_1_1_colores_ab40711ac8b3b4ea81488754689d89db6}} 
+\index{Sockets\+::\+Colores@{Sockets\+::\+Colores}!j\+Button1@{j\+Button1}}
+\index{j\+Button1@{j\+Button1}!Sockets\+::\+Colores@{Sockets\+::\+Colores}}
+\subsubsection{\texorpdfstring{j\+Button1}{jButton1}}
+{\footnotesize\ttfamily javax.\+swing.\+J\+Button Sockets.\+Colores.\+j\+Button1\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_sockets_1_1_colores_a4f1d1e8c1b92fee9bca285f52bf66b84}\label{class_sockets_1_1_colores_a4f1d1e8c1b92fee9bca285f52bf66b84}} 
+\index{Sockets\+::\+Colores@{Sockets\+::\+Colores}!j\+Button2@{j\+Button2}}
+\index{j\+Button2@{j\+Button2}!Sockets\+::\+Colores@{Sockets\+::\+Colores}}
+\subsubsection{\texorpdfstring{j\+Button2}{jButton2}}
+{\footnotesize\ttfamily javax.\+swing.\+J\+Button Sockets.\+Colores.\+j\+Button2\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_sockets_1_1_colores_a7bba899d5ca449162ba9e0b7b3ae4264}\label{class_sockets_1_1_colores_a7bba899d5ca449162ba9e0b7b3ae4264}} 
+\index{Sockets\+::\+Colores@{Sockets\+::\+Colores}!j\+Button3@{j\+Button3}}
+\index{j\+Button3@{j\+Button3}!Sockets\+::\+Colores@{Sockets\+::\+Colores}}
+\subsubsection{\texorpdfstring{j\+Button3}{jButton3}}
+{\footnotesize\ttfamily javax.\+swing.\+J\+Button Sockets.\+Colores.\+j\+Button3\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_sockets_1_1_colores_ac555b14a5e9aa5fd552356f04d884d31}\label{class_sockets_1_1_colores_ac555b14a5e9aa5fd552356f04d884d31}} 
+\index{Sockets\+::\+Colores@{Sockets\+::\+Colores}!j\+Button4@{j\+Button4}}
+\index{j\+Button4@{j\+Button4}!Sockets\+::\+Colores@{Sockets\+::\+Colores}}
+\subsubsection{\texorpdfstring{j\+Button4}{jButton4}}
+{\footnotesize\ttfamily javax.\+swing.\+J\+Button Sockets.\+Colores.\+j\+Button4\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_sockets_1_1_colores_a4cacc03eb161c98ee51cfdd6970ecd35}\label{class_sockets_1_1_colores_a4cacc03eb161c98ee51cfdd6970ecd35}} 
+\index{Sockets\+::\+Colores@{Sockets\+::\+Colores}!j\+Button5@{j\+Button5}}
+\index{j\+Button5@{j\+Button5}!Sockets\+::\+Colores@{Sockets\+::\+Colores}}
+\subsubsection{\texorpdfstring{j\+Button5}{jButton5}}
+{\footnotesize\ttfamily javax.\+swing.\+J\+Button Sockets.\+Colores.\+j\+Button5\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_sockets_1_1_colores_adf9fafb3fd2b7cdd9e555b80d94df744}\label{class_sockets_1_1_colores_adf9fafb3fd2b7cdd9e555b80d94df744}} 
+\index{Sockets\+::\+Colores@{Sockets\+::\+Colores}!paso@{paso}}
+\index{paso@{paso}!Sockets\+::\+Colores@{Sockets\+::\+Colores}}
+\subsubsection{\texorpdfstring{paso}{paso}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_sockets_1_1_paso}{Paso}} Sockets.\+Colores.\+paso = new \mbox{\hyperlink{class_sockets_1_1_paso}{Paso}}()\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_sockets_1_1_colores_a89813ab2c57db5af75da62b9419481f9}\label{class_sockets_1_1_colores_a89813ab2c57db5af75da62b9419481f9}} 
+\index{Sockets\+::\+Colores@{Sockets\+::\+Colores}!servidor@{servidor}}
+\index{servidor@{servidor}!Sockets\+::\+Colores@{Sockets\+::\+Colores}}
+\subsubsection{\texorpdfstring{servidor}{servidor}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_sockets_1_1_servidor}{Servidor}} Sockets.\+Colores.\+servidor\hspace{0.3cm}{\ttfamily [package]}}
+

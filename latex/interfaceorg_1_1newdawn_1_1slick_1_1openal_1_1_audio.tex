@@ -1,0 +1,193 @@
+\hypertarget{interfaceorg_1_1newdawn_1_1slick_1_1openal_1_1_audio}{}\section{org.\+newdawn.\+slick.\+openal.\+Audio Interface Reference}
+\label{interfaceorg_1_1newdawn_1_1slick_1_1openal_1_1_audio}\index{org.\+newdawn.\+slick.\+openal.\+Audio@{org.\+newdawn.\+slick.\+openal.\+Audio}}
+Inheritance diagram for org.\+newdawn.\+slick.\+openal.\+Audio\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.170543cm]{interfaceorg_1_1newdawn_1_1slick_1_1openal_1_1_audio}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1openal_1_1_audio_a8346ca83b84cb6605efb695462f12337}{stop}} ()
+\item 
+int \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1openal_1_1_audio_ac2a651989c7933bd896c7e0c382ba655}{get\+Buffer\+ID}} ()
+\item 
+boolean \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1openal_1_1_audio_a842b49128a58be8c4473cbcc8ee4ad9e}{is\+Playing}} ()
+\item 
+int \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1openal_1_1_audio_a69c3621a4a4bcbe9f1711f569c54017b}{play\+As\+Sound\+Effect}} (float pitch, float gain, boolean loop)
+\item 
+int \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1openal_1_1_audio_aebd22c97a1ed92528ad816e7152c7e00}{play\+As\+Sound\+Effect}} (float pitch, float gain, boolean loop, float x, float y, float z)
+\item 
+int \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1openal_1_1_audio_a9a13784b5ec9ce06c8756f98b00e05ab}{play\+As\+Music}} (float pitch, float gain, boolean loop)
+\item 
+boolean \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1openal_1_1_audio_ace6e2e6fd29f40a8fe5daf8b28bc75e7}{set\+Position}} (float position)
+\item 
+float \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1openal_1_1_audio_aa838b5606c0aa5f23dd46ac5918bb717}{get\+Position}} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The description of of audio data loaded by the \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_audio_loader}{Audio\+Loader}}
+
+\begin{DoxyAuthor}{Author}
+kevin 
+
+Nathan Sweet \href{mailto:misc@n4te.com}{\tt misc@n4te.\+com} 
+\end{DoxyAuthor}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{interfaceorg_1_1newdawn_1_1slick_1_1openal_1_1_audio_ac2a651989c7933bd896c7e0c382ba655}\label{interfaceorg_1_1newdawn_1_1slick_1_1openal_1_1_audio_ac2a651989c7933bd896c7e0c382ba655}} 
+\index{org\+::newdawn\+::slick\+::openal\+::\+Audio@{org\+::newdawn\+::slick\+::openal\+::\+Audio}!get\+Buffer\+ID@{get\+Buffer\+ID}}
+\index{get\+Buffer\+ID@{get\+Buffer\+ID}!org\+::newdawn\+::slick\+::openal\+::\+Audio@{org\+::newdawn\+::slick\+::openal\+::\+Audio}}
+\subsubsection{\texorpdfstring{get\+Buffer\+I\+D()}{getBufferID()}}
+{\footnotesize\ttfamily int org.\+newdawn.\+slick.\+openal.\+Audio.\+get\+Buffer\+ID (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Get the ID of the Open\+AL buffer holding this data (if any). This method is not valid with streaming resources.
+
+\begin{DoxyReturn}{Returns}
+The ID of the Open\+AL buffer holding this data 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_audio_impl_aaf5df57bc6269d59c5220fc89ef3800f}{org.\+newdawn.\+slick.\+openal.\+Audio\+Impl}}, and \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_null_audio_a1451cb508be59521271ab423ea0785a7}{org.\+newdawn.\+slick.\+openal.\+Null\+Audio}}.
+
+\mbox{\Hypertarget{interfaceorg_1_1newdawn_1_1slick_1_1openal_1_1_audio_aa838b5606c0aa5f23dd46ac5918bb717}\label{interfaceorg_1_1newdawn_1_1slick_1_1openal_1_1_audio_aa838b5606c0aa5f23dd46ac5918bb717}} 
+\index{org\+::newdawn\+::slick\+::openal\+::\+Audio@{org\+::newdawn\+::slick\+::openal\+::\+Audio}!get\+Position@{get\+Position}}
+\index{get\+Position@{get\+Position}!org\+::newdawn\+::slick\+::openal\+::\+Audio@{org\+::newdawn\+::slick\+::openal\+::\+Audio}}
+\subsubsection{\texorpdfstring{get\+Position()}{getPosition()}}
+{\footnotesize\ttfamily float org.\+newdawn.\+slick.\+openal.\+Audio.\+get\+Position (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Return the current playing position in the sound
+
+\begin{DoxyReturn}{Returns}
+The current position in seconds. 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_audio_impl_a71aa3ed24fc3e7e4e8603b89250b35bd}{org.\+newdawn.\+slick.\+openal.\+Audio\+Impl}}, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_stream_sound_a80df2cee9e1a68cd0c0bdb2f9140ffe6}{org.\+newdawn.\+slick.\+openal.\+Stream\+Sound}}, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_m_o_d_sound_ad3ac36d37787ee920277826347875e4a}{org.\+newdawn.\+slick.\+openal.\+M\+O\+D\+Sound}}, and \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_null_audio_a66050286dce4cedbeed88489d6bd5d5f}{org.\+newdawn.\+slick.\+openal.\+Null\+Audio}}.
+
+\mbox{\Hypertarget{interfaceorg_1_1newdawn_1_1slick_1_1openal_1_1_audio_a842b49128a58be8c4473cbcc8ee4ad9e}\label{interfaceorg_1_1newdawn_1_1slick_1_1openal_1_1_audio_a842b49128a58be8c4473cbcc8ee4ad9e}} 
+\index{org\+::newdawn\+::slick\+::openal\+::\+Audio@{org\+::newdawn\+::slick\+::openal\+::\+Audio}!is\+Playing@{is\+Playing}}
+\index{is\+Playing@{is\+Playing}!org\+::newdawn\+::slick\+::openal\+::\+Audio@{org\+::newdawn\+::slick\+::openal\+::\+Audio}}
+\subsubsection{\texorpdfstring{is\+Playing()}{isPlaying()}}
+{\footnotesize\ttfamily boolean org.\+newdawn.\+slick.\+openal.\+Audio.\+is\+Playing (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Check if the sound is playing as sound fx
+
+\begin{DoxyReturn}{Returns}
+True if the sound is playing 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_deferred_sound_a165c465a5d0e1092cf2a6c1a0cf77e96}{org.\+newdawn.\+slick.\+openal.\+Deferred\+Sound}}, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_audio_impl_a842212ec52d43824dee1d7c6e7fa4ce1}{org.\+newdawn.\+slick.\+openal.\+Audio\+Impl}}, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_stream_sound_a286c8ab056d5b6715e5e3155c3e91508}{org.\+newdawn.\+slick.\+openal.\+Stream\+Sound}}, and \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_null_audio_a27365c7caedab2d146545ae5990a78c3}{org.\+newdawn.\+slick.\+openal.\+Null\+Audio}}.
+
+\mbox{\Hypertarget{interfaceorg_1_1newdawn_1_1slick_1_1openal_1_1_audio_a9a13784b5ec9ce06c8756f98b00e05ab}\label{interfaceorg_1_1newdawn_1_1slick_1_1openal_1_1_audio_a9a13784b5ec9ce06c8756f98b00e05ab}} 
+\index{org\+::newdawn\+::slick\+::openal\+::\+Audio@{org\+::newdawn\+::slick\+::openal\+::\+Audio}!play\+As\+Music@{play\+As\+Music}}
+\index{play\+As\+Music@{play\+As\+Music}!org\+::newdawn\+::slick\+::openal\+::\+Audio@{org\+::newdawn\+::slick\+::openal\+::\+Audio}}
+\subsubsection{\texorpdfstring{play\+As\+Music()}{playAsMusic()}}
+{\footnotesize\ttfamily int org.\+newdawn.\+slick.\+openal.\+Audio.\+play\+As\+Music (\begin{DoxyParamCaption}\item[{float}]{pitch,  }\item[{float}]{gain,  }\item[{boolean}]{loop }\end{DoxyParamCaption})}
+
+Play this sound as music
+
+
+\begin{DoxyParams}{Parameters}
+{\em pitch} & The pitch of the play back \\
+\hline
+{\em gain} & The gain of the play back \\
+\hline
+{\em loop} & True if we should loop \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The ID of the source playing the sound 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_deferred_sound_a45f8b32fe216cc2430b16a10f1104aab}{org.\+newdawn.\+slick.\+openal.\+Deferred\+Sound}}, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_audio_impl_ac8b7973bc209b0a2ecfc169b1d9eaae4}{org.\+newdawn.\+slick.\+openal.\+Audio\+Impl}}, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_m_o_d_sound_a36e50d276fcfb6cc72c209abc9a9bdee}{org.\+newdawn.\+slick.\+openal.\+M\+O\+D\+Sound}}, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_stream_sound_ac7efc7d8db3fe1f34edae365c7d226fe}{org.\+newdawn.\+slick.\+openal.\+Stream\+Sound}}, and \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_null_audio_af43361f6993652cac2311408f18cf2d5}{org.\+newdawn.\+slick.\+openal.\+Null\+Audio}}.
+
+\mbox{\Hypertarget{interfaceorg_1_1newdawn_1_1slick_1_1openal_1_1_audio_a69c3621a4a4bcbe9f1711f569c54017b}\label{interfaceorg_1_1newdawn_1_1slick_1_1openal_1_1_audio_a69c3621a4a4bcbe9f1711f569c54017b}} 
+\index{org\+::newdawn\+::slick\+::openal\+::\+Audio@{org\+::newdawn\+::slick\+::openal\+::\+Audio}!play\+As\+Sound\+Effect@{play\+As\+Sound\+Effect}}
+\index{play\+As\+Sound\+Effect@{play\+As\+Sound\+Effect}!org\+::newdawn\+::slick\+::openal\+::\+Audio@{org\+::newdawn\+::slick\+::openal\+::\+Audio}}
+\subsubsection{\texorpdfstring{play\+As\+Sound\+Effect()}{playAsSoundEffect()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily int org.\+newdawn.\+slick.\+openal.\+Audio.\+play\+As\+Sound\+Effect (\begin{DoxyParamCaption}\item[{float}]{pitch,  }\item[{float}]{gain,  }\item[{boolean}]{loop }\end{DoxyParamCaption})}
+
+Play this sound as a sound effect
+
+
+\begin{DoxyParams}{Parameters}
+{\em pitch} & The pitch of the play back \\
+\hline
+{\em gain} & The gain of the play back \\
+\hline
+{\em loop} & True if we should loop \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The ID of the source playing the sound 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_deferred_sound_a190d70bc5dc152dbc8ca60a2842d02ee}{org.\+newdawn.\+slick.\+openal.\+Deferred\+Sound}}, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_stream_sound_a5dd8c3584d4f80a2a73abf596adddf86}{org.\+newdawn.\+slick.\+openal.\+Stream\+Sound}}, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_audio_impl_a731e0f7331c13b1c6507303ab875c6da}{org.\+newdawn.\+slick.\+openal.\+Audio\+Impl}}, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_m_o_d_sound_a401fe36df439ad47cf3431459c5c9d79}{org.\+newdawn.\+slick.\+openal.\+M\+O\+D\+Sound}}, and \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_null_audio_a0c990dbf98b062eb385f582b4798ed6e}{org.\+newdawn.\+slick.\+openal.\+Null\+Audio}}.
+
+\mbox{\Hypertarget{interfaceorg_1_1newdawn_1_1slick_1_1openal_1_1_audio_aebd22c97a1ed92528ad816e7152c7e00}\label{interfaceorg_1_1newdawn_1_1slick_1_1openal_1_1_audio_aebd22c97a1ed92528ad816e7152c7e00}} 
+\index{org\+::newdawn\+::slick\+::openal\+::\+Audio@{org\+::newdawn\+::slick\+::openal\+::\+Audio}!play\+As\+Sound\+Effect@{play\+As\+Sound\+Effect}}
+\index{play\+As\+Sound\+Effect@{play\+As\+Sound\+Effect}!org\+::newdawn\+::slick\+::openal\+::\+Audio@{org\+::newdawn\+::slick\+::openal\+::\+Audio}}
+\subsubsection{\texorpdfstring{play\+As\+Sound\+Effect()}{playAsSoundEffect()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily int org.\+newdawn.\+slick.\+openal.\+Audio.\+play\+As\+Sound\+Effect (\begin{DoxyParamCaption}\item[{float}]{pitch,  }\item[{float}]{gain,  }\item[{boolean}]{loop,  }\item[{float}]{x,  }\item[{float}]{y,  }\item[{float}]{z }\end{DoxyParamCaption})}
+
+Play this sound as a sound effect
+
+
+\begin{DoxyParams}{Parameters}
+{\em pitch} & The pitch of the play back \\
+\hline
+{\em gain} & The gain of the play back \\
+\hline
+{\em loop} & True if we should loop \\
+\hline
+{\em x} & The x position of the sound \\
+\hline
+{\em y} & The y position of the sound \\
+\hline
+{\em z} & The z position of the sound \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The ID of the source playing the sound 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_deferred_sound_ae3a58c7d18fdd5d5444351631977eb8f}{org.\+newdawn.\+slick.\+openal.\+Deferred\+Sound}}, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_audio_impl_a400627f68fca6dfd837fcce2d8536527}{org.\+newdawn.\+slick.\+openal.\+Audio\+Impl}}, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_stream_sound_abe05a7275f7f2918b9ff19226dece301}{org.\+newdawn.\+slick.\+openal.\+Stream\+Sound}}, and \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_null_audio_a087fe22212fb03b4345f5d08f1e27dd5}{org.\+newdawn.\+slick.\+openal.\+Null\+Audio}}.
+
+\mbox{\Hypertarget{interfaceorg_1_1newdawn_1_1slick_1_1openal_1_1_audio_ace6e2e6fd29f40a8fe5daf8b28bc75e7}\label{interfaceorg_1_1newdawn_1_1slick_1_1openal_1_1_audio_ace6e2e6fd29f40a8fe5daf8b28bc75e7}} 
+\index{org\+::newdawn\+::slick\+::openal\+::\+Audio@{org\+::newdawn\+::slick\+::openal\+::\+Audio}!set\+Position@{set\+Position}}
+\index{set\+Position@{set\+Position}!org\+::newdawn\+::slick\+::openal\+::\+Audio@{org\+::newdawn\+::slick\+::openal\+::\+Audio}}
+\subsubsection{\texorpdfstring{set\+Position()}{setPosition()}}
+{\footnotesize\ttfamily boolean org.\+newdawn.\+slick.\+openal.\+Audio.\+set\+Position (\begin{DoxyParamCaption}\item[{float}]{position }\end{DoxyParamCaption})}
+
+Seeks to a position in the music.
+
+
+\begin{DoxyParams}{Parameters}
+{\em position} & Position in seconds. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the setting of the position was successful 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_audio_impl_a9291d2e2d534fdfbd6a50e4948de954f}{org.\+newdawn.\+slick.\+openal.\+Audio\+Impl}}, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_m_o_d_sound_a28988cbdc108aa8daab78bbad8750f97}{org.\+newdawn.\+slick.\+openal.\+M\+O\+D\+Sound}}, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_stream_sound_aa530fe0393188182c1a956f6c381a937}{org.\+newdawn.\+slick.\+openal.\+Stream\+Sound}}, and \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_null_audio_a833763970d1f01efe17bbc58bbb3ca59}{org.\+newdawn.\+slick.\+openal.\+Null\+Audio}}.
+
+\mbox{\Hypertarget{interfaceorg_1_1newdawn_1_1slick_1_1openal_1_1_audio_a8346ca83b84cb6605efb695462f12337}\label{interfaceorg_1_1newdawn_1_1slick_1_1openal_1_1_audio_a8346ca83b84cb6605efb695462f12337}} 
+\index{org\+::newdawn\+::slick\+::openal\+::\+Audio@{org\+::newdawn\+::slick\+::openal\+::\+Audio}!stop@{stop}}
+\index{stop@{stop}!org\+::newdawn\+::slick\+::openal\+::\+Audio@{org\+::newdawn\+::slick\+::openal\+::\+Audio}}
+\subsubsection{\texorpdfstring{stop()}{stop()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+openal.\+Audio.\+stop (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Stop the sound effect 
+
+Implemented in \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_deferred_sound_af5e0e80f3944f1cb3bba586f67b94337}{org.\+newdawn.\+slick.\+openal.\+Deferred\+Sound}}, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_stream_sound_a60b0a64ffdf99dfde3e3679323cbd647}{org.\+newdawn.\+slick.\+openal.\+Stream\+Sound}}, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_m_o_d_sound_ab8d293141044f71f49e65e730b215be7}{org.\+newdawn.\+slick.\+openal.\+M\+O\+D\+Sound}}, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_null_audio_a8c13b73a507be7786c06397c8b0175f0}{org.\+newdawn.\+slick.\+openal.\+Null\+Audio}}, and \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_audio_impl_a8ad896e19c35a9d3d1d93e52685158ff}{org.\+newdawn.\+slick.\+openal.\+Audio\+Impl}}.
+

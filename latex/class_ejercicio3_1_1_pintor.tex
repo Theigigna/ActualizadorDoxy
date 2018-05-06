@@ -1,0 +1,137 @@
+\hypertarget{class_ejercicio3_1_1_pintor}{}\section{Ejercicio3.\+Pintor Class Reference}
+\label{class_ejercicio3_1_1_pintor}\index{Ejercicio3.\+Pintor@{Ejercicio3.\+Pintor}}
+Inheritance diagram for Ejercicio3.\+Pintor\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_ejercicio3_1_1_pintor}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_ejercicio3_1_1_pintor_ad99dbf461a4b20ed3deddfff5513bce0}{Pintor}} (J\+Button \mbox{\hyperlink{class_ejercicio3_1_1_pintor_a8d94252c712662974ff0d5c2e861570f}{b}}, \mbox{\hyperlink{class_ejercicio3_1_1_paleta}{Paleta}} \mbox{\hyperlink{class_ejercicio3_1_1_pintor_a3757fe9547d90e3160d3896865c5ccdc}{p}})
+\item 
+void \mbox{\hyperlink{class_ejercicio3_1_1_pintor_a591a4e0fea92212b849362801502e61f}{run}} ()
+\end{DoxyCompactItemize}
+\subsection*{Package Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{class_ejercicio3_1_1_pintor_a2cdf173f4fedc9cd17998fbcc306eac1}{j}}
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+J\+Button \mbox{\hyperlink{class_ejercicio3_1_1_pintor_a8d94252c712662974ff0d5c2e861570f}{b}}
+\item 
+\mbox{\hyperlink{class_ejercicio3_1_1_paleta}{Paleta}} \mbox{\hyperlink{class_ejercicio3_1_1_pintor_a3757fe9547d90e3160d3896865c5ccdc}{p}}
+\item 
+Color \mbox{\hyperlink{class_ejercicio3_1_1_pintor_afad4ac3330456c006258d8a5c3fe8220}{negro}} = Color.\+black
+\item 
+Color \mbox{\hyperlink{class_ejercicio3_1_1_pintor_a506a8bc9a541e6892869532dea88e748}{color\+Aux}}
+\item 
+Color \mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_ejercicio3_1_1_pintor_afe3191b9a051abec819e970119c65acc}{paleta\+Aux}} = new Color\mbox{[}4\mbox{]}
+\item 
+int \mbox{\hyperlink{class_ejercicio3_1_1_pintor_ad4b925edd7b90b3c76c4f7ae0e0fd67d}{i}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_ejercicio3_1_1_pintor_ad99dbf461a4b20ed3deddfff5513bce0}\label{class_ejercicio3_1_1_pintor_ad99dbf461a4b20ed3deddfff5513bce0}} 
+\index{Ejercicio3\+::\+Pintor@{Ejercicio3\+::\+Pintor}!Pintor@{Pintor}}
+\index{Pintor@{Pintor}!Ejercicio3\+::\+Pintor@{Ejercicio3\+::\+Pintor}}
+\subsubsection{\texorpdfstring{Pintor()}{Pintor()}}
+{\footnotesize\ttfamily Ejercicio3.\+Pintor.\+Pintor (\begin{DoxyParamCaption}\item[{J\+Button}]{b,  }\item[{\mbox{\hyperlink{class_ejercicio3_1_1_paleta}{Paleta}}}]{p }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+24     \{
+25         this.\mbox{\hyperlink{class_ejercicio3_1_1_pintor_a8d94252c712662974ff0d5c2e861570f}{b}}=\mbox{\hyperlink{class_ejercicio3_1_1_pintor_a8d94252c712662974ff0d5c2e861570f}{b}};
+26         this.\mbox{\hyperlink{class_ejercicio3_1_1_pintor_a3757fe9547d90e3160d3896865c5ccdc}{p}}=\mbox{\hyperlink{class_ejercicio3_1_1_pintor_a3757fe9547d90e3160d3896865c5ccdc}{p}};
+27     \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_ejercicio3_1_1_pintor_a591a4e0fea92212b849362801502e61f}\label{class_ejercicio3_1_1_pintor_a591a4e0fea92212b849362801502e61f}} 
+\index{Ejercicio3\+::\+Pintor@{Ejercicio3\+::\+Pintor}!run@{run}}
+\index{run@{run}!Ejercicio3\+::\+Pintor@{Ejercicio3\+::\+Pintor}}
+\subsubsection{\texorpdfstring{run()}{run()}}
+{\footnotesize\ttfamily void Ejercicio3.\+Pintor.\+run (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+30     \{
+31         \textcolor{keywordtype}{long} tiempoEnNegro = 0;
+32         \textcolor{keywordtype}{long} tiempoEnColor = 0;
+33        
+34         \textcolor{keywordflow}{while} (\textcolor{keyword}{true})
+35         \{
+36             tiempoEnNegro = (long) 2000 + (\textcolor{keywordtype}{int})((4000-2000)*Math.random());
+37             tiempoEnColor = (long) 3000 + (\textcolor{keywordtype}{int})((5000-3000)*Math.random());
+38            
+39             \mbox{\hyperlink{class_ejercicio3_1_1_pintor_a8d94252c712662974ff0d5c2e861570f}{b}}.setBackground(\mbox{\hyperlink{class_ejercicio3_1_1_pintor_afad4ac3330456c006258d8a5c3fe8220}{negro}});  \textcolor{comment}{//Pinta el botón de negro}
+40             \textcolor{keywordflow}{try}
+41             \{
+42                 sleep(tiempoEnNegro); \textcolor{comment}{// Espera entre 2 y 4 segundos}
+43             \} \textcolor{keywordflow}{catch} (InterruptedException e)\{\}
+44             \mbox{\hyperlink{class_ejercicio3_1_1_pintor_a506a8bc9a541e6892869532dea88e748}{colorAux}} = \mbox{\hyperlink{class_ejercicio3_1_1_pintor_a3757fe9547d90e3160d3896865c5ccdc}{p}}.\mbox{\hyperlink{class_ejercicio3_1_1_paleta_a0e3c5e71ab1f44028fa072043a154cd0}{tomaColor}}();
+45             \mbox{\hyperlink{class_ejercicio3_1_1_pintor_afe3191b9a051abec819e970119c65acc}{paletaAux}} = \mbox{\hyperlink{class_ejercicio3_1_1_pintor_a3757fe9547d90e3160d3896865c5ccdc}{p}}.\mbox{\hyperlink{class_ejercicio3_1_1_paleta_a2c27da86276ac62593e2e8e1bbfa7a12}{getPaleta}}();
+46             \textcolor{keywordflow}{for}(\mbox{\hyperlink{class_ejercicio3_1_1_pintor_a2cdf173f4fedc9cd17998fbcc306eac1}{j}} = 0; \mbox{\hyperlink{class_ejercicio3_1_1_pintor_a2cdf173f4fedc9cd17998fbcc306eac1}{j}}<4 ; \mbox{\hyperlink{class_ejercicio3_1_1_pintor_a2cdf173f4fedc9cd17998fbcc306eac1}{j}}++)
+47             \{
+48                 \textcolor{keywordflow}{if}(\mbox{\hyperlink{class_ejercicio3_1_1_pintor_a506a8bc9a541e6892869532dea88e748}{colorAux}} == \mbox{\hyperlink{class_ejercicio3_1_1_pintor_afe3191b9a051abec819e970119c65acc}{paletaAux}}[\mbox{\hyperlink{class_ejercicio3_1_1_pintor_a2cdf173f4fedc9cd17998fbcc306eac1}{j}}])
+49                     \mbox{\hyperlink{class_ejercicio3_1_1_pintor_ad4b925edd7b90b3c76c4f7ae0e0fd67d}{i}} = \mbox{\hyperlink{class_ejercicio3_1_1_pintor_a2cdf173f4fedc9cd17998fbcc306eac1}{j}};
+50             \}
+51             \mbox{\hyperlink{class_ejercicio3_1_1_pintor_a8d94252c712662974ff0d5c2e861570f}{b}}.setBackground(\mbox{\hyperlink{class_ejercicio3_1_1_pintor_a506a8bc9a541e6892869532dea88e748}{colorAux}});   \textcolor{comment}{//Pinta el botón con el color aleatorio}
+52             \textcolor{keywordflow}{try}
+53             \{
+54                 sleep(tiempoEnColor); \textcolor{comment}{//Espera entre 3 y 5 segundos}
+55             \} \textcolor{keywordflow}{catch} (InterruptedException e)\{\}
+56             \mbox{\hyperlink{class_ejercicio3_1_1_pintor_a3757fe9547d90e3160d3896865c5ccdc}{p}}.\mbox{\hyperlink{class_ejercicio3_1_1_paleta_abd1d94b50d8ff18205c7265f3002fbb6}{setLibre}}(\mbox{\hyperlink{class_ejercicio3_1_1_pintor_ad4b925edd7b90b3c76c4f7ae0e0fd67d}{i}});
+57         \}
+58     \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_ejercicio3_1_1_pintor_a8d94252c712662974ff0d5c2e861570f}\label{class_ejercicio3_1_1_pintor_a8d94252c712662974ff0d5c2e861570f}} 
+\index{Ejercicio3\+::\+Pintor@{Ejercicio3\+::\+Pintor}!b@{b}}
+\index{b@{b}!Ejercicio3\+::\+Pintor@{Ejercicio3\+::\+Pintor}}
+\subsubsection{\texorpdfstring{b}{b}}
+{\footnotesize\ttfamily J\+Button Ejercicio3.\+Pintor.\+b\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_ejercicio3_1_1_pintor_a506a8bc9a541e6892869532dea88e748}\label{class_ejercicio3_1_1_pintor_a506a8bc9a541e6892869532dea88e748}} 
+\index{Ejercicio3\+::\+Pintor@{Ejercicio3\+::\+Pintor}!color\+Aux@{color\+Aux}}
+\index{color\+Aux@{color\+Aux}!Ejercicio3\+::\+Pintor@{Ejercicio3\+::\+Pintor}}
+\subsubsection{\texorpdfstring{color\+Aux}{colorAux}}
+{\footnotesize\ttfamily Color Ejercicio3.\+Pintor.\+color\+Aux\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_ejercicio3_1_1_pintor_ad4b925edd7b90b3c76c4f7ae0e0fd67d}\label{class_ejercicio3_1_1_pintor_ad4b925edd7b90b3c76c4f7ae0e0fd67d}} 
+\index{Ejercicio3\+::\+Pintor@{Ejercicio3\+::\+Pintor}!i@{i}}
+\index{i@{i}!Ejercicio3\+::\+Pintor@{Ejercicio3\+::\+Pintor}}
+\subsubsection{\texorpdfstring{i}{i}}
+{\footnotesize\ttfamily int Ejercicio3.\+Pintor.\+i\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_ejercicio3_1_1_pintor_a2cdf173f4fedc9cd17998fbcc306eac1}\label{class_ejercicio3_1_1_pintor_a2cdf173f4fedc9cd17998fbcc306eac1}} 
+\index{Ejercicio3\+::\+Pintor@{Ejercicio3\+::\+Pintor}!j@{j}}
+\index{j@{j}!Ejercicio3\+::\+Pintor@{Ejercicio3\+::\+Pintor}}
+\subsubsection{\texorpdfstring{j}{j}}
+{\footnotesize\ttfamily int Ejercicio3.\+Pintor.\+j\hspace{0.3cm}{\ttfamily [package]}}
+
+\mbox{\Hypertarget{class_ejercicio3_1_1_pintor_afad4ac3330456c006258d8a5c3fe8220}\label{class_ejercicio3_1_1_pintor_afad4ac3330456c006258d8a5c3fe8220}} 
+\index{Ejercicio3\+::\+Pintor@{Ejercicio3\+::\+Pintor}!negro@{negro}}
+\index{negro@{negro}!Ejercicio3\+::\+Pintor@{Ejercicio3\+::\+Pintor}}
+\subsubsection{\texorpdfstring{negro}{negro}}
+{\footnotesize\ttfamily Color Ejercicio3.\+Pintor.\+negro = Color.\+black\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_ejercicio3_1_1_pintor_a3757fe9547d90e3160d3896865c5ccdc}\label{class_ejercicio3_1_1_pintor_a3757fe9547d90e3160d3896865c5ccdc}} 
+\index{Ejercicio3\+::\+Pintor@{Ejercicio3\+::\+Pintor}!p@{p}}
+\index{p@{p}!Ejercicio3\+::\+Pintor@{Ejercicio3\+::\+Pintor}}
+\subsubsection{\texorpdfstring{p}{p}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_ejercicio3_1_1_paleta}{Paleta}} Ejercicio3.\+Pintor.\+p\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_ejercicio3_1_1_pintor_afe3191b9a051abec819e970119c65acc}\label{class_ejercicio3_1_1_pintor_afe3191b9a051abec819e970119c65acc}} 
+\index{Ejercicio3\+::\+Pintor@{Ejercicio3\+::\+Pintor}!paleta\+Aux@{paleta\+Aux}}
+\index{paleta\+Aux@{paleta\+Aux}!Ejercicio3\+::\+Pintor@{Ejercicio3\+::\+Pintor}}
+\subsubsection{\texorpdfstring{paleta\+Aux}{paletaAux}}
+{\footnotesize\ttfamily Color \mbox{[}$\,$\mbox{]} Ejercicio3.\+Pintor.\+paleta\+Aux = new Color\mbox{[}4\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}
+

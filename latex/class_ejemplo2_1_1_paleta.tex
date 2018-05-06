@@ -1,0 +1,96 @@
+\hypertarget{class_ejemplo2_1_1_paleta}{}\section{Ejemplo2.\+Paleta Class Reference}
+\label{class_ejemplo2_1_1_paleta}\index{Ejemplo2.\+Paleta@{Ejemplo2.\+Paleta}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_ejemplo2_1_1_paleta_ab67b7dd37970789097439eabc3d7407b}{Paleta}} ()
+\item 
+synchronized Color \mbox{\hyperlink{class_ejemplo2_1_1_paleta_a4b360ca77c1d02b9c06f5211effa22a0}{toma\+Color}} ()
+\item 
+synchronized void \mbox{\hyperlink{class_ejemplo2_1_1_paleta_abe11e44a413ddff63a5758f67ace794b}{deja\+Color}} (Color c)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Color \mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_ejemplo2_1_1_paleta_ab6636b274dbb3f89739e635922ff7a75}{colores}} = new Color\mbox{[}4\mbox{]}
+\item 
+boolean \mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_ejemplo2_1_1_paleta_adb1708f360271b4d7c24a09aeed31f29}{libre}} = new boolean\mbox{[}4\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_ejemplo2_1_1_paleta_ab67b7dd37970789097439eabc3d7407b}\label{class_ejemplo2_1_1_paleta_ab67b7dd37970789097439eabc3d7407b}} 
+\index{Ejemplo2\+::\+Paleta@{Ejemplo2\+::\+Paleta}!Paleta@{Paleta}}
+\index{Paleta@{Paleta}!Ejemplo2\+::\+Paleta@{Ejemplo2\+::\+Paleta}}
+\subsubsection{\texorpdfstring{Paleta()}{Paleta()}}
+{\footnotesize\ttfamily Ejemplo2.\+Paleta.\+Paleta (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+17     \{
+18         \mbox{\hyperlink{class_ejemplo2_1_1_paleta_ab6636b274dbb3f89739e635922ff7a75}{colores}}[0]=Color.red;
+19         \mbox{\hyperlink{class_ejemplo2_1_1_paleta_ab6636b274dbb3f89739e635922ff7a75}{colores}}[1]=Color.blue;
+20         \mbox{\hyperlink{class_ejemplo2_1_1_paleta_ab6636b274dbb3f89739e635922ff7a75}{colores}}[2]=Color.green;
+21         \mbox{\hyperlink{class_ejemplo2_1_1_paleta_ab6636b274dbb3f89739e635922ff7a75}{colores}}[3]=Color.yellow;
+22         \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i=0;i<4;i++)
+23         \{
+24             \mbox{\hyperlink{class_ejemplo2_1_1_paleta_adb1708f360271b4d7c24a09aeed31f29}{libre}}[i]=\textcolor{keyword}{true};
+25         \}
+26     \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_ejemplo2_1_1_paleta_abe11e44a413ddff63a5758f67ace794b}\label{class_ejemplo2_1_1_paleta_abe11e44a413ddff63a5758f67ace794b}} 
+\index{Ejemplo2\+::\+Paleta@{Ejemplo2\+::\+Paleta}!deja\+Color@{deja\+Color}}
+\index{deja\+Color@{deja\+Color}!Ejemplo2\+::\+Paleta@{Ejemplo2\+::\+Paleta}}
+\subsubsection{\texorpdfstring{deja\+Color()}{dejaColor()}}
+{\footnotesize\ttfamily synchronized void Ejemplo2.\+Paleta.\+deja\+Color (\begin{DoxyParamCaption}\item[{Color}]{c }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+42     \{
+43         \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i=0;i<4;i++)
+44         \{
+45             \textcolor{keywordflow}{if}(c.equals(\mbox{\hyperlink{class_ejemplo2_1_1_paleta_ab6636b274dbb3f89739e635922ff7a75}{colores}}[i]))
+46             \{
+47                 \mbox{\hyperlink{class_ejemplo2_1_1_paleta_adb1708f360271b4d7c24a09aeed31f29}{libre}}[i]=\textcolor{keyword}{true};
+48             \}
+49         \}
+50     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_ejemplo2_1_1_paleta_a4b360ca77c1d02b9c06f5211effa22a0}\label{class_ejemplo2_1_1_paleta_a4b360ca77c1d02b9c06f5211effa22a0}} 
+\index{Ejemplo2\+::\+Paleta@{Ejemplo2\+::\+Paleta}!toma\+Color@{toma\+Color}}
+\index{toma\+Color@{toma\+Color}!Ejemplo2\+::\+Paleta@{Ejemplo2\+::\+Paleta}}
+\subsubsection{\texorpdfstring{toma\+Color()}{tomaColor()}}
+{\footnotesize\ttfamily synchronized Color Ejemplo2.\+Paleta.\+toma\+Color (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+29     \{
+30         \textcolor{keywordflow}{while}(\textcolor{keyword}{true})
+31         \{
+32             \textcolor{keywordtype}{int} i = (int)(4 * Math.random());    \textcolor{comment}{//Elige color al azar}
+33             \textcolor{keywordflow}{if}(\mbox{\hyperlink{class_ejemplo2_1_1_paleta_adb1708f360271b4d7c24a09aeed31f29}{libre}}[i])
+34             \{
+35                 \mbox{\hyperlink{class_ejemplo2_1_1_paleta_adb1708f360271b4d7c24a09aeed31f29}{libre}}[i]=\textcolor{keyword}{false};
+36                 \textcolor{keywordflow}{return} \mbox{\hyperlink{class_ejemplo2_1_1_paleta_ab6636b274dbb3f89739e635922ff7a75}{colores}}[i];
+37             \}
+38         \}
+39     \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_ejemplo2_1_1_paleta_ab6636b274dbb3f89739e635922ff7a75}\label{class_ejemplo2_1_1_paleta_ab6636b274dbb3f89739e635922ff7a75}} 
+\index{Ejemplo2\+::\+Paleta@{Ejemplo2\+::\+Paleta}!colores@{colores}}
+\index{colores@{colores}!Ejemplo2\+::\+Paleta@{Ejemplo2\+::\+Paleta}}
+\subsubsection{\texorpdfstring{colores}{colores}}
+{\footnotesize\ttfamily Color \mbox{[}$\,$\mbox{]} Ejemplo2.\+Paleta.\+colores = new Color\mbox{[}4\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_ejemplo2_1_1_paleta_adb1708f360271b4d7c24a09aeed31f29}\label{class_ejemplo2_1_1_paleta_adb1708f360271b4d7c24a09aeed31f29}} 
+\index{Ejemplo2\+::\+Paleta@{Ejemplo2\+::\+Paleta}!libre@{libre}}
+\index{libre@{libre}!Ejemplo2\+::\+Paleta@{Ejemplo2\+::\+Paleta}}
+\subsubsection{\texorpdfstring{libre}{libre}}
+{\footnotesize\ttfamily boolean \mbox{[}$\,$\mbox{]} Ejemplo2.\+Paleta.\+libre = new boolean\mbox{[}4\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}
+

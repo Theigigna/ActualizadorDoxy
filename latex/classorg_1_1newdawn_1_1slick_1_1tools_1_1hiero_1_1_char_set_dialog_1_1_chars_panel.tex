@@ -1,0 +1,160 @@
+\hypertarget{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_char_set_dialog_1_1_chars_panel}{}\section{org.\+newdawn.\+slick.\+tools.\+hiero.\+Char\+Set\+Dialog.\+Chars\+Panel Class Reference}
+\label{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_char_set_dialog_1_1_chars_panel}\index{org.\+newdawn.\+slick.\+tools.\+hiero.\+Char\+Set\+Dialog.\+Chars\+Panel@{org.\+newdawn.\+slick.\+tools.\+hiero.\+Char\+Set\+Dialog.\+Chars\+Panel}}
+Inheritance diagram for org.\+newdawn.\+slick.\+tools.\+hiero.\+Char\+Set\+Dialog.\+Chars\+Panel\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_char_set_dialog_1_1_chars_panel}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_char_set_dialog_1_1_chars_panel_af2595520765209ef657358867ab6e971}{Chars\+Panel}} ()
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_char_set_dialog_1_1_chars_panel_ad34d8f7b91e83632eaf8b93461a9e873}{paint}} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_graphics}{Graphics}} g)
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_char_set_dialog_1_1_chars_panel_a57f075b0851428a9a7ac6ff46c8013f9}{select}} (int x, int y, boolean update\+If\+Same)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_char_set_dialog_1_1_chars_panel_a62f78e56cfdd467324c652b5483a8ad5}{lastx}} = -\/1
+\item 
+int \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_char_set_dialog_1_1_chars_panel_ac833851797df74ed3d3d43dacdd44d6a}{lasty}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A panel to display the selected characters
+
+\begin{DoxyAuthor}{Author}
+kevin 
+\end{DoxyAuthor}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_char_set_dialog_1_1_chars_panel_af2595520765209ef657358867ab6e971}\label{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_char_set_dialog_1_1_chars_panel_af2595520765209ef657358867ab6e971}} 
+\index{org\+::newdawn\+::slick\+::tools\+::hiero\+::\+Char\+Set\+Dialog\+::\+Chars\+Panel@{org\+::newdawn\+::slick\+::tools\+::hiero\+::\+Char\+Set\+Dialog\+::\+Chars\+Panel}!Chars\+Panel@{Chars\+Panel}}
+\index{Chars\+Panel@{Chars\+Panel}!org\+::newdawn\+::slick\+::tools\+::hiero\+::\+Char\+Set\+Dialog\+::\+Chars\+Panel@{org\+::newdawn\+::slick\+::tools\+::hiero\+::\+Char\+Set\+Dialog\+::\+Chars\+Panel}}
+\subsubsection{\texorpdfstring{Chars\+Panel()}{CharsPanel()}}
+{\footnotesize\ttfamily org.\+newdawn.\+slick.\+tools.\+hiero.\+Char\+Set\+Dialog.\+Chars\+Panel.\+Chars\+Panel (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Create a new panel 
+\begin{DoxyCode}
+122                             \{
+123             addMouseListener(\textcolor{keyword}{new} MouseAdapter() \{
+124                 \textcolor{keyword}{public} \textcolor{keywordtype}{void} mousePressed(MouseEvent e) \{
+125                     \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_char_set_dialog_1_1_chars_panel_a57f075b0851428a9a7ac6ff46c8013f9}{select}}(e.getX(), e.getY(), \textcolor{keyword}{true});
+126                 \}
+127                 
+128                 \textcolor{keyword}{public} \textcolor{keywordtype}{void} mouseReleased(MouseEvent e) \{
+129                     \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_char_set_dialog_1_1_chars_panel_a62f78e56cfdd467324c652b5483a8ad5}{lastx}} = -1;
+130                 \}
+131             \});
+132             addMouseMotionListener(\textcolor{keyword}{new} MouseMotionListener() \{
+133                 \textcolor{keyword}{public} \textcolor{keywordtype}{void} mouseDragged(MouseEvent e) \{
+134                     \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_char_set_dialog_1_1_chars_panel_a57f075b0851428a9a7ac6ff46c8013f9}{select}}(e.getX(), e.getY(), \textcolor{keyword}{false});
+135                 \}
+136                 
+137                 \textcolor{keyword}{public} \textcolor{keywordtype}{void} mouseMoved(MouseEvent e) \{\}
+138             \});
+139         \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_char_set_dialog_1_1_chars_panel_ad34d8f7b91e83632eaf8b93461a9e873}\label{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_char_set_dialog_1_1_chars_panel_ad34d8f7b91e83632eaf8b93461a9e873}} 
+\index{org\+::newdawn\+::slick\+::tools\+::hiero\+::\+Char\+Set\+Dialog\+::\+Chars\+Panel@{org\+::newdawn\+::slick\+::tools\+::hiero\+::\+Char\+Set\+Dialog\+::\+Chars\+Panel}!paint@{paint}}
+\index{paint@{paint}!org\+::newdawn\+::slick\+::tools\+::hiero\+::\+Char\+Set\+Dialog\+::\+Chars\+Panel@{org\+::newdawn\+::slick\+::tools\+::hiero\+::\+Char\+Set\+Dialog\+::\+Chars\+Panel}}
+\subsubsection{\texorpdfstring{paint()}{paint()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+tools.\+hiero.\+Char\+Set\+Dialog.\+Chars\+Panel.\+paint (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_graphics}{Graphics}}}]{g }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxySeeAlso}{See also}
+javax.\+swing.\+J\+Component\+::paint(java.\+awt.\+Graphics) 
+\end{DoxySeeAlso}
+
+\begin{DoxyCode}
+172                                       \{
+173             g.setColor(Color.black);
+174             g.fillRect(0,0,getWidth(),getHeight());
+175             g.translate(35,10);
+176             g.setFont(\textcolor{keyword}{new} Font(g.getFont().getName(), Font.PLAIN, 25));
+177             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i=0;i<256;i++) \{
+178                 \textcolor{keywordtype}{int} x = i % 16;
+179                 \textcolor{keywordtype}{int} y = i / 16;
+180                 
+181                 \textcolor{keywordtype}{char} c = (char) i;
+182 
+183                 g.setColor(Color.white);
+184                 \textcolor{keywordflow}{if} (\textcolor{keyword}{set}.includes(c)) \{
+185                     g.fillRect(x*32,y*32,32,32);
+186                     g.setColor(Color.black);
+187                     g.drawRect(x*32,y*32,32,32);
+188                 \} \textcolor{keywordflow}{else} \{
+189                     g.drawRect(x*32,y*32,32,32);
+190                 \}
+191                 
+192                 g.drawString(\textcolor{stringliteral}{""}+c, (x*32)+5, (y*32)+28);
+193             \}
+194         \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_char_set_dialog_1_1_chars_panel_a57f075b0851428a9a7ac6ff46c8013f9}\label{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_char_set_dialog_1_1_chars_panel_a57f075b0851428a9a7ac6ff46c8013f9}} 
+\index{org\+::newdawn\+::slick\+::tools\+::hiero\+::\+Char\+Set\+Dialog\+::\+Chars\+Panel@{org\+::newdawn\+::slick\+::tools\+::hiero\+::\+Char\+Set\+Dialog\+::\+Chars\+Panel}!select@{select}}
+\index{select@{select}!org\+::newdawn\+::slick\+::tools\+::hiero\+::\+Char\+Set\+Dialog\+::\+Chars\+Panel@{org\+::newdawn\+::slick\+::tools\+::hiero\+::\+Char\+Set\+Dialog\+::\+Chars\+Panel}}
+\subsubsection{\texorpdfstring{select()}{select()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+tools.\+hiero.\+Char\+Set\+Dialog.\+Chars\+Panel.\+select (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y,  }\item[{boolean}]{update\+If\+Same }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+Set the tile at a given location
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & The x position \\
+\hline
+{\em y} & The y position \\
+\hline
+{\em update\+If\+Same} & True if we should update if it\textquotesingle{}s the same as the last update \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+148                                                                 \{
+149             x -= 35;
+150             y -= 10;
+151             x /= 32;
+152             y /= 32;
+153             
+154             
+155             \textcolor{keywordflow}{if} ((x >= 0) && (x < 16) && (y >= 0) && (y < 16)) \{
+156                 \textcolor{keywordflow}{if} (!updateIfSame) \{
+157                     \textcolor{keywordflow}{if} ((\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_char_set_dialog_1_1_chars_panel_a62f78e56cfdd467324c652b5483a8ad5}{lastx}} == x) && (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_char_set_dialog_1_1_chars_panel_ac833851797df74ed3d3d43dacdd44d6a}{lasty}} == y)) \{
+158                         \textcolor{keywordflow}{return};
+159                     \}
+160                 \}
+161                 \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_char_set_dialog_1_1_chars_panel_a62f78e56cfdd467324c652b5483a8ad5}{lastx}} = x;
+162                 \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_char_set_dialog_1_1_chars_panel_ac833851797df74ed3d3d43dacdd44d6a}{lasty}} = y;
+163                 
+164                 \textcolor{keywordtype}{int} i = x + (y*16);
+165                 \textcolor{keyword}{set}.set(i, !\textcolor{keyword}{set}.includes((\textcolor{keywordtype}{char}) i));
+166                 repaint(0);
+167             \}
+168         \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_char_set_dialog_1_1_chars_panel_a62f78e56cfdd467324c652b5483a8ad5}\label{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_char_set_dialog_1_1_chars_panel_a62f78e56cfdd467324c652b5483a8ad5}} 
+\index{org\+::newdawn\+::slick\+::tools\+::hiero\+::\+Char\+Set\+Dialog\+::\+Chars\+Panel@{org\+::newdawn\+::slick\+::tools\+::hiero\+::\+Char\+Set\+Dialog\+::\+Chars\+Panel}!lastx@{lastx}}
+\index{lastx@{lastx}!org\+::newdawn\+::slick\+::tools\+::hiero\+::\+Char\+Set\+Dialog\+::\+Chars\+Panel@{org\+::newdawn\+::slick\+::tools\+::hiero\+::\+Char\+Set\+Dialog\+::\+Chars\+Panel}}
+\subsubsection{\texorpdfstring{lastx}{lastx}}
+{\footnotesize\ttfamily int org.\+newdawn.\+slick.\+tools.\+hiero.\+Char\+Set\+Dialog.\+Chars\+Panel.\+lastx = -\/1\hspace{0.3cm}{\ttfamily [private]}}
+
+The last x position changed \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_char_set_dialog_1_1_chars_panel_ac833851797df74ed3d3d43dacdd44d6a}\label{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_char_set_dialog_1_1_chars_panel_ac833851797df74ed3d3d43dacdd44d6a}} 
+\index{org\+::newdawn\+::slick\+::tools\+::hiero\+::\+Char\+Set\+Dialog\+::\+Chars\+Panel@{org\+::newdawn\+::slick\+::tools\+::hiero\+::\+Char\+Set\+Dialog\+::\+Chars\+Panel}!lasty@{lasty}}
+\index{lasty@{lasty}!org\+::newdawn\+::slick\+::tools\+::hiero\+::\+Char\+Set\+Dialog\+::\+Chars\+Panel@{org\+::newdawn\+::slick\+::tools\+::hiero\+::\+Char\+Set\+Dialog\+::\+Chars\+Panel}}
+\subsubsection{\texorpdfstring{lasty}{lasty}}
+{\footnotesize\ttfamily int org.\+newdawn.\+slick.\+tools.\+hiero.\+Char\+Set\+Dialog.\+Chars\+Panel.\+lasty\hspace{0.3cm}{\ttfamily [private]}}
+
+The last y position changed 

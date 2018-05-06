@@ -1,0 +1,114 @@
+\hypertarget{classentities_1_1_mr_bug}{}\section{entities.\+Mr\+Bug Class Reference}
+\label{classentities_1_1_mr_bug}\index{entities.\+Mr\+Bug@{entities.\+Mr\+Bug}}
+Inheritance diagram for entities.\+Mr\+Bug\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=8.000000cm]{classentities_1_1_mr_bug}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classentities_1_1_mr_bug_a4f6f4739261744b12cd363b92b8819c6}{Mr\+Bug}} (\mbox{\hyperlink{classstates_1_1_game_state}{Game\+State}} \mbox{\hyperlink{classentities_1_1_mr_bug_a02458a7ed258fc3f99a097cf95bc036e}{game}}, float \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_shape_a3e985bfff386c15a4efaad03d8ad60d3}{x}}, float \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_shape_a9f934baded6a1b65ebb69e7e5f80ea00}{y}})  throws Slick\+Exception 
+\item 
+boolean \mbox{\hyperlink{classentities_1_1_mr_bug_ae1876c75b237e09d38c1e71d6d934685}{move\+Left}} (long delta)
+\item 
+void \mbox{\hyperlink{classentities_1_1_mr_bug_a5edd24b13e3ffd6eac09f8bfac9d5c8d}{update}} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_game_container}{Game\+Container}} gc, long delta)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classentities_1_1_mr_bug_ac1294909619da53941cf37073936daba}{distance}} =640
+\item 
+float \mbox{\hyperlink{classentities_1_1_mr_bug_ab378361709f903878b74eb06b4d84229}{initX}}
+\item 
+\mbox{\hyperlink{classstates_1_1_game_state}{Game\+State}} \mbox{\hyperlink{classentities_1_1_mr_bug_a02458a7ed258fc3f99a097cf95bc036e}{game}}
+\end{DoxyCompactItemize}
+\subsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static final int \mbox{\hyperlink{classentities_1_1_mr_bug_aa5df4742960ee351c233d37596d7c5de}{C\+H\+A\+N\+G\+E\+\_\+\+S\+P\+E\+ED}} =500
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classentities_1_1_mr_bug_a4f6f4739261744b12cd363b92b8819c6}\label{classentities_1_1_mr_bug_a4f6f4739261744b12cd363b92b8819c6}} 
+\index{entities\+::\+Mr\+Bug@{entities\+::\+Mr\+Bug}!Mr\+Bug@{Mr\+Bug}}
+\index{Mr\+Bug@{Mr\+Bug}!entities\+::\+Mr\+Bug@{entities\+::\+Mr\+Bug}}
+\subsubsection{\texorpdfstring{Mr\+Bug()}{MrBug()}}
+{\footnotesize\ttfamily entities.\+Mr\+Bug.\+Mr\+Bug (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classstates_1_1_game_state}{Game\+State}}}]{game,  }\item[{float}]{x,  }\item[{float}]{y }\end{DoxyParamCaption}) throws \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_slick_exception}{Slick\+Exception}}\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+20                                                                          \{
+21         super(0, 0, 3, null, \textcolor{keyword}{new} Image(\textcolor{stringliteral}{"./res/bug/bug32x32.png"}),\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_shape_a3e985bfff386c15a4efaad03d8ad60d3}{x}}, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_shape_a9f934baded6a1b65ebb69e7e5f80ea00}{y}}, 32, 32);
+22         Image[] imgs=\textcolor{keyword}{new} Image[2];
+23         imgs[0]=\textcolor{keyword}{new} Image(\textcolor{stringliteral}{"./res/bug/bug32x32.png"});
+24         imgs[1]=\textcolor{keyword}{new} Image(\textcolor{stringliteral}{"./res/bug/bugbin32x32.png"});
+25         Animation an=\textcolor{keyword}{new} Animation(imgs,\mbox{\hyperlink{classentities_1_1_mr_bug_aa5df4742960ee351c233d37596d7c5de}{CHANGE\_SPEED}});
+26         this.\mbox{\hyperlink{classentities_1_1_subject_a8f7fce95025c0e91f513879c1f8bbc87}{initAnimations}}(an, an, an, an);
+27         \mbox{\hyperlink{classentities_1_1_mr_bug_ab378361709f903878b74eb06b4d84229}{initX}}=\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_shape_a3e985bfff386c15a4efaad03d8ad60d3}{x}};
+28         this.\mbox{\hyperlink{classentities_1_1_mr_bug_a02458a7ed258fc3f99a097cf95bc036e}{game}}=\mbox{\hyperlink{classentities_1_1_mr_bug_a02458a7ed258fc3f99a097cf95bc036e}{game}};
+29     \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classentities_1_1_mr_bug_ae1876c75b237e09d38c1e71d6d934685}\label{classentities_1_1_mr_bug_ae1876c75b237e09d38c1e71d6d934685}} 
+\index{entities\+::\+Mr\+Bug@{entities\+::\+Mr\+Bug}!move\+Left@{move\+Left}}
+\index{move\+Left@{move\+Left}!entities\+::\+Mr\+Bug@{entities\+::\+Mr\+Bug}}
+\subsubsection{\texorpdfstring{move\+Left()}{moveLeft()}}
+{\footnotesize\ttfamily boolean entities.\+Mr\+Bug.\+move\+Left (\begin{DoxyParamCaption}\item[{long}]{delta }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+32                                         \{
+33         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_shape_a3e985bfff386c15a4efaad03d8ad60d3}{x}}-=delta*0.1f*\mbox{\hyperlink{classentities_1_1_mobile_entity_a21020e5f09194aae693dbce8d7d59ffa}{getSpeed}}(); \textcolor{comment}{//To change body of generated methods, choose Tools | Templates.}
+34         \textcolor{keywordflow}{return} \textcolor{keyword}{true};
+35     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classentities_1_1_mr_bug_a5edd24b13e3ffd6eac09f8bfac9d5c8d}\label{classentities_1_1_mr_bug_a5edd24b13e3ffd6eac09f8bfac9d5c8d}} 
+\index{entities\+::\+Mr\+Bug@{entities\+::\+Mr\+Bug}!update@{update}}
+\index{update@{update}!entities\+::\+Mr\+Bug@{entities\+::\+Mr\+Bug}}
+\subsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void entities.\+Mr\+Bug.\+update (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_game_container}{Game\+Container}}}]{gc,  }\item[{long}]{delta }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+38                                                      \{
+39         \textcolor{keywordtype}{int} aux=(int) (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_shape_a736a47bfdd6f164558b43fd497a3a3f3}{getX}}()-\mbox{\hyperlink{classentities_1_1_mr_bug_ab378361709f903878b74eb06b4d84229}{initX}});
+40         \textcolor{keywordflow}{if}(aux>\mbox{\hyperlink{classentities_1_1_mr_bug_ac1294909619da53941cf37073936daba}{distance}} || aux <-\mbox{\hyperlink{classentities_1_1_mr_bug_ac1294909619da53941cf37073936daba}{distance}})\{
+41             \mbox{\hyperlink{classentities_1_1_mr_bug_a02458a7ed258fc3f99a097cf95bc036e}{game}}.\mbox{\hyperlink{classstates_1_1_game_state_ac441d850526544e548921068f5eb78d6}{getEntities}}().remove(\textcolor{keyword}{this});
+42         \}\textcolor{keywordflow}{else}\{
+43             \mbox{\hyperlink{classentities_1_1_mr_bug_ae1876c75b237e09d38c1e71d6d934685}{moveLeft}}(delta);
+44         \}
+45     \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classentities_1_1_mr_bug_aa5df4742960ee351c233d37596d7c5de}\label{classentities_1_1_mr_bug_aa5df4742960ee351c233d37596d7c5de}} 
+\index{entities\+::\+Mr\+Bug@{entities\+::\+Mr\+Bug}!C\+H\+A\+N\+G\+E\+\_\+\+S\+P\+E\+ED@{C\+H\+A\+N\+G\+E\+\_\+\+S\+P\+E\+ED}}
+\index{C\+H\+A\+N\+G\+E\+\_\+\+S\+P\+E\+ED@{C\+H\+A\+N\+G\+E\+\_\+\+S\+P\+E\+ED}!entities\+::\+Mr\+Bug@{entities\+::\+Mr\+Bug}}
+\subsubsection{\texorpdfstring{C\+H\+A\+N\+G\+E\+\_\+\+S\+P\+E\+ED}{CHANGE\_SPEED}}
+{\footnotesize\ttfamily final int entities.\+Mr\+Bug.\+C\+H\+A\+N\+G\+E\+\_\+\+S\+P\+E\+ED =500\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{classentities_1_1_mr_bug_ac1294909619da53941cf37073936daba}\label{classentities_1_1_mr_bug_ac1294909619da53941cf37073936daba}} 
+\index{entities\+::\+Mr\+Bug@{entities\+::\+Mr\+Bug}!distance@{distance}}
+\index{distance@{distance}!entities\+::\+Mr\+Bug@{entities\+::\+Mr\+Bug}}
+\subsubsection{\texorpdfstring{distance}{distance}}
+{\footnotesize\ttfamily int entities.\+Mr\+Bug.\+distance =640\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classentities_1_1_mr_bug_a02458a7ed258fc3f99a097cf95bc036e}\label{classentities_1_1_mr_bug_a02458a7ed258fc3f99a097cf95bc036e}} 
+\index{entities\+::\+Mr\+Bug@{entities\+::\+Mr\+Bug}!game@{game}}
+\index{game@{game}!entities\+::\+Mr\+Bug@{entities\+::\+Mr\+Bug}}
+\subsubsection{\texorpdfstring{game}{game}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classstates_1_1_game_state}{Game\+State}} entities.\+Mr\+Bug.\+game\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classentities_1_1_mr_bug_ab378361709f903878b74eb06b4d84229}\label{classentities_1_1_mr_bug_ab378361709f903878b74eb06b4d84229}} 
+\index{entities\+::\+Mr\+Bug@{entities\+::\+Mr\+Bug}!initX@{initX}}
+\index{initX@{initX}!entities\+::\+Mr\+Bug@{entities\+::\+Mr\+Bug}}
+\subsubsection{\texorpdfstring{initX}{initX}}
+{\footnotesize\ttfamily float entities.\+Mr\+Bug.\+initX\hspace{0.3cm}{\ttfamily [private]}}
+

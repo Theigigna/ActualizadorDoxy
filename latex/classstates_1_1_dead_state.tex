@@ -1,0 +1,228 @@
+\hypertarget{classstates_1_1_dead_state}{}\section{states.\+Dead\+State Class Reference}
+\label{classstates_1_1_dead_state}\index{states.\+Dead\+State@{states.\+Dead\+State}}
+Inheritance diagram for states.\+Dead\+State\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.226415cm]{classstates_1_1_dead_state}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classstates_1_1_dead_state_ac19c502769593a77e120afe70c67014f}{Dead\+State}} (int \mbox{\hyperlink{classstates_1_1_dead_state_af4562c02a3bcac59678cfd1d540add79}{id}})
+\item 
+int \mbox{\hyperlink{classstates_1_1_dead_state_aed9ba185773a1be650305bd8c8d00a20}{get\+ID}} ()
+\item 
+void \mbox{\hyperlink{classstates_1_1_dead_state_a0ef2cdab84227544109b871136e629eb}{init}} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_game_container}{Game\+Container}} container, final \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1_state_based_game}{State\+Based\+Game}} game)  throws Slick\+Exception 
+\item 
+void \mbox{\hyperlink{classstates_1_1_dead_state_a0c76c2d5c196804e0a0362ef198c6f55}{render}} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_game_container}{Game\+Container}} container, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1_state_based_game}{State\+Based\+Game}} game, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_graphics}{Graphics}} g)  throws Slick\+Exception 
+\item 
+void \mbox{\hyperlink{classstates_1_1_dead_state_ad8f7baa8e5ae45ef5673ccbdb9ee0229}{update}} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_game_container}{Game\+Container}} container, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1_state_based_game}{State\+Based\+Game}} game, int delta)  throws Slick\+Exception 
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classstates_1_1_dead_state_af4562c02a3bcac59678cfd1d540add79}{id}}
+\item 
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1_state_based_game}{State\+Based\+Game}} \mbox{\hyperlink{classstates_1_1_dead_state_a19351574a15993ba884dba664b03cc1e}{state}}
+\item 
+\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_transition}{Transition}} \mbox{\hyperlink{classstates_1_1_dead_state_abd0a826acb872d9a3ed0d92aa2f82a22}{to}}
+\item 
+\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_transition}{Transition}} \mbox{\hyperlink{classstates_1_1_dead_state_ad765e614e0b0d53af3270e05a44e7a0d}{ti}}
+\item 
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_image}{Image}} \mbox{\hyperlink{classstates_1_1_dead_state_aeb62b1b52d9fcfed82d906d277a3bc62}{img}}
+\item 
+\mbox{\hyperlink{classgui_1_1_button}{Button}} \mbox{\hyperlink{classstates_1_1_dead_state_a79a5bdb7e1e66fa98c2e7bc674c00cb0}{button}}
+\item 
+\mbox{\hyperlink{classgui_1_1_g_u_i_font}{G\+U\+I\+Font}} \mbox{\hyperlink{classstates_1_1_dead_state_afe1e79808988fbe6704a858bd569f0cc}{font}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classstates_1_1_dead_state_ac19c502769593a77e120afe70c67014f}\label{classstates_1_1_dead_state_ac19c502769593a77e120afe70c67014f}} 
+\index{states\+::\+Dead\+State@{states\+::\+Dead\+State}!Dead\+State@{Dead\+State}}
+\index{Dead\+State@{Dead\+State}!states\+::\+Dead\+State@{states\+::\+Dead\+State}}
+\subsubsection{\texorpdfstring{Dead\+State()}{DeadState()}}
+{\footnotesize\ttfamily states.\+Dead\+State.\+Dead\+State (\begin{DoxyParamCaption}\item[{int}]{id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+36                             \{
+37         this.\textcolor{keywordtype}{id}=\mbox{\hyperlink{classstates_1_1_dead_state_af4562c02a3bcac59678cfd1d540add79}{id}};
+38         this.\mbox{\hyperlink{classstates_1_1_dead_state_a19351574a15993ba884dba664b03cc1e}{state}}=\mbox{\hyperlink{classstates_1_1_dead_state_a19351574a15993ba884dba664b03cc1e}{state}};
+39     \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classstates_1_1_dead_state_aed9ba185773a1be650305bd8c8d00a20}\label{classstates_1_1_dead_state_aed9ba185773a1be650305bd8c8d00a20}} 
+\index{states\+::\+Dead\+State@{states\+::\+Dead\+State}!get\+ID@{get\+ID}}
+\index{get\+ID@{get\+ID}!states\+::\+Dead\+State@{states\+::\+Dead\+State}}
+\subsubsection{\texorpdfstring{get\+I\+D()}{getID()}}
+{\footnotesize\ttfamily int states.\+Dead\+State.\+get\+ID (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get the ID of this state
+
+\begin{DoxyReturn}{Returns}
+The game unique ID of this state 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1state_1_1_game_state_a54f2bc6a91feaf0614a5ef19f1d03313}{org.\+newdawn.\+slick.\+state.\+Game\+State}}.
+
+
+\begin{DoxyCode}
+42                        \{
+43         \textcolor{keywordflow}{return} \mbox{\hyperlink{classstates_1_1_dead_state_af4562c02a3bcac59678cfd1d540add79}{id}};
+44     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classstates_1_1_dead_state_a0ef2cdab84227544109b871136e629eb}\label{classstates_1_1_dead_state_a0ef2cdab84227544109b871136e629eb}} 
+\index{states\+::\+Dead\+State@{states\+::\+Dead\+State}!init@{init}}
+\index{init@{init}!states\+::\+Dead\+State@{states\+::\+Dead\+State}}
+\subsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily void states.\+Dead\+State.\+init (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_game_container}{Game\+Container}}}]{container,  }\item[{final \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1_state_based_game}{State\+Based\+Game}}}]{game }\end{DoxyParamCaption}) throws \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_slick_exception}{Slick\+Exception}}\hspace{0.3cm}{\ttfamily [inline]}}
+
+Initialise the state. It should load any resources it needs at this stage
+
+
+\begin{DoxyParams}{Parameters}
+{\em container} & The container holding the game \\
+\hline
+{\em game} & The game holding this state \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Slick\+Exception} & Indicates a failure to initialise a resource for this state \\
+\hline
+\end{DoxyExceptions}
+
+
+Implements \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1state_1_1_game_state_aa799a369e0fcfe6822d2d586fa6f5bbc}{org.\+newdawn.\+slick.\+state.\+Game\+State}}.
+
+
+\begin{DoxyCode}
+47                                                                                                \{
+48         \mbox{\hyperlink{classstates_1_1_dead_state_aeb62b1b52d9fcfed82d906d277a3bc62}{img}}=\textcolor{keyword}{new} Image(\textcolor{stringliteral}{"res\(\backslash\)\(\backslash\)GUI\(\backslash\)\(\backslash\)GameOver.png"});
+49         \mbox{\hyperlink{classstates_1_1_dead_state_afe1e79808988fbe6704a858bd569f0cc}{font}}=\textcolor{keyword}{new} GUIFont(25);
+50         \textcolor{keywordtype}{int} w=container.getWidth()/3;
+51         \textcolor{keywordtype}{int} h=container.getHeight()/10;
+52         \mbox{\hyperlink{classstates_1_1_dead_state_a79a5bdb7e1e66fa98c2e7bc674c00cb0}{button}}=\textcolor{keyword}{new} Button(container,(container.getWidth()-2)/2, 8*container.getHeight()/10,w,h,
+      \mbox{\hyperlink{classstates_1_1_dead_state_afe1e79808988fbe6704a858bd569f0cc}{font}}, \textcolor{keyword}{new} ComponentListener() \{
+53             @Override
+54             \textcolor{keyword}{public} \textcolor{keywordtype}{void} componentActivated(AbstractComponent source) \{
+55                 game.enterState(NotEvenAnEarlyAccess.MAIN\_MENU, \mbox{\hyperlink{classstates_1_1_dead_state_ad765e614e0b0d53af3270e05a44e7a0d}{ti}}, \mbox{\hyperlink{classstates_1_1_dead_state_abd0a826acb872d9a3ed0d92aa2f82a22}{to}});
+56             \}
+57         \} );
+58     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classstates_1_1_dead_state_a0c76c2d5c196804e0a0362ef198c6f55}\label{classstates_1_1_dead_state_a0c76c2d5c196804e0a0362ef198c6f55}} 
+\index{states\+::\+Dead\+State@{states\+::\+Dead\+State}!render@{render}}
+\index{render@{render}!states\+::\+Dead\+State@{states\+::\+Dead\+State}}
+\subsubsection{\texorpdfstring{render()}{render()}}
+{\footnotesize\ttfamily void states.\+Dead\+State.\+render (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_game_container}{Game\+Container}}}]{container,  }\item[{\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1_state_based_game}{State\+Based\+Game}}}]{game,  }\item[{\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_graphics}{Graphics}}}]{g }\end{DoxyParamCaption}) throws \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_slick_exception}{Slick\+Exception}}\hspace{0.3cm}{\ttfamily [inline]}}
+
+Render this state to the game\textquotesingle{}s graphics context
+
+
+\begin{DoxyParams}{Parameters}
+{\em container} & The container holding the game \\
+\hline
+{\em game} & The game holding this state \\
+\hline
+{\em g} & The graphics context to render to \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Slick\+Exception} & Indicates a failure to render an artifact \\
+\hline
+\end{DoxyExceptions}
+
+
+Implements \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1state_1_1_game_state_a065352d2725274c5244cd022f226eb17}{org.\+newdawn.\+slick.\+state.\+Game\+State}}.
+
+
+\begin{DoxyCode}
+61                                                                                                        \{
+62         \mbox{\hyperlink{classstates_1_1_dead_state_aeb62b1b52d9fcfed82d906d277a3bc62}{img}}.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_image_a9bddcca05c7140ab45df8ac5b250b6cd}{draw}}(0,0,container.getWidth(),container.getHeight());
+63         \mbox{\hyperlink{classstates_1_1_dead_state_a79a5bdb7e1e66fa98c2e7bc674c00cb0}{button}}.\mbox{\hyperlink{classgui_1_1_button_a0963af10c0ebfda675428cf6692e3df5}{drawButton}}(\textcolor{stringliteral}{"Menú"}, g);
+64     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classstates_1_1_dead_state_ad8f7baa8e5ae45ef5673ccbdb9ee0229}\label{classstates_1_1_dead_state_ad8f7baa8e5ae45ef5673ccbdb9ee0229}} 
+\index{states\+::\+Dead\+State@{states\+::\+Dead\+State}!update@{update}}
+\index{update@{update}!states\+::\+Dead\+State@{states\+::\+Dead\+State}}
+\subsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void states.\+Dead\+State.\+update (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_game_container}{Game\+Container}}}]{container,  }\item[{\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1_state_based_game}{State\+Based\+Game}}}]{game,  }\item[{int}]{delta }\end{DoxyParamCaption}) throws \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_slick_exception}{Slick\+Exception}}\hspace{0.3cm}{\ttfamily [inline]}}
+
+Update the state\textquotesingle{}s logic based on the amount of time thats passed
+
+
+\begin{DoxyParams}{Parameters}
+{\em container} & The container holding the game \\
+\hline
+{\em game} & The game holding this state \\
+\hline
+{\em delta} & The amount of time thats passed in millisecond since last update \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Slick\+Exception} & Indicates an internal error that will be reported through the standard framework mechanism \\
+\hline
+\end{DoxyExceptions}
+
+
+Implements \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1state_1_1_game_state_ab5ec3bc37a9bd1eb5679577408c562c1}{org.\+newdawn.\+slick.\+state.\+Game\+State}}.
+
+
+\begin{DoxyCode}
+67                                                                                                       \{
+68         
+69     \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classstates_1_1_dead_state_a79a5bdb7e1e66fa98c2e7bc674c00cb0}\label{classstates_1_1_dead_state_a79a5bdb7e1e66fa98c2e7bc674c00cb0}} 
+\index{states\+::\+Dead\+State@{states\+::\+Dead\+State}!button@{button}}
+\index{button@{button}!states\+::\+Dead\+State@{states\+::\+Dead\+State}}
+\subsubsection{\texorpdfstring{button}{button}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classgui_1_1_button}{Button}} states.\+Dead\+State.\+button\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classstates_1_1_dead_state_afe1e79808988fbe6704a858bd569f0cc}\label{classstates_1_1_dead_state_afe1e79808988fbe6704a858bd569f0cc}} 
+\index{states\+::\+Dead\+State@{states\+::\+Dead\+State}!font@{font}}
+\index{font@{font}!states\+::\+Dead\+State@{states\+::\+Dead\+State}}
+\subsubsection{\texorpdfstring{font}{font}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classgui_1_1_g_u_i_font}{G\+U\+I\+Font}} states.\+Dead\+State.\+font\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classstates_1_1_dead_state_af4562c02a3bcac59678cfd1d540add79}\label{classstates_1_1_dead_state_af4562c02a3bcac59678cfd1d540add79}} 
+\index{states\+::\+Dead\+State@{states\+::\+Dead\+State}!id@{id}}
+\index{id@{id}!states\+::\+Dead\+State@{states\+::\+Dead\+State}}
+\subsubsection{\texorpdfstring{id}{id}}
+{\footnotesize\ttfamily int states.\+Dead\+State.\+id\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classstates_1_1_dead_state_aeb62b1b52d9fcfed82d906d277a3bc62}\label{classstates_1_1_dead_state_aeb62b1b52d9fcfed82d906d277a3bc62}} 
+\index{states\+::\+Dead\+State@{states\+::\+Dead\+State}!img@{img}}
+\index{img@{img}!states\+::\+Dead\+State@{states\+::\+Dead\+State}}
+\subsubsection{\texorpdfstring{img}{img}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_image}{Image}} states.\+Dead\+State.\+img\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classstates_1_1_dead_state_a19351574a15993ba884dba664b03cc1e}\label{classstates_1_1_dead_state_a19351574a15993ba884dba664b03cc1e}} 
+\index{states\+::\+Dead\+State@{states\+::\+Dead\+State}!state@{state}}
+\index{state@{state}!states\+::\+Dead\+State@{states\+::\+Dead\+State}}
+\subsubsection{\texorpdfstring{state}{state}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1_state_based_game}{State\+Based\+Game}} states.\+Dead\+State.\+state\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classstates_1_1_dead_state_ad765e614e0b0d53af3270e05a44e7a0d}\label{classstates_1_1_dead_state_ad765e614e0b0d53af3270e05a44e7a0d}} 
+\index{states\+::\+Dead\+State@{states\+::\+Dead\+State}!ti@{ti}}
+\index{ti@{ti}!states\+::\+Dead\+State@{states\+::\+Dead\+State}}
+\subsubsection{\texorpdfstring{ti}{ti}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_transition}{Transition}} states.\+Dead\+State.\+ti\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classstates_1_1_dead_state_abd0a826acb872d9a3ed0d92aa2f82a22}\label{classstates_1_1_dead_state_abd0a826acb872d9a3ed0d92aa2f82a22}} 
+\index{states\+::\+Dead\+State@{states\+::\+Dead\+State}!to@{to}}
+\index{to@{to}!states\+::\+Dead\+State@{states\+::\+Dead\+State}}
+\subsubsection{\texorpdfstring{to}{to}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1state_1_1transition_1_1_transition}{Transition}} states.\+Dead\+State.\+to\hspace{0.3cm}{\ttfamily [private]}}
+

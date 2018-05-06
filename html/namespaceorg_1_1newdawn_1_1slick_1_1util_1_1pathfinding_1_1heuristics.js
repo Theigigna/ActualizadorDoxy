@@ -1,0 +1,6 @@
+var namespaceorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1heuristics =
+[
+    [ "ClosestHeuristic", "classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1heuristics_1_1_closest_heuristic.html", "classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1heuristics_1_1_closest_heuristic" ],
+    [ "ClosestSquaredHeuristic", "classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1heuristics_1_1_closest_squared_heuristic.html", "classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1heuristics_1_1_closest_squared_heuristic" ],
+    [ "ManhattanHeuristic", "classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1heuristics_1_1_manhattan_heuristic.html", "classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1heuristics_1_1_manhattan_heuristic" ]
+];

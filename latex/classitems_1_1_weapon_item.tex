@@ -1,0 +1,74 @@
+\hypertarget{classitems_1_1_weapon_item}{}\section{items.\+Weapon\+Item Class Reference}
+\label{classitems_1_1_weapon_item}\index{items.\+Weapon\+Item@{items.\+Weapon\+Item}}
+Inheritance diagram for items.\+Weapon\+Item\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classitems_1_1_weapon_item}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classitems_1_1_weapon_item_ac656d19c4d8f5fd8e63dfd26107e2652}{Weapon\+Item}} (\mbox{\hyperlink{classitems_1_1weapons_1_1_weapon}{Weapon}} \mbox{\hyperlink{classitems_1_1_weapon_item_ac409bfd1c448db978d0ebc4ed3a594a6}{weapon}}, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_image}{Image}} \mbox{\hyperlink{classitems_1_1_item_afa445ad011d48c3455b0c04bec2581f9}{icon}}, String \mbox{\hyperlink{classitems_1_1_item_a086327df1ba046bbbe3fa2f753226d73}{name}})
+\item 
+\mbox{\hyperlink{classitems_1_1weapons_1_1_weapon}{Weapon}} \mbox{\hyperlink{classitems_1_1_weapon_item_a4536195f6a08b29473dbc77e72d33cbd}{get\+Weapon}} ()
+\item 
+void \mbox{\hyperlink{classitems_1_1_weapon_item_acea8bd206dd0007a915a855d3fbde071}{use}} (\mbox{\hyperlink{classentities_1_1_subject}{Subject}} c)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classitems_1_1weapons_1_1_weapon}{Weapon}} \mbox{\hyperlink{classitems_1_1_weapon_item_ac409bfd1c448db978d0ebc4ed3a594a6}{weapon}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classitems_1_1_weapon_item_ac656d19c4d8f5fd8e63dfd26107e2652}\label{classitems_1_1_weapon_item_ac656d19c4d8f5fd8e63dfd26107e2652}} 
+\index{items\+::\+Weapon\+Item@{items\+::\+Weapon\+Item}!Weapon\+Item@{Weapon\+Item}}
+\index{Weapon\+Item@{Weapon\+Item}!items\+::\+Weapon\+Item@{items\+::\+Weapon\+Item}}
+\subsubsection{\texorpdfstring{Weapon\+Item()}{WeaponItem()}}
+{\footnotesize\ttfamily items.\+Weapon\+Item.\+Weapon\+Item (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classitems_1_1weapons_1_1_weapon}{Weapon}}}]{weapon,  }\item[{\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_image}{Image}}}]{icon,  }\item[{String}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+16                                                               \{
+17         super(\mbox{\hyperlink{classitems_1_1_item_afa445ad011d48c3455b0c04bec2581f9}{icon}}, \mbox{\hyperlink{classitems_1_1_item_a086327df1ba046bbbe3fa2f753226d73}{name}});
+18         this.\mbox{\hyperlink{classitems_1_1_weapon_item_ac409bfd1c448db978d0ebc4ed3a594a6}{weapon}}=\mbox{\hyperlink{classitems_1_1_weapon_item_ac409bfd1c448db978d0ebc4ed3a594a6}{weapon}};
+19     \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classitems_1_1_weapon_item_a4536195f6a08b29473dbc77e72d33cbd}\label{classitems_1_1_weapon_item_a4536195f6a08b29473dbc77e72d33cbd}} 
+\index{items\+::\+Weapon\+Item@{items\+::\+Weapon\+Item}!get\+Weapon@{get\+Weapon}}
+\index{get\+Weapon@{get\+Weapon}!items\+::\+Weapon\+Item@{items\+::\+Weapon\+Item}}
+\subsubsection{\texorpdfstring{get\+Weapon()}{getWeapon()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classitems_1_1weapons_1_1_weapon}{Weapon}} items.\+Weapon\+Item.\+get\+Weapon (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+22     \{
+23         \textcolor{keywordflow}{return} \mbox{\hyperlink{classitems_1_1_weapon_item_ac409bfd1c448db978d0ebc4ed3a594a6}{weapon}};
+24     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classitems_1_1_weapon_item_acea8bd206dd0007a915a855d3fbde071}\label{classitems_1_1_weapon_item_acea8bd206dd0007a915a855d3fbde071}} 
+\index{items\+::\+Weapon\+Item@{items\+::\+Weapon\+Item}!use@{use}}
+\index{use@{use}!items\+::\+Weapon\+Item@{items\+::\+Weapon\+Item}}
+\subsubsection{\texorpdfstring{use()}{use()}}
+{\footnotesize\ttfamily void items.\+Weapon\+Item.\+use (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classentities_1_1_subject}{Subject}}}]{c }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+27                                \{
+28         c.setWeapon(\mbox{\hyperlink{classitems_1_1_weapon_item_ac409bfd1c448db978d0ebc4ed3a594a6}{weapon}});   \textcolor{comment}{//Equipar}
+29     \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classitems_1_1_weapon_item_ac409bfd1c448db978d0ebc4ed3a594a6}\label{classitems_1_1_weapon_item_ac409bfd1c448db978d0ebc4ed3a594a6}} 
+\index{items\+::\+Weapon\+Item@{items\+::\+Weapon\+Item}!weapon@{weapon}}
+\index{weapon@{weapon}!items\+::\+Weapon\+Item@{items\+::\+Weapon\+Item}}
+\subsubsection{\texorpdfstring{weapon}{weapon}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classitems_1_1weapons_1_1_weapon}{Weapon}} items.\+Weapon\+Item.\+weapon\hspace{0.3cm}{\ttfamily [private]}}
+

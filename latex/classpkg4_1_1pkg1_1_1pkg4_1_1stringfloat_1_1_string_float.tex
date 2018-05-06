@@ -1,0 +1,61 @@
+\hypertarget{classpkg4_1_1pkg1_1_1pkg4_1_1stringfloat_1_1_string_float}{}\section{pkg4.\+pkg1.\+pkg4.\+stringfloat.\+String\+Float Class Reference}
+\label{classpkg4_1_1pkg1_1_1pkg4_1_1stringfloat_1_1_string_float}\index{pkg4.\+pkg1.\+pkg4.\+stringfloat.\+String\+Float@{pkg4.\+pkg1.\+pkg4.\+stringfloat.\+String\+Float}}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{classpkg4_1_1pkg1_1_1pkg4_1_1stringfloat_1_1_string_float_a3412192ef8b7f2857ce55ae22443555a}{main}} (String\mbox{[}$\,$\mbox{]} args)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyAuthor}{Author}
+Jorgito 
+\end{DoxyAuthor}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classpkg4_1_1pkg1_1_1pkg4_1_1stringfloat_1_1_string_float_a3412192ef8b7f2857ce55ae22443555a}\label{classpkg4_1_1pkg1_1_1pkg4_1_1stringfloat_1_1_string_float_a3412192ef8b7f2857ce55ae22443555a}} 
+\index{pkg4\+::pkg1\+::pkg4\+::stringfloat\+::\+String\+Float@{pkg4\+::pkg1\+::pkg4\+::stringfloat\+::\+String\+Float}!main@{main}}
+\index{main@{main}!pkg4\+::pkg1\+::pkg4\+::stringfloat\+::\+String\+Float@{pkg4\+::pkg1\+::pkg4\+::stringfloat\+::\+String\+Float}}
+\subsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily static void pkg4.\+pkg1.\+pkg4.\+stringfloat.\+String\+Float.\+main (\begin{DoxyParamCaption}\item[{String \mbox{[}$\,$\mbox{]}}]{args }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em args} & the command line arguments \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+19                                            \{
+20          Scanner entrada = \textcolor{keyword}{new} Scanner(System.in);  
+21         Double contador, total, media;
+22       String nota;
+23       contador=1.0;
+24       total=0.0;
+25  
+26       \textcolor{comment}{// inicialización de variables}
+27   
+28        \textcolor{keywordflow}{while} ( contador <= 5 ) \{
+29          System.out.println( \textcolor{stringliteral}{"\(\backslash\)nTeclee calificación (A,B,C,D,E): "} );
+30          nota = entrada.nextLine();       
+31          \textcolor{keywordflow}{if} (nota.equals(\textcolor{stringliteral}{"A"})) \{
+32                 total =+ 4.0;
+33          \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (nota.equals(\textcolor{stringliteral}{"B"})) \{
+34                 total =+ 3.0;
+35          \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (nota.equals(\textcolor{stringliteral}{"C"})) \{
+36                 total =+ 2.0;
+37          \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (nota.equals(\textcolor{stringliteral}{"D"})) \{
+38                 total =+ 1.0;
+39          \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (nota.equals(\textcolor{stringliteral}{"E"})) \{
+40                 total =+ 0.0;
+41          \}
+42  
+43          contador ++;
+44       \}
+45   
+46       media = total / 5;
+47       System.out.println(\textcolor{stringliteral}{"\(\backslash\)n\(\backslash\)nEl promedio del grupo es: "} + media);
+48         \textcolor{comment}{// TODO code application logic here}
+49     \}
+\end{DoxyCode}

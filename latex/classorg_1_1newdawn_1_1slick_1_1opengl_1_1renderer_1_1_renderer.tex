@@ -1,0 +1,214 @@
+\hypertarget{classorg_1_1newdawn_1_1slick_1_1opengl_1_1renderer_1_1_renderer}{}\section{org.\+newdawn.\+slick.\+opengl.\+renderer.\+Renderer Class Reference}
+\label{classorg_1_1newdawn_1_1slick_1_1opengl_1_1renderer_1_1_renderer}\index{org.\+newdawn.\+slick.\+opengl.\+renderer.\+Renderer@{org.\+newdawn.\+slick.\+opengl.\+renderer.\+Renderer}}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1renderer_1_1_renderer_a981940daeedcefe0a84ded27f17b0fc7}{set\+Renderer}} (int type)
+\item 
+static void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1renderer_1_1_renderer_ad7172b7f319fc169ed3bbd2cab844b64}{set\+Line\+Strip\+Renderer}} (int type)
+\item 
+static void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1renderer_1_1_renderer_a7553b5b841479d2213692f05d27652a9}{set\+Line\+Strip\+Renderer}} (\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1opengl_1_1renderer_1_1_line_strip_renderer}{Line\+Strip\+Renderer}} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1renderer_1_1_renderer_abe140c4ec95e1ff80b86eb12a3508713}{renderer}})
+\item 
+static void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1renderer_1_1_renderer_a88ac0b4bc09f731a3ae2cba651e4deeb}{set\+Renderer}} (\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1opengl_1_1renderer_1_1_s_g_l}{S\+GL}} r)
+\item 
+static \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1opengl_1_1renderer_1_1_s_g_l}{S\+GL}} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1renderer_1_1_renderer_abe742c3a7dfca67c6c01821d27087308}{get}} ()
+\item 
+static \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1opengl_1_1renderer_1_1_line_strip_renderer}{Line\+Strip\+Renderer}} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1renderer_1_1_renderer_a8e231c62dce8d884fd0b26beed63e743}{get\+Line\+Strip\+Renderer}} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static final int \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1renderer_1_1_renderer_a882d9f188c116a6e5258b3e47c47f084}{I\+M\+M\+E\+D\+I\+A\+T\+E\+\_\+\+R\+E\+N\+D\+E\+R\+ER}} = 1
+\item 
+static final int \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1renderer_1_1_renderer_a36ea0003dbe799332e5b022ca0290c6c}{V\+E\+R\+T\+E\+X\+\_\+\+A\+R\+R\+A\+Y\+\_\+\+R\+E\+N\+D\+E\+R\+ER}} = 2
+\item 
+static final int \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1renderer_1_1_renderer_aaf62f21044202dd497512946fe32de8e}{D\+E\+F\+A\+U\+L\+T\+\_\+\+L\+I\+N\+E\+\_\+\+S\+T\+R\+I\+P\+\_\+\+R\+E\+N\+D\+E\+R\+ER}} = 3
+\item 
+static final int \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1renderer_1_1_renderer_a683e73dc21ff6bc56e533a1e10a01f8f}{Q\+U\+A\+D\+\_\+\+B\+A\+S\+E\+D\+\_\+\+L\+I\+N\+E\+\_\+\+S\+T\+R\+I\+P\+\_\+\+R\+E\+N\+D\+E\+R\+ER}} = 4
+\end{DoxyCompactItemize}
+\subsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1opengl_1_1renderer_1_1_s_g_l}{S\+GL}} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1renderer_1_1_renderer_abe140c4ec95e1ff80b86eb12a3508713}{renderer}} = new \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1renderer_1_1_immediate_mode_o_g_l_renderer}{Immediate\+Mode\+O\+G\+L\+Renderer}}()
+\item 
+static \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1opengl_1_1renderer_1_1_line_strip_renderer}{Line\+Strip\+Renderer}} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1renderer_1_1_renderer_ad67da40e0608a905d1d28ae6f029e293}{line\+Strip\+Renderer}} = new \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1renderer_1_1_default_line_strip_renderer}{Default\+Line\+Strip\+Renderer}}()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The static holder for the current GL implementation. Note that this renderer can only be set before the game has been started.
+
+\begin{DoxyAuthor}{Author}
+kevin 
+\end{DoxyAuthor}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1opengl_1_1renderer_1_1_renderer_abe742c3a7dfca67c6c01821d27087308}\label{classorg_1_1newdawn_1_1slick_1_1opengl_1_1renderer_1_1_renderer_abe742c3a7dfca67c6c01821d27087308}} 
+\index{org\+::newdawn\+::slick\+::opengl\+::renderer\+::\+Renderer@{org\+::newdawn\+::slick\+::opengl\+::renderer\+::\+Renderer}!get@{get}}
+\index{get@{get}!org\+::newdawn\+::slick\+::opengl\+::renderer\+::\+Renderer@{org\+::newdawn\+::slick\+::opengl\+::renderer\+::\+Renderer}}
+\subsubsection{\texorpdfstring{get()}{get()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1opengl_1_1renderer_1_1_s_g_l}{S\+GL}} org.\+newdawn.\+slick.\+opengl.\+renderer.\+Renderer.\+get (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Get the renderer to be used when accessing GL
+
+\begin{DoxyReturn}{Returns}
+The renderer to be used when accessing GL 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+86                             \{
+87         \textcolor{keywordflow}{return} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1renderer_1_1_renderer_abe140c4ec95e1ff80b86eb12a3508713}{renderer}};
+88     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1opengl_1_1renderer_1_1_renderer_a8e231c62dce8d884fd0b26beed63e743}\label{classorg_1_1newdawn_1_1slick_1_1opengl_1_1renderer_1_1_renderer_a8e231c62dce8d884fd0b26beed63e743}} 
+\index{org\+::newdawn\+::slick\+::opengl\+::renderer\+::\+Renderer@{org\+::newdawn\+::slick\+::opengl\+::renderer\+::\+Renderer}!get\+Line\+Strip\+Renderer@{get\+Line\+Strip\+Renderer}}
+\index{get\+Line\+Strip\+Renderer@{get\+Line\+Strip\+Renderer}!org\+::newdawn\+::slick\+::opengl\+::renderer\+::\+Renderer@{org\+::newdawn\+::slick\+::opengl\+::renderer\+::\+Renderer}}
+\subsubsection{\texorpdfstring{get\+Line\+Strip\+Renderer()}{getLineStripRenderer()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1opengl_1_1renderer_1_1_line_strip_renderer}{Line\+Strip\+Renderer}} org.\+newdawn.\+slick.\+opengl.\+renderer.\+Renderer.\+get\+Line\+Strip\+Renderer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Get the line strip renderer to use
+
+\begin{DoxyReturn}{Returns}
+The line strip renderer to use 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+95                                                            \{
+96         \textcolor{keywordflow}{return} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1renderer_1_1_renderer_ad67da40e0608a905d1d28ae6f029e293}{lineStripRenderer}};
+97     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1opengl_1_1renderer_1_1_renderer_ad7172b7f319fc169ed3bbd2cab844b64}\label{classorg_1_1newdawn_1_1slick_1_1opengl_1_1renderer_1_1_renderer_ad7172b7f319fc169ed3bbd2cab844b64}} 
+\index{org\+::newdawn\+::slick\+::opengl\+::renderer\+::\+Renderer@{org\+::newdawn\+::slick\+::opengl\+::renderer\+::\+Renderer}!set\+Line\+Strip\+Renderer@{set\+Line\+Strip\+Renderer}}
+\index{set\+Line\+Strip\+Renderer@{set\+Line\+Strip\+Renderer}!org\+::newdawn\+::slick\+::opengl\+::renderer\+::\+Renderer@{org\+::newdawn\+::slick\+::opengl\+::renderer\+::\+Renderer}}
+\subsubsection{\texorpdfstring{set\+Line\+Strip\+Renderer()}{setLineStripRenderer()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily static void org.\+newdawn.\+slick.\+opengl.\+renderer.\+Renderer.\+set\+Line\+Strip\+Renderer (\begin{DoxyParamCaption}\item[{int}]{type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Set the line strip renderer to one of the known types
+
+
+\begin{DoxyParams}{Parameters}
+{\em type} & The type of renderer to use \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+50                                                       \{
+51         \textcolor{keywordflow}{switch} (type) \{
+52         \textcolor{keywordflow}{case} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1renderer_1_1_renderer_aaf62f21044202dd497512946fe32de8e}{DEFAULT\_LINE\_STRIP\_RENDERER}}:
+53             \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1renderer_1_1_renderer_ad7172b7f319fc169ed3bbd2cab844b64}{setLineStripRenderer}}(\textcolor{keyword}{new} DefaultLineStripRenderer());
+54             \textcolor{keywordflow}{return};
+55         \textcolor{keywordflow}{case} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1renderer_1_1_renderer_a683e73dc21ff6bc56e533a1e10a01f8f}{QUAD\_BASED\_LINE\_STRIP\_RENDERER}}:
+56             \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1renderer_1_1_renderer_ad7172b7f319fc169ed3bbd2cab844b64}{setLineStripRenderer}}(\textcolor{keyword}{new} QuadBasedLineStripRenderer());
+57             \textcolor{keywordflow}{return};
+58         \}
+59         
+60         \textcolor{keywordflow}{throw} \textcolor{keyword}{new} RuntimeException(\textcolor{stringliteral}{"Unknown line strip renderer type: "}+type);
+61     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1opengl_1_1renderer_1_1_renderer_a7553b5b841479d2213692f05d27652a9}\label{classorg_1_1newdawn_1_1slick_1_1opengl_1_1renderer_1_1_renderer_a7553b5b841479d2213692f05d27652a9}} 
+\index{org\+::newdawn\+::slick\+::opengl\+::renderer\+::\+Renderer@{org\+::newdawn\+::slick\+::opengl\+::renderer\+::\+Renderer}!set\+Line\+Strip\+Renderer@{set\+Line\+Strip\+Renderer}}
+\index{set\+Line\+Strip\+Renderer@{set\+Line\+Strip\+Renderer}!org\+::newdawn\+::slick\+::opengl\+::renderer\+::\+Renderer@{org\+::newdawn\+::slick\+::opengl\+::renderer\+::\+Renderer}}
+\subsubsection{\texorpdfstring{set\+Line\+Strip\+Renderer()}{setLineStripRenderer()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily static void org.\+newdawn.\+slick.\+opengl.\+renderer.\+Renderer.\+set\+Line\+Strip\+Renderer (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1opengl_1_1renderer_1_1_line_strip_renderer}{Line\+Strip\+Renderer}}}]{renderer }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Set the line strip renderer to be used globally
+
+
+\begin{DoxyParams}{Parameters}
+{\em renderer} & The line strip renderer to be used \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+68                                                                         \{
+69         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1renderer_1_1_renderer_ad67da40e0608a905d1d28ae6f029e293}{lineStripRenderer}} = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1renderer_1_1_renderer_abe140c4ec95e1ff80b86eb12a3508713}{renderer}};
+70     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1opengl_1_1renderer_1_1_renderer_a981940daeedcefe0a84ded27f17b0fc7}\label{classorg_1_1newdawn_1_1slick_1_1opengl_1_1renderer_1_1_renderer_a981940daeedcefe0a84ded27f17b0fc7}} 
+\index{org\+::newdawn\+::slick\+::opengl\+::renderer\+::\+Renderer@{org\+::newdawn\+::slick\+::opengl\+::renderer\+::\+Renderer}!set\+Renderer@{set\+Renderer}}
+\index{set\+Renderer@{set\+Renderer}!org\+::newdawn\+::slick\+::opengl\+::renderer\+::\+Renderer@{org\+::newdawn\+::slick\+::opengl\+::renderer\+::\+Renderer}}
+\subsubsection{\texorpdfstring{set\+Renderer()}{setRenderer()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily static void org.\+newdawn.\+slick.\+opengl.\+renderer.\+Renderer.\+set\+Renderer (\begin{DoxyParamCaption}\item[{int}]{type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Set the renderer to one of the known types
+
+
+\begin{DoxyParams}{Parameters}
+{\em type} & The type of renderer to use \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+32                                              \{
+33         \textcolor{keywordflow}{switch} (type) \{
+34             \textcolor{keywordflow}{case} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1renderer_1_1_renderer_a882d9f188c116a6e5258b3e47c47f084}{IMMEDIATE\_RENDERER}}:
+35                 \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1renderer_1_1_renderer_a981940daeedcefe0a84ded27f17b0fc7}{setRenderer}}(\textcolor{keyword}{new} ImmediateModeOGLRenderer());
+36                 \textcolor{keywordflow}{return};
+37             \textcolor{keywordflow}{case} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1renderer_1_1_renderer_a36ea0003dbe799332e5b022ca0290c6c}{VERTEX\_ARRAY\_RENDERER}}:
+38                 \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1renderer_1_1_renderer_a981940daeedcefe0a84ded27f17b0fc7}{setRenderer}}(\textcolor{keyword}{new} VAOGLRenderer());
+39                 \textcolor{keywordflow}{return};
+40         \}
+41         
+42         \textcolor{keywordflow}{throw} \textcolor{keyword}{new} RuntimeException(\textcolor{stringliteral}{"Unknown renderer type: "}+type);
+43     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1opengl_1_1renderer_1_1_renderer_a88ac0b4bc09f731a3ae2cba651e4deeb}\label{classorg_1_1newdawn_1_1slick_1_1opengl_1_1renderer_1_1_renderer_a88ac0b4bc09f731a3ae2cba651e4deeb}} 
+\index{org\+::newdawn\+::slick\+::opengl\+::renderer\+::\+Renderer@{org\+::newdawn\+::slick\+::opengl\+::renderer\+::\+Renderer}!set\+Renderer@{set\+Renderer}}
+\index{set\+Renderer@{set\+Renderer}!org\+::newdawn\+::slick\+::opengl\+::renderer\+::\+Renderer@{org\+::newdawn\+::slick\+::opengl\+::renderer\+::\+Renderer}}
+\subsubsection{\texorpdfstring{set\+Renderer()}{setRenderer()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily static void org.\+newdawn.\+slick.\+opengl.\+renderer.\+Renderer.\+set\+Renderer (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1opengl_1_1renderer_1_1_s_g_l}{S\+GL}}}]{r }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Set the renderer to be used
+
+
+\begin{DoxyParams}{Parameters}
+{\em r} & The renderer to be used \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+77                                           \{
+78         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1renderer_1_1_renderer_abe140c4ec95e1ff80b86eb12a3508713}{renderer}} = r;
+79     \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1opengl_1_1renderer_1_1_renderer_aaf62f21044202dd497512946fe32de8e}\label{classorg_1_1newdawn_1_1slick_1_1opengl_1_1renderer_1_1_renderer_aaf62f21044202dd497512946fe32de8e}} 
+\index{org\+::newdawn\+::slick\+::opengl\+::renderer\+::\+Renderer@{org\+::newdawn\+::slick\+::opengl\+::renderer\+::\+Renderer}!D\+E\+F\+A\+U\+L\+T\+\_\+\+L\+I\+N\+E\+\_\+\+S\+T\+R\+I\+P\+\_\+\+R\+E\+N\+D\+E\+R\+ER@{D\+E\+F\+A\+U\+L\+T\+\_\+\+L\+I\+N\+E\+\_\+\+S\+T\+R\+I\+P\+\_\+\+R\+E\+N\+D\+E\+R\+ER}}
+\index{D\+E\+F\+A\+U\+L\+T\+\_\+\+L\+I\+N\+E\+\_\+\+S\+T\+R\+I\+P\+\_\+\+R\+E\+N\+D\+E\+R\+ER@{D\+E\+F\+A\+U\+L\+T\+\_\+\+L\+I\+N\+E\+\_\+\+S\+T\+R\+I\+P\+\_\+\+R\+E\+N\+D\+E\+R\+ER}!org\+::newdawn\+::slick\+::opengl\+::renderer\+::\+Renderer@{org\+::newdawn\+::slick\+::opengl\+::renderer\+::\+Renderer}}
+\subsubsection{\texorpdfstring{D\+E\+F\+A\+U\+L\+T\+\_\+\+L\+I\+N\+E\+\_\+\+S\+T\+R\+I\+P\+\_\+\+R\+E\+N\+D\+E\+R\+ER}{DEFAULT\_LINE\_STRIP\_RENDERER}}
+{\footnotesize\ttfamily final int org.\+newdawn.\+slick.\+opengl.\+renderer.\+Renderer.\+D\+E\+F\+A\+U\+L\+T\+\_\+\+L\+I\+N\+E\+\_\+\+S\+T\+R\+I\+P\+\_\+\+R\+E\+N\+D\+E\+R\+ER = 3\hspace{0.3cm}{\ttfamily [static]}}
+
+The indicator for direct GL line renderer (the default) \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1opengl_1_1renderer_1_1_renderer_a882d9f188c116a6e5258b3e47c47f084}\label{classorg_1_1newdawn_1_1slick_1_1opengl_1_1renderer_1_1_renderer_a882d9f188c116a6e5258b3e47c47f084}} 
+\index{org\+::newdawn\+::slick\+::opengl\+::renderer\+::\+Renderer@{org\+::newdawn\+::slick\+::opengl\+::renderer\+::\+Renderer}!I\+M\+M\+E\+D\+I\+A\+T\+E\+\_\+\+R\+E\+N\+D\+E\+R\+ER@{I\+M\+M\+E\+D\+I\+A\+T\+E\+\_\+\+R\+E\+N\+D\+E\+R\+ER}}
+\index{I\+M\+M\+E\+D\+I\+A\+T\+E\+\_\+\+R\+E\+N\+D\+E\+R\+ER@{I\+M\+M\+E\+D\+I\+A\+T\+E\+\_\+\+R\+E\+N\+D\+E\+R\+ER}!org\+::newdawn\+::slick\+::opengl\+::renderer\+::\+Renderer@{org\+::newdawn\+::slick\+::opengl\+::renderer\+::\+Renderer}}
+\subsubsection{\texorpdfstring{I\+M\+M\+E\+D\+I\+A\+T\+E\+\_\+\+R\+E\+N\+D\+E\+R\+ER}{IMMEDIATE\_RENDERER}}
+{\footnotesize\ttfamily final int org.\+newdawn.\+slick.\+opengl.\+renderer.\+Renderer.\+I\+M\+M\+E\+D\+I\+A\+T\+E\+\_\+\+R\+E\+N\+D\+E\+R\+ER = 1\hspace{0.3cm}{\ttfamily [static]}}
+
+The indicator for immediate mode renderering (the default) \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1opengl_1_1renderer_1_1_renderer_ad67da40e0608a905d1d28ae6f029e293}\label{classorg_1_1newdawn_1_1slick_1_1opengl_1_1renderer_1_1_renderer_ad67da40e0608a905d1d28ae6f029e293}} 
+\index{org\+::newdawn\+::slick\+::opengl\+::renderer\+::\+Renderer@{org\+::newdawn\+::slick\+::opengl\+::renderer\+::\+Renderer}!line\+Strip\+Renderer@{line\+Strip\+Renderer}}
+\index{line\+Strip\+Renderer@{line\+Strip\+Renderer}!org\+::newdawn\+::slick\+::opengl\+::renderer\+::\+Renderer@{org\+::newdawn\+::slick\+::opengl\+::renderer\+::\+Renderer}}
+\subsubsection{\texorpdfstring{line\+Strip\+Renderer}{lineStripRenderer}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1opengl_1_1renderer_1_1_line_strip_renderer}{Line\+Strip\+Renderer}} org.\+newdawn.\+slick.\+opengl.\+renderer.\+Renderer.\+line\+Strip\+Renderer = new \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1renderer_1_1_default_line_strip_renderer}{Default\+Line\+Strip\+Renderer}}()\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+The line strip renderer to use \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1opengl_1_1renderer_1_1_renderer_a683e73dc21ff6bc56e533a1e10a01f8f}\label{classorg_1_1newdawn_1_1slick_1_1opengl_1_1renderer_1_1_renderer_a683e73dc21ff6bc56e533a1e10a01f8f}} 
+\index{org\+::newdawn\+::slick\+::opengl\+::renderer\+::\+Renderer@{org\+::newdawn\+::slick\+::opengl\+::renderer\+::\+Renderer}!Q\+U\+A\+D\+\_\+\+B\+A\+S\+E\+D\+\_\+\+L\+I\+N\+E\+\_\+\+S\+T\+R\+I\+P\+\_\+\+R\+E\+N\+D\+E\+R\+ER@{Q\+U\+A\+D\+\_\+\+B\+A\+S\+E\+D\+\_\+\+L\+I\+N\+E\+\_\+\+S\+T\+R\+I\+P\+\_\+\+R\+E\+N\+D\+E\+R\+ER}}
+\index{Q\+U\+A\+D\+\_\+\+B\+A\+S\+E\+D\+\_\+\+L\+I\+N\+E\+\_\+\+S\+T\+R\+I\+P\+\_\+\+R\+E\+N\+D\+E\+R\+ER@{Q\+U\+A\+D\+\_\+\+B\+A\+S\+E\+D\+\_\+\+L\+I\+N\+E\+\_\+\+S\+T\+R\+I\+P\+\_\+\+R\+E\+N\+D\+E\+R\+ER}!org\+::newdawn\+::slick\+::opengl\+::renderer\+::\+Renderer@{org\+::newdawn\+::slick\+::opengl\+::renderer\+::\+Renderer}}
+\subsubsection{\texorpdfstring{Q\+U\+A\+D\+\_\+\+B\+A\+S\+E\+D\+\_\+\+L\+I\+N\+E\+\_\+\+S\+T\+R\+I\+P\+\_\+\+R\+E\+N\+D\+E\+R\+ER}{QUAD\_BASED\_LINE\_STRIP\_RENDERER}}
+{\footnotesize\ttfamily final int org.\+newdawn.\+slick.\+opengl.\+renderer.\+Renderer.\+Q\+U\+A\+D\+\_\+\+B\+A\+S\+E\+D\+\_\+\+L\+I\+N\+E\+\_\+\+S\+T\+R\+I\+P\+\_\+\+R\+E\+N\+D\+E\+R\+ER = 4\hspace{0.3cm}{\ttfamily [static]}}
+
+The indicator for consistant quad based lines \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1opengl_1_1renderer_1_1_renderer_abe140c4ec95e1ff80b86eb12a3508713}\label{classorg_1_1newdawn_1_1slick_1_1opengl_1_1renderer_1_1_renderer_abe140c4ec95e1ff80b86eb12a3508713}} 
+\index{org\+::newdawn\+::slick\+::opengl\+::renderer\+::\+Renderer@{org\+::newdawn\+::slick\+::opengl\+::renderer\+::\+Renderer}!renderer@{renderer}}
+\index{renderer@{renderer}!org\+::newdawn\+::slick\+::opengl\+::renderer\+::\+Renderer@{org\+::newdawn\+::slick\+::opengl\+::renderer\+::\+Renderer}}
+\subsubsection{\texorpdfstring{renderer}{renderer}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1opengl_1_1renderer_1_1_s_g_l}{S\+GL}} org.\+newdawn.\+slick.\+opengl.\+renderer.\+Renderer.\+renderer = new \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1renderer_1_1_immediate_mode_o_g_l_renderer}{Immediate\+Mode\+O\+G\+L\+Renderer}}()\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+The renderer in use \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1opengl_1_1renderer_1_1_renderer_a36ea0003dbe799332e5b022ca0290c6c}\label{classorg_1_1newdawn_1_1slick_1_1opengl_1_1renderer_1_1_renderer_a36ea0003dbe799332e5b022ca0290c6c}} 
+\index{org\+::newdawn\+::slick\+::opengl\+::renderer\+::\+Renderer@{org\+::newdawn\+::slick\+::opengl\+::renderer\+::\+Renderer}!V\+E\+R\+T\+E\+X\+\_\+\+A\+R\+R\+A\+Y\+\_\+\+R\+E\+N\+D\+E\+R\+ER@{V\+E\+R\+T\+E\+X\+\_\+\+A\+R\+R\+A\+Y\+\_\+\+R\+E\+N\+D\+E\+R\+ER}}
+\index{V\+E\+R\+T\+E\+X\+\_\+\+A\+R\+R\+A\+Y\+\_\+\+R\+E\+N\+D\+E\+R\+ER@{V\+E\+R\+T\+E\+X\+\_\+\+A\+R\+R\+A\+Y\+\_\+\+R\+E\+N\+D\+E\+R\+ER}!org\+::newdawn\+::slick\+::opengl\+::renderer\+::\+Renderer@{org\+::newdawn\+::slick\+::opengl\+::renderer\+::\+Renderer}}
+\subsubsection{\texorpdfstring{V\+E\+R\+T\+E\+X\+\_\+\+A\+R\+R\+A\+Y\+\_\+\+R\+E\+N\+D\+E\+R\+ER}{VERTEX\_ARRAY\_RENDERER}}
+{\footnotesize\ttfamily final int org.\+newdawn.\+slick.\+opengl.\+renderer.\+Renderer.\+V\+E\+R\+T\+E\+X\+\_\+\+A\+R\+R\+A\+Y\+\_\+\+R\+E\+N\+D\+E\+R\+ER = 2\hspace{0.3cm}{\ttfamily [static]}}
+
+The indicator for vertex array based rendering 

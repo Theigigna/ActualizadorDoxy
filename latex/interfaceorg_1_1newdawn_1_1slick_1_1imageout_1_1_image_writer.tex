@@ -1,0 +1,52 @@
+\hypertarget{interfaceorg_1_1newdawn_1_1slick_1_1imageout_1_1_image_writer}{}\section{org.\+newdawn.\+slick.\+imageout.\+Image\+Writer Interface Reference}
+\label{interfaceorg_1_1newdawn_1_1slick_1_1imageout_1_1_image_writer}\index{org.\+newdawn.\+slick.\+imageout.\+Image\+Writer@{org.\+newdawn.\+slick.\+imageout.\+Image\+Writer}}
+Inheritance diagram for org.\+newdawn.\+slick.\+imageout.\+Image\+Writer\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interfaceorg_1_1newdawn_1_1slick_1_1imageout_1_1_image_writer}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1imageout_1_1_image_writer_ad911f19d2f2c9e9925c73510018423b9}{save\+Image}} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_image}{Image}} image, String format, Output\+Stream out, boolean write\+Alpha)  throws I\+O\+Exception
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The description of any class that can produce data to an output stream reprsenting some image in memory.
+
+\begin{DoxyAuthor}{Author}
+Jon 
+\end{DoxyAuthor}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{interfaceorg_1_1newdawn_1_1slick_1_1imageout_1_1_image_writer_ad911f19d2f2c9e9925c73510018423b9}\label{interfaceorg_1_1newdawn_1_1slick_1_1imageout_1_1_image_writer_ad911f19d2f2c9e9925c73510018423b9}} 
+\index{org\+::newdawn\+::slick\+::imageout\+::\+Image\+Writer@{org\+::newdawn\+::slick\+::imageout\+::\+Image\+Writer}!save\+Image@{save\+Image}}
+\index{save\+Image@{save\+Image}!org\+::newdawn\+::slick\+::imageout\+::\+Image\+Writer@{org\+::newdawn\+::slick\+::imageout\+::\+Image\+Writer}}
+\subsubsection{\texorpdfstring{save\+Image()}{saveImage()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+imageout.\+Image\+Writer.\+save\+Image (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_image}{Image}}}]{image,  }\item[{String}]{format,  }\item[{Output\+Stream}]{out,  }\item[{boolean}]{write\+Alpha }\end{DoxyParamCaption}) throws I\+O\+Exception}
+
+Save an \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_image}{Image}} to an given location
+
+
+\begin{DoxyParams}{Parameters}
+{\em image} & The image to be written \\
+\hline
+{\em format} & The format that this writer is expected to be produced in \\
+\hline
+{\em out} & The output stream to which the image data should be written \\
+\hline
+{\em write\+Alpha} & True if we should write alpha information to the file \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em I\+O\+Exception} & Indicates a failure to write out the image to the specified location \\
+\hline
+\end{DoxyExceptions}
+
+
+Implemented in \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1imageout_1_1_image_i_o_writer_a16b8f7a58c4adc98658129bfaaafe751}{org.\+newdawn.\+slick.\+imageout.\+Image\+I\+O\+Writer}}, and \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1imageout_1_1_t_g_a_writer_afd93706487ac566196147f002ba249b5}{org.\+newdawn.\+slick.\+imageout.\+T\+G\+A\+Writer}}.
+

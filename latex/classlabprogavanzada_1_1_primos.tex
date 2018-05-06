@@ -1,0 +1,132 @@
+\hypertarget{classlabprogavanzada_1_1_primos}{}\section{labprogavanzada.\+Primos Class Reference}
+\label{classlabprogavanzada_1_1_primos}\index{labprogavanzada.\+Primos@{labprogavanzada.\+Primos}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classlabprogavanzada_1_1_primos_a43f14cebd555907aaaf5270a66055f6a}{Primos}} (int \mbox{\hyperlink{classlabprogavanzada_1_1_primos_a0755e3305c771aa34e184c9719b0e2ff}{x}}, int \mbox{\hyperlink{classlabprogavanzada_1_1_primos_a5a48c8b02403aee0c1741dd3abf91f47}{y}})
+\item 
+long \mbox{\hyperlink{classlabprogavanzada_1_1_primos_a6127829b3e6ef1830edf5714b0cc28a8}{calcular}} ()
+\item 
+int \mbox{\hyperlink{classlabprogavanzada_1_1_primos_a4c867a357848bb685f59120ae62844f0}{cuantos}} ()
+\end{DoxyCompactItemize}
+\subsection*{Package Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classlabprogavanzada_1_1_primos_a5a48c8b02403aee0c1741dd3abf91f47}{y}}
+\item 
+int \mbox{\hyperlink{classlabprogavanzada_1_1_primos_a07e981f7bb9b39f7ead20be760e628fb}{n}} =0
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+boolean \mbox{\hyperlink{classlabprogavanzada_1_1_primos_a7eeebcb76da9a4ad43a1889bdee5bb07}{es\+Primo}} (int \mbox{\hyperlink{classlabprogavanzada_1_1_primos_a07e981f7bb9b39f7ead20be760e628fb}{n}})
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classlabprogavanzada_1_1_primos_a0755e3305c771aa34e184c9719b0e2ff}{x}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyAuthor}{Author}
+Ignacio 
+\end{DoxyAuthor}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classlabprogavanzada_1_1_primos_a43f14cebd555907aaaf5270a66055f6a}\label{classlabprogavanzada_1_1_primos_a43f14cebd555907aaaf5270a66055f6a}} 
+\index{labprogavanzada\+::\+Primos@{labprogavanzada\+::\+Primos}!Primos@{Primos}}
+\index{Primos@{Primos}!labprogavanzada\+::\+Primos@{labprogavanzada\+::\+Primos}}
+\subsubsection{\texorpdfstring{Primos()}{Primos()}}
+{\footnotesize\ttfamily labprogavanzada.\+Primos.\+Primos (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+22                                \{
+23         this.\mbox{\hyperlink{classlabprogavanzada_1_1_primos_a0755e3305c771aa34e184c9719b0e2ff}{x}}=\mbox{\hyperlink{classlabprogavanzada_1_1_primos_a0755e3305c771aa34e184c9719b0e2ff}{x}};
+24         this.\mbox{\hyperlink{classlabprogavanzada_1_1_primos_a5a48c8b02403aee0c1741dd3abf91f47}{y}}=\mbox{\hyperlink{classlabprogavanzada_1_1_primos_a5a48c8b02403aee0c1741dd3abf91f47}{y}};
+25     \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classlabprogavanzada_1_1_primos_a6127829b3e6ef1830edf5714b0cc28a8}\label{classlabprogavanzada_1_1_primos_a6127829b3e6ef1830edf5714b0cc28a8}} 
+\index{labprogavanzada\+::\+Primos@{labprogavanzada\+::\+Primos}!calcular@{calcular}}
+\index{calcular@{calcular}!labprogavanzada\+::\+Primos@{labprogavanzada\+::\+Primos}}
+\subsubsection{\texorpdfstring{calcular()}{calcular()}}
+{\footnotesize\ttfamily long labprogavanzada.\+Primos.\+calcular (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+40                           \{
+41         
+42         \textcolor{keywordtype}{long} t0 = (\textcolor{keyword}{new} Date()).getTime(); \textcolor{comment}{//t0=instante de inicio de los cálculos}
+43         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i=\mbox{\hyperlink{classlabprogavanzada_1_1_primos_a0755e3305c771aa34e184c9719b0e2ff}{x}}; i<=\mbox{\hyperlink{classlabprogavanzada_1_1_primos_a5a48c8b02403aee0c1741dd3abf91f47}{y}}; i++)
+44         \{
+45             \textcolor{keywordflow}{if}(\mbox{\hyperlink{classlabprogavanzada_1_1_primos_a7eeebcb76da9a4ad43a1889bdee5bb07}{esPrimo}}(i))
+46             \{
+47                 \mbox{\hyperlink{classlabprogavanzada_1_1_primos_a07e981f7bb9b39f7ead20be760e628fb}{n}}++;
+48             \}
+49         \}
+50         \textcolor{keywordtype}{long} t1 = (\textcolor{keyword}{new} Date()).getTime(); \textcolor{comment}{//t1=instante de final de los cálculos}
+51            System.out.println(\textcolor{stringliteral}{"Número de primos entre: "}+ \mbox{\hyperlink{classlabprogavanzada_1_1_primos_a0755e3305c771aa34e184c9719b0e2ff}{x}} + \textcolor{stringliteral}{" y "} + \mbox{\hyperlink{classlabprogavanzada_1_1_primos_a5a48c8b02403aee0c1741dd3abf91f47}{y}} +\textcolor{stringliteral}{" calculado en "}+ (t1-t0) +\textcolor{stringliteral}{"
+       miliseg."});
+52            
+53         \textcolor{keywordflow}{return} t1-t0;
+54     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classlabprogavanzada_1_1_primos_a4c867a357848bb685f59120ae62844f0}\label{classlabprogavanzada_1_1_primos_a4c867a357848bb685f59120ae62844f0}} 
+\index{labprogavanzada\+::\+Primos@{labprogavanzada\+::\+Primos}!cuantos@{cuantos}}
+\index{cuantos@{cuantos}!labprogavanzada\+::\+Primos@{labprogavanzada\+::\+Primos}}
+\subsubsection{\texorpdfstring{cuantos()}{cuantos()}}
+{\footnotesize\ttfamily int labprogavanzada.\+Primos.\+cuantos (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+56                         \{
+57         \textcolor{keywordflow}{return} \mbox{\hyperlink{classlabprogavanzada_1_1_primos_a07e981f7bb9b39f7ead20be760e628fb}{n}};
+58     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classlabprogavanzada_1_1_primos_a7eeebcb76da9a4ad43a1889bdee5bb07}\label{classlabprogavanzada_1_1_primos_a7eeebcb76da9a4ad43a1889bdee5bb07}} 
+\index{labprogavanzada\+::\+Primos@{labprogavanzada\+::\+Primos}!es\+Primo@{es\+Primo}}
+\index{es\+Primo@{es\+Primo}!labprogavanzada\+::\+Primos@{labprogavanzada\+::\+Primos}}
+\subsubsection{\texorpdfstring{es\+Primo()}{esPrimo()}}
+{\footnotesize\ttfamily boolean labprogavanzada.\+Primos.\+es\+Primo (\begin{DoxyParamCaption}\item[{int}]{n }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+\begin{DoxyCode}
+27                                   \{
+28         \textcolor{keywordtype}{int} raiz = (int) Math.sqrt((\textcolor{keywordtype}{double}) \mbox{\hyperlink{classlabprogavanzada_1_1_primos_a07e981f7bb9b39f7ead20be760e628fb}{n}});
+29         \textcolor{keywordtype}{boolean} primo = \textcolor{keyword}{true};
+30         \textcolor{keywordtype}{int} i=2;
+31         \textcolor{keywordflow}{while}(primo && i<=raiz)
+32         \{
+33             \textcolor{keywordflow}{if} (\mbox{\hyperlink{classlabprogavanzada_1_1_primos_a07e981f7bb9b39f7ead20be760e628fb}{n}} % i == 0)
+34                 primo=\textcolor{keyword}{false};
+35             i++;
+36         \}
+37         \textcolor{keywordflow}{return} primo;
+38     \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classlabprogavanzada_1_1_primos_a07e981f7bb9b39f7ead20be760e628fb}\label{classlabprogavanzada_1_1_primos_a07e981f7bb9b39f7ead20be760e628fb}} 
+\index{labprogavanzada\+::\+Primos@{labprogavanzada\+::\+Primos}!n@{n}}
+\index{n@{n}!labprogavanzada\+::\+Primos@{labprogavanzada\+::\+Primos}}
+\subsubsection{\texorpdfstring{n}{n}}
+{\footnotesize\ttfamily int labprogavanzada.\+Primos.\+n =0\hspace{0.3cm}{\ttfamily [package]}}
+
+\mbox{\Hypertarget{classlabprogavanzada_1_1_primos_a0755e3305c771aa34e184c9719b0e2ff}\label{classlabprogavanzada_1_1_primos_a0755e3305c771aa34e184c9719b0e2ff}} 
+\index{labprogavanzada\+::\+Primos@{labprogavanzada\+::\+Primos}!x@{x}}
+\index{x@{x}!labprogavanzada\+::\+Primos@{labprogavanzada\+::\+Primos}}
+\subsubsection{\texorpdfstring{x}{x}}
+{\footnotesize\ttfamily int labprogavanzada.\+Primos.\+x\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classlabprogavanzada_1_1_primos_a5a48c8b02403aee0c1741dd3abf91f47}\label{classlabprogavanzada_1_1_primos_a5a48c8b02403aee0c1741dd3abf91f47}} 
+\index{labprogavanzada\+::\+Primos@{labprogavanzada\+::\+Primos}!y@{y}}
+\index{y@{y}!labprogavanzada\+::\+Primos@{labprogavanzada\+::\+Primos}}
+\subsubsection{\texorpdfstring{y}{y}}
+{\footnotesize\ttfamily int labprogavanzada.\+Primos.\+y\hspace{0.3cm}{\ttfamily [package]}}
+

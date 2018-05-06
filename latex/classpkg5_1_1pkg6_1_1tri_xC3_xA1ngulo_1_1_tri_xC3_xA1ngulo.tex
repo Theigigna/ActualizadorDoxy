@@ -1,0 +1,48 @@
+\hypertarget{classpkg5_1_1pkg6_1_1tri_xC3_xA1ngulo_1_1_tri_xC3_xA1ngulo}{}\section{pkg5.\+pkg6.\+triángulo.\+Triángulo Class Reference}
+\label{classpkg5_1_1pkg6_1_1tri_xC3_xA1ngulo_1_1_tri_xC3_xA1ngulo}\index{pkg5.\+pkg6.\+triángulo.\+Triángulo@{pkg5.\+pkg6.\+triángulo.\+Triángulo}}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{classpkg5_1_1pkg6_1_1tri_xC3_xA1ngulo_1_1_tri_xC3_xA1ngulo_aa2c3b344907ae4a95559d2242c2a1c5d}{main}} (String\mbox{[}$\,$\mbox{]} args)
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classpkg5_1_1pkg6_1_1tri_xC3_xA1ngulo_1_1_tri_xC3_xA1ngulo_aa2c3b344907ae4a95559d2242c2a1c5d}\label{classpkg5_1_1pkg6_1_1tri_xC3_xA1ngulo_1_1_tri_xC3_xA1ngulo_aa2c3b344907ae4a95559d2242c2a1c5d}} 
+\index{pkg5\+::pkg6\+::triángulo\+::\+Triángulo@{pkg5\+::pkg6\+::triángulo\+::\+Triángulo}!main@{main}}
+\index{main@{main}!pkg5\+::pkg6\+::triángulo\+::\+Triángulo@{pkg5\+::pkg6\+::triángulo\+::\+Triángulo}}
+\subsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily static void pkg5.\+pkg6.\+triángulo.\+Triángulo.\+main (\begin{DoxyParamCaption}\item[{String \mbox{[}$\,$\mbox{]}}]{args }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em args} & the command line arguments \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+18                                            \{
+19     Scanner N = \textcolor{keyword}{new} Scanner (System.in);
+20     \textcolor{keywordtype}{int} lado1,lado2,lado3;
+21     System.out.println(\textcolor{stringliteral}{"Introduzca el primer lado: "});
+22         lado1 = N.nextInt();
+23     System.out.println(\textcolor{stringliteral}{"Introduzca el segundo lado: "});
+24         lado2=N.nextInt();
+25     System.out.println(\textcolor{stringliteral}{"Introduzca el último lado: "});
+26         lado3=N.nextInt();
+27     \textcolor{keywordflow}{if} ((lado1+lado2)<lado3)\{
+28         System.out.println(\textcolor{stringliteral}{"Los lados pertenecen a un triángulo."});
+29     \}
+30     \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} ((lado1+lado3)>lado2)\{
+31         System.out.println(\textcolor{stringliteral}{"Los lados pertenecen a un triángulo."});
+32     \}
+33     \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} ((lado2+lado3)>lado1)\{
+34         System.out.println(\textcolor{stringliteral}{"Los lados pertenecen a un triángulo."});
+35     \}
+36     \textcolor{keywordflow}{else}\{
+37         System.out.println(\textcolor{stringliteral}{"Los lados NO pertenecen a un triángulo."});
+38     \}    
+39 
+40         \textcolor{comment}{// TODO code application logic here}
+41     \}
+\end{DoxyCode}

@@ -1,0 +1,34 @@
+\hypertarget{classejemplo1_1_1_servidor}{}\section{ejemplo1.\+Servidor Class Reference}
+\label{classejemplo1_1_1_servidor}\index{ejemplo1.\+Servidor@{ejemplo1.\+Servidor}}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{classejemplo1_1_1_servidor_a01ab924128686eafcc02f87b4c05b16b}{main}} (String args\mbox{[}$\,$\mbox{]})
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classejemplo1_1_1_servidor_a01ab924128686eafcc02f87b4c05b16b}\label{classejemplo1_1_1_servidor_a01ab924128686eafcc02f87b4c05b16b}} 
+\index{ejemplo1\+::\+Servidor@{ejemplo1\+::\+Servidor}!main@{main}}
+\index{main@{main}!ejemplo1\+::\+Servidor@{ejemplo1\+::\+Servidor}}
+\subsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily static void ejemplo1.\+Servidor.\+main (\begin{DoxyParamCaption}\item[{String}]{args\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+\begin{DoxyCode}
+7     \{
+8         \textcolor{comment}{//172.22.38.163 ip Adri}
+9         \textcolor{keywordflow}{try}
+10         \{
+11             Saludador obj = \textcolor{keyword}{new} Saludador(); \textcolor{comment}{//Crea una instancia del objeto que implementa la interfaz,
+       como objeto a registrar}
+12             Naming.rebind(\textcolor{stringliteral}{"//127.0.0.1/ObjetoSaluda"},obj);
+13             System.out.println(\textcolor{stringliteral}{"El objeto Saluda ha quedado registrado"});
+14         \}
+15         \textcolor{keywordflow}{catch} (Exception e)
+16         \{
+17             System.out.println(\textcolor{stringliteral}{"Error: "} + e.getMessage());
+18             e.printStackTrace();
+19         \}
+20     \}
+\end{DoxyCode}

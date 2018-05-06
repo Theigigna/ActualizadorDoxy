@@ -1,0 +1,312 @@
+\hypertarget{classpecl6part1_1_1_persona}{}\section{pecl6part1.\+Persona Class Reference}
+\label{classpecl6part1_1_1_persona}\index{pecl6part1.\+Persona@{pecl6part1.\+Persona}}
+Inheritance diagram for pecl6part1.\+Persona\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classpecl6part1_1_1_persona}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classpecl6part1_1_1_persona_aa12dc3804209c0efb920b2fda7d1fbbd}{terminar}} ()
+\item 
+void \mbox{\hyperlink{classpecl6part1_1_1_persona_ad51df606a3a8ed3e880c3405209ae188}{run}} ()
+\item 
+\mbox{\hyperlink{classpecl6part1_1_1_persona_a81592bc70d6788bd895eda5b5d42a250}{Persona}} (int \mbox{\hyperlink{classpecl6part1_1_1_persona_a21697d6304f8709b939317b63daccdcc}{identificador}}, \mbox{\hyperlink{classpecl6part1_1_1_planta}{Planta}} \mbox{\hyperlink{classpecl6part1_1_1_persona_aa5841c74449c09b7aa8e0c646365228d}{plantas}}\mbox{[}$\,$\mbox{]}, \mbox{\hyperlink{classpecl6part1_1_1_ascensor}{Ascensor}} \mbox{\hyperlink{classpecl6part1_1_1_persona_a4a61953407b3ad73a3dfcc9314f36d73}{ascensores}}\mbox{[}$\,$\mbox{]}, \mbox{\hyperlink{classpecl6part1_1_1_monitor}{Monitor}} \mbox{\hyperlink{classpecl6part1_1_1_persona_a5bad8cf9009a1412b98f0585761ba19a}{paso}})
+\item 
+int \mbox{\hyperlink{classpecl6part1_1_1_persona_a9a0fb957aa211a3d4afbe65250a70a82}{get\+Identificador}} ()
+\item 
+void \mbox{\hyperlink{classpecl6part1_1_1_persona_a7d2c417c463fe236125b25104de2c079}{set\+Identificador}} (int \mbox{\hyperlink{classpecl6part1_1_1_persona_a21697d6304f8709b939317b63daccdcc}{identificador}})
+\item 
+int \mbox{\hyperlink{classpecl6part1_1_1_persona_a82e55b6a597ab6cc0aa1d8fcfed9164b}{get\+Piso\+\_\+destino}} ()
+\item 
+void \mbox{\hyperlink{classpecl6part1_1_1_persona_a0449c51124b199b8a5b203aeff1385bc}{set\+Piso\+\_\+destino}} (int \mbox{\hyperlink{classpecl6part1_1_1_persona_a2601b87adc4d07c03478b8a5dec4289e}{piso\+\_\+destino}})
+\item 
+int \mbox{\hyperlink{classpecl6part1_1_1_persona_a0d9f25e9600c220763f05428a268c3d9}{get\+Piso\+\_\+origen}} ()
+\item 
+void \mbox{\hyperlink{classpecl6part1_1_1_persona_ac19fce12d96824b60a212e38bc532cf3}{set\+Piso\+\_\+origen}} (int \mbox{\hyperlink{classpecl6part1_1_1_persona_a6a8187e7b1c423eb263a336a573d634f}{piso\+\_\+origen}})
+\item 
+synchronized void \mbox{\hyperlink{classpecl6part1_1_1_persona_a1ee95a7bcb4b3cfe808d39c6db8dcc06}{esperar}} ()
+\item 
+synchronized void \mbox{\hyperlink{classpecl6part1_1_1_persona_a46859003cc6e2579a8f78d4c216a1082}{notificar}} ()
+\end{DoxyCompactItemize}
+\subsection*{Package Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpecl6part1_1_1_monitor}{Monitor}} \mbox{\hyperlink{classpecl6part1_1_1_persona_a5bad8cf9009a1412b98f0585761ba19a}{paso}}
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpecl6part1_1_1_planta}{Planta}} \mbox{\hyperlink{classpecl6part1_1_1_persona_aa5841c74449c09b7aa8e0c646365228d}{plantas}} \mbox{[}$\,$\mbox{]}
+\item 
+\mbox{\hyperlink{classpecl6part1_1_1_ascensor}{Ascensor}} \mbox{\hyperlink{classpecl6part1_1_1_persona_a4a61953407b3ad73a3dfcc9314f36d73}{ascensores}} \mbox{[}$\,$\mbox{]}
+\item 
+int \mbox{\hyperlink{classpecl6part1_1_1_persona_a21697d6304f8709b939317b63daccdcc}{identificador}}
+\item 
+int \mbox{\hyperlink{classpecl6part1_1_1_persona_a2601b87adc4d07c03478b8a5dec4289e}{piso\+\_\+destino}}
+\item 
+int \mbox{\hyperlink{classpecl6part1_1_1_persona_a6a8187e7b1c423eb263a336a573d634f}{piso\+\_\+origen}}
+\item 
+boolean \mbox{\hyperlink{classpecl6part1_1_1_persona_aaf35f4def1c5244a3e8d464a88e66243}{salir}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyAuthor}{Author}
+Ignacio 
+\end{DoxyAuthor}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classpecl6part1_1_1_persona_a81592bc70d6788bd895eda5b5d42a250}\label{classpecl6part1_1_1_persona_a81592bc70d6788bd895eda5b5d42a250}} 
+\index{pecl6part1\+::\+Persona@{pecl6part1\+::\+Persona}!Persona@{Persona}}
+\index{Persona@{Persona}!pecl6part1\+::\+Persona@{pecl6part1\+::\+Persona}}
+\subsubsection{\texorpdfstring{Persona()}{Persona()}}
+{\footnotesize\ttfamily pecl6part1.\+Persona.\+Persona (\begin{DoxyParamCaption}\item[{int}]{identificador,  }\item[{\mbox{\hyperlink{classpecl6part1_1_1_planta}{Planta}}}]{plantas\mbox{[}$\,$\mbox{]},  }\item[{\mbox{\hyperlink{classpecl6part1_1_1_ascensor}{Ascensor}}}]{ascensores\mbox{[}$\,$\mbox{]},  }\item[{\mbox{\hyperlink{classpecl6part1_1_1_monitor}{Monitor}}}]{paso }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+90     \{
+91         this.paso = \mbox{\hyperlink{classpecl6part1_1_1_persona_a5bad8cf9009a1412b98f0585761ba19a}{paso}};
+92         this.ascensores = \mbox{\hyperlink{classpecl6part1_1_1_persona_a4a61953407b3ad73a3dfcc9314f36d73}{ascensores}};
+93         this.plantas = \mbox{\hyperlink{classpecl6part1_1_1_persona_aa5841c74449c09b7aa8e0c646365228d}{plantas}};
+94         this.\mbox{\hyperlink{classpecl6part1_1_1_persona_a21697d6304f8709b939317b63daccdcc}{identificador}} = \mbox{\hyperlink{classpecl6part1_1_1_persona_a21697d6304f8709b939317b63daccdcc}{identificador}};
+95         this.\mbox{\hyperlink{classpecl6part1_1_1_persona_a6a8187e7b1c423eb263a336a573d634f}{piso\_origen}} = (int) (20*Math.random());
+96         \textcolor{keywordflow}{do}
+97         \{
+98             this.\mbox{\hyperlink{classpecl6part1_1_1_persona_a2601b87adc4d07c03478b8a5dec4289e}{piso\_destino}} = (int) (20*Math.random());
+99         \}\textcolor{keywordflow}{while}(\mbox{\hyperlink{classpecl6part1_1_1_persona_a6a8187e7b1c423eb263a336a573d634f}{piso\_origen}} == \mbox{\hyperlink{classpecl6part1_1_1_persona_a2601b87adc4d07c03478b8a5dec4289e}{piso\_destino}});
+100     \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classpecl6part1_1_1_persona_a1ee95a7bcb4b3cfe808d39c6db8dcc06}\label{classpecl6part1_1_1_persona_a1ee95a7bcb4b3cfe808d39c6db8dcc06}} 
+\index{pecl6part1\+::\+Persona@{pecl6part1\+::\+Persona}!esperar@{esperar}}
+\index{esperar@{esperar}!pecl6part1\+::\+Persona@{pecl6part1\+::\+Persona}}
+\subsubsection{\texorpdfstring{esperar()}{esperar()}}
+{\footnotesize\ttfamily synchronized void pecl6part1.\+Persona.\+esperar (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+127     \{
+128         \textcolor{keywordflow}{try} \{
+129             wait();
+130         \} \textcolor{keywordflow}{catch} (InterruptedException ex) \{
+131             Logger.getLogger(\mbox{\hyperlink{classpecl6part1_1_1_persona}{Persona}}.class.getName()).log(Level.SEVERE, null, ex);
+132         \}
+133     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classpecl6part1_1_1_persona_a9a0fb957aa211a3d4afbe65250a70a82}\label{classpecl6part1_1_1_persona_a9a0fb957aa211a3d4afbe65250a70a82}} 
+\index{pecl6part1\+::\+Persona@{pecl6part1\+::\+Persona}!get\+Identificador@{get\+Identificador}}
+\index{get\+Identificador@{get\+Identificador}!pecl6part1\+::\+Persona@{pecl6part1\+::\+Persona}}
+\subsubsection{\texorpdfstring{get\+Identificador()}{getIdentificador()}}
+{\footnotesize\ttfamily int pecl6part1.\+Persona.\+get\+Identificador (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+102                                   \{
+103         \textcolor{keywordflow}{return} \mbox{\hyperlink{classpecl6part1_1_1_persona_a21697d6304f8709b939317b63daccdcc}{identificador}};
+104     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classpecl6part1_1_1_persona_a82e55b6a597ab6cc0aa1d8fcfed9164b}\label{classpecl6part1_1_1_persona_a82e55b6a597ab6cc0aa1d8fcfed9164b}} 
+\index{pecl6part1\+::\+Persona@{pecl6part1\+::\+Persona}!get\+Piso\+\_\+destino@{get\+Piso\+\_\+destino}}
+\index{get\+Piso\+\_\+destino@{get\+Piso\+\_\+destino}!pecl6part1\+::\+Persona@{pecl6part1\+::\+Persona}}
+\subsubsection{\texorpdfstring{get\+Piso\+\_\+destino()}{getPiso\_destino()}}
+{\footnotesize\ttfamily int pecl6part1.\+Persona.\+get\+Piso\+\_\+destino (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+110                                  \{
+111         \textcolor{keywordflow}{return} \mbox{\hyperlink{classpecl6part1_1_1_persona_a2601b87adc4d07c03478b8a5dec4289e}{piso\_destino}};
+112     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classpecl6part1_1_1_persona_a0d9f25e9600c220763f05428a268c3d9}\label{classpecl6part1_1_1_persona_a0d9f25e9600c220763f05428a268c3d9}} 
+\index{pecl6part1\+::\+Persona@{pecl6part1\+::\+Persona}!get\+Piso\+\_\+origen@{get\+Piso\+\_\+origen}}
+\index{get\+Piso\+\_\+origen@{get\+Piso\+\_\+origen}!pecl6part1\+::\+Persona@{pecl6part1\+::\+Persona}}
+\subsubsection{\texorpdfstring{get\+Piso\+\_\+origen()}{getPiso\_origen()}}
+{\footnotesize\ttfamily int pecl6part1.\+Persona.\+get\+Piso\+\_\+origen (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+118                                 \{
+119         \textcolor{keywordflow}{return} \mbox{\hyperlink{classpecl6part1_1_1_persona_a6a8187e7b1c423eb263a336a573d634f}{piso\_origen}};
+120     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classpecl6part1_1_1_persona_a46859003cc6e2579a8f78d4c216a1082}\label{classpecl6part1_1_1_persona_a46859003cc6e2579a8f78d4c216a1082}} 
+\index{pecl6part1\+::\+Persona@{pecl6part1\+::\+Persona}!notificar@{notificar}}
+\index{notificar@{notificar}!pecl6part1\+::\+Persona@{pecl6part1\+::\+Persona}}
+\subsubsection{\texorpdfstring{notificar()}{notificar()}}
+{\footnotesize\ttfamily synchronized void pecl6part1.\+Persona.\+notificar (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+136     \{
+137         notifyAll();
+138     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classpecl6part1_1_1_persona_ad51df606a3a8ed3e880c3405209ae188}\label{classpecl6part1_1_1_persona_ad51df606a3a8ed3e880c3405209ae188}} 
+\index{pecl6part1\+::\+Persona@{pecl6part1\+::\+Persona}!run@{run}}
+\index{run@{run}!pecl6part1\+::\+Persona@{pecl6part1\+::\+Persona}}
+\subsubsection{\texorpdfstring{run()}{run()}}
+{\footnotesize\ttfamily void pecl6part1.\+Persona.\+run (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+33     \{
+34         \textcolor{comment}{//lo que hará la persona}
+35         \textcolor{comment}{//tiene que pulsar el boton, }
+36         \mbox{\hyperlink{classpecl6part1_1_1_persona_aaf35f4def1c5244a3e8d464a88e66243}{salir}} = \textcolor{keyword}{false};
+37         \textcolor{keywordtype}{boolean} aux = \textcolor{keyword}{false};
+38         \textcolor{keywordflow}{if}(!\mbox{\hyperlink{classpecl6part1_1_1_persona_aa5841c74449c09b7aa8e0c646365228d}{plantas}}[\mbox{\hyperlink{classpecl6part1_1_1_persona_a6a8187e7b1c423eb263a336a573d634f}{piso\_origen}}].botonPulsado)
+39         \{
+40             \mbox{\hyperlink{classpecl6part1_1_1_persona_aa5841c74449c09b7aa8e0c646365228d}{plantas}}[\mbox{\hyperlink{classpecl6part1_1_1_persona_a6a8187e7b1c423eb263a336a573d634f}{piso\_origen}}].\mbox{\hyperlink{classpecl6part1_1_1_planta_a064fad4a92526db34d23f3cd8cbdbee8}{pulsarBoton}}();
+41         \}
+42         
+43         \textcolor{keywordflow}{while}(!\mbox{\hyperlink{classpecl6part1_1_1_persona_aaf35f4def1c5244a3e8d464a88e66243}{salir}})
+44         \{
+45             \textcolor{comment}{//si el boton de tu planta no esta pulsado y tu no estas en el ascensor, lo pulsas}
+46             \textcolor{keywordflow}{if}(!\mbox{\hyperlink{classpecl6part1_1_1_persona_aa5841c74449c09b7aa8e0c646365228d}{plantas}}[\mbox{\hyperlink{classpecl6part1_1_1_persona_a6a8187e7b1c423eb263a336a573d634f}{piso\_origen}}].botonPulsado && !
+      \mbox{\hyperlink{classpecl6part1_1_1_persona_a4a61953407b3ad73a3dfcc9314f36d73}{ascensores}}[\mbox{\hyperlink{classpecl6part1_1_1_persona_a5bad8cf9009a1412b98f0585761ba19a}{paso}}.\mbox{\hyperlink{classpecl6part1_1_1_monitor_a6a25fb9f29d59a43156c1c2413d3b5f0}{ascensor}}].\mbox{\hyperlink{classpecl6part1_1_1_ascensor_af9df13b79ebb74d8db4277d32c7c2bf5}{estoyEnElAscensor}}(\textcolor{keyword}{this}))
+47             \{
+48                 \mbox{\hyperlink{classpecl6part1_1_1_persona_aa5841c74449c09b7aa8e0c646365228d}{plantas}}[\mbox{\hyperlink{classpecl6part1_1_1_persona_a6a8187e7b1c423eb263a336a573d634f}{piso\_origen}}].\mbox{\hyperlink{classpecl6part1_1_1_planta_a064fad4a92526db34d23f3cd8cbdbee8}{pulsarBoton}}();
+49             \}
+50             
+51             \textcolor{keywordflow}{if}(\mbox{\hyperlink{classpecl6part1_1_1_persona_a4a61953407b3ad73a3dfcc9314f36d73}{ascensores}}[\mbox{\hyperlink{classpecl6part1_1_1_persona_a5bad8cf9009a1412b98f0585761ba19a}{paso}}.\mbox{\hyperlink{classpecl6part1_1_1_monitor_a6a25fb9f29d59a43156c1c2413d3b5f0}{ascensor}}].\mbox{\hyperlink{classpecl6part1_1_1_ascensor_a580b836287ba07c6658c03a5e35fbbdb}{planta}} == \textcolor{keyword}{this}.piso\_origen && !
+      \mbox{\hyperlink{classpecl6part1_1_1_persona_a4a61953407b3ad73a3dfcc9314f36d73}{ascensores}}[\mbox{\hyperlink{classpecl6part1_1_1_persona_a5bad8cf9009a1412b98f0585761ba19a}{paso}}.\mbox{\hyperlink{classpecl6part1_1_1_monitor_a6a25fb9f29d59a43156c1c2413d3b5f0}{ascensor}}].\mbox{\hyperlink{classpecl6part1_1_1_ascensor_af9df13b79ebb74d8db4277d32c7c2bf5}{estoyEnElAscensor}}(\textcolor{keyword}{this}))
+52             \{
+53                 aux = \mbox{\hyperlink{classpecl6part1_1_1_persona_a4a61953407b3ad73a3dfcc9314f36d73}{ascensores}}[\mbox{\hyperlink{classpecl6part1_1_1_persona_a5bad8cf9009a1412b98f0585761ba19a}{paso}}.\mbox{\hyperlink{classpecl6part1_1_1_monitor_a6a25fb9f29d59a43156c1c2413d3b5f0}{ascensor}}].\mbox{\hyperlink{classpecl6part1_1_1_ascensor_a6a9eff62048897df3cd1a4c1ffd3d979}{entrar}}(\textcolor{keyword}{this});
+54                 \textcolor{keywordflow}{if}(aux)\textcolor{comment}{//si ha entrado pone el boton a false}
+55                 \{
+56                     \mbox{\hyperlink{classpecl6part1_1_1_persona_aa5841c74449c09b7aa8e0c646365228d}{plantas}}[\mbox{\hyperlink{classpecl6part1_1_1_persona_a6a8187e7b1c423eb263a336a573d634f}{piso\_origen}}].\mbox{\hyperlink{classpecl6part1_1_1_planta_a9ce4c06f0a59be9998b7bf71a1fa94c1}{botonPulsado}} = \textcolor{keyword}{false};
+57                 \}
+58                 \mbox{\hyperlink{classpecl6part1_1_1_persona_a5bad8cf9009a1412b98f0585761ba19a}{paso}}.\mbox{\hyperlink{classpecl6part1_1_1_monitor_a512e31c5c3891662a9d7dcaa2280afe6}{esperar}}();
+59             \}\textcolor{keywordflow}{else}
+60             \{
+61                 \textcolor{keywordflow}{if}(\mbox{\hyperlink{classpecl6part1_1_1_persona_a4a61953407b3ad73a3dfcc9314f36d73}{ascensores}}[\mbox{\hyperlink{classpecl6part1_1_1_persona_a5bad8cf9009a1412b98f0585761ba19a}{paso}}.\mbox{\hyperlink{classpecl6part1_1_1_monitor_a6a25fb9f29d59a43156c1c2413d3b5f0}{ascensor}}].
+      \mbox{\hyperlink{classpecl6part1_1_1_ascensor_af9df13b79ebb74d8db4277d32c7c2bf5}{estoyEnElAscensor}}(\textcolor{keyword}{this}) && \mbox{\hyperlink{classpecl6part1_1_1_persona_a4a61953407b3ad73a3dfcc9314f36d73}{ascensores}}[\mbox{\hyperlink{classpecl6part1_1_1_persona_a5bad8cf9009a1412b98f0585761ba19a}{paso}}.
+      \mbox{\hyperlink{classpecl6part1_1_1_monitor_a6a25fb9f29d59a43156c1c2413d3b5f0}{ascensor}}].\mbox{\hyperlink{classpecl6part1_1_1_ascensor_a580b836287ba07c6658c03a5e35fbbdb}{planta}} == this.\mbox{\hyperlink{classpecl6part1_1_1_persona_a2601b87adc4d07c03478b8a5dec4289e}{piso\_destino}})
+62                 \{
+63                     \mbox{\hyperlink{classpecl6part1_1_1_persona_a4a61953407b3ad73a3dfcc9314f36d73}{ascensores}}[\mbox{\hyperlink{classpecl6part1_1_1_persona_a5bad8cf9009a1412b98f0585761ba19a}{paso}}.\mbox{\hyperlink{classpecl6part1_1_1_monitor_a6a25fb9f29d59a43156c1c2413d3b5f0}{ascensor}}].\mbox{\hyperlink{classpecl6part1_1_1_ascensor_a1a2339117b608f4b270c60e12e0bea57}{salir}}(\textcolor{keyword}{this});
+64                     \mbox{\hyperlink{classpecl6part1_1_1_persona_a5bad8cf9009a1412b98f0585761ba19a}{paso}}.\mbox{\hyperlink{classpecl6part1_1_1_monitor_afd6c7d222a3849b8406f0f20ab7a2302}{incrementar}}();
+65                     \mbox{\hyperlink{classpecl6part1_1_1_persona_a5bad8cf9009a1412b98f0585761ba19a}{paso}}.\mbox{\hyperlink{classpecl6part1_1_1_monitor_a0d517f29c1d3a1bcc10a0fc80283a342}{notificar}}();
+66                     this.\mbox{\hyperlink{classpecl6part1_1_1_persona_aa12dc3804209c0efb920b2fda7d1fbbd}{terminar}}();
+67                     \textcolor{keywordflow}{try} \{
+68                         this.finalize();
+69                     \} \textcolor{keywordflow}{catch} (Throwable ex) \{
+70                         Logger.getLogger(\mbox{\hyperlink{classpecl6part1_1_1_persona}{Persona}}.class.getName()).log(Level.SEVERE, null, ex);
+71                     \}
+72                 \}
+73                 \textcolor{keywordflow}{else}
+74                 \{
+75                     \textcolor{keywordflow}{if}(!\mbox{\hyperlink{classpecl6part1_1_1_persona_a4a61953407b3ad73a3dfcc9314f36d73}{ascensores}}[\mbox{\hyperlink{classpecl6part1_1_1_persona_a5bad8cf9009a1412b98f0585761ba19a}{paso}}.\mbox{\hyperlink{classpecl6part1_1_1_monitor_a6a25fb9f29d59a43156c1c2413d3b5f0}{ascensor}}].
+      \mbox{\hyperlink{classpecl6part1_1_1_ascensor_af9df13b79ebb74d8db4277d32c7c2bf5}{estoyEnElAscensor}}(\textcolor{keyword}{this}))
+76                     \{
+77                     \mbox{\hyperlink{classpecl6part1_1_1_persona_aa5841c74449c09b7aa8e0c646365228d}{plantas}}[\mbox{\hyperlink{classpecl6part1_1_1_persona_a6a8187e7b1c423eb263a336a573d634f}{piso\_origen}}].\mbox{\hyperlink{classpecl6part1_1_1_planta_a064fad4a92526db34d23f3cd8cbdbee8}{pulsarBoton}}();
+78                     \}
+79                     \mbox{\hyperlink{classpecl6part1_1_1_persona_a5bad8cf9009a1412b98f0585761ba19a}{paso}}.\mbox{\hyperlink{classpecl6part1_1_1_monitor_a512e31c5c3891662a9d7dcaa2280afe6}{esperar}}();
+80                 \}
+81             \}
+82         \}
+83         \textcolor{comment}{//mientras no este el ascensor en su planta esperara, si esta en su planta y esta lleno volverá a
+       esperar}
+84         \textcolor{comment}{//una vez dentro comprobara si es su piso en cada piso, cuando sea el suyo saldrá}
+85         
+86         
+87     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classpecl6part1_1_1_persona_a7d2c417c463fe236125b25104de2c079}\label{classpecl6part1_1_1_persona_a7d2c417c463fe236125b25104de2c079}} 
+\index{pecl6part1\+::\+Persona@{pecl6part1\+::\+Persona}!set\+Identificador@{set\+Identificador}}
+\index{set\+Identificador@{set\+Identificador}!pecl6part1\+::\+Persona@{pecl6part1\+::\+Persona}}
+\subsubsection{\texorpdfstring{set\+Identificador()}{setIdentificador()}}
+{\footnotesize\ttfamily void pecl6part1.\+Persona.\+set\+Identificador (\begin{DoxyParamCaption}\item[{int}]{identificador }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+106                                                     \{
+107         this.\mbox{\hyperlink{classpecl6part1_1_1_persona_a21697d6304f8709b939317b63daccdcc}{identificador}} = \mbox{\hyperlink{classpecl6part1_1_1_persona_a21697d6304f8709b939317b63daccdcc}{identificador}};
+108     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classpecl6part1_1_1_persona_a0449c51124b199b8a5b203aeff1385bc}\label{classpecl6part1_1_1_persona_a0449c51124b199b8a5b203aeff1385bc}} 
+\index{pecl6part1\+::\+Persona@{pecl6part1\+::\+Persona}!set\+Piso\+\_\+destino@{set\+Piso\+\_\+destino}}
+\index{set\+Piso\+\_\+destino@{set\+Piso\+\_\+destino}!pecl6part1\+::\+Persona@{pecl6part1\+::\+Persona}}
+\subsubsection{\texorpdfstring{set\+Piso\+\_\+destino()}{setPiso\_destino()}}
+{\footnotesize\ttfamily void pecl6part1.\+Persona.\+set\+Piso\+\_\+destino (\begin{DoxyParamCaption}\item[{int}]{piso\+\_\+destino }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+114                                                   \{
+115         this.\mbox{\hyperlink{classpecl6part1_1_1_persona_a2601b87adc4d07c03478b8a5dec4289e}{piso\_destino}} = \mbox{\hyperlink{classpecl6part1_1_1_persona_a2601b87adc4d07c03478b8a5dec4289e}{piso\_destino}};
+116     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classpecl6part1_1_1_persona_ac19fce12d96824b60a212e38bc532cf3}\label{classpecl6part1_1_1_persona_ac19fce12d96824b60a212e38bc532cf3}} 
+\index{pecl6part1\+::\+Persona@{pecl6part1\+::\+Persona}!set\+Piso\+\_\+origen@{set\+Piso\+\_\+origen}}
+\index{set\+Piso\+\_\+origen@{set\+Piso\+\_\+origen}!pecl6part1\+::\+Persona@{pecl6part1\+::\+Persona}}
+\subsubsection{\texorpdfstring{set\+Piso\+\_\+origen()}{setPiso\_origen()}}
+{\footnotesize\ttfamily void pecl6part1.\+Persona.\+set\+Piso\+\_\+origen (\begin{DoxyParamCaption}\item[{int}]{piso\+\_\+origen }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+122                                                 \{
+123         this.\mbox{\hyperlink{classpecl6part1_1_1_persona_a6a8187e7b1c423eb263a336a573d634f}{piso\_origen}} = \mbox{\hyperlink{classpecl6part1_1_1_persona_a6a8187e7b1c423eb263a336a573d634f}{piso\_origen}};
+124     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classpecl6part1_1_1_persona_aa12dc3804209c0efb920b2fda7d1fbbd}\label{classpecl6part1_1_1_persona_aa12dc3804209c0efb920b2fda7d1fbbd}} 
+\index{pecl6part1\+::\+Persona@{pecl6part1\+::\+Persona}!terminar@{terminar}}
+\index{terminar@{terminar}!pecl6part1\+::\+Persona@{pecl6part1\+::\+Persona}}
+\subsubsection{\texorpdfstring{terminar()}{terminar()}}
+{\footnotesize\ttfamily void pecl6part1.\+Persona.\+terminar (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+28     \{
+29         \mbox{\hyperlink{classpecl6part1_1_1_persona_aaf35f4def1c5244a3e8d464a88e66243}{salir}} = \textcolor{keyword}{true};
+30     \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classpecl6part1_1_1_persona_a4a61953407b3ad73a3dfcc9314f36d73}\label{classpecl6part1_1_1_persona_a4a61953407b3ad73a3dfcc9314f36d73}} 
+\index{pecl6part1\+::\+Persona@{pecl6part1\+::\+Persona}!ascensores@{ascensores}}
+\index{ascensores@{ascensores}!pecl6part1\+::\+Persona@{pecl6part1\+::\+Persona}}
+\subsubsection{\texorpdfstring{ascensores}{ascensores}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classpecl6part1_1_1_ascensor}{Ascensor}} pecl6part1.\+Persona.\+ascensores\mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classpecl6part1_1_1_persona_a21697d6304f8709b939317b63daccdcc}\label{classpecl6part1_1_1_persona_a21697d6304f8709b939317b63daccdcc}} 
+\index{pecl6part1\+::\+Persona@{pecl6part1\+::\+Persona}!identificador@{identificador}}
+\index{identificador@{identificador}!pecl6part1\+::\+Persona@{pecl6part1\+::\+Persona}}
+\subsubsection{\texorpdfstring{identificador}{identificador}}
+{\footnotesize\ttfamily int pecl6part1.\+Persona.\+identificador\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classpecl6part1_1_1_persona_a5bad8cf9009a1412b98f0585761ba19a}\label{classpecl6part1_1_1_persona_a5bad8cf9009a1412b98f0585761ba19a}} 
+\index{pecl6part1\+::\+Persona@{pecl6part1\+::\+Persona}!paso@{paso}}
+\index{paso@{paso}!pecl6part1\+::\+Persona@{pecl6part1\+::\+Persona}}
+\subsubsection{\texorpdfstring{paso}{paso}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classpecl6part1_1_1_monitor}{Monitor}} pecl6part1.\+Persona.\+paso\hspace{0.3cm}{\ttfamily [package]}}
+
+\mbox{\Hypertarget{classpecl6part1_1_1_persona_a2601b87adc4d07c03478b8a5dec4289e}\label{classpecl6part1_1_1_persona_a2601b87adc4d07c03478b8a5dec4289e}} 
+\index{pecl6part1\+::\+Persona@{pecl6part1\+::\+Persona}!piso\+\_\+destino@{piso\+\_\+destino}}
+\index{piso\+\_\+destino@{piso\+\_\+destino}!pecl6part1\+::\+Persona@{pecl6part1\+::\+Persona}}
+\subsubsection{\texorpdfstring{piso\+\_\+destino}{piso\_destino}}
+{\footnotesize\ttfamily int pecl6part1.\+Persona.\+piso\+\_\+destino\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classpecl6part1_1_1_persona_a6a8187e7b1c423eb263a336a573d634f}\label{classpecl6part1_1_1_persona_a6a8187e7b1c423eb263a336a573d634f}} 
+\index{pecl6part1\+::\+Persona@{pecl6part1\+::\+Persona}!piso\+\_\+origen@{piso\+\_\+origen}}
+\index{piso\+\_\+origen@{piso\+\_\+origen}!pecl6part1\+::\+Persona@{pecl6part1\+::\+Persona}}
+\subsubsection{\texorpdfstring{piso\+\_\+origen}{piso\_origen}}
+{\footnotesize\ttfamily int pecl6part1.\+Persona.\+piso\+\_\+origen\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classpecl6part1_1_1_persona_aa5841c74449c09b7aa8e0c646365228d}\label{classpecl6part1_1_1_persona_aa5841c74449c09b7aa8e0c646365228d}} 
+\index{pecl6part1\+::\+Persona@{pecl6part1\+::\+Persona}!plantas@{plantas}}
+\index{plantas@{plantas}!pecl6part1\+::\+Persona@{pecl6part1\+::\+Persona}}
+\subsubsection{\texorpdfstring{plantas}{plantas}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classpecl6part1_1_1_planta}{Planta}} pecl6part1.\+Persona.\+plantas\mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classpecl6part1_1_1_persona_aaf35f4def1c5244a3e8d464a88e66243}\label{classpecl6part1_1_1_persona_aaf35f4def1c5244a3e8d464a88e66243}} 
+\index{pecl6part1\+::\+Persona@{pecl6part1\+::\+Persona}!salir@{salir}}
+\index{salir@{salir}!pecl6part1\+::\+Persona@{pecl6part1\+::\+Persona}}
+\subsubsection{\texorpdfstring{salir}{salir}}
+{\footnotesize\ttfamily boolean pecl6part1.\+Persona.\+salir\hspace{0.3cm}{\ttfamily [private]}}
+

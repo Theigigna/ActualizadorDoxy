@@ -1,0 +1,55 @@
+\hypertarget{interfaceorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_path_finder}{}\section{org.\+newdawn.\+slick.\+util.\+pathfinding.\+Path\+Finder Interface Reference}
+\label{interfaceorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_path_finder}\index{org.\+newdawn.\+slick.\+util.\+pathfinding.\+Path\+Finder@{org.\+newdawn.\+slick.\+util.\+pathfinding.\+Path\+Finder}}
+Inheritance diagram for org.\+newdawn.\+slick.\+util.\+pathfinding.\+Path\+Finder\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interfaceorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_path_finder}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_path}{Path}} \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_path_finder_a74ba20251bc78c37f91821c71a97a58d}{find\+Path}} (\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_mover}{Mover}} mover, int sx, int sy, int tx, int ty)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A description of an implementation that can find a path from one location on a tile map to another based on information provided by that tile map.
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_tile_based_map}{Tile\+Based\+Map}} 
+\end{DoxySeeAlso}
+\begin{DoxyAuthor}{Author}
+Kevin Glass 
+\end{DoxyAuthor}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{interfaceorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_path_finder_a74ba20251bc78c37f91821c71a97a58d}\label{interfaceorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_path_finder_a74ba20251bc78c37f91821c71a97a58d}} 
+\index{org\+::newdawn\+::slick\+::util\+::pathfinding\+::\+Path\+Finder@{org\+::newdawn\+::slick\+::util\+::pathfinding\+::\+Path\+Finder}!find\+Path@{find\+Path}}
+\index{find\+Path@{find\+Path}!org\+::newdawn\+::slick\+::util\+::pathfinding\+::\+Path\+Finder@{org\+::newdawn\+::slick\+::util\+::pathfinding\+::\+Path\+Finder}}
+\subsubsection{\texorpdfstring{find\+Path()}{findPath()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_path}{Path}} org.\+newdawn.\+slick.\+util.\+pathfinding.\+Path\+Finder.\+find\+Path (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_mover}{Mover}}}]{mover,  }\item[{int}]{sx,  }\item[{int}]{sy,  }\item[{int}]{tx,  }\item[{int}]{ty }\end{DoxyParamCaption})}
+
+Find a path from the starting location provided (sx,sy) to the target location (tx,ty) avoiding blockages and attempting to honour costs provided by the tile map.
+
+
+\begin{DoxyParams}{Parameters}
+{\em mover} & The entity that will be moving along the path. This provides a place to pass context information about the game entity doing the moving, e.\+g. can it fly? can it swim etc.\\
+\hline
+{\em sx} & The x coordinate of the start location \\
+\hline
+{\em sy} & The y coordinate of the start location \\
+\hline
+{\em tx} & The x coordinate of the target location \\
+\hline
+{\em ty} & Teh y coordinate of the target location \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The path found from start to end, or null if no path can be found. 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_path_finder_a603b1ac6a40ac99d3bc38740f46b2706}{org.\+newdawn.\+slick.\+util.\+pathfinding.\+A\+Star\+Path\+Finder}}.
+

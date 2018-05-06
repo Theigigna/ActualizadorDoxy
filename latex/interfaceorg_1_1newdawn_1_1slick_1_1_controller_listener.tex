@@ -1,0 +1,216 @@
+\hypertarget{interfaceorg_1_1newdawn_1_1slick_1_1_controller_listener}{}\section{org.\+newdawn.\+slick.\+Controller\+Listener Interface Reference}
+\label{interfaceorg_1_1newdawn_1_1slick_1_1_controller_listener}\index{org.\+newdawn.\+slick.\+Controller\+Listener@{org.\+newdawn.\+slick.\+Controller\+Listener}}
+Inheritance diagram for org.\+newdawn.\+slick.\+Controller\+Listener\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=12.000000cm]{interfaceorg_1_1newdawn_1_1slick_1_1_controller_listener}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+abstract void \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1_controller_listener_abfb38c5d8e44b7613a49cbfaf19d5585}{controller\+Left\+Pressed}} (int controller)
+\item 
+abstract void \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1_controller_listener_ad2f898f0efe21771a0d9568c454dea0d}{controller\+Left\+Released}} (int controller)
+\item 
+abstract void \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1_controller_listener_ae4ac64996df9778c4987705275792780}{controller\+Right\+Pressed}} (int controller)
+\item 
+abstract void \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1_controller_listener_a33ee418e010e69783169b3f52fb62c3b}{controller\+Right\+Released}} (int controller)
+\item 
+abstract void \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1_controller_listener_a7cb917761de1e555b23469042b6f1e03}{controller\+Up\+Pressed}} (int controller)
+\item 
+abstract void \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1_controller_listener_a1342ad9ad1f7314b4eb10c20c21a9d50}{controller\+Up\+Released}} (int controller)
+\item 
+abstract void \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1_controller_listener_a9c619e7cb29b3c8b68bc24f9a4e238d7}{controller\+Down\+Pressed}} (int controller)
+\item 
+abstract void \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1_controller_listener_a7d0ca99c8cd5b0d332bece1d17befee7}{controller\+Down\+Released}} (int controller)
+\item 
+abstract void \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1_controller_listener_ae6feac165a8d0eded01f38de12f239ff}{controller\+Button\+Pressed}} (int controller, int button)
+\item 
+abstract void \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1_controller_listener_a34020453a6c40e12b149c334a4adc246}{controller\+Button\+Released}} (int controller, int button)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Description of classes capable of responding to controller events
+
+\begin{DoxyAuthor}{Author}
+kevin 
+\end{DoxyAuthor}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{interfaceorg_1_1newdawn_1_1slick_1_1_controller_listener_ae6feac165a8d0eded01f38de12f239ff}\label{interfaceorg_1_1newdawn_1_1slick_1_1_controller_listener_ae6feac165a8d0eded01f38de12f239ff}} 
+\index{org\+::newdawn\+::slick\+::\+Controller\+Listener@{org\+::newdawn\+::slick\+::\+Controller\+Listener}!controller\+Button\+Pressed@{controller\+Button\+Pressed}}
+\index{controller\+Button\+Pressed@{controller\+Button\+Pressed}!org\+::newdawn\+::slick\+::\+Controller\+Listener@{org\+::newdawn\+::slick\+::\+Controller\+Listener}}
+\subsubsection{\texorpdfstring{controller\+Button\+Pressed()}{controllerButtonPressed()}}
+{\footnotesize\ttfamily abstract void org.\+newdawn.\+slick.\+Controller\+Listener.\+controller\+Button\+Pressed (\begin{DoxyParamCaption}\item[{int}]{controller,  }\item[{int}]{button }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}}
+
+Notification that a button control has been pressed on the controller.
+
+
+\begin{DoxyParams}{Parameters}
+{\em controller} & The index of the controller on which the control was pressed. \\
+\hline
+{\em button} & The index of the button pressed (starting at 1) \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1command_1_1_input_provider_1_1_input_listener_impl_a73f1147258038fc20b2a61aebc2096a3}{org.\+newdawn.\+slick.\+command.\+Input\+Provider.\+Input\+Listener\+Impl}}, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1_state_based_game_a86b1ef633750d400262209bd8d6c2059}{org.\+newdawn.\+slick.\+state.\+State\+Based\+Game}}, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_input_test_a7b7b3c980b5b222fbcec4eb5ff5b2590}{org.\+newdawn.\+slick.\+tests.\+Input\+Test}}, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_test_box_a26fb5a8be9ff46cb1a0d0e4bd0cff1f0}{org.\+newdawn.\+slick.\+tests.\+Test\+Box}}, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_basic_game_a9d83c85e4046945a3459debf55079697}{org.\+newdawn.\+slick.\+Basic\+Game}}, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1_basic_game_state_ace9fde4bc57f608d957efc97667b8a6d}{org.\+newdawn.\+slick.\+state.\+Basic\+Game\+State}}, and \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1_input_adapter_ad51a716fce13f062b7bef542c2d7641a}{org.\+newdawn.\+slick.\+util.\+Input\+Adapter}}.
+
+\mbox{\Hypertarget{interfaceorg_1_1newdawn_1_1slick_1_1_controller_listener_a34020453a6c40e12b149c334a4adc246}\label{interfaceorg_1_1newdawn_1_1slick_1_1_controller_listener_a34020453a6c40e12b149c334a4adc246}} 
+\index{org\+::newdawn\+::slick\+::\+Controller\+Listener@{org\+::newdawn\+::slick\+::\+Controller\+Listener}!controller\+Button\+Released@{controller\+Button\+Released}}
+\index{controller\+Button\+Released@{controller\+Button\+Released}!org\+::newdawn\+::slick\+::\+Controller\+Listener@{org\+::newdawn\+::slick\+::\+Controller\+Listener}}
+\subsubsection{\texorpdfstring{controller\+Button\+Released()}{controllerButtonReleased()}}
+{\footnotesize\ttfamily abstract void org.\+newdawn.\+slick.\+Controller\+Listener.\+controller\+Button\+Released (\begin{DoxyParamCaption}\item[{int}]{controller,  }\item[{int}]{button }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}}
+
+Notification that a button control has been released on the controller.
+
+
+\begin{DoxyParams}{Parameters}
+{\em controller} & The index of the controller on which the control was released. \\
+\hline
+{\em button} & The index of the button released (starting at 1) \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1command_1_1_input_provider_1_1_input_listener_impl_a32ba61e40693153639ad65623c4e9f4c}{org.\+newdawn.\+slick.\+command.\+Input\+Provider.\+Input\+Listener\+Impl}}, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1_state_based_game_a83c8be949774abfd63a5837422c6f8fc}{org.\+newdawn.\+slick.\+state.\+State\+Based\+Game}}, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_test_box_a86db5c38f8964e3e401bc42b60562a42}{org.\+newdawn.\+slick.\+tests.\+Test\+Box}}, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_basic_game_ad979755eccbdc2959289f001b2c26bda}{org.\+newdawn.\+slick.\+Basic\+Game}}, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1_basic_game_state_a46c12ac651bb0a6d442068b3b448b9c1}{org.\+newdawn.\+slick.\+state.\+Basic\+Game\+State}}, and \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1_input_adapter_ab67126cbafdf4803d88270e945553019}{org.\+newdawn.\+slick.\+util.\+Input\+Adapter}}.
+
+\mbox{\Hypertarget{interfaceorg_1_1newdawn_1_1slick_1_1_controller_listener_a9c619e7cb29b3c8b68bc24f9a4e238d7}\label{interfaceorg_1_1newdawn_1_1slick_1_1_controller_listener_a9c619e7cb29b3c8b68bc24f9a4e238d7}} 
+\index{org\+::newdawn\+::slick\+::\+Controller\+Listener@{org\+::newdawn\+::slick\+::\+Controller\+Listener}!controller\+Down\+Pressed@{controller\+Down\+Pressed}}
+\index{controller\+Down\+Pressed@{controller\+Down\+Pressed}!org\+::newdawn\+::slick\+::\+Controller\+Listener@{org\+::newdawn\+::slick\+::\+Controller\+Listener}}
+\subsubsection{\texorpdfstring{controller\+Down\+Pressed()}{controllerDownPressed()}}
+{\footnotesize\ttfamily abstract void org.\+newdawn.\+slick.\+Controller\+Listener.\+controller\+Down\+Pressed (\begin{DoxyParamCaption}\item[{int}]{controller }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}}
+
+Notification that the down control has been pressed on the controller.
+
+
+\begin{DoxyParams}{Parameters}
+{\em controller} & The index of the controller on which the control was pressed. \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1command_1_1_input_provider_1_1_input_listener_impl_a80dbef3f0eaed865ae1ef23b406cea40}{org.\+newdawn.\+slick.\+command.\+Input\+Provider.\+Input\+Listener\+Impl}}, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1_state_based_game_a3132de3950587a94bc059b40b5a7a703}{org.\+newdawn.\+slick.\+state.\+State\+Based\+Game}}, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_test_box_aa84a23e65a7987d83d2b555dce79076d}{org.\+newdawn.\+slick.\+tests.\+Test\+Box}}, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_basic_game_af4db3e5b864b3ee179de6935184727ac}{org.\+newdawn.\+slick.\+Basic\+Game}}, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1_basic_game_state_a8783d6be13e8d476cb035af5e740803a}{org.\+newdawn.\+slick.\+state.\+Basic\+Game\+State}}, and \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1_input_adapter_af48b82447762dff2bc4b171d51468f1a}{org.\+newdawn.\+slick.\+util.\+Input\+Adapter}}.
+
+\mbox{\Hypertarget{interfaceorg_1_1newdawn_1_1slick_1_1_controller_listener_a7d0ca99c8cd5b0d332bece1d17befee7}\label{interfaceorg_1_1newdawn_1_1slick_1_1_controller_listener_a7d0ca99c8cd5b0d332bece1d17befee7}} 
+\index{org\+::newdawn\+::slick\+::\+Controller\+Listener@{org\+::newdawn\+::slick\+::\+Controller\+Listener}!controller\+Down\+Released@{controller\+Down\+Released}}
+\index{controller\+Down\+Released@{controller\+Down\+Released}!org\+::newdawn\+::slick\+::\+Controller\+Listener@{org\+::newdawn\+::slick\+::\+Controller\+Listener}}
+\subsubsection{\texorpdfstring{controller\+Down\+Released()}{controllerDownReleased()}}
+{\footnotesize\ttfamily abstract void org.\+newdawn.\+slick.\+Controller\+Listener.\+controller\+Down\+Released (\begin{DoxyParamCaption}\item[{int}]{controller }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}}
+
+Notification that the down control has been released on the controller.
+
+
+\begin{DoxyParams}{Parameters}
+{\em controller} & The index of the controller on which the control was released. \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1command_1_1_input_provider_1_1_input_listener_impl_a088db9874120ee50128d286f0c2f4d87}{org.\+newdawn.\+slick.\+command.\+Input\+Provider.\+Input\+Listener\+Impl}}, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1_state_based_game_a510241b92e4f3670e04d240ecc5b797a}{org.\+newdawn.\+slick.\+state.\+State\+Based\+Game}}, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_test_box_af8a047e0bfc8291159b6bdd5b5158dc3}{org.\+newdawn.\+slick.\+tests.\+Test\+Box}}, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_basic_game_a8953e34950de681231d62cb8e7297263}{org.\+newdawn.\+slick.\+Basic\+Game}}, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1_basic_game_state_a8e728a45fed4846429f29299f4dba44f}{org.\+newdawn.\+slick.\+state.\+Basic\+Game\+State}}, and \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1_input_adapter_a6cb307438dc81cba0ec7a9f6b4dbc887}{org.\+newdawn.\+slick.\+util.\+Input\+Adapter}}.
+
+\mbox{\Hypertarget{interfaceorg_1_1newdawn_1_1slick_1_1_controller_listener_abfb38c5d8e44b7613a49cbfaf19d5585}\label{interfaceorg_1_1newdawn_1_1slick_1_1_controller_listener_abfb38c5d8e44b7613a49cbfaf19d5585}} 
+\index{org\+::newdawn\+::slick\+::\+Controller\+Listener@{org\+::newdawn\+::slick\+::\+Controller\+Listener}!controller\+Left\+Pressed@{controller\+Left\+Pressed}}
+\index{controller\+Left\+Pressed@{controller\+Left\+Pressed}!org\+::newdawn\+::slick\+::\+Controller\+Listener@{org\+::newdawn\+::slick\+::\+Controller\+Listener}}
+\subsubsection{\texorpdfstring{controller\+Left\+Pressed()}{controllerLeftPressed()}}
+{\footnotesize\ttfamily abstract void org.\+newdawn.\+slick.\+Controller\+Listener.\+controller\+Left\+Pressed (\begin{DoxyParamCaption}\item[{int}]{controller }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}}
+
+Notification that the left control has been pressed on the controller.
+
+
+\begin{DoxyParams}{Parameters}
+{\em controller} & The index of the controller on which the control was pressed. \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1_state_based_game_a9bba4427977b841b78d8706910f0a8e7}{org.\+newdawn.\+slick.\+state.\+State\+Based\+Game}}, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1command_1_1_input_provider_1_1_input_listener_impl_a63696617ddee4b5ae49ab7bd892d14ee}{org.\+newdawn.\+slick.\+command.\+Input\+Provider.\+Input\+Listener\+Impl}}, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_test_box_a42966953b420faab6ab9261daf38ef13}{org.\+newdawn.\+slick.\+tests.\+Test\+Box}}, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_basic_game_aef303720a5e704f28de381cd96f62467}{org.\+newdawn.\+slick.\+Basic\+Game}}, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1_basic_game_state_ae506f3ea09df308d00e6253ca85cffc4}{org.\+newdawn.\+slick.\+state.\+Basic\+Game\+State}}, and \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1_input_adapter_ad588e2783005ae0ff252efbc282688cb}{org.\+newdawn.\+slick.\+util.\+Input\+Adapter}}.
+
+\mbox{\Hypertarget{interfaceorg_1_1newdawn_1_1slick_1_1_controller_listener_ad2f898f0efe21771a0d9568c454dea0d}\label{interfaceorg_1_1newdawn_1_1slick_1_1_controller_listener_ad2f898f0efe21771a0d9568c454dea0d}} 
+\index{org\+::newdawn\+::slick\+::\+Controller\+Listener@{org\+::newdawn\+::slick\+::\+Controller\+Listener}!controller\+Left\+Released@{controller\+Left\+Released}}
+\index{controller\+Left\+Released@{controller\+Left\+Released}!org\+::newdawn\+::slick\+::\+Controller\+Listener@{org\+::newdawn\+::slick\+::\+Controller\+Listener}}
+\subsubsection{\texorpdfstring{controller\+Left\+Released()}{controllerLeftReleased()}}
+{\footnotesize\ttfamily abstract void org.\+newdawn.\+slick.\+Controller\+Listener.\+controller\+Left\+Released (\begin{DoxyParamCaption}\item[{int}]{controller }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}}
+
+Notification that the left control has been released on the controller.
+
+
+\begin{DoxyParams}{Parameters}
+{\em controller} & The index of the controller on which the control was released. \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1_state_based_game_ae3b66d6b132b6622fa13c125f806e30b}{org.\+newdawn.\+slick.\+state.\+State\+Based\+Game}}, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1command_1_1_input_provider_1_1_input_listener_impl_ae67daea3a1e5b57c6189099410b17521}{org.\+newdawn.\+slick.\+command.\+Input\+Provider.\+Input\+Listener\+Impl}}, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_test_box_a52d79ff8a6f778651fff642b6d91b2de}{org.\+newdawn.\+slick.\+tests.\+Test\+Box}}, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_basic_game_a0fd5869789b811258bc2d8d562c36243}{org.\+newdawn.\+slick.\+Basic\+Game}}, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1_basic_game_state_a71bbea4a21962a1a403e51f0ccd9a87c}{org.\+newdawn.\+slick.\+state.\+Basic\+Game\+State}}, and \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1_input_adapter_af1419aca62539a39f52be90f64e778e3}{org.\+newdawn.\+slick.\+util.\+Input\+Adapter}}.
+
+\mbox{\Hypertarget{interfaceorg_1_1newdawn_1_1slick_1_1_controller_listener_ae4ac64996df9778c4987705275792780}\label{interfaceorg_1_1newdawn_1_1slick_1_1_controller_listener_ae4ac64996df9778c4987705275792780}} 
+\index{org\+::newdawn\+::slick\+::\+Controller\+Listener@{org\+::newdawn\+::slick\+::\+Controller\+Listener}!controller\+Right\+Pressed@{controller\+Right\+Pressed}}
+\index{controller\+Right\+Pressed@{controller\+Right\+Pressed}!org\+::newdawn\+::slick\+::\+Controller\+Listener@{org\+::newdawn\+::slick\+::\+Controller\+Listener}}
+\subsubsection{\texorpdfstring{controller\+Right\+Pressed()}{controllerRightPressed()}}
+{\footnotesize\ttfamily abstract void org.\+newdawn.\+slick.\+Controller\+Listener.\+controller\+Right\+Pressed (\begin{DoxyParamCaption}\item[{int}]{controller }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}}
+
+Notification that the right control has been pressed on the controller.
+
+
+\begin{DoxyParams}{Parameters}
+{\em controller} & The index of the controller on which the control was pressed. \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1_state_based_game_a6285a648c82d4f944f1789059c9e27c3}{org.\+newdawn.\+slick.\+state.\+State\+Based\+Game}}, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1command_1_1_input_provider_1_1_input_listener_impl_abe27fbc28db92a0549e5e61fd8ce81f1}{org.\+newdawn.\+slick.\+command.\+Input\+Provider.\+Input\+Listener\+Impl}}, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_test_box_aa1a006cc38225d293dfceec4c8995bdf}{org.\+newdawn.\+slick.\+tests.\+Test\+Box}}, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_basic_game_a8c225d55800c95a5b339468d08fcf48c}{org.\+newdawn.\+slick.\+Basic\+Game}}, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1_basic_game_state_adb19b887e058c5a01741e39fb8aed2fa}{org.\+newdawn.\+slick.\+state.\+Basic\+Game\+State}}, and \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1_input_adapter_a558dd87511a7ab61be9d895476e91444}{org.\+newdawn.\+slick.\+util.\+Input\+Adapter}}.
+
+\mbox{\Hypertarget{interfaceorg_1_1newdawn_1_1slick_1_1_controller_listener_a33ee418e010e69783169b3f52fb62c3b}\label{interfaceorg_1_1newdawn_1_1slick_1_1_controller_listener_a33ee418e010e69783169b3f52fb62c3b}} 
+\index{org\+::newdawn\+::slick\+::\+Controller\+Listener@{org\+::newdawn\+::slick\+::\+Controller\+Listener}!controller\+Right\+Released@{controller\+Right\+Released}}
+\index{controller\+Right\+Released@{controller\+Right\+Released}!org\+::newdawn\+::slick\+::\+Controller\+Listener@{org\+::newdawn\+::slick\+::\+Controller\+Listener}}
+\subsubsection{\texorpdfstring{controller\+Right\+Released()}{controllerRightReleased()}}
+{\footnotesize\ttfamily abstract void org.\+newdawn.\+slick.\+Controller\+Listener.\+controller\+Right\+Released (\begin{DoxyParamCaption}\item[{int}]{controller }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}}
+
+Notification that the right control has been released on the controller.
+
+
+\begin{DoxyParams}{Parameters}
+{\em controller} & The index of the controller on which the control was released. \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1_state_based_game_a6bcf1a21902e2d05a6c8f7d14f575264}{org.\+newdawn.\+slick.\+state.\+State\+Based\+Game}}, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1command_1_1_input_provider_1_1_input_listener_impl_a5703b6c8734b6d797edeecf4c3e27985}{org.\+newdawn.\+slick.\+command.\+Input\+Provider.\+Input\+Listener\+Impl}}, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_test_box_ac2e44af6fd71d4435f7d9ef1d2db582e}{org.\+newdawn.\+slick.\+tests.\+Test\+Box}}, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_basic_game_a84adeb6342b970209d965415b8d23162}{org.\+newdawn.\+slick.\+Basic\+Game}}, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1_basic_game_state_aeec0e8b46063fb631111a0e5f168cd01}{org.\+newdawn.\+slick.\+state.\+Basic\+Game\+State}}, and \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1_input_adapter_ae2c91a34637c5d9af99d2098878b367e}{org.\+newdawn.\+slick.\+util.\+Input\+Adapter}}.
+
+\mbox{\Hypertarget{interfaceorg_1_1newdawn_1_1slick_1_1_controller_listener_a7cb917761de1e555b23469042b6f1e03}\label{interfaceorg_1_1newdawn_1_1slick_1_1_controller_listener_a7cb917761de1e555b23469042b6f1e03}} 
+\index{org\+::newdawn\+::slick\+::\+Controller\+Listener@{org\+::newdawn\+::slick\+::\+Controller\+Listener}!controller\+Up\+Pressed@{controller\+Up\+Pressed}}
+\index{controller\+Up\+Pressed@{controller\+Up\+Pressed}!org\+::newdawn\+::slick\+::\+Controller\+Listener@{org\+::newdawn\+::slick\+::\+Controller\+Listener}}
+\subsubsection{\texorpdfstring{controller\+Up\+Pressed()}{controllerUpPressed()}}
+{\footnotesize\ttfamily abstract void org.\+newdawn.\+slick.\+Controller\+Listener.\+controller\+Up\+Pressed (\begin{DoxyParamCaption}\item[{int}]{controller }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}}
+
+Notification that the up control has been pressed on the controller.
+
+
+\begin{DoxyParams}{Parameters}
+{\em controller} & The index of the controller on which the control was pressed. \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1_state_based_game_aca15c428e95858fe7d3061948f581e22}{org.\+newdawn.\+slick.\+state.\+State\+Based\+Game}}, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1command_1_1_input_provider_1_1_input_listener_impl_a6e6f72ea130bc39ce0d96db6d4f80d8c}{org.\+newdawn.\+slick.\+command.\+Input\+Provider.\+Input\+Listener\+Impl}}, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_test_box_a3d43a20b538fd2f3331742cd26466274}{org.\+newdawn.\+slick.\+tests.\+Test\+Box}}, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_basic_game_a56128159ddf4514b79fe5fda77d4e97b}{org.\+newdawn.\+slick.\+Basic\+Game}}, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1_basic_game_state_a14126c2898a6d16c31255e09dbc31df8}{org.\+newdawn.\+slick.\+state.\+Basic\+Game\+State}}, and \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1_input_adapter_ae4728619a49e096201282b048c6b11df}{org.\+newdawn.\+slick.\+util.\+Input\+Adapter}}.
+
+\mbox{\Hypertarget{interfaceorg_1_1newdawn_1_1slick_1_1_controller_listener_a1342ad9ad1f7314b4eb10c20c21a9d50}\label{interfaceorg_1_1newdawn_1_1slick_1_1_controller_listener_a1342ad9ad1f7314b4eb10c20c21a9d50}} 
+\index{org\+::newdawn\+::slick\+::\+Controller\+Listener@{org\+::newdawn\+::slick\+::\+Controller\+Listener}!controller\+Up\+Released@{controller\+Up\+Released}}
+\index{controller\+Up\+Released@{controller\+Up\+Released}!org\+::newdawn\+::slick\+::\+Controller\+Listener@{org\+::newdawn\+::slick\+::\+Controller\+Listener}}
+\subsubsection{\texorpdfstring{controller\+Up\+Released()}{controllerUpReleased()}}
+{\footnotesize\ttfamily abstract void org.\+newdawn.\+slick.\+Controller\+Listener.\+controller\+Up\+Released (\begin{DoxyParamCaption}\item[{int}]{controller }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}}
+
+Notification that the up control has been released on the controller.
+
+
+\begin{DoxyParams}{Parameters}
+{\em controller} & The index of the controller on which the control was released. \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1_state_based_game_a7b4ef38f15fdd419c18b7bddf6958a04}{org.\+newdawn.\+slick.\+state.\+State\+Based\+Game}}, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1command_1_1_input_provider_1_1_input_listener_impl_a44338713bf5dfac2e16ced2d29c921bc}{org.\+newdawn.\+slick.\+command.\+Input\+Provider.\+Input\+Listener\+Impl}}, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_test_box_ad22f577d725eaa52a02136efa4ca5f95}{org.\+newdawn.\+slick.\+tests.\+Test\+Box}}, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_basic_game_a3fc92fc64da3e17cac17c1110d5b7237}{org.\+newdawn.\+slick.\+Basic\+Game}}, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1_basic_game_state_af4be493c79ad2ee89aed6f64b2ebd9fa}{org.\+newdawn.\+slick.\+state.\+Basic\+Game\+State}}, and \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1_input_adapter_a78fed236d44ced5cc4fc1b1c093f50fb}{org.\+newdawn.\+slick.\+util.\+Input\+Adapter}}.
+

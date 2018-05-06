@@ -1,0 +1,118 @@
+\hypertarget{classpa__sesion6_1_1_exposicion}{}\section{pa\+\_\+sesion6.\+Exposicion Class Reference}
+\label{classpa__sesion6_1_1_exposicion}\index{pa\+\_\+sesion6.\+Exposicion@{pa\+\_\+sesion6.\+Exposicion}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpa__sesion6_1_1_exposicion_ac2ed6ee34e37947b14312bf2cd826478}{Exposicion}} (int \mbox{\hyperlink{classpa__sesion6_1_1_exposicion_afcbdc68d946761e186c8403f72a868f5}{aforo}}, J\+Text\+Field tf\+Esperan, J\+Text\+Field tf\+Dentro)
+\item 
+void \mbox{\hyperlink{classpa__sesion6_1_1_exposicion_a290de0143a4ac3d4144b59da8998590f}{entrar}} (\mbox{\hyperlink{classpa__sesion6_1_1_visitante}{Visitante}} v)
+\item 
+void \mbox{\hyperlink{classpa__sesion6_1_1_exposicion_af3dad6816f86cb8fccc96b5347820a8d}{salir}} (\mbox{\hyperlink{classpa__sesion6_1_1_visitante}{Visitante}} v)
+\item 
+void \mbox{\hyperlink{classpa__sesion6_1_1_exposicion_a88cad59e332e16a6a199ca599d70239f}{mirar}} (\mbox{\hyperlink{classpa__sesion6_1_1_visitante}{Visitante}} v)
+\end{DoxyCompactItemize}
+\subsection*{Package Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classpa__sesion6_1_1_exposicion_afcbdc68d946761e186c8403f72a868f5}{aforo}}
+\item 
+\mbox{\hyperlink{classpa__sesion6_1_1_lista_threads}{Lista\+Threads}} \mbox{\hyperlink{classpa__sesion6_1_1_exposicion_a3bf69f7216a0de4d66e64da055479f16}{cola\+Espera}}
+\item 
+\mbox{\hyperlink{classpa__sesion6_1_1_lista_threads}{Lista\+Threads}} \mbox{\hyperlink{classpa__sesion6_1_1_exposicion_ab6a124ffce7020f2703c668f813c557a}{dentro}}
+\item 
+Semaphore \mbox{\hyperlink{classpa__sesion6_1_1_exposicion_a85f365853b70ab8959d994128fd1b30a}{semaforo}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classpa__sesion6_1_1_exposicion_ac2ed6ee34e37947b14312bf2cd826478}\label{classpa__sesion6_1_1_exposicion_ac2ed6ee34e37947b14312bf2cd826478}} 
+\index{pa\+\_\+sesion6\+::\+Exposicion@{pa\+\_\+sesion6\+::\+Exposicion}!Exposicion@{Exposicion}}
+\index{Exposicion@{Exposicion}!pa\+\_\+sesion6\+::\+Exposicion@{pa\+\_\+sesion6\+::\+Exposicion}}
+\subsubsection{\texorpdfstring{Exposicion()}{Exposicion()}}
+{\footnotesize\ttfamily pa\+\_\+sesion6.\+Exposicion.\+Exposicion (\begin{DoxyParamCaption}\item[{int}]{aforo,  }\item[{J\+Text\+Field}]{tf\+Esperan,  }\item[{J\+Text\+Field}]{tf\+Dentro }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+12     \{
+13         this.\mbox{\hyperlink{classpa__sesion6_1_1_exposicion_afcbdc68d946761e186c8403f72a868f5}{aforo}}=\mbox{\hyperlink{classpa__sesion6_1_1_exposicion_afcbdc68d946761e186c8403f72a868f5}{aforo}};
+14         \mbox{\hyperlink{classpa__sesion6_1_1_exposicion_a85f365853b70ab8959d994128fd1b30a}{semaforo}}=\textcolor{keyword}{new} Semaphore(\mbox{\hyperlink{classpa__sesion6_1_1_exposicion_afcbdc68d946761e186c8403f72a868f5}{aforo}},\textcolor{keyword}{true});
+15         \mbox{\hyperlink{classpa__sesion6_1_1_exposicion_a3bf69f7216a0de4d66e64da055479f16}{colaEspera}}=\textcolor{keyword}{new} ListaThreads(tfEsperan);
+16         \mbox{\hyperlink{classpa__sesion6_1_1_exposicion_ab6a124ffce7020f2703c668f813c557a}{dentro}}=\textcolor{keyword}{new} ListaThreads(tfDentro);
+17     \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classpa__sesion6_1_1_exposicion_a290de0143a4ac3d4144b59da8998590f}\label{classpa__sesion6_1_1_exposicion_a290de0143a4ac3d4144b59da8998590f}} 
+\index{pa\+\_\+sesion6\+::\+Exposicion@{pa\+\_\+sesion6\+::\+Exposicion}!entrar@{entrar}}
+\index{entrar@{entrar}!pa\+\_\+sesion6\+::\+Exposicion@{pa\+\_\+sesion6\+::\+Exposicion}}
+\subsubsection{\texorpdfstring{entrar()}{entrar()}}
+{\footnotesize\ttfamily void pa\+\_\+sesion6.\+Exposicion.\+entrar (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classpa__sesion6_1_1_visitante}{Visitante}}}]{v }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+20     \{
+21         \mbox{\hyperlink{classpa__sesion6_1_1_exposicion_a3bf69f7216a0de4d66e64da055479f16}{colaEspera}}.\mbox{\hyperlink{classpa__sesion6_1_1_lista_threads_a624e853e2ebdf3ccf90692fee902183e}{meter}}(v);
+22         \textcolor{keywordflow}{try}
+23         \{
+24             \mbox{\hyperlink{classpa__sesion6_1_1_exposicion_a85f365853b70ab8959d994128fd1b30a}{semaforo}}.acquire();
+25         \} \textcolor{keywordflow}{catch}(InterruptedException e)\{ \}
+26         \mbox{\hyperlink{classpa__sesion6_1_1_exposicion_a3bf69f7216a0de4d66e64da055479f16}{colaEspera}}.\mbox{\hyperlink{classpa__sesion6_1_1_lista_threads_a750595ae1fea92fc8270776a0aebaa58}{sacar}}(v);
+27         \mbox{\hyperlink{classpa__sesion6_1_1_exposicion_ab6a124ffce7020f2703c668f813c557a}{dentro}}.\mbox{\hyperlink{classpa__sesion6_1_1_lista_threads_a624e853e2ebdf3ccf90692fee902183e}{meter}}(v);
+28     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classpa__sesion6_1_1_exposicion_a88cad59e332e16a6a199ca599d70239f}\label{classpa__sesion6_1_1_exposicion_a88cad59e332e16a6a199ca599d70239f}} 
+\index{pa\+\_\+sesion6\+::\+Exposicion@{pa\+\_\+sesion6\+::\+Exposicion}!mirar@{mirar}}
+\index{mirar@{mirar}!pa\+\_\+sesion6\+::\+Exposicion@{pa\+\_\+sesion6\+::\+Exposicion}}
+\subsubsection{\texorpdfstring{mirar()}{mirar()}}
+{\footnotesize\ttfamily void pa\+\_\+sesion6.\+Exposicion.\+mirar (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classpa__sesion6_1_1_visitante}{Visitante}}}]{v }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+37     \{
+38         \textcolor{keywordflow}{try}
+39         \{
+40             Thread.sleep(2000+(\textcolor{keywordtype}{int})(3000*Math.random()));
+41         \} \textcolor{keywordflow}{catch} (InterruptedException e)\{ \}
+42     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classpa__sesion6_1_1_exposicion_af3dad6816f86cb8fccc96b5347820a8d}\label{classpa__sesion6_1_1_exposicion_af3dad6816f86cb8fccc96b5347820a8d}} 
+\index{pa\+\_\+sesion6\+::\+Exposicion@{pa\+\_\+sesion6\+::\+Exposicion}!salir@{salir}}
+\index{salir@{salir}!pa\+\_\+sesion6\+::\+Exposicion@{pa\+\_\+sesion6\+::\+Exposicion}}
+\subsubsection{\texorpdfstring{salir()}{salir()}}
+{\footnotesize\ttfamily void pa\+\_\+sesion6.\+Exposicion.\+salir (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classpa__sesion6_1_1_visitante}{Visitante}}}]{v }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+31     \{
+32         \mbox{\hyperlink{classpa__sesion6_1_1_exposicion_ab6a124ffce7020f2703c668f813c557a}{dentro}}.\mbox{\hyperlink{classpa__sesion6_1_1_lista_threads_a750595ae1fea92fc8270776a0aebaa58}{sacar}}(v);
+33         \mbox{\hyperlink{classpa__sesion6_1_1_exposicion_a85f365853b70ab8959d994128fd1b30a}{semaforo}}.release();
+34     \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classpa__sesion6_1_1_exposicion_afcbdc68d946761e186c8403f72a868f5}\label{classpa__sesion6_1_1_exposicion_afcbdc68d946761e186c8403f72a868f5}} 
+\index{pa\+\_\+sesion6\+::\+Exposicion@{pa\+\_\+sesion6\+::\+Exposicion}!aforo@{aforo}}
+\index{aforo@{aforo}!pa\+\_\+sesion6\+::\+Exposicion@{pa\+\_\+sesion6\+::\+Exposicion}}
+\subsubsection{\texorpdfstring{aforo}{aforo}}
+{\footnotesize\ttfamily int pa\+\_\+sesion6.\+Exposicion.\+aforo\hspace{0.3cm}{\ttfamily [package]}}
+
+\mbox{\Hypertarget{classpa__sesion6_1_1_exposicion_a3bf69f7216a0de4d66e64da055479f16}\label{classpa__sesion6_1_1_exposicion_a3bf69f7216a0de4d66e64da055479f16}} 
+\index{pa\+\_\+sesion6\+::\+Exposicion@{pa\+\_\+sesion6\+::\+Exposicion}!cola\+Espera@{cola\+Espera}}
+\index{cola\+Espera@{cola\+Espera}!pa\+\_\+sesion6\+::\+Exposicion@{pa\+\_\+sesion6\+::\+Exposicion}}
+\subsubsection{\texorpdfstring{cola\+Espera}{colaEspera}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classpa__sesion6_1_1_lista_threads}{Lista\+Threads}} pa\+\_\+sesion6.\+Exposicion.\+cola\+Espera\hspace{0.3cm}{\ttfamily [package]}}
+
+\mbox{\Hypertarget{classpa__sesion6_1_1_exposicion_ab6a124ffce7020f2703c668f813c557a}\label{classpa__sesion6_1_1_exposicion_ab6a124ffce7020f2703c668f813c557a}} 
+\index{pa\+\_\+sesion6\+::\+Exposicion@{pa\+\_\+sesion6\+::\+Exposicion}!dentro@{dentro}}
+\index{dentro@{dentro}!pa\+\_\+sesion6\+::\+Exposicion@{pa\+\_\+sesion6\+::\+Exposicion}}
+\subsubsection{\texorpdfstring{dentro}{dentro}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classpa__sesion6_1_1_lista_threads}{Lista\+Threads}} pa\+\_\+sesion6.\+Exposicion.\+dentro\hspace{0.3cm}{\ttfamily [package]}}
+
+\mbox{\Hypertarget{classpa__sesion6_1_1_exposicion_a85f365853b70ab8959d994128fd1b30a}\label{classpa__sesion6_1_1_exposicion_a85f365853b70ab8959d994128fd1b30a}} 
+\index{pa\+\_\+sesion6\+::\+Exposicion@{pa\+\_\+sesion6\+::\+Exposicion}!semaforo@{semaforo}}
+\index{semaforo@{semaforo}!pa\+\_\+sesion6\+::\+Exposicion@{pa\+\_\+sesion6\+::\+Exposicion}}
+\subsubsection{\texorpdfstring{semaforo}{semaforo}}
+{\footnotesize\ttfamily Semaphore pa\+\_\+sesion6.\+Exposicion.\+semaforo\hspace{0.3cm}{\ttfamily [package]}}
+

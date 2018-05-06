@@ -1,0 +1,86 @@
+\hypertarget{interfaceorg_1_1newdawn_1_1slick_1_1_controlled_input_reciever}{}\section{org.\+newdawn.\+slick.\+Controlled\+Input\+Reciever Interface Reference}
+\label{interfaceorg_1_1newdawn_1_1slick_1_1_controlled_input_reciever}\index{org.\+newdawn.\+slick.\+Controlled\+Input\+Reciever@{org.\+newdawn.\+slick.\+Controlled\+Input\+Reciever}}
+Inheritance diagram for org.\+newdawn.\+slick.\+Controlled\+Input\+Reciever\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.113208cm]{interfaceorg_1_1newdawn_1_1slick_1_1_controlled_input_reciever}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+abstract void \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1_controlled_input_reciever_ab838ca221a429b05c0b53aea9b4fe72f}{set\+Input}} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_input}{Input}} input)
+\item 
+abstract boolean \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1_controlled_input_reciever_a380186fb0c34c11c212b72fae8186dc7}{is\+Accepting\+Input}} ()
+\item 
+abstract void \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1_controlled_input_reciever_a61c6cde7cbf28a6969cafe3ec4f1c121}{input\+Ended}} ()
+\item 
+abstract void \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1_controlled_input_reciever_a718de21e9cd22f4c48ee87b5b8b32ed6}{input\+Started}} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Description of any class capable of recieving and controlling it\textquotesingle{}s own reception of input
+
+You\textquotesingle{}ll shouldn\textquotesingle{}t really need to implement this one for your self, use one of the sub-\/interfaces\+:
+
+\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1_input_listener}{Input\+Listener}} \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1_mouse_listener}{Mouse\+Listener}} \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1_key_listener}{Key\+Listener}} \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1_controller_listener}{Controller\+Listener}}
+
+\begin{DoxyAuthor}{Author}
+kevin 
+\end{DoxyAuthor}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{interfaceorg_1_1newdawn_1_1slick_1_1_controlled_input_reciever_a61c6cde7cbf28a6969cafe3ec4f1c121}\label{interfaceorg_1_1newdawn_1_1slick_1_1_controlled_input_reciever_a61c6cde7cbf28a6969cafe3ec4f1c121}} 
+\index{org\+::newdawn\+::slick\+::\+Controlled\+Input\+Reciever@{org\+::newdawn\+::slick\+::\+Controlled\+Input\+Reciever}!input\+Ended@{input\+Ended}}
+\index{input\+Ended@{input\+Ended}!org\+::newdawn\+::slick\+::\+Controlled\+Input\+Reciever@{org\+::newdawn\+::slick\+::\+Controlled\+Input\+Reciever}}
+\subsubsection{\texorpdfstring{input\+Ended()}{inputEnded()}}
+{\footnotesize\ttfamily abstract void org.\+newdawn.\+slick.\+Controlled\+Input\+Reciever.\+input\+Ended (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}}
+
+Notification that all input events have been sent for this frame 
+
+Implemented in \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1_state_based_game_a299be9ff0a3a53cb265ff688c19e70e9}{org.\+newdawn.\+slick.\+state.\+State\+Based\+Game}}, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_basic_game_ab1d3867ead6bd9dc922c8e90a1ccc0c3}{org.\+newdawn.\+slick.\+Basic\+Game}}, \mbox{\hyperlink{classentities_1_1_input_handler_ab5b8a1ac155983d92cdbbfa2e592654b}{entities.\+Input\+Handler}}, \mbox{\hyperlink{classgui_1_1_g_u_i_a7e5dde1e8fb225259f134f132ff9f4fb}{gui.\+G\+UI}}, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1_input_adapter_a7aeb6742cd50649e17774ccbe2ebc9ea}{org.\+newdawn.\+slick.\+util.\+Input\+Adapter}}, and \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1_basic_game_state_a7bbd6fe017193ba107713e0e77c668f1}{org.\+newdawn.\+slick.\+state.\+Basic\+Game\+State}}.
+
+\mbox{\Hypertarget{interfaceorg_1_1newdawn_1_1slick_1_1_controlled_input_reciever_a718de21e9cd22f4c48ee87b5b8b32ed6}\label{interfaceorg_1_1newdawn_1_1slick_1_1_controlled_input_reciever_a718de21e9cd22f4c48ee87b5b8b32ed6}} 
+\index{org\+::newdawn\+::slick\+::\+Controlled\+Input\+Reciever@{org\+::newdawn\+::slick\+::\+Controlled\+Input\+Reciever}!input\+Started@{input\+Started}}
+\index{input\+Started@{input\+Started}!org\+::newdawn\+::slick\+::\+Controlled\+Input\+Reciever@{org\+::newdawn\+::slick\+::\+Controlled\+Input\+Reciever}}
+\subsubsection{\texorpdfstring{input\+Started()}{inputStarted()}}
+{\footnotesize\ttfamily abstract void org.\+newdawn.\+slick.\+Controlled\+Input\+Reciever.\+input\+Started (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}}
+
+Notification that input is about to be processed 
+
+Implemented in \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_basic_game_aa04bcb9e5c8687d7cc6ba05a63b93b40}{org.\+newdawn.\+slick.\+Basic\+Game}}, \mbox{\hyperlink{classentities_1_1_input_handler_a3c2427c9f129a71286d592bf75dcb99f}{entities.\+Input\+Handler}}, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1_input_adapter_aabb9bfda05a319feefe6598b6153e2df}{org.\+newdawn.\+slick.\+util.\+Input\+Adapter}}, \mbox{\hyperlink{classgui_1_1_g_u_i_a00cc1291d47fe85ab1dd5ab5c401c0f4}{gui.\+G\+UI}}, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1_state_based_game_a1a3ebc498cd4eee9660aae669746ed4f}{org.\+newdawn.\+slick.\+state.\+State\+Based\+Game}}, and \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1_basic_game_state_aa746c5cf910eadbcb06bc5fc50030054}{org.\+newdawn.\+slick.\+state.\+Basic\+Game\+State}}.
+
+\mbox{\Hypertarget{interfaceorg_1_1newdawn_1_1slick_1_1_controlled_input_reciever_a380186fb0c34c11c212b72fae8186dc7}\label{interfaceorg_1_1newdawn_1_1slick_1_1_controlled_input_reciever_a380186fb0c34c11c212b72fae8186dc7}} 
+\index{org\+::newdawn\+::slick\+::\+Controlled\+Input\+Reciever@{org\+::newdawn\+::slick\+::\+Controlled\+Input\+Reciever}!is\+Accepting\+Input@{is\+Accepting\+Input}}
+\index{is\+Accepting\+Input@{is\+Accepting\+Input}!org\+::newdawn\+::slick\+::\+Controlled\+Input\+Reciever@{org\+::newdawn\+::slick\+::\+Controlled\+Input\+Reciever}}
+\subsubsection{\texorpdfstring{is\+Accepting\+Input()}{isAcceptingInput()}}
+{\footnotesize\ttfamily abstract boolean org.\+newdawn.\+slick.\+Controlled\+Input\+Reciever.\+is\+Accepting\+Input (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}}
+
+Check if this input listener is accepting input
+
+\begin{DoxyReturn}{Returns}
+True if the input listener should recieve events 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1_state_based_game_ab5c47ea171308ec7dac850d2739d79e4}{org.\+newdawn.\+slick.\+state.\+State\+Based\+Game}}, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1command_1_1_input_provider_1_1_input_listener_impl_aafacc541954726a57251f0893750a9e4}{org.\+newdawn.\+slick.\+command.\+Input\+Provider.\+Input\+Listener\+Impl}}, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_basic_game_a435f5bb90065a05563b04b715f02891e}{org.\+newdawn.\+slick.\+Basic\+Game}}, \mbox{\hyperlink{classentities_1_1_input_handler_a3b0b01f1e82200097d90346ebe12e369}{entities.\+Input\+Handler}}, \mbox{\hyperlink{classgui_1_1_g_u_i_a0d50e235ccee27aa0e35b860cd5dc883}{gui.\+G\+UI}}, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1_input_adapter_a8f20e7fc464c8f8f7a676b041e691765}{org.\+newdawn.\+slick.\+util.\+Input\+Adapter}}, and \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1_basic_game_state_adc09c433d4eb497616ac73c55b8b6c7d}{org.\+newdawn.\+slick.\+state.\+Basic\+Game\+State}}.
+
+\mbox{\Hypertarget{interfaceorg_1_1newdawn_1_1slick_1_1_controlled_input_reciever_ab838ca221a429b05c0b53aea9b4fe72f}\label{interfaceorg_1_1newdawn_1_1slick_1_1_controlled_input_reciever_ab838ca221a429b05c0b53aea9b4fe72f}} 
+\index{org\+::newdawn\+::slick\+::\+Controlled\+Input\+Reciever@{org\+::newdawn\+::slick\+::\+Controlled\+Input\+Reciever}!set\+Input@{set\+Input}}
+\index{set\+Input@{set\+Input}!org\+::newdawn\+::slick\+::\+Controlled\+Input\+Reciever@{org\+::newdawn\+::slick\+::\+Controlled\+Input\+Reciever}}
+\subsubsection{\texorpdfstring{set\+Input()}{setInput()}}
+{\footnotesize\ttfamily abstract void org.\+newdawn.\+slick.\+Controlled\+Input\+Reciever.\+set\+Input (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_input}{Input}}}]{input }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}}
+
+Set the input that events are being sent from
+
+
+\begin{DoxyParams}{Parameters}
+{\em input} & The input instance sending events \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classentities_1_1_input_handler_ad3a1eb35970a169a68b3c01246562a3e}{entities.\+Input\+Handler}}, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1_input_adapter_ab5a715a6c56f677a08be343868877ae3}{org.\+newdawn.\+slick.\+util.\+Input\+Adapter}}, \mbox{\hyperlink{classgui_1_1_g_u_i_a58f6de4eaf3f446b6a6efd30121091df}{gui.\+G\+UI}}, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1_state_based_game_a0d9931474b8c383d9cbf3026fc3a9c07}{org.\+newdawn.\+slick.\+state.\+State\+Based\+Game}}, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_basic_game_ac9847e7f185de833f745fd75b8b5730b}{org.\+newdawn.\+slick.\+Basic\+Game}}, and \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1_basic_game_state_ae453e5cfaf7e00181a981ca4e25bb82e}{org.\+newdawn.\+slick.\+state.\+Basic\+Game\+State}}.
+

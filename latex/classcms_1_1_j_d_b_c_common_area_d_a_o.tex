@@ -1,0 +1,121 @@
+\hypertarget{classcms_1_1_j_d_b_c_common_area_d_a_o}{}\section{cms.\+J\+D\+B\+C\+Common\+Area\+D\+AO Class Reference}
+\label{classcms_1_1_j_d_b_c_common_area_d_a_o}\index{cms.\+J\+D\+B\+C\+Common\+Area\+D\+AO@{cms.\+J\+D\+B\+C\+Common\+Area\+D\+AO}}
+Inheritance diagram for cms.\+J\+D\+B\+C\+Common\+Area\+D\+AO\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classcms_1_1_j_d_b_c_common_area_d_a_o}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classcms_1_1_j_d_b_c_common_area_d_a_o_ac16afa315389842ec5134d660d58421f}{J\+D\+B\+C\+Common\+Area\+D\+AO}} (Connection \mbox{\hyperlink{classcms_1_1_j_d_b_c_common_area_d_a_o_a9cd45620d4795fbf71bb1e4408e2100f}{connection}})
+\item 
+void \mbox{\hyperlink{classcms_1_1_j_d_b_c_common_area_d_a_o_a7b601071180c00446fbf2cc2235afb0b}{insert}} (\mbox{\hyperlink{classcms_1_1_common_area}{Common\+Area}} ca)
+\item 
+List$<$ \mbox{\hyperlink{classcms_1_1_common_area}{Common\+Area}} $>$ \mbox{\hyperlink{classcms_1_1_j_d_b_c_common_area_d_a_o_af23b754d7207a376a3b4995b333ccb40}{select}} ()
+\end{DoxyCompactItemize}
+\subsection*{Package Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Connection \mbox{\hyperlink{classcms_1_1_j_d_b_c_common_area_d_a_o_a9cd45620d4795fbf71bb1e4408e2100f}{connection}} = null
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classcms_1_1_j_d_b_c_common_area_d_a_o_ac16afa315389842ec5134d660d58421f}\label{classcms_1_1_j_d_b_c_common_area_d_a_o_ac16afa315389842ec5134d660d58421f}} 
+\index{cms\+::\+J\+D\+B\+C\+Common\+Area\+D\+AO@{cms\+::\+J\+D\+B\+C\+Common\+Area\+D\+AO}!J\+D\+B\+C\+Common\+Area\+D\+AO@{J\+D\+B\+C\+Common\+Area\+D\+AO}}
+\index{J\+D\+B\+C\+Common\+Area\+D\+AO@{J\+D\+B\+C\+Common\+Area\+D\+AO}!cms\+::\+J\+D\+B\+C\+Common\+Area\+D\+AO@{cms\+::\+J\+D\+B\+C\+Common\+Area\+D\+AO}}
+\subsubsection{\texorpdfstring{J\+D\+B\+C\+Common\+Area\+D\+A\+O()}{JDBCCommonAreaDAO()}}
+{\footnotesize\ttfamily cms.\+J\+D\+B\+C\+Common\+Area\+D\+A\+O.\+J\+D\+B\+C\+Common\+Area\+D\+AO (\begin{DoxyParamCaption}\item[{Connection}]{connection }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+25                                                  \{
+26      this.\mbox{\hyperlink{classcms_1_1_j_d_b_c_common_area_d_a_o_a9cd45620d4795fbf71bb1e4408e2100f}{connection}}=\mbox{\hyperlink{classcms_1_1_j_d_b_c_common_area_d_a_o_a9cd45620d4795fbf71bb1e4408e2100f}{connection}};
+27  \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classcms_1_1_j_d_b_c_common_area_d_a_o_a7b601071180c00446fbf2cc2235afb0b}\label{classcms_1_1_j_d_b_c_common_area_d_a_o_a7b601071180c00446fbf2cc2235afb0b}} 
+\index{cms\+::\+J\+D\+B\+C\+Common\+Area\+D\+AO@{cms\+::\+J\+D\+B\+C\+Common\+Area\+D\+AO}!insert@{insert}}
+\index{insert@{insert}!cms\+::\+J\+D\+B\+C\+Common\+Area\+D\+AO@{cms\+::\+J\+D\+B\+C\+Common\+Area\+D\+AO}}
+\subsubsection{\texorpdfstring{insert()}{insert()}}
+{\footnotesize\ttfamily void cms.\+J\+D\+B\+C\+Common\+Area\+D\+A\+O.\+insert (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classcms_1_1_common_area}{Common\+Area}}}]{ca }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Implements \mbox{\hyperlink{interfacecms_1_1_common_area_d_a_o_affdfddab399e6cb4249b3918962a1a4f}{cms.\+Common\+Area\+D\+AO}}.
+
+
+\begin{DoxyCode}
+48                                       \{
+49         \textcolor{keywordflow}{try} \{
+50             PreparedStatement preparedStatement = \mbox{\hyperlink{classcms_1_1_j_d_b_c_common_area_d_a_o_a9cd45620d4795fbf71bb1e4408e2100f}{connection}}.prepareStatement(\textcolor{stringliteral}{"INSERT INTO
+       cms.Common\_Area(area\_id, area\_name,property\_id) VALUES (default , ?, ?)"});
+51             preparedStatement.setString(1,  ca.getArea\_name());
+52             preparedStatement.setInt(2,  ca.getProperty\_id());
+53             preparedStatement.executeUpdate();
+54             preparedStatement.close();
+55         \} \textcolor{keywordflow}{catch} (SQLException e) \{
+56             \textcolor{comment}{// TODO Auto-generated catch block}
+57             e.printStackTrace();
+58         \}
+59          
+60     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classcms_1_1_j_d_b_c_common_area_d_a_o_af23b754d7207a376a3b4995b333ccb40}\label{classcms_1_1_j_d_b_c_common_area_d_a_o_af23b754d7207a376a3b4995b333ccb40}} 
+\index{cms\+::\+J\+D\+B\+C\+Common\+Area\+D\+AO@{cms\+::\+J\+D\+B\+C\+Common\+Area\+D\+AO}!select@{select}}
+\index{select@{select}!cms\+::\+J\+D\+B\+C\+Common\+Area\+D\+AO@{cms\+::\+J\+D\+B\+C\+Common\+Area\+D\+AO}}
+\subsubsection{\texorpdfstring{select()}{select()}}
+{\footnotesize\ttfamily List$<$\mbox{\hyperlink{classcms_1_1_common_area}{Common\+Area}}$>$ cms.\+J\+D\+B\+C\+Common\+Area\+D\+A\+O.\+select (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Implements \mbox{\hyperlink{interfacecms_1_1_common_area_d_a_o_ae4c9d5d62bc59942fc165f8ff9865542}{cms.\+Common\+Area\+D\+AO}}.
+
+
+\begin{DoxyCode}
+63                                      \{
+64         List<CommonArea> cas = \textcolor{keyword}{new} LinkedList<>();
+65          \textcolor{keywordflow}{try} \{
+66                 Statement statement = \mbox{\hyperlink{classcms_1_1_j_d_b_c_common_area_d_a_o_a9cd45620d4795fbf71bb1e4408e2100f}{connection}}.createStatement();
+67                 ResultSet resultSet = statement.executeQuery(\textcolor{stringliteral}{"SELECT * FROM cms.Common\_Area"});
+68                  
+69                 CommonArea ca = null;
+70                 \textcolor{keywordflow}{while}(resultSet.next())\{
+71                     ca = \textcolor{keyword}{new} CommonArea();
+72                     ca.setArea\_id(Integer.parseInt(resultSet.getString(\textcolor{stringliteral}{"area\_id"})));
+73                     ca.setArea\_name(resultSet.getString(\textcolor{stringliteral}{"area\_name"}));
+74                     ca.setProperty\_id(Integer.parseInt(resultSet.getString(\textcolor{stringliteral}{"property\_id"})));
+75                      
+76                     cas.add(ca);
+77                 \}
+78                 resultSet.close();
+79                 statement.close();
+80                  
+81             \} \textcolor{keywordflow}{catch} (SQLException e) \{
+82                 e.printStackTrace();
+83             \}
+84          
+85             \textcolor{keywordtype}{int} i;
+86             i=0;
+87             CommonArea cmaux = null;
+88             \textcolor{keywordflow}{while}(i < cas.size()) \{
+89                     System.out.println(cas.get(i));
+90                     i++;
+91              \}
+92             \textcolor{comment}{//System.out.println(cas);}
+93             \textcolor{keywordflow}{return} cas;
+94     \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classcms_1_1_j_d_b_c_common_area_d_a_o_a9cd45620d4795fbf71bb1e4408e2100f}\label{classcms_1_1_j_d_b_c_common_area_d_a_o_a9cd45620d4795fbf71bb1e4408e2100f}} 
+\index{cms\+::\+J\+D\+B\+C\+Common\+Area\+D\+AO@{cms\+::\+J\+D\+B\+C\+Common\+Area\+D\+AO}!connection@{connection}}
+\index{connection@{connection}!cms\+::\+J\+D\+B\+C\+Common\+Area\+D\+AO@{cms\+::\+J\+D\+B\+C\+Common\+Area\+D\+AO}}
+\subsubsection{\texorpdfstring{connection}{connection}}
+{\footnotesize\ttfamily Connection cms.\+J\+D\+B\+C\+Common\+Area\+D\+A\+O.\+connection = null\hspace{0.3cm}{\ttfamily [package]}}
+

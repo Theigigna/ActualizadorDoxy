@@ -1,0 +1,111 @@
+\hypertarget{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1truetype_1_1_i_o_utils}{}\section{org.\+newdawn.\+slick.\+tools.\+hiero.\+truetype.\+I\+O\+Utils Class Reference}
+\label{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1truetype_1_1_i_o_utils}\index{org.\+newdawn.\+slick.\+tools.\+hiero.\+truetype.\+I\+O\+Utils@{org.\+newdawn.\+slick.\+tools.\+hiero.\+truetype.\+I\+O\+Utils}}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static int \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1truetype_1_1_i_o_utils_a8d18ffd2be08d137d80f3f1949ea67e3}{copy}} (Input\+Stream input, Output\+Stream output)  throws I\+O\+Exception 
+\item 
+static byte \mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1truetype_1_1_i_o_utils_a4495b47b8758850ade00d36fd0ae06c0}{to\+Byte\+Array}} (Input\+Stream input)  throws I\+O\+Exception 
+\end{DoxyCompactItemize}
+\subsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static final int \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1truetype_1_1_i_o_utils_a7d591bed6c62c8cbf595d86223ffe25f}{D\+E\+F\+A\+U\+L\+T\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+S\+I\+ZE}} = 1024 $\ast$ 4
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+T\+O\+DO\+: Document this class
+
+\begin{DoxyAuthor}{Author}
+kevin 
+\end{DoxyAuthor}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1truetype_1_1_i_o_utils_a8d18ffd2be08d137d80f3f1949ea67e3}\label{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1truetype_1_1_i_o_utils_a8d18ffd2be08d137d80f3f1949ea67e3}} 
+\index{org\+::newdawn\+::slick\+::tools\+::hiero\+::truetype\+::\+I\+O\+Utils@{org\+::newdawn\+::slick\+::tools\+::hiero\+::truetype\+::\+I\+O\+Utils}!copy@{copy}}
+\index{copy@{copy}!org\+::newdawn\+::slick\+::tools\+::hiero\+::truetype\+::\+I\+O\+Utils@{org\+::newdawn\+::slick\+::tools\+::hiero\+::truetype\+::\+I\+O\+Utils}}
+\subsubsection{\texorpdfstring{copy()}{copy()}}
+{\footnotesize\ttfamily static int org.\+newdawn.\+slick.\+tools.\+hiero.\+truetype.\+I\+O\+Utils.\+copy (\begin{DoxyParamCaption}\item[{Input\+Stream}]{input,  }\item[{Output\+Stream}]{output }\end{DoxyParamCaption}) throws I\+O\+Exception\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Copy bytes from an {\ttfamily Input\+Stream} to an {\ttfamily Output\+Stream}. 
+
+This method buffers the input internally, so there is no need to use a {\ttfamily Buffered\+Input\+Stream}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em input} & the {\ttfamily Input\+Stream} to read from \\
+\hline
+{\em output} & the {\ttfamily Output\+Stream} to write to \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the number of bytes copied 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Null\+Pointer\+Exception} & if the input or output is null \\
+\hline
+{\em I\+O\+Exception} & if an I/O error occurs \\
+\hline
+\end{DoxyExceptions}
+\begin{DoxySince}{Since}
+Commons IO 1.\+1 
+\end{DoxySince}
+
+\begin{DoxyCode}
+35                                \{
+36         byte[] buffer = \textcolor{keyword}{new} byte[\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1truetype_1_1_i_o_utils_a7d591bed6c62c8cbf595d86223ffe25f}{DEFAULT\_BUFFER\_SIZE}}];
+37         \textcolor{keywordtype}{int} count = 0;
+38         \textcolor{keywordtype}{int} n = 0;
+39         \textcolor{keywordflow}{while} (-1 != (n = input.read(buffer))) \{
+40             output.write(buffer, 0, n);
+41             count += n;
+42         \}
+43         \textcolor{keywordflow}{return} count;
+44     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1truetype_1_1_i_o_utils_a4495b47b8758850ade00d36fd0ae06c0}\label{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1truetype_1_1_i_o_utils_a4495b47b8758850ade00d36fd0ae06c0}} 
+\index{org\+::newdawn\+::slick\+::tools\+::hiero\+::truetype\+::\+I\+O\+Utils@{org\+::newdawn\+::slick\+::tools\+::hiero\+::truetype\+::\+I\+O\+Utils}!to\+Byte\+Array@{to\+Byte\+Array}}
+\index{to\+Byte\+Array@{to\+Byte\+Array}!org\+::newdawn\+::slick\+::tools\+::hiero\+::truetype\+::\+I\+O\+Utils@{org\+::newdawn\+::slick\+::tools\+::hiero\+::truetype\+::\+I\+O\+Utils}}
+\subsubsection{\texorpdfstring{to\+Byte\+Array()}{toByteArray()}}
+{\footnotesize\ttfamily static byte \mbox{[}$\,$\mbox{]} org.\+newdawn.\+slick.\+tools.\+hiero.\+truetype.\+I\+O\+Utils.\+to\+Byte\+Array (\begin{DoxyParamCaption}\item[{Input\+Stream}]{input }\end{DoxyParamCaption}) throws I\+O\+Exception\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Get the contents of an {\ttfamily Input\+Stream} as a {\ttfamily byte\mbox{[}\mbox{]}}. 
+
+This method buffers the input internally, so there is no need to use a {\ttfamily Buffered\+Input\+Stream}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em input} & the {\ttfamily Input\+Stream} to read from \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the requested byte array 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Null\+Pointer\+Exception} & if the input is null \\
+\hline
+{\em I\+O\+Exception} & if an I/O error occurs \\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyCode}
+57                                                                            \{
+58         ByteArrayOutputStream output = \textcolor{keyword}{new} ByteArrayOutputStream();
+59         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1truetype_1_1_i_o_utils_a8d18ffd2be08d137d80f3f1949ea67e3}{copy}}(input, output);
+60         \textcolor{keywordflow}{return} output.toByteArray();
+61     \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1truetype_1_1_i_o_utils_a7d591bed6c62c8cbf595d86223ffe25f}\label{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1truetype_1_1_i_o_utils_a7d591bed6c62c8cbf595d86223ffe25f}} 
+\index{org\+::newdawn\+::slick\+::tools\+::hiero\+::truetype\+::\+I\+O\+Utils@{org\+::newdawn\+::slick\+::tools\+::hiero\+::truetype\+::\+I\+O\+Utils}!D\+E\+F\+A\+U\+L\+T\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+S\+I\+ZE@{D\+E\+F\+A\+U\+L\+T\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+S\+I\+ZE}}
+\index{D\+E\+F\+A\+U\+L\+T\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+S\+I\+ZE@{D\+E\+F\+A\+U\+L\+T\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+S\+I\+ZE}!org\+::newdawn\+::slick\+::tools\+::hiero\+::truetype\+::\+I\+O\+Utils@{org\+::newdawn\+::slick\+::tools\+::hiero\+::truetype\+::\+I\+O\+Utils}}
+\subsubsection{\texorpdfstring{D\+E\+F\+A\+U\+L\+T\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+S\+I\+ZE}{DEFAULT\_BUFFER\_SIZE}}
+{\footnotesize\ttfamily final int org.\+newdawn.\+slick.\+tools.\+hiero.\+truetype.\+I\+O\+Utils.\+D\+E\+F\+A\+U\+L\+T\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+S\+I\+ZE = 1024 $\ast$ 4\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+The default buffer size to use. 

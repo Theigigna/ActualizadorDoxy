@@ -1,0 +1,258 @@
+\hypertarget{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_value_panel}{}\section{org.\+newdawn.\+slick.\+tools.\+peditor.\+Value\+Panel Class Reference}
+\label{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_value_panel}\index{org.\+newdawn.\+slick.\+tools.\+peditor.\+Value\+Panel@{org.\+newdawn.\+slick.\+tools.\+peditor.\+Value\+Panel}}
+Inheritance diagram for org.\+newdawn.\+slick.\+tools.\+peditor.\+Value\+Panel\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_value_panel}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_value_panel_ab24f7bd43b07cf5ee555dc768b340974}{Value\+Panel}} (String \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_value_panel_ac3f651b9e3f21c979dc9f3c7df17da3a}{name}}, int min, int max, int value, String tool\+Tip, boolean linear\+Enabled)
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_value_panel_a3bed734dc87c5562ffc73169bfdfa35e}{set\+Linear}} (boolean \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_value_panel_accd8a5d5872a9fe38b1e546944982dfd}{linear}})
+\item 
+boolean \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_value_panel_a25dc49b1a78fa4c8e1556520343bf605}{is\+Linear}} ()
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_value_panel_a8cfa3d3ef8c70a27962db60cfaa1e7fc}{set\+Value}} (int value)
+\item 
+int \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_value_panel_a7305b51023972797f8079b7df81032f8}{get\+Value}} ()
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_value_panel_a59d66d887ca6a03762f54b8d0a9a75bd}{add\+Listener}} (\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_input_panel_listener}{Input\+Panel\+Listener}} listener)
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_value_panel_a26186da0cc3082d426c54cc7cc94aefe}{fire\+Updated}} (Object source)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+String \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_value_panel_ac3f651b9e3f21c979dc9f3c7df17da3a}{name}}
+\item 
+J\+Slider \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_value_panel_a7b5cc531a99541b95b43875ab0e9766f}{slider}}
+\item 
+Array\+List \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_value_panel_ae8be70f5fbf496c47f1b1c5cb9e3c1fa}{listeners}} = new Array\+List()
+\item 
+J\+Check\+Box \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_value_panel_accd8a5d5872a9fe38b1e546944982dfd}{linear}} = new J\+Check\+Box()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A panel to allow editing on a single configurable value
+
+\begin{DoxyAuthor}{Author}
+kevin 
+\end{DoxyAuthor}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_value_panel_ab24f7bd43b07cf5ee555dc768b340974}\label{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_value_panel_ab24f7bd43b07cf5ee555dc768b340974}} 
+\index{org\+::newdawn\+::slick\+::tools\+::peditor\+::\+Value\+Panel@{org\+::newdawn\+::slick\+::tools\+::peditor\+::\+Value\+Panel}!Value\+Panel@{Value\+Panel}}
+\index{Value\+Panel@{Value\+Panel}!org\+::newdawn\+::slick\+::tools\+::peditor\+::\+Value\+Panel@{org\+::newdawn\+::slick\+::tools\+::peditor\+::\+Value\+Panel}}
+\subsubsection{\texorpdfstring{Value\+Panel()}{ValuePanel()}}
+{\footnotesize\ttfamily org.\+newdawn.\+slick.\+tools.\+peditor.\+Value\+Panel.\+Value\+Panel (\begin{DoxyParamCaption}\item[{String}]{name,  }\item[{int}]{min,  }\item[{int}]{max,  }\item[{int}]{value,  }\item[{String}]{tool\+Tip,  }\item[{boolean}]{linear\+Enabled }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Create a new value panel for a single configurable emitter setting
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The name of the value \\
+\hline
+{\em min} & The minimum value allowed \\
+\hline
+{\em max} & The maximum value allowed \\
+\hline
+{\em value} & The initial value \\
+\hline
+{\em tool\+Tip} & The description of the setting \\
+\hline
+{\em linear\+Enabled} & True if this range should be able to be set to linear \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+39                                                                                                        \{
+40         setLayout(null);
+41         
+42         setToolTipText(toolTip);
+43         
+44         \textcolor{keywordtype}{int} offset = 0;
+45         
+46         \textcolor{keywordflow}{if} (linearEnabled) \{
+47             JLabel label = \textcolor{keyword}{new} JLabel(\textcolor{stringliteral}{"Linear"});
+48             label.setBounds(242,15,30,20);
+49             add(label);
+50             \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_value_panel_accd8a5d5872a9fe38b1e546944982dfd}{linear}}.setBounds(245,25,30,30);
+51             \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_value_panel_accd8a5d5872a9fe38b1e546944982dfd}{linear}}.setOpaque(\textcolor{keyword}{false});
+52             add(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_value_panel_accd8a5d5872a9fe38b1e546944982dfd}{linear}});
+53             offset = 30;
+54             \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_value_panel_accd8a5d5872a9fe38b1e546944982dfd}{linear}}.addActionListener(\textcolor{keyword}{new} ActionListener() \{
+55                 \textcolor{keyword}{public} \textcolor{keywordtype}{void} actionPerformed(ActionEvent e) \{
+56                     \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_value_panel_a26186da0cc3082d426c54cc7cc94aefe}{fireUpdated}}(e.getSource());
+57                 \}
+58             \});
+59         \}
+60         
+61         this.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_value_panel_ac3f651b9e3f21c979dc9f3c7df17da3a}{name}} = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_value_panel_ac3f651b9e3f21c979dc9f3c7df17da3a}{name}};
+62         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_value_panel_a7b5cc531a99541b95b43875ab0e9766f}{slider}} = \textcolor{keyword}{new} JSlider(min, max, value);
+63         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_value_panel_a7b5cc531a99541b95b43875ab0e9766f}{slider}}.setBounds(10,20,260-offset,40);
+64         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_value_panel_a7b5cc531a99541b95b43875ab0e9766f}{slider}}.setFocusable(\textcolor{keyword}{false});
+65         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_value_panel_a7b5cc531a99541b95b43875ab0e9766f}{slider}}.setPaintTicks(\textcolor{keyword}{true});
+66         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_value_panel_a7b5cc531a99541b95b43875ab0e9766f}{slider}}.setPaintLabels(\textcolor{keyword}{true});
+67         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_value_panel_a7b5cc531a99541b95b43875ab0e9766f}{slider}}.setMajorTickSpacing((max-min) / 3);
+68         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_value_panel_a7b5cc531a99541b95b43875ab0e9766f}{slider}}.setMinorTickSpacing((max-min) / 10);
+69         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_value_panel_a7b5cc531a99541b95b43875ab0e9766f}{slider}}.addChangeListener(\textcolor{keyword}{new} ChangeListener() \{
+70             \textcolor{keyword}{public} \textcolor{keywordtype}{void} stateChanged(ChangeEvent e) \{
+71                 \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_value_panel_a26186da0cc3082d426c54cc7cc94aefe}{fireUpdated}}(e.getSource());
+72             \}
+73         \});
+74         
+75         add(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_value_panel_a7b5cc531a99541b95b43875ab0e9766f}{slider}});
+76         setBorder(BorderFactory.createTitledBorder(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_value_panel_ac3f651b9e3f21c979dc9f3c7df17da3a}{name}}));
+77     \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_value_panel_a59d66d887ca6a03762f54b8d0a9a75bd}\label{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_value_panel_a59d66d887ca6a03762f54b8d0a9a75bd}} 
+\index{org\+::newdawn\+::slick\+::tools\+::peditor\+::\+Value\+Panel@{org\+::newdawn\+::slick\+::tools\+::peditor\+::\+Value\+Panel}!add\+Listener@{add\+Listener}}
+\index{add\+Listener@{add\+Listener}!org\+::newdawn\+::slick\+::tools\+::peditor\+::\+Value\+Panel@{org\+::newdawn\+::slick\+::tools\+::peditor\+::\+Value\+Panel}}
+\subsubsection{\texorpdfstring{add\+Listener()}{addListener()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+tools.\+peditor.\+Value\+Panel.\+add\+Listener (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_input_panel_listener}{Input\+Panel\+Listener}}}]{listener }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Add a listener to be notified of updates to this panel
+
+
+\begin{DoxyParams}{Parameters}
+{\em listener} & The listener to be notified of updates to this panel \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+120                                                          \{
+121         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_value_panel_ae8be70f5fbf496c47f1b1c5cb9e3c1fa}{listeners}}.add(listener);
+122     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_value_panel_a26186da0cc3082d426c54cc7cc94aefe}\label{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_value_panel_a26186da0cc3082d426c54cc7cc94aefe}} 
+\index{org\+::newdawn\+::slick\+::tools\+::peditor\+::\+Value\+Panel@{org\+::newdawn\+::slick\+::tools\+::peditor\+::\+Value\+Panel}!fire\+Updated@{fire\+Updated}}
+\index{fire\+Updated@{fire\+Updated}!org\+::newdawn\+::slick\+::tools\+::peditor\+::\+Value\+Panel@{org\+::newdawn\+::slick\+::tools\+::peditor\+::\+Value\+Panel}}
+\subsubsection{\texorpdfstring{fire\+Updated()}{fireUpdated()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+tools.\+peditor.\+Value\+Panel.\+fire\+Updated (\begin{DoxyParamCaption}\item[{Object}]{source }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+Fire notification of updates to all listeners
+
+
+\begin{DoxyParams}{Parameters}
+{\em source} & The source of the update \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+129                                             \{
+130         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i=0;i<\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_value_panel_ae8be70f5fbf496c47f1b1c5cb9e3c1fa}{listeners}}.size();i++) \{
+131             ((InputPanelListener) \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_value_panel_ae8be70f5fbf496c47f1b1c5cb9e3c1fa}{listeners}}.get(i)).valueUpdated(\textcolor{keyword}{this});
+132         \}
+133     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_value_panel_a7305b51023972797f8079b7df81032f8}\label{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_value_panel_a7305b51023972797f8079b7df81032f8}} 
+\index{org\+::newdawn\+::slick\+::tools\+::peditor\+::\+Value\+Panel@{org\+::newdawn\+::slick\+::tools\+::peditor\+::\+Value\+Panel}!get\+Value@{get\+Value}}
+\index{get\+Value@{get\+Value}!org\+::newdawn\+::slick\+::tools\+::peditor\+::\+Value\+Panel@{org\+::newdawn\+::slick\+::tools\+::peditor\+::\+Value\+Panel}}
+\subsubsection{\texorpdfstring{get\+Value()}{getValue()}}
+{\footnotesize\ttfamily int org.\+newdawn.\+slick.\+tools.\+peditor.\+Value\+Panel.\+get\+Value (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get the current value
+
+\begin{DoxyReturn}{Returns}
+The current value 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+111                           \{
+112         \textcolor{keywordflow}{return} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_value_panel_a7b5cc531a99541b95b43875ab0e9766f}{slider}}.getValue();
+113     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_value_panel_a25dc49b1a78fa4c8e1556520343bf605}\label{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_value_panel_a25dc49b1a78fa4c8e1556520343bf605}} 
+\index{org\+::newdawn\+::slick\+::tools\+::peditor\+::\+Value\+Panel@{org\+::newdawn\+::slick\+::tools\+::peditor\+::\+Value\+Panel}!is\+Linear@{is\+Linear}}
+\index{is\+Linear@{is\+Linear}!org\+::newdawn\+::slick\+::tools\+::peditor\+::\+Value\+Panel@{org\+::newdawn\+::slick\+::tools\+::peditor\+::\+Value\+Panel}}
+\subsubsection{\texorpdfstring{is\+Linear()}{isLinear()}}
+{\footnotesize\ttfamily boolean org.\+newdawn.\+slick.\+tools.\+peditor.\+Value\+Panel.\+is\+Linear (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+True if this value should give linear random numbers
+
+\begin{DoxyReturn}{Returns}
+True if this value should give linear random numbers 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+93                               \{
+94         \textcolor{keywordflow}{return} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_value_panel_accd8a5d5872a9fe38b1e546944982dfd}{linear}}.isSelected();
+95     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_value_panel_a3bed734dc87c5562ffc73169bfdfa35e}\label{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_value_panel_a3bed734dc87c5562ffc73169bfdfa35e}} 
+\index{org\+::newdawn\+::slick\+::tools\+::peditor\+::\+Value\+Panel@{org\+::newdawn\+::slick\+::tools\+::peditor\+::\+Value\+Panel}!set\+Linear@{set\+Linear}}
+\index{set\+Linear@{set\+Linear}!org\+::newdawn\+::slick\+::tools\+::peditor\+::\+Value\+Panel@{org\+::newdawn\+::slick\+::tools\+::peditor\+::\+Value\+Panel}}
+\subsubsection{\texorpdfstring{set\+Linear()}{setLinear()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+tools.\+peditor.\+Value\+Panel.\+set\+Linear (\begin{DoxyParamCaption}\item[{boolean}]{linear }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Indicate if this value is set to linear random numbers
+
+
+\begin{DoxyParams}{Parameters}
+{\em linear} & True if this vlaue is set to give linear random numbers \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+84                                           \{
+85         this.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_value_panel_accd8a5d5872a9fe38b1e546944982dfd}{linear}}.setSelected(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_value_panel_accd8a5d5872a9fe38b1e546944982dfd}{linear}});
+86     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_value_panel_a8cfa3d3ef8c70a27962db60cfaa1e7fc}\label{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_value_panel_a8cfa3d3ef8c70a27962db60cfaa1e7fc}} 
+\index{org\+::newdawn\+::slick\+::tools\+::peditor\+::\+Value\+Panel@{org\+::newdawn\+::slick\+::tools\+::peditor\+::\+Value\+Panel}!set\+Value@{set\+Value}}
+\index{set\+Value@{set\+Value}!org\+::newdawn\+::slick\+::tools\+::peditor\+::\+Value\+Panel@{org\+::newdawn\+::slick\+::tools\+::peditor\+::\+Value\+Panel}}
+\subsubsection{\texorpdfstring{set\+Value()}{setValue()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+tools.\+peditor.\+Value\+Panel.\+set\+Value (\begin{DoxyParamCaption}\item[{int}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Set the new value
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & The value to be assigned \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+102                                     \{
+103         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_value_panel_a7b5cc531a99541b95b43875ab0e9766f}{slider}}.setValue(value);
+104     \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_value_panel_accd8a5d5872a9fe38b1e546944982dfd}\label{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_value_panel_accd8a5d5872a9fe38b1e546944982dfd}} 
+\index{org\+::newdawn\+::slick\+::tools\+::peditor\+::\+Value\+Panel@{org\+::newdawn\+::slick\+::tools\+::peditor\+::\+Value\+Panel}!linear@{linear}}
+\index{linear@{linear}!org\+::newdawn\+::slick\+::tools\+::peditor\+::\+Value\+Panel@{org\+::newdawn\+::slick\+::tools\+::peditor\+::\+Value\+Panel}}
+\subsubsection{\texorpdfstring{linear}{linear}}
+{\footnotesize\ttfamily J\+Check\+Box org.\+newdawn.\+slick.\+tools.\+peditor.\+Value\+Panel.\+linear = new J\+Check\+Box()\hspace{0.3cm}{\ttfamily [private]}}
+
+The button to set this value as linear \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_value_panel_ae8be70f5fbf496c47f1b1c5cb9e3c1fa}\label{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_value_panel_ae8be70f5fbf496c47f1b1c5cb9e3c1fa}} 
+\index{org\+::newdawn\+::slick\+::tools\+::peditor\+::\+Value\+Panel@{org\+::newdawn\+::slick\+::tools\+::peditor\+::\+Value\+Panel}!listeners@{listeners}}
+\index{listeners@{listeners}!org\+::newdawn\+::slick\+::tools\+::peditor\+::\+Value\+Panel@{org\+::newdawn\+::slick\+::tools\+::peditor\+::\+Value\+Panel}}
+\subsubsection{\texorpdfstring{listeners}{listeners}}
+{\footnotesize\ttfamily Array\+List org.\+newdawn.\+slick.\+tools.\+peditor.\+Value\+Panel.\+listeners = new Array\+List()\hspace{0.3cm}{\ttfamily [private]}}
+
+The list of listeners to be notified of updates \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_value_panel_ac3f651b9e3f21c979dc9f3c7df17da3a}\label{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_value_panel_ac3f651b9e3f21c979dc9f3c7df17da3a}} 
+\index{org\+::newdawn\+::slick\+::tools\+::peditor\+::\+Value\+Panel@{org\+::newdawn\+::slick\+::tools\+::peditor\+::\+Value\+Panel}!name@{name}}
+\index{name@{name}!org\+::newdawn\+::slick\+::tools\+::peditor\+::\+Value\+Panel@{org\+::newdawn\+::slick\+::tools\+::peditor\+::\+Value\+Panel}}
+\subsubsection{\texorpdfstring{name}{name}}
+{\footnotesize\ttfamily String org.\+newdawn.\+slick.\+tools.\+peditor.\+Value\+Panel.\+name\hspace{0.3cm}{\ttfamily [private]}}
+
+The name given for the particlar value \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_value_panel_a7b5cc531a99541b95b43875ab0e9766f}\label{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_value_panel_a7b5cc531a99541b95b43875ab0e9766f}} 
+\index{org\+::newdawn\+::slick\+::tools\+::peditor\+::\+Value\+Panel@{org\+::newdawn\+::slick\+::tools\+::peditor\+::\+Value\+Panel}!slider@{slider}}
+\index{slider@{slider}!org\+::newdawn\+::slick\+::tools\+::peditor\+::\+Value\+Panel@{org\+::newdawn\+::slick\+::tools\+::peditor\+::\+Value\+Panel}}
+\subsubsection{\texorpdfstring{slider}{slider}}
+{\footnotesize\ttfamily J\+Slider org.\+newdawn.\+slick.\+tools.\+peditor.\+Value\+Panel.\+slider\hspace{0.3cm}{\ttfamily [private]}}
+
+The slider to set the value 

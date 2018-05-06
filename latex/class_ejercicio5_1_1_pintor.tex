@@ -1,0 +1,81 @@
+\hypertarget{class_ejercicio5_1_1_pintor}{}\section{Ejercicio5.\+Pintor Class Reference}
+\label{class_ejercicio5_1_1_pintor}\index{Ejercicio5.\+Pintor@{Ejercicio5.\+Pintor}}
+Inheritance diagram for Ejercicio5.\+Pintor\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_ejercicio5_1_1_pintor}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_ejercicio5_1_1_pintor_a066c5c189c40341786e8728f32258190}{Pintor}} (J\+Button \mbox{\hyperlink{class_ejercicio5_1_1_pintor_a470004bc84afaefaee715182d6601df2}{b}})
+\item 
+void \mbox{\hyperlink{class_ejercicio5_1_1_pintor_a31cafae186af58bb92c56a642d0997cb}{run}} ()
+\end{DoxyCompactItemize}
+\subsection*{Package Attributes}
+\begin{DoxyCompactItemize}
+\item 
+J\+Button \mbox{\hyperlink{class_ejercicio5_1_1_pintor_a470004bc84afaefaee715182d6601df2}{b}}
+\item 
+Color \mbox{\hyperlink{class_ejercicio5_1_1_pintor_a8604057520bcd80da76eb95ac70367a9}{paleta}} \mbox{[}$\,$\mbox{]} = new Color\mbox{[}10\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_ejercicio5_1_1_pintor_a066c5c189c40341786e8728f32258190}\label{class_ejercicio5_1_1_pintor_a066c5c189c40341786e8728f32258190}} 
+\index{Ejercicio5\+::\+Pintor@{Ejercicio5\+::\+Pintor}!Pintor@{Pintor}}
+\index{Pintor@{Pintor}!Ejercicio5\+::\+Pintor@{Ejercicio5\+::\+Pintor}}
+\subsubsection{\texorpdfstring{Pintor()}{Pintor()}}
+{\footnotesize\ttfamily Ejercicio5.\+Pintor.\+Pintor (\begin{DoxyParamCaption}\item[{J\+Button}]{b }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+20                             \{
+21         this.\mbox{\hyperlink{class_ejercicio5_1_1_pintor_a470004bc84afaefaee715182d6601df2}{b}}=\mbox{\hyperlink{class_ejercicio5_1_1_pintor_a470004bc84afaefaee715182d6601df2}{b}};
+22         \mbox{\hyperlink{class_ejercicio5_1_1_pintor_a8604057520bcd80da76eb95ac70367a9}{paleta}}[0]=Color.BLACK;
+23         \mbox{\hyperlink{class_ejercicio5_1_1_pintor_a8604057520bcd80da76eb95ac70367a9}{paleta}}[1]=Color.RED;
+24         \mbox{\hyperlink{class_ejercicio5_1_1_pintor_a8604057520bcd80da76eb95ac70367a9}{paleta}}[2]=Color.GREEN;
+25         \mbox{\hyperlink{class_ejercicio5_1_1_pintor_a8604057520bcd80da76eb95ac70367a9}{paleta}}[3]=Color.BLUE;
+26         \mbox{\hyperlink{class_ejercicio5_1_1_pintor_a8604057520bcd80da76eb95ac70367a9}{paleta}}[4]=Color.YELLOW;
+27         \mbox{\hyperlink{class_ejercicio5_1_1_pintor_a8604057520bcd80da76eb95ac70367a9}{paleta}}[5]=Color.LIGHT\_GRAY;
+28         \mbox{\hyperlink{class_ejercicio5_1_1_pintor_a8604057520bcd80da76eb95ac70367a9}{paleta}}[6]=Color.CYAN;
+29         \mbox{\hyperlink{class_ejercicio5_1_1_pintor_a8604057520bcd80da76eb95ac70367a9}{paleta}}[7]=Color.DARK\_GRAY;
+30         \mbox{\hyperlink{class_ejercicio5_1_1_pintor_a8604057520bcd80da76eb95ac70367a9}{paleta}}[8]=Color.ORANGE;
+31         \mbox{\hyperlink{class_ejercicio5_1_1_pintor_a8604057520bcd80da76eb95ac70367a9}{paleta}}[9]=Color.PINK;
+32         \mbox{\hyperlink{namespaceejemplo_1_1clase_abcf43191f0ecf3b071ca2db7696ba821}{start}}();
+33     \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_ejercicio5_1_1_pintor_a31cafae186af58bb92c56a642d0997cb}\label{class_ejercicio5_1_1_pintor_a31cafae186af58bb92c56a642d0997cb}} 
+\index{Ejercicio5\+::\+Pintor@{Ejercicio5\+::\+Pintor}!run@{run}}
+\index{run@{run}!Ejercicio5\+::\+Pintor@{Ejercicio5\+::\+Pintor}}
+\subsubsection{\texorpdfstring{run()}{run()}}
+{\footnotesize\ttfamily void Ejercicio5.\+Pintor.\+run (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+34                      \{
+35           \textcolor{keywordflow}{while} (\textcolor{keyword}{true})\{
+36             \textcolor{keywordtype}{int} i = (int)(10. * Math.random());
+37             \mbox{\hyperlink{class_ejercicio5_1_1_pintor_a470004bc84afaefaee715182d6601df2}{b}}.setBackground(\mbox{\hyperlink{class_ejercicio5_1_1_pintor_a8604057520bcd80da76eb95ac70367a9}{paleta}}[i]);
+38         \}
+39     \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_ejercicio5_1_1_pintor_a470004bc84afaefaee715182d6601df2}\label{class_ejercicio5_1_1_pintor_a470004bc84afaefaee715182d6601df2}} 
+\index{Ejercicio5\+::\+Pintor@{Ejercicio5\+::\+Pintor}!b@{b}}
+\index{b@{b}!Ejercicio5\+::\+Pintor@{Ejercicio5\+::\+Pintor}}
+\subsubsection{\texorpdfstring{b}{b}}
+{\footnotesize\ttfamily J\+Button Ejercicio5.\+Pintor.\+b\hspace{0.3cm}{\ttfamily [package]}}
+
+\mbox{\Hypertarget{class_ejercicio5_1_1_pintor_a8604057520bcd80da76eb95ac70367a9}\label{class_ejercicio5_1_1_pintor_a8604057520bcd80da76eb95ac70367a9}} 
+\index{Ejercicio5\+::\+Pintor@{Ejercicio5\+::\+Pintor}!paleta@{paleta}}
+\index{paleta@{paleta}!Ejercicio5\+::\+Pintor@{Ejercicio5\+::\+Pintor}}
+\subsubsection{\texorpdfstring{paleta}{paleta}}
+{\footnotesize\ttfamily Color Ejercicio5.\+Pintor.\+paleta\mbox{[}$\,$\mbox{]} = new Color\mbox{[}10\mbox{]}\hspace{0.3cm}{\ttfamily [package]}}
+

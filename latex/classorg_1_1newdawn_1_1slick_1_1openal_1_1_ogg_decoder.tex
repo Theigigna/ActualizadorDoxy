@@ -1,0 +1,379 @@
+\hypertarget{classorg_1_1newdawn_1_1slick_1_1openal_1_1_ogg_decoder}{}\section{org.\+newdawn.\+slick.\+openal.\+Ogg\+Decoder Class Reference}
+\label{classorg_1_1newdawn_1_1slick_1_1openal_1_1_ogg_decoder}\index{org.\+newdawn.\+slick.\+openal.\+Ogg\+Decoder@{org.\+newdawn.\+slick.\+openal.\+Ogg\+Decoder}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_ogg_decoder_a488989a7dc984344c96fa2118f72539a}{Ogg\+Decoder}} ()
+\item 
+\mbox{\hyperlink{namespaceorg_1_1newdawn_1_1slick_1_1openal_classorg_1_1newdawn_1_1slick_1_1openal_1_1_ogg_data}{Ogg\+Data}} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_ogg_decoder_a0710a2de5e29602d1486f42281082f70}{get\+Data}} (Input\+Stream input)  throws I\+O\+Exception 
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_ogg_decoder_a520d588229e32d6047b78ac47c9eb70d}{convsize}} = 4096 $\ast$ 4
+\item 
+byte \mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_ogg_decoder_aaeb004d8dbc65576df116614fe9f9824}{convbuffer}} = new byte\mbox{[}\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_ogg_decoder_a520d588229e32d6047b78ac47c9eb70d}{convsize}}\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Decode an O\+GG file to P\+CM data
+
+\begin{DoxyAuthor}{Author}
+Kevin Glass 
+\end{DoxyAuthor}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1openal_1_1_ogg_decoder_a488989a7dc984344c96fa2118f72539a}\label{classorg_1_1newdawn_1_1slick_1_1openal_1_1_ogg_decoder_a488989a7dc984344c96fa2118f72539a}} 
+\index{org\+::newdawn\+::slick\+::openal\+::\+Ogg\+Decoder@{org\+::newdawn\+::slick\+::openal\+::\+Ogg\+Decoder}!Ogg\+Decoder@{Ogg\+Decoder}}
+\index{Ogg\+Decoder@{Ogg\+Decoder}!org\+::newdawn\+::slick\+::openal\+::\+Ogg\+Decoder@{org\+::newdawn\+::slick\+::openal\+::\+Ogg\+Decoder}}
+\subsubsection{\texorpdfstring{Ogg\+Decoder()}{OggDecoder()}}
+{\footnotesize\ttfamily org.\+newdawn.\+slick.\+openal.\+Ogg\+Decoder.\+Ogg\+Decoder (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Create a new O\+GG decoder 
+\begin{DoxyCode}
+22                         \{
+23     \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1openal_1_1_ogg_decoder_a0710a2de5e29602d1486f42281082f70}\label{classorg_1_1newdawn_1_1slick_1_1openal_1_1_ogg_decoder_a0710a2de5e29602d1486f42281082f70}} 
+\index{org\+::newdawn\+::slick\+::openal\+::\+Ogg\+Decoder@{org\+::newdawn\+::slick\+::openal\+::\+Ogg\+Decoder}!get\+Data@{get\+Data}}
+\index{get\+Data@{get\+Data}!org\+::newdawn\+::slick\+::openal\+::\+Ogg\+Decoder@{org\+::newdawn\+::slick\+::openal\+::\+Ogg\+Decoder}}
+\subsubsection{\texorpdfstring{get\+Data()}{getData()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespaceorg_1_1newdawn_1_1slick_1_1openal_classorg_1_1newdawn_1_1slick_1_1openal_1_1_ogg_data}{Ogg\+Data}} org.\+newdawn.\+slick.\+openal.\+Ogg\+Decoder.\+get\+Data (\begin{DoxyParamCaption}\item[{Input\+Stream}]{input }\end{DoxyParamCaption}) throws I\+O\+Exception\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get the data out of an O\+GG file
+
+
+\begin{DoxyParams}{Parameters}
+{\em input} & The input stream from which to read the O\+GG file \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The data describing the O\+GG thats been read 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em I\+O\+Exception} & Indicaites a failure to read the O\+GG file \\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyCode}
+32                                                                  \{
+33         \textcolor{keywordflow}{if} (input == null) \{
+34             \textcolor{keywordflow}{throw} \textcolor{keyword}{new} IOException(\textcolor{stringliteral}{"Failed to read OGG, source does not exist?"});
+35         \}
+36         ByteArrayOutputStream dataout = \textcolor{keyword}{new} ByteArrayOutputStream();
+37         
+38 \textcolor{comment}{//      SyncState oy = new SyncState(); // sync and verify incoming physical bitstream}
+39 \textcolor{comment}{//      StreamState os = new StreamState(); // take physical pages, weld into a logical stream of packets}
+40 \textcolor{comment}{//      Page og = new Page(); // one Ogg bitstream page.  Vorbis packets are inside}
+41 \textcolor{comment}{//      Packet op = new Packet(); // one raw packet of data for decode}
+42 \textcolor{comment}{//}
+43 \textcolor{comment}{//      Info vi = new Info(); // struct that stores all the static vorbis bitstream settings}
+44 \textcolor{comment}{//      Comment vc = new Comment(); // struct that stores all the bitstream user comments}
+45 \textcolor{comment}{//      DspState vd = new DspState(); // central working state for the packet->PCM decoder}
+46 \textcolor{comment}{//      Block vb = new Block(vd); // local working space for packet->PCM decode}
+47 \textcolor{comment}{//}
+48 \textcolor{comment}{//      byte[] buffer;}
+49 \textcolor{comment}{//      int bytes = 0;}
+50 \textcolor{comment}{//}
+51 \textcolor{comment}{//      boolean bigEndian = ByteOrder.nativeOrder().equals(ByteOrder.BIG\_ENDIAN);}
+52 \textcolor{comment}{//      // Decode setup}
+53 \textcolor{comment}{//}
+54 \textcolor{comment}{//      oy.init(); // Now we can read pages}
+55 \textcolor{comment}{//}
+56 \textcolor{comment}{//      while (true) \{ // we repeat if the bitstream is chained}
+57 \textcolor{comment}{//          int eos = 0;}
+58 \textcolor{comment}{//}
+59 \textcolor{comment}{//          // grab some data at the head of the stream.  We want the first page}
+60 \textcolor{comment}{//          // (which is guaranteed to be small and only contain the Vorbis}
+61 \textcolor{comment}{//          // stream initial header) We need the first page to get the stream}
+62 \textcolor{comment}{//          // serialno.}
+63 \textcolor{comment}{//}
+64 \textcolor{comment}{//          // submit a 4k block to libvorbis' Ogg layer}
+65 \textcolor{comment}{//          int index = oy.buffer(4096);}
+66 \textcolor{comment}{//          }
+67 \textcolor{comment}{//          buffer = oy.data;}
+68 \textcolor{comment}{//          try \{}
+69 \textcolor{comment}{//              bytes = input.read(buffer, index, 4096);}
+70 \textcolor{comment}{//          \} catch (Exception e) \{}
+71 \textcolor{comment}{//              Log.error("Failure reading in vorbis");}
+72 \textcolor{comment}{//              Log.error(e);}
+73 \textcolor{comment}{//              System.exit(0);}
+74 \textcolor{comment}{//          \}}
+75 \textcolor{comment}{//          oy.wrote(bytes);}
+76 \textcolor{comment}{//}
+77 \textcolor{comment}{//          // Get the first page.}
+78 \textcolor{comment}{//          if (oy.pageout(og) != 1) \{}
+79 \textcolor{comment}{//              // have we simply run out of data?  If so, we're done.}
+80 \textcolor{comment}{//              if (bytes < 4096)}
+81 \textcolor{comment}{//                  break;}
+82 \textcolor{comment}{//}
+83 \textcolor{comment}{//              // error case.  Must not be Vorbis data}
+84 \textcolor{comment}{//              Log.error("Input does not appear to be an Ogg bitstream.");}
+85 \textcolor{comment}{//              System.exit(0);}
+86 \textcolor{comment}{//          \}}
+87 \textcolor{comment}{//}
+88 \textcolor{comment}{//          // Get the serial number and set up the rest of decode.}
+89 \textcolor{comment}{//          // serialno first; use it to set up a logical stream}
+90 \textcolor{comment}{//          os.init(og.serialno());}
+91 \textcolor{comment}{//}
+92 \textcolor{comment}{//          // extract the initial header from the first page and verify that the}
+93 \textcolor{comment}{//          // Ogg bitstream is in fact Vorbis data}
+94 \textcolor{comment}{//}
+95 \textcolor{comment}{//          // I handle the initial header first instead of just having the code}
+96 \textcolor{comment}{//          // read all three Vorbis headers at once because reading the initial}
+97 \textcolor{comment}{//          // header is an easy way to identify a Vorbis bitstream and it's}
+98 \textcolor{comment}{//          // useful to see that functionality seperated out.}
+99 \textcolor{comment}{//}
+100 \textcolor{comment}{//          vi.init();}
+101 \textcolor{comment}{//          vc.init();}
+102 \textcolor{comment}{//          if (os.pagein(og) < 0) \{}
+103 \textcolor{comment}{//              // error; stream version mismatch perhaps}
+104 \textcolor{comment}{//              Log.error("Error reading first page of Ogg bitstream data.");}
+105 \textcolor{comment}{//              System.exit(0);}
+106 \textcolor{comment}{//          \}}
+107 \textcolor{comment}{//}
+108 \textcolor{comment}{//          if (os.packetout(op) != 1) \{}
+109 \textcolor{comment}{//              // no page? must not be vorbis}
+110 \textcolor{comment}{//              Log.error("Error reading initial header packet.");}
+111 \textcolor{comment}{//              System.exit(0);}
+112 \textcolor{comment}{//          \}}
+113 \textcolor{comment}{//}
+114 \textcolor{comment}{//          if (vi.synthesis\_headerin(vc, op) < 0) \{}
+115 \textcolor{comment}{//              // error case; not a vorbis header}
+116 \textcolor{comment}{//              Log.error("This Ogg bitstream does not contain Vorbis audio data.");}
+117 \textcolor{comment}{//              System.exit(0);}
+118 \textcolor{comment}{//          \}}
+119 \textcolor{comment}{//}
+120 \textcolor{comment}{//          // At this point, we're sure we're Vorbis.  We've set up the logical}
+121 \textcolor{comment}{//          // (Ogg) bitstream decoder.  Get the comment and codebook headers and}
+122 \textcolor{comment}{//          // set up the Vorbis decoder}
+123 \textcolor{comment}{//}
+124 \textcolor{comment}{//          // The next two packets in order are the comment and codebook headers.}
+125 \textcolor{comment}{//          // They're likely large and may span multiple pages.  Thus we reead}
+126 \textcolor{comment}{//          // and submit data until we get our two pacakets, watching that no}
+127 \textcolor{comment}{//          // pages are missing.  If a page is missing, error out; losing a}
+128 \textcolor{comment}{//          // header page is the only place where missing data is fatal. */}
+129 \textcolor{comment}{//}
+130 \textcolor{comment}{//          int i = 0;}
+131 \textcolor{comment}{//          while (i < 2) \{}
+132 \textcolor{comment}{//              while (i < 2) \{}
+133 \textcolor{comment}{//}
+134 \textcolor{comment}{//                  int result = oy.pageout(og);}
+135 \textcolor{comment}{//                  if (result == 0)}
+136 \textcolor{comment}{//                      break; // Need more data}
+137 \textcolor{comment}{//                  // Don't complain about missing or corrupt data yet.  We'll}
+138 \textcolor{comment}{//                  // catch it at the packet output phase}
+139 \textcolor{comment}{//}
+140 \textcolor{comment}{//                  if (result == 1) \{}
+141 \textcolor{comment}{//                      os.pagein(og); // we can ignore any errors here}
+142 \textcolor{comment}{//                      // as they'll also become apparent}
+143 \textcolor{comment}{//                      // at packetout}
+144 \textcolor{comment}{//                      while (i < 2) \{}
+145 \textcolor{comment}{//                          result = os.packetout(op);}
+146 \textcolor{comment}{//                          if (result == 0)}
+147 \textcolor{comment}{//                              break;}
+148 \textcolor{comment}{//                          if (result == -1) \{}
+149 \textcolor{comment}{//                              // Uh oh; data at some point was corrupted or missing!}
+150 \textcolor{comment}{//                              // We can't tolerate that in a header.  Die.}
+151 \textcolor{comment}{//                              Log.error("Corrupt secondary header.  Exiting.");}
+152 \textcolor{comment}{//                              System.exit(0);}
+153 \textcolor{comment}{//                          \}}
+154 \textcolor{comment}{//                          vi.synthesis\_headerin(vc, op);}
+155 \textcolor{comment}{//                          i++;}
+156 \textcolor{comment}{//                      \}}
+157 \textcolor{comment}{//                  \}}
+158 \textcolor{comment}{//              \}}
+159 \textcolor{comment}{//              // no harm in not checking before adding more}
+160 \textcolor{comment}{//              index = oy.buffer(4096);}
+161 \textcolor{comment}{//              buffer = oy.data;}
+162 \textcolor{comment}{//              try \{}
+163 \textcolor{comment}{//                  bytes = input.read(buffer, index, 4096);}
+164 \textcolor{comment}{//              \} catch (Exception e) \{}
+165 \textcolor{comment}{//                  Log.error("Failed to read Vorbis: ");}
+166 \textcolor{comment}{//                  Log.error(e);}
+167 \textcolor{comment}{//                  System.exit(0);}
+168 \textcolor{comment}{//              \}}
+169 \textcolor{comment}{//              if (bytes == 0 && i < 2) \{}
+170 \textcolor{comment}{//                  Log.error("End of file before finding all Vorbis headers!");}
+171 \textcolor{comment}{//                  System.exit(0);}
+172 \textcolor{comment}{//              \}}
+173 \textcolor{comment}{//              oy.wrote(bytes);}
+174 \textcolor{comment}{//          \}}
+175 \textcolor{comment}{//}
+176 \textcolor{comment}{//          convsize = 4096 / vi.channels;}
+177 \textcolor{comment}{//}
+178 \textcolor{comment}{//          // OK, got and parsed all three headers. Initialize the Vorbis}
+179 \textcolor{comment}{//          //  packet->PCM decoder.}
+180 \textcolor{comment}{//          vd.synthesis\_init(vi); // central decode state}
+181 \textcolor{comment}{//          vb.init(vd); // local state for most of the decode}
+182 \textcolor{comment}{//          // so multiple block decodes can}
+183 \textcolor{comment}{//          // proceed in parallel.  We could init}
+184 \textcolor{comment}{//          // multiple vorbis\_block structures}
+185 \textcolor{comment}{//          // for vd here}
+186 \textcolor{comment}{//}
+187 \textcolor{comment}{//          float[][][] \_pcm = new float[1][][];}
+188 \textcolor{comment}{//          int[] \_index = new int[vi.channels];}
+189 \textcolor{comment}{//          // The rest is just a straight decode loop until end of stream}
+190 \textcolor{comment}{//          while (eos == 0) \{}
+191 \textcolor{comment}{//              while (eos == 0) \{}
+192 \textcolor{comment}{//}
+193 \textcolor{comment}{//                  int result = oy.pageout(og);}
+194 \textcolor{comment}{//                  if (result == 0)}
+195 \textcolor{comment}{//                      break; // need more data}
+196 \textcolor{comment}{//                  if (result == -1) \{ // missing or corrupt data at this page position}
+197 \textcolor{comment}{//                      Log.error("Corrupt or missing data in bitstream; continuing...");}
+198 \textcolor{comment}{//                  \} else \{}
+199 \textcolor{comment}{//                      os.pagein(og); // can safely ignore errors at}
+200 \textcolor{comment}{//                      // this point}
+201 \textcolor{comment}{//                      while (true) \{}
+202 \textcolor{comment}{//                          result = os.packetout(op);}
+203 \textcolor{comment}{//}
+204 \textcolor{comment}{//                          if (result == 0)}
+205 \textcolor{comment}{//                              break; // need more data}
+206 \textcolor{comment}{//                          if (result == -1) \{ // missing or corrupt data at this page position}
+207 \textcolor{comment}{//                              // no reason to complain; already complained above}
+208 \textcolor{comment}{//                          \} else \{}
+209 \textcolor{comment}{//                              // we have a packet.  Decode it}
+210 \textcolor{comment}{//                              int samples;}
+211 \textcolor{comment}{//                              if (vb.synthesis(op) == 0) \{ // test for success!}
+212 \textcolor{comment}{//                                  vd.synthesis\_blockin(vb);}
+213 \textcolor{comment}{//                              \}}
+214 \textcolor{comment}{//}
+215 \textcolor{comment}{//                              // **pcm is a multichannel float vector.  In stereo, for}
+216 \textcolor{comment}{//                              // example, pcm[0] is left, and pcm[1] is right.  samples is}
+217 \textcolor{comment}{//                              // the size of each channel.  Convert the float values}
+218 \textcolor{comment}{//                              // (-1.<=range<=1.) to whatever PCM format and write it out}
+219 \textcolor{comment}{//}
+220 \textcolor{comment}{//                              while ((samples = vd.synthesis\_pcmout(\_pcm,}
+221 \textcolor{comment}{//                                      \_index)) > 0) \{}
+222 \textcolor{comment}{//                                  float[][] pcm = \_pcm[0];}
+223 \textcolor{comment}{//                                  //boolean clipflag = false;}
+224 \textcolor{comment}{//                                  int bout = (samples < convsize ? samples}
+225 \textcolor{comment}{//                                          : convsize);}
+226 \textcolor{comment}{//}
+227 \textcolor{comment}{//                                  // convert floats to 16 bit signed ints (host order) and}
+228 \textcolor{comment}{//                                  // interleave}
+229 \textcolor{comment}{//                                  for (i = 0; i < vi.channels; i++) \{}
+230 \textcolor{comment}{//                                      int ptr = i * 2;}
+231 \textcolor{comment}{//                                      //int ptr=i;}
+232 \textcolor{comment}{//                                      int mono = \_index[i];}
+233 \textcolor{comment}{//                                      for (int j = 0; j < bout; j++) \{}
+234 \textcolor{comment}{//                                          int val = (int) (pcm[i][mono + j] * 32767.);}
+235 \textcolor{comment}{//                                          //                short val=(short)(pcm[i][mono+j]*32767.);}
+236 \textcolor{comment}{//                                          //                int
+       val=(int)Math.round(pcm[i][mono+j]*32767.);}
+237 \textcolor{comment}{//                                          // might as well guard against clipping}
+238 \textcolor{comment}{//                                          if (val > 32767) \{}
+239 \textcolor{comment}{//                                              val = 32767;}
+240 \textcolor{comment}{//                                              //clipflag = true;}
+241 \textcolor{comment}{//                                          \}}
+242 \textcolor{comment}{//                                          if (val < -32768) \{}
+243 \textcolor{comment}{//                                              val = -32768;}
+244 \textcolor{comment}{//                                              //clipflag = true;}
+245 \textcolor{comment}{//                                          \}}
+246 \textcolor{comment}{//                                          if (val < 0)}
+247 \textcolor{comment}{//                                              val = val | 0x8000;}
+248 \textcolor{comment}{//              }
+249 \textcolor{comment}{//                                          if (bigEndian) \{}
+250 \textcolor{comment}{//                                              convbuffer[ptr] = (byte) (val >>> 8);}
+251 \textcolor{comment}{//                                              convbuffer[ptr + 1] = (byte) (val);}
+252 \textcolor{comment}{//                                          \} else \{}
+253 \textcolor{comment}{//                                              convbuffer[ptr] = (byte) (val);}
+254 \textcolor{comment}{//                                              convbuffer[ptr + 1] = (byte) (val >>> 8);}
+255 \textcolor{comment}{//                                          \}}
+256 \textcolor{comment}{//                                          ptr += 2 * (vi.channels);}
+257 \textcolor{comment}{//                                      \}}
+258 \textcolor{comment}{//                                  \}}
+259 \textcolor{comment}{//}
+260 \textcolor{comment}{//                                  dataout.write(convbuffer, 0, 2 * vi.channels * bout);}
+261 \textcolor{comment}{//}
+262 \textcolor{comment}{//                                  vd.synthesis\_read(bout); // tell libvorbis how}
+263 \textcolor{comment}{//                                  // many samples we}
+264 \textcolor{comment}{//                                  // actually consumed}
+265 \textcolor{comment}{//                              \}}
+266 \textcolor{comment}{//                          \}}
+267 \textcolor{comment}{//                      \}}
+268 \textcolor{comment}{//                      if (og.eos() != 0)}
+269 \textcolor{comment}{//                          eos = 1;}
+270 \textcolor{comment}{//                  \}}
+271 \textcolor{comment}{//              \}}
+272 \textcolor{comment}{//              if (eos == 0) \{}
+273 \textcolor{comment}{//                  index = oy.buffer(4096);}
+274 \textcolor{comment}{//                  if (index >= 0) \{}
+275 \textcolor{comment}{//                      buffer = oy.data;}
+276 \textcolor{comment}{//                      try \{}
+277 \textcolor{comment}{//                          bytes = input.read(buffer, index, 4096);}
+278 \textcolor{comment}{//                      \} catch (Exception e) \{}
+279 \textcolor{comment}{//                          Log.error("Failure during vorbis decoding");}
+280 \textcolor{comment}{//                          Log.error(e);}
+281 \textcolor{comment}{//                          return null;}
+282 \textcolor{comment}{//                      \}}
+283 \textcolor{comment}{//                  \} else \{}
+284 \textcolor{comment}{//                      bytes = 0;}
+285 \textcolor{comment}{//                  \}}
+286 \textcolor{comment}{//                  oy.wrote(bytes);}
+287 \textcolor{comment}{//                  if (bytes == 0)}
+288 \textcolor{comment}{//                      eos = 1;}
+289 \textcolor{comment}{//              \}}
+290 \textcolor{comment}{//          \}}
+291 \textcolor{comment}{//}
+292 \textcolor{comment}{//          // clean up this logical bitstream; before exit we see if we're}
+293 \textcolor{comment}{//          // followed by another [chained]}
+294 \textcolor{comment}{//}
+295 \textcolor{comment}{//          os.clear();}
+296 \textcolor{comment}{//}
+297 \textcolor{comment}{//          // ogg\_page and ogg\_packet structs always point to storage in}
+298 \textcolor{comment}{//          // libvorbis.  They're never freed or manipulated directly}
+299 \textcolor{comment}{//}
+300 \textcolor{comment}{//          vb.clear();}
+301 \textcolor{comment}{//          vd.clear();}
+302 \textcolor{comment}{//          vi.clear(); // must be called last}
+303 \textcolor{comment}{//      \}}
+304 \textcolor{comment}{//}
+305 \textcolor{comment}{//      // OK, clean up the framer}
+306 \textcolor{comment}{//      oy.clear();}
+307 \textcolor{comment}{//      OggData ogg = new OggData();}
+308 \textcolor{comment}{//      ogg.channels = vi.channels;}
+309 \textcolor{comment}{//      ogg.rate = vi.rate;}
+310 
+311         OggInputStream oggInput = \textcolor{keyword}{new} OggInputStream(input);
+312         
+313         \textcolor{keywordtype}{boolean} done = \textcolor{keyword}{false};
+314         \textcolor{keywordflow}{while} (!oggInput.atEnd()) \{
+315             dataout.write(oggInput.read());
+316         \}
+317     
+318         OggData ogg = \textcolor{keyword}{new} OggData();
+319         ogg.channels = oggInput.getChannels();
+320         ogg.rate = oggInput.getRate();
+321         
+322         byte[] data = dataout.toByteArray();
+323         ogg.data = ByteBuffer.allocateDirect(data.length);
+324         ogg.data.put(data);
+325         ogg.data.rewind();
+326         
+327         \textcolor{keywordflow}{return} ogg;
+328     \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1openal_1_1_ogg_decoder_aaeb004d8dbc65576df116614fe9f9824}\label{classorg_1_1newdawn_1_1slick_1_1openal_1_1_ogg_decoder_aaeb004d8dbc65576df116614fe9f9824}} 
+\index{org\+::newdawn\+::slick\+::openal\+::\+Ogg\+Decoder@{org\+::newdawn\+::slick\+::openal\+::\+Ogg\+Decoder}!convbuffer@{convbuffer}}
+\index{convbuffer@{convbuffer}!org\+::newdawn\+::slick\+::openal\+::\+Ogg\+Decoder@{org\+::newdawn\+::slick\+::openal\+::\+Ogg\+Decoder}}
+\subsubsection{\texorpdfstring{convbuffer}{convbuffer}}
+{\footnotesize\ttfamily byte \mbox{[}$\,$\mbox{]} org.\+newdawn.\+slick.\+openal.\+Ogg\+Decoder.\+convbuffer = new byte\mbox{[}\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_ogg_decoder_a520d588229e32d6047b78ac47c9eb70d}{convsize}}\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}
+
+The buffer used to read O\+GG file \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1openal_1_1_ogg_decoder_a520d588229e32d6047b78ac47c9eb70d}\label{classorg_1_1newdawn_1_1slick_1_1openal_1_1_ogg_decoder_a520d588229e32d6047b78ac47c9eb70d}} 
+\index{org\+::newdawn\+::slick\+::openal\+::\+Ogg\+Decoder@{org\+::newdawn\+::slick\+::openal\+::\+Ogg\+Decoder}!convsize@{convsize}}
+\index{convsize@{convsize}!org\+::newdawn\+::slick\+::openal\+::\+Ogg\+Decoder@{org\+::newdawn\+::slick\+::openal\+::\+Ogg\+Decoder}}
+\subsubsection{\texorpdfstring{convsize}{convsize}}
+{\footnotesize\ttfamily int org.\+newdawn.\+slick.\+openal.\+Ogg\+Decoder.\+convsize = 4096 $\ast$ 4\hspace{0.3cm}{\ttfamily [private]}}
+
+The conversion buffer size 

@@ -1,0 +1,263 @@
+\hypertarget{classorg_1_1newdawn_1_1slick_1_1tests_1_1_deferred_loading_test}{}\section{org.\+newdawn.\+slick.\+tests.\+Deferred\+Loading\+Test Class Reference}
+\label{classorg_1_1newdawn_1_1slick_1_1tests_1_1_deferred_loading_test}\index{org.\+newdawn.\+slick.\+tests.\+Deferred\+Loading\+Test@{org.\+newdawn.\+slick.\+tests.\+Deferred\+Loading\+Test}}
+Inheritance diagram for org.\+newdawn.\+slick.\+tests.\+Deferred\+Loading\+Test\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.369434cm]{classorg_1_1newdawn_1_1slick_1_1tests_1_1_deferred_loading_test}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_deferred_loading_test_a64e84e3546e18ba2accd4fc7d4a7e095}{Deferred\+Loading\+Test}} ()
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_deferred_loading_test_afbf7c4dc257eafa02aeba102dc53ba6d}{init}} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_game_container}{Game\+Container}} container)  throws Slick\+Exception 
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_deferred_loading_test_a63cb8647f8d34261a12603edb3434d7f}{render}} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_game_container}{Game\+Container}} container, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_graphics}{Graphics}} g)
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_deferred_loading_test_ae78c3726c83239f31589f42dddacefdd}{update}} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_game_container}{Game\+Container}} container, int delta)  throws Slick\+Exception 
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_deferred_loading_test_a3567e13d0a687ead635e6ce96433c37e}{key\+Pressed}} (int key, char c)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_deferred_loading_test_af6d4a365f606666656f28290663b3260}{main}} (String\mbox{[}$\,$\mbox{]} argv)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_music}{Music}} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_deferred_loading_test_aeee6a2a60464117e0720a20f1245475b}{music}}
+\item 
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_sound}{Sound}} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_deferred_loading_test_a8172e419d67fc261237d5700437448b2}{sound}}
+\item 
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_image}{Image}} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_deferred_loading_test_abfa4e4fd5420ec7ae5ace4b864ce4399}{image}}
+\item 
+\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1_font}{Font}} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_deferred_loading_test_af451c5e232ab4145044ecec9c379abdc}{font}}
+\item 
+\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1loading_1_1_deferred_resource}{Deferred\+Resource}} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_deferred_loading_test_a0031535ae6851e2d9a26ee37f2db573b}{next\+Resource}}
+\item 
+boolean \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_deferred_loading_test_aca1a456477bfe9014edfc279d8428c01}{started}}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+A test for deferred loading. Each of the resources is requested then the loading list is cycled to actual perform the resource allowing the rendering to be performed in between
+
+\begin{DoxyAuthor}{Author}
+kevin 
+\end{DoxyAuthor}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tests_1_1_deferred_loading_test_a64e84e3546e18ba2accd4fc7d4a7e095}\label{classorg_1_1newdawn_1_1slick_1_1tests_1_1_deferred_loading_test_a64e84e3546e18ba2accd4fc7d4a7e095}} 
+\index{org\+::newdawn\+::slick\+::tests\+::\+Deferred\+Loading\+Test@{org\+::newdawn\+::slick\+::tests\+::\+Deferred\+Loading\+Test}!Deferred\+Loading\+Test@{Deferred\+Loading\+Test}}
+\index{Deferred\+Loading\+Test@{Deferred\+Loading\+Test}!org\+::newdawn\+::slick\+::tests\+::\+Deferred\+Loading\+Test@{org\+::newdawn\+::slick\+::tests\+::\+Deferred\+Loading\+Test}}
+\subsubsection{\texorpdfstring{Deferred\+Loading\+Test()}{DeferredLoadingTest()}}
+{\footnotesize\ttfamily org.\+newdawn.\+slick.\+tests.\+Deferred\+Loading\+Test.\+Deferred\+Loading\+Test (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Create a new image rendering test 
+\begin{DoxyCode}
+42                                  \{
+43         super(\textcolor{stringliteral}{"Deferred Loading Test"});
+44     \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tests_1_1_deferred_loading_test_afbf7c4dc257eafa02aeba102dc53ba6d}\label{classorg_1_1newdawn_1_1slick_1_1tests_1_1_deferred_loading_test_afbf7c4dc257eafa02aeba102dc53ba6d}} 
+\index{org\+::newdawn\+::slick\+::tests\+::\+Deferred\+Loading\+Test@{org\+::newdawn\+::slick\+::tests\+::\+Deferred\+Loading\+Test}!init@{init}}
+\index{init@{init}!org\+::newdawn\+::slick\+::tests\+::\+Deferred\+Loading\+Test@{org\+::newdawn\+::slick\+::tests\+::\+Deferred\+Loading\+Test}}
+\subsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+tests.\+Deferred\+Loading\+Test.\+init (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_game_container}{Game\+Container}}}]{container }\end{DoxyParamCaption}) throws \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_slick_exception}{Slick\+Exception}}\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_basic_game_a8af0900217e4d389249f71367b22d114}{org.\+newdawn.\+slick.\+Basic\+Game\+::init}}(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_game_container}{org.\+newdawn.\+slick.\+Game\+Container}}) 
+\end{DoxySeeAlso}
+
+
+Implements \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1_game_ad2dd6affab08bb8fdb5fab0815957b7a}{org.\+newdawn.\+slick.\+Game}}.
+
+
+\begin{DoxyCode}
+49                                                                     \{
+50         LoadingList.setDeferredLoading(\textcolor{keyword}{true});
+51         
+52         \textcolor{keyword}{new} Sound(\textcolor{stringliteral}{"testdata/cbrown01.wav"});
+53         \textcolor{keyword}{new} Sound(\textcolor{stringliteral}{"testdata/engine.wav"});
+54         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_deferred_loading_test_a8172e419d67fc261237d5700437448b2}{sound}} = \textcolor{keyword}{new} Sound(\textcolor{stringliteral}{"testdata/restart.ogg"});
+55         \textcolor{keyword}{new} Music(\textcolor{stringliteral}{"testdata/testloop.ogg"});
+56         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_deferred_loading_test_aeee6a2a60464117e0720a20f1245475b}{music}} = \textcolor{keyword}{new} Music(\textcolor{stringliteral}{"testdata/SMB-X.XM"});
+57         
+58         \textcolor{keyword}{new} Image(\textcolor{stringliteral}{"testdata/cursor.png"});
+59         \textcolor{keyword}{new} Image(\textcolor{stringliteral}{"testdata/cursor.tga"});
+60         \textcolor{keyword}{new} Image(\textcolor{stringliteral}{"testdata/cursor.png"});
+61         \textcolor{keyword}{new} Image(\textcolor{stringliteral}{"testdata/cursor.png"});
+62         \textcolor{keyword}{new} Image(\textcolor{stringliteral}{"testdata/dungeontiles.gif"});
+63         \textcolor{keyword}{new} Image(\textcolor{stringliteral}{"testdata/logo.gif"});
+64         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_deferred_loading_test_abfa4e4fd5420ec7ae5ace4b864ce4399}{image}} = \textcolor{keyword}{new} Image(\textcolor{stringliteral}{"testdata/logo.tga"});
+65         \textcolor{keyword}{new} Image(\textcolor{stringliteral}{"testdata/logo.png"});
+66         \textcolor{keyword}{new} Image(\textcolor{stringliteral}{"testdata/rocket.png"});
+67         \textcolor{keyword}{new} Image(\textcolor{stringliteral}{"testdata/testpack.png"});
+68         
+69         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_deferred_loading_test_af451c5e232ab4145044ecec9c379abdc}{font}} = \textcolor{keyword}{new} AngelCodeFont(\textcolor{stringliteral}{"testdata/demo.fnt"}, \textcolor{stringliteral}{"testdata/demo\_00.tga"});
+70     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tests_1_1_deferred_loading_test_a3567e13d0a687ead635e6ce96433c37e}\label{classorg_1_1newdawn_1_1slick_1_1tests_1_1_deferred_loading_test_a3567e13d0a687ead635e6ce96433c37e}} 
+\index{org\+::newdawn\+::slick\+::tests\+::\+Deferred\+Loading\+Test@{org\+::newdawn\+::slick\+::tests\+::\+Deferred\+Loading\+Test}!key\+Pressed@{key\+Pressed}}
+\index{key\+Pressed@{key\+Pressed}!org\+::newdawn\+::slick\+::tests\+::\+Deferred\+Loading\+Test@{org\+::newdawn\+::slick\+::tests\+::\+Deferred\+Loading\+Test}}
+\subsubsection{\texorpdfstring{key\+Pressed()}{keyPressed()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+tests.\+Deferred\+Loading\+Test.\+key\+Pressed (\begin{DoxyParamCaption}\item[{int}]{key,  }\item[{char}]{c }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_basic_game_a4fbb3345b5abf5ddd54a99466d07f02f}{org.\+newdawn.\+slick.\+Basic\+Game\+::key\+Pressed(int, char)}} 
+\end{DoxySeeAlso}
+
+
+Implements \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1_key_listener_ac0b0568a21ef486c4f51382614c196ef}{org.\+newdawn.\+slick.\+Key\+Listener}}.
+
+
+\begin{DoxyCode}
+138                                             \{
+139     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tests_1_1_deferred_loading_test_af6d4a365f606666656f28290663b3260}\label{classorg_1_1newdawn_1_1slick_1_1tests_1_1_deferred_loading_test_af6d4a365f606666656f28290663b3260}} 
+\index{org\+::newdawn\+::slick\+::tests\+::\+Deferred\+Loading\+Test@{org\+::newdawn\+::slick\+::tests\+::\+Deferred\+Loading\+Test}!main@{main}}
+\index{main@{main}!org\+::newdawn\+::slick\+::tests\+::\+Deferred\+Loading\+Test@{org\+::newdawn\+::slick\+::tests\+::\+Deferred\+Loading\+Test}}
+\subsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily static void org.\+newdawn.\+slick.\+tests.\+Deferred\+Loading\+Test.\+main (\begin{DoxyParamCaption}\item[{String \mbox{[}$\,$\mbox{]}}]{argv }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Entry point to our test
+
+
+\begin{DoxyParams}{Parameters}
+{\em argv} & The arguments to pass into the test \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+125                                            \{
+126         \textcolor{keywordflow}{try} \{
+127             AppGameContainer container = \textcolor{keyword}{new} AppGameContainer(\textcolor{keyword}{new} 
+      \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_deferred_loading_test_a64e84e3546e18ba2accd4fc7d4a7e095}{DeferredLoadingTest}}());
+128             container.setDisplayMode(800,600,\textcolor{keyword}{false});
+129             container.start();
+130         \} \textcolor{keywordflow}{catch} (SlickException e) \{
+131             e.printStackTrace();
+132         \}
+133     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tests_1_1_deferred_loading_test_a63cb8647f8d34261a12603edb3434d7f}\label{classorg_1_1newdawn_1_1slick_1_1tests_1_1_deferred_loading_test_a63cb8647f8d34261a12603edb3434d7f}} 
+\index{org\+::newdawn\+::slick\+::tests\+::\+Deferred\+Loading\+Test@{org\+::newdawn\+::slick\+::tests\+::\+Deferred\+Loading\+Test}!render@{render}}
+\index{render@{render}!org\+::newdawn\+::slick\+::tests\+::\+Deferred\+Loading\+Test@{org\+::newdawn\+::slick\+::tests\+::\+Deferred\+Loading\+Test}}
+\subsubsection{\texorpdfstring{render()}{render()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+tests.\+Deferred\+Loading\+Test.\+render (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_game_container}{Game\+Container}}}]{container,  }\item[{\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_graphics}{Graphics}}}]{g }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1_game_af1a4670d43eb3ba04dfcf55ab1975b64}{org.\+newdawn.\+slick.\+Basic\+Game\+::render}}(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_game_container}{org.\+newdawn.\+slick.\+Game\+Container}}, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_graphics}{org.\+newdawn.\+slick.\+Graphics}}) 
+\end{DoxySeeAlso}
+
+
+Implements \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1_game_af1a4670d43eb3ba04dfcf55ab1975b64}{org.\+newdawn.\+slick.\+Game}}.
+
+
+\begin{DoxyCode}
+75                                                             \{
+76         \textcolor{keywordflow}{if} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_deferred_loading_test_a0031535ae6851e2d9a26ee37f2db573b}{nextResource}} != null) \{
+77             g.drawString(\textcolor{stringliteral}{"Loading: "}+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_deferred_loading_test_a0031535ae6851e2d9a26ee37f2db573b}{nextResource}}.\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1loading_1_1_deferred_resource_ab529c610c01ad0aaab6361c13010ba06}{getDescription}}(), 100, 100);
+78         \}
+79         
+80         \textcolor{keywordtype}{int} total = LoadingList.get().getTotalResources();
+81         \textcolor{keywordtype}{int} loaded = LoadingList.get().getTotalResources() - LoadingList.get().getRemainingResources();
+82         
+83         \textcolor{keywordtype}{float} bar = loaded / (float) total;
+84         g.fillRect(100,150,loaded*40,20);
+85         g.drawRect(100,150,total*40,20);
+86         
+87         \textcolor{keywordflow}{if} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_deferred_loading_test_aca1a456477bfe9014edfc279d8428c01}{started}}) \{
+88             \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_deferred_loading_test_abfa4e4fd5420ec7ae5ace4b864ce4399}{image}}.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_image_a9bddcca05c7140ab45df8ac5b250b6cd}{draw}}(100,200);
+89             \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_deferred_loading_test_af451c5e232ab4145044ecec9c379abdc}{font}}.\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1_font_a40b19381efcb64ce1ce4d446eff1e350}{drawString}}(100,500,\textcolor{stringliteral}{"LOADING COMPLETE"});
+90         \}
+91     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tests_1_1_deferred_loading_test_ae78c3726c83239f31589f42dddacefdd}\label{classorg_1_1newdawn_1_1slick_1_1tests_1_1_deferred_loading_test_ae78c3726c83239f31589f42dddacefdd}} 
+\index{org\+::newdawn\+::slick\+::tests\+::\+Deferred\+Loading\+Test@{org\+::newdawn\+::slick\+::tests\+::\+Deferred\+Loading\+Test}!update@{update}}
+\index{update@{update}!org\+::newdawn\+::slick\+::tests\+::\+Deferred\+Loading\+Test@{org\+::newdawn\+::slick\+::tests\+::\+Deferred\+Loading\+Test}}
+\subsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+tests.\+Deferred\+Loading\+Test.\+update (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_game_container}{Game\+Container}}}]{container,  }\item[{int}]{delta }\end{DoxyParamCaption}) throws \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_slick_exception}{Slick\+Exception}}\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_basic_game_acfe6fa05aef83bff1631af91a3e4bd20}{org.\+newdawn.\+slick.\+Basic\+Game\+::update}}(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_game_container}{org.\+newdawn.\+slick.\+Game\+Container}}, int) 
+\end{DoxySeeAlso}
+
+
+Implements \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1_game_ab07b2e9463ee4631620dde0de25bdee8}{org.\+newdawn.\+slick.\+Game}}.
+
+
+\begin{DoxyCode}
+96                                                                                  \{
+97         \textcolor{keywordflow}{if} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_deferred_loading_test_a0031535ae6851e2d9a26ee37f2db573b}{nextResource}} != null) \{
+98             \textcolor{keywordflow}{try} \{
+99                 \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_deferred_loading_test_a0031535ae6851e2d9a26ee37f2db573b}{nextResource}}.\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1loading_1_1_deferred_resource_a08c6171e3a44634c06c9160f5b785ad6}{load}}();
+100                 \textcolor{comment}{// slow down loading for example purposes}
+101                 \textcolor{keywordflow}{try} \{ Thread.sleep(50); \} \textcolor{keywordflow}{catch} (Exception e) \{\}
+102             \} \textcolor{keywordflow}{catch} (IOException e) \{
+103                 \textcolor{keywordflow}{throw} \textcolor{keyword}{new} SlickException(\textcolor{stringliteral}{"Failed to load: "}+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_deferred_loading_test_a0031535ae6851e2d9a26ee37f2db573b}{nextResource}}.
+      \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1loading_1_1_deferred_resource_ab529c610c01ad0aaab6361c13010ba06}{getDescription}}(), e);
+104             \}
+105             
+106             \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_deferred_loading_test_a0031535ae6851e2d9a26ee37f2db573b}{nextResource}} = null;
+107         \}
+108         
+109         \textcolor{keywordflow}{if} (LoadingList.get().getRemainingResources() > 0) \{
+110             \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_deferred_loading_test_a0031535ae6851e2d9a26ee37f2db573b}{nextResource}} = LoadingList.get().getNext();
+111         \} \textcolor{keywordflow}{else} \{
+112             \textcolor{keywordflow}{if} (!\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_deferred_loading_test_aca1a456477bfe9014edfc279d8428c01}{started}}) \{
+113                 \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_deferred_loading_test_aca1a456477bfe9014edfc279d8428c01}{started}} = \textcolor{keyword}{true};
+114                 \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_deferred_loading_test_aeee6a2a60464117e0720a20f1245475b}{music}}.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_music_aadc35375936c47d7a0e40cd1d719d070}{loop}}();
+115                 \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_deferred_loading_test_a8172e419d67fc261237d5700437448b2}{sound}}.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_sound_aed5db39a69e8ed57eb14053f7588ab90}{play}}();
+116             \}
+117         \}
+118     \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tests_1_1_deferred_loading_test_af451c5e232ab4145044ecec9c379abdc}\label{classorg_1_1newdawn_1_1slick_1_1tests_1_1_deferred_loading_test_af451c5e232ab4145044ecec9c379abdc}} 
+\index{org\+::newdawn\+::slick\+::tests\+::\+Deferred\+Loading\+Test@{org\+::newdawn\+::slick\+::tests\+::\+Deferred\+Loading\+Test}!font@{font}}
+\index{font@{font}!org\+::newdawn\+::slick\+::tests\+::\+Deferred\+Loading\+Test@{org\+::newdawn\+::slick\+::tests\+::\+Deferred\+Loading\+Test}}
+\subsubsection{\texorpdfstring{font}{font}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1_font}{Font}} org.\+newdawn.\+slick.\+tests.\+Deferred\+Loading\+Test.\+font\hspace{0.3cm}{\ttfamily [private]}}
+
+The font that will be rendered on load completion \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tests_1_1_deferred_loading_test_abfa4e4fd5420ec7ae5ace4b864ce4399}\label{classorg_1_1newdawn_1_1slick_1_1tests_1_1_deferred_loading_test_abfa4e4fd5420ec7ae5ace4b864ce4399}} 
+\index{org\+::newdawn\+::slick\+::tests\+::\+Deferred\+Loading\+Test@{org\+::newdawn\+::slick\+::tests\+::\+Deferred\+Loading\+Test}!image@{image}}
+\index{image@{image}!org\+::newdawn\+::slick\+::tests\+::\+Deferred\+Loading\+Test@{org\+::newdawn\+::slick\+::tests\+::\+Deferred\+Loading\+Test}}
+\subsubsection{\texorpdfstring{image}{image}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_image}{Image}} org.\+newdawn.\+slick.\+tests.\+Deferred\+Loading\+Test.\+image\hspace{0.3cm}{\ttfamily [private]}}
+
+The image that will be shown on load completion \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tests_1_1_deferred_loading_test_aeee6a2a60464117e0720a20f1245475b}\label{classorg_1_1newdawn_1_1slick_1_1tests_1_1_deferred_loading_test_aeee6a2a60464117e0720a20f1245475b}} 
+\index{org\+::newdawn\+::slick\+::tests\+::\+Deferred\+Loading\+Test@{org\+::newdawn\+::slick\+::tests\+::\+Deferred\+Loading\+Test}!music@{music}}
+\index{music@{music}!org\+::newdawn\+::slick\+::tests\+::\+Deferred\+Loading\+Test@{org\+::newdawn\+::slick\+::tests\+::\+Deferred\+Loading\+Test}}
+\subsubsection{\texorpdfstring{music}{music}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_music}{Music}} org.\+newdawn.\+slick.\+tests.\+Deferred\+Loading\+Test.\+music\hspace{0.3cm}{\ttfamily [private]}}
+
+The music that will be played on load completion \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tests_1_1_deferred_loading_test_a0031535ae6851e2d9a26ee37f2db573b}\label{classorg_1_1newdawn_1_1slick_1_1tests_1_1_deferred_loading_test_a0031535ae6851e2d9a26ee37f2db573b}} 
+\index{org\+::newdawn\+::slick\+::tests\+::\+Deferred\+Loading\+Test@{org\+::newdawn\+::slick\+::tests\+::\+Deferred\+Loading\+Test}!next\+Resource@{next\+Resource}}
+\index{next\+Resource@{next\+Resource}!org\+::newdawn\+::slick\+::tests\+::\+Deferred\+Loading\+Test@{org\+::newdawn\+::slick\+::tests\+::\+Deferred\+Loading\+Test}}
+\subsubsection{\texorpdfstring{next\+Resource}{nextResource}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1loading_1_1_deferred_resource}{Deferred\+Resource}} org.\+newdawn.\+slick.\+tests.\+Deferred\+Loading\+Test.\+next\+Resource\hspace{0.3cm}{\ttfamily [private]}}
+
+The next resource to load \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tests_1_1_deferred_loading_test_a8172e419d67fc261237d5700437448b2}\label{classorg_1_1newdawn_1_1slick_1_1tests_1_1_deferred_loading_test_a8172e419d67fc261237d5700437448b2}} 
+\index{org\+::newdawn\+::slick\+::tests\+::\+Deferred\+Loading\+Test@{org\+::newdawn\+::slick\+::tests\+::\+Deferred\+Loading\+Test}!sound@{sound}}
+\index{sound@{sound}!org\+::newdawn\+::slick\+::tests\+::\+Deferred\+Loading\+Test@{org\+::newdawn\+::slick\+::tests\+::\+Deferred\+Loading\+Test}}
+\subsubsection{\texorpdfstring{sound}{sound}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_sound}{Sound}} org.\+newdawn.\+slick.\+tests.\+Deferred\+Loading\+Test.\+sound\hspace{0.3cm}{\ttfamily [private]}}
+
+The sound that will be played on load completion \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tests_1_1_deferred_loading_test_aca1a456477bfe9014edfc279d8428c01}\label{classorg_1_1newdawn_1_1slick_1_1tests_1_1_deferred_loading_test_aca1a456477bfe9014edfc279d8428c01}} 
+\index{org\+::newdawn\+::slick\+::tests\+::\+Deferred\+Loading\+Test@{org\+::newdawn\+::slick\+::tests\+::\+Deferred\+Loading\+Test}!started@{started}}
+\index{started@{started}!org\+::newdawn\+::slick\+::tests\+::\+Deferred\+Loading\+Test@{org\+::newdawn\+::slick\+::tests\+::\+Deferred\+Loading\+Test}}
+\subsubsection{\texorpdfstring{started}{started}}
+{\footnotesize\ttfamily boolean org.\+newdawn.\+slick.\+tests.\+Deferred\+Loading\+Test.\+started\hspace{0.3cm}{\ttfamily [private]}}
+
+True if we\textquotesingle{}ve loaded all the resources and started rendereing 

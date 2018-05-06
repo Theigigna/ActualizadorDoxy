@@ -1,0 +1,119 @@
+\hypertarget{classcms_1_1_j_d_b_c_neighbourhood_d_a_o}{}\section{cms.\+J\+D\+B\+C\+Neighbourhood\+D\+AO Class Reference}
+\label{classcms_1_1_j_d_b_c_neighbourhood_d_a_o}\index{cms.\+J\+D\+B\+C\+Neighbourhood\+D\+AO@{cms.\+J\+D\+B\+C\+Neighbourhood\+D\+AO}}
+Inheritance diagram for cms.\+J\+D\+B\+C\+Neighbourhood\+D\+AO\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classcms_1_1_j_d_b_c_neighbourhood_d_a_o}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classcms_1_1_j_d_b_c_neighbourhood_d_a_o_a837dc9a2c409a5ae347271788c1d7d82}{J\+D\+B\+C\+Neighbourhood\+D\+AO}} (Connection \mbox{\hyperlink{classcms_1_1_j_d_b_c_neighbourhood_d_a_o_a21abebcd3f93f10746a2c96c70d6dafc}{connection}})
+\item 
+void \mbox{\hyperlink{classcms_1_1_j_d_b_c_neighbourhood_d_a_o_a5d43b764d1f27721d860dc371ae4b08e}{insert}} (\mbox{\hyperlink{classcms_1_1_neighbourhood}{Neighbourhood}} nbh)
+\item 
+List$<$ \mbox{\hyperlink{classcms_1_1_neighbourhood}{Neighbourhood}} $>$ \mbox{\hyperlink{classcms_1_1_j_d_b_c_neighbourhood_d_a_o_a31a2e927837aa79108ef13890dd9be75}{select}} ()
+\end{DoxyCompactItemize}
+\subsection*{Package Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Connection \mbox{\hyperlink{classcms_1_1_j_d_b_c_neighbourhood_d_a_o_a21abebcd3f93f10746a2c96c70d6dafc}{connection}} = null
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classcms_1_1_j_d_b_c_neighbourhood_d_a_o_a837dc9a2c409a5ae347271788c1d7d82}\label{classcms_1_1_j_d_b_c_neighbourhood_d_a_o_a837dc9a2c409a5ae347271788c1d7d82}} 
+\index{cms\+::\+J\+D\+B\+C\+Neighbourhood\+D\+AO@{cms\+::\+J\+D\+B\+C\+Neighbourhood\+D\+AO}!J\+D\+B\+C\+Neighbourhood\+D\+AO@{J\+D\+B\+C\+Neighbourhood\+D\+AO}}
+\index{J\+D\+B\+C\+Neighbourhood\+D\+AO@{J\+D\+B\+C\+Neighbourhood\+D\+AO}!cms\+::\+J\+D\+B\+C\+Neighbourhood\+D\+AO@{cms\+::\+J\+D\+B\+C\+Neighbourhood\+D\+AO}}
+\subsubsection{\texorpdfstring{J\+D\+B\+C\+Neighbourhood\+D\+A\+O()}{JDBCNeighbourhoodDAO()}}
+{\footnotesize\ttfamily cms.\+J\+D\+B\+C\+Neighbourhood\+D\+A\+O.\+J\+D\+B\+C\+Neighbourhood\+D\+AO (\begin{DoxyParamCaption}\item[{Connection}]{connection }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+24                                                       \{
+25          this.\mbox{\hyperlink{classcms_1_1_j_d_b_c_neighbourhood_d_a_o_a21abebcd3f93f10746a2c96c70d6dafc}{connection}}=\mbox{\hyperlink{classcms_1_1_j_d_b_c_neighbourhood_d_a_o_a21abebcd3f93f10746a2c96c70d6dafc}{connection}};
+26     \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classcms_1_1_j_d_b_c_neighbourhood_d_a_o_a5d43b764d1f27721d860dc371ae4b08e}\label{classcms_1_1_j_d_b_c_neighbourhood_d_a_o_a5d43b764d1f27721d860dc371ae4b08e}} 
+\index{cms\+::\+J\+D\+B\+C\+Neighbourhood\+D\+AO@{cms\+::\+J\+D\+B\+C\+Neighbourhood\+D\+AO}!insert@{insert}}
+\index{insert@{insert}!cms\+::\+J\+D\+B\+C\+Neighbourhood\+D\+AO@{cms\+::\+J\+D\+B\+C\+Neighbourhood\+D\+AO}}
+\subsubsection{\texorpdfstring{insert()}{insert()}}
+{\footnotesize\ttfamily void cms.\+J\+D\+B\+C\+Neighbourhood\+D\+A\+O.\+insert (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classcms_1_1_neighbourhood}{Neighbourhood}}}]{nbh }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Implements \mbox{\hyperlink{interfacecms_1_1_neighbourhood_d_a_o_a6c9c689191c76d5be69f892f58a35494}{cms.\+Neighbourhood\+D\+AO}}.
+
+
+\begin{DoxyCode}
+46                                           \{
+47         \textcolor{keywordflow}{try} \{
+48             PreparedStatement preparedStatement = \mbox{\hyperlink{classcms_1_1_j_d_b_c_neighbourhood_d_a_o_a21abebcd3f93f10746a2c96c70d6dafc}{connection}}.prepareStatement(\textcolor{stringliteral}{"INSERT INTO
+       cms.Neighbourhood (neighbourhood\_id, properties\_id) VALUES (default , ?)"});
+49             preparedStatement.setString(1,  nbh.getProperties\_id());
+50 
+51             preparedStatement.executeUpdate();
+52             preparedStatement.close();
+53         \} \textcolor{keywordflow}{catch} (SQLException e) \{
+54             \textcolor{comment}{// TODO Auto-generated catch block}
+55             e.printStackTrace();
+56         \}
+57          
+58     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classcms_1_1_j_d_b_c_neighbourhood_d_a_o_a31a2e927837aa79108ef13890dd9be75}\label{classcms_1_1_j_d_b_c_neighbourhood_d_a_o_a31a2e927837aa79108ef13890dd9be75}} 
+\index{cms\+::\+J\+D\+B\+C\+Neighbourhood\+D\+AO@{cms\+::\+J\+D\+B\+C\+Neighbourhood\+D\+AO}!select@{select}}
+\index{select@{select}!cms\+::\+J\+D\+B\+C\+Neighbourhood\+D\+AO@{cms\+::\+J\+D\+B\+C\+Neighbourhood\+D\+AO}}
+\subsubsection{\texorpdfstring{select()}{select()}}
+{\footnotesize\ttfamily List$<$\mbox{\hyperlink{classcms_1_1_neighbourhood}{Neighbourhood}}$>$ cms.\+J\+D\+B\+C\+Neighbourhood\+D\+A\+O.\+select (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Implements \mbox{\hyperlink{interfacecms_1_1_neighbourhood_d_a_o_af9fd7094c23742d68b86f0a83f544f9d}{cms.\+Neighbourhood\+D\+AO}}.
+
+
+\begin{DoxyCode}
+61                                         \{
+62         List<Neighbourhood> nbhs = \textcolor{keyword}{new} LinkedList<>();
+63          \textcolor{keywordflow}{try} \{
+64                 Statement statement = \mbox{\hyperlink{classcms_1_1_j_d_b_c_neighbourhood_d_a_o_a21abebcd3f93f10746a2c96c70d6dafc}{connection}}.createStatement();
+65                 ResultSet resultSet = statement.executeQuery(\textcolor{stringliteral}{"SELECT * FROM cms.Neighbourhood"});
+66                  
+67                 Neighbourhood nbh = null;
+68                 \textcolor{keywordflow}{while}(resultSet.next())\{
+69                     nbh = \textcolor{keyword}{new} Neighbourhood();
+70                     nbh.setNeighbourhood\_id(Integer.parseInt(resultSet.getString(\textcolor{stringliteral}{"neighbourhood\_id"})));
+71                     nbh.setProperties\_id(resultSet.getString(\textcolor{stringliteral}{"properties\_id"}));
+72                     
+73                      
+74                     nbhs.add(nbh);
+75                 \}
+76                 resultSet.close();
+77                 statement.close();
+78                  
+79             \} \textcolor{keywordflow}{catch} (SQLException e) \{
+80                 e.printStackTrace();
+81             \}
+82             \textcolor{keywordtype}{int} i;
+83             i=0;
+84             \textcolor{keywordflow}{while}(i < nbhs.size()) \{
+85                     System.out.println(nbhs.get(i));
+86                     i++;
+87              \}
+88             \textcolor{comment}{//System.out.println(nbhs);}
+89             \textcolor{keywordflow}{return} nbhs;
+90     \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classcms_1_1_j_d_b_c_neighbourhood_d_a_o_a21abebcd3f93f10746a2c96c70d6dafc}\label{classcms_1_1_j_d_b_c_neighbourhood_d_a_o_a21abebcd3f93f10746a2c96c70d6dafc}} 
+\index{cms\+::\+J\+D\+B\+C\+Neighbourhood\+D\+AO@{cms\+::\+J\+D\+B\+C\+Neighbourhood\+D\+AO}!connection@{connection}}
+\index{connection@{connection}!cms\+::\+J\+D\+B\+C\+Neighbourhood\+D\+AO@{cms\+::\+J\+D\+B\+C\+Neighbourhood\+D\+AO}}
+\subsubsection{\texorpdfstring{connection}{connection}}
+{\footnotesize\ttfamily Connection cms.\+J\+D\+B\+C\+Neighbourhood\+D\+A\+O.\+connection = null\hspace{0.3cm}{\ttfamily [package]}}
+

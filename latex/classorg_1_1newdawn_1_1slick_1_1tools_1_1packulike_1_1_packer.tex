@@ -1,0 +1,485 @@
+\hypertarget{classorg_1_1newdawn_1_1slick_1_1tools_1_1packulike_1_1_packer}{}\section{org.\+newdawn.\+slick.\+tools.\+packulike.\+Packer Class Reference}
+\label{classorg_1_1newdawn_1_1slick_1_1tools_1_1packulike_1_1_packer}\index{org.\+newdawn.\+slick.\+tools.\+packulike.\+Packer@{org.\+newdawn.\+slick.\+tools.\+packulike.\+Packer}}
+Inheritance diagram for org.\+newdawn.\+slick.\+tools.\+packulike.\+Packer\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classorg_1_1newdawn_1_1slick_1_1tools_1_1packulike_1_1_packer}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1packulike_1_1_packer_1_1_file_list_renderer}{File\+List\+Renderer}}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1packulike_1_1_packer_aea273a706568d7f6e6621a38d3ad694d}{Packer}} ()
+\item 
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1packulike_1_1_sprite}{Sprite}} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1packulike_1_1_packer_a34ac2a1c7cef9dfc9dbef0cd3d636203}{get\+Sprite\+At}} (int x, int y)
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1packulike_1_1_packer_a7811f0b2c45bb43e48fb3edbb65115e3}{select}} (Array\+List selection)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1packulike_1_1_packer_ab4b9f50874989c58b4f344f9747fd04d}{main}} (String\mbox{[}$\,$\mbox{]} argv)
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1packulike_1_1_packer_ae1d601f21decc14ffa54fa8d6926f971}{save}} ()
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1packulike_1_1_packer_a7350e349de07dff645d4e146eef9f100}{regenerate}} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1packulike_1_1_sheet_panel}{Sheet\+Panel}} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1packulike_1_1_packer_af39b29a5c9105d3079b3e2df19008ad8}{sheet\+Panel}}
+\item 
+Default\+List\+Model \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1packulike_1_1_packer_a5684e96219ce89e574c4550d3c650eaa}{sprites}} = new Default\+List\+Model()
+\item 
+J\+List \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1packulike_1_1_packer_a45e8438e951eb84f2efaf06e5ae481bd}{list}} = new J\+List(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1packulike_1_1_packer_a5684e96219ce89e574c4550d3c650eaa}{sprites}})
+\item 
+int \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1packulike_1_1_packer_ad8d50a999815f740d8690c45e408db6c}{twidth}}
+\item 
+int \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1packulike_1_1_packer_ae627e80430f7f495a1c7542ea9040668}{theight}}
+\item 
+Default\+Combo\+Box\+Model \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1packulike_1_1_packer_a29634c52b37f367f3e1c6f534b690f2d}{sizes}} = new Default\+Combo\+Box\+Model()
+\item 
+Default\+Combo\+Box\+Model \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1packulike_1_1_packer_a88ad350f9bcdf274650f612a9fec4fd4}{sizes2}} = new Default\+Combo\+Box\+Model()
+\item 
+J\+Combo\+Box \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1packulike_1_1_packer_a3a9b0950dd21c07824a4c81e42707d17}{widths}} = new J\+Combo\+Box(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1packulike_1_1_packer_a29634c52b37f367f3e1c6f534b690f2d}{sizes}})
+\item 
+J\+Combo\+Box \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1packulike_1_1_packer_ae1f6f20e835b26e94eb0b5f687381098}{heights}} = new J\+Combo\+Box(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1packulike_1_1_packer_a88ad350f9bcdf274650f612a9fec4fd4}{sizes2}})
+\item 
+J\+Spinner \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1packulike_1_1_packer_ad52e9b53a46d3aa9a1b2f66755558055}{border}} = new J\+Spinner(new Spinner\+Number\+Model(0,0,50,1))
+\item 
+J\+File\+Chooser \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1packulike_1_1_packer_aee4fbd6c801ae2b56690fc2994e73e52}{chooser}} = new J\+File\+Chooser(\char`\"{}.\char`\"{})
+\item 
+J\+File\+Chooser \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1packulike_1_1_packer_a29ef57b7ec0b9ffa079a40890b9ac78b}{save\+Chooser}} = new J\+File\+Chooser(\char`\"{}.\char`\"{})
+\item 
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1packulike_1_1_pack}{Pack}} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1packulike_1_1_packer_a7e75cbdd91211b7a08a6a5a587575fe6}{pack}} = new \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1packulike_1_1_pack}{Pack}}()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A simple G\+UI on the front of the packing tool
+
+\begin{DoxyAuthor}{Author}
+kevin 
+\end{DoxyAuthor}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tools_1_1packulike_1_1_packer_aea273a706568d7f6e6621a38d3ad694d}\label{classorg_1_1newdawn_1_1slick_1_1tools_1_1packulike_1_1_packer_aea273a706568d7f6e6621a38d3ad694d}} 
+\index{org\+::newdawn\+::slick\+::tools\+::packulike\+::\+Packer@{org\+::newdawn\+::slick\+::tools\+::packulike\+::\+Packer}!Packer@{Packer}}
+\index{Packer@{Packer}!org\+::newdawn\+::slick\+::tools\+::packulike\+::\+Packer@{org\+::newdawn\+::slick\+::tools\+::packulike\+::\+Packer}}
+\subsubsection{\texorpdfstring{Packer()}{Packer()}}
+{\footnotesize\ttfamily org.\+newdawn.\+slick.\+tools.\+packulike.\+Packer.\+Packer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Create the new G\+UI for packer 
+\begin{DoxyCode}
+74                     \{
+75         super(\textcolor{stringliteral}{"Pack-U-Like"});
+76         
+77         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1packulike_1_1_packer_a29ef57b7ec0b9ffa079a40890b9ac78b}{saveChooser}}.setFileFilter(\textcolor{keyword}{new} FileFilter() \{
+78             \textcolor{keyword}{public} \textcolor{keywordtype}{boolean} accept(File f) \{
+79                 \textcolor{keywordflow}{if} (f.isDirectory()) \{
+80                     \textcolor{keywordflow}{return} \textcolor{keyword}{true};
+81                 \}
+82                 
+83                 \textcolor{keywordflow}{return} (f.getName().endsWith(\textcolor{stringliteral}{".png"}));
+84             \}
+85 
+86             \textcolor{keyword}{public} String getDescription() \{
+87                 \textcolor{keywordflow}{return} \textcolor{stringliteral}{"PNG Images (*.png)"};
+88             \}
+89             
+90         \});
+91         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1packulike_1_1_packer_aee4fbd6c801ae2b56690fc2994e73e52}{chooser}}.setMultiSelectionEnabled(\textcolor{keyword}{true});
+92         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1packulike_1_1_packer_aee4fbd6c801ae2b56690fc2994e73e52}{chooser}}.setFileFilter(\textcolor{keyword}{new} FileFilter() \{
+93             \textcolor{keyword}{public} \textcolor{keywordtype}{boolean} accept(File f) \{
+94                 \textcolor{keywordflow}{if} (f.isDirectory()) \{
+95                     \textcolor{keywordflow}{return} \textcolor{keyword}{true};
+96                 \}
+97                 
+98                 \textcolor{keywordflow}{return} (f.getName().endsWith(\textcolor{stringliteral}{".png"}) ||
+99                         f.getName().endsWith(\textcolor{stringliteral}{".jpg"}) ||
+100                         f.getName().endsWith(\textcolor{stringliteral}{".gif"}));
+101             \}
+102 
+103             \textcolor{keyword}{public} String getDescription() \{
+104                 \textcolor{keywordflow}{return} \textcolor{stringliteral}{"Images (*.jpg, *.png, *.gif)"};
+105             \}
+106             
+107         \});
+108         
+109         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1packulike_1_1_packer_a29634c52b37f367f3e1c6f534b690f2d}{sizes}}.addElement(\textcolor{keyword}{new} Integer(64));
+110         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1packulike_1_1_packer_a29634c52b37f367f3e1c6f534b690f2d}{sizes}}.addElement(\textcolor{keyword}{new} Integer(128));
+111         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1packulike_1_1_packer_a29634c52b37f367f3e1c6f534b690f2d}{sizes}}.addElement(\textcolor{keyword}{new} Integer(256));
+112         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1packulike_1_1_packer_a29634c52b37f367f3e1c6f534b690f2d}{sizes}}.addElement(\textcolor{keyword}{new} Integer(512));
+113         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1packulike_1_1_packer_a29634c52b37f367f3e1c6f534b690f2d}{sizes}}.addElement(\textcolor{keyword}{new} Integer(1024));
+114         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1packulike_1_1_packer_a29634c52b37f367f3e1c6f534b690f2d}{sizes}}.addElement(\textcolor{keyword}{new} Integer(2048));
+115         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1packulike_1_1_packer_a88ad350f9bcdf274650f612a9fec4fd4}{sizes2}}.addElement(\textcolor{keyword}{new} Integer(64));
+116         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1packulike_1_1_packer_a88ad350f9bcdf274650f612a9fec4fd4}{sizes2}}.addElement(\textcolor{keyword}{new} Integer(128));
+117         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1packulike_1_1_packer_a88ad350f9bcdf274650f612a9fec4fd4}{sizes2}}.addElement(\textcolor{keyword}{new} Integer(256));
+118         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1packulike_1_1_packer_a88ad350f9bcdf274650f612a9fec4fd4}{sizes2}}.addElement(\textcolor{keyword}{new} Integer(512));
+119         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1packulike_1_1_packer_a88ad350f9bcdf274650f612a9fec4fd4}{sizes2}}.addElement(\textcolor{keyword}{new} Integer(1024));
+120         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1packulike_1_1_packer_a88ad350f9bcdf274650f612a9fec4fd4}{sizes2}}.addElement(\textcolor{keyword}{new} Integer(2048));
+121         
+122         JMenuBar bar = \textcolor{keyword}{new} JMenuBar();
+123         JMenu file = \textcolor{keyword}{new} JMenu(\textcolor{stringliteral}{"File"});
+124         bar.add(file);
+125         JMenuItem \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1packulike_1_1_packer_ae1d601f21decc14ffa54fa8d6926f971}{save}} = \textcolor{keyword}{new} JMenuItem(\textcolor{stringliteral}{"Save"});
+126         file.add(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1packulike_1_1_packer_ae1d601f21decc14ffa54fa8d6926f971}{save}});
+127         file.addSeparator();
+128         JMenuItem quit = \textcolor{keyword}{new} JMenuItem(\textcolor{stringliteral}{"Quit"});
+129         file.add(quit);
+130         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1packulike_1_1_packer_ae1d601f21decc14ffa54fa8d6926f971}{save}}.addActionListener(\textcolor{keyword}{new} ActionListener() \{
+131             \textcolor{keyword}{public} \textcolor{keywordtype}{void} actionPerformed(ActionEvent e) \{
+132                 \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1packulike_1_1_packer_ae1d601f21decc14ffa54fa8d6926f971}{save}}();
+133             \}
+134         \});
+135         quit.addActionListener(\textcolor{keyword}{new} ActionListener() \{
+136             \textcolor{keyword}{public} \textcolor{keywordtype}{void} actionPerformed(ActionEvent e) \{
+137                 System.exit(0);
+138             \}
+139         \});
+140         
+141         setJMenuBar(bar);
+142         JPanel panel = \textcolor{keyword}{new} JPanel();
+143         panel.setLayout(null);
+144     
+145         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1packulike_1_1_packer_af39b29a5c9105d3079b3e2df19008ad8}{sheetPanel}} = \textcolor{keyword}{new} SheetPanel(\textcolor{keyword}{this});
+146         JScrollPane pane = \textcolor{keyword}{new} JScrollPane(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1packulike_1_1_packer_af39b29a5c9105d3079b3e2df19008ad8}{sheetPanel}});
+147         pane.setBounds(5,5,530,530);
+148         JScrollPane listScroll = \textcolor{keyword}{new} JScrollPane(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1packulike_1_1_packer_a45e8438e951eb84f2efaf06e5ae481bd}{list}});
+149         listScroll.setBounds(540,5,200,350);
+150         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1packulike_1_1_packer_a45e8438e951eb84f2efaf06e5ae481bd}{list}}.addListSelectionListener(\textcolor{keyword}{new} ListSelectionListener() \{
+151 
+152             \textcolor{keyword}{public} \textcolor{keywordtype}{void} valueChanged(ListSelectionEvent e) \{
+153                 Object[] values = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1packulike_1_1_packer_a45e8438e951eb84f2efaf06e5ae481bd}{list}}.getSelectedValues();
+154                 ArrayList \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1packulike_1_1_packer_a5684e96219ce89e574c4550d3c650eaa}{sprites}} = \textcolor{keyword}{new} ArrayList();
+155                 \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i=0;i<values.length;i++) \{
+156                     \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1packulike_1_1_packer_a5684e96219ce89e574c4550d3c650eaa}{sprites}}.add(values[i]);
+157                 \}
+158                 
+159                 \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1packulike_1_1_packer_a45e8438e951eb84f2efaf06e5ae481bd}{list}}.removeListSelectionListener(\textcolor{keyword}{this});
+160                 \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1packulike_1_1_packer_a7811f0b2c45bb43e48fb3edbb65115e3}{select}}(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1packulike_1_1_packer_a5684e96219ce89e574c4550d3c650eaa}{sprites}});
+161                 \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1packulike_1_1_packer_a45e8438e951eb84f2efaf06e5ae481bd}{list}}.addListSelectionListener(\textcolor{keyword}{this});
+162             \}
+163         \});
+164         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1packulike_1_1_packer_a45e8438e951eb84f2efaf06e5ae481bd}{list}}.setSelectionMode(ListSelectionModel.MULTIPLE\_INTERVAL\_SELECTION);
+165         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1packulike_1_1_packer_a45e8438e951eb84f2efaf06e5ae481bd}{list}}.setCellRenderer(\textcolor{keyword}{new} FileListRenderer());
+166         panel.add(pane);
+167         panel.add(listScroll);
+168         
+169         JButton add = \textcolor{keyword}{new} JButton(\textcolor{stringliteral}{"Add"});
+170         add.setFont(add.getFont().deriveFont(Font.BOLD));
+171         add.setMargin(\textcolor{keyword}{new} Insets(0,0,0,0));
+172         add.setBounds(745,5,40,30);
+173         panel.add(add);
+174         
+175         add.addActionListener(\textcolor{keyword}{new} ActionListener() \{
+176             \textcolor{keyword}{public} \textcolor{keywordtype}{void} actionPerformed(ActionEvent e) \{
+177                 \textcolor{keywordtype}{int} resp = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1packulike_1_1_packer_aee4fbd6c801ae2b56690fc2994e73e52}{chooser}}.showOpenDialog(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1packulike_1_1_packer_aea273a706568d7f6e6621a38d3ad694d}{Packer}}.this);
+178                 \textcolor{keywordflow}{if} (resp == JFileChooser.APPROVE\_OPTION) \{
+179                     File[] selected = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1packulike_1_1_packer_aee4fbd6c801ae2b56690fc2994e73e52}{chooser}}.getSelectedFiles();
+180                     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i=0;i<selected.length;i++) \{
+181                         \textcolor{keywordflow}{try} \{
+182                             \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1packulike_1_1_packer_a5684e96219ce89e574c4550d3c650eaa}{sprites}}.addElement(\textcolor{keyword}{new} \mbox{\hyperlink{class_sprite}{Sprite}}(selected[i]));
+183                         \} \textcolor{keywordflow}{catch} (IOException x) \{
+184                             x.printStackTrace();
+185                             JOptionPane.showMessageDialog(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1packulike_1_1_packer_aea273a706568d7f6e6621a38d3ad694d}{Packer}}.this, \textcolor{stringliteral}{"Unable to load: "}+selected[i]
+      .getName());
+186                         \}
+187                     \}
+188                 \}
+189                 \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1packulike_1_1_packer_a7350e349de07dff645d4e146eef9f100}{regenerate}}();
+190             \}
+191         \});
+192         JButton \textcolor{keyword}{remove} = \textcolor{keyword}{new} JButton(\textcolor{stringliteral}{"Del"});
+193         \textcolor{keyword}{remove}.setFont(add.getFont().deriveFont(Font.BOLD));
+194         \textcolor{keyword}{remove}.setMargin(\textcolor{keyword}{new} Insets(0,0,0,0));
+195         \textcolor{keyword}{remove}.setBounds(745,35,40,30);
+196         panel.add(\textcolor{keyword}{remove});
+197         \textcolor{keyword}{remove}.addActionListener(\textcolor{keyword}{new} ActionListener() \{
+198             \textcolor{keyword}{public} \textcolor{keywordtype}{void} actionPerformed(ActionEvent e) \{
+199                 Object[] selected = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1packulike_1_1_packer_a45e8438e951eb84f2efaf06e5ae481bd}{list}}.getSelectedValues();
+200                 \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i=0;i<selected.length;i++) \{
+201                     \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1packulike_1_1_packer_a5684e96219ce89e574c4550d3c650eaa}{sprites}}.removeElement(selected[i]);
+202                 \}
+203                 \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1packulike_1_1_packer_a7350e349de07dff645d4e146eef9f100}{regenerate}}();
+204             \}
+205         \});
+206         
+207         JLabel label;
+208 
+209         label = \textcolor{keyword}{new} JLabel(\textcolor{stringliteral}{"Border"});
+210         label.setBounds(540,375,200,25);
+211         panel.add(label);
+212         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1packulike_1_1_packer_ad52e9b53a46d3aa9a1b2f66755558055}{border}}.setBounds(540,400,200,25);
+213         panel.add(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1packulike_1_1_packer_ad52e9b53a46d3aa9a1b2f66755558055}{border}});
+214         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1packulike_1_1_packer_ad52e9b53a46d3aa9a1b2f66755558055}{border}}.addChangeListener(\textcolor{keyword}{new} ChangeListener() \{
+215             \textcolor{keyword}{public} \textcolor{keywordtype}{void} stateChanged(ChangeEvent e) \{
+216                 \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1packulike_1_1_packer_a7350e349de07dff645d4e146eef9f100}{regenerate}}();
+217             \}
+218         \});
+219         
+220         label = \textcolor{keyword}{new} JLabel(\textcolor{stringliteral}{"Width"});
+221         label.setBounds(540,425,200,25);
+222         panel.add(label);
+223         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1packulike_1_1_packer_a3a9b0950dd21c07824a4c81e42707d17}{widths}}.setBounds(540,450,200,25);
+224         panel.add(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1packulike_1_1_packer_a3a9b0950dd21c07824a4c81e42707d17}{widths}});
+225         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1packulike_1_1_packer_a3a9b0950dd21c07824a4c81e42707d17}{widths}}.addActionListener(\textcolor{keyword}{new} ActionListener() \{
+226             \textcolor{keyword}{public} \textcolor{keywordtype}{void} actionPerformed(ActionEvent e) \{
+227                 \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1packulike_1_1_packer_ad8d50a999815f740d8690c45e408db6c}{twidth}} = ((Integer) \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1packulike_1_1_packer_a3a9b0950dd21c07824a4c81e42707d17}{widths}}.getSelectedItem()).intValue();
+228                 \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1packulike_1_1_packer_af39b29a5c9105d3079b3e2df19008ad8}{sheetPanel}}.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1packulike_1_1_sheet_panel_a46f4e2aa8cc13578241c6df33b0fa852}{setTextureSize}}(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1packulike_1_1_packer_ad8d50a999815f740d8690c45e408db6c}{twidth}}, 
+      \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1packulike_1_1_packer_ae627e80430f7f495a1c7542ea9040668}{theight}});
+229                 \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1packulike_1_1_packer_a7350e349de07dff645d4e146eef9f100}{regenerate}}();
+230             \}
+231         \});
+232         
+233         label = \textcolor{keyword}{new} JLabel(\textcolor{stringliteral}{"Height"});
+234         label.setBounds(540,475,200,25);
+235         panel.add(label);
+236         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1packulike_1_1_packer_ae1f6f20e835b26e94eb0b5f687381098}{heights}}.setBounds(540,500,200,25);
+237         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1packulike_1_1_packer_ae1f6f20e835b26e94eb0b5f687381098}{heights}}.addActionListener(\textcolor{keyword}{new} ActionListener() \{
+238             \textcolor{keyword}{public} \textcolor{keywordtype}{void} actionPerformed(ActionEvent e) \{
+239                 \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1packulike_1_1_packer_ae627e80430f7f495a1c7542ea9040668}{theight}} = ((Integer) \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1packulike_1_1_packer_ae1f6f20e835b26e94eb0b5f687381098}{heights}}.getSelectedItem()).intValue();
+240                 \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1packulike_1_1_packer_af39b29a5c9105d3079b3e2df19008ad8}{sheetPanel}}.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1packulike_1_1_sheet_panel_a46f4e2aa8cc13578241c6df33b0fa852}{setTextureSize}}(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1packulike_1_1_packer_ad8d50a999815f740d8690c45e408db6c}{twidth}}, 
+      \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1packulike_1_1_packer_ae627e80430f7f495a1c7542ea9040668}{theight}});
+241                 \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1packulike_1_1_packer_a7350e349de07dff645d4e146eef9f100}{regenerate}}();
+242             \}
+243         \});
+244         
+245         panel.add(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1packulike_1_1_packer_ae1f6f20e835b26e94eb0b5f687381098}{heights}});
+246         
+247         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1packulike_1_1_packer_ad8d50a999815f740d8690c45e408db6c}{twidth}} = 512;
+248         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1packulike_1_1_packer_ae627e80430f7f495a1c7542ea9040668}{theight}} = 512;
+249         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1packulike_1_1_packer_af39b29a5c9105d3079b3e2df19008ad8}{sheetPanel}}.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1packulike_1_1_sheet_panel_a46f4e2aa8cc13578241c6df33b0fa852}{setTextureSize}}(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1packulike_1_1_packer_ad8d50a999815f740d8690c45e408db6c}{twidth}}, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1packulike_1_1_packer_ae627e80430f7f495a1c7542ea9040668}{theight}});
+250         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1packulike_1_1_packer_a3a9b0950dd21c07824a4c81e42707d17}{widths}}.setSelectedItem(\textcolor{keyword}{new} Integer(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1packulike_1_1_packer_ad8d50a999815f740d8690c45e408db6c}{twidth}}));
+251         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1packulike_1_1_packer_ae1f6f20e835b26e94eb0b5f687381098}{heights}}.setSelectedItem(\textcolor{keyword}{new} Integer(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1packulike_1_1_packer_ae627e80430f7f495a1c7542ea9040668}{theight}}));
+252         
+253         setDefaultCloseOperation(JFrame.DISPOSE\_ON\_CLOSE);
+254         setContentPane(panel);
+255         setSize(800,600);
+256         setResizable(\textcolor{keyword}{false});
+257         setVisible(\textcolor{keyword}{true});
+258     \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tools_1_1packulike_1_1_packer_a34ac2a1c7cef9dfc9dbef0cd3d636203}\label{classorg_1_1newdawn_1_1slick_1_1tools_1_1packulike_1_1_packer_a34ac2a1c7cef9dfc9dbef0cd3d636203}} 
+\index{org\+::newdawn\+::slick\+::tools\+::packulike\+::\+Packer@{org\+::newdawn\+::slick\+::tools\+::packulike\+::\+Packer}!get\+Sprite\+At@{get\+Sprite\+At}}
+\index{get\+Sprite\+At@{get\+Sprite\+At}!org\+::newdawn\+::slick\+::tools\+::packulike\+::\+Packer@{org\+::newdawn\+::slick\+::tools\+::packulike\+::\+Packer}}
+\subsubsection{\texorpdfstring{get\+Sprite\+At()}{getSpriteAt()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1packulike_1_1_sprite}{Sprite}} org.\+newdawn.\+slick.\+tools.\+packulike.\+Packer.\+get\+Sprite\+At (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get the sprite a given location on the current sheet
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & The x coordinate to look for the sprite \\
+\hline
+{\em y} & The y coordinate to look for the sprite \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The sprite found at the given location or null if no sprite can be found 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+267                                             \{
+268         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i=0;i<\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1packulike_1_1_packer_a5684e96219ce89e574c4550d3c650eaa}{sprites}}.size();i++) \{
+269             \textcolor{keywordflow}{if} (((\mbox{\hyperlink{class_sprite}{Sprite}}) \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1packulike_1_1_packer_a5684e96219ce89e574c4550d3c650eaa}{sprites}}.get(i)).contains(x,y)) \{
+270                 \textcolor{keywordflow}{return} ((\mbox{\hyperlink{class_sprite}{Sprite}}) \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1packulike_1_1_packer_a5684e96219ce89e574c4550d3c650eaa}{sprites}}.get(i));
+271             \}
+272         \}
+273         
+274         \textcolor{keywordflow}{return} null;
+275     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tools_1_1packulike_1_1_packer_ab4b9f50874989c58b4f344f9747fd04d}\label{classorg_1_1newdawn_1_1slick_1_1tools_1_1packulike_1_1_packer_ab4b9f50874989c58b4f344f9747fd04d}} 
+\index{org\+::newdawn\+::slick\+::tools\+::packulike\+::\+Packer@{org\+::newdawn\+::slick\+::tools\+::packulike\+::\+Packer}!main@{main}}
+\index{main@{main}!org\+::newdawn\+::slick\+::tools\+::packulike\+::\+Packer@{org\+::newdawn\+::slick\+::tools\+::packulike\+::\+Packer}}
+\subsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily static void org.\+newdawn.\+slick.\+tools.\+packulike.\+Packer.\+main (\begin{DoxyParamCaption}\item[{String \mbox{[}$\,$\mbox{]}}]{argv }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Entry point to the simple UI
+
+
+\begin{DoxyParams}{Parameters}
+{\em argv} & The arguments to the program \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+361                                            \{
+362         \textcolor{keyword}{new} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1packulike_1_1_packer_aea273a706568d7f6e6621a38d3ad694d}{Packer}}();
+363     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tools_1_1packulike_1_1_packer_a7350e349de07dff645d4e146eef9f100}\label{classorg_1_1newdawn_1_1slick_1_1tools_1_1packulike_1_1_packer_a7350e349de07dff645d4e146eef9f100}} 
+\index{org\+::newdawn\+::slick\+::tools\+::packulike\+::\+Packer@{org\+::newdawn\+::slick\+::tools\+::packulike\+::\+Packer}!regenerate@{regenerate}}
+\index{regenerate@{regenerate}!org\+::newdawn\+::slick\+::tools\+::packulike\+::\+Packer@{org\+::newdawn\+::slick\+::tools\+::packulike\+::\+Packer}}
+\subsubsection{\texorpdfstring{regenerate()}{regenerate()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+tools.\+packulike.\+Packer.\+regenerate (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+Regenerate the sprite sheet that is being displayed 
+\begin{DoxyCode}
+320                               \{
+321         \textcolor{keywordflow}{try} \{
+322             ArrayList \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1packulike_1_1_packer_a45e8438e951eb84f2efaf06e5ae481bd}{list}} = \textcolor{keyword}{new} ArrayList();
+323             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i=0;i<\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1packulike_1_1_packer_a5684e96219ce89e574c4550d3c650eaa}{sprites}}.size();i++) \{
+324                 \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1packulike_1_1_packer_a45e8438e951eb84f2efaf06e5ae481bd}{list}}.add(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1packulike_1_1_packer_a5684e96219ce89e574c4550d3c650eaa}{sprites}}.elementAt(i));
+325             \}
+326             
+327             \textcolor{keywordtype}{int} b = ((Integer) \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1packulike_1_1_packer_ad52e9b53a46d3aa9a1b2f66755558055}{border}}.getValue()).intValue();
+328             Sheet sheet = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1packulike_1_1_packer_a7e75cbdd91211b7a08a6a5a587575fe6}{pack}}.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1packulike_1_1_pack_a303621f1e4590a9898ccbac6daa6c112}{packImages}}(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1packulike_1_1_packer_a45e8438e951eb84f2efaf06e5ae481bd}{list}}, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1packulike_1_1_packer_ad8d50a999815f740d8690c45e408db6c}{twidth}}, 
+      \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1packulike_1_1_packer_ae627e80430f7f495a1c7542ea9040668}{theight}}, b, null);
+329             \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1packulike_1_1_packer_af39b29a5c9105d3079b3e2df19008ad8}{sheetPanel}}.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1packulike_1_1_sheet_panel_ad7fd79342e05287225c4a79400a9ec3e}{setImage}}(sheet);
+330         \} \textcolor{keywordflow}{catch} (IOException e) \{
+331             \textcolor{comment}{// shouldn't happen }
+332             e.printStackTrace();
+333         \}
+334     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tools_1_1packulike_1_1_packer_ae1d601f21decc14ffa54fa8d6926f971}\label{classorg_1_1newdawn_1_1slick_1_1tools_1_1packulike_1_1_packer_ae1d601f21decc14ffa54fa8d6926f971}} 
+\index{org\+::newdawn\+::slick\+::tools\+::packulike\+::\+Packer@{org\+::newdawn\+::slick\+::tools\+::packulike\+::\+Packer}!save@{save}}
+\index{save@{save}!org\+::newdawn\+::slick\+::tools\+::packulike\+::\+Packer@{org\+::newdawn\+::slick\+::tools\+::packulike\+::\+Packer}}
+\subsubsection{\texorpdfstring{save()}{save()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+tools.\+packulike.\+Packer.\+save (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+Save the sprite sheet 
+\begin{DoxyCode}
+296                         \{
+297         \textcolor{keywordtype}{int} resp = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1packulike_1_1_packer_a29ef57b7ec0b9ffa079a40890b9ac78b}{saveChooser}}.showSaveDialog(\textcolor{keyword}{this});
+298         \textcolor{keywordflow}{if} (resp == JFileChooser.APPROVE\_OPTION) \{
+299             File out = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1packulike_1_1_packer_a29ef57b7ec0b9ffa079a40890b9ac78b}{saveChooser}}.getSelectedFile();
+300             
+301             ArrayList \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1packulike_1_1_packer_a45e8438e951eb84f2efaf06e5ae481bd}{list}} = \textcolor{keyword}{new} ArrayList();
+302             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i=0;i<\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1packulike_1_1_packer_a5684e96219ce89e574c4550d3c650eaa}{sprites}}.size();i++) \{
+303                 \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1packulike_1_1_packer_a45e8438e951eb84f2efaf06e5ae481bd}{list}}.add(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1packulike_1_1_packer_a5684e96219ce89e574c4550d3c650eaa}{sprites}}.elementAt(i));
+304             \}
+305             
+306             \textcolor{keywordflow}{try} \{
+307                 \textcolor{keywordtype}{int} b = ((Integer) \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1packulike_1_1_packer_ad52e9b53a46d3aa9a1b2f66755558055}{border}}.getValue()).intValue();
+308                 \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1packulike_1_1_packer_a7e75cbdd91211b7a08a6a5a587575fe6}{pack}}.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1packulike_1_1_pack_a303621f1e4590a9898ccbac6daa6c112}{packImages}}(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1packulike_1_1_packer_a45e8438e951eb84f2efaf06e5ae481bd}{list}}, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1packulike_1_1_packer_ad8d50a999815f740d8690c45e408db6c}{twidth}}, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1packulike_1_1_packer_ae627e80430f7f495a1c7542ea9040668}{theight}}, b, out);
+309             \} \textcolor{keywordflow}{catch} (IOException e) \{
+310                 \textcolor{comment}{// shouldn't happen }
+311                 e.printStackTrace();
+312                 JOptionPane.showMessageDialog(\textcolor{keyword}{this}, \textcolor{stringliteral}{"Failed to write output"});
+313             \}
+314         \}
+315     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tools_1_1packulike_1_1_packer_a7811f0b2c45bb43e48fb3edbb65115e3}\label{classorg_1_1newdawn_1_1slick_1_1tools_1_1packulike_1_1_packer_a7811f0b2c45bb43e48fb3edbb65115e3}} 
+\index{org\+::newdawn\+::slick\+::tools\+::packulike\+::\+Packer@{org\+::newdawn\+::slick\+::tools\+::packulike\+::\+Packer}!select@{select}}
+\index{select@{select}!org\+::newdawn\+::slick\+::tools\+::packulike\+::\+Packer@{org\+::newdawn\+::slick\+::tools\+::packulike\+::\+Packer}}
+\subsubsection{\texorpdfstring{select()}{select()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+tools.\+packulike.\+Packer.\+select (\begin{DoxyParamCaption}\item[{Array\+List}]{selection }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Select a series of sprites
+
+
+\begin{DoxyParams}{Parameters}
+{\em selection} & The series of sprites to be selected (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1packulike_1_1_sprite}{Sprite}} objects) \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+282                                             \{
+283         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1packulike_1_1_packer_a45e8438e951eb84f2efaf06e5ae481bd}{list}}.clearSelection();
+284         \textcolor{keywordtype}{int}[] selected = \textcolor{keyword}{new} \textcolor{keywordtype}{int}[selection.size()];
+285         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i=0;i<selection.size();i++) \{
+286             selected[i] = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1packulike_1_1_packer_a5684e96219ce89e574c4550d3c650eaa}{sprites}}.indexOf(selection.get(i));
+287         \}
+288         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1packulike_1_1_packer_a45e8438e951eb84f2efaf06e5ae481bd}{list}}.setSelectedIndices(selected);
+289         
+290         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1packulike_1_1_packer_af39b29a5c9105d3079b3e2df19008ad8}{sheetPanel}}.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1packulike_1_1_sheet_panel_a059d3b0d4b88b10f3198da5a4b8394e4}{setSelection}}(selection);
+291     \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tools_1_1packulike_1_1_packer_ad52e9b53a46d3aa9a1b2f66755558055}\label{classorg_1_1newdawn_1_1slick_1_1tools_1_1packulike_1_1_packer_ad52e9b53a46d3aa9a1b2f66755558055}} 
+\index{org\+::newdawn\+::slick\+::tools\+::packulike\+::\+Packer@{org\+::newdawn\+::slick\+::tools\+::packulike\+::\+Packer}!border@{border}}
+\index{border@{border}!org\+::newdawn\+::slick\+::tools\+::packulike\+::\+Packer@{org\+::newdawn\+::slick\+::tools\+::packulike\+::\+Packer}}
+\subsubsection{\texorpdfstring{border}{border}}
+{\footnotesize\ttfamily J\+Spinner org.\+newdawn.\+slick.\+tools.\+packulike.\+Packer.\+border = new J\+Spinner(new Spinner\+Number\+Model(0,0,50,1))\hspace{0.3cm}{\ttfamily [private]}}
+
+The visual selection for border size \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tools_1_1packulike_1_1_packer_aee4fbd6c801ae2b56690fc2994e73e52}\label{classorg_1_1newdawn_1_1slick_1_1tools_1_1packulike_1_1_packer_aee4fbd6c801ae2b56690fc2994e73e52}} 
+\index{org\+::newdawn\+::slick\+::tools\+::packulike\+::\+Packer@{org\+::newdawn\+::slick\+::tools\+::packulike\+::\+Packer}!chooser@{chooser}}
+\index{chooser@{chooser}!org\+::newdawn\+::slick\+::tools\+::packulike\+::\+Packer@{org\+::newdawn\+::slick\+::tools\+::packulike\+::\+Packer}}
+\subsubsection{\texorpdfstring{chooser}{chooser}}
+{\footnotesize\ttfamily J\+File\+Chooser org.\+newdawn.\+slick.\+tools.\+packulike.\+Packer.\+chooser = new J\+File\+Chooser(\char`\"{}.\char`\"{})\hspace{0.3cm}{\ttfamily [private]}}
+
+The chooser used to select sprites \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tools_1_1packulike_1_1_packer_ae1f6f20e835b26e94eb0b5f687381098}\label{classorg_1_1newdawn_1_1slick_1_1tools_1_1packulike_1_1_packer_ae1f6f20e835b26e94eb0b5f687381098}} 
+\index{org\+::newdawn\+::slick\+::tools\+::packulike\+::\+Packer@{org\+::newdawn\+::slick\+::tools\+::packulike\+::\+Packer}!heights@{heights}}
+\index{heights@{heights}!org\+::newdawn\+::slick\+::tools\+::packulike\+::\+Packer@{org\+::newdawn\+::slick\+::tools\+::packulike\+::\+Packer}}
+\subsubsection{\texorpdfstring{heights}{heights}}
+{\footnotesize\ttfamily J\+Combo\+Box org.\+newdawn.\+slick.\+tools.\+packulike.\+Packer.\+heights = new J\+Combo\+Box(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1packulike_1_1_packer_a88ad350f9bcdf274650f612a9fec4fd4}{sizes2}})\hspace{0.3cm}{\ttfamily [private]}}
+
+The visual selection for texture height \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tools_1_1packulike_1_1_packer_a45e8438e951eb84f2efaf06e5ae481bd}\label{classorg_1_1newdawn_1_1slick_1_1tools_1_1packulike_1_1_packer_a45e8438e951eb84f2efaf06e5ae481bd}} 
+\index{org\+::newdawn\+::slick\+::tools\+::packulike\+::\+Packer@{org\+::newdawn\+::slick\+::tools\+::packulike\+::\+Packer}!list@{list}}
+\index{list@{list}!org\+::newdawn\+::slick\+::tools\+::packulike\+::\+Packer@{org\+::newdawn\+::slick\+::tools\+::packulike\+::\+Packer}}
+\subsubsection{\texorpdfstring{list}{list}}
+{\footnotesize\ttfamily J\+List org.\+newdawn.\+slick.\+tools.\+packulike.\+Packer.\+list = new J\+List(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1packulike_1_1_packer_a5684e96219ce89e574c4550d3c650eaa}{sprites}})\hspace{0.3cm}{\ttfamily [private]}}
+
+The visual list of the sprites \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tools_1_1packulike_1_1_packer_a7e75cbdd91211b7a08a6a5a587575fe6}\label{classorg_1_1newdawn_1_1slick_1_1tools_1_1packulike_1_1_packer_a7e75cbdd91211b7a08a6a5a587575fe6}} 
+\index{org\+::newdawn\+::slick\+::tools\+::packulike\+::\+Packer@{org\+::newdawn\+::slick\+::tools\+::packulike\+::\+Packer}!pack@{pack}}
+\index{pack@{pack}!org\+::newdawn\+::slick\+::tools\+::packulike\+::\+Packer@{org\+::newdawn\+::slick\+::tools\+::packulike\+::\+Packer}}
+\subsubsection{\texorpdfstring{pack}{pack}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1packulike_1_1_pack}{Pack}} org.\+newdawn.\+slick.\+tools.\+packulike.\+Packer.\+pack = new \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1packulike_1_1_pack}{Pack}}()\hspace{0.3cm}{\ttfamily [private]}}
+
+The packing tool \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tools_1_1packulike_1_1_packer_a29ef57b7ec0b9ffa079a40890b9ac78b}\label{classorg_1_1newdawn_1_1slick_1_1tools_1_1packulike_1_1_packer_a29ef57b7ec0b9ffa079a40890b9ac78b}} 
+\index{org\+::newdawn\+::slick\+::tools\+::packulike\+::\+Packer@{org\+::newdawn\+::slick\+::tools\+::packulike\+::\+Packer}!save\+Chooser@{save\+Chooser}}
+\index{save\+Chooser@{save\+Chooser}!org\+::newdawn\+::slick\+::tools\+::packulike\+::\+Packer@{org\+::newdawn\+::slick\+::tools\+::packulike\+::\+Packer}}
+\subsubsection{\texorpdfstring{save\+Chooser}{saveChooser}}
+{\footnotesize\ttfamily J\+File\+Chooser org.\+newdawn.\+slick.\+tools.\+packulike.\+Packer.\+save\+Chooser = new J\+File\+Chooser(\char`\"{}.\char`\"{})\hspace{0.3cm}{\ttfamily [private]}}
+
+The chooser used to save the sprite sheet \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tools_1_1packulike_1_1_packer_af39b29a5c9105d3079b3e2df19008ad8}\label{classorg_1_1newdawn_1_1slick_1_1tools_1_1packulike_1_1_packer_af39b29a5c9105d3079b3e2df19008ad8}} 
+\index{org\+::newdawn\+::slick\+::tools\+::packulike\+::\+Packer@{org\+::newdawn\+::slick\+::tools\+::packulike\+::\+Packer}!sheet\+Panel@{sheet\+Panel}}
+\index{sheet\+Panel@{sheet\+Panel}!org\+::newdawn\+::slick\+::tools\+::packulike\+::\+Packer@{org\+::newdawn\+::slick\+::tools\+::packulike\+::\+Packer}}
+\subsubsection{\texorpdfstring{sheet\+Panel}{sheetPanel}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1packulike_1_1_sheet_panel}{Sheet\+Panel}} org.\+newdawn.\+slick.\+tools.\+packulike.\+Packer.\+sheet\+Panel\hspace{0.3cm}{\ttfamily [private]}}
+
+The panel showing the currently generated sprite sheet \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tools_1_1packulike_1_1_packer_a29634c52b37f367f3e1c6f534b690f2d}\label{classorg_1_1newdawn_1_1slick_1_1tools_1_1packulike_1_1_packer_a29634c52b37f367f3e1c6f534b690f2d}} 
+\index{org\+::newdawn\+::slick\+::tools\+::packulike\+::\+Packer@{org\+::newdawn\+::slick\+::tools\+::packulike\+::\+Packer}!sizes@{sizes}}
+\index{sizes@{sizes}!org\+::newdawn\+::slick\+::tools\+::packulike\+::\+Packer@{org\+::newdawn\+::slick\+::tools\+::packulike\+::\+Packer}}
+\subsubsection{\texorpdfstring{sizes}{sizes}}
+{\footnotesize\ttfamily Default\+Combo\+Box\+Model org.\+newdawn.\+slick.\+tools.\+packulike.\+Packer.\+sizes = new Default\+Combo\+Box\+Model()\hspace{0.3cm}{\ttfamily [private]}}
+
+The width texture sizes model \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tools_1_1packulike_1_1_packer_a88ad350f9bcdf274650f612a9fec4fd4}\label{classorg_1_1newdawn_1_1slick_1_1tools_1_1packulike_1_1_packer_a88ad350f9bcdf274650f612a9fec4fd4}} 
+\index{org\+::newdawn\+::slick\+::tools\+::packulike\+::\+Packer@{org\+::newdawn\+::slick\+::tools\+::packulike\+::\+Packer}!sizes2@{sizes2}}
+\index{sizes2@{sizes2}!org\+::newdawn\+::slick\+::tools\+::packulike\+::\+Packer@{org\+::newdawn\+::slick\+::tools\+::packulike\+::\+Packer}}
+\subsubsection{\texorpdfstring{sizes2}{sizes2}}
+{\footnotesize\ttfamily Default\+Combo\+Box\+Model org.\+newdawn.\+slick.\+tools.\+packulike.\+Packer.\+sizes2 = new Default\+Combo\+Box\+Model()\hspace{0.3cm}{\ttfamily [private]}}
+
+The height texture sizes model \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tools_1_1packulike_1_1_packer_a5684e96219ce89e574c4550d3c650eaa}\label{classorg_1_1newdawn_1_1slick_1_1tools_1_1packulike_1_1_packer_a5684e96219ce89e574c4550d3c650eaa}} 
+\index{org\+::newdawn\+::slick\+::tools\+::packulike\+::\+Packer@{org\+::newdawn\+::slick\+::tools\+::packulike\+::\+Packer}!sprites@{sprites}}
+\index{sprites@{sprites}!org\+::newdawn\+::slick\+::tools\+::packulike\+::\+Packer@{org\+::newdawn\+::slick\+::tools\+::packulike\+::\+Packer}}
+\subsubsection{\texorpdfstring{sprites}{sprites}}
+{\footnotesize\ttfamily Default\+List\+Model org.\+newdawn.\+slick.\+tools.\+packulike.\+Packer.\+sprites = new Default\+List\+Model()\hspace{0.3cm}{\ttfamily [private]}}
+
+The sprites currently displayed \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tools_1_1packulike_1_1_packer_ae627e80430f7f495a1c7542ea9040668}\label{classorg_1_1newdawn_1_1slick_1_1tools_1_1packulike_1_1_packer_ae627e80430f7f495a1c7542ea9040668}} 
+\index{org\+::newdawn\+::slick\+::tools\+::packulike\+::\+Packer@{org\+::newdawn\+::slick\+::tools\+::packulike\+::\+Packer}!theight@{theight}}
+\index{theight@{theight}!org\+::newdawn\+::slick\+::tools\+::packulike\+::\+Packer@{org\+::newdawn\+::slick\+::tools\+::packulike\+::\+Packer}}
+\subsubsection{\texorpdfstring{theight}{theight}}
+{\footnotesize\ttfamily int org.\+newdawn.\+slick.\+tools.\+packulike.\+Packer.\+theight\hspace{0.3cm}{\ttfamily [private]}}
+
+The height of the texture being generated \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tools_1_1packulike_1_1_packer_ad8d50a999815f740d8690c45e408db6c}\label{classorg_1_1newdawn_1_1slick_1_1tools_1_1packulike_1_1_packer_ad8d50a999815f740d8690c45e408db6c}} 
+\index{org\+::newdawn\+::slick\+::tools\+::packulike\+::\+Packer@{org\+::newdawn\+::slick\+::tools\+::packulike\+::\+Packer}!twidth@{twidth}}
+\index{twidth@{twidth}!org\+::newdawn\+::slick\+::tools\+::packulike\+::\+Packer@{org\+::newdawn\+::slick\+::tools\+::packulike\+::\+Packer}}
+\subsubsection{\texorpdfstring{twidth}{twidth}}
+{\footnotesize\ttfamily int org.\+newdawn.\+slick.\+tools.\+packulike.\+Packer.\+twidth\hspace{0.3cm}{\ttfamily [private]}}
+
+The width of the texture being generated \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tools_1_1packulike_1_1_packer_a3a9b0950dd21c07824a4c81e42707d17}\label{classorg_1_1newdawn_1_1slick_1_1tools_1_1packulike_1_1_packer_a3a9b0950dd21c07824a4c81e42707d17}} 
+\index{org\+::newdawn\+::slick\+::tools\+::packulike\+::\+Packer@{org\+::newdawn\+::slick\+::tools\+::packulike\+::\+Packer}!widths@{widths}}
+\index{widths@{widths}!org\+::newdawn\+::slick\+::tools\+::packulike\+::\+Packer@{org\+::newdawn\+::slick\+::tools\+::packulike\+::\+Packer}}
+\subsubsection{\texorpdfstring{widths}{widths}}
+{\footnotesize\ttfamily J\+Combo\+Box org.\+newdawn.\+slick.\+tools.\+packulike.\+Packer.\+widths = new J\+Combo\+Box(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1packulike_1_1_packer_a29634c52b37f367f3e1c6f534b690f2d}{sizes}})\hspace{0.3cm}{\ttfamily [private]}}
+
+The visual selection for texture width 

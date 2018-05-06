@@ -1,0 +1,264 @@
+\hypertarget{classorg_1_1newdawn_1_1slick_1_1tools_1_1scalar_1_1_raw_scale3x}{}\section{org.\+newdawn.\+slick.\+tools.\+scalar.\+Raw\+Scale3x Class Reference}
+\label{classorg_1_1newdawn_1_1slick_1_1tools_1_1scalar_1_1_raw_scale3x}\index{org.\+newdawn.\+slick.\+tools.\+scalar.\+Raw\+Scale3x@{org.\+newdawn.\+slick.\+tools.\+scalar.\+Raw\+Scale3x}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1scalar_1_1_raw_scale3x_a4b34c8f0de69852f5f7bca5e398e5cf9}{Raw\+Scale3x}} (int\mbox{[}$\,$\mbox{]} image\+Data, int data\+Width, int data\+Height)
+\item 
+int \mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1scalar_1_1_raw_scale3x_ac70ed8797808739faa9b6376e7672c00}{get\+Scaled\+Data}} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+boolean \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1scalar_1_1_raw_scale3x_ab50d19c762329489eae638dafb119a64}{different}} (int a, int b)
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1scalar_1_1_raw_scale3x_a7ae43dc14708a76b767c92304a3fc9c2}{set\+Dest\+Pixel}} (int x, int y, int p)
+\item 
+int \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1scalar_1_1_raw_scale3x_ad4e113b12cee39ede023b4ce76a7e9f7}{get\+Source\+Pixel}} (int x, int y)
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1scalar_1_1_raw_scale3x_ad2246ebbbbf59dcc24453071bb99edfa}{process}} (int x, int y)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1scalar_1_1_raw_scale3x_a63a783ac3e746edbd747992b581f8e52}{src\+Image}}
+\item 
+int \mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1scalar_1_1_raw_scale3x_a998733a4f10166751b3dffd5be4f33f1}{dst\+Image}}
+\item 
+int \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1scalar_1_1_raw_scale3x_a755ece4afefc43bbcd0e0b7757e20ce2}{width}}
+\item 
+int \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1scalar_1_1_raw_scale3x_a67f5f9e7b2f4e0be9915463c29eb1b7d}{height}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A simple implementation of the Scale3x algorithm for scaling raw image data.
+
+\begin{DoxyAuthor}{Author}
+Kevin Glass 
+\end{DoxyAuthor}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tools_1_1scalar_1_1_raw_scale3x_a4b34c8f0de69852f5f7bca5e398e5cf9}\label{classorg_1_1newdawn_1_1slick_1_1tools_1_1scalar_1_1_raw_scale3x_a4b34c8f0de69852f5f7bca5e398e5cf9}} 
+\index{org\+::newdawn\+::slick\+::tools\+::scalar\+::\+Raw\+Scale3x@{org\+::newdawn\+::slick\+::tools\+::scalar\+::\+Raw\+Scale3x}!Raw\+Scale3x@{Raw\+Scale3x}}
+\index{Raw\+Scale3x@{Raw\+Scale3x}!org\+::newdawn\+::slick\+::tools\+::scalar\+::\+Raw\+Scale3x@{org\+::newdawn\+::slick\+::tools\+::scalar\+::\+Raw\+Scale3x}}
+\subsubsection{\texorpdfstring{Raw\+Scale3x()}{RawScale3x()}}
+{\footnotesize\ttfamily org.\+newdawn.\+slick.\+tools.\+scalar.\+Raw\+Scale3x.\+Raw\+Scale3x (\begin{DoxyParamCaption}\item[{int \mbox{[}$\,$\mbox{]}}]{image\+Data,  }\item[{int}]{data\+Width,  }\item[{int}]{data\+Height }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Create a new scaler based on some raw data. Right now it doesn\textquotesingle{}t matter what order the channels in, just that its an int per pixel
+
+
+\begin{DoxyParams}{Parameters}
+{\em image\+Data} & The source image data \\
+\hline
+{\em data\+Width} & The width of the source image \\
+\hline
+{\em data\+Height} & The height of the source image \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+29     \{
+30         this.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1scalar_1_1_raw_scale3x_a755ece4afefc43bbcd0e0b7757e20ce2}{width}} = dataWidth;
+31         this.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1scalar_1_1_raw_scale3x_a67f5f9e7b2f4e0be9915463c29eb1b7d}{height}} = dataHeight;
+32         this.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1scalar_1_1_raw_scale3x_a63a783ac3e746edbd747992b581f8e52}{srcImage}} = imageData;
+33         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1scalar_1_1_raw_scale3x_a998733a4f10166751b3dffd5be4f33f1}{dstImage}} = \textcolor{keyword}{new} \textcolor{keywordtype}{int}[imageData.length*9];
+34     \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tools_1_1scalar_1_1_raw_scale3x_ab50d19c762329489eae638dafb119a64}\label{classorg_1_1newdawn_1_1slick_1_1tools_1_1scalar_1_1_raw_scale3x_ab50d19c762329489eae638dafb119a64}} 
+\index{org\+::newdawn\+::slick\+::tools\+::scalar\+::\+Raw\+Scale3x@{org\+::newdawn\+::slick\+::tools\+::scalar\+::\+Raw\+Scale3x}!different@{different}}
+\index{different@{different}!org\+::newdawn\+::slick\+::tools\+::scalar\+::\+Raw\+Scale3x@{org\+::newdawn\+::slick\+::tools\+::scalar\+::\+Raw\+Scale3x}}
+\subsubsection{\texorpdfstring{different()}{different()}}
+{\footnotesize\ttfamily boolean org.\+newdawn.\+slick.\+tools.\+scalar.\+Raw\+Scale3x.\+different (\begin{DoxyParamCaption}\item[{int}]{a,  }\item[{int}]{b }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+Check if two pixels are different. Place holder for maybe some clever code about tolerance checking
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & The first pixel value \\
+\hline
+{\em b} & The second pixel value \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the pixels are different 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+45     \{
+46         \textcolor{keywordflow}{return} a != b;
+47     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tools_1_1scalar_1_1_raw_scale3x_ac70ed8797808739faa9b6376e7672c00}\label{classorg_1_1newdawn_1_1slick_1_1tools_1_1scalar_1_1_raw_scale3x_ac70ed8797808739faa9b6376e7672c00}} 
+\index{org\+::newdawn\+::slick\+::tools\+::scalar\+::\+Raw\+Scale3x@{org\+::newdawn\+::slick\+::tools\+::scalar\+::\+Raw\+Scale3x}!get\+Scaled\+Data@{get\+Scaled\+Data}}
+\index{get\+Scaled\+Data@{get\+Scaled\+Data}!org\+::newdawn\+::slick\+::tools\+::scalar\+::\+Raw\+Scale3x@{org\+::newdawn\+::slick\+::tools\+::scalar\+::\+Raw\+Scale3x}}
+\subsubsection{\texorpdfstring{get\+Scaled\+Data()}{getScaledData()}}
+{\footnotesize\ttfamily int \mbox{[}$\,$\mbox{]} org.\+newdawn.\+slick.\+tools.\+scalar.\+Raw\+Scale3x.\+get\+Scaled\+Data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get the scale image data. Note this is the method that does the work so it might take some time to process.
+
+\begin{DoxyReturn}{Returns}
+An array of pixels 9 times the size of the input array containing the smoothly scaled image 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+138     \{
+139         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} x=0;x<\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1scalar_1_1_raw_scale3x_a755ece4afefc43bbcd0e0b7757e20ce2}{width}};x++)
+140         \{
+141             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} y=0;y<\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1scalar_1_1_raw_scale3x_a67f5f9e7b2f4e0be9915463c29eb1b7d}{height}};y++)
+142             \{
+143                 \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1scalar_1_1_raw_scale3x_ad2246ebbbbf59dcc24453071bb99edfa}{process}}(x,y);
+144             \}
+145         \}
+146         
+147         \textcolor{keywordflow}{return} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1scalar_1_1_raw_scale3x_a998733a4f10166751b3dffd5be4f33f1}{dstImage}};
+148     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tools_1_1scalar_1_1_raw_scale3x_ad4e113b12cee39ede023b4ce76a7e9f7}\label{classorg_1_1newdawn_1_1slick_1_1tools_1_1scalar_1_1_raw_scale3x_ad4e113b12cee39ede023b4ce76a7e9f7}} 
+\index{org\+::newdawn\+::slick\+::tools\+::scalar\+::\+Raw\+Scale3x@{org\+::newdawn\+::slick\+::tools\+::scalar\+::\+Raw\+Scale3x}!get\+Source\+Pixel@{get\+Source\+Pixel}}
+\index{get\+Source\+Pixel@{get\+Source\+Pixel}!org\+::newdawn\+::slick\+::tools\+::scalar\+::\+Raw\+Scale3x@{org\+::newdawn\+::slick\+::tools\+::scalar\+::\+Raw\+Scale3x}}
+\subsubsection{\texorpdfstring{get\+Source\+Pixel()}{getSourcePixel()}}
+{\footnotesize\ttfamily int org.\+newdawn.\+slick.\+tools.\+scalar.\+Raw\+Scale3x.\+get\+Source\+Pixel (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+Get a pixel from the source image. This handles bonds checks and resolves to edge pixels
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & The x location of the pixel to retrieve \\
+\hline
+{\em y} & The y location of the pixel to retrieve \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The pixel value at the specified location 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+70     \{
+71         x = Math.max(0,x);
+72         x = Math.min(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1scalar_1_1_raw_scale3x_a755ece4afefc43bbcd0e0b7757e20ce2}{width}}-1,x);
+73         y = Math.max(0,y);
+74         y = Math.min(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1scalar_1_1_raw_scale3x_a67f5f9e7b2f4e0be9915463c29eb1b7d}{height}}-1,y);
+75         
+76         \textcolor{keywordflow}{return} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1scalar_1_1_raw_scale3x_a63a783ac3e746edbd747992b581f8e52}{srcImage}}[x+(y*\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1scalar_1_1_raw_scale3x_a755ece4afefc43bbcd0e0b7757e20ce2}{width}})];
+77     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tools_1_1scalar_1_1_raw_scale3x_ad2246ebbbbf59dcc24453071bb99edfa}\label{classorg_1_1newdawn_1_1slick_1_1tools_1_1scalar_1_1_raw_scale3x_ad2246ebbbbf59dcc24453071bb99edfa}} 
+\index{org\+::newdawn\+::slick\+::tools\+::scalar\+::\+Raw\+Scale3x@{org\+::newdawn\+::slick\+::tools\+::scalar\+::\+Raw\+Scale3x}!process@{process}}
+\index{process@{process}!org\+::newdawn\+::slick\+::tools\+::scalar\+::\+Raw\+Scale3x@{org\+::newdawn\+::slick\+::tools\+::scalar\+::\+Raw\+Scale3x}}
+\subsubsection{\texorpdfstring{process()}{process()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+tools.\+scalar.\+Raw\+Scale3x.\+process (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+Process a specific pixel. This will generate 4 pixels in the destination image based on the scale2x algorithm
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & The x location in the source image of the pixel to process \\
+\hline
+{\em y} & The y location in the source image of the pixel to process \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+87     \{
+88         \textcolor{keywordtype}{int} A = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1scalar_1_1_raw_scale3x_ad4e113b12cee39ede023b4ce76a7e9f7}{getSourcePixel}}(x-1,y-1);
+89         \textcolor{keywordtype}{int} B = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1scalar_1_1_raw_scale3x_ad4e113b12cee39ede023b4ce76a7e9f7}{getSourcePixel}}(x,y-1);
+90         \textcolor{keywordtype}{int} C = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1scalar_1_1_raw_scale3x_ad4e113b12cee39ede023b4ce76a7e9f7}{getSourcePixel}}(x+1,y-1);
+91         \textcolor{keywordtype}{int} D = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1scalar_1_1_raw_scale3x_ad4e113b12cee39ede023b4ce76a7e9f7}{getSourcePixel}}(x-1,y);
+92         \textcolor{keywordtype}{int} E = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1scalar_1_1_raw_scale3x_ad4e113b12cee39ede023b4ce76a7e9f7}{getSourcePixel}}(x,y);
+93         \textcolor{keywordtype}{int} F = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1scalar_1_1_raw_scale3x_ad4e113b12cee39ede023b4ce76a7e9f7}{getSourcePixel}}(x+1,y);
+94         \textcolor{keywordtype}{int} G = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1scalar_1_1_raw_scale3x_ad4e113b12cee39ede023b4ce76a7e9f7}{getSourcePixel}}(x-1,y+1);
+95         \textcolor{keywordtype}{int} H = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1scalar_1_1_raw_scale3x_ad4e113b12cee39ede023b4ce76a7e9f7}{getSourcePixel}}(x,y+1);
+96         \textcolor{keywordtype}{int} I = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1scalar_1_1_raw_scale3x_ad4e113b12cee39ede023b4ce76a7e9f7}{getSourcePixel}}(x+1,y+1);
+97         \textcolor{keywordtype}{int} E0 = E;
+98         \textcolor{keywordtype}{int} E1 = E;
+99         \textcolor{keywordtype}{int} E2 = E;
+100         \textcolor{keywordtype}{int} E3 = E;
+101         \textcolor{keywordtype}{int} E4 = E;
+102         \textcolor{keywordtype}{int} E5 = E;
+103         \textcolor{keywordtype}{int} E6 = E;
+104         \textcolor{keywordtype}{int} E7 = E;
+105         \textcolor{keywordtype}{int} E8 = E;
+106         
+107         \textcolor{keywordflow}{if} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1scalar_1_1_raw_scale3x_ab50d19c762329489eae638dafb119a64}{different}}(B,H) && \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1scalar_1_1_raw_scale3x_ab50d19c762329489eae638dafb119a64}{different}}(D,F)) \{
+108             E0 = !\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1scalar_1_1_raw_scale3x_ab50d19c762329489eae638dafb119a64}{different}}(D,B) ? D : E;
+109             E1 = ((!\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1scalar_1_1_raw_scale3x_ab50d19c762329489eae638dafb119a64}{different}}(D,B)) && \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1scalar_1_1_raw_scale3x_ab50d19c762329489eae638dafb119a64}{different}}(E,C)) || ((!
+      \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1scalar_1_1_raw_scale3x_ab50d19c762329489eae638dafb119a64}{different}}(B,F)) && \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1scalar_1_1_raw_scale3x_ab50d19c762329489eae638dafb119a64}{different}}(E,A)) ? B : E;
+110             E2 = !\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1scalar_1_1_raw_scale3x_ab50d19c762329489eae638dafb119a64}{different}}(B,F) ? F : E;
+111             E3 = ((!\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1scalar_1_1_raw_scale3x_ab50d19c762329489eae638dafb119a64}{different}}(D,B)) && \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1scalar_1_1_raw_scale3x_ab50d19c762329489eae638dafb119a64}{different}}(E,G)) || ((!
+      \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1scalar_1_1_raw_scale3x_ab50d19c762329489eae638dafb119a64}{different}}(D,H)) && \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1scalar_1_1_raw_scale3x_ab50d19c762329489eae638dafb119a64}{different}}(E,A)) ? D : E;
+112             E4 = E;
+113             E5 = ((!\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1scalar_1_1_raw_scale3x_ab50d19c762329489eae638dafb119a64}{different}}(B,F)) && \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1scalar_1_1_raw_scale3x_ab50d19c762329489eae638dafb119a64}{different}}(E,I)) || ((!
+      \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1scalar_1_1_raw_scale3x_ab50d19c762329489eae638dafb119a64}{different}}(H,F)) && \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1scalar_1_1_raw_scale3x_ab50d19c762329489eae638dafb119a64}{different}}(E,C)) ? F : E;
+114             E6 = !\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1scalar_1_1_raw_scale3x_ab50d19c762329489eae638dafb119a64}{different}}(D,H) ? D : E;
+115             E7 = ((!\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1scalar_1_1_raw_scale3x_ab50d19c762329489eae638dafb119a64}{different}}(D,H)) && \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1scalar_1_1_raw_scale3x_ab50d19c762329489eae638dafb119a64}{different}}(E,I)) || ((!
+      \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1scalar_1_1_raw_scale3x_ab50d19c762329489eae638dafb119a64}{different}}(H,F)) && \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1scalar_1_1_raw_scale3x_ab50d19c762329489eae638dafb119a64}{different}}(E,G)) ? H : E;
+116             E8 = !\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1scalar_1_1_raw_scale3x_ab50d19c762329489eae638dafb119a64}{different}}(H,F) ? F : E;
+117         \}
+118         
+119         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1scalar_1_1_raw_scale3x_a7ae43dc14708a76b767c92304a3fc9c2}{setDestPixel}}((x*3),(y*3),E0);
+120         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1scalar_1_1_raw_scale3x_a7ae43dc14708a76b767c92304a3fc9c2}{setDestPixel}}((x*3)+1,(y*3),E1);
+121         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1scalar_1_1_raw_scale3x_a7ae43dc14708a76b767c92304a3fc9c2}{setDestPixel}}((x*3)+2,(y*3),E2);
+122         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1scalar_1_1_raw_scale3x_a7ae43dc14708a76b767c92304a3fc9c2}{setDestPixel}}((x*3),(y*3)+1,E3);
+123         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1scalar_1_1_raw_scale3x_a7ae43dc14708a76b767c92304a3fc9c2}{setDestPixel}}((x*3)+1,(y*3)+1,E4);
+124         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1scalar_1_1_raw_scale3x_a7ae43dc14708a76b767c92304a3fc9c2}{setDestPixel}}((x*3)+2,(y*3)+1,E5);
+125         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1scalar_1_1_raw_scale3x_a7ae43dc14708a76b767c92304a3fc9c2}{setDestPixel}}((x*3),(y*3)+2,E6);
+126         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1scalar_1_1_raw_scale3x_a7ae43dc14708a76b767c92304a3fc9c2}{setDestPixel}}((x*3)+1,(y*3)+2,E7);
+127         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1scalar_1_1_raw_scale3x_a7ae43dc14708a76b767c92304a3fc9c2}{setDestPixel}}((x*3)+2,(y*3)+2,E8);
+128     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tools_1_1scalar_1_1_raw_scale3x_a7ae43dc14708a76b767c92304a3fc9c2}\label{classorg_1_1newdawn_1_1slick_1_1tools_1_1scalar_1_1_raw_scale3x_a7ae43dc14708a76b767c92304a3fc9c2}} 
+\index{org\+::newdawn\+::slick\+::tools\+::scalar\+::\+Raw\+Scale3x@{org\+::newdawn\+::slick\+::tools\+::scalar\+::\+Raw\+Scale3x}!set\+Dest\+Pixel@{set\+Dest\+Pixel}}
+\index{set\+Dest\+Pixel@{set\+Dest\+Pixel}!org\+::newdawn\+::slick\+::tools\+::scalar\+::\+Raw\+Scale3x@{org\+::newdawn\+::slick\+::tools\+::scalar\+::\+Raw\+Scale3x}}
+\subsubsection{\texorpdfstring{set\+Dest\+Pixel()}{setDestPixel()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+tools.\+scalar.\+Raw\+Scale3x.\+set\+Dest\+Pixel (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y,  }\item[{int}]{p }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+Set a pixel in the destination image data
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & The x location of the pixel to set \\
+\hline
+{\em y} & The y location of the pixel to set \\
+\hline
+{\em p} & The value of the pixel to set \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+57     \{
+58         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1scalar_1_1_raw_scale3x_a998733a4f10166751b3dffd5be4f33f1}{dstImage}}[x+(y*\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1scalar_1_1_raw_scale3x_a755ece4afefc43bbcd0e0b7757e20ce2}{width}}*3)] = p;
+59     \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tools_1_1scalar_1_1_raw_scale3x_a998733a4f10166751b3dffd5be4f33f1}\label{classorg_1_1newdawn_1_1slick_1_1tools_1_1scalar_1_1_raw_scale3x_a998733a4f10166751b3dffd5be4f33f1}} 
+\index{org\+::newdawn\+::slick\+::tools\+::scalar\+::\+Raw\+Scale3x@{org\+::newdawn\+::slick\+::tools\+::scalar\+::\+Raw\+Scale3x}!dst\+Image@{dst\+Image}}
+\index{dst\+Image@{dst\+Image}!org\+::newdawn\+::slick\+::tools\+::scalar\+::\+Raw\+Scale3x@{org\+::newdawn\+::slick\+::tools\+::scalar\+::\+Raw\+Scale3x}}
+\subsubsection{\texorpdfstring{dst\+Image}{dstImage}}
+{\footnotesize\ttfamily int \mbox{[}$\,$\mbox{]} org.\+newdawn.\+slick.\+tools.\+scalar.\+Raw\+Scale3x.\+dst\+Image\hspace{0.3cm}{\ttfamily [private]}}
+
+The dest image data \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tools_1_1scalar_1_1_raw_scale3x_a67f5f9e7b2f4e0be9915463c29eb1b7d}\label{classorg_1_1newdawn_1_1slick_1_1tools_1_1scalar_1_1_raw_scale3x_a67f5f9e7b2f4e0be9915463c29eb1b7d}} 
+\index{org\+::newdawn\+::slick\+::tools\+::scalar\+::\+Raw\+Scale3x@{org\+::newdawn\+::slick\+::tools\+::scalar\+::\+Raw\+Scale3x}!height@{height}}
+\index{height@{height}!org\+::newdawn\+::slick\+::tools\+::scalar\+::\+Raw\+Scale3x@{org\+::newdawn\+::slick\+::tools\+::scalar\+::\+Raw\+Scale3x}}
+\subsubsection{\texorpdfstring{height}{height}}
+{\footnotesize\ttfamily int org.\+newdawn.\+slick.\+tools.\+scalar.\+Raw\+Scale3x.\+height\hspace{0.3cm}{\ttfamily [private]}}
+
+The height of the source image \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tools_1_1scalar_1_1_raw_scale3x_a63a783ac3e746edbd747992b581f8e52}\label{classorg_1_1newdawn_1_1slick_1_1tools_1_1scalar_1_1_raw_scale3x_a63a783ac3e746edbd747992b581f8e52}} 
+\index{org\+::newdawn\+::slick\+::tools\+::scalar\+::\+Raw\+Scale3x@{org\+::newdawn\+::slick\+::tools\+::scalar\+::\+Raw\+Scale3x}!src\+Image@{src\+Image}}
+\index{src\+Image@{src\+Image}!org\+::newdawn\+::slick\+::tools\+::scalar\+::\+Raw\+Scale3x@{org\+::newdawn\+::slick\+::tools\+::scalar\+::\+Raw\+Scale3x}}
+\subsubsection{\texorpdfstring{src\+Image}{srcImage}}
+{\footnotesize\ttfamily int \mbox{[}$\,$\mbox{]} org.\+newdawn.\+slick.\+tools.\+scalar.\+Raw\+Scale3x.\+src\+Image\hspace{0.3cm}{\ttfamily [private]}}
+
+The src image data \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tools_1_1scalar_1_1_raw_scale3x_a755ece4afefc43bbcd0e0b7757e20ce2}\label{classorg_1_1newdawn_1_1slick_1_1tools_1_1scalar_1_1_raw_scale3x_a755ece4afefc43bbcd0e0b7757e20ce2}} 
+\index{org\+::newdawn\+::slick\+::tools\+::scalar\+::\+Raw\+Scale3x@{org\+::newdawn\+::slick\+::tools\+::scalar\+::\+Raw\+Scale3x}!width@{width}}
+\index{width@{width}!org\+::newdawn\+::slick\+::tools\+::scalar\+::\+Raw\+Scale3x@{org\+::newdawn\+::slick\+::tools\+::scalar\+::\+Raw\+Scale3x}}
+\subsubsection{\texorpdfstring{width}{width}}
+{\footnotesize\ttfamily int org.\+newdawn.\+slick.\+tools.\+scalar.\+Raw\+Scale3x.\+width\hspace{0.3cm}{\ttfamily [private]}}
+
+The width of the source image 

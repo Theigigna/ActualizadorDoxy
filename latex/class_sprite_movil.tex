@@ -1,0 +1,106 @@
+\hypertarget{class_sprite_movil}{}\section{Sprite\+Movil Class Reference}
+\label{class_sprite_movil}\index{Sprite\+Movil@{Sprite\+Movil}}
+Inheritance diagram for Sprite\+Movil\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{class_sprite_movil}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_sprite_movil_aaf35285b6c2bdf70f1c23cfb71a6a9dd}{Sprite\+Movil}} (String ruta, \mbox{\hyperlink{class_coordenadas}{Coordenadas}} coord, \mbox{\hyperlink{class_vector}{Vector}} \mbox{\hyperlink{class_sprite_movil_a5f99cf7fe355c17b0dc3edb2f6fb4969}{velocidad}})  throws Slick\+Exception 
+\item 
+\mbox{\hyperlink{class_sprite_movil_a9175b9c7c135d677521ced51850902d3}{Sprite\+Movil}} (String ruta, \mbox{\hyperlink{class_coordenadas}{Coordenadas}} posicion, \mbox{\hyperlink{class_coordenadas}{Coordenadas}} \mbox{\hyperlink{class_sprite_movil_a5f99cf7fe355c17b0dc3edb2f6fb4969}{velocidad}})  throws Slick\+Exception
+\item 
+\mbox{\hyperlink{class_vector}{Vector}} \mbox{\hyperlink{class_sprite_movil_ac4622b6fb7f8fce4f6cf66db376cd38d}{get\+Velocidad}} ()
+\item 
+void \mbox{\hyperlink{class_sprite_movil_ad1477094c3bcef96fa83b7582f03ecb9}{set\+Velocidad}} (\mbox{\hyperlink{class_vector}{Vector}} \mbox{\hyperlink{class_sprite_movil_a5f99cf7fe355c17b0dc3edb2f6fb4969}{velocidad}})
+\item 
+void \mbox{\hyperlink{class_sprite_movil_a7d40c2a76b0be777aa231a971007637e}{update}} (int delta)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_vector}{Vector}} \mbox{\hyperlink{class_sprite_movil_a5f99cf7fe355c17b0dc3edb2f6fb4969}{velocidad}}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_sprite_movil_aaf35285b6c2bdf70f1c23cfb71a6a9dd}\label{class_sprite_movil_aaf35285b6c2bdf70f1c23cfb71a6a9dd}} 
+\index{Sprite\+Movil@{Sprite\+Movil}!Sprite\+Movil@{Sprite\+Movil}}
+\index{Sprite\+Movil@{Sprite\+Movil}!Sprite\+Movil@{Sprite\+Movil}}
+\subsubsection{\texorpdfstring{Sprite\+Movil()}{SpriteMovil()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Sprite\+Movil.\+Sprite\+Movil (\begin{DoxyParamCaption}\item[{String}]{ruta,  }\item[{\mbox{\hyperlink{class_coordenadas}{Coordenadas}}}]{coord,  }\item[{\mbox{\hyperlink{class_vector}{Vector}}}]{velocidad }\end{DoxyParamCaption}) throws \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_slick_exception}{Slick\+Exception}}\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+9                                                                                                \{
+10         super(ruta, coord);
+11         this.velocidad = \mbox{\hyperlink{class_sprite_movil_a5f99cf7fe355c17b0dc3edb2f6fb4969}{velocidad}};
+12     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_sprite_movil_a9175b9c7c135d677521ced51850902d3}\label{class_sprite_movil_a9175b9c7c135d677521ced51850902d3}} 
+\index{Sprite\+Movil@{Sprite\+Movil}!Sprite\+Movil@{Sprite\+Movil}}
+\index{Sprite\+Movil@{Sprite\+Movil}!Sprite\+Movil@{Sprite\+Movil}}
+\subsubsection{\texorpdfstring{Sprite\+Movil()}{SpriteMovil()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Sprite\+Movil.\+Sprite\+Movil (\begin{DoxyParamCaption}\item[{String}]{ruta,  }\item[{\mbox{\hyperlink{class_coordenadas}{Coordenadas}}}]{posicion,  }\item[{\mbox{\hyperlink{class_coordenadas}{Coordenadas}}}]{velocidad }\end{DoxyParamCaption}) throws \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_slick_exception}{Slick\+Exception}}\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+14                                                                                                       \{
+15         \textcolor{keyword}{this}(ruta, posicion, \textcolor{keyword}{new} \mbox{\hyperlink{class_vector}{Vector}}(\mbox{\hyperlink{class_sprite_movil_a5f99cf7fe355c17b0dc3edb2f6fb4969}{velocidad}}));
+16     \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_sprite_movil_ac4622b6fb7f8fce4f6cf66db376cd38d}\label{class_sprite_movil_ac4622b6fb7f8fce4f6cf66db376cd38d}} 
+\index{Sprite\+Movil@{Sprite\+Movil}!get\+Velocidad@{get\+Velocidad}}
+\index{get\+Velocidad@{get\+Velocidad}!Sprite\+Movil@{Sprite\+Movil}}
+\subsubsection{\texorpdfstring{get\+Velocidad()}{getVelocidad()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_vector}{Vector}} Sprite\+Movil.\+get\+Velocidad (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+17                                  \{
+18         \textcolor{keywordflow}{return} \mbox{\hyperlink{class_sprite_movil_a5f99cf7fe355c17b0dc3edb2f6fb4969}{velocidad}};
+19     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_sprite_movil_ad1477094c3bcef96fa83b7582f03ecb9}\label{class_sprite_movil_ad1477094c3bcef96fa83b7582f03ecb9}} 
+\index{Sprite\+Movil@{Sprite\+Movil}!set\+Velocidad@{set\+Velocidad}}
+\index{set\+Velocidad@{set\+Velocidad}!Sprite\+Movil@{Sprite\+Movil}}
+\subsubsection{\texorpdfstring{set\+Velocidad()}{setVelocidad()}}
+{\footnotesize\ttfamily void Sprite\+Movil.\+set\+Velocidad (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_vector}{Vector}}}]{velocidad }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+21                                                \{
+22         this.velocidad = \mbox{\hyperlink{class_sprite_movil_a5f99cf7fe355c17b0dc3edb2f6fb4969}{velocidad}};
+23     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_sprite_movil_a7d40c2a76b0be777aa231a971007637e}\label{class_sprite_movil_a7d40c2a76b0be777aa231a971007637e}} 
+\index{Sprite\+Movil@{Sprite\+Movil}!update@{update}}
+\index{update@{update}!Sprite\+Movil@{Sprite\+Movil}}
+\subsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void Sprite\+Movil.\+update (\begin{DoxyParamCaption}\item[{int}]{delta }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+25                                  \{
+26         \textcolor{keywordtype}{float} x = \mbox{\hyperlink{class_sprite_ada651b6921cee54a619e11c4eb01526d}{coordenadas}}.\mbox{\hyperlink{class_coordenadas_a7b3fc725f9146220813dc0084fecc3ca}{getX}}() + \mbox{\hyperlink{class_sprite_movil_a5f99cf7fe355c17b0dc3edb2f6fb4969}{velocidad}}.\mbox{\hyperlink{class_vector_a3d9de615137bc20dd4f1d6aa8fefa167}{getX}}() * ((float) delta / 1000
+      );
+27         \textcolor{keywordtype}{float} y = \mbox{\hyperlink{class_sprite_ada651b6921cee54a619e11c4eb01526d}{coordenadas}}.\mbox{\hyperlink{class_coordenadas_aa10f46c8c62df3db3a05d4550f20b197}{getY}}() + \mbox{\hyperlink{class_sprite_movil_a5f99cf7fe355c17b0dc3edb2f6fb4969}{velocidad}}.\mbox{\hyperlink{class_vector_ac862d32aed23f8ca72176940f76dc1f9}{getY}}() * ((float) delta/1000);
+28         this.\mbox{\hyperlink{class_sprite_ab6507a100fad450d688f71d08cc91715}{setCoordenadas}}(x, y);
+29     \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_sprite_movil_a5f99cf7fe355c17b0dc3edb2f6fb4969}\label{class_sprite_movil_a5f99cf7fe355c17b0dc3edb2f6fb4969}} 
+\index{Sprite\+Movil@{Sprite\+Movil}!velocidad@{velocidad}}
+\index{velocidad@{velocidad}!Sprite\+Movil@{Sprite\+Movil}}
+\subsubsection{\texorpdfstring{velocidad}{velocidad}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_vector}{Vector}} Sprite\+Movil.\+velocidad\hspace{0.3cm}{\ttfamily [private]}}
+

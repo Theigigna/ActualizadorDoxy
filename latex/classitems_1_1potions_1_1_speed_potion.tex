@@ -1,0 +1,94 @@
+\hypertarget{classitems_1_1potions_1_1_speed_potion}{}\section{items.\+potions.\+Speed\+Potion Class Reference}
+\label{classitems_1_1potions_1_1_speed_potion}\index{items.\+potions.\+Speed\+Potion@{items.\+potions.\+Speed\+Potion}}
+Inheritance diagram for items.\+potions.\+Speed\+Potion\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classitems_1_1potions_1_1_speed_potion}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classitems_1_1potions_1_1_speed_potion_a5d015761f8fd01edfd4779d532d1dcae}{Speed\+Potion}} (int level)  throws Slick\+Exception 
+\item 
+\mbox{\hyperlink{classitems_1_1potions_1_1_speed_potion_a086bb833594251d682a31c2050598ba3}{Speed\+Potion}} (int level, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_image}{Image}} \mbox{\hyperlink{classitems_1_1_item_afa445ad011d48c3455b0c04bec2581f9}{icon}}, String \mbox{\hyperlink{classitems_1_1_item_a086327df1ba046bbbe3fa2f753226d73}{name}})
+\item 
+void \mbox{\hyperlink{classitems_1_1potions_1_1_speed_potion_ad9b7c55659e5eb0a43b2a4b3f164d3aa}{use}} (\mbox{\hyperlink{classentities_1_1_subject}{Subject}} c)
+\end{DoxyCompactItemize}
+\subsection*{Package Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classitems_1_1potions_1_1_speed_potion_a4b068bd8e0be9c84fe4711fc486eeacc}{duration}} = 10000
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+float \mbox{\hyperlink{classitems_1_1potions_1_1_speed_potion_aea1ee6c20166ae724fc8218fc990d4f2}{num}}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+\begin{DoxyAuthor}{Author}
+Ignacio y Raul 
+\end{DoxyAuthor}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classitems_1_1potions_1_1_speed_potion_a5d015761f8fd01edfd4779d532d1dcae}\label{classitems_1_1potions_1_1_speed_potion_a5d015761f8fd01edfd4779d532d1dcae}} 
+\index{items\+::potions\+::\+Speed\+Potion@{items\+::potions\+::\+Speed\+Potion}!Speed\+Potion@{Speed\+Potion}}
+\index{Speed\+Potion@{Speed\+Potion}!items\+::potions\+::\+Speed\+Potion@{items\+::potions\+::\+Speed\+Potion}}
+\subsubsection{\texorpdfstring{Speed\+Potion()}{SpeedPotion()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily items.\+potions.\+Speed\+Potion.\+Speed\+Potion (\begin{DoxyParamCaption}\item[{int}]{level }\end{DoxyParamCaption}) throws \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_slick_exception}{Slick\+Exception}}\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+26                                                         \{
+27         \textcolor{keyword}{this}(level, \textcolor{keyword}{new} Image(\textcolor{stringliteral}{"res/potions/SpeedPot.png"}), \textcolor{stringliteral}{"SpeedPotion"});
+28     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classitems_1_1potions_1_1_speed_potion_a086bb833594251d682a31c2050598ba3}\label{classitems_1_1potions_1_1_speed_potion_a086bb833594251d682a31c2050598ba3}} 
+\index{items\+::potions\+::\+Speed\+Potion@{items\+::potions\+::\+Speed\+Potion}!Speed\+Potion@{Speed\+Potion}}
+\index{Speed\+Potion@{Speed\+Potion}!items\+::potions\+::\+Speed\+Potion@{items\+::potions\+::\+Speed\+Potion}}
+\subsubsection{\texorpdfstring{Speed\+Potion()}{SpeedPotion()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily items.\+potions.\+Speed\+Potion.\+Speed\+Potion (\begin{DoxyParamCaption}\item[{int}]{level,  }\item[{\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_image}{Image}}}]{icon,  }\item[{String}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+30                                                            \{
+31         super(\mbox{\hyperlink{classitems_1_1_item_afa445ad011d48c3455b0c04bec2581f9}{icon}}, \mbox{\hyperlink{classitems_1_1_item_a086327df1ba046bbbe3fa2f753226d73}{name}}, \mbox{\hyperlink{classitems_1_1_potion_ab2a46630762ff8d852c72333029252e5}{Potion}}.SPEED\_TYPE);
+32         \mbox{\hyperlink{classitems_1_1potions_1_1_speed_potion_aea1ee6c20166ae724fc8218fc990d4f2}{num}} = 0.25f * level;
+33     \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classitems_1_1potions_1_1_speed_potion_ad9b7c55659e5eb0a43b2a4b3f164d3aa}\label{classitems_1_1potions_1_1_speed_potion_ad9b7c55659e5eb0a43b2a4b3f164d3aa}} 
+\index{items\+::potions\+::\+Speed\+Potion@{items\+::potions\+::\+Speed\+Potion}!use@{use}}
+\index{use@{use}!items\+::potions\+::\+Speed\+Potion@{items\+::potions\+::\+Speed\+Potion}}
+\subsubsection{\texorpdfstring{use()}{use()}}
+{\footnotesize\ttfamily void items.\+potions.\+Speed\+Potion.\+use (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classentities_1_1_subject}{Subject}}}]{c }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+36                                \{
+37         \mbox{\hyperlink{classitems_1_1_potion_a33ab3390826ef43ddfa94fc812e53afe}{eat}}();
+38         c.activateSpeedPotion(\mbox{\hyperlink{classitems_1_1potions_1_1_speed_potion_a4b068bd8e0be9c84fe4711fc486eeacc}{duration}}, \mbox{\hyperlink{classitems_1_1potions_1_1_speed_potion_aea1ee6c20166ae724fc8218fc990d4f2}{num}});
+39         \textcolor{comment}{//c.setSpeed(num+c.getSpeed());       //límite?  }
+40     \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classitems_1_1potions_1_1_speed_potion_a4b068bd8e0be9c84fe4711fc486eeacc}\label{classitems_1_1potions_1_1_speed_potion_a4b068bd8e0be9c84fe4711fc486eeacc}} 
+\index{items\+::potions\+::\+Speed\+Potion@{items\+::potions\+::\+Speed\+Potion}!duration@{duration}}
+\index{duration@{duration}!items\+::potions\+::\+Speed\+Potion@{items\+::potions\+::\+Speed\+Potion}}
+\subsubsection{\texorpdfstring{duration}{duration}}
+{\footnotesize\ttfamily int items.\+potions.\+Speed\+Potion.\+duration = 10000\hspace{0.3cm}{\ttfamily [package]}}
+
+\mbox{\Hypertarget{classitems_1_1potions_1_1_speed_potion_aea1ee6c20166ae724fc8218fc990d4f2}\label{classitems_1_1potions_1_1_speed_potion_aea1ee6c20166ae724fc8218fc990d4f2}} 
+\index{items\+::potions\+::\+Speed\+Potion@{items\+::potions\+::\+Speed\+Potion}!num@{num}}
+\index{num@{num}!items\+::potions\+::\+Speed\+Potion@{items\+::potions\+::\+Speed\+Potion}}
+\subsubsection{\texorpdfstring{num}{num}}
+{\footnotesize\ttfamily float items.\+potions.\+Speed\+Potion.\+num\hspace{0.3cm}{\ttfamily [private]}}
+

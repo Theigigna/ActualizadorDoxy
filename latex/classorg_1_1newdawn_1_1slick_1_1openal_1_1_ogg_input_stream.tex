@@ -1,0 +1,810 @@
+\hypertarget{classorg_1_1newdawn_1_1slick_1_1openal_1_1_ogg_input_stream}{}\section{org.\+newdawn.\+slick.\+openal.\+Ogg\+Input\+Stream Class Reference}
+\label{classorg_1_1newdawn_1_1slick_1_1openal_1_1_ogg_input_stream}\index{org.\+newdawn.\+slick.\+openal.\+Ogg\+Input\+Stream@{org.\+newdawn.\+slick.\+openal.\+Ogg\+Input\+Stream}}
+Inheritance diagram for org.\+newdawn.\+slick.\+openal.\+Ogg\+Input\+Stream\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classorg_1_1newdawn_1_1slick_1_1openal_1_1_ogg_input_stream}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_ogg_input_stream_a51094c8847e2ffa7765a3cbc4e6c4925}{Ogg\+Input\+Stream}} (Input\+Stream \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_ogg_input_stream_ab6f4422dccd66dff43b69cf84f9bb791}{input}})  throws I\+O\+Exception 
+\item 
+int \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_ogg_input_stream_a6f68d59f87324ed01d07316dadc66c41}{get\+Length}} ()
+\item 
+int \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_ogg_input_stream_a63a29d47878503e310d5ea4686751596}{get\+Channels}} ()
+\item 
+int \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_ogg_input_stream_ae742f942523c3ec33053a494ee3f5050}{get\+Rate}} ()
+\item 
+int \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_ogg_input_stream_a630130dcbd8725342e3d798670481981}{available}} ()
+\item 
+int \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_ogg_input_stream_a66397cab8bce3c41ce7bcb4447a66a46}{read}} ()  throws I\+O\+Exception 
+\item 
+boolean \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_ogg_input_stream_a66f42d8e0d5b2c31d638b065f2f3ea46}{at\+End}} ()
+\item 
+int \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_ogg_input_stream_ab03aec502a7165b31f7fcb1fbb596a5f}{read}} (byte\mbox{[}$\,$\mbox{]} b, int off, int len)  throws I\+O\+Exception 
+\item 
+int \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_ogg_input_stream_a48f59c921cfd04be1f0b1f18f2fcda0a}{read}} (byte\mbox{[}$\,$\mbox{]} b)  throws I\+O\+Exception 
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_ogg_input_stream_a7b9b6debc212b7f5bb2fdc6a94516fd0}{close}} ()  throws I\+O\+Exception 
+\end{DoxyCompactItemize}
+\subsection*{Package Attributes}
+\begin{DoxyCompactItemize}
+\item 
+byte \mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_ogg_input_stream_a62b3d05231255de8fc23406308a658ef}{buffer}}
+\item 
+int \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_ogg_input_stream_a00210211d97ece75ec471a2341e3d825}{bytes}} = 0
+\item 
+boolean \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_ogg_input_stream_acc16be87f0eba75333fa75c1fa0ce8f1}{big\+Endian}} = Byte\+Order.\+native\+Order().equals(Byte\+Order.\+B\+I\+G\+\_\+\+E\+N\+D\+I\+AN)
+\item 
+boolean \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_ogg_input_stream_aa15689fec2ee3d06c4afb5aae0dfca22}{end\+Of\+Bit\+Stream}} = true
+\item 
+boolean \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_ogg_input_stream_aadf227eaf31d2d01b959aa96413249f3}{inited}} = false
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_ogg_input_stream_a176448e8fa99bed81b3a3e104b2492e4}{init}} ()  throws I\+O\+Exception 
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_ogg_input_stream_adb26594ad230cd2e6eb05d549859fbbb}{init\+Vorbis}} ()
+\item 
+boolean \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_ogg_input_stream_a352221090700bd97613162b21b0666cc}{get\+Page\+And\+Packet}} ()
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_ogg_input_stream_ac65475d928528fa2e69dee80131f29a8}{read\+P\+CM}} ()  throws I\+O\+Exception 
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_ogg_input_stream_a4164d082fa5f390c0297501481e4db36}{convsize}} = 4096 $\ast$ 4
+\item 
+byte \mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_ogg_input_stream_adca91d83f775a9ab56a25689e35272ed}{convbuffer}} = new byte\mbox{[}\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_ogg_input_stream_a4164d082fa5f390c0297501481e4db36}{convsize}}\mbox{]}
+\item 
+Input\+Stream \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_ogg_input_stream_ab6f4422dccd66dff43b69cf84f9bb791}{input}}
+\item 
+Info \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_ogg_input_stream_a21aa37c5c0611a79132c4d76fbefe460}{ogg\+Info}} = new Info()
+\item 
+boolean \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_ogg_input_stream_ac4c417186feeb02c3cd3ecfedee09831}{end\+Of\+Stream}}
+\item 
+Sync\+State \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_ogg_input_stream_a6cf0c439e1258dd57e8e83b52b76aefd}{sync\+State}} = new Sync\+State()
+\item 
+Stream\+State \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_ogg_input_stream_ac4bb8d3c4bd796cf4f20b21fdad304c0}{stream\+State}} = new Stream\+State()
+\item 
+Page \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_ogg_input_stream_a1550384d82ddda332e721b907beb3c66}{page}} = new Page()
+\item 
+Packet \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_ogg_input_stream_a926c6e76df40d3920cf3801c39bd7c89}{packet}} = new Packet()
+\item 
+Comment \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_ogg_input_stream_adfe8fbcf485ce4dc911b8737cab63bb3}{comment}} = new Comment()
+\item 
+Dsp\+State \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_ogg_input_stream_aaa29998e4b4c69e6fba08f5ea5764d15}{dsp\+State}} = new Dsp\+State()
+\item 
+Block \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_ogg_input_stream_a1099572c535a994f564ec5ac35b656d9}{vorbis\+Block}} = new Block(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_ogg_input_stream_aaa29998e4b4c69e6fba08f5ea5764d15}{dsp\+State}})
+\item 
+int \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_ogg_input_stream_a53b520bae4c31d5889485a0424f04478}{read\+Index}}
+\item 
+Byte\+Buffer \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_ogg_input_stream_a94fa1c1b12bc33364d2d885c537cc232}{pcm\+Buffer}} = Buffer\+Utils.\+create\+Byte\+Buffer(4096 $\ast$ 500)
+\item 
+int \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_ogg_input_stream_a4a836a2e04a88ae3dd2ae6ed471f3958}{total}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+An input stream that can extract ogg data. This class is a bit of an experiment with continuations so uses thread where possibly not required. It\textquotesingle{}s just a test to see if continuations make sense in some cases.
+
+\begin{DoxyAuthor}{Author}
+kevin 
+\end{DoxyAuthor}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1openal_1_1_ogg_input_stream_a51094c8847e2ffa7765a3cbc4e6c4925}\label{classorg_1_1newdawn_1_1slick_1_1openal_1_1_ogg_input_stream_a51094c8847e2ffa7765a3cbc4e6c4925}} 
+\index{org\+::newdawn\+::slick\+::openal\+::\+Ogg\+Input\+Stream@{org\+::newdawn\+::slick\+::openal\+::\+Ogg\+Input\+Stream}!Ogg\+Input\+Stream@{Ogg\+Input\+Stream}}
+\index{Ogg\+Input\+Stream@{Ogg\+Input\+Stream}!org\+::newdawn\+::slick\+::openal\+::\+Ogg\+Input\+Stream@{org\+::newdawn\+::slick\+::openal\+::\+Ogg\+Input\+Stream}}
+\subsubsection{\texorpdfstring{Ogg\+Input\+Stream()}{OggInputStream()}}
+{\footnotesize\ttfamily org.\+newdawn.\+slick.\+openal.\+Ogg\+Input\+Stream.\+Ogg\+Input\+Stream (\begin{DoxyParamCaption}\item[{Input\+Stream}]{input }\end{DoxyParamCaption}) throws I\+O\+Exception\hspace{0.3cm}{\ttfamily [inline]}}
+
+Create a new stream to decode O\+GG data
+
+
+\begin{DoxyParams}{Parameters}
+{\em input} & The input stream from which to read the O\+GG file \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em I\+O\+Exception} & Indicates a failure to read from the supplied stream \\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyCode}
+79                                                                 \{
+80         this.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_ogg_input_stream_ab6f4422dccd66dff43b69cf84f9bb791}{input}} = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_ogg_input_stream_ab6f4422dccd66dff43b69cf84f9bb791}{input}};
+81         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_ogg_input_stream_a4a836a2e04a88ae3dd2ae6ed471f3958}{total}} = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_ogg_input_stream_ab6f4422dccd66dff43b69cf84f9bb791}{input}}.available();
+82         
+83         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_ogg_input_stream_a176448e8fa99bed81b3a3e104b2492e4}{init}}();
+84     \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1openal_1_1_ogg_input_stream_a66f42d8e0d5b2c31d638b065f2f3ea46}\label{classorg_1_1newdawn_1_1slick_1_1openal_1_1_ogg_input_stream_a66f42d8e0d5b2c31d638b065f2f3ea46}} 
+\index{org\+::newdawn\+::slick\+::openal\+::\+Ogg\+Input\+Stream@{org\+::newdawn\+::slick\+::openal\+::\+Ogg\+Input\+Stream}!at\+End@{at\+End}}
+\index{at\+End@{at\+End}!org\+::newdawn\+::slick\+::openal\+::\+Ogg\+Input\+Stream@{org\+::newdawn\+::slick\+::openal\+::\+Ogg\+Input\+Stream}}
+\subsubsection{\texorpdfstring{at\+End()}{atEnd()}}
+{\footnotesize\ttfamily boolean org.\+newdawn.\+slick.\+openal.\+Ogg\+Input\+Stream.\+at\+End (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1openal_1_1_audio_input_stream_af2234c4714c7ee9c4cecde2969f2f4b7}{org.\+newdawn.\+slick.\+openal.\+Audio\+Input\+Stream\+::at\+End()}} 
+\end{DoxySeeAlso}
+
+
+Implements \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1openal_1_1_audio_input_stream_af2234c4714c7ee9c4cecde2969f2f4b7}{org.\+newdawn.\+slick.\+openal.\+Audio\+Input\+Stream}}.
+
+
+\begin{DoxyCode}
+465                            \{
+466         \textcolor{keywordflow}{return} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_ogg_input_stream_ac4c417186feeb02c3cd3ecfedee09831}{endOfStream}} && (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_ogg_input_stream_a53b520bae4c31d5889485a0424f04478}{readIndex}} >= \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_ogg_input_stream_a94fa1c1b12bc33364d2d885c537cc232}{pcmBuffer}}.position());
+467     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1openal_1_1_ogg_input_stream_a630130dcbd8725342e3d798670481981}\label{classorg_1_1newdawn_1_1slick_1_1openal_1_1_ogg_input_stream_a630130dcbd8725342e3d798670481981}} 
+\index{org\+::newdawn\+::slick\+::openal\+::\+Ogg\+Input\+Stream@{org\+::newdawn\+::slick\+::openal\+::\+Ogg\+Input\+Stream}!available@{available}}
+\index{available@{available}!org\+::newdawn\+::slick\+::openal\+::\+Ogg\+Input\+Stream@{org\+::newdawn\+::slick\+::openal\+::\+Ogg\+Input\+Stream}}
+\subsubsection{\texorpdfstring{available()}{available()}}
+{\footnotesize\ttfamily int org.\+newdawn.\+slick.\+openal.\+Ogg\+Input\+Stream.\+available (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxySeeAlso}{See also}
+java.\+io.\+Input\+Stream\+::available() 
+\end{DoxySeeAlso}
+
+\begin{DoxyCode}
+122                            \{
+123         \textcolor{keywordflow}{return} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_ogg_input_stream_ac4c417186feeb02c3cd3ecfedee09831}{endOfStream}} ? 0 : 1;
+124     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1openal_1_1_ogg_input_stream_a7b9b6debc212b7f5bb2fdc6a94516fd0}\label{classorg_1_1newdawn_1_1slick_1_1openal_1_1_ogg_input_stream_a7b9b6debc212b7f5bb2fdc6a94516fd0}} 
+\index{org\+::newdawn\+::slick\+::openal\+::\+Ogg\+Input\+Stream@{org\+::newdawn\+::slick\+::openal\+::\+Ogg\+Input\+Stream}!close@{close}}
+\index{close@{close}!org\+::newdawn\+::slick\+::openal\+::\+Ogg\+Input\+Stream@{org\+::newdawn\+::slick\+::openal\+::\+Ogg\+Input\+Stream}}
+\subsubsection{\texorpdfstring{close()}{close()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+openal.\+Ogg\+Input\+Stream.\+close (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws I\+O\+Exception\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxySeeAlso}{See also}
+java.\+io.\+Input\+Stream\+::close() 
+\end{DoxySeeAlso}
+
+
+Implements \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1openal_1_1_audio_input_stream_a2b70decb677f0cc88365a689f4953eeb}{org.\+newdawn.\+slick.\+openal.\+Audio\+Input\+Stream}}.
+
+
+\begin{DoxyCode}
+504                                            \{
+505     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1openal_1_1_ogg_input_stream_a63a29d47878503e310d5ea4686751596}\label{classorg_1_1newdawn_1_1slick_1_1openal_1_1_ogg_input_stream_a63a29d47878503e310d5ea4686751596}} 
+\index{org\+::newdawn\+::slick\+::openal\+::\+Ogg\+Input\+Stream@{org\+::newdawn\+::slick\+::openal\+::\+Ogg\+Input\+Stream}!get\+Channels@{get\+Channels}}
+\index{get\+Channels@{get\+Channels}!org\+::newdawn\+::slick\+::openal\+::\+Ogg\+Input\+Stream@{org\+::newdawn\+::slick\+::openal\+::\+Ogg\+Input\+Stream}}
+\subsubsection{\texorpdfstring{get\+Channels()}{getChannels()}}
+{\footnotesize\ttfamily int org.\+newdawn.\+slick.\+openal.\+Ogg\+Input\+Stream.\+get\+Channels (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1openal_1_1_audio_input_stream_a2bee5322dd7878c18fa8f16bd52bbdfa}{org.\+newdawn.\+slick.\+openal.\+Audio\+Input\+Stream\+::get\+Channels()}} 
+\end{DoxySeeAlso}
+
+
+Implements \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1openal_1_1_audio_input_stream_a2bee5322dd7878c18fa8f16bd52bbdfa}{org.\+newdawn.\+slick.\+openal.\+Audio\+Input\+Stream}}.
+
+
+\begin{DoxyCode}
+98                              \{
+99         \textcolor{keywordflow}{return} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_ogg_input_stream_a21aa37c5c0611a79132c4d76fbefe460}{oggInfo}}.channels;
+100     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1openal_1_1_ogg_input_stream_a6f68d59f87324ed01d07316dadc66c41}\label{classorg_1_1newdawn_1_1slick_1_1openal_1_1_ogg_input_stream_a6f68d59f87324ed01d07316dadc66c41}} 
+\index{org\+::newdawn\+::slick\+::openal\+::\+Ogg\+Input\+Stream@{org\+::newdawn\+::slick\+::openal\+::\+Ogg\+Input\+Stream}!get\+Length@{get\+Length}}
+\index{get\+Length@{get\+Length}!org\+::newdawn\+::slick\+::openal\+::\+Ogg\+Input\+Stream@{org\+::newdawn\+::slick\+::openal\+::\+Ogg\+Input\+Stream}}
+\subsubsection{\texorpdfstring{get\+Length()}{getLength()}}
+{\footnotesize\ttfamily int org.\+newdawn.\+slick.\+openal.\+Ogg\+Input\+Stream.\+get\+Length (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get the number of bytes on the stream
+
+\begin{DoxyReturn}{Returns}
+The number of the bytes on the stream 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+91                            \{
+92         \textcolor{keywordflow}{return} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_ogg_input_stream_a4a836a2e04a88ae3dd2ae6ed471f3958}{total}};
+93     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1openal_1_1_ogg_input_stream_a352221090700bd97613162b21b0666cc}\label{classorg_1_1newdawn_1_1slick_1_1openal_1_1_ogg_input_stream_a352221090700bd97613162b21b0666cc}} 
+\index{org\+::newdawn\+::slick\+::openal\+::\+Ogg\+Input\+Stream@{org\+::newdawn\+::slick\+::openal\+::\+Ogg\+Input\+Stream}!get\+Page\+And\+Packet@{get\+Page\+And\+Packet}}
+\index{get\+Page\+And\+Packet@{get\+Page\+And\+Packet}!org\+::newdawn\+::slick\+::openal\+::\+Ogg\+Input\+Stream@{org\+::newdawn\+::slick\+::openal\+::\+Ogg\+Input\+Stream}}
+\subsubsection{\texorpdfstring{get\+Page\+And\+Packet()}{getPageAndPacket()}}
+{\footnotesize\ttfamily boolean org.\+newdawn.\+slick.\+openal.\+Ogg\+Input\+Stream.\+get\+Page\+And\+Packet (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+Get a page and packet from that page
+
+\begin{DoxyReturn}{Returns}
+True if there was a page available 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+138                                        \{
+139         \textcolor{comment}{// grab some data at the head of the stream.  We want the first page}
+140         \textcolor{comment}{// (which is guaranteed to be small and only contain the Vorbis}
+141         \textcolor{comment}{// stream initial header) We need the first page to get the stream}
+142         \textcolor{comment}{// serialno.}
+143 
+144         \textcolor{comment}{// submit a 4k block to libvorbis' Ogg layer}
+145         \textcolor{keywordtype}{int} index = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_ogg_input_stream_a6cf0c439e1258dd57e8e83b52b76aefd}{syncState}}.buffer(4096);
+146         
+147         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_ogg_input_stream_a62b3d05231255de8fc23406308a658ef}{buffer}} = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_ogg_input_stream_a6cf0c439e1258dd57e8e83b52b76aefd}{syncState}}.data;
+148         \textcolor{keywordflow}{if} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_ogg_input_stream_a62b3d05231255de8fc23406308a658ef}{buffer}} == null) \{
+149             \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_ogg_input_stream_ac4c417186feeb02c3cd3ecfedee09831}{endOfStream}} = \textcolor{keyword}{true};
+150             \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+151         \}
+152         
+153         \textcolor{keywordflow}{try} \{
+154             \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_ogg_input_stream_a00210211d97ece75ec471a2341e3d825}{bytes}} = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_ogg_input_stream_ab6f4422dccd66dff43b69cf84f9bb791}{input}}.read(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_ogg_input_stream_a62b3d05231255de8fc23406308a658ef}{buffer}}, index, 4096);
+155         \} \textcolor{keywordflow}{catch} (Exception e) \{
+156             Log.error(\textcolor{stringliteral}{"Failure reading in vorbis"});
+157             Log.error(e);
+158             \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_ogg_input_stream_ac4c417186feeb02c3cd3ecfedee09831}{endOfStream}} = \textcolor{keyword}{true};
+159             \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+160         \}
+161         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_ogg_input_stream_a6cf0c439e1258dd57e8e83b52b76aefd}{syncState}}.wrote(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_ogg_input_stream_a00210211d97ece75ec471a2341e3d825}{bytes}});
+162 
+163         \textcolor{comment}{// Get the first page.}
+164         \textcolor{keywordflow}{if} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_ogg_input_stream_a6cf0c439e1258dd57e8e83b52b76aefd}{syncState}}.pageout(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_ogg_input_stream_a1550384d82ddda332e721b907beb3c66}{page}}) != 1) \{
+165             \textcolor{comment}{// have we simply run out of data?  If so, we're done.}
+166             \textcolor{keywordflow}{if} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_ogg_input_stream_a00210211d97ece75ec471a2341e3d825}{bytes}} < 4096)
+167                 \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+168 
+169             \textcolor{comment}{// error case.  Must not be Vorbis data}
+170             Log.error(\textcolor{stringliteral}{"Input does not appear to be an Ogg bitstream."});
+171             \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_ogg_input_stream_ac4c417186feeb02c3cd3ecfedee09831}{endOfStream}} = \textcolor{keyword}{true};
+172             \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+173         \}
+174 
+175         \textcolor{comment}{// Get the serial number and set up the rest of decode.}
+176         \textcolor{comment}{// serialno first; use it to set up a logical stream}
+177         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_ogg_input_stream_ac4bb8d3c4bd796cf4f20b21fdad304c0}{streamState}}.init(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_ogg_input_stream_a1550384d82ddda332e721b907beb3c66}{page}}.serialno());
+178 
+179         \textcolor{comment}{// extract the initial header from the first page and verify that the}
+180         \textcolor{comment}{// Ogg bitstream is in fact Vorbis data}
+181 
+182         \textcolor{comment}{// I handle the initial header first instead of just having the code}
+183         \textcolor{comment}{// read all three Vorbis headers at once because reading the initial}
+184         \textcolor{comment}{// header is an easy way to identify a Vorbis bitstream and it's}
+185         \textcolor{comment}{// useful to see that functionality seperated out.}
+186 
+187         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_ogg_input_stream_a21aa37c5c0611a79132c4d76fbefe460}{oggInfo}}.init();
+188         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_ogg_input_stream_adfe8fbcf485ce4dc911b8737cab63bb3}{comment}}.init();
+189         \textcolor{keywordflow}{if} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_ogg_input_stream_ac4bb8d3c4bd796cf4f20b21fdad304c0}{streamState}}.pagein(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_ogg_input_stream_a1550384d82ddda332e721b907beb3c66}{page}}) < 0) \{
+190             \textcolor{comment}{// error; stream version mismatch perhaps}
+191             Log.error(\textcolor{stringliteral}{"Error reading first page of Ogg bitstream data."});
+192             \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_ogg_input_stream_ac4c417186feeb02c3cd3ecfedee09831}{endOfStream}} = \textcolor{keyword}{true};
+193             \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+194         \}
+195 
+196         \textcolor{keywordflow}{if} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_ogg_input_stream_ac4bb8d3c4bd796cf4f20b21fdad304c0}{streamState}}.packetout(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_ogg_input_stream_a926c6e76df40d3920cf3801c39bd7c89}{packet}}) != 1) \{
+197             \textcolor{comment}{// no page? must not be vorbis}
+198             Log.error(\textcolor{stringliteral}{"Error reading initial header packet."});
+199             \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_ogg_input_stream_ac4c417186feeb02c3cd3ecfedee09831}{endOfStream}} = \textcolor{keyword}{true};
+200             \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+201         \}
+202 
+203         \textcolor{keywordflow}{if} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_ogg_input_stream_a21aa37c5c0611a79132c4d76fbefe460}{oggInfo}}.synthesis\_headerin(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_ogg_input_stream_adfe8fbcf485ce4dc911b8737cab63bb3}{comment}}, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_ogg_input_stream_a926c6e76df40d3920cf3801c39bd7c89}{packet}}) < 0) \{
+204             \textcolor{comment}{// error case; not a vorbis header}
+205             Log.error(\textcolor{stringliteral}{"This Ogg bitstream does not contain Vorbis audio data."});
+206             \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_ogg_input_stream_ac4c417186feeb02c3cd3ecfedee09831}{endOfStream}} = \textcolor{keyword}{true};
+207             \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+208         \}
+209 
+210         \textcolor{comment}{// At this point, we're sure we're Vorbis.  We've set up the logical}
+211         \textcolor{comment}{// (Ogg) bitstream decoder.  Get the comment and codebook headers and}
+212         \textcolor{comment}{// set up the Vorbis decoder}
+213 
+214         \textcolor{comment}{// The next two packets in order are the comment and codebook headers.}
+215         \textcolor{comment}{// They're likely large and may span multiple pages.  Thus we reead}
+216         \textcolor{comment}{// and submit data until we get our two pacakets, watching that no}
+217         \textcolor{comment}{// pages are missing.  If a page is missing, error out; losing a}
+218         \textcolor{comment}{// header page is the only place where missing data is fatal. */}
+219 
+220         \textcolor{keywordtype}{int} i = 0;
+221         \textcolor{keywordflow}{while} (i < 2) \{
+222             \textcolor{keywordflow}{while} (i < 2) \{
+223 
+224                 \textcolor{keywordtype}{int} result = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_ogg_input_stream_a6cf0c439e1258dd57e8e83b52b76aefd}{syncState}}.pageout(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_ogg_input_stream_a1550384d82ddda332e721b907beb3c66}{page}});
+225                 \textcolor{keywordflow}{if} (result == 0)
+226                     \textcolor{keywordflow}{break}; \textcolor{comment}{// Need more data}
+227                 \textcolor{comment}{// Don't complain about missing or corrupt data yet.  We'll}
+228                 \textcolor{comment}{// catch it at the packet output phase}
+229 
+230                 \textcolor{keywordflow}{if} (result == 1) \{
+231                     \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_ogg_input_stream_ac4bb8d3c4bd796cf4f20b21fdad304c0}{streamState}}.pagein(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_ogg_input_stream_a1550384d82ddda332e721b907beb3c66}{page}}); \textcolor{comment}{// we can ignore any errors here}
+232                     \textcolor{comment}{// as they'll also become apparent}
+233                     \textcolor{comment}{// at packetout}
+234                     \textcolor{keywordflow}{while} (i < 2) \{
+235                         result = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_ogg_input_stream_ac4bb8d3c4bd796cf4f20b21fdad304c0}{streamState}}.packetout(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_ogg_input_stream_a926c6e76df40d3920cf3801c39bd7c89}{packet}});
+236                         \textcolor{keywordflow}{if} (result == 0)
+237                             \textcolor{keywordflow}{break};
+238                         \textcolor{keywordflow}{if} (result == -1) \{
+239                             \textcolor{comment}{// Uh oh; data at some point was corrupted or missing!}
+240                             \textcolor{comment}{// We can't tolerate that in a header.  Die.}
+241                             Log.error(\textcolor{stringliteral}{"Corrupt secondary header.  Exiting."});
+242                             \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_ogg_input_stream_ac4c417186feeb02c3cd3ecfedee09831}{endOfStream}} = \textcolor{keyword}{true};
+243                             \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+244                         \}
+245                         
+246                         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_ogg_input_stream_a21aa37c5c0611a79132c4d76fbefe460}{oggInfo}}.synthesis\_headerin(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_ogg_input_stream_adfe8fbcf485ce4dc911b8737cab63bb3}{comment}}, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_ogg_input_stream_a926c6e76df40d3920cf3801c39bd7c89}{packet}});
+247                         i++;
+248                     \}
+249                 \}
+250             \}
+251             \textcolor{comment}{// no harm in not checking before adding more}
+252             index = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_ogg_input_stream_a6cf0c439e1258dd57e8e83b52b76aefd}{syncState}}.buffer(4096);
+253             \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_ogg_input_stream_a62b3d05231255de8fc23406308a658ef}{buffer}} = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_ogg_input_stream_a6cf0c439e1258dd57e8e83b52b76aefd}{syncState}}.data;
+254             \textcolor{keywordflow}{try} \{
+255                 \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_ogg_input_stream_a00210211d97ece75ec471a2341e3d825}{bytes}} = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_ogg_input_stream_ab6f4422dccd66dff43b69cf84f9bb791}{input}}.read(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_ogg_input_stream_a62b3d05231255de8fc23406308a658ef}{buffer}}, index, 4096);
+256             \} \textcolor{keywordflow}{catch} (Exception e) \{
+257                 Log.error(\textcolor{stringliteral}{"Failed to read Vorbis: "});
+258                 Log.error(e);
+259                 \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_ogg_input_stream_ac4c417186feeb02c3cd3ecfedee09831}{endOfStream}} = \textcolor{keyword}{true};
+260                 \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+261             \}
+262             \textcolor{keywordflow}{if} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_ogg_input_stream_a00210211d97ece75ec471a2341e3d825}{bytes}} == 0 && i < 2) \{
+263                 Log.error(\textcolor{stringliteral}{"End of file before finding all Vorbis headers!"});
+264                 \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_ogg_input_stream_ac4c417186feeb02c3cd3ecfedee09831}{endOfStream}} = \textcolor{keyword}{true};
+265                 \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+266             \}
+267             \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_ogg_input_stream_a6cf0c439e1258dd57e8e83b52b76aefd}{syncState}}.wrote(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_ogg_input_stream_a00210211d97ece75ec471a2341e3d825}{bytes}});
+268         \}
+269 
+270         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_ogg_input_stream_a4164d082fa5f390c0297501481e4db36}{convsize}} = 4096 / \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_ogg_input_stream_a21aa37c5c0611a79132c4d76fbefe460}{oggInfo}}.channels;
+271 
+272         \textcolor{comment}{// OK, got and parsed all three headers. Initialize the Vorbis}
+273         \textcolor{comment}{//  packet->PCM decoder.}
+274         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_ogg_input_stream_aaa29998e4b4c69e6fba08f5ea5764d15}{dspState}}.synthesis\_init(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_ogg_input_stream_a21aa37c5c0611a79132c4d76fbefe460}{oggInfo}}); \textcolor{comment}{// central decode state}
+275         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_ogg_input_stream_a1099572c535a994f564ec5ac35b656d9}{vorbisBlock}}.init(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_ogg_input_stream_aaa29998e4b4c69e6fba08f5ea5764d15}{dspState}}); \textcolor{comment}{// local state for most of the decode}
+276         \textcolor{comment}{// so multiple block decodes can}
+277         \textcolor{comment}{// proceed in parallel.  We could init}
+278         \textcolor{comment}{// multiple vorbis\_block structures}
+279         \textcolor{comment}{// for vd here}
+280         
+281         \textcolor{keywordflow}{return} \textcolor{keyword}{true};
+282     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1openal_1_1_ogg_input_stream_ae742f942523c3ec33053a494ee3f5050}\label{classorg_1_1newdawn_1_1slick_1_1openal_1_1_ogg_input_stream_ae742f942523c3ec33053a494ee3f5050}} 
+\index{org\+::newdawn\+::slick\+::openal\+::\+Ogg\+Input\+Stream@{org\+::newdawn\+::slick\+::openal\+::\+Ogg\+Input\+Stream}!get\+Rate@{get\+Rate}}
+\index{get\+Rate@{get\+Rate}!org\+::newdawn\+::slick\+::openal\+::\+Ogg\+Input\+Stream@{org\+::newdawn\+::slick\+::openal\+::\+Ogg\+Input\+Stream}}
+\subsubsection{\texorpdfstring{get\+Rate()}{getRate()}}
+{\footnotesize\ttfamily int org.\+newdawn.\+slick.\+openal.\+Ogg\+Input\+Stream.\+get\+Rate (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1openal_1_1_audio_input_stream_a461c4ad4304ff8d75693c93e525e0f85}{org.\+newdawn.\+slick.\+openal.\+Audio\+Input\+Stream\+::get\+Rate()}} 
+\end{DoxySeeAlso}
+
+
+Implements \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1openal_1_1_audio_input_stream_a461c4ad4304ff8d75693c93e525e0f85}{org.\+newdawn.\+slick.\+openal.\+Audio\+Input\+Stream}}.
+
+
+\begin{DoxyCode}
+105                          \{
+106         \textcolor{keywordflow}{return} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_ogg_input_stream_a21aa37c5c0611a79132c4d76fbefe460}{oggInfo}}.rate;
+107     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1openal_1_1_ogg_input_stream_a176448e8fa99bed81b3a3e104b2492e4}\label{classorg_1_1newdawn_1_1slick_1_1openal_1_1_ogg_input_stream_a176448e8fa99bed81b3a3e104b2492e4}} 
+\index{org\+::newdawn\+::slick\+::openal\+::\+Ogg\+Input\+Stream@{org\+::newdawn\+::slick\+::openal\+::\+Ogg\+Input\+Stream}!init@{init}}
+\index{init@{init}!org\+::newdawn\+::slick\+::openal\+::\+Ogg\+Input\+Stream@{org\+::newdawn\+::slick\+::openal\+::\+Ogg\+Input\+Stream}}
+\subsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+openal.\+Ogg\+Input\+Stream.\+init (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws I\+O\+Exception\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+Initialise the streams and thread involved in the streaming of O\+GG data
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em I\+O\+Exception} & Indicates a failure to link up the streams \\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyCode}
+114                                            \{
+115         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_ogg_input_stream_adb26594ad230cd2e6eb05d549859fbbb}{initVorbis}}();
+116         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_ogg_input_stream_ac65475d928528fa2e69dee80131f29a8}{readPCM}}();
+117     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1openal_1_1_ogg_input_stream_adb26594ad230cd2e6eb05d549859fbbb}\label{classorg_1_1newdawn_1_1slick_1_1openal_1_1_ogg_input_stream_adb26594ad230cd2e6eb05d549859fbbb}} 
+\index{org\+::newdawn\+::slick\+::openal\+::\+Ogg\+Input\+Stream@{org\+::newdawn\+::slick\+::openal\+::\+Ogg\+Input\+Stream}!init\+Vorbis@{init\+Vorbis}}
+\index{init\+Vorbis@{init\+Vorbis}!org\+::newdawn\+::slick\+::openal\+::\+Ogg\+Input\+Stream@{org\+::newdawn\+::slick\+::openal\+::\+Ogg\+Input\+Stream}}
+\subsubsection{\texorpdfstring{init\+Vorbis()}{initVorbis()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+openal.\+Ogg\+Input\+Stream.\+init\+Vorbis (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+Initialise the vorbis decoding 
+\begin{DoxyCode}
+129                               \{
+130         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_ogg_input_stream_a6cf0c439e1258dd57e8e83b52b76aefd}{syncState}}.init();
+131     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1openal_1_1_ogg_input_stream_a66397cab8bce3c41ce7bcb4447a66a46}\label{classorg_1_1newdawn_1_1slick_1_1openal_1_1_ogg_input_stream_a66397cab8bce3c41ce7bcb4447a66a46}} 
+\index{org\+::newdawn\+::slick\+::openal\+::\+Ogg\+Input\+Stream@{org\+::newdawn\+::slick\+::openal\+::\+Ogg\+Input\+Stream}!read@{read}}
+\index{read@{read}!org\+::newdawn\+::slick\+::openal\+::\+Ogg\+Input\+Stream@{org\+::newdawn\+::slick\+::openal\+::\+Ogg\+Input\+Stream}}
+\subsubsection{\texorpdfstring{read()}{read()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily int org.\+newdawn.\+slick.\+openal.\+Ogg\+Input\+Stream.\+read (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws I\+O\+Exception\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxySeeAlso}{See also}
+java.\+io.\+Input\+Stream\+::read() 
+\end{DoxySeeAlso}
+
+
+Implements \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1openal_1_1_audio_input_stream_a4e9ee99faa0551bca581a985e262d619}{org.\+newdawn.\+slick.\+openal.\+Audio\+Input\+Stream}}.
+
+
+\begin{DoxyCode}
+443                                          \{
+444         \textcolor{keywordflow}{if} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_ogg_input_stream_a53b520bae4c31d5889485a0424f04478}{readIndex}} >= \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_ogg_input_stream_a94fa1c1b12bc33364d2d885c537cc232}{pcmBuffer}}.position()) \{
+445             \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_ogg_input_stream_a94fa1c1b12bc33364d2d885c537cc232}{pcmBuffer}}.clear();
+446             \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_ogg_input_stream_ac65475d928528fa2e69dee80131f29a8}{readPCM}}();
+447             \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_ogg_input_stream_a53b520bae4c31d5889485a0424f04478}{readIndex}} = 0;
+448         \}
+449         \textcolor{keywordflow}{if} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_ogg_input_stream_a53b520bae4c31d5889485a0424f04478}{readIndex}} >= \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_ogg_input_stream_a94fa1c1b12bc33364d2d885c537cc232}{pcmBuffer}}.position()) \{
+450             \textcolor{keywordflow}{return} -1;
+451         \}
+452 
+453         \textcolor{keywordtype}{int} value = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_ogg_input_stream_a94fa1c1b12bc33364d2d885c537cc232}{pcmBuffer}}.get(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_ogg_input_stream_a53b520bae4c31d5889485a0424f04478}{readIndex}});
+454         \textcolor{keywordflow}{if} (value < 0) \{
+455             value = 256 + value;
+456         \}
+457         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_ogg_input_stream_a53b520bae4c31d5889485a0424f04478}{readIndex}}++;
+458         
+459         \textcolor{keywordflow}{return} value;
+460     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1openal_1_1_ogg_input_stream_ab03aec502a7165b31f7fcb1fbb596a5f}\label{classorg_1_1newdawn_1_1slick_1_1openal_1_1_ogg_input_stream_ab03aec502a7165b31f7fcb1fbb596a5f}} 
+\index{org\+::newdawn\+::slick\+::openal\+::\+Ogg\+Input\+Stream@{org\+::newdawn\+::slick\+::openal\+::\+Ogg\+Input\+Stream}!read@{read}}
+\index{read@{read}!org\+::newdawn\+::slick\+::openal\+::\+Ogg\+Input\+Stream@{org\+::newdawn\+::slick\+::openal\+::\+Ogg\+Input\+Stream}}
+\subsubsection{\texorpdfstring{read()}{read()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily int org.\+newdawn.\+slick.\+openal.\+Ogg\+Input\+Stream.\+read (\begin{DoxyParamCaption}\item[{byte \mbox{[}$\,$\mbox{]}}]{b,  }\item[{int}]{off,  }\item[{int}]{len }\end{DoxyParamCaption}) throws I\+O\+Exception\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxySeeAlso}{See also}
+java.\+io.\+Input\+Stream\+::read(byte\mbox{[}$\,$\mbox{]}, int, int) 
+\end{DoxySeeAlso}
+
+
+Implements \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1openal_1_1_audio_input_stream_abdaf21295b97e38b8cb70a651c22d553}{org.\+newdawn.\+slick.\+openal.\+Audio\+Input\+Stream}}.
+
+
+\begin{DoxyCode}
+472                                                                    \{
+473         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i=0;i<len;i++) \{
+474             \textcolor{keywordflow}{try} \{
+475                 \textcolor{keywordtype}{int} value = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_ogg_input_stream_a66397cab8bce3c41ce7bcb4447a66a46}{read}}();
+476                 \textcolor{keywordflow}{if} (value >= 0) \{
+477                     b[i] = (byte) value;
+478                 \} \textcolor{keywordflow}{else} \{
+479                     \textcolor{keywordflow}{if} (i == 0) \{                       
+480                         \textcolor{keywordflow}{return} -1;
+481                     \} \textcolor{keywordflow}{else} \{
+482                         \textcolor{keywordflow}{return} i;
+483                     \}
+484                 \}
+485             \} \textcolor{keywordflow}{catch} (IOException e) \{
+486                 Log.error(e);
+487                 \textcolor{keywordflow}{return} i;
+488             \}
+489         \}
+490         
+491         \textcolor{keywordflow}{return} len;
+492     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1openal_1_1_ogg_input_stream_a48f59c921cfd04be1f0b1f18f2fcda0a}\label{classorg_1_1newdawn_1_1slick_1_1openal_1_1_ogg_input_stream_a48f59c921cfd04be1f0b1f18f2fcda0a}} 
+\index{org\+::newdawn\+::slick\+::openal\+::\+Ogg\+Input\+Stream@{org\+::newdawn\+::slick\+::openal\+::\+Ogg\+Input\+Stream}!read@{read}}
+\index{read@{read}!org\+::newdawn\+::slick\+::openal\+::\+Ogg\+Input\+Stream@{org\+::newdawn\+::slick\+::openal\+::\+Ogg\+Input\+Stream}}
+\subsubsection{\texorpdfstring{read()}{read()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily int org.\+newdawn.\+slick.\+openal.\+Ogg\+Input\+Stream.\+read (\begin{DoxyParamCaption}\item[{byte \mbox{[}$\,$\mbox{]}}]{b }\end{DoxyParamCaption}) throws I\+O\+Exception\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxySeeAlso}{See also}
+java.\+io.\+Input\+Stream\+::read(byte\mbox{[}$\,$\mbox{]}) 
+\end{DoxySeeAlso}
+
+
+Implements \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1openal_1_1_audio_input_stream_a1e8c74e2bc52725377b2b859da92a4af}{org.\+newdawn.\+slick.\+openal.\+Audio\+Input\+Stream}}.
+
+
+\begin{DoxyCode}
+497                                                  \{
+498         \textcolor{keywordflow}{return} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_ogg_input_stream_a66397cab8bce3c41ce7bcb4447a66a46}{read}}(b, 0, b.length);
+499     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1openal_1_1_ogg_input_stream_ac65475d928528fa2e69dee80131f29a8}\label{classorg_1_1newdawn_1_1slick_1_1openal_1_1_ogg_input_stream_ac65475d928528fa2e69dee80131f29a8}} 
+\index{org\+::newdawn\+::slick\+::openal\+::\+Ogg\+Input\+Stream@{org\+::newdawn\+::slick\+::openal\+::\+Ogg\+Input\+Stream}!read\+P\+CM@{read\+P\+CM}}
+\index{read\+P\+CM@{read\+P\+CM}!org\+::newdawn\+::slick\+::openal\+::\+Ogg\+Input\+Stream@{org\+::newdawn\+::slick\+::openal\+::\+Ogg\+Input\+Stream}}
+\subsubsection{\texorpdfstring{read\+P\+C\+M()}{readPCM()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+openal.\+Ogg\+Input\+Stream.\+read\+P\+CM (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws I\+O\+Exception\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+Decode the O\+GG file as shown in the jogg/jorbis examples
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em I\+O\+Exception} & Indicates a failure to read from the supplied stream \\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyCode}
+289                                               \{
+290         \textcolor{keywordtype}{boolean} wrote = \textcolor{keyword}{false};
+291         
+292         \textcolor{keywordflow}{while} (\textcolor{keyword}{true}) \{ \textcolor{comment}{// we repeat if the bitstream is chained}
+293             \textcolor{keywordflow}{if} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_ogg_input_stream_aa15689fec2ee3d06c4afb5aae0dfca22}{endOfBitStream}}) \{
+294                 \textcolor{keywordflow}{if} (!\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_ogg_input_stream_a352221090700bd97613162b21b0666cc}{getPageAndPacket}}()) \{
+295                     \textcolor{keywordflow}{break};
+296                 \}
+297                 \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_ogg_input_stream_aa15689fec2ee3d06c4afb5aae0dfca22}{endOfBitStream}} = \textcolor{keyword}{false};
+298             \}
+299 
+300             \textcolor{keywordflow}{if} (!\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_ogg_input_stream_aadf227eaf31d2d01b959aa96413249f3}{inited}}) \{
+301                 \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_ogg_input_stream_aadf227eaf31d2d01b959aa96413249f3}{inited}} = \textcolor{keyword}{true};
+302                 \textcolor{keywordflow}{return};
+303             \}
+304             
+305             \textcolor{keywordtype}{float}[][][] \_pcm = \textcolor{keyword}{new} \textcolor{keywordtype}{float}[1][][];
+306             \textcolor{keywordtype}{int}[] \_index = \textcolor{keyword}{new} \textcolor{keywordtype}{int}[\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_ogg_input_stream_a21aa37c5c0611a79132c4d76fbefe460}{oggInfo}}.channels];
+307             \textcolor{comment}{// The rest is just a straight decode loop until end of stream}
+308             \textcolor{keywordflow}{while} (!\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_ogg_input_stream_aa15689fec2ee3d06c4afb5aae0dfca22}{endOfBitStream}}) \{
+309                 \textcolor{keywordflow}{while} (!\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_ogg_input_stream_aa15689fec2ee3d06c4afb5aae0dfca22}{endOfBitStream}}) \{
+310                     \textcolor{keywordtype}{int} result = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_ogg_input_stream_a6cf0c439e1258dd57e8e83b52b76aefd}{syncState}}.pageout(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_ogg_input_stream_a1550384d82ddda332e721b907beb3c66}{page}});
+311                     
+312                     \textcolor{keywordflow}{if} (result == 0) \{
+313                         \textcolor{keywordflow}{break}; \textcolor{comment}{// need more data}
+314                     \}
+315                     
+316                     \textcolor{keywordflow}{if} (result == -1) \{ \textcolor{comment}{// missing or corrupt data at this page position}
+317                         Log.error(\textcolor{stringliteral}{"Corrupt or missing data in bitstream; continuing..."});
+318                     \} \textcolor{keywordflow}{else} \{
+319                         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_ogg_input_stream_ac4bb8d3c4bd796cf4f20b21fdad304c0}{streamState}}.pagein(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_ogg_input_stream_a1550384d82ddda332e721b907beb3c66}{page}}); \textcolor{comment}{// can safely ignore errors at}
+320                         \textcolor{comment}{// this point}
+321                         \textcolor{keywordflow}{while} (\textcolor{keyword}{true}) \{
+322                             result = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_ogg_input_stream_ac4bb8d3c4bd796cf4f20b21fdad304c0}{streamState}}.packetout(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_ogg_input_stream_a926c6e76df40d3920cf3801c39bd7c89}{packet}});
+323 
+324                             \textcolor{keywordflow}{if} (result == 0)
+325                                 \textcolor{keywordflow}{break}; \textcolor{comment}{// need more data}
+326                             \textcolor{keywordflow}{if} (result == -1) \{ \textcolor{comment}{// missing or corrupt data at this page position}
+327                                 \textcolor{comment}{// no reason to complain; already complained above}
+328                             \} \textcolor{keywordflow}{else} \{
+329                                 \textcolor{comment}{// we have a packet.  Decode it}
+330                                 \textcolor{keywordtype}{int} samples;
+331                                 \textcolor{keywordflow}{if} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_ogg_input_stream_a1099572c535a994f564ec5ac35b656d9}{vorbisBlock}}.synthesis(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_ogg_input_stream_a926c6e76df40d3920cf3801c39bd7c89}{packet}}) == 0) \{ \textcolor{comment}{// test for
+       success!}
+332                                     \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_ogg_input_stream_aaa29998e4b4c69e6fba08f5ea5764d15}{dspState}}.synthesis\_blockin(
+      \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_ogg_input_stream_a1099572c535a994f564ec5ac35b656d9}{vorbisBlock}});
+333                                 \}
+334 
+335                                 \textcolor{comment}{// **pcm is a multichannel float vector.  In stereo, for}
+336                                 \textcolor{comment}{// example, pcm[0] is left, and pcm[1] is right.  samples is}
+337                                 \textcolor{comment}{// the size of each channel.  Convert the float values}
+338                                 \textcolor{comment}{// (-1.<=range<=1.) to whatever PCM format and write it out}
+339 
+340                                 \textcolor{keywordflow}{while} ((samples = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_ogg_input_stream_aaa29998e4b4c69e6fba08f5ea5764d15}{dspState}}.synthesis\_pcmout(\_pcm,
+341                                         \_index)) > 0) \{
+342                                     \textcolor{keywordtype}{float}[][] pcm = \_pcm[0];
+343                                     \textcolor{comment}{//boolean clipflag = false;}
+344                                     \textcolor{keywordtype}{int} bout = (samples < \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_ogg_input_stream_a4164d082fa5f390c0297501481e4db36}{convsize}} ? samples
+345                                             : \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_ogg_input_stream_a4164d082fa5f390c0297501481e4db36}{convsize}});
+346 
+347                                     \textcolor{comment}{// convert floats to 16 bit signed ints (host order) and}
+348                                     \textcolor{comment}{// interleave}
+349                                     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_ogg_input_stream_a21aa37c5c0611a79132c4d76fbefe460}{oggInfo}}.channels; i++) \{
+350                                         \textcolor{keywordtype}{int} ptr = i * 2;
+351                                         \textcolor{comment}{//int ptr=i;}
+352                                         \textcolor{keywordtype}{int} mono = \_index[i];
+353                                         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} j = 0; j < bout; j++) \{
+354                                             \textcolor{keywordtype}{int} val = (int) (pcm[i][mono + j] * 32767.);
+355                                             \textcolor{comment}{// might as well guard against clipping}
+356                                             \textcolor{keywordflow}{if} (val > 32767) \{
+357                                                 val = 32767;
+358                                             \}
+359                                             \textcolor{keywordflow}{if} (val < -32768) \{
+360                                                 val = -32768;
+361                                             \}
+362                                             \textcolor{keywordflow}{if} (val < 0)
+363                                                 val = val | 0x8000;
+364                 
+365                                             \textcolor{keywordflow}{if} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_ogg_input_stream_acc16be87f0eba75333fa75c1fa0ce8f1}{bigEndian}}) \{
+366                                                 \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_ogg_input_stream_adca91d83f775a9ab56a25689e35272ed}{convbuffer}}[ptr] = (byte) (val >>> 8);
+367                                                 \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_ogg_input_stream_adca91d83f775a9ab56a25689e35272ed}{convbuffer}}[ptr + 1] = (byte) (val);
+368                                             \} \textcolor{keywordflow}{else} \{
+369                                                 \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_ogg_input_stream_adca91d83f775a9ab56a25689e35272ed}{convbuffer}}[ptr] = (byte) (val);
+370                                                 \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_ogg_input_stream_adca91d83f775a9ab56a25689e35272ed}{convbuffer}}[ptr + 1] = (byte) (val >>> 8);
+371                                             \}
+372                                             ptr += 2 * (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_ogg_input_stream_a21aa37c5c0611a79132c4d76fbefe460}{oggInfo}}.channels);
+373                                         \}
+374                                     \}
+375 
+376                                     \textcolor{keywordtype}{int} bytesToWrite = 2 * \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_ogg_input_stream_a21aa37c5c0611a79132c4d76fbefe460}{oggInfo}}.channels * bout;
+377                                     \textcolor{keywordflow}{if} (bytesToWrite >= \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_ogg_input_stream_a94fa1c1b12bc33364d2d885c537cc232}{pcmBuffer}}.remaining()) \{
+378                                         Log.warn(\textcolor{stringliteral}{"Read block from OGG that was too big to be buffered: "} + 
+      bytesToWrite);
+379                                     \} \textcolor{keywordflow}{else} \{
+380                                         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_ogg_input_stream_a94fa1c1b12bc33364d2d885c537cc232}{pcmBuffer}}.put(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_ogg_input_stream_adca91d83f775a9ab56a25689e35272ed}{convbuffer}}, 0, bytesToWrite);
+381                                     \}
+382                                     
+383                                     wrote = \textcolor{keyword}{true};
+384                                     \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_ogg_input_stream_aaa29998e4b4c69e6fba08f5ea5764d15}{dspState}}.synthesis\_read(bout); \textcolor{comment}{// tell libvorbis how}
+385                                     \textcolor{comment}{// many samples we}
+386                                     \textcolor{comment}{// actually consumed}
+387                                 \}
+388                             \}
+389                         \}
+390                         \textcolor{keywordflow}{if} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_ogg_input_stream_a1550384d82ddda332e721b907beb3c66}{page}}.eos() != 0) \{
+391                             \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_ogg_input_stream_aa15689fec2ee3d06c4afb5aae0dfca22}{endOfBitStream}} = \textcolor{keyword}{true};
+392                         \} 
+393                         
+394                         \textcolor{keywordflow}{if} ((!\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_ogg_input_stream_aa15689fec2ee3d06c4afb5aae0dfca22}{endOfBitStream}}) && (wrote)) \{
+395                             \textcolor{keywordflow}{return};
+396                         \}
+397                     \}
+398                 \}
+399 
+400                 \textcolor{keywordflow}{if} (!\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_ogg_input_stream_aa15689fec2ee3d06c4afb5aae0dfca22}{endOfBitStream}}) \{
+401                     \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_ogg_input_stream_a00210211d97ece75ec471a2341e3d825}{bytes}} = 0;
+402                     \textcolor{keywordtype}{int} index = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_ogg_input_stream_a6cf0c439e1258dd57e8e83b52b76aefd}{syncState}}.buffer(4096);
+403                     \textcolor{keywordflow}{if} (index >= 0) \{
+404                         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_ogg_input_stream_a62b3d05231255de8fc23406308a658ef}{buffer}} = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_ogg_input_stream_a6cf0c439e1258dd57e8e83b52b76aefd}{syncState}}.data;
+405                         \textcolor{keywordflow}{try} \{
+406                             \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_ogg_input_stream_a00210211d97ece75ec471a2341e3d825}{bytes}} = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_ogg_input_stream_ab6f4422dccd66dff43b69cf84f9bb791}{input}}.read(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_ogg_input_stream_a62b3d05231255de8fc23406308a658ef}{buffer}}, index, 4096);
+407                         \} \textcolor{keywordflow}{catch} (Exception e) \{
+408                             Log.error(\textcolor{stringliteral}{"Failure during vorbis decoding"});
+409                             Log.error(e);
+410                             \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_ogg_input_stream_ac4c417186feeb02c3cd3ecfedee09831}{endOfStream}} = \textcolor{keyword}{true};
+411                             \textcolor{keywordflow}{return};
+412                         \}
+413                     \} \textcolor{keywordflow}{else} \{
+414                         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_ogg_input_stream_a00210211d97ece75ec471a2341e3d825}{bytes}} = 0;
+415                     \}
+416                     \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_ogg_input_stream_a6cf0c439e1258dd57e8e83b52b76aefd}{syncState}}.wrote(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_ogg_input_stream_a00210211d97ece75ec471a2341e3d825}{bytes}});
+417                     \textcolor{keywordflow}{if} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_ogg_input_stream_a00210211d97ece75ec471a2341e3d825}{bytes}} == 0) \{
+418                         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_ogg_input_stream_aa15689fec2ee3d06c4afb5aae0dfca22}{endOfBitStream}} = \textcolor{keyword}{true};
+419                     \}
+420                 \}
+421             \}
+422 
+423             \textcolor{comment}{// clean up this logical bitstream; before exit we see if we're}
+424             \textcolor{comment}{// followed by another [chained]}
+425             \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_ogg_input_stream_ac4bb8d3c4bd796cf4f20b21fdad304c0}{streamState}}.clear();
+426 
+427             \textcolor{comment}{// ogg\_page and ogg\_packet structs always point to storage in}
+428             \textcolor{comment}{// libvorbis.  They're never freed or manipulated directly}
+429 
+430             \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_ogg_input_stream_a1099572c535a994f564ec5ac35b656d9}{vorbisBlock}}.clear();
+431             \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_ogg_input_stream_aaa29998e4b4c69e6fba08f5ea5764d15}{dspState}}.clear();
+432             \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_ogg_input_stream_a21aa37c5c0611a79132c4d76fbefe460}{oggInfo}}.clear(); \textcolor{comment}{// must be called last}
+433         \}
+434 
+435         \textcolor{comment}{// OK, clean up the framer}
+436         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_ogg_input_stream_a6cf0c439e1258dd57e8e83b52b76aefd}{syncState}}.clear();
+437         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_ogg_input_stream_ac4c417186feeb02c3cd3ecfedee09831}{endOfStream}} = \textcolor{keyword}{true};
+438     \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1openal_1_1_ogg_input_stream_acc16be87f0eba75333fa75c1fa0ce8f1}\label{classorg_1_1newdawn_1_1slick_1_1openal_1_1_ogg_input_stream_acc16be87f0eba75333fa75c1fa0ce8f1}} 
+\index{org\+::newdawn\+::slick\+::openal\+::\+Ogg\+Input\+Stream@{org\+::newdawn\+::slick\+::openal\+::\+Ogg\+Input\+Stream}!big\+Endian@{big\+Endian}}
+\index{big\+Endian@{big\+Endian}!org\+::newdawn\+::slick\+::openal\+::\+Ogg\+Input\+Stream@{org\+::newdawn\+::slick\+::openal\+::\+Ogg\+Input\+Stream}}
+\subsubsection{\texorpdfstring{big\+Endian}{bigEndian}}
+{\footnotesize\ttfamily boolean org.\+newdawn.\+slick.\+openal.\+Ogg\+Input\+Stream.\+big\+Endian = Byte\+Order.\+native\+Order().equals(Byte\+Order.\+B\+I\+G\+\_\+\+E\+N\+D\+I\+AN)\hspace{0.3cm}{\ttfamily [package]}}
+
+The true if we should be reading big endian \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1openal_1_1_ogg_input_stream_a62b3d05231255de8fc23406308a658ef}\label{classorg_1_1newdawn_1_1slick_1_1openal_1_1_ogg_input_stream_a62b3d05231255de8fc23406308a658ef}} 
+\index{org\+::newdawn\+::slick\+::openal\+::\+Ogg\+Input\+Stream@{org\+::newdawn\+::slick\+::openal\+::\+Ogg\+Input\+Stream}!buffer@{buffer}}
+\index{buffer@{buffer}!org\+::newdawn\+::slick\+::openal\+::\+Ogg\+Input\+Stream@{org\+::newdawn\+::slick\+::openal\+::\+Ogg\+Input\+Stream}}
+\subsubsection{\texorpdfstring{buffer}{buffer}}
+{\footnotesize\ttfamily byte \mbox{[}$\,$\mbox{]} org.\+newdawn.\+slick.\+openal.\+Ogg\+Input\+Stream.\+buffer\hspace{0.3cm}{\ttfamily [package]}}
+
+Temporary scratch buffer \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1openal_1_1_ogg_input_stream_a00210211d97ece75ec471a2341e3d825}\label{classorg_1_1newdawn_1_1slick_1_1openal_1_1_ogg_input_stream_a00210211d97ece75ec471a2341e3d825}} 
+\index{org\+::newdawn\+::slick\+::openal\+::\+Ogg\+Input\+Stream@{org\+::newdawn\+::slick\+::openal\+::\+Ogg\+Input\+Stream}!bytes@{bytes}}
+\index{bytes@{bytes}!org\+::newdawn\+::slick\+::openal\+::\+Ogg\+Input\+Stream@{org\+::newdawn\+::slick\+::openal\+::\+Ogg\+Input\+Stream}}
+\subsubsection{\texorpdfstring{bytes}{bytes}}
+{\footnotesize\ttfamily int org.\+newdawn.\+slick.\+openal.\+Ogg\+Input\+Stream.\+bytes = 0\hspace{0.3cm}{\ttfamily [package]}}
+
+The number of bytes read \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1openal_1_1_ogg_input_stream_adfe8fbcf485ce4dc911b8737cab63bb3}\label{classorg_1_1newdawn_1_1slick_1_1openal_1_1_ogg_input_stream_adfe8fbcf485ce4dc911b8737cab63bb3}} 
+\index{org\+::newdawn\+::slick\+::openal\+::\+Ogg\+Input\+Stream@{org\+::newdawn\+::slick\+::openal\+::\+Ogg\+Input\+Stream}!comment@{comment}}
+\index{comment@{comment}!org\+::newdawn\+::slick\+::openal\+::\+Ogg\+Input\+Stream@{org\+::newdawn\+::slick\+::openal\+::\+Ogg\+Input\+Stream}}
+\subsubsection{\texorpdfstring{comment}{comment}}
+{\footnotesize\ttfamily Comment org.\+newdawn.\+slick.\+openal.\+Ogg\+Input\+Stream.\+comment = new Comment()\hspace{0.3cm}{\ttfamily [private]}}
+
+The comment read from the O\+GG file \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1openal_1_1_ogg_input_stream_adca91d83f775a9ab56a25689e35272ed}\label{classorg_1_1newdawn_1_1slick_1_1openal_1_1_ogg_input_stream_adca91d83f775a9ab56a25689e35272ed}} 
+\index{org\+::newdawn\+::slick\+::openal\+::\+Ogg\+Input\+Stream@{org\+::newdawn\+::slick\+::openal\+::\+Ogg\+Input\+Stream}!convbuffer@{convbuffer}}
+\index{convbuffer@{convbuffer}!org\+::newdawn\+::slick\+::openal\+::\+Ogg\+Input\+Stream@{org\+::newdawn\+::slick\+::openal\+::\+Ogg\+Input\+Stream}}
+\subsubsection{\texorpdfstring{convbuffer}{convbuffer}}
+{\footnotesize\ttfamily byte \mbox{[}$\,$\mbox{]} org.\+newdawn.\+slick.\+openal.\+Ogg\+Input\+Stream.\+convbuffer = new byte\mbox{[}\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_ogg_input_stream_a4164d082fa5f390c0297501481e4db36}{convsize}}\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}
+
+The buffer used to read O\+GG file \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1openal_1_1_ogg_input_stream_a4164d082fa5f390c0297501481e4db36}\label{classorg_1_1newdawn_1_1slick_1_1openal_1_1_ogg_input_stream_a4164d082fa5f390c0297501481e4db36}} 
+\index{org\+::newdawn\+::slick\+::openal\+::\+Ogg\+Input\+Stream@{org\+::newdawn\+::slick\+::openal\+::\+Ogg\+Input\+Stream}!convsize@{convsize}}
+\index{convsize@{convsize}!org\+::newdawn\+::slick\+::openal\+::\+Ogg\+Input\+Stream@{org\+::newdawn\+::slick\+::openal\+::\+Ogg\+Input\+Stream}}
+\subsubsection{\texorpdfstring{convsize}{convsize}}
+{\footnotesize\ttfamily int org.\+newdawn.\+slick.\+openal.\+Ogg\+Input\+Stream.\+convsize = 4096 $\ast$ 4\hspace{0.3cm}{\ttfamily [private]}}
+
+The conversion buffer size \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1openal_1_1_ogg_input_stream_aaa29998e4b4c69e6fba08f5ea5764d15}\label{classorg_1_1newdawn_1_1slick_1_1openal_1_1_ogg_input_stream_aaa29998e4b4c69e6fba08f5ea5764d15}} 
+\index{org\+::newdawn\+::slick\+::openal\+::\+Ogg\+Input\+Stream@{org\+::newdawn\+::slick\+::openal\+::\+Ogg\+Input\+Stream}!dsp\+State@{dsp\+State}}
+\index{dsp\+State@{dsp\+State}!org\+::newdawn\+::slick\+::openal\+::\+Ogg\+Input\+Stream@{org\+::newdawn\+::slick\+::openal\+::\+Ogg\+Input\+Stream}}
+\subsubsection{\texorpdfstring{dsp\+State}{dspState}}
+{\footnotesize\ttfamily Dsp\+State org.\+newdawn.\+slick.\+openal.\+Ogg\+Input\+Stream.\+dsp\+State = new Dsp\+State()\hspace{0.3cm}{\ttfamily [private]}}
+
+The Vorbis D\+SP stat eused to decode the O\+GG \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1openal_1_1_ogg_input_stream_aa15689fec2ee3d06c4afb5aae0dfca22}\label{classorg_1_1newdawn_1_1slick_1_1openal_1_1_ogg_input_stream_aa15689fec2ee3d06c4afb5aae0dfca22}} 
+\index{org\+::newdawn\+::slick\+::openal\+::\+Ogg\+Input\+Stream@{org\+::newdawn\+::slick\+::openal\+::\+Ogg\+Input\+Stream}!end\+Of\+Bit\+Stream@{end\+Of\+Bit\+Stream}}
+\index{end\+Of\+Bit\+Stream@{end\+Of\+Bit\+Stream}!org\+::newdawn\+::slick\+::openal\+::\+Ogg\+Input\+Stream@{org\+::newdawn\+::slick\+::openal\+::\+Ogg\+Input\+Stream}}
+\subsubsection{\texorpdfstring{end\+Of\+Bit\+Stream}{endOfBitStream}}
+{\footnotesize\ttfamily boolean org.\+newdawn.\+slick.\+openal.\+Ogg\+Input\+Stream.\+end\+Of\+Bit\+Stream = true\hspace{0.3cm}{\ttfamily [package]}}
+
+True if we\textquotesingle{}re reached the end of the current bit stream \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1openal_1_1_ogg_input_stream_ac4c417186feeb02c3cd3ecfedee09831}\label{classorg_1_1newdawn_1_1slick_1_1openal_1_1_ogg_input_stream_ac4c417186feeb02c3cd3ecfedee09831}} 
+\index{org\+::newdawn\+::slick\+::openal\+::\+Ogg\+Input\+Stream@{org\+::newdawn\+::slick\+::openal\+::\+Ogg\+Input\+Stream}!end\+Of\+Stream@{end\+Of\+Stream}}
+\index{end\+Of\+Stream@{end\+Of\+Stream}!org\+::newdawn\+::slick\+::openal\+::\+Ogg\+Input\+Stream@{org\+::newdawn\+::slick\+::openal\+::\+Ogg\+Input\+Stream}}
+\subsubsection{\texorpdfstring{end\+Of\+Stream}{endOfStream}}
+{\footnotesize\ttfamily boolean org.\+newdawn.\+slick.\+openal.\+Ogg\+Input\+Stream.\+end\+Of\+Stream\hspace{0.3cm}{\ttfamily [private]}}
+
+True if we\textquotesingle{}re at the end of the available data \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1openal_1_1_ogg_input_stream_aadf227eaf31d2d01b959aa96413249f3}\label{classorg_1_1newdawn_1_1slick_1_1openal_1_1_ogg_input_stream_aadf227eaf31d2d01b959aa96413249f3}} 
+\index{org\+::newdawn\+::slick\+::openal\+::\+Ogg\+Input\+Stream@{org\+::newdawn\+::slick\+::openal\+::\+Ogg\+Input\+Stream}!inited@{inited}}
+\index{inited@{inited}!org\+::newdawn\+::slick\+::openal\+::\+Ogg\+Input\+Stream@{org\+::newdawn\+::slick\+::openal\+::\+Ogg\+Input\+Stream}}
+\subsubsection{\texorpdfstring{inited}{inited}}
+{\footnotesize\ttfamily boolean org.\+newdawn.\+slick.\+openal.\+Ogg\+Input\+Stream.\+inited = false\hspace{0.3cm}{\ttfamily [package]}}
+
+True if we\textquotesingle{}re initialise the O\+GG info block \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1openal_1_1_ogg_input_stream_ab6f4422dccd66dff43b69cf84f9bb791}\label{classorg_1_1newdawn_1_1slick_1_1openal_1_1_ogg_input_stream_ab6f4422dccd66dff43b69cf84f9bb791}} 
+\index{org\+::newdawn\+::slick\+::openal\+::\+Ogg\+Input\+Stream@{org\+::newdawn\+::slick\+::openal\+::\+Ogg\+Input\+Stream}!input@{input}}
+\index{input@{input}!org\+::newdawn\+::slick\+::openal\+::\+Ogg\+Input\+Stream@{org\+::newdawn\+::slick\+::openal\+::\+Ogg\+Input\+Stream}}
+\subsubsection{\texorpdfstring{input}{input}}
+{\footnotesize\ttfamily Input\+Stream org.\+newdawn.\+slick.\+openal.\+Ogg\+Input\+Stream.\+input\hspace{0.3cm}{\ttfamily [private]}}
+
+The stream we\textquotesingle{}re reading the O\+GG file from \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1openal_1_1_ogg_input_stream_a21aa37c5c0611a79132c4d76fbefe460}\label{classorg_1_1newdawn_1_1slick_1_1openal_1_1_ogg_input_stream_a21aa37c5c0611a79132c4d76fbefe460}} 
+\index{org\+::newdawn\+::slick\+::openal\+::\+Ogg\+Input\+Stream@{org\+::newdawn\+::slick\+::openal\+::\+Ogg\+Input\+Stream}!ogg\+Info@{ogg\+Info}}
+\index{ogg\+Info@{ogg\+Info}!org\+::newdawn\+::slick\+::openal\+::\+Ogg\+Input\+Stream@{org\+::newdawn\+::slick\+::openal\+::\+Ogg\+Input\+Stream}}
+\subsubsection{\texorpdfstring{ogg\+Info}{oggInfo}}
+{\footnotesize\ttfamily Info org.\+newdawn.\+slick.\+openal.\+Ogg\+Input\+Stream.\+ogg\+Info = new Info()\hspace{0.3cm}{\ttfamily [private]}}
+
+The audio information from the O\+GG header \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1openal_1_1_ogg_input_stream_a926c6e76df40d3920cf3801c39bd7c89}\label{classorg_1_1newdawn_1_1slick_1_1openal_1_1_ogg_input_stream_a926c6e76df40d3920cf3801c39bd7c89}} 
+\index{org\+::newdawn\+::slick\+::openal\+::\+Ogg\+Input\+Stream@{org\+::newdawn\+::slick\+::openal\+::\+Ogg\+Input\+Stream}!packet@{packet}}
+\index{packet@{packet}!org\+::newdawn\+::slick\+::openal\+::\+Ogg\+Input\+Stream@{org\+::newdawn\+::slick\+::openal\+::\+Ogg\+Input\+Stream}}
+\subsubsection{\texorpdfstring{packet}{packet}}
+{\footnotesize\ttfamily Packet org.\+newdawn.\+slick.\+openal.\+Ogg\+Input\+Stream.\+packet = new Packet()\hspace{0.3cm}{\ttfamily [private]}}
+
+The current packet page \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1openal_1_1_ogg_input_stream_a1550384d82ddda332e721b907beb3c66}\label{classorg_1_1newdawn_1_1slick_1_1openal_1_1_ogg_input_stream_a1550384d82ddda332e721b907beb3c66}} 
+\index{org\+::newdawn\+::slick\+::openal\+::\+Ogg\+Input\+Stream@{org\+::newdawn\+::slick\+::openal\+::\+Ogg\+Input\+Stream}!page@{page}}
+\index{page@{page}!org\+::newdawn\+::slick\+::openal\+::\+Ogg\+Input\+Stream@{org\+::newdawn\+::slick\+::openal\+::\+Ogg\+Input\+Stream}}
+\subsubsection{\texorpdfstring{page}{page}}
+{\footnotesize\ttfamily Page org.\+newdawn.\+slick.\+openal.\+Ogg\+Input\+Stream.\+page = new Page()\hspace{0.3cm}{\ttfamily [private]}}
+
+The current O\+GG page \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1openal_1_1_ogg_input_stream_a94fa1c1b12bc33364d2d885c537cc232}\label{classorg_1_1newdawn_1_1slick_1_1openal_1_1_ogg_input_stream_a94fa1c1b12bc33364d2d885c537cc232}} 
+\index{org\+::newdawn\+::slick\+::openal\+::\+Ogg\+Input\+Stream@{org\+::newdawn\+::slick\+::openal\+::\+Ogg\+Input\+Stream}!pcm\+Buffer@{pcm\+Buffer}}
+\index{pcm\+Buffer@{pcm\+Buffer}!org\+::newdawn\+::slick\+::openal\+::\+Ogg\+Input\+Stream@{org\+::newdawn\+::slick\+::openal\+::\+Ogg\+Input\+Stream}}
+\subsubsection{\texorpdfstring{pcm\+Buffer}{pcmBuffer}}
+{\footnotesize\ttfamily Byte\+Buffer org.\+newdawn.\+slick.\+openal.\+Ogg\+Input\+Stream.\+pcm\+Buffer = Buffer\+Utils.\+create\+Byte\+Buffer(4096 $\ast$ 500)\hspace{0.3cm}{\ttfamily [private]}}
+
+The byte array store used to hold the data read from the ogg \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1openal_1_1_ogg_input_stream_a53b520bae4c31d5889485a0424f04478}\label{classorg_1_1newdawn_1_1slick_1_1openal_1_1_ogg_input_stream_a53b520bae4c31d5889485a0424f04478}} 
+\index{org\+::newdawn\+::slick\+::openal\+::\+Ogg\+Input\+Stream@{org\+::newdawn\+::slick\+::openal\+::\+Ogg\+Input\+Stream}!read\+Index@{read\+Index}}
+\index{read\+Index@{read\+Index}!org\+::newdawn\+::slick\+::openal\+::\+Ogg\+Input\+Stream@{org\+::newdawn\+::slick\+::openal\+::\+Ogg\+Input\+Stream}}
+\subsubsection{\texorpdfstring{read\+Index}{readIndex}}
+{\footnotesize\ttfamily int org.\+newdawn.\+slick.\+openal.\+Ogg\+Input\+Stream.\+read\+Index\hspace{0.3cm}{\ttfamily [private]}}
+
+The index into the byte array we currently read from \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1openal_1_1_ogg_input_stream_ac4bb8d3c4bd796cf4f20b21fdad304c0}\label{classorg_1_1newdawn_1_1slick_1_1openal_1_1_ogg_input_stream_ac4bb8d3c4bd796cf4f20b21fdad304c0}} 
+\index{org\+::newdawn\+::slick\+::openal\+::\+Ogg\+Input\+Stream@{org\+::newdawn\+::slick\+::openal\+::\+Ogg\+Input\+Stream}!stream\+State@{stream\+State}}
+\index{stream\+State@{stream\+State}!org\+::newdawn\+::slick\+::openal\+::\+Ogg\+Input\+Stream@{org\+::newdawn\+::slick\+::openal\+::\+Ogg\+Input\+Stream}}
+\subsubsection{\texorpdfstring{stream\+State}{streamState}}
+{\footnotesize\ttfamily Stream\+State org.\+newdawn.\+slick.\+openal.\+Ogg\+Input\+Stream.\+stream\+State = new Stream\+State()\hspace{0.3cm}{\ttfamily [private]}}
+
+The Vorbis Stream State used to decode the O\+GG \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1openal_1_1_ogg_input_stream_a6cf0c439e1258dd57e8e83b52b76aefd}\label{classorg_1_1newdawn_1_1slick_1_1openal_1_1_ogg_input_stream_a6cf0c439e1258dd57e8e83b52b76aefd}} 
+\index{org\+::newdawn\+::slick\+::openal\+::\+Ogg\+Input\+Stream@{org\+::newdawn\+::slick\+::openal\+::\+Ogg\+Input\+Stream}!sync\+State@{sync\+State}}
+\index{sync\+State@{sync\+State}!org\+::newdawn\+::slick\+::openal\+::\+Ogg\+Input\+Stream@{org\+::newdawn\+::slick\+::openal\+::\+Ogg\+Input\+Stream}}
+\subsubsection{\texorpdfstring{sync\+State}{syncState}}
+{\footnotesize\ttfamily Sync\+State org.\+newdawn.\+slick.\+openal.\+Ogg\+Input\+Stream.\+sync\+State = new Sync\+State()\hspace{0.3cm}{\ttfamily [private]}}
+
+The Vorbis Sync\+State used to decode the O\+GG \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1openal_1_1_ogg_input_stream_a4a836a2e04a88ae3dd2ae6ed471f3958}\label{classorg_1_1newdawn_1_1slick_1_1openal_1_1_ogg_input_stream_a4a836a2e04a88ae3dd2ae6ed471f3958}} 
+\index{org\+::newdawn\+::slick\+::openal\+::\+Ogg\+Input\+Stream@{org\+::newdawn\+::slick\+::openal\+::\+Ogg\+Input\+Stream}!total@{total}}
+\index{total@{total}!org\+::newdawn\+::slick\+::openal\+::\+Ogg\+Input\+Stream@{org\+::newdawn\+::slick\+::openal\+::\+Ogg\+Input\+Stream}}
+\subsubsection{\texorpdfstring{total}{total}}
+{\footnotesize\ttfamily int org.\+newdawn.\+slick.\+openal.\+Ogg\+Input\+Stream.\+total\hspace{0.3cm}{\ttfamily [private]}}
+
+The total number of bytes \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1openal_1_1_ogg_input_stream_a1099572c535a994f564ec5ac35b656d9}\label{classorg_1_1newdawn_1_1slick_1_1openal_1_1_ogg_input_stream_a1099572c535a994f564ec5ac35b656d9}} 
+\index{org\+::newdawn\+::slick\+::openal\+::\+Ogg\+Input\+Stream@{org\+::newdawn\+::slick\+::openal\+::\+Ogg\+Input\+Stream}!vorbis\+Block@{vorbis\+Block}}
+\index{vorbis\+Block@{vorbis\+Block}!org\+::newdawn\+::slick\+::openal\+::\+Ogg\+Input\+Stream@{org\+::newdawn\+::slick\+::openal\+::\+Ogg\+Input\+Stream}}
+\subsubsection{\texorpdfstring{vorbis\+Block}{vorbisBlock}}
+{\footnotesize\ttfamily Block org.\+newdawn.\+slick.\+openal.\+Ogg\+Input\+Stream.\+vorbis\+Block = new Block(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1openal_1_1_ogg_input_stream_aaa29998e4b4c69e6fba08f5ea5764d15}{dsp\+State}})\hspace{0.3cm}{\ttfamily [private]}}
+
+The O\+GG block we\textquotesingle{}re currently working with to convert P\+CM 

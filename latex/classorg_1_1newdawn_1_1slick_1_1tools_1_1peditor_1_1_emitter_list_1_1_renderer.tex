@@ -1,0 +1,49 @@
+\hypertarget{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_emitter_list_1_1_renderer}{}\section{org.\+newdawn.\+slick.\+tools.\+peditor.\+Emitter\+List.\+Renderer Class Reference}
+\label{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_emitter_list_1_1_renderer}\index{org.\+newdawn.\+slick.\+tools.\+peditor.\+Emitter\+List.\+Renderer@{org.\+newdawn.\+slick.\+tools.\+peditor.\+Emitter\+List.\+Renderer}}
+Inheritance diagram for org.\+newdawn.\+slick.\+tools.\+peditor.\+Emitter\+List.\+Renderer\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_emitter_list_1_1_renderer}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+Component \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_emitter_list_1_1_renderer_a51309c374a3c26cbe839eda1087d9995}{get\+List\+Cell\+Renderer\+Component}} (J\+List \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_emitter_list_a201acbbfa375f50045f4f87452a9c722}{list}}, final Object value, int index, boolean is\+Selected, boolean cell\+Has\+Focus)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_emitter_list_1_1_renderer}{Renderer}} for the emitter list, shows check boxes
+
+\begin{DoxyAuthor}{Author}
+kevin 
+\end{DoxyAuthor}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_emitter_list_1_1_renderer_a51309c374a3c26cbe839eda1087d9995}\label{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_emitter_list_1_1_renderer_a51309c374a3c26cbe839eda1087d9995}} 
+\index{org\+::newdawn\+::slick\+::tools\+::peditor\+::\+Emitter\+List\+::\+Renderer@{org\+::newdawn\+::slick\+::tools\+::peditor\+::\+Emitter\+List\+::\+Renderer}!get\+List\+Cell\+Renderer\+Component@{get\+List\+Cell\+Renderer\+Component}}
+\index{get\+List\+Cell\+Renderer\+Component@{get\+List\+Cell\+Renderer\+Component}!org\+::newdawn\+::slick\+::tools\+::peditor\+::\+Emitter\+List\+::\+Renderer@{org\+::newdawn\+::slick\+::tools\+::peditor\+::\+Emitter\+List\+::\+Renderer}}
+\subsubsection{\texorpdfstring{get\+List\+Cell\+Renderer\+Component()}{getListCellRendererComponent()}}
+{\footnotesize\ttfamily Component org.\+newdawn.\+slick.\+tools.\+peditor.\+Emitter\+List.\+Renderer.\+get\+List\+Cell\+Renderer\+Component (\begin{DoxyParamCaption}\item[{J\+List}]{list,  }\item[{final Object}]{value,  }\item[{int}]{index,  }\item[{boolean}]{is\+Selected,  }\item[{boolean}]{cell\+Has\+Focus }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxySeeAlso}{See also}
+javax.\+swing.\+Default\+List\+Cell\+Renderer\+::get\+List\+Cell\+Renderer\+Component(javax.\+swing.\+J\+List, java.\+lang.\+Object, int, boolean, boolean) 
+\end{DoxySeeAlso}
+
+\begin{DoxyCode}
+167                                                                                                            
+                                      \{
+168             JLabel label = (JLabel) super.getListCellRendererComponent(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_emitter_list_a201acbbfa375f50045f4f87452a9c722}{list}}, value, index, isSelected,
+169                     cellHasFocus);
+170             
+171             \textcolor{keyword}{final} JCheckBox box = \textcolor{keyword}{new} JCheckBox(label.getText());
+172             box.setBackground(label.getBackground());
+173             
+174             box.setSelected(((ConfigurableEmitter) value).isEnabled());
+175             \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1peditor_1_1_emitter_list_ab4a9e11fc917db0ed6c38a4980a8ee4c}{checks}}.put(value, box);
+176             
+177             \textcolor{keywordflow}{return} box;
+178         \}
+\end{DoxyCode}

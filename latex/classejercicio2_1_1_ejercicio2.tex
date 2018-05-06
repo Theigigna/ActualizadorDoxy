@@ -1,0 +1,175 @@
+\hypertarget{classejercicio2_1_1_ejercicio2}{}\section{ejercicio2.\+Ejercicio2 Class Reference}
+\label{classejercicio2_1_1_ejercicio2}\index{ejercicio2.\+Ejercicio2@{ejercicio2.\+Ejercicio2}}
+Inheritance diagram for ejercicio2.\+Ejercicio2\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classejercicio2_1_1_ejercicio2}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classejercicio2_1_1_ejercicio2_aa1233af33b5de9cc49f3e2675057450a}{introducir\+Vehiculo}} (\mbox{\hyperlink{classejercicio2_1_1_vehiculo}{Vehiculo}} v)  throws Aparcamiento\+Exception 
+\item 
+void \mbox{\hyperlink{classejercicio2_1_1_ejercicio2_abdd1ba43b76660e71d07c129449fcf6f}{sacar\+Vehiculo}} (String matricula)  throws Aparcamiento\+Exception, I\+O\+Exception
+\item 
+\mbox{\hyperlink{classejercicio2_1_1_ejercicio2_a446f9b7f84e776b6fd05f60a9e97f3be}{Ejercicio2}} (int \mbox{\hyperlink{classejercicio2_1_1_ejercicio2_a67160aed137820bd3e65ebd3a709ace7}{capacidad}})
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static Hash\+Map$<$ String, \mbox{\hyperlink{classejercicio2_1_1_vehiculo}{Vehiculo}} $>$ \mbox{\hyperlink{classejercicio2_1_1_ejercicio2_aa5edc1e53d504e830b43940e31c3f33a}{aparcamientohashmap}} = new Hash\+Map $<$$>$()
+\item 
+static int \mbox{\hyperlink{classejercicio2_1_1_ejercicio2_a6c3fa58fad90cecd34b87678894782d6}{numerovehiculos}}
+\item 
+static int \mbox{\hyperlink{classejercicio2_1_1_ejercicio2_a67160aed137820bd3e65ebd3a709ace7}{capacidad}} = 10
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyAuthor}{Author}
+Ignacio 
+\end{DoxyAuthor}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classejercicio2_1_1_ejercicio2_a446f9b7f84e776b6fd05f60a9e97f3be}\label{classejercicio2_1_1_ejercicio2_a446f9b7f84e776b6fd05f60a9e97f3be}} 
+\index{ejercicio2\+::\+Ejercicio2@{ejercicio2\+::\+Ejercicio2}!Ejercicio2@{Ejercicio2}}
+\index{Ejercicio2@{Ejercicio2}!ejercicio2\+::\+Ejercicio2@{ejercicio2\+::\+Ejercicio2}}
+\subsubsection{\texorpdfstring{Ejercicio2()}{Ejercicio2()}}
+{\footnotesize\ttfamily ejercicio2.\+Ejercicio2.\+Ejercicio2 (\begin{DoxyParamCaption}\item[{int}]{capacidad }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+107                                     \{
+108         this.\mbox{\hyperlink{classejercicio2_1_1_ejercicio2_a67160aed137820bd3e65ebd3a709ace7}{capacidad}} = \mbox{\hyperlink{classejercicio2_1_1_ejercicio2_a67160aed137820bd3e65ebd3a709ace7}{capacidad}};
+109         this.\mbox{\hyperlink{classejercicio2_1_1_ejercicio2_aa5edc1e53d504e830b43940e31c3f33a}{aparcamientohashmap}} = \mbox{\hyperlink{classejercicio2_1_1_ejercicio2_aa5edc1e53d504e830b43940e31c3f33a}{aparcamientohashmap}};
+110     \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classejercicio2_1_1_ejercicio2_aa1233af33b5de9cc49f3e2675057450a}\label{classejercicio2_1_1_ejercicio2_aa1233af33b5de9cc49f3e2675057450a}} 
+\index{ejercicio2\+::\+Ejercicio2@{ejercicio2\+::\+Ejercicio2}!introducir\+Vehiculo@{introducir\+Vehiculo}}
+\index{introducir\+Vehiculo@{introducir\+Vehiculo}!ejercicio2\+::\+Ejercicio2@{ejercicio2\+::\+Ejercicio2}}
+\subsubsection{\texorpdfstring{introducir\+Vehiculo()}{introducirVehiculo()}}
+{\footnotesize\ttfamily void ejercicio2.\+Ejercicio2.\+introducir\+Vehiculo (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classejercicio2_1_1_vehiculo}{Vehiculo}}}]{v }\end{DoxyParamCaption}) throws \mbox{\hyperlink{classejercicio2_1_1_aparcamiento_exception}{Aparcamiento\+Exception}}\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em args} & the command line arguments \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+34                                                                             \{\textcolor{comment}{//funcion que introduce un
+       vehiculo}
+35         
+36         \textcolor{keywordflow}{if}(\mbox{\hyperlink{classejercicio2_1_1_ejercicio2_a6c3fa58fad90cecd34b87678894782d6}{numerovehiculos}} >= \mbox{\hyperlink{classejercicio2_1_1_ejercicio2_a67160aed137820bd3e65ebd3a709ace7}{capacidad}})\{\textcolor{comment}{//si el parking esta lleno, no mete ningun
+       coche y salta la excepcion}
+37             \textcolor{keywordflow}{throw} \textcolor{keyword}{new} AparcamientoException(AparcamientoException.APARCAMIENTO\_LLENO);
+38         \}
+39         \textcolor{keywordflow}{else}
+40         \textcolor{keywordflow}{if}(\mbox{\hyperlink{classejercicio2_1_1_ejercicio2_aa5edc1e53d504e830b43940e31c3f33a}{aparcamientohashmap}}.containsKey(v.getMatricula()))\{\textcolor{comment}{//si ee coche ya esta
+       dentro, lanza otra excepcion}
+41             \textcolor{keywordflow}{throw} \textcolor{keyword}{new} AparcamientoException(AparcamientoException.VEHICULO\_DENTRO);
+42         \}
+43         \textcolor{keywordflow}{else}\{\textcolor{comment}{//si todo va bien, introduce el vehiculo en el hashmap}
+44             
+45         \mbox{\hyperlink{classejercicio2_1_1_ejercicio2_aa5edc1e53d504e830b43940e31c3f33a}{aparcamientohashmap}}.put(v.getMatricula(),v);
+46         \}
+47         
+48         \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classejercicio2_1_1_ejercicio2_abdd1ba43b76660e71d07c129449fcf6f}\label{classejercicio2_1_1_ejercicio2_abdd1ba43b76660e71d07c129449fcf6f}} 
+\index{ejercicio2\+::\+Ejercicio2@{ejercicio2\+::\+Ejercicio2}!sacar\+Vehiculo@{sacar\+Vehiculo}}
+\index{sacar\+Vehiculo@{sacar\+Vehiculo}!ejercicio2\+::\+Ejercicio2@{ejercicio2\+::\+Ejercicio2}}
+\subsubsection{\texorpdfstring{sacar\+Vehiculo()}{sacarVehiculo()}}
+{\footnotesize\ttfamily void ejercicio2.\+Ejercicio2.\+sacar\+Vehiculo (\begin{DoxyParamCaption}\item[{String}]{matricula }\end{DoxyParamCaption}) throws \mbox{\hyperlink{classejercicio2_1_1_aparcamiento_exception}{Aparcamiento\+Exception}}, I\+O\+Exception\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+50                                                                                         \{\textcolor{comment}{//funcion que saca
+       un vehiculo del hashmap}
+51         \textcolor{keywordflow}{try}\{
+52             \textcolor{keywordflow}{if}(!\mbox{\hyperlink{classejercicio2_1_1_ejercicio2_aa5edc1e53d504e830b43940e31c3f33a}{aparcamientohashmap}}.containsKey(matricula)) \{\textcolor{comment}{//si no esta el coche que
+       buscamos, salta la excepcion}
+53                 
+54                 \textcolor{keywordflow}{throw} \textcolor{keyword}{new} AparcamientoException(AparcamientoException.VEHICULO\_FUERA);
+55             
+56             \} \textcolor{keywordflow}{else} \{\textcolor{comment}{//si no, se procede a sacar el coche}
+57                 
+58             
+59             Vehiculo vehiculoauxiliar = parking.aparcamientohashmap.get(matricula);\textcolor{comment}{//se guarda el vehiculo
+       en un objeto vehiculo auxiliar}
+60             Calendar fechasalida = Calendar.getInstance();\textcolor{comment}{//se toma la fecha de salida}
+61             \textcolor{keywordflow}{if}(vehiculoauxiliar.getClass().getName().equals(\textcolor{stringliteral}{"Automovil"}))\textcolor{comment}{//comprueba si es un automovil}
+62             \{
+63                 
+64                 
+65                 
+66                 
+67                 
+68             Automovil automovilauxiliar = (Automovil) parking.aparcamientohashmap.get(matricula);\textcolor{comment}{//el
+       vehiculo lo metemos en un objeto automovil}
+69             \textcolor{comment}{//se resta uno al contador que corresponda}
+70             \textcolor{keywordflow}{if}(automovilauxiliar.getTipoautomovil().equals(\textcolor{stringliteral}{"Turismo"}))
+71                 \mbox{\hyperlink{namespace_interfaz}{Interfaz}}.numeroturismos--;
+72             \textcolor{keywordflow}{if}(automovilauxiliar.getTipoautomovil().equals(\textcolor{stringliteral}{"Todoterreno"}))
+73                 \mbox{\hyperlink{namespace_interfaz}{Interfaz}}.numerotodoterrenos --;
+74             \textcolor{keywordflow}{if}(automovilauxiliar.getTipoautomovil().equals(\textcolor{stringliteral}{"Furgoneta"}))
+75                 \mbox{\hyperlink{namespace_interfaz}{Interfaz}}.numerofurgonetas --;
+76             
+77             \textcolor{keywordtype}{int} importefacturaauxiliar = (\textcolor{keywordtype}{int}) (automovilauxiliar.calcularImporte(automovilauxiliar)*10);
+78                 importefactura = (float) (importefacturaauxiliar/10);\textcolor{comment}{//calculamos el importe concatenando
+       un valor multiplicado por 10, y despues lo casteamos a float dividiendo entre 10 para que solo tenga 2
+       decimales}
+79             \}
+80             \textcolor{keywordflow}{else}\textcolor{comment}{//si no es un automovil, es un camion}
+81             \{
+82                 Camion camionauxiliar ;
+83                 \mbox{\hyperlink{namespace_interfaz}{Interfaz}}.numerocamiones --;
+84                 camionauxiliar = (Camion) vehiculoauxiliar;
+85                 \textcolor{keywordtype}{int} importefacturaauxiliar = (int) (camionauxiliar.calcularImporte(camionauxiliar)*10);
+86                 importefactura = (float) (importefacturaauxiliar/10);                                   \textcolor{comment}{//
+      mismo procedimiento que antes}
+87             \}
+88             hacerfactura(vehiculoauxiliar,importefactura);\textcolor{comment}{//hacemos la factura en un txt}
+89             \mbox{\hyperlink{classejercicio2_1_1_ejercicio2_aa5edc1e53d504e830b43940e31c3f33a}{aparcamientohashmap}}.remove(matricula);          \textcolor{comment}{//y finalmente lo borramos
+       del hashmap}
+90 
+91             \}
+92             
+93         \}
+94         \textcolor{keywordflow}{catch}(AparcamientoException excepcion)\{\textcolor{comment}{//en caso de que falle, excepcion}
+95             
+96             System.out.println(excepcion.getMessage());
+97                 
+98         \}
+99         
+100             \textcolor{comment}{/*catch(IOException e)\{}
+101 \textcolor{comment}{                System.out.println("Otro error.\(\backslash\)n");}
+102 \textcolor{comment}{            \}*/}
+103     \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classejercicio2_1_1_ejercicio2_aa5edc1e53d504e830b43940e31c3f33a}\label{classejercicio2_1_1_ejercicio2_aa5edc1e53d504e830b43940e31c3f33a}} 
+\index{ejercicio2\+::\+Ejercicio2@{ejercicio2\+::\+Ejercicio2}!aparcamientohashmap@{aparcamientohashmap}}
+\index{aparcamientohashmap@{aparcamientohashmap}!ejercicio2\+::\+Ejercicio2@{ejercicio2\+::\+Ejercicio2}}
+\subsubsection{\texorpdfstring{aparcamientohashmap}{aparcamientohashmap}}
+{\footnotesize\ttfamily Hash\+Map$<$ String , \mbox{\hyperlink{classejercicio2_1_1_vehiculo}{Vehiculo}} $>$ ejercicio2.\+Ejercicio2.\+aparcamientohashmap = new Hash\+Map $<$$>$()\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classejercicio2_1_1_ejercicio2_a67160aed137820bd3e65ebd3a709ace7}\label{classejercicio2_1_1_ejercicio2_a67160aed137820bd3e65ebd3a709ace7}} 
+\index{ejercicio2\+::\+Ejercicio2@{ejercicio2\+::\+Ejercicio2}!capacidad@{capacidad}}
+\index{capacidad@{capacidad}!ejercicio2\+::\+Ejercicio2@{ejercicio2\+::\+Ejercicio2}}
+\subsubsection{\texorpdfstring{capacidad}{capacidad}}
+{\footnotesize\ttfamily int ejercicio2.\+Ejercicio2.\+capacidad = 10\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classejercicio2_1_1_ejercicio2_a6c3fa58fad90cecd34b87678894782d6}\label{classejercicio2_1_1_ejercicio2_a6c3fa58fad90cecd34b87678894782d6}} 
+\index{ejercicio2\+::\+Ejercicio2@{ejercicio2\+::\+Ejercicio2}!numerovehiculos@{numerovehiculos}}
+\index{numerovehiculos@{numerovehiculos}!ejercicio2\+::\+Ejercicio2@{ejercicio2\+::\+Ejercicio2}}
+\subsubsection{\texorpdfstring{numerovehiculos}{numerovehiculos}}
+{\footnotesize\ttfamily int ejercicio2.\+Ejercicio2.\+numerovehiculos\hspace{0.3cm}{\ttfamily [static]}}
+

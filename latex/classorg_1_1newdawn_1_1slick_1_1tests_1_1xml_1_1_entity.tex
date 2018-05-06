@@ -1,0 +1,123 @@
+\hypertarget{classorg_1_1newdawn_1_1slick_1_1tests_1_1xml_1_1_entity}{}\section{org.\+newdawn.\+slick.\+tests.\+xml.\+Entity Class Reference}
+\label{classorg_1_1newdawn_1_1slick_1_1tests_1_1xml_1_1_entity}\index{org.\+newdawn.\+slick.\+tests.\+xml.\+Entity@{org.\+newdawn.\+slick.\+tests.\+xml.\+Entity}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1xml_1_1_entity_a9b7da9305e7a8efcc31042a65170cec2}{dump}} (String prefix)
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1xml_1_1_entity_aed34145378df65de2af166d8a30e1cd9}{add}} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1xml_1_1_inventory}{Inventory}} inventory)
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1xml_1_1_entity_aab6a1cb7b53b0bd0ef1df57f03407751}{add}} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1xml_1_1_stats}{Stats}} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1xml_1_1_entity_ab3afbe872882f8df21ceaea027b85ffb}{stats}})
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+float \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1xml_1_1_entity_af0aa8c1d6dc8e8f31cf9fffca28bfd00}{x}}
+\item 
+float \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1xml_1_1_entity_ac9fd9cf691a90fd470ccfde9be5a3d19}{y}}
+\item 
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1xml_1_1_inventory}{Inventory}} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1xml_1_1_entity_acd01fa984ba073425ec57b2c071c397f}{invent}}
+\item 
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1xml_1_1_stats}{Stats}} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1xml_1_1_entity_ab3afbe872882f8df21ceaea027b85ffb}{stats}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A test example of some object data that can be configured via X\+ML
+
+\begin{DoxyAuthor}{Author}
+kevin 
+\end{DoxyAuthor}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tests_1_1xml_1_1_entity_aed34145378df65de2af166d8a30e1cd9}\label{classorg_1_1newdawn_1_1slick_1_1tests_1_1xml_1_1_entity_aed34145378df65de2af166d8a30e1cd9}} 
+\index{org\+::newdawn\+::slick\+::tests\+::xml\+::\+Entity@{org\+::newdawn\+::slick\+::tests\+::xml\+::\+Entity}!add@{add}}
+\index{add@{add}!org\+::newdawn\+::slick\+::tests\+::xml\+::\+Entity@{org\+::newdawn\+::slick\+::tests\+::xml\+::\+Entity}}
+\subsubsection{\texorpdfstring{add()}{add()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+tests.\+xml.\+Entity.\+add (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1xml_1_1_inventory}{Inventory}}}]{inventory }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+Called by X\+ML parser to add a configured inventory to the entity
+
+
+\begin{DoxyParams}{Parameters}
+{\em inventory} & The inventory to be added \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+23                                           \{
+24         this.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1xml_1_1_entity_acd01fa984ba073425ec57b2c071c397f}{invent}} = inventory;
+25     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tests_1_1xml_1_1_entity_aab6a1cb7b53b0bd0ef1df57f03407751}\label{classorg_1_1newdawn_1_1slick_1_1tests_1_1xml_1_1_entity_aab6a1cb7b53b0bd0ef1df57f03407751}} 
+\index{org\+::newdawn\+::slick\+::tests\+::xml\+::\+Entity@{org\+::newdawn\+::slick\+::tests\+::xml\+::\+Entity}!add@{add}}
+\index{add@{add}!org\+::newdawn\+::slick\+::tests\+::xml\+::\+Entity@{org\+::newdawn\+::slick\+::tests\+::xml\+::\+Entity}}
+\subsubsection{\texorpdfstring{add()}{add()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+tests.\+xml.\+Entity.\+add (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1xml_1_1_stats}{Stats}}}]{stats }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+Called by X\+ML parser to add a configured statistics object to the entity
+
+
+\begin{DoxyParams}{Parameters}
+{\em stats} & The statistics to be added \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+32                                   \{
+33         this.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1xml_1_1_entity_ab3afbe872882f8df21ceaea027b85ffb}{stats}} = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1xml_1_1_entity_ab3afbe872882f8df21ceaea027b85ffb}{stats}};
+34     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tests_1_1xml_1_1_entity_a9b7da9305e7a8efcc31042a65170cec2}\label{classorg_1_1newdawn_1_1slick_1_1tests_1_1xml_1_1_entity_a9b7da9305e7a8efcc31042a65170cec2}} 
+\index{org\+::newdawn\+::slick\+::tests\+::xml\+::\+Entity@{org\+::newdawn\+::slick\+::tests\+::xml\+::\+Entity}!dump@{dump}}
+\index{dump@{dump}!org\+::newdawn\+::slick\+::tests\+::xml\+::\+Entity@{org\+::newdawn\+::slick\+::tests\+::xml\+::\+Entity}}
+\subsubsection{\texorpdfstring{dump()}{dump()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+tests.\+xml.\+Entity.\+dump (\begin{DoxyParamCaption}\item[{String}]{prefix }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Dump this object to sysout
+
+
+\begin{DoxyParams}{Parameters}
+{\em prefix} & The prefix to apply to all lines \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+41                                     \{
+42         System.out.println(prefix+\textcolor{stringliteral}{"Entity "}+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1xml_1_1_entity_af0aa8c1d6dc8e8f31cf9fffca28bfd00}{x}}+\textcolor{stringliteral}{","}+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1xml_1_1_entity_ac9fd9cf691a90fd470ccfde9be5a3d19}{y}});
+43         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1xml_1_1_entity_acd01fa984ba073425ec57b2c071c397f}{invent}}.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1xml_1_1_inventory_ae6476f32141f6791d3b69cc9687fae4a}{dump}}(prefix+\textcolor{stringliteral}{"\(\backslash\)t"});
+44         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1xml_1_1_entity_ab3afbe872882f8df21ceaea027b85ffb}{stats}}.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1xml_1_1_stats_ad10fe6ffff96bbf3856ce5789a641683}{dump}}(prefix+\textcolor{stringliteral}{"\(\backslash\)t"});
+45     \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tests_1_1xml_1_1_entity_acd01fa984ba073425ec57b2c071c397f}\label{classorg_1_1newdawn_1_1slick_1_1tests_1_1xml_1_1_entity_acd01fa984ba073425ec57b2c071c397f}} 
+\index{org\+::newdawn\+::slick\+::tests\+::xml\+::\+Entity@{org\+::newdawn\+::slick\+::tests\+::xml\+::\+Entity}!invent@{invent}}
+\index{invent@{invent}!org\+::newdawn\+::slick\+::tests\+::xml\+::\+Entity@{org\+::newdawn\+::slick\+::tests\+::xml\+::\+Entity}}
+\subsubsection{\texorpdfstring{invent}{invent}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1xml_1_1_inventory}{Inventory}} org.\+newdawn.\+slick.\+tests.\+xml.\+Entity.\+invent\hspace{0.3cm}{\ttfamily [private]}}
+
+items held \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tests_1_1xml_1_1_entity_ab3afbe872882f8df21ceaea027b85ffb}\label{classorg_1_1newdawn_1_1slick_1_1tests_1_1xml_1_1_entity_ab3afbe872882f8df21ceaea027b85ffb}} 
+\index{org\+::newdawn\+::slick\+::tests\+::xml\+::\+Entity@{org\+::newdawn\+::slick\+::tests\+::xml\+::\+Entity}!stats@{stats}}
+\index{stats@{stats}!org\+::newdawn\+::slick\+::tests\+::xml\+::\+Entity@{org\+::newdawn\+::slick\+::tests\+::xml\+::\+Entity}}
+\subsubsection{\texorpdfstring{stats}{stats}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1xml_1_1_stats}{Stats}} org.\+newdawn.\+slick.\+tests.\+xml.\+Entity.\+stats\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1xml_1_1_entity}{Entity}} statistics \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tests_1_1xml_1_1_entity_af0aa8c1d6dc8e8f31cf9fffca28bfd00}\label{classorg_1_1newdawn_1_1slick_1_1tests_1_1xml_1_1_entity_af0aa8c1d6dc8e8f31cf9fffca28bfd00}} 
+\index{org\+::newdawn\+::slick\+::tests\+::xml\+::\+Entity@{org\+::newdawn\+::slick\+::tests\+::xml\+::\+Entity}!x@{x}}
+\index{x@{x}!org\+::newdawn\+::slick\+::tests\+::xml\+::\+Entity@{org\+::newdawn\+::slick\+::tests\+::xml\+::\+Entity}}
+\subsubsection{\texorpdfstring{x}{x}}
+{\footnotesize\ttfamily float org.\+newdawn.\+slick.\+tests.\+xml.\+Entity.\+x\hspace{0.3cm}{\ttfamily [private]}}
+
+X position for the entity \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tests_1_1xml_1_1_entity_ac9fd9cf691a90fd470ccfde9be5a3d19}\label{classorg_1_1newdawn_1_1slick_1_1tests_1_1xml_1_1_entity_ac9fd9cf691a90fd470ccfde9be5a3d19}} 
+\index{org\+::newdawn\+::slick\+::tests\+::xml\+::\+Entity@{org\+::newdawn\+::slick\+::tests\+::xml\+::\+Entity}!y@{y}}
+\index{y@{y}!org\+::newdawn\+::slick\+::tests\+::xml\+::\+Entity@{org\+::newdawn\+::slick\+::tests\+::xml\+::\+Entity}}
+\subsubsection{\texorpdfstring{y}{y}}
+{\footnotesize\ttfamily float org.\+newdawn.\+slick.\+tests.\+xml.\+Entity.\+y\hspace{0.3cm}{\ttfamily [private]}}
+
+Y position for the entity 

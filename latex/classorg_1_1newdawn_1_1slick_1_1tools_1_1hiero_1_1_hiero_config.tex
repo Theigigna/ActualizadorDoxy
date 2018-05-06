@@ -1,0 +1,131 @@
+\hypertarget{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_hiero_config}{}\section{org.\+newdawn.\+slick.\+tools.\+hiero.\+Hiero\+Config Class Reference}
+\label{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_hiero_config}\index{org.\+newdawn.\+slick.\+tools.\+hiero.\+Hiero\+Config@{org.\+newdawn.\+slick.\+tools.\+hiero.\+Hiero\+Config}}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_hiero_config_a2c29572e725d71d622efa31e2c4b0766}{init}} ()
+\item 
+static File \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_hiero_config_a4e8988e2077081022054edc66ff494f0}{get\+Config\+File}} (String name)
+\item 
+static File \mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_hiero_config_aa9c460f993b805e30a1bcca2eb12c2b0}{list\+Files}} (final String ext)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static int \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_hiero_config_ae5bde1ec384e1d9d5fbbbf0096e644e5}{D\+F\+I\+E\+L\+D\+\_\+\+S\+C\+A\+N\+\_\+\+S\+I\+ZE}} = 20
+\item 
+static int \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_hiero_config_ac8136db71e5e7677b44c8980eab003d6}{D\+F\+I\+E\+L\+D\+\_\+\+S\+C\+A\+L\+E\+\_\+\+UP}} = 8
+\end{DoxyCompactItemize}
+\subsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static File \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_hiero_config_a381768b9b45f39c0aa7e86f7d12ed000}{home}} = new File(System.\+get\+Property(\char`\"{}user.\+home\char`\"{}))
+\item 
+static File \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_hiero_config_a13063195c209bdd37f19d27a938cc508}{config}} = new File(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_hiero_config_a381768b9b45f39c0aa7e86f7d12ed000}{home}},\char`\"{}.hiero\char`\"{})
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A central configuration managed
+
+\begin{DoxyAuthor}{Author}
+kevin 
+\end{DoxyAuthor}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_hiero_config_a4e8988e2077081022054edc66ff494f0}\label{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_hiero_config_a4e8988e2077081022054edc66ff494f0}} 
+\index{org\+::newdawn\+::slick\+::tools\+::hiero\+::\+Hiero\+Config@{org\+::newdawn\+::slick\+::tools\+::hiero\+::\+Hiero\+Config}!get\+Config\+File@{get\+Config\+File}}
+\index{get\+Config\+File@{get\+Config\+File}!org\+::newdawn\+::slick\+::tools\+::hiero\+::\+Hiero\+Config@{org\+::newdawn\+::slick\+::tools\+::hiero\+::\+Hiero\+Config}}
+\subsubsection{\texorpdfstring{get\+Config\+File()}{getConfigFile()}}
+{\footnotesize\ttfamily static File org.\+newdawn.\+slick.\+tools.\+hiero.\+Hiero\+Config.\+get\+Config\+File (\begin{DoxyParamCaption}\item[{String}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Get a file from the configuration
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The name of the configuration file to retrieve \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A handle to the requested file 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+38                                                   \{
+39         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_hiero_config_a2c29572e725d71d622efa31e2c4b0766}{init}}();
+40         
+41         \textcolor{keywordflow}{return} \textcolor{keyword}{new} File(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_hiero_config_a13063195c209bdd37f19d27a938cc508}{config}}, name);
+42     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_hiero_config_a2c29572e725d71d622efa31e2c4b0766}\label{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_hiero_config_a2c29572e725d71d622efa31e2c4b0766}} 
+\index{org\+::newdawn\+::slick\+::tools\+::hiero\+::\+Hiero\+Config@{org\+::newdawn\+::slick\+::tools\+::hiero\+::\+Hiero\+Config}!init@{init}}
+\index{init@{init}!org\+::newdawn\+::slick\+::tools\+::hiero\+::\+Hiero\+Config@{org\+::newdawn\+::slick\+::tools\+::hiero\+::\+Hiero\+Config}}
+\subsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily static void org.\+newdawn.\+slick.\+tools.\+hiero.\+Hiero\+Config.\+init (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Initialise the configuration 
+\begin{DoxyCode}
+26                               \{
+27         \textcolor{keywordflow}{if} (!\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_hiero_config_a13063195c209bdd37f19d27a938cc508}{config}}.exists()) \{
+28             \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_hiero_config_a13063195c209bdd37f19d27a938cc508}{config}}.mkdirs();
+29         \}
+30     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_hiero_config_aa9c460f993b805e30a1bcca2eb12c2b0}\label{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_hiero_config_aa9c460f993b805e30a1bcca2eb12c2b0}} 
+\index{org\+::newdawn\+::slick\+::tools\+::hiero\+::\+Hiero\+Config@{org\+::newdawn\+::slick\+::tools\+::hiero\+::\+Hiero\+Config}!list\+Files@{list\+Files}}
+\index{list\+Files@{list\+Files}!org\+::newdawn\+::slick\+::tools\+::hiero\+::\+Hiero\+Config@{org\+::newdawn\+::slick\+::tools\+::hiero\+::\+Hiero\+Config}}
+\subsubsection{\texorpdfstring{list\+Files()}{listFiles()}}
+{\footnotesize\ttfamily static File \mbox{[}$\,$\mbox{]} org.\+newdawn.\+slick.\+tools.\+hiero.\+Hiero\+Config.\+list\+Files (\begin{DoxyParamCaption}\item[{final String}]{ext }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+List the files with a given extension in the configuration directory
+
+
+\begin{DoxyParams}{Parameters}
+{\em ext} & The extension to search for \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The list of files from the configuration directory 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+50                                                      \{
+51         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_hiero_config_a2c29572e725d71d622efa31e2c4b0766}{init}}();
+52         
+53         \textcolor{keywordflow}{return} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_hiero_config_a13063195c209bdd37f19d27a938cc508}{config}}.listFiles(\textcolor{keyword}{new} FilenameFilter() \{
+54 
+55             \textcolor{keyword}{public} \textcolor{keywordtype}{boolean} accept(File dir, String name) \{
+56                 \textcolor{keywordflow}{return} name.endsWith(ext);
+57             \}
+58         \});
+59     \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_hiero_config_a13063195c209bdd37f19d27a938cc508}\label{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_hiero_config_a13063195c209bdd37f19d27a938cc508}} 
+\index{org\+::newdawn\+::slick\+::tools\+::hiero\+::\+Hiero\+Config@{org\+::newdawn\+::slick\+::tools\+::hiero\+::\+Hiero\+Config}!config@{config}}
+\index{config@{config}!org\+::newdawn\+::slick\+::tools\+::hiero\+::\+Hiero\+Config@{org\+::newdawn\+::slick\+::tools\+::hiero\+::\+Hiero\+Config}}
+\subsubsection{\texorpdfstring{config}{config}}
+{\footnotesize\ttfamily File org.\+newdawn.\+slick.\+tools.\+hiero.\+Hiero\+Config.\+config = new File(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_hiero_config_a381768b9b45f39c0aa7e86f7d12ed000}{home}},\char`\"{}.hiero\char`\"{})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_hiero}{Hiero}}\textquotesingle{}s configuration directory \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_hiero_config_ac8136db71e5e7677b44c8980eab003d6}\label{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_hiero_config_ac8136db71e5e7677b44c8980eab003d6}} 
+\index{org\+::newdawn\+::slick\+::tools\+::hiero\+::\+Hiero\+Config@{org\+::newdawn\+::slick\+::tools\+::hiero\+::\+Hiero\+Config}!D\+F\+I\+E\+L\+D\+\_\+\+S\+C\+A\+L\+E\+\_\+\+UP@{D\+F\+I\+E\+L\+D\+\_\+\+S\+C\+A\+L\+E\+\_\+\+UP}}
+\index{D\+F\+I\+E\+L\+D\+\_\+\+S\+C\+A\+L\+E\+\_\+\+UP@{D\+F\+I\+E\+L\+D\+\_\+\+S\+C\+A\+L\+E\+\_\+\+UP}!org\+::newdawn\+::slick\+::tools\+::hiero\+::\+Hiero\+Config@{org\+::newdawn\+::slick\+::tools\+::hiero\+::\+Hiero\+Config}}
+\subsubsection{\texorpdfstring{D\+F\+I\+E\+L\+D\+\_\+\+S\+C\+A\+L\+E\+\_\+\+UP}{DFIELD\_SCALE\_UP}}
+{\footnotesize\ttfamily int org.\+newdawn.\+slick.\+tools.\+hiero.\+Hiero\+Config.\+D\+F\+I\+E\+L\+D\+\_\+\+S\+C\+A\+L\+E\+\_\+\+UP = 8\hspace{0.3cm}{\ttfamily [static]}}
+
+The scale of the image used as source for distance fields \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_hiero_config_ae5bde1ec384e1d9d5fbbbf0096e644e5}\label{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_hiero_config_ae5bde1ec384e1d9d5fbbbf0096e644e5}} 
+\index{org\+::newdawn\+::slick\+::tools\+::hiero\+::\+Hiero\+Config@{org\+::newdawn\+::slick\+::tools\+::hiero\+::\+Hiero\+Config}!D\+F\+I\+E\+L\+D\+\_\+\+S\+C\+A\+N\+\_\+\+S\+I\+ZE@{D\+F\+I\+E\+L\+D\+\_\+\+S\+C\+A\+N\+\_\+\+S\+I\+ZE}}
+\index{D\+F\+I\+E\+L\+D\+\_\+\+S\+C\+A\+N\+\_\+\+S\+I\+ZE@{D\+F\+I\+E\+L\+D\+\_\+\+S\+C\+A\+N\+\_\+\+S\+I\+ZE}!org\+::newdawn\+::slick\+::tools\+::hiero\+::\+Hiero\+Config@{org\+::newdawn\+::slick\+::tools\+::hiero\+::\+Hiero\+Config}}
+\subsubsection{\texorpdfstring{D\+F\+I\+E\+L\+D\+\_\+\+S\+C\+A\+N\+\_\+\+S\+I\+ZE}{DFIELD\_SCAN\_SIZE}}
+{\footnotesize\ttfamily int org.\+newdawn.\+slick.\+tools.\+hiero.\+Hiero\+Config.\+D\+F\+I\+E\+L\+D\+\_\+\+S\+C\+A\+N\+\_\+\+S\+I\+ZE = 20\hspace{0.3cm}{\ttfamily [static]}}
+
+The default scan size for distance fields \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_hiero_config_a381768b9b45f39c0aa7e86f7d12ed000}\label{classorg_1_1newdawn_1_1slick_1_1tools_1_1hiero_1_1_hiero_config_a381768b9b45f39c0aa7e86f7d12ed000}} 
+\index{org\+::newdawn\+::slick\+::tools\+::hiero\+::\+Hiero\+Config@{org\+::newdawn\+::slick\+::tools\+::hiero\+::\+Hiero\+Config}!home@{home}}
+\index{home@{home}!org\+::newdawn\+::slick\+::tools\+::hiero\+::\+Hiero\+Config@{org\+::newdawn\+::slick\+::tools\+::hiero\+::\+Hiero\+Config}}
+\subsubsection{\texorpdfstring{home}{home}}
+{\footnotesize\ttfamily File org.\+newdawn.\+slick.\+tools.\+hiero.\+Hiero\+Config.\+home = new File(System.\+get\+Property(\char`\"{}user.\+home\char`\"{}))\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+The user\textquotesingle{}s home directory 

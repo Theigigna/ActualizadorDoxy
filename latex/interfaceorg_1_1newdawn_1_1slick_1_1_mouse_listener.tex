@@ -1,0 +1,164 @@
+\hypertarget{interfaceorg_1_1newdawn_1_1slick_1_1_mouse_listener}{}\section{org.\+newdawn.\+slick.\+Mouse\+Listener Interface Reference}
+\label{interfaceorg_1_1newdawn_1_1slick_1_1_mouse_listener}\index{org.\+newdawn.\+slick.\+Mouse\+Listener@{org.\+newdawn.\+slick.\+Mouse\+Listener}}
+Inheritance diagram for org.\+newdawn.\+slick.\+Mouse\+Listener\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=12.000000cm]{interfaceorg_1_1newdawn_1_1slick_1_1_mouse_listener}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+abstract void \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1_mouse_listener_ad7e49c969e1f0315ecdf238f715953d1}{mouse\+Wheel\+Moved}} (int change)
+\item 
+abstract void \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1_mouse_listener_a3e42b74c252ecdc7418b0ee8bcae5510}{mouse\+Clicked}} (int button, int x, int y, int click\+Count)
+\item 
+abstract void \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1_mouse_listener_aeca4c21a38aa31c408f3daf6f86c0925}{mouse\+Pressed}} (int button, int x, int y)
+\item 
+abstract void \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1_mouse_listener_a8d1606869f610664f9299565067d5571}{mouse\+Released}} (int button, int x, int y)
+\item 
+abstract void \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1_mouse_listener_ad41216afc84f2c8d38f91e8b2d46bed9}{mouse\+Moved}} (int oldx, int oldy, int newx, int newy)
+\item 
+abstract void \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1_mouse_listener_a65022dd6acb492caa47dfd806b207139}{mouse\+Dragged}} (int oldx, int oldy, int newx, int newy)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Description of classes that respond to mouse related input events
+
+\begin{DoxyAuthor}{Author}
+kevin 
+\end{DoxyAuthor}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{interfaceorg_1_1newdawn_1_1slick_1_1_mouse_listener_a3e42b74c252ecdc7418b0ee8bcae5510}\label{interfaceorg_1_1newdawn_1_1slick_1_1_mouse_listener_a3e42b74c252ecdc7418b0ee8bcae5510}} 
+\index{org\+::newdawn\+::slick\+::\+Mouse\+Listener@{org\+::newdawn\+::slick\+::\+Mouse\+Listener}!mouse\+Clicked@{mouse\+Clicked}}
+\index{mouse\+Clicked@{mouse\+Clicked}!org\+::newdawn\+::slick\+::\+Mouse\+Listener@{org\+::newdawn\+::slick\+::\+Mouse\+Listener}}
+\subsubsection{\texorpdfstring{mouse\+Clicked()}{mouseClicked()}}
+{\footnotesize\ttfamily abstract void org.\+newdawn.\+slick.\+Mouse\+Listener.\+mouse\+Clicked (\begin{DoxyParamCaption}\item[{int}]{button,  }\item[{int}]{x,  }\item[{int}]{y,  }\item[{int}]{click\+Count }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}}
+
+Notification that a mouse button was clicked. Due to double click handling the single click may be delayed slightly. For absolute notification of single clicks use \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1_mouse_listener_aeca4c21a38aa31c408f3daf6f86c0925}{mouse\+Pressed()}}.
+
+To be absolute this method should only be used when considering double clicks
+
+
+\begin{DoxyParams}{Parameters}
+{\em button} & The index of the button (starting at 0) \\
+\hline
+{\em x} & The x position of the mouse when the button was pressed \\
+\hline
+{\em y} & The y position of the mouse when the button was pressed \\
+\hline
+{\em click\+Count} & The number of times the button was clicked \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1_state_based_game_a79113474361d715e01ac3be4a2c100d0}{org.\+newdawn.\+slick.\+state.\+State\+Based\+Game}}, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_input_test_a69ff71dd569d86c9b5b187d8329078be}{org.\+newdawn.\+slick.\+tests.\+Input\+Test}}, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1_input_adapter_acc4caea33acf2a96521865286d414651}{org.\+newdawn.\+slick.\+util.\+Input\+Adapter}}, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1_basic_game_state_a6151f33238ecd2109e2a2e6a2eda7c90}{org.\+newdawn.\+slick.\+state.\+Basic\+Game\+State}}, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_basic_game_a3103343304121288da2e40cc49466f94}{org.\+newdawn.\+slick.\+Basic\+Game}}, and \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_double_click_test_a38920aa6fbd2b5ec525f229bcc2a7769}{org.\+newdawn.\+slick.\+tests.\+Double\+Click\+Test}}.
+
+\mbox{\Hypertarget{interfaceorg_1_1newdawn_1_1slick_1_1_mouse_listener_a65022dd6acb492caa47dfd806b207139}\label{interfaceorg_1_1newdawn_1_1slick_1_1_mouse_listener_a65022dd6acb492caa47dfd806b207139}} 
+\index{org\+::newdawn\+::slick\+::\+Mouse\+Listener@{org\+::newdawn\+::slick\+::\+Mouse\+Listener}!mouse\+Dragged@{mouse\+Dragged}}
+\index{mouse\+Dragged@{mouse\+Dragged}!org\+::newdawn\+::slick\+::\+Mouse\+Listener@{org\+::newdawn\+::slick\+::\+Mouse\+Listener}}
+\subsubsection{\texorpdfstring{mouse\+Dragged()}{mouseDragged()}}
+{\footnotesize\ttfamily abstract void org.\+newdawn.\+slick.\+Mouse\+Listener.\+mouse\+Dragged (\begin{DoxyParamCaption}\item[{int}]{oldx,  }\item[{int}]{oldy,  }\item[{int}]{newx,  }\item[{int}]{newy }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}}
+
+Notification that mouse cursor was dragged
+
+
+\begin{DoxyParams}{Parameters}
+{\em oldx} & The old x position of the mouse \\
+\hline
+{\em oldy} & The old y position of the mouse \\
+\hline
+{\em newx} & The new x position of the mouse \\
+\hline
+{\em newy} & The new y position of the mouse \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1_state_based_game_a7c9b5a16d368beda39b0024cc5d1fe29}{org.\+newdawn.\+slick.\+state.\+State\+Based\+Game}}, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1gui_1_1_mouse_over_area_a425742d2c0b0bd51f4eee03b5b0083ba}{org.\+newdawn.\+slick.\+gui.\+Mouse\+Over\+Area}}, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1_input_adapter_a185b6e79c736d75fb3dd7319ff1d147a}{org.\+newdawn.\+slick.\+util.\+Input\+Adapter}}, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1_basic_game_state_a1735e088abcb5a7af3eb5fded03c84a4}{org.\+newdawn.\+slick.\+state.\+Basic\+Game\+State}}, and \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_basic_game_a1df1a7ae6bfdace7dcf780fe76f920a3}{org.\+newdawn.\+slick.\+Basic\+Game}}.
+
+\mbox{\Hypertarget{interfaceorg_1_1newdawn_1_1slick_1_1_mouse_listener_ad41216afc84f2c8d38f91e8b2d46bed9}\label{interfaceorg_1_1newdawn_1_1slick_1_1_mouse_listener_ad41216afc84f2c8d38f91e8b2d46bed9}} 
+\index{org\+::newdawn\+::slick\+::\+Mouse\+Listener@{org\+::newdawn\+::slick\+::\+Mouse\+Listener}!mouse\+Moved@{mouse\+Moved}}
+\index{mouse\+Moved@{mouse\+Moved}!org\+::newdawn\+::slick\+::\+Mouse\+Listener@{org\+::newdawn\+::slick\+::\+Mouse\+Listener}}
+\subsubsection{\texorpdfstring{mouse\+Moved()}{mouseMoved()}}
+{\footnotesize\ttfamily abstract void org.\+newdawn.\+slick.\+Mouse\+Listener.\+mouse\+Moved (\begin{DoxyParamCaption}\item[{int}]{oldx,  }\item[{int}]{oldy,  }\item[{int}]{newx,  }\item[{int}]{newy }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}}
+
+Notification that mouse cursor was moved
+
+
+\begin{DoxyParams}{Parameters}
+{\em oldx} & The old x position of the mouse \\
+\hline
+{\em oldy} & The old y position of the mouse \\
+\hline
+{\em newx} & The new x position of the mouse \\
+\hline
+{\em newy} & The new y position of the mouse \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1_state_based_game_a61aab9c2a3c18c20bf1ed2c50276c818}{org.\+newdawn.\+slick.\+state.\+State\+Based\+Game}}, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1gui_1_1_mouse_over_area_a3fbca2800bd827846e958116b97d4364}{org.\+newdawn.\+slick.\+gui.\+Mouse\+Over\+Area}}, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_test_box_a293c3589092e888da58b49b41fb591fd}{org.\+newdawn.\+slick.\+tests.\+Test\+Box}}, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_input_test_a21d3311cf60fcac31409926d3c3323b7}{org.\+newdawn.\+slick.\+tests.\+Input\+Test}}, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1_basic_game_state_a8c96e4bc47056c851c5537dbeb38100b}{org.\+newdawn.\+slick.\+state.\+Basic\+Game\+State}}, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1_input_adapter_a4ad2eb7dcdd0834b5606e124e41fc9ac}{org.\+newdawn.\+slick.\+util.\+Input\+Adapter}}, and \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_basic_game_adaed74556aba405022579f9369f042eb}{org.\+newdawn.\+slick.\+Basic\+Game}}.
+
+\mbox{\Hypertarget{interfaceorg_1_1newdawn_1_1slick_1_1_mouse_listener_aeca4c21a38aa31c408f3daf6f86c0925}\label{interfaceorg_1_1newdawn_1_1slick_1_1_mouse_listener_aeca4c21a38aa31c408f3daf6f86c0925}} 
+\index{org\+::newdawn\+::slick\+::\+Mouse\+Listener@{org\+::newdawn\+::slick\+::\+Mouse\+Listener}!mouse\+Pressed@{mouse\+Pressed}}
+\index{mouse\+Pressed@{mouse\+Pressed}!org\+::newdawn\+::slick\+::\+Mouse\+Listener@{org\+::newdawn\+::slick\+::\+Mouse\+Listener}}
+\subsubsection{\texorpdfstring{mouse\+Pressed()}{mousePressed()}}
+{\footnotesize\ttfamily abstract void org.\+newdawn.\+slick.\+Mouse\+Listener.\+mouse\+Pressed (\begin{DoxyParamCaption}\item[{int}]{button,  }\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}}
+
+Notification that a mouse button was pressed
+
+
+\begin{DoxyParams}{Parameters}
+{\em button} & The index of the button (starting at 0) \\
+\hline
+{\em x} & The x position of the mouse when the button was pressed \\
+\hline
+{\em y} & The y position of the mouse when the button was pressed \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1_state_based_game_ab6809563aa70d14d4ed26294d248e871}{org.\+newdawn.\+slick.\+state.\+State\+Based\+Game}}, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1gui_1_1_mouse_over_area_a5d0f752e776cba0ca2a7a651236d6853}{org.\+newdawn.\+slick.\+gui.\+Mouse\+Over\+Area}}, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1command_1_1_input_provider_1_1_input_listener_impl_a7a660580dd4fbf3042c07d83d88022b7}{org.\+newdawn.\+slick.\+command.\+Input\+Provider.\+Input\+Listener\+Impl}}, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_test_box_aa9cf4accae5a92d392913ea607398032}{org.\+newdawn.\+slick.\+tests.\+Test\+Box}}, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_nav_mesh_test_ab74b2ac83a83fa278dbfc76a9563b921}{org.\+newdawn.\+slick.\+tests.\+Nav\+Mesh\+Test}}, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_input_test_a171626d9985a4dac34a09ad73ec99a1e}{org.\+newdawn.\+slick.\+tests.\+Input\+Test}}, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1_basic_game_state_ae51588d90bde4c509f2c6fccfe212994}{org.\+newdawn.\+slick.\+state.\+Basic\+Game\+State}}, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1_input_adapter_a8c466a6d0e2479d535aa5f435fcc684d}{org.\+newdawn.\+slick.\+util.\+Input\+Adapter}}, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_basic_game_af00b33ec970972ecabe458cbc6d66e8a}{org.\+newdawn.\+slick.\+Basic\+Game}}, and \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_pedigree_test_ae226b491b433eaac6408b764b7e0c9a5}{org.\+newdawn.\+slick.\+tests.\+Pedigree\+Test}}.
+
+\mbox{\Hypertarget{interfaceorg_1_1newdawn_1_1slick_1_1_mouse_listener_a8d1606869f610664f9299565067d5571}\label{interfaceorg_1_1newdawn_1_1slick_1_1_mouse_listener_a8d1606869f610664f9299565067d5571}} 
+\index{org\+::newdawn\+::slick\+::\+Mouse\+Listener@{org\+::newdawn\+::slick\+::\+Mouse\+Listener}!mouse\+Released@{mouse\+Released}}
+\index{mouse\+Released@{mouse\+Released}!org\+::newdawn\+::slick\+::\+Mouse\+Listener@{org\+::newdawn\+::slick\+::\+Mouse\+Listener}}
+\subsubsection{\texorpdfstring{mouse\+Released()}{mouseReleased()}}
+{\footnotesize\ttfamily abstract void org.\+newdawn.\+slick.\+Mouse\+Listener.\+mouse\+Released (\begin{DoxyParamCaption}\item[{int}]{button,  }\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}}
+
+Notification that a mouse button was released
+
+
+\begin{DoxyParams}{Parameters}
+{\em button} & The index of the button (starting at 0) \\
+\hline
+{\em x} & The x position of the mouse when the button was released \\
+\hline
+{\em y} & The y position of the mouse when the button was released \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1_state_based_game_a46e077bbb1c01efe0c24513a6e759df8}{org.\+newdawn.\+slick.\+state.\+State\+Based\+Game}}, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1gui_1_1_mouse_over_area_a7194a272562a8cf50f92b7c60e660132}{org.\+newdawn.\+slick.\+gui.\+Mouse\+Over\+Area}}, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1command_1_1_input_provider_1_1_input_listener_impl_a4d9fb1e92950944b899dc149357ed93a}{org.\+newdawn.\+slick.\+command.\+Input\+Provider.\+Input\+Listener\+Impl}}, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_test_box_acef576dfd82777b6a24641b5b3456275}{org.\+newdawn.\+slick.\+tests.\+Test\+Box}}, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1gui_1_1_abstract_component_a70585519bb21610b43de4743366732f5}{org.\+newdawn.\+slick.\+gui.\+Abstract\+Component}}, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_basic_game_ad5f3b68d103dc42613e5a35c7f820f72}{org.\+newdawn.\+slick.\+Basic\+Game}}, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_input_test_a72286bb4e1e168926a47732f055eeab0}{org.\+newdawn.\+slick.\+tests.\+Input\+Test}}, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1_basic_game_state_a80355facf11747b0ab9c25ccec5ad3d2}{org.\+newdawn.\+slick.\+state.\+Basic\+Game\+State}}, and \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1_input_adapter_a29e726b1c4d1734882fc38b4c9ecacdb}{org.\+newdawn.\+slick.\+util.\+Input\+Adapter}}.
+
+\mbox{\Hypertarget{interfaceorg_1_1newdawn_1_1slick_1_1_mouse_listener_ad7e49c969e1f0315ecdf238f715953d1}\label{interfaceorg_1_1newdawn_1_1slick_1_1_mouse_listener_ad7e49c969e1f0315ecdf238f715953d1}} 
+\index{org\+::newdawn\+::slick\+::\+Mouse\+Listener@{org\+::newdawn\+::slick\+::\+Mouse\+Listener}!mouse\+Wheel\+Moved@{mouse\+Wheel\+Moved}}
+\index{mouse\+Wheel\+Moved@{mouse\+Wheel\+Moved}!org\+::newdawn\+::slick\+::\+Mouse\+Listener@{org\+::newdawn\+::slick\+::\+Mouse\+Listener}}
+\subsubsection{\texorpdfstring{mouse\+Wheel\+Moved()}{mouseWheelMoved()}}
+{\footnotesize\ttfamily abstract void org.\+newdawn.\+slick.\+Mouse\+Listener.\+mouse\+Wheel\+Moved (\begin{DoxyParamCaption}\item[{int}]{change }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}}
+
+Notification that the mouse wheel position was updated
+
+
+\begin{DoxyParams}{Parameters}
+{\em change} & The amount of the wheel has moved \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1_state_based_game_a58843de40efec58100335c27499d1bd2}{org.\+newdawn.\+slick.\+state.\+State\+Based\+Game}}, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_geom_util_test_a6bd1586a0c904f38e392b8d9b878c5f5}{org.\+newdawn.\+slick.\+tests.\+Geom\+Util\+Test}}, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_test_box_a60b5186b990f70fcd47d459a75e80eb5}{org.\+newdawn.\+slick.\+tests.\+Test\+Box}}, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_basic_game_a28f0cdd4678843d738312a0fa49d5cc3}{org.\+newdawn.\+slick.\+Basic\+Game}}, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_input_test_af9fe762d2e11ec43fd4676e7678649bd}{org.\+newdawn.\+slick.\+tests.\+Input\+Test}}, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1state_1_1_basic_game_state_ab4d1fd4e3f8f09700b62bb37fd29006a}{org.\+newdawn.\+slick.\+state.\+Basic\+Game\+State}}, and \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1_input_adapter_aecf65d222bf9de39735ce38ae2f97ad3}{org.\+newdawn.\+slick.\+util.\+Input\+Adapter}}.
+

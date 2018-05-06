@@ -1,0 +1,106 @@
+\hypertarget{classgui_1_1_g_u_i_font}{}\section{gui.\+G\+U\+I\+Font Class Reference}
+\label{classgui_1_1_g_u_i_font}\index{gui.\+G\+U\+I\+Font@{gui.\+G\+U\+I\+Font}}
+Inheritance diagram for gui.\+G\+U\+I\+Font\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classgui_1_1_g_u_i_font}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classgui_1_1_g_u_i_font_a5d39053888fa6b4733bc8b8c79a569c9}{G\+U\+I\+Font}} (int size)  throws Slick\+Exception
+\item 
+\mbox{\hyperlink{classgui_1_1_g_u_i_font_afd76649be6fa65d97f57aa6893a39cfa}{G\+U\+I\+Font}} (String file, int size)  throws Slick\+Exception
+\item 
+void \mbox{\hyperlink{classgui_1_1_g_u_i_font_ae1fccb6783e7c0f11fdcedd36362585d}{init\+Font}} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_color}{Color}} color)
+\item 
+void \mbox{\hyperlink{classgui_1_1_g_u_i_font_a9574a15bcf70de6646aa6f5c51ea2d5a}{init\+Font}} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_unicode_font}{Unicode\+Font}} \mbox{\hyperlink{classgui_1_1_g_u_i_font_a42eef190580119d94deeee2a9fa2a927}{font}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classgui_1_1_g_u_i_font_a5d39053888fa6b4733bc8b8c79a569c9}\label{classgui_1_1_g_u_i_font_a5d39053888fa6b4733bc8b8c79a569c9}} 
+\index{gui\+::\+G\+U\+I\+Font@{gui\+::\+G\+U\+I\+Font}!G\+U\+I\+Font@{G\+U\+I\+Font}}
+\index{G\+U\+I\+Font@{G\+U\+I\+Font}!gui\+::\+G\+U\+I\+Font@{gui\+::\+G\+U\+I\+Font}}
+\subsubsection{\texorpdfstring{G\+U\+I\+Font()}{GUIFont()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily gui.\+G\+U\+I\+Font.\+G\+U\+I\+Font (\begin{DoxyParamCaption}\item[{int}]{size }\end{DoxyParamCaption}) throws \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_slick_exception}{Slick\+Exception}}\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+17                                                   \{
+18         super(\textcolor{stringliteral}{"res\(\backslash\)\(\backslash\)font.ttf"},size, \textcolor{keyword}{false}, \textcolor{keyword}{false});
+19     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classgui_1_1_g_u_i_font_afd76649be6fa65d97f57aa6893a39cfa}\label{classgui_1_1_g_u_i_font_afd76649be6fa65d97f57aa6893a39cfa}} 
+\index{gui\+::\+G\+U\+I\+Font@{gui\+::\+G\+U\+I\+Font}!G\+U\+I\+Font@{G\+U\+I\+Font}}
+\index{G\+U\+I\+Font@{G\+U\+I\+Font}!gui\+::\+G\+U\+I\+Font@{gui\+::\+G\+U\+I\+Font}}
+\subsubsection{\texorpdfstring{G\+U\+I\+Font()}{GUIFont()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily gui.\+G\+U\+I\+Font.\+G\+U\+I\+Font (\begin{DoxyParamCaption}\item[{String}]{file,  }\item[{int}]{size }\end{DoxyParamCaption}) throws \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_slick_exception}{Slick\+Exception}}\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+21                                                                \{
+22         super(file ,size, \textcolor{keyword}{false}, \textcolor{keyword}{false});
+23     \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classgui_1_1_g_u_i_font_ae1fccb6783e7c0f11fdcedd36362585d}\label{classgui_1_1_g_u_i_font_ae1fccb6783e7c0f11fdcedd36362585d}} 
+\index{gui\+::\+G\+U\+I\+Font@{gui\+::\+G\+U\+I\+Font}!init\+Font@{init\+Font}}
+\index{init\+Font@{init\+Font}!gui\+::\+G\+U\+I\+Font@{gui\+::\+G\+U\+I\+Font}}
+\subsubsection{\texorpdfstring{init\+Font()}{initFont()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void gui.\+G\+U\+I\+Font.\+init\+Font (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_color}{Color}}}]{color }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+25                                      \{
+26         \textcolor{comment}{//Permitir escribir letras ASCII}
+27         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_unicode_font_aff50fdcbd957c6141d24dd877105110c}{addAsciiGlyphs}}();
+28         \textcolor{comment}{//Permitir escribir letras españolas}
+29         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_unicode_font_a54603f9fb72e1339e669be73d08a3963}{addGlyphs}}(\textcolor{stringliteral}{"áéíóúñ"});
+30         
+31         ColorEffect fontColor=\textcolor{keyword}{new} ColorEffect(color);
+32         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_unicode_font_a939775feafa7099e8631da5ef44ee28c}{getEffects}}().add(fontColor);
+33         \textcolor{keywordflow}{try} \{
+34             \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_unicode_font_abf14d8ad33f80b66e14990417bd04088}{loadGlyphs}}();
+35         \} \textcolor{keywordflow}{catch} (SlickException ex) \{
+36             Logger.getLogger(\mbox{\hyperlink{classgui_1_1_g_u_i_font_a5d39053888fa6b4733bc8b8c79a569c9}{GUIFont}}.class.getName()).log(Level.SEVERE, null, ex);
+37         \}
+38     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classgui_1_1_g_u_i_font_a9574a15bcf70de6646aa6f5c51ea2d5a}\label{classgui_1_1_g_u_i_font_a9574a15bcf70de6646aa6f5c51ea2d5a}} 
+\index{gui\+::\+G\+U\+I\+Font@{gui\+::\+G\+U\+I\+Font}!init\+Font@{init\+Font}}
+\index{init\+Font@{init\+Font}!gui\+::\+G\+U\+I\+Font@{gui\+::\+G\+U\+I\+Font}}
+\subsubsection{\texorpdfstring{init\+Font()}{initFont()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void gui.\+G\+U\+I\+Font.\+init\+Font (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+39                           \{
+40         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_unicode_font_aff50fdcbd957c6141d24dd877105110c}{addAsciiGlyphs}}();
+41         ColorEffect fontColor=\textcolor{keyword}{new} ColorEffect(Color.BLACK);
+42         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_unicode_font_a939775feafa7099e8631da5ef44ee28c}{getEffects}}().add(fontColor);
+43         \textcolor{keywordflow}{try} \{
+44             \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_unicode_font_abf14d8ad33f80b66e14990417bd04088}{loadGlyphs}}();
+45         \} \textcolor{keywordflow}{catch} (SlickException ex) \{
+46             Logger.getLogger(\mbox{\hyperlink{classgui_1_1_g_u_i_font_a5d39053888fa6b4733bc8b8c79a569c9}{GUIFont}}.class.getName()).log(Level.SEVERE, null, ex);
+47         \}
+48         
+49     \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classgui_1_1_g_u_i_font_a42eef190580119d94deeee2a9fa2a927}\label{classgui_1_1_g_u_i_font_a42eef190580119d94deeee2a9fa2a927}} 
+\index{gui\+::\+G\+U\+I\+Font@{gui\+::\+G\+U\+I\+Font}!font@{font}}
+\index{font@{font}!gui\+::\+G\+U\+I\+Font@{gui\+::\+G\+U\+I\+Font}}
+\subsubsection{\texorpdfstring{font}{font}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_unicode_font}{Unicode\+Font}} gui.\+G\+U\+I\+Font.\+font\hspace{0.3cm}{\ttfamily [private]}}
+

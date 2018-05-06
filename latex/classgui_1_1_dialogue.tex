@@ -1,0 +1,263 @@
+\hypertarget{classgui_1_1_dialogue}{}\section{gui.\+Dialogue Class Reference}
+\label{classgui_1_1_dialogue}\index{gui.\+Dialogue@{gui.\+Dialogue}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classgui_1_1_dialogue_aaa643e4f8b14c6734f4d39d01049e850}{clear\+Dialogue\+Lines}} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static Array\+List$<$ String $>$ \mbox{\hyperlink{classgui_1_1_dialogue_a6460a4797c6ca33824d8e548489bf722}{to\+Lines}} (String all, final int regex)
+\item 
+static boolean \mbox{\hyperlink{classgui_1_1_dialogue_a05d9e1fa1c276d33a40b5321d2e6d594}{load\+Dialogues}} (String filename, int dialog)
+\item 
+static boolean \mbox{\hyperlink{classgui_1_1_dialogue_a9ac45a6b6c4dd6e20f3ea3ad0af2b4b9}{is\+Dialogue\+Text\+Set}} ()
+\item 
+static String \mbox{\hyperlink{classgui_1_1_dialogue_a38d0eafda7f6ef2ac00de87acd23ab8e}{get\+Speaker}} (int n)
+\item 
+static String \mbox{\hyperlink{classgui_1_1_dialogue_acfaf19a365093cef7abd63b2bb4e6f4f}{get\+Line}} (int n)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static final int \mbox{\hyperlink{classgui_1_1_dialogue_a93e1652100d34187a3c0bbf5ac3b4dca}{M\+A\+X\+\_\+\+S\+T\+R\+I\+N\+G\+\_\+\+L\+E\+N\+G\+TH}} = 30
+\item 
+static final int \mbox{\hyperlink{classgui_1_1_dialogue_a4cc16d7f84aecd1afefd997c6bcd25e0}{D\+I\+A\+L\+O\+G\+U\+E\+\_\+\+S\+P\+E\+E\+CH}} = 0x40
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classgui_1_1_dialogue_afcba0958e7749ae95706d5f1d81800cd}{Dialogue}} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static Array\+List$<$ String $>$ \mbox{\hyperlink{classgui_1_1_dialogue_a83efa9d7d08512fd59390c8ecaade1f7}{lines}} = new Array\+List$<$String$>$()
+\item 
+static Array\+List$<$ String $>$ \mbox{\hyperlink{classgui_1_1_dialogue_a0c75cc6f6e28bb1c6807d78a11adf807}{speakers}} = new Array\+List$<$String$>$()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyAuthor}{Author}
+Bruce Wayne 
+\end{DoxyAuthor}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classgui_1_1_dialogue_afcba0958e7749ae95706d5f1d81800cd}\label{classgui_1_1_dialogue_afcba0958e7749ae95706d5f1d81800cd}} 
+\index{gui\+::\+Dialogue@{gui\+::\+Dialogue}!Dialogue@{Dialogue}}
+\index{Dialogue@{Dialogue}!gui\+::\+Dialogue@{gui\+::\+Dialogue}}
+\subsubsection{\texorpdfstring{Dialogue()}{Dialogue()}}
+{\footnotesize\ttfamily gui.\+Dialogue.\+Dialogue (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+\begin{DoxyCode}
+23                        \{
+24         \mbox{\hyperlink{classgui_1_1_dialogue_a83efa9d7d08512fd59390c8ecaade1f7}{lines}} = \textcolor{keyword}{new} ArrayList<String>();
+25         \mbox{\hyperlink{classgui_1_1_dialogue_a0c75cc6f6e28bb1c6807d78a11adf807}{speakers}} = \textcolor{keyword}{new} ArrayList<String>();
+26     \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classgui_1_1_dialogue_aaa643e4f8b14c6734f4d39d01049e850}\label{classgui_1_1_dialogue_aaa643e4f8b14c6734f4d39d01049e850}} 
+\index{gui\+::\+Dialogue@{gui\+::\+Dialogue}!clear\+Dialogue\+Lines@{clear\+Dialogue\+Lines}}
+\index{clear\+Dialogue\+Lines@{clear\+Dialogue\+Lines}!gui\+::\+Dialogue@{gui\+::\+Dialogue}}
+\subsubsection{\texorpdfstring{clear\+Dialogue\+Lines()}{clearDialogueLines()}}
+{\footnotesize\ttfamily void gui.\+Dialogue.\+clear\+Dialogue\+Lines (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+139                                      \{
+140         \textcolor{keywordflow}{if} (!\mbox{\hyperlink{classgui_1_1_dialogue_afcba0958e7749ae95706d5f1d81800cd}{Dialogue}}.lines.isEmpty() && !\mbox{\hyperlink{classgui_1_1_dialogue_afcba0958e7749ae95706d5f1d81800cd}{Dialogue}}.speakers.isEmpty()) \{
+141             \mbox{\hyperlink{classgui_1_1_dialogue_afcba0958e7749ae95706d5f1d81800cd}{Dialogue}}.lines.clear();
+142             \mbox{\hyperlink{classgui_1_1_dialogue_afcba0958e7749ae95706d5f1d81800cd}{Dialogue}}.speakers.clear();
+143         \}
+144     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classgui_1_1_dialogue_acfaf19a365093cef7abd63b2bb4e6f4f}\label{classgui_1_1_dialogue_acfaf19a365093cef7abd63b2bb4e6f4f}} 
+\index{gui\+::\+Dialogue@{gui\+::\+Dialogue}!get\+Line@{get\+Line}}
+\index{get\+Line@{get\+Line}!gui\+::\+Dialogue@{gui\+::\+Dialogue}}
+\subsubsection{\texorpdfstring{get\+Line()}{getLine()}}
+{\footnotesize\ttfamily static String gui.\+Dialogue.\+get\+Line (\begin{DoxyParamCaption}\item[{int}]{n }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+\begin{DoxyCode}
+131                                         \{
+132         \textcolor{keywordflow}{if} (n >= 0 && n < \mbox{\hyperlink{classgui_1_1_dialogue_a83efa9d7d08512fd59390c8ecaade1f7}{lines}}.size()) \{
+133             \textcolor{keywordflow}{return} \mbox{\hyperlink{classgui_1_1_dialogue_a83efa9d7d08512fd59390c8ecaade1f7}{lines}}.get(n);
+134         \}
+135         \textcolor{keywordflow}{return} null;
+136     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classgui_1_1_dialogue_a38d0eafda7f6ef2ac00de87acd23ab8e}\label{classgui_1_1_dialogue_a38d0eafda7f6ef2ac00de87acd23ab8e}} 
+\index{gui\+::\+Dialogue@{gui\+::\+Dialogue}!get\+Speaker@{get\+Speaker}}
+\index{get\+Speaker@{get\+Speaker}!gui\+::\+Dialogue@{gui\+::\+Dialogue}}
+\subsubsection{\texorpdfstring{get\+Speaker()}{getSpeaker()}}
+{\footnotesize\ttfamily static String gui.\+Dialogue.\+get\+Speaker (\begin{DoxyParamCaption}\item[{int}]{n }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+\begin{DoxyCode}
+124                                            \{
+125         \textcolor{keywordflow}{if} (n >= 0 && n < \mbox{\hyperlink{classgui_1_1_dialogue_a0c75cc6f6e28bb1c6807d78a11adf807}{speakers}}.size()) \{
+126             \textcolor{keywordflow}{return} \mbox{\hyperlink{classgui_1_1_dialogue_a0c75cc6f6e28bb1c6807d78a11adf807}{speakers}}.get(n);
+127         \}
+128         \textcolor{keywordflow}{return} null;
+129     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classgui_1_1_dialogue_a9ac45a6b6c4dd6e20f3ea3ad0af2b4b9}\label{classgui_1_1_dialogue_a9ac45a6b6c4dd6e20f3ea3ad0af2b4b9}} 
+\index{gui\+::\+Dialogue@{gui\+::\+Dialogue}!is\+Dialogue\+Text\+Set@{is\+Dialogue\+Text\+Set}}
+\index{is\+Dialogue\+Text\+Set@{is\+Dialogue\+Text\+Set}!gui\+::\+Dialogue@{gui\+::\+Dialogue}}
+\subsubsection{\texorpdfstring{is\+Dialogue\+Text\+Set()}{isDialogueTextSet()}}
+{\footnotesize\ttfamily static boolean gui.\+Dialogue.\+is\+Dialogue\+Text\+Set (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+\begin{DoxyCode}
+120                                               \{
+121         \textcolor{keywordflow}{return} !\mbox{\hyperlink{classgui_1_1_dialogue_afcba0958e7749ae95706d5f1d81800cd}{Dialogue}}.lines.isEmpty() && !\mbox{\hyperlink{classgui_1_1_dialogue_afcba0958e7749ae95706d5f1d81800cd}{Dialogue}}.speakers.isEmpty();
+122     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classgui_1_1_dialogue_a05d9e1fa1c276d33a40b5321d2e6d594}\label{classgui_1_1_dialogue_a05d9e1fa1c276d33a40b5321d2e6d594}} 
+\index{gui\+::\+Dialogue@{gui\+::\+Dialogue}!load\+Dialogues@{load\+Dialogues}}
+\index{load\+Dialogues@{load\+Dialogues}!gui\+::\+Dialogue@{gui\+::\+Dialogue}}
+\subsubsection{\texorpdfstring{load\+Dialogues()}{loadDialogues()}}
+{\footnotesize\ttfamily static boolean gui.\+Dialogue.\+load\+Dialogues (\begin{DoxyParamCaption}\item[{String}]{filename,  }\item[{int}]{dialog }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Transform a plain text file in an Array\+List of text lines.
+
+
+\begin{DoxyParams}{Parameters}
+{\em filename} & File which have the dialogue. \\
+\hline
+{\em dialog} & Position (1-\/n) of the dialog to read \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{classgui_1_1_dialogue}{Dialogue}} broken in lines. 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+75                                                                      \{
+76         \mbox{\hyperlink{classgui_1_1_dialogue_a83efa9d7d08512fd59390c8ecaade1f7}{lines}}.clear();
+77         \mbox{\hyperlink{classgui_1_1_dialogue_a0c75cc6f6e28bb1c6807d78a11adf807}{speakers}}.clear();
+78         ArrayList<String> linesAux;
+79         \textcolor{keywordflow}{try} \{
+80             BufferedReader reader = \textcolor{keyword}{new} BufferedReader(\textcolor{keyword}{new} InputStreamReader(\textcolor{keyword}{new} FileInputStream(filename),
+       \textcolor{stringliteral}{"ISO-8859-1"}));
+81             String line;
+82             String speaker[] = null;
+83             String[] tokens;
+84             \textcolor{keywordtype}{int} dia = 0;
+85             \textcolor{keywordflow}{while} (dialog > dia) \{
+86                 \textcolor{keywordflow}{if} ((line = reader.readLine()) != null) \{
+87                     \textcolor{keywordflow}{if} (line.startsWith(\textcolor{stringliteral}{"!"})) \{
+88                         dia++;
+89                     \}
+90                 \}
+91             \}
+92             \textcolor{keywordtype}{boolean} ended = \textcolor{keyword}{false};
+93             \textcolor{keywordflow}{while} ((line = reader.readLine()) != null && !ended) \{
+94                 \textcolor{keywordflow}{if} (line.startsWith(\textcolor{stringliteral}{"-"})) \{
+95                     \textcolor{comment}{// Indica personaje, lo guarda en la variable personaje}
+96                     speaker = line.split(\textcolor{stringliteral}{"-"});
+97                     \mbox{\hyperlink{classgui_1_1_dialogue_a0c75cc6f6e28bb1c6807d78a11adf807}{speakers}}.add(speaker[1]);
+98                     \textcolor{keywordflow}{if} (!\mbox{\hyperlink{classgui_1_1_dialogue_a83efa9d7d08512fd59390c8ecaade1f7}{lines}}.isEmpty()) \{
+99                         \mbox{\hyperlink{classgui_1_1_dialogue_a83efa9d7d08512fd59390c8ecaade1f7}{lines}}.add(\textcolor{stringliteral}{"-"});
+100                     \}
+101                 \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (line.startsWith(\textcolor{stringliteral}{"#"})) \{
+102                     \textcolor{comment}{// Comienza un dialogo y lo guarda junto con quien lo lee}
+103                     tokens = line.split(\textcolor{stringliteral}{"#"});
+104                     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 1; i < tokens.length; i++) \{
+105                         linesAux = \mbox{\hyperlink{classgui_1_1_dialogue_a6460a4797c6ca33824d8e548489bf722}{toLines}}(tokens[i], \mbox{\hyperlink{classgui_1_1_dialogue_a93e1652100d34187a3c0bbf5ac3b4dca}{MAX\_STRING\_LENGTH}});
+106                         \mbox{\hyperlink{classgui_1_1_dialogue_a83efa9d7d08512fd59390c8ecaade1f7}{lines}}.addAll(linesAux);
+107                     \}
+108                 \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (line.startsWith(\textcolor{stringliteral}{"!"})) \{
+109                     ended = \textcolor{keyword}{true};
+110                 \}
+111             \}
+112         \} \textcolor{keywordflow}{catch} (Exception e) \{
+113             System.out.println(e.getMessage());
+114             \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+115         \}
+116         \textcolor{keywordflow}{return} \textcolor{keyword}{true};
+117     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classgui_1_1_dialogue_a6460a4797c6ca33824d8e548489bf722}\label{classgui_1_1_dialogue_a6460a4797c6ca33824d8e548489bf722}} 
+\index{gui\+::\+Dialogue@{gui\+::\+Dialogue}!to\+Lines@{to\+Lines}}
+\index{to\+Lines@{to\+Lines}!gui\+::\+Dialogue@{gui\+::\+Dialogue}}
+\subsubsection{\texorpdfstring{to\+Lines()}{toLines()}}
+{\footnotesize\ttfamily static Array\+List$<$String$>$ gui.\+Dialogue.\+to\+Lines (\begin{DoxyParamCaption}\item[{String}]{all,  }\item[{final int}]{regex }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Inits the Array\+Lists (speakers and lines) with a formated dialogue.
+
+
+\begin{DoxyParams}{Parameters}
+{\em all} & \mbox{\hyperlink{classgui_1_1_dialogue}{Dialogue}} writed in one line. \\
+\hline
+{\em regex} & Number of characters for each line. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Array\+List with a line of dialogue in which position. 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+37                                                                          \{
+38         ArrayList<String> \mbox{\hyperlink{classgui_1_1_dialogue_a83efa9d7d08512fd59390c8ecaade1f7}{lines}} = \textcolor{keyword}{new} ArrayList<>();
+39         String[] words = all.split(\textcolor{stringliteral}{"\(\backslash\)\(\backslash\)s"});
+40         String line = \textcolor{stringliteral}{""};
+41         \textcolor{keywordtype}{int} length = 0;
+42         \textcolor{keywordflow}{for} (String w : words) \{
+43             \textcolor{keywordflow}{if} (length + w.length() + 1 > regex) \{
+44                 \textcolor{keywordflow}{if} (w.length() >= regex) \{
+45                     line += w;
+46                     \mbox{\hyperlink{classgui_1_1_dialogue_a83efa9d7d08512fd59390c8ecaade1f7}{lines}}.add(line);
+47                     line = \textcolor{stringliteral}{""};
+48                     \textcolor{keywordflow}{continue};
+49                 \}
+50                 \mbox{\hyperlink{classgui_1_1_dialogue_a83efa9d7d08512fd59390c8ecaade1f7}{lines}}.add(line);
+51                 line = \textcolor{stringliteral}{""};
+52                 length = 0;
+53             \}
+54             \textcolor{keywordflow}{if} (length > 0) \{
+55                 line += \textcolor{stringliteral}{" "};
+56                 length += 1;
+57             \}
+58             line += w;
+59             length += w.length();
+60         \}
+61         \textcolor{keywordflow}{if} (line.length() > 0) \{
+62             \mbox{\hyperlink{classgui_1_1_dialogue_a83efa9d7d08512fd59390c8ecaade1f7}{lines}}.add(line);
+63         \}
+64         \textcolor{keywordflow}{return} \mbox{\hyperlink{classgui_1_1_dialogue_a83efa9d7d08512fd59390c8ecaade1f7}{lines}};
+65     \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classgui_1_1_dialogue_a4cc16d7f84aecd1afefd997c6bcd25e0}\label{classgui_1_1_dialogue_a4cc16d7f84aecd1afefd997c6bcd25e0}} 
+\index{gui\+::\+Dialogue@{gui\+::\+Dialogue}!D\+I\+A\+L\+O\+G\+U\+E\+\_\+\+S\+P\+E\+E\+CH@{D\+I\+A\+L\+O\+G\+U\+E\+\_\+\+S\+P\+E\+E\+CH}}
+\index{D\+I\+A\+L\+O\+G\+U\+E\+\_\+\+S\+P\+E\+E\+CH@{D\+I\+A\+L\+O\+G\+U\+E\+\_\+\+S\+P\+E\+E\+CH}!gui\+::\+Dialogue@{gui\+::\+Dialogue}}
+\subsubsection{\texorpdfstring{D\+I\+A\+L\+O\+G\+U\+E\+\_\+\+S\+P\+E\+E\+CH}{DIALOGUE\_SPEECH}}
+{\footnotesize\ttfamily final int gui.\+Dialogue.\+D\+I\+A\+L\+O\+G\+U\+E\+\_\+\+S\+P\+E\+E\+CH = 0x40\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classgui_1_1_dialogue_a83efa9d7d08512fd59390c8ecaade1f7}\label{classgui_1_1_dialogue_a83efa9d7d08512fd59390c8ecaade1f7}} 
+\index{gui\+::\+Dialogue@{gui\+::\+Dialogue}!lines@{lines}}
+\index{lines@{lines}!gui\+::\+Dialogue@{gui\+::\+Dialogue}}
+\subsubsection{\texorpdfstring{lines}{lines}}
+{\footnotesize\ttfamily Array\+List$<$String$>$ gui.\+Dialogue.\+lines = new Array\+List$<$String$>$()\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{classgui_1_1_dialogue_a93e1652100d34187a3c0bbf5ac3b4dca}\label{classgui_1_1_dialogue_a93e1652100d34187a3c0bbf5ac3b4dca}} 
+\index{gui\+::\+Dialogue@{gui\+::\+Dialogue}!M\+A\+X\+\_\+\+S\+T\+R\+I\+N\+G\+\_\+\+L\+E\+N\+G\+TH@{M\+A\+X\+\_\+\+S\+T\+R\+I\+N\+G\+\_\+\+L\+E\+N\+G\+TH}}
+\index{M\+A\+X\+\_\+\+S\+T\+R\+I\+N\+G\+\_\+\+L\+E\+N\+G\+TH@{M\+A\+X\+\_\+\+S\+T\+R\+I\+N\+G\+\_\+\+L\+E\+N\+G\+TH}!gui\+::\+Dialogue@{gui\+::\+Dialogue}}
+\subsubsection{\texorpdfstring{M\+A\+X\+\_\+\+S\+T\+R\+I\+N\+G\+\_\+\+L\+E\+N\+G\+TH}{MAX\_STRING\_LENGTH}}
+{\footnotesize\ttfamily final int gui.\+Dialogue.\+M\+A\+X\+\_\+\+S\+T\+R\+I\+N\+G\+\_\+\+L\+E\+N\+G\+TH = 30\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classgui_1_1_dialogue_a0c75cc6f6e28bb1c6807d78a11adf807}\label{classgui_1_1_dialogue_a0c75cc6f6e28bb1c6807d78a11adf807}} 
+\index{gui\+::\+Dialogue@{gui\+::\+Dialogue}!speakers@{speakers}}
+\index{speakers@{speakers}!gui\+::\+Dialogue@{gui\+::\+Dialogue}}
+\subsubsection{\texorpdfstring{speakers}{speakers}}
+{\footnotesize\ttfamily Array\+List$<$String$>$ gui.\+Dialogue.\+speakers = new Array\+List$<$String$>$()\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+

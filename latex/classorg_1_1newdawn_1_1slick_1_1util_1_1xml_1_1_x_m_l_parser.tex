@@ -1,0 +1,117 @@
+\hypertarget{classorg_1_1newdawn_1_1slick_1_1util_1_1xml_1_1_x_m_l_parser}{}\section{org.\+newdawn.\+slick.\+util.\+xml.\+X\+M\+L\+Parser Class Reference}
+\label{classorg_1_1newdawn_1_1slick_1_1util_1_1xml_1_1_x_m_l_parser}\index{org.\+newdawn.\+slick.\+util.\+xml.\+X\+M\+L\+Parser@{org.\+newdawn.\+slick.\+util.\+xml.\+X\+M\+L\+Parser}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1xml_1_1_x_m_l_parser_a560517a420b742fbdcef4565eb618f5c}{X\+M\+L\+Parser}} ()
+\item 
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1xml_1_1_x_m_l_element}{X\+M\+L\+Element}} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1xml_1_1_x_m_l_parser_a24c99740f08e3fe6d427aa9b478a01ba}{parse}} (String ref)  throws Slick\+Exception 
+\item 
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1xml_1_1_x_m_l_element}{X\+M\+L\+Element}} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1xml_1_1_x_m_l_parser_ad6cf0561a3b5afa18f67a670d8f335ae}{parse}} (String name, Input\+Stream in)  throws Slick\+X\+M\+L\+Exception 
+\end{DoxyCompactItemize}
+\subsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static Document\+Builder\+Factory \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1xml_1_1_x_m_l_parser_add3e50cbc880252b74c5e60d886d32ac}{factory}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A simple utility wrapper around the Java D\+OM implementation to hopefully make X\+ML parsing that bit easier without requiring Y\+AL.
+
+\begin{DoxyAuthor}{Author}
+kevin 
+\end{DoxyAuthor}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1util_1_1xml_1_1_x_m_l_parser_a560517a420b742fbdcef4565eb618f5c}\label{classorg_1_1newdawn_1_1slick_1_1util_1_1xml_1_1_x_m_l_parser_a560517a420b742fbdcef4565eb618f5c}} 
+\index{org\+::newdawn\+::slick\+::util\+::xml\+::\+X\+M\+L\+Parser@{org\+::newdawn\+::slick\+::util\+::xml\+::\+X\+M\+L\+Parser}!X\+M\+L\+Parser@{X\+M\+L\+Parser}}
+\index{X\+M\+L\+Parser@{X\+M\+L\+Parser}!org\+::newdawn\+::slick\+::util\+::xml\+::\+X\+M\+L\+Parser@{org\+::newdawn\+::slick\+::util\+::xml\+::\+X\+M\+L\+Parser}}
+\subsubsection{\texorpdfstring{X\+M\+L\+Parser()}{XMLParser()}}
+{\footnotesize\ttfamily org.\+newdawn.\+slick.\+util.\+xml.\+X\+M\+L\+Parser.\+X\+M\+L\+Parser (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Create a new parser 
+\begin{DoxyCode}
+25                        \{
+26     \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1util_1_1xml_1_1_x_m_l_parser_a24c99740f08e3fe6d427aa9b478a01ba}\label{classorg_1_1newdawn_1_1slick_1_1util_1_1xml_1_1_x_m_l_parser_a24c99740f08e3fe6d427aa9b478a01ba}} 
+\index{org\+::newdawn\+::slick\+::util\+::xml\+::\+X\+M\+L\+Parser@{org\+::newdawn\+::slick\+::util\+::xml\+::\+X\+M\+L\+Parser}!parse@{parse}}
+\index{parse@{parse}!org\+::newdawn\+::slick\+::util\+::xml\+::\+X\+M\+L\+Parser@{org\+::newdawn\+::slick\+::util\+::xml\+::\+X\+M\+L\+Parser}}
+\subsubsection{\texorpdfstring{parse()}{parse()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1xml_1_1_x_m_l_element}{X\+M\+L\+Element}} org.\+newdawn.\+slick.\+util.\+xml.\+X\+M\+L\+Parser.\+parse (\begin{DoxyParamCaption}\item[{String}]{ref }\end{DoxyParamCaption}) throws \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_slick_exception}{Slick\+Exception}}\hspace{0.3cm}{\ttfamily [inline]}}
+
+Parse the X\+ML document located by the slick resource loader using the reference given.
+
+
+\begin{DoxyParams}{Parameters}
+{\em ref} & The reference to the X\+ML document \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The root element of the newly parse document 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_slick_exception}{Slick\+Exception}}} & Indicates a failure to parse the X\+ML, most likely the X\+ML is malformed in some way. \\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyCode}
+37                                                               \{
+38         \textcolor{keywordflow}{return} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1xml_1_1_x_m_l_parser_a24c99740f08e3fe6d427aa9b478a01ba}{parse}}(ref, ResourceLoader.getResourceAsStream(ref));
+39     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1util_1_1xml_1_1_x_m_l_parser_ad6cf0561a3b5afa18f67a670d8f335ae}\label{classorg_1_1newdawn_1_1slick_1_1util_1_1xml_1_1_x_m_l_parser_ad6cf0561a3b5afa18f67a670d8f335ae}} 
+\index{org\+::newdawn\+::slick\+::util\+::xml\+::\+X\+M\+L\+Parser@{org\+::newdawn\+::slick\+::util\+::xml\+::\+X\+M\+L\+Parser}!parse@{parse}}
+\index{parse@{parse}!org\+::newdawn\+::slick\+::util\+::xml\+::\+X\+M\+L\+Parser@{org\+::newdawn\+::slick\+::util\+::xml\+::\+X\+M\+L\+Parser}}
+\subsubsection{\texorpdfstring{parse()}{parse()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1xml_1_1_x_m_l_element}{X\+M\+L\+Element}} org.\+newdawn.\+slick.\+util.\+xml.\+X\+M\+L\+Parser.\+parse (\begin{DoxyParamCaption}\item[{String}]{name,  }\item[{Input\+Stream}]{in }\end{DoxyParamCaption}) throws \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1xml_1_1_slick_x_m_l_exception}{Slick\+X\+M\+L\+Exception}}\hspace{0.3cm}{\ttfamily [inline]}}
+
+Parse the X\+ML document that can be read from the given input stream
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The name of the document \\
+\hline
+{\em in} & The input stream from which the document can be read \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The root element of the newly parse document 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1xml_1_1_slick_x_m_l_exception}{Slick\+X\+M\+L\+Exception}}} & Indicates a failure to parse the X\+ML, most likely the X\+ML is malformed in some way. \\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyCode}
+50                                                                                   \{
+51         \textcolor{keywordflow}{try} \{
+52             \textcolor{keywordflow}{if} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1xml_1_1_x_m_l_parser_add3e50cbc880252b74c5e60d886d32ac}{factory}} == null) \{
+53                 \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1xml_1_1_x_m_l_parser_add3e50cbc880252b74c5e60d886d32ac}{factory}} = DocumentBuilderFactory.newInstance();
+54             \}
+55             DocumentBuilder builder = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1xml_1_1_x_m_l_parser_add3e50cbc880252b74c5e60d886d32ac}{factory}}.newDocumentBuilder();
+56             Document doc = builder.parse(in);
+57             
+58             \textcolor{keywordflow}{return} \textcolor{keyword}{new} XMLElement(doc.getDocumentElement());
+59         \} \textcolor{keywordflow}{catch} (Exception e) \{
+60             \textcolor{keywordflow}{throw} \textcolor{keyword}{new} SlickXMLException(\textcolor{stringliteral}{"Failed to parse document: "}+name, e);
+61         \}
+62     \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1util_1_1xml_1_1_x_m_l_parser_add3e50cbc880252b74c5e60d886d32ac}\label{classorg_1_1newdawn_1_1slick_1_1util_1_1xml_1_1_x_m_l_parser_add3e50cbc880252b74c5e60d886d32ac}} 
+\index{org\+::newdawn\+::slick\+::util\+::xml\+::\+X\+M\+L\+Parser@{org\+::newdawn\+::slick\+::util\+::xml\+::\+X\+M\+L\+Parser}!factory@{factory}}
+\index{factory@{factory}!org\+::newdawn\+::slick\+::util\+::xml\+::\+X\+M\+L\+Parser@{org\+::newdawn\+::slick\+::util\+::xml\+::\+X\+M\+L\+Parser}}
+\subsubsection{\texorpdfstring{factory}{factory}}
+{\footnotesize\ttfamily Document\+Builder\+Factory org.\+newdawn.\+slick.\+util.\+xml.\+X\+M\+L\+Parser.\+factory\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+The factory used to to create document builders that parse X\+ML into the D\+OM 

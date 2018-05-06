@@ -1,0 +1,81 @@
+\hypertarget{classejemplo2_1_1_cliente}{}\section{ejemplo2.\+Cliente Class Reference}
+\label{classejemplo2_1_1_cliente}\index{ejemplo2.\+Cliente@{ejemplo2.\+Cliente}}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{classejemplo2_1_1_cliente_aefe0b8e5b3bae99a9bd00f3dedda11e2}{main}} (String args\mbox{[}$\,$\mbox{]})
+\item 
+static void \mbox{\hyperlink{classejemplo2_1_1_cliente_aefe0b8e5b3bae99a9bd00f3dedda11e2}{main}} (String args\mbox{[}$\,$\mbox{]})
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classejemplo2_1_1_cliente_aefe0b8e5b3bae99a9bd00f3dedda11e2}\label{classejemplo2_1_1_cliente_aefe0b8e5b3bae99a9bd00f3dedda11e2}} 
+\index{ejemplo2\+::\+Cliente@{ejemplo2\+::\+Cliente}!main@{main}}
+\index{main@{main}!ejemplo2\+::\+Cliente@{ejemplo2\+::\+Cliente}}
+\subsubsection{\texorpdfstring{main()}{main()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily static void ejemplo2.\+Cliente.\+main (\begin{DoxyParamCaption}\item[{String}]{args\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+\begin{DoxyCode}
+9     \{
+10         String respuesta = \textcolor{stringliteral}{""};
+11         \textcolor{keywordflow}{try}
+12         \{
+13             BufferedReader entrada = \textcolor{keyword}{new} BufferedReader(\textcolor{keyword}{new} InputStreamReader(System.in));
+14             System.out.println(\textcolor{stringliteral}{"Introduce tu nombre:"});
+15             String nombre = entrada.readLine();
+16             InterfaceSaluda obj = (InterfaceSaluda) Naming.lookup(\textcolor{stringliteral}{"//127.0.0.1/ObjetoSaluda"}); \textcolor{comment}{//Localiza
+       el objeto distribuido}
+17             respuesta = obj.saludar(nombre);                                                   \textcolor{comment}{//Llama al
+       método saludar}
+18             System.out.println(respuesta);
+19             sleep(1000); \textcolor{comment}{//Para que dé tiempo a leer la respuesta antes de que se cierre la ventana}
+20         \}
+21         \textcolor{keywordflow}{catch} (Exception e)
+22         \{
+23             System.out.println(\textcolor{stringliteral}{"Excepción : "} + e.getMessage());
+24             e.printStackTrace();
+25         \}
+26     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classejemplo2_1_1_cliente_aefe0b8e5b3bae99a9bd00f3dedda11e2}\label{classejemplo2_1_1_cliente_aefe0b8e5b3bae99a9bd00f3dedda11e2}} 
+\index{ejemplo2\+::\+Cliente@{ejemplo2\+::\+Cliente}!main@{main}}
+\index{main@{main}!ejemplo2\+::\+Cliente@{ejemplo2\+::\+Cliente}}
+\subsubsection{\texorpdfstring{main()}{main()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily static void ejemplo2.\+Cliente.\+main (\begin{DoxyParamCaption}\item[{String}]{args\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+\begin{DoxyCode}
+10     \{
+11         Socket cliente;
+12         DataInputStream entrada;
+13         DataOutputStream salida;
+14         String mensaje, respuesta;
+15         InetAddress equipo = null;
+16         byte[] dir = \{127,0,0,1\};
+17         \textcolor{keywordflow}{try} \{
+18             equipo = InetAddress.getByAddress(dir);
+19         \} \textcolor{keywordflow}{catch} (UnknownHostException ex) \{
+20             Logger.getLogger(Cliente.class.getName()).log(Level.SEVERE, null, ex);
+21         \}
+22         \textcolor{keywordflow}{try}
+23         \{
+24             cliente = \textcolor{keyword}{new} Socket(equipo.getHostAddress(),5000);   \textcolor{comment}{//Creamos el socket para conectarnos al
+       puerto 5000 del servidor}
+25             entrada = \textcolor{keyword}{new} DataInputStream(cliente.getInputStream());  \textcolor{comment}{//Creamos los canales de
+       entrada/salida}
+26             salida = \textcolor{keyword}{new} DataOutputStream(cliente.getOutputStream());
+27             mensaje=\textcolor{stringliteral}{"Hola parguelon"};
+28             salida.writeUTF(mensaje);                                 \textcolor{comment}{// Enviamos un mensaje al servidor}
+29             respuesta = entrada.readUTF();                            \textcolor{comment}{// Leemos la respuesta}
+30             System.out.println(\textcolor{stringliteral}{"Mi mensaje es: "}+mensaje);
+31             System.out.println(\textcolor{stringliteral}{"Respuesta del servidor: "}+respuesta);
+32             cliente.close();                                          \textcolor{comment}{// Cerramos la conexión}
+33         \}
+34         \textcolor{keywordflow}{catch} (IOException e)
+35         \{
+36             System.out.println(\textcolor{stringliteral}{"Error: "} + e.getMessage());
+37         \}
+38     \}
+\end{DoxyCode}

@@ -1,0 +1,374 @@
+\hypertarget{classentities_1_1_a_i_handler_basic}{}\section{entities.\+A\+I\+Handler\+Basic Class Reference}
+\label{classentities_1_1_a_i_handler_basic}\index{entities.\+A\+I\+Handler\+Basic@{entities.\+A\+I\+Handler\+Basic}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classentities_1_1_a_i_handler_basic_a5f3f185b43533fcbc1cd066ee1f7d16a}{A\+I\+Handler\+Basic}} (\mbox{\hyperlink{classentities_1_1_path_finder}{Path\+Finder}} \mbox{\hyperlink{classentities_1_1_a_i_handler_basic_a285a9398062da6b974dc7a2d8e7e630d}{path\+Finder}}, \mbox{\hyperlink{classentities_1_1_player}{Player}} \mbox{\hyperlink{classentities_1_1_a_i_handler_basic_ad7c5aba342053f29862df5f38537bf1c}{player}}, float \mbox{\hyperlink{classentities_1_1_a_i_handler_basic_acb64b3c7941a4f72fd76262280b3e399}{search\+Distance}}, float \mbox{\hyperlink{classentities_1_1_a_i_handler_basic_a3901dfebb437d4f21a074af70d00c940}{attack\+Distance}})
+\item 
+void \mbox{\hyperlink{classentities_1_1_a_i_handler_basic_ae69789cadb89030804ac4ea2d1971e21}{ai\+Handler}} (\mbox{\hyperlink{classentities_1_1_n_p_c}{N\+PC}} npc, long delta)
+\item 
+void \mbox{\hyperlink{classentities_1_1_a_i_handler_basic_a5e92ef9a2ad97490bf2cb32bf58be950}{wait}} (\mbox{\hyperlink{classentities_1_1_n_p_c}{N\+PC}} npc, long delta)
+\item 
+void \mbox{\hyperlink{classentities_1_1_a_i_handler_basic_a3bc305447e74f28a7187b6f2fd80686a}{search}} (\mbox{\hyperlink{classentities_1_1_n_p_c}{N\+PC}} npc, long delta)
+\item 
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_path}{Path}} \mbox{\hyperlink{classentities_1_1_a_i_handler_basic_a65db34fd0393bebc9a92df8f4788b8b4}{get\+Last\+Path}} ()
+\item 
+void \mbox{\hyperlink{classentities_1_1_a_i_handler_basic_a1f6e2dee1ad5ce70d198dacce17637fc}{try\+Attacking}} (\mbox{\hyperlink{classentities_1_1_n_p_c}{N\+PC}} npc, long delta)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static int \mbox{\hyperlink{classentities_1_1_a_i_handler_basic_a45d0ef8169388da1db65210670398487}{W\+A\+I\+T\+I\+NG}} = 0
+\item 
+static int \mbox{\hyperlink{classentities_1_1_a_i_handler_basic_ac538f98b8bf642899b6cfe493258f381}{S\+E\+A\+R\+C\+H\+I\+NG}} = 1
+\item 
+static int \mbox{\hyperlink{classentities_1_1_a_i_handler_basic_a94cae3c413706efe5f714c532515b0cd}{A\+T\+T\+A\+C\+K\+I\+NG}} = 2
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classentities_1_1_a_i_handler_basic_afe4e5d49bf8c83164a89b0dec990406f}{state}}
+\item 
+\mbox{\hyperlink{classentities_1_1_player}{Player}} \mbox{\hyperlink{classentities_1_1_a_i_handler_basic_ad7c5aba342053f29862df5f38537bf1c}{player}}
+\item 
+int \mbox{\hyperlink{classentities_1_1_a_i_handler_basic_a177ec0f84d2ce15ba89575b5a87cc742}{tile\+Width}}
+\item 
+int \mbox{\hyperlink{classentities_1_1_a_i_handler_basic_a9e9f42b3f5f874a95d171885e89c663c}{tile\+Height}}
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classentities_1_1_path_finder}{Path\+Finder}} \mbox{\hyperlink{classentities_1_1_a_i_handler_basic_a285a9398062da6b974dc7a2d8e7e630d}{path\+Finder}}
+\item 
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_path}{Path}} \mbox{\hyperlink{classentities_1_1_a_i_handler_basic_a602787aae6ac3b507885afeece3f7b3f}{last\+Path}}
+\item 
+Date \mbox{\hyperlink{classentities_1_1_a_i_handler_basic_ac37a209c05f1e2848e0179de643e6c45}{last\+Path\+Computed}}
+\item 
+Date \mbox{\hyperlink{classentities_1_1_a_i_handler_basic_ac5e99310b688afd1fd14a9087946cf84}{init\+Attack\+Time}}
+\item 
+boolean \mbox{\hyperlink{classentities_1_1_a_i_handler_basic_a638da72d035b8f01b2639453d50589a2}{attacking}}
+\item 
+Path.\+Step \mbox{\hyperlink{classentities_1_1_a_i_handler_basic_a33774addab53a181bb96d147186d3b2c}{first\+Step}}
+\item 
+boolean \mbox{\hyperlink{classentities_1_1_a_i_handler_basic_a2b833b13b6d0e6bf8014f077e8b07dda}{first\+Visited}}
+\item 
+float \mbox{\hyperlink{classentities_1_1_a_i_handler_basic_acb64b3c7941a4f72fd76262280b3e399}{search\+Distance}}
+\item 
+float \mbox{\hyperlink{classentities_1_1_a_i_handler_basic_a3901dfebb437d4f21a074af70d00c940}{attack\+Distance}}
+\item 
+int \mbox{\hyperlink{classentities_1_1_a_i_handler_basic_ae730320459166e3816b22b30b5d68459}{time\+To\+Attack}}
+\end{DoxyCompactItemize}
+\subsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static float \mbox{\hyperlink{classentities_1_1_a_i_handler_basic_adf8c3c47d56647bb7fa2f411dc5f7ae3}{E\+R\+R\+OR}} = 0.\+2f
+\item 
+static float \mbox{\hyperlink{classentities_1_1_a_i_handler_basic_a7f35345adb5b16156bfccceac3b59d28}{T\+I\+L\+E\+\_\+\+W\+I\+D\+T\+H\+\_\+\+C\+O\+R\+R\+E\+C\+T\+I\+ON}} = 0.\+5f
+\item 
+static float \mbox{\hyperlink{classentities_1_1_a_i_handler_basic_a70edbc0e1b2c38d9201dffee01ac0fa8}{T\+I\+L\+E\+\_\+\+H\+E\+I\+G\+H\+T\+\_\+\+C\+O\+R\+R\+E\+C\+T\+I\+ON}} = 0.\+5f
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classentities_1_1_a_i_handler_basic_a5f3f185b43533fcbc1cd066ee1f7d16a}\label{classentities_1_1_a_i_handler_basic_a5f3f185b43533fcbc1cd066ee1f7d16a}} 
+\index{entities\+::\+A\+I\+Handler\+Basic@{entities\+::\+A\+I\+Handler\+Basic}!A\+I\+Handler\+Basic@{A\+I\+Handler\+Basic}}
+\index{A\+I\+Handler\+Basic@{A\+I\+Handler\+Basic}!entities\+::\+A\+I\+Handler\+Basic@{entities\+::\+A\+I\+Handler\+Basic}}
+\subsubsection{\texorpdfstring{A\+I\+Handler\+Basic()}{AIHandlerBasic()}}
+{\footnotesize\ttfamily entities.\+A\+I\+Handler\+Basic.\+A\+I\+Handler\+Basic (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classentities_1_1_path_finder}{Path\+Finder}}}]{path\+Finder,  }\item[{\mbox{\hyperlink{classentities_1_1_player}{Player}}}]{player,  }\item[{float}]{search\+Distance,  }\item[{float}]{attack\+Distance }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+41                                                                                                            
+        \{
+42         \mbox{\hyperlink{classentities_1_1_a_i_handler_basic_afe4e5d49bf8c83164a89b0dec990406f}{state}} = \mbox{\hyperlink{classentities_1_1_a_i_handler_basic_a45d0ef8169388da1db65210670398487}{WAITING}};
+43         this.player = \mbox{\hyperlink{classentities_1_1_a_i_handler_basic_ad7c5aba342053f29862df5f38537bf1c}{player}};
+44         this.\mbox{\hyperlink{classentities_1_1_a_i_handler_basic_a177ec0f84d2ce15ba89575b5a87cc742}{tileWidth}} = \mbox{\hyperlink{classentities_1_1_a_i_handler_basic_a285a9398062da6b974dc7a2d8e7e630d}{pathFinder}}.\mbox{\hyperlink{classentities_1_1_path_finder_a35e329ef378f48050d49408140412e7f}{getTileWidth}}();
+45         this.\mbox{\hyperlink{classentities_1_1_a_i_handler_basic_a9e9f42b3f5f874a95d171885e89c663c}{tileHeight}} = \mbox{\hyperlink{classentities_1_1_a_i_handler_basic_a285a9398062da6b974dc7a2d8e7e630d}{pathFinder}}.\mbox{\hyperlink{classentities_1_1_path_finder_a3193394c83000018da44409a33f8720c}{getTileHeight}}();
+46         this.\mbox{\hyperlink{classentities_1_1_a_i_handler_basic_a285a9398062da6b974dc7a2d8e7e630d}{pathFinder}} = \mbox{\hyperlink{classentities_1_1_a_i_handler_basic_a285a9398062da6b974dc7a2d8e7e630d}{pathFinder}};
+47         \mbox{\hyperlink{classentities_1_1_a_i_handler_basic_ac37a209c05f1e2848e0179de643e6c45}{lastPathComputed}} = \textcolor{keyword}{new} Date();
+48         \mbox{\hyperlink{classentities_1_1_a_i_handler_basic_ac5e99310b688afd1fd14a9087946cf84}{initAttackTime}} = \textcolor{keyword}{new} Date();
+49         \mbox{\hyperlink{classentities_1_1_a_i_handler_basic_a638da72d035b8f01b2639453d50589a2}{attacking}} = \textcolor{keyword}{false};
+50         this.\mbox{\hyperlink{classentities_1_1_a_i_handler_basic_acb64b3c7941a4f72fd76262280b3e399}{searchDistance}} = \mbox{\hyperlink{classentities_1_1_a_i_handler_basic_acb64b3c7941a4f72fd76262280b3e399}{searchDistance}};
+51         this.\mbox{\hyperlink{classentities_1_1_a_i_handler_basic_a3901dfebb437d4f21a074af70d00c940}{attackDistance}} = \mbox{\hyperlink{classentities_1_1_a_i_handler_basic_a3901dfebb437d4f21a074af70d00c940}{attackDistance}};
+52         \mbox{\hyperlink{classentities_1_1_a_i_handler_basic_ae730320459166e3816b22b30b5d68459}{timeToAttack}} = 500;
+53     \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classentities_1_1_a_i_handler_basic_ae69789cadb89030804ac4ea2d1971e21}\label{classentities_1_1_a_i_handler_basic_ae69789cadb89030804ac4ea2d1971e21}} 
+\index{entities\+::\+A\+I\+Handler\+Basic@{entities\+::\+A\+I\+Handler\+Basic}!ai\+Handler@{ai\+Handler}}
+\index{ai\+Handler@{ai\+Handler}!entities\+::\+A\+I\+Handler\+Basic@{entities\+::\+A\+I\+Handler\+Basic}}
+\subsubsection{\texorpdfstring{ai\+Handler()}{aiHandler()}}
+{\footnotesize\ttfamily void entities.\+A\+I\+Handler\+Basic.\+ai\+Handler (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classentities_1_1_n_p_c}{N\+PC}}}]{npc,  }\item[{long}]{delta }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+55                                                \{
+56         \textcolor{keywordtype}{float} x = \mbox{\hyperlink{classentities_1_1_a_i_handler_basic_ad7c5aba342053f29862df5f38537bf1c}{player}}.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_shape_a736a47bfdd6f164558b43fd497a3a3f3}{getX}}();
+57         \textcolor{keywordtype}{float} y = \mbox{\hyperlink{classentities_1_1_a_i_handler_basic_ad7c5aba342053f29862df5f38537bf1c}{player}}.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1geom_1_1_shape_a5f334f962d8fc525d522fe0f8ac20b35}{getY}}();
+58         \textcolor{keywordtype}{double} distance = Math.sqrt(Math.pow((x - npc.getX()) / \mbox{\hyperlink{classentities_1_1_a_i_handler_basic_a177ec0f84d2ce15ba89575b5a87cc742}{tileWidth}}, 2.0) + Math.pow((y - 
+      npc.getY()) / \mbox{\hyperlink{classentities_1_1_a_i_handler_basic_a9e9f42b3f5f874a95d171885e89c663c}{tileHeight}}, 2));
+59 
+60         \textcolor{keywordflow}{if} (\mbox{\hyperlink{classentities_1_1_a_i_handler_basic_afe4e5d49bf8c83164a89b0dec990406f}{state}} == \mbox{\hyperlink{classentities_1_1_a_i_handler_basic_a45d0ef8169388da1db65210670398487}{WAITING}}) \{
+61             \textcolor{comment}{//Wait}
+62             \mbox{\hyperlink{classentities_1_1_a_i_handler_basic_a5e92ef9a2ad97490bf2cb32bf58be950}{wait}}(npc, delta);
+63             \textcolor{keywordflow}{if} (distance < \mbox{\hyperlink{classentities_1_1_a_i_handler_basic_acb64b3c7941a4f72fd76262280b3e399}{searchDistance}}) \{
+64                 \mbox{\hyperlink{classentities_1_1_a_i_handler_basic_afe4e5d49bf8c83164a89b0dec990406f}{state}} = \mbox{\hyperlink{classentities_1_1_a_i_handler_basic_ac538f98b8bf642899b6cfe493258f381}{SEARCHING}};
+65             \}
+66         \}
+67         \textcolor{keywordflow}{if} (\mbox{\hyperlink{classentities_1_1_a_i_handler_basic_afe4e5d49bf8c83164a89b0dec990406f}{state}} == \mbox{\hyperlink{classentities_1_1_a_i_handler_basic_ac538f98b8bf642899b6cfe493258f381}{SEARCHING}}) \{
+68             \textcolor{comment}{//Search}
+69             \mbox{\hyperlink{classentities_1_1_a_i_handler_basic_a3bc305447e74f28a7187b6f2fd80686a}{search}}(npc, delta);
+70             \textcolor{keywordflow}{if} (distance > \mbox{\hyperlink{classentities_1_1_a_i_handler_basic_acb64b3c7941a4f72fd76262280b3e399}{searchDistance}}) \{
+71                 \mbox{\hyperlink{classentities_1_1_a_i_handler_basic_afe4e5d49bf8c83164a89b0dec990406f}{state}} = \mbox{\hyperlink{classentities_1_1_a_i_handler_basic_a45d0ef8169388da1db65210670398487}{WAITING}};
+72                 \mbox{\hyperlink{classentities_1_1_a_i_handler_basic_a2b833b13b6d0e6bf8014f077e8b07dda}{firstVisited}} = \textcolor{keyword}{false};
+73 
+74             \}
+75             \textcolor{keywordflow}{if} (distance < \mbox{\hyperlink{classentities_1_1_a_i_handler_basic_a3901dfebb437d4f21a074af70d00c940}{attackDistance}}) \{
+76                 \mbox{\hyperlink{classentities_1_1_a_i_handler_basic_afe4e5d49bf8c83164a89b0dec990406f}{state}} = \mbox{\hyperlink{classentities_1_1_a_i_handler_basic_a94cae3c413706efe5f714c532515b0cd}{ATTACKING}};
+77                 \mbox{\hyperlink{classentities_1_1_a_i_handler_basic_a2b833b13b6d0e6bf8014f077e8b07dda}{firstVisited}} = \textcolor{keyword}{false};
+78             \}
+79         \}
+80         \textcolor{keywordflow}{if} (\mbox{\hyperlink{classentities_1_1_a_i_handler_basic_afe4e5d49bf8c83164a89b0dec990406f}{state}} == \mbox{\hyperlink{classentities_1_1_a_i_handler_basic_a94cae3c413706efe5f714c532515b0cd}{ATTACKING}}) \{
+81             \mbox{\hyperlink{classentities_1_1_a_i_handler_basic_a1f6e2dee1ad5ce70d198dacce17637fc}{tryAttacking}}(npc, delta);
+82             \textcolor{keywordflow}{if} (distance > \mbox{\hyperlink{classentities_1_1_a_i_handler_basic_a3901dfebb437d4f21a074af70d00c940}{attackDistance}}) \{
+83                 \mbox{\hyperlink{classentities_1_1_a_i_handler_basic_afe4e5d49bf8c83164a89b0dec990406f}{state}} = \mbox{\hyperlink{classentities_1_1_a_i_handler_basic_ac538f98b8bf642899b6cfe493258f381}{SEARCHING}};
+84                 \mbox{\hyperlink{classentities_1_1_a_i_handler_basic_a638da72d035b8f01b2639453d50589a2}{attacking}} = \textcolor{keyword}{false};
+85             \}
+86         \}
+87     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classentities_1_1_a_i_handler_basic_a65db34fd0393bebc9a92df8f4788b8b4}\label{classentities_1_1_a_i_handler_basic_a65db34fd0393bebc9a92df8f4788b8b4}} 
+\index{entities\+::\+A\+I\+Handler\+Basic@{entities\+::\+A\+I\+Handler\+Basic}!get\+Last\+Path@{get\+Last\+Path}}
+\index{get\+Last\+Path@{get\+Last\+Path}!entities\+::\+A\+I\+Handler\+Basic@{entities\+::\+A\+I\+Handler\+Basic}}
+\subsubsection{\texorpdfstring{get\+Last\+Path()}{getLastPath()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_path}{Path}} entities.\+A\+I\+Handler\+Basic.\+get\+Last\+Path (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+134                               \{
+135         \textcolor{keywordflow}{return} \mbox{\hyperlink{classentities_1_1_a_i_handler_basic_a602787aae6ac3b507885afeece3f7b3f}{lastPath}};
+136     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classentities_1_1_a_i_handler_basic_a3bc305447e74f28a7187b6f2fd80686a}\label{classentities_1_1_a_i_handler_basic_a3bc305447e74f28a7187b6f2fd80686a}} 
+\index{entities\+::\+A\+I\+Handler\+Basic@{entities\+::\+A\+I\+Handler\+Basic}!search@{search}}
+\index{search@{search}!entities\+::\+A\+I\+Handler\+Basic@{entities\+::\+A\+I\+Handler\+Basic}}
+\subsubsection{\texorpdfstring{search()}{search()}}
+{\footnotesize\ttfamily void entities.\+A\+I\+Handler\+Basic.\+search (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classentities_1_1_n_p_c}{N\+PC}}}]{npc,  }\item[{long}]{delta }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+93                                             \{
+94 
+95         \mbox{\hyperlink{classentities_1_1_a_i_handler_basic_a602787aae6ac3b507885afeece3f7b3f}{lastPath}} = \mbox{\hyperlink{classentities_1_1_a_i_handler_basic_a285a9398062da6b974dc7a2d8e7e630d}{pathFinder}}.\mbox{\hyperlink{classentities_1_1_path_finder_a392069295c51a6b5470585f2f956a226}{findPath}}(npc, (\textcolor{keywordtype}{int}) (npc.getEntityX() / 
+      \mbox{\hyperlink{classentities_1_1_a_i_handler_basic_a177ec0f84d2ce15ba89575b5a87cc742}{tileWidth}}),
+96                 (\textcolor{keywordtype}{int}) (npc.getEntityY() / \mbox{\hyperlink{classentities_1_1_a_i_handler_basic_a9e9f42b3f5f874a95d171885e89c663c}{tileHeight}}), (\textcolor{keywordtype}{int}) (\mbox{\hyperlink{classentities_1_1_a_i_handler_basic_ad7c5aba342053f29862df5f38537bf1c}{player}}.
+      \mbox{\hyperlink{classentities_1_1_mobile_entity_a49dea6e4e953167028704395a99138fb}{getEntityX}}() / \mbox{\hyperlink{classentities_1_1_a_i_handler_basic_a177ec0f84d2ce15ba89575b5a87cc742}{tileWidth}}),
+97                 (\textcolor{keywordtype}{int}) (\mbox{\hyperlink{classentities_1_1_a_i_handler_basic_ad7c5aba342053f29862df5f38537bf1c}{player}}.\mbox{\hyperlink{classentities_1_1_mobile_entity_a8e231bee5ceaa0c240e9a8519e051d6b}{getEntityY}}() / \mbox{\hyperlink{classentities_1_1_a_i_handler_basic_a9e9f42b3f5f874a95d171885e89c663c}{tileHeight}}));
+98 
+99         \textcolor{keywordtype}{boolean} next = \textcolor{keyword}{false};
+100         \textcolor{keywordflow}{if} (\mbox{\hyperlink{classentities_1_1_a_i_handler_basic_a602787aae6ac3b507885afeece3f7b3f}{lastPath}} != null) \{
+101             \textcolor{keywordflow}{if} (\mbox{\hyperlink{classentities_1_1_a_i_handler_basic_a602787aae6ac3b507885afeece3f7b3f}{lastPath}}.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_path_a6aa805d1ba541d0136586273e1e68b2a}{getLength}}() > 0) \{
+102                 Path.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_path_1_1_step}{Step}} nextStep = \mbox{\hyperlink{classentities_1_1_a_i_handler_basic_a602787aae6ac3b507885afeece3f7b3f}{lastPath}}.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_path_acc362a056f4565a8eec1361266eac671}{getStep}}(0);
+103                 \textcolor{keywordflow}{if} (!nextStep.equals(\mbox{\hyperlink{classentities_1_1_a_i_handler_basic_a33774addab53a181bb96d147186d3b2c}{firstStep}})) \{
+104                     \mbox{\hyperlink{classentities_1_1_a_i_handler_basic_a2b833b13b6d0e6bf8014f077e8b07dda}{firstVisited}} = \textcolor{keyword}{false};
+105                     \mbox{\hyperlink{classentities_1_1_a_i_handler_basic_a33774addab53a181bb96d147186d3b2c}{firstStep}} = nextStep;
+106                 \}
+107                 \textcolor{keywordflow}{if} (\mbox{\hyperlink{classentities_1_1_a_i_handler_basic_a2b833b13b6d0e6bf8014f077e8b07dda}{firstVisited}} && \mbox{\hyperlink{classentities_1_1_a_i_handler_basic_a602787aae6ac3b507885afeece3f7b3f}{lastPath}}.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_path_a6aa805d1ba541d0136586273e1e68b2a}{getLength}}() > 1) \{
+108                     nextStep = \mbox{\hyperlink{classentities_1_1_a_i_handler_basic_a602787aae6ac3b507885afeece3f7b3f}{lastPath}}.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_path_acc362a056f4565a8eec1361266eac671}{getStep}}(1);
+109                 \}
+110                 \textcolor{keywordflow}{if} (npc.getEntityX() > (\mbox{\hyperlink{classentities_1_1_a_i_handler_basic_a177ec0f84d2ce15ba89575b5a87cc742}{tileWidth}} * (nextStep.getX() + 
+      \mbox{\hyperlink{classentities_1_1_a_i_handler_basic_a7f35345adb5b16156bfccceac3b59d28}{TILE\_WIDTH\_CORRECTION}} + \mbox{\hyperlink{classentities_1_1_a_i_handler_basic_adf8c3c47d56647bb7fa2f411dc5f7ae3}{ERROR}}))) \{
+111                     \textcolor{comment}{//El área de destino esta a nuestra izquierda}
+112                     npc.moveLeft(delta);
+113                     next = \textcolor{keyword}{true};
+114                 \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (npc.getEntityX() < (\mbox{\hyperlink{classentities_1_1_a_i_handler_basic_a177ec0f84d2ce15ba89575b5a87cc742}{tileWidth}} * (nextStep.getX() + 
+      \mbox{\hyperlink{classentities_1_1_a_i_handler_basic_a7f35345adb5b16156bfccceac3b59d28}{TILE\_WIDTH\_CORRECTION}} - \mbox{\hyperlink{classentities_1_1_a_i_handler_basic_adf8c3c47d56647bb7fa2f411dc5f7ae3}{ERROR}}))) \{
+115                     \textcolor{comment}{//El área de destino está a nuestra derecha}
+116                     npc.moveRight(delta);
+117                     next = \textcolor{keyword}{true};
+118                 \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (npc.getEntityY() > (\mbox{\hyperlink{classentities_1_1_a_i_handler_basic_a9e9f42b3f5f874a95d171885e89c663c}{tileHeight}} * (nextStep.getY() + 
+      \mbox{\hyperlink{classentities_1_1_a_i_handler_basic_a70edbc0e1b2c38d9201dffee01ac0fa8}{TILE\_HEIGHT\_CORRECTION}} + \mbox{\hyperlink{classentities_1_1_a_i_handler_basic_adf8c3c47d56647bb7fa2f411dc5f7ae3}{ERROR}}))) \{
+119                     \textcolor{comment}{//El área de destino esta sobre nosotros}
+120                     npc.moveUp(delta);
+121                     next = \textcolor{keyword}{true};
+122                 \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (npc.getEntityY() < (\mbox{\hyperlink{classentities_1_1_a_i_handler_basic_a9e9f42b3f5f874a95d171885e89c663c}{tileHeight}} * (nextStep.getY() + 
+      \mbox{\hyperlink{classentities_1_1_a_i_handler_basic_a70edbc0e1b2c38d9201dffee01ac0fa8}{TILE\_HEIGHT\_CORRECTION}} - \mbox{\hyperlink{classentities_1_1_a_i_handler_basic_adf8c3c47d56647bb7fa2f411dc5f7ae3}{ERROR}}))) \{
+123                     \textcolor{comment}{//El área de destino está debajo}
+124                     npc.moveDown(delta);
+125                     next = \textcolor{keyword}{true};
+126                 \} \textcolor{keywordflow}{else} \{
+127                     \mbox{\hyperlink{classentities_1_1_a_i_handler_basic_a2b833b13b6d0e6bf8014f077e8b07dda}{firstVisited}} = \textcolor{keyword}{true};
+128                 \}
+129             \}
+130         \}
+131 
+132     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classentities_1_1_a_i_handler_basic_a1f6e2dee1ad5ce70d198dacce17637fc}\label{classentities_1_1_a_i_handler_basic_a1f6e2dee1ad5ce70d198dacce17637fc}} 
+\index{entities\+::\+A\+I\+Handler\+Basic@{entities\+::\+A\+I\+Handler\+Basic}!try\+Attacking@{try\+Attacking}}
+\index{try\+Attacking@{try\+Attacking}!entities\+::\+A\+I\+Handler\+Basic@{entities\+::\+A\+I\+Handler\+Basic}}
+\subsubsection{\texorpdfstring{try\+Attacking()}{tryAttacking()}}
+{\footnotesize\ttfamily void entities.\+A\+I\+Handler\+Basic.\+try\+Attacking (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classentities_1_1_n_p_c}{N\+PC}}}]{npc,  }\item[{long}]{delta }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+138                                                   \{
+139         \textcolor{keywordflow}{if} (!\mbox{\hyperlink{classentities_1_1_a_i_handler_basic_a638da72d035b8f01b2639453d50589a2}{attacking}}) \{
+140             \mbox{\hyperlink{classentities_1_1_a_i_handler_basic_a638da72d035b8f01b2639453d50589a2}{attacking}} = \textcolor{keyword}{true};
+141             \mbox{\hyperlink{classentities_1_1_a_i_handler_basic_ac5e99310b688afd1fd14a9087946cf84}{initAttackTime}} = \textcolor{keyword}{new} Date();
+142             \textcolor{keywordflow}{if} (npc.getWeapon() instanceof Bow) \{
+143                 \textcolor{keywordtype}{float} distance = (float) Math.sqrt(Math.pow((\mbox{\hyperlink{classentities_1_1_a_i_handler_basic_ad7c5aba342053f29862df5f38537bf1c}{player}}.
+      \mbox{\hyperlink{classentities_1_1_subject_a6b019eb16c336f596c24aa9d6a102c39}{getSubjectX}}() - npc.getSubjectX()), 2.0) + Math.pow((\mbox{\hyperlink{classentities_1_1_a_i_handler_basic_ad7c5aba342053f29862df5f38537bf1c}{player}}.
+      \mbox{\hyperlink{classentities_1_1_subject_a0ce76d064a5b578263080e89e8990468}{getSubjectY}}() - npc.getSubjectY()), 2));
+144                 \textcolor{keywordtype}{float} dx = (\mbox{\hyperlink{classentities_1_1_a_i_handler_basic_ad7c5aba342053f29862df5f38537bf1c}{player}}.\mbox{\hyperlink{classentities_1_1_subject_a6b019eb16c336f596c24aa9d6a102c39}{getSubjectX}}() - npc.getSubjectX()) / distance;
+145                 \textcolor{keywordtype}{float} dy = (\mbox{\hyperlink{classentities_1_1_a_i_handler_basic_ad7c5aba342053f29862df5f38537bf1c}{player}}.\mbox{\hyperlink{classentities_1_1_subject_a0ce76d064a5b578263080e89e8990468}{getSubjectY}}() - npc.getSubjectY()) / distance;
+146                 ((Bow) npc.getWeapon()).aimBow(npc, dx, dy);
+147             \}
+148 
+149         \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} ((\textcolor{keyword}{new} Date().getTime() - \mbox{\hyperlink{classentities_1_1_a_i_handler_basic_ac5e99310b688afd1fd14a9087946cf84}{initAttackTime}}.getTime()) > 
+      \mbox{\hyperlink{classentities_1_1_a_i_handler_basic_ae730320459166e3816b22b30b5d68459}{timeToAttack}}) \{
+150             \textcolor{keywordflow}{if} (npc.getWeapon() != null) \{
+151 
+152             \}
+153             npc.attack();
+154             \mbox{\hyperlink{classentities_1_1_a_i_handler_basic_a638da72d035b8f01b2639453d50589a2}{attacking}} = \textcolor{keyword}{false};
+155         \}
+156     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classentities_1_1_a_i_handler_basic_a5e92ef9a2ad97490bf2cb32bf58be950}\label{classentities_1_1_a_i_handler_basic_a5e92ef9a2ad97490bf2cb32bf58be950}} 
+\index{entities\+::\+A\+I\+Handler\+Basic@{entities\+::\+A\+I\+Handler\+Basic}!wait@{wait}}
+\index{wait@{wait}!entities\+::\+A\+I\+Handler\+Basic@{entities\+::\+A\+I\+Handler\+Basic}}
+\subsubsection{\texorpdfstring{wait()}{wait()}}
+{\footnotesize\ttfamily void entities.\+A\+I\+Handler\+Basic.\+wait (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classentities_1_1_n_p_c}{N\+PC}}}]{npc,  }\item[{long}]{delta }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+89                                           \{
+90         \textcolor{comment}{//No hacer nada}
+91     \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classentities_1_1_a_i_handler_basic_a3901dfebb437d4f21a074af70d00c940}\label{classentities_1_1_a_i_handler_basic_a3901dfebb437d4f21a074af70d00c940}} 
+\index{entities\+::\+A\+I\+Handler\+Basic@{entities\+::\+A\+I\+Handler\+Basic}!attack\+Distance@{attack\+Distance}}
+\index{attack\+Distance@{attack\+Distance}!entities\+::\+A\+I\+Handler\+Basic@{entities\+::\+A\+I\+Handler\+Basic}}
+\subsubsection{\texorpdfstring{attack\+Distance}{attackDistance}}
+{\footnotesize\ttfamily float entities.\+A\+I\+Handler\+Basic.\+attack\+Distance\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classentities_1_1_a_i_handler_basic_a638da72d035b8f01b2639453d50589a2}\label{classentities_1_1_a_i_handler_basic_a638da72d035b8f01b2639453d50589a2}} 
+\index{entities\+::\+A\+I\+Handler\+Basic@{entities\+::\+A\+I\+Handler\+Basic}!attacking@{attacking}}
+\index{attacking@{attacking}!entities\+::\+A\+I\+Handler\+Basic@{entities\+::\+A\+I\+Handler\+Basic}}
+\subsubsection{\texorpdfstring{attacking}{attacking}}
+{\footnotesize\ttfamily boolean entities.\+A\+I\+Handler\+Basic.\+attacking\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classentities_1_1_a_i_handler_basic_a94cae3c413706efe5f714c532515b0cd}\label{classentities_1_1_a_i_handler_basic_a94cae3c413706efe5f714c532515b0cd}} 
+\index{entities\+::\+A\+I\+Handler\+Basic@{entities\+::\+A\+I\+Handler\+Basic}!A\+T\+T\+A\+C\+K\+I\+NG@{A\+T\+T\+A\+C\+K\+I\+NG}}
+\index{A\+T\+T\+A\+C\+K\+I\+NG@{A\+T\+T\+A\+C\+K\+I\+NG}!entities\+::\+A\+I\+Handler\+Basic@{entities\+::\+A\+I\+Handler\+Basic}}
+\subsubsection{\texorpdfstring{A\+T\+T\+A\+C\+K\+I\+NG}{ATTACKING}}
+{\footnotesize\ttfamily int entities.\+A\+I\+Handler\+Basic.\+A\+T\+T\+A\+C\+K\+I\+NG = 2\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classentities_1_1_a_i_handler_basic_adf8c3c47d56647bb7fa2f411dc5f7ae3}\label{classentities_1_1_a_i_handler_basic_adf8c3c47d56647bb7fa2f411dc5f7ae3}} 
+\index{entities\+::\+A\+I\+Handler\+Basic@{entities\+::\+A\+I\+Handler\+Basic}!E\+R\+R\+OR@{E\+R\+R\+OR}}
+\index{E\+R\+R\+OR@{E\+R\+R\+OR}!entities\+::\+A\+I\+Handler\+Basic@{entities\+::\+A\+I\+Handler\+Basic}}
+\subsubsection{\texorpdfstring{E\+R\+R\+OR}{ERROR}}
+{\footnotesize\ttfamily float entities.\+A\+I\+Handler\+Basic.\+E\+R\+R\+OR = 0.\+2f\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{classentities_1_1_a_i_handler_basic_a33774addab53a181bb96d147186d3b2c}\label{classentities_1_1_a_i_handler_basic_a33774addab53a181bb96d147186d3b2c}} 
+\index{entities\+::\+A\+I\+Handler\+Basic@{entities\+::\+A\+I\+Handler\+Basic}!first\+Step@{first\+Step}}
+\index{first\+Step@{first\+Step}!entities\+::\+A\+I\+Handler\+Basic@{entities\+::\+A\+I\+Handler\+Basic}}
+\subsubsection{\texorpdfstring{first\+Step}{firstStep}}
+{\footnotesize\ttfamily Path.\+Step entities.\+A\+I\+Handler\+Basic.\+first\+Step\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classentities_1_1_a_i_handler_basic_a2b833b13b6d0e6bf8014f077e8b07dda}\label{classentities_1_1_a_i_handler_basic_a2b833b13b6d0e6bf8014f077e8b07dda}} 
+\index{entities\+::\+A\+I\+Handler\+Basic@{entities\+::\+A\+I\+Handler\+Basic}!first\+Visited@{first\+Visited}}
+\index{first\+Visited@{first\+Visited}!entities\+::\+A\+I\+Handler\+Basic@{entities\+::\+A\+I\+Handler\+Basic}}
+\subsubsection{\texorpdfstring{first\+Visited}{firstVisited}}
+{\footnotesize\ttfamily boolean entities.\+A\+I\+Handler\+Basic.\+first\+Visited\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classentities_1_1_a_i_handler_basic_ac5e99310b688afd1fd14a9087946cf84}\label{classentities_1_1_a_i_handler_basic_ac5e99310b688afd1fd14a9087946cf84}} 
+\index{entities\+::\+A\+I\+Handler\+Basic@{entities\+::\+A\+I\+Handler\+Basic}!init\+Attack\+Time@{init\+Attack\+Time}}
+\index{init\+Attack\+Time@{init\+Attack\+Time}!entities\+::\+A\+I\+Handler\+Basic@{entities\+::\+A\+I\+Handler\+Basic}}
+\subsubsection{\texorpdfstring{init\+Attack\+Time}{initAttackTime}}
+{\footnotesize\ttfamily Date entities.\+A\+I\+Handler\+Basic.\+init\+Attack\+Time\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classentities_1_1_a_i_handler_basic_a602787aae6ac3b507885afeece3f7b3f}\label{classentities_1_1_a_i_handler_basic_a602787aae6ac3b507885afeece3f7b3f}} 
+\index{entities\+::\+A\+I\+Handler\+Basic@{entities\+::\+A\+I\+Handler\+Basic}!last\+Path@{last\+Path}}
+\index{last\+Path@{last\+Path}!entities\+::\+A\+I\+Handler\+Basic@{entities\+::\+A\+I\+Handler\+Basic}}
+\subsubsection{\texorpdfstring{last\+Path}{lastPath}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_path}{Path}} entities.\+A\+I\+Handler\+Basic.\+last\+Path\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classentities_1_1_a_i_handler_basic_ac37a209c05f1e2848e0179de643e6c45}\label{classentities_1_1_a_i_handler_basic_ac37a209c05f1e2848e0179de643e6c45}} 
+\index{entities\+::\+A\+I\+Handler\+Basic@{entities\+::\+A\+I\+Handler\+Basic}!last\+Path\+Computed@{last\+Path\+Computed}}
+\index{last\+Path\+Computed@{last\+Path\+Computed}!entities\+::\+A\+I\+Handler\+Basic@{entities\+::\+A\+I\+Handler\+Basic}}
+\subsubsection{\texorpdfstring{last\+Path\+Computed}{lastPathComputed}}
+{\footnotesize\ttfamily Date entities.\+A\+I\+Handler\+Basic.\+last\+Path\+Computed\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classentities_1_1_a_i_handler_basic_a285a9398062da6b974dc7a2d8e7e630d}\label{classentities_1_1_a_i_handler_basic_a285a9398062da6b974dc7a2d8e7e630d}} 
+\index{entities\+::\+A\+I\+Handler\+Basic@{entities\+::\+A\+I\+Handler\+Basic}!path\+Finder@{path\+Finder}}
+\index{path\+Finder@{path\+Finder}!entities\+::\+A\+I\+Handler\+Basic@{entities\+::\+A\+I\+Handler\+Basic}}
+\subsubsection{\texorpdfstring{path\+Finder}{pathFinder}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classentities_1_1_path_finder}{Path\+Finder}} entities.\+A\+I\+Handler\+Basic.\+path\+Finder\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classentities_1_1_a_i_handler_basic_ad7c5aba342053f29862df5f38537bf1c}\label{classentities_1_1_a_i_handler_basic_ad7c5aba342053f29862df5f38537bf1c}} 
+\index{entities\+::\+A\+I\+Handler\+Basic@{entities\+::\+A\+I\+Handler\+Basic}!player@{player}}
+\index{player@{player}!entities\+::\+A\+I\+Handler\+Basic@{entities\+::\+A\+I\+Handler\+Basic}}
+\subsubsection{\texorpdfstring{player}{player}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classentities_1_1_player}{Player}} entities.\+A\+I\+Handler\+Basic.\+player\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classentities_1_1_a_i_handler_basic_acb64b3c7941a4f72fd76262280b3e399}\label{classentities_1_1_a_i_handler_basic_acb64b3c7941a4f72fd76262280b3e399}} 
+\index{entities\+::\+A\+I\+Handler\+Basic@{entities\+::\+A\+I\+Handler\+Basic}!search\+Distance@{search\+Distance}}
+\index{search\+Distance@{search\+Distance}!entities\+::\+A\+I\+Handler\+Basic@{entities\+::\+A\+I\+Handler\+Basic}}
+\subsubsection{\texorpdfstring{search\+Distance}{searchDistance}}
+{\footnotesize\ttfamily float entities.\+A\+I\+Handler\+Basic.\+search\+Distance\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classentities_1_1_a_i_handler_basic_ac538f98b8bf642899b6cfe493258f381}\label{classentities_1_1_a_i_handler_basic_ac538f98b8bf642899b6cfe493258f381}} 
+\index{entities\+::\+A\+I\+Handler\+Basic@{entities\+::\+A\+I\+Handler\+Basic}!S\+E\+A\+R\+C\+H\+I\+NG@{S\+E\+A\+R\+C\+H\+I\+NG}}
+\index{S\+E\+A\+R\+C\+H\+I\+NG@{S\+E\+A\+R\+C\+H\+I\+NG}!entities\+::\+A\+I\+Handler\+Basic@{entities\+::\+A\+I\+Handler\+Basic}}
+\subsubsection{\texorpdfstring{S\+E\+A\+R\+C\+H\+I\+NG}{SEARCHING}}
+{\footnotesize\ttfamily int entities.\+A\+I\+Handler\+Basic.\+S\+E\+A\+R\+C\+H\+I\+NG = 1\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classentities_1_1_a_i_handler_basic_afe4e5d49bf8c83164a89b0dec990406f}\label{classentities_1_1_a_i_handler_basic_afe4e5d49bf8c83164a89b0dec990406f}} 
+\index{entities\+::\+A\+I\+Handler\+Basic@{entities\+::\+A\+I\+Handler\+Basic}!state@{state}}
+\index{state@{state}!entities\+::\+A\+I\+Handler\+Basic@{entities\+::\+A\+I\+Handler\+Basic}}
+\subsubsection{\texorpdfstring{state}{state}}
+{\footnotesize\ttfamily int entities.\+A\+I\+Handler\+Basic.\+state\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classentities_1_1_a_i_handler_basic_a70edbc0e1b2c38d9201dffee01ac0fa8}\label{classentities_1_1_a_i_handler_basic_a70edbc0e1b2c38d9201dffee01ac0fa8}} 
+\index{entities\+::\+A\+I\+Handler\+Basic@{entities\+::\+A\+I\+Handler\+Basic}!T\+I\+L\+E\+\_\+\+H\+E\+I\+G\+H\+T\+\_\+\+C\+O\+R\+R\+E\+C\+T\+I\+ON@{T\+I\+L\+E\+\_\+\+H\+E\+I\+G\+H\+T\+\_\+\+C\+O\+R\+R\+E\+C\+T\+I\+ON}}
+\index{T\+I\+L\+E\+\_\+\+H\+E\+I\+G\+H\+T\+\_\+\+C\+O\+R\+R\+E\+C\+T\+I\+ON@{T\+I\+L\+E\+\_\+\+H\+E\+I\+G\+H\+T\+\_\+\+C\+O\+R\+R\+E\+C\+T\+I\+ON}!entities\+::\+A\+I\+Handler\+Basic@{entities\+::\+A\+I\+Handler\+Basic}}
+\subsubsection{\texorpdfstring{T\+I\+L\+E\+\_\+\+H\+E\+I\+G\+H\+T\+\_\+\+C\+O\+R\+R\+E\+C\+T\+I\+ON}{TILE\_HEIGHT\_CORRECTION}}
+{\footnotesize\ttfamily float entities.\+A\+I\+Handler\+Basic.\+T\+I\+L\+E\+\_\+\+H\+E\+I\+G\+H\+T\+\_\+\+C\+O\+R\+R\+E\+C\+T\+I\+ON = 0.\+5f\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{classentities_1_1_a_i_handler_basic_a7f35345adb5b16156bfccceac3b59d28}\label{classentities_1_1_a_i_handler_basic_a7f35345adb5b16156bfccceac3b59d28}} 
+\index{entities\+::\+A\+I\+Handler\+Basic@{entities\+::\+A\+I\+Handler\+Basic}!T\+I\+L\+E\+\_\+\+W\+I\+D\+T\+H\+\_\+\+C\+O\+R\+R\+E\+C\+T\+I\+ON@{T\+I\+L\+E\+\_\+\+W\+I\+D\+T\+H\+\_\+\+C\+O\+R\+R\+E\+C\+T\+I\+ON}}
+\index{T\+I\+L\+E\+\_\+\+W\+I\+D\+T\+H\+\_\+\+C\+O\+R\+R\+E\+C\+T\+I\+ON@{T\+I\+L\+E\+\_\+\+W\+I\+D\+T\+H\+\_\+\+C\+O\+R\+R\+E\+C\+T\+I\+ON}!entities\+::\+A\+I\+Handler\+Basic@{entities\+::\+A\+I\+Handler\+Basic}}
+\subsubsection{\texorpdfstring{T\+I\+L\+E\+\_\+\+W\+I\+D\+T\+H\+\_\+\+C\+O\+R\+R\+E\+C\+T\+I\+ON}{TILE\_WIDTH\_CORRECTION}}
+{\footnotesize\ttfamily float entities.\+A\+I\+Handler\+Basic.\+T\+I\+L\+E\+\_\+\+W\+I\+D\+T\+H\+\_\+\+C\+O\+R\+R\+E\+C\+T\+I\+ON = 0.\+5f\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{classentities_1_1_a_i_handler_basic_a9e9f42b3f5f874a95d171885e89c663c}\label{classentities_1_1_a_i_handler_basic_a9e9f42b3f5f874a95d171885e89c663c}} 
+\index{entities\+::\+A\+I\+Handler\+Basic@{entities\+::\+A\+I\+Handler\+Basic}!tile\+Height@{tile\+Height}}
+\index{tile\+Height@{tile\+Height}!entities\+::\+A\+I\+Handler\+Basic@{entities\+::\+A\+I\+Handler\+Basic}}
+\subsubsection{\texorpdfstring{tile\+Height}{tileHeight}}
+{\footnotesize\ttfamily int entities.\+A\+I\+Handler\+Basic.\+tile\+Height\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classentities_1_1_a_i_handler_basic_a177ec0f84d2ce15ba89575b5a87cc742}\label{classentities_1_1_a_i_handler_basic_a177ec0f84d2ce15ba89575b5a87cc742}} 
+\index{entities\+::\+A\+I\+Handler\+Basic@{entities\+::\+A\+I\+Handler\+Basic}!tile\+Width@{tile\+Width}}
+\index{tile\+Width@{tile\+Width}!entities\+::\+A\+I\+Handler\+Basic@{entities\+::\+A\+I\+Handler\+Basic}}
+\subsubsection{\texorpdfstring{tile\+Width}{tileWidth}}
+{\footnotesize\ttfamily int entities.\+A\+I\+Handler\+Basic.\+tile\+Width\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classentities_1_1_a_i_handler_basic_ae730320459166e3816b22b30b5d68459}\label{classentities_1_1_a_i_handler_basic_ae730320459166e3816b22b30b5d68459}} 
+\index{entities\+::\+A\+I\+Handler\+Basic@{entities\+::\+A\+I\+Handler\+Basic}!time\+To\+Attack@{time\+To\+Attack}}
+\index{time\+To\+Attack@{time\+To\+Attack}!entities\+::\+A\+I\+Handler\+Basic@{entities\+::\+A\+I\+Handler\+Basic}}
+\subsubsection{\texorpdfstring{time\+To\+Attack}{timeToAttack}}
+{\footnotesize\ttfamily int entities.\+A\+I\+Handler\+Basic.\+time\+To\+Attack\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classentities_1_1_a_i_handler_basic_a45d0ef8169388da1db65210670398487}\label{classentities_1_1_a_i_handler_basic_a45d0ef8169388da1db65210670398487}} 
+\index{entities\+::\+A\+I\+Handler\+Basic@{entities\+::\+A\+I\+Handler\+Basic}!W\+A\+I\+T\+I\+NG@{W\+A\+I\+T\+I\+NG}}
+\index{W\+A\+I\+T\+I\+NG@{W\+A\+I\+T\+I\+NG}!entities\+::\+A\+I\+Handler\+Basic@{entities\+::\+A\+I\+Handler\+Basic}}
+\subsubsection{\texorpdfstring{W\+A\+I\+T\+I\+NG}{WAITING}}
+{\footnotesize\ttfamily int entities.\+A\+I\+Handler\+Basic.\+W\+A\+I\+T\+I\+NG = 0\hspace{0.3cm}{\ttfamily [static]}}
+

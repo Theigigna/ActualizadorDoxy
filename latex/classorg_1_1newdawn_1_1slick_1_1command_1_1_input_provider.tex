@@ -1,0 +1,465 @@
+\hypertarget{classorg_1_1newdawn_1_1slick_1_1command_1_1_input_provider}{}\section{org.\+newdawn.\+slick.\+command.\+Input\+Provider Class Reference}
+\label{classorg_1_1newdawn_1_1slick_1_1command_1_1_input_provider}\index{org.\+newdawn.\+slick.\+command.\+Input\+Provider@{org.\+newdawn.\+slick.\+command.\+Input\+Provider}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1command_1_1_input_provider_1_1_command_state}{Command\+State}}
+\item 
+class \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1command_1_1_input_provider_1_1_input_listener_impl}{Input\+Listener\+Impl}}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1command_1_1_input_provider_a7a96bc94a4b7dcfc72bff1dbfbe243b7}{Input\+Provider}} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_input}{Input}} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1command_1_1_input_provider_a7a9d7954c539d61bd8623da41c199d74}{input}})
+\item 
+List \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1command_1_1_input_provider_a34d5aff64cb457846fb408caf1f05bf1}{get\+Unique\+Commands}} ()
+\item 
+List \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1command_1_1_input_provider_ab2b7def0bd26b6292ac45b4ca253e43a}{get\+Controls\+For}} (\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1command_1_1_command}{Command}} command)
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1command_1_1_input_provider_a4ff61ae89a9b3fc0ac8bcf95adc38a01}{set\+Active}} (boolean \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1command_1_1_input_provider_ad390b811fb89db3fde054cc1ecae20b0}{active}})
+\item 
+boolean \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1command_1_1_input_provider_a13cd156adf59ef712b9ebb4c0c21f2b8}{is\+Active}} ()
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1command_1_1_input_provider_a1170cd03e9cb6062346408e77ddc686e}{add\+Listener}} (\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1command_1_1_input_provider_listener}{Input\+Provider\+Listener}} listener)
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1command_1_1_input_provider_ae6178aceb952f89deca034a74a2fd160}{remove\+Listener}} (\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1command_1_1_input_provider_listener}{Input\+Provider\+Listener}} listener)
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1command_1_1_input_provider_a3d2308c3affc346525025891e91845fc}{bind\+Command}} (\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1command_1_1_control}{Control}} control, \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1command_1_1_command}{Command}} command)
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1command_1_1_input_provider_a0d501c7aae3af7e873195b3b3be6f167}{clear\+Command}} (\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1command_1_1_command}{Command}} command)
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1command_1_1_input_provider_a4c5a3cae6a8b19d53b8a3419d856d449}{unbind\+Command}} (\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1command_1_1_control}{Control}} control)
+\item 
+boolean \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1command_1_1_input_provider_a68409d18dded86e1d03b62f33b7e573a}{is\+Command\+Control\+Down}} (\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1command_1_1_command}{Command}} command)
+\item 
+boolean \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1command_1_1_input_provider_a6d760d52392ef0a9d996d5a9dfe777b8}{is\+Command\+Control\+Pressed}} (\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1command_1_1_command}{Command}} command)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1command_1_1_input_provider_a82cd36086b5780ccce446717e8075e96}{fire\+Pressed}} (\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1command_1_1_command}{Command}} command)
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1command_1_1_input_provider_afede03e3ab95cb0248635cf64de6874c}{fire\+Released}} (\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1command_1_1_command}{Command}} command)
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1command_1_1_input_provider_1_1_command_state}{Command\+State}} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1command_1_1_input_provider_aa25975d0cc21a4d1a45995c553e72357}{get\+State}} (\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1command_1_1_command}{Command}} command)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Hash\+Map \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1command_1_1_input_provider_ab2bd0c08506a59bc7457d7a87cf873d2}{commands}}
+\item 
+Array\+List \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1command_1_1_input_provider_a007146935ecc6c0f69ff3d7958042867}{listeners}} = new Array\+List()
+\item 
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_input}{Input}} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1command_1_1_input_provider_a7a9d7954c539d61bd8623da41c199d74}{input}}
+\item 
+Hash\+Map \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1command_1_1_input_provider_a343fea436b5ad6194968443cc58a632d}{command\+State}} = new Hash\+Map()
+\item 
+boolean \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1command_1_1_input_provider_ad390b811fb89db3fde054cc1ecae20b0}{active}} = true
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The central provider that maps real device input into abstract commands defined by the developer. Registering a control against an command with this class will cause the provider to produce an event for the command when the input is pressed and released.
+
+\begin{DoxyAuthor}{Author}
+joverton 
+\end{DoxyAuthor}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1command_1_1_input_provider_a7a96bc94a4b7dcfc72bff1dbfbe243b7}\label{classorg_1_1newdawn_1_1slick_1_1command_1_1_input_provider_a7a96bc94a4b7dcfc72bff1dbfbe243b7}} 
+\index{org\+::newdawn\+::slick\+::command\+::\+Input\+Provider@{org\+::newdawn\+::slick\+::command\+::\+Input\+Provider}!Input\+Provider@{Input\+Provider}}
+\index{Input\+Provider@{Input\+Provider}!org\+::newdawn\+::slick\+::command\+::\+Input\+Provider@{org\+::newdawn\+::slick\+::command\+::\+Input\+Provider}}
+\subsubsection{\texorpdfstring{Input\+Provider()}{InputProvider()}}
+{\footnotesize\ttfamily org.\+newdawn.\+slick.\+command.\+Input\+Provider.\+Input\+Provider (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_input}{Input}}}]{input }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Create a new input proider which will provide abstract input descriptions based on the input from the supplied context.
+
+
+\begin{DoxyParams}{Parameters}
+{\em input} & The input from which this provider will receive events \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+43                                       \{
+44         this.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1command_1_1_input_provider_a7a9d7954c539d61bd8623da41c199d74}{input}} = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1command_1_1_input_provider_a7a9d7954c539d61bd8623da41c199d74}{input}};
+45 
+46         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1command_1_1_input_provider_a7a9d7954c539d61bd8623da41c199d74}{input}}.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_input_a281147c97d575c9a5a69004f31fcd596}{addListener}}(\textcolor{keyword}{new} InputListenerImpl());
+47         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1command_1_1_input_provider_ab2bd0c08506a59bc7457d7a87cf873d2}{commands}} = \textcolor{keyword}{new} HashMap();
+48     \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1command_1_1_input_provider_a1170cd03e9cb6062346408e77ddc686e}\label{classorg_1_1newdawn_1_1slick_1_1command_1_1_input_provider_a1170cd03e9cb6062346408e77ddc686e}} 
+\index{org\+::newdawn\+::slick\+::command\+::\+Input\+Provider@{org\+::newdawn\+::slick\+::command\+::\+Input\+Provider}!add\+Listener@{add\+Listener}}
+\index{add\+Listener@{add\+Listener}!org\+::newdawn\+::slick\+::command\+::\+Input\+Provider@{org\+::newdawn\+::slick\+::command\+::\+Input\+Provider}}
+\subsubsection{\texorpdfstring{add\+Listener()}{addListener()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+command.\+Input\+Provider.\+add\+Listener (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1command_1_1_input_provider_listener}{Input\+Provider\+Listener}}}]{listener }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Add a listener to the provider. This listener will be notified of commands detected from the input.
+
+
+\begin{DoxyParams}{Parameters}
+{\em listener} & The listener to be added \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+120                                                             \{
+121         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1command_1_1_input_provider_a007146935ecc6c0f69ff3d7958042867}{listeners}}.add(listener);
+122     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1command_1_1_input_provider_a3d2308c3affc346525025891e91845fc}\label{classorg_1_1newdawn_1_1slick_1_1command_1_1_input_provider_a3d2308c3affc346525025891e91845fc}} 
+\index{org\+::newdawn\+::slick\+::command\+::\+Input\+Provider@{org\+::newdawn\+::slick\+::command\+::\+Input\+Provider}!bind\+Command@{bind\+Command}}
+\index{bind\+Command@{bind\+Command}!org\+::newdawn\+::slick\+::command\+::\+Input\+Provider@{org\+::newdawn\+::slick\+::command\+::\+Input\+Provider}}
+\subsubsection{\texorpdfstring{bind\+Command()}{bindCommand()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+command.\+Input\+Provider.\+bind\+Command (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1command_1_1_control}{Control}}}]{control,  }\item[{\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1command_1_1_command}{Command}}}]{command }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Bind an command to a control.
+
+
+\begin{DoxyParams}{Parameters}
+{\em command} & The command to bind to \\
+\hline
+{\em control} & The control that is pressed/released to represent the command \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+143                                                               \{
+144         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1command_1_1_input_provider_ab2bd0c08506a59bc7457d7a87cf873d2}{commands}}.put(control, command);
+145 
+146         \textcolor{keywordflow}{if} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1command_1_1_input_provider_a343fea436b5ad6194968443cc58a632d}{commandState}}.get(command) == null) \{
+147             \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1command_1_1_input_provider_a343fea436b5ad6194968443cc58a632d}{commandState}}.put(command, \textcolor{keyword}{new} CommandState());
+148         \}
+149     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1command_1_1_input_provider_a0d501c7aae3af7e873195b3b3be6f167}\label{classorg_1_1newdawn_1_1slick_1_1command_1_1_input_provider_a0d501c7aae3af7e873195b3b3be6f167}} 
+\index{org\+::newdawn\+::slick\+::command\+::\+Input\+Provider@{org\+::newdawn\+::slick\+::command\+::\+Input\+Provider}!clear\+Command@{clear\+Command}}
+\index{clear\+Command@{clear\+Command}!org\+::newdawn\+::slick\+::command\+::\+Input\+Provider@{org\+::newdawn\+::slick\+::command\+::\+Input\+Provider}}
+\subsubsection{\texorpdfstring{clear\+Command()}{clearCommand()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+command.\+Input\+Provider.\+clear\+Command (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1command_1_1_command}{Command}}}]{command }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Clear all the controls that have been configured for a given command
+
+
+\begin{DoxyParams}{Parameters}
+{\em command} & The command whose controls should be unbound \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+156                                               \{
+157         List controls = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1command_1_1_input_provider_ab2b7def0bd26b6292ac45b4ca253e43a}{getControlsFor}}(command);
+158         
+159         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i=0;i<controls.size();i++) \{
+160             \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1command_1_1_input_provider_a4c5a3cae6a8b19d53b8a3419d856d449}{unbindCommand}}((Control) controls.get(i));
+161         \}
+162     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1command_1_1_input_provider_a82cd36086b5780ccce446717e8075e96}\label{classorg_1_1newdawn_1_1slick_1_1command_1_1_input_provider_a82cd36086b5780ccce446717e8075e96}} 
+\index{org\+::newdawn\+::slick\+::command\+::\+Input\+Provider@{org\+::newdawn\+::slick\+::command\+::\+Input\+Provider}!fire\+Pressed@{fire\+Pressed}}
+\index{fire\+Pressed@{fire\+Pressed}!org\+::newdawn\+::slick\+::command\+::\+Input\+Provider@{org\+::newdawn\+::slick\+::command\+::\+Input\+Provider}}
+\subsubsection{\texorpdfstring{fire\+Pressed()}{firePressed()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+command.\+Input\+Provider.\+fire\+Pressed (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1command_1_1_command}{Command}}}]{command }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+Fire notification to any interested listeners that a control has been pressed indication an particular command
+
+
+\begin{DoxyParams}{Parameters}
+{\em command} & The command that has been pressed \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+221                                                 \{
+222         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1command_1_1_input_provider_aa25975d0cc21a4d1a45995c553e72357}{getState}}(command).\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1command_1_1_input_provider_1_1_command_state_a8cfa0dcf27d3c3a5f389bebea44da4b4}{down}} = \textcolor{keyword}{true};
+223         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1command_1_1_input_provider_aa25975d0cc21a4d1a45995c553e72357}{getState}}(command).\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1command_1_1_input_provider_1_1_command_state_a984ed679625be22d8159a28470d7bbd8}{pressed}} = \textcolor{keyword}{true};
+224 
+225         \textcolor{keywordflow}{if} (!\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1command_1_1_input_provider_a13cd156adf59ef712b9ebb4c0c21f2b8}{isActive}}()) \{
+226             \textcolor{keywordflow}{return};
+227         \}
+228 
+229         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1command_1_1_input_provider_a007146935ecc6c0f69ff3d7958042867}{listeners}}.size(); i++) \{
+230             ((InputProviderListener) \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1command_1_1_input_provider_a007146935ecc6c0f69ff3d7958042867}{listeners}}.get(i)).controlPressed(command);
+231         \}
+232     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1command_1_1_input_provider_afede03e3ab95cb0248635cf64de6874c}\label{classorg_1_1newdawn_1_1slick_1_1command_1_1_input_provider_afede03e3ab95cb0248635cf64de6874c}} 
+\index{org\+::newdawn\+::slick\+::command\+::\+Input\+Provider@{org\+::newdawn\+::slick\+::command\+::\+Input\+Provider}!fire\+Released@{fire\+Released}}
+\index{fire\+Released@{fire\+Released}!org\+::newdawn\+::slick\+::command\+::\+Input\+Provider@{org\+::newdawn\+::slick\+::command\+::\+Input\+Provider}}
+\subsubsection{\texorpdfstring{fire\+Released()}{fireReleased()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+command.\+Input\+Provider.\+fire\+Released (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1command_1_1_command}{Command}}}]{command }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+Fire notification to any interested listeners that a control has been released indication an particular command should be stopped
+
+
+\begin{DoxyParams}{Parameters}
+{\em command} & The command that has been pressed \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+241                                                  \{
+242         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1command_1_1_input_provider_aa25975d0cc21a4d1a45995c553e72357}{getState}}(command).\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1command_1_1_input_provider_1_1_command_state_a8cfa0dcf27d3c3a5f389bebea44da4b4}{down}} = \textcolor{keyword}{false};
+243 
+244         \textcolor{keywordflow}{if} (!\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1command_1_1_input_provider_a13cd156adf59ef712b9ebb4c0c21f2b8}{isActive}}()) \{
+245             \textcolor{keywordflow}{return};
+246         \}
+247 
+248         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1command_1_1_input_provider_a007146935ecc6c0f69ff3d7958042867}{listeners}}.size(); i++) \{
+249             ((InputProviderListener) \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1command_1_1_input_provider_a007146935ecc6c0f69ff3d7958042867}{listeners}}.get(i)).controlReleased(command);
+250         \}
+251     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1command_1_1_input_provider_ab2b7def0bd26b6292ac45b4ca253e43a}\label{classorg_1_1newdawn_1_1slick_1_1command_1_1_input_provider_ab2b7def0bd26b6292ac45b4ca253e43a}} 
+\index{org\+::newdawn\+::slick\+::command\+::\+Input\+Provider@{org\+::newdawn\+::slick\+::command\+::\+Input\+Provider}!get\+Controls\+For@{get\+Controls\+For}}
+\index{get\+Controls\+For@{get\+Controls\+For}!org\+::newdawn\+::slick\+::command\+::\+Input\+Provider@{org\+::newdawn\+::slick\+::command\+::\+Input\+Provider}}
+\subsubsection{\texorpdfstring{get\+Controls\+For()}{getControlsFor()}}
+{\footnotesize\ttfamily List org.\+newdawn.\+slick.\+command.\+Input\+Provider.\+get\+Controls\+For (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1command_1_1_command}{Command}}}]{command }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get a list of the registered controls (\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1command_1_1_control}{Control}}) that can cause a particular \mbox{\hyperlink{namespaceorg_1_1newdawn_1_1slick_1_1command}{command}} to be invoked
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}{Parameters}
+{\em command} & The command to be invoked \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The list of controls that can cause the command (
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1command_1_1_control}{Control}}) 
+\end{DoxySeeAlso}
+
+\begin{DoxyCode}
+79                                                 \{
+80         List controlsForCommand = \textcolor{keyword}{new} ArrayList();
+81 
+82         \textcolor{keywordflow}{for} (Iterator it = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1command_1_1_input_provider_ab2bd0c08506a59bc7457d7a87cf873d2}{commands}}.entrySet().iterator(); it.hasNext();) \{
+83             Map.Entry entry = (Map.Entry) it.next();
+84             Control key = (Control) entry.getKey();
+85             Command value = (Command) entry.getValue();
+86 
+87             \textcolor{keywordflow}{if} (value == command) \{
+88                 controlsForCommand.add(key);
+89             \}
+90         \}
+91         \textcolor{keywordflow}{return} controlsForCommand;
+92     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1command_1_1_input_provider_aa25975d0cc21a4d1a45995c553e72357}\label{classorg_1_1newdawn_1_1slick_1_1command_1_1_input_provider_aa25975d0cc21a4d1a45995c553e72357}} 
+\index{org\+::newdawn\+::slick\+::command\+::\+Input\+Provider@{org\+::newdawn\+::slick\+::command\+::\+Input\+Provider}!get\+State@{get\+State}}
+\index{get\+State@{get\+State}!org\+::newdawn\+::slick\+::command\+::\+Input\+Provider@{org\+::newdawn\+::slick\+::command\+::\+Input\+Provider}}
+\subsubsection{\texorpdfstring{get\+State()}{getState()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1command_1_1_input_provider_1_1_command_state}{Command\+State}} org.\+newdawn.\+slick.\+command.\+Input\+Provider.\+get\+State (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1command_1_1_command}{Command}}}]{command }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+Get the recorded state for a given command
+
+
+\begin{DoxyParams}{Parameters}
+{\em command} & The command to get the state for \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The given command state 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+186                                                    \{
+187         \textcolor{keywordflow}{return} (CommandState) \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1command_1_1_input_provider_a343fea436b5ad6194968443cc58a632d}{commandState}}.get(command);
+188     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1command_1_1_input_provider_a34d5aff64cb457846fb408caf1f05bf1}\label{classorg_1_1newdawn_1_1slick_1_1command_1_1_input_provider_a34d5aff64cb457846fb408caf1f05bf1}} 
+\index{org\+::newdawn\+::slick\+::command\+::\+Input\+Provider@{org\+::newdawn\+::slick\+::command\+::\+Input\+Provider}!get\+Unique\+Commands@{get\+Unique\+Commands}}
+\index{get\+Unique\+Commands@{get\+Unique\+Commands}!org\+::newdawn\+::slick\+::command\+::\+Input\+Provider@{org\+::newdawn\+::slick\+::command\+::\+Input\+Provider}}
+\subsubsection{\texorpdfstring{get\+Unique\+Commands()}{getUniqueCommands()}}
+{\footnotesize\ttfamily List org.\+newdawn.\+slick.\+command.\+Input\+Provider.\+get\+Unique\+Commands (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get the list of commands that have been registered with the provider, i.\+e. the commands that can be issued to the listeners
+
+\begin{DoxyReturn}{Returns}
+The list of commands (
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1command_1_1_command}{Command}}) that can be issued from this provider 
+\end{DoxySeeAlso}
+
+\begin{DoxyCode}
+57                                     \{
+58         List uniqueCommands = \textcolor{keyword}{new} ArrayList();
+59 
+60         \textcolor{keywordflow}{for} (Iterator it = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1command_1_1_input_provider_ab2bd0c08506a59bc7457d7a87cf873d2}{commands}}.values().iterator(); it.hasNext();) \{
+61             Command command = (Command) it.next();
+62 
+63             \textcolor{keywordflow}{if} (!uniqueCommands.contains(command)) \{
+64                 uniqueCommands.add(command);
+65             \}
+66         \}
+67 
+68         \textcolor{keywordflow}{return} uniqueCommands;
+69     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1command_1_1_input_provider_a13cd156adf59ef712b9ebb4c0c21f2b8}\label{classorg_1_1newdawn_1_1slick_1_1command_1_1_input_provider_a13cd156adf59ef712b9ebb4c0c21f2b8}} 
+\index{org\+::newdawn\+::slick\+::command\+::\+Input\+Provider@{org\+::newdawn\+::slick\+::command\+::\+Input\+Provider}!is\+Active@{is\+Active}}
+\index{is\+Active@{is\+Active}!org\+::newdawn\+::slick\+::command\+::\+Input\+Provider@{org\+::newdawn\+::slick\+::command\+::\+Input\+Provider}}
+\subsubsection{\texorpdfstring{is\+Active()}{isActive()}}
+{\footnotesize\ttfamily boolean org.\+newdawn.\+slick.\+command.\+Input\+Provider.\+is\+Active (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Check if this provider should be sending events
+
+\begin{DoxyReturn}{Returns}
+True if this provider should be sending events 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+109                               \{
+110         \textcolor{keywordflow}{return} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1command_1_1_input_provider_ad390b811fb89db3fde054cc1ecae20b0}{active}};
+111     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1command_1_1_input_provider_a68409d18dded86e1d03b62f33b7e573a}\label{classorg_1_1newdawn_1_1slick_1_1command_1_1_input_provider_a68409d18dded86e1d03b62f33b7e573a}} 
+\index{org\+::newdawn\+::slick\+::command\+::\+Input\+Provider@{org\+::newdawn\+::slick\+::command\+::\+Input\+Provider}!is\+Command\+Control\+Down@{is\+Command\+Control\+Down}}
+\index{is\+Command\+Control\+Down@{is\+Command\+Control\+Down}!org\+::newdawn\+::slick\+::command\+::\+Input\+Provider@{org\+::newdawn\+::slick\+::command\+::\+Input\+Provider}}
+\subsubsection{\texorpdfstring{is\+Command\+Control\+Down()}{isCommandControlDown()}}
+{\footnotesize\ttfamily boolean org.\+newdawn.\+slick.\+command.\+Input\+Provider.\+is\+Command\+Control\+Down (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1command_1_1_command}{Command}}}]{command }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Check if the last control event we recieved related to the given command indicated that a control was down
+
+
+\begin{DoxyParams}{Parameters}
+{\em command} & The command to check \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the last event indicated a button down 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+198                                                          \{
+199         \textcolor{keywordflow}{return} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1command_1_1_input_provider_aa25975d0cc21a4d1a45995c553e72357}{getState}}(command).\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1command_1_1_input_provider_1_1_command_state_aa59f3f148709346d8722c652048fa2cc}{isDown}}();
+200     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1command_1_1_input_provider_a6d760d52392ef0a9d996d5a9dfe777b8}\label{classorg_1_1newdawn_1_1slick_1_1command_1_1_input_provider_a6d760d52392ef0a9d996d5a9dfe777b8}} 
+\index{org\+::newdawn\+::slick\+::command\+::\+Input\+Provider@{org\+::newdawn\+::slick\+::command\+::\+Input\+Provider}!is\+Command\+Control\+Pressed@{is\+Command\+Control\+Pressed}}
+\index{is\+Command\+Control\+Pressed@{is\+Command\+Control\+Pressed}!org\+::newdawn\+::slick\+::command\+::\+Input\+Provider@{org\+::newdawn\+::slick\+::command\+::\+Input\+Provider}}
+\subsubsection{\texorpdfstring{is\+Command\+Control\+Pressed()}{isCommandControlPressed()}}
+{\footnotesize\ttfamily boolean org.\+newdawn.\+slick.\+command.\+Input\+Provider.\+is\+Command\+Control\+Pressed (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1command_1_1_command}{Command}}}]{command }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Check if one of the controls related to the command specified has been pressed since we last called this method
+
+
+\begin{DoxyParams}{Parameters}
+{\em command} & The command to check \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if one of the controls has been pressed 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+210                                                             \{
+211         \textcolor{keywordflow}{return} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1command_1_1_input_provider_aa25975d0cc21a4d1a45995c553e72357}{getState}}(command).\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1command_1_1_input_provider_1_1_command_state_a8216987ce9b6ed4abf545af323b341bc}{isPressed}}();
+212     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1command_1_1_input_provider_ae6178aceb952f89deca034a74a2fd160}\label{classorg_1_1newdawn_1_1slick_1_1command_1_1_input_provider_ae6178aceb952f89deca034a74a2fd160}} 
+\index{org\+::newdawn\+::slick\+::command\+::\+Input\+Provider@{org\+::newdawn\+::slick\+::command\+::\+Input\+Provider}!remove\+Listener@{remove\+Listener}}
+\index{remove\+Listener@{remove\+Listener}!org\+::newdawn\+::slick\+::command\+::\+Input\+Provider@{org\+::newdawn\+::slick\+::command\+::\+Input\+Provider}}
+\subsubsection{\texorpdfstring{remove\+Listener()}{removeListener()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+command.\+Input\+Provider.\+remove\+Listener (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1command_1_1_input_provider_listener}{Input\+Provider\+Listener}}}]{listener }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Remove a listener from this provider. The listener will no longer be provided with notification of commands performe.
+
+
+\begin{DoxyParams}{Parameters}
+{\em listener} & The listener to be removed \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+131                                                                \{
+132         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1command_1_1_input_provider_a007146935ecc6c0f69ff3d7958042867}{listeners}}.remove(listener);
+133     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1command_1_1_input_provider_a4ff61ae89a9b3fc0ac8bcf95adc38a01}\label{classorg_1_1newdawn_1_1slick_1_1command_1_1_input_provider_a4ff61ae89a9b3fc0ac8bcf95adc38a01}} 
+\index{org\+::newdawn\+::slick\+::command\+::\+Input\+Provider@{org\+::newdawn\+::slick\+::command\+::\+Input\+Provider}!set\+Active@{set\+Active}}
+\index{set\+Active@{set\+Active}!org\+::newdawn\+::slick\+::command\+::\+Input\+Provider@{org\+::newdawn\+::slick\+::command\+::\+Input\+Provider}}
+\subsubsection{\texorpdfstring{set\+Active()}{setActive()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+command.\+Input\+Provider.\+set\+Active (\begin{DoxyParamCaption}\item[{boolean}]{active }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Indicate whether this provider should be sending events
+
+
+\begin{DoxyParams}{Parameters}
+{\em active} & True if this provider should be sending events \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+100                                           \{
+101         this.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1command_1_1_input_provider_ad390b811fb89db3fde054cc1ecae20b0}{active}} = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1command_1_1_input_provider_ad390b811fb89db3fde054cc1ecae20b0}{active}};
+102     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1command_1_1_input_provider_a4c5a3cae6a8b19d53b8a3419d856d449}\label{classorg_1_1newdawn_1_1slick_1_1command_1_1_input_provider_a4c5a3cae6a8b19d53b8a3419d856d449}} 
+\index{org\+::newdawn\+::slick\+::command\+::\+Input\+Provider@{org\+::newdawn\+::slick\+::command\+::\+Input\+Provider}!unbind\+Command@{unbind\+Command}}
+\index{unbind\+Command@{unbind\+Command}!org\+::newdawn\+::slick\+::command\+::\+Input\+Provider@{org\+::newdawn\+::slick\+::command\+::\+Input\+Provider}}
+\subsubsection{\texorpdfstring{unbind\+Command()}{unbindCommand()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+command.\+Input\+Provider.\+unbind\+Command (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1command_1_1_control}{Control}}}]{control }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Unbinds the command associated with this control
+
+
+\begin{DoxyParams}{Parameters}
+{\em control} & The control to remove \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+170                                                \{
+171         Command command = (Command) \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1command_1_1_input_provider_ab2bd0c08506a59bc7457d7a87cf873d2}{commands}}.remove(control);
+172         \textcolor{keywordflow}{if} (command != null) \{
+173             \textcolor{keywordflow}{if} (!\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1command_1_1_input_provider_ab2bd0c08506a59bc7457d7a87cf873d2}{commands}}.keySet().contains(command)) \{
+174                 \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1command_1_1_input_provider_a343fea436b5ad6194968443cc58a632d}{commandState}}.remove(command);
+175             \}
+176         \}
+177     \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1command_1_1_input_provider_ad390b811fb89db3fde054cc1ecae20b0}\label{classorg_1_1newdawn_1_1slick_1_1command_1_1_input_provider_ad390b811fb89db3fde054cc1ecae20b0}} 
+\index{org\+::newdawn\+::slick\+::command\+::\+Input\+Provider@{org\+::newdawn\+::slick\+::command\+::\+Input\+Provider}!active@{active}}
+\index{active@{active}!org\+::newdawn\+::slick\+::command\+::\+Input\+Provider@{org\+::newdawn\+::slick\+::command\+::\+Input\+Provider}}
+\subsubsection{\texorpdfstring{active}{active}}
+{\footnotesize\ttfamily boolean org.\+newdawn.\+slick.\+command.\+Input\+Provider.\+active = true\hspace{0.3cm}{\ttfamily [private]}}
+
+True if this provider is actively sending events \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1command_1_1_input_provider_ab2bd0c08506a59bc7457d7a87cf873d2}\label{classorg_1_1newdawn_1_1slick_1_1command_1_1_input_provider_ab2bd0c08506a59bc7457d7a87cf873d2}} 
+\index{org\+::newdawn\+::slick\+::command\+::\+Input\+Provider@{org\+::newdawn\+::slick\+::command\+::\+Input\+Provider}!commands@{commands}}
+\index{commands@{commands}!org\+::newdawn\+::slick\+::command\+::\+Input\+Provider@{org\+::newdawn\+::slick\+::command\+::\+Input\+Provider}}
+\subsubsection{\texorpdfstring{commands}{commands}}
+{\footnotesize\ttfamily Hash\+Map org.\+newdawn.\+slick.\+command.\+Input\+Provider.\+commands\hspace{0.3cm}{\ttfamily [private]}}
+
+The commands that have been defined \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1command_1_1_input_provider_a343fea436b5ad6194968443cc58a632d}\label{classorg_1_1newdawn_1_1slick_1_1command_1_1_input_provider_a343fea436b5ad6194968443cc58a632d}} 
+\index{org\+::newdawn\+::slick\+::command\+::\+Input\+Provider@{org\+::newdawn\+::slick\+::command\+::\+Input\+Provider}!command\+State@{command\+State}}
+\index{command\+State@{command\+State}!org\+::newdawn\+::slick\+::command\+::\+Input\+Provider@{org\+::newdawn\+::slick\+::command\+::\+Input\+Provider}}
+\subsubsection{\texorpdfstring{command\+State}{commandState}}
+{\footnotesize\ttfamily Hash\+Map org.\+newdawn.\+slick.\+command.\+Input\+Provider.\+command\+State = new Hash\+Map()\hspace{0.3cm}{\ttfamily [private]}}
+
+The command input states \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1command_1_1_input_provider_a7a9d7954c539d61bd8623da41c199d74}\label{classorg_1_1newdawn_1_1slick_1_1command_1_1_input_provider_a7a9d7954c539d61bd8623da41c199d74}} 
+\index{org\+::newdawn\+::slick\+::command\+::\+Input\+Provider@{org\+::newdawn\+::slick\+::command\+::\+Input\+Provider}!input@{input}}
+\index{input@{input}!org\+::newdawn\+::slick\+::command\+::\+Input\+Provider@{org\+::newdawn\+::slick\+::command\+::\+Input\+Provider}}
+\subsubsection{\texorpdfstring{input}{input}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_input}{Input}} org.\+newdawn.\+slick.\+command.\+Input\+Provider.\+input\hspace{0.3cm}{\ttfamily [private]}}
+
+The input context we\textquotesingle{}re responding to \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1command_1_1_input_provider_a007146935ecc6c0f69ff3d7958042867}\label{classorg_1_1newdawn_1_1slick_1_1command_1_1_input_provider_a007146935ecc6c0f69ff3d7958042867}} 
+\index{org\+::newdawn\+::slick\+::command\+::\+Input\+Provider@{org\+::newdawn\+::slick\+::command\+::\+Input\+Provider}!listeners@{listeners}}
+\index{listeners@{listeners}!org\+::newdawn\+::slick\+::command\+::\+Input\+Provider@{org\+::newdawn\+::slick\+::command\+::\+Input\+Provider}}
+\subsubsection{\texorpdfstring{listeners}{listeners}}
+{\footnotesize\ttfamily Array\+List org.\+newdawn.\+slick.\+command.\+Input\+Provider.\+listeners = new Array\+List()\hspace{0.3cm}{\ttfamily [private]}}
+
+The list of listeners that may be listening 

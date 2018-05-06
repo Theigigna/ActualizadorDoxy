@@ -1,0 +1,993 @@
+\hypertarget{classlibreria_1_1_libreria}{}\section{libreria.\+Libreria Class Reference}
+\label{classlibreria_1_1_libreria}\index{libreria.\+Libreria@{libreria.\+Libreria}}
+Inheritance diagram for libreria.\+Libreria\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classlibreria_1_1_libreria}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classlibreria_1_1_libreria_a93220dd4de47ee3b7ef4b2a90701c253}{Libreria}} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static float \mbox{\hyperlink{classlibreria_1_1_libreria_a33f2cc093f3c15f09e146283e0c025d7}{calculardescuento}} (String nombreclase)
+\item 
+static void \mbox{\hyperlink{classlibreria_1_1_libreria_abc10249e70e74a9ba55a081bbf23cfcd}{guardardatos}} ()  throws File\+Not\+Found\+Exception, I\+O\+Exception
+\item 
+static void \mbox{\hyperlink{classlibreria_1_1_libreria_a0ebf81d2e66a26a82de5b997aae37065}{accederdatos}} ()  throws File\+Not\+Found\+Exception, I\+O\+Exception, Class\+Not\+Found\+Exception
+\item 
+static void \mbox{\hyperlink{classlibreria_1_1_libreria_ad54897f12a3077bb2f29f51663049d20}{factura\+Libro\+Mensual}} (\mbox{\hyperlink{classlibreria_1_1_libro}{Libro}} libro, int n)
+\item 
+static void \mbox{\hyperlink{classlibreria_1_1_libreria_a6d56a0ad8d97bfa5625e6712eeba1ec3}{guardar\+Factura\+Caso\+Libro\+Consulta}} (\mbox{\hyperlink{classlibreria_1_1_cliente}{Cliente}} cliente, \mbox{\hyperlink{classlibreria_1_1_libro}{Libro}} libro, int numeromeses)
+\item 
+static void \mbox{\hyperlink{classlibreria_1_1_libreria_ac64f9e699ce3d10290c3f3303611b04a}{factura\+Libro}} (\mbox{\hyperlink{classlibreria_1_1_libro}{Libro}} libro, String formato)
+\item 
+static void \mbox{\hyperlink{classlibreria_1_1_libreria_a45eb93a6c3196e51a3b37075001ba215}{guardar\+Factura\+Caso\+Libro\+Compra}} (\mbox{\hyperlink{classlibreria_1_1_cliente}{Cliente}} cliente, \mbox{\hyperlink{classlibreria_1_1_libro}{Libro}} libro, String formato)
+\item 
+static void \mbox{\hyperlink{classlibreria_1_1_libreria_a6a77f1405b57c77f702d8438aec968e8}{guardar\+Factura\+Caso\+Lector}} (\mbox{\hyperlink{classlibreria_1_1_cliente}{Cliente}} cliente, \mbox{\hyperlink{classlibreria_1_1_lectores}{Lectores}} lector, String direccion)
+\item 
+static void \mbox{\hyperlink{classlibreria_1_1_libreria_a706ac513e37d19235273ec939e4fa8ac}{factura\+Lector}} (\mbox{\hyperlink{classlibreria_1_1_lectores}{Lectores}} lector, String direccion)
+\item 
+static boolean \mbox{\hyperlink{classlibreria_1_1_libreria_aec6380fd1bcff89fb0f2d6d4b4584598}{estaellibrotitulo}} (String titulo)
+\item 
+static boolean \mbox{\hyperlink{classlibreria_1_1_libreria_a0af77d7fa2b6f3c0a0b218ee9df08ce3}{estaellibro}} (String isbnn)
+\item 
+static boolean \mbox{\hyperlink{classlibreria_1_1_libreria_a1d272b2c2f64bbeaa6e24f4f8c5ba2e7}{estaellector}} (String numeroserie)
+\item 
+static boolean \mbox{\hyperlink{classlibreria_1_1_libreria_afca98a0ea16507ff5cc9bc0dde706abb}{estaenblanco}} (String cosa)
+\item 
+static boolean \mbox{\hyperlink{classlibreria_1_1_libreria_a0c70e18fd24cf773ee523d7fb77fd5b6}{introducircliente}} (String nombre, String apellido1, String apellido2, String nif, String tipodeusuario, String usuario, String contrasena)
+\item 
+static boolean \mbox{\hyperlink{classlibreria_1_1_libreria_a4e350d17616aa0869662e953ed4430e9}{introducirtexto}} (String nivel, String curso, String materia, String isbn, String titulo, String Autor, String Editorial, String \mbox{[}$\,$\mbox{]} fechapublicacion, float precio, float preciomensual)
+\item 
+static boolean \mbox{\hyperlink{classlibreria_1_1_libreria_aa5450eb41fd6d88d4a26514245729842}{introducirlectura}} (String nivelrecomendado, String genero, String resumen, String isbn, String titulo, String Autor, String Editorial, String \mbox{[}$\,$\mbox{]} fechapublicacion, float precio, float preciomensual)
+\item 
+static boolean \mbox{\hyperlink{classlibreria_1_1_libreria_a97c39db00171d7084a2f73562dc9e77f}{introducirdiccionario}} (String idioma, Array\+List cursos, String isbn, String titulo, String Autor, String Editorial, String \mbox{[}$\,$\mbox{]} fechapublicacion, float precio, float preciomensual)
+\item 
+static boolean \mbox{\hyperlink{classlibreria_1_1_libreria_a5582b1ac3c3a9cd393a92128c2f77dce}{introducirlector}} (String numerodeserie, String marca, String modelo, float precio, String descripcion)
+\item 
+static boolean \mbox{\hyperlink{classlibreria_1_1_libreria_adea7dde2dd160bf72da7a33b981dbf8f}{dardebajalibro}} (String isbn)
+\item 
+static boolean \mbox{\hyperlink{classlibreria_1_1_libreria_a6ebb6d0b3c9f63404c54ffe69d67d495}{dardebajalector}} (String numeroserie)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static Array\+List$<$ \mbox{\hyperlink{classlibreria_1_1_factura}{Factura}} $>$ \mbox{\hyperlink{classlibreria_1_1_libreria_a1b6aaea2b6d1d95a7e25b85881e82721}{arrayfacturas}} = new Array\+List$<$\mbox{\hyperlink{classlibreria_1_1_factura}{Factura}}$>$()
+\item 
+static Array\+List$<$ \mbox{\hyperlink{classlibreria_1_1_factura}{Factura}} $>$ \mbox{\hyperlink{classlibreria_1_1_libreria_a29c40164090c7a129f082735a0d15664}{arrayfacturasaux}} = new Array\+List$<$\mbox{\hyperlink{classlibreria_1_1_factura}{Factura}}$>$()
+\item 
+static Array\+List$<$ \mbox{\hyperlink{classlibreria_1_1_libro}{Libro}} $>$ \mbox{\hyperlink{classlibreria_1_1_libreria_aa55c2bad2db92eb94ea1ba9c6997f47d}{arraylibros}} = new Array\+List$<$\mbox{\hyperlink{classlibreria_1_1_libro}{Libro}}$>$()
+\item 
+static Array\+List$<$ \mbox{\hyperlink{classlibreria_1_1_lectores}{Lectores}} $>$ \mbox{\hyperlink{classlibreria_1_1_libreria_ac9e002dcb370eb6caa314d18cf14a293}{arraylectores}} = new Array\+List$<$\mbox{\hyperlink{classlibreria_1_1_lectores}{Lectores}}$>$()
+\item 
+static Hash\+Map$<$ String, \mbox{\hyperlink{classlibreria_1_1_cliente}{Cliente}} $>$ \mbox{\hyperlink{classlibreria_1_1_libreria_a9bb86627af6c43f97367c8a28d9f0d3e}{clienteshashmap}} = new Hash\+Map $<$$>$()
+\item 
+static \mbox{\hyperlink{classlibreria_1_1_libro}{Libro}} \mbox{\hyperlink{classlibreria_1_1_libreria_a020582c6fff65be09a8f61c6f9bb19e1}{libroparacomprar}}
+\item 
+static \mbox{\hyperlink{classlibreria_1_1_lectores}{Lectores}} \mbox{\hyperlink{classlibreria_1_1_libreria_adb43b6e9fa686d822bddeca29dbdba84}{lectorparacomprar}}
+\item 
+static Array\+List$<$ String $>$ \mbox{\hyperlink{classlibreria_1_1_libreria_a419cfdeb78bb0c7d9af85e493121fc34}{arraylibrosauxiliar}} = new Array\+List$<$String$>$()
+\item 
+static Array\+List$<$ String $>$ \mbox{\hyperlink{classlibreria_1_1_libreria_a01d26185581990bccbe9041740911af9}{arraylectoresauxiliar}} = new Array\+List$<$String$>$()
+\item 
+static \mbox{\hyperlink{classlibreria_1_1_cliente}{Cliente}} \mbox{\hyperlink{classlibreria_1_1_libreria_afcc53a4ee673ee845bc07288aa5c7181}{clienteactual}}
+\item 
+static \mbox{\hyperlink{classlibreria_1_1_factura}{Factura}} \mbox{\hyperlink{classlibreria_1_1_libreria_a7255df1dedc7a1d54c8573043a435574}{facturaactual}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Esta clase contiene todas las vatiables necesarias para el programa, incluyendo los arraylist de libros y lectores, y el hashmap de clientes. A su ver las variables auxiliares arraylist String libros y lectore, libroparacomprar, lectorparacomprar, clienteactual.
+
+\begin{DoxyAuthor}{Author}
+Fernando Gómez Alonso 
+\end{DoxyAuthor}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classlibreria_1_1_libreria_a93220dd4de47ee3b7ef4b2a90701c253}\label{classlibreria_1_1_libreria_a93220dd4de47ee3b7ef4b2a90701c253}} 
+\index{libreria\+::\+Libreria@{libreria\+::\+Libreria}!Libreria@{Libreria}}
+\index{Libreria@{Libreria}!libreria\+::\+Libreria@{libreria\+::\+Libreria}}
+\subsubsection{\texorpdfstring{Libreria()}{Libreria()}}
+{\footnotesize\ttfamily libreria.\+Libreria.\+Libreria (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+contructor de la clase libreria 
+\begin{DoxyCode}
+45                       \{
+46      \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classlibreria_1_1_libreria_a0ebf81d2e66a26a82de5b997aae37065}\label{classlibreria_1_1_libreria_a0ebf81d2e66a26a82de5b997aae37065}} 
+\index{libreria\+::\+Libreria@{libreria\+::\+Libreria}!accederdatos@{accederdatos}}
+\index{accederdatos@{accederdatos}!libreria\+::\+Libreria@{libreria\+::\+Libreria}}
+\subsubsection{\texorpdfstring{accederdatos()}{accederdatos()}}
+{\footnotesize\ttfamily static void libreria.\+Libreria.\+accederdatos (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws File\+Not\+Found\+Exception, I\+O\+Exception, Class\+Not\+Found\+Exception\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+esta funcion sirve para acceder a los datos de los archivos .dat donde tenemos nuestros arraylists y hashmap se usara al principio de la aplicacion, para poder tener los datos desde un principio
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em File\+Not\+Found\+Exception} & lanza la excepcion filenotfoun \\
+\hline
+{\em I\+O\+Exception} & lanza la excepcion ioexception \\
+\hline
+{\em Class\+Not\+Found\+Exception} & lanza la excepcion classnotfound \\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyCode}
+122                                                                                                         \{
+123          ObjectInputStream entrada1 = \textcolor{keyword}{new} ObjectInputStream(\textcolor{keyword}{new} FileInputStream(\textcolor{stringliteral}{"libros.dat"}));
+124          \mbox{\hyperlink{classlibreria_1_1_libreria_aa55c2bad2db92eb94ea1ba9c6997f47d}{arraylibros}} = (ArrayList<Libro>) entrada1.readObject();
+125          entrada1.close();
+126          
+127          ObjectInputStream entrada2 = \textcolor{keyword}{new} ObjectInputStream(\textcolor{keyword}{new} FileInputStream(\textcolor{stringliteral}{"lectores.dat"}));
+128          \mbox{\hyperlink{classlibreria_1_1_libreria_ac9e002dcb370eb6caa314d18cf14a293}{arraylectores}} = (ArrayList<Lectores>) entrada2.readObject();
+129          entrada2.close();
+130          
+131          ObjectInputStream entrada4 = \textcolor{keyword}{new} ObjectInputStream(\textcolor{keyword}{new} FileInputStream(\textcolor{stringliteral}{"facturas.dat"}));
+132          \mbox{\hyperlink{classlibreria_1_1_libreria_a1b6aaea2b6d1d95a7e25b85881e82721}{arrayfacturas}} = (ArrayList<Factura>) entrada4.readObject();
+133          entrada4.close();
+134         
+135         \textcolor{keywordflow}{try} \{
+136             FileInputStream file = \textcolor{keyword}{new} FileInputStream(\textcolor{stringliteral}{"clientes.dat"});
+137             ObjectInputStream entrada3 = \textcolor{keyword}{new} ObjectInputStream(file);
+138             \mbox{\hyperlink{classlibreria_1_1_libreria_a9bb86627af6c43f97367c8a28d9f0d3e}{clienteshashmap}}= (HashMap) entrada3.readObject();
+139             file.close();
+140         \} \textcolor{keywordflow}{catch} (IOException ioe) \{
+141             System.out.println(\textcolor{stringliteral}{"Error de IO: "} + ioe.getMessage());
+142         \} \textcolor{keywordflow}{catch} (ClassNotFoundException cnfe) \{
+143             System.out.println(\textcolor{stringliteral}{"Error de clase no encontrada: "} + cnfe.getMessage());
+144         \} \textcolor{keywordflow}{catch} (Exception e) \{
+145             System.out.println(\textcolor{stringliteral}{"Error: "} + e.getMessage());\}
+146          
+147      \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classlibreria_1_1_libreria_a33f2cc093f3c15f09e146283e0c025d7}\label{classlibreria_1_1_libreria_a33f2cc093f3c15f09e146283e0c025d7}} 
+\index{libreria\+::\+Libreria@{libreria\+::\+Libreria}!calculardescuento@{calculardescuento}}
+\index{calculardescuento@{calculardescuento}!libreria\+::\+Libreria@{libreria\+::\+Libreria}}
+\subsubsection{\texorpdfstring{calculardescuento()}{calculardescuento()}}
+{\footnotesize\ttfamily static float libreria.\+Libreria.\+calculardescuento (\begin{DoxyParamCaption}\item[{String}]{nombreclase }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em nombreclase} & indica que tipo de producto es, y dependiendo de eso, y del tipo de cliente que sea(estudiante/profesor), recibe un descuento diferente \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+retorna el numero por el que se tiene que multiplicar el precio base 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+52                                                               \{
+53         \textcolor{keywordtype}{float} acabado = 0;
+54         
+55         \textcolor{keywordflow}{if}(nombreclase.equals(\textcolor{stringliteral}{"LibroTexto"}))\{
+56             \textcolor{keywordflow}{if}(\mbox{\hyperlink{classlibreria_1_1_libreria_afcc53a4ee673ee845bc07288aa5c7181}{clienteactual}}.\mbox{\hyperlink{classlibreria_1_1_cliente_a3111aacdea652c8dd96664c643c3c52a}{getTipousuario}}().equals(\textcolor{stringliteral}{"profesor"}))\{
+57                 acabado = (float) 0.8;
+58             \}\textcolor{keywordflow}{else}\{
+59                 acabado = (float) 0.9;
+60             \}
+61         \}\textcolor{keywordflow}{else}\{
+62             
+63             \textcolor{keywordflow}{if}(nombreclase.equals(\textcolor{stringliteral}{"LibroLectura"}))\{
+64                 \textcolor{keywordflow}{if}(\mbox{\hyperlink{classlibreria_1_1_libreria_afcc53a4ee673ee845bc07288aa5c7181}{clienteactual}}.\mbox{\hyperlink{classlibreria_1_1_cliente_a3111aacdea652c8dd96664c643c3c52a}{getTipousuario}}().equals(\textcolor{stringliteral}{"profesor"}))\{
+65                     acabado = (float) 1;
+66                 \}\textcolor{keywordflow}{else}\{
+67                     acabado = (float) 0.9;
+68                 \}
+69             \}\textcolor{keywordflow}{else}\{
+70                 
+71                     \textcolor{keywordflow}{if}(\mbox{\hyperlink{classlibreria_1_1_libreria_afcc53a4ee673ee845bc07288aa5c7181}{clienteactual}}.\mbox{\hyperlink{classlibreria_1_1_cliente_a3111aacdea652c8dd96664c643c3c52a}{getTipousuario}}().equals(\textcolor{stringliteral}{"profesor"}))\{
+72                         acabado = (float) 1;
+73                     \}\textcolor{keywordflow}{else}\{
+74                         acabado = (float) 0.95;
+75                     \}
+76                 
+77             \}
+78         \}
+79         \textcolor{keywordflow}{return} acabado;
+80     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classlibreria_1_1_libreria_a6ebb6d0b3c9f63404c54ffe69d67d495}\label{classlibreria_1_1_libreria_a6ebb6d0b3c9f63404c54ffe69d67d495}} 
+\index{libreria\+::\+Libreria@{libreria\+::\+Libreria}!dardebajalector@{dardebajalector}}
+\index{dardebajalector@{dardebajalector}!libreria\+::\+Libreria@{libreria\+::\+Libreria}}
+\subsubsection{\texorpdfstring{dardebajalector()}{dardebajalector()}}
+{\footnotesize\ttfamily static boolean libreria.\+Libreria.\+dardebajalector (\begin{DoxyParamCaption}\item[{String}]{numeroserie }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+funcion que intenta dear de baja un lector ( borrarlo del arraylist \mbox{\hyperlink{classlibreria_1_1_lectores}{Lectores}} arraylectores 
+\begin{DoxyParams}{Parameters}
+{\em numeroserie} & numero de serie por el que pedimos la baja del lector \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+retorna true si se ha dado de baja y false si no se ha dado de baja 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+615                                                               \{
+616          \textcolor{keywordtype}{boolean} podemosdarlodebaja;
+617          podemosdarlodebaja = \mbox{\hyperlink{classlibreria_1_1_libreria_a1d272b2c2f64bbeaa6e24f4f8c5ba2e7}{estaellector}}(numeroserie);
+618          \textcolor{keywordtype}{boolean} campoimportanteenblanco = \textcolor{keyword}{false};
+619          campoimportanteenblanco = \mbox{\hyperlink{classlibreria_1_1_libreria_afca98a0ea16507ff5cc9bc0dde706abb}{estaenblanco}}(numeroserie);
+620          \textcolor{keywordflow}{if}(podemosdarlodebaja&&(!campoimportanteenblanco))\{
+621             \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i = 0; i<\mbox{\hyperlink{classlibreria_1_1_libreria_ac9e002dcb370eb6caa314d18cf14a293}{arraylectores}}.size();i++)\{
+622                 \textcolor{keywordflow}{if}(numeroserie.equals(\mbox{\hyperlink{classlibreria_1_1_libreria_ac9e002dcb370eb6caa314d18cf14a293}{arraylectores}}.get(i).getNumerodeserie()))
+623                 \{
+624                     \mbox{\hyperlink{classlibreria_1_1_libreria_ac9e002dcb370eb6caa314d18cf14a293}{arraylectores}}.remove(i);
+625                     
+626                 \}
+627             \}
+628             \textcolor{keywordflow}{try} \{
+629                      \mbox{\hyperlink{classlibreria_1_1_libreria_abc10249e70e74a9ba55a081bbf23cfcd}{guardardatos}}();
+630                  \} \textcolor{keywordflow}{catch} (IOException ex) \{
+631                      Logger.getLogger(\mbox{\hyperlink{classlibreria_1_1_libreria_a93220dd4de47ee3b7ef4b2a90701c253}{Libreria}}.class.getName()).log(Level.SEVERE, null, ex);
+632                  \}
+633             \textcolor{keywordflow}{return} \textcolor{keyword}{true};
+634         \}\textcolor{keywordflow}{else}\{
+635             \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+636         \}
+637          
+638          
+639      \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classlibreria_1_1_libreria_adea7dde2dd160bf72da7a33b981dbf8f}\label{classlibreria_1_1_libreria_adea7dde2dd160bf72da7a33b981dbf8f}} 
+\index{libreria\+::\+Libreria@{libreria\+::\+Libreria}!dardebajalibro@{dardebajalibro}}
+\index{dardebajalibro@{dardebajalibro}!libreria\+::\+Libreria@{libreria\+::\+Libreria}}
+\subsubsection{\texorpdfstring{dardebajalibro()}{dardebajalibro()}}
+{\footnotesize\ttfamily static boolean libreria.\+Libreria.\+dardebajalibro (\begin{DoxyParamCaption}\item[{String}]{isbn }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+funcion que inteta dar de baja un libro (borrarlo del arraylist \mbox{\hyperlink{classlibreria_1_1_libro}{Libro}} arraylibros 
+\begin{DoxyParams}{Parameters}
+{\em isbn} & isbn por el que predimos la baja del libro \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+retorna true si se ha dado de baja y false si no se ha dado de baja 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+581                                                       \{
+582          
+583         \textcolor{keywordtype}{boolean} podemosdarlodebaja;
+584         podemosdarlodebaja = \mbox{\hyperlink{classlibreria_1_1_libreria_a0af77d7fa2b6f3c0a0b218ee9df08ce3}{estaellibro}}(isbn);
+585         \textcolor{keywordtype}{boolean} campoimportanteenblanco = \textcolor{keyword}{false};
+586         campoimportanteenblanco = \mbox{\hyperlink{classlibreria_1_1_libreria_afca98a0ea16507ff5cc9bc0dde706abb}{estaenblanco}}(isbn);
+587         
+588         
+589         \textcolor{keywordflow}{if}(podemosdarlodebaja&&(!campoimportanteenblanco))\{
+590             \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i = 0; i<\mbox{\hyperlink{classlibreria_1_1_libreria_aa55c2bad2db92eb94ea1ba9c6997f47d}{arraylibros}}.size();i++)\{
+591                 \textcolor{keywordflow}{if}(isbn.equals(\mbox{\hyperlink{classlibreria_1_1_libreria_aa55c2bad2db92eb94ea1ba9c6997f47d}{arraylibros}}.get(i).getIsbn()))
+592                 \{
+593                     \mbox{\hyperlink{classlibreria_1_1_libreria_aa55c2bad2db92eb94ea1ba9c6997f47d}{arraylibros}}.remove(i);
+594                     
+595                 \}
+596             \}
+597             \textcolor{keywordflow}{try} \{
+598                      \mbox{\hyperlink{classlibreria_1_1_libreria_abc10249e70e74a9ba55a081bbf23cfcd}{guardardatos}}();
+599                  \} \textcolor{keywordflow}{catch} (IOException ex) \{
+600                      Logger.getLogger(\mbox{\hyperlink{classlibreria_1_1_libreria_a93220dd4de47ee3b7ef4b2a90701c253}{Libreria}}.class.getName()).log(Level.SEVERE, null, ex);
+601                  \}
+602             \textcolor{keywordflow}{return} \textcolor{keyword}{true};
+603         \}\textcolor{keywordflow}{else}\{
+604             \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+605         \}
+606          
+607      \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classlibreria_1_1_libreria_a1d272b2c2f64bbeaa6e24f4f8c5ba2e7}\label{classlibreria_1_1_libreria_a1d272b2c2f64bbeaa6e24f4f8c5ba2e7}} 
+\index{libreria\+::\+Libreria@{libreria\+::\+Libreria}!estaellector@{estaellector}}
+\index{estaellector@{estaellector}!libreria\+::\+Libreria@{libreria\+::\+Libreria}}
+\subsubsection{\texorpdfstring{estaellector()}{estaellector()}}
+{\footnotesize\ttfamily static boolean libreria.\+Libreria.\+estaellector (\begin{DoxyParamCaption}\item[{String}]{numeroserie }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+esta funcion nos indica si un lector esta en un arraylist \mbox{\hyperlink{classlibreria_1_1_lectores}{Lectores}} o no 
+\begin{DoxyParams}{Parameters}
+{\em numeroserie} & contiene el numero de serie cuyo lector buscamos \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+retorna true si esta el lector en el arraylist y false si no lo esta 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+332                                                            \{
+333          \textcolor{keywordtype}{int} tamano = \mbox{\hyperlink{classlibreria_1_1_libreria_ac9e002dcb370eb6caa314d18cf14a293}{arraylectores}}.size();
+334          \textcolor{keywordtype}{boolean} estadentro = \textcolor{keyword}{false};
+335          \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i = 0; i<tamano; i++)\{
+336              \textcolor{keywordflow}{if}(numeroserie.equals(\mbox{\hyperlink{classlibreria_1_1_libreria_ac9e002dcb370eb6caa314d18cf14a293}{arraylectores}}.get(i).getNumerodeserie()))\{
+337                  estadentro = \textcolor{keyword}{true};
+338              \}
+339          \}
+340          \textcolor{keywordflow}{return} estadentro;
+341      \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classlibreria_1_1_libreria_a0af77d7fa2b6f3c0a0b218ee9df08ce3}\label{classlibreria_1_1_libreria_a0af77d7fa2b6f3c0a0b218ee9df08ce3}} 
+\index{libreria\+::\+Libreria@{libreria\+::\+Libreria}!estaellibro@{estaellibro}}
+\index{estaellibro@{estaellibro}!libreria\+::\+Libreria@{libreria\+::\+Libreria}}
+\subsubsection{\texorpdfstring{estaellibro()}{estaellibro()}}
+{\footnotesize\ttfamily static boolean libreria.\+Libreria.\+estaellibro (\begin{DoxyParamCaption}\item[{String}]{isbnn }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+esta funcion nos sirve para saber si un libro esta en un arraylist libro o no 
+\begin{DoxyParams}{Parameters}
+{\em isbnn} & el el isbn del libro que deseamos saber si esta contenido en el arraylis arraylibros \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+retorna true si esta dentro del arraylist y false si no esta dentro 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+314                                                     \{
+315          \textcolor{keywordtype}{int} tamano;
+316          tamano = \mbox{\hyperlink{classlibreria_1_1_libreria_aa55c2bad2db92eb94ea1ba9c6997f47d}{arraylibros}}.size();
+317          \textcolor{keywordtype}{boolean} estadentro = \textcolor{keyword}{false};
+318          \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i = 0; i<tamano; i++)\{
+319              \textcolor{keywordflow}{if}(isbnn.equals(\mbox{\hyperlink{classlibreria_1_1_libreria_aa55c2bad2db92eb94ea1ba9c6997f47d}{arraylibros}}.get(i).getIsbn()))\{
+320                  estadentro = \textcolor{keyword}{true};
+321              \}
+322          \}
+323          \textcolor{keywordflow}{return} estadentro;
+324      \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classlibreria_1_1_libreria_aec6380fd1bcff89fb0f2d6d4b4584598}\label{classlibreria_1_1_libreria_aec6380fd1bcff89fb0f2d6d4b4584598}} 
+\index{libreria\+::\+Libreria@{libreria\+::\+Libreria}!estaellibrotitulo@{estaellibrotitulo}}
+\index{estaellibrotitulo@{estaellibrotitulo}!libreria\+::\+Libreria@{libreria\+::\+Libreria}}
+\subsubsection{\texorpdfstring{estaellibrotitulo()}{estaellibrotitulo()}}
+{\footnotesize\ttfamily static boolean libreria.\+Libreria.\+estaellibrotitulo (\begin{DoxyParamCaption}\item[{String}]{titulo }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+esta funcion nos indica si un libro ya esta dentro del arraylist con ese mismo titulo 
+\begin{DoxyParams}{Parameters}
+{\em titulo} & titulo del libro para comprobar en el arraylist arraylistlibros \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+retorna true si esta en el arraylist y false si no lo esta 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+293                                                            \{
+294          \textcolor{keywordtype}{int} tamano;
+295          tamano = \mbox{\hyperlink{classlibreria_1_1_libreria_aa55c2bad2db92eb94ea1ba9c6997f47d}{arraylibros}}.size();
+296          \textcolor{keywordtype}{boolean} estadentro = \textcolor{keyword}{false};
+297          \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i = 0; i<tamano; i++)\{
+298              \textcolor{keywordflow}{if}(titulo.equals(\mbox{\hyperlink{classlibreria_1_1_libreria_aa55c2bad2db92eb94ea1ba9c6997f47d}{arraylibros}}.get(i).getTitulo()))\{
+299                  estadentro = \textcolor{keyword}{true};
+300              \}
+301          \}
+302          \textcolor{keywordflow}{return} estadentro;
+303      \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classlibreria_1_1_libreria_afca98a0ea16507ff5cc9bc0dde706abb}\label{classlibreria_1_1_libreria_afca98a0ea16507ff5cc9bc0dde706abb}} 
+\index{libreria\+::\+Libreria@{libreria\+::\+Libreria}!estaenblanco@{estaenblanco}}
+\index{estaenblanco@{estaenblanco}!libreria\+::\+Libreria@{libreria\+::\+Libreria}}
+\subsubsection{\texorpdfstring{estaenblanco()}{estaenblanco()}}
+{\footnotesize\ttfamily static boolean libreria.\+Libreria.\+estaenblanco (\begin{DoxyParamCaption}\item[{String}]{cosa }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+indica si un campo string esta en blanco 
+\begin{DoxyParams}{Parameters}
+{\em cosa} & el string que queremos averigurar si esta en blanco \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+retorna true si esta en blanco y false si esta lleno 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+349                                                     \{
+350          \textcolor{keywordflow}{if} (cosa.equals(NULL))\{
+351              \textcolor{keywordflow}{return} \textcolor{keyword}{true};
+352          \}
+353          \textcolor{keywordflow}{else}\{
+354              \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+355          \}
+356      \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classlibreria_1_1_libreria_a706ac513e37d19235273ec939e4fa8ac}\label{classlibreria_1_1_libreria_a706ac513e37d19235273ec939e4fa8ac}} 
+\index{libreria\+::\+Libreria@{libreria\+::\+Libreria}!factura\+Lector@{factura\+Lector}}
+\index{factura\+Lector@{factura\+Lector}!libreria\+::\+Libreria@{libreria\+::\+Libreria}}
+\subsubsection{\texorpdfstring{factura\+Lector()}{facturaLector()}}
+{\footnotesize\ttfamily static void libreria.\+Libreria.\+factura\+Lector (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classlibreria_1_1_lectores}{Lectores}}}]{lector,  }\item[{String}]{direccion }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+genera un archivo facturacompralector en el caso de que hayamos decidido comprar un lector 
+\begin{DoxyParams}{Parameters}
+{\em lector} & levva la informacion del lector que deseamos \\
+\hline
+{\em direccion} & lleva la direccion a la que debemos enviar el lector \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+263                                                                          \{
+264          Path path = Paths.get(\textcolor{stringliteral}{"facturacomprarlector.txt"});
+265          Charset utf8 = StandardCharsets.UTF\_8;
+266          \textcolor{keywordflow}{try}(BufferedWriter s = Files.newBufferedWriter(path, utf8))\{
+267              Date fecha = \textcolor{keyword}{new} Date();
+268              s.write(\textcolor{stringliteral}{"Factura de compra.\(\backslash\)n\(\backslash\)n"}+
+269                      \textcolor{stringliteral}{"Modelo: "} + lector.getModelo()+\textcolor{stringliteral}{"\(\backslash\)n"}+
+270                      \textcolor{stringliteral}{"Marca: "}+ lector.getMarca()+\textcolor{stringliteral}{"\(\backslash\)n"}+
+271                      \textcolor{stringliteral}{"Fecha de adquisicion: "}+(fecha)+\textcolor{stringliteral}{"\(\backslash\)n"}+
+272                      \textcolor{stringliteral}{"Coste: "}+lector.getPrecio()+\textcolor{stringliteral}{"\(\backslash\)n"}+
+273                      \textcolor{stringliteral}{"Direccion del envio: "}+ direccion +\textcolor{stringliteral}{"\(\backslash\)n"});
+274              
+275          \}\textcolor{keywordflow}{catch}(Exception e)\{
+276              
+277          \}
+278      \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classlibreria_1_1_libreria_ac64f9e699ce3d10290c3f3303611b04a}\label{classlibreria_1_1_libreria_ac64f9e699ce3d10290c3f3303611b04a}} 
+\index{libreria\+::\+Libreria@{libreria\+::\+Libreria}!factura\+Libro@{factura\+Libro}}
+\index{factura\+Libro@{factura\+Libro}!libreria\+::\+Libreria@{libreria\+::\+Libreria}}
+\subsubsection{\texorpdfstring{factura\+Libro()}{facturaLibro()}}
+{\footnotesize\ttfamily static void libreria.\+Libreria.\+factura\+Libro (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classlibreria_1_1_libro}{Libro}}}]{libro,  }\item[{String}]{formato }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+genera un archivo txt facturacompralibro en el caso de que compremos un libro 
+\begin{DoxyParams}{Parameters}
+{\em libro} & lleva la informacion del libro que compramos \\
+\hline
+{\em formato} & es el tipo de formato en el que deseamos descargar el libro \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+201                                                                   \{
+202          String nombreclase = libro.getClass().getName();
+203          \textcolor{keywordtype}{float} multiplicador = \mbox{\hyperlink{classlibreria_1_1_libreria_a33f2cc093f3c15f09e146283e0c025d7}{calculardescuento}}(nombreclase);
+204          Path path = Paths.get(\textcolor{stringliteral}{"facturacompralibro.txt"});
+205          Charset utf8 = StandardCharsets.UTF\_8;
+206          \textcolor{keywordflow}{try}(BufferedWriter s = Files.newBufferedWriter(path, utf8))\{
+207              Date fecha = \textcolor{keyword}{new} Date();
+208              s.write(\textcolor{stringliteral}{"Factura de compra.\(\backslash\)n\(\backslash\)n"}+
+209                      \textcolor{stringliteral}{"Titulo del libro: "}+libro.getTitulo()+\textcolor{stringliteral}{"\(\backslash\)n"}+
+210                      \textcolor{stringliteral}{"ISBN del libro: "}+libro.getIsbn()+\textcolor{stringliteral}{"\(\backslash\)n"}+
+211                      \textcolor{stringliteral}{"Fecha de adquisicion: "}+(fecha)+\textcolor{stringliteral}{"\(\backslash\)n"}+
+212                      \textcolor{stringliteral}{"Coste: "}+(libro.getPrecio()*multiplicador)+\textcolor{stringliteral}{"\(\backslash\)n"}+
+213                      \textcolor{stringliteral}{"Formato: "}+formato+\textcolor{stringliteral}{"\(\backslash\)n"});
+214          \}\textcolor{keywordflow}{catch}(Exception e)\{
+215              
+216          \}
+217      \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classlibreria_1_1_libreria_ad54897f12a3077bb2f29f51663049d20}\label{classlibreria_1_1_libreria_ad54897f12a3077bb2f29f51663049d20}} 
+\index{libreria\+::\+Libreria@{libreria\+::\+Libreria}!factura\+Libro\+Mensual@{factura\+Libro\+Mensual}}
+\index{factura\+Libro\+Mensual@{factura\+Libro\+Mensual}!libreria\+::\+Libreria@{libreria\+::\+Libreria}}
+\subsubsection{\texorpdfstring{factura\+Libro\+Mensual()}{facturaLibroMensual()}}
+{\footnotesize\ttfamily static void libreria.\+Libreria.\+factura\+Libro\+Mensual (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classlibreria_1_1_libro}{Libro}}}]{libro,  }\item[{int}]{n }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+esta funcion generara un archivo txt facturaconsultalibro en el caso que hayamos elejido consultar online 
+\begin{DoxyParams}{Parameters}
+{\em libro} & este parametro lleva la informacion del libro cuya consulta compramos \\
+\hline
+{\em n} & repreenta el numero de meses de consulta \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+155                                                                 \{
+156          String nombreclase = libro.getClass().getName();
+157          \textcolor{keywordtype}{float} multiplicador = \mbox{\hyperlink{classlibreria_1_1_libreria_a33f2cc093f3c15f09e146283e0c025d7}{calculardescuento}}(nombreclase);
+158          Path path = Paths.get(\textcolor{stringliteral}{"facturaconsultalibro.txt"});
+159          Charset utf8 = StandardCharsets.UTF\_8;
+160          \textcolor{keywordflow}{try}(BufferedWriter s = Files.newBufferedWriter(path, utf8))\{
+161              Date fecha = \textcolor{keyword}{new} Date();
+162              s.write(\textcolor{stringliteral}{"Factura de compra.   \(\backslash\)n\(\backslash\)n"}+
+163                      \textcolor{stringliteral}{"Titulo del libro:   "}+libro.getTitulo()+\textcolor{stringliteral}{"\(\backslash\)n   "}+
+164                      \textcolor{stringliteral}{"ISBN del libro:    "}+libro.getIsbn()+\textcolor{stringliteral}{"\(\backslash\)n   "}+
+165                      \textcolor{stringliteral}{"Fecha de adquisicion: "}+(fecha)+\textcolor{stringliteral}{"\(\backslash\)n"}+
+166                      \textcolor{stringliteral}{"Coste:    "}+(libro.getPreciomensual()*n*multiplicador)+\textcolor{stringliteral}{"\(\backslash\)n   "}+
+167                      \textcolor{stringliteral}{"Meses de consulta:    "}+n+\textcolor{stringliteral}{"\(\backslash\)n"});
+168              
+169          \}\textcolor{keywordflow}{catch}(Exception e)\{
+170              
+171          \}
+172      \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classlibreria_1_1_libreria_abc10249e70e74a9ba55a081bbf23cfcd}\label{classlibreria_1_1_libreria_abc10249e70e74a9ba55a081bbf23cfcd}} 
+\index{libreria\+::\+Libreria@{libreria\+::\+Libreria}!guardardatos@{guardardatos}}
+\index{guardardatos@{guardardatos}!libreria\+::\+Libreria@{libreria\+::\+Libreria}}
+\subsubsection{\texorpdfstring{guardardatos()}{guardardatos()}}
+{\footnotesize\ttfamily static void libreria.\+Libreria.\+guardardatos (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws File\+Not\+Found\+Exception, I\+O\+Exception\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+esta funcion sirve para guardar los datos de los arraylist de libros y lectores, y tambien el hashmap de clientes 
+\begin{DoxyExceptions}{Exceptions}
+{\em File\+Not\+Found\+Exception} & lanza la excepcion file not found \\
+\hline
+{\em I\+O\+Exception} & lanza la excepcion ioexception \\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyCode}
+87                                                                                 \{
+88          ObjectOutputStream salida1 = \textcolor{keyword}{new} ObjectOutputStream(\textcolor{keyword}{new} FileOutputStream(\textcolor{stringliteral}{"libros.dat"}));
+89          salida1.writeObject(\mbox{\hyperlink{classlibreria_1_1_libreria_aa55c2bad2db92eb94ea1ba9c6997f47d}{arraylibros}});
+90          salida1.close();
+91          
+92          ObjectOutputStream salida2 = \textcolor{keyword}{new} ObjectOutputStream(\textcolor{keyword}{new} FileOutputStream(\textcolor{stringliteral}{"lectores.dat"}));
+93          salida2.writeObject(\mbox{\hyperlink{classlibreria_1_1_libreria_ac9e002dcb370eb6caa314d18cf14a293}{arraylectores}});
+94          salida2.close();
+95          
+96          ObjectOutputStream salida3 = \textcolor{keyword}{new} ObjectOutputStream(\textcolor{keyword}{new} FileOutputStream(\textcolor{stringliteral}{"facturas.dat"}));
+97          salida3.writeObject(\mbox{\hyperlink{classlibreria_1_1_libreria_a1b6aaea2b6d1d95a7e25b85881e82721}{arrayfacturas}});
+98          salida3.close();
+99          
+100          \textcolor{keywordflow}{try} \{
+101             FileOutputStream ruta = \textcolor{keyword}{new} FileOutputStream(\textcolor{stringliteral}{"clientes.dat"});
+102             ObjectOutputStream entrada3 = \textcolor{keyword}{new} ObjectOutputStream(ruta);
+103             entrada3.writeObject(\mbox{\hyperlink{classlibreria_1_1_libreria_a9bb86627af6c43f97367c8a28d9f0d3e}{clienteshashmap}});
+104             ruta.close();
+105         \} \textcolor{keywordflow}{catch} (IOException ioe) \{
+106             System.out.println(\textcolor{stringliteral}{"Error de IO: "} + ioe.getMessage());
+107         \} \textcolor{keywordflow}{catch} (Exception e) \{
+108             System.out.println(\textcolor{stringliteral}{"Error: "} + e.getMessage());
+109         \}
+110     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classlibreria_1_1_libreria_a6a77f1405b57c77f702d8438aec968e8}\label{classlibreria_1_1_libreria_a6a77f1405b57c77f702d8438aec968e8}} 
+\index{libreria\+::\+Libreria@{libreria\+::\+Libreria}!guardar\+Factura\+Caso\+Lector@{guardar\+Factura\+Caso\+Lector}}
+\index{guardar\+Factura\+Caso\+Lector@{guardar\+Factura\+Caso\+Lector}!libreria\+::\+Libreria@{libreria\+::\+Libreria}}
+\subsubsection{\texorpdfstring{guardar\+Factura\+Caso\+Lector()}{guardarFacturaCasoLector()}}
+{\footnotesize\ttfamily static void libreria.\+Libreria.\+guardar\+Factura\+Caso\+Lector (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classlibreria_1_1_cliente}{Cliente}}}]{cliente,  }\item[{\mbox{\hyperlink{classlibreria_1_1_lectores}{Lectores}}}]{lector,  }\item[{String}]{direccion }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+\begin{DoxyCode}
+239                                                                                                      \{
+240          Lectores lectoraux = lector;
+241          String direccionaux = direccion;
+242          Date fecha = \textcolor{keyword}{new} Date();
+243          String iden = \textcolor{stringliteral}{"F"}+fecha.getDay()+fecha.getMonth()+fecha.getYear()+lector.getNumerodeserie();
+244          Factura factura = \textcolor{keyword}{new} Factura(iden, fecha, lector.getPrecio(), lector.getModelo(), lector.getMarca
+      (), cliente.getNombre(), cliente.getApellido1(), cliente.getApellido2(), cliente.getTipousuario(), cliente.
+      getNif());
+245          \mbox{\hyperlink{classlibreria_1_1_libreria_a1b6aaea2b6d1d95a7e25b85881e82721}{arrayfacturas}}.add(factura);
+246          \mbox{\hyperlink{classlibreria_1_1_libreria_a706ac513e37d19235273ec939e4fa8ac}{facturaLector}}(lectoraux, direccionaux);
+247          
+248      \textcolor{keywordflow}{try} \{
+249         \mbox{\hyperlink{classlibreria_1_1_libreria_abc10249e70e74a9ba55a081bbf23cfcd}{guardardatos}}();
+250     \} \textcolor{keywordflow}{catch} (IOException ex) \{
+251         Logger.getLogger(\mbox{\hyperlink{classlibreria_1_1_libreria_a93220dd4de47ee3b7ef4b2a90701c253}{Libreria}}.class.getName()).log(Level.SEVERE, null, ex);
+252     \}
+253          
+254      \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classlibreria_1_1_libreria_a45eb93a6c3196e51a3b37075001ba215}\label{classlibreria_1_1_libreria_a45eb93a6c3196e51a3b37075001ba215}} 
+\index{libreria\+::\+Libreria@{libreria\+::\+Libreria}!guardar\+Factura\+Caso\+Libro\+Compra@{guardar\+Factura\+Caso\+Libro\+Compra}}
+\index{guardar\+Factura\+Caso\+Libro\+Compra@{guardar\+Factura\+Caso\+Libro\+Compra}!libreria\+::\+Libreria@{libreria\+::\+Libreria}}
+\subsubsection{\texorpdfstring{guardar\+Factura\+Caso\+Libro\+Compra()}{guardarFacturaCasoLibroCompra()}}
+{\footnotesize\ttfamily static void libreria.\+Libreria.\+guardar\+Factura\+Caso\+Libro\+Compra (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classlibreria_1_1_cliente}{Cliente}}}]{cliente,  }\item[{\mbox{\hyperlink{classlibreria_1_1_libro}{Libro}}}]{libro,  }\item[{String}]{formato }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+\begin{DoxyCode}
+219                                                                                                     \{
+220          Libro libroaux = libro;
+221          Date fecha = \textcolor{keyword}{new} Date();
+222          String formatoaux = formato;
+223          String nombreclase = libro.getClass().getName();
+224          \textcolor{keywordtype}{float} multiplicador = \mbox{\hyperlink{classlibreria_1_1_libreria_a33f2cc093f3c15f09e146283e0c025d7}{calculardescuento}}(nombreclase);
+225          String iden = \textcolor{stringliteral}{"F"}+fecha.getDay()+fecha.getMonth()+fecha.getYear()+libro.getIsbn();
+226          \textcolor{keywordtype}{float} importe = libro.getPrecio()*multiplicador;
+227          Factura factura = \textcolor{keyword}{new} Factura(iden, fecha, importe, libro.getTitulo(), libro.getEditorial(), 
+      cliente.getNombre(), cliente.getApellido1(), cliente.getApellido2(), cliente.getTipousuario(), cliente.getNif());
+228          
+229          \mbox{\hyperlink{classlibreria_1_1_libreria_a1b6aaea2b6d1d95a7e25b85881e82721}{arrayfacturas}}.add(factura);
+230          \mbox{\hyperlink{classlibreria_1_1_libreria_ac64f9e699ce3d10290c3f3303611b04a}{facturaLibro}} (libroaux, formatoaux);
+231     \textcolor{keywordflow}{try} \{
+232         \mbox{\hyperlink{classlibreria_1_1_libreria_abc10249e70e74a9ba55a081bbf23cfcd}{guardardatos}}();
+233     \} \textcolor{keywordflow}{catch} (IOException ex) \{
+234         Logger.getLogger(\mbox{\hyperlink{classlibreria_1_1_libreria_a93220dd4de47ee3b7ef4b2a90701c253}{Libreria}}.class.getName()).log(Level.SEVERE, null, ex);
+235     \}
+236          
+237      \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classlibreria_1_1_libreria_a6d56a0ad8d97bfa5625e6712eeba1ec3}\label{classlibreria_1_1_libreria_a6d56a0ad8d97bfa5625e6712eeba1ec3}} 
+\index{libreria\+::\+Libreria@{libreria\+::\+Libreria}!guardar\+Factura\+Caso\+Libro\+Consulta@{guardar\+Factura\+Caso\+Libro\+Consulta}}
+\index{guardar\+Factura\+Caso\+Libro\+Consulta@{guardar\+Factura\+Caso\+Libro\+Consulta}!libreria\+::\+Libreria@{libreria\+::\+Libreria}}
+\subsubsection{\texorpdfstring{guardar\+Factura\+Caso\+Libro\+Consulta()}{guardarFacturaCasoLibroConsulta()}}
+{\footnotesize\ttfamily static void libreria.\+Libreria.\+guardar\+Factura\+Caso\+Libro\+Consulta (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classlibreria_1_1_cliente}{Cliente}}}]{cliente,  }\item[{\mbox{\hyperlink{classlibreria_1_1_libro}{Libro}}}]{libro,  }\item[{int}]{numeromeses }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+\begin{DoxyCode}
+174                                                                                                        \{
+175          Libro libroaux = libro;
+176          \textcolor{keywordtype}{int} numeromesesaux = numeromeses;
+177          String nombreclase = libro.getClass().getName();
+178          \textcolor{keywordtype}{float} multiplicador = \mbox{\hyperlink{classlibreria_1_1_libreria_a33f2cc093f3c15f09e146283e0c025d7}{calculardescuento}}(nombreclase);
+179          \textcolor{keywordtype}{float} importe = libro.getPrecio()*multiplicador;
+180          Date fecha = \textcolor{keyword}{new} Date();
+181          String iden = \textcolor{stringliteral}{"F"}+fecha.getDay()+fecha.getMonth()+fecha.getYear()+libro.getIsbn();
+182          Factura factura = \textcolor{keyword}{new} Factura(iden, fecha, importe, libro.getTitulo(), libro.getEditorial(), 
+      cliente.getNombre(), cliente.getApellido1(), cliente.getApellido2(), cliente.getTipousuario(), cliente.getNif());
+183          
+184          \mbox{\hyperlink{classlibreria_1_1_libreria_a1b6aaea2b6d1d95a7e25b85881e82721}{arrayfacturas}}.add(factura);
+185          \mbox{\hyperlink{classlibreria_1_1_libreria_ad54897f12a3077bb2f29f51663049d20}{facturaLibroMensual}} (libroaux, numeromesesaux);
+186          
+187     \textcolor{keywordflow}{try} \{
+188         \mbox{\hyperlink{classlibreria_1_1_libreria_abc10249e70e74a9ba55a081bbf23cfcd}{guardardatos}}();
+189     \} \textcolor{keywordflow}{catch} (IOException ex) \{
+190         Logger.getLogger(\mbox{\hyperlink{classlibreria_1_1_libreria_a93220dd4de47ee3b7ef4b2a90701c253}{Libreria}}.class.getName()).log(Level.SEVERE, null, ex);
+191     \}
+192          
+193      \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classlibreria_1_1_libreria_a0c70e18fd24cf773ee523d7fb77fd5b6}\label{classlibreria_1_1_libreria_a0c70e18fd24cf773ee523d7fb77fd5b6}} 
+\index{libreria\+::\+Libreria@{libreria\+::\+Libreria}!introducircliente@{introducircliente}}
+\index{introducircliente@{introducircliente}!libreria\+::\+Libreria@{libreria\+::\+Libreria}}
+\subsubsection{\texorpdfstring{introducircliente()}{introducircliente()}}
+{\footnotesize\ttfamily static boolean libreria.\+Libreria.\+introducircliente (\begin{DoxyParamCaption}\item[{String}]{nombre,  }\item[{String}]{apellido1,  }\item[{String}]{apellido2,  }\item[{String}]{nif,  }\item[{String}]{tipodeusuario,  }\item[{String}]{usuario,  }\item[{String}]{contrasena }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+introduce un nuevo cliente al hashmap\+: clienteshashmap 
+\begin{DoxyParams}{Parameters}
+{\em nombre} & nombre del cliente \\
+\hline
+{\em apellido1} & primer apellido del cliente \\
+\hline
+{\em apellido2} & segundo apellido del cliente \\
+\hline
+{\em nif} & nif del cliente \\
+\hline
+{\em tipodeusuario} & indica si el cliente es profesor o alumno(solo le damos esas opciones con una combobox) \\
+\hline
+{\em usuario} & nombre de usuario por el que iniciara sesion \\
+\hline
+{\em contrasena} & contraseña con la que accedera a la aplicaion \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+retorna true si hemos completado el alta de cliente con exito, false si no lo hemos conseguido 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+371                                                                      \{
+372          
+373          \textcolor{keywordflow}{if}(\mbox{\hyperlink{classlibreria_1_1_libreria_a9bb86627af6c43f97367c8a28d9f0d3e}{clienteshashmap}}.containsKey(usuario)||usuario.equals(\textcolor{stringliteral}{"admin"}))\{
+374              \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+375          \}\textcolor{keywordflow}{else}\{
+376               Cliente nuevocliente = \textcolor{keyword}{new} Cliente(nombre, apellido1, apellido2, nif, tipodeusuario, usuario,
+       contrasena);
+377              \mbox{\hyperlink{classlibreria_1_1_libreria_a9bb86627af6c43f97367c8a28d9f0d3e}{clienteshashmap}}.put(usuario, nuevocliente);
+378              \textcolor{keywordflow}{try} \{
+379                  \mbox{\hyperlink{classlibreria_1_1_libreria_abc10249e70e74a9ba55a081bbf23cfcd}{guardardatos}}();
+380              \} \textcolor{keywordflow}{catch} (IOException ex) \{
+381                  Logger.getLogger(\mbox{\hyperlink{classlibreria_1_1_libreria_a93220dd4de47ee3b7ef4b2a90701c253}{Libreria}}.class.getName()).log(Level.SEVERE, null, ex);
+382              \}
+383              \textcolor{keywordflow}{return} \textcolor{keyword}{true};
+384          \}
+385          
+386      \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classlibreria_1_1_libreria_a97c39db00171d7084a2f73562dc9e77f}\label{classlibreria_1_1_libreria_a97c39db00171d7084a2f73562dc9e77f}} 
+\index{libreria\+::\+Libreria@{libreria\+::\+Libreria}!introducirdiccionario@{introducirdiccionario}}
+\index{introducirdiccionario@{introducirdiccionario}!libreria\+::\+Libreria@{libreria\+::\+Libreria}}
+\subsubsection{\texorpdfstring{introducirdiccionario()}{introducirdiccionario()}}
+{\footnotesize\ttfamily static boolean libreria.\+Libreria.\+introducirdiccionario (\begin{DoxyParamCaption}\item[{String}]{idioma,  }\item[{Array\+List}]{cursos,  }\item[{String}]{isbn,  }\item[{String}]{titulo,  }\item[{String}]{Autor,  }\item[{String}]{Editorial,  }\item[{String \mbox{[}$\,$\mbox{]}}]{fechapublicacion,  }\item[{float}]{precio,  }\item[{float}]{preciomensual }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+funcion que introduce un diccionario en el arraylist \mbox{\hyperlink{classlibreria_1_1_libro}{Libro}} arraylibros no puede haber dos libros con el mismo titulo y/o isbn 
+\begin{DoxyParams}{Parameters}
+{\em idioma} & idioma del diccionario \\
+\hline
+{\em cursos} & cursos recomendados del diccionario \\
+\hline
+{\em isbn} & isbn del diccionario \\
+\hline
+{\em titulo} & titulo del diccionario \\
+\hline
+{\em Autor} & autor del diccionario \\
+\hline
+{\em Editorial} & editorial que publica el diccionario \\
+\hline
+{\em fechapublicacion} & fecha en la que se publico el diccionario \\
+\hline
+{\em precio} & precio de venta del diccionario \\
+\hline
+{\em preciomensual} & precio de consulta mensual del libro online (precio de un mes) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+retorna true si se ha introducido el diccionario, false si no se ha introducido 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+508                                                                                                            
+                     \{
+509              
+510          
+511           \textcolor{keywordtype}{boolean} campoimportanteenblanco = \textcolor{keyword}{false};
+512              
+513              campoimportanteenblanco = \mbox{\hyperlink{classlibreria_1_1_libreria_afca98a0ea16507ff5cc9bc0dde706abb}{estaenblanco}}(isbn);
+514              
+515              \textcolor{keywordflow}{if}(!campoimportanteenblanco)\{
+516              campoimportanteenblanco = \mbox{\hyperlink{classlibreria_1_1_libreria_afca98a0ea16507ff5cc9bc0dde706abb}{estaenblanco}}(titulo);\}
+517              
+518              String preciostring = String.valueOf(precio);
+519              
+520              \textcolor{keywordflow}{if}(!campoimportanteenblanco)\{
+521              campoimportanteenblanco = \mbox{\hyperlink{classlibreria_1_1_libreria_afca98a0ea16507ff5cc9bc0dde706abb}{estaenblanco}}(preciostring);\}
+522              
+523              String preciomensualstring = String.valueOf(precio);
+524              
+525              \textcolor{keywordflow}{if}(!campoimportanteenblanco)\{
+526              campoimportanteenblanco = \mbox{\hyperlink{classlibreria_1_1_libreria_afca98a0ea16507ff5cc9bc0dde706abb}{estaenblanco}}(preciomensualstring);\}
+527              
+528          
+529             \textcolor{keywordflow}{if}(\mbox{\hyperlink{classlibreria_1_1_libreria_a0af77d7fa2b6f3c0a0b218ee9df08ce3}{estaellibro}}(isbn)||campoimportanteenblanco||
+      \mbox{\hyperlink{classlibreria_1_1_libreria_aec6380fd1bcff89fb0f2d6d4b4584598}{estaellibrotitulo}}(titulo))\{
+530                 \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+531             \}\textcolor{keywordflow}{else}\{
+532                 Diccionario nuevodiccionario = \textcolor{keyword}{new} Diccionario(idioma, cursos, isbn, titulo, Autor, 
+      Editorial,fechapublicacion, precio, preciomensual);
+533                 \mbox{\hyperlink{classlibreria_1_1_libreria_aa55c2bad2db92eb94ea1ba9c6997f47d}{arraylibros}}.add(nuevodiccionario);
+534               \textcolor{keywordflow}{try} \{
+535                   \mbox{\hyperlink{classlibreria_1_1_libreria_abc10249e70e74a9ba55a081bbf23cfcd}{guardardatos}}();
+536               \} \textcolor{keywordflow}{catch} (IOException ex) \{
+537                   Logger.getLogger(\mbox{\hyperlink{classlibreria_1_1_libreria_a93220dd4de47ee3b7ef4b2a90701c253}{Libreria}}.class.getName()).log(Level.SEVERE, null, ex);
+538               \}
+539                 \textcolor{keywordflow}{return} \textcolor{keyword}{true};
+540             \}
+541      \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classlibreria_1_1_libreria_a5582b1ac3c3a9cd393a92128c2f77dce}\label{classlibreria_1_1_libreria_a5582b1ac3c3a9cd393a92128c2f77dce}} 
+\index{libreria\+::\+Libreria@{libreria\+::\+Libreria}!introducirlector@{introducirlector}}
+\index{introducirlector@{introducirlector}!libreria\+::\+Libreria@{libreria\+::\+Libreria}}
+\subsubsection{\texorpdfstring{introducirlector()}{introducirlector()}}
+{\footnotesize\ttfamily static boolean libreria.\+Libreria.\+introducirlector (\begin{DoxyParamCaption}\item[{String}]{numerodeserie,  }\item[{String}]{marca,  }\item[{String}]{modelo,  }\item[{float}]{precio,  }\item[{String}]{descripcion }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+funcion que introduce un lector de libros en el arraylis \mbox{\hyperlink{classlibreria_1_1_lectores}{Lectores}} arraylectores 
+\begin{DoxyParams}{Parameters}
+{\em numerodeserie} & numero de serie del lector \\
+\hline
+{\em marca} & marca del lector \\
+\hline
+{\em modelo} & modelo del lector \\
+\hline
+{\em precio} & precio de compra del lector \\
+\hline
+{\em descripcion} & breve descripcion del lector \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+retorna true si se ha introducido el lector y false si no se ha introducido 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+553                                                                                                            
+                           \{
+554          
+555          \textcolor{keywordtype}{boolean} campoimportanteenblanco = \textcolor{keyword}{false};
+556              campoimportanteenblanco = \mbox{\hyperlink{classlibreria_1_1_libreria_afca98a0ea16507ff5cc9bc0dde706abb}{estaenblanco}}(numerodeserie);
+557              String preciostring = String.valueOf(precio);
+558              campoimportanteenblanco = \mbox{\hyperlink{classlibreria_1_1_libreria_afca98a0ea16507ff5cc9bc0dde706abb}{estaenblanco}}(preciostring);
+559              
+560             \textcolor{keywordflow}{if}(\mbox{\hyperlink{classlibreria_1_1_libreria_a1d272b2c2f64bbeaa6e24f4f8c5ba2e7}{estaellector}}(numerodeserie)||campoimportanteenblanco)\{
+561                 \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+562             \}\textcolor{keywordflow}{else}\{
+563                 Lectores nuevolector = \textcolor{keyword}{new} Lectores( numerodeserie, marca, modelo, precio, descripcion);
+564                 \mbox{\hyperlink{classlibreria_1_1_libreria_ac9e002dcb370eb6caa314d18cf14a293}{arraylectores}}.add(nuevolector);
+565              \textcolor{keywordflow}{try} \{
+566                  \mbox{\hyperlink{classlibreria_1_1_libreria_abc10249e70e74a9ba55a081bbf23cfcd}{guardardatos}}();
+567              \} \textcolor{keywordflow}{catch} (IOException ex) \{
+568                  Logger.getLogger(\mbox{\hyperlink{classlibreria_1_1_libreria_a93220dd4de47ee3b7ef4b2a90701c253}{Libreria}}.class.getName()).log(Level.SEVERE, null, ex);
+569              \}
+570                 \textcolor{keywordflow}{return} \textcolor{keyword}{true};
+571             \}
+572          
+573      \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classlibreria_1_1_libreria_aa5450eb41fd6d88d4a26514245729842}\label{classlibreria_1_1_libreria_aa5450eb41fd6d88d4a26514245729842}} 
+\index{libreria\+::\+Libreria@{libreria\+::\+Libreria}!introducirlectura@{introducirlectura}}
+\index{introducirlectura@{introducirlectura}!libreria\+::\+Libreria@{libreria\+::\+Libreria}}
+\subsubsection{\texorpdfstring{introducirlectura()}{introducirlectura()}}
+{\footnotesize\ttfamily static boolean libreria.\+Libreria.\+introducirlectura (\begin{DoxyParamCaption}\item[{String}]{nivelrecomendado,  }\item[{String}]{genero,  }\item[{String}]{resumen,  }\item[{String}]{isbn,  }\item[{String}]{titulo,  }\item[{String}]{Autor,  }\item[{String}]{Editorial,  }\item[{String \mbox{[}$\,$\mbox{]}}]{fechapublicacion,  }\item[{float}]{precio,  }\item[{float}]{preciomensual }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+funcion para introducir un libro de lectura en el arraylist \mbox{\hyperlink{classlibreria_1_1_libro}{Libro}} arraylibros no puede haber dos libros con el mismo titulo y/o isbn 
+\begin{DoxyParams}{Parameters}
+{\em nivelrecomendado} & nivel recomendado del libro \\
+\hline
+{\em genero} & genero al que pertenece el libro \\
+\hline
+{\em resumen} & breve resumen del libro \\
+\hline
+{\em isbn} & isbn del libro \\
+\hline
+{\em titulo} & titulo del libro \\
+\hline
+{\em Autor} & autor del libro \\
+\hline
+{\em Editorial} & editorial que publica el libro \\
+\hline
+{\em fechapublicacion} & fecha en la que se publico el libro \\
+\hline
+{\em precio} & precio por el quese vende el libro \\
+\hline
+{\em preciomensual} & precio de la consulta mensual del libro (precio de un mes de consulta) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+retorna true si se ha conseguido introducir y false si no se ha conseguido 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+459                                                                                                            
+                     \{
+460              
+461               \textcolor{keywordtype}{boolean} campoimportanteenblanco = \textcolor{keyword}{false};
+462              
+463              campoimportanteenblanco = \mbox{\hyperlink{classlibreria_1_1_libreria_afca98a0ea16507ff5cc9bc0dde706abb}{estaenblanco}}(isbn);
+464              
+465              \textcolor{keywordflow}{if}(!campoimportanteenblanco)\{
+466              campoimportanteenblanco = \mbox{\hyperlink{classlibreria_1_1_libreria_afca98a0ea16507ff5cc9bc0dde706abb}{estaenblanco}}(titulo);\}
+467              
+468              String preciostring = String.valueOf(precio);
+469              
+470              \textcolor{keywordflow}{if}(!campoimportanteenblanco)\{
+471              campoimportanteenblanco = \mbox{\hyperlink{classlibreria_1_1_libreria_afca98a0ea16507ff5cc9bc0dde706abb}{estaenblanco}}(preciostring);\}
+472              
+473              String preciomensualstring = String.valueOf(precio);
+474              
+475              \textcolor{keywordflow}{if}(!campoimportanteenblanco)\{
+476              campoimportanteenblanco = \mbox{\hyperlink{classlibreria_1_1_libreria_afca98a0ea16507ff5cc9bc0dde706abb}{estaenblanco}}(preciomensualstring);\}
+477          
+478             \textcolor{keywordflow}{if}(\mbox{\hyperlink{classlibreria_1_1_libreria_a0af77d7fa2b6f3c0a0b218ee9df08ce3}{estaellibro}}(isbn)||(campoimportanteenblanco)||
+      \mbox{\hyperlink{classlibreria_1_1_libreria_aec6380fd1bcff89fb0f2d6d4b4584598}{estaellibrotitulo}}(titulo))\{
+479                 \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+480             \}\textcolor{keywordflow}{else}\{
+481                 LibroLectura nuevolectura = \textcolor{keyword}{new} LibroLectura(nivelrecomendado, genero, resumen, isbn, 
+      titulo, Autor, Editorial,fechapublicacion, precio, preciomensual);
+482                 \mbox{\hyperlink{classlibreria_1_1_libreria_aa55c2bad2db92eb94ea1ba9c6997f47d}{arraylibros}}.add(nuevolectura);
+483                   \textcolor{keywordflow}{try} \{
+484                       \mbox{\hyperlink{classlibreria_1_1_libreria_abc10249e70e74a9ba55a081bbf23cfcd}{guardardatos}}();
+485                   \} \textcolor{keywordflow}{catch} (IOException ex) \{
+486                       Logger.getLogger(\mbox{\hyperlink{classlibreria_1_1_libreria_a93220dd4de47ee3b7ef4b2a90701c253}{Libreria}}.class.getName()).log(Level.SEVERE, null, ex);
+487                   \}
+488                 \textcolor{keywordflow}{return} \textcolor{keyword}{true};
+489             \}
+490      \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classlibreria_1_1_libreria_a4e350d17616aa0869662e953ed4430e9}\label{classlibreria_1_1_libreria_a4e350d17616aa0869662e953ed4430e9}} 
+\index{libreria\+::\+Libreria@{libreria\+::\+Libreria}!introducirtexto@{introducirtexto}}
+\index{introducirtexto@{introducirtexto}!libreria\+::\+Libreria@{libreria\+::\+Libreria}}
+\subsubsection{\texorpdfstring{introducirtexto()}{introducirtexto()}}
+{\footnotesize\ttfamily static boolean libreria.\+Libreria.\+introducirtexto (\begin{DoxyParamCaption}\item[{String}]{nivel,  }\item[{String}]{curso,  }\item[{String}]{materia,  }\item[{String}]{isbn,  }\item[{String}]{titulo,  }\item[{String}]{Autor,  }\item[{String}]{Editorial,  }\item[{String \mbox{[}$\,$\mbox{]}}]{fechapublicacion,  }\item[{float}]{precio,  }\item[{float}]{preciomensual }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+esta funcion sirve para introducir un libro de texto en el arraylist \mbox{\hyperlink{classlibreria_1_1_libro}{Libro}} arralibros no puede haber dos libros con el mismo titulo y/o isbn 
+\begin{DoxyParams}{Parameters}
+{\em nivel} & nivel del libro \\
+\hline
+{\em curso} & curso recomendado del libro \\
+\hline
+{\em materia} & materia del libro \\
+\hline
+{\em isbn} & isbn del libro \\
+\hline
+{\em titulo} & titulo del libro \\
+\hline
+{\em Autor} & autor del libro \\
+\hline
+{\em Editorial} & editorial que publica el libro \\
+\hline
+{\em fechapublicacion} & fecha en la que se publico el libro \\
+\hline
+{\em precio} & precio de la compra del libro \\
+\hline
+{\em preciomensual} & precio de la consulta mensual(precio de un mes) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+retorna true si se ha conseguido introducir y false si no se ha conseguido 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+405                                                                                                            
+                     \{
+406              
+407              \textcolor{keywordtype}{boolean} campoimportanteenblanco = \textcolor{keyword}{false};
+408              
+409              campoimportanteenblanco = \mbox{\hyperlink{classlibreria_1_1_libreria_afca98a0ea16507ff5cc9bc0dde706abb}{estaenblanco}}(isbn);
+410              
+411              \textcolor{keywordflow}{if}(!campoimportanteenblanco)\{
+412              campoimportanteenblanco = \mbox{\hyperlink{classlibreria_1_1_libreria_afca98a0ea16507ff5cc9bc0dde706abb}{estaenblanco}}(titulo);\}
+413              
+414              String preciostring = String.valueOf(precio);
+415              
+416              \textcolor{keywordflow}{if}(!campoimportanteenblanco)\{
+417              campoimportanteenblanco = \mbox{\hyperlink{classlibreria_1_1_libreria_afca98a0ea16507ff5cc9bc0dde706abb}{estaenblanco}}(preciostring);\}
+418              
+419              String preciomensualstring = String.valueOf(precio);
+420              
+421              \textcolor{keywordflow}{if}(!campoimportanteenblanco)\{
+422              campoimportanteenblanco = \mbox{\hyperlink{classlibreria_1_1_libreria_afca98a0ea16507ff5cc9bc0dde706abb}{estaenblanco}}(preciomensualstring);\}
+423              
+424              
+425                  
+426             \textcolor{keywordflow}{if}(\mbox{\hyperlink{classlibreria_1_1_libreria_a0af77d7fa2b6f3c0a0b218ee9df08ce3}{estaellibro}}(isbn)||(campoimportanteenblanco)||
+      \mbox{\hyperlink{classlibreria_1_1_libreria_aec6380fd1bcff89fb0f2d6d4b4584598}{estaellibrotitulo}}(titulo))\{
+427                 \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+428             \}\textcolor{keywordflow}{else}\{
+429                 LibroTexto nuevotexto = \textcolor{keyword}{new} LibroTexto(nivel, curso, materia, isbn, titulo, Autor, 
+      Editorial,fechapublicacion, precio, preciomensual);
+430                 \mbox{\hyperlink{classlibreria_1_1_libreria_aa55c2bad2db92eb94ea1ba9c6997f47d}{arraylibros}}.add(nuevotexto);
+431                  \textcolor{keywordflow}{try} \{
+432                      \mbox{\hyperlink{classlibreria_1_1_libreria_abc10249e70e74a9ba55a081bbf23cfcd}{guardardatos}}();
+433                  \} \textcolor{keywordflow}{catch} (IOException ex) \{
+434                      Logger.getLogger(\mbox{\hyperlink{classlibreria_1_1_libreria_a93220dd4de47ee3b7ef4b2a90701c253}{Libreria}}.class.getName()).log(Level.SEVERE, null, ex);
+435                  \}
+436                 \textcolor{keywordflow}{return} \textcolor{keyword}{true};
+437             \}
+438          
+439          
+440      \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classlibreria_1_1_libreria_a1b6aaea2b6d1d95a7e25b85881e82721}\label{classlibreria_1_1_libreria_a1b6aaea2b6d1d95a7e25b85881e82721}} 
+\index{libreria\+::\+Libreria@{libreria\+::\+Libreria}!arrayfacturas@{arrayfacturas}}
+\index{arrayfacturas@{arrayfacturas}!libreria\+::\+Libreria@{libreria\+::\+Libreria}}
+\subsubsection{\texorpdfstring{arrayfacturas}{arrayfacturas}}
+{\footnotesize\ttfamily Array\+List$<$\mbox{\hyperlink{classlibreria_1_1_factura}{Factura}}$>$ libreria.\+Libreria.\+arrayfacturas = new Array\+List$<$\mbox{\hyperlink{classlibreria_1_1_factura}{Factura}}$>$()\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classlibreria_1_1_libreria_a29c40164090c7a129f082735a0d15664}\label{classlibreria_1_1_libreria_a29c40164090c7a129f082735a0d15664}} 
+\index{libreria\+::\+Libreria@{libreria\+::\+Libreria}!arrayfacturasaux@{arrayfacturasaux}}
+\index{arrayfacturasaux@{arrayfacturasaux}!libreria\+::\+Libreria@{libreria\+::\+Libreria}}
+\subsubsection{\texorpdfstring{arrayfacturasaux}{arrayfacturasaux}}
+{\footnotesize\ttfamily Array\+List$<$\mbox{\hyperlink{classlibreria_1_1_factura}{Factura}}$>$ libreria.\+Libreria.\+arrayfacturasaux = new Array\+List$<$\mbox{\hyperlink{classlibreria_1_1_factura}{Factura}}$>$()\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classlibreria_1_1_libreria_ac9e002dcb370eb6caa314d18cf14a293}\label{classlibreria_1_1_libreria_ac9e002dcb370eb6caa314d18cf14a293}} 
+\index{libreria\+::\+Libreria@{libreria\+::\+Libreria}!arraylectores@{arraylectores}}
+\index{arraylectores@{arraylectores}!libreria\+::\+Libreria@{libreria\+::\+Libreria}}
+\subsubsection{\texorpdfstring{arraylectores}{arraylectores}}
+{\footnotesize\ttfamily Array\+List$<$\mbox{\hyperlink{classlibreria_1_1_lectores}{Lectores}}$>$ libreria.\+Libreria.\+arraylectores = new Array\+List$<$\mbox{\hyperlink{classlibreria_1_1_lectores}{Lectores}}$>$()\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classlibreria_1_1_libreria_a01d26185581990bccbe9041740911af9}\label{classlibreria_1_1_libreria_a01d26185581990bccbe9041740911af9}} 
+\index{libreria\+::\+Libreria@{libreria\+::\+Libreria}!arraylectoresauxiliar@{arraylectoresauxiliar}}
+\index{arraylectoresauxiliar@{arraylectoresauxiliar}!libreria\+::\+Libreria@{libreria\+::\+Libreria}}
+\subsubsection{\texorpdfstring{arraylectoresauxiliar}{arraylectoresauxiliar}}
+{\footnotesize\ttfamily Array\+List$<$String$>$ libreria.\+Libreria.\+arraylectoresauxiliar = new Array\+List$<$String$>$()\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classlibreria_1_1_libreria_aa55c2bad2db92eb94ea1ba9c6997f47d}\label{classlibreria_1_1_libreria_aa55c2bad2db92eb94ea1ba9c6997f47d}} 
+\index{libreria\+::\+Libreria@{libreria\+::\+Libreria}!arraylibros@{arraylibros}}
+\index{arraylibros@{arraylibros}!libreria\+::\+Libreria@{libreria\+::\+Libreria}}
+\subsubsection{\texorpdfstring{arraylibros}{arraylibros}}
+{\footnotesize\ttfamily Array\+List$<$\mbox{\hyperlink{classlibreria_1_1_libro}{Libro}}$>$ libreria.\+Libreria.\+arraylibros = new Array\+List$<$\mbox{\hyperlink{classlibreria_1_1_libro}{Libro}}$>$()\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classlibreria_1_1_libreria_a419cfdeb78bb0c7d9af85e493121fc34}\label{classlibreria_1_1_libreria_a419cfdeb78bb0c7d9af85e493121fc34}} 
+\index{libreria\+::\+Libreria@{libreria\+::\+Libreria}!arraylibrosauxiliar@{arraylibrosauxiliar}}
+\index{arraylibrosauxiliar@{arraylibrosauxiliar}!libreria\+::\+Libreria@{libreria\+::\+Libreria}}
+\subsubsection{\texorpdfstring{arraylibrosauxiliar}{arraylibrosauxiliar}}
+{\footnotesize\ttfamily Array\+List$<$String$>$ libreria.\+Libreria.\+arraylibrosauxiliar = new Array\+List$<$String$>$()\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classlibreria_1_1_libreria_afcc53a4ee673ee845bc07288aa5c7181}\label{classlibreria_1_1_libreria_afcc53a4ee673ee845bc07288aa5c7181}} 
+\index{libreria\+::\+Libreria@{libreria\+::\+Libreria}!clienteactual@{clienteactual}}
+\index{clienteactual@{clienteactual}!libreria\+::\+Libreria@{libreria\+::\+Libreria}}
+\subsubsection{\texorpdfstring{clienteactual}{clienteactual}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classlibreria_1_1_cliente}{Cliente}} libreria.\+Libreria.\+clienteactual\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classlibreria_1_1_libreria_a9bb86627af6c43f97367c8a28d9f0d3e}\label{classlibreria_1_1_libreria_a9bb86627af6c43f97367c8a28d9f0d3e}} 
+\index{libreria\+::\+Libreria@{libreria\+::\+Libreria}!clienteshashmap@{clienteshashmap}}
+\index{clienteshashmap@{clienteshashmap}!libreria\+::\+Libreria@{libreria\+::\+Libreria}}
+\subsubsection{\texorpdfstring{clienteshashmap}{clienteshashmap}}
+{\footnotesize\ttfamily Hash\+Map$<$ String , \mbox{\hyperlink{classlibreria_1_1_cliente}{Cliente}} $>$ libreria.\+Libreria.\+clienteshashmap = new Hash\+Map $<$$>$()\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classlibreria_1_1_libreria_a7255df1dedc7a1d54c8573043a435574}\label{classlibreria_1_1_libreria_a7255df1dedc7a1d54c8573043a435574}} 
+\index{libreria\+::\+Libreria@{libreria\+::\+Libreria}!facturaactual@{facturaactual}}
+\index{facturaactual@{facturaactual}!libreria\+::\+Libreria@{libreria\+::\+Libreria}}
+\subsubsection{\texorpdfstring{facturaactual}{facturaactual}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classlibreria_1_1_factura}{Factura}} libreria.\+Libreria.\+facturaactual\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classlibreria_1_1_libreria_adb43b6e9fa686d822bddeca29dbdba84}\label{classlibreria_1_1_libreria_adb43b6e9fa686d822bddeca29dbdba84}} 
+\index{libreria\+::\+Libreria@{libreria\+::\+Libreria}!lectorparacomprar@{lectorparacomprar}}
+\index{lectorparacomprar@{lectorparacomprar}!libreria\+::\+Libreria@{libreria\+::\+Libreria}}
+\subsubsection{\texorpdfstring{lectorparacomprar}{lectorparacomprar}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classlibreria_1_1_lectores}{Lectores}} libreria.\+Libreria.\+lectorparacomprar\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classlibreria_1_1_libreria_a020582c6fff65be09a8f61c6f9bb19e1}\label{classlibreria_1_1_libreria_a020582c6fff65be09a8f61c6f9bb19e1}} 
+\index{libreria\+::\+Libreria@{libreria\+::\+Libreria}!libroparacomprar@{libroparacomprar}}
+\index{libroparacomprar@{libroparacomprar}!libreria\+::\+Libreria@{libreria\+::\+Libreria}}
+\subsubsection{\texorpdfstring{libroparacomprar}{libroparacomprar}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classlibreria_1_1_libro}{Libro}} libreria.\+Libreria.\+libroparacomprar\hspace{0.3cm}{\ttfamily [static]}}
+

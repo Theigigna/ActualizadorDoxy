@@ -1,0 +1,175 @@
+\hypertarget{classlabprogavanzada_1_1_termina3o5}{}\section{labprogavanzada.\+Termina3o5 Class Reference}
+\label{classlabprogavanzada_1_1_termina3o5}\index{labprogavanzada.\+Termina3o5@{labprogavanzada.\+Termina3o5}}
+Inheritance diagram for labprogavanzada.\+Termina3o5\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classlabprogavanzada_1_1_termina3o5}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classlabprogavanzada_1_1_termina3o5_a08aaaf04b3ee2273d33548002521f9be}{Termina3o5}} (int \mbox{\hyperlink{classlabprogavanzada_1_1_termina3o5_a895542b64115c1476a50d623aa2b40dc}{x}}, int \mbox{\hyperlink{classlabprogavanzada_1_1_termina3o5_a3e66f695fc1d536c80f6c6e5404b5715}{y}})
+\item 
+void \mbox{\hyperlink{classlabprogavanzada_1_1_termina3o5_a356cebcd0a53ff65896f0da242121f6a}{run}} ()
+\item 
+long \mbox{\hyperlink{classlabprogavanzada_1_1_termina3o5_a731e9939fe2b72fb38c1cd604244e4f8}{sumatotal}} ()
+\item 
+long \mbox{\hyperlink{classlabprogavanzada_1_1_termina3o5_a9d9fd2a84acb7e0bc24856623f8fb975}{tiempo}} ()
+\end{DoxyCompactItemize}
+\subsection*{Package Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classlabprogavanzada_1_1_termina3o5_a3e66f695fc1d536c80f6c6e5404b5715}{y}}
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+boolean \mbox{\hyperlink{classlabprogavanzada_1_1_termina3o5_a2c1157a071b19562e9740dbac68b443d}{termina\+En3}} (int n)
+\item 
+boolean \mbox{\hyperlink{classlabprogavanzada_1_1_termina3o5_aea7ebcb9dea337e83e865d71e61a525c}{termina\+En5}} (int n)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classlabprogavanzada_1_1_termina3o5_a895542b64115c1476a50d623aa2b40dc}{x}}
+\item 
+long \mbox{\hyperlink{classlabprogavanzada_1_1_termina3o5_a4603870c546f5834699d492d0d4450ae}{suma}} = 0
+\item 
+long \mbox{\hyperlink{classlabprogavanzada_1_1_termina3o5_a3004d9e03519fed1c39d15aaf27925c4}{t}} =0
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyAuthor}{Author}
+Ignacio 
+\end{DoxyAuthor}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classlabprogavanzada_1_1_termina3o5_a08aaaf04b3ee2273d33548002521f9be}\label{classlabprogavanzada_1_1_termina3o5_a08aaaf04b3ee2273d33548002521f9be}} 
+\index{labprogavanzada\+::\+Termina3o5@{labprogavanzada\+::\+Termina3o5}!Termina3o5@{Termina3o5}}
+\index{Termina3o5@{Termina3o5}!labprogavanzada\+::\+Termina3o5@{labprogavanzada\+::\+Termina3o5}}
+\subsubsection{\texorpdfstring{Termina3o5()}{Termina3o5()}}
+{\footnotesize\ttfamily labprogavanzada.\+Termina3o5.\+Termina3o5 (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+20                                    \{
+21         this.\mbox{\hyperlink{classlabprogavanzada_1_1_termina3o5_a895542b64115c1476a50d623aa2b40dc}{x}}=\mbox{\hyperlink{classlabprogavanzada_1_1_termina3o5_a895542b64115c1476a50d623aa2b40dc}{x}};
+22         this.\mbox{\hyperlink{classlabprogavanzada_1_1_termina3o5_a3e66f695fc1d536c80f6c6e5404b5715}{y}}=\mbox{\hyperlink{classlabprogavanzada_1_1_termina3o5_a3e66f695fc1d536c80f6c6e5404b5715}{y}};
+23     \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classlabprogavanzada_1_1_termina3o5_a356cebcd0a53ff65896f0da242121f6a}\label{classlabprogavanzada_1_1_termina3o5_a356cebcd0a53ff65896f0da242121f6a}} 
+\index{labprogavanzada\+::\+Termina3o5@{labprogavanzada\+::\+Termina3o5}!run@{run}}
+\index{run@{run}!labprogavanzada\+::\+Termina3o5@{labprogavanzada\+::\+Termina3o5}}
+\subsubsection{\texorpdfstring{run()}{run()}}
+{\footnotesize\ttfamily void labprogavanzada.\+Termina3o5.\+run (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+41                      \{
+42         
+43         \textcolor{keywordtype}{long} t0 = (\textcolor{keyword}{new} Date()).getTime(); \textcolor{comment}{//t0=instante de inicio de los cálculos}
+44         
+45         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i=\mbox{\hyperlink{classlabprogavanzada_1_1_termina3o5_a895542b64115c1476a50d623aa2b40dc}{x}}; i<=\mbox{\hyperlink{classlabprogavanzada_1_1_termina3o5_a3e66f695fc1d536c80f6c6e5404b5715}{y}}; i++)
+46         \{
+47             \textcolor{keywordflow}{if}(\mbox{\hyperlink{classlabprogavanzada_1_1_termina3o5_a2c1157a071b19562e9740dbac68b443d}{terminaEn3}}(i)||\mbox{\hyperlink{classlabprogavanzada_1_1_termina3o5_aea7ebcb9dea337e83e865d71e61a525c}{terminaEn5}}(i))
+48             \{
+49                 \mbox{\hyperlink{namespacesuma}{suma}} += i;
+50             \}
+51         \}
+52         
+53         \textcolor{keywordtype}{long} t1 = (\textcolor{keyword}{new} Date()).getTime(); \textcolor{comment}{//t1=instante de final de los cálculos}
+54         \mbox{\hyperlink{classlabprogavanzada_1_1_termina3o5_a3004d9e03519fed1c39d15aaf27925c4}{t}} += t1-t0;
+55         System.out.println(\textcolor{stringliteral}{"Ha tardado: "} + \mbox{\hyperlink{classlabprogavanzada_1_1_termina3o5_a3004d9e03519fed1c39d15aaf27925c4}{t}} + \textcolor{stringliteral}{" milisegundos"} + \textcolor{stringliteral}{" en calcular y sumar los numeros
+       terminados en 3 o 5 desde "} + \mbox{\hyperlink{classlabprogavanzada_1_1_termina3o5_a895542b64115c1476a50d623aa2b40dc}{x}} + \textcolor{stringliteral}{" al "} + \mbox{\hyperlink{classlabprogavanzada_1_1_termina3o5_a3e66f695fc1d536c80f6c6e5404b5715}{y}} );
+56            
+57     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classlabprogavanzada_1_1_termina3o5_a731e9939fe2b72fb38c1cd604244e4f8}\label{classlabprogavanzada_1_1_termina3o5_a731e9939fe2b72fb38c1cd604244e4f8}} 
+\index{labprogavanzada\+::\+Termina3o5@{labprogavanzada\+::\+Termina3o5}!sumatotal@{sumatotal}}
+\index{sumatotal@{sumatotal}!labprogavanzada\+::\+Termina3o5@{labprogavanzada\+::\+Termina3o5}}
+\subsubsection{\texorpdfstring{sumatotal()}{sumatotal()}}
+{\footnotesize\ttfamily long labprogavanzada.\+Termina3o5.\+sumatotal (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+59                            \{
+60         \textcolor{keywordflow}{return} \mbox{\hyperlink{classlabprogavanzada_1_1_termina3o5_a4603870c546f5834699d492d0d4450ae}{suma}};
+61     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classlabprogavanzada_1_1_termina3o5_a2c1157a071b19562e9740dbac68b443d}\label{classlabprogavanzada_1_1_termina3o5_a2c1157a071b19562e9740dbac68b443d}} 
+\index{labprogavanzada\+::\+Termina3o5@{labprogavanzada\+::\+Termina3o5}!termina\+En3@{termina\+En3}}
+\index{termina\+En3@{termina\+En3}!labprogavanzada\+::\+Termina3o5@{labprogavanzada\+::\+Termina3o5}}
+\subsubsection{\texorpdfstring{termina\+En3()}{terminaEn3()}}
+{\footnotesize\ttfamily boolean labprogavanzada.\+Termina3o5.\+termina\+En3 (\begin{DoxyParamCaption}\item[{int}]{n }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+\begin{DoxyCode}
+25                                      \{
+26         
+27         \textcolor{keywordtype}{int} aux = n;
+28         aux -= 3;
+29         \textcolor{keywordflow}{return} aux%10==0;
+30         
+31     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classlabprogavanzada_1_1_termina3o5_aea7ebcb9dea337e83e865d71e61a525c}\label{classlabprogavanzada_1_1_termina3o5_aea7ebcb9dea337e83e865d71e61a525c}} 
+\index{labprogavanzada\+::\+Termina3o5@{labprogavanzada\+::\+Termina3o5}!termina\+En5@{termina\+En5}}
+\index{termina\+En5@{termina\+En5}!labprogavanzada\+::\+Termina3o5@{labprogavanzada\+::\+Termina3o5}}
+\subsubsection{\texorpdfstring{termina\+En5()}{terminaEn5()}}
+{\footnotesize\ttfamily boolean labprogavanzada.\+Termina3o5.\+termina\+En5 (\begin{DoxyParamCaption}\item[{int}]{n }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+\begin{DoxyCode}
+33                                      \{
+34         
+35         \textcolor{keywordtype}{int} aux = n;
+36         aux -= 5;
+37         \textcolor{keywordflow}{return} aux%10==0;
+38         
+39     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classlabprogavanzada_1_1_termina3o5_a9d9fd2a84acb7e0bc24856623f8fb975}\label{classlabprogavanzada_1_1_termina3o5_a9d9fd2a84acb7e0bc24856623f8fb975}} 
+\index{labprogavanzada\+::\+Termina3o5@{labprogavanzada\+::\+Termina3o5}!tiempo@{tiempo}}
+\index{tiempo@{tiempo}!labprogavanzada\+::\+Termina3o5@{labprogavanzada\+::\+Termina3o5}}
+\subsubsection{\texorpdfstring{tiempo()}{tiempo()}}
+{\footnotesize\ttfamily long labprogavanzada.\+Termina3o5.\+tiempo (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+63                         \{
+64         \textcolor{keywordflow}{return} \mbox{\hyperlink{classlabprogavanzada_1_1_termina3o5_a3004d9e03519fed1c39d15aaf27925c4}{t}};
+65     \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classlabprogavanzada_1_1_termina3o5_a4603870c546f5834699d492d0d4450ae}\label{classlabprogavanzada_1_1_termina3o5_a4603870c546f5834699d492d0d4450ae}} 
+\index{labprogavanzada\+::\+Termina3o5@{labprogavanzada\+::\+Termina3o5}!suma@{suma}}
+\index{suma@{suma}!labprogavanzada\+::\+Termina3o5@{labprogavanzada\+::\+Termina3o5}}
+\subsubsection{\texorpdfstring{suma}{suma}}
+{\footnotesize\ttfamily long labprogavanzada.\+Termina3o5.\+suma = 0\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classlabprogavanzada_1_1_termina3o5_a3004d9e03519fed1c39d15aaf27925c4}\label{classlabprogavanzada_1_1_termina3o5_a3004d9e03519fed1c39d15aaf27925c4}} 
+\index{labprogavanzada\+::\+Termina3o5@{labprogavanzada\+::\+Termina3o5}!t@{t}}
+\index{t@{t}!labprogavanzada\+::\+Termina3o5@{labprogavanzada\+::\+Termina3o5}}
+\subsubsection{\texorpdfstring{t}{t}}
+{\footnotesize\ttfamily long labprogavanzada.\+Termina3o5.\+t =0\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classlabprogavanzada_1_1_termina3o5_a895542b64115c1476a50d623aa2b40dc}\label{classlabprogavanzada_1_1_termina3o5_a895542b64115c1476a50d623aa2b40dc}} 
+\index{labprogavanzada\+::\+Termina3o5@{labprogavanzada\+::\+Termina3o5}!x@{x}}
+\index{x@{x}!labprogavanzada\+::\+Termina3o5@{labprogavanzada\+::\+Termina3o5}}
+\subsubsection{\texorpdfstring{x}{x}}
+{\footnotesize\ttfamily int labprogavanzada.\+Termina3o5.\+x\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classlabprogavanzada_1_1_termina3o5_a3e66f695fc1d536c80f6c6e5404b5715}\label{classlabprogavanzada_1_1_termina3o5_a3e66f695fc1d536c80f6c6e5404b5715}} 
+\index{labprogavanzada\+::\+Termina3o5@{labprogavanzada\+::\+Termina3o5}!y@{y}}
+\index{y@{y}!labprogavanzada\+::\+Termina3o5@{labprogavanzada\+::\+Termina3o5}}
+\subsubsection{\texorpdfstring{y}{y}}
+{\footnotesize\ttfamily int labprogavanzada.\+Termina3o5.\+y\hspace{0.3cm}{\ttfamily [package]}}
+

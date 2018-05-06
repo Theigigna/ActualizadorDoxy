@@ -1,0 +1,54 @@
+\hypertarget{interfaceorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_heuristic}{}\section{org.\+newdawn.\+slick.\+util.\+pathfinding.\+A\+Star\+Heuristic Interface Reference}
+\label{interfaceorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_heuristic}\index{org.\+newdawn.\+slick.\+util.\+pathfinding.\+A\+Star\+Heuristic@{org.\+newdawn.\+slick.\+util.\+pathfinding.\+A\+Star\+Heuristic}}
+Inheritance diagram for org.\+newdawn.\+slick.\+util.\+pathfinding.\+A\+Star\+Heuristic\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=0.908354cm]{interfaceorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_heuristic}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+float \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_heuristic_a6655bf4053ece54e62beec26876ad285}{get\+Cost}} (\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_tile_based_map}{Tile\+Based\+Map}} map, \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_mover}{Mover}} mover, int x, int y, int tx, int ty)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The description of a class providing a cost for a given tile based on a target location and entity being moved. This heuristic controls what priority is placed on different tiles during the search for a path
+
+\begin{DoxyAuthor}{Author}
+Kevin Glass 
+\end{DoxyAuthor}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{interfaceorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_heuristic_a6655bf4053ece54e62beec26876ad285}\label{interfaceorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_a_star_heuristic_a6655bf4053ece54e62beec26876ad285}} 
+\index{org\+::newdawn\+::slick\+::util\+::pathfinding\+::\+A\+Star\+Heuristic@{org\+::newdawn\+::slick\+::util\+::pathfinding\+::\+A\+Star\+Heuristic}!get\+Cost@{get\+Cost}}
+\index{get\+Cost@{get\+Cost}!org\+::newdawn\+::slick\+::util\+::pathfinding\+::\+A\+Star\+Heuristic@{org\+::newdawn\+::slick\+::util\+::pathfinding\+::\+A\+Star\+Heuristic}}
+\subsubsection{\texorpdfstring{get\+Cost()}{getCost()}}
+{\footnotesize\ttfamily float org.\+newdawn.\+slick.\+util.\+pathfinding.\+A\+Star\+Heuristic.\+get\+Cost (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_tile_based_map}{Tile\+Based\+Map}}}]{map,  }\item[{\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1_mover}{Mover}}}]{mover,  }\item[{int}]{x,  }\item[{int}]{y,  }\item[{int}]{tx,  }\item[{int}]{ty }\end{DoxyParamCaption})}
+
+Get the additional heuristic cost of the given tile. This controls the order in which tiles are searched while attempting to find a path to the target location. The lower the cost the more likely the tile will be searched.
+
+
+\begin{DoxyParams}{Parameters}
+{\em map} & The map on which the path is being found \\
+\hline
+{\em mover} & The entity that is moving along the path \\
+\hline
+{\em x} & The x coordinate of the tile being evaluated \\
+\hline
+{\em y} & The y coordinate of the tile being evaluated \\
+\hline
+{\em tx} & The x coordinate of the target location \\
+\hline
+{\em ty} & Teh y coordinate of the target location \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The cost associated with the given tile 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1heuristics_1_1_manhattan_heuristic_a9ff77608b7c1a2b33cce627c5495b39e}{org.\+newdawn.\+slick.\+util.\+pathfinding.\+heuristics.\+Manhattan\+Heuristic}}, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1heuristics_1_1_closest_squared_heuristic_a7e4d56d25f27fa036b806a2ef3035150}{org.\+newdawn.\+slick.\+util.\+pathfinding.\+heuristics.\+Closest\+Squared\+Heuristic}}, and \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1util_1_1pathfinding_1_1heuristics_1_1_closest_heuristic_a2f983a6c190b2a3c76a873b2b4e4d40b}{org.\+newdawn.\+slick.\+util.\+pathfinding.\+heuristics.\+Closest\+Heuristic}}.
+

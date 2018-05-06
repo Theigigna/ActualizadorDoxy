@@ -1,0 +1,100 @@
+\hypertarget{classorg_1_1newdawn_1_1slick_1_1tools_1_1scalar_1_1_image_scale2x}{}\section{org.\+newdawn.\+slick.\+tools.\+scalar.\+Image\+Scale2x Class Reference}
+\label{classorg_1_1newdawn_1_1slick_1_1tools_1_1scalar_1_1_image_scale2x}\index{org.\+newdawn.\+slick.\+tools.\+scalar.\+Image\+Scale2x@{org.\+newdawn.\+slick.\+tools.\+scalar.\+Image\+Scale2x}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1scalar_1_1_image_scale2x_a12bf7e058086627fa263f724a63bd7d1}{Image\+Scale2x}} (Buffered\+Image src\+Image)
+\item 
+Buffered\+Image \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1scalar_1_1_image_scale2x_a51f756038a04f55cc16c6f78e545146d}{get\+Scaled\+Image}} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1scalar_1_1_image_scale2x_a46fef900f8554bbdd22de7e816ebaef3}{src\+Data}}
+\item 
+int \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1scalar_1_1_image_scale2x_a026c0d00d9a8c601693fabe4771fdb1a}{width}}
+\item 
+int \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1scalar_1_1_image_scale2x_a06d02dc2cf0a017990d03ce89441b553}{height}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A utility to perform the scale2x algorithm on a Java \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_image}{Image}}
+
+\begin{DoxyAuthor}{Author}
+Kevin Glass 
+\end{DoxyAuthor}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tools_1_1scalar_1_1_image_scale2x_a12bf7e058086627fa263f724a63bd7d1}\label{classorg_1_1newdawn_1_1slick_1_1tools_1_1scalar_1_1_image_scale2x_a12bf7e058086627fa263f724a63bd7d1}} 
+\index{org\+::newdawn\+::slick\+::tools\+::scalar\+::\+Image\+Scale2x@{org\+::newdawn\+::slick\+::tools\+::scalar\+::\+Image\+Scale2x}!Image\+Scale2x@{Image\+Scale2x}}
+\index{Image\+Scale2x@{Image\+Scale2x}!org\+::newdawn\+::slick\+::tools\+::scalar\+::\+Image\+Scale2x@{org\+::newdawn\+::slick\+::tools\+::scalar\+::\+Image\+Scale2x}}
+\subsubsection{\texorpdfstring{Image\+Scale2x()}{ImageScale2x()}}
+{\footnotesize\ttfamily org.\+newdawn.\+slick.\+tools.\+scalar.\+Image\+Scale2x.\+Image\+Scale2x (\begin{DoxyParamCaption}\item[{Buffered\+Image}]{src\+Image }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Create a new scaler that will scale the passed image
+
+
+\begin{DoxyParams}{Parameters}
+{\em src\+Image} & The image to be scaled \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+25     \{
+26         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1scalar_1_1_image_scale2x_a026c0d00d9a8c601693fabe4771fdb1a}{width}} = srcImage.getWidth();
+27         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1scalar_1_1_image_scale2x_a06d02dc2cf0a017990d03ce89441b553}{height}} = srcImage.getHeight();
+28         
+29         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1scalar_1_1_image_scale2x_a46fef900f8554bbdd22de7e816ebaef3}{srcData}} = \textcolor{keyword}{new} \textcolor{keywordtype}{int}[\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1scalar_1_1_image_scale2x_a026c0d00d9a8c601693fabe4771fdb1a}{width}}*\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1scalar_1_1_image_scale2x_a06d02dc2cf0a017990d03ce89441b553}{height}}];
+30         srcImage.getRGB(0,0,\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1scalar_1_1_image_scale2x_a026c0d00d9a8c601693fabe4771fdb1a}{width}},\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1scalar_1_1_image_scale2x_a06d02dc2cf0a017990d03ce89441b553}{height}},\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1scalar_1_1_image_scale2x_a46fef900f8554bbdd22de7e816ebaef3}{srcData}},0,\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1scalar_1_1_image_scale2x_a026c0d00d9a8c601693fabe4771fdb1a}{width}});              
+31     \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tools_1_1scalar_1_1_image_scale2x_a51f756038a04f55cc16c6f78e545146d}\label{classorg_1_1newdawn_1_1slick_1_1tools_1_1scalar_1_1_image_scale2x_a51f756038a04f55cc16c6f78e545146d}} 
+\index{org\+::newdawn\+::slick\+::tools\+::scalar\+::\+Image\+Scale2x@{org\+::newdawn\+::slick\+::tools\+::scalar\+::\+Image\+Scale2x}!get\+Scaled\+Image@{get\+Scaled\+Image}}
+\index{get\+Scaled\+Image@{get\+Scaled\+Image}!org\+::newdawn\+::slick\+::tools\+::scalar\+::\+Image\+Scale2x@{org\+::newdawn\+::slick\+::tools\+::scalar\+::\+Image\+Scale2x}}
+\subsubsection{\texorpdfstring{get\+Scaled\+Image()}{getScaledImage()}}
+{\footnotesize\ttfamily Buffered\+Image org.\+newdawn.\+slick.\+tools.\+scalar.\+Image\+Scale2x.\+get\+Scaled\+Image (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Retrieve the scaled image. Note this is the method that actually does the work so it may take some time to return
+
+\begin{DoxyReturn}{Returns}
+The newly scaled image 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+40     \{
+41         RawScale2x scaler = \textcolor{keyword}{new} RawScale2x(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1scalar_1_1_image_scale2x_a46fef900f8554bbdd22de7e816ebaef3}{srcData}},\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1scalar_1_1_image_scale2x_a026c0d00d9a8c601693fabe4771fdb1a}{width}},\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1scalar_1_1_image_scale2x_a06d02dc2cf0a017990d03ce89441b553}{height}});
+42         
+43         BufferedImage image = \textcolor{keyword}{new} BufferedImage(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1scalar_1_1_image_scale2x_a026c0d00d9a8c601693fabe4771fdb1a}{width}}*2,\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1scalar_1_1_image_scale2x_a06d02dc2cf0a017990d03ce89441b553}{height}}*2,BufferedImage.TYPE\_INT\_ARGB);
+44         image.setRGB(0,0,\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1scalar_1_1_image_scale2x_a026c0d00d9a8c601693fabe4771fdb1a}{width}}*2,\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1scalar_1_1_image_scale2x_a06d02dc2cf0a017990d03ce89441b553}{height}}*2,scaler.getScaledData(),0,
+      \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tools_1_1scalar_1_1_image_scale2x_a026c0d00d9a8c601693fabe4771fdb1a}{width}}*2);
+45         
+46         \textcolor{keywordflow}{return} image;
+47     \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tools_1_1scalar_1_1_image_scale2x_a06d02dc2cf0a017990d03ce89441b553}\label{classorg_1_1newdawn_1_1slick_1_1tools_1_1scalar_1_1_image_scale2x_a06d02dc2cf0a017990d03ce89441b553}} 
+\index{org\+::newdawn\+::slick\+::tools\+::scalar\+::\+Image\+Scale2x@{org\+::newdawn\+::slick\+::tools\+::scalar\+::\+Image\+Scale2x}!height@{height}}
+\index{height@{height}!org\+::newdawn\+::slick\+::tools\+::scalar\+::\+Image\+Scale2x@{org\+::newdawn\+::slick\+::tools\+::scalar\+::\+Image\+Scale2x}}
+\subsubsection{\texorpdfstring{height}{height}}
+{\footnotesize\ttfamily int org.\+newdawn.\+slick.\+tools.\+scalar.\+Image\+Scale2x.\+height\hspace{0.3cm}{\ttfamily [private]}}
+
+The height of the image \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tools_1_1scalar_1_1_image_scale2x_a46fef900f8554bbdd22de7e816ebaef3}\label{classorg_1_1newdawn_1_1slick_1_1tools_1_1scalar_1_1_image_scale2x_a46fef900f8554bbdd22de7e816ebaef3}} 
+\index{org\+::newdawn\+::slick\+::tools\+::scalar\+::\+Image\+Scale2x@{org\+::newdawn\+::slick\+::tools\+::scalar\+::\+Image\+Scale2x}!src\+Data@{src\+Data}}
+\index{src\+Data@{src\+Data}!org\+::newdawn\+::slick\+::tools\+::scalar\+::\+Image\+Scale2x@{org\+::newdawn\+::slick\+::tools\+::scalar\+::\+Image\+Scale2x}}
+\subsubsection{\texorpdfstring{src\+Data}{srcData}}
+{\footnotesize\ttfamily int \mbox{[}$\,$\mbox{]} org.\+newdawn.\+slick.\+tools.\+scalar.\+Image\+Scale2x.\+src\+Data\hspace{0.3cm}{\ttfamily [private]}}
+
+The src data from the image \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tools_1_1scalar_1_1_image_scale2x_a026c0d00d9a8c601693fabe4771fdb1a}\label{classorg_1_1newdawn_1_1slick_1_1tools_1_1scalar_1_1_image_scale2x_a026c0d00d9a8c601693fabe4771fdb1a}} 
+\index{org\+::newdawn\+::slick\+::tools\+::scalar\+::\+Image\+Scale2x@{org\+::newdawn\+::slick\+::tools\+::scalar\+::\+Image\+Scale2x}!width@{width}}
+\index{width@{width}!org\+::newdawn\+::slick\+::tools\+::scalar\+::\+Image\+Scale2x@{org\+::newdawn\+::slick\+::tools\+::scalar\+::\+Image\+Scale2x}}
+\subsubsection{\texorpdfstring{width}{width}}
+{\footnotesize\ttfamily int org.\+newdawn.\+slick.\+tools.\+scalar.\+Image\+Scale2x.\+width\hspace{0.3cm}{\ttfamily [private]}}
+
+The width of the image 

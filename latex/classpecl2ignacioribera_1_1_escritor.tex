@@ -1,0 +1,87 @@
+\hypertarget{classpecl2ignacioribera_1_1_escritor}{}\section{pecl2ignacioribera.\+Escritor Class Reference}
+\label{classpecl2ignacioribera_1_1_escritor}\index{pecl2ignacioribera.\+Escritor@{pecl2ignacioribera.\+Escritor}}
+Inheritance diagram for pecl2ignacioribera.\+Escritor\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classpecl2ignacioribera_1_1_escritor}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpecl2ignacioribera_1_1_escritor_a8ce7faa85a696b534b796fa339f8716b}{Escritor}} (int id, \mbox{\hyperlink{classpecl2ignacioribera_1_1_libro}{Libro}} \mbox{\hyperlink{classpecl2ignacioribera_1_1_escritor_ab1609b43aaa7b7fd72926798e8382b14}{aux}})
+\item 
+void \mbox{\hyperlink{classpecl2ignacioribera_1_1_escritor_afa4376cb9e3eec9b801eeb0d999f920a}{run}} ()
+\end{DoxyCompactItemize}
+\subsection*{Package Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpecl2ignacioribera_1_1_libro}{Libro}} \mbox{\hyperlink{classpecl2ignacioribera_1_1_escritor_ab1609b43aaa7b7fd72926798e8382b14}{aux}}
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classpecl2ignacioribera_1_1_escritor_a99af112e84645111c4d03268058170ee}{identificador}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyAuthor}{Author}
+Ignacio 
+\end{DoxyAuthor}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classpecl2ignacioribera_1_1_escritor_a8ce7faa85a696b534b796fa339f8716b}\label{classpecl2ignacioribera_1_1_escritor_a8ce7faa85a696b534b796fa339f8716b}} 
+\index{pecl2ignacioribera\+::\+Escritor@{pecl2ignacioribera\+::\+Escritor}!Escritor@{Escritor}}
+\index{Escritor@{Escritor}!pecl2ignacioribera\+::\+Escritor@{pecl2ignacioribera\+::\+Escritor}}
+\subsubsection{\texorpdfstring{Escritor()}{Escritor()}}
+{\footnotesize\ttfamily pecl2ignacioribera.\+Escritor.\+Escritor (\begin{DoxyParamCaption}\item[{int}]{id,  }\item[{\mbox{\hyperlink{classpecl2ignacioribera_1_1_libro}{Libro}}}]{aux }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+22     \{
+23         this.\mbox{\hyperlink{classpecl2ignacioribera_1_1_escritor_a99af112e84645111c4d03268058170ee}{identificador}} = id;
+24         this.\mbox{\hyperlink{classpecl2ignacioribera_1_1_escritor_ab1609b43aaa7b7fd72926798e8382b14}{aux}} = \mbox{\hyperlink{classpecl2ignacioribera_1_1_escritor_ab1609b43aaa7b7fd72926798e8382b14}{aux}};
+25     \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classpecl2ignacioribera_1_1_escritor_afa4376cb9e3eec9b801eeb0d999f920a}\label{classpecl2ignacioribera_1_1_escritor_afa4376cb9e3eec9b801eeb0d999f920a}} 
+\index{pecl2ignacioribera\+::\+Escritor@{pecl2ignacioribera\+::\+Escritor}!run@{run}}
+\index{run@{run}!pecl2ignacioribera\+::\+Escritor@{pecl2ignacioribera\+::\+Escritor}}
+\subsubsection{\texorpdfstring{run()}{run()}}
+{\footnotesize\ttfamily void pecl2ignacioribera.\+Escritor.\+run (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+30     \{
+31         \textcolor{keywordtype}{int} i;
+32         
+33         \textcolor{keywordflow}{for}(i=0;i<5;i++)
+34         \{
+35             \textcolor{keywordflow}{try} \{
+36                 sleep((\textcolor{keywordtype}{int})(1000*(1+Math.random())));
+37             \} \textcolor{keywordflow}{catch} (InterruptedException ex) \{
+38                 Logger.getLogger(\mbox{\hyperlink{classpecl2ignacioribera_1_1_escritor_a8ce7faa85a696b534b796fa339f8716b}{Escritor}}.class.getName()).log(Level.SEVERE, null, ex);
+39             \}
+40             \mbox{\hyperlink{classpecl2ignacioribera_1_1_escritor_ab1609b43aaa7b7fd72926798e8382b14}{aux}}.\mbox{\hyperlink{classpecl2ignacioribera_1_1_libro_a068f41dc0aac9a0755aacb19126110bf}{escribir}}(\mbox{\hyperlink{classpecl2ignacioribera_1_1_escritor_a99af112e84645111c4d03268058170ee}{identificador}});
+41         \}
+42     \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classpecl2ignacioribera_1_1_escritor_ab1609b43aaa7b7fd72926798e8382b14}\label{classpecl2ignacioribera_1_1_escritor_ab1609b43aaa7b7fd72926798e8382b14}} 
+\index{pecl2ignacioribera\+::\+Escritor@{pecl2ignacioribera\+::\+Escritor}!aux@{aux}}
+\index{aux@{aux}!pecl2ignacioribera\+::\+Escritor@{pecl2ignacioribera\+::\+Escritor}}
+\subsubsection{\texorpdfstring{aux}{aux}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classpecl2ignacioribera_1_1_libro}{Libro}} pecl2ignacioribera.\+Escritor.\+aux\hspace{0.3cm}{\ttfamily [package]}}
+
+\mbox{\Hypertarget{classpecl2ignacioribera_1_1_escritor_a99af112e84645111c4d03268058170ee}\label{classpecl2ignacioribera_1_1_escritor_a99af112e84645111c4d03268058170ee}} 
+\index{pecl2ignacioribera\+::\+Escritor@{pecl2ignacioribera\+::\+Escritor}!identificador@{identificador}}
+\index{identificador@{identificador}!pecl2ignacioribera\+::\+Escritor@{pecl2ignacioribera\+::\+Escritor}}
+\subsubsection{\texorpdfstring{identificador}{identificador}}
+{\footnotesize\ttfamily int pecl2ignacioribera.\+Escritor.\+identificador\hspace{0.3cm}{\ttfamily [private]}}
+

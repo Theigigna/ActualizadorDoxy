@@ -1,0 +1,262 @@
+\hypertarget{classorg_1_1newdawn_1_1slick_1_1tests_1_1_tile_map_test}{}\section{org.\+newdawn.\+slick.\+tests.\+Tile\+Map\+Test Class Reference}
+\label{classorg_1_1newdawn_1_1slick_1_1tests_1_1_tile_map_test}\index{org.\+newdawn.\+slick.\+tests.\+Tile\+Map\+Test@{org.\+newdawn.\+slick.\+tests.\+Tile\+Map\+Test}}
+Inheritance diagram for org.\+newdawn.\+slick.\+tests.\+Tile\+Map\+Test\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.522012cm]{classorg_1_1newdawn_1_1slick_1_1tests_1_1_tile_map_test}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_tile_map_test_a495420c73e623307230d768ea2883759}{Tile\+Map\+Test}} ()
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_tile_map_test_ac367239ef107597b8ca503bbd5956c87}{init}} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_game_container}{Game\+Container}} container)  throws Slick\+Exception 
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_tile_map_test_a6d57608e6ac0a82eb5140c26925cde48}{render}} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_game_container}{Game\+Container}} container, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_graphics}{Graphics}} g)
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_tile_map_test_a919f1dbc82723fa715959c1d49cd802f}{update}} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_game_container}{Game\+Container}} container, int delta)
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_tile_map_test_aed6237171efed7f68d0dbedbbf715e7a}{key\+Pressed}} (int key, char c)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_tile_map_test_a25f6f4309da85ca23aa292e757e586f9}{main}} (String\mbox{[}$\,$\mbox{]} argv)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map}{Tiled\+Map}} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_tile_map_test_a9556866283ab0588cbdf6c5b52c20a27}{map}}
+\item 
+String \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_tile_map_test_aea368a6a5d3db9b818166ed67000bc76}{map\+Name}}
+\item 
+String \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_tile_map_test_ae6006a02123c6cb2a3f90ffc723087c7}{monster\+Difficulty}}
+\item 
+String \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_tile_map_test_aa74d0924f7116aa7b47afad19fa79eb8}{non\+Existing\+Map\+Property}}
+\item 
+String \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_tile_map_test_aa73bda53fe33e9b901e147425469cfc6}{non\+Existing\+Layer\+Property}}
+\item 
+int \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_tile_map_test_a5d54975b114165ee5d6661153ab60842}{update\+Counter}} = 0
+\item 
+int \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_tile_map_test_a533aa2f1746bfedb4ab9bbc496708e5f}{original\+Tile\+ID}} = 0
+\end{DoxyCompactItemize}
+\subsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static int \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_tile_map_test_ab59c566c99bd22cb7f7769301a14b70b}{U\+P\+D\+A\+T\+E\+\_\+\+T\+I\+ME}} = 1000
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+A test of the tile map system based around the Til\+ED (\href{http://www.mapeditor.org}{\tt http\+://www.\+mapeditor.\+org}) tool
+
+\begin{DoxyAuthor}{Author}
+kevin 
+\end{DoxyAuthor}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tests_1_1_tile_map_test_a495420c73e623307230d768ea2883759}\label{classorg_1_1newdawn_1_1slick_1_1tests_1_1_tile_map_test_a495420c73e623307230d768ea2883759}} 
+\index{org\+::newdawn\+::slick\+::tests\+::\+Tile\+Map\+Test@{org\+::newdawn\+::slick\+::tests\+::\+Tile\+Map\+Test}!Tile\+Map\+Test@{Tile\+Map\+Test}}
+\index{Tile\+Map\+Test@{Tile\+Map\+Test}!org\+::newdawn\+::slick\+::tests\+::\+Tile\+Map\+Test@{org\+::newdawn\+::slick\+::tests\+::\+Tile\+Map\+Test}}
+\subsubsection{\texorpdfstring{Tile\+Map\+Test()}{TileMapTest()}}
+{\footnotesize\ttfamily org.\+newdawn.\+slick.\+tests.\+Tile\+Map\+Test.\+Tile\+Map\+Test (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Create our tile map test 
+\begin{DoxyCode}
+44                          \{
+45         super(\textcolor{stringliteral}{"Tile Map Test"});
+46     \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tests_1_1_tile_map_test_ac367239ef107597b8ca503bbd5956c87}\label{classorg_1_1newdawn_1_1slick_1_1tests_1_1_tile_map_test_ac367239ef107597b8ca503bbd5956c87}} 
+\index{org\+::newdawn\+::slick\+::tests\+::\+Tile\+Map\+Test@{org\+::newdawn\+::slick\+::tests\+::\+Tile\+Map\+Test}!init@{init}}
+\index{init@{init}!org\+::newdawn\+::slick\+::tests\+::\+Tile\+Map\+Test@{org\+::newdawn\+::slick\+::tests\+::\+Tile\+Map\+Test}}
+\subsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+tests.\+Tile\+Map\+Test.\+init (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_game_container}{Game\+Container}}}]{container }\end{DoxyParamCaption}) throws \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_slick_exception}{Slick\+Exception}}\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_basic_game_a8af0900217e4d389249f71367b22d114}{org.\+newdawn.\+slick.\+Basic\+Game\+::init}}(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_game_container}{org.\+newdawn.\+slick.\+Game\+Container}}) 
+\end{DoxySeeAlso}
+
+
+Implements \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1_game_ad2dd6affab08bb8fdb5fab0815957b7a}{org.\+newdawn.\+slick.\+Game}}.
+
+
+\begin{DoxyCode}
+51                                                                     \{
+52         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_tile_map_test_a9556866283ab0588cbdf6c5b52c20a27}{map}} = \textcolor{keyword}{new} TiledMap(\textcolor{stringliteral}{"testdata/testmap.tmx"},\textcolor{stringliteral}{"testdata"});
+53         \textcolor{comment}{// read some properties from map and layer}
+54         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_tile_map_test_aea368a6a5d3db9b818166ed67000bc76}{mapName}} = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_tile_map_test_a9556866283ab0588cbdf6c5b52c20a27}{map}}.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_a128392c0d3df060a45af99e04e1860d1}{getMapProperty}}(\textcolor{stringliteral}{"name"}, \textcolor{stringliteral}{"Unknown map name"});
+55         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_tile_map_test_ae6006a02123c6cb2a3f90ffc723087c7}{monsterDifficulty}} = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_tile_map_test_a9556866283ab0588cbdf6c5b52c20a27}{map}}.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_a3d0f5d0eab64ef750d18721530e3a43c}{getLayerProperty}}(0, \textcolor{stringliteral}{"monsters"}, \textcolor{stringliteral}{"easy
+       peasy"});
+56         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_tile_map_test_aa74d0924f7116aa7b47afad19fa79eb8}{nonExistingMapProperty}} = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_tile_map_test_a9556866283ab0588cbdf6c5b52c20a27}{map}}.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_a128392c0d3df060a45af99e04e1860d1}{getMapProperty}}(\textcolor{stringliteral}{"zaphod"}, \textcolor{stringliteral}{"
+      Undefined map property"});
+57         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_tile_map_test_aa73bda53fe33e9b901e147425469cfc6}{nonExistingLayerProperty}} = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_tile_map_test_a9556866283ab0588cbdf6c5b52c20a27}{map}}.
+      \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_a3d0f5d0eab64ef750d18721530e3a43c}{getLayerProperty}}(1, \textcolor{stringliteral}{"beeblebrox"}, \textcolor{stringliteral}{"Undefined layer property"});
+58         
+59         \textcolor{comment}{// store the original tileid of layer 0 at 10, 10}
+60         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_tile_map_test_a533aa2f1746bfedb4ab9bbc496708e5f}{originalTileID}} = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_tile_map_test_a9556866283ab0588cbdf6c5b52c20a27}{map}}.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_a03f3fac591bac6a711f9b746a21da559}{getTileId}}(10, 10, 0);
+61     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tests_1_1_tile_map_test_aed6237171efed7f68d0dbedbbf715e7a}\label{classorg_1_1newdawn_1_1slick_1_1tests_1_1_tile_map_test_aed6237171efed7f68d0dbedbbf715e7a}} 
+\index{org\+::newdawn\+::slick\+::tests\+::\+Tile\+Map\+Test@{org\+::newdawn\+::slick\+::tests\+::\+Tile\+Map\+Test}!key\+Pressed@{key\+Pressed}}
+\index{key\+Pressed@{key\+Pressed}!org\+::newdawn\+::slick\+::tests\+::\+Tile\+Map\+Test@{org\+::newdawn\+::slick\+::tests\+::\+Tile\+Map\+Test}}
+\subsubsection{\texorpdfstring{key\+Pressed()}{keyPressed()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+tests.\+Tile\+Map\+Test.\+key\+Pressed (\begin{DoxyParamCaption}\item[{int}]{key,  }\item[{char}]{c }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_basic_game_a4fbb3345b5abf5ddd54a99466d07f02f}{org.\+newdawn.\+slick.\+Basic\+Game\+::key\+Pressed(int, char)}} 
+\end{DoxySeeAlso}
+
+
+Implements \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1_key_listener_ac0b0568a21ef486c4f51382614c196ef}{org.\+newdawn.\+slick.\+Key\+Listener}}.
+
+
+\begin{DoxyCode}
+99                                             \{
+100         \textcolor{keywordflow}{if} (key == Input.KEY\_ESCAPE) \{
+101             System.exit(0);
+102         \}
+103     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tests_1_1_tile_map_test_a25f6f4309da85ca23aa292e757e586f9}\label{classorg_1_1newdawn_1_1slick_1_1tests_1_1_tile_map_test_a25f6f4309da85ca23aa292e757e586f9}} 
+\index{org\+::newdawn\+::slick\+::tests\+::\+Tile\+Map\+Test@{org\+::newdawn\+::slick\+::tests\+::\+Tile\+Map\+Test}!main@{main}}
+\index{main@{main}!org\+::newdawn\+::slick\+::tests\+::\+Tile\+Map\+Test@{org\+::newdawn\+::slick\+::tests\+::\+Tile\+Map\+Test}}
+\subsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily static void org.\+newdawn.\+slick.\+tests.\+Tile\+Map\+Test.\+main (\begin{DoxyParamCaption}\item[{String \mbox{[}$\,$\mbox{]}}]{argv }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Entry point to our test
+
+
+\begin{DoxyParams}{Parameters}
+{\em argv} & The arguments passed to the test \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+110                                            \{
+111         \textcolor{keywordflow}{try} \{
+112             AppGameContainer container = \textcolor{keyword}{new} AppGameContainer(\textcolor{keyword}{new} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_tile_map_test_a495420c73e623307230d768ea2883759}{TileMapTest}}());
+113             container.setDisplayMode(800,600,\textcolor{keyword}{false});
+114             container.start();
+115         \} \textcolor{keywordflow}{catch} (SlickException e) \{
+116             e.printStackTrace();
+117         \}
+118     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tests_1_1_tile_map_test_a6d57608e6ac0a82eb5140c26925cde48}\label{classorg_1_1newdawn_1_1slick_1_1tests_1_1_tile_map_test_a6d57608e6ac0a82eb5140c26925cde48}} 
+\index{org\+::newdawn\+::slick\+::tests\+::\+Tile\+Map\+Test@{org\+::newdawn\+::slick\+::tests\+::\+Tile\+Map\+Test}!render@{render}}
+\index{render@{render}!org\+::newdawn\+::slick\+::tests\+::\+Tile\+Map\+Test@{org\+::newdawn\+::slick\+::tests\+::\+Tile\+Map\+Test}}
+\subsubsection{\texorpdfstring{render()}{render()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+tests.\+Tile\+Map\+Test.\+render (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_game_container}{Game\+Container}}}]{container,  }\item[{\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_graphics}{Graphics}}}]{g }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1_game_af1a4670d43eb3ba04dfcf55ab1975b64}{org.\+newdawn.\+slick.\+Basic\+Game\+::render}}(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_game_container}{org.\+newdawn.\+slick.\+Game\+Container}}, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_graphics}{org.\+newdawn.\+slick.\+Graphics}}) 
+\end{DoxySeeAlso}
+
+
+Implements \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1_game_af1a4670d43eb3ba04dfcf55ab1975b64}{org.\+newdawn.\+slick.\+Game}}.
+
+
+\begin{DoxyCode}
+66                                                             \{
+67         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_tile_map_test_a9556866283ab0588cbdf6c5b52c20a27}{map}}.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_a313dd901616b31c772f213675d236389}{render}}(10, 10, 4,4,15,15);
+68         
+69         g.scale(0.35f,0.35f);
+70         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_tile_map_test_a9556866283ab0588cbdf6c5b52c20a27}{map}}.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_a313dd901616b31c772f213675d236389}{render}}(1400, 0);
+71         g.resetTransform();
+72         
+73         g.drawString(\textcolor{stringliteral}{"map name: "} + \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_tile_map_test_aea368a6a5d3db9b818166ed67000bc76}{mapName}}, 10, 500);
+74         g.drawString(\textcolor{stringliteral}{"monster difficulty: "} + \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_tile_map_test_ae6006a02123c6cb2a3f90ffc723087c7}{monsterDifficulty}}, 10, 550);
+75         
+76         g.drawString(\textcolor{stringliteral}{"non existing map property: "} + \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_tile_map_test_aa74d0924f7116aa7b47afad19fa79eb8}{nonExistingMapProperty}}, 10, 525)
+      ;
+77         g.drawString(\textcolor{stringliteral}{"non existing layer property: "} + \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_tile_map_test_aa73bda53fe33e9b901e147425469cfc6}{nonExistingLayerProperty}}, 10
+      , 575);
+78     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tests_1_1_tile_map_test_a919f1dbc82723fa715959c1d49cd802f}\label{classorg_1_1newdawn_1_1slick_1_1tests_1_1_tile_map_test_a919f1dbc82723fa715959c1d49cd802f}} 
+\index{org\+::newdawn\+::slick\+::tests\+::\+Tile\+Map\+Test@{org\+::newdawn\+::slick\+::tests\+::\+Tile\+Map\+Test}!update@{update}}
+\index{update@{update}!org\+::newdawn\+::slick\+::tests\+::\+Tile\+Map\+Test@{org\+::newdawn\+::slick\+::tests\+::\+Tile\+Map\+Test}}
+\subsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+tests.\+Tile\+Map\+Test.\+update (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_game_container}{Game\+Container}}}]{container,  }\item[{int}]{delta }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_basic_game_acfe6fa05aef83bff1631af91a3e4bd20}{org.\+newdawn.\+slick.\+Basic\+Game\+::update}}(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1_game_container}{org.\+newdawn.\+slick.\+Game\+Container}}, int) 
+\end{DoxySeeAlso}
+
+
+Implements \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1_game_ab07b2e9463ee4631620dde0de25bdee8}{org.\+newdawn.\+slick.\+Game}}.
+
+
+\begin{DoxyCode}
+83                                                            \{
+84         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_tile_map_test_a5d54975b114165ee5d6661153ab60842}{updateCounter}} += delta;
+85         \textcolor{keywordflow}{if} (\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_tile_map_test_a5d54975b114165ee5d6661153ab60842}{updateCounter}} > \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_tile_map_test_ab59c566c99bd22cb7f7769301a14b70b}{UPDATE\_TIME}}) \{
+86             \textcolor{comment}{// swap the tile every second}
+87             \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_tile_map_test_a5d54975b114165ee5d6661153ab60842}{updateCounter}} -= \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_tile_map_test_ab59c566c99bd22cb7f7769301a14b70b}{UPDATE\_TIME}};
+88             \textcolor{keywordtype}{int} currentTileID = \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_tile_map_test_a9556866283ab0588cbdf6c5b52c20a27}{map}}.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_a03f3fac591bac6a711f9b746a21da559}{getTileId}}(10, 10, 0);
+89             \textcolor{keywordflow}{if} (currentTileID != \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_tile_map_test_a533aa2f1746bfedb4ab9bbc496708e5f}{originalTileID}})
+90                 \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_tile_map_test_a9556866283ab0588cbdf6c5b52c20a27}{map}}.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_a83940adc9a30f701eb793b8918f26d6b}{setTileId}}(10, 10, 0, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_tile_map_test_a533aa2f1746bfedb4ab9bbc496708e5f}{originalTileID}});
+91             \textcolor{keywordflow}{else}
+92                 \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_tile_map_test_a9556866283ab0588cbdf6c5b52c20a27}{map}}.\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map_a83940adc9a30f701eb793b8918f26d6b}{setTileId}}(10, 10, 0, 1);
+93         \}
+94     \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tests_1_1_tile_map_test_a9556866283ab0588cbdf6c5b52c20a27}\label{classorg_1_1newdawn_1_1slick_1_1tests_1_1_tile_map_test_a9556866283ab0588cbdf6c5b52c20a27}} 
+\index{org\+::newdawn\+::slick\+::tests\+::\+Tile\+Map\+Test@{org\+::newdawn\+::slick\+::tests\+::\+Tile\+Map\+Test}!map@{map}}
+\index{map@{map}!org\+::newdawn\+::slick\+::tests\+::\+Tile\+Map\+Test@{org\+::newdawn\+::slick\+::tests\+::\+Tile\+Map\+Test}}
+\subsubsection{\texorpdfstring{map}{map}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tiled_1_1_tiled_map}{Tiled\+Map}} org.\+newdawn.\+slick.\+tests.\+Tile\+Map\+Test.\+map\hspace{0.3cm}{\ttfamily [private]}}
+
+The tile map we\textquotesingle{}re going to load and render \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tests_1_1_tile_map_test_aea368a6a5d3db9b818166ed67000bc76}\label{classorg_1_1newdawn_1_1slick_1_1tests_1_1_tile_map_test_aea368a6a5d3db9b818166ed67000bc76}} 
+\index{org\+::newdawn\+::slick\+::tests\+::\+Tile\+Map\+Test@{org\+::newdawn\+::slick\+::tests\+::\+Tile\+Map\+Test}!map\+Name@{map\+Name}}
+\index{map\+Name@{map\+Name}!org\+::newdawn\+::slick\+::tests\+::\+Tile\+Map\+Test@{org\+::newdawn\+::slick\+::tests\+::\+Tile\+Map\+Test}}
+\subsubsection{\texorpdfstring{map\+Name}{mapName}}
+{\footnotesize\ttfamily String org.\+newdawn.\+slick.\+tests.\+Tile\+Map\+Test.\+map\+Name\hspace{0.3cm}{\ttfamily [private]}}
+
+the name of the map, read from map properties, specified by Til\+ED \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tests_1_1_tile_map_test_ae6006a02123c6cb2a3f90ffc723087c7}\label{classorg_1_1newdawn_1_1slick_1_1tests_1_1_tile_map_test_ae6006a02123c6cb2a3f90ffc723087c7}} 
+\index{org\+::newdawn\+::slick\+::tests\+::\+Tile\+Map\+Test@{org\+::newdawn\+::slick\+::tests\+::\+Tile\+Map\+Test}!monster\+Difficulty@{monster\+Difficulty}}
+\index{monster\+Difficulty@{monster\+Difficulty}!org\+::newdawn\+::slick\+::tests\+::\+Tile\+Map\+Test@{org\+::newdawn\+::slick\+::tests\+::\+Tile\+Map\+Test}}
+\subsubsection{\texorpdfstring{monster\+Difficulty}{monsterDifficulty}}
+{\footnotesize\ttfamily String org.\+newdawn.\+slick.\+tests.\+Tile\+Map\+Test.\+monster\+Difficulty\hspace{0.3cm}{\ttfamily [private]}}
+
+how hard are the monsters, read from layer properties, specified by Til\+ED \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tests_1_1_tile_map_test_aa73bda53fe33e9b901e147425469cfc6}\label{classorg_1_1newdawn_1_1slick_1_1tests_1_1_tile_map_test_aa73bda53fe33e9b901e147425469cfc6}} 
+\index{org\+::newdawn\+::slick\+::tests\+::\+Tile\+Map\+Test@{org\+::newdawn\+::slick\+::tests\+::\+Tile\+Map\+Test}!non\+Existing\+Layer\+Property@{non\+Existing\+Layer\+Property}}
+\index{non\+Existing\+Layer\+Property@{non\+Existing\+Layer\+Property}!org\+::newdawn\+::slick\+::tests\+::\+Tile\+Map\+Test@{org\+::newdawn\+::slick\+::tests\+::\+Tile\+Map\+Test}}
+\subsubsection{\texorpdfstring{non\+Existing\+Layer\+Property}{nonExistingLayerProperty}}
+{\footnotesize\ttfamily String org.\+newdawn.\+slick.\+tests.\+Tile\+Map\+Test.\+non\+Existing\+Layer\+Property\hspace{0.3cm}{\ttfamily [private]}}
+
+we try to read a property from the layer which doesn\textquotesingle{}t exist so we expect the default value \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tests_1_1_tile_map_test_aa74d0924f7116aa7b47afad19fa79eb8}\label{classorg_1_1newdawn_1_1slick_1_1tests_1_1_tile_map_test_aa74d0924f7116aa7b47afad19fa79eb8}} 
+\index{org\+::newdawn\+::slick\+::tests\+::\+Tile\+Map\+Test@{org\+::newdawn\+::slick\+::tests\+::\+Tile\+Map\+Test}!non\+Existing\+Map\+Property@{non\+Existing\+Map\+Property}}
+\index{non\+Existing\+Map\+Property@{non\+Existing\+Map\+Property}!org\+::newdawn\+::slick\+::tests\+::\+Tile\+Map\+Test@{org\+::newdawn\+::slick\+::tests\+::\+Tile\+Map\+Test}}
+\subsubsection{\texorpdfstring{non\+Existing\+Map\+Property}{nonExistingMapProperty}}
+{\footnotesize\ttfamily String org.\+newdawn.\+slick.\+tests.\+Tile\+Map\+Test.\+non\+Existing\+Map\+Property\hspace{0.3cm}{\ttfamily [private]}}
+
+we try to read a property from the map which doesn\textquotesingle{}t exist so we expect the default value \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tests_1_1_tile_map_test_a533aa2f1746bfedb4ab9bbc496708e5f}\label{classorg_1_1newdawn_1_1slick_1_1tests_1_1_tile_map_test_a533aa2f1746bfedb4ab9bbc496708e5f}} 
+\index{org\+::newdawn\+::slick\+::tests\+::\+Tile\+Map\+Test@{org\+::newdawn\+::slick\+::tests\+::\+Tile\+Map\+Test}!original\+Tile\+ID@{original\+Tile\+ID}}
+\index{original\+Tile\+ID@{original\+Tile\+ID}!org\+::newdawn\+::slick\+::tests\+::\+Tile\+Map\+Test@{org\+::newdawn\+::slick\+::tests\+::\+Tile\+Map\+Test}}
+\subsubsection{\texorpdfstring{original\+Tile\+ID}{originalTileID}}
+{\footnotesize\ttfamily int org.\+newdawn.\+slick.\+tests.\+Tile\+Map\+Test.\+original\+Tile\+ID = 0\hspace{0.3cm}{\ttfamily [private]}}
+
+we want to store the original\+Tile\+ID before we set a new one \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tests_1_1_tile_map_test_ab59c566c99bd22cb7f7769301a14b70b}\label{classorg_1_1newdawn_1_1slick_1_1tests_1_1_tile_map_test_ab59c566c99bd22cb7f7769301a14b70b}} 
+\index{org\+::newdawn\+::slick\+::tests\+::\+Tile\+Map\+Test@{org\+::newdawn\+::slick\+::tests\+::\+Tile\+Map\+Test}!U\+P\+D\+A\+T\+E\+\_\+\+T\+I\+ME@{U\+P\+D\+A\+T\+E\+\_\+\+T\+I\+ME}}
+\index{U\+P\+D\+A\+T\+E\+\_\+\+T\+I\+ME@{U\+P\+D\+A\+T\+E\+\_\+\+T\+I\+ME}!org\+::newdawn\+::slick\+::tests\+::\+Tile\+Map\+Test@{org\+::newdawn\+::slick\+::tests\+::\+Tile\+Map\+Test}}
+\subsubsection{\texorpdfstring{U\+P\+D\+A\+T\+E\+\_\+\+T\+I\+ME}{UPDATE\_TIME}}
+{\footnotesize\ttfamily int org.\+newdawn.\+slick.\+tests.\+Tile\+Map\+Test.\+U\+P\+D\+A\+T\+E\+\_\+\+T\+I\+ME = 1000\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+changing some tile of the map every U\+P\+D\+A\+T\+E\+\_\+\+T\+I\+ME milliseconds \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tests_1_1_tile_map_test_a5d54975b114165ee5d6661153ab60842}\label{classorg_1_1newdawn_1_1slick_1_1tests_1_1_tile_map_test_a5d54975b114165ee5d6661153ab60842}} 
+\index{org\+::newdawn\+::slick\+::tests\+::\+Tile\+Map\+Test@{org\+::newdawn\+::slick\+::tests\+::\+Tile\+Map\+Test}!update\+Counter@{update\+Counter}}
+\index{update\+Counter@{update\+Counter}!org\+::newdawn\+::slick\+::tests\+::\+Tile\+Map\+Test@{org\+::newdawn\+::slick\+::tests\+::\+Tile\+Map\+Test}}
+\subsubsection{\texorpdfstring{update\+Counter}{updateCounter}}
+{\footnotesize\ttfamily int org.\+newdawn.\+slick.\+tests.\+Tile\+Map\+Test.\+update\+Counter = 0\hspace{0.3cm}{\ttfamily [private]}}
+
+how long did we wait already until next update 

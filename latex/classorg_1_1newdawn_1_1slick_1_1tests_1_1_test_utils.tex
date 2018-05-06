@@ -1,0 +1,323 @@
+\hypertarget{classorg_1_1newdawn_1_1slick_1_1tests_1_1_test_utils}{}\section{org.\+newdawn.\+slick.\+tests.\+Test\+Utils Class Reference}
+\label{classorg_1_1newdawn_1_1slick_1_1tests_1_1_test_utils}\index{org.\+newdawn.\+slick.\+tests.\+Test\+Utils@{org.\+newdawn.\+slick.\+tests.\+Test\+Utils}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_test_utils_a76af694d0bc5733badd0d91d4b089bb0}{start}} ()
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_test_utils_ac7ed064f8a58185047e1ef6870382747}{init}} ()
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_test_utils_a109c078a4703d9f559df11450b3e6754}{update}} ()
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_test_utils_ad588dc36052b23fc284e1f9cc3baf498}{render}} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_test_utils_a03e6ed0e15f3f86b48678943e08a34a5}{main}} (String\mbox{[}$\,$\mbox{]} argv)
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_test_utils_aa258422cf2a025183e44eb3a13b66e3f}{init\+GL}} (int width, int height)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1opengl_1_1_texture}{Texture}} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_test_utils_afc788f996bdde4e06aba401024783347}{texture}}
+\item 
+\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1openal_1_1_audio}{Audio}} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_test_utils_a4f17a6703add4a5d30e064fb32d69a34}{ogg\+Effect}}
+\item 
+\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1openal_1_1_audio}{Audio}} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_test_utils_a1b40069da828fdd5131e127a1db4e1f3}{wav\+Effect}}
+\item 
+\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1openal_1_1_audio}{Audio}} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_test_utils_af8f2ad43fbdbdc89b483f080da4ded88}{aif\+Effect}}
+\item 
+\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1openal_1_1_audio}{Audio}} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_test_utils_a7ea74d87f68b8c8b5e34936b51baf0b8}{ogg\+Stream}}
+\item 
+\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1openal_1_1_audio}{Audio}} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_test_utils_a976c40b2829c394a1bdead2aac1125a4}{mod\+Stream}}
+\item 
+\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1_font}{Font}} \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_test_utils_aabeb51946c510a7c4c82d367a6030b34}{font}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A simple utility test to use the internal slick A\+PI without the slick framework.
+
+\begin{DoxyAuthor}{Author}
+kevin 
+\end{DoxyAuthor}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tests_1_1_test_utils_ac7ed064f8a58185047e1ef6870382747}\label{classorg_1_1newdawn_1_1slick_1_1tests_1_1_test_utils_ac7ed064f8a58185047e1ef6870382747}} 
+\index{org\+::newdawn\+::slick\+::tests\+::\+Test\+Utils@{org\+::newdawn\+::slick\+::tests\+::\+Test\+Utils}!init@{init}}
+\index{init@{init}!org\+::newdawn\+::slick\+::tests\+::\+Test\+Utils@{org\+::newdawn\+::slick\+::tests\+::\+Test\+Utils}}
+\subsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+tests.\+Test\+Utils.\+init (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Initialise resources 
+\begin{DoxyCode}
+104                        \{
+105         \textcolor{comment}{// turn off all but errors}
+106         Log.setVerbose(\textcolor{keyword}{false});
+107 
+108         java.awt.Font awtFont = \textcolor{keyword}{new} java.awt.Font(\textcolor{stringliteral}{"Times New Roman"}, java.awt.Font.BOLD, 16);
+109         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_test_utils_aabeb51946c510a7c4c82d367a6030b34}{font}} = \textcolor{keyword}{new} TrueTypeFont(awtFont, \textcolor{keyword}{false});
+110         
+111         \textcolor{comment}{// texture load, the second argument is a name assigned to the texture to}
+112         \textcolor{comment}{// allow for caching in the texture loader. The 3rd argument indicates whether}
+113         \textcolor{comment}{// the image should be flipped on loading}
+114         \textcolor{keywordflow}{try} \{
+115             \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_test_utils_afc788f996bdde4e06aba401024783347}{texture}} = TextureLoader.getTexture(\textcolor{stringliteral}{"PNG"}, \textcolor{keyword}{new} FileInputStream(\textcolor{stringliteral}{"testdata/rocks.png"}));
+116         
+117             System.out.println(\textcolor{stringliteral}{"Texture loaded: "}+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_test_utils_afc788f996bdde4e06aba401024783347}{texture}});
+118             System.out.println(\textcolor{stringliteral}{">> Image width: "}+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_test_utils_afc788f996bdde4e06aba401024783347}{texture}}.\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1opengl_1_1_texture_a7dadcef354aaed97a0fe03f1978ee5f8}{getImageWidth}}());
+119             System.out.println(\textcolor{stringliteral}{">> Image height: "}+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_test_utils_afc788f996bdde4e06aba401024783347}{texture}}.\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1opengl_1_1_texture_a7dadcef354aaed97a0fe03f1978ee5f8}{getImageWidth}}());
+120             System.out.println(\textcolor{stringliteral}{">> Texture width: "}+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_test_utils_afc788f996bdde4e06aba401024783347}{texture}}.
+      \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1opengl_1_1_texture_aa85f8503feafc2f18472a4deb2a67b4e}{getTextureWidth}}());
+121             System.out.println(\textcolor{stringliteral}{">> Texture height: "}+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_test_utils_afc788f996bdde4e06aba401024783347}{texture}}.
+      \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1opengl_1_1_texture_a6626d0905e80214b320fb0042ad0e98d}{getTextureHeight}}());
+122             System.out.println(\textcolor{stringliteral}{">> Texture ID: "}+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_test_utils_afc788f996bdde4e06aba401024783347}{texture}}.\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1opengl_1_1_texture_a0d846c1cfcc66768db002d4eb06ad841}{getTextureID}}());
+123         \} \textcolor{keywordflow}{catch} (IOException e) \{
+124             e.printStackTrace();
+125         \}
+126 
+127         \textcolor{keywordflow}{try} \{
+128             \textcolor{comment}{// you can play oggs by loading the complete thing into }
+129             \textcolor{comment}{// a sound}
+130             \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_test_utils_a4f17a6703add4a5d30e064fb32d69a34}{oggEffect}} = AudioLoader.getAudio(\textcolor{stringliteral}{"OGG"}, \textcolor{keyword}{new} FileInputStream(\textcolor{stringliteral}{"testdata/restart.ogg"}));
+131             
+132             \textcolor{comment}{// or setting up a stream to read from. Note that the argument becomes}
+133             \textcolor{comment}{// a URL here so it can be reopened when the stream is complete. Probably}
+134             \textcolor{comment}{// should have reset the stream by thats not how the original stuff worked}
+135             \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_test_utils_a7ea74d87f68b8c8b5e34936b51baf0b8}{oggStream}} = AudioLoader.getStreamingAudio(\textcolor{stringliteral}{"OGG"}, \textcolor{keyword}{new} File(\textcolor{stringliteral}{"testdata/bongos.ogg"}).toURL
+      ());
+136             
+137             \textcolor{comment}{// can load mods (XM, MOD) using ibxm which is then played through OpenAL. MODs}
+138             \textcolor{comment}{// are always streamed based on the way IBXM works}
+139             \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_test_utils_a976c40b2829c394a1bdead2aac1125a4}{modStream}} = AudioLoader.getStreamingAudio(\textcolor{stringliteral}{"MOD"}, \textcolor{keyword}{new} File(\textcolor{stringliteral}{"testdata/SMB-X.XM"}).toURL()
+      );
+140 
+141             \textcolor{comment}{// playing as music uses that reserved source to play the sound. The first}
+142             \textcolor{comment}{// two arguments are pitch and gain, the boolean is whether to loop the content}
+143             \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_test_utils_a976c40b2829c394a1bdead2aac1125a4}{modStream}}.\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1openal_1_1_audio_a9a13784b5ec9ce06c8756f98b00e05ab}{playAsMusic}}(1.0f, 1.0f, \textcolor{keyword}{true});
+144             
+145             \textcolor{comment}{// you can play aifs by loading the complete thing into }
+146             \textcolor{comment}{// a sound}
+147             \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_test_utils_af8f2ad43fbdbdc89b483f080da4ded88}{aifEffect}} = AudioLoader.getAudio(\textcolor{stringliteral}{"AIF"}, \textcolor{keyword}{new} FileInputStream(\textcolor{stringliteral}{"testdata/burp.aif"}));
+148 
+149             \textcolor{comment}{// you can play wavs by loading the complete thing into }
+150             \textcolor{comment}{// a sound}
+151             \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_test_utils_a1b40069da828fdd5131e127a1db4e1f3}{wavEffect}} = AudioLoader.getAudio(\textcolor{stringliteral}{"WAV"}, \textcolor{keyword}{new} FileInputStream(\textcolor{stringliteral}{"testdata/cbrown01.wav"}));
+152         \} \textcolor{keywordflow}{catch} (IOException e) \{
+153             e.printStackTrace();
+154         \}
+155     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tests_1_1_test_utils_aa258422cf2a025183e44eb3a13b66e3f}\label{classorg_1_1newdawn_1_1slick_1_1tests_1_1_test_utils_aa258422cf2a025183e44eb3a13b66e3f}} 
+\index{org\+::newdawn\+::slick\+::tests\+::\+Test\+Utils@{org\+::newdawn\+::slick\+::tests\+::\+Test\+Utils}!init\+GL@{init\+GL}}
+\index{init\+GL@{init\+GL}!org\+::newdawn\+::slick\+::tests\+::\+Test\+Utils@{org\+::newdawn\+::slick\+::tests\+::\+Test\+Utils}}
+\subsubsection{\texorpdfstring{init\+G\+L()}{initGL()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+tests.\+Test\+Utils.\+init\+GL (\begin{DoxyParamCaption}\item[{int}]{width,  }\item[{int}]{height }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+Initialise the GL display
+
+
+\begin{DoxyParams}{Parameters}
+{\em width} & The width of the display \\
+\hline
+{\em height} & The height of the display \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+71                                                \{
+72         \textcolor{keywordflow}{try} \{
+73             Display.setDisplayMode(\textcolor{keyword}{new} DisplayMode(width,height));
+74             Display.create();
+75             Display.setVSyncEnabled(\textcolor{keyword}{true});
+76         \} \textcolor{keywordflow}{catch} (LWJGLException e) \{
+77             e.printStackTrace();
+78             System.exit(0);
+79         \}
+80 
+81         GL11.glEnable(GL11.GL\_TEXTURE\_2D);
+82         GL11.glShadeModel(GL11.GL\_SMOOTH);        
+83         GL11.glDisable(GL11.GL\_DEPTH\_TEST);
+84         GL11.glDisable(GL11.GL\_LIGHTING);                    
+85         
+86         GL11.glClearColor(0.0f, 0.0f, 0.0f, 0.0f);                
+87         GL11.glClearDepth(1);                                       
+88         
+89         GL11.glEnable(GL11.GL\_BLEND);
+90         GL11.glBlendFunc(GL11.GL\_SRC\_ALPHA, GL11.GL\_ONE\_MINUS\_SRC\_ALPHA);
+91         
+92         GL11.glViewport(0,0,width,height);
+93         GL11.glMatrixMode(GL11.GL\_MODELVIEW);
+94 
+95         GL11.glMatrixMode(GL11.GL\_PROJECTION);
+96         GL11.glLoadIdentity();
+97         GL11.glOrtho(0, width, height, 0, 1, -1);
+98         GL11.glMatrixMode(GL11.GL\_MODELVIEW);
+99     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tests_1_1_test_utils_a03e6ed0e15f3f86b48678943e08a34a5}\label{classorg_1_1newdawn_1_1slick_1_1tests_1_1_test_utils_a03e6ed0e15f3f86b48678943e08a34a5}} 
+\index{org\+::newdawn\+::slick\+::tests\+::\+Test\+Utils@{org\+::newdawn\+::slick\+::tests\+::\+Test\+Utils}!main@{main}}
+\index{main@{main}!org\+::newdawn\+::slick\+::tests\+::\+Test\+Utils@{org\+::newdawn\+::slick\+::tests\+::\+Test\+Utils}}
+\subsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily static void org.\+newdawn.\+slick.\+tests.\+Test\+Utils.\+main (\begin{DoxyParamCaption}\item[{String \mbox{[}$\,$\mbox{]}}]{argv }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Entry point to the tests
+
+
+\begin{DoxyParams}{Parameters}
+{\em argv} & The arguments to the test \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+219                                            \{
+220         TestUtils utils = \textcolor{keyword}{new} TestUtils();
+221         utils.start();
+222     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tests_1_1_test_utils_ad588dc36052b23fc284e1f9cc3baf498}\label{classorg_1_1newdawn_1_1slick_1_1tests_1_1_test_utils_ad588dc36052b23fc284e1f9cc3baf498}} 
+\index{org\+::newdawn\+::slick\+::tests\+::\+Test\+Utils@{org\+::newdawn\+::slick\+::tests\+::\+Test\+Utils}!render@{render}}
+\index{render@{render}!org\+::newdawn\+::slick\+::tests\+::\+Test\+Utils@{org\+::newdawn\+::slick\+::tests\+::\+Test\+Utils}}
+\subsubsection{\texorpdfstring{render()}{render()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+tests.\+Test\+Utils.\+render (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1_game}{Game}} loop render 
+\begin{DoxyCode}
+196                          \{
+197         Color.white.bind();
+198         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_test_utils_afc788f996bdde4e06aba401024783347}{texture}}.\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1opengl_1_1_texture_a97c02b82a8170c4c0bccb570dc872873}{bind}}(); \textcolor{comment}{// or GL11.glBind(texture.getTextureID());}
+199         
+200         GL11.glBegin(GL11.GL\_QUADS);
+201             GL11.glTexCoord2f(0,0);
+202             GL11.glVertex2f(100,100);
+203             GL11.glTexCoord2f(1,0);
+204             GL11.glVertex2f(100+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_test_utils_afc788f996bdde4e06aba401024783347}{texture}}.\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1opengl_1_1_texture_aa85f8503feafc2f18472a4deb2a67b4e}{getTextureWidth}}(),100);
+205             GL11.glTexCoord2f(1,1);
+206             GL11.glVertex2f(100+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_test_utils_afc788f996bdde4e06aba401024783347}{texture}}.\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1opengl_1_1_texture_aa85f8503feafc2f18472a4deb2a67b4e}{getTextureWidth}}(),100+
+      \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_test_utils_afc788f996bdde4e06aba401024783347}{texture}}.\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1opengl_1_1_texture_a6626d0905e80214b320fb0042ad0e98d}{getTextureHeight}}());
+207             GL11.glTexCoord2f(0,1);
+208             GL11.glVertex2f(100,100+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_test_utils_afc788f996bdde4e06aba401024783347}{texture}}.\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1opengl_1_1_texture_a6626d0905e80214b320fb0042ad0e98d}{getTextureHeight}}());
+209         GL11.glEnd();
+210         
+211         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_test_utils_aabeb51946c510a7c4c82d367a6030b34}{font}}.\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1_font_a40b19381efcb64ce1ce4d446eff1e350}{drawString}}(150, 300, \textcolor{stringliteral}{"HELLO LWJGL WORLD"}, Color.yellow);
+212     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tests_1_1_test_utils_a76af694d0bc5733badd0d91d4b089bb0}\label{classorg_1_1newdawn_1_1slick_1_1tests_1_1_test_utils_a76af694d0bc5733badd0d91d4b089bb0}} 
+\index{org\+::newdawn\+::slick\+::tests\+::\+Test\+Utils@{org\+::newdawn\+::slick\+::tests\+::\+Test\+Utils}!start@{start}}
+\index{start@{start}!org\+::newdawn\+::slick\+::tests\+::\+Test\+Utils@{org\+::newdawn\+::slick\+::tests\+::\+Test\+Utils}}
+\subsubsection{\texorpdfstring{start()}{start()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+tests.\+Test\+Utils.\+start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Start the test 
+\begin{DoxyCode}
+47                         \{
+48         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_test_utils_aa258422cf2a025183e44eb3a13b66e3f}{initGL}}(800,600);
+49         \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_test_utils_ac7ed064f8a58185047e1ef6870382747}{init}}();
+50         
+51         \textcolor{keywordflow}{while} (\textcolor{keyword}{true}) \{
+52             \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_test_utils_a109c078a4703d9f559df11450b3e6754}{update}}();
+53             GL11.glClear(GL11.GL\_COLOR\_BUFFER\_BIT);
+54             \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_test_utils_ad588dc36052b23fc284e1f9cc3baf498}{render}}();
+55             
+56             Display.update();
+57             Display.sync(100);
+58 
+59             \textcolor{keywordflow}{if} (Display.isCloseRequested()) \{
+60                 System.exit(0);
+61             \}
+62         \}
+63     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tests_1_1_test_utils_a109c078a4703d9f559df11450b3e6754}\label{classorg_1_1newdawn_1_1slick_1_1tests_1_1_test_utils_a109c078a4703d9f559df11450b3e6754}} 
+\index{org\+::newdawn\+::slick\+::tests\+::\+Test\+Utils@{org\+::newdawn\+::slick\+::tests\+::\+Test\+Utils}!update@{update}}
+\index{update@{update}!org\+::newdawn\+::slick\+::tests\+::\+Test\+Utils@{org\+::newdawn\+::slick\+::tests\+::\+Test\+Utils}}
+\subsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+tests.\+Test\+Utils.\+update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1_game}{Game}} loop update 
+\begin{DoxyCode}
+160                          \{
+161         \textcolor{keywordflow}{while} (Keyboard.next()) \{
+162             \textcolor{keywordflow}{if} (Keyboard.getEventKeyState()) \{
+163                 \textcolor{keywordflow}{if} (Keyboard.getEventKey() == Keyboard.KEY\_Q) \{
+164                     \textcolor{comment}{// play as a one off sound effect}
+165                     \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_test_utils_a4f17a6703add4a5d30e064fb32d69a34}{oggEffect}}.\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1openal_1_1_audio_a69c3621a4a4bcbe9f1711f569c54017b}{playAsSoundEffect}}(1.0f, 1.0f, \textcolor{keyword}{false});
+166                 \}
+167                 \textcolor{keywordflow}{if} (Keyboard.getEventKey() == Keyboard.KEY\_W) \{
+168                     \textcolor{comment}{// replace the music thats curretly playing with }
+169                     \textcolor{comment}{// the ogg}
+170                     \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_test_utils_a7ea74d87f68b8c8b5e34936b51baf0b8}{oggStream}}.\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1openal_1_1_audio_a9a13784b5ec9ce06c8756f98b00e05ab}{playAsMusic}}(1.0f, 1.0f, \textcolor{keyword}{true});
+171                 \}
+172                 \textcolor{keywordflow}{if} (Keyboard.getEventKey() == Keyboard.KEY\_E) \{
+173                     \textcolor{comment}{// replace the music thats curretly playing with }
+174                     \textcolor{comment}{// the mod}
+175                     \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_test_utils_a976c40b2829c394a1bdead2aac1125a4}{modStream}}.\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1openal_1_1_audio_a9a13784b5ec9ce06c8756f98b00e05ab}{playAsMusic}}(1.0f, 1.0f, \textcolor{keyword}{true});
+176                 \}
+177                 \textcolor{keywordflow}{if} (Keyboard.getEventKey() == Keyboard.KEY\_R) \{
+178                     \textcolor{comment}{// play as a one off sound effect}
+179                     \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_test_utils_af8f2ad43fbdbdc89b483f080da4ded88}{aifEffect}}.\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1openal_1_1_audio_a69c3621a4a4bcbe9f1711f569c54017b}{playAsSoundEffect}}(1.0f, 1.0f, \textcolor{keyword}{false});
+180                 \}
+181                 \textcolor{keywordflow}{if} (Keyboard.getEventKey() == Keyboard.KEY\_T) \{
+182                     \textcolor{comment}{// play as a one off sound effect}
+183                     \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1tests_1_1_test_utils_a1b40069da828fdd5131e127a1db4e1f3}{wavEffect}}.\mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1openal_1_1_audio_a69c3621a4a4bcbe9f1711f569c54017b}{playAsSoundEffect}}(1.0f, 1.0f, \textcolor{keyword}{false});
+184                 \}
+185             \}
+186         \}
+187         
+188         \textcolor{comment}{// polling is required to allow streaming to get a chance to}
+189         \textcolor{comment}{// queue buffers.}
+190         SoundStore.get().poll(0);
+191     \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tests_1_1_test_utils_af8f2ad43fbdbdc89b483f080da4ded88}\label{classorg_1_1newdawn_1_1slick_1_1tests_1_1_test_utils_af8f2ad43fbdbdc89b483f080da4ded88}} 
+\index{org\+::newdawn\+::slick\+::tests\+::\+Test\+Utils@{org\+::newdawn\+::slick\+::tests\+::\+Test\+Utils}!aif\+Effect@{aif\+Effect}}
+\index{aif\+Effect@{aif\+Effect}!org\+::newdawn\+::slick\+::tests\+::\+Test\+Utils@{org\+::newdawn\+::slick\+::tests\+::\+Test\+Utils}}
+\subsubsection{\texorpdfstring{aif\+Effect}{aifEffect}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1openal_1_1_audio}{Audio}} org.\+newdawn.\+slick.\+tests.\+Test\+Utils.\+aif\+Effect\hspace{0.3cm}{\ttfamily [private]}}
+
+The aif source effect \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tests_1_1_test_utils_aabeb51946c510a7c4c82d367a6030b34}\label{classorg_1_1newdawn_1_1slick_1_1tests_1_1_test_utils_aabeb51946c510a7c4c82d367a6030b34}} 
+\index{org\+::newdawn\+::slick\+::tests\+::\+Test\+Utils@{org\+::newdawn\+::slick\+::tests\+::\+Test\+Utils}!font@{font}}
+\index{font@{font}!org\+::newdawn\+::slick\+::tests\+::\+Test\+Utils@{org\+::newdawn\+::slick\+::tests\+::\+Test\+Utils}}
+\subsubsection{\texorpdfstring{font}{font}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1_font}{Font}} org.\+newdawn.\+slick.\+tests.\+Test\+Utils.\+font\hspace{0.3cm}{\ttfamily [private]}}
+
+The font to draw to the screen \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tests_1_1_test_utils_a976c40b2829c394a1bdead2aac1125a4}\label{classorg_1_1newdawn_1_1slick_1_1tests_1_1_test_utils_a976c40b2829c394a1bdead2aac1125a4}} 
+\index{org\+::newdawn\+::slick\+::tests\+::\+Test\+Utils@{org\+::newdawn\+::slick\+::tests\+::\+Test\+Utils}!mod\+Stream@{mod\+Stream}}
+\index{mod\+Stream@{mod\+Stream}!org\+::newdawn\+::slick\+::tests\+::\+Test\+Utils@{org\+::newdawn\+::slick\+::tests\+::\+Test\+Utils}}
+\subsubsection{\texorpdfstring{mod\+Stream}{modStream}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1openal_1_1_audio}{Audio}} org.\+newdawn.\+slick.\+tests.\+Test\+Utils.\+mod\+Stream\hspace{0.3cm}{\ttfamily [private]}}
+
+The mod stream thats been loaded \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tests_1_1_test_utils_a4f17a6703add4a5d30e064fb32d69a34}\label{classorg_1_1newdawn_1_1slick_1_1tests_1_1_test_utils_a4f17a6703add4a5d30e064fb32d69a34}} 
+\index{org\+::newdawn\+::slick\+::tests\+::\+Test\+Utils@{org\+::newdawn\+::slick\+::tests\+::\+Test\+Utils}!ogg\+Effect@{ogg\+Effect}}
+\index{ogg\+Effect@{ogg\+Effect}!org\+::newdawn\+::slick\+::tests\+::\+Test\+Utils@{org\+::newdawn\+::slick\+::tests\+::\+Test\+Utils}}
+\subsubsection{\texorpdfstring{ogg\+Effect}{oggEffect}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1openal_1_1_audio}{Audio}} org.\+newdawn.\+slick.\+tests.\+Test\+Utils.\+ogg\+Effect\hspace{0.3cm}{\ttfamily [private]}}
+
+The ogg sound effect \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tests_1_1_test_utils_a7ea74d87f68b8c8b5e34936b51baf0b8}\label{classorg_1_1newdawn_1_1slick_1_1tests_1_1_test_utils_a7ea74d87f68b8c8b5e34936b51baf0b8}} 
+\index{org\+::newdawn\+::slick\+::tests\+::\+Test\+Utils@{org\+::newdawn\+::slick\+::tests\+::\+Test\+Utils}!ogg\+Stream@{ogg\+Stream}}
+\index{ogg\+Stream@{ogg\+Stream}!org\+::newdawn\+::slick\+::tests\+::\+Test\+Utils@{org\+::newdawn\+::slick\+::tests\+::\+Test\+Utils}}
+\subsubsection{\texorpdfstring{ogg\+Stream}{oggStream}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1openal_1_1_audio}{Audio}} org.\+newdawn.\+slick.\+tests.\+Test\+Utils.\+ogg\+Stream\hspace{0.3cm}{\ttfamily [private]}}
+
+The ogg stream thats been loaded \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tests_1_1_test_utils_afc788f996bdde4e06aba401024783347}\label{classorg_1_1newdawn_1_1slick_1_1tests_1_1_test_utils_afc788f996bdde4e06aba401024783347}} 
+\index{org\+::newdawn\+::slick\+::tests\+::\+Test\+Utils@{org\+::newdawn\+::slick\+::tests\+::\+Test\+Utils}!texture@{texture}}
+\index{texture@{texture}!org\+::newdawn\+::slick\+::tests\+::\+Test\+Utils@{org\+::newdawn\+::slick\+::tests\+::\+Test\+Utils}}
+\subsubsection{\texorpdfstring{texture}{texture}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1opengl_1_1_texture}{Texture}} org.\+newdawn.\+slick.\+tests.\+Test\+Utils.\+texture\hspace{0.3cm}{\ttfamily [private]}}
+
+The texture that\textquotesingle{}s been loaded \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1tests_1_1_test_utils_a1b40069da828fdd5131e127a1db4e1f3}\label{classorg_1_1newdawn_1_1slick_1_1tests_1_1_test_utils_a1b40069da828fdd5131e127a1db4e1f3}} 
+\index{org\+::newdawn\+::slick\+::tests\+::\+Test\+Utils@{org\+::newdawn\+::slick\+::tests\+::\+Test\+Utils}!wav\+Effect@{wav\+Effect}}
+\index{wav\+Effect@{wav\+Effect}!org\+::newdawn\+::slick\+::tests\+::\+Test\+Utils@{org\+::newdawn\+::slick\+::tests\+::\+Test\+Utils}}
+\subsubsection{\texorpdfstring{wav\+Effect}{wavEffect}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1openal_1_1_audio}{Audio}} org.\+newdawn.\+slick.\+tests.\+Test\+Utils.\+wav\+Effect\hspace{0.3cm}{\ttfamily [private]}}
+
+The wav sound effect 

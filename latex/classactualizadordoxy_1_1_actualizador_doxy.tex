@@ -1,0 +1,747 @@
+\hypertarget{classactualizadordoxy_1_1_actualizador_doxy}{}\section{actualizadordoxy.\+Actualizador\+Doxy Class Reference}
+\label{classactualizadordoxy_1_1_actualizador_doxy}\index{actualizadordoxy.\+Actualizador\+Doxy@{actualizadordoxy.\+Actualizador\+Doxy}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classactualizadordoxy_1_1_actualizador_doxy_a380363d2f93108de5f30dea17ba26946}{Actualizador\+Doxy}} (String\mbox{[}$\,$\mbox{]} rutas)
+\item 
+void \mbox{\hyperlink{classactualizadordoxy_1_1_actualizador_doxy_ad31b85897c4caa3b43291e89f88ca417}{ejecutar}} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classactualizadordoxy_1_1_actualizador_doxy_af4668210418bc7f9f1d6b8786891678b}{navegar\+Carpeta}} (String ruta, String ruta\+Guardado)
+\item 
+void \mbox{\hyperlink{classactualizadordoxy_1_1_actualizador_doxy_a598c7f1543ae3cf3f24b3fabcf2ad204}{traducir\+Xml}} (String ruta, String ruta\+Guardado)
+\item 
+void \mbox{\hyperlink{classactualizadordoxy_1_1_actualizador_doxy_a0a365e6e69bfc823f8ac8eea0e348c04}{traducir\+Ctl}} (String ruta, String ruta\+Guardado)
+\item 
+void \mbox{\hyperlink{classactualizadordoxy_1_1_actualizador_doxy_aebb9505e0384909ac6e2e677f400eaec}{crear\+Cpp}} (String ruta, String nombre, String texto)
+\item 
+void \mbox{\hyperlink{classactualizadordoxy_1_1_actualizador_doxy_a7d8af20d53904ac818f04740c5264d9f}{crear\+Directorio}} (String ruta)
+\item 
+void \mbox{\hyperlink{classactualizadordoxy_1_1_actualizador_doxy_a483f64d7ea713784694962feed55f4f4}{navegar\+Carpetas\+Grupos}} (String ruta, String ruta\+Guardado)
+\item 
+void \mbox{\hyperlink{classactualizadordoxy_1_1_actualizador_doxy_ada45f34eba1b90fde37a09726ff2de59}{organizar\+Carpetas}} (String ruta)
+\item 
+void \mbox{\hyperlink{classactualizadordoxy_1_1_actualizador_doxy_a552da974148de3397521e9ca911e5568}{clasificar\+Archivos}} (String ruta, int nivel)
+\item 
+void \mbox{\hyperlink{classactualizadordoxy_1_1_actualizador_doxy_acf04af5d317d03499a2a05a3091592e5}{mover\+Archivos}} (Array\+List$<$ String $>$ rutas\+Archivos, String ruta, int siguiente\+Nivel)
+\item 
+void \mbox{\hyperlink{classactualizadordoxy_1_1_actualizador_doxy_a19ee42edb9fe87c54d8581bc1a37ed77}{borrar\+Directorio}} (String ruta)
+\item 
+void \mbox{\hyperlink{classactualizadordoxy_1_1_actualizador_doxy_ae7d94f01945c2c9c2d1fab249652cc70}{ejecutar\+Doxy}} (String ruta)
+\item 
+void \mbox{\hyperlink{classactualizadordoxy_1_1_actualizador_doxy_a1ad41046efbaaf40a60b34da347f9090}{actualizar\+Log}} (String texto)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+String \mbox{\hyperlink{classactualizadordoxy_1_1_actualizador_doxy_a6e5d8e5e0fe3f2392d1c426bea2fb7fa}{ruta\+Proyecto}}
+\item 
+String \mbox{\hyperlink{classactualizadordoxy_1_1_actualizador_doxy_a5655cc699bfc4a0b01432170892663d8}{ruta\+Doc}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyAuthor}{Author}
+iribera 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+0 11/04/2018 
+\end{DoxyVersion}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classactualizadordoxy_1_1_actualizador_doxy_a380363d2f93108de5f30dea17ba26946}\label{classactualizadordoxy_1_1_actualizador_doxy_a380363d2f93108de5f30dea17ba26946}} 
+\index{actualizadordoxy\+::\+Actualizador\+Doxy@{actualizadordoxy\+::\+Actualizador\+Doxy}!Actualizador\+Doxy@{Actualizador\+Doxy}}
+\index{Actualizador\+Doxy@{Actualizador\+Doxy}!actualizadordoxy\+::\+Actualizador\+Doxy@{actualizadordoxy\+::\+Actualizador\+Doxy}}
+\subsubsection{\texorpdfstring{Actualizador\+Doxy()}{ActualizadorDoxy()}}
+{\footnotesize\ttfamily actualizadordoxy.\+Actualizador\+Doxy.\+Actualizador\+Doxy (\begin{DoxyParamCaption}\item[{String \mbox{[}$\,$\mbox{]}}]{rutas }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+35                                             \{
+36         \textcolor{comment}{//asignamos los argumentos del constructor a las variables de la clase}
+37         this.\mbox{\hyperlink{classactualizadordoxy_1_1_actualizador_doxy_a6e5d8e5e0fe3f2392d1c426bea2fb7fa}{rutaProyecto}} = rutas[0];
+38         this.\mbox{\hyperlink{classactualizadordoxy_1_1_actualizador_doxy_a5655cc699bfc4a0b01432170892663d8}{rutaDoc}} = rutas[1];
+39         \textcolor{comment}{//Se añade una carpeta project donde se guardarán los cpp}
+40         \mbox{\hyperlink{classactualizadordoxy_1_1_actualizador_doxy_a7d8af20d53904ac818f04740c5264d9f}{crearDirectorio}}(\mbox{\hyperlink{classactualizadordoxy_1_1_actualizador_doxy_a5655cc699bfc4a0b01432170892663d8}{rutaDoc}} + \textcolor{stringliteral}{"\(\backslash\)\(\backslash\)Project"});
+41         \textcolor{comment}{//borramos todos los archivos }
+42         \mbox{\hyperlink{classactualizadordoxy_1_1_actualizador_doxy_a19ee42edb9fe87c54d8581bc1a37ed77}{borrarDirectorio}}(\mbox{\hyperlink{classactualizadordoxy_1_1_actualizador_doxy_a5655cc699bfc4a0b01432170892663d8}{rutaDoc}} + \textcolor{stringliteral}{"\(\backslash\)\(\backslash\)Project"});
+43         \textcolor{comment}{//volvemos a crear la carpeta que hemos borrado}
+44         \mbox{\hyperlink{classactualizadordoxy_1_1_actualizador_doxy_a7d8af20d53904ac818f04740c5264d9f}{crearDirectorio}}(\mbox{\hyperlink{classactualizadordoxy_1_1_actualizador_doxy_a5655cc699bfc4a0b01432170892663d8}{rutaDoc}} + \textcolor{stringliteral}{"\(\backslash\)\(\backslash\)Project"});
+45         \textcolor{comment}{//limpiamos el logger previo}
+46         File file = \textcolor{keyword}{new} File(this.\mbox{\hyperlink{classactualizadordoxy_1_1_actualizador_doxy_a5655cc699bfc4a0b01432170892663d8}{rutaDoc}} + \textcolor{stringliteral}{"\(\backslash\)\(\backslash\)loggerDoxy.txt"});
+47         \textcolor{keywordtype}{boolean} borrado =  file.delete();
+48         \textcolor{keywordflow}{if}(borrado)\{
+49             System.out.println(\textcolor{stringliteral}{"logger borrado"});
+50         \}
+51     \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classactualizadordoxy_1_1_actualizador_doxy_a1ad41046efbaaf40a60b34da347f9090}\label{classactualizadordoxy_1_1_actualizador_doxy_a1ad41046efbaaf40a60b34da347f9090}} 
+\index{actualizadordoxy\+::\+Actualizador\+Doxy@{actualizadordoxy\+::\+Actualizador\+Doxy}!actualizar\+Log@{actualizar\+Log}}
+\index{actualizar\+Log@{actualizar\+Log}!actualizadordoxy\+::\+Actualizador\+Doxy@{actualizadordoxy\+::\+Actualizador\+Doxy}}
+\subsubsection{\texorpdfstring{actualizar\+Log()}{actualizarLog()}}
+{\footnotesize\ttfamily void actualizadordoxy.\+Actualizador\+Doxy.\+actualizar\+Log (\begin{DoxyParamCaption}\item[{String}]{texto }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em texto} & Teto a añadir al log \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+507                                             \{
+508         \textcolor{comment}{//Creamos el directorio para el archivo}
+509         \mbox{\hyperlink{classactualizadordoxy_1_1_actualizador_doxy_a7d8af20d53904ac818f04740c5264d9f}{crearDirectorio}}(this.\mbox{\hyperlink{classactualizadordoxy_1_1_actualizador_doxy_a5655cc699bfc4a0b01432170892663d8}{rutaDoc}});
+510         \textcolor{comment}{//Creamos el archivo, añadiendo el nombre del propio archivo y la extensión .cpp (con la que
+       queremos crearlo) a la ruta existente}
+511         File archivo = \textcolor{keyword}{new} File(this.\mbox{\hyperlink{classactualizadordoxy_1_1_actualizador_doxy_a5655cc699bfc4a0b01432170892663d8}{rutaDoc}} + \textcolor{stringliteral}{"\(\backslash\)\(\backslash\)loggerDoxy.txt"});
+512         \textcolor{comment}{//Declaramos el buffer de escritura}
+513         BufferedWriter bw = null;
+514         \textcolor{keywordflow}{try}
+515         \{
+516             \textcolor{comment}{//Abrimos el buffer the escritura para el archivo (sin usar el contructor con append = true,
+       para sobreescribir el archivo)}
+517             bw = \textcolor{keyword}{new} BufferedWriter(\textcolor{keyword}{new} FileWriter(archivo));
+518             \textcolor{comment}{//Sobreescribimos el archivo con el codigo actualizado}
+519             bw.append(texto + \textcolor{stringliteral}{"\(\backslash\)n"});
+520         \}\textcolor{keywordflow}{catch}(IOException io)\{
+521             \textcolor{comment}{//No se ha podido crear el archivo}
+522             System.out.println(\textcolor{stringliteral}{"io exception en actualizar log"});
+523         \}\textcolor{keywordflow}{finally}\{
+524             \textcolor{comment}{//Siempre hay que cerrar el buffer (si se ha llegado a crear)}
+525             \textcolor{keywordflow}{if}(bw != null)
+526             \{
+527                 \textcolor{keywordflow}{try} \{
+528                     \textcolor{comment}{//Si se ha creado, cerramos el buffer}
+529                     bw.close();
+530                 \} \textcolor{keywordflow}{catch} (IOException ex) \{
+531                     \mbox{\hyperlink{classactualizadordoxy_1_1_actualizador_doxy_a1ad41046efbaaf40a60b34da347f9090}{actualizarLog}}(\textcolor{stringliteral}{"Fallo al cerrar los streams del actualizarLog."});
+532                 \}
+533             \}
+534         \}
+535     \}    
+\end{DoxyCode}
+\mbox{\Hypertarget{classactualizadordoxy_1_1_actualizador_doxy_a19ee42edb9fe87c54d8581bc1a37ed77}\label{classactualizadordoxy_1_1_actualizador_doxy_a19ee42edb9fe87c54d8581bc1a37ed77}} 
+\index{actualizadordoxy\+::\+Actualizador\+Doxy@{actualizadordoxy\+::\+Actualizador\+Doxy}!borrar\+Directorio@{borrar\+Directorio}}
+\index{borrar\+Directorio@{borrar\+Directorio}!actualizadordoxy\+::\+Actualizador\+Doxy@{actualizadordoxy\+::\+Actualizador\+Doxy}}
+\subsubsection{\texorpdfstring{borrar\+Directorio()}{borrarDirectorio()}}
+{\footnotesize\ttfamily void actualizadordoxy.\+Actualizador\+Doxy.\+borrar\+Directorio (\begin{DoxyParamCaption}\item[{String}]{ruta }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+\begin{DoxyCode}
+457                                               \{
+458         \textcolor{comment}{//Ira borrando todos los archivos de un directorio}
+459         \textcolor{comment}{//Obtenemos el archivo de la ruta actual}
+460         File archivo = \textcolor{keyword}{new} File(ruta);
+461         \textcolor{comment}{//Recorremos todos los archivos que contenga esa ruta}
+462         \textcolor{keywordtype}{int} numeroArchivos = archivo.listFiles().length;
+463         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = numeroArchivos - 1; i >= 0; i--) \{
+464             \textcolor{keywordflow}{if}(archivo.listFiles()[i].isDirectory())\{
+465                 \mbox{\hyperlink{classactualizadordoxy_1_1_actualizador_doxy_a19ee42edb9fe87c54d8581bc1a37ed77}{borrarDirectorio}}(ruta + \textcolor{stringliteral}{"\(\backslash\)\(\backslash\)"} + archivo.listFiles()[i].getName());
+466             \}
+467             \textcolor{keywordtype}{boolean} borrado = archivo.listFiles()[i].delete();
+468             \textcolor{keywordflow}{if}(borrado)\{
+469                 System.out.println(\textcolor{stringliteral}{"Archivo borrado con exito."});
+470             \}\textcolor{keywordflow}{else}\{
+471                 System.out.println(\textcolor{stringliteral}{"El archivo "} + archivo.listFiles()[i].getName() + \textcolor{stringliteral}{" no ha podido ser
+       borrado."});
+472             \}
+473         \}
+474     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classactualizadordoxy_1_1_actualizador_doxy_a552da974148de3397521e9ca911e5568}\label{classactualizadordoxy_1_1_actualizador_doxy_a552da974148de3397521e9ca911e5568}} 
+\index{actualizadordoxy\+::\+Actualizador\+Doxy@{actualizadordoxy\+::\+Actualizador\+Doxy}!clasificar\+Archivos@{clasificar\+Archivos}}
+\index{clasificar\+Archivos@{clasificar\+Archivos}!actualizadordoxy\+::\+Actualizador\+Doxy@{actualizadordoxy\+::\+Actualizador\+Doxy}}
+\subsubsection{\texorpdfstring{clasificar\+Archivos()}{clasificarArchivos()}}
+{\footnotesize\ttfamily void actualizadordoxy.\+Actualizador\+Doxy.\+clasificar\+Archivos (\begin{DoxyParamCaption}\item[{String}]{ruta,  }\item[{int}]{nivel }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em ruta} & Ruta de archivos actual donde queremos ordenar \\
+\hline
+{\em nivel} & Numero desde el 0 al 2 (3 niveles) \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+373                                                            \{
+374         \textcolor{comment}{//la idea es coger todos los archivos de la ruta que se da y organizarlos dependiendo del nivel
+       dado}
+375         \textcolor{comment}{//se miraran todos los archivos que cuando se haga spli("\_") tengan longitud de 3 o mas (lo
+       llamaremos solo desde carpetas con comm en el primer nivel}
+376         \textcolor{comment}{//o con alm, cmd, inf, elm en el segundo nivel}
+377         \textcolor{comment}{//Obtenemos el archivo de la ruta actual}
+378         File archivo = \textcolor{keyword}{new} File(ruta);
+379         List <ArrayList<String>> archivos = \textcolor{keyword}{new} ArrayList<ArrayList<String>>(); \textcolor{comment}{//Lista de las listas de
+       archivos diferenciados por identificador}
+380         List <String> identificadoresArchivo = \textcolor{keyword}{new} ArrayList <>();
+381         
+382         \textcolor{comment}{//si el nivel es mas de 3, no queremos ordenarlos}
+383         \textcolor{keywordflow}{if}(nivel > 2)\{
+384             \textcolor{keywordflow}{return};
+385         \}
+386         
+387         \textcolor{comment}{//Recorremos todos los archivos que contenga esa ruta}
+388         \textcolor{keywordflow}{for} (File ficheroEntrada : archivo.listFiles()) \{
+389             \textcolor{comment}{//comprobamos si es un directorio}
+390             \textcolor{keywordflow}{if} (ficheroEntrada.isDirectory()) \{
+391                 \textcolor{comment}{//organizarCarpetas(ficheroEntrada.getPath());}
+392             \}\textcolor{keywordflow}{else}\{
+393                 \textcolor{comment}{//Se busca si hay algún cpp, si hay, se creará un txt en la carpeta con la jerarquia de
+       grupos}
+394                 String [] nombreArchivo = ficheroEntrada.getName().split(\textcolor{stringliteral}{"\_"});
+395                 \textcolor{comment}{//si son archivos "ordenables" (cpps con la estructura x...x\_y...y\_z...z.cpp)}
+396                 \textcolor{keywordflow}{if} (nombreArchivo.length >= 3 && ficheroEntrada.getName().contains(\textcolor{stringliteral}{".cpp"})) \{
+397                     \textcolor{comment}{//comprobamos si ya existe una lista para el identificador por el que estamos ordenando}
+398                     String nuevoId = \textcolor{stringliteral}{""};
+399                     \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i = 0; i <= nivel; i++)\{
+400                         nuevoId += nombreArchivo[i];
+401                         \textcolor{keywordflow}{if}(i != nivel)\{
+402                             nuevoId += \textcolor{stringliteral}{"\_"};
+403                         \}
+404                     \}
+405                     \textcolor{keywordflow}{if}(identificadoresArchivo.contains(nuevoId))\{
+406                         \textcolor{comment}{//si existe, obtenemos el indice e introducimos la ruta del archivo en la lista
+       correspondiente}
+407                         \textcolor{keywordtype}{int} indice = identificadoresArchivo.indexOf(nuevoId);
+408                         archivos.get(indice).add( ruta + \textcolor{stringliteral}{"\(\backslash\)\(\backslash\)"} + ficheroEntrada.getName());
+409                     \}\textcolor{keywordflow}{else}\{
+410                         \textcolor{comment}{//sino, creamos una nueva lista para ese identificados}
+411                         ArrayList nuevaLista = \textcolor{keyword}{new} ArrayList<>();
+412                         nuevaLista.add(ruta + \textcolor{stringliteral}{"\(\backslash\)\(\backslash\)"} + ficheroEntrada.getName());
+413                         \textcolor{comment}{//añadimos el nuevo identificador}
+414                         identificadoresArchivo.add(nuevoId);
+415                         \textcolor{comment}{//añadimos la lista con el nuevo elemento}
+416                         archivos.add(nuevaLista);
+417                     \}
+418                 \}
+419             \}
+420         \}
+421         
+422         \textcolor{keywordflow}{if}(identificadoresArchivo.size() <= 1 )
+423         \{
+424             \textcolor{comment}{//si ya están ordenados por el identificador actual, se pasa al siguiente}
+425             \mbox{\hyperlink{classactualizadordoxy_1_1_actualizador_doxy_a552da974148de3397521e9ca911e5568}{clasificarArchivos}}(ruta, nivel + 1);
+426         \}\textcolor{keywordflow}{else}\{
+427             \textcolor{comment}{//hacemos la division por carpetas}
+428             \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i = 0; i < identificadoresArchivo.size(); i++)\{
+429                 \textcolor{comment}{//se crea una carpeta para ese identificador}
+430                 String nuevaRuta = ruta + \textcolor{stringliteral}{"\(\backslash\)\(\backslash\)"} + identificadoresArchivo.get(i); \textcolor{comment}{//ruta para la nueva
+       carpeta}
+431                 \mbox{\hyperlink{classactualizadordoxy_1_1_actualizador_doxy_a7d8af20d53904ac818f04740c5264d9f}{crearDirectorio}}(nuevaRuta); \textcolor{comment}{//carpeta con el nombre del identificador}
+432                 \mbox{\hyperlink{classactualizadordoxy_1_1_actualizador_doxy_acf04af5d317d03499a2a05a3091592e5}{moverArchivos}}(archivos.get(i), nuevaRuta, nivel + 1); \textcolor{comment}{//llamamos a mover
+       archivos}
+433             \}
+434         \}
+435     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classactualizadordoxy_1_1_actualizador_doxy_aebb9505e0384909ac6e2e677f400eaec}\label{classactualizadordoxy_1_1_actualizador_doxy_aebb9505e0384909ac6e2e677f400eaec}} 
+\index{actualizadordoxy\+::\+Actualizador\+Doxy@{actualizadordoxy\+::\+Actualizador\+Doxy}!crear\+Cpp@{crear\+Cpp}}
+\index{crear\+Cpp@{crear\+Cpp}!actualizadordoxy\+::\+Actualizador\+Doxy@{actualizadordoxy\+::\+Actualizador\+Doxy}}
+\subsubsection{\texorpdfstring{crear\+Cpp()}{crearCpp()}}
+{\footnotesize\ttfamily void actualizadordoxy.\+Actualizador\+Doxy.\+crear\+Cpp (\begin{DoxyParamCaption}\item[{String}]{ruta,  }\item[{String}]{nombre,  }\item[{String}]{texto }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em ruta} & Ruta de la carpeta donde se quiere guardar el .cpp generado \\
+\hline
+{\em nombre} & Nombre que se quiere para el .cpp \\
+\hline
+{\em texto} & Contenido que se quiere en el archivo \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+203                                                                    \{
+204         
+205         \textcolor{comment}{//Creamos el directorio para el archivo}
+206         \mbox{\hyperlink{classactualizadordoxy_1_1_actualizador_doxy_a7d8af20d53904ac818f04740c5264d9f}{crearDirectorio}}(ruta);
+207         \textcolor{comment}{//Creamos el archivo, añadiendo el nombre del propio archivo y la extensión .cpp (con la que
+       queremos crearlo) a la ruta existente}
+208         File archivo = \textcolor{keyword}{new} File(ruta + \textcolor{stringliteral}{"\(\backslash\)\(\backslash\)"} + nombre + \textcolor{stringliteral}{".cpp"});
+209         \textcolor{comment}{//Declaramos el buffer de escritura}
+210         BufferedWriter bw = null;
+211         \textcolor{keywordflow}{try}
+212         \{
+213             \textcolor{comment}{//Abrimos el buffer the escritura para el archivo (sin usar el contructor con append = true,
+       para sobreescribir el archivo)}
+214             bw = \textcolor{keyword}{new} BufferedWriter(\textcolor{keyword}{new} FileWriter(archivo));
+215             \textcolor{comment}{//Sobreescribimos el archivo con el codigo actualizado}
+216             bw.write(texto);
+217         \}\textcolor{keywordflow}{catch}(IOException io)\{
+218             \textcolor{comment}{//No se ha podido crear el archivo}
+219             \mbox{\hyperlink{classactualizadordoxy_1_1_actualizador_doxy_a1ad41046efbaaf40a60b34da347f9090}{actualizarLog}}(\textcolor{stringliteral}{"Algo ha fallado escribiendo el archivo: "} + nombre + \textcolor{stringliteral}{".cpp"});
+220         \}\textcolor{keywordflow}{finally}\{
+221             \textcolor{comment}{//Siempre hay que cerrar el buffer (si se ha llegado a crear)}
+222             \textcolor{keywordflow}{if}(bw != null)
+223             \{
+224                 \textcolor{keywordflow}{try} \{
+225                     \textcolor{comment}{//Si se ha creado, cerramos el buffer}
+226                     bw.close();
+227                 \} \textcolor{keywordflow}{catch} (IOException ex) \{
+228                     \mbox{\hyperlink{classactualizadordoxy_1_1_actualizador_doxy_a1ad41046efbaaf40a60b34da347f9090}{actualizarLog}}(\textcolor{stringliteral}{"Fallo al cerrar el buffer (crearCpp): "} + ruta);
+229                 \}
+230             \}
+231         \}
+232     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classactualizadordoxy_1_1_actualizador_doxy_a7d8af20d53904ac818f04740c5264d9f}\label{classactualizadordoxy_1_1_actualizador_doxy_a7d8af20d53904ac818f04740c5264d9f}} 
+\index{actualizadordoxy\+::\+Actualizador\+Doxy@{actualizadordoxy\+::\+Actualizador\+Doxy}!crear\+Directorio@{crear\+Directorio}}
+\index{crear\+Directorio@{crear\+Directorio}!actualizadordoxy\+::\+Actualizador\+Doxy@{actualizadordoxy\+::\+Actualizador\+Doxy}}
+\subsubsection{\texorpdfstring{crear\+Directorio()}{crearDirectorio()}}
+{\footnotesize\ttfamily void actualizadordoxy.\+Actualizador\+Doxy.\+crear\+Directorio (\begin{DoxyParamCaption}\item[{String}]{ruta }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em ruta} & La ruta del directorio a crear, solo se llamara si se va a crear un cpp (llamada a crear\+Cpp \mbox{[}en traducir\+Xml o traducir\+Ctl\mbox{]}) \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+238                                              \{
+239         \textcolor{comment}{//Creamos el archivo con la ruta obtenida}
+240         File directorio = \textcolor{keyword}{new} File(ruta);
+241         \textcolor{comment}{//Variable para ver si se ha creado el directorio o ya estaba}
+242         \textcolor{keywordtype}{boolean} comprobacion;
+243         \textcolor{comment}{//Si no existe el directorio lo creara}
+244         \textcolor{keywordflow}{if} (!directorio.exists()) \{
+245             \textcolor{comment}{//Crea el directorio (incluyendo todos los directorios previos que tampoco existian}
+246             comprobacion = directorio.mkdirs();
+247             \textcolor{comment}{//Comprobación de que ha funcionado}
+248             \textcolor{keywordflow}{if}(!comprobacion)\{
+249                 \mbox{\hyperlink{classactualizadordoxy_1_1_actualizador_doxy_a1ad41046efbaaf40a60b34da347f9090}{actualizarLog}}(\textcolor{stringliteral}{"no se ha podido crear el directorio: "} + ruta + \textcolor{stringliteral}{"."});
+250             \}
+251         \}        
+252     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classactualizadordoxy_1_1_actualizador_doxy_ad31b85897c4caa3b43291e89f88ca417}\label{classactualizadordoxy_1_1_actualizador_doxy_ad31b85897c4caa3b43291e89f88ca417}} 
+\index{actualizadordoxy\+::\+Actualizador\+Doxy@{actualizadordoxy\+::\+Actualizador\+Doxy}!ejecutar@{ejecutar}}
+\index{ejecutar@{ejecutar}!actualizadordoxy\+::\+Actualizador\+Doxy@{actualizadordoxy\+::\+Actualizador\+Doxy}}
+\subsubsection{\texorpdfstring{ejecutar()}{ejecutar()}}
+{\footnotesize\ttfamily void actualizadordoxy.\+Actualizador\+Doxy.\+ejecutar (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em args} & the command line arguments. Serán\+: \mbox{[}0\mbox{]} la ruta del proyecto a documentar, \mbox{[}1\mbox{]} la ruta donde se guardarán los documentos generados \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+58                            \{
+59         
+60         String ruta;
+61         String rutaDocumentacion;
+62         \textcolor{keywordflow}{if}(\textcolor{stringliteral}{""}.equals(this.\mbox{\hyperlink{classactualizadordoxy_1_1_actualizador_doxy_a6e5d8e5e0fe3f2392d1c426bea2fb7fa}{rutaProyecto}}) || \textcolor{stringliteral}{""}.equals(this.\mbox{\hyperlink{classactualizadordoxy_1_1_actualizador_doxy_a5655cc699bfc4a0b01432170892663d8}{rutaDoc}}))
+63         \{
+64             JOptionPane.showMessageDialog(null, \textcolor{stringliteral}{"Debe introducir las rutas del proyecto y de destino de la
+       documentación."}, \textcolor{stringliteral}{"Error en la rutas"}, JOptionPane.WARNING\_MESSAGE);
+65         \}\textcolor{keywordflow}{else}\{
+66             
+67             \textcolor{comment}{//ruta es la ruta donde esta el projecto con los archivos (xml, ctl, ...)}
+68             ruta = this.\mbox{\hyperlink{classactualizadordoxy_1_1_actualizador_doxy_a6e5d8e5e0fe3f2392d1c426bea2fb7fa}{rutaProyecto}};
+69             \textcolor{comment}{//ruta documentacion será donde quieras que se guarden los cpp generados (ejecutará el doxy
+       teniendo en cuenta la ruta del proyecto, lo suyo es que la de documentacion también esté dentro)}
+70             rutaDocumentacion = this.\mbox{\hyperlink{classactualizadordoxy_1_1_actualizador_doxy_a5655cc699bfc4a0b01432170892663d8}{rutaDoc}} + \textcolor{stringliteral}{"\(\backslash\)\(\backslash\)Project"};
+71             \textcolor{comment}{//se llama al navegarCarpeta, que generará los cpp}
+72             \mbox{\hyperlink{classactualizadordoxy_1_1_actualizador_doxy_af4668210418bc7f9f1d6b8786891678b}{navegarCarpeta}}(ruta, rutaDocumentacion);
+73             JOptionPane.showMessageDialog(null, \textcolor{stringliteral}{"CPP actualizados con exito."}, \textcolor{stringliteral}{"Actualización terminada."}, 
+      JOptionPane.INFORMATION\_MESSAGE);
+74             \textcolor{comment}{//organizará los cpp por carpetas (solo commons y elementos)}
+75             \mbox{\hyperlink{classactualizadordoxy_1_1_actualizador_doxy_ada45f34eba1b90fde37a09726ff2de59}{organizarCarpetas}}(rutaDocumentacion);
+76             JOptionPane.showMessageDialog(null, \textcolor{stringliteral}{"CPP ordenados con exito."}, \textcolor{stringliteral}{"Actualización terminada."}, 
+      JOptionPane.INFORMATION\_MESSAGE);
+77             \textcolor{comment}{//generará los grupos de los cpp}
+78             \mbox{\hyperlink{classactualizadordoxy_1_1_actualizador_doxy_a483f64d7ea713784694962feed55f4f4}{navegarCarpetasGrupos}}(rutaDocumentacion, rutaDocumentacion);
+79             \mbox{\hyperlink{classactualizadordoxy_1_1_actualizador_doxy_aebb9505e0384909ac6e2e677f400eaec}{crearCpp}}(this.\mbox{\hyperlink{classactualizadordoxy_1_1_actualizador_doxy_a5655cc699bfc4a0b01432170892663d8}{rutaDoc}}, \textcolor{stringliteral}{"DoxyfileConfig"}, \textcolor{stringliteral}{"*  @defgroup Project"});
+80             JOptionPane.showMessageDialog(null, \textcolor{stringliteral}{"Grupos actualizados con exito."}, \textcolor{stringliteral}{"Actualización terminada.
+      "}, JOptionPane.INFORMATION\_MESSAGE);
+81             \textcolor{comment}{//ejecuta el doxy (tiene que estar ya configurado)}
+82             \mbox{\hyperlink{classactualizadordoxy_1_1_actualizador_doxy_ae7d94f01945c2c9c2d1fab249652cc70}{ejecutarDoxy}}(ruta);
+83             JOptionPane.showMessageDialog(null, \textcolor{stringliteral}{"Doxygen ejecutado"}, \textcolor{stringliteral}{"Actualización terminada."}, 
+      JOptionPane.INFORMATION\_MESSAGE);
+84         \}        
+85     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classactualizadordoxy_1_1_actualizador_doxy_ae7d94f01945c2c9c2d1fab249652cc70}\label{classactualizadordoxy_1_1_actualizador_doxy_ae7d94f01945c2c9c2d1fab249652cc70}} 
+\index{actualizadordoxy\+::\+Actualizador\+Doxy@{actualizadordoxy\+::\+Actualizador\+Doxy}!ejecutar\+Doxy@{ejecutar\+Doxy}}
+\index{ejecutar\+Doxy@{ejecutar\+Doxy}!actualizadordoxy\+::\+Actualizador\+Doxy@{actualizadordoxy\+::\+Actualizador\+Doxy}}
+\subsubsection{\texorpdfstring{ejecutar\+Doxy()}{ejecutarDoxy()}}
+{\footnotesize\ttfamily void actualizadordoxy.\+Actualizador\+Doxy.\+ejecutar\+Doxy (\begin{DoxyParamCaption}\item[{String}]{ruta }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em ruta} & ejecuta el comando de doxygen para la generación de la documentacion \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+480                                           \{
+481         \textcolor{comment}{//Obtenemos el archivo de la ruta actual}
+482         File archivo = \textcolor{keyword}{new} File(ruta);
+483         \textcolor{comment}{//Recorremos todos los archivos que contenga esa ruta}
+484         \textcolor{comment}{//buscando la ruta donde este el Doxyfile}
+485         \textcolor{keywordflow}{for} (File ficheroEntrada : archivo.listFiles()) \{
+486             \textcolor{comment}{//si ve un directorio, se llama de manera recursiva}
+487             \textcolor{keywordflow}{if} (ficheroEntrada.isDirectory()) \{
+488                 \mbox{\hyperlink{classactualizadordoxy_1_1_actualizador_doxy_ae7d94f01945c2c9c2d1fab249652cc70}{ejecutarDoxy}}(ruta + \textcolor{stringliteral}{"\(\backslash\)\(\backslash\)"} + ficheroEntrada.getName());
+489             \}\textcolor{keywordflow}{else}\{
+490                 \textcolor{comment}{//si no es directorio, busca si es el Doxyfile}
+491                 \textcolor{keywordflow}{if} (\textcolor{stringliteral}{"Doxyfile"}.equals(ficheroEntrada.getName())) \{
+492                     \textcolor{comment}{//ejecuta el comando: doxygen DoxyFile}
+493                     \textcolor{keywordflow}{try} \{
+494                         Runtime.getRuntime().exec(\textcolor{stringliteral}{"doxygen "} + ruta + \textcolor{stringliteral}{"\(\backslash\)\(\backslash\)Doxyfile"});
+495                     \} \textcolor{keywordflow}{catch} (IOException ioe) \{
+496                         \mbox{\hyperlink{classactualizadordoxy_1_1_actualizador_doxy_a1ad41046efbaaf40a60b34da347f9090}{actualizarLog}}(\textcolor{stringliteral}{"Fallo al ejecutar doxygen"});
+497                     \}
+498                 \}
+499             \}   
+500         \}
+501     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classactualizadordoxy_1_1_actualizador_doxy_acf04af5d317d03499a2a05a3091592e5}\label{classactualizadordoxy_1_1_actualizador_doxy_acf04af5d317d03499a2a05a3091592e5}} 
+\index{actualizadordoxy\+::\+Actualizador\+Doxy@{actualizadordoxy\+::\+Actualizador\+Doxy}!mover\+Archivos@{mover\+Archivos}}
+\index{mover\+Archivos@{mover\+Archivos}!actualizadordoxy\+::\+Actualizador\+Doxy@{actualizadordoxy\+::\+Actualizador\+Doxy}}
+\subsubsection{\texorpdfstring{mover\+Archivos()}{moverArchivos()}}
+{\footnotesize\ttfamily void actualizadordoxy.\+Actualizador\+Doxy.\+mover\+Archivos (\begin{DoxyParamCaption}\item[{Array\+List$<$ String $>$}]{rutas\+Archivos,  }\item[{String}]{ruta,  }\item[{int}]{siguiente\+Nivel }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em rutas\+Archivos} & lista con las rutas de los archivos a mover \\
+\hline
+{\em ruta} & ruta donde se han de mover los archivos \\
+\hline
+{\em siguiente\+Nivel} & siguiente nivel para la ordenación \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+443                                                                                                  \{
+444         \textcolor{comment}{//recorre el array con las rutas y va moviendo los archivos a la nueva ruta}
+445         \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i = rutasArchivos.size() - 1; i >= 0; i--)
+446         \{
+447             File archivoAMover = \textcolor{keyword}{new} File(rutasArchivos.get(i));
+448             File rutaDestino = \textcolor{keyword}{new} File(ruta, archivoAMover.getName());
+449             archivoAMover.renameTo(rutaDestino);
+450         \}
+451         \textcolor{comment}{//si el siguiente nivel es ordenable, vuelve a llamar a clasigicarArchivos con ese nivel y la ruta
+       nueva donde se han metido los archivos}
+452         \textcolor{keywordflow}{if}(siguienteNivel <= 2)\{
+453             \mbox{\hyperlink{classactualizadordoxy_1_1_actualizador_doxy_a552da974148de3397521e9ca911e5568}{clasificarArchivos}}(ruta, siguienteNivel);
+454         \}
+455     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classactualizadordoxy_1_1_actualizador_doxy_af4668210418bc7f9f1d6b8786891678b}\label{classactualizadordoxy_1_1_actualizador_doxy_af4668210418bc7f9f1d6b8786891678b}} 
+\index{actualizadordoxy\+::\+Actualizador\+Doxy@{actualizadordoxy\+::\+Actualizador\+Doxy}!navegar\+Carpeta@{navegar\+Carpeta}}
+\index{navegar\+Carpeta@{navegar\+Carpeta}!actualizadordoxy\+::\+Actualizador\+Doxy@{actualizadordoxy\+::\+Actualizador\+Doxy}}
+\subsubsection{\texorpdfstring{navegar\+Carpeta()}{navegarCarpeta()}}
+{\footnotesize\ttfamily void actualizadordoxy.\+Actualizador\+Doxy.\+navegar\+Carpeta (\begin{DoxyParamCaption}\item[{String}]{ruta,  }\item[{String}]{ruta\+Guardado }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em ruta} & Ruta en la que va a inspeccionar los archivos \\
+\hline
+{\em ruta\+Guardado} & Ruta donde guardar los posibles .cpp que se vayan a generar \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+92                                                                  \{
+93         \textcolor{comment}{//Obtenemos el archivo de la ruta actual}
+94         File archivo = \textcolor{keyword}{new} File(ruta);
+95         \textcolor{comment}{//Recorremos todos los archivos que contenga esa ruta}
+96         \textcolor{keywordflow}{for} (File ficheroEntrada : archivo.listFiles()) \{
+97             \textcolor{comment}{//Primero comprobamos si es un directorio o no}
+98             \textcolor{keywordflow}{if} (ficheroEntrada.isDirectory()) \{
+99                 \textcolor{comment}{//En el caso de ser un directorio, volvemos a llamar a navegarCarpeta con la ruta}
+100                 \mbox{\hyperlink{classactualizadordoxy_1_1_actualizador_doxy_af4668210418bc7f9f1d6b8786891678b}{navegarCarpeta}}(ficheroEntrada.getPath(), rutaGuardado + \textcolor{stringliteral}{"\(\backslash\)\(\backslash\)"} + ficheroEntrada
+      .getName());
+101             \} \textcolor{keywordflow}{else} \{
+102                 \textcolor{comment}{//En el caso de ser un archivo, miraremos si es un .xml}
+103                 \textcolor{keywordflow}{if}(ficheroEntrada.getName().endsWith(\textcolor{stringliteral}{".xml"}))
+104                 \{
+105                     \textcolor{comment}{//En el caso de ser un xml, llamaremos a la funcion traducirXml que se encargara de
+       crear los directorios y el .cpp correspondiente}
+106                     \mbox{\hyperlink{classactualizadordoxy_1_1_actualizador_doxy_a598c7f1543ae3cf3f24b3fabcf2ad204}{traducirXml}}(ficheroEntrada.getPath(), rutaGuardado);
+107                 \}\textcolor{keywordflow}{else}\{
+108                     \textcolor{comment}{//si no es un xml, comprobamos si es un ctl}
+109                     \textcolor{keywordflow}{if}(ficheroEntrada.getName().endsWith(\textcolor{stringliteral}{".ctl"}))
+110                     \{
+111                         \textcolor{comment}{//En el caso de ser un ctl, llamaremos a la funcion traducirCtl que se encargara de
+       crear los directorios y el .cpp correspondiente}
+112                         \mbox{\hyperlink{classactualizadordoxy_1_1_actualizador_doxy_a0a365e6e69bfc823f8ac8eea0e348c04}{traducirCtl}}(ficheroEntrada.getPath(), rutaGuardado);
+113                     \}
+114                 \}
+115             \}
+116         \}
+117     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classactualizadordoxy_1_1_actualizador_doxy_a483f64d7ea713784694962feed55f4f4}\label{classactualizadordoxy_1_1_actualizador_doxy_a483f64d7ea713784694962feed55f4f4}} 
+\index{actualizadordoxy\+::\+Actualizador\+Doxy@{actualizadordoxy\+::\+Actualizador\+Doxy}!navegar\+Carpetas\+Grupos@{navegar\+Carpetas\+Grupos}}
+\index{navegar\+Carpetas\+Grupos@{navegar\+Carpetas\+Grupos}!actualizadordoxy\+::\+Actualizador\+Doxy@{actualizadordoxy\+::\+Actualizador\+Doxy}}
+\subsubsection{\texorpdfstring{navegar\+Carpetas\+Grupos()}{navegarCarpetasGrupos()}}
+{\footnotesize\ttfamily void actualizadordoxy.\+Actualizador\+Doxy.\+navegar\+Carpetas\+Grupos (\begin{DoxyParamCaption}\item[{String}]{ruta,  }\item[{String}]{ruta\+Guardado }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em ruta} & \\
+\hline
+{\em ruta\+Guardado} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+259                                                                         \{
+260         \textcolor{comment}{//Funcion que genera los .cpp con los grupos del doxygen}
+261         \textcolor{comment}{//Texto que se generaá con los grupos}
+262         String texto = \textcolor{stringliteral}{""};
+263         \textcolor{comment}{//Obtenemos el archivo de la ruta actual}
+264         File archivo = \textcolor{keyword}{new} File(ruta);
+265         \textcolor{comment}{//Recorremos todos los archivos que contenga esa ruta}
+266         \textcolor{keywordflow}{for} (File ficheroEntrada : archivo.listFiles()) \{
+267             \textcolor{comment}{//Primero comprobamos si es un directorio o no}
+268             \textcolor{keywordflow}{if} (ficheroEntrada.isDirectory()) \{
+269                 \textcolor{comment}{//System.out.println("Nombre fichero: " + ficheroEntrada.getName());}
+270                 \textcolor{comment}{//En el caso de ser un directorio, volvemos a llamar a navegarCarpeta con la ruta}
+271                 \mbox{\hyperlink{classactualizadordoxy_1_1_actualizador_doxy_a483f64d7ea713784694962feed55f4f4}{navegarCarpetasGrupos}}(ficheroEntrada.getPath(), rutaGuardado + \textcolor{stringliteral}{"\(\backslash\)\(\backslash\)"} + 
+      ficheroEntrada.getName());
+272                 texto += \textcolor{stringliteral}{"\(\backslash\)t*  @defgroup "} + ficheroEntrada.getName() + \textcolor{stringliteral}{"\(\backslash\)n"} + \textcolor{stringliteral}{"\(\backslash\)t*  @ingroup "} + archivo.
+      getName() + \textcolor{stringliteral}{"\(\backslash\)n"};
+273             \}\textcolor{keywordflow}{else}\{
+274                 \textcolor{comment}{//Se busca si hay algún cpp, si hay, se creará un txt en la carpeta con la jerarquia de
+       grupos}
+275                 \textcolor{keywordflow}{if} (ficheroEntrada.getName().endsWith(\textcolor{stringliteral}{".cpp"})) \{
+276                     texto += \textcolor{stringliteral}{"\(\backslash\)t*  @defgroup "} + ficheroEntrada.getName().replaceAll(\textcolor{stringliteral}{".cpp"}, \textcolor{stringliteral}{""}) + \textcolor{stringliteral}{"\(\backslash\)n"} + \textcolor{stringliteral}{"
+      \(\backslash\)t*  @ingroup "} + archivo.getName() + \textcolor{stringliteral}{"\(\backslash\)n"};
+277                 \}
+278             \}
+279         \}
+280         File archivoGrupos = \textcolor{keyword}{new} File(ruta + \textcolor{stringliteral}{"\(\backslash\)\(\backslash\)grupos"} + archivo.getName() + \textcolor{stringliteral}{".cpp"});
+281         \textcolor{comment}{//Declaramos el buffer de escritura}
+282         BufferedWriter bw = null;
+283         \textcolor{keywordflow}{try}
+284         \{
+285             \textcolor{comment}{//Abrimos el buffer the escritura para el archivo (sin usar el contructor con append = true,
+       para sobreescribir el archivo)}
+286             bw = \textcolor{keyword}{new} BufferedWriter(\textcolor{keyword}{new} FileWriter(archivoGrupos));
+287             \textcolor{comment}{//Sobreescribimos el archivo con el codigo actualizado}
+288             bw.write(texto);
+289         \}\textcolor{keywordflow}{catch}(IOException e)\{
+290             \mbox{\hyperlink{classactualizadordoxy_1_1_actualizador_doxy_a1ad41046efbaaf40a60b34da347f9090}{actualizarLog}}(\textcolor{stringliteral}{"Algo ha fallado escribiendo el archivo: grupos"} + archivo.getName()
+       + \textcolor{stringliteral}{".txt"});
+291         \}\textcolor{keywordflow}{finally}\{
+292             \textcolor{comment}{//Siempre hay que cerrar el buffer (si se ha llegado a crear)}
+293             \textcolor{keywordflow}{if}(bw != null)
+294             \{
+295                 \textcolor{comment}{//Si se ha creado, cerramos el buffer}
+296                 \textcolor{keywordflow}{try} \{
+297                     bw.close();
+298                 \} \textcolor{keywordflow}{catch} (IOException ex) \{
+299                     \mbox{\hyperlink{classactualizadordoxy_1_1_actualizador_doxy_a1ad41046efbaaf40a60b34da347f9090}{actualizarLog}}(\textcolor{stringliteral}{"Fallo al cerrar el buffer."});
+300                 \}
+301             \}
+302         \}
+303     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classactualizadordoxy_1_1_actualizador_doxy_ada45f34eba1b90fde37a09726ff2de59}\label{classactualizadordoxy_1_1_actualizador_doxy_ada45f34eba1b90fde37a09726ff2de59}} 
+\index{actualizadordoxy\+::\+Actualizador\+Doxy@{actualizadordoxy\+::\+Actualizador\+Doxy}!organizar\+Carpetas@{organizar\+Carpetas}}
+\index{organizar\+Carpetas@{organizar\+Carpetas}!actualizadordoxy\+::\+Actualizador\+Doxy@{actualizadordoxy\+::\+Actualizador\+Doxy}}
+\subsubsection{\texorpdfstring{organizar\+Carpetas()}{organizarCarpetas()}}
+{\footnotesize\ttfamily void actualizadordoxy.\+Actualizador\+Doxy.\+organizar\+Carpetas (\begin{DoxyParamCaption}\item[{String}]{ruta }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em ruta} & carpeta que organizará \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+309                                                \{
+310         \textcolor{comment}{//Funcion que buscara las carpetas donde haya elementos o comunes y los ordenara en sub carpetas}
+311         
+312         \textcolor{comment}{//Obtenemos el archivo de la ruta actual}
+313         File archivo = \textcolor{keyword}{new} File(ruta);
+314         List<File> listaCpp = \textcolor{keyword}{new} ArrayList<>();
+315         
+316         \textcolor{comment}{//Recorremos todos los archivos que contenga esa ruta}
+317         \textcolor{keywordflow}{for} (File ficheroEntrada : archivo.listFiles()) \{
+318             \textcolor{keywordflow}{if} (ficheroEntrada.isDirectory()) \{
+319                 \textcolor{comment}{//si es un directorio, se llama de manera recursiva}
+320                 \mbox{\hyperlink{classactualizadordoxy_1_1_actualizador_doxy_ada45f34eba1b90fde37a09726ff2de59}{organizarCarpetas}}(ruta + \textcolor{stringliteral}{"\(\backslash\)\(\backslash\)"} + ficheroEntrada.getName());
+321             \}\textcolor{keywordflow}{else}\{
+322                 \textcolor{comment}{//Se busca si hay algún cpp, si hay, se creará un txt en la carpeta con la jerarquia de
+       grupos}
+323                 \textcolor{keywordflow}{if} (ficheroEntrada.getName().endsWith(\textcolor{stringliteral}{".cpp"})) \{
+324                     \textcolor{comment}{//al ser un cpp, lo añade a la lista}
+325                     listaCpp.add(ficheroEntrada);
+326                 \}
+327             \}
+328         \}
+329         
+330         \textcolor{keywordtype}{int} numeroArchivos = listaCpp.size();
+331         
+332         \textcolor{keywordflow}{if}(numeroArchivos > 0)\{
+333             \textcolor{comment}{//intentará organizarlo}
+334             \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i = 0; i < numeroArchivos; i++)\{
+335                 \textcolor{comment}{//buscara el tipo de archivo en la lista de cpp}
+336                 String nombreSplit [] = listaCpp.get(i).getName().split(\textcolor{stringliteral}{"\_"}); \textcolor{comment}{//sacas las partes del nombre}
+337                 \textcolor{keywordflow}{if}(nombreSplit.length >= 3)\{
+338                     \textcolor{comment}{//ira viendo si alguno de los archivos es de este tipo y en cuanto uno lo sea, ordenara
+       toda la carpeta}
+339                     \textcolor{keywordflow}{switch} (nombreSplit[0])\{
+340                         \textcolor{keywordflow}{case} \textcolor{stringliteral}{"COMM"}:
+341                             \mbox{\hyperlink{classactualizadordoxy_1_1_actualizador_doxy_a552da974148de3397521e9ca911e5568}{clasificarArchivos}}(ruta, 0);
+342                             i = numeroArchivos;
+343                             \textcolor{comment}{//System.out.println("A ordenar : " + ruta + "\(\backslash\)\(\backslash\)" + listaCpp.get(i).getName());}
+344                             \textcolor{comment}{//una vez encuentra uno ordenable, no hace falta seguir buscando mas, llamara a
+       clasificar archivos}
+345                             \textcolor{keywordflow}{break};
+346                         \textcolor{keywordflow}{default}:
+347                             \textcolor{keywordflow}{switch} (nombreSplit[1])\{
+348                                 \textcolor{keywordflow}{case} \textcolor{stringliteral}{"CMD"}:
+349                                 \textcolor{keywordflow}{case} \textcolor{stringliteral}{"ELM"}:
+350                                 \textcolor{keywordflow}{case} \textcolor{stringliteral}{"ALM"}:
+351                                 \textcolor{keywordflow}{case} \textcolor{stringliteral}{"INF"}:
+352                                     \mbox{\hyperlink{classactualizadordoxy_1_1_actualizador_doxy_a552da974148de3397521e9ca911e5568}{clasificarArchivos}}(ruta, 0); \textcolor{comment}{//se podría hacer en
+       nivel 2 asumiento que son elementos y están divididos correctamente en carpetas, pero por si incluimos
+       diferentes en una carpeta}
+353                                     i = numeroArchivos;                                    
+354                                     \textcolor{comment}{//System.out.println("A ordenar : " + ruta + "\(\backslash\)\(\backslash\)" +
+       listaCpp.get(i).getName());}
+355                                     \textcolor{comment}{//una vez encuentra uno ordenable, no hace falta seguir buscando mas,
+       llamara a clasificar archivos}
+356                                     \textcolor{keywordflow}{break};
+357                                 \textcolor{keywordflow}{default}:
+358                                     \textcolor{comment}{//System.out.println("No hay que ordenar en la carpeta: " + ruta);}
+359                                     \textcolor{keywordflow}{break};
+360                             \}
+361                             \textcolor{keywordflow}{break};
+362                     \}
+363                 \}
+364             \}
+365         \}
+366     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classactualizadordoxy_1_1_actualizador_doxy_a0a365e6e69bfc823f8ac8eea0e348c04}\label{classactualizadordoxy_1_1_actualizador_doxy_a0a365e6e69bfc823f8ac8eea0e348c04}} 
+\index{actualizadordoxy\+::\+Actualizador\+Doxy@{actualizadordoxy\+::\+Actualizador\+Doxy}!traducir\+Ctl@{traducir\+Ctl}}
+\index{traducir\+Ctl@{traducir\+Ctl}!actualizadordoxy\+::\+Actualizador\+Doxy@{actualizadordoxy\+::\+Actualizador\+Doxy}}
+\subsubsection{\texorpdfstring{traducir\+Ctl()}{traducirCtl()}}
+{\footnotesize\ttfamily void actualizadordoxy.\+Actualizador\+Doxy.\+traducir\+Ctl (\begin{DoxyParamCaption}\item[{String}]{ruta,  }\item[{String}]{ruta\+Guardado }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em ruta} & Ruta del archivo ctl a documentar \\
+\hline
+{\em ruta\+Guardado} & Ruta de guardado para los .cpp correspondientes \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+179                                                               \{
+180         \textcolor{keywordflow}{try} \{
+181             \mbox{\hyperlink{classactualizadordoxy_1_1_actualizador_doxy_a7d8af20d53904ac818f04740c5264d9f}{crearDirectorio}}(rutaGuardado);
+182             \textcolor{comment}{//archivo de origen}
+183             File origenFile = \textcolor{keyword}{new} File( ruta );
+184             \textcolor{comment}{//ruta del archivo de origen}
+185             Path origenPath = Paths.get( ruta );
+186             \textcolor{comment}{//ruta del archivo de destino (copiarlo y cambiar extension)}
+187             Path destinoPath = Paths.get( rutaGuardado + \textcolor{stringliteral}{"\(\backslash\)\(\backslash\)"} + origenFile.getName().replaceFirst(\textcolor{stringliteral}{".ctl"}, \textcolor{stringliteral}{"
+      .cpp"}) );
+188             \textcolor{comment}{//sobreescribir el fichero de destino si existe y lo copia}
+189             Files.copy(origenPath, destinoPath, StandardCopyOption.REPLACE\_EXISTING);
+190         \} \textcolor{keywordflow}{catch} (FileNotFoundException ex) \{
+191             \mbox{\hyperlink{classactualizadordoxy_1_1_actualizador_doxy_a1ad41046efbaaf40a60b34da347f9090}{actualizarLog}}(\textcolor{stringliteral}{"La funcion traducirCtl ha fallado en: "} + ruta + \textcolor{stringliteral}{", el archivo no
+       existe."});
+192         \} \textcolor{keywordflow}{catch} (IOException ex) \{
+193             \mbox{\hyperlink{classactualizadordoxy_1_1_actualizador_doxy_a1ad41046efbaaf40a60b34da347f9090}{actualizarLog}}(\textcolor{stringliteral}{"La funcion traducirCtl ha fallado en: "} + ruta + \textcolor{stringliteral}{", error al copiar
+       el archivo."});
+194         \}
+195     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classactualizadordoxy_1_1_actualizador_doxy_a598c7f1543ae3cf3f24b3fabcf2ad204}\label{classactualizadordoxy_1_1_actualizador_doxy_a598c7f1543ae3cf3f24b3fabcf2ad204}} 
+\index{actualizadordoxy\+::\+Actualizador\+Doxy@{actualizadordoxy\+::\+Actualizador\+Doxy}!traducir\+Xml@{traducir\+Xml}}
+\index{traducir\+Xml@{traducir\+Xml}!actualizadordoxy\+::\+Actualizador\+Doxy@{actualizadordoxy\+::\+Actualizador\+Doxy}}
+\subsubsection{\texorpdfstring{traducir\+Xml()}{traducirXml()}}
+{\footnotesize\ttfamily void actualizadordoxy.\+Actualizador\+Doxy.\+traducir\+Xml (\begin{DoxyParamCaption}\item[{String}]{ruta,  }\item[{String}]{ruta\+Guardado }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em ruta} & Ruta del archivo xml a documentar \\
+\hline
+{\em ruta\+Guardado} & Ruta de guardado para los .cpp correspondientes \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+124                                                               \{
+125         \textcolor{comment}{// TODO code application logic here}
+126         \textcolor{comment}{//Se crea un SAXBuilder para poder parsear el archivo}
+127         SAXBuilder builder = \textcolor{keyword}{new} SAXBuilder();
+128         File xmlFile = \textcolor{keyword}{new} File( ruta );
+129         String rutaTesting = \textcolor{stringliteral}{"C:\(\backslash\)\(\backslash\)Users\(\backslash\)\(\backslash\)iribera\(\backslash\)\(\backslash\)Desktop\(\backslash\)\(\backslash\)Dame archivos loco"};
+130         \textcolor{keywordflow}{try}
+131         \{
+132             \textcolor{comment}{//Se crea el documento a traves del archivo}
+133             Document document = (Document) builder.build( xmlFile );
+134             \textcolor{comment}{//Se obtiene la raiz 'panel'}
+135             Element rootNode = document.getRootElement();
+136             \textcolor{comment}{//Se obtiene la lista de hijos de la raiz 'tables'}
+137             List<Element> listaEvents = rootNode.getChildren( \textcolor{stringliteral}{"events"} );
+138             List<Element> listaShapes = rootNode.getChildren( \textcolor{stringliteral}{"shapes"} );
+139             String nombreElemento = xmlFile.getName().replaceAll(\textcolor{stringliteral}{".xml"}, \textcolor{stringliteral}{""});
+140             String nombrePrimeraSeccion;
+141             \textcolor{comment}{//Se recorre la lista de hijos 'events' (aunque sea 1)}
+142             \textcolor{keywordflow}{for}(Element evento: listaEvents)\{  
+143                 List<Element> listaScripts = evento.getChildren( \textcolor{stringliteral}{"script"} );
+144                 \textcolor{keywordflow}{for}(Element script: listaScripts)\{
+145                     \textcolor{comment}{//obtiene el script y sustituye los caracteres &quot; por \(\backslash\)}
+146 \textcolor{comment}{                    nombrePrimeraSeccion = script.getAttributeValue( "name" );}
+147                     \mbox{\hyperlink{classactualizadordoxy_1_1_actualizador_doxy_aebb9505e0384909ac6e2e677f400eaec}{crearCpp}}(rutaGuardado , nombreElemento + \textcolor{stringliteral}{"\_"} + nombrePrimeraSeccion, script.
+      getText().replaceAll(\textcolor{stringliteral}{"&quot;"}, \textcolor{stringliteral}{"\(\backslash\)""}));
+148                 \}
+149             \}
+150             \textcolor{comment}{//Se recorre la lista de hijos 'Shapes' (aunque sea 1)}
+151             \textcolor{keywordflow}{for}(Element shapes: listaShapes)\{  
+152                 List<Element> listaShape = shapes.getChildren( \textcolor{stringliteral}{"shape"} );
+153                 \textcolor{comment}{//Se recorre la lista de hijos 'shape'}
+154                 \textcolor{keywordflow}{for}(Element shape: listaShape)\{
+155                     nombrePrimeraSeccion = shape.getAttributeValue(\textcolor{stringliteral}{"Name"});
+156                     List<Element> listaShapeEvents = shape.getChildren( \textcolor{stringliteral}{"events"} );
+157                     \textcolor{comment}{//Se recorre la lista de hijos 'events'}
+158                     \textcolor{keywordflow}{for}(Element eventShape: listaShapeEvents)\{
+159                         List<Element> listaScripts = eventShape.getChildren( \textcolor{stringliteral}{"script"} );
+160                         String nombreSegundaSeccion;
+161                         \textcolor{keywordflow}{for}(Element script: listaScripts)\{
+162                             \textcolor{comment}{//obtiene el script y sustituye los caracteres &quot; por \(\backslash\)}
+163 \textcolor{comment}{                            nombreSegundaSeccion = script.getAttributeValue( "name" );}
+164                             \mbox{\hyperlink{classactualizadordoxy_1_1_actualizador_doxy_aebb9505e0384909ac6e2e677f400eaec}{crearCpp}}(rutaGuardado , nombreElemento + \textcolor{stringliteral}{"\_"} + nombrePrimeraSeccion + \textcolor{stringliteral}{"
+      \_"} + nombreSegundaSeccion, script.getText().replaceAll(\textcolor{stringliteral}{"&quot;"}, \textcolor{stringliteral}{"\(\backslash\)""}));
+165                         \}
+166                     \}
+167                 \}
+168             \}
+169         \}\textcolor{keywordflow}{catch} ( IOException | JDOMException io ) \{
+170             \mbox{\hyperlink{classactualizadordoxy_1_1_actualizador_doxy_a1ad41046efbaaf40a60b34da347f9090}{actualizarLog}}(\textcolor{stringliteral}{"La funcion traducirXml ha fallado en: "} + ruta);
+171         \}
+172     \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classactualizadordoxy_1_1_actualizador_doxy_a5655cc699bfc4a0b01432170892663d8}\label{classactualizadordoxy_1_1_actualizador_doxy_a5655cc699bfc4a0b01432170892663d8}} 
+\index{actualizadordoxy\+::\+Actualizador\+Doxy@{actualizadordoxy\+::\+Actualizador\+Doxy}!ruta\+Doc@{ruta\+Doc}}
+\index{ruta\+Doc@{ruta\+Doc}!actualizadordoxy\+::\+Actualizador\+Doxy@{actualizadordoxy\+::\+Actualizador\+Doxy}}
+\subsubsection{\texorpdfstring{ruta\+Doc}{rutaDoc}}
+{\footnotesize\ttfamily String actualizadordoxy.\+Actualizador\+Doxy.\+ruta\+Doc\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classactualizadordoxy_1_1_actualizador_doxy_a6e5d8e5e0fe3f2392d1c426bea2fb7fa}\label{classactualizadordoxy_1_1_actualizador_doxy_a6e5d8e5e0fe3f2392d1c426bea2fb7fa}} 
+\index{actualizadordoxy\+::\+Actualizador\+Doxy@{actualizadordoxy\+::\+Actualizador\+Doxy}!ruta\+Proyecto@{ruta\+Proyecto}}
+\index{ruta\+Proyecto@{ruta\+Proyecto}!actualizadordoxy\+::\+Actualizador\+Doxy@{actualizadordoxy\+::\+Actualizador\+Doxy}}
+\subsubsection{\texorpdfstring{ruta\+Proyecto}{rutaProyecto}}
+{\footnotesize\ttfamily String actualizadordoxy.\+Actualizador\+Doxy.\+ruta\+Proyecto\hspace{0.3cm}{\ttfamily [private]}}
+

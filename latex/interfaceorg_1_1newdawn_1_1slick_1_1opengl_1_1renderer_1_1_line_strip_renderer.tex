@@ -1,0 +1,166 @@
+\hypertarget{interfaceorg_1_1newdawn_1_1slick_1_1opengl_1_1renderer_1_1_line_strip_renderer}{}\section{org.\+newdawn.\+slick.\+opengl.\+renderer.\+Line\+Strip\+Renderer Interface Reference}
+\label{interfaceorg_1_1newdawn_1_1slick_1_1opengl_1_1renderer_1_1_line_strip_renderer}\index{org.\+newdawn.\+slick.\+opengl.\+renderer.\+Line\+Strip\+Renderer@{org.\+newdawn.\+slick.\+opengl.\+renderer.\+Line\+Strip\+Renderer}}
+Inheritance diagram for org.\+newdawn.\+slick.\+opengl.\+renderer.\+Line\+Strip\+Renderer\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.421320cm]{interfaceorg_1_1newdawn_1_1slick_1_1opengl_1_1renderer_1_1_line_strip_renderer}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+abstract boolean \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1opengl_1_1renderer_1_1_line_strip_renderer_a6cacd7974c575c5e49034a89a51492c2}{apply\+G\+L\+Line\+Fixes}} ()
+\item 
+abstract void \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1opengl_1_1renderer_1_1_line_strip_renderer_ac677ca9ed9c30f39a3eeb72b0532229a}{start}} ()
+\item 
+abstract void \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1opengl_1_1renderer_1_1_line_strip_renderer_a59c0befa698a8a069ce66fa134c1f284}{end}} ()
+\item 
+abstract void \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1opengl_1_1renderer_1_1_line_strip_renderer_a9051033674d28d26c5750155df2c5113}{vertex}} (float x, float y)
+\item 
+abstract void \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1opengl_1_1renderer_1_1_line_strip_renderer_ac54eda776408b41d1e5ccaa988267162}{color}} (float r, float g, float b, float a)
+\item 
+abstract void \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1opengl_1_1renderer_1_1_line_strip_renderer_afc8159c0766c0d177b402cf311d9a7b8}{set\+Width}} (float width)
+\item 
+abstract void \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1opengl_1_1renderer_1_1_line_strip_renderer_a849fde4a1b5b6981e77978bb3afa2b3b}{set\+Anti\+Alias}} (boolean antialias)
+\item 
+void \mbox{\hyperlink{interfaceorg_1_1newdawn_1_1slick_1_1opengl_1_1renderer_1_1_line_strip_renderer_ac2c299158c60d76e8745759dd2dc8633}{set\+Line\+Caps}} (boolean caps)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The description of a class able to render line strips through Open\+GL
+
+\begin{DoxyAuthor}{Author}
+kevin 
+\end{DoxyAuthor}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{interfaceorg_1_1newdawn_1_1slick_1_1opengl_1_1renderer_1_1_line_strip_renderer_a6cacd7974c575c5e49034a89a51492c2}\label{interfaceorg_1_1newdawn_1_1slick_1_1opengl_1_1renderer_1_1_line_strip_renderer_a6cacd7974c575c5e49034a89a51492c2}} 
+\index{org\+::newdawn\+::slick\+::opengl\+::renderer\+::\+Line\+Strip\+Renderer@{org\+::newdawn\+::slick\+::opengl\+::renderer\+::\+Line\+Strip\+Renderer}!apply\+G\+L\+Line\+Fixes@{apply\+G\+L\+Line\+Fixes}}
+\index{apply\+G\+L\+Line\+Fixes@{apply\+G\+L\+Line\+Fixes}!org\+::newdawn\+::slick\+::opengl\+::renderer\+::\+Line\+Strip\+Renderer@{org\+::newdawn\+::slick\+::opengl\+::renderer\+::\+Line\+Strip\+Renderer}}
+\subsubsection{\texorpdfstring{apply\+G\+L\+Line\+Fixes()}{applyGLLineFixes()}}
+{\footnotesize\ttfamily abstract boolean org.\+newdawn.\+slick.\+opengl.\+renderer.\+Line\+Strip\+Renderer.\+apply\+G\+L\+Line\+Fixes (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}}
+
+Check if we should apply default line fixes
+
+\begin{DoxyReturn}{Returns}
+True if we should apply GL fixes 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1renderer_1_1_quad_based_line_strip_renderer_a535a64f5cf41e3373c44d6afbc3036f1}{org.\+newdawn.\+slick.\+opengl.\+renderer.\+Quad\+Based\+Line\+Strip\+Renderer}}, and \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1renderer_1_1_default_line_strip_renderer_ab8658df4f3b6dfae473b3c708dadfdfb}{org.\+newdawn.\+slick.\+opengl.\+renderer.\+Default\+Line\+Strip\+Renderer}}.
+
+\mbox{\Hypertarget{interfaceorg_1_1newdawn_1_1slick_1_1opengl_1_1renderer_1_1_line_strip_renderer_ac54eda776408b41d1e5ccaa988267162}\label{interfaceorg_1_1newdawn_1_1slick_1_1opengl_1_1renderer_1_1_line_strip_renderer_ac54eda776408b41d1e5ccaa988267162}} 
+\index{org\+::newdawn\+::slick\+::opengl\+::renderer\+::\+Line\+Strip\+Renderer@{org\+::newdawn\+::slick\+::opengl\+::renderer\+::\+Line\+Strip\+Renderer}!color@{color}}
+\index{color@{color}!org\+::newdawn\+::slick\+::opengl\+::renderer\+::\+Line\+Strip\+Renderer@{org\+::newdawn\+::slick\+::opengl\+::renderer\+::\+Line\+Strip\+Renderer}}
+\subsubsection{\texorpdfstring{color()}{color()}}
+{\footnotesize\ttfamily abstract void org.\+newdawn.\+slick.\+opengl.\+renderer.\+Line\+Strip\+Renderer.\+color (\begin{DoxyParamCaption}\item[{float}]{r,  }\item[{float}]{g,  }\item[{float}]{b,  }\item[{float}]{a }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}}
+
+Apply a colour to the next vertex
+
+
+\begin{DoxyParams}{Parameters}
+{\em r} & The red component of the colour \\
+\hline
+{\em g} & The green component of the colour \\
+\hline
+{\em b} & The blue component of the colour \\
+\hline
+{\em a} & The alpha component of the colour \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1renderer_1_1_quad_based_line_strip_renderer_ac85a3ec025db8b22c0bf046fb7dc92a8}{org.\+newdawn.\+slick.\+opengl.\+renderer.\+Quad\+Based\+Line\+Strip\+Renderer}}, and \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1renderer_1_1_default_line_strip_renderer_ae236140384772f798e2d6e9a1faacdd5}{org.\+newdawn.\+slick.\+opengl.\+renderer.\+Default\+Line\+Strip\+Renderer}}.
+
+\mbox{\Hypertarget{interfaceorg_1_1newdawn_1_1slick_1_1opengl_1_1renderer_1_1_line_strip_renderer_a59c0befa698a8a069ce66fa134c1f284}\label{interfaceorg_1_1newdawn_1_1slick_1_1opengl_1_1renderer_1_1_line_strip_renderer_a59c0befa698a8a069ce66fa134c1f284}} 
+\index{org\+::newdawn\+::slick\+::opengl\+::renderer\+::\+Line\+Strip\+Renderer@{org\+::newdawn\+::slick\+::opengl\+::renderer\+::\+Line\+Strip\+Renderer}!end@{end}}
+\index{end@{end}!org\+::newdawn\+::slick\+::opengl\+::renderer\+::\+Line\+Strip\+Renderer@{org\+::newdawn\+::slick\+::opengl\+::renderer\+::\+Line\+Strip\+Renderer}}
+\subsubsection{\texorpdfstring{end()}{end()}}
+{\footnotesize\ttfamily abstract void org.\+newdawn.\+slick.\+opengl.\+renderer.\+Line\+Strip\+Renderer.\+end (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}}
+
+End the line strips 
+
+Implemented in \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1renderer_1_1_quad_based_line_strip_renderer_a1d55a722cf80e77c570f29ebe853d1ba}{org.\+newdawn.\+slick.\+opengl.\+renderer.\+Quad\+Based\+Line\+Strip\+Renderer}}, and \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1renderer_1_1_default_line_strip_renderer_a544d66d8f579f2f5fd3cf62fdf0c4038}{org.\+newdawn.\+slick.\+opengl.\+renderer.\+Default\+Line\+Strip\+Renderer}}.
+
+\mbox{\Hypertarget{interfaceorg_1_1newdawn_1_1slick_1_1opengl_1_1renderer_1_1_line_strip_renderer_a849fde4a1b5b6981e77978bb3afa2b3b}\label{interfaceorg_1_1newdawn_1_1slick_1_1opengl_1_1renderer_1_1_line_strip_renderer_a849fde4a1b5b6981e77978bb3afa2b3b}} 
+\index{org\+::newdawn\+::slick\+::opengl\+::renderer\+::\+Line\+Strip\+Renderer@{org\+::newdawn\+::slick\+::opengl\+::renderer\+::\+Line\+Strip\+Renderer}!set\+Anti\+Alias@{set\+Anti\+Alias}}
+\index{set\+Anti\+Alias@{set\+Anti\+Alias}!org\+::newdawn\+::slick\+::opengl\+::renderer\+::\+Line\+Strip\+Renderer@{org\+::newdawn\+::slick\+::opengl\+::renderer\+::\+Line\+Strip\+Renderer}}
+\subsubsection{\texorpdfstring{set\+Anti\+Alias()}{setAntiAlias()}}
+{\footnotesize\ttfamily abstract void org.\+newdawn.\+slick.\+opengl.\+renderer.\+Line\+Strip\+Renderer.\+set\+Anti\+Alias (\begin{DoxyParamCaption}\item[{boolean}]{antialias }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}}
+
+Indicate whether antialiasing should be applied
+
+
+\begin{DoxyParams}{Parameters}
+{\em antialias} & True if antialiasing should be applied \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1renderer_1_1_quad_based_line_strip_renderer_a5eb1002e1c8f2d044bc1d1e184bcbc62}{org.\+newdawn.\+slick.\+opengl.\+renderer.\+Quad\+Based\+Line\+Strip\+Renderer}}, and \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1renderer_1_1_default_line_strip_renderer_adec638ecbe7cb11adb68d6ad05e47940}{org.\+newdawn.\+slick.\+opengl.\+renderer.\+Default\+Line\+Strip\+Renderer}}.
+
+\mbox{\Hypertarget{interfaceorg_1_1newdawn_1_1slick_1_1opengl_1_1renderer_1_1_line_strip_renderer_ac2c299158c60d76e8745759dd2dc8633}\label{interfaceorg_1_1newdawn_1_1slick_1_1opengl_1_1renderer_1_1_line_strip_renderer_ac2c299158c60d76e8745759dd2dc8633}} 
+\index{org\+::newdawn\+::slick\+::opengl\+::renderer\+::\+Line\+Strip\+Renderer@{org\+::newdawn\+::slick\+::opengl\+::renderer\+::\+Line\+Strip\+Renderer}!set\+Line\+Caps@{set\+Line\+Caps}}
+\index{set\+Line\+Caps@{set\+Line\+Caps}!org\+::newdawn\+::slick\+::opengl\+::renderer\+::\+Line\+Strip\+Renderer@{org\+::newdawn\+::slick\+::opengl\+::renderer\+::\+Line\+Strip\+Renderer}}
+\subsubsection{\texorpdfstring{set\+Line\+Caps()}{setLineCaps()}}
+{\footnotesize\ttfamily void org.\+newdawn.\+slick.\+opengl.\+renderer.\+Line\+Strip\+Renderer.\+set\+Line\+Caps (\begin{DoxyParamCaption}\item[{boolean}]{caps }\end{DoxyParamCaption})}
+
+Indicate if we should render end caps
+
+
+\begin{DoxyParams}{Parameters}
+{\em caps} & True if we should render end caps \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1renderer_1_1_default_line_strip_renderer_a4ab21f80fe9663e729febb2206e201a5}{org.\+newdawn.\+slick.\+opengl.\+renderer.\+Default\+Line\+Strip\+Renderer}}, and \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1renderer_1_1_quad_based_line_strip_renderer_a7b6834b1bd47220f6ebd45ee60672b30}{org.\+newdawn.\+slick.\+opengl.\+renderer.\+Quad\+Based\+Line\+Strip\+Renderer}}.
+
+\mbox{\Hypertarget{interfaceorg_1_1newdawn_1_1slick_1_1opengl_1_1renderer_1_1_line_strip_renderer_afc8159c0766c0d177b402cf311d9a7b8}\label{interfaceorg_1_1newdawn_1_1slick_1_1opengl_1_1renderer_1_1_line_strip_renderer_afc8159c0766c0d177b402cf311d9a7b8}} 
+\index{org\+::newdawn\+::slick\+::opengl\+::renderer\+::\+Line\+Strip\+Renderer@{org\+::newdawn\+::slick\+::opengl\+::renderer\+::\+Line\+Strip\+Renderer}!set\+Width@{set\+Width}}
+\index{set\+Width@{set\+Width}!org\+::newdawn\+::slick\+::opengl\+::renderer\+::\+Line\+Strip\+Renderer@{org\+::newdawn\+::slick\+::opengl\+::renderer\+::\+Line\+Strip\+Renderer}}
+\subsubsection{\texorpdfstring{set\+Width()}{setWidth()}}
+{\footnotesize\ttfamily abstract void org.\+newdawn.\+slick.\+opengl.\+renderer.\+Line\+Strip\+Renderer.\+set\+Width (\begin{DoxyParamCaption}\item[{float}]{width }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}}
+
+Set the width of the lines to be drawn
+
+
+\begin{DoxyParams}{Parameters}
+{\em width} & The width of the lines to be drawn \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1renderer_1_1_quad_based_line_strip_renderer_a1ebfc1a913b6cb8763137ba710354689}{org.\+newdawn.\+slick.\+opengl.\+renderer.\+Quad\+Based\+Line\+Strip\+Renderer}}, and \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1renderer_1_1_default_line_strip_renderer_a0e31016a63b0166c556eb10309fd4603}{org.\+newdawn.\+slick.\+opengl.\+renderer.\+Default\+Line\+Strip\+Renderer}}.
+
+\mbox{\Hypertarget{interfaceorg_1_1newdawn_1_1slick_1_1opengl_1_1renderer_1_1_line_strip_renderer_ac677ca9ed9c30f39a3eeb72b0532229a}\label{interfaceorg_1_1newdawn_1_1slick_1_1opengl_1_1renderer_1_1_line_strip_renderer_ac677ca9ed9c30f39a3eeb72b0532229a}} 
+\index{org\+::newdawn\+::slick\+::opengl\+::renderer\+::\+Line\+Strip\+Renderer@{org\+::newdawn\+::slick\+::opengl\+::renderer\+::\+Line\+Strip\+Renderer}!start@{start}}
+\index{start@{start}!org\+::newdawn\+::slick\+::opengl\+::renderer\+::\+Line\+Strip\+Renderer@{org\+::newdawn\+::slick\+::opengl\+::renderer\+::\+Line\+Strip\+Renderer}}
+\subsubsection{\texorpdfstring{start()}{start()}}
+{\footnotesize\ttfamily abstract void org.\+newdawn.\+slick.\+opengl.\+renderer.\+Line\+Strip\+Renderer.\+start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}}
+
+Start the line strips 
+
+Implemented in \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1renderer_1_1_quad_based_line_strip_renderer_a63893acff7cb6395fe2c941477a78e76}{org.\+newdawn.\+slick.\+opengl.\+renderer.\+Quad\+Based\+Line\+Strip\+Renderer}}, and \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1renderer_1_1_default_line_strip_renderer_a6d1f2a49396c421d3ab71e6c472db291}{org.\+newdawn.\+slick.\+opengl.\+renderer.\+Default\+Line\+Strip\+Renderer}}.
+
+\mbox{\Hypertarget{interfaceorg_1_1newdawn_1_1slick_1_1opengl_1_1renderer_1_1_line_strip_renderer_a9051033674d28d26c5750155df2c5113}\label{interfaceorg_1_1newdawn_1_1slick_1_1opengl_1_1renderer_1_1_line_strip_renderer_a9051033674d28d26c5750155df2c5113}} 
+\index{org\+::newdawn\+::slick\+::opengl\+::renderer\+::\+Line\+Strip\+Renderer@{org\+::newdawn\+::slick\+::opengl\+::renderer\+::\+Line\+Strip\+Renderer}!vertex@{vertex}}
+\index{vertex@{vertex}!org\+::newdawn\+::slick\+::opengl\+::renderer\+::\+Line\+Strip\+Renderer@{org\+::newdawn\+::slick\+::opengl\+::renderer\+::\+Line\+Strip\+Renderer}}
+\subsubsection{\texorpdfstring{vertex()}{vertex()}}
+{\footnotesize\ttfamily abstract void org.\+newdawn.\+slick.\+opengl.\+renderer.\+Line\+Strip\+Renderer.\+vertex (\begin{DoxyParamCaption}\item[{float}]{x,  }\item[{float}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}}
+
+Add a vertex
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & The x coordinate of the vertex \\
+\hline
+{\em y} & The y coordinate of the vertex \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1renderer_1_1_quad_based_line_strip_renderer_ae2ae9cf57163887ab122d24fa29f066f}{org.\+newdawn.\+slick.\+opengl.\+renderer.\+Quad\+Based\+Line\+Strip\+Renderer}}, and \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1renderer_1_1_default_line_strip_renderer_a61da8b730261c056d7ba8c00be607162}{org.\+newdawn.\+slick.\+opengl.\+renderer.\+Default\+Line\+Strip\+Renderer}}.
+

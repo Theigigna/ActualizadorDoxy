@@ -1,0 +1,75 @@
+\hypertarget{class_r_m_i_1_1_servidor}{}\section{R\+M\+I.\+Servidor Class Reference}
+\label{class_r_m_i_1_1_servidor}\index{R\+M\+I.\+Servidor@{R\+M\+I.\+Servidor}}
+Inheritance diagram for R\+M\+I.\+Servidor\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_r_m_i_1_1_servidor}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_r_m_i_1_1_servidor_a9740db5a1cb079d4b21777bc5ab63991}{Servidor}} (\mbox{\hyperlink{class_r_m_i_1_1_paso}{Paso}} \mbox{\hyperlink{class_r_m_i_1_1_servidor_a1238b87a5a8e06c6e59a187b3bb573ee}{paso}})
+\item 
+void \mbox{\hyperlink{class_r_m_i_1_1_servidor_afd5edbb2a15b3340e981a9e0833484f9}{run}} ()
+\end{DoxyCompactItemize}
+\subsection*{Package Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_r_m_i_1_1_paso}{Paso}} \mbox{\hyperlink{class_r_m_i_1_1_servidor_a1238b87a5a8e06c6e59a187b3bb573ee}{paso}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_r_m_i_1_1_servidor_a9740db5a1cb079d4b21777bc5ab63991}\label{class_r_m_i_1_1_servidor_a9740db5a1cb079d4b21777bc5ab63991}} 
+\index{R\+M\+I\+::\+Servidor@{R\+M\+I\+::\+Servidor}!Servidor@{Servidor}}
+\index{Servidor@{Servidor}!R\+M\+I\+::\+Servidor@{R\+M\+I\+::\+Servidor}}
+\subsubsection{\texorpdfstring{Servidor()}{Servidor()}}
+{\footnotesize\ttfamily R\+M\+I.\+Servidor.\+Servidor (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_r_m_i_1_1_paso}{Paso}}}]{paso }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+10     \{
+11         this.\mbox{\hyperlink{class_r_m_i_1_1_servidor_a1238b87a5a8e06c6e59a187b3bb573ee}{paso}} = \mbox{\hyperlink{class_r_m_i_1_1_servidor_a1238b87a5a8e06c6e59a187b3bb573ee}{paso}};
+12     \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_r_m_i_1_1_servidor_afd5edbb2a15b3340e981a9e0833484f9}\label{class_r_m_i_1_1_servidor_afd5edbb2a15b3340e981a9e0833484f9}} 
+\index{R\+M\+I\+::\+Servidor@{R\+M\+I\+::\+Servidor}!run@{run}}
+\index{run@{run}!R\+M\+I\+::\+Servidor@{R\+M\+I\+::\+Servidor}}
+\subsubsection{\texorpdfstring{run()}{run()}}
+{\footnotesize\ttfamily void R\+M\+I.\+Servidor.\+run (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+17     \{
+18         \textcolor{comment}{//ip 172.22.14.224}
+19         \textcolor{keywordflow}{try}
+20         \{
+21             Saludador obj = \textcolor{keyword}{new} Saludador(\mbox{\hyperlink{class_r_m_i_1_1_servidor_a1238b87a5a8e06c6e59a187b3bb573ee}{paso}}); \textcolor{comment}{//Crea una instancia del objeto que implementa la
+       interfaz, como objeto a registrar }
+22             Registry registry = LocateRegistry.createRegistry(1099); \textcolor{comment}{//Arranca rmiregistry local en el
+       puerto 1099}
+23             Naming.rebind(\textcolor{stringliteral}{"//127.0.0.1/ObjetoSaluda"},obj);   \textcolor{comment}{//rebind sólo funciona sobre una url del
+       equipo local }
+24             
+25             System.out.println(\textcolor{stringliteral}{"El Objeto Saluda ha quedado registrado"});
+26         \}
+27         \textcolor{keywordflow}{catch} (Exception e)
+28         \{
+29             System.out.println(\textcolor{stringliteral}{" Error: "} + e.getMessage());
+30             e.printStackTrace();
+31         \}
+32     \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_r_m_i_1_1_servidor_a1238b87a5a8e06c6e59a187b3bb573ee}\label{class_r_m_i_1_1_servidor_a1238b87a5a8e06c6e59a187b3bb573ee}} 
+\index{R\+M\+I\+::\+Servidor@{R\+M\+I\+::\+Servidor}!paso@{paso}}
+\index{paso@{paso}!R\+M\+I\+::\+Servidor@{R\+M\+I\+::\+Servidor}}
+\subsubsection{\texorpdfstring{paso}{paso}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_r_m_i_1_1_paso}{Paso}} R\+M\+I.\+Servidor.\+paso\hspace{0.3cm}{\ttfamily [package]}}
+

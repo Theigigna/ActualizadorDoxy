@@ -1,0 +1,131 @@
+\hypertarget{classarmas_1_1_arma}{}\section{armas.\+Arma Class Reference}
+\label{classarmas_1_1_arma}\index{armas.\+Arma@{armas.\+Arma}}
+Inheritance diagram for armas.\+Arma\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classarmas_1_1_arma}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classarmas_1_1_arma_a3852166b343463cb023f4a70c490c1a0}{Arma}} (String \mbox{\hyperlink{classarmas_1_1_arma_abdd717c561a99a3436dbfda8129b5581}{nombre}}, int \mbox{\hyperlink{classarmas_1_1_arma_a59396ee4b222360f19c8be08eb7d137b}{dano}})
+\item 
+void \mbox{\hyperlink{classarmas_1_1_arma_a83ec9eab99a2e8856acebdc4aba25c11}{set\+Nombre}} (String \mbox{\hyperlink{classarmas_1_1_arma_abdd717c561a99a3436dbfda8129b5581}{nombre}})
+\item 
+String \mbox{\hyperlink{classarmas_1_1_arma_a6e8bac31945491dcdb38506d0d139919}{get\+Nombre}} ()
+\item 
+void \mbox{\hyperlink{classarmas_1_1_arma_a2916651a71f2cdd274aafd7330a97b0b}{set\+Dano}} (int \mbox{\hyperlink{classarmas_1_1_arma_a59396ee4b222360f19c8be08eb7d137b}{dano}})
+\item 
+int \mbox{\hyperlink{classarmas_1_1_arma_ac402672c192d5341afa32760938f7e98}{get\+Dano}} ()
+\item 
+\mbox{\hyperlink{classarmas_1_1_arma_a50ea4ebdc959c0de035d951382e84245}{Arma}} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+String \mbox{\hyperlink{classarmas_1_1_arma_abdd717c561a99a3436dbfda8129b5581}{nombre}}
+\item 
+int \mbox{\hyperlink{classarmas_1_1_arma_a59396ee4b222360f19c8be08eb7d137b}{dano}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyAuthor}{Author}
+Ignacio 
+\end{DoxyAuthor}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classarmas_1_1_arma_a3852166b343463cb023f4a70c490c1a0}\label{classarmas_1_1_arma_a3852166b343463cb023f4a70c490c1a0}} 
+\index{armas\+::\+Arma@{armas\+::\+Arma}!Arma@{Arma}}
+\index{Arma@{Arma}!armas\+::\+Arma@{armas\+::\+Arma}}
+\subsubsection{\texorpdfstring{Arma()}{Arma()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily armas.\+Arma.\+Arma (\begin{DoxyParamCaption}\item[{String}]{nombre,  }\item[{int}]{dano }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+18     \{
+19         this.\mbox{\hyperlink{classarmas_1_1_arma_abdd717c561a99a3436dbfda8129b5581}{nombre}} = \mbox{\hyperlink{classarmas_1_1_arma_abdd717c561a99a3436dbfda8129b5581}{nombre}};
+20         this.\mbox{\hyperlink{classarmas_1_1_arma_a59396ee4b222360f19c8be08eb7d137b}{dano}} = \mbox{\hyperlink{classarmas_1_1_arma_a59396ee4b222360f19c8be08eb7d137b}{dano}};
+21     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classarmas_1_1_arma_a50ea4ebdc959c0de035d951382e84245}\label{classarmas_1_1_arma_a50ea4ebdc959c0de035d951382e84245}} 
+\index{armas\+::\+Arma@{armas\+::\+Arma}!Arma@{Arma}}
+\index{Arma@{Arma}!armas\+::\+Arma@{armas\+::\+Arma}}
+\subsubsection{\texorpdfstring{Arma()}{Arma()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily armas.\+Arma.\+Arma (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+44     \{
+45         this.\mbox{\hyperlink{classarmas_1_1_arma_abdd717c561a99a3436dbfda8129b5581}{nombre}} = \textcolor{stringliteral}{"Default"};
+46         this.\mbox{\hyperlink{classarmas_1_1_arma_a59396ee4b222360f19c8be08eb7d137b}{dano}} = 20 * (int) Math.random();
+47     \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classarmas_1_1_arma_ac402672c192d5341afa32760938f7e98}\label{classarmas_1_1_arma_ac402672c192d5341afa32760938f7e98}} 
+\index{armas\+::\+Arma@{armas\+::\+Arma}!get\+Dano@{get\+Dano}}
+\index{get\+Dano@{get\+Dano}!armas\+::\+Arma@{armas\+::\+Arma}}
+\subsubsection{\texorpdfstring{get\+Dano()}{getDano()}}
+{\footnotesize\ttfamily int armas.\+Arma.\+get\+Dano (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+39     \{
+40         \textcolor{keywordflow}{return} \mbox{\hyperlink{classarmas_1_1_arma_a59396ee4b222360f19c8be08eb7d137b}{dano}};
+41     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classarmas_1_1_arma_a6e8bac31945491dcdb38506d0d139919}\label{classarmas_1_1_arma_a6e8bac31945491dcdb38506d0d139919}} 
+\index{armas\+::\+Arma@{armas\+::\+Arma}!get\+Nombre@{get\+Nombre}}
+\index{get\+Nombre@{get\+Nombre}!armas\+::\+Arma@{armas\+::\+Arma}}
+\subsubsection{\texorpdfstring{get\+Nombre()}{getNombre()}}
+{\footnotesize\ttfamily String armas.\+Arma.\+get\+Nombre (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+29     \{
+30         \textcolor{keywordflow}{return} \mbox{\hyperlink{classarmas_1_1_arma_abdd717c561a99a3436dbfda8129b5581}{nombre}};
+31     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classarmas_1_1_arma_a2916651a71f2cdd274aafd7330a97b0b}\label{classarmas_1_1_arma_a2916651a71f2cdd274aafd7330a97b0b}} 
+\index{armas\+::\+Arma@{armas\+::\+Arma}!set\+Dano@{set\+Dano}}
+\index{set\+Dano@{set\+Dano}!armas\+::\+Arma@{armas\+::\+Arma}}
+\subsubsection{\texorpdfstring{set\+Dano()}{setDano()}}
+{\footnotesize\ttfamily void armas.\+Arma.\+set\+Dano (\begin{DoxyParamCaption}\item[{int}]{dano }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+34     \{
+35         this.\mbox{\hyperlink{classarmas_1_1_arma_a59396ee4b222360f19c8be08eb7d137b}{dano}} = \mbox{\hyperlink{classarmas_1_1_arma_a59396ee4b222360f19c8be08eb7d137b}{dano}};
+36     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classarmas_1_1_arma_a83ec9eab99a2e8856acebdc4aba25c11}\label{classarmas_1_1_arma_a83ec9eab99a2e8856acebdc4aba25c11}} 
+\index{armas\+::\+Arma@{armas\+::\+Arma}!set\+Nombre@{set\+Nombre}}
+\index{set\+Nombre@{set\+Nombre}!armas\+::\+Arma@{armas\+::\+Arma}}
+\subsubsection{\texorpdfstring{set\+Nombre()}{setNombre()}}
+{\footnotesize\ttfamily void armas.\+Arma.\+set\+Nombre (\begin{DoxyParamCaption}\item[{String}]{nombre }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+24     \{
+25         this.\mbox{\hyperlink{classarmas_1_1_arma_abdd717c561a99a3436dbfda8129b5581}{nombre}} = \mbox{\hyperlink{classarmas_1_1_arma_abdd717c561a99a3436dbfda8129b5581}{nombre}};
+26     \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classarmas_1_1_arma_a59396ee4b222360f19c8be08eb7d137b}\label{classarmas_1_1_arma_a59396ee4b222360f19c8be08eb7d137b}} 
+\index{armas\+::\+Arma@{armas\+::\+Arma}!dano@{dano}}
+\index{dano@{dano}!armas\+::\+Arma@{armas\+::\+Arma}}
+\subsubsection{\texorpdfstring{dano}{dano}}
+{\footnotesize\ttfamily int armas.\+Arma.\+dano\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classarmas_1_1_arma_abdd717c561a99a3436dbfda8129b5581}\label{classarmas_1_1_arma_abdd717c561a99a3436dbfda8129b5581}} 
+\index{armas\+::\+Arma@{armas\+::\+Arma}!nombre@{nombre}}
+\index{nombre@{nombre}!armas\+::\+Arma@{armas\+::\+Arma}}
+\subsubsection{\texorpdfstring{nombre}{nombre}}
+{\footnotesize\ttfamily String armas.\+Arma.\+nombre\hspace{0.3cm}{\ttfamily [private]}}
+

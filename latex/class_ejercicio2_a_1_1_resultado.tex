@@ -1,0 +1,52 @@
+\hypertarget{class_ejercicio2_a_1_1_resultado}{}\section{Ejercicio2\+A.\+Resultado Class Reference}
+\label{class_ejercicio2_a_1_1_resultado}\index{Ejercicio2\+A.\+Resultado@{Ejercicio2\+A.\+Resultado}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+Big\+Integer \mbox{\hyperlink{class_ejercicio2_a_1_1_resultado_a7f40291e0fe95ed433499773da60440d}{get\+Suma}} ()
+\item 
+synchronized void \mbox{\hyperlink{class_ejercicio2_a_1_1_resultado_a72ea26b269e45dcf10697761fd351d76}{sumar}} (int n)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Big\+Integer \mbox{\hyperlink{class_ejercicio2_a_1_1_resultado_ad684a9a7e4f55ef6862c6d1234259866}{suma}} = new Big\+Integer(\char`\"{}0\char`\"{})
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_ejercicio2_a_1_1_resultado_a7f40291e0fe95ed433499773da60440d}\label{class_ejercicio2_a_1_1_resultado_a7f40291e0fe95ed433499773da60440d}} 
+\index{Ejercicio2\+A\+::\+Resultado@{Ejercicio2\+A\+::\+Resultado}!get\+Suma@{get\+Suma}}
+\index{get\+Suma@{get\+Suma}!Ejercicio2\+A\+::\+Resultado@{Ejercicio2\+A\+::\+Resultado}}
+\subsubsection{\texorpdfstring{get\+Suma()}{getSuma()}}
+{\footnotesize\ttfamily Big\+Integer Ejercicio2\+A.\+Resultado.\+get\+Suma (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+15     \{
+16         \textcolor{keywordflow}{return} \mbox{\hyperlink{class_ejercicio2_a_1_1_resultado_ad684a9a7e4f55ef6862c6d1234259866}{suma}};
+17     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_ejercicio2_a_1_1_resultado_a72ea26b269e45dcf10697761fd351d76}\label{class_ejercicio2_a_1_1_resultado_a72ea26b269e45dcf10697761fd351d76}} 
+\index{Ejercicio2\+A\+::\+Resultado@{Ejercicio2\+A\+::\+Resultado}!sumar@{sumar}}
+\index{sumar@{sumar}!Ejercicio2\+A\+::\+Resultado@{Ejercicio2\+A\+::\+Resultado}}
+\subsubsection{\texorpdfstring{sumar()}{sumar()}}
+{\footnotesize\ttfamily synchronized void Ejercicio2\+A.\+Resultado.\+sumar (\begin{DoxyParamCaption}\item[{int}]{n }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}
+20     \{
+21         BigInteger bn = \textcolor{keyword}{new} BigInteger(String.valueOf(n));
+22         \mbox{\hyperlink{namespacesuma}{suma}}=\mbox{\hyperlink{namespacesuma}{suma}}.add(bn);
+23         \textcolor{comment}{//System.out.println("sumar " + String.valueOf(n) +" = "+ suma.toString());}
+24     \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_ejercicio2_a_1_1_resultado_ad684a9a7e4f55ef6862c6d1234259866}\label{class_ejercicio2_a_1_1_resultado_ad684a9a7e4f55ef6862c6d1234259866}} 
+\index{Ejercicio2\+A\+::\+Resultado@{Ejercicio2\+A\+::\+Resultado}!suma@{suma}}
+\index{suma@{suma}!Ejercicio2\+A\+::\+Resultado@{Ejercicio2\+A\+::\+Resultado}}
+\subsubsection{\texorpdfstring{suma}{suma}}
+{\footnotesize\ttfamily Big\+Integer Ejercicio2\+A.\+Resultado.\+suma = new Big\+Integer(\char`\"{}0\char`\"{})\hspace{0.3cm}{\ttfamily [private]}}
+

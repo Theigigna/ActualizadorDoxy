@@ -1,0 +1,47 @@
+\hypertarget{classlabprogavanzada_1_1_ejercicio3}{}\section{labprogavanzada.\+Ejercicio3 Class Reference}
+\label{classlabprogavanzada_1_1_ejercicio3}\index{labprogavanzada.\+Ejercicio3@{labprogavanzada.\+Ejercicio3}}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{classlabprogavanzada_1_1_ejercicio3_ada03b858e6255b39438c1d38cd0c6a28}{main}} (String\mbox{[}$\,$\mbox{]} x)
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classlabprogavanzada_1_1_ejercicio3_ada03b858e6255b39438c1d38cd0c6a28}\label{classlabprogavanzada_1_1_ejercicio3_ada03b858e6255b39438c1d38cd0c6a28}} 
+\index{labprogavanzada\+::\+Ejercicio3@{labprogavanzada\+::\+Ejercicio3}!main@{main}}
+\index{main@{main}!labprogavanzada\+::\+Ejercicio3@{labprogavanzada\+::\+Ejercicio3}}
+\subsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily static void labprogavanzada.\+Ejercicio3.\+main (\begin{DoxyParamCaption}\item[{String \mbox{[}$\,$\mbox{]}}]{x }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+\begin{DoxyCode}
+14                                        \{
+15            \textcolor{keywordtype}{long} t0 = (\textcolor{keyword}{new} Date()).getTime(); \textcolor{comment}{//t0=instante de inicio de los cálculos}
+16            \textcolor{keywordtype}{long} sumatotal = 0; \textcolor{comment}{//auxiliar para los tiempos intermedios}
+17            
+18            
+19            MultiplosSiete p1 = \textcolor{keyword}{new} MultiplosSiete(1,10000);
+20            Termina3o5 p2 = \textcolor{keyword}{new} Termina3o5(1,10000);
+21            PrimosThread p3 = \textcolor{keyword}{new} PrimosThread(1,10000);
+22            p1.start();
+23            p2.start();
+24            p3.start();
+25            
+26            \textcolor{keywordflow}{try}\{
+27             p1.join(); p2.join(); p3.join();\textcolor{comment}{//esperamos a que terminen todos}
+28            \} \textcolor{keywordflow}{catch} (InterruptedException e)\{\}
+29            \textcolor{comment}{//int n = p1.cuantos() /*+ p2.cuantos() + p3.cuantos() + p4.cuantos() + p5.cuantos()*/;}
+30            
+31            \textcolor{keywordtype}{long} t1 = (\textcolor{keyword}{new} Date()).getTime(); \textcolor{comment}{//t1=instante de final de los cálculos}
+32            
+33            sumatotal += p1.sumatotal();
+34            sumatotal += p2.sumatotal();
+35            sumatotal += p3.sumatotal();
+36            System.out.println(\textcolor{stringliteral}{"Suma multiplos de 7: "} + p1.sumatotal() + \textcolor{stringliteral}{". "} + \textcolor{stringliteral}{"Suma terminados en 3 o 5: 
+      "} + p2.sumatotal() + \textcolor{stringliteral}{". "} + \textcolor{stringliteral}{"Suma primos: "} + p3.sumatotal() + \textcolor{stringliteral}{"."});
+37            \textcolor{comment}{//System.out.println("Suma de los multiplos de siete entre: "+ 1 + "y" + 10000 +" es: " +
+       p1.sumatotal());}
+38            System.out.println(\textcolor{stringliteral}{"Suma total: "} + sumatotal + \textcolor{stringliteral}{" calculado en "} + (t1-t0) + \textcolor{stringliteral}{" milisegundos."} );
+39     \}
+\end{DoxyCode}

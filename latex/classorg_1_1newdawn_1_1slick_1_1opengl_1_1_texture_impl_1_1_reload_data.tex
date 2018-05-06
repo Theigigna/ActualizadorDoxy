@@ -1,0 +1,80 @@
+\hypertarget{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_texture_impl_1_1_reload_data}{}\section{org.\+newdawn.\+slick.\+opengl.\+Texture\+Impl.\+Reload\+Data Class Reference}
+\label{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_texture_impl_1_1_reload_data}\index{org.\+newdawn.\+slick.\+opengl.\+Texture\+Impl.\+Reload\+Data@{org.\+newdawn.\+slick.\+opengl.\+Texture\+Impl.\+Reload\+Data}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_texture_impl_1_1_reload_data_a9aa3b4822b2ecf2bdd34e0e5d1df9c46}{reload}} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_texture_impl_1_1_reload_data_a174e77c29132037a4d4a634ec08cabd0}{src\+Pixel\+Format}}
+\item 
+int \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_texture_impl_1_1_reload_data_ac4fd20a95b32ccb61b7a87127d56af7b}{component\+Count}}
+\item 
+int \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_texture_impl_1_1_reload_data_a2bda7bd341fa651a6be485f893e95ed4}{min\+Filter}}
+\item 
+int \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_texture_impl_1_1_reload_data_ad77e258620f00922337a119e09db0c7a}{mag\+Filter}}
+\item 
+Byte\+Buffer \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_texture_impl_1_1_reload_data_afd42846541be05f57d9bca24c04b52b8}{texture\+Buffer}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Reload this texture from it\textquotesingle{}s original source data 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_texture_impl_1_1_reload_data_a9aa3b4822b2ecf2bdd34e0e5d1df9c46}\label{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_texture_impl_1_1_reload_data_a9aa3b4822b2ecf2bdd34e0e5d1df9c46}} 
+\index{org\+::newdawn\+::slick\+::opengl\+::\+Texture\+Impl\+::\+Reload\+Data@{org\+::newdawn\+::slick\+::opengl\+::\+Texture\+Impl\+::\+Reload\+Data}!reload@{reload}}
+\index{reload@{reload}!org\+::newdawn\+::slick\+::opengl\+::\+Texture\+Impl\+::\+Reload\+Data@{org\+::newdawn\+::slick\+::opengl\+::\+Texture\+Impl\+::\+Reload\+Data}}
+\subsubsection{\texorpdfstring{reload()}{reload()}}
+{\footnotesize\ttfamily int org.\+newdawn.\+slick.\+opengl.\+Texture\+Impl.\+Reload\+Data.\+reload (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Reload this texture
+
+\begin{DoxyReturn}{Returns}
+The new texture ID assigned to this texture 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+372                             \{
+373             Log.error(\textcolor{stringliteral}{"Reloading texture: "}+\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_texture_impl_af482ec27b29b8846d98ce87bfcd88223}{ref}});
+374             \textcolor{keywordflow}{return} InternalTextureLoader.get().reload(\mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_texture_impl_aec5b5fc2b1fb2633b6691e99a08ac43c}{TextureImpl}}.this, 
+      \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_texture_impl_1_1_reload_data_a174e77c29132037a4d4a634ec08cabd0}{srcPixelFormat}}, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_texture_impl_1_1_reload_data_ac4fd20a95b32ccb61b7a87127d56af7b}{componentCount}}, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_texture_impl_1_1_reload_data_a2bda7bd341fa651a6be485f893e95ed4}{minFilter}}, 
+      \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_texture_impl_1_1_reload_data_ad77e258620f00922337a119e09db0c7a}{magFilter}}, \mbox{\hyperlink{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_texture_impl_1_1_reload_data_afd42846541be05f57d9bca24c04b52b8}{textureBuffer}});
+375         \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_texture_impl_1_1_reload_data_ac4fd20a95b32ccb61b7a87127d56af7b}\label{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_texture_impl_1_1_reload_data_ac4fd20a95b32ccb61b7a87127d56af7b}} 
+\index{org\+::newdawn\+::slick\+::opengl\+::\+Texture\+Impl\+::\+Reload\+Data@{org\+::newdawn\+::slick\+::opengl\+::\+Texture\+Impl\+::\+Reload\+Data}!component\+Count@{component\+Count}}
+\index{component\+Count@{component\+Count}!org\+::newdawn\+::slick\+::opengl\+::\+Texture\+Impl\+::\+Reload\+Data@{org\+::newdawn\+::slick\+::opengl\+::\+Texture\+Impl\+::\+Reload\+Data}}
+\subsubsection{\texorpdfstring{component\+Count}{componentCount}}
+{\footnotesize\ttfamily int org.\+newdawn.\+slick.\+opengl.\+Texture\+Impl.\+Reload\+Data.\+component\+Count\hspace{0.3cm}{\ttfamily [private]}}
+
+The component count \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_texture_impl_1_1_reload_data_ad77e258620f00922337a119e09db0c7a}\label{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_texture_impl_1_1_reload_data_ad77e258620f00922337a119e09db0c7a}} 
+\index{org\+::newdawn\+::slick\+::opengl\+::\+Texture\+Impl\+::\+Reload\+Data@{org\+::newdawn\+::slick\+::opengl\+::\+Texture\+Impl\+::\+Reload\+Data}!mag\+Filter@{mag\+Filter}}
+\index{mag\+Filter@{mag\+Filter}!org\+::newdawn\+::slick\+::opengl\+::\+Texture\+Impl\+::\+Reload\+Data@{org\+::newdawn\+::slick\+::opengl\+::\+Texture\+Impl\+::\+Reload\+Data}}
+\subsubsection{\texorpdfstring{mag\+Filter}{magFilter}}
+{\footnotesize\ttfamily int org.\+newdawn.\+slick.\+opengl.\+Texture\+Impl.\+Reload\+Data.\+mag\+Filter\hspace{0.3cm}{\ttfamily [private]}}
+
+The Open\+GL magnification filter \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_texture_impl_1_1_reload_data_a2bda7bd341fa651a6be485f893e95ed4}\label{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_texture_impl_1_1_reload_data_a2bda7bd341fa651a6be485f893e95ed4}} 
+\index{org\+::newdawn\+::slick\+::opengl\+::\+Texture\+Impl\+::\+Reload\+Data@{org\+::newdawn\+::slick\+::opengl\+::\+Texture\+Impl\+::\+Reload\+Data}!min\+Filter@{min\+Filter}}
+\index{min\+Filter@{min\+Filter}!org\+::newdawn\+::slick\+::opengl\+::\+Texture\+Impl\+::\+Reload\+Data@{org\+::newdawn\+::slick\+::opengl\+::\+Texture\+Impl\+::\+Reload\+Data}}
+\subsubsection{\texorpdfstring{min\+Filter}{minFilter}}
+{\footnotesize\ttfamily int org.\+newdawn.\+slick.\+opengl.\+Texture\+Impl.\+Reload\+Data.\+min\+Filter\hspace{0.3cm}{\ttfamily [private]}}
+
+The Open\+GL minification filter \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_texture_impl_1_1_reload_data_a174e77c29132037a4d4a634ec08cabd0}\label{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_texture_impl_1_1_reload_data_a174e77c29132037a4d4a634ec08cabd0}} 
+\index{org\+::newdawn\+::slick\+::opengl\+::\+Texture\+Impl\+::\+Reload\+Data@{org\+::newdawn\+::slick\+::opengl\+::\+Texture\+Impl\+::\+Reload\+Data}!src\+Pixel\+Format@{src\+Pixel\+Format}}
+\index{src\+Pixel\+Format@{src\+Pixel\+Format}!org\+::newdawn\+::slick\+::opengl\+::\+Texture\+Impl\+::\+Reload\+Data@{org\+::newdawn\+::slick\+::opengl\+::\+Texture\+Impl\+::\+Reload\+Data}}
+\subsubsection{\texorpdfstring{src\+Pixel\+Format}{srcPixelFormat}}
+{\footnotesize\ttfamily int org.\+newdawn.\+slick.\+opengl.\+Texture\+Impl.\+Reload\+Data.\+src\+Pixel\+Format\hspace{0.3cm}{\ttfamily [private]}}
+
+The src pixel format \mbox{\Hypertarget{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_texture_impl_1_1_reload_data_afd42846541be05f57d9bca24c04b52b8}\label{classorg_1_1newdawn_1_1slick_1_1opengl_1_1_texture_impl_1_1_reload_data_afd42846541be05f57d9bca24c04b52b8}} 
+\index{org\+::newdawn\+::slick\+::opengl\+::\+Texture\+Impl\+::\+Reload\+Data@{org\+::newdawn\+::slick\+::opengl\+::\+Texture\+Impl\+::\+Reload\+Data}!texture\+Buffer@{texture\+Buffer}}
+\index{texture\+Buffer@{texture\+Buffer}!org\+::newdawn\+::slick\+::opengl\+::\+Texture\+Impl\+::\+Reload\+Data@{org\+::newdawn\+::slick\+::opengl\+::\+Texture\+Impl\+::\+Reload\+Data}}
+\subsubsection{\texorpdfstring{texture\+Buffer}{textureBuffer}}
+{\footnotesize\ttfamily Byte\+Buffer org.\+newdawn.\+slick.\+opengl.\+Texture\+Impl.\+Reload\+Data.\+texture\+Buffer\hspace{0.3cm}{\ttfamily [private]}}
+
+The texture buffer of pixel data 
